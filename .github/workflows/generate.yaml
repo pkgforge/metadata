@@ -10,12 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 200
     permissions:
+      attestations: write   
       contents: write
+      id-token: write
+      packages: read
     strategy:
       matrix:
-        scripts: 
-          - "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_aarch64-Linux.sh"
-          - "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_x86_64-Linux.sh"
+        include: 
+          - repo: "bincache"
+            script: "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_aarch64-Linux.sh"
+            arch: "aarch64"
+            file: "/tmp/bincache_aarch64-Linux.json"
+
+          - repo: "bincache"
+            script: "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_x86_64-Linux.sh"
+            arch: "x86_64"
+            file: "/tmp/bincache_x86_64-Linux.json"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -54,14 +64,16 @@ jobs:
           echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
         continue-on-error: true
 
-      - name: Generate
+      - name: Generate (${{ matrix.repo }}/${{ matrix.arch }})
+        env:
+          GITHUB_TOKEN: "${{ github.token }}"
         run: |
           #presets
           set +x ; set +e
           #-------------#
-          dos2unix --quiet "${{ matrix.scripts }}"
-          chmod +x "${{ matrix.scripts }}"
-          bash "${{ matrix.scripts }}"
+          dos2unix --quiet "${{ matrix.script }}"
+          chmod +x "${{ matrix.script }}"
+          bash "${{ matrix.script }}"
         continue-on-error: true
 
       - name: Get DateTime & Purge files (=> 95 MB)
@@ -85,4 +97,12 @@ jobs:
           commit_user_email: AjamX101@gmail.com
           commit_message: "✅ Updated Metadata ♻️"
           #push_options: '--force'
+        continue-on-error: true
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v2.1.0
+        with:
+          subject-name: "metadata-${{ matrix.repo }}-${{ matrix.arch }}"
+          subject-path: "${{ matrix.file }}"
+          show-summary: true
         continue-on-error: true

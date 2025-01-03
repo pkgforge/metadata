@@ -209,9 +209,30 @@ if command -v rclone &> /dev/null &&\
  #Git pull
   git pull origin main --no-edit 2>/dev/null
  #Copy
+  cd "${GITHUB_WORKSPACE}/main/bincache/data"
   cp -fv "${SYSTMP}/bincache_aarch64-Linux.json" "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json"
- #Upload to R2
+  #Checksum
+  generate_checksum() 
+  {
+      b3sum "$1" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "$1.bsum"
+  }
+  generate_checksum "aarch64-Linux.json"
+ #To xz
+  7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "aarch64-Linux.json.xz" "aarch64-Linux.json" 2>/dev/null ; generate_checksum "aarch64-Linux.json.xz"
+ #To Zstd
+  zstd --ultra -22 --force "aarch64-Linux.json" -o "aarch64-Linux.json.zstd" ; generate_checksum "aarch64-Linux.json.zstd"
+ #Upload
   rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json" "r2:/meta/bincache/aarch64-Linux.json" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json" "r2:/meta/bincache/aarch64-linux.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json.bsum" "r2:/meta/bincache/aarch64-Linux.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json.bsum" "r2:/meta/bincache/aarch64-linux.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json.xz" "r2:/meta/bincache/aarch64-Linux.json.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json.xz" "r2:/meta/bincache/aarch64-linux.json.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json.xz.bsum" "r2:/meta/bincache/aarch64-Linux.json.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json.xz.bsum" "r2:/meta/bincache/aarch64-linux.json.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json.zstd" "r2:/meta/bincache/aarch64-Linux.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json.zstd" "r2:/meta/bincache/aarch64-linux.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json.zstd.bsum" "r2:/meta/bincache/aarch64-Linux.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json.zstd.bsum" "r2:/meta/bincache/aarch64-linux.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   wait ; echo
 fi

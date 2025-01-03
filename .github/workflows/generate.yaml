@@ -1,0 +1,88 @@
+name: ♻️ Generate Metadata ♻️
+
+on:
+  workflow_dispatch:
+  schedule:
+   - cron: "0 3 * * *"  #UTC 03:00 AM --> 08:45 AM NPT @everyday
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    permissions:
+      contents: write
+    strategy:
+      matrix:
+        scripts: 
+          - "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_aarch64-Linux.sh"
+          - "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_x86_64-Linux.sh"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: main
+          filter: "blob:none"
+
+      - name: Install Addons
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
+        continue-on-error: true
+
+      - name: Setup Env
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          #tmp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          #-------------#
+          #GH Dirs
+          mkdir -pv "${GITHUB_WORKSPACE}/main/bincache/data"
+          mkdir -pv "${GITHUB_WORKSPACE}/main/misc/data"
+          mkdir -pv "${GITHUB_WORKSPACE}/main/pkgcache/data"
+          mkdir -pv "${GITHUB_WORKSPACE}/main/soarpkgs/data"
+          #-------------#
+          ##rclone
+          echo "${{ secrets.CF_META }}" > "${HOME}/.rclone.conf"
+          #-------------#
+          ##User-Agent
+          USER_AGENT="$(curl -qfsSL 'https://pub.ajam.dev/repos/Azathothas/Wordlists/Misc/User-Agents/ua_chrome_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Generate
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          dos2unix --quiet "${{ matrix.scripts }}"
+          chmod +x "${{ matrix.scripts }}"
+          bash "${{ matrix.scripts }}"
+        continue-on-error: true
+
+      - name: Get DateTime & Purge files (=> 95 MB)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          UTC_TIME="$(TZ='UTC' date +'%Y-%m-%d (%I:%M:%S %p)')"
+          echo "UTC_TIME=${UTC_TIME}" >> "${GITHUB_ENV}"
+          #Sync
+          cd "${GITHUB_WORKSPACE}/main"
+          git pull origin main --no-edit 2>/dev/null
+          #Purge
+          find "${GITHUB_WORKSPACE}/main" -path "${GITHUB_WORKSPACE}/main/.git" -prune -o -type f -size +95M -exec rm -rvf "{}" + 2>/dev/null
+        continue-on-error: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./main
+          commit_user_name: Azathothas
+          commit_user_email: AjamX101@gmail.com
+          commit_message: "✅ Updated Metadata ♻️"
+          #push_options: '--force'
+        continue-on-error: true

@@ -75,7 +75,7 @@ jobs:
           #-------------#
           dos2unix --quiet "${{ matrix.script }}"
           chmod +x "${{ matrix.script }}"
-          bash "${{ matrix.script }}"
+          PARALLEL_LIMIT="50" bash "${{ matrix.script }}"
         continue-on-error: true
 
       - name: Get DateTime & Purge files (=> 95 MB)

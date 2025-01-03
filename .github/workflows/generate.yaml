@@ -67,7 +67,8 @@ jobs:
 
       - name: Generate (${{ matrix.repo }}/${{ matrix.arch }})
         env:
-          GITHUB_TOKEN: "${{ github.token }}"
+          #GITHUB_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
         run: |
           #presets
           set +x ; set +e

@@ -77,6 +77,15 @@ const commonDescriptions = {
     '/pkgcache/x86_64-linux.json.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
     '/pkgcache/logs/x86_64-Linux.latest.log.xz': "🗃️ Latest CICD Log 🗒️ (x86_64-Linux)",
     '/pkgcache/logs/x86_64-linux.latest.log.xz': "🗃️ Latest CICD Log 🗒️ (x86_64-Linux)",
+    // soarpkgs
+    '/soarpkgs': "<a href='https://docs.pkgforge.dev/repositories/soarpkgs/metadata'>🧬 JSON Metadata For soarpkgs</a>",
+    '/soarpkgs/all.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (ALL)",
+    '/soarpkgs/all.json.bsum': "🔐 B3SUM (ALL)",
+    '/soarpkgs/all.json.cba': "🗃️ Compressed Bita JSON Metadata (ALL)",
+    '/soarpkgs/all.json.xz': "🗃️ Compressed LZMA JSON Metadata (ALL)",
+    '/soarpkgs/all.json.xz.bsum': "🔐 B3SUM (ALL)",
+    '/soarpkgs/all.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (ALL)",
+    '/soarpkgs/all.json.zstd.bsum': "🔐 B3SUM (ALL)",
 };
 
 const baseConfig: Omit<SiteConfig, 'name' | 'bucket'> = {

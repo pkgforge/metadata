@@ -35,6 +35,9 @@ jobs:
         continue-on-error: true
 
       - name: Scrape
+        env:
+          #GITHUB_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
         run: |
           ##presets
           set +x ; set +e

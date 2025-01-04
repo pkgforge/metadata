@@ -125,6 +125,19 @@ generate_meta()
                else [.]
                end
              ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+           #Add/Update ghcr_blob
+            jq --arg PKG "$(jq -r '.download_url | split("&")[] | select(startswith("download=")) | split("=")[1]' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]')" \
+             --slurpfile manifest "${TMPDIR}/${MANIFEST_JSON}" \
+             'to_entries |
+             map(
+               if .key == "ghcr_pkg" then
+                 [{
+                   key: "ghcr_blob",
+                   value: ((.value | split(":")[0]) as $name | ($manifest[0].layers[] | select(.annotations["org.opencontainers.image.title"] == $PKG) | .digest) as $digest | $name + "@" + $digest)
+                 }, .]
+               else [.]
+               end
+             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
            #Add/Update ghcr_files
             jq --slurpfile manifest "${TMPDIR}/${MANIFEST_JSON}" 'to_entries |
              map(

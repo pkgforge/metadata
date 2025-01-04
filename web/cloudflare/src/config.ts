@@ -48,14 +48,9 @@ const baseConfig: Omit<SiteConfig, 'name' | 'bucket'> = {
 
 export function getSiteConfig(env: Env, domain: string): SiteConfig | undefined {
     const configs: {[domain: string]: SiteConfig} = {
-        'bin.ajam.dev': {
+        'meta.pkgforge.dev': {
             ...baseConfig,
-            name: "bin",
-            bucket: env.BUCKET_bucketname,
-        },
-        'bin.pkgforge.dev': {
-            ...baseConfig,
-            name: "bin",
+            name: "meta",
             bucket: env.BUCKET_bucketname,
         },
     };

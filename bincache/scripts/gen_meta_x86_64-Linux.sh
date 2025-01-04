@@ -125,6 +125,19 @@ generate_meta()
                else [.]
                end
              ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+           #Add/Update download_count
+            unset DL_COUNT ; DL_COUNT="$(curl -A "${USER_AGENT}" -qfsSL "$(jq -r '.ghcr_url' "${TMPDIR}/${METADATA_JSON}.tmp01")" | grep -i -A 5 'Total downloads' | grep -oP '<h3 title="\K[0-9]+' | tr -cd '0-9' | tr -d '[:space:]')"
+            [[ $(echo "${DL_COUNT}" | grep -E '^[0-9]+$') ]] || DL_COUNT="-1"
+            jq --arg DL_COUNT "${DL_COUNT}" '
+             to_entries | map(
+               if .key == "download_url" then
+                 [{
+                   key: "download_count",
+                   value: ($DL_COUNT | tostring)
+                 }, .]
+               else [.]
+               end
+             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
            #Add/Update ghcr_blob
             jq --arg PKG "$(jq -r '.download_url | split("&")[] | select(startswith("download=")) | split("=")[1]' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]')" \
              --slurpfile manifest "${TMPDIR}/${MANIFEST_JSON}" \

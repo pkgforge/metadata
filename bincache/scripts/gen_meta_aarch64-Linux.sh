@@ -185,6 +185,38 @@ generate_meta()
                end
              ) | flatten | from_entries' \
              "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+           #Sort Rank
+            jq '
+             def compute_ranks:
+                map(select(.rank == "-1" and .download_count != "-1" and .pkg != null)) |
+                map({
+                  pkg: (.pkg // "unknown"),
+                  download_count: (try (.download_count | tonumber) catch 0)
+                }) |
+                sort_by([ - .download_count, .pkg_name ]) |
+                to_entries |
+                map({
+                  key: .value.pkg,
+                  value: (.key + 1 | tostring)
+                }) |
+                from_entries;
+            
+              . as $original |
+              compute_ranks as $ranks |
+              map(
+                if .rank == "-1" and .download_count != "-1" and .pkg != null then
+                  .rank = ($ranks[.pkg] // .rank)
+                else
+                  .
+                end
+              )' "${TMPDIR}/${METADATA_JSON}.tmp01" | jq '
+              map(if .rank == "-1" then .rank = null else .rank = (.rank | tonumber) end) |
+              sort_by(.rank) |
+              to_entries |
+              map(.value.rank = (.key + 1 | tostring)) |
+              map(.value) |
+              sort_by(.pkg)' > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+            #sanity check: jq 'sort_by(.rank | tonumber) | map({pkg_name, rank, download_count})'
            #Cleanup & Finalize
              jq 'walk(if type == "object" then with_entries(select(.value != "" and .value != [] and .value != {})) else . end)' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
              mv -fv "${TMPDIR}/${METADATA_JSON}.tmp01" "${TMPDIR}/${METADATA_JSON}"

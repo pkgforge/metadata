@@ -1,3 +1,31 @@
+<div align="center">
+
+[discord-shield]: https://img.shields.io/discord/1313385177703256064?logo=%235865F2&label=Discord
+[discord-url]: https://discord.gg/djJUs48Zbu
+[stars-url]: https://github.com/pkgforge/soar/stargazers
+[issues-shield]: https://img.shields.io/github/issues/pkgforge/metadata.svg
+[issues-url]: https://github.com/pkgforge/metadata/issues
+[license-shield]: https://img.shields.io/github/license/pkgforge/metadata.svg
+[license-url]: https://github.com/pkgforge/metadata/blob/main/LICENSE
+[doc-shield]: https://img.shields.io/badge/docs.pkgforge.dev-blue
+[doc-url]: https://docs.pkgforge.dev/repositories
+
+[![Discord][discord-shield]][discord-url]
+[![Documentation][doc-shield]][doc-url]
+[![Issues][issues-shield]][issues-url]
+[![License: MIT][license-shield]][license-url]
+</div>
+
+<p align="center">
+    <a href="https://github.com/pkgforge/soar">
+        <img src="https://soar.pkgforge.dev/gif" alt="soar-list" width="650">
+    </a><br> 
+    <b><strong> <a href="https://meta.pkgforge.dev">Package Forge Metadata</a></code></strong></b>
+    <br>
+</p>
+
+---
+
 #### Deployers
 - [![⏫ Deploy (CloudFlare) 🌩️](https://github.com/pkgforge/metadata/actions/workflows/deploy_cloudflare.yaml/badge.svg)](https://github.com/pkgforge/metadata/actions/workflows/deploy_cloudflare.yaml) ==> [https://meta.pkgforge.dev](https://meta.pkgforge.dev)
 

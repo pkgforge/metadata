@@ -76,7 +76,7 @@ jobs:
           #Docker
           pushd "$(mktemp -d)" >/dev/null 2>&1
            chmod +xwr "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_archlinux.sh"
-           docker run --privileged --name "archlinux" -u "runner" -v "${GITHUB_WORKSPACE}:/workspace" "azathothas/archlinux-builder:latest" bash -l -c '"/workspace/main/scripts/metadata/fetch_archlinux.sh"'
+           docker run --privileged --name "archlinux" -u "runner" -v "${GITHUB_WORKSPACE}:/workspace" "azathothas/archlinux-builder:latest" bash -l -c '"/workspace/main/misc/scripts/fetch_archlinux.sh"'
            docker cp "archlinux:/tmp/ARCHLINUX.json" "$(pwd)/ARCHLINUX.json"
            cp -fv "./ARCHLINUX.json" "${SYSTMP}/ARCHLINUX.json"
           popd >/dev/null 2>&1
@@ -95,7 +95,7 @@ jobs:
           #Docker
           pushd "$(mktemp -d)" >/dev/null 2>&1
            chmod +xwr "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_debian.sh"
-           docker run --privileged --name "debian" -v "${GITHUB_WORKSPACE}:/workspace" "debian:latest" bash -l -c '"/workspace/main/scripts/metadata/fetch_debian.sh"'
+           docker run --privileged --name "debian" -v "${GITHUB_WORKSPACE}:/workspace" "debian:latest" bash -l -c '"/workspace/main/misc/scripts/fetch_debian.sh"'
            docker cp "debian:/tmp/DEBIAN.json" "$(pwd)/DEBIAN.json"
            cp -fv "./DEBIAN.json" "${SYSTMP}/DEBIAN.json"
           popd >/dev/null 2>&1
@@ -149,9 +149,6 @@ jobs:
           fi
           if [[ -s "${SYSTMP}/FLATPAK_APPSTREAM.xml" ]] && [[ $(stat -c%s "${SYSTMP}/FLATPAK_APPSTREAM.xml") -gt 1000 ]]; then
            cp -fv "${SYSTMP}/FLATPAK_APPSTREAM.xml" "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPSTREAM.xml"
-          fi
-          if [[ -s "${SYSTMP}/FLATPAK_APPS_INFO.txt" ]] && [[ $(stat -c%s "${SYSTMP}/FLATPAK_APPS_INFO.txt") -gt 1000 ]]; then
-           cp -fv "${SYSTMP}/FLATPAK_APPS_INFO.txt" "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.txt"
           fi
           if [[ -s "${SYSTMP}/FLATPAK_APPS_INFO.txt" ]] && [[ $(stat -c%s "${SYSTMP}/FLATPAK_APPS_INFO.txt") -gt 1000 ]]; then
            cp -fv "${SYSTMP}/FLATPAK_APPS_INFO.txt" "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.txt"
@@ -214,11 +211,11 @@ jobs:
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/DEBIAN.json" "r2:/meta/misc/DEBIAN.json" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPSTREAM.xml" "r2:/meta/misc/FLATPAK_APPSTREAM.xml" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.txt" "r2:/meta/misc/FLATPAK_APPS_INFO.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
-          rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.txt" "r2:/meta/misc/FLATPAK_APPS_INFO.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.json" "r2:/meta/misc/FLATPAK_APPS_INFO.json" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APP_IDS.txt" "r2:/meta/misc/FLATPAK_APP_IDS.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_POPULAR.json" "r2:/meta/misc/FLATPAK_POPULAR.json" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_TRENDING.json" "r2:/meta/misc/FLATPAK_TRENDING.json" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/NIXPKGS.json" "r2:/meta/misc/NIXPKGS.json" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/PKGSRC.json" "r2:/meta/misc/PKGSRC.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+          wait ; done
         continue-on-error: true

@@ -4,7 +4,8 @@ const commonDescriptions = {
     // Description For Footer on main Page
     '/': "📦 <a href='https://github.com/pkgforge/soar'><b>🤖 Automated Metadata Files</b></a> 🧬 : <a href='https://github.com/pkgforge/soar'></a> <a href='https://github.com/pkgforge/metadata'><b>Repo Source</b></a>",
     // bincache
-    '/bincache': "<a href='https://docs.pkgforge.dev/repositories/bincache/metadata'>🧬 JSON Metadata For Bincache</a>",
+    '/bincache': "<a href='https://docs.pkgforge.dev/repositories/bincache/metadata'>🧬 JSON Metadata For BinCache</a>",
+    '/bincache/logs': "<a href='https://docs.pkgforge.dev/repositories/bincache/security'>🗃️ XZ Compressed CICD Log Archives 🗒️</a>",
     //aarch64-Linux
     '/bincache/aarch64-Linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (aarch64-Linux)",
     '/bincache/aarch64-linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (aarch64-Linux)",
@@ -20,6 +21,8 @@ const commonDescriptions = {
     '/bincache/aarch64-linux.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (aarch64-Linux)",
     '/bincache/aarch64-Linux.json.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
     '/bincache/aarch64-linux.json.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
+    '/bincache/logs/aarch64-Linux.latest.log.xz': "🗃️ Latest CICD Log 🗒️ (aarch64-Linux)",
+    '/bincache/logs/aarch64-linux.latest.log.xz': "🗃️ Latest CICD Log 🗒️ (aarch64-Linux)",
     //x86_64-Linux
     '/bincache/x86_64-Linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
     '/bincache/x86_64-linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
@@ -35,6 +38,45 @@ const commonDescriptions = {
     '/bincache/x86_64-linux.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (x86_64-Linux)",
     '/bincache/x86_64-Linux.json.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
     '/bincache/x86_64-linux.json.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
+    '/bincache/logs/x86_64-Linux.latest.log.xz': "🗃️ Latest CICD Log 🗒️ (x86_64-Linux)",
+    '/bincache/logs/x86_64-linux.latest.log.xz': "🗃️ Latest CICD Log 🗒️ (x86_64-Linux)",
+    // pkgcache
+    '/pkgcache': "<a href='https://docs.pkgforge.dev/repositories/pkgcache/metadata'>🧬 JSON Metadata For PkgCache</a>",
+    '/pkgcache/logs': "<a href='https://docs.pkgforge.dev/repositories/pkgcache/security'>🗃️ XZ Compressed CICD Log Archives 🗒️</a>",
+    //aarch64-Linux
+    '/pkgcache/aarch64-Linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (aarch64-Linux)",
+    '/pkgcache/aarch64-linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (aarch64-Linux)",
+    '/pkgcache/aarch64-Linux.json.bsum': "🔐 B3SUM (aarch64-Linux)",
+    '/pkgcache/aarch64-linux.json.bsum': "🔐 B3SUM (aarch64-Linux)",
+    '/pkgcache/aarch64-Linux.json.cba': "🗃️ Compressed Bita JSON Metadata (aarch64-Linux)",
+    '/pkgcache/aarch64-linux.json.cba': "🗃️ Compressed Bita JSON Metadata (aarch64-Linux)",
+    '/pkgcache/aarch64-Linux.json.xz': "🗃️ Compressed LZMA JSON Metadata (aarch64-Linux)",
+    '/pkgcache/aarch64-linux.json.xz': "🗃️ Compressed LZMA JSON Metadata (aarch64-Linux)",
+    '/pkgcache/aarch64-Linux.json.xz.bsum': "🔐 B3SUM (aarch64-Linux)",
+    '/pkgcache/aarch64-linux.json.xz.bsum': "🔐 B3SUM (aarch64-Linux)",
+    '/pkgcache/aarch64-Linux.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (aarch64-Linux)",
+    '/pkgcache/aarch64-linux.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (aarch64-Linux)",
+    '/pkgcache/aarch64-Linux.json.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
+    '/pkgcache/aarch64-linux.json.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
+    '/pkgcache/logs/aarch64-Linux.latest.log.xz': "🗃️ Latest CICD Log 🗒️ (aarch64-Linux)",
+    '/pkgcache/logs/aarch64-linux.latest.log.xz': "🗃️ Latest CICD Log 🗒️ (aarch64-Linux)",
+    //x86_64-Linux
+    '/pkgcache/x86_64-Linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
+    '/pkgcache/x86_64-linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
+    '/pkgcache/x86_64-Linux.json.bsum': "🔐 B3SUM (x86_64-Linux)",
+    '/pkgcache/x86_64-linux.json.bsum': "🔐 B3SUM (x86_64-Linux)",
+    '/pkgcache/x86_64-Linux.json.cba': "🗃️ Compressed Bita JSON Metadata (x86_64-Linux)",
+    '/pkgcache/x86_64-linux.json.cba': "🗃️ Compressed Bita JSON Metadata (x86_64-Linux)",
+    '/pkgcache/x86_64-Linux.json.xz': "🗃️ Compressed LZMA JSON Metadata (x86_64-Linux)",
+    '/pkgcache/x86_64-linux.json.xz': "🗃️ Compressed LZMA JSON Metadata (x86_64-Linux)",
+    '/pkgcache/x86_64-Linux.json.xz.bsum': "🔐 B3SUM (x86_64-Linux)",
+    '/pkgcache/x86_64-linux.json.xz.bsum': "🔐 B3SUM (x86_64-Linux)",
+    '/pkgcache/x86_64-Linux.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (x86_64-Linux)",
+    '/pkgcache/x86_64-linux.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (x86_64-Linux)",
+    '/pkgcache/x86_64-Linux.json.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
+    '/pkgcache/x86_64-linux.json.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
+    '/pkgcache/logs/x86_64-Linux.latest.log.xz': "🗃️ Latest CICD Log 🗒️ (x86_64-Linux)",
+    '/pkgcache/logs/x86_64-linux.latest.log.xz': "🗃️ Latest CICD Log 🗒️ (x86_64-Linux)",
 };
 
 const baseConfig: Omit<SiteConfig, 'name' | 'bucket'> = {

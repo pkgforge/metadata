@@ -64,7 +64,7 @@ jobs:
             echo '    discord_format: "{{data}}"' >> "./notify.yaml"
             echo "    discord_webhook_url: \"${{ secrets.PORTABLE_APPS_NOTIFY }}\"" >> "./notify.yaml"
            #Prep Body
-            echo 'ℹ️ **Portable Packages** [Scraped Public Github Issues] (Daily) ==> https://github.com/pkgforge/metadata/blob/main/soarpkgs/pub_issues_packages.txt' > "/tmp/PKGFORGE_DISCORD.md" 
+            echo 'ℹ️ **Portable Packages** [Scraped Public Github Issues] (Daily) ==> https://github.com/pkgforge/metadata/blob/main/soarpkgs/data/pub_issues_packages.txt' > "/tmp/PKGFORGE_DISCORD.md" 
            grep -E "$(date --utc +%Y-%m-%d)T|$(date --utc --date='yesterday' +%Y-%m-%d)T" "${GITHUB_WORKSPACE}/main/soarpkgs/data/pub_issues_packages.txt" >> "/tmp/PKGFORGE_DISCORD.md"
            cat "/tmp/PKGFORGE_DISCORD.md" | notify -provider-config "./notify.yaml" -bulk -disable-update-check
           popd >/dev/null 2>&1

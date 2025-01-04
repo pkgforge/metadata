@@ -166,8 +166,7 @@ var renderTemplFiles = (files: R2Object[], siteConfig: SiteConfig) => {
             <td class="date hideable"><time datetime="${files[i].uploaded.toUTCString()}">${files[i].uploaded.toJSON()}</time></td>
             <td class="actions">
                 <div class="action-buttons">
-                    <a class="download-button" href="/${files[i].key}" download title="Download Raw Binary">⬇️</a>
-                    <a class="download-upx-button" href="/${files[i].key}.upx" download title="Download UPX Packed Binary">⏬</a>
+                    <a class="download-button" href="/${files[i].key}" download title="Download Raw File">⬇️</a>
                 </div>
             </td>
         </tr>`;

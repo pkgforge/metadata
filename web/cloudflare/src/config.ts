@@ -2,25 +2,39 @@ import { Env, SiteConfig } from './types';
 
 const commonDescriptions = {
     // Description For Footer on main Page
-    '/': "📦 <a href='https://github.com/pkgforge/soar'><b>🤖 Automated Metadata Files</b></a> 🧬 : <a href='https://github.com/pkgforge/soar'><b>Repo</b></a> <a href='https://github.com/pkgforge/metadata'>Source</a>",
+    '/': "📦 <a href='https://github.com/pkgforge/soar'><b>🤖 Automated Metadata Files</b></a> 🧬 : <a href='https://github.com/pkgforge/soar'></a> <a href='https://github.com/pkgforge/metadata'><b>Repo Source</b></a>",
     // bincache
     '/bincache': "<a href='https://docs.pkgforge.dev/repositories/bincache/metadata'>🧬 JSON Metadata For Bincache</a>",
     //aarch64-Linux
     '/bincache/aarch64-Linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (aarch64-Linux)",
+    '/bincache/aarch64-linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (aarch64-Linux)",
     '/bincache/aarch64-Linux.json.bsum': "🔐 B3SUM (aarch64-Linux)",
+    '/bincache/aarch64-linux.json.bsum': "🔐 B3SUM (aarch64-Linux)",
     '/bincache/aarch64-Linux.json.cba': "🗃️ Compressed Bita JSON Metadata (aarch64-Linux)",
+    '/bincache/aarch64-linux.json.cba': "🗃️ Compressed Bita JSON Metadata (aarch64-Linux)",
     '/bincache/aarch64-Linux.json.xz': "🗃️ Compressed LZMA JSON Metadata (aarch64-Linux)",
+    '/bincache/aarch64-linux.json.xz': "🗃️ Compressed LZMA JSON Metadata (aarch64-Linux)",
     '/bincache/aarch64-Linux.json.xz.bsum': "🔐 B3SUM (aarch64-Linux)",
+    '/bincache/aarch64-linux.json.xz.bsum': "🔐 B3SUM (aarch64-Linux)",
     '/bincache/aarch64-Linux.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (aarch64-Linux)",
+    '/bincache/aarch64-linux.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (aarch64-Linux)",
     '/bincache/aarch64-Linux.json.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
+    '/bincache/aarch64-linux.json.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
     //x86_64-Linux
     '/bincache/x86_64-Linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
+    '/bincache/x86_64-linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
     '/bincache/x86_64-Linux.json.bsum': "🔐 B3SUM (x86_64-Linux)",
+    '/bincache/x86_64-linux.json.bsum': "🔐 B3SUM (x86_64-Linux)",
     '/bincache/x86_64-Linux.json.cba': "🗃️ Compressed Bita JSON Metadata (x86_64-Linux)",
+    '/bincache/x86_64-linux.json.cba': "🗃️ Compressed Bita JSON Metadata (x86_64-Linux)",
     '/bincache/x86_64-Linux.json.xz': "🗃️ Compressed LZMA JSON Metadata (x86_64-Linux)",
+    '/bincache/x86_64-linux.json.xz': "🗃️ Compressed LZMA JSON Metadata (x86_64-Linux)",
     '/bincache/x86_64-Linux.json.xz.bsum': "🔐 B3SUM (x86_64-Linux)",
+    '/bincache/x86_64-linux.json.xz.bsum': "🔐 B3SUM (x86_64-Linux)",
     '/bincache/x86_64-Linux.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (x86_64-Linux)",
+    '/bincache/x86_64-linux.json.zstd': "🗃️ Compressed ZSTD JSON Metadata (x86_64-Linux)",
     '/bincache/x86_64-Linux.json.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
+    '/bincache/x86_64-linux.json.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
 };
 
 const baseConfig: Omit<SiteConfig, 'name' | 'bucket'> = {

@@ -284,9 +284,9 @@ if command -v rclone &> /dev/null &&\
     qsv to sqlite "${TMPDIR}/aarch64-Linux.db" "${TMPDIR}/aarch64-Linux.csv"
     if [[ -s "${TMPDIR}/aarch64-Linux.db" && $(stat -c%s "${TMPDIR}/aarch64-Linux.db") -gt 1024 ]]; then
      cp -fv "${TMPDIR}/aarch64-Linux.db" "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db" ; generate_checksum "aarch64-Linux.db"
-     bita compress --input "aarch64-Linux.db" --compression "zstd" --compression-level "21" --force-create "aarch64-Linux.db.cba"
-     7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${GITHUB_WORKSPACE}/main/aarch64-Linux/aarch64-Linux.db.xz" "${GITHUB_WORKSPACE}/main/aarch64-Linux/aarch64-Linux.db" 2>/dev/null ; generate_checksum "aarch64-Linux.db.xz"
-     zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/aarch64-Linux/aarch64-Linux.db" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/aarch64-Linux.db.zstd" ; generate_checksum "aarch64-Linux.db.zstd"
+     bita compress --input "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db" --compression "zstd" --compression-level "21" --force-create "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.cba"
+     7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.xz" "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db" 2>/dev/null ; generate_checksum "aarch64-Linux.db.xz"
+     zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db" -o "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.zstd" ; generate_checksum "aarch64-Linux.db.zstd"
      #Upload
       rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db" "r2:/meta/bincache/aarch64-Linux.db" --checksum --check-first --user-agent="${USER_AGENT}" &
       rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db" "r2:/meta/bincache/aarch64-linux.db" --checksum --check-first --user-agent="${USER_AGENT}" &

@@ -1,5 +1,5 @@
 ```mathematica
-172M └─┬ main
+173M └─┬ main
 168M   ├─┬ misc
 168M   │ ├─┬ data
  68M   │ │ ├── ARCHLINUX.json
@@ -25,25 +25,25 @@
 4.0K   │   ├── fetch_pkgsrc.sh
 4.0K   │   ├── fetch_nixpkgs.sh
 4.0K   │   └── fetch_alpine_git.sh
-3.1M   ├─┬ bincache
-3.0M   │ ├─┬ data
-1.5M   │ │ ├── x86_64-Linux.json
-952K   │ │ ├── aarch64-Linux.json
-128K   │ │ ├── x86_64-Linux.json.cba
-116K   │ │ ├── x86_64-Linux.json.xz
-112K   │ │ ├── x86_64-Linux.json.zstd
- 96K   │ │ ├── aarch64-Linux.json.cba
- 80K   │ │ ├── aarch64-Linux.json.zstd
- 80K   │ │ ├── aarch64-Linux.json.xz
+3.5M   ├─┬ bincache
+3.5M   │ ├─┬ data
+1.6M   │ │ ├── x86_64-Linux.json
+1.1M   │ │ ├── aarch64-Linux.json
+148K   │ │ ├── x86_64-Linux.json.cba
+128K   │ │ ├── x86_64-Linux.json.xz
+120K   │ │ ├── x86_64-Linux.json.zstd
+112K   │ │ ├── aarch64-Linux.json.cba
+ 92K   │ │ ├── aarch64-Linux.json.xz
+ 88K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum
 4.0K   │ │ ├── aarch64-Linux.json.zstd.bsum
 4.0K   │ │ ├── aarch64-Linux.json.xz.bsum
 4.0K   │ │ └── aarch64-Linux.json.bsum
- 36K   │ └─┬ scripts
- 16K   │   ├── gen_meta_x86_64-Linux.sh
- 16K   │   └── gen_meta_aarch64-Linux.sh
+ 44K   │ └─┬ scripts
+ 20K   │   ├── gen_meta_x86_64-Linux.sh
+ 20K   │   └── gen_meta_aarch64-Linux.sh
 1.1M   ├─┬ soarpkgs
 1.0M   │ ├─┬ data
 764K   │ │ ├── pub_issues_binaries.txt

@@ -176,10 +176,10 @@ generate_meta()
                if .key == "ghcr_pkg" then 
                  [., {
                    key: "ghcr_size", 
-                   value: ($ghcr_size|tostring)
+                   value: ($ghcr_size|tonumber|bytes)
                  }, {
                    key: "ghcr_size_raw",
-                   value: ($ghcr_size|tonumber|bytes)
+                   value: ($ghcr_size|tostring)
                  }]
                else [.] 
                end

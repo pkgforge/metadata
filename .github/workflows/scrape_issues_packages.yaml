@@ -1,5 +1,8 @@
 #https://github.com/pkgforge/soarpkgs/blob/main/soarpkgs/scripts/scrape_pub_issues_packages.sh
 name: 🔎 Scrape Public Issues (Portable Packages) 🕸️
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
 
 on:
   repository_dispatch:

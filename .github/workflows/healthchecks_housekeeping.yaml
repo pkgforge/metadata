@@ -1,5 +1,7 @@
 name: 🐧🧹 HealthChecks 🖳🗑️
-#MAX_RUNTIME: 02 Minutes */10 * * * * 
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
 
 on:
   #push:

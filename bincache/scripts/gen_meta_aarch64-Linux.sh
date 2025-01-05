@@ -105,10 +105,10 @@ generate_meta()
             jq --slurpfile manifest "${TMPDIR}/${MANIFEST_JSON}" '
              to_entries | 
              map(
-               if .key == "build_log" then
+               if .key == "build_log" and (. | from_entries | has("build_gha") | not) then
                  [{
-                   key: "build_ghactions",
-                   value: ($manifest[0].annotations["dev.pkgforge.soar.build_ghactions"] // "")
+                   key: "build_gha",
+                   value: ($manifest[0].annotations["dev.pkgforge.soar.build_gha"] // "")
                  }, .]
                else [.]
                end
@@ -117,7 +117,7 @@ generate_meta()
             jq --slurpfile manifest "${TMPDIR}/${MANIFEST_JSON}" '
              to_entries | 
              map(
-               if .key == "build_log" then
+               if .key == "build_log" and (. | from_entries | has("build_id") | not) then
                  [{
                    key: "build_id",
                    value: ($manifest[0].annotations["dev.pkgforge.soar.build_id"] // "")

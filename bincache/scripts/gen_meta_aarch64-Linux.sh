@@ -277,6 +277,33 @@ if command -v rclone &> /dev/null &&\
   generate_checksum "aarch64-Linux.json"
  #To Bita
   bita compress --input "aarch64-Linux.json" --compression "zstd" --compression-level "21" --force-create "aarch64-Linux.json.cba"
+ #To Sqlite
+  if command -v "qsv" >/dev/null 2>&1; then
+    jq -c '.[]' "aarch64-Linux.json" > "${TMPDIR}/aarch64-Linux.jsonl"
+    qsv jsonl "${TMPDIR}/aarch64-Linux.jsonl" > "${TMPDIR}/aarch64-Linux.csv"
+    qsv to sqlite "${TMPDIR}/aarch64-Linux.db" "${TMPDIR}/aarch64-Linux.csv"
+    if [[ -s "${TMPDIR}/aarch64-Linux.db" && $(stat -c%s "${TMPDIR}/aarch64-Linux.db") -gt 1024 ]]; then
+     cp -fv "${TMPDIR}/aarch64-Linux.db" "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db" ; generate_checksum "aarch64-Linux.db"
+     bita compress --input "aarch64-Linux.db" --compression "zstd" --compression-level "21" --force-create "aarch64-Linux.db.cba"
+     7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${GITHUB_WORKSPACE}/main/aarch64-Linux/aarch64-Linux.db.xz" "${GITHUB_WORKSPACE}/main/aarch64-Linux/aarch64-Linux.db" 2>/dev/null ; generate_checksum "aarch64-Linux.db.xz"
+     zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/aarch64-Linux/aarch64-Linux.db" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/aarch64-Linux.db.zstd" ; generate_checksum "aarch64-Linux.db.zstd"
+     #Upload
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db" "r2:/meta/bincache/aarch64-Linux.db" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db" "r2:/meta/bincache/aarch64-linux.db" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.bsum" "r2:/meta/bincache/aarch64-Linux.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.bsum" "r2:/meta/bincache/aarch64-linux.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.cba" "r2:/meta/bincache/aarch64-Linux.db.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.cba" "r2:/meta/bincache/aarch64-linux.db.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.xz" "r2:/meta/bincache/aarch64-Linux.db.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.xz" "r2:/meta/bincache/aarch64-linux.db.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.xz.bsum" "r2:/meta/bincache/aarch64-Linux.db.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.xz.bsum" "r2:/meta/bincache/aarch64-linux.db.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.zstd" "r2:/meta/bincache/aarch64-Linux.db.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.zstd" "r2:/meta/bincache/aarch64-linux.db.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.zstd.bsum" "r2:/meta/bincache/aarch64-Linux.db.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+      rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.db.zstd.bsum" "r2:/meta/bincache/aarch64-linux.db.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+    fi
+  fi
  #To xz
   7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "aarch64-Linux.json.xz" "aarch64-Linux.json" 2>/dev/null ; generate_checksum "aarch64-Linux.json.xz"
  #To Zstd

@@ -30,6 +30,12 @@ jobs:
             script: "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_x86_64-Linux.sh"
             arch: "x86_64"
             file: "/tmp/bincache_x86_64-Linux.json"
+
+          - repo: "soarpkgs"
+            script: "${GITHUB_WORKSPACE}/main/soarpkgs/scripts/gen_meta.sh"
+            arch: "MULTI"
+            file: "/tmp/soarpkgs.json"
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

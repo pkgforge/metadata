@@ -16,6 +16,7 @@ jobs:
       attestations: write   
       contents: write
       id-token: write
+      issues: write
       packages: write
       statuses: read
     strategy:
@@ -109,6 +110,47 @@ jobs:
           commit_user_email: AjamX101@gmail.com
           commit_message: "✅ Updated Metadata [${{ matrix.repo }}-${{ matrix.arch }}] ♻️"
           #push_options: '--force'
+        continue-on-error: true
+
+      - name: Report Invalid SBUILDS
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          ##Failed SBUILDS (Binaries)
+          if [[ -s "${SYSTMP}/INVALID_BINARIES.txt" || $(stat -c%s "${SYSTMP}/INVALID_BINARIES.txt") -gt 10 ]]; then
+           #sed 's|.*/packages|https://github.com/pkgforge/soarpkgs/blob/main/packages|' -i  "${SYSTMP}/INVALID_BINARIES.txt"
+           #sed 's|^|- |' -i "${SYSTMP}/INVALID_BINARIES.txt"
+           #sort -u "${SYSTMP}/INVALID_BINARIES.txt" -o "${SYSTMP}/INVALID_BINARIES.txt"
+           export HAS_INVALID_BINS="TRUE"
+           echo "HAS_INVALID_BINS=${HAS_INVALID_BINS}" >> "${GITHUB_ENV}"
+          fi
+          ##Failed SBUILDS (Packages)
+          if [[ -s "${SYSTMP}/INVALID_PACKAGES.txt" || $(stat -c%s "${SYSTMP}/INVALID_PACKAGES.txt") -gt 10 ]]; then
+           #sed 's|.*/packages|https://github.com/pkgforge/soarpkgs/blob/main/packages|' -i  "${SYSTMP}/INVALID_PACKAGES.txt"
+           #sed 's|^|- |' -i "${SYSTMP}/INVALID_PACKAGES.txt"
+           #sort -u "${SYSTMP}/INVALID_PACKAGES.txt" -o "${SYSTMP}/INVALID_PACKAGES.txt"
+           export HAS_INVALID_PKGS="TRUE"
+           echo "HAS_INVALID_PKGS=${HAS_INVALID_PKGS}" >> "${GITHUB_ENV}"
+          fi
+        continue-on-error: true        
+
+      - name: Create Issue (Invalid Binary SBUILDS)
+        if: env.HAS_INVALID_BINS == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Failed Binary Validation)
+          content-filepath: "/tmp/INVALID_BINARIES.txt"
+          labels: report, automated issue
+        continue-on-error: true
+
+      - name: Create Issue (Invalid Package SBUILDS)
+        if: env.HAS_INVALID_PKGS == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Failed Package Validation)
+          content-filepath: "/tmp/INVALID_PACKAGES.txt"
+          labels: report, automated issue
         continue-on-error: true
 
       - name: Attest Build Provenance

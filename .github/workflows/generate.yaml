@@ -119,7 +119,7 @@ jobs:
           #--------------#
           ##Failed SBUILDS (Binaries)
           if [[ -s "${SYSTMP}/INVALID_BINARIES.txt" || $(stat -c%s "${SYSTMP}/INVALID_BINARIES.txt") -gt 10 ]]; then
-           #sed 's|.*/packages|https://github.com/pkgforge/soarpkgs/blob/main/packages|' -i  "${SYSTMP}/INVALID_BINARIES.txt"
+           #sed 's|.*/binaries|https://github.com/pkgforge/soarpkgs/blob/main/binaries|' -i  "${SYSTMP}/INVALID_BINARIES.txt"
            #sed 's|^|- |' -i "${SYSTMP}/INVALID_BINARIES.txt"
            #sort -u "${SYSTMP}/INVALID_BINARIES.txt" -o "${SYSTMP}/INVALID_BINARIES.txt"
            export HAS_INVALID_BINS="TRUE"

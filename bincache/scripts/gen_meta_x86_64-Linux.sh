@@ -243,7 +243,9 @@ jq '
   (map(select(.download_count == -1)) | sort_by(.pkg)) as $invalid_entries |
   ($valid_entries + $invalid_entries) | to_entries | map(.value.rank = (.key + 1 | tostring)) |
   map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq -s 'if type == "array" then . else [.] end' > "${TMPDIR}/bincache_x86_64-Linux.json"
-#sanity check: jq 'sort_by(.rank | tonumber) | map({pkg_name, rank, download_count})'
+#sanity check rank : jq 'sort_by(.rank | tonumber) | map({pkg_name, rank, download_count})'
+#sanity check urls
+sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/bincache_x86_64-Linux.json"
 ##Check
 unset PKG_COUNT; PKG_COUNT="$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/bincache_x86_64-Linux.json" | sort -u | wc -l | tr -d '[:space:]')"
 if [[ "${PKG_COUNT}" -le 200 ]]; then

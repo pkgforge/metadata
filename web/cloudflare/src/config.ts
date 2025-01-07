@@ -152,6 +152,12 @@ const commonDescriptions = {
     // soarpkgs
     '/soarpkgs': "<a href='https://docs.pkgforge.dev/repositories/soarpkgs/metadata'>🧬 JSON Metadata For soarpkgs</a>",
     '/soarpkgs/INDEX.db': "🗃️ SQLITE DB For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
+    '/soarpkgs/INDEX.db.bsum': "🔐 B3SUM (ALL)",
+    '/soarpkgs/INDEX.db.cba': "🗃️ Compressed Bita SQLITE DB (ALL)",
+    '/soarpkgs/INDEX.db.xz': "🗃️ Compressed XZ SQLITE DB (ALL)",
+    '/soarpkgs/INDEX.db.xz.bsum': "🔐 B3SUM (ALL)",
+    '/soarpkgs/INDEX.db.zstd': "🗃️ Compressed ZSTD SQLITE DB (ALL)",
+    '/soarpkgs/INDEX.db.zstd.bsum': "🔐 B3SUM (ALL)",
     '/soarpkgs/INDEX.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (ALL)",
     '/soarpkgs/INDEX.json.bsum': "🔐 B3SUM (ALL)",
     '/soarpkgs/INDEX.json.cba': "🗃️ Compressed Bita JSON Metadata (ALL)",

@@ -1,5 +1,5 @@
 ```mathematica
-182M └─┬ main
+183M └─┬ main
 168M   ├─┬ misc
 168M   │ ├─┬ data
  69M   │ │ ├── ARCHLINUX.json
@@ -14,7 +14,7 @@
 444K   │ │ ├── FLATPAK_APPS_INFO.json
 412K   │ │ ├── FLATPAK_APPS_INFO.txt
 240K   │ │ ├── FLATPAK_POPULAR.json
-236K   │ │ ├── FLATPAK_TRENDING.json
+228K   │ │ ├── FLATPAK_TRENDING.json
  72K   │ │ └── FLATPAK_APP_IDS.txt
  60K   │ └─┬ scripts
  12K   │   ├── fetch_alpine_pkg.sh
@@ -25,24 +25,24 @@
 4.0K   │   ├── fetch_pkgsrc.sh
 4.0K   │   ├── fetch_nixpkgs.sh
 4.0K   │   └── fetch_alpine_git.sh
-6.9M   ├─┬ bincache
-6.8M   │ ├─┬ data
-1.8M   │ │ ├── x86_64-Linux.json
+7.8M   ├─┬ bincache
+7.7M   │ ├─┬ data
+1.9M   │ │ ├── x86_64-Linux.json
 1.6M   │ │ ├── x86_64-Linux.db
-1.1M   │ │ ├── aarch64-Linux.json
-884K   │ │ ├── aarch64-Linux.db
-176K   │ │ ├── x86_64-Linux.db.cba
-156K   │ │ ├── x86_64-Linux.json.cba
-144K   │ │ ├── x86_64-Linux.db.zstd
-140K   │ │ ├── x86_64-Linux.db.xz
-136K   │ │ ├── x86_64-Linux.json.xz
-128K   │ │ ├── x86_64-Linux.json.zstd
-120K   │ │ ├── aarch64-Linux.db.cba
-108K   │ │ ├── aarch64-Linux.json.cba
-100K   │ │ ├── aarch64-Linux.db.zstd
- 96K   │ │ ├── aarch64-Linux.db.xz
- 92K   │ │ ├── aarch64-Linux.json.xz
- 88K   │ │ ├── aarch64-Linux.json.zstd
+1.4M   │ │ ├── aarch64-Linux.json
+1.1M   │ │ ├── aarch64-Linux.db
+184K   │ │ ├── x86_64-Linux.db.cba
+164K   │ │ ├── x86_64-Linux.json.cba
+152K   │ │ ├── x86_64-Linux.db.zstd
+148K   │ │ ├── aarch64-Linux.db.cba
+144K   │ │ ├── x86_64-Linux.db.xz
+140K   │ │ ├── x86_64-Linux.json.xz
+132K   │ │ ├── x86_64-Linux.json.zstd
+128K   │ │ ├── aarch64-Linux.json.cba
+120K   │ │ ├── aarch64-Linux.db.zstd
+116K   │ │ ├── aarch64-Linux.db.xz
+112K   │ │ ├── aarch64-Linux.json.xz
+108K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum
@@ -55,27 +55,27 @@
 4.0K   │ │ ├── aarch64-Linux.db.zstd.bsum
 4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
 4.0K   │ │ └── aarch64-Linux.db.bsum
- 48K   │ └─┬ scripts
- 24K   │   ├── gen_meta_aarch64-Linux.sh
- 20K   │   └── gen_meta_x86_64-Linux.sh
-6.6M   ├─┬ soarpkgs
-6.6M   │ ├─┬ data
-2.5M   │ │ ├── ALL.json
-1.4M   │ │ ├── ALL.db
-764K   │ │ ├── pub_issues_binaries.txt
-388K   │ │ ├── ALL.json.cba
-308K   │ │ ├── ALL.db.cba
+ 52K   │ └─┬ scripts
+ 24K   │   ├── gen_meta_x86_64-Linux.sh
+ 24K   │   └── gen_meta_aarch64-Linux.sh
+6.8M   ├─┬ soarpkgs
+6.7M   │ ├─┬ data
+2.5M   │ │ ├── INDEX.json
+1.5M   │ │ ├── INDEX.db
+780K   │ │ ├── pub_issues_binaries.txt
+384K   │ │ ├── INDEX.json.cba
+336K   │ │ ├── INDEX.db.cba
 300K   │ │ ├── pub_issues_packages.txt
-264K   │ │ ├── ALL.json.xz
-256K   │ │ ├── ALL.json.zstd
-236K   │ │ ├── ALL.db.zstd
-228K   │ │ ├── ALL.db.xz
-4.0K   │ │ ├── ALL.json.zstd.bsum
-4.0K   │ │ ├── ALL.json.xz.bsum
-4.0K   │ │ ├── ALL.json.bsum
-4.0K   │ │ ├── ALL.db.zstd.bsum
-4.0K   │ │ ├── ALL.db.xz.bsum
-4.0K   │ │ └── ALL.db.bsum
+264K   │ │ ├── INDEX.json.xz
+256K   │ │ ├── INDEX.json.zstd
+256K   │ │ ├── INDEX.db.zstd
+248K   │ │ ├── INDEX.db.xz
+4.0K   │ │ ├── INDEX.json.zstd.bsum
+4.0K   │ │ ├── INDEX.json.xz.bsum
+4.0K   │ │ ├── INDEX.json.bsum
+4.0K   │ │ ├── INDEX.db.zstd.bsum
+4.0K   │ │ ├── INDEX.db.xz.bsum
+4.0K   │ │ └── INDEX.db.bsum
  44K   │ └─┬ scripts
  24K   │   ├── gen_meta.sh
 8.0K   │   ├── scrape_pub_issues_packages.sh
@@ -92,6 +92,9 @@
  12K   │   ├── tsconfig.json
 4.0K   │   ├── wrangler.toml
 4.0K   │   └── package.json
+ 16K   ├─┬ workers
+ 12K   │ └─┬ omni-redirector-pkgforge-dev
+8.0K   │   └── worker.js
  12K   ├─┬ aarch64-Linux
 4.0K   │ ├── x86_64-Linux.db.xz
 4.0K   │ └── aarch64-Linux.db.xz

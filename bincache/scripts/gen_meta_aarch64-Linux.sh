@@ -242,7 +242,7 @@ jq '
   (map(select(.download_count != -1)) | sort_by(.rank, .pkg)) as $valid_entries |
   (map(select(.download_count == -1)) | sort_by(.pkg)) as $invalid_entries |
   ($valid_entries + $invalid_entries) | to_entries | map(.value.rank = (.key + 1 | tostring)) |
-  map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq -s 'if type == "array" then . else [.] end' > "${TMPDIR}/bincache_aarch64-Linux.json"
+  map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq 'walk(if type == "boolean" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' > "${TMPDIR}/bincache_aarch64-Linux.json"
 #sanity check: jq 'sort_by(.rank | tonumber) | map({pkg_name, rank, download_count})'
 #sanity check urls
 sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/bincache_aarch64-Linux.json"

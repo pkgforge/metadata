@@ -290,7 +290,7 @@ fi
 
 #-------------------------------------------------------#
 ##Copy to ${SYSTMP}
-jq -s add "${TMPDIR}/BINARIES.json" "${TMPDIR}/PACKAGES.json" | jq 'sort_by(.pkg)' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'if type == "array" then . else [.] end' > "${TMPDIR}/INDEX.json"
+jq -s add "${TMPDIR}/BINARIES.json" "${TMPDIR}/PACKAGES.json" | jq 'sort_by(.pkg)' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' > "${TMPDIR}/INDEX.json"
 if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/INDEX.json" | grep -iv 'null' | wc -l)" -le 2000 ]]; then
    echo -e "\n[-] FATAL: Failed to Generate Soarpkgs MetaData\n"
    exit 1   

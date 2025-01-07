@@ -48,6 +48,16 @@ const DOMAIN_CONFIG = new Map([
       defaultTarget: SOARPKGS_DEFAULT,
       pathMappings: new Map([
         ['dummy-dummy', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/dummy-dummy']
+      //  ['aarch64', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/aarch64-Linux'],
+      //  ['aarch64-linux', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/aarch64-Linux'],
+      //  ['aarch64-Linux', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/aarch64-Linux'],
+      //  ['arm64_linux', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/aarch64-Linux'],
+      //  ['arm64_Linux', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/aarch64-Linux'],
+      //  ['x86_64', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/x86_64-Linux'],
+      //  ['x86_64-linux', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/x86_64-Linux'],
+      //  ['x86_64-Linux', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/x86_64-Linux'],
+      //  ['amd64_linux', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/x86_64-Linux'],
+      //  ['amd64_Linux', 'https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/x86_64-Linux']     
       ])
     }
   ],

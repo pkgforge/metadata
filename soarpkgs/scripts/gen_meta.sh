@@ -24,9 +24,12 @@ chmod +x "${TMPDIR}/sbuild-linter"
    timeout 10 "${TMPDIR}/sbuild-linter" --help
  fi
 ##Install Guix: https://guix.gnu.org/manual/en/html_node/Installation.html
- curl -qfsSL "https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh" -o "./guix-install.sh" || curl -qfsSL "https://raw.githubusercontent.com/Millak/guix/refs/heads/master/etc/guix-install.sh" -o "./guix-install.sh"
- chmod +x "./guix-install.sh" && yes '' | sudo "./guix-install.sh" --uninstall 2>/dev/null
- yes '' | sudo "./guix-install.sh" 
+ curl -qfsSL "https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh" -o "${TMPDIR}/guix-install.sh"
+ if [[ ! -s "${TMPDIR}/guix-install.sh" || $(stat -c%s "${TMPDIR}/guix-install.sh") -le 10 ]]; then
+    curl -qfsSL "https://raw.githubusercontent.com/Millak/guix/refs/heads/master/etc/guix-install.sh" -o "${TMPDIR}/guix-install.sh"
+ fi
+ chmod +x "${TMPDIR}/guix-install.sh" && yes '' | sudo "${TMPDIR}/guix-install.sh" --uninstall 2>/dev/null
+ yes '' | sudo "${TMPDIR}/guix-install.sh" 
  #Test
  if ! command -v guix &> /dev/null; then
   echo -e "\n[-] guix NOT Found\n"

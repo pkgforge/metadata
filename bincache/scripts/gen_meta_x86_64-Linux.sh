@@ -210,10 +210,6 @@ generate_meta()
            #Cleanup & Finalize
              jq 'walk(if type == "object" then with_entries(select(.value != "" and .value != [] and .value != {})) else . end)' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
              mv -fv "${TMPDIR}/${METADATA_JSON}.tmp01" "${TMPDIR}/${METADATA_JSON}"
-           #Check missing (pkg_id)
-             jq '.[] | select(.pkg_id == null or .pkg_id == "" or .pkg_id == "null") | {pkg, build_script}' "${TMPDIR}/${METADATA_JSON}" > "${SYSTMP}/MISSING_PKG_ID.json"
-           #Check dupes (pkg_webpage)
-             jq 'group_by(.pkg_webpage) | map(select(length > 1)) | flatten | map({pkg_webpage: .pkg_webpage,build_script: .build_script})' "${TMPDIR}/${METADATA_JSON}" > "${SYSTMP}/DUPES_PKG_WEBPAGE.json"
           fi
        fi
      fi
@@ -238,6 +234,10 @@ popd >/dev/null 2>&1
 #-------------------------------------------------------#
 ##Merge
 find "${TMPDIR}" -type f -name '*-metadata.json' -exec bash -c 'jq empty "{}" 2>/dev/null && cat "{}"' \; | jq -s 'sort_by(.pkg)' > "${TMPDIR}/bincache_x86_64-Linux.json.tmp"
+#Check missing (pkg_id)
+  jq '.[] | select(.pkg_id == null or .pkg_id == "" or .pkg_id == "null") | {pkg, build_script}' "${TMPDIR}/bincache_x86_64-Linux.json.tmp" > "${SYSTMP}/MISSING_PKG_ID.json"
+#Check dupes (pkg_webpage)
+  jq 'group_by(.pkg_webpage) | map(select(length > 1)) | flatten | map({pkg_webpage: .pkg_webpage,build_script: .build_script})' "${TMPDIR}/bincache_x86_64-Linux.json.tmp" > "${SYSTMP}/DUPES_PKG_WEBPAGE.json"
 ##Sort Rank
 jq '
  def compute_ranks:

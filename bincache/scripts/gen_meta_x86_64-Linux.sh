@@ -25,6 +25,8 @@ if [[ "${PKG_COUNT_TMP}" -le 3000 ]]; then
 else
  echo -e "[+] Packages (ALL): ${PKG_COUNT_TMP} <== https://github.com/orgs/pkgforge/packages?visibility=public"
 fi
+##Get BACKAGE.json
+curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/soarpkgs/data/BACKAGE.json" -o "${TMPDIR}/BACKAGE.json"
 ##Get SBUILD.json
 curl -qfsSL "https://raw.githubusercontent.com/pkgforge/bincache/refs/heads/main/SBUILD_LIST.json" -o "${TMPDIR}/sbuilds.json"
 jq -r '.[] | .ghcr_pkg' "${TMPDIR}/sbuilds.json" | sed 's/^ghcr\.io\/pkgforge\///' | sort -u -o "${TMPDIR}/sbuild_list.tmp"
@@ -126,15 +128,35 @@ generate_meta()
                end
              ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
            #Add/Update download_count
-            unset DL_COUNT ; DL_COUNT="$(curl -A "${USER_AGENT}" -qfsSL "$(jq -r '.ghcr_url' "${TMPDIR}/${METADATA_JSON}.tmp01")" | grep -i -A 5 'Total downloads' | grep -oP '<h3 title="\K[0-9]+' | tr -cd '0-9' | tr -d '[:space:]')"
+            unset DL_COUNT DL_COUNT_MONTH DL_COUNT_WEEK
+            if [ -s "${TMPDIR}/BACKAGE.json" ]; then
+             DL_COUNT="$(jq -r --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${MANIFEST_JSON}")" 'map(select(.ghcr_pkg | contains($ghcr_pkg))) | .[].download_count' "${TMPDIR}/BACKAGE.json" | tr -cd '0-9' | tr -d '[:space:]')"
+             [[ -z "${DL_COUNT}" || "${DL_COUNT}" == "0" || "${DL_COUNT}" == "-1" ]] && unset DL_COUNT
+             DL_COUNT_MONTH="$(jq -r --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${MANIFEST_JSON}")" 'map(select(.ghcr_pkg | contains($ghcr_pkg))) | .[].download_count_month' "${TMPDIR}/BACKAGE.json" | tr -cd '0-9' | tr -d '[:space:]')"
+             [[ -z "${DL_COUNT_MONTH}" || "${DL_COUNT_MONTH}" == "0" || "${DL_COUNT_MONTH}" == "-1" ]] && unset DL_COUNT
+             DL_COUNT_WEEK="$(jq -r --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${MANIFEST_JSON}")" 'map(select(.ghcr_pkg | contains($ghcr_pkg))) | .[].download_count_week' "${TMPDIR}/BACKAGE.json" | tr -cd '0-9' | tr -d '[:space:]')"
+             [[ -z "${DL_COUNT_WEEK}" || "${DL_COUNT_WEEK}" == "0" || "${DL_COUNT_WEEK}" == "-1" ]] && unset DL_COUNT
+            else
+             DL_COUNT="$(curl -A "${USER_AGENT}" -qfsSL "$(jq -r '.ghcr_url' "${TMPDIR}/${METADATA_JSON}.tmp01")" | grep -i -A 5 'Total downloads' | grep -oP '<h3 title="\K[0-9]+' | tr -cd '0-9' | tr -d '[:space:]')"
+             [[ -z "${DL_COUNT}" || "${DL_COUNT}" == "0" || "${DL_COUNT}" == "-1" ]] && unset DL_COUNT
+            fi
             [[ $(echo "${DL_COUNT}" | grep -E '^[0-9]+$') ]] || DL_COUNT="-1"
-            jq --arg DL_COUNT "${DL_COUNT}" '
+            jq --arg DL_COUNT "${DL_COUNT}" --arg DL_COUNT_MONTH "${DL_COUNT_MONTH}" --arg DL_COUNT_WEEK "${DL_COUNT_WEEK}" '
              to_entries | map(
                if .key == "download_url" then
                  [{
                    key: "download_count",
                    value: ($DL_COUNT | tostring)
-                 }, .]
+                 },
+                 {
+                   key: "download_count_month",
+                   value: ($DL_COUNT_MONTH | tostring)
+                 },
+                 {
+                   key: "download_count_week",
+                   value: ($DL_COUNT_WEEK | tostring)
+                 },
+                .]
                else [.]
                end
              ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
@@ -188,6 +210,10 @@ generate_meta()
            #Cleanup & Finalize
              jq 'walk(if type == "object" then with_entries(select(.value != "" and .value != [] and .value != {})) else . end)' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
              mv -fv "${TMPDIR}/${METADATA_JSON}.tmp01" "${TMPDIR}/${METADATA_JSON}"
+           #Check missing (pkg_id)
+             jq '.[] | select(.pkg_id == null or .pkg_id == "" or .pkg_id == "null") | {pkg, build_script}' "${TMPDIR}/${METADATA_JSON}" > "${SYSTMP}/MISSING_PKG_ID.json"
+           #Check dupes (pkg_webpage)
+             jq 'group_by(.pkg_webpage) | map(select(length > 1)) | flatten | map({pkg_webpage: .pkg_webpage,build_script: .build_script})' "${TMPDIR}/${METADATA_JSON}" > "${SYSTMP}/DUPES_PKG_WEBPAGE.json"
           fi
        fi
      fi
@@ -242,7 +268,22 @@ jq '
   (map(select(.download_count != -1)) | sort_by(.rank, .pkg)) as $valid_entries |
   (map(select(.download_count == -1)) | sort_by(.pkg)) as $invalid_entries |
   ($valid_entries + $invalid_entries) | to_entries | map(.value.rank = (.key + 1 | tostring)) |
-  map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq 'walk(if type == "boolean" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' > "${TMPDIR}/bincache_x86_64-Linux.json"
+  map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq 'walk(if type == "boolean" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' | jq '
+  . as $original |
+  group_by(.pkg_webpage) |
+  map(select(length > 1)) |
+  flatten |
+  map(
+    . as $item |
+    .pkg_webpage |= sub(
+      "x86_64-linux/[^/]+";
+      "x86_64-linux/" + ($item.pkg_id | gsub("\\.";"-"))
+    )
+  ) as $changes |
+  ($original | map(
+    (.pkg_id as $id | ($changes | map(select(.pkg_id == $id))[0]) // .)
+  ))
+  ' > "${TMPDIR}/bincache_x86_64-Linux.json"
 #sanity check rank : jq 'sort_by(.rank | tonumber) | map({pkg_name, rank, download_count})'
 #sanity check urls
 sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/bincache_x86_64-Linux.json"

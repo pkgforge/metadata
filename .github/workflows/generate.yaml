@@ -21,7 +21,7 @@ jobs:
       statuses: read
     strategy:
       matrix:
-        include: 
+        include:
           - repo: "bincache"
             script: "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_aarch64-Linux.sh"
             arch: "aarch64"
@@ -37,6 +37,10 @@ jobs:
             arch: "MULTI"
             file: "/tmp/INDEX.json"
 
+          - repo: "soarpkgs"
+            script: "${GITHUB_WORKSPACE}/main/soarpkgs/scripts/gen_ghcr_backage.sh"
+            arch: "MULTI"
+            file: "/tmp/BACKAGE.json"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -150,6 +154,44 @@ jobs:
         with:
           title: SBUILDS (Failed Package Validation)
           content-filepath: "/tmp/INVALID_PACKAGES.txt"
+          labels: report, automated issue
+        continue-on-error: true
+
+      - name: Report Duplicate pkg_webpages
+        run: |
+          if [[ -s "${SYSTMP}/DUPES_PKG_WEBPAGE.json" || $(stat -c%s "${SYSTMP}/DUPES_PKG_WEBPAGE.json") -gt 10 ]]; then
+           echo '```json' > "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
+           cat "${SYSTMP}/DUPES_PKG_WEBPAGE.json" >> "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
+           echo '```' >> "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
+           export HAS_DUPE_PKG_WEBPAGES="TRUE"
+          fi
+        continue-on-error: true
+
+      - name: Create Issue (Duplicate Webpages)
+        if: env.HAS_DUPE_PKG_WEBPAGES == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Duplicate Webpages)
+          content-filepath: "/tmp/DUPES_PKG_WEBPAGE.txt"
+          labels: report, automated issue
+        continue-on-error: true
+
+      - name: Report Missing pkg_id
+        run: |
+          if [[ -s "${SYSTMP}/MISSING_PKG_ID.json" || $(stat -c%s "${SYSTMP}/MISSING_PKG_ID.json") -gt 10 ]]; then
+           echo '```json' > "${SYSTMP}/MISSING_PKG_ID.txt"
+           cat "${SYSTMP}/MISSING_PKG_ID.json" >> "${SYSTMP}/MISSING_PKG_ID.txt"
+           echo '```' >> "${SYSTMP}/MISSING_PKG_ID.txt"
+           export HAS_MISSING_PKG_ID="TRUE"
+          fi
+        continue-on-error: true
+
+      - name: Create Issue (Missing Package ID)
+        if: env.HAS_MISSING_PKG_ID == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Missing Package ID)
+          content-filepath: "/tmp/MISSING_PKG_ID.txt"
           labels: report, automated issue
         continue-on-error: true
 

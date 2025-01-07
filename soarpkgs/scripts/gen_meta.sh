@@ -24,7 +24,7 @@ chmod +x "${TMPDIR}/sbuild-linter"
    timeout 10 "${TMPDIR}/sbuild-linter" --help
  fi
 ##Install Guix: https://guix.gnu.org/manual/en/html_node/Installation.html
- curl -qfsSL "https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh" -o "./guix-install.sh"
+ curl -qfsSL "https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh" -o "./guix-install.sh" || curl -qfsSL "https://raw.githubusercontent.com/Millak/guix/refs/heads/master/etc/guix-install.sh" -o "./guix-install.sh"
  chmod +x "./guix-install.sh" && yes '' | sudo "./guix-install.sh" --uninstall 2>/dev/null
  yes '' | sudo "./guix-install.sh" 
  #Test
@@ -35,8 +35,16 @@ chmod +x "${TMPDIR}/sbuild-linter"
   yes '' | guix install glibc-locales
   export GUIX_LOCPATH="${HOME}/.guix-profile/lib/locale"
   curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/nonguix.channels.scm" | sudo tee "/root/.config/guix/channels.scm"
-  guix pull --cores="$(($(nproc)+1))" --max-jobs="$(($(nproc)+1))"
-  guix --version
+  sudo git config --global "fetch.depth" 1
+  sudo git config --global "fetch.unshallow" false
+  sudo git config --global "advice.detachedHead" false
+  GUIX_GIT_REPO="https://git.savannah.gnu.org/git/guix.git"
+  ##mirror
+  #GUIX_GIT_REPO="https://github.com/Millak/guix"
+  GUIX_LATEST_SHA="$(git ls-remote "${GUIX_GIT_REPO}" 'HEAD' | grep -w 'HEAD' | head -n 1 | awk '{print $1}' | tr -d '[:space:]')"
+  sudo GIT_CONFIG_PARAMETERS="'filter.blob:none.enabled=true'" guix pull --url="${GUIX_GIT_REPO}" --commit="${GUIX_LATEST_SHA}" --cores="$(($(nproc)+1))" --max-jobs="2" --disable-authentication &
+  GIT_CONFIG_PARAMETERS="'filter.blob:none.enabled=true'" guix pull --url="${GUIX_GIT_REPO}" --commit="${GUIX_LATEST_SHA}" --cores="$(($(nproc)+1))" --max-jobs="2" --disable-authentication &
+  wait ; guix --version
  fi
 #Nix
   "/nix/nix-installer" uninstall --no-confirm 2>/dev/null

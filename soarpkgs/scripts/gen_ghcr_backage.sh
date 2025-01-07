@@ -25,7 +25,7 @@ TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: 
   download_count_month: (.downloads_month // ""),
   download_count_week: (.downloads_week // ""),
   download_count_day: (.downloads_day // "")
- }' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' > "${TMPDIR}/BACKAGE.json.tmp"
+ }' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' | jq 'unique | sort_by(.ghcr_pkg)' > "${TMPDIR}/BACKAGE.json.tmp"
 ##Sanity Check
 if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/BACKAGE.json.tmp" | grep -iv 'null' | wc -l)" -le 2500 ]]; then
    echo -e "\n[-] FATAL: Failed to Generate Backage MetaData\n"

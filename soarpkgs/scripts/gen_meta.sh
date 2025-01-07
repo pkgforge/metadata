@@ -275,7 +275,7 @@ for SBUILD in "${VALID_PKGS[@]}"; do
    "src_url": .src_url,
    "tag": .tag,
    "version": $PKG_VERSION,
-  }' | jq -c 'if type == "array" then .[] else . end' > "${SBUILD}.json"
+  }' | jq -c 'if type == "array" then .[] else . end' | jq 'unique | sort_by(.pkg)' > "${SBUILD}.json"
 done
 ##Merge
 find "${GH_REPO_PATH}/packages" -type f -iregex '.*\.validated.json$' -print0 | xargs -0 jq -s '.' | sed -z 's/  }\n]\n\[\n  {/},{/g' | jq 'sort_by(.pkg_family)' > "${TMPDIR}/PACKAGES.json.tmp"

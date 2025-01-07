@@ -283,7 +283,7 @@ jq '
   ($original | map(
     (.pkg_id as $id | ($changes | map(select(.pkg_id == $id))[0]) // .)
   ))
-  ' > "${TMPDIR}/bincache_aarch64-Linux.json"
+  ' | jq 'unique | sort_by(.pkg)' > "${TMPDIR}/bincache_aarch64-Linux.json"
 #sanity check: jq 'sort_by(.rank | tonumber) | map({pkg_name, rank, download_count})'
 #sanity check urls
 sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/bincache_aarch64-Linux.json"

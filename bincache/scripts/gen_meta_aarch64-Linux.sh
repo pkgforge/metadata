@@ -130,11 +130,11 @@ generate_meta()
            #Add/Update download_count
             unset DL_COUNT DL_COUNT_MONTH DL_COUNT_WEEK
             if [ -s "${TMPDIR}/BACKAGE.json" ]; then
-             DL_COUNT="$(jq -r --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${MANIFEST_JSON}")" 'map(select(.ghcr_pkg | contains($ghcr_pkg))) | .[].download_count' "${TMPDIR}/BACKAGE.json" | tr -cd '0-9' | tr -d '[:space:]')"
+             DL_COUNT="$(jq -r --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${METADATA_JSON}.tmp01")" 'map(select(.ghcr_pkg | contains($ghcr_pkg))) | .[].download_count' "${TMPDIR}/BACKAGE.json" | tr -cd '0-9' | tr -d '[:space:]')"
              [[ -z "${DL_COUNT}" || "${DL_COUNT}" == "0" || "${DL_COUNT}" == "-1" ]] && unset DL_COUNT
-             DL_COUNT_MONTH="$(jq -r --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${MANIFEST_JSON}")" 'map(select(.ghcr_pkg | contains($ghcr_pkg))) | .[].download_count_month' "${TMPDIR}/BACKAGE.json" | tr -cd '0-9' | tr -d '[:space:]')"
+             DL_COUNT_MONTH="$(jq -r --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${METADATA_JSON}.tmp01")" 'map(select(.ghcr_pkg | contains($ghcr_pkg))) | .[].download_count_month' "${TMPDIR}/BACKAGE.json" | tr -cd '0-9' | tr -d '[:space:]')"
              [[ -z "${DL_COUNT_MONTH}" || "${DL_COUNT_MONTH}" == "0" || "${DL_COUNT_MONTH}" == "-1" ]] && unset DL_COUNT
-             DL_COUNT_WEEK="$(jq -r --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${MANIFEST_JSON}")" 'map(select(.ghcr_pkg | contains($ghcr_pkg))) | .[].download_count_week' "${TMPDIR}/BACKAGE.json" | tr -cd '0-9' | tr -d '[:space:]')"
+             DL_COUNT_WEEK="$(jq -r --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${METADATA_JSON}.tmp01")" 'map(select(.ghcr_pkg | contains($ghcr_pkg))) | .[].download_count_week' "${TMPDIR}/BACKAGE.json" | tr -cd '0-9' | tr -d '[:space:]')"
              [[ -z "${DL_COUNT_WEEK}" || "${DL_COUNT_WEEK}" == "0" || "${DL_COUNT_WEEK}" == "-1" ]] && unset DL_COUNT
             else
              DL_COUNT="$(curl -A "${USER_AGENT}" -qfsSL "$(jq -r '.ghcr_url' "${TMPDIR}/${METADATA_JSON}.tmp01")" | grep -i -A 5 'Total downloads' | grep -oP '<h3 title="\K[0-9]+' | tr -cd '0-9' | tr -d '[:space:]')"

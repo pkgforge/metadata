@@ -252,7 +252,7 @@ for SBUILD in "${VALID_PKGS[@]}"; do
     --arg PKGCACHE "${PKGCACHE:-}" --arg ICON "${ICON:-}" --arg PKG_FAMILY "${PKG_FAMILY:-}" \
     --arg PKG_VERSION "${PKG_VERSION:-}" --arg ICON "${ICON:-}"  \
   '{
-   "_disabled": ._disabled,
+   "_disabled": (._disabled | tostring // "unknown"),
    "_disabled_reason": ._disabled_reason,
    "pkg": .pkg,
    "pkg_family": $PKG_FAMILY,

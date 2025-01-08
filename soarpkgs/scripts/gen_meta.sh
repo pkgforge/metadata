@@ -156,7 +156,7 @@ for SBUILD in "${VALID_BINS[@]}"; do
     echo -e "[+] ICON: ${ICON}"
     echo -e "[+] PKG_FAMILY: ${PKG_FAMILY}"
     echo -e "[+] PKG_VERSION: ${PKG_VERSION}"
-    yq . "${SBUILD}" | yj -yj | jq 'del(.x_exec)' | jq --arg VALID_BINSRC "${VALID_BINSRC:-}" \
+    yq . "${SBUILD}" | yj -yj | jq --arg VALID_BINSRC "${VALID_BINSRC:-}" \
     --arg BINCACHE "${BINCACHE:-}" --arg ICON "${ICON:-}" --arg PKG_FAMILY "${PKG_FAMILY:-}" \
     --arg PKG_VERSION "${PKG_VERSION:-}" --arg ICON "${ICON:-}"  \
   '{
@@ -171,10 +171,12 @@ for SBUILD in "${VALID_BINS[@]}"; do
    "build_script": ("https://github.com/pkgforge/soarpkgs/blob/main/binaries/" + $VALID_BINSRC),
    "category": .category,
    "description": .description,
+   "desktop": (if (.desktop.url? | length == 0) then "" else .desktop.url end),
    "distro_pkg": .distro_pkg,
    "download_url": ("https://soarpkgs.pkgforge.dev/binaries/" + $VALID_BINSRC),
    "homepage": .homepage,
-   "icon": $ICON,
+   "host": (if .x_exec.host? and (.x_exec.host | type == "array") then .x_exec.host else ["x86_64-Linux"] end),
+   "icon": (if (.icon.url? | length == 0) then $ICON else .icon.url end),
    "license": .license,
    "maintainer": .maintainer,
    "note": .note,
@@ -182,7 +184,7 @@ for SBUILD in "${VALID_BINS[@]}"; do
    "repology": .repology,
    "src_url": .src_url,
    "tag": .tag,
-   "version": $PKG_VERSION,
+   "version": $PKG_VERSION
   }' | jq -c 'if type == "array" then .[] else . end' > "${SBUILD}.json"
 done
 ##Merge
@@ -248,7 +250,7 @@ for SBUILD in "${VALID_PKGS[@]}"; do
     echo -e "[+] ICON: ${ICON}"
     echo -e "[+] PKG_FAMILY: ${PKG_FAMILY}"
     echo -e "[+] PKG_VERSION: ${PKG_VERSION}"
-    yq . "${SBUILD}" | yj -yj | jq 'del(.x_exec)' | jq --arg VALID_PKGSRC "${VALID_PKGSRC:-}" \
+    yq . "${SBUILD}" | yj -yj | jq --arg VALID_PKGSRC "${VALID_PKGSRC:-}" \
     --arg PKGCACHE "${PKGCACHE:-}" --arg ICON "${ICON:-}" --arg PKG_FAMILY "${PKG_FAMILY:-}" \
     --arg PKG_VERSION "${PKG_VERSION:-}" --arg ICON "${ICON:-}"  \
   '{
@@ -259,22 +261,24 @@ for SBUILD in "${VALID_PKGS[@]}"; do
    "pkg_id": .pkg_id,
    "pkg_type": .pkg_type,
    "app_id": .app_id,
-   "pkgcache": $PKGCACHE,
    "build_script": ("https://github.com/pkgforge/soarpkgs/blob/main/packages/" + $VALID_PKGSRC),
    "category": .category,
    "description": .description,
    "distro_pkg": .distro_pkg,
+   "desktop": (if (.desktop.url? | length == 0) then "" else .desktop.url end),
    "download_url": ("https://soarpkgs.pkgforge.dev/packages/" + $VALID_PKGSRC),
    "homepage": .homepage,
-   "icon": $ICON,
+   "host": (if .x_exec.host? and (.x_exec.host | type == "array") then .x_exec.host else ["x86_64-Linux"] end),
+   "icon": (if (.icon.url? | length == 0) then $ICON else .icon.url end),
    "license": .license,
    "maintainer": .maintainer,
    "note": .note,
+   "pkgcache": $PKGCACHE,
    "provides": .provides,
    "repology": .repology,
    "src_url": .src_url,
    "tag": .tag,
-   "version": $PKG_VERSION,
+   "version": $PKG_VERSION
   }' | jq -c 'if type == "array" then .[] else . end' | jq 'unique | sort_by(.pkg)' > "${SBUILD}.json"
 done
 ##Merge

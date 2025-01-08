@@ -106,6 +106,7 @@ fi
 
 #-------------------------------------------------------#
 ##Validate everything (binaries)
+pushd "${TMPDIR}"
 #First Run
  find "${GH_REPO_PATH}/binaries" -type f -iregex '.*\.\(yml\|yaml\)$' -print0 | xargs -0 "${TMPDIR}/sbuild-linter" --parallel "${PARALLEL_LIMIT:-$(($(nproc)+1))}" --fail "${TMPDIR}/INVALID_BINARIES_01.txt" --timeout "120" --pkgver
 #Retry
@@ -196,10 +197,12 @@ if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/BINARIES.json.tmp" | grep -iv 'n
 else
    cp -fv "${TMPDIR}/BINARIES.json.tmp" "${TMPDIR}/BINARIES.json"
 fi
+popd >/dev/null 2>&1
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
 ##Validate everything (packages)
+pushd "${TMPDIR}"
 #First Run
  find "${GH_REPO_PATH}/packages" -type f -iregex '.*\.\(yml\|yaml\)$' -print0 | xargs -0 "${TMPDIR}/sbuild-linter" --parallel "${PARALLEL_LIMIT:-$(($(nproc)+1))}" --fail "${TMPDIR}/INVALID_PACKAGES_01.txt" --timeout "120" --pkgver
 #Retry
@@ -279,10 +282,10 @@ for SBUILD in "${VALID_PKGS[@]}"; do
    "src_url": .src_url,
    "tag": .tag,
    "version": $PKG_VERSION
-  }' | jq -c 'if type == "array" then .[] else . end' | jq 'unique | sort_by(.pkg)' > "${SBUILD}.json"
+  }' | jq -c 'if type == "array" then .[] else . end' > "${SBUILD}.json"
 done
 ##Merge
-find "${GH_REPO_PATH}/packages" -type f -iregex '.*\.validated.json$' -print0 | xargs -0 jq -s '.' | sed -z 's/  }\n]\n\[\n  {/},{/g' | jq 'sort_by(.pkg_family)' > "${TMPDIR}/PACKAGES.json.tmp"
+find "${GH_REPO_PATH}/packages" -type f -iregex '.*\.validated.json$' -print0 | xargs -0 jq -s '.' | sed -z 's/  }\n]\n\[\n  {/},{/g' | jq 'unique | sort_by(.pkg_family)' > "${TMPDIR}/PACKAGES.json.tmp"
 ##Sanity Check
 if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/PACKAGES.json.tmp" | grep -iv 'null' | wc -l)" -le 400 ]]; then
    echo -e "\n[-] FATAL: Failed to Generate Pkgcache MetaData\n"
@@ -290,11 +293,12 @@ if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/PACKAGES.json.tmp" | grep -iv 'n
 else
    cp -fv "${TMPDIR}/PACKAGES.json.tmp" "${TMPDIR}/PACKAGES.json"
 fi
+popd >/dev/null 2>&1
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
 ##Copy to ${SYSTMP}
-jq -s add "${TMPDIR}/BINARIES.json" "${TMPDIR}/PACKAGES.json" | jq 'sort_by(.pkg)' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' > "${TMPDIR}/INDEX.json"
+jq -s add "${TMPDIR}/BINARIES.json" "${TMPDIR}/PACKAGES.json" | jq 'sort_by(.pkg)' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'unique | sort_by(.pkg)' > "${TMPDIR}/INDEX.json"
 if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/INDEX.json" | grep -iv 'null' | wc -l)" -le 2000 ]]; then
    echo -e "\n[-] FATAL: Failed to Generate Soarpkgs MetaData\n"
    exit 1   

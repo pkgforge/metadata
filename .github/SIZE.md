@@ -1,5 +1,5 @@
 ```mathematica
-183M └─┬ main
+185M └─┬ main
 168M   ├─┬ misc
 168M   │ ├─┬ data
  69M   │ │ ├── ARCHLINUX.json
@@ -25,24 +25,24 @@
 4.0K   │   ├── fetch_pkgsrc.sh
 4.0K   │   ├── fetch_nixpkgs.sh
 4.0K   │   └── fetch_alpine_git.sh
-7.8M   ├─┬ bincache
-7.8M   │ ├─┬ data
-1.9M   │ │ ├── x86_64-Linux.json
-1.6M   │ │ ├── x86_64-Linux.db
-1.5M   │ │ ├── aarch64-Linux.json
-1.1M   │ │ ├── aarch64-Linux.db
-180K   │ │ ├── x86_64-Linux.db.cba
-160K   │ │ ├── x86_64-Linux.json.cba
-152K   │ │ ├── x86_64-Linux.db.zstd
-152K   │ │ ├── aarch64-Linux.db.cba
-144K   │ │ ├── x86_64-Linux.db.xz
-140K   │ │ ├── x86_64-Linux.json.xz
-136K   │ │ ├── aarch64-Linux.json.cba
-132K   │ │ ├── x86_64-Linux.json.zstd
-124K   │ │ ├── aarch64-Linux.db.zstd
-120K   │ │ ├── aarch64-Linux.db.xz
-116K   │ │ ├── aarch64-Linux.json.xz
-108K   │ │ ├── aarch64-Linux.json.zstd
+9.1M   ├─┬ bincache
+9.1M   │ ├─┬ data
+2.3M   │ │ ├── x86_64-Linux.json
+1.9M   │ │ ├── x86_64-Linux.db
+1.7M   │ │ ├── aarch64-Linux.json
+1.4M   │ │ ├── aarch64-Linux.db
+212K   │ │ ├── x86_64-Linux.db.cba
+184K   │ │ ├── x86_64-Linux.json.cba
+168K   │ │ ├── x86_64-Linux.db.zstd
+168K   │ │ ├── aarch64-Linux.db.cba
+164K   │ │ ├── x86_64-Linux.db.xz
+156K   │ │ ├── x86_64-Linux.json.xz
+148K   │ │ ├── x86_64-Linux.json.zstd
+148K   │ │ ├── aarch64-Linux.json.cba
+136K   │ │ ├── aarch64-Linux.db.zstd
+132K   │ │ ├── aarch64-Linux.db.xz
+128K   │ │ ├── aarch64-Linux.json.xz
+120K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum
@@ -58,18 +58,18 @@
  52K   │ └─┬ scripts
  24K   │   ├── gen_meta_x86_64-Linux.sh
  24K   │   └── gen_meta_aarch64-Linux.sh
-7.3M   ├─┬ soarpkgs
-7.3M   │ ├─┬ data
-2.5M   │ │ ├── INDEX.json
+7.6M   ├─┬ soarpkgs
+7.6M   │ ├─┬ data
+2.6M   │ │ ├── INDEX.json
 1.5M   │ │ ├── INDEX.db
-780K   │ │ ├── pub_issues_binaries.txt
-544K   │ │ ├── BACKAGE.json
-384K   │ │ ├── INDEX.json.cba
-336K   │ │ ├── INDEX.db.cba
+776K   │ │ ├── pub_issues_binaries.txt
+692K   │ │ ├── BACKAGE.json
+392K   │ │ ├── INDEX.json.cba
+340K   │ │ ├── INDEX.db.cba
 300K   │ │ ├── pub_issues_packages.txt
 264K   │ │ ├── INDEX.json.xz
+260K   │ │ ├── INDEX.db.zstd
 256K   │ │ ├── INDEX.json.zstd
-256K   │ │ ├── INDEX.db.zstd
 248K   │ │ ├── INDEX.db.xz
 4.0K   │ │ ├── INDEX.json.zstd.bsum
 4.0K   │ │ ├── INDEX.json.xz.bsum

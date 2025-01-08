@@ -95,39 +95,57 @@ generate_meta()
             if [ -s "${TMPDIR}/${METADATA_JSON}.tmp02" ] && jq empty "${TMPDIR}/${METADATA_JSON}.tmp02" > /dev/null 2>&1; then
               mv "${TMPDIR}/${METADATA_JSON}.tmp02" "${TMPDIR}/${METADATA_JSON}.tmp01"
             else
-              echo -e "\n[X] FATAL: Validation Failed\n"
+              echo -e "\n[X] FATAL: Validation Failed --> ${STEP}"
+              echo -e "[+] Package: ${PKG}"
+              jq . "${TMPDIR}/${METADATA_JSON}.tmp01"
+              jq . "${TMPDIR}/${METADATA_JSON}.tmp02"
               return 1 || exit 1
             fi
            }
            #Add/update rank
-            jq --arg rank "$(jq -r '.[0].rank // ""' "${TMPDIR}/${TMPJSON}")" '.rank = (if $rank and ($rank | length > 0) then $rank else "-1" end)' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+            echo -e "[+] Adding/Updating [${PKG}] ('.rank')"
+            jq --arg rank "$(jq -r '.[0].rank // ""' "${TMPDIR}/${TMPJSON}")" '.rank = (if $rank and ($rank | length > 0) then $rank else "-1" end)' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="RANK" validate_json
            #Add/Update pkg_family
-            jq --arg pkg_family "$(jq -r '.[0].pkg_family // ""' "${TMPDIR}/${TMPJSON}")" '.pkg_family = if $pkg_family == "" then .pkg else $pkg_family end' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+            echo -e "[+] Adding/Updating [${PKG}] ('.pkg_family')"
+            jq --arg pkg_family "$(jq -r '.[0].pkg_family // ""' "${TMPDIR}/${TMPJSON}")" '.pkg_family = if $pkg_family == "" then .pkg else $pkg_family end' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="PKG_FAMILY" validate_json
            #Add/Update build_ghactions
+            echo -e "[+] Adding/Updating [${PKG}] ('build_ghactions')"
             jq --slurpfile manifest "${TMPDIR}/${MANIFEST_JSON}" '
-             to_entries | 
-             map(
-               if .key == "build_log" and (. | from_entries | has("build_gha") | not) then
-                 [{
-                   key: "build_gha",
-                   value: ($manifest[0].annotations["dev.pkgforge.soar.build_gha"] // "")
-                 }, .]
-               else [.]
-               end
-             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+              def get_build_gha:
+                try ($manifest[0].annotations["dev.pkgforge.soar.build_gha"] // "")
+                catch "";
+              . as $parent |
+              to_entries |
+              map(
+                if .key == "build_log" and ($parent | has("build_gha") | not) then
+                  [{
+                    key: "build_gha",
+                    value: get_build_gha
+                  }, .]
+                else [.]
+                end
+              ) | flatten | from_entries
+            ' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="build_ghactions" validate_json
            #Add/Update build_id
+            echo -e "[+] Adding/Updating [${PKG}] ('build_id')"
             jq --slurpfile manifest "${TMPDIR}/${MANIFEST_JSON}" '
-             to_entries | 
-             map(
-               if .key == "build_log" and (. | from_entries | has("build_id") | not) then
-                 [{
-                   key: "build_id",
-                   value: ($manifest[0].annotations["dev.pkgforge.soar.build_id"] // "")
-                 }, .]
-               else [.]
-               end
-             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+              def get_build_id:
+                try ($manifest[0].annotations["dev.pkgforge.soar.build_id"] // "")
+                catch "";
+              . as $parent |
+              to_entries |
+              map(
+                if .key == "build_log" and ($parent | has("build_id") | not) then
+                  [{
+                    key: "build_id",
+                    value: get_build_id
+                  }, .]
+                else [.]
+                end
+              ) | flatten | from_entries
+            ' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="build_id" validate_json
            #Add/Update download_count
+            echo -e "[+] Adding/Updating [${PKG}] ('download_count')"
             unset DL_COUNT DL_COUNT_MONTH DL_COUNT_WEEK
             if [ -s "${TMPDIR}/BACKAGE.json" ]; then
              DL_COUNT="$(jq -r --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${METADATA_JSON}.tmp01")" 'map(select(.ghcr_pkg | contains($ghcr_pkg))) | .[].download_count' "${TMPDIR}/BACKAGE.json" | tr -cd '0-9' | tr -d '[:space:]')"
@@ -159,8 +177,9 @@ generate_meta()
                 .]
                else [.]
                end
-             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="download_count" validate_json
            #Add/Update ghcr_blob
+            echo -e "[+] Adding/Updating [${PKG}] ('ghcr_blob')"
             jq --arg PKG "$(jq -r '.download_url | split("&")[] | select(startswith("download=")) | split("=")[1]' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]')" \
              --slurpfile manifest "${TMPDIR}/${MANIFEST_JSON}" \
              'to_entries |
@@ -172,8 +191,9 @@ generate_meta()
                  }, .]
                else [.]
                end
-             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="ghcr_blob" validate_json
            #Add/Update ghcr_files
+            echo -e "[+] Adding/Updating [${PKG}] ('ghcr_files')"
             jq --slurpfile manifest "${TMPDIR}/${MANIFEST_JSON}" 'to_entries |
              map(
                if .key == "ghcr_pkg" then
@@ -183,8 +203,9 @@ generate_meta()
                  }, .]
                else [.]
                end
-             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="ghcr_files" validate_json
            #Add/Update ghcr_size & ghcr_size_raw
+            echo -e "[+] Adding/Updating [${PKG}] ('ghcr_size', '.ghcr_size_raw')"
             jq --arg ghcr_size "$(jq '[.layers[].size] | add' "${TMPDIR}/${MANIFEST_JSON}")" '
              def bytes:
                def _bytes(v; u):
@@ -206,9 +227,10 @@ generate_meta()
                else [.] 
                end
              ) | flatten | from_entries' \
-             "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+             "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="ghcr_size" validate_json
            #Cleanup & Finalize
-             jq 'walk(if type == "object" then with_entries(select(.value != "" and .value != [] and .value != {})) else . end)' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; validate_json
+             echo -e "[+] Cleaning Up..."
+             jq 'walk(if type == "object" then with_entries(select(.value != "" and .value != [] and .value != {})) else . end)' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="cleanup" validate_json
              mv -fv "${TMPDIR}/${METADATA_JSON}.tmp01" "${TMPDIR}/${METADATA_JSON}"
           fi
        fi

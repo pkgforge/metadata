@@ -78,9 +78,9 @@ generate_meta()
  #Check if contains needed fields
   if jq -e 'map(select(.ghcr_pkg != null and .ghcr_pkg != "")) | length > 0' "${TMPDIR}/${TMPJSON}" > /dev/null; then
    #Get Tag
-     PKG_TAG="$(oras repo tags "ghcr.io/pkgforge/${PKG}" | grep -i "x86_64-Linux" | head -n 1 | tr -d '[:space:]')"
+     PKG_TAG="$(oras repo tags "ghcr.io/pkgforge/${PKG}" | grep -vE '^latest\.[0-9]{6}T[0-9]{6}\.' | grep -i "x86_64-Linux" | tail -n 1 | tr -d '[:space:]')"
    #Check Tag 
-     if [ -n "${PKG_TAG+x}" ] && [ -n "${PKG_TAG##*[[:space:]]}" ]; then
+     if [ -n "${PKG_TAG+x}" ] && [[ "${PKG_TAG}" =~ ^[^[:space:]]+$ ]]; then
      #Fetch Manifest
        oras manifest fetch "ghcr.io/pkgforge/${PKG}:${PKG_TAG}" | jq . > "${TMPDIR}/${MANIFEST_JSON}"
      #Check Manifest 

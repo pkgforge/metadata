@@ -176,8 +176,26 @@ for SBUILD in "${VALID_BINS[@]}"; do
    "download_url": ("https://soarpkgs.pkgforge.dev/binaries/" + $VALID_BINSRC),
    "homepage": .homepage,
    "host": (if .x_exec.host? and (.x_exec.host | type == "array") then .x_exec.host else ["x86_64-Linux"] end),
-   "icon": (if (.icon.url? | length == 0) then $ICON else .icon.url end),
-   "license": (if (.license.id? | length == 0) then .license else .license.id end),
+   "icon": (
+    if (.icon | type == "object" and .icon.url and (.icon.url | length > 0)) then
+      .icon.url
+    elif (.icon | type == "string" and length > 0) then
+      .icon
+    elif ($ICON | length > 0) then
+      $ICON
+    else
+      null
+    end),
+   "license": (
+     if (.license | type == "array" and length > 0 and (.[0] | type == "object" and has("id"))) then
+       [.license[].id] 
+     elif (.license | type == "array") then
+       .license
+     elif (.license | type == "string") then
+       [.license]
+     else 
+       null
+     end),
    "maintainer": .maintainer,
    "note": .note,
    "pkg_webpage": ("https://pkgs.pkgforge.dev/repo/soarpkgs/" + (.pkg_id | ascii_downcase | gsub("\\.";"-") | split("-") | .[-2:] | join("-")) + "/" + $PKG_FAMILY + "/" + .pkg),
@@ -187,6 +205,9 @@ for SBUILD in "${VALID_BINS[@]}"; do
    "tag": .tag,
    "version": $PKG_VERSION
   }' | jq -c 'if type == "array" then .[] else . end' > "${SBUILD}.json"
+  if [ "$(jq -r '.pkg_family' "${SBUILD}.json" | grep -iv 'null' | tr -d '[:space:]')" != "${PKG_FAMILY}" ]; then
+    echo -e "[-] FATAL: Failed to Generate Json ==> ${SBUILD}"
+  fi
 done
 ##Merge
 find "${GH_REPO_PATH}/binaries" -type f -iregex '.*\.validated.json$' -print0 | xargs -0 jq -s '.' | sed -z 's/  }\n]\n\[\n  {/},{/g' | jq 'sort_by(.pkg_family)' > "${TMPDIR}/BINARIES.json.tmp"
@@ -271,8 +292,26 @@ for SBUILD in "${VALID_PKGS[@]}"; do
    "download_url": ("https://soarpkgs.pkgforge.dev/packages/" + $VALID_PKGSRC),
    "homepage": .homepage,
    "host": (if .x_exec.host? and (.x_exec.host | type == "array") then .x_exec.host else ["x86_64-Linux"] end),
-   "icon": (if (.icon.url? | length == 0) then $ICON else .icon.url end),
-   "license": (if (.license.id? | length == 0) then .license else .license.id end),
+   "icon": (
+    if (.icon | type == "object" and .icon.url and (.icon.url | length > 0)) then
+      .icon.url
+    elif (.icon | type == "string" and length > 0) then
+      .icon
+    elif ($ICON | length > 0) then
+      $ICON
+    else
+      null
+    end),
+   "license": (
+     if (.license | type == "array" and length > 0 and (.[0] | type == "object" and has("id"))) then
+       [.license[].id] 
+     elif (.license | type == "array") then
+       .license
+     elif (.license | type == "string") then
+       [.license]
+     else 
+       null
+     end),
    "maintainer": .maintainer,
    "note": .note,
    "pkgcache": $PKGCACHE,
@@ -283,6 +322,9 @@ for SBUILD in "${VALID_PKGS[@]}"; do
    "tag": .tag,
    "version": $PKG_VERSION
   }' | jq -c 'if type == "array" then .[] else . end' > "${SBUILD}.json"
+  if [ "$(jq -r '.pkg_family' "${SBUILD}.json" | grep -iv 'null' | tr -d '[:space:]')" != "${PKG_FAMILY}" ]; then
+    echo -e "[-] FATAL: Failed to Generate Json ==> ${SBUILD}"
+  fi
 done
 ##Merge
 find "${GH_REPO_PATH}/packages" -type f -iregex '.*\.validated.json$' -print0 | xargs -0 jq -s '.' | sed -z 's/  }\n]\n\[\n  {/},{/g' | jq 'unique | sort_by(.pkg_family)' > "${TMPDIR}/PACKAGES.json.tmp"

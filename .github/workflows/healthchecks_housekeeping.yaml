@@ -106,17 +106,17 @@ jobs:
           jq -n '[
            {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/bincache/x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},
            {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/bincache/aarch64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'}
-          ]' | jq . > "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json"
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json"
           ###Total (pkgcache)
           #jq -n '[
           # {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},
           # {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'}
-          #]' | jq . > "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json"
+          #] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json"
           ##Total (soarpkgs)
           jq -n '[
            {type: "binaries", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/soarpkgs/INDEX.json' | jq -r '.[] | select(.build_script | contains("binaries")) | .pkg' | wc -l)"'},
            {type: "packages", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/soarpkgs/INDEX.json' | jq -r '.[] | select(.build_script | contains("packages")) | .pkg' | wc -l)"'}
-          ]' | jq . > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL.json"
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL.json"
           ##Gif
           cd "${GITHUB_WORKSPACE}/main"
           sed -E "s~(https://bin\.pkgforge\.dev/list\.gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g" -i "${GITHUB_WORKSPACE}/main/README.md"

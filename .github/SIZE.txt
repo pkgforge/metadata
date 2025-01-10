@@ -1,4 +1,4 @@
-186M └─┬ main
+187M └─┬ main
 168M   ├─┬ misc
 168M   │ ├─┬ data
  69M   │ │ ├── ARCHLINUX.json
@@ -14,7 +14,9 @@
 412K   │ │ ├── FLATPAK_APPS_INFO.txt
 240K   │ │ ├── FLATPAK_POPULAR.json
 224K   │ │ ├── FLATPAK_TRENDING.json
- 72K   │ │ └── FLATPAK_APP_IDS.txt
+ 72K   │ │ ├── FLATPAK_APP_IDS.txt
+ 20K   │ │ ├── CATEGORY.json
+4.0K   │ │ └── CATEGORY.md
  60K   │ └─┬ scripts
  12K   │   ├── fetch_alpine_pkg.sh
 8.0K   │   ├── fetch_homebrew.sh
@@ -30,7 +32,7 @@
 2.1M   │ │ ├── x86_64-Linux.db
 1.9M   │ │ ├── aarch64-Linux.json
 1.6M   │ │ ├── aarch64-Linux.db
-236K   │ │ ├── x86_64-Linux.db.cba
+232K   │ │ ├── x86_64-Linux.db.cba
 196K   │ │ ├── x86_64-Linux.json.cba
 192K   │ │ ├── aarch64-Linux.db.cba
 184K   │ │ ├── x86_64-Linux.db.zstd
@@ -40,7 +42,7 @@
 164K   │ │ ├── x86_64-Linux.json.zstd
 156K   │ │ ├── aarch64-Linux.db.zstd
 152K   │ │ ├── aarch64-Linux.db.xz
-144K   │ │ ├── aarch64-Linux.json.xz
+148K   │ │ ├── aarch64-Linux.json.xz
 140K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
@@ -58,19 +60,22 @@
  56K   │ └─┬ scripts
  28K   │   ├── gen_meta_aarch64-Linux.sh
  24K   │   └── gen_meta_x86_64-Linux.sh
-8.2M   ├─┬ soarpkgs
-8.1M   │ ├─┬ data
+8.8M   ├─┬ soarpkgs
+8.6M   │ ├─┬ data
 2.8M   │ │ ├── INDEX.json
 1.7M   │ │ ├── INDEX.db
 780K   │ │ ├── pub_issues_binaries.txt
-744K   │ │ ├── BACKAGE.json
-416K   │ │ ├── INDEX.json.cba
+756K   │ │ ├── BACKAGE.json
+420K   │ │ ├── INDEX.json.cba
+376K   │ │ ├── GH_REPO.md
 360K   │ │ ├── INDEX.db.cba
 300K   │ │ ├── pub_issues_packages.txt
 284K   │ │ ├── INDEX.json.xz
 276K   │ │ ├── INDEX.json.zstd
 276K   │ │ ├── INDEX.db.zstd
 264K   │ │ ├── INDEX.db.xz
+ 76K   │ │ ├── URLS.txt
+ 28K   │ │ ├── GH_REPO_ARCHIVED.md
 4.0K   │ │ ├── TOTAL.json
 4.0K   │ │ ├── INDEX.json.zstd.bsum
 4.0K   │ │ ├── INDEX.json.xz.bsum
@@ -78,7 +83,10 @@
 4.0K   │ │ ├── INDEX.db.zstd.bsum
 4.0K   │ │ ├── INDEX.db.xz.bsum
 4.0K   │ │ └── INDEX.db.bsum
-116K   │ └─┬ scripts
+176K   │ └─┬ scripts
+ 60K   │   ├─┬ archived
+ 36K   │   │ ├── sbuild_runner.sh
+ 20K   │   │ └── sbuild_linter.sh
  28K   │   ├── sbuild_creator.sh
  28K   │   ├── github_fetcher.sh
  28K   │   ├── gen_meta.sh

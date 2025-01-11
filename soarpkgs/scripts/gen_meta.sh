@@ -420,3 +420,25 @@ if command -v rclone &> /dev/null &&\
   wait ; echo
 fi
 #-------------------------------------------------------#
+
+#-------------------------------------------------------#
+##Generate Diff
+#Bincache
+curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq '[.[] | select((.build_script | contains("https://github.com/pkgforge/soarpkgs/blob/main/binaries")) and (.bincache | not)) | {
+  _disabled: (.["_disabled"] | test("false") | not),
+  rebuild: false,
+  pkg_family: .pkg_family,
+  description: (if (.description | type) == "object" then .description._default else .description end),
+  ghcr_pkg: ("ghcr.io/pkgforge/bincache/" + .pkg + "/" + .pkg_type + "/" + .pkg_family + "/" + (.build_script | split(".")[-2])), 
+  build_script: .build_script
+}]' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache.json"
+#Pkgcache
+curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq '[.[] | select((.build_script | contains("https://github.com/pkgforge/soarpkgs/blob/main/packages")) and (.pkgcache | not)) | {
+  _disabled: (.["_disabled"] | test("false") | not),
+  rebuild: false,
+  pkg_family: .pkg_family,
+  description: .description,
+  ghcr_pkg: ("ghcr.io/pkgforge/pkgcache/" + .pkg + "/" + .pkg_type + "/" + .pkg_family + "/" + (.build_script | split(".")[-2])), 
+  build_script: .build_script
+}]' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache.json"
+#-------------------------------------------------------#

@@ -329,7 +329,7 @@ done
 ##Merge
 find "${GH_REPO_PATH}/packages" -type f -iregex '.*\.validated.json$' -print0 | xargs -0 jq -s '.' | sed -z 's/  }\n]\n\[\n  {/},{/g' | jq 'unique | sort_by(.pkg_family)' > "${TMPDIR}/PACKAGES.json.tmp"
 ##Sanity Check
-if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/PACKAGES.json.tmp" | grep -iv 'null' | wc -l)" -le 400 ]]; then
+if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/PACKAGES.json.tmp" | grep -iv 'null' | wc -l)" -le 10 ]]; then
    echo -e "\n[-] FATAL: Failed to Generate Pkgcache MetaData\n"
    exit 1
 else
@@ -341,7 +341,7 @@ popd >/dev/null 2>&1
 #-------------------------------------------------------#
 ##Copy to ${SYSTMP}
 jq -s add "${TMPDIR}/BINARIES.json" "${TMPDIR}/PACKAGES.json" | jq 'sort_by(.pkg)' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'unique | sort_by(.pkg)' > "${TMPDIR}/INDEX.json"
-if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/INDEX.json" | grep -iv 'null' | wc -l)" -le 2000 ]]; then
+if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/INDEX.json" | grep -iv 'null' | wc -l)" -le 100 ]]; then
    echo -e "\n[-] FATAL: Failed to Generate Soarpkgs MetaData\n"
    exit 1   
 else

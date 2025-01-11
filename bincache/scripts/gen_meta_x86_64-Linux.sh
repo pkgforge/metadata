@@ -391,3 +391,9 @@ if command -v rclone &> /dev/null &&\
   wait ; echo
 fi
 #-------------------------------------------------------#
+
+#-------------------------------------------------------#
+##Generate Diff
+cd "${GITHUB_WORKSPACE}/main" && git pull origin main --no-edit 2>/dev/null
+bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/soarpkgs/scripts/gen_diff.sh")
+#-------------------------------------------------------#

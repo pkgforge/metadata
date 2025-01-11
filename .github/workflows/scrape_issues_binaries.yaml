@@ -62,7 +62,7 @@ jobs:
             sudo curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)/notify" -o "/usr/local/bin/notify" && sudo chmod +x "/usr/local/bin/notify"
             echo 'discord:' > "./notify.yaml"
             echo '  - id: "portable-apps"' >> "./notify.yaml"
-            echo '    discord_channel: "portable-apps"' >> "./notify.yaml"
+            echo '    discord_channel: "gitlog"' >> "./notify.yaml"
             echo '    discord_username: "pkgforge-bot"' >> "./notify.yaml"
             echo '    discord_format: "{{data}}"' >> "./notify.yaml"
             echo "    discord_webhook_url: \"${{ secrets.PORTABLE_APPS_NOTIFY }}\"" >> "./notify.yaml"

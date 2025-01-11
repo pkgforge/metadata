@@ -38,12 +38,12 @@
 196K   │ │ ├── x86_64-Linux.json.cba
 184K   │ │ ├── x86_64-Linux.db.zstd
 180K   │ │ ├── x86_64-Linux.db.xz
+176K   │ │ ├── aarch64-Linux.json.cba
 172K   │ │ ├── x86_64-Linux.json.xz
-172K   │ │ ├── aarch64-Linux.json.cba
 164K   │ │ ├── x86_64-Linux.json.zstd
-160K   │ │ ├── aarch64-Linux.db.zstd
+164K   │ │ ├── aarch64-Linux.db.zstd
 156K   │ │ ├── aarch64-Linux.db.xz
-148K   │ │ ├── aarch64-Linux.json.xz
+152K   │ │ ├── aarch64-Linux.json.xz
 144K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
@@ -66,7 +66,7 @@
 2.8M   │ │ ├── INDEX.json
 1.7M   │ │ ├── INDEX.db
 780K   │ │ ├── pub_issues_binaries.txt
-752K   │ │ ├── BACKAGE.json
+756K   │ │ ├── BACKAGE.json
 420K   │ │ ├── INDEX.json.cba
 376K   │ │ ├── GH_REPO.md
 360K   │ │ ├── INDEX.db.cba
@@ -110,9 +110,6 @@
  16K   ├─┬ workers
  12K   │ └─┬ omni-redirector-pkgforge-dev
 8.0K   │   └── worker.js
- 12K   ├─┬ aarch64-Linux
-4.0K   │ ├── x86_64-Linux.db.xz
-4.0K   │ └── aarch64-Linux.db.xz
 8.0K   ├─┬ pkgcache
 4.0K   │ └── data
 4.0K   ├── README.md

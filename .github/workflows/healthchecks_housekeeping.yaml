@@ -117,6 +117,8 @@ jobs:
            {type: "binaries", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/soarpkgs/INDEX.json' | jq -r '.[] | select(.build_script | contains("binaries")) | .pkg' | wc -l)"'},
            {type: "packages", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/soarpkgs/INDEX.json' | jq -r '.[] | select(.build_script | contains("packages")) | .pkg' | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL.json"
+          ##Total ALL
+          jq -n '[inputs | .[] | select(.sum == "total").total] | add' "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL_CACHE.json"
           ##Gif
           cd "${GITHUB_WORKSPACE}/main"
           sed -E "s~(https://bin\.pkgforge\.dev/list\.gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g" -i "${GITHUB_WORKSPACE}/main/README.md"

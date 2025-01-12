@@ -32,6 +32,16 @@ jobs:
             arch: "x86_64"
             file: "/tmp/bincache_x86_64-Linux.json"
 
+          - repo: "pkgcache"
+            script: "${GITHUB_WORKSPACE}/main/pkgcache/scripts/gen_meta_aarch64-Linux.sh"
+            arch: "aarch64"
+            file: "/tmp/pkgcache_aarch64-Linux.json"
+
+          - repo: "pkgcache"
+            script: "${GITHUB_WORKSPACE}/main/pkgcache/scripts/gen_meta_x86_64-Linux.sh"
+            arch: "x86_64"
+            file: "/tmp/pkgcache_x86_64-Linux.json"
+
           - repo: "soarpkgs"
             script: "${GITHUB_WORKSPACE}/main/soarpkgs/scripts/gen_meta.sh"
             arch: "MULTI"
@@ -137,7 +147,7 @@ jobs:
            export HAS_INVALID_PKGS="TRUE"
            echo "HAS_INVALID_PKGS=${HAS_INVALID_PKGS}" >> "${GITHUB_ENV}"
           fi
-        continue-on-error: true        
+        continue-on-error: true
 
       - name: Create Issue (Invalid Binary SBUILDS)
         if: env.HAS_INVALID_BINS == 'TRUE'
@@ -159,6 +169,9 @@ jobs:
 
       - name: Report Duplicate pkg_webpages
         run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
           if [[ -s "${SYSTMP}/DUPES_PKG_WEBPAGE.json" || $(stat -c%s "${SYSTMP}/DUPES_PKG_WEBPAGE.json") -gt 10 ]]; then
            echo '```json' > "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
            cat "${SYSTMP}/DUPES_PKG_WEBPAGE.json" >> "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
@@ -178,6 +191,9 @@ jobs:
 
       - name: Report Missing pkg_id
         run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
           if [[ -s "${SYSTMP}/MISSING_PKG_ID.json" || $(stat -c%s "${SYSTMP}/MISSING_PKG_ID.json") -gt 10 ]]; then
            echo '```json' > "${SYSTMP}/MISSING_PKG_ID.txt"
            cat "${SYSTMP}/MISSING_PKG_ID.json" >> "${SYSTMP}/MISSING_PKG_ID.txt"

@@ -29,19 +29,19 @@
 4.0K   │   └── fetch_alpine_git.sh
  11M   ├─┬ bincache
  11M   │ ├─┬ data
+2.5M   │ │ ├── aarch64-Linux.json
 2.4M   │ │ ├── x86_64-Linux.json
-2.4M   │ │ ├── aarch64-Linux.json
+2.1M   │ │ ├── aarch64-Linux.db
 2.1M   │ │ ├── x86_64-Linux.db
-2.0M   │ │ ├── aarch64-Linux.db
-256K   │ │ ├── aarch64-Linux.db.cba
+276K   │ │ ├── aarch64-Linux.db.cba
+244K   │ │ ├── aarch64-Linux.json.cba
 236K   │ │ ├── x86_64-Linux.db.cba
-228K   │ │ ├── aarch64-Linux.json.cba
-208K   │ │ ├── aarch64-Linux.db.zstd
-200K   │ │ ├── aarch64-Linux.db.xz
+224K   │ │ ├── aarch64-Linux.db.zstd
+212K   │ │ ├── aarch64-Linux.db.xz
+208K   │ │ ├── aarch64-Linux.json.xz
 196K   │ │ ├── x86_64-Linux.json.cba
-192K   │ │ ├── aarch64-Linux.json.xz
+196K   │ │ ├── aarch64-Linux.json.zstd
 184K   │ │ ├── x86_64-Linux.db.zstd
-184K   │ │ ├── aarch64-Linux.json.zstd
 180K   │ │ ├── x86_64-Linux.db.xz
 172K   │ │ ├── x86_64-Linux.json.xz
 164K   │ │ ├── x86_64-Linux.json.zstd
@@ -62,20 +62,20 @@
  28K   │   ├── gen_meta_x86_64-Linux.sh
  28K   │   └── gen_meta_aarch64-Linux.sh
 4.1M   ├─┬ soarpkgs
-3.8M   │ ├─┬ data
-788K   │ │ ├── INDEX.json
-784K   │ │ ├── pub_issues_binaries.txt
+3.7M   │ ├─┬ data
+796K   │ │ ├── INDEX.json
+788K   │ │ ├── pub_issues_binaries.txt
 768K   │ │ ├── BACKAGE.json
 436K   │ │ ├── INDEX.db
 300K   │ │ ├── pub_issues_packages.txt
-120K   │ │ ├── INDEX.json.cba
- 96K   │ │ ├── DIFF_bincache.json
+124K   │ │ ├── INDEX.json.cba
  92K   │ │ ├── GH_REPO.md
+ 88K   │ │ ├── INDEX.json.xz
  84K   │ │ ├── INDEX.json.zstd
- 84K   │ │ ├── INDEX.json.xz
- 76K   │ │ ├── INDEX.db.cba
+ 80K   │ │ ├── INDEX.db.cba
  68K   │ │ ├── INDEX.db.zstd
  64K   │ │ ├── INDEX.db.xz
+ 52K   │ │ ├── DIFF_bincache.json
  28K   │ │ ├── GH_REPO_ARCHIVED.md
  20K   │ │ ├── URLS.txt
  12K   │ │ ├── DIFF_pkgcache.json
@@ -105,6 +105,41 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
+512K   ├─┬ pkgcache
+396K   │ ├─┬ data
+120K   │ │ ├── x86_64-Linux.db
+100K   │ │ ├── x86_64-Linux.json
+ 16K   │ │ ├── x86_64-Linux.db.cba
+ 16K   │ │ ├── aarch64-Linux.db
+ 12K   │ │ ├── x86_64-Linux.json.zstd
+ 12K   │ │ ├── x86_64-Linux.json.xz
+ 12K   │ │ ├── x86_64-Linux.json.cba
+ 12K   │ │ ├── x86_64-Linux.db.zstd
+ 12K   │ │ ├── x86_64-Linux.db.xz
+8.0K   │ │ ├── aarch64-Linux.json
+4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
+4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
+4.0K   │ │ ├── x86_64-Linux.json.bsum
+4.0K   │ │ ├── x86_64-Linux.db.zstd.bsum
+4.0K   │ │ ├── x86_64-Linux.db.xz.bsum
+4.0K   │ │ ├── x86_64-Linux.db.bsum
+4.0K   │ │ ├── aarch64-Linux.json.zstd.bsum
+4.0K   │ │ ├── aarch64-Linux.json.zstd
+4.0K   │ │ ├── aarch64-Linux.json.xz.bsum
+4.0K   │ │ ├── aarch64-Linux.json.xz
+4.0K   │ │ ├── aarch64-Linux.json.cba
+4.0K   │ │ ├── aarch64-Linux.json.bsum
+4.0K   │ │ ├── aarch64-Linux.db.zstd.bsum
+4.0K   │ │ ├── aarch64-Linux.db.zstd
+4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
+4.0K   │ │ ├── aarch64-Linux.db.xz
+4.0K   │ │ ├── aarch64-Linux.db.cba
+4.0K   │ │ └── aarch64-Linux.db.bsum
+112K   │ └─┬ scripts
+ 52K   │   ├─┬ archived
+ 48K   │   │ └── healthchecks.yaml
+ 28K   │   ├── gen_meta_x86_64-Linux.sh
+ 28K   │   └── gen_meta_aarch64-Linux.sh
 128K   ├─┬ web
 124K   │ └─┬ cloudflare
  56K   │   ├─┬ src
@@ -117,11 +152,6 @@
  12K   │   ├── tsconfig.json
 4.0K   │   ├── wrangler.toml
 4.0K   │   └── package.json
- 64K   ├─┬ pkgcache
- 56K   │ ├─┬ scripts
- 52K   │ │ └─┬ archived
- 48K   │ │   └── healthchecks.yaml
-4.0K   │ └── data
  16K   ├─┬ workers
  12K   │ └─┬ omni-redirector-pkgforge-dev
 8.0K   │   └── worker.js

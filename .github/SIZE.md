@@ -63,7 +63,7 @@
  28K   │   └── gen_meta_aarch64-Linux.sh
 4.1M   ├─┬ soarpkgs
 3.7M   │ ├─┬ data
-796K   │ │ ├── INDEX.json
+800K   │ │ ├── INDEX.json
 788K   │ │ ├── pub_issues_binaries.txt
 768K   │ │ ├── BACKAGE.json
 436K   │ │ ├── INDEX.db
@@ -75,7 +75,7 @@
  80K   │ │ ├── INDEX.db.cba
  68K   │ │ ├── INDEX.db.zstd
  64K   │ │ ├── INDEX.db.xz
- 52K   │ │ ├── DIFF_bincache.json
+ 36K   │ │ ├── DIFF_bincache.json
  28K   │ │ ├── GH_REPO_ARCHIVED.md
  20K   │ │ ├── URLS.txt
  12K   │ │ ├── DIFF_pkgcache.json
@@ -105,8 +105,8 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-512K   ├─┬ pkgcache
-396K   │ ├─┬ data
+516K   ├─┬ pkgcache
+400K   │ ├─┬ data
 120K   │ │ ├── x86_64-Linux.db
 100K   │ │ ├── x86_64-Linux.json
  16K   │ │ ├── x86_64-Linux.db.cba
@@ -134,7 +134,8 @@
 4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
 4.0K   │ │ ├── aarch64-Linux.db.xz
 4.0K   │ │ ├── aarch64-Linux.db.cba
-4.0K   │ │ └── aarch64-Linux.db.bsum
+4.0K   │ │ ├── aarch64-Linux.db.bsum
+4.0K   │ │ └── TOTAL.json
 112K   │ └─┬ scripts
  52K   │   ├─┬ archived
  48K   │   │ └── healthchecks.yaml

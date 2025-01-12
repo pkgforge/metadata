@@ -1,5 +1,5 @@
 ```mathematica
-184M └─┬ main
+185M └─┬ main
 168M   ├─┬ misc
 168M   │ ├─┬ data
  69M   │ │ ├── ARCHLINUX.json
@@ -30,21 +30,21 @@
  11M   ├─┬ bincache
  11M   │ ├─┬ data
 2.5M   │ │ ├── aarch64-Linux.json
-2.4M   │ │ ├── x86_64-Linux.json
-2.1M   │ │ ├── aarch64-Linux.db
+2.5M   │ │ ├── x86_64-Linux.json
 2.1M   │ │ ├── x86_64-Linux.db
+2.1M   │ │ ├── aarch64-Linux.db
 276K   │ │ ├── aarch64-Linux.db.cba
 244K   │ │ ├── aarch64-Linux.json.cba
-236K   │ │ ├── x86_64-Linux.db.cba
+240K   │ │ ├── x86_64-Linux.db.cba
 224K   │ │ ├── aarch64-Linux.db.zstd
 212K   │ │ ├── aarch64-Linux.db.xz
 208K   │ │ ├── aarch64-Linux.json.xz
-196K   │ │ ├── x86_64-Linux.json.cba
+204K   │ │ ├── x86_64-Linux.json.cba
 196K   │ │ ├── aarch64-Linux.json.zstd
-184K   │ │ ├── x86_64-Linux.db.zstd
-180K   │ │ ├── x86_64-Linux.db.xz
-172K   │ │ ├── x86_64-Linux.json.xz
-164K   │ │ ├── x86_64-Linux.json.zstd
+192K   │ │ ├── x86_64-Linux.db.zstd
+184K   │ │ ├── x86_64-Linux.db.xz
+180K   │ │ ├── x86_64-Linux.json.xz
+168K   │ │ ├── x86_64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum
@@ -75,10 +75,12 @@
  80K   │ │ ├── INDEX.db.cba
  68K   │ │ ├── INDEX.db.zstd
  64K   │ │ ├── INDEX.db.xz
- 36K   │ │ ├── DIFF_bincache.json
+ 32K   │ │ ├── DIFF_bincache.json
  28K   │ │ ├── GH_REPO_ARCHIVED.md
  20K   │ │ ├── URLS.txt
  12K   │ │ ├── DIFF_pkgcache.json
+4.0K   │ │ ├── TOTAL_CACHE.txt
+4.0K   │ │ ├── TOTAL_CACHE.json
 4.0K   │ │ ├── TOTAL.json
 4.0K   │ │ ├── INDEX.json.zstd.bsum
 4.0K   │ │ ├── INDEX.json.xz.bsum

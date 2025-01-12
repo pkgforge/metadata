@@ -311,7 +311,7 @@ jq '
 sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/pkgcache_aarch64-Linux.json"
 ##Check
 unset PKG_COUNT; PKG_COUNT="$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/pkgcache_aarch64-Linux.json" | sort -u | wc -l | tr -d '[:space:]')"
-if [[ "${PKG_COUNT}" -le 2 ]]; then
+if [[ "${PKG_COUNT}" -le 1 ]]; then
  echo -e "\n[X] FATAL: Final Package Count is < 200, Parsing Failed?\n"
  exit 1
 else

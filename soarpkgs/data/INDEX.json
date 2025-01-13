@@ -44,7 +44,7 @@
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Community Created AppImage. Check/Report @ https://github.com/0ad-matters/0ad-appimage",
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/0ad-matters/0ad-appimage",
       "If you have a GPU that has a chipset other than Nvidia, the Vulkan backend may be automatically disabled in some cases",
       "This version is based on the latest Ubuntu LTS, so it should not work on older distros",
       "In case of problems, install '0ad' instead"
@@ -116,7 +116,7 @@
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Community Created AppImage. Check/Report @ https://github.com/0ad-matters/0ad-appimage"
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/0ad-matters/0ad-appimage"
     ],
     "provides": [
       "0ad"
@@ -478,7 +478,7 @@
       "games",
       "games-puzzle"
     ],
-    "version": "v1.5.250"
+    "version": "v1.5.256"
   },
   {
     "_disabled": "false",
@@ -1485,7 +1485,7 @@
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Community Created AppImage. Check/Report @ https://github.com/ivan-hc/Aisleriot-appimage"
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ivan-hc/Aisleriot-appimage"
     ],
     "provides": [
       "aisleriot"
@@ -3243,7 +3243,78 @@
       "modal-editing",
       "text-editor"
     ],
-    "version": "HEAD-a370545-241226T082317"
+    "version": "HEAD-aef2d2f-250113T062052"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "aria2",
+    "pkg_family": "aria2",
+    "pkg_id": "github.com.aria2.aria2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
+    "distro_pkg": {
+      "alpine": [
+        "aria2"
+      ],
+      "archlinux": {
+        "aur": [
+          "aria2-fast",
+          "aria2-git"
+        ],
+        "extra": [
+          "aria2"
+        ]
+      },
+      "debian": [
+        "aria2"
+      ],
+      "nixpkgs": [
+        "aria",
+        "aria2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "homepage": [
+      "https://aria2.github.io",
+      "https://github.com/aria2/aria2",
+      "https://aria2.sourceforge.net",
+      "https://sourceforge.net/projects/aria2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
+    ],
+    "provides": [
+      "aria2:aria2c"
+    ],
+    "repology": [
+      "aria2"
+    ],
+    "src_url": [
+      "https://github.com/abcfy2/aria2-static-build"
+    ],
+    "tag": [
+      "bittorrent",
+      "downloader"
+    ],
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -3316,76 +3387,6 @@
       "downloader"
     ],
     "version": "250111T122740"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "aria2",
-    "pkg_family": "aria2",
-    "pkg_id": "github.com.aria2.aria2",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
-    "distro_pkg": {
-      "alpine": [
-        "aria2"
-      ],
-      "archlinux": {
-        "aur": [
-          "aria2-fast",
-          "aria2-git"
-        ],
-        "extra": [
-          "aria2"
-        ]
-      },
-      "debian": [
-        "aria2"
-      ],
-      "nixpkgs": [
-        "aria",
-        "aria2"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
-    "homepage": [
-      "https://aria2.github.io",
-      "https://github.com/aria2/aria2",
-      "https://aria2.sourceforge.net",
-      "https://sourceforge.net/projects/aria2"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
-    ],
-    "provides": [
-      "aria2:aria2c"
-    ],
-    "repology": [
-      "aria2"
-    ],
-    "src_url": [
-      "https://github.com/abcfy2/aria2-static-build"
-    ],
-    "tag": [
-      "bittorrent",
-      "downloader"
-    ],
-    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -5244,6 +5245,177 @@
       "security"
     ],
     "version": "HEAD-4941c88-241204T154041"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "github.com.srevinsaju.Brave-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers (Stable)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "x86_64-Linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "github.com.srevinsaju.Brave-AppImage.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.nightly.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers (Nightly)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-beta-bin",
+          "brave-bin",
+          "brave-nightly-bin"
+        ]
+      },
+      "homebrew": [
+        "brave-browser",
+        "brave-browser@beta",
+        "brave-browser@dev",
+        "brave-browser@nightly"
+      ],
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.nightly.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "x86_64-Linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "v1.76.8"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "github.com.srevinsaju.Brave-AppImage.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.beta.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers (Beta)",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.beta.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "x86_64-Linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "v1.75.158"
   },
   {
     "_disabled": "false",
@@ -11708,7 +11880,7 @@
     "pkg_id": "github.com.psadi.ghostty-appimage",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ghostty-appimage/ghostty/ghostty",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty/appimage.psadi.stable.yaml",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty/appimage.psadi.source.yaml",
     "category": [
       "TerminalEmulator"
     ],
@@ -11729,22 +11901,24 @@
         "ghostty"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty/appimage.psadi.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty/appimage.psadi.source.yaml",
     "homepage": [
       "https://ghostty.org",
       "https://github.com/ghostty-org/ghostty"
     ],
     "host": [
+      "aarch64-linux",
       "x86_64-linux"
     ],
     "license": [
       "MIT"
     ],
     "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
+      "psadi (https://github.com/psadi)"
     ],
     "note": [
-      "Community Created AppImage. Check/Report @ https://github.com/psadi/ghostty-appimage"
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source using a Community Provided Script. Check/Report @ https://github.com/psadi/ghostty-appimage"
     ],
     "provides": [
       "ghostty"
@@ -11758,7 +11932,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "v1.0.1+2"
+    "version": "1.0.1"
   },
   {
     "_disabled": "false",
@@ -12219,7 +12393,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-af8f201-250113T105022"
+    "version": "HEAD-8df5ba2-250113T182710"
   },
   {
     "_disabled": "false",
@@ -12397,7 +12571,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-45f90de-250107T181043"
+    "version": "HEAD-134653f-250113T153816"
   },
   {
     "_disabled": "false",
@@ -13106,7 +13280,7 @@
       "curl",
       "grpc"
     ],
-    "version": "HEAD-b9a11e9-241128T111336"
+    "version": "HEAD-7e1a6c9-250113T103318"
   },
   {
     "_disabled": "false",
@@ -15510,7 +15684,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-270b542-250112T175322"
+    "version": "HEAD-be5eb27-250113T172949"
   },
   {
     "_disabled": "false",
@@ -17793,7 +17967,7 @@
       "nmap",
       "security"
     ],
-    "version": "HEAD-bd7c0c0-250106T134557"
+    "version": "HEAD-7da347c-250113T134714"
   },
   {
     "_disabled": "false",
@@ -18812,7 +18986,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-737ea39-250113T070021"
+    "version": "HEAD-e117706-250113T080417"
   },
   {
     "_disabled": "false",
@@ -20110,7 +20284,7 @@
     "tag": [
       "ls"
     ],
-    "version": "HEAD-99225d7-250112T232621"
+    "version": "HEAD-8c5a5ba-250113T212951"
   },
   {
     "_disabled": "false",
@@ -21502,8 +21676,7 @@
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BurntSushi/ripgrep"
     ],
     "provides": [
-      "rg",
-      "ripgrep"
+      "ripgrep==rg"
     ],
     "repology": [
       "ripgrep"
@@ -21515,7 +21688,7 @@
       "grep",
       "regex"
     ],
-    "version": "HEAD-9430512-241231T082313"
+    "version": "HEAD-d6b59fe-250113T101609"
   },
   {
     "_disabled": "false",
@@ -21706,7 +21879,7 @@
       "bittorrent",
       "torrent"
     ],
-    "version": "HEAD-bc5e23b-250106T173836"
+    "version": "HEAD-6fea795-250113T163318"
   },
   {
     "_disabled": "false",
@@ -22096,7 +22269,7 @@
     "tag": [
       "pastebin"
     ],
-    "version": "HEAD-def3805-250110T140637"
+    "version": "HEAD-df54b8c-250113T154956"
   },
   {
     "_disabled": "false",
@@ -25231,7 +25404,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-69b9074-250112T194902"
+    "version": "HEAD-6ccde36-250113T124130"
   },
   {
     "_disabled": "false",
@@ -26996,6 +27169,7 @@
     "pkg_id": "github.com.martinlindhe.validtoml",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/martinlindhe-validtoml/validtoml/validtoml",
+    "bincache": "ghcr.io/pkgforge/bincache/validtoml/official/validtoml",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/validtoml/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27184,6 +27358,7 @@
     "pkg_id": "github.com.volta-cli.volta",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-volta/volta/volta",
+    "bincache": "ghcr.io/pkgforge/bincache/volta/official/volta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/volta/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27223,6 +27398,7 @@
     "pkg_id": "github.com.dwisiswant0.wadl-dumper",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wadl-dumper/wadl-dumper/wadl-dumper",
+    "bincache": "ghcr.io/pkgforge/bincache/wadl-dumper/official/wadl-dumper",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wadl-dumper/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27317,6 +27493,7 @@
     "pkg_id": "github.com.mhmdiaa.waybackrobots",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mhmdiaa-waybackrobots/waybackrobots/waybackrobots",
+    "bincache": "ghcr.io/pkgforge/bincache/waybackrobots/official/waybackrobots",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/waybackrobots/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27357,6 +27534,7 @@
     "pkg_id": "github.com.tomnomnom.waybackurls",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tomnomnom-waybackurls/waybackurls/waybackurls",
+    "bincache": "ghcr.io/pkgforge/bincache/waybackurls/official/waybackurls",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/waybackurls/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27408,6 +27586,7 @@
     "pkg_id": "github.com.Hackmanit.Web-Cache-Vulnerability-Scanner",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vulnerability-scanner/web-cache-vulnerability-scanner/web-cache-vulnerability-scanner",
+    "bincache": "ghcr.io/pkgforge/bincache/web-cache-vulnerability-scanner/official/web-cache-vulnerability-scanner",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/web-cache-vulnerability-scanner/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27448,6 +27627,7 @@
     "pkg_id": "github.com.schachmat.wego",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/schachmat-wego/wego/wego",
+    "bincache": "ghcr.io/pkgforge/bincache/wego/official/wego",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wego/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27627,6 +27807,7 @@
     "pkg_id": "git.zx2c4.com.wireguard-go",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wireguard-go/wireguard/wireguard",
+    "bincache": "ghcr.io/pkgforge/bincache/wireguard-go/official/wireguard",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wireguard/static.go.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27823,6 +28004,7 @@
     "pkg_id": "github.com.magic-wormhole.magic-wormhole.rs",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wormhole-rs/wormhole-rs/wormhole-rs",
+    "bincache": "ghcr.io/pkgforge/bincache/wormhole-rs/official/wormhole-rs",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wormhole-rs/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27887,6 +28069,7 @@
     "pkg_id": "github.com.Systemcluster.wrappe",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/systemcluster-wrappe/wrappe/wrappe",
+    "bincache": "ghcr.io/pkgforge/bincache/wrappe/official/wrappe",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wrappe/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27926,6 +28109,7 @@
     "pkg_id": "github.com.coder.wush",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coder-wush/wush/wush",
+    "bincache": "ghcr.io/pkgforge/bincache/wush/official/wush",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wush/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -27983,6 +28167,7 @@
     "pkg_id": "github.com.Sh1Yo.x8",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sh1yo-x8/x8/x8",
+    "bincache": "ghcr.io/pkgforge/bincache/x8/official/x8",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/x8/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28027,6 +28212,7 @@
     "pkg_id": "github.com.medialab.xan",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/medialab-xan/xan/xan",
+    "bincache": "ghcr.io/pkgforge/bincache/xan/official/xan",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xan/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28055,7 +28241,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-edf4970-250113T135351"
+    "version": "HEAD-d495f2e-250113T190054"
   },
   {
     "_disabled": "false",
@@ -28114,6 +28300,7 @@
     "pkg_id": "github.com.sayanarijit.xplr",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sayanarijit-xplr/xplr/xplr",
+    "bincache": "ghcr.io/pkgforge/bincache/xplr/official/xplr",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xplr/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28174,6 +28361,7 @@
     "pkg_id": "github.com.mvdan.xurls",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mvdan-xurls/xurls/xurls",
+    "bincache": "ghcr.io/pkgforge/bincache/xurls/official/xurls",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xurls/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28316,6 +28504,7 @@
     "pkg_id": "github.com.EatonChips.yalis",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/eatonchips-yalis/yalis/yalis",
+    "bincache": "ghcr.io/pkgforge/bincache/yalis/official/yalis",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yalis/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28355,6 +28544,7 @@
     "pkg_id": "github.com.sxyazi.yazi",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sxyazi-yazi/yazi/yazi",
+    "bincache": "ghcr.io/pkgforge/bincache/yazi/official/ya",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yazi/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28427,6 +28617,7 @@
     "pkg_id": "github.com.yggdrasil-network.yggdrasil-go",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yggdrasil-go/yggdrasil/yggdrasil",
+    "bincache": "ghcr.io/pkgforge/bincache/yggdrasil/official/yggdrasil",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yggdrasil/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28499,6 +28690,7 @@
     "pkg_id": "github.com.mudler.yip",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mudler-yip/yip/yip",
+    "bincache": "ghcr.io/pkgforge/bincache/yip/official/yip",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yip/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28530,7 +28722,7 @@
       "cloud-init",
       "init"
     ],
-    "version": "HEAD-4fd77a2-241208T101801"
+    "version": "HEAD-55b6723-250113T152302"
   },
   {
     "_disabled": "false",
@@ -28539,6 +28731,7 @@
     "pkg_id": "github.com.sclevine.yj",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sclevine-yj/yj/yj",
+    "bincache": "ghcr.io/pkgforge/bincache/yj/official/yj",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yj/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28583,6 +28776,7 @@
     "pkg_id": "github.com.mikefarah.yq",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mikefarah-yq/yq/yq",
+    "bincache": "ghcr.io/pkgforge/bincache/yq/official/yq",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yq/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28692,6 +28886,7 @@
     "pkg_id": "github.com.zmap.zdns",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zmap-zdns/zdns/zdns",
+    "bincache": "ghcr.io/pkgforge/bincache/zdns/official/zdns",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zdns/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28806,6 +29001,7 @@
     "pkg_id": "github.com.ssleert.zfxtop",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ssleert-zfxtop/zfxtop/zfxtop",
+    "bincache": "ghcr.io/pkgforge/bincache/zfxtop/official/zfxtop",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zfxtop/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28860,6 +29056,7 @@
     "pkg_id": "github.com.zmap.zgrab2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zmap-zgrab2/zgrab2/zgrab2",
+    "bincache": "ghcr.io/pkgforge/bincache/zgrab2/official/zgrab2",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zgrab2/static.official.source.yaml",
     "category": [
       "ConsoleOnly",

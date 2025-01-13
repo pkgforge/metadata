@@ -14,7 +14,7 @@
 444K   │ │ ├── FLATPAK_APPS_INFO.json
 412K   │ │ ├── FLATPAK_APPS_INFO.txt
 240K   │ │ ├── FLATPAK_POPULAR.json
-228K   │ │ ├── FLATPAK_TRENDING.json
+232K   │ │ ├── FLATPAK_TRENDING.json
  72K   │ │ ├── FLATPAK_APP_IDS.txt
  20K   │ │ ├── CATEGORY.json
 4.0K   │ │ └── CATEGORY.md
@@ -27,21 +27,21 @@
 4.0K   │   ├── fetch_pkgsrc.sh
 4.0K   │   ├── fetch_nixpkgs.sh
 4.0K   │   └── fetch_alpine_git.sh
- 13M   ├─┬ bincache
- 13M   │ ├─┬ data
-3.1M   │ │ ├── x86_64-Linux.json
+ 14M   ├─┬ bincache
+ 14M   │ ├─┬ data
+3.3M   │ │ ├── x86_64-Linux.json
+2.8M   │ │ ├── x86_64-Linux.db
 2.7M   │ │ ├── aarch64-Linux.json
-2.7M   │ │ ├── x86_64-Linux.db
 2.3M   │ │ ├── aarch64-Linux.db
-320K   │ │ ├── x86_64-Linux.db.cba
-296K   │ │ ├── aarch64-Linux.db.cba
-276K   │ │ ├── x86_64-Linux.json.cba
+332K   │ │ ├── x86_64-Linux.db.cba
+292K   │ │ ├── aarch64-Linux.db.cba
+288K   │ │ ├── x86_64-Linux.json.cba
+264K   │ │ ├── x86_64-Linux.db.zstd
 256K   │ │ ├── aarch64-Linux.json.cba
-252K   │ │ ├── x86_64-Linux.db.zstd
-240K   │ │ ├── x86_64-Linux.db.xz
-236K   │ │ ├── x86_64-Linux.json.xz
-232K   │ │ ├── aarch64-Linux.db.zstd
-224K   │ │ ├── x86_64-Linux.json.zstd
+252K   │ │ ├── x86_64-Linux.db.xz
+244K   │ │ ├── x86_64-Linux.json.xz
+236K   │ │ ├── aarch64-Linux.db.zstd
+232K   │ │ ├── x86_64-Linux.json.zstd
 224K   │ │ ├── aarch64-Linux.db.xz
 216K   │ │ ├── aarch64-Linux.json.xz
 208K   │ │ ├── aarch64-Linux.json.zstd
@@ -62,10 +62,10 @@
  28K   │   ├── gen_meta_x86_64-Linux.sh
  28K   │   └── gen_meta_aarch64-Linux.sh
 4.1M   ├─┬ soarpkgs
-3.7M   │ ├─┬ data
+3.8M   │ ├─┬ data
+808K   │ │ ├── BACKAGE.json
 800K   │ │ ├── INDEX.json
 788K   │ │ ├── pub_issues_binaries.txt
-768K   │ │ ├── BACKAGE.json
 436K   │ │ ├── INDEX.db
 300K   │ │ ├── pub_issues_packages.txt
 124K   │ │ ├── INDEX.json.cba

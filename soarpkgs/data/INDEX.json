@@ -2816,7 +2816,7 @@
       "alpine",
       "package-manager"
     ],
-    "version": "v3.0.0_rc3"
+    "version": "v2.14.8"
   },
   {
     "_disabled": "false",
@@ -3325,6 +3325,77 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
+    "distro_pkg": {
+      "alpine": [
+        "aria2"
+      ],
+      "archlinux": {
+        "aur": [
+          "aria2-fast",
+          "aria2-git"
+        ],
+        "extra": [
+          "aria2"
+        ]
+      },
+      "debian": [
+        "aria2"
+      ],
+      "nixpkgs": [
+        "aria",
+        "aria2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "homepage": [
+      "https://aria2.github.io",
+      "https://github.com/aria2/aria2",
+      "https://aria2.sourceforge.net",
+      "https://sourceforge.net/projects/aria2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
+    ],
+    "provides": [
+      "aria2:aria2c"
+    ],
+    "repology": [
+      "aria2"
+    ],
+    "src_url": [
+      "https://github.com/abcfy2/aria2-static-build"
+    ],
+    "tag": [
+      "bittorrent",
+      "downloader"
+    ],
+    "version": "1.37.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "aria2",
+    "pkg_family": "aria2",
+    "pkg_id": "github.com.aria2.aria2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
     "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
@@ -3389,76 +3460,6 @@
       "downloader"
     ],
     "version": "250111T122740"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "aria2",
-    "pkg_family": "aria2",
-    "pkg_id": "github.com.aria2.aria2",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
-    "distro_pkg": {
-      "alpine": [
-        "aria2"
-      ],
-      "archlinux": {
-        "aur": [
-          "aria2-fast",
-          "aria2-git"
-        ],
-        "extra": [
-          "aria2"
-        ]
-      },
-      "debian": [
-        "aria2"
-      ],
-      "nixpkgs": [
-        "aria",
-        "aria2"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
-    "homepage": [
-      "https://aria2.github.io",
-      "https://github.com/aria2/aria2",
-      "https://aria2.sourceforge.net",
-      "https://sourceforge.net/projects/aria2"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
-    ],
-    "provides": [
-      "aria2:aria2c"
-    ],
-    "repology": [
-      "aria2"
-    ],
-    "src_url": [
-      "https://github.com/abcfy2/aria2-static-build"
-    ],
-    "tag": [
-      "bittorrent",
-      "downloader"
-    ],
-    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -6975,6 +6976,77 @@
     "_disabled": "false",
     "pkg": "chromium",
     "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
+    "app_id": "org.chromium.Chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google (Stable)",
+    "distro_pkg": {
+      "alpine": [
+        "chromium"
+      ],
+      "archlinux": {
+        "extra": [
+          "chromium"
+        ]
+      },
+      "debian": [
+        "chromium"
+      ],
+      "homebrew": [
+        "chromium"
+      ],
+      "nixpkgs": [
+        "chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.chromium.org",
+      "https://chromium.googlesource.com/chromium/src",
+      "https://github.com/chromium/chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "chromium"
+    ],
+    "src_url": [
+      "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "131.0.6778.264"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
     "pkg_id": "nixpkgs.ungoogled-chromium",
     "pkg_type": "nixappimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
@@ -7032,76 +7104,6 @@
     ],
     "src_url": [
       "https://github.com/ungoogled-software/ungoogled-chromium"
-    ],
-    "tag": [
-      "browser"
-    ],
-    "version": "131.0.6778.264"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "chromium",
-    "pkg_family": "chromium",
-    "pkg_id": "nixpkgs.chromium",
-    "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
-    "app_id": "org.chromium.Chromium",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "Open source web browser from Google (Stable)",
-    "distro_pkg": {
-      "alpine": [
-        "chromium"
-      ],
-      "archlinux": {
-        "extra": [
-          "chromium"
-        ]
-      },
-      "debian": [
-        "chromium"
-      ],
-      "homebrew": [
-        "chromium"
-      ],
-      "nixpkgs": [
-        "chromium"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://www.chromium.org",
-      "https://chromium.googlesource.com/chromium/src",
-      "https://github.com/chromium/chromium"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
-      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "provides": [
-      "chromium==chromium-browser"
-    ],
-    "repology": [
-      "chromium"
-    ],
-    "src_url": [
-      "https://github.com/chromium/chromium"
     ],
     "tag": [
       "browser"
@@ -13338,7 +13340,7 @@
     "tag": [
       "gpg"
     ],
-    "version": "HEAD-5c5bb9a-250110T113458"
+    "version": "HEAD-5deed80-250114T115111"
   },
   {
     "_disabled": "false",
@@ -21707,7 +21709,7 @@
       "s3",
       "sync"
     ],
-    "version": "HEAD-b742705-250112T163112"
+    "version": "HEAD-45ba81c-250114T120849"
   },
   {
     "_disabled": "false",
@@ -22303,7 +22305,7 @@
       "bittorrent",
       "torrent"
     ],
-    "version": "HEAD-6cb4289-250113T221041"
+    "version": "HEAD-b34c246-250114T115058"
   },
   {
     "_disabled": "false",
@@ -26875,7 +26877,7 @@
       "network",
       "traceroute"
     ],
-    "version": "HEAD-0779b8f-250103T215728"
+    "version": "HEAD-683461e-250114T214050"
   },
   {
     "_disabled": "false",

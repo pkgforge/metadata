@@ -85,6 +85,8 @@ jobs:
         continue-on-error: true
 
       - name: Close Issues (> 3 Days)
+        env:
+          GITHUB_TOKEN: "${{ github.token }}"
         run: |
           #Presets
           set +x ; set +e

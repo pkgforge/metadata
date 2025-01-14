@@ -83,13 +83,13 @@ if [[ "$(jq -r '.[] | .pkg_family' "${TMPDIR}/bincache.json" | grep -iv 'null' |
    exit 1
 fi
 ##Pkgcache
-#curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json" | jq -c '.[] | {pkg_family: .pkg_family, ghcr_pkg: (.ghcr_pkg | split(":")[0]), build_script: .build_script}' > "${TMPDIR}/pkgcache.json.tmp"
-#curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json" | jq -c '.[] | {pkg_family: .pkg_family, ghcr_pkg: (.ghcr_pkg | split(":")[0]), build_script: .build_script}' >> "${TMPDIR}/pkgcache.json.tmp"
-#jq -s 'unique' "${TMPDIR}/pkgcache.json.tmp" | jq . > "${TMPDIR}/pkgcache.json"
-#if [[ "$(jq -r '.[] | .pkg_family' "${TMPDIR}/pkgcache.json" | grep -iv 'null' | wc -l)" -le 400 ]]; then
-#   echo -e "\n[-] FATAL: Failed to Generate Pkgcache Input\n"
-#   exit 1
-#fi
+curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json" | jq -c '.[] | {pkg_family: .pkg_family, ghcr_pkg: (.ghcr_pkg | split(":")[0]), build_script: .build_script}' > "${TMPDIR}/pkgcache.json.tmp"
+curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json" | jq -c '.[] | {pkg_family: .pkg_family, ghcr_pkg: (.ghcr_pkg | split(":")[0]), build_script: .build_script}' >> "${TMPDIR}/pkgcache.json.tmp"
+jq -s 'unique' "${TMPDIR}/pkgcache.json.tmp" | jq . > "${TMPDIR}/pkgcache.json"
+if [[ "$(jq -r '.[] | .pkg_family' "${TMPDIR}/pkgcache.json" | grep -iv 'null' | wc -l)" -le 20 ]]; then
+   echo -e "\n[-] FATAL: Failed to Generate Pkgcache Input\n"
+   exit 1
+fi
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
@@ -253,7 +253,7 @@ readarray -t "VALID_PKGS" < "${TMPDIR}/valid_pkgs.txt"
 for SBUILD in "${VALID_PKGS[@]}"; do
     #VALID_PKGSRC="$(echo "${SBUILD}" | sed -E 's|.*/packages/||; s|\.validated$||' | tr -d '[:space:]')"
     VALID_PKGSRC="$(echo "${SBUILD##*/packages/}" | sed -E 's|\.validated$||' | tr -d '[:space:]')"
-    BINCACHE="$(jq --arg VALID_PKGSRC "${VALID_PKGSRC}" -r '.[] | select(.build_script | test($VALID_PKGSRC+"$")) | .ghcr_pkg' "${TMPDIR}/bincache.json" | head -n 1 | awk -F'/' '{print $1"/"$2"/"$3"/"$4"/"$5"/"$6}' | tr -d '[:space:]')"
+    PKGCACHE="$(jq --arg VALID_PKGSRC "${VALID_PKGSRC}" -r '.[] | select(.build_script | test($VALID_PKGSRC+"$")) | .ghcr_pkg' "${TMPDIR}/pkgcache.json" | head -n 1 | awk -F'/' '{print $1"/"$2"/"$3"/"$4"/"$5"/"$6}' | tr -d '[:space:]')"
     BUILD_SCRIPT="https://github.com/pkgforge/soarpkgs/blob/main/packages/${VALID_PKGSRC}"
     PKG_FAMILY="$(basename $(dirname "${SBUILD}") | tr -d '[:space:]')"
     PKG_VERSION="$(echo "${SBUILD}" | sed 's/\.validated$/.pkgver/' | xargs cat 2>/dev/null | tr -d '[:space:]')"

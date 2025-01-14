@@ -1698,6 +1698,7 @@
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/btpf/Alexandria"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/alexandria/appimage/official",
     "provides": [
       "alexandria"
     ],
@@ -2816,7 +2817,7 @@
       "alpine",
       "package-manager"
     ],
-    "version": "v2.14.8"
+    "version": "v2.14.9"
   },
   {
     "_disabled": "false",
@@ -5440,7 +5441,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.76.11"
+    "version": "v1.76.12"
   },
   {
     "_disabled": "false",
@@ -5980,77 +5981,6 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
-    "distro_pkg": {
-      "alpine": [
-        "caddy"
-      ],
-      "archlinux": {
-        "aur": [
-          "caddy-git"
-        ],
-        "extra": [
-          "caddy"
-        ]
-      },
-      "debian": [
-        "caddy"
-      ],
-      "homebrew": [
-        "caddy"
-      ],
-      "nixpkgs": [
-        "caddy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
-    "homepage": [
-      "https://caddyserver.com",
-      "https://github.com/caddyserver/caddy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
-    ],
-    "provides": [
-      "caddy:caddy-beta"
-    ],
-    "repology": [
-      "caddy"
-    ],
-    "src_url": [
-      "https://github.com/caddyserver/caddy"
-    ],
-    "tag": [
-      "caddy",
-      "server",
-      "nginx"
-    ],
-    "version": "v2.9.0-beta.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "caddy",
-    "pkg_family": "caddy",
-    "pkg_id": "github.com.caddyserver.caddy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
     "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
@@ -6114,6 +6044,76 @@
       "nginx"
     ],
     "version": "v2.9.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "caddy",
+    "pkg_family": "caddy",
+    "pkg_id": "github.com.caddyserver.caddy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "distro_pkg": {
+      "alpine": [
+        "caddy"
+      ],
+      "archlinux": {
+        "aur": [
+          "caddy-git"
+        ],
+        "extra": [
+          "caddy"
+        ]
+      },
+      "debian": [
+        "caddy"
+      ],
+      "homebrew": [
+        "caddy"
+      ],
+      "nixpkgs": [
+        "caddy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "homepage": [
+      "https://caddyserver.com",
+      "https://github.com/caddyserver/caddy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
+    ],
+    "provides": [
+      "caddy:caddy-beta"
+    ],
+    "repology": [
+      "caddy"
+    ],
+    "src_url": [
+      "https://github.com/caddyserver/caddy"
+    ],
+    "tag": [
+      "caddy",
+      "server",
+      "nginx"
+    ],
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -6976,6 +6976,74 @@
     "_disabled": "false",
     "pkg": "chromium",
     "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "131.0.6778.264"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
     "pkg_id": "nixpkgs.chromium",
     "pkg_type": "nixappimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
@@ -7037,73 +7105,6 @@
     ],
     "src_url": [
       "https://github.com/chromium/chromium"
-    ],
-    "tag": [
-      "browser"
-    ],
-    "version": "131.0.6778.264"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "chromium",
-    "pkg_family": "chromium",
-    "pkg_id": "nixpkgs.ungoogled-chromium",
-    "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
-    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "ungoogled-chromium",
-          "ungoogled-chromium-bin",
-          "ungoogled-chromium-git",
-          "ungoogled-chromium-xdg",
-          "ungoogled-chromium-xdg-bin"
-        ]
-      },
-      "gnuguix": [
-        "ungoogled-chromium"
-      ],
-      "nixpkgs": [
-        "ungoogled-chromium"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
-    "homepage": [
-      "https://github.com/ungoogled-software/ungoogled-chromium"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
-      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "provides": [
-      "chromium:ungoogled-chromium",
-      "chromium==chromium-browser"
-    ],
-    "repology": [
-      "ungoogled-chromium"
-    ],
-    "src_url": [
-      "https://github.com/ungoogled-software/ungoogled-chromium"
     ],
     "tag": [
       "browser"
@@ -9337,7 +9338,7 @@
       "diff",
       "git-delta"
     ],
-    "version": "HEAD-e3e9222-250112T230409"
+    "version": "HEAD-d4017ea-250114T091756"
   },
   {
     "_disabled": "false",
@@ -12085,7 +12086,15 @@
     "version": "0.22.5"
   },
   {
-    "_disabled": "false",
+    "_disabled": "true",
+    "_disabled_reason": {
+      "broken": [
+        {
+          "date": "2025-01-14",
+          "reason": "Fails to create EGL Display"
+        }
+      ]
+    },
     "pkg": "ghostty",
     "pkg_family": "ghostty",
     "pkg_id": "nixpkgs.ghostty",
@@ -12135,6 +12144,7 @@
       "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghostty/nixappimage/nixpkgs",
     "provides": [
       "ghostty"
     ],
@@ -12194,7 +12204,8 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source using a Community Provided Script. Check/Report @ https://github.com/psadi/ghostty-appimage"
+      "Built From Source using a Community Provided Script. Check/Report @ https://github.com/psadi/ghostty-appimage",
+      "[PORTABLE] (Works on AnyLinux)"
     ],
     "provides": [
       "ghostty"
@@ -14433,6 +14444,7 @@
       "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/helix/nixappimage/nixpkgs",
     "provides": [
       "helix==hx"
     ],
@@ -15966,7 +15978,7 @@
       "json",
       "random"
     ],
-    "version": "HEAD-af2bd2b-241121T120432"
+    "version": "HEAD-f78ccf0-250114T164348"
   },
   {
     "_disabled": "false",
@@ -16033,7 +16045,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-be9483b-250114T011313"
+    "version": "HEAD-9ed1fde-250114T134536"
   },
   {
     "_disabled": "false",
@@ -16486,6 +16498,7 @@
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ic005k/Knot"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/knot/appimage/official",
     "provides": [
       "knot"
     ],
@@ -18529,6 +18542,7 @@
       "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/neovim/nixappimage/nixpkgs",
     "provides": [
       "neovim=>nvim"
     ],
@@ -19411,7 +19425,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-e117706-250113T080417"
+    "version": "HEAD-301d137-250114T114431"
   },
   {
     "_disabled": "false",
@@ -21531,7 +21545,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-ab34a62-250113T215032"
+    "version": "HEAD-ea10b6f-250114T112518"
   },
   {
     "_disabled": "false",
@@ -21709,7 +21723,7 @@
       "s3",
       "sync"
     ],
-    "version": "HEAD-45ba81c-250114T120849"
+    "version": "HEAD-6898375-250114T185119"
   },
   {
     "_disabled": "false",
@@ -23914,7 +23928,7 @@
     "tag": [
       "image"
     ],
-    "version": "HEAD-833519a-250111T094736"
+    "version": "HEAD-04ac19a-250114T153928"
   },
   {
     "_disabled": "false",
@@ -24067,7 +24081,7 @@
     "tag": [
       "fuzzyfinder"
     ],
-    "version": "HEAD-8a21a96-250114T011154"
+    "version": "HEAD-4fa222a-250114T193358"
   },
   {
     "_disabled": "false",
@@ -24970,7 +24984,7 @@
       "ssh",
       "terminal"
     ],
-    "version": "HEAD-9bab7ea-250110T133608"
+    "version": "HEAD-a4ff9cc-250114T171641"
   },
   {
     "_disabled": "false",
@@ -25830,7 +25844,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-64ab0dd-250113T112735"
+    "version": "HEAD-66269dc-250114T112035"
   },
   {
     "_disabled": "false",
@@ -26736,7 +26750,7 @@
       "file",
       "stats"
     ],
-    "version": "HEAD-029045a-241120T111250"
+    "version": "HEAD-9b0f179-250114T180346"
   },
   {
     "_disabled": "false",
@@ -26877,7 +26891,7 @@
       "network",
       "traceroute"
     ],
-    "version": "HEAD-683461e-250114T214050"
+    "version": "HEAD-b150c24-250115T004006"
   },
   {
     "_disabled": "false",
@@ -28113,6 +28127,86 @@
     "version": "HEAD-6578d5e-241006T184746"
   },
   {
+    "_disabled": "true",
+    "_disabled_reason": {
+      "broken": [
+        {
+          "date": "2025-01-14",
+          "reason": "Doesn't do anything"
+        }
+      ]
+    },
+    "pkg": "wget2",
+    "pkg_family": "wget2",
+    "pkg_id": "nixpkgs.wget2",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-wget2/wget2/wget2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wget2/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "GNU Wget2 is the successor of GNU Wget, a file and recursive website downloader",
+    "distro_pkg": {
+      "alpine": [
+        "wget2"
+      ],
+      "archlinux": {
+        "aur": [
+          "wget2",
+          "wget2-git"
+        ]
+      },
+      "debian": [
+        "wget2"
+      ],
+      "gnuguix": [
+        "wget2"
+      ],
+      "homebrew": [
+        "wget2"
+      ],
+      "nixpkgs": [
+        "wget2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/wget2/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://github.com/rockdaboot/wget2",
+      "https://gitlab.com/gnuwget/wget2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/wget2/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "wget2"
+    ],
+    "repology": [
+      "wget2"
+    ],
+    "src_url": [
+      "https://gitlab.com/gnuwget/wget2"
+    ],
+    "tag": [
+      "downloader"
+    ],
+    "version": "2.1.0"
+  },
+  {
     "_disabled": "false",
     "pkg": "which",
     "pkg_family": "which",
@@ -28669,7 +28763,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-96849a0-250114T110821"
+    "version": "HEAD-e6bf98a-250114T142917"
   },
   {
     "_disabled": "false",
@@ -29036,7 +29130,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-098f739-250114T134721"
+    "version": "HEAD-bc764f1-250114T234125"
   },
   {
     "_disabled": "false",

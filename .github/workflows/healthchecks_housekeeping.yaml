@@ -20,7 +20,7 @@ jobs:
     
     permissions:
       contents: write
-      
+      issues: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -82,6 +82,14 @@ jobs:
           #--------------#
           cd "${GITHUB_WORKSPACE}/main"
           find ".github" -type f -name '*.sh' -exec shellcheck --exclude="SC2261" --severity=error "{}" \; 2>/dev/null | tee "${GITHUB_WORKSPACE}/main/.github/shellcheck.txt"
+        continue-on-error: true
+
+      - name: Close Issues (> 3 Days)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          gh issue list -R "pkgforge/metadata" --limit "1000" --json 'number,createdAt' --jq '.[] | select(((now - (.createdAt | fromdate)) / 86400) > 3) | .number' | xargs -I "{}" gh issue close "{}" -R "pkgforge/metadata"
         continue-on-error: true
 
       - name: Generate Repo Metadata (git-sizer)

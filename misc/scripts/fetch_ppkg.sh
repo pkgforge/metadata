@@ -20,7 +20,7 @@ rm -rvf "${SYSTMP}/PPKG.json" "${SYSTMP}/PPKG/" 2>/dev/null
 
 #-------------------------------------------------------#
 ##Setup
-sudo curl -qfsSL "https://raw.githubusercontent.com/leleliu008/leleliu008/ppkg/master/ppkg" -o "/usr/local/bin/ppkg"
+sudo curl -qfsSL "https://raw.githubusercontent.com/leleliu008/ppkg/master/ppkg" -o "/usr/local/bin/ppkg"
 sudo chmod -v 'a+x' "/usr/local/bin/ppkg"
 ppkg setup ; ppkg update ; ppkg sysinfo
 ppkg formula-repo-list ; ppkg formula-repo-sync "official-core"

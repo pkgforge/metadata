@@ -233,5 +233,5 @@ jobs:
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/PKGSRC.json" "r2:/meta/misc/PKGSRC.json" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/PPKG_RAW.json" "r2:/meta/misc/PPKG_RAW.json" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/PPKG.json" "r2:/meta/misc/PPKG.json" --checksum --check-first --user-agent="${USER_AGENT}" &
-          wait ; done
+          wait ; echo
         continue-on-error: true

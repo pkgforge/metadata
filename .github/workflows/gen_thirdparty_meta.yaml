@@ -104,7 +104,7 @@ jobs:
           popd >/dev/null 2>&1
         continue-on-error: true
 
-      - name: Generate FlatPak & NixPkgs & PkgSrc
+      - name: Generate FlatPak & NixPkgs & PkgSrc & PPKG
         run: |
           #Presets
           set +x ; set +e
@@ -124,6 +124,11 @@ jobs:
           dos2unix --quiet "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_pkgsrc.sh"
           chmod +x "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_pkgsrc.sh"
           bash "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_pkgsrc.sh" &
+          #Generate PPKG Data
+          #bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_ppkg.sh")
+          dos2unix --quiet "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_ppkg.sh"
+          chmod +x "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_ppkg.sh"
+          bash "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_ppkg.sh" &
           wait ; echo
         continue-on-error: true
 
@@ -174,6 +179,12 @@ jobs:
           if [[ -s "${SYSTMP}/PKGSRC.json" ]] && [[ $(stat -c%s "${SYSTMP}/PKGSRC.json") -gt 1000 ]]; then
            cp -fv "${SYSTMP}/PKGSRC.json" "${GITHUB_WORKSPACE}/main/misc/data/PKGSRC.json"
           fi
+          if [[ -s "${SYSTMP}/PPKG_RAW.json" ]] && [[ $(stat -c%s "${SYSTMP}/PPKG_RAW.json") -gt 1000 ]]; then
+           cp -fv "${SYSTMP}/PPKG_RAW.json" "${GITHUB_WORKSPACE}/main/misc/data/PPKG_RAW.json"
+          fi
+          if [[ -s "${SYSTMP}/PPKG.json" ]] && [[ $(stat -c%s "${SYSTMP}/PPKG.json") -gt 1000 ]]; then
+           cp -fv "${SYSTMP}/PPKG.json" "${GITHUB_WORKSPACE}/main/misc/data/PPKG.json"
+          fi
         continue-on-error: true
 
       - name: Get DateTime & Purge files (=> 95 MB)
@@ -220,5 +231,7 @@ jobs:
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_TRENDING.json" "r2:/meta/misc/FLATPAK_TRENDING.json" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/NIXPKGS.json" "r2:/meta/misc/NIXPKGS.json" --checksum --check-first --user-agent="${USER_AGENT}" &
           rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/PKGSRC.json" "r2:/meta/misc/PKGSRC.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+          rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/PPKG_RAW.json" "r2:/meta/misc/PPKG_RAW.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+          rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/PPKG.json" "r2:/meta/misc/PPKG.json" --checksum --check-first --user-agent="${USER_AGENT}" &
           wait ; done
         continue-on-error: true

@@ -6052,6 +6052,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -13630,7 +13631,7 @@
       "shell",
       "tui"
     ],
-    "version": "HEAD-c93da09-250113T193105"
+    "version": "HEAD-3dcc8b3-250115T050610"
   },
   {
     "_disabled": "false",
@@ -16046,7 +16047,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-d00c02f-250115T002820"
+    "version": "HEAD-c3c2e88-250115T052523"
   },
   {
     "_disabled": "false",
@@ -23499,7 +23500,7 @@
       "pkgforge",
       "sbuild"
     ],
-    "version": "HEAD-c9321cd-250111T124136"
+    "version": "HEAD-7993c58-250115T094410"
   },
   {
     "_disabled": "false",
@@ -23978,6 +23979,184 @@
       "file"
     ],
     "version": "HEAD-5e86c03-240707T125731"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "simplex-chat",
+    "pkg_family": "simplex-chat",
+    "pkg_id": "ppkg.simplex-chat",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/simplex-chat/simplex-chat/simplex-chat",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/simplex-chat/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A 100% private-by-design chat platform for the command-line",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "simplex-chat-bin",
+          "simplex-chat-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/simplex-chat/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://simplex.chat",
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "simplex-chat==simplex-chat-cli"
+    ],
+    "repology": [
+      "simplex-chat"
+    ],
+    "src_url": [
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "tag": [
+      "chat",
+      "privacy"
+    ],
+    "version": "6.2.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "simplex-desktop",
+    "pkg_family": "simplex-desktop",
+    "pkg_id": "github.com.simplex-chat.simplex-chat",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/simplex-chat/simplex-desktop/simplex-desktop",
+    "app_id": "chat.simplex.simplex",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-desktop/appimage.official.stable.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "Desktop application for SimpleX Chat, A 100% private-by-design chat platform",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "simplex-chat"
+        ]
+      },
+      "nixpkgs": [
+        "simplex-chat-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/appimage.official.stable.yaml",
+    "homepage": [
+      "https://simplex.chat",
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/simplex-chat/simplex-chat"
+    ],
+    "provides": [
+      "simplex-desktop==simplex-chat-desktop"
+    ],
+    "repology": [
+      "simplex-chat",
+      "simplex-chat-desktop"
+    ],
+    "src_url": [
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "tag": [
+      "chat",
+      "messenger",
+      "privacy"
+    ],
+    "version": "v6.2.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "simplex-desktop",
+    "pkg_family": "simplex-desktop",
+    "pkg_id": "nixpkgs.simplex-chat-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/chat-desktop/simplex-desktop/simplex-desktop",
+    "app_id": "chat.simplex.simplex",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "Desktop application for SimpleX Chat, A 100% private-by-design chat platform",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "simplex-chat"
+        ]
+      },
+      "nixpkgs": [
+        "simplex-chat-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://simplex.chat",
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "simplex-desktop==simplex-chat-desktop"
+    ],
+    "repology": [
+      "simplex-chat",
+      "simplex-chat-desktop"
+    ],
+    "src_url": [
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "tag": [
+      "chat",
+      "messenger",
+      "privacy"
+    ],
+    "version": "6.2.3"
   },
   {
     "_disabled": "false",
@@ -28128,6 +28307,73 @@
     "version": "HEAD-6578d5e-241006T184746"
   },
   {
+    "_disabled": "false",
+    "pkg": "wget",
+    "pkg_family": "wget",
+    "pkg_id": "ppkg.wget",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-wget/wget/wget",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wget/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tool for retrieving files using HTTP, HTTPS, and FTP",
+    "distro_pkg": {
+      "alpine": [
+        "wget"
+      ],
+      "archlinux": {
+        "extra": [
+          "wget"
+        ]
+      },
+      "debian": [
+        "wget"
+      ],
+      "gnuguix": [
+        "wget"
+      ],
+      "homebrew": [
+        "wget"
+      ],
+      "nixpkgs": [
+        "wget"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wget/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/wget/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "wget"
+    ],
+    "repology": [
+      "wget"
+    ],
+    "src_url": [
+      "https://www.gnu.org/software/wget/"
+    ],
+    "tag": [
+      "downloader"
+    ],
+    "version": "1.24.5"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -28146,7 +28392,7 @@
     "category": [
       "Utility"
     ],
-    "description": "GNU Wget2 is the successor of GNU Wget, a file and recursive website downloader",
+    "description": "The successor of GNU Wget, a file and recursive website downloader",
     "distro_pkg": {
       "alpine": [
         "wget2"
@@ -28206,6 +28452,75 @@
       "downloader"
     ],
     "version": "2.1.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wget2",
+    "pkg_family": "wget2",
+    "pkg_id": "ppkg.wget2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-wget2/wget2/wget2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wget2/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The successor of GNU Wget, a file and recursive website downloader",
+    "distro_pkg": {
+      "alpine": [
+        "wget2"
+      ],
+      "archlinux": {
+        "aur": [
+          "wget2",
+          "wget2-git"
+        ]
+      },
+      "debian": [
+        "wget2"
+      ],
+      "gnuguix": [
+        "wget2"
+      ],
+      "homebrew": [
+        "wget2"
+      ],
+      "nixpkgs": [
+        "wget2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wget2/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/rockdaboot/wget2",
+      "https://gitlab.com/gnuwget/wget2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "wget2"
+    ],
+    "repology": [
+      "wget2"
+    ],
+    "src_url": [
+      "https://gitlab.com/gnuwget/wget2"
+    ],
+    "tag": [
+      "downloader"
+    ],
+    "version": "2.2.0"
   },
   {
     "_disabled": "false",
@@ -28814,7 +29129,7 @@
     "tag": [
       "cp"
     ],
-    "version": "HEAD-34ade20-241223T144020"
+    "version": "HEAD-80ae5bc-250115T150641"
   },
   {
     "_disabled": "false",
@@ -29131,7 +29446,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-bc764f1-250114T234125"
+    "version": "HEAD-6a5fa71-250115T133459"
   },
   {
     "_disabled": "false",

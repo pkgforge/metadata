@@ -34,13 +34,13 @@
 3.0M   │ │ ├── x86_64-Linux.db
 2.8M   │ │ ├── aarch64-Linux.json
 2.4M   │ │ ├── aarch64-Linux.db
-356K   │ │ ├── x86_64-Linux.db.cba
+360K   │ │ ├── x86_64-Linux.db.cba
 312K   │ │ ├── x86_64-Linux.json.cba
 300K   │ │ ├── aarch64-Linux.db.cba
 280K   │ │ ├── x86_64-Linux.db.zstd
 272K   │ │ ├── x86_64-Linux.db.xz
-268K   │ │ ├── aarch64-Linux.json.cba
 264K   │ │ ├── x86_64-Linux.json.xz
+264K   │ │ ├── aarch64-Linux.json.cba
 252K   │ │ ├── x86_64-Linux.json.zstd
 236K   │ │ ├── aarch64-Linux.db.zstd
 228K   │ │ ├── aarch64-Linux.db.xz
@@ -64,12 +64,12 @@
  28K   │   └── gen_meta_aarch64-Linux.sh
 4.1M   ├─┬ soarpkgs
 3.8M   │ ├─┬ data
-820K   │ │ ├── INDEX.json
+824K   │ │ ├── INDEX.json
 820K   │ │ ├── BACKAGE.json
 792K   │ │ ├── pub_issues_binaries.txt
 444K   │ │ ├── INDEX.db
 300K   │ │ ├── pub_issues_packages.txt
-124K   │ │ ├── INDEX.json.cba
+128K   │ │ ├── INDEX.json.cba
  92K   │ │ ├── GH_REPO.md
  88K   │ │ ├── INDEX.json.zstd
  88K   │ │ ├── INDEX.json.xz
@@ -108,18 +108,19 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-520K   ├─┬ pkgcache
-404K   │ ├─┬ data
-116K   │ │ ├── x86_64-Linux.db
-100K   │ │ ├── x86_64-Linux.json
- 20K   │ │ ├── aarch64-Linux.db
+620K   ├─┬ pkgcache
+504K   │ ├─┬ data
+144K   │ │ ├── x86_64-Linux.db
+120K   │ │ ├── x86_64-Linux.json
+ 36K   │ │ ├── aarch64-Linux.db
+ 24K   │ │ ├── aarch64-Linux.json
+ 16K   │ │ ├── x86_64-Linux.json.zstd
+ 16K   │ │ ├── x86_64-Linux.json.xz
+ 16K   │ │ ├── x86_64-Linux.json.cba
+ 16K   │ │ ├── x86_64-Linux.db.zstd
+ 16K   │ │ ├── x86_64-Linux.db.xz
  16K   │ │ ├── x86_64-Linux.db.cba
- 12K   │ │ ├── x86_64-Linux.json.zstd
- 12K   │ │ ├── x86_64-Linux.json.xz
- 12K   │ │ ├── x86_64-Linux.json.cba
- 12K   │ │ ├── x86_64-Linux.db.zstd
- 12K   │ │ ├── x86_64-Linux.db.xz
- 12K   │ │ ├── aarch64-Linux.json
+8.0K   │ │ ├── aarch64-Linux.db.cba
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum
@@ -136,7 +137,6 @@
 4.0K   │ │ ├── aarch64-Linux.db.zstd
 4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
 4.0K   │ │ ├── aarch64-Linux.db.xz
-4.0K   │ │ ├── aarch64-Linux.db.cba
 4.0K   │ │ ├── aarch64-Linux.db.bsum
 4.0K   │ │ └── TOTAL.json
 112K   │ └─┬ scripts

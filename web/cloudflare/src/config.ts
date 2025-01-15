@@ -84,6 +84,8 @@ const commonDescriptions = {
     '/misc/FLATPAK_TRENDING.json':  "🧬 Flatpak Metadata (Analytics)",
     '/misc/NIXPKGS.json':  "🧬 NixOS Metadata (NixPkgs)",
     '/misc/PKGSRC.json':  "🧬 PkgSrc Metadata (GIT)",
+    '/misc/PPKG_RAW.json':  "🧬 PPPKG Raw Metadata (Formulae)",
+    '/misc/PPKG.json':  "🧬 PPPKG Cleaned Metadata (Formulae)",
     // pkgcache
     '/pkgcache': "<a href='https://docs.pkgforge.dev/repositories/pkgcache/metadata'>🧬 JSON Metadata For PkgCache</a>",
     '/pkgcache/logs': "<a href='https://docs.pkgforge.dev/repositories/pkgcache/security'>🗃️ XZ Compressed CICD Log Archives 🗒️</a>",

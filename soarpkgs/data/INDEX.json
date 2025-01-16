@@ -2601,6 +2601,7 @@
     "note": [
       "Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/android-tools-AppImage"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/android-tools/appimage/pkgforge-dev",
     "provides": [
       "android-tools=>adb",
       "android-tools=>etc1tool",
@@ -3406,77 +3407,7 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
-    "distro_pkg": {
-      "alpine": [
-        "aria2"
-      ],
-      "archlinux": {
-        "aur": [
-          "aria2-fast",
-          "aria2-git"
-        ],
-        "extra": [
-          "aria2"
-        ]
-      },
-      "debian": [
-        "aria2"
-      ],
-      "nixpkgs": [
-        "aria",
-        "aria2"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
-    "homepage": [
-      "https://aria2.github.io",
-      "https://github.com/aria2/aria2",
-      "https://aria2.sourceforge.net",
-      "https://sourceforge.net/projects/aria2"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
-    ],
-    "provides": [
-      "aria2:aria2c"
-    ],
-    "repology": [
-      "aria2"
-    ],
-    "src_url": [
-      "https://github.com/abcfy2/aria2-static-build"
-    ],
-    "tag": [
-      "bittorrent",
-      "downloader"
-    ],
-    "version": "1.37.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "aria2",
-    "pkg_family": "aria2",
-    "pkg_id": "github.com.aria2.aria2",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
@@ -3540,6 +3471,76 @@
       "downloader"
     ],
     "version": "250111T122740"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "aria2",
+    "pkg_family": "aria2",
+    "pkg_id": "github.com.aria2.aria2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
+    "distro_pkg": {
+      "alpine": [
+        "aria2"
+      ],
+      "archlinux": {
+        "aur": [
+          "aria2-fast",
+          "aria2-git"
+        ],
+        "extra": [
+          "aria2"
+        ]
+      },
+      "debian": [
+        "aria2"
+      ],
+      "nixpkgs": [
+        "aria",
+        "aria2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "homepage": [
+      "https://aria2.github.io",
+      "https://github.com/aria2/aria2",
+      "https://aria2.sourceforge.net",
+      "https://sourceforge.net/projects/aria2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
+    ],
+    "provides": [
+      "aria2:aria2c"
+    ],
+    "repology": [
+      "aria2"
+    ],
+    "src_url": [
+      "https://github.com/abcfy2/aria2-static-build"
+    ],
+    "tag": [
+      "bittorrent",
+      "downloader"
+    ],
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -6164,77 +6165,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
-    "distro_pkg": {
-      "alpine": [
-        "caddy"
-      ],
-      "archlinux": {
-        "aur": [
-          "caddy-git"
-        ],
-        "extra": [
-          "caddy"
-        ]
-      },
-      "debian": [
-        "caddy"
-      ],
-      "homebrew": [
-        "caddy"
-      ],
-      "nixpkgs": [
-        "caddy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
-    "homepage": [
-      "https://caddyserver.com",
-      "https://github.com/caddyserver/caddy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
-    ],
-    "provides": [
-      "caddy:caddy-beta"
-    ],
-    "repology": [
-      "caddy"
-    ],
-    "src_url": [
-      "https://github.com/caddyserver/caddy"
-    ],
-    "tag": [
-      "caddy",
-      "server",
-      "nginx"
-    ],
-    "version": "v2.9.0-beta.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "caddy",
-    "pkg_family": "caddy",
-    "pkg_id": "github.com.caddyserver.caddy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -6297,6 +6228,76 @@
       "nginx"
     ],
     "version": "v2.9.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "caddy",
+    "pkg_family": "caddy",
+    "pkg_id": "github.com.caddyserver.caddy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "distro_pkg": {
+      "alpine": [
+        "caddy"
+      ],
+      "archlinux": {
+        "aur": [
+          "caddy-git"
+        ],
+        "extra": [
+          "caddy"
+        ]
+      },
+      "debian": [
+        "caddy"
+      ],
+      "homebrew": [
+        "caddy"
+      ],
+      "nixpkgs": [
+        "caddy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "homepage": [
+      "https://caddyserver.com",
+      "https://github.com/caddyserver/caddy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
+    ],
+    "provides": [
+      "caddy:caddy-beta"
+    ],
+    "repology": [
+      "caddy"
+    ],
+    "src_url": [
+      "https://github.com/caddyserver/caddy"
+    ],
+    "tag": [
+      "caddy",
+      "server",
+      "nginx"
+    ],
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -12287,6 +12288,7 @@
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/flameshot-org/flameshot"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/flameshot/appimage/official",
     "provides": [
       "flameshot"
     ],
@@ -12366,6 +12368,7 @@
       "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/flameshot/nixappimage/nixpkgs",
     "provides": [
       "flameshot"
     ],
@@ -19653,6 +19656,79 @@
     "_disabled": "false",
     "pkg": "neovim",
     "pkg_family": "neovim",
+    "pkg_id": "github.com.neovim.neovim.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/neovim-stable/neovim/neovim",
+    "app_id": "io.neovim.nvim",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/neovim/appimage.official.stable.yaml",
+    "category": [
+      "TextEditor"
+    ],
+    "description": "Vim text editor fork focused on extensibility and agility",
+    "distro_pkg": {
+      "alpine": [
+        "neovim"
+      ],
+      "archlinux": {
+        "aur": [
+          "neovim-git"
+        ],
+        "extra": [
+          "neovim"
+        ]
+      },
+      "debian": [
+        "neovim"
+      ],
+      "gnuguix": [
+        "neovim"
+      ],
+      "homebrew": [
+        "neovim"
+      ],
+      "nixpkgs": [
+        "neovim",
+        "neovim-unwrapped"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/neovim/appimage.official.stable.yaml",
+    "homepage": [
+      "https://neovim.io",
+      "https://neovim.org"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/neovim/neovim"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/neovim/appimage/official",
+    "provides": [
+      "neovim=>nvim"
+    ],
+    "repology": [
+      "neovim"
+    ],
+    "src_url": [
+      "https://github.com/neovim/neovim"
+    ],
+    "tag": [
+      "arc",
+      "firefox",
+      "www-client"
+    ],
+    "version": "v0.10.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "neovim",
+    "pkg_family": "neovim",
     "pkg_id": "nixpkgs.neovim",
     "pkg_type": "nixappimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-neovim/neovim/neovim",
@@ -19725,78 +19801,6 @@
       "editor"
     ],
     "version": "0.10.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "neovim",
-    "pkg_family": "neovim",
-    "pkg_id": "github.com.neovim.neovim.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/neovim-stable/neovim/neovim",
-    "app_id": "io.neovim.nvim",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/neovim/appimage.official.stable.yaml",
-    "category": [
-      "TextEditor"
-    ],
-    "description": "Vim text editor fork focused on extensibility and agility",
-    "distro_pkg": {
-      "alpine": [
-        "neovim"
-      ],
-      "archlinux": {
-        "aur": [
-          "neovim-git"
-        ],
-        "extra": [
-          "neovim"
-        ]
-      },
-      "debian": [
-        "neovim"
-      ],
-      "gnuguix": [
-        "neovim"
-      ],
-      "homebrew": [
-        "neovim"
-      ],
-      "nixpkgs": [
-        "neovim",
-        "neovim-unwrapped"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/neovim/appimage.official.stable.yaml",
-    "homepage": [
-      "https://neovim.io",
-      "https://neovim.org"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/neovim/neovim"
-    ],
-    "provides": [
-      "neovim=>nvim"
-    ],
-    "repology": [
-      "neovim"
-    ],
-    "src_url": [
-      "https://github.com/neovim/neovim"
-    ],
-    "tag": [
-      "arc",
-      "firefox",
-      "www-client"
-    ],
-    "version": "v0.10.3"
   },
   {
     "_disabled": "false",
@@ -20727,6 +20731,7 @@
       "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/OBS-Studio-AppImage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/obs-studio/appimage/pkgforge-dev",
     "provides": [
       "obs-studio"
     ],
@@ -22297,6 +22302,7 @@
       "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/PPSSPP-AppImage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ppsspp/appimage/pkgforge-dev",
     "provides": [
       "ppsspp"
     ],
@@ -22820,6 +22826,7 @@
       "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/puddletag-AppImage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/puddletag/appimage/pkgforge-dev",
     "provides": [
       "puddletag"
     ],
@@ -26895,6 +26902,7 @@
       "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/strawberry-AppImage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/strawberry/appimage/pkgforge-dev",
     "provides": [
       "strawberry"
     ],
@@ -31033,7 +31041,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-63eb82a-250115T214639"
+    "version": "HEAD-6c94227-250117T011722"
   },
   {
     "_disabled": "false",
@@ -31401,6 +31409,7 @@
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
     "provides": [
       "zen-browser==zen"
     ],
@@ -31460,6 +31469,7 @@
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
     "provides": [
       "zen-browser==zen"
     ],
@@ -31519,6 +31529,7 @@
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
     "provides": [
       "zen-browser==zen"
     ],

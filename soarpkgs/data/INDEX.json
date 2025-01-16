@@ -2546,6 +2546,86 @@
   },
   {
     "_disabled": "false",
+    "pkg": "android-tools",
+    "pkg_family": "android-tools",
+    "pkg_id": "github.com.pkgforge-dev.android-tools-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/android-tools/android-tools",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/android-tools/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Android SDK Platform-Tools (adb, fastboot & more)",
+      "adb": "Android Debug Bridge (adb) to communicate with an emulator instance or connected Android-powered device [android-tools]",
+      "etc1tool": "Encode/Decode PNG images to & from the ETC1 compression standard [android-tools]",
+      "fastboot": "Android flashing and booting utility [android-tools]",
+      "hprof-conv": "HPROF Converter [android-tools]",
+      "make_f2fs": "Tool to create a flash-friendly F2FS file system [android-tools]",
+      "make_f2fs_casefold": "Version of make_f2fs with casefolding support for file systems [android-tools]",
+      "mke2fs": "Utility to create ext2, ext3, or ext4 file systems [android-tools]",
+      "sqlite3": "Command-line interface for SQLite databases [android-tools]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "android-tools"
+      ],
+      "archlinux": {
+        "extra": [
+          "android-tools"
+        ]
+      },
+      "debian": [
+        "android-tools"
+      ],
+      "nixpkgs": [
+        "android-tools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/android-tools/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://android.googlesource.com/platform/tools/base",
+      "https://github.com/pkgforge-dev/android-tools-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/android-tools/assets/default.png",
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Samueru-sama (https://github.com/Samueru-sama)"
+    ],
+    "note": [
+      "Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/android-tools-AppImage"
+    ],
+    "provides": [
+      "android-tools=>adb",
+      "android-tools=>etc1tool",
+      "android-tools=>fastboot",
+      "android-tools=>hprof-conv",
+      "android-tools=>make_f2fs",
+      "android-tools=>make_f2fs_casefold",
+      "android-tools=>mke2fs",
+      "android-tools=>sqlite3"
+    ],
+    "repology": [
+      "android-tools"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/android-tools-AppImage"
+    ],
+    "tag": [
+      "adb",
+      "android-tools",
+      "utils"
+    ],
+    "version": "35.0.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "anew",
     "pkg_family": "anew",
     "pkg_id": "github.com.tomnomnom.anew",
@@ -5983,77 +6063,6 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
-    "distro_pkg": {
-      "alpine": [
-        "caddy"
-      ],
-      "archlinux": {
-        "aur": [
-          "caddy-git"
-        ],
-        "extra": [
-          "caddy"
-        ]
-      },
-      "debian": [
-        "caddy"
-      ],
-      "homebrew": [
-        "caddy"
-      ],
-      "nixpkgs": [
-        "caddy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
-    "homepage": [
-      "https://caddyserver.com",
-      "https://github.com/caddyserver/caddy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
-    ],
-    "provides": [
-      "caddy:caddy-beta"
-    ],
-    "repology": [
-      "caddy"
-    ],
-    "src_url": [
-      "https://github.com/caddyserver/caddy"
-    ],
-    "tag": [
-      "caddy",
-      "server",
-      "nginx"
-    ],
-    "version": "v2.9.0-beta.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "caddy",
-    "pkg_family": "caddy",
-    "pkg_id": "github.com.caddyserver.caddy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
     "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
@@ -6117,6 +6126,76 @@
       "nginx"
     ],
     "version": "v2.9.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "caddy",
+    "pkg_family": "caddy",
+    "pkg_id": "github.com.caddyserver.caddy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "distro_pkg": {
+      "alpine": [
+        "caddy"
+      ],
+      "archlinux": {
+        "aur": [
+          "caddy-git"
+        ],
+        "extra": [
+          "caddy"
+        ]
+      },
+      "debian": [
+        "caddy"
+      ],
+      "homebrew": [
+        "caddy"
+      ],
+      "nixpkgs": [
+        "caddy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "homepage": [
+      "https://caddyserver.com",
+      "https://github.com/caddyserver/caddy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
+    ],
+    "provides": [
+      "caddy:caddy-beta"
+    ],
+    "repology": [
+      "caddy"
+    ],
+    "src_url": [
+      "https://github.com/caddyserver/caddy"
+    ],
+    "tag": [
+      "caddy",
+      "server",
+      "nginx"
+    ],
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -10913,7 +10992,7 @@
     "tag": [
       "ls"
     ],
-    "version": "HEAD-3f72de8-250109T052420"
+    "version": "HEAD-3792e50-250116T074347"
   },
   {
     "_disabled": "false",
@@ -22297,7 +22376,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-e94aa2c-250115T062157"
+    "version": "HEAD-49ed98d-250115T232208"
   },
   {
     "_disabled": "false",
@@ -24250,7 +24329,7 @@
       "pkgforge",
       "sbuild"
     ],
-    "version": "HEAD-564ef7a-250115T202738"
+    "version": "HEAD-8a9a4bd-250116T112257"
   },
   {
     "_disabled": "false",
@@ -24783,7 +24862,7 @@
       "chat",
       "privacy"
     ],
-    "version": "6.2.1"
+    "version": "6.2.4"
   },
   {
     "_disabled": "false",

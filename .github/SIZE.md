@@ -16,7 +16,7 @@
 412K   │ │ ├── FLATPAK_APPS_INFO.txt
 284K   │ │ ├── PPKG.json
 240K   │ │ ├── FLATPAK_POPULAR.json
-232K   │ │ ├── FLATPAK_TRENDING.json
+228K   │ │ ├── FLATPAK_TRENDING.json
  72K   │ │ ├── FLATPAK_APP_IDS.txt
  20K   │ │ ├── CATEGORY.json
 4.0K   │ │ └── CATEGORY.md
@@ -37,8 +37,8 @@
 3.0M   │ │ ├── x86_64-Linux.db
 2.8M   │ │ ├── aarch64-Linux.json
 2.4M   │ │ ├── aarch64-Linux.db
-360K   │ │ ├── x86_64-Linux.db.cba
-320K   │ │ ├── x86_64-Linux.json.cba
+356K   │ │ ├── x86_64-Linux.db.cba
+316K   │ │ ├── x86_64-Linux.json.cba
 300K   │ │ ├── aarch64-Linux.db.cba
 280K   │ │ ├── x86_64-Linux.db.zstd
 272K   │ │ ├── x86_64-Linux.db.xz
@@ -67,21 +67,22 @@
  28K   │   └── gen_meta_aarch64-Linux.sh
 4.2M   ├─┬ soarpkgs
 3.9M   │ ├─┬ data
-856K   │ │ ├── INDEX.json
+864K   │ │ ├── INDEX.json
 824K   │ │ ├── BACKAGE.json
-784K   │ │ ├── pub_issues_binaries.txt
-468K   │ │ ├── INDEX.db
+788K   │ │ ├── pub_issues_binaries.txt
+472K   │ │ ├── INDEX.db
 300K   │ │ ├── pub_issues_packages.txt
-128K   │ │ ├── INDEX.json.cba
+132K   │ │ ├── INDEX.json.cba
+ 92K   │ │ ├── INDEX.json.zstd
  92K   │ │ ├── INDEX.json.xz
  92K   │ │ ├── GH_REPO.md
- 88K   │ │ ├── INDEX.json.zstd
  88K   │ │ ├── INDEX.db.cba
  72K   │ │ ├── INDEX.db.zstd
- 68K   │ │ ├── INDEX.db.xz
+ 72K   │ │ ├── INDEX.db.xz
  28K   │ │ ├── GH_REPO_ARCHIVED.md
- 24K   │ │ ├── DIFF_bincache.json
  20K   │ │ ├── URLS.txt
+ 20K   │ │ ├── DIFF_bincache.json
+8.0K   │ │ ├── DIFF_pkgcache.json
 4.0K   │ │ ├── TOTAL_CACHE.txt
 4.0K   │ │ ├── TOTAL_CACHE.json
 4.0K   │ │ ├── TOTAL.json
@@ -90,8 +91,7 @@
 4.0K   │ │ ├── INDEX.json.bsum
 4.0K   │ │ ├── INDEX.db.zstd.bsum
 4.0K   │ │ ├── INDEX.db.xz.bsum
-4.0K   │ │ ├── INDEX.db.bsum
-4.0K   │ │ └── DIFF_pkgcache.json
+4.0K   │ │ └── INDEX.db.bsum
 324K   │ └─┬ scripts
 204K   │   ├─┬ archived
  52K   │   │ ├── pkgcache_.github_scripts.7z

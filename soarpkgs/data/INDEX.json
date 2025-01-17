@@ -3407,77 +3407,6 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
-    "distro_pkg": {
-      "alpine": [
-        "aria2"
-      ],
-      "archlinux": {
-        "aur": [
-          "aria2-fast",
-          "aria2-git"
-        ],
-        "extra": [
-          "aria2"
-        ]
-      },
-      "debian": [
-        "aria2"
-      ],
-      "nixpkgs": [
-        "aria",
-        "aria2"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
-    "homepage": [
-      "https://aria2.github.io",
-      "https://github.com/aria2/aria2",
-      "https://aria2.sourceforge.net",
-      "https://sourceforge.net/projects/aria2"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
-    ],
-    "provides": [
-      "aria2:aria2c"
-    ],
-    "repology": [
-      "aria2"
-    ],
-    "src_url": [
-      "https://github.com/abcfy2/aria2-static-build"
-    ],
-    "tag": [
-      "bittorrent",
-      "downloader"
-    ],
-    "version": "1.37.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "aria2",
-    "pkg_family": "aria2",
-    "pkg_id": "github.com.aria2.aria2",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
     "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
@@ -3542,6 +3471,76 @@
       "downloader"
     ],
     "version": "250111T122740"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "aria2",
+    "pkg_family": "aria2",
+    "pkg_id": "github.com.aria2.aria2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
+    "distro_pkg": {
+      "alpine": [
+        "aria2"
+      ],
+      "archlinux": {
+        "aur": [
+          "aria2-fast",
+          "aria2-git"
+        ],
+        "extra": [
+          "aria2"
+        ]
+      },
+      "debian": [
+        "aria2"
+      ],
+      "nixpkgs": [
+        "aria",
+        "aria2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "homepage": [
+      "https://aria2.github.io",
+      "https://github.com/aria2/aria2",
+      "https://aria2.sourceforge.net",
+      "https://sourceforge.net/projects/aria2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
+    ],
+    "provides": [
+      "aria2:aria2c"
+    ],
+    "repology": [
+      "aria2"
+    ],
+    "src_url": [
+      "https://github.com/abcfy2/aria2-static-build"
+    ],
+    "tag": [
+      "bittorrent",
+      "downloader"
+    ],
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -5582,7 +5581,7 @@
     "category": [
       "WebBrowser"
     ],
-    "description": "Privacy-oriented browser for Desktop and Laptop computers (Stable)",
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
     "distro_pkg": {
       "archlinux": {
         "aur": [
@@ -5626,6 +5625,69 @@
       "Networking/WWW",
       "network.web.browser"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "nixpkgs.brave",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/brave/brave-browser"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "1.73.104"
   },
   {
     "_disabled": "false",
@@ -9842,6 +9904,445 @@
       "diff"
     ],
     "version": "HEAD-fdc6992-241116T095240"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "discord",
+    "pkg_family": "discord",
+    "pkg_id": "nixpkgs.discord-canary",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/discord-canary/discord/discord",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/nixappimage.nixpkgs.canary.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Canary)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord@canary"
+      ],
+      "nixpkgs": [
+        "discord-canary"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/nixappimage.nixpkgs.canary.yaml",
+    "homepage": [
+      "https://discordapp.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "discord=>discord-canary"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://discordapp.com"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "discord",
+    "pkg_family": "discord",
+    "pkg_id": "nixpkgs.discord-development",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/discord-development/discord/discord",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/nixappimage.nixpkgs.development.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Development)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord@development"
+      ],
+      "nixpkgs": [
+        "discord-development"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/nixappimage.nixpkgs.development.yaml",
+    "homepage": [
+      "https://discordapp.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "discord=>discord-development"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://discordapp.com"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "discord",
+    "pkg_family": "discord",
+    "pkg_id": "nixpkgs.discord-ptb",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/discord-ptb/discord/discord",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/nixappimage.nixpkgs.ptb.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Public Test Beta)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord"
+      ],
+      "nixpkgs": [
+        "discord-ptb"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/nixappimage.nixpkgs.ptb.yaml",
+    "homepage": [
+      "https://discordapp.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "discord=>discord-ptb"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://discordapp.com"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "discord",
+    "pkg_family": "discord",
+    "pkg_id": "nixpkgs.discord",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-discord/discord/discord",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord"
+      ],
+      "nixpkgs": [
+        "discord"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://discordapp.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "discord"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://discordapp.com"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "discord",
+    "pkg_family": "discord",
+    "pkg_id": "github.com.srevinsaju.discord-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/discord/discord",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/appimage.srevinsaju.stable.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord"
+      ],
+      "nixpkgs": [
+        "discord"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/appimage.srevinsaju.stable.yaml",
+    "homepage": [
+      "https://discordapp.com",
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/srevinsaju/discord-appimage"
+    ],
+    "provides": [
+      "discord"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "0.0.80"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "discord-canary",
+    "pkg_family": "discord",
+    "pkg_id": "github.com.srevinsaju.discord-AppImage.canary",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-canary/discord/discord-canary",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/appimage.srevinsaju.canary.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Canary)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord@canary"
+      ],
+      "nixpkgs": [
+        "discord-canary"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/appimage.srevinsaju.canary.yaml",
+    "homepage": [
+      "https://discordapp.com",
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/srevinsaju/discord-appimage"
+    ],
+    "provides": [
+      "discord=>discord-canary"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "0.0.560"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "discord-ptb",
+    "pkg_family": "discord",
+    "pkg_id": "github.com.srevinsaju.discord-AppImage.ptb",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-ptb/discord/discord-ptb",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/appimage.srevinsaju.ptb.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Public Test Beta)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord"
+      ],
+      "nixpkgs": [
+        "discord-ptb"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/appimage.srevinsaju.ptb.yaml",
+    "homepage": [
+      "https://discordapp.com",
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/srevinsaju/discord-appimage"
+    ],
+    "provides": [
+      "discord=>discord-ptb"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "0.0.125"
   },
   {
     "_disabled": "false",
@@ -28093,6 +28594,88 @@
       "messenger"
     ],
     "version": "v5.10.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "telegram-desktop",
+    "pkg_family": "telegram-desktop",
+    "pkg_id": "nixpkgs.telegram-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/telegram-desktop/telegram-desktop/telegram-desktop",
+    "app_id": "org.telegram.desktop",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "IRCClient"
+    ],
+    "description": "Official desktop version of Telegram messaging app",
+    "distro_pkg": {
+      "alpine": [
+        "telegram-desktop"
+      ],
+      "archlinux": {
+        "aur": [
+          "telegram-desktop-bin",
+          "telegram-desktop-dev",
+          "telegram-desktop-dev-bin",
+          "telegram-desktop-git"
+        ],
+        "extra": [
+          "telegram-desktop"
+        ]
+      },
+      "debian": [
+        "telegram-desktop"
+      ],
+      "gnuguix": [
+        "telegram-desktop"
+      ],
+      "homebrew": [
+        "telegram-desktop",
+        "telegram-desktop@beta"
+      ],
+      "nixpkgs": [
+        "tdesktop",
+        "telegram-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://desktop.telegram.org",
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "telegram-desktop==Telegram-Desktop"
+    ],
+    "repology": [
+      "telegram-desktop"
+    ],
+    "src_url": [
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "5.10.2"
   },
   {
     "_disabled": "false",

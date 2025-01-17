@@ -6237,6 +6237,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -12918,6 +12919,66 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gearlever",
+    "pkg_family": "gearlever",
+    "pkg_id": "nixpkgs.gearlever",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-gearlever/gearlever/gearlever",
+    "app_id": "it.mijorus.gearlever",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gearlever/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Manage AppImages with ease",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "gearlever"
+        ]
+      },
+      "nixpkgs": [
+        "gearlever"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/gearlever/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://gearlever.mijorus.it",
+      "https://mijorus.it/projects/gearlever"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/gearlever/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "gearlever"
+    ],
+    "repology": [
+      "gearlever"
+    ],
+    "src_url": [
+      "https://github.com/mijorus/gearlever"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "2.3.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "geonet",
     "pkg_family": "geonet",
     "pkg_id": "gitlab.com.shodan-public.geonet-rs",
@@ -17669,6 +17730,90 @@
       "ipfs"
     ],
     "version": "HEAD-f41b190-250115T160445"
+  },
+  {
+    "_disabled": "true",
+    "_disabled_reason": {
+      "broken": [
+        {
+          "date": "2025-01-17",
+          "reason": "Exec Format Error"
+        }
+      ]
+    },
+    "pkg": "lazarus",
+    "pkg_family": "lazarus",
+    "pkg_id": "nixpkgs.lazarus",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-lazarus/lazarus/lazarus",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/lazarus/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "IDE"
+    ],
+    "description": "Portable Delphi-like IDE for the FreePascal compiler",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "lazarus-git"
+        ],
+        "extra": [
+          "lazarus"
+        ]
+      },
+      "debian": [
+        "lazarus"
+      ],
+      "gnuguix": [
+        "lazarus"
+      ],
+      "homebrew": [
+        "lazarus"
+      ],
+      "nixpkgs": [
+        "lazarus"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/lazarus/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.lazarus-ide.org",
+      "https://gitlab.com/freepascal.org/lazarus/lazarus"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/lazarus/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "lazarus=>lazarus-ide",
+      "lazarus=>lazbuild",
+      "lazarus=>lazres",
+      "lazarus=>lrstolfm",
+      "lazarus=>startlazarus"
+    ],
+    "repology": [
+      "lazarus"
+    ],
+    "src_url": [
+      "https://gitlab.com/freepascal.org/lazarus/lazarus"
+    ],
+    "tag": [
+      "code",
+      "editor"
+    ],
+    "version": "3.6-0"
   },
   {
     "_disabled": "false",
@@ -22462,7 +22607,7 @@
     "tag": [
       "Monitoring"
     ],
-    "version": "HEAD-81092bb-250114T104659"
+    "version": "HEAD-2a0ba5c-250117T141915"
   },
   {
     "_disabled": "false",
@@ -27620,7 +27765,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-d912a49-250116T172830"
+    "version": "HEAD-97a44d6-250117T053753"
   },
   {
     "_disabled": "false",
@@ -28867,7 +29012,7 @@
       "busybox",
       "coreboot"
     ],
-    "version": "HEAD-85b675e-250115T112725"
+    "version": "HEAD-3c75ea5-250116T222343"
   },
   {
     "_disabled": "false",
@@ -31545,7 +31690,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.7t_2025-01-15"
+    "version": "1.7t_2025-01-16"
   },
   {
     "_disabled": "false",

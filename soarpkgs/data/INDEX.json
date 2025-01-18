@@ -3541,7 +3541,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T011911"
+    "version": "250118T141142"
   },
   {
     "_disabled": "false",
@@ -5052,6 +5052,76 @@
       "zsync"
     ],
     "version": "HEAD-40456e6-250106T134342"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "blender",
+    "pkg_family": "blender",
+    "pkg_id": "runimage.debian.blender",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/debian-blender/blender/blender",
+    "app_id": "org.blender.Blender",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/blender/runimage.debian.stable.yaml",
+    "category": [
+      "Graphics"
+    ],
+    "description": "A fully integrated 3D graphics creation suite",
+    "distro_pkg": {
+      "alpine": [
+        "blender"
+      ],
+      "archlinux": {
+        "extra": [
+          "blender"
+        ]
+      },
+      "debian": [
+        "blender"
+      ],
+      "gnuguix": [
+        "blender"
+      ],
+      "homebrew": [
+        "blender"
+      ],
+      "nixpkgs": [
+        "blender"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/blender/runimage.debian.stable.yaml",
+    "homepage": [
+      "https://blender.org"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [debian]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "blender"
+    ],
+    "repology": [
+      "blender"
+    ],
+    "src_url": [
+      "https://blender.org",
+      "https://github.com/blender/blender"
+    ],
+    "tag": [
+      "graphics"
+    ],
+    "version": "4.3.2"
   },
   {
     "_disabled": "false",
@@ -14232,7 +14302,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-c2d1a5d-250116T131559"
+    "version": "HEAD-1e37e95-250118T143643"
   },
   {
     "_disabled": "false",
@@ -14555,7 +14625,7 @@
       "encryption",
       "filesystem"
     ],
-    "version": "HEAD-1464f9d-241230T114708"
+    "version": "HEAD-84c0580-250118T144712"
   },
   {
     "_disabled": "false",
@@ -18327,85 +18397,6 @@
     "version": "3.6-0"
   },
   {
-    "_disabled": "true",
-    "_disabled_reason": {
-      "broken": [
-        {
-          "date": "2025-01-18",
-          "reason": "Too many errors about Invalid cross-device link"
-        }
-      ]
-    },
-    "pkg": "lazarus",
-    "pkg_family": "lazarus",
-    "pkg_id": "runimage.debian.lazarus",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/debian-lazarus/lazarus/lazarus",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/lazarus/runimage.debian.stable.yaml",
-    "category": [
-      "IDE"
-    ],
-    "description": "Portable Delphi-like IDE for the FreePascal compiler",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "lazarus-git"
-        ],
-        "extra": [
-          "lazarus"
-        ]
-      },
-      "debian": [
-        "lazarus"
-      ],
-      "gnuguix": [
-        "lazarus"
-      ],
-      "homebrew": [
-        "lazarus"
-      ],
-      "nixpkgs": [
-        "lazarus"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/lazarus/runimage.debian.stable.yaml",
-    "homepage": [
-      "https://www.lazarus-ide.org",
-      "https://gitlab.com/freepascal.org/lazarus/lazarus"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/lazarus/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [debian]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "provides": [
-      "lazarus"
-    ],
-    "repology": [
-      "lazarus"
-    ],
-    "src_url": [
-      "https://gitlab.com/freepascal.org/lazarus/lazarus"
-    ],
-    "tag": [
-      "code",
-      "editor"
-    ],
-    "version": "3.6"
-  },
-  {
     "_disabled": "false",
     "pkg": "lazarus",
     "pkg_family": "lazarus",
@@ -18457,6 +18448,77 @@
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
       "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "lazarus"
+    ],
+    "repology": [
+      "lazarus"
+    ],
+    "src_url": [
+      "https://gitlab.com/freepascal.org/lazarus/lazarus"
+    ],
+    "tag": [
+      "code",
+      "editor"
+    ],
+    "version": "3.6"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "lazarus",
+    "pkg_family": "lazarus",
+    "pkg_id": "runimage.debian.lazarus",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/debian-lazarus/lazarus/lazarus",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/lazarus/runimage.debian.stable.yaml",
+    "category": [
+      "IDE"
+    ],
+    "description": "Portable Delphi-like IDE for the FreePascal compiler",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "lazarus-git"
+        ],
+        "extra": [
+          "lazarus"
+        ]
+      },
+      "debian": [
+        "lazarus"
+      ],
+      "gnuguix": [
+        "lazarus"
+      ],
+      "homebrew": [
+        "lazarus"
+      ],
+      "nixpkgs": [
+        "lazarus"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/lazarus/runimage.debian.stable.yaml",
+    "homepage": [
+      "https://www.lazarus-ide.org",
+      "https://gitlab.com/freepascal.org/lazarus/lazarus"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/lazarus/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [debian]. Check/Report @ https://github.com/VHSgunzo/runimage",
       "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
@@ -19534,7 +19596,7 @@
       "Productivity/Networking/Security",
       "Security"
     ],
-    "version": "HEAD-d69e828-250118T135047"
+    "version": "HEAD-c684406-250118T144657"
   },
   {
     "_disabled": "false",
@@ -23874,7 +23936,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-bb09451-250117T065830"
+    "version": "HEAD-c08b367-250118T090616"
   },
   {
     "_disabled": "false",
@@ -32046,7 +32108,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-e37d8d6-250118T181051"
+    "version": "HEAD-ef48b7f-250118T224347"
   },
   {
     "_disabled": "false",

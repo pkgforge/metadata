@@ -3478,6 +3478,7 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
@@ -3540,7 +3541,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250111T122740"
+    "version": "250118T011911"
   },
   {
     "_disabled": "false",
@@ -4321,7 +4322,7 @@
       "bash",
       "shell"
     ],
-    "version": "5.1.8"
+    "version": "5.1.16"
   },
   {
     "_disabled": "false",
@@ -5567,7 +5568,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.76.21"
+    "version": "v1.76.22"
   },
   {
     "_disabled": "false",
@@ -6229,77 +6230,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
-    "distro_pkg": {
-      "alpine": [
-        "caddy"
-      ],
-      "archlinux": {
-        "aur": [
-          "caddy-git"
-        ],
-        "extra": [
-          "caddy"
-        ]
-      },
-      "debian": [
-        "caddy"
-      ],
-      "homebrew": [
-        "caddy"
-      ],
-      "nixpkgs": [
-        "caddy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
-    "homepage": [
-      "https://caddyserver.com",
-      "https://github.com/caddyserver/caddy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
-    ],
-    "provides": [
-      "caddy"
-    ],
-    "repology": [
-      "caddy"
-    ],
-    "src_url": [
-      "https://github.com/caddyserver/caddy"
-    ],
-    "tag": [
-      "caddy",
-      "server",
-      "nginx"
-    ],
-    "version": "v2.9.1"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "caddy",
-    "pkg_family": "caddy",
-    "pkg_id": "github.com.caddyserver.caddy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
@@ -6362,6 +6293,76 @@
       "nginx"
     ],
     "version": "v2.9.0-beta.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "caddy",
+    "pkg_family": "caddy",
+    "pkg_id": "github.com.caddyserver.caddy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
+    "distro_pkg": {
+      "alpine": [
+        "caddy"
+      ],
+      "archlinux": {
+        "aur": [
+          "caddy-git"
+        ],
+        "extra": [
+          "caddy"
+        ]
+      },
+      "debian": [
+        "caddy"
+      ],
+      "homebrew": [
+        "caddy"
+      ],
+      "nixpkgs": [
+        "caddy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
+    "homepage": [
+      "https://caddyserver.com",
+      "https://github.com/caddyserver/caddy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
+    ],
+    "provides": [
+      "caddy"
+    ],
+    "repology": [
+      "caddy"
+    ],
+    "src_url": [
+      "https://github.com/caddyserver/caddy"
+    ],
+    "tag": [
+      "caddy",
+      "server",
+      "nginx"
+    ],
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -8356,7 +8357,7 @@
       "authy",
       "totp"
     ],
-    "version": "HEAD-415ebc9-250115T172836"
+    "version": "HEAD-7d9233c-250117T202037"
   },
   {
     "_disabled": "false",
@@ -9541,7 +9542,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-62419f6-250106T154815"
+    "version": "HEAD-ea58780-250117T164307"
   },
   {
     "_disabled": "false",
@@ -12483,7 +12484,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "135.0.20250115091607"
+    "version": "135.0.20250117102618"
   },
   {
     "_disabled": "false",
@@ -12549,7 +12550,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "135.0.20250115091607"
+    "version": "135.0.20250117102618"
   },
   {
     "_disabled": "false",
@@ -12678,7 +12679,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "136.0.20250116214017"
+    "version": "136.0.20250117095907"
   },
   {
     "_disabled": "false",
@@ -15525,7 +15526,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-867115d-241220T003908"
+    "version": "HEAD-f85eb0e-250117T192927"
   },
   {
     "_disabled": "false",
@@ -17595,7 +17596,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-dbb9e7e-250117T173724"
+    "version": "HEAD-83d40d2-250118T012128"
   },
   {
     "_disabled": "false",
@@ -19154,7 +19155,7 @@
       "s3",
       "storage"
     ],
-    "version": "HEAD-95e1f70-250116T015217"
+    "version": "HEAD-cc8758c-250117T152550"
   },
   {
     "_disabled": "false",
@@ -23181,7 +23182,7 @@
       "chroot",
       "rootfs"
     ],
-    "version": "5.3.0"
+    "version": "5.4.0"
   },
   {
     "_disabled": "false",
@@ -23901,7 +23902,7 @@
       "s3",
       "sync"
     ],
-    "version": "HEAD-7c7606a-250117T174622"
+    "version": "HEAD-87eaf37-250117T193756"
   },
   {
     "_disabled": "false",
@@ -24112,7 +24113,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9b4549b-241030T184950"
+    "version": "HEAD-bdddf9d-250117T154456"
   },
   {
     "_disabled": "false",
@@ -26106,7 +26107,7 @@
     "tag": [
       "image"
     ],
-    "version": "HEAD-9ee686a-250115T095633"
+    "version": "HEAD-cb40560-250118T004816"
   },
   {
     "_disabled": "false",
@@ -26154,7 +26155,7 @@
     "tag": [
       "file"
     ],
-    "version": "HEAD-5e86c03-240707T125731"
+    "version": "HEAD-063951c-250118T112626"
   },
   {
     "_disabled": "false",
@@ -28274,7 +28275,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-97a44d6-250117T053753"
+    "version": "HEAD-c79b736-250117T145247"
   },
   {
     "_disabled": "false",
@@ -32282,7 +32283,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.7t_2025-01-16"
+    "version": "1.7t_2025-01-17"
   },
   {
     "_disabled": "false",

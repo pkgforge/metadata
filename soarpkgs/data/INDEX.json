@@ -3478,6 +3478,7 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
@@ -4321,7 +4322,7 @@
       "bash",
       "shell"
     ],
-    "version": "5.1.16"
+    "version": "5.1.8"
   },
   {
     "_disabled": "false",
@@ -6299,77 +6300,6 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
-    "distro_pkg": {
-      "alpine": [
-        "caddy"
-      ],
-      "archlinux": {
-        "aur": [
-          "caddy-git"
-        ],
-        "extra": [
-          "caddy"
-        ]
-      },
-      "debian": [
-        "caddy"
-      ],
-      "homebrew": [
-        "caddy"
-      ],
-      "nixpkgs": [
-        "caddy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
-    "homepage": [
-      "https://caddyserver.com",
-      "https://github.com/caddyserver/caddy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
-    ],
-    "provides": [
-      "caddy:caddy-beta"
-    ],
-    "repology": [
-      "caddy"
-    ],
-    "src_url": [
-      "https://github.com/caddyserver/caddy"
-    ],
-    "tag": [
-      "caddy",
-      "server",
-      "nginx"
-    ],
-    "version": "v2.9.0-beta.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "caddy",
-    "pkg_family": "caddy",
-    "pkg_id": "github.com.caddyserver.caddy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
     "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
@@ -6433,6 +6363,76 @@
       "nginx"
     ],
     "version": "v2.9.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "caddy",
+    "pkg_family": "caddy",
+    "pkg_id": "github.com.caddyserver.caddy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "distro_pkg": {
+      "alpine": [
+        "caddy"
+      ],
+      "archlinux": {
+        "aur": [
+          "caddy-git"
+        ],
+        "extra": [
+          "caddy"
+        ]
+      },
+      "debian": [
+        "caddy"
+      ],
+      "homebrew": [
+        "caddy"
+      ],
+      "nixpkgs": [
+        "caddy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "homepage": [
+      "https://caddyserver.com",
+      "https://github.com/caddyserver/caddy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
+    ],
+    "provides": [
+      "caddy:caddy-beta"
+    ],
+    "repology": [
+      "caddy"
+    ],
+    "src_url": [
+      "https://github.com/caddyserver/caddy"
+    ],
+    "tag": [
+      "caddy",
+      "server",
+      "nginx"
+    ],
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -8887,7 +8887,7 @@
       "bromite",
       "browser"
     ],
-    "version": "v132.0.6834.83"
+    "version": "v131.0.6778.205"
   },
   {
     "_disabled": "false",
@@ -9170,6 +9170,7 @@
     "pkg_id": "github.com.shenwei356.csvtk",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/shenwei356-csvtk/csvtk/csvtk",
+    "bincache": "ghcr.io/pkgforge/bincache/csvtk/official/csvtk",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/csvtk/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -9271,6 +9272,7 @@
     "pkg_id": "github.com.ctrsploit.ctrsploit",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ctrsploit-ctrsploit/ctrsploit/ctrsploit",
+    "bincache": "ghcr.io/pkgforge/bincache/ctrsploit/official/ctrsploit-checksec",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ctrsploit/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -9374,6 +9376,7 @@
     "pkg_id": "github.com.rs.curlie",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-curlie/curlie/curlie",
+    "bincache": "ghcr.io/pkgforge/bincache/curlie/official/curlie",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/curlie/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -9652,6 +9655,7 @@
     "pkg_id": "github.com.hahwul.dalfox",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hahwul-dalfox/dalfox/dalfox",
+    "bincache": "ghcr.io/pkgforge/bincache/dalfox/official/dalfox",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dalfox/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -9706,6 +9710,7 @@
     "pkg_id": "github.com.TomWright.dasel",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tomwright-dasel/dasel/dasel",
+    "bincache": "ghcr.io/pkgforge/bincache/dasel/official/dasel",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dasel/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -9935,6 +9940,7 @@
     "pkg_id": "github.com.daytonaio.daytona",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/daytonaio-daytona/daytona/daytona",
+    "bincache": "ghcr.io/pkgforge/bincache/daytona/official/daytona",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/daytona/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -10208,6 +10214,7 @@
     "pkg_id": "github.com.jeessy2.ddns-go",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ddns-go/ddns-go/ddns-go",
+    "bincache": "ghcr.io/pkgforge/bincache/ddns-go/official/ddns-go",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ddns-go/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -10449,6 +10456,7 @@
     "pkg_id": "github.com.reproducible-containers.diffoci",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containers-diffoci/diffoci/diffoci",
+    "bincache": "ghcr.io/pkgforge/bincache/diffoci/official/diffoci",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/diffoci/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -11089,6 +11097,7 @@
     "pkg_id": "github.com.ameshkov.dnslookup",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ameshkov-dnslookup/dnslookup/dnslookup",
+    "bincache": "ghcr.io/pkgforge/bincache/dnslookup/official/dnslookup",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dnslookup/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -11315,6 +11324,7 @@
     "pkg_id": "github.com.projectdiscovery.dnsx",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-dnsx/dnsx/dnsx",
+    "bincache": "ghcr.io/pkgforge/bincache/dnsx/official/dnsx",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dnsx/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -11429,6 +11439,7 @@
     "pkg_id": "github.com.mr-karan.doggo",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/karan-doggo/doggo/doggo",
+    "bincache": "ghcr.io/pkgforge/bincache/doggo/official/doggo",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/doggo/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -11666,6 +11677,7 @@
     "pkg_id": "github.com.trickest.dsieve",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/trickest-dsieve/dsieve/dsieve",
+    "bincache": "ghcr.io/pkgforge/bincache/dsieve/official/dsieve",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dsieve/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -11710,6 +11722,7 @@
     "pkg_id": "github.com.muesli.duf",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/muesli-duf/duf/duf",
+    "bincache": "ghcr.io/pkgforge/bincache/duf/official/duf",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/duf/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -12196,6 +12209,7 @@
     "pkg_id": "github.com.life4.enc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/life4-enc/enc/enc",
+    "bincache": "ghcr.io/pkgforge/bincache/enc/official/enc",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/enc/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -12436,6 +12450,7 @@
     "pkg_id": "github.com.trickest.enumerepo",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/trickest-enumerepo/enumerepo/enumerepo",
+    "bincache": "ghcr.io/pkgforge/bincache/enumerepo/official/enumerepo",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/enumerepo/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -12886,6 +12901,7 @@
     "pkg_id": "github.com.FalconForceTeam.FalconHound",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/falconforceteam-falconhound/falconhound/falconhound",
+    "bincache": "ghcr.io/pkgforge/bincache/falconhound/official/falconhound",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/falconhound/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -13228,6 +13244,7 @@
     "pkg_id": "github.com.ffuf.ffuf",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ffuf-ffuf/ffuf/ffuf",
+    "bincache": "ghcr.io/pkgforge/bincache/ffuf/official/ffuf",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ffuf/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -13510,7 +13527,7 @@
     "tag": [
       "findutils"
     ],
-    "version": "HEAD-50b7ec6-241025T070350"
+    "version": "HEAD-78b264d-250120T022513"
   },
   {
     "_disabled": "false",
@@ -13519,6 +13536,7 @@
     "pkg_id": "github.com.praetorian-inc.fingerprintx",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inc-fingerprintx/fingerprintx/fingerprintx",
+    "bincache": "ghcr.io/pkgforge/bincache/fingerprintx/official/fingerprintx",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fingerprintx/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -14098,6 +14116,7 @@
     "pkg_id": "github.com.wader.fq",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wader-fq/fq/fq",
+    "bincache": "ghcr.io/pkgforge/bincache/fq/official/fq",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fq/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -14144,6 +14163,7 @@
     "pkg_id": "github.com.charmbracelet.freeze",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/charmbracelet-freeze/freeze/freeze",
+    "bincache": "ghcr.io/pkgforge/bincache/freeze/official/freeze",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/freeze/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -14195,6 +14215,7 @@
     "pkg_id": "github.com.shadow1ng.fscan",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/shadow1ng-fscan/fscan/fscan",
+    "bincache": "ghcr.io/pkgforge/bincache/fscan/official/fscan",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fscan/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -14726,6 +14747,7 @@
     "pkg_id": "github.com.dundee.gdu",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dundee-gdu/gdu/gdu",
+    "bincache": "ghcr.io/pkgforge/bincache/gdu/official/gdu",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gdu/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -14897,6 +14919,7 @@
     "pkg_id": "github.com.kavishgr.getghrel",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kavishgr-getghrel/getghrel/getghrel",
+    "bincache": "ghcr.io/pkgforge/bincache/getghrel/official/getghrel",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/getghrel/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -15129,6 +15152,7 @@
     "pkg_id": "github.com.orangekame3.ghfetch",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/orangekame3-ghfetch/ghfetch/ghfetch",
+    "bincache": "ghcr.io/pkgforge/bincache/ghfetch/official/ghfetch",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ghfetch/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -15176,7 +15200,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-80510e3-250119T120250"
+    "version": "HEAD-687df42-250119T180249"
   },
   {
     "_disabled": "false",
@@ -15185,6 +15209,7 @@
     "pkg_id": "github.com.gabrie30.ghorg",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gabrie30-ghorg/ghorg/ghorg",
+    "bincache": "ghcr.io/pkgforge/bincache/ghorg/official/ghorg",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ghorg/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -15776,6 +15801,7 @@
     "pkg_id": "github.com.gitleaks.gitleaks",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gitleaks-gitleaks/gitleaks/gitleaks",
+    "bincache": "ghcr.io/pkgforge/bincache/gitleaks/official/gitleaks",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gitleaks/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -15829,7 +15855,7 @@
       "secret",
       "security"
     ],
-    "version": "HEAD-3ed8567-250117T192422"
+    "version": "HEAD-0e3f4f7-250119T073739"
   },
   {
     "_disabled": "false",
@@ -15903,6 +15929,7 @@
     "pkg_id": "github.com.filhodanuvem.gitql",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/filhodanuvem-gitql/gitql/gitql",
+    "bincache": "ghcr.io/pkgforge/bincache/gitql/official/gitql",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gitql/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -16019,6 +16046,7 @@
     "pkg_id": "github.com.charmbracelet.glow",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/charmbracelet-glow/glow/glow",
+    "bincache": "ghcr.io/pkgforge/bincache/glow/official/glow",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/glow/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -16239,6 +16267,7 @@
     "pkg_id": "github.com.benhoyt.goawk",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/benhoyt-goawk/goawk/goawk",
+    "bincache": "ghcr.io/pkgforge/bincache/goawk/official/goawk",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/goawk/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -16307,6 +16336,7 @@
     "pkg_id": "github.com.OJ.gobuster",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oj-gobuster/gobuster/gobuster",
+    "bincache": "ghcr.io/pkgforge/bincache/gobuster/official/gobuster",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gobuster/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -16479,6 +16509,7 @@
     "pkg_id": "github.com.ameshkov.gocurl",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ameshkov-gocurl/gocurl/gocurl",
+    "bincache": "ghcr.io/pkgforge/bincache/gocurl/official/gocurl",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gocurl/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -16521,6 +16552,7 @@
     "pkg_id": "github.com.ameshkov.godnsbench",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ameshkov-godnsbench/godnsbench/godnsbench",
+    "bincache": "ghcr.io/pkgforge/bincache/godnsbench/official/godnsbench",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/godnsbench/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -16564,6 +16596,7 @@
     "pkg_id": "github.com.mr-pmillz.gofireprox",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pmillz-gofireprox/gofireprox/gofireprox",
+    "bincache": "ghcr.io/pkgforge/bincache/gofireprox/official/gofireprox",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gofireprox/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -16606,6 +16639,7 @@
     "pkg_id": "github.com.itchyny.gojq",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/itchyny-gojq/gojq/gojq",
+    "bincache": "ghcr.io/pkgforge/bincache/gojq/official/gojq",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gojq/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -16856,6 +16890,7 @@
     "pkg_id": "github.com.gopasspw.gopass",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gopasspw-gopass/gopass/gopass",
+    "bincache": "ghcr.io/pkgforge/bincache/gopass/official/gopass",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gopass/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -16960,6 +16995,7 @@
     "pkg_id": "github.com.securego.gosec",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/securego-gosec/gosec/gosec",
+    "bincache": "ghcr.io/pkgforge/bincache/gosec/official/gosec",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gosec/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -17022,6 +17058,7 @@
     "pkg_id": "github.com.chmouel.gosmee",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/chmouel-gosmee/gosmee/gosmee",
+    "bincache": "ghcr.io/pkgforge/bincache/gosmee/official/gosmee",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gosmee/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -17547,6 +17584,7 @@
     "pkg_id": "github.com.nao1215.gup",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nao1215-gup/gup/gup",
+    "bincache": "ghcr.io/pkgforge/bincache/gup/official/gup",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gup/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -18068,6 +18106,7 @@
     "pkg_id": "github.com.hetznercloud.cli",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hetznercloud-cli/hcloud/hcloud",
+    "bincache": "ghcr.io/pkgforge/bincache/hcloud/official/hcloud",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hcloud/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -18951,6 +18990,7 @@
     "pkg_id": "github.com.projectdiscovery.httpx",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-httpx/httpx/httpx",
+    "bincache": "ghcr.io/pkgforge/bincache/httpx/official/httpx",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/httpx/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -19401,6 +19441,7 @@
     "pkg_id": "github.com.riza.indextree",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/riza-indextree/indextree/indextree",
+    "bincache": "ghcr.io/pkgforge/bincache/indextree/official/indextree",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/indextree/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -19440,6 +19481,7 @@
     "pkg_id": "github.com.darkhz.invidtui",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/darkhz-invidtui/invidtui/invidtui",
+    "bincache": "ghcr.io/pkgforge/bincache/invidtui/official/invidtui",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/invidtui/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -19661,6 +19703,7 @@
     "pkg_id": "github.com.userdocs.iperf3-static",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/iperf3-static/iperf3/iperf3",
+    "bincache": "ghcr.io/pkgforge/bincache/iperf3/userdocs/iperf",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/iperf3/static.userdocs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -20031,6 +20074,7 @@
     "pkg_id": "github.com.ankitpokhrel.jira-cli",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jira-cli/jira-cli/jira-cli",
+    "bincache": "ghcr.io/pkgforge/bincache/jira-cli/official/jira-cli",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jira-cli/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -20183,6 +20227,7 @@
     "pkg_id": "github.com.noahgorstein.jqp",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/noahgorstein-jqp/jqp/jqp",
+    "bincache": "ghcr.io/pkgforge/bincache/jqp/official/jqp",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jqp/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -20401,6 +20446,7 @@
     "pkg_id": "github.com.derailed.k9s",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/derailed-k9s/k9s/k9s",
+    "bincache": "ghcr.io/pkgforge/bincache/k9s/official/k9s",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/k9s/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -20457,7 +20503,7 @@
     "tag": [
       "kubernetes"
     ],
-    "version": "HEAD-4642077-250112T092749"
+    "version": "HEAD-0d5bb5c-250119T102239"
   },
   {
     "_disabled": "false",
@@ -20990,6 +21036,7 @@
     "pkg_id": "github.com.ipfs.kubo",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ipfs-kubo/kubo/kubo",
+    "bincache": "ghcr.io/pkgforge/bincache/kubo/official/ipfswatch",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/kubo/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -21335,6 +21382,7 @@
     "pkg_id": "github.com.jesseduffield.lazydocker",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jesseduffield-lazydocker/lazydocker/lazydocker",
+    "bincache": "ghcr.io/pkgforge/bincache/lazydocker/official/lazydocker",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lazydocker/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -21398,6 +21446,7 @@
     "pkg_id": "github.com.jesseduffield.lazygit",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jesseduffield-lazygit/lazygit/lazygit",
+    "bincache": "ghcr.io/pkgforge/bincache/lazygit/official/lazygit",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lazygit/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -21517,6 +21566,7 @@
     "pkg_id": "github.com.gokcehan.lf",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gokcehan-lf/lf/lf",
+    "bincache": "ghcr.io/pkgforge/bincache/lf/official/lf",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lf/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -21760,6 +21810,7 @@
     "pkg_id": "github.com.superfly.litefs",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/superfly-litefs/litefs/litefs",
+    "bincache": "ghcr.io/pkgforge/bincache/litefs/official/litefs",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/litefs/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -21810,6 +21861,7 @@
     "pkg_id": "github.com.logdyhq.logdy-core",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/logdy-core/logdy/logdy",
+    "bincache": "ghcr.io/pkgforge/bincache/logdy/official/logdy",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/logdy/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -21868,6 +21920,7 @@
     "pkg_id": "github.com.Eun.logtimer",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/eun-logtimer/logtimer/logtimer",
+    "bincache": "ghcr.io/pkgforge/bincache/logtimer/official/logtimer",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/logtimer/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -22067,6 +22120,7 @@
     "pkg_id": "github.com.iawia002.lux",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/iawia002-lux/lux/lux",
+    "bincache": "ghcr.io/pkgforge/bincache/lux/official/lux",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lux/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -22297,6 +22351,7 @@
     "pkg_id": "github.com.alajmo.mani",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alajmo-mani/mani/mani",
+    "bincache": "ghcr.io/pkgforge/bincache/mani/official/mani",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mani/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -22521,6 +22576,7 @@
     "pkg_id": "github.com.42wim.matterbridge",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/42wim-matterbridge/matterbridge/matterbridge",
+    "bincache": "ghcr.io/pkgforge/bincache/matterbridge/official/matterbridge",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/matterbridge/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -22796,6 +22852,7 @@
     "pkg_id": "github.com.chainguard-dev.melange",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dev-melange/melange/melange",
+    "bincache": "ghcr.io/pkgforge/bincache/melange/official/melange",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/melange/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -22915,6 +22972,7 @@
     "pkg_id": "github.com.trickest.mgwls",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/trickest-mgwls/mgwls/mgwls",
+    "bincache": "ghcr.io/pkgforge/bincache/mgwls/official/mgwls",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mgwls/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -22959,6 +23017,7 @@
     "pkg_id": "github.com.zyedidia.micro",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zyedidia-micro/micro/micro",
+    "bincache": "ghcr.io/pkgforge/bincache/micro/official/micro",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/micro/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -23026,6 +23085,7 @@
     "pkg_id": "github.com.johnkerl.miller",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/johnkerl-miller/miller/miller",
+    "bincache": "ghcr.io/pkgforge/bincache/miller/official/miller",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miller/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -23096,6 +23156,7 @@
     "pkg_id": "github.com.miniflux.v2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/miniflux-v2/miniflux/miniflux",
+    "bincache": "ghcr.io/pkgforge/bincache/miniflux/official/miniflux",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miniflux/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -23163,6 +23224,7 @@
     "pkg_id": "github.com.tdewolff.minify",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tdewolff-minify/minify/minify",
+    "bincache": "ghcr.io/pkgforge/bincache/minify/official/minify",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/minify/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -23378,6 +23440,7 @@
     "pkg_id": "github.com.trickest.mksub",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/trickest-mksub/mksub/mksub",
+    "bincache": "ghcr.io/pkgforge/bincache/mksub/official/mksub",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mksub/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -23421,6 +23484,7 @@
     "pkg_id": "github.com.itchyny.mmv",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/itchyny-mmv/mmv/mmv",
+    "bincache": "ghcr.io/pkgforge/bincache/mmv/official/mmv",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mmv/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -23482,6 +23546,7 @@
     "pkg_id": "github.com.Seirdy.moac",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/seirdy-moac/moac/moac",
+    "bincache": "ghcr.io/pkgforge/bincache/moac/official/moac",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/moac/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -24458,6 +24523,7 @@
     "pkg_id": "github.com.containerd.nerdctl",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containerd-nerdctl/nerdctl/nerdctl",
+    "bincache": "ghcr.io/pkgforge/bincache/nerdctl/official/nerdctl",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nerdctl/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -24513,7 +24579,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-5fdd049-250118T053446"
+    "version": "HEAD-343a122-250119T145728"
   },
   {
     "_disabled": "false",
@@ -24615,6 +24681,7 @@
     "pkg_id": "github.com.netbirdio.netbird",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/netbirdio-netbird/netbird/netbird",
+    "bincache": "ghcr.io/pkgforge/bincache/netbird/official/netbird-mgmt",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netbird/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -24790,6 +24857,7 @@
     "pkg_id": "github.com.gravitl.netmaker",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gravitl-netmaker/netmaker/netmaker",
+    "bincache": "ghcr.io/pkgforge/bincache/netmaker/official/netmaker",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netmaker/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -24904,6 +24972,7 @@
     "pkg_id": "github.com.goreleaser.nfpm",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goreleaser-nfpm/nfpm/nfpm",
+    "bincache": "ghcr.io/pkgforge/bincache/nfpm/official/nfpm",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nfpm/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -25375,6 +25444,7 @@
     "pkg_id": "github.com.projectdiscovery.notify",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-notify/notify/notify",
+    "bincache": "ghcr.io/pkgforge/bincache/notify/official/notify",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/notify/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -25433,6 +25503,7 @@
     "pkg_id": "gitlab.com.shodan-public.nrich",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/public-nrich/nrich/nrich",
+    "bincache": "ghcr.io/pkgforge/bincache/nrich/official/nrich",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nrich/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -26880,7 +26951,7 @@
     "tag": [
       "pdf"
     ],
-    "version": "HEAD-a73d706-250116T213544"
+    "version": "HEAD-4379427-250119T154829"
   },
   {
     "_disabled": "false",
@@ -27710,7 +27781,7 @@
       "Emulators",
       "games-emulation"
     ],
-    "version": "1.18.1-2"
+    "version": "1.17.1-1"
   },
   {
     "_disabled": "false",
@@ -27920,7 +27991,7 @@
       "chroot",
       "rootfs"
     ],
-    "version": "5.4.0"
+    "version": "5.3.0"
   },
   {
     "_disabled": "false",
@@ -28422,7 +28493,7 @@
     "pkg_id": "github.com.natesales.q",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/natesales-q/q/q",
-    "bincache": "ghcr.io/pkgforge/bincache/htmlq/official/htmlq",
+    "bincache": "ghcr.io/pkgforge/bincache/fq/official/fq",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/q/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -31740,7 +31811,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-671fa9b-250118T213217"
+    "version": "HEAD-82b20b9-250119T225630"
   },
   {
     "_disabled": "false",
@@ -32782,7 +32853,7 @@
       "Music",
       "Sound/Players"
     ],
-    "version": "1.2.4-1"
+    "version": "1.2.6-1"
   },
   {
     "_disabled": "false",
@@ -36623,7 +36694,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-77a461c-250118T221629"
+    "version": "HEAD-7a43918-250119T155809"
   },
   {
     "_disabled": "false",
@@ -36990,7 +37061,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-ed3c9c4-250119T194834"
+    "version": "HEAD-5058cf2-250119T225434"
   },
   {
     "_disabled": "false",
@@ -37493,7 +37564,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.7t_2025-01-18"
+    "version": "1.7t_2025-01-19"
   },
   {
     "_disabled": "false",

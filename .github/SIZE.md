@@ -1,7 +1,7 @@
 ```mathematica
  190M └─┬ main
  170M   ├─┬ misc
- 169M   │ ├─┬ data
+ 170M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
   35M   │ │ ├── FLATPAK_APPSTREAM.xml
   23M   │ │ ├── DEBIAN.json
@@ -16,7 +16,7 @@
  412K   │ │ ├── FLATPAK_APPS_INFO.txt
  284K   │ │ ├── PPKG.json
  240K   │ │ ├── FLATPAK_POPULAR.json
- 228K   │ │ ├── FLATPAK_TRENDING.json
+ 224K   │ │ ├── FLATPAK_TRENDING.json
   72K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
@@ -37,15 +37,15 @@
  3.0M   │ │ ├── x86_64-Linux.db
  2.8M   │ │ ├── aarch64-Linux.json
  2.4M   │ │ ├── aarch64-Linux.db
- 360K   │ │ ├── x86_64-Linux.db.cba
+ 356K   │ │ ├── x86_64-Linux.db.cba
  316K   │ │ ├── x86_64-Linux.json.cba
- 296K   │ │ ├── aarch64-Linux.db.cba
- 280K   │ │ ├── x86_64-Linux.db.zstd
+ 300K   │ │ ├── aarch64-Linux.db.cba
+ 284K   │ │ ├── x86_64-Linux.db.zstd
  272K   │ │ ├── x86_64-Linux.db.xz
  264K   │ │ ├── x86_64-Linux.json.xz
  264K   │ │ ├── aarch64-Linux.json.cba
  252K   │ │ ├── x86_64-Linux.json.zstd
- 236K   │ │ ├── aarch64-Linux.db.zstd
+ 240K   │ │ ├── aarch64-Linux.db.zstd
  228K   │ │ ├── aarch64-Linux.db.xz
  220K   │ │ ├── aarch64-Linux.json.xz
  212K   │ │ ├── aarch64-Linux.json.zstd
@@ -65,22 +65,22 @@
   60K   │ └─┬ scripts
   28K   │   ├── gen_meta_x86_64-Linux.sh
   28K   │   └── gen_meta_aarch64-Linux.sh
- 4.3M   ├─┬ soarpkgs
- 4.0M   │ ├─┬ data
- 908K   │ │ ├── INDEX.json
+ 4.6M   ├─┬ soarpkgs
+ 4.3M   │ ├─┬ data
+ 1.0M   │ │ ├── INDEX.json
  828K   │ │ ├── BACKAGE.json
  796K   │ │ ├── pub_issues_binaries.txt
- 496K   │ │ ├── INDEX.db
+ 568K   │ │ ├── INDEX.db
  304K   │ │ ├── pub_issues_packages.txt
- 140K   │ │ ├── INDEX.json.cba
-  96K   │ │ ├── INDEX.json.xz
+ 156K   │ │ ├── INDEX.json.cba
+ 104K   │ │ ├── INDEX.json.zstd
+ 104K   │ │ ├── INDEX.json.xz
+ 104K   │ │ ├── INDEX.db.cba
   96K   │ │ ├── GH_REPO.md
-  92K   │ │ ├── INDEX.json.zstd
-  92K   │ │ ├── INDEX.db.cba
-  76K   │ │ ├── INDEX.db.zstd
-  72K   │ │ ├── INDEX.db.xz
+  88K   │ │ ├── INDEX.db.zstd
+  80K   │ │ ├── INDEX.db.xz
+  52K   │ │ ├── DIFF_bincache.json
   28K   │ │ ├── GH_REPO_ARCHIVED.md
-  24K   │ │ ├── DIFF_bincache.json
   20K   │ │ ├── URLS.txt
  4.0K   │ │ ├── TOTAL_CACHE.txt
  4.0K   │ │ ├── TOTAL_CACHE.json
@@ -111,14 +111,14 @@
  8.0K   │   ├── repology_fetcher.sh
  4.0K   │   ├── gen_ghcr_backage.sh
  4.0K   │   └── gen_diff.sh
-1008K   ├─┬ pkgcache
- 892K   │ ├─┬ data
+1004K   ├─┬ pkgcache
+ 888K   │ ├─┬ data
  272K   │ │ ├── x86_64-Linux.db
  236K   │ │ ├── x86_64-Linux.json
   68K   │ │ ├── aarch64-Linux.db
   56K   │ │ ├── aarch64-Linux.json
-  32K   │ │ ├── x86_64-Linux.db.cba
   28K   │ │ ├── x86_64-Linux.json.cba
+  28K   │ │ ├── x86_64-Linux.db.cba
   24K   │ │ ├── x86_64-Linux.json.zstd
   24K   │ │ ├── x86_64-Linux.json.xz
   24K   │ │ ├── x86_64-Linux.db.zstd

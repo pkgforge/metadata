@@ -6370,6 +6370,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -9271,7 +9272,7 @@
     "pkg_id": "github.com.ctrsploit.ctrsploit",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ctrsploit-ctrsploit/ctrsploit/ctrsploit",
-    "bincache": "ghcr.io/pkgforge/bincache/ctrsploit/official/ctrsploit-checksec",
+    "bincache": "ghcr.io/pkgforge/bincache/ctrsploit/official/ctrsploit",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ctrsploit/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -11360,7 +11361,7 @@
     "tag": [
       "dns"
     ],
-    "version": "HEAD-20f2c35-250113T030015"
+    "version": "HEAD-6c7281e-250120T023945"
   },
   {
     "_disabled": "false",
@@ -15199,7 +15200,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-59bb291-250120T000550"
+    "version": "HEAD-a1342ee-250120T060407"
   },
   {
     "_disabled": "false",
@@ -24636,7 +24637,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-b792f1f-250119T230917"
+    "version": "HEAD-2eeb8de-250120T113407"
   },
   {
     "_disabled": "false",
@@ -24738,7 +24739,7 @@
     "pkg_id": "github.com.netbirdio.netbird",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/netbirdio-netbird/netbird/netbird",
-    "bincache": "ghcr.io/pkgforge/bincache/netbird/official/netbird-mgmt",
+    "bincache": "ghcr.io/pkgforge/bincache/netbird/official/netbird",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netbird/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -26704,7 +26705,7 @@
     "tag": [
       "pager"
     ],
-    "version": "HEAD-bc66ba8-250120T100242"
+    "version": "HEAD-f0d1ecc-250120T104307"
   },
   {
     "_disabled": "false",
@@ -28706,7 +28707,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-cdd56b1-250119T074426"
+    "version": "HEAD-4a8eb2b-250119T222617"
   },
   {
     "_disabled": "false",
@@ -29432,6 +29433,120 @@
   },
   {
     "_disabled": "false",
+    "pkg": "reviewdog",
+    "pkg_family": "reviewdog",
+    "pkg_id": "github.com.reviewdog.reviewdog",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/reviewdog-reviewdog/reviewdog/reviewdog",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/reviewdog/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Automated code review tool integrated with any code analysis tools regardless of programming language",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "reviewdog-bin"
+        ]
+      },
+      "nixpkgs": [
+        "reviewdog"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/reviewdog/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/reviewdog/reviewdog"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/reviewdog/reviewdog"
+    ],
+    "provides": [
+      "reviewdog"
+    ],
+    "repology": [
+      "reviewdog"
+    ],
+    "src_url": [
+      "https://github.com/reviewdog/reviewdog"
+    ],
+    "tag": [
+      "analyzer",
+      "linter"
+    ],
+    "version": "HEAD-7964632-250119T091931"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "revive",
+    "pkg_family": "revive",
+    "pkg_id": "github.com.mgechev.revive",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mgechev-revive/revive/revive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/revive/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Faster, stricter, configurable, extensible, and beautiful drop-in replacement for golint",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "revive"
+        ]
+      },
+      "homebrew": [
+        "revive"
+      ],
+      "nixpkgs": [
+        "revive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/revive/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/mgechev/revive"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mgechev/revive"
+    ],
+    "provides": [
+      "revive"
+    ],
+    "repology": [
+      "revive"
+    ],
+    "src_url": [
+      "https://github.com/mgechev/revive"
+    ],
+    "tag": [
+      "linter"
+    ],
+    "version": "HEAD-395f790-250118T121619"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ripgen",
     "pkg_family": "ripgen",
     "pkg_id": "github.com.resyncgg.ripgen",
@@ -29628,6 +29743,75 @@
   },
   {
     "_disabled": "false",
+    "pkg": "rootlesskit",
+    "pkg_family": "rootlesskit",
+    "pkg_id": "github.com.rootless-containers.rootlesskit",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containers-rootlesskit/rootlesskit/rootlesskit",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rootlesskit/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Linux-native fake root for implementing rootless containers",
+      "rootlessctl": "A utility for managing rootless container environments [rootlesskit]",
+      "rootlesskit": "A user-space implementation of a minimal namespace and network configuration tool [rootlesskit]",
+      "rootlesskit-docker-proxy": "A proxy for Docker daemons to work seamlessly in rootless environments [rootlesskit]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "rootlesskit"
+      ],
+      "archlinux": {
+        "extra": [
+          "rootlesskit"
+        ]
+      },
+      "debian": [
+        "rootlesskit"
+      ],
+      "nixpkgs": [
+        "rootlesskit"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rootlesskit/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rootless-containers/rootlesskit"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rootless-containers/rootlesskit"
+    ],
+    "provides": [
+      "rootlessctl",
+      "rootlesskit",
+      "rootlesskit-docker-proxy"
+    ],
+    "repology": [
+      "rootlesskit"
+    ],
+    "src_url": [
+      "https://github.com/rootless-containers/rootlesskit"
+    ],
+    "tag": [
+      "container",
+      "rootless"
+    ],
+    "version": "HEAD-4b6f1b8-250120T111654"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ropr",
     "pkg_family": "ropr",
     "pkg_id": "github.com.Ben-Lichtman.ropr",
@@ -29669,6 +29853,59 @@
       "rop"
     ],
     "version": "HEAD-ec3eb2d-241006T143938"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "rospo",
+    "pkg_family": "rospo",
+    "pkg_id": "github.com.ferama.rospo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ferama-rospo/rospo/rospo",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rospo/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Simple, reliable, persistent ssh tunnels with embedded ssh server",
+    "distro_pkg": {
+      "homebrew": [
+        "rospo"
+      ],
+      "nixpkgs": [
+        "rospo"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rospo/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ferama/rospo"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ferama/rospo"
+    ],
+    "provides": [
+      "rospo"
+    ],
+    "repology": [
+      "rospo"
+    ],
+    "src_url": [
+      "https://github.com/ferama/rospo"
+    ],
+    "tag": [
+      "ssh"
+    ],
+    "version": "HEAD-566f6c0-250115T142314"
   },
   {
     "_disabled": "false",
@@ -29904,6 +30141,59 @@
   },
   {
     "_disabled": "false",
+    "pkg": "rush",
+    "pkg_family": "rush",
+    "pkg_id": "github.com.shenwei356.rush",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/shenwei356-rush/rush/rush",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rush/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A cross-platform command-line tool for executing jobs in parallel",
+    "distro_pkg": {
+      "homebrew": [
+        "rush-parallel"
+      ],
+      "nixpkgs": [
+        "rush-parallel"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rush/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/shenwei356/rush"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/shenwei356/rush"
+    ],
+    "provides": [
+      "rush==rush-parallel"
+    ],
+    "repology": [
+      "rush-parallel"
+    ],
+    "src_url": [
+      "https://github.com/shenwei356/rush"
+    ],
+    "tag": [
+      "parallel"
+    ],
+    "version": "HEAD-ea30329-241122T190012"
+  },
+  {
+    "_disabled": "false",
     "pkg": "rust-parallel",
     "pkg_family": "rust-parallel",
     "pkg_id": "github.com.aaronriekenberg.rust-parallel",
@@ -30114,6 +30404,166 @@
       "pastebin"
     ],
     "version": "HEAD-37f31fa-250115T165101"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "s3scanner",
+    "pkg_family": "s3scanner",
+    "pkg_id": "github.com.sa7mon.S3Scanner",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sa7mon-s3scanner/s3scanner/s3scanner",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/s3scanner/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A tool to find open S3 buckets in AWS or other cloud providers",
+    "distro_pkg": {
+      "homebrew": [
+        "s3scanner"
+      ],
+      "nixpkgs": [
+        "s3scanner"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/s3scanner/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sa7mon/S3Scanner"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sa7mon/S3Scanner"
+    ],
+    "provides": [
+      "s3scanner"
+    ],
+    "repology": [
+      "s3scanner"
+    ],
+    "src_url": [
+      "https://github.com/sa7mon/S3Scanner"
+    ],
+    "tag": [
+      "bugbounty",
+      "s3"
+    ],
+    "version": "HEAD-3a508a5-250102T212251"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "s3sync",
+    "pkg_family": "s3sync",
+    "pkg_id": "github.com.larrabee.s3sync",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/larrabee-s3sync/s3sync/s3sync",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/s3sync/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Really fast sync tool for S3",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/s3sync/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/larrabee/s3sync"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/larrabee/s3sync"
+    ],
+    "provides": [
+      "s3sync"
+    ],
+    "src_url": [
+      "https://github.com/larrabee/s3sync"
+    ],
+    "tag": [
+      "s3",
+      "sync"
+    ],
+    "version": "HEAD-9e2eb7f-240125T155217"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "s5cmd",
+    "pkg_family": "s5cmd",
+    "pkg_id": "github.com.peak.s5cmd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/peak-s5cmd/s5cmd/s5cmd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/s5cmd/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Parallel S3 and local filesystem execution tool",
+    "distro_pkg": {
+      "alpine": [
+        "s5cmd"
+      ],
+      "archlinux": {
+        "aur": [
+          "s5cmd",
+          "s5cmd-bin"
+        ]
+      },
+      "homebrew": [
+        "s5cmd"
+      ],
+      "nixpkgs": [
+        "s5cmd"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/s5cmd/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/peak/s5cmd"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/peak/s5cmd"
+    ],
+    "provides": [
+      "s5cmd"
+    ],
+    "repology": [
+      "s5cmd"
+    ],
+    "src_url": [
+      "https://github.com/peak/s5cmd"
+    ],
+    "tag": [
+      "s3",
+      "storage"
+    ],
+    "version": "HEAD-7e56e29-250117T101054"
   },
   {
     "_disabled": "false",
@@ -30856,6 +31306,121 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sake",
+    "pkg_family": "sake",
+    "pkg_id": "github.com.alajmo.sake",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alajmo-sake/sake/sake",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sake/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Task runner for local and remote hosts via ssh & more",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "sake"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sake/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/alajmo/sake"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/alajmo/sake"
+    ],
+    "provides": [
+      "sake"
+    ],
+    "repology": [
+      "sake"
+    ],
+    "src_url": [
+      "https://github.com/alajmo/sake"
+    ],
+    "tag": [
+      "ssh"
+    ],
+    "version": "HEAD-5b7c4b8-241214T072638"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sbctl",
+    "pkg_family": "sbctl",
+    "pkg_id": "github.com.Foxboron.sbctl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/foxboron-sbctl/sbctl/sbctl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sbctl/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Secure Boot key manager",
+    "distro_pkg": {
+      "alpine": [
+        "sbctl"
+      ],
+      "archlinux": {
+        "aur": [
+          "sbctl-git"
+        ],
+        "extra": [
+          "sbctl"
+        ]
+      },
+      "nixpkgs": [
+        "sbctl"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sbctl/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/Foxboron/sbctl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Foxboron/sbctl"
+    ],
+    "provides": [
+      "sbctl"
+    ],
+    "repology": [
+      "sbctl"
+    ],
+    "src_url": [
+      "https://github.com/Foxboron/sbctl"
+    ],
+    "tag": [
+      "efi",
+      "secureboot",
+      "uefi"
+    ],
+    "version": "HEAD-cd6dd1c-241127T190423"
+  },
+  {
+    "_disabled": "false",
     "pkg": "sbuilder",
     "pkg_family": "sbuilder",
     "pkg_id": "github.com.pkgforge.sbuilder",
@@ -31134,6 +31699,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "shell2http",
+    "pkg_family": "shell2http",
+    "pkg_id": "github.com.msoap.shell2http",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/msoap-shell2http/shell2http/shell2http",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/shell2http/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "HTTP-server to execute shell commands",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "shell2http-bin",
+          "shell2http-git"
+        ]
+      },
+      "homebrew": [
+        "shell2http"
+      ],
+      "nixpkgs": [
+        "shell2http"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/shell2http/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/msoap/shell2http"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/msoap/shell2http"
+    ],
+    "provides": [
+      "shell2http"
+    ],
+    "repology": [
+      "shell2http"
+    ],
+    "src_url": [
+      "https://github.com/msoap/shell2http"
+    ],
+    "tag": [
+      "server"
+    ],
+    "version": "HEAD-61a17c7-241230T235113"
+  },
+  {
+    "_disabled": "false",
     "pkg": "shellharden",
     "pkg_family": "shellharden",
     "pkg_id": "github.com.anordal.shellharden",
@@ -31242,6 +31866,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "shfmt",
+    "pkg_family": "shfmt",
+    "pkg_id": "github.com.mvdan.sh",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mvdan-sh/shfmt/shfmt",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/shfmt/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A shell parser, formatter, and interpreter",
+    "distro_pkg": {
+      "alpine": [
+        "shfmt"
+      ],
+      "archlinux": {
+        "extra": [
+          "shfmt"
+        ]
+      },
+      "gnuguix": [
+        "shfmt"
+      ],
+      "homebrew": [
+        "shfmt"
+      ],
+      "nixpkgs": [
+        "shfmt"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/shfmt/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/mvdan/sh"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-Clause-3"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mvdan/sh"
+    ],
+    "provides": [
+      "shfmt"
+    ],
+    "repology": [
+      "shfmt"
+    ],
+    "src_url": [
+      "https://github.com/mvdan/sh"
+    ],
+    "tag": [
+      "shellcheck"
+    ],
+    "version": "HEAD-2884acd-250119T015445"
+  },
+  {
+    "_disabled": "false",
     "pkg": "shortscan",
     "pkg_family": "shortscan",
     "pkg_id": "github.com.bitquark.shortscan",
@@ -31296,6 +31984,65 @@
       "security"
     ],
     "version": "HEAD-2ba744f-241125T002354"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "shuffledns",
+    "pkg_family": "shuffledns",
+    "pkg_id": "github.com.projectdiscovery.shuffledns",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-shuffledns/shuffledns/shuffledns",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/shuffledns/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "MassDNS wrapper to resolve and enumerate valid subdomains",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "shuffledns",
+          "shuffledns-bin"
+        ]
+      },
+      "homebrew": [
+        "shuffledns"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/shuffledns/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/shuffledns"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/shuffledns"
+    ],
+    "provides": [
+      "shuffledns"
+    ],
+    "repology": [
+      "shuffledns"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/shuffledns"
+    ],
+    "tag": [
+      "bug-bounty",
+      "dns",
+      "massdns",
+      "subdomain"
+    ],
+    "version": "HEAD-1e45a1b-240522T025420"
   },
   {
     "_disabled": "false",
@@ -31564,6 +32311,113 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sing-box",
+    "pkg_family": "sing-box",
+    "pkg_id": "github.com.SagerNet.sing-box",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sing-box/sing-box/sing-box",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sing-box/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The universal proxy platform",
+    "distro_pkg": {
+      "alpine": [
+        "sing-box"
+      ],
+      "archlinux": {
+        "aur": [
+          "sing-box"
+        ]
+      },
+      "homebrew": [
+        "sfm",
+        "sing-box"
+      ],
+      "nixpkgs": [
+        "sing-box"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sing-box/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/SagerNet/sing-box"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/SagerNet/sing-box"
+    ],
+    "provides": [
+      "sing-box"
+    ],
+    "repology": [
+      "sing-box"
+    ],
+    "src_url": [
+      "https://github.com/SagerNet/sing-box"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-8cc7734-250119T095444"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sish",
+    "pkg_family": "sish",
+    "pkg_id": "github.com.antoniomika.sish",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/antoniomika-sish/sish/sish",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sish/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "HTTP(S)/WS(S)/TCP Tunnels to localhost using only SSH",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sish/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/antoniomika/sish"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/antoniomika/sish"
+    ],
+    "provides": [
+      "sish"
+    ],
+    "repology": [
+      "sish"
+    ],
+    "src_url": [
+      "https://github.com/antoniomika/sish"
+    ],
+    "tag": [
+      "tunnel"
+    ],
+    "version": "HEAD-b57ad24-250108T143426"
+  },
+  {
+    "_disabled": "false",
     "pkg": "sj",
     "pkg_family": "sj",
     "pkg_id": "github.com.BishopFox.sj",
@@ -31669,6 +32523,54 @@
   },
   {
     "_disabled": "false",
+    "pkg": "skupper",
+    "pkg_family": "skupper",
+    "pkg_id": "github.com.skupperproject.skupper",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/skupperproject-skupper/skupper/skupper",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/skupper/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Virtual Application Network, enabling rich hybrid cloud communication",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/skupper/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/skupperproject/skupper"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/skupperproject/skupper"
+    ],
+    "provides": [
+      "skupper",
+      "skupper-controller"
+    ],
+    "repology": [
+      "cloud",
+      "network"
+    ],
+    "src_url": [
+      "https://github.com/skupperproject/skupper"
+    ],
+    "tag": [
+      "utility",
+      "skupper"
+    ],
+    "version": "HEAD-9d4b2c1-250117T124344"
+  },
+  {
+    "_disabled": "false",
     "pkg": "slirp4netns",
     "pkg_family": "slirp4netns",
     "pkg_id": "nixpkgs.slirp4netns",
@@ -31729,6 +32631,63 @@
       "usermode-networking"
     ],
     "version": "1.3.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sliver",
+    "pkg_family": "sliver",
+    "pkg_id": "github.com.BishopFox.sliver",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bishopfox-sliver/sliver/sliver",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sliver/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "FOSS c2 Adversary Emulation Framework",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "sliver",
+          "sliver-bin",
+          "sliver-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sliver/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/BishopFox/sliver"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BishopFox/sliver"
+    ],
+    "provides": [
+      "sliver-client",
+      "sliver-server"
+    ],
+    "repology": [
+      "sliver"
+    ],
+    "src_url": [
+      "https://github.com/BishopFox/sliver"
+    ],
+    "tag": [
+      "c2",
+      "red-teaming",
+      "security"
+    ],
+    "version": "HEAD-53c61cb-250107T162550"
   },
   {
     "_disabled": "false",
@@ -31947,6 +32906,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "soft-serve",
+    "pkg_family": "soft-serve",
+    "pkg_id": "github.com.charmbracelet.soft-serve",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soft-serve/soft-serve/soft-serve",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soft-serve/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Self-hosted Git server for the command line",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "soft-serve-git"
+        ],
+        "extra": [
+          "soft-serve"
+        ]
+      },
+      "nixpkgs": [
+        "soft-serve"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soft-serve/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/charmbracelet/soft-serve"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/charmbracelet/soft-serve"
+    ],
+    "provides": [
+      "soft-serve==soft"
+    ],
+    "repology": [
+      "soft-serve"
+    ],
+    "src_url": [
+      "https://github.com/charmbracelet/soft-serve"
+    ],
+    "tag": [
+      "git",
+      "ssh"
+    ],
+    "version": "HEAD-b207cba-250116T081012"
+  },
+  {
+    "_disabled": "false",
     "pkg": "sourcemapper",
     "pkg_family": "sourcemapper",
     "pkg_id": "github.com.denandz.sourcemapper",
@@ -31994,6 +33012,110 @@
       "bugbounty"
     ],
     "version": "HEAD-467916e-240322T170109"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "speedtest-go",
+    "pkg_family": "speedtest-go",
+    "pkg_id": "github.com.showwin.speedtest-go",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/speedtest-go/speedtest-go/speedtest-go",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/speedtest-go/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI to Test Internet Speed using multiple-servers",
+    "distro_pkg": {
+      "alpine": [
+        "speedtest-go"
+      ],
+      "archlinux": {
+        "aur": [
+          "speedtest-go",
+          "speedtest-go-bin",
+          "speedtest-go-git"
+        ]
+      },
+      "nixpkgs": [
+        "speedtest-go"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/speedtest-go/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/showwin/speedtest-go"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/showwin/speedtest-go"
+    ],
+    "provides": [
+      "speedtest-go"
+    ],
+    "repology": [
+      "speedtest-go"
+    ],
+    "src_url": [
+      "https://github.com/showwin/speedtest-go"
+    ],
+    "tag": [
+      "speedtest"
+    ],
+    "version": "HEAD-1395781-241220T235820"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "spk",
+    "pkg_family": "spk",
+    "pkg_id": "github.com.dhn.spk",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dhn-spk/spk/spk",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/spk/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A small OSINT/Recon tool to find CIDRs that belong to a specific organization",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/spk/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dhn/spk"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-Clause-3"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dhn/spk"
+    ],
+    "provides": [
+      "spk"
+    ],
+    "src_url": [
+      "https://github.com/dhn/spk"
+    ],
+    "tag": [
+      "bugbounty",
+      "cidr",
+      "recon"
+    ],
+    "version": "HEAD-b4092c0-250109T154934"
   },
   {
     "_disabled": "false",
@@ -32054,6 +33176,68 @@
       "proxy"
     ],
     "version": "HEAD-a2993ac-240908T225757"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sq",
+    "pkg_family": "sq",
+    "pkg_id": "github.com.neilotoole.sq",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/neilotoole-sq/sq/sq",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sq/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tool to inspect, query, join, import, and export structured data",
+    "distro_pkg": {
+      "alpine": [
+        "sq"
+      ],
+      "archlinux": {
+        "aur": [
+          "sq-bin"
+        ]
+      },
+      "homebrew": [
+        "sq"
+      ],
+      "nixpkgs": [
+        "sq"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sq/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/neilotoole/sq"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/neilotoole/sq"
+    ],
+    "provides": [
+      "sq"
+    ],
+    "repology": [
+      "sq"
+    ],
+    "src_url": [
+      "https://github.com/neilotoole/sq"
+    ],
+    "tag": [
+      "jq",
+      "sql"
+    ],
+    "version": "HEAD-158aec7-250119T192732"
   },
   {
     "_disabled": "false",
@@ -32455,6 +33639,49 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sshkeys",
+    "pkg_family": "sshkeys",
+    "pkg_id": "github.com.Eun.sshkeys",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/eun-sshkeys/sshkeys/sshkeys",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sshkeys/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Get all ssh public keys of a ssh server",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sshkeys/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/Eun/sshkeys"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Eun/sshkeys"
+    ],
+    "provides": [
+      "sshkeys"
+    ],
+    "src_url": [
+      "https://github.com/Eun/sshkeys"
+    ],
+    "tag": [
+      "key",
+      "ssh"
+    ],
+    "version": "HEAD-18d7e01-250117T102008"
+  },
+  {
+    "_disabled": "false",
     "pkg": "sshportal",
     "pkg_family": "sshportal",
     "pkg_id": "github.com.moul.sshportal",
@@ -32726,6 +33953,124 @@
   },
   {
     "_disabled": "false",
+    "pkg": "steampipe",
+    "pkg_family": "steampipe",
+    "pkg_id": "github.com.turbot.steampipe",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/turbot-steampipe/steampipe/steampipe",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/steampipe/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Dynamically query any cloud, code, logs & more with SQL",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "steampipe-bin"
+        ]
+      },
+      "homebrew": [
+        "steampipe"
+      ],
+      "nixpkgs": [
+        "steampipe"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/steampipe/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/turbot/steampipe"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/turbot/steampipe"
+    ],
+    "provides": [
+      "steampipe"
+    ],
+    "repology": [
+      "steampipe"
+    ],
+    "src_url": [
+      "https://github.com/turbot/steampipe"
+    ],
+    "tag": [
+      "cloud",
+      "sql"
+    ],
+    "version": "HEAD-7b2a294-250106T121524"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "step-cli",
+    "pkg_family": "step-cli",
+    "pkg_id": "github.com.smallstep.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/smallstep-cli/step-cli/step-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/step-cli/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Zero trust swiss army knife for working with X509, OAuth, JWT, OATH OTP, etc",
+    "distro_pkg": {
+      "alpine": [
+        "step-cli"
+      ],
+      "archlinux": {
+        "extra": [
+          "step-cli"
+        ]
+      },
+      "nixpkgs": [
+        "step-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/step-cli/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/smallstep/cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/smallstep/cli"
+    ],
+    "provides": [
+      "step-cli"
+    ],
+    "repology": [
+      "step-cli"
+    ],
+    "src_url": [
+      "https://github.com/smallstep/cli"
+    ],
+    "tag": [
+      "certificate",
+      "sso"
+    ],
+    "version": "HEAD-7362344-250113T091929"
+  },
+  {
+    "_disabled": "false",
     "pkg": "stew",
     "pkg_family": "stew",
     "pkg_id": "github.com.marwanhawari.stew",
@@ -32772,7 +34117,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-b54a7b1-250119T154628"
+    "version": "HEAD-0d214f5-250119T220628"
   },
   {
     "_disabled": "false",
@@ -32917,6 +34262,53 @@
   },
   {
     "_disabled": "false",
+    "pkg": "stree",
+    "pkg_family": "stree",
+    "pkg_id": "github.com.orangekame3.stree",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/orangekame3-stree/stree/stree",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/stree/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "List the directory trees of an AWS S3 Bucket",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/stree/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/orangekame3/stree"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/orangekame3/stree"
+    ],
+    "provides": [
+      "stree"
+    ],
+    "repology": [
+      "stree"
+    ],
+    "src_url": [
+      "https://github.com/orangekame3/stree"
+    ],
+    "tag": [
+      "aws",
+      "s3",
+      "tree"
+    ],
+    "version": "HEAD-228e6f4-240717T185645"
+  },
+  {
+    "_disabled": "false",
     "pkg": "stress-ng",
     "pkg_family": "stress-ng",
     "pkg_id": "nixpkgs.stress-ng",
@@ -32976,6 +34368,62 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sttr",
+    "pkg_family": "sttr",
+    "pkg_id": "github.com.abhimanyu003.sttr",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/abhimanyu003-sttr/sttr/sttr",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sttr/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Cli app to perform various operations on string",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "sttr",
+          "sttr-bin"
+        ]
+      },
+      "nixpkgs": [
+        "sttr"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sttr/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/abhimanyu003/sttr"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/abhimanyu003/sttr"
+    ],
+    "provides": [
+      "sttr"
+    ],
+    "repology": [
+      "sttr"
+    ],
+    "src_url": [
+      "https://github.com/abhimanyu003/sttr"
+    ],
+    "tag": [
+      "string"
+    ],
+    "version": "HEAD-2469521-241223T214203"
+  },
+  {
+    "_disabled": "false",
     "pkg": "stuffbin",
     "pkg_family": "stuffbin",
     "pkg_id": "github.com.knadh.stuffbin",
@@ -33023,6 +34471,111 @@
       "embed"
     ],
     "version": "HEAD-aa6399d-231205T214613"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "stunner",
+    "pkg_family": "stunner",
+    "pkg_id": "github.com.firefart.stunner",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/firefart-stunner/stunner/stunner",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/stunner/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Test and Exploit STUN, TURN and TURN over TCP servers",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/stunner/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/firefart/stunner"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "CC-BY-NC-SA-4.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/firefart/stunner"
+    ],
+    "provides": [
+      "stunner"
+    ],
+    "repology": [
+      "stunner"
+    ],
+    "src_url": [
+      "https://github.com/firefart/stunner"
+    ],
+    "tag": [
+      "stun"
+    ],
+    "version": "HEAD-e5bbb66-250107T120128"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "subfinder",
+    "pkg_family": "subfinder",
+    "pkg_id": "github.com.projectdiscovery.subfinder",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-subfinder/subfinder/subfinder",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/subfinder/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast Modular Subdomain Enumeration tool",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "subfinder",
+          "subfinder-bin"
+        ]
+      },
+      "homebrew": [
+        "subfinder"
+      ],
+      "nixpkgs": [
+        "subfinder"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/subfinder/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/subfinder"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/subfinder"
+    ],
+    "provides": [
+      "subfinder"
+    ],
+    "repology": [
+      "subfinder"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/subfinder"
+    ],
+    "tag": [
+      "bugbounty",
+      "subdomain"
+    ],
+    "version": "HEAD-da756e8-250114T123056"
   },
   {
     "_disabled": "false",
@@ -33540,6 +35093,59 @@
   },
   {
     "_disabled": "false",
+    "pkg": "taierspeed-cli",
+    "pkg_family": "taierspeed-cli",
+    "pkg_id": "github.com.ztelliot.taierspeed-cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/taierspeed-cli/taierspeed-cli/taierspeed-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/taierspeed-cli/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Speedtest cli for Tel Speed Test",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "taierspeed-cli",
+          "taierspeed-cli-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/taierspeed-cli/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ztelliot/taierspeed-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "LGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ztelliot/taierspeed-cli"
+    ],
+    "provides": [
+      "taierspeed-cli"
+    ],
+    "repology": [
+      "taierspeed-cli"
+    ],
+    "src_url": [
+      "https://github.com/ztelliot/taierspeed-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-bf5fbe2-240809T233605"
+  },
+  {
+    "_disabled": "false",
     "pkg": "tailscale",
     "pkg_family": "tailscale",
     "pkg_id": "github.com.tailscale.tailscale",
@@ -33867,6 +35473,49 @@
       "Network/Monitoring"
     ],
     "version": "4.99.5"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "teldrive",
+    "pkg_family": "teldrive",
+    "pkg_id": "github.com.divyam234.teldrive",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/divyam234-teldrive/teldrive/teldrive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/teldrive/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Telegram Drive Storage",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/teldrive/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/tgdrive/teldrive"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tgdrive/teldrive"
+    ],
+    "provides": [
+      "teldrive"
+    ],
+    "src_url": [
+      "https://github.com/tgdrive/teldrive"
+    ],
+    "tag": [
+      "drive",
+      "telegram"
+    ],
+    "version": "HEAD-303a2b6-250118T142839"
   },
   {
     "_disabled": "false",
@@ -34311,6 +35960,62 @@
   },
   {
     "_disabled": "false",
+    "pkg": "timer",
+    "pkg_family": "timer",
+    "pkg_id": "github.com.caarlos0.timer",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caarlos0-timer/timer/timer",
+    "bincache": "ghcr.io/pkgforge/bincache/logtimer/official/logtimer",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/timer/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A sleep with progress",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "timer-bin"
+        ]
+      },
+      "nixpkgs": [
+        "timer"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/timer/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/caarlos0/timer"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/caarlos0/timer"
+    ],
+    "provides": [
+      "timer"
+    ],
+    "repology": [
+      "timer-caarlos0"
+    ],
+    "src_url": [
+      "https://github.com/caarlos0/timer"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-62725d9-241126T084636"
+  },
+  {
+    "_disabled": "false",
     "pkg": "tinja",
     "pkg_family": "tinja",
     "pkg_id": "github.com.Hackmanit.TInjA",
@@ -34475,6 +36180,64 @@
       "tldr-pages"
     ],
     "version": "HEAD-1ddcf6a-250111T040738"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tlsx",
+    "pkg_family": "tlsx",
+    "pkg_id": "github.com.projectdiscovery.tlsx",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-tlsx/tlsx/tlsx",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tlsx/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast and configurable TLS grabber focused on TLS based data collection",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "tlsx"
+        ]
+      },
+      "homebrew": [
+        "tlsx"
+      ],
+      "nixpkgs": [
+        "tlsx"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tlsx/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/tlsx"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/tlsx"
+    ],
+    "provides": [
+      "tlsx"
+    ],
+    "repology": [
+      "tlsx"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/tlsx"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-4e2bfc5-241020T235605"
   },
   {
     "_disabled": "false",
@@ -34750,6 +36513,62 @@
   },
   {
     "_disabled": "false",
+    "pkg": "tssh",
+    "pkg_family": "tssh",
+    "pkg_id": "github.com.trzsz.trzsz-ssh",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/trzsz-ssh/tssh/tssh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tssh/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Simple ssh client with trzsz (trz/tsz) support",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "tssh",
+          "tssh-bin"
+        ]
+      },
+      "homebrew": [
+        "tssh"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tssh/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/trzsz/trzsz-ssh"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trzsz/trzsz-ssh"
+    ],
+    "provides": [
+      "tssh"
+    ],
+    "repology": [
+      "tssh"
+    ],
+    "src_url": [
+      "https://github.com/trzsz/trzsz-ssh"
+    ],
+    "tag": [
+      "ssh"
+    ],
+    "version": "HEAD-95210d5-241130T092358"
+  },
+  {
+    "_disabled": "false",
     "pkg": "tty2web",
     "pkg_family": "tty2web",
     "pkg_id": "github.com.kost.tty2web",
@@ -34900,6 +36719,188 @@
   },
   {
     "_disabled": "false",
+    "pkg": "tusd",
+    "pkg_family": "tusd",
+    "pkg_id": "github.com.tus.tusd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tus-tusd/tusd/tusd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tusd/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "TUS Resumable Upload Protocol Server",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "tusd-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tusd/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/tus/tusd"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tus/tusd"
+    ],
+    "provides": [
+      "tusd"
+    ],
+    "repology": [
+      "tusd"
+    ],
+    "src_url": [
+      "https://github.com/tus/tusd"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-7178845-250116T115156"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tut",
+    "pkg_family": "tut",
+    "pkg_id": "github.com.RasmusLindroth.tut",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rasmuslindroth-tut/tut/tut",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tut/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "TUI for Mastodon with vim inspired keys",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tut/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/RasmusLindroth/tut"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/RasmusLindroth/tut"
+    ],
+    "provides": [
+      "tut"
+    ],
+    "src_url": [
+      "https://github.com/RasmusLindroth/tut"
+    ],
+    "tag": [
+      "mastodon"
+    ],
+    "version": "HEAD-33d7cd8-230126T184248"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "txeh",
+    "pkg_family": "txeh",
+    "pkg_id": "github.com.txn2.txeh",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/txn2-txeh/txeh/txeh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/txeh/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI utility for /etc/hosts management",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/txeh/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/txn2/txeh"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/txn2/txeh"
+    ],
+    "provides": [
+      "txeh"
+    ],
+    "repology": [
+      "txeh"
+    ],
+    "src_url": [
+      "https://github.com/txn2/txeh"
+    ],
+    "tag": [
+      "hostsfile"
+    ],
+    "version": "HEAD-4cd7860-240130T002731"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tz",
+    "pkg_family": "tz",
+    "pkg_id": "github.com.oz.tz",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oz-tz/tz/tz",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tz/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "🌐 A time zone helper",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tz/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/oz/tz"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/oz/tz"
+    ],
+    "provides": [
+      "tz"
+    ],
+    "src_url": [
+      "https://github.com/oz/tz"
+    ],
+    "tag": [
+      "utility",
+      "timezone"
+    ],
+    "version": "HEAD-a0820b3-241127T080028"
+  },
+  {
+    "_disabled": "false",
     "pkg": "u-root",
     "pkg_family": "u-root",
     "pkg_id": "github.com.u-root.u-root",
@@ -34998,6 +36999,60 @@
       "udp"
     ],
     "version": "HEAD-7e6ea01-230423T225218"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "uncover",
+    "pkg_family": "uncover",
+    "pkg_id": "github.com.projectdiscovery.uncover",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-uncover/uncover/uncover",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/uncover/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Discover exposed hosts on the internet using multiple search engines",
+    "distro_pkg": {
+      "homebrew": [
+        "uncover"
+      ],
+      "nixpkgs": [
+        "uncover"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/uncover/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/uncover"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/uncover"
+    ],
+    "provides": [
+      "uncover"
+    ],
+    "repology": [
+      "uncover"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/uncover"
+    ],
+    "tag": [
+      "osint",
+      "recon"
+    ],
+    "version": "HEAD-a4f1c2d-240625T015707"
   },
   {
     "_disabled": "false",
@@ -35156,6 +37211,66 @@
       "Utility"
     ],
     "version": "HEAD-026f13e-241211T121741"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "usql",
+    "pkg_family": "usql",
+    "pkg_id": "github.com.xo.usql",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xo-usql/usql/usql",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/usql/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Universal command-line interface for SQL databases",
+    "distro_pkg": {
+      "alpine": [
+        "usql"
+      ],
+      "archlinux": {
+        "aur": [
+          "usql",
+          "usql-bin"
+        ]
+      },
+      "nixpkgs": [
+        "usql"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/usql/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/xo/usql"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/xo/usql"
+    ],
+    "provides": [
+      "usql"
+    ],
+    "repology": [
+      "usql-cli"
+    ],
+    "src_url": [
+      "https://github.com/xo/usql"
+    ],
+    "tag": [
+      "database",
+      "sql"
+    ],
+    "version": "HEAD-2be774d-241225T052259"
   },
   {
     "_disabled": "false",
@@ -35501,6 +37616,64 @@
   },
   {
     "_disabled": "false",
+    "pkg": "vegeta",
+    "pkg_family": "vegeta",
+    "pkg_id": "github.com.tsenart.vegeta",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tsenart-vegeta/vegeta/vegeta",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vegeta/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Versatile HTTP load testing tool",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "vegeta"
+        ]
+      },
+      "homebrew": [
+        "vegeta"
+      ],
+      "nixpkgs": [
+        "vegeta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vegeta/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/tsenart/vegeta"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tsenart/vegeta"
+    ],
+    "provides": [
+      "vegeta"
+    ],
+    "repology": [
+      "vegeta"
+    ],
+    "src_url": [
+      "https://github.com/tsenart/vegeta"
+    ],
+    "tag": [
+      "benchmark"
+    ],
+    "version": "HEAD-03ca49e-240729T193344"
+  },
+  {
+    "_disabled": "false",
     "pkg": "vesktop",
     "pkg_family": "vesktop",
     "pkg_id": "github.com.Vencord.Vesktop",
@@ -35561,6 +37734,128 @@
       "net-im"
     ],
     "version": "v1.5.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "vfox",
+    "pkg_family": "vfox",
+    "pkg_id": "github.com.version-fox.vfox",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fox-vfox/vfox/vfox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vfox/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Version manager with support for Java, Node.js, Flutter, .NET & more",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vfox",
+          "vfox-bin"
+        ]
+      },
+      "homebrew": [
+        "vfox"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vfox/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/version-fox/vfox"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/version-fox/vfox"
+    ],
+    "provides": [
+      "vfox"
+    ],
+    "repology": [
+      "vfox"
+    ],
+    "src_url": [
+      "https://github.com/version-fox/vfox"
+    ],
+    "tag": [
+      "asdf"
+    ],
+    "version": "HEAD-8e7e0e6-250119T010539"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "vhs",
+    "pkg_family": "vhs",
+    "pkg_id": "github.com.charmbracelet.vhs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/charmbracelet-vhs/vhs/vhs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vhs/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tool for generating terminal GIFs with code",
+    "distro_pkg": {
+      "alpine": [
+        "vhs"
+      ],
+      "archlinux": {
+        "aur": [
+          "vhs-bin"
+        ],
+        "extra": [
+          "vhs"
+        ]
+      },
+      "homebrew": [
+        "vhs"
+      ],
+      "nixpkgs": [
+        "vhs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vhs/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/charmbracelet/vhs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/charmbracelet/vhs"
+    ],
+    "provides": [
+      "vhs"
+    ],
+    "repology": [
+      "vhs"
+    ],
+    "src_url": [
+      "https://github.com/charmbracelet/vhs"
+    ],
+    "tag": [
+      "ascii",
+      "gif",
+      "recording"
+    ],
+    "version": "HEAD-2c7733e-250117T151543"
   },
   {
     "_disabled": "false",
@@ -35690,6 +37985,61 @@
   },
   {
     "_disabled": "false",
+    "pkg": "vultr-cli",
+    "pkg_family": "vultr-cli",
+    "pkg_id": "github.com.vultr.vultr-cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vultr-cli/vultr-cli/vultr-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vultr-cli/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Official command line tool for Vultr services",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "vultr-cli"
+        ]
+      },
+      "nixpkgs": [
+        "vultr-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vultr-cli/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/vultr/vultr-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/vultr/vultr-cli"
+    ],
+    "provides": [
+      "vultr-cli"
+    ],
+    "repology": [
+      "vultr-cli"
+    ],
+    "src_url": [
+      "https://github.com/vultr/vultr-cli"
+    ],
+    "tag": [
+      "vultr"
+    ],
+    "version": "HEAD-1e8b163-241212T155909"
+  },
+  {
+    "_disabled": "false",
     "pkg": "wadl-dumper",
     "pkg_family": "wadl-dumper",
     "pkg_id": "github.com.dwisiswant0.wadl-dumper",
@@ -35730,6 +38080,68 @@
       "xml"
     ],
     "version": "HEAD-de97146-220524T185914"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "walk",
+    "pkg_family": "walk",
+    "pkg_id": "github.com.antonmedv.walk",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/antonmedv-walk/walk/walk",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/walk/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Terminal file manager",
+    "distro_pkg": {
+      "alpine": [
+        "walk"
+      ],
+      "archlinux": {
+        "aur": [
+          "walk",
+          "walk-bin"
+        ]
+      },
+      "homebrew": [
+        "walk"
+      ],
+      "nixpkgs": [
+        "walk"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/walk/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/antonmedv/walk"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/antonmedv/walk"
+    ],
+    "provides": [
+      "walk"
+    ],
+    "repology": [
+      "walk"
+    ],
+    "src_url": [
+      "https://github.com/antonmedv/walk"
+    ],
+    "tag": [
+      "file-manager"
+    ],
+    "version": "HEAD-f6faf52-240816T134524"
   },
   {
     "_disabled": "false",
@@ -36512,6 +38924,105 @@
   },
   {
     "_disabled": "false",
+    "pkg": "wireproxy",
+    "pkg_family": "wireproxy",
+    "pkg_id": "github.com.pufferffish.wireproxy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pufferffish-wireproxy/wireproxy/wireproxy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wireproxy/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Wireguard client that exposes itself as a SOCKS5 proxy",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "wireproxy"
+        ]
+      },
+      "nixpkgs": [
+        "wireproxy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wireproxy/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/pufferffish/wireproxy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pufferffish/wireproxy"
+    ],
+    "provides": [
+      "wireproxy"
+    ],
+    "repology": [
+      "wireproxy"
+    ],
+    "src_url": [
+      "https://github.com/pufferffish/wireproxy"
+    ],
+    "tag": [
+      "proxy",
+      "wireguard"
+    ],
+    "version": "HEAD-d710683-241226T172001"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wiretap",
+    "pkg_family": "wiretap",
+    "pkg_id": "github.com.sandialabs.wiretap",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sandialabs-wiretap/wiretap/wiretap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wiretap/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "VPN-like proxy server that tunnels traffic via WireGuard without requiring special privileges",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wiretap/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/sandialabs/wiretap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sandialabs/wiretap"
+    ],
+    "provides": [
+      "wiretap"
+    ],
+    "src_url": [
+      "https://github.com/sandialabs/wiretap"
+    ],
+    "tag": [
+      "proxy",
+      "wireguard"
+    ],
+    "version": "HEAD-034c06d-241125T172227"
+  },
+  {
+    "_disabled": "false",
     "pkg": "wormhole-rs",
     "pkg_family": "wormhole-rs",
     "pkg_id": "github.com.magic-wormhole.magic-wormhole.rs",
@@ -36614,6 +39125,110 @@
       "packer"
     ],
     "version": "HEAD-55c98a6-241117T143958"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wtf",
+    "pkg_family": "wtf",
+    "pkg_id": "github.com.wtfutil.wtf",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wtfutil-wtf/wtf/wtf",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wtf/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Personal information Dashboard for the terminal",
+    "distro_pkg": {
+      "alpine": [
+        "wtfutil"
+      ],
+      "archlinux": {
+        "aur": [
+          "wtfutil",
+          "wtfutil-bin"
+        ]
+      },
+      "homebrew": [
+        "wtfutil"
+      ],
+      "nixpkgs": [
+        "wtf"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wtf/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/wtfutil/wtf"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wtfutil/wtf"
+    ],
+    "provides": [
+      "wtf==wtfutil"
+    ],
+    "repology": [
+      "wtfutil"
+    ],
+    "src_url": [
+      "https://github.com/wtfutil/wtf"
+    ],
+    "tag": [
+      "dashboard"
+    ],
+    "version": "HEAD-6a02b97-240521T154434"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wth",
+    "pkg_family": "wth",
+    "pkg_id": "github.com.mrusme.wth",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mrusme-wth/wth/wth",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wth/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "What The Heck  The better personal information dashboard for your terminal",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wth/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/mrusme/wth"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mrusme/wth"
+    ],
+    "provides": [
+      "wth"
+    ],
+    "src_url": [
+      "https://github.com/mrusme/wth"
+    ],
+    "tag": [
+      "dashboard"
+    ],
+    "version": "HEAD-8cd3bae-230703T145814"
   },
   {
     "_disabled": "false",
@@ -36869,6 +39484,73 @@
   },
   {
     "_disabled": "false",
+    "pkg": "xq",
+    "pkg_family": "xq",
+    "pkg_id": "github.com.sibprogrammer.xq",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sibprogrammer-xq/xq/xq",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xq/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line XML and HTML beautifier and content extractor",
+    "distro_pkg": {
+      "alpine": [
+        "xq"
+      ],
+      "archlinux": {
+        "aur": [
+          "xq",
+          "xq-bin"
+        ]
+      },
+      "debian": [
+        "xq"
+      ],
+      "homebrew": [
+        "xq"
+      ],
+      "nixpkgs": [
+        "xq-xml"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xq/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/sibprogrammer/xq"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sibprogrammer/xq"
+    ],
+    "provides": [
+      "xq"
+    ],
+    "repology": [
+      "xq-sibprogrammer"
+    ],
+    "src_url": [
+      "https://github.com/sibprogrammer/xq"
+    ],
+    "tag": [
+      "html",
+      "xml",
+      "xpath"
+    ],
+    "version": "HEAD-48c315e-250115T051709"
+  },
+  {
+    "_disabled": "false",
     "pkg": "xurls",
     "pkg_family": "xurls",
     "pkg_id": "github.com.mvdan.xurls",
@@ -37049,6 +39731,45 @@
       "scraper"
     ],
     "version": "HEAD-7d85f3b-230309T114007"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yataf",
+    "pkg_family": "yataf",
+    "pkg_id": "github.com.Damian89.yataf",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/damian89-yataf/yataf/yataf",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yataf/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "yataf extracts secrets and paths from files or urls - its best used against javascript files",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yataf/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/dsecuredcom/yataf"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dsecuredcom/yataf"
+    ],
+    "provides": [
+      "yataf"
+    ],
+    "src_url": [
+      "https://github.com/dsecuredcom/yataf"
+    ],
+    "tag": [
+      "bugbounty"
+    ],
+    "version": "HEAD-6b851f9-240911T115302"
   },
   {
     "_disabled": "false",
@@ -37564,7 +40285,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.7b"
+    "version": "1.7.1b"
   },
   {
     "_disabled": "false",
@@ -37686,6 +40407,65 @@
       "process-monitor"
     ],
     "version": "HEAD-a867d77-241231T155951"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zfind",
+    "pkg_family": "zfind",
+    "pkg_id": "github.com.laktak.zfind",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/laktak-zfind/zfind/zfind",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zfind/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Search for files (even inside tar/zip/7z/rar) using a SQL-WHERE filter",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "zfind",
+          "zfind-bin"
+        ]
+      },
+      "homebrew": [
+        "zfind"
+      ],
+      "nixpkgs": [
+        "zfind"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zfind/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/laktak/zfind"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/laktak/zfind"
+    ],
+    "provides": [
+      "zfind"
+    ],
+    "repology": [
+      "zfind"
+    ],
+    "src_url": [
+      "https://github.com/laktak/zfind"
+    ],
+    "tag": [
+      "sql"
+    ],
+    "version": "HEAD-f548c97-241106T221249"
   },
   {
     "_disabled": "false",

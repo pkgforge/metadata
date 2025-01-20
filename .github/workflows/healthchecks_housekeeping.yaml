@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   schedule:
   #  - cron: "45 03 * * *"  # 03:45 AM UTC --> 09:30 AM Morning NPT
-   - cron: "0 */12 * * *"  # Every 12 Hrs
+   - cron: "0 */5 * * *"  # Every 05 Hrs
 
 #env:
   #GHCR_TOKEN: "${{ secrets.GHCR_TOKEN }}"
@@ -132,7 +132,7 @@ jobs:
           jq -n '{total: ([inputs | .[] | select(.sum == "total").total] | add)}' "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | jq . > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL_CACHE.json"
           ##Gif
           cd "${GITHUB_WORKSPACE}/main"
-          sed -E "s~(https://bin\.pkgforge\.dev/list\.gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g" -i "${GITHUB_WORKSPACE}/main/README.md"
+          sed -E "s~(https://soar\.pkgforge\.dev/gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g" -i "${GITHUB_WORKSPACE}/main/README.md"
         continue-on-error: true
 
       - name: Get DateTime & Purge files (=> 95 MB)

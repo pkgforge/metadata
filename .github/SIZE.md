@@ -73,15 +73,15 @@
 648K   │ │ ├── INDEX.db
 300K   │ │ ├── pub_issues_packages.txt
 172K   │ │ ├── INDEX.json.cba
+128K   │ │ ├── GH_REPO.md
 120K   │ │ ├── INDEX.db.cba
 116K   │ │ ├── INDEX.json.xz
 112K   │ │ ├── INDEX.json.zstd
-112K   │ │ ├── GH_REPO.md
  96K   │ │ ├── INDEX.db.zstd
  92K   │ │ ├── INDEX.db.xz
  48K   │ │ ├── DIFF_bincache.json
+ 28K   │ │ ├── URLS.txt
  28K   │ │ ├── GH_REPO_ARCHIVED.md
- 24K   │ │ ├── URLS.txt
 4.0K   │ │ ├── TOTAL_CACHE.txt
 4.0K   │ │ ├── TOTAL_CACHE.json
 4.0K   │ │ ├── TOTAL.json

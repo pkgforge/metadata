@@ -16,15 +16,16 @@ TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: 
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
+pushd "${TMPDIR}"
 ##Run Docker
  docker stop "debian-guix" 2>/dev/null ; docker rm "debian-guix" 2>/dev/null
- docker run --privileged --net="host" --name "debian-guix" -e GITHUB_TOKEN="${GITHUB_TOKEN}" -e PARALLEL_LIMIT="${PARALLEL_LIMIT}" "ghcr.io/pkgforge/debian-guix:$(uname -m)" \
+ docker run --privileged --net="host" --name "debian-guix" -e GITHUB_TOKEN="${GITHUB_TOKEN}" -e PARALLEL_LIMIT="${PARALLEL_LIMIT}" "ghcr.io/pkgforge/devscripts/debian-guix:$(uname -m)" \
  bash -l -c 'bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/soarpkgs/scripts/gen_meta_index.sh")'
 ##Copy to ${SYSTMP}
  docker cp "debian-guix:/tmp/INDEX.json" "${TMPDIR}/."
  sudo chown -Rv "$(whoami):$(whoami)" "${TMPDIR}" && chmod -Rv 755 "${TMPDIR}"
 ##Check 
- if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/INDEX.json" | grep -iv 'null' | wc -l)" -le 100 ]]; then
+ if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/INDEX.json" | grep -iv 'null' | wc -l)" -le 500 ]]; then
     echo -e "\n[-] FATAL: Failed to Generate Soarpkgs MetaData\n"
     exit 1
  else

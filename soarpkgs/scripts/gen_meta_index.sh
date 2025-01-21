@@ -49,6 +49,11 @@ else
    echo -e "\n[-] GITHUB_TOKEN is NOT Exported"  
    exit 1
 fi
+if [ -n "${PARALLEL_LIMIT+x}" ] && [[ "${PARALLEL_LIMIT}" =~ ^[^[:space:]]+$ ]]; then
+  echo "[+] PARALLEL_LIMIT=${PARALLEL_LIMIT}"
+else
+  unset PARALLEL_LIMIT
+fi
 ##Get Files
 #Bincache
 curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json" | jq -c '.[] | {pkg_family: .pkg_family, ghcr_pkg: (.ghcr_pkg | split(":")[0]), build_script: .build_script}' > "${TMPDIR}/bincache.json.tmp"

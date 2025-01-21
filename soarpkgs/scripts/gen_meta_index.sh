@@ -29,7 +29,7 @@ chmod +x "${TMPDIR}/sbuild-linter"
   "/nix/nix-installer" uninstall --no-confirm 2>/dev/null
   curl -qfsSL "https://install.determinate.systems/nix" | bash -s -- install linux --init none --extra-conf "filter-syscalls = false" --no-confirm
   source "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
-  sudo chown --recursive "runner" "/nix"
+  sudo chown --recursive "$(whoami)" "/nix"
   echo "root    ALL=(ALL:ALL) ALL" | sudo tee -a "/etc/sudoers"
   #Test
   if ! command -v nix &> /dev/null; then

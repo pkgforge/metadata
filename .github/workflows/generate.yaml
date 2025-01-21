@@ -219,3 +219,111 @@ jobs:
           subject-path: "${{ matrix.file }}"
           show-summary: true
         continue-on-error: true
+
+  moderate:
+    needs: [generate]
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    permissions:
+      attestations: write   
+      contents: write
+      id-token: write
+      issues: write
+      packages: write
+      statuses: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: main
+          filter: "blob:none"
+
+      - name: Install Addons
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          #bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
+          ##CoreUtils
+          sudo apt update -y
+          sudo apt install bc coreutils curl dos2unix fdupes jq moreutils wget -y
+          sudo apt-get install apt-transport-https apt-utils ca-certificates coreutils dos2unix gnupg2 jq moreutils p7zip-full rename rsync software-properties-common texinfo tmux util-linux wget -y 2>/dev/null ; sudo apt-get update -y 2>/dev/null
+        continue-on-error: true
+
+      - name: Generate Diffs (BinCache)
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          ##Version Diff (aarch64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json") '
+          .[] | 
+          select(
+            .pkg_id as $id | 
+            .version as $ver |
+            ($aarch64[0][] | select(.pkg_id == $id).version) as $x86_ver |
+            $x86_ver == null or $ver != $x86_ver
+          )' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_aarch64-Linux.json"
+          ##Version Diff (x86_64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json") '
+          .[] | 
+          select(
+            .pkg_id as $id | 
+            .version as $ver |
+            ($x86_64[0][] | select(.pkg_id == $id).version) as $x86_ver |
+            $x86_ver == null or $ver != $x86_ver
+          )' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_x86_64-Linux.json"
+        continue-on-error: true
+
+      - name: Generate Diffs (PkgCache)
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          ##Version Diff (aarch64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json") '
+          .[] | 
+          select(
+            .pkg_id as $id | 
+            .version as $ver |
+            ($aarch64[0][] | select(.pkg_id == $id).version) as $x86_ver |
+            $x86_ver == null or $ver != $x86_ver
+          )' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_aarch64-Linux.json"
+          ##Version Diff (x86_64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json") '
+          .[] | 
+          select(
+            .pkg_id as $id | 
+            .version as $ver |
+            ($x86_64[0][] | select(.pkg_id == $id).version) as $x86_ver |
+            $x86_ver == null or $ver != $x86_ver
+          )' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_x86_64-Linux.json"
+        continue-on-error: true
+
+      - name: Get DateTime & Purge files (=> 95 MB)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          UTC_TIME="$(TZ='UTC' date +'%Y-%m-%d (%I:%M:%S %p)')"
+          echo "UTC_TIME=${UTC_TIME}" >> "${GITHUB_ENV}"
+          #Sync
+          cd "${GITHUB_WORKSPACE}/main"
+          git pull origin main --no-edit 2>/dev/null
+          #Purge
+          find "${GITHUB_WORKSPACE}/main" -path "${GITHUB_WORKSPACE}/main/.git" -prune -o -type f -size +95M -exec rm -rvf "{}" + 2>/dev/null
+        continue-on-error: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./main
+          commit_user_name: Azathothas
+          commit_user_email: AjamX101@gmail.com
+          commit_message: "✅ Updated Metadata [Diff] ♻️"
+          #push_options: '--force'
+        continue-on-error: true

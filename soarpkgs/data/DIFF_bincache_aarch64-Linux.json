@@ -246,8 +246,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -274,7 +274,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -293,7 +293,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -309,7 +308,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -390,18 +389,79 @@
   },
   {
     "_disabled": "false",
+    "pkg": "binocle",
+    "pkg_family": "binocle",
+    "pkg_id": "github.com.sharkdp.binocle",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sharkdp-binocle/binocle/binocle",
+    "bincache": "ghcr.io/pkgforge/bincache/binocle/official/binocle",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/binocle/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A graphical tool to visualize binary data",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "binocle-git"
+        ],
+        "extra": [
+          "binocle"
+        ]
+      },
+      "nixpkgs": [
+        "binocle"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/binocle/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sharkdp/binocle"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sharkdp/binocle"
+    ],
+    "provides": [
+      "binocle"
+    ],
+    "repology": [
+      "binocle"
+    ],
+    "src_url": [
+      "https://github.com/sharkdp/binocle"
+    ],
+    "tag": [
+      "binary-data",
+      "reverse-engineering"
+    ],
+    "version": "HEAD-1014e8b-250121T221605"
+  },
+  {
+    "_disabled": "false",
     "pkg": "caddy",
     "pkg_family": "caddy",
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -424,7 +484,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -444,7 +504,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -457,7 +517,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -764,6 +824,51 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gocryptfs",
+    "pkg_family": "gocryptfs",
+    "pkg_id": "github.com.rfjakob.gocryptfs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rfjakob-gocryptfs/gocryptfs/gocryptfs",
+    "bincache": "ghcr.io/pkgforge/bincache/gocryptfs/official/gocryptfs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gocryptfs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Encrypted overlay filesystem written in Go",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gocryptfs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rfjakob/gocryptfs"
+    ],
+    "provides": [
+      "gocryptfs",
+      "gocryptfs-xray"
+    ],
+    "repology": [
+      "gocryptfs"
+    ],
+    "src_url": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "tag": [
+      "encryption",
+      "filesystem"
+    ],
+    "version": "HEAD-1053662-250119T182644"
+  },
+  {
+    "_disabled": "false",
     "pkg": "noseyparker",
     "pkg_family": "noseyparker",
     "pkg_id": "github.com.praetorian-inc.noseyparker",
@@ -887,7 +992,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-0666b37-250121T125452"
+    "version": "HEAD-cdb082e-250121T153939"
   },
   {
     "_disabled": "false",
@@ -1072,91 +1177,5 @@
       "package-manager"
     ],
     "version": "HEAD-63cf070-250121T213535"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "vim",
-    "pkg_family": "vim",
-    "pkg_id": "nixpkgs.vim",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-vim/vim/vim",
-    "bincache": "ghcr.io/pkgforge/bincache/vim/nixpkgs/ex",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vim/static.nixpkgs.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "VIsual editor iMproved (VIM) & related Tools",
-      "ex": "Vim in Ex mode [vim]",
-      "rview": "Vim in View Mode with restrictions [vim]",
-      "rvim": "Vim in Read-Only with restrictions [vim]",
-      "vi": "VIsual editor iMproved [alias=vim] [vim]",
-      "view": "Vim in Read-Only Mode [vim]",
-      "vim": "VIsual editor iMproved [alias=vi] [vim]",
-      "vimdiff": "Edit between 2 & 8 versions of a file with Vim and show differences [vim]",
-      "vimtutor": "The VIM Tutor for learning VIM [vim]",
-      "xxd": "Make a hex dump or do the reverse [vim]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "vim"
-      ],
-      "archlinux": {
-        "aur": [
-          "vim-git"
-        ],
-        "extra": [
-          "vim"
-        ]
-      },
-      "debian": [
-        "vim"
-      ],
-      "nixpkgs": [
-        "vim"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vim/static.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://www.vim.org",
-      "https://vim.sourceforge.io"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
-    ],
-    "provides": [
-      "ex",
-      "rview",
-      "rvim",
-      "vi",
-      "view",
-      "vim",
-      "vimdiff",
-      "vimtutor",
-      "xxd"
-    ],
-    "repology": [
-      "vim"
-    ],
-    "src_url": [
-      "https://github.com/vim/vim"
-    ],
-    "tag": [
-      "Editor",
-      "text-editor"
-    ],
-    "version": "9.1.0990"
   }
 ]

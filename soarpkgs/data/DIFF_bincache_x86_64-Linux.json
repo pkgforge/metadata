@@ -246,7 +246,6 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
@@ -310,6 +309,67 @@
       "downloader"
     ],
     "version": "250118T141142"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "binocle",
+    "pkg_family": "binocle",
+    "pkg_id": "github.com.sharkdp.binocle",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sharkdp-binocle/binocle/binocle",
+    "bincache": "ghcr.io/pkgforge/bincache/binocle/official/binocle",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/binocle/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A graphical tool to visualize binary data",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "binocle-git"
+        ],
+        "extra": [
+          "binocle"
+        ]
+      },
+      "nixpkgs": [
+        "binocle"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/binocle/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sharkdp/binocle"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sharkdp/binocle"
+    ],
+    "provides": [
+      "binocle"
+    ],
+    "repology": [
+      "binocle"
+    ],
+    "src_url": [
+      "https://github.com/sharkdp/binocle"
+    ],
+    "tag": [
+      "binary-data",
+      "reverse-engineering"
+    ],
+    "version": "HEAD-1014e8b-250121T221605"
   },
   {
     "_disabled": "false",
@@ -732,6 +792,121 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gocryptfs",
+    "pkg_family": "gocryptfs",
+    "pkg_id": "github.com.rfjakob.gocryptfs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rfjakob-gocryptfs/gocryptfs/gocryptfs",
+    "bincache": "ghcr.io/pkgforge/bincache/gocryptfs/official/gocryptfs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gocryptfs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Encrypted overlay filesystem written in Go",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gocryptfs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rfjakob/gocryptfs"
+    ],
+    "provides": [
+      "gocryptfs",
+      "gocryptfs-xray"
+    ],
+    "repology": [
+      "gocryptfs"
+    ],
+    "src_url": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "tag": [
+      "encryption",
+      "filesystem"
+    ],
+    "version": "HEAD-1053662-250119T182644"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kubo",
+    "pkg_family": "kubo",
+    "pkg_id": "github.com.ipfs.kubo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ipfs-kubo/kubo/kubo",
+    "bincache": "ghcr.io/pkgforge/bincache/kubo/official/ipfswatch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/kubo/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for Inter Platnetary File System (IPFS)",
+      "ipfswatch": "Tool to Monitor a directory and adds changes to IPFS",
+      "kubo": "Official Inter Platnetary File System (IPFS) CLI"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "go-ipfs",
+        "kubo"
+      ],
+      "archlinux": {
+        "aur": [
+          "kubo-git"
+        ],
+        "extra": [
+          "kubo"
+        ]
+      },
+      "nixpkgs": [
+        "ipfs",
+        "kubo"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/kubo/static.official.source.yaml",
+    "homepage": [
+      "https://ipfs.io",
+      "https://docs.ipfs.tech"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ipfs/kubo"
+    ],
+    "provides": [
+      "ipfswatch",
+      "kubo"
+    ],
+    "repology": [
+      "kubo"
+    ],
+    "src_url": [
+      "https://github.com/ipfs/kubo"
+    ],
+    "tag": [
+      "ipfs"
+    ],
+    "version": "HEAD-104b661-250121T130032"
+  },
+  {
+    "_disabled": "false",
     "pkg": "noseyparker",
     "pkg_family": "noseyparker",
     "pkg_id": "github.com.praetorian-inc.noseyparker",
@@ -855,7 +1030,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-0666b37-250121T125452"
+    "version": "HEAD-cdb082e-250121T153939"
   },
   {
     "_disabled": "false",

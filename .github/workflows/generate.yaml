@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   schedule:
   # - cron: "0 3 * * *"  #UTC 03:00 AM --> 08:45 AM NPT @everyday
-   - cron: "0 */6 * * *" #every 6 hrs
+   - cron: "0 */1 * * *" #every 1 hr
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -43,7 +43,8 @@ jobs:
             file: "/tmp/pkgcache_x86_64-Linux.json"
 
           - repo: "soarpkgs"
-            script: "${GITHUB_WORKSPACE}/main/soarpkgs/scripts/gen_meta.sh"
+            #script: "${GITHUB_WORKSPACE}/main/soarpkgs/scripts/gen_meta.sh"
+            script: "${GITHUB_WORKSPACE}/main/soarpkgs/scripts/gen_meta_docker.sh"
             arch: "MULTI"
             file: "/tmp/INDEX.json"
 

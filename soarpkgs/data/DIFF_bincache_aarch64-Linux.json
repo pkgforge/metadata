@@ -246,8 +246,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -274,7 +274,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -293,7 +293,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -309,7 +308,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -395,13 +394,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -424,7 +423,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -444,7 +443,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy"
+      "caddy:caddy-beta"
     ],
     "repology": [
       "caddy"
@@ -457,7 +456,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.1"
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -643,298 +642,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "daytona",
-    "pkg_family": "daytona",
-    "pkg_id": "github.com.daytonaio.daytona",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/daytonaio-daytona/daytona/daytona",
-    "bincache": "ghcr.io/pkgforge/bincache/daytona/official/daytona",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/daytona/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Open Source Dev Environment Manager",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "daytona"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/daytona/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/daytonaio/daytona"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/daytonaio/daytona"
-    ],
-    "provides": [
-      "daytona"
-    ],
-    "repology": [
-      "daytona"
-    ],
-    "src_url": [
-      "https://github.com/daytonaio/daytona"
-    ],
-    "tag": [
-      "devenv"
-    ],
-    "version": "HEAD-2f0db3c-250121T113413"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "eza",
-    "pkg_family": "eza",
-    "pkg_id": "github.com.eza-community.eza",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/community-eza/eza/eza",
-    "bincache": "ghcr.io/pkgforge/bincache/eza/official/eza",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/eza/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A modern replacement for ls",
-    "distro_pkg": {
-      "alpine": [
-        "eza"
-      ],
-      "archlinux": {
-        "aur": [
-          "eza-git"
-        ],
-        "extra": [
-          "eza"
-        ]
-      },
-      "debian": [
-        "rust-eza"
-      ],
-      "nixpkgs": [
-        "eza"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/eza/static.official.source.yaml",
-    "homepage": [
-      "https://eza.rocks",
-      "https://github.com/eza-community/eza"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/eza-community/eza"
-    ],
-    "repology": [
-      "eza"
-    ],
-    "src_url": [
-      "https://github.com/eza-community/eza"
-    ],
-    "tag": [
-      "ls"
-    ],
-    "version": "HEAD-72c2c74-250121T101736"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "fblog",
-    "pkg_family": "fblog",
-    "pkg_id": "github.com.brocode.fblog",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/brocode-fblog/fblog/fblog",
-    "bincache": "ghcr.io/pkgforge/bincache/fblog/official/fblog",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fblog/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Small command-line JSON Log viewer",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "fblog",
-          "fblog-bin",
-          "fblog-git"
-        ]
-      },
-      "nixpkgs": [
-        "fblog"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fblog/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/brocode/fblog"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/brocode/fblog"
-    ],
-    "repology": [
-      "fblog"
-    ],
-    "src_url": [
-      "https://github.com/brocode/fblog"
-    ],
-    "tag": [
-      "json",
-      "log"
-    ],
-    "version": "HEAD-9c37db7-250121T132252"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "ghfetch",
-    "pkg_family": "ghfetch",
-    "pkg_id": "github.com.orangekame3.ghfetch",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/orangekame3-ghfetch/ghfetch/ghfetch",
-    "bincache": "ghcr.io/pkgforge/bincache/ghfetch/official/ghfetch",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ghfetch/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "CLI tool to fetch GitHub user information and show like neofetch",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "ghfetch",
-          "ghfetch-git"
-        ]
-      },
-      "nixpkgs": [
-        "ghfetch"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ghfetch/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/orangekame3/ghfetch"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/orangekame3/ghfetch"
-    ],
-    "provides": [
-      "ghfetch"
-    ],
-    "repology": [
-      "ghfetch"
-    ],
-    "src_url": [
-      "https://github.com/orangekame3/ghfetch"
-    ],
-    "tag": [
-      "github"
-    ],
-    "version": "HEAD-9328780-250121T180315"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "gitleaks",
-    "pkg_family": "gitleaks",
-    "pkg_id": "github.com.gitleaks.gitleaks",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gitleaks-gitleaks/gitleaks/gitleaks",
-    "bincache": "ghcr.io/pkgforge/bincache/gitleaks/official/gitleaks",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gitleaks/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Scan git repos (or files) for secrets using regex and entropy",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "gitleaks"
-        ]
-      },
-      "debian": [
-        "gitleaks"
-      ],
-      "homebrew": [
-        "gitleaks"
-      ],
-      "nixpkgs": [
-        "gitleaks"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gitleaks/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/gitleaks/gitleaks"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/gitleaks/gitleaks"
-    ],
-    "provides": [
-      "gitleaks"
-    ],
-    "repology": [
-      "gitleaks"
-    ],
-    "src_url": [
-      "https://github.com/gitleaks/gitleaks"
-    ],
-    "tag": [
-      "secret",
-      "security"
-    ],
-    "version": "HEAD-a43dc0d-250121T082924"
-  },
-  {
-    "_disabled": "false",
     "pkg": "gitui",
     "pkg_family": "gitui",
     "pkg_id": "github.com.extrawurst.gitui",
@@ -993,360 +700,6 @@
       "tui"
     ],
     "version": "HEAD-58b4e2c-250121T120756"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "gum",
-    "pkg_family": "gum",
-    "pkg_id": "github.com.charmbracelet.gum",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/charmbracelet-gum/gum/gum",
-    "bincache": "ghcr.io/pkgforge/bincache/gum/official/gum",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gum/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A tool for creating minimal interactive TUIs for shell scripts",
-    "distro_pkg": {
-      "alpine": [
-        "gum"
-      ],
-      "archlinux": {
-        "aur": [
-          "gum-git"
-        ],
-        "extra": [
-          "gum"
-        ]
-      },
-      "nixpkgs": [
-        "gum"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gum/static.official.source.yaml",
-    "homepage": [
-      "https://charm.sh",
-      "https://github.com/charmbracelet/gum"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/charmbracelet/gum"
-    ],
-    "repology": [
-      "gum-shell-tool"
-    ],
-    "src_url": [
-      "https://github.com/charmbracelet/gum"
-    ],
-    "tag": [
-      "bash",
-      "shell",
-      "tui"
-    ],
-    "version": "HEAD-65516a6-250121T093438"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "hcloud",
-    "pkg_family": "hcloud",
-    "pkg_id": "github.com.hetznercloud.cli",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hetznercloud-cli/hcloud/hcloud",
-    "bincache": "ghcr.io/pkgforge/bincache/hcloud/official/hcloud",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hcloud/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A command-line interface for Hetzner Cloud",
-    "distro_pkg": {
-      "alpine": [
-        "hcloud"
-      ],
-      "archlinux": {
-        "extra": [
-          "hcloud"
-        ]
-      },
-      "homebrew": [
-        "hcloud"
-      ],
-      "nixpkgs": [
-        "hcloud"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hcloud/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/hetznercloud/cli"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/hetznercloud/cli"
-    ],
-    "provides": [
-      "hcloud"
-    ],
-    "repology": [
-      "hcloud"
-    ],
-    "src_url": [
-      "https://github.com/hetznercloud/cli"
-    ],
-    "tag": [
-      "hetzner"
-    ],
-    "version": "HEAD-fcabc54-250121T182004"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "jujutsu",
-    "pkg_family": "jujutsu",
-    "pkg_id": "github.com.martinvonz.jj",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/martinvonz-jj/jujutsu/jujutsu",
-    "bincache": "ghcr.io/pkgforge/bincache/jujutsu/official/jj",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jujutsu/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Jujutsu is a Git-compatible DVCS that is both simple and powerful",
-    "distro_pkg": {
-      "alpine": [
-        "jujutsu"
-      ],
-      "archlinux": {
-        "aur": [
-          "jujutsu-git"
-        ],
-        "extra": [
-          "jujutsu"
-        ]
-      },
-      "nixpkgs": [
-        "jujutsu"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jujutsu/static.official.source.yaml",
-    "homepage": [
-      "https://jj-vcs.github.io/jj",
-      "https://github.com/jj-vcs/jj"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache",
-      "BSD",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jj-vcs/jj"
-    ],
-    "provides": [
-      "jj",
-      "jujutsu"
-    ],
-    "repology": [
-      "jujutsu"
-    ],
-    "src_url": [
-      "https://github.com/jj-vcs/jj"
-    ],
-    "tag": [
-      "git",
-      "vcs"
-    ],
-    "version": "HEAD-cff86ed-250121T164620"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mapcidr",
-    "pkg_family": "mapcidr",
-    "pkg_id": "github.com.projectdiscovery.mapcidr",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-mapcidr/mapcidr/mapcidr",
-    "bincache": "ghcr.io/pkgforge/bincache/mapcidr/official/mapcidr",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mapcidr/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Utility program to perform multiple operations for a given subnet/CIDR ranges",
-    "distro_pkg": {
-      "homebrew": [
-        "mapcidr"
-      ],
-      "nixpkgs": [
-        "mapcidr"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mapcidr/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/projectdiscovery/mapcidr"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/mapcidr"
-    ],
-    "repology": [
-      "mapcidr"
-    ],
-    "src_url": [
-      "https://github.com/projectdiscovery/mapcidr"
-    ],
-    "tag": [
-      "cidr",
-      "subnet"
-    ],
-    "version": "HEAD-cb576b6-250119T235547"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mc",
-    "pkg_family": "mc",
-    "pkg_id": "github.com.minio.mc",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/minio-mc/mc/mc",
-    "bincache": "ghcr.io/pkgforge/bincache/mc/official/mc",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mc/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Unix like utilities for object store",
-    "distro_pkg": {
-      "homebrew": [
-        "minio-mc"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mc/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/minio/mc"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/minio/mc"
-    ],
-    "repology": [
-      "minio-mc"
-    ],
-    "src_url": [
-      "https://github.com/minio/mc"
-    ],
-    "tag": [
-      "bucket",
-      "s3",
-      "storage"
-    ],
-    "version": "HEAD-0019b7b-250121T021900"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "naabu",
-    "pkg_family": "naabu",
-    "pkg_id": "github.com.projectdiscovery.naabu",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-naabu/naabu/naabu",
-    "bincache": "ghcr.io/pkgforge/bincache/naabu/official/naabu",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/naabu/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A fast port scanner written in go with a focus on reliability and simplicity",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "naabu",
-          "naabu-bin",
-          "naabu-git"
-        ]
-      },
-      "homebrew": [
-        "naabu"
-      ],
-      "nixpkgs": [
-        "naabu"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/naabu/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/projectdiscovery/naabu"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL3",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/naabu"
-    ],
-    "repology": [
-      "naabu"
-    ],
-    "src_url": [
-      "https://github.com/projectdiscovery/naabu"
-    ],
-    "tag": [
-      "nmap",
-      "security"
-    ],
-    "version": "HEAD-a62d7c4-250120T135807"
   },
   {
     "_disabled": "false",
@@ -1477,60 +830,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "otree",
-    "pkg_family": "otree",
-    "pkg_id": "github.com.fioncat.otree",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fioncat-otree/otree/otree",
-    "bincache": "ghcr.io/pkgforge/bincache/otree/official/otree",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/otree/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A command line tool to view objects (JSON/YAML/TOML) in TUI tree widget",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "otree",
-          "otree-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/otree/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/fioncat/otree"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fioncat/otree"
-    ],
-    "repology": [
-      "otree"
-    ],
-    "src_url": [
-      "https://github.com/fioncat/otree"
-    ],
-    "tag": [
-      "json",
-      "toml",
-      "treeview",
-      "yaml"
-    ],
-    "version": "HEAD-c8b2944-250121T110938"
-  },
-  {
-    "_disabled": "false",
     "pkg": "pls",
     "pkg_family": "pls",
     "pkg_id": "github.com.pls-rs.pls",
@@ -1583,7 +882,7 @@
     "tag": [
       "ls"
     ],
-    "version": "HEAD-4929af0-250121T043508"
+    "version": "HEAD-75d72e3-250122T003954"
   },
   {
     "_disabled": "false",

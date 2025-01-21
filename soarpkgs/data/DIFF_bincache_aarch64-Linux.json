@@ -511,13 +511,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -540,7 +540,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -560,7 +560,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -573,7 +573,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -696,6 +696,66 @@
       "git-commit"
     ],
     "version": "HEAD-f8cfa57-250111T105227"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "cotp",
+    "pkg_family": "cotp",
+    "pkg_id": "github.com.replydev.cotp",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/replydev-cotp/cotp/cotp",
+    "bincache": "ghcr.io/pkgforge/bincache/cotp/official/cotp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/cotp/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Encrypted CLI TOTP/HOTP Authenticator",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "cotp-git"
+        ],
+        "extra": [
+          "cotp"
+        ]
+      },
+      "nixpkgs": [
+        "cotp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/cotp/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/replydev/cotp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0-only"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/replydev/cotp"
+    ],
+    "provides": [
+      "cotp"
+    ],
+    "repology": [
+      "cotp"
+    ],
+    "src_url": [
+      "https://github.com/replydev/cotp"
+    ],
+    "tag": [
+      "authy",
+      "totp"
+    ],
+    "version": "HEAD-a50f561-250121T164929"
   },
   {
     "_disabled": "false",
@@ -1174,6 +1234,68 @@
   },
   {
     "_disabled": "false",
+    "pkg": "hcloud",
+    "pkg_family": "hcloud",
+    "pkg_id": "github.com.hetznercloud.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hetznercloud-cli/hcloud/hcloud",
+    "bincache": "ghcr.io/pkgforge/bincache/hcloud/official/hcloud",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hcloud/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line interface for Hetzner Cloud",
+    "distro_pkg": {
+      "alpine": [
+        "hcloud"
+      ],
+      "archlinux": {
+        "extra": [
+          "hcloud"
+        ]
+      },
+      "homebrew": [
+        "hcloud"
+      ],
+      "nixpkgs": [
+        "hcloud"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hcloud/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/hetznercloud/cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/hetznercloud/cli"
+    ],
+    "provides": [
+      "hcloud"
+    ],
+    "repology": [
+      "hcloud"
+    ],
+    "src_url": [
+      "https://github.com/hetznercloud/cli"
+    ],
+    "tag": [
+      "hetzner"
+    ],
+    "version": "HEAD-4535f26-250121T155215"
+  },
+  {
+    "_disabled": "false",
     "pkg": "jujutsu",
     "pkg_family": "jujutsu",
     "pkg_id": "github.com.martinvonz.jj",
@@ -1527,7 +1649,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-0e41868-250121T203534"
+    "version": "HEAD-379d893-250121T111140"
   },
   {
     "_disabled": "false",
@@ -2440,7 +2562,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-f8573a1-250120T190048"
+    "version": "HEAD-63cf070-250121T213535"
   },
   {
     "_disabled": "false",

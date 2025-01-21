@@ -246,8 +246,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -274,7 +274,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -293,7 +293,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -309,7 +308,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -838,6 +837,68 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gum",
+    "pkg_family": "gum",
+    "pkg_id": "github.com.charmbracelet.gum",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/charmbracelet-gum/gum/gum",
+    "bincache": "ghcr.io/pkgforge/bincache/gum/official/gum",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gum/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A tool for creating minimal interactive TUIs for shell scripts",
+    "distro_pkg": {
+      "alpine": [
+        "gum"
+      ],
+      "archlinux": {
+        "aur": [
+          "gum-git"
+        ],
+        "extra": [
+          "gum"
+        ]
+      },
+      "nixpkgs": [
+        "gum"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gum/static.official.source.yaml",
+    "homepage": [
+      "https://charm.sh",
+      "https://github.com/charmbracelet/gum"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/charmbracelet/gum"
+    ],
+    "repology": [
+      "gum-shell-tool"
+    ],
+    "src_url": [
+      "https://github.com/charmbracelet/gum"
+    ],
+    "tag": [
+      "bash",
+      "shell",
+      "tui"
+    ],
+    "version": "HEAD-05c4bb9-250121T193750"
+  },
+  {
+    "_disabled": "false",
     "pkg": "kubo",
     "pkg_family": "kubo",
     "pkg_id": "github.com.ipfs.kubo",
@@ -1345,5 +1406,71 @@
       "manager"
     ],
     "version": "HEAD-245fb03-250120T185900"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yq",
+    "pkg_family": "yq",
+    "pkg_id": "github.com.mikefarah.yq",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mikefarah-yq/yq/yq",
+    "bincache": "ghcr.io/pkgforge/bincache/yq/official/yq",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yq/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Portable command-line YAML, JSON, XML, CSV, TOML and properties processor",
+    "distro_pkg": {
+      "alpine": [
+        "yq",
+        "yq-go"
+      ],
+      "archlinux": {
+        "extra": [
+          "go-yq"
+        ]
+      },
+      "homebrew": [
+        "yq"
+      ],
+      "nixpkgs": [
+        "yq-go"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yq/static.official.source.yaml",
+    "homepage": [
+      "https://mikefarah.gitbook.io/yq",
+      "https://github.com/mikefarah/yq"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0",
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mikefarah/yq"
+    ],
+    "repology": [
+      "yq-mikefarah"
+    ],
+    "src_url": [
+      "https://github.com/mikefarah/yq"
+    ],
+    "tag": [
+      "json",
+      "jq",
+      "toml",
+      "yaml"
+    ],
+    "version": "HEAD-1508f1f-250122T095351"
   }
 ]

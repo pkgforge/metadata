@@ -260,22 +260,22 @@ jobs:
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
           jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json") '
           .[] | 
-          select(
+          select(.pkg_type == "static" and (
             .pkg_id as $id | 
             .version as $ver |
-            ($aarch64[0][] | select(.pkg_id == $id).version) as $x86_ver |
-            $x86_ver == null or $ver != $x86_ver
-          )' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_aarch64-Linux.json"
+            ($aarch64[0][] | select(.pkg_id == $id).version) as $aarch64_ver |
+            $aarch64_ver == null or $ver != $aarch64_ver
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_aarch64-Linux.json"
           ##Version Diff (x86_64-Linux)
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
           jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json") '
           .[] | 
-          select(
+          select(.pkg_type == "static" and (
             .pkg_id as $id | 
             .version as $ver |
             ($x86_64[0][] | select(.pkg_id == $id).version) as $x86_ver |
             $x86_ver == null or $ver != $x86_ver
-          )' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_x86_64-Linux.json"
+          ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_x86_64-Linux.json"
         continue-on-error: true
 
       - name: Generate Diffs (PkgCache)
@@ -287,22 +287,22 @@ jobs:
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
           jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json") '
           .[] | 
-          select(
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (
             .pkg_id as $id | 
             .version as $ver |
-            ($aarch64[0][] | select(.pkg_id == $id).version) as $x86_ver |
-            $x86_ver == null or $ver != $x86_ver
-          )' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_aarch64-Linux.json"
+            ($aarch64[0][] | select(.pkg_id == $id).version) as $aarch64_ver |
+            $aarch64_ver == null or $ver != $aarch64_ver
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_aarch64-Linux.json"
           ##Version Diff (x86_64-Linux)
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
           jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json") '
           .[] | 
-          select(
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (
             .pkg_id as $id | 
             .version as $ver |
             ($x86_64[0][] | select(.pkg_id == $id).version) as $x86_ver |
             $x86_ver == null or $ver != $x86_ver
-          )' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_x86_64-Linux.json"
+          ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_x86_64-Linux.json"
         continue-on-error: true
 
       - name: Get DateTime & Purge files (=> 95 MB)

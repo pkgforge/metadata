@@ -1,6 +1,64 @@
 [
   {
     "_disabled": "false",
+    "pkg": "alist",
+    "pkg_family": "alist",
+    "pkg_id": "github.com.alist-org.alist",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/org-alist/alist/alist",
+    "bincache": "ghcr.io/pkgforge/bincache/alist/official/alist",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/alist/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A file list/WebDAV program that supports multiple storages",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "alist",
+          "alist-bin"
+        ]
+      },
+      "nixpkgs": [
+        "alist"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/alist/static.official.stable.yaml",
+    "homepage": [
+      "https://alist.nn.ci",
+      "https://github.com/alist-org/alist"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "AGPL-3.0-or-later"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/alist-org/alist"
+    ],
+    "provides": [
+      "alist"
+    ],
+    "repology": [
+      "alist"
+    ],
+    "src_url": [
+      "https://github.com/alist-org/alist"
+    ],
+    "tag": [
+      "file-server"
+    ],
+    "version": "v3.41.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "almalinux",
     "pkg_family": "almalinux",
     "pkg_id": "github.com.AlmaLinux.docker-images",
@@ -246,7 +304,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -273,7 +332,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -292,7 +351,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -308,7 +366,60 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bearer",
+    "pkg_family": "bearer",
+    "pkg_id": "github.com.Bearer.bearer",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bearer-bearer/bearer/bearer",
+    "bincache": "ghcr.io/pkgforge/bincache/bearer/official/bearer",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bearer/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Code security scanning tool (SAST)",
+    "distro_pkg": {
+      "nixpkgs": [
+        "bearer"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bearer/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/Bearer/bearer"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Elastic-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Bearer/bearer"
+    ],
+    "provides": [
+      "bearer"
+    ],
+    "repology": [
+      "bearer"
+    ],
+    "src_url": [
+      "https://github.com/Bearer/bearer"
+    ],
+    "tag": [
+      "sast",
+      "security",
+      "static-analysis"
+    ],
+    "version": "HEAD-a452532-250122T155001"
   },
   {
     "_disabled": "false",
@@ -564,13 +675,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -593,7 +704,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -613,7 +724,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -626,7 +737,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -919,6 +1030,50 @@
       "git-commit"
     ],
     "version": "HEAD-f8cfa57-250111T105227"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "csprecon",
+    "pkg_family": "csprecon",
+    "pkg_id": "github.com.edoardottt.csprecon",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/edoardottt-csprecon/csprecon/csprecon",
+    "bincache": "ghcr.io/pkgforge/bincache/csprecon/official/csprecon",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/csprecon/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Discover new target domains using Content Security Policy",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/csprecon/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/edoardottt/csprecon"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/edoardottt/csprecon"
+    ],
+    "provides": [
+      "csprecon"
+    ],
+    "repology": [
+      "csprecon"
+    ],
+    "src_url": [
+      "https://github.com/edoardottt/csprecon"
+    ],
+    "tag": [
+      "bugbounty",
+      "security"
+    ],
+    "version": "HEAD-837e516-250122T160803"
   },
   {
     "_disabled": "false",
@@ -4361,6 +4516,51 @@
   },
   {
     "_disabled": "false",
+    "pkg": "lklfuse",
+    "pkg_family": "lklfuse",
+    "pkg_id": "ppkg.lklfuse",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-lklfuse/lklfuse/lklfuse",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lklfuse/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Use LKL to mount Linux-supported filesystems in userspace via FUSE",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lklfuse/static.official.stable.yaml",
+    "homepage": [
+      "https://lkl.github.io/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "lklfuse"
+    ],
+    "repology": [
+      "lkl"
+    ],
+    "src_url": [
+      "https://github.com/lkl/linux"
+    ],
+    "tag": [
+      "kernel"
+    ],
+    "version": "1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "lnav",
     "pkg_family": "lnav",
     "pkg_id": "github.com.tstack.lnav",
@@ -6798,6 +6998,73 @@
   },
   {
     "_disabled": "false",
+    "pkg": "proot",
+    "pkg_family": "proot",
+    "pkg_id": "ppkg.proot",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-proot/proot/proot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/proot/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "User-space implementation of chroot, mount --bind and binfmt_misc",
+    "distro_pkg": {
+      "alpine": [
+        "proot"
+      ],
+      "archlinux": {
+        "aur": [
+          "proot",
+          "proot-git"
+        ]
+      },
+      "debian": [
+        "proot"
+      ],
+      "gnuguix": [
+        "proot",
+        "proot-static"
+      ],
+      "nixpkgs": [
+        "proot"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/proot/static.official.stable.yaml",
+    "homepage": [
+      "https://proot-me.github.io/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "proot"
+    ],
+    "repology": [
+      "proot"
+    ],
+    "src_url": [
+      "https://github.com/proot-me/proot"
+    ],
+    "tag": [
+      "chroot",
+      "rootfs"
+    ],
+    "version": "5.4.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "proxychains-ng",
     "pkg_family": "proxychains-ng",
     "pkg_id": "nixpkgs.proxychains-ng",
@@ -7024,7 +7291,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-070b743-250122T080519"
+    "version": "HEAD-f96859f-250122T094133"
   },
   {
     "_disabled": "false",
@@ -10003,6 +10270,86 @@
   },
   {
     "_disabled": "false",
+    "pkg": "tailscale",
+    "pkg_family": "tailscale",
+    "pkg_id": "github.com.tailscale.tailscale",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tailscale-tailscale/tailscale/tailscale",
+    "bincache": "ghcr.io/pkgforge/bincache/tailscale/official/tailscale",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tailscale/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A mesh VPN built on WireGuard",
+      "tailscale": "CLI Client for Tailscale, a mesh VPN built on WireGuard",
+      "tailscaled": "Daemon for the Tailscale CLI",
+      "tailscale-multi": "Combined Client & Daemon in a Single Binary (Limited Features)"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "tailscale"
+      ],
+      "archlinux": {
+        "aur": [
+          "tailscale-git",
+          "tailscale-unstable-bin"
+        ],
+        "extra": [
+          "tailscale"
+        ]
+      },
+      "homebrew": [
+        "tailscale"
+      ],
+      "nixpkgs": [
+        "tailscale"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tailscale/static.official.source.yaml",
+    "homepage": [
+      "https://tailscale.com",
+      "https://github.com/tailscale/tailscale"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tailscale/tailscale",
+      "tailscale-multi is based on: https://tailscale.com/kb/1207/small-tailscale"
+    ],
+    "provides": [
+      "tailscale",
+      "tailscaled",
+      "tailscale-multi"
+    ],
+    "repology": [
+      "tailscale"
+    ],
+    "src_url": [
+      "https://github.com/tailscale/tailscale"
+    ],
+    "tag": [
+      "mesh",
+      "tunnel",
+      "vpn",
+      "wireguard",
+      "zerotier"
+    ],
+    "version": "HEAD-cb3b1a1-250122T063459"
+  },
+  {
+    "_disabled": "false",
     "pkg": "taplo",
     "pkg_family": "taplo",
     "pkg_id": "github.com.tamasfe.taplo",
@@ -10941,6 +11288,56 @@
       "timezone"
     ],
     "version": "HEAD-a0820b3-241127T080028"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "u-root",
+    "pkg_family": "u-root",
+    "pkg_id": "github.com.u-root.u-root",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/u-root/u-root/u-root",
+    "bincache": "ghcr.io/pkgforge/bincache/u-root/official/u-root",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/u-root/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tool to create a one-binary root file system (initramfs) containing a busybox-like set of tools & More",
+    "distro_pkg": {
+      "nixpkgs": [
+        "u-root",
+        "u-root-cmds"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/u-root/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/u-root/u-root"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/u-root/u-root"
+    ],
+    "repology": [
+      "u-root"
+    ],
+    "src_url": [
+      "https://github.com/u-root/u-root"
+    ],
+    "tag": [
+      "busybox",
+      "coreboot"
+    ],
+    "version": "HEAD-fab6559-250122T153138"
   },
   {
     "_disabled": "false",
@@ -12092,6 +12489,143 @@
   },
   {
     "_disabled": "false",
+    "pkg": "xdo",
+    "pkg_family": "xdo",
+    "pkg_id": "ppkg.xdo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xdo/xdo/xdo",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xdo/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Small X utility to perform elementary actions on windows",
+    "distro_pkg": {
+      "alpine": [
+        "xdo"
+      ],
+      "archlinux": {
+        "aur": [
+          "xdo-git"
+        ],
+        "extra": [
+          "xdo"
+        ]
+      },
+      "debian": [
+        "xdo"
+      ],
+      "gnuguix": [
+        "xdo"
+      ],
+      "nixpkgs": [
+        "xdo"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xdo/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/baskerville/xdo"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-2-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "xdo"
+    ],
+    "repology": [
+      "xdo"
+    ],
+    "src_url": [
+      "https://github.com/baskerville/xdo"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "0.5.7"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xdotool",
+    "pkg_family": "xdotool",
+    "pkg_id": "ppkg.xdotool",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xdotool/xdotool/xdotool",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xdotool/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Simulate keyboard input and mouse activity, move and resize windows",
+    "distro_pkg": {
+      "alpine": [
+        "xdotool"
+      ],
+      "archlinux": {
+        "aur": [
+          "xdotool-git"
+        ],
+        "extra": [
+          "xdotool"
+        ]
+      },
+      "debian": [
+        "xdotool"
+      ],
+      "gnuguix": [
+        "xdotool"
+      ],
+      "homebrew": [
+        "xdotool"
+      ],
+      "nixpkgs": [
+        "xdotool"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xdotool/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/jordansissel/xdotool"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "xdotool"
+    ],
+    "repology": [
+      "xdotool"
+    ],
+    "src_url": [
+      "https://github.com/jordansissel/xdotool"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.20211022.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "xmrig",
     "pkg_family": "xmrig",
     "pkg_id": "github.com.xmrig.xmrig",
@@ -12452,7 +12986,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-234809d-250122T220045"
+    "version": "HEAD-abb4325-250122T225117"
   },
   {
     "_disabled": "false",

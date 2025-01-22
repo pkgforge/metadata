@@ -180,8 +180,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -208,7 +208,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -227,7 +227,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -243,7 +242,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "true",
@@ -596,13 +595,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -625,7 +624,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -645,7 +644,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -658,7 +657,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -2438,6 +2437,75 @@
   },
   {
     "_disabled": "false",
+    "pkg": "hugo",
+    "pkg_family": "hugo",
+    "pkg_id": "github.com.gohugoio.hugo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gohugoio-hugo/hugo/hugo",
+    "bincache": "ghcr.io/pkgforge/bincache/hugo/official/hugo",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hugo/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast and Flexible Static Site Generator",
+    "distro_pkg": {
+      "alpine": [
+        "hugo"
+      ],
+      "archlinux": {
+        "aur": [
+          "hugo-git"
+        ],
+        "extra": [
+          "hugo"
+        ]
+      },
+      "debian": [
+        "hugo"
+      ],
+      "homebrew": [
+        "hugo"
+      ],
+      "nixpkgs": [
+        "hugo"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hugo/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/gohugoio/hugo"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/gohugoio/hugo"
+    ],
+    "provides": [
+      "hugo"
+    ],
+    "repology": [
+      "hugo-sitegen"
+    ],
+    "src_url": [
+      "https://github.com/gohugoio/hugo"
+    ],
+    "tag": [
+      "blog",
+      "cms"
+    ],
+    "version": "HEAD-77a8e34-250122T193802"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ipinfo",
     "pkg_family": "ipinfo",
     "pkg_id": "github.com.ipinfo.cli",
@@ -2573,6 +2641,73 @@
       "random"
     ],
     "version": "HEAD-f78ccf0-250114T164348"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "jujutsu",
+    "pkg_family": "jujutsu",
+    "pkg_id": "github.com.martinvonz.jj",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/martinvonz-jj/jujutsu/jujutsu",
+    "bincache": "ghcr.io/pkgforge/bincache/jujutsu/official/jj",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jujutsu/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Jujutsu is a Git-compatible DVCS that is both simple and powerful",
+    "distro_pkg": {
+      "alpine": [
+        "jujutsu"
+      ],
+      "archlinux": {
+        "aur": [
+          "jujutsu-git"
+        ],
+        "extra": [
+          "jujutsu"
+        ]
+      },
+      "nixpkgs": [
+        "jujutsu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jujutsu/static.official.source.yaml",
+    "homepage": [
+      "https://jj-vcs.github.io/jj",
+      "https://github.com/jj-vcs/jj"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache",
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jj-vcs/jj"
+    ],
+    "provides": [
+      "jj",
+      "jujutsu"
+    ],
+    "repology": [
+      "jujutsu"
+    ],
+    "src_url": [
+      "https://github.com/jj-vcs/jj"
+    ],
+    "tag": [
+      "git",
+      "vcs"
+    ],
+    "version": "HEAD-f264e95-250122T185124"
   },
   {
     "_disabled": "false",
@@ -2989,67 +3124,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "lux",
-    "pkg_family": "lux",
-    "pkg_id": "github.com.iawia002.lux",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/iawia002-lux/lux/lux",
-    "bincache": "ghcr.io/pkgforge/bincache/lux/official/lux",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lux/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Fast, simple and clean video downloader",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "lux-dl",
-          "lux-dl-bin",
-          "lux-go-git"
-        ]
-      },
-      "homebrew": [
-        "lux"
-      ],
-      "nixpkgs": [
-        "lux"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lux/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/iawia002/lux"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/iawia002/lux"
-    ],
-    "provides": [
-      "lux"
-    ],
-    "repology": [
-      "lux-video-downloader"
-    ],
-    "src_url": [
-      "https://github.com/iawia002/lux"
-    ],
-    "tag": [
-      "downloader"
-    ],
-    "version": "HEAD-51d23d2-241012T134907"
-  },
-  {
-    "_disabled": "false",
     "pkg": "mabel",
     "pkg_family": "mabel",
     "pkg_id": "github.com.smmr-software.mabel",
@@ -3097,190 +3171,6 @@
       "torrent"
     ],
     "version": "HEAD-1e74a44-230822T105548"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mailpit",
-    "pkg_family": "mailpit",
-    "pkg_id": "github.com.axllent.mailpit",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/axllent-mailpit/mailpit/mailpit",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mailpit/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Email and SMTP testing tool with API for developers",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "mailpit",
-          "mailpit-bin"
-        ]
-      },
-      "homebrew": [
-        "mailpit"
-      ],
-      "nixpkgs": [
-        "mailpit"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mailpit/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/axllent/mailpit"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/axllent/mailpit"
-    ],
-    "provides": [
-      "mailpit"
-    ],
-    "repology": [
-      "mailpit"
-    ],
-    "src_url": [
-      "https://github.com/axllent/mailpit"
-    ],
-    "tag": [
-      "email",
-      "mail"
-    ],
-    "version": "v1.21.8"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mani",
-    "pkg_family": "mani",
-    "pkg_id": "github.com.alajmo.mani",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alajmo-mani/mani/mani",
-    "bincache": "ghcr.io/pkgforge/bincache/mani/official/mani",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mani/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "CLI tool to manage multiple repositories",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "mani"
-        ]
-      },
-      "nixpkgs": [
-        "mani"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mani/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/alajmo/mani"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/alajmo/mani"
-    ],
-    "provides": [
-      "mani"
-    ],
-    "repology": [
-      "mani"
-    ],
-    "src_url": [
-      "https://github.com/alajmo/mani"
-    ],
-    "tag": [
-      "git"
-    ],
-    "version": "HEAD-5035b27-250102T134931"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "matterbridge",
-    "pkg_family": "matterbridge",
-    "pkg_id": "github.com.42wim.matterbridge",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/42wim-matterbridge/matterbridge/matterbridge",
-    "bincache": "ghcr.io/pkgforge/bincache/matterbridge/official/matterbridge",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/matterbridge/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Multi-protocols (IRC/XMPP/Mattermost/Slack/Matrix/etc) bridge",
-    "distro_pkg": {
-      "alpine": [
-        "matterbridge"
-      ],
-      "archlinux": {
-        "aur": [
-          "matterbridge-git"
-        ],
-        "extra": [
-          "matterbridge"
-        ]
-      },
-      "gnuguix": [
-        "matterbridge"
-      ],
-      "homebrew": [
-        "matterbridge"
-      ],
-      "nixpkgs": [
-        "matterbridge"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/matterbridge/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/42wim/matterbridge"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/42wim/matterbridge"
-    ],
-    "provides": [
-      "matterbridge"
-    ],
-    "repology": [
-      "matterbridge"
-    ],
-    "src_url": [
-      "https://github.com/42wim/matterbridge"
-    ],
-    "tag": [
-      "chat"
-    ],
-    "version": "HEAD-c4157a4-240827T190405"
   },
   {
     "_disabled": "false",
@@ -3394,7 +3284,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6613c1b-250118T064312"
+    "version": "HEAD-62b32b8-250122T141425"
   },
   {
     "_disabled": "false",
@@ -3456,569 +3346,6 @@
       "mail"
     ],
     "version": "HEAD-c0a1d15-250121T151145"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mergerfs",
-    "pkg_family": "mergerfs",
-    "pkg_id": "github.com.trapexit.mergerfs",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/trapexit-mergerfs/mergerfs/mergerfs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mergerfs/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A featureful union filesystem",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mergerfs/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/trapexit/mergerfs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "ISC"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/trapexit/mergerfs"
-    ],
-    "provides": [
-      "mergerfs"
-    ],
-    "repology": [
-      "mergerfs"
-    ],
-    "src_url": [
-      "https://github.com/trapexit/mergerfs"
-    ],
-    "tag": [
-      "filesystem",
-      "fuse"
-    ],
-    "version": "2.40.2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mgwls",
-    "pkg_family": "mgwls",
-    "pkg_id": "github.com.trickest.mgwls",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/trickest-mgwls/mgwls/mgwls",
-    "bincache": "ghcr.io/pkgforge/bincache/mgwls/official/mgwls",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mgwls/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Combine words from two wordlist files and concatenate them with an optional delimiter",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mgwls/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/trickest/mgwls"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trickest/mgwls"
-    ],
-    "provides": [
-      "mgwls"
-    ],
-    "src_url": [
-      "https://github.com/trickest/mgwls"
-    ],
-    "tag": [
-      "enumeration",
-      "recon",
-      "wordlist"
-    ],
-    "version": "HEAD-28151d9-230925T151947"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "micro",
-    "pkg_family": "micro",
-    "pkg_id": "github.com.zyedidia.micro",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zyedidia-micro/micro/micro",
-    "bincache": "ghcr.io/pkgforge/bincache/micro/official/micro",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/micro/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Modern and intuitive terminal-based text editor",
-    "distro_pkg": {
-      "alpine": [
-        "micro"
-      ],
-      "archlinux": {
-        "aur": [
-          "micro-git"
-        ],
-        "extra": [
-          "micro"
-        ]
-      },
-      "debian": [
-        "micro"
-      ],
-      "homebrew": [
-        "micro"
-      ],
-      "nixpkgs": [
-        "micro"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/micro/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/zyedidia/micro"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/zyedidia/micro"
-    ],
-    "provides": [
-      "micro"
-    ],
-    "repology": [
-      "micro"
-    ],
-    "src_url": [
-      "https://github.com/zyedidia/micro"
-    ],
-    "tag": [
-      "text-editor"
-    ],
-    "version": "HEAD-f5debdf-250120T202838"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "miller",
-    "pkg_family": "miller",
-    "pkg_id": "github.com.johnkerl.miller",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/johnkerl-miller/miller/miller",
-    "bincache": "ghcr.io/pkgforge/bincache/miller/official/miller",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miller/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Combination of sed,awk,cut,join,sort utils for CSV, Json, TSV & more",
-    "distro_pkg": {
-      "alpine": [
-        "miller"
-      ],
-      "archlinux": {
-        "aur": [
-          "miller-git"
-        ],
-        "extra": [
-          "miller"
-        ]
-      },
-      "debian": [
-        "miller"
-      ],
-      "gnuguix": [
-        "miller"
-      ],
-      "homebrew": [
-        "miller"
-      ],
-      "nixpkgs": [
-        "miller"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/miller/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/johnkerl/miller"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "custom"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/johnkerl/miller"
-    ],
-    "provides": [
-      "miller==mlr"
-    ],
-    "repology": [
-      "miller"
-    ],
-    "src_url": [
-      "https://github.com/johnkerl/miller"
-    ],
-    "tag": [
-      "utility"
-    ],
-    "version": "HEAD-ce3123b-250122T091100"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "miniflux",
-    "pkg_family": "miniflux",
-    "pkg_id": "github.com.miniflux.v2",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/miniflux-v2/miniflux/miniflux",
-    "bincache": "ghcr.io/pkgforge/bincache/miniflux/official/miniflux",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miniflux/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Minimalist and opinionated feed reader",
-    "distro_pkg": {
-      "alpine": [
-        "miniflux"
-      ],
-      "archlinux": {
-        "aur": [
-          "miniflux-git"
-        ],
-        "extra": [
-          "miniflux"
-        ]
-      },
-      "debian": [
-        "miniflux"
-      ],
-      "gnuguix": [
-        "miniflux"
-      ],
-      "nixpkgs": [
-        "miniflux"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/miniflux/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/miniflux/v2"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/miniflux/v2"
-    ],
-    "provides": [
-      "miniflux"
-    ],
-    "repology": [
-      "miniflux"
-    ],
-    "src_url": [
-      "https://github.com/miniflux/v2"
-    ],
-    "tag": [
-      "rss"
-    ],
-    "version": "HEAD-33063a7-250120T111246"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "minify",
-    "pkg_family": "minify",
-    "pkg_id": "github.com.tdewolff.minify",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tdewolff-minify/minify/minify",
-    "bincache": "ghcr.io/pkgforge/bincache/minify/official/minify",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/minify/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Tool to minify web formats like HTML5, CSS3, JS, JSON, SVG, XML & More",
-    "distro_pkg": {
-      "nixpkgs": [
-        "minify"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/minify/static.official.stable.yaml",
-    "homepage": [
-      "https://go.tacodewolff.nl/minify"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tdewolff/minify"
-    ],
-    "provides": [
-      "minify"
-    ],
-    "repology": [
-      "minify"
-    ],
-    "src_url": [
-      "https://github.com/tdewolff/minify"
-    ],
-    "tag": [
-      "minifier"
-    ],
-    "version": "HEAD-29557d5-250120T222117"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mise",
-    "pkg_family": "mise",
-    "pkg_id": "github.com.jdx.mise",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jdx-mise/mise/mise",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mise/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Polyglot runtime and dev tool version manager",
-    "distro_pkg": {
-      "alpine": [
-        "mise"
-      ],
-      "archlinux": {
-        "aur": [
-          "mise",
-          "mise-bin"
-        ]
-      },
-      "homebrew": [
-        "mise"
-      ],
-      "nixpkgs": [
-        "mise"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mise/static.official.stable.yaml",
-    "homepage": [
-      "https://mise.jdx.dev",
-      "https://github.com/jdx/mise"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/jdx/mise"
-    ],
-    "provides": [
-      "mise"
-    ],
-    "repology": [
-      "mise"
-    ],
-    "src_url": [
-      "https://github.com/jdx/mise"
-    ],
-    "tag": [
-      "asdf",
-      "dev-env"
-    ],
-    "version": "v2025.1.9"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mksub",
-    "pkg_family": "mksub",
-    "pkg_id": "github.com.trickest.mksub",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/trickest-mksub/mksub/mksub",
-    "bincache": "ghcr.io/pkgforge/bincache/mksub/official/mksub",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mksub/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Generate tens of thousands of subdomain combinations in a matter of seconds",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mksub/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/trickest/mksub"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trickest/mksub"
-    ],
-    "provides": [
-      "mksub"
-    ],
-    "src_url": [
-      "https://github.com/trickest/mksub"
-    ],
-    "tag": [
-      "bugbounty",
-      "subdomain"
-    ],
-    "version": "HEAD-c90cbdc-230925T151949"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mmv",
-    "pkg_family": "mmv",
-    "pkg_id": "github.com.itchyny.mmv",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/itchyny-mmv/mmv/mmv",
-    "bincache": "ghcr.io/pkgforge/bincache/mmv/official/mmv",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mmv/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Move/copy/append/link multiple files according to a set of wildcard patterns",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "mmv"
-        ]
-      },
-      "debian": [
-        "mmv"
-      ],
-      "homebrew": [
-        "mmv"
-      ],
-      "nixpkgs": [
-        "mmv"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mmv/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/itchyny/mmv"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/itchyny/mmv"
-    ],
-    "provides": [
-      "mmv"
-    ],
-    "repology": [
-      "mmv"
-    ],
-    "src_url": [
-      "https://github.com/itchyny/mmv"
-    ],
-    "tag": [
-      "rename"
-    ],
-    "version": "HEAD-cf6f045-230426T190001"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "moac",
-    "pkg_family": "moac",
-    "pkg_id": "github.com.Seirdy.moac",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/seirdy-moac/moac/moac",
-    "bincache": "ghcr.io/pkgforge/bincache/moac/official/moac",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/moac/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Generate passwords and analyze their strength given physical limits to computation",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/moac/static.official.source.yaml",
-    "homepage": [
-      "https://sr.ht/~seirdy/MOAC/",
-      "https://github.com/Seirdy/moac"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Seirdy/moac"
-    ],
-    "provides": [
-      "moac",
-      "moac-pwgen"
-    ],
-    "src_url": [
-      "https://github.com/Seirdy/moac"
-    ],
-    "tag": [
-      "entropy",
-      "password",
-      "security"
-    ],
-    "version": "HEAD-97035da-211117T205806"
   },
   {
     "_disabled": "false",
@@ -4321,325 +3648,6 @@
       "proxy"
     ],
     "version": "HEAD-407b35d-250119T125522"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "neofetch",
-    "pkg_family": "neofetch",
-    "pkg_id": "github.com.hykilpikonna.hyfetch",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hykilpikonna-hyfetch/neofetch/neofetch",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/neofetch/static.hyfetch.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A CLI system information tool (Updated Fork)",
-    "distro_pkg": {
-      "alpine": [
-        "neofetch"
-      ],
-      "archlinux": {
-        "aur": [
-          "neofetch-git"
-        ],
-        "extra": [
-          "neofetch"
-        ]
-      },
-      "debian": [
-        "neofetch"
-      ],
-      "gnuguix": [
-        "neofetch"
-      ],
-      "homebrew": [
-        "neofetch"
-      ],
-      "nixpkgs": [
-        "neofetch"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/neofetch/static.hyfetch.stable.yaml",
-    "homepage": [
-      "https://github.com/hykilpikonna/hyfetch"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/hykilpikonna/hyfetch"
-    ],
-    "provides": [
-      "neofetch:hyfetch"
-    ],
-    "repology": [
-      "neofetch"
-    ],
-    "src_url": [
-      "https://github.com/hykilpikonna/hyfetch"
-    ],
-    "tag": [
-      "fetch"
-    ],
-    "version": "HEAD-5ec7b4f-250119T055517"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "nerdctl",
-    "pkg_family": "nerdctl",
-    "pkg_id": "github.com.containerd.nerdctl",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containerd-nerdctl/nerdctl/nerdctl",
-    "bincache": "ghcr.io/pkgforge/bincache/nerdctl/official/nerdctl",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nerdctl/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Docker-compatible CLI for containerd, with support for Compose, Rootless, eStargz, OCIcrypt, IPFS",
-    "distro_pkg": {
-      "alpine": [
-        "nerdctl"
-      ],
-      "archlinux": {
-        "aur": [
-          "nerdctl-git"
-        ],
-        "extra": [
-          "nerdctl"
-        ]
-      },
-      "homebrew": [
-        "nerdctl"
-      ],
-      "nixpkgs": [
-        "nerdctl"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nerdctl/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/containerd/nerdctl"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containerd/nerdctl"
-    ],
-    "provides": [
-      "nerdctl"
-    ],
-    "repology": [
-      "nerdctl"
-    ],
-    "src_url": [
-      "https://github.com/containerd/nerdctl"
-    ],
-    "tag": [
-      "container"
-    ],
-    "version": "HEAD-558dd93-250122T102340"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "netbird",
-    "pkg_family": "netbird",
-    "pkg_id": "github.com.netbirdio.netbird",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/netbirdio-netbird/netbird/netbird",
-    "bincache": "ghcr.io/pkgforge/bincache/netbird/official/netbird",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netbird/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "WireGuard-based mesh network",
-      "netbird": "Client for Netbird; A WireGuard-based mesh network",
-      "netbird-mgmt": "Management service for Netbird",
-      "netbird-relay": "Relay service for Netbird",
-      "netbird-signal": "Signal service for Netbird"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "netbird",
-          "netbird-bin"
-        ]
-      },
-      "nixpkgs": [
-        "netbird"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/netbird/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/netbirdio/netbird"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/netbirdio/netbird"
-    ],
-    "provides": [
-      "netbird",
-      "netbird-mgmt",
-      "netbird-relay",
-      "netbird-signal"
-    ],
-    "repology": [
-      "netbird"
-    ],
-    "src_url": [
-      "https://github.com/netbirdio/netbird"
-    ],
-    "tag": [
-      "mesh",
-      "wireguard"
-    ],
-    "version": "HEAD-78da6b4-250122T185754"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "netmaker",
-    "pkg_family": "netmaker",
-    "pkg_id": "github.com.gravitl.netmaker",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gravitl-netmaker/netmaker/netmaker",
-    "bincache": "ghcr.io/pkgforge/bincache/netmaker/official/netmaker",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netmaker/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "WireGuard automation from homelab to enterprise",
-    "distro_pkg": {
-      "nixpkgs": [
-        "netmaker",
-        "netmaker-full"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/netmaker/static.official.source.yaml",
-    "homepage": [
-      "https://netmaker.io",
-      "https://github.com/gravitl/netmaker"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/gravitl/netmaker"
-    ],
-    "provides": [
-      "netmaker",
-      "nmctl"
-    ],
-    "repology": [
-      "netmaker"
-    ],
-    "src_url": [
-      "https://github.com/gravitl/netmaker"
-    ],
-    "tag": [
-      "mesh",
-      "network",
-      "security",
-      "wireguard"
-    ],
-    "version": "HEAD-648758c-250121T092829"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "nfpm",
-    "pkg_family": "nfpm",
-    "pkg_id": "github.com.goreleaser.nfpm",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goreleaser-nfpm/nfpm/nfpm",
-    "bincache": "ghcr.io/pkgforge/bincache/nfpm/official/nfpm",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nfpm/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A simple deb, rpm, apk, ipk, and arch linux packager",
-    "distro_pkg": {
-      "alpine": [
-        "nfpm"
-      ],
-      "archlinux": {
-        "aur": [
-          "nfpm",
-          "nfpm-bin"
-        ]
-      },
-      "homebrew": [
-        "nfpm"
-      ],
-      "nixpkgs": [
-        "nfpm"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nfpm/static.official.stable.yaml",
-    "homepage": [
-      "https://nfpm.goreleaser.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/goreleaser/nfpm"
-    ],
-    "provides": [
-      "nfpm"
-    ],
-    "repology": [
-      "nfpm"
-    ],
-    "src_url": [
-      "https://github.com/goreleaser/nfpm"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-b6a1a9d-250116T083412"
   },
   {
     "_disabled": "false",
@@ -10289,7 +9297,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-8b65598-250122T102056"
+    "version": "HEAD-d1b3785-250122T114613"
   },
   {
     "_disabled": "false",

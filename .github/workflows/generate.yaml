@@ -258,21 +258,23 @@ jobs:
           #-------------#
           ##Version Diff (aarch64-Linux)
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
-          jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json") '
-          .[] | 
-          select(.pkg_type == "static" and (
+          jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json") \
+          '.[] | 
+          select((.pkg_type == "static" and (.host | contains(["aarch64-linux"]))) and (
             .pkg_id as $id | 
             .version as $ver |
+            ($aarch64[0] | map(.pkg_id) | contains([$id]) | not) or
             ($aarch64[0][] | select(.pkg_id == $id).version) as $aarch64_ver |
             $aarch64_ver == null or $ver != $aarch64_ver
            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_aarch64-Linux.json"
           ##Version Diff (x86_64-Linux)
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
-          jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json") '
-          .[] | 
-          select(.pkg_type == "static" and (
+          jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json") \
+          '.[] | 
+          select((.pkg_type == "static" and (.host | contains(["x86_64-linux"]))) and (
             .pkg_id as $id | 
             .version as $ver |
+            ($x86_64[0] | map(.pkg_id) | contains([$id]) | not) or
             ($x86_64[0][] | select(.pkg_id == $id).version) as $x86_ver |
             $x86_ver == null or $ver != $x86_ver
           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_x86_64-Linux.json"
@@ -285,21 +287,23 @@ jobs:
           #-------------#
           ##Version Diff (aarch64-Linux)
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
-          jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json") '
-          .[] | 
-          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (
+          jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["aarch64-linux"])) and (
             .pkg_id as $id | 
             .version as $ver |
+            ($aarch64[0] | map(.pkg_id) | contains([$id]) | not) or
             ($aarch64[0][] | select(.pkg_id == $id).version) as $aarch64_ver |
             $aarch64_ver == null or $ver != $aarch64_ver
            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_aarch64-Linux.json"
           ##Version Diff (x86_64-Linux)
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
-          jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json") '
-          .[] | 
-          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (
+          jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["x86_64-linux"])) and (
             .pkg_id as $id | 
             .version as $ver |
+            ($x86_64[0] | map(.pkg_id) | contains([$id]) | not) or
             ($x86_64[0][] | select(.pkg_id == $id).version) as $x86_ver |
             $x86_ver == null or $ver != $x86_ver
           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_x86_64-Linux.json"

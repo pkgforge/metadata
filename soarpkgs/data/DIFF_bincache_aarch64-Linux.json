@@ -246,8 +246,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -274,7 +274,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -293,6 +293,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -308,7 +309,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "1.37.0"
+    "version": "250118T141142"
   },
   {
     "_disabled": "false",
@@ -684,6 +685,63 @@
   },
   {
     "_disabled": "false",
+    "pkg": "ghfetch",
+    "pkg_family": "ghfetch",
+    "pkg_id": "github.com.orangekame3.ghfetch",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/orangekame3-ghfetch/ghfetch/ghfetch",
+    "bincache": "ghcr.io/pkgforge/bincache/ghfetch/official/ghfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ghfetch/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI tool to fetch GitHub user information and show like neofetch",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ghfetch",
+          "ghfetch-git"
+        ]
+      },
+      "nixpkgs": [
+        "ghfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ghfetch/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/orangekame3/ghfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/orangekame3/ghfetch"
+    ],
+    "provides": [
+      "ghfetch"
+    ],
+    "repology": [
+      "ghfetch"
+    ],
+    "src_url": [
+      "https://github.com/orangekame3/ghfetch"
+    ],
+    "tag": [
+      "github"
+    ],
+    "version": "HEAD-7e2326b-250122T120313"
+  },
+  {
+    "_disabled": "false",
     "pkg": "gitui",
     "pkg_family": "gitui",
     "pkg_id": "github.com.extrawurst.gitui",
@@ -742,6 +800,68 @@
       "tui"
     ],
     "version": "HEAD-58b4e2c-250121T120756"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "hcloud",
+    "pkg_family": "hcloud",
+    "pkg_id": "github.com.hetznercloud.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hetznercloud-cli/hcloud/hcloud",
+    "bincache": "ghcr.io/pkgforge/bincache/hcloud/official/hcloud",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hcloud/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line interface for Hetzner Cloud",
+    "distro_pkg": {
+      "alpine": [
+        "hcloud"
+      ],
+      "archlinux": {
+        "extra": [
+          "hcloud"
+        ]
+      },
+      "homebrew": [
+        "hcloud"
+      ],
+      "nixpkgs": [
+        "hcloud"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hcloud/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/hetznercloud/cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/hetznercloud/cli"
+    ],
+    "provides": [
+      "hcloud"
+    ],
+    "repology": [
+      "hcloud"
+    ],
+    "src_url": [
+      "https://github.com/hetznercloud/cli"
+    ],
+    "tag": [
+      "hetzner"
+    ],
+    "version": "HEAD-6797c80-250122T131210"
   },
   {
     "_disabled": "false",
@@ -868,7 +988,63 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-cdb082e-250121T153939"
+    "version": "HEAD-84c720d-250122T062530"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "pls",
+    "pkg_family": "pls",
+    "pkg_id": "github.com.pls-rs.pls",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-pls/pls/pls",
+    "bincache": "ghcr.io/pkgforge/bincache/pls/official/pls",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pls/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A Prettier and Powerful ls(1) for the Pros",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "pls",
+          "pls-git"
+        ]
+      },
+      "nixpkgs": [
+        "pls"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pls/static.official.source.yaml",
+    "homepage": [
+      "https://pls.cli.rs",
+      "https://github.com/pls-rs/pls"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL3",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pls-rs/pls"
+    ],
+    "repology": [
+      "pls"
+    ],
+    "src_url": [
+      "https://github.com/pls-rs/pls"
+    ],
+    "tag": [
+      "ls"
+    ],
+    "version": "HEAD-f14ad32-250122T175914"
   },
   {
     "_disabled": "false",

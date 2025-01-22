@@ -180,7 +180,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -207,7 +208,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -226,6 +227,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -241,7 +243,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "1.37.0"
+    "version": "250118T141142"
   },
   {
     "_disabled": "false",
@@ -2861,7 +2863,7 @@
       "secret",
       "security"
     ],
-    "version": "HEAD-f3ae52e-250122T092745"
+    "version": "HEAD-3fdaefd-250122T102545"
   },
   {
     "_disabled": "false",
@@ -4202,6 +4204,76 @@
       "sync"
     ],
     "version": "v0.18.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kubo",
+    "pkg_family": "kubo",
+    "pkg_id": "github.com.ipfs.kubo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ipfs-kubo/kubo/kubo",
+    "bincache": "ghcr.io/pkgforge/bincache/kubo/official/ipfswatch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/kubo/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for Inter Platnetary File System (IPFS)",
+      "ipfswatch": "Tool to Monitor a directory and adds changes to IPFS",
+      "kubo": "Official Inter Platnetary File System (IPFS) CLI"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "go-ipfs",
+        "kubo"
+      ],
+      "archlinux": {
+        "aur": [
+          "kubo-git"
+        ],
+        "extra": [
+          "kubo"
+        ]
+      },
+      "nixpkgs": [
+        "ipfs",
+        "kubo"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/kubo/static.official.source.yaml",
+    "homepage": [
+      "https://ipfs.io",
+      "https://docs.ipfs.tech"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ipfs/kubo"
+    ],
+    "provides": [
+      "ipfswatch",
+      "kubo"
+    ],
+    "repology": [
+      "kubo"
+    ],
+    "src_url": [
+      "https://github.com/ipfs/kubo"
+    ],
+    "tag": [
+      "ipfs"
+    ],
+    "version": "HEAD-256a739-250122T172615"
   },
   {
     "_disabled": "false",
@@ -9029,7 +9101,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-3c1951a-250122T080403"
+    "version": "HEAD-aef6930-250122T090641"
   },
   {
     "_disabled": "false",
@@ -12293,7 +12365,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-0a6d707-250122T150058"
+    "version": "HEAD-2a65cd1-250122T173237"
   },
   {
     "_disabled": "false",

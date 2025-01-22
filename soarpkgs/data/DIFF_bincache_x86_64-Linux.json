@@ -246,7 +246,6 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -378,7 +377,6 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
@@ -731,6 +729,63 @@
   },
   {
     "_disabled": "false",
+    "pkg": "ghfetch",
+    "pkg_family": "ghfetch",
+    "pkg_id": "github.com.orangekame3.ghfetch",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/orangekame3-ghfetch/ghfetch/ghfetch",
+    "bincache": "ghcr.io/pkgforge/bincache/ghfetch/official/ghfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ghfetch/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI tool to fetch GitHub user information and show like neofetch",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ghfetch",
+          "ghfetch-git"
+        ]
+      },
+      "nixpkgs": [
+        "ghfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ghfetch/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/orangekame3/ghfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/orangekame3/ghfetch"
+    ],
+    "provides": [
+      "ghfetch"
+    ],
+    "repology": [
+      "ghfetch"
+    ],
+    "src_url": [
+      "https://github.com/orangekame3/ghfetch"
+    ],
+    "tag": [
+      "github"
+    ],
+    "version": "HEAD-3bab453-250122T000531"
+  },
+  {
+    "_disabled": "false",
     "pkg": "gitui",
     "pkg_family": "gitui",
     "pkg_id": "github.com.extrawurst.gitui",
@@ -896,6 +951,73 @@
       "tui"
     ],
     "version": "HEAD-05c4bb9-250121T193750"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "jujutsu",
+    "pkg_family": "jujutsu",
+    "pkg_id": "github.com.martinvonz.jj",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/martinvonz-jj/jujutsu/jujutsu",
+    "bincache": "ghcr.io/pkgforge/bincache/jujutsu/official/jj",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jujutsu/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Jujutsu is a Git-compatible DVCS that is both simple and powerful",
+    "distro_pkg": {
+      "alpine": [
+        "jujutsu"
+      ],
+      "archlinux": {
+        "aur": [
+          "jujutsu-git"
+        ],
+        "extra": [
+          "jujutsu"
+        ]
+      },
+      "nixpkgs": [
+        "jujutsu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jujutsu/static.official.source.yaml",
+    "homepage": [
+      "https://jj-vcs.github.io/jj",
+      "https://github.com/jj-vcs/jj"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache",
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jj-vcs/jj"
+    ],
+    "provides": [
+      "jj",
+      "jujutsu"
+    ],
+    "repology": [
+      "jujutsu"
+    ],
+    "src_url": [
+      "https://github.com/jj-vcs/jj"
+    ],
+    "tag": [
+      "git",
+      "vcs"
+    ],
+    "version": "HEAD-231c968-250122T004546"
   },
   {
     "_disabled": "false",
@@ -1093,6 +1215,127 @@
       "shell"
     ],
     "version": "HEAD-cdb082e-250121T153939"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ov",
+    "pkg_family": "ov",
+    "pkg_id": "github.com.noborus.ov",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/noborus-ov/ov/ov",
+    "bincache": "ghcr.io/pkgforge/bincache/ov/official/ov",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ov/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Feature-rich terminal-based text viewer & pager",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ov",
+          "ov-bin",
+          "ov-git"
+        ]
+      },
+      "nixpkgs": [
+        "ov"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ov/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/noborus/ov"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/noborus/ov"
+    ],
+    "provides": [
+      "ov"
+    ],
+    "repology": [
+      "ov"
+    ],
+    "src_url": [
+      "https://github.com/noborus/ov"
+    ],
+    "tag": [
+      "pager"
+    ],
+    "version": "HEAD-4f4e9e5-250122T094618"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "pdfcpu",
+    "pkg_family": "pdfcpu",
+    "pkg_id": "github.com.pdfcpu.pdfcpu",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pdfcpu-pdfcpu/pdfcpu/pdfcpu",
+    "bincache": "ghcr.io/pkgforge/bincache/pdfcpu/official/pdfcpu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pdfcpu/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A PDF processor written in Go",
+    "distro_pkg": {
+      "alpine": [
+        "pdfcpu"
+      ],
+      "archlinux": {
+        "aur": [
+          "pdfcpu",
+          "pdfcpu-bin"
+        ]
+      },
+      "homebrew": [
+        "pdfcpu"
+      ],
+      "nixpkgs": [
+        "pdfcpu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pdfcpu/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/pdfcpu/pdfcpu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pdfcpu/pdfcpu"
+    ],
+    "provides": [
+      "pdfcpu"
+    ],
+    "repology": [
+      "pdfcpu"
+    ],
+    "src_url": [
+      "https://github.com/pdfcpu/pdfcpu"
+    ],
+    "tag": [
+      "pdf"
+    ],
+    "version": "HEAD-b05d395-250122T014437"
   },
   {
     "_disabled": "false",
@@ -1333,6 +1576,86 @@
       "package-manager"
     ],
     "version": "HEAD-63cf070-250121T213535"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tailscale",
+    "pkg_family": "tailscale",
+    "pkg_id": "github.com.tailscale.tailscale",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tailscale-tailscale/tailscale/tailscale",
+    "bincache": "ghcr.io/pkgforge/bincache/tailscale/official/tailscale",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tailscale/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A mesh VPN built on WireGuard",
+      "tailscale": "CLI Client for Tailscale, a mesh VPN built on WireGuard",
+      "tailscaled": "Daemon for the Tailscale CLI",
+      "tailscale-multi": "Combined Client & Daemon in a Single Binary (Limited Features)"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "tailscale"
+      ],
+      "archlinux": {
+        "aur": [
+          "tailscale-git",
+          "tailscale-unstable-bin"
+        ],
+        "extra": [
+          "tailscale"
+        ]
+      },
+      "homebrew": [
+        "tailscale"
+      ],
+      "nixpkgs": [
+        "tailscale"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tailscale/static.official.source.yaml",
+    "homepage": [
+      "https://tailscale.com",
+      "https://github.com/tailscale/tailscale"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tailscale/tailscale",
+      "tailscale-multi is based on: https://tailscale.com/kb/1207/small-tailscale"
+    ],
+    "provides": [
+      "tailscale",
+      "tailscaled",
+      "tailscale-multi"
+    ],
+    "repology": [
+      "tailscale"
+    ],
+    "src_url": [
+      "https://github.com/tailscale/tailscale"
+    ],
+    "tag": [
+      "mesh",
+      "tunnel",
+      "vpn",
+      "wireguard",
+      "zerotier"
+    ],
+    "version": "HEAD-e12b2a7-250121T155714"
   },
   {
     "_disabled": "false",

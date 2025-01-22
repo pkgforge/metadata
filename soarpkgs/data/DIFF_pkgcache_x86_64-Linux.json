@@ -140,6 +140,75 @@
   },
   {
     "_disabled": "false",
+    "pkg": "akregator",
+    "pkg_family": "akregator",
+    "pkg_id": "runimage.alpine.akregator",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-akregator/akregator/akregator",
+    "app_id": "org.kde.akregator",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/akregator/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "KDE RSS feed reader",
+    "distro_pkg": {
+      "alpine": [
+        "akregator"
+      ],
+      "archlinux": {
+        "aur": [
+          "akregator-git"
+        ],
+        "extra": [
+          "akregator"
+        ]
+      },
+      "debian": [
+        "akregator"
+      ],
+      "gnuguix": [
+        "akregator"
+      ],
+      "nixpkgs": [
+        "kdePackages.akregator"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/akregator/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://apps.kde.org/akregator"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "akregator"
+    ],
+    "repology": [
+      "akregator"
+    ],
+    "src_url": [
+      "https://invent.kde.org/pim/akregator"
+    ],
+    "tag": [
+      "rss"
+    ],
+    "version": "24.12.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "brave",
     "pkg_family": "brave",
     "pkg_id": "github.com.srevinsaju.Brave-AppImage.beta",
@@ -253,6 +322,63 @@
       "network.web.browser"
     ],
     "version": "v1.76.29"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "github.com.srevinsaju.Brave-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ]
   },
   {
     "_disabled": "false",
@@ -651,6 +777,238 @@
     "version": "12.1.0-unstable-2025-01-19"
   },
   {
+    "_disabled": "true",
+    "_disabled_reason": {
+      "broken": [
+        {
+          "date": "2025-01-14",
+          "reason": "Fails to create EGL Display"
+        }
+      ]
+    },
+    "pkg": "ghostty",
+    "pkg_family": "ghostty",
+    "pkg_id": "nixpkgs.ghostty",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-ghostty/ghostty/ghostty",
+    "app_id": "com.mitchellh.ghostty",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "TerminalEmulator"
+    ],
+    "description": "Fast, native, feature-rich terminal emulator pushing modern features",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ghostty-git"
+        ],
+        "extra": [
+          "ghostty"
+        ]
+      },
+      "homebrew": [
+        "ghostty"
+      ],
+      "nixpkgs": [
+        "ghostty"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://ghostty.org",
+      "https://github.com/ghostty-org/ghostty"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghostty/nixappimage/nixpkgs",
+    "provides": [
+      "ghostty"
+    ],
+    "repology": [
+      "ghostty"
+    ],
+    "src_url": [
+      "https://github.com/psadi/ghostty-appimage"
+    ],
+    "tag": [
+      "terminal"
+    ],
+    "version": "1.0.1"
+  },
+  {
+    "_disabled": "true",
+    "_disabled_reason": {
+      "broken": [
+        {
+          "date": "2025-01-17",
+          "reason": "Exec Format Error"
+        }
+      ]
+    },
+    "pkg": "lazarus",
+    "pkg_family": "lazarus",
+    "pkg_id": "nixpkgs.lazarus",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-lazarus/lazarus/lazarus",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/lazarus/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "IDE"
+    ],
+    "description": "Portable Delphi-like IDE for the FreePascal compiler",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "lazarus-git"
+        ],
+        "extra": [
+          "lazarus"
+        ]
+      },
+      "debian": [
+        "lazarus"
+      ],
+      "gnuguix": [
+        "lazarus"
+      ],
+      "homebrew": [
+        "lazarus"
+      ],
+      "nixpkgs": [
+        "lazarus"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/lazarus/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.lazarus-ide.org",
+      "https://gitlab.com/freepascal.org/lazarus/lazarus"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/lazarus/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "lazarus=>lazarus-ide",
+      "lazarus=>lazbuild",
+      "lazarus=>lazres",
+      "lazarus=>lrstolfm",
+      "lazarus=>startlazarus"
+    ],
+    "repology": [
+      "lazarus"
+    ],
+    "src_url": [
+      "https://gitlab.com/freepascal.org/lazarus/lazarus"
+    ],
+    "tag": [
+      "code",
+      "editor"
+    ],
+    "version": "3.6-0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "librewolf",
+    "pkg_family": "librewolf",
+    "pkg_id": "runimage.cachyos.librewolf",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-librewolf/librewolf/librewolf",
+    "app_id": "io.gitlab.librewolf-community",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/librewolf/runimage.cachyos.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A fork of Firefox, focused on privacy, security and freedom",
+    "distro_pkg": {
+      "alpine": [
+        "librewolf"
+      ],
+      "archlinux": {
+        "aur": [
+          "librewolf",
+          "librewolf-bin",
+          "librewolf-hg"
+        ]
+      },
+      "gnuguix": [
+        "librewolf"
+      ],
+      "homebrew": [
+        "librewolf"
+      ],
+      "nixpkgs": [
+        "librewolf"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/librewolf/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://librewolf.net",
+      "https://codeberg.org/librewolf/source",
+      "https://gitlab.com/librewolf-community/browser/source"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/librewolf/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "librewolf"
+    ],
+    "repology": [
+      "librewolf"
+    ],
+    "src_url": [
+      "https://codeberg.org/librewolf/source",
+      "https://gitlab.com/librewolf-community/browser/source"
+    ],
+    "tag": [
+      "Applications/Internet",
+      "browser",
+      "Networking/WWW",
+      "www-client"
+    ],
+    "version": "134.0.1"
+  },
+  {
     "_disabled": "false",
     "pkg": "ppsspp",
     "pkg_family": "ppsspp",
@@ -723,6 +1081,86 @@
     "version": "1.18.1-2"
   },
   {
+    "_disabled": "true",
+    "_disabled_reason": {
+      "broken": [
+        {
+          "date": "2025-01-14",
+          "reason": "Doesn't do anything"
+        }
+      ]
+    },
+    "pkg": "wget2",
+    "pkg_family": "wget2",
+    "pkg_id": "nixpkgs.wget2",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-wget2/wget2/wget2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wget2/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "The successor of GNU Wget, a file and recursive website downloader",
+    "distro_pkg": {
+      "alpine": [
+        "wget2"
+      ],
+      "archlinux": {
+        "aur": [
+          "wget2",
+          "wget2-git"
+        ]
+      },
+      "debian": [
+        "wget2"
+      ],
+      "gnuguix": [
+        "wget2"
+      ],
+      "homebrew": [
+        "wget2"
+      ],
+      "nixpkgs": [
+        "wget2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/wget2/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://github.com/rockdaboot/wget2",
+      "https://gitlab.com/gnuwget/wget2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/wget2/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "wget2"
+    ],
+    "repology": [
+      "wget2"
+    ],
+    "src_url": [
+      "https://gitlab.com/gnuwget/wget2"
+    ],
+    "tag": [
+      "downloader"
+    ],
+    "version": "2.1.0"
+  },
+  {
     "_disabled": "false",
     "pkg": "zen-browser",
     "pkg_family": "zen-browser",
@@ -780,6 +1218,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.7.2t(2025-01-22at05:45:04)"
+    "version": "Twilightbuild-1.7.2t(2025-01-22at10:38:20)"
   }
 ]

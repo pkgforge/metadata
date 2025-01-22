@@ -246,8 +246,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -274,7 +274,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -293,7 +293,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -309,7 +308,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -390,12 +389,54 @@
   },
   {
     "_disabled": "false",
+    "pkg": "bucketloot",
+    "pkg_family": "bucketloot",
+    "pkg_id": "github.com.redhuntlabs.BucketLoot",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/redhuntlabs-bucketloot/bucketloot/bucketloot",
+    "bincache": "ghcr.io/pkgforge/bincache/bucketloot/official/bucketloot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bucketloot/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Automated S3-compatible bucket inspector",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bucketloot/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/redhuntlabs/BucketLoot"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/redhuntlabs/BucketLoot"
+    ],
+    "provides": [
+      "bucketloot"
+    ],
+    "src_url": [
+      "https://github.com/redhuntlabs/BucketLoot"
+    ],
+    "tag": [
+      "bugbounty",
+      "cloud",
+      "s3",
+      "secret-scanning"
+    ],
+    "version": "HEAD-69949e0-250122T104826"
+  },
+  {
+    "_disabled": "false",
     "pkg": "caddy",
     "pkg_family": "caddy",
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -643,126 +684,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "ghfetch",
-    "pkg_family": "ghfetch",
-    "pkg_id": "github.com.orangekame3.ghfetch",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/orangekame3-ghfetch/ghfetch/ghfetch",
-    "bincache": "ghcr.io/pkgforge/bincache/ghfetch/official/ghfetch",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ghfetch/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "CLI tool to fetch GitHub user information and show like neofetch",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "ghfetch",
-          "ghfetch-git"
-        ]
-      },
-      "nixpkgs": [
-        "ghfetch"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ghfetch/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/orangekame3/ghfetch"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/orangekame3/ghfetch"
-    ],
-    "provides": [
-      "ghfetch"
-    ],
-    "repology": [
-      "ghfetch"
-    ],
-    "src_url": [
-      "https://github.com/orangekame3/ghfetch"
-    ],
-    "tag": [
-      "github"
-    ],
-    "version": "HEAD-c67b77b-250122T060253"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "gitleaks",
-    "pkg_family": "gitleaks",
-    "pkg_id": "github.com.gitleaks.gitleaks",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gitleaks-gitleaks/gitleaks/gitleaks",
-    "bincache": "ghcr.io/pkgforge/bincache/gitleaks/official/gitleaks",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gitleaks/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Scan git repos (or files) for secrets using regex and entropy",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "gitleaks"
-        ]
-      },
-      "debian": [
-        "gitleaks"
-      ],
-      "homebrew": [
-        "gitleaks"
-      ],
-      "nixpkgs": [
-        "gitleaks"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gitleaks/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/gitleaks/gitleaks"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/gitleaks/gitleaks"
-    ],
-    "provides": [
-      "gitleaks"
-    ],
-    "repology": [
-      "gitleaks"
-    ],
-    "src_url": [
-      "https://github.com/gitleaks/gitleaks"
-    ],
-    "tag": [
-      "secret",
-      "security"
-    ],
-    "version": "HEAD-d6a828a-250121T195205"
-  },
-  {
-    "_disabled": "false",
     "pkg": "gitui",
     "pkg_family": "gitui",
     "pkg_id": "github.com.extrawurst.gitui",
@@ -821,180 +742,6 @@
       "tui"
     ],
     "version": "HEAD-58b4e2c-250121T120756"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "gocryptfs",
-    "pkg_family": "gocryptfs",
-    "pkg_id": "github.com.rfjakob.gocryptfs",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rfjakob-gocryptfs/gocryptfs/gocryptfs",
-    "bincache": "ghcr.io/pkgforge/bincache/gocryptfs/official/gocryptfs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gocryptfs/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Encrypted overlay filesystem written in Go",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gocryptfs/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/rfjakob/gocryptfs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rfjakob/gocryptfs"
-    ],
-    "provides": [
-      "gocryptfs",
-      "gocryptfs-xray"
-    ],
-    "repology": [
-      "gocryptfs"
-    ],
-    "src_url": [
-      "https://github.com/rfjakob/gocryptfs"
-    ],
-    "tag": [
-      "encryption",
-      "filesystem"
-    ],
-    "version": "HEAD-7d48372-250121T222105"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "gum",
-    "pkg_family": "gum",
-    "pkg_id": "github.com.charmbracelet.gum",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/charmbracelet-gum/gum/gum",
-    "bincache": "ghcr.io/pkgforge/bincache/gum/official/gum",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gum/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A tool for creating minimal interactive TUIs for shell scripts",
-    "distro_pkg": {
-      "alpine": [
-        "gum"
-      ],
-      "archlinux": {
-        "aur": [
-          "gum-git"
-        ],
-        "extra": [
-          "gum"
-        ]
-      },
-      "nixpkgs": [
-        "gum"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gum/static.official.source.yaml",
-    "homepage": [
-      "https://charm.sh",
-      "https://github.com/charmbracelet/gum"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/charmbracelet/gum"
-    ],
-    "repology": [
-      "gum-shell-tool"
-    ],
-    "src_url": [
-      "https://github.com/charmbracelet/gum"
-    ],
-    "tag": [
-      "bash",
-      "shell",
-      "tui"
-    ],
-    "version": "HEAD-05c4bb9-250121T193750"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "jujutsu",
-    "pkg_family": "jujutsu",
-    "pkg_id": "github.com.martinvonz.jj",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/martinvonz-jj/jujutsu/jujutsu",
-    "bincache": "ghcr.io/pkgforge/bincache/jujutsu/official/jj",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jujutsu/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Jujutsu is a Git-compatible DVCS that is both simple and powerful",
-    "distro_pkg": {
-      "alpine": [
-        "jujutsu"
-      ],
-      "archlinux": {
-        "aur": [
-          "jujutsu-git"
-        ],
-        "extra": [
-          "jujutsu"
-        ]
-      },
-      "nixpkgs": [
-        "jujutsu"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jujutsu/static.official.source.yaml",
-    "homepage": [
-      "https://jj-vcs.github.io/jj",
-      "https://github.com/jj-vcs/jj"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache",
-      "BSD",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jj-vcs/jj"
-    ],
-    "provides": [
-      "jj",
-      "jujutsu"
-    ],
-    "repology": [
-      "jujutsu"
-    ],
-    "src_url": [
-      "https://github.com/jj-vcs/jj"
-    ],
-    "tag": [
-      "git",
-      "vcs"
-    ],
-    "version": "HEAD-721aecb-250122T010104"
   },
   {
     "_disabled": "false",
@@ -1187,62 +934,6 @@
       "rootfs"
     ],
     "version": "5.3.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "qsv",
-    "pkg_family": "qsv",
-    "pkg_id": "github.com.dathere.qsv",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dathere-qsv/qsv/qsv",
-    "bincache": "ghcr.io/pkgforge/bincache/qsv/official/qsv",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qsv/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Blazing-fast Data-Wrangling toolkit",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "qsv",
-          "qsv-bin"
-        ]
-      },
-      "nixpkgs": [
-        "qsv"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qsv/static.official.source.yaml",
-    "homepage": [
-      "https://qsv.dathere.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT",
-      "Unlicense"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dathere/qsv"
-    ],
-    "repology": [
-      "qsv"
-    ],
-    "src_url": [
-      "https://github.com/dathere/qsv"
-    ],
-    "tag": [
-      "csv",
-      "textproc"
-    ],
-    "version": "HEAD-b83c83d-250121T223326"
   },
   {
     "_disabled": "false",

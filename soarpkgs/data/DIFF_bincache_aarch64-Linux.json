@@ -246,8 +246,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -274,7 +274,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -293,6 +293,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -308,7 +309,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "1.37.0"
+    "version": "250118T141142"
   },
   {
     "_disabled": "false",
@@ -389,78 +390,18 @@
   },
   {
     "_disabled": "false",
-    "pkg": "binocle",
-    "pkg_family": "binocle",
-    "pkg_id": "github.com.sharkdp.binocle",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sharkdp-binocle/binocle/binocle",
-    "bincache": "ghcr.io/pkgforge/bincache/binocle/official/binocle",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/binocle/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A graphical tool to visualize binary data",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "binocle-git"
-        ],
-        "extra": [
-          "binocle"
-        ]
-      },
-      "nixpkgs": [
-        "binocle"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/binocle/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/sharkdp/binocle"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sharkdp/binocle"
-    ],
-    "provides": [
-      "binocle"
-    ],
-    "repology": [
-      "binocle"
-    ],
-    "src_url": [
-      "https://github.com/sharkdp/binocle"
-    ],
-    "tag": [
-      "binary-data",
-      "reverse-engineering"
-    ],
-    "version": "HEAD-1014e8b-250121T221605"
-  },
-  {
-    "_disabled": "false",
     "pkg": "caddy",
     "pkg_family": "caddy",
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -483,7 +424,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -503,7 +444,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -516,7 +457,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -639,110 +580,6 @@
       "git-commit"
     ],
     "version": "HEAD-f8cfa57-250111T105227"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "cotp",
-    "pkg_family": "cotp",
-    "pkg_id": "github.com.replydev.cotp",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/replydev-cotp/cotp/cotp",
-    "bincache": "ghcr.io/pkgforge/bincache/cotp/official/cotp",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/cotp/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Encrypted CLI TOTP/HOTP Authenticator",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "cotp-git"
-        ],
-        "extra": [
-          "cotp"
-        ]
-      },
-      "nixpkgs": [
-        "cotp"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/cotp/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/replydev/cotp"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0-only"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/replydev/cotp"
-    ],
-    "provides": [
-      "cotp"
-    ],
-    "repology": [
-      "cotp"
-    ],
-    "src_url": [
-      "https://github.com/replydev/cotp"
-    ],
-    "tag": [
-      "authy",
-      "totp"
-    ],
-    "version": "HEAD-fbd0a8d-250121T211950"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "csprecon",
-    "pkg_family": "csprecon",
-    "pkg_id": "github.com.edoardottt.csprecon",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/edoardottt-csprecon/csprecon/csprecon",
-    "bincache": "ghcr.io/pkgforge/bincache/csprecon/official/csprecon",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/csprecon/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Discover new target domains using Content Security Policy",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/csprecon/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/edoardottt/csprecon"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/edoardottt/csprecon"
-    ],
-    "provides": [
-      "csprecon"
-    ],
-    "repology": [
-      "csprecon"
-    ],
-    "src_url": [
-      "https://github.com/edoardottt/csprecon"
-    ],
-    "tag": [
-      "bugbounty",
-      "security"
-    ],
-    "version": "HEAD-9fb85bf-250122T094724"
   },
   {
     "_disabled": "false",

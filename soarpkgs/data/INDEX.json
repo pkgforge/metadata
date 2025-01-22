@@ -1895,7 +1895,7 @@
     "tag": [
       "file-server"
     ],
-    "version": "beta"
+    "version": "v3.41.0"
   },
   {
     "_disabled": "false",
@@ -3543,6 +3543,7 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
@@ -4585,7 +4586,7 @@
       "security",
       "static-analysis"
     ],
-    "version": "HEAD-afb1456-250106T131745"
+    "version": "HEAD-a452532-250122T155001"
   },
   {
     "_disabled": "false",
@@ -9168,7 +9169,7 @@
       "bugbounty",
       "security"
     ],
-    "version": "HEAD-9fb85bf-250122T094724"
+    "version": "HEAD-837e516-250122T160803"
   },
   {
     "_disabled": "false",
@@ -23879,6 +23880,51 @@
   },
   {
     "_disabled": "false",
+    "pkg": "lklfuse",
+    "pkg_family": "lklfuse",
+    "pkg_id": "ppkg.lklfuse",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-lklfuse/lklfuse/lklfuse",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lklfuse/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Use LKL to mount Linux-supported filesystems in userspace via FUSE",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lklfuse/static.official.stable.yaml",
+    "homepage": [
+      "https://lkl.github.io/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "lklfuse"
+    ],
+    "repology": [
+      "lkl"
+    ],
+    "src_url": [
+      "https://github.com/lkl/linux"
+    ],
+    "tag": [
+      "kernel"
+    ],
+    "version": "1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "lnav",
     "pkg_family": "lnav",
     "pkg_id": "github.com.tstack.lnav",
@@ -31075,6 +31121,73 @@
   },
   {
     "_disabled": "false",
+    "pkg": "proot",
+    "pkg_family": "proot",
+    "pkg_id": "ppkg.proot",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-proot/proot/proot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/proot/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "User-space implementation of chroot, mount --bind and binfmt_misc",
+    "distro_pkg": {
+      "alpine": [
+        "proot"
+      ],
+      "archlinux": {
+        "aur": [
+          "proot",
+          "proot-git"
+        ]
+      },
+      "debian": [
+        "proot"
+      ],
+      "gnuguix": [
+        "proot",
+        "proot-static"
+      ],
+      "nixpkgs": [
+        "proot"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/proot/static.official.stable.yaml",
+    "homepage": [
+      "https://proot-me.github.io/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "proot"
+    ],
+    "repology": [
+      "proot"
+    ],
+    "src_url": [
+      "https://github.com/proot-me/proot"
+    ],
+    "tag": [
+      "chroot",
+      "rootfs"
+    ],
+    "version": "5.4.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "proxify",
     "pkg_family": "proxify",
     "pkg_id": "github.com.projectdiscovery.proxify",
@@ -31777,7 +31890,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-070b743-250122T080519"
+    "version": "HEAD-f96859f-250122T094133"
   },
   {
     "_disabled": "false",
@@ -39031,7 +39144,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-042ed6b-250121T174755"
+    "version": "HEAD-cb3b1a1-250122T063459"
   },
   {
     "_disabled": "false",
@@ -41050,7 +41163,7 @@
       "busybox",
       "coreboot"
     ],
-    "version": "HEAD-4f8f6cd-250121T202628"
+    "version": "HEAD-fab6559-250122T153138"
   },
   {
     "_disabled": "false",
@@ -43848,6 +43961,143 @@
   },
   {
     "_disabled": "false",
+    "pkg": "xdo",
+    "pkg_family": "xdo",
+    "pkg_id": "ppkg.xdo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xdo/xdo/xdo",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xdo/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Small X utility to perform elementary actions on windows",
+    "distro_pkg": {
+      "alpine": [
+        "xdo"
+      ],
+      "archlinux": {
+        "aur": [
+          "xdo-git"
+        ],
+        "extra": [
+          "xdo"
+        ]
+      },
+      "debian": [
+        "xdo"
+      ],
+      "gnuguix": [
+        "xdo"
+      ],
+      "nixpkgs": [
+        "xdo"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xdo/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/baskerville/xdo"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-2-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "xdo"
+    ],
+    "repology": [
+      "xdo"
+    ],
+    "src_url": [
+      "https://github.com/baskerville/xdo"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "0.5.7"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xdotool",
+    "pkg_family": "xdotool",
+    "pkg_id": "ppkg.xdotool",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xdotool/xdotool/xdotool",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xdotool/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Simulate keyboard input and mouse activity, move and resize windows",
+    "distro_pkg": {
+      "alpine": [
+        "xdotool"
+      ],
+      "archlinux": {
+        "aur": [
+          "xdotool-git"
+        ],
+        "extra": [
+          "xdotool"
+        ]
+      },
+      "debian": [
+        "xdotool"
+      ],
+      "gnuguix": [
+        "xdotool"
+      ],
+      "homebrew": [
+        "xdotool"
+      ],
+      "nixpkgs": [
+        "xdotool"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xdotool/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/jordansissel/xdotool"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "xdotool"
+    ],
+    "repology": [
+      "xdotool"
+    ],
+    "src_url": [
+      "https://github.com/jordansissel/xdotool"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.20211022.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "xmrig",
     "pkg_family": "xmrig",
     "pkg_id": "github.com.xmrig.xmrig",
@@ -44452,7 +44702,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-234809d-250122T220045"
+    "version": "HEAD-abb4325-250122T225117"
   },
   {
     "_disabled": "false",

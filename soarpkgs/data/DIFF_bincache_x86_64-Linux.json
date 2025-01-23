@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -288,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -814,13 +813,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -843,7 +842,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -863,7 +862,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy"
+      "caddy:caddy-beta"
     ],
     "repology": [
       "caddy"
@@ -876,7 +875,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.1"
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -3066,6 +3065,72 @@
   },
   {
     "_disabled": "false",
+    "pkg": "k9s",
+    "pkg_family": "k9s",
+    "pkg_id": "github.com.derailed.k9s",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/derailed-k9s/k9s/k9s",
+    "bincache": "ghcr.io/pkgforge/bincache/k9s/official/k9s",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/k9s/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Terminal UI to interact with Kubernetes clusters",
+    "distro_pkg": {
+      "alpine": [
+        "k9s"
+      ],
+      "archlinux": {
+        "aur": [
+          "k9s-git"
+        ],
+        "extra": [
+          "k9s"
+        ]
+      },
+      "homebrew": [
+        "k9s"
+      ],
+      "nixpkgs": [
+        "k9s"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/k9s/static.official.stable.yaml",
+    "homepage": [
+      "https://k9scli.io",
+      "https://github.com/derailed/k9s"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/derailed/k9s"
+    ],
+    "provides": [
+      "k9s"
+    ],
+    "repology": [
+      "k9s"
+    ],
+    "src_url": [
+      "https://github.com/derailed/k9s"
+    ],
+    "tag": [
+      "kubernetes"
+    ],
+    "version": "HEAD-9aff93e-250122T233046"
+  },
+  {
+    "_disabled": "false",
     "pkg": "kopia",
     "pkg_family": "kopia",
     "pkg_id": "github.com.kopia.kopia",
@@ -3504,6 +3569,57 @@
       "torrent"
     ],
     "version": "HEAD-1e74a44-230822T105548"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mc",
+    "pkg_family": "mc",
+    "pkg_id": "github.com.minio.mc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/minio-mc/mc/mc",
+    "bincache": "ghcr.io/pkgforge/bincache/mc/official/mc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mc/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Unix like utilities for object store",
+    "distro_pkg": {
+      "homebrew": [
+        "minio-mc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mc/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/minio/mc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/minio/mc"
+    ],
+    "repology": [
+      "minio-mc"
+    ],
+    "src_url": [
+      "https://github.com/minio/mc"
+    ],
+    "tag": [
+      "bucket",
+      "s3",
+      "storage"
+    ],
+    "version": "HEAD-5cfac09-250122T225138"
   },
   {
     "_disabled": "false",
@@ -4533,7 +4649,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-befedda-250122T111946"
+    "version": "HEAD-93e1217-250122T222451"
   },
   {
     "_disabled": "false",
@@ -4750,6 +4866,70 @@
       "proxy"
     ],
     "version": "HEAD-62f0278-250102T215256"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "pixi",
+    "pkg_family": "pixi",
+    "pkg_id": "github.com.prefix-dev.pixi",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dev-pixi/pixi/pixi",
+    "bincache": "ghcr.io/pkgforge/bincache/pixi/official/pixi",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pixi/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Conda Package management made easy",
+    "distro_pkg": {
+      "alpine": [
+        "pixi"
+      ],
+      "archlinux": {
+        "extra": [
+          "pixi"
+        ]
+      },
+      "homebrew": [
+        "pixi"
+      ],
+      "nixpkgs": [
+        "pixi"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pixi/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/prefix-dev/pixi"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/prefix-dev/pixi"
+    ],
+    "provides": [
+      "pixi:conda"
+    ],
+    "repology": [
+      "pixi"
+    ],
+    "src_url": [
+      "https://github.com/prefix-dev/pixi"
+    ],
+    "tag": [
+      "conda",
+      "mamba",
+      "package-manager"
+    ],
+    "version": "v0.40.3"
   },
   {
     "_disabled": "false",

@@ -178,6 +178,64 @@
   },
   {
     "_disabled": "false",
+    "pkg": "apkeep",
+    "pkg_family": "apkeep",
+    "pkg_id": "github.com.EFForg.apkeep",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/efforg-apkeep/apkeep/apkeep",
+    "bincache": "ghcr.io/pkgforge/bincache/apkeep/official/apkeep",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/apkeep/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line tool for downloading APK files from various sources",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "apkeep"
+        ]
+      },
+      "nixpkgs": [
+        "apkeep"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/apkeep/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/EFForg/apkeep"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/EFForg/apkeep"
+    ],
+    "provides": [
+      "apkeep"
+    ],
+    "repology": [
+      "apkeep"
+    ],
+    "src_url": [
+      "https://github.com/EFForg/apkeep"
+    ],
+    "tag": [
+      "android",
+      "apk",
+      "apk-downloader"
+    ],
+    "version": "HEAD-ca8f515-250123T140429"
+  },
+  {
+    "_disabled": "false",
     "pkg": "archlinux",
     "pkg_family": "archlinux",
     "pkg_id": "github.com.Azathothas.docker-archlinux",
@@ -555,159 +613,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "bubblewrap",
-    "pkg_family": "bubblewrap",
-    "pkg_id": "github.com.containers.bubblewrap.patched",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bubblewrap-patched/bubblewrap/bubblewrap",
-    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/patched/bwrap",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.patched.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Namespaces-powered chroot-like solution for Unprivileged Sandboxing (Patched)",
-    "distro_pkg": {
-      "alpine": [
-        "bubblewrap"
-      ],
-      "archlinux": {
-        "aur": [
-          "bubblewrap-git"
-        ],
-        "extra": [
-          "bubblewrap"
-        ]
-      },
-      "debian": [
-        "bubblewrap"
-      ],
-      "gnuguix": [
-        "bubblewrap"
-      ],
-      "homebrew": [
-        "bubblewrap"
-      ],
-      "nixpkgs": [
-        "bubblewrap"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bubblewrap/static.patched.source.yaml",
-    "homepage": [
-      "https://github.com/containers/bubblewrap"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "LGPL-2.0-or-later"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containers/bubblewrap",
-      "The bwrap-patched binary is patched to allow nested bubblewraps with capabilities (INSECURE)",
-      "Learn more @ https://github.com/VHSgunzo/bubblewrap-static/blob/main/caps.patch"
-    ],
-    "provides": [
-      "bwrap=>bwrap-patched",
-      "bwrap=>bubblewrap-patched"
-    ],
-    "repology": [
-      "bubblewrap"
-    ],
-    "src_url": [
-      "https://github.com/containers/bubblewrap"
-    ],
-    "tag": [
-      "container",
-      "namespace",
-      "sandbox"
-    ],
-    "version": "HEAD-9ca3b05-241030T160747"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "bubblewrap",
-    "pkg_family": "bubblewrap",
-    "pkg_id": "github.com.containers.bubblewrap.patched.glibc",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/patched-glibc/bubblewrap/bubblewrap",
-    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/glibc/patched",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.patched.glibc.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Namespaces-powered chroot-like solution for Unprivileged Sandboxing (Patched)",
-    "distro_pkg": {
-      "alpine": [
-        "bubblewrap"
-      ],
-      "archlinux": {
-        "aur": [
-          "bubblewrap-git"
-        ],
-        "extra": [
-          "bubblewrap"
-        ]
-      },
-      "debian": [
-        "bubblewrap"
-      ],
-      "gnuguix": [
-        "bubblewrap"
-      ],
-      "homebrew": [
-        "bubblewrap"
-      ],
-      "nixpkgs": [
-        "bubblewrap"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bubblewrap/static.patched.glibc.yaml",
-    "homepage": [
-      "https://github.com/containers/bubblewrap"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "LGPL-2.0-or-later"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containers/bubblewrap",
-      "The bwrap-patched binary is patched to allow nested bubblewraps with capabilities (INSECURE)",
-      "Learn more @ https://github.com/VHSgunzo/bubblewrap-static/blob/main/caps.patch",
-      "Statically Linked on Debian (GLIBC)"
-    ],
-    "provides": [
-      "bwrap=>bwrap-patched",
-      "bwrap=>bubblewrap-patched"
-    ],
-    "repology": [
-      "bubblewrap"
-    ],
-    "src_url": [
-      "https://github.com/containers/bubblewrap"
-    ],
-    "tag": [
-      "container",
-      "namespace",
-      "sandbox"
-    ],
-    "version": "HEAD-9ca3b05-241030T160747"
-  },
-  {
-    "_disabled": "false",
     "pkg": "byp4xx",
     "pkg_family": "byp4xx",
     "pkg_id": "github.com.lobuhi.byp4xx",
@@ -765,7 +670,6 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
@@ -2520,6 +2424,51 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gocryptfs",
+    "pkg_family": "gocryptfs",
+    "pkg_id": "github.com.rfjakob.gocryptfs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rfjakob-gocryptfs/gocryptfs/gocryptfs",
+    "bincache": "ghcr.io/pkgforge/bincache/gocryptfs/official/gocryptfs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gocryptfs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Encrypted overlay filesystem written in Go",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gocryptfs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rfjakob/gocryptfs"
+    ],
+    "provides": [
+      "gocryptfs",
+      "gocryptfs-xray"
+    ],
+    "repology": [
+      "gocryptfs"
+    ],
+    "src_url": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "tag": [
+      "encryption",
+      "filesystem"
+    ],
+    "version": "HEAD-5169c47-250123T224144"
+  },
+  {
+    "_disabled": "false",
     "pkg": "golinkfinder",
     "pkg_family": "golinkfinder",
     "pkg_id": "github.com.0xsha.GoLinkFinder",
@@ -2617,7 +2566,7 @@
     "tag": [
       "matrix"
     ],
-    "version": "HEAD-f94d84b-250113T181306"
+    "version": "HEAD-4649689-250124T001458"
   },
   {
     "_disabled": "false",
@@ -5154,6 +5103,69 @@
       "text-editor"
     ],
     "version": "HEAD-4a2ef25-241224T135507"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "pdfcpu",
+    "pkg_family": "pdfcpu",
+    "pkg_id": "github.com.pdfcpu.pdfcpu",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pdfcpu-pdfcpu/pdfcpu/pdfcpu",
+    "bincache": "ghcr.io/pkgforge/bincache/pdfcpu/official/pdfcpu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pdfcpu/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A PDF processor written in Go",
+    "distro_pkg": {
+      "alpine": [
+        "pdfcpu"
+      ],
+      "archlinux": {
+        "aur": [
+          "pdfcpu",
+          "pdfcpu-bin"
+        ]
+      },
+      "homebrew": [
+        "pdfcpu"
+      ],
+      "nixpkgs": [
+        "pdfcpu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pdfcpu/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/pdfcpu/pdfcpu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pdfcpu/pdfcpu"
+    ],
+    "provides": [
+      "pdfcpu"
+    ],
+    "repology": [
+      "pdfcpu"
+    ],
+    "src_url": [
+      "https://github.com/pdfcpu/pdfcpu"
+    ],
+    "tag": [
+      "pdf"
+    ],
+    "version": "HEAD-a9d7863-250123T221913"
   },
   {
     "_disabled": "false",
@@ -8061,6 +8073,7 @@
     "pkg_id": "ppkg.xdo",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xdo/xdo/xdo",
+    "bincache": "ghcr.io/pkgforge/bincache/xdo/official/xdo",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xdo/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -8128,6 +8141,7 @@
     "pkg_id": "ppkg.xdotool",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xdotool/xdotool/xdotool",
+    "bincache": "ghcr.io/pkgforge/bincache/xdotool/official/xdotool",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xdotool/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",

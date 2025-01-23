@@ -178,6 +178,64 @@
   },
   {
     "_disabled": "false",
+    "pkg": "apkeep",
+    "pkg_family": "apkeep",
+    "pkg_id": "github.com.EFForg.apkeep",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/efforg-apkeep/apkeep/apkeep",
+    "bincache": "ghcr.io/pkgforge/bincache/apkeep/official/apkeep",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/apkeep/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line tool for downloading APK files from various sources",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "apkeep"
+        ]
+      },
+      "nixpkgs": [
+        "apkeep"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/apkeep/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/EFForg/apkeep"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/EFForg/apkeep"
+    ],
+    "provides": [
+      "apkeep"
+    ],
+    "repology": [
+      "apkeep"
+    ],
+    "src_url": [
+      "https://github.com/EFForg/apkeep"
+    ],
+    "tag": [
+      "android",
+      "apk",
+      "apk-downloader"
+    ],
+    "version": "HEAD-ca8f515-250123T140429"
+  },
+  {
+    "_disabled": "false",
     "pkg": "archlinux",
     "pkg_family": "archlinux",
     "pkg_id": "github.com.Azathothas.docker-archlinux",
@@ -641,13 +699,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -670,7 +728,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -690,7 +748,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -703,7 +761,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -2075,6 +2133,51 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gocryptfs",
+    "pkg_family": "gocryptfs",
+    "pkg_id": "github.com.rfjakob.gocryptfs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rfjakob-gocryptfs/gocryptfs/gocryptfs",
+    "bincache": "ghcr.io/pkgforge/bincache/gocryptfs/official/gocryptfs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gocryptfs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Encrypted overlay filesystem written in Go",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gocryptfs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rfjakob/gocryptfs"
+    ],
+    "provides": [
+      "gocryptfs",
+      "gocryptfs-xray"
+    ],
+    "repology": [
+      "gocryptfs"
+    ],
+    "src_url": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "tag": [
+      "encryption",
+      "filesystem"
+    ],
+    "version": "HEAD-5169c47-250123T224144"
+  },
+  {
+    "_disabled": "false",
     "pkg": "golinkfinder",
     "pkg_family": "golinkfinder",
     "pkg_id": "github.com.0xsha.GoLinkFinder",
@@ -2172,7 +2275,7 @@
     "tag": [
       "matrix"
     ],
-    "version": "HEAD-f94d84b-250113T181306"
+    "version": "HEAD-4649689-250124T001458"
   },
   {
     "_disabled": "false",
@@ -4297,6 +4400,69 @@
       "text-editor"
     ],
     "version": "HEAD-4a2ef25-241224T135507"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "pdfcpu",
+    "pkg_family": "pdfcpu",
+    "pkg_id": "github.com.pdfcpu.pdfcpu",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pdfcpu-pdfcpu/pdfcpu/pdfcpu",
+    "bincache": "ghcr.io/pkgforge/bincache/pdfcpu/official/pdfcpu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pdfcpu/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A PDF processor written in Go",
+    "distro_pkg": {
+      "alpine": [
+        "pdfcpu"
+      ],
+      "archlinux": {
+        "aur": [
+          "pdfcpu",
+          "pdfcpu-bin"
+        ]
+      },
+      "homebrew": [
+        "pdfcpu"
+      ],
+      "nixpkgs": [
+        "pdfcpu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pdfcpu/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/pdfcpu/pdfcpu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pdfcpu/pdfcpu"
+    ],
+    "provides": [
+      "pdfcpu"
+    ],
+    "repology": [
+      "pdfcpu"
+    ],
+    "src_url": [
+      "https://github.com/pdfcpu/pdfcpu"
+    ],
+    "tag": [
+      "pdf"
+    ],
+    "version": "HEAD-a9d7863-250123T221913"
   },
   {
     "_disabled": "false",
@@ -7081,126 +7247,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "zdns",
-    "pkg_family": "zdns",
-    "pkg_id": "github.com.zmap.zdns",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zmap-zdns/zdns/zdns",
-    "bincache": "ghcr.io/pkgforge/bincache/zdns/official/zdns",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zdns/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Fast CLI DNS Lookup Tool",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "zdns-git"
-        ]
-      },
-      "nixpkgs": [
-        "zdns"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zdns/static.official.source.yaml",
-    "homepage": [
-      "https://zmap.io",
-      "https://github.com/zmap/zdns"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/zmap/zdns"
-    ],
-    "repology": [
-      "zdns"
-    ],
-    "src_url": [
-      "https://github.com/zmap/zdns"
-    ],
-    "tag": [
-      "dns"
-    ],
-    "version": "HEAD-7f4fb49-250110T122533"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zellij",
-    "pkg_family": "zellij",
-    "pkg_id": "github.com.zellij-org.zellij",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/org-zellij/zellij/zellij",
-    "bincache": "ghcr.io/pkgforge/bincache/zellij/official/zellij",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zellij/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Versatile, extensible terminal multiplexer",
-    "distro_pkg": {
-      "alpine": [
-        "zellij"
-      ],
-      "archlinux": {
-        "aur": [
-          "zellij-git"
-        ],
-        "extra": [
-          "zellij"
-        ]
-      },
-      "homebrew": [
-        "zellij"
-      ],
-      "nixpkgs": [
-        "zellij"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zellij/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/zellij-org/zellij"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/zellij-org/zellij"
-    ],
-    "provides": [
-      "zellij"
-    ],
-    "repology": [
-      "zellij"
-    ],
-    "src_url": [
-      "https://github.com/zellij-org/zellij"
-    ],
-    "tag": [
-      "multiplexer",
-      "terminal"
-    ],
-    "version": "v0.41.2"
-  },
-  {
-    "_disabled": "false",
     "pkg": "zenith",
     "pkg_family": "zenith",
     "pkg_id": "github.com.bvaisvil.zenith",
@@ -7259,240 +7305,5 @@
       "process-monitor"
     ],
     "version": "HEAD-a867d77-241231T155951"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zfind",
-    "pkg_family": "zfind",
-    "pkg_id": "github.com.laktak.zfind",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/laktak-zfind/zfind/zfind",
-    "bincache": "ghcr.io/pkgforge/bincache/zfind/official/zfind",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zfind/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Search for files (even inside tar/zip/7z/rar) using a SQL-WHERE filter",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "zfind",
-          "zfind-bin"
-        ]
-      },
-      "homebrew": [
-        "zfind"
-      ],
-      "nixpkgs": [
-        "zfind"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zfind/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/laktak/zfind"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/laktak/zfind"
-    ],
-    "provides": [
-      "zfind"
-    ],
-    "repology": [
-      "zfind"
-    ],
-    "src_url": [
-      "https://github.com/laktak/zfind"
-    ],
-    "tag": [
-      "sql"
-    ],
-    "version": "HEAD-f548c97-241106T221249"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zfxtop",
-    "pkg_family": "zfxtop",
-    "pkg_id": "github.com.ssleert.zfxtop",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ssleert-zfxtop/zfxtop/zfxtop",
-    "bincache": "ghcr.io/pkgforge/bincache/zfxtop/official/zfxtop",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zfxtop/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "fetch top for gen Z with X written by bubbletea enjoyer",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "zfxtop"
-        ]
-      },
-      "nixpkgs": [
-        "zfxtop"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zfxtop/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/ssleert/zfxtop"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD2"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ssleert/zfxtop"
-    ],
-    "repology": [
-      "zfxtop"
-    ],
-    "src_url": [
-      "https://github.com/ssleert/zfxtop"
-    ],
-    "tag": [
-      "btop",
-      "htop",
-      "monitor"
-    ],
-    "version": "HEAD-1b93301-231106T043422"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zgrab2",
-    "pkg_family": "zgrab2",
-    "pkg_id": "github.com.zmap.zgrab2",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zmap-zgrab2/zgrab2/zgrab2",
-    "bincache": "ghcr.io/pkgforge/bincache/zgrab2/official/zgrab2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zgrab2/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Fast Go Application Scanner",
-    "distro_pkg": {
-      "nixpkgs": [
-        "zgrab2"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zgrab2/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/zmap/zgrab2"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "APACHE",
-      "ISC"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/zmap/zgrab2"
-    ],
-    "repology": [
-      "zgrab2"
-    ],
-    "src_url": [
-      "https://github.com/zmap/zgrab2"
-    ],
-    "tag": [
-      "security"
-    ],
-    "version": "HEAD-aee5545-250123T130455"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zoxide",
-    "pkg_family": "zoxide",
-    "pkg_id": "github.com.ajeetdsouza.zoxide",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ajeetdsouza-zoxide/zoxide/zoxide",
-    "bincache": "ghcr.io/pkgforge/bincache/zoxide/official/zoxide",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zoxide/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Fuzzy cd command for interactive shells",
-    "distro_pkg": {
-      "alpine": [
-        "zoxide"
-      ],
-      "archlinux": {
-        "aur": [
-          "zoxide-git"
-        ],
-        "extra": [
-          "zoxide"
-        ]
-      },
-      "debian": [
-        "rust-zoxide"
-      ],
-      "gnuguix": [
-        "zoxide"
-      ],
-      "homebrew": [
-        "zoxide"
-      ],
-      "nixpkgs": [
-        "zoxide"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zoxide/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/ajeetdsouza/zoxide"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/ajeetdsouza/zoxide"
-    ],
-    "provides": [
-      "zoxide==z"
-    ],
-    "repology": [
-      "zoxide"
-    ],
-    "src_url": [
-      "https://github.com/ajeetdsouza/zoxide"
-    ],
-    "tag": [
-      "cd"
-    ],
-    "version": "v0.9.6"
   }
 ]

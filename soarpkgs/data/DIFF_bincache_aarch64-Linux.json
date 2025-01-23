@@ -42,7 +42,7 @@
       "utility",
       "bluetooth"
     ],
-    "version": "HEAD-5caadd6-250123T172151"
+    "version": "HEAD-b6e4e5a-250123T192007"
   },
   {
     "_disabled": "false",
@@ -641,6 +641,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
@@ -1774,6 +1775,63 @@
   },
   {
     "_disabled": "false",
+    "pkg": "ghfetch",
+    "pkg_family": "ghfetch",
+    "pkg_id": "github.com.orangekame3.ghfetch",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/orangekame3-ghfetch/ghfetch/ghfetch",
+    "bincache": "ghcr.io/pkgforge/bincache/ghfetch/official/ghfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ghfetch/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI tool to fetch GitHub user information and show like neofetch",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ghfetch",
+          "ghfetch-git"
+        ]
+      },
+      "nixpkgs": [
+        "ghfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ghfetch/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/orangekame3/ghfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/orangekame3/ghfetch"
+    ],
+    "provides": [
+      "ghfetch"
+    ],
+    "repology": [
+      "ghfetch"
+    ],
+    "src_url": [
+      "https://github.com/orangekame3/ghfetch"
+    ],
+    "tag": [
+      "github"
+    ],
+    "version": "HEAD-20cb44b-250123T180417"
+  },
+  {
+    "_disabled": "false",
     "pkg": "gitlab-cli",
     "pkg_family": "gitlab-cli",
     "pkg_id": "gitlab.com.gitlab-org.cli",
@@ -2831,7 +2889,7 @@
     "tag": [
       "ipfs"
     ],
-    "version": "HEAD-a26aee1-250122T181904"
+    "version": "HEAD-82945a9-250123T190711"
   },
   {
     "_disabled": "false",
@@ -3588,71 +3646,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "nerdctl",
-    "pkg_family": "nerdctl",
-    "pkg_id": "github.com.containerd.nerdctl",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containerd-nerdctl/nerdctl/nerdctl",
-    "bincache": "ghcr.io/pkgforge/bincache/nerdctl/official/nerdctl",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nerdctl/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Docker-compatible CLI for containerd, with support for Compose, Rootless, eStargz, OCIcrypt, IPFS",
-    "distro_pkg": {
-      "alpine": [
-        "nerdctl"
-      ],
-      "archlinux": {
-        "aur": [
-          "nerdctl-git"
-        ],
-        "extra": [
-          "nerdctl"
-        ]
-      },
-      "homebrew": [
-        "nerdctl"
-      ],
-      "nixpkgs": [
-        "nerdctl"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nerdctl/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/containerd/nerdctl"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containerd/nerdctl"
-    ],
-    "provides": [
-      "nerdctl"
-    ],
-    "repology": [
-      "nerdctl"
-    ],
-    "src_url": [
-      "https://github.com/containerd/nerdctl"
-    ],
-    "tag": [
-      "container"
-    ],
-    "version": "HEAD-300a705-250122T205611"
-  },
-  {
-    "_disabled": "false",
     "pkg": "netbird",
     "pkg_family": "netbird",
     "pkg_id": "github.com.netbirdio.netbird",
@@ -4356,70 +4349,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "pixi",
-    "pkg_family": "pixi",
-    "pkg_id": "github.com.prefix-dev.pixi",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dev-pixi/pixi/pixi",
-    "bincache": "ghcr.io/pkgforge/bincache/pixi/official/pixi",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pixi/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Conda Package management made easy",
-    "distro_pkg": {
-      "alpine": [
-        "pixi"
-      ],
-      "archlinux": {
-        "extra": [
-          "pixi"
-        ]
-      },
-      "homebrew": [
-        "pixi"
-      ],
-      "nixpkgs": [
-        "pixi"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pixi/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/prefix-dev/pixi"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/prefix-dev/pixi"
-    ],
-    "provides": [
-      "pixi:conda"
-    ],
-    "repology": [
-      "pixi"
-    ],
-    "src_url": [
-      "https://github.com/prefix-dev/pixi"
-    ],
-    "tag": [
-      "conda",
-      "mamba",
-      "package-manager"
-    ],
-    "version": "v0.40.3"
-  },
-  {
-    "_disabled": "false",
     "pkg": "pixterm",
     "pkg_family": "pixterm",
     "pkg_id": "github.com.eliukblau.pixterm",
@@ -4520,62 +4449,6 @@
       "monitor"
     ],
     "version": "HEAD-a367254-231013T135550"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "pls",
-    "pkg_family": "pls",
-    "pkg_id": "github.com.pls-rs.pls",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-pls/pls/pls",
-    "bincache": "ghcr.io/pkgforge/bincache/pls/official/pls",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pls/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A Prettier and Powerful ls(1) for the Pros",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "pls",
-          "pls-git"
-        ]
-      },
-      "nixpkgs": [
-        "pls"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pls/static.official.source.yaml",
-    "homepage": [
-      "https://pls.cli.rs",
-      "https://github.com/pls-rs/pls"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL3",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pls-rs/pls"
-    ],
-    "repology": [
-      "pls"
-    ],
-    "src_url": [
-      "https://github.com/pls-rs/pls"
-    ],
-    "tag": [
-      "ls"
-    ],
-    "version": "HEAD-5cb1bd8-250123T160538"
   },
   {
     "_disabled": "true",
@@ -4888,62 +4761,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "qsv",
-    "pkg_family": "qsv",
-    "pkg_id": "github.com.dathere.qsv",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dathere-qsv/qsv/qsv",
-    "bincache": "ghcr.io/pkgforge/bincache/qsv/official/qsv",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qsv/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Blazing-fast Data-Wrangling toolkit",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "qsv",
-          "qsv-bin"
-        ]
-      },
-      "nixpkgs": [
-        "qsv"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qsv/static.official.source.yaml",
-    "homepage": [
-      "https://qsv.dathere.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT",
-      "Unlicense"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dathere/qsv"
-    ],
-    "repology": [
-      "qsv"
-    ],
-    "src_url": [
-      "https://github.com/dathere/qsv"
-    ],
-    "tag": [
-      "csv",
-      "textproc"
-    ],
-    "version": "HEAD-abcd365-250123T112836"
-  },
-  {
-    "_disabled": "false",
     "pkg": "rclone",
     "pkg_family": "rclone",
     "pkg_id": "github.com.rclone.rclone",
@@ -5091,65 +4908,6 @@
       "security"
     ],
     "version": "HEAD-4b494cd-241212T142001"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "revive",
-    "pkg_family": "revive",
-    "pkg_id": "github.com.mgechev.revive",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mgechev-revive/revive/revive",
-    "bincache": "ghcr.io/pkgforge/bincache/revive/official/revive",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/revive/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Faster, stricter, configurable, extensible, and beautiful drop-in replacement for golint",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "revive"
-        ]
-      },
-      "homebrew": [
-        "revive"
-      ],
-      "nixpkgs": [
-        "revive"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/revive/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/mgechev/revive"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mgechev/revive"
-    ],
-    "provides": [
-      "revive"
-    ],
-    "repology": [
-      "revive"
-    ],
-    "src_url": [
-      "https://github.com/mgechev/revive"
-    ],
-    "tag": [
-      "linter"
-    ],
-    "version": "HEAD-d9c61c1-250123T091724"
   },
   {
     "_disabled": "false",
@@ -5443,43 +5201,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "sic",
-    "pkg_family": "sic",
-    "pkg_id": "github.com.foresterre.sic",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/foresterre-sic/sic/sic",
-    "bincache": "ghcr.io/pkgforge/bincache/sic/official/sic",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sic/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Accessible image processing and conversion from the terminal using image-rs/image",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sic/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/foresterre/sic"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/foresterre/sic"
-    ],
-    "src_url": [
-      "https://github.com/foresterre/sic"
-    ],
-    "tag": [
-      "image"
-    ],
-    "version": "HEAD-0ccbc1f-250123T010329"
-  },
-  {
-    "_disabled": "false",
     "pkg": "simplex-chat",
     "pkg_family": "simplex-chat",
     "pkg_id": "ppkg.simplex-chat",
@@ -5751,7 +5472,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-63cf070-250121T213535"
+    "version": "HEAD-b2827f7-250123T232501"
   },
   {
     "_disabled": "false",
@@ -6487,6 +6208,72 @@
       "Utility"
     ],
     "version": "HEAD-62725d9-241126T084636"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tokei",
+    "pkg_family": "tokei",
+    "pkg_id": "github.com.XAMPPRocky.tokei",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xampprocky-tokei/tokei/tokei",
+    "bincache": "ghcr.io/pkgforge/bincache/tokei/official/tokei",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tokei/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A blazingly fast CLOC(Count Lines Of Code) program",
+    "distro_pkg": {
+      "alpine": [
+        "tokei"
+      ],
+      "archlinux": {
+        "aur": [
+          "tokei-git"
+        ],
+        "extra": [
+          "tokei"
+        ]
+      },
+      "debian": [
+        "rust-tokei"
+      ],
+      "nixpkgs": [
+        "tokei"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tokei/static.official.source.yaml",
+    "homepage": [
+      "https://tokei.rs",
+      "https://github.com/XAMPPRocky/tokei"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/XAMPPRocky/tokei"
+    ],
+    "repology": [
+      "tokei"
+    ],
+    "src_url": [
+      "https://github.com/XAMPPRocky/tokei"
+    ],
+    "tag": [
+      "cloc",
+      "file",
+      "stats"
+    ],
+    "version": "HEAD-7f258f4-250123T184223"
   },
   {
     "_disabled": "false",
@@ -8511,7 +8298,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-b47c9f2-250123T160631"
+    "version": "HEAD-882c76d-250123T185109"
   },
   {
     "_disabled": "false",

@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -288,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -901,7 +900,6 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
@@ -1463,7 +1461,7 @@
       "benchmark",
       "database"
     ],
-    "version": "HEAD-53f1abf-250116T100548"
+    "version": "HEAD-95a3fa4-250123T083200"
   },
   {
     "_disabled": "false",
@@ -2362,7 +2360,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-97f85f7-250122T080748"
+    "version": "HEAD-7c803fa-250123T085812"
   },
   {
     "_disabled": "false",
@@ -3672,7 +3670,7 @@
       "s3",
       "storage"
     ],
-    "version": "HEAD-5cfac09-250122T225138"
+    "version": "HEAD-423ef1b-250122T234751"
   },
   {
     "_disabled": "false",
@@ -5537,6 +5535,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "revive",
+    "pkg_family": "revive",
+    "pkg_id": "github.com.mgechev.revive",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mgechev-revive/revive/revive",
+    "bincache": "ghcr.io/pkgforge/bincache/revive/official/revive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/revive/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Faster, stricter, configurable, extensible, and beautiful drop-in replacement for golint",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "revive"
+        ]
+      },
+      "homebrew": [
+        "revive"
+      ],
+      "nixpkgs": [
+        "revive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/revive/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/mgechev/revive"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mgechev/revive"
+    ],
+    "provides": [
+      "revive"
+    ],
+    "repology": [
+      "revive"
+    ],
+    "src_url": [
+      "https://github.com/mgechev/revive"
+    ],
+    "tag": [
+      "linter"
+    ],
+    "version": "HEAD-d9c61c1-250123T091724"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ripgen",
     "pkg_family": "ripgen",
     "pkg_id": "github.com.resyncgg.ripgen",
@@ -6026,6 +6083,66 @@
   },
   {
     "_disabled": "false",
+    "pkg": "soft-serve",
+    "pkg_family": "soft-serve",
+    "pkg_id": "github.com.charmbracelet.soft-serve",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soft-serve/soft-serve/soft-serve",
+    "bincache": "ghcr.io/pkgforge/bincache/soft-serve/official/soft-serve",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soft-serve/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Self-hosted Git server for the command line",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "soft-serve-git"
+        ],
+        "extra": [
+          "soft-serve"
+        ]
+      },
+      "nixpkgs": [
+        "soft-serve"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soft-serve/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/charmbracelet/soft-serve"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/charmbracelet/soft-serve"
+    ],
+    "provides": [
+      "soft-serve==soft"
+    ],
+    "repology": [
+      "soft-serve"
+    ],
+    "src_url": [
+      "https://github.com/charmbracelet/soft-serve"
+    ],
+    "tag": [
+      "git",
+      "ssh"
+    ],
+    "version": "HEAD-cc93b27-250123T081628"
+  },
+  {
+    "_disabled": "false",
     "pkg": "spoof-dpi",
     "pkg_family": "spoof-dpi",
     "pkg_id": "github.com.xvzc.SpoofDPI",
@@ -6448,6 +6565,50 @@
       "toml"
     ],
     "version": "HEAD-18b86da-241222T203447"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tdl",
+    "pkg_family": "tdl",
+    "pkg_id": "github.com.iyear.tdl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/iyear-tdl/tdl/tdl",
+    "bincache": "ghcr.io/pkgforge/bincache/tdl/official/tdl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tdl/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A Telegram downloader/tools written in Golang",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tdl/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/iyear/tdl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/iyear/tdl"
+    ],
+    "provides": [
+      "tdl"
+    ],
+    "src_url": [
+      "https://github.com/iyear/tdl"
+    ],
+    "tag": [
+      "downloader",
+      "telegram"
+    ],
+    "version": "v0.18.4"
   },
   {
     "_disabled": "false",

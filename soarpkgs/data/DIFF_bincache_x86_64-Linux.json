@@ -232,7 +232,7 @@
       "apk",
       "apk-downloader"
     ],
-    "version": "HEAD-ca8f515-250123T140429"
+    "version": "HEAD-b6a2f33-250123T141811"
   },
   {
     "_disabled": "false",
@@ -283,6 +283,7 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -417,6 +418,49 @@
       "utils"
     ],
     "version": "HEAD-9aeda4c-250123T010231"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "aws-wire-lengths",
+    "pkg_family": "aws-wire-lengths",
+    "pkg_id": "github.com.oxidecomputer.aws-wire-lengths",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wire-lengths/aws-wire-lengths/aws-wire-lengths",
+    "bincache": "ghcr.io/pkgforge/bincache/aws-wire-lengths/official/aws-wire-lengths",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aws-wire-lengths/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Simple command line for various AWS management tasks",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aws-wire-lengths/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/oxidecomputer/aws-wire-lengths"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/oxidecomputer/aws-wire-lengths"
+    ],
+    "provides": [
+      "aws-wire-lengths"
+    ],
+    "src_url": [
+      "https://github.com/oxidecomputer/aws-wire-lengths"
+    ],
+    "tag": [
+      "aws"
+    ],
+    "version": "HEAD-1717a6e-250123T150720"
   },
   {
     "_disabled": "false",
@@ -670,6 +714,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
@@ -732,47 +777,6 @@
       "nginx"
     ],
     "version": "v2.9.0-beta.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "cargo-unlock",
-    "pkg_family": "cargo-unlock",
-    "pkg_id": "github.com.dtolnay.cargo-unlock",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cargo-unlock/cargo-unlock/cargo-unlock",
-    "bincache": "ghcr.io/pkgforge/bincache/cargo-unlock/official/cargo-unlock",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/cargo-unlock/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Remove Cargo.lock lockfile",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/cargo-unlock/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/dtolnay/cargo-unlock"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dtolnay/cargo-unlock"
-    ],
-    "provides": [
-      "cargo-unlock"
-    ],
-    "src_url": [
-      "https://github.com/dtolnay/cargo-unlock"
-    ],
-    "tag": [
-      "cargo",
-      "cleanup"
-    ],
-    "version": "HEAD-4a5005e-250122T202001"
   },
   {
     "_disabled": "false",
@@ -1180,59 +1184,6 @@
       "cleaner"
     ],
     "version": "HEAD-1a10059-250120T213625"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "daytona",
-    "pkg_family": "daytona",
-    "pkg_id": "github.com.daytonaio.daytona",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/daytonaio-daytona/daytona/daytona",
-    "bincache": "ghcr.io/pkgforge/bincache/daytona/official/daytona",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/daytona/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Open Source Dev Environment Manager",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "daytona"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/daytona/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/daytonaio/daytona"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/daytonaio/daytona"
-    ],
-    "provides": [
-      "daytona"
-    ],
-    "repology": [
-      "daytona"
-    ],
-    "src_url": [
-      "https://github.com/daytonaio/daytona"
-    ],
-    "tag": [
-      "devenv"
-    ],
-    "version": "HEAD-ed44232-250123T092501"
   },
   {
     "_disabled": "false",
@@ -2566,7 +2517,7 @@
     "tag": [
       "matrix"
     ],
-    "version": "HEAD-4649689-250124T001458"
+    "version": "HEAD-865b2e4-250124T011507"
   },
   {
     "_disabled": "false",

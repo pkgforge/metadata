@@ -31,24 +31,24 @@
 4.0K   │   ├── fetch_pkgsrc.sh
 4.0K   │   ├── fetch_nixpkgs.sh
 4.0K   │   └── fetch_alpine_git.sh
- 17M   ├─┬ bincache
+ 18M   ├─┬ bincache
  17M   │ ├─┬ data
 4.2M   │ │ ├── x86_64-Linux.json
 3.5M   │ │ ├── x86_64-Linux.db
 3.4M   │ │ ├── aarch64-Linux.json
-2.8M   │ │ ├── aarch64-Linux.db
-444K   │ │ ├── x86_64-Linux.db.cba
+2.9M   │ │ ├── aarch64-Linux.db
+440K   │ │ ├── x86_64-Linux.db.cba
 420K   │ │ ├── x86_64-Linux.json.cba
-376K   │ │ ├── aarch64-Linux.db.cba
+380K   │ │ ├── aarch64-Linux.db.cba
 348K   │ │ ├── x86_64-Linux.db.zstd
 336K   │ │ ├── x86_64-Linux.db.xz
+336K   │ │ ├── aarch64-Linux.json.cba
 328K   │ │ ├── x86_64-Linux.json.xz
-328K   │ │ ├── aarch64-Linux.json.cba
 312K   │ │ ├── x86_64-Linux.json.zstd
-300K   │ │ ├── aarch64-Linux.db.zstd
-288K   │ │ ├── aarch64-Linux.db.xz
-280K   │ │ ├── aarch64-Linux.json.xz
-268K   │ │ ├── aarch64-Linux.json.zstd
+304K   │ │ ├── aarch64-Linux.db.zstd
+292K   │ │ ├── aarch64-Linux.db.xz
+284K   │ │ ├── aarch64-Linux.json.xz
+272K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum
@@ -66,14 +66,14 @@
  28K   │   ├── gen_meta_x86_64-Linux.sh
  28K   │   └── gen_meta_aarch64-Linux.sh
 5.7M   ├─┬ soarpkgs
-5.4M   │ ├─┬ data
+5.3M   │ ├─┬ data
 1.2M   │ │ ├── INDEX.json
-872K   │ │ ├── BACKAGE.json
+876K   │ │ ├── BACKAGE.json
 800K   │ │ ├── pub_issues_binaries.txt
 688K   │ │ ├── INDEX.db
 304K   │ │ ├── pub_issues_packages.txt
-284K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-224K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+240K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+228K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 184K   │ │ ├── INDEX.json.cba
 136K   │ │ ├── GH_REPO.md
 124K   │ │ ├── INDEX.json.xz
@@ -82,10 +82,10 @@
 104K   │ │ ├── INDEX.db.zstd
  96K   │ │ ├── INDEX.db.xz
  40K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 32K   │ │ ├── DIFF_bincache.json
  28K   │ │ ├── URLS.txt
  28K   │ │ ├── GH_REPO_ARCHIVED.md
  28K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+ 28K   │ │ ├── DIFF_bincache.json
 4.0K   │ │ ├── TOTAL_CACHE.txt
 4.0K   │ │ ├── TOTAL_CACHE.json
 4.0K   │ │ ├── TOTAL.json

@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,6 +272,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -287,7 +288,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "1.37.0"
+    "version": "250118T141142"
   },
   {
     "_disabled": "false",
@@ -1860,6 +1861,69 @@
   },
   {
     "_disabled": "false",
+    "pkg": "eza",
+    "pkg_family": "eza",
+    "pkg_id": "github.com.eza-community.eza",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/community-eza/eza/eza",
+    "bincache": "ghcr.io/pkgforge/bincache/eza/official/eza",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/eza/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A modern replacement for ls",
+    "distro_pkg": {
+      "alpine": [
+        "eza"
+      ],
+      "archlinux": {
+        "aur": [
+          "eza-git"
+        ],
+        "extra": [
+          "eza"
+        ]
+      },
+      "debian": [
+        "rust-eza"
+      ],
+      "nixpkgs": [
+        "eza"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/eza/static.official.source.yaml",
+    "homepage": [
+      "https://eza.rocks",
+      "https://github.com/eza-community/eza"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/eza-community/eza"
+    ],
+    "repology": [
+      "eza"
+    ],
+    "src_url": [
+      "https://github.com/eza-community/eza"
+    ],
+    "tag": [
+      "ls"
+    ],
+    "version": "HEAD-1f882d8-250123T072245"
+  },
+  {
+    "_disabled": "false",
     "pkg": "fnm",
     "pkg_family": "fnm",
     "pkg_id": "github.com.Schniz.fnm",
@@ -2101,7 +2165,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-951513f-250123T000533"
+    "version": "HEAD-1af7817-250123T060254"
   },
   {
     "_disabled": "false",
@@ -7055,71 +7119,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "zellij",
-    "pkg_family": "zellij",
-    "pkg_id": "github.com.zellij-org.zellij",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/org-zellij/zellij/zellij",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zellij/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Versatile, extensible terminal multiplexer",
-    "distro_pkg": {
-      "alpine": [
-        "zellij"
-      ],
-      "archlinux": {
-        "aur": [
-          "zellij-git"
-        ],
-        "extra": [
-          "zellij"
-        ]
-      },
-      "homebrew": [
-        "zellij"
-      ],
-      "nixpkgs": [
-        "zellij"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zellij/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/zellij-org/zellij"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/zellij-org/zellij"
-    ],
-    "provides": [
-      "zellij"
-    ],
-    "repology": [
-      "zellij"
-    ],
-    "src_url": [
-      "https://github.com/zellij-org/zellij"
-    ],
-    "tag": [
-      "multiplexer",
-      "terminal"
-    ],
-    "version": "v0.41.2"
-  },
-  {
-    "_disabled": "false",
     "pkg": "zenith",
     "pkg_family": "zenith",
     "pkg_id": "github.com.bvaisvil.zenith",
@@ -7181,65 +7180,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "zfind",
-    "pkg_family": "zfind",
-    "pkg_id": "github.com.laktak.zfind",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/laktak-zfind/zfind/zfind",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zfind/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Search for files (even inside tar/zip/7z/rar) using a SQL-WHERE filter",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "zfind",
-          "zfind-bin"
-        ]
-      },
-      "homebrew": [
-        "zfind"
-      ],
-      "nixpkgs": [
-        "zfind"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zfind/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/laktak/zfind"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/laktak/zfind"
-    ],
-    "provides": [
-      "zfind"
-    ],
-    "repology": [
-      "zfind"
-    ],
-    "src_url": [
-      "https://github.com/laktak/zfind"
-    ],
-    "tag": [
-      "sql"
-    ],
-    "version": "HEAD-f548c97-241106T221249"
-  },
-  {
-    "_disabled": "false",
     "pkg": "zgrab2",
     "pkg_family": "zgrab2",
     "pkg_id": "github.com.zmap.zgrab2",
@@ -7286,75 +7226,5 @@
       "security"
     ],
     "version": "HEAD-9684e37-250122T143129"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zoxide",
-    "pkg_family": "zoxide",
-    "pkg_id": "github.com.ajeetdsouza.zoxide",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ajeetdsouza-zoxide/zoxide/zoxide",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zoxide/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Fuzzy cd command for interactive shells",
-    "distro_pkg": {
-      "alpine": [
-        "zoxide"
-      ],
-      "archlinux": {
-        "aur": [
-          "zoxide-git"
-        ],
-        "extra": [
-          "zoxide"
-        ]
-      },
-      "debian": [
-        "rust-zoxide"
-      ],
-      "gnuguix": [
-        "zoxide"
-      ],
-      "homebrew": [
-        "zoxide"
-      ],
-      "nixpkgs": [
-        "zoxide"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zoxide/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/ajeetdsouza/zoxide"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/ajeetdsouza/zoxide"
-    ],
-    "provides": [
-      "zoxide==z"
-    ],
-    "repology": [
-      "zoxide"
-    ],
-    "src_url": [
-      "https://github.com/ajeetdsouza/zoxide"
-    ],
-    "tag": [
-      "cd"
-    ],
-    "version": "v0.9.6"
   }
 ]

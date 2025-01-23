@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -288,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -901,12 +900,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -929,7 +929,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -949,7 +949,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -962,7 +962,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -2812,6 +2812,68 @@
       "gpg"
     ],
     "version": "HEAD-99ff870-250121T114552"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "hcloud",
+    "pkg_family": "hcloud",
+    "pkg_id": "github.com.hetznercloud.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hetznercloud-cli/hcloud/hcloud",
+    "bincache": "ghcr.io/pkgforge/bincache/hcloud/official/hcloud",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hcloud/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line interface for Hetzner Cloud",
+    "distro_pkg": {
+      "alpine": [
+        "hcloud"
+      ],
+      "archlinux": {
+        "extra": [
+          "hcloud"
+        ]
+      },
+      "homebrew": [
+        "hcloud"
+      ],
+      "nixpkgs": [
+        "hcloud"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hcloud/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/hetznercloud/cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/hetznercloud/cli"
+    ],
+    "provides": [
+      "hcloud"
+    ],
+    "repology": [
+      "hcloud"
+    ],
+    "src_url": [
+      "https://github.com/hetznercloud/cli"
+    ],
+    "tag": [
+      "hetzner"
+    ],
+    "version": "HEAD-48b4fc7-250123T094622"
   },
   {
     "_disabled": "false",
@@ -5073,6 +5135,62 @@
     "version": "HEAD-a367254-231013T135550"
   },
   {
+    "_disabled": "false",
+    "pkg": "pls",
+    "pkg_family": "pls",
+    "pkg_id": "github.com.pls-rs.pls",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-pls/pls/pls",
+    "bincache": "ghcr.io/pkgforge/bincache/pls/official/pls",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pls/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A Prettier and Powerful ls(1) for the Pros",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "pls",
+          "pls-git"
+        ]
+      },
+      "nixpkgs": [
+        "pls"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pls/static.official.source.yaml",
+    "homepage": [
+      "https://pls.cli.rs",
+      "https://github.com/pls-rs/pls"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL3",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pls-rs/pls"
+    ],
+    "repology": [
+      "pls"
+    ],
+    "src_url": [
+      "https://github.com/pls-rs/pls"
+    ],
+    "tag": [
+      "ls"
+    ],
+    "version": "HEAD-0456d00-250123T153932"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": [
       "Too slow & Expensive"
@@ -6754,7 +6872,7 @@
       "drive",
       "telegram"
     ],
-    "version": "HEAD-8e4dfd8-250121T212159"
+    "version": "HEAD-a9b16ea-250123T104311"
   },
   {
     "_disabled": "false",
@@ -8839,7 +8957,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-2a65cd1-250122T173237"
+    "version": "HEAD-4677153-250123T110147"
   },
   {
     "_disabled": "false",

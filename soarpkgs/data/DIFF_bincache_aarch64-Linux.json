@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,6 +272,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -287,7 +288,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "1.37.0"
+    "version": "250118T141142"
   },
   {
     "_disabled": "false",
@@ -1419,6 +1420,59 @@
       "cleaner"
     ],
     "version": "HEAD-1a10059-250120T213625"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "daytona",
+    "pkg_family": "daytona",
+    "pkg_id": "github.com.daytonaio.daytona",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/daytonaio-daytona/daytona/daytona",
+    "bincache": "ghcr.io/pkgforge/bincache/daytona/official/daytona",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/daytona/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The Open Source Dev Environment Manager",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "daytona"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/daytona/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/daytonaio/daytona"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/daytonaio/daytona"
+    ],
+    "provides": [
+      "daytona"
+    ],
+    "repology": [
+      "daytona"
+    ],
+    "src_url": [
+      "https://github.com/daytonaio/daytona"
+    ],
+    "tag": [
+      "devenv"
+    ],
+    "version": "HEAD-ed44232-250123T092501"
   },
   {
     "_disabled": "false",
@@ -2951,7 +3005,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-77a8e34-250122T193802"
+    "version": "HEAD-51bb2fe-250123T101843"
   },
   {
     "_disabled": "false",
@@ -5974,6 +6028,55 @@
       "fuzzyfinder"
     ],
     "version": "HEAD-5152be1-250123T002754"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "skupper",
+    "pkg_family": "skupper",
+    "pkg_id": "github.com.skupperproject.skupper",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/skupperproject-skupper/skupper/skupper",
+    "bincache": "ghcr.io/pkgforge/bincache/skupper/official/skupper",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/skupper/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Virtual Application Network, enabling rich hybrid cloud communication",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/skupper/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/skupperproject/skupper"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/skupperproject/skupper"
+    ],
+    "provides": [
+      "skupper",
+      "skupper-controller"
+    ],
+    "repology": [
+      "cloud",
+      "network"
+    ],
+    "src_url": [
+      "https://github.com/skupperproject/skupper"
+    ],
+    "tag": [
+      "utility",
+      "skupper"
+    ],
+    "version": "HEAD-d9d9424-250123T085633"
   },
   {
     "_disabled": "false",

@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,6 +272,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -287,7 +288,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "1.37.0"
+    "version": "250118T141142"
   },
   {
     "_disabled": "false",
@@ -360,170 +361,6 @@
       "utils"
     ],
     "version": "HEAD-9aeda4c-250123T010231"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "b3sum",
-    "pkg_family": "b3sum",
-    "pkg_id": "github.com.BLAKE3-team.BLAKE3",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/team-blake3/b3sum/b3sum",
-    "bincache": "ghcr.io/pkgforge/bincache/b3sum/official/b3sum",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/b3sum/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Command line utility for calculating BLAKE3 hashes",
-    "distro_pkg": {
-      "alpine": [
-        "b3sum"
-      ],
-      "archlinux": {
-        "extra": [
-          "b3sum"
-        ]
-      },
-      "debian": [
-        "rust-b3sum",
-        "rust-blake3"
-      ],
-      "nixpkgs": [
-        "b3sum"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/b3sum/static.official.source.yaml",
-    "homepage": [
-      "https://blake3.io",
-      "https://github.com/BLAKE3-team/BLAKE3"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BLAKE3-team/BLAKE3"
-    ],
-    "provides": [
-      "b3sum"
-    ],
-    "repology": [
-      "blake3"
-    ],
-    "src_url": [
-      "https://github.com/BLAKE3-team/BLAKE3"
-    ],
-    "tag": [
-      "bsum",
-      "checksum"
-    ],
-    "version": "HEAD-d2e8069-250122T175857"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "bearer",
-    "pkg_family": "bearer",
-    "pkg_id": "github.com.Bearer.bearer",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bearer-bearer/bearer/bearer",
-    "bincache": "ghcr.io/pkgforge/bincache/bearer/official/bearer",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bearer/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Code security scanning tool (SAST)",
-    "distro_pkg": {
-      "nixpkgs": [
-        "bearer"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bearer/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/Bearer/bearer"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Elastic-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Bearer/bearer"
-    ],
-    "provides": [
-      "bearer"
-    ],
-    "repology": [
-      "bearer"
-    ],
-    "src_url": [
-      "https://github.com/Bearer/bearer"
-    ],
-    "tag": [
-      "sast",
-      "security",
-      "static-analysis"
-    ],
-    "version": "HEAD-a452532-250122T155001"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "bench",
-    "pkg_family": "bench",
-    "pkg_id": "github.com.teddysun.across",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/teddysun-across/bench/bench",
-    "bincache": "ghcr.io/pkgforge/bincache/bench/official/bench",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bench/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A quick & easy Benchmarking Script to Auto test I/O & Bandwidth",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bench/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/teddysun/across"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/teddysun/across"
-    ],
-    "provides": [
-      "bench:bench.sh"
-    ],
-    "repology": [
-      "bench"
-    ],
-    "src_url": [
-      "https://github.com/teddysun/across"
-    ],
-    "tag": [
-      "bench"
-    ],
-    "version": "HEAD-168062f-241229T232233"
   },
   {
     "_disabled": "false",
@@ -1200,7 +1037,6 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
@@ -3490,7 +3326,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-a563783-250123T175338"
+    "version": "HEAD-f42a4b6-250123T201236"
   },
   {
     "_disabled": "false",
@@ -6862,7 +6698,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-d9d9424-250123T085633"
+    "version": "HEAD-e5ec220-250123T195726"
   },
   {
     "_disabled": "false",
@@ -7402,7 +7238,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-f1710f4-250123T090356"
+    "version": "HEAD-d6abbc2-250123T110049"
   },
   {
     "_disabled": "false",
@@ -8316,7 +8152,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-882c76d-250123T185109"
+    "version": "HEAD-2feed7d-250123T195852"
   },
   {
     "_disabled": "false",

@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,6 +272,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -287,7 +288,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "1.37.0"
+    "version": "250118T141142"
   },
   {
     "_disabled": "false",
@@ -813,6 +814,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
@@ -2386,7 +2388,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-7c803fa-250123T085812"
+    "version": "HEAD-cc7b614-250123T113222"
   },
   {
     "_disabled": "false",
@@ -5271,7 +5273,7 @@
     "tag": [
       "ls"
     ],
-    "version": "HEAD-0456d00-250123T153932"
+    "version": "HEAD-5cb1bd8-250123T160538"
   },
   {
     "_disabled": "false",
@@ -6693,7 +6695,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-1562a6f-250122T171615"
+    "version": "HEAD-3033a96-250123T104721"
   },
   {
     "_disabled": "false",
@@ -7438,7 +7440,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-4677153-250123T110147"
+    "version": "HEAD-a119746-250123T114847"
   },
   {
     "_disabled": "false",
@@ -7741,6 +7743,72 @@
       "manager"
     ],
     "version": "HEAD-abb4325-250122T225117"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yq",
+    "pkg_family": "yq",
+    "pkg_id": "github.com.mikefarah.yq",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mikefarah-yq/yq/yq",
+    "bincache": "ghcr.io/pkgforge/bincache/yq/official/yq",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yq/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Portable command-line YAML, JSON, XML, CSV, TOML and properties processor",
+    "distro_pkg": {
+      "alpine": [
+        "yq",
+        "yq-go"
+      ],
+      "archlinux": {
+        "extra": [
+          "go-yq"
+        ]
+      },
+      "homebrew": [
+        "yq"
+      ],
+      "nixpkgs": [
+        "yq-go"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yq/static.official.source.yaml",
+    "homepage": [
+      "https://mikefarah.gitbook.io/yq",
+      "https://github.com/mikefarah/yq"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0",
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mikefarah/yq"
+    ],
+    "repology": [
+      "yq-mikefarah"
+    ],
+    "src_url": [
+      "https://github.com/mikefarah/yq"
+    ],
+    "tag": [
+      "json",
+      "jq",
+      "toml",
+      "yaml"
+    ],
+    "version": "HEAD-c34d3f7-250123T220408"
   },
   {
     "_disabled": "false",

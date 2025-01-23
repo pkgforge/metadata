@@ -813,6 +813,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -3614,6 +3615,74 @@
       "mail"
     ],
     "version": "HEAD-c0a1d15-250121T151145"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "miniflux",
+    "pkg_family": "miniflux",
+    "pkg_id": "github.com.miniflux.v2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/miniflux-v2/miniflux/miniflux",
+    "bincache": "ghcr.io/pkgforge/bincache/miniflux/official/miniflux",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miniflux/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Minimalist and opinionated feed reader",
+    "distro_pkg": {
+      "alpine": [
+        "miniflux"
+      ],
+      "archlinux": {
+        "aur": [
+          "miniflux-git"
+        ],
+        "extra": [
+          "miniflux"
+        ]
+      },
+      "debian": [
+        "miniflux"
+      ],
+      "gnuguix": [
+        "miniflux"
+      ],
+      "nixpkgs": [
+        "miniflux"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/miniflux/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/miniflux/v2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/miniflux/v2"
+    ],
+    "provides": [
+      "miniflux"
+    ],
+    "repology": [
+      "miniflux"
+    ],
+    "src_url": [
+      "https://github.com/miniflux/v2"
+    ],
+    "tag": [
+      "rss"
+    ],
+    "version": "HEAD-47ccefb-250122T210050"
   },
   {
     "_disabled": "false",
@@ -6640,227 +6709,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "wtf",
-    "pkg_family": "wtf",
-    "pkg_id": "github.com.wtfutil.wtf",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wtfutil-wtf/wtf/wtf",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wtf/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Personal information Dashboard for the terminal",
-    "distro_pkg": {
-      "alpine": [
-        "wtfutil"
-      ],
-      "archlinux": {
-        "aur": [
-          "wtfutil",
-          "wtfutil-bin"
-        ]
-      },
-      "homebrew": [
-        "wtfutil"
-      ],
-      "nixpkgs": [
-        "wtf"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wtf/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/wtfutil/wtf"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wtfutil/wtf"
-    ],
-    "provides": [
-      "wtf==wtfutil"
-    ],
-    "repology": [
-      "wtfutil"
-    ],
-    "src_url": [
-      "https://github.com/wtfutil/wtf"
-    ],
-    "tag": [
-      "dashboard"
-    ],
-    "version": "HEAD-6a02b97-240521T154434"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wth",
-    "pkg_family": "wth",
-    "pkg_id": "github.com.mrusme.wth",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mrusme-wth/wth/wth",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wth/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "What The Heck  The better personal information dashboard for your terminal",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wth/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/mrusme/wth"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mrusme/wth"
-    ],
-    "provides": [
-      "wth"
-    ],
-    "src_url": [
-      "https://github.com/mrusme/wth"
-    ],
-    "tag": [
-      "dashboard"
-    ],
-    "version": "HEAD-8cd3bae-230703T145814"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xan",
-    "pkg_family": "xan",
-    "pkg_id": "github.com.medialab.xan",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/medialab-xan/xan/xan",
-    "bincache": "ghcr.io/pkgforge/bincache/xan/official/xan",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xan/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The CSV magician",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xan/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/medialab/xan"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/medialab/xan"
-    ],
-    "src_url": [
-      "https://github.com/medialab/xan"
-    ],
-    "tag": [
-      "csv",
-      "tsv"
-    ],
-    "version": "HEAD-2a65cd1-250122T173237"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xclip",
-    "pkg_family": "xclip",
-    "pkg_id": "ppkg.xclip",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xclip/xclip/xclip",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xclip/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Command line interface to the X11 clipboard",
-      "xclip": "CLI to X selections (clipboard) [xclip]",
-      "xclip-copyfile": "Copy files into the X clipboard, preserving tree structure [xclip]",
-      "xclip-cutfile": "Copy files into the X clipboard & delete them afterwards [xclip]",
-      "xclip-pastefile": "Paste files from the X clipboard [xclip]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "xclip"
-      ],
-      "archlinux": {
-        "aur": [
-          "xclip-git"
-        ],
-        "extra": [
-          "xclip"
-        ]
-      },
-      "debian": [
-        "xclip"
-      ],
-      "gnuguix": [
-        "xclip"
-      ],
-      "homebrew": [
-        "xclip"
-      ],
-      "nixpkgs": [
-        "xclip"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xclip/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://github.com/astrand/xclip"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "xclip:xsel",
-      "xclip-copyfile",
-      "xclip-cutfile",
-      "xclip-pastefile"
-    ],
-    "repology": [
-      "xclip"
-    ],
-    "src_url": [
-      "https://github.com/astrand/xclip"
-    ],
-    "tag": [
-      "clipboard"
-    ],
-    "version": "0.13"
-  },
-  {
-    "_disabled": "false",
     "pkg": "xcp",
     "pkg_family": "xcp",
     "pkg_id": "github.com.tarka.xcp",
@@ -7048,216 +6896,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "xmrig",
-    "pkg_family": "xmrig",
-    "pkg_id": "github.com.xmrig.xmrig",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xmrig-xmrig/xmrig/xmrig",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xmrig/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "High performance Monero (XMR) CPU miner",
-    "distro_pkg": {
-      "alpine": [
-        "xmrig"
-      ],
-      "archlinux": {
-        "aur": [
-          "xmrig-donateless",
-          "xmrig-donateless-git"
-        ],
-        "extra": [
-          "xmrig"
-        ]
-      },
-      "debian": [
-        "xmrig"
-      ],
-      "gnuguix": [
-        "xmrig"
-      ],
-      "homebrew": [
-        "xmrig"
-      ],
-      "nixpkgs": [
-        "xmrig"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xmrig/static.official.stable.yaml",
-    "homepage": [
-      "https://xmrig.com/"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/xmrig/xmrig"
-    ],
-    "provides": [
-      "xmrig"
-    ],
-    "repology": [
-      "xmrig"
-    ],
-    "src_url": [
-      "https://github.com/xmrig/xmrig"
-    ],
-    "tag": [
-      "cryptocurrency",
-      "miner",
-      "monero",
-      "xmr"
-    ],
-    "version": "v6.22.2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xq",
-    "pkg_family": "xq",
-    "pkg_id": "github.com.sibprogrammer.xq",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sibprogrammer-xq/xq/xq",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xq/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Command-line XML and HTML beautifier and content extractor",
-    "distro_pkg": {
-      "alpine": [
-        "xq"
-      ],
-      "archlinux": {
-        "aur": [
-          "xq",
-          "xq-bin"
-        ]
-      },
-      "debian": [
-        "xq"
-      ],
-      "homebrew": [
-        "xq"
-      ],
-      "nixpkgs": [
-        "xq-xml"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xq/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/sibprogrammer/xq"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sibprogrammer/xq"
-    ],
-    "provides": [
-      "xq"
-    ],
-    "repology": [
-      "xq-sibprogrammer"
-    ],
-    "src_url": [
-      "https://github.com/sibprogrammer/xq"
-    ],
-    "tag": [
-      "html",
-      "xml",
-      "xpath"
-    ],
-    "version": "HEAD-48c315e-250115T051709"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xsel",
-    "pkg_family": "xsel",
-    "pkg_id": "ppkg.xsel",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xsel/xsel/xsel",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xsel/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Command-line program for manipulating the X selection (Clipboard)",
-    "distro_pkg": {
-      "alpine": [
-        "xsel"
-      ],
-      "archlinux": {
-        "aur": [
-          "xsel-git"
-        ],
-        "extra": [
-          "xsel"
-        ]
-      },
-      "debian": [
-        "xsel"
-      ],
-      "gnuguix": [
-        "xsel"
-      ],
-      "homebrew": [
-        "xsel"
-      ],
-      "nixpkgs": [
-        "xsel"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xsel/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://github.com/kfish/xsel"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "custom"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "xsel:xclip"
-    ],
-    "repology": [
-      "xsel"
-    ],
-    "src_url": [
-      "https://github.com/kfish/xsel"
-    ],
-    "tag": [
-      "clipboard"
-    ],
-    "version": "1.2.1"
-  },
-  {
-    "_disabled": "false",
     "pkg": "yabs",
     "pkg_family": "yabs",
     "pkg_id": "github.com.masonr.yet-another-bench-script",
@@ -7297,45 +6935,6 @@
       "benchmark"
     ],
     "version": "HEAD-0ec2a2a-250101T231747"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "yataf",
-    "pkg_family": "yataf",
-    "pkg_id": "github.com.Damian89.yataf",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/damian89-yataf/yataf/yataf",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yataf/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "yataf extracts secrets and paths from files or urls - its best used against javascript files",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yataf/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/dsecuredcom/yataf"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dsecuredcom/yataf"
-    ],
-    "provides": [
-      "yataf"
-    ],
-    "src_url": [
-      "https://github.com/dsecuredcom/yataf"
-    ],
-    "tag": [
-      "bugbounty"
-    ],
-    "version": "HEAD-6b851f9-240911T115302"
   },
   {
     "_disabled": "false",

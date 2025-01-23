@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -288,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -634,6 +633,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "brook",
+    "pkg_family": "brook",
+    "pkg_id": "github.com.txthinking.brook",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/txthinking-brook/brook/brook",
+    "bincache": "ghcr.io/pkgforge/bincache/brook/official/brook",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/brook/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A Zero Config strong encryption and not detectable proxy",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "brook"
+        ]
+      },
+      "homebrew": [
+        "brook"
+      ],
+      "nixpkgs": [
+        "brook"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/brook/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/txthinking/brook"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/txthinking/brook"
+    ],
+    "provides": [
+      "brook"
+    ],
+    "repology": [
+      "brook"
+    ],
+    "src_url": [
+      "https://github.com/txthinking/brook"
+    ],
+    "tag": [
+      "proxy"
+    ],
+    "version": "v20250202"
+  },
+  {
+    "_disabled": "false",
     "pkg": "broot",
     "pkg_family": "broot",
     "pkg_id": "github.com.Canop.broot",
@@ -755,7 +813,6 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -818,6 +875,47 @@
       "nginx"
     ],
     "version": "v2.9.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "cargo-unlock",
+    "pkg_family": "cargo-unlock",
+    "pkg_id": "github.com.dtolnay.cargo-unlock",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cargo-unlock/cargo-unlock/cargo-unlock",
+    "bincache": "ghcr.io/pkgforge/bincache/cargo-unlock/official/cargo-unlock",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/cargo-unlock/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Remove Cargo.lock lockfile",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/cargo-unlock/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dtolnay/cargo-unlock"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dtolnay/cargo-unlock"
+    ],
+    "provides": [
+      "cargo-unlock"
+    ],
+    "src_url": [
+      "https://github.com/dtolnay/cargo-unlock"
+    ],
+    "tag": [
+      "cargo",
+      "cleanup"
+    ],
+    "version": "HEAD-4a5005e-250122T202001"
   },
   {
     "_disabled": "false",
@@ -6416,247 +6514,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "vhs",
-    "pkg_family": "vhs",
-    "pkg_id": "github.com.charmbracelet.vhs",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/charmbracelet-vhs/vhs/vhs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vhs/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Tool for generating terminal GIFs with code",
-    "distro_pkg": {
-      "alpine": [
-        "vhs"
-      ],
-      "archlinux": {
-        "aur": [
-          "vhs-bin"
-        ],
-        "extra": [
-          "vhs"
-        ]
-      },
-      "homebrew": [
-        "vhs"
-      ],
-      "nixpkgs": [
-        "vhs"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vhs/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/charmbracelet/vhs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/charmbracelet/vhs"
-    ],
-    "provides": [
-      "vhs"
-    ],
-    "repology": [
-      "vhs"
-    ],
-    "src_url": [
-      "https://github.com/charmbracelet/vhs"
-    ],
-    "tag": [
-      "ascii",
-      "gif",
-      "recording"
-    ],
-    "version": "HEAD-2c7733e-250117T151543"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "vtm",
-    "pkg_family": "vtm",
-    "pkg_id": "github.com.directvt.vtm",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/directvt-vtm/vtm/vtm",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vtm/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "vtm",
-          "vtm-bin",
-          "vtm-git"
-        ]
-      },
-      "nixpkgs": [
-        "vtm"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vtm/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/directvt/vtm"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/directvt/vtm"
-    ],
-    "provides": [
-      "vtm"
-    ],
-    "repology": [
-      "vtm"
-    ],
-    "src_url": [
-      "https://github.com/directvt/vtm"
-    ],
-    "tag": [
-      "multiplexer",
-      "terminal"
-    ],
-    "version": "v0.9.99.61"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "vultr-cli",
-    "pkg_family": "vultr-cli",
-    "pkg_id": "github.com.vultr.vultr-cli",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vultr-cli/vultr-cli/vultr-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vultr-cli/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Official command line tool for Vultr services",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "vultr-cli"
-        ]
-      },
-      "nixpkgs": [
-        "vultr-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vultr-cli/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/vultr/vultr-cli"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/vultr/vultr-cli"
-    ],
-    "provides": [
-      "vultr-cli"
-    ],
-    "repology": [
-      "vultr-cli"
-    ],
-    "src_url": [
-      "https://github.com/vultr/vultr-cli"
-    ],
-    "tag": [
-      "vultr"
-    ],
-    "version": "HEAD-a74b3cd-250122T124051"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "walk",
-    "pkg_family": "walk",
-    "pkg_id": "github.com.antonmedv.walk",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/antonmedv-walk/walk/walk",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/walk/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Terminal file manager",
-    "distro_pkg": {
-      "alpine": [
-        "walk"
-      ],
-      "archlinux": {
-        "aur": [
-          "walk",
-          "walk-bin"
-        ]
-      },
-      "homebrew": [
-        "walk"
-      ],
-      "nixpkgs": [
-        "walk"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/walk/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/antonmedv/walk"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/antonmedv/walk"
-    ],
-    "provides": [
-      "walk"
-    ],
-    "repology": [
-      "walk"
-    ],
-    "src_url": [
-      "https://github.com/antonmedv/walk"
-    ],
-    "tag": [
-      "file-manager"
-    ],
-    "version": "HEAD-f6faf52-240816T134524"
-  },
-  {
-    "_disabled": "false",
     "pkg": "wireguard",
     "pkg_family": "wireguard",
     "pkg_id": "git.zx2c4.com.wireguard-rs",
@@ -6780,105 +6637,6 @@
       "wireless"
     ],
     "version": "30.pre9"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wireproxy",
-    "pkg_family": "wireproxy",
-    "pkg_id": "github.com.pufferffish.wireproxy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pufferffish-wireproxy/wireproxy/wireproxy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wireproxy/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Wireguard client that exposes itself as a SOCKS5 proxy",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "wireproxy"
-        ]
-      },
-      "nixpkgs": [
-        "wireproxy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wireproxy/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/pufferffish/wireproxy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "ISC"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pufferffish/wireproxy"
-    ],
-    "provides": [
-      "wireproxy"
-    ],
-    "repology": [
-      "wireproxy"
-    ],
-    "src_url": [
-      "https://github.com/pufferffish/wireproxy"
-    ],
-    "tag": [
-      "proxy",
-      "wireguard"
-    ],
-    "version": "HEAD-d710683-241226T172001"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wiretap",
-    "pkg_family": "wiretap",
-    "pkg_id": "github.com.sandialabs.wiretap",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sandialabs-wiretap/wiretap/wiretap",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wiretap/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "VPN-like proxy server that tunnels traffic via WireGuard without requiring special privileges",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wiretap/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/sandialabs/wiretap"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sandialabs/wiretap"
-    ],
-    "provides": [
-      "wiretap"
-    ],
-    "src_url": [
-      "https://github.com/sandialabs/wiretap"
-    ],
-    "tag": [
-      "proxy",
-      "wireguard"
-    ],
-    "version": "HEAD-034c06d-241125T172227"
   },
   {
     "_disabled": "false",

@@ -1251,7 +1251,7 @@
       "utility",
       "bluetooth"
     ],
-    "version": "HEAD-50ede6c-250123T171454"
+    "version": "HEAD-5caadd6-250123T172151"
   },
   {
     "_disabled": "false",
@@ -6432,81 +6432,10 @@
     "_disabled": "false",
     "pkg": "bubblewrap",
     "pkg_family": "bubblewrap",
-    "pkg_id": "github.com.containers.bubblewrap",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containers-bubblewrap/bubblewrap/bubblewrap",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Namespaces-powered chroot-like solution for Unprivileged Sandboxing",
-    "distro_pkg": {
-      "alpine": [
-        "bubblewrap"
-      ],
-      "archlinux": {
-        "aur": [
-          "bubblewrap-git"
-        ],
-        "extra": [
-          "bubblewrap"
-        ]
-      },
-      "debian": [
-        "bubblewrap"
-      ],
-      "gnuguix": [
-        "bubblewrap"
-      ],
-      "homebrew": [
-        "bubblewrap"
-      ],
-      "nixpkgs": [
-        "bubblewrap"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bubblewrap/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/containers/bubblewrap"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "LGPL-2.0-or-later"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containers/bubblewrap"
-    ],
-    "provides": [
-      "bwrap==bubblewrap"
-    ],
-    "repology": [
-      "bubblewrap"
-    ],
-    "src_url": [
-      "https://github.com/containers/bubblewrap"
-    ],
-    "tag": [
-      "container",
-      "namespace",
-      "sandbox"
-    ],
-    "version": "HEAD-9ca3b05-241030T160747"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "bubblewrap",
-    "pkg_family": "bubblewrap",
     "pkg_id": "github.com.containers.bubblewrap.patched.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/patched-glibc/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/glibc/patched",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.patched.glibc.yaml",
     "category": [
       "ConsoleOnly",
@@ -6580,9 +6509,83 @@
     "_disabled": "false",
     "pkg": "bubblewrap",
     "pkg_family": "bubblewrap",
+    "pkg_id": "github.com.containers.bubblewrap",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containers-bubblewrap/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/official/bwrap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Namespaces-powered chroot-like solution for Unprivileged Sandboxing",
+    "distro_pkg": {
+      "alpine": [
+        "bubblewrap"
+      ],
+      "archlinux": {
+        "aur": [
+          "bubblewrap-git"
+        ],
+        "extra": [
+          "bubblewrap"
+        ]
+      },
+      "debian": [
+        "bubblewrap"
+      ],
+      "gnuguix": [
+        "bubblewrap"
+      ],
+      "homebrew": [
+        "bubblewrap"
+      ],
+      "nixpkgs": [
+        "bubblewrap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bubblewrap/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "LGPL-2.0-or-later"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containers/bubblewrap"
+    ],
+    "provides": [
+      "bwrap==bubblewrap"
+    ],
+    "repology": [
+      "bubblewrap"
+    ],
+    "src_url": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "tag": [
+      "container",
+      "namespace",
+      "sandbox"
+    ],
+    "version": "HEAD-9ca3b05-241030T160747"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bubblewrap",
+    "pkg_family": "bubblewrap",
     "pkg_id": "github.com.containers.bubblewrap.patched",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bubblewrap-patched/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/patched/bwrap",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.patched.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -6753,77 +6756,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
-    "distro_pkg": {
-      "alpine": [
-        "caddy"
-      ],
-      "archlinux": {
-        "aur": [
-          "caddy-git"
-        ],
-        "extra": [
-          "caddy"
-        ]
-      },
-      "debian": [
-        "caddy"
-      ],
-      "homebrew": [
-        "caddy"
-      ],
-      "nixpkgs": [
-        "caddy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
-    "homepage": [
-      "https://caddyserver.com",
-      "https://github.com/caddyserver/caddy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
-    ],
-    "provides": [
-      "caddy:caddy-beta"
-    ],
-    "repology": [
-      "caddy"
-    ],
-    "src_url": [
-      "https://github.com/caddyserver/caddy"
-    ],
-    "tag": [
-      "caddy",
-      "server",
-      "nginx"
-    ],
-    "version": "v2.9.0-beta.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "caddy",
-    "pkg_family": "caddy",
-    "pkg_id": "github.com.caddyserver.caddy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -6886,6 +6819,76 @@
       "nginx"
     ],
     "version": "v2.9.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "caddy",
+    "pkg_family": "caddy",
+    "pkg_id": "github.com.caddyserver.caddy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "distro_pkg": {
+      "alpine": [
+        "caddy"
+      ],
+      "archlinux": {
+        "aur": [
+          "caddy-git"
+        ],
+        "extra": [
+          "caddy"
+        ]
+      },
+      "debian": [
+        "caddy"
+      ],
+      "homebrew": [
+        "caddy"
+      ],
+      "nixpkgs": [
+        "caddy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "homepage": [
+      "https://caddyserver.com",
+      "https://github.com/caddyserver/caddy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
+    ],
+    "provides": [
+      "caddy:caddy-beta"
+    ],
+    "repology": [
+      "caddy"
+    ],
+    "src_url": [
+      "https://github.com/caddyserver/caddy"
+    ],
+    "tag": [
+      "caddy",
+      "server",
+      "nginx"
+    ],
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -21185,7 +21188,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-68586c8-250123T152003"
+    "version": "HEAD-a563783-250123T175338"
   },
   {
     "_disabled": "false",
@@ -22517,7 +22520,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-8eebac5-250123T022115"
+    "version": "HEAD-35440ce-250123T165053"
   },
   {
     "_disabled": "false",
@@ -27696,7 +27699,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-aafa9c6-250123T165711"
+    "version": "HEAD-eb2ac03-250123T180051"
   },
   {
     "_disabled": "false",
@@ -32382,7 +32385,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-2febde3-250122T160814"
+    "version": "HEAD-abcd365-250123T112836"
   },
   {
     "_disabled": "false",
@@ -35563,7 +35566,7 @@
       "secureboot",
       "uefi"
     ],
-    "version": "HEAD-cd6dd1c-241127T190423"
+    "version": "HEAD-66c7e28-250123T180414"
   },
   {
     "_disabled": "false",
@@ -39674,7 +39677,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-a00623e-250123T090403"
+    "version": "HEAD-f1710f4-250123T090356"
   },
   {
     "_disabled": "false",
@@ -45829,7 +45832,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.7.2t(2025-01-22at10:38:20)"
+    "version": "Twilightbuild-1.7.2t(2025-01-23at13:11:01)"
   },
   {
     "_disabled": "false",

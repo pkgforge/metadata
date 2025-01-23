@@ -225,7 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -252,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -271,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -287,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -360,6 +360,71 @@
       "utils"
     ],
     "version": "HEAD-9aeda4c-250123T010231"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "b3sum",
+    "pkg_family": "b3sum",
+    "pkg_id": "github.com.BLAKE3-team.BLAKE3",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/team-blake3/b3sum/b3sum",
+    "bincache": "ghcr.io/pkgforge/bincache/b3sum/official/b3sum",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/b3sum/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command line utility for calculating BLAKE3 hashes",
+    "distro_pkg": {
+      "alpine": [
+        "b3sum"
+      ],
+      "archlinux": {
+        "extra": [
+          "b3sum"
+        ]
+      },
+      "debian": [
+        "rust-b3sum",
+        "rust-blake3"
+      ],
+      "nixpkgs": [
+        "b3sum"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/b3sum/static.official.source.yaml",
+    "homepage": [
+      "https://blake3.io",
+      "https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "provides": [
+      "b3sum"
+    ],
+    "repology": [
+      "blake3"
+    ],
+    "src_url": [
+      "https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "tag": [
+      "bsum",
+      "checksum"
+    ],
+    "version": "HEAD-d2e8069-250122T175857"
   },
   {
     "_disabled": "true",
@@ -776,12 +841,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -804,7 +870,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -824,7 +890,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -837,7 +903,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -2067,7 +2133,7 @@
       "secret",
       "security"
     ],
-    "version": "HEAD-3fdaefd-250122T102545"
+    "version": "HEAD-d88bc09-250122T191525"
   },
   {
     "_disabled": "false",
@@ -2928,7 +2994,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-f264e95-250122T185124"
+    "version": "HEAD-8eebac5-250123T022115"
   },
   {
     "_disabled": "false",
@@ -3127,7 +3193,7 @@
     "tag": [
       "ipfs"
     ],
-    "version": "HEAD-fcfdbfb-250122T132227"
+    "version": "HEAD-a26aee1-250122T181904"
   },
   {
     "_disabled": "false",
@@ -3933,7 +3999,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-1e83a48-250122T190628"
+    "version": "HEAD-300a705-250122T205611"
   },
   {
     "_disabled": "false",
@@ -5983,7 +6049,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-3fb8a1f-250122T165025"
+    "version": "HEAD-1562a6f-250122T171615"
   },
   {
     "_disabled": "false",

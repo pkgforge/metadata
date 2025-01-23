@@ -225,7 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -252,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -271,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -287,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -1194,13 +1194,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -1223,7 +1223,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -1243,7 +1243,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -1256,7 +1256,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -3484,7 +3484,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-51bb2fe-250123T101843"
+    "version": "HEAD-68586c8-250123T152003"
   },
   {
     "_disabled": "false",
@@ -4426,6 +4426,77 @@
   },
   {
     "_disabled": "false",
+    "pkg": "miller",
+    "pkg_family": "miller",
+    "pkg_id": "github.com.johnkerl.miller",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/johnkerl-miller/miller/miller",
+    "bincache": "ghcr.io/pkgforge/bincache/miller/official/miller",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miller/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Combination of sed,awk,cut,join,sort utils for CSV, Json, TSV & more",
+    "distro_pkg": {
+      "alpine": [
+        "miller"
+      ],
+      "archlinux": {
+        "aur": [
+          "miller-git"
+        ],
+        "extra": [
+          "miller"
+        ]
+      },
+      "debian": [
+        "miller"
+      ],
+      "gnuguix": [
+        "miller"
+      ],
+      "homebrew": [
+        "miller"
+      ],
+      "nixpkgs": [
+        "miller"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/miller/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/johnkerl/miller"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/johnkerl/miller"
+    ],
+    "provides": [
+      "miller==mlr"
+    ],
+    "repology": [
+      "miller"
+    ],
+    "src_url": [
+      "https://github.com/johnkerl/miller"
+    ],
+    "tag": [
+      "utility"
+    ],
+    "version": "HEAD-3738b61-250123T092759"
+  },
+  {
+    "_disabled": "false",
     "pkg": "miniflux",
     "pkg_family": "miniflux",
     "pkg_id": "github.com.miniflux.v2",
@@ -5277,7 +5348,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-f0f6b3a-250123T054423"
+    "version": "HEAD-cdbb3ee-250123T152317"
   },
   {
     "_disabled": "false",
@@ -7396,6 +7467,64 @@
   },
   {
     "_disabled": "false",
+    "pkg": "tgpt",
+    "pkg_family": "tgpt",
+    "pkg_id": "github.com.aandrew-me.tgpt",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/me-tgpt/tgpt/tgpt",
+    "bincache": "ghcr.io/pkgforge/bincache/tgpt/official/tgpt",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tgpt/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "AI Chatbots in terminal without needing API keys",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "tgpt-git"
+        ],
+        "extra": [
+          "tgpt"
+        ]
+      },
+      "nixpkgs": [
+        "tgpt"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tgpt/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/aandrew-me/tgpt"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/aandrew-me/tgpt"
+    ],
+    "repology": [
+      "tgpt"
+    ],
+    "src_url": [
+      "https://github.com/aandrew-me/tgpt"
+    ],
+    "tag": [
+      "ai",
+      "chatbot",
+      "chatgpt"
+    ],
+    "version": "HEAD-d4f1e0d-250123T180447"
+  },
+  {
+    "_disabled": "false",
     "pkg": "timer",
     "pkg_family": "timer",
     "pkg_id": "github.com.caarlos0.timer",
@@ -7950,7 +8079,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-2bd75ae-250123T145027"
+    "version": "HEAD-b47c9f2-250123T160631"
   },
   {
     "_disabled": "false",

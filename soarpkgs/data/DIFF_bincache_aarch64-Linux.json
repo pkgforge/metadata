@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -288,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "true",
@@ -5014,6 +5013,69 @@
   },
   {
     "_disabled": "false",
+    "pkg": "ruff",
+    "pkg_family": "ruff",
+    "pkg_id": "github.com.astral-sh.ruff",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sh-ruff/ruff/ruff",
+    "bincache": "ghcr.io/pkgforge/bincache/ruff/official/ruff",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ruff/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Extremely fast Python linter and code formatter",
+    "distro_pkg": {
+      "alpine": [
+        "ruff"
+      ],
+      "archlinux": {
+        "extra": [
+          "ruff"
+        ]
+      },
+      "homebrew": [
+        "ruff"
+      ],
+      "nixpkgs": [
+        "ruff"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ruff/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/astral-sh/ruff"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/astral-sh/ruff"
+    ],
+    "provides": [
+      "ruff"
+    ],
+    "repology": [
+      "ruff-python-linter"
+    ],
+    "src_url": [
+      "https://github.com/astral-sh/ruff"
+    ],
+    "tag": [
+      "linter",
+      "python"
+    ],
+    "version": "0.9.3"
+  },
+  {
+    "_disabled": "false",
     "pkg": "runc",
     "pkg_family": "runc",
     "pkg_id": "github.com.opencontainers.runc",
@@ -5133,6 +5195,64 @@
       "container"
     ],
     "version": "v3.8"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "rustscan",
+    "pkg_family": "rustscan",
+    "pkg_id": "github.com.RustScan.RustScan",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rustscan-rustscan/rustscan/rustscan",
+    "bincache": "ghcr.io/pkgforge/bincache/rustscan/official/rustscan",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rustscan/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The modern,fast,smart and effective port scanner",
+    "distro_pkg": {
+      "alpine": [
+        "rustscan"
+      ],
+      "archlinux": {
+        "extra": [
+          "rustscan"
+        ]
+      },
+      "nixpkgs": [
+        "rustscan"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rustscan/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/RustScan/RustScan"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL3"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/RustScan/RustScan"
+    ],
+    "repology": [
+      "rustscan"
+    ],
+    "src_url": [
+      "https://github.com/RustScan/RustScan"
+    ],
+    "tag": [
+      "nmap",
+      "scanning",
+      "security"
+    ],
+    "version": "HEAD-b17b733-250123T192516"
   },
   {
     "_disabled": "false",
@@ -5316,7 +5436,7 @@
     "tag": [
       "fuzzyfinder"
     ],
-    "version": "HEAD-1dcdf06-250123T171309"
+    "version": "HEAD-b4138a5-250123T204053"
   },
   {
     "_disabled": "false",
@@ -6555,674 +6675,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "volta",
-    "pkg_family": "volta",
-    "pkg_id": "github.com.volta-cli.volta",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-volta/volta/volta",
-    "bincache": "ghcr.io/pkgforge/bincache/volta/official/volta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/volta/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "JS Toolchains as Code",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/volta/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/volta-cli/volta"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/volta-cli/volta"
-    ],
-    "repology": [
-      "volta-node"
-    ],
-    "src_url": [
-      "https://github.com/volta-cli/volta"
-    ],
-    "tag": [
-      "node"
-    ],
-    "version": "HEAD-40a6b89-250112T102421"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "vtm",
-    "pkg_family": "vtm",
-    "pkg_id": "github.com.directvt.vtm",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/directvt-vtm/vtm/vtm",
-    "bincache": "ghcr.io/pkgforge/bincache/vtm/official/vtm",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vtm/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "vtm",
-          "vtm-bin",
-          "vtm-git"
-        ]
-      },
-      "nixpkgs": [
-        "vtm"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vtm/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/directvt/vtm"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/directvt/vtm"
-    ],
-    "provides": [
-      "vtm"
-    ],
-    "repology": [
-      "vtm"
-    ],
-    "src_url": [
-      "https://github.com/directvt/vtm"
-    ],
-    "tag": [
-      "multiplexer",
-      "terminal"
-    ],
-    "version": "v0.9.99.61"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "vultr-cli",
-    "pkg_family": "vultr-cli",
-    "pkg_id": "github.com.vultr.vultr-cli",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vultr-cli/vultr-cli/vultr-cli",
-    "bincache": "ghcr.io/pkgforge/bincache/vultr-cli/official/vultr-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vultr-cli/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Official command line tool for Vultr services",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "vultr-cli"
-        ]
-      },
-      "nixpkgs": [
-        "vultr-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vultr-cli/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/vultr/vultr-cli"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/vultr/vultr-cli"
-    ],
-    "provides": [
-      "vultr-cli"
-    ],
-    "repology": [
-      "vultr-cli"
-    ],
-    "src_url": [
-      "https://github.com/vultr/vultr-cli"
-    ],
-    "tag": [
-      "vultr"
-    ],
-    "version": "HEAD-a74b3cd-250122T124051"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wadl-dumper",
-    "pkg_family": "wadl-dumper",
-    "pkg_id": "github.com.dwisiswant0.wadl-dumper",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wadl-dumper/wadl-dumper/wadl-dumper",
-    "bincache": "ghcr.io/pkgforge/bincache/wadl-dumper/official/wadl-dumper",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wadl-dumper/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Dump all available paths and/or endpoints on WADL file",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wadl-dumper/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/dwisiswant0/wadl-dumper"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dwisiswant0/wadl-dumper"
-    ],
-    "src_url": [
-      "https://github.com/dwisiswant0/wadl-dumper"
-    ],
-    "tag": [
-      "bugbounty",
-      "wadl",
-      "wsdl",
-      "xml"
-    ],
-    "version": "HEAD-de97146-220524T185914"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "walk",
-    "pkg_family": "walk",
-    "pkg_id": "github.com.antonmedv.walk",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/antonmedv-walk/walk/walk",
-    "bincache": "ghcr.io/pkgforge/bincache/walk/official/walk",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/walk/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Terminal file manager",
-    "distro_pkg": {
-      "alpine": [
-        "walk"
-      ],
-      "archlinux": {
-        "aur": [
-          "walk",
-          "walk-bin"
-        ]
-      },
-      "homebrew": [
-        "walk"
-      ],
-      "nixpkgs": [
-        "walk"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/walk/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/antonmedv/walk"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/antonmedv/walk"
-    ],
-    "provides": [
-      "walk"
-    ],
-    "repology": [
-      "walk"
-    ],
-    "src_url": [
-      "https://github.com/antonmedv/walk"
-    ],
-    "tag": [
-      "file-manager"
-    ],
-    "version": "HEAD-f6faf52-240816T134524"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "waybackrobots",
-    "pkg_family": "waybackrobots",
-    "pkg_id": "github.com.mhmdiaa.waybackrobots",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mhmdiaa-waybackrobots/waybackrobots/waybackrobots",
-    "bincache": "ghcr.io/pkgforge/bincache/waybackrobots/official/waybackrobots",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/waybackrobots/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Enumerate old versions of robots.txt paths using Wayback Machine for content discovery",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/waybackrobots/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/mhmdiaa/waybackrobots"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mhmdiaa/waybackrobots"
-    ],
-    "src_url": [
-      "https://github.com/mhmdiaa/waybackrobots"
-    ],
-    "tag": [
-      "bugbounty",
-      "recon"
-    ],
-    "version": "HEAD-e66c88a-230921T182355"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "waybackurls",
-    "pkg_family": "waybackurls",
-    "pkg_id": "github.com.tomnomnom.waybackurls",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tomnomnom-waybackurls/waybackurls/waybackurls",
-    "bincache": "ghcr.io/pkgforge/bincache/waybackurls/official/waybackurls",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/waybackurls/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Fetch all the URLs that the Wayback Machine knows about for a domain",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "waybackurls",
-          "waybackurls-bin",
-          "waybackurls-git"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/waybackurls/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/tomnomnom/waybackurls"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tomnomnom/waybackurls"
-    ],
-    "repology": [
-      "waybackurls"
-    ],
-    "src_url": [
-      "https://github.com/tomnomnom/waybackurls"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-8d27cf3-220405T112015"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "web-cache-vulnerability-scanner",
-    "pkg_family": "web-cache-vulnerability-scanner",
-    "pkg_id": "github.com.Hackmanit.Web-Cache-Vulnerability-Scanner",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vulnerability-scanner/web-cache-vulnerability-scanner/web-cache-vulnerability-scanner",
-    "bincache": "ghcr.io/pkgforge/bincache/web-cache-vulnerability-scanner/official/web-cache-vulnerability-scanner",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/web-cache-vulnerability-scanner/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "CLI tool for testing for web cache poisoning",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/web-cache-vulnerability-scanner/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/Hackmanit/Web-Cache-Vulnerability-Scanner"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Hackmanit/Web-Cache-Vulnerability-Scanner"
-    ],
-    "src_url": [
-      "https://github.com/Hackmanit/Web-Cache-Vulnerability-Scanner"
-    ],
-    "tag": [
-      "bugbounty",
-      "security"
-    ],
-    "version": "HEAD-81f1924-241226T192219"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wego",
-    "pkg_family": "wego",
-    "pkg_id": "github.com.schachmat.wego",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/schachmat-wego/wego/wego",
-    "bincache": "ghcr.io/pkgforge/bincache/wego/official/wego",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wego/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A Weather client for the terminal",
-    "distro_pkg": {
-      "alpine": [
-        "wego"
-      ],
-      "archlinux": {
-        "aur": [
-          "wego"
-        ]
-      },
-      "debian": [
-        "wego"
-      ],
-      "homebrew": [
-        "wego"
-      ],
-      "nixpkgs": [
-        "wego"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wego/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/schachmat/wego"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD",
-      "ISC",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/schachmat/wego"
-    ],
-    "repology": [
-      "wego"
-    ],
-    "src_url": [
-      "https://github.com/schachmat/wego"
-    ],
-    "tag": [
-      "weather"
-    ],
-    "version": "HEAD-6578d5e-241006T184746"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wget",
-    "pkg_family": "wget",
-    "pkg_id": "ppkg.wget",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-wget/wget/wget",
-    "bincache": "ghcr.io/pkgforge/bincache/wget/ppkg/wget",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wget/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Tool for retrieving files using HTTP, HTTPS, and FTP",
-    "distro_pkg": {
-      "alpine": [
-        "wget"
-      ],
-      "archlinux": {
-        "extra": [
-          "wget"
-        ]
-      },
-      "debian": [
-        "wget"
-      ],
-      "gnuguix": [
-        "wget"
-      ],
-      "homebrew": [
-        "wget"
-      ],
-      "nixpkgs": [
-        "wget"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wget/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://www.gnu.org/software/wget/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "wget"
-    ],
-    "repology": [
-      "wget"
-    ],
-    "src_url": [
-      "https://www.gnu.org/software/wget/"
-    ],
-    "tag": [
-      "downloader"
-    ],
-    "version": "1.24.5"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wget2",
-    "pkg_family": "wget2",
-    "pkg_id": "ppkg.wget2",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-wget2/wget2/wget2",
-    "bincache": "ghcr.io/pkgforge/bincache/wget2/ppkg/wget2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wget2/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The successor of GNU Wget, a file and recursive website downloader",
-    "distro_pkg": {
-      "alpine": [
-        "wget2"
-      ],
-      "archlinux": {
-        "aur": [
-          "wget2",
-          "wget2-git"
-        ]
-      },
-      "debian": [
-        "wget2"
-      ],
-      "gnuguix": [
-        "wget2"
-      ],
-      "homebrew": [
-        "wget2"
-      ],
-      "nixpkgs": [
-        "wget2"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wget2/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://github.com/rockdaboot/wget2",
-      "https://gitlab.com/gnuwget/wget2"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "wget2"
-    ],
-    "repology": [
-      "wget2"
-    ],
-    "src_url": [
-      "https://gitlab.com/gnuwget/wget2"
-    ],
-    "tag": [
-      "downloader"
-    ],
-    "version": "2.2.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wireguard",
-    "pkg_family": "wireguard",
-    "pkg_id": "git.zx2c4.com.wireguard-go",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wireguard-go/wireguard/wireguard",
-    "bincache": "ghcr.io/pkgforge/bincache/wireguard-go/official/wireguard",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wireguard/static.go.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Go Userspace implementation of WireGuard",
-    "distro_pkg": {
-      "alpine": [
-        "wireguard-go"
-      ],
-      "archlinux": {
-        "aur": [
-          "wireguard-go",
-          "wireguard-go-git"
-        ]
-      },
-      "debian": [
-        "wireguard-go"
-      ],
-      "homebrew": [
-        "wireguard-go"
-      ],
-      "nixpkgs": [
-        "wireguard-go"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wireguard/static.go.source.yaml",
-    "homepage": [
-      "https://www.wireguard.com",
-      "https://git.zx2c4.com/wireguard-go"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://git.zx2c4.com/wireguard-go"
-    ],
-    "provides": [
-      "wireguard",
-      "wireguard-go"
-    ],
-    "repology": [
-      "wireguard-go"
-    ],
-    "src_url": [
-      "https://git.zx2c4.com/wireguard-go"
-    ],
-    "tag": [
-      "vpn",
-      "tunnel",
-      "wireguard"
-    ],
-    "version": "HEAD-12269c2-231211T163847"
-  },
-  {
-    "_disabled": "false",
     "pkg": "wireguard",
     "pkg_family": "wireguard",
     "pkg_id": "git.zx2c4.com.wireguard-rs",
@@ -7349,275 +6801,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "wireproxy",
-    "pkg_family": "wireproxy",
-    "pkg_id": "github.com.pufferffish.wireproxy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pufferffish-wireproxy/wireproxy/wireproxy",
-    "bincache": "ghcr.io/pkgforge/bincache/wireproxy/official/wireproxy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wireproxy/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Wireguard client that exposes itself as a SOCKS5 proxy",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "wireproxy"
-        ]
-      },
-      "nixpkgs": [
-        "wireproxy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wireproxy/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/pufferffish/wireproxy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "ISC"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pufferffish/wireproxy"
-    ],
-    "provides": [
-      "wireproxy"
-    ],
-    "repology": [
-      "wireproxy"
-    ],
-    "src_url": [
-      "https://github.com/pufferffish/wireproxy"
-    ],
-    "tag": [
-      "proxy",
-      "wireguard"
-    ],
-    "version": "HEAD-d710683-241226T172001"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wiretap",
-    "pkg_family": "wiretap",
-    "pkg_id": "github.com.sandialabs.wiretap",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sandialabs-wiretap/wiretap/wiretap",
-    "bincache": "ghcr.io/pkgforge/bincache/wiretap/official/wiretap",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wiretap/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "VPN-like proxy server that tunnels traffic via WireGuard without requiring special privileges",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wiretap/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/sandialabs/wiretap"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sandialabs/wiretap"
-    ],
-    "provides": [
-      "wiretap"
-    ],
-    "src_url": [
-      "https://github.com/sandialabs/wiretap"
-    ],
-    "tag": [
-      "proxy",
-      "wireguard"
-    ],
-    "version": "HEAD-034c06d-241125T172227"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wormhole-rs",
-    "pkg_family": "wormhole-rs",
-    "pkg_id": "github.com.magic-wormhole.magic-wormhole.rs",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wormhole-rs/wormhole-rs/wormhole-rs",
-    "bincache": "ghcr.io/pkgforge/bincache/wormhole-rs/official/wormhole-rs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wormhole-rs/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Rust implementation of Magic Wormhole, with new features and enhancements",
-    "distro_pkg": {
-      "alpine": [
-        "magic-wormhole-rs"
-      ],
-      "archlinux": {
-        "aur": [
-          "wormhole-rs",
-          "wormhole-rs-bin"
-        ]
-      },
-      "debian": [
-        "rust-magic-wormhole"
-      ],
-      "nixpkgs": [
-        "magic-wormhole-rs"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wormhole-rs/static.official.source.yaml",
-    "homepage": [
-      "http://magic-wormhole.io",
-      "https://github.com/magic-wormhole/magic-wormhole.rs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "EUPL-1.2"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/magic-wormhole/magic-wormhole.rs"
-    ],
-    "repology": [
-      "magic-wormhole-rs",
-      "magic-wormhole.rs"
-    ],
-    "src_url": [
-      "https://github.com/magic-wormhole/magic-wormhole.rs"
-    ],
-    "tag": [
-      "data-transfer",
-      "file-transfer",
-      "magic-wormhole",
-      "wormhole"
-    ],
-    "version": "HEAD-378c605-250118T093107"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wrappe",
-    "pkg_family": "wrappe",
-    "pkg_id": "github.com.Systemcluster.wrappe",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/systemcluster-wrappe/wrappe/wrappe",
-    "bincache": "ghcr.io/pkgforge/bincache/wrappe/official/wrappe",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wrappe/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Packer for creating self-contained single-binary applications from executables and directories",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wrappe/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/Systemcluster/wrappe"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Systemcluster/wrappe"
-    ],
-    "src_url": [
-      "https://github.com/Systemcluster/wrappe"
-    ],
-    "tag": [
-      "packer"
-    ],
-    "version": "HEAD-55c98a6-241117T143958"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wtf",
-    "pkg_family": "wtf",
-    "pkg_id": "github.com.wtfutil.wtf",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wtfutil-wtf/wtf/wtf",
-    "bincache": "ghcr.io/pkgforge/bincache/wtf/official/wtf",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wtf/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Personal information Dashboard for the terminal",
-    "distro_pkg": {
-      "alpine": [
-        "wtfutil"
-      ],
-      "archlinux": {
-        "aur": [
-          "wtfutil",
-          "wtfutil-bin"
-        ]
-      },
-      "homebrew": [
-        "wtfutil"
-      ],
-      "nixpkgs": [
-        "wtf"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wtf/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/wtfutil/wtf"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wtfutil/wtf"
-    ],
-    "provides": [
-      "wtf==wtfutil"
-    ],
-    "repology": [
-      "wtfutil"
-    ],
-    "src_url": [
-      "https://github.com/wtfutil/wtf"
-    ],
-    "tag": [
-      "dashboard"
-    ],
-    "version": "HEAD-6a02b97-240521T154434"
-  },
-  {
-    "_disabled": "false",
     "pkg": "wth",
     "pkg_family": "wth",
     "pkg_id": "github.com.mrusme.wth",
@@ -7658,109 +6841,6 @@
       "dashboard"
     ],
     "version": "HEAD-8cd3bae-230703T145814"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wush",
-    "pkg_family": "wush",
-    "pkg_id": "github.com.coder.wush",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coder-wush/wush/wush",
-    "bincache": "ghcr.io/pkgforge/bincache/wush/official/wush",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wush/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Simplest & Fastest way to transfer files between computers via WireGuard",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "wush",
-          "wush-bin"
-        ]
-      },
-      "homebrew": [
-        "wush"
-      ],
-      "nixpkgs": [
-        "wush"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wush/static.official.source.yaml",
-    "homepage": [
-      "https://wush.dev"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "CC0-1.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/coder/wush"
-    ],
-    "repology": [
-      "wush"
-    ],
-    "src_url": [
-      "https://github.com/coder/wush"
-    ],
-    "tag": [
-      "file-transfer",
-      "p2p"
-    ],
-    "version": "HEAD-ecdc428-250106T203452"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "x8",
-    "pkg_family": "x8",
-    "pkg_id": "github.com.Sh1Yo.x8",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sh1yo-x8/x8/x8",
-    "bincache": "ghcr.io/pkgforge/bincache/x8/official/x8",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/x8/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Hidden parameters discovery suite",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/x8/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/Sh1Yo/x8"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Sh1Yo/x8"
-    ],
-    "repology": [
-      "x8"
-    ],
-    "src_url": [
-      "https://github.com/Sh1Yo/x8"
-    ],
-    "tag": [
-      "bugbounty",
-      "content-discovery",
-      "recon"
-    ],
-    "version": "HEAD-c78f246-240908T132908"
   },
   {
     "_disabled": "false",

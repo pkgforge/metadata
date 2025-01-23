@@ -1251,7 +1251,7 @@
       "utility",
       "bluetooth"
     ],
-    "version": "HEAD-9a517fc-250123T140814"
+    "version": "HEAD-50ede6c-250123T171454"
   },
   {
     "_disabled": "false",
@@ -3543,6 +3543,7 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
@@ -4651,6 +4652,7 @@
     "pkg_id": "github.com.teddysun.across",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/teddysun-across/bench/bench",
+    "bincache": "ghcr.io/pkgforge/bincache/bench/official/bench",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bench/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -4798,6 +4800,7 @@
     "pkg_id": "github.com.pixelomer.bin2video",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pixelomer-bin2video/bin2video/bin2video",
+    "bincache": "ghcr.io/pkgforge/bincache/bin2video/official/bin2video",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bin2video/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -6358,6 +6361,7 @@
     "pkg_id": "github.com.containers.bubblewrap.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bubblewrap-glibc/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/glibc/bwrap",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.glibc.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -6749,77 +6753,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
-    "distro_pkg": {
-      "alpine": [
-        "caddy"
-      ],
-      "archlinux": {
-        "aur": [
-          "caddy-git"
-        ],
-        "extra": [
-          "caddy"
-        ]
-      },
-      "debian": [
-        "caddy"
-      ],
-      "homebrew": [
-        "caddy"
-      ],
-      "nixpkgs": [
-        "caddy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
-    "homepage": [
-      "https://caddyserver.com",
-      "https://github.com/caddyserver/caddy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
-    ],
-    "provides": [
-      "caddy"
-    ],
-    "repology": [
-      "caddy"
-    ],
-    "src_url": [
-      "https://github.com/caddyserver/caddy"
-    ],
-    "tag": [
-      "caddy",
-      "server",
-      "nginx"
-    ],
-    "version": "v2.9.1"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "caddy",
-    "pkg_family": "caddy",
-    "pkg_id": "github.com.caddyserver.caddy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
@@ -6882,6 +6816,76 @@
       "nginx"
     ],
     "version": "v2.9.0-beta.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "caddy",
+    "pkg_family": "caddy",
+    "pkg_id": "github.com.caddyserver.caddy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
+    "distro_pkg": {
+      "alpine": [
+        "caddy"
+      ],
+      "archlinux": {
+        "aur": [
+          "caddy-git"
+        ],
+        "extra": [
+          "caddy"
+        ]
+      },
+      "debian": [
+        "caddy"
+      ],
+      "homebrew": [
+        "caddy"
+      ],
+      "nixpkgs": [
+        "caddy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
+    "homepage": [
+      "https://caddyserver.com",
+      "https://github.com/caddyserver/caddy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
+    ],
+    "provides": [
+      "caddy"
+    ],
+    "repology": [
+      "caddy"
+    ],
+    "src_url": [
+      "https://github.com/caddyserver/caddy"
+    ],
+    "tag": [
+      "caddy",
+      "server",
+      "nginx"
+    ],
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -13940,7 +13944,7 @@
     "tag": [
       "ls"
     ],
-    "version": "HEAD-1780411-250123T150903"
+    "version": "HEAD-21d6024-250123T163030"
   },
   {
     "_disabled": "false",
@@ -27692,7 +27696,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-69f48db-250122T195320"
+    "version": "HEAD-aafa9c6-250123T165711"
   },
   {
     "_disabled": "false",
@@ -28774,7 +28778,7 @@
     "tag": [
       "nvme"
     ],
-    "version": "HEAD-7057e6c-250122T163747"
+    "version": "HEAD-b7822bd-250123T163136"
   },
   {
     "_disabled": "false",
@@ -36808,7 +36812,7 @@
     "tag": [
       "fuzzyfinder"
     ],
-    "version": "HEAD-226d995-250123T150739"
+    "version": "HEAD-1dcdf06-250123T171309"
   },
   {
     "_disabled": "false",
@@ -41069,7 +41073,7 @@
       "network",
       "traceroute"
     ],
-    "version": "HEAD-5517f5b-250121T083604"
+    "version": "HEAD-bd358a5-250123T233027"
   },
   {
     "_disabled": "false",

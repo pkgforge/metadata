@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,6 +272,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -287,7 +288,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "1.37.0"
+    "version": "250118T141142"
   },
   {
     "_disabled": "true",
@@ -640,6 +641,7 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
@@ -1933,7 +1935,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-cc7b614-250123T113222"
+    "version": "HEAD-02efddd-250123T213415"
   },
   {
     "_disabled": "false",
@@ -2887,7 +2889,7 @@
     "tag": [
       "ipfs"
     ],
-    "version": "HEAD-82945a9-250123T190711"
+    "version": "HEAD-a323bbf-250123T215825"
   },
   {
     "_disabled": "false",
@@ -5965,7 +5967,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-d6abbc2-250123T110049"
+    "version": "HEAD-f0db473-250123T150647"
   },
   {
     "_disabled": "false",
@@ -6878,87 +6880,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-2feed7d-250123T195852"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xclip",
-    "pkg_family": "xclip",
-    "pkg_id": "ppkg.xclip",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xclip/xclip/xclip",
-    "bincache": "ghcr.io/pkgforge/bincache/xclip/ppkg/xclip-copyfile",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xclip/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Command line interface to the X11 clipboard",
-      "xclip": "CLI to X selections (clipboard) [xclip]",
-      "xclip-copyfile": "Copy files into the X clipboard, preserving tree structure [xclip]",
-      "xclip-cutfile": "Copy files into the X clipboard & delete them afterwards [xclip]",
-      "xclip-pastefile": "Paste files from the X clipboard [xclip]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "xclip"
-      ],
-      "archlinux": {
-        "aur": [
-          "xclip-git"
-        ],
-        "extra": [
-          "xclip"
-        ]
-      },
-      "debian": [
-        "xclip"
-      ],
-      "gnuguix": [
-        "xclip"
-      ],
-      "homebrew": [
-        "xclip"
-      ],
-      "nixpkgs": [
-        "xclip"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xclip/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://github.com/astrand/xclip"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "xclip:xsel",
-      "xclip-copyfile",
-      "xclip-cutfile",
-      "xclip-pastefile"
-    ],
-    "repology": [
-      "xclip"
-    ],
-    "src_url": [
-      "https://github.com/astrand/xclip"
-    ],
-    "tag": [
-      "clipboard"
-    ],
-    "version": "0.13"
+    "version": "HEAD-3c217d1-250123T221728"
   },
   {
     "_disabled": "false",
@@ -7009,143 +6931,6 @@
       "cp"
     ],
     "version": "HEAD-80ae5bc-250115T150641"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xdo",
-    "pkg_family": "xdo",
-    "pkg_id": "ppkg.xdo",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xdo/xdo/xdo",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xdo/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Small X utility to perform elementary actions on windows",
-    "distro_pkg": {
-      "alpine": [
-        "xdo"
-      ],
-      "archlinux": {
-        "aur": [
-          "xdo-git"
-        ],
-        "extra": [
-          "xdo"
-        ]
-      },
-      "debian": [
-        "xdo"
-      ],
-      "gnuguix": [
-        "xdo"
-      ],
-      "nixpkgs": [
-        "xdo"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xdo/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/baskerville/xdo"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-2-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "xdo"
-    ],
-    "repology": [
-      "xdo"
-    ],
-    "src_url": [
-      "https://github.com/baskerville/xdo"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "0.5.7"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xdotool",
-    "pkg_family": "xdotool",
-    "pkg_id": "ppkg.xdotool",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xdotool/xdotool/xdotool",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xdotool/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Simulate keyboard input and mouse activity, move and resize windows",
-    "distro_pkg": {
-      "alpine": [
-        "xdotool"
-      ],
-      "archlinux": {
-        "aur": [
-          "xdotool-git"
-        ],
-        "extra": [
-          "xdotool"
-        ]
-      },
-      "debian": [
-        "xdotool"
-      ],
-      "gnuguix": [
-        "xdotool"
-      ],
-      "homebrew": [
-        "xdotool"
-      ],
-      "nixpkgs": [
-        "xdotool"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xdotool/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/jordansissel/xdotool"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "custom"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "xdotool"
-    ],
-    "repology": [
-      "xdotool"
-    ],
-    "src_url": [
-      "https://github.com/jordansissel/xdotool"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "3.20211022.1"
   },
   {
     "_disabled": "false",
@@ -7210,202 +6995,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "xq",
-    "pkg_family": "xq",
-    "pkg_id": "github.com.sibprogrammer.xq",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sibprogrammer-xq/xq/xq",
-    "bincache": "ghcr.io/pkgforge/bincache/xq/official/xq",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xq/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Command-line XML and HTML beautifier and content extractor",
-    "distro_pkg": {
-      "alpine": [
-        "xq"
-      ],
-      "archlinux": {
-        "aur": [
-          "xq",
-          "xq-bin"
-        ]
-      },
-      "debian": [
-        "xq"
-      ],
-      "homebrew": [
-        "xq"
-      ],
-      "nixpkgs": [
-        "xq-xml"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xq/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/sibprogrammer/xq"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sibprogrammer/xq"
-    ],
-    "provides": [
-      "xq"
-    ],
-    "repology": [
-      "xq-sibprogrammer"
-    ],
-    "src_url": [
-      "https://github.com/sibprogrammer/xq"
-    ],
-    "tag": [
-      "html",
-      "xml",
-      "xpath"
-    ],
-    "version": "HEAD-48c315e-250115T051709"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xsel",
-    "pkg_family": "xsel",
-    "pkg_id": "ppkg.xsel",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-xsel/xsel/xsel",
-    "bincache": "ghcr.io/pkgforge/bincache/xsel/ppkg/xsel",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xsel/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Command-line program for manipulating the X selection (Clipboard)",
-    "distro_pkg": {
-      "alpine": [
-        "xsel"
-      ],
-      "archlinux": {
-        "aur": [
-          "xsel-git"
-        ],
-        "extra": [
-          "xsel"
-        ]
-      },
-      "debian": [
-        "xsel"
-      ],
-      "gnuguix": [
-        "xsel"
-      ],
-      "homebrew": [
-        "xsel"
-      ],
-      "nixpkgs": [
-        "xsel"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xsel/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://github.com/kfish/xsel"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "custom"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "xsel:xclip"
-    ],
-    "repology": [
-      "xsel"
-    ],
-    "src_url": [
-      "https://github.com/kfish/xsel"
-    ],
-    "tag": [
-      "clipboard"
-    ],
-    "version": "1.2.1"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xurls",
-    "pkg_family": "xurls",
-    "pkg_id": "github.com.mvdan.xurls",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mvdan-xurls/xurls/xurls",
-    "bincache": "ghcr.io/pkgforge/bincache/xurls/official/xurls",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xurls/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Extract urls from text or files",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "xurls"
-        ]
-      },
-      "homebrew": [
-        "xurls"
-      ],
-      "nixpkgs": [
-        "xurls"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xurls/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/mvdan/xurls"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mvdan/xurls"
-    ],
-    "repology": [
-      "xurls"
-    ],
-    "src_url": [
-      "https://github.com/mvdan/xurls"
-    ],
-    "tag": [
-      "tld",
-      "url"
-    ],
-    "version": "HEAD-efa022a-250102T165553"
-  },
-  {
-    "_disabled": "false",
     "pkg": "yabs",
     "pkg_family": "yabs",
     "pkg_id": "github.com.masonr.yet-another-bench-script",
@@ -7445,384 +7034,6 @@
       "benchmark"
     ],
     "version": "HEAD-0ec2a2a-250101T231747"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "yalis",
-    "pkg_family": "yalis",
-    "pkg_id": "github.com.EatonChips.yalis",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/eatonchips-yalis/yalis/yalis",
-    "bincache": "ghcr.io/pkgforge/bincache/yalis/official/yalis",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yalis/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Yet Another LinkedIn Scraper",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yalis/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/EatonChips/yalis"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/EatonChips/yalis"
-    ],
-    "repology": [
-      "yalis"
-    ],
-    "src_url": [
-      "https://github.com/EatonChips/yalis"
-    ],
-    "tag": [
-      "scraper"
-    ],
-    "version": "HEAD-7d85f3b-230309T114007"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "yataf",
-    "pkg_family": "yataf",
-    "pkg_id": "github.com.Damian89.yataf",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/damian89-yataf/yataf/yataf",
-    "bincache": "ghcr.io/pkgforge/bincache/yataf/official/yataf",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yataf/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "yataf extracts secrets and paths from files or urls - its best used against javascript files",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yataf/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/dsecuredcom/yataf"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dsecuredcom/yataf"
-    ],
-    "provides": [
-      "yataf"
-    ],
-    "src_url": [
-      "https://github.com/dsecuredcom/yataf"
-    ],
-    "tag": [
-      "bugbounty"
-    ],
-    "version": "HEAD-6b851f9-240911T115302"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "yazi",
-    "pkg_family": "yazi",
-    "pkg_id": "github.com.sxyazi.yazi",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sxyazi-yazi/yazi/yazi",
-    "bincache": "ghcr.io/pkgforge/bincache/yazi/official/ya",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yazi/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Blazing fast terminal file manager",
-      "ya": "CLI interface for yazi",
-      "yazi": "Blazing fast terminal file manager"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "yazi"
-      ],
-      "archlinux": {
-        "aur": [
-          "yazi-git"
-        ],
-        "extra": [
-          "yazi"
-        ]
-      },
-      "nixpkgs": [
-        "yazi",
-        "yazi-unwrapped"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yazi/static.official.source.yaml",
-    "homepage": [
-      "https://yazi-rs.github.io",
-      "https://github.com/sxyazi/yazi"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD",
-      "ISC",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sxyazi/yazi"
-    ],
-    "provides": [
-      "ya",
-      "yazi"
-    ],
-    "repology": [
-      "yazi"
-    ],
-    "src_url": [
-      "https://github.com/sxyazi/yazi"
-    ],
-    "tag": [
-      "file",
-      "explorer",
-      "manager"
-    ],
-    "version": "HEAD-abb4325-250122T225117"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "yggdrasil",
-    "pkg_family": "yggdrasil",
-    "pkg_id": "github.com.yggdrasil-network.yggdrasil-go",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yggdrasil-go/yggdrasil/yggdrasil",
-    "bincache": "ghcr.io/pkgforge/bincache/yggdrasil/official/yggdrasil",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yggdrasil/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Experimental end-to-end encrypted self-arranging IPv6 network",
-    "distro_pkg": {
-      "alpine": [
-        "yggdrasil"
-      ],
-      "archlinux": {
-        "aur": [
-          "yggdrasil-git"
-        ],
-        "extra": [
-          "yggdrasil"
-        ]
-      },
-      "debian": [
-        "yggdrasil"
-      ],
-      "homebrew": [
-        "yggdrasil"
-      ],
-      "nixpkgs": [
-        "yggdrasil"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yggdrasil/static.official.source.yaml",
-    "homepage": [
-      "https://yggdrasil-network.github.io",
-      "https://github.com/yggdrasil-network/yggdrasil-go"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/yggdrasil-network/yggdrasil-go"
-    ],
-    "provides": [
-      "yggdrasil",
-      "yggdrasilctl"
-    ],
-    "repology": [
-      "yggdrasil-go"
-    ],
-    "src_url": [
-      "https://github.com/yggdrasil-network/yggdrasil-go"
-    ],
-    "tag": [
-      "mesh",
-      "network",
-      "vpn"
-    ],
-    "version": "HEAD-782c025-241222T110426"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "yip",
-    "pkg_family": "yip",
-    "pkg_id": "github.com.mudler.yip",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mudler-yip/yip/yip",
-    "bincache": "ghcr.io/pkgforge/bincache/yip/official/yip",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yip/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Tool to apply a cloud-init style yaml file to the system",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yip/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/mudler/yip"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mudler/yip"
-    ],
-    "src_url": [
-      "https://github.com/mudler/yip"
-    ],
-    "tag": [
-      "cloud-init",
-      "init"
-    ],
-    "version": "HEAD-3a35c6d-250117T135915"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "yj",
-    "pkg_family": "yj",
-    "pkg_id": "github.com.sclevine.yj",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sclevine-yj/yj/yj",
-    "bincache": "ghcr.io/pkgforge/bincache/yj/official/yj",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yj/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Convert between YAML, TOML, JSON, and HCL",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yj/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/sclevine/yj"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sclevine/yj"
-    ],
-    "repology": [
-      "yj"
-    ],
-    "src_url": [
-      "https://github.com/sclevine/yj"
-    ],
-    "tag": [
-      "hcl",
-      "json",
-      "jq",
-      "toml",
-      "yaml",
-      "yq"
-    ],
-    "version": "HEAD-8016400-231214T181922"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "yq",
-    "pkg_family": "yq",
-    "pkg_id": "github.com.mikefarah.yq",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mikefarah-yq/yq/yq",
-    "bincache": "ghcr.io/pkgforge/bincache/yq/official/yq",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yq/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Portable command-line YAML, JSON, XML, CSV, TOML and properties processor",
-    "distro_pkg": {
-      "alpine": [
-        "yq",
-        "yq-go"
-      ],
-      "archlinux": {
-        "extra": [
-          "go-yq"
-        ]
-      },
-      "homebrew": [
-        "yq"
-      ],
-      "nixpkgs": [
-        "yq-go"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yq/static.official.source.yaml",
-    "homepage": [
-      "https://mikefarah.gitbook.io/yq",
-      "https://github.com/mikefarah/yq"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0",
-      "BSD",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mikefarah/yq"
-    ],
-    "repology": [
-      "yq-mikefarah"
-    ],
-    "src_url": [
-      "https://github.com/mikefarah/yq"
-    ],
-    "tag": [
-      "json",
-      "jq",
-      "toml",
-      "yaml"
-    ],
-    "version": "HEAD-c34d3f7-250123T220408"
   },
   {
     "_disabled": "false",
@@ -8211,7 +7422,7 @@
     "tag": [
       "security"
     ],
-    "version": "HEAD-9684e37-250122T143129"
+    "version": "HEAD-aee5545-250123T130455"
   },
   {
     "_disabled": "false",

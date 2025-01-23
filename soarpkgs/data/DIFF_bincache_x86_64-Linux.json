@@ -42,7 +42,7 @@
       "utility",
       "bluetooth"
     ],
-    "version": "HEAD-50ede6c-250123T171454"
+    "version": "HEAD-5caadd6-250123T172151"
   },
   {
     "_disabled": "false",
@@ -848,6 +848,7 @@
     "pkg_id": "github.com.containers.bubblewrap",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containers-bubblewrap/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/official/bwrap",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -994,6 +995,7 @@
     "pkg_id": "github.com.containers.bubblewrap.patched",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bubblewrap-patched/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/patched/bwrap",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.patched.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -1069,6 +1071,7 @@
     "pkg_id": "github.com.containers.bubblewrap.patched.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/patched-glibc/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/glibc/patched",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.patched.glibc.yaml",
     "category": [
       "ConsoleOnly",
@@ -1197,13 +1200,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -1226,7 +1229,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -1246,7 +1249,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -1259,7 +1262,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -3487,7 +3490,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-68586c8-250123T152003"
+    "version": "HEAD-a563783-250123T175338"
   },
   {
     "_disabled": "false",
@@ -3692,7 +3695,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-8eebac5-250123T022115"
+    "version": "HEAD-35440ce-250123T165053"
   },
   {
     "_disabled": "false",
@@ -4998,7 +5001,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-aafa9c6-250123T165711"
+    "version": "HEAD-eb2ac03-250123T180051"
   },
   {
     "_disabled": "false",
@@ -6102,6 +6105,62 @@
   },
   {
     "_disabled": "false",
+    "pkg": "qsv",
+    "pkg_family": "qsv",
+    "pkg_id": "github.com.dathere.qsv",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dathere-qsv/qsv/qsv",
+    "bincache": "ghcr.io/pkgforge/bincache/qsv/official/qsv",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qsv/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Blazing-fast Data-Wrangling toolkit",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "qsv",
+          "qsv-bin"
+        ]
+      },
+      "nixpkgs": [
+        "qsv"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qsv/static.official.source.yaml",
+    "homepage": [
+      "https://qsv.dathere.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT",
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dathere/qsv"
+    ],
+    "repology": [
+      "qsv"
+    ],
+    "src_url": [
+      "https://github.com/dathere/qsv"
+    ],
+    "tag": [
+      "csv",
+      "textproc"
+    ],
+    "version": "HEAD-abcd365-250123T112836"
+  },
+  {
+    "_disabled": "false",
     "pkg": "realm-tavern",
     "pkg_family": "realm-tavern",
     "pkg_id": "github.com.spellshift.realm",
@@ -6534,6 +6593,70 @@
       "container"
     ],
     "version": "v3.8"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sbctl",
+    "pkg_family": "sbctl",
+    "pkg_id": "github.com.Foxboron.sbctl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/foxboron-sbctl/sbctl/sbctl",
+    "bincache": "ghcr.io/pkgforge/bincache/sbctl/official/sbctl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sbctl/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Secure Boot key manager",
+    "distro_pkg": {
+      "alpine": [
+        "sbctl"
+      ],
+      "archlinux": {
+        "aur": [
+          "sbctl-git"
+        ],
+        "extra": [
+          "sbctl"
+        ]
+      },
+      "nixpkgs": [
+        "sbctl"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sbctl/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/Foxboron/sbctl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Foxboron/sbctl"
+    ],
+    "provides": [
+      "sbctl"
+    ],
+    "repology": [
+      "sbctl"
+    ],
+    "src_url": [
+      "https://github.com/Foxboron/sbctl"
+    ],
+    "tag": [
+      "efi",
+      "secureboot",
+      "uefi"
+    ],
+    "version": "HEAD-66c7e28-250123T180414"
   },
   {
     "_disabled": "false",
@@ -7279,7 +7402,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-a00623e-250123T090403"
+    "version": "HEAD-f1710f4-250123T090356"
   },
   {
     "_disabled": "false",

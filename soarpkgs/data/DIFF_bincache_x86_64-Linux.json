@@ -225,7 +225,6 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
@@ -2342,13 +2341,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -2371,7 +2370,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -2391,7 +2390,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -2404,7 +2403,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -4468,7 +4467,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-ceb0785-250123T234205"
+    "version": "HEAD-f65fd22-250124T101658"
   },
   {
     "_disabled": "false",
@@ -4784,7 +4783,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-ceb0785-250123T234205"
+    "version": "HEAD-f65fd22-250124T101658"
   },
   {
     "_disabled": "true",
@@ -5814,6 +5813,69 @@
   },
   {
     "_disabled": "false",
+    "pkg": "eza",
+    "pkg_family": "eza",
+    "pkg_id": "github.com.eza-community.eza",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/community-eza/eza/eza",
+    "bincache": "ghcr.io/pkgforge/bincache/eza/official/eza",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/eza/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A modern replacement for ls",
+    "distro_pkg": {
+      "alpine": [
+        "eza"
+      ],
+      "archlinux": {
+        "aur": [
+          "eza-git"
+        ],
+        "extra": [
+          "eza"
+        ]
+      },
+      "debian": [
+        "rust-eza"
+      ],
+      "nixpkgs": [
+        "eza"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/eza/static.official.source.yaml",
+    "homepage": [
+      "https://eza.rocks",
+      "https://github.com/eza-community/eza"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/eza-community/eza"
+    ],
+    "repology": [
+      "eza"
+    ],
+    "src_url": [
+      "https://github.com/eza-community/eza"
+    ],
+    "tag": [
+      "ls"
+    ],
+    "version": "HEAD-a7c8e95-250124T093956"
+  },
+  {
+    "_disabled": "false",
     "pkg": "fnm",
     "pkg_family": "fnm",
     "pkg_id": "github.com.Schniz.fnm",
@@ -6259,7 +6321,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-66f2eb7-250123T132530"
+    "version": "HEAD-3a9fe5a-250124T085322"
   },
   {
     "_disabled": "false",
@@ -10231,6 +10293,67 @@
       "embed"
     ],
     "version": "HEAD-aa6399d-231205T214613"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "subfinder",
+    "pkg_family": "subfinder",
+    "pkg_id": "github.com.projectdiscovery.subfinder",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-subfinder/subfinder/subfinder",
+    "bincache": "ghcr.io/pkgforge/bincache/subfinder/official/subfinder",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/subfinder/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast Modular Subdomain Enumeration tool",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "subfinder",
+          "subfinder-bin"
+        ]
+      },
+      "homebrew": [
+        "subfinder"
+      ],
+      "nixpkgs": [
+        "subfinder"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/subfinder/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/subfinder"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/subfinder"
+    ],
+    "provides": [
+      "subfinder"
+    ],
+    "repology": [
+      "subfinder"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/subfinder"
+    ],
+    "tag": [
+      "bugbounty",
+      "subdomain"
+    ],
+    "version": "HEAD-4da8c77-250124T141021"
   },
   {
     "_disabled": "false",

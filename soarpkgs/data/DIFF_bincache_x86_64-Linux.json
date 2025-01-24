@@ -2337,13 +2337,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -2366,7 +2366,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -2386,7 +2386,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy"
+      "caddy:caddy-beta"
     ],
     "repology": [
       "caddy"
@@ -2399,7 +2399,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.1"
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -4540,7 +4540,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-943b446-250124T103655"
+    "version": "HEAD-0fd9a29-250124T203236"
   },
   {
     "_disabled": "false",
@@ -4549,6 +4549,7 @@
     "pkg_id": "github.com.uutils.coreutils.standalone",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-standalone/coreutils/coreutils_uutils",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils_uutils/standalone/base32",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.standalone.uutils.yaml",
     "category": [
       "ConsoleOnly",
@@ -4856,7 +4857,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-943b446-250124T103655"
+    "version": "HEAD-0fd9a29-250124T203236"
   },
   {
     "_disabled": "false",
@@ -4865,6 +4866,7 @@
     "pkg_id": "github.com.vlang.coreutils",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vlang-coreutils/coreutils/coreutils_uutils",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils/vlang/b2sum",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.vlang.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -6337,6 +6339,80 @@
       "decode"
     ],
     "version": "HEAD-937e462-230823T181040"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "etcd",
+    "pkg_family": "etcd",
+    "pkg_id": "github.com.etcd-io.etcd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/io-etcd/etcd/etcd",
+    "bincache": "ghcr.io/pkgforge/bincache/etcd/official/etcd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/etcd/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Distributed reliable key-value store for the most critical data of a distributed system",
+      "etcd": "The official Go etcd client [etcd]",
+      "etcdctl": "Command Line Client for etcd [etcd]",
+      "etcdutl": "Command Line Administration utility for etcd [etcd]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "etcd"
+      ],
+      "archlinux": {
+        "aur": [
+          "etcd",
+          "etcd-bin",
+          "etcd-git"
+        ]
+      },
+      "debian": [
+        "etcd"
+      ],
+      "homebrew": [
+        "etcd"
+      ],
+      "nixpkgs": [
+        "etcd"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/etcd/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/etcd-io/etcd"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/etcd-io/etcd"
+    ],
+    "provides": [
+      "etcd",
+      "etcdctl",
+      "etcdutl"
+    ],
+    "repology": [
+      "etcd"
+    ],
+    "src_url": [
+      "https://github.com/etcd-io/etcd"
+    ],
+    "tag": [
+      "distributed"
+    ],
+    "version": "v3.5.18"
   },
   {
     "_disabled": "false",
@@ -8240,7 +8316,7 @@
     "tag": [
       "mail"
     ],
-    "version": "HEAD-c2cb732-250124T215811"
+    "version": "HEAD-f9d4917-250124T221806"
   },
   {
     "_disabled": "false",
@@ -10463,7 +10539,7 @@
       "oci",
       "registry"
     ],
-    "version": "HEAD-135de33-250122T152114"
+    "version": "HEAD-d1b36ce-250124T143014"
   },
   {
     "_disabled": "false",

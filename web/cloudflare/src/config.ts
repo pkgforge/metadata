@@ -70,6 +70,9 @@ const commonDescriptions = {
     '/bincache/logs/x86_64-linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (x86_64-Linux)",
     // misc
     '/misc': "🧬 Third Party JSON Metadata",
+    '/misc/list.gif': "🎨 Automated VHS GIF (soar)",
+    '/misc/list_detailed.gif': "🎨 Automated VHS GIF (soar)",
+    '/misc/version.gif': "🎨 Automated VHS GIF (soar)",
     '/misc/ALPINE_GIT.json': "🧬 Alpine Metadata (GIT)",
     '/misc/ALPINE_PKG.json': "🧬 Alpine Metadata (APKINDEX)",
     '/misc/ARCHLINUX.json':  "🧬 ArchLinux Metadata (Incl. AUR)",

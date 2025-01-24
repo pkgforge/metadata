@@ -8,7 +8,7 @@
  10M   │ │ ├── ALPINE_PKG.json
  10M   │ │ ├── NIXPKGS.json
 9.0M   │ │ ├── PKGSRC.json
-4.9M   │ │ ├── ALPINE_GIT.json
+5.0M   │ │ ├── ALPINE_GIT.json
 2.7M   │ │ ├── BREW_FORMULA.json
 1.5M   │ │ ├── BREW_CASK.json
 984K   │ │ ├── PPKG_RAW.json
@@ -38,14 +38,14 @@
 3.5M   │ │ ├── x86_64-Linux.db
 3.0M   │ │ ├── aarch64-Linux.db
 444K   │ │ ├── x86_64-Linux.db.cba
-420K   │ │ ├── x86_64-Linux.json.cba
-396K   │ │ ├── aarch64-Linux.db.cba
+424K   │ │ ├── x86_64-Linux.json.cba
+400K   │ │ ├── aarch64-Linux.db.cba
 348K   │ │ ├── x86_64-Linux.db.zstd
 348K   │ │ ├── aarch64-Linux.json.cba
 336K   │ │ ├── x86_64-Linux.db.xz
 328K   │ │ ├── x86_64-Linux.json.xz
+316K   │ │ ├── x86_64-Linux.json.zstd
 316K   │ │ ├── aarch64-Linux.db.zstd
-312K   │ │ ├── x86_64-Linux.json.zstd
 304K   │ │ ├── aarch64-Linux.db.xz
 296K   │ │ ├── aarch64-Linux.json.xz
 284K   │ │ ├── aarch64-Linux.json.zstd
@@ -65,23 +65,23 @@
  60K   │ └─┬ scripts
  28K   │   ├── gen_meta_x86_64-Linux.sh
  28K   │   └── gen_meta_aarch64-Linux.sh
-5.6M   ├─┬ soarpkgs
-5.3M   │ ├─┬ data
-1.2M   │ │ ├── INDEX.json
+6.0M   ├─┬ soarpkgs
+5.7M   │ ├─┬ data
+1.3M   │ │ ├── INDEX.json
 876K   │ │ ├── BACKAGE.json
 800K   │ │ ├── pub_issues_binaries.txt
-688K   │ │ ├── INDEX.db
+708K   │ │ ├── INDEX.db
+324K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+312K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 304K   │ │ ├── pub_issues_packages.txt
-224K   │ │ ├── DIFF_bincache_x86_64-Linux.json
-196K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-184K   │ │ ├── INDEX.json.cba
+204K   │ │ ├── INDEX.json.cba
 140K   │ │ ├── GH_REPO.md
-124K   │ │ ├── INDEX.json.xz
-124K   │ │ ├── INDEX.db.cba
-120K   │ │ ├── INDEX.json.zstd
+132K   │ │ ├── INDEX.json.xz
+128K   │ │ ├── INDEX.json.zstd
+128K   │ │ ├── INDEX.db.cba
 104K   │ │ ├── INDEX.db.zstd
- 96K   │ │ ├── INDEX.db.xz
- 40K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+100K   │ │ ├── INDEX.db.xz
+ 44K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  28K   │ │ ├── URLS.txt
  28K   │ │ ├── GH_REPO_ARCHIVED.md
  28K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json

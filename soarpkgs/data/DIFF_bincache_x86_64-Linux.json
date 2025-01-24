@@ -2338,12 +2338,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -2366,7 +2367,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -2386,7 +2387,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy"
+      "caddy:caddy-beta"
     ],
     "repology": [
       "caddy"
@@ -2399,7 +2400,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.1"
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -6658,7 +6659,7 @@
     "tag": [
       "github"
     ],
-    "version": "v4.9.1"
+    "version": "v4.10.0"
   },
   {
     "_disabled": "false",
@@ -7479,7 +7480,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-c939c33-250124T153144"
+    "version": "HEAD-cd7dc7a-250124T172702"
   },
   {
     "_disabled": "false",
@@ -7748,6 +7749,76 @@
       "sync"
     ],
     "version": "v0.19.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kubo",
+    "pkg_family": "kubo",
+    "pkg_id": "github.com.ipfs.kubo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ipfs-kubo/kubo/kubo",
+    "bincache": "ghcr.io/pkgforge/bincache/kubo/official/ipfswatch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/kubo/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for Inter Platnetary File System (IPFS)",
+      "ipfswatch": "Tool to Monitor a directory and adds changes to IPFS",
+      "kubo": "Official Inter Platnetary File System (IPFS) CLI"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "go-ipfs",
+        "kubo"
+      ],
+      "archlinux": {
+        "aur": [
+          "kubo-git"
+        ],
+        "extra": [
+          "kubo"
+        ]
+      },
+      "nixpkgs": [
+        "ipfs",
+        "kubo"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/kubo/static.official.source.yaml",
+    "homepage": [
+      "https://ipfs.io",
+      "https://docs.ipfs.tech"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ipfs/kubo"
+    ],
+    "provides": [
+      "ipfswatch",
+      "kubo"
+    ],
+    "repology": [
+      "kubo"
+    ],
+    "src_url": [
+      "https://github.com/ipfs/kubo"
+    ],
+    "tag": [
+      "ipfs"
+    ],
+    "version": "HEAD-3c9cc3f-250124T173703"
   },
   {
     "_disabled": "false",
@@ -10933,7 +11004,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-292cde5-250124T153357"
+    "version": "HEAD-9ed020b-250124T084954"
   },
   {
     "_disabled": "false",
@@ -11527,7 +11598,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-d69c70e-250124T105746"
+    "version": "HEAD-69bc164-250124T170426"
   },
   {
     "_disabled": "false",
@@ -12659,7 +12730,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-cc568ee-250124T231929"
+    "version": "HEAD-a4f8e86-250125T002439"
   },
   {
     "_disabled": "false",

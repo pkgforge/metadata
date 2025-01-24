@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -288,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250118T141142"
+    "version": "1.37.0"
   },
   {
     "_disabled": "true",
@@ -2544,13 +2543,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -2573,7 +2572,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -2593,7 +2592,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -2606,7 +2605,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -6714,7 +6713,7 @@
     "tag": [
       "mail"
     ],
-    "version": "HEAD-3e5044e-250125T010746"
+    "version": "HEAD-cff6cfa-250125T020152"
   },
   {
     "_disabled": "false",
@@ -6899,6 +6898,74 @@
       "text-editor"
     ],
     "version": "HEAD-698511c-250124T184427"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "miniflux",
+    "pkg_family": "miniflux",
+    "pkg_id": "github.com.miniflux.v2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/miniflux-v2/miniflux/miniflux",
+    "bincache": "ghcr.io/pkgforge/bincache/miniflux/official/miniflux",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miniflux/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Minimalist and opinionated feed reader",
+    "distro_pkg": {
+      "alpine": [
+        "miniflux"
+      ],
+      "archlinux": {
+        "aur": [
+          "miniflux-git"
+        ],
+        "extra": [
+          "miniflux"
+        ]
+      },
+      "debian": [
+        "miniflux"
+      ],
+      "gnuguix": [
+        "miniflux"
+      ],
+      "nixpkgs": [
+        "miniflux"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/miniflux/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/miniflux/v2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/miniflux/v2"
+    ],
+    "provides": [
+      "miniflux"
+    ],
+    "repology": [
+      "miniflux"
+    ],
+    "src_url": [
+      "https://github.com/miniflux/v2"
+    ],
+    "tag": [
+      "rss"
+    ],
+    "version": "HEAD-369054b-250124T151623"
   },
   {
     "_disabled": "false",
@@ -8253,62 +8320,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "qsv",
-    "pkg_family": "qsv",
-    "pkg_id": "github.com.dathere.qsv",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dathere-qsv/qsv/qsv",
-    "bincache": "ghcr.io/pkgforge/bincache/qsv/official/qsv",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qsv/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Blazing-fast Data-Wrangling toolkit",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "qsv",
-          "qsv-bin"
-        ]
-      },
-      "nixpkgs": [
-        "qsv"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qsv/static.official.source.yaml",
-    "homepage": [
-      "https://qsv.dathere.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT",
-      "Unlicense"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dathere/qsv"
-    ],
-    "repology": [
-      "qsv"
-    ],
-    "src_url": [
-      "https://github.com/dathere/qsv"
-    ],
-    "tag": [
-      "csv",
-      "textproc"
-    ],
-    "version": "HEAD-9fc44ec-250124T081231"
-  },
-  {
-    "_disabled": "false",
     "pkg": "rclone",
     "pkg_family": "rclone",
     "pkg_id": "github.com.rclone.rclone",
@@ -8693,69 +8704,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "ruff",
-    "pkg_family": "ruff",
-    "pkg_id": "github.com.astral-sh.ruff",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sh-ruff/ruff/ruff",
-    "bincache": "ghcr.io/pkgforge/bincache/ruff/official/ruff",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ruff/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Extremely fast Python linter and code formatter",
-    "distro_pkg": {
-      "alpine": [
-        "ruff"
-      ],
-      "archlinux": {
-        "extra": [
-          "ruff"
-        ]
-      },
-      "homebrew": [
-        "ruff"
-      ],
-      "nixpkgs": [
-        "ruff"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ruff/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/astral-sh/ruff"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/astral-sh/ruff"
-    ],
-    "provides": [
-      "ruff"
-    ],
-    "repology": [
-      "ruff-python-linter"
-    ],
-    "src_url": [
-      "https://github.com/astral-sh/ruff"
-    ],
-    "tag": [
-      "linter",
-      "python"
-    ],
-    "version": "0.9.3"
-  },
-  {
-    "_disabled": "false",
     "pkg": "runc",
     "pkg_family": "runc",
     "pkg_id": "github.com.opencontainers.runc",
@@ -8878,178 +8826,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "rustscan",
-    "pkg_family": "rustscan",
-    "pkg_id": "github.com.RustScan.RustScan",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rustscan-rustscan/rustscan/rustscan",
-    "bincache": "ghcr.io/pkgforge/bincache/rustscan/official/rustscan",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rustscan/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The modern,fast,smart and effective port scanner",
-    "distro_pkg": {
-      "alpine": [
-        "rustscan"
-      ],
-      "archlinux": {
-        "extra": [
-          "rustscan"
-        ]
-      },
-      "nixpkgs": [
-        "rustscan"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rustscan/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/RustScan/RustScan"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL3"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/RustScan/RustScan"
-    ],
-    "repology": [
-      "rustscan"
-    ],
-    "src_url": [
-      "https://github.com/RustScan/RustScan"
-    ],
-    "tag": [
-      "nmap",
-      "scanning",
-      "security"
-    ],
-    "version": "HEAD-b17b733-250123T192516"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "sbctl",
-    "pkg_family": "sbctl",
-    "pkg_id": "github.com.Foxboron.sbctl",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/foxboron-sbctl/sbctl/sbctl",
-    "bincache": "ghcr.io/pkgforge/bincache/sbctl/official/sbctl",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sbctl/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Secure Boot key manager",
-    "distro_pkg": {
-      "alpine": [
-        "sbctl"
-      ],
-      "archlinux": {
-        "aur": [
-          "sbctl-git"
-        ],
-        "extra": [
-          "sbctl"
-        ]
-      },
-      "nixpkgs": [
-        "sbctl"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sbctl/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/Foxboron/sbctl"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Foxboron/sbctl"
-    ],
-    "provides": [
-      "sbctl"
-    ],
-    "repology": [
-      "sbctl"
-    ],
-    "src_url": [
-      "https://github.com/Foxboron/sbctl"
-    ],
-    "tag": [
-      "efi",
-      "secureboot",
-      "uefi"
-    ],
-    "version": "HEAD-66c7e28-250123T180414"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "sbuilder",
-    "pkg_family": "sbuilder",
-    "pkg_id": "github.com.pkgforge.sbuilder",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pkgforge-sbuilder/sbuilder/sbuilder",
-    "bincache": "ghcr.io/pkgforge/bincache/sbuilder/official/sbuild-linter",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sbuilder/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Utilities for linting and building SBUILD packages",
-      "sbuild": "SBUILD builder that builds SBUILD Recipes [sbuilder]",
-      "sbuild-linter": "SBUILD linter that lints SBUILD Recipes [sbuilder]"
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sbuilder/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/pkgforge/sbuilder"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/sbuilder"
-    ],
-    "provides": [
-      "sbuild",
-      "sbuild-linter"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge/sbuilder"
-    ],
-    "tag": [
-      "build-tool",
-      "pkgforge",
-      "sbuild"
-    ],
-    "version": "HEAD-108657b-250124T094133"
-  },
-  {
-    "_disabled": "false",
     "pkg": "simplex-chat",
     "pkg_family": "simplex-chat",
     "pkg_id": "ppkg.simplex-chat",
@@ -9102,120 +8878,6 @@
       "privacy"
     ],
     "version": "6.2.4"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "skim",
-    "pkg_family": "skim",
-    "pkg_id": "github.com.lotabout.skim",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/lotabout-skim/skim/skim",
-    "bincache": "ghcr.io/pkgforge/bincache/skim/official/sk",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/skim/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Command-line fuzzy finder written in Rust",
-    "distro_pkg": {
-      "alpine": [
-        "skim"
-      ],
-      "archlinux": {
-        "aur": [
-          "skim-git"
-        ],
-        "extra": [
-          "skim"
-        ]
-      },
-      "nixpkgs": [
-        "skim"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/skim/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/lotabout/skim"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/lotabout/skim"
-    ],
-    "provides": [
-      "sk",
-      "sk-tmux",
-      "skim",
-      "skim-tmux"
-    ],
-    "repology": [
-      "skim-fuzzy-finder"
-    ],
-    "src_url": [
-      "https://github.com/lotabout/skim"
-    ],
-    "tag": [
-      "fuzzyfinder"
-    ],
-    "version": "HEAD-b4138a5-250123T204053"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "skupper",
-    "pkg_family": "skupper",
-    "pkg_id": "github.com.skupperproject.skupper",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/skupperproject-skupper/skupper/skupper",
-    "bincache": "ghcr.io/pkgforge/bincache/skupper/official/skupper",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/skupper/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Virtual Application Network, enabling rich hybrid cloud communication",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/skupper/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/skupperproject/skupper"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/skupperproject/skupper"
-    ],
-    "provides": [
-      "skupper",
-      "skupper-controller"
-    ],
-    "repology": [
-      "cloud",
-      "network"
-    ],
-    "src_url": [
-      "https://github.com/skupperproject/skupper"
-    ],
-    "tag": [
-      "utility",
-      "skupper"
-    ],
-    "version": "HEAD-4448cdf-250124T100053"
   },
   {
     "_disabled": "false",
@@ -9544,67 +9206,6 @@
       "embed"
     ],
     "version": "HEAD-aa6399d-231205T214613"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "subfinder",
-    "pkg_family": "subfinder",
-    "pkg_id": "github.com.projectdiscovery.subfinder",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-subfinder/subfinder/subfinder",
-    "bincache": "ghcr.io/pkgforge/bincache/subfinder/official/subfinder",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/subfinder/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Fast Modular Subdomain Enumeration tool",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "subfinder",
-          "subfinder-bin"
-        ]
-      },
-      "homebrew": [
-        "subfinder"
-      ],
-      "nixpkgs": [
-        "subfinder"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/subfinder/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/projectdiscovery/subfinder"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/subfinder"
-    ],
-    "provides": [
-      "subfinder"
-    ],
-    "repology": [
-      "subfinder"
-    ],
-    "src_url": [
-      "https://github.com/projectdiscovery/subfinder"
-    ],
-    "tag": [
-      "bugbounty",
-      "subdomain"
-    ],
-    "version": "HEAD-4da8c77-250124T141021"
   },
   {
     "_disabled": "false",

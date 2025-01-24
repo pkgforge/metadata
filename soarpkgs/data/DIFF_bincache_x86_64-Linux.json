@@ -343,7 +343,7 @@
       "messaging",
       "p2p"
     ],
-    "version": "HEAD-b505022-250122T095043"
+    "version": "HEAD-8f36127-250124T113413"
   },
   {
     "_disabled": "false",
@@ -2341,13 +2341,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -2370,7 +2370,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -2390,7 +2390,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -2403,7 +2403,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -5269,7 +5269,7 @@
     "tag": [
       "devenv"
     ],
-    "version": "HEAD-5f02f46-250124T104117"
+    "version": "HEAD-e5158d6-250124T113537"
   },
   {
     "_disabled": "false",
@@ -8066,7 +8066,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-eb2ac03-250123T180051"
+    "version": "HEAD-2605948-250124T120450"
   },
   {
     "_disabled": "false",
@@ -9287,6 +9287,79 @@
       "textproc"
     ],
     "version": "HEAD-abcd365-250123T112836"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "rclone",
+    "pkg_family": "rclone",
+    "pkg_id": "github.com.rclone.rclone",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rclone-rclone/rclone/rclone",
+    "bincache": "ghcr.io/pkgforge/bincache/rclone/official/rclone",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rclone/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A program to sync files to and from various cloud storage providers",
+    "distro_pkg": {
+      "alpine": [
+        "rclone"
+      ],
+      "archlinux": {
+        "aur": [
+          "rclone-beta-bin",
+          "rclone-git"
+        ],
+        "extra": [
+          "rclone"
+        ]
+      },
+      "debian": [
+        "rclone"
+      ],
+      "homebrew": [
+        "rclone"
+      ],
+      "nixpkgs": [
+        "rclone"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rclone/static.official.source.yaml",
+    "homepage": [
+      "https://rclone.org",
+      "https://github.com/rclone/rclone"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "ISC",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rclone/rclone"
+    ],
+    "repology": [
+      "rclone"
+    ],
+    "src_url": [
+      "https://github.com/rclone/rclone"
+    ],
+    "tag": [
+      "cloud",
+      "mount",
+      "rsync",
+      "s3",
+      "sync"
+    ],
+    "version": "HEAD-5c3a1bb-250124T104148"
   },
   {
     "_disabled": "false",
@@ -11542,6 +11615,44 @@
       "wireless"
     ],
     "version": "30.pre9"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xan",
+    "pkg_family": "xan",
+    "pkg_id": "github.com.medialab.xan",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/medialab-xan/xan/xan",
+    "bincache": "ghcr.io/pkgforge/bincache/xan/official/xan",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xan/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The CSV magician",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xan/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/medialab/xan"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/medialab/xan"
+    ],
+    "src_url": [
+      "https://github.com/medialab/xan"
+    ],
+    "tag": [
+      "csv",
+      "tsv"
+    ],
+    "version": "HEAD-8e5cf0a-250124T120641"
   },
   {
     "_disabled": "false",

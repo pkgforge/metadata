@@ -345,7 +345,6 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
@@ -777,7 +776,6 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -5565,6 +5563,56 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sbuilder",
+    "pkg_family": "sbuilder",
+    "pkg_id": "github.com.pkgforge.sbuilder",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pkgforge-sbuilder/sbuilder/sbuilder",
+    "bincache": "ghcr.io/pkgforge/bincache/sbuilder/official/sbuild-linter",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sbuilder/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities for linting and building SBUILD packages",
+      "sbuild": "SBUILD builder that builds SBUILD Recipes [sbuilder]",
+      "sbuild-linter": "SBUILD linter that lints SBUILD Recipes [sbuilder]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sbuilder/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/pkgforge/sbuilder"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/sbuilder"
+    ],
+    "provides": [
+      "sbuild",
+      "sbuild-linter"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge/sbuilder"
+    ],
+    "tag": [
+      "build-tool",
+      "pkgforge",
+      "sbuild"
+    ],
+    "version": "HEAD-4695270-250124T084034"
+  },
+  {
+    "_disabled": "false",
     "pkg": "simplex-chat",
     "pkg_family": "simplex-chat",
     "pkg_id": "ppkg.simplex-chat",
@@ -6161,7 +6209,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-f0db473-250123T150647"
+    "version": "HEAD-61bea75-250123T185116"
   },
   {
     "_disabled": "false",
@@ -6213,50 +6261,6 @@
       "toml"
     ],
     "version": "HEAD-18b86da-241222T203447"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "tdl",
-    "pkg_family": "tdl",
-    "pkg_id": "github.com.iyear.tdl",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/iyear-tdl/tdl/tdl",
-    "bincache": "ghcr.io/pkgforge/bincache/tdl/official/tdl",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tdl/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A Telegram downloader/tools written in Golang",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tdl/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/iyear/tdl"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "AGPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/iyear/tdl"
-    ],
-    "provides": [
-      "tdl"
-    ],
-    "src_url": [
-      "https://github.com/iyear/tdl"
-    ],
-    "tag": [
-      "downloader",
-      "telegram"
-    ],
-    "version": "v0.18.4"
   },
   {
     "_disabled": "false",
@@ -6349,64 +6353,6 @@
       "Utility"
     ],
     "version": "HEAD-97ffbe2-240902T162636"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "tgpt",
-    "pkg_family": "tgpt",
-    "pkg_id": "github.com.aandrew-me.tgpt",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/me-tgpt/tgpt/tgpt",
-    "bincache": "ghcr.io/pkgforge/bincache/tgpt/official/tgpt",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tgpt/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "AI Chatbots in terminal without needing API keys",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "tgpt-git"
-        ],
-        "extra": [
-          "tgpt"
-        ]
-      },
-      "nixpkgs": [
-        "tgpt"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tgpt/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/aandrew-me/tgpt"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/aandrew-me/tgpt"
-    ],
-    "repology": [
-      "tgpt"
-    ],
-    "src_url": [
-      "https://github.com/aandrew-me/tgpt"
-    ],
-    "tag": [
-      "ai",
-      "chatbot",
-      "chatgpt"
-    ],
-    "version": "HEAD-d4f1e0d-250123T180447"
   },
   {
     "_disabled": "false",

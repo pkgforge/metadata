@@ -8077,8 +8077,6 @@
       "Statically Linked on Debian (GLIBC)"
     ],
     "provides": [
-      "[",
-      "[[",
       "acpid",
       "add-shell==add_shell",
       "add_shell==add-shell",
@@ -8997,8 +8995,6 @@
       "This is the standalone version i.e all applets were built individually"
     ],
     "provides": [
-      "[",
-      "[[",
       "acpid",
       "add-shell==add_shell",
       "add_shell==add-shell",
@@ -11500,6 +11496,74 @@
   },
   {
     "_disabled": "false",
+    "pkg": "colorized-logs",
+    "pkg_family": "colorized-logs",
+    "pkg_id": "github.com.kilobyte.colorized-logs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/colorized-logs/colorized-logs/colorized-logs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/colorized-logs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for logs with ANSI color",
+      "ansi2html": "ANSI to HTML converter [colorized-logs]",
+      "ansi2txt": "ANSI to plain text converter [colorized-logs]",
+      "pipetty": "Tool to pipe from a pseudoterminal [colorized-logs]",
+      "ttyrec2ansi": "TTYREC to ANSI converter [colorized-logs]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "colorized-logs"
+        ]
+      },
+      "debian": [
+        "colorized-logs"
+      ],
+      "nixpkgs": [
+        "colorized-logs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/colorized-logs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/kilobyte/colorized-logs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/kilobyte/colorized-logs"
+    ],
+    "provides": [
+      "ansi2html",
+      "ansi2txt",
+      "pipetty",
+      "ttyrec2ansi"
+    ],
+    "repology": [
+      "colorized-logs"
+    ],
+    "src_url": [
+      "https://github.com/kilobyte/colorized-logs"
+    ],
+    "tag": [
+      "ansii",
+      "logs"
+    ],
+    "version": "HEAD-2fb2ea5-240220T214511"
+  },
+  {
+    "_disabled": "false",
     "pkg": "containerd",
     "pkg_family": "containerd",
     "pkg_id": "github.com.containerd.containerd",
@@ -11734,6 +11798,7 @@
     ],
     "provides": [
       "coreutils==[",
+      "coreutils==[[",
       "coreutils==arch",
       "coreutils==b2sum",
       "coreutils==base32",
@@ -12025,6 +12090,7 @@
     ],
     "provides": [
       "coreutils==[",
+      "coreutils==[[",
       "coreutils==arch",
       "coreutils==b2sum",
       "coreutils==base32",
@@ -12316,6 +12382,7 @@
     ],
     "provides": [
       "coreutils==[",
+      "coreutils==[[",
       "coreutils==arch",
       "coreutils==b2sum",
       "coreutils==base32",
@@ -12607,7 +12674,6 @@
       "Statically Linked on Debian (GLIBC)"
     ],
     "provides": [
-      "[",
       "arch",
       "b2sum",
       "base32",
@@ -12697,7 +12763,8 @@
       "tac",
       "tail",
       "tee",
-      "test",
+      "test==[",
+      "test==[[",
       "timeout",
       "touch",
       "tr",
@@ -12898,7 +12965,6 @@
       "This is the standalone version i.e all progs are built individually"
     ],
     "provides": [
-      "[",
       "arch",
       "b2sum",
       "base32",
@@ -12988,7 +13054,8 @@
       "tac",
       "tail",
       "tee",
-      "test",
+      "test==[",
+      "test==[[",
       "timeout",
       "touch",
       "tr",
@@ -13210,6 +13277,7 @@
     ],
     "provides": [
       "coreutils==[",
+      "coreutils==[[",
       "coreutils==arch",
       "coreutils==b2sum",
       "coreutils==b3sum",
@@ -13525,6 +13593,7 @@
     ],
     "provides": [
       "coreutils==[",
+      "coreutils==[[",
       "coreutils==arch",
       "coreutils==b2sum",
       "coreutils==b3sum",
@@ -13839,7 +13908,6 @@
       "This is the standalone version i.e all progs are built individually"
     ],
     "provides": [
-      "[",
       "arch",
       "b2sum",
       "b3sum",
@@ -13937,7 +14005,8 @@
       "tac",
       "tail",
       "tee",
-      "test",
+      "test==[",
+      "test==[[",
       "timeout",
       "touch",
       "tr",
@@ -13969,6 +14038,318 @@
       "coreutils"
     ],
     "version": "HEAD-943b446-250124T103655"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "coreutils_uutils",
+    "pkg_family": "coreutils",
+    "pkg_id": "github.com.vlang.coreutils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vlang-coreutils/coreutils/coreutils_uutils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.vlang.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Cross-platform Rust rewrite of the GNU coreutils",
+      "[": "Check file types and compare values [coreutils-uutils]",
+      "arch": "Print machine hardware name (same as uname -m) [coreutils-uutils]",
+      "b2sum": "Compute and check BLAKE2 message digest [coreutils-uutils]",
+      "b3sum": "Compute and check BLAKE3 message digest [coreutils-uutils]",
+      "base32": "Base32 encode/decode data and print to standard output [coreutils-uutils]",
+      "base64": "Base64 encode/decode data and print to standard output [coreutils-uutils]",
+      "basename": "Strip directory and suffix from filenames [coreutils-uutils]",
+      "basenc": "Encode/decode data and print to standard output [coreutils-uutils]",
+      "cat": "Concatenate files and print on the standard output [coreutils-uutils]",
+      "chcon": "Change file security context [coreutils-uutils]",
+      "chgrp": "Change group ownership [coreutils-uutils]",
+      "chmod": "Change file owner and group [coreutils-uutils]",
+      "chown": "Change file owner and group [coreutils-uutils]",
+      "chroot": "Run command or interactive shell with special root directory [coreutils-uutils]",
+      "cksum": "Compute and verify file checksums [coreutils-uutils]",
+      "comm": "Compare two sorted files line by line [coreutils-uutils]",
+      "coreutils": "Multicall Binary for Coreutils: GNU File, Shell, and Text utilities",
+      "cp": "Copy files and directories [coreutils-uutils]",
+      "csplit": "Split a file into sections determined by context lines [coreutils-uutils]",
+      "cut": "Remove sections from each line of files [coreutils-uutils]",
+      "date": "Print or set the system date and time [coreutils-uutils]",
+      "dd": "Convert and Copy a file [coreutils-uutils]",
+      "df": "Report file system space usage [coreutils-uutils]",
+      "dir": "List directory contents [coreutils-uutils]",
+      "dircolors": "Color setup for ls [coreutils-uutils]",
+      "dirname": "Strip last component from file name [coreutils-uutils]",
+      "du": "Estimate file space usage [coreutils-uutils]",
+      "echo": "Display a line of text [coreutils-uutils]",
+      "env": "Run a program in a modified environment [coreutils-uutils]",
+      "expand": "Convert tabs to spaces [coreutils-uutils]",
+      "expr": "Evaluate expressions [coreutils-uutils]",
+      "factor": "Factor numbers [coreutils-uutils]",
+      "false": "Do nothing, unsuccessfully [coreutils-uutils]",
+      "fmt": "Simple optimal text formatter [coreutils-uutils]",
+      "fold": "Wrap each input line to fit in specified width [coreutils-uutils]",
+      "ginstall": "Copy files and set attributes [coreutils-uutils]",
+      "groups": "Print the groups a user is in [coreutils-uutils]",
+      "hashsum": "Compute and check message digests for many Algorithms",
+      "head": "Output the first part of files [coreutils-uutils]",
+      "hostid": "Print the numeric identifier for the current host [coreutils-uutils]",
+      "hostname": "Display or set the system's host name [coreutils-uutils]",
+      "id": "Print real and effective user and group IDs [coreutils-uutils]",
+      "install": "Copy files and set attributes [coreutils-uutils]",
+      "join": "Join lines of two files on a common field [coreutils-uutils]",
+      "kill": "Send a signal (default: TERM) to given PIDs [coreutils-uutils]",
+      "link": "Call the link function to create a link to a file [coreutils-uutils]",
+      "ln": "Make links between files [coreutils-uutils]",
+      "logname": "Print user's login name [coreutils-uutils]",
+      "ls": "List directory contents [coreutils-uutils]",
+      "make-prime-list": "Generate Prime Numbers [coreutils-uutils]",
+      "md5sum": "Compute and check MD5 message digest [coreutils-uutils]",
+      "mkdir": "Make directories [coreutils-uutils]",
+      "mkfifo": "Make FIFOs (named pipes) [coreutils-uutils]",
+      "mknod": "Make block or character special files [coreutils-uutils]",
+      "mktemp": "Create a temporary file or directory [coreutils-uutils]",
+      "mv": "Move (rename) files [coreutils-uutils]",
+      "nice": "Run a program with modified scheduling priority [coreutils-uutils]",
+      "nl": "Number lines of files [coreutils-uutils]",
+      "nohup": "Run a command immune to hangups, with output to a non-tty [coreutils-uutils]",
+      "nproc": "Print the number of processing units available [coreutils-uutils]",
+      "numfmt": "Convert numbers from/to human-readable strings [coreutils-uutils]",
+      "od": "Dump files in octal and other formats [coreutils-uutils]",
+      "paste": "Merge lines of files [coreutils-uutils]",
+      "pathchk": "Check whether file names are valid or portable [coreutils-uutils]",
+      "pinky": "Lightweight finger [coreutils-uutils]",
+      "pr": "Convert text files for printing [coreutils-uutils]",
+      "printenv": "Print all or part of environment [coreutils-uutils]",
+      "printf": "Format and print data [coreutils-uutils]",
+      "ptx": "Produce a permuted index of file contents [coreutils-uutils]",
+      "pwd": "Print name of current/working directory [coreutils-uutils]",
+      "readlink": "Print resolved symbolic links or canonical file names [coreutils-uutils]",
+      "realpath": "Print the resolved path [coreutils-uutils]",
+      "rm": "Remove files or directories [coreutils-uutils]",
+      "rmdir": "Remove empty directories [coreutils-uutils]",
+      "runcon": "Run command with specified security context [coreutils-uutils]",
+      "seq": "Print a sequence of numbers [coreutils-uutils]",
+      "sha1sum": "Compute and check SHA1 message digest [coreutils-uutils]",
+      "sha224sum": "Compute and check SHA224 message digest [coreutils-uutils]",
+      "sha256sum": "Compute and check SHA256 message digest [coreutils-uutils]",
+      "sha3sum": "Compute and check SHA3 message digest [coreutils-uutils]",
+      "sha3-224sum": "Compute and check SHA3-224 message digest [coreutils-uutils]",
+      "sha3-256sum": "Compute and check SHA3-256 message digest [coreutils-uutils]",
+      "sha3-384sum": "Compute and check SHA3-384 message digest [coreutils-uutils]",
+      "sha3-512sum": "Compute and check SHA3-512 message digest [coreutils-uutils]",
+      "sha384sum": "Compute and check SHA384 message digest [coreutils-uutils]",
+      "sha512sum": "Compute and check SHA512 message digest [coreutils-uutils]",
+      "shake128sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
+      "shake256sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
+      "shred": "Overwrite a file to hide its contents, and optionally delete it [coreutils-uutils]",
+      "shuf": "Generate random permutations [coreutils-uutils]",
+      "sleep": "Delay for a specified amount of time [coreutils-uutils]",
+      "sort": "Sort lines of text files [coreutils-uutils]",
+      "split": "Split a file into pieces [coreutils-uutils]",
+      "stat": "Display file or file system status [coreutils-uutils]",
+      "stdbuf": "Run COMMAND, with modified buffering operations for its standard streams [coreutils-uutils]",
+      "stty": "Change and print terminal line settings [coreutils-uutils]",
+      "sum": "Checksum and count the blocks in a file [coreutils-uutils]",
+      "sync": "Synchronize cached writes to persistent storage [coreutils-uutils]",
+      "tac": "Concatenate and print files in reverse [coreutils-uutils]",
+      "tail": "Output the last part of files [coreutils-uutils]",
+      "tee": "Read from standard input and write to standard output and files [coreutils-uutils]",
+      "test": "Check file types and compare values [coreutils-uutils]",
+      "timeout": "Run a command with a time limit [coreutils-uutils]",
+      "touch": "Change file timestamps [coreutils-uutils]",
+      "tr": "Translate or Delete characters [coreutils-uutils]",
+      "true": "Do nothing, successfully [coreutils-uutils]",
+      "truncate": "Shrink or extend the size of a file to the specified size [coreutils-uutils]",
+      "tsort": "Perform topological sort [coreutils-uutils]",
+      "tty": "Print the file name of the terminal connected to standard input [coreutils-uutils]",
+      "uname": "Print system information [coreutils-uutils]",
+      "unexpand": "Convert spaces to tabs [coreutils-uutils]",
+      "uniq": "Report or omit repeated lines [coreutils-uutils]",
+      "unlink": "Call the unlink function to remove the specified file [coreutils-uutils]",
+      "uptime": "Display the time since the last boot [coreutils-uutils]",
+      "users": "Print the user names of users currently logged in to the current host [coreutils-uutils]",
+      "vdir": "List directory contents [coreutils-uutils]",
+      "wc": "Print newline, word, and byte counts for each file [coreutils-uutils]",
+      "who": "Show who is logged on [coreutils-uutils]",
+      "whoami": "Print effective user name [coreutils-uutils]",
+      "yes": "Output a string repeatedly until killed [coreutils-uutils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "uutils",
+        "uutils-coreutils"
+      ],
+      "archlinux": {
+        "aur": [
+          "coreutils-uutils",
+          "uutils-coreutils-git"
+        ],
+        "extra": [
+          "uutils-coreutils"
+        ]
+      },
+      "debian": [
+        "rust-coreutils",
+        "rust-uucore"
+      ],
+      "gnuguix": [
+        "rust-uucore"
+      ],
+      "homebrew": [
+        "uutils-coreutils"
+      ],
+      "nixpkgs": [
+        "uutils-coreutils",
+        "uutils-coreutils-noprefix"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/coreutils/static.vlang.source.yaml",
+    "homepage": [
+      "https://github.com/vlang/coreutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/vlang/coreutils",
+      "This is the standalone version i.e all progs are built individually"
+    ],
+    "provides": [
+      "arch",
+      "b2sum",
+      "b3sum",
+      "base32",
+      "base64",
+      "basename",
+      "basenc",
+      "cat",
+      "chgrp",
+      "chmod",
+      "chown",
+      "chroot",
+      "cksum",
+      "comm",
+      "coreutils",
+      "cp",
+      "csplit",
+      "cut",
+      "date",
+      "dd",
+      "df",
+      "dir",
+      "dircolors",
+      "dirname",
+      "du",
+      "echo",
+      "env",
+      "expand",
+      "expr",
+      "factor",
+      "false",
+      "fmt",
+      "fold",
+      "groups",
+      "hashsum",
+      "head",
+      "hostid",
+      "hostname",
+      "id",
+      "install",
+      "join",
+      "kill",
+      "link",
+      "ln",
+      "logname",
+      "ls",
+      "md5sum",
+      "mkdir",
+      "mkfifo",
+      "mknod",
+      "mktemp",
+      "more",
+      "mv",
+      "nice",
+      "nl",
+      "nohup",
+      "nproc",
+      "numfmt",
+      "od",
+      "paste",
+      "pathchk",
+      "pinky",
+      "pr",
+      "printenv",
+      "printf",
+      "ptx",
+      "pwd",
+      "readlink",
+      "realpath",
+      "rm",
+      "rmdir",
+      "seq",
+      "sha1sum",
+      "sha224sum",
+      "sha256sum",
+      "sha3-224sum",
+      "sha3-256sum",
+      "sha3-384sum",
+      "sha3-512sum",
+      "sha384sum",
+      "sha3sum",
+      "sha512sum",
+      "shake128sum",
+      "shake256sum",
+      "shred",
+      "shuf",
+      "sleep",
+      "sort",
+      "split",
+      "stat",
+      "stdbuf",
+      "stty",
+      "sum",
+      "sync",
+      "tac",
+      "tail",
+      "tee",
+      "test==[",
+      "test==[[",
+      "timeout",
+      "touch",
+      "tr",
+      "true",
+      "truncate",
+      "tsort",
+      "tty",
+      "uname",
+      "unexpand",
+      "uniq",
+      "unlink",
+      "uptime",
+      "users",
+      "vdir",
+      "wc",
+      "who",
+      "whoami",
+      "yes"
+    ],
+    "src_url": [
+      "https://github.com/vlang/coreutils"
+    ],
+    "tag": [
+      "bootstrap",
+      "busybox",
+      "coreutils"
+    ],
+    "version": "HEAD-b082754-241226T203319"
   },
   {
     "_disabled": "false",
@@ -15419,7 +15800,7 @@
       "bugbounty",
       "xss"
     ],
-    "version": "HEAD-030acc5-250107T115736"
+    "version": "HEAD-c5bb867-250124T225351"
   },
   {
     "_disabled": "false",
@@ -19137,6 +19518,83 @@
       "security"
     ],
     "version": "HEAD-5a50ce1-241230T164135"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "github.com.fastfetch-cli.fastfetch",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-fastfetch/fastfetch/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fastfetch/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fastfetch/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fastfetch-cli/fastfetch",
+      "Related Discussion: https://github.com/fastfetch-cli/fastfetch/issues/808"
+    ],
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "HEAD-884d256-250124T211421"
   },
   {
     "_disabled": "false",
@@ -30204,7 +30662,7 @@
     "tag": [
       "mail"
     ],
-    "version": "HEAD-5bb56e3-241124T211634"
+    "version": "HEAD-fd40288-250124T165223"
   },
   {
     "_disabled": "false",
@@ -44823,7 +45281,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-f0b63d0-250124T122044"
+    "version": "HEAD-450bc9a-250124T075052"
   },
   {
     "_disabled": "false",
@@ -48078,6 +48536,54 @@
     "version": "HEAD-40a6b89-250112T102421"
   },
   {
+    "_disabled": "true",
+    "_disabled_reason": {
+      "broken": [
+        {
+          "date": "2025-01-24",
+          "reason": "Couldn't figure out how to build properly"
+        }
+      ]
+    },
+    "pkg": "vsql",
+    "pkg_family": "vsql",
+    "pkg_id": "github.com.tkellogg.vsql",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tkellogg-vsql/vsql/vsql",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vsql/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Single-file PostgreSQL-server compatible transactional SQL database written in pure V",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vsql/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/elliotchance/vsql"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/elliotchance/vsql"
+    ],
+    "src_url": [
+      "https://github.com/elliotchance/vsql"
+    ],
+    "tag": [
+      "database",
+      "postgres"
+    ],
+    "version": "HEAD-8791067-241231T014152"
+  },
+  {
     "_disabled": "false",
     "pkg": "vtm",
     "pkg_family": "vtm",
@@ -49530,7 +50036,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-26a0a45-250124T141640"
+    "version": "HEAD-64c37f8-250124T144545"
   },
   {
     "_disabled": "false",

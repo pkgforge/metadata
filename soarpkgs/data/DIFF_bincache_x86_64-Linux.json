@@ -2700,6 +2700,7 @@
     "pkg_id": "github.com.kilobyte.colorized-logs",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/colorized-logs/colorized-logs/colorized-logs",
+    "bincache": "ghcr.io/pkgforge/bincache/colorized-logs/official/ansi2html",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/colorized-logs/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -2768,6 +2769,7 @@
     "pkg_id": "github.com.coreutils.coreutils.multicall",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-multicall/coreutils/coreutils",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils/multicall/coreutils",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.multicall.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -3353,6 +3355,7 @@
     "pkg_id": "github.com.coreutils.coreutils.standalone",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-standalone/coreutils/coreutils",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils/standalone/b2sum",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.standalone.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -3644,6 +3647,7 @@
     "pkg_id": "github.com.coreutils.coreutils.standalone.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/standalone-glibc/coreutils/coreutils",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils/standalone/glibc",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.standalone.glibc.yaml",
     "category": [
       "ConsoleOnly",
@@ -4228,6 +4232,7 @@
     "pkg_id": "github.com.uutils.coreutils.multicall",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-multicall/coreutils/coreutils_uutils",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils_uutils/multicall/coreutils",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.multicall.uutils.yaml",
     "category": [
       "ConsoleOnly",
@@ -6178,6 +6183,57 @@
   },
   {
     "_disabled": "false",
+    "pkg": "edgevpn",
+    "pkg_family": "edgevpn",
+    "pkg_id": "github.com.mudler.edgevpn",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mudler-edgevpn/edgevpn/edgevpn",
+    "bincache": "ghcr.io/pkgforge/bincache/edgevpn/official/edgevpn",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/edgevpn/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Immutable, decentralized, statically built p2p VPN",
+    "distro_pkg": {
+      "homebrew": [
+        "edgevpn"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/edgevpn/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/mudler/edgevpn"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/mudler/edgevpn"
+    ],
+    "provides": [
+      "edgevpn"
+    ],
+    "repology": [
+      "edgevpn"
+    ],
+    "src_url": [
+      "https://github.com/mudler/edgevpn"
+    ],
+    "tag": [
+      "tunnel"
+    ],
+    "version": "v0.29.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "elinks",
     "pkg_family": "elinks",
     "pkg_id": "github.com.rkd77.elinks",
@@ -7479,7 +7535,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-cd7dc7a-250124T172702"
+    "version": "HEAD-e08d9af-250124T195845"
   },
   {
     "_disabled": "false",
@@ -8184,7 +8240,7 @@
     "tag": [
       "mail"
     ],
-    "version": "HEAD-87f3ed1-250124T185633"
+    "version": "HEAD-c2cb732-250124T215811"
   },
   {
     "_disabled": "false",
@@ -8875,6 +8931,66 @@
       "proxy"
     ],
     "version": "HEAD-407b35d-250119T125522"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "naabu",
+    "pkg_family": "naabu",
+    "pkg_id": "github.com.projectdiscovery.naabu",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-naabu/naabu/naabu",
+    "bincache": "ghcr.io/pkgforge/bincache/naabu/official/naabu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/naabu/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A fast port scanner written in go with a focus on reliability and simplicity",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "naabu",
+          "naabu-bin",
+          "naabu-git"
+        ]
+      },
+      "homebrew": [
+        "naabu"
+      ],
+      "nixpkgs": [
+        "naabu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/naabu/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/naabu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL3",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/naabu"
+    ],
+    "repology": [
+      "naabu"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/naabu"
+    ],
+    "tag": [
+      "nmap",
+      "security"
+    ],
+    "version": "HEAD-1860242-250124T195900"
   },
   {
     "_disabled": "false",

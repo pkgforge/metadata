@@ -67,7 +67,12 @@ const DOMAIN_CONFIG = new Map([
       defaultTarget: SOAR_DEFAULT,
       pathMappings: new Map([
         ['docs', 'https://soar.qaidvoid.dev'],
-        ['gif', 'https://bin.pkgforge.dev/list.gif']
+       //soar list | wc -l 
+        ['gif', 'https://meta.pkgforge.dev/misc/list.gif'],
+       // soar list $repo + soar list wc -l
+       ['detailed', 'https://meta.pkgforge.dev/misc/list_detailed.gif'],
+       // soar --version
+       ['version', 'https://meta.pkgforge.dev/misc/version.gif']
       ])
     }
   ]
@@ -110,7 +115,7 @@ function handleDomain(pathname, search, config) {
     }
     
     // Special handling for 'gif' path
-    if (prefix === 'gif' && pathname === '/' + prefix) {
+    if ((prefix === 'gif' || prefix === 'detailed' || prefix === 'version') && pathname === '/' + prefix) {
       const randomStr = generateRandomString();
       return `${target}?${randomStr}=${randomStr}`;
     }

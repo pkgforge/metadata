@@ -225,7 +225,6 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
@@ -2482,13 +2481,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -2511,7 +2510,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -2531,7 +2530,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -2544,7 +2543,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -5579,6 +5578,67 @@
   },
   {
     "_disabled": "false",
+    "pkg": "devpod",
+    "pkg_family": "devpod",
+    "pkg_id": "github.com.loft-sh.devpod",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sh-devpod/devpod/devpod",
+    "bincache": "ghcr.io/pkgforge/bincache/devpod/official/devpod",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/devpod/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Codespaces but open-source, client-only and unopinionated",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "devpod",
+          "devpod-bin"
+        ]
+      },
+      "homebrew": [
+        "devpod"
+      ],
+      "nixpkgs": [
+        "devpod"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/devpod/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/loft-sh/devpod"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/loft-sh/devpod"
+    ],
+    "provides": [
+      "aptly"
+    ],
+    "repology": [
+      "devpod"
+    ],
+    "src_url": [
+      "https://github.com/loft-sh/devpod"
+    ],
+    "tag": [
+      "cloud",
+      "devcontainer"
+    ],
+    "version": "v0.6.11-beta.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "direnv",
     "pkg_family": "direnv",
     "pkg_id": "github.com.direnv.direnv",
@@ -8310,7 +8370,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-2605948-250124T120450"
+    "version": "HEAD-b6abd4b-250124T141730"
   },
   {
     "_disabled": "false",
@@ -8726,7 +8786,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-fd684a2-250123T171431"
+    "version": "HEAD-299453e-250124T064455"
   },
   {
     "_disabled": "false",
@@ -9543,6 +9603,62 @@
       "torrent"
     ],
     "version": "release-5.0.3_v2.0.10"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "qsv",
+    "pkg_family": "qsv",
+    "pkg_id": "github.com.dathere.qsv",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dathere-qsv/qsv/qsv",
+    "bincache": "ghcr.io/pkgforge/bincache/qsv/official/qsv",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qsv/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Blazing-fast Data-Wrangling toolkit",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "qsv",
+          "qsv-bin"
+        ]
+      },
+      "nixpkgs": [
+        "qsv"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qsv/static.official.source.yaml",
+    "homepage": [
+      "https://qsv.dathere.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT",
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dathere/qsv"
+    ],
+    "repology": [
+      "qsv"
+    ],
+    "src_url": [
+      "https://github.com/dathere/qsv"
+    ],
+    "tag": [
+      "csv",
+      "textproc"
+    ],
+    "version": "HEAD-9fc44ec-250124T081231"
   },
   {
     "_disabled": "false",
@@ -11553,7 +11669,7 @@
       "busybox",
       "coreboot"
     ],
-    "version": "HEAD-c7365ce-250124T105551"
+    "version": "HEAD-687d8f3-250124T144149"
   },
   {
     "_disabled": "false",
@@ -11936,7 +12052,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-9b4984c-250124T130716"
+    "version": "HEAD-26a0a45-250124T141640"
   },
   {
     "_disabled": "false",

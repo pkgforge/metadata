@@ -33,19 +33,19 @@
 4.0K   │   └── fetch_alpine_git.sh
  18M   ├─┬ bincache
  18M   │ ├─┬ data
-4.2M   │ │ ├── x86_64-Linux.json
+4.3M   │ │ ├── x86_64-Linux.json
 3.6M   │ │ ├── aarch64-Linux.json
-3.5M   │ │ ├── x86_64-Linux.db
+3.6M   │ │ ├── x86_64-Linux.db
 3.0M   │ │ ├── aarch64-Linux.db
-448K   │ │ ├── x86_64-Linux.db.cba
-412K   │ │ ├── x86_64-Linux.json.cba
+452K   │ │ ├── x86_64-Linux.db.cba
+420K   │ │ ├── x86_64-Linux.json.cba
 404K   │ │ ├── aarch64-Linux.db.cba
 360K   │ │ ├── aarch64-Linux.json.cba
-352K   │ │ ├── x86_64-Linux.db.zstd
-340K   │ │ ├── x86_64-Linux.db.xz
-332K   │ │ ├── x86_64-Linux.json.xz
+356K   │ │ ├── x86_64-Linux.db.zstd
+344K   │ │ ├── x86_64-Linux.db.xz
+336K   │ │ ├── x86_64-Linux.json.xz
 324K   │ │ ├── aarch64-Linux.db.zstd
-316K   │ │ ├── x86_64-Linux.json.zstd
+320K   │ │ ├── x86_64-Linux.json.zstd
 312K   │ │ ├── aarch64-Linux.db.xz
 304K   │ │ ├── aarch64-Linux.json.xz
 292K   │ │ ├── aarch64-Linux.json.zstd
@@ -65,15 +65,15 @@
  60K   │ └─┬ scripts
  28K   │   ├── gen_meta_x86_64-Linux.sh
  28K   │   └── gen_meta_aarch64-Linux.sh
-6.3M   ├─┬ soarpkgs
-6.0M   │ ├─┬ data
+6.2M   ├─┬ soarpkgs
+5.9M   │ ├─┬ data
 1.4M   │ │ ├── INDEX.json
-896K   │ │ ├── BACKAGE.json
-800K   │ │ ├── pub_issues_binaries.txt
+916K   │ │ ├── BACKAGE.json
+796K   │ │ ├── pub_issues_binaries.txt
 740K   │ │ ├── INDEX.db
-400K   │ │ ├── DIFF_bincache_x86_64-Linux.json
-336K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+328K   │ │ ├── DIFF_bincache_aarch64-Linux.json
 304K   │ │ ├── pub_issues_packages.txt
+288K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 208K   │ │ ├── INDEX.json.cba
 140K   │ │ ├── GH_REPO.md
 136K   │ │ ├── INDEX.json.zstd

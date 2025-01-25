@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -288,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250125T011821"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -4216,6 +4215,84 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "github.com.fastfetch-cli.fastfetch",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-fastfetch/fastfetch/fastfetch",
+    "bincache": "ghcr.io/pkgforge/bincache/fastfetch/official/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fastfetch/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fastfetch/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fastfetch-cli/fastfetch",
+      "Related Discussion: https://github.com/fastfetch-cli/fastfetch/issues/808"
+    ],
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "HEAD-e6e7572-250125T110135"
+  },
+  {
+    "_disabled": "false",
     "pkg": "fnm",
     "pkg_family": "fnm",
     "pkg_id": "github.com.Schniz.fnm",
@@ -6790,124 +6867,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "openvpn",
-    "pkg_family": "openvpn",
-    "pkg_id": "nixpkgs.openvpn",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-openvpn/openvpn/openvpn",
-    "bincache": "ghcr.io/pkgforge/bincache/openvpn/nixpkgs/openvpn",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/openvpn/static.nixpkgs.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A full-featured open source SSL VPN solution",
-    "distro_pkg": {
-      "alpine": [
-        "openvpn"
-      ],
-      "archlinux": {
-        "aur": [
-          "openvpn-git"
-        ],
-        "extra": [
-          "openvpn"
-        ]
-      },
-      "debian": [
-        "openvpn"
-      ],
-      "nixpkgs": [
-        "openvpn"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/openvpn/static.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://openvpn.net/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
-    ],
-    "repology": [
-      "openvpn"
-    ],
-    "src_url": [
-      "https://github.com/OpenVPN/openvpn"
-    ],
-    "tag": [
-      "security",
-      "vpn"
-    ],
-    "version": "2.6.13"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "ov",
-    "pkg_family": "ov",
-    "pkg_id": "github.com.noborus.ov",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/noborus-ov/ov/ov",
-    "bincache": "ghcr.io/pkgforge/bincache/ov/official/ov",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ov/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Feature-rich terminal-based text viewer & pager",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "ov",
-          "ov-bin",
-          "ov-git"
-        ]
-      },
-      "nixpkgs": [
-        "ov"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ov/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/noborus/ov"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/noborus/ov"
-    ],
-    "provides": [
-      "ov"
-    ],
-    "repology": [
-      "ov"
-    ],
-    "src_url": [
-      "https://github.com/noborus/ov"
-    ],
-    "tag": [
-      "pager"
-    ],
-    "version": "HEAD-d22e1af-250124T145617"
-  },
-  {
-    "_disabled": "false",
     "pkg": "ox",
     "pkg_family": "ox",
     "pkg_id": "github.com.curlpipe.ox",
@@ -6960,69 +6919,6 @@
       "text-editor"
     ],
     "version": "HEAD-4a2ef25-241224T135507"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "pdfcpu",
-    "pkg_family": "pdfcpu",
-    "pkg_id": "github.com.pdfcpu.pdfcpu",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pdfcpu-pdfcpu/pdfcpu/pdfcpu",
-    "bincache": "ghcr.io/pkgforge/bincache/pdfcpu/official/pdfcpu",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pdfcpu/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A PDF processor written in Go",
-    "distro_pkg": {
-      "alpine": [
-        "pdfcpu"
-      ],
-      "archlinux": {
-        "aur": [
-          "pdfcpu",
-          "pdfcpu-bin"
-        ]
-      },
-      "homebrew": [
-        "pdfcpu"
-      ],
-      "nixpkgs": [
-        "pdfcpu"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pdfcpu/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/pdfcpu/pdfcpu"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pdfcpu/pdfcpu"
-    ],
-    "provides": [
-      "pdfcpu"
-    ],
-    "repology": [
-      "pdfcpu"
-    ],
-    "src_url": [
-      "https://github.com/pdfcpu/pdfcpu"
-    ],
-    "tag": [
-      "pdf"
-    ],
-    "version": "HEAD-b60bc1c-250124T111212"
   },
   {
     "_disabled": "false",
@@ -7416,135 +7312,6 @@
       "torrent"
     ],
     "version": "release-5.0.3_v2.0.10"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "qsv",
-    "pkg_family": "qsv",
-    "pkg_id": "github.com.dathere.qsv",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dathere-qsv/qsv/qsv",
-    "bincache": "ghcr.io/pkgforge/bincache/qsv/official/qsv",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qsv/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Blazing-fast Data-Wrangling toolkit",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "qsv",
-          "qsv-bin"
-        ]
-      },
-      "nixpkgs": [
-        "qsv"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qsv/static.official.source.yaml",
-    "homepage": [
-      "https://qsv.dathere.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT",
-      "Unlicense"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dathere/qsv"
-    ],
-    "repology": [
-      "qsv"
-    ],
-    "src_url": [
-      "https://github.com/dathere/qsv"
-    ],
-    "tag": [
-      "csv",
-      "textproc"
-    ],
-    "version": "HEAD-9fc44ec-250124T081231"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "rclone",
-    "pkg_family": "rclone",
-    "pkg_id": "github.com.rclone.rclone",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rclone-rclone/rclone/rclone",
-    "bincache": "ghcr.io/pkgforge/bincache/rclone/official/rclone",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rclone/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A program to sync files to and from various cloud storage providers",
-    "distro_pkg": {
-      "alpine": [
-        "rclone"
-      ],
-      "archlinux": {
-        "aur": [
-          "rclone-beta-bin",
-          "rclone-git"
-        ],
-        "extra": [
-          "rclone"
-        ]
-      },
-      "debian": [
-        "rclone"
-      ],
-      "homebrew": [
-        "rclone"
-      ],
-      "nixpkgs": [
-        "rclone"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rclone/static.official.source.yaml",
-    "homepage": [
-      "https://rclone.org",
-      "https://github.com/rclone/rclone"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD",
-      "ISC",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rclone/rclone"
-    ],
-    "repology": [
-      "rclone"
-    ],
-    "src_url": [
-      "https://github.com/rclone/rclone"
-    ],
-    "tag": [
-      "cloud",
-      "mount",
-      "rsync",
-      "s3",
-      "sync"
-    ],
-    "version": "HEAD-6494ac0-250124T172258"
   },
   {
     "_disabled": "false",

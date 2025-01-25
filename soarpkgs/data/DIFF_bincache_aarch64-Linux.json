@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -288,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250125T142153"
+    "version": "1.37.0"
   },
   {
     "_disabled": "true",
@@ -707,13 +706,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -736,7 +735,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -756,7 +755,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy"
+      "caddy:caddy-beta"
     ],
     "repology": [
       "caddy"
@@ -769,7 +768,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.1"
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -3636,7 +3635,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-4d3c9ed-250125T120312"
+    "version": "HEAD-afa5560-250125T180257"
   },
   {
     "_disabled": "false",
@@ -5567,7 +5566,7 @@
       "ip",
       "proxy"
     ],
-    "version": "HEAD-407b35d-250119T125522"
+    "version": "HEAD-5a76487-250126T002134"
   },
   {
     "_disabled": "false",
@@ -6791,7 +6790,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-7e71733-250125T111834"
+    "version": "HEAD-bedb1d1-250125T130851"
   },
   {
     "_disabled": "false",
@@ -9226,7 +9225,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-af9a875-250125T211005"
+    "version": "HEAD-da36cd6-250126T015418"
   },
   {
     "_disabled": "false",
@@ -9332,5 +9331,54 @@
       "process-monitor"
     ],
     "version": "HEAD-a867d77-241231T155951"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zgrab2",
+    "pkg_family": "zgrab2",
+    "pkg_id": "github.com.zmap.zgrab2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zmap-zgrab2/zgrab2/zgrab2",
+    "bincache": "ghcr.io/pkgforge/bincache/zgrab2/official/zgrab2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zgrab2/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast Go Application Scanner",
+    "distro_pkg": {
+      "nixpkgs": [
+        "zgrab2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zgrab2/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/zmap/zgrab2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "APACHE",
+      "ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/zmap/zgrab2"
+    ],
+    "repology": [
+      "zgrab2"
+    ],
+    "src_url": [
+      "https://github.com/zmap/zgrab2"
+    ],
+    "tag": [
+      "security"
+    ],
+    "version": "HEAD-22e39fd-250125T093314"
   }
 ]

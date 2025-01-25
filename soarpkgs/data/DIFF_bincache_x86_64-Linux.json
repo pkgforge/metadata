@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,6 +272,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -287,7 +288,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "1.37.0"
+    "version": "250125T011821"
   },
   {
     "_disabled": "false",
@@ -566,12 +567,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -594,7 +596,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -614,7 +616,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy"
+      "caddy:caddy-beta"
     ],
     "repology": [
       "caddy"
@@ -627,7 +629,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.1"
+    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -6811,7 +6813,7 @@
       "network",
       "traceroute"
     ],
-    "version": "HEAD-acbd20f-250125T170329"
+    "version": "HEAD-5584808-250125T173654"
   },
   {
     "_disabled": "false",
@@ -7054,6 +7056,63 @@
       "tunnel"
     ],
     "version": "v2.2.6.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "vfox",
+    "pkg_family": "vfox",
+    "pkg_id": "github.com.version-fox.vfox",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fox-vfox/vfox/vfox",
+    "bincache": "ghcr.io/pkgforge/bincache/vfox/official/vfox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vfox/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Version manager with support for Java, Node.js, Flutter, .NET & more",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vfox",
+          "vfox-bin"
+        ]
+      },
+      "homebrew": [
+        "vfox"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vfox/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/version-fox/vfox"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/version-fox/vfox"
+    ],
+    "provides": [
+      "vfox"
+    ],
+    "repology": [
+      "vfox"
+    ],
+    "src_url": [
+      "https://github.com/version-fox/vfox"
+    ],
+    "tag": [
+      "asdf"
+    ],
+    "version": "HEAD-10e220d-250125T173404"
   },
   {
     "_disabled": "true",

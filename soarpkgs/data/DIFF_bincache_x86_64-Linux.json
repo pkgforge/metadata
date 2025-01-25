@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,6 +272,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -287,7 +288,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "1.37.0"
+    "version": "250125T011821"
   },
   {
     "_disabled": "false",
@@ -2403,13 +2404,13 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS",
     "distro_pkg": {
       "alpine": [
         "caddy"
@@ -2432,7 +2433,7 @@
         "caddy"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.stable.yaml",
     "homepage": [
       "https://caddyserver.com",
       "https://github.com/caddyserver/caddy"
@@ -2452,7 +2453,7 @@
       "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
     ],
     "provides": [
-      "caddy:caddy-beta"
+      "caddy"
     ],
     "repology": [
       "caddy"
@@ -2465,7 +2466,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.9.0-beta.3"
+    "version": "v2.9.1"
   },
   {
     "_disabled": "false",
@@ -4708,51 +4709,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "gocryptfs",
-    "pkg_family": "gocryptfs",
-    "pkg_id": "github.com.rfjakob.gocryptfs",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rfjakob-gocryptfs/gocryptfs/gocryptfs",
-    "bincache": "ghcr.io/pkgforge/bincache/gocryptfs/official/gocryptfs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gocryptfs/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Encrypted overlay filesystem written in Go",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gocryptfs/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/rfjakob/gocryptfs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rfjakob/gocryptfs"
-    ],
-    "provides": [
-      "gocryptfs",
-      "gocryptfs-xray"
-    ],
-    "repology": [
-      "gocryptfs"
-    ],
-    "src_url": [
-      "https://github.com/rfjakob/gocryptfs"
-    ],
-    "tag": [
-      "encryption",
-      "filesystem"
-    ],
-    "version": "HEAD-5169c47-250123T224144"
-  },
-  {
-    "_disabled": "false",
     "pkg": "golinkfinder",
     "pkg_family": "golinkfinder",
     "pkg_id": "github.com.0xsha.GoLinkFinder",
@@ -5098,75 +5054,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "hugo",
-    "pkg_family": "hugo",
-    "pkg_id": "github.com.gohugoio.hugo",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gohugoio-hugo/hugo/hugo",
-    "bincache": "ghcr.io/pkgforge/bincache/hugo/official/hugo",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hugo/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Fast and Flexible Static Site Generator",
-    "distro_pkg": {
-      "alpine": [
-        "hugo"
-      ],
-      "archlinux": {
-        "aur": [
-          "hugo-git"
-        ],
-        "extra": [
-          "hugo"
-        ]
-      },
-      "debian": [
-        "hugo"
-      ],
-      "homebrew": [
-        "hugo"
-      ],
-      "nixpkgs": [
-        "hugo"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hugo/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/gohugoio/hugo"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/gohugoio/hugo"
-    ],
-    "provides": [
-      "hugo"
-    ],
-    "repology": [
-      "hugo-sitegen"
-    ],
-    "src_url": [
-      "https://github.com/gohugoio/hugo"
-    ],
-    "tag": [
-      "blog",
-      "cms"
-    ],
-    "version": "HEAD-e08d9af-250124T195845"
-  },
-  {
-    "_disabled": "false",
     "pkg": "ipinfo",
     "pkg_family": "ipinfo",
     "pkg_id": "github.com.ipinfo.cli",
@@ -5368,7 +5255,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-5d43e1d-250124T203721"
+    "version": "HEAD-e58713c-250125T020553"
   },
   {
     "_disabled": "false",
@@ -5813,65 +5700,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "maddy",
-    "pkg_family": "maddy",
-    "pkg_id": "github.com.foxcpp.maddy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/foxcpp-maddy/maddy/maddy",
-    "bincache": "ghcr.io/pkgforge/bincache/maddy/official/maddy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/maddy/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Composable all-in-one mail server",
-    "distro_pkg": {
-      "alpine": [
-        "maddy"
-      ],
-      "archlinux": {
-        "aur": [
-          "maddy",
-          "maddy-git"
-        ]
-      },
-      "nixpkgs": [
-        "maddy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/maddy/static.official.source.yaml",
-    "homepage": [
-      "https://maddy.email",
-      "https://github.com/foxcpp/maddy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL3",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/foxcpp/maddy"
-    ],
-    "repology": [
-      "maddy-mail-server"
-    ],
-    "src_url": [
-      "https://github.com/foxcpp/maddy"
-    ],
-    "tag": [
-      "mail"
-    ],
-    "version": "HEAD-cff6cfa-250125T020152"
-  },
-  {
-    "_disabled": "false",
     "pkg": "mdcat",
     "pkg_family": "mdcat",
     "pkg_id": "github.com.swsnr.mdcat",
@@ -6124,139 +5952,6 @@
       "utility"
     ],
     "version": "HEAD-cf458f0-250124T094739"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "miniflux",
-    "pkg_family": "miniflux",
-    "pkg_id": "github.com.miniflux.v2",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/miniflux-v2/miniflux/miniflux",
-    "bincache": "ghcr.io/pkgforge/bincache/miniflux/official/miniflux",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miniflux/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Minimalist and opinionated feed reader",
-    "distro_pkg": {
-      "alpine": [
-        "miniflux"
-      ],
-      "archlinux": {
-        "aur": [
-          "miniflux-git"
-        ],
-        "extra": [
-          "miniflux"
-        ]
-      },
-      "debian": [
-        "miniflux"
-      ],
-      "gnuguix": [
-        "miniflux"
-      ],
-      "nixpkgs": [
-        "miniflux"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/miniflux/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/miniflux/v2"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/miniflux/v2"
-    ],
-    "provides": [
-      "miniflux"
-    ],
-    "repology": [
-      "miniflux"
-    ],
-    "src_url": [
-      "https://github.com/miniflux/v2"
-    ],
-    "tag": [
-      "rss"
-    ],
-    "version": "HEAD-369054b-250124T151623"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mise",
-    "pkg_family": "mise",
-    "pkg_id": "github.com.jdx.mise",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jdx-mise/mise/mise",
-    "bincache": "ghcr.io/pkgforge/bincache/mise/official/mise",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mise/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Polyglot runtime and dev tool version manager",
-    "distro_pkg": {
-      "alpine": [
-        "mise"
-      ],
-      "archlinux": {
-        "aur": [
-          "mise",
-          "mise-bin"
-        ]
-      },
-      "homebrew": [
-        "mise"
-      ],
-      "nixpkgs": [
-        "mise"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mise/static.official.stable.yaml",
-    "homepage": [
-      "https://mise.jdx.dev",
-      "https://github.com/jdx/mise"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/jdx/mise"
-    ],
-    "provides": [
-      "mise"
-    ],
-    "repology": [
-      "mise"
-    ],
-    "src_url": [
-      "https://github.com/jdx/mise"
-    ],
-    "tag": [
-      "asdf",
-      "dev-env"
-    ],
-    "version": "v2025.1.14"
   },
   {
     "_disabled": "false",
@@ -6619,136 +6314,6 @@
       "security"
     ],
     "version": "HEAD-1860242-250124T195900"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "netbird",
-    "pkg_family": "netbird",
-    "pkg_id": "github.com.netbirdio.netbird",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/netbirdio-netbird/netbird/netbird",
-    "bincache": "ghcr.io/pkgforge/bincache/netbird/official/netbird",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netbird/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "WireGuard-based mesh network",
-      "netbird": "Client for Netbird; A WireGuard-based mesh network",
-      "netbird-mgmt": "Management service for Netbird",
-      "netbird-relay": "Relay service for Netbird",
-      "netbird-signal": "Signal service for Netbird"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "netbird",
-          "netbird-bin"
-        ]
-      },
-      "nixpkgs": [
-        "netbird"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/netbird/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/netbirdio/netbird"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/netbirdio/netbird"
-    ],
-    "provides": [
-      "netbird",
-      "netbird-mgmt",
-      "netbird-relay",
-      "netbird-signal"
-    ],
-    "repology": [
-      "netbird"
-    ],
-    "src_url": [
-      "https://github.com/netbirdio/netbird"
-    ],
-    "tag": [
-      "mesh",
-      "wireguard"
-    ],
-    "version": "HEAD-b6abd4b-250124T141730"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "nfpm",
-    "pkg_family": "nfpm",
-    "pkg_id": "github.com.goreleaser.nfpm",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goreleaser-nfpm/nfpm/nfpm",
-    "bincache": "ghcr.io/pkgforge/bincache/nfpm/official/nfpm",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nfpm/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A simple deb, rpm, apk, ipk, and arch linux packager",
-    "distro_pkg": {
-      "alpine": [
-        "nfpm"
-      ],
-      "archlinux": {
-        "aur": [
-          "nfpm",
-          "nfpm-bin"
-        ]
-      },
-      "homebrew": [
-        "nfpm"
-      ],
-      "nixpkgs": [
-        "nfpm"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nfpm/static.official.stable.yaml",
-    "homepage": [
-      "https://nfpm.goreleaser.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/goreleaser/nfpm"
-    ],
-    "provides": [
-      "nfpm"
-    ],
-    "repology": [
-      "nfpm"
-    ],
-    "src_url": [
-      "https://github.com/goreleaser/nfpm"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-9708afd-250124T082233"
   },
   {
     "_disabled": "false",
@@ -9410,7 +8975,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-82e41dd-250124T163909"
+    "version": "HEAD-68a66ee-250124T175243"
   },
   {
     "_disabled": "false",

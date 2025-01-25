@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -288,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250125T011821"
+    "version": "1.37.0"
   },
   {
     "_disabled": "true",
@@ -707,7 +706,6 @@
     "pkg_id": "github.com.caddyserver.caddy",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -3391,7 +3389,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-3bb3bd5-250125T214100"
+    "version": "HEAD-54de7c8-250125T230347"
   },
   {
     "_disabled": "false",
@@ -7453,7 +7451,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-0d66b76-250125T183007"
+    "version": "HEAD-f745fff-250125T210131"
   },
   {
     "_disabled": "false",
@@ -7722,6 +7720,67 @@
       "stun"
     ],
     "version": "HEAD-1d3e523-250125T120125"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "subfinder",
+    "pkg_family": "subfinder",
+    "pkg_id": "github.com.projectdiscovery.subfinder",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-subfinder/subfinder/subfinder",
+    "bincache": "ghcr.io/pkgforge/bincache/subfinder/official/subfinder",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/subfinder/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast Modular Subdomain Enumeration tool",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "subfinder",
+          "subfinder-bin"
+        ]
+      },
+      "homebrew": [
+        "subfinder"
+      ],
+      "nixpkgs": [
+        "subfinder"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/subfinder/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/subfinder"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/subfinder"
+    ],
+    "provides": [
+      "subfinder"
+    ],
+    "repology": [
+      "subfinder"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/subfinder"
+    ],
+    "tag": [
+      "bugbounty",
+      "subdomain"
+    ],
+    "version": "HEAD-099637f-250125T195802"
   },
   {
     "_disabled": "false",

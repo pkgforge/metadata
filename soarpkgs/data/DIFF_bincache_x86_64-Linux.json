@@ -225,8 +225,8 @@
     "pkg_id": "github.com.aria2.aria2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -253,7 +253,7 @@
         "aria2"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.stable.yaml",
     "homepage": [
       "https://aria2.github.io",
       "https://github.com/aria2/aria2",
@@ -272,7 +272,6 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
       "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
     ],
     "provides": [
@@ -288,7 +287,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250125T011821"
+    "version": "1.37.0"
   },
   {
     "_disabled": "false",
@@ -2697,7 +2696,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-b7871ff-250125T060315"
+    "version": "HEAD-4d3c9ed-250125T120312"
   },
   {
     "_disabled": "false",
@@ -3997,6 +3996,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "maddy",
+    "pkg_family": "maddy",
+    "pkg_id": "github.com.foxcpp.maddy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/foxcpp-maddy/maddy/maddy",
+    "bincache": "ghcr.io/pkgforge/bincache/maddy/official/maddy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/maddy/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Composable all-in-one mail server",
+    "distro_pkg": {
+      "alpine": [
+        "maddy"
+      ],
+      "archlinux": {
+        "aur": [
+          "maddy",
+          "maddy-git"
+        ]
+      },
+      "nixpkgs": [
+        "maddy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/maddy/static.official.source.yaml",
+    "homepage": [
+      "https://maddy.email",
+      "https://github.com/foxcpp/maddy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL3",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/foxcpp/maddy"
+    ],
+    "repology": [
+      "maddy-mail-server"
+    ],
+    "src_url": [
+      "https://github.com/foxcpp/maddy"
+    ],
+    "tag": [
+      "mail"
+    ],
+    "version": "HEAD-21485e9-250125T145202"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mdcat",
     "pkg_family": "mdcat",
     "pkg_id": "github.com.swsnr.mdcat",
@@ -4610,7 +4668,72 @@
       "nmap",
       "security"
     ],
-    "version": "HEAD-1860242-250124T195900"
+    "version": "HEAD-715e42a-250125T173231"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "nerdctl",
+    "pkg_family": "nerdctl",
+    "pkg_id": "github.com.containerd.nerdctl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containerd-nerdctl/nerdctl/nerdctl",
+    "bincache": "ghcr.io/pkgforge/bincache/nerdctl/official/nerdctl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nerdctl/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Docker-compatible CLI for containerd, with support for Compose, Rootless, eStargz, OCIcrypt, IPFS",
+    "distro_pkg": {
+      "alpine": [
+        "nerdctl"
+      ],
+      "archlinux": {
+        "aur": [
+          "nerdctl-git"
+        ],
+        "extra": [
+          "nerdctl"
+        ]
+      },
+      "homebrew": [
+        "nerdctl"
+      ],
+      "nixpkgs": [
+        "nerdctl"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nerdctl/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/containerd/nerdctl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containerd/nerdctl"
+    ],
+    "provides": [
+      "nerdctl"
+    ],
+    "repology": [
+      "nerdctl"
+    ],
+    "src_url": [
+      "https://github.com/containerd/nerdctl"
+    ],
+    "tag": [
+      "container"
+    ],
+    "version": "HEAD-d88bed4-250125T125828"
   },
   {
     "_disabled": "false",
@@ -6125,7 +6248,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-8b540d4-250125T100926"
+    "version": "HEAD-58d49a1-250125T180915"
   },
   {
     "_disabled": "false",
@@ -6351,6 +6474,52 @@
   },
   {
     "_disabled": "false",
+    "pkg": "stunner",
+    "pkg_family": "stunner",
+    "pkg_id": "github.com.firefart.stunner",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/firefart-stunner/stunner/stunner",
+    "bincache": "ghcr.io/pkgforge/bincache/stunner/official/stunner",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/stunner/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Test and Exploit STUN, TURN and TURN over TCP servers",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/stunner/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/firefart/stunner"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "CC-BY-NC-SA-4.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/firefart/stunner"
+    ],
+    "provides": [
+      "stunner"
+    ],
+    "repology": [
+      "stunner"
+    ],
+    "src_url": [
+      "https://github.com/firefart/stunner"
+    ],
+    "tag": [
+      "stun"
+    ],
+    "version": "HEAD-1d3e523-250125T120125"
+  },
+  {
+    "_disabled": "false",
     "pkg": "syncthing",
     "pkg_family": "syncthing",
     "pkg_id": "github.com.syncthing.syncthing",
@@ -6527,6 +6696,50 @@
   },
   {
     "_disabled": "false",
+    "pkg": "tdl",
+    "pkg_family": "tdl",
+    "pkg_id": "github.com.iyear.tdl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/iyear-tdl/tdl/tdl",
+    "bincache": "ghcr.io/pkgforge/bincache/tdl/official/tdl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tdl/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A Telegram downloader/tools written in Golang",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tdl/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/iyear/tdl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/iyear/tdl"
+    ],
+    "provides": [
+      "tdl"
+    ],
+    "src_url": [
+      "https://github.com/iyear/tdl"
+    ],
+    "tag": [
+      "downloader",
+      "telegram"
+    ],
+    "version": "v0.18.5"
+  },
+  {
+    "_disabled": "false",
     "pkg": "teldrive",
     "pkg_family": "teldrive",
     "pkg_id": "github.com.divyam234.teldrive",
@@ -6672,6 +6885,65 @@
       "Utility"
     ],
     "version": "HEAD-62725d9-241126T084636"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tlsx",
+    "pkg_family": "tlsx",
+    "pkg_id": "github.com.projectdiscovery.tlsx",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-tlsx/tlsx/tlsx",
+    "bincache": "ghcr.io/pkgforge/bincache/tlsx/official/tlsx",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tlsx/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast and configurable TLS grabber focused on TLS based data collection",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "tlsx"
+        ]
+      },
+      "homebrew": [
+        "tlsx"
+      ],
+      "nixpkgs": [
+        "tlsx"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tlsx/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/tlsx"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/tlsx"
+    ],
+    "provides": [
+      "tlsx"
+    ],
+    "repology": [
+      "tlsx"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/tlsx"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-3e4f27a-250125T174812"
   },
   {
     "_disabled": "false",

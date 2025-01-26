@@ -168,6 +168,33 @@ jobs:
           labels: report, automated issue
         continue-on-error: true
 
+      - name: Report Duplicate pkg_ids
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d > "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          if [[ -s "${SYSTMP}/DUPES_PKG_ID.txt.tmp" || $(stat -c%s "${SYSTMP}/DUPES_PKG_ID.txt.tmp") -gt 10 ]]; then
+           echo '```bash' > "${SYSTMP}/DUPES_PKG_ID.txt"
+           cat "${SYSTMP}/DUPES_PKG_ID.txt.tmp" >> "${SYSTMP}/DUPES_PKG_ID.txt"
+           echo '```' >> "${SYSTMP}/DUPES_PKG_ID.txt"
+           export HAS_DUPE_PKG_IDS="TRUE"
+          fi
+        continue-on-error: true
+
+      - name: Create Issue (Duplicate PKG_ID)
+        if: env.HAS_DUPE_PKG_IDS == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Duplicate PKG_ID)
+          content-filepath: "/tmp/DUPES_PKG_ID.txt"
+          labels: report, automated issue
+        continue-on-error: true
+
       - name: Report Duplicate pkg_webpages
         run: |
           #Presets

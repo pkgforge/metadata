@@ -290,22 +290,7 @@ jq '
   (map(select(.download_count != -1)) | sort_by(.rank, .pkg)) as $valid_entries |
   (map(select(.download_count == -1)) | sort_by(.pkg)) as $invalid_entries |
   ($valid_entries + $invalid_entries) | to_entries | map(.value.rank = (.key + 1 | tostring)) |
-  map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq 'walk(if type == "boolean" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' | jq '
-  . as $original |
-  group_by(.pkg_webpage) |
-  map(select(length > 1)) |
-  flatten |
-  map(
-    . as $item |
-    .pkg_webpage |= sub(
-      "x86_64-linux/[^/]+";
-      "x86_64-linux/" + ($item.pkg_id | gsub("\\.";"-"))
-    )
-  ) as $changes |
-  ($original | map(
-    (.pkg_id as $id | ($changes | map(select(.pkg_id == $id))[0]) // .)
-  ))
-  ' | jq 'unique | sort_by(.pkg)' > "${TMPDIR}/pkgcache_x86_64-Linux.json"
+  map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq 'walk(if type == "boolean" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' | jq 'unique_by(.ghcr_pkg) | sort_by(.pkg)' > "${TMPDIR}/pkgcache_x86_64-Linux.json"
 #sanity check: jq 'sort_by(.rank | tonumber) | map({pkg_name, rank, download_count})'
 #sanity check urls
 sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/pkgcache_x86_64-Linux.json"

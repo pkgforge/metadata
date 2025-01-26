@@ -626,7 +626,7 @@
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/srevinsaju/discord-appimage"
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/discord-appimage"
     ],
     "pkgcache": "ghcr.io/pkgforge/pkgcache/discord/appimage/srevinsaju",
     "provides": [
@@ -948,7 +948,7 @@
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/srevinsaju/discord-appimage"
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/discord-appimage"
     ],
     "pkgcache": "ghcr.io/pkgforge/pkgcache/discord-canary/appimage/srevinsaju",
     "provides": [
@@ -1010,7 +1010,7 @@
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/srevinsaju/discord-appimage"
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/discord-appimage"
     ],
     "pkgcache": "ghcr.io/pkgforge/pkgcache/discord-ptb/appimage/srevinsaju",
     "provides": [
@@ -1293,6 +1293,138 @@
       "screenshot"
     ],
     "version": "12.1.0-unstable-2025-01-19"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ghostty",
+    "pkg_family": "ghostty",
+    "pkg_id": "github.com.psadi.ghostty-appimage",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ghostty-appimage/ghostty/ghostty",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty/appimage.psadi.stable.yaml",
+    "category": [
+      "TerminalEmulator"
+    ],
+    "description": "Fast, native, feature-rich terminal emulator pushing modern features",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ghostty-git"
+        ],
+        "extra": [
+          "ghostty"
+        ]
+      },
+      "homebrew": [
+        "ghostty"
+      ],
+      "nixpkgs": [
+        "ghostty"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty/appimage.psadi.stable.yaml",
+    "homepage": [
+      "https://ghostty.org",
+      "https://github.com/ghostty-org/ghostty"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "psadi (https://github.com/psadi)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/psadi/ghostty-appimage"
+    ],
+    "provides": [
+      "ghostty"
+    ],
+    "repology": [
+      "ghostty"
+    ],
+    "src_url": [
+      "https://github.com/psadi/ghostty-appimage"
+    ],
+    "tag": [
+      "terminal"
+    ],
+    "version": "v1.0.1+4"
+  },
+  {
+    "_disabled": "true",
+    "_disabled_reason": {
+      "replaced": [
+        {
+          "date": "2024-12-31",
+          "pkg_id": "github.com.psadi.ghostty-appimage",
+          "reason": "Switched to fetching prebuilt"
+        }
+      ]
+    },
+    "pkg": "ghostty",
+    "pkg_family": "ghostty",
+    "pkg_id": "github.com.psadi.ghostty-appimage.source",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-source/ghostty/ghostty",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty/appimage.psadi.source.yaml",
+    "category": [
+      "TerminalEmulator"
+    ],
+    "description": "Fast, native, feature-rich terminal emulator pushing modern features",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ghostty-git"
+        ],
+        "extra": [
+          "ghostty"
+        ]
+      },
+      "homebrew": [
+        "ghostty"
+      ],
+      "nixpkgs": [
+        "ghostty"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty/appimage.psadi.source.yaml",
+    "homepage": [
+      "https://ghostty.org",
+      "https://github.com/ghostty-org/ghostty"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "psadi (https://github.com/psadi)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source using a Community Provided Script. Check/Report @ https://github.com/psadi/ghostty-appimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghostty/appimage/psadi",
+    "provides": [
+      "ghostty"
+    ],
+    "repology": [
+      "ghostty"
+    ],
+    "src_url": [
+      "https://github.com/psadi/ghostty-appimage"
+    ],
+    "tag": [
+      "terminal"
+    ],
+    "version": "1.0.1"
   },
   {
     "_disabled": "true",
@@ -1803,62 +1935,16 @@
     "_disabled": "false",
     "pkg": "tangent",
     "pkg_family": "tangent",
-    "pkg_id": "github.com.suchnsuch.Tangent",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/suchnsuch-tangent/tangent/tangent",
-    "app_id": "io.github.suchnsuch.Tangent",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/tangent/appimage.official.stable.yaml",
-    "category": [
-      "TextEditor"
-    ],
-    "description": "A clean and powerful open source notes app",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/tangent/appimage.official.stable.yaml",
-    "homepage": [
-      "https://www.tangentnotes.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/suchnsuch/Tangent"
-    ],
-    "provides": [
-      "tangent"
-    ],
-    "repology": [
-      "tangent"
-    ],
-    "src_url": [
-      "https://www.tangentnotes.com/Download",
-      "https://github.com/suchnsuch/Tangent"
-    ],
-    "tag": [
-      "editor",
-      "note"
-    ],
-    "version": "0.8.4"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "tangent",
-    "pkg_family": "tangent",
     "pkg_id": "github.com.suchnsuch.Tangent.alpha",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tangent-alpha/tangent/tangent",
     "app_id": "io.github.suchnsuch.Tangent",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/tangent/appimage.official.beta.yaml",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/tangent/appimage.official.alpha.yaml",
     "category": [
       "TextEditor"
     ],
     "description": "A clean and powerful open source notes app (alpha)",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/tangent/appimage.official.beta.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/tangent/appimage.official.alpha.yaml",
     "homepage": [
       "https://www.tangentnotes.com"
     ],
@@ -2089,6 +2175,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.7.2t(2025-01-25at01:02:51)"
+    "version": "Twilightbuild-1.7.2t(2025-01-25at23:03:24)"
   }
 ]

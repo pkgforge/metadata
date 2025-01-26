@@ -133,7 +133,7 @@ jobs:
           set +x ; set +e
           #--------------#
           ##Failed SBUILDS (Binaries)
-          if [[ -s "${SYSTMP}/INVALID_BINARIES.txt" || $(stat -c%s "${SYSTMP}/INVALID_BINARIES.txt") -gt 10 ]]; then
+          if [[ -s "${SYSTMP}/INVALID_BINARIES.txt" && $(wc -l < "${SYSTMP}/INVALID_BINARIES.txt" | tr -d '[:space:]') -gt 1 ]]; then
            #sed 's|.*/binaries|https://github.com/pkgforge/soarpkgs/blob/main/binaries|' -i  "${SYSTMP}/INVALID_BINARIES.txt"
            #sed 's|^|- |' -i "${SYSTMP}/INVALID_BINARIES.txt"
            #sort -u "${SYSTMP}/INVALID_BINARIES.txt" -o "${SYSTMP}/INVALID_BINARIES.txt"
@@ -141,7 +141,7 @@ jobs:
            echo "HAS_INVALID_BINS=${HAS_INVALID_BINS}" >> "${GITHUB_ENV}"
           fi
           ##Failed SBUILDS (Packages)
-          if [[ -s "${SYSTMP}/INVALID_PACKAGES.txt" || $(stat -c%s "${SYSTMP}/INVALID_PACKAGES.txt") -gt 10 ]]; then
+          if [[ -s "${SYSTMP}/INVALID_PACKAGES.txt" && $(wc -l < "${SYSTMP}/INVALID_PACKAGES.txt" | tr -d '[:space:]') -gt 1 ]]; then
            #sed 's|.*/packages|https://github.com/pkgforge/soarpkgs/blob/main/packages|' -i  "${SYSTMP}/INVALID_PACKAGES.txt"
            #sed 's|^|- |' -i "${SYSTMP}/INVALID_PACKAGES.txt"
            #sort -u "${SYSTMP}/INVALID_PACKAGES.txt" -o "${SYSTMP}/INVALID_PACKAGES.txt"
@@ -168,43 +168,17 @@ jobs:
           labels: report, automated issue
         continue-on-error: true
 
-      - name: Report Duplicate pkg_ids
-        run: |
-          #Presets
-          set +x ; set +e
-          #--------------#
-          curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d > "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
-          curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
-          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
-          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
-          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
-          if [[ -s "${SYSTMP}/DUPES_PKG_ID.txt.tmp" || $(stat -c%s "${SYSTMP}/DUPES_PKG_ID.txt.tmp") -gt 10 ]]; then
-           echo '```bash' > "${SYSTMP}/DUPES_PKG_ID.txt"
-           cat "${SYSTMP}/DUPES_PKG_ID.txt.tmp" >> "${SYSTMP}/DUPES_PKG_ID.txt"
-           echo '```' >> "${SYSTMP}/DUPES_PKG_ID.txt"
-           export HAS_DUPE_PKG_IDS="TRUE"
-          fi
-        continue-on-error: true
-
-      - name: Create Issue (Duplicate PKG_ID)
-        if: env.HAS_DUPE_PKG_IDS == 'TRUE'
-        uses: peter-evans/create-issue-from-file@v5
-        with:
-          title: SBUILDS (Duplicate PKG_ID)
-          content-filepath: "/tmp/DUPES_PKG_ID.txt"
-          labels: report, automated issue
-        continue-on-error: true
-
       - name: Report Duplicate pkg_webpages
         run: |
           #Presets
           set +x ; set +e
           #--------------#
-          if [[ -s "${SYSTMP}/DUPES_PKG_WEBPAGE.json" || $(stat -c%s "${SYSTMP}/DUPES_PKG_WEBPAGE.json") -gt 10 ]]; then
+          if [[ -s "${SYSTMP}/DUPES_PKG_WEBPAGE.json" && $(wc -l < "${SYSTMP}/DUPES_PKG_WEBPAGE.json" | tr -d '[:space:]') -gt 1 ]]; then
            echo '```json' > "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
            cat "${SYSTMP}/DUPES_PKG_WEBPAGE.json" >> "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
            echo '```' >> "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
            export HAS_DUPE_PKG_WEBPAGES="TRUE"
+           echo "HAS_DUPE_PKG_WEBPAGES=${HAS_DUPE_PKG_WEBPAGES}" >> "${GITHUB_ENV}"
           fi
         continue-on-error: true
 
@@ -222,11 +196,12 @@ jobs:
           #Presets
           set +x ; set +e
           #--------------#
-          if [[ -s "${SYSTMP}/MISSING_PKG_ID.json" || $(stat -c%s "${SYSTMP}/MISSING_PKG_ID.json") -gt 10 ]]; then
+          if [[ -s "${SYSTMP}/MISSING_PKG_ID.json" && $(wc -l < "${SYSTMP}/MISSING_PKG_ID.json" | tr -d '[:space:]') -gt 1 ]]; then
            echo '```json' > "${SYSTMP}/MISSING_PKG_ID.txt"
            cat "${SYSTMP}/MISSING_PKG_ID.json" >> "${SYSTMP}/MISSING_PKG_ID.txt"
            echo '```' >> "${SYSTMP}/MISSING_PKG_ID.txt"
            export HAS_MISSING_PKG_ID="TRUE"
+           echo "HAS_MISSING_PKG_ID=${HAS_MISSING_PKG_ID}" >> "${GITHUB_ENV}"
           fi
         continue-on-error: true
 
@@ -276,6 +251,34 @@ jobs:
           sudo apt update -y
           sudo apt install bc coreutils curl dos2unix fdupes jq moreutils wget -y
           sudo apt-get install apt-transport-https apt-utils ca-certificates coreutils dos2unix gnupg2 jq moreutils p7zip-full rename rsync software-properties-common texinfo tmux util-linux wget -y 2>/dev/null ; sudo apt-get update -y 2>/dev/null
+        continue-on-error: true
+
+      - name: Report Duplicate pkg_ids
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d > "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          if [[ -s "${SYSTMP}/DUPES_PKG_ID.txt.tmp" && $(stat -c%s "${SYSTMP}/DUPES_PKG_ID.txt.tmp") -gt 3 ]]; then
+           echo '```bash' > "${SYSTMP}/DUPES_PKG_ID.txt"
+           cat "${SYSTMP}/DUPES_PKG_ID.txt.tmp" >> "${SYSTMP}/DUPES_PKG_ID.txt"
+           echo '```' >> "${SYSTMP}/DUPES_PKG_ID.txt"
+           export HAS_DUPE_PKG_IDS="TRUE"
+           echo "HAS_DUPE_PKG_IDS=${HAS_DUPE_PKG_IDS}" >> "${GITHUB_ENV}"
+          fi
+        continue-on-error: true
+
+      - name: Create Issue (Duplicate PKG_ID)
+        if: env.HAS_DUPE_PKG_IDS == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Duplicate PKG_ID)
+          content-filepath: "/tmp/DUPES_PKG_ID.txt"
+          labels: report, automated issue
         continue-on-error: true
 
       - name: Generate Diffs (BinCache)

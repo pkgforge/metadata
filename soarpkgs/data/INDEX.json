@@ -3470,9 +3470,9 @@
     "_disabled": "false",
     "pkg": "aria2",
     "pkg_family": "aria2",
-    "pkg_id": "github.com.aria2.aria2",
+    "pkg_id": "github.com.aria2.aria2.stable",
     "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-stable/aria2/aria2",
     "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/aria2",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.stable.yaml",
     "category": [
@@ -3541,9 +3541,10 @@
     "_disabled": "false",
     "pkg": "aria2",
     "pkg_family": "aria2",
-    "pkg_id": "github.com.aria2.aria2",
+    "pkg_id": "github.com.aria2.aria2.continuous",
     "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-aria2/aria2/aria2",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-continuous/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
     "category": [
       "ConsoleOnly",
@@ -6705,7 +6706,7 @@
     "pkg_id": "git.busybox.net.busybox.standalone.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/standalone-glibc/busybox/busybox",
-    "bincache": "ghcr.io/pkgforge/bincache/busybox/glibc/add-shell",
+    "bincache": "ghcr.io/pkgforge/bincache/busybox/glibc/acpid",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/busybox/static.standalone.glibc.yaml",
     "category": [
       "ConsoleOnly",
@@ -8524,7 +8525,7 @@
     "pkg_id": "git.busybox.net.busybox.standalone",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/busybox-standalone/busybox/busybox",
-    "bincache": "ghcr.io/pkgforge/bincache/busybox/official/add-shell",
+    "bincache": "ghcr.io/pkgforge/bincache/busybox/official/acpid",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/busybox/static.standalone.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -9492,9 +9493,80 @@
     "_disabled": "false",
     "pkg": "caddy",
     "pkg_family": "caddy",
-    "pkg_id": "github.com.caddyserver.caddy",
+    "pkg_id": "github.com.caddyserver.caddy.beta",
     "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddy-beta/caddy/caddy",
+    "bincache": "ghcr.io/pkgforge/bincache/caddy/official/beta",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
+    "distro_pkg": {
+      "alpine": [
+        "caddy"
+      ],
+      "archlinux": {
+        "aur": [
+          "caddy-git"
+        ],
+        "extra": [
+          "caddy"
+        ]
+      },
+      "debian": [
+        "caddy"
+      ],
+      "homebrew": [
+        "caddy"
+      ],
+      "nixpkgs": [
+        "caddy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
+    "homepage": [
+      "https://caddyserver.com",
+      "https://github.com/caddyserver/caddy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
+    ],
+    "provides": [
+      "caddy:caddy-beta"
+    ],
+    "repology": [
+      "caddy"
+    ],
+    "src_url": [
+      "https://github.com/caddyserver/caddy"
+    ],
+    "tag": [
+      "caddy",
+      "server",
+      "nginx"
+    ],
+    "version": "v2.9.0-beta.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "caddy",
+    "pkg_family": "caddy",
+    "pkg_id": "github.com.caddyserver.caddy.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddy-stable/caddy/caddy",
     "bincache": "ghcr.io/pkgforge/bincache/caddy/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.stable.yaml",
     "category": [
@@ -9558,76 +9630,6 @@
       "nginx"
     ],
     "version": "v2.9.1"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "caddy",
-    "pkg_family": "caddy",
-    "pkg_id": "github.com.caddyserver.caddy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caddyserver-caddy/caddy/caddy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/caddy/static.official.beta.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A powerful, enterprise-ready, and extensible HTTP/2 + HTTP/3 web server with automatic HTTPS (Beta)",
-    "distro_pkg": {
-      "alpine": [
-        "caddy"
-      ],
-      "archlinux": {
-        "aur": [
-          "caddy-git"
-        ],
-        "extra": [
-          "caddy"
-        ]
-      },
-      "debian": [
-        "caddy"
-      ],
-      "homebrew": [
-        "caddy"
-      ],
-      "nixpkgs": [
-        "caddy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/caddy/static.official.beta.yaml",
-    "homepage": [
-      "https://caddyserver.com",
-      "https://github.com/caddyserver/caddy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/caddyserver/caddy"
-    ],
-    "provides": [
-      "caddy:caddy-beta"
-    ],
-    "repology": [
-      "caddy"
-    ],
-    "src_url": [
-      "https://github.com/caddyserver/caddy"
-    ],
-    "tag": [
-      "caddy",
-      "server",
-      "nginx"
-    ],
-    "version": "v2.9.0-beta.3"
   },
   {
     "_disabled": "false",
@@ -13739,7 +13741,7 @@
     "pkg_id": "github.com.uutils.coreutils.standalone",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-standalone/coreutils/coreutils_uutils",
-    "bincache": "ghcr.io/pkgforge/bincache/coreutils_uutils/standalone/basename",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils_uutils/standalone/arch",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.standalone.uutils.yaml",
     "category": [
       "ConsoleOnly",
@@ -14056,7 +14058,7 @@
     "pkg_id": "github.com.vlang.coreutils",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vlang-coreutils/coreutils/coreutils_uutils",
-    "bincache": "ghcr.io/pkgforge/bincache/coreutils/vlang/b2sum",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils/vlang/arch",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.vlang.source.yaml",
     "category": [
       "ConsoleOnly",

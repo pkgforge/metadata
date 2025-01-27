@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   schedule:
   # - cron: "0 3 * * *"  #UTC 03:00 AM --> 08:45 AM NPT @everyday
-   - cron: "0 */1 * * *" #every 1 hr
+   - cron: "0 */3 * * *" #every 3 hrs
 jobs:
   generate:
     runs-on: ubuntu-latest

@@ -4534,7 +4534,7 @@
       "cat",
       "text-viewer"
     ],
-    "version": "HEAD-f8c6e90-250124T232129"
+    "version": "HEAD-487ac3b-250127T230005"
   },
   {
     "_disabled": "false",
@@ -12286,10 +12286,302 @@
     "_disabled": "false",
     "pkg": "coreutils",
     "pkg_family": "coreutils",
+    "pkg_id": "github.com.coreutils.coreutils.standalone",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-standalone/coreutils/coreutils",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils/standalone/b2sum",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.standalone.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "GNU File, Shell, and Text utilities",
+      "[": "Check file types and compare values [coreutils]",
+      "arch": "Print machine hardware name (same as uname -m) [coreutils]",
+      "b2sum": "Compute and check BLAKE2 message digest [coreutils]",
+      "base32": "Base32 encode/decode data and print to standard output [coreutils]",
+      "base64": "Base64 encode/decode data and print to standard output [coreutils]",
+      "basename": "Strip directory and suffix from filenames [coreutils]",
+      "basenc": "Encode/decode data and print to standard output [coreutils]",
+      "cat": "Concatenate files and print on the standard output [coreutils]",
+      "chcon": "Change file security context [coreutils]",
+      "chgrp": "Change group ownership [coreutils]",
+      "chmod": "Change file owner and group [coreutils]",
+      "chown": "Change file owner and group [coreutils]",
+      "chroot": "Run command or interactive shell with special root directory [coreutils]",
+      "cksum": "Compute and verify file checksums [coreutils]",
+      "comm": "Compare two sorted files line by line [coreutils]",
+      "coreutils": "Multicall Binary for Coreutils: GNU File, Shell, and Text utilities",
+      "cp": "Copy files and directories [coreutils]",
+      "csplit": "Split a file into sections determined by context lines [coreutils]",
+      "cut": "Remove sections from each line of files [coreutils]",
+      "date": "Print or set the system date and time [coreutils]",
+      "dd": "Convert and Copy a file [coreutils]",
+      "df": "Report file system space usage [coreutils]",
+      "dir": "List directory contents [coreutils]",
+      "dircolors": "Color setup for ls [coreutils]",
+      "dirname": "Strip last component from file name [coreutils]",
+      "du": "Estimate file space usage [coreutils]",
+      "echo": "Display a line of text [coreutils]",
+      "env": "Run a program in a modified environment [coreutils]",
+      "expand": "Convert tabs to spaces [coreutils]",
+      "expr": "Evaluate expressions [coreutils]",
+      "factor": "Factor numbers [coreutils]",
+      "false": "Do nothing, unsuccessfully [coreutils]",
+      "fmt": "Simple optimal text formatter [coreutils]",
+      "fold": "Wrap each input line to fit in specified width [coreutils]",
+      "ginstall": "Copy files and set attributes [coreutils]",
+      "groups": "Print the groups a user is in [coreutils]",
+      "head": "Output the first part of files [coreutils]",
+      "hostid": "Print the numeric identifier for the current host [coreutils]",
+      "hostname": "Display or set the system's host name [coreutils]",
+      "id": "Print real and effective user and group IDs [coreutils]",
+      "install": "Copy files and set attributes [coreutils]",
+      "join": "Join lines of two files on a common field [coreutils]",
+      "kill": "Send a signal (default: TERM) to given PIDs [coreutils]",
+      "link": "Call the link function to create a link to a file [coreutils]",
+      "ln": "Make links between files [coreutils]",
+      "logname": "Print user's login name [coreutils]",
+      "ls": "List directory contents [coreutils]",
+      "make-prime-list": "Generate Prime Numbers [coreutils]",
+      "md5sum": "Compute and check MD5 message digest [coreutils]",
+      "mkdir": "Make directories [coreutils]",
+      "mkfifo": "Make FIFOs (named pipes) [coreutils]",
+      "mknod": "Make block or character special files [coreutils]",
+      "mktemp": "Create a temporary file or directory [coreutils]",
+      "mv": "Move (rename) files [coreutils]",
+      "nice": "Run a program with modified scheduling priority [coreutils]",
+      "nl": "Number lines of files [coreutils]",
+      "nohup": "Run a command immune to hangups, with output to a non-tty [coreutils]",
+      "nproc": "Print the number of processing units available [coreutils]",
+      "numfmt": "Convert numbers from/to human-readable strings [coreutils]",
+      "od": "Dump files in octal and other formats [coreutils]",
+      "paste": "Merge lines of files [coreutils]",
+      "pathchk": "Check whether file names are valid or portable [coreutils]",
+      "pinky": "Lightweight finger [coreutils]",
+      "pr": "Convert text files for printing [coreutils]",
+      "printenv": "Print all or part of environment [coreutils]",
+      "printf": "Format and print data [coreutils]",
+      "ptx": "Produce a permuted index of file contents [coreutils]",
+      "pwd": "Print name of current/working directory [coreutils]",
+      "readlink": "Print resolved symbolic links or canonical file names [coreutils]",
+      "realpath": "Print the resolved path [coreutils]",
+      "rm": "Remove files or directories [coreutils]",
+      "rmdir": "Remove empty directories [coreutils]",
+      "runcon": "Run command with specified security context [coreutils]",
+      "seq": "Print a sequence of numbers [coreutils]",
+      "sha1sum": "Compute and check SHA1 message digest [coreutils]",
+      "sha224sum": "Compute and check SHA224 message digest [coreutils]",
+      "sha256sum": "Compute and check SHA256 message digest [coreutils]",
+      "sha384sum": "Compute and check SHA384 message digest [coreutils]",
+      "sha512sum": "Compute and check SHA512 message digest [coreutils]",
+      "shred": "Overwrite a file to hide its contents, and optionally delete it [coreutils]",
+      "shuf": "Generate random permutations [coreutils]",
+      "sleep": "Delay for a specified amount of time [coreutils]",
+      "sort": "Sort lines of text files [coreutils]",
+      "split": "Split a file into pieces [coreutils]",
+      "stat": "Display file or file system status [coreutils]",
+      "stdbuf": "Run COMMAND, with modified buffering operations for its standard streams [coreutils]",
+      "stty": "Change and print terminal line settings [coreutils]",
+      "sum": "Checksum and count the blocks in a file [coreutils]",
+      "sync": "Synchronize cached writes to persistent storage [coreutils]",
+      "tac": "Concatenate and print files in reverse [coreutils]",
+      "tail": "Output the last part of files [coreutils]",
+      "tee": "Read from standard input and write to standard output and files [coreutils]",
+      "test": "Check file types and compare values [coreutils]",
+      "timeout": "Run a command with a time limit [coreutils]",
+      "touch": "Change file timestamps [coreutils]",
+      "tr": "Translate or Delete characters [coreutils]",
+      "true": "Do nothing, successfully [coreutils]",
+      "truncate": "Shrink or extend the size of a file to the specified size [coreutils]",
+      "tsort": "Perform topological sort [coreutils]",
+      "tty": "Print the file name of the terminal connected to standard input [coreutils]",
+      "uname": "Print system information [coreutils]",
+      "unexpand": "Convert spaces to tabs [coreutils]",
+      "uniq": "Report or omit repeated lines [coreutils]",
+      "unlink": "Call the unlink function to remove the specified file [coreutils]",
+      "uptime": "Display the time since the last boot [coreutils]",
+      "users": "Print the user names of users currently logged in to the current host [coreutils]",
+      "vdir": "List directory contents [coreutils]",
+      "wc": "Print newline, word, and byte counts for each file [coreutils]",
+      "who": "Show who is logged on [coreutils]",
+      "whoami": "Print effective user name [coreutils]",
+      "yes": "Output a string repeatedly until killed [coreutils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "coreutils"
+      ],
+      "archlinux": {
+        "aur": [
+          "coreutils-git"
+        ]
+      },
+      "debian": [
+        "coreutils"
+      ],
+      "gnuguix": [
+        "coreutils"
+      ],
+      "homebrew": [
+        "coreutils"
+      ],
+      "nixpkgs": [
+        "coreutils"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/coreutils/static.standalone.source.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/coreutils/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git TAG). Check/Report @ https://github.com/coreutils/coreutils",
+      "This is the standalone version i.e all progs are built individually"
+    ],
+    "provides": [
+      "arch",
+      "b2sum",
+      "base32",
+      "base64",
+      "basename",
+      "basenc",
+      "cat",
+      "chcon",
+      "chgrp",
+      "chmod",
+      "chown",
+      "chroot",
+      "cksum",
+      "comm",
+      "cp",
+      "csplit",
+      "cut",
+      "date",
+      "dd",
+      "df",
+      "dir",
+      "dircolors",
+      "dirname",
+      "du",
+      "echo",
+      "env",
+      "expand",
+      "expr",
+      "factor",
+      "false",
+      "fmt",
+      "fold",
+      "ginstall",
+      "groups",
+      "head",
+      "hostid",
+      "hostname",
+      "id",
+      "install",
+      "join",
+      "kill",
+      "link",
+      "ln",
+      "logname",
+      "ls",
+      "make-prime-list",
+      "md5sum",
+      "mkdir",
+      "mkfifo",
+      "mknod",
+      "mktemp",
+      "mv",
+      "nice",
+      "nl",
+      "nohup",
+      "nproc",
+      "numfmt",
+      "od",
+      "paste",
+      "pathchk",
+      "pinky",
+      "pr",
+      "printenv",
+      "printf",
+      "ptx",
+      "pwd",
+      "readlink",
+      "realpath",
+      "rm",
+      "rmdir",
+      "runcon",
+      "seq",
+      "sha1sum",
+      "sha224sum",
+      "sha256sum",
+      "sha384sum",
+      "sha512sum",
+      "shred",
+      "shuf",
+      "sleep",
+      "sort",
+      "split",
+      "stat",
+      "stty",
+      "sum",
+      "sync",
+      "tac",
+      "tail",
+      "tee",
+      "test==[",
+      "test==[[",
+      "timeout",
+      "touch",
+      "tr",
+      "true",
+      "truncate",
+      "tsort",
+      "tty",
+      "uname",
+      "unexpand",
+      "uniq",
+      "unlink",
+      "uptime",
+      "users",
+      "vdir",
+      "wc",
+      "who",
+      "whoami",
+      "yes"
+    ],
+    "repology": [
+      "coreutils"
+    ],
+    "src_url": [
+      "https://github.com/coreutils/coreutils"
+    ],
+    "tag": [
+      "bootstrap",
+      "busybox",
+      "coreutils"
+    ],
+    "version": "9.6"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "coreutils",
+    "pkg_family": "coreutils",
     "pkg_id": "github.com.coreutils.coreutils.standalone.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/standalone-glibc/coreutils/coreutils",
-    "bincache": "ghcr.io/pkgforge/bincache/coreutils/standalone/b2sum",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils/standalone/glibc",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.standalone.glibc.yaml",
     "category": [
       "ConsoleOnly",
@@ -12450,298 +12742,6 @@
       "Built From Source (Latest Git TAG). Check/Report @ https://github.com/coreutils/coreutils",
       "This is the standalone version i.e all progs are built individually",
       "Statically Linked on Debian (GLIBC)"
-    ],
-    "provides": [
-      "arch",
-      "b2sum",
-      "base32",
-      "base64",
-      "basename",
-      "basenc",
-      "cat",
-      "chcon",
-      "chgrp",
-      "chmod",
-      "chown",
-      "chroot",
-      "cksum",
-      "comm",
-      "cp",
-      "csplit",
-      "cut",
-      "date",
-      "dd",
-      "df",
-      "dir",
-      "dircolors",
-      "dirname",
-      "du",
-      "echo",
-      "env",
-      "expand",
-      "expr",
-      "factor",
-      "false",
-      "fmt",
-      "fold",
-      "ginstall",
-      "groups",
-      "head",
-      "hostid",
-      "hostname",
-      "id",
-      "install",
-      "join",
-      "kill",
-      "link",
-      "ln",
-      "logname",
-      "ls",
-      "make-prime-list",
-      "md5sum",
-      "mkdir",
-      "mkfifo",
-      "mknod",
-      "mktemp",
-      "mv",
-      "nice",
-      "nl",
-      "nohup",
-      "nproc",
-      "numfmt",
-      "od",
-      "paste",
-      "pathchk",
-      "pinky",
-      "pr",
-      "printenv",
-      "printf",
-      "ptx",
-      "pwd",
-      "readlink",
-      "realpath",
-      "rm",
-      "rmdir",
-      "runcon",
-      "seq",
-      "sha1sum",
-      "sha224sum",
-      "sha256sum",
-      "sha384sum",
-      "sha512sum",
-      "shred",
-      "shuf",
-      "sleep",
-      "sort",
-      "split",
-      "stat",
-      "stty",
-      "sum",
-      "sync",
-      "tac",
-      "tail",
-      "tee",
-      "test==[",
-      "test==[[",
-      "timeout",
-      "touch",
-      "tr",
-      "true",
-      "truncate",
-      "tsort",
-      "tty",
-      "uname",
-      "unexpand",
-      "uniq",
-      "unlink",
-      "uptime",
-      "users",
-      "vdir",
-      "wc",
-      "who",
-      "whoami",
-      "yes"
-    ],
-    "repology": [
-      "coreutils"
-    ],
-    "src_url": [
-      "https://github.com/coreutils/coreutils"
-    ],
-    "tag": [
-      "bootstrap",
-      "busybox",
-      "coreutils"
-    ],
-    "version": "9.6"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "coreutils",
-    "pkg_family": "coreutils",
-    "pkg_id": "github.com.coreutils.coreutils.standalone",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-standalone/coreutils/coreutils",
-    "bincache": "ghcr.io/pkgforge/bincache/coreutils/standalone/basename",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.standalone.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "GNU File, Shell, and Text utilities",
-      "[": "Check file types and compare values [coreutils]",
-      "arch": "Print machine hardware name (same as uname -m) [coreutils]",
-      "b2sum": "Compute and check BLAKE2 message digest [coreutils]",
-      "base32": "Base32 encode/decode data and print to standard output [coreutils]",
-      "base64": "Base64 encode/decode data and print to standard output [coreutils]",
-      "basename": "Strip directory and suffix from filenames [coreutils]",
-      "basenc": "Encode/decode data and print to standard output [coreutils]",
-      "cat": "Concatenate files and print on the standard output [coreutils]",
-      "chcon": "Change file security context [coreutils]",
-      "chgrp": "Change group ownership [coreutils]",
-      "chmod": "Change file owner and group [coreutils]",
-      "chown": "Change file owner and group [coreutils]",
-      "chroot": "Run command or interactive shell with special root directory [coreutils]",
-      "cksum": "Compute and verify file checksums [coreutils]",
-      "comm": "Compare two sorted files line by line [coreutils]",
-      "coreutils": "Multicall Binary for Coreutils: GNU File, Shell, and Text utilities",
-      "cp": "Copy files and directories [coreutils]",
-      "csplit": "Split a file into sections determined by context lines [coreutils]",
-      "cut": "Remove sections from each line of files [coreutils]",
-      "date": "Print or set the system date and time [coreutils]",
-      "dd": "Convert and Copy a file [coreutils]",
-      "df": "Report file system space usage [coreutils]",
-      "dir": "List directory contents [coreutils]",
-      "dircolors": "Color setup for ls [coreutils]",
-      "dirname": "Strip last component from file name [coreutils]",
-      "du": "Estimate file space usage [coreutils]",
-      "echo": "Display a line of text [coreutils]",
-      "env": "Run a program in a modified environment [coreutils]",
-      "expand": "Convert tabs to spaces [coreutils]",
-      "expr": "Evaluate expressions [coreutils]",
-      "factor": "Factor numbers [coreutils]",
-      "false": "Do nothing, unsuccessfully [coreutils]",
-      "fmt": "Simple optimal text formatter [coreutils]",
-      "fold": "Wrap each input line to fit in specified width [coreutils]",
-      "ginstall": "Copy files and set attributes [coreutils]",
-      "groups": "Print the groups a user is in [coreutils]",
-      "head": "Output the first part of files [coreutils]",
-      "hostid": "Print the numeric identifier for the current host [coreutils]",
-      "hostname": "Display or set the system's host name [coreutils]",
-      "id": "Print real and effective user and group IDs [coreutils]",
-      "install": "Copy files and set attributes [coreutils]",
-      "join": "Join lines of two files on a common field [coreutils]",
-      "kill": "Send a signal (default: TERM) to given PIDs [coreutils]",
-      "link": "Call the link function to create a link to a file [coreutils]",
-      "ln": "Make links between files [coreutils]",
-      "logname": "Print user's login name [coreutils]",
-      "ls": "List directory contents [coreutils]",
-      "make-prime-list": "Generate Prime Numbers [coreutils]",
-      "md5sum": "Compute and check MD5 message digest [coreutils]",
-      "mkdir": "Make directories [coreutils]",
-      "mkfifo": "Make FIFOs (named pipes) [coreutils]",
-      "mknod": "Make block or character special files [coreutils]",
-      "mktemp": "Create a temporary file or directory [coreutils]",
-      "mv": "Move (rename) files [coreutils]",
-      "nice": "Run a program with modified scheduling priority [coreutils]",
-      "nl": "Number lines of files [coreutils]",
-      "nohup": "Run a command immune to hangups, with output to a non-tty [coreutils]",
-      "nproc": "Print the number of processing units available [coreutils]",
-      "numfmt": "Convert numbers from/to human-readable strings [coreutils]",
-      "od": "Dump files in octal and other formats [coreutils]",
-      "paste": "Merge lines of files [coreutils]",
-      "pathchk": "Check whether file names are valid or portable [coreutils]",
-      "pinky": "Lightweight finger [coreutils]",
-      "pr": "Convert text files for printing [coreutils]",
-      "printenv": "Print all or part of environment [coreutils]",
-      "printf": "Format and print data [coreutils]",
-      "ptx": "Produce a permuted index of file contents [coreutils]",
-      "pwd": "Print name of current/working directory [coreutils]",
-      "readlink": "Print resolved symbolic links or canonical file names [coreutils]",
-      "realpath": "Print the resolved path [coreutils]",
-      "rm": "Remove files or directories [coreutils]",
-      "rmdir": "Remove empty directories [coreutils]",
-      "runcon": "Run command with specified security context [coreutils]",
-      "seq": "Print a sequence of numbers [coreutils]",
-      "sha1sum": "Compute and check SHA1 message digest [coreutils]",
-      "sha224sum": "Compute and check SHA224 message digest [coreutils]",
-      "sha256sum": "Compute and check SHA256 message digest [coreutils]",
-      "sha384sum": "Compute and check SHA384 message digest [coreutils]",
-      "sha512sum": "Compute and check SHA512 message digest [coreutils]",
-      "shred": "Overwrite a file to hide its contents, and optionally delete it [coreutils]",
-      "shuf": "Generate random permutations [coreutils]",
-      "sleep": "Delay for a specified amount of time [coreutils]",
-      "sort": "Sort lines of text files [coreutils]",
-      "split": "Split a file into pieces [coreutils]",
-      "stat": "Display file or file system status [coreutils]",
-      "stdbuf": "Run COMMAND, with modified buffering operations for its standard streams [coreutils]",
-      "stty": "Change and print terminal line settings [coreutils]",
-      "sum": "Checksum and count the blocks in a file [coreutils]",
-      "sync": "Synchronize cached writes to persistent storage [coreutils]",
-      "tac": "Concatenate and print files in reverse [coreutils]",
-      "tail": "Output the last part of files [coreutils]",
-      "tee": "Read from standard input and write to standard output and files [coreutils]",
-      "test": "Check file types and compare values [coreutils]",
-      "timeout": "Run a command with a time limit [coreutils]",
-      "touch": "Change file timestamps [coreutils]",
-      "tr": "Translate or Delete characters [coreutils]",
-      "true": "Do nothing, successfully [coreutils]",
-      "truncate": "Shrink or extend the size of a file to the specified size [coreutils]",
-      "tsort": "Perform topological sort [coreutils]",
-      "tty": "Print the file name of the terminal connected to standard input [coreutils]",
-      "uname": "Print system information [coreutils]",
-      "unexpand": "Convert spaces to tabs [coreutils]",
-      "uniq": "Report or omit repeated lines [coreutils]",
-      "unlink": "Call the unlink function to remove the specified file [coreutils]",
-      "uptime": "Display the time since the last boot [coreutils]",
-      "users": "Print the user names of users currently logged in to the current host [coreutils]",
-      "vdir": "List directory contents [coreutils]",
-      "wc": "Print newline, word, and byte counts for each file [coreutils]",
-      "who": "Show who is logged on [coreutils]",
-      "whoami": "Print effective user name [coreutils]",
-      "yes": "Output a string repeatedly until killed [coreutils]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "coreutils"
-      ],
-      "archlinux": {
-        "aur": [
-          "coreutils-git"
-        ]
-      },
-      "debian": [
-        "coreutils"
-      ],
-      "gnuguix": [
-        "coreutils"
-      ],
-      "homebrew": [
-        "coreutils"
-      ],
-      "nixpkgs": [
-        "coreutils"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/coreutils/static.standalone.source.yaml",
-    "homepage": [
-      "https://www.gnu.org/software/coreutils/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git TAG). Check/Report @ https://github.com/coreutils/coreutils",
-      "This is the standalone version i.e all progs are built individually"
     ],
     "provides": [
       "arch",
@@ -28541,7 +28541,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-c8509df-250127T180041"
+    "version": "HEAD-8cade7b-250127T191356"
   },
   {
     "_disabled": "false",
@@ -33344,7 +33344,7 @@
       "nmap",
       "security"
     ],
-    "version": "HEAD-bca70db-250127T134232"
+    "version": "HEAD-2a19119-250127T205336"
   },
   {
     "_disabled": "false",
@@ -45919,7 +45919,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-bce05ec-250126T213028"
+    "version": "HEAD-bd9725c-250127T203937"
   },
   {
     "_disabled": "false",
@@ -49917,6 +49917,85 @@
     "pkg": "wezterm",
     "pkg_family": "wezterm",
     "pkg_id": "github.com.wez.wezterm",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wez-wezterm/wezterm/wezterm",
+    "app_id": "org.wezfurlong.wezterm",
+    "bincache": "ghcr.io/pkgforge/bincache/wezterm/official/generate-bidi",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wezterm/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A GPU-accelerated cross-platform terminal emulator and multiplexer",
+      "generate-bidi": "Generate Unicode Bidi [wezterm]",
+      "strip-ansi-escapes": "Filter ANSI [wezterm]",
+      "sync-color-schemes": "Sync color schemes between wezterm sessions [wezterm]",
+      "wezterm": "CLI and frontend to launch the Wezterm GUI [wezterm]",
+      "wezterm-mux-server": "Multiplex Server for Wezterm [wezterm]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "wezterm"
+      ],
+      "archlinux": {
+        "aur": [
+          "wezterm-git"
+        ],
+        "extra": [
+          "wezterm"
+        ]
+      },
+      "homebrew": [
+        "wezterm",
+        "wezterm@nightly"
+      ],
+      "nixpkgs": [
+        "wezterm"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wezterm/static.official.source.yaml",
+    "homepage": [
+      "https://wezfurlong.org/wezterm/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wez/wezterm",
+      "Only provides static binaries for server. Please use wezterm from 'pkgcache' for everything else"
+    ],
+    "provides": [
+      "generate-bidi",
+      "strip-ansi-escapes",
+      "sync-color-schemes",
+      "wezterm",
+      "wezterm-mux-server"
+    ],
+    "repology": [
+      "wezterm"
+    ],
+    "src_url": [
+      "https://github.com/wez/wezterm"
+    ],
+    "tag": [
+      "Terminal"
+    ],
+    "version": "HEAD-4bf0007-250124T154057"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wezterm",
+    "pkg_family": "wezterm",
+    "pkg_id": "github.com.wez.wezterm",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wez-wezterm/wezterm/wezterm",
     "app_id": "org.wezfurlong.wezterm",
@@ -50121,84 +50200,6 @@
       "Terminal"
     ],
     "version": "20240203.110809.5046fc22"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wezterm",
-    "pkg_family": "wezterm",
-    "pkg_id": "github.com.wez.wezterm",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wez-wezterm/wezterm/wezterm",
-    "app_id": "org.wezfurlong.wezterm",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wezterm/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "A GPU-accelerated cross-platform terminal emulator and multiplexer",
-      "generate-bidi": "Generate Unicode Bidi [wezterm]",
-      "strip-ansi-escapes": "Filter ANSI [wezterm]",
-      "sync-color-schemes": "Sync color schemes between wezterm sessions [wezterm]",
-      "wezterm": "CLI and frontend to launch the Wezterm GUI [wezterm]",
-      "wezterm-mux-server": "Multiplex Server for Wezterm [wezterm]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "wezterm"
-      ],
-      "archlinux": {
-        "aur": [
-          "wezterm-git"
-        ],
-        "extra": [
-          "wezterm"
-        ]
-      },
-      "homebrew": [
-        "wezterm",
-        "wezterm@nightly"
-      ],
-      "nixpkgs": [
-        "wezterm"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wezterm/static.official.source.yaml",
-    "homepage": [
-      "https://wezfurlong.org/wezterm/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wez/wezterm",
-      "Only provides static binaries for server. Please use wezterm from 'pkgcache' for everything else"
-    ],
-    "provides": [
-      "generate-bidi",
-      "strip-ansi-escapes",
-      "sync-color-schemes",
-      "wezterm",
-      "wezterm-mux-server"
-    ],
-    "repology": [
-      "wezterm"
-    ],
-    "src_url": [
-      "https://github.com/wez/wezterm"
-    ],
-    "tag": [
-      "Terminal"
-    ],
-    "version": "HEAD-4bf0007-250124T154057"
   },
   {
     "_disabled": "false",
@@ -51182,7 +51183,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-4913167-250127T191538"
+    "version": "HEAD-0bd8b8b-250127T215723"
   },
   {
     "_disabled": "false",
@@ -52063,7 +52064,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-3272fff-250128T030945"
+    "version": "HEAD-c061397-250128T043551"
   },
   {
     "_disabled": "false",
@@ -52857,7 +52858,7 @@
     "tag": [
       "security"
     ],
-    "version": "HEAD-00852fd-250127T105947"
+    "version": "HEAD-06df365-250127T130558"
   },
   {
     "_disabled": "false",

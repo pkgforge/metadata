@@ -4531,7 +4531,7 @@
       "bugbounty",
       "osint"
     ],
-    "version": "HEAD-65d41f6-250127T153235"
+    "version": "HEAD-81ce4b1-250127T160328"
   },
   {
     "_disabled": "false",
@@ -5052,7 +5052,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-5523680-250127T090347"
+    "version": "HEAD-3722824-250127T140105"
   },
   {
     "_disabled": "false",
@@ -6235,6 +6235,73 @@
       "container"
     ],
     "version": "HEAD-f8e47e8-250127T153958"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "netbird",
+    "pkg_family": "netbird",
+    "pkg_id": "github.com.netbirdio.netbird",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/netbirdio-netbird/netbird/netbird",
+    "bincache": "ghcr.io/pkgforge/bincache/netbird/official/netbird",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netbird/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "WireGuard-based mesh network",
+      "netbird": "Client for Netbird; A WireGuard-based mesh network",
+      "netbird-mgmt": "Management service for Netbird",
+      "netbird-relay": "Relay service for Netbird",
+      "netbird-signal": "Signal service for Netbird"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "netbird",
+          "netbird-bin"
+        ]
+      },
+      "nixpkgs": [
+        "netbird"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/netbird/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/netbirdio/netbird"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/netbirdio/netbird"
+    ],
+    "provides": [
+      "netbird",
+      "netbird-mgmt",
+      "netbird-relay",
+      "netbird-signal"
+    ],
+    "repology": [
+      "netbird"
+    ],
+    "src_url": [
+      "https://github.com/netbirdio/netbird"
+    ],
+    "tag": [
+      "mesh",
+      "wireguard"
+    ],
+    "version": "HEAD-5c05131-250127T135157"
   },
   {
     "_disabled": "false",
@@ -7657,6 +7724,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "rekor",
+    "pkg_family": "rekor",
+    "pkg_id": "github.com.sigstore.rekor",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sigstore-rekor/rekor/rekor",
+    "bincache": "ghcr.io/pkgforge/bincache/rekor/official/rekor-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rekor/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Software Supply Chain Transparency Log",
+    "distro_pkg": {
+      "alpine": [
+        "rekor"
+      ],
+      "archlinux": {
+        "aur": [
+          "rekor-git"
+        ],
+        "extra": [
+          "rekor"
+        ]
+      },
+      "debian": [
+        "rekor"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rekor/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sigstore/rekor"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sigstore/rekor"
+    ],
+    "provides": [
+      "rekor-cli",
+      "rekor-server"
+    ],
+    "repology": [
+      "rekor"
+    ],
+    "src_url": [
+      "https://github.com/sigstore/rekor"
+    ],
+    "tag": [
+      "provenance",
+      "security"
+    ],
+    "version": "HEAD-40f29ba-250127T135008"
+  },
+  {
+    "_disabled": "false",
     "pkg": "rescope",
     "pkg_family": "rescope",
     "pkg_id": "github.com.root4loot.rescope",
@@ -8354,7 +8485,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-c8ada7c-250127T115438"
+    "version": "HEAD-88ca955-250127T081428"
   },
   {
     "_disabled": "false",

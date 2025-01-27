@@ -198,67 +198,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "clamtk",
-    "pkg_family": "clamtk",
-    "pkg_id": "runimage.debian.clamtk",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/debian-clamtk/clamtk/clamtk",
-    "app_id": "com.gitlab.davem.ClamTk",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/clamtk/runimage.debian.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "GTK front-end for Clam Antivirus",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "clamtk"
-        ]
-      },
-      "debian": [
-        "clamtk"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/clamtk/runimage.debian.stable.yaml",
-    "homepage": [
-      "https://github.com/dave-theunsub/clamtk"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/clamtk/assets/default.png",
-    "license": [
-      "GPL"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This Package has been marked 'deprecaed': https://gitlab.com/dave_m/clamtk/-/issues/144",
-      "Built Using RunImage [debian]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "provides": [
-      "clamtk"
-    ],
-    "repology": [
-      "clamtk"
-    ],
-    "src_url": [
-      "https://github.com/dave-theunsub/clamtk",
-      "https://gitlab.com/dave_m/clamtk"
-    ],
-    "tag": [
-      "antivirus",
-      "security"
-    ],
-    "version": "6.07"
-  },
-  {
-    "_disabled": "false",
     "pkg": "discord",
     "pkg_family": "discord",
     "pkg_id": "nixpkgs.discord",
@@ -1015,6 +954,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "steam",
+    "pkg_family": "steam",
+    "pkg_id": "runimage.cachyos.steam",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-steam/steam/steam",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/steam/runimage.cachyos.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "A video game digital distribution service and storefront from Valve",
+    "distro_pkg": {
+      "archlinux": {
+        "multilib": [
+          "steam"
+        ]
+      },
+      "nixpkgs": [
+        "steam-unwrapped"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/steam/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://steamcommunity.com/linux",
+      "https://store.steampowered.com",
+      "https://github.com/ValveSoftware/steam-for-linux"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/steam/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/steam/runimage/cachyos",
+    "provides": [
+      "steam"
+    ],
+    "repology": [
+      "steam"
+    ],
+    "src_url": [
+      "https://store.steampowered.com"
+    ],
+    "tag": [
+      "Games"
+    ],
+    "version": "1.0.0.81"
+  },
+  {
+    "_disabled": "false",
     "pkg": "strawberry",
     "pkg_family": "strawberry",
     "pkg_id": "github.com.pkgforge-dev.strawberry-AppImage.stable",
@@ -1129,70 +1127,6 @@
     ],
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/VSCodium/vscodium"
-    ],
-    "provides": [
-      "vscodium==codium"
-    ],
-    "repology": [
-      "vscodium"
-    ],
-    "src_url": [
-      "https://github.com/VSCodium/vscodium"
-    ],
-    "tag": [
-      "code",
-      "editor",
-      "ide"
-    ],
-    "version": "1.96.4.25026"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "vscodium",
-    "pkg_family": "vscodium",
-    "pkg_id": "runimage.cachyos.steam",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-steam/vscodium/vscodium",
-    "app_id": "com.vscodium.codium",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/vscodium/runimage.cachyos.stable.yaml",
-    "category": [
-      "IDE"
-    ],
-    "description": "Visual Studio Code without MS branding/telemetry/licensing",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "vscodium",
-          "vscodium-bin",
-          "vscodium-electron",
-          "vscodium-electron-bin",
-          "vscodium-git"
-        ]
-      },
-      "nixpkgs": [
-        "vscodium"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/vscodium/runimage.cachyos.stable.yaml",
-    "homepage": [
-      "https://vscodium.com",
-      "https://github.com/VSCodium/vscodium"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/vscodium/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
     ],
     "provides": [
       "vscodium==codium"

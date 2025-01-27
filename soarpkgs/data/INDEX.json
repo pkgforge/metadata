@@ -10849,6 +10849,7 @@
       "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/clamtk/runimage/debian",
     "provides": [
       "clamtk"
     ],
@@ -16350,6 +16351,74 @@
       "dbus"
     ],
     "version": "1.14.10"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ddnet",
+    "pkg_family": "ddnet",
+    "pkg_id": "runimage.cachyos.ddnet",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-ddnet/ddnet/ddnet",
+    "app_id": "tw.ddnet.ddnet",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ddnet/runimage.cachyos.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Cooperative online platform game based on Teeworlds",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ddnet",
+          "ddnet-git"
+        ]
+      },
+      "debian": [
+        "ddnet"
+      ],
+      "homebrew": [
+        "ddnet"
+      ],
+      "nixpkgs": [
+        "ddnet",
+        "ddnet-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ddnet/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://ddnet.org",
+      "https://github.com/ddnet/ddnet"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/ddnet/assets/default.png",
+    "license": [
+      "CC-BY-SA-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ddnet/runimage/cachyos",
+    "provides": [
+      "ddnet=>DDNet",
+      "ddnet=>DDNet-server"
+    ],
+    "repology": [
+      "ddnet"
+    ],
+    "src_url": [
+      "https://github.com/ddnet/ddnet"
+    ],
+    "tag": [
+      "Game"
+    ],
+    "version": "18.9.1"
   },
   {
     "_disabled": "false",
@@ -48969,67 +49038,6 @@
     "_disabled": "false",
     "pkg": "vscodium",
     "pkg_family": "vscodium",
-    "pkg_id": "github.com.VSCodium.vscodium",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vscodium-vscodium/vscodium/vscodium",
-    "app_id": "com.vscodium.codium",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/vscodium/appimage.official.stable.yaml",
-    "category": [
-      "IDE"
-    ],
-    "description": "Visual Studio Code without MS branding/telemetry/licensing",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "vscodium",
-          "vscodium-bin",
-          "vscodium-electron",
-          "vscodium-electron-bin",
-          "vscodium-git"
-        ]
-      },
-      "nixpkgs": [
-        "vscodium"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/vscodium/appimage.official.stable.yaml",
-    "homepage": [
-      "https://vscodium.com",
-      "https://github.com/VSCodium/vscodium"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/vscodium/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/VSCodium/vscodium"
-    ],
-    "provides": [
-      "vscodium==codium"
-    ],
-    "repology": [
-      "vscodium"
-    ],
-    "src_url": [
-      "https://github.com/VSCodium/vscodium"
-    ],
-    "tag": [
-      "code",
-      "editor",
-      "ide"
-    ],
-    "version": "1.96.4.25026"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "vscodium",
-    "pkg_family": "vscodium",
     "pkg_id": "runimage.cachyos.steam",
     "pkg_type": "runimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-steam/vscodium/vscodium",
@@ -49073,6 +49081,68 @@
       "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
       "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
       "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/vscodium/runimage/cachyos",
+    "provides": [
+      "vscodium==codium"
+    ],
+    "repology": [
+      "vscodium"
+    ],
+    "src_url": [
+      "https://github.com/VSCodium/vscodium"
+    ],
+    "tag": [
+      "code",
+      "editor",
+      "ide"
+    ],
+    "version": "1.96.4.25026"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "vscodium",
+    "pkg_family": "vscodium",
+    "pkg_id": "github.com.VSCodium.vscodium",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vscodium-vscodium/vscodium/vscodium",
+    "app_id": "com.vscodium.codium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/vscodium/appimage.official.stable.yaml",
+    "category": [
+      "IDE"
+    ],
+    "description": "Visual Studio Code without MS branding/telemetry/licensing",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vscodium",
+          "vscodium-bin",
+          "vscodium-electron",
+          "vscodium-electron-bin",
+          "vscodium-git"
+        ]
+      },
+      "nixpkgs": [
+        "vscodium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/vscodium/appimage.official.stable.yaml",
+    "homepage": [
+      "https://vscodium.com",
+      "https://github.com/VSCodium/vscodium"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/vscodium/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/VSCodium/vscodium"
     ],
     "provides": [
       "vscodium==codium"

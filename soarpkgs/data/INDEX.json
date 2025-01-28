@@ -16129,7 +16129,7 @@
     "tag": [
       "devenv"
     ],
-    "version": "HEAD-073833a-250128T110640"
+    "version": "HEAD-5bd48fd-250128T183558"
   },
   {
     "_disabled": "false",
@@ -18118,9 +18118,94 @@
     "_disabled": "false",
     "pkg": "dropbear",
     "pkg_family": "dropbear",
+    "pkg_id": "github.com.mkj.dropbear.multicall",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dropbear-multicall/dropbear/dropbear",
+    "bincache": "ghcr.io/pkgforge/bincache/dropbear/multicall/dropbearmulti",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dropbear/static.multicall.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Lightweight Alternative to OpenSSH",
+      "dbclient": "Lightweight SSH client [dropbear]",
+      "dropbear": "Lightweight SSH server [dropbear]",
+      "dropbearconvert": "Convert between Dropbear and OpenSSH private key formats [dropbear]",
+      "dropbearkey": "Create private keys for the use with dropbear/dbclient [dropbear]",
+      "scp": "Secure remote copy [dropbear]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "dropbear"
+      ],
+      "archlinux": {
+        "aur": [
+          "dropbear-git"
+        ],
+        "extra": [
+          "dropbear"
+        ]
+      },
+      "debian": [
+        "dropbear"
+      ],
+      "gnuguix": [
+        "dropbear"
+      ],
+      "homebrew": [
+        "dropbear"
+      ],
+      "nixpkgs": [
+        "dropbear"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dropbear/static.multicall.source.yaml",
+    "homepage": [
+      "https://matt.ucc.asn.au/dropbear/dropbear.html"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mkj/dropbear",
+      "This is the multicall version i.e all progs are symlinked"
+    ],
+    "provides": [
+      "dropbearmulti=>dbclient",
+      "dropbearmulti=>dropbear",
+      "dropbearmulti=>dropbearconvert",
+      "dropbearmulti=>dropbearkey",
+      "dropbearmulti=>scp"
+    ],
+    "repology": [
+      "dropbear"
+    ],
+    "src_url": [
+      "https://github.com/mkj/dropbear"
+    ],
+    "tag": [
+      "openssh",
+      "ssh"
+    ],
+    "version": "HEAD-2ca81a8-250111T191352"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dropbear",
+    "pkg_family": "dropbear",
     "pkg_id": "github.com.mkj.dropbear.multicall.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/multicall-glibc/dropbear/dropbear",
+    "bincache": "ghcr.io/pkgforge/bincache/dropbear/multicall/glibc",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dropbear/static.multicall.glibc.yaml",
     "category": [
       "ConsoleOnly",
@@ -18202,10 +18287,11 @@
     "_disabled": "false",
     "pkg": "dropbear",
     "pkg_family": "dropbear",
-    "pkg_id": "github.com.mkj.dropbear.multicall",
+    "pkg_id": "github.com.mkj.dropbear.standalone",
     "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dropbear-multicall/dropbear/dropbear",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dropbear/static.multicall.source.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dropbear-standalone/dropbear/dropbear",
+    "bincache": "ghcr.io/pkgforge/bincache/dropbear/standalone/dbclient",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dropbear/static.standalone.source.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -18243,7 +18329,7 @@
         "dropbear"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dropbear/static.multicall.source.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dropbear/static.standalone.source.yaml",
     "homepage": [
       "https://matt.ucc.asn.au/dropbear/dropbear.html"
     ],
@@ -18260,14 +18346,14 @@
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mkj/dropbear",
-      "This is the multicall version i.e all progs are symlinked"
+      "This is the standalone version i.e all applets were built individually"
     ],
     "provides": [
-      "dropbearmulti=>dbclient",
-      "dropbearmulti=>dropbear",
-      "dropbearmulti=>dropbearconvert",
-      "dropbearmulti=>dropbearkey",
-      "dropbearmulti=>scp"
+      "dbclient",
+      "dropbear",
+      "dropbearconvert",
+      "dropbearkey",
+      "scp"
     ],
     "repology": [
       "dropbear"
@@ -18288,6 +18374,7 @@
     "pkg_id": "github.com.mkj.dropbear.standalone.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/standalone-glibc/dropbear/dropbear",
+    "bincache": "ghcr.io/pkgforge/bincache/dropbear/standalone/glibc",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dropbear/static.standalone.glibc.yaml",
     "category": [
       "ConsoleOnly",
@@ -18345,89 +18432,6 @@
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mkj/dropbear",
       "This is the standalone version i.e all applets were built individually",
       "Statically Linked on Debian (GLIBC)"
-    ],
-    "provides": [
-      "dbclient",
-      "dropbear",
-      "dropbearconvert",
-      "dropbearkey",
-      "scp"
-    ],
-    "repology": [
-      "dropbear"
-    ],
-    "src_url": [
-      "https://github.com/mkj/dropbear"
-    ],
-    "tag": [
-      "openssh",
-      "ssh"
-    ],
-    "version": "HEAD-2ca81a8-250111T191352"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "dropbear",
-    "pkg_family": "dropbear",
-    "pkg_id": "github.com.mkj.dropbear.standalone",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dropbear-standalone/dropbear/dropbear",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dropbear/static.standalone.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Lightweight Alternative to OpenSSH",
-      "dbclient": "Lightweight SSH client [dropbear]",
-      "dropbear": "Lightweight SSH server [dropbear]",
-      "dropbearconvert": "Convert between Dropbear and OpenSSH private key formats [dropbear]",
-      "dropbearkey": "Create private keys for the use with dropbear/dbclient [dropbear]",
-      "scp": "Secure remote copy [dropbear]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "dropbear"
-      ],
-      "archlinux": {
-        "aur": [
-          "dropbear-git"
-        ],
-        "extra": [
-          "dropbear"
-        ]
-      },
-      "debian": [
-        "dropbear"
-      ],
-      "gnuguix": [
-        "dropbear"
-      ],
-      "homebrew": [
-        "dropbear"
-      ],
-      "nixpkgs": [
-        "dropbear"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dropbear/static.standalone.source.yaml",
-    "homepage": [
-      "https://matt.ucc.asn.au/dropbear/dropbear.html"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Custom"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mkj/dropbear",
-      "This is the standalone version i.e all applets were built individually"
     ],
     "provides": [
       "dbclient",
@@ -22966,7 +22970,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-e8bfa91-250128T120312"
+    "version": "HEAD-ef8349e-250128T180501"
   },
   {
     "_disabled": "false",
@@ -26659,6 +26663,7 @@
     "pkg_id": "github.com.hetznercloud.cli",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hetznercloud-cli/hcloud/hcloud",
+    "bincache": "ghcr.io/pkgforge/bincache/hcloud/official/hcloud",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hcloud/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28213,6 +28218,7 @@
     "pkg_id": "github.com.darkhz.invidtui",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/darkhz-invidtui/invidtui/invidtui",
+    "bincache": "ghcr.io/pkgforge/bincache/invidtui/official/invidtui",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/invidtui/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -28805,6 +28811,7 @@
     "pkg_id": "github.com.ankitpokhrel.jira-cli",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jira-cli/jira-cli/jira-cli",
+    "bincache": "ghcr.io/pkgforge/bincache/jira-cli/official/jira-cli",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jira-cli/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -29029,6 +29036,7 @@
     "pkg_id": "github.com.jqlang.jq.stable",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jq-stable/jq/jq",
+    "bincache": "ghcr.io/pkgforge/bincache/jq/official/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jq/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -29259,7 +29267,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-90e7934-250128T014457"
+    "version": "HEAD-11fbbf6-250128T174212"
   },
   {
     "_disabled": "false",
@@ -33049,7 +33057,7 @@
     "tag": [
       "minifier"
     ],
-    "version": "HEAD-29557d5-250120T222117"
+    "version": "HEAD-2d27b5b-250128T181738"
   },
   {
     "_disabled": "false",
@@ -45405,7 +45413,7 @@
       "certificate",
       "sso"
     ],
-    "version": "HEAD-fba09a1-250127T092008"
+    "version": "HEAD-0bd0223-250128T095721"
   },
   {
     "_disabled": "false",

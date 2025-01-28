@@ -16,7 +16,7 @@
 416K   │ │ ├── FLATPAK_APPS_INFO.txt
 284K   │ │ ├── PPKG.json
 244K   │ │ ├── FLATPAK_POPULAR.json
-232K   │ │ ├── FLATPAK_TRENDING.json
+212K   │ │ ├── FLATPAK_TRENDING.json
  72K   │ │ ├── FLATPAK_APP_IDS.txt
  20K   │ │ ├── CATEGORY.json
 4.0K   │ │ └── CATEGORY.md
@@ -37,16 +37,16 @@
  12M   │ │ ├── aarch64-Linux.json
  10M   │ │ ├── x86_64-Linux.db
 9.9M   │ │ ├── aarch64-Linux.db
-816K   │ │ ├── x86_64-Linux.db.cba
-740K   │ │ ├── aarch64-Linux.db.cba
-724K   │ │ ├── x86_64-Linux.json.cba
-644K   │ │ ├── aarch64-Linux.json.cba
+812K   │ │ ├── x86_64-Linux.db.cba
+736K   │ │ ├── aarch64-Linux.db.cba
+728K   │ │ ├── x86_64-Linux.json.cba
+648K   │ │ ├── aarch64-Linux.json.cba
 568K   │ │ ├── x86_64-Linux.db.zstd
 552K   │ │ ├── x86_64-Linux.db.xz
 540K   │ │ ├── x86_64-Linux.json.xz
 516K   │ │ ├── aarch64-Linux.db.zstd
 504K   │ │ ├── x86_64-Linux.json.zstd
-500K   │ │ ├── aarch64-Linux.db.xz
+504K   │ │ ├── aarch64-Linux.db.xz
 488K   │ │ ├── aarch64-Linux.json.xz
 456K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
@@ -69,11 +69,11 @@
 6.1M   │ ├─┬ data
 1.5M   │ │ ├── INDEX.json
 1.1M   │ │ ├── BACKAGE.json
-788K   │ │ ├── pub_issues_binaries.txt
+784K   │ │ ├── pub_issues_binaries.txt
 756K   │ │ ├── INDEX.db
 320K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-300K   │ │ ├── pub_issues_packages.txt
 300K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+296K   │ │ ├── pub_issues_packages.txt
 216K   │ │ ├── INDEX.json.cba
 140K   │ │ ├── INDEX.json.xz
 140K   │ │ ├── GH_REPO.md

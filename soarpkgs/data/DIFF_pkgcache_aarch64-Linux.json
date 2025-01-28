@@ -521,6 +521,7 @@
       "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghex/runimage/alpine",
     "provides": [
       "ghex"
     ],
@@ -594,7 +595,6 @@
       "Built From Source using a Community Provided Script. Check/Report @ https://github.com/psadi/ghostty-appimage",
       "[PORTABLE] (Works on AnyLinux)"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghostty/appimage/psadi",
     "provides": [
       "ghostty"
     ],
@@ -610,13 +610,22 @@
     "version": "1.0.1"
   },
   {
-    "_disabled": "false",
+    "_disabled": "true",
+    "_disabled_reason": {
+      "broken": [
+        {
+          "date": "2025-01-14",
+          "reason": "Fails to create EGL Display"
+        }
+      ]
+    },
     "pkg": "ghostty",
     "pkg_family": "ghostty",
-    "pkg_id": "github.com.psadi.ghostty-appimage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/ghostty/ghostty",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty/appimage.psadi.stable.yaml",
+    "pkg_id": "nixpkgs.ghostty",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-ghostty/ghostty/ghostty",
+    "app_id": "com.mitchellh.ghostty",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty/nixappimage.nixpkgs.stable.yaml",
     "category": [
       "TerminalEmulator"
     ],
@@ -637,7 +646,7 @@
         "ghostty"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty/appimage.psadi.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty/nixappimage.nixpkgs.stable.yaml",
     "homepage": [
       "https://ghostty.org",
       "https://github.com/ghostty-org/ghostty"
@@ -650,12 +659,15 @@
       "MIT"
     ],
     "maintainer": [
-      "psadi (https://github.com/psadi)"
+      "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/psadi/ghostty-appimage"
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghostty/appimage/psadi",
     "provides": [
       "ghostty"
     ],
@@ -668,7 +680,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "v1.0.1+4"
+    "version": "1.0.1"
   },
   {
     "_disabled": "false",

@@ -37,16 +37,16 @@
  12M   │ │ ├── aarch64-Linux.json
  10M   │ │ ├── x86_64-Linux.db
 9.9M   │ │ ├── aarch64-Linux.db
-824K   │ │ ├── x86_64-Linux.db.cba
-744K   │ │ ├── aarch64-Linux.db.cba
-728K   │ │ ├── x86_64-Linux.json.cba
+816K   │ │ ├── x86_64-Linux.db.cba
+740K   │ │ ├── aarch64-Linux.db.cba
+724K   │ │ ├── x86_64-Linux.json.cba
 644K   │ │ ├── aarch64-Linux.json.cba
 568K   │ │ ├── x86_64-Linux.db.zstd
-556K   │ │ ├── x86_64-Linux.db.xz
+552K   │ │ ├── x86_64-Linux.db.xz
 540K   │ │ ├── x86_64-Linux.json.xz
 516K   │ │ ├── aarch64-Linux.db.zstd
 504K   │ │ ├── x86_64-Linux.json.zstd
-504K   │ │ ├── aarch64-Linux.db.xz
+500K   │ │ ├── aarch64-Linux.db.xz
 488K   │ │ ├── aarch64-Linux.json.xz
 456K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
@@ -71,9 +71,9 @@
 1.1M   │ │ ├── BACKAGE.json
 788K   │ │ ├── pub_issues_binaries.txt
 756K   │ │ ├── INDEX.db
-316K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+320K   │ │ ├── DIFF_bincache_aarch64-Linux.json
 300K   │ │ ├── pub_issues_packages.txt
-296K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+300K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 216K   │ │ ├── INDEX.json.cba
 140K   │ │ ├── INDEX.json.xz
 140K   │ │ ├── GH_REPO.md
@@ -81,7 +81,7 @@
 136K   │ │ ├── INDEX.db.cba
 112K   │ │ ├── INDEX.db.zstd
 104K   │ │ ├── INDEX.db.xz
- 40K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 44K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  32K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  28K   │ │ ├── URLS.txt
  28K   │ │ ├── GH_REPO_ARCHIVED.md
@@ -117,14 +117,14 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-1.3M   ├─┬ pkgcache
+1.2M   ├─┬ pkgcache
 1.1M   │ ├─┬ data
 348K   │ │ ├── x86_64-Linux.db
 312K   │ │ ├── x86_64-Linux.json
  96K   │ │ ├── aarch64-Linux.db
  84K   │ │ ├── aarch64-Linux.json
- 40K   │ │ ├── x86_64-Linux.db.cba
  36K   │ │ ├── x86_64-Linux.db.zstd
+ 36K   │ │ ├── x86_64-Linux.db.cba
  32K   │ │ ├── x86_64-Linux.json.zstd
  32K   │ │ ├── x86_64-Linux.json.xz
  32K   │ │ ├── x86_64-Linux.json.cba

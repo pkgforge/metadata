@@ -255,7 +255,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.75.168"
+    "version": "v1.75.169"
   },
   {
     "_disabled": "false",
@@ -381,6 +381,59 @@
       "network.web.browser"
     ],
     "version": "v1.74.50"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "cromite",
+    "pkg_family": "cromite",
+    "pkg_id": "github.com.pkgforge-dev.Cromite-AppImage",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cromite-appimage/cromite/cromite",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/cromite/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A Bromite fork with ad blocking and privacy enhancements",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "cromite-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/cromite/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://cromite.org",
+      "https://github.com/uazo/cromite"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Cromite-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/cromite/appimage/pkgforge-dev",
+    "provides": [
+      "cromite==cromite-browser"
+    ],
+    "repology": [
+      "cromite"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Cromite-AppImage"
+    ],
+    "tag": [
+      "bromite",
+      "browser"
+    ],
+    "version": "v132.0.6834.122"
   },
   {
     "_disabled": "false",
@@ -768,6 +821,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fdm",
+    "pkg_family": "fdm",
+    "pkg_id": "runimage.debian.fdm",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/debian-fdm/fdm/fdm",
+    "app_id": "org.freedownloadmanager.Manager",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fdm/runimage.debian.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A powerful modern download accelerator and organizer",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "freedownloadmanager"
+        ]
+      },
+      "homebrew": [
+        "free-download-manager"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fdm/runimage.debian.stable.yaml",
+    "homepage": [
+      "https://www.freedownloadmanager.org"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/fdm/assets/default.png",
+    "license": [
+      "freeware"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [debian]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "fdm==freedownloadmanager",
+      "fdm==free-download-manager"
+    ],
+    "repology": [
+      "freedownloadmanager"
+    ],
+    "src_url": [
+      "https://www.freedownloadmanager.org/download-fdm-for-linux.htm"
+    ],
+    "tag": [
+      "downloader",
+      "download-manager"
+    ],
+    "version": "6.25.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ffdec",
     "pkg_family": "ffdec",
     "pkg_id": "runimage.cachyos.ffdec",
@@ -936,6 +1048,79 @@
       "game"
     ],
     "version": "v0.5.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ghex",
+    "pkg_family": "ghex",
+    "pkg_id": "runimage.alpine.ghex",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-ghex/ghex/ghex",
+    "app_id": "org.gnome.GHex",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghex/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A simple Binary/Hex editor",
+    "distro_pkg": {
+      "alpine": [
+        "ghex"
+      ],
+      "archlinux": {
+        "extra": [
+          "ghex"
+        ]
+      },
+      "debian": [
+        "ghex"
+      ],
+      "gnuguix": [
+        "ghex"
+      ],
+      "homebrew": [
+        "ghex"
+      ],
+      "nixpkgs": [
+        "ghex",
+        "gnome.ghex"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghex/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://wiki.gnome.org/Apps/Ghex"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/ghex/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "ghex"
+    ],
+    "repology": [
+      "ghex"
+    ],
+    "src_url": [
+      "https://gitlab.gnome.org/GNOME/ghex"
+    ],
+    "tag": [
+      "binary",
+      "editor",
+      "hex"
+    ],
+    "version": "46.0"
   },
   {
     "_disabled": "true",

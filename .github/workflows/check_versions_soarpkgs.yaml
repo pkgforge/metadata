@@ -44,6 +44,7 @@ jobs:
           ##Check
           if [[ $(sed '/^[[:space:]]*$/d' "${SYSTMP}/VERSION.md" | wc -l) -gt 8 ]]; then
             echo "HAS_RESULTS=TRUE" >> "${GITHUB_ENV}"
+          else
             echo -e "\n\n" && cat "${SYSTMP}/VERSION.md" && echo -e "\n\n"
           fi
         continue-on-error: true

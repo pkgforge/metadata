@@ -40,9 +40,15 @@ jobs:
           echo -e '---\n' >> "${SYSTMP}/VERSION.md"
           echo -e '- ### Only Words' >> "${SYSTMP}/VERSION.md"
           jq -r '["| Package | Version |", "|----------|----------|"] + (map(select(type == "object" and (.version | type == "string" and test("^[a-zA-Z-_+.]+$")) and ._disabled == "false")) | map("| [\(.pkg)](\(.build_script)) | \(.version) |")) | .[]' "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json" | awk '!seen[$0]++' >> "${SYSTMP}/VERSION.md"
+          echo -e '---\n' >> "${SYSTMP}/VERSION.md"
+          ##Check
+          if [[ $(sed '/^[[:space:]]*$/d' "${SYSTMP}/VERSION.md" | wc -l) -gt 8 ]]; then
+            echo "HAS_RESULTS=TRUE" >> "${GITHUB_ENV}"
+          fi
         continue-on-error: true
 
       - name: Create Issue From File
+        if: env.HAS_RESULTS == 'TRUE'
         uses: peter-evans/create-issue-from-file@v5
         with:
           title: SBUILDS (Empty/Non-Existent/Weird Versions)

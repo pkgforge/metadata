@@ -6,6 +6,9 @@ const commonDescriptions = {
     // bincache
     '/bincache': "<a href='https://docs.pkgforge.dev/repositories/bincache/metadata'>🧬 JSON Metadata For BinCache</a>",
     '/bincache/logs': "<a href='https://docs.pkgforge.dev/repositories/bincache/security'>🗃️ XZ Compressed CICD Log Archives 🗒️</a>",
+    '/bincache/gpg.pub': "🔑 Public Signing Key (GPG)",
+    '/bincache/minisign.pub': "🔑 Public Signing Key (MiniSign)",
+    '/bincache/rsa.pub': "🔑 Public Signing Key (RSA)",
     //aarch64-Linux
     '/bincache/aarch64-Linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (aarch64-Linux)",
     '/bincache/aarch64-linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (aarch64-Linux)",
@@ -92,6 +95,9 @@ const commonDescriptions = {
     // pkgcache
     '/pkgcache': "<a href='https://docs.pkgforge.dev/repositories/pkgcache/metadata'>🧬 JSON Metadata For PkgCache</a>",
     '/pkgcache/logs': "<a href='https://docs.pkgforge.dev/repositories/pkgcache/security'>🗃️ XZ Compressed CICD Log Archives 🗒️</a>",
+    '/pkgcache/gpg.pub': "🔑 Public Signing Key (GPG)",
+    '/pkgcache/minisign.pub': "🔑 Public Signing Key (MiniSign)",
+    '/pkgcache/rsa.pub': "🔑 Public Signing Key (RSA)",
     //aarch64-Linux
     '/pkgcache/aarch64-Linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (aarch64-Linux)",
     '/pkgcache/aarch64-linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (aarch64-Linux)",
@@ -156,6 +162,9 @@ const commonDescriptions = {
     '/pkgcache/logs/x86_64-linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (x86_64-Linux)",
     // soarpkgs
     '/soarpkgs': "<a href='https://docs.pkgforge.dev/repositories/soarpkgs/metadata'>🧬 JSON Metadata For soarpkgs</a>",
+    '/soarpkgs/gpg.pub': "🔑 Public Signing Key (GPG)",
+    '/soarpkgs/minisign.pub': "🔑 Public Signing Key (MiniSign)",
+    '/soarpkgs/rsa.pub': "🔑 Public Signing Key (RSA)",
     '/soarpkgs/INDEX.db': "🗃️ SQLITE DB For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
     '/soarpkgs/INDEX.db.bsum': "🔐 B3SUM (ALL)",
     '/soarpkgs/INDEX.db.cba': "🗃️ Compressed Bita SQLITE DB (ALL)",

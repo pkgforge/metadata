@@ -5795,7 +5795,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.76.44"
+    "version": "v1.76.45"
   },
   {
     "_disabled": "false",
@@ -16383,7 +16383,7 @@
       "ci-cd",
       "container"
     ],
-    "version": "v0.15.2"
+    "version": "v0.15.3"
   },
   {
     "_disabled": "false",
@@ -24950,7 +24950,7 @@
       "git",
       "tui"
     ],
-    "version": "HEAD-232ad89-250127T173623"
+    "version": "HEAD-50c6562-250129T173020"
   },
   {
     "_disabled": "false",
@@ -31322,6 +31322,7 @@
     "pkg_id": "github.com.messense.lddtree-rs",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/lddtree-rs/lddtree/lddtree",
+    "bincache": "ghcr.io/pkgforge/bincache/lddtree/official/lddtree",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lddtree/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -31675,70 +31676,10 @@
     "_disabled": "false",
     "pkg": "libtree",
     "pkg_family": "libtree",
-    "pkg_id": "nixpkgs.libtree",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-libtree/libtree/libtree",
-    "bincache": "ghcr.io/pkgforge/bincache/libtree/nixpkgs/libtree",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/libtree/static.nixpkgs.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Tree ldd with an option to bundle dependencies into a single folder",
-    "distro_pkg": {
-      "alpine": [
-        "libtree"
-      ],
-      "archlinux": {
-        "aur": [
-          "libtree",
-          "libtree-bin",
-          "libtree-git"
-        ]
-      },
-      "debian": [
-        "libtree"
-      ],
-      "nixpkgs": [
-        "libtree"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/libtree/static.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://github.com/haampie/libtree"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
-    ],
-    "repology": [
-      "libtree-ldd"
-    ],
-    "src_url": [
-      "https://github.com/haampie/libtree"
-    ],
-    "tag": [
-      "ldd"
-    ],
-    "version": "3.1.1"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "libtree",
-    "pkg_family": "libtree",
     "pkg_id": "github.com.haampi.libtree",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/haampi-libtree/libtree/libtree",
+    "bincache": "ghcr.io/pkgforge/bincache/libtree/official/libtree",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/libtree/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -31797,6 +31738,67 @@
       "ldd"
     ],
     "version": "HEAD-95d8992-240621T145349"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libtree",
+    "pkg_family": "libtree",
+    "pkg_id": "nixpkgs.libtree",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-libtree/libtree/libtree",
+    "bincache": "ghcr.io/pkgforge/bincache/libtree/nixpkgs/libtree",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/libtree/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tree ldd with an option to bundle dependencies into a single folder",
+    "distro_pkg": {
+      "alpine": [
+        "libtree"
+      ],
+      "archlinux": {
+        "aur": [
+          "libtree",
+          "libtree-bin",
+          "libtree-git"
+        ]
+      },
+      "debian": [
+        "libtree"
+      ],
+      "nixpkgs": [
+        "libtree"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/libtree/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://github.com/haampie/libtree"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "repology": [
+      "libtree-ldd"
+    ],
+    "src_url": [
+      "https://github.com/haampie/libtree"
+    ],
+    "tag": [
+      "ldd"
+    ],
+    "version": "3.1.1"
   },
   {
     "_disabled": "false",
@@ -33621,7 +33623,7 @@
     "tag": [
       "text-editor"
     ],
-    "version": "HEAD-dc18642-250128T210405"
+    "version": "HEAD-5ee7fb6-250129T171353"
   },
   {
     "_disabled": "false",
@@ -36435,7 +36437,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-aa62de7-250129T100637"
+    "version": "HEAD-cce12ef-250129T111612"
   },
   {
     "_disabled": "false",
@@ -37019,6 +37021,102 @@
       "nuclei"
     ],
     "version": "HEAD-eb07fa4-230523T134436"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "openssh",
+    "pkg_family": "openssh",
+    "pkg_id": "nixpkgs.openssh",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-openssh/openssh/openssh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/openssh/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities and servers for secure shell connections",
+      "scp": "OpenSSH secure file copy [openssh]",
+      "sftp": "OpenSSH secure file transfer [openssh]",
+      "sftp-server": "OpenSSH SFTP server subsystem [openssh]",
+      "ssh": "OpenSSH remote login client [openssh]",
+      "ssh-add": "Add private key identities to the OpenSSH authentication agent [openssh]",
+      "ssh-agent": "OpenSSH authentication agent [openssh]",
+      "ssh-copy-id": "Use locally available keys to authorize logins on a remote machine [openssh]",
+      "sshd": "OpenSSH daemon [openssh]",
+      "sshd-session": "OpenSSH Privilege Separation [openssh]",
+      "ssh-keygen": "OpenSSH authentication key utility [openssh]",
+      "ssh-keyscan": "Gather SSH public keys from servers [openssh]",
+      "ssh-keysign": "OpenSSH helper for host-based authentication [openssh]",
+      "ssh-pkcs11-helper": "OpenSSH helper for PKCS#11 support [openssh]",
+      "ssh-sk-helper": "OpenSSH helper for FIDO authenticator support [openssh]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "openssh"
+      ],
+      "archlinux": {
+        "aur": [
+          "openssh-git"
+        ]
+      },
+      "debian": [
+        "openssh"
+      ],
+      "gnuguix": [
+        "openssh"
+      ],
+      "homebrew": [
+        "openssh"
+      ],
+      "nixpkgs": [
+        "openssh"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/openssh/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.openssh.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "scp",
+      "sftp",
+      "sftp-server",
+      "ssh",
+      "ssh-add",
+      "ssh-agent",
+      "ssh-copy-id",
+      "sshd",
+      "sshd-session",
+      "ssh-keygen",
+      "ssh-keyscan",
+      "ssh-keysign",
+      "ssh-pkcs11-helper",
+      "ssh-sk-helper"
+    ],
+    "repology": [
+      "openssh"
+    ],
+    "src_url": [
+      "https://github.com/openssh/openssh-portable"
+    ],
+    "tag": [
+      "ssh"
+    ],
+    "version": "9.9p1"
   },
   {
     "_disabled": "false",
@@ -38593,6 +38691,7 @@
     "pkg_id": "github.com.mrusme.planor",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mrusme-planor/planor/planor",
+    "bincache": "ghcr.io/pkgforge/bincache/planor/official/planor",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/planor/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -41223,7 +41322,7 @@
     "tag": [
       "linter"
     ],
-    "version": "HEAD-5f01efa-250129T143600"
+    "version": "HEAD-4bd6fba-250129T172422"
   },
   {
     "_disabled": "false",
@@ -41336,6 +41435,7 @@
     "pkg_id": "github.com.zatrazz.rldd",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zatrazz-rldd/rldd/rldd",
+    "bincache": "ghcr.io/pkgforge/bincache/rldd/official/rldd",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rldd/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -47610,7 +47710,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-52f88f7-250129T154805"
+    "version": "HEAD-b60f6b8-250129T104745"
   },
   {
     "_disabled": "false",

@@ -4587,7 +4587,7 @@
       "security",
       "static-analysis"
     ],
-    "version": "HEAD-a452532-250122T155001"
+    "version": "HEAD-dc8f119-250129T162420"
   },
   {
     "_disabled": "false",
@@ -14439,7 +14439,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-64476fd-250129T115649"
+    "version": "HEAD-92de53c-250129T161515"
   },
   {
     "_disabled": "false",
@@ -14756,7 +14756,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-64476fd-250129T115649"
+    "version": "HEAD-92de53c-250129T161515"
   },
   {
     "_disabled": "false",
@@ -31317,6 +31317,49 @@
   },
   {
     "_disabled": "false",
+    "pkg": "lddtree",
+    "pkg_family": "lddtree",
+    "pkg_id": "github.com.messense.lddtree-rs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/lddtree-rs/lddtree/lddtree",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lddtree/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Read the ELF dependency tree",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lddtree/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/messense/lddtree-rs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/messense/lddtree-rs"
+    ],
+    "provides": [
+      "lddtree"
+    ],
+    "src_url": [
+      "https://github.com/messense/lddtree-rs"
+    ],
+    "tag": [
+      "elf",
+      "ldd"
+    ],
+    "version": "HEAD-1dde220-241130T105315"
+  },
+  {
+    "_disabled": "false",
     "pkg": "less",
     "pkg_family": "less",
     "pkg_id": "nixpkgs.less",
@@ -31688,6 +31731,72 @@
       "ldd"
     ],
     "version": "3.1.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libtree",
+    "pkg_family": "libtree",
+    "pkg_id": "github.com.haampi.libtree",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/haampi-libtree/libtree/libtree",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/libtree/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tree ldd with an option to bundle dependencies into a single folder",
+    "distro_pkg": {
+      "alpine": [
+        "libtree"
+      ],
+      "archlinux": {
+        "aur": [
+          "libtree",
+          "libtree-bin",
+          "libtree-git"
+        ]
+      },
+      "debian": [
+        "libtree"
+      ],
+      "gnuguix": [
+        "libtree"
+      ],
+      "nixpkgs": [
+        "libtree"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/libtree/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/haampie/libtree"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/haampie/libtree"
+    ],
+    "provides": [
+      "libtree"
+    ],
+    "repology": [
+      "libtree"
+    ],
+    "src_url": [
+      "https://github.com/haampie/libtree"
+    ],
+    "tag": [
+      "ldd"
+    ],
+    "version": "HEAD-95d8992-240621T145349"
   },
   {
     "_disabled": "false",
@@ -34223,7 +34332,7 @@
       "Video",
       "Video/Utilities"
     ],
-    "version": "v0.39.0-625-gdf3872e318"
+    "version": "v0.39.0-699-g694817121a"
   },
   {
     "_disabled": "false",
@@ -38484,14 +38593,13 @@
     "pkg_id": "github.com.mrusme.planor",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mrusme-planor/planor/planor",
-    "bincache": "ghcr.io/pkgforge/bincache/planor/official/planor",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/planor/static.official.stable.yaml",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/planor/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
     "description": "TUI client for cloud services (AWS, Vultr, Heroku, Render.com, Fleek & More)",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/planor/static.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/planor/static.official.source.yaml",
     "homepage": [
       "https://github.com/mrusme/planor"
     ],
@@ -39944,6 +40052,129 @@
   },
   {
     "_disabled": "false",
+    "pkg": "qemu-user",
+    "pkg_family": "qemu-user",
+    "pkg_id": "github.com.ziglang.qemu-static",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qemu-static/qemu-user/qemu-user",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qemu-user/static.ziglang.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "QEMU user mode Emulation & Virtualization binaries",
+      "qemu-aarch64": "Simulate a 64-bit Arm machine [qemu-user]",
+      "qemu-aarch64_be": "Simulate a 64-bit big-endian Arm machine [qemu-user]",
+      "qemu-alpha": "Simulate a DEC Alpha machine [qemu-user]",
+      "qemu-arm": "Simulate a 32-bit Arm machine [qemu-user]",
+      "qemu-armeb": "Simulate a 32-bit big-endian Arm machine [qemu-user]",
+      "qemu-cris": "Simulate a CRIS (Code Reduced Instruction Set) machine [qemu-user]",
+      "qemu-hexagon": "Simulate a Qualcomm Hexagon DSP [qemu-user]",
+      "qemu-hppa": "Simulate a HP PA-RISC machine [qemu-user]",
+      "qemu-i386": "Simulate a 32-bit x86 machine [qemu-user]",
+      "qemu-loongarch64": "Simulate a 64-bit LoongArch machine [qemu-user]",
+      "qemu-m68k": "Simulate a Motorola 68000 series machine [qemu-user]",
+      "qemu-microblaze": "Simulate a Xilinx MicroBlaze big-endian machine [qemu-user]",
+      "qemu-microblazeel": "Simulate a Xilinx MicroBlaze little-endian machine [qemu-user]",
+      "qemu-mips": "Simulate a 32-bit big-endian MIPS machine [qemu-user]",
+      "qemu-mips64": "Simulate a 64-bit big-endian MIPS machin [qemu-user]",
+      "qemu-mips64el": "Simulate a 64-bit little-endian MIPS machine [qemu-user]",
+      "qemu-mipsel": "Simulate a 32-bit little-endian MIPS machine [qemu-user]",
+      "qemu-mipsn32": "Simulate a 32-bit big-endian MIPS machine with N32 ABI [qemu-user]",
+      "qemu-mipsn32el": "Simulate a 32-bit little-endian MIPS machine with N32 ABI [qemu-user]",
+      "qemu-nios2": "Simulate an Altera Nios II machine [qemu-user]",
+      "qemu-or1k": "Simulate an OpenRISC 1000 machine [qemu-user]",
+      "qemu-ppc": "Simulate a 32-bit PowerPC machine [qemu-user]",
+      "qemu-ppc64": "Simulate a 64-bit big-endian PowerPC machine [qemu-user]",
+      "qemu-ppc64le": "Simulate a 64-bit little-endian PowerPC machine [qemu-user]",
+      "qemu-riscv32": "Simulate a 32-bit RISC-V machine [qemu-user]",
+      "qemu-riscv64": "Simulate a 64-bit RISC-V machine [qemu-user]",
+      "qemu-s390x": "Simulate an IBM System z machine [qemu-user]",
+      "qemu-sh4": "Simulate a SuperH SH-4 little-endian machine [qemu-user]",
+      "qemu-sh4eb": "Simulate a SuperH SH-4 big-endian machine [qemu-user]",
+      "qemu-sparc": "Simulate a 32-bit SPARC machine [qemu-user]",
+      "qemu-sparc32plus": "Simulate a 32-bit SPARC V8+ machine [qemu-user]",
+      "qemu-sparc64": "Simulate a 64-bit SPARC machine [qemu-user]",
+      "qemu-x86_64": "Simulate a 64-bit x86 machine [qemu-user]",
+      "qemu-xtensa": "Simulate a Tensilica Xtensa little-endian machine [qemu-user]",
+      "qemu-xtensaeb": "Simulate a Tensilica Xtensa big-endian machine [qemu-user]"
+    },
+    "distro_pkg": {
+      "nixpkgs": [
+        "qemu-user"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qemu-user/static.ziglang.stable.yaml",
+    "homepage": [
+      "https://www.qemu.org",
+      "https://gitlab.com/qemu-project/qemu",
+      "https://github.com/qemu/qemu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source using a Community Provided Script. Check/Report @ https://github.com/ziglang/qemu-static"
+    ],
+    "provides": [
+      "qemu-aarch64==qemu-aarch64-static",
+      "qemu-aarch64_be==qemu-aarch64_be-static",
+      "qemu-alpha==qemu-alpha-static",
+      "qemu-arm==qemu-arm-static",
+      "qemu-armeb==qemu-armeb-static",
+      "qemu-hexagon==qemu-hexagon-static",
+      "qemu-hppa==qemu-hppa-static",
+      "qemu-i386==qemu-i386-static",
+      "qemu-loongarch64==qemu-loongarch64-static",
+      "qemu-m68k==qemu-m68k-static",
+      "qemu-microblaze==qemu-microblaze-static",
+      "qemu-microblazeel==qemu-microblazeel-static",
+      "qemu-mips==qemu-mips-static",
+      "qemu-mips64==qemu-mips64-static",
+      "qemu-mips64el==qemu-mips64el-static",
+      "qemu-mipsel==qemu-mipsel-static",
+      "qemu-mipsn32==qemu-mipsn32-static",
+      "qemu-mipsn32el==qemu-mipsn32el-static",
+      "qemu-or1k==qemu-or1k-static",
+      "qemu-ppc==qemu-ppc-static",
+      "qemu-ppc64==qemu-ppc64-static",
+      "qemu-ppc64le==qemu-ppc64le-static",
+      "qemu-riscv32==qemu-riscv32-static",
+      "qemu-riscv64==qemu-riscv64-static",
+      "qemu-s390x==qemu-s390x-static",
+      "qemu-sh4==qemu-sh4-static",
+      "qemu-sh4eb==qemu-sh4eb-static",
+      "qemu-sparc==qemu-sparc-static",
+      "qemu-sparc32plus==qemu-sparc32plus-static",
+      "qemu-sparc64==qemu-sparc64-static",
+      "qemu-x86_64==qemu-x86_64-static",
+      "qemu-xtensa==qemu-xtensa-static",
+      "qemu-xtensaeb==qemu-xtensaeb-static"
+    ],
+    "repology": [
+      "qemu-user"
+    ],
+    "src_url": [
+      "https://github.com/ziglang/qemu-static"
+    ],
+    "tag": [
+      "emulation",
+      "qemu",
+      "virtualization"
+    ],
+    "version": "9.2.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "qsreplace",
     "pkg_family": "qsreplace",
     "pkg_id": "github.com.tomnomnom.qsreplace",
@@ -41097,6 +41328,49 @@
       "regex"
     ],
     "version": "HEAD-e2362d4-250125T142700"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "rldd",
+    "pkg_family": "rldd",
+    "pkg_id": "github.com.zatrazz.rldd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zatrazz-rldd/rldd/rldd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rldd/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Print Shared Object Dependencies",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rldd/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/zatrazz/rldd"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/zatrazz/rldd"
+    ],
+    "provides": [
+      "rldd"
+    ],
+    "src_url": [
+      "https://github.com/zatrazz/rldd"
+    ],
+    "tag": [
+      "elf",
+      "ldd"
+    ],
+    "version": "HEAD-79a987f-240529T094104"
   },
   {
     "_disabled": "false",
@@ -44523,7 +44797,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-47cb958-250129T115105"
+    "version": "HEAD-5c138d3-250129T075016"
   },
   {
     "_disabled": "false",
@@ -47336,7 +47610,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-b406f20-250129T073550"
+    "version": "HEAD-52f88f7-250129T154805"
   },
   {
     "_disabled": "false",
@@ -48890,7 +49164,7 @@
       "secret",
       "security"
     ],
-    "version": "v3.88.2"
+    "version": "v3.88.3"
   },
   {
     "_disabled": "false",
@@ -49459,7 +49733,7 @@
       "busybox",
       "coreboot"
     ],
-    "version": "HEAD-521d764-250129T160601"
+    "version": "HEAD-118fbf1-250129T165331"
   },
   {
     "_disabled": "false",

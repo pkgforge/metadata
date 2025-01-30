@@ -14,7 +14,7 @@
 984K   │ │ ├── PPKG_RAW.json
 448K   │ │ ├── FLATPAK_APPS_INFO.json
 416K   │ │ ├── FLATPAK_APPS_INFO.txt
-284K   │ │ ├── PPKG.json
+288K   │ │ ├── PPKG.json
 244K   │ │ ├── FLATPAK_POPULAR.json
 228K   │ │ ├── FLATPAK_TRENDING.json
  72K   │ │ ├── FLATPAK_APP_IDS.txt
@@ -38,7 +38,7 @@
  11M   │ │ ├── x86_64-Linux.db
  10M   │ │ ├── aarch64-Linux.db
 852K   │ │ ├── x86_64-Linux.db.cba
-816K   │ │ ├── aarch64-Linux.db.cba
+812K   │ │ ├── aarch64-Linux.db.cba
 764K   │ │ ├── x86_64-Linux.json.cba
 704K   │ │ ├── aarch64-Linux.json.cba
 592K   │ │ ├── x86_64-Linux.db.zstd

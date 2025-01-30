@@ -32,23 +32,23 @@
 4.0K   │   ├── fetch_nixpkgs.sh
 4.0K   │   └── fetch_alpine_git.sh
  58M   ├─┬ bincache
- 57M   │ ├─┬ data
+ 58M   │ ├─┬ data
  14M   │ │ ├── x86_64-Linux.json
  13M   │ │ ├── aarch64-Linux.json
  11M   │ │ ├── x86_64-Linux.db
  10M   │ │ ├── aarch64-Linux.db
 888K   │ │ ├── x86_64-Linux.db.cba
-820K   │ │ ├── aarch64-Linux.db.cba
+824K   │ │ ├── aarch64-Linux.db.cba
 796K   │ │ ├── x86_64-Linux.json.cba
-704K   │ │ ├── aarch64-Linux.json.cba
+708K   │ │ ├── aarch64-Linux.json.cba
 616K   │ │ ├── x86_64-Linux.db.zstd
 596K   │ │ ├── x86_64-Linux.db.xz
 580K   │ │ ├── x86_64-Linux.json.xz
-564K   │ │ ├── aarch64-Linux.db.zstd
-548K   │ │ ├── aarch64-Linux.db.xz
+568K   │ │ ├── aarch64-Linux.db.zstd
+552K   │ │ ├── aarch64-Linux.db.xz
 544K   │ │ ├── x86_64-Linux.json.zstd
 536K   │ │ ├── aarch64-Linux.json.xz
-500K   │ │ ├── aarch64-Linux.json.zstd
+504K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum

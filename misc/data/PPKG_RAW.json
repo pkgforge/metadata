@@ -55,23 +55,6 @@
     "dotweak": "__check_mach_o_files() {\n    :\n}\n\ncd lib/pkgconfig\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    # https://github.com/abseil/abseil-cpp/issues/1408\n    gsed -i '/^Libs: /s|$| -framework CoreFoundation|' absl_time.pc\nfi\n\ngsed -i 's|-Xarch_x86_64 -Xarch_arm64||' absl_random_internal_randen_hwaes.pc\ngsed -i 's|-Xarch_x86_64 -Xarch_arm64||' absl_random_internal_randen_hwaes_impl.pc"
   },
   {
-    "pkgname": "acl",
-    "pkgtype": "exe",
-    "version": "2.3.2",
-    "license": "GPL-2.0-or-later",
-    "summary": "C library and utilities for Manipulating POSIX Access Control Lists",
-    "web-url": "https://savannah.nongnu.org/projects/acl",
-    "git-url": "https://git.savannah.nongnu.org/git/acl.git",
-    "src-url": "https://download.savannah.nongnu.org/releases/acl/acl-2.3.2.tar.gz",
-    "src-sha": "5f2bdbad629707aa7d85c623f994aa8a1d2dec55a73de5205bac0bf6058a2f7c",
-    "dep-pkg": "xattr",
-    "dep-upp": "curl bsdtar gmake gmake",
-    "bsystem": "configure",
-    "binbstd": "0",
-    "parallel": "1",
-    "install": "configure"
-  },
-  {
     "pkgname": "act",
     "pkgtype": "exe",
     "version": "0.2.62",
@@ -384,7 +367,7 @@
   {
     "pkgname": "appimagetool",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A command-line tool to generate an AppImage from an existing AppDir",
     "web-url": "https://github.com/AppImage/appimagetool",
     "git-url": "https://github.com/AppImage/appimagetool",
@@ -392,7 +375,6 @@
     "dep-upp": "git cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
-    "ldflags": "-static-libstdc++ -static-libgcc",
     "parallel": "1",
     "prepare": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$argp_standalone_LIBRARY_DIR -largp -lintl -liconv\"\nfi",
     "install": "cmakew"
@@ -819,7 +801,7 @@
   {
     "pkgname": "base16",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "base16 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -832,7 +814,7 @@
   {
     "pkgname": "base64",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "base64 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -1261,7 +1243,7 @@
   {
     "pkgname": "boringssl",
     "pkgtype": "exe+lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A fork of OpenSSL that is designed to meet Google needs",
     "web-url": "https://boringssl.googlesource.com/boringssl/",
     "git-url": "https://github.com/google/boringssl",
@@ -1472,7 +1454,7 @@
   {
     "pkgname": "c-examples",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "C语言学习项目",
     "web-url": "https://github.com/leleliu008/C-examples",
@@ -1576,6 +1558,22 @@
     "git-url": "https://github.com/dtolnay/cargo-llvm-lines",
     "src-url": "https://github.com/dtolnay/cargo-llvm-lines/archive/refs/tags/0.4.41.tar.gz",
     "src-sha": "4674fd81bf3c565fd19e6405e4fd2cd65b2e7c21ec06da762b148150ddcb2787",
+    "dep-upp": "curl bsdtar",
+    "bsystem": "cargo",
+    "binbstd": "1",
+    "parallel": "1",
+    "install": "cargow install"
+  },
+  {
+    "pkgname": "cargo-make",
+    "pkgtype": "exe",
+    "version": "0.37.24",
+    "license": "Apache-2.0",
+    "summary": "Rust task runner and build tool",
+    "web-url": "https://github.com/sagiegurari/cargo-make",
+    "git-url": "https://github.com/sagiegurari/cargo-make",
+    "src-url": "https://github.com/sagiegurari/cargo-make/archive/refs/tags/0.37.24.tar.gz",
+    "src-sha": "a7f6f7332862442e6020e8d8b2568a6fa8eed28156be0dddd61982e1e644cf02",
     "dep-upp": "curl bsdtar",
     "bsystem": "cargo",
     "binbstd": "1",
@@ -1781,7 +1779,6 @@
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
-    "ldflags": "-static-libstdc++ -static-libgcc",
     "parallel": "1",
     "install": "configure --enable-static --disable-shared"
   },
@@ -2260,7 +2257,7 @@
   {
     "pkgname": "cpuinfo",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -2521,6 +2518,22 @@
     "binbstd": "0",
     "parallel": "1",
     "install": "configure \\\n    --with-libedit=$libedit_INSTALL_DIR \\\n    --disable-static \\\n    --enable-glob=no \\\n    --enable-test-workaround=no \\\n    --enable-fnmatch \\\n    --enable-lineno"
+  },
+  {
+    "pkgname": "dashing",
+    "pkgtype": "exe",
+    "version": "0.4.0",
+    "license": "MIT",
+    "summary": "Generate Dash documentation from HTML files",
+    "web-url": "https://github.com/technosophos/dashing",
+    "git-url": "https://github.com/technosophos/dashing",
+    "src-url": "https://github.com/technosophos/dashing/archive/refs/tags/0.4.0.tar.gz",
+    "src-sha": "81b21acae83c144f10d9eea05a0b89f0dcdfa694c3760c2a25bd4eab72a2a3b9",
+    "dep-upp": "curl bsdtar golang",
+    "bsystem": "go",
+    "binbstd": "1",
+    "parallel": "1",
+    "install": "gow -X main.version=$PACKAGE_VERSION"
   },
   {
     "pkgname": "dav1d",
@@ -3018,7 +3031,7 @@
   {
     "pkgname": "easyutils",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A collections of easy to use command-line utilities",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -3063,7 +3076,7 @@
   {
     "pkgname": "effcee",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A C++ library for stateful pattern matching of strings",
     "web-url": "https://github.com/google/effcee",
     "git-url": "https://github.com/google/effcee",
@@ -3586,6 +3599,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
+    "dopatch": "gsed -i '/Fish does not support static linking/d' CMakeLists.txt",
     "install": "cmakew -DWITH_GETTEXT=OFF"
   },
   {
@@ -4623,7 +4637,7 @@
     "res-sha": "a1df7c424e15bda1ab639c00e9051b9adf5cea1a9e512f8a603b53cd199bc6d8",
     "dep-pkg": "libpcre2 libintl libffi libz",
     "dep-upp": "gettext-tools gm4 flex bison curl bsdtar python3 python3 ninja",
-    "dep-pym": "packaging meson",
+    "dep-pym": "packaging 'setuptools<65' meson",
     "bsystem": "meson",
     "binbstd": "0",
     "parallel": "1",
@@ -4849,7 +4863,7 @@
   {
     "pkgname": "gn",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A meta-build system that generates build files for ninja",
     "web-url": "https://gn.googlesource.com/gn",
     "git-url": "https://gn.googlesource.com/gn",
@@ -5118,7 +5132,7 @@
   {
     "pkgname": "gomobile",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A tool for building and running mobile apps written in golang",
     "web-url": "https://github.com/golang/mobile",
     "git-url": "https://github.com/golang/mobile",
@@ -5517,7 +5531,6 @@
     "dep-upp": "grpc-plugins curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
-    "ldflags": "-static-libstdc++ -static-libgcc",
     "parallel": "1",
     "install": "cmakew \\\n    -DCMAKE_CXX_STANDARD=17 \\\n    -DCMAKE_CXX_STANDARD_REQUIRED=TRUE \\\n    -DgRPC_SSL_PROVIDER=package \\\n    -DgRPC_RE2_PROVIDER=package \\\n    -DgRPC_ZLIB_PROVIDER=package \\\n    -DgRPC_ABSL_PROVIDER=package \\\n    -DgRPC_CARES_PROVIDER=package \\\n    -DgRPC_PROTOBUF_PROVIDER=package \\\n    -DgRPC_INSTALL=ON \\\n    -DgRPC_BUILD_TESTS=OFF \\\n    -DgRPC_BUILD_GRPC_CPP_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_PHP_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_NODE_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_RUBY_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_PYTHON_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_CSHARP_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_OBJECTIVE_C_PLUGIN=ON \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DPROTOBUF_PROTOC_EXECUTABLE=\"$(command -v protoc)\"",
     "dotweak": "rm -rf include/ lib/"
@@ -5536,7 +5549,6 @@
     "dep-upp": "grpc-plugins curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
-    "ldflags": "-static-libstdc++ -static-libgcc",
     "parallel": "1",
     "install": "cmakew \\\n    -DCMAKE_CXX_STANDARD=17 \\\n    -DCMAKE_CXX_STANDARD_REQUIRED=TRUE \\\n    -DgRPC_ABSL_PROVIDER=package \\\n    -DgRPC_CARES_PROVIDER=package \\\n    -DgRPC_PROTOBUF_PROVIDER=package \\\n    -DgRPC_SSL_PROVIDER=package \\\n    -DgRPC_ZLIB_PROVIDER=package \\\n    -DgRPC_RE2_PROVIDER=package \\\n    -DgRPC_INSTALL=ON \\\n    -DgRPC_BUILD_TESTS=OFF \\\n    -DgRPC_BUILD_GRPC_CPP_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_PHP_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_NODE_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_RUBY_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_PYTHON_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_CSHARP_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_OBJECTIVE_C_PLUGIN=ON \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DPROTOBUF_PROTOC_EXECUTABLE=\"$(command -v protoc)\"",
     "dotweak": "rm -rf include/ lib/"
@@ -5555,7 +5567,6 @@
     "dep-upp": "grpc-plugins curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
-    "ldflags": "-static-libstdc++ -static-libgcc",
     "parallel": "1",
     "install": "cmakew \\\n    -DCMAKE_CXX_STANDARD=17 \\\n    -DCMAKE_CXX_STANDARD_REQUIRED=TRUE \\\n    -DgRPC_ABSL_PROVIDER=package \\\n    -DgRPC_CARES_PROVIDER=package \\\n    -DgRPC_PROTOBUF_PROVIDER=package \\\n    -DgRPC_SSL_PROVIDER=package \\\n    -DgRPC_ZLIB_PROVIDER=package \\\n    -DgRPC_RE2_PROVIDER=package \\\n    -DgRPC_INSTALL=ON \\\n    -DgRPC_BUILD_TESTS=OFF \\\n    -DgRPC_BUILD_GRPC_CPP_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_PHP_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_NODE_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_RUBY_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_PYTHON_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_CSHARP_PLUGIN=ON \\\n    -DgRPC_BUILD_GRPC_OBJECTIVE_C_PLUGIN=ON \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DPROTOBUF_PROTOC_EXECUTABLE=\"$(command -v protoc)\"",
     "dotweak": "rm -rf include/ lib/"
@@ -6068,7 +6079,7 @@
   {
     "pkgname": "hunter",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "The fastest file manager in the galaxy!",
     "web-url": "https://github.com/rabite0/hunter",
     "git-url": "https://github.com/rabite0/hunter",
@@ -6830,7 +6841,6 @@
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
-    "ldflags": "-static-libstdc++ -static-libgcc",
     "parallel": "1",
     "install": "configure --without-kpathsea"
   },
@@ -6983,6 +6993,23 @@
     "binbstd": "0",
     "parallel": "1",
     "install": "cmakew 2 -DBUILD_APPS=OFF"
+  },
+  {
+    "pkgname": "libacl",
+    "pkgtype": "lib",
+    "version": "2.3.2",
+    "license": "GPL-2.0-or-later",
+    "summary": "C library and utilities for Manipulating POSIX Access Control Lists",
+    "web-url": "https://savannah.nongnu.org/projects/acl",
+    "git-url": "https://git.savannah.nongnu.org/git/acl.git",
+    "src-url": "https://download.savannah.nongnu.org/releases/acl/acl-2.3.2.tar.gz",
+    "src-sha": "5f2bdbad629707aa7d85c623f994aa8a1d2dec55a73de5205bac0bf6058a2f7c",
+    "dep-pkg": "libattr",
+    "dep-upp": "curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "configure"
   },
   {
     "pkgname": "libadwaita",
@@ -7220,6 +7247,23 @@
     "install": "configure \\\n    --disable-docs \\\n    --disable-gcov \\\n    --disable-werror \\\n    --disable-assertions"
   },
   {
+    "pkgname": "libattr",
+    "pkgtype": "lib",
+    "version": "2.5.2",
+    "license": "GPL-2.0-or-later",
+    "summary": "C library and utilities for Manipulating Filesystem Extended Attributes",
+    "web-url": "https://savannah.nongnu.org/projects/attr",
+    "git-url": "https://git.savannah.nongnu.org/git/attr.git",
+    "src-url": "https://download.savannah.nongnu.org/releases/attr/attr-2.5.2.tar.gz",
+    "src-sha": "39bf67452fa41d0948c2197601053f48b3d78a029389734332a6309a680c6c87",
+    "dep-upp": "curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "0",
+    "parallel": "1",
+    "dopatch": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    gsed -i '/include <locale.h>/a #include <libgen.h>' tools/attr.c\nfi",
+    "install": "configure"
+  },
+  {
     "pkgname": "libavif",
     "pkgtype": "lib",
     "version": "1.0.4",
@@ -7288,7 +7332,7 @@
   {
     "pkgname": "libbcrypt",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A password hashing method based on the Blowfish block cipher, provided via the crypt(3) and a reentrant interface",
     "web-url": "https://www.openwall.com/crypt",
     "git-url": "https://github.com/leleliu008/libbcrypt",
@@ -7522,7 +7566,7 @@
   {
     "pkgname": "libcamera",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "MIT",
     "summary": "An open source camera stack and framework",
     "web-url": "https://libcamera.org/",
@@ -7801,7 +7845,7 @@
   {
     "pkgname": "libcpuinfo",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -8292,7 +8336,7 @@
   {
     "pkgname": "libexecinfo",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A quick-n-dirty BSD licensed clone of backtrace facility found in the GNU libc",
     "web-url": "https://github.com/leleliu008/libexecinfo",
     "git-url": "https://github.com/leleliu008/libexecinfo",
@@ -8854,7 +8898,7 @@
   {
     "pkgname": "libglob",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "glob(3) implementation",
     "web-url": "https://linux.die.net/man/3/glob",
     "git-url": "https://github.com/leleliu008/libglob",
@@ -9325,7 +9369,7 @@
   {
     "pkgname": "libintl-lite",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "BSL-1.0",
     "summary": "A simple (but less powerful) GNU gettext libintl replacement",
     "web-url": "https://github.com/j-jorge/libintl-lite",
@@ -9943,7 +9987,7 @@
   {
     "pkgname": "libmesalink",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "BSD-3-Clause",
     "summary": "memory-safe and OpenSSL-compatible TLS library",
     "web-url": "https://mesalink.io",
@@ -10004,7 +10048,7 @@
   {
     "pkgname": "libmill",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "MIT",
     "summary": "Go-style concurrency in C",
     "web-url": "https://github.com/sustrik/libmill",
@@ -10358,7 +10402,7 @@
   {
     "pkgname": "libnghttp3",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -10372,7 +10416,7 @@
   {
     "pkgname": "libngtcp2",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -11202,7 +11246,7 @@
   {
     "pkgname": "libquiche",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "BSD-2-Clause",
     "summary": "Savoury implementation of the QUIC transport protocol and HTTP/3",
     "web-url": "https://github.com/cloudflare/quiche",
@@ -12941,7 +12985,7 @@
   {
     "pkgname": "libwordexp",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "wordexp(3) implementation",
     "web-url": "https://linux.die.net/man/3/wordexp",
     "git-url": "https://github.com/leleliu008/libwordexp",
@@ -13378,7 +13422,7 @@
   {
     "pkgname": "lief",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "Library to Instrument Executable Formats",
     "web-url": "https://github.com/lief-project/LIEF",
@@ -13718,7 +13762,7 @@
   {
     "pkgname": "lodepng",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Zlib",
     "summary": "PNG encoder and decoder in C and C++",
     "web-url": "https://github.com/lvandeve/lodepng",
@@ -14401,7 +14445,6 @@
     "bsystem": "configure",
     "binbstd": "0",
     "xxflags": "-std=gnu++17",
-    "ldflags": "-static-libstdc++ -static-libgcc",
     "parallel": "1",
     "dopatch": "gsed -i 's|if ( bind|if (::bind|' src/network/network.cc",
     "install": "configure --with-ncurses"
@@ -14713,7 +14756,7 @@
   {
     "pkgname": "ndk-pkg",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "A package builder for Android NDK to build projects written in C, C++, Rust, Golang, etc",
     "web-url": "https://github.com/leleliu008/ndk-pkg",
@@ -14828,7 +14871,7 @@
   {
     "pkgname": "nghttp3",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -14859,7 +14902,7 @@
   {
     "pkgname": "ngtcp2",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -14873,7 +14916,7 @@
   {
     "pkgname": "nilaway",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "A static analysis tool to detect potential nil panics in Go code",
     "web-url": "https://github.com/uber-go/nilaway",
@@ -15328,7 +15371,6 @@
     "dep-upp": "git curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
-    "ldflags": "-static-libstdc++ -static-libgcc",
     "parallel": "1",
     "dopatch": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -framework CoreFoundation -framework Security\"\nfi\n\nif [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lpthread\"\nfi\n\nMINIZIP_LIBRARIES=\"$(pkg-config --libs-only-l minizip-ng)\"\ngsed -i \"s|INTERFACE ZLIB::ZLIB|INTERFACE ZLIB::ZLIB $MINIZIP_LIBRARIES|\" share/cmake/modules/Findminizip-ng.cmake",
     "install": "cmakew \\\n    -Dpystring_INCLUDE_DIR=\"$libpystring_INCLUDE_DIR/pystring\" \\\n    -Dpystring_LIBRARY=\"$libpystring_LIBRARY_DIR/libpystring.a\" \\\n    -DOCIO_BUILD_APPS=ON \\\n    -DOCIO_BUILD_DOCS=OFF \\\n    -DOCIO_BUILD_TESTS=OFF \\\n    -DOCIO_BUILD_JAVA=OFF \\\n    -DOCIO_BUILD_PYTHON=OFF \\\n    -DOCIO_WARNING_AS_ERROR=OFF \\\n    -DBUILD_SHARED_LIBS=OFF"
@@ -15380,7 +15422,6 @@
     "dep-upp": "curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
-    "ldflags": "-static-libstdc++ -static-libgcc",
     "parallel": "1",
     "dopatch": "gsed -i '/find_library(OPENEXR_EXTRA_MATH_LIB m)/c set(OPENEXR_EXTRA_MATH_LIB -lm)' cmake/CMakeLists.txt\ngsed -i 's|libdeflate_shared|libdeflate_static|' cmake/OpenEXRSetup.cmake",
     "install": "cmakew \\\n    -DDOCS=OFF \\\n    -DOPENEXR_INSTALL=ON \\\n    -DOPENEXR_INSTALL_TOOLS=ON \\\n    -DOPENEXR_INSTALL_EXAMPLES=ON \\\n    -DBUILD_SHARED_LIBS=OFF"
@@ -15540,7 +15581,8 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "install": "configure \\\n    --with-pam \\\n    --with-ldns \\\n    --with-libedit \\\n    --with-kerberos5 \\\n    --with-security-key-builtin \\\n    --with-privsep-path=$PACKAGE_INSTALL_DIR/var/lib/sshd"
+    "prepare": "if [ \"$PACKAGE_CREATE_FULLY_STATICALLY_LINKED_EXECUTABLE\" = 1 ] ; then\n    CONFIGURE_EXTRA_ARGS='--without-pam'\nelse\n    CONFIGURE_EXTRA_ARGS='--with-pam'\nfi",
+    "install": "configure \\\n    --with-ldns \\\n    --with-libedit \\\n    --with-kerberos5 \\\n    --with-security-key-builtin \\\n    --with-privsep-path=$PACKAGE_INSTALL_DIR/var/lib/sshd \\\n    $CONFIGURE_EXTRA_ARGS"
   },
   {
     "pkgname": "openssl",
@@ -15596,7 +15638,7 @@
   {
     "pkgname": "packcc",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A packrat parser generator for C",
     "web-url": "https://github.com/arithy/packcc",
     "git-url": "https://github.com/arithy/packcc",
@@ -15806,7 +15848,7 @@
   {
     "pkgname": "pegof",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "PEG grammar optimizer and formatter. Supports any grammar supported by PackCC parser generator.",
     "web-url": "https://github.com/dolik-rce/pegof",
     "git-url": "https://github.com/dolik-rce/pegof",
@@ -15975,7 +16017,7 @@
   {
     "pkgname": "plog",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "MPL-2.0",
     "summary": "Portable, simple and extensible C++ logging library",
     "web-url": "https://github.com/SergiusTheBest/plog",
@@ -16152,7 +16194,7 @@
   {
     "pkgname": "ppkg",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "A portable package manager for Unix-like system",
     "web-url": "https://github.com/leleliu008/ppkg",
@@ -16288,7 +16330,7 @@
   {
     "pkgname": "psimd",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "MIT",
     "summary": "Portable 128-bit SIMD intrinsics",
     "web-url": "https://github.com/Maratyszcza/psimd",
@@ -16338,7 +16380,7 @@
   {
     "pkgname": "pup",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "MIT",
     "summary": "Parse HTML at the command-line",
     "web-url": "https://github.com/EricChiang/pup",
@@ -16530,15 +16572,15 @@
     "git-url": "https://git.qemu.org/git/qemu.git",
     "src-url": "https://download.qemu.org/qemu-9.2.0.tar.xz",
     "src-sha": "f859f0bc65e1f533d040bbe8c92bcfecee5af2c921a6687c652fb44d089bd894",
-    "dep-pkg": "libncurses libcapstone libfdt libusb libslirp libssh libpng libjpeg-turbo libpixman libsnappy libzstd liblzo libgnutls libnettle vde libcap-ng xattr",
+    "dep-pkg": "libncurses libcapstone libfdt libusb libslirp libssh libpng libjpeg-turbo libpixman libsnappy libzstd liblzo libgnutls libnettle vde libcap-ng libattr",
     "dep-upp": "bzip2 gm4 flex bison curl bsdtar python3 python3 gmake ninja",
-    "dep-pym": "packaging meson",
+    "dep-pym": "setuptools packaging meson",
     "bsystem": "gmake meson",
     "binbstd": "1",
     "ppflags": "-UNDEBUG",
     "ldflags": "-lstdc++",
     "parallel": "1",
-    "dopatch": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    LIST='\n    0006-linux-user-signal.c-define-__SIGRTMIN-MAX-for-non-GN.patch\n    xattr_size_max.patch\n    MAP_SYNC-fix.patch\n    fix-sockios-header.patch\n    guest-agent-shutdown.patch\n    musl-initialise-msghdr.patch\n    fix-strerrorname_np.patch\n    liburing.patch\n    '\n\n    for f in $LIST\n    do\n        wfetch \"https://gitlab.alpinelinux.org/alpine/aports/-/raw/master/community/qemu/$f\"\n    done\n\n    for f in $LIST\n    do\n        patch -p1 < \"$f\"\n    done\nfi\n\ngsed -i 's|-static-pie|-pie|' meson.build\ngsed -i 's|$meson setup |meson setup --prefer-static |' configure\ngsed -i \"s|cc.find_library('vdeplug'|cc.find_library('vdeplug', static : true, dirs : ['$vde_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('cap-ng'|cc.find_library('cap-ng', static : true, dirs : ['$libcap_ng_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('attr'|cc.find_library('attr', static : true, dirs : ['$xattr_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('fdt'|cc.find_library('fdt', static : true, dirs : ['$libfdt_LIBRARY_DIR']|\" meson.build\ngsed -i \"/iconv = /c iconv = cc.find_library('iconv', static : true, dirs: ['$libiconv_LIBRARY_DIR'])\" meson.build",
+    "dopatch": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    LIST='\n    0006-linux-user-signal.c-define-__SIGRTMIN-MAX-for-non-GN.patch\n    xattr_size_max.patch\n    MAP_SYNC-fix.patch\n    fix-sockios-header.patch\n    guest-agent-shutdown.patch\n    musl-initialise-msghdr.patch\n    fix-strerrorname_np.patch\n    liburing.patch\n    '\n\n    for f in $LIST\n    do\n        wfetch \"https://gitlab.alpinelinux.org/alpine/aports/-/raw/master/community/qemu/$f\"\n    done\n\n    for f in $LIST\n    do\n        patch -p1 < \"$f\"\n    done\nfi\n\ngsed -i 's|-static-pie|-pie|' meson.build\ngsed -i 's|$meson setup |meson setup --prefer-static |' configure\ngsed -i \"s|cc.find_library('vdeplug'|cc.find_library('vdeplug', static : true, dirs : ['$vde_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('cap-ng'|cc.find_library('cap-ng', static : true, dirs : ['$libcap_ng_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('attr'|cc.find_library('attr', static : true, dirs : ['$libattr_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('fdt'|cc.find_library('fdt', static : true, dirs : ['$libfdt_LIBRARY_DIR']|\" meson.build\ngsed -i \"/iconv = /c iconv = cc.find_library('iconv', static : true, dirs: ['$libiconv_LIBRARY_DIR'])\" meson.build",
     "prepare": "unset CONFIGURE_EXTRA_ARGS\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS='--enable-cocoa'\nfi",
     "install": "./configure \\\n    --prefix=$PACKAGE_INSTALL_DIR \\\n    --cc=$CC \\\n    --host-cc=$CC \\\n    --extra-cflags=\"$CFLAGS $CPPFLAGS -DNCURSES_WIDECHAR=1\" \\\n    --extra-ldflags=\"$LDFLAGS\" \\\n    --disable-bsd-user \\\n    --disable-guest-agent \\\n    --enable-capstone \\\n    --enable-virtfs \\\n    --enable-curses \\\n    --enable-libssh \\\n    --enable-slirp \\\n    --enable-zstd \\\n    --enable-fdt=system \\\n    --enable-vde \\\n    --disable-sdl \\\n    --disable-gtk $CONFIGURE_EXTRA_ARGS\ngmakew install V=1"
   },
@@ -17075,7 +17117,7 @@
   {
     "pkgname": "ruy",
     "pkgtype": "lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "matrix multiplication library",
     "web-url": "https://github.com/google/ruy",
@@ -17377,7 +17419,7 @@
   {
     "pkgname": "sjpeg",
     "pkgtype": "exe+lib",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "simple jpeg encoder",
     "web-url": "https://github.com/webmproject/sjpeg",
@@ -17392,7 +17434,7 @@
   {
     "pkgname": "skcms",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "BSD",
     "summary": "SkCMS",
     "web-url": "https://skia.googlesource.com/skcms.git",
@@ -18016,7 +18058,7 @@
   {
     "pkgname": "sysinfo",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A command-line tool to get your currently running system information",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -18207,6 +18249,21 @@
     "parallel": "1",
     "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lpthread\"\nfi",
     "install": "cmakew \\\n    -DWITH_CRYPTO=ON \\\n    -DWITH_SMI=OFF \\\n    -DWITH_CAP_NG=OFF \\\n    -DENABLE_SMB=OFF"
+  },
+  {
+    "pkgname": "tcping",
+    "pkgtype": "exe",
+    "version": "2.1.0",
+    "license": "MIT",
+    "summary": "TCP connect to the given IP/port combo",
+    "web-url": "https://github.com/mkirchner/tcping",
+    "git-url": "https://github.com/mkirchner/tcping",
+    "src-url": "https://github.com/mkirchner/tcping/archive/refs/tags/2.1.0.tar.gz",
+    "src-sha": "b8aa427420fe00173b5a2c0013d78e52b010350f5438bf5903c1942cba7c39c9",
+    "dep-upp": "curl bsdtar",
+    "binbstd": "1",
+    "parallel": "1",
+    "install": "run \"$CC\" \"$CFLAGS\" \"$CPPFLAGS\" \"$LDFLAGS\" -o tcping cli.c tcping.c\ninstall_bins tcping\ninstall_mans man/tcping.1"
   },
   {
     "pkgname": "tdu",
@@ -18430,6 +18487,24 @@
     "prepare": "case $TARGET_PLATFORM_ARCH in\n    *64)    CONFIGURE_EXTRA_ARGS=--enable-64bit ;;\n    *)      CONFIGURE_EXTRA_ARGS=--disable-64bit ;;\nesac",
     "install": "configure \\\n    --enable-load \\\n    --enable-threads \\\n    $CONFIGURE_EXTRA_ARGS \\\n    --enable-xft \\\n    --with-x \\\n    --with-tcl=\"$libtcl_LIBRARY_DIR\"",
     "dotweak": "chmod +w lib/libtk8.6.so"
+  },
+  {
+    "pkgname": "tldr",
+    "pkgtype": "exe",
+    "version": "1.6.1",
+    "license": "MIT",
+    "summary": "A simplified and community-driven man pages",
+    "web-url": "https://tldr.sh/",
+    "git-url": "https://github.com/tldr-pages/tldr-c-client",
+    "src-url": "https://github.com/tldr-pages/tldr-c-client/archive/refs/tags/v1.6.1.tar.gz",
+    "src-sha": "1a2aa8e764846fad1f41a0304e28416f5c38b6d3a3131ad1e85116749aec34ba",
+    "dep-pkg": "libzip libcurl",
+    "dep-lib": "libzip libcurl",
+    "dep-upp": "curl bsdtar gmake",
+    "bsystem": "gmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "install": "gmakew clean\ngmakew CC=\"$CC\" LD=\"$CC\" CFLAGS=\"'$CFLAGS'\" CPPFLAGS=\"'$CPPFLAGS'\" LDFLAGS=\"'$LDFLAGS'\"\ngmakew install PREFIX=\"$PACKAGE_INSTALL_DIR\""
   },
   {
     "pkgname": "tlrc",
@@ -18679,7 +18754,7 @@
   {
     "pkgname": "uctags",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "GPL-2.0-or-later",
     "summary": "Maintained ctags implementation",
     "web-url": "https://ctags.io/",
@@ -18760,7 +18835,7 @@
   {
     "pkgname": "uppm",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -18776,7 +18851,7 @@
   {
     "pkgname": "uppm@0.15.1",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -18793,7 +18868,7 @@
   {
     "pkgname": "uppm@0.15.2",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -18810,7 +18885,7 @@
   {
     "pkgname": "uppm@0.15.3",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -18827,7 +18902,7 @@
   {
     "pkgname": "uppm@0.15.4",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -18896,7 +18971,7 @@
   {
     "pkgname": "utf8.h",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Unlicense",
     "summary": "single header utf8 string functions for C and C++",
     "web-url": "https://github.com/sheredom/utf8.h",
@@ -19302,15 +19377,14 @@
   {
     "pkgname": "wasmer",
     "pkgtype": "exe",
-    "version": "4.3.1",
+    "version": "5.0.4",
     "license": "MIT",
     "summary": "The Universal WebAssembly Runtime",
     "web-url": "https://wasmer.io",
     "git-url": "https://github.com/wasmerio/wasmer",
-    "src-url": "https://github.com/wasmerio/wasmer/archive/refs/tags/v4.3.1.tar.gz",
-    "src-sha": "aa8a47775845bd39da2e5a044d4b88e2d8d1b807137f5617dc6bcc9906ebff3d",
-    "dep-pkg": "wabt",
-    "dep-upp": "curl bsdtar",
+    "src-url": "https://github.com/wasmerio/wasmer/archive/refs/tags/v5.0.4.tar.gz",
+    "src-sha": "e6f0df11dd4647fa3d9177ed298a6e3afd2b5be6ea4494c00c2074c90681ad27",
+    "dep-upp": "wabt curl bsdtar",
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
@@ -19551,7 +19625,6 @@
     "dep-upp": "curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
-    "ldflags": "-static-libstdc++ -static-libgcc",
     "parallel": "1",
     "dopatch": "gsed -i '/^install(/,$d' CMakeLists.txt",
     "install": "cmakew -DBUILD_SHARED_LIBS=OFF"
@@ -19607,13 +19680,13 @@
   {
     "pkgname": "x265",
     "pkgtype": "exe",
-    "version": "3.6",
+    "version": "4.1",
     "license": "GPL-2.0-only",
     "summary": "An open-source H.265/HEVC encoder",
     "web-url": "http://x265.org",
     "git-url": "https://bitbucket.org/multicoreware/x265_git",
-    "src-url": "https://bitbucket.org/multicoreware/x265_git/get/3.6.tar.gz",
-    "src-sha": "206329b9599c78d06969a1b7b7bb939f7c99a459ab283b2e93f76854bd34ca7b",
+    "src-url": "https://bitbucket.org/multicoreware/x265_git/get/4.1.tar.gz",
+    "src-sha": "7d23cdcdbd510728202c0dfbf7c51eda26a395de2096c504c2b10d6035711102",
     "dep-upp": "curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
@@ -19622,25 +19695,9 @@
     "dotweak": "rm -rf include/ lib/"
   },
   {
-    "pkgname": "xattr",
-    "pkgtype": "exe",
-    "version": "2.5.2",
-    "license": "GPL-2.0-or-later",
-    "summary": "C library and utilities for Manipulating Filesystem Extended Attributes",
-    "web-url": "https://savannah.nongnu.org/projects/attr",
-    "git-url": "https://git.savannah.nongnu.org/git/attr.git",
-    "src-url": "https://download.savannah.nongnu.org/releases/attr/attr-2.5.2.tar.gz",
-    "src-sha": "39bf67452fa41d0948c2197601053f48b3d78a029389734332a6309a680c6c87",
-    "dep-upp": "curl bsdtar gmake gmake",
-    "bsystem": "configure",
-    "binbstd": "0",
-    "parallel": "1",
-    "install": "configure"
-  },
-  {
     "pkgname": "xbps",
     "pkgtype": "pie",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "summary": "A binary package system designed and implemented from scratch",
     "web-url": "https://github.com/void-linux/xbps",
     "git-url": "https://github.com/void-linux/xbps",
@@ -19805,14 +19862,14 @@
   {
     "pkgname": "xmlutils",
     "pkgtype": "exe",
-    "version": "2.12.7",
+    "version": "2.13.5",
     "license": "MIT",
     "summary": "A collections of command-line utilities provided by libxml2",
     "web-url": "http://xmlsoft.org",
     "git-url": "https://gitlab.gnome.org/GNOME/libxml2",
-    "src-url": "https://download.gnome.org/sources/libxml2/2.12/libxml2-2.12.7.tar.xz",
-    "src-uri": "http://distfiles.macports.org/libxml2/libxml2-2.12.7.tar.xz",
-    "src-sha": "24ae78ff1363a973e6d8beba941a7945da2ac056e19b53956aeb6927fd6cfb56",
+    "src-url": "https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.5.tar.xz",
+    "src-uri": "http://distfiles.macports.org/libxml2/libxml2-2.13.5.tar.xz",
+    "src-sha": "74fc163217a3964257d3be39af943e08861263c4231f9ef5b496b6f6d4c7b2b6",
     "dep-pkg": "libiconv libz",
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
@@ -20208,12 +20265,12 @@
   {
     "pkgname": "xorg-libxtst",
     "pkgtype": "lib",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "license": "MIT",
     "summary": "X.Org Client API for the XTEST & RECORD extensions",
     "web-url": "https://www.x.org/",
-    "src-url": "https://www.x.org/archive/individual/lib/libXtst-1.2.4.tar.gz",
-    "src-sha": "01366506aeb033f6dffca5326af85f670746b0cabbfd092aabefb046cf48c445",
+    "src-url": "https://www.x.org/archive/individual/lib/libXtst-1.2.5.tar.gz",
+    "src-sha": "244ba6e1c5ffa44f1ba251affdfa984d55d99c94bb925a342657e5e7aaf6d39c",
     "dep-pkg": "xorg-libxi",
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
@@ -20372,7 +20429,7 @@
   {
     "pkgname": "xpup",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "Apache-2.0",
     "summary": "A command line tool for XML parsing",
     "web-url": "https://github.com/ericchiang/xpup",
@@ -20534,13 +20591,13 @@
   {
     "pkgname": "yazi",
     "pkgtype": "exe",
-    "version": "0.3.0",
+    "version": "0.4.2",
     "license": "MIT",
     "summary": "Blazing fast terminal file manager written in Rust, based on async I/O",
     "web-url": "https://github.com/sxyazi/yazi",
     "git-url": "https://github.com/sxyazi/yazi",
-    "src-url": "https://github.com/sxyazi/yazi/archive/refs/tags/v0.3.0.tar.gz",
-    "src-sha": "0a0c1583accca16759392f258367156a2c36fb0b1d37152b07e1aa5239c531ff",
+    "src-url": "https://github.com/sxyazi/yazi/archive/refs/tags/v0.4.2.tar.gz",
+    "src-sha": "88995c90954d140f455cf9ca4f87f9ca36390717377be86b0672456e1eb5f65f",
     "dep-upp": "gmake curl bsdtar",
     "bsystem": "cargo",
     "binbstd": "1",
@@ -20550,7 +20607,7 @@
   {
     "pkgname": "ycm",
     "pkgtype": "exe",
-    "version": "2025.01.29",
+    "version": "2025.01.30",
     "license": "GPL-v3",
     "summary": "A code-completion engine for Vim",
     "web-url": "https://github.com/ycm-core/YouCompleteMe",

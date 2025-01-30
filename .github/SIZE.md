@@ -20,30 +20,32 @@
  72K   │ │ ├── FLATPAK_APP_IDS.txt
  20K   │ │ ├── CATEGORY.json
 4.0K   │ │ └── CATEGORY.md
- 72K   │ └─┬ scripts
+ 88K   │ └─┬ scripts
+ 12K   │   ├── fetch_flatpak.sh
  12K   │   ├── fetch_alpine_pkg.sh
 8.0K   │   ├── fetch_homebrew.sh
 8.0K   │   ├── fetch_gh_logs.sh
-8.0K   │   ├── fetch_flatpak.sh
-8.0K   │   ├── fetch_debian.sh
-8.0K   │   ├── fetch_archlinux.sh
+8.0K   │   ├── fetch_debian_src.sh
+8.0K   │   ├── fetch_archlinux_src.sh
+8.0K   │   ├── fetch_alpine_git.sh
 4.0K   │   ├── fetch_ppkg.sh
 4.0K   │   ├── fetch_pkgsrc.sh
 4.0K   │   ├── fetch_nixpkgs.sh
-4.0K   │   └── fetch_alpine_git.sh
+4.0K   │   ├── fetch_debian_docker.sh
+4.0K   │   └── fetch_archlinux_docker.sh
  58M   ├─┬ bincache
  58M   │ ├─┬ data
  14M   │ │ ├── x86_64-Linux.json
  13M   │ │ ├── aarch64-Linux.json
  11M   │ │ ├── x86_64-Linux.db
  10M   │ │ ├── aarch64-Linux.db
-892K   │ │ ├── x86_64-Linux.db.cba
-832K   │ │ ├── aarch64-Linux.db.cba
-796K   │ │ ├── x86_64-Linux.json.cba
+888K   │ │ ├── x86_64-Linux.db.cba
+824K   │ │ ├── aarch64-Linux.db.cba
+792K   │ │ ├── x86_64-Linux.json.cba
 708K   │ │ ├── aarch64-Linux.json.cba
 616K   │ │ ├── x86_64-Linux.db.zstd
 596K   │ │ ├── x86_64-Linux.db.xz
-580K   │ │ ├── x86_64-Linux.json.xz
+584K   │ │ ├── x86_64-Linux.json.xz
 568K   │ │ ├── aarch64-Linux.db.zstd
 552K   │ │ ├── aarch64-Linux.db.xz
 544K   │ │ ├── x86_64-Linux.json.zstd
@@ -69,9 +71,9 @@
 6.5M   │ ├─┬ data
 1.6M   │ │ ├── INDEX.json
 1.1M   │ │ ├── BACKAGE.json
-792K   │ │ ├── INDEX.db
+796K   │ │ ├── INDEX.db
 788K   │ │ ├── pub_issues_binaries.txt
-400K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+404K   │ │ ├── DIFF_bincache_aarch64-Linux.json
 360K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 304K   │ │ ├── pub_issues_packages.txt
 232K   │ │ ├── INDEX.json.cba

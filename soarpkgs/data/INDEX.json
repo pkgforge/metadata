@@ -16571,6 +16571,7 @@
     "pkg_id": "nixpkgs.bash",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bash/dash/dash",
+    "bincache": "ghcr.io/pkgforge/bincache/dash/nixpkgs/dash",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dash/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -16640,6 +16641,7 @@
     "pkg_id": "ppkg.dash",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-dash/dash/dash",
+    "bincache": "ghcr.io/pkgforge/bincache/dash/ppkg/dash",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dash/static.ppkg.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -32107,6 +32109,7 @@
     "pkg_id": "github.com.edoardottt.lit-bb-hack-tools",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hack-tools/lit-bb-hack-tools/lit-bb-hack-tools",
+    "bincache": "ghcr.io/pkgforge/bincache/lit-bb-hack-tools/official/bbtargets",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lit-bb-hack-tools/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -36533,7 +36536,7 @@
       "recon",
       "security"
     ],
-    "version": "HEAD-d699c27-250127T152211"
+    "version": "HEAD-58ae87c-250130T144429"
   },
   {
     "_disabled": "false",
@@ -37366,6 +37369,7 @@
     "pkg_id": "ppkg.openssh",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-openssh/openssh/openssh",
+    "bincache": "ghcr.io/pkgforge/bincache/openssh/ppkg/scp",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/openssh/static.ppkg.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -40493,6 +40497,7 @@
     "pkg_id": "ppkg.qemu",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-qemu/qemu/qemu",
+    "bincache": "ghcr.io/pkgforge/bincache/qemu/ppkg/qemu-aarch64",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qemu/static.ppkg.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -54092,7 +54097,7 @@
       "explorer",
       "file"
     ],
-    "version": "HEAD-9a587a8-250130T131819"
+    "version": "HEAD-e766a98-250130T150244"
   },
   {
     "_disabled": "false",
@@ -55578,6 +55583,57 @@
     "_disabled": "false",
     "pkg": "zsv",
     "pkg_family": "zsv",
+    "pkg_id": "github.com.liquidaty.zsv.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zsv-source/zsv/zsv",
+    "bincache": "ghcr.io/pkgforge/bincache/zsv/official/zsv",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zsv/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line utility for parsing CSV",
+    "distro_pkg": {
+      "nixpkgs": [
+        "zsv"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zsv/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/liquidaty/zsv"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/liquidaty/zsv"
+    ],
+    "provides": [
+      "zsv"
+    ],
+    "repology": [
+      "zsv"
+    ],
+    "src_url": [
+      "https://github.com/liquidaty/zsv"
+    ],
+    "tag": [
+      "csv"
+    ],
+    "version": "HEAD-a5691ce-250127T120805"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zsv",
+    "pkg_family": "zsv",
     "pkg_id": "ppkg.zsv",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-zsv/zsv/zsv",
@@ -55621,56 +55677,7 @@
     ],
     "tag": [
       "csv"
-    ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zsv",
-    "pkg_family": "zsv",
-    "pkg_id": "github.com.liquidaty.zsv.source",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zsv-source/zsv/zsv",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zsv/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
     ],
-    "description": "A command-line utility for parsing CSV",
-    "distro_pkg": {
-      "nixpkgs": [
-        "zsv"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zsv/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/liquidaty/zsv"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/liquidaty/zsv"
-    ],
-    "provides": [
-      "zsv"
-    ],
-    "repology": [
-      "zsv"
-    ],
-    "src_url": [
-      "https://github.com/liquidaty/zsv"
-    ],
-    "tag": [
-      "csv"
-    ],
-    "version": "HEAD-a5691ce-250127T120805"
+    "version": "0.4.4"
   }
 ]

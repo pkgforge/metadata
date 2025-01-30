@@ -627,6 +627,83 @@
   },
   {
     "_disabled": "false",
+    "pkg": "bash",
+    "pkg_family": "bash",
+    "pkg_id": "nixpkgs.bash",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bash/bash/bash",
+    "bincache": "ghcr.io/pkgforge/bincache/bash/nixpkgs/bash",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bash/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux",
+    "distro_pkg": {
+      "alpine": [
+        "bash"
+      ],
+      "archlinux": {
+        "aur": [
+          "bash-devel-git",
+          "bash-devel-static-git",
+          "bash-git",
+          "bash3",
+          "bash4"
+        ]
+      },
+      "debian": [
+        "bash"
+      ],
+      "gnuguix": [
+        "bash",
+        "bash-minimal",
+        "bash-static"
+      ],
+      "homebrew": [
+        "bash"
+      ],
+      "nixpkgs": [
+        "bash"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bash/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/bash/",
+      "https://git.savannah.gnu.org/cgit/bash.git",
+      "https://savannah.gnu.org/projects/bash"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "bash==sh"
+    ],
+    "repology": [
+      "bash"
+    ],
+    "src_url": [
+      "https://git.savannah.gnu.org/cgit/bash.git"
+    ],
+    "tag": [
+      "bash",
+      "shell"
+    ],
+    "version": "5.2p37"
+  },
+  {
+    "_disabled": "false",
     "pkg": "batcat",
     "pkg_family": "bat",
     "pkg_id": "github.com.sharkdp.bat",
@@ -3541,144 +3618,6 @@
       "container"
     ],
     "version": "v0.15.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "dash",
-    "pkg_family": "dash",
-    "pkg_id": "nixpkgs.bash",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bash/dash/dash",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dash/static.nixpkgs.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "POSIX compliant shell that aims to be as small as possible",
-    "distro_pkg": {
-      "alpine": [
-        "dash"
-      ],
-      "archlinux": {
-        "aur": [
-          "dash-git",
-          "dash-static",
-          "dash-static-musl"
-        ]
-      },
-      "debian": [
-        "dash"
-      ],
-      "gnuguix": [
-        "dash"
-      ],
-      "homebrew": [
-        "dash"
-      ],
-      "nixpkgs": [
-        "dash"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dash/static.nixpkgs.stable.yaml",
-    "homepage": [
-      "http://gondor.apana.org.au/~herbert/dash/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
-    ],
-    "provides": [
-      "dash"
-    ],
-    "repology": [
-      "dash"
-    ],
-    "src_url": [
-      "https://git.kernel.org/pub/scm/utils/dash/dash.git/"
-    ],
-    "tag": [
-      "shell"
-    ],
-    "version": "0.5.12"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "dash",
-    "pkg_family": "dash",
-    "pkg_id": "ppkg.dash",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-dash/dash/dash",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dash/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "POSIX compliant shell that aims to be as small as possible",
-    "distro_pkg": {
-      "alpine": [
-        "dash"
-      ],
-      "archlinux": {
-        "aur": [
-          "dash-git",
-          "dash-static",
-          "dash-static-musl"
-        ]
-      },
-      "debian": [
-        "dash"
-      ],
-      "gnuguix": [
-        "dash"
-      ],
-      "homebrew": [
-        "dash"
-      ],
-      "nixpkgs": [
-        "dash"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dash/static.ppkg.stable.yaml",
-    "homepage": [
-      "http://gondor.apana.org.au/~herbert/dash/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "dash"
-    ],
-    "repology": [
-      "dash"
-    ],
-    "src_url": [
-      "https://git.kernel.org/pub/scm/utils/dash/dash.git/"
-    ],
-    "tag": [
-      "shell"
-    ],
-    "version": "0.5.12"
   },
   {
     "_disabled": "false",
@@ -6763,7 +6702,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-2bed09e-250130T085556"
+    "version": "HEAD-49f8dc2-250130T091418"
   },
   {
     "_disabled": "false",
@@ -8994,102 +8933,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "openssh",
-    "pkg_family": "openssh",
-    "pkg_id": "ppkg.openssh",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-openssh/openssh/openssh",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/openssh/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Utilities and servers for secure shell connections",
-      "scp": "OpenSSH secure file copy [openssh]",
-      "sftp": "OpenSSH secure file transfer [openssh]",
-      "sftp-server": "OpenSSH SFTP server subsystem [openssh]",
-      "ssh": "OpenSSH remote login client [openssh]",
-      "ssh-add": "Add private key identities to the OpenSSH authentication agent [openssh]",
-      "ssh-agent": "OpenSSH authentication agent [openssh]",
-      "ssh-copy-id": "Use locally available keys to authorize logins on a remote machine [openssh]",
-      "sshd": "OpenSSH daemon [openssh]",
-      "sshd-session": "OpenSSH Privilege Separation [openssh]",
-      "ssh-keygen": "OpenSSH authentication key utility [openssh]",
-      "ssh-keyscan": "Gather SSH public keys from servers [openssh]",
-      "ssh-keysign": "OpenSSH helper for host-based authentication [openssh]",
-      "ssh-pkcs11-helper": "OpenSSH helper for PKCS#11 support [openssh]",
-      "ssh-sk-helper": "OpenSSH helper for FIDO authenticator support [openssh]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "openssh"
-      ],
-      "archlinux": {
-        "aur": [
-          "openssh-git"
-        ]
-      },
-      "debian": [
-        "openssh"
-      ],
-      "gnuguix": [
-        "openssh"
-      ],
-      "homebrew": [
-        "openssh"
-      ],
-      "nixpkgs": [
-        "openssh"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/openssh/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://www.openssh.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "scp",
-      "sftp",
-      "sftp-server",
-      "ssh",
-      "ssh-add",
-      "ssh-agent",
-      "ssh-copy-id",
-      "sshd",
-      "sshd-session",
-      "ssh-keygen",
-      "ssh-keyscan",
-      "ssh-keysign",
-      "ssh-pkcs11-helper",
-      "ssh-sk-helper"
-    ],
-    "repology": [
-      "openssh"
-    ],
-    "src_url": [
-      "https://github.com/openssh/openssh-portable"
-    ],
-    "tag": [
-      "ssh"
-    ],
-    "version": "9.9.1"
-  },
-  {
-    "_disabled": "false",
     "pkg": "ov",
     "pkg_family": "ov",
     "pkg_id": "github.com.noborus.ov",
@@ -10169,7 +10012,7 @@
       "conda",
       "mamba"
     ],
-    "version": "v0.35.8"
+    "version": "v0.35.9"
   },
   {
     "_disabled": "false",
@@ -10482,7 +10325,7 @@
       "provenance",
       "security"
     ],
-    "version": "HEAD-b0e9f60-250127T182830"
+    "version": "HEAD-6e8d290-250130T092840"
   },
   {
     "_disabled": "false",
@@ -12379,7 +12222,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-8bd04bd-250129T124401"
+    "version": "HEAD-0ed4aa0-250130T084852"
   },
   {
     "_disabled": "false",
@@ -14321,15 +14164,15 @@
     "_disabled": "false",
     "pkg": "zsv",
     "pkg_family": "zsv",
-    "pkg_id": "github.com.liquidaty.zsv",
+    "pkg_id": "github.com.liquidaty.zsv.source",
     "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/liquidaty-zsv/zsv/zsv",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zsv-source/zsv/zsv",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zsv/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "Worlds fastest (simd) CSV parser, with an extensible CLI",
+    "description": "A command-line utility for parsing CSV",
     "distro_pkg": {
       "nixpkgs": [
         "zsv"
@@ -14366,5 +14209,54 @@
       "csv"
     ],
     "version": "HEAD-a5691ce-250127T120805"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zsv",
+    "pkg_family": "zsv",
+    "pkg_id": "ppkg.zsv",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-zsv/zsv/zsv",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zsv/static.ppkg.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line utility for parsing CSV",
+    "distro_pkg": {
+      "nixpkgs": [
+        "zsv"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zsv/static.ppkg.source.yaml",
+    "homepage": [
+      "https://github.com/liquidaty/zsv"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "zsv"
+    ],
+    "repology": [
+      "zsv"
+    ],
+    "src_url": [
+      "https://github.com/liquidaty/zsv"
+    ],
+    "tag": [
+      "csv"
+    ]
   }
 ]

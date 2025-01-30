@@ -475,6 +475,83 @@
   },
   {
     "_disabled": "false",
+    "pkg": "bash",
+    "pkg_family": "bash",
+    "pkg_id": "nixpkgs.bash",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bash/bash/bash",
+    "bincache": "ghcr.io/pkgforge/bincache/bash/nixpkgs/bash",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bash/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux",
+    "distro_pkg": {
+      "alpine": [
+        "bash"
+      ],
+      "archlinux": {
+        "aur": [
+          "bash-devel-git",
+          "bash-devel-static-git",
+          "bash-git",
+          "bash3",
+          "bash4"
+        ]
+      },
+      "debian": [
+        "bash"
+      ],
+      "gnuguix": [
+        "bash",
+        "bash-minimal",
+        "bash-static"
+      ],
+      "homebrew": [
+        "bash"
+      ],
+      "nixpkgs": [
+        "bash"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bash/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/bash/",
+      "https://git.savannah.gnu.org/cgit/bash.git",
+      "https://savannah.gnu.org/projects/bash"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "bash==sh"
+    ],
+    "repology": [
+      "bash"
+    ],
+    "src_url": [
+      "https://git.savannah.gnu.org/cgit/bash.git"
+    ],
+    "tag": [
+      "bash",
+      "shell"
+    ],
+    "version": "5.2p37"
+  },
+  {
+    "_disabled": "false",
     "pkg": "batcat",
     "pkg_family": "bat",
     "pkg_id": "github.com.sharkdp.bat",
@@ -2772,144 +2849,6 @@
       "container"
     ],
     "version": "v0.15.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "dash",
-    "pkg_family": "dash",
-    "pkg_id": "nixpkgs.bash",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bash/dash/dash",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dash/static.nixpkgs.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "POSIX compliant shell that aims to be as small as possible",
-    "distro_pkg": {
-      "alpine": [
-        "dash"
-      ],
-      "archlinux": {
-        "aur": [
-          "dash-git",
-          "dash-static",
-          "dash-static-musl"
-        ]
-      },
-      "debian": [
-        "dash"
-      ],
-      "gnuguix": [
-        "dash"
-      ],
-      "homebrew": [
-        "dash"
-      ],
-      "nixpkgs": [
-        "dash"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dash/static.nixpkgs.stable.yaml",
-    "homepage": [
-      "http://gondor.apana.org.au/~herbert/dash/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
-    ],
-    "provides": [
-      "dash"
-    ],
-    "repology": [
-      "dash"
-    ],
-    "src_url": [
-      "https://git.kernel.org/pub/scm/utils/dash/dash.git/"
-    ],
-    "tag": [
-      "shell"
-    ],
-    "version": "0.5.12"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "dash",
-    "pkg_family": "dash",
-    "pkg_id": "ppkg.dash",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-dash/dash/dash",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dash/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "POSIX compliant shell that aims to be as small as possible",
-    "distro_pkg": {
-      "alpine": [
-        "dash"
-      ],
-      "archlinux": {
-        "aur": [
-          "dash-git",
-          "dash-static",
-          "dash-static-musl"
-        ]
-      },
-      "debian": [
-        "dash"
-      ],
-      "gnuguix": [
-        "dash"
-      ],
-      "homebrew": [
-        "dash"
-      ],
-      "nixpkgs": [
-        "dash"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dash/static.ppkg.stable.yaml",
-    "homepage": [
-      "http://gondor.apana.org.au/~herbert/dash/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "dash"
-    ],
-    "repology": [
-      "dash"
-    ],
-    "src_url": [
-      "https://git.kernel.org/pub/scm/utils/dash/dash.git/"
-    ],
-    "tag": [
-      "shell"
-    ],
-    "version": "0.5.12"
   },
   {
     "_disabled": "false",
@@ -6063,7 +6002,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-2bed09e-250130T085556"
+    "version": "HEAD-49f8dc2-250130T091418"
   },
   {
     "_disabled": "false",
@@ -8338,102 +8277,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "openssh",
-    "pkg_family": "openssh",
-    "pkg_id": "ppkg.openssh",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-openssh/openssh/openssh",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/openssh/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Utilities and servers for secure shell connections",
-      "scp": "OpenSSH secure file copy [openssh]",
-      "sftp": "OpenSSH secure file transfer [openssh]",
-      "sftp-server": "OpenSSH SFTP server subsystem [openssh]",
-      "ssh": "OpenSSH remote login client [openssh]",
-      "ssh-add": "Add private key identities to the OpenSSH authentication agent [openssh]",
-      "ssh-agent": "OpenSSH authentication agent [openssh]",
-      "ssh-copy-id": "Use locally available keys to authorize logins on a remote machine [openssh]",
-      "sshd": "OpenSSH daemon [openssh]",
-      "sshd-session": "OpenSSH Privilege Separation [openssh]",
-      "ssh-keygen": "OpenSSH authentication key utility [openssh]",
-      "ssh-keyscan": "Gather SSH public keys from servers [openssh]",
-      "ssh-keysign": "OpenSSH helper for host-based authentication [openssh]",
-      "ssh-pkcs11-helper": "OpenSSH helper for PKCS#11 support [openssh]",
-      "ssh-sk-helper": "OpenSSH helper for FIDO authenticator support [openssh]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "openssh"
-      ],
-      "archlinux": {
-        "aur": [
-          "openssh-git"
-        ]
-      },
-      "debian": [
-        "openssh"
-      ],
-      "gnuguix": [
-        "openssh"
-      ],
-      "homebrew": [
-        "openssh"
-      ],
-      "nixpkgs": [
-        "openssh"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/openssh/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://www.openssh.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "scp",
-      "sftp",
-      "sftp-server",
-      "ssh",
-      "ssh-add",
-      "ssh-agent",
-      "ssh-copy-id",
-      "sshd",
-      "sshd-session",
-      "ssh-keygen",
-      "ssh-keyscan",
-      "ssh-keysign",
-      "ssh-pkcs11-helper",
-      "ssh-sk-helper"
-    ],
-    "repology": [
-      "openssh"
-    ],
-    "src_url": [
-      "https://github.com/openssh/openssh-portable"
-    ],
-    "tag": [
-      "ssh"
-    ],
-    "version": "9.9.1"
-  },
-  {
-    "_disabled": "false",
     "pkg": "ov",
     "pkg_family": "ov",
     "pkg_id": "github.com.noborus.ov",
@@ -9067,223 +8910,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "qemu",
-    "pkg_family": "qemu",
-    "pkg_id": "ppkg.qemu",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-qemu/qemu/qemu",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qemu/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "QEMU System/User mode Emulation & Virtualization binaries",
-      "qemu-aarch64": "Simulate a 64-bit Arm machine [qemu]",
-      "qemu-aarch64_be": "Simulate a 64-bit big-endian Arm machine [qemu]",
-      "qemu-alpha": "Simulate a DEC Alpha machine [qemu]",
-      "qemu-arm": "Simulate a 32-bit Arm machine [qemu]",
-      "qemu-armeb": "Simulate a 32-bit big-endian Arm machine [qemu]",
-      "qemu-avr": "Simulate a Full System AVR 8 bit based machine [qemu]",
-      "qemu-bridge-helper": "QEMU Network Utility [qemu]",
-      "qemu-cris": "Simulate a CRIS (Code Reduced Instruction Set) machine [qemu]",
-      "qemu-edid": "QEMU EDID test tool [qemu]",
-      "qemu-hexagon": "Simulate a Qualcomm Hexagon DSP [qemu]",
-      "qemu-hppa": "Simulate a HP PA-RISC machine [qemu]",
-      "qemu-i386": "Simulate a 32-bit x86 machine [qemu]",
-      "qemu-img": "QEMU Disk Image utility [qemu]",
-      "qemu-io": "QEMU Disk exerciser [qemu]",
-      "qemu-loongarch64": "Simulate a 64-bit LoongArch machine [qemu]",
-      "qemu-m68k": "Simulate a Motorola 68000 series machine [qemu]",
-      "qemu-microblaze": "Simulate a Xilinx MicroBlaze big-endian machine [qemu]",
-      "qemu-microblazeel": "Simulate a Xilinx MicroBlaze little-endian machine [qemu]",
-      "qemu-mips": "Simulate a 32-bit big-endian MIPS machine [qemu]",
-      "qemu-mips64": "Simulate a 64-bit big-endian MIPS machin [qemu]",
-      "qemu-mips64el": "Simulate a 64-bit little-endian MIPS machine [qemu]",
-      "qemu-mipsel": "Simulate a 32-bit little-endian MIPS machine [qemu]",
-      "qemu-mipsn32": "Simulate a 32-bit big-endian MIPS machine with N32 ABI [qemu]",
-      "qemu-mipsn32el": "Simulate a 32-bit little-endian MIPS machine with N32 ABI [qemu]",
-      "qemu-nbd": "QEMU Disk Network Block Device Server [qemu]",
-      "qemu-nios2": "Simulate an Altera Nios II machine [qemu]",
-      "qemu-or1k": "Simulate an OpenRISC 1000 machine [qemu]",
-      "qemu-ppc": "Simulate a 32-bit PowerPC machine [qemu]",
-      "qemu-ppc64": "Simulate a 64-bit big-endian PowerPC machine [qemu]",
-      "qemu-ppc64le": "Simulate a 64-bit little-endian PowerPC machine [qemu]",
-      "qemu-pr-helper": "QEMU persistent reservation helper [qemu]",
-      "qemu-riscv32": "Simulate a 32-bit RISC-V machine [qemu]",
-      "qemu-riscv64": "Simulate a 64-bit RISC-V machine [qemu]",
-      "qemu-s390x": "Simulate an IBM System z machine [qemu]",
-      "qemu-sh4": "Simulate a SuperH SH-4 little-endian machine [qemu]",
-      "qemu-sh4eb": "Simulate a SuperH SH-4 big-endian machine [qemu]",
-      "qemu-sparc": "Simulate a 32-bit SPARC machine [qemu]",
-      "qemu-sparc32plus": "Simulate a 32-bit SPARC V8+ machine [qemu]",
-      "qemu-sparc64": "Simulate a 64-bit SPARC machine [qemu]",
-      "qemu-storage-daemon": "QEMU storage daemon [qemu]",
-      "qemu-system-aarch64": "Simulate a Full System 64-bit Arm machine",
-      "qemu-system-alpha": "Simulate a Full System DEC Alpha machine [qemu]",
-      "qemu-system-arm": "Simulate a Full System 32-bit Arm machine [qemu]",
-      "qemu-system-avr": "Simulate a Full System AVR 8 bit based machine [qemu]",
-      "qemu-system-hppa": "Simulate a Full System HP PA-RISC machine [qemu]",
-      "qemu-system-i386": "Simulate a Full System 32-bit x86 machine [qemu]",
-      "qemu-system-loongarch64": "Simulate a Full System 64-bit LoongArch machine [qemu]",
-      "qemu-system-m68k": "Simulate a Full System Motorola 68000 series machine [qemu]",
-      "qemu-system-microblaze": "Simulate a Full System Xilinx MicroBlaze big-endian machine [qemu]",
-      "qemu-system-microblazeel": "Simulate a Full System Xilinx MicroBlaze little-endian machine [qemu]",
-      "qemu-system-mips": "Simulate a Full System 32-bit big-endian MIPS machine [qemu]",
-      "qemu-system-mips64": "Simulate a Full System 64-bit big-endian MIPS machine [qemu]",
-      "qemu-system-mips64el": "Simulate a Full System 64-bit little-endian MIPS machine [qemu]",
-      "qemu-system-mipsel": "Simulate a Full System 32-bit little-endian MIPS machine [qemu]",
-      "qemu-system-or1k": "Simulate a Full System OpenRISC 1000 machine [qemu]",
-      "qemu-system-ppc": "Simulate a Full System 32-bit PowerPC machine [qemu]",
-      "qemu-system-ppc64": "Simulate a Full System 64-bit big-endian PowerPC machine [qemu]",
-      "qemu-system-riscv64": "Simulate a Full System 64-bit RISC-V machine [qemu]",
-      "qemu-system-rx": "Simulate a Full System RX target (GDB simulator) [qemu]",
-      "qemu-system-s390x": "Simulate a Full System IBM System z machine [qemu]",
-      "qemu-system-sh4": "Simulate a Full System SuperH SH-4 little-endian machine [qemu]",
-      "qemu-system-sh4eb": "Simulate a Full System SuperH SH-4 big-endian machine [qemu]",
-      "qemu-system-sparc": "Simulate a Full System 32-bit SPARC machine [qemu]",
-      "qemu-system-sparc64": "Simulate a Full System 64-bit SPARC machine [qemu]",
-      "qemu-system-tricore": "Simulate a Full System Tricore micro-controller [qemu]",
-      "qemu-system-x86_64": "Simulate a Full System 64-bit x86 machine [qemu]",
-      "qemu-system-xtensa": "Simulate a Full System Tensilica Xtensa little-endian machine [qemu]",
-      "qemu-system-xtensaeb": "Simulate a Full System Tensilica Xtensa big-endian machine [qemu]",
-      "qemu-vmsr-helper": "QEMU persistent reservation utility [qemu]",
-      "qemu-x86_64": "Simulate a Full System 64-bit x86 machine [qemu]",
-      "qemu-xtensa": "Simulate a Full System Tensilica Xtensa little-endian machine [qemu]",
-      "qemu-xtensaeb": "Simulate a Full System Tensilica Xtensa big-endian machine [qemu]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "qemu"
-      ],
-      "archlinux": {
-        "aur": [
-          "qemu-git"
-        ],
-        "extra": [
-          "qemu"
-        ]
-      },
-      "debian": [
-        "qemu"
-      ],
-      "gnuguix": [
-        "qemu"
-      ],
-      "homebrew": [
-        "qemu"
-      ],
-      "nixpkgs": [
-        "qemu"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qemu/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://www.qemu.org",
-      "https://gitlab.com/qemu-project/qemu",
-      "https://github.com/qemu/qemu"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "qemu-aarch64==qemu-aarch64-static",
-      "qemu-aarch64_be==qemu-aarch64_be-static",
-      "qemu-alpha==qemu-alpha-static",
-      "qemu-arm==qemu-arm-static",
-      "qemu-armeb==qemu-armeb-static",
-      "qemu-bridge-helper",
-      "qemu-edid",
-      "qemu-hexagon==qemu-hexagon-static",
-      "qemu-hppa==qemu-hppa-static",
-      "qemu-i386==qemu-i386-static",
-      "qemu-img",
-      "qemu-io",
-      "qemu-loongarch64==qemu-loongarch64-static",
-      "qemu-m68k==qemu-m68k-static",
-      "qemu-microblaze==qemu-microblaze-static",
-      "qemu-microblazeel==qemu-microblazeel-static",
-      "qemu-mips==qemu-mips-static",
-      "qemu-mips64==qemu-mips64-static",
-      "qemu-mips64el==qemu-mips64el-static",
-      "qemu-mipsel==qemu-mipsel-static",
-      "qemu-mipsn32==qemu-mipsn32-static",
-      "qemu-mipsn32el==qemu-mipsn32el-static",
-      "qemu-nbd",
-      "qemu-or1k==qemu-or1k-static",
-      "qemu-ppc==qemu-ppc-static",
-      "qemu-ppc64==qemu-ppc64-static",
-      "qemu-ppc64le==qemu-ppc64le-static",
-      "qemu-pr-helper",
-      "qemu-riscv32==qemu-riscv32-static",
-      "qemu-riscv64==qemu-riscv64-static",
-      "qemu-s390x==qemu-s390x-static",
-      "qemu-sh4==qemu-sh4-static",
-      "qemu-sh4eb==qemu-sh4eb-static",
-      "qemu-sparc==qemu-sparc-static",
-      "qemu-sparc32plus==qemu-sparc32plus-static",
-      "qemu-sparc64==qemu-sparc64-static",
-      "qemu-storage-daemon",
-      "qemu-system-aarch64",
-      "qemu-system-alpha",
-      "qemu-system-arm",
-      "qemu-system-avr",
-      "qemu-system-hppa",
-      "qemu-system-i386",
-      "qemu-system-loongarch64",
-      "qemu-system-m68k",
-      "qemu-system-microblaze",
-      "qemu-system-microblazeel",
-      "qemu-system-mips",
-      "qemu-system-mips64",
-      "qemu-system-mips64el",
-      "qemu-system-mipsel",
-      "qemu-system-or1k",
-      "qemu-system-ppc",
-      "qemu-system-ppc64",
-      "qemu-system-riscv32",
-      "qemu-system-riscv64",
-      "qemu-system-rx",
-      "qemu-system-s390x",
-      "qemu-system-sh4",
-      "qemu-system-sh4eb",
-      "qemu-system-sparc",
-      "qemu-system-sparc64",
-      "qemu-system-tricore",
-      "qemu-system-x86_64",
-      "qemu-system-xtensa",
-      "qemu-system-xtensaeb",
-      "qemu-vmsr-helper",
-      "qemu-x86_64==qemu-x86_64-static",
-      "qemu-xtensa==qemu-xtensa-static",
-      "qemu-xtensaeb==qemu-xtensaeb-static"
-    ],
-    "repology": [
-      "qemu"
-    ],
-    "src_url": [
-      "https://gitlab.com/qemu-project/qemu"
-    ],
-    "tag": [
-      "emulation",
-      "qemu",
-      "virtualization"
-    ],
-    "version": "9.2.0"
-  },
-  {
-    "_disabled": "false",
     "pkg": "qsv",
     "pkg_family": "qsv",
     "pkg_id": "github.com.dathere.qsv",
@@ -9399,7 +9025,7 @@
       "conda",
       "mamba"
     ],
-    "version": "v0.35.8"
+    "version": "v0.35.9"
   },
   {
     "_disabled": "false",
@@ -9639,7 +9265,7 @@
       "provenance",
       "security"
     ],
-    "version": "HEAD-b0e9f60-250127T182830"
+    "version": "HEAD-6e8d290-250130T092840"
   },
   {
     "_disabled": "false",
@@ -11536,7 +11162,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-8bd04bd-250129T124401"
+    "version": "HEAD-0ed4aa0-250130T084852"
   },
   {
     "_disabled": "false",
@@ -13356,21 +12982,21 @@
     "_disabled": "false",
     "pkg": "zsv",
     "pkg_family": "zsv",
-    "pkg_id": "github.com.liquidaty.zsv",
+    "pkg_id": "ppkg.zsv",
     "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/liquidaty-zsv/zsv/zsv",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zsv/static.official.source.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-zsv/zsv/zsv",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zsv/static.ppkg.source.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "Worlds fastest (simd) CSV parser, with an extensible CLI",
+    "description": "A command-line utility for parsing CSV",
     "distro_pkg": {
       "nixpkgs": [
         "zsv"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zsv/static.official.source.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zsv/static.ppkg.source.yaml",
     "homepage": [
       "https://github.com/liquidaty/zsv"
     ],
@@ -13386,7 +13012,7 @@
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/liquidaty/zsv"
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
     ],
     "provides": [
       "zsv"
@@ -13399,7 +13025,6 @@
     ],
     "tag": [
       "csv"
-    ],
-    "version": "HEAD-a5691ce-250127T120805"
+    ]
   }
 ]

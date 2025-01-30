@@ -9530,6 +9530,23 @@
     "install": "cmakew \\\n    -DWITH_JAVA=OFF \\\n    -DENABLE_STATIC=ON \\\n    -DENABLE_SHARED=ON \\\n    --components=lib,include"
   },
   {
+    "pkgname": "libjq",
+    "pkgtype": "lib",
+    "version": "1.7.1",
+    "license": "MIT",
+    "summary": "C library for jq",
+    "web-url": "https://stedolan.github.io/jq",
+    "git-url": "https://github.com/stedolan/jq",
+    "src-url": "https://github.com/stedolan/jq/releases/download/jq-1.7.1/jq-1.7.1.tar.gz",
+    "src-sha": "478c9ca129fd2e3443fe27314b455e211e0d8c60bc8ff7df703873deeee580c2",
+    "dep-pkg": "oniguruma",
+    "dep-upp": "bison curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "configure --with-oniguruma=\"$oniguruma_INSTALL_DIR\""
+  },
+  {
     "pkgname": "libjson-c",
     "pkgtype": "lib",
     "version": "0.17",
@@ -13418,6 +13435,22 @@
     "binbstd": "0",
     "parallel": "1",
     "install": "cmakew \\\n    -DZSTD_BUILD_STATIC=ON \\\n    -DZSTD_BUILD_SHARED=ON \\\n    -DZSTD_BUILD_TESTS=OFF \\\n    -DZSTD_BUILD_CONTRIB=OFF \\\n    -DZSTD_BUILD_PROGRAMS=OFF \\\n    -DZSTD_MULTITHREAD_SUPPORT=ON"
+  },
+  {
+    "pkgname": "libzsv",
+    "pkgtype": "lib",
+    "version": "0.4.4",
+    "summary": "C library for parsing CSV",
+    "web-url": "https://github.com/liquidaty/zsv",
+    "git-url": "https://github.com/liquidaty/zsv",
+    "src-url": "https://github.com/liquidaty/zsv/archive/refs/tags/v0.4.4-alpha.tar.gz",
+    "src-sha": "37747732d434b931c22ca54a1f2301d7bb6c75bd001325d374e0cacf5242684c",
+    "dep-pkg": "libncurses libjq",
+    "dep-upp": "perl curl bsdtar gmake",
+    "bsystem": "gmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "install": "export CFLAGS=\"$CFLAGS $CPPFLAGS\"\nrun ./configure --disable-termcap --prefix=\"$PACKAGE_INSTALL_DIR\"\ngmakew -C src\ngmakew -C src install"
   },
   {
     "pkgname": "lief",
@@ -20903,6 +20936,22 @@
     "parallel": "1",
     "install": "cmakew \\\n    -DZSTD_MULTITHREAD_SUPPORT=ON \\\n    -DZSTD_BUILD_TESTS=OFF \\\n    -DZSTD_BUILD_CONTRIB=OFF \\\n    -DZSTD_BUILD_PROGRAMS=ON \\\n    -DZSTD_BUILD_STATIC=ON \\\n    -DZSTD_BUILD_SHARED=OFF \\\n    -DZSTD_ZLIB_SUPPORT=ON \\\n    -DZSTD_LZMA_SUPPORT=ON \\\n    -DZSTD_LZ4_SUPPORT=OFF",
     "dotweak": "rm -rf include/ lib/"
+  },
+  {
+    "pkgname": "zsv",
+    "pkgtype": "exe",
+    "version": "0.4.4",
+    "summary": "A command-line utility for parsing CSV",
+    "web-url": "https://github.com/liquidaty/zsv",
+    "git-url": "https://github.com/liquidaty/zsv",
+    "src-url": "https://github.com/liquidaty/zsv/archive/refs/tags/v0.4.4-alpha.tar.gz",
+    "src-sha": "37747732d434b931c22ca54a1f2301d7bb6c75bd001325d374e0cacf5242684c",
+    "dep-pkg": "libncurses libjq",
+    "dep-upp": "perl curl bsdtar gmake",
+    "bsystem": "gmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "install": "export CFLAGS=\"$CFLAGS $CPPFLAGS\"\nrun ./configure --disable-termcap --prefix=\"$PACKAGE_INSTALL_DIR\"\ngmakew -C app\ngmakew -C app install"
   },
   {
     "pkgname": "zsync",

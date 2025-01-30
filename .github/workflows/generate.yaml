@@ -21,6 +21,7 @@ jobs:
       packages: write
       statuses: read
     strategy:
+      fail-fast: false
       matrix:
         include:
           - repo: "bincache"
@@ -58,6 +59,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: main
+          fetch-depth: "1"
           filter: "blob:none"
 
       - name: Install Addons

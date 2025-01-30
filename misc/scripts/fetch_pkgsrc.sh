@@ -54,3 +54,22 @@ else
 fi
 popd >/dev/null 2>&1
 #-------------------------------------------------------#
+
+
+#-------------------------------------------------------#
+##Copy to "${GITHUB_WORKSPACE}/main/misc/data"
+if command -v rclone &> /dev/null &&\
+ [ -s "${HOME}/.rclone.conf" ] &&\
+ [ -s "${SYSTMP}/PKGSRC.json" ] &&\
+ [ -d "${GITHUB_WORKSPACE}" ] &&\
+ [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
+ #chdir to Repo
+  cd "${GITHUB_WORKSPACE}/main"
+ #Git pull
+  git pull origin main --no-edit 2>/dev/null
+ #Copy (GitHub)
+  cp -fv "${SYSTMP}/PKGSRC.json" "${GITHUB_WORKSPACE}/main/misc/data/PKGSRC.json"
+ #rClone
+  rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/PKGSRC.json" "r2:/meta/misc/PKGSRC.json" --checksum --check-first --user-agent="${USER_AGENT}"
+fi
+#-------------------------------------------------------#

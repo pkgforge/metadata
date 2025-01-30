@@ -3,8 +3,8 @@
 ## Meant to Fetch Debian data
 ## Files:
 #   "${SYSTMP}/DEBIAN.json"
-## Self: https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_debian.sh
-# bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_debian.sh")
+## Self: https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_debian_src.sh
+# bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_debian_src.sh")
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#

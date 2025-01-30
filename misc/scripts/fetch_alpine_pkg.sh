@@ -265,3 +265,21 @@ if [[ -s "${TMPDIR}/ALPINE.json.main" ]] && [[ -s "${TMPDIR}/ALPINE.json.communi
 fi
 popd >/dev/null 2>&1
 #-------------------------------------------------------#
+
+#-------------------------------------------------------#
+##Copy to "${GITHUB_WORKSPACE}/main/misc/data"
+if command -v rclone &> /dev/null &&\
+ [ -s "${HOME}/.rclone.conf" ] &&\
+ [ -s "${SYSTMP}/ALPINE_PKG.json" ] &&\
+ [ -d "${GITHUB_WORKSPACE}" ] &&\
+ [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
+ #chdir to Repo
+  cd "${GITHUB_WORKSPACE}/main"
+ #Git pull
+  git pull origin main --no-edit 2>/dev/null
+ #Copy (GitHub)
+  cp -fv "${SYSTMP}/ALPINE_PKG.json" "${GITHUB_WORKSPACE}/main/misc/data/ALPINE_PKG.json"
+ #rClone
+  rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/ALPINE_PKG.json" "r2:/meta/misc/ALPINE_PKG.json" --checksum --check-first --user-agent="${USER_AGENT}"
+fi
+#-------------------------------------------------------#

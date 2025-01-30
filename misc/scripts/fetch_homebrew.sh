@@ -123,3 +123,26 @@ wait
 echo -e "\n[+] Saved Formula ==> $(realpath ${SYSTMP}/BREW_FORMULA.json)"
 echo -e "[+] Saved Casks ==> $(realpath ${SYSTMP}/BREW_CASK.json)\n"
 #-------------------------------------------------------#
+
+#-------------------------------------------------------#
+##Copy to "${GITHUB_WORKSPACE}/main/misc/data"
+if command -v rclone &> /dev/null &&\
+ [ -s "${HOME}/.rclone.conf" ] &&\
+ [ -d "${GITHUB_WORKSPACE}" ] &&\
+ [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
+ #chdir to Repo
+  cd "${GITHUB_WORKSPACE}/main"
+ #Git pull
+  git pull origin main --no-edit 2>/dev/null
+ #Copy
+  if [[ -s "${SYSTMP}/BREW_CASK.json" ]] && [[ $(stat -c%s "${SYSTMP}/BREW_CASK.json") -gt 1000 ]]; then
+   cp -fv "${SYSTMP}/BREW_CASK.json" "${GITHUB_WORKSPACE}/main/misc/data/BREW_CASK.json"
+   rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/BREW_CASK.json" "r2:/meta/misc/BREW_CASK.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+  fi
+  if [[ -s "${SYSTMP}/BREW_FORMULA.json" ]] && [[ $(stat -c%s "${SYSTMP}/BREW_FORMULA.json") -gt 1000 ]]; then
+   cp -fv "${SYSTMP}/BREW_FORMULA.json" "${GITHUB_WORKSPACE}/main/misc/data/BREW_FORMULA.json"
+   rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/BREW_FORMULA.json" "r2:/meta/misc/BREW_FORMULA.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+  fi
+ wait ; echo
+fi
+#-------------------------------------------------------#

@@ -161,3 +161,21 @@ if [[ -s "${TMPDIR}/ARCH.json" && $(stat -c%s "${TMPDIR}/ARCH.json") -gt 1024 ]]
  fi
 fi
 #-------------------------------------------------------#
+
+#-------------------------------------------------------#
+##Copy to "${GITHUB_WORKSPACE}/main/misc/data"
+if command -v rclone &> /dev/null &&\
+ [ -s "${HOME}/.rclone.conf" ] &&\
+ [ -s "${SYSTMP}/ARCHLINUX.json" ] &&\
+ [ -d "${GITHUB_WORKSPACE}" ] &&\
+ [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
+ #chdir to Repo
+  cd "${GITHUB_WORKSPACE}/main"
+ #Git pull
+  git pull origin main --no-edit 2>/dev/null
+ #Copy (GitHub)
+  cp -fv "${SYSTMP}/ARCHLINUX.json" "${GITHUB_WORKSPACE}/main/misc/data/ARCHLINUX.json"
+ #rClone
+  rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/ARCHLINUX.json" "r2:/meta/misc/ARCHLINUX.json" --checksum --check-first --user-agent="${USER_AGENT}"
+fi
+#-------------------------------------------------------#

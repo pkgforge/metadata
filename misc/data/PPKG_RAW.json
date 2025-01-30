@@ -6995,6 +6995,23 @@
     "install": "cmakew 2 -DBUILD_APPS=OFF"
   },
   {
+    "pkgname": "libZ80",
+    "pkgtype": "lib",
+    "version": "0.2",
+    "license": "LGPL-3.0",
+    "summary": "A Highly portable Zilog Z80 CPU emulator written in ANSI C",
+    "web-url": "https://github.com/redcode/Z80",
+    "git-url": "https://github.com/redcode/Z80",
+    "src-url": "https://github.com/redcode/Z80/archive/refs/tags/v0.2-pre-2024-09-21.tar.gz",
+    "src-sha": "cde20c936c629e67bfd5e988603f1a651ac39d368e8de18dec9b260e4230165f",
+    "dep-pkg": "zeta",
+    "dep-upp": "curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "cmakew 2 \\\n    -DZ80_WITH_Q=YES \\\n    -DZ80_WITH_EXECUTE=YES \\\n    -DZ80_WITH_FULL_IM0=YES \\\n    -DZ80_WITH_IM0_RETX_NOTIFICATIONS=YES \\\n    -DZ80_WITH_ZILOG_NMOS_LD_A_IR_BUG=YES \\\n    -DZ80_WITH_PKGCONFIG_SUPPORT=YES \\\n    -DZ80_WITH_CMAKE_SUPPORT=YES"
+  },
+  {
     "pkgname": "libacl",
     "pkgtype": "lib",
     "version": "2.3.2",
@@ -20717,6 +20734,23 @@
     "install": "cmakew \\\n    -DZ3_USE_LIB_GMP=OFF \\\n    -DZ3_LINK_TIME_OPTIMIZATION=ON \\\n    -DZ3_INCLUDE_GIT_HASH=OFF \\\n    -DZ3_INCLUDE_GIT_DESCRIBE=OFF \\\n    -DZ3_BUILD_EXECUTABLE=ON \\\n    -DZ3_BUILD_TEST_EXECUTABLES=OFF \\\n    -DZ3_BUILD_JAVA_BINDINGS=OFF \\\n    -DZ3_BUILD_DOTNET_BINDINGS=OFF \\\n    -DZ3_BUILD_PYTHON_BINDINGS=ON \\\n    -DZ3_INSTALL_PYTHON_BINDINGS=ON"
   },
   {
+    "pkgname": "z88dk",
+    "pkgtype": "exe",
+    "version": "2.3",
+    "license": "The Clarified Artistic License",
+    "summary": "A collection of software development tools that targets the 8080 and z80 family of machines",
+    "web-url": "https://github.com/z88dk/z88dk",
+    "git-url": "https://github.com/z88dk/z88dk",
+    "src-url": "https://github.com/z88dk/z88dk/releases/download/v2.3/z88dk-src-2.3.tgz",
+    "src-sha": "e08887ef9344f8dbd9d669bb904e17c35290a316bb1fe8b02c1a45b0d291292f",
+    "dep-pkg": "libxml2 libgmp ragel re2c",
+    "dep-upp": "gm4 flex bison dos2unix texinfo curl bsdtar gmake",
+    "bsystem": "gmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "install": "run ./build.sh -C -v\ngmakew install PREFIX=\"$PACKAGE_INSTALL_DIR\""
+  },
+  {
     "pkgname": "zellij",
     "pkgtype": "exe",
     "version": "0.41.2",
@@ -20733,6 +20767,20 @@
     "parallel": "1",
     "prepare": "export RUSTUP_TOOLCHAIN=1.81",
     "install": "cargow install"
+  },
+  {
+    "pkgname": "zeta",
+    "pkgtype": "exe",
+    "version": "2025.01.30",
+    "license": "LGPL-3.0",
+    "summary": "Header-only general purpose library",
+    "web-url": "https://github.com/redcode/Zeta",
+    "git-url": "https://github.com/redcode/Zeta",
+    "dep-upp": "git cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "cmakew"
   },
   {
     "pkgname": "zig",

@@ -38,8 +38,8 @@ const commonDescriptions = {
     '/bincache/aarch64-linux.db.zstd': "🗃️ Compressed ZSTD SQLITE DB (aarch64-Linux)",
     '/bincache/aarch64-Linux.db.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
     '/bincache/aarch64-linux.db.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
-    '/bincache/logs/aarch64-Linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (aarch64-Linux)",
-    '/bincache/logs/aarch64-linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (aarch64-Linux)",
+    //'/bincache/logs/aarch64-Linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (aarch64-Linux)",
+    //'/bincache/logs/aarch64-linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (aarch64-Linux)",
     //x86_64-Linux
     '/bincache/x86_64-Linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
     '/bincache/x86_64-linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
@@ -69,8 +69,8 @@ const commonDescriptions = {
     '/bincache/x86_64-linux.db.zstd': "🗃️ Compressed ZSTD SQLITE DB (x86_64-Linux)",
     '/bincache/x86_64-Linux.db.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
     '/bincache/x86_64-linux.db.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
-    '/bincache/logs/x86_64-Linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (x86_64-Linux)",
-    '/bincache/logs/x86_64-linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (x86_64-Linux)",
+    //'/bincache/logs/x86_64-Linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (x86_64-Linux)",
+    //'/bincache/logs/x86_64-linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (x86_64-Linux)",
     // misc
     '/misc': "🧬 Third Party JSON Metadata",
     '/misc/list.gif': "🎨 Automated VHS GIF (soar)",
@@ -127,8 +127,8 @@ const commonDescriptions = {
     '/pkgcache/aarch64-linux.db.zstd': "🗃️ Compressed ZSTD SQLITE DB (aarch64-Linux)",
     '/pkgcache/aarch64-Linux.db.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
     '/pkgcache/aarch64-linux.db.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
-    '/pkgcache/logs/aarch64-Linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (aarch64-Linux)",
-    '/pkgcache/logs/aarch64-linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (aarch64-Linux)",
+    //'/pkgcache/logs/aarch64-Linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (aarch64-Linux)",
+    //'/pkgcache/logs/aarch64-linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (aarch64-Linux)",
     //x86_64-Linux
     '/pkgcache/x86_64-Linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
     '/pkgcache/x86_64-linux.json': "🧬 JSON Metadata For 📦 Package Managers & 🗿 Humans (x86_64-Linux)",
@@ -158,8 +158,8 @@ const commonDescriptions = {
     '/pkgcache/x86_64-linux.db.zstd': "🗃️ Compressed ZSTD SQLITE DB (x86_64-Linux)",
     '/pkgcache/x86_64-Linux.db.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
     '/pkgcache/x86_64-linux.db.zstd.bsum': "🔐 B3SUM (x86_64-Linux)",
-    '/pkgcache/logs/x86_64-Linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (x86_64-Linux)",
-    '/pkgcache/logs/x86_64-linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (x86_64-Linux)",
+    //'/pkgcache/logs/x86_64-Linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (x86_64-Linux)",
+    //'/pkgcache/logs/x86_64-linux.latest.log.xz': "🗃️ Latest (SUCCESSFUL ONLY) CICD Log 🗒️ (x86_64-Linux)",
     // soarpkgs
     '/soarpkgs': "<a href='https://docs.pkgforge.dev/repositories/soarpkgs/metadata'>🧬 JSON Metadata For soarpkgs</a>",
     '/soarpkgs/gpg.pub': "🔑 Public Signing Key (GPG)",

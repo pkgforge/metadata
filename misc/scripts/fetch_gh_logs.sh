@@ -78,7 +78,7 @@ download_action_logs()
  ##Upload
    LOG_IDS=()
    mapfile -t "LOG_IDS" < <(find "${LOGS_DIR}" -type f -name '*.log.xz' -exec basename "{}" .log.xz \; | sort -u)
-   if [ ${#LOG_ID[@]} -eq 0 ]; then
+   if [ ${#LOG_IDS[@]} -eq 0 ]; then
     echo -e "\n[-] No XZ Archives Found"
     return 1
    else

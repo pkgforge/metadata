@@ -25,15 +25,15 @@ download_action_logs()
   fi
  ##Input 
   local INPUT="${1:-$(cat)}"
-  local REPO="$(echo ${INPUT} | sed -E 's|^(https://github.com/)?([^/]+/[^/]+).*|\2|' | tr -d '[:space:]')"
-  local LOGS_DIR="$(mktemp -d)"
-  local JOB_FILE="${LOGS_DIR}/jobID.txt"
-  local RUN_IDS=()
+  export REPO="$(echo ${INPUT} | sed -E 's|^(https://github.com/)?([^/]+/[^/]+).*|\2|' | tr -d '[:space:]')"
+  export LOGS_DIR="$(mktemp -d)"
+  export JOB_FILE="${LOGS_DIR}/jobID.txt"
+  export RUN_IDS=()
  ##Tmpdir
   pushd "${LOGS_DIR}" >/dev/null 2>&1
  ##Get Run IDs 
   readarray -t RUN_IDS < <(gh api "/repos/${REPO}/actions/runs" --paginate \
-    -q '[.workflow_runs[] | select(.name | ascii_downcase | test("bincache.*linux|pkgcache.*linux")) | select(.status == "completed")] | sort_by(.created_at) | reverse | .[:10] | .[].id')
+    -q '[.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed")] | sort_by(.created_at) | reverse | .[:500] | .[].id')
  ##Check if there are any workflow runs
   if [ ${#RUN_IDS[@]} -eq 0 ]; then
    echo -e "\n[-] No workflow runs found\n"
@@ -41,21 +41,21 @@ download_action_logs()
   fi
  ##Download logs for each job
   echo -e "\n [+] Downloading logs...\n"
-  for RUN_ID in "${RUN_IDS[@]}"; do
-   JOB_IDS=($(gh api "/repos/${REPO}/actions/runs/${RUN_ID}/jobs" -q '.jobs[].id'))
-   #Check if we found any jobs
-    if [ ${#JOB_IDS[@]} -eq 0 ]; then
-     echo -e "No jobs found for Workflow Run ID (${RUN_ID}) <== [${RUN_ID}]"
-     continue
-    fi
-   #Download
-    for JOB_ID in "${JOB_IDS[@]}"; do
-     echo -e "Writing logs for job ${JOB_ID} [${RUN_ID}]"
-     JOB_LOGS="logs-${JOB_ID}-${RUN_ID}.txt"
-     gh api "/repos/${REPO}/actions/jobs/${JOB_ID}/logs" > "${LOGS_DIR}/${JOB_LOGS}"
-     du -sh "${LOGS_DIR}/${JOB_LOGS}"
-    done
+  printf "%s\n" "${RUN_IDS[@]}" | xargs -I "{}" -n 1 -P "${PARALLEL_LIMIT:-4}" bash -c '
+  RUN_ID="{}" ; export RUN_ID
+  echo "ID: ${RUN_ID}"
+  JOB_IDS=($(gh api "/repos/${REPO}/actions/runs/${RUN_ID}/jobs" -q ".jobs[].id"))
+  if [ ${#JOB_IDS[@]} -eq 0 ]; then
+    echo -e "No jobs found for Workflow Run ID (${RUN_ID}) <== [${RUN_ID}]"
+    exit 0
+  fi
+  for JOB_ID in "${JOB_IDS[@]}"; do
+    echo "[${RUN_ID}] ==> ${JOB_ID}"
+    JOB_LOGS="logs-${JOB_ID}-${RUN_ID}.txt"
+    gh api "/repos/${REPO}/actions/jobs/${JOB_ID}/logs" > "${LOGS_DIR}/${JOB_LOGS}"
+    du -sh "${LOGS_DIR}/${JOB_LOGS}"
   done
+ '
  ##Archive
    RUN_IDS=()
    mapfile -t RUN_IDS < <(find "${LOGS_DIR}" -maxdepth 1 -name "logs-*.txt" -printf "%f\n" | awk -F'-' '{print $3}' | sed '/^$/d; s/\.txt$//' | sort -u)
@@ -78,30 +78,18 @@ download_action_logs()
  ##Upload
    LOG_IDS=()
    mapfile -t "LOG_IDS" < <(find "${LOGS_DIR}" -type f -name '*.log.xz' -exec basename "{}" .log.xz \; | sort -u)
-   if [ ${#JOB_IDS[@]} -eq 0 ]; then
+   if [ ${#LOG_ID[@]} -eq 0 ]; then
     echo -e "\n[-] No XZ Archives Found"
     return 1
    else
     for LOG_ID in "${LOG_IDS[@]}"; do
-     #aarch64-Linux
-      if gh api "/repos/${REPO}/actions/runs/${LOG_ID}" --jq '.name' | tr -d '[:space:]' | grep -qi 'aarch64-Linux'; then
-        if echo "${REPO}" | grep -qi 'bincache'; then
-          echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://meta.pkgforge.dev/bincache/logs/aarch64-Linux.gh.${LOG_ID}.log.xz]"
-          rclone copyto "${LOGS_DIR}/${LOG_ID}.log.xz" "r2:/meta/bincache/logs/aarch64-Linux.gh.${LOG_ID}.log.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-        elif echo "${REPO}" | grep -qi 'pkgcache'; then
-          echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://meta.pkgforge.dev/pkgcache/logs/aarch64-Linux.gh.${LOG_ID}.log.xz]"
-          rclone copyto "${LOGS_DIR}/${LOG_ID}.log.xz" "r2:/meta/pkgcache/logs/aarch64-Linux.gh.${LOG_ID}.log.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-        fi
-     #x86_64-Linux   
-      elif gh api "/repos/${REPO}/actions/runs/${LOG_ID}" --jq '.name' | tr -d '[:space:]' | grep -qi 'x86_64-Linux'; then
-        if echo "${REPO}" | grep -qi 'bincache'; then
-          echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://meta.pkgforge.dev/bincache/logs/x86_64-Linux.gh.${LOG_ID}.log.xz]"
-          rclone copyto "${LOGS_DIR}/${LOG_ID}.log.xz" "r2:/meta/bincache/logs/x86_64-Linux.gh.${LOG_ID}.log.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-        elif echo "${REPO}" | grep -qi 'pkgcache'; then
-          echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://meta.pkgforge.dev/pkgcache/logs/x86_64-Linux.gh.${LOG_ID}.log.xz]"
-          rclone copyto "${LOGS_DIR}/${LOG_ID}.log.xz" "r2:/meta/pkgcache/logs/x86_64-Linux.gh.${LOG_ID}.log.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-        fi
-      fi
+     if echo "${REPO}" | grep -qi 'bincache'; then
+       echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://meta.pkgforge.dev/bincache/logs/${LOG_ID}.log.xz]"
+       rclone copyto "${LOGS_DIR}/${LOG_ID}.log.xz" "r2:/meta/bincache/logs/${LOG_ID}.log.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+     elif echo "${REPO}" | grep -qi 'pkgcache'; then
+       echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://meta.pkgforge.dev/pkgcache/logs/${LOG_ID}.log.xz]"
+       rclone copyto "${LOGS_DIR}/${LOG_ID}.log.xz" "r2:/meta/pkgcache/logs/${LOG_ID}.log.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+     fi
     done
    fi
  ##Exit

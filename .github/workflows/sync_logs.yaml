@@ -6,7 +6,7 @@ concurrency:
 on:
   workflow_dispatch:
   schedule:
-   - cron: "0 */6 * * *" #every 6 hrs
+   - cron: "0 */12 * * *" #every 12 hrs
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -63,5 +63,5 @@ jobs:
           #-------------#
           dos2unix --quiet "${{ matrix.script }}"
           chmod +x "${{ matrix.script }}"
-          bash "${{ matrix.script }}" "${{ matrix.repo }}"
+          PARALLEL_LIMIT="$(($(nproc)+1))" bash "${{ matrix.script }}" "${{ matrix.repo }}"
         continue-on-error: true

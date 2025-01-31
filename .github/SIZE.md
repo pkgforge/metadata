@@ -39,10 +39,10 @@
  13M   │ │ ├── aarch64-Linux.json
  11M   │ │ ├── x86_64-Linux.db
  10M   │ │ ├── aarch64-Linux.db
-888K   │ │ ├── x86_64-Linux.db.cba
-828K   │ │ ├── aarch64-Linux.db.cba
+896K   │ │ ├── x86_64-Linux.db.cba
+824K   │ │ ├── aarch64-Linux.db.cba
 800K   │ │ ├── x86_64-Linux.json.cba
-712K   │ │ ├── aarch64-Linux.json.cba
+708K   │ │ ├── aarch64-Linux.json.cba
 620K   │ │ ├── x86_64-Linux.db.zstd
 600K   │ │ ├── x86_64-Linux.db.xz
 588K   │ │ ├── x86_64-Linux.json.xz

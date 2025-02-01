@@ -41,9 +41,9 @@ HOST_TRIPLET_L="${HOST_TRIPLET,,}"
 export HOST_TRIPLET HOST_TRIPLET_L
 ##Metadata
 curl -qfsSL "https://meta.pkgforge.dev/pkgcache/${HOST_TRIPLET}.json" -o "${TMPDIR}/METADATA.json"
-if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/METADATA.json" | wc -l)" -le 2000 ]]; then
+if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/METADATA.json" | wc -l)" -le 50 ]]; then
   echo -e "\n[-] FATAL: Failed to Fetch Pkgcache (${HOST_TRIPLET}) Metadata\n"
- exit 1 
+ exit 1
 fi
 #-------------------------------------------------------#
 

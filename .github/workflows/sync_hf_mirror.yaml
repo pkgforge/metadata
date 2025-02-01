@@ -9,7 +9,7 @@ on:
    - cron: "0 1 * * Sun" #UTC 01:00 AM --> 06:45 AM NPT Sun
    - cron: "0 1 * * Wed" #UTC 01:00 AM --> 06:45 AM NPT Wed
 jobs:
-  generate:
+  sync:
     runs-on: ubuntu-latest
     timeout-minutes: 250
     permissions: read-all
@@ -18,10 +18,12 @@ jobs:
       matrix:
         include:
           - repo: "bincache"
-            script: "${GITHUB_WORKSPACE}/main/bincache/scripts/sync_hf_mirror.sh"
+            hf: "https://huggingface.co/datasets/pkgforge/bincache"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/bincache/scripts/sync_hf_mirror.sh"
 
           - repo: "pkgcache"
-            script: "${GITHUB_WORKSPACE}/main/pkgcache/scripts/sync_hf_mirror.sh"
+            hf: "https://huggingface.co/datasets/pkgforge/pkgcache"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/bincache/scripts/sync_hf_mirror.sh"
 
     steps:
       - name: Install Addons
@@ -53,7 +55,7 @@ jobs:
           echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
         continue-on-error: true
 
-      - name: Sync Mirror (${{ matrix.repo }})
+      - name: Sync Mirror [${{ matrix.repo }} ==> ${{ matrix.hf }}]
         env:
           GHCR_TOKEN: "${{ github.token }}"
           GITHUB_TOKEN: "${{ github.token }}"
@@ -63,9 +65,10 @@ jobs:
           #Presets
           set +x ; set +e
           #--------------#
-          dos2unix --quiet "${{ matrix.script }}"
-          chmod +x "${{ matrix.script }}"
+          curl -qfsSL "${{ matrix.script }}" -o "./sync.sh"
+          dos2unix --quiet "./sync.sh"
+          chmod +x "./sync.sh"
           ##DO NOT USE > 1, causes conflict
-          #PARALLEL_LIMIT="$(($(nproc)+1))" bash "${{ matrix.script }}"
-          PARALLEL_LIMIT="1" bash "${{ matrix.script }}"
+          #PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
+          PARALLEL_LIMIT="1" bash "./sync.sh"
         continue-on-error: true

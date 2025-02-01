@@ -89,6 +89,8 @@ sync_to_hf()
        fi
       fi
      done
+    #Edit json
+     find "${HF_PKGPATH}" -type f -iname "*.json" -type f -print0 | xargs -0 -I "{}" sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/bincache/(.*)\?tag=(.*)\&download=(.*)$|https://hf.bincache.pkgforge.dev/\1/\2/\3|g" -i "{}"
     #Push
      pushd "${HF_REPO_DIR}" >/dev/null 2>&1 && \
        git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"

@@ -49,6 +49,79 @@
   },
   {
     "_disabled": "false",
+    "pkg": "age",
+    "pkg_family": "age",
+    "pkg_id": "github.com.FiloSottile.age",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/filosottile-age/age/age",
+    "bincache": "ghcr.io/pkgforge/bincache/age/official/age",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/age/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A simple, modern and secure encryption tool",
+    "distro_pkg": {
+      "alpine": [
+        "age"
+      ],
+      "archlinux": {
+        "aur": [
+          "age-git"
+        ],
+        "extra": [
+          "age"
+        ]
+      },
+      "debian": [
+        "age"
+      ],
+      "nixpkgs": [
+        "age"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/age/static.official.source.yaml",
+    "homepage": [
+      "https://age-encryption.org",
+      "https://filippo.io/age",
+      "https://github.com/FiloSottile/age"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/FiloSottile/age"
+    ],
+    "provides": [
+      "age",
+      "age-keygen"
+    ],
+    "repology": [
+      "age-encryption"
+    ],
+    "src_url": [
+      "https://github.com/FiloSottile/age"
+    ],
+    "tag": [
+      "app-crypt",
+      "Cryptography",
+      "encryption",
+      "Productivity/Networking/Security",
+      "security",
+      "utils"
+    ],
+    "version": "HEAD-3d91014-250201T181520"
+  },
+  {
+    "_disabled": "false",
     "pkg": "aggligator",
     "pkg_family": "aggligator",
     "pkg_id": "github.com.surban.aggligator",
@@ -1344,6 +1417,323 @@
     "_disabled": "false",
     "pkg": "coreutils_uutils",
     "pkg_family": "coreutils",
+    "pkg_id": "github.com.uutils.coreutils.multicall",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-multicall/coreutils/coreutils_uutils",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils_uutils/multicall/coreutils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.multicall.uutils.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Cross-platform Rust rewrite of the GNU coreutils",
+      "[": "Check file types and compare values [coreutils-uutils]",
+      "arch": "Print machine hardware name (same as uname -m) [coreutils-uutils]",
+      "b2sum": "Compute and check BLAKE2 message digest [coreutils-uutils]",
+      "b3sum": "Compute and check BLAKE3 message digest [coreutils-uutils]",
+      "base32": "Base32 encode/decode data and print to standard output [coreutils-uutils]",
+      "base64": "Base64 encode/decode data and print to standard output [coreutils-uutils]",
+      "basename": "Strip directory and suffix from filenames [coreutils-uutils]",
+      "basenc": "Encode/decode data and print to standard output [coreutils-uutils]",
+      "cat": "Concatenate files and print on the standard output [coreutils-uutils]",
+      "chcon": "Change file security context [coreutils-uutils]",
+      "chgrp": "Change group ownership [coreutils-uutils]",
+      "chmod": "Change file owner and group [coreutils-uutils]",
+      "chown": "Change file owner and group [coreutils-uutils]",
+      "chroot": "Run command or interactive shell with special root directory [coreutils-uutils]",
+      "cksum": "Compute and verify file checksums [coreutils-uutils]",
+      "comm": "Compare two sorted files line by line [coreutils-uutils]",
+      "coreutils": "Multicall Binary for Coreutils: GNU File, Shell, and Text utilities",
+      "cp": "Copy files and directories [coreutils-uutils]",
+      "csplit": "Split a file into sections determined by context lines [coreutils-uutils]",
+      "cut": "Remove sections from each line of files [coreutils-uutils]",
+      "date": "Print or set the system date and time [coreutils-uutils]",
+      "dd": "Convert and Copy a file [coreutils-uutils]",
+      "df": "Report file system space usage [coreutils-uutils]",
+      "dir": "List directory contents [coreutils-uutils]",
+      "dircolors": "Color setup for ls [coreutils-uutils]",
+      "dirname": "Strip last component from file name [coreutils-uutils]",
+      "du": "Estimate file space usage [coreutils-uutils]",
+      "echo": "Display a line of text [coreutils-uutils]",
+      "env": "Run a program in a modified environment [coreutils-uutils]",
+      "expand": "Convert tabs to spaces [coreutils-uutils]",
+      "expr": "Evaluate expressions [coreutils-uutils]",
+      "factor": "Factor numbers [coreutils-uutils]",
+      "false": "Do nothing, unsuccessfully [coreutils-uutils]",
+      "fmt": "Simple optimal text formatter [coreutils-uutils]",
+      "fold": "Wrap each input line to fit in specified width [coreutils-uutils]",
+      "ginstall": "Copy files and set attributes [coreutils-uutils]",
+      "groups": "Print the groups a user is in [coreutils-uutils]",
+      "hashsum": "Compute and check message digests for many Algorithms",
+      "head": "Output the first part of files [coreutils-uutils]",
+      "hostid": "Print the numeric identifier for the current host [coreutils-uutils]",
+      "hostname": "Display or set the system's host name [coreutils-uutils]",
+      "id": "Print real and effective user and group IDs [coreutils-uutils]",
+      "install": "Copy files and set attributes [coreutils-uutils]",
+      "join": "Join lines of two files on a common field [coreutils-uutils]",
+      "kill": "Send a signal (default: TERM) to given PIDs [coreutils-uutils]",
+      "link": "Call the link function to create a link to a file [coreutils-uutils]",
+      "ln": "Make links between files [coreutils-uutils]",
+      "logname": "Print user's login name [coreutils-uutils]",
+      "ls": "List directory contents [coreutils-uutils]",
+      "make-prime-list": "Generate Prime Numbers [coreutils-uutils]",
+      "md5sum": "Compute and check MD5 message digest [coreutils-uutils]",
+      "mkdir": "Make directories [coreutils-uutils]",
+      "mkfifo": "Make FIFOs (named pipes) [coreutils-uutils]",
+      "mknod": "Make block or character special files [coreutils-uutils]",
+      "mktemp": "Create a temporary file or directory [coreutils-uutils]",
+      "mv": "Move (rename) files [coreutils-uutils]",
+      "nice": "Run a program with modified scheduling priority [coreutils-uutils]",
+      "nl": "Number lines of files [coreutils-uutils]",
+      "nohup": "Run a command immune to hangups, with output to a non-tty [coreutils-uutils]",
+      "nproc": "Print the number of processing units available [coreutils-uutils]",
+      "numfmt": "Convert numbers from/to human-readable strings [coreutils-uutils]",
+      "od": "Dump files in octal and other formats [coreutils-uutils]",
+      "paste": "Merge lines of files [coreutils-uutils]",
+      "pathchk": "Check whether file names are valid or portable [coreutils-uutils]",
+      "pinky": "Lightweight finger [coreutils-uutils]",
+      "pr": "Convert text files for printing [coreutils-uutils]",
+      "printenv": "Print all or part of environment [coreutils-uutils]",
+      "printf": "Format and print data [coreutils-uutils]",
+      "ptx": "Produce a permuted index of file contents [coreutils-uutils]",
+      "pwd": "Print name of current/working directory [coreutils-uutils]",
+      "readlink": "Print resolved symbolic links or canonical file names [coreutils-uutils]",
+      "realpath": "Print the resolved path [coreutils-uutils]",
+      "rm": "Remove files or directories [coreutils-uutils]",
+      "rmdir": "Remove empty directories [coreutils-uutils]",
+      "runcon": "Run command with specified security context [coreutils-uutils]",
+      "seq": "Print a sequence of numbers [coreutils-uutils]",
+      "sha1sum": "Compute and check SHA1 message digest [coreutils-uutils]",
+      "sha224sum": "Compute and check SHA224 message digest [coreutils-uutils]",
+      "sha256sum": "Compute and check SHA256 message digest [coreutils-uutils]",
+      "sha3sum": "Compute and check SHA3 message digest [coreutils-uutils]",
+      "sha3-224sum": "Compute and check SHA3-224 message digest [coreutils-uutils]",
+      "sha3-256sum": "Compute and check SHA3-256 message digest [coreutils-uutils]",
+      "sha3-384sum": "Compute and check SHA3-384 message digest [coreutils-uutils]",
+      "sha3-512sum": "Compute and check SHA3-512 message digest [coreutils-uutils]",
+      "sha384sum": "Compute and check SHA384 message digest [coreutils-uutils]",
+      "sha512sum": "Compute and check SHA512 message digest [coreutils-uutils]",
+      "shake128sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
+      "shake256sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
+      "shred": "Overwrite a file to hide its contents, and optionally delete it [coreutils-uutils]",
+      "shuf": "Generate random permutations [coreutils-uutils]",
+      "sleep": "Delay for a specified amount of time [coreutils-uutils]",
+      "sort": "Sort lines of text files [coreutils-uutils]",
+      "split": "Split a file into pieces [coreutils-uutils]",
+      "stat": "Display file or file system status [coreutils-uutils]",
+      "stdbuf": "Run COMMAND, with modified buffering operations for its standard streams [coreutils-uutils]",
+      "stty": "Change and print terminal line settings [coreutils-uutils]",
+      "sum": "Checksum and count the blocks in a file [coreutils-uutils]",
+      "sync": "Synchronize cached writes to persistent storage [coreutils-uutils]",
+      "tac": "Concatenate and print files in reverse [coreutils-uutils]",
+      "tail": "Output the last part of files [coreutils-uutils]",
+      "tee": "Read from standard input and write to standard output and files [coreutils-uutils]",
+      "test": "Check file types and compare values [coreutils-uutils]",
+      "timeout": "Run a command with a time limit [coreutils-uutils]",
+      "touch": "Change file timestamps [coreutils-uutils]",
+      "tr": "Translate or Delete characters [coreutils-uutils]",
+      "true": "Do nothing, successfully [coreutils-uutils]",
+      "truncate": "Shrink or extend the size of a file to the specified size [coreutils-uutils]",
+      "tsort": "Perform topological sort [coreutils-uutils]",
+      "tty": "Print the file name of the terminal connected to standard input [coreutils-uutils]",
+      "uname": "Print system information [coreutils-uutils]",
+      "unexpand": "Convert spaces to tabs [coreutils-uutils]",
+      "uniq": "Report or omit repeated lines [coreutils-uutils]",
+      "unlink": "Call the unlink function to remove the specified file [coreutils-uutils]",
+      "uptime": "Display the time since the last boot [coreutils-uutils]",
+      "users": "Print the user names of users currently logged in to the current host [coreutils-uutils]",
+      "vdir": "List directory contents [coreutils-uutils]",
+      "wc": "Print newline, word, and byte counts for each file [coreutils-uutils]",
+      "who": "Show who is logged on [coreutils-uutils]",
+      "whoami": "Print effective user name [coreutils-uutils]",
+      "yes": "Output a string repeatedly until killed [coreutils-uutils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "uutils",
+        "uutils-coreutils"
+      ],
+      "archlinux": {
+        "aur": [
+          "coreutils-uutils",
+          "uutils-coreutils-git"
+        ],
+        "extra": [
+          "uutils-coreutils"
+        ]
+      },
+      "debian": [
+        "rust-coreutils",
+        "rust-uucore"
+      ],
+      "gnuguix": [
+        "rust-uucore"
+      ],
+      "homebrew": [
+        "uutils-coreutils"
+      ],
+      "nixpkgs": [
+        "uutils-coreutils",
+        "uutils-coreutils-noprefix"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/coreutils/static.multicall.uutils.yaml",
+    "homepage": [
+      "https://uutils.github.io/coreutils/docs/index.html",
+      "https://github.com/uutils/coreutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/uutils/coreutils",
+      "This is the multicall version i.e all progs are symlinked"
+    ],
+    "provides": [
+      "coreutils==[",
+      "coreutils==[[",
+      "coreutils==arch",
+      "coreutils==b2sum",
+      "coreutils==b3sum",
+      "coreutils==base32",
+      "coreutils==base64",
+      "coreutils==basename",
+      "coreutils==basenc",
+      "coreutils==cat",
+      "coreutils==chgrp",
+      "coreutils==chmod",
+      "coreutils==chown",
+      "coreutils==chroot",
+      "coreutils==cksum",
+      "coreutils==comm",
+      "coreutils==cp",
+      "coreutils==csplit",
+      "coreutils==cut",
+      "coreutils==date",
+      "coreutils==dd",
+      "coreutils==df",
+      "coreutils==dir",
+      "coreutils==dircolors",
+      "coreutils==dirname",
+      "coreutils==du",
+      "coreutils==echo",
+      "coreutils==env",
+      "coreutils==expand",
+      "coreutils==expr",
+      "coreutils==factor",
+      "coreutils==false",
+      "coreutils==fmt",
+      "coreutils==fold",
+      "coreutils==groups",
+      "coreutils==hashsum",
+      "coreutils==head",
+      "coreutils==hostid",
+      "coreutils==hostname",
+      "coreutils==id",
+      "coreutils==install",
+      "coreutils==join",
+      "coreutils==kill",
+      "coreutils==link",
+      "coreutils==ln",
+      "coreutils==logname",
+      "coreutils==ls",
+      "coreutils==md5sum",
+      "coreutils==mkdir",
+      "coreutils==mkfifo",
+      "coreutils==mknod",
+      "coreutils==mktemp",
+      "coreutils==more",
+      "coreutils==mv",
+      "coreutils==nice",
+      "coreutils==nl",
+      "coreutils==nohup",
+      "coreutils==nproc",
+      "coreutils==numfmt",
+      "coreutils==od",
+      "coreutils==paste",
+      "coreutils==pathchk",
+      "coreutils==pinky",
+      "coreutils==pr",
+      "coreutils==printenv",
+      "coreutils==printf",
+      "coreutils==ptx",
+      "coreutils==pwd",
+      "coreutils==readlink",
+      "coreutils==realpath",
+      "coreutils==rm",
+      "coreutils==rmdir",
+      "coreutils==seq",
+      "coreutils==sha1sum",
+      "coreutils==sha224sum",
+      "coreutils==sha256sum",
+      "coreutils==sha3-224sum",
+      "coreutils==sha3-256sum",
+      "coreutils==sha3-384sum",
+      "coreutils==sha3-512sum",
+      "coreutils==sha384sum",
+      "coreutils==sha3sum",
+      "coreutils==sha512sum",
+      "coreutils==shake128sum",
+      "coreutils==shake256sum",
+      "coreutils==shred",
+      "coreutils==shuf",
+      "coreutils==sleep",
+      "coreutils==sort",
+      "coreutils==split",
+      "coreutils==stat",
+      "coreutils==stdbuf",
+      "coreutils==stty",
+      "coreutils==sum",
+      "coreutils==sync",
+      "coreutils==tac",
+      "coreutils==tail",
+      "coreutils==tee",
+      "coreutils==test",
+      "coreutils==timeout",
+      "coreutils==touch",
+      "coreutils==tr",
+      "coreutils==true",
+      "coreutils==truncate",
+      "coreutils==tsort",
+      "coreutils==tty",
+      "coreutils==uname",
+      "coreutils==unexpand",
+      "coreutils==uniq",
+      "coreutils==unlink",
+      "coreutils==uptime",
+      "coreutils==users",
+      "coreutils==vdir",
+      "coreutils==wc",
+      "coreutils==who",
+      "coreutils==whoami",
+      "coreutils==yes"
+    ],
+    "repology": [
+      "uutils-coreutils"
+    ],
+    "src_url": [
+      "https://github.com/uutils/coreutils"
+    ],
+    "tag": [
+      "bootstrap",
+      "busybox",
+      "coreutils"
+    ],
+    "version": "HEAD-c250584-250201T190149"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "coreutils_uutils",
+    "pkg_family": "coreutils",
     "pkg_id": "github.com.uutils.coreutils.standalone",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-standalone/coreutils/coreutils_uutils",
@@ -1655,7 +2045,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-3891ee1-250131T145224"
+    "version": "HEAD-c250584-250201T190149"
   },
   {
     "_disabled": "true",
@@ -2600,6 +2990,62 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fblog",
+    "pkg_family": "fblog",
+    "pkg_id": "github.com.brocode.fblog",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/brocode-fblog/fblog/fblog",
+    "bincache": "ghcr.io/pkgforge/bincache/fblog/official/fblog",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fblog/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Small command-line JSON Log viewer",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "fblog",
+          "fblog-bin",
+          "fblog-git"
+        ]
+      },
+      "nixpkgs": [
+        "fblog"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fblog/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/brocode/fblog"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/brocode/fblog"
+    ],
+    "repology": [
+      "fblog"
+    ],
+    "src_url": [
+      "https://github.com/brocode/fblog"
+    ],
+    "tag": [
+      "json",
+      "log"
+    ],
+    "version": "HEAD-6540085-250201T181402"
+  },
+  {
+    "_disabled": "false",
     "pkg": "fd",
     "pkg_family": "fd-find",
     "pkg_id": "github.com.sharkdp.fd",
@@ -2921,7 +3367,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-8a9c662-250201T120304"
+    "version": "HEAD-3cd85af-250201T180250"
   },
   {
     "_disabled": "false",
@@ -3914,7 +4360,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-7c74866-250201T165053"
+    "version": "HEAD-cfe5915-250201T171601"
   },
   {
     "_disabled": "false",
@@ -3981,6 +4427,58 @@
       "kubernetes"
     ],
     "version": "HEAD-18b2ada-250201T085354"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kalc",
+    "pkg_family": "kalc",
+    "pkg_id": "github.com.bgkillas.kalc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bgkillas-kalc/kalc/kalc",
+    "bincache": "ghcr.io/pkgforge/bincache/kalc/official/kalc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/kalc/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A Complex numbers, 2d/3d Graphing, Arbitrary Precision, Vector/Matrix, cli Calculator with real-time output and support for units",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "kalc",
+          "kalc-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/kalc/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/bgkillas/kalc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/bgkillas/kalc"
+    ],
+    "repology": [
+      "kalc"
+    ],
+    "src_url": [
+      "https://github.com/bgkillas/kalc"
+    ],
+    "tag": [
+      "calculator",
+      "math"
+    ],
+    "version": "HEAD-d326d41-250201T122922"
   },
   {
     "_disabled": "false",
@@ -6136,7 +6634,7 @@
       "cybersecurity",
       "redteam"
     ],
-    "version": "HEAD-1b2e358-250201T112105"
+    "version": "HEAD-21a6b0f-250201T124236"
   },
   {
     "_disabled": "false",
@@ -6293,7 +6791,7 @@
       "backup",
       "dedupe"
     ],
-    "version": "HEAD-7829728-250201T170333"
+    "version": "HEAD-9566e2d-250201T183705"
   },
   {
     "_disabled": "false",
@@ -7355,7 +7853,7 @@
       "chatbot",
       "chatgpt"
     ],
-    "version": "HEAD-9ba8848-250201T182513"
+    "version": "HEAD-516cdfe-250201T203644"
   },
   {
     "_disabled": "false",

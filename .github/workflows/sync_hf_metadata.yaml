@@ -1,0 +1,150 @@
+name: ♻️↕️ Sync HF Mirror (Metadata) ↕️♻️
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  schedule:
+   - cron: "0 2 * * *"  #UTC 02:00 AM --> 07:45 AM NPT @everyday
+   - cron: "0 14 * * *" #UTC 02:00 PM --> 06:45 PM NPT @everyday
+jobs:
+  sync-metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    permissions: read-all
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - host: "aarch64-Linux"
+            repo: "bincache"
+            hf: "https://huggingface.co/datasets/pkgforge/bincache"
+
+          - host: "x86_64-Linux"
+            repo: "bincache"
+            hf: "https://huggingface.co/datasets/pkgforge/bincache"
+
+          - host: "aarch64-Linux"
+            repo: "pkgcache"
+            hf: "https://huggingface.co/datasets/pkgforge/pkgcache"
+
+          - host: "x86_64-Linux"
+            repo: "pkgcache"
+            hf: "https://huggingface.co/datasets/pkgforge/pkgcache"
+    steps:
+      - name: Install Addons
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          export DEBIAN_FRONTEND="noninteractive"
+          sudo apt update -y -qq
+          sudo apt install 7zip b3sum bc coreutils curl dos2unix fdupes jq git git-lfs moreutils wget util-linux -y -qq
+          sudo apt install 7zip b3sum bc coreutils curl dos2unix fdupes jq git git-lfs moreutils wget util-linux -y -qq
+          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
+        continue-on-error: true
+
+      - name: Setup Env
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          #tmp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          #-------------#
+          #Git
+          sudo apt-get install git-lfs -y -qq
+          #-------------#
+          ##User-Agent
+          USER_AGENT="$(curl -qfsSL 'https://pub.ajam.dev/repos/Azathothas/Wordlists/Misc/User-Agents/ua_chrome_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Sync Mirror Metadata [${{ matrix.repo }} ==> ${{ matrix.hf }}/${{ matrix.host }}]
+        env:
+          HF_TOKEN: "${{ secrets.HF_TOKEN }}"
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          ##Setup
+           export GIT_TERMINAL_PROMPT="0"
+           export GIT_ASKPASS="/bin/echo"
+           git config --global "credential.helper" store
+           git config --global "user.email" "AjamX101@gmail.com"
+           git config --global "user.name" "Azathothas"
+           huggingface-cli login --token "${HF_TOKEN}" --add-to-git-credential
+          ##Env
+           export TZ="UTC"
+           TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
+           HOST_TRIPLET="${{ matrix.host }}"
+           HOST_TRIPLET_L="${HOST_TRIPLET,,}"
+           export HOST_TRIPLET HOST_TRIPLET_L
+          ##Sync
+           pushd "${TMPDIR}" >/dev/null 2>&1 && \
+             git clone --depth="1" --filter="blob:none" --no-checkout && \
+             "${{ matrix.hf }}" && cd "./${{ matrix.repo }}" && \
+             export HF_REPO_DIR="$(realpath .)"
+             git lfs install &>/dev/null ; huggingface-cli lfs-enable-largefiles "." &>/dev/null
+             git fetch origin main
+             git lfs track "./${HOST_TRIPLET}.json" \
+               "./${HOST_TRIPLET}.json.bsum" \
+               "./${HOST_TRIPLET}.json.db" \
+               "./${HOST_TRIPLET}.json.db.bsum" \
+               "./${HOST_TRIPLET}.json.db.cba" \
+               "./${HOST_TRIPLET}.json.db.xz" \
+               "./${HOST_TRIPLET}.json.db.xz.bsum" \
+               "./${HOST_TRIPLET}.json.db.zstd" \
+               "./${HOST_TRIPLET}.json.db.zstd.bsum" \
+               "./${HOST_TRIPLET}.json.cba" \
+               "./${HOST_TRIPLET}.json.xz" \
+               "./${HOST_TRIPLET}.json.xz.bsum" \
+               "./${HOST_TRIPLET}.json.zstd" \
+               "./${HOST_TRIPLET}.json.zstd.bsum"
+             git sparse-checkout set ""
+             git sparse-checkout set --no-cone --sparse-index \
+               "/${HOST_TRIPLET}.json" \
+               "/${HOST_TRIPLET}.json.bsum" \
+               "/${HOST_TRIPLET}.json.db" \
+               "/${HOST_TRIPLET}.json.db.bsum" \
+               "/${HOST_TRIPLET}.json.db.cba" \
+               "/${HOST_TRIPLET}.json.db.xz" \
+               "/${HOST_TRIPLET}.json.db.xz.bsum" \
+               "/${HOST_TRIPLET}.json.db.zstd" \
+               "/${HOST_TRIPLET}.json.db.zstd.bsum" \
+               "/${HOST_TRIPLET}.json.cba" \
+               "/${HOST_TRIPLET}.json.xz" \
+               "/${HOST_TRIPLET}.json.xz.bsum" \
+               "/${HOST_TRIPLET}.json.zstd" \
+               "/${HOST_TRIPLET}.json.zstd.bsum"
+               git checkout ; ls -lah "."
+             #Generate
+             curl -qfsSL "https://meta.pkgforge.dev/${{ matrix.repo }}/${HOST_TRIPLET}.json" | sed -E 's|https://api\.ghcr\.pkgforge\.dev/pkgforge/${{ matrix.repo }}/(.*)\?tag=(.*)\&download=(.*)$|https://hf.${{ matrix.repo }}.pkgforge.dev/\1/\2/\3|' > "${TMPDIR}/${HOST_TRIPLET}.json"
+              if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/METADATA.json" | wc -l)" -le 2000 ]]; then
+                echo -e "\n[-] FATAL: Failed to Generate ${{ matrix.repo }} (${HOST_TRIPLET}) Metadata\n"
+               exit 1
+              elif  [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/METADATA.json" | wc -l)" -gt 2000 ]]; then
+               pushd "${HF_REPO_DIR}" >/dev/null 2>&1
+               #Json
+                cp -fv "${TMPDIR}/${HOST_TRIPLET}.json" "${HF_REPO_DIR}/${HOST_TRIPLET}.json"
+               #Archives
+                generate_checksum()
+                {
+                 b3sum "$1" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "$1.bsum"
+                }
+                generate_checksum "${HOST_TRIPLET}.json"
+                #7z
+                 7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "${HOST_TRIPLET}.json.xz" "${HOST_TRIPLET}.json" 2>/dev/null ; generate_checksum "${HOST_TRIPLET}.json.xz"
+                #To Zstd
+                 zstd --ultra -22 --force "${HOST_TRIPLET}.json" -o "${HOST_TRIPLET}.json.zstd" ; generate_checksum "${HOST_TRIPLET}.json.zstd"
+               #Push
+                git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
+                find "${HF_REPO_DIR}" -type f -size -3c -delete
+                git add --all --verbose && git commit -m "[+] METADATA (${HOST_TRIPLET}) $(TZ='UTC' date +'%Y_%m_%d')]"
+                git pull origin main ; git push origin main
+              fi
+          ##Cleanup
+           popd "${TMPDIR}" >/dev/null 2>&1
+        continue-on-error: true

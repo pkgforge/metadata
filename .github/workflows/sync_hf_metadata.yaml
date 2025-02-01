@@ -89,36 +89,62 @@ jobs:
              cd "./${{ matrix.repo }}" && export HF_REPO_DIR="$(realpath .)"
              git lfs install &>/dev/null ; huggingface-cli lfs-enable-largefiles "." &>/dev/null
              git fetch origin main
-             git lfs track "./${HOST_TRIPLET}.json" \
+             git lfs track "./${HOST_TRIPLET}.json" "./${HOST_TRIPLET_L}.json" \
                "./${HOST_TRIPLET}.json.bsum" \
+               "./${HOST_TRIPLET_L}.json.bsum" \
                "./${HOST_TRIPLET}.json.db" \
+               "./${HOST_TRIPLET_L}.json.db" \
                "./${HOST_TRIPLET}.json.db.bsum" \
+               "./${HOST_TRIPLET_L}.json.db.bsum" \
                "./${HOST_TRIPLET}.json.db.cba" \
+               "./${HOST_TRIPLET_L}.json.db.cba" \
                "./${HOST_TRIPLET}.json.db.xz" \
+               "./${HOST_TRIPLET_L}.json.db.xz" \
                "./${HOST_TRIPLET}.json.db.xz.bsum" \
+               "./${HOST_TRIPLET_L}.json.db.xz.bsum" \
                "./${HOST_TRIPLET}.json.db.zstd" \
+               "./${HOST_TRIPLET_L}.json.db.zstd" \
                "./${HOST_TRIPLET}.json.db.zstd.bsum" \
+               "./${HOST_TRIPLET_L}.json.db.zstd.bsum" \
                "./${HOST_TRIPLET}.json.cba" \
+               "./${HOST_TRIPLET_L}.json.cba" \
                "./${HOST_TRIPLET}.json.xz" \
+               "./${HOST_TRIPLET_L}.json.xz" \
                "./${HOST_TRIPLET}.json.xz.bsum" \
+               "./${HOST_TRIPLET_L}.json.xz.bsum" \
                "./${HOST_TRIPLET}.json.zstd" \
-               "./${HOST_TRIPLET}.json.zstd.bsum"
+               "./${HOST_TRIPLET_L}.json.zstd" \
+               "./${HOST_TRIPLET}.json.zstd.bsum" \
+               "./${HOST_TRIPLET_L}.json.zstd.bsum"
              git sparse-checkout set ""
              git sparse-checkout set --no-cone --sparse-index \
-               "/${HOST_TRIPLET}.json" \
+               "/${HOST_TRIPLET}.json" "/${HOST_TRIPLET_L}.json" \
                "/${HOST_TRIPLET}.json.bsum" \
+               "/${HOST_TRIPLET_L}.json.bsum" \
                "/${HOST_TRIPLET}.json.db" \
+               "/${HOST_TRIPLET_L}.json.db" \
                "/${HOST_TRIPLET}.json.db.bsum" \
+               "/${HOST_TRIPLET_L}.json.db.bsum" \
                "/${HOST_TRIPLET}.json.db.cba" \
+               "/${HOST_TRIPLET_L}.json.db.cba" \
                "/${HOST_TRIPLET}.json.db.xz" \
+               "/${HOST_TRIPLET_L}.json.db.xz" \
                "/${HOST_TRIPLET}.json.db.xz.bsum" \
+               "/${HOST_TRIPLET_L}.json.db.xz.bsum" \
                "/${HOST_TRIPLET}.json.db.zstd" \
+               "/${HOST_TRIPLET_L}.json.db.zstd" \
                "/${HOST_TRIPLET}.json.db.zstd.bsum" \
+               "/${HOST_TRIPLET_L}.json.db.zstd.bsum" \
                "/${HOST_TRIPLET}.json.cba" \
+               "/${HOST_TRIPLET_L}.json.cba" \
                "/${HOST_TRIPLET}.json.xz" \
+               "/${HOST_TRIPLET_L}.json.xz" \
                "/${HOST_TRIPLET}.json.xz.bsum" \
+               "/${HOST_TRIPLET_L}.json.xz.bsum" \
                "/${HOST_TRIPLET}.json.zstd" \
-               "/${HOST_TRIPLET}.json.zstd.bsum"
+               "/${HOST_TRIPLET_L}.json.zstd" \
+               "/${HOST_TRIPLET}.json.zstd.bsum" \
+               "/${HOST_TRIPLET_L}.json.zstd.bsum"
                git checkout ; ls -lah "."
              #Generate
              curl -w "(DL) <== %{url}\n" -qfsSL "https://meta.pkgforge.dev/${{ matrix.repo }}/${HOST_TRIPLET}.json" -o "${TMPDIR}/${HOST_TRIPLET}.json.tmp"
@@ -157,6 +183,8 @@ jobs:
                #Push
                 git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
                 find "${HF_REPO_DIR}" -type f -size -3c -delete
+                find "${HF_REPO_DIR}" -maxdepth 1 -type f -exec bash -c 'cp -fv "${1}" "${1,,}"' _ "{}" \;
+                ls -lah "."
                 git add --all --verbose && git commit -m "[+] METADATA (${HOST_TRIPLET}) $(TZ='UTC' date +'%Y_%m_%d')]"
                 git pull origin main ; git push origin main || (git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync" ; git push origin main)
               fi

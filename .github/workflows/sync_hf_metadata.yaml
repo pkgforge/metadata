@@ -120,7 +120,8 @@ jobs:
                "/${HOST_TRIPLET}.json.zstd.bsum"
                git checkout ; ls -lah "."
              #Generate
-             curl -w "(DL) <== %{url}\n" -qfsSL "https://meta.pkgforge.dev/${{ matrix.repo }}/${HOST_TRIPLET}.json" | sed -E 's|https://api\.ghcr\.pkgforge\.dev/pkgforge/${{ matrix.repo }}/(.*)\?tag=(.*)\&download=(.*)$|https://hf.${{ matrix.repo }}.pkgforge.dev/\1/\2/\3|' > "${TMPDIR}/${HOST_TRIPLET}.json"
+             curl -w "(DL) <== %{url}\n" -qfsSL "https://meta.pkgforge.dev/${{ matrix.repo }}/${HOST_TRIPLET}.json" -o "${TMPDIR}/${HOST_TRIPLET}.json.tmp"
+             sed -E 's|https://api\.ghcr\.pkgforge\.dev/pkgforge/${{ matrix.repo }}/(.*)\?tag=(.*)\&download=(.*)$|https://hf.${{ matrix.repo }}.pkgforge.dev/\1/\2/\3|' "${TMPDIR}/${HOST_TRIPLET}.json.tmp" | jq . > "${TMPDIR}/${HOST_TRIPLET}.json"
               if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/${HOST_TRIPLET}.json" | wc -l)" -le 50 ]]; then
                 echo -e "\n[-] FATAL: Failed to Generate ${{ matrix.repo }} (${HOST_TRIPLET}) Metadata\n"
                exit 1
@@ -142,7 +143,7 @@ jobs:
                 git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
                 find "${HF_REPO_DIR}" -type f -size -3c -delete
                 git add --all --verbose && git commit -m "[+] METADATA (${HOST_TRIPLET}) $(TZ='UTC' date +'%Y_%m_%d')]"
-                git pull origin main ; git push origin main
+                git pull origin main ; git push origin main || (git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync" ; git push origin main)
               fi
           ##Cleanup
            popd "${TMPDIR}" >/dev/null 2>&1

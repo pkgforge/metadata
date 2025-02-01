@@ -120,11 +120,11 @@ jobs:
                "/${HOST_TRIPLET}.json.zstd.bsum"
                git checkout ; ls -lah "."
              #Generate
-             curl -qfsSL "https://meta.pkgforge.dev/${{ matrix.repo }}/${HOST_TRIPLET}.json" | sed -E 's|https://api\.ghcr\.pkgforge\.dev/pkgforge/${{ matrix.repo }}/(.*)\?tag=(.*)\&download=(.*)$|https://hf.${{ matrix.repo }}.pkgforge.dev/\1/\2/\3|' > "${TMPDIR}/${HOST_TRIPLET}.json"
-              if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/METADATA.json" | wc -l)" -le 50 ]]; then
+             curl -w "(DL) <== %{url}\n" -qfsSL "https://meta.pkgforge.dev/${{ matrix.repo }}/${HOST_TRIPLET}.json" | sed -E 's|https://api\.ghcr\.pkgforge\.dev/pkgforge/${{ matrix.repo }}/(.*)\?tag=(.*)\&download=(.*)$|https://hf.${{ matrix.repo }}.pkgforge.dev/\1/\2/\3|' > "${TMPDIR}/${HOST_TRIPLET}.json"
+              if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/${HOST_TRIPLET}.json" | wc -l)" -le 50 ]]; then
                 echo -e "\n[-] FATAL: Failed to Generate ${{ matrix.repo }} (${HOST_TRIPLET}) Metadata\n"
                exit 1
-              elif  [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/METADATA.json" | wc -l)" -gt 50 ]]; then
+              elif  [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/${HOST_TRIPLET}.json" | wc -l)" -gt 50 ]]; then
                pushd "${HF_REPO_DIR}" >/dev/null 2>&1
                #Json
                 cp -fv "${TMPDIR}/${HOST_TRIPLET}.json" "${HF_REPO_DIR}/${HOST_TRIPLET}.json"

@@ -39,10 +39,10 @@
  13M   │ │ ├── aarch64-Linux.json
  11M   │ │ ├── x86_64-Linux.db
  11M   │ │ ├── aarch64-Linux.db
-896K   │ │ ├── x86_64-Linux.db.cba
-840K   │ │ ├── aarch64-Linux.db.cba
+888K   │ │ ├── x86_64-Linux.db.cba
+844K   │ │ ├── aarch64-Linux.db.cba
 832K   │ │ ├── x86_64-Linux.json.cba
-756K   │ │ ├── aarch64-Linux.json.cba
+764K   │ │ ├── aarch64-Linux.json.cba
 624K   │ │ ├── x86_64-Linux.db.zstd
 604K   │ │ ├── x86_64-Linux.db.xz
 592K   │ │ ├── x86_64-Linux.json.xz
@@ -50,7 +50,7 @@
 564K   │ │ ├── aarch64-Linux.db.xz
 552K   │ │ ├── x86_64-Linux.json.zstd
 548K   │ │ ├── aarch64-Linux.json.xz
-512K   │ │ ├── aarch64-Linux.json.zstd
+516K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum
@@ -68,14 +68,14 @@
  28K   │   ├── gen_meta_aarch64-Linux.sh
  24K   │   └── gen_meta_x86_64-Linux.sh
 6.7M   ├─┬ soarpkgs
-6.4M   │ ├─┬ data
+6.3M   │ ├─┬ data
 1.6M   │ │ ├── INDEX.json
 1.2M   │ │ ├── BACKAGE.json
 796K   │ │ ├── INDEX.db
-780K   │ │ ├── pub_issues_binaries.txt
+792K   │ │ ├── pub_issues_binaries.txt
 304K   │ │ ├── pub_issues_packages.txt
-304K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-296K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+284K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+276K   │ │ ├── DIFF_bincache_aarch64-Linux.json
 236K   │ │ ├── INDEX.json.cba
 148K   │ │ ├── INDEX.json.xz
 144K   │ │ ├── INDEX.json.zstd

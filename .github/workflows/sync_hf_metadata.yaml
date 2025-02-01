@@ -84,9 +84,8 @@ jobs:
            export HOST_TRIPLET HOST_TRIPLET_L
           ##Sync
            pushd "${TMPDIR}" >/dev/null 2>&1 && \
-             git clone --depth="1" --filter="blob:none" --no-checkout && \
-             "${{ matrix.hf }}" && cd "./${{ matrix.repo }}" && \
-             export HF_REPO_DIR="$(realpath .)"
+             git clone --depth="1" --filter="blob:none" --no-checkout "${{ matrix.hf }}" && \
+             cd "./${{ matrix.repo }}" && export HF_REPO_DIR="$(realpath .)"
              git lfs install &>/dev/null ; huggingface-cli lfs-enable-largefiles "." &>/dev/null
              git fetch origin main
              git lfs track "./${HOST_TRIPLET}.json" \

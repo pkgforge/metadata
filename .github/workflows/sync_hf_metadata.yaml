@@ -185,7 +185,7 @@ jobs:
                 find "${HF_REPO_DIR}" -type f -size -3c -delete
                 find "${HF_REPO_DIR}" -maxdepth 1 -type f -exec bash -c 'cp -fv "${1}" "${1,,}"' _ "{}" \;
                 ls -lah "."
-                git add --all --verbose && git commit -m "[+] METADATA (${HOST_TRIPLET}) $(TZ='UTC' date +'%Y_%m_%d')]"
+                git add --all --verbose && git commit -m "[+] METADATA (${HOST_TRIPLET}) [$(TZ='UTC' date +'%Y_%m_%d')]"
                 git pull origin main ; git push origin main || (git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync" ; git push origin main)
               fi
           ##Cleanup

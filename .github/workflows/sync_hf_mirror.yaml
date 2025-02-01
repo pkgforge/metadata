@@ -1,0 +1,71 @@
+name: ♻️↕️ Sync HF Mirror ↕️♻️
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  schedule:
+   - cron: "0 1 * * Sun" #UTC 01:00 AM --> 06:45 AM NPT Sun
+   - cron: "0 1 * * Wed" #UTC 01:00 AM --> 06:45 AM NPT Wed
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 250
+    permissions: read-all
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - repo: "bincache"
+            script: "${GITHUB_WORKSPACE}/main/bincache/scripts/sync_hf_mirror.sh"
+
+          - repo: "pkgcache"
+            script: "${GITHUB_WORKSPACE}/main/pkgcache/scripts/sync_hf_mirror.sh"
+
+    steps:
+      - name: Install Addons
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          export DEBIAN_FRONTEND="noninteractive"
+          sudo apt update -y -qq
+          sudo apt install 7zip b3sum bc coreutils curl dos2unix fdupes jq git git-lfs moreutils wget util-linux -y -qq
+          sudo apt install 7zip b3sum bc coreutils curl dos2unix fdupes jq git git-lfs moreutils wget util-linux -y -qq
+          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
+        continue-on-error: true
+
+      - name: Setup Env
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          #tmp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          #-------------#
+          #Git
+          sudo apt-get install git-lfs -y -qq
+          #-------------#
+          ##User-Agent
+          USER_AGENT="$(curl -qfsSL 'https://pub.ajam.dev/repos/Azathothas/Wordlists/Misc/User-Agents/ua_chrome_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Sync Mirror (${{ matrix.repo }})
+        env:
+          GHCR_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ github.token }}"
+          #GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
+          HF_TOKEN: "${{ secrets.HF_TOKEN }}"
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          dos2unix --quiet "${{ matrix.script }}"
+          chmod +x "${{ matrix.script }}"
+          ##DO NOT USE > 1, causes conflict
+          #PARALLEL_LIMIT="$(($(nproc)+1))" bash "${{ matrix.script }}"
+          PARALLEL_LIMIT="1" bash "${{ matrix.script }}"
+        continue-on-error: true

@@ -543,6 +543,72 @@
   },
   {
     "_disabled": "false",
+    "pkg": "batcat",
+    "pkg_family": "bat",
+    "pkg_id": "github.com.sharkdp.bat",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sharkdp-bat/bat/batcat",
+    "bincache": "ghcr.io/pkgforge/bincache/bat/official/bat",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bat/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Cat clone with colors, syntax highlighting and git integration",
+    "distro_pkg": {
+      "alpine": [
+        "bat"
+      ],
+      "archlinux": {
+        "aur": [
+          "bat-cat-git"
+        ],
+        "extra": [
+          "bat"
+        ]
+      },
+      "debian": [
+        "rust-bat"
+      ],
+      "nixpkgs": [
+        "bat"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bat/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sharkdp/bat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sharkdp/bat"
+    ],
+    "provides": [
+      "bat==batcat"
+    ],
+    "repology": [
+      "bat-cat"
+    ],
+    "src_url": [
+      "https://github.com/sharkdp/bat"
+    ],
+    "tag": [
+      "cat",
+      "text-viewer"
+    ],
+    "version": "HEAD-ef38302-250201T035327"
+  },
+  {
+    "_disabled": "false",
     "pkg": "berty",
     "pkg_family": "berty",
     "pkg_id": "github.com.berty.berty",
@@ -2461,7 +2527,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-f265526-250131T234346"
+    "version": "HEAD-357812b-250201T005800"
   },
   {
     "_disabled": "false",
@@ -4125,7 +4191,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-b35d503-250201T014631"
+    "version": "HEAD-67bb280-250201T033039"
   },
   {
     "_disabled": "false",
@@ -6750,7 +6816,7 @@
     "tag": [
       "image"
     ],
-    "version": "HEAD-d0c6b52-250201T024521"
+    "version": "HEAD-835bf5a-250201T044211"
   },
   {
     "_disabled": "false",
@@ -7686,85 +7752,6 @@
     "version": "HEAD-2be774d-241225T052259"
   },
   {
-    "_disabled": "false",
-    "pkg": "vnstat",
-    "pkg_family": "vnstat",
-    "pkg_id": "github.com.vergoh.vnstat.musl",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vnstat-musl/vnstat/vnstat",
-    "bincache": "ghcr.io/pkgforge/bincache/vnstat/official/vnstatd",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vnstat/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Terminal based network traffic monitor",
-      "vnstat": "Terminal based network traffic monitor (Client)",
-      "vnstatd": "Server daemon for VnStat"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "vnstat"
-      ],
-      "archlinux": {
-        "extra": [
-          "vnstat"
-        ]
-      },
-      "debian": [
-        "vnstat"
-      ],
-      "gnuguix": [
-        "vnstat"
-      ],
-      "homebrew": [
-        "vnstat"
-      ],
-      "nixpkgs": [
-        "vnstat"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vnstat/static.official.source.yaml",
-    "homepage": [
-      "https://humdi.net/vnstat/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/vergoh/vnstat",
-      "Configuration File: https://raw.githubusercontent.com/vergoh/vnstat/refs/heads/master/cfg/vnstat.conf",
-      "Service Files:",
-      "https://github.com/vergoh/vnstat/blob/master/examples/systemd/vnstat.service",
-      "https://github.com/vergoh/vnstat/blob/master/examples/systemd/simple/vnstat.service",
-      "https://github.com/vergoh/vnstat/tree/master/examples/init.d/debian"
-    ],
-    "provides": [
-      "vnstat",
-      "vnstatd"
-    ],
-    "repology": [
-      "vnstat"
-    ],
-    "src_url": [
-      "https://github.com/vergoh/vnstat"
-    ],
-    "tag": [
-      "bandwidth",
-      "traffic"
-    ],
-    "version": "HEAD-b6ce3d7-250126T233808"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -8019,63 +8006,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "wireproxy",
-    "pkg_family": "wireproxy",
-    "pkg_id": "github.com.pufferffish.wireproxy",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pufferffish-wireproxy/wireproxy/wireproxy",
-    "bincache": "ghcr.io/pkgforge/bincache/wireproxy/official/wireproxy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wireproxy/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Wireguard client that exposes itself as a SOCKS5 proxy",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "wireproxy"
-        ]
-      },
-      "nixpkgs": [
-        "wireproxy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wireproxy/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/pufferffish/wireproxy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "ISC"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pufferffish/wireproxy"
-    ],
-    "provides": [
-      "wireproxy"
-    ],
-    "repology": [
-      "wireproxy"
-    ],
-    "src_url": [
-      "https://github.com/pufferffish/wireproxy"
-    ],
-    "tag": [
-      "proxy",
-      "wireguard"
-    ],
-    "version": "HEAD-a57972e-250131T162626"
-  },
-  {
-    "_disabled": "false",
     "pkg": "wth",
     "pkg_family": "wth",
     "pkg_id": "github.com.mrusme.wth",
@@ -8116,44 +8046,6 @@
       "dashboard"
     ],
     "version": "HEAD-8cd3bae-230703T145814"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xan",
-    "pkg_family": "xan",
-    "pkg_id": "github.com.medialab.xan",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/medialab-xan/xan/xan",
-    "bincache": "ghcr.io/pkgforge/bincache/xan/official/xan",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xan/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The CSV magician",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xan/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/medialab/xan"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/medialab/xan"
-    ],
-    "src_url": [
-      "https://github.com/medialab/xan"
-    ],
-    "tag": [
-      "csv",
-      "tsv"
-    ],
-    "version": "HEAD-9c65821-250131T100819"
   },
   {
     "_disabled": "false",
@@ -8307,79 +8199,6 @@
       "benchmark"
     ],
     "version": "HEAD-0ec2a2a-250101T231747"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "yazi",
-    "pkg_family": "yazi",
-    "pkg_id": "github.com.sxyazi.yazi",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sxyazi-yazi/yazi/yazi",
-    "bincache": "ghcr.io/pkgforge/bincache/yazi/official/ya",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yazi/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Blazing fast terminal file manager",
-      "ya": "CLI interface for yazi",
-      "yazi": "Blazing fast terminal file manager"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "yazi"
-      ],
-      "archlinux": {
-        "aur": [
-          "yazi-git"
-        ],
-        "extra": [
-          "yazi"
-        ]
-      },
-      "nixpkgs": [
-        "yazi",
-        "yazi-unwrapped"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yazi/static.official.source.yaml",
-    "homepage": [
-      "https://yazi-rs.github.io",
-      "https://github.com/sxyazi/yazi"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD",
-      "ISC",
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sxyazi/yazi"
-    ],
-    "provides": [
-      "ya",
-      "yazi"
-    ],
-    "repology": [
-      "yazi"
-    ],
-    "src_url": [
-      "https://github.com/sxyazi/yazi"
-    ],
-    "tag": [
-      "file",
-      "explorer",
-      "manager"
-    ],
-    "version": "HEAD-c41f2e2-250131T170202"
   },
   {
     "_disabled": "false",

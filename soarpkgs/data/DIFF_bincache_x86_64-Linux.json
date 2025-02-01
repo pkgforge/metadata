@@ -625,6 +625,90 @@
   },
   {
     "_disabled": "false",
+    "pkg": "bitcoin",
+    "pkg_family": "bitcoin",
+    "pkg_id": "ppkg.bitcoin",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-bitcoin/bitcoin/bitcoin",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bitcoin/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "CLI and Utilities for BitCoin: Decentralized, peer to peer payment network",
+      "bench_bitcoin": "Execute microbenchmarks [bitcoin]",
+      "bitcoin-cli": "Bitcoin Core RPC client [bitcoin]",
+      "bitcoin-tx": "Create, Parse, or Modify Bitcoin Core transactions [bitcoin]",
+      "bitcoin-util": "Provides Bitcoin-related functionality without requiring access to a running node [bitcoin]",
+      "bitcoin-wallet": "Offline tool for creating and interacting with Bitcoin Core wallet files [bitcoin]",
+      "bitcoind": "Headless bitcoin daemon that connects to the Bitcoin network [bitcoin]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "bitcoin"
+      ],
+      "archlinux": {
+        "aur": [
+          "bitcoin-bin"
+        ],
+        "extra": [
+          "bitcoin"
+        ]
+      },
+      "gnuguix": [
+        "bitcoin-core"
+      ],
+      "homebrew": [
+        "bitcoin",
+        "bitcoin-core"
+      ],
+      "nixpkgs": [
+        "bitcoin",
+        "bitcoind"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bitcoin/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.bitcoincore.org",
+      "https://github.com/bitcoin/bitcoin"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "bench_bitcoin",
+      "bitcoin-cli",
+      "bitcoin-tx",
+      "bitcoin-util",
+      "bitcoin-wallet",
+      "bitcoind"
+    ],
+    "repology": [
+      "bitcoin"
+    ],
+    "src_url": [
+      "https://github.com/bitcoin/bitcoin"
+    ],
+    "tag": [
+      "cryptocurrency",
+      "payment"
+    ],
+    "version": "26.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "boringtun",
     "pkg_family": "boringtun",
     "pkg_id": "github.com.cloudflare.boringtun",
@@ -5644,6 +5728,79 @@
   },
   {
     "_disabled": "false",
+    "pkg": "rclone",
+    "pkg_family": "rclone",
+    "pkg_id": "github.com.rclone.rclone",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rclone-rclone/rclone/rclone",
+    "bincache": "ghcr.io/pkgforge/bincache/rclone/official/rclone",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rclone/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A program to sync files to and from various cloud storage providers",
+    "distro_pkg": {
+      "alpine": [
+        "rclone"
+      ],
+      "archlinux": {
+        "aur": [
+          "rclone-beta-bin",
+          "rclone-git"
+        ],
+        "extra": [
+          "rclone"
+        ]
+      },
+      "debian": [
+        "rclone"
+      ],
+      "homebrew": [
+        "rclone"
+      ],
+      "nixpkgs": [
+        "rclone"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rclone/static.official.source.yaml",
+    "homepage": [
+      "https://rclone.org",
+      "https://github.com/rclone/rclone"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "ISC",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rclone/rclone"
+    ],
+    "repology": [
+      "rclone"
+    ],
+    "src_url": [
+      "https://github.com/rclone/rclone"
+    ],
+    "tag": [
+      "cloud",
+      "mount",
+      "rsync",
+      "s3",
+      "sync"
+    ],
+    "version": "HEAD-b52aabd-250201T122009"
+  },
+  {
+    "_disabled": "false",
     "pkg": "realm-tavern",
     "pkg_family": "realm-tavern",
     "pkg_id": "github.com.spellshift.realm",
@@ -5895,6 +6052,50 @@
       "regex"
     ],
     "version": "HEAD-e2362d4-250125T142700"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "rldd",
+    "pkg_family": "rldd",
+    "pkg_id": "github.com.zatrazz.rldd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zatrazz-rldd/rldd/rldd",
+    "bincache": "ghcr.io/pkgforge/bincache/rldd/official/rldd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rldd/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Print Shared Object Dependencies",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rldd/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/zatrazz/rldd"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/zatrazz/rldd"
+    ],
+    "provides": [
+      "rldd"
+    ],
+    "src_url": [
+      "https://github.com/zatrazz/rldd"
+    ],
+    "tag": [
+      "elf",
+      "ldd"
+    ],
+    "version": "HEAD-2471c90-250201T095955"
   },
   {
     "_disabled": "false",

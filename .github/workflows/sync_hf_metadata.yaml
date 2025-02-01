@@ -84,7 +84,7 @@ jobs:
            HOST_TRIPLET_L="${HOST_TRIPLET,,}"
            export HOST_TRIPLET HOST_TRIPLET_L
           ##Sync
-           pushd "${TMPDIR}" >/dev/null 2>&1 && \
+           pushd "${TMPDIR}" &>/dev/null && \
              git clone --depth="1" --filter="blob:none" --no-checkout "${{ matrix.hf }}" && \
              cd "./${{ matrix.repo }}" && export HF_REPO_DIR="$(realpath .)"
              git lfs install &>/dev/null ; huggingface-cli lfs-enable-largefiles "." &>/dev/null
@@ -153,7 +153,7 @@ jobs:
                 echo -e "\n[-] FATAL: Failed to Generate ${{ matrix.repo }} (${HOST_TRIPLET}) Metadata\n"
                exit 1
               elif  [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/${HOST_TRIPLET}.json" | wc -l)" -gt 10 ]]; then
-               pushd "${HF_REPO_DIR}" >/dev/null 2>&1
+               pushd "${HF_REPO_DIR}" &>/dev/null
                #Json
                 cp -fv "${TMPDIR}/${HOST_TRIPLET}.json" "${HF_REPO_DIR}/${HOST_TRIPLET}.json"
                #Archives
@@ -167,17 +167,17 @@ jobs:
                 #Zstd
                  zstd --ultra -22 --force "${HOST_TRIPLET}.json" -o "${HOST_TRIPLET}.json.zstd" ; generate_checksum "${HOST_TRIPLET}.json.zstd"
                #Bita
-                bita compress --input "${HOST_TRIPLET}.json" --compression "zstd" --compression-level "21" --force-create "${HOST_TRIPLET}.json.cba"
+                bita compress --input "${HF_REPO_DIR}/${HOST_TRIPLET}.json" --compression "zstd" --compression-level "21" --force-create "${HF_REPO_DIR}/${HOST_TRIPLET}.json.cba"
                #Sqlite
-                if command -v "qsv" >/dev/null 2>&1; then
+                if command -v "qsv" &>/dev/null; then
                   jq -c '.[]' "${HOST_TRIPLET}.json" > "${TMPDIR}/${HOST_TRIPLET}.jsonl"
                   qsv jsonl "${TMPDIR}/${HOST_TRIPLET}.jsonl" > "${TMPDIR}/${HOST_TRIPLET}.csv"
                   qsv to sqlite "${TMPDIR}/${HOST_TRIPLET}.db" "${TMPDIR}/${HOST_TRIPLET}.csv"
                   if [[ -s "${TMPDIR}/${HOST_TRIPLET}.db" && $(stat -c%s "${TMPDIR}/${HOST_TRIPLET}.db") -gt 1024 ]]; then
-                   cp -fv "${TMPDIR}/${HOST_TRIPLET}.db" "${GITHUB_WORKSPACE}/main/${{ matrix.repo }}/data/${HOST_TRIPLET}.db" ; generate_checksum "${HOST_TRIPLET}.db"
-                   bita compress --input "${GITHUB_WORKSPACE}/main/${{ matrix.repo }}/data/${HOST_TRIPLET}.db" --compression "zstd" --compression-level "21" --force-create "${GITHUB_WORKSPACE}/main/${{ matrix.repo }}/data/${HOST_TRIPLET}.db.cba"
-                   7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${GITHUB_WORKSPACE}/main/${{ matrix.repo }}/data/${HOST_TRIPLET}.db.xz" "${GITHUB_WORKSPACE}/main/${{ matrix.repo }}/data/${HOST_TRIPLET}.db" 2>/dev/null ; generate_checksum "${HOST_TRIPLET}.db.xz"
-                   zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/${{ matrix.repo }}/data/${HOST_TRIPLET}.db" -o "${GITHUB_WORKSPACE}/main/${{ matrix.repo }}/data/${HOST_TRIPLET}.db.zstd" ; generate_checksum "${HOST_TRIPLET}.db.zstd"
+                   cp -fv "${TMPDIR}/${HOST_TRIPLET}.db" "${HF_REPO_DIR}/${HOST_TRIPLET}.db" ; generate_checksum "${HOST_TRIPLET}.db"
+                   bita compress --input "${HF_REPO_DIR}/${HOST_TRIPLET}.db" --compression "zstd" --compression-level "21" --force-create "${HF_REPO_DIR}/${HOST_TRIPLET}.db.cba"
+                   7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${HF_REPO_DIR}/${HOST_TRIPLET}.db.xz" "${HF_REPO_DIR}/${HOST_TRIPLET}.db" 2>/dev/null ; generate_checksum "${HOST_TRIPLET}.db.xz"
+                   zstd --ultra -22 --force "${HF_REPO_DIR}/${HOST_TRIPLET}.db" -o "${HF_REPO_DIR}/${HOST_TRIPLET}.db.zstd" ; generate_checksum "${HOST_TRIPLET}.db.zstd"
                  fi
                 fi
                #Push
@@ -189,5 +189,5 @@ jobs:
                 git pull origin main ; git push origin main || (git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync" ; git push origin main)
               fi
           ##Cleanup
-           popd "${TMPDIR}" >/dev/null 2>&1
+           popd "${TMPDIR}" &>/dev/null
         continue-on-error: true

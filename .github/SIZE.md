@@ -39,10 +39,10 @@
  13M   │ │ ├── aarch64-Linux.json
  11M   │ │ ├── x86_64-Linux.db
  11M   │ │ ├── aarch64-Linux.db
-900K   │ │ ├── x86_64-Linux.db.cba
-844K   │ │ ├── aarch64-Linux.db.cba
-804K   │ │ ├── x86_64-Linux.json.cba
-736K   │ │ ├── aarch64-Linux.json.cba
+896K   │ │ ├── x86_64-Linux.db.cba
+836K   │ │ ├── aarch64-Linux.db.cba
+808K   │ │ ├── x86_64-Linux.json.cba
+732K   │ │ ├── aarch64-Linux.json.cba
 628K   │ │ ├── x86_64-Linux.db.zstd
 608K   │ │ ├── x86_64-Linux.db.xz
 596K   │ │ ├── x86_64-Linux.json.xz
@@ -69,14 +69,14 @@
  24K   │   ├── gen_meta_x86_64-Linux.sh
 8.0K   │   └── sync_hf_mirror.sh
 6.8M   ├─┬ soarpkgs
-6.4M   │ ├─┬ data
+6.5M   │ ├─┬ data
 1.6M   │ │ ├── INDEX.json
 1.2M   │ │ ├── BACKAGE.json
 848K   │ │ ├── INDEX.db
 788K   │ │ ├── pub_issues_binaries.txt
 304K   │ │ ├── pub_issues_packages.txt
-276K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-248K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+284K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+268K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 240K   │ │ ├── INDEX.json.cba
 152K   │ │ ├── INDEX.json.zstd
 152K   │ │ ├── INDEX.json.xz
@@ -120,18 +120,18 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-1.7M   ├─┬ pkgcache
+1.6M   ├─┬ pkgcache
 1.5M   │ ├─┬ data
 496K   │ │ ├── x86_64-Linux.db
-440K   │ │ ├── x86_64-Linux.json
+444K   │ │ ├── x86_64-Linux.json
 116K   │ │ ├── aarch64-Linux.db
 104K   │ │ ├── aarch64-Linux.json
  52K   │ │ ├── x86_64-Linux.db.cba
- 48K   │ │ ├── x86_64-Linux.json.cba
  48K   │ │ ├── x86_64-Linux.db.zstd
  44K   │ │ ├── x86_64-Linux.db.xz
  40K   │ │ ├── x86_64-Linux.json.zstd
  40K   │ │ ├── x86_64-Linux.json.xz
+ 40K   │ │ ├── x86_64-Linux.json.cba
  16K   │ │ ├── aarch64-Linux.json.cba
  16K   │ │ ├── aarch64-Linux.db.zstd
  16K   │ │ ├── aarch64-Linux.db.xz

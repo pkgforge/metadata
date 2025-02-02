@@ -1552,7 +1552,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-fc4f39c-250202T222838"
+    "version": "HEAD-717a692-250202T231356"
   },
   {
     "_disabled": "false",
@@ -1869,7 +1869,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-fc4f39c-250202T222838"
+    "version": "HEAD-717a692-250202T231356"
   },
   {
     "_disabled": "true",
@@ -2531,90 +2531,6 @@
     "_disabled": "false",
     "pkg": "dropbear",
     "pkg_family": "dropbear",
-    "pkg_id": "github.com.mkj.dropbear.multicall",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dropbear-multicall/dropbear/dropbear",
-    "bincache": "ghcr.io/pkgforge/bincache/dropbear/multicall/dropbearmulti",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dropbear/static.multicall.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Lightweight Alternative to OpenSSH",
-      "dbclient": "Lightweight SSH client [dropbear]",
-      "dropbear": "Lightweight SSH server [dropbear]",
-      "dropbearconvert": "Convert between Dropbear and OpenSSH private key formats [dropbear]",
-      "dropbearkey": "Create private keys for the use with dropbear/dbclient [dropbear]",
-      "scp": "Secure remote copy [dropbear]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "dropbear"
-      ],
-      "archlinux": {
-        "aur": [
-          "dropbear-git"
-        ],
-        "extra": [
-          "dropbear"
-        ]
-      },
-      "debian": [
-        "dropbear"
-      ],
-      "gnuguix": [
-        "dropbear"
-      ],
-      "homebrew": [
-        "dropbear"
-      ],
-      "nixpkgs": [
-        "dropbear"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dropbear/static.multicall.source.yaml",
-    "homepage": [
-      "https://matt.ucc.asn.au/dropbear/dropbear.html"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Custom"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mkj/dropbear",
-      "This is the multicall version i.e all progs are symlinked"
-    ],
-    "provides": [
-      "dropbearmulti=>dbclient",
-      "dropbearmulti=>dropbear",
-      "dropbearmulti=>dropbearconvert",
-      "dropbearmulti=>dropbearkey",
-      "dropbearmulti=>scp"
-    ],
-    "repology": [
-      "dropbear"
-    ],
-    "src_url": [
-      "https://github.com/mkj/dropbear"
-    ],
-    "tag": [
-      "openssh",
-      "ssh"
-    ],
-    "version": "HEAD-24deac1-250202T115538"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "dropbear",
-    "pkg_family": "dropbear",
     "pkg_id": "github.com.mkj.dropbear.standalone",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dropbear-standalone/dropbear/dropbear",
@@ -2675,91 +2591,6 @@
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mkj/dropbear",
       "This is the standalone version i.e all applets were built individually"
-    ],
-    "provides": [
-      "dbclient",
-      "dropbear",
-      "dropbearconvert",
-      "dropbearkey",
-      "scp"
-    ],
-    "repology": [
-      "dropbear"
-    ],
-    "src_url": [
-      "https://github.com/mkj/dropbear"
-    ],
-    "tag": [
-      "openssh",
-      "ssh"
-    ],
-    "version": "HEAD-24deac1-250202T115538"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "dropbear",
-    "pkg_family": "dropbear",
-    "pkg_id": "github.com.mkj.dropbear.standalone.glibc",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/standalone-glibc/dropbear/dropbear",
-    "bincache": "ghcr.io/pkgforge/bincache/dropbear/standalone/glibc",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dropbear/static.standalone.glibc.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Lightweight Alternative to OpenSSH",
-      "dbclient": "Lightweight SSH client [dropbear]",
-      "dropbear": "Lightweight SSH server [dropbear]",
-      "dropbearconvert": "Convert between Dropbear and OpenSSH private key formats [dropbear]",
-      "dropbearkey": "Create private keys for the use with dropbear/dbclient [dropbear]",
-      "scp": "Secure remote copy [dropbear]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "dropbear"
-      ],
-      "archlinux": {
-        "aur": [
-          "dropbear-git"
-        ],
-        "extra": [
-          "dropbear"
-        ]
-      },
-      "debian": [
-        "dropbear"
-      ],
-      "gnuguix": [
-        "dropbear"
-      ],
-      "homebrew": [
-        "dropbear"
-      ],
-      "nixpkgs": [
-        "dropbear"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dropbear/static.standalone.glibc.yaml",
-    "homepage": [
-      "https://matt.ucc.asn.au/dropbear/dropbear.html"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Custom"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mkj/dropbear",
-      "This is the standalone version i.e all applets were built individually",
-      "Statically Linked on Debian (GLIBC)"
     ],
     "provides": [
       "dbclient",
@@ -3158,77 +2989,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "fzf",
-    "pkg_family": "fzf",
-    "pkg_id": "github.com.junegunn.fzf",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/junegunn-fzf/fzf/fzf",
-    "bincache": "ghcr.io/pkgforge/bincache/fzf/official/fzf",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fzf/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "General-purpose command-line fuzzy finder",
-    "distro_pkg": {
-      "alpine": [
-        "fzf"
-      ],
-      "archlinux": {
-        "aur": [
-          "fzf-git"
-        ],
-        "extra": [
-          "fzf"
-        ]
-      },
-      "debian": [
-        "fzf"
-      ],
-      "gnuguix": [
-        "fzf"
-      ],
-      "homebrew": [
-        "fzf"
-      ],
-      "nixpkgs": [
-        "fzf"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fzf/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/junegunn/fzf"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/junegunn/fzf"
-    ],
-    "provides": [
-      "fzf"
-    ],
-    "repology": [
-      "fzf"
-    ],
-    "src_url": [
-      "https://github.com/junegunn/fzf"
-    ],
-    "tag": [
-      "fzf"
-    ],
-    "version": "v0.59.0"
-  },
-  {
-    "_disabled": "false",
     "pkg": "gf",
     "pkg_family": "gf",
     "pkg_id": "github.com.tomnomnom.gf",
@@ -3313,63 +3073,6 @@
       "Utility"
     ],
     "version": "HEAD-3369497-231117T213017"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "ghfetch",
-    "pkg_family": "ghfetch",
-    "pkg_id": "github.com.orangekame3.ghfetch",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/orangekame3-ghfetch/ghfetch/ghfetch",
-    "bincache": "ghcr.io/pkgforge/bincache/ghfetch/official/ghfetch",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ghfetch/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "CLI tool to fetch GitHub user information and show like neofetch",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "ghfetch",
-          "ghfetch-git"
-        ]
-      },
-      "nixpkgs": [
-        "ghfetch"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ghfetch/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/orangekame3/ghfetch"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/orangekame3/ghfetch"
-    ],
-    "provides": [
-      "ghfetch"
-    ],
-    "repology": [
-      "ghfetch"
-    ],
-    "src_url": [
-      "https://github.com/orangekame3/ghfetch"
-    ],
-    "tag": [
-      "github"
-    ],
-    "version": "HEAD-b5dc97c-250202T180252"
   },
   {
     "_disabled": "false",

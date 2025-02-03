@@ -2243,7 +2243,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-0cd1f80-250127T122014"
+    "version": "HEAD-d47f9f6-250203T121430"
   },
   {
     "_disabled": "false",
@@ -3218,7 +3218,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-fa19d83-250203T060302"
+    "version": "HEAD-c9b7182-250203T120313"
   },
   {
     "_disabled": "false",
@@ -4906,6 +4906,71 @@
   },
   {
     "_disabled": "false",
+    "pkg": "mise",
+    "pkg_family": "mise",
+    "pkg_id": "github.com.jdx.mise",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jdx-mise/mise/mise",
+    "bincache": "ghcr.io/pkgforge/bincache/mise/official/mise",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mise/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Polyglot runtime and dev tool version manager",
+    "distro_pkg": {
+      "alpine": [
+        "mise"
+      ],
+      "archlinux": {
+        "aur": [
+          "mise",
+          "mise-bin"
+        ]
+      },
+      "homebrew": [
+        "mise"
+      ],
+      "nixpkgs": [
+        "mise"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mise/static.official.stable.yaml",
+    "homepage": [
+      "https://mise.jdx.dev",
+      "https://github.com/jdx/mise"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/jdx/mise"
+    ],
+    "provides": [
+      "mise"
+    ],
+    "repology": [
+      "mise"
+    ],
+    "src_url": [
+      "https://github.com/jdx/mise"
+    ],
+    "tag": [
+      "asdf",
+      "dev-env"
+    ],
+    "version": "v2025.2.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mtdutils",
     "pkg_family": "mtd-utils",
     "pkg_id": "nixpkgs.mtdutils",
@@ -6458,6 +6523,79 @@
   },
   {
     "_disabled": "false",
+    "pkg": "rclone",
+    "pkg_family": "rclone",
+    "pkg_id": "github.com.rclone.rclone",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rclone-rclone/rclone/rclone",
+    "bincache": "ghcr.io/pkgforge/bincache/rclone/official/rclone",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rclone/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A program to sync files to and from various cloud storage providers",
+    "distro_pkg": {
+      "alpine": [
+        "rclone"
+      ],
+      "archlinux": {
+        "aur": [
+          "rclone-beta-bin",
+          "rclone-git"
+        ],
+        "extra": [
+          "rclone"
+        ]
+      },
+      "debian": [
+        "rclone"
+      ],
+      "homebrew": [
+        "rclone"
+      ],
+      "nixpkgs": [
+        "rclone"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rclone/static.official.source.yaml",
+    "homepage": [
+      "https://rclone.org",
+      "https://github.com/rclone/rclone"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "ISC",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rclone/rclone"
+    ],
+    "repology": [
+      "rclone"
+    ],
+    "src_url": [
+      "https://github.com/rclone/rclone"
+    ],
+    "tag": [
+      "cloud",
+      "mount",
+      "rsync",
+      "s3",
+      "sync"
+    ],
+    "version": "HEAD-057fdb3-250203T121554"
+  },
+  {
+    "_disabled": "false",
     "pkg": "realm-tavern",
     "pkg_family": "realm-tavern",
     "pkg_id": "github.com.spellshift.realm",
@@ -6568,6 +6706,70 @@
       "registry"
     ],
     "version": "HEAD-dbb1434-250202T152116"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "rekor",
+    "pkg_family": "rekor",
+    "pkg_id": "github.com.sigstore.rekor",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sigstore-rekor/rekor/rekor",
+    "bincache": "ghcr.io/pkgforge/bincache/rekor/official/rekor-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rekor/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Software Supply Chain Transparency Log",
+    "distro_pkg": {
+      "alpine": [
+        "rekor"
+      ],
+      "archlinux": {
+        "aur": [
+          "rekor-git"
+        ],
+        "extra": [
+          "rekor"
+        ]
+      },
+      "debian": [
+        "rekor"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rekor/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sigstore/rekor"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sigstore/rekor"
+    ],
+    "provides": [
+      "rekor-cli",
+      "rekor-server"
+    ],
+    "repology": [
+      "rekor"
+    ],
+    "src_url": [
+      "https://github.com/sigstore/rekor"
+    ],
+    "tag": [
+      "provenance",
+      "security"
+    ],
+    "version": "HEAD-c6ed73b-250203T130736"
   },
   {
     "_disabled": "false",
@@ -6756,6 +6958,60 @@
       "regex"
     ],
     "version": "HEAD-e2362d4-250125T142700"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "rospo",
+    "pkg_family": "rospo",
+    "pkg_id": "github.com.ferama.rospo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ferama-rospo/rospo/rospo",
+    "bincache": "ghcr.io/pkgforge/bincache/rospo/official/rospo",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rospo/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Simple, reliable, persistent ssh tunnels with embedded ssh server",
+    "distro_pkg": {
+      "homebrew": [
+        "rospo"
+      ],
+      "nixpkgs": [
+        "rospo"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rospo/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ferama/rospo"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ferama/rospo"
+    ],
+    "provides": [
+      "rospo"
+    ],
+    "repology": [
+      "rospo"
+    ],
+    "src_url": [
+      "https://github.com/ferama/rospo"
+    ],
+    "tag": [
+      "ssh"
+    ],
+    "version": "HEAD-52dacde-250203T124554"
   },
   {
     "_disabled": "false",
@@ -8517,6 +8773,47 @@
       "manager"
     ],
     "version": "HEAD-c41f2e2-250131T170202"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yip",
+    "pkg_family": "yip",
+    "pkg_id": "github.com.mudler.yip",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mudler-yip/yip/yip",
+    "bincache": "ghcr.io/pkgforge/bincache/yip/official/yip",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yip/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tool to apply a cloud-init style yaml file to the system",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yip/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/mudler/yip"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mudler/yip"
+    ],
+    "src_url": [
+      "https://github.com/mudler/yip"
+    ],
+    "tag": [
+      "cloud-init",
+      "init"
+    ],
+    "version": "HEAD-423ca9c-250203T130726"
   },
   {
     "_disabled": "false",

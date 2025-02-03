@@ -12,6 +12,15 @@ SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
 TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
 rm -rvf "${SYSTMP}/pkgcache_x86_64-Linux.json" 2>/dev/null
 unset PKG_COUNT PKG_COUNT_TMP SBUILD_COUNT
+##Install Requirements
+curl -qfsSL "https://api.gh.pkgforge.dev/repos/pkgforge/soarql/releases?per_page=100" | jq -r '.. | objects | .browser_download_url? // empty' | grep -Ei "$(uname -m)" | grep -Eiv "tar\.gz|\.b3sum" | grep -Ei "soarql" | sort --version-sort | tail -n 1 | tr -d '[:space:]' | xargs -I "{}" sudo curl -qfsSL "{}" -o "/usr/local/bin/soarql"
+sudo chmod -v 'a+x' "/usr/local/bin/soarql"
+ if [[ ! -s "/usr/local/bin/soarql" || $(stat -c%s "/usr/local/bin/soarql") -le 1024 ]]; then
+   echo -e "\n[✗] FATAL: soarql Appears to be NOT INSTALLED...\n"
+  exit 1
+ else
+   timeout 10 "/usr/local/bin/soarql" --help
+ fi
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
@@ -325,8 +334,15 @@ if command -v rclone &> /dev/null &&\
       b3sum "$1" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "$1.bsum"
   }
   generate_checksum "x86_64-Linux.json"
+ #To SDB
+  soarql --repo "pkgcache" --input "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.json" --output "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb"
+   if [[ $(stat -c%s "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb") -le 1024 ]] || file -i "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb" | grep -qiv 'sqlite'; then
+     echo -e "\n[✗] FATAL: Failed to generate Soar DB...\n"
+   exit 1
+   fi
  #To Bita
   bita compress --input "x86_64-Linux.json" --compression "zstd" --compression-level "21" --force-create "x86_64-Linux.json.cba"
+  bita compress --input "x86_64-Linux.sdb" --compression "zstd" --compression-level "21" --force-create "x86_64-Linux.sdb.cba"
  #To Sqlite
   if command -v "qsv" >/dev/null 2>&1; then
     jq -c '.[]' "x86_64-Linux.json" > "${TMPDIR}/x86_64-Linux.jsonl"
@@ -356,9 +372,11 @@ if command -v rclone &> /dev/null &&\
   fi
  #To xz
   7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "x86_64-Linux.json.xz" "x86_64-Linux.json" 2>/dev/null ; generate_checksum "x86_64-Linux.json.xz"
+  7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "x86_64-Linux.sdb.xz" "x86_64-Linux.sdb" 2>/dev/null ; generate_checksum "x86_64-Linux.sdb.xz"
  #To Zstd
   zstd --ultra -22 --force "x86_64-Linux.json" -o "x86_64-Linux.json.zstd" ; generate_checksum "x86_64-Linux.json.zstd"
- #Upload
+  zstd --ultra -22 --force "x86_64-Linux.sdb" -o "x86_64-Linux.sdb.zstd" ; generate_checksum "x86_64-Linux.sdb.zstd"
+ #Upload (Json)
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.json" "r2:/meta/pkgcache/x86_64-Linux.json" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.json" "r2:/meta/pkgcache/x86_64-linux.json" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.json.bsum" "r2:/meta/pkgcache/x86_64-Linux.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
@@ -373,6 +391,21 @@ if command -v rclone &> /dev/null &&\
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.json.zstd" "r2:/meta/pkgcache/x86_64-linux.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.json.zstd.bsum" "r2:/meta/pkgcache/x86_64-Linux.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.json.zstd.bsum" "r2:/meta/pkgcache/x86_64-linux.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #Upload (SDB)
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb" "r2:/meta/pkgcache/x86_64-Linux.sdb" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb" "r2:/meta/pkgcache/x86_64-linux.sdb" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.bsum" "r2:/meta/pkgcache/x86_64-Linux.sdb.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.bsum" "r2:/meta/pkgcache/x86_64-linux.sdb.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.cba" "r2:/meta/pkgcache/x86_64-Linux.sdb.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.cba" "r2:/meta/pkgcache/x86_64-linux.sdb.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.xz" "r2:/meta/pkgcache/x86_64-Linux.sdb.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.xz" "r2:/meta/pkgcache/x86_64-linux.sdb.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.xz.bsum" "r2:/meta/pkgcache/x86_64-Linux.sdb.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.xz.bsum" "r2:/meta/pkgcache/x86_64-linux.sdb.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.zstd" "r2:/meta/pkgcache/x86_64-Linux.sdb.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.zstd" "r2:/meta/pkgcache/x86_64-linux.sdb.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.zstd.bsum" "r2:/meta/pkgcache/x86_64-Linux.sdb.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb.zstd.bsum" "r2:/meta/pkgcache/x86_64-linux.sdb.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   wait ; echo
 fi
 #-------------------------------------------------------#

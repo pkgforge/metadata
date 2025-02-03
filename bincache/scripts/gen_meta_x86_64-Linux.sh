@@ -391,7 +391,7 @@ if command -v rclone &> /dev/null &&\
   rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/x86_64-Linux.json.zstd" "r2:/meta/bincache/x86_64-linux.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/x86_64-Linux.json.zstd.bsum" "r2:/meta/bincache/x86_64-Linux.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/x86_64-Linux.json.zstd.bsum" "r2:/meta/bincache/x86_64-linux.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-   #Upload (Json)
+  #Upload (SDB)
   rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/x86_64-Linux.sdb" "r2:/meta/bincache/x86_64-Linux.sdb" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/x86_64-Linux.sdb" "r2:/meta/bincache/x86_64-linux.sdb" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/bincache/data/x86_64-Linux.sdb.bsum" "r2:/meta/bincache/x86_64-Linux.sdb.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &

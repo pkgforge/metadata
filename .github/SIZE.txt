@@ -1,4 +1,4 @@
-238M └─┬ main
+258M └─┬ main
 170M   ├─┬ misc
 170M   │ ├─┬ data
  69M   │ │ ├── ARCHLINUX.json
@@ -32,30 +32,42 @@
 4.0K   │   ├── fetch_nixpkgs.sh
 4.0K   │   ├── fetch_debian_docker.sh
 4.0K   │   └── fetch_archlinux_docker.sh
- 59M   ├─┬ bincache
- 59M   │ ├─┬ data
+ 78M   ├─┬ bincache
+ 78M   │ ├─┬ data
  14M   │ │ ├── x86_64-Linux.json
  13M   │ │ ├── aarch64-Linux.json
  11M   │ │ ├── x86_64-Linux.db
  11M   │ │ ├── aarch64-Linux.db
-904K   │ │ ├── x86_64-Linux.db.cba
-844K   │ │ ├── aarch64-Linux.db.cba
+7.7M   │ │ ├── x86_64-Linux.sdb
+7.1M   │ │ ├── aarch64-Linux.sdb
+900K   │ │ ├── x86_64-Linux.db.cba
+868K   │ │ ├── x86_64-Linux.sdb.cba
+852K   │ │ ├── aarch64-Linux.db.cba
+824K   │ │ ├── aarch64-Linux.sdb.cba
 812K   │ │ ├── x86_64-Linux.json.cba
 740K   │ │ ├── aarch64-Linux.json.cba
+648K   │ │ ├── x86_64-Linux.sdb.zstd
 628K   │ │ ├── x86_64-Linux.db.zstd
+608K   │ │ ├── x86_64-Linux.sdb.xz
 608K   │ │ ├── x86_64-Linux.db.xz
+608K   │ │ ├── aarch64-Linux.sdb.zstd
 596K   │ │ ├── x86_64-Linux.json.xz
 588K   │ │ ├── aarch64-Linux.db.zstd
-572K   │ │ ├── aarch64-Linux.db.xz
+572K   │ │ ├── aarch64-Linux.sdb.xz
+568K   │ │ ├── aarch64-Linux.db.xz
 556K   │ │ ├── x86_64-Linux.json.zstd
 556K   │ │ ├── aarch64-Linux.json.xz
 520K   │ │ ├── aarch64-Linux.json.zstd
+4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
+4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum
 4.0K   │ │ ├── x86_64-Linux.db.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.db.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.db.bsum
+4.0K   │ │ ├── aarch64-Linux.sdb.zstd.bsum
+4.0K   │ │ ├── aarch64-Linux.sdb.xz.bsum
 4.0K   │ │ ├── aarch64-Linux.json.zstd.bsum
 4.0K   │ │ ├── aarch64-Linux.json.xz.bsum
 4.0K   │ │ ├── aarch64-Linux.json.bsum
@@ -63,9 +75,9 @@
 4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
 4.0K   │ │ ├── aarch64-Linux.db.bsum
 4.0K   │ │ └── TOTAL.json
- 64K   │ └─┬ scripts
- 28K   │   ├── gen_meta_aarch64-Linux.sh
- 24K   │   ├── gen_meta_x86_64-Linux.sh
+ 72K   │ └─┬ scripts
+ 32K   │   ├── gen_meta_aarch64-Linux.sh
+ 28K   │   ├── gen_meta_x86_64-Linux.sh
 8.0K   │   └── sync_hf_mirror.sh
 6.8M   ├─┬ soarpkgs
 6.5M   │ ├─┬ data
@@ -74,8 +86,8 @@
 848K   │ │ ├── INDEX.db
 784K   │ │ ├── pub_issues_binaries.txt
 304K   │ │ ├── pub_issues_packages.txt
-280K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-248K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+288K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+260K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 240K   │ │ ├── INDEX.json.cba
 152K   │ │ ├── INDEX.json.zstd
 152K   │ │ ├── INDEX.json.xz
@@ -119,30 +131,44 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-1.7M   ├─┬ pkgcache
-1.5M   │ ├─┬ data
+2.6M   ├─┬ pkgcache
+2.4M   │ ├─┬ data
+520K   │ │ ├── x86_64-Linux.sdb
 496K   │ │ ├── x86_64-Linux.db
 444K   │ │ ├── x86_64-Linux.json
+156K   │ │ ├── aarch64-Linux.sdb
 116K   │ │ ├── aarch64-Linux.db
 104K   │ │ ├── aarch64-Linux.json
+ 64K   │ │ ├── x86_64-Linux.sdb.cba
+ 52K   │ │ ├── x86_64-Linux.sdb.zstd
  52K   │ │ ├── x86_64-Linux.db.cba
+ 48K   │ │ ├── x86_64-Linux.sdb.xz
  48K   │ │ ├── x86_64-Linux.json.cba
  48K   │ │ ├── x86_64-Linux.db.zstd
  44K   │ │ ├── x86_64-Linux.db.xz
  40K   │ │ ├── x86_64-Linux.json.zstd
  40K   │ │ ├── x86_64-Linux.json.xz
+ 20K   │ │ ├── aarch64-Linux.sdb.cba
+ 16K   │ │ ├── aarch64-Linux.sdb.zstd
+ 16K   │ │ ├── aarch64-Linux.sdb.xz
  16K   │ │ ├── aarch64-Linux.json.cba
  16K   │ │ ├── aarch64-Linux.db.zstd
  16K   │ │ ├── aarch64-Linux.db.xz
  16K   │ │ ├── aarch64-Linux.db.cba
  12K   │ │ ├── aarch64-Linux.json.zstd
  12K   │ │ ├── aarch64-Linux.json.xz
+4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
+4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
+4.0K   │ │ ├── x86_64-Linux.sdb.bsum
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum
 4.0K   │ │ ├── x86_64-Linux.db.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.db.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.db.bsum
+4.0K   │ │ ├── aarch64-Linux.sdb.zstd.bsum
+4.0K   │ │ ├── aarch64-Linux.sdb.xz.bsum
+4.0K   │ │ ├── aarch64-Linux.sdb.bsum
 4.0K   │ │ ├── aarch64-Linux.json.zstd.bsum
 4.0K   │ │ ├── aarch64-Linux.json.xz.bsum
 4.0K   │ │ ├── aarch64-Linux.json.bsum
@@ -150,17 +176,23 @@
 4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
 4.0K   │ │ ├── aarch64-Linux.db.bsum
 4.0K   │ │ └── TOTAL.json
-116K   │ └─┬ scripts
+120K   │ └─┬ scripts
  52K   │   ├─┬ archived
  48K   │   │ └── healthchecks.yaml
+ 28K   │   ├── gen_meta_x86_64-Linux.sh
  28K   │   ├── gen_meta_aarch64-Linux.sh
- 24K   │   ├── gen_meta_x86_64-Linux.sh
 8.0K   │   └── sync_hf_mirror.sh
-120K   ├─┬ web
-116K   │ └─┬ cloudflare
- 56K   │   ├─┬ src
+280K   ├─┬ web
+152K   │ ├─┬ assets
+ 40K   │ │ ├── icon_package_multi.png
+ 36K   │ │ ├── icon_server.png
+ 28K   │ │ ├── icon_database.png
+ 24K   │ │ ├── icon_config_multi.png
+ 20K   │ │ └── icon_json.png
+124K   │ └─┬ cloudflare
+ 64K   │   ├─┬ src
+ 24K   │   │ ├── config.ts
  16K   │   │ ├── static.ts
- 16K   │   │ ├── config.ts
  12K   │   │ ├── render.ts
 4.0K   │   │ ├── types.ts
 4.0K   │   │ └── index.ts

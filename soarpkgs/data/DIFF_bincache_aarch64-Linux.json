@@ -6135,6 +6135,73 @@
   },
   {
     "_disabled": "false",
+    "pkg": "netbird",
+    "pkg_family": "netbird",
+    "pkg_id": "github.com.netbirdio.netbird",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/netbirdio-netbird/netbird/netbird",
+    "bincache": "ghcr.io/pkgforge/bincache/netbird/official/netbird",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netbird/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "WireGuard-based mesh network",
+      "netbird": "Client for Netbird; A WireGuard-based mesh network",
+      "netbird-mgmt": "Management service for Netbird",
+      "netbird-relay": "Relay service for Netbird",
+      "netbird-signal": "Signal service for Netbird"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "netbird",
+          "netbird-bin"
+        ]
+      },
+      "nixpkgs": [
+        "netbird"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/netbird/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/netbirdio/netbird"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/netbirdio/netbird"
+    ],
+    "provides": [
+      "netbird",
+      "netbird-mgmt",
+      "netbird-relay",
+      "netbird-signal"
+    ],
+    "repology": [
+      "netbird"
+    ],
+    "src_url": [
+      "https://github.com/netbirdio/netbird"
+    ],
+    "tag": [
+      "mesh",
+      "wireguard"
+    ],
+    "version": "HEAD-f930ef2-250203T175435"
+  },
+  {
+    "_disabled": "false",
     "pkg": "nfs-utils",
     "pkg_family": "nfs-utils",
     "pkg_id": "nixpkgs.nfs-utils",
@@ -7085,6 +7152,58 @@
       "ls"
     ],
     "version": "HEAD-7ab7f2f-250203T133904"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "pretender",
+    "pkg_family": "pretender",
+    "pkg_id": "github.com.RedTeamPentesting.pretender",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/redteampentesting-pretender/pretender/pretender",
+    "bincache": "ghcr.io/pkgforge/bincache/pretender/official/pretender",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pretender/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "MitM sidekick for relaying attacks featuring DHCPv6 DNS takeover, mDNS, LLMNR and NetBIOS-NS spoofing",
+    "distro_pkg": {
+      "nixpkgs": [
+        "pretender"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pretender/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/RedTeamPentesting/pretender"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/RedTeamPentesting/pretender"
+    ],
+    "provides": [
+      "pretender"
+    ],
+    "repology": [
+      "pretender"
+    ],
+    "src_url": [
+      "https://github.com/RedTeamPentesting/pretender"
+    ],
+    "tag": [
+      "dns",
+      "mitm"
+    ],
+    "version": "v1.3.1"
   },
   {
     "_disabled": "true",
@@ -8329,7 +8448,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-1af4a8a-250203T110000"
+    "version": "HEAD-38ac941-250203T175028"
   },
   {
     "_disabled": "false",
@@ -8389,6 +8508,62 @@
     "_disabled": "false",
     "pkg": "soar",
     "pkg_family": "soar",
+    "pkg_id": "github.com.pkgforge.soar.glibc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soar-glibc/soar/soar",
+    "bincache": "ghcr.io/pkgforge/bincache/soar/glibc/soar",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.glibc.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (GLIBC)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "soar-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.glibc.source.yaml",
+    "homepage": [
+      "https://soar.qaidvoid.dev",
+      "https://github.com/pkgforge/soar"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
+      "Statically Linked on Debian (GLIBC)"
+    ],
+    "provides": [
+      "soar"
+    ],
+    "repology": [
+      "soar"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge/soar"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "HEAD-1cae955-250203T225055"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "soar",
+    "pkg_family": "soar",
     "pkg_id": "github.com.pkgforge.soar.mimalloc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soar-mimalloc/soar/soar",
@@ -8437,7 +8612,63 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-3863707-250202T201809"
+    "version": "HEAD-1cae955-250203T225055"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "soar",
+    "pkg_family": "soar",
+    "pkg_id": "github.com.pkgforge.soar.musl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soar-musl/soar/soar",
+    "bincache": "ghcr.io/pkgforge/bincache/soar/musl/soar",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.musl.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (MUSL)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "soar-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.musl.source.yaml",
+    "homepage": [
+      "https://soar.qaidvoid.dev",
+      "https://github.com/pkgforge/soar"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
+      "Built on Vanilla Musl"
+    ],
+    "provides": [
+      "soar"
+    ],
+    "repology": [
+      "soar"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge/soar"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "HEAD-1cae955-250203T225055"
   },
   {
     "_disabled": "false",
@@ -8853,6 +9084,86 @@
       "p2p"
     ],
     "version": "v1.29.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tailscale",
+    "pkg_family": "tailscale",
+    "pkg_id": "github.com.tailscale.tailscale",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tailscale-tailscale/tailscale/tailscale",
+    "bincache": "ghcr.io/pkgforge/bincache/tailscale/official/tailscale",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tailscale/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A mesh VPN built on WireGuard",
+      "tailscale": "CLI Client for Tailscale, a mesh VPN built on WireGuard",
+      "tailscaled": "Daemon for the Tailscale CLI",
+      "tailscale-multi": "Combined Client & Daemon in a Single Binary (Limited Features)"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "tailscale"
+      ],
+      "archlinux": {
+        "aur": [
+          "tailscale-git",
+          "tailscale-unstable-bin"
+        ],
+        "extra": [
+          "tailscale"
+        ]
+      },
+      "homebrew": [
+        "tailscale"
+      ],
+      "nixpkgs": [
+        "tailscale"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tailscale/static.official.source.yaml",
+    "homepage": [
+      "https://tailscale.com",
+      "https://github.com/tailscale/tailscale"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tailscale/tailscale",
+      "tailscale-multi is based on: https://tailscale.com/kb/1207/small-tailscale"
+    ],
+    "provides": [
+      "tailscale",
+      "tailscaled",
+      "tailscale-multi"
+    ],
+    "repology": [
+      "tailscale"
+    ],
+    "src_url": [
+      "https://github.com/tailscale/tailscale"
+    ],
+    "tag": [
+      "mesh",
+      "tunnel",
+      "vpn",
+      "wireguard",
+      "zerotier"
+    ],
+    "version": "HEAD-17ca2b7-250203T110755"
   },
   {
     "_disabled": "false",

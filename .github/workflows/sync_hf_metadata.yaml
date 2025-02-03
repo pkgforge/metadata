@@ -77,6 +77,15 @@ jobs:
            git config --global "user.email" "AjamX101@gmail.com"
            git config --global "user.name" "Azathothas"
            huggingface-cli login --token "${HF_TOKEN}" --add-to-git-credential
+          ##SOARQL
+           curl -qfsSL "https://api.gh.pkgforge.dev/repos/pkgforge/soarql/releases?per_page=100" | jq -r '.. | objects | .browser_download_url? // empty' | grep -Ei "$(uname -m)" | grep -Eiv "tar\.gz|\.b3sum" | grep -Ei "soarql" | sort --version-sort | tail -n 1 | tr -d '[:space:]' | xargs -I "{}" sudo curl -qfsSL "{}" -o "/usr/local/bin/soarql"
+           sudo chmod -v 'a+x' "/usr/local/bin/soarql"
+            if [[ ! -s "/usr/local/bin/soarql" || $(stat -c%s "/usr/local/bin/soarql") -le 1024 ]]; then
+              echo -e "\n[✗] FATAL: soarql Appears to be NOT INSTALLED...\n"
+             exit 1
+            else
+              timeout 10 "/usr/local/bin/soarql" --help
+            fi
           ##Env
            export TZ="UTC"
            TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
@@ -115,7 +124,17 @@ jobs:
                "./${HOST_TRIPLET}.json.zstd" \
                "./${HOST_TRIPLET_L}.json.zstd" \
                "./${HOST_TRIPLET}.json.zstd.bsum" \
-               "./${HOST_TRIPLET_L}.json.zstd.bsum"
+               "./${HOST_TRIPLET_L}.json.zstd.bsum" \
+               "./${HOST_TRIPLET}.sdb.cba" \
+               "./${HOST_TRIPLET_L}.sdb.cba" \
+               "./${HOST_TRIPLET}.sdb.xz" \
+               "./${HOST_TRIPLET_L}.sdb.xz" \
+               "./${HOST_TRIPLET}.sdb.xz.bsum" \
+               "./${HOST_TRIPLET_L}.sdb.xz.bsum" \
+               "./${HOST_TRIPLET}.sdb.zstd" \
+               "./${HOST_TRIPLET_L}.sdb.zstd" \
+               "./${HOST_TRIPLET}.sdb.zstd.bsum" \
+               "./${HOST_TRIPLET_L}.sdb.zstd.bsum"
              git sparse-checkout set ""
              git sparse-checkout set --no-cone --sparse-index \
                "/${HOST_TRIPLET}.json" "/${HOST_TRIPLET_L}.json" \
@@ -144,7 +163,17 @@ jobs:
                "/${HOST_TRIPLET}.json.zstd" \
                "/${HOST_TRIPLET_L}.json.zstd" \
                "/${HOST_TRIPLET}.json.zstd.bsum" \
-               "/${HOST_TRIPLET_L}.json.zstd.bsum"
+               "/${HOST_TRIPLET_L}.json.zstd.bsum" \
+               "/${HOST_TRIPLET}.sdb.cba" \
+               "/${HOST_TRIPLET_L}.sdb.cba" \
+               "/${HOST_TRIPLET}.sdb.xz" \
+               "/${HOST_TRIPLET_L}.sdb.xz" \
+               "/${HOST_TRIPLET}.sdb.xz.bsum" \
+               "/${HOST_TRIPLET_L}.sdb.xz.bsum" \
+               "/${HOST_TRIPLET}.sdb.zstd" \
+               "/${HOST_TRIPLET_L}.sdb.zstd" \
+               "/${HOST_TRIPLET}.sdb.zstd.bsum" \
+               "/${HOST_TRIPLET_L}.sdb.zstd.bsum"
                git checkout ; ls -lah "."
              #Generate
              curl -w "(DL) <== %{url}\n" -qfsSL "https://meta.pkgforge.dev/${{ matrix.repo }}/${HOST_TRIPLET}.json" -o "${TMPDIR}/${HOST_TRIPLET}.json.tmp"
@@ -162,12 +191,21 @@ jobs:
                  b3sum "$1" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "$1.bsum"
                 }
                 generate_checksum "${HOST_TRIPLET}.json"
+               #SDB
+                soarql --repo "${{ matrix.repo }}" --input "${HOST_TRIPLET}.json" --output "${HOST_TRIPLET}.sdb"
+                 if [[ $(stat -c%s "${HOST_TRIPLET}.sdb") -le 1024 ]] || file -i "${HOST_TRIPLET}.sdb" | grep -qiv 'sqlite'; then
+                   echo -e "\n[✗] FATAL: Failed to generate Soar DB...\n"
+                 exit 1
+                 fi
                 #xz
                  7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "${HOST_TRIPLET}.json.xz" "${HOST_TRIPLET}.json" 2>/dev/null ; generate_checksum "${HOST_TRIPLET}.json.xz"
+                 7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "${HOST_TRIPLET}.sdb.xz" "${HOST_TRIPLET}.sdb" 2>/dev/null ; generate_checksum "${HOST_TRIPLET}.sdb.xz"
                 #Zstd
                  zstd --ultra -22 --force "${HOST_TRIPLET}.json" -o "${HOST_TRIPLET}.json.zstd" ; generate_checksum "${HOST_TRIPLET}.json.zstd"
+                 zstd --ultra -22 --force "${HOST_TRIPLET}.sdb" -o "${HOST_TRIPLET}.sdb.zstd" ; generate_checksum "${HOST_TRIPLET}.sdb.zstd"
                #Bita
                 bita compress --input "${HF_REPO_DIR}/${HOST_TRIPLET}.json" --compression "zstd" --compression-level "21" --force-create "${HF_REPO_DIR}/${HOST_TRIPLET}.json.cba"
+                bita compress --input "${HF_REPO_DIR}/${HOST_TRIPLET}.sdb" --compression "zstd" --compression-level "21" --force-create "${HF_REPO_DIR}/${HOST_TRIPLET}.sdb.cba"
                #Sqlite
                 if command -v "qsv" &>/dev/null; then
                   jq -c '.[]' "${HOST_TRIPLET}.json" > "${TMPDIR}/${HOST_TRIPLET}.jsonl"

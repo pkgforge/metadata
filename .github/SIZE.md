@@ -39,18 +39,18 @@
  13M   │ │ ├── aarch64-Linux.json
  11M   │ │ ├── x86_64-Linux.db
  11M   │ │ ├── aarch64-Linux.db
-900K   │ │ ├── x86_64-Linux.db.cba
+896K   │ │ ├── x86_64-Linux.db.cba
 852K   │ │ ├── aarch64-Linux.db.cba
 812K   │ │ ├── x86_64-Linux.json.cba
-736K   │ │ ├── aarch64-Linux.json.cba
+740K   │ │ ├── aarch64-Linux.json.cba
 628K   │ │ ├── x86_64-Linux.db.zstd
 608K   │ │ ├── x86_64-Linux.db.xz
 596K   │ │ ├── x86_64-Linux.json.xz
-584K   │ │ ├── aarch64-Linux.db.zstd
+588K   │ │ ├── aarch64-Linux.db.zstd
 568K   │ │ ├── aarch64-Linux.db.xz
 556K   │ │ ├── x86_64-Linux.json.zstd
-552K   │ │ ├── aarch64-Linux.json.xz
-516K   │ │ ├── aarch64-Linux.json.zstd
+556K   │ │ ├── aarch64-Linux.json.xz
+520K   │ │ ├── aarch64-Linux.json.zstd
 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.json.bsum
@@ -69,15 +69,15 @@
  24K   │   ├── gen_meta_x86_64-Linux.sh
 8.0K   │   └── sync_hf_mirror.sh
 6.8M   ├─┬ soarpkgs
-6.5M   │ ├─┬ data
+6.4M   │ ├─┬ data
 1.6M   │ │ ├── INDEX.json
 1.2M   │ │ ├── BACKAGE.json
 848K   │ │ ├── INDEX.db
-788K   │ │ ├── pub_issues_binaries.txt
+784K   │ │ ├── pub_issues_binaries.txt
 304K   │ │ ├── pub_issues_packages.txt
-276K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-248K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+264K   │ │ ├── DIFF_bincache_aarch64-Linux.json
 240K   │ │ ├── INDEX.json.cba
+232K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 152K   │ │ ├── INDEX.json.zstd
 152K   │ │ ├── INDEX.json.xz
 148K   │ │ ├── INDEX.db.cba
@@ -157,15 +157,15 @@
  28K   │   ├── gen_meta_aarch64-Linux.sh
  24K   │   ├── gen_meta_x86_64-Linux.sh
 8.0K   │   └── sync_hf_mirror.sh
-136K   ├─┬ web
-132K   │ └─┬ cloudflare
+120K   ├─┬ web
+116K   │ └─┬ cloudflare
  56K   │   ├─┬ src
  16K   │   │ ├── static.ts
  16K   │   │ ├── config.ts
  12K   │   │ ├── render.ts
 4.0K   │   │ ├── types.ts
 4.0K   │   │ └── index.ts
- 52K   │   ├── package-lock.json
+ 36K   │   ├── package-lock.json
  12K   │   ├── tsconfig.json
 4.0K   │   ├── wrangler.toml
 4.0K   │   └── package.json

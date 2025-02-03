@@ -207,8 +207,8 @@ jobs:
                  exit 1
                  fi
                 #xz
-                 7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "${HOST_TRIPLET}.json.xz" "${HOST_TRIPLET}.json" 2>/dev/null ; generate_checksum "${HOST_TRIPLET}.json.xz"
-                 7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "${HOST_TRIPLET}.sdb.xz" "${HOST_TRIPLET}.sdb" 2>/dev/null ; generate_checksum "${HOST_TRIPLET}.sdb.xz"
+                 xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.json" ; generate_checksum "${HOST_TRIPLET}.json.xz"
+                 xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.sdb" ; generate_checksum "${HOST_TRIPLET}.sdb.xz"
                 #Zstd
                  zstd --ultra -22 --force "${HOST_TRIPLET}.json" -o "${HOST_TRIPLET}.json.zstd" ; generate_checksum "${HOST_TRIPLET}.json.zstd"
                  zstd --ultra -22 --force "${HOST_TRIPLET}.sdb" -o "${HOST_TRIPLET}.sdb.zstd" ; generate_checksum "${HOST_TRIPLET}.sdb.zstd"

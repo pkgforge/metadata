@@ -2403,7 +2403,7 @@
       "monitor",
       "top"
     ],
-    "version": "v0.10.1"
+    "version": "v0.10.2"
   },
   {
     "_disabled": "false",
@@ -4185,7 +4185,7 @@
       "downloader",
       "download-manager"
     ],
-    "version": "HEAD-11a17aa-250202T224013"
+    "version": "HEAD-b1b8c2f-250203T001558"
   },
   {
     "_disabled": "false",
@@ -20472,7 +20472,7 @@
       "javascript",
       "typescript"
     ],
-    "version": "HEAD-43dfb74-250202T152136"
+    "version": "HEAD-694dd3b-250202T193918"
   },
   {
     "_disabled": "false",
@@ -22160,7 +22160,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "136.0.20250202091256"
+    "version": "136.0.20250202210625"
   },
   {
     "_disabled": "false",
@@ -24006,7 +24006,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-b5dc97c-250202T180252"
+    "version": "HEAD-1c04247-250203T000602"
   },
   {
     "_disabled": "false",
@@ -32748,7 +32748,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-02-01"
+    "version": "2025-02-02"
   },
   {
     "_disabled": "false",
@@ -33663,7 +33663,7 @@
     "tag": [
       "file-manager"
     ],
-    "version": "HEAD-7595e05-250130T095350"
+    "version": "HEAD-4f0a5d6-250203T104553"
   },
   {
     "_disabled": "false",
@@ -34898,7 +34898,7 @@
     "tag": [
       "log"
     ],
-    "version": "v0.12.3"
+    "version": "v0.12.4-beta2"
   },
   {
     "_disabled": "false",
@@ -35799,7 +35799,7 @@
       "cidr",
       "subnet"
     ],
-    "version": "HEAD-5895d77-250126T235549"
+    "version": "HEAD-c51384e-250202T235552"
   },
   {
     "_disabled": "false",
@@ -40791,7 +40791,7 @@
     "tag": [
       "pager"
     ],
-    "version": "HEAD-a0a9a7e-250202T121112"
+    "version": "HEAD-a76c510-250203T093152"
   },
   {
     "_disabled": "false",
@@ -41160,7 +41160,7 @@
     "tag": [
       "pdf"
     ],
-    "version": "HEAD-9b1ead8-250202T012033"
+    "version": "HEAD-4a2f04f-250203T005424"
   },
   {
     "_disabled": "false",
@@ -43272,6 +43272,81 @@
     "_disabled": "false",
     "pkg": "qbittorrent",
     "pkg_family": "qbittorrent",
+    "pkg_id": "gitlab.com.qbittorrent.qbittorrent.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-beta/qbittorrent/qbittorrent",
+    "app_id": "org.qbittorrent.qBittorrent",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/qbittorrent/appimage.official.beta.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A P2P (peer-to-peer) Bittorrent client (Beta)",
+    "distro_pkg": {
+      "alpine": [
+        "qbittorrent"
+      ],
+      "archlinux": {
+        "aur": [
+          "qbittorrent-git",
+          "qbittorrent-qt5"
+        ],
+        "extra": [
+          "qbittorrent"
+        ]
+      },
+      "debian": [
+        "qbittorrent"
+      ],
+      "gnuguix": [
+        "qbittorrent"
+      ],
+      "homebrew": [
+        "qbittorrent"
+      ],
+      "nixpkgs": [
+        "qbittorrent",
+        "qbittorrent-nox",
+        "qbittorrent-qt5"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/appimage.official.beta.yaml",
+    "homepage": [
+      "https://www.qbittorrent.org",
+      "https://github.com/qbittorrent/qBittorrent",
+      "https://sourceforge.net/projects/qbittorrent"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://www.qbittorrent.org/download"
+    ],
+    "provides": [
+      "qbittorrent"
+    ],
+    "repology": [
+      "qbittorrent"
+    ],
+    "src_url": [
+      "https://www.qbittorrent.org/download",
+      "https://www.fosshub.com/qBittorrent.html",
+      "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-appimage"
+    ],
+    "tag": [
+      "editor"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "qbittorrent",
+    "pkg_family": "qbittorrent",
     "pkg_id": "gitlab.com.qbittorrent.qbittorrent.stable",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-stable/qbittorrent/qbittorrent",
@@ -43342,82 +43417,6 @@
     "tag": [
       "editor"
     ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "qbittorrent",
-    "pkg_family": "qbittorrent",
-    "pkg_id": "gitlab.com.qbittorrent.qbittorrent.beta",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-beta/qbittorrent/qbittorrent",
-    "app_id": "org.qbittorrent.qBittorrent",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/qbittorrent/appimage.official.beta.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A P2P (peer-to-peer) Bittorrent client (Beta)",
-    "distro_pkg": {
-      "alpine": [
-        "qbittorrent"
-      ],
-      "archlinux": {
-        "aur": [
-          "qbittorrent-git",
-          "qbittorrent-qt5"
-        ],
-        "extra": [
-          "qbittorrent"
-        ]
-      },
-      "debian": [
-        "qbittorrent"
-      ],
-      "gnuguix": [
-        "qbittorrent"
-      ],
-      "homebrew": [
-        "qbittorrent"
-      ],
-      "nixpkgs": [
-        "qbittorrent",
-        "qbittorrent-nox",
-        "qbittorrent-qt5"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/appimage.official.beta.yaml",
-    "homepage": [
-      "https://www.qbittorrent.org",
-      "https://github.com/qbittorrent/qBittorrent",
-      "https://sourceforge.net/projects/qbittorrent"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://www.qbittorrent.org/download"
-    ],
-    "provides": [
-      "qbittorrent"
-    ],
-    "repology": [
-      "qbittorrent"
-    ],
-    "src_url": [
-      "https://www.qbittorrent.org/download",
-      "https://www.fosshub.com/qBittorrent.html",
-      "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-appimage"
-    ],
-    "tag": [
-      "editor"
-    ],
-    "version": "5.1.0"
   },
   {
     "_disabled": "false",

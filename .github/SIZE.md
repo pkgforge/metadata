@@ -41,13 +41,13 @@
  11M   │ │ ├── aarch64-Linux.db
 7.7M   │ │ ├── x86_64-Linux.sdb
 7.2M   │ │ ├── aarch64-Linux.sdb
-900K   │ │ ├── x86_64-Linux.db.cba
+904K   │ │ ├── x86_64-Linux.db.cba
 872K   │ │ ├── x86_64-Linux.sdb.cba
-848K   │ │ ├── aarch64-Linux.db.cba
-824K   │ │ ├── aarch64-Linux.sdb.cba
+852K   │ │ ├── aarch64-Linux.db.cba
+832K   │ │ ├── aarch64-Linux.sdb.cba
 812K   │ │ ├── x86_64-Linux.json.cba
 748K   │ │ ├── aarch64-Linux.json.cba
-648K   │ │ ├── x86_64-Linux.sdb.zstd
+652K   │ │ ├── x86_64-Linux.sdb.zstd
 628K   │ │ ├── x86_64-Linux.db.zstd
 608K   │ │ ├── x86_64-Linux.db.xz
 608K   │ │ ├── aarch64-Linux.sdb.zstd
@@ -82,15 +82,15 @@
  28K   │   ├── gen_meta_x86_64-Linux.sh
  28K   │   ├── gen_meta_aarch64-Linux.sh
 8.0K   │   └── sync_hf_mirror.sh
-6.9M   ├─┬ soarpkgs
-6.5M   │ ├─┬ data
+6.8M   ├─┬ soarpkgs
+6.4M   │ ├─┬ data
 1.6M   │ │ ├── INDEX.json
 1.2M   │ │ ├── BACKAGE.json
 848K   │ │ ├── INDEX.db
 784K   │ │ ├── pub_issues_binaries.txt
-312K   │ │ ├── DIFF_bincache_aarch64-Linux.json
 304K   │ │ ├── pub_issues_packages.txt
-288K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+276K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+248K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 240K   │ │ ├── INDEX.json.cba
 152K   │ │ ├── INDEX.json.zstd
 152K   │ │ ├── INDEX.json.xz
@@ -98,12 +98,11 @@
 144K   │ │ ├── GH_REPO.md
 120K   │ │ ├── INDEX.db.zstd
 112K   │ │ ├── INDEX.db.xz
- 40K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 36K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  32K   │ │ ├── URLS.txt
  28K   │ │ ├── GH_REPO_ARCHIVED.md
- 28K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  28K   │ │ ├── DIFF_bincache.json
-8.0K   │ │ ├── DIFF_pkgcache.json
+ 24K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
 4.0K   │ │ ├── TOTAL_CACHE.txt
 4.0K   │ │ ├── TOTAL_CACHE.json
 4.0K   │ │ ├── TOTAL.json
@@ -112,7 +111,8 @@
 4.0K   │ │ ├── INDEX.json.bsum
 4.0K   │ │ ├── INDEX.db.zstd.bsum
 4.0K   │ │ ├── INDEX.db.xz.bsum
-4.0K   │ │ └── INDEX.db.bsum
+4.0K   │ │ ├── INDEX.db.bsum
+4.0K   │ │ └── DIFF_pkgcache.json
 356K   │ └─┬ scripts
 204K   │   ├─┬ archived
  52K   │   │ ├── pkgcache_.github_scripts.7z

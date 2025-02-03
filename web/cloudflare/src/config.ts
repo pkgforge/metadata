@@ -264,7 +264,7 @@ const baseConfig: Omit<SiteConfig, 'name' | 'bucket'> = {
     // dangerousOverwriteZeroByteObject: false,
 
     /// [Optional] favicon, should be a URL to **PNG IMAGE**. Default to Cloudflare R2's logo
-    favicon: 'https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/web/assets/icon_config_multi.png',
+    favicon: 'https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/web/assets/icon_database.png',
 };
 
 export function getSiteConfig(env: Env, domain: string): SiteConfig | undefined {

@@ -336,6 +336,7 @@ if command -v rclone &> /dev/null &&\
   generate_checksum "x86_64-Linux.json"
  #To SDB
   soarql --repo "pkgcache" --input "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.json" --output "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb"
+  generate_checksum "x86_64-Linux.sdb"
    if [[ $(stat -c%s "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb") -le 1024 ]] || file -i "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.sdb" | grep -qiv 'sqlite'; then
      echo -e "\n[✗] FATAL: Failed to generate Soar DB...\n"
    exit 1

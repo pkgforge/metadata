@@ -125,6 +125,10 @@ jobs:
                "./${HOST_TRIPLET_L}.json.zstd" \
                "./${HOST_TRIPLET}.json.zstd.bsum" \
                "./${HOST_TRIPLET_L}.json.zstd.bsum" \
+               "./${HOST_TRIPLET}.sdb" \
+               "./${HOST_TRIPLET_L}.sdb" \
+               "./${HOST_TRIPLET}.sdb.bsum" \
+               "./${HOST_TRIPLET_L}.sdb.bsum" \
                "./${HOST_TRIPLET}.sdb.cba" \
                "./${HOST_TRIPLET_L}.sdb.cba" \
                "./${HOST_TRIPLET}.sdb.xz" \
@@ -164,6 +168,10 @@ jobs:
                "/${HOST_TRIPLET_L}.json.zstd" \
                "/${HOST_TRIPLET}.json.zstd.bsum" \
                "/${HOST_TRIPLET_L}.json.zstd.bsum" \
+               "/${HOST_TRIPLET}.sdb" \
+               "/${HOST_TRIPLET_L}.sdb" \
+               "/${HOST_TRIPLET}.sdb.bsum" \
+               "/${HOST_TRIPLET_L}.sdb.bsum" \
                "/${HOST_TRIPLET}.sdb.cba" \
                "/${HOST_TRIPLET_L}.sdb.cba" \
                "/${HOST_TRIPLET}.sdb.xz" \
@@ -193,6 +201,7 @@ jobs:
                 generate_checksum "${HOST_TRIPLET}.json"
                #SDB
                 soarql --repo "${{ matrix.repo }}" --input "${HOST_TRIPLET}.json" --output "${HOST_TRIPLET}.sdb"
+                generate_checksum "${HOST_TRIPLET}.sdb"
                  if [[ $(stat -c%s "${HOST_TRIPLET}.sdb") -le 1024 ]] || file -i "${HOST_TRIPLET}.sdb" | grep -qiv 'sqlite'; then
                    echo -e "\n[✗] FATAL: Failed to generate Soar DB...\n"
                  exit 1

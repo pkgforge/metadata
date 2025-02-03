@@ -356,57 +356,36 @@ if command -v rclone &> /dev/null &&\
      zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db" -o "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.zstd" ; generate_checksum "aarch64-Linux.db.zstd"
      #Upload
       rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db" "r2:/meta/pkgcache/aarch64-Linux.db" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db" "r2:/meta/pkgcache/aarch64-linux.db" --checksum --check-first --user-agent="${USER_AGENT}" &
       rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.bsum" "r2:/meta/pkgcache/aarch64-Linux.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.bsum" "r2:/meta/pkgcache/aarch64-linux.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
       rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.cba" "r2:/meta/pkgcache/aarch64-Linux.db.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.cba" "r2:/meta/pkgcache/aarch64-linux.db.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
       rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.xz" "r2:/meta/pkgcache/aarch64-Linux.db.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.xz" "r2:/meta/pkgcache/aarch64-linux.db.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
       rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.xz.bsum" "r2:/meta/pkgcache/aarch64-Linux.db.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.xz.bsum" "r2:/meta/pkgcache/aarch64-linux.db.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
       rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.zstd" "r2:/meta/pkgcache/aarch64-Linux.db.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.zstd" "r2:/meta/pkgcache/aarch64-linux.db.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
       rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.zstd.bsum" "r2:/meta/pkgcache/aarch64-Linux.db.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.db.zstd.bsum" "r2:/meta/pkgcache/aarch64-linux.db.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
     fi
   fi
  #To xz
-  7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "aarch64-Linux.json.xz" "aarch64-Linux.json" 2>/dev/null ; generate_checksum "aarch64-Linux.json.xz"
-  7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "aarch64-Linux.sdb.xz" "aarch64-Linux.sdb" 2>/dev/null ; generate_checksum "aarch64-Linux.sdb.xz"
+  xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "aarch64-Linux.json" ; generate_checksum "aarch64-Linux.json.xz"
+  xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "aarch64-Linux.sdb" ; generate_checksum "aarch64-Linux.sdb.xz"
  #To Zstd
   zstd --ultra -22 --force "aarch64-Linux.json" -o "aarch64-Linux.json.zstd" ; generate_checksum "aarch64-Linux.json.zstd"
   zstd --ultra -22 --force "aarch64-Linux.sdb" -o "aarch64-Linux.sdb.zstd" ; generate_checksum "aarch64-Linux.sdb.zstd"
  #Upload (Json)
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json" "r2:/meta/pkgcache/aarch64-Linux.json" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json" "r2:/meta/pkgcache/aarch64-linux.json" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.bsum" "r2:/meta/pkgcache/aarch64-Linux.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.bsum" "r2:/meta/pkgcache/aarch64-linux.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.cba" "r2:/meta/pkgcache/aarch64-Linux.json.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.cba" "r2:/meta/pkgcache/aarch64-linux.json.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.xz" "r2:/meta/pkgcache/aarch64-Linux.json.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.xz" "r2:/meta/pkgcache/aarch64-linux.json.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.xz.bsum" "r2:/meta/pkgcache/aarch64-Linux.json.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.xz.bsum" "r2:/meta/pkgcache/aarch64-linux.json.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.zstd" "r2:/meta/pkgcache/aarch64-Linux.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.zstd" "r2:/meta/pkgcache/aarch64-linux.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.zstd.bsum" "r2:/meta/pkgcache/aarch64-Linux.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json.zstd.bsum" "r2:/meta/pkgcache/aarch64-linux.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   #Upload (SDB)
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb" "r2:/meta/pkgcache/aarch64-Linux.sdb" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb" "r2:/meta/pkgcache/aarch64-linux.sdb" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.bsum" "r2:/meta/pkgcache/aarch64-Linux.sdb.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.bsum" "r2:/meta/pkgcache/aarch64-linux.sdb.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.cba" "r2:/meta/pkgcache/aarch64-Linux.sdb.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.cba" "r2:/meta/pkgcache/aarch64-linux.sdb.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.xz" "r2:/meta/pkgcache/aarch64-Linux.sdb.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.xz" "r2:/meta/pkgcache/aarch64-linux.sdb.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.xz.bsum" "r2:/meta/pkgcache/aarch64-Linux.sdb.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.xz.bsum" "r2:/meta/pkgcache/aarch64-linux.sdb.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.zstd" "r2:/meta/pkgcache/aarch64-Linux.sdb.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.zstd" "r2:/meta/pkgcache/aarch64-linux.sdb.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.zstd.bsum" "r2:/meta/pkgcache/aarch64-Linux.sdb.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.sdb.zstd.bsum" "r2:/meta/pkgcache/aarch64-linux.sdb.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   wait ; echo
 fi
 #-------------------------------------------------------#

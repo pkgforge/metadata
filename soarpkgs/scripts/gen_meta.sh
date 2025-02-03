@@ -379,7 +379,7 @@ if command -v rclone &> /dev/null &&\
     if [[ -s "${TMPDIR}/INDEX.db" && $(stat -c%s "${TMPDIR}/INDEX.db") -gt 1024 ]]; then
      cp -fv "${TMPDIR}/INDEX.db" "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" ; generate_checksum "INDEX.db"
      bita compress --input "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" --compression "zstd" --compression-level "21" --force-create "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.cba"
-     7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.xz" "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" 2>/dev/null ; generate_checksum "INDEX.db.xz"
+     xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "INDEX.db" ; generate_checksum "INDEX.db.xz"
      zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" -o "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.zstd" ; generate_checksum "INDEX.db.zstd"
      #Upload
       rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" "r2:/meta/soarpkgs/INDEX.db" --checksum --check-first --user-agent="${USER_AGENT}" &

@@ -27,16 +27,16 @@ jobs:
             repo: "pkgcache"
             hf: "https://huggingface.co/datasets/pkgforge/pkgcache"
             script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/pkgcache/scripts/sync_hf_mirror.sh"
+          
+          - runner: "ubuntu-latest"
+            repo: "pkgcache"
+            hf: "https://huggingface.co/datasets/pkgforge/pkgcache"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/pkgcache/scripts/sync_hf_mirror.sh"
 
           - runner: "ubuntu-latest"
             repo: "bincache"
             hf: "https://huggingface.co/datasets/pkgforge/bincache"
             script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/bincache/scripts/sync_hf_mirror.sh"
-
-          - runner: "ubuntu-latest"
-            repo: "pkgcache"
-            hf: "https://huggingface.co/datasets/pkgforge/pkgcache"
-            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/pkgcache/scripts/sync_hf_mirror.sh"
 
     steps:
       - name: Install Addons
@@ -82,6 +82,6 @@ jobs:
           dos2unix --quiet "./sync.sh"
           chmod +x "./sync.sh"
           ##DO NOT USE > 1, causes conflict
-          PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
-          #PARALLEL_LIMIT="1" bash "./sync.sh"
+          #PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
+          PARALLEL_LIMIT="1" bash "./sync.sh"
         continue-on-error: true

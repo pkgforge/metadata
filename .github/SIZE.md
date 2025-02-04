@@ -87,9 +87,9 @@
 1.6M   │ │ ├── INDEX.json
 1.2M   │ │ ├── BACKAGE.json
 848K   │ │ ├── INDEX.db
-784K   │ │ ├── pub_issues_binaries.txt
+780K   │ │ ├── pub_issues_binaries.txt
 304K   │ │ ├── pub_issues_packages.txt
-280K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+284K   │ │ ├── DIFF_bincache_aarch64-Linux.json
 248K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 240K   │ │ ├── INDEX.json.cba
 152K   │ │ ├── INDEX.json.zstd

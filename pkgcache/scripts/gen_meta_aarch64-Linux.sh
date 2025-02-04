@@ -204,7 +204,7 @@ generate_meta()
                  }, .]
                else [.]
                end
-             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="hf_pkg" validate_json
+             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="gh_pkg" validate_json
            #Add/Update ghcr_blob
             echo -e "[+] Adding/Updating [${PKG}] ('ghcr_blob')"
             jq --arg PKG "$(jq -r '.download_url | split("&")[] | select(startswith("download=")) | split("=")[1]' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]')" \

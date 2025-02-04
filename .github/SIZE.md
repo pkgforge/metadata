@@ -1,5 +1,5 @@
 ```mathematica
-259M └─┬ main
+260M └─┬ main
 170M   ├─┬ misc
 170M   │ ├─┬ data
  69M   │ │ ├── ARCHLINUX.json
@@ -37,26 +37,26 @@
  79M   │ ├─┬ data
  14M   │ │ ├── x86_64-Linux.json
  14M   │ │ ├── aarch64-Linux.json
- 11M   │ │ ├── x86_64-Linux.db
+ 12M   │ │ ├── x86_64-Linux.db
  11M   │ │ ├── aarch64-Linux.db
 7.7M   │ │ ├── x86_64-Linux.sdb
 7.2M   │ │ ├── aarch64-Linux.sdb
-896K   │ │ ├── x86_64-Linux.db.cba
-872K   │ │ ├── x86_64-Linux.sdb.cba
-872K   │ │ ├── aarch64-Linux.db.cba
-828K   │ │ ├── aarch64-Linux.sdb.cba
-812K   │ │ ├── x86_64-Linux.json.cba
+904K   │ │ ├── x86_64-Linux.db.cba
+884K   │ │ ├── aarch64-Linux.db.cba
+864K   │ │ ├── x86_64-Linux.sdb.cba
+856K   │ │ ├── x86_64-Linux.json.cba
+824K   │ │ ├── aarch64-Linux.sdb.cba
 772K   │ │ ├── aarch64-Linux.json.cba
 652K   │ │ ├── x86_64-Linux.sdb.zstd
 628K   │ │ ├── x86_64-Linux.db.zstd
+612K   │ │ ├── x86_64-Linux.db.xz
 612K   │ │ ├── aarch64-Linux.sdb.zstd
-608K   │ │ ├── x86_64-Linux.db.xz
 604K   │ │ ├── aarch64-Linux.db.zstd
 596K   │ │ ├── x86_64-Linux.sdb.xz
 588K   │ │ ├── aarch64-Linux.db.xz
+568K   │ │ ├── x86_64-Linux.json.zstd
 560K   │ │ ├── aarch64-Linux.sdb.xz
-556K   │ │ ├── x86_64-Linux.json.zstd
-536K   │ │ ├── x86_64-Linux.json.xz
+548K   │ │ ├── x86_64-Linux.json.xz
 532K   │ │ ├── aarch64-Linux.json.zstd
 512K   │ │ ├── aarch64-Linux.json.xz
 4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
@@ -89,8 +89,8 @@
 848K   │ │ ├── INDEX.db
 780K   │ │ ├── pub_issues_binaries.txt
 304K   │ │ ├── pub_issues_packages.txt
-292K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-260K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+300K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+272K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 240K   │ │ ├── INDEX.json.cba
 152K   │ │ ├── INDEX.json.zstd
 152K   │ │ ├── INDEX.json.xz
@@ -138,7 +138,7 @@
 2.5M   │ ├─┬ data
 528K   │ │ ├── x86_64-Linux.sdb
 504K   │ │ ├── x86_64-Linux.db
-476K   │ │ ├── x86_64-Linux.json
+480K   │ │ ├── x86_64-Linux.json
 156K   │ │ ├── aarch64-Linux.sdb
 116K   │ │ ├── aarch64-Linux.db
 112K   │ │ ├── aarch64-Linux.json

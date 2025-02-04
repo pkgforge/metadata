@@ -188,6 +188,7 @@ generate_meta()
                end
              ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="download_count" validate_json
            #Add/Update gh_pkg
+            echo -e "[+] Adding/Updating [${PKG}] ('gh_pkg')"
             unset GH_PKG GH_PKG_STATUS
             GH_PKG="$(jq -r '.download_url // ""' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]' | sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/pkgcache/(.*)\?tag=(.*)\&download=(.*)$|https://github.com/pkgforge/pkgcache/releases/tag/\1/\2|g")"
             GH_PKG_STATUS="$(curl -X "HEAD" -qfsSL "${GH_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
@@ -256,6 +257,7 @@ generate_meta()
              ) | flatten | from_entries' \
              "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="ghcr_size" validate_json
            #Add/Update hf_pkg
+            echo -e "[+] Adding/Updating [${PKG}] ('hf_pkg')"
             unset HF_PKG HF_PKG_STATUS
             HF_PKG="$(jq -r '.download_url // ""' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]' | sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/pkgcache/(.*)\?tag=(.*)\&download=(.*)$|https://hf.co/datasets/pkgforge/pkgcache/tree/main/\1/\2|g")"
             HF_PKG_STATUS="$(curl -X "HEAD" -qfsSL "${HF_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"

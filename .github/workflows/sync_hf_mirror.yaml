@@ -27,16 +27,16 @@ jobs:
             repo: "pkgcache"
             hf: "https://huggingface.co/datasets/pkgforge/pkgcache"
             script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/pkgcache/scripts/sync_hf_mirror.sh"
+          
+          - runner: "ubuntu-latest"
+            repo: "pkgcache"
+            hf: "https://huggingface.co/datasets/pkgforge/pkgcache"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/pkgcache/scripts/sync_hf_mirror.sh"
 
           - runner: "ubuntu-latest"
             repo: "bincache"
             hf: "https://huggingface.co/datasets/pkgforge/bincache"
             script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/bincache/scripts/sync_hf_mirror.sh"
-
-          - runner: "ubuntu-latest"
-            repo: "pkgcache"
-            hf: "https://huggingface.co/datasets/pkgforge/pkgcache"
-            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/pkgcache/scripts/sync_hf_mirror.sh"
 
     steps:
       - name: Install Addons

@@ -102,9 +102,15 @@ jobs:
           set +x ; set +e
           #-------------#
           dos2unix --quiet "${{ matrix.script }}"
-          chmod +x "${{ matrix.script }}"
-          PARALLEL_LIMIT="20" bash "${{ matrix.script }}"
-          #PARALLEL_LIMIT="$(($(nproc)+1))" bash "${{ matrix.script }}"
+          chmod -v 'a+x' "${{ matrix.script }}"
+          if echo "${{ matrix.repo }}" | grep -qi "bincache"; then
+           export PARALLEL_LIMIT="50"
+          elif echo "${{ matrix.repo }}" | grep -qi "pkgcache"; then
+           export PARALLEL_LIMIT="10"
+          else
+           export PARALLEL_LIMIT="$(($(nproc)+1))"
+          fi
+          bash "${{ matrix.script }}"
         continue-on-error: true
 
       - name: Get DateTime & Purge files (=> 95 MB)

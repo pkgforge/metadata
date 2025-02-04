@@ -187,6 +187,24 @@ generate_meta()
                else [.]
                end
              ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="download_count" validate_json
+           #Add/Update gh_pkg
+            unset GH_PKG GH_PKG_STATUS
+            GH_PKG="$(jq -r '.download_url // ""' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]' | sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/bincache/(.*)\?tag=(.*)\&download=(.*)$|https://github.com/pkgforge/bincache/releases/tag/\1/\2|g")"
+            GH_PKG_STATUS="$(curl -X "HEAD" -qfsSL "${GH_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
+            if echo "${GH_PKG_STATUS}" | grep -qiv '200$'; then
+              GH_PKG=""
+            fi
+            jq --arg GH_PKG "${GH_PKG}" \
+            '
+             to_entries | map(
+               if .key == "ghcr_pkg" then
+                 [{
+                   key: "gh_pkg",
+                   value: ($GH_PKG | tostring)
+                 }, .]
+               else [.]
+               end
+             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="hf_pkg" validate_json
            #Add/Update ghcr_blob
             echo -e "[+] Adding/Updating [${PKG}] ('ghcr_blob')"
             jq --arg PKG "$(jq -r '.download_url | split("&")[] | select(startswith("download=")) | split("=")[1]' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]')" \
@@ -237,6 +255,24 @@ generate_meta()
                end
              ) | flatten | from_entries' \
              "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="ghcr_size" validate_json
+           #Add/Update hf_pkg
+            unset HF_PKG HF_PKG_STATUS
+            HF_PKG="$(jq -r '.download_url // ""' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]' | sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/bincache/(.*)\?tag=(.*)\&download=(.*)$|https://hf.co/datasets/pkgforge/bincache/tree/main/\1/\2|g")"
+            HF_PKG_STATUS="$(curl -X "HEAD" -qfsSL "${HF_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
+            if echo "${HF_PKG_STATUS}" | grep -qiv '200$'; then
+              HF_PKG=""
+            fi
+            jq --arg HF_PKG "${HF_PKG}" \
+            '
+             to_entries | map(
+               if .key == "manifest_url" then
+                 [{
+                   key: "hf_pkg",
+                   value: ($HF_PKG | tostring)
+                 }, .]
+               else [.]
+               end
+             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="hf_pkg" validate_json
            #Cleanup & Finalize
              echo -e "[+] Cleaning Up..."
              jq 'walk(if type == "object" then with_entries(select(.value != "" and .value != [] and .value != {})) else . end)' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="cleanup" validate_json

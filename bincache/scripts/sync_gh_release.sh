@@ -128,9 +128,9 @@ export -f sync_to_gh_release
 pushd "${TMPDIR}" >/dev/null 2>&1
  unset GH_PKG_INPUT ; readarray -t "GH_PKG_INPUT" < <(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/METADATA.json" | sort -u)
   if [[ -n "${PARALLEL_LIMIT}" ]]; then
-   printf '%s\n' "${GH_PKG_INPUT[@]}" | xargs -P "${PARALLEL_LIMIT}" -I "{}" bash -c 'sync_to_gh_release "$@" 2>/dev/null' _ "{}"
+   printf '%s\n' "${GH_PKG_INPUT[@]}" | xargs -P "${PARALLEL_LIMIT}" -I "{}" bash -c 'sync_to_gh_release "$@"' _ "{}"
   else
-   printf '%s\n' "${GH_PKG_INPUT[@]}" | xargs -P "$(($(nproc)+1))" -I "{}" bash -c 'sync_to_gh_release "$@" 2>/dev/null' _ "{}"
+   printf '%s\n' "${GH_PKG_INPUT[@]}" | xargs -P "$(($(nproc)+1))" -I "{}" bash -c 'sync_to_gh_release "$@"' _ "{}"
   fi
 popd >/dev/null 2>&1
 #-------------------------------------------------------# 

@@ -260,7 +260,7 @@ generate_meta()
             echo -e "[+] Adding/Updating [${PKG}] ('hf_pkg')"
             unset HF_PKG HF_PKG_STATUS
             HF_PKG="$(jq -r '.download_url // ""' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]' | sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/pkgcache/(.*)\?tag=(.*)\&download=(.*)$|https://hf.co/datasets/pkgforge/pkgcache/tree/main/\1/\2|g")"
-            HF_PKG_STATUS="$(curl -X "HEAD" -qfsSL "${HF_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
+            HF_PKG_STATUS="$(curl -X "HEAD" -kqfsSL "${HF_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
             if echo "${HF_PKG_STATUS}" | grep -qiv '200$'; then
               HF_PKG=""
             fi

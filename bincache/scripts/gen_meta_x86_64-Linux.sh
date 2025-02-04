@@ -71,6 +71,15 @@ else
  echo -e "[+] Packages (Bincache): ${PKG_COUNT} <== https://github.com/orgs/pkgforge/packages?repo_name=bincache&visibility=public"
 fi
 unset pkg PKG_COUNT PKG_COUNT_TMP pkgs SBUILD_COUNT sbuilds SBUILDS
+#Get HF Repo
+pushd "$(mktemp -d)" >/dev/null 2>&1 && git clone --filter="blob:none" --depth="1" --no-checkout "https://huggingface.co/datasets/pkgforge/bincache" && cd "./bincache"
+ git sparse-checkout set "" && git checkout
+ unset HF_REPO_LOCAL ; HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
+ if [ ! -d "${HF_REPO_LOCAL}" ] || [ $(du -s "${HF_REPO_LOCAL}" | cut -f1) -le 100 ]; then
+   echo -e "\n[X] FATAL: Failed to clone HF Repo\n"
+  exit 1 
+ fi
+popd >/dev/null 2>&1
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
@@ -258,11 +267,25 @@ generate_meta()
              "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="ghcr_size" validate_json
            #Add/Update hf_pkg
             echo -e "[+] Adding/Updating [${PKG}] ('hf_pkg')"
-            unset HF_PKG HF_PKG_STATUS
+            unset HF_PKG HF_PKG_PATH HF_PKG_SNAP HF_PKG_STATUS
             HF_PKG="$(jq -r '.download_url // ""' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]' | sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/bincache/(.*)\?tag=(.*)\&download=(.*)$|https://hf.co/datasets/pkgforge/bincache/tree/main/\1/\2|g")"
-            HF_PKG_STATUS="$(curl -X "HEAD" -kqfsSL "${HF_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
-            if echo "${HF_PKG_STATUS}" | grep -qiv '200$'; then
-              HF_PKG=""
+            ##Slow & Expensive
+            #HF_PKG_STATUS="$(curl -X "HEAD" -kqfsSL "${HF_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
+            #if echo "${HF_PKG_STATUS}" | grep -qiv '200$'; then
+            #  HF_PKG=""
+            #fi
+            HF_PKG_PATH="$(echo "${HF_PKG}" | sed -E 's|.*/tree/main/||' | tr -d '[:space:]')"
+            if [[ "$(git -C "${HF_REPO_LOCAL}" ls-tree --name-only 'HEAD' -- "${HF_PKG_PATH}" 2>/dev/null)" == "${HF_PKG_PATH}" ]]; then
+             #Reset Path as PKG
+              HF_PKG="https://hf.co/datasets/pkgforge/bincache/tree/main/${HF_PKG_PATH}"
+            else 
+             #retry with a snapshot tag
+              HF_PKG_SNAP="$(jq -r '.snapshots[-1] // "" | split("[")[0]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -iv 'null' | tr -d '[:space:]')"
+              if [[ "$(git -C "${HF_REPO_LOCAL}" ls-tree --name-only 'HEAD' -- "${HF_PKG_PATH%/*}/${HF_PKG_SNAP}" 2>/dev/null)" == "${HF_PKG_PATH%/*}/${HF_PKG_SNAP}" ]]; then
+                HF_PKG="https://hf.co/datasets/pkgforge/bincache/tree/main/${HF_PKG_PATH%/*}/${HF_PKG_SNAP}"
+              else
+                HF_PKG=""
+              fi
             fi
             jq --arg HF_PKG "${HF_PKG}" \
             '

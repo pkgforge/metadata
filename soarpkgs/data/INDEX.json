@@ -8024,7 +8024,8 @@
       "bootstrap",
       "busybox",
       "coreutils"
-    ]
+    ],
+    "version": "HEAD-14f57f5-241221T004345"
   },
   {
     "_disabled": "false",
@@ -25636,7 +25637,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-8ab0a6b-250204T075507"
+    "version": "HEAD-dacc4b5-250204T091946"
   },
   {
     "_disabled": "false",
@@ -43271,6 +43272,82 @@
     "_disabled": "false",
     "pkg": "qbittorrent",
     "pkg_family": "qbittorrent",
+    "pkg_id": "gitlab.com.qbittorrent.qbittorrent.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-beta/qbittorrent/qbittorrent",
+    "app_id": "org.qbittorrent.qBittorrent",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/qbittorrent/appimage.official.beta.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A P2P (peer-to-peer) Bittorrent client (Beta)",
+    "distro_pkg": {
+      "alpine": [
+        "qbittorrent"
+      ],
+      "archlinux": {
+        "aur": [
+          "qbittorrent-git",
+          "qbittorrent-qt5"
+        ],
+        "extra": [
+          "qbittorrent"
+        ]
+      },
+      "debian": [
+        "qbittorrent"
+      ],
+      "gnuguix": [
+        "qbittorrent"
+      ],
+      "homebrew": [
+        "qbittorrent"
+      ],
+      "nixpkgs": [
+        "qbittorrent",
+        "qbittorrent-nox",
+        "qbittorrent-qt5"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/appimage.official.beta.yaml",
+    "homepage": [
+      "https://www.qbittorrent.org",
+      "https://github.com/qbittorrent/qBittorrent",
+      "https://sourceforge.net/projects/qbittorrent"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://www.qbittorrent.org/download"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/qbittorrent/appimage/official",
+    "provides": [
+      "qbittorrent"
+    ],
+    "repology": [
+      "qbittorrent"
+    ],
+    "src_url": [
+      "https://www.qbittorrent.org/download",
+      "https://www.fosshub.com/qBittorrent.html",
+      "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-appimage"
+    ],
+    "tag": [
+      "editor"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "qbittorrent",
+    "pkg_family": "qbittorrent",
     "pkg_id": "gitlab.com.qbittorrent.qbittorrent.stable",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-stable/qbittorrent/qbittorrent",
@@ -43342,83 +43419,6 @@
     "tag": [
       "editor"
     ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "qbittorrent",
-    "pkg_family": "qbittorrent",
-    "pkg_id": "gitlab.com.qbittorrent.qbittorrent.beta",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-beta/qbittorrent/qbittorrent",
-    "app_id": "org.qbittorrent.qBittorrent",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/qbittorrent/appimage.official.beta.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A P2P (peer-to-peer) Bittorrent client (Beta)",
-    "distro_pkg": {
-      "alpine": [
-        "qbittorrent"
-      ],
-      "archlinux": {
-        "aur": [
-          "qbittorrent-git",
-          "qbittorrent-qt5"
-        ],
-        "extra": [
-          "qbittorrent"
-        ]
-      },
-      "debian": [
-        "qbittorrent"
-      ],
-      "gnuguix": [
-        "qbittorrent"
-      ],
-      "homebrew": [
-        "qbittorrent"
-      ],
-      "nixpkgs": [
-        "qbittorrent",
-        "qbittorrent-nox",
-        "qbittorrent-qt5"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/appimage.official.beta.yaml",
-    "homepage": [
-      "https://www.qbittorrent.org",
-      "https://github.com/qbittorrent/qBittorrent",
-      "https://sourceforge.net/projects/qbittorrent"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://www.qbittorrent.org/download"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/qbittorrent/appimage/official",
-    "provides": [
-      "qbittorrent"
-    ],
-    "repology": [
-      "qbittorrent"
-    ],
-    "src_url": [
-      "https://www.qbittorrent.org/download",
-      "https://www.fosshub.com/qBittorrent.html",
-      "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-appimage"
-    ],
-    "tag": [
-      "editor"
-    ],
-    "version": "5.1.0"
   },
   {
     "_disabled": "false",
@@ -44803,7 +44803,7 @@
       "analyzer",
       "linter"
     ],
-    "version": "HEAD-a14adc1-250201T205850"
+    "version": "HEAD-a35a2a7-250204T174642"
   },
   {
     "_disabled": "false",
@@ -57890,7 +57890,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-64a9bf2-250204T150017"
+    "version": "HEAD-4e96341-250204T162851"
   },
   {
     "_disabled": "false",

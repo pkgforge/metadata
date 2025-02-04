@@ -106,11 +106,14 @@ sync_to_gh_release()
      pushd "${PKG_DIR}" >/dev/null 2>&1 && \
        gh release create "${SRC_TAG}" --repo "https://github.com/pkgforge/bincache" --title "${SRC_TAG}" --notes-file "${TMPDIR}/REl_NOTES.txt" --prerelease
        find "${PKG_DIR}" -type f -size +3c -print0 | xargs -0 -P "$(($(nproc)+1))" -I '{}' gh release upload "${SRC_TAG}" --repo "https://github.com/pkgforge/bincache" '{}'
-       unset GH_PKG_STATUS
-       sleep 1 && GH_PKG_STATUS="$(curl -X "HEAD" -qfsSL "${GH_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
-       if echo "${GH_PKG_STATUS}" | grep -qiv '200$'; then
-         echo -e "\n[-] FATAL: Failed to Upload ==> ${GH_PKG}\n"
-       fi
+       (
+         sleep 5
+         unset GH_PKG_STATUS
+         GH_PKG_STATUS="$(curl -X "HEAD" -qfsSL "${GH_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
+         if echo "${GH_PKG_STATUS}" | grep -qiv '200$'; then
+           echo -e "\n[-] FATAL: Failed to Upload ==> ${GH_PKG}\n"
+         fi
+       ) &
      pushd "${TMPDIR}" >/dev/null 2>&1
  ##Cleanup
    rm -rf "${PKG_DIR}" "${TMPDIR}/REl_NOTES.txt" 2>/dev/null && popd >/dev/null 2>&1

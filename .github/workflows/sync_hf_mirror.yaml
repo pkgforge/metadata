@@ -84,4 +84,5 @@ jobs:
           ##DO NOT USE > 1, causes conflict
           PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
           #PARALLEL_LIMIT="1" bash "./sync.sh"
+          wait ; echo
         continue-on-error: true

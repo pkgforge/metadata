@@ -13247,13 +13247,13 @@
     "git-url": "https://github.com/hughsie/libxmlb",
     "src-url": "https://github.com/hughsie/libxmlb/releases/download/0.3.21/libxmlb-0.3.21.tar.xz",
     "src-sha": "642343c9b3eca5c234ef83d3d5f6307c78d024f2545f3cc2fa252c9e14e4efd1",
-    "dep-pkg": "vala liblzma libzstd",
+    "dep-pkg": "liblzma libzstd glib",
     "dep-upp": "curl bsdtar python3 ninja",
     "dep-pym": " meson",
     "bsystem": "meson",
     "binbstd": "0",
     "parallel": "1",
-    "install": "mesonw -Dgtkdoc=false"
+    "install": "mesonw -Dlzma=enabled -Dzstd=enabled -Dstemmer=false -Dcli=false -Dtests=false -Dgtkdoc=false -Dintrospection=false"
   },
   {
     "pkgname": "libxmlrpc-c",
@@ -15394,6 +15394,23 @@
     "binbstd": "1",
     "parallel": "1",
     "install": "configure"
+  },
+  {
+    "pkgname": "ollama",
+    "pkgtype": "exe",
+    "version": "0.5.7",
+    "license": "MIT",
+    "summary": "Create, run, and share large language models (LLMs)",
+    "web-url": "https://ollama.com/",
+    "git-url": "https://github.com/ollama/ollama",
+    "git-sha": "a420a453b4783841e3e79c248ef0fe9548df6914",
+    "dep-upp": "git golang",
+    "bsystem": "go cmake-gmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "dopatch": "gsed -i 's|//go:generate make -j|//go:generate make -C .. -j|' llama/llama.go",
+    "prepare": "export CGO_ENABLED=1\nrun go generate llama/llama.go",
+    "install": "gow \\\n    -X github.com/ollama/ollama/version.Version=$PACKAGE_VERSION \\\n    -X github.com/ollama/ollama/server.mode=release"
   },
   {
     "pkgname": "onefetch",

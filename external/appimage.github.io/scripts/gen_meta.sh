@@ -234,7 +234,12 @@ generate_meta()
         pkg_name: ((.name // "") | ascii_downcase | gsub("[[:space:]]"; "")),
         pkg_type: ("appimage"),
         category: (.categories // []),
-        description: (if (.description // "") == "" then $DESCRIPTION else .description end),
+        description: (
+         if (.description // "") == "" 
+         then $DESCRIPTION | gsub("<[^>]*>"; "") | gsub("\\s+"; " ") | gsub("^\\s+|\\s+$"; "") | gsub("^\\.+|\\.+$"; "") 
+         else .description | gsub("<[^>]*>"; "") | gsub("\\s+"; " ") | gsub("^\\s+|\\s+$"; "") | gsub("^\\.+|\\.+$"; "") 
+         end
+        ),
         desktop: $DESKTOP,
         download_url: (if $DOWNLOAD_URL == "" then ((.links[]? | select(.type? | ascii_downcase == "download") | .url) // "") else $DOWNLOAD_URL end),
         homepage: ([.authors[]?.url?] // []) | unique,

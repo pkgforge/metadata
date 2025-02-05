@@ -132,12 +132,12 @@ generate_meta()
           for PKG_ASSET in "${PKG_AI_ASSETS[@]}"; do
             if echo "${PKG_ASSET}" | grep -qi "appimage"; then
               if [[ "$(uname -m | tr -d '[:space:]')" == "aarch64" ]]; then
-                if echo "${PKG_ASSET}" | grep -qiE "aarch\|arm64"; then
+                if echo "${PKG_ASSET}" | grep -qiE "aarch|arm64"; then
                   PKG_DOWNLOAD_URL="$(echo "${PKG_ASSET}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
                  break
                 fi
               elif [[ "$(uname -m | tr -d '[:space:]')" == "x86_64" ]]; then
-                if echo "${PKG_ASSET}" | grep -qiEv "aarch\|arm64\|armhf\|i386\|i686"; then
+                if echo "${PKG_ASSET}" | grep -qiEv "aarch|arm64|armhf|i386|i686"; then
                   PKG_DOWNLOAD_URL="$(echo "${PKG_ASSET}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
                  break
                 fi

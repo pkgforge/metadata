@@ -9,8 +9,8 @@ on:
     - cron: "0 */7 * * *" #every 07 hrs 
 jobs:
   generate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 200
+    runs-on: "${{ matrix.runner }}"
+    timeout-minutes: 90
     permissions:
       contents: write
       statuses: read
@@ -20,6 +20,13 @@ jobs:
         include:
           - source: "appimage.github.io"
             script: "${GITHUB_WORKSPACE}/main/external/appimage.github.io/scripts/gen_meta.sh"
+            host: "aarch64-Linux"
+            runner: "ubuntu-24.04-arm"
+
+          - source: "appimage.github.io"
+            script: "${GITHUB_WORKSPACE}/main/external/appimage.github.io/scripts/gen_meta.sh"
+            host: "x86_64-Linux"
+            runner: "ubuntu-latest"
 
     steps:
       - name: Checkout repository
@@ -57,7 +64,7 @@ jobs:
           echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
         continue-on-error: true
 
-      - name: Generate Data (${{ matrix.source }})
+      - name: Generate Data [${{ matrix.source }}] (${{ matrix.host }})
         run: |
           #Presets
           set +x ; set +e
@@ -86,7 +93,7 @@ jobs:
           repository: ./main
           commit_user_name: Azathothas
           commit_user_email: AjamX101@gmail.com
-          commit_message: "✅ Updated (External Metadata) [${{ matrix.source }}] 🛍️"
+          commit_message: "✅ Updated [${{ matrix.source }} (${{ matrix.host }})] 🛍️"
           #push_options: '--force'
         continue-on-error: true
 
@@ -104,6 +111,6 @@ jobs:
           repository: ./main
           commit_user_name: Azathothas
           commit_user_email: AjamX101@gmail.com
-          commit_message: "✅ Updated (External Metadata) [${{ matrix.source }}] 🛍️"
+          commit_message: "✅ Updated [${{ matrix.source }} (${{ matrix.host }})] 🛍️"
           #push_options: '--force'
         continue-on-error: true

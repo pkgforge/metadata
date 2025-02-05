@@ -51,8 +51,8 @@ generate_meta()
   echo -e "\n[+] Processing ${PKG_NAME##*[[:space:]]}\n"
   unset BUILD_DATE MATCHES PKG_AI_ASSETS PKG_APP_ENTRY PKG_ASSET PKG_DATA_ENTRY PKG_DB_ENTRY PKG_REPO_DESCRIPTION PKG_DOWNLOAD_URL PKG_REPO_LICENSE PKG_REPO_NAME PKG_REPO_TAGS PKG_SCREENSHOT_FILE PKG_SIZE PKG_SIZE_RAW PKG_VERSION PKG_VERSION_TMP SCREENSHOT
   #Check PKG_DB array (Mandatory)
-   printf '%s\n' "${PKG_DB[@]}" | grep -qi "/${PKG_NAME}" && {
-     MATCHES="$(printf '%s\n' "${PKG_DB[@]}" | grep -i "/${PKG_NAME}")"
+   printf '%s\n' "${PKG_DB[@]}" 2>/dev/null | grep -qi "/${PKG_NAME}" && {
+     MATCHES="$(printf '%s\n' "${PKG_DB[@]}" 2>/dev/null | grep -i "/${PKG_NAME}")"
      if [[ "$(echo "${MATCHES}" | wc -l | tr -d '[:space:]')" -gt 1 ]]; then
        PKG_DB_ENTRY="$(echo "${MATCHES}" | grep -i "/${PKG_NAME}$")"
      elif [[ "$(echo "${MATCHES}" | wc -l | tr -d '[:space:]')" == "1" ]]; then
@@ -66,8 +66,8 @@ generate_meta()
      return
    fi
   #Check PKG_APPS array (Optional)
-   printf '%s\n' "${PKG_APPS[@]}" | grep -qi "/${PKG_NAME}" && {
-     MATCHES="$(printf '%s\n' "${PKG_APPS[@]}" | grep -i "/${PKG_NAME}")"
+   printf '%s\n' "${PKG_APPS[@]}" 2>/dev/null | grep -qi "/${PKG_NAME}" && {
+     MATCHES="$(printf '%s\n' "${PKG_APPS[@]}" 2>/dev/null | grep -i "/${PKG_NAME}")"
      if [[ "$(echo "${MATCHES}" | wc -l | tr -d '[:space:]')" -gt 1 ]]; then
        PKG_APP_ENTRY="$(echo "${MATCHES}" | grep -i "/${PKG_NAME}$" | tr -d '[:space:]')"
      elif [[ "$(echo "${MATCHES}" | wc -l | tr -d '[:space:]')" == "1" ]]; then
@@ -78,8 +78,8 @@ generate_meta()
      echo -e "[+] ${PKG_NAME} ==> ${PKG_APP_ENTRY} [APP YAML]"
    fi
   #Check PKG_DATA array (Optional)
-   printf '%s\n' "${PKG_DATA[@]}" | grep -qi "/${PKG_NAME}" && {
-     MATCHES="$(printf '%s\n' "${PKG_DATA[@]}" | grep -i "/${PKG_NAME}")"
+   printf '%s\n' "${PKG_DATA[@]}" 2>/dev/null | grep -qi "/${PKG_NAME}" && {
+     MATCHES="$(printf '%s\n' "${PKG_DATA[@]}" 2>/dev/null | grep -i "/${PKG_NAME}")"
      if [[ "$(echo "${MATCHES}" | wc -l | tr -d '[:space:]')" -gt 1 ]]; then
        PKG_DATA_ENTRY="$(echo "${MATCHES}" | grep -i "/${PKG_NAME}$")"
      elif [[ "$(echo "${MATCHES}" | wc -l | tr -d '[:space:]')" == "1" ]]; then

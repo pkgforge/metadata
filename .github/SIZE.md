@@ -134,19 +134,19 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-4.4M   ├─┬ external
-4.4M   │ └─┬ appimage.github.io
+4.5M   ├─┬ external
+4.5M   │ └─┬ appimage.github.io
 4.4M   │   ├─┬ data
-1.6M   │   │ ├── x86_64-Linux.json
+1.7M   │   │ ├── x86_64-Linux.json
 1.3M   │   │ ├── x86_64-Linux.db
 208K   │   │ ├── x86_64-Linux.db.cba
-184K   │   │ ├── x86_64-Linux.json.cba
-172K   │   │ ├── aarch64-Linux.json
-164K   │   │ ├── x86_64-Linux.db.zstd
+188K   │   │ ├── x86_64-Linux.json.cba
+180K   │   │ ├── aarch64-Linux.json
+168K   │   │ ├── x86_64-Linux.db.zstd
 160K   │   │ ├── x86_64-Linux.db.xz
-152K   │   │ ├── aarch64-Linux.db
+156K   │   │ ├── aarch64-Linux.db
 148K   │   │ ├── x86_64-Linux.json.zstd
-140K   │   │ ├── x86_64-Linux.json.xz
+144K   │   │ ├── x86_64-Linux.json.xz
  24K   │   │ ├── aarch64-Linux.db.zstd
  24K   │   │ ├── aarch64-Linux.db.xz
  20K   │   │ ├── aarch64-Linux.json.zstd

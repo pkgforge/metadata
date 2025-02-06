@@ -20,7 +20,7 @@ rm -rvf "${SYSTMP}/appimage.json" 2>/dev/null
 ##Get feed.json
 curl -qfsSL "https://appimage.github.io/feed.json" -o "${TMPDIR}/appimage.json"
 AI_COUNT="$(jq -r '.. | .name? // empty' "${TMPDIR}/appimage.json" | wc -l | tr -d '[:space:]')" ; export AI_COUNT
-if [[ "${AI_COUNT}" -le 200 ]]; then
+if [[ "${AI_COUNT}" -le 500 ]]; then
  echo -e "\n[X] FATAL: AppImage Count is < 200, Parsing Failed?\n"
  exit 1
 else
@@ -316,7 +316,7 @@ sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/appimage.json.raw"
 cat "${TMPDIR}/appimage.json.raw" | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' | jq 'unique_by(.download_url) | sort_by(.pkg)' | jq . > "${TMPDIR}/appimage.json.final"
 ##Check
 unset PKG_COUNT; PKG_COUNT="$(jq -r '.[] | .pkg_id' "${TMPDIR}/appimage.json.final" | sort -u | wc -l | tr -d '[:space:]')"
-if [[ "${PKG_COUNT}" -le 20 ]]; then
+if [[ "${PKG_COUNT}" -le 50 ]]; then
  echo -e "\n[X] FATAL: Final Package Count is < 200, Parsing Failed?\n"
  exit 1
 else
@@ -339,7 +339,10 @@ if command -v rclone &> /dev/null &&\
  #Copy
   mkdir -pv "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data"
   cd "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data"
-  cp -fv "${SYSTMP}/appimage.json" "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/${HOST_TRIPLET}.json"
+  jq -s 'map(.[]) | group_by(.pkg_id) | map(add)' "${SYSTMP}/appimage.json" "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/${HOST_TRIPLET}.json" | jq 'unique_by(.download_url) | sort_by(.pkg)' | jq . > "${SYSTMP}/merged.json"
+  if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 50 ]]; then
+   cp -fv "${SYSTMP}/merged.json" "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/${HOST_TRIPLET}.json"
+  fi
   #Checksum
   generate_checksum()
   {

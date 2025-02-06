@@ -136,14 +136,14 @@
 4.0K   │   └── gen_diff.sh
 4.5M   ├─┬ external
 4.5M   │ └─┬ appimage.github.io
-4.4M   │   ├─┬ data
+4.5M   │   ├─┬ data
 1.7M   │   │ ├── x86_64-Linux.json
 1.3M   │   │ ├── x86_64-Linux.db
-208K   │   │ ├── x86_64-Linux.db.cba
+212K   │   │ ├── x86_64-Linux.db.cba
 188K   │   │ ├── x86_64-Linux.json.cba
 180K   │   │ ├── aarch64-Linux.json
 168K   │   │ ├── x86_64-Linux.db.zstd
-160K   │   │ ├── x86_64-Linux.db.xz
+164K   │   │ ├── x86_64-Linux.db.xz
 156K   │   │ ├── aarch64-Linux.db
 148K   │   │ ├── x86_64-Linux.json.zstd
 144K   │   │ ├── x86_64-Linux.json.xz

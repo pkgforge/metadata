@@ -254,6 +254,77 @@
   },
   {
     "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
+    "app_id": "org.chromium.Chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google (Stable)",
+    "distro_pkg": {
+      "alpine": [
+        "chromium"
+      ],
+      "archlinux": {
+        "extra": [
+          "chromium"
+        ]
+      },
+      "debian": [
+        "chromium"
+      ],
+      "homebrew": [
+        "chromium"
+      ],
+      "nixpkgs": [
+        "chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.chromium.org",
+      "https://chromium.googlesource.com/chromium/src",
+      "https://github.com/chromium/chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "chromium"
+    ],
+    "src_url": [
+      "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "133.0.6943.53"
+  },
+  {
+    "_disabled": "false",
     "pkg": "discord",
     "pkg_family": "discord",
     "pkg_id": "nixpkgs.discord",
@@ -849,6 +920,78 @@
     "_disabled": "false",
     "pkg": "kdenlive",
     "pkg_family": "kdenlive",
+    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
+    "app_id": "org.kde.kdenlive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
+    "category": [
+      "AudioVideoEditing"
+    ],
+    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
+    "distro_pkg": {
+      "alpine": [
+        "kdenlive"
+      ],
+      "archlinux": {
+        "aur": [
+          "kdenlive-appimage",
+          "kdenlive-git"
+        ],
+        "extra": [
+          "kdenlive"
+        ]
+      },
+      "debian": [
+        "kdenlive"
+      ],
+      "gnuguix": [
+        "kdenlive"
+      ],
+      "homebrew": [
+        "kdenlive"
+      ],
+      "nixpkgs": [
+        "kdePackages.kdenlive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
+    "homepage": [
+      "https://apps.kde.org/kdenlive",
+      "https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
+    "provides": [
+      "kdenlive"
+    ],
+    "repology": [
+      "kdenlive"
+    ],
+    "src_url": [
+      "https://kdenlive.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "2025-02-06"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kdenlive",
+    "pkg_family": "kdenlive",
     "pkg_id": "gitlab.com.kdenlive.kdenlive.stable",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-stable/kdenlive/kdenlive",
@@ -1270,82 +1413,6 @@
       "Video/Utilities"
     ],
     "version": "31.0.0-4"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "qbittorrent",
-    "pkg_family": "qbittorrent",
-    "pkg_id": "gitlab.com.qbittorrent.qbittorrent.beta",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-beta/qbittorrent/qbittorrent",
-    "app_id": "org.qbittorrent.qBittorrent",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/qbittorrent/appimage.official.beta.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A P2P (peer-to-peer) Bittorrent client (Beta)",
-    "distro_pkg": {
-      "alpine": [
-        "qbittorrent"
-      ],
-      "archlinux": {
-        "aur": [
-          "qbittorrent-git",
-          "qbittorrent-qt5"
-        ],
-        "extra": [
-          "qbittorrent"
-        ]
-      },
-      "debian": [
-        "qbittorrent"
-      ],
-      "gnuguix": [
-        "qbittorrent"
-      ],
-      "homebrew": [
-        "qbittorrent"
-      ],
-      "nixpkgs": [
-        "qbittorrent",
-        "qbittorrent-nox",
-        "qbittorrent-qt5"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/appimage.official.beta.yaml",
-    "homepage": [
-      "https://www.qbittorrent.org",
-      "https://github.com/qbittorrent/qBittorrent",
-      "https://sourceforge.net/projects/qbittorrent"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://www.qbittorrent.org/download"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/qbittorrent/appimage/official",
-    "provides": [
-      "qbittorrent"
-    ],
-    "repology": [
-      "qbittorrent"
-    ],
-    "src_url": [
-      "https://www.qbittorrent.org/download",
-      "https://www.fosshub.com/qBittorrent.html",
-      "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-appimage"
-    ],
-    "tag": [
-      "editor"
-    ]
   },
   {
     "_disabled": "false",

@@ -360,7 +360,15 @@ jq '
   (map(select(.download_count != -1)) | sort_by(.rank, .pkg)) as $valid_entries |
   (map(select(.download_count == -1)) | sort_by(.pkg)) as $invalid_entries |
   ($valid_entries + $invalid_entries) | to_entries | map(.value.rank = (.key + 1 | tostring)) |
-  map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq 'walk(if type == "boolean" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' | jq 'unique_by(.ghcr_pkg) | sort_by(.pkg)' > "${TMPDIR}/pkgcache_aarch64-Linux.json"
+  map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq 'walk(if type == "boolean" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' |\
+  jq 'map(select(
+     .pkg != null and .pkg != "" and
+     .pkg_id != null and .pkg_id != "" and
+     .pkg_name != null and .pkg_name != "" and
+     .description != null and .description != "" and
+     .ghcr_pkg != null and .download_url != "" and
+     .version != null and .version != ""
+  ))' | jq 'unique_by(.ghcr_pkg) | sort_by(.pkg)' > "${TMPDIR}/pkgcache_aarch64-Linux.json"
 #sanity check: jq 'sort_by(.rank | tonumber) | map({pkg_name, rank, download_count})'
 #sanity check urls
 sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/pkgcache_aarch64-Linux.json"

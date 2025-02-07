@@ -313,7 +313,15 @@ popd >/dev/null 2>&1
 find "${TMPDIR}/data/" -type f -name '*.json' -exec bash -c 'jq empty "{}" 2>/dev/null && cat "{}"' \; | jq -s 'sort_by(.pkg)' > "${TMPDIR}/appimage.json.raw"
 #sanity check urls
 sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/appimage.json.raw"
-cat "${TMPDIR}/appimage.json.raw" | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' | jq 'unique_by(.download_url) | sort_by(.pkg)' | jq . > "${TMPDIR}/appimage.json.final"
+cat "${TMPDIR}/appimage.json.raw" | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' |\
+ jq 'map(select(
+    .pkg != null and .pkg != "" and
+    .pkg_id != null and .pkg_id != "" and
+    .pkg_name != null and .pkg_name != "" and
+    .description != null and .description != "" and
+    .download_url != null and .download_url != "" and
+    .version != null and .version != ""
+ ))' | jq 'unique_by(.download_url) | sort_by(.pkg)' | jq . > "${TMPDIR}/appimage.json.final"
 ##Check
 unset PKG_COUNT; PKG_COUNT="$(jq -r '.[] | .pkg_id' "${TMPDIR}/appimage.json.final" | sort -u | wc -l | tr -d '[:space:]')"
 if [[ "${PKG_COUNT}" -le 50 ]]; then

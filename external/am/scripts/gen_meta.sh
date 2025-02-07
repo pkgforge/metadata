@@ -37,7 +37,15 @@ popd >/dev/null 2>&1
    jq -s 'sort_by(.pkg) | unique_by(.pkg_id)' > "${TMPDIR}/AM.json.tmp"
 #sanity check urls
  sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/AM.json.tmp"
- cat "${TMPDIR}/AM.json.tmp" | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' | jq 'unique_by(.pkg_id) | sort_by(.pkg)' | jq . > "${TMPDIR}/AM.json"
+ cat "${TMPDIR}/AM.json.tmp" | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' |\
+ jq 'map(select(
+    .pkg != null and .pkg != "" and
+    .pkg_id != null and .pkg_id != "" and
+    .pkg_name != null and .pkg_name != "" and
+    .description != null and .description != "" and
+    .download_url != null and .download_url != "" and
+    .version != null and .version != ""
+ ))' | jq 'unique_by(.pkg_id) | sort_by(.pkg)' | jq . > "${TMPDIR}/AM.json"
 ##Sanity Check
  if [[ "$(jq -r '.[] | .pkg_id' "${TMPDIR}/AM.json" | grep -iv 'null' | wc -l | tr -d '[:space:]')" -le 200 ]]; then
     echo -e "\n[-] FATAL: Failed to Generate AM MetaData\n"

@@ -340,7 +340,15 @@ popd >/dev/null 2>&1
 
 #-------------------------------------------------------#
 ##Copy to ${SYSTMP}
-jq -s add "${TMPDIR}/BINARIES.json" "${TMPDIR}/PACKAGES.json" | jq 'sort_by(.pkg)' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'unique | sort_by(.pkg)' > "${TMPDIR}/INDEX.json"
+jq -s add "${TMPDIR}/BINARIES.json" "${TMPDIR}/PACKAGES.json" | jq 'sort_by(.pkg)' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' |\
+  jq 'map(select(
+     .pkg != null and .pkg != "" and
+     .pkg_id != null and .pkg_id != "" and
+     .pkg_name != null and .pkg_name != "" and
+     .description != null and .description != "" and
+     .build_script != null and .download_url != "" and
+     .version != null and .version != ""
+  ))' | jq 'unique | sort_by(.pkg)' > "${TMPDIR}/INDEX.json"
 if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/INDEX.json" | grep -iv 'null' | wc -l)" -le 100 ]]; then
    echo -e "\n[-] FATAL: Failed to Generate Soarpkgs MetaData\n"
    exit 1   

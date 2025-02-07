@@ -94,7 +94,7 @@
 240K   │ │ ├── INDEX.json.cba
 152K   │ │ ├── INDEX.json.zstd
 152K   │ │ ├── INDEX.json.xz
-148K   │ │ ├── INDEX.db.cba
+144K   │ │ ├── INDEX.db.cba
 144K   │ │ ├── GH_REPO.md
 120K   │ │ ├── INDEX.db.zstd
 112K   │ │ ├── INDEX.db.xz

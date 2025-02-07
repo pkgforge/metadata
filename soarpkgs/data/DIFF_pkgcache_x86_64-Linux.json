@@ -124,7 +124,7 @@
     "tag": [
       "finance"
     ],
-    "version": "v25.2.0"
+    "version": "v25.2.1"
   },
   {
     "_disabled": "false",
@@ -251,6 +251,77 @@
       "network.web.browser"
     ],
     "version": "v1.74.51"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
+    "app_id": "org.chromium.Chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google (Stable)",
+    "distro_pkg": {
+      "alpine": [
+        "chromium"
+      ],
+      "archlinux": {
+        "extra": [
+          "chromium"
+        ]
+      },
+      "debian": [
+        "chromium"
+      ],
+      "homebrew": [
+        "chromium"
+      ],
+      "nixpkgs": [
+        "chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.chromium.org",
+      "https://chromium.googlesource.com/chromium/src",
+      "https://github.com/chromium/chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "chromium"
+    ],
+    "src_url": [
+      "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "133.0.6943.53"
   },
   {
     "_disabled": "false",
@@ -514,6 +585,68 @@
   },
   {
     "_disabled": "false",
+    "pkg": "discord-ptb",
+    "pkg_family": "discord",
+    "pkg_id": "github.com.srevinsaju.discord-AppImage.ptb",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-ptb/discord/discord-ptb",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/appimage.srevinsaju.ptb.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Public Test Beta)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord"
+      ],
+      "nixpkgs": [
+        "discord-ptb"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/appimage.srevinsaju.ptb.yaml",
+    "homepage": [
+      "https://discordapp.com",
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/discord-appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/discord-ptb/appimage/srevinsaju",
+    "provides": [
+      "discord-ptb"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "0.0.130"
+  },
+  {
+    "_disabled": "false",
     "pkg": "firefox",
     "pkg_family": "firefox",
     "pkg_id": "github.com.srevinsaju.Firefox-Appimage.beta",
@@ -699,7 +832,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "137.0.20250205165659"
+    "version": "137.0.20250206161648"
   },
   {
     "_disabled": "true",
@@ -849,6 +982,78 @@
     "_disabled": "false",
     "pkg": "kdenlive",
     "pkg_family": "kdenlive",
+    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
+    "app_id": "org.kde.kdenlive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
+    "category": [
+      "AudioVideoEditing"
+    ],
+    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
+    "distro_pkg": {
+      "alpine": [
+        "kdenlive"
+      ],
+      "archlinux": {
+        "aur": [
+          "kdenlive-appimage",
+          "kdenlive-git"
+        ],
+        "extra": [
+          "kdenlive"
+        ]
+      },
+      "debian": [
+        "kdenlive"
+      ],
+      "gnuguix": [
+        "kdenlive"
+      ],
+      "homebrew": [
+        "kdenlive"
+      ],
+      "nixpkgs": [
+        "kdePackages.kdenlive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
+    "homepage": [
+      "https://apps.kde.org/kdenlive",
+      "https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
+    "provides": [
+      "kdenlive"
+    ],
+    "repology": [
+      "kdenlive"
+    ],
+    "src_url": [
+      "https://kdenlive.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "2025-02-06"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kdenlive",
+    "pkg_family": "kdenlive",
     "pkg_id": "gitlab.com.kdenlive.kdenlive.stable",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-stable/kdenlive/kdenlive",
@@ -915,6 +1120,54 @@
       "editor"
     ],
     "version": "24.12.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "knot",
+    "pkg_family": "android-knot",
+    "pkg_id": "github.com.ic005k.Knot",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ic005k-knot/android-knot/knot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/android-knot/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Record everything in the simplest way possible",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "android-knot-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/android-knot/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/ic005k/Knot"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/android-knot/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ic005k/Knot"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/knot/appimage/official",
+    "provides": [
+      "knot"
+    ],
+    "repology": [
+      "android-knot"
+    ],
+    "src_url": [
+      "https://github.com/ic005k/Knot"
+    ],
+    "version": "1.2.09"
   },
   {
     "_disabled": "false",
@@ -987,7 +1240,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-02-05"
+    "version": "2025-02-06"
   },
   {
     "_disabled": "true",
@@ -1507,6 +1760,131 @@
     "version": "1.2.4-1"
   },
   {
+    "_disabled": "false",
+    "pkg": "vesktop",
+    "pkg_family": "vesktop",
+    "pkg_id": "github.com.Vencord.Vesktop",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vencord-vesktop/vesktop/vesktop",
+    "app_id": "dev.vencord.Vesktop",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/vesktop/appimage.official.stable.yaml",
+    "category": [
+      "Network",
+      "InstantMessaging",
+      "Chat"
+    ],
+    "description": "A custom Discord App aiming to give you better performance and improve linux support",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vesktop",
+          "vesktop-bin",
+          "vesktop-git"
+        ]
+      },
+      "gentoo": {
+        "guru": [
+          "net-im/vesktop-bin"
+        ]
+      },
+      "nixpkgs": [
+        "vesktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/vesktop/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/Vencord/Vesktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/vesktop/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)",
+      "QaidVoid (https://github.com/QaidVoid)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/Vencord/Vesktop"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/vesktop/appimage/official",
+    "src_url": [
+      "https://github.com/Vencord/Vesktop"
+    ],
+    "tag": [
+      "Communications",
+      "discord",
+      "messaging",
+      "net-im"
+    ],
+    "version": "v1.5.5"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "vscodium",
+    "pkg_family": "vscodium",
+    "pkg_id": "github.com.VSCodium.vscodium",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vscodium-vscodium/vscodium/vscodium",
+    "app_id": "com.vscodium.codium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/vscodium/appimage.official.stable.yaml",
+    "category": [
+      "IDE"
+    ],
+    "description": "Visual Studio Code without MS branding/telemetry/licensing",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vscodium",
+          "vscodium-bin",
+          "vscodium-electron",
+          "vscodium-electron-bin",
+          "vscodium-git"
+        ]
+      },
+      "nixpkgs": [
+        "vscodium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/vscodium/appimage.official.stable.yaml",
+    "homepage": [
+      "https://vscodium.com",
+      "https://github.com/VSCodium/vscodium"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/vscodium/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/VSCodium/vscodium"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/vscodium/appimage/official",
+    "provides": [
+      "vscodium==codium"
+    ],
+    "repology": [
+      "vscodium"
+    ],
+    "src_url": [
+      "https://github.com/VSCodium/vscodium"
+    ],
+    "tag": [
+      "code",
+      "editor",
+      "ide"
+    ],
+    "version": "1.97.0.25037"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -1644,6 +2022,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.7.6t(2025-02-05at20:23:24)"
+    "version": "Twilightbuild-1.7.6t(2025-02-07at00:47:02)"
   }
 ]

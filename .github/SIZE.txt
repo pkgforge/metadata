@@ -1,4 +1,4 @@
-271M └─┬ main
+274M └─┬ main
 170M   ├─┬ misc
 170M   │ ├─┬ data
  69M   │ │ ├── ARCHLINUX.json
@@ -81,6 +81,55 @@
  32K   │   ├── gen_meta_x86_64-Linux.sh
  32K   │   ├── gen_meta_aarch64-Linux.sh
 8.0K   │   └── sync_hf_mirror.sh
+9.1M   ├─┬ external
+4.7M   │ ├─┬ am
+4.7M   │ │ ├─┬ data
+2.1M   │ │ │ ├── x86_64-Linux.json
+1.8M   │ │ │ ├── x86_64-Linux.db
+288K   │ │ │ ├── x86_64-Linux.db.cba
+104K   │ │ │ ├── x86_64-Linux.json.cba
+100K   │ │ │ ├── x86_64-Linux.db.zstd
+100K   │ │ │ ├── x86_64-Linux.db.xz
+ 92K   │ │ │ ├── x86_64-Linux.json.zstd
+ 88K   │ │ │ ├── x86_64-Linux.json.xz
+4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
+4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
+4.0K   │ │ │ ├── x86_64-Linux.json.bsum
+4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
+4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
+4.0K   │ │ │ └── x86_64-Linux.db.bsum
+ 16K   │ │ └─┬ scripts
+ 12K   │ │   └── gen_meta.sh
+4.4M   │ └─┬ appimage.github.io
+4.4M   │   ├─┬ data
+1.6M   │   │ ├── x86_64-Linux.json
+1.3M   │   │ ├── x86_64-Linux.db
+208K   │   │ ├── x86_64-Linux.db.cba
+184K   │   │ ├── x86_64-Linux.json.cba
+164K   │   │ ├── x86_64-Linux.db.zstd
+160K   │   │ ├── x86_64-Linux.db.xz
+152K   │   │ ├── aarch64-Linux.json
+148K   │   │ ├── x86_64-Linux.json.zstd
+140K   │   │ ├── x86_64-Linux.json.xz
+132K   │   │ ├── aarch64-Linux.db
+ 20K   │   │ ├── aarch64-Linux.json.zstd
+ 20K   │   │ ├── aarch64-Linux.db.zstd
+ 20K   │   │ ├── aarch64-Linux.db.xz
+ 16K   │   │ ├── aarch64-Linux.json.xz
+4.0K   │   │ ├── x86_64-Linux.json.zstd.bsum
+4.0K   │   │ ├── x86_64-Linux.json.xz.bsum
+4.0K   │   │ ├── x86_64-Linux.json.bsum
+4.0K   │   │ ├── x86_64-Linux.db.zstd.bsum
+4.0K   │   │ ├── x86_64-Linux.db.xz.bsum
+4.0K   │   │ ├── x86_64-Linux.db.bsum
+4.0K   │   │ ├── aarch64-Linux.json.zstd.bsum
+4.0K   │   │ ├── aarch64-Linux.json.xz.bsum
+4.0K   │   │ ├── aarch64-Linux.json.bsum
+4.0K   │   │ ├── aarch64-Linux.db.zstd.bsum
+4.0K   │   │ ├── aarch64-Linux.db.xz.bsum
+4.0K   │   │ └── aarch64-Linux.db.bsum
+ 32K   │   └─┬ scripts
+ 28K   │     └── gen_meta.sh
 7.0M   ├─┬ soarpkgs
 6.6M   │ ├─┬ data
 1.6M   │ │ ├── INDEX.json
@@ -133,55 +182,6 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-6.0M   ├─┬ external
-4.4M   │ ├─┬ appimage.github.io
-4.4M   │ │ ├─┬ data
-1.6M   │ │ │ ├── x86_64-Linux.json
-1.3M   │ │ │ ├── x86_64-Linux.db
-208K   │ │ │ ├── x86_64-Linux.db.cba
-184K   │ │ │ ├── x86_64-Linux.json.cba
-164K   │ │ │ ├── x86_64-Linux.db.zstd
-160K   │ │ │ ├── x86_64-Linux.db.xz
-152K   │ │ │ ├── aarch64-Linux.json
-148K   │ │ │ ├── x86_64-Linux.json.zstd
-140K   │ │ │ ├── x86_64-Linux.json.xz
-132K   │ │ │ ├── aarch64-Linux.db
- 20K   │ │ │ ├── aarch64-Linux.json.zstd
- 20K   │ │ │ ├── aarch64-Linux.db.zstd
- 20K   │ │ │ ├── aarch64-Linux.db.xz
- 16K   │ │ │ ├── aarch64-Linux.json.xz
-4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
-4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
-4.0K   │ │ │ ├── x86_64-Linux.json.bsum
-4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
-4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
-4.0K   │ │ │ ├── x86_64-Linux.db.bsum
-4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
-4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
-4.0K   │ │ │ ├── aarch64-Linux.json.bsum
-4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
-4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
-4.0K   │ │ │ └── aarch64-Linux.db.bsum
- 32K   │ │ └─┬ scripts
- 28K   │ │   └── gen_meta.sh
-1.6M   │ └─┬ am
-1.6M   │   ├─┬ data
-620K   │   │ ├── x86_64-Linux.json
-512K   │   │ ├── x86_64-Linux.db
- 92K   │   │ ├── x86_64-Linux.db.cba
- 84K   │   │ ├── x86_64-Linux.json.cba
- 80K   │   │ ├── x86_64-Linux.db.zstd
- 80K   │   │ ├── x86_64-Linux.db.xz
- 72K   │   │ ├── x86_64-Linux.json.zstd
- 72K   │   │ ├── x86_64-Linux.json.xz
-4.0K   │   │ ├── x86_64-Linux.json.zstd.bsum
-4.0K   │   │ ├── x86_64-Linux.json.xz.bsum
-4.0K   │   │ ├── x86_64-Linux.json.bsum
-4.0K   │   │ ├── x86_64-Linux.db.zstd.bsum
-4.0K   │   │ ├── x86_64-Linux.db.xz.bsum
-4.0K   │   │ └── x86_64-Linux.db.bsum
- 16K   │   └─┬ scripts
- 12K   │     └── gen_meta.sh
 2.6M   ├─┬ pkgcache
 2.5M   │ ├─┬ data
 528K   │ │ ├── x86_64-Linux.sdb

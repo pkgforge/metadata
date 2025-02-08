@@ -68,7 +68,7 @@
       "Productivity/Office/Word",
       "Text"
     ],
-    "version": "3.0.6-2-4.3"
+    "version": "3.0.6"
   },
   {
     "_disabled": "false",
@@ -198,6 +198,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "nixpkgs.brave",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/nixappimage/nixpkgs",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/brave/brave-browser"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "1.75.175"
+  },
+  {
+    "_disabled": "false",
     "pkg": "chromium",
     "pkg_family": "chromium",
     "pkg_id": "nixpkgs.chromium",
@@ -266,6 +330,119 @@
       "browser"
     ],
     "version": "133.0.6943.53"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "citron",
+    "pkg_family": "citron",
+    "pkg_id": "github.com.pkgforge-dev.Citron-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/citron/citron",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/citron/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Nintendo Switch emulator forked from yuzu",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "citron",
+          "citron-git"
+        ]
+      },
+      "nixpkgs": [
+        "citron"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/citron/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://citron-emu.org",
+      "https://git.sr.ht/~grtcdr/citron"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Citron-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "citron"
+    ],
+    "repology": [
+      "citron"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Citron-AppImage"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "0.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "citron",
+    "pkg_family": "citron",
+    "pkg_id": "github.com.pkgforge-dev.Citron-AppImage.v3",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-v3/citron/citron",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/citron/appimage.pkgforge-dev.v3.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Nintendo Switch emulator forked from yuzu (x86-64-v3)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "citron",
+          "citron-git"
+        ]
+      },
+      "nixpkgs": [
+        "citron"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/citron/appimage.pkgforge-dev.v3.yaml",
+    "homepage": [
+      "https://citron-emu.org",
+      "https://git.sr.ht/~grtcdr/citron"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Citron-AppImage",
+      "Optimized for x86-64-v3",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "citron"
+    ],
+    "repology": [
+      "citron"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Citron-AppImage"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "0.4"
   },
   {
     "_disabled": "false",
@@ -588,6 +765,135 @@
       "Networking/Chat"
     ],
     "version": "0.0.585"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "element-desktop",
+    "pkg_family": "element-desktop",
+    "pkg_id": "runimage.alpine.element-desktop",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/element-desktop/element-desktop/element-desktop",
+    "app_id": "im.riot.Riot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/element-desktop/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A glossy Matrix collaboration client for desktop",
+    "distro_pkg": {
+      "alpine": [
+        "element-desktop",
+        "element-web"
+      ],
+      "archlinux": {
+        "aur": [
+          "element-desktop-git",
+          "element-desktop-nightly-bin",
+          "riot-web-develop-bin",
+          "riot-web-develop-git"
+        ],
+        "extra": [
+          "element.io"
+        ]
+      },
+      "homebrew": [
+        "element"
+      ],
+      "nixpkgs": [
+        "element-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/element-desktop/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://github.com/element-hq/element-desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/element-desktop/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "element-desktop:riot-desktop"
+    ],
+    "repology": [
+      "element-desktop"
+    ],
+    "src_url": [
+      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/testing/element-desktop"
+    ],
+    "tag": [
+      "chat",
+      "matrix"
+    ],
+    "version": "1.11.91"
+  },
+  {
+    "_disabled": "true",
+    "_disabled_reason": {
+      "broken": [
+        {
+          "date": "2025-02-08",
+          "reason": "Can't cache web assets"
+        }
+      ]
+    },
+    "pkg": "element-web",
+    "pkg_family": "element-web",
+    "pkg_id": "runimage.alpine.element-web",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/element-web/element-web/element-web",
+    "app_id": "im.riot.Riot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/element-web/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A glossy Matrix collaboration client for web",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/element-web/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://github.com/element-hq/element-web"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/element-web/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "element-web:riot-web"
+    ],
+    "repology": [
+      "element-web-anyarch"
+    ],
+    "src_url": [
+      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/element-web"
+    ],
+    "tag": [
+      "chat",
+      "matrix"
+    ],
+    "version": "1.11.91"
   },
   {
     "_disabled": "false",
@@ -1223,6 +1529,68 @@
   },
   {
     "_disabled": "false",
+    "pkg": "melonds",
+    "pkg_family": "melonds",
+    "pkg_id": "github.com.melonDS-emu.melonDS",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/emu-melonds/melonds/melonds",
+    "app_id": "net.kuribo64.melonDS",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/melonds/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Nintendo DS/DSi emulator",
+    "distro_pkg": {
+      "alpine": [
+        "melonds"
+      ],
+      "archlinux": {
+        "aur": [
+          "melonds",
+          "melonds-bin",
+          "melonds-git"
+        ]
+      },
+      "homebrew": [
+        "melonds"
+      ],
+      "nixpkgs": [
+        "melonDS"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/melonds/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/melonDS-emu/melonDS"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/melonds/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/melonDS-emu/melonDS"
+    ],
+    "provides": [
+      "melonds==melonDS"
+    ],
+    "repology": [
+      "melonds"
+    ],
+    "src_url": [
+      "https://github.com/melonDS-emu/melonDS"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ]
+  },
+  {
+    "_disabled": "false",
     "pkg": "obs-studio",
     "pkg_family": "obs-studio",
     "pkg_id": "github.com.pkgforge-dev.OBS-Studio-AppImage.stable",
@@ -1449,8 +1817,122 @@
       "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-appimage"
     ],
     "tag": [
-      "editor"
+      "torrent"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "qbittorrent-enhanced",
+    "pkg_family": "qbittorrent-enhanced",
+    "pkg_id": "github.com.c0re100.qBittorrent-Enhanced-Edition.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/edition-stable/qbittorrent-enhanced/qbittorrent-enhanced",
+    "app_id": "org.qbittorrent.qBittorrent",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/qbittorrent-enhanced/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Enhanced version of qBittorrent with extra features",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "qbittorrent-enhanced",
+          "qbittorrent-enhanced-appimage",
+          "qbittorrent-enhanced-git"
+        ]
+      },
+      "gnuguix": [
+        "qbittorrent-enhanced"
+      ],
+      "nixpkgs": [
+        "qbittorrent-enhanced"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/qbittorrent-enhanced/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/c0re100/qBittorrent-Enhanced-Edition"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/qbittorrent-enhanced/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "provides": [
+      "qbittorrent-enhanced"
+    ],
+    "repology": [
+      "qbittorrent-enhanced"
+    ],
+    "src_url": [
+      "https://github.com/c0re100/qBittorrent-Enhanced-Edition"
+    ],
+    "tag": [
+      "qbittorrent",
+      "torrent"
+    ],
+    "version": "release-5.0.3.10"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ruffle",
+    "pkg_family": "ruffle",
+    "pkg_id": "runimage.cachyos.ruffle.nightly",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ruffle-nightly/ruffle/ruffle",
+    "app_id": "rs.ruffle.Ruffle",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ruffle/runimage.cachyos.nightly.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Adobe Flash Player emulator",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ruffle-bin",
+          "ruffle-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ruffle/runimage.cachyos.nightly.yaml",
+    "homepage": [
+      "https://ruffle.rs",
+      "https://github.com/ruffle-rs/ruffle"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/ruffle/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "ruffle"
+    ],
+    "repology": [
+      "ruffle"
+    ],
+    "src_url": [
+      "https://github.com/ruffle-rs/ruffle"
+    ],
+    "tag": [
+      "adobe",
+      "flashplayer"
+    ],
+    "version": "0.1.0+$_channel+${_date//-}"
   },
   {
     "_disabled": "false",
@@ -1516,6 +1998,126 @@
       "messenger"
     ],
     "version": "v7.40.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "spotify",
+    "pkg_family": "spotify",
+    "pkg_id": "github.com.ivan-hc.Spotify-appimage",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/spotify-appimage/spotify/spotify",
+    "app_id": "com.spotify.Client",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/spotify/appimage.ivan-hc.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A proprietary music streaming service",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "spotify"
+        ]
+      },
+      "homebrew": [
+        "spotify"
+      ],
+      "nixpkgs": [
+        "spotify"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/spotify/appimage.ivan-hc.stable.yaml",
+    "homepage": [
+      "https://www.spotify.com",
+      "https://www.spotify.com/download/linux"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/spotify/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/ivan-hc/Spotify-appimage"
+    ],
+    "provides": [
+      "spotify"
+    ],
+    "repology": [
+      "spotify"
+    ],
+    "src_url": [
+      "https://github.com/ivan-hc/Spotify-appimage"
+    ],
+    "tag": [
+      "Music"
+    ],
+    "version": "1.2.53.440.72582"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "spotube",
+    "pkg_family": "spotube",
+    "pkg_id": "runimage.cachyos.spotube",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-spotube/spotube/spotube",
+    "app_id": "com.github.KRTirtho.Spotube",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/spotube/runimage.cachyos.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "FOSS Spotify Client",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "spotube",
+          "spotube-bin"
+        ]
+      },
+      "nixpkgs": [
+        "spotube"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/spotube/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://spotube.krtirtho.dev",
+      "https://github.com/KRTirtho/spotube"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/spotube/assets/default.png",
+    "license": [
+      "BSD-4-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "spotube"
+    ],
+    "repology": [
+      "spotube"
+    ],
+    "src_url": [
+      "https://codeberg.org/spotube/source",
+      "https://github.com/KRTirtho/spotube"
+    ],
+    "tag": [
+      "downloader",
+      "music",
+      "spotify"
+    ],
+    "version": "3.9.0"
   },
   {
     "_disabled": "false",
@@ -1650,6 +2252,372 @@
   },
   {
     "_disabled": "false",
+    "pkg": "suyu",
+    "pkg_family": "suyu",
+    "pkg_id": "git.suyu.dev.suyu.suyu.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/suyu-stable/suyu/suyu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/suyu/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Nintendo Switch emulator based on yuzu, with additional features",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "suyu-bin",
+          "suyu-git"
+        ]
+      },
+      "nixpkgs": [
+        "suyu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/suyu/appimage.official.stable.yaml",
+    "homepage": [
+      "https://suyu.dev",
+      "https://git.suyu.dev/suyu/suyu"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/suyu/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://git.suyu.dev/suyu/suyu"
+    ],
+    "provides": [
+      "suyu"
+    ],
+    "repology": [
+      "suyu"
+    ],
+    "src_url": [
+      "https://git.suyu.dev/suyu/suyu"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "synfigstudio",
+    "pkg_family": "synfigstudio",
+    "pkg_id": "github.com.synfig.synfig.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/synfig-stable/synfigstudio/synfigstudio",
+    "app_id": "org.synfig.SynfigStudio",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/synfigstudio/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Professional vector animation program",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "synfigstudio-appimage"
+        ],
+        "extra": [
+          "synfig",
+          "synfigstudio"
+        ]
+      },
+      "debian": [
+        "synfig",
+        "synfigstudio"
+      ],
+      "gnuguix": [
+        "synfig",
+        "synfigstudio"
+      ],
+      "homebrew": [
+        "synfig",
+        "synfigstudio"
+      ],
+      "nixpkgs": [
+        "synfigstudio"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/synfigstudio/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/synfig/synfig"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/synfigstudio/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/synfig/synfig"
+    ],
+    "provides": [
+      "synfigstudio==synfig"
+    ],
+    "repology": [
+      "synfigstudio"
+    ],
+    "src_url": [
+      "https://github.com/synfig/synfig"
+    ],
+    "tag": [
+      "animation",
+      "vector"
+    ],
+    "version": "v1.5.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "telegram-desktop",
+    "pkg_family": "telegram-desktop",
+    "pkg_id": "nixpkgs.telegram-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/telegram-desktop/telegram-desktop/telegram-desktop",
+    "app_id": "org.telegram.desktop",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "IRCClient"
+    ],
+    "description": "Official desktop version of Telegram messaging app",
+    "distro_pkg": {
+      "alpine": [
+        "telegram-desktop"
+      ],
+      "archlinux": {
+        "aur": [
+          "telegram-desktop-bin",
+          "telegram-desktop-dev",
+          "telegram-desktop-dev-bin",
+          "telegram-desktop-git"
+        ],
+        "extra": [
+          "telegram-desktop"
+        ]
+      },
+      "debian": [
+        "telegram-desktop"
+      ],
+      "gnuguix": [
+        "telegram-desktop"
+      ],
+      "homebrew": [
+        "telegram-desktop",
+        "telegram-desktop@beta"
+      ],
+      "nixpkgs": [
+        "tdesktop",
+        "telegram-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://desktop.telegram.org",
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/telegram-desktop/nixappimage/nixpkgs",
+    "provides": [
+      "telegram-desktop==Telegram-Desktop"
+    ],
+    "repology": [
+      "telegram-desktop"
+    ],
+    "src_url": [
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "5.10.7"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "torzu",
+    "pkg_family": "torzu",
+    "pkg_id": "github.com.pkgforge-dev.Torzu-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/torzu/torzu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/torzu/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Fork of yuzu, an open-source Nintendo Switch emulator",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "torzu",
+          "torzu-git"
+        ]
+      },
+      "nixpkgs": [
+        "torzu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/torzu/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://notabug.org/litucks/torzu"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/torzu/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Torzu-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "torzu"
+    ],
+    "repology": [
+      "torzu"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Torzu-AppImage"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "r27198.02cfee3f1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "torzu",
+    "pkg_family": "torzu",
+    "pkg_id": "github.com.pkgforge-dev.Torzu-AppImage.v3",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-v3/torzu/torzu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/torzu/appimage.pkgforge-dev.v3.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Fork of yuzu, an open-source Nintendo Switch emulator (x86-64-v3)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "torzu",
+          "torzu-git"
+        ]
+      },
+      "nixpkgs": [
+        "torzu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/torzu/appimage.pkgforge-dev.v3.yaml",
+    "homepage": [
+      "https://notabug.org/litucks/torzu"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/torzu/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Torzu-AppImage",
+      "Optimized for x86-64-v3",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "torzu"
+    ],
+    "repology": [
+      "torzu"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Torzu-AppImage"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "r27198.02cfee3f1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ultimmc",
+    "pkg_family": "ultimmc",
+    "pkg_id": "runimage.debian.ultimmc",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/debian-ultimmc/ultimmc/ultimmc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ultimmc/runimage.debian.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Offline Minecraft launcher",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ultimmc/runimage.debian.stable.yaml",
+    "homepage": [
+      "https://github.com/UltimMC/Launcher"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/ultimmc/assets/default.png",
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [debian]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "ultimmc==UltimMC"
+    ],
+    "src_url": [
+      "https://github.com/UltimMC/Launcher"
+    ],
+    "tag": [
+      "launcher",
+      "minecraft"
+    ],
+    "version": "250201T005842"
+  },
+  {
+    "_disabled": "false",
     "pkg": "vesktop",
     "pkg_family": "vesktop",
     "pkg_id": "github.com.Vencord.Vesktop",
@@ -1710,6 +2678,55 @@
       "net-im"
     ],
     "version": "v1.5.5"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "waydroid-helper",
+    "pkg_family": "waydroid-helper",
+    "pkg_id": "github.com.ayasa520.waydroid-helper.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/helper-stable/waydroid-helper/waydroid-helper",
+    "app_id": "com.jaoushingan.WaydroidHelper",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/waydroid-helper/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A GUI application for Waydroid configuration and extension installation",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "waydroid-helper",
+          "waydroid-helper-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/waydroid-helper/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/ayasa520/waydroid-helper"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/waydroid-helper/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ayasa520/waydroid-helper"
+    ],
+    "provides": [
+      "waydroid-helper"
+    ],
+    "repology": [
+      "waydroid-helper"
+    ],
+    "src_url": [
+      "https://github.com/ayasa520/waydroid-helper"
+    ],
+    "version": "v0.1.2"
   },
   {
     "_disabled": "true",

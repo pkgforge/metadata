@@ -70,7 +70,10 @@ if command -v rclone &> /dev/null &&\
  #Copy
   mkdir -pv "${GITHUB_WORKSPACE}/main/external/am/data"
   cd "${GITHUB_WORKSPACE}/main/external/am/data"
-  cp -fv "${SYSTMP}/AM.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json"
+  jq -s 'map(.[]) | group_by(.pkg_id) | map(add)' "${SYSTMP}/AM.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" | jq 'unique_by(.download_url) | sort_by(.pkg)' | jq . > "${SYSTMP}/merged.json"
+  if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 50 ]]; then
+   cp -fv "${SYSTMP}/merged.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json"
+  fi
   #Checksum
   generate_checksum()
   {

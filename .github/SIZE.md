@@ -42,9 +42,9 @@
  8.1M   │ │ ├── x86_64-Linux.sdb
  7.7M   │ │ ├── aarch64-Linux.sdb
  1.0M   │ │ ├── x86_64-Linux.db.cba
- 968K   │ │ ├── x86_64-Linux.json.cba
+ 972K   │ │ ├── x86_64-Linux.json.cba
  968K   │ │ ├── aarch64-Linux.db.cba
- 920K   │ │ ├── x86_64-Linux.sdb.cba
+ 924K   │ │ ├── x86_64-Linux.sdb.cba
  888K   │ │ ├── aarch64-Linux.sdb.cba
  876K   │ │ ├── aarch64-Linux.json.cba
  696K   │ │ ├── x86_64-Linux.db.zstd
@@ -56,7 +56,7 @@
  628K   │ │ ├── x86_64-Linux.sdb.xz
  616K   │ │ ├── x86_64-Linux.json.zstd
  600K   │ │ ├── aarch64-Linux.sdb.xz
- 596K   │ │ ├── x86_64-Linux.json.xz
+ 592K   │ │ ├── x86_64-Linux.json.xz
  584K   │ │ ├── aarch64-Linux.json.zstd
  564K   │ │ ├── aarch64-Linux.json.xz
  4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
@@ -85,12 +85,12 @@
   12M   ├─┬ external
  8.2M   │ ├─┬ am
  8.2M   │ │ ├─┬ data
- 3.6M   │ │ │ ├── x86_64-Linux.json
+ 3.7M   │ │ │ ├── x86_64-Linux.json
  3.1M   │ │ │ ├── x86_64-Linux.db
- 500K   │ │ │ ├── x86_64-Linux.db.cba
- 208K   │ │ │ ├── x86_64-Linux.json.cba
+ 504K   │ │ │ ├── x86_64-Linux.db.cba
+ 212K   │ │ │ ├── x86_64-Linux.json.cba
  192K   │ │ │ ├── x86_64-Linux.db.zstd
- 188K   │ │ │ ├── x86_64-Linux.db.xz
+ 192K   │ │ │ ├── x86_64-Linux.db.xz
  172K   │ │ │ ├── x86_64-Linux.json.zstd
  168K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
@@ -141,17 +141,17 @@
  332K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  304K   │ │ ├── pub_issues_packages.txt
  252K   │ │ ├── INDEX.json.cba
+ 160K   │ │ ├── INDEX.json.zstd
  160K   │ │ ├── INDEX.json.xz
- 156K   │ │ ├── INDEX.json.zstd
  156K   │ │ ├── INDEX.db.cba
  148K   │ │ ├── GH_REPO.md
  124K   │ │ ├── INDEX.db.zstd
  120K   │ │ ├── INDEX.db.xz
   60K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
-  36K   │ │ ├── DIFF_bincache.json
   32K   │ │ ├── URLS.txt
   32K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   28K   │ │ ├── GH_REPO_ARCHIVED.md
+  28K   │ │ ├── DIFF_bincache.json
  8.0K   │ │ ├── DIFF_pkgcache.json
  4.0K   │ │ ├── TOTAL_CACHE.txt
  4.0K   │ │ ├── TOTAL_CACHE.json

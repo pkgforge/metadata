@@ -1,6 +1,54 @@
 [
   {
     "_disabled": "false",
+    "pkg": "act",
+    "pkg_family": "act",
+    "pkg_id": "github.com.nektos.act",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nektos-act/act/act",
+    "bincache": "ghcr.io/pkgforge/bincache/act/official/act",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/act/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Run your GitHub Actions locally",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/act/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/nektos/act"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/nektos/act"
+    ],
+    "provides": [
+      "act"
+    ],
+    "repology": [
+      "act"
+    ],
+    "src_url": [
+      "https://github.com/nektos/act"
+    ],
+    "tag": [
+      "ci",
+      "devops",
+      "github-actions"
+    ],
+    "version": "v0.2.73"
+  },
+  {
+    "_disabled": "false",
     "pkg": "aggligator",
     "pkg_family": "aggligator",
     "pkg_id": "github.com.surban.aggligator",
@@ -178,72 +226,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "apk-static",
-    "pkg_family": "apk-static",
-    "pkg_id": "gitlab.alpinelinux.org.alpine.apk-tools",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apk-tools/apk-static/apk-static",
-    "bincache": "ghcr.io/pkgforge/bincache/apk-static/official/apk-static",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/apk-static/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Alpine Package Keeper (apk)",
-    "distro_pkg": {
-      "alpine": [
-        "apk-tools"
-      ],
-      "archlinux": {
-        "aur": [
-          "apk-tools-git",
-          "apk-tools-static-bin"
-        ],
-        "extra": [
-          "apk-tools"
-        ]
-      },
-      "nixpkgs": [
-        "apk-tools"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/apk-static/static.official.stable.yaml",
-    "homepage": [
-      "https://wiki.alpinelinux.org/wiki/Alpine_Package_Keeper",
-      "https://gitlab.alpinelinux.org/alpine/apk-tools",
-      "http://git.alpinelinux.org/cgit/apk-tools"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://gitlab.alpinelinux.org/alpine/apk-tools"
-    ],
-    "provides": [
-      "apk-static:apk"
-    ],
-    "repology": [
-      "apk-static"
-    ],
-    "src_url": [
-      "https://gitlab.alpinelinux.org/alpine/apk-tools"
-    ],
-    "tag": [
-      "alpine",
-      "package-manager"
-    ],
-    "version": "v3.0.0_rc4"
-  },
-  {
-    "_disabled": "false",
     "pkg": "archlinux",
     "pkg_family": "archlinux",
     "pkg_id": "github.com.Azathothas.docker-archlinux",
@@ -283,78 +265,6 @@
     "tag": [
       "archlinux"
     ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "aria2",
-    "pkg_family": "aria2",
-    "pkg_id": "github.com.aria2.aria2.continuous",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-continuous/aria2/aria2",
-    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
-    "distro_pkg": {
-      "alpine": [
-        "aria2"
-      ],
-      "archlinux": {
-        "aur": [
-          "aria2-fast",
-          "aria2-git"
-        ],
-        "extra": [
-          "aria2"
-        ]
-      },
-      "debian": [
-        "aria2"
-      ],
-      "nixpkgs": [
-        "aria",
-        "aria2"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
-    "homepage": [
-      "https://aria2.github.io",
-      "https://github.com/aria2/aria2",
-      "https://aria2.sourceforge.net",
-      "https://sourceforge.net/projects/aria2"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "This is a continuous build",
-      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
-    ],
-    "provides": [
-      "aria2:aria2c"
-    ],
-    "repology": [
-      "aria2"
-    ],
-    "src_url": [
-      "https://github.com/abcfy2/aria2-static-build"
-    ],
-    "tag": [
-      "bittorrent",
-      "downloader"
-    ],
-    "version": "250208T161432"
   },
   {
     "_disabled": "true",
@@ -1605,640 +1515,6 @@
     "version": "9.5"
   },
   {
-    "_disabled": "false",
-    "pkg": "coreutils_uutils",
-    "pkg_family": "coreutils",
-    "pkg_id": "github.com.uutils.coreutils.multicall",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-multicall/coreutils/coreutils_uutils",
-    "bincache": "ghcr.io/pkgforge/bincache/coreutils_uutils/multicall/coreutils",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.multicall.uutils.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Cross-platform Rust rewrite of the GNU coreutils",
-      "[": "Check file types and compare values [coreutils-uutils]",
-      "arch": "Print machine hardware name (same as uname -m) [coreutils-uutils]",
-      "b2sum": "Compute and check BLAKE2 message digest [coreutils-uutils]",
-      "b3sum": "Compute and check BLAKE3 message digest [coreutils-uutils]",
-      "base32": "Base32 encode/decode data and print to standard output [coreutils-uutils]",
-      "base64": "Base64 encode/decode data and print to standard output [coreutils-uutils]",
-      "basename": "Strip directory and suffix from filenames [coreutils-uutils]",
-      "basenc": "Encode/decode data and print to standard output [coreutils-uutils]",
-      "cat": "Concatenate files and print on the standard output [coreutils-uutils]",
-      "chcon": "Change file security context [coreutils-uutils]",
-      "chgrp": "Change group ownership [coreutils-uutils]",
-      "chmod": "Change file owner and group [coreutils-uutils]",
-      "chown": "Change file owner and group [coreutils-uutils]",
-      "chroot": "Run command or interactive shell with special root directory [coreutils-uutils]",
-      "cksum": "Compute and verify file checksums [coreutils-uutils]",
-      "comm": "Compare two sorted files line by line [coreutils-uutils]",
-      "coreutils": "Multicall Binary for Coreutils: GNU File, Shell, and Text utilities",
-      "cp": "Copy files and directories [coreutils-uutils]",
-      "csplit": "Split a file into sections determined by context lines [coreutils-uutils]",
-      "cut": "Remove sections from each line of files [coreutils-uutils]",
-      "date": "Print or set the system date and time [coreutils-uutils]",
-      "dd": "Convert and Copy a file [coreutils-uutils]",
-      "df": "Report file system space usage [coreutils-uutils]",
-      "dir": "List directory contents [coreutils-uutils]",
-      "dircolors": "Color setup for ls [coreutils-uutils]",
-      "dirname": "Strip last component from file name [coreutils-uutils]",
-      "du": "Estimate file space usage [coreutils-uutils]",
-      "echo": "Display a line of text [coreutils-uutils]",
-      "env": "Run a program in a modified environment [coreutils-uutils]",
-      "expand": "Convert tabs to spaces [coreutils-uutils]",
-      "expr": "Evaluate expressions [coreutils-uutils]",
-      "factor": "Factor numbers [coreutils-uutils]",
-      "false": "Do nothing, unsuccessfully [coreutils-uutils]",
-      "fmt": "Simple optimal text formatter [coreutils-uutils]",
-      "fold": "Wrap each input line to fit in specified width [coreutils-uutils]",
-      "ginstall": "Copy files and set attributes [coreutils-uutils]",
-      "groups": "Print the groups a user is in [coreutils-uutils]",
-      "hashsum": "Compute and check message digests for many Algorithms",
-      "head": "Output the first part of files [coreutils-uutils]",
-      "hostid": "Print the numeric identifier for the current host [coreutils-uutils]",
-      "hostname": "Display or set the system's host name [coreutils-uutils]",
-      "id": "Print real and effective user and group IDs [coreutils-uutils]",
-      "install": "Copy files and set attributes [coreutils-uutils]",
-      "join": "Join lines of two files on a common field [coreutils-uutils]",
-      "kill": "Send a signal (default: TERM) to given PIDs [coreutils-uutils]",
-      "link": "Call the link function to create a link to a file [coreutils-uutils]",
-      "ln": "Make links between files [coreutils-uutils]",
-      "logname": "Print user's login name [coreutils-uutils]",
-      "ls": "List directory contents [coreutils-uutils]",
-      "make-prime-list": "Generate Prime Numbers [coreutils-uutils]",
-      "md5sum": "Compute and check MD5 message digest [coreutils-uutils]",
-      "mkdir": "Make directories [coreutils-uutils]",
-      "mkfifo": "Make FIFOs (named pipes) [coreutils-uutils]",
-      "mknod": "Make block or character special files [coreutils-uutils]",
-      "mktemp": "Create a temporary file or directory [coreutils-uutils]",
-      "mv": "Move (rename) files [coreutils-uutils]",
-      "nice": "Run a program with modified scheduling priority [coreutils-uutils]",
-      "nl": "Number lines of files [coreutils-uutils]",
-      "nohup": "Run a command immune to hangups, with output to a non-tty [coreutils-uutils]",
-      "nproc": "Print the number of processing units available [coreutils-uutils]",
-      "numfmt": "Convert numbers from/to human-readable strings [coreutils-uutils]",
-      "od": "Dump files in octal and other formats [coreutils-uutils]",
-      "paste": "Merge lines of files [coreutils-uutils]",
-      "pathchk": "Check whether file names are valid or portable [coreutils-uutils]",
-      "pinky": "Lightweight finger [coreutils-uutils]",
-      "pr": "Convert text files for printing [coreutils-uutils]",
-      "printenv": "Print all or part of environment [coreutils-uutils]",
-      "printf": "Format and print data [coreutils-uutils]",
-      "ptx": "Produce a permuted index of file contents [coreutils-uutils]",
-      "pwd": "Print name of current/working directory [coreutils-uutils]",
-      "readlink": "Print resolved symbolic links or canonical file names [coreutils-uutils]",
-      "realpath": "Print the resolved path [coreutils-uutils]",
-      "rm": "Remove files or directories [coreutils-uutils]",
-      "rmdir": "Remove empty directories [coreutils-uutils]",
-      "runcon": "Run command with specified security context [coreutils-uutils]",
-      "seq": "Print a sequence of numbers [coreutils-uutils]",
-      "sha1sum": "Compute and check SHA1 message digest [coreutils-uutils]",
-      "sha224sum": "Compute and check SHA224 message digest [coreutils-uutils]",
-      "sha256sum": "Compute and check SHA256 message digest [coreutils-uutils]",
-      "sha3sum": "Compute and check SHA3 message digest [coreutils-uutils]",
-      "sha3-224sum": "Compute and check SHA3-224 message digest [coreutils-uutils]",
-      "sha3-256sum": "Compute and check SHA3-256 message digest [coreutils-uutils]",
-      "sha3-384sum": "Compute and check SHA3-384 message digest [coreutils-uutils]",
-      "sha3-512sum": "Compute and check SHA3-512 message digest [coreutils-uutils]",
-      "sha384sum": "Compute and check SHA384 message digest [coreutils-uutils]",
-      "sha512sum": "Compute and check SHA512 message digest [coreutils-uutils]",
-      "shake128sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
-      "shake256sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
-      "shred": "Overwrite a file to hide its contents, and optionally delete it [coreutils-uutils]",
-      "shuf": "Generate random permutations [coreutils-uutils]",
-      "sleep": "Delay for a specified amount of time [coreutils-uutils]",
-      "sort": "Sort lines of text files [coreutils-uutils]",
-      "split": "Split a file into pieces [coreutils-uutils]",
-      "stat": "Display file or file system status [coreutils-uutils]",
-      "stdbuf": "Run COMMAND, with modified buffering operations for its standard streams [coreutils-uutils]",
-      "stty": "Change and print terminal line settings [coreutils-uutils]",
-      "sum": "Checksum and count the blocks in a file [coreutils-uutils]",
-      "sync": "Synchronize cached writes to persistent storage [coreutils-uutils]",
-      "tac": "Concatenate and print files in reverse [coreutils-uutils]",
-      "tail": "Output the last part of files [coreutils-uutils]",
-      "tee": "Read from standard input and write to standard output and files [coreutils-uutils]",
-      "test": "Check file types and compare values [coreutils-uutils]",
-      "timeout": "Run a command with a time limit [coreutils-uutils]",
-      "touch": "Change file timestamps [coreutils-uutils]",
-      "tr": "Translate or Delete characters [coreutils-uutils]",
-      "true": "Do nothing, successfully [coreutils-uutils]",
-      "truncate": "Shrink or extend the size of a file to the specified size [coreutils-uutils]",
-      "tsort": "Perform topological sort [coreutils-uutils]",
-      "tty": "Print the file name of the terminal connected to standard input [coreutils-uutils]",
-      "uname": "Print system information [coreutils-uutils]",
-      "unexpand": "Convert spaces to tabs [coreutils-uutils]",
-      "uniq": "Report or omit repeated lines [coreutils-uutils]",
-      "unlink": "Call the unlink function to remove the specified file [coreutils-uutils]",
-      "uptime": "Display the time since the last boot [coreutils-uutils]",
-      "users": "Print the user names of users currently logged in to the current host [coreutils-uutils]",
-      "vdir": "List directory contents [coreutils-uutils]",
-      "wc": "Print newline, word, and byte counts for each file [coreutils-uutils]",
-      "who": "Show who is logged on [coreutils-uutils]",
-      "whoami": "Print effective user name [coreutils-uutils]",
-      "yes": "Output a string repeatedly until killed [coreutils-uutils]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "uutils",
-        "uutils-coreutils"
-      ],
-      "archlinux": {
-        "aur": [
-          "coreutils-uutils",
-          "uutils-coreutils-git"
-        ],
-        "extra": [
-          "uutils-coreutils"
-        ]
-      },
-      "debian": [
-        "rust-coreutils",
-        "rust-uucore"
-      ],
-      "gnuguix": [
-        "rust-uucore"
-      ],
-      "homebrew": [
-        "uutils-coreutils"
-      ],
-      "nixpkgs": [
-        "uutils-coreutils",
-        "uutils-coreutils-noprefix"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/coreutils/static.multicall.uutils.yaml",
-    "homepage": [
-      "https://uutils.github.io/coreutils/docs/index.html",
-      "https://github.com/uutils/coreutils"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/uutils/coreutils",
-      "This is the multicall version i.e all progs are symlinked"
-    ],
-    "provides": [
-      "coreutils==[",
-      "coreutils==[[",
-      "coreutils==arch",
-      "coreutils==b2sum",
-      "coreutils==b3sum",
-      "coreutils==base32",
-      "coreutils==base64",
-      "coreutils==basename",
-      "coreutils==basenc",
-      "coreutils==cat",
-      "coreutils==chgrp",
-      "coreutils==chmod",
-      "coreutils==chown",
-      "coreutils==chroot",
-      "coreutils==cksum",
-      "coreutils==comm",
-      "coreutils==cp",
-      "coreutils==csplit",
-      "coreutils==cut",
-      "coreutils==date",
-      "coreutils==dd",
-      "coreutils==df",
-      "coreutils==dir",
-      "coreutils==dircolors",
-      "coreutils==dirname",
-      "coreutils==du",
-      "coreutils==echo",
-      "coreutils==env",
-      "coreutils==expand",
-      "coreutils==expr",
-      "coreutils==factor",
-      "coreutils==false",
-      "coreutils==fmt",
-      "coreutils==fold",
-      "coreutils==groups",
-      "coreutils==hashsum",
-      "coreutils==head",
-      "coreutils==hostid",
-      "coreutils==hostname",
-      "coreutils==id",
-      "coreutils==install",
-      "coreutils==join",
-      "coreutils==kill",
-      "coreutils==link",
-      "coreutils==ln",
-      "coreutils==logname",
-      "coreutils==ls",
-      "coreutils==md5sum",
-      "coreutils==mkdir",
-      "coreutils==mkfifo",
-      "coreutils==mknod",
-      "coreutils==mktemp",
-      "coreutils==more",
-      "coreutils==mv",
-      "coreutils==nice",
-      "coreutils==nl",
-      "coreutils==nohup",
-      "coreutils==nproc",
-      "coreutils==numfmt",
-      "coreutils==od",
-      "coreutils==paste",
-      "coreutils==pathchk",
-      "coreutils==pinky",
-      "coreutils==pr",
-      "coreutils==printenv",
-      "coreutils==printf",
-      "coreutils==ptx",
-      "coreutils==pwd",
-      "coreutils==readlink",
-      "coreutils==realpath",
-      "coreutils==rm",
-      "coreutils==rmdir",
-      "coreutils==seq",
-      "coreutils==sha1sum",
-      "coreutils==sha224sum",
-      "coreutils==sha256sum",
-      "coreutils==sha3-224sum",
-      "coreutils==sha3-256sum",
-      "coreutils==sha3-384sum",
-      "coreutils==sha3-512sum",
-      "coreutils==sha384sum",
-      "coreutils==sha3sum",
-      "coreutils==sha512sum",
-      "coreutils==shake128sum",
-      "coreutils==shake256sum",
-      "coreutils==shred",
-      "coreutils==shuf",
-      "coreutils==sleep",
-      "coreutils==sort",
-      "coreutils==split",
-      "coreutils==stat",
-      "coreutils==stdbuf",
-      "coreutils==stty",
-      "coreutils==sum",
-      "coreutils==sync",
-      "coreutils==tac",
-      "coreutils==tail",
-      "coreutils==tee",
-      "coreutils==test",
-      "coreutils==timeout",
-      "coreutils==touch",
-      "coreutils==tr",
-      "coreutils==true",
-      "coreutils==truncate",
-      "coreutils==tsort",
-      "coreutils==tty",
-      "coreutils==uname",
-      "coreutils==unexpand",
-      "coreutils==uniq",
-      "coreutils==unlink",
-      "coreutils==uptime",
-      "coreutils==users",
-      "coreutils==vdir",
-      "coreutils==wc",
-      "coreutils==who",
-      "coreutils==whoami",
-      "coreutils==yes"
-    ],
-    "repology": [
-      "uutils-coreutils"
-    ],
-    "src_url": [
-      "https://github.com/uutils/coreutils"
-    ],
-    "tag": [
-      "bootstrap",
-      "busybox",
-      "coreutils"
-    ],
-    "version": "HEAD-d86a7fb-250208T152423"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "coreutils_uutils",
-    "pkg_family": "coreutils",
-    "pkg_id": "github.com.uutils.coreutils.standalone",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-standalone/coreutils/coreutils_uutils",
-    "bincache": "ghcr.io/pkgforge/bincache/coreutils_uutils/standalone/arch",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.standalone.uutils.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Cross-platform Rust rewrite of the GNU coreutils",
-      "[": "Check file types and compare values [coreutils-uutils]",
-      "arch": "Print machine hardware name (same as uname -m) [coreutils-uutils]",
-      "b2sum": "Compute and check BLAKE2 message digest [coreutils-uutils]",
-      "b3sum": "Compute and check BLAKE3 message digest [coreutils-uutils]",
-      "base32": "Base32 encode/decode data and print to standard output [coreutils-uutils]",
-      "base64": "Base64 encode/decode data and print to standard output [coreutils-uutils]",
-      "basename": "Strip directory and suffix from filenames [coreutils-uutils]",
-      "basenc": "Encode/decode data and print to standard output [coreutils-uutils]",
-      "cat": "Concatenate files and print on the standard output [coreutils-uutils]",
-      "chcon": "Change file security context [coreutils-uutils]",
-      "chgrp": "Change group ownership [coreutils-uutils]",
-      "chmod": "Change file owner and group [coreutils-uutils]",
-      "chown": "Change file owner and group [coreutils-uutils]",
-      "chroot": "Run command or interactive shell with special root directory [coreutils-uutils]",
-      "cksum": "Compute and verify file checksums [coreutils-uutils]",
-      "comm": "Compare two sorted files line by line [coreutils-uutils]",
-      "coreutils": "Multicall Binary for Coreutils: GNU File, Shell, and Text utilities",
-      "cp": "Copy files and directories [coreutils-uutils]",
-      "csplit": "Split a file into sections determined by context lines [coreutils-uutils]",
-      "cut": "Remove sections from each line of files [coreutils-uutils]",
-      "date": "Print or set the system date and time [coreutils-uutils]",
-      "dd": "Convert and Copy a file [coreutils-uutils]",
-      "df": "Report file system space usage [coreutils-uutils]",
-      "dir": "List directory contents [coreutils-uutils]",
-      "dircolors": "Color setup for ls [coreutils-uutils]",
-      "dirname": "Strip last component from file name [coreutils-uutils]",
-      "du": "Estimate file space usage [coreutils-uutils]",
-      "echo": "Display a line of text [coreutils-uutils]",
-      "env": "Run a program in a modified environment [coreutils-uutils]",
-      "expand": "Convert tabs to spaces [coreutils-uutils]",
-      "expr": "Evaluate expressions [coreutils-uutils]",
-      "factor": "Factor numbers [coreutils-uutils]",
-      "false": "Do nothing, unsuccessfully [coreutils-uutils]",
-      "fmt": "Simple optimal text formatter [coreutils-uutils]",
-      "fold": "Wrap each input line to fit in specified width [coreutils-uutils]",
-      "ginstall": "Copy files and set attributes [coreutils-uutils]",
-      "groups": "Print the groups a user is in [coreutils-uutils]",
-      "hashsum": "Compute and check message digests for many Algorithms",
-      "head": "Output the first part of files [coreutils-uutils]",
-      "hostid": "Print the numeric identifier for the current host [coreutils-uutils]",
-      "hostname": "Display or set the system's host name [coreutils-uutils]",
-      "id": "Print real and effective user and group IDs [coreutils-uutils]",
-      "install": "Copy files and set attributes [coreutils-uutils]",
-      "join": "Join lines of two files on a common field [coreutils-uutils]",
-      "kill": "Send a signal (default: TERM) to given PIDs [coreutils-uutils]",
-      "link": "Call the link function to create a link to a file [coreutils-uutils]",
-      "ln": "Make links between files [coreutils-uutils]",
-      "logname": "Print user's login name [coreutils-uutils]",
-      "ls": "List directory contents [coreutils-uutils]",
-      "make-prime-list": "Generate Prime Numbers [coreutils-uutils]",
-      "md5sum": "Compute and check MD5 message digest [coreutils-uutils]",
-      "mkdir": "Make directories [coreutils-uutils]",
-      "mkfifo": "Make FIFOs (named pipes) [coreutils-uutils]",
-      "mknod": "Make block or character special files [coreutils-uutils]",
-      "mktemp": "Create a temporary file or directory [coreutils-uutils]",
-      "mv": "Move (rename) files [coreutils-uutils]",
-      "nice": "Run a program with modified scheduling priority [coreutils-uutils]",
-      "nl": "Number lines of files [coreutils-uutils]",
-      "nohup": "Run a command immune to hangups, with output to a non-tty [coreutils-uutils]",
-      "nproc": "Print the number of processing units available [coreutils-uutils]",
-      "numfmt": "Convert numbers from/to human-readable strings [coreutils-uutils]",
-      "od": "Dump files in octal and other formats [coreutils-uutils]",
-      "paste": "Merge lines of files [coreutils-uutils]",
-      "pathchk": "Check whether file names are valid or portable [coreutils-uutils]",
-      "pinky": "Lightweight finger [coreutils-uutils]",
-      "pr": "Convert text files for printing [coreutils-uutils]",
-      "printenv": "Print all or part of environment [coreutils-uutils]",
-      "printf": "Format and print data [coreutils-uutils]",
-      "ptx": "Produce a permuted index of file contents [coreutils-uutils]",
-      "pwd": "Print name of current/working directory [coreutils-uutils]",
-      "readlink": "Print resolved symbolic links or canonical file names [coreutils-uutils]",
-      "realpath": "Print the resolved path [coreutils-uutils]",
-      "rm": "Remove files or directories [coreutils-uutils]",
-      "rmdir": "Remove empty directories [coreutils-uutils]",
-      "runcon": "Run command with specified security context [coreutils-uutils]",
-      "seq": "Print a sequence of numbers [coreutils-uutils]",
-      "sha1sum": "Compute and check SHA1 message digest [coreutils-uutils]",
-      "sha224sum": "Compute and check SHA224 message digest [coreutils-uutils]",
-      "sha256sum": "Compute and check SHA256 message digest [coreutils-uutils]",
-      "sha3sum": "Compute and check SHA3 message digest [coreutils-uutils]",
-      "sha3-224sum": "Compute and check SHA3-224 message digest [coreutils-uutils]",
-      "sha3-256sum": "Compute and check SHA3-256 message digest [coreutils-uutils]",
-      "sha3-384sum": "Compute and check SHA3-384 message digest [coreutils-uutils]",
-      "sha3-512sum": "Compute and check SHA3-512 message digest [coreutils-uutils]",
-      "sha384sum": "Compute and check SHA384 message digest [coreutils-uutils]",
-      "sha512sum": "Compute and check SHA512 message digest [coreutils-uutils]",
-      "shake128sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
-      "shake256sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
-      "shred": "Overwrite a file to hide its contents, and optionally delete it [coreutils-uutils]",
-      "shuf": "Generate random permutations [coreutils-uutils]",
-      "sleep": "Delay for a specified amount of time [coreutils-uutils]",
-      "sort": "Sort lines of text files [coreutils-uutils]",
-      "split": "Split a file into pieces [coreutils-uutils]",
-      "stat": "Display file or file system status [coreutils-uutils]",
-      "stdbuf": "Run COMMAND, with modified buffering operations for its standard streams [coreutils-uutils]",
-      "stty": "Change and print terminal line settings [coreutils-uutils]",
-      "sum": "Checksum and count the blocks in a file [coreutils-uutils]",
-      "sync": "Synchronize cached writes to persistent storage [coreutils-uutils]",
-      "tac": "Concatenate and print files in reverse [coreutils-uutils]",
-      "tail": "Output the last part of files [coreutils-uutils]",
-      "tee": "Read from standard input and write to standard output and files [coreutils-uutils]",
-      "test": "Check file types and compare values [coreutils-uutils]",
-      "timeout": "Run a command with a time limit [coreutils-uutils]",
-      "touch": "Change file timestamps [coreutils-uutils]",
-      "tr": "Translate or Delete characters [coreutils-uutils]",
-      "true": "Do nothing, successfully [coreutils-uutils]",
-      "truncate": "Shrink or extend the size of a file to the specified size [coreutils-uutils]",
-      "tsort": "Perform topological sort [coreutils-uutils]",
-      "tty": "Print the file name of the terminal connected to standard input [coreutils-uutils]",
-      "uname": "Print system information [coreutils-uutils]",
-      "unexpand": "Convert spaces to tabs [coreutils-uutils]",
-      "uniq": "Report or omit repeated lines [coreutils-uutils]",
-      "unlink": "Call the unlink function to remove the specified file [coreutils-uutils]",
-      "uptime": "Display the time since the last boot [coreutils-uutils]",
-      "users": "Print the user names of users currently logged in to the current host [coreutils-uutils]",
-      "vdir": "List directory contents [coreutils-uutils]",
-      "wc": "Print newline, word, and byte counts for each file [coreutils-uutils]",
-      "who": "Show who is logged on [coreutils-uutils]",
-      "whoami": "Print effective user name [coreutils-uutils]",
-      "yes": "Output a string repeatedly until killed [coreutils-uutils]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "uutils",
-        "uutils-coreutils"
-      ],
-      "archlinux": {
-        "aur": [
-          "coreutils-uutils",
-          "uutils-coreutils-git"
-        ],
-        "extra": [
-          "uutils-coreutils"
-        ]
-      },
-      "debian": [
-        "rust-coreutils",
-        "rust-uucore"
-      ],
-      "gnuguix": [
-        "rust-uucore"
-      ],
-      "homebrew": [
-        "uutils-coreutils"
-      ],
-      "nixpkgs": [
-        "uutils-coreutils",
-        "uutils-coreutils-noprefix"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/coreutils/static.standalone.uutils.yaml",
-    "homepage": [
-      "https://uutils.github.io/coreutils/docs/index.html",
-      "https://github.com/uutils/coreutils"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/uutils/coreutils",
-      "This is the standalone version i.e all progs are built individually"
-    ],
-    "provides": [
-      "arch",
-      "b2sum",
-      "b3sum",
-      "base32",
-      "base64",
-      "basename",
-      "basenc",
-      "cat",
-      "chgrp",
-      "chmod",
-      "chown",
-      "chroot",
-      "cksum",
-      "comm",
-      "coreutils",
-      "cp",
-      "csplit",
-      "cut",
-      "date",
-      "dd",
-      "df",
-      "dir",
-      "dircolors",
-      "dirname",
-      "du",
-      "echo",
-      "env",
-      "expand",
-      "expr",
-      "factor",
-      "false",
-      "fmt",
-      "fold",
-      "groups",
-      "hashsum",
-      "head",
-      "hostid",
-      "hostname",
-      "id",
-      "install",
-      "join",
-      "kill",
-      "link",
-      "ln",
-      "logname",
-      "ls",
-      "md5sum",
-      "mkdir",
-      "mkfifo",
-      "mknod",
-      "mktemp",
-      "more",
-      "mv",
-      "nice",
-      "nl",
-      "nohup",
-      "nproc",
-      "numfmt",
-      "od",
-      "paste",
-      "pathchk",
-      "pinky",
-      "pr",
-      "printenv",
-      "printf",
-      "ptx",
-      "pwd",
-      "readlink",
-      "realpath",
-      "rm",
-      "rmdir",
-      "seq",
-      "sha1sum",
-      "sha224sum",
-      "sha256sum",
-      "sha3-224sum",
-      "sha3-256sum",
-      "sha3-384sum",
-      "sha3-512sum",
-      "sha384sum",
-      "sha3sum",
-      "sha512sum",
-      "shake128sum",
-      "shake256sum",
-      "shred",
-      "shuf",
-      "sleep",
-      "sort",
-      "split",
-      "stat",
-      "stdbuf",
-      "stty",
-      "sum",
-      "sync",
-      "tac",
-      "tail",
-      "tee",
-      "test==[",
-      "test==[[",
-      "timeout",
-      "touch",
-      "tr",
-      "true",
-      "truncate",
-      "tsort",
-      "tty",
-      "uname",
-      "unexpand",
-      "uniq",
-      "unlink",
-      "uptime",
-      "users",
-      "vdir",
-      "wc",
-      "who",
-      "whoami",
-      "yes"
-    ],
-    "repology": [
-      "uutils-coreutils"
-    ],
-    "src_url": [
-      "https://github.com/uutils/coreutils"
-    ],
-    "tag": [
-      "bootstrap",
-      "busybox",
-      "coreutils"
-    ],
-    "version": "HEAD-d86a7fb-250208T152423"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": [
       "Too Slow & Expensive"
@@ -2559,66 +1835,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "cotp",
-    "pkg_family": "cotp",
-    "pkg_id": "github.com.replydev.cotp",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/replydev-cotp/cotp/cotp",
-    "bincache": "ghcr.io/pkgforge/bincache/cotp/official/cotp",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/cotp/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Encrypted CLI TOTP/HOTP Authenticator",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "cotp-git"
-        ],
-        "extra": [
-          "cotp"
-        ]
-      },
-      "nixpkgs": [
-        "cotp"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/cotp/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/replydev/cotp"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0-only"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/replydev/cotp"
-    ],
-    "provides": [
-      "cotp"
-    ],
-    "repology": [
-      "cotp"
-    ],
-    "src_url": [
-      "https://github.com/replydev/cotp"
-    ],
-    "tag": [
-      "authy",
-      "totp"
-    ],
-    "version": "HEAD-b958a6c-250208T185419"
-  },
-  {
-    "_disabled": "false",
     "pkg": "cvemap",
     "pkg_family": "cvemap",
     "pkg_id": "github.com.projectdiscovery.cvemap",
@@ -2734,59 +1950,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "daytona",
-    "pkg_family": "daytona",
-    "pkg_id": "github.com.daytonaio.daytona",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/daytonaio-daytona/daytona/daytona",
-    "bincache": "ghcr.io/pkgforge/bincache/daytona/official/daytona",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/daytona/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Open Source Dev Environment Manager",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "daytona"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/daytona/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/daytonaio/daytona"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/daytonaio/daytona"
-    ],
-    "provides": [
-      "daytona"
-    ],
-    "repology": [
-      "daytona"
-    ],
-    "src_url": [
-      "https://github.com/daytonaio/daytona"
-    ],
-    "tag": [
-      "devenv"
-    ],
-    "version": "HEAD-dfb50e8-250207T210239"
-  },
-  {
-    "_disabled": "false",
     "pkg": "dbbench",
     "pkg_family": "dbbench",
     "pkg_id": "github.com.sj14.dbbench",
@@ -2827,43 +1990,6 @@
       "database"
     ],
     "version": "HEAD-621a539-250206T084201"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "dbin",
-    "pkg_family": "dbin",
-    "pkg_id": "github.com.xplshn.dbin",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xplshn-dbin/dbin/dbin",
-    "bincache": "ghcr.io/pkgforge/bincache/dbin/official/dbin",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dbin/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Poor man's package manager",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dbin/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/xplshn/dbin"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/xplshn/dbin"
-    ],
-    "src_url": [
-      "https://github.com/xplshn/dbin"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-3b715eb-250208T115720"
   },
   {
     "_disabled": "false",
@@ -3339,67 +2465,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "esbuild",
-    "pkg_family": "esbuild",
-    "pkg_id": "github.com.evanw.esbuild",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/evanw-esbuild/esbuild/esbuild",
-    "bincache": "ghcr.io/pkgforge/bincache/esbuild/official/esbuild",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/esbuild/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "An extremely fast JavaScript/CSS/TypeScript bundler and minifier",
-    "distro_pkg": {
-      "alpine": [
-        "esbuild"
-      ],
-      "archlinux": {
-        "aur": [
-          "esbuild-git"
-        ],
-        "extra": [
-          "esbuild"
-        ]
-      },
-      "debian": [
-        "golang-github-evanw-esbuild"
-      ],
-      "nixpkgs": [
-        "esbuild"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/esbuild/static.official.source.yaml",
-    "homepage": [
-      "https://esbuild.github.io"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/evanw/esbuild"
-    ],
-    "repology": [
-      "esbuild"
-    ],
-    "src_url": [
-      "https://github.com/evanw/esbuild"
-    ],
-    "tag": [
-      "bundler",
-      "javascript",
-      "typescript"
-    ],
-    "version": "HEAD-b914dd3-250207T221548"
-  },
-  {
-    "_disabled": "false",
     "pkg": "exatorrent",
     "pkg_family": "exatorrent",
     "pkg_id": "github.com.varbhat.exatorrent",
@@ -3520,84 +2585,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "fastfetch",
-    "pkg_family": "fastfetch",
-    "pkg_id": "github.com.fastfetch-cli.fastfetch",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-fastfetch/fastfetch/fastfetch",
-    "bincache": "ghcr.io/pkgforge/bincache/fastfetch/official/fastfetch",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fastfetch/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Fast and feature-rich tool displaying system information",
-      "fastfetch": "Fast and feature-rich tool displaying system information",
-      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "fastfetch"
-      ],
-      "archlinux": {
-        "aur": [
-          "fastfetch-git"
-        ],
-        "extra": [
-          "fastfetch"
-        ]
-      },
-      "debian": [
-        "fastfetch"
-      ],
-      "gnuguix": [
-        "fastfetch"
-      ],
-      "homebrew": [
-        "fastfetch"
-      ],
-      "nixpkgs": [
-        "fastfetch"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fastfetch/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/fastfetch-cli/fastfetch"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fastfetch-cli/fastfetch",
-      "Related Discussion: https://github.com/fastfetch-cli/fastfetch/issues/808"
-    ],
-    "provides": [
-      "fastfetch",
-      "flashfetch"
-    ],
-    "repology": [
-      "fastfetch"
-    ],
-    "src_url": [
-      "https://github.com/fastfetch-cli/fastfetch"
-    ],
-    "tag": [
-      "fetch",
-      "neofetch"
-    ],
-    "version": "HEAD-016b1e6-250208T225425"
-  },
-  {
-    "_disabled": "false",
     "pkg": "fd",
     "pkg_family": "fd-find",
     "pkg_id": "github.com.sharkdp.fd",
@@ -3708,53 +2695,6 @@
       "nvm"
     ],
     "version": "v1.38.1"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "fq",
-    "pkg_family": "fq",
-    "pkg_id": "github.com.wader.fq",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wader-fq/fq/fq",
-    "bincache": "ghcr.io/pkgforge/bincache/fq/official/fq",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fq/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "CLI tool and REPL for working with binary data inspired by jq",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fq/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/wader/fq"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wader/fq"
-    ],
-    "provides": [
-      "fq"
-    ],
-    "repology": [
-      "fq-inspect-binary-data"
-    ],
-    "src_url": [
-      "https://github.com/wader/fq"
-    ],
-    "tag": [
-      "binary",
-      "hexdump"
-    ],
-    "version": "HEAD-e611d57-250208T171514"
   },
   {
     "_disabled": "false",
@@ -3973,7 +2913,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-c01f66c-250208T180259"
+    "version": "HEAD-be13ccb-250209T000614"
   },
   {
     "_disabled": "false",
@@ -4321,72 +3261,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "gopass",
-    "pkg_family": "gopass",
-    "pkg_id": "github.com.gopasspw.gopass",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gopasspw-gopass/gopass/gopass",
-    "bincache": "ghcr.io/pkgforge/bincache/gopass/official/gopass",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gopass/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The slightly more awesome standard unix password manager for teams",
-    "distro_pkg": {
-      "alpine": [
-        "gopass"
-      ],
-      "archlinux": {
-        "aur": [
-          "gopass-git"
-        ],
-        "extra": [
-          "gopass"
-        ]
-      },
-      "homebrew": [
-        "gopass"
-      ],
-      "nixpkgs": [
-        "gopass"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gopass/static.official.source.yaml",
-    "homepage": [
-      "https://www.gopass.pw"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/gopasspw/gopass"
-    ],
-    "provides": [
-      "gopass"
-    ],
-    "repology": [
-      "gopass-gopasspw"
-    ],
-    "src_url": [
-      "https://github.com/gopasspw/gopass"
-    ],
-    "tag": [
-      "password",
-      "security"
-    ],
-    "version": "HEAD-f1ad5ad-250208T161058"
-  },
-  {
-    "_disabled": "false",
     "pkg": "gosu",
     "pkg_family": "gosu",
     "pkg_id": "github.com.tianon.gosu",
@@ -4503,52 +3377,6 @@
       "gpg"
     ],
     "version": "HEAD-1d766ea-250204T113005"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "gup",
-    "pkg_family": "gup",
-    "pkg_id": "github.com.nao1215.gup",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nao1215-gup/gup/gup",
-    "bincache": "ghcr.io/pkgforge/bincache/gup/official/gup",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gup/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Update binaries installed by go install with goroutines",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gup/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/nao1215/gup"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/nao1215/gup"
-    ],
-    "provides": [
-      "gup"
-    ],
-    "repology": [
-      "gup"
-    ],
-    "src_url": [
-      "https://github.com/nao1215/gup"
-    ],
-    "tag": [
-      "updater"
-    ],
-    "version": "HEAD-a938d8f-250208T124522"
   },
   {
     "_disabled": "false",
@@ -4674,75 +3502,6 @@
       "textproc"
     ],
     "version": "8.6"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "hugo",
-    "pkg_family": "hugo",
-    "pkg_id": "github.com.gohugoio.hugo",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gohugoio-hugo/hugo/hugo",
-    "bincache": "ghcr.io/pkgforge/bincache/hugo/official/hugo",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hugo/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Fast and Flexible Static Site Generator",
-    "distro_pkg": {
-      "alpine": [
-        "hugo"
-      ],
-      "archlinux": {
-        "aur": [
-          "hugo-git"
-        ],
-        "extra": [
-          "hugo"
-        ]
-      },
-      "debian": [
-        "hugo"
-      ],
-      "homebrew": [
-        "hugo"
-      ],
-      "nixpkgs": [
-        "hugo"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hugo/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/gohugoio/hugo"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/gohugoio/hugo"
-    ],
-    "provides": [
-      "hugo"
-    ],
-    "repology": [
-      "hugo-sitegen"
-    ],
-    "src_url": [
-      "https://github.com/gohugoio/hugo"
-    ],
-    "tag": [
-      "blog",
-      "cms"
-    ],
-    "version": "HEAD-22ee091-250208T154645"
   },
   {
     "_disabled": "false",
@@ -4947,7 +3706,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-6d6f2c6-250208T152544"
+    "version": "HEAD-07c63ed-250208T193405"
   },
   {
     "_disabled": "false",
@@ -5351,6 +4110,118 @@
   },
   {
     "_disabled": "false",
+    "pkg": "mailpit",
+    "pkg_family": "mailpit",
+    "pkg_id": "github.com.axllent.mailpit",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/axllent-mailpit/mailpit/mailpit",
+    "bincache": "ghcr.io/pkgforge/bincache/mailpit/official/mailpit",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mailpit/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Email and SMTP testing tool with API for developers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "mailpit",
+          "mailpit-bin"
+        ]
+      },
+      "homebrew": [
+        "mailpit"
+      ],
+      "nixpkgs": [
+        "mailpit"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mailpit/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/axllent/mailpit"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/axllent/mailpit"
+    ],
+    "provides": [
+      "mailpit"
+    ],
+    "repology": [
+      "mailpit"
+    ],
+    "src_url": [
+      "https://github.com/axllent/mailpit"
+    ],
+    "tag": [
+      "email",
+      "mail"
+    ],
+    "version": "v1.22.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mc",
+    "pkg_family": "mc",
+    "pkg_id": "github.com.minio.mc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/minio-mc/mc/mc",
+    "bincache": "ghcr.io/pkgforge/bincache/mc/official/mc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mc/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Unix like utilities for object store",
+    "distro_pkg": {
+      "homebrew": [
+        "minio-mc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mc/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/minio/mc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/minio/mc"
+    ],
+    "repology": [
+      "minio-mc"
+    ],
+    "src_url": [
+      "https://github.com/minio/mc"
+    ],
+    "tag": [
+      "bucket",
+      "s3",
+      "storage"
+    ],
+    "version": "HEAD-10c5036-250208T130632"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mdcat",
     "pkg_family": "mdcat",
     "pkg_id": "github.com.swsnr.mdcat",
@@ -5467,74 +4338,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "micro",
-    "pkg_family": "micro",
-    "pkg_id": "github.com.zyedidia.micro",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zyedidia-micro/micro/micro",
-    "bincache": "ghcr.io/pkgforge/bincache/micro/official/micro",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/micro/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Modern and intuitive terminal-based text editor",
-    "distro_pkg": {
-      "alpine": [
-        "micro"
-      ],
-      "archlinux": {
-        "aur": [
-          "micro-git"
-        ],
-        "extra": [
-          "micro"
-        ]
-      },
-      "debian": [
-        "micro"
-      ],
-      "homebrew": [
-        "micro"
-      ],
-      "nixpkgs": [
-        "micro"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/micro/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/zyedidia/micro"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/zyedidia/micro"
-    ],
-    "provides": [
-      "micro"
-    ],
-    "repology": [
-      "micro"
-    ],
-    "src_url": [
-      "https://github.com/zyedidia/micro"
-    ],
-    "tag": [
-      "text-editor"
-    ],
-    "version": "HEAD-bf4156c-250208T161959"
-  },
-  {
-    "_disabled": "false",
     "pkg": "miniflux",
     "pkg_family": "miniflux",
     "pkg_id": "github.com.miniflux.v2",
@@ -5600,71 +4403,6 @@
       "rss"
     ],
     "version": "HEAD-0f55c81-250207T162133"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mise",
-    "pkg_family": "mise",
-    "pkg_id": "github.com.jdx.mise",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jdx-mise/mise/mise",
-    "bincache": "ghcr.io/pkgforge/bincache/mise/official/mise",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mise/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Polyglot runtime and dev tool version manager",
-    "distro_pkg": {
-      "alpine": [
-        "mise"
-      ],
-      "archlinux": {
-        "aur": [
-          "mise",
-          "mise-bin"
-        ]
-      },
-      "homebrew": [
-        "mise"
-      ],
-      "nixpkgs": [
-        "mise"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mise/static.official.stable.yaml",
-    "homepage": [
-      "https://mise.jdx.dev",
-      "https://github.com/jdx/mise"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/jdx/mise"
-    ],
-    "provides": [
-      "mise"
-    ],
-    "repology": [
-      "mise"
-    ],
-    "src_url": [
-      "https://github.com/jdx/mise"
-    ],
-    "tag": [
-      "asdf",
-      "dev-env"
-    ],
-    "version": "v2025.2.2"
   },
   {
     "_disabled": "false",
@@ -6024,71 +4762,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "nerdctl",
-    "pkg_family": "nerdctl",
-    "pkg_id": "github.com.containerd.nerdctl",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containerd-nerdctl/nerdctl/nerdctl",
-    "bincache": "ghcr.io/pkgforge/bincache/nerdctl/official/nerdctl",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nerdctl/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Docker-compatible CLI for containerd, with support for Compose, Rootless, eStargz, OCIcrypt, IPFS",
-    "distro_pkg": {
-      "alpine": [
-        "nerdctl"
-      ],
-      "archlinux": {
-        "aur": [
-          "nerdctl-git"
-        ],
-        "extra": [
-          "nerdctl"
-        ]
-      },
-      "homebrew": [
-        "nerdctl"
-      ],
-      "nixpkgs": [
-        "nerdctl"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nerdctl/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/containerd/nerdctl"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containerd/nerdctl"
-    ],
-    "provides": [
-      "nerdctl"
-    ],
-    "repology": [
-      "nerdctl"
-    ],
-    "src_url": [
-      "https://github.com/containerd/nerdctl"
-    ],
-    "tag": [
-      "container"
-    ],
-    "version": "HEAD-d5c26ef-250207T220237"
-  },
-  {
-    "_disabled": "false",
     "pkg": "netbird",
     "pkg_family": "netbird",
     "pkg_id": "github.com.netbirdio.netbird",
@@ -6334,54 +5007,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "nmap-formatter",
-    "pkg_family": "nmap-formatter",
-    "pkg_id": "github.com.vdjagilev.nmap-formatter",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nmap-formatter/nmap-formatter/nmap-formatter",
-    "bincache": "ghcr.io/pkgforge/bincache/nmap-formatter/official/nmap-formatter",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nmap-formatter/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A tool to convert NMAP results to html, csv, json, markdown, graphviz (dot) or sqlite",
-    "distro_pkg": {
-      "nixpkgs": [
-        "nmap-formatter"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nmap-formatter/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/vdjagilev/nmap-formatter"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/vdjagilev/nmap-formatter"
-    ],
-    "repology": [
-      "nmap-formatter"
-    ],
-    "src_url": [
-      "https://github.com/vdjagilev/nmap-formatter"
-    ],
-    "tag": [
-      "nmap"
-    ],
-    "version": "HEAD-ffa7b32-250208T022930"
-  },
-  {
-    "_disabled": "false",
     "pkg": "nomore403",
     "pkg_family": "nomore403",
     "pkg_id": "github.com.devploit.nomore403",
@@ -6491,68 +5116,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "nuclei",
-    "pkg_family": "nuclei",
-    "pkg_id": "github.com.projectdiscovery.nuclei",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-nuclei/nuclei/nuclei",
-    "bincache": "ghcr.io/pkgforge/bincache/nuclei/official/nuclei",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nuclei/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Fast and customizable vulnerability scanner based on simple YAML based DSL",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "nuclei",
-          "nuclei-bin"
-        ]
-      },
-      "homebrew": [
-        "nuclei"
-      ],
-      "nixpkgs": [
-        "nuclei"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nuclei/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/projectdiscovery/nuclei"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/nuclei"
-    ],
-    "provides": [
-      "nuclei"
-    ],
-    "repology": [
-      "nuclei"
-    ],
-    "src_url": [
-      "https://github.com/projectdiscovery/nuclei"
-    ],
-    "tag": [
-      "bug-bounty",
-      "recon",
-      "security"
-    ],
-    "version": "HEAD-d2d5ee9-250208T210539"
-  },
-  {
-    "_disabled": "false",
     "pkg": "nushell",
     "pkg_family": "nushell",
     "pkg_id": "github.com.nushell.nushell",
@@ -6615,7 +5178,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-4b0b4dd-250208T092328"
+    "version": "HEAD-31e1f49-250208T195728"
   },
   {
     "_disabled": "false",
@@ -6736,6 +5299,65 @@
       "wireguard"
     ],
     "version": "HEAD-d0fcab3-250125T214538"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ooniprobe",
+    "pkg_family": "ooniprobe",
+    "pkg_id": "github.com.ooni.probe-cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/probe-cli/ooniprobe/ooniprobe",
+    "bincache": "ghcr.io/pkgforge/bincache/ooniprobe/official/ooniprobe",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ooniprobe/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "OONI Probe Engine and CLI",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ooniprobe-cli"
+        ]
+      },
+      "homebrew": [
+        "ooniprobe"
+      ],
+      "nixpkgs": [
+        "ooniprobe-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ooniprobe/static.official.source.yaml",
+    "homepage": [
+      "https://ooni.org"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ooni/probe-cli"
+    ],
+    "provides": [
+      "ooniprobe==ooniprobe-cli"
+    ],
+    "repology": [
+      "ooni-probe-cli"
+    ],
+    "src_url": [
+      "https://github.com/ooni/probe-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-01928c2-250209T043638"
   },
   {
     "_disabled": "false",
@@ -7307,7 +5929,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-7da3bfe-250208T072318"
+    "version": "HEAD-d18423f-250208T182156"
   },
   {
     "_disabled": "false",
@@ -7484,70 +6106,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "rekor",
-    "pkg_family": "rekor",
-    "pkg_id": "github.com.sigstore.rekor",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sigstore-rekor/rekor/rekor",
-    "bincache": "ghcr.io/pkgforge/bincache/rekor/official/rekor-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rekor/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Software Supply Chain Transparency Log",
-    "distro_pkg": {
-      "alpine": [
-        "rekor"
-      ],
-      "archlinux": {
-        "aur": [
-          "rekor-git"
-        ],
-        "extra": [
-          "rekor"
-        ]
-      },
-      "debian": [
-        "rekor"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rekor/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/sigstore/rekor"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sigstore/rekor"
-    ],
-    "provides": [
-      "rekor-cli",
-      "rekor-server"
-    ],
-    "repology": [
-      "rekor"
-    ],
-    "src_url": [
-      "https://github.com/sigstore/rekor"
-    ],
-    "tag": [
-      "provenance",
-      "security"
-    ],
-    "version": "HEAD-bcbe736-250208T171902"
-  },
-  {
-    "_disabled": "false",
     "pkg": "rescope",
     "pkg_family": "rescope",
     "pkg_id": "github.com.root4loot.rescope",
@@ -7582,63 +6140,6 @@
       "security"
     ],
     "version": "HEAD-4b494cd-241212T142001"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "reviewdog",
-    "pkg_family": "reviewdog",
-    "pkg_id": "github.com.reviewdog.reviewdog",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/reviewdog-reviewdog/reviewdog/reviewdog",
-    "bincache": "ghcr.io/pkgforge/bincache/reviewdog/official/reviewdog",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/reviewdog/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Automated code review tool integrated with any code analysis tools regardless of programming language",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "reviewdog-bin"
-        ]
-      },
-      "nixpkgs": [
-        "reviewdog"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/reviewdog/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/reviewdog/reviewdog"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/reviewdog/reviewdog"
-    ],
-    "provides": [
-      "reviewdog"
-    ],
-    "repology": [
-      "reviewdog"
-    ],
-    "src_url": [
-      "https://github.com/reviewdog/reviewdog"
-    ],
-    "tag": [
-      "analyzer",
-      "linter"
-    ],
-    "version": "HEAD-9b239cc-250208T174345"
   },
   {
     "_disabled": "false",
@@ -7865,64 +6366,6 @@
       "container"
     ],
     "version": "v3.8"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "rustscan",
-    "pkg_family": "rustscan",
-    "pkg_id": "github.com.RustScan.RustScan",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rustscan-rustscan/rustscan/rustscan",
-    "bincache": "ghcr.io/pkgforge/bincache/rustscan/official/rustscan",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rustscan/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The modern,fast,smart and effective port scanner",
-    "distro_pkg": {
-      "alpine": [
-        "rustscan"
-      ],
-      "archlinux": {
-        "extra": [
-          "rustscan"
-        ]
-      },
-      "nixpkgs": [
-        "rustscan"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rustscan/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/RustScan/RustScan"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL3"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/RustScan/RustScan"
-    ],
-    "repology": [
-      "rustscan"
-    ],
-    "src_url": [
-      "https://github.com/RustScan/RustScan"
-    ],
-    "tag": [
-      "nmap",
-      "scanning",
-      "security"
-    ],
-    "version": "HEAD-c5e5188-250208T075030"
   },
   {
     "_disabled": "false",
@@ -8187,62 +6630,6 @@
     "_disabled": "false",
     "pkg": "soar",
     "pkg_family": "soar",
-    "pkg_id": "github.com.pkgforge.soar.glibc",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soar-glibc/soar/soar",
-    "bincache": "ghcr.io/pkgforge/bincache/soar/glibc/soar",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.glibc.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (GLIBC)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "soar-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.glibc.source.yaml",
-    "homepage": [
-      "https://soar.qaidvoid.dev",
-      "https://github.com/pkgforge/soar"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
-      "Statically Linked on Debian (GLIBC)"
-    ],
-    "provides": [
-      "soar"
-    ],
-    "repology": [
-      "soar"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge/soar"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-8b4ae6f-250208T215645"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "soar",
-    "pkg_family": "soar",
     "pkg_id": "github.com.pkgforge.soar.mimalloc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soar-mimalloc/soar/soar",
@@ -8278,62 +6665,6 @@
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar"
-    ],
-    "provides": [
-      "soar"
-    ],
-    "repology": [
-      "soar"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge/soar"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-8b4ae6f-250208T215645"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "soar",
-    "pkg_family": "soar",
-    "pkg_id": "github.com.pkgforge.soar.musl",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soar-musl/soar/soar",
-    "bincache": "ghcr.io/pkgforge/bincache/soar/musl/soar",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.musl.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (MUSL)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "soar-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.musl.source.yaml",
-    "homepage": [
-      "https://soar.qaidvoid.dev",
-      "https://github.com/pkgforge/soar"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
-      "Built on Vanilla Musl"
     ],
     "provides": [
       "soar"
@@ -8408,6 +6739,64 @@
       "proxy"
     ],
     "version": "HEAD-a2993ac-240908T225757"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sqlc",
+    "pkg_family": "sqlc",
+    "pkg_id": "github.com.sqlc-dev.sqlc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dev-sqlc/sqlc/sqlc",
+    "bincache": "ghcr.io/pkgforge/bincache/sqlc/official/sqlc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sqlc/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Generate type-safe Golang code from SQL",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "sqlc"
+        ]
+      },
+      "homebrew": [
+        "sqlc"
+      ],
+      "nixpkgs": [
+        "sqlc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sqlc/static.official.source.yaml",
+    "homepage": [
+      "https://sqlc.dev",
+      "https://github.com/sqlc-dev/sqlc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sqlc-dev/sqlc"
+    ],
+    "repology": [
+      "sqlc"
+    ],
+    "src_url": [
+      "https://github.com/sqlc-dev/sqlc"
+    ],
+    "tag": [
+      "database",
+      "sql"
+    ],
+    "version": "HEAD-3ea3632-250208T110242"
   },
   {
     "_disabled": "false",
@@ -9757,59 +8146,7 @@
     "tag": [
       "file-manager"
     ],
-    "version": "HEAD-9ac733a-250208T101520"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "warp",
-    "pkg_family": "minio-warp",
-    "pkg_id": "github.com.minio.warp",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/minio-warp/minio-warp/warp",
-    "bincache": "ghcr.io/pkgforge/bincache/warp/official/warp",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/minio-warp/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "S3 benchmarking tool",
-    "distro_pkg": {
-      "homebrew": [
-        "minio-warp"
-      ],
-      "nixpkgs": [
-        "minio-warp"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/minio-warp/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/minio/warp"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "AGPL-3.0-or-later"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/minio/warp"
-    ],
-    "repology": [
-      "minio-warp"
-    ],
-    "src_url": [
-      "https://github.com/minio/warp"
-    ],
-    "tag": [
-      "benchmark",
-      "s3"
-    ],
-    "version": "HEAD-046e78a-250207T130544"
+    "version": "HEAD-7f03821-250208T201609"
   },
   {
     "_disabled": "false",
@@ -9888,7 +8225,7 @@
     "tag": [
       "Terminal"
     ],
-    "version": "HEAD-2b7d557-250208T094952"
+    "version": "HEAD-4accc37-250208T160106"
   },
   {
     "_disabled": "false",

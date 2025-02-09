@@ -1,77 +1,6 @@
 [
   {
     "_disabled": "false",
-    "pkg": "abiword",
-    "pkg_family": "abiword",
-    "pkg_id": "github.com.ivan-hc.Abiword-appimage",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/abiword-appimage/abiword/abiword",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/abiword/appimage.ivan-hc.stable.yaml",
-    "category": [
-      "Office"
-    ],
-    "description": "Open-source, cross-platform WYSIWYG word processor",
-    "distro_pkg": {
-      "alpine": [
-        "abiword"
-      ],
-      "archlinux": {
-        "aur": [
-          "abiword-git",
-          "abiword-gtk2"
-        ],
-        "extra": [
-          "abiword"
-        ]
-      },
-      "debian": [
-        "abiword"
-      ],
-      "nixpkgs": [
-        "abiword"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/abiword/appimage.ivan-hc.stable.yaml",
-    "homepage": [
-      "https://gitlab.gnome.org/World/AbiWord"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/abiword/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Community Created AppImage based on JuNest. Check/Report @ https://github.com/ivan-hc/Abiword-appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/abiword/appimage/ivan-hc",
-    "provides": [
-      "abiword"
-    ],
-    "repology": [
-      "abiword"
-    ],
-    "src_url": [
-      "https://github.com/ivan-hc/Abiword-appimage"
-    ],
-    "tag": [
-      "Applications/Editors",
-      "Applications/Office",
-      "Documentation",
-      "Editors",
-      "Office",
-      "Office/Word",
-      "Productivity/Office/Word",
-      "Text"
-    ],
-    "version": "3.0.6"
-  },
-  {
-    "_disabled": "false",
     "pkg": "aisleriot",
     "pkg_family": "aisleriot",
     "pkg_id": "github.com.ivan-hc.Aisleriot-appimage",
@@ -140,60 +69,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "altus",
-    "pkg_family": "altus",
-    "pkg_id": "github.com.amanharwara.altus",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/amanharwara-altus/altus/altus",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/altus/appimage.official.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Desktop client for WhatsApp Web with themes, notifications and multiple account support",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "altus",
-          "altus-appimage",
-          "altus-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/altus/appimage.official.stable.yaml",
-    "homepage": [
-      "https://github.com/amanharwara/altus",
-      "https://gitlab.com/amanharwara/altus"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/altus/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/amanharwara/altus"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/altus/appimage/official",
-    "provides": [
-      "altus"
-    ],
-    "repology": [
-      "altus"
-    ],
-    "src_url": [
-      "https://github.com/amanharwara/altus"
-    ],
-    "tag": [
-      "whatsapp"
-    ],
-    "version": "5.5.1"
-  },
-  {
-    "_disabled": "false",
     "pkg": "brave",
     "pkg_family": "brave",
     "pkg_id": "github.com.srevinsaju.Brave-AppImage.stable",
@@ -252,105 +127,37 @@
   },
   {
     "_disabled": "false",
-    "pkg": "brave",
-    "pkg_family": "brave",
-    "pkg_id": "nixpkgs.brave",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
     "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
-    "app_id": "com.brave.Browser",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
     "category": [
       "WebBrowser"
     ],
-    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
     "distro_pkg": {
       "archlinux": {
         "aur": [
-          "brave-bin"
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
         ]
       },
-      "nixpkgs": [
-        "brave"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/nixappimage.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://brave.com",
-      "https://github.com/brave/brave-browser",
-      "https://github.com/srevinsaju/Brave-AppImage"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
-      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/nixappimage/nixpkgs",
-    "provides": [
-      "brave"
-    ],
-    "repology": [
-      "brave"
-    ],
-    "src_url": [
-      "https://github.com/brave/brave-browser"
-    ],
-    "tag": [
-      "browser",
-      "Networking/WWW",
-      "network.web.browser"
-    ],
-    "version": "1.75.175"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "chromium",
-    "pkg_family": "chromium",
-    "pkg_id": "nixpkgs.chromium",
-    "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
-    "app_id": "org.chromium.Chromium",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "Open source web browser from Google (Stable)",
-    "distro_pkg": {
-      "alpine": [
-        "chromium"
-      ],
-      "archlinux": {
-        "extra": [
-          "chromium"
-        ]
-      },
-      "debian": [
-        "chromium"
-      ],
-      "homebrew": [
-        "chromium"
+      "gnuguix": [
+        "ungoogled-chromium"
       ],
       "nixpkgs": [
-        "chromium"
+        "ungoogled-chromium"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
     "homepage": [
-      "https://www.chromium.org",
-      "https://chromium.googlesource.com/chromium/src",
-      "https://github.com/chromium/chromium"
+      "https://github.com/ungoogled-software/ungoogled-chromium"
     ],
     "host": [
       "aarch64-linux",
@@ -372,13 +179,14 @@
     ],
     "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
     "provides": [
+      "chromium:ungoogled-chromium",
       "chromium==chromium-browser"
     ],
     "repology": [
-      "chromium"
+      "ungoogled-chromium"
     ],
     "src_url": [
-      "https://github.com/chromium/chromium"
+      "https://github.com/ungoogled-software/ungoogled-chromium"
     ],
     "tag": [
       "browser"
@@ -646,68 +454,6 @@
     ]
   },
   {
-    "_disabled": "false",
-    "pkg": "discord-canary",
-    "pkg_family": "discord",
-    "pkg_id": "github.com.srevinsaju.discord-AppImage.canary",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-canary/discord/discord-canary",
-    "app_id": "com.discordapp.Discord",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/appimage.srevinsaju.canary.yaml",
-    "category": [
-      "Chat",
-      "InstantMessaging"
-    ],
-    "description": "All-in-one cross-platform voice and text chat for gamers (Canary)",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "discord"
-        ]
-      },
-      "homebrew": [
-        "discord@canary"
-      ],
-      "nixpkgs": [
-        "discord-canary"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/appimage.srevinsaju.canary.yaml",
-    "homepage": [
-      "https://discordapp.com",
-      "https://github.com/srevinsaju/discord-appimage"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
-    "license": [
-      "Unfree"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/discord-appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/discord-canary/appimage/srevinsaju",
-    "provides": [
-      "discord-canary"
-    ],
-    "repology": [
-      "discord"
-    ],
-    "src_url": [
-      "https://github.com/srevinsaju/discord-appimage"
-    ],
-    "tag": [
-      "chat",
-      "Communications",
-      "Networking/Chat"
-    ],
-    "version": "0.0.585"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -763,69 +509,6 @@
       "matrix"
     ],
     "version": "1.11.91"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "firefox",
-    "pkg_family": "firefox",
-    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.beta",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/firefox/firefox",
-    "app_id": "org.mozilla.firefox",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.beta.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "A web browser built from Firefox source tree (Beta)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "firefox-beta-bin"
-        ]
-      },
-      "homebrew": [
-        "firefox@beta"
-      ],
-      "nixpkgs": [
-        "firefox-beta",
-        "firefox-beta-bin"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.beta.yaml",
-    "homepage": [
-      "http://www.mozilla.com",
-      "https://hg.mozilla.org/mozilla-central",
-      "https://github.com/srevinsaju/Firefox-Appimage"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
-    "provides": [
-      "firefox=>firefox-beta"
-    ],
-    "repology": [
-      "firefox"
-    ],
-    "src_url": [
-      "https://github.com/srevinsaju/Firefox-Appimage"
-    ],
-    "tag": [
-      "browser",
-      "Networking/WWW",
-      "network.web.browser"
-    ],
-    "version": "136.0.20250207091649"
   },
   {
     "_disabled": "false",
@@ -951,7 +634,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "137.0.20250207164009"
+    "version": "137.0.20250208210338"
   },
   {
     "_disabled": "true",
@@ -1239,7 +922,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-02-07"
+    "version": "2025-02-08"
   },
   {
     "_disabled": "true",
@@ -1395,87 +1078,6 @@
       "editor"
     ],
     "version": "3.8"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "mpv",
-    "pkg_family": "mpv",
-    "pkg_id": "github.com.pkgforge-dev.mpv-AppImage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/mpv/mpv",
-    "app_id": "io.mpv.Mpv",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/mpv/appimage.pkgforge-dev.stable.yaml",
-    "category": [
-      "Music",
-      "Player",
-      "TV"
-    ],
-    "description": "General Purpose Command line video player",
-    "distro_pkg": {
-      "alpine": [
-        "mpv"
-      ],
-      "archlinux": {
-        "aur": [
-          "mpv-full",
-          "mpv-full-git",
-          "mpv-git"
-        ],
-        "extra": [
-          "mpv"
-        ]
-      },
-      "debian": [
-        "mpv"
-      ],
-      "gnuguix": [
-        "mpv"
-      ],
-      "homebrew": [
-        "mpv"
-      ],
-      "nixpkgs": [
-        "mpv"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/mpv/appimage.pkgforge-dev.stable.yaml",
-    "homepage": [
-      "https://mpv.io",
-      "https://github.com/mpv-player/mpv",
-      "https://github.com/pkgforge-dev/mpv-AppImage"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/mpv/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/mpv-AppImage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/mpv/appimage/pkgforge-dev",
-    "provides": [
-      "mpv"
-    ],
-    "repology": [
-      "mpv"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge-dev/mpv-AppImage"
-    ],
-    "tag": [
-      "Graphical",
-      "media-video",
-      "Productivity/Multimedia/Video/Players",
-      "Video",
-      "Video/Utilities"
-    ],
-    "version": "v0.39.0-756-ge4b64fba9"
   },
   {
     "_disabled": "false",
@@ -1838,89 +1440,6 @@
       "Sound/Players"
     ],
     "version": "1.2.4-1"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "telegram-desktop",
-    "pkg_family": "telegram-desktop",
-    "pkg_id": "nixpkgs.telegram-desktop",
-    "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/telegram-desktop/telegram-desktop/telegram-desktop",
-    "app_id": "org.telegram.desktop",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
-    "category": [
-      "Chat",
-      "IRCClient"
-    ],
-    "description": "Official desktop version of Telegram messaging app",
-    "distro_pkg": {
-      "alpine": [
-        "telegram-desktop"
-      ],
-      "archlinux": {
-        "aur": [
-          "telegram-desktop-bin",
-          "telegram-desktop-dev",
-          "telegram-desktop-dev-bin",
-          "telegram-desktop-git"
-        ],
-        "extra": [
-          "telegram-desktop"
-        ]
-      },
-      "debian": [
-        "telegram-desktop"
-      ],
-      "gnuguix": [
-        "telegram-desktop"
-      ],
-      "homebrew": [
-        "telegram-desktop",
-        "telegram-desktop@beta"
-      ],
-      "nixpkgs": [
-        "tdesktop",
-        "telegram-desktop"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://desktop.telegram.org",
-      "https://github.com/telegramdesktop/tdesktop"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
-      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/telegram-desktop/nixappimage/nixpkgs",
-    "provides": [
-      "telegram-desktop==Telegram-Desktop"
-    ],
-    "repology": [
-      "telegram-desktop"
-    ],
-    "src_url": [
-      "https://github.com/telegramdesktop/tdesktop"
-    ],
-    "tag": [
-      "chat",
-      "Communications",
-      "Networking/Chat"
-    ],
-    "version": "5.10.7"
   },
   {
     "_disabled": "false",

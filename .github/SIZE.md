@@ -83,16 +83,16 @@
   32K   │   ├── gen_meta_aarch64-Linux.sh
  8.0K   │   └── sync_hf_mirror.sh
   12M   ├─┬ external
- 7.7M   │ ├─┬ am
- 7.7M   │ │ ├─┬ data
- 3.4M   │ │ │ ├── x86_64-Linux.json
- 2.9M   │ │ │ ├── x86_64-Linux.db
- 476K   │ │ │ ├── x86_64-Linux.db.cba
- 184K   │ │ │ ├── x86_64-Linux.json.cba
- 172K   │ │ │ ├── x86_64-Linux.db.zstd
- 168K   │ │ │ ├── x86_64-Linux.db.xz
- 156K   │ │ │ ├── x86_64-Linux.json.zstd
- 152K   │ │ │ ├── x86_64-Linux.json.xz
+ 7.9M   │ ├─┬ am
+ 7.8M   │ │ ├─┬ data
+ 3.5M   │ │ │ ├── x86_64-Linux.json
+ 3.0M   │ │ │ ├── x86_64-Linux.db
+ 484K   │ │ │ ├── x86_64-Linux.db.cba
+ 192K   │ │ │ ├── x86_64-Linux.json.cba
+ 180K   │ │ │ ├── x86_64-Linux.db.zstd
+ 176K   │ │ │ ├── x86_64-Linux.db.xz
+ 160K   │ │ │ ├── x86_64-Linux.json.zstd
+ 156K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum

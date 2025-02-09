@@ -1692,6 +1692,77 @@
   },
   {
     "_disabled": "false",
+    "pkg": "alacritty",
+    "pkg_family": "alacritty",
+    "pkg_id": "ppkg.alacritty",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-alacritty/alacritty/alacritty",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/alacritty/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GPU-accelerated terminal emulator",
+    "distro_pkg": {
+      "alpine": [
+        "alacritty"
+      ],
+      "archlinux": {
+        "aur": [
+          "alacritty-git"
+        ],
+        "extra": [
+          "alacritty"
+        ]
+      },
+      "debian": [
+        "rust-alacritty"
+      ],
+      "gnuguix": [
+        "alacritty"
+      ],
+      "homebrew": [
+        "alacritty"
+      ],
+      "nixpkgs": [
+        "alacritty"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/alacritty/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://alacritty.org",
+      "https://github.com/alacritty/alacritty"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "alacritty"
+    ],
+    "repology": [
+      "alacritty"
+    ],
+    "src_url": [
+      "https://github.com/alacritty/alacritty"
+    ],
+    "tag": [
+      "terminal"
+    ],
+    "version": "0.13.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "albafetch",
     "pkg_family": "albafetch",
     "pkg_id": "github.com.alba4k.albafetch",
@@ -11825,7 +11896,7 @@
     "tag": [
       "clipboard"
     ],
-    "version": "v0.20.0"
+    "version": "v0.20.1"
   },
   {
     "_disabled": "false",
@@ -17672,7 +17743,7 @@
       "x86_64-linux"
     ],
     "license": [
-      "GPL"
+      "GPL-2.0"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
@@ -17692,6 +17763,81 @@
     ],
     "src_url": [
       "https://www.freedesktop.org/wiki/Software/desktop-file-utils"
+    ],
+    "tag": [
+      "appstream",
+      "desktop"
+    ],
+    "version": "0.28"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "desktop-file-utils",
+    "pkg_family": "desktop-file-utils",
+    "pkg_id": "ppkg.desktop-file-utils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/file-utils/desktop-file-utils/desktop-file-utils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/desktop-file-utils/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities for working with Desktop Entry files",
+      "desktop-file-edit": "Modify an existing desktop file entry [desktop-file-utils]",
+      "desktop-file-install": "Install a new desktop file entry or rebuild/modify the MIME-types DB [desktop-file-utils]",
+      "desktop-file-validate": "Validate & Verify the integrity of a desktop file [desktop-file-utils]",
+      "update-desktop-database": "Update the MIME-types application database [desktop-file-utils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "desktop-file-utils"
+      ],
+      "archlinux": {
+        "aur": [
+          "desktop-file-utils-git"
+        ],
+        "extra": [
+          "desktop-file-utils"
+        ]
+      },
+      "debian": [
+        "desktop-file-utils"
+      ],
+      "nixpkgs": [
+        "desktop-file-utils"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/desktop-file-utils/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.freedesktop.org/wiki/Software/desktop-file-utils",
+      "https://gitlab.freedesktop.org/xdg/desktop-file-utils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "desktop-file-edit",
+      "desktop-file-install",
+      "desktop-file-validate",
+      "update-desktop-database"
+    ],
+    "repology": [
+      "desktop-file-utils"
+    ],
+    "src_url": [
+      "https://gitlab.freedesktop.org/xdg/desktop-file-utils"
     ],
     "tag": [
       "appstream",
@@ -19151,6 +19297,142 @@
       "fio"
     ],
     "version": "HEAD-7d71916-250110T134259"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dpkg",
+    "pkg_family": "dpkg",
+    "pkg_id": "ppkg.dpkg",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-dpkg/dpkg/dpkg",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dpkg/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Debian package manager tools",
+      "dpkg": "Package Manager for Debian [dpkg]",
+      "dpkg-architecture": "Set and Determine the architecture for package building [dpkg]",
+      "dpkg-buildapi": "Returns the build API level to use during package build [dpkg]",
+      "dpkg-buildflags": "Return build flags to use during package build [dpkg]",
+      "dpkg-buildpackage": "Build binary or source packages from sources [dpkg]",
+      "dpkg-buildtree": "Perform common operations on the build tree for a source package [dpkg]",
+      "dpkg-checkbuilddeps": "Check build dependencies and conflicts [dpkg]",
+      "dpkg-deb": "Debian package archive (.deb) manipulation tool [dpkg]",
+      "dpkg-distaddfile": "Add entries to debian/files [dpkg]",
+      "dpkg-divert": "Override a package's version of a file [dpkg]",
+      "dpkg-fsys-usrunmess": "Undoes the merged-/usr-via-aliased-dirs mess [dpkg]",
+      "dpkg-genbuildinfo": "Generate Debian .buildinfo files [dpkg]",
+      "dpkg-genchanges": "Generate Debian .changes files [dpkg]",
+      "dpkg-gencontrol": "Generate Debian control files [dpkg]",
+      "dpkg-gensymbols": "Generate symbols files (shared library dependency information) [dpkg]",
+      "dpkg-maintscript-helper": "Works around known dpkg limitations in maintainer scripts [dpkg]",
+      "dpkg-mergechangelogs": "3-way merge of debian/changelog files [dpkg]",
+      "dpkg-name": "Rename Debian packages to full package names [dpkg]",
+      "dpkg-parsechangelog": "Parse Debian changelog files [dpkg]",
+      "dpkg-query": "A tool to query the dpkg database [dpkg]",
+      "dpkg-realpath": "Print the resolved pathname with DPKG_ROOT support [dpkg]",
+      "dpkg-scanpackages": "Create Packages index files [dpkg]",
+      "dpkg-scansources": "Create Sources index files [dpkg]",
+      "dpkg-shlibdeps": "Generate shared library substvar dependencies [dpkg]",
+      "dpkg-source": "Debian source package (.dsc) manipulation tool [dpkg]",
+      "dpkg-split": "Debian package archive split/join tool [dpkg]",
+      "dpkg-statoverride": "Override ownership and mode of files [dpkg]",
+      "dpkg-trigger": "A package trigger utility [dpkg]",
+      "dpkg-vendor": "Queries information about distribution vendors [dpkg]",
+      "dselect": "Debian package management frontend [dpkg]",
+      "start-stop-daemon": "Start and stop system daemon programs [dpkg]",
+      "update-alternatives": "Maintain symbolic links determining default commands [dpkg]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "dpkg"
+      ],
+      "archlinux": {
+        "aur": [
+          "dpkg-git"
+        ],
+        "extra": [
+          "dpkg"
+        ]
+      },
+      "debian": [
+        "dpkg"
+      ],
+      "gnuguix": [
+        "dpkg"
+      ],
+      "homebrew": [
+        "dpkg"
+      ],
+      "nixpkgs": [
+        "dpkg"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dpkg/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://wiki.debian.org/dpkg",
+      "https://gitlab.com/gnuwget/dpkg"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "dpkg",
+      "dpkg-architecture",
+      "dpkg-buildapi",
+      "dpkg-buildflags",
+      "dpkg-buildpackage",
+      "dpkg-buildtree",
+      "dpkg-checkbuilddeps",
+      "dpkg-deb",
+      "dpkg-distaddfile",
+      "dpkg-divert",
+      "dpkg-fsys-usrunmess",
+      "dpkg-genbuildinfo",
+      "dpkg-genchanges",
+      "dpkg-gencontrol",
+      "dpkg-gensymbols",
+      "dpkg-maintscript-helper",
+      "dpkg-mergechangelogs",
+      "dpkg-name",
+      "dpkg-parsechangelog",
+      "dpkg-query",
+      "dpkg-realpath",
+      "dpkg-scanpackages",
+      "dpkg-scansources",
+      "dpkg-shlibdeps",
+      "dpkg-source",
+      "dpkg-split",
+      "dpkg-statoverride",
+      "dpkg-trigger",
+      "dpkg-vendor",
+      "dselect",
+      "start-stop-daemon",
+      "update-alternatives"
+    ],
+    "repology": [
+      "dpkg"
+    ],
+    "src_url": [
+      "https://git.dpkg.org/cgit/dpkg/dpkg.git"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "1.22.11"
   },
   {
     "_disabled": "false",
@@ -21036,6 +21318,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "exif",
+    "pkg_family": "exif",
+    "pkg_id": "ppkg.exif",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-exif/exif/exif",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/exif/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Read, write, modify, and display EXIF data on the command-line",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "exif",
+          "exif-git"
+        ]
+      },
+      "debian": [
+        "exif"
+      ],
+      "homebrew": [
+        "exif"
+      ],
+      "nixpkgs": [
+        "exif"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/exif/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://libexif.github.io",
+      "https://github.com/libexif/exif"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "LGPL-2.1"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "exif"
+    ],
+    "repology": [
+      "exif"
+    ],
+    "src_url": [
+      "https://github.com/libexif/exif"
+    ],
+    "tag": [
+      "exif",
+      "metadata"
+    ],
+    "version": "0.6.22"
+  },
+  {
+    "_disabled": "false",
     "pkg": "exiflooter",
     "pkg_family": "exiflooter",
     "pkg_id": "github.com.aydinnyunus.exifLooter",
@@ -22727,6 +23073,96 @@
       "nvm"
     ],
     "version": "v1.38.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fontconfig",
+    "pkg_family": "fontconfig",
+    "pkg_id": "ppkg.fontconfig",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-fontconfig/fontconfig/fontconfig",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fontconfig/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Font configuration and customization utilities",
+      "fc-cache": "Build font information cache files [fontconfig]",
+      "fc-cat": "Read font information cache files [fontconfig]",
+      "fc-conflist": "List the configuration files processed by Fontconfig [fontconfig]",
+      "fc-list": "List available fonts [fontconfig]",
+      "fc-match": "Match available fonts [fontconfig]",
+      "fc-pattern": "Parse and show pattern [fontconfig]",
+      "fc-query": "Query font files [fontconfig]",
+      "fc-scan": "Scan font files or directories [fontconfig]",
+      "fc-validate": "Validate font files [fontconfig]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fontconfig"
+      ],
+      "archlinux": {
+        "aur": [
+          "fontconfig-git"
+        ],
+        "extra": [
+          "fontconfig"
+        ]
+      },
+      "debian": [
+        "fontconfig"
+      ],
+      "gnuguix": [
+        "fontconfig"
+      ],
+      "homebrew": [
+        "fontconfig"
+      ],
+      "nixpkgs": [
+        "fontconfig"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fontconfig/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.fontconfig.org",
+      "https://gitlab.freedesktop.org/fontconfig/fontconfig"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "fc-cache",
+      "fc-cat",
+      "fc-conflist",
+      "fc-list",
+      "fc-match",
+      "fc-pattern",
+      "fc-query",
+      "fc-scan",
+      "fc-validate"
+    ],
+    "repology": [
+      "fontconfig"
+    ],
+    "src_url": [
+      "https://gitlab.freedesktop.org/fontconfig/fontconfig"
+    ],
+    "tag": [
+      "fonts"
+    ],
+    "version": "2.15.0"
   },
   {
     "_disabled": "false",
@@ -27903,6 +28339,82 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gperftools",
+    "pkg_family": "gperftools",
+    "pkg_id": "ppkg.gperftools",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-gperftools/gperftools/gperftools",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gperftools/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast, multi-threaded malloc and nifty performance analysis tools",
+      "pprof": "A tool for visualization and analysis of profiling data [gperftools]",
+      "pprof-symbolize": "A tool for resolving symbols in profiling data [gperftools]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "gperftools"
+      ],
+      "archlinux": {
+        "aur": [
+          "gperftools-git"
+        ],
+        "extra": [
+          "gperftools"
+        ]
+      },
+      "debian": [
+        "google-perftools"
+      ],
+      "gnuguix": [
+        "gperftools"
+      ],
+      "homebrew": [
+        "gperftools"
+      ],
+      "nixpkgs": [
+        "gperftools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gperftools/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://code.google.com/p/gperftools",
+      "https://github.com/gperftools/gperftools"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "pprof",
+      "pprof-symbolize"
+    ],
+    "repology": [
+      "gperftools"
+    ],
+    "src_url": [
+      "https://github.com/gperftools/gperftools"
+    ],
+    "tag": [
+      "profiler"
+    ],
+    "version": "2.15"
+  },
+  {
+    "_disabled": "false",
     "pkg": "gpg-tui",
     "pkg_family": "gpg-tui",
     "pkg_id": "github.com.orhun.gpg-tui",
@@ -28292,6 +28804,75 @@
       "security"
     ],
     "version": "v1.4.43"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "guile",
+    "pkg_family": "guile",
+    "pkg_id": "ppkg.guile",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-guile/guile/guile",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/guile/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_description": "Portable, embeddable Scheme implementation Tools",
+      "guild": "Runn scripts bundled with Guile [guile]",
+      "guile": "The GNU Project Extension Language [guile]",
+      "guile-config": "Utility for linking programs with Guile [guile]",
+      "guile-snarf": "Extract subr info from distributed C files [guile]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "guile"
+      ],
+      "gnuguix": [
+        "guile"
+      ],
+      "homebrew": [
+        "guile"
+      ],
+      "nixpkgs": [
+        "guile"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/guile/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://savannah.gnu.org/projects/guile",
+      "https://git.savannah.gnu.org/cgit/guile.git"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "guild",
+      "guile",
+      "guile-config",
+      "guile-snarf"
+    ],
+    "repology": [
+      "guile"
+    ],
+    "src_url": [
+      "https://git.savannah.gnu.org/cgit/guile.git"
+    ],
+    "tag": [
+      "guile"
+    ],
+    "version": "3.0.9"
   },
   {
     "_disabled": "false",
@@ -30800,6 +31381,88 @@
   },
   {
     "_disabled": "false",
+    "pkg": "inotify-tools",
+    "pkg_family": "inotify-tools",
+    "pkg_id": "ppkg.inotify-tools",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inotify-tools/inotify-tools/inotify-tools",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/inotify-tools/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Command-line utilities to watch for file events (inotify)",
+      "fsnotifywait": "Wait for changes to files using fanotify [inotify-tools]",
+      "fsnotifywatch": "Gather filesystem access statistics using fanotify [inotify-tools]",
+      "inotifywait": "Wait for changes to files using inotify [inotify-tools]",
+      "inotifywatch": "Gather filesystem access statistics using inotify [inotify-tools]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "inotify-tools"
+      ],
+      "archlinux": {
+        "aur": [
+          "inotify-tools-git"
+        ],
+        "extra": [
+          "inotify-tools"
+        ]
+      },
+      "debian": [
+        "inotify-tools"
+      ],
+      "gnuguix": [
+        "inotify-tools"
+      ],
+      "homebrew": [
+        "inotify-tools"
+      ],
+      "nixpkgs": [
+        "inotify-tools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/inotify-tools/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/inotify-tools/inotify-tools/wiki",
+      "https://github.com/inotify-tools/inotify-tools"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "fsnotifywait",
+      "fsnotifywatch",
+      "inotifywait",
+      "inotifywatch"
+    ],
+    "repology": [
+      "inotify-tools"
+    ],
+    "src_url": [
+      "https://github.com/inotify-tools/inotify-tools"
+    ],
+    "tag": [
+      "filesystem",
+      "monitor",
+      "notify"
+    ],
+    "version": "4.23.9.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "interactsh",
     "pkg_family": "interactsh",
     "pkg_id": "github.com.projectdiscovery.interactsh",
@@ -30851,6 +31514,85 @@
       "security"
     ],
     "version": "v1.2.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "intltool",
+    "pkg_family": "intltool",
+    "pkg_id": "ppkg.intltool",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-intltool/intltool/intltool",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/intltool/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools to internationalize various kinds of data files",
+      "intltool-extract": "Generate header files which can be read by gettext [intltool]",
+      "intltool-merge": "Merge translated strings into various types of file [intltool]",
+      "intltool-prepare": "Prepare software to make use of intltool [intltool]",
+      "intltool-update": "Updates PO template file and merge translations with it [intltool]",
+      "intltoolize": "Copy intltool related files to software package [intltool]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "intltool"
+      ],
+      "archlinux": {
+        "extra": [
+          "intltool"
+        ]
+      },
+      "debian": [
+        "intltool"
+      ],
+      "gnuguix": [
+        "intltool"
+      ],
+      "homebrew": [
+        "intltool"
+      ],
+      "nixpkgs": [
+        "intltool"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/intltool/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://freedesktop.org/wiki/Software/intltool",
+      "https://code.launchpad.net/intltool"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "intltool-extract",
+      "intltool-merge",
+      "intltool-prepare",
+      "intltool-update",
+      "intltoolize"
+    ],
+    "repology": [
+      "intltool"
+    ],
+    "src_url": [
+      "https://code.launchpad.net/intltool"
+    ],
+    "tag": [
+      "text"
+    ],
+    "version": "0.51.0"
   },
   {
     "_disabled": "false",
@@ -31024,6 +31766,72 @@
       "ipa"
     ],
     "version": "HEAD-0ea7e44-250120T234712"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "iperf",
+    "pkg_family": "iperf",
+    "pkg_id": "ppkg.iperf",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-iperf/iperf/iperf",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/iperf/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tool to measure maximum TCP and UDP bandwidth",
+    "distro_pkg": {
+      "alpine": [
+        "iperf"
+      ],
+      "archlinux": {
+        "aur": [
+          "iperf-git"
+        ],
+        "extra": [
+          "iperf"
+        ]
+      },
+      "debian": [
+        "iperf"
+      ],
+      "homebrew": [
+        "iperf"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/iperf/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://sourceforge.net/projects/iperf",
+      "https://svn.code.sf.net/p/iperf/code/trunk"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "This is the old iperf2, Please use iperf3 instead"
+    ],
+    "provides": [
+      "iperf==iperf2"
+    ],
+    "repology": [
+      "iperf2"
+    ],
+    "src_url": [
+      "https://svn.code.sf.net/p/iperf/code/trunk"
+    ],
+    "tag": [
+      "bandwidth"
+    ],
+    "version": "2.2.1"
   },
   {
     "_disabled": "false",
@@ -31502,6 +32310,69 @@
       "jira"
     ],
     "version": "HEAD-b422422-250116T184326"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "jless",
+    "pkg_family": "jless",
+    "pkg_id": "ppkg.jless",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-jless/jless/jless",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jless/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line pager for JSON data",
+    "distro_pkg": {
+      "alpine": [
+        "jless"
+      ],
+      "archlinux": {
+        "extra": [
+          "jless"
+        ]
+      },
+      "homebrew": [
+        "jless"
+      ],
+      "nixpkgs": [
+        "jless"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jless/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://jless.io",
+      "https://github.com/PaulJuliusMartinez/jless"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "jless"
+    ],
+    "repology": [
+      "jless"
+    ],
+    "src_url": [
+      "https://github.com/PaulJuliusMartinez/jless"
+    ],
+    "tag": [
+      "json",
+      "pager"
+    ],
+    "version": "0.9.0"
   },
   {
     "_disabled": "false",
@@ -33820,6 +34691,170 @@
   },
   {
     "_disabled": "false",
+    "pkg": "lcdf-typetools",
+    "pkg_family": "lcdf-typetools",
+    "pkg_id": "ppkg.lcdf-typetools",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/lcdf-typetools/lcdf-typetools/lcdf-typetools",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lcdf-typetools/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities for manipulating OpenType, PostScript Type 1, and Multiple Master fonts",
+      "cfftot1": "Convert PostScript font from CFF to Type 1 [lcdf-typetools]",
+      "mmafm": "Creates AFM font metrics for multiple master fonts [lcdf-typetools]",
+      "mmpfb": "Creates single-master fonts from multiple master fonts [lcdf-typetools]",
+      "otfinfo": "Report information about OpenType fonts [lcdf-typetools]",
+      "otftotfm": "Create TeX font metrics from OpenType fonts [lcdf-typetools]",
+      "t1dotlessj": "Create a dotless-j PostScript Type 1 font [lcdf-typetools]",
+      "t1lint": "Check a PostScript Type 1 font for correctness [lcdf-typetools]",
+      "t1rawafm": "Produce raw AFM metrics from a PostScript Type 1 font [lcdf-typetools]",
+      "t1reencode": "Re-encode a PostScript Type 1 font [lcdf-typetools]",
+      "t1testpage": "Create a PostScript proof for a Type 1 font [lcdf-typetools]",
+      "ttftotype42": "Create PostScript Type 42 wrapper of TrueType font [lcdf-typetools]"
+    },
+    "distro_pkg": {
+      "debian": [
+        "lcdf-typetools"
+      ],
+      "gnuguix": [
+        "lcdf-typetools"
+      ],
+      "homebrew": [
+        "lcdf-typetools"
+      ],
+      "nixpkgs": [
+        "lcdf-typetools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lcdf-typetools/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://lcdf.org/type",
+      "https://github.com/kohler/lcdf-typetools"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "cfftot1",
+      "mmafm",
+      "mmpfb",
+      "otfinfo",
+      "otftotfm",
+      "t1dotlessj",
+      "t1lint",
+      "t1rawafm",
+      "t1reencode",
+      "t1testpage",
+      "ttftotype42"
+    ],
+    "repology": [
+      "lcdf-typetools"
+    ],
+    "src_url": [
+      "https://github.com/kohler/lcdf-typetools"
+    ],
+    "tag": [
+      "fonts"
+    ],
+    "version": "2.110"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "lcov",
+    "pkg_family": "lcov",
+    "pkg_id": "ppkg.lcov",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-lcov/lcov/lcov",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lcov/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "default": "Front-end Tools for GCC's coverage testing tool gcov",
+      "gendesc": "Generate a test case description file [lcov]",
+      "genhtml": "Generate HTML view from LCOV coverage data files [lcov]",
+      "geninfo": "Generate tracefiles from GCOV coverage data files [lcov]",
+      "genpng": "Generate an overview image from a source file [lcov]",
+      "lcov": "A graphical GCOV front-end [lcov]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "lcov"
+      ],
+      "archlinux": {
+        "aur": [
+          "lcov-git"
+        ],
+        "extra": [
+          "lcov"
+        ]
+      },
+      "debian": [
+        "lcov"
+      ],
+      "gnuguix": [
+        "lcov"
+      ],
+      "homebrew": [
+        "lcov"
+      ],
+      "nixpkgs": [
+        "lcov"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lcov/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/linux-test-project/lcov"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "gendesc",
+      "genhtml",
+      "geninfo",
+      "genpng",
+      "lcov"
+    ],
+    "repology": [
+      "lcov"
+    ],
+    "src_url": [
+      "https://github.com/linux-test-project/lcov"
+    ],
+    "tag": [
+      "gcov"
+    ],
+    "version": "2.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "lddtree",
     "pkg_family": "lddtree",
     "pkg_id": "github.com.messense.lddtree-rs",
@@ -35639,6 +36674,74 @@
   },
   {
     "_disabled": "false",
+    "pkg": "lua",
+    "pkg_family": "lua",
+    "pkg_id": "ppkg.lua",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-lua/lua/lua",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lua/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Powerful, fast, lightweight, embeddable scripting language",
+      "lua": "Lua Interpreter [lua]",
+      "luac": "Lua Compiler [lua]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "lua"
+        ]
+      },
+      "gnuguix": [
+        "lua"
+      ],
+      "homebrew": [
+        "lua"
+      ],
+      "nixpkgs": [
+        "lua"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lua/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.lua.org",
+      "https://github.com/lua/lua"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "lua",
+      "luac"
+    ],
+    "repology": [
+      "lua"
+    ],
+    "src_url": [
+      "https://github.com/lua/lua"
+    ],
+    "tag": [
+      "embedded",
+      "lua"
+    ],
+    "version": "5.4.6"
+  },
+  {
+    "_disabled": "false",
     "pkg": "luet",
     "pkg_family": "luet",
     "pkg_id": "github.com.mudler.luet",
@@ -36535,6 +37638,78 @@
       "markdown"
     ],
     "version": "HEAD-fbe779b-241003T214907"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mediainfo",
+    "pkg_family": "mediainfo",
+    "pkg_id": "ppkg.mediainfo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-mediainfo/mediainfo/mediainfo",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mediainfo/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line utility for reading information from media files",
+    "distro_pkg": {
+      "alpine": [
+        "mediainfo"
+      ],
+      "archlinux": {
+        "aur": [
+          "mediainfo-git"
+        ],
+        "extra": [
+          "mediainfo"
+        ]
+      },
+      "debian": [
+        "mediainfo"
+      ],
+      "gnuguix": [
+        "mediainfo"
+      ],
+      "homebrew": [
+        "media-info",
+        "mediainfo"
+      ],
+      "nixpkgs": [
+        "mediainfo"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mediainfo/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://mediaarea.net/",
+      "https://github.com/MediaArea/MediaInfo"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-2-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "mediainfo"
+    ],
+    "repology": [
+      "mediainfo"
+    ],
+    "src_url": [
+      "https://github.com/MediaArea/MediaInfo"
+    ],
+    "tag": [
+      "metadata"
+    ],
+    "version": "24.06"
   },
   {
     "_disabled": "false",
@@ -37512,6 +38687,107 @@
   },
   {
     "_disabled": "false",
+    "pkg": "moreutils",
+    "pkg_family": "moreutils",
+    "pkg_id": "ppkg.moreutils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-moreutils/moreutils/moreutils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/moreutils/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Miscellaneous general-purpose command-line unix Tools",
+      "chronic": "Run a command quietly unless it fails [moreutils]",
+      "combine": "Combine sets of lines from two files using boolean operations [moreutils]",
+      "errno": "Look up errno names and descriptions [moreutils]",
+      "ifdata": "Get network interface info without parsing ifconfig output [moreutils]",
+      "ifne": "Run command if the standard input is not empty [moreutils]",
+      "isutf8": "Check whether files are valid UTF-8 [moreutils]",
+      "lckdo": "Run a program with a lock held [moreutils]",
+      "mispipe": "Pipe two commands, returning the exit status of the first [moreutils]",
+      "parallel": "Run programs in parallel [moreutils]",
+      "pee": "Tee standard input to pipes [moreutils]",
+      "sponge": "Soak up standard input and write to a file [moreutils]",
+      "ts": "Timestamp input [moreutils]",
+      "vidir": "Edit directories and filenames [moreutils]",
+      "vipe": "Edit pipe [moreutils]",
+      "zrun": "Automatically uncompress arguments to command [moreutils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "moreutils"
+      ],
+      "archlinux": {
+        "extra": [
+          "moreutils"
+        ]
+      },
+      "debian": [
+        "moreutils"
+      ],
+      "gnuguix": [
+        "moreutils"
+      ],
+      "homebrew": [
+        "moreutils"
+      ],
+      "nixpkgs": [
+        "moreutils"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/moreutils/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://joeyh.name/code/moreutils",
+      "https://git.joeyh.name/index.cgi/moreutils.git"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "chronic",
+      "combine",
+      "errno",
+      "ifdata",
+      "ifne",
+      "isutf8",
+      "lckdo",
+      "mispipe",
+      "parallel",
+      "pee",
+      "sponge",
+      "ts",
+      "vidir",
+      "vipe",
+      "zrun"
+    ],
+    "repology": [
+      "moreutils"
+    ],
+    "src_url": [
+      "https://git.joeyh.name/index.cgi/moreutils.git"
+    ],
+    "tag": [
+      "buysbox",
+      "coreutils",
+      "toybox"
+    ],
+    "version": "0.69"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mpv",
     "pkg_family": "mpv",
     "pkg_id": "github.com.pkgforge-dev.mpv-AppImage.stable",
@@ -38181,6 +39457,74 @@
   },
   {
     "_disabled": "false",
+    "pkg": "ncdu",
+    "pkg_family": "ncdu",
+    "pkg_id": "ppkg.ncdu",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-ncdu/ncdu/ncdu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ncdu/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Disk usage analyzer with an ncurses interface",
+    "distro_pkg": {
+      "alpine": [
+        "ncdu"
+      ],
+      "archlinux": {
+        "extra": [
+          "ncdu"
+        ]
+      },
+      "debian": [
+        "ncdu"
+      ],
+      "gnuguix": [
+        "ncdu"
+      ],
+      "homebrew": [
+        "ncdu"
+      ],
+      "nixpkgs": [
+        "ncdu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ncdu/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://dev.yorhel.nl/ncdu",
+      "https://code.blicky.net/yorhel/ncdu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "ncdu"
+    ],
+    "repology": [
+      "ncdu"
+    ],
+    "src_url": [
+      "https://code.blicky.net/yorhel/ncdu"
+    ],
+    "tag": [
+      "disk-usage"
+    ],
+    "version": "2.7"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ncgopher",
     "pkg_family": "ncgopher",
     "pkg_id": "github.com.jansc.ncgopher",
@@ -38517,7 +39861,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-d5c26ef-250207T220237"
+    "version": "HEAD-cb915f6-250209T153636"
   },
   {
     "_disabled": "false",
@@ -39987,7 +41331,7 @@
       "Video",
       "Video/Utilities"
     ],
-    "version": "31.0.0-4"
+    "version": "31.0.1-2"
   },
   {
     "_disabled": "false",
@@ -41557,6 +42901,82 @@
     "tag": [
       "binary",
       "elf"
+    ],
+    "version": "1.3.8"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "pax-utils",
+    "pkg_family": "pax-utils",
+    "pkg_id": "ppkg.pax-utils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pax-utils/pax-utils/pax-utils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pax-utils/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools to Check ELF Files for Security Relevant Properties",
+      "dumpelf": "Dump internal ELF structure [pax-utils]",
+      "lddtree": "Display ELF dependencies as a tree [pax-utils]",
+      "pspax": "List ELF/PaX information about running processes [pax-utils]",
+      "scanelf": "User-space utility to scan ELF files [pax-utils]",
+      "scanmacho": "User-space utility to scan Mach-O files [pax-utils]",
+      "symtree": "Display libraries that satisfy undefined symbols, as a tree [pax-utils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "pax-utils"
+      ],
+      "archlinux": {
+        "extra": [
+          "pax-utils"
+        ]
+      },
+      "debian": [
+        "pax-utils"
+      ],
+      "nixpkgs": [
+        "pax-utils"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/pax-utils/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities",
+      "https://gitweb.gentoo.org/proj/pax-utils.git"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "dumpelf",
+      "lddtree",
+      "pspax",
+      "scanelf",
+      "scanmacho",
+      "symtree"
+    ],
+    "repology": [
+      "pax-utils"
+    ],
+    "src_url": [
+      "https://gitweb.gentoo.org/proj/pax-utils.git"
+    ],
+    "tag": [
+      "elfutils",
+      "security"
     ],
     "version": "1.3.8"
   },
@@ -45533,6 +46953,73 @@
   },
   {
     "_disabled": "false",
+    "pkg": "rlwrap",
+    "pkg_family": "rlwrap",
+    "pkg_id": "ppkg.rlwrap",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-rlwrap/rlwrap/rlwrap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rlwrap/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Wrapper to allow the editing of keyboard commands",
+    "distro_pkg": {
+      "alpine": [
+        "rlwrap"
+      ],
+      "archlinux": {
+        "extra": [
+          "rlwrap"
+        ]
+      },
+      "debian": [
+        "rlwrap"
+      ],
+      "gnuguix": [
+        "rlwrap"
+      ],
+      "homebrew": [
+        "rlwrap"
+      ],
+      "nixpkgs": [
+        "rlwrap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rlwrap/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/hanslub42/rlwrap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "rlwrap"
+    ],
+    "repology": [
+      "rlwrap"
+    ],
+    "src_url": [
+      "https://github.com/hanslub42/rlwrap"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "0.46.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "rnr",
     "pkg_family": "rnr",
     "pkg_id": "github.com.ismaelgv.rnr",
@@ -46884,7 +48371,7 @@
       "emulator",
       "game"
     ],
-    "version": "1.2.360"
+    "version": "1.2.361"
   },
   {
     "_disabled": "false",
@@ -50166,6 +51653,97 @@
       "speedtest"
     ],
     "version": "HEAD-1395781-241220T235820"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "spirv-tools",
+    "pkg_family": "spirv-tools",
+    "pkg_id": "ppkg.spirv-tools",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/spirv-tools/spirv-tools/spirv-tools",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/spirv-tools/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for processing SPIR-V intermediate shader language modules",
+      "spirv-as": "Standalone assembler [spirv-tools]",
+      "spirv-cfg": "Control flow graph dumper [spirv-tools]",
+      "spirv-dis": "Standalone disassembler [spirv-tools]",
+      "spirv-link": "Standalone linker [spirv-tools]",
+      "spirv-lint": "Standalone linter [spirv-tools]",
+      "spirv-objdump": "Dump information from a SPIR-V binary [spirv-tools]",
+      "spirv-opt": "Standalone optimizer [spirv-tools]",
+      "spirv-reduce": "Standalone reducer [spirv-tools]",
+      "spirv-val": "Standalone validator [spirv-tools]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "spirv-tools"
+      ],
+      "archlinux": {
+        "aur": [
+          "spirv-tools-git"
+        ],
+        "extra": [
+          "spirv-tools"
+        ]
+      },
+      "debian": [
+        "spirv-tools"
+      ],
+      "gnuguix": [
+        "spirv-tools"
+      ],
+      "homebrew": [
+        "spirv-tools"
+      ],
+      "nixpkgs": [
+        "spirv-tools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/spirv-tools/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.khronos.org/registry/spir-v",
+      "https://github.com/KhronosGroup/SPIRV-Tools"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "spirv-as",
+      "spirv-cfg",
+      "spirv-dis",
+      "spirv-link",
+      "spirv-lint",
+      "spirv-objdump",
+      "spirv-opt",
+      "spirv-reduce",
+      "spirv-val"
+    ],
+    "repology": [
+      "spirv-tools"
+    ],
+    "src_url": [
+      "https://github.com/KhronosGroup/SPIRV-Tools"
+    ],
+    "tag": [
+      "spirv",
+      "vulkan"
+    ],
+    "version": "1.3.290.0"
   },
   {
     "_disabled": "false",
@@ -53654,6 +55232,79 @@
   },
   {
     "_disabled": "false",
+    "pkg": "tiff",
+    "pkg_family": "tiff",
+    "pkg_id": "ppkg.tiff",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-tiff/tiff/tiff",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tiff/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for reading and writing TIFF data files",
+      "tiffcp": "Copy (and possibly convert) a TIFF file [tiff]",
+      "tiffcmp": "compare two TIFF files [tiff]",
+      "tiffcrop": "Select, copy, crop, convert, extract, and/or process one or more TIFF files [tiff]",
+      "tiffdither": "Convert a greyscale TIFF image to bilevel using dithering [tiff]",
+      "tiffdump": "Print verbatim information about TIFF files [tiff]",
+      "tiffinfo": "Print information about TIFF files [tiff]",
+      "tiffmedian": "Apply the median cut algorithm to data in a TIFF file [tiff]",
+      "tiffset": "Set or unset a field in a TIFF header [tiff]",
+      "tiffsplit": "Split a multi-image TIFF into single-image TIFF files [tiff]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "tiff"
+      ],
+      "debian": [
+        "tiff"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tiff/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://libtiff.gitlab.io/libtiff/",
+      "https://gitlab.com/libtiff/libtiff"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "tiffcp",
+      "tiffcmp",
+      "tiffcrop",
+      "tiffdither",
+      "tiffdump",
+      "tiffinfo",
+      "tiffmedian",
+      "tiffset",
+      "tiffsplit"
+    ],
+    "repology": [
+      "tiff"
+    ],
+    "src_url": [
+      "https://gitlab.com/libtiff/libtiff"
+    ],
+    "tag": [
+      "tiff"
+    ],
+    "version": "4.6.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "timer",
     "pkg_family": "timer",
     "pkg_id": "github.com.caarlos0.timer",
@@ -54342,6 +55993,73 @@
       "proxy"
     ],
     "version": "v3.3.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tree",
+    "pkg_family": "tree",
+    "pkg_id": "ppkg.tree",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-tree/tree/tree",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tree/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Display directories as trees (with optional color/HTML output)",
+    "distro_pkg": {
+      "alpine": [
+        "tree"
+      ],
+      "archlinux": {
+        "aur": [
+          "tree",
+          "tree-git"
+        ]
+      },
+      "debian": [
+        "tree"
+      ],
+      "gnuguix": [
+        "tree"
+      ],
+      "homebrew": [
+        "tree"
+      ],
+      "nixpkgs": [
+        "tree"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tree/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://oldmanprogrammer.net/source.php?dir=projects/tree",
+      "https://github.com/Old-Man-Programmer/tree",
+      "https://gitlab.com/OldManProgrammer/unix-tree"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "tree"
+    ],
+    "src_url": [
+      "https://github.com/Old-Man-Programmer/tree"
+    ],
+    "tag": [
+      "downloader"
+    ],
+    "version": "2.2.1"
   },
   {
     "_disabled": "false",
@@ -55452,6 +57170,85 @@
       "Utility"
     ],
     "version": "v4.2.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "usbutils",
+    "pkg_family": "usbutils",
+    "pkg_id": "ppkg.usbutils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-usbutils/usbutils/usbutils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/usbutils/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities for handling USB devices",
+      "lsusb": "List USB devices [usbutils]",
+      "update-usbids": "Download new version of the USB ID list [usbutils]",
+      "usb-devices": "Print USB device details [usbutils]",
+      "usbhid-dump": "Dump USB HID device report descriptors and streams [usbutils]",
+      "usbreset": "Send a USB port reset to a USB device [usbutils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "usbutils"
+      ],
+      "archlinux": {
+        "aur": [
+          "usbutils-git"
+        ]
+      },
+      "debian": [
+        "usbutils"
+      ],
+      "gnuguix": [
+        "usbutils"
+      ],
+      "homebrew": [
+        "usbutils"
+      ],
+      "nixpkgs": [
+        "usbutils"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/usbutils/static.ppkg.stable.yaml",
+    "homepage": [
+      "http://www.linux-usb.org",
+      "https://github.com/gregkh/usbutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "lsusb",
+      "update-usbids",
+      "usb-devices",
+      "usbhid-dump",
+      "usbreset"
+    ],
+    "repology": [
+      "usbutils"
+    ],
+    "src_url": [
+      "https://github.com/gregkh/usbutils"
+    ],
+    "tag": [
+      "usb"
+    ],
+    "version": "018"
   },
   {
     "_disabled": "false",
@@ -59294,7 +61091,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-17ff1e8-250207T164249"
+    "version": "HEAD-793c90f-250209T145019"
   },
   {
     "_disabled": "false",

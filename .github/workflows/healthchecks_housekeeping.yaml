@@ -121,6 +121,18 @@ jobs:
            {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/bincache/x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},
            {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/bincache/aarch64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json"
+          ##Total (External/AM)
+          #AM
+          jq -n '[
+           {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/am/x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/am/aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json"
+          ##Total (External/appimage.github.io)
+          #AM
+          jq -n '[
+           {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/appimage.github.io/x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/appimage.github.io/aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json"
           ##Total (pkgcache)
           jq -n '[
            {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},

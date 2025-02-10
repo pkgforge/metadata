@@ -146,6 +146,21 @@ jobs:
           ##Total ALL
           jq -n '[inputs | .[] | select(.sum == "total").total] | add' "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL_CACHE.txt"
           jq -n '{total: ([inputs | .[] | select(.sum == "total").total] | add)}' "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | jq . > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL_CACHE.json"
+          #Installable
+          jq -n '[
+           {source: "bincache", total: '"$(cat "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "pkgcache", total: '"$(cat "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "ivan-hc-am", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "appimage-github-io", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'} 
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/TOTAL_INSTALLABLE.json"
+          #Installable + Buildable
+          jq -n '[
+           {source: "bincache", total: '"$(cat "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "pkgcache", total: '"$(cat "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "soarpkgs", total: '"$(cat "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "ivan-hc-am", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "appimage-github-io", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'} 
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/TOTAL_ALL.json"
           ##Gif
           cd "${GITHUB_WORKSPACE}/main"
           sed -E "s~(https://soar\.pkgforge\.dev/gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g" -i "${GITHUB_WORKSPACE}/main/README.md"

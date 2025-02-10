@@ -89,7 +89,7 @@
  4.0M   │ │ │ ├── x86_64-Linux.db
  556K   │ │ │ ├── x86_64-Linux.db.cba
  260K   │ │ │ ├── x86_64-Linux.json.cba
- 232K   │ │ │ ├── x86_64-Linux.db.zstd
+ 236K   │ │ │ ├── x86_64-Linux.db.zstd
  232K   │ │ │ ├── x86_64-Linux.db.xz
  208K   │ │ │ ├── x86_64-Linux.json.zstd
  204K   │ │ │ ├── x86_64-Linux.json.xz
@@ -187,13 +187,13 @@
  4.0K   │   └── gen_diff.sh
  3.0M   ├─┬ pkgcache
  2.9M   │ ├─┬ data
- 604K   │ │ ├── x86_64-Linux.sdb
- 584K   │ │ ├── x86_64-Linux.db
- 556K   │ │ ├── x86_64-Linux.json
- 168K   │ │ ├── aarch64-Linux.sdb
- 136K   │ │ ├── aarch64-Linux.db
- 128K   │ │ ├── aarch64-Linux.json
-  72K   │ │ ├── x86_64-Linux.sdb.cba
+ 616K   │ │ ├── x86_64-Linux.sdb
+ 588K   │ │ ├── x86_64-Linux.db
+ 564K   │ │ ├── x86_64-Linux.json
+ 176K   │ │ ├── aarch64-Linux.sdb
+ 140K   │ │ ├── aarch64-Linux.db
+ 136K   │ │ ├── aarch64-Linux.json
+  76K   │ │ ├── x86_64-Linux.sdb.cba
   64K   │ │ ├── x86_64-Linux.json.cba
   64K   │ │ ├── x86_64-Linux.db.cba
   60K   │ │ ├── x86_64-Linux.sdb.zstd

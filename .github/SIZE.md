@@ -88,9 +88,9 @@
  4.6M   │ │ │ ├── x86_64-Linux.json
  3.9M   │ │ │ ├── x86_64-Linux.db
  552K   │ │ │ ├── x86_64-Linux.db.cba
- 252K   │ │ │ ├── x86_64-Linux.json.cba
+ 256K   │ │ │ ├── x86_64-Linux.json.cba
  228K   │ │ │ ├── x86_64-Linux.db.zstd
- 224K   │ │ │ ├── x86_64-Linux.db.xz
+ 228K   │ │ │ ├── x86_64-Linux.db.xz
  204K   │ │ │ ├── x86_64-Linux.json.zstd
  200K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
@@ -98,7 +98,8 @@
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum
  4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
- 4.0K   │ │ │ └── x86_64-Linux.db.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
+ 4.0K   │ │ │ └── TOTAL.json
   16K   │ │ └─┬ scripts
   12K   │ │   └── gen_meta.sh
  4.4M   │ └─┬ appimage.github.io
@@ -128,7 +129,8 @@
  4.0K   │   │ ├── aarch64-Linux.json.bsum
  4.0K   │   │ ├── aarch64-Linux.db.zstd.bsum
  4.0K   │   │ ├── aarch64-Linux.db.xz.bsum
- 4.0K   │   │ └── aarch64-Linux.db.bsum
+ 4.0K   │   │ ├── aarch64-Linux.db.bsum
+ 4.0K   │   │ └── TOTAL.json
   32K   │   └─┬ scripts
   28K   │     └── gen_meta.sh
  7.2M   ├─┬ soarpkgs
@@ -255,6 +257,6 @@
   16K   ├─┬ workers
   12K   │ └─┬ omni-redirector-pkgforge-dev
  8.0K   │   └── worker.js
- 4.0K   ├── README.md
+ 8.0K   ├── README.md
  4.0K   └── LICENSE
 ```

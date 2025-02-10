@@ -1,5 +1,5 @@
 ```mathematica
- 281M └─┬ main
+ 283M └─┬ main
  170M   ├─┬ misc
  170M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -16,7 +16,7 @@
  416K   │ │ ├── FLATPAK_APPS_INFO.txt
  292K   │ │ ├── PPKG.json
  244K   │ │ ├── FLATPAK_POPULAR.json
- 228K   │ │ ├── FLATPAK_TRENDING.json
+ 232K   │ │ ├── FLATPAK_TRENDING.json
  120K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
@@ -82,17 +82,17 @@
   32K   │   ├── gen_meta_x86_64-Linux.sh
   32K   │   ├── gen_meta_aarch64-Linux.sh
  8.0K   │   └── sync_hf_mirror.sh
-  13M   ├─┬ external
- 8.7M   │ ├─┬ am
- 8.7M   │ │ ├─┬ data
- 3.9M   │ │ │ ├── x86_64-Linux.json
- 3.3M   │ │ │ ├── x86_64-Linux.db
- 524K   │ │ │ ├── x86_64-Linux.db.cba
- 236K   │ │ │ ├── x86_64-Linux.json.cba
- 212K   │ │ │ ├── x86_64-Linux.db.zstd
- 212K   │ │ │ ├── x86_64-Linux.db.xz
- 192K   │ │ │ ├── x86_64-Linux.json.zstd
- 188K   │ │ │ ├── x86_64-Linux.json.xz
+  14M   ├─┬ external
+  10M   │ ├─┬ am
+  10M   │ │ ├─┬ data
+ 4.6M   │ │ │ ├── x86_64-Linux.json
+ 3.9M   │ │ │ ├── x86_64-Linux.db
+ 552K   │ │ │ ├── x86_64-Linux.db.cba
+ 252K   │ │ │ ├── x86_64-Linux.json.cba
+ 228K   │ │ │ ├── x86_64-Linux.db.zstd
+ 224K   │ │ │ ├── x86_64-Linux.db.xz
+ 204K   │ │ │ ├── x86_64-Linux.json.zstd
+ 200K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum

@@ -199,12 +199,12 @@ generate_meta()
        if [ -z "${PKG_VERSION_TMP+x}" ] || [ -z "${PKG_VERSION_TMP##*[[:space:]]}" ]; then
          T_ID="$(jq -r '.id // ""' "${TMPDIR}/tmp/${PKG_ID_BASE}.json" | tr -d -c '0-9')"
          if [[ "${#T_ID}" -gt 2 ]]; then
-           PKG_VERSION="${T_ID}-latest+${PKG_MDSUM:0:6}"
+           PKG_VERSION="${T_ID}-latest+${PKG_MDSUM:0:6}aih"
          else
-           PKG_VERSION="latest+${PKG_MDSUM:0:6}"
+           PKG_VERSION="latest+${PKG_MDSUM:0:6}aih"
          fi
        else
-         PKG_VERSION="${PKG_VERSION_TMP}+${PKG_MDSUM:0:6}"
+         PKG_VERSION="${PKG_VERSION_TMP}+${PKG_MDSUM:0:6}aih"
        fi
        echo -e "[+] Version ==> ${PKG_VERSION} [${PKG_NAME}] (${PKG_ID_BASE})"
   #Generate Json

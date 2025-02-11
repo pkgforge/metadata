@@ -11,28 +11,42 @@ export TZ="UTC"
 export HOST_TRIPLET="$(uname -m)-$(uname -s)"
 SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
 TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
-mkdir -pv "${TMPDIR}/tmp" "${TMPDIR}/data"
+mkdir -pv "${TMPDIR}/src" "${TMPDIR}/tmp" "${TMPDIR}/data"
 rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
-#Get HF Repo
-pushd "$(mktemp -d)" >/dev/null 2>&1 && git clone --filter="blob:none" --depth="1" --no-checkout "https://huggingface.co/datasets/pkgforge/AMcache" && cd "./AMcache"
- git sparse-checkout set --no-cone "*.json" && git checkout
- git pull origin main --ff-only
- unset HF_REPO_LOCAL ; HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
- if [ ! -d "${HF_REPO_LOCAL}" ] || [ $(du -s "${HF_REPO_LOCAL}" | cut -f1) -le 100 ]; then
-   echo -e "\n[X] FATAL: Failed to clone HF Repo\n"
-  exit 1 
+#Get HF Repo Remotes
+ unset AM_REMOTES ; readarray -t "AM_REMOTES" < <(git ls-remote --heads "https://huggingface.co/datasets/pkgforge/AMcache" | sed -E 's|^[0-9a-f]+[[:space:]]+refs/heads/||' | grep -i "${HOST_TRIPLET}" | sort -u | sed -E 's/^[[:space:]]+|[[:space:]]+$//g')
+ if [[ -n "${AM_REMOTES[*]}" && "${#AM_REMOTES[@]}" -gt 2 ]]; then
+   echo -e "\n[+] Total Branches: ${#AM_REMOTES[@]}\n"
+   get_remote_json()
+   {
+    local REMOTE=$1
+    echo -e "[+] Fetching ${REMOTE}"
+    pushd "$(mktemp -d)" >/dev/null 2>&1 && T_WDIR="$(realpath .)" &&\
+    git clone --branch "${REMOTE}" "https://huggingface.co/datasets/pkgforge/AMcache" \
+    --filter="blob:none" --depth="1" --no-checkout && cd "./AMcache" &&\
+    unset HF_REPO_LOCAL ; HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
+    if [[ -d "${HF_REPO_LOCAL}" ]] && [[ "$(du -s "${HF_REPO_LOCAL}" | cut -f1)" -gt 100 ]]; then
+     pushd "${HF_REPO_LOCAL}" &>/dev/null
+       git lfs install &>/dev/null ; huggingface-cli lfs-enable-largefiles "." &>/dev/null
+       git sparse-checkout set --no-cone "*.json" && git checkout
+       git pull --ff-only ; git lfs pull
+       find "${HF_REPO_LOCAL}" -type f -iname '*.json' -exec bash -c 'cp -fv "{}" "${TMPDIR}/src/$(basename $(mktemp -u)).json"' \;
+     popd &>/dev/null
+    fi
+    rm -rf "${T_WDIR}" && pushd "${TMPDIR}" &>/dev/null
+   }
+   export -f get_remote_json
+   #printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'get_remote_json "$@" 2>/dev/null' _ "{}"
+   printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "20" -I "{}" bash -c 'get_remote_json "$@" 2>/dev/null' _ "{}"
  else
-   if [[ "$(find "${HF_REPO_LOCAL}" -type f -iregex '.*\.json$' -print | sort -u | wc -l | tr -d '[:space:]')" -le 200 ]]; then
-     echo -e "\n[X] FATAL: Failed to Get ALL JSON\n"
-    exit 1 
-   fi
+   echo -e "\n[X] FATAL: Failed to Fetch needed Branches\n"
+  exit 1
  fi
-popd >/dev/null 2>&1
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
 ##Merge
- find "${HF_REPO_LOCAL}" -type f -iregex '.*\.json$' -exec bash -c 'jq empty "{}" 2>/dev/null && cat "{}"' \; | \
+ find "${TMPDIR}/src" -type f -iregex '.*\.json$' -exec bash -c 'jq empty "{}" 2>/dev/null && cat "{}"' \; | \
    jq --arg host "${HOST_TRIPLET}" 'select(.host | ascii_downcase == ($host | ascii_downcase))' | \
    jq -s 'sort_by(.pkg) | unique_by(.pkg_id)' > "${TMPDIR}/AM.json.tmp"
 #sanity check urls

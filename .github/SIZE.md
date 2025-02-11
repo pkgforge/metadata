@@ -16,7 +16,7 @@
  416K   │ │ ├── FLATPAK_APPS_INFO.txt
  292K   │ │ ├── PPKG.json
  244K   │ │ ├── FLATPAK_POPULAR.json
- 232K   │ │ ├── FLATPAK_TRENDING.json
+ 228K   │ │ ├── FLATPAK_TRENDING.json
  120K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
@@ -87,12 +87,12 @@
   10M   │ │ ├─┬ data
  4.8M   │ │ │ ├── x86_64-Linux.json
  4.1M   │ │ │ ├── x86_64-Linux.db
- 572K   │ │ │ ├── x86_64-Linux.db.cba
- 276K   │ │ │ ├── x86_64-Linux.json.cba
- 248K   │ │ │ ├── x86_64-Linux.db.zstd
- 244K   │ │ │ ├── x86_64-Linux.db.xz
- 220K   │ │ │ ├── x86_64-Linux.json.zstd
- 216K   │ │ │ ├── x86_64-Linux.json.xz
+ 576K   │ │ │ ├── x86_64-Linux.db.cba
+ 280K   │ │ │ ├── x86_64-Linux.json.cba
+ 252K   │ │ │ ├── x86_64-Linux.db.zstd
+ 248K   │ │ │ ├── x86_64-Linux.db.xz
+ 224K   │ │ │ ├── x86_64-Linux.json.zstd
+ 220K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum

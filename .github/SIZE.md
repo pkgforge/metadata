@@ -1,5 +1,5 @@
 ```mathematica
- 292M └─┬ main
+ 290M └─┬ main
  170M   ├─┬ misc
  170M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -82,7 +82,7 @@
   32K   │   ├── gen_meta_x86_64-Linux.sh
   32K   │   ├── gen_meta_aarch64-Linux.sh
  8.0K   │   └── sync_hf_mirror.sh
-  24M   ├─┬ external
+  22M   ├─┬ external
   10M   │ ├─┬ am
   10M   │ │ ├─┬ data
  4.9M   │ │ │ ├── x86_64-Linux.json
@@ -102,10 +102,9 @@
  4.0K   │ │ │ └── TOTAL.json
   16K   │ │ └─┬ scripts
   12K   │ │   └── gen_meta.sh
- 9.4M   │ ├─┬ appimagehub
- 9.4M   │ │ ├─┬ data
+ 7.5M   │ ├─┬ appimagehub
+ 7.5M   │ │ ├─┬ data
  1.9M   │ │ │ ├── x86_64-Linux.json
- 1.9M   │ │ │ ├── aarch64-Linux.json
  1.7M   │ │ │ ├── x86_64-Linux.db
  1.7M   │ │ │ ├── aarch64-Linux.db
  260K   │ │ │ ├── x86_64-Linux.json.cba

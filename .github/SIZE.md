@@ -11,7 +11,7 @@
  5.0M   │ │ ├── ALPINE_GIT.json
  2.7M   │ │ ├── BREW_FORMULA.json
  1.5M   │ │ ├── BREW_CASK.json
-1000K   │ │ ├── PPKG_RAW.json
+1008K   │ │ ├── PPKG_RAW.json
  448K   │ │ ├── FLATPAK_APPS_INFO.json
  416K   │ │ ├── FLATPAK_APPS_INFO.txt
  292K   │ │ ├── PPKG.json

@@ -18,6 +18,16 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - source: "appimagehub"
+            script: "${GITHUB_WORKSPACE}/main/external/appimagehub/scripts/gen_meta.sh"
+            host: "aarch64-Linux"
+            runner: "ubuntu-24.04-arm"
+
+          - source: "appimagehub"
+            script: "${GITHUB_WORKSPACE}/main/external/appimagehub/scripts/gen_meta.sh"
+            host: "x86_64-Linux"
+            runner: "ubuntu-latest"
+                      
           - source: "appimage.github.io"
             script: "${GITHUB_WORKSPACE}/main/external/appimage.github.io/scripts/gen_meta.sh"
             host: "aarch64-Linux"

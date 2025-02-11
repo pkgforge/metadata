@@ -340,7 +340,7 @@ popd >/dev/null 2>&1
 
 #-------------------------------------------------------#
 ##Copy to ${SYSTMP}
-jq -s add "${TMPDIR}/BINARIES.json" "${TMPDIR}/PACKAGES.json" | jq 'sort_by(.pkg)' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' |\
+jq -s add "${TMPDIR}/BINARIES.json" "${TMPDIR}/PACKAGES.json" | jq 'sort_by(.pkg)' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq 'if type == "array" then . else [.] end' |\
   jq 'map(select(
      .pkg != null and .pkg != "" and
      .pkg_id != null and .pkg_id != "" and

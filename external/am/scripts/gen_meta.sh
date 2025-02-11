@@ -37,7 +37,7 @@ popd >/dev/null 2>&1
    jq -s 'sort_by(.pkg) | unique_by(.pkg_id)' > "${TMPDIR}/AM.json.tmp"
 #sanity check urls
  sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/AM.json.tmp"
- cat "${TMPDIR}/AM.json.tmp" | jq 'walk(if type == "boolean" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' |\
+ cat "${TMPDIR}/AM.json.tmp" | jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' |\
  jq 'map(select(
     .pkg != null and .pkg != "" and
     .pkg_id != null and .pkg_id != "" and

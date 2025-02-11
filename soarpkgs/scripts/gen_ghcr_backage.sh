@@ -28,7 +28,7 @@ curl -qfsSL "https://raw.githubusercontent.com/pkgforge-dev/backage/refs/heads/i
   download_count_month: (.downloads_month // ""),
   download_count_week: (.downloads_week // ""),
   download_count_day: (.downloads_day // "")
- }' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' | jq 'unique | sort_by(.ghcr_pkg)' > "${TMPDIR}/BACKAGE.json.tmp"
+ }' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "" and .value != [] and .value != {})) else . end)' | jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' | jq 'unique | sort_by(.ghcr_pkg)' > "${TMPDIR}/BACKAGE.json.tmp"
 ##Sanity Check
 if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/BACKAGE.json.tmp" | grep -iv 'null' | wc -l)" -le 3000 ]]; then
    echo -e "\n[-] FATAL: Failed to Generate Backage MetaData\n"

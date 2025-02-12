@@ -1,5 +1,5 @@
 ```mathematica
- 290M └─┬ main
+ 292M └─┬ main
  171M   ├─┬ misc
  170M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -82,17 +82,17 @@
   32K   │   ├── gen_meta_x86_64-Linux.sh
   32K   │   ├── gen_meta_aarch64-Linux.sh
  8.0K   │   └── sync_hf_mirror.sh
-  22M   ├─┬ external
-  10M   │ ├─┬ am
-  10M   │ │ ├─┬ data
- 4.9M   │ │ │ ├── x86_64-Linux.json
- 4.1M   │ │ │ ├── x86_64-Linux.db
- 588K   │ │ │ ├── x86_64-Linux.db.cba
- 288K   │ │ │ ├── x86_64-Linux.json.cba
- 260K   │ │ │ ├── x86_64-Linux.db.zstd
- 256K   │ │ │ ├── x86_64-Linux.db.xz
- 232K   │ │ │ ├── x86_64-Linux.json.zstd
- 224K   │ │ │ ├── x86_64-Linux.json.xz
+  24M   ├─┬ external
+  12M   │ ├─┬ am
+  12M   │ │ ├─┬ data
+ 5.7M   │ │ │ ├── x86_64-Linux.json
+ 4.8M   │ │ │ ├── x86_64-Linux.db
+ 688K   │ │ │ ├── x86_64-Linux.db.cba
+ 384K   │ │ │ ├── x86_64-Linux.json.cba
+ 340K   │ │ │ ├── x86_64-Linux.db.zstd
+ 336K   │ │ │ ├── x86_64-Linux.db.xz
+ 304K   │ │ │ ├── x86_64-Linux.json.zstd
+ 300K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum
@@ -125,10 +125,10 @@
  4.0K   │ │ │ ├── x86_64-Linux.db.bsum
  4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
- 4.0K   │ │ │ ├── aarch64-Linux.json.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
- 4.0K   │ │ │ └── aarch64-Linux.db.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.bsum
+   0B   │ │ │ └── aarch64-Linux.json.bsum
   28K   │ │ └─┬ scripts
   24K   │ │   └── gen_meta.sh
  4.5M   │ └─┬ appimage.github.io
@@ -138,11 +138,11 @@
  212K   │   │ ├── x86_64-Linux.db.cba
  188K   │   │ ├── x86_64-Linux.json.cba
  168K   │   │ ├── x86_64-Linux.db.zstd
- 164K   │   │ ├── x86_64-Linux.db.xz
+ 160K   │   │ ├── x86_64-Linux.db.xz
  156K   │   │ ├── aarch64-Linux.json
  148K   │   │ ├── x86_64-Linux.json.zstd
  144K   │   │ ├── x86_64-Linux.json.xz
- 132K   │   │ ├── aarch64-Linux.db
+ 140K   │   │ ├── aarch64-Linux.db
   20K   │   │ ├── aarch64-Linux.json.zstd
   20K   │   │ ├── aarch64-Linux.json.xz
   20K   │   │ ├── aarch64-Linux.db.zstd
@@ -265,24 +265,24 @@
   32K   │   ├── gen_meta_x86_64-Linux.sh
   32K   │   ├── gen_meta_aarch64-Linux.sh
  8.0K   │   └── sync_hf_mirror.sh
- 296K   ├─┬ web
- 152K   │ ├─┬ assets
-  40K   │ │ ├── icon_package_multi.png
-  36K   │ │ ├── icon_server.png
-  28K   │ │ ├── icon_database.png
-  24K   │ │ ├── icon_config_multi.png
-  20K   │ │ └── icon_json.png
- 140K   │ └─┬ cloudflare
-  80K   │   ├─┬ src
-  40K   │   │ ├── config.ts
-  16K   │   │ ├── static.ts
-  12K   │   │ ├── render.ts
- 4.0K   │   │ ├── types.ts
- 4.0K   │   │ └── index.ts
-  36K   │   ├── package-lock.json
-  12K   │   ├── tsconfig.json
- 4.0K   │   ├── wrangler.toml
- 4.0K   │   └── package.json
+ 316K   ├─┬ web
+ 160K   │ ├─┬ cloudflare
+  84K   │ │ ├─┬ src
+  44K   │ │ │ ├── config.ts
+  16K   │ │ │ ├── static.ts
+  12K   │ │ │ ├── render.ts
+ 4.0K   │ │ │ ├── types.ts
+ 4.0K   │ │ │ └── index.ts
+  52K   │ │ ├── package-lock.json
+  12K   │ │ ├── tsconfig.json
+ 4.0K   │ │ ├── wrangler.toml
+ 4.0K   │ │ └── package.json
+ 152K   │ └─┬ assets
+  40K   │   ├── icon_package_multi.png
+  36K   │   ├── icon_server.png
+  28K   │   ├── icon_database.png
+  24K   │   ├── icon_config_multi.png
+  20K   │   └── icon_json.png
   16K   ├─┬ workers
   12K   │ └─┬ omni-redirector-pkgforge-dev
  8.0K   │   └── worker.js

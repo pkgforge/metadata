@@ -15,21 +15,53 @@ mkdir -pv "${TMPDIR}/src" "${TMPDIR}/tmp" "${TMPDIR}/data"
 rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
 #Get HF Repo Remotes
  unset AM_REMOTES ; readarray -t "AM_REMOTES" < <(git ls-remote --heads "https://huggingface.co/datasets/pkgforge/AMcache" | sed -E 's|^[0-9a-f]+[[:space:]]+refs/heads/||' | grep -i "${HOST_TRIPLET}" | sort -u | sed -E 's/^[[:space:]]+|[[:space:]]+$//g')
- if [[ -n "${AM_REMOTES[*]}" && "${#AM_REMOTES[@]}" -gt 2 ]]; then
+ if [[ -n "${AM_REMOTES[*]}" && "${#AM_REMOTES[@]}" -gt 200 ]]; then
    echo -e "\n[+] Total Branches: ${#AM_REMOTES[@]}\n"
+   fix_gitattributes()
+    {
+     if [[ -n "${REMOTE+x}" ]] && [[ -n "${REMOTE##*[[:space:]]}" ]]; then
+      pushd "$(mktemp -d)" &>/dev/null && \
+       git clone --branch "${REMOTE}" --depth="1" --filter="blob:none" --no-checkout \
+        "https://huggingface.co/datasets/pkgforge/AMcache" "./TEMPREPO" &>/dev/null &&\
+         cd "./TEMPREPO" && git checkout "${REMOTE}"
+       if [[ "$(git rev-parse --abbrev-ref HEAD | head -n 1 | tr -d '[:space:]')" == "${REMOTE}" ]]; then
+        git rm --cached --ignore-unmatch '.gitattributes'
+        git sparse-checkout init --cone
+        git sparse-checkout set ".gitattributes"
+        git lfs uninstall 2>/dev/null
+        git lfs untrack '.gitattributes' 2>/dev/null
+        #git checkout HEAD^ -- '.gitattributes'
+        #git restore --staged --worktree "."
+        echo '*/* filter=lfs diff=lfs merge=lfs -text' > "./.gitattributes"
+        echo '* filter=lfs diff=lfs merge=lfs -text' >> "./.gitattributes"
+        sed '/^[[:space:]]*[^*]/d' -i "./.gitattributes"
+        git add --all --renormalize --verbose
+        git commit -m "Fix (GitAttributes)"
+        git push origin "${REMOTE}"
+       fi
+      [[ -d "$(realpath .)/TEMPREPO" ]] && rm -rf "$(realpath .)" &>/dev/null && popd &>/dev/null
+     fi
+    }
+   export -f fix_gitattributes
    get_remote_json()
    {
     local REMOTE=$1
+    echo -e "[+] Fixing ${REMOTE}" && fix_gitattributes &>/dev/null
     echo -e "[+] Fetching ${REMOTE}"
     pushd "$(mktemp -d)" >/dev/null 2>&1 && T_WDIR="$(realpath .)" &&\
     git clone --branch "${REMOTE}" "https://huggingface.co/datasets/pkgforge/AMcache" \
-    --filter="blob:none" --depth="1" --no-checkout && cd "./AMcache" &&\
-    unset HF_REPO_LOCAL ; HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
+     --filter="blob:none" --depth="1" --no-checkout --quiet &>/dev/null && cd "./AMcache" &&\
+     HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
     if [[ -d "${HF_REPO_LOCAL}" ]] && [[ "$(du -s "${HF_REPO_LOCAL}" | cut -f1)" -gt 100 ]]; then
      pushd "${HF_REPO_LOCAL}" &>/dev/null
        git lfs install &>/dev/null ; huggingface-cli lfs-enable-largefiles "." &>/dev/null
-       git sparse-checkout set --no-cone "*.json" && git checkout
-       git pull --ff-only ; git lfs pull
+       git config "lfs.fetchinclude" "*.json"
+       git sparse-checkout set --no-cone "*.json" && git checkout &>/dev/null
+       git fetch origin "${REMOTE}" &>/dev/null ; git pull origin "${REMOTE}" --ff-only &>/dev/null
+       git lfs ls-files --size -I "*.json"
+       git lfs fetch origin "origin/${REMOTE}" -I "*.json" &>/dev/null
+       git lfs pull -I "*.json" &>/dev/null
+       GIT_LFS_SKIP_SMUDGE="1" git lfs migrate export --include-ref="${REMOTE}" -I "*.json" --verbose --yes &>/dev/null
        find "${HF_REPO_LOCAL}" -type f -iname '*.json' -exec bash -c 'cp -fv "{}" "${TMPDIR}/src/$(basename $(mktemp -u)).json"' \;
      popd &>/dev/null
     fi
@@ -37,7 +69,7 @@ rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
    }
    export -f get_remote_json
    #printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'get_remote_json "$@" 2>/dev/null' _ "{}"
-   printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "20" -I "{}" bash -c 'get_remote_json "$@" 2>/dev/null' _ "{}"
+   printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "10" -I "{}" bash -c 'get_remote_json "$@"' _ "{}"
  else
    echo -e "\n[X] FATAL: Failed to Fetch needed Branches\n"
   exit 1
@@ -84,7 +116,7 @@ if command -v rclone &> /dev/null &&\
  #Copy
   mkdir -pv "${GITHUB_WORKSPACE}/main/external/am/data"
   cd "${GITHUB_WORKSPACE}/main/external/am/data"
-  jq -s 'map(.[]) | group_by(.pkg_id) | map(add)' "${SYSTMP}/AM.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" | jq 'unique_by(.download_url) | sort_by(.pkg)' | jq . > "${SYSTMP}/merged.json"
+  jq -s 'map(.[]) | group_by(.pkg_id) | map(if length > 1 then .[1] + .[0] else .[0] end) | unique_by(.download_url) | sort_by(.pkg)' "${SYSTMP}/AM.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" | jq . > "${SYSTMP}/merged.json"
   if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 50 ]]; then
    cp -fv "${SYSTMP}/merged.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json"
   fi

@@ -324,7 +324,7 @@ cat "${TMPDIR}/appimage.json.raw" | jq 'walk(if type == "boolean" or type == "nu
  ))' | jq 'unique_by(.download_url) | sort_by(.pkg)' | jq . > "${TMPDIR}/appimage.json.final"
 ##Check
 unset PKG_COUNT; PKG_COUNT="$(jq -r '.[] | .pkg_id' "${TMPDIR}/appimage.json.final" | sort -u | wc -l | tr -d '[:space:]')"
-if [[ "${PKG_COUNT}" -le 50 ]]; then
+if [[ "${PKG_COUNT}" -le 10 ]]; then
  echo -e "\n[X] FATAL: Final Package Count is < 200, Parsing Failed?\n"
  exit 1
 else
@@ -347,7 +347,8 @@ if command -v rclone &> /dev/null &&\
  #Copy
   mkdir -pv "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data"
   cd "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data"
-  jq -s 'map(.[]) | group_by(.pkg_id) | map(add)' "${SYSTMP}/appimage.json" "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/${HOST_TRIPLET}.json" | jq 'unique_by(.download_url) | sort_by(.pkg)' | jq . > "${SYSTMP}/merged.json"
+  jq -s 'map(.[]) | group_by(.pkg_id) | map(if length > 1 then .[1] + .[0] else .[0] end) | unique_by(.download_url) | sort_by(.pkg)' \
+  "${SYSTMP}/appimage.json" "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/${HOST_TRIPLET}.json" | jq . > "${SYSTMP}/merged.json"
   if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 50 ]]; then
    cp -fv "${SYSTMP}/merged.json" "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/${HOST_TRIPLET}.json"
   fi

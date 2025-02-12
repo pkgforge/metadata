@@ -220,7 +220,7 @@
  588K   │ │ ├── x86_64-Linux.db
  568K   │ │ ├── x86_64-Linux.json
  176K   │ │ ├── aarch64-Linux.sdb
- 140K   │ │ ├── aarch64-Linux.db
+ 144K   │ │ ├── aarch64-Linux.db
  136K   │ │ ├── aarch64-Linux.json
   76K   │ │ ├── x86_64-Linux.sdb.cba
   64K   │ │ ├── x86_64-Linux.json.cba

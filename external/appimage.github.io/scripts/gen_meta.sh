@@ -329,7 +329,7 @@ if [[ "${PKG_COUNT}" -le 200 ]]; then
  echo "[-] Count: ${PKG_COUNT}"
  exit 1
 else
- echo -e "\n[+] Packages (pkgcache): ${PKG_COUNT}"
+ echo -e "\n[+] Packages: ${PKG_COUNT}"
  mv -fv "${TMPDIR}/appimage.json.final" "${SYSTMP}/appimage.json"
 fi
 #-------------------------------------------------------#

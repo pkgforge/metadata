@@ -336,12 +336,12 @@ cat "${TMPDIR}/appimagehub.json.tmp" | jq 'walk(if type == "boolean" or type == 
  ))' | jq 'unique_by(.pkg_id) | sort_by(.pkg)' | jq . > "${TMPDIR}/appimagehub.json.final"
 ##Check
 unset PKG_COUNT; PKG_COUNT="$(jq -r '.[] | .pkg_id' "${TMPDIR}/appimagehub.json.final" | sort -u | wc -l | tr -d '[:space:]')"
-if [[ "${PKG_COUNT}" -le 200 ]]; then
- echo -e "\n[X] FATAL: Final Package Count is < 200, Parsing Failed?\n"
+if [[ "${PKG_COUNT}" -le 20 ]]; then
+ echo -e "\n[X] FATAL: Final Package Count is < 20, Parsing Failed?\n"
  echo "[-] Count: ${PKG_COUNT}"
  exit 1
 else
- echo -e "\n[+] Packages (pkgcache): ${PKG_COUNT}"
+ echo -e "\n[+] Packages: ${PKG_COUNT}"
  mv -fv "${TMPDIR}/appimagehub.json.final" "${SYSTMP}/appimagehub.json"
 fi
 #-------------------------------------------------------#

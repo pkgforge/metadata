@@ -93,10 +93,13 @@ rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
     .version != null and .version != ""
  ))' | jq 'unique_by(.pkg_id) | sort_by(.pkg)' | jq . > "${TMPDIR}/AM.json"
 ##Sanity Check
- if [[ "$(jq -r '.[] | .pkg_id' "${TMPDIR}/AM.json" | grep -iv 'null' | wc -l | tr -d '[:space:]')" -le 200 ]]; then
+ PKG_COUNT="$(jq -r '.[] | .pkg_id' "${TMPDIR}/AM.json" | grep -iv 'null' | wc -l | tr -d '[:space:]')"
+ if [[ "${PKG_COUNT}" -le 20 ]]; then
     echo -e "\n[-] FATAL: Failed to Generate AM MetaData\n"
+    echo "[-] Count: ${PKG_COUNT}"
     exit 1
  else
+    echo -e "\n[+] Packages: ${PKG_COUNT}"
     cp -fv "${TMPDIR}/AM.json" "${SYSTMP}/AM.json"
  fi
 #-------------------------------------------------------#

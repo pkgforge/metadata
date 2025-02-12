@@ -27,8 +27,8 @@
 ---
 
 #### Counts
-> - <img src="https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/TOTAL_INSTALLABLE.json&query=$[4].total&label=Total (Prebuilt)&labelColor=orange&style=flat" alt="Total" />
-> - <img src="https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/TOTAL_ALL.json&query=$[5].total&label=Total (Prebuilt|SBUILD)&labelColor=orange&style=flat" alt="Total" />
+> - <img src="https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/TOTAL_INSTALLABLE.json&query=$[5].total&label=Total (Prebuilt)&labelColor=orange&style=flat" alt="Total" />
+> - <img src="https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/TOTAL_ALL.json&query=$[6].total&label=Total (Prebuilt|SBUILD)&labelColor=orange&style=flat" alt="Total" />
 > - [Official Repos](https://github.com/pkgforge/soarpkgs)
 > > - <a href="https://pkgs.pkgforge.dev/?repo=bincache_arm64"><img src="https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/bincache/data/TOTAL.json&query=$[1].total&label=Bincache (aarch64-Linux)&labelColor=orange&style=flat&link=https://pkgs.pkgforge.dev/?repo=bincache_arm64" alt="Binaries" /></a>
 > > - <a href="https://pkgs.pkgforge.dev"><img src="https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/bincache/data/TOTAL.json&query=$[0].total&label=Bincache (x86_64-Linux)&labelColor=orange&style=flat&link=https://pkgs.pkgforge.dev" alt="Binaries" /></a> 

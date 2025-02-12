@@ -88,7 +88,7 @@ generate_meta()
      jq --arg P_PAGE "${PKG_PAGE}" '.[] | select(.detailpage == $P_PAGE)' "${TMPDIR}/data/appimagehub.json.tmp" | jq . > "${TMPDIR}/tmp/${PKG_ID_BASE}.json"
      if [[ ! -s "${TMPDIR}/tmp/${PKG_ID_BASE}.json" || $(stat -c%s "${TMPDIR}/tmp/${PKG_ID_BASE}.json") -le 10 ]]; then
        echo -e "[-] FATAL: Failed to fetch JSON <== [${PKG_NAME}] (${PKG_ID_BASE})"
-       return
+       return 1
      fi
     #Fetch Needed vars
      #Name
@@ -110,7 +110,7 @@ generate_meta()
          echo -e "[+] ID ==> ${PKG_ID_AIH} [${PKG_NAME}] (${PKG_ID_BASE})"
        else
          echo -e "[-] FATAL: Failed to fetch ID <== [${PKG_NAME}] (${PKG_ID_BASE})"
-         return
+         return 1
        fi
      #Checksum
        PKG_MDSUM_TMP="$(jq -r '[ .. | objects | .downloadmd5sum?, .downloadmd5sum1?, .downloadmd5sum2?, .downloadmd5sum3? ] | flatten | map(select(. != null and . != "")) | first // ""' "${TMPDIR}/tmp/${PKG_ID_BASE}.json" | grep -v 'null' | tr -d '[:space:]')"
@@ -124,7 +124,7 @@ generate_meta()
        PKG_DL_URL_TMP="$(jq -r '[ .. | objects | .downloadlink?, .downloadlink1?, .downloadlink2?, .downloadlink3? ] | flatten | map(select(. != null and . != "")) | first // ""' "${TMPDIR}/tmp/${PKG_ID_BASE}.json" | tr -d '[:space:]')"
        if ! echo "${PKG_DL_URL_TMP}" | grep -qiE '^https?://'; then
          echo -e "[-] FATAL: Failed to fetch Download URL <== [${PKG_NAME}] (${PKG_ID_BASE})"
-         return
+         return 1
        else
          if [[ "$(uname -m | tr -d '[:space:]')" == "aarch64" ]]; then
            if echo "${PKG_DL_URL_TMP}" | grep -qiE "aarch|arm64"; then
@@ -137,6 +137,7 @@ generate_meta()
          fi
          if [ -z "${PKG_DOWNLOAD_URL+x}" ] || [ -z "${PKG_DOWNLOAD_URL##*[[:space:]]}" ]; then
            echo -e "[-] FATAL: No Download URL found for "${HOST_TRIPLET}" <== [${PKG_NAME}] (${PKG_ID_BASE})"
+           return 1
          fi
          #PKG_DL_URL="${PKG_DOWNLOAD_URL}"
          PKG_DL_URL="https://dl.aih.pkgforge.dev/${PKG_ID_AIH}"
@@ -198,12 +199,12 @@ generate_meta()
        if [ -z "${PKG_VERSION_TMP+x}" ] || [ -z "${PKG_VERSION_TMP##*[[:space:]]}" ]; then
          T_ID="$(jq -r '.id // ""' "${TMPDIR}/tmp/${PKG_ID_BASE}.json" | tr -d -c '0-9')"
          if [[ "${#T_ID}" -gt 2 ]]; then
-           PKG_VERSION="${T_ID}-latest+${PKG_MDSUM:0:6}"
+           PKG_VERSION="${T_ID}-latest+${PKG_MDSUM:0:6}aih"
          else
-           PKG_VERSION="latest+${PKG_MDSUM:0:6}"
+           PKG_VERSION="latest+${PKG_MDSUM:0:6}aih"
          fi
        else
-         PKG_VERSION="${PKG_VERSION_TMP}+${PKG_MDSUM:0:6}"
+         PKG_VERSION="${PKG_VERSION_TMP}+${PKG_MDSUM:0:6}aih"
        fi
        echo -e "[+] Version ==> ${PKG_VERSION} [${PKG_NAME}] (${PKG_ID_BASE})"
   #Generate Json

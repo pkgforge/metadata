@@ -6,11 +6,11 @@ concurrency:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */1 * * *" #every 07 hrs 
+    - cron: "0 */5 * * *" #every 07 hrs 
 jobs:
   generate:
     runs-on: "${{ matrix.runner }}"
-    timeout-minutes: 90
+    timeout-minutes: 120
     permissions:
       contents: write
       statuses: read

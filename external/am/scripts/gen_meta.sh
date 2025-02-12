@@ -46,12 +46,12 @@ rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
    get_remote_json()
    {
     local REMOTE=$1
-    echo -e "[+] Fixing ${REMOTE} $(fix_gitattributes &>/dev/null)"
+    #echo -e "[+] Fixing ${REMOTE} $(fix_gitattributes &>/dev/null)"
     echo -e "[+] Fetching ${REMOTE}"
     pushd "$(mktemp -d)" >/dev/null 2>&1 && T_WDIR="$(realpath .)" &&\
     git clone --branch "${REMOTE}" "https://huggingface.co/datasets/pkgforge/AMcache" \
-     --filter="blob:none" --depth="1" --no-checkout --quiet &>/dev/null && cd "./AMcache" &&\
-     HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
+     --filter="blob:none" --depth="1" --no-checkout --quiet "./TEMPREPO" &>/dev/null &&\
+     cd "./TEMPREPO" && HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
     if [[ -d "${HF_REPO_LOCAL}" ]] && [[ "$(du -s "${HF_REPO_LOCAL}" | cut -f1)" -gt 100 ]]; then
      pushd "${HF_REPO_LOCAL}" &>/dev/null
        git lfs install &>/dev/null ; huggingface-cli lfs-enable-largefiles "." &>/dev/null
@@ -68,8 +68,8 @@ rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
     rm -rf "${T_WDIR}" && pushd "${TMPDIR}" &>/dev/null
    }
    export -f get_remote_json
-   #printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'get_remote_json "$@" 2>/dev/null' _ "{}"
-   printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "10" -I "{}" bash -c 'get_remote_json "$@"' _ "{}"
+   printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'get_remote_json "$@" 2>/dev/null' _ "{}"
+   #printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "10" -I "{}" bash -c 'get_remote_json "$@"' _ "{}"
  else
    echo -e "\n[X] FATAL: Failed to Fetch needed Branches\n"
   exit 1
@@ -103,7 +103,6 @@ rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
     cp -fv "${TMPDIR}/AM.json" "${SYSTMP}/AM.json"
  fi
 #-------------------------------------------------------#
-
 
 #-------------------------------------------------------#
 ##Copy to "${GITHUB_WORKSPACE}/main/external/am/data"

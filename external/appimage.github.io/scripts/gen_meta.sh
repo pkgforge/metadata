@@ -324,8 +324,9 @@ cat "${TMPDIR}/appimage.json.raw" | jq 'walk(if type == "boolean" or type == "nu
  ))' | jq 'unique_by(.download_url) | sort_by(.pkg)' | jq . > "${TMPDIR}/appimage.json.final"
 ##Check
 unset PKG_COUNT; PKG_COUNT="$(jq -r '.[] | .pkg_id' "${TMPDIR}/appimage.json.final" | sort -u | wc -l | tr -d '[:space:]')"
-if [[ "${PKG_COUNT}" -le 10 ]]; then
+if [[ "${PKG_COUNT}" -le 200 ]]; then
  echo -e "\n[X] FATAL: Final Package Count is < 200, Parsing Failed?\n"
+ echo "[-] Count: ${PKG_COUNT}"
  exit 1
 else
  echo -e "\n[+] Packages (pkgcache): ${PKG_COUNT}"

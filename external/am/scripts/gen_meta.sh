@@ -46,7 +46,7 @@ rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
    get_remote_json()
    {
     local REMOTE=$1
-    echo -e "[+] Fixing ${REMOTE}" && fix_gitattributes &>/dev/null
+    echo -e "[+] Fixing ${REMOTE} $(fix_gitattributes &>/dev/null)"
     echo -e "[+] Fetching ${REMOTE}"
     pushd "$(mktemp -d)" >/dev/null 2>&1 && T_WDIR="$(realpath .)" &&\
     git clone --branch "${REMOTE}" "https://huggingface.co/datasets/pkgforge/AMcache" \

@@ -155,7 +155,7 @@ jobs:
            {source: "pkgcache", total: '"$(cat "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
            {source: "ivan-hc-am", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
            {source: "appimage-github-io", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
-           {source: "appimagehub", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimagehub/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "appimagehub", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimagehub/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/TOTAL_INSTALLABLE.json"
           #Installable + Buildable
           jq -n '[

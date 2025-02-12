@@ -122,17 +122,20 @@ jobs:
            {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/bincache/aarch64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json"
           ##Total (External/AM)
-          #AM
           jq -n '[
            {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/am/x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
            {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/am/aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json"
           ##Total (External/appimage.github.io)
-          #AM
           jq -n '[
            {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/appimage.github.io/x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
            {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/appimage.github.io/aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json"
+          ##Total (External/appimagehub)
+          jq -n '[
+           {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/appimagehub/x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/appimagehub/aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/appimagehub/data/TOTAL.json"
           ##Total (pkgcache)
           jq -n '[
            {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},
@@ -151,7 +154,8 @@ jobs:
            {source: "bincache", total: '"$(cat "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
            {source: "pkgcache", total: '"$(cat "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
            {source: "ivan-hc-am", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
-           {source: "appimage-github-io", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'} 
+           {source: "appimage-github-io", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "appimagehub", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimagehub/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/TOTAL_INSTALLABLE.json"
           #Installable + Buildable
           jq -n '[
@@ -159,7 +163,8 @@ jobs:
            {source: "pkgcache", total: '"$(cat "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
            {source: "soarpkgs", total: '"$(cat "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
            {source: "ivan-hc-am", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
-           {source: "appimage-github-io", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'} 
+           {source: "appimage-github-io", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "appimagehub", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimagehub/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'} 
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/TOTAL_ALL.json"
           ##Gif
           cd "${GITHUB_WORKSPACE}/main"

@@ -6370,7 +6370,7 @@
     "tag": [
       "tree"
     ],
-    "version": "HEAD-374792e-250211T125125"
+    "version": "HEAD-4003692-250212T170314"
   },
   {
     "_disabled": "false",
@@ -16727,7 +16727,7 @@
       "ci-cd",
       "container"
     ],
-    "version": "v0.15.3"
+    "version": "v0.15.4"
   },
   {
     "_disabled": "false",
@@ -21685,7 +21685,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-1812c30-250212T164221"
+    "version": "HEAD-379c39d-250212T230640"
   },
   {
     "_disabled": "false",
@@ -23351,7 +23351,7 @@
       "binary",
       "hexdump"
     ],
-    "version": "HEAD-94b1b18-250211T201105"
+    "version": "HEAD-2578519-250212T174940"
   },
   {
     "_disabled": "false",
@@ -23975,7 +23975,7 @@
     "tag": [
       "fzf"
     ],
-    "version": "v0.59.0"
+    "version": "v0.60.0"
   },
   {
     "_disabled": "false",
@@ -24833,7 +24833,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-453f688-250212T120754"
+    "version": "HEAD-7c62e06-250212T180307"
   },
   {
     "_disabled": "false",
@@ -26983,7 +26983,7 @@
     "tag": [
       "markdown"
     ],
-    "version": "HEAD-f689c90-250211T105334"
+    "version": "HEAD-546b628-250212T111144"
   },
   {
     "_disabled": "false",
@@ -33225,7 +33225,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-a1fe2dc-250212T012553"
+    "version": "HEAD-9ca6d17-250212T170659"
   },
   {
     "_disabled": "false",
@@ -37918,7 +37918,7 @@
       "s3",
       "storage"
     ],
-    "version": "HEAD-859c598-250211T153745"
+    "version": "HEAD-e97f432-250212T083632"
   },
   {
     "_disabled": "false",
@@ -38218,7 +38218,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-ee1416e-250211T104921"
+    "version": "HEAD-23ed032-250212T084104"
   },
   {
     "_disabled": "false",
@@ -41637,7 +41637,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-3eae657-250212T064841"
+    "version": "HEAD-2e1b6ac-250212T165951"
   },
   {
     "_disabled": "false",
@@ -44026,7 +44026,7 @@
       "mamba",
       "package-manager"
     ],
-    "version": "v0.41.2"
+    "version": "v0.41.3"
   },
   {
     "_disabled": "false",
@@ -44944,6 +44944,7 @@
     "pkg_id": "ppkg.proot",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-proot/proot/proot",
+    "bincache": "ghcr.io/pkgforge/bincache/proot/official/proot",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/proot/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -45606,6 +45607,82 @@
     "_disabled": "false",
     "pkg": "qbittorrent",
     "pkg_family": "qbittorrent",
+    "pkg_id": "gitlab.com.qbittorrent.qbittorrent.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-beta/qbittorrent/qbittorrent",
+    "app_id": "org.qbittorrent.qBittorrent",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/qbittorrent/appimage.official.beta.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A P2P (peer-to-peer) Bittorrent client (Beta)",
+    "distro_pkg": {
+      "alpine": [
+        "qbittorrent"
+      ],
+      "archlinux": {
+        "aur": [
+          "qbittorrent-git",
+          "qbittorrent-qt5"
+        ],
+        "extra": [
+          "qbittorrent"
+        ]
+      },
+      "debian": [
+        "qbittorrent"
+      ],
+      "gnuguix": [
+        "qbittorrent"
+      ],
+      "homebrew": [
+        "qbittorrent"
+      ],
+      "nixpkgs": [
+        "qbittorrent",
+        "qbittorrent-nox",
+        "qbittorrent-qt5"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/appimage.official.beta.yaml",
+    "homepage": [
+      "https://www.qbittorrent.org",
+      "https://github.com/qbittorrent/qBittorrent",
+      "https://sourceforge.net/projects/qbittorrent"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://www.qbittorrent.org/download"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/qbittorrent/appimage/official",
+    "provides": [
+      "qbittorrent"
+    ],
+    "repology": [
+      "qbittorrent"
+    ],
+    "src_url": [
+      "https://www.qbittorrent.org/download",
+      "https://www.fosshub.com/qBittorrent.html",
+      "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-appimage"
+    ],
+    "tag": [
+      "editor"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "qbittorrent",
+    "pkg_family": "qbittorrent",
     "pkg_id": "gitlab.com.qbittorrent.qbittorrent.stable",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-stable/qbittorrent/qbittorrent",
@@ -45677,83 +45754,6 @@
     "tag": [
       "torrent"
     ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "qbittorrent",
-    "pkg_family": "qbittorrent",
-    "pkg_id": "gitlab.com.qbittorrent.qbittorrent.beta",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-beta/qbittorrent/qbittorrent",
-    "app_id": "org.qbittorrent.qBittorrent",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/qbittorrent/appimage.official.beta.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A P2P (peer-to-peer) Bittorrent client (Beta)",
-    "distro_pkg": {
-      "alpine": [
-        "qbittorrent"
-      ],
-      "archlinux": {
-        "aur": [
-          "qbittorrent-git",
-          "qbittorrent-qt5"
-        ],
-        "extra": [
-          "qbittorrent"
-        ]
-      },
-      "debian": [
-        "qbittorrent"
-      ],
-      "gnuguix": [
-        "qbittorrent"
-      ],
-      "homebrew": [
-        "qbittorrent"
-      ],
-      "nixpkgs": [
-        "qbittorrent",
-        "qbittorrent-nox",
-        "qbittorrent-qt5"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/appimage.official.beta.yaml",
-    "homepage": [
-      "https://www.qbittorrent.org",
-      "https://github.com/qbittorrent/qBittorrent",
-      "https://sourceforge.net/projects/qbittorrent"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://www.qbittorrent.org/download"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/qbittorrent/appimage/official",
-    "provides": [
-      "qbittorrent"
-    ],
-    "repology": [
-      "qbittorrent"
-    ],
-    "src_url": [
-      "https://www.qbittorrent.org/download",
-      "https://www.fosshub.com/qBittorrent.html",
-      "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-appimage"
-    ],
-    "tag": [
-      "editor"
-    ],
-    "version": "5.1.0"
   },
   {
     "_disabled": "false",
@@ -46660,6 +46660,7 @@
     "pkg_id": "gitlab.com.Oglo12.rebos",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oglo12-rebos/rebos/rebos",
+    "bincache": "ghcr.io/pkgforge/bincache/rebos/official/rebos",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rebos/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -47251,7 +47252,7 @@
       "analyzer",
       "linter"
     ],
-    "version": "HEAD-1523bb7-250212T070653"
+    "version": "HEAD-6433add-250213T010449"
   },
   {
     "_disabled": "false",
@@ -47310,7 +47311,7 @@
     "tag": [
       "linter"
     ],
-    "version": "HEAD-3e3e982-250211T171003"
+    "version": "HEAD-9a54195-250212T141048"
   },
   {
     "_disabled": "false",
@@ -51121,7 +51122,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-a8dd248-250212T200944"
+    "version": "HEAD-49f23cf-250212T211401"
   },
   {
     "_disabled": "false",
@@ -51595,7 +51596,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-921868c-250211T215328"
+    "version": "HEAD-322cc01-250212T202610"
   },
   {
     "_disabled": "false",
@@ -51650,7 +51651,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-921868c-250211T215328"
+    "version": "HEAD-322cc01-250212T202610"
   },
   {
     "_disabled": "false",
@@ -51705,7 +51706,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-921868c-250211T215328"
+    "version": "HEAD-322cc01-250212T202610"
   },
   {
     "_disabled": "false",
@@ -51761,7 +51762,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-921868c-250211T215328"
+    "version": "HEAD-322cc01-250212T202610"
   },
   {
     "_disabled": "false",
@@ -51816,7 +51817,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-921868c-250211T215328"
+    "version": "HEAD-322cc01-250212T202610"
   },
   {
     "_disabled": "false",
@@ -51871,7 +51872,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-921868c-250211T215328"
+    "version": "HEAD-322cc01-250212T202610"
   },
   {
     "_disabled": "false",
@@ -51927,7 +51928,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-921868c-250211T215328"
+    "version": "HEAD-322cc01-250212T202610"
   },
   {
     "_disabled": "false",
@@ -56445,7 +56446,7 @@
       "debugger",
       "strace"
     ],
-    "version": "HEAD-e98dbcf-250112T083111"
+    "version": "HEAD-684e641-250212T235114"
   },
   {
     "_disabled": "false",
@@ -56745,7 +56746,7 @@
       "secret",
       "security"
     ],
-    "version": "v3.88.6"
+    "version": "v3.88.7"
   },
   {
     "_disabled": "false",
@@ -57078,7 +57079,7 @@
       "tun2socks",
       "tunnel"
     ],
-    "version": "HEAD-6b038c2-250212T180937"
+    "version": "HEAD-c5d9075-250212T205453"
   },
   {
     "_disabled": "false",
@@ -59644,7 +59645,7 @@
     "tag": [
       "Terminal"
     ],
-    "version": "HEAD-23789c9-250211T183520"
+    "version": "HEAD-9da362c-250212T100137"
   },
   {
     "_disabled": "false",
@@ -62396,7 +62397,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.7.7t(2025-02-11at12:46:32)"
+    "version": "Twilightbuild-1.7.7t(2025-02-12at11:40:35)"
   },
   {
     "_disabled": "false",

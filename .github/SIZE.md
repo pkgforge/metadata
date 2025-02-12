@@ -1,5 +1,5 @@
 ```mathematica
- 292M └─┬ main
+ 286M └─┬ main
  171M   ├─┬ misc
  170M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -82,26 +82,7 @@
   32K   │   ├── gen_meta_x86_64-Linux.sh
   32K   │   ├── gen_meta_aarch64-Linux.sh
  8.0K   │   └── sync_hf_mirror.sh
-  24M   ├─┬ external
-  12M   │ ├─┬ am
-  12M   │ │ ├─┬ data
- 5.7M   │ │ │ ├── x86_64-Linux.json
- 4.8M   │ │ │ ├── x86_64-Linux.db
- 688K   │ │ │ ├── x86_64-Linux.db.cba
- 384K   │ │ │ ├── x86_64-Linux.json.cba
- 340K   │ │ │ ├── x86_64-Linux.db.zstd
- 336K   │ │ │ ├── x86_64-Linux.db.xz
- 304K   │ │ │ ├── x86_64-Linux.json.zstd
- 300K   │ │ │ ├── x86_64-Linux.json.xz
- 4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
- 4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
- 4.0K   │ │ │ ├── x86_64-Linux.json.bsum
- 4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
- 4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
- 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
- 4.0K   │ │ │ └── TOTAL.json
-  16K   │ │ └─┬ scripts
-  12K   │ │   └── gen_meta.sh
+  19M   ├─┬ external
  7.5M   │ ├─┬ appimagehub
  7.5M   │ │ ├─┬ data
  1.9M   │ │ │ ├── x86_64-Linux.json
@@ -132,6 +113,24 @@
    0B   │ │ │ └── aarch64-Linux.json.bsum
   28K   │ │ └─┬ scripts
   24K   │ │   └── gen_meta.sh
+ 7.2M   │ ├─┬ am
+ 7.1M   │ │ ├─┬ data
+ 4.8M   │ │ │ ├── x86_64-Linux.db
+ 688K   │ │ │ ├── x86_64-Linux.db.cba
+ 384K   │ │ │ ├── x86_64-Linux.json.cba
+ 340K   │ │ │ ├── x86_64-Linux.db.zstd
+ 336K   │ │ │ ├── x86_64-Linux.db.xz
+ 304K   │ │ │ ├── x86_64-Linux.json.zstd
+ 300K   │ │ │ ├── x86_64-Linux.json.xz
+ 4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
+ 4.0K   │ │ │ └── TOTAL.json
+  16K   │ │ └─┬ scripts
+  12K   │ │   └── gen_meta.sh
  4.5M   │ └─┬ appimage.github.io
  4.5M   │   ├─┬ data
  1.7M   │   │ ├── x86_64-Linux.json
@@ -287,8 +286,8 @@
   16K   ├─┬ workers
   12K   │ └─┬ omni-redirector-pkgforge-dev
  8.0K   │   └── worker.js
- 8.0K   ├── README.md
+  12K   ├── README.md
+ 4.0K   ├── TOTAL_INSTALLABLE.json
  4.0K   ├── TOTAL_ALL.json
- 4.0K   ├── LICENSE
-   0B   └── TOTAL_INSTALLABLE.json
+ 4.0K   └── LICENSE
 ```

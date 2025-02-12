@@ -128,6 +128,7 @@
  4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.bsum
+ 4.0K   │ │ │ ├── TOTAL.json
    0B   │ │ │ └── aarch64-Linux.json.bsum
   28K   │ │ └─┬ scripts
   24K   │ │   └── gen_meta.sh
@@ -287,7 +288,7 @@
   12K   │ └─┬ omni-redirector-pkgforge-dev
  8.0K   │   └── worker.js
  8.0K   ├── README.md
- 4.0K   ├── TOTAL_INSTALLABLE.json
  4.0K   ├── TOTAL_ALL.json
- 4.0K   └── LICENSE
+ 4.0K   ├── LICENSE
+   0B   └── TOTAL_INSTALLABLE.json
 ```

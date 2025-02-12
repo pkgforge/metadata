@@ -1,5 +1,5 @@
 ```mathematica
- 286M └─┬ main
+ 287M └─┬ main
  171M   ├─┬ misc
  170M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -216,9 +216,9 @@
  4.0K   │   └── gen_diff.sh
  3.1M   ├─┬ pkgcache
  2.9M   │ ├─┬ data
- 616K   │ │ ├── x86_64-Linux.sdb
- 588K   │ │ ├── x86_64-Linux.db
- 568K   │ │ ├── x86_64-Linux.json
+ 620K   │ │ ├── x86_64-Linux.sdb
+ 592K   │ │ ├── x86_64-Linux.db
+ 572K   │ │ ├── x86_64-Linux.json
  176K   │ │ ├── aarch64-Linux.sdb
  144K   │ │ ├── aarch64-Linux.db
  136K   │ │ ├── aarch64-Linux.json

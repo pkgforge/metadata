@@ -11,13 +11,13 @@
  5.0M   │ │ ├── ALPINE_GIT.json
  2.7M   │ │ ├── BREW_FORMULA.json
  1.5M   │ │ ├── BREW_CASK.json
-1008K   │ │ ├── PPKG_RAW.json
+1012K   │ │ ├── PPKG_RAW.json
  448K   │ │ ├── FLATPAK_APPS_INFO.json
  416K   │ │ ├── FLATPAK_APPS_INFO.txt
  296K   │ │ ├── PPKG.json
- 244K   │ │ ├── FLATPAK_POPULAR.json
- 236K   │ │ ├── FLATPAK_TRENDING.json
- 120K   │ │ ├── FLATPAK_APP_IDS.txt
+ 240K   │ │ ├── FLATPAK_POPULAR.json
+ 220K   │ │ ├── FLATPAK_TRENDING.json
+ 116K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
   88K   │ └─┬ scripts
@@ -82,17 +82,17 @@
   32K   │   ├── gen_meta_x86_64-Linux.sh
   32K   │   ├── gen_meta_aarch64-Linux.sh
  8.0K   │   └── sync_hf_mirror.sh
-  25M   ├─┬ external
-  13M   │ ├─┬ am
-  13M   │ │ ├─┬ data
- 5.8M   │ │ │ ├── x86_64-Linux.json
- 4.6M   │ │ │ ├── x86_64-Linux.db
- 752K   │ │ │ ├── x86_64-Linux.db.cba
- 452K   │ │ │ ├── x86_64-Linux.json.cba
- 396K   │ │ │ ├── x86_64-Linux.db.zstd
- 388K   │ │ │ ├── x86_64-Linux.db.xz
- 360K   │ │ │ ├── x86_64-Linux.json.zstd
- 352K   │ │ │ ├── x86_64-Linux.json.xz
+  26M   ├─┬ external
+  14M   │ ├─┬ am
+  14M   │ │ ├─┬ data
+ 6.2M   │ │ │ ├── x86_64-Linux.json
+ 5.1M   │ │ │ ├── x86_64-Linux.db
+ 828K   │ │ │ ├── x86_64-Linux.db.cba
+ 504K   │ │ │ ├── x86_64-Linux.json.cba
+ 452K   │ │ │ ├── x86_64-Linux.db.zstd
+ 448K   │ │ │ ├── x86_64-Linux.db.xz
+ 412K   │ │ │ ├── x86_64-Linux.json.zstd
+ 400K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum
@@ -100,11 +100,12 @@
  4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.db.bsum
  4.0K   │ │ │ └── TOTAL.json
-  24K   │ │ └─┬ scripts
+  36K   │ │ └─┬ scripts
+  12K   │ │   ├── gen_meta_old.sh
   12K   │ │   ├── gen_meta.sh
  8.0K   │ │   └── gen_meta_tmp.sh
- 7.6M   │ ├─┬ appimagehub
- 7.6M   │ │ ├─┬ data
+ 7.2M   │ ├─┬ appimagehub
+ 7.2M   │ │ ├─┬ data
  2.0M   │ │ │ ├── x86_64-Linux.json
  1.7M   │ │ │ ├── x86_64-Linux.db
  1.7M   │ │ │ ├── aarch64-Linux.db
@@ -114,10 +115,8 @@
  212K   │ │ │ ├── aarch64-Linux.db.zstd
  208K   │ │ │ ├── x86_64-Linux.json.zstd
  208K   │ │ │ ├── x86_64-Linux.db.xz
- 208K   │ │ │ ├── aarch64-Linux.json.zstd
  204K   │ │ │ ├── aarch64-Linux.db.xz
  200K   │ │ │ ├── x86_64-Linux.json.xz
- 196K   │ │ │ ├── aarch64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum
@@ -125,12 +124,15 @@
  4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.db.bsum
  4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.zstd
  4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.xz
+ 4.0K   │ │ │ ├── aarch64-Linux.json.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json
  4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.bsum
- 4.0K   │ │ │ ├── TOTAL.json
-   0B   │ │ │ └── aarch64-Linux.json.bsum
+ 4.0K   │ │ │ └── TOTAL.json
   28K   │ │ └─┬ scripts
   24K   │ │   └── gen_meta.sh
  4.5M   │ └─┬ appimage.github.io

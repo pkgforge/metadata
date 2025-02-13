@@ -20,7 +20,7 @@ rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
   jq -r --arg cutoff "${CUTOFF_DATE}" \
   '.[] | select(.tag_name | test("METADATA-[0-9]{4}_[0-9]{2}_[0-9]{2}")) | select((.published_at | strptime("%Y-%m-%dT%H:%M:%SZ") | mktime) >= ($cutoff | strptime("%Y-%m-%d") | mktime)) | .tag_name' |\
   grep -i "METADATA-[0-9]\{4\}_[0-9]\{2\}_[0-9]\{2\}" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | sort -u)
-  if [[ -n "${META_TAGS[*]}" && "${#META_TAGS[@]}" -gt 2 ]]; then
+  if [[ -n "${META_TAGS[*]}" && "${#META_TAGS[@]}" -ge 2 ]]; then
     echo -e "\n[+] Total Tags: ${#META_TAGS[@]}"
     echo -e "[+] Tags: ${META_TAGS[*]}"
   else

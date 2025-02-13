@@ -6,7 +6,7 @@ concurrency:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */5 * * *" #every 075hrs 
+    - cron: "0 */5 * * *" #every 05hrs 
 jobs:
   generate:
     runs-on: "${{ matrix.runner }}"
@@ -22,26 +22,31 @@ jobs:
             script: "${GITHUB_WORKSPACE}/main/external/appimagehub/scripts/gen_meta.sh"
             host: "aarch64-Linux"
             runner: "ubuntu-24.04-arm"
+            file: "/tmp/appimagehub.json"
 
           - source: "appimagehub"
             script: "${GITHUB_WORKSPACE}/main/external/appimagehub/scripts/gen_meta.sh"
             host: "x86_64-Linux"
             runner: "ubuntu-latest"
+            file: "/tmp/appimagehub.json"
                       
           - source: "appimage.github.io"
             script: "${GITHUB_WORKSPACE}/main/external/appimage.github.io/scripts/gen_meta.sh"
             host: "aarch64-Linux"
             runner: "ubuntu-24.04-arm"
+            file: "/tmp/appimage.json"
 
           - source: "appimage.github.io"
             script: "${GITHUB_WORKSPACE}/main/external/appimage.github.io/scripts/gen_meta.sh"
             host: "x86_64-Linux"
             runner: "ubuntu-latest"
+            file: "/tmp/appimage.json"
 
           - source: "am"
             script: "${GITHUB_WORKSPACE}/main/external/am/scripts/gen_meta.sh"
             host: "x86_64-Linux"
             runner: "ubuntu-latest"
+            file: "/tmp/AM.json"
             
     steps:
       - name: Checkout repository
@@ -137,4 +142,15 @@ jobs:
           commit_user_email: AjamX101@gmail.com
           commit_message: "✅ Updated [${{ matrix.source }} (${{ matrix.host }})] 🛍️"
           #push_options: '--force'
+        continue-on-error: true
+
+      - name: Upload (LOG) Artifacts [${{ matrix.source }}/${{ matrix.host }})
+        uses: actions/upload-artifact@v4
+        with:
+            name: ${{ matrix.file }}_${{ matrix.host }}
+            path: |
+              ${{ matrix.file }}
+            compression-level: 0 # no compression, [Default: 6 (GNU Gzip)]
+            retention-days: 7
+            overwrite: true
         continue-on-error: true

@@ -340,6 +340,71 @@
   },
   {
     "_disabled": "false",
+    "pkg": "b3sum",
+    "pkg_family": "b3sum",
+    "pkg_id": "github.com.BLAKE3-team.BLAKE3",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/team-blake3/b3sum/b3sum",
+    "bincache": "ghcr.io/pkgforge/bincache/b3sum/official/b3sum",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/b3sum/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command line utility for calculating BLAKE3 hashes",
+    "distro_pkg": {
+      "alpine": [
+        "b3sum"
+      ],
+      "archlinux": {
+        "extra": [
+          "b3sum"
+        ]
+      },
+      "debian": [
+        "rust-b3sum",
+        "rust-blake3"
+      ],
+      "nixpkgs": [
+        "b3sum"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/b3sum/static.official.source.yaml",
+    "homepage": [
+      "https://blake3.io",
+      "https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "provides": [
+      "b3sum"
+    ],
+    "repology": [
+      "blake3"
+    ],
+    "src_url": [
+      "https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "tag": [
+      "bsum",
+      "checksum"
+    ],
+    "version": "HEAD-41b5c02-250213T093114"
+  },
+  {
+    "_disabled": "false",
     "pkg": "bash",
     "pkg_family": "bash",
     "pkg_id": "nixpkgs.bash",
@@ -564,7 +629,8 @@
     "tag": [
       "binary-analysis",
       "security"
-    ]
+    ],
+    "version": "HEAD-2b93558-250210T000546"
   },
   {
     "_disabled": "false",
@@ -4707,6 +4773,67 @@
     "version": "0.14.0-devrc"
   },
   {
+    "_disabled": "false",
+    "pkg": "devpod",
+    "pkg_family": "devpod",
+    "pkg_id": "github.com.loft-sh.devpod",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sh-devpod/devpod/devpod",
+    "bincache": "ghcr.io/pkgforge/bincache/devpod/official/devpod",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/devpod/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Codespaces but open-source, client-only and unopinionated",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "devpod",
+          "devpod-bin"
+        ]
+      },
+      "homebrew": [
+        "devpod"
+      ],
+      "nixpkgs": [
+        "devpod"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/devpod/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/loft-sh/devpod"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/loft-sh/devpod"
+    ],
+    "provides": [
+      "aptly"
+    ],
+    "repology": [
+      "devpod"
+    ],
+    "src_url": [
+      "https://github.com/loft-sh/devpod"
+    ],
+    "tag": [
+      "cloud",
+      "devcontainer"
+    ],
+    "version": "v0.6.13-rc.0"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -5350,7 +5477,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-cdc8124-250214T002320"
+    "version": "HEAD-f4f1592-250214T010928"
   },
   {
     "_disabled": "false",
@@ -5418,6 +5545,54 @@
       "find"
     ],
     "version": "HEAD-3a56c32-250202T105221"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "findutils",
+    "pkg_family": "findutils",
+    "pkg_id": "github.com.uutils.findutils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/uutils-findutils/findutils/findutils",
+    "bincache": "ghcr.io/pkgforge/bincache/findutils/uutils/find",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/findutils/static.uutils.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A toolset for searching and processing files [Rust (uutils)]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/findutils/static.uutils.source.yaml",
+    "homepage": [
+      "https://github.com/uutils/findutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/uutils/findutils"
+    ],
+    "provides": [
+      "find",
+      "xargs"
+    ],
+    "repology": [
+      "rust-findutils",
+      "rust:findutils",
+      "uutils-findutils"
+    ],
+    "src_url": [
+      "https://github.com/uutils/findutils"
+    ],
+    "tag": [
+      "findutils"
+    ],
+    "version": "HEAD-e039791-250213T181644"
   },
   {
     "_disabled": "false",
@@ -5845,7 +6020,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-113b26a-250213T120311"
+    "version": "HEAD-e17c4bc-250213T180342"
   },
   {
     "_disabled": "false",
@@ -6078,7 +6253,7 @@
     "tag": [
       "markdown"
     ],
-    "version": "HEAD-1b840ba-250213T111714"
+    "version": "HEAD-7fbc040-250213T091000"
   },
   {
     "_disabled": "false",
@@ -7150,7 +7325,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-148e423-250213T081002"
+    "version": "HEAD-d79c7a0-250213T173021"
   },
   {
     "_disabled": "false",
@@ -7634,7 +7809,7 @@
       "s3",
       "storage"
     ],
-    "version": "HEAD-42b78de-250213T024118"
+    "version": "HEAD-c32317e-250213T101941"
   },
   {
     "_disabled": "false",
@@ -8290,7 +8465,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-a930c2a-250213T154810"
+    "version": "HEAD-c4a6daf-250213T181718"
   },
   {
     "_disabled": "false",
@@ -8639,7 +8814,7 @@
       "recon",
       "security"
     ],
-    "version": "HEAD-50f2ff5-250213T185407"
+    "version": "HEAD-8cb0087-250213T222335"
   },
   {
     "_disabled": "false",
@@ -9508,7 +9683,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-bba405b-250213T113818"
+    "version": "HEAD-7881e22-250213T121220"
   },
   {
     "_disabled": "false",
@@ -11375,6 +11550,64 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sqlc",
+    "pkg_family": "sqlc",
+    "pkg_id": "github.com.sqlc-dev.sqlc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dev-sqlc/sqlc/sqlc",
+    "bincache": "ghcr.io/pkgforge/bincache/sqlc/official/sqlc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sqlc/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Generate type-safe Golang code from SQL",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "sqlc"
+        ]
+      },
+      "homebrew": [
+        "sqlc"
+      ],
+      "nixpkgs": [
+        "sqlc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sqlc/static.official.source.yaml",
+    "homepage": [
+      "https://sqlc.dev",
+      "https://github.com/sqlc-dev/sqlc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sqlc-dev/sqlc"
+    ],
+    "repology": [
+      "sqlc"
+    ],
+    "src_url": [
+      "https://github.com/sqlc-dev/sqlc"
+    ],
+    "tag": [
+      "database",
+      "sql"
+    ],
+    "version": "HEAD-4befb0d-250213T092258"
+  },
+  {
+    "_disabled": "false",
     "pkg": "sshportal",
     "pkg_family": "sshportal",
     "pkg_id": "github.com.moul.sshportal",
@@ -11795,7 +12028,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-f2f7fd1-250212T175233"
+    "version": "HEAD-db23110-250213T112945"
   },
   {
     "_disabled": "false",
@@ -12219,55 +12452,6 @@
       "tty"
     ],
     "version": "1.7.7"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "tuiarchiver",
-    "pkg_family": "tuiarchiver",
-    "pkg_id": "codeberg.org.dnalor.tuiarchiver",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dnalor-tuiarchiver/tuiarchiver/tuiarchiver",
-    "bincache": "ghcr.io/pkgforge/bincache/tuiarchiver/official/tuiarchiver",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tuiarchiver/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "TUI archive manager",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "tuiarchiver-git"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tuiarchiver/static.official.source.yaml",
-    "homepage": [
-      "https://codeberg.org/dnalor/tuiarchiver"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "EUPL-1.2-or-later"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://codeberg.org/dnalor/tuiarchiver"
-    ],
-    "repology": [
-      "tuiarchiver"
-    ],
-    "src_url": [
-      "https://codeberg.org/dnalor/tuiarchiver"
-    ],
-    "tag": [
-      "archiver"
-    ]
   },
   {
     "_disabled": "false",

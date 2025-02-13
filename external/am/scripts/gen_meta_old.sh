@@ -11,49 +11,74 @@ export TZ="UTC"
 export HOST_TRIPLET="$(uname -m)-$(uname -s)"
 SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
 TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
-mkdir -pv "${TMPDIR}/assets" "${TMPDIR}/data" "${TMPDIR}/src" "${TMPDIR}/tmp"
+mkdir -pv "${TMPDIR}/src" "${TMPDIR}/tmp" "${TMPDIR}/data"
 rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
-#Get Repo Tags
- META_REPO="pkgforge-community/AM-HF-SYNC"
- CUTOFF_DATE="$(date --utc -d '7 days ago' '+%Y-%m-%d' | tr -d '[:space:]')" ; unset META_TAGS
- readarray -t "META_TAGS" < <(gh api "repos/${META_REPO}/releases" --paginate 2>/dev/null |\
-  jq -r --arg cutoff "${CUTOFF_DATE}" \
-  '.[] | select(.tag_name | test("METADATA-[0-9]{4}_[0-9]{2}_[0-9]{2}")) | select((.published_at | strptime("%Y-%m-%dT%H:%M:%SZ") | mktime) >= ($cutoff | strptime("%Y-%m-%d") | mktime)) | .tag_name' |\
-  grep -i "METADATA-[0-9]\{4\}_[0-9]\{2\}_[0-9]\{2\}" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | sort -u)
-  if [[ -n "${META_TAGS[*]}" && "${#META_TAGS[@]}" -gt 2 ]]; then
-    echo -e "\n[+] Total Tags: ${#META_TAGS[@]}"
-    echo -e "[+] Tags: ${META_TAGS[*]}"
-  else
-    echo -e "\n[X] FATAL: Failed to Fetch needed Tags\n"
-    echo -e "[+] Tags: ${META_TAGS[*]}"
-   exit 1
-  fi
-#Download Assets
- unset REL_TAG
-  for REL_TAG in "${META_TAGS[@]}"; do
-   REL_DATE="$(echo "${REL_TAG}" | grep -o '[0-9]\{4\}_[0-9]\{2\}_[0-9]\{2\}' | tr -d '[:space:]')"
-   echo -e "[+] Fetching ${REL_TAG} ==> ${TMPDIR}/assets/${REL_DATE}"
-   gh release download --repo "${META_REPO}" "${REL_TAG}" --dir "${TMPDIR}/assets/${REL_DATE}" --clobber
-   realpath "${TMPDIR}/assets/${REL_DATE}" && du -sh "${TMPDIR}/assets/${REL_DATE}"
-  done
-#Rename Assets
- find "${TMPDIR}/assets/" -mindepth 1 -type f -exec bash -c \
-  '
-   for file; do
-    dir=$(dirname "$file")
-    base=$(basename "$dir")
-    mv -fv "$file" "${file%.*}_${base}.${file##*.}"
-   done
-  ' _ {} +
-#Copy Valid Assets
- find "${TMPDIR}/assets/" -type f -iregex '.*\.json$' -exec bash -c 'jq empty "{}" 2>/dev/null && cp -f "{}" ${TMPDIR}/src/' \;
-#Copy Newer Assets 
- find "${TMPDIR}/src" -type f -iregex '.*\.json$' | sort -u | awk -F'[_-]' '{base=""; for(i=1;i<=NF-1;i++) base=base (i>1?"_":"") $i; date=$(NF); file[base]=(file[base]==""||date>file[base])?date:file[base]; path[base,date]=$0} END {for(b in file) print path[b,file[b]]}' | xargs -I "{}" cp -fv "{}" "${TMPDIR}/data"
+#Get HF Repo Remotes
+ unset AM_REMOTES ; readarray -t "AM_REMOTES" < <(git ls-remote --heads "https://huggingface.co/datasets/pkgforge/AMcache" | sed -E 's|^[0-9a-f]+[[:space:]]+refs/heads/||' | grep -i "${HOST_TRIPLET}" | sort -u | sed -E 's/^[[:space:]]+|[[:space:]]+$//g')
+ if [[ -n "${AM_REMOTES[*]}" && "${#AM_REMOTES[@]}" -gt 200 ]]; then
+   echo -e "\n[+] Total Branches: ${#AM_REMOTES[@]}\n"
+   fix_gitattributes()
+    {
+     if [[ -n "${REMOTE+x}" ]] && [[ -n "${REMOTE##*[[:space:]]}" ]]; then
+      pushd "$(mktemp -d)" &>/dev/null && \
+       git clone --branch "${REMOTE}" --depth="1" --filter="blob:none" --no-checkout \
+        "https://huggingface.co/datasets/pkgforge/AMcache" "./TEMPREPO" &>/dev/null &&\
+         cd "./TEMPREPO" && git checkout "${REMOTE}"
+       if [[ "$(git rev-parse --abbrev-ref HEAD | head -n 1 | tr -d '[:space:]')" == "${REMOTE}" ]]; then
+        git rm --cached --ignore-unmatch '.gitattributes'
+        git sparse-checkout init --cone
+        git sparse-checkout set ".gitattributes"
+        git lfs uninstall 2>/dev/null
+        git lfs untrack '.gitattributes' 2>/dev/null
+        #git checkout HEAD^ -- '.gitattributes'
+        #git restore --staged --worktree "."
+        echo '*/* filter=lfs diff=lfs merge=lfs -text' > "./.gitattributes"
+        echo '* filter=lfs diff=lfs merge=lfs -text' >> "./.gitattributes"
+        sed '/^[[:space:]]*[^*]/d' -i "./.gitattributes"
+        git add --all --renormalize --verbose
+        git commit -m "Fix (GitAttributes)"
+        git push origin "${REMOTE}"
+       fi
+      [[ -d "$(realpath .)/TEMPREPO" ]] && rm -rf "$(realpath .)" &>/dev/null && popd &>/dev/null
+     fi
+    }
+   export -f fix_gitattributes
+   get_remote_json()
+   {
+    local REMOTE=$1
+    #echo -e "[+] Fixing ${REMOTE} $(fix_gitattributes &>/dev/null)"
+    echo -e "[+] Fetching ${REMOTE}"
+    pushd "$(mktemp -d)" >/dev/null 2>&1 && T_WDIR="$(realpath .)" &&\
+    git clone --branch "${REMOTE}" "https://huggingface.co/datasets/pkgforge/AMcache" \
+     --filter="blob:none" --depth="1" --no-checkout --quiet "./TEMPREPO" &>/dev/null &&\
+     cd "./TEMPREPO" && HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
+    if [[ -d "${HF_REPO_LOCAL}" ]] && [[ "$(du -s "${HF_REPO_LOCAL}" | cut -f1)" -gt 100 ]]; then
+     pushd "${HF_REPO_LOCAL}" &>/dev/null
+       git lfs install &>/dev/null ; huggingface-cli lfs-enable-largefiles "." &>/dev/null
+       git config "lfs.fetchinclude" "*.json"
+       git sparse-checkout set --no-cone "*.json" && git checkout &>/dev/null
+       git fetch origin "${REMOTE}" &>/dev/null ; git pull origin "${REMOTE}" --ff-only &>/dev/null
+       git lfs ls-files --size -I "*.json"
+       git lfs fetch origin "origin/${REMOTE}" -I "*.json" &>/dev/null
+       git lfs pull -I "*.json" &>/dev/null
+       GIT_LFS_SKIP_SMUDGE="1" git lfs migrate export --include-ref="${REMOTE}" -I "*.json" --verbose --yes &>/dev/null
+       find "${HF_REPO_LOCAL}" -type f -iname '*.json' -exec bash -c 'cp -fv "{}" "${TMPDIR}/src/$(basename $(mktemp -u)).json"' \;
+     popd &>/dev/null
+    fi
+    rm -rf "${T_WDIR}" && pushd "${TMPDIR}" &>/dev/null
+   }
+   export -f get_remote_json
+   printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'get_remote_json "$@" 2>/dev/null' _ "{}"
+   #printf '%s\n' "${AM_REMOTES[@]}" | xargs -P "10" -I "{}" bash -c 'get_remote_json "$@"' _ "{}"
+ else
+   echo -e "\n[X] FATAL: Failed to Fetch needed Branches\n"
+  exit 1
+ fi
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
 ##Merge
- find "${TMPDIR}/data" -type f -iregex '.*\.json$' -exec bash -c 'jq empty "{}" 2>/dev/null && cat "{}"' \; | \
+ find "${TMPDIR}/src" -type f -iregex '.*\.json$' -exec bash -c 'jq empty "{}" 2>/dev/null && cat "{}"' \; | \
    jq --arg host "${HOST_TRIPLET}" 'select(.host | ascii_downcase == ($host | ascii_downcase))' | \
    jq -s 'sort_by(.pkg) | unique_by(.pkg_id)' > "${TMPDIR}/AM.json.tmp"
 #sanity check urls
@@ -93,8 +118,6 @@ if command -v rclone &> /dev/null &&\
  #Copy
   mkdir -pv "${GITHUB_WORKSPACE}/main/external/am/data"
   cd "${GITHUB_WORKSPACE}/main/external/am/data"
-  [[ ! -f "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" ]] &&\
-   echo '[]' > "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json"
   jq -s 'map(.[]) | group_by(.pkg_id) | map(if length > 1 then .[1] + .[0] else .[0] end) | unique_by(.download_url) | sort_by(.pkg)' "${SYSTMP}/AM.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" | jq . > "${SYSTMP}/merged.json"
   if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 50 ]]; then
    cp -fv "${SYSTMP}/merged.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json"

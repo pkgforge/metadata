@@ -360,6 +360,8 @@ if command -v rclone &> /dev/null &&\
  #Copy
   mkdir -pv "${GITHUB_WORKSPACE}/main/external/appimagehub/data"
   cd "${GITHUB_WORKSPACE}/main/external/appimagehub/data"
+  [[ ! -f "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.json" ]] &&\
+   echo '[]' > "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.json"
   jq -s 'map(.[]) | group_by(.pkg_id) | map(if length > 1 then .[1] + .[0] else .[0] end) | unique_by(.pkg_id) | sort_by(.pkg)' \
   "${SYSTMP}/appimagehub.json" "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.json" | jq . > "${SYSTMP}/merged.json"
   if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 50 ]]; then

@@ -62,6 +62,8 @@ jobs:
           #-------------#
           #Git
           sudo apt-get install git-lfs -y -qq
+          echo "GH_PAGER=" >> "${GITHUB_ENV}"
+          gh config set prompt disabled
           #-------------#
           ##User-Agent
           USER_AGENT="$(curl -qfsSL 'https://pub.ajam.dev/repos/Azathothas/Wordlists/Misc/User-Agents/ua_chrome_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"

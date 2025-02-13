@@ -245,7 +245,7 @@ generate_meta()
         homepage: [($PKG_WEBPAGE | tostring)],
         license: ($LICENSE | split(", ")),
         maintainer: [
-        "AppImage (https://github.com/AppImage/appimagehub)"
+        "AppImageHub (https://www.appimagehub.com)"
         ],
         mdsum: ($MDSUM | tostring),
         note: [

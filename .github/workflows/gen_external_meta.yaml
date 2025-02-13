@@ -6,7 +6,7 @@ concurrency:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */5 * * *" #every 07 hrs 
+    - cron: "0 */5 * * *" #every 075hrs 
 jobs:
   generate:
     runs-on: "${{ matrix.runner }}"
@@ -39,7 +39,7 @@ jobs:
             runner: "ubuntu-latest"
 
           - source: "am"
-            script: "${GITHUB_WORKSPACE}/main/external/am/scripts/gen_meta_tmp.sh"
+            script: "${GITHUB_WORKSPACE}/main/external/am/scripts/gen_meta.sh"
             host: "x86_64-Linux"
             runner: "ubuntu-latest"
             

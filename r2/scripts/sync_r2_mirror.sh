@@ -117,15 +117,16 @@ sync_to_r2()
      #Chmod
       chmod 'a+x' "${TMPDIR}/${R2_PKGNAME}/${R2_PKGNAME}"
      #Upload
-      rclone copyto "${TMPDIR}/${R2_PKGNAME}/${R2_PKGNAME}" "r2:${R2_MIRROR}/${R2_PKGNAME}" \
+      {
+        rclone copyto "${TMPDIR}/${R2_PKGNAME}/${R2_PKGNAME}" "r2:${R2_MIRROR}/${R2_PKGNAME}" \
        --user-agent="${USER_AGENT}" --buffer-size="10M" --s3-upload-concurrency="50" --s3-chunk-size="10M" \
        --multi-thread-streams="50" --checkers="2000" --transfers="100" --retries="10" --check-first \
-       --checksum --copy-links --fast-list --progress &
+       --checksum --copy-links --fast-list --progress
+       rm -rf "${TMPDIR}/${R2_PKGNAME}" 2>/dev/null && pushd "${TMPDIR}" &>/dev/null
+      } &
    else
      echo -e "[-] FATAL: Failed to Download GHCR Blob <== [${R2_INPUT}]"
    fi
- ##Cleanup
-   rm -rf "${TMPDIR}/${R2_PKGNAME}" 2>/dev/null && pushd "${TMPDIR}" &>/dev/null
  ##Disable Debug 
   if [ "${DEBUG}" = "1" ] || [ "${DEBUG}" = "ON" ]; then
      set +x
@@ -143,7 +144,7 @@ pushd "${TMPDIR}" &>/dev/null
   exit 0
  else
    echo -e "\n[+] Total Packages: ${#R2_PKG_INPUT[@]}\n"
-   printf '%s\n' "${R2_PKG_INPUT[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'sync_to_r2 "$@" 2>/dev/null' _ "{}"
+   printf '%s\n' "${R2_PKG_INPUT[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'sync_to_r2 "$@"' _ "{}"
  fi
 popd &>/dev/null
 #-------------------------------------------------------#

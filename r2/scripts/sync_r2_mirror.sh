@@ -35,7 +35,7 @@ if command -v rclone &> /dev/null; then
  else
    echo -e "\n[-] rClone Config Not Found\n"      
  fi
- export RCLONE_STATS="120s"
+ export RCLONE_STATS="5s"
 else
  echo -e "\n[-] rclone is NOT Installed"
   if [ -s "${HOME}/.rclone.conf" ]; then
@@ -120,7 +120,7 @@ sync_to_r2()
       rclone copyto "${TMPDIR}/${R2_PKGNAME}/${R2_PKGNAME}" "r2:${R2_MIRROR}/${R2_PKGNAME}" \
        --user-agent="${USER_AGENT}" --buffer-size="10M" --s3-upload-concurrency="50" --s3-chunk-size="10M" \
        --multi-thread-streams="50" --checkers="2000" --transfers="100" --retries="10" --check-first \
-       --checksum --copy-links --fast-list &
+       --checksum --copy-links --fast-list --progress &
    else
      echo -e "[-] FATAL: Failed to Download GHCR Blob <== [${R2_INPUT}]"
    fi

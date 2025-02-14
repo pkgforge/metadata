@@ -138,7 +138,12 @@ export -f sync_to_r2
 ##Run
 pushd "${TMPDIR}" &>/dev/null
  unset R2_PKG_INPUT ; readarray -t "R2_PKG_INPUT" < <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/r2/data/PKG_LIST.txt" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | grep -v '^#' | grep -i ":${UPSTREAM_REPO}" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | sort -u)
- echo -e "\n[+] Total Packages: ${#R2_PKG_INPUT[@]}\n"
- printf '%s\n' "${R2_PKG_INPUT[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'sync_to_r2 "$@" 2>/dev/null' _ "{}"
+ if [[ -n "${R2_PKG_INPUT[*]}" && "${#R2_PKG_INPUT[@]}" -le 1 ]]; then
+   echo -e "\n[+] Total Packages: ${#R2_PKG_INPUT[@]}\n"
+  exit 0
+ else
+   echo -e "\n[+] Total Packages: ${#R2_PKG_INPUT[@]}\n"
+   printf '%s\n' "${R2_PKG_INPUT[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'sync_to_r2 "$@" 2>/dev/null' _ "{}"
+ fi
 popd &>/dev/null
 #-------------------------------------------------------#

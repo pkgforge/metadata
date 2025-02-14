@@ -79,6 +79,17 @@ jobs:
           find ".github/workflows" -type f -name "*ml" -exec actionlint {} \;
         continue-on-error: true
 
+      - name: Sanity Check R2 List
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          sed 's/:.*//' -i "${GITHUB_WORKSPACE}/main/r2/data/PKG_LIST.txt"
+          sed -E 's/^[[:space:]]+|[[:space:]]+$//g' -i "${GITHUB_WORKSPACE}/main/r2/data/PKG_LIST.txt"
+          sort -u "${GITHUB_WORKSPACE}/main/r2/data/PKG_LIST.txt" -o "${GITHUB_WORKSPACE}/main/r2/data/PKG_LIST.txt"
+          sed -E 's/^[[:space:]]+|[[:space:]]+$//g' -i "${GITHUB_WORKSPACE}/main/r2/data/PKG_LIST.txt"
+        continue-on-error: true
+
       - name: Shellcheck
         run: |
           #Presets

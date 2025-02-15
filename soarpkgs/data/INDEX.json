@@ -2217,7 +2217,7 @@
       "api",
       "graphql"
     ],
-    "version": "v8.1.4"
+    "version": "v8.1.5"
   },
   {
     "_disabled": "false",
@@ -3280,7 +3280,7 @@
       "debian",
       "packaging"
     ],
-    "version": "HEAD-cf3841e-250124T004915"
+    "version": "HEAD-1abb735-250215T191042"
   },
   {
     "_disabled": "false",
@@ -3803,7 +3803,7 @@
       "recon",
       "whois"
     ],
-    "version": "HEAD-8355ee7-250126T173714"
+    "version": "HEAD-9600d76-250215T182718"
   },
   {
     "_disabled": "false",
@@ -10935,6 +10935,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chafa/archive/sharun",
     "provides": [
       "chafa"
     ],
@@ -14856,7 +14857,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-aa39c2c-250215T071441"
+    "version": "HEAD-0eab0fa-250215T170941"
   },
   {
     "_disabled": "false",
@@ -15173,7 +15174,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-aa39c2c-250215T071441"
+    "version": "HEAD-0eab0fa-250215T170941"
   },
   {
     "_disabled": "false",
@@ -20357,10 +20358,10 @@
       "This is the multicall version i.e all applets are symlinked"
     ],
     "provides": [
-      "dwarfs==dwarfsck",
-      "dwarfs==dwarfsextract",
-      "dwarfs==mkdwarfs",
-      "dwarfs==mount.dwarfs"
+      "dwarfs-tools==dwarfsck",
+      "dwarfs-tools==dwarfsextract",
+      "dwarfs-tools==mkdwarfs",
+      "dwarfs-tools==mount.dwarfs"
     ],
     "repology": [
       "dwarfs"
@@ -21052,7 +21053,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-dad2f5c-250105T223521"
+    "version": "HEAD-54ab2ee-250215T174003"
   },
   {
     "_disabled": "false",
@@ -25338,7 +25339,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-1beabc6-250215T120314"
+    "version": "HEAD-a6eab76-250215T180335"
   },
   {
     "_disabled": "false",
@@ -27007,6 +27008,28 @@
       "Utility"
     ],
     "description": "Official Gitlab CLI",
+    "distro_pkg": {
+      "alpine": [
+        "glab"
+      ],
+      "archlinux": {
+        "aur": [
+          "glab-git"
+        ],
+        "extra": [
+          "glab"
+        ]
+      },
+      "debian": [
+        "glab"
+      ],
+      "homebrew": [
+        "glab"
+      ],
+      "nixpkgs": [
+        "glab"
+      ]
+    },
     "download_url": "https://soarpkgs.pkgforge.dev/binaries/gitlab-cli/static.official.source.yaml",
     "homepage": [
       "https://docs.gitlab.com/ee/editor_extensions/gitlab_cli"
@@ -27014,6 +27037,9 @@
     "host": [
       "aarch64-linux",
       "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
@@ -27027,7 +27053,7 @@
       "gitlab-cli"
     ],
     "repology": [
-      "gitlab-cli"
+      "glab-gitlab-cli"
     ],
     "src_url": [
       "https://gitlab.com/gitlab-org/cli"
@@ -39667,8 +39693,7 @@
     "pkg_id": "github.com.itchyny.mmv",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/itchyny-mmv/mmv/mmv",
-    "bincache": "ghcr.io/pkgforge/bincache/mmv/official/mmv",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mmv/static.official.stable.yaml",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mmv/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -39690,7 +39715,7 @@
         "mmv"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mmv/static.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mmv/static.official.source.yaml",
     "homepage": [
       "https://github.com/itchyny/mmv"
     ],
@@ -40007,7 +40032,7 @@
       "Video",
       "Video/Utilities"
     ],
-    "version": "v0.39.0-756-ge4b64fba9"
+    "version": "v0.39.0-775-g834f99e46"
   },
   {
     "_disabled": "false",
@@ -41468,8 +41493,7 @@
     "pkg_id": "github.com.goreleaser.nfpm",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goreleaser-nfpm/nfpm/nfpm",
-    "bincache": "ghcr.io/pkgforge/bincache/nfpm/official/nfpm",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nfpm/static.official.stable.yaml",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nfpm/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -41492,7 +41516,7 @@
         "nfpm"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nfpm/static.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nfpm/static.official.source.yaml",
     "homepage": [
       "https://nfpm.goreleaser.com"
     ],
@@ -41825,82 +41849,6 @@
     "_disabled": "false",
     "pkg": "nmap",
     "pkg_family": "nmap",
-    "pkg_id": "nixpkgs.nmap",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-nmap/nmap/nmap",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nmap/static.nixpkgs.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Utilities for Network Discovery and Security Auditing",
-      "ncat": "Concatenate and redirect sockets [nmap]",
-      "nmap": "Network exploration tool and security/port scanner [nmap]",
-      "nping": "Network packet generation tool/ping utility [nmap]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "nmap"
-      ],
-      "archlinux": {
-        "extra": [
-          "nmap"
-        ]
-      },
-      "debian": [
-        "nmap"
-      ],
-      "gnuguix": [
-        "nmap"
-      ],
-      "homebrew": [
-        "nmap"
-      ],
-      "nixpkgs": [
-        "nmap"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nmap/static.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://nmap.org",
-      "https://github.com/nmap/nmap"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "custom"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
-    ],
-    "provides": [
-      "ncat",
-      "nmap",
-      "nping"
-    ],
-    "repology": [
-      "nmap"
-    ],
-    "src_url": [
-      "https://github.com/nmap/nmap"
-    ],
-    "tag": [
-      "network-discovery",
-      "port-scanner"
-    ],
-    "version": "7.95"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "nmap",
-    "pkg_family": "nmap",
     "pkg_id": "sharun.wrappe.alpine.nmap",
     "pkg_type": "archive",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-nmap/nmap/nmap",
@@ -41957,6 +41905,83 @@
       "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/nmap/archive/sharun",
+    "provides": [
+      "ncat",
+      "nmap",
+      "nping"
+    ],
+    "repology": [
+      "nmap"
+    ],
+    "src_url": [
+      "https://github.com/nmap/nmap"
+    ],
+    "tag": [
+      "network-discovery",
+      "port-scanner"
+    ],
+    "version": "7.95"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "nmap",
+    "pkg_family": "nmap",
+    "pkg_id": "nixpkgs.nmap",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-nmap/nmap/nmap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nmap/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities for Network Discovery and Security Auditing",
+      "ncat": "Concatenate and redirect sockets [nmap]",
+      "nmap": "Network exploration tool and security/port scanner [nmap]",
+      "nping": "Network packet generation tool/ping utility [nmap]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "nmap"
+      ],
+      "archlinux": {
+        "extra": [
+          "nmap"
+        ]
+      },
+      "debian": [
+        "nmap"
+      ],
+      "gnuguix": [
+        "nmap"
+      ],
+      "homebrew": [
+        "nmap"
+      ],
+      "nixpkgs": [
+        "nmap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nmap/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://nmap.org",
+      "https://github.com/nmap/nmap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
     ],
     "provides": [
       "ncat",
@@ -42289,8 +42314,7 @@
     "pkg_id": "github.com.projectdiscovery.nuclei",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-nuclei/nuclei/nuclei",
-    "bincache": "ghcr.io/pkgforge/bincache/nuclei/official/nuclei",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nuclei/static.official.stable.yaml",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nuclei/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
@@ -42310,7 +42334,7 @@
         "nuclei"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nuclei/static.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nuclei/static.official.source.yaml",
     "homepage": [
       "https://github.com/projectdiscovery/nuclei"
     ],
@@ -43522,6 +43546,68 @@
       "registry"
     ],
     "version": "HEAD-0abb460-250211T173635"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "oras",
+    "pkg_family": "oras",
+    "pkg_id": "github.com.oras-project.oras.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oras-stable/oras/oras",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/oras/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "OCI registry client - manage content like artifacts, images, packages",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "oras"
+        ]
+      },
+      "debian": [
+        "oras"
+      ],
+      "homebrew": [
+        "oras"
+      ],
+      "nixpkgs": [
+        "oras"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/oras/static.official.stable.yaml",
+    "homepage": [
+      "https://oras.land"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/oras-project/oras"
+    ],
+    "provides": [
+      "oras"
+    ],
+    "repology": [
+      "oras"
+    ],
+    "src_url": [
+      "https://github.com/oras-project/oras"
+    ],
+    "tag": [
+      "oci",
+      "registry"
+    ],
+    "version": "v1.2.2"
   },
   {
     "_disabled": "false",
@@ -47338,6 +47424,7 @@
     "pkg_id": "github.com.rclone.rclone.stable",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rclone-stable/rclone/rclone",
+    "bincache": "ghcr.io/pkgforge/bincache/rclone/official/rclone",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rclone/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -49645,7 +49732,7 @@
       "scanning",
       "security"
     ],
-    "version": "HEAD-71091bf-250212T114006"
+    "version": "HEAD-f1ef3be-250215T153456"
   },
   {
     "_disabled": "false",
@@ -55222,6 +55309,7 @@
       "Requires '/etc/sudoers' file & '/etc/sudoers.d' dir",
       "Also requires PAM to be setup: https://github.com/trifectatechfoundation/sudo-rs#differences-from-original-sudo"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/sudo-rs/archive/sharun",
     "provides": [
       "su",
       "sudo",
@@ -56343,6 +56431,7 @@
     "pkg_id": "github.com.tealdeer-rs.tealdeer",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-tealdeer/tealdeer/tealdeer",
+    "bincache": "ghcr.io/pkgforge/bincache/tealdeer/official/tldr",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tealdeer/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -62086,7 +62175,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-7719b58-250213T132426"
+    "version": "HEAD-fe88ffa-250215T180149"
   },
   {
     "_disabled": "false",
@@ -62406,6 +62495,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xhost/archive/sharun",
     "provides": [
       "xhost"
     ],
@@ -63055,7 +63145,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-38e45c6-250214T231706"
+    "version": "HEAD-22c8f37-250215T231531"
   },
   {
     "_disabled": "false",

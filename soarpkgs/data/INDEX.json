@@ -4683,7 +4683,6 @@
     "pkg_id": "github.com.itchyny.bed",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/itchyny-bed/bed/bed",
-    "bincache": "ghcr.io/pkgforge/bincache/bed/official/bed",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bed/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -4740,6 +4739,7 @@
     "pkg_id": "github.com.itchyny.bed.source",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bed-source/bed/bed",
+    "bincache": "ghcr.io/pkgforge/bincache/bed/official/bed",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bed/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -20147,6 +20147,7 @@
     "pkg_id": "github.com.bootandy.dust",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bootandy-dust/dust/dust",
+    "bincache": "ghcr.io/pkgforge/bincache/dust/official/dust",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dust/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -20210,6 +20211,89 @@
       "Utility"
     ],
     "version": "HEAD-a962b80-250206T003039"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dwarfs",
+    "pkg_family": "dwarfs",
+    "pkg_id": "github.com.mhx.dwarfs.standalone",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dwarfs-standalone/dwarfs/dwarfs",
+    "bincache": "ghcr.io/pkgforge/bincache/dwarfs/standalone/dwarfs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dwarfs/static.standalone.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast high compression read-only file system Tools",
+      "dwarfs": "Mount highly compressed read-only file system [dwarfs]",
+      "dwarfs2": "Mount highly compressed read-only file system (fuse2) [dwarfs]",
+      "dwarfsck": "Check DwarFS image [dwarfs]",
+      "dwarfsextract": "Extract DwarFS image [dwarfs]",
+      "mkdwarfs": "Create highly compressed read-only file systems [dwarfs]",
+      "mount.dwarfs": "Mount a dwarfs File System [dwarfs]",
+      "mount.dwarfs2": "Mount a dwarfs File System (fuse2) [dwarfs]",
+      "pxattr": "Manipulate xattr on Dwarfs File Systems [dwarfs]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "dwarfs",
+          "dwarfs-bin",
+          "dwarfs-git"
+        ]
+      },
+      "gnuguix": [
+        "dwarfs"
+      ],
+      "homebrew": [
+        "dwarfs"
+      ],
+      "nixpkgs": [
+        "dwarfs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dwarfs/static.standalone.stable.yaml",
+    "homepage": [
+      "https://github.com/mhx/dwarfs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/mhx/dwarfs",
+      "This is the standalone version i.e all applets were built individually"
+    ],
+    "provides": [
+      "dwarfs==mount.dwarfs",
+      "dwarfs2==mount.dwarfs2",
+      "dwarfsck",
+      "dwarfsextract",
+      "mkdwarfs",
+      "pxattr"
+    ],
+    "repology": [
+      "dwarfs"
+    ],
+    "src_url": [
+      "https://github.com/mhx/dwarfs"
+    ],
+    "tag": [
+      "utility",
+      "archiving",
+      "compression",
+      "dwarfs"
+    ],
+    "version": "v0.10.2"
   },
   {
     "_disabled": "false",
@@ -20294,93 +20378,12 @@
   },
   {
     "_disabled": "false",
-    "pkg": "dwarfs",
-    "pkg_family": "dwarfs",
-    "pkg_id": "github.com.mhx.dwarfs.standalone",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dwarfs-standalone/dwarfs/dwarfs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dwarfs/static.standalone.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Fast high compression read-only file system Tools",
-      "dwarfs": "Mount highly compressed read-only file system [dwarfs]",
-      "dwarfs2": "Mount highly compressed read-only file system (fuse2) [dwarfs]",
-      "dwarfsck": "Check DwarFS image [dwarfs]",
-      "dwarfsextract": "Extract DwarFS image [dwarfs]",
-      "mkdwarfs": "Create highly compressed read-only file systems [dwarfs]",
-      "mount.dwarfs": "Mount a dwarfs File System [dwarfs]",
-      "mount.dwarfs2": "Mount a dwarfs File System (fuse2) [dwarfs]",
-      "pxattr": "Manipulate xattr on Dwarfs File Systems [dwarfs]"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "dwarfs",
-          "dwarfs-bin",
-          "dwarfs-git"
-        ]
-      },
-      "gnuguix": [
-        "dwarfs"
-      ],
-      "homebrew": [
-        "dwarfs"
-      ],
-      "nixpkgs": [
-        "dwarfs"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dwarfs/static.standalone.stable.yaml",
-    "homepage": [
-      "https://github.com/mhx/dwarfs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/mhx/dwarfs",
-      "This is the standalone version i.e all applets were built individually"
-    ],
-    "provides": [
-      "dwarfs==mount.dwarfs",
-      "dwarfs2==mount.dwarfs2",
-      "dwarfsck",
-      "dwarfsextract",
-      "mkdwarfs",
-      "pxattr"
-    ],
-    "repology": [
-      "dwarfs"
-    ],
-    "src_url": [
-      "https://github.com/mhx/dwarfs"
-    ],
-    "tag": [
-      "utility",
-      "archiving",
-      "compression",
-      "dwarfs"
-    ],
-    "version": "v0.10.2"
-  },
-  {
-    "_disabled": "false",
     "pkg": "dysk",
     "pkg_family": "dysk",
     "pkg_id": "github.com.Canop.dysk",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/canop-dysk/dysk/dysk",
+    "bincache": "ghcr.io/pkgforge/bincache/dysk/official/dysk",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dysk/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -21940,6 +21943,61 @@
   },
   {
     "_disabled": "false",
+    "pkg": "faketty",
+    "pkg_family": "faketty",
+    "pkg_id": "github.com.dtolnay.faketty",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dtolnay-faketty/faketty/faketty",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/faketty/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Wrapper to exec a command in a pty, even if redirecting the output",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "faketty"
+        ]
+      },
+      "nixpkgs": [
+        "faketty"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/faketty/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dtolnay/faketty"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dtolnay/faketty"
+    ],
+    "provides": [
+      "faketty"
+    ],
+    "repology": [
+      "faketty"
+    ],
+    "src_url": [
+      "https://github.com/dtolnay/faketty"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-fc30148-250122T202112"
+  },
+  {
+    "_disabled": "false",
     "pkg": "falconhound",
     "pkg_family": "falconhound",
     "pkg_id": "github.com.FalconForceTeam.FalconHound",
@@ -22131,7 +22189,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-519dae9-250215T195034"
+    "version": "HEAD-c1c59cf-250215T223805"
   },
   {
     "_disabled": "false",
@@ -29438,6 +29496,7 @@
     "pkg_id": "git.savannah.gnu.org.cgit.grep.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/grep-glibc/grep/grep",
+    "bincache": "ghcr.io/pkgforge/bincache/grep/glibc/egrep",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/grep/static.glibc.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -38865,7 +38924,7 @@
       "email",
       "mail"
     ],
-    "version": "HEAD-f5afcf7-250211T124554"
+    "version": "HEAD-cb47b21-250213T103202"
   },
   {
     "_disabled": "false",
@@ -39288,6 +39347,7 @@
     "pkg_id": "github.com.svenstaro.miniserve",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/svenstaro-miniserve/miniserve/miniserve",
+    "bincache": "ghcr.io/pkgforge/bincache/miniserve/official/miniserve",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miniserve/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -39333,6 +39393,7 @@
     "pkg_id": "github.com.jedisct1.minisign",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jedisct1-minisign/minisign/minisign",
+    "bincache": "ghcr.io/pkgforge/bincache/minisign/official/minisign",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/minisign/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -40540,6 +40601,77 @@
     "_disabled": "false",
     "pkg": "ncdu",
     "pkg_family": "ncdu",
+    "pkg_id": "dev.yorhel.nl.ncdu",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nl-ncdu/ncdu/ncdu",
+    "bincache": "ghcr.io/pkgforge/bincache/ncdu/official/ncdu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ncdu/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Disk usage analyzer with an ncurses interface",
+    "distro_pkg": {
+      "alpine": [
+        "ncdu"
+      ],
+      "archlinux": {
+        "extra": [
+          "ncdu"
+        ]
+      },
+      "debian": [
+        "ncdu"
+      ],
+      "gnuguix": [
+        "ncdu"
+      ],
+      "homebrew": [
+        "ncdu"
+      ],
+      "nixpkgs": [
+        "ncdu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ncdu/static.official.stable.yaml",
+    "homepage": [
+      "https://dev.yorhel.nl/ncdu",
+      "https://code.blicky.net/yorhel/ncdu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://code.blicky.net/yorhel/ncdu"
+    ],
+    "provides": [
+      "ncdu"
+    ],
+    "repology": [
+      "ncdu"
+    ],
+    "src_url": [
+      "https://dev.yorhel.nl",
+      "https://code.blicky.net/yorhel/ncdu",
+      "https://g.blicky.net/ncdu.git"
+    ],
+    "tag": [
+      "disk-usage"
+    ],
+    "version": "v2.7"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ncdu",
+    "pkg_family": "ncdu",
     "pkg_id": "ppkg.ncdu",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-ncdu/ncdu/ncdu",
@@ -40604,76 +40736,6 @@
       "disk-usage"
     ],
     "version": "2.7"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "ncdu",
-    "pkg_family": "ncdu",
-    "pkg_id": "dev.yorhel.nl.ncdu",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nl-ncdu/ncdu/ncdu",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ncdu/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Disk usage analyzer with an ncurses interface",
-    "distro_pkg": {
-      "alpine": [
-        "ncdu"
-      ],
-      "archlinux": {
-        "extra": [
-          "ncdu"
-        ]
-      },
-      "debian": [
-        "ncdu"
-      ],
-      "gnuguix": [
-        "ncdu"
-      ],
-      "homebrew": [
-        "ncdu"
-      ],
-      "nixpkgs": [
-        "ncdu"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ncdu/static.official.stable.yaml",
-    "homepage": [
-      "https://dev.yorhel.nl/ncdu",
-      "https://code.blicky.net/yorhel/ncdu"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://code.blicky.net/yorhel/ncdu"
-    ],
-    "provides": [
-      "ncdu"
-    ],
-    "repology": [
-      "ncdu"
-    ],
-    "src_url": [
-      "https://dev.yorhel.nl",
-      "https://code.blicky.net/yorhel/ncdu",
-      "https://g.blicky.net/ncdu.git"
-    ],
-    "tag": [
-      "disk-usage"
-    ],
-    "version": "v2.7"
   },
   {
     "_disabled": "false",
@@ -40798,7 +40860,7 @@
     "tag": [
       "fetch"
     ],
-    "version": "HEAD-e691b2d-250215T104821"
+    "version": "HEAD-8a536c3-250215T090803"
   },
   {
     "_disabled": "false",
@@ -41013,7 +41075,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-369e7e7-250215T172800"
+    "version": "HEAD-8bd8699-250215T212511"
   },
   {
     "_disabled": "false",
@@ -47859,6 +47921,7 @@
     "pkg_id": "github.com.nelhage.reptyr",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nelhage-reptyr/reptyr/reptyr",
+    "bincache": "ghcr.io/pkgforge/bincache/reptyr/official/reptyr",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/reptyr/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -48179,6 +48242,7 @@
     "pkg_id": "github.com.phiresky.ripgrep-all",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ripgrep-all/rga/rga",
+    "bincache": "ghcr.io/pkgforge/bincache/rga/official/rga",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rga/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -50881,7 +50945,7 @@
       "secureboot",
       "uefi"
     ],
-    "version": "HEAD-b77bf98-250207T214450"
+    "version": "HEAD-4386be4-250215T150158"
   },
   {
     "_disabled": "false",
@@ -52519,7 +52583,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-afe39a6-250215T133800"
+    "version": "HEAD-be40210-250215T195213"
   },
   {
     "_disabled": "false",
@@ -52574,7 +52638,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-0698f0f-250215T180710"
+    "version": "HEAD-be40210-250215T195213"
   },
   {
     "_disabled": "false",
@@ -52629,7 +52693,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-afe39a6-250215T133800"
+    "version": "HEAD-be40210-250215T195213"
   },
   {
     "_disabled": "false",
@@ -52685,7 +52749,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-afe39a6-250215T133800"
+    "version": "HEAD-be40210-250215T195213"
   },
   {
     "_disabled": "false",
@@ -52740,7 +52804,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-afe39a6-250215T133800"
+    "version": "HEAD-be40210-250215T195213"
   },
   {
     "_disabled": "false",
@@ -52795,7 +52859,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-afe39a6-250215T133800"
+    "version": "HEAD-be40210-250215T195213"
   },
   {
     "_disabled": "false",
@@ -52851,7 +52915,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-0698f0f-250215T180710"
+    "version": "HEAD-be40210-250215T195213"
   },
   {
     "_disabled": "false",
@@ -56329,10 +56393,10 @@
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tealdeer-rs/tealdeer"
     ],
     "provides": [
-      "tealdeer"
+      "tldr==tealdeer"
     ],
     "repology": [
-      "tldr==tealdeer"
+      "tealdeer"
     ],
     "src_url": [
       "https://github.com/tealdeer-rs/tealdeer"
@@ -58752,6 +58816,112 @@
       "screenfetch"
     ],
     "version": "HEAD-d80c8f6-240325T164903"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "unionfs-fuse",
+    "pkg_family": "unionfs-fuse",
+    "pkg_id": "github.com.rpodgorny.unionfs-fuse",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/unionfs-fuse/unionfs-fuse/unionfs-fuse",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/unionfs-fuse/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for union filesystem using fuse",
+      "mount.unionfs": "Mount a filesystem as an Union Filesystem [unionfs-fuse]",
+      "unionfs": "Overlay several directories into one single mount point [unionfs-fuse]",
+      "unionfsctl": "Utility to control unionfs-fuse over ioctl [unionfs-fuse]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/unionfs-fuse/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rpodgorny/unionfs-fuse"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rpodgorny/unionfs-fuse",
+      "This uses fuse2"
+    ],
+    "provides": [
+      "mount.unionfs",
+      "unionfs",
+      "unionfsctl"
+    ],
+    "repology": [
+      "unionfs-fuse"
+    ],
+    "src_url": [
+      "https://github.com/rpodgorny/unionfs-fuse"
+    ],
+    "tag": [
+      "utility"
+    ],
+    "version": "HEAD-4a8f0f2-250106T233223"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "unionfs-fuse3",
+    "pkg_family": "unionfs-fuse3",
+    "pkg_id": "github.com.rpodgorny.unionfs-fuse3",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/unionfs-fuse3/unionfs-fuse3/unionfs-fuse3",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/unionfs-fuse3/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for union filesystem using fuse",
+      "mount.unionfs": "Mount a filesystem as an Union Filesystem [unionfs-fuse3]",
+      "unionfs": "Overlay several directories into one single mount point [unionfs-fuse3]",
+      "unionfsctl": "Utility to control unionfs-fuse over ioctl [unionfs-fuse3]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/unionfs-fuse3/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rpodgorny/unionfs-fuse"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rpodgorny/unionfs-fuse",
+      "This uses fuse3"
+    ],
+    "provides": [
+      "mount.unionfs",
+      "unionfs",
+      "unionfsctl"
+    ],
+    "repology": [
+      "unionfs-fuse"
+    ],
+    "src_url": [
+      "https://github.com/rpodgorny/unionfs-fuse"
+    ],
+    "tag": [
+      "utility"
+    ],
+    "version": "HEAD-4a8f0f2-250106T233223"
   },
   {
     "_disabled": "false",
@@ -63271,6 +63441,7 @@
     "pkg_id": "github.com.hackerschoice.zapper",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hackerschoice-zapper/zapper/zapper",
+    "bincache": "ghcr.io/pkgforge/bincache/zapper/official/zapper",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zapper/static.official.source.yaml",
     "category": [
       "ConsoleOnly",

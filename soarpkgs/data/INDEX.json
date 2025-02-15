@@ -4612,7 +4612,7 @@
       "cat",
       "text-viewer"
     ],
-    "version": "HEAD-94d3dc2-250210T204654"
+    "version": "HEAD-adfb951-250215T121652"
   },
   {
     "_disabled": "false",
@@ -15517,7 +15517,7 @@
       "authy",
       "totp"
     ],
-    "version": "HEAD-6245d67-250211T013003"
+    "version": "HEAD-0bcf442-250215T113138"
   },
   {
     "_disabled": "false",
@@ -16563,7 +16563,7 @@
     "tag": [
       "bugbounty"
     ],
-    "version": "HEAD-fd4b532-240727T201528"
+    "version": "HEAD-c3a6a63-250215T132509"
   },
   {
     "_disabled": "false",
@@ -21382,7 +21382,7 @@
       "time",
       "timestamp"
     ],
-    "version": "HEAD-524dd0d-250212T092942"
+    "version": "HEAD-c1b586f-250215T113759"
   },
   {
     "_disabled": "false",
@@ -22131,7 +22131,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-437006f-250215T124226"
+    "version": "HEAD-519dae9-250215T195034"
   },
   {
     "_disabled": "false",
@@ -23343,7 +23343,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "137.0.20250214095524"
+    "version": "137.0.20250215092323"
   },
   {
     "_disabled": "false",
@@ -25280,7 +25280,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-89f9f3a-250215T060245"
+    "version": "HEAD-1beabc6-250215T120314"
   },
   {
     "_disabled": "false",
@@ -30679,7 +30679,7 @@
     "tag": [
       "hetzner"
     ],
-    "version": "HEAD-54dfd25-250214T073406"
+    "version": "HEAD-4aba0bf-250215T101045"
   },
   {
     "_disabled": "false",
@@ -33859,7 +33859,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-e220fe3-250215T085956"
+    "version": "HEAD-4ec22dd-250215T110717"
   },
   {
     "_disabled": "false",
@@ -35499,6 +35499,85 @@
     "version": "3.6-0"
   },
   {
+    "_disabled": "true",
+    "_disabled_reason": {
+      "broken": [
+        {
+          "date": "2025-02-25",
+          "reason": "Needs lots of fixes"
+        }
+      ]
+    },
+    "pkg": "lazarus",
+    "pkg_family": "lazarus",
+    "pkg_id": "runimage.debian.lazarus",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/debian-lazarus/lazarus/lazarus",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/lazarus/runimage.debian.stable.yaml",
+    "category": [
+      "IDE"
+    ],
+    "description": "Portable Delphi-like IDE for the FreePascal compiler",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "lazarus-git"
+        ],
+        "extra": [
+          "lazarus"
+        ]
+      },
+      "debian": [
+        "lazarus"
+      ],
+      "gnuguix": [
+        "lazarus"
+      ],
+      "homebrew": [
+        "lazarus"
+      ],
+      "nixpkgs": [
+        "lazarus"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/lazarus/runimage.debian.stable.yaml",
+    "homepage": [
+      "https://www.lazarus-ide.org",
+      "https://gitlab.com/freepascal.org/lazarus/lazarus"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/lazarus/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [debian]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "provides": [
+      "lazarus"
+    ],
+    "repology": [
+      "lazarus"
+    ],
+    "src_url": [
+      "https://gitlab.com/freepascal.org/lazarus/lazarus"
+    ],
+    "tag": [
+      "code",
+      "editor"
+    ],
+    "version": "3.8"
+  },
+  {
     "_disabled": "false",
     "pkg": "lazarus",
     "pkg_family": "lazarus",
@@ -35554,77 +35633,6 @@
       "[PORTABLE] (Works on AnyLinux)"
     ],
     "pkgcache": "ghcr.io/pkgforge/pkgcache/lazarus/runimage/cachyos",
-    "provides": [
-      "lazarus"
-    ],
-    "repology": [
-      "lazarus"
-    ],
-    "src_url": [
-      "https://gitlab.com/freepascal.org/lazarus/lazarus"
-    ],
-    "tag": [
-      "code",
-      "editor"
-    ],
-    "version": "3.8"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "lazarus",
-    "pkg_family": "lazarus",
-    "pkg_id": "runimage.debian.lazarus",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/debian-lazarus/lazarus/lazarus",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/lazarus/runimage.debian.stable.yaml",
-    "category": [
-      "IDE"
-    ],
-    "description": "Portable Delphi-like IDE for the FreePascal compiler",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "lazarus-git"
-        ],
-        "extra": [
-          "lazarus"
-        ]
-      },
-      "debian": [
-        "lazarus"
-      ],
-      "gnuguix": [
-        "lazarus"
-      ],
-      "homebrew": [
-        "lazarus"
-      ],
-      "nixpkgs": [
-        "lazarus"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/lazarus/runimage.debian.stable.yaml",
-    "homepage": [
-      "https://www.lazarus-ide.org",
-      "https://gitlab.com/freepascal.org/lazarus/lazarus"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/lazarus/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [debian]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
     "provides": [
       "lazarus"
     ],
@@ -38551,7 +38559,7 @@
       "s3",
       "storage"
     ],
-    "version": "HEAD-8585339-250214T084956"
+    "version": "HEAD-383560b-250215T023616"
   },
   {
     "_disabled": "false",
@@ -46459,7 +46467,8 @@
     ],
     "tag": [
       "editor"
-    ]
+    ],
+    "version": "5.1.0"
   },
   {
     "_disabled": "false",
@@ -46535,7 +46544,8 @@
     ],
     "tag": [
       "torrent"
-    ]
+    ],
+    "version": "5.0.3"
   },
   {
     "_disabled": "false",
@@ -47089,7 +47099,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-77ed167-250214T183753"
+    "version": "HEAD-de2edde-250215T060844"
   },
   {
     "_disabled": "false",
@@ -52564,7 +52574,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-afe39a6-250215T133800"
+    "version": "HEAD-0698f0f-250215T180710"
   },
   {
     "_disabled": "false",
@@ -52841,7 +52851,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-afe39a6-250215T133800"
+    "version": "HEAD-0698f0f-250215T180710"
   },
   {
     "_disabled": "false",
@@ -59585,7 +59595,7 @@
     "tag": [
       "asdf"
     ],
-    "version": "HEAD-e1f3f56-250214T083307"
+    "version": "HEAD-f822f0f-250215T175022"
   },
   {
     "_disabled": "false",

@@ -1,11 +1,11 @@
 [
   {
-    "_disabled": false,
+    "_disabled": true,
     "rebuild": false,
     "pkg_family": "bed",
     "description": "Binary editor written in Go",
     "ghcr_pkg": "ghcr.io/pkgforge/bincache/bed/official",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bed/static.official.source.yaml"
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bed/static.official.stable.yaml"
   },
   {
     "_disabled": false,
@@ -98,34 +98,10 @@
   {
     "_disabled": false,
     "rebuild": false,
-    "pkg_family": "dust",
-    "description": "Disk Usage Analyzer",
-    "ghcr_pkg": "ghcr.io/pkgforge/bincache/dust/official",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dust/static.official.source.yaml"
-  },
-  {
-    "_disabled": false,
-    "rebuild": false,
     "pkg_family": "dwarfs",
     "description": "Fast high compression read-only file system Tools",
     "ghcr_pkg": "ghcr.io/pkgforge/bincache/dwarfs/multicall",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dwarfs/static.multicall.stable.yaml"
-  },
-  {
-    "_disabled": false,
-    "rebuild": false,
-    "pkg_family": "dwarfs",
-    "description": "Fast high compression read-only file system Tools",
-    "ghcr_pkg": "ghcr.io/pkgforge/bincache/dwarfs/standalone",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dwarfs/static.standalone.stable.yaml"
-  },
-  {
-    "_disabled": false,
-    "rebuild": false,
-    "pkg_family": "dysk",
-    "description": "Linux utility to get information on filesystems, like df but better",
-    "ghcr_pkg": "ghcr.io/pkgforge/bincache/dysk/official",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dysk/static.official.source.yaml"
   },
   {
     "_disabled": false,
@@ -142,6 +118,14 @@
     "description": "Self-hostable, easy-to-use, lightweight, and feature-rich torrent client",
     "ghcr_pkg": "ghcr.io/pkgforge/bincache/exatorrent/official",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/exatorrent/static.official.source.yaml"
+  },
+  {
+    "_disabled": false,
+    "rebuild": false,
+    "pkg_family": "faketty",
+    "description": "Wrapper to exec a command in a pty, even if redirecting the output",
+    "ghcr_pkg": "ghcr.io/pkgforge/bincache/faketty/official",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/faketty/static.official.source.yaml"
   },
   {
     "_disabled": false,
@@ -230,14 +214,6 @@
     "description": "Manage your GnuPG keys with ease! 🔐",
     "ghcr_pkg": "ghcr.io/pkgforge/bincache/gpg-tui/official",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gpg-tui/static.official.source.yaml"
-  },
-  {
-    "_disabled": false,
-    "rebuild": false,
-    "pkg_family": "grep",
-    "description": "Search one or more input files for lines containing a match to a specified pattern",
-    "ghcr_pkg": "ghcr.io/pkgforge/bincache/grep/glibc",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/grep/static.glibc.source.yaml"
   },
   {
     "_disabled": false,
@@ -338,22 +314,6 @@
   {
     "_disabled": false,
     "rebuild": false,
-    "pkg_family": "miniserve",
-    "description": "CLI tool to serve files and dirs over HTTP",
-    "ghcr_pkg": "ghcr.io/pkgforge/bincache/miniserve/official",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miniserve/static.official.source.yaml"
-  },
-  {
-    "_disabled": false,
-    "rebuild": false,
-    "pkg_family": "minisign",
-    "description": "A dead simple tool to sign files and verify signatures",
-    "ghcr_pkg": "ghcr.io/pkgforge/bincache/minisign/official",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/minisign/static.official.source.yaml"
-  },
-  {
-    "_disabled": false,
-    "rebuild": false,
     "pkg_family": "mtd-utils",
     "description": "Tools for MTD filesystems [mtd-utils]",
     "ghcr_pkg": "ghcr.io/pkgforge/bincache/mtdutils/nixpkgs",
@@ -366,14 +326,6 @@
     "description": "An incredibly fast proxy checker & IP rotator with ease",
     "ghcr_pkg": "ghcr.io/pkgforge/bincache/mubeng/official",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mubeng/static.official.source.yaml"
-  },
-  {
-    "_disabled": false,
-    "rebuild": false,
-    "pkg_family": "ncdu",
-    "description": "Disk usage analyzer with an ncurses interface",
-    "ghcr_pkg": "ghcr.io/pkgforge/bincache/ncdu/official",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ncdu/static.official.stable.yaml"
   },
   {
     "_disabled": false,
@@ -474,26 +426,10 @@
   {
     "_disabled": false,
     "rebuild": false,
-    "pkg_family": "reptyr",
-    "description": "Reparent a running program to a new terminal",
-    "ghcr_pkg": "ghcr.io/pkgforge/bincache/reptyr/official",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/reptyr/static.official.source.yaml"
-  },
-  {
-    "_disabled": false,
-    "rebuild": false,
     "pkg_family": "rescope",
     "description": "A scope generation tool for Burp Suite & ZAP",
     "ghcr_pkg": "ghcr.io/pkgforge/bincache/rescope/official",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rescope/static.official.source.yaml"
-  },
-  {
-    "_disabled": false,
-    "rebuild": false,
-    "pkg_family": "rga",
-    "description": "Ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, and more",
-    "ghcr_pkg": "ghcr.io/pkgforge/bincache/rga/official",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rga/static.official.source.yaml"
   },
   {
     "_disabled": false,
@@ -650,6 +586,22 @@
   {
     "_disabled": false,
     "rebuild": false,
+    "pkg_family": "unionfs-fuse",
+    "description": "Tools for union filesystem using fuse",
+    "ghcr_pkg": "ghcr.io/pkgforge/bincache/unionfs-fuse/official",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/unionfs-fuse/static.official.source.yaml"
+  },
+  {
+    "_disabled": false,
+    "rebuild": false,
+    "pkg_family": "unionfs-fuse3",
+    "description": "Tools for union filesystem using fuse",
+    "ghcr_pkg": "ghcr.io/pkgforge/bincache/unionfs-fuse3/official",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/unionfs-fuse3/static.official.source.yaml"
+  },
+  {
+    "_disabled": false,
+    "rebuild": false,
     "pkg_family": "usql",
     "description": "Universal command-line interface for SQL databases",
     "ghcr_pkg": "ghcr.io/pkgforge/bincache/usql/official",
@@ -702,14 +654,6 @@
     "description": "Random Password/Tokens generation and related tools",
     "ghcr_pkg": "ghcr.io/pkgforge/bincache/z-tokens/official",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/z-tokens/static.official.source.yaml"
-  },
-  {
-    "_disabled": false,
-    "rebuild": false,
-    "pkg_family": "zapper",
-    "description": "Zaps arguments and environment from the process list",
-    "ghcr_pkg": "ghcr.io/pkgforge/bincache/zapper/official",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zapper/static.official.source.yaml"
   },
   {
     "_disabled": false,

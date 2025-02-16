@@ -10397,7 +10397,7 @@
       "bugbounty",
       "cdn"
     ],
-    "version": "v1.1.2"
+    "version": "v1.1.5-workflow-fixes.0"
   },
   {
     "_disabled": "false",
@@ -20217,6 +20217,88 @@
     "_disabled": "false",
     "pkg": "dwarfs",
     "pkg_family": "dwarfs",
+    "pkg_id": "github.com.mhx.dwarfs.multicall",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dwarfs-multicall/dwarfs/dwarfs",
+    "bincache": "ghcr.io/pkgforge/bincache/dwarfs/multicall/dwarfs-tools",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dwarfs/static.multicall.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast high compression read-only file system Tools",
+      "dwarfs-tools": "Single Binary DwarFS Toolset including dwarfs, dwarfsck, dwarfsextract & mkdwarfs [dwarfs]",
+      "dwarfs": "Mount highly compressed read-only file system [dwarfs]",
+      "dwarfs2": "Mount highly compressed read-only file system (fuse2) [dwarfs]",
+      "dwarfsck": "Check DwarFS image [dwarfs]",
+      "dwarfsextract": "Extract DwarFS image [dwarfs]",
+      "mkdwarfs": "Create highly compressed read-only file systems [dwarfs]",
+      "mount.dwarfs": "Mount a dwarfs File System [dwarfs]",
+      "mount.dwarfs2": "Mount a dwarfs File System (fuse2) [dwarfs]",
+      "pxattr": "Manipulate xattr on Dwarfs File Systems [dwarfs]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "dwarfs",
+          "dwarfs-bin",
+          "dwarfs-git"
+        ]
+      },
+      "gnuguix": [
+        "dwarfs"
+      ],
+      "homebrew": [
+        "dwarfs"
+      ],
+      "nixpkgs": [
+        "dwarfs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dwarfs/static.multicall.stable.yaml",
+    "homepage": [
+      "https://github.com/mhx/dwarfs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/mhx/dwarfs",
+      "This is the multicall version i.e all applets are symlinked"
+    ],
+    "provides": [
+      "dwarfs-tools==dwarfsck",
+      "dwarfs-tools==dwarfsextract",
+      "dwarfs-tools==mkdwarfs",
+      "dwarfs-tools==mount.dwarfs"
+    ],
+    "repology": [
+      "dwarfs"
+    ],
+    "src_url": [
+      "https://github.com/mhx/dwarfs"
+    ],
+    "tag": [
+      "utility",
+      "archiving",
+      "compression",
+      "dwarfs"
+    ],
+    "version": "v0.10.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dwarfs",
+    "pkg_family": "dwarfs",
     "pkg_id": "github.com.mhx.dwarfs.standalone",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dwarfs-standalone/dwarfs/dwarfs",
@@ -20281,87 +20363,6 @@
       "dwarfsextract",
       "mkdwarfs",
       "pxattr"
-    ],
-    "repology": [
-      "dwarfs"
-    ],
-    "src_url": [
-      "https://github.com/mhx/dwarfs"
-    ],
-    "tag": [
-      "utility",
-      "archiving",
-      "compression",
-      "dwarfs"
-    ],
-    "version": "v0.10.2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "dwarfs",
-    "pkg_family": "dwarfs",
-    "pkg_id": "github.com.mhx.dwarfs.multicall",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dwarfs-multicall/dwarfs/dwarfs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dwarfs/static.multicall.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Fast high compression read-only file system Tools",
-      "dwarfs-tools": "Single Binary DwarFS Toolset including dwarfs, dwarfsck, dwarfsextract & mkdwarfs [dwarfs]",
-      "dwarfs": "Mount highly compressed read-only file system [dwarfs]",
-      "dwarfs2": "Mount highly compressed read-only file system (fuse2) [dwarfs]",
-      "dwarfsck": "Check DwarFS image [dwarfs]",
-      "dwarfsextract": "Extract DwarFS image [dwarfs]",
-      "mkdwarfs": "Create highly compressed read-only file systems [dwarfs]",
-      "mount.dwarfs": "Mount a dwarfs File System [dwarfs]",
-      "mount.dwarfs2": "Mount a dwarfs File System (fuse2) [dwarfs]",
-      "pxattr": "Manipulate xattr on Dwarfs File Systems [dwarfs]"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "dwarfs",
-          "dwarfs-bin",
-          "dwarfs-git"
-        ]
-      },
-      "gnuguix": [
-        "dwarfs"
-      ],
-      "homebrew": [
-        "dwarfs"
-      ],
-      "nixpkgs": [
-        "dwarfs"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dwarfs/static.multicall.stable.yaml",
-    "homepage": [
-      "https://github.com/mhx/dwarfs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/mhx/dwarfs",
-      "This is the multicall version i.e all applets are symlinked"
-    ],
-    "provides": [
-      "dwarfs-tools==dwarfsck",
-      "dwarfs-tools==dwarfsextract",
-      "dwarfs-tools==mkdwarfs",
-      "dwarfs-tools==mount.dwarfs"
     ],
     "repology": [
       "dwarfs"
@@ -22191,7 +22192,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-8e5c2ad-250216T110558"
+    "version": "HEAD-5e615d1-250216T201804"
   },
   {
     "_disabled": "false",
@@ -23403,7 +23404,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "137.0.20250215211207"
+    "version": "137.0.20250216085220"
   },
   {
     "_disabled": "false",
@@ -25340,7 +25341,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-17c2d3b-250216T060242"
+    "version": "HEAD-7809dbc-250216T120250"
   },
   {
     "_disabled": "false",
@@ -25604,7 +25605,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "v1.1.2"
+    "version": "v1.1.2+1"
   },
   {
     "_disabled": "false",
@@ -27230,7 +27231,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-b4fe425-250214T142845"
+    "version": "HEAD-ad7a94e-250216T083309"
   },
   {
     "_disabled": "false",
@@ -41907,13 +41908,86 @@
       "Built Using Sharun [alpine]. Check/Report @ https://github.com/VHSgunzo/sharun",
       "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
       "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Please use runimage version of nmap if this doesn't work"
     ],
     "pkgcache": "ghcr.io/pkgforge/pkgcache/nmap/archive/sharun",
     "provides": [
       "ncat",
       "nmap",
       "nping"
+    ],
+    "repology": [
+      "nmap"
+    ],
+    "src_url": [
+      "https://github.com/nmap/nmap"
+    ],
+    "tag": [
+      "network-discovery",
+      "port-scanner"
+    ],
+    "version": "7.95"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "nmap",
+    "pkg_family": "nmap",
+    "pkg_id": "runimage.alpine.nmap",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-nmap/nmap/nmap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/nmap/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Network exploration tool and security/port scanner",
+    "distro_pkg": {
+      "alpine": [
+        "nmap"
+      ],
+      "archlinux": {
+        "extra": [
+          "nmap"
+        ]
+      },
+      "debian": [
+        "nmap"
+      ],
+      "gnuguix": [
+        "nmap"
+      ],
+      "homebrew": [
+        "nmap"
+      ],
+      "nixpkgs": [
+        "nmap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/nmap/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://nmap.org",
+      "https://github.com/nmap/nmap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/nmap/runimage/alpine",
+    "provides": [
+      "nmap"
     ],
     "repology": [
       "nmap"
@@ -43986,7 +44060,7 @@
     "tag": [
       "pager"
     ],
-    "version": "HEAD-b9c1699-250215T082650"
+    "version": "HEAD-0ed4a15-250216T174907"
   },
   {
     "_disabled": "false",
@@ -48324,7 +48398,7 @@
     "tag": [
       "linter"
     ],
-    "version": "HEAD-a59a228-250213T170722"
+    "version": "HEAD-8ece20b-250216T113117"
   },
   {
     "_disabled": "false",
@@ -49960,7 +50034,7 @@
       "emulator",
       "game"
     ],
-    "version": "1.2.392"
+    "version": "1.2.395"
   },
   {
     "_disabled": "false",
@@ -51689,7 +51763,7 @@
     "tag": [
       "shellcheck"
     ],
-    "version": "HEAD-6c76d27-250214T224753"
+    "version": "HEAD-ba0f5f2-250216T122133"
   },
   {
     "_disabled": "false",
@@ -52674,7 +52748,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-be40210-250215T195213"
+    "version": "HEAD-bb944c0-250216T171913"
   },
   {
     "_disabled": "false",
@@ -52729,7 +52803,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-be40210-250215T195213"
+    "version": "HEAD-bb944c0-250216T171913"
   },
   {
     "_disabled": "false",
@@ -52784,7 +52858,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-be40210-250215T195213"
+    "version": "HEAD-bb944c0-250216T171913"
   },
   {
     "_disabled": "false",
@@ -52840,7 +52914,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-be40210-250215T195213"
+    "version": "HEAD-bb944c0-250216T171913"
   },
   {
     "_disabled": "false",
@@ -52895,7 +52969,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-be40210-250215T195213"
+    "version": "HEAD-bb944c0-250216T171913"
   },
   {
     "_disabled": "false",
@@ -52950,7 +53024,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-be40210-250215T195213"
+    "version": "HEAD-bb944c0-250216T171913"
   },
   {
     "_disabled": "false",
@@ -53006,7 +53080,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-be40210-250215T195213"
+    "version": "HEAD-bb944c0-250216T171913"
   },
   {
     "_disabled": "false",
@@ -56035,7 +56109,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-606f7ef-250214T185610"
+    "version": "HEAD-b21eec7-250216T093802"
   },
   {
     "_disabled": "false",
@@ -56100,7 +56174,7 @@
       "logfile",
       "tail"
     ],
-    "version": "HEAD-d340742-250210T065130"
+    "version": "HEAD-db9de0b-250216T090321"
   },
   {
     "_disabled": "false",
@@ -62182,7 +62256,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-fe88ffa-250215T180149"
+    "version": "HEAD-2c661ce-250216T100335"
   },
   {
     "_disabled": "false",
@@ -63874,7 +63948,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.7.7t(2025-02-15at23:49:05)"
+    "version": "Twilightbuild-1.7.7t(2025-02-16at06:51:50)"
   },
   {
     "_disabled": "false",

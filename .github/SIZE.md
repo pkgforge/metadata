@@ -1,5 +1,5 @@
 ```mathematica
- 291M └─┬ main
+ 292M └─┬ main
  171M   ├─┬ misc
  171M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -82,13 +82,15 @@
   32K   │   ├── gen_meta_x86_64-Linux.sh
   32K   │   ├── gen_meta_aarch64-Linux.sh
  8.0K   │   └── sync_hf_mirror.sh
-  21M   ├─┬ external
-  11M   │ ├─┬ am
-  11M   │ │ ├─┬ data
+  22M   ├─┬ external
+  12M   │ ├─┬ am
+  12M   │ │ ├─┬ data
  4.7M   │ │ │ ├── x86_64-Linux.json
  3.7M   │ │ │ ├── x86_64-Linux.db
+ 776K   │ │ │ ├── x86_64-Linux.AM.txt
+ 728K   │ │ │ ├── aarch64-Linux.AM.txt
  592K   │ │ │ ├── x86_64-Linux.db.cba
- 544K   │ │ │ ├── x86_64-Linux.json.cba
+ 548K   │ │ │ ├── x86_64-Linux.json.cba
  488K   │ │ │ ├── x86_64-Linux.db.zstd
  480K   │ │ │ ├── x86_64-Linux.db.xz
  444K   │ │ │ ├── x86_64-Linux.json.zstd
@@ -100,9 +102,9 @@
  4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.db.bsum
  4.0K   │ │ │ └── TOTAL.json
-  36K   │ │ └─┬ scripts
+  40K   │ │ └─┬ scripts
+  16K   │ │   ├── gen_meta.sh
   12K   │ │   ├── gen_meta_old.sh
-  12K   │ │   ├── gen_meta.sh
  8.0K   │ │   └── gen_meta_tmp.sh
  5.3M   │ ├─┬ appimagehub
  5.3M   │ │ ├─┬ data
@@ -273,10 +275,10 @@
   32K   │   ├── gen_meta_x86_64-Linux.sh
   32K   │   ├── gen_meta_aarch64-Linux.sh
  8.0K   │   └── sync_hf_mirror.sh
- 316K   ├─┬ web
- 160K   │ ├─┬ cloudflare
-  84K   │ │ ├─┬ src
-  44K   │ │ │ ├── config.ts
+ 320K   ├─┬ web
+ 164K   │ ├─┬ cloudflare
+  88K   │ │ ├─┬ src
+  48K   │ │ │ ├── config.ts
   16K   │ │ │ ├── static.ts
   12K   │ │ │ ├── render.ts
  4.0K   │ │ │ ├── types.ts

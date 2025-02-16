@@ -144,7 +144,7 @@ const commonDescriptions = {
     '/external/am/aarch64-linux.sdb.zstd': "🗃️ Compressed ZSTD Soar DB (aarch64-Linux)",
     '/external/am/aarch64-Linux.sdb.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
     '/external/am/aarch64-linux.sdb.zstd.bsum': "🔐 B3SUM (aarch64-Linux)",
-    '/external/am/x86_64-linux.AM.txt': "📄 TXT Metadata for AM (x86_64-Linux)",
+    '/external/am/x86_64-Linux.AM.txt': "📄 TXT Metadata for AM (x86_64-Linux)",
     '/external/am/x86_64-Linux.json': "🧬 JSON Metadata (x86_64-Linux)",
     '/external/am/x86_64-linux.json': "🧬 JSON Metadata (x86_64-Linux)",
     '/external/am/x86_64-Linux.json.bsum': "🔐 B3SUM (x86_64-Linux)",

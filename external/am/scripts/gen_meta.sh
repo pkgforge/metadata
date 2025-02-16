@@ -131,7 +131,17 @@ if command -v rclone &> /dev/null &&\
   xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.json" ; generate_checksum "${HOST_TRIPLET}.json.xz"
  #To Zstd
   zstd --ultra -22 --force "${HOST_TRIPLET}.json" -o "${HOST_TRIPLET}.json.zstd" ; generate_checksum "${HOST_TRIPLET}.json.zstd"
- #Upload (Json)
+ #Gen & Upload AM (HF-Mirror-Only)
+  curl -qfsSL "https://hf.bincache.pkgforge.dev/${HOST_TRIPLET}.json" | jq -r '.[] | "| \(.pkg_name)#\(.pkg_id) | \(.description) | \(((.src_url[0] // .homepage[0]) // "N/A")) | \(.download_url) | \((.version // (.bsum // "latest"))[:12]) |"' > "${SYSTMP}/${HOST_TRIPLET}.AM.txt"
+  curl -qfsSL "https://hf.pkgcache.pkgforge.dev/${HOST_TRIPLET}.json" | jq -r '.[] | "| \(.pkg_name)#\(.pkg_id) | \(.description) | \(((.src_url[0] // .homepage[0]) // "N/A")) | \(.download_url) | \((.version // (.bsum // "latest"))[:12]) |"' >> "${SYSTMP}/${HOST_TRIPLET}.AM.txt"
+  sort -u "${SYSTMP}/${HOST_TRIPLET}.AM.txt" -o "${SYSTMP}/${HOST_TRIPLET}.AM.txt"
+  sed '/|[[:space:]]*|/d' -i "${SYSTMP}/${HOST_TRIPLET}.AM.txt"
+  if [[ "$(wc -l < "${SYSTMP}/${HOST_TRIPLET}.AM.txt" | tr -d '[:space:]')" -ge 100 ]]; then
+    sort -u "${SYSTMP}/${HOST_TRIPLET}.AM.txt" -o "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.AM.txt"
+    sed '/|[[:space:]]*|/d' -i "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.AM.txt"
+  fi
+ #Upload (R2)
+  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.AM.txt" "r2:/meta/external/am/${HOST_TRIPLET}.AM.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" "r2:/meta/external/am/${HOST_TRIPLET}.json" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.cba" "r2:/meta/external/am/${HOST_TRIPLET}.json.cba" --checksum --check-first --user-agent="${USER_AGENT}" &

@@ -1,5 +1,5 @@
 ```mathematica
- 290M └─┬ main
+ 291M └─┬ main
  171M   ├─┬ misc
  171M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -38,14 +38,14 @@
   16M   │ │ ├── x86_64-Linux.json
   15M   │ │ ├── aarch64-Linux.json
   13M   │ │ ├── x86_64-Linux.db
-  12M   │ │ ├── aarch64-Linux.db
+  13M   │ │ ├── aarch64-Linux.db
  8.3M   │ │ ├── x86_64-Linux.sdb
  8.0M   │ │ ├── aarch64-Linux.sdb
  1.0M   │ │ ├── x86_64-Linux.db.cba
  996K   │ │ ├── aarch64-Linux.db.cba
  964K   │ │ ├── x86_64-Linux.sdb.cba
- 924K   │ │ ├── aarch64-Linux.sdb.cba
- 920K   │ │ ├── x86_64-Linux.json.cba
+ 924K   │ │ ├── x86_64-Linux.json.cba
+ 916K   │ │ ├── aarch64-Linux.sdb.cba
  860K   │ │ ├── aarch64-Linux.json.cba
  704K   │ │ ├── x86_64-Linux.sdb.zstd
  696K   │ │ ├── x86_64-Linux.db.zstd
@@ -222,15 +222,15 @@
  8.0K   │   ├── repology_fetcher.sh
  4.0K   │   ├── gen_ghcr_backage.sh
  4.0K   │   └── gen_diff.sh
- 3.3M   ├─┬ pkgcache
+ 3.4M   ├─┬ pkgcache
  3.2M   │ ├─┬ data
- 640K   │ │ ├── x86_64-Linux.sdb
- 624K   │ │ ├── x86_64-Linux.db
- 600K   │ │ ├── x86_64-Linux.json
+ 644K   │ │ ├── x86_64-Linux.sdb
+ 632K   │ │ ├── x86_64-Linux.db
+ 604K   │ │ ├── x86_64-Linux.json
  208K   │ │ ├── aarch64-Linux.sdb
- 184K   │ │ ├── aarch64-Linux.db
- 172K   │ │ ├── aarch64-Linux.json
-  84K   │ │ ├── x86_64-Linux.sdb.cba
+ 188K   │ │ ├── aarch64-Linux.db
+ 176K   │ │ ├── aarch64-Linux.json
+  80K   │ │ ├── x86_64-Linux.sdb.cba
   72K   │ │ ├── x86_64-Linux.db.cba
   68K   │ │ ├── x86_64-Linux.json.cba
   64K   │ │ ├── x86_64-Linux.sdb.zstd

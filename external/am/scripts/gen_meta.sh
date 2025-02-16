@@ -131,17 +131,27 @@ if command -v rclone &> /dev/null &&\
   xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.json" ; generate_checksum "${HOST_TRIPLET}.json.xz"
  #To Zstd
   zstd --ultra -22 --force "${HOST_TRIPLET}.json" -o "${HOST_TRIPLET}.json.zstd" ; generate_checksum "${HOST_TRIPLET}.json.zstd"
- #Gen & Upload AM (HF-Mirror-Only)
-  curl -qfsSL "https://hf.bincache.pkgforge.dev/${HOST_TRIPLET}.json" | jq -r '.[] | "| \(.pkg_name)#\(.pkg_id) | \(.description) | \(((.src_url[0] // .homepage[0]) // "N/A")) | \(.download_url) | \((.version // (.bsum // "latest"))[:12]) |"' > "${SYSTMP}/${HOST_TRIPLET}.AM.txt"
-  curl -qfsSL "https://hf.pkgcache.pkgforge.dev/${HOST_TRIPLET}.json" | jq -r '.[] | "| \(.pkg_name)#\(.pkg_id) | \(.description) | \(((.src_url[0] // .homepage[0]) // "N/A")) | \(.download_url) | \((.version // (.bsum // "latest"))[:12]) |"' >> "${SYSTMP}/${HOST_TRIPLET}.AM.txt"
-  sort -u "${SYSTMP}/${HOST_TRIPLET}.AM.txt" -o "${SYSTMP}/${HOST_TRIPLET}.AM.txt"
-  sed '/|[[:space:]]*|/d' -i "${SYSTMP}/${HOST_TRIPLET}.AM.txt"
-  if [[ "$(wc -l < "${SYSTMP}/${HOST_TRIPLET}.AM.txt" | tr -d '[:space:]')" -ge 100 ]]; then
-    sort -u "${SYSTMP}/${HOST_TRIPLET}.AM.txt" -o "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.AM.txt"
-    sed '/|[[:space:]]*|/d' -i "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.AM.txt"
+ #Gen & Upload AM (HF-Mirror-Only) [aarch64-Linux]
+  curl -qfsSL "https://hf.bincache.pkgforge.dev/aarch64-Linux.json" | jq -r '.[] | "| \(.pkg_name)#\(.pkg_id) | \(.description) | \(((.src_url[0] // .homepage[0]) // "N/A")) | \(.download_url) | \((if .version then .version else (.bsum // "latest")[:12] end)) |"' > "${SYSTMP}/aarch64-Linux.AM.txt"
+  curl -qfsSL "https://hf.pkgcache.pkgforge.dev/aarch64-Linux.json" | jq -r '.[] | "| \(.pkg_name)#\(.pkg_id) | \(.description) | \(((.src_url[0] // .homepage[0]) // "N/A")) | \(.download_url) | \((if .version then .version else (.bsum // "latest")[:12] end)) |"' >> "${SYSTMP}/aarch64-Linux.AM.txt"
+  sort -u "${SYSTMP}/aarch64-Linux.AM.txt" -o "${SYSTMP}/aarch64-Linux.AM.txt"
+  sed '/|[[:space:]]*|/d' -i "${SYSTMP}/aarch64-Linux.AM.txt"
+  if [[ "$(wc -l < "${SYSTMP}/aarch64-Linux.AM.txt" | tr -d '[:space:]')" -ge 100 ]]; then
+    sort -u "${SYSTMP}/aarch64-Linux.AM.txt" -o "${GITHUB_WORKSPACE}/main/external/am/data/aarch64-Linux.AM.txt"
+    sed '/|[[:space:]]*|/d' -i "${GITHUB_WORKSPACE}/main/external/am/data/aarch64-Linux.AM.txt"
+  fi
+ #Gen & Upload AM (HF-Mirror-Only) [x86_64-Linux]
+  curl -qfsSL "https://hf.bincache.pkgforge.dev/x86_64-Linux.json" | jq -r '.[] | "| \(.pkg_name)#\(.pkg_id) | \(.description) | \(((.src_url[0] // .homepage[0]) // "N/A")) | \(.download_url) | \((if .version then .version else (.bsum // "latest")[:12] end)) |"' > "${SYSTMP}/x86_64-Linux.AM.txt"
+  curl -qfsSL "https://hf.pkgcache.pkgforge.dev/x86_64-Linux.json" | jq -r '.[] | "| \(.pkg_name)#\(.pkg_id) | \(.description) | \(((.src_url[0] // .homepage[0]) // "N/A")) | \(.download_url) | \((if .version then .version else (.bsum // "latest")[:12] end)) |"' >> "${SYSTMP}/x86_64-Linux.AM.txt"
+  sort -u "${SYSTMP}/x86_64-Linux.AM.txt" -o "${SYSTMP}/x86_64-Linux.AM.txt"
+  sed '/|[[:space:]]*|/d' -i "${SYSTMP}/x86_64-Linux.AM.txt"
+  if [[ "$(wc -l < "${SYSTMP}/x86_64-Linux.AM.txt" | tr -d '[:space:]')" -ge 100 ]]; then
+    sort -u "${SYSTMP}/x86_64-Linux.AM.txt" -o "${GITHUB_WORKSPACE}/main/external/am/data/x86_64-Linux.AM.txt"
+    sed '/|[[:space:]]*|/d' -i "${GITHUB_WORKSPACE}/main/external/am/data/x86_64-Linux.AM.txt"
   fi
  #Upload (R2)
-  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.AM.txt" "r2:/meta/external/am/${HOST_TRIPLET}.AM.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/aarch64-Linux.AM.txt" "r2:/meta/external/am/aarch64-Linux.AM.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
+  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/x86_64-Linux.AM.txt" "r2:/meta/external/am/x86_64-Linux.AM.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" "r2:/meta/external/am/${HOST_TRIPLET}.json" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.cba" "r2:/meta/external/am/${HOST_TRIPLET}.json.cba" --checksum --check-first --user-agent="${USER_AGENT}" &

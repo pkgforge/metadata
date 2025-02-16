@@ -3280,7 +3280,7 @@
       "debian",
       "packaging"
     ],
-    "version": "HEAD-1abb735-250215T191042"
+    "version": "HEAD-ab18da3-250215T222556"
   },
   {
     "_disabled": "false",
@@ -10397,7 +10397,7 @@
       "bugbounty",
       "cdn"
     ],
-    "version": "v1.1.1"
+    "version": "v1.1.2"
   },
   {
     "_disabled": "false",
@@ -21949,6 +21949,7 @@
     "pkg_id": "github.com.dtolnay.faketty",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dtolnay-faketty/faketty/faketty",
+    "bincache": "ghcr.io/pkgforge/bincache/faketty/official/faketty",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/faketty/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -23402,7 +23403,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "137.0.20250215092323"
+    "version": "137.0.20250215211207"
   },
   {
     "_disabled": "false",
@@ -25339,7 +25340,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-a6eab76-250215T180335"
+    "version": "HEAD-807d87f-250216T000623"
   },
   {
     "_disabled": "false",
@@ -27002,6 +27003,7 @@
     "pkg_id": "gitlab.com.gitlab-org.cli",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/org-cli/gitlab-cli/gitlab-cli",
+    "bincache": "ghcr.io/pkgforge/bincache/gitlab-cli/official/gitlab-cli",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gitlab-cli/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -34061,7 +34063,7 @@
     "tag": [
       "kubernetes"
     ],
-    "version": "HEAD-bccea4b-250211T082227"
+    "version": "HEAD-1118f84-250215T175008"
   },
   {
     "_disabled": "false",
@@ -34306,6 +34308,78 @@
     "_disabled": "false",
     "pkg": "kdenlive",
     "pkg_family": "kdenlive",
+    "pkg_id": "gitlab.com.kdenlive.kdenlive.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-stable/kdenlive/kdenlive",
+    "app_id": "org.kde.kdenlive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.stable.yaml",
+    "category": [
+      "AudioVideoEditing"
+    ],
+    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks",
+    "distro_pkg": {
+      "alpine": [
+        "kdenlive"
+      ],
+      "archlinux": {
+        "aur": [
+          "kdenlive-appimage",
+          "kdenlive-git"
+        ],
+        "extra": [
+          "kdenlive"
+        ]
+      },
+      "debian": [
+        "kdenlive"
+      ],
+      "gnuguix": [
+        "kdenlive"
+      ],
+      "homebrew": [
+        "kdenlive"
+      ],
+      "nixpkgs": [
+        "kdePackages.kdenlive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.stable.yaml",
+    "homepage": [
+      "https://apps.kde.org/kdenlive",
+      "https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
+    "provides": [
+      "kdenlive"
+    ],
+    "repology": [
+      "kdenlive"
+    ],
+    "src_url": [
+      "https://kdenlive.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "24.12.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kdenlive",
+    "pkg_family": "kdenlive",
     "pkg_id": "runimage.alpine.kdenlive",
     "pkg_type": "runimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-kdenlive/kdenlive/kdenlive",
@@ -34372,77 +34446,6 @@
     ],
     "src_url": [
       "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/kdenlive"
-    ],
-    "tag": [
-      "editor"
-    ],
-    "version": "24.12.2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "kdenlive",
-    "pkg_family": "kdenlive",
-    "pkg_id": "gitlab.com.kdenlive.kdenlive.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-stable/kdenlive/kdenlive",
-    "app_id": "org.kde.kdenlive",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.stable.yaml",
-    "category": [
-      "AudioVideoEditing"
-    ],
-    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks",
-    "distro_pkg": {
-      "alpine": [
-        "kdenlive"
-      ],
-      "archlinux": {
-        "aur": [
-          "kdenlive-appimage",
-          "kdenlive-git"
-        ],
-        "extra": [
-          "kdenlive"
-        ]
-      },
-      "debian": [
-        "kdenlive"
-      ],
-      "gnuguix": [
-        "kdenlive"
-      ],
-      "homebrew": [
-        "kdenlive"
-      ],
-      "nixpkgs": [
-        "kdePackages.kdenlive"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.stable.yaml",
-    "homepage": [
-      "https://apps.kde.org/kdenlive",
-      "https://invent.kde.org/multimedia/kdenlive"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
-    ],
-    "provides": [
-      "kdenlive"
-    ],
-    "repology": [
-      "kdenlive"
-    ],
-    "src_url": [
-      "https://kdenlive.org/en/download/"
     ],
     "tag": [
       "editor"
@@ -35108,7 +35111,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-02-14"
+    "version": "2025-02-15"
   },
   {
     "_disabled": "false",
@@ -37534,7 +37537,7 @@
     "tag": [
       "log"
     ],
-    "version": "2.2.3"
+    "version": "2.3.0"
   },
   {
     "_disabled": "false",
@@ -38243,7 +38246,7 @@
       "email",
       "mail"
     ],
-    "version": "v1.22.2"
+    "version": "v1.22.3"
   },
   {
     "_disabled": "false",
@@ -39313,7 +39316,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-a3ce03c-250214T212149"
+    "version": "HEAD-af1f966-250215T154007"
   },
   {
     "_disabled": "false",
@@ -41100,7 +41103,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-8bd8699-250215T212511"
+    "version": "HEAD-a1a2ec2-250215T134222"
   },
   {
     "_disabled": "false",
@@ -42510,7 +42513,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-2cb0591-250214T185154"
+    "version": "HEAD-2b8fb4f-250215T185533"
   },
   {
     "_disabled": "false",
@@ -44970,6 +44973,7 @@
     "pkg_id": "github.com.eliukblau.pixterm",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/eliukblau-pixterm/pixterm/pixterm",
+    "bincache": "ghcr.io/pkgforge/bincache/pixterm/official/pixterm",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/pixterm/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -49956,7 +49960,7 @@
       "emulator",
       "game"
     ],
-    "version": "1.2.389"
+    "version": "1.2.390"
   },
   {
     "_disabled": "false",
@@ -51839,7 +51843,7 @@
     "tag": [
       "image"
     ],
-    "version": "HEAD-4dd8d71-250214T112653"
+    "version": "HEAD-55209c1-250215T205735"
   },
   {
     "_disabled": "false",
@@ -52068,7 +52072,7 @@
       "messenger",
       "privacy"
     ],
-    "version": "v6.2.4"
+    "version": "v6.2.5"
   },
   {
     "_disabled": "false",
@@ -56199,6 +56203,7 @@
     "pkg_id": "github.com.tamasfe.taplo",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tamasfe-taplo/taplo/taplo",
+    "bincache": "ghcr.io/pkgforge/bincache/taplo/official/taplo",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/taplo/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -58913,6 +58918,7 @@
     "pkg_id": "github.com.rpodgorny.unionfs-fuse",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/unionfs-fuse/unionfs-fuse/unionfs-fuse",
+    "bincache": "ghcr.io/pkgforge/bincache/unionfs-fuse/official/mount.unionfs",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/unionfs-fuse/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -58966,6 +58972,7 @@
     "pkg_id": "github.com.rpodgorny.unionfs-fuse3",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/unionfs-fuse3/unionfs-fuse3/unionfs-fuse3",
+    "bincache": "ghcr.io/pkgforge/bincache/unionfs-fuse3/official/mount.unionfs",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/unionfs-fuse3/static.official.source.yaml",
     "category": [
       "ConsoleOnly",

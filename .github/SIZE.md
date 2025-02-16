@@ -226,7 +226,7 @@
  3.2M   │ ├─┬ data
  644K   │ │ ├── x86_64-Linux.sdb
  632K   │ │ ├── x86_64-Linux.db
- 604K   │ │ ├── x86_64-Linux.json
+ 608K   │ │ ├── x86_64-Linux.json
  208K   │ │ ├── aarch64-Linux.sdb
  188K   │ │ ├── aarch64-Linux.db
  176K   │ │ ├── aarch64-Linux.json

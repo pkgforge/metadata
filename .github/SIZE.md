@@ -176,8 +176,8 @@
  1.2M   │ │ ├── BACKAGE.json
  924K   │ │ ├── INDEX.db
  792K   │ │ ├── pub_issues_binaries.txt
- 452K   │ │ ├── DIFF_bincache_x86_64-Linux.json
- 352K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 444K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 356K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  304K   │ │ ├── pub_issues_packages.txt
  260K   │ │ ├── INDEX.json.cba
  164K   │ │ ├── INDEX.json.xz
@@ -186,8 +186,8 @@
  152K   │ │ ├── GH_REPO.md
  128K   │ │ ├── INDEX.db.zstd
  120K   │ │ ├── INDEX.db.xz
-  40K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   36K   │ │ ├── URLS.txt
+  36K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   28K   │ │ ├── GH_REPO_ARCHIVED.md
   28K   │ │ ├── DIFF_bincache.json
   24K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json

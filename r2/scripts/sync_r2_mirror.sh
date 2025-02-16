@@ -66,7 +66,7 @@ export HOST_TRIPLET="$(echo "${HOST_TRIPLET}" | tr -d '[:space:]')"
 export HOST_TRIPLET_L="${HOST_TRIPLET,,}"
 ##Metadata
 curl -qfsSL "https://meta.pkgforge.dev/${UPSTREAM_REPO}/${HOST_TRIPLET}.json" -o "${TMPDIR}/METADATA.json"
-if [[ "$(jq -r '.[] | .ghcr_blob' "${TMPDIR}/METADATA.json" | wc -l)" -le 20 ]]; then
+if [[ "$(cat "${TMPDIR}/METADATA.json" | jq -r '.[] | .ghcr_blob' | wc -l)" -le 20 ]]; then
   echo -e "\n[-] FATAL: Failed to Fetch ${UPSTREAM_REPO} (${HOST_TRIPLET}) Metadata\n"
  exit 1
 fi
@@ -102,7 +102,7 @@ sync_to_r2()
      fi
   fi
  ##Get needed vars
-  GHCR_BLOB="$(jq -r '.[] | select((.pkg_id | ascii_downcase) == (env.R2_PKGID | ascii_downcase)) | .ghcr_blob' "${TMPDIR}/METADATA.json" | grep -im1 "${UPSTREAM_REPO}" | tr -d '[:space:]')"
+  GHCR_BLOB="$(cat "${TMPDIR}/METADATA.json" | jq -r '.[] | select((.pkg_id | ascii_downcase) == (env.R2_PKGID | ascii_downcase)) | .ghcr_blob' | grep -im1 "${UPSTREAM_REPO}" | tr -d '[:space:]')"
   export GHCR_BLOB
   if [ -z "${GHCR_BLOB+x}" ] || [ -z "${GHCR_BLOB##*[[:space:]]}" ]; then
     echo -e "[-] FATAL: Failed to get GHCR Blob <== [${R2_PKGID}]"

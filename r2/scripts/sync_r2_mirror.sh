@@ -102,7 +102,7 @@ sync_to_r2()
      fi
   fi
  ##Get needed vars
-  GHCR_BLOB="$(cat "${TMPDIR}/METADATA.json" | jq -r '.[] | select((.pkg_id | ascii_downcase) == (env.R2_PKGID | ascii_downcase)) | .ghcr_blob' | grep -im1 "${UPSTREAM_REPO}" | tr -d '[:space:]')"
+  GHCR_BLOB="$(cat "${TMPDIR}/METADATA.json" | jq -r '.[] | select((.pkg_id | ascii_downcase) == (env.R2_PKGID | ascii_downcase) and .pkg_name == env.R2_PKGNAME) | .ghcr_blob' | grep -im1 "${UPSTREAM_REPO}" | tr -d '[:space:]')"
   export GHCR_BLOB
   if [ -z "${GHCR_BLOB+x}" ] || [ -z "${GHCR_BLOB##*[[:space:]]}" ]; then
     echo -e "[-] FATAL: Failed to get GHCR Blob <== [${R2_PKGID}]"

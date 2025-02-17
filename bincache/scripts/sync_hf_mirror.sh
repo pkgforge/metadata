@@ -45,6 +45,15 @@ if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/METADATA.json" | wc -l)" -le 20 ]]; 
   echo -e "\n[-] FATAL: Failed to Fetch Bincache (${HOST_TRIPLET}) Metadata\n"
  exit 1 
 fi
+#Get HF Repo
+pushd "$(mktemp -d)" &>/dev/null && git clone --filter="blob:none" --depth="1" --no-checkout "https://huggingface.co/datasets/pkgforge/bincache" && cd "./bincache"
+ git sparse-checkout set "" && git checkout
+ unset HF_REPO_LOCAL ; HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
+ if [ ! -d "${HF_REPO_LOCAL}" ] || [ $(du -s "${HF_REPO_LOCAL}" | cut -f1) -le 100 ]; then
+   echo -e "\n[X] FATAL: Failed to clone HF Repo\n"
+  exit 1
+ fi
+popd &>/dev/null
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
@@ -52,11 +61,18 @@ fi
 sync_to_hf() 
 {
  ##Chdir
-  pushd "${TMPDIR}" >/dev/null 2>&1
+  pushd "${TMPDIR}" &>/dev/null
  ##Enable Debug
   if [ "${DEBUG}" = "1" ] || [ "${DEBUG}" = "ON" ]; then
      set -x
   fi
+ ##Cleanup
+  cleanup_func()
+  {
+    rm -rf "${PKG_DIR}" 2>/dev/null && popd &>/dev/null
+    unset GHCR_FILE GHCR_FILES GHCR_PKG GHCR_PKGNAME GHCR_PKGVER GHCR_PKGPATH HF_PKG_NAME HF_PKGPATH HF_REPO_DIR INPUT PKG_DIR
+  }
+  export -f cleanup_func
  ##Input
   local INPUT="${1:-$(cat)}"
   export GHCR_PKG="$(echo ${INPUT} | tr -d '[:space:]')"
@@ -65,57 +81,70 @@ sync_to_hf()
   export GHCR_PKGPATH="$(echo ${INPUT} | sed -n 's/.*\/bincache\/\(.*\):.*/\1/p' | tr -d '[:space:]')"
   export PKG_DIR="$(mktemp -d)"
  ##Sync
-  echo -e "\n[+] Syncing ${GHCR_PKGNAME} (${GHCR_PKGVER})\n"
-  pushd "${PKG_DIR}" >/dev/null 2>&1 && \
-   git clone --depth="1" --filter="blob:none" --no-checkout "https://huggingface.co/datasets/pkgforge/bincache" && \
-   cd "./bincache" && export HF_REPO_DIR="$(realpath .)"
-   git lfs install &>/dev/null ; huggingface-cli lfs-enable-largefiles "." &>/dev/null
-   [[ -d "${HF_REPO_DIR}" ]] || echo -e "\n[-] FATAL: Failed to create ${HF_REPO_DIR}\n $(exit 1)"
-   export HF_PKGPATH="${HF_REPO_DIR}/${GHCR_PKGPATH}/${GHCR_PKGVER}"
-   mkdir -pv "${HF_PKGPATH}" ; git fetch origin main ; git lfs track "./${GHCR_PKGPATH}/${GHCR_PKGVER}/**"
-   git sparse-checkout set "" ; git sparse-checkout set --no-cone --sparse-index ".gitattributes"
-   git checkout ; ls -lah "." "./${GHCR_PKGPATH}/${GHCR_PKGVER}" ; git sparse-checkout list
-  #Fetch Package
-   pushd "${HF_PKGPATH}" >/dev/null 2>&1 && oras pull "${GHCR_PKG}" ; unset GHCR_FILE GHCR_FILES
-    #Ensure all files were fetched
-     readarray -t "GHCR_FILES" < <(jq -r --arg GHCR_PKG "$GHCR_PKG" '.[] | select(.ghcr_pkg == $GHCR_PKG) | .ghcr_files[]' "${TMPDIR}/METADATA.json")
-     for GHCR_FILE in "${GHCR_FILES[@]}"; do
-      if [ ! -s "${HF_PKGPATH}/${GHCR_FILE}" ]; then
-       echo -e "\n[-] Missing/Empty: ${HF_PKGPATH}/${GHCR_FILE}\n(Retrying ...)\n"
-       oras pull "${GHCR_PKG}"
+  HF_PKG_NAME="$(cat "${TMPDIR}/METADATA.json" | jq -r 'map(select(type == "object")) | .[] | select((.ghcr_pkg // "" | ascii_downcase) == (env.GHCR_PKG | ascii_downcase)) | .pkg_name' | tr -d '[:space:]')"
+  export HF_PKG_NAME
+  echo -e "\n[+] Syncing ${GHCR_PKGPATH}/${GHCR_PKGVER}/${HF_PKG_NAME}\n"
+  #Check
+   if [[ "$(git -C "${HF_REPO_LOCAL}" ls-tree --name-only 'HEAD' -- "${GHCR_PKGPATH}/${GHCR_PKGVER}/${HF_PKG_NAME}" 2>/dev/null)" == "${GHCR_PKGPATH}/${GHCR_PKGVER}/${HF_PKG_NAME}" ]]; then
+     if [[ "${FORCE_REUPLOAD}" != "YES" ]]; then
+       echo "[+] Skipping ==> ${GHCR_PKGPATH}/${GHCR_PKGVER}/${HF_PKG_NAME} [Exists]"
+       cleanup_func
+       return 0 || exit 0
+     else
+       echo "[+] Force Reuploading ==> ${GHCR_PKGPATH}/${GHCR_PKGVER}/${HF_PKG_NAME} [Exists]"
+     fi
+   else
+     echo -e "[+] Uploading ${GHCR_PKGPATH}/${GHCR_PKGVER}/${HF_PKG_NAME}\n"
+   fi
+  #Proceed
+   pushd "${PKG_DIR}" &>/dev/null && \
+    git clone --depth="1" --filter="blob:none" --no-checkout "https://huggingface.co/datasets/pkgforge/bincache" && \
+    cd "./bincache" && export HF_REPO_DIR="$(realpath .)"
+    git lfs install &>/dev/null ; huggingface-cli lfs-enable-largefiles "." &>/dev/null
+    [[ -d "${HF_REPO_DIR}" ]] || echo -e "\n[-] FATAL: Failed to create ${HF_REPO_DIR}\n $(exit 1)"
+    export HF_PKGPATH="${HF_REPO_DIR}/${GHCR_PKGPATH}/${GHCR_PKGVER}"
+    mkdir -pv "${HF_PKGPATH}" ; git fetch origin main ; git lfs track "./${GHCR_PKGPATH}/${GHCR_PKGVER}/**"
+    git sparse-checkout set "" ; git sparse-checkout set --no-cone --sparse-index ".gitattributes"
+    git checkout ; ls -lah "." "./${GHCR_PKGPATH}/${GHCR_PKGVER}" ; git sparse-checkout list
+   #Fetch Package
+    pushd "${HF_PKGPATH}" &>/dev/null && oras pull "${GHCR_PKG}" ; unset GHCR_FILE GHCR_FILES
+     #Ensure all files were fetched
+      readarray -t "GHCR_FILES" < <(jq -r --arg GHCR_PKG "$GHCR_PKG" '.[] | select(.ghcr_pkg == $GHCR_PKG) | .ghcr_files[]' "${TMPDIR}/METADATA.json")
+      for GHCR_FILE in "${GHCR_FILES[@]}"; do
        if [ ! -s "${HF_PKGPATH}/${GHCR_FILE}" ]; then
-         echo -e "\n[-] FATAL: Failed to Fetch ${HF_PKGPATH}/${GHCR_FILE}\n"
-         return 1
+        echo -e "\n[-] Missing/Empty: ${HF_PKGPATH}/${GHCR_FILE}\n(Retrying ...)\n"
+        oras pull "${GHCR_PKG}"
+        if [ ! -s "${HF_PKGPATH}/${GHCR_FILE}" ]; then
+          echo -e "\n[-] FATAL: Failed to Fetch ${HF_PKGPATH}/${GHCR_FILE}\n"
+          return 1
+        fi
        fi
-      fi
-     done
-    #Edit json
-     find "${HF_PKGPATH}" -type f -iname "*.json" -type f -print0 | xargs -0 -I "{}" sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/bincache/(.*)\?tag=(.*)\&download=(.*)$|https://hf.bincache.pkgforge.dev/\1/\2/\3|g" -i "{}"
-    #Push
-     pushd "${HF_REPO_DIR}" >/dev/null 2>&1 && \
-       git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
-       git lfs track "./${GHCR_PKGPATH}/${GHCR_PKGVER}/**"
-       if [ -d "${HF_PKGPATH}" ] && [ "$(du -s "${HF_PKGPATH}" | cut -f1)" -gt 100 ]; then
-         find "${HF_PKGPATH}" -type f -size -3c -delete
-         git sparse-checkout add "${GHCR_PKGPATH}/${GHCR_PKGVER}"
-         git sparse-checkout list
-         git add --all --verbose && git commit -m "[+] PKG [${GHCR_PKGNAME}] (${GHCR_PKGVER})"
-         git pull origin main ; git push origin main #&& sleep "$(shuf -i 500-4500 -n 1)e-3"
-         git --no-pager log '-1' --pretty="format:'%h - %ar - %s - %an'"
-         if ! git ls-remote --heads origin | grep -qi "$(git rev-parse HEAD)"; then
-          echo -e "\n[-] WARN: Failed to push ==> ${GHCR_PKGNAME}/${GHCR_PKGVER}\n(Retrying ...)\n"
+      done
+     #Edit json
+      find "${HF_PKGPATH}" -type f -iname "*.json" -type f -print0 | xargs -0 -I "{}" sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/bincache/(.*)\?tag=(.*)\&download=(.*)$|https://hf.bincache.pkgforge.dev/\1/\2/\3|g" -i "{}"
+     #Push
+      pushd "${HF_REPO_DIR}" &>/dev/null && \
+        git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
+        git lfs track "./${GHCR_PKGPATH}/${GHCR_PKGVER}/**"
+        if [ -d "${HF_PKGPATH}" ] && [ "$(du -s "${HF_PKGPATH}" | cut -f1)" -gt 100 ]; then
+          find "${HF_PKGPATH}" -type f -size -3c -delete
+          git sparse-checkout add "${GHCR_PKGPATH}/${GHCR_PKGVER}"
+          git sparse-checkout list
+          git add --all --verbose && git commit -m "[+] PKG [${GHCR_PKGNAME}] (${GHCR_PKGVER})"
           git pull origin main ; git push origin main #&& sleep "$(shuf -i 500-4500 -n 1)e-3"
           git --no-pager log '-1' --pretty="format:'%h - %ar - %s - %an'"
           if ! git ls-remote --heads origin | grep -qi "$(git rev-parse HEAD)"; then
-            echo -e "\n[-] FATAL: Failed to push ==> ${GHCR_PKGNAME}/${GHCR_PKGVER}\n"
+           echo -e "\n[-] WARN: Failed to push ==> ${GHCR_PKGNAME}/${GHCR_PKGVER}\n(Retrying ...)\n"
+           git pull origin main ; git push origin main #&& sleep "$(shuf -i 500-4500 -n 1)e-3"
+           git --no-pager log '-1' --pretty="format:'%h - %ar - %s - %an'"
+           if ! git ls-remote --heads origin | grep -qi "$(git rev-parse HEAD)"; then
+             echo -e "\n[-] FATAL: Failed to push ==> ${GHCR_PKGNAME}/${GHCR_PKGVER}\n"
+           fi
           fi
-         fi
-         du -sh "${HF_PKGPATH}" && realpath "${HF_PKGPATH}"
-       fi
-   pushd "${TMPDIR}" >/dev/null 2>&1
- ##Cleanup
-   rm -rf "${PKG_DIR}" 2>/dev/null && popd >/dev/null 2>&1
-   unset GHCR_FILE GHCR_FILES GHCR_PKG GHCR_PKGNAME GHCR_PKGVER GHCR_PKGPATH HF_PKGPATH HF_REPO_DIR INPUT PKG_DIR
+          du -sh "${HF_PKGPATH}" && realpath "${HF_PKGPATH}"
+        fi
+    pushd "${TMPDIR}" &>/dev/null
+    cleanup_func
  ##Disable Debug 
   if [ "${DEBUG}" = "1" ] || [ "${DEBUG}" = "ON" ]; then
      set +x
@@ -126,13 +155,8 @@ export -f sync_to_hf
 
 #-------------------------------------------------------#
 ##Run
-pushd "${TMPDIR}" >/dev/null 2>&1
+pushd "${TMPDIR}" &>/dev/null
  unset HF_PKG_INPUT ; readarray -t "HF_PKG_INPUT" < <( jq -r '.[] | .ghcr_pkg' "${TMPDIR}/METADATA.json" | sort -u)
-  if [[ -n "${PARALLEL_LIMIT}" ]]; then
-   printf '%s\n' "${HF_PKG_INPUT[@]}" | xargs -P "${PARALLEL_LIMIT}" -I "{}" bash -c 'sync_to_hf "$@" 2>/dev/null' _ "{}"
-  else
-  #Not safe, lot's of conflict
-   printf '%s\n' "${HF_PKG_INPUT[@]}" | xargs -P "$(($(nproc)+1))" -I "{}" bash -c 'sync_to_hf "$@" 2>/dev/null' _ "{}"
-  fi
-popd >/dev/null 2>&1
-#-------------------------------------------------------# 
+ printf '%s\n' "${HF_PKG_INPUT[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'sync_to_hf "$@"' _ "{}"
+popd &>/dev/null
+#-------------------------------------------------------#

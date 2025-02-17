@@ -123,7 +123,7 @@ sync_to_hf()
      #Edit json
       find "${HF_PKGPATH}" -type f -iname "*.json" -type f -print0 | xargs -0 -I "{}" sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/bincache/(.*)\?tag=(.*)\&download=(.*)$|https://hf.bincache.pkgforge.dev/\1/\2/\3|g" -i "{}"
      #Push
-      pushd "${HF_REPO_DIR}" &>/dev/null && \
+      pushd "${HF_PKGPATH}" &>/dev/null && \
         git remote -v
         COMMIT_MSG="[+] PKG [${GHCR_PKGNAME}] (${GHCR_PKGVER})"
         git pull origin main

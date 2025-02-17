@@ -127,6 +127,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "nixpkgs.brave",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/nixappimage/nixpkgs",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/brave/brave-browser"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "1.75.178"
+  },
+  {
+    "_disabled": "false",
     "pkg": "chromium",
     "pkg_family": "chromium",
     "pkg_id": "nixpkgs.chromium",
@@ -838,7 +902,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "1.1.0"
+    "version": "1.1.2"
   },
   {
     "_disabled": "false",
@@ -911,6 +975,54 @@
       "editor"
     ],
     "version": "2025-02-16"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "knot",
+    "pkg_family": "android-knot",
+    "pkg_id": "github.com.ic005k.Knot",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ic005k-knot/android-knot/knot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/android-knot/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Record everything in the simplest way possible",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "android-knot-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/android-knot/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/ic005k/Knot"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/android-knot/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ic005k/Knot"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/knot/appimage/official",
+    "provides": [
+      "knot"
+    ],
+    "repology": [
+      "android-knot"
+    ],
+    "src_url": [
+      "https://github.com/ic005k/Knot"
+    ],
+    "version": "1.2.10"
   },
   {
     "_disabled": "false",
@@ -1206,6 +1318,89 @@
       "Games"
     ],
     "version": "1.0.0.82"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "telegram-desktop",
+    "pkg_family": "telegram-desktop",
+    "pkg_id": "nixpkgs.telegram-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/telegram-desktop/telegram-desktop/telegram-desktop",
+    "app_id": "org.telegram.desktop",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "IRCClient"
+    ],
+    "description": "Official desktop version of Telegram messaging app",
+    "distro_pkg": {
+      "alpine": [
+        "telegram-desktop"
+      ],
+      "archlinux": {
+        "aur": [
+          "telegram-desktop-bin",
+          "telegram-desktop-dev",
+          "telegram-desktop-dev-bin",
+          "telegram-desktop-git"
+        ],
+        "extra": [
+          "telegram-desktop"
+        ]
+      },
+      "debian": [
+        "telegram-desktop"
+      ],
+      "gnuguix": [
+        "telegram-desktop"
+      ],
+      "homebrew": [
+        "telegram-desktop",
+        "telegram-desktop@beta"
+      ],
+      "nixpkgs": [
+        "tdesktop",
+        "telegram-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://desktop.telegram.org",
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/telegram-desktop/nixappimage/nixpkgs",
+    "provides": [
+      "telegram-desktop==Telegram-Desktop"
+    ],
+    "repology": [
+      "telegram-desktop"
+    ],
+    "src_url": [
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "5.11.1"
   },
   {
     "_disabled": "true",

@@ -131,6 +131,74 @@
   },
   {
     "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "133.0.6943.98"
+  },
+  {
+    "_disabled": "false",
     "pkg": "discord",
     "pkg_family": "discord",
     "pkg_id": "nixpkgs.discord",
@@ -516,67 +584,6 @@
       "terminal"
     ],
     "version": "$(catVERSION)"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "ghostty",
-    "pkg_family": "ghostty",
-    "pkg_id": "github.com.psadi.ghostty-appimage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/ghostty/ghostty",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty/appimage.psadi.stable.yaml",
-    "category": [
-      "TerminalEmulator"
-    ],
-    "description": "Fast, native, feature-rich terminal emulator pushing modern features",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "ghostty-git"
-        ],
-        "extra": [
-          "ghostty"
-        ]
-      },
-      "homebrew": [
-        "ghostty"
-      ],
-      "nixpkgs": [
-        "ghostty"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty/appimage.psadi.stable.yaml",
-    "homepage": [
-      "https://ghostty.org",
-      "https://github.com/ghostty-org/ghostty"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "psadi (https://github.com/psadi)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/psadi/ghostty-appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghostty/appimage/psadi",
-    "provides": [
-      "ghostty"
-    ],
-    "repology": [
-      "ghostty"
-    ],
-    "src_url": [
-      "https://github.com/psadi/ghostty-appimage"
-    ],
-    "tag": [
-      "terminal"
-    ],
-    "version": "v1.1.2+1"
   },
   {
     "_disabled": "true",
@@ -1084,6 +1091,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.7.7t(2025-02-16at06:51:50)"
+    "version": "Twilightbuild-1.7.7t(2025-02-16at16:07:19)"
   }
 ]

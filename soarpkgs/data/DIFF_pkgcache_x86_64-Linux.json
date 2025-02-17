@@ -198,6 +198,74 @@
   },
   {
     "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "133.0.6943.98"
+  },
+  {
+    "_disabled": "false",
     "pkg": "citron",
     "pkg_family": "citron",
     "pkg_id": "github.com.pkgforge-dev.Citron-AppImage.stable",
@@ -310,59 +378,6 @@
       "game"
     ],
     "version": "0.4"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "cromite",
-    "pkg_family": "cromite",
-    "pkg_id": "github.com.pkgforge-dev.Cromite-AppImage",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cromite-appimage/cromite/cromite",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/cromite/appimage.pkgforge-dev.stable.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "A Bromite fork with ad blocking and privacy enhancements",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "cromite-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/cromite/appimage.pkgforge-dev.stable.yaml",
-    "homepage": [
-      "https://cromite.org",
-      "https://github.com/uazo/cromite"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Cromite-AppImage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/cromite/appimage/pkgforge-dev",
-    "provides": [
-      "cromite==cromite-browser"
-    ],
-    "repology": [
-      "cromite"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge-dev/Cromite-AppImage"
-    ],
-    "tag": [
-      "bromite",
-      "browser"
-    ],
-    "version": "v133.0.6943.99"
   },
   {
     "_disabled": "false",
@@ -682,66 +697,6 @@
     "version": "1.11.92"
   },
   {
-    "_disabled": "false",
-    "pkg": "firefox",
-    "pkg_family": "firefox",
-    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.nightly",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/firefox/firefox",
-    "app_id": "org.mozilla.firefox",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.nightly.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "A web browser built from Firefox source tree (Nightly)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "firefox-nightly",
-          "firefox-nightly-bin"
-        ]
-      },
-      "homebrew": [
-        "firefox@nightly"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.nightly.yaml",
-    "homepage": [
-      "http://www.mozilla.com",
-      "https://hg.mozilla.org/mozilla-central",
-      "https://github.com/srevinsaju/Firefox-Appimage"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
-    "provides": [
-      "firefox=>firefox-nightly"
-    ],
-    "repology": [
-      "firefox"
-    ],
-    "src_url": [
-      "https://github.com/srevinsaju/Firefox-Appimage"
-    ],
-    "tag": [
-      "browser",
-      "Networking/WWW",
-      "network.web.browser"
-    ],
-    "version": "137.0.20250216085220"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "replaced": [
@@ -811,67 +766,6 @@
       "terminal"
     ],
     "version": "$(catVERSION)"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "ghostty",
-    "pkg_family": "ghostty",
-    "pkg_id": "github.com.psadi.ghostty-appimage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/ghostty/ghostty",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty/appimage.psadi.stable.yaml",
-    "category": [
-      "TerminalEmulator"
-    ],
-    "description": "Fast, native, feature-rich terminal emulator pushing modern features",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "ghostty-git"
-        ],
-        "extra": [
-          "ghostty"
-        ]
-      },
-      "homebrew": [
-        "ghostty"
-      ],
-      "nixpkgs": [
-        "ghostty"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty/appimage.psadi.stable.yaml",
-    "homepage": [
-      "https://ghostty.org",
-      "https://github.com/ghostty-org/ghostty"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "psadi (https://github.com/psadi)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/psadi/ghostty-appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghostty/appimage/psadi",
-    "provides": [
-      "ghostty"
-    ],
-    "repology": [
-      "ghostty"
-    ],
-    "src_url": [
-      "https://github.com/psadi/ghostty-appimage"
-    ],
-    "tag": [
-      "terminal"
-    ],
-    "version": "v1.1.2+1"
   },
   {
     "_disabled": "true",
@@ -948,6 +842,78 @@
   },
   {
     "_disabled": "false",
+    "pkg": "kdenlive",
+    "pkg_family": "kdenlive",
+    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
+    "app_id": "org.kde.kdenlive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
+    "category": [
+      "AudioVideoEditing"
+    ],
+    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
+    "distro_pkg": {
+      "alpine": [
+        "kdenlive"
+      ],
+      "archlinux": {
+        "aur": [
+          "kdenlive-appimage",
+          "kdenlive-git"
+        ],
+        "extra": [
+          "kdenlive"
+        ]
+      },
+      "debian": [
+        "kdenlive"
+      ],
+      "gnuguix": [
+        "kdenlive"
+      ],
+      "homebrew": [
+        "kdenlive"
+      ],
+      "nixpkgs": [
+        "kdePackages.kdenlive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
+    "homepage": [
+      "https://apps.kde.org/kdenlive",
+      "https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
+    "provides": [
+      "kdenlive"
+    ],
+    "repology": [
+      "kdenlive"
+    ],
+    "src_url": [
+      "https://kdenlive.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "2025-02-16"
+  },
+  {
+    "_disabled": "false",
     "pkg": "krita",
     "pkg_family": "krita",
     "pkg_id": "gitlab.com.krita.krita.next",
@@ -1017,7 +983,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-02-15"
+    "version": "2025-02-16"
   },
   {
     "_disabled": "true",
@@ -1184,191 +1150,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "signal-desktop",
-    "pkg_family": "signal-desktop",
-    "pkg_id": "github.com.karo-solutions.Signal-Desktop-AppImage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/signal-desktop/signal-desktop",
-    "app_id": "org.signal.Signal",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/signal-desktop/appimage.karo-solutions.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Private, simple, and secure messenger",
-    "distro_pkg": {
-      "alpine": [
-        "signal-desktop"
-      ],
-      "archlinux": {
-        "aur": [
-          "signal-desktop-beta"
-        ],
-        "extra": [
-          "signal-desktop"
-        ]
-      },
-      "homebrew": [
-        "signal"
-      ],
-      "nixpkgs": [
-        "signal-desktop"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/signal-desktop/appimage.karo-solutions.stable.yaml",
-    "homepage": [
-      "https://signal.org",
-      "https://github.com/signalapp/signal-desktop"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/signal-desktop/assets/default.png",
-    "license": [
-      "AGPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/karo-solutions/Signal-Desktop-AppImage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/signal-desktop/appimage/karo-solutions",
-    "provides": [
-      "signal-desktop"
-    ],
-    "repology": [
-      "signal-desktop"
-    ],
-    "src_url": [
-      "https://github.com/karo-solutions/Signal-Desktop-AppImage"
-    ],
-    "tag": [
-      "chat",
-      "messenger"
-    ],
-    "version": "v7.42.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "simplex-desktop",
-    "pkg_family": "simplex-desktop",
-    "pkg_id": "github.com.simplex-chat.simplex-chat",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/simplex-chat/simplex-desktop/simplex-desktop",
-    "app_id": "chat.simplex.simplex",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-desktop/appimage.official.stable.yaml",
-    "category": [
-      "Chat",
-      "InstantMessaging"
-    ],
-    "description": "Desktop application for SimpleX Chat, A 100% private-by-design chat platform",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "simplex-chat"
-        ]
-      },
-      "nixpkgs": [
-        "simplex-chat-desktop"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/appimage.official.stable.yaml",
-    "homepage": [
-      "https://simplex.chat",
-      "https://github.com/simplex-chat/simplex-chat"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/assets/default.png",
-    "license": [
-      "AGPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/simplex-chat/simplex-chat"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/simplex-desktop/appimage/official",
-    "provides": [
-      "simplex-desktop==simplex-chat-desktop"
-    ],
-    "repology": [
-      "simplex-chat",
-      "simplex-chat-desktop"
-    ],
-    "src_url": [
-      "https://github.com/simplex-chat/simplex-chat"
-    ],
-    "tag": [
-      "chat",
-      "messenger",
-      "privacy"
-    ],
-    "version": "v6.2.5"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "spotify",
-    "pkg_family": "spotify",
-    "pkg_id": "github.com.ivan-hc.Spotify-appimage",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/spotify-appimage/spotify/spotify",
-    "app_id": "com.spotify.Client",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/spotify/appimage.ivan-hc.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A proprietary music streaming service",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "spotify"
-        ]
-      },
-      "homebrew": [
-        "spotify"
-      ],
-      "nixpkgs": [
-        "spotify"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/spotify/appimage.ivan-hc.stable.yaml",
-    "homepage": [
-      "https://www.spotify.com",
-      "https://www.spotify.com/download/linux"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/spotify/assets/default.png",
-    "license": [
-      "Unfree"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/ivan-hc/Spotify-appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/spotify/appimage/ivan-hc",
-    "provides": [
-      "spotify"
-    ],
-    "repology": [
-      "spotify"
-    ],
-    "src_url": [
-      "https://github.com/ivan-hc/Spotify-appimage"
-    ],
-    "tag": [
-      "Music"
-    ],
-    "version": "1.2.56.502.6824"
-  },
-  {
-    "_disabled": "false",
     "pkg": "steam",
     "pkg_family": "steam",
     "pkg_id": "runimage.cachyos.steam",
@@ -1425,121 +1206,6 @@
       "Games"
     ],
     "version": "1.0.0.82"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "torzu",
-    "pkg_family": "torzu",
-    "pkg_id": "github.com.pkgforge-dev.Torzu-AppImage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/torzu/torzu",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/torzu/appimage.pkgforge-dev.stable.yaml",
-    "category": [
-      "Game"
-    ],
-    "description": "Fork of yuzu, an open-source Nintendo Switch emulator",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "torzu",
-          "torzu-git"
-        ]
-      },
-      "nixpkgs": [
-        "torzu"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/torzu/appimage.pkgforge-dev.stable.yaml",
-    "homepage": [
-      "https://notabug.org/litucks/torzu"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/torzu/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Torzu-AppImage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/torzu/appimage/pkgforge-dev",
-    "provides": [
-      "torzu"
-    ],
-    "repology": [
-      "torzu"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge-dev/Torzu-AppImage"
-    ],
-    "tag": [
-      "emulator",
-      "game"
-    ],
-    "version": "20250216-151949"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "torzu",
-    "pkg_family": "torzu",
-    "pkg_id": "github.com.pkgforge-dev.Torzu-AppImage.v3",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-v3/torzu/torzu",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/torzu/appimage.pkgforge-dev.v3.yaml",
-    "category": [
-      "Game"
-    ],
-    "description": "Fork of yuzu, an open-source Nintendo Switch emulator (x86-64-v3)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "torzu",
-          "torzu-git"
-        ]
-      },
-      "nixpkgs": [
-        "torzu"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/torzu/appimage.pkgforge-dev.v3.yaml",
-    "homepage": [
-      "https://notabug.org/litucks/torzu"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/torzu/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Torzu-AppImage",
-      "Optimized for x86-64-v3",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/torzu/appimage/pkgforge-dev",
-    "provides": [
-      "torzu"
-    ],
-    "repology": [
-      "torzu"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge-dev/Torzu-AppImage"
-    ],
-    "tag": [
-      "emulator",
-      "game"
-    ],
-    "version": "20250216-151949"
   },
   {
     "_disabled": "true",
@@ -1738,6 +1404,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.7.7t(2025-02-16at06:51:50)"
+    "version": "Twilightbuild-1.7.7t(2025-02-16at16:07:19)"
   }
 ]

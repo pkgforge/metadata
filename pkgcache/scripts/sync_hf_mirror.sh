@@ -184,6 +184,6 @@ export -f sync_to_hf
 ##Run
 pushd "${TMPDIR}" &>/dev/null
  unset HF_PKG_INPUT ; readarray -t "HF_PKG_INPUT" < <( jq -r '.[] | .ghcr_pkg' "${TMPDIR}/METADATA.json" | sort -u)
- printf '%s\n' "${HF_PKG_INPUT[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'timeout -k 10s 120s sync_to_hf "$@"' _ "{}"
+ printf '%s\n' "${HF_PKG_INPUT[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" timeout -k 10s 120s bash -c 'sync_to_hf "$@"' _ "{}"
 popd &>/dev/null
 #-------------------------------------------------------#

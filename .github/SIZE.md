@@ -107,10 +107,10 @@
   12K   │ │   ├── gen_meta_old.sh
  8.0K   │ │   └── gen_meta_tmp.sh
  5.4M   │ ├─┬ appimagehub
- 5.3M   │ │ ├─┬ data
+ 5.4M   │ │ ├─┬ data
  2.0M   │ │ │ ├── x86_64-Linux.json
  1.7M   │ │ │ ├── x86_64-Linux.db
- 272K   │ │ │ ├── x86_64-Linux.json.cba
+ 276K   │ │ │ ├── x86_64-Linux.json.cba
  264K   │ │ │ ├── x86_64-Linux.db.cba
  220K   │ │ │ ├── x86_64-Linux.db.zstd
  212K   │ │ │ ├── x86_64-Linux.json.zstd

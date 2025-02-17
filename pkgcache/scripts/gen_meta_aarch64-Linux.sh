@@ -267,21 +267,23 @@ generate_meta()
              "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="ghcr_size" validate_json
            #Add/Update hf_pkg
             echo -e "[+] Adding/Updating [${PKG}] ('hf_pkg')"
-            unset HF_PKG HF_PKG_PATH HF_PKG_SNAP HF_PKG_STATUS
+            unset HF_PKG HF_PKG_NAME HF_PKG_PATH HF_PKG_SNAP HF_PKG_STATUS
             HF_PKG="$(jq -r '.download_url // ""' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]' | sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/pkgcache/(.*)\?tag=(.*)\&download=(.*)$|https://hf.co/datasets/pkgforge/pkgcache/tree/main/\1/\2|g")"
+            HF_PKG_NAME="$(jq -r '.pkg_name' "${TMPDIR}/${METADATA_JSON}.tmp01" | tr -d '[:space:]')"
             ##Slow & Expensive
             #HF_PKG_STATUS="$(curl -X "HEAD" -kqfsSL "${HF_PKG}" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
             #if echo "${HF_PKG_STATUS}" | grep -qiv '200$'; then
             #  HF_PKG=""
             #fi
             HF_PKG_PATH="$(echo "${HF_PKG}" | sed -E 's|.*/tree/main/||' | tr -d '[:space:]')"
-            if [[ "$(git -C "${HF_REPO_LOCAL}" ls-tree --name-only 'HEAD' -- "${HF_PKG_PATH}" 2>/dev/null)" == "${HF_PKG_PATH}" ]]; then
+            echo -e "[+] HF: ${HF_PKG_PATH}/${HF_PKG_NAME}"
+            if [[ "$(git -C "${HF_REPO_LOCAL}" ls-tree --name-only 'HEAD' -- "${HF_PKG_PATH}/${HF_PKG_NAME}" 2>/dev/null)" == "${HF_PKG_PATH}/${HF_PKG_NAME}" ]]; then
              #Reset Path as PKG
               HF_PKG="https://hf.co/datasets/pkgforge/pkgcache/tree/main/${HF_PKG_PATH}"
             else
              #retry with a snapshot tag
               HF_PKG_SNAP="$(jq -r '.snapshots[-1] // "" | split("[")[0]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -iv 'null' | tr -d '[:space:]')"
-              if [[ "$(git -C "${HF_REPO_LOCAL}" ls-tree --name-only 'HEAD' -- "${HF_PKG_PATH%/*}/${HF_PKG_SNAP}" 2>/dev/null)" == "${HF_PKG_PATH%/*}/${HF_PKG_SNAP}" ]]; then
+              if [[ "$(git -C "${HF_REPO_LOCAL}" ls-tree --name-only 'HEAD' -- "${HF_PKG_PATH%/*}/${HF_PKG_SNAP}/${HF_PKG_NAME}" 2>/dev/null)" == "${HF_PKG_PATH%/*}/${HF_PKG_SNAP}/${HF_PKG_NAME}" ]]; then
                 HF_PKG="https://hf.co/datasets/pkgforge/pkgcache/tree/main/${HF_PKG_PATH%/*}/${HF_PKG_SNAP}"
               else
                 HF_PKG=""
@@ -314,11 +316,7 @@ export -f generate_meta
 ##Generate
 pushd "${TMPDIR}" >/dev/null 2>&1
  unset GHCR_PKG ; readarray -t "GHCR_PKG" < "${TMPDIR}/ghcr_pkgs.txt"
-  if [[ -n "${PARALLEL_LIMIT}" ]]; then
-   printf '%s\n' "${GHCR_PKG[@]}" | xargs -P "${PARALLEL_LIMIT}" -I "{}" bash -c 'generate_meta "$@" 2>/dev/null' _ "{}"
-  else 
-   printf '%s\n' "${GHCR_PKG[@]}" | xargs -P "$(($(nproc)+1))" -I "{}" bash -c 'generate_meta "$@" 2>/dev/null' _ "{}"
-  fi
+ printf '%s\n' "${GHCR_PKG[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'generate_meta "$@"' _ "{}"
 popd >/dev/null 2>&1
 #-------------------------------------------------------#
 

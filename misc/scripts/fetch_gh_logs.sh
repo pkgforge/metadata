@@ -41,7 +41,7 @@ download_action_logs()
   fi
  ##Download logs for each job
   echo -e "\n [+] Downloading logs...\n"
-  printf "%s\n" "${RUN_IDS[@]}" | xargs -I "{}" -n 1 -P "${PARALLEL_LIMIT:-4}" bash -c '
+  printf "%s\n" "${RUN_IDS[@]}" | xargs -I "{}" -n 1 -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" bash -c '
   RUN_ID="{}" ; export RUN_ID
   echo "ID: ${RUN_ID}"
   JOB_IDS=($(gh api "/repos/${REPO}/actions/runs/${RUN_ID}/jobs" -q ".jobs[].id"))

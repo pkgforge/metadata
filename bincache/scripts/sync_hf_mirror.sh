@@ -134,7 +134,7 @@ sync_to_hf()
         sed '/\*/!d' -i '.gitattributes'
         if [ -d "${HF_PKGPATH}" ] && [ "$(du -s "${HF_PKGPATH}" | cut -f1)" -gt 100 ]; then
           find "${HF_PKGPATH}" -type f -size -3c -delete
-          git sparse-checkout add "**"
+          git sparse-checkout add "**" 2>/dev/null
           git sparse-checkout list
           find "." -maxdepth 1 -type f -not -path "*/\.*" | xargs -I "{}" git add "{}" --verbose
           git add --all --renormalize --verbose

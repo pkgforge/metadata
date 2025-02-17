@@ -123,51 +123,53 @@ sync_to_hf()
      #Edit json
       find "${HF_PKGPATH}" -type f -iname "*.json" -type f -print0 | xargs -0 -I "{}" sed -E "s|https://api\.ghcr\.pkgforge\.dev/pkgforge/bincache/(.*)\?tag=(.*)\&download=(.*)$|https://hf.bincache.pkgforge.dev/\1/\2/\3|g" -i "{}"
      #Push
-      pushd "${HF_PKGPATH}" &>/dev/null && \
+      pushd "${HF_REPO_DIR}" &>/dev/null && \
         git remote -v
         COMMIT_MSG="[+] PKG [${GHCR_PKGNAME}] (${GHCR_PKGVER})"
         git pull origin main
         git pull origin main --ff-only || git pull --rebase origin main
         git merge --no-ff -m "Merge & Sync"
-        git lfs track './**/*' 2>/dev/null
+        git lfs track "./${GHCR_PKGPATH}/${GHCR_PKGVER}/**" 2>/dev/null
         git lfs untrack '.gitattributes' 2>/dev/null
         sed '/\*/!d' -i '.gitattributes'
         if [ -d "${HF_PKGPATH}" ] && [ "$(du -s "${HF_PKGPATH}" | cut -f1)" -gt 100 ]; then
           find "${HF_PKGPATH}" -type f -size -3c -delete
-          git sparse-checkout add "**" 2>/dev/null
+          git sparse-checkout add "${GHCR_PKGPATH}/${GHCR_PKGVER}"
           git sparse-checkout list
-          find "." -maxdepth 1 -type f -not -path "*/\.*" | xargs -I "{}" git add "{}" --verbose
-          git add --all --renormalize --verbose
-          git commit -m "${COMMIT_MSG}"
-          retry_git_push()
-           {
-            for i in {1..5}; do
-             #Generic Merge
-              git pull origin main --ff-only || git pull --rebase origin main
-              git merge --no-ff -m "${COMMIT_MSG}"
-             #Push
-              git pull origin main 2>/dev/null
-              if git push -u origin main; then
-                 echo -e "\n[+] Pushed ==> ${GHCR_PKGNAME}/${GHCR_PKGVER}\n"
-                 #echo "PUSH_SUCCESSFUL=YES" >> "${GITHUB_ENV}"
-                 break
-              fi
-             #Sleep randomly 
-              sleep "$(shuf -i 500-4500 -n 1)e-3"
-            done
-           }
-           export -f retry_git_push
-           retry_git_push
-           git --no-pager log '-1' --pretty="format:'%h - %ar - %s - %an'"
-           if ! git ls-remote --heads origin | grep -qi "$(git rev-parse HEAD)"; then
-            echo -e "\n[-] WARN: Failed to push ==> ${GHCR_PKGNAME}/${GHCR_PKGVER}\n(Retrying ...)\n"
+          pushd "${HF_PKGPATH}" &>/dev/null && \
+           find "." -maxdepth 1 -type f -not -path "*/\.*" | xargs -I "{}" git add "{}" --verbose
+           git add --all --renormalize --verbose
+           git commit -m "${COMMIT_MSG}"
+          pushd "${HF_REPO_DIR}" &>/dev/null
+           retry_git_push()
+            {
+             for i in {1..5}; do
+              #Generic Merge
+               git pull origin main --ff-only || git pull --rebase origin main
+               git merge --no-ff -m "${COMMIT_MSG}"
+              #Push
+               git pull origin main 2>/dev/null
+               if git push -u origin main; then
+                  echo -e "\n[+] Pushed ==> ${GHCR_PKGNAME}/${GHCR_PKGVER}\n"
+                  #echo "PUSH_SUCCESSFUL=YES" >> "${GITHUB_ENV}"
+                  break
+               fi
+              #Sleep randomly 
+               sleep "$(shuf -i 500-4500 -n 1)e-3"
+             done
+            }
+            export -f retry_git_push
             retry_git_push
             git --no-pager log '-1' --pretty="format:'%h - %ar - %s - %an'"
             if ! git ls-remote --heads origin | grep -qi "$(git rev-parse HEAD)"; then
-              echo -e "\n[-] FATAL: Failed to push ==> ${GHCR_PKGNAME}/${GHCR_PKGVER}\n"
-              retry_git_push
+             echo -e "\n[-] WARN: Failed to push ==> ${GHCR_PKGNAME}/${GHCR_PKGVER}\n(Retrying ...)\n"
+             retry_git_push
+             git --no-pager log '-1' --pretty="format:'%h - %ar - %s - %an'"
+             if ! git ls-remote --heads origin | grep -qi "$(git rev-parse HEAD)"; then
+               echo -e "\n[-] FATAL: Failed to push ==> ${GHCR_PKGNAME}/${GHCR_PKGVER}\n"
+               retry_git_push
+             fi
             fi
-           fi
            du -sh "${HF_PKGPATH}" && realpath "${HF_PKGPATH}"
         fi
     pushd "${TMPDIR}" &>/dev/null

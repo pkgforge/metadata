@@ -219,6 +219,71 @@
     ]
   },
   {
+    "_disabled": "false",
+    "pkg": "b3sum",
+    "pkg_family": "b3sum",
+    "pkg_id": "github.com.BLAKE3-team.BLAKE3",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/team-blake3/b3sum/b3sum",
+    "bincache": "ghcr.io/pkgforge/bincache/b3sum/official/b3sum",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/b3sum/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command line utility for calculating BLAKE3 hashes",
+    "distro_pkg": {
+      "alpine": [
+        "b3sum"
+      ],
+      "archlinux": {
+        "extra": [
+          "b3sum"
+        ]
+      },
+      "debian": [
+        "rust-b3sum",
+        "rust-blake3"
+      ],
+      "nixpkgs": [
+        "b3sum"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/b3sum/static.official.source.yaml",
+    "homepage": [
+      "https://blake3.io",
+      "https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "provides": [
+      "b3sum"
+    ],
+    "repology": [
+      "blake3"
+    ],
+    "src_url": [
+      "https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "tag": [
+      "bsum",
+      "checksum"
+    ],
+    "version": "HEAD-f8c5f7d-250217T151740"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": [
       "Too slow & Expensive"
@@ -1840,7 +1905,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-80fb4f3-250217T180203"
+    "version": "HEAD-ea1562b-250218T004236"
   },
   {
     "_disabled": "false",
@@ -2157,7 +2222,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-80fb4f3-250217T180203"
+    "version": "HEAD-ea1562b-250218T004236"
   },
   {
     "_disabled": "true",
@@ -2737,7 +2802,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-e61640a-250217T144928"
+    "version": "HEAD-4532637-250217T152941"
   },
   {
     "_disabled": "false",
@@ -3379,7 +3444,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-399f262-250217T212927"
+    "version": "HEAD-ab0240e-250218T065809"
   },
   {
     "_disabled": "false",
@@ -3735,7 +3800,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-d0f0c8d-250217T180318"
+    "version": "HEAD-2b91bd9-250218T000541"
   },
   {
     "_disabled": "false",
@@ -4043,6 +4108,51 @@
       "httpserver"
     ],
     "version": "HEAD-9862845-230726T055235"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gocryptfs",
+    "pkg_family": "gocryptfs",
+    "pkg_id": "github.com.rfjakob.gocryptfs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rfjakob-gocryptfs/gocryptfs/gocryptfs",
+    "bincache": "ghcr.io/pkgforge/bincache/gocryptfs/official/gocryptfs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gocryptfs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Encrypted overlay filesystem written in Go",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gocryptfs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rfjakob/gocryptfs"
+    ],
+    "provides": [
+      "gocryptfs",
+      "gocryptfs-xray"
+    ],
+    "repology": [
+      "gocryptfs"
+    ],
+    "src_url": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "tag": [
+      "encryption",
+      "filesystem"
+    ],
+    "version": "HEAD-3c82930-250217T213741"
   },
   {
     "_disabled": "false",
@@ -4461,6 +4571,52 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gup",
+    "pkg_family": "gup",
+    "pkg_id": "github.com.nao1215.gup",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nao1215-gup/gup/gup",
+    "bincache": "ghcr.io/pkgforge/bincache/gup/official/gup",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gup/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Update binaries installed by go install with goroutines",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gup/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/nao1215/gup"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/nao1215/gup"
+    ],
+    "provides": [
+      "gup"
+    ],
+    "repology": [
+      "gup"
+    ],
+    "src_url": [
+      "https://github.com/nao1215/gup"
+    ],
+    "tag": [
+      "updater"
+    ],
+    "version": "HEAD-4cc481b-250218T080800"
+  },
+  {
+    "_disabled": "false",
     "pkg": "html-xml-utils",
     "pkg_family": "html-xml-utils",
     "pkg_id": "nixpkgs.html-xml-utils",
@@ -4863,7 +5019,7 @@
     "tag": [
       "json"
     ],
-    "version": "HEAD-6d8e9f9-250217T214101"
+    "version": "HEAD-8ba03f7-250218T082205"
   },
   {
     "_disabled": "false",
@@ -4971,7 +5127,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-00f87a2-250217T170258"
+    "version": "HEAD-55bb43c-250218T003631"
   },
   {
     "_disabled": "false",
@@ -5107,7 +5263,7 @@
     "tag": [
       "ipfs"
     ],
-    "version": "HEAD-40a7a38-250214T182531"
+    "version": "HEAD-e41dc12-250217T153253"
   },
   {
     "_disabled": "false",
@@ -5224,7 +5380,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-a7bfeca-250217T185644"
+    "version": "HEAD-e15e495-250217T201910"
   },
   {
     "_disabled": "false",
@@ -5590,7 +5746,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b826b37-250217T092658"
+    "version": "HEAD-0436f6d-250217T160120"
   },
   {
     "_disabled": "false",
@@ -6201,7 +6357,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-67ecd67-250217T120257"
+    "version": "HEAD-fd53b80-250217T184100"
   },
   {
     "_disabled": "false",
@@ -6268,7 +6424,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-abe8da6-250217T170730"
+    "version": "HEAD-8fb5a9c-250218T000803"
   },
   {
     "_disabled": "false",
@@ -6746,7 +6902,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-273226d-250217T125207"
+    "version": "HEAD-5d1e2b1-250217T141038"
   },
   {
     "_disabled": "false",
@@ -7504,7 +7660,63 @@
     "tag": [
       "torrent"
     ],
-    "version": "release-5.0.3_v2.0.11"
+    "version": "release-5.0.4_v2.0.11"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "qsv",
+    "pkg_family": "qsv",
+    "pkg_id": "github.com.dathere.qsv",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dathere-qsv/qsv/qsv",
+    "bincache": "ghcr.io/pkgforge/bincache/qsv/official/qsv",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qsv/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Blazing-fast Data-Wrangling toolkit",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "qsv",
+          "qsv-bin"
+        ]
+      },
+      "nixpkgs": [
+        "qsv"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qsv/static.official.source.yaml",
+    "homepage": [
+      "https://qsv.dathere.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT",
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dathere/qsv"
+    ],
+    "repology": [
+      "qsv"
+    ],
+    "src_url": [
+      "https://github.com/dathere/qsv"
+    ],
+    "tag": [
+      "csv",
+      "textproc"
+    ],
+    "version": "HEAD-d938de5-250217T155325"
   },
   {
     "_disabled": "false",
@@ -8150,6 +8362,43 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sic",
+    "pkg_family": "sic",
+    "pkg_id": "github.com.foresterre.sic",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/foresterre-sic/sic/sic",
+    "bincache": "ghcr.io/pkgforge/bincache/sic/official/sic",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sic/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Accessible image processing and conversion from the terminal using image-rs/image",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sic/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/foresterre/sic"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/foresterre/sic"
+    ],
+    "src_url": [
+      "https://github.com/foresterre/sic"
+    ],
+    "tag": [
+      "image"
+    ],
+    "version": "HEAD-f936e6f-250218T015116"
+  },
+  {
+    "_disabled": "false",
     "pkg": "simplex-chat",
     "pkg_family": "simplex-chat",
     "pkg_id": "ppkg.simplex-chat",
@@ -8265,6 +8514,55 @@
       "Utility"
     ],
     "version": "HEAD-5cbb74f-250217T220108"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "skupper",
+    "pkg_family": "skupper",
+    "pkg_id": "github.com.skupperproject.skupper",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/skupperproject-skupper/skupper/skupper",
+    "bincache": "ghcr.io/pkgforge/bincache/skupper/official/skupper",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/skupper/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Virtual Application Network, enabling rich hybrid cloud communication",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/skupper/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/skupperproject/skupper"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/skupperproject/skupper"
+    ],
+    "provides": [
+      "skupper",
+      "skupper-controller"
+    ],
+    "repology": [
+      "cloud",
+      "network"
+    ],
+    "src_url": [
+      "https://github.com/skupperproject/skupper"
+    ],
+    "tag": [
+      "utility",
+      "skupper"
+    ],
+    "version": "HEAD-b872a1a-250217T195209"
   },
   {
     "_disabled": "false",
@@ -10186,5 +10484,56 @@
       "process-monitor"
     ],
     "version": "HEAD-28c3b44-250214T150847"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zsv",
+    "pkg_family": "zsv",
+    "pkg_id": "github.com.liquidaty.zsv.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zsv-source/zsv/zsv",
+    "bincache": "ghcr.io/pkgforge/bincache/zsv/official/zsv",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zsv/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line utility for parsing CSV",
+    "distro_pkg": {
+      "nixpkgs": [
+        "zsv"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zsv/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/liquidaty/zsv"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/liquidaty/zsv"
+    ],
+    "provides": [
+      "zsv"
+    ],
+    "repology": [
+      "zsv"
+    ],
+    "src_url": [
+      "https://github.com/liquidaty/zsv"
+    ],
+    "tag": [
+      "csv"
+    ],
+    "version": "HEAD-152a421-250217T123107"
   }
 ]

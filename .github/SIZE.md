@@ -114,7 +114,7 @@
  264K   │ │ │ ├── x86_64-Linux.db.cba
  220K   │ │ │ ├── x86_64-Linux.db.zstd
  212K   │ │ │ ├── x86_64-Linux.json.zstd
- 208K   │ │ │ ├── x86_64-Linux.db.xz
+ 212K   │ │ │ ├── x86_64-Linux.db.xz
  204K   │ │ │ ├── x86_64-Linux.json.xz
   80K   │ │ │ ├── aarch64-Linux.json
   80K   │ │ │ ├── aarch64-Linux.db
@@ -225,7 +225,7 @@
  4.0K   │   ├── gen_ghcr_backage.sh
  4.0K   │   └── gen_diff.sh
  3.4M   ├─┬ pkgcache
- 3.3M   │ ├─┬ data
+ 3.2M   │ ├─┬ data
  648K   │ │ ├── x86_64-Linux.sdb
  636K   │ │ ├── x86_64-Linux.db
  612K   │ │ ├── x86_64-Linux.json
@@ -241,7 +241,6 @@
   60K   │ │ ├── x86_64-Linux.db.xz
   56K   │ │ ├── x86_64-Linux.json.zstd
   52K   │ │ ├── x86_64-Linux.json.xz
-  28K   │ │ ├── aarch64-Linux.db.cba
   24K   │ │ ├── aarch64-Linux.sdb.zstd
   24K   │ │ ├── aarch64-Linux.sdb.cba
   24K   │ │ ├── aarch64-Linux.json.cba
@@ -250,6 +249,7 @@
   20K   │ │ ├── aarch64-Linux.json.xz
   20K   │ │ ├── aarch64-Linux.db.zstd
   20K   │ │ ├── aarch64-Linux.db.xz
+  20K   │ │ ├── aarch64-Linux.db.cba
  4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.bsum

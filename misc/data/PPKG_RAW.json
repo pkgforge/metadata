@@ -367,7 +367,7 @@
   {
     "pkgname": "appimagetool",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A command-line tool to generate an AppImage from an existing AppDir",
     "web-url": "https://github.com/AppImage/appimagetool",
     "git-url": "https://github.com/AppImage/appimagetool",
@@ -801,7 +801,7 @@
   {
     "pkgname": "base16",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "base16 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -814,7 +814,7 @@
   {
     "pkgname": "base64",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "base64 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -1261,7 +1261,7 @@
   {
     "pkgname": "boringssl",
     "pkgtype": "exe+lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A fork of OpenSSL that is designed to meet Google needs",
     "web-url": "https://boringssl.googlesource.com/boringssl/",
     "git-url": "https://github.com/google/boringssl",
@@ -1472,7 +1472,7 @@
   {
     "pkgname": "c-examples",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "C语言学习项目",
     "web-url": "https://github.com/leleliu008/C-examples",
@@ -2291,7 +2291,7 @@
   {
     "pkgname": "cpuinfo",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -3087,7 +3087,7 @@
   {
     "pkgname": "easyutils",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A collections of easy to use command-line utilities",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -3132,7 +3132,7 @@
   {
     "pkgname": "effcee",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A C++ library for stateful pattern matching of strings",
     "web-url": "https://github.com/google/effcee",
     "git-url": "https://github.com/google/effcee",
@@ -4476,7 +4476,7 @@
   },
   {
     "pkgname": "ghostscript",
-    "pkgtype": "exe+lib",
+    "pkgtype": "exe",
     "version": "10.04.0",
     "license": "AGPL-3.0-or-later",
     "summary": "An interpreter for PostScript and PDF",
@@ -4485,14 +4485,36 @@
     "src-url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10040/ghostpdl-10.04.0.tar.xz",
     "src-sha": "0603f5629bc6f567b454911d104cd96702489c9e70e577787843f480b23d4a77",
     "dep-pkg": "libidn libexpat liblcms2 libjbig2dec libfreetype libtesseract",
-    "dep-upp": "curl bsdtar gmake gmake",
+    "dep-lib": "-lgomp",
+    "dep-upp": "libz curl bsdtar gmake gmake",
     "bsystem": "configure",
-    "binbstd": "1",
+    "binbstd": "0",
     "xxflags": "-std=c++11",
     "parallel": "1",
-    "dopatch": "sed -i 's|-g -o|$(LDFLAGS) -o|' base/unix-dll.mak",
-    "prepare": "rm -rf tesseract/ freetype/ jbig2dec/ openjpeg/ lcms2mt/ libpng/ expat/ jpeg/ tiff/ zlib/\n\nif isCrossBuild ; then\n    export CCAUX=\"$CC_FOR_BUILD\"\n    export CFLAGSAUX=\"$CFLAGS_FOR_BUILD $LDFLAGS_FOR_BUILD\"\n    export CPPFLAGSAUX=\"$CPPFLAGS_FOR_BUILD\"\n    export LDFLAGSAUX=\"$LDFLAGS_FOR_BUILD\"\nelse\n    export CCAUX=\"$CC $CFLAGS $CPPFLAGS $LDFLAGS\"\n    export CFLAGSAUX=\"$CFLAGS $LDFLAGS\"\n    export CPPFLAGSAUX=\"$CPPFLAGS\"\n    export LDFLAGSAUX=\"$LDFLAGS\"\nfi",
-    "install": "configure \\\n    --disable-compile-inits \\\n    --disable-cups \\\n    --disable-gtk \\\n    --with-system-libtiff \\\n    --without-x\nrun make soclean\nrun make install-so"
+    "dopatch": "rm -rf tesseract/ freetype/ jbig2dec/ openjpeg/ lcms2mt/ libpng/ expat/ jpeg/ tiff/ zlib/\n\nsed -i 's|-g -o|$(LDFLAGS) -o|' base/unix-dll.mak\n\nif [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    gsed -i 's|DO_NOT_USE_SPRINTF|sprintf|' base/stdio_.h\nfi",
+    "prepare": "if isCrossBuild ; then\n    export CCAUX=\"$CC_FOR_BUILD\"\n    export CFLAGSAUX=\"$CFLAGS_FOR_BUILD $LDFLAGS_FOR_BUILD\"\n    export CPPFLAGSAUX=\"$CPPFLAGS_FOR_BUILD\"\n    export LDFLAGSAUX=\"$LDFLAGS_FOR_BUILD\"\nelse\n    export CCAUX=\"$CC $CFLAGS $CPPFLAGS $LDFLAGS\"\n    export CFLAGSAUX=\"$CFLAGS $LDFLAGS\"\n    export CPPFLAGSAUX=\"$CPPFLAGS\"\n    export LDFLAGSAUX=\"$LDFLAGS\"\nfi",
+    "install": "configure \\\n    --disable-compile-inits \\\n    --disable-cups \\\n    --disable-gtk \\\n    --with-system-libtiff \\\n    --without-x\ngmakew libgs\ngmakew libgxps\ngmakew libgpdl\ngmakew libgpcl6\ngmakew install"
+  },
+  {
+    "pkgname": "ghostscript-dev",
+    "pkgtype": "lib",
+    "version": "10.04.0",
+    "license": "AGPL-3.0-or-later",
+    "summary": "An interpreter for PostScript and PDF",
+    "web-url": "https://www.ghostscript.com/",
+    "git-url": "https://github.com/ArtifexSoftware/ghostpdl-downloads",
+    "src-url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10040/ghostpdl-10.04.0.tar.xz",
+    "src-sha": "0603f5629bc6f567b454911d104cd96702489c9e70e577787843f480b23d4a77",
+    "dep-pkg": "libidn libexpat liblcms2 libjbig2dec libfreetype libtesseract",
+    "dep-upp": "libz curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "0",
+    "xxflags": "-std=c++11",
+    "parallel": "1",
+    "dopatch": "rm -rf tesseract/ freetype/ jbig2dec/ openjpeg/ lcms2mt/ libpng/ expat/ jpeg/ tiff/ zlib/\n\nsed -i 's|-g -o|$(LDFLAGS) -o|' base/unix-dll.mak\n\nif [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    gsed -i 's|DO_NOT_USE_SPRINTF|sprintf|' base/stdio_.h\nfi",
+    "prepare": "if isCrossBuild ; then\n    export CCAUX=\"$CC_FOR_BUILD\"\n    export CFLAGSAUX=\"$CFLAGS_FOR_BUILD $LDFLAGS_FOR_BUILD\"\n    export CPPFLAGSAUX=\"$CPPFLAGS_FOR_BUILD\"\n    export LDFLAGSAUX=\"$LDFLAGS_FOR_BUILD\"\nelse\n    export CCAUX=\"$CC $CFLAGS $CPPFLAGS $LDFLAGS\"\n    export CFLAGSAUX=\"$CFLAGS $LDFLAGS\"\n    export CPPFLAGSAUX=\"$CPPFLAGS\"\n    export LDFLAGSAUX=\"$LDFLAGS\"\nfi",
+    "install": "configure \\\n    --disable-compile-inits \\\n    --disable-cups \\\n    --disable-gtk \\\n    --with-system-libtiff \\\n    --without-x\ngmake  install-so\ngmakew libgs\ngmakew libgxps\ngmakew libgpdl\ngmakew libgpcl6\ncd bin\nfind . -name '*.a' -printf '%P\\n' | xargs -I {} mv {} lib{}\ninstall_libs  *.a",
+    "dotweak": "writepc libgs <<EOF\nprefix=\\${pcfiledir}/../..\nexec_prefix=\\${prefix}\nlibdir=\\${exec_prefix}/lib\nincludedir=\\${prefix}/include\n\nName: libgs\nDescription: $PACKAGE_SUMMARY\nVersion: $PACKAGE_VERSION\nCflags: -I\\${includedir}\nLibs: -L\\${libdir} -lgs\nRequires: fontconfig tesseract jbig2dec lcms2 libidn\nEOF"
   },
   {
     "pkgname": "ghr",
@@ -4935,7 +4957,7 @@
   {
     "pkgname": "gn",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A meta-build system that generates build files for ninja",
     "web-url": "https://gn.googlesource.com/gn",
     "git-url": "https://gn.googlesource.com/gn",
@@ -5204,7 +5226,7 @@
   {
     "pkgname": "gomobile",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A tool for building and running mobile apps written in golang",
     "web-url": "https://github.com/golang/mobile",
     "git-url": "https://github.com/golang/mobile",
@@ -5549,8 +5571,8 @@
     "web-url": "https://www.gnu.org/software/groff/",
     "src-url": "https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz",
     "src-sha": "6b9757f592b7518b4902eb6af7e54570bdccba37a871fddb2d30ae3863511c13",
-    "dep-pkg": "ghostscript psutils libuchardet perl texinfo glib",
-    "dep-upp": "gm4 bison curl bsdtar gmake gmake",
+    "dep-pkg": "libuchardet",
+    "dep-upp": "gawk gm4 bison texinfo curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
@@ -6152,7 +6174,7 @@
   {
     "pkgname": "hunter",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "The fastest file manager in the galaxy!",
     "web-url": "https://github.com/rabite0/hunter",
     "git-url": "https://github.com/rabite0/hunter",
@@ -6305,20 +6327,21 @@
   },
   {
     "pkgname": "imagemagick",
-    "pkgtype": "exe",
-    "version": "7.1.1.29",
+    "pkgtype": "exe+lib",
+    "version": "7.1.1.43",
     "license": "ImageMagick",
     "summary": "Tools and libraries to manipulate images in many formats",
     "web-url": "https://imagemagick.org/",
     "git-url": "https://github.com/ImageMagick/ImageMagick",
-    "src-url": "https://imagemagick.org/archive/releases/ImageMagick-7.1.1-29.tar.xz",
-    "src-sha": "f140465fbeb0b4724cba4394bc6f6fb32715731c1c62572d586f4f1c8b9b0685",
-    "dep-pkg": "ghostscript libheif liblqr libtool",
+    "src-url": "https://imagemagick.org/archive/releases/ImageMagick-7.1.1-43.tar.xz",
+    "src-sha": "fa79401342b409b9b7f7d3146bd6595787373811e72be1669c39b58d1489da4f",
+    "dep-pkg": "ghostscript-dev libheif liblqr libtool",
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "install": "configure \\\n    --with-freetype=yes \\\n    --with-gvc=no \\\n    --with-modules \\\n    --with-openjp2 \\\n    --with-openexr \\\n    --with-webp=yes \\\n    --with-heic=yes \\\n    --with-gslib \\\n    --with-pango \\\n    --with-lqr \\\n    --without-x \\\n    --without-wmf \\\n    --without-fftw \\\n    --disable-opencl"
+    "install": "configure \\\n    --with-freetype=yes \\\n    --with-gvc=no \\\n    --with-modules \\\n    --with-openjp2 \\\n    --with-openexr \\\n    --with-webp=yes \\\n    --with-heic=yes \\\n    --with-gslib \\\n    --with-pango \\\n    --with-lqr \\\n    --without-x \\\n    --without-wmf \\\n    --without-fftw \\\n    --disable-opencl",
+    "bindenv": "MAGICK_HOME=%s\nMAGICK_CODER_MODULE_PATH=%s/lib/ImageMagick-7.1.1/modules-Q16HDRI/coders\nMAGICK_CONFIGURE_PATH=%s/etc/ImageMagick-7"
   },
   {
     "pkgname": "imlib2",
@@ -7480,7 +7503,7 @@
   {
     "pkgname": "libbcrypt",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A password hashing method based on the Blowfish block cipher, provided via the crypt(3) and a reentrant interface",
     "web-url": "https://www.openwall.com/crypt",
     "git-url": "https://github.com/leleliu008/libbcrypt",
@@ -7714,7 +7737,7 @@
   {
     "pkgname": "libcamera",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "MIT",
     "summary": "An open source camera stack and framework",
     "web-url": "https://libcamera.org/",
@@ -7993,7 +8016,7 @@
   {
     "pkgname": "libcpuinfo",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -8502,7 +8525,7 @@
   {
     "pkgname": "libexecinfo",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A quick-n-dirty BSD licensed clone of backtrace facility found in the GNU libc",
     "web-url": "https://github.com/leleliu008/libexecinfo",
     "git-url": "https://github.com/leleliu008/libexecinfo",
@@ -9080,7 +9103,7 @@
   {
     "pkgname": "libglob",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "glob(3) implementation",
     "web-url": "https://linux.die.net/man/3/glob",
     "git-url": "https://github.com/leleliu008/libglob",
@@ -9584,7 +9607,7 @@
   {
     "pkgname": "libintl-lite",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "BSL-1.0",
     "summary": "A simple (but less powerful) GNU gettext libintl replacement",
     "web-url": "https://github.com/j-jorge/libintl-lite",
@@ -10219,7 +10242,7 @@
   {
     "pkgname": "libmesalink",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "BSD-3-Clause",
     "summary": "memory-safe and OpenSSL-compatible TLS library",
     "web-url": "https://mesalink.io",
@@ -10280,7 +10303,7 @@
   {
     "pkgname": "libmill",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "MIT",
     "summary": "Go-style concurrency in C",
     "web-url": "https://github.com/sustrik/libmill",
@@ -10649,7 +10672,7 @@
   {
     "pkgname": "libnghttp3",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -10678,7 +10701,7 @@
   {
     "pkgname": "libngtcp2",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -11508,7 +11531,7 @@
   {
     "pkgname": "libquiche",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "BSD-2-Clause",
     "summary": "Savoury implementation of the QUIC transport protocol and HTTP/3",
     "web-url": "https://github.com/cloudflare/quiche",
@@ -12191,7 +12214,7 @@
     "git-url": "https://gitlab.freedesktop.org/libspectre/libspectre",
     "src-url": "https://libspectre.freedesktop.org/releases/libspectre-0.2.12.tar.gz",
     "src-sha": "55a7517cd3572bd2565df0cf450944a04d5273b279ebb369a895391957f0f960",
-    "dep-pkg": "ghostscript",
+    "dep-pkg": "ghostscript-dev",
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "1",
@@ -13264,7 +13287,7 @@
   {
     "pkgname": "libwordexp",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "wordexp(3) implementation",
     "web-url": "https://linux.die.net/man/3/wordexp",
     "git-url": "https://github.com/leleliu008/libwordexp",
@@ -13755,7 +13778,7 @@
   {
     "pkgname": "lief",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "Library to Instrument Executable Formats",
     "web-url": "https://github.com/lief-project/LIEF",
@@ -14095,7 +14118,7 @@
   {
     "pkgname": "lodepng",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Zlib",
     "summary": "PNG encoder and decoder in C and C++",
     "web-url": "https://github.com/lvandeve/lodepng",
@@ -14430,6 +14453,24 @@
     "binbstd": "0",
     "parallel": "1",
     "install": "mesonw \\\n    -Ddoc=disabled \\\n    -Di18n=false \\\n    -Dmakepkg-template-dir=$PACKAGE_INSTALL_DIR/share/makepkg-template \\\n    -Dsysconfdir=$PACKAGE_INSTALL_DIR/etc \\\n    -Dlocalstatedir=$PACKAGE_INSTALL_DIR/var"
+  },
+  {
+    "pkgname": "mandoc",
+    "pkgtype": "exe",
+    "version": "1.14.6",
+    "license": "ISC",
+    "summary": "UNIX manpage compiler toolset",
+    "web-url": "https://mandoc.bsd.lv/",
+    "src-url": "https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz",
+    "src-sha": "8bf0d570f01e70a6e124884088870cbed7537f36328d512909eb10cd53179d9c",
+    "dep-pkg": "libz",
+    "dep-upp": "curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "1",
+    "parallel": "1",
+    "prepare": "mv cgi.h.example cgi.h\n\ncat > configure.local <<EOF\nCC=\"$CC\"\nAR=\"$AR\"\nCFLAGS=\"$CFLAGS $CPPFLAGS\"\nLDFLAGS=\"$LDFLAGS\"\n\nPREFIX=$PACKAGE_INSTALL_DIR\nINCLUDEDIR=$PACKAGE_INSTALL_DIR/include\nLIBDIR=$PACKAGE_INSTALL_DIR/lib\nMANDIR=$PACKAGE_INSTALL_DIR/share/man\nWWWPREFIX=$PACKAGE_INSTALL_DIR/var/www\nEXAMPLEDIR=$PACKAGE_INSTALL_DIR/share/examples\n\nBINM_MAN=bsdman\nBINM_APROPOS=bsdapropos\nBINM_WHATIS=bsdwhatis\nBINM_MAKEWHATIS=bsdmakewhatis\nBINM_SOELIM=bsdsoelim\n\nMANM_MAN=man\nMANM_MDOC=mdoc\nMANM_ROFF=mandoc_roff\nMANM_EQN=eqn\nMANM_TBL=tbl\n\nMANPATH_DEFAULT=$PACKAGE_INSTALL_DIR/share/man\n\nHAVE_MANPATH=0\nSTATIC=\n\nBUILD_CGI=1\nEOF",
+    "install": "configure",
+    "dotweak": "chmod +w bin/* sbin/*"
   },
   {
     "pkgname": "mawk",
@@ -15089,7 +15130,7 @@
   {
     "pkgname": "ndk-pkg",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "A package builder for Android NDK to build projects written in C, C++, Rust, Golang, etc",
     "web-url": "https://github.com/leleliu008/ndk-pkg",
@@ -15204,7 +15245,7 @@
   {
     "pkgname": "nghttp3",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -15251,7 +15292,7 @@
   {
     "pkgname": "ngtcp2",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -15265,7 +15306,7 @@
   {
     "pkgname": "nilaway",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "A static analysis tool to detect potential nil panics in Go code",
     "web-url": "https://github.com/uber-go/nilaway",
@@ -16004,7 +16045,7 @@
   {
     "pkgname": "packcc",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A packrat parser generator for C",
     "web-url": "https://github.com/arithy/packcc",
     "git-url": "https://github.com/arithy/packcc",
@@ -16214,7 +16255,7 @@
   {
     "pkgname": "pegof",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "PEG grammar optimizer and formatter. Supports any grammar supported by PackCC parser generator.",
     "web-url": "https://github.com/dolik-rce/pegof",
     "git-url": "https://github.com/dolik-rce/pegof",
@@ -16383,7 +16424,7 @@
   {
     "pkgname": "plog",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "MPL-2.0",
     "summary": "Portable, simple and extensible C++ logging library",
     "web-url": "https://github.com/SergiusTheBest/plog",
@@ -16560,7 +16601,7 @@
   {
     "pkgname": "ppkg",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "A portable package manager for Unix-like system",
     "web-url": "https://github.com/leleliu008/ppkg",
@@ -16697,7 +16738,7 @@
   {
     "pkgname": "psimd",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "MIT",
     "summary": "Portable 128-bit SIMD intrinsics",
     "web-url": "https://github.com/Maratyszcza/psimd",
@@ -16711,13 +16752,13 @@
   {
     "pkgname": "psutils",
     "pkgtype": "exe",
-    "version": "3.3.2",
+    "version": "3.3.9",
     "license": "GPL-3.0-or-later",
-    "summary": "A collection utilities for manipulating PostScript documents",
+    "summary": "A collection utilities for manipulating PDF and PostScript documents",
     "web-url": "https://github.com/rrthomas/psutils",
     "git-url": "https://github.com/rrthomas/psutils",
-    "src-url": "https://files.pythonhosted.org/packages/92/07/ebcf289c31f4da85ea94e103f0a58393c54133c64fcbef754c17b6405723/pspdfutils-3.3.2.tar.gz",
-    "src-sha": "a20a2a1359811bd0ad72e15349351a26774ddf8e355c2cde4250a70cf77fdf0c",
+    "src-url": "https://files.pythonhosted.org/packages/6f/c9/ed4c246612b0e42afe8fad52a2dddde28f1389997c043e8cf8d414d5a0ee/psutils-3.3.9.tar.gz",
+    "src-sha": "12bfde60145846e6aaae9eead8c5f0c4a959528cd171727b6ff7044da5d7e57c",
     "dep-pkg": "libpaper",
     "dep-upp": "python3 curl bsdtar python3",
     "dep-pym": "build",
@@ -16747,7 +16788,7 @@
   {
     "pkgname": "pup",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "MIT",
     "summary": "Parse HTML at the command-line",
     "web-url": "https://github.com/EricChiang/pup",
@@ -16862,13 +16903,13 @@
   {
     "pkgname": "python@3.12",
     "pkgtype": "pie",
-    "version": "3.12.8",
+    "version": "3.12.9",
     "license": "Python-2.0",
     "summary": "Interpreted, interactive, object-oriented programming language",
     "web-url": "https://www.python.org/",
     "git-url": "https://github.com/python/cpython",
-    "src-url": "https://www.python.org/ftp/python/3.12.8/Python-3.12.8.tgz",
-    "src-sha": "5978435c479a376648cb02854df3b892ace9ed7d32b1fead652712bee9d03a45",
+    "src-url": "https://www.python.org/ftp/python/3.12.9/Python-3.12.9.tgz",
+    "src-sha": "45313e4c5f0e8acdec9580161d565cf5fea578e3eabf25df7cc6355bf4afa1ee",
     "dep-pkg": "libncurses libopenssl libsqlite3 libexpat libgdbm libffi liblzma libbz2 libz",
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
@@ -16880,13 +16921,13 @@
   {
     "pkgname": "python@3.13",
     "pkgtype": "pie",
-    "version": "3.13.1",
+    "version": "3.13.2",
     "license": "Python-2.0",
     "summary": "Interpreted, interactive, object-oriented programming language",
     "web-url": "https://www.python.org/",
     "git-url": "https://github.com/python/cpython",
-    "src-url": "https://www.python.org/ftp/python/3.13.1/Python-3.13.1.tgz",
-    "src-sha": "1513925a9f255ef0793dbf2f78bb4533c9f184bdd0ad19763fd7f47a400a7c55",
+    "src-url": "https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tgz",
+    "src-sha": "b8d79530e3b7c96a5cb2d40d431ddb512af4a563e863728d8713039aa50203f9",
     "dep-pkg": "libncurses libopenssl libsqlite3 libexpat libgdbm libffi liblzma libbz2 libz",
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
@@ -17534,7 +17575,7 @@
   {
     "pkgname": "ruy",
     "pkgtype": "lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "matrix multiplication library",
     "web-url": "https://github.com/google/ruy",
@@ -17836,7 +17877,7 @@
   {
     "pkgname": "sjpeg",
     "pkgtype": "exe+lib",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "simple jpeg encoder",
     "web-url": "https://github.com/webmproject/sjpeg",
@@ -17851,7 +17892,7 @@
   {
     "pkgname": "skcms",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "BSD",
     "summary": "SkCMS",
     "web-url": "https://skia.googlesource.com/skcms.git",
@@ -18492,7 +18533,7 @@
   {
     "pkgname": "sysinfo",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A command-line utility to print your currently running system information",
     "web-url": "https://github.com/leleliu008/sysinfo",
     "git-url": "https://github.com/leleliu008/sysinfo",
@@ -19224,7 +19265,7 @@
   {
     "pkgname": "uctags",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "GPL-2.0-or-later",
     "summary": "Maintained ctags implementation",
     "web-url": "https://ctags.io/",
@@ -19305,7 +19346,7 @@
   {
     "pkgname": "uppm",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19321,7 +19362,7 @@
   {
     "pkgname": "uppm@0.15.1",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19338,7 +19379,7 @@
   {
     "pkgname": "uppm@0.15.2",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19355,7 +19396,7 @@
   {
     "pkgname": "uppm@0.15.3",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19372,7 +19413,7 @@
   {
     "pkgname": "uppm@0.15.4",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19441,7 +19482,7 @@
   {
     "pkgname": "utf8.h",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Unlicense",
     "summary": "single header utf8 string functions for C and C++",
     "web-url": "https://github.com/sheredom/utf8.h",
@@ -19500,6 +19541,22 @@
     "install": "export AUTOMAKE=\"$(command -v automake)\"\nexport ACLOCAL=\"$(command -v aclocal)\"\n\nunset EXTRA_CONFIGURE_ARGS\n\ncase $TARGET_PLATFORM_NAME in\n    macos) EXTRA_CONFIGURE_ARGS='--disable-libmount --disable-ipcrm --disable-ipcs --disable-wall' ;;\nesac\n\nconfigure \\\n    --without-python \\\n    --without-systemd \\\n    --enable-widechar \\\n    --enable-libuuid \\\n    --disable-use-tty-group \\\n    --disable-chfn-chsh \\\n    --disable-login \\\n    --disable-su \\\n    --disable-runuser \\\n    --disable-makeinstall-chown \\\n    --disable-makeinstall-setuid \\\n    $EXTRA_CONFIGURE_ARGS"
   },
   {
+    "pkgname": "uv",
+    "pkgtype": "exe",
+    "version": "0.6.0",
+    "license": "Apache-2.0 MIT",
+    "summary": "An extremely fast Python package and project manager, written in Rust",
+    "web-url": "https://github.com/astral-sh/uv",
+    "git-url": "https://github.com/astral-sh/uv",
+    "src-url": "https://github.com/astral-sh/uv/archive/refs/tags/0.6.0.tar.gz",
+    "src-sha": "e9e932f006e2aac7c47ddb0a6f5f3ec6ce103144aa69de962aef3d2c8bae5c70",
+    "dep-upp": "curl bsdtar",
+    "bsystem": "cargo",
+    "binbstd": "1",
+    "parallel": "1",
+    "install": "cargow install --path crates/uv"
+  },
+  {
     "pkgname": "vala",
     "pkgtype": "exe",
     "version": "0.56.17",
@@ -19516,6 +19573,24 @@
     "binbstd": "0",
     "parallel": "1",
     "install": "configure --with-cgraph --enable-static --disable-shared"
+  },
+  {
+    "pkgname": "vala-language-server",
+    "pkgtype": "exe",
+    "version": "0.48.7",
+    "license": "LGPL-2.1-only",
+    "summary": "Code Intelligence for Vala & Genie",
+    "web-url": "https://github.com/vala-lang/vala-language-server",
+    "git-url": "https://github.com/vala-lang/vala-language-server",
+    "src-url": "https://github.com/vala-lang/vala-language-server/releases/download/0.48.7/vala-language-server-0.48.7.tar.xz",
+    "src-sha": "a93e09497738144792466d0c5ccb1347583d84a9987b65b08f6aa5d5a1e3f431",
+    "dep-pkg": "jsonrpc-glib libgee",
+    "dep-upp": "curl bsdtar python3 ninja",
+    "dep-pym": " meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "mesonw -Dplugins=false"
   },
   {
     "pkgname": "vale",
@@ -20184,7 +20259,7 @@
   {
     "pkgname": "xbps",
     "pkgtype": "pie",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "summary": "A binary package system designed and implemented from scratch",
     "web-url": "https://github.com/void-linux/xbps",
     "git-url": "https://github.com/void-linux/xbps",
@@ -21067,7 +21142,7 @@
   {
     "pkgname": "xpup",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "Apache-2.0",
     "summary": "A command line tool for XML parsing",
     "web-url": "https://github.com/ericchiang/xpup",
@@ -21228,7 +21303,7 @@
   {
     "pkgname": "ycm",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "GPL-v3",
     "summary": "A code-completion engine for Vim",
     "web-url": "https://github.com/ycm-core/YouCompleteMe",
@@ -21342,7 +21417,7 @@
   {
     "pkgname": "zeta",
     "pkgtype": "exe",
-    "version": "2025.02.18",
+    "version": "2025.02.19",
     "license": "LGPL-3.0",
     "summary": "Header-only general purpose library",
     "web-url": "https://github.com/redcode/Zeta",

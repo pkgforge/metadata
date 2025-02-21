@@ -4259,6 +4259,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/awscli/archive/sharun",
     "provides": [
       "aws==awscli",
       "aws==aws-cli"
@@ -10702,6 +10703,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/certbot/archive/sharun",
     "provides": [
       "certbot"
     ],
@@ -12956,6 +12958,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/commix/archive/sharun",
     "provides": [
       "commix"
     ],
@@ -15134,7 +15137,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-d065e17-250221T112216"
+    "version": "HEAD-4acc59d-250221T144115"
   },
   {
     "_disabled": "false",
@@ -15451,7 +15454,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-d065e17-250221T112216"
+    "version": "HEAD-4acc59d-250221T144115"
   },
   {
     "_disabled": "false",
@@ -15981,6 +15984,7 @@
     },
     "download_url": "https://soarpkgs.pkgforge.dev/packages/crave/archive.sharun.stable.yaml",
     "homepage": [
+      "https://foss.crave.io/docs/",
       "https://fosson.top/crave/getting-started/introduction.html",
       "https://github.com/accupara/crave"
     ],
@@ -16001,6 +16005,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/crave/archive/sharun",
     "provides": [
       "crave==crave-cli"
     ],
@@ -17942,6 +17947,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ddgr/archive/sharun",
     "provides": [
       "ddgr"
     ],
@@ -18147,7 +18153,7 @@
       "diff",
       "git-delta"
     ],
-    "version": "HEAD-b1f34a8-250205T233030"
+    "version": "HEAD-42da5ad-250221T090023"
   },
   {
     "_disabled": "false",
@@ -22782,6 +22788,67 @@
     "_disabled": "false",
     "pkg": "fdm",
     "pkg_family": "fdm",
+    "pkg_id": "wrappe.fdm",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-fdm/fdm/fdm",
+    "app_id": "org.freedownloadmanager.Manager",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fdm/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A powerful modern download accelerator and organizer",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "freedownloadmanager"
+        ]
+      },
+      "homebrew": [
+        "free-download-manager"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fdm/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://www.freedownloadmanager.org"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/fdm/assets/default.png",
+    "license": [
+      "freeware"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/fdm/Launcher",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fdm/archive/wrappe",
+    "provides": [
+      "fdm==freedownloadmanager",
+      "fdm==free-download-manager"
+    ],
+    "repology": [
+      "freedownloadmanager"
+    ],
+    "src_url": [
+      "https://www.freedownloadmanager.org/download-fdm-for-linux.htm"
+    ],
+    "tag": [
+      "downloader",
+      "download-manager"
+    ],
+    "version": "6.25.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fdm",
+    "pkg_family": "fdm",
     "pkg_id": "runimage.cachyos.fdm",
     "pkg_type": "runimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-fdm/fdm/fdm",
@@ -22882,66 +22949,6 @@
       "[PORTABLE] (Works on AnyLinux)"
     ],
     "pkgcache": "ghcr.io/pkgforge/pkgcache/fdm/runimage/debian",
-    "provides": [
-      "fdm==freedownloadmanager",
-      "fdm==free-download-manager"
-    ],
-    "repology": [
-      "freedownloadmanager"
-    ],
-    "src_url": [
-      "https://www.freedownloadmanager.org/download-fdm-for-linux.htm"
-    ],
-    "tag": [
-      "downloader",
-      "download-manager"
-    ],
-    "version": "6.25.2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "fdm",
-    "pkg_family": "fdm",
-    "pkg_id": "wrappe.fdm",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-fdm/fdm/fdm",
-    "app_id": "org.freedownloadmanager.Manager",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fdm/archive.wrappe.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A powerful modern download accelerator and organizer",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "freedownloadmanager"
-        ]
-      },
-      "homebrew": [
-        "free-download-manager"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/fdm/archive.wrappe.stable.yaml",
-    "homepage": [
-      "https://www.freedownloadmanager.org"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/fdm/assets/default.png",
-    "license": [
-      "freeware"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/fdm/Launcher",
-      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "Host Dependencies: A lot, please use soar log to view the ldd output"
-    ],
     "provides": [
       "fdm==freedownloadmanager",
       "fdm==free-download-manager"
@@ -29947,6 +29954,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/gptme/archive/sharun",
     "provides": [
       "gptme"
     ],
@@ -30411,6 +30419,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/gtts-cli/archive/sharun",
     "provides": [
       "gtts-cli"
     ],
@@ -32218,6 +32227,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/httpie/archive/sharun",
     "provides": [
       "httpie==http"
     ],
@@ -32451,6 +32461,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/huggingface-cli/archive/sharun",
     "provides": [
       "huggingface-cli"
     ],
@@ -33997,6 +34008,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/isd/archive/sharun",
     "provides": [
       "isd"
     ],
@@ -34055,6 +34067,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/isort/archive/sharun",
     "provides": [
       "isort"
     ],
@@ -34170,6 +34183,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/jc/archive/sharun",
     "provides": [
       "jc"
     ],
@@ -34808,6 +34822,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/jrnl/archive/sharun",
     "provides": [
       "jrnl"
     ],
@@ -39227,6 +39242,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/malwoverview/archive/sharun",
     "provides": [
       "malwoverview"
     ],
@@ -41520,7 +41536,7 @@
       "nmap",
       "security"
     ],
-    "version": "HEAD-517c0a3-250217T142953"
+    "version": "HEAD-ce81726-250221T203721"
   },
   {
     "_disabled": "false",
@@ -42256,7 +42272,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-5134e3a-250221T125204"
+    "version": "HEAD-b307298-250221T162921"
   },
   {
     "_disabled": "false",
@@ -42411,6 +42427,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/netexec/archive/sharun",
     "provides": [
       "netexec==nxc"
     ],
@@ -43637,7 +43654,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-d16946c-250220T233426"
+    "version": "HEAD-1d44843-250221T100810"
   },
   {
     "_disabled": "false",
@@ -45556,7 +45573,7 @@
     "tag": [
       "pdf"
     ],
-    "version": "HEAD-b8f82d6-250220T001406"
+    "version": "HEAD-eb132fb-250221T153832"
   },
   {
     "_disabled": "false",
@@ -45597,6 +45614,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/pdfly/archive/sharun",
     "provides": [
       "pdfly"
     ],
@@ -45765,6 +45783,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/pg_activity/archive/sharun",
     "provides": [
       "pg_activity==pg-activity"
     ],
@@ -47357,6 +47376,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ps_mem/archive/sharun",
     "provides": [
       "ps_mem==ps-mem"
     ],
@@ -47758,6 +47778,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/pyarmor/archive/sharun",
     "provides": [
       "pyarmor"
     ],
@@ -47812,6 +47833,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/pyp/archive/sharun",
     "provides": [
       "pyp"
     ],
@@ -52603,6 +52625,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/scons/archive/sharun",
     "provides": [
       "scons"
     ],
@@ -52904,6 +52927,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/shell-gpt/archive/sharun",
     "provides": [
       "sgpt==shell-gpt"
     ],
@@ -53208,6 +53232,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/sherlock/archive/sharun",
     "provides": [
       "sherlock"
     ],
@@ -54117,7 +54142,7 @@
       "red-teaming",
       "security"
     ],
-    "version": "HEAD-0f340a2-250214T092758"
+    "version": "HEAD-a89675d-250221T080541"
   },
   {
     "_disabled": "false",
@@ -56385,6 +56410,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/streamlink/archive/sharun",
     "provides": [
       "streamlink"
     ],
@@ -59124,6 +59150,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/tmuxp/archive/sharun",
     "provides": [
       "tmuxp"
     ],
@@ -59413,7 +59440,7 @@
       "debugger",
       "strace"
     ],
-    "version": "HEAD-dcb0e72-250213T222446"
+    "version": "HEAD-6b7769a-250221T213020"
   },
   {
     "_disabled": "false",
@@ -59521,6 +59548,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/trafilatura/archive/sharun",
     "provides": [
       "trafilatura"
     ],
@@ -60250,6 +60278,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/twine/archive/sharun",
     "provides": [
       "twine"
     ],
@@ -60443,6 +60472,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/udocker/archive/sharun",
     "provides": [
       "udocker"
     ],
@@ -64088,7 +64118,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-dbe1643-250221T120433"
+    "version": "HEAD-3bbd327-250221T155139"
   },
   {
     "_disabled": "false",
@@ -64558,6 +64588,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xonsh/archive/sharun",
     "provides": [
       "xonsh"
     ],
@@ -65074,6 +65105,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yamllint/archive/sharun",
     "provides": [
       "yamllint"
     ],
@@ -65199,7 +65231,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-7f17ecd-250221T200734"
+    "version": "HEAD-52a5ab5-250221T230842"
   },
   {
     "_disabled": "false",

@@ -178,6 +178,64 @@
   },
   {
     "_disabled": "false",
+    "pkg": "apkeep",
+    "pkg_family": "apkeep",
+    "pkg_id": "github.com.EFForg.apkeep",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/efforg-apkeep/apkeep/apkeep",
+    "bincache": "ghcr.io/pkgforge/bincache/apkeep/official/apkeep",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/apkeep/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line tool for downloading APK files from various sources",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "apkeep"
+        ]
+      },
+      "nixpkgs": [
+        "apkeep"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/apkeep/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/EFForg/apkeep"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/EFForg/apkeep"
+    ],
+    "provides": [
+      "apkeep"
+    ],
+    "repology": [
+      "apkeep"
+    ],
+    "src_url": [
+      "https://github.com/EFForg/apkeep"
+    ],
+    "tag": [
+      "android",
+      "apk",
+      "apk-downloader"
+    ],
+    "version": "HEAD-19c24b8-250220T161144"
+  },
+  {
+    "_disabled": "false",
     "pkg": "archlinux",
     "pkg_family": "archlinux",
     "pkg_id": "github.com.Azathothas.docker-archlinux",
@@ -348,6 +406,71 @@
       "aws"
     ],
     "version": "v3.48.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "b3sum",
+    "pkg_family": "b3sum",
+    "pkg_id": "github.com.BLAKE3-team.BLAKE3",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/team-blake3/b3sum/b3sum",
+    "bincache": "ghcr.io/pkgforge/bincache/b3sum/official/b3sum",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/b3sum/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command line utility for calculating BLAKE3 hashes",
+    "distro_pkg": {
+      "alpine": [
+        "b3sum"
+      ],
+      "archlinux": {
+        "extra": [
+          "b3sum"
+        ]
+      },
+      "debian": [
+        "rust-b3sum",
+        "rust-blake3"
+      ],
+      "nixpkgs": [
+        "b3sum"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/b3sum/static.official.source.yaml",
+    "homepage": [
+      "https://blake3.io",
+      "https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "provides": [
+      "b3sum"
+    ],
+    "repology": [
+      "blake3"
+    ],
+    "src_url": [
+      "https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "tag": [
+      "bsum",
+      "checksum"
+    ],
+    "version": "HEAD-2cb802b-250220T122217"
   },
   {
     "_disabled": "true",
@@ -760,6 +883,93 @@
       "security"
     ],
     "version": "HEAD-4941c88-241204T154041"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "btrfs-progs",
+    "pkg_family": "btrfs-progs",
+    "pkg_id": "nixpkgs.btrfs-progs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/btrfs-progs/btrfs-progs/btrfs-progs",
+    "bincache": "ghcr.io/pkgforge/bincache/btrfs-progs/nixpkgs/btrfs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/btrfs-progs/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "File system utilities for Btrfs",
+      "btrfs": "Toolbox for managing btrfs filesystems [btrfs-progs]",
+      "btrfsck": "btrfs filesystem checker to verify structural integrity & repair (alias of btrfs check) [btrfs-progs]",
+      "btrfs-convert": "Convert existing source filesystem image to a btrfs filesystem in-place [btrfs-progs]",
+      "btrfs-find-root": "Find the satisfied root by root tree, objectid, generation, level [btrfs-progs]",
+      "btrfs-image": "Create an image of a btrfs filesystem [btrfs-progs]",
+      "btrfs-map-logical": "Tool to get physical offsets [btrfs-progs]",
+      "btrfs-select-super": "Destructively overwrite all copies of the superblock with a specified copy [btrfs-progs]",
+      "btrfs-snap": "Creates and Maintains the history of snapshots of btrfs filesystems [btrfs-progs]",
+      "btrfstune": "Enable, Disable, or set various filesystem parameters [btrfs-progs]",
+      "fsck.btrfs": "A stub command that does nothing (use btrfs check instead) [btrfs-progs]",
+      "mkfs.btrfs": "Tool  to create btrfs filesystem on a single or multiple devices [btrfs-progs]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "btrfs-progs"
+      ],
+      "archlinux": {
+        "aur": [
+          "btrfs-progs-git"
+        ]
+      },
+      "debian": [
+        "btrfs-progs"
+      ],
+      "nixpkgs": [
+        "btrfs-progs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/btrfs-progs/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "http://btrfs.wiki.kernel.org",
+      "https://btrfs.readthedocs.io/en/latest",
+      "https://github.com/kdave/btrfs-progs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "btrfs",
+      "btrfsck",
+      "btrfs-convert",
+      "btrfs-find-root",
+      "btrfs-image",
+      "btrfs-map-logical",
+      "btrfs-select-super",
+      "btrfs-snap",
+      "btrfstune",
+      "fsck.btrfs",
+      "mkfs.btrfs"
+    ],
+    "repology": [
+      "btrfs-progs"
+    ],
+    "src_url": [
+      "https://github.com/kdave/btrfs-progs"
+    ],
+    "tag": [
+      "btrfs"
+    ],
+    "version": "6.13"
   },
   {
     "_disabled": "false",
@@ -2992,7 +3202,7 @@
       "benchmark",
       "database"
     ],
-    "version": "HEAD-b60d33b-250213T162116"
+    "version": "HEAD-73a2f7d-250220T194853"
   },
   {
     "_disabled": "false",
@@ -3226,6 +3436,78 @@
       "dns"
     ],
     "version": "2.14.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dust",
+    "pkg_family": "dust",
+    "pkg_id": "github.com.bootandy.dust",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bootandy-dust/dust/dust",
+    "bincache": "ghcr.io/pkgforge/bincache/dust/official/dust",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dust/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Disk Usage Analyzer",
+    "distro_pkg": {
+      "alpine": [
+        "dust"
+      ],
+      "archlinux": {
+        "aur": [
+          "dust-git"
+        ],
+        "extra": [
+          "dust"
+        ]
+      },
+      "debian": [
+        "rust-du-dust"
+      ],
+      "gnuguix": [
+        "du-dust"
+      ],
+      "homebrew": [
+        "dust"
+      ],
+      "nixpkgs": [
+        "du-dust",
+        "dust"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dust/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/bootandy/dust"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/bootandy/dust"
+    ],
+    "provides": [
+      "dust"
+    ],
+    "repology": [
+      "du-dust"
+    ],
+    "src_url": [
+      "https://github.com/bootandy/dust"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-137e366-250220T220806"
   },
   {
     "_disabled": "false",
@@ -4076,7 +4358,48 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-9721276-250220T180258"
+    "version": "HEAD-52241c9-250221T000539"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gip",
+    "pkg_family": "gip",
+    "pkg_id": "github.com.dalance.gip",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dalance-gip/gip/gip",
+    "bincache": "ghcr.io/pkgforge/bincache/gip/official/gip",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gip/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line tool to get Global IP address",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gip/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dalance/gip"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dalance/gip"
+    ],
+    "repology": [
+      "gip"
+    ],
+    "src_url": [
+      "https://github.com/dalance/gip"
+    ],
+    "tag": [
+      "ipv4",
+      "ipv6"
+    ],
+    "version": "HEAD-aa01052-250220T202007"
   },
   {
     "_disabled": "false",
@@ -4210,7 +4533,7 @@
     "tag": [
       "gitlab"
     ],
-    "version": "HEAD-648db31-250219T161743"
+    "version": "HEAD-9dd2b58-250220T232031"
   },
   {
     "_disabled": "false",
@@ -7111,7 +7434,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-d7d5b1b-250220T150153"
+    "version": "HEAD-77e40f4-250220T202440"
   },
   {
     "_disabled": "false",
@@ -7650,7 +7973,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-4a967d1-250220T155911"
+    "version": "HEAD-2f6b4c5-250220T163409"
   },
   {
     "_disabled": "false",
@@ -7771,6 +8094,103 @@
       "wireguard"
     ],
     "version": "HEAD-d0fcab3-250125T214538"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "openssh",
+    "pkg_family": "openssh",
+    "pkg_id": "nixpkgs.openssh",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-openssh/openssh/openssh",
+    "bincache": "ghcr.io/pkgforge/bincache/openssh/nixpkgs/scp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/openssh/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities and servers for secure shell connections",
+      "scp": "OpenSSH secure file copy [openssh]",
+      "sftp": "OpenSSH secure file transfer [openssh]",
+      "sftp-server": "OpenSSH SFTP server subsystem [openssh]",
+      "ssh": "OpenSSH remote login client [openssh]",
+      "ssh-add": "Add private key identities to the OpenSSH authentication agent [openssh]",
+      "ssh-agent": "OpenSSH authentication agent [openssh]",
+      "ssh-copy-id": "Use locally available keys to authorize logins on a remote machine [openssh]",
+      "sshd": "OpenSSH daemon [openssh]",
+      "sshd-session": "OpenSSH Privilege Separation [openssh]",
+      "ssh-keygen": "OpenSSH authentication key utility [openssh]",
+      "ssh-keyscan": "Gather SSH public keys from servers [openssh]",
+      "ssh-keysign": "OpenSSH helper for host-based authentication [openssh]",
+      "ssh-pkcs11-helper": "OpenSSH helper for PKCS#11 support [openssh]",
+      "ssh-sk-helper": "OpenSSH helper for FIDO authenticator support [openssh]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "openssh"
+      ],
+      "archlinux": {
+        "aur": [
+          "openssh-git"
+        ]
+      },
+      "debian": [
+        "openssh"
+      ],
+      "gnuguix": [
+        "openssh"
+      ],
+      "homebrew": [
+        "openssh"
+      ],
+      "nixpkgs": [
+        "openssh"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/openssh/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.openssh.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "scp",
+      "sftp",
+      "sftp-server",
+      "ssh",
+      "ssh-add",
+      "ssh-agent",
+      "ssh-copy-id",
+      "sshd",
+      "sshd-session",
+      "ssh-keygen",
+      "ssh-keyscan",
+      "ssh-keysign",
+      "ssh-pkcs11-helper",
+      "ssh-sk-helper"
+    ],
+    "repology": [
+      "openssh"
+    ],
+    "src_url": [
+      "https://github.com/openssh/openssh-portable"
+    ],
+    "tag": [
+      "ssh"
+    ],
+    "version": "9.9p2"
   },
   {
     "_disabled": "false",
@@ -8348,6 +8768,70 @@
     "version": "v1.3.2"
   },
   {
+    "_disabled": "false",
+    "pkg": "procs",
+    "pkg_family": "procs",
+    "pkg_id": "github.com.dalance.procs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dalance-procs/procs/procs",
+    "bincache": "ghcr.io/pkgforge/bincache/procs/official/procs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/procs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A modern replacement for ps written in Rust",
+    "distro_pkg": {
+      "alpine": [
+        "procs"
+      ],
+      "archlinux": {
+        "aur": [
+          "procs-git"
+        ],
+        "extra": [
+          "procs"
+        ]
+      },
+      "debian": [
+        "rust-procs"
+      ],
+      "nixpkgs": [
+        "procs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/procs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dalance/procs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "ISC",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dalance/procs"
+    ],
+    "repology": [
+      "procs"
+    ],
+    "src_url": [
+      "https://github.com/dalance/procs"
+    ],
+    "tag": [
+      "Monitoring"
+    ],
+    "version": "HEAD-50487d7-250220T202121"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": [
       "Too slow & Expensive"
@@ -8643,7 +9127,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-def3f1d-250220T065216"
+    "version": "HEAD-4db04ac-250220T165314"
   },
   {
     "_disabled": "false",
@@ -8879,7 +9363,7 @@
       "oci",
       "registry"
     ],
-    "version": "HEAD-e76dd64-250219T111822"
+    "version": "HEAD-b753620-250220T154553"
   },
   {
     "_disabled": "false",
@@ -9096,7 +9580,7 @@
     "tag": [
       "linter"
     ],
-    "version": "HEAD-4f34235-250219T143029"
+    "version": "HEAD-3bbfedb-250220T194835"
   },
   {
     "_disabled": "false",
@@ -9744,7 +10228,7 @@
     "tag": [
       "image"
     ],
-    "version": "HEAD-de5351b-250220T012946"
+    "version": "HEAD-f7f1a10-250221T003718"
   },
   {
     "_disabled": "false",
@@ -9862,7 +10346,72 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-2d84c28-250220T222854"
+    "version": "HEAD-277dfc7-250221T083040"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "skim",
+    "pkg_family": "skim",
+    "pkg_id": "github.com.lotabout.skim",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/lotabout-skim/skim/skim",
+    "bincache": "ghcr.io/pkgforge/bincache/skim/official/sk",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/skim/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line fuzzy finder written in Rust",
+    "distro_pkg": {
+      "alpine": [
+        "skim"
+      ],
+      "archlinux": {
+        "aur": [
+          "skim-git"
+        ],
+        "extra": [
+          "skim"
+        ]
+      },
+      "nixpkgs": [
+        "skim"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/skim/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/lotabout/skim"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/lotabout/skim"
+    ],
+    "provides": [
+      "sk",
+      "sk-tmux",
+      "skim",
+      "skim-tmux"
+    ],
+    "repology": [
+      "skim-fuzzy-finder"
+    ],
+    "src_url": [
+      "https://github.com/lotabout/skim"
+    ],
+    "tag": [
+      "fuzzyfinder"
+    ],
+    "version": "HEAD-9f02f95-250220T221753"
   },
   {
     "_disabled": "false",
@@ -9911,7 +10460,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-b872a1a-250217T195209"
+    "version": "HEAD-83f84cf-250220T130258"
   },
   {
     "_disabled": "false",
@@ -10367,7 +10916,7 @@
       "certificate",
       "sso"
     ],
-    "version": "HEAD-74c1b44-250220T094612"
+    "version": "HEAD-ed9273f-250220T195610"
   },
   {
     "_disabled": "false",
@@ -10583,7 +11132,7 @@
       "bugbounty",
       "subdomain"
     ],
-    "version": "HEAD-62fbcad-250218T204858"
+    "version": "HEAD-cf2b9d7-250221T022244"
   },
   {
     "_disabled": "false",
@@ -10772,7 +11321,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-2c3338c-250219T171954"
+    "version": "HEAD-074372d-250220T182208"
   },
   {
     "_disabled": "false",
@@ -11248,7 +11797,7 @@
       "secret",
       "security"
     ],
-    "version": "v3.88.11"
+    "version": "v3.88.12"
   },
   {
     "_disabled": "false",
@@ -12156,7 +12705,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-10b1048-250220T181543"
+    "version": "HEAD-684eda8-250220T195935"
   },
   {
     "_disabled": "false",

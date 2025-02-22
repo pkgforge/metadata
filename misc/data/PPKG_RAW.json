@@ -367,7 +367,7 @@
   {
     "pkgname": "appimagetool",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A command-line tool to generate an AppImage from an existing AppDir",
     "web-url": "https://github.com/AppImage/appimagetool",
     "git-url": "https://github.com/AppImage/appimagetool",
@@ -801,7 +801,7 @@
   {
     "pkgname": "base16",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "base16 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -814,7 +814,7 @@
   {
     "pkgname": "base64",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "base64 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -1261,7 +1261,7 @@
   {
     "pkgname": "boringssl",
     "pkgtype": "exe+lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A fork of OpenSSL that is designed to meet Google needs",
     "web-url": "https://boringssl.googlesource.com/boringssl/",
     "git-url": "https://github.com/google/boringssl",
@@ -1472,7 +1472,7 @@
   {
     "pkgname": "c-examples",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "C语言学习项目",
     "web-url": "https://github.com/leleliu008/C-examples",
@@ -2291,7 +2291,7 @@
   {
     "pkgname": "cpuinfo",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -3087,7 +3087,7 @@
   {
     "pkgname": "easyutils",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A collections of easy to use command-line utilities",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -3132,7 +3132,7 @@
   {
     "pkgname": "effcee",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A C++ library for stateful pattern matching of strings",
     "web-url": "https://github.com/google/effcee",
     "git-url": "https://github.com/google/effcee",
@@ -4957,7 +4957,7 @@
   {
     "pkgname": "gn",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A meta-build system that generates build files for ninja",
     "web-url": "https://gn.googlesource.com/gn",
     "git-url": "https://gn.googlesource.com/gn",
@@ -5226,7 +5226,7 @@
   {
     "pkgname": "gomobile",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A tool for building and running mobile apps written in golang",
     "web-url": "https://github.com/golang/mobile",
     "git-url": "https://github.com/golang/mobile",
@@ -6174,7 +6174,7 @@
   {
     "pkgname": "hunter",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "The fastest file manager in the galaxy!",
     "web-url": "https://github.com/rabite0/hunter",
     "git-url": "https://github.com/rabite0/hunter",
@@ -7503,7 +7503,7 @@
   {
     "pkgname": "libbcrypt",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A password hashing method based on the Blowfish block cipher, provided via the crypt(3) and a reentrant interface",
     "web-url": "https://www.openwall.com/crypt",
     "git-url": "https://github.com/leleliu008/libbcrypt",
@@ -7737,7 +7737,7 @@
   {
     "pkgname": "libcamera",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "MIT",
     "summary": "An open source camera stack and framework",
     "web-url": "https://libcamera.org/",
@@ -8016,7 +8016,7 @@
   {
     "pkgname": "libcpuinfo",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -8525,7 +8525,7 @@
   {
     "pkgname": "libexecinfo",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A quick-n-dirty BSD licensed clone of backtrace facility found in the GNU libc",
     "web-url": "https://github.com/leleliu008/libexecinfo",
     "git-url": "https://github.com/leleliu008/libexecinfo",
@@ -8942,7 +8942,7 @@
     "parallel": "1",
     "dopatch": "gsed -i 's|src tools|src|' Makefile.in",
     "install": "configure --enable-libgdbm-compat --without-readline",
-    "dotweak": "rm -rf share/info\nrm -rf share/man/man1"
+    "dotweak": "ln -s ndbm.h include/gdbm-ndbm.h\nrm -rf share/info\nrm -rf share/man/man1"
   },
   {
     "pkgname": "libgdk-pixbuf",
@@ -9103,7 +9103,7 @@
   {
     "pkgname": "libglob",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "glob(3) implementation",
     "web-url": "https://linux.die.net/man/3/glob",
     "git-url": "https://github.com/leleliu008/libglob",
@@ -9607,7 +9607,7 @@
   {
     "pkgname": "libintl-lite",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "BSL-1.0",
     "summary": "A simple (but less powerful) GNU gettext libintl replacement",
     "web-url": "https://github.com/j-jorge/libintl-lite",
@@ -10242,7 +10242,7 @@
   {
     "pkgname": "libmesalink",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "BSD-3-Clause",
     "summary": "memory-safe and OpenSSL-compatible TLS library",
     "web-url": "https://mesalink.io",
@@ -10303,7 +10303,7 @@
   {
     "pkgname": "libmill",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "MIT",
     "summary": "Go-style concurrency in C",
     "web-url": "https://github.com/sustrik/libmill",
@@ -10672,7 +10672,7 @@
   {
     "pkgname": "libnghttp3",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -10701,7 +10701,7 @@
   {
     "pkgname": "libngtcp2",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -11531,7 +11531,7 @@
   {
     "pkgname": "libquiche",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "BSD-2-Clause",
     "summary": "Savoury implementation of the QUIC transport protocol and HTTP/3",
     "web-url": "https://github.com/cloudflare/quiche",
@@ -13287,7 +13287,7 @@
   {
     "pkgname": "libwordexp",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "wordexp(3) implementation",
     "web-url": "https://linux.die.net/man/3/wordexp",
     "git-url": "https://github.com/leleliu008/libwordexp",
@@ -13778,7 +13778,7 @@
   {
     "pkgname": "lief",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "Library to Instrument Executable Formats",
     "web-url": "https://github.com/lief-project/LIEF",
@@ -14118,7 +14118,7 @@
   {
     "pkgname": "lodepng",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Zlib",
     "summary": "PNG encoder and decoder in C and C++",
     "web-url": "https://github.com/lvandeve/lodepng",
@@ -15105,7 +15105,9 @@
     "dep-upp": "zig@0.13 curl bsdtar",
     "binbstd": "1",
     "parallel": "1",
-    "install": "gsed -i \"s|linkSystemLibrary(\\\"ncursesw\\\")|addObjectFile(\\\"$libncurses_LIBRARY_DIR/libncursesw.a\\\")|\" build.zig\nrun zig build --prefix \"$PACKAGE_INSTALL_DIR\" --search-prefix \"$libncurses_INSTALL_DIR\"\ninstall_mans ncdu.1"
+    "dopatch": "run ln -s ../lib/libncursesw.a libncursesw.a\nrun ln -s ../lib/libzstd.a     libzstd.a\n\ngsed -i \"s|linkSystemLibrary(\\\"ncursesw\\\", \\.{})|addObjectFile(b.path(\\\"libncursesw.a\\\"))|\" build.zig\ngsed -i \"s|linkSystemLibrary(\\\"libzstd\\\", \\.{})|addObjectFile(b.path(\\\"libzstd.a\\\"))|\" build.zig\n\nif [ \"$PACKAGE_CREATE_FULLY_STATICALLY_LINKED_EXECUTABLE\" = 1 ] && [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    gsed -i '/addExecutable/a .linkage = .static,'  build.zig\nelse\n    gsed -i '/addExecutable/a .linkage = .dynamic,' build.zig\nfi\n\ncase $PROFILE in\n    debug)   ZIG_BUILD_EXTRA_ARGS='-Doptimize=Debug       -Dstrip=false' ;;\n    release) ZIG_BUILD_EXTRA_ARGS='-Doptimize=ReleaseSafe -Dstrip=true'  ;;\nesac\n\nif [ \"$LOG_LEVEL\" -ge 1 ] ; then\n    ZIG_BUILD_EXTRA_ARGS=\"$ZIG_BUILD_EXTRA_ARGS --verbose\"\nfi",
+    "install": "run zig build $ZIG_BUILD_EXTRA_ARGS --verbose --prefix \"$PACKAGE_INSTALL_DIR\" --search-prefix \"$libncurses_INSTALL_DIR\" --search-prefix \"$libzstd_INSTALL_DIR\"\ninstall_mans ncdu.1",
+    "caveats": "you might need to set these environment variables:\n\nexport TERM=xterm-256color\nexport TERMINFO=/usr/share/terminfo"
   },
   {
     "pkgname": "ncurses",
@@ -15130,7 +15132,7 @@
   {
     "pkgname": "ndk-pkg",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "A package builder for Android NDK to build projects written in C, C++, Rust, Golang, etc",
     "web-url": "https://github.com/leleliu008/ndk-pkg",
@@ -15245,7 +15247,7 @@
   {
     "pkgname": "nghttp3",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -15292,7 +15294,7 @@
   {
     "pkgname": "ngtcp2",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -15306,7 +15308,7 @@
   {
     "pkgname": "nilaway",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "A static analysis tool to detect potential nil panics in Go code",
     "web-url": "https://github.com/uber-go/nilaway",
@@ -16045,7 +16047,7 @@
   {
     "pkgname": "packcc",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A packrat parser generator for C",
     "web-url": "https://github.com/arithy/packcc",
     "git-url": "https://github.com/arithy/packcc",
@@ -16255,7 +16257,7 @@
   {
     "pkgname": "pegof",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "PEG grammar optimizer and formatter. Supports any grammar supported by PackCC parser generator.",
     "web-url": "https://github.com/dolik-rce/pegof",
     "git-url": "https://github.com/dolik-rce/pegof",
@@ -16424,7 +16426,7 @@
   {
     "pkgname": "plog",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "MPL-2.0",
     "summary": "Portable, simple and extensible C++ logging library",
     "web-url": "https://github.com/SergiusTheBest/plog",
@@ -16601,7 +16603,7 @@
   {
     "pkgname": "ppkg",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "A portable package manager for Unix-like system",
     "web-url": "https://github.com/leleliu008/ppkg",
@@ -16738,7 +16740,7 @@
   {
     "pkgname": "psimd",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "MIT",
     "summary": "Portable 128-bit SIMD intrinsics",
     "web-url": "https://github.com/Maratyszcza/psimd",
@@ -16788,7 +16790,7 @@
   {
     "pkgname": "pup",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "MIT",
     "summary": "Parse HTML at the command-line",
     "web-url": "https://github.com/EricChiang/pup",
@@ -16874,13 +16876,15 @@
     "git-url": "https://github.com/python/cpython",
     "src-url": "https://www.python.org/ftp/python/3.11.11/Python-3.11.11.tgz",
     "src-sha": "883bddee3c92fcb91cf9c09c5343196953cbb9ced826213545849693970868ed",
-    "dep-pkg": "libncurses libopenssl libsqlite3 libexpat libgdbm libffi liblzma libbz2 libz",
+    "dep-pkg": "libreadline libopenssl libsqlite3 libexpat libgdbm libffi liblzma libbz2 libz",
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
     "onready": "ENABLE_LTO=0",
-    "install": "unset PYTHONHOME\nunset PYTHONPATH\n\nexport ZLIB_CFLAGS=\"-I$libz_INCLUDE_DIR\"\nexport ZLIB_LIBS=\"-L$libz_LIBRARY_DIR -lz\"\n\nexport BZIP2_CFLAGS=\"-I$libbz2_INCLUDE_DIR\"\nexport BZIP2_LIBS=\"-L$libbz2_LIBRARY_DIR -lbz2\"\n\nexport LIBLZMA_CFLAGS=\"-I$liblzma_INCLUDE_DIR\"\nexport LIBLZMA_LIBS=\"-L$liblzma_LIBRARY_DIR -llzma\"\n\nexport LIBSQLITE3_CFLAGS=\"-I$libsqlite3_INCLUDE_DIR\"\nexport LIBSQLITE3_LIBS=\"-L$libsqlite3_LIBRARY_DIR -lsqlite3\"\n\nexport GDBM_CFLAGS=\"-I$libgdbm_INCLUDE_DIR\"\nexport GDBM_LIBS=\"-L$libgdbm_LIBRARY_DIR -lgdbm -lgdbm_compat\"\n\nexport LIBS='-lm'\n\nconfigure \\\n    --build=$($PACKAGE_BSCRIPT_DIR/config.guess) \\\n    --with-system-expat \\\n    --with-system-ffi \\\n    --with-openssl=\"$libopenssl_INSTALL_DIR\" \\\n    --with-ensurepip=yes \\\n    --with-lto \\\n    --enable-ipv6 \\\n    --enable-shared \\\n    --enable-loadable-sqlite-extensions \\\n    --disable-profiling"
+    "dopatch": "gsed -i 's|\"\" tinfo ncursesw ncurses curses termcap|ncurses|' configure",
+    "prepare": "unset PYTHONHOME\nunset PYTHONPATH\n\nexport MODULE_BUILDTYPE=static\n\nexport ZLIB_CFLAGS=\"-I$libz_INCLUDE_DIR\"\nexport ZLIB_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lz\"\n\nexport BZIP2_CFLAGS=\"-I$libbz2_INCLUDE_DIR\"\nexport BZIP2_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lbz2\"\n\nexport LIBLZMA_CFLAGS=\"-I$liblzma_INCLUDE_DIR\"\nexport LIBLZMA_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -llzma\"\n\nexport LIBSQLITE3_CFLAGS=\"-I$libsqlite3_INCLUDE_DIR\"\nexport LIBSQLITE3_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lsqlite3\"\n\nexport GDBM_CFLAGS=\"-I$libgdbm_INCLUDE_DIR\"\nexport GDBM_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lgdbm_compat -lgdbm\"\n\nunset LIBUUID_CFLAGS\nunset LIBUUID_LIBS\n\nunset LIBEDIT_CFLAGS\nunset LIBEDIT_LIBS\n\nunset LIBNSL_CFLAGS\nunset LIBNSL_LIBS\n\nunset LIBMPDEC_CFLAGS\nunset LIBMPDEC_LIBS\n\nunset TCLTK_CFLAGS\nunset TCLTK_LIBS\n\nunset X11_CFLAGS\nunset X11_LIBS\n\nexport LIBS='-lm'",
+    "install": "configure only \\\n    --build=$($PACKAGE_BSCRIPT_DIR/config.guess) \\\n    --with-system-expat \\\n    --with-system-ffi \\\n    --with-readline \\\n    --with-openssl=\"$libopenssl_INSTALL_DIR\" \\\n    --with-ensurepip=yes \\\n    --with-lto \\\n    --enable-ipv6 \\\n    --disable-shared \\\n    --enable-loadable-sqlite-extensions \\\n    --disable-profiling\n\nrun cp Modules/Setup.stdlib Modules/Setup.local\n\ngsed -i 's|#@MODULE_.*_TRUE@||'  Modules/Setup.local\ngsed -i '/^_testinternalcapi/d'  Modules/Setup.local\ngsed -i '/^_dbm/s|$| -DUSE_GDBM_COMPAT -lgdbm_compat -lgdbm|' Modules/Setup.local\ngsed -i '/^_ctypes/s|$| -lffi|'                         Modules/Setup.local\ngsed -i '/^readline/s|$| -lreadline -lpanel -lncurses|' Modules/Setup.local\n\ngmakew\ngmakew install"
   },
   {
     "pkgname": "python@3.11.6",
@@ -17575,7 +17579,7 @@
   {
     "pkgname": "ruy",
     "pkgtype": "lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "matrix multiplication library",
     "web-url": "https://github.com/google/ruy",
@@ -17877,7 +17881,7 @@
   {
     "pkgname": "sjpeg",
     "pkgtype": "exe+lib",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "simple jpeg encoder",
     "web-url": "https://github.com/webmproject/sjpeg",
@@ -17892,7 +17896,7 @@
   {
     "pkgname": "skcms",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "BSD",
     "summary": "SkCMS",
     "web-url": "https://skia.googlesource.com/skcms.git",
@@ -18533,7 +18537,7 @@
   {
     "pkgname": "sysinfo",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A command-line utility to print your currently running system information",
     "web-url": "https://github.com/leleliu008/sysinfo",
     "git-url": "https://github.com/leleliu008/sysinfo",
@@ -19265,7 +19269,7 @@
   {
     "pkgname": "uctags",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "GPL-2.0-or-later",
     "summary": "Maintained ctags implementation",
     "web-url": "https://ctags.io/",
@@ -19346,7 +19350,7 @@
   {
     "pkgname": "uppm",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19362,7 +19366,7 @@
   {
     "pkgname": "uppm@0.15.1",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19379,7 +19383,7 @@
   {
     "pkgname": "uppm@0.15.2",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19396,7 +19400,7 @@
   {
     "pkgname": "uppm@0.15.3",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19413,7 +19417,7 @@
   {
     "pkgname": "uppm@0.15.4",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19482,7 +19486,7 @@
   {
     "pkgname": "utf8.h",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Unlicense",
     "summary": "single header utf8 string functions for C and C++",
     "web-url": "https://github.com/sheredom/utf8.h",
@@ -20259,7 +20263,7 @@
   {
     "pkgname": "xbps",
     "pkgtype": "pie",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "summary": "A binary package system designed and implemented from scratch",
     "web-url": "https://github.com/void-linux/xbps",
     "git-url": "https://github.com/void-linux/xbps",
@@ -21142,7 +21146,7 @@
   {
     "pkgname": "xpup",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "Apache-2.0",
     "summary": "A command line tool for XML parsing",
     "web-url": "https://github.com/ericchiang/xpup",
@@ -21303,7 +21307,7 @@
   {
     "pkgname": "ycm",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "GPL-v3",
     "summary": "A code-completion engine for Vim",
     "web-url": "https://github.com/ycm-core/YouCompleteMe",
@@ -21417,7 +21421,7 @@
   {
     "pkgname": "zeta",
     "pkgtype": "exe",
-    "version": "2025.02.21",
+    "version": "2025.02.22",
     "license": "LGPL-3.0",
     "summary": "Header-only general purpose library",
     "web-url": "https://github.com/redcode/Zeta",
@@ -21460,7 +21464,7 @@
     "bsystem": "zig",
     "binbstd": "1",
     "parallel": "1",
-    "install": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    # https://zig.guide/build-system/cross-compilation/\n    if [ $TARGET_PLATFORM_ARCH = arm64 ] ; then\n        ZIG_BUILD_TARGET='aarch64-macos'\n    else\n        ZIG_BUILD_TARGET=$TARGET_PLATFORM_ARCH-macos\n    fi\nelse\n        ZIG_BUILD_TARGET=$TARGET_PLATFORM_ARCH-$TARGET_PLATFORM_NAME\nfi\n\nrun zig build --prefix $PACKAGE_INSTALL_DIR -Dtarget=$ZIG_BUILD_TARGET -Dtag=$PACKAGE_VERSION -Dmode=ReleaseSafe -Dstrip=true"
+    "install": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    # https://zig.guide/build-system/cross-compilation/\n    if [ $TARGET_PLATFORM_ARCH = arm64 ] ; then\n        ZIG_BUILD_TARGET='aarch64-macos'\n    else\n        ZIG_BUILD_TARGET=$TARGET_PLATFORM_ARCH-macos\n    fi\nelse\n        ZIG_BUILD_TARGET=$TARGET_PLATFORM_ARCH-$TARGET_PLATFORM_NAME\nfi\n\ncase $PROFILE in\n    debug)   ZIG_BUILD_EXTRA_ARGS='-Dmode=Debug       -Dstrip=false' ;;\n    release) ZIG_BUILD_EXTRA_ARGS='-Dmode=ReleaseSafe -Dstrip=true'  ;;\nesac\n\nif [ \"$LOG_LEVEL\" -ge 1 ] ; then\n    ZIG_BUILD_EXTRA_ARGS=\"$ZIG_BUILD_EXTRA_ARGS --verbose\"\nfi\n\n\nrun zig build $ZIG_BUILD_EXTRA_ARGS \"-Dtarget=$ZIG_BUILD_TARGET\" \"-Dtag=$PACKAGE_VERSION\" --prefix \"$PACKAGE_INSTALL_DIR\""
   },
   {
     "pkgname": "zip",
@@ -21546,7 +21550,7 @@
     "bsystem": "zig",
     "binbstd": "1",
     "parallel": "1",
-    "install": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    # https://zig.guide/build-system/cross-compilation/\n    if [ $TARGET_PLATFORM_ARCH = arm64 ] ; then\n        ZIG_BUILD_TARGET='aarch64-macos'\n    else\n        ZIG_BUILD_TARGET=$TARGET_PLATFORM_ARCH-macos\n    fi\nelse\n        ZIG_BUILD_TARGET=$TARGET_PLATFORM_ARCH-$TARGET_PLATFORM_NAME\nfi\n\nrun zig build --prefix $PACKAGE_INSTALL_DIR -Dtarget=$ZIG_BUILD_TARGET"
+    "install": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    # https://zig.guide/build-system/cross-compilation/\n    if [ $TARGET_PLATFORM_ARCH = arm64 ] ; then\n        ZIG_BUILD_TARGET='aarch64-macos'\n    else\n        ZIG_BUILD_TARGET=$TARGET_PLATFORM_ARCH-macos\n    fi\nelse\n        ZIG_BUILD_TARGET=$TARGET_PLATFORM_ARCH-$TARGET_PLATFORM_NAME\nfi\n\ncase $PROFILE in\n    debug)   ZIG_BUILD_EXTRA_ARGS='-Doptimize=Debug' ;;\n    release) ZIG_BUILD_EXTRA_ARGS='-Doptimize=ReleaseFast --release=fast'\nesac\n\nif [ \"$LOG_LEVEL\" -ge 1 ] ; then\n    ZIG_BUILD_EXTRA_ARGS=\"$ZIG_BUILD_EXTRA_ARGS --verbose\"\nfi\n\nrun zig build $ZIG_BUILD_EXTRA_ARGS \"-Dtarget=$ZIG_BUILD_TARGET\" --prefix \"$PACKAGE_INSTALL_DIR\""
   },
   {
     "pkgname": "zola",

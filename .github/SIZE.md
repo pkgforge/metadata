@@ -90,7 +90,7 @@
  876K   │ │ │ ├── x86_64-Linux.AM.txt
  820K   │ │ │ ├── aarch64-Linux.AM.txt
  592K   │ │ │ ├── x86_64-Linux.db.cba
- 548K   │ │ │ ├── x86_64-Linux.json.cba
+ 544K   │ │ │ ├── x86_64-Linux.json.cba
  488K   │ │ │ ├── x86_64-Linux.db.zstd
  480K   │ │ │ ├── x86_64-Linux.db.xz
  448K   │ │ │ ├── x86_64-Linux.json.zstd
@@ -227,10 +227,10 @@
  4.5M   ├─┬ pkgcache
  4.4M   │ ├─┬ data
  816K   │ │ ├── x86_64-Linux.db
- 768K   │ │ ├── x86_64-Linux.json
+ 772K   │ │ ├── x86_64-Linux.json
  752K   │ │ ├── x86_64-Linux.sdb
- 348K   │ │ ├── aarch64-Linux.db
- 320K   │ │ ├── aarch64-Linux.json
+ 356K   │ │ ├── aarch64-Linux.db
+ 324K   │ │ ├── aarch64-Linux.json
  312K   │ │ ├── aarch64-Linux.sdb
  100K   │ │ ├── x86_64-Linux.sdb.cba
   92K   │ │ ├── x86_64-Linux.db.cba

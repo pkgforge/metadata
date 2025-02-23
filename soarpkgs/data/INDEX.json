@@ -18045,7 +18045,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-e91bf9a-250222T034024"
+    "version": "HEAD-55cf7e9-250223T012143"
   },
   {
     "_disabled": "false",
@@ -26310,7 +26310,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-ddaa522-250223T000611"
+    "version": "HEAD-34b9c51-250223T060254"
   },
   {
     "_disabled": "false",
@@ -26976,7 +26976,7 @@
       "editor",
       "graphics"
     ],
-    "version": "54180.29ba885985"
+    "version": "54187.9042486dac3"
   },
   {
     "_disabled": "false",
@@ -35458,7 +35458,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-3593646-250222T201942"
+    "version": "HEAD-2543329-250223T030659"
   },
   {
     "_disabled": "false",
@@ -37712,7 +37712,7 @@
     "tag": [
       "file-manager"
     ],
-    "version": "HEAD-f981374-250219T104315"
+    "version": "HEAD-938e02e-250223T171419"
   },
   {
     "_disabled": "false",
@@ -40882,7 +40882,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-600f19c-250222T162531"
+    "version": "HEAD-381f03b-250222T201141"
   },
   {
     "_disabled": "false",
@@ -42669,7 +42669,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-4beadf1-250222T132937"
+    "version": "HEAD-46be3a7-250223T102840"
   },
   {
     "_disabled": "false",
@@ -43121,6 +43121,7 @@
     "pkg_id": "github.com.goreleaser.nfpm",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goreleaser-nfpm/nfpm/nfpm",
+    "bincache": "ghcr.io/pkgforge/bincache/nfpm/official/nfpm",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nfpm/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -44015,6 +44016,7 @@
     "pkg_id": "github.com.projectdiscovery.nuclei",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-nuclei/nuclei/nuclei",
+    "bincache": "ghcr.io/pkgforge/bincache/nuclei/official/nuclei",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nuclei/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -44211,7 +44213,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-bda3245-250222T114244"
+    "version": "HEAD-083c534-250222T215325"
   },
   {
     "_disabled": "false",
@@ -45189,72 +45191,10 @@
     "_disabled": "false",
     "pkg": "oras",
     "pkg_family": "oras",
-    "pkg_id": "github.com.oras-project.oras",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/project-oras/oras/oras",
-    "bincache": "ghcr.io/pkgforge/bincache/oras/official/oras",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/oras/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "OCI registry client - manage content like artifacts, images, packages",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "oras"
-        ]
-      },
-      "debian": [
-        "oras"
-      ],
-      "homebrew": [
-        "oras"
-      ],
-      "nixpkgs": [
-        "oras"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/oras/static.official.source.yaml",
-    "homepage": [
-      "https://oras.land"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/oras-project/oras"
-    ],
-    "provides": [
-      "oras"
-    ],
-    "repology": [
-      "oras"
-    ],
-    "src_url": [
-      "https://github.com/oras-project/oras"
-    ],
-    "tag": [
-      "oci",
-      "registry"
-    ],
-    "version": "HEAD-c522ae0-250221T163324"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "oras",
-    "pkg_family": "oras",
     "pkg_id": "github.com.oras-project.oras.stable",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oras-stable/oras/oras",
+    "bincache": "ghcr.io/pkgforge/bincache/oras/official/oras",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/oras/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -45309,6 +45249,68 @@
       "registry"
     ],
     "version": "v1.2.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "oras",
+    "pkg_family": "oras",
+    "pkg_id": "github.com.oras-project.oras",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/project-oras/oras/oras",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/oras/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "OCI registry client - manage content like artifacts, images, packages",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "oras"
+        ]
+      },
+      "debian": [
+        "oras"
+      ],
+      "homebrew": [
+        "oras"
+      ],
+      "nixpkgs": [
+        "oras"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/oras/static.official.source.yaml",
+    "homepage": [
+      "https://oras.land"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/oras-project/oras"
+    ],
+    "provides": [
+      "oras"
+    ],
+    "repology": [
+      "oras"
+    ],
+    "src_url": [
+      "https://github.com/oras-project/oras"
+    ],
+    "tag": [
+      "oci",
+      "registry"
+    ],
+    "version": "HEAD-c522ae0-250221T163324"
   },
   {
     "_disabled": "false",
@@ -49231,7 +49233,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-bfbe64c-250222T180154"
+    "version": "HEAD-ee0337c-250222T211333"
   },
   {
     "_disabled": "false",
@@ -51940,7 +51942,7 @@
       "emulator",
       "game"
     ],
-    "version": "1.2.412"
+    "version": "1.2.414"
   },
   {
     "_disabled": "false",
@@ -54081,7 +54083,7 @@
     "tag": [
       "image"
     ],
-    "version": "HEAD-1c370ca-250221T173250"
+    "version": "HEAD-4451285-250223T025409"
   },
   {
     "_disabled": "false",
@@ -54195,7 +54197,7 @@
       "chat",
       "messenger"
     ],
-    "version": "v7.42.0"
+    "version": "v7.43.0"
   },
   {
     "_disabled": "false",
@@ -54868,7 +54870,7 @@
       "network",
       "nmap"
     ],
-    "version": "HEAD-d0a61df-240403T233935"
+    "version": "HEAD-b4c3774-250223T112254"
   },
   {
     "_disabled": "false",
@@ -60531,7 +60533,7 @@
       "network",
       "traceroute"
     ],
-    "version": "HEAD-c3cdacc-250223T065827"
+    "version": "HEAD-cfc068f-250223T134650"
   },
   {
     "_disabled": "false",
@@ -63722,7 +63724,7 @@
     "tag": [
       "Terminal"
     ],
-    "version": "HEAD-f7db955-250222T132052"
+    "version": "HEAD-f268ff7-250222T204057"
   },
   {
     "_disabled": "false",

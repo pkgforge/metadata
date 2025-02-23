@@ -1882,7 +1882,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-b3f7aca-250223T103024"
+    "version": "HEAD-8bd9744-250223T183325"
   },
   {
     "_disabled": "false",
@@ -2199,7 +2199,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-b3f7aca-250223T103024"
+    "version": "HEAD-8bd9744-250223T183325"
   },
   {
     "_disabled": "true",
@@ -3193,6 +3193,7 @@
     "pkg_id": "github.com.wader.static-ffmpeg.stable",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ffmpeg-stable/ffmpeg/ffmpeg",
+    "bincache": "ghcr.io/pkgforge/bincache/ffmpeg/wader/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ffmpeg/static.wader.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -3354,7 +3355,7 @@
       "binary",
       "hexdump"
     ],
-    "version": "HEAD-2533680-250222T203813"
+    "version": "HEAD-9a5f54d-250223T155744"
   },
   {
     "_disabled": "false",
@@ -3625,7 +3626,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-5a0fd56-250223T120302"
+    "version": "HEAD-6aea9b9-250223T180255"
   },
   {
     "_disabled": "false",
@@ -3866,7 +3867,7 @@
     "tag": [
       "matrix"
     ],
-    "version": "HEAD-5c27592-250221T194435"
+    "version": "HEAD-bd2ece9-250223T184459"
   },
   {
     "_disabled": "false",
@@ -4358,7 +4359,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-2543329-250223T030659"
+    "version": "HEAD-c83abc9-250223T133417"
   },
   {
     "_disabled": "false",
@@ -4424,7 +4425,7 @@
     "tag": [
       "kubernetes"
     ],
-    "version": "HEAD-7bb4da7-250219T232945"
+    "version": "HEAD-f8fbd98-250223T105050"
   },
   {
     "_disabled": "false",
@@ -4611,7 +4612,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-1e05055-250223T084737"
+    "version": "HEAD-626ca18-250223T182317"
   },
   {
     "_disabled": "false",
@@ -5711,7 +5712,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-083c534-250222T215325"
+    "version": "HEAD-fcd1d59-250223T075338"
   },
   {
     "_disabled": "false",
@@ -6740,7 +6741,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-ee0337c-250222T211333"
+    "version": "HEAD-0e3114a-250223T125738"
   },
   {
     "_disabled": "false",
@@ -7586,6 +7587,64 @@
   },
   {
     "_disabled": "false",
+    "pkg": "rustscan",
+    "pkg_family": "rustscan",
+    "pkg_id": "github.com.RustScan.RustScan",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rustscan-rustscan/rustscan/rustscan",
+    "bincache": "ghcr.io/pkgforge/bincache/rustscan/official/rustscan",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rustscan/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The modern,fast,smart and effective port scanner",
+    "distro_pkg": {
+      "alpine": [
+        "rustscan"
+      ],
+      "archlinux": {
+        "extra": [
+          "rustscan"
+        ]
+      },
+      "nixpkgs": [
+        "rustscan"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rustscan/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/RustScan/RustScan"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL3"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/RustScan/RustScan"
+    ],
+    "repology": [
+      "rustscan"
+    ],
+    "src_url": [
+      "https://github.com/RustScan/RustScan"
+    ],
+    "tag": [
+      "nmap",
+      "scanning",
+      "security"
+    ],
+    "version": "HEAD-b1f008a-250223T150357"
+  },
+  {
+    "_disabled": "false",
     "pkg": "rustypaste",
     "pkg_family": "rustypaste",
     "pkg_id": "github.com.orhun.rustypaste",
@@ -7899,6 +7958,52 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sish",
+    "pkg_family": "sish",
+    "pkg_id": "github.com.antoniomika.sish",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/antoniomika-sish/sish/sish",
+    "bincache": "ghcr.io/pkgforge/bincache/sish/official/sish",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sish/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "HTTP(S)/WS(S)/TCP Tunnels to localhost using only SSH",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sish/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/antoniomika/sish"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/antoniomika/sish"
+    ],
+    "provides": [
+      "sish"
+    ],
+    "repology": [
+      "sish"
+    ],
+    "src_url": [
+      "https://github.com/antoniomika/sish"
+    ],
+    "tag": [
+      "tunnel"
+    ],
+    "version": "HEAD-cb04dec-250223T110505"
+  },
+  {
+    "_disabled": "false",
     "pkg": "skim",
     "pkg_family": "skim",
     "pkg_id": "github.com.lotabout.skim",
@@ -8009,7 +8114,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-83f84cf-250220T130258"
+    "version": "HEAD-80a93b7-250223T160028"
   },
   {
     "_disabled": "false",
@@ -9466,7 +9571,7 @@
       "debugger",
       "strace"
     ],
-    "version": "HEAD-a2b6735-250223T172806"
+    "version": "HEAD-f08dac4-250223T225803"
   },
   {
     "_disabled": "false",
@@ -10243,7 +10348,7 @@
     "tag": [
       "Terminal"
     ],
-    "version": "HEAD-f268ff7-250222T204057"
+    "version": "HEAD-4ff581a-250223T062404"
   },
   {
     "_disabled": "false",
@@ -10790,7 +10895,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-2410bb9-250223T183617"
+    "version": "HEAD-f11f77d-250224T003915"
   },
   {
     "_disabled": "false",

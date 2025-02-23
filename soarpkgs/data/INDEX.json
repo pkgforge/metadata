@@ -3013,6 +3013,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/anipy-cli/archive/sharun",
     "provides": [
       "anipy-cli"
     ],
@@ -4378,6 +4379,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/audiobook-dl/archive/sharun",
     "provides": [
       "audiobook-dl"
     ],
@@ -15476,7 +15478,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-b186f1f-250222T163706"
+    "version": "HEAD-b3f7aca-250223T103024"
   },
   {
     "_disabled": "false",
@@ -15793,7 +15795,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-b186f1f-250222T163706"
+    "version": "HEAD-b3f7aca-250223T103024"
   },
   {
     "_disabled": "false",
@@ -23075,6 +23077,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fanficfare/archive/sharun",
     "provides": [
       "fanficfare"
     ],
@@ -23786,6 +23789,160 @@
       "decompiler"
     ],
     "version": "22.0.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ffmpeg",
+    "pkg_family": "ffmpeg",
+    "pkg_id": "github.com.wader.static-ffmpeg.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ffmpeg-stable/ffmpeg/ffmpeg",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ffmpeg/static.wader.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Complete solution to record, convert and stream audio and video",
+      "ffmpeg": "Universal media converter [ffmpeg]",
+      "ffprobe": "Simple multimedia streams analyzer [ffmpeg]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "ffmpeg"
+      ],
+      "archlinux": {
+        "aur": [
+          "ffmpeg-full"
+        ],
+        "extra": [
+          "ffmpeg"
+        ]
+      },
+      "debian": [
+        "ffmpeg"
+      ],
+      "gnuguix": [
+        "ffmpeg"
+      ],
+      "homebrew": [
+        "ffmpeg"
+      ],
+      "nixpkgs": [
+        "ffmpeg"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ffmpeg/static.wader.stable.yaml",
+    "homepage": [
+      "https://ffmpeg.org",
+      "https://github.com/FFmpeg/FFmpeg",
+      "https://git.ffmpeg.org/ffmpeg.git"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Community Created Binary. Check/Report @ https://github.com/wader/static-ffmpeg",
+      "This version contains the most features/libraries and was also Hardended"
+    ],
+    "provides": [
+      "ffmpeg",
+      "ffprobe"
+    ],
+    "repology": [
+      "ffmpeg"
+    ],
+    "src_url": [
+      "https://github.com/wader/static-ffmpeg"
+    ],
+    "tag": [
+      "media"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ffmpeg",
+    "pkg_family": "ffmpeg",
+    "pkg_id": "github.com.shaka-project.static-ffmpeg-binaries.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/binaries-stable/ffmpeg/ffmpeg",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ffmpeg/static.shaka-project.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Complete solution to record, convert and stream audio and video",
+      "ffmpeg": "Universal media converter [ffmpeg]",
+      "ffprobe": "Simple multimedia streams analyzer [ffmpeg]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "ffmpeg"
+      ],
+      "archlinux": {
+        "aur": [
+          "ffmpeg-full"
+        ],
+        "extra": [
+          "ffmpeg"
+        ]
+      },
+      "debian": [
+        "ffmpeg"
+      ],
+      "gnuguix": [
+        "ffmpeg"
+      ],
+      "homebrew": [
+        "ffmpeg"
+      ],
+      "nixpkgs": [
+        "ffmpeg"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ffmpeg/static.shaka-project.stable.yaml",
+    "homepage": [
+      "https://ffmpeg.org",
+      "https://github.com/FFmpeg/FFmpeg",
+      "https://git.ffmpeg.org/ffmpeg.git"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Community Created Binary. Check/Report @ https://github.com/shaka-project/static-ffmpeg-binaries"
+    ],
+    "provides": [
+      "ffmpeg",
+      "ffprobe"
+    ],
+    "repology": [
+      "ffmpeg"
+    ],
+    "src_url": [
+      "https://github.com/shaka-project/static-ffmpeg-binaries"
+    ],
+    "tag": [
+      "media"
+    ],
+    "version": "n7.1-2"
   },
   {
     "_disabled": "false",
@@ -24520,7 +24677,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "137.0.20250222213624"
+    "version": "137.0.20250223093828"
   },
   {
     "_disabled": "false",
@@ -25599,7 +25756,7 @@
     "tag": [
       "fzf"
     ],
-    "version": "v0.60.1"
+    "version": "v0.60.2"
   },
   {
     "_disabled": "false",
@@ -26457,7 +26614,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-34b9c51-250223T060254"
+    "version": "HEAD-5a0fd56-250223T120302"
   },
   {
     "_disabled": "false",
@@ -31171,6 +31328,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/guarddog/archive/sharun",
     "provides": [
       "guarddog"
     ],
@@ -32924,6 +33082,73 @@
   },
   {
     "_disabled": "false",
+    "pkg": "htop",
+    "pkg_family": "htop",
+    "pkg_id": "github.com.htop-dev.htop",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dev-htop/htop/htop",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/htop/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Interactive text-mode process viewer",
+    "distro_pkg": {
+      "alpine": [
+        "htop"
+      ],
+      "archlinux": {
+        "extra": [
+          "htop"
+        ]
+      },
+      "debian": [
+        "htop"
+      ],
+      "gnuguix": [
+        "htop"
+      ],
+      "homebrew": [
+        "htop"
+      ],
+      "nixpkgs": [
+        "htop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/htop/static.official.source.yaml",
+    "homepage": [
+      "https://htop.dev"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/htop-dev/htop"
+    ],
+    "provides": [
+      "htop"
+    ],
+    "repology": [
+      "htop"
+    ],
+    "src_url": [
+      "https://github.com/htop-dev/htop"
+    ],
+    "tag": [
+      "monitor"
+    ],
+    "version": "HEAD-899c6b6-250221T154204"
+  },
+  {
+    "_disabled": "false",
     "pkg": "httpie",
     "pkg_family": "httpie",
     "pkg_id": "sharun.wrappe.pypi.httpie",
@@ -33700,6 +33925,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/image-bootstrap/archive/sharun",
     "provides": [
       "image-bootstrap"
     ],
@@ -36515,6 +36741,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/klp/archive/sharun",
     "provides": [
       "klp"
     ],
@@ -38003,7 +38230,7 @@
     "tag": [
       "file-manager"
     ],
-    "version": "HEAD-938e02e-250223T171419"
+    "version": "HEAD-0e66d02-250223T195650"
   },
   {
     "_disabled": "false",
@@ -38867,6 +39094,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/linkook/archive/sharun",
     "provides": [
       "linkook"
     ],
@@ -44746,6 +44974,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
     "provides": [
       "oci==oci-cli"
     ],
@@ -47609,6 +47838,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/port-for/archive/sharun",
     "provides": [
       "port-for"
     ],
@@ -48590,7 +48820,7 @@
       "Productivity/Multimedia/Sound/Utilities",
       "Sound/Utilities"
     ],
-    "version": "20250217-182502"
+    "version": "2.4.0"
   },
   {
     "_disabled": "false",
@@ -50583,6 +50813,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/resolve-march-native/archive/sharun",
     "provides": [
       "resolve-march-native"
     ],
@@ -53501,6 +53732,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/sandwine/archive/sharun",
     "provides": [
       "sandwine"
     ],
@@ -54585,6 +54817,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/showcert/archive/sharun",
     "provides": [
       "showcert"
     ],
@@ -59139,7 +59372,7 @@
       "logfile",
       "tail"
     ],
-    "version": "HEAD-76a24b5-250221T092421"
+    "version": "HEAD-b62226d-250223T104637"
   },
   {
     "_disabled": "false",
@@ -60851,7 +61084,7 @@
       "debugger",
       "strace"
     ],
-    "version": "HEAD-6b7769a-250221T213020"
+    "version": "HEAD-a2b6735-250223T172806"
   },
   {
     "_disabled": "false",
@@ -61749,6 +61982,7 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/twitch-dl/archive/sharun",
     "provides": [
       "twitch-dl"
     ],
@@ -64015,7 +64249,7 @@
     "tag": [
       "file-manager"
     ],
-    "version": "HEAD-0b2486a-250222T090145"
+    "version": "HEAD-65e2783-250223T115304"
   },
   {
     "_disabled": "false",
@@ -66701,7 +66935,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-52a5ab5-250221T230842"
+    "version": "HEAD-2410bb9-250223T183617"
   },
   {
     "_disabled": "false",
@@ -67423,7 +67657,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.8t_2025-02-22"
+    "version": "1.8t_2025-02-23"
   },
   {
     "_disabled": "false",

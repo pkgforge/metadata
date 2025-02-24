@@ -1487,18 +1487,19 @@
   {
     "pkgname": "cabal-install",
     "pkgtype": "exe",
-    "version": "3.12.1.0",
+    "version": "3.14.1.1",
     "license": "BSD-3-Clause",
     "summary": "The command-line interface for Cabal and Hackage",
     "web-url": "https://www.haskell.org/cabal/",
     "git-url": "https://github.com/haskell/cabal",
-    "src-url": "https://hackage.haskell.org/package/cabal-install-3.12.1.0/cabal-install-3.12.1.0.tar.gz",
-    "src-sha": "6848acfd9c726fdcce544a8b669748d0fd9f2da26d28e841069dc4840276b1b2",
+    "src-url": "https://hackage.haskell.org/package/cabal-install-3.14.1.1/cabal-install-3.14.1.1.tar.gz",
+    "src-sha": "f11d364ab87fb46275a987e60453857732147780a8c592460eec8a16dbb6bace",
     "dep-pkg": "ghc",
     "dep-upp": "curl bsdtar cabal-install",
     "bsystem": "cabal",
     "binbstd": "1",
     "parallel": "1",
+    "prepare": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib\"",
     "install": "cabal_v2_install"
   },
   {
@@ -17860,7 +17861,7 @@
     "bsystem": "cabal",
     "binbstd": "1",
     "parallel": "1",
-    "dopatch": "gsed -i '/index-state:/d' cabal.project\n\ncat > cabal.project.local <<EOF\nignore-project: False\n\npackage direct-sqlcipher\n    flags: +openssl\n\ntest-show-details: direct\nEOF",
+    "dopatch": "gsed -i '/extra-source-files:/a \\    PRIVACY.md' simplex-chat.cabal\n\nmv scripts/cabal.project.local.linux cabal.project.local",
     "prepare": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib\"\nexport PROXIED_CXX_ARGS=\"$PROXIED_CXX_ARGS -L$PACKAGE_WORKING_DIR/lib\"\n\nexport BOOTSTRAP_HASKELL_GHC_VERSION='9.6.6'\nexport BOOTSTRAP_HASKELL_CABAL_VERSION='3.14.1.1'\nexport BOOTSTRAP_HASKELL_NONINTERACTIVE=1\nexport BOOTSTRAP_HASKELL_VERBOSE=1\nexport BOOTSTRAP_HASKELL_INSTALL_NO_STACK=1\n\nunset  BOOTSTRAP_HASKELL_INSTALL_HLS\nunset  BOOTSTRAP_HASKELL_CABAL_XDG\nunset  BOOTSTRAP_HASKELL_DOWNLOADER\nunset  BOOTSTRAP_HASKELL_ADJUST_BASHRC\nunset  BOOTSTRAP_HASKELL_MINIMAL\n\nunset  GHCUP_USE_XDG_DIRS\nunset  GHCUP_BASE_URL\n\nexport GHCUP_INSTALL_BASE_PREFIX=\"$PACKAGE_WORKING_DIR\"\n\nif [ \"$GITHUB_ACTIONS\" = true ] ; then\n    DEBUG_CABAL=1\nfi\n\nwfetch 'https://get-ghcup.haskell.org' -o ghcup-installer.sh\ngsed -i '/GHCUP_INSTALL_BASE_PREFIX:=/d'  ghcup-installer.sh\nrun sh ghcup-installer.sh\n\nexport LD_LIBRARY_PATH=\"$libncurses_LIBRARY_DIR:$libgmp_LIBRARY_DIR\"\n\n#X=\"$GHCUP_INSTALL_BASE_PREFIX/.ghcup/ghc/$BOOTSTRAP_HASKELL_GHC_VERSION/lib/ghc-$BOOTSTRAP_HASKELL_GHC_VERSION/lib/$NATIVE_PLATFORM_ARCH-$NATIVE_PLATFORM_KIND-ghc-$BOOTSTRAP_HASKELL_GHC_VERSION\"\n\n#run ln -s \"$libgmp_LIBRARY_DIR/libgmp.so\" \"$X/libgmp.so\"\n\nexport PATH=\"$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin:$PATH\"",
     "install": "cabal_v2_install exe:simplex-chat"
   },

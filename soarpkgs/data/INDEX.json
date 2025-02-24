@@ -954,7 +954,7 @@
       "knowledge-base",
       "wiki"
     ],
-    "version": "v0.20.0-canary.15"
+    "version": "v0.20.0-canary.16"
   },
   {
     "_disabled": "false",
@@ -1078,7 +1078,7 @@
       "knowledge-base",
       "wiki"
     ],
-    "version": "v0.19.6"
+    "version": "v0.20.0"
   },
   {
     "_disabled": "false",
@@ -3909,7 +3909,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250222T012200"
+    "version": "250224T023254"
   },
   {
     "_disabled": "false",
@@ -15478,7 +15478,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-8bd9744-250223T183325"
+    "version": "HEAD-604cc40-250224T022956"
   },
   {
     "_disabled": "false",
@@ -15795,7 +15795,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-8bd9744-250223T183325"
+    "version": "HEAD-604cc40-250224T022956"
   },
   {
     "_disabled": "false",
@@ -21711,6 +21711,7 @@
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/vladimiry/ElectronMail"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/electron-mail/appimage/official",
     "provides": [
       "electron-mail==ElectronMail"
     ],
@@ -27330,7 +27331,7 @@
       "editor",
       "graphics"
     ],
-    "version": "54187.9042486dac3"
+    "version": "54192.b285cfd3107"
   },
   {
     "_disabled": "false",
@@ -33325,6 +33326,58 @@
   },
   {
     "_disabled": "false",
+    "pkg": "httptap",
+    "pkg_family": "httptap",
+    "pkg_id": "github.com.monasticacademy.httptap.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/httptap-source/httptap/httptap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/httptap/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "View HTTP/HTTPS requests made by any Linux program",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "httptap-bin"
+        ]
+      },
+      "nixpkgs": [
+        "httptap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/httptap/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/monasticacademy/httptap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/monasticacademy/httptap"
+    ],
+    "provides": [
+      "httptap"
+    ],
+    "src_url": [
+      "https://github.com/monasticacademy/httptap"
+    ],
+    "tag": [
+      "monitor"
+    ],
+    "version": "HEAD-4e8ba06-250223T141817"
+  },
+  {
+    "_disabled": "false",
     "pkg": "httpx",
     "pkg_family": "httpx",
     "pkg_id": "github.com.projectdiscovery.httpx",
@@ -33936,7 +33989,7 @@
       "net",
       "net-im"
     ],
-    "version": "HEAD-e66a8c6-250218T032216"
+    "version": "HEAD-b023e38-250224T031646"
   },
   {
     "_disabled": "false",
@@ -35982,7 +36035,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-c83abc9-250223T133417"
+    "version": "HEAD-b7e2932-250224T005724"
   },
   {
     "_disabled": "false",
@@ -36099,7 +36152,7 @@
     "tag": [
       "kubernetes"
     ],
-    "version": "HEAD-f8fbd98-250223T105050"
+    "version": "HEAD-8b2939c-250223T181218"
   },
   {
     "_disabled": "false",
@@ -39663,7 +39716,7 @@
     "tag": [
       "log"
     ],
-    "version": "2.3.1"
+    "version": "2.3.2"
   },
   {
     "_disabled": "false",
@@ -41784,6 +41837,77 @@
   },
   {
     "_disabled": "false",
+    "pkg": "mitmproxy",
+    "pkg_family": "mitmproxy",
+    "pkg_id": "sharun.wrappe.pypi.mitmproxy",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-mitmproxy/mitmproxy/mitmproxy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/mitmproxy/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "SSL/TLS-capable man-in-the-middle proxy for HTTP and Websockets",
+    "distro_pkg": {
+      "alpine": [
+        "mitmproxy"
+      ],
+      "archlinux": {
+        "aur": [
+          "mitmproxy-git"
+        ],
+        "extra": [
+          "mitmproxy"
+        ]
+      },
+      "debian": [
+        "mitmproxy"
+      ],
+      "homebrew": [
+        "mitmproxy"
+      ],
+      "nixpkgs": [
+        "mitmproxy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/mitmproxy/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://mitmproxy.org",
+      "https://docs.mitmproxy.org"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/mitmproxy/archive/sharun",
+    "provides": [
+      "mitmproxy"
+    ],
+    "repology": [
+      "mitmproxy"
+    ],
+    "src_url": [
+      "https://pypi.org/project/mitmproxy"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "11.1.3"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mkpasswd",
     "pkg_family": "mkpasswd",
     "pkg_id": "nixpkgs.mkpasswd",
@@ -42135,6 +42259,78 @@
       "toybox"
     ],
     "version": "0.69"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mosh",
+    "pkg_family": "mosh",
+    "pkg_id": "github.com.blinksh.mosh-static-multiarch.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/multiarch-stable/mosh/mosh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mosh/static.blinksh.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Mobile shell that supports roaming and intelligent local echo",
+    "distro_pkg": {
+      "alpine": [
+        "mosh"
+      ],
+      "archlinux": {
+        "aur": [
+          "mosh-git"
+        ],
+        "extra": [
+          "mosh"
+        ]
+      },
+      "debian": [
+        "mosh"
+      ],
+      "gnuguix": [
+        "mosh"
+      ],
+      "homebrew": [
+        "mosh"
+      ],
+      "nixpkgs": [
+        "mosh"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mosh/static.blinksh.stable.yaml",
+    "homepage": [
+      "https://mosh.org",
+      "https://github.com/mobile-shell/mosh"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Community Created Binary. Check/Report @ https://github.com/blinksh/mosh-static-multiarch"
+    ],
+    "provides": [
+      "mosh-client",
+      "mosh-server"
+    ],
+    "repology": [
+      "mosh"
+    ],
+    "src_url": [
+      "https://github.com/blinksh/mosh-static-multiarch"
+    ],
+    "tag": [
+      "ssh"
+    ],
+    "version": "1.4.0+blink-17.3.0"
   },
   {
     "_disabled": "false",
@@ -43938,6 +44134,65 @@
       "Utility"
     ],
     "version": "HEAD-d8486a3-240104T144938"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ngrok",
+    "pkg_family": "ngrok",
+    "pkg_id": "equinox.com.ngrok.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ngrok-stable/ngrok/ngrok",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ngrok/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "External Tunnel to Internal Assets",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ngrok"
+        ]
+      },
+      "homebrew": [
+        "ngrok"
+      ],
+      "nixpkgs": [
+        "ngrok"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ngrok/static.official.stable.yaml",
+    "homepage": [
+      "https://ngrok.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://ngrok.com/downloads/linux"
+    ],
+    "provides": [
+      "ngrok"
+    ],
+    "repology": [
+      "ngrok"
+    ],
+    "src_url": [
+      "https://ngrok.com/downloads/linux?tab=download",
+      "https://dl.equinox.io/ngrok/ngrok-v3/stable/archive"
+    ],
+    "tag": [
+      "tunnel"
+    ],
+    "version": "3.20.0"
   },
   {
     "_disabled": "false",
@@ -49966,7 +50221,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-b2fd985-250223T192238"
+    "version": "HEAD-fdb9ff7-250223T213951"
   },
   {
     "_disabled": "false",
@@ -55391,7 +55646,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-dfb3afb-250224T073356"
+    "version": "HEAD-e9055b5-250224T104012"
   },
   {
     "_disabled": "false",
@@ -65912,6 +66167,7 @@
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xash3d-fwgs/appimage/official",
     "provides": [
       "xash3d-fwgs"
     ],
@@ -65959,6 +66215,7 @@
       "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
       "Host Dependencies: A lot, please use soar log to view the ldd output"
     ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
     "provides": [
       "xashds==xash"
     ],
@@ -67310,6 +67567,152 @@
       "yaml"
     ],
     "version": "HEAD-d74e701-250222T111934"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.pypi.yt-dlp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
+    "provides": [
+      "yt-dlp"
+    ],
+    "repology": [
+      "yt-dlp"
+    ],
+    "src_url": [
+      "https://pypi.org/project/yt-dlp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2025.2.19"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.source.yt-dlp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
+    "provides": [
+      "yt-dlp"
+    ],
+    "repology": [
+      "yt-dlp"
+    ],
+    "src_url": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-0bb3978-250223T191606"
   },
   {
     "_disabled": "false",

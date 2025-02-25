@@ -167,7 +167,7 @@
     "bsystem": "autogen",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "case $TARGET_PLATFORM_NAME in\n    macos) export CFLAGS=\"$CFLAGS -fcommon\" ;;\n    linux) export CPPFLAGS=\"$CPPFLAGS -Doff64_t=off_t\"\nesac",
+    "dosetup": "case $TARGET_PLATFORM_NAME in\n    macos) export CFLAGS=\"$CFLAGS -fcommon\" ;;\n    linux) export CPPFLAGS=\"$CPPFLAGS -Doff64_t=off_t\"\nesac",
     "install": "configure"
   },
   {
@@ -312,7 +312,7 @@
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export RUSTUP_TOOLCHAIN=1.76",
+    "dosetup": "export RUSTUP_TOOLCHAIN=1.76",
     "install": "cargow build --locked && run install_bins target/$RUST_TARGET/release/anchor"
   },
   {
@@ -376,7 +376,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$argp_standalone_LIBRARY_DIR -largp -lintl -liconv\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$argp_standalone_LIBRARY_DIR -largp -lintl -liconv\"\nfi",
     "install": "cmakew"
   },
   {
@@ -839,7 +839,7 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export ac_cv_lib_dl_dlopen=no\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export ac_cv_lib_dl_dlopen=no\nfi",
     "install": "configure \\\n    --without-bash-malloc \\\n    --disable-profiling \\\n    --enable-readline \\\n    --enable-history \\\n    --enable-select"
   },
   {
@@ -1499,7 +1499,7 @@
     "bsystem": "cabal",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib\"",
+    "dosetup": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib\"",
     "install": "cabal_v2_install"
   },
   {
@@ -1796,7 +1796,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "gsed -i \"/ALL_LDFLAGS/s|$| $CFLAGS $CPPFLAGS $LDFLAGS|\" cgit.mk",
-    "prepare": "run mv ../res/* git/",
+    "dosetup": "run mv ../res/* git/",
     "install": "export ac_cv_header_libintl_h=no\ngmakew clean\ngmakew\ngmakew install \\\n    prefix=$PACKAGE_INSTALL_DIR \\\n    CGIT_SCRIPT_PATH=$PACKAGE_INSTALL_DIR/var/www \\\n    CGIT_DATA_PATH=$PACKAGE_INSTALL_DIR/var/www \\\n    CGIT_CONFIG=$PACKAGE_INSTALL_DIR/etc/cgitrc \\\n    CACHE_ROOT=$PACKAGE_INSTALL_DIR/var/cache"
   },
   {
@@ -1879,7 +1879,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "0",
-    "prepare": "case $TARGET_PLATFORM_NAME in\n    linux) PLATFORM=linux ;;\n    macos) PLATFORM=macosx;;\n    *bsd)  PLATFORM=bsd   ;;\nesac",
+    "dosetup": "case $TARGET_PLATFORM_NAME in\n    linux) PLATFORM=linux ;;\n    macos) PLATFORM=macosx;;\n    *bsd)  PLATFORM=bsd   ;;\nesac",
     "install": "gmakew clean\ngmakew         PREFIX=$PACKAGE_INSTALL_DIR C_COMPILER=$CC LIBRARIAN=$AR LINKER_OPTIONS=\"'$LDFLAGS'\" PLATFORM=$PLATFORM\ngmakew install PREFIX=$PACKAGE_INSTALL_DIR C_COMPILER=$CC LIBRARIAN=$AR LINKER_OPTIONS=\"'$LDFLAGS'\" PLATFORM=$PLATFORM"
   },
   {
@@ -2188,7 +2188,7 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export CFLAGS=\"$CFLAGS -fcommon\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export CFLAGS=\"$CFLAGS -fcommon\"\nfi",
     "install": "configure --disable-mt"
   },
   {
@@ -2437,7 +2437,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "gsed -i 's|lib64|lib|g' configure",
-    "prepare": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib -lssl -lcrypto -ldl -lpthread -lz\"",
+    "dosetup": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib -lssl -lcrypto -ldl -lpthread -lz\"",
     "install": "configure \\\n    --disable-shared \\\n    --disable-gssapi \\\n    --with-tls=openssl \\\n    --with-components=core \\\n    --without-bundledir"
   },
   {
@@ -2656,7 +2656,7 @@
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export RUSTUP_TOOLCHAIN=1.76",
+    "dosetup": "export RUSTUP_TOOLCHAIN=1.76",
     "install": "cargow install"
   },
   {
@@ -2899,7 +2899,7 @@
     "bsystem": "autogen",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" != macos ] ; then\n    export LDFLAGS=\"$LDFLAGS --static -static\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" != macos ] ; then\n    export LDFLAGS=\"$LDFLAGS --static -static\"\nfi",
     "install": "configure only \\\n    --disable-swig \\\n    --disable-php \\\n    --disable-tcl \\\n    --without-gdk \\\n    --without-gtk \\\n    --without-qt \\\n    --without-x\ngmakew\ngmakew -C cmd/dot dot_static\ninstall_bins cmd/dot/dot_static"
   },
   {
@@ -3000,7 +3000,7 @@
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_SPEC\" = linux-musl-armv7l ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lgcc_s\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_SPEC\" = linux-musl-armv7l ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lgcc_s\"\nfi",
     "install": "cargow install"
   },
   {
@@ -3360,6 +3360,21 @@
     "install": "cmakew \\\n    -DEXIV2_ENABLE_NLS=OFF \\\n    -DEXIV2_ENABLE_XMP=ON \\\n    -DEXIV2_ENABLE_PNG=ON \\\n    -DEXIV2_ENABLE_SSH=ON \\\n    -DEXIV2_ENABLE_CURL=ON \\\n    -DEXIV2_ENABLE_BMFF=ON \\\n    -DEXIV2_ENABLE_VIDEO=ON \\\n    -DEXIV2_ENABLE_LENSDATA=ON \\\n    -DEXIV2_ENABLE_WEBREADY=ON \\\n    -DEXIV2_ENABLE_PRINTUCS2=ON \\\n    -DEXIV2_BUILD_EXIV2_COMMAND=ON \\\n    -DEXIV2_BUILD_SAMPLES=OFF \\\n    -DBUILD_SHARED_LIBS=OFF"
   },
   {
+    "pkgname": "expect",
+    "pkgtype": "exe",
+    "version": "5.45.4",
+    "summary": "Program that can automate interactive applications",
+    "web-url": "https://expect.sourceforge.io",
+    "src-url": "https://downloads.sourceforge.net/project/expect/Expect/5.45.4/expect5.45.4.tar.gz",
+    "src-sha": "49a7da83b0bdd9f46d04a04deec19c7767bb9a323e40c4781f89caf760b92c34",
+    "dep-pkg": "libtcl",
+    "dep-upp": "curl bsdtar gmake gm4 perl autoconf automake gmake",
+    "bsystem": "autotools",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "configure \\\n    --enable-shared \\\n    --enable-64bit \\\n    --with-tcl=$libtcl_LIBRARY_DIR"
+  },
+  {
     "pkgname": "eza",
     "pkgtype": "exe",
     "version": "0.19.0",
@@ -3390,7 +3405,7 @@
     "bsystem": "autotools",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "./bootstrap",
+    "dosetup": "./bootstrap",
     "install": "configure --disable-shared --enable-static"
   },
   {
@@ -3473,7 +3488,7 @@
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export RUSTUP_TOOLCHAIN=1.79",
+    "dosetup": "export RUSTUP_TOOLCHAIN=1.79",
     "install": "cargow install"
   },
   {
@@ -3606,7 +3621,7 @@
     "parallel": "1",
     "doextra": "rm -rf include/ lib/ share/man/man3/",
     "do12345": "if isCrossBuild ; then\n    configure --disable-zlib --disable-bzlib --disable-xzlib\nfi",
-    "prepare": "if isCrossBuild ; then\n    export FILE_COMPILE=\"$NATIVE_INSTALL_DIR/bin/file\"\nfi",
+    "dosetup": "if isCrossBuild ; then\n    export FILE_COMPILE=\"$NATIVE_INSTALL_DIR/bin/file\"\nfi",
     "install": "configure --enable-zlib --disable-bzlib --disable-xzlib --enable-static --disable-shared",
     "bindenv": "MAGIC=%s/share/misc/magic.mgc"
   },
@@ -3692,7 +3707,7 @@
     "binbstd": "0",
     "parallel": "1",
     "dopatch": "printf 'target_link_libraries(replaygain_analysis m)\\n' >> src/share/replaygain_analysis/CMakeLists.txt",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -framework CoreFoundation\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -framework CoreFoundation\"\nfi",
     "install": "cmakew \\\n    -DWITH_OGG=ON \\\n    -DBUILD_CXXLIBS=ON \\\n    -DBUILD_PROGRAMS=ON \\\n    -DBUILD_EXAMPLES=ON \\\n    -DBUILD_DOCS=OFF \\\n    -DINSTALL_MANPAGES=ON \\\n    -DINSTALL_PKGCONFIG_MODULES=OFF \\\n    -DINSTALL_CMAKE_CONFIG_MODULE=OFF",
     "dotweak": "rm -rf include/ lib/"
   },
@@ -3744,7 +3759,7 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "# https://github.com/westes/flex/issues/428\nexport ac_cv_func_reallocarray=no\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -Wl,-undefined -Wl,dynamic_lookup\"\nfi",
+    "dosetup": "# https://github.com/westes/flex/issues/428\nexport ac_cv_func_reallocarray=no\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -Wl,-undefined -Wl,dynamic_lookup\"\nfi",
     "install": "configure --enable-warnings --enable-static --disable-shared --disable-libfl"
   },
   {
@@ -4305,7 +4320,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "export PROXIED_CXX_ARGS=\"$PROXIED_CXX_ARGS -lm\"",
+    "dosetup": "export PROXIED_CXX_ARGS=\"$PROXIED_CXX_ARGS -lm\"",
     "install": "cmakew \\\n    -DBUILD_BOTH_LIBS=ON \\\n    -DBUILD_MANPAGES=OFF \\\n    -DBUILD_DOCUMENTATION=OFF"
   },
   {
@@ -4473,7 +4488,7 @@
     "bsystem": "cabal",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_VERS\" = glibc ] ; then\n    X=\"$(\"$CC_FOR_BUILD\" -print-file-name=libtinfo.so.6)\"\n\n    if [ -n \"$X\" ] ; then\n        run ln -s \"$X\" ../lib/libtinfo.so\n    fi\nfi\n\nexport LD_LIBRARY_PATH=\"$PACKAGE_WORKING_DIR/lib:$libgmp_LIBRARY_DIR\"\nexport PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib\"",
+    "dosetup": "if [ \"$TARGET_PLATFORM_VERS\" = glibc ] ; then\n    X=\"$(\"$CC_FOR_BUILD\" -print-file-name=libtinfo.so.6)\"\n\n    if [ -n \"$X\" ] ; then\n        run ln -s \"$X\" ../lib/libtinfo.so\n    fi\nfi\n\nexport LD_LIBRARY_PATH=\"$PACKAGE_WORKING_DIR/lib:$libgmp_LIBRARY_DIR\"\nexport PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib\"",
     "install": "cabal_v2_install"
   },
   {
@@ -4494,7 +4509,7 @@
     "xxflags": "-std=c++11",
     "parallel": "1",
     "dopatch": "rm -rf tesseract/ freetype/ jbig2dec/ openjpeg/ lcms2mt/ libpng/ expat/ jpeg/ tiff/ zlib/\n\nsed -i 's|-g -o|$(LDFLAGS) -o|' base/unix-dll.mak\n\nif [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    gsed -i 's|DO_NOT_USE_SPRINTF|sprintf|' base/stdio_.h\nfi",
-    "prepare": "if isCrossBuild ; then\n    export CCAUX=\"$CC_FOR_BUILD\"\n    export CFLAGSAUX=\"$CFLAGS_FOR_BUILD $LDFLAGS_FOR_BUILD\"\n    export CPPFLAGSAUX=\"$CPPFLAGS_FOR_BUILD\"\n    export LDFLAGSAUX=\"$LDFLAGS_FOR_BUILD\"\nelse\n    export CCAUX=\"$CC $CFLAGS $CPPFLAGS $LDFLAGS\"\n    export CFLAGSAUX=\"$CFLAGS $LDFLAGS\"\n    export CPPFLAGSAUX=\"$CPPFLAGS\"\n    export LDFLAGSAUX=\"$LDFLAGS\"\nfi",
+    "dosetup": "if isCrossBuild ; then\n    export CCAUX=\"$CC_FOR_BUILD\"\n    export CFLAGSAUX=\"$CFLAGS_FOR_BUILD $LDFLAGS_FOR_BUILD\"\n    export CPPFLAGSAUX=\"$CPPFLAGS_FOR_BUILD\"\n    export LDFLAGSAUX=\"$LDFLAGS_FOR_BUILD\"\nelse\n    export CCAUX=\"$CC $CFLAGS $CPPFLAGS $LDFLAGS\"\n    export CFLAGSAUX=\"$CFLAGS $LDFLAGS\"\n    export CPPFLAGSAUX=\"$CPPFLAGS\"\n    export LDFLAGSAUX=\"$LDFLAGS\"\nfi",
     "install": "configure \\\n    --disable-compile-inits \\\n    --disable-cups \\\n    --disable-gtk \\\n    --with-system-libtiff \\\n    --without-x\ngmakew libgs\ngmakew libgxps\ngmakew libgpdl\ngmakew libgpcl6\ngmakew install"
   },
   {
@@ -4514,7 +4529,7 @@
     "xxflags": "-std=c++11",
     "parallel": "1",
     "dopatch": "rm -rf tesseract/ freetype/ jbig2dec/ openjpeg/ lcms2mt/ libpng/ expat/ jpeg/ tiff/ zlib/\n\nsed -i 's|-g -o|$(LDFLAGS) -o|' base/unix-dll.mak\n\nif [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    gsed -i 's|DO_NOT_USE_SPRINTF|sprintf|' base/stdio_.h\nfi",
-    "prepare": "if isCrossBuild ; then\n    export CCAUX=\"$CC_FOR_BUILD\"\n    export CFLAGSAUX=\"$CFLAGS_FOR_BUILD $LDFLAGS_FOR_BUILD\"\n    export CPPFLAGSAUX=\"$CPPFLAGS_FOR_BUILD\"\n    export LDFLAGSAUX=\"$LDFLAGS_FOR_BUILD\"\nelse\n    export CCAUX=\"$CC $CFLAGS $CPPFLAGS $LDFLAGS\"\n    export CFLAGSAUX=\"$CFLAGS $LDFLAGS\"\n    export CPPFLAGSAUX=\"$CPPFLAGS\"\n    export LDFLAGSAUX=\"$LDFLAGS\"\nfi",
+    "dosetup": "if isCrossBuild ; then\n    export CCAUX=\"$CC_FOR_BUILD\"\n    export CFLAGSAUX=\"$CFLAGS_FOR_BUILD $LDFLAGS_FOR_BUILD\"\n    export CPPFLAGSAUX=\"$CPPFLAGS_FOR_BUILD\"\n    export LDFLAGSAUX=\"$LDFLAGS_FOR_BUILD\"\nelse\n    export CCAUX=\"$CC $CFLAGS $CPPFLAGS $LDFLAGS\"\n    export CFLAGSAUX=\"$CFLAGS $LDFLAGS\"\n    export CPPFLAGSAUX=\"$CPPFLAGS\"\n    export LDFLAGSAUX=\"$LDFLAGS\"\nfi",
     "install": "configure \\\n    --disable-compile-inits \\\n    --disable-cups \\\n    --disable-gtk \\\n    --with-system-libtiff \\\n    --without-x\ngmake  install-so\ngmakew libgs\ngmakew libgxps\ngmakew libgpdl\ngmakew libgpcl6\ncd bin\nfind . -name '*.a' -printf '%P\\n' | xargs -I {} mv {} lib{}\ninstall_libs  *.a",
     "dotweak": "writepc libgs <<EOF\nprefix=\\${pcfiledir}/../..\nexec_prefix=\\${prefix}\nlibdir=\\${exec_prefix}/lib\nincludedir=\\${prefix}/include\n\nName: libgs\nDescription: $PACKAGE_SUMMARY\nVersion: $PACKAGE_VERSION\nCflags: -I\\${includedir}\nLibs: -L\\${libdir} -lgs\nRequires: fontconfig tesseract jbig2dec lcms2 libidn\nEOF"
   },
@@ -4598,7 +4613,7 @@
     "bsystem": "configure",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export ac_cv_c_regex_with_reg_startend=no\nfi\n\nif isCrossBuild ; then\n    # to bypass git error: cannot run test program while cross compiling\n    export ac_cv_fread_reads_directories=yes\n    export ac_cv_header_libintl_h=yes\n    export ac_cv_iconv_omits_bom=no\n    export ac_cv_snprintf_returns_bogus=no\n\n    if [ \"$TARGET_PLATFORM_NAME\" = freebsd ] ; then\n        gsed -i '/-DHAVE_SYSINFO/d' config.mak.uname\n    fi\nfi\n\nexport ac_cv_lib_curl_curl_global_init=yes\n\nexport ac_cv_prog_CURL_CONFIG=\"$libcurl_INSTALL_DIR/bin/curl-config\"\n\nLIBCURL_LIBS=\"$(pkg-config --libs libcurl)\"\nprintf 'LIBCURL_LIBS=%s\\n' \"$LIBCURL_LIBS\"\n\nexport LDFLAGS=\"$LDFLAGS $LIBCURL_LIBS\"\n\nif [ \"$TARGET_PLATFORM_NAME\" != macos ] ; then\n    if [ -f ../lib/libcurl.a ] ; then\n        rm  ../lib/libcurl.a\n        printf 'INPUT(%s %s)\\n' \"$libcurl_LIBRARY_DIR/libcurl.a\" \"$(pkg-config --libs-only-l libcurl | sed 's|-lcurl||g')\" > ../lib/libcurl.a\n    fi\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export ac_cv_c_regex_with_reg_startend=no\nfi\n\nif isCrossBuild ; then\n    # to bypass git error: cannot run test program while cross compiling\n    export ac_cv_fread_reads_directories=yes\n    export ac_cv_header_libintl_h=yes\n    export ac_cv_iconv_omits_bom=no\n    export ac_cv_snprintf_returns_bogus=no\n\n    if [ \"$TARGET_PLATFORM_NAME\" = freebsd ] ; then\n        gsed -i '/-DHAVE_SYSINFO/d' config.mak.uname\n    fi\nfi\n\nexport ac_cv_lib_curl_curl_global_init=yes\n\nexport ac_cv_prog_CURL_CONFIG=\"$libcurl_INSTALL_DIR/bin/curl-config\"\n\nLIBCURL_LIBS=\"$(pkg-config --libs libcurl)\"\nprintf 'LIBCURL_LIBS=%s\\n' \"$LIBCURL_LIBS\"\n\nexport LDFLAGS=\"$LDFLAGS $LIBCURL_LIBS\"\n\nif [ \"$TARGET_PLATFORM_NAME\" != macos ] ; then\n    if [ -f ../lib/libcurl.a ] ; then\n        rm  ../lib/libcurl.a\n        printf 'INPUT(%s %s)\\n' \"$libcurl_LIBRARY_DIR/libcurl.a\" \"$(pkg-config --libs-only-l libcurl | sed 's|-lcurl||g')\" > ../lib/libcurl.a\n    fi\nfi",
     "install": "configure \\\n    --with-zlib=\"$libz_INSTALL_DIR\" \\\n    --with-curl=\"$libcurl_INSTALL_DIR\" \\\n    --with-expat=\"$libexpat_INSTALL_DIR\" \\\n    --with-iconv=\"$libiconv_INSTALL_DIR\" \\\n    --with-openssl=\"$libopenssl_INSTALL_DIR\" \\\n    --with-libpcre2=\"$libpcre2_INSTALL_DIR\" \\\n    --without-tcltk",
     "bindenv": "GIT_EXEC_PATH=%s/libexec/git-core\nGIT_TEMPLATE_DIR=%s/share/git-core/templates\nGIT_CONFIG_NOSYSTEM=1"
   },
@@ -4834,7 +4849,6 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "# https://sourceware.org/pipermail/libc-alpha/2024-September/159664.html\nexport PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -U_FORTIFY_SOURCE\"\n\n# error: #error \"glibc cannot be compiled without optimization\"\nCFLAGS=\"$(printf '%s\\n' \"$CFLAGS\" | sed 's|-O0|-O2|g')\"",
     "install": "configure --without-selinux"
   },
   {
@@ -4919,7 +4933,7 @@
     "binbstd": "0",
     "parallel": "1",
     "dopatch": "gsed -i 's|FIND_PACKAGE(CURL|PKG_CHECK_MODULES(CURL libcurl|' CMakeLists.txt\ngsed -i 's|CURL_LIBRARY|CURL_LIBRARIES|' lib/CMakeLists.txt\ngsed -i 's|SHARED|STATIC|' lib/CMakeLists.txt",
-    "prepare": "# https://www.gnu.org/software/gnulib/manual/html_node/execinfo_002eh.html\nif [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$libexecinfo_LIBRARY_DIR -lexecinfo\"\nfi\n\n# # https://man.netbsd.org/backtrace.3\nif [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lexecinfo\"\nfi",
+    "dosetup": "# https://www.gnu.org/software/gnulib/manual/html_node/execinfo_002eh.html\nif [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$libexecinfo_LIBRARY_DIR -lexecinfo\"\nfi\n\n# # https://man.netbsd.org/backtrace.3\nif [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lexecinfo\"\nfi",
     "install": "cmakew"
   },
   {
@@ -5348,7 +5362,7 @@
     "bsystem": "go",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    # https://github.com/anatol/smart.go need cgo enabled on macOS.\n    export CGO_ENABLED=1\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    # https://github.com/anatol/smart.go need cgo enabled on macOS.\n    export CGO_ENABLED=1\nfi",
     "install": "gow -X main.Version=v$PACKAGE_VERSION -X main.BuildDate=$(date +%Y%m%dT%H%M%S) ./cmd/gotop"
   },
   {
@@ -5788,7 +5802,7 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "# https://savannah.gnu.org/bugs/?64441\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -liconv\"\nfi",
+    "dosetup": "# https://savannah.gnu.org/bugs/?64441\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -liconv\"\nfi",
     "install": "configure \\\n    --program-prefix=g \\\n    --with-included-regex \\\n    --with-xattrs \\\n    --without-posix-acls \\\n    --without-selinux \\\n    --disable-acl \\\n    --disable-gcc-warnings",
     "dotweak": "ln -s gtar bin/tar"
   },
@@ -5824,7 +5838,7 @@
     "binbstd": "0",
     "ppflags": "-DG_DISABLE_ASSERT -DG_DISABLE_CAST_CHECKS",
     "parallel": "1",
-    "prepare": "export DESTDIR=/",
+    "dosetup": "export DESTDIR=/",
     "install": "mesonw \\\n    -Dbuild-tests=false \\\n    -Dbuild-examples=false \\\n    -Dintrospection=disabled \\\n    -Dman-pages=true \\\n    -Dmedia-gstreamer=disabled \\\n    -Dvulkan=disabled"
   },
   {
@@ -5843,7 +5857,7 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -framework CoreFoundation\"\nfi\n\n__tweak_pc_files() {\n    :\n}\n\n__check_elf_files() {\n    :\n}",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -framework CoreFoundation\"\nfi\n\n__tweak_pc_files() {\n    :\n}\n\n__check_elf_files() {\n    :\n}",
     "install": "configure --disable-nls",
     "dotweak": "gsed -i '/^Name: /,$d' lib/pkgconfig/guile-3.0.pc\ncat >> lib/pkgconfig/guile-3.0.pc <<EOF\nName: Guile\nDescription: $PACKAGE_SUMMARY\nVersion: $PACKAGE_VERSION\nCflags: -I\\${pkgincludedir}/3.0\nLibs: -L\\${libdir} -lguile-3.0\nRequires: bdw-gc gmp libffi libxcrypt libunistring\nEOF"
   },
@@ -5910,7 +5924,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export CFLAGS=\"$CFLAGS $CPPFLAGS\"\nexport LDFLAGS=\"$LDFLAGS -lm\"\n\nMAKE_FLAGS=\"\n    CC=$CC\n    PREFIX=$PACKAGE_INSTALL_DIR\n    USE_SYSTEM_XXHASH=1\n    USE_SYSTEM_OPENCL=1\n    USE_SYSTEM_ZLIB=1\n    ENABLE_UNRAR=0\"",
+    "dosetup": "export CFLAGS=\"$CFLAGS $CPPFLAGS\"\nexport LDFLAGS=\"$LDFLAGS -lm\"\n\nMAKE_FLAGS=\"\n    CC=$CC\n    PREFIX=$PACKAGE_INSTALL_DIR\n    USE_SYSTEM_XXHASH=1\n    USE_SYSTEM_OPENCL=1\n    USE_SYSTEM_ZLIB=1\n    ENABLE_UNRAR=0\"",
     "install": "gmakew clean\ngmakew         $MAKE_FLAGS\ngmakew install $MAKE_FLAGS"
   },
   {
@@ -6054,7 +6068,7 @@
     "bsystem": "cabal",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib\"",
+    "dosetup": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib\"",
     "install": "cabal_v2_install"
   },
   {
@@ -6270,7 +6284,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "gsed -i 's|-lcrypto -lssl|-lssl -lcrypto|' Makefile.*\ngsed -i 's|ln -sf |ln -sfr |' Makefile.*",
-    "prepare": "export CXXFLAGS=\"$CXXFLAGS $CPPFLAGS\"",
+    "dosetup": "export CXXFLAGS=\"$CXXFLAGS $CPPFLAGS\"",
     "install": "gmakew clean\ngmakew install \\\n    DEBUG=no \\\n    HOMEBREW=0 \\\n    USE_UPNP=yes \\\n    PREFIX=$PACKAGE_INSTALL_DIR \\\n    SSLROOT=$libopenssl_INSTALL_DIR"
   },
   {
@@ -6428,7 +6442,7 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "export PERL5LIB=\"$perl_XML_Parser_INSTALL_DIR/lib/perl5\"",
+    "dosetup": "export PERL5LIB=\"$perl_XML_Parser_INSTALL_DIR/lib/perl5\"",
     "install": "configure"
   },
   {
@@ -6647,7 +6661,7 @@
     "bsystem": "go",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "run go mod tidy",
+    "dosetup": "run go mod tidy",
     "install": "gow -o jfrog"
   },
   {
@@ -6715,7 +6729,7 @@
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export RUSTUP_TOOLCHAIN=1.76",
+    "dosetup": "export RUSTUP_TOOLCHAIN=1.76",
     "install": "cargow install --locked"
   },
   {
@@ -6733,7 +6747,7 @@
     "bsystem": "configure",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "for h in \"$libjpeg_turbo_INCLUDE_DIR\"/*.h\ndo\n    ln -sv \"$h\" \"$PACKAGE_WORKING_DIR/include/\"\ndone",
+    "dosetup": "for h in \"$libjpeg_turbo_INCLUDE_DIR\"/*.h\ndo\n    ln -sv \"$h\" \"$PACKAGE_WORKING_DIR/include/\"\ndone",
     "install": "configure --with-libjpeg=\"$PACKAGE_WORKING_DIR\""
   },
   {
@@ -7717,7 +7731,7 @@
     "bsystem": "meson",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    # https://man.netbsd.org/backtrace.3\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lexecinfo\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    # https://man.netbsd.org/backtrace.3\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lexecinfo\"\nfi",
     "install": "mesonw \\\n    -Dtests=disabled \\\n    -Dtee=disabled \\\n    -Dpng=enabled \\\n    -Dzlib=enabled \\\n    -Dglib=enabled \\\n    -Dxcb=enabled \\\n    -Dxlib=enabled \\\n    -Dfreetype=enabled \\\n    -Dfontconfig=enabled"
   },
   {
@@ -7913,7 +7927,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "LIBCURL_LIBS=\"$(pkg-config --libs libcurl)\"\ngsed -i \"/CURL_LIB=/c CURL_LIB=$LIBCURL_LIBS\" configure",
-    "prepare": "export CFLAGS=\"$CFLAGS $LDFLAGS\"",
+    "dosetup": "export CFLAGS=\"$CFLAGS $LDFLAGS\"",
     "install": "configure --enable-reentrant"
   },
   {
@@ -8095,7 +8109,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "gsed -i 's|lib64|lib|g' configure",
-    "prepare": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS $CFLAGS $CPPFLAGS $LDFLAGS\"",
+    "dosetup": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS $CFLAGS $CPPFLAGS $LDFLAGS\"",
     "install": "configure only\\\n    --disable-gssapi \\\n    --without-bundledir \\\n    --with-tls=openssl \\\n    --with-components=core\ngmakew -C cups\ngmakew -C cups install\ngmakew install-data"
   },
   {
@@ -8369,7 +8383,7 @@
     "bsystem": "configure",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    # https://mail-index.netbsd.org/tech-pkg/2003/08/08/0007.html\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lossaudio\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    # https://mail-index.netbsd.org/tech-pkg/2003/08/08/0007.html\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lossaudio\"\nfi",
     "install": "configure \\\n    --disable-sdltest \\\n    --disable-gtktest \\\n    --disable-gtk \\\n    --disable-asm"
   },
   {
@@ -8471,7 +8485,6 @@
     "ccflags": "-Wno-error",
     "parallel": "1",
     "dopatch": "gsed -i '/libintl\\.h/d' lib/eu-config.h\ngsed -i '/dgettext/d'   lib/eu-config.h\ngsed -i '/N_(Str/a #define _(Str) Str' lib/eu-config.h",
-    "prepare": "# FNM_EXTMATCH is a GNU externsion, musl does not define it\nif [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export CPPFLAGS=\"$CPPFLAGS -DFNM_EXTMATCH=0\"\nfi",
     "install": "configure only \\\n    --disable-libdebuginfod \\\n    --disable-debuginfod \\\n    --enable-install-elfh \\\n    --with-zlib=\"$libz_INSTALL_DIR\" \\\n    --without-zstd \\\n    --without-lzma \\\n    --without-bzlib\ngmake -C lib\ngmake -C libelf\ngmake -C libelf install\ninstall_pcfs config/libelf.pc"
   },
   {
@@ -8619,7 +8632,7 @@
     "bsystem": "autotools",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "./bootstrap",
+    "dosetup": "./bootstrap",
     "install": "configure"
   },
   {
@@ -8736,7 +8749,7 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "# https://github.com/westes/flex/issues/428\nexport ac_cv_func_reallocarray=no\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -Wl,-undefined -Wl,dynamic_lookup\"\nfi",
+    "dosetup": "# https://github.com/westes/flex/issues/428\nexport ac_cv_func_reallocarray=no\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -Wl,-undefined -Wl,dynamic_lookup\"\nfi",
     "install": "configure only --enable-warnings\ngmakew -C src clean\ngmakew -C src libfl.la\ngmakew -C src install-includeHEADERS install-libLTLIBRARIES"
   },
   {
@@ -9028,7 +9041,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "case $TARGET_PLATFORM_NAME in\n    macos)    UNAME=Darwin  ;;\n    linux)    UNAME=Linux   ;;\n    freebsd)  UNAME=FreeBSD ;;\n    openbsd)  UNAME=OpenBSD ;;\n     netbsd)  UNAME=OpenBSD ;;\nesac",
+    "dosetup": "case $TARGET_PLATFORM_NAME in\n    macos)    UNAME=Darwin  ;;\n    linux)    UNAME=Linux   ;;\n    freebsd)  UNAME=FreeBSD ;;\n    openbsd)  UNAME=OpenBSD ;;\n     netbsd)  UNAME=OpenBSD ;;\nesac",
     "install": "gmakew clean UNAME=\"$UNAME\"\ngmakew libgif.a libgif$SHARED_LIBRARY_SUFFIX UNAME=$UNAME CC=\"$CC\" AR=\"$AR\" CFLAGS=\"'$CFLAGS'\"\ngmakew install-include install-lib UNAME=$UNAME PREFIX=\"$PACKAGE_INSTALL_DIR\""
   },
   {
@@ -9147,7 +9160,7 @@
     "bsystem": "autotools",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "cd ../bin\n\ncat > m4 <<EOF\n#!/bin/sh\nexec \"$M4\" -DPIC \"\\$@\"\nEOF\n\nchmod +x m4\n\nexport M4=\"$PWD/m4\"",
+    "dosetup": "cd ../bin\n\ncat > m4 <<EOF\n#!/bin/sh\nexec \"$M4\" -DPIC \"\\$@\"\nEOF\n\nchmod +x m4\n\nexport M4=\"$PWD/m4\"",
     "install": "configure \\\n    --with-pic \\\n    --without-readline \\\n    --disable-profiling \\\n    --disable-assert \\\n    --disable-cxx \\\n    --enable-assembly \\\n    --enable-fft"
   },
   {
@@ -9834,7 +9847,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "git_checkout https://github.com/webmproject/sjpeg --ref-from=e5ab13008bb214deb66d5f3e17ca2f8dbff150bf -C third_party/sjpeg",
+    "dosetup": "git_checkout https://github.com/webmproject/sjpeg --ref-from=e5ab13008bb214deb66d5f3e17ca2f8dbff150bf -C third_party/sjpeg",
     "install": "cmakew 2 \\\n    -DJPEGXL_ENABLE_JNI=OFF \\\n    -DJPEGXL_ENABLE_TOOLS=OFF \\\n    -DJPEGXL_ENABLE_EXAMPLES=OFF \\\n    -DJPEGXL_ENABLE_MANPAGES=OFF \\\n    -DJPEGXL_ENABLE_BENCHMARK=OFF \\\n    -DJPEGXL_ENABLE_DEVTOOLS=OFF \\\n    -DJPEGXL_ENABLE_JPEGLI=OFF \\\n    -DJPEGXL_ENABLE_SKCMS=OFF \\\n    -DJPEGXL_ENABLE_SJPEG=ON \\\n    -DJPEGXL_FORCE_SYSTEM_BROTLI=ON \\\n    -DJPEGXL_FORCE_SYSTEM_LCMS2=ON \\\n    -DJPEGXL_FORCE_SYSTEM_HWY=ON \\\n    -DJPEGXL_WARNINGS_AS_ERRORS=OFF \\\n    -DJPEGXL_VERSION=\"$PACKAGE_VERSION\""
   },
   {
@@ -10089,7 +10102,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "case $TARGET_PLATFORM_NAME in\n    macos)  PLAT=macosx ;;\n    linux)  PLAT=linux  ;;\nesac",
+    "dosetup": "case $TARGET_PLATFORM_NAME in\n    macos)  PLAT=macosx ;;\n    linux)  PLAT=linux  ;;\nesac",
     "install": "gmakew clean\ngmakew liblua.a \"PLAT=$PLAT\" CC=\"$CC\" AR=\"'$AR crs'\" RANLIB=\"$RANLIB\" CFLAGS=\"'$CFLAGS -std=c99 -DLUA_COMPAT_5_3 $CPPFLAGS'\"\ninstall_libs liblua.a\ninstall_incs lua.h luaconf.h lualib.h lauxlib.h lua.hpp"
   },
   {
@@ -10189,7 +10202,7 @@
     "binbstd": "0",
     "parallel": "1",
     "do12345": "if isCrossBuild ; then\n    configure --disable-zlib --disable-bzlib --disable-xzlib\nfi",
-    "prepare": "if isCrossBuild ; then\n    export FILE_COMPILE=\"$NATIVE_INSTALL_DIR/bin/file\"\nfi",
+    "dosetup": "if isCrossBuild ; then\n    export FILE_COMPILE=\"$NATIVE_INSTALL_DIR/bin/file\"\nfi",
     "install": "configure --enable-zlib --disable-bzlib --disable-xzlib",
     "dotweak": "rm -rf bin/ share/man/man1/"
   },
@@ -10509,7 +10522,7 @@
     "bsystem": "autotools",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_ARCH\" = 'x86' ] ; then\n    cat > ../bin/m4 <<EOF\n#!/bin/sh\nexec \"$M4\" -DPIC \"\\$@\"\nEOF\n    chmod +x ../bin/m4\n\n    export M4=\"$PWD/../bin/m4\"\nfi\n\nif [ \"$TARGET_PLATFORM_ARCH\" = 'x86_64' ] ; then\n    YASM=\"$(command -v yasm)\"\n\n    cat > ../bin/yasm <<EOF\n#!/bin/sh\nexec \"$YASM\" -D PIC \"\\$@\"\nEOF\n    chmod +x ../bin/yasm\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_ARCH\" = 'x86' ] ; then\n    cat > ../bin/m4 <<EOF\n#!/bin/sh\nexec \"$M4\" -DPIC \"\\$@\"\nEOF\n    chmod +x ../bin/m4\n\n    export M4=\"$PWD/../bin/m4\"\nfi\n\nif [ \"$TARGET_PLATFORM_ARCH\" = 'x86_64' ] ; then\n    YASM=\"$(command -v yasm)\"\n\n    cat > ../bin/yasm <<EOF\n#!/bin/sh\nexec \"$YASM\" -D PIC \"\\$@\"\nEOF\n    chmod +x ../bin/yasm\nfi",
     "install": "configure \\\n    --with-pic \\\n    --disable-profiling \\\n    --disable-assert \\\n    --disable-fat \\\n    --enable-cxx \\\n    --enable-fft \\\n    --enable-gmpcompat"
   },
   {
@@ -10562,7 +10575,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "for item in $(find thirdparty -maxdepth 1 -mindepth 1 -type d)\ndo\n    [ \"$item\" = thirdparty/extract ] && continue\n    [ \"$item\" = thirdparty/lcms2 ]   && continue\n    run rm -rf \"$item\"\ndone\n\n#gsed -i 's|-lfreetype2|-lfreetype|' Makerules\n\nif [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    wfetch https://raw.githubusercontent.com/NetBSD/pkgsrc/trunk/print/mupdf/patches/patch-source_fitz_crypt-sha2.c\n    patch -p0 < patch-source_fitz_crypt-sha2.c\nfi",
-    "prepare": "unset GMAKE_EXTRA_ARGS\n\nfor KV in FREETYPE:freetype2 HARFBUZZ:harfbuzz OPENJPEG:libopenjp2 GUMBO:gumbo\ndo\n    K=\"${KV%:*}\"\n    V=\"${KV#*:}\"\n\n    A=\"$(pkg-config --cflags \"$V\")\"\n    B=\"$(pkg-config --libs   \"$V\")\"\n\n    GMAKE_EXTRA_ARGS=\"$GMAKE_EXTRA_ARGS SYS_${K}_CFLAGS='$A' SYS_${K}_LIBS='$B'\"\ndone",
+    "dosetup": "unset GMAKE_EXTRA_ARGS\n\nfor KV in FREETYPE:freetype2 HARFBUZZ:harfbuzz OPENJPEG:libopenjp2 GUMBO:gumbo\ndo\n    K=\"${KV%:*}\"\n    V=\"${KV#*:}\"\n\n    A=\"$(pkg-config --cflags \"$V\")\"\n    B=\"$(pkg-config --libs   \"$V\")\"\n\n    GMAKE_EXTRA_ARGS=\"$GMAKE_EXTRA_ARGS SYS_${K}_CFLAGS='$A' SYS_${K}_LIBS='$B'\"\ndone",
     "install": "gmakew clean\ngmakew install-libs \\\n    build=release \\\n    shared=yes \\\n    verbose=yes \\\n    prefix=$PACKAGE_INSTALL_DIR \\\n    CC=$CC \\\n    AR=$AR \\\n    RANLIB=$RANLIB \\\n    XCFLAGS=\"'$CFLAGS $CPPFLAGS'\" \\\n    USE_SYSTEM_LIBS=yes \\\n    USE_SYSTEM_MUJS=yes \\\n    $GMAKE_EXTRA_ARGS"
   },
   {
@@ -10580,7 +10593,7 @@
     "binbstd": "0",
     "parallel": "1",
     "dopatch": "if isCrossBuild ; then\n    gsed -i 's|cf_ok_build_cc=unknown|cf_ok_build_cc=yes|' configure\n\n    if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n        gsed -i 's|-Bshareable|-shared|g' configure\n        export LD=\"$CC\"\n    fi\nfi",
-    "prepare": "export BUILD_CC=\"$CC_FOR_BUILD\"\nexport BUILD_CFLAGS=\"$CFLAGS_FOR_BUILD\"\nexport BUILD_CPPFLAGS=\"$CPPFLAGS_FOR_BUILD\"\nexport BUILD_LDFLAGS=\"$LDFLAGS_FOR_BUILD\"\nunset  BUILD_LIBS\n\nunset TERMINFO\n\nexport LDCONFIG=true",
+    "dosetup": "export BUILD_CC=\"$CC_FOR_BUILD\"\nexport BUILD_CFLAGS=\"$CFLAGS_FOR_BUILD\"\nexport BUILD_CPPFLAGS=\"$CPPFLAGS_FOR_BUILD\"\nexport BUILD_LDFLAGS=\"$LDFLAGS_FOR_BUILD\"\nunset  BUILD_LIBS\n\nunset TERMINFO\n\nexport LDCONFIG=true",
     "install": "configure \\\n    --with-pkg-config-libdir=\"$PACKAGE_INSTALL_DIR/lib/pkgconfig\" \\\n    --with-shared \\\n    --without-ada \\\n    --without-progs \\\n    --without-tests \\\n    --without-debug \\\n    --without-valgrind \\\n    --enable-const \\\n    --enable-widec \\\n    --enable-termcap \\\n    --enable-warnings \\\n    --enable-pc-files \\\n    --enable-ext-mouse \\\n    --enable-ext-colors \\\n    --disable-stripping \\\n    --disable-assertions \\\n    --disable-gnat-projects \\\n    --disable-db-install \\\n    --disable-echo",
     "dotweak": "for f in curses.h ncurses.h form.h menu.h panel.h term.h termcap.h\ndo\n    ln -s \"ncursesw/$f\" \"include/$f\"\ndone\n\nfor item in libncurses libpanel libmenu libform\ndo\n    ln -s \"${item}w$STATIC_LIBRARY_SUFFIX\" \"lib/${item}$STATIC_LIBRARY_SUFFIX\"\n    ln -s \"${item}w$SHARED_LIBRARY_SUFFIX\" \"lib/${item}$SHARED_LIBRARY_SUFFIX\"\ndone\n\nln -s libncurses++w.a lib/libncurses++.a\n\nln -s ncursesw.pc lib/pkgconfig/ncurses.pc"
   },
@@ -10599,7 +10612,7 @@
     "binbstd": "0",
     "parallel": "1",
     "dopatch": "if isCrossBuild ; then\n    gsed -i 's|cf_ok_build_cc=unknown|cf_ok_build_cc=yes|' configure\n\n    if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n        gsed -i 's|-Bshareable|-shared|g' configure\n        export LD=\"$CC\"\n    fi\nfi",
-    "prepare": "export BUILD_CC=\"$CC_FOR_BUILD\"\nexport BUILD_CFLAGS=\"$CFLAGS_FOR_BUILD\"\nexport BUILD_CPPFLAGS=\"$CPPFLAGS_FOR_BUILD\"\nexport BUILD_LDFLAGS=\"$LDFLAGS_FOR_BUILD\"\nunset  BUILD_LIBS\n\nunset TERMINFO\n\nexport LDCONFIG=true",
+    "dosetup": "export BUILD_CC=\"$CC_FOR_BUILD\"\nexport BUILD_CFLAGS=\"$CFLAGS_FOR_BUILD\"\nexport BUILD_CPPFLAGS=\"$CPPFLAGS_FOR_BUILD\"\nexport BUILD_LDFLAGS=\"$LDFLAGS_FOR_BUILD\"\nunset  BUILD_LIBS\n\nunset TERMINFO\n\nexport LDCONFIG=true",
     "install": "configure \\\n    --with-pkg-config-libdir=\"$PACKAGE_INSTALL_DIR/lib/pkgconfig\" \\\n    --with-shared \\\n    --without-ada \\\n    --without-progs \\\n    --without-tests \\\n    --without-debug \\\n    --without-valgrind \\\n    --enable-const \\\n    --enable-widec \\\n    --enable-termcap \\\n    --enable-warnings \\\n    --enable-pc-files \\\n    --enable-ext-mouse \\\n    --enable-ext-colors \\\n    --disable-stripping \\\n    --disable-assertions \\\n    --disable-gnat-projects \\\n    --disable-db-install \\\n    --disable-echo",
     "dotweak": "for f in curses.h ncurses.h form.h menu.h panel.h term.h termcap.h\ndo\n    ln -s \"ncursesw/$f\" \"include/$f\"\ndone\n\nfor item in libncurses libpanel libmenu libform\ndo\n    ln -s \"${item}w$STATIC_LIBRARY_SUFFIX\" \"lib/${item}$STATIC_LIBRARY_SUFFIX\"\n    ln -s \"${item}w$SHARED_LIBRARY_SUFFIX\" \"lib/${item}$SHARED_LIBRARY_SUFFIX\"\ndone\n\nln -s libncurses++w.a lib/libncurses++.a\n\nln -s ncursesw.pc lib/pkgconfig/ncurses.pc"
   },
@@ -10617,7 +10630,7 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export CPPFLAGS=\"$CPPFLAGS -D__int64_t=uint64_t\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export CPPFLAGS=\"$CPPFLAGS -D__int64_t=uint64_t\"\nfi",
     "install": "configure --enable-samples"
   },
   {
@@ -10931,7 +10944,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n    sed -i 's|-Wl,-z,defs||' Configurations/shared-info.pl\n\n    if isCrossBuild ; then\n        export LDFLAGS=\"$LDFLAGS -fuse-ld=lld\"\n        CONFIG_ARGS=\"$CONFIG_ARGS no-devcryptoeng\"\n    fi\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n    sed -i 's|-Wl,-z,defs||' Configurations/shared-info.pl\n\n    if isCrossBuild ; then\n        export LDFLAGS=\"$LDFLAGS -fuse-ld=lld\"\n        CONFIG_ARGS=\"$CONFIG_ARGS no-devcryptoeng\"\n    fi\nfi",
     "install": "unset OS_COMPILER\n\nif isCrossBuild ; then\n    CMD=./Configure\n\n    case $TARGET_PLATFORM_NAME in\n        linux)\n            case $TARGET_PLATFORM_ARCH in\n                riscv64) OS_COMPILER='linux64-riscv64' ;;\n                s390x)   OS_COMPILER='linux64-s390x'   ;;\n                *)       OS_COMPILER=\"linux-$TARGET_PLATFORM_ARCH\"\n            esac\n            ;;\n        macos)\n            OS_COMPILER=\"darwin64-$TARGET_PLATFORM_ARCH\"\n            ;;\n        *bsd)\n            case $TARGET_PLATFORM_ARCH in\n                amd64)  OS_COMPILER='BSD-x86_64' ;;\n                *)      OS_COMPILER=\"BSD-$TARGET_PLATFORM_ARCH\"\n            esac\n    esac\nelse\n    CMD=./config\nfi\n\n# https://github.com/openssl/openssl/blob/master/INSTALL.md\nrun \"$CMD\" no-tests no-ssl3 no-ssl3-method no-zlib --libdir=lib --openssldir=/etc/ssl --prefix=\"$PACKAGE_INSTALL_DIR\" \"$OS_COMPILER\"\ngmakew clean\ngmakew build_libs\ngmakew install_dev",
     "dotweak": "gsed -i '/Libs:/s|-lcrypto|-lcrypto -lpthread -ldl|' lib/pkgconfig/libcrypto.pc"
   },
@@ -10949,7 +10962,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n    sed -i 's|-Wl,-z,defs||' Configurations/shared-info.pl\n\n    if isCrossBuild ; then\n        export LDFLAGS=\"$LDFLAGS -fuse-ld=lld\"\n        CONFIG_ARGS=\"$CONFIG_ARGS no-devcryptoeng\"\n    fi\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n    sed -i 's|-Wl,-z,defs||' Configurations/shared-info.pl\n\n    if isCrossBuild ; then\n        export LDFLAGS=\"$LDFLAGS -fuse-ld=lld\"\n        CONFIG_ARGS=\"$CONFIG_ARGS no-devcryptoeng\"\n    fi\nfi",
     "install": "unset OS_COMPILER\n\nif isCrossBuild ; then\n    CMD=./Configure\n\n    case $TARGET_PLATFORM_NAME in\n        linux)\n            case $TARGET_PLATFORM_ARCH in\n                riscv64) OS_COMPILER='linux64-riscv64' ;;\n                s390x)   OS_COMPILER='linux64-s390x'   ;;\n                *)       OS_COMPILER=\"linux-$TARGET_PLATFORM_ARCH\"\n            esac\n            ;;\n        macos)\n            OS_COMPILER=\"darwin64-$TARGET_PLATFORM_ARCH\"\n            ;;\n        *bsd)\n            case $TARGET_PLATFORM_ARCH in\n                amd64)  OS_COMPILER='BSD-x86_64' ;;\n                *)      OS_COMPILER=\"BSD-$TARGET_PLATFORM_ARCH\"\n            esac\n    esac\nelse\n    CMD=./config\nfi\n\n# https://github.com/openssl/openssl/blob/master/INSTALL.md\nrun \"$CMD\" no-tests no-ssl2 no-ssl3 no-ssl3-method no-zlib --libdir=lib --openssldir=/etc/ssl --prefix=\"$PACKAGE_INSTALL_DIR\" \"$OS_COMPILER\"\ngmakew clean\ngmakew build_libs\ngmakew install_dev",
     "dotweak": "gsed -i '/Libs:/s|-lcrypto|-lcrypto -lpthread -ldl|' lib/pkgconfig/libcrypto.pc"
   },
@@ -11000,7 +11013,7 @@
     "bsystem": "meson",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export CPPFLAGS=\"$CPPFLAGS -D_NETBSD_SOURCE=1\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export CPPFLAGS=\"$CPPFLAGS -D_NETBSD_SOURCE=1\"\nfi",
     "install": "mesonw -Dsystemd=disabled"
   },
   {
@@ -11358,7 +11371,7 @@
     "binbstd": "0",
     "xxflags": "-std=c++17",
     "parallel": "1",
-    "prepare": "export PG_CONFIG=\"$libpq_INSTALL_DIR/bin/pg_config\"",
+    "dosetup": "export PG_CONFIG=\"$libpq_INSTALL_DIR/bin/pg_config\"",
     "install": "configure"
   },
   {
@@ -11835,7 +11848,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "0",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    SYS=darwin\nelse\n    SYS=posix\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    SYS=darwin\nelse\n    SYS=posix\nfi",
     "install": "gmakew -C librtmp clean   SYS=$SYS\ngmakew -C librtmp         SYS=$SYS CC=\"$CC\" LD=\"$LD\" AR=\"$AR\" OPT= XCFLAGS=\"'$CFLAGS $CPPFLAGS'\" XLDFLAGS=\"'$LDFLAGS'\"\ngmakew -C librtmp install SYS=$SYS prefix=\"$PACKAGE_INSTALL_DIR\""
   },
   {
@@ -11935,7 +11948,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "case $TARGET_PLATFORM_ARCH in\n    arm*)\n        _3DNOW=OFF\n        ARMNEON=ON\n        ARMSIMD=ON\n        ;;\n    i386|x86_64)\n        _3DNOW=ON\n        ARMNEON=OFF\n        ARMSIMD=OFF\n        ;;\n    *)  _3DNOW=OFF\n        ARMNEON=OFF\n        ARMSIMD=OFF\nesac",
+    "dosetup": "case $TARGET_PLATFORM_ARCH in\n    arm*)\n        _3DNOW=OFF\n        ARMNEON=ON\n        ARMSIMD=ON\n        ;;\n    i386|x86_64)\n        _3DNOW=ON\n        ARMNEON=OFF\n        ARMSIMD=OFF\n        ;;\n    *)  _3DNOW=OFF\n        ARMNEON=OFF\n        ARMSIMD=OFF\nesac",
     "install": "cmakew \\\n    -DSDL_SHARED=ON \\\n    -DSDL_STATIC=ON \\\n    -DSDL_TEST=OFF \\\n    -DSDL_HAPTIC=OFF \\\n    -DSDL_HIDAPI=ON \\\n    -DSDL_FRAMEWORK_IOKIT=OFF \\\n    -DSDL_JOYSTICK=OFF \\\n    -DSDL_POWER=OFF \\\n    -DPTHREADS=ON \\\n    -DPTHREADS_SEM=ON \\\n    -DLIBSAMPLERATE=OFF \\\n    -DPULSEAUDIO=ON \\\n    -DALSA=ON \\\n    -DASSEMBLY=ON \\\n    -D3DNOW=\"$_3DNOW\" \\\n    -DARMNEON=\"$ARMNEON\" \\\n    -DARMSIMD=\"$ARMSIMD\" \\\n    -DVIDEO_OPENGL=OFF \\\n    -DVIDEO_OPENGLES=OFF \\\n    -DVIDEO_COCOA=OFF"
   },
   {
@@ -12169,7 +12182,7 @@
     "bsystem": "meson",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "# https://docs.gtk.org/gio/overview.html#running-gio-applications\nexport GIO_MODULE_DIR=\"$glib_networking_INSTALL_DIR/lib/gio/modules\"",
+    "dosetup": "# https://docs.gtk.org/gio/overview.html#running-gio-applications\nexport GIO_MODULE_DIR=\"$glib_networking_INSTALL_DIR/lib/gio/modules\"",
     "install": "mesonw"
   },
   {
@@ -12204,7 +12217,7 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "LIBS_PROJ=\"$(pkg-config --libs proj)\"\nLIBS_GEOS=\"$(pkg-config --libs geos)\"\nLIBS_FREEXL=\"$(pkg-config --libs freexl)\"",
+    "dosetup": "LIBS_PROJ=\"$(pkg-config --libs proj)\"\nLIBS_GEOS=\"$(pkg-config --libs geos)\"\nLIBS_FREEXL=\"$(pkg-config --libs freexl)\"",
     "install": "configure \\\n    --with-geosconfig=\"$libgeos_INSTALL_DIR/bin/geos-config\" \\\n    LIBS=\"'$LIBS_PROJ $LIBS_FREEXL'\" \\\n    ac_cv_search_GEOSCoveredBy=\"'$LIBS_GEOS'\" \\\n    ac_cv_search_GEOSDelaunayTriangulation=\"'$LIBS_GEOS'\" \\\n    ac_cv_search_GEOSContext_setErrorMessageHandler_r=\"'$LIBS_GEOS'\" \\\n    ac_cv_search_GEOSFrechetDistance_r=\"'$LIBS_GEOS'\""
   },
   {
@@ -12507,7 +12520,8 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "install": "configure only \\\n    --disable-shared \\\n    --enable-dtrace \\\n    --enable-zipfs \\\n    --enable-load \\\n    --enable-dll-unloading \\\n    --enable-threads \\\n    --enable-64bit \\\n    --with-tzdata LIBS=-lm\ngmakew install-binaries\ngmakew install-headers"
+    "install": "configure only \\\n    --disable-shared \\\n    --enable-dtrace \\\n    --enable-zipfs \\\n    --enable-load \\\n    --enable-dll-unloading \\\n    --enable-threads \\\n    --enable-64bit \\\n    --with-tzdata LIBS=-lm\ngmakew install-binaries\ngmakew install-headers\ngmakew install-private-headers",
+    "dotweak": "gsed -i -e \"/TCL_SRC_DIR=/c TCL_SRC_DIR='$PACKAGE_INSTALL_DIR'\" -e 's|-ltcl8\\.6|-ltcl8.6 -lz|g' lib/tclConfig.sh"
   },
   {
     "pkgname": "libtdb",
@@ -13265,7 +13279,7 @@
     "binbstd": "0",
     "parallel": "1",
     "dopatch": "gsed -i 's|include(LwsCheckRequirements)|include(${LWS_CMAKE_DIR}/LwsCheckRequirements.cmake)|' cmake/libwebsockets-config.cmake.in\ngsed -i 's|websockets websockets_shared|websockets|' cmake/libwebsockets-config.cmake.in",
-    "prepare": "# https://github.com/baresip/re/pull/1181\ncase $TARGET_PLATFORM_NAME in\n    openbsd|netbsd)\n        export CPPFLAGS=\"$CPPFLAGS -DAI_V4MAPPED=0\"\n        gsed -i 's|tv.tv_usec = (long)|tv.tv_usec = (suseconds_t)|' lib/event-libs/libevent/libevent.c\nesac",
+    "dosetup": "# https://github.com/baresip/re/pull/1181\ncase $TARGET_PLATFORM_NAME in\n    openbsd|netbsd)\n        export CPPFLAGS=\"$CPPFLAGS -DAI_V4MAPPED=0\"\n        gsed -i 's|tv.tv_usec = (long)|tv.tv_usec = (suseconds_t)|' lib/event-libs/libevent/libevent.c\nesac",
     "install": "cmakew \\\n    -DLWS_IPV6=ON \\\n    -DLWS_UNIX_SOCK=ON \\\n    -DLWS_WITH_HTTP2=ON \\\n    -DLWS_WITH_LIBUV=ON \\\n    -DLWS_WITH_MBEDTLS=OFF \\\n    -DLWS_WITH_LIBEVENT=ON \\\n    -DLWS_WITH_PLUGINS=ON \\\n    -DLWS_WITH_STATIC=ON \\\n    -DLWS_WITH_SHARED=ON \\\n    -DLWS_WITHOUT_TESTAPPS=ON \\\n    -DLWS_OPENSSL_SUPPORT=ON \\\n    -DLWS_BUILD_HASH=no_hash"
   },
   {
@@ -13314,7 +13328,7 @@
     "binbstd": "0",
     "parallel": "1",
     "dopatch": "gsed -i '1c \\#!/usr/bin/env bash' configure",
-    "prepare": "case $TARGET_PLATFORM_ARCH in\n    x86_64) CONFIGURE_EXTRA_ARGS='--enable-asm' ; export AS=nasm ;;\n    *)      CONFIGURE_EXTRA_ARGS='--disable-asm' ;;\nesac",
+    "dosetup": "case $TARGET_PLATFORM_ARCH in\n    x86_64) CONFIGURE_EXTRA_ARGS='--enable-asm' ; export AS=nasm ;;\n    *)      CONFIGURE_EXTRA_ARGS='--disable-asm' ;;\nesac",
     "install": "configure \\\n    --disable-cli \\\n    --disable-lto \\\n    --enable-pic \\\n    --enable-strip \\\n    \"$CONFIGURE_EXTRA_ARGS\""
   },
   {
@@ -13489,7 +13503,7 @@
     "bsystem": "configure",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if printf 'int main() { return 0; }\\n' | \"$CC\" -c -x c -Werror -Wimplicit-function-declaration -o /dev/null - ; then\n    export CFLAGS=\"$CFLAGS -Wno-implicit-function-declaration\"\nfi\n\nexport PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS $CFLAGS $CPPFLAGS $LDFLAGS\"",
+    "dosetup": "if printf 'int main() { return 0; }\\n' | \"$CC\" -c -x c -Werror -Wimplicit-function-declaration -o /dev/null - ; then\n    export CFLAGS=\"$CFLAGS -Wno-implicit-function-declaration\"\nfi\n\nexport PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS $CFLAGS $CPPFLAGS $LDFLAGS\"",
     "install": "configure --enable-libxml2-backend"
   },
   {
@@ -13676,7 +13690,7 @@
     "bsystem": "meson",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "case $TARGET_PLATFORM_NAME in\n    netbsd)\n        export CPPFLAGS=\"$CPPFLAGS -DMAP_POPULATE=0\"\n        gsed -i 's|__FreeBSD__|__NetBSD__|' src/fs_unix.cpp\nesac",
+    "dosetup": "case $TARGET_PLATFORM_NAME in\n    netbsd)\n        export CPPFLAGS=\"$CPPFLAGS -DMAP_POPULATE=0\"\n        gsed -i 's|__FreeBSD__|__NetBSD__|' src/fs_unix.cpp\nesac",
     "install": "mesonw"
   },
   {
@@ -13976,7 +13990,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "LIBELF_LIBRARIES=\"$(pkg-config --libs-only-l libelf)\"\ngsed -i \"/set(LIBOMPTARGET_DEP_LIBELF_INCLUDE_DIRS/a set(LIBOMPTARGET_DEP_LIBELF_LIBRARIES $LIBELF_LIBRARIES)\" ../openmp/libomptarget/cmake/Modules/LibomptargetGetDependencies.cmake",
+    "dosetup": "LIBELF_LIBRARIES=\"$(pkg-config --libs-only-l libelf)\"\ngsed -i \"/set(LIBOMPTARGET_DEP_LIBELF_INCLUDE_DIRS/a set(LIBOMPTARGET_DEP_LIBELF_LIBRARIES $LIBELF_LIBRARIES)\" ../openmp/libomptarget/cmake/Modules/LibomptargetGetDependencies.cmake",
     "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=\"'clang;clang-tools-extra;lld;lldb;mlir;polly;openmp'\" \\\n    -DLLVM_ENABLE_RUNTIMES=\"'compiler-rt;libcxx;libcxxabi;libunwind'\" \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=ON \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_LINK_LLVM_DYLIB=ON \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DLLDB_USE_SYSTEM_DEBUGSERVER=ON \\\n    -DLLDB_USE_SYSTEM_SIX=OFF \\\n    -DLLDB_ENABLE_LUA=OFF \\\n    -DLLDB_ENABLE_PYTHON=OFF \\\n    -DLLDB_ENABLE_CURSES=ON \\\n    -DLLDB_ENABLE_LIBEDIT=ON \\\n    -DLLDB_ENABLE_LIBXML2=ON \\\n    -DLLDB_ENABLE_LZMA=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF \\\n    -DLIBOMP_INSTALL_ALIASES=OFF"
   },
   {
@@ -14471,7 +14485,7 @@
     "bsystem": "configure",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "mv cgi.h.example cgi.h\n\ncat > configure.local <<EOF\nCC=\"$CC\"\nAR=\"$AR\"\nCFLAGS=\"$CFLAGS $CPPFLAGS\"\nLDFLAGS=\"$LDFLAGS\"\n\nPREFIX=$PACKAGE_INSTALL_DIR\nINCLUDEDIR=$PACKAGE_INSTALL_DIR/include\nLIBDIR=$PACKAGE_INSTALL_DIR/lib\nMANDIR=$PACKAGE_INSTALL_DIR/share/man\nWWWPREFIX=$PACKAGE_INSTALL_DIR/var/www\nEXAMPLEDIR=$PACKAGE_INSTALL_DIR/share/examples\n\nBINM_MAN=bsdman\nBINM_APROPOS=bsdapropos\nBINM_WHATIS=bsdwhatis\nBINM_MAKEWHATIS=bsdmakewhatis\nBINM_SOELIM=bsdsoelim\n\nMANM_MAN=man\nMANM_MDOC=mdoc\nMANM_ROFF=mandoc_roff\nMANM_EQN=eqn\nMANM_TBL=tbl\n\nMANPATH_DEFAULT=$PACKAGE_INSTALL_DIR/share/man\n\nHAVE_MANPATH=0\nSTATIC=\n\nBUILD_CGI=1\nEOF",
+    "dosetup": "mv cgi.h.example cgi.h\n\ncat > configure.local <<EOF\nCC=\"$CC\"\nAR=\"$AR\"\nCFLAGS=\"$CFLAGS $CPPFLAGS\"\nLDFLAGS=\"$LDFLAGS\"\n\nPREFIX=$PACKAGE_INSTALL_DIR\nINCLUDEDIR=$PACKAGE_INSTALL_DIR/include\nLIBDIR=$PACKAGE_INSTALL_DIR/lib\nMANDIR=$PACKAGE_INSTALL_DIR/share/man\nWWWPREFIX=$PACKAGE_INSTALL_DIR/var/www\nEXAMPLEDIR=$PACKAGE_INSTALL_DIR/share/examples\n\nBINM_MAN=bsdman\nBINM_APROPOS=bsdapropos\nBINM_WHATIS=bsdwhatis\nBINM_MAKEWHATIS=bsdmakewhatis\nBINM_SOELIM=bsdsoelim\n\nMANM_MAN=man\nMANM_MDOC=mdoc\nMANM_ROFF=mandoc_roff\nMANM_EQN=eqn\nMANM_TBL=tbl\n\nMANPATH_DEFAULT=$PACKAGE_INSTALL_DIR/share/man\n\nHAVE_MANPATH=0\nSTATIC=\n\nBUILD_CGI=1\nEOF",
     "install": "configure",
     "dotweak": "chmod +w bin/* sbin/*"
   },
@@ -14488,7 +14502,7 @@
     "bsystem": "configure",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export BUILD_CC=\"$CC_FOR_BUILD\"\nexport BUILD_CFLAGS=\"$CFLAGS_FOR_BUILD\"\nexport BUILD_CPPFLAGS=\"$CPPFLAGS_FOR_BUILD\"\nexport BUILD_LDFLAGS=\"$LDFLAGS_FOR_BUILD\"",
+    "dosetup": "export BUILD_CC=\"$CC_FOR_BUILD\"\nexport BUILD_CFLAGS=\"$CFLAGS_FOR_BUILD\"\nexport BUILD_CPPFLAGS=\"$CPPFLAGS_FOR_BUILD\"\nexport BUILD_LDFLAGS=\"$LDFLAGS_FOR_BUILD\"",
     "install": "configure"
   },
   {
@@ -14623,7 +14637,6 @@
     "binbstd": "0",
     "parallel": "1",
     "dopatch": "gsed -i \"/clangBasic/a cpp.find_library('clangAPINotes', dirs : llvm_libdir),\" src/gallium/targets/opencl/meson.build",
-    "prepare": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export CPPFLAGS=\"$CPPFLAGS -Doff64_t=off_t\"\nfi",
     "install": "mesonw \\\n    -Dglx=dri \\\n    -Degl=enabled \\\n    -Dgbm=enabled \\\n    -Ddri3=enabled \\\n    -Dllvm=enabled \\\n    -Dshared-llvm=disabled \\\n    -Dopengl=true \\\n    -Dgles1=enabled \\\n    -Dgles2=enabled \\\n    -Dlibunwind=disabled \\\n    -Dvalgrind=disabled \\\n    -Dintel-clc=enabled \\\n    -Dlmsensors=enabled \\\n    -Dgallium-extra-hud=true \\\n    -Dgallium-nine=true \\\n    -Dgallium-opencl=icd \\\n    -Dgallium-va=enabled \\\n    -Dgallium-xa=enabled \\\n    -Dgallium-vdpau=enabled \\\n    -Dgallium-omx=disabled \\\n    -Dgallium-drivers=auto \\\n    -Dvulkan-drivers=auto  \\\n    -Dplatforms=x11,wayland \\\n    -Dvideo-codecs=all \\\n    -Dtools=drm-shim,etnaviv,freedreno,glsl,nir,nouveau,lima \\\n    -Db_ndebug=true"
   },
   {
@@ -15092,7 +15105,7 @@
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export RUSTUP_TOOLCHAIN=1.81",
+    "dosetup": "export RUSTUP_TOOLCHAIN=1.81",
     "install": "cargow install"
   },
   {
@@ -15128,7 +15141,7 @@
     "parallel": "1",
     "do12345": "isCrossBuild || return 0\n\n{\n    # https://github.com/termux/termux-packages/issues/4487\n    if command -v tic > /dev/null ; then\n        run tic -V\n        [ '6.2.20200212' != \"$(printf '%s\\n' '6.2.20200212' \"$(tic -V | cut -d' ' -f2)\" | sort -V | head -n 1)\" ]\n    else\n        warn 'tic command not found. we need build it now.'\n    fi\n} || return 0\n\nunset TERMINFO\nconfigure \\\n    --with-pkg-config-libdir=\"$NATIVE_INSTALL_DIR/lib/pkgconfig\" \\\n    ac_cv_header_fcntl_h=yes \\\n    ac_cv_header_unistd_h=yes \\\n    ac_cv_header_sys_time_h=yes",
     "dopatch": "if isCrossBuild ; then\n    gsed -i 's|cf_ok_build_cc=unknown|cf_ok_build_cc=yes|' configure\n\n    if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n        gsed -i 's|-Bshareable|-shared|g' configure\n        export LD=\"$CC\"\n    fi\nfi",
-    "prepare": "export BUILD_CC=\"$CC_FOR_BUILD\"\nexport BUILD_CFLAGS=\"$CFLAGS_FOR_BUILD\"\nexport BUILD_CPPFLAGS=\"$CPPFLAGS_FOR_BUILD\"\nexport BUILD_LDFLAGS=\"$LDFLAGS_FOR_BUILD\"\nunset  BUILD_LIBS\n\nunset TERMINFO\n\nexport LDCONFIG=true",
+    "dosetup": "export BUILD_CC=\"$CC_FOR_BUILD\"\nexport BUILD_CFLAGS=\"$CFLAGS_FOR_BUILD\"\nexport BUILD_CPPFLAGS=\"$CPPFLAGS_FOR_BUILD\"\nexport BUILD_LDFLAGS=\"$LDFLAGS_FOR_BUILD\"\nunset  BUILD_LIBS\n\nunset TERMINFO\n\nexport LDCONFIG=true",
     "install": "configure \\\n    --with-pkg-config-libdir=\"$PACKAGE_INSTALL_DIR/lib/pkgconfig\" \\\n    --with-shared \\\n    --without-ada \\\n    --without-tests \\\n    --without-debug \\\n    --without-valgrind \\\n    --enable-const \\\n    --enable-widec \\\n    --enable-termcap \\\n    --enable-warnings \\\n    --enable-pc-files \\\n    --enable-ext-mouse \\\n    --enable-ext-colors \\\n    --disable-stripping \\\n    --disable-assertions \\\n    --disable-gnat-projects \\\n    --disable-echo",
     "dotweak": "for f in curses.h ncurses.h form.h menu.h panel.h term.h termcap.h\ndo\n    ln -s \"ncursesw/$f\" \"include/$f\"\ndone\n\nfor item in libncurses libpanel libmenu libform\ndo\n    ln -s \"${item}w$STATIC_LIBRARY_SUFFIX\" \"lib/${item}$STATIC_LIBRARY_SUFFIX\"\n    ln -s \"${item}w$SHARED_LIBRARY_SUFFIX\" \"lib/${item}$SHARED_LIBRARY_SUFFIX\"\ndone\n\nln -s libncurses++w.a lib/libncurses++.a\n\nln -s ncursesw.pc lib/pkgconfig/ncurses.pc"
   },
@@ -15403,7 +15416,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export LDLIBS=-lfts\nelse\n    unset LDLIBS\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export LDLIBS=-lfts\nelse\n    unset LDLIBS\nfi",
     "install": "gmakew clean\ngmakew install PREFIX=\"$PACKAGE_INSTALL_DIR\"\ninstall_mans nnn.1"
   },
   {
@@ -15467,7 +15480,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS $CPPFLAGS $CFLAGS $LDFLAGS\"",
+    "dosetup": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS $CPPFLAGS $CFLAGS $LDFLAGS\"",
     "install": "gmakew clean USE_64=1\ngmakew all \\\n    USE_64=1 \\\n    BUILD_OPT=1 \\\n    NSS_ALLOW_SSLKEYLOGFILE=1 \\\n    NSS_DISABLE_GTESTS=1 \\\n    NSS_USE_SYSTEM_SQLITE=1 \\\n    NSPR_INCLUDE_DIR=$nspr_INCLUDE_DIR/nspr \\\n    NSPR_LIB_DIR=$nspr_LIBRARY_DIR\n\nrun cd ../dist/\n\nrun install -d \"$PACKAGE_INSTALL_DIR/bin/\"\nrun install -d \"$PACKAGE_INSTALL_DIR/lib/\"\nrun install -d \"$PACKAGE_INSTALL_DIR/include/nss/\"\n\nrun cp -L */bin/* \"$PACKAGE_INSTALL_DIR/bin/\"\nrun cp -L */lib/* \"$PACKAGE_INSTALL_DIR/lib/\"\n\nrun cp -L public/nss/*.h public/dbm/*.h \"$PACKAGE_INSTALL_DIR/include/nss/\"",
     "dotweak": "rm lib/libssl.a\n\nwritepc nss <<EOF\nprefix=\\${pcfiledir}/../..\nexec_prefix=\\${prefix}\nlibdir=\\${exec_prefix}/lib\nincludedir=\\${prefix}/include/nss\n\nName: NSS\nDescription: Mozilla Network Security Services\nVersion: $PACKAGE_VERSION\nCflags: -I\\${includedir}\nLibs: -L\\${libdir} -lnss3 -lsmime3\nRequires: nspr >= 4.12\nEOF"
   },
@@ -15600,7 +15613,7 @@
     "bsystem": "autotools",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "./bootstrap",
+    "dosetup": "./bootstrap",
     "install": "configure"
   },
   {
@@ -15668,7 +15681,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "gsed -i 's|//go:generate make -j|//go:generate make -C .. -j|' llama/llama.go",
-    "prepare": "export CGO_ENABLED=1\nrun go generate llama/llama.go",
+    "dosetup": "export CGO_ENABLED=1\nrun go generate llama/llama.go",
     "install": "gow \\\n    -X github.com/ollama/ollama/version.Version=$PACKAGE_VERSION \\\n    -X github.com/ollama/ollama/server.mode=release"
   },
   {
@@ -15993,7 +16006,6 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$PACKAGE_CREATE_FULLY_STATICALLY_LINKED_EXECUTABLE\" = 1 ] ; then\n    CONFIGURE_EXTRA_ARGS='--without-pam'\nelse\n    CONFIGURE_EXTRA_ARGS='--with-pam'\nfi",
     "install": "configure \\\n    --with-ldns \\\n    --with-libedit \\\n    --with-kerberos5 \\\n    --with-security-key-builtin \\\n    --with-privsep-path=$PACKAGE_INSTALL_DIR/var/lib/sshd \\\n    $CONFIGURE_EXTRA_ARGS"
   },
   {
@@ -16010,7 +16022,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n    sed -i 's|-Wl,-z,defs||' Configurations/shared-info.pl\n\n    if isCrossBuild ; then\n        export LDFLAGS=\"$LDFLAGS -fuse-ld=lld\"\n        CONFIG_ARGS=\"$CONFIG_ARGS no-devcryptoeng\"\n    fi\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n    sed -i 's|-Wl,-z,defs||' Configurations/shared-info.pl\n\n    if isCrossBuild ; then\n        export LDFLAGS=\"$LDFLAGS -fuse-ld=lld\"\n        CONFIG_ARGS=\"$CONFIG_ARGS no-devcryptoeng\"\n    fi\nfi",
     "install": "unset OS_COMPILER\n\nif isCrossBuild ; then\n    CMD=./Configure\n\n    case $TARGET_PLATFORM_NAME in\n        linux)\n            case $TARGET_PLATFORM_ARCH in\n                riscv64) OS_COMPILER='linux64-riscv64' ;;\n                s390x)   OS_COMPILER='linux64-s390x'   ;;\n                *)       OS_COMPILER=\"linux-$TARGET_PLATFORM_ARCH\"\n            esac\n            ;;\n        macos)\n            OS_COMPILER=\"darwin64-$TARGET_PLATFORM_ARCH\"\n            ;;\n        *bsd)\n            case $TARGET_PLATFORM_ARCH in\n                amd64)  OS_COMPILER='BSD-x86_64' ;;\n                *)      OS_COMPILER=\"BSD-$TARGET_PLATFORM_ARCH\"\n            esac\n    esac\nelse\n    CMD=./config\nfi\n\n# https://github.com/openssl/openssl/blob/master/INSTALL.md\nrun \"$CMD\" no-shared no-tests no-ssl3 no-ssl3-method no-zlib --libdir=lib --openssldir=/etc/ssl --prefix=\"$PACKAGE_INSTALL_DIR\" \"$OS_COMPILER\"\ngmakew clean\ngmakew CROSS_COMPILE=\ngmakew CROSS_COMPILE= install",
     "dotweak": "gsed -i '/Libs:/s|-lcrypto|-lcrypto -lpthread -ldl|' lib/pkgconfig/libcrypto.pc"
   },
@@ -16044,7 +16056,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    mv makefile.macosx_llvm_64bits makefile.machine\nelse\n    mv makefile.linux_any_cpu      makefile.machine\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    mv makefile.macosx_llvm_64bits makefile.machine\nelse\n    mv makefile.linux_any_cpu      makefile.machine\nfi",
     "install": "gmakew all3 CC=\"'$CC $CFLAGS $CPPFLAGS $LDFLAGS'\" CXX=\"'$CXX $CXXFLAGS $CPPFLAGS $LDFLAGS'\"\ngmakew install DEST_HOME=\"$PACKAGE_INSTALL_DIR\""
   },
   {
@@ -16372,7 +16384,7 @@
     "bsystem": "cargo cmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export PIXI_VERSION=\"$PACKAGE_VERSION\"",
+    "dosetup": "export PIXI_VERSION=\"$PACKAGE_VERSION\"",
     "install": "cargow install --locked"
   },
   {
@@ -16617,7 +16629,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
+    "dosetup": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
     "install": "cmakew -DLINK_STATIC_LIBS=ON"
   },
   {
@@ -16721,7 +16733,7 @@
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export RUSTUP_TOOLCHAIN=1.76",
+    "dosetup": "export RUSTUP_TOOLCHAIN=1.76",
     "install": "cargow install --path crates/cli"
   },
   {
@@ -16886,8 +16898,8 @@
     "parallel": "1",
     "onready": "ENABLE_LTO=0",
     "dopatch": "gsed -i 's|\"\" tinfo ncursesw ncurses curses termcap|ncurses|' configure",
-    "prepare": "unset PYTHONHOME\nunset PYTHONPATH\n\nexport MODULE_BUILDTYPE=static\n\nexport ZLIB_CFLAGS=\"-I$libz_INCLUDE_DIR\"\nexport ZLIB_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lz\"\n\nexport BZIP2_CFLAGS=\"-I$libbz2_INCLUDE_DIR\"\nexport BZIP2_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lbz2\"\n\nexport LIBLZMA_CFLAGS=\"-I$liblzma_INCLUDE_DIR\"\nexport LIBLZMA_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -llzma\"\n\nexport LIBSQLITE3_CFLAGS=\"-I$libsqlite3_INCLUDE_DIR\"\nexport LIBSQLITE3_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lsqlite3\"\n\nexport GDBM_CFLAGS=\"-I$libgdbm_INCLUDE_DIR\"\nexport GDBM_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lgdbm_compat -lgdbm\"\n\nunset LIBUUID_CFLAGS\nunset LIBUUID_LIBS\n\nunset LIBEDIT_CFLAGS\nunset LIBEDIT_LIBS\n\nunset LIBNSL_CFLAGS\nunset LIBNSL_LIBS\n\nunset LIBMPDEC_CFLAGS\nunset LIBMPDEC_LIBS\n\nunset TCLTK_CFLAGS\nunset TCLTK_LIBS\n\nunset X11_CFLAGS\nunset X11_LIBS\n\nexport LIBS='-lm'",
-    "install": "configure only \\\n    --build=$($PACKAGE_BSCRIPT_DIR/config.guess) \\\n    --with-system-expat \\\n    --with-system-ffi \\\n    --with-readline \\\n    --with-openssl=\"$libopenssl_INSTALL_DIR\" \\\n    --with-ensurepip=yes \\\n    --with-lto \\\n    --enable-ipv6 \\\n    --disable-shared \\\n    --enable-loadable-sqlite-extensions \\\n    --disable-profiling\n\nrun cp Modules/Setup.stdlib Modules/Setup.local\n\ngsed -i 's|#@MODULE_.*_TRUE@||'  Modules/Setup.local\ngsed -i '/^_testinternalcapi/d'  Modules/Setup.local\ngsed -i '/^_dbm/s|$| -DUSE_GDBM_COMPAT -lgdbm_compat -lgdbm|' Modules/Setup.local\ngsed -i '/^_ctypes/s|$| -lffi|'                         Modules/Setup.local\ngsed -i '/^readline/s|$| -lreadline -lpanel -lncurses|' Modules/Setup.local\n\ngmakew\ngmakew install"
+    "dosetup": "unset PYTHONHOME\nunset PYTHONPATH\n\nexport MODULE_BUILDTYPE=static\n\nexport ZLIB_CFLAGS=\"-I$libz_INCLUDE_DIR\"\nexport ZLIB_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lz\"\n\nexport BZIP2_CFLAGS=\"-I$libbz2_INCLUDE_DIR\"\nexport BZIP2_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lbz2\"\n\nexport LIBLZMA_CFLAGS=\"-I$liblzma_INCLUDE_DIR\"\nexport LIBLZMA_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -llzma\"\n\nexport LIBSQLITE3_CFLAGS=\"-I$libsqlite3_INCLUDE_DIR\"\nexport LIBSQLITE3_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lsqlite3\"\n\nexport GDBM_CFLAGS=\"-I$libgdbm_INCLUDE_DIR\"\nexport GDBM_LIBS=\"-L$PACKAGE_WORKING_DIR/lib -lgdbm_compat -lgdbm\"\n\nunset LIBUUID_CFLAGS\nunset LIBUUID_LIBS\n\nunset LIBEDIT_CFLAGS\nunset LIBEDIT_LIBS\n\nunset LIBNSL_CFLAGS\nunset LIBNSL_LIBS\n\nunset LIBMPDEC_CFLAGS\nunset LIBMPDEC_LIBS\n\nunset TCLTK_CFLAGS\nunset TCLTK_LIBS\n\nunset X11_CFLAGS\nunset X11_LIBS\n\nexport LIBS='-lm'",
+    "install": "configure only \\\n    --build=$($PACKAGE_BSCRIPT_DIR/config.guess) \\\n    --with-system-expat \\\n    --with-system-ffi \\\n    --with-readline \\\n    --with-openssl=\"$libopenssl_INSTALL_DIR\" \\\n    --with-ensurepip=yes \\\n    --with-lto \\\n    --enable-ipv6 \\\n    --disable-shared \\\n    --enable-loadable-sqlite-extensions \\\n    --disable-profiling\n\nrun cp Modules/Setup.stdlib Modules/Setup.local\n\ngsed -i -e 's|#@MODULE_.*_TRUE@||' -e '/^_testinternalcapi/d' -e '/^_dbm/s|$| -DUSE_GDBM_COMPAT -lgdbm_compat -lgdbm|' -e '/^_ctypes/s|$| -lffi|' -e '/^readline/s|$| -lreadline -lpanel -lncurses|' Modules/Setup.local\n\ngmakew\ngmakew install"
   },
   {
     "pkgname": "python@3.11.6",
@@ -16996,7 +17008,7 @@
     "ldflags": "-lstdc++",
     "parallel": "1",
     "dopatch": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    LIST='\n    0006-linux-user-signal.c-define-__SIGRTMIN-MAX-for-non-GN.patch\n    xattr_size_max.patch\n    MAP_SYNC-fix.patch\n    fix-sockios-header.patch\n    guest-agent-shutdown.patch\n    musl-initialise-msghdr.patch\n    fix-strerrorname_np.patch\n    liburing.patch\n    '\n\n    for f in $LIST\n    do\n        wfetch \"https://gitlab.alpinelinux.org/alpine/aports/-/raw/master/community/qemu/$f\"\n    done\n\n    for f in $LIST\n    do\n        patch -p1 < \"$f\"\n    done\nfi\n\ngsed -i 's|-static-pie|-pie|' meson.build\ngsed -i 's|$meson setup |meson setup --prefer-static |' configure\ngsed -i \"s|cc.find_library('vdeplug'|cc.find_library('vdeplug', static : true, dirs : ['$vde_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('cap-ng'|cc.find_library('cap-ng', static : true, dirs : ['$libcap_ng_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('attr'|cc.find_library('attr', static : true, dirs : ['$libattr_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('fdt'|cc.find_library('fdt', static : true, dirs : ['$libfdt_LIBRARY_DIR']|\" meson.build\ngsed -i \"/iconv = /c iconv = cc.find_library('iconv', static : true, dirs: ['$libiconv_LIBRARY_DIR'])\" meson.build",
-    "prepare": "unset CONFIGURE_EXTRA_ARGS\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS='--enable-cocoa'\nfi",
+    "dosetup": "unset CONFIGURE_EXTRA_ARGS\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS='--enable-cocoa'\nfi",
     "install": "./configure \\\n    --prefix=$PACKAGE_INSTALL_DIR \\\n    --cc=$CC \\\n    --host-cc=$CC \\\n    --extra-cflags=\"$CFLAGS $CPPFLAGS -DNCURSES_WIDECHAR=1\" \\\n    --extra-ldflags=\"$LDFLAGS\" \\\n    --disable-bsd-user \\\n    --disable-guest-agent \\\n    --enable-capstone \\\n    --enable-virtfs \\\n    --enable-curses \\\n    --enable-libssh \\\n    --enable-slirp \\\n    --enable-zstd \\\n    --enable-fdt=system \\\n    --enable-vde \\\n    --disable-sdl \\\n    --disable-gtk $CONFIGURE_EXTRA_ARGS\ngmakew install V=1"
   },
   {
@@ -17408,7 +17420,7 @@
     "binbstd": "0",
     "parallel": "1",
     "dopatch": "patch -p1 < ../fix/patches/fileflags.diff",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lpthread\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lpthread\"\nfi",
     "install": "configure --disable-simd --enable-ipv6 --with-included-popt=no --with-included-zlib=no"
   },
   {
@@ -17428,7 +17440,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "0",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    SYS=darwin\nelse\n    SYS=posix\nfi\n\nOPENSSL_LIBS=\"$(pkg-config --libs openssl)\"\nprintf 'OPENSSL_LIBS=%s\\n' \"$OPENSSL_LIBS\"",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    SYS=darwin\nelse\n    SYS=posix\nfi\n\nOPENSSL_LIBS=\"$(pkg-config --libs openssl)\"\nprintf 'OPENSSL_LIBS=%s\\n' \"$OPENSSL_LIBS\"",
     "install": "gmakew clean   SYS=$SYS\ngmakew         SYS=$SYS CC=$CC LD=$LD CRYPTO=OPENSSL LIB_OPENSSL=\"'$OPENSSL_LIBS -lz'\" OPT= XCFLAGS=\"'$CFLAGS $CPPFLAGS'\" XLDFLAGS=\"'$LDFLAGS'\"\ngmakew install SYS=$SYS prefix=\"$PACKAGE_INSTALL_DIR\" mandir=\"$PACKAGE_INSTALL_DIR/share/man\""
   },
   {
@@ -17725,7 +17737,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "git_checkout https://github.com/KhronosGroup/SPIRV-Headers --ref-from=5e3ad389ee56fca27c9705d093ae5387ce404df4 -C third_party/spirv-headers\ngit_checkout https://github.com/KhronosGroup/SPIRV-Tools   --ref-from=dd4b663e13c07fea4fbb3f70c1c91c86731099f7 -C third_party/spirv-tools\ngit_checkout https://github.com/KhronosGroup/glslang       --ref-from=142052fa30f9eca191aa9dcf65359fcaed09eeec -C third_party/glslang",
+    "dosetup": "git_checkout https://github.com/KhronosGroup/SPIRV-Headers --ref-from=5e3ad389ee56fca27c9705d093ae5387ce404df4 -C third_party/spirv-headers\ngit_checkout https://github.com/KhronosGroup/SPIRV-Tools   --ref-from=dd4b663e13c07fea4fbb3f70c1c91c86731099f7 -C third_party/spirv-tools\ngit_checkout https://github.com/KhronosGroup/glslang       --ref-from=142052fa30f9eca191aa9dcf65359fcaed09eeec -C third_party/glslang",
     "install": "cmakew \\\n    -DSHADERC_SKIP_TESTS=ON \\\n    -DSHADERC_SKIP_INSTALL=OFF \\\n    -DSHADERC_SKIP_EXAMPLES=OFF \\\n    -DSHADERC_ENABLE_WGSL_OUTPUT=OFF \\\n    -DSHADERC_ENABLE_WERROR_COMPILE=ON \\\n    -DBUILD_SHARED_LIBS=OFF"
   },
   {
@@ -17862,7 +17874,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "gsed -i '/extra-source-files:/a \\    PRIVACY.md' simplex-chat.cabal\n\nmv scripts/cabal.project.local.linux cabal.project.local",
-    "prepare": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib\"\nexport PROXIED_CXX_ARGS=\"$PROXIED_CXX_ARGS -L$PACKAGE_WORKING_DIR/lib\"\n\nexport BOOTSTRAP_HASKELL_GHC_VERSION='9.6.6'\nexport BOOTSTRAP_HASKELL_CABAL_VERSION='3.14.1.1'\nexport BOOTSTRAP_HASKELL_NONINTERACTIVE=1\nexport BOOTSTRAP_HASKELL_VERBOSE=1\nexport BOOTSTRAP_HASKELL_INSTALL_NO_STACK=1\n\nunset  BOOTSTRAP_HASKELL_INSTALL_HLS\nunset  BOOTSTRAP_HASKELL_CABAL_XDG\nunset  BOOTSTRAP_HASKELL_DOWNLOADER\nunset  BOOTSTRAP_HASKELL_ADJUST_BASHRC\nunset  BOOTSTRAP_HASKELL_MINIMAL\n\nunset  GHCUP_USE_XDG_DIRS\nunset  GHCUP_BASE_URL\n\nexport GHCUP_INSTALL_BASE_PREFIX=\"$PACKAGE_WORKING_DIR\"\n\nif [ \"$GITHUB_ACTIONS\" = true ] ; then\n    DEBUG_CABAL=1\nfi\n\nwfetch 'https://get-ghcup.haskell.org' -o ghcup-installer.sh\ngsed -i '/GHCUP_INSTALL_BASE_PREFIX:=/d'  ghcup-installer.sh\nrun sh ghcup-installer.sh\n\nexport LD_LIBRARY_PATH=\"$libncurses_LIBRARY_DIR:$libgmp_LIBRARY_DIR\"\n\n#X=\"$GHCUP_INSTALL_BASE_PREFIX/.ghcup/ghc/$BOOTSTRAP_HASKELL_GHC_VERSION/lib/ghc-$BOOTSTRAP_HASKELL_GHC_VERSION/lib/$NATIVE_PLATFORM_ARCH-$NATIVE_PLATFORM_KIND-ghc-$BOOTSTRAP_HASKELL_GHC_VERSION\"\n\n#run ln -s \"$libgmp_LIBRARY_DIR/libgmp.so\" \"$X/libgmp.so\"\n\nexport PATH=\"$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin:$PATH\"",
+    "dosetup": "export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -L$PACKAGE_WORKING_DIR/lib\"\nexport PROXIED_CXX_ARGS=\"$PROXIED_CXX_ARGS -L$PACKAGE_WORKING_DIR/lib\"\n\nexport BOOTSTRAP_HASKELL_GHC_VERSION='9.6.6'\nexport BOOTSTRAP_HASKELL_CABAL_VERSION='3.14.1.1'\nexport BOOTSTRAP_HASKELL_NONINTERACTIVE=1\nexport BOOTSTRAP_HASKELL_VERBOSE=1\nexport BOOTSTRAP_HASKELL_INSTALL_NO_STACK=1\n\nunset  BOOTSTRAP_HASKELL_INSTALL_HLS\nunset  BOOTSTRAP_HASKELL_CABAL_XDG\nunset  BOOTSTRAP_HASKELL_DOWNLOADER\nunset  BOOTSTRAP_HASKELL_ADJUST_BASHRC\nunset  BOOTSTRAP_HASKELL_MINIMAL\n\nunset  GHCUP_USE_XDG_DIRS\nunset  GHCUP_BASE_URL\n\nexport GHCUP_INSTALL_BASE_PREFIX=\"$PACKAGE_WORKING_DIR\"\n\nif [ \"$GITHUB_ACTIONS\" = true ] ; then\n    DEBUG_CABAL=1\nfi\n\nwfetch 'https://get-ghcup.haskell.org' -o ghcup-installer.sh\ngsed -i '/GHCUP_INSTALL_BASE_PREFIX:=/d'  ghcup-installer.sh\nrun sh ghcup-installer.sh\n\nexport LD_LIBRARY_PATH=\"$libncurses_LIBRARY_DIR:$libgmp_LIBRARY_DIR\"\n\n#X=\"$GHCUP_INSTALL_BASE_PREFIX/.ghcup/ghc/$BOOTSTRAP_HASKELL_GHC_VERSION/lib/ghc-$BOOTSTRAP_HASKELL_GHC_VERSION/lib/$NATIVE_PLATFORM_ARCH-$NATIVE_PLATFORM_KIND-ghc-$BOOTSTRAP_HASKELL_GHC_VERSION\"\n\n#run ln -s \"$libgmp_LIBRARY_DIR/libgmp.so\" \"$X/libgmp.so\"\n\nexport PATH=\"$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin:$PATH\"",
     "install": "cabal_v2_install exe:simplex-chat"
   },
   {
@@ -18057,7 +18069,7 @@
     "bsystem": "autogen",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    # https://mail-index.netbsd.org/tech-pkg/2003/08/08/0007.html\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lossaudio\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    # https://mail-index.netbsd.org/tech-pkg/2003/08/08/0007.html\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lossaudio\"\nfi",
     "install": "configure"
   },
   {
@@ -18123,7 +18135,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "git_checkout https://github.com/KhronosGroup/SPIRV-Headers --ref-from=2acb319af38d43be3ea76bfabf3998e5281d8d12 -C external/spirv-headers",
+    "dosetup": "git_checkout https://github.com/KhronosGroup/SPIRV-Headers --ref-from=2acb319af38d43be3ea76bfabf3998e5281d8d12 -C external/spirv-headers",
     "install": "cmakew \\\n    -DENABLE_RTTI=OFF \\\n    -DSPIRV_WERROR=ON \\\n    -DSPIRV_BUILD_FUZZER=OFF \\\n    -DSPIRV_SKIP_TESTS=ON \\\n    -DSPIRV_SKIP_EXECUTABLES=OFF \\\n    -DSPIRV_TOOLS_BUILD_STATIC=ON \\\n    -DSPIRV_COLOR_TERMINAL=ON \\\n    -DSPIRV_LOG_DEBUG=OFF \\\n    -DSKIP_SPIRV_TOOLS_INSTALL=OFF"
   },
   {
@@ -18457,7 +18469,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "LIBPCAP_LIBS=\"$(pkg-config --libs-only-l libpcap)\"\ngsed -i \"s|-lpcap|$LIBPCAP_LIBS|\" configure",
-    "prepare": "export CARGO_BUILD_TARGET=\"$RUST_TARGET\"\nexport RUST_TARGET=\"--target $RUST_TARGET\"\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LIBS=-liconv\nfi",
+    "dosetup": "export CARGO_BUILD_TARGET=\"$RUST_TARGET\"\nexport RUST_TARGET=\"--target $RUST_TARGET\"\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LIBS=-liconv\nfi",
     "install": "configure --enable-pie"
   },
   {
@@ -18584,7 +18596,6 @@
     "bsystem": "meson",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "unset MESON_EXTRA_ARGS\n\nif [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    MESON_EXTRA_ARGS='-Dnss-systemd=false -Dnss-myhostname=false -Dnss-mymachines=false -Dnss-resolve=false'\n\n    LIST='\n    0001-binfmt-Don-t-install-dependency-links-at-install-tim.patch\n    0002-implment-systemd-sysv-install-for-OE.patch\n    0003-coredump-set-ProtectHome-to-read-only.patch\n    0004-missing_type.h-add-comparison_fn_t.patch\n    0005-add-fallback-parse_printf_format-implementation.patch\n    0006-don-t-fail-if-GLOB_BRACE-and-GLOB_ALTDIRFUNC-is-not-.patch\n    0007-add-missing-FTW_-macros-for-musl.patch\n    0008-Use-uintmax_t-for-handling-rlim_t.patch\n    0009-don-t-pass-AT_SYMLINK_NOFOLLOW-flag-to-faccessat.patch\n    0010-Define-glibc-compatible-basename-for-non-glibc-syste.patch\n    0011-Do-not-disable-buffering-when-writing-to-oom_score_a.patch\n    0012-distinguish-XSI-compliant-strerror_r-from-GNU-specif.patch\n    0013-avoid-redefinition-of-prctl_mm_map-structure.patch\n    0014-do-not-disable-buffer-in-writing-files.patch\n    0015-Handle-__cpu_mask-usage.patch\n    0016-Handle-missing-gshadow.patch\n    0017-missing_syscall.h-Define-MIPS-ABI-defines-for-musl.patch\n    0018-pass-correct-parameters-to-getdents64.patch\n    0019-Adjust-for-musl-headers.patch\n    0020-test-bus-error-strerror-is-assumed-to-be-GNU-specifi.patch\n    0021-errno-util-Make-STRERROR-portable-for-musl.patch\n    0022-sd-event-Make-malloc_trim-conditional-on-glibc.patch\n    0023-shared-Do-not-use-malloc_info-on-musl.patch\n    0024-avoid-missing-LOCK_EX-declaration.patch\n    0025-include-signal.h-to-avoid-the-undeclared-error.patch\n    0026-undef-stdin-for-references-using-stdin-as-a-struct-m.patch\n    0027-adjust-header-inclusion-order-to-avoid-redeclaration.patch\n    0028-build-path.c-avoid-boot-time-segfault-for-musl.patch\n    '\n\n    for f in $LIST\n    do\n        wfetch \"https://raw.githubusercontent.com/openembedded/openembedded-core/refs/heads/master/meta/recipes-core/systemd/systemd/$f\"\n    done\n\n    for f in $LIST\n    do\n        patch -p1 < \"$f\"\n    done\nfi",
     "install": "mesonw \\\n    --sysconfdir=$PACKAGE_INSTALL_DIR/etc \\\n    --localstatedir=$PACKAGE_INSTALL_DIR/var \\\n    -Drootprefix=$PACKAGE_INSTALL_DIR \\\n    -Dsysvinit-path=$PACKAGE_INSTALL_DIR/etc/init.d \\\n    -Dsysvrcnd-path=$PACKAGE_INSTALL_DIR/etc/rc.d \\\n    -Dpamconfdir=$PACKAGE_INSTALL_DIR/etc/pam.d \\\n    -Dbashcompletiondir=$PACKAGE_INSTALL_DIR/share/bash_completion \\\n    -Dstatic-libsystemd=pic \\\n    -Dman=enabled \\\n    -Dacl=disabled \\\n    -Dpam=disabled \\\n    -Dlz4=enabled \\\n    -Dhwdb=false \\\n    -Dtests=false \\\n    -Dp11kit=disabled \\\n    -Dgnutls=disabled \\\n    -Dlibcurl=disabled \\\n    -Dmicrohttpd=disabled \\\n    -Dcreate-log-dirs=false $MESON_EXTRA_ARGS",
     "dotweak": "printf 'Requires: libcap\\n' >> lib/pkgconfig/libsystemd.pc"
   },
@@ -18747,7 +18758,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lpthread\"\nfi",
+    "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    export PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lpthread\"\nfi",
     "install": "cmakew \\\n    -DWITH_CRYPTO=ON \\\n    -DWITH_SMI=OFF \\\n    -DWITH_CAP_NG=OFF \\\n    -DENABLE_SMB=OFF"
   },
   {
@@ -18917,7 +18928,7 @@
     "binbstd": "0",
     "parallel": "1",
     "dopatch": "if isCrossBuild ; then\n    gsed -i 's|cf_ok_build_cc=unknown|cf_ok_build_cc=yes|' configure\n\n    if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n        gsed -i 's|-Bshareable|-shared|g' configure\n        export LD=\"$CC\"\n    fi\nfi",
-    "prepare": "export BUILD_CC=\"$CC_FOR_BUILD\"\nexport BUILD_CFLAGS=\"$CFLAGS_FOR_BUILD\"\nexport BUILD_CPPFLAGS=\"$CPPFLAGS_FOR_BUILD\"\nexport BUILD_LDFLAGS=\"$LDFLAGS_FOR_BUILD\"\nunset  BUILD_LIBS\n\nunset TERMINFO\n\nexport LDCONFIG=true",
+    "dosetup": "export BUILD_CC=\"$CC_FOR_BUILD\"\nexport BUILD_CFLAGS=\"$CFLAGS_FOR_BUILD\"\nexport BUILD_CPPFLAGS=\"$CPPFLAGS_FOR_BUILD\"\nexport BUILD_LDFLAGS=\"$LDFLAGS_FOR_BUILD\"\nunset  BUILD_LIBS\n\nunset TERMINFO\n\nexport LDCONFIG=true",
     "install": "configure only \\\n    --without-ada \\\n    --without-tests \\\n    --without-debug \\\n    --without-shared \\\n    --without-valgrind \\\n    --enable-const \\\n    --enable-widec \\\n    --enable-warnings \\\n    --enable-ext-mouse \\\n    --enable-ext-colors \\\n    --disable-termcap \\\n    --disable-pc-files \\\n    --disable-stripping \\\n    --disable-assertions \\\n    --disable-gnat-projects \\\n    --disable-echo\ngmakew -C include\ngmakew -C progs tic\ninstall_bins progs/tic"
   },
   {
@@ -19001,9 +19012,8 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "case $TARGET_PLATFORM_ARCH in\n    *64)    CONFIGURE_EXTRA_ARGS=--enable-64bit ;;\n    *)      CONFIGURE_EXTRA_ARGS=--disable-64bit ;;\nesac",
-    "install": "configure \\\n    --enable-load \\\n    --enable-threads \\\n    $CONFIGURE_EXTRA_ARGS \\\n    --enable-xft \\\n    --with-x \\\n    --with-tcl=\"$libtcl_LIBRARY_DIR\"",
-    "dotweak": "chmod +w lib/libtk8.6.so"
+    "dosetup": "case $TARGET_PLATFORM_ARCH in\n    *64)    CONFIGURE_EXTRA_ARGS=--enable-64bit ;;\n    *)      CONFIGURE_EXTRA_ARGS=--disable-64bit ;;\nesac",
+    "install": "configure $CONFIGURE_EXTRA_ARGS \\\n    --disable-shared \\\n    --enable-load \\\n    --enable-threads \\\n    --enable-xft \\\n    --with-x \\\n    --with-tcl=\"$libtcl_LIBRARY_DIR\"\n\n    #dotweak: chmod +w lib/libtk8.6.so"
   },
   {
     "pkgname": "tldr",
@@ -19381,7 +19391,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
+    "dosetup": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
     "install": "cmakew -DLINK_STATIC_LIBS=ON"
   },
   {
@@ -19398,7 +19408,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
+    "dosetup": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
     "install": "cmakew -DLINK_STATIC_LIBS=ON"
   },
   {
@@ -19415,7 +19425,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
+    "dosetup": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
     "install": "cmakew -DLINK_STATIC_LIBS=ON"
   },
   {
@@ -19432,7 +19442,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
+    "dosetup": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
     "install": "cmakew -DLINK_STATIC_LIBS=ON"
   },
   {
@@ -19449,7 +19459,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "prepare": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
+    "dosetup": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
     "install": "cmakew -DLINK_STATIC_LIBS=ON"
   },
   {
@@ -19631,7 +19641,7 @@
     "bsystem": "go",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export CGO_ENABLED=1",
+    "dosetup": "export CGO_ENABLED=1",
     "install": "gow -X main.version=$PACKAGE_VERSION ./cmd/vale"
   },
   {
@@ -20194,7 +20204,7 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "if printf 'int main() { return 0; }\\n' | \"$CC\" -c -x c -Werror -Wimplicit-function-declaration -o /dev/null - ; then\n    export CFLAGS=\"$CFLAGS -Wno-implicit-function-declaration\"\nfi",
+    "dosetup": "if printf 'int main() { return 0; }\\n' | \"$CC\" -c -x c -Werror -Wimplicit-function-declaration -o /dev/null - ; then\n    export CFLAGS=\"$CFLAGS -Wno-implicit-function-declaration\"\nfi",
     "install": "gmakew clean\ngmakew whois HAVE_ICONV=1 CFLAGS=\"'$CFLAGS'\" CPPFLAGS=\"'$CPPFLAGS'\" LDFLAGS=\"'$LDFLAGS'\" LIBS=-liconv\ninstall_bins whois\ninstall_mans whois.1"
   },
   {
@@ -20343,7 +20353,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "[ \"$TARGET_PLATFORM_NAME\" = macos ] && return 0\n\nrm  ../lib/libX11.a\nrm  ../lib/libXt.a\n\nprintf 'INPUT(%s %s)\\n' \"$xorg_libx11_LIBRARY_DIR/libX11.a\" \"$(pkg-config --libs-only-l x11 | sed 's|-lX11||g')\" > ../lib/libX11.a\nprintf 'INPUT(%s %s)\\n' \"$xorg_libxt_LIBRARY_DIR/libXt.a\"   \"$(pkg-config --libs-only-l xt  | sed 's|-lXt||g')\"  > ../lib/libXt.a",
-    "prepare": "export CFLAGS=\"$CFLAGS $CPPFLAGS\"\nexport LIBS=\"$(pkg-config --libs xmu)\"",
+    "dosetup": "export CFLAGS=\"$CFLAGS $CPPFLAGS\"\nexport LIBS=\"$(pkg-config --libs xmu)\"",
     "install": "configure"
   },
   {
@@ -20378,7 +20388,7 @@
     "binbstd": "1",
     "parallel": "1",
     "dopatch": "gsed -i 's|define _XOPEN_SOURCE 500|define _XOPEN_SOURCE 600|' xdo.c",
-    "prepare": "A=\"$(pkg-config --libs xkbcommon-x11)\"\nB=\"$(pkg-config --libs xtst)\"\nC=\"$(pkg-config --libs xinerama)\"",
+    "dosetup": "A=\"$(pkg-config --libs xkbcommon-x11)\"\nB=\"$(pkg-config --libs xtst)\"\nC=\"$(pkg-config --libs xinerama)\"",
     "install": "gmakew clean\ngmakew installprog installman LIBSUFFIX=a XDOTOOL_LIBS=\"'$A $B $C'\" \"INSTALLLIB=$PWD\" \"PREFIX=$PACKAGE_INSTALL_DIR\""
   },
   {
@@ -21436,7 +21446,7 @@
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
-    "prepare": "export RUSTUP_TOOLCHAIN=1.81",
+    "dosetup": "export RUSTUP_TOOLCHAIN=1.81",
     "install": "cargow install"
   },
   {

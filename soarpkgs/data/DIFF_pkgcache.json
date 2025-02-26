@@ -82,6 +82,14 @@
   {
     "_disabled": false,
     "rebuild": false,
+    "pkg_family": "proxychains",
+    "description": "Redirect any TCP connection through a proxy or proxy chain",
+    "ghcr_pkg": "ghcr.io/pkgforge/pkgcache/proxychains/archive/sharun/alpine",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/proxychains/archive.sharun.alpine.yaml"
+  },
+  {
+    "_disabled": false,
+    "rebuild": false,
     "pkg_family": "suyu",
     "description": "Nintendo Switch emulator based on yuzu, with additional features",
     "ghcr_pkg": "ghcr.io/pkgforge/pkgcache/suyu/appimage/official/stable",
@@ -96,11 +104,49 @@
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/trayscale/appimage.ppkg.stable.yaml"
   },
   {
+    "_disabled": false,
+    "rebuild": false,
+    "pkg_family": "twingate",
+    "description": {
+      "_default": "Zero trust remote access client for resource and networks",
+      "twingate": "Zero trust remote access client for resource and networks [twingate]",
+      "twingated": "Daemon for Twingate [twingate]",
+      "twingate-notifier": "Monitor & Notify for Twingate Client [twingate]"
+    },
+    "ghcr_pkg": "ghcr.io/pkgforge/pkgcache/twingate/archive/sharun/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate/archive.sharun.stable.yaml"
+  },
+  {
+    "_disabled": false,
+    "rebuild": false,
+    "pkg_family": "twingate-connector",
+    "description": {
+      "_default": "Zero trust remote access client for resource and networks",
+      "twingate-connector": "Connect your system to your Twingate Network [twingate]",
+      "twingate-connectorctl": "Controller for Twingate Connector [twingate]"
+    },
+    "ghcr_pkg": "ghcr.io/pkgforge/pkgcache/twingate/archive/sharun/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate-connector/archive.sharun.stable.yaml"
+  },
+  {
     "_disabled": true,
     "rebuild": false,
     "pkg_family": "wget2",
     "description": "The successor of GNU Wget, a file and recursive website downloader",
     "ghcr_pkg": "ghcr.io/pkgforge/pkgcache/wget2/nixappimage/nixpkgs/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wget2/nixappimage.nixpkgs.stable.yaml"
+  },
+  {
+    "_disabled": false,
+    "rebuild": false,
+    "pkg_family": "zerotier",
+    "description": {
+      "_default": "A Smart Ethernet Switch for Earth",
+      "zerotier-cli": "Control local ZeroTier virtual network service [zerotier]",
+      "zerotier-idtool": "Tool for creating and manipulating ZeroTier identities [zerotier]",
+      "zerotier-one": "Connect a Unix system to ZeroTier networks as virtual ports [zerotier]"
+    },
+    "ghcr_pkg": "ghcr.io/pkgforge/pkgcache/zerotier/archive/sharun/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zerotier/archive.sharun.stable.yaml"
   }
 ]

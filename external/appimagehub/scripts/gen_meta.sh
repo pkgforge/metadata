@@ -126,26 +126,28 @@ generate_meta()
          echo -e "[-] FATAL: Failed to fetch Download URL <== [${PKG_NAME}] (${PKG_ID_BASE})"
          return 1
        else
-         ARCH="$(uname -m | tr -d '[:space:]')"
-          case "${ARCH}" in
-            aarch64)
-              if echo "${PKG_DL_URL_TMP}" | grep -qiE "aarch|arm64"; then
-                PKG_DOWNLOAD_URL="$(echo "${PKG_DL_URL_TMP}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
-              fi
-              ;;
-            x86_64)
-              if ! echo "${PKG_DL_URL_TMP}" | grep -qiE "aarch|arm64|armhf|i386|i686"; then
-                PKG_DOWNLOAD_URL="$(echo "${PKG_DL_URL_TMP}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
-              fi
-              ;;
-          esac
-         if [ -z "${PKG_DOWNLOAD_URL+x}" ] || [ -z "${PKG_DOWNLOAD_URL##*[[:space:]]}" ]; then
-           echo -e "[-] FATAL: No Download URL found for "${HOST_TRIPLET}" <== [${PKG_NAME}] (${PKG_ID_BASE})"
-           return 1
-         fi
-         #PKG_DL_URL="${PKG_DOWNLOAD_URL}"
-         PKG_DL_URL="https://dl.aih.pkgforge.dev/${PKG_ID_AIH}"
-         echo -e "[+] Download URL ==> ${PKG_DL_URL} [${PKG_NAME}] (${PKG_ID_BASE})"
+         if echo "${PKG_DL_URL_TMP}" | grep -Eiv "zsync" | grep -qi "appimage"; then
+          ARCH="$(uname -m | tr -d '[:space:]')"
+           case "${ARCH}" in
+             aarch64)
+               if echo "${PKG_DL_URL_TMP}" | grep -qiE "aarch|arm64"; then
+                 PKG_DOWNLOAD_URL="$(echo "${PKG_DL_URL_TMP}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
+               fi
+               ;;
+             x86_64)
+               if ! echo "${PKG_DL_URL_TMP}" | grep -qiE "aarch|arm64|armhf|i386|i686"; then
+                 PKG_DOWNLOAD_URL="$(echo "${PKG_DL_URL_TMP}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
+               fi
+               ;;
+           esac
+          if [ -z "${PKG_DOWNLOAD_URL+x}" ] || [ -z "${PKG_DOWNLOAD_URL##*[[:space:]]}" ]; then
+            echo -e "[-] FATAL: No Download URL found for "${HOST_TRIPLET}" <== [${PKG_NAME}] (${PKG_ID_BASE})"
+            return 1
+          fi
+          #PKG_DL_URL="${PKG_DOWNLOAD_URL}"
+          PKG_DL_URL="https://dl.aih.pkgforge.dev/${PKG_ID_AIH}"
+          echo -e "[+] Download URL ==> ${PKG_DL_URL} [${PKG_NAME}] (${PKG_ID_BASE})"
+        fi
        fi
      #Date
        PKG_BUILD_DATE_TMP="$(jq -r '[ .. | objects | .changed?, .created? ] | flatten | map(select(. != null and . != "")) | first // ""' "${TMPDIR}/tmp/${PKG_ID_BASE}.json" | grep -v 'null' | sed 's/+.*//; s/$/Z/' | tr -d '[:space:]')"

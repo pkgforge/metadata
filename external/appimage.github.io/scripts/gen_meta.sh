@@ -128,7 +128,7 @@ generate_meta()
             return
           fi
           PKG_AI_ASSETS=()
-          readarray -t "PKG_AI_ASSETS" < <(jq -r '.[] | .assets |= sort_by(.created_at) | .assets[] | select(.browser_download_url | test("appimage"; "i")) | .browser_download_url' "${TMPDIR}/tmp/${PKG_DB_BASE}.gh_rel.json")
+          readarray -t "PKG_AI_ASSETS" < <(jq -r '.[] | .assets |= sort_by(.created_at) | .assets[] | select(.browser_download_url | test("appimage"; "i") and (test("zsync"; "i") | not)) | .browser_download_url' "${TMPDIR}/tmp/${PKG_DB_BASE}.gh_rel.json")
           for PKG_ASSET in "${PKG_AI_ASSETS[@]}"; do
            if echo "${PKG_ASSET}" | grep -qi "appimage"; then
              ARCH="$(uname -m | tr -d '[:space:]')"

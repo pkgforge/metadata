@@ -136,58 +136,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "baddns",
-    "pkg_family": "baddns",
-    "pkg_id": "sharun.wrappe.pypi.baddns",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-baddns/baddns/baddns",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/baddns/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Tool to check subdomains for subdomain takeovers and other DNS issues",
-    "distro_pkg": {
-      "nixpkgs": [
-        "baddns"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/baddns/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/blacklanternsecurity/baddns"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "provides": [
-      "baddns"
-    ],
-    "repology": [
-      "baddns"
-    ],
-    "src_url": [
-      "https://pypi.org/project/baddns"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "1.7.86"
-  },
-  {
-    "_disabled": "false",
     "pkg": "discord",
     "pkg_family": "discord",
     "pkg_id": "nixpkgs.discord",
@@ -577,68 +525,6 @@
     "version": "1.11.93"
   },
   {
-    "_disabled": "false",
-    "pkg": "getaltname",
-    "pkg_family": "getaltname",
-    "pkg_id": "sharun.wrappe.pypi.getaltname",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-getaltname/getaltname/getaltname",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/getaltname/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Extract subdomains from SSL certificates in HTTPS sites",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "getaltname-git"
-        ]
-      },
-      "homebrew": [
-        "gsan"
-      ],
-      "nixpkgs": [
-        "gsan"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/getaltname/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://franccesco.github.io/getaltname",
-      "https://github.com/franccesco/getaltname"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "provides": [
-      "gsan==getaltname"
-    ],
-    "repology": [
-      "getaltname",
-      "gsan"
-    ],
-    "src_url": [
-      "https://pypi.org/project/gsan"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "5.0.0"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "replaced": [
@@ -947,6 +833,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "netexec",
+    "pkg_family": "netexec",
+    "pkg_id": "sharun.wrappe.source.netexec",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-netexec/netexec/netexec",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/netexec/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "The Network Execution (CrackMapExec) Tool",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "netexec"
+        ]
+      },
+      "nixpkgs": [
+        "netexec"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/netexec/archive.sharun.source.yaml",
+    "homepage": [
+      "https://netexec.wiki",
+      "https://www.netexec.wiki"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-2-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/netexec/archive/sharun",
+    "provides": [
+      "netexec==nxc"
+    ],
+    "repology": [
+      "netexec"
+    ],
+    "src_url": [
+      "https://github.com/Pennyw0rth/NetExec"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-c97e562-250226T094058"
+  },
+  {
+    "_disabled": "false",
     "pkg": "player432hz",
     "pkg_family": "player432hz",
     "pkg_id": "github.com.mysteryx93.HanumanInstituteApps",
@@ -1017,124 +962,6 @@
       "youtube-downloader"
     ],
     "version": "v3.3.2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "puncia",
-    "pkg_family": "puncia",
-    "pkg_id": "sharun.wrappe.pypi.puncia",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-puncia/puncia/puncia",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/puncia/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "CLI utility for Subdomain Center & Exploit Observer",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "puncia"
-        ]
-      },
-      "nixpkgs": [
-        "puncia"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/puncia/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://subdomain.center",
-      "https://github.com/ARPSyndicate/puncia"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "provides": [
-      "puncia"
-    ],
-    "repology": [
-      "puncia"
-    ],
-    "src_url": [
-      "https://pypi.org/project/puncia"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "0.29"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "tldextract",
-    "pkg_family": "tldextract",
-    "pkg_id": "sharun.wrappe.pypi.tldextract",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-tldextract/tldextract/tldextract",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/tldextract/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Separates a URL's subdomain, domain, and public suffix, using the Public Suffix List (PSL)",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "tldextract"
-        ]
-      },
-      "homebrew": [
-        "tldextract"
-      ],
-      "nixpkgs": [
-        "tldextract"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/tldextract/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/john-kurkowski/tldextract"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "provides": [
-      "tldextract"
-    ],
-    "repology": [
-      "tldextract"
-    ],
-    "src_url": [
-      "https://pypi.org/project/tldextract"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "5.1.3"
   },
   {
     "_disabled": "true",
@@ -1336,6 +1163,114 @@
       "Utility"
     ],
     "version": "3.110.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xashds",
+    "pkg_family": "xashds",
+    "pkg_id": "wrappe.xashds",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Xash3D FWGS Dedicated Server",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
+    "provides": [
+      "xashds==xash"
+    ],
+    "repology": [
+      "xash3d-fwgs"
+    ],
+    "src_url": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "250226T113216"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zen-browser",
+    "pkg_family": "zen-browser",
+    "pkg_id": "github.com.zen-browser.desktop.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desktop-stable/zen-browser/zen-browser",
+    "app_id": "app.zen_browser.zen",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zen-browser/appimage.official.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Performance oriented Firefox-based web browser",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "zen-browser",
+          "zen-browser-bin"
+        ]
+      },
+      "homebrew": [
+        "zen-browser"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zen-browser/appimage.official.stable.yaml",
+    "homepage": [
+      "https://zen-browser.app",
+      "https://github.com/zen-browser/desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/zen-browser/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
+    "provides": [
+      "zen-browser==zen"
+    ],
+    "repology": [
+      "zen-browser"
+    ],
+    "src_url": [
+      "https://github.com/zen-browser/desktop"
+    ],
+    "tag": [
+      "arc",
+      "firefox",
+      "www-client"
+    ],
+    "version": "1.8.2b"
   },
   {
     "_disabled": "false",

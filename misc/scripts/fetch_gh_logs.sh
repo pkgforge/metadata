@@ -33,7 +33,7 @@ download_action_logs()
   pushd "${LOGS_DIR}" >/dev/null 2>&1
  ##Get Run IDs 
   readarray -t RUN_IDS < <(gh api "/repos/${REPO}/actions/runs" --paginate \
-    -q '[.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed")] | sort_by(.created_at) | reverse | .[:500] | .[].id')
+    -q '[.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed")] | sort_by(.created_at) | reverse | .[:100] | .[].id')
  ##Check if there are any workflow runs
   if [ ${#RUN_IDS[@]} -eq 0 ]; then
    echo -e "\n[-] No workflow runs found\n"

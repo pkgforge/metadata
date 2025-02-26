@@ -130,19 +130,23 @@ generate_meta()
           PKG_AI_ASSETS=()
           PKG_AI_ASSETS=("$(jq -r '.[] | .assets |= sort_by(.created_at) | .assets[] | select(.browser_download_url | test("appimage"; "i")) | .browser_download_url' "${TMPDIR}/tmp/${PKG_DB_BASE}.gh_rel.json")")
           for PKG_ASSET in "${PKG_AI_ASSETS[@]}"; do
-            if echo "${PKG_ASSET}" | grep -qi "appimage"; then
-              if [[ "$(uname -m | tr -d '[:space:]')" == "aarch64" ]]; then
-                if echo "${PKG_ASSET}" | grep -qiE "aarch|arm64"; then
-                  PKG_DOWNLOAD_URL="$(echo "${PKG_ASSET}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
-                 break
-                fi
-              elif [[ "$(uname -m | tr -d '[:space:]')" == "x86_64" ]]; then
-                if echo "${PKG_ASSET}" | grep -qiEv "aarch|arm64|armhf|i386|i686"; then
-                  PKG_DOWNLOAD_URL="$(echo "${PKG_ASSET}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
-                 break
-                fi
-              fi
-            fi
+           if echo "${PKG_ASSET}" | grep -qi "appimage"; then
+             ARCH="$(uname -m | tr -d '[:space:]')"
+             case "${ARCH}" in
+               aarch64)
+                 if echo "${PKG_ASSET}" | grep -qiE "aarch|arm64"; then
+                   PKG_DOWNLOAD_URL="$(echo "${PKG_ASSET}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
+                   break
+                 fi
+                 ;;
+               x86_64)
+                 if ! echo "${PKG_ASSET}" | grep -qiE "aarch|arm64|armhf|i386|i686"; then
+                   PKG_DOWNLOAD_URL="$(echo "${PKG_ASSET}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
+                   break
+                 fi
+                 ;;
+             esac
+           fi
           done
           if echo "${PKG_DOWNLOAD_URL}" | grep -qiE 'appimage'; then
             echo -e "[+] Download URL ==> ${PKG_DOWNLOAD_URL}"
@@ -353,7 +357,13 @@ if command -v rclone &> /dev/null &&\
   jq -s 'map(.[]) | group_by(.pkg_id) | map(if length > 1 then .[1] + .[0] else .[0] end) | unique_by(.download_url) | sort_by(.pkg)' \
   "${SYSTMP}/appimage.json" "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/${HOST_TRIPLET}.json" | jq . > "${SYSTMP}/merged.json"
   if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 50 ]]; then
-   cp -fv "${SYSTMP}/merged.json" "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/${HOST_TRIPLET}.json"
+   if [[ "${HOST_TRIPLET//[[:space:]]/}" == "aarch64-Linux" ]]; then
+     cat "${SYSTMP}/merged.json" | jq 'del(.[] | select(.download_url | test("amd64|i686|x86_64"; "i")))' |\
+       jq . > "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/${HOST_TRIPLET}.json"
+   elif [[ "${HOST_TRIPLET//[[:space:]]/}" == "x86_64-Linux" ]]; then
+     cat "${SYSTMP}/merged.json" | jq 'del(.[] | select(.download_url | test("aarch64|armhf|arm64"; "i")))' |\
+       jq . > "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/${HOST_TRIPLET}.json"
+   fi
   fi
   #Checksum
   generate_checksum()

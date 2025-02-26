@@ -126,15 +126,19 @@ generate_meta()
          echo -e "[-] FATAL: Failed to fetch Download URL <== [${PKG_NAME}] (${PKG_ID_BASE})"
          return 1
        else
-         if [[ "$(uname -m | tr -d '[:space:]')" == "aarch64" ]]; then
-           if echo "${PKG_DL_URL_TMP}" | grep -qiE "aarch|arm64"; then
-             PKG_DOWNLOAD_URL="$(echo "${PKG_DL_URL_TMP}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
-           fi
-         elif [[ "$(uname -m | tr -d '[:space:]')" == "x86_64" ]]; then
-           if echo "${PKG_DL_URL_TMP}" | grep -qiEv "aarch|arm64|armhf|i386|i686"; then
-             PKG_DOWNLOAD_URL="$(echo "${PKG_DL_URL_TMP}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
-           fi
-         fi
+         ARCH="$(uname -m | tr -d '[:space:]')"
+          case "${ARCH}" in
+            aarch64)
+              if echo "${PKG_DL_URL_TMP}" | grep -qiE "aarch|arm64"; then
+                PKG_DOWNLOAD_URL="$(echo "${PKG_DL_URL_TMP}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
+              fi
+              ;;
+            x86_64)
+              if ! echo "${PKG_DL_URL_TMP}" | grep -qiE "aarch|arm64|armhf|i386|i686"; then
+                PKG_DOWNLOAD_URL="$(echo "${PKG_DL_URL_TMP}" | grep -v '^[[:space:]]*$' | head -n 1 | tr -d '[:space:]')"
+              fi
+              ;;
+          esac
          if [ -z "${PKG_DOWNLOAD_URL+x}" ] || [ -z "${PKG_DOWNLOAD_URL##*[[:space:]]}" ]; then
            echo -e "[-] FATAL: No Download URL found for "${HOST_TRIPLET}" <== [${PKG_NAME}] (${PKG_ID_BASE})"
            return 1
@@ -365,7 +369,13 @@ if command -v rclone &> /dev/null &&\
   jq -s 'map(.[]) | group_by(.pkg_id) | map(if length > 1 then .[1] + .[0] else .[0] end) | unique_by(.pkg_id) | sort_by(.pkg)' \
   "${SYSTMP}/appimagehub.json" "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.json" | jq . > "${SYSTMP}/merged.json"
   if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 20 ]]; then
-   cp -fv "${SYSTMP}/merged.json" "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.json"
+   if [[ "${HOST_TRIPLET//[[:space:]]/}" == "aarch64-Linux" ]]; then
+     cat "${SYSTMP}/merged.json" | jq 'del(.[] | select(.download_url | test("amd64|i686|x86_64"; "i")))' |\
+       jq . > "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.json"
+   elif [[ "${HOST_TRIPLET//[[:space:]]/}" == "x86_64-Linux" ]]; then
+     cat "${SYSTMP}/merged.json" | jq 'del(.[] | select(.download_url | test("aarch64|armhf|arm64"; "i")))' |\
+       jq . > "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.json"
+   fi
   fi
   #Checksum
   generate_checksum()

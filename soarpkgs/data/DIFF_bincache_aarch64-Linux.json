@@ -133,6 +133,49 @@
   },
   {
     "_disabled": "false",
+    "pkg": "arc",
+    "pkg_family": "arc",
+    "pkg_id": "github.com.avs-origami.arc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/origami-arc/arc/arc",
+    "bincache": "ghcr.io/pkgforge/bincache/arc/official/arc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/arc/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tiny package manager for Linux",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/arc/static.official.source.yaml",
+    "homepage": [
+      "https://avs-origami.github.io/projects/arc/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/avs-origami/arc"
+    ],
+    "provides": [
+      "arc"
+    ],
+    "src_url": [
+      "https://github.com/avs-origami/arc"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "HEAD-cc9eabc-250225T201019"
+  },
+  {
+    "_disabled": "false",
     "pkg": "archlinux",
     "pkg_family": "archlinux",
     "pkg_id": "github.com.Azathothas.docker-archlinux",
@@ -491,6 +534,52 @@
       "security"
     ],
     "version": "HEAD-c6d06ba-250221T204336"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bombadillo",
+    "pkg_family": "bombadillo",
+    "pkg_id": "tildegit.org.sloum.bombadillo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sloum-bombadillo/bombadillo/bombadillo",
+    "bincache": "ghcr.io/pkgforge/bincache/bombadillo/official/bombadillo",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bombadillo/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Browser for gopher/gemini/finger or local file system",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bombadillo/static.official.source.yaml",
+    "homepage": [
+      "https://bombadillo.colorfield.space",
+      "https://tildegit.org/sloum/bombadillo"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://tildegit.org/sloum/bombadillo"
+    ],
+    "provides": [
+      "bombadillo"
+    ],
+    "repology": [
+      "bombadillo"
+    ],
+    "src_url": [
+      "https://tildegit.org/sloum/bombadillo"
+    ],
+    "tag": [
+      "gemini"
+    ]
   },
   {
     "_disabled": "false",
@@ -2684,6 +2773,86 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "github.com.fastfetch-cli.fastfetch",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-fastfetch/fastfetch/fastfetch",
+    "bincache": "ghcr.io/pkgforge/bincache/fastfetch/official/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fastfetch/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fastfetch/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fastfetch-cli/fastfetch",
+      "Related Discussion: https://github.com/fastfetch-cli/fastfetch/issues/808",
+      "This version contains a limited set of features due to static linking",
+      "Please use the version from pkgcache if all features are needed"
+    ],
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "HEAD-75da934-250226T093109"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ffmpeg",
     "pkg_family": "ffmpeg",
     "pkg_id": "github.com.wader.static-ffmpeg.stable",
@@ -2995,7 +3164,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-c33e2cf-250226T000542"
+    "version": "HEAD-0aa181d-250226T060258"
   },
   {
     "_disabled": "false",
@@ -3662,6 +3831,73 @@
       "random"
     ],
     "version": "HEAD-f78ccf0-250114T164348"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "jujutsu",
+    "pkg_family": "jujutsu",
+    "pkg_id": "github.com.martinvonz.jj",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/martinvonz-jj/jujutsu/jujutsu",
+    "bincache": "ghcr.io/pkgforge/bincache/jujutsu/official/jj",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jujutsu/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Jujutsu is a Git-compatible DVCS that is both simple and powerful",
+    "distro_pkg": {
+      "alpine": [
+        "jujutsu"
+      ],
+      "archlinux": {
+        "aur": [
+          "jujutsu-git"
+        ],
+        "extra": [
+          "jujutsu"
+        ]
+      },
+      "nixpkgs": [
+        "jujutsu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jujutsu/static.official.source.yaml",
+    "homepage": [
+      "https://jj-vcs.github.io/jj",
+      "https://github.com/jj-vcs/jj"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache",
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jj-vcs/jj"
+    ],
+    "provides": [
+      "jj",
+      "jujutsu"
+    ],
+    "repology": [
+      "jujutsu"
+    ],
+    "src_url": [
+      "https://github.com/jj-vcs/jj"
+    ],
+    "tag": [
+      "git",
+      "vcs"
+    ],
+    "version": "HEAD-ae8e6e8-250226T031745"
   },
   {
     "_disabled": "false",
@@ -4447,6 +4683,71 @@
   },
   {
     "_disabled": "false",
+    "pkg": "nerdctl",
+    "pkg_family": "nerdctl",
+    "pkg_id": "github.com.containerd.nerdctl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containerd-nerdctl/nerdctl/nerdctl",
+    "bincache": "ghcr.io/pkgforge/bincache/nerdctl/official/nerdctl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nerdctl/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Docker-compatible CLI for containerd, with support for Compose, Rootless, eStargz, OCIcrypt, IPFS",
+    "distro_pkg": {
+      "alpine": [
+        "nerdctl"
+      ],
+      "archlinux": {
+        "aur": [
+          "nerdctl-git"
+        ],
+        "extra": [
+          "nerdctl"
+        ]
+      },
+      "homebrew": [
+        "nerdctl"
+      ],
+      "nixpkgs": [
+        "nerdctl"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nerdctl/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/containerd/nerdctl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containerd/nerdctl"
+    ],
+    "provides": [
+      "nerdctl"
+    ],
+    "repology": [
+      "nerdctl"
+    ],
+    "src_url": [
+      "https://github.com/containerd/nerdctl"
+    ],
+    "tag": [
+      "container"
+    ],
+    "version": "HEAD-c12aaa3-250226T113110"
+  },
+  {
+    "_disabled": "false",
     "pkg": "netbird",
     "pkg_family": "netbird",
     "pkg_id": "github.com.netbirdio.netbird",
@@ -4811,7 +5112,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-7939fb0-250225T175902"
+    "version": "HEAD-1ab0925-250226T092031"
   },
   {
     "_disabled": "false",
@@ -4935,103 +5236,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "openssh",
-    "pkg_family": "openssh",
-    "pkg_id": "nixpkgs.openssh",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-openssh/openssh/openssh",
-    "bincache": "ghcr.io/pkgforge/bincache/openssh/nixpkgs/scp",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/openssh/static.nixpkgs.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Utilities and servers for secure shell connections",
-      "scp": "OpenSSH secure file copy [openssh]",
-      "sftp": "OpenSSH secure file transfer [openssh]",
-      "sftp-server": "OpenSSH SFTP server subsystem [openssh]",
-      "ssh": "OpenSSH remote login client [openssh]",
-      "ssh-add": "Add private key identities to the OpenSSH authentication agent [openssh]",
-      "ssh-agent": "OpenSSH authentication agent [openssh]",
-      "ssh-copy-id": "Use locally available keys to authorize logins on a remote machine [openssh]",
-      "sshd": "OpenSSH daemon [openssh]",
-      "sshd-session": "OpenSSH Privilege Separation [openssh]",
-      "ssh-keygen": "OpenSSH authentication key utility [openssh]",
-      "ssh-keyscan": "Gather SSH public keys from servers [openssh]",
-      "ssh-keysign": "OpenSSH helper for host-based authentication [openssh]",
-      "ssh-pkcs11-helper": "OpenSSH helper for PKCS#11 support [openssh]",
-      "ssh-sk-helper": "OpenSSH helper for FIDO authenticator support [openssh]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "openssh"
-      ],
-      "archlinux": {
-        "aur": [
-          "openssh-git"
-        ]
-      },
-      "debian": [
-        "openssh"
-      ],
-      "gnuguix": [
-        "openssh"
-      ],
-      "homebrew": [
-        "openssh"
-      ],
-      "nixpkgs": [
-        "openssh"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/openssh/static.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://www.openssh.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
-    ],
-    "provides": [
-      "scp",
-      "sftp",
-      "sftp-server",
-      "ssh",
-      "ssh-add",
-      "ssh-agent",
-      "ssh-copy-id",
-      "sshd",
-      "sshd-session",
-      "ssh-keygen",
-      "ssh-keyscan",
-      "ssh-keysign",
-      "ssh-pkcs11-helper",
-      "ssh-sk-helper"
-    ],
-    "repology": [
-      "openssh"
-    ],
-    "src_url": [
-      "https://github.com/openssh/openssh-portable"
-    ],
-    "tag": [
-      "ssh"
-    ],
-    "version": "9.9p2"
-  },
-  {
-    "_disabled": "false",
     "pkg": "oras",
     "pkg_family": "oras",
     "pkg_id": "github.com.oras-project.oras",
@@ -5091,7 +5295,7 @@
       "oci",
       "registry"
     ],
-    "version": "HEAD-cbb255e-250225T172320"
+    "version": "HEAD-98ae479-250226T133921"
   },
   {
     "_disabled": "false",
@@ -5149,7 +5353,7 @@
     "tag": [
       "pager"
     ],
-    "version": "HEAD-c48b4ec-250225T125319"
+    "version": "HEAD-6fe96f9-250226T143305"
   },
   {
     "_disabled": "false",
@@ -7245,7 +7449,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-fef8309-250226T080009"
+    "version": "HEAD-d1b7bf8-250226T095910"
   },
   {
     "_disabled": "false",

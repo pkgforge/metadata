@@ -260,6 +260,77 @@
   },
   {
     "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
+    "app_id": "org.chromium.Chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google (Stable)",
+    "distro_pkg": {
+      "alpine": [
+        "chromium"
+      ],
+      "archlinux": {
+        "extra": [
+          "chromium"
+        ]
+      },
+      "debian": [
+        "chromium"
+      ],
+      "homebrew": [
+        "chromium"
+      ],
+      "nixpkgs": [
+        "chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.chromium.org",
+      "https://chromium.googlesource.com/chromium/src",
+      "https://github.com/chromium/chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "chromium"
+    ],
+    "src_url": [
+      "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "133.0.6943.141"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ddnet",
     "pkg_family": "ddnet",
     "pkg_id": "runimage.cachyos.ddnet",
@@ -839,6 +910,82 @@
     "version": "137.0.20250226090206"
   },
   {
+    "_disabled": "false",
+    "pkg": "flameshot",
+    "pkg_family": "flameshot",
+    "pkg_id": "nixpkgs.flameshot",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-flameshot/flameshot/flameshot",
+    "app_id": "org.flameshot.Flameshot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/flameshot/nixappimage.nixpkgs.unstable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Powerful and simple to use screenshot software",
+    "distro_pkg": {
+      "alpine": [
+        "flameshot"
+      ],
+      "archlinux": {
+        "aur": [
+          "flameshot-git"
+        ],
+        "extra": [
+          "flameshot"
+        ]
+      },
+      "debian": [
+        "flameshot"
+      ],
+      "gnuguix": [
+        "flameshot"
+      ],
+      "homebrew": [
+        "flameshot"
+      ],
+      "nixpkgs": [
+        "flameshot"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/flameshot/nixappimage.nixpkgs.unstable.yaml",
+    "homepage": [
+      "https://flameshot.org",
+      "https://github.com/flameshot-org/flameshot"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/flameshot/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/flameshot/nixappimage/nixpkgs",
+    "provides": [
+      "flameshot"
+    ],
+    "repology": [
+      "flameshot"
+    ],
+    "src_url": [
+      "https://github.com/flameshot/flameshot"
+    ],
+    "tag": [
+      "screenshot"
+    ],
+    "version": "12.1.0-unstable-2025-02-12"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "replaced": [
@@ -981,6 +1128,78 @@
       "terminal"
     ],
     "version": "1.1.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kdenlive",
+    "pkg_family": "kdenlive",
+    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
+    "app_id": "org.kde.kdenlive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
+    "category": [
+      "AudioVideoEditing"
+    ],
+    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
+    "distro_pkg": {
+      "alpine": [
+        "kdenlive"
+      ],
+      "archlinux": {
+        "aur": [
+          "kdenlive-appimage",
+          "kdenlive-git"
+        ],
+        "extra": [
+          "kdenlive"
+        ]
+      },
+      "debian": [
+        "kdenlive"
+      ],
+      "gnuguix": [
+        "kdenlive"
+      ],
+      "homebrew": [
+        "kdenlive"
+      ],
+      "nixpkgs": [
+        "kdePackages.kdenlive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
+    "homepage": [
+      "https://apps.kde.org/kdenlive",
+      "https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
+    "provides": [
+      "kdenlive"
+    ],
+    "repology": [
+      "kdenlive"
+    ],
+    "src_url": [
+      "https://kdenlive.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "2025-02-26"
   },
   {
     "_disabled": "false",
@@ -1275,7 +1494,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c97e562-250226T094058"
+    "version": "HEAD-2343ddf-250226T183321"
   },
   {
     "_disabled": "false",
@@ -1355,6 +1574,79 @@
       "Video/Utilities"
     ],
     "version": "31.0.1-2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "proxychains",
+    "pkg_family": "proxychains",
+    "pkg_id": "sharun.wrappe.alpine.proxychains",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-proxychains/proxychains/proxychains",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/proxychains/archive.sharun.alpine.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Redirect any TCP connection through a proxy or proxy chain",
+    "distro_pkg": {
+      "alpine": [
+        "proxychains-ng"
+      ],
+      "archlinux": {
+        "aur": [
+          "proxychains-ng-git"
+        ],
+        "extra": [
+          "proxychains-ng"
+        ]
+      },
+      "debian": [
+        "proxychains-ng"
+      ],
+      "gnuguix": [
+        "proxychains-ng"
+      ],
+      "homebrew": [
+        "proxychains-ng"
+      ],
+      "nixpkgs": [
+        "proxychains-ng"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/proxychains/archive.sharun.alpine.yaml",
+    "homepage": [
+      "https://github.com/rofl0r/proxychains-ng"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [alpine]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "proxychains==proxychains-ng",
+      "proxychains-daemon==proxychains-ng-daemon"
+    ],
+    "repology": [
+      "proxychains-ng"
+    ],
+    "src_url": [
+      "https://github.com/rofl0r/proxychains-ng"
+    ],
+    "tag": [
+      "proxy"
+    ],
+    "version": "4.17"
   },
   {
     "_disabled": "false",
@@ -1557,6 +1849,71 @@
     "version": "1.0.0.82"
   },
   {
+    "_disabled": "false",
+    "pkg": "tmuxp",
+    "pkg_family": "tmuxp",
+    "pkg_id": "sharun.wrappe.pypi.tmuxp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-tmuxp/tmuxp/tmuxp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/tmuxp/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Manage tmux workspaces from JSON and YAML",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "tmuxp"
+        ]
+      },
+      "debian": [
+        "tmuxp"
+      ],
+      "homebrew": [
+        "tmuxp"
+      ],
+      "nixpkgs": [
+        "tmuxp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/tmuxp/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://tmuxp.git-pull.com",
+      "https://github.com/tmux-python/tmuxp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/tmuxp/archive/sharun",
+    "provides": [
+      "tmuxp"
+    ],
+    "repology": [
+      "tmuxp"
+    ],
+    "src_url": [
+      "https://pypi.org/project/tmuxp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.55.0"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": [
       "Too slow & Expensive"
@@ -1614,6 +1971,128 @@
       "tailscale"
     ],
     "version": "0.14.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "twingate",
+    "pkg_family": "twingate-connector",
+    "pkg_id": "sharun.wrappe.twingate-connector.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/connector-stable/twingate-connector/twingate",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate-connector/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Zero trust remote access client for resource and networks",
+      "twingate-connector": "Connect your system to your Twingate Network [twingate]",
+      "twingate-connectorctl": "Controller for Twingate Connector [twingate]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/twingate-connector/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://www.twingate.com/docs",
+      "https://www.twingate.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "twingate-connector",
+      "twingate-connectorctl"
+    ],
+    "repology": [
+      "twingate"
+    ],
+    "src_url": [
+      "https://packages.twingate.com/deb:twingate-connector"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.73.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "twingate",
+    "pkg_family": "twingate",
+    "pkg_id": "sharun.wrappe.twingate.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/twingate-stable/twingate/twingate",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Zero trust remote access client for resource and networks",
+      "twingate": "Zero trust remote access client for resource and networks [twingate]",
+      "twingated": "Daemon for Twingate [twingate]",
+      "twingate-notifier": "Monitor & Notify for Twingate Client [twingate]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "twingate",
+          "twingate-bin"
+        ]
+      },
+      "homebrew": [
+        "twingate"
+      ],
+      "nixpkgs": [
+        "twingate"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/twingate/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://www.twingate.com/docs",
+      "https://www.twingate.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "twingate",
+      "twingated",
+      "twingate-notifier"
+    ],
+    "repology": [
+      "twingate"
+    ],
+    "src_url": [
+      "https://packages.twingate.com/deb:twingate"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2025.29.139348"
   },
   {
     "_disabled": "true",
@@ -1806,7 +2285,7 @@
     "tag": [
       "utility"
     ],
-    "version": "250226T113216"
+    "version": "250226T142114"
   },
   {
     "_disabled": "false",
@@ -1854,7 +2333,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250226T113216"
+    "version": "250226T142114"
   },
   {
     "_disabled": "false",
@@ -1975,5 +2454,79 @@
       "www-client"
     ],
     "version": "Twilightbuild-1.8.2t(2025-02-25at23:11:44)"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zerotier",
+    "pkg_family": "zerotier",
+    "pkg_id": "sharun.wrappe.zerotier.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zerotier-stable/zerotier/zerotier",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zerotier/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "A Smart Ethernet Switch for Earth",
+      "zerotier-cli": "Control local ZeroTier virtual network service [zerotier]",
+      "zerotier-idtool": "Tool for creating and manipulating ZeroTier identities [zerotier]",
+      "zerotier-one": "Connect a Unix system to ZeroTier networks as virtual ports [zerotier]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "zerotier-one"
+      ],
+      "archlinux": {
+        "aur": [
+          "zerotier-one-git"
+        ],
+        "extra": [
+          "zerotier-one"
+        ]
+      },
+      "homebrew": [
+        "zerotier-one"
+      ],
+      "nixpkgs": [
+        "zerotierone"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zerotier/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://www.zerotier.com",
+      "https://github.com/zerotier/ZeroTierOne"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BUSL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "zerotier-cli",
+      "zerotier-idtool",
+      "zerotier-one"
+    ],
+    "repology": [
+      "zerotier-one"
+    ],
+    "src_url": [
+      "https://github.com/zerotier/ZeroTierOne"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.14.2"
   }
 ]

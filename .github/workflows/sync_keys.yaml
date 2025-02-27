@@ -11,7 +11,9 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    permissions: read-all
+    permissions:
+      contents: write
+      statuses: read
     strategy:
       matrix:
         include:

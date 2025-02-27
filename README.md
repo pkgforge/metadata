@@ -25,6 +25,10 @@
 </p>
 
 ---
+> [!WARNING]
+> This repo is 100% Automated & too many commits happen too often, this is intentional<br>
+> Use Sparse Checkout & Blob Filter while cloning this Repo<br>
+> We store data here as blob rather than Github Release to avoid rate limits, this is intentional<br>
 
 #### Counts
 > - <img src="https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/TOTAL_INSTALLABLE.json&query=$[5].total&label=Total (Prebuilt)&labelColor=orange&style=flat" alt="Total" />

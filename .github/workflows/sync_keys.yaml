@@ -25,6 +25,13 @@ jobs:
             key: "https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/keys/minisign.pub"
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: main
+          fetch-depth: "1"
+          filter: "blob:none"
+
       - name: Setup Env
         run: |
           #presets
@@ -33,6 +40,14 @@ jobs:
           #tmp
           SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
           echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          #GH Dirs
+          mkdir -pv "${GITHUB_WORKSPACE}/main/${{ matrix.repo }}/data"
+          echo "GH_PAGER=" >> "${GITHUB_ENV}"
+          echo "GIT_TERMINAL_PROMPT=0" >> "${GITHUB_ENV}"
+          echo "GIT_ASKPASS=/bin/echo" >> "${GITHUB_ENV}"
+          gh config set prompt disabled
+          git config --global "user.email" "AjamX101@gmail.com"
+          git config --global "user.name" "Azathothas"
           #-------------#
           ##User-Agent
           USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
@@ -50,4 +65,45 @@ jobs:
              cat "./minisign.pub" | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/${{ matrix.repo }}/data/minisign.pub"
            fi
           popd >/dev/null 2>&1
+        continue-on-error: true
+
+      - name: Get DateTime & Purge files (=> 95 MB)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          UTC_TIME="$(TZ='UTC' date +'%Y-%m-%d (%I:%M:%S %p)')"
+          echo "UTC_TIME=${UTC_TIME}" >> "${GITHUB_ENV}"
+          #Sync
+          cd "${GITHUB_WORKSPACE}/main"
+          git pull origin main --no-edit 2>/dev/null
+          #Purge
+          find "${GITHUB_WORKSPACE}/main" -path "${GITHUB_WORKSPACE}/main/.git" -prune -o -type f -size +95M -exec rm -rvf "{}" + 2>/dev/null
+        continue-on-error: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./main
+          commit_user_name: Azathothas
+          commit_user_email: AjamX101@gmail.com
+          commit_message: "🔐 Synced Keys [${{ matrix.repo }})] 🔐"
+          #push_options: '--force'
+        continue-on-error: true
+
+      - name: Pull & Push (2)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          git pull origin main --no-edit 2>/dev/null
+          git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
+        continue-on-error: true
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./main
+          commit_user_name: Azathothas
+          commit_user_email: AjamX101@gmail.com
+          commit_message: "🔐 Synced Keys [${{ matrix.repo }})] 🔐"
+          #push_options: '--force'
         continue-on-error: true

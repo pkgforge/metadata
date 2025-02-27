@@ -27,7 +27,7 @@ export DATE_CUTOFF="2024-00-00T00:00:00Z"
 export GH_APIURL="api.gh.pkgforge.dev"
 # export GH_APIURL="api.github.com" , append -H "Authorization: Bearer ${GITHUB_TOKEN}"
 TEMP_ISSUES="$(mktemp -d)" && export TEMP_ISSUES="${TEMP_ISSUES}"
-USER_AGENT="$(curl -qfsSL 'https://pub.ajam.dev/repos/Azathothas/Wordlists/Misc/User-Agents/ua_chrome_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
 echo -e "\n[+] Using Temp Dir : ${TEMP_ISSUES}"
 #-------------------------------------------------------#
 

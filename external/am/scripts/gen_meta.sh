@@ -81,9 +81,7 @@ rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
 
 #-------------------------------------------------------#
 ##Copy to "${GITHUB_WORKSPACE}/main/external/am/data"
-if command -v rclone &> /dev/null &&\
- [ -s "${HOME}/.rclone.conf" ] &&\
- [ -s "${SYSTMP}/AM.json" ] &&\
+if [ -s "${SYSTMP}/AM.json" ] &&\
  [ -d "${GITHUB_WORKSPACE}" ] &&\
  [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
  #chdir to Repo
@@ -117,14 +115,14 @@ if command -v rclone &> /dev/null &&\
      bita compress --input "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db" --compression "zstd" --compression-level "21" --force-create "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.cba"
      7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.xz" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db" 2>/dev/null ; generate_checksum "${HOST_TRIPLET}.db.xz"
      zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db" -o "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.zstd" ; generate_checksum "${HOST_TRIPLET}.db.zstd"
-     #Upload
-      rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db" "r2:/meta/external/am/${HOST_TRIPLET}.db" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.cba" "r2:/meta/external/am/${HOST_TRIPLET}.db.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.xz" "r2:/meta/external/am/${HOST_TRIPLET}.db.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.xz.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.db.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.zstd" "r2:/meta/external/am/${HOST_TRIPLET}.db.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.zstd.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.db.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+     ##Upload
+     # rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db" "r2:/meta/external/am/${HOST_TRIPLET}.db" --checksum --check-first --user-agent="${USER_AGENT}" &
+     # rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+     # rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.cba" "r2:/meta/external/am/${HOST_TRIPLET}.db.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
+     # rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.xz" "r2:/meta/external/am/${HOST_TRIPLET}.db.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+     # rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.xz.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.db.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+     # rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.zstd" "r2:/meta/external/am/${HOST_TRIPLET}.db.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+     # rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.db.zstd.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.db.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
     fi
   fi
  #To xz
@@ -155,16 +153,16 @@ if command -v rclone &> /dev/null &&\
     sort -u "${SYSTMP}/x86_64-Linux.AM.txt" -o "${GITHUB_WORKSPACE}/main/external/am/data/x86_64-Linux.AM.txt"
     sed '/|[[:space:]]*|/d' -i "${GITHUB_WORKSPACE}/main/external/am/data/x86_64-Linux.AM.txt"
   fi
- #Upload (R2)
-  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/aarch64-Linux.AM.txt" "r2:/meta/external/am/aarch64-Linux.AM.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/x86_64-Linux.AM.txt" "r2:/meta/external/am/x86_64-Linux.AM.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" "r2:/meta/external/am/${HOST_TRIPLET}.json" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.cba" "r2:/meta/external/am/${HOST_TRIPLET}.json.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.xz" "r2:/meta/external/am/${HOST_TRIPLET}.json.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.xz.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.json.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.zstd" "r2:/meta/external/am/${HOST_TRIPLET}.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.zstd.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+ ##Upload (R2)
+  #rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/aarch64-Linux.AM.txt" "r2:/meta/external/am/aarch64-Linux.AM.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/x86_64-Linux.AM.txt" "r2:/meta/external/am/x86_64-Linux.AM.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" "r2:/meta/external/am/${HOST_TRIPLET}.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.cba" "r2:/meta/external/am/${HOST_TRIPLET}.json.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.xz" "r2:/meta/external/am/${HOST_TRIPLET}.json.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.xz.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.json.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.zstd" "r2:/meta/external/am/${HOST_TRIPLET}.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json.zstd.bsum" "r2:/meta/external/am/${HOST_TRIPLET}.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   #Upload (SDB)
   wait ; echo
 fi

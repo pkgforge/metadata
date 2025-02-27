@@ -35,9 +35,7 @@ popd >/dev/null 2>&1
 
 #-------------------------------------------------------#
 ##Copy to "${GITHUB_WORKSPACE}/main/misc/data"
-if command -v rclone &> /dev/null &&\
- [ -s "${HOME}/.rclone.conf" ] &&\
- [ -s "${SYSTMP}/NIXPKGS.json" ] &&\
+if [ -s "${SYSTMP}/NIXPKGS.json" ] &&\
  [ -d "${GITHUB_WORKSPACE}" ] &&\
  [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
  #chdir to Repo
@@ -46,7 +44,7 @@ if command -v rclone &> /dev/null &&\
   git pull origin main --no-edit 2>/dev/null
  #Copy (GitHub)
   cp -fv "${SYSTMP}/NIXPKGS.json" "${GITHUB_WORKSPACE}/main/misc/data/NIXPKGS.json"
- #rClone
-  rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/NIXPKGS.json" "r2:/meta/misc/NIXPKGS.json" --checksum --check-first --user-agent="${USER_AGENT}"
+ ##rClone
+  #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/NIXPKGS.json" "r2:/meta/misc/NIXPKGS.json" --checksum --check-first --user-agent="${USER_AGENT}"
 fi
 #-------------------------------------------------------#

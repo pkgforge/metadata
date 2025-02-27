@@ -5,9 +5,7 @@
 
 #-------------------------------------------------------#
 ##Generate
-if command -v rclone &> /dev/null &&\
- [ -s "${HOME}/.rclone.conf" ] &&\
- [ -d "${GITHUB_WORKSPACE}" ] &&\
+if [ -d "${GITHUB_WORKSPACE}" ] &&\
  [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
    pushd "$(mktemp -d)" >/dev/null 2>&1
     chmod +xwr "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_debian_src.sh"
@@ -16,7 +14,7 @@ if command -v rclone &> /dev/null &&\
     cp -fv "./DEBIAN.json" "${SYSTMP}/DEBIAN.json"
     if [[ -s "${SYSTMP}/DEBIAN.json" ]] && [[ $(stat -c%s "${SYSTMP}/DEBIAN.json") -gt 1000 ]]; then
      cp -fv "${SYSTMP}/DEBIAN.json" "${GITHUB_WORKSPACE}/main/misc/data/DEBIAN.json"
-     rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/DEBIAN.json" "r2:/meta/misc/DEBIAN.json" --checksum --check-first --user-agent="${USER_AGENT}"
+     #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/DEBIAN.json" "r2:/meta/misc/DEBIAN.json" --checksum --check-first --user-agent="${USER_AGENT}"
     fi
    popd >/dev/null 2>&1
 fi

@@ -40,9 +40,7 @@ fi
 
 #-------------------------------------------------------#
 ##Copy to "${GITHUB_WORKSPACE}/main/soarpkgs/data"
-if command -v rclone &> /dev/null &&\
- [ -s "${HOME}/.rclone.conf" ] &&\
- [ -s "${SYSTMP}/BACKAGE.json" ] &&\
+if [ -s "${SYSTMP}/BACKAGE.json" ] &&\
  [ -d "${GITHUB_WORKSPACE}" ] &&\
  [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
  #chdir to Repo

@@ -11,7 +11,6 @@ env:
   GITHUB_TOKEN: "${{ secrets.TOOLPACKS_GHRO }}"
   GITLAB_TOKEN: "${{ secrets.TOOLPACKS_GLRO }}"
   HF_TOKEN: "${{ secrets.TOOLPACKS_HFRO }}"
-  RCLONE_CF_R2_PUB: "${{ secrets.RCLONE_CF_R2_PUB }}"
   R2_PUB_REPO: "https://pub.ajam.dev/repos/pkgforge/pkgcache"
   SKIP_AARCH64: "NO" #YES--> SKip Generating HF Metadata for aarch64-Linux
   SKIP_X86_64: "NO" #YES--> SKip Generating HF Metadata for x86_64-Linux
@@ -104,13 +103,8 @@ jobs:
           #huggingface-cli login --token "${HF_TOKEN}" --add-to-git-credential
           huggingface-cli login --token "${HF_TOKEN}" --add-to-git-credential >/dev/null 2>&1     
           #-------------#
-          ##Setup rClone
-          mkdir -p "$HOME/.config/rclone"
-          echo "${{ secrets.RCLONE_CF_R2_PUB }}" > "$HOME/.config/rclone/rclone.conf"
-          export RCLONE_STATS="120s" ; echo "RCLONE_STATS=$RCLONE_STATS" >> "${GITHUB_ENV}"
-          #-------------#
           ##User-Agent
-          USER_AGENT="$(curl -qfsSL 'https://pub.ajam.dev/repos/Azathothas/Wordlists/Misc/User-Agents/ua_chrome_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
           echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
         continue-on-error: true
 
@@ -633,23 +627,5 @@ jobs:
           commit_user_email: AjamX101@gmail.com
           commit_message: "✅ Updated (Metadata) 🛍️ <-- ${{ env.UTC_TIME }} ⌚"
           #push_options: '--force'
-        continue-on-error: true
-#------------------------------------------------------------------------------------#
-      - name: rClone BackUp Repo ("https://pub.ajam.dev/repos/${GITHUB_REPOSITORY}")
-        run: |
-          # Presets
-          set +x ; set +e
-          #--------------#
-          #touch "${HOME}/.rclone.conf"
-          echo "${{ secrets.RCLONE_CF_R2_PUB }}" > "${HOME}/.rclone.conf"
-          #bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/pkgcache/refs/heads/main/scripts/metadata/upload_to_r2.sh")
-          dos2unix --quiet "${GITHUB_WORKSPACE}/main/scripts/metadata/upload_to_r2.sh"
-          chmod +x "${GITHUB_WORKSPACE}/main/scripts/metadata/upload_to_r2.sh"
-          bash "${GITHUB_WORKSPACE}/main/scripts/metadata/upload_to_r2.sh"
-          cd "${GITHUB_WORKSPACE}/main"
-          git pull origin main --no-edit 2>/dev/null
-          #Upload to Pub
-          echo -e "[+] Syncing ${GITHUB_REPOSITORY} to pub.ajam.dev/repos/${GITHUB_REPOSITORY} \n"
-          rclone sync "." "r2:/pub/repos/${GITHUB_REPOSITORY}/" --user-agent="${USER_AGENT}" --buffer-size="100M" --s3-upload-concurrency="500" --s3-chunk-size="100M" --multi-thread-streams="500" --checkers="2000" --transfers="1000" --check-first --checksum --copy-links --fast-list --progress
         continue-on-error: true
 #------------------------------------------------------------------------------------#

@@ -25,14 +25,6 @@ jobs:
             key: "https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/keys/minisign.pub"
 
     steps:
-      - name: Install Addons
-        run: |
-          #presets
-          set +x ; set +e
-          #-------------#
-          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
-        continue-on-error: true
-
       - name: Setup Env
         run: |
           #presets
@@ -42,11 +34,8 @@ jobs:
           SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
           echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
           #-------------#
-          ##rclone
-          echo "${{ secrets.CF_META }}" > "${HOME}/.rclone.conf"
-          #-------------#
           ##User-Agent
-          USER_AGENT="$(curl -qfsSL 'https://pub.ajam.dev/repos/Azathothas/Wordlists/Misc/User-Agents/ua_chrome_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
           echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
         continue-on-error: true
 
@@ -58,7 +47,7 @@ jobs:
           pushd "$(mktemp -d)" >/dev/null 2>&1
            curl -qfsSL "${{ matrix.key }}" -o "./minisign.pub"
            if [[ -s "./minisign.pub" && $(stat -c%s "./minisign.pub") -gt 10 ]]; then
-             rclone copyto "./minisign.pub" "r2:/meta/${{ matrix.repo }}/minisign.pub" --checksum --check-first --user-agent="${USER_AGENT}"
+             cat "./minisign.pub" | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/${{ matrix.repo }}/data/minisign.pub"
            fi
           popd >/dev/null 2>&1
         continue-on-error: true

@@ -5,8 +5,8 @@ concurrency:
 
 on:
   workflow_dispatch:
-  schedule:
-   - cron: "0 */12 * * *" #every 12 hrs
+  #schedule:
+  # - cron: "0 */12 * * *" #every 12 hrs
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -49,7 +49,7 @@ jobs:
           echo "${{ secrets.CF_META }}" > "${HOME}/.rclone.conf"
           #-------------#
           ##User-Agent
-          USER_AGENT="$(curl -qfsSL 'https://pub.ajam.dev/repos/Azathothas/Wordlists/Misc/User-Agents/ua_chrome_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
           echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
         continue-on-error: true
 

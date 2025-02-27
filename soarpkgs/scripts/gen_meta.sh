@@ -359,9 +359,7 @@ fi
 
 #-------------------------------------------------------#
 ##Copy to "${GITHUB_WORKSPACE}/main/soarpkgs/data"
-if command -v rclone &> /dev/null &&\
- [ -s "${HOME}/.rclone.conf" ] &&\
- [ -s "${SYSTMP}/INDEX.json" ] &&\
+if [ -s "${SYSTMP}/INDEX.json" ] &&\
  [ -d "${GITHUB_WORKSPACE}" ] &&\
  [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
  #chdir to Repo
@@ -389,42 +387,42 @@ if command -v rclone &> /dev/null &&\
      bita compress --input "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" --compression "zstd" --compression-level "21" --force-create "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.cba"
      xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "INDEX.db" ; generate_checksum "INDEX.db.xz"
      zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" -o "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.zstd" ; generate_checksum "INDEX.db.zstd"
-     #Upload
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" "r2:/meta/soarpkgs/INDEX.db" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" "r2:/meta/soarpkgs/INDEX.db" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.bsum" "r2:/meta/soarpkgs/INDEX.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.bsum" "r2:/meta/soarpkgs/INDEX.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.cba" "r2:/meta/soarpkgs/INDEX.db.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.cba" "r2:/meta/soarpkgs/INDEX.db.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.xz" "r2:/meta/soarpkgs/INDEX.db.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.xz" "r2:/meta/soarpkgs/INDEX.db.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.xz.bsum" "r2:/meta/soarpkgs/INDEX.db.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.xz.bsum" "r2:/meta/soarpkgs/INDEX.db.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.zstd" "r2:/meta/soarpkgs/INDEX.db.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.zstd" "r2:/meta/soarpkgs/INDEX.db.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.zstd.bsum" "r2:/meta/soarpkgs/INDEX.db.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-      rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.zstd.bsum" "r2:/meta/soarpkgs/INDEX.db.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+     ##Upload
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" "r2:/meta/soarpkgs/INDEX.db" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db" "r2:/meta/soarpkgs/INDEX.db" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.bsum" "r2:/meta/soarpkgs/INDEX.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.bsum" "r2:/meta/soarpkgs/INDEX.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.cba" "r2:/meta/soarpkgs/INDEX.db.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.cba" "r2:/meta/soarpkgs/INDEX.db.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.xz" "r2:/meta/soarpkgs/INDEX.db.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.xz" "r2:/meta/soarpkgs/INDEX.db.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.xz.bsum" "r2:/meta/soarpkgs/INDEX.db.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.xz.bsum" "r2:/meta/soarpkgs/INDEX.db.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.zstd" "r2:/meta/soarpkgs/INDEX.db.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.zstd" "r2:/meta/soarpkgs/INDEX.db.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.zstd.bsum" "r2:/meta/soarpkgs/INDEX.db.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.db.zstd.bsum" "r2:/meta/soarpkgs/INDEX.db.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
     fi
   fi
  #To xz
   7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "INDEX.json.xz" "INDEX.json" 2>/dev/null ; generate_checksum "INDEX.json.xz"
  #To Zstd
   zstd --ultra -22 --force "INDEX.json" -o "INDEX.json.zstd" ; generate_checksum "INDEX.json.zstd"
- #Upload
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json" "r2:/meta/soarpkgs/INDEX.json" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json" "r2:/meta/soarpkgs/INDEX.json" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.bsum" "r2:/meta/soarpkgs/INDEX.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.bsum" "r2:/meta/soarpkgs/INDEX.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.cba" "r2:/meta/soarpkgs/INDEX.json.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.cba" "r2:/meta/soarpkgs/INDEX.json.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.xz" "r2:/meta/soarpkgs/INDEX.json.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.xz" "r2:/meta/soarpkgs/INDEX.json.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.xz.bsum" "r2:/meta/soarpkgs/INDEX.json.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.xz.bsum" "r2:/meta/soarpkgs/INDEX.json.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.zstd" "r2:/meta/soarpkgs/INDEX.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.zstd" "r2:/meta/soarpkgs/INDEX.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.zstd.bsum" "r2:/meta/soarpkgs/INDEX.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
-  rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.zstd.bsum" "r2:/meta/soarpkgs/INDEX.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+ ##Upload
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json" "r2:/meta/soarpkgs/INDEX.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json" "r2:/meta/soarpkgs/INDEX.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.bsum" "r2:/meta/soarpkgs/INDEX.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.bsum" "r2:/meta/soarpkgs/INDEX.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.cba" "r2:/meta/soarpkgs/INDEX.json.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.cba" "r2:/meta/soarpkgs/INDEX.json.cba" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.xz" "r2:/meta/soarpkgs/INDEX.json.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.xz" "r2:/meta/soarpkgs/INDEX.json.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.xz.bsum" "r2:/meta/soarpkgs/INDEX.json.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.xz.bsum" "r2:/meta/soarpkgs/INDEX.json.xz.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.zstd" "r2:/meta/soarpkgs/INDEX.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.zstd" "r2:/meta/soarpkgs/INDEX.json.zstd" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.zstd.bsum" "r2:/meta/soarpkgs/INDEX.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
+  #rclone copyto "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json.zstd.bsum" "r2:/meta/soarpkgs/INDEX.json.zstd.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
   wait ; echo
 fi
 #-------------------------------------------------------#

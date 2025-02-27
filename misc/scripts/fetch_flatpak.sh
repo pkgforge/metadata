@@ -164,9 +164,7 @@ fi
 
 #-------------------------------------------------------#
 ##Copy to "${GITHUB_WORKSPACE}/main/misc/data"
-if command -v rclone &> /dev/null &&\
- [ -s "${HOME}/.rclone.conf" ] &&\
- [ -d "${GITHUB_WORKSPACE}" ] &&\
+if [ -d "${GITHUB_WORKSPACE}" ] &&\
  [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
  #chdir to Repo
   cd "${GITHUB_WORKSPACE}/main"
@@ -175,27 +173,27 @@ if command -v rclone &> /dev/null &&\
  #Copy
   if [[ -s "${SYSTMP}/FLATPAK_APPSTREAM.xml" ]] && [[ $(stat -c%s "${SYSTMP}/FLATPAK_APPSTREAM.xml") -gt 1000 ]]; then
    cp -fv "${SYSTMP}/FLATPAK_APPSTREAM.xml" "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPSTREAM.xml"
-   rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPSTREAM.xml" "r2:/meta/misc/FLATPAK_APPSTREAM.xml" --checksum --check-first --user-agent="${USER_AGENT}" &
+   #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPSTREAM.xml" "r2:/meta/misc/FLATPAK_APPSTREAM.xml" --checksum --check-first --user-agent="${USER_AGENT}" &
   fi
   if [[ -s "${SYSTMP}/FLATPAK_APPS_INFO.txt" ]] && [[ $(stat -c%s "${SYSTMP}/FLATPAK_APPS_INFO.txt") -gt 1000 ]]; then
    cp -fv "${SYSTMP}/FLATPAK_APPS_INFO.txt" "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.txt"
-   rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.txt" "r2:/meta/misc/FLATPAK_APPS_INFO.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
+   #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.txt" "r2:/meta/misc/FLATPAK_APPS_INFO.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
   fi
   if [[ -s "${SYSTMP}/FLATPAK_APPS_INFO.json" ]] && [[ $(stat -c%s "${SYSTMP}/FLATPAK_APPS_INFO.json") -gt 1000 ]]; then
    cp -fv "${SYSTMP}/FLATPAK_APPS_INFO.json" "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.json"
-   rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.json" "r2:/meta/misc/FLATPAK_APPS_INFO.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+   #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APPS_INFO.json" "r2:/meta/misc/FLATPAK_APPS_INFO.json" --checksum --check-first --user-agent="${USER_AGENT}" &
   fi
   if [[ -s "${SYSTMP}/FLATPAK_APP_IDS.txt" ]] && [[ $(stat -c%s "${SYSTMP}/FLATPAK_APP_IDS.txt") -gt 1000 ]]; then
    cp -fv "${SYSTMP}/FLATPAK_APP_IDS.txt" "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APP_IDS.txt"
-   rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APP_IDS.txt" "r2:/meta/misc/FLATPAK_APP_IDS.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
+   #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_APP_IDS.txt" "r2:/meta/misc/FLATPAK_APP_IDS.txt" --checksum --check-first --user-agent="${USER_AGENT}" &
   fi
   if [[ -s "${SYSTMP}/FLATPAK_POPULAR.json" ]] && [[ $(stat -c%s "${SYSTMP}/FLATPAK_POPULAR.json") -gt 1000 ]]; then
    cp -fv "${SYSTMP}/FLATPAK_POPULAR.json" "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_POPULAR.json"
-   rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_POPULAR.json" "r2:/meta/misc/FLATPAK_POPULAR.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+   #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_POPULAR.json" "r2:/meta/misc/FLATPAK_POPULAR.json" --checksum --check-first --user-agent="${USER_AGENT}" &
   fi
   if [[ -s "${SYSTMP}/FLATPAK_TRENDING.json" ]] && [[ $(stat -c%s "${SYSTMP}/FLATPAK_TRENDING.json") -gt 1000 ]]; then
    cp -fv "${SYSTMP}/FLATPAK_TRENDING.json" "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_TRENDING.json"
-   rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_TRENDING.json" "r2:/meta/misc/FLATPAK_TRENDING.json" --checksum --check-first --user-agent="${USER_AGENT}" &
+   #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/FLATPAK_TRENDING.json" "r2:/meta/misc/FLATPAK_TRENDING.json" --checksum --check-first --user-agent="${USER_AGENT}" &
   fi
  wait ; echo
 fi

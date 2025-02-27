@@ -5,9 +5,7 @@
 
 #-------------------------------------------------------#
 ##Generate
-if command -v rclone &> /dev/null &&\
- [ -s "${HOME}/.rclone.conf" ] &&\
- [ -d "${GITHUB_WORKSPACE}" ] &&\
+if [ -d "${GITHUB_WORKSPACE}" ] &&\
  [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
    pushd "$(mktemp -d)" >/dev/null 2>&1
     chmod +xwr "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_archlinux_src.sh"
@@ -16,7 +14,7 @@ if command -v rclone &> /dev/null &&\
     cp -fv "./ARCHLINUX.json" "${SYSTMP}/ARCHLINUX.json"
     if [[ -s "${SYSTMP}/ARCHLINUX.json" ]] && [[ $(stat -c%s "${SYSTMP}/ARCHLINUX.json") -gt 1000 ]]; then
      cp -fv "${SYSTMP}/ARCHLINUX.json" "${GITHUB_WORKSPACE}/main/misc/data/ARCHLINUX.json"
-     rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/ARCHLINUX.json" "r2:/meta/misc/ARCHLINUX.json" --checksum --check-first --user-agent="${USER_AGENT}"
+     #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/ARCHLINUX.json" "r2:/meta/misc/ARCHLINUX.json" --checksum --check-first --user-agent="${USER_AGENT}"
     fi
    popd >/dev/null 2>&1
 fi

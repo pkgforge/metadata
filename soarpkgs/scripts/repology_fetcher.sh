@@ -19,7 +19,7 @@ repology_fetcher()
    SYSTMP="$(dirname $(mktemp -u))"
    TMP_JSON="${SYSTMP}/repology.tmp.json"
    if [[ -z "${USER_AGENT}" ]]; then
-     USER_AGENT="$(curl -qfsSL 'https://pub.ajam.dev/repos/Azathothas/Wordlists/Misc/User-Agents/ua_chrome_macos_latest.txt')"
+     USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')"
    fi
   #Fetch
    rm -rf "${TMP_JSON}" 2>/dev/null

@@ -19017,6 +19017,22 @@
     "install": "configure $CONFIGURE_EXTRA_ARGS \\\n    --disable-shared \\\n    --enable-load \\\n    --enable-threads \\\n    --enable-xft \\\n    --with-x \\\n    --with-tcl=\"$libtcl_LIBRARY_DIR\"\n\n    #dotweak: chmod +w lib/libtk8.6.so"
   },
   {
+    "pkgname": "tl-expected",
+    "pkgtype": "lib",
+    "version": "1.1.0",
+    "license": "CC0-1.0",
+    "summary": "C++11/14/17 std::expected with functional-style extensions",
+    "web-url": "https://tl.tartanllama.xyz/en/latest/",
+    "git-url": "https://github.com/TartanLlama/expected",
+    "src-url": "https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz",
+    "src-sha": "1db357f46dd2b24447156aaf970c4c40a793ef12a8a9c2ad9e096d9801368df6",
+    "dep-upp": "curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "cmakew -DEXPECTED_ENABLE_TESTS=OFF"
+  },
+  {
     "pkgname": "tldr",
     "pkgtype": "exe",
     "version": "1.6.1",

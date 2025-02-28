@@ -294,6 +294,49 @@
   },
   {
     "_disabled": "false",
+    "pkg": "archive-finder",
+    "pkg_family": "archive-finder",
+    "pkg_id": "github.com.dsecuredcom.archive-finder.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/finder-source/archive-finder/archive-finder",
+    "bincache": "ghcr.io/pkgforge/bincache/archive-finder/official/archive-finder",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/archive-finder/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Scan a list of hosts to locate potential archive files (.zip, .tar, .rar, etc.)",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/archive-finder/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dsecuredcom/archive-finder"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dsecuredcom/archive-finder"
+    ],
+    "provides": [
+      "archive-finder"
+    ],
+    "src_url": [
+      "https://github.com/dsecuredcom/archive-finder"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-0a4a546-250228T120049"
+  },
+  {
+    "_disabled": "false",
     "pkg": "archlinux",
     "pkg_family": "archlinux",
     "pkg_id": "github.com.Azathothas.docker-archlinux",
@@ -1025,6 +1068,71 @@
       "monitor"
     ],
     "version": "HEAD-14c5e5b-220727T202811"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "clipcat",
+    "pkg_family": "clipcat",
+    "pkg_id": "github.com.xrelkd.clipcat",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xrelkd-clipcat/clipcat/clipcat",
+    "bincache": "ghcr.io/pkgforge/bincache/clipcat/official/clipcat-menu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/clipcat/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A clipboard manager in Rust",
+      "clipcat-menu": "Clipcat client that utilizes a built-in or external finder to select clips",
+      "clipcat-notify": "A tool for monitoring clipboard events & sending it to clipcatd",
+      "clipcatctl": "CLI client for Clipcat",
+      "clipcatd": "Server daemon for Clipcat"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "clipcat"
+        ]
+      },
+      "nixpkgs": [
+        "clipcat"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/clipcat/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/xrelkd/clipcat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/xrelkd/clipcat"
+    ],
+    "provides": [
+      "clipcat-menu",
+      "clipcat-notify",
+      "clipcatctl",
+      "clipcatd"
+    ],
+    "repology": [
+      "clipcat"
+    ],
+    "src_url": [
+      "https://github.com/xrelkd/clipcat"
+    ],
+    "tag": [
+      "clipboard"
+    ],
+    "version": "v0.21.0"
   },
   {
     "_disabled": "false",
@@ -2184,7 +2292,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-d14ece9-250227T150904"
+    "version": "HEAD-854000e-250228T093309"
   },
   {
     "_disabled": "false",
@@ -2501,7 +2609,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-d14ece9-250227T150904"
+    "version": "HEAD-854000e-250228T093309"
   },
   {
     "_disabled": "true",
@@ -3133,6 +3241,67 @@
       "development"
     ],
     "version": "HEAD-fe46535-250106T222454"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "devpod",
+    "pkg_family": "devpod",
+    "pkg_id": "github.com.loft-sh.devpod",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sh-devpod/devpod/devpod",
+    "bincache": "ghcr.io/pkgforge/bincache/devpod/official/devpod",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/devpod/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Codespaces but open-source, client-only and unopinionated",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "devpod",
+          "devpod-bin"
+        ]
+      },
+      "homebrew": [
+        "devpod"
+      ],
+      "nixpkgs": [
+        "devpod"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/devpod/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/loft-sh/devpod"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/loft-sh/devpod"
+    ],
+    "provides": [
+      "aptly"
+    ],
+    "repology": [
+      "devpod"
+    ],
+    "src_url": [
+      "https://github.com/loft-sh/devpod"
+    ],
+    "tag": [
+      "cloud",
+      "devcontainer"
+    ],
+    "version": "v0.6.13-rc.5"
   },
   {
     "_disabled": "true",
@@ -3925,7 +4094,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-a66e1b2-250227T211358"
+    "version": "HEAD-38ea333-250228T161905"
   },
   {
     "_disabled": "false",
@@ -4240,7 +4409,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-0e73052-250228T060300"
+    "version": "HEAD-12cfaac-250228T120357"
   },
   {
     "_disabled": "false",
@@ -5771,7 +5940,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-6c597d9-250228T054529"
+    "version": "HEAD-63f8743-250228T111946"
   },
   {
     "_disabled": "false",
@@ -6009,6 +6178,71 @@
   },
   {
     "_disabled": "false",
+    "pkg": "lazygit",
+    "pkg_family": "lazygit",
+    "pkg_id": "github.com.jesseduffield.lazygit",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jesseduffield-lazygit/lazygit/lazygit",
+    "bincache": "ghcr.io/pkgforge/bincache/lazygit/official/lazygit",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lazygit/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "simple terminal UI for git commands",
+    "distro_pkg": {
+      "alpine": [
+        "lazygit"
+      ],
+      "archlinux": {
+        "aur": [
+          "lazygit-git"
+        ],
+        "extra": [
+          "lazygit"
+        ]
+      },
+      "homebrew": [
+        "lazygit"
+      ],
+      "nixpkgs": [
+        "lazygit"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lazygit/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/jesseduffield/lazygit"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jesseduffield/lazygit"
+    ],
+    "provides": [
+      "lazygit"
+    ],
+    "repology": [
+      "lazygit"
+    ],
+    "src_url": [
+      "https://github.com/jesseduffield/lazygit"
+    ],
+    "tag": [
+      "git"
+    ],
+    "version": "HEAD-1b571f9-250228T104759"
+  },
+  {
+    "_disabled": "false",
     "pkg": "libaws",
     "pkg_family": "libaws-cli",
     "pkg_id": "github.com.nathants.libaws",
@@ -6088,6 +6322,65 @@
       "kernel"
     ],
     "version": "1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "logdy",
+    "pkg_family": "logdy",
+    "pkg_id": "github.com.logdyhq.logdy-core",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/logdy-core/logdy/logdy",
+    "bincache": "ghcr.io/pkgforge/bincache/logdy/official/logdy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/logdy/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Web based real-time log viewer",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "logdy-bin"
+        ]
+      },
+      "homebrew": [
+        "logdy"
+      ],
+      "nixpkgs": [
+        "logdy"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/logdy/static.official.source.yaml",
+    "homepage": [
+      "https://logdy.dev"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/logdyhq/logdy-core"
+    ],
+    "provides": [
+      "logdy"
+    ],
+    "repology": [
+      "logdy"
+    ],
+    "src_url": [
+      "https://github.com/logdyhq/logdy-core"
+    ],
+    "tag": [
+      "log"
+    ],
+    "version": "HEAD-aa2e566-250228T091947"
   },
   {
     "_disabled": "false",
@@ -6223,7 +6516,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-37a0c1c-250227T231713"
+    "version": "HEAD-e03e11f-250228T050956"
   },
   {
     "_disabled": "false",
@@ -6480,6 +6773,59 @@
       "rss"
     ],
     "version": "HEAD-86b3593-250227T175208"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mirrorbits",
+    "pkg_family": "mirrorbits",
+    "pkg_id": "github.com.etix.mirrorbits",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/etix-mirrorbits/mirrorbits/mirrorbits",
+    "bincache": "ghcr.io/pkgforge/bincache/mirrorbits/official/mirrorbits",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mirrorbits/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Geographical Download Redirector for Distributing Files Efficiently across a set of Mirrors",
+    "distro_pkg": {
+      "debian": [
+        "mirrorbits"
+      ],
+      "nixpkgs": [
+        "mirrorbits"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mirrorbits/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/etix/mirrorbits"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/etix/mirrorbits"
+    ],
+    "repology": [
+      "mirrorbits"
+    ],
+    "src_url": [
+      "https://github.com/etix/mirrorbits"
+    ],
+    "tag": [
+      "cdn",
+      "mirror",
+      "rsync"
+    ],
+    "version": "HEAD-178f979-250228T122353"
   },
   {
     "_disabled": "false",
@@ -7111,6 +7457,60 @@
   },
   {
     "_disabled": "false",
+    "pkg": "netmaker",
+    "pkg_family": "netmaker",
+    "pkg_id": "github.com.gravitl.netmaker",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gravitl-netmaker/netmaker/netmaker",
+    "bincache": "ghcr.io/pkgforge/bincache/netmaker/official/netmaker",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netmaker/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "WireGuard automation from homelab to enterprise",
+    "distro_pkg": {
+      "nixpkgs": [
+        "netmaker",
+        "netmaker-full"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/netmaker/static.official.source.yaml",
+    "homepage": [
+      "https://netmaker.io",
+      "https://github.com/gravitl/netmaker"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/gravitl/netmaker"
+    ],
+    "provides": [
+      "netmaker",
+      "nmctl"
+    ],
+    "repology": [
+      "netmaker"
+    ],
+    "src_url": [
+      "https://github.com/gravitl/netmaker"
+    ],
+    "tag": [
+      "mesh",
+      "network",
+      "security",
+      "wireguard"
+    ],
+    "version": "HEAD-06484ad-250228T122105"
+  },
+  {
+    "_disabled": "false",
     "pkg": "nfpm",
     "pkg_family": "nfpm",
     "pkg_id": "github.com.goreleaser.nfpm",
@@ -7170,7 +7570,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-eaf8141-250227T192611"
+    "version": "HEAD-0e9d1d8-250228T081654"
   },
   {
     "_disabled": "false",
@@ -8705,7 +9105,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-fc479b2-250227T154046"
+    "version": "HEAD-1c5609e-250228T060503"
   },
   {
     "_disabled": "false",
@@ -8768,7 +9168,7 @@
       "conda",
       "mamba"
     ],
-    "version": "v0.36.0"
+    "version": "v0.37.0"
   },
   {
     "_disabled": "false",
@@ -9577,7 +9977,7 @@
       "bittorrent",
       "torrent"
     ],
-    "version": "HEAD-a16247a-250227T151301"
+    "version": "HEAD-24a9f83-250228T115847"
   },
   {
     "_disabled": "false",
@@ -9640,7 +10040,7 @@
       "linter",
       "python"
     ],
-    "version": "0.9.8"
+    "version": "0.9.9"
   },
   {
     "_disabled": "false",
@@ -10477,7 +10877,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-168cc83-250227T102535"
+    "version": "HEAD-c095839-250228T100640"
   },
   {
     "_disabled": "false",
@@ -11733,7 +12133,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-7180812-250227T220056"
+    "version": "HEAD-2791b5d-250228T092808"
   },
   {
     "_disabled": "false",
@@ -14579,7 +14979,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-2a6cad4-250228T084936"
+    "version": "HEAD-84d71bf-250228T190340"
   },
   {
     "_disabled": "false",

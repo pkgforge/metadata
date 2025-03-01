@@ -65,6 +65,7 @@ jobs:
           export CLONED_DIR="${CLONED_DIR}"
           COMMIT_NUMS="$(git rev-list --count HEAD | tr -d '[:space:]')"
           export COMMIT_NUMS="${COMMIT_NUMS}"
+          echo "COMMIT_NUMS=${COMMIT_NUMS}" >> "${GITHUB_ENV}"
           rm -rf "${CLONED_DIR}" 2>/dev/null && popd &>/dev/null
           cd "${GITHUB_WORKSPACE}/main" || exit 1
           if [ "${COMMIT_NUMS}" -gt 5000 ]; then
@@ -114,7 +115,7 @@ jobs:
           git pull origin main --no-edit 2>/dev/null
           git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
           git checkout --orphan temp
-          git add --all --verbose && git commit -m "Purge (Re:Init)"
+          git add --all --verbose && git commit -m "✅ Commits Reset (${COMMIT_NUMS} Exceeded > 5000) ☢️"
           git branch -D "main"
           git branch -m "main"
           git push --set-upstream origin main --force

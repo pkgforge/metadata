@@ -82,11 +82,12 @@ jobs:
         continue-on-error: true
 
       - name: Get DateTime & Purge files (=> 95 MB)
+        if: env.RESET_HISTORY == 'YES'
         run: |
           #Presets
           set +x ; set +e
           #--------------#
-          UTC_TIME="$(TZ='UTC' date +'%Y-%m-%d (%I:%M:%S %p)')"
+          UTC_TIME="$(TZ='UTC' date +'%Y-%m-%d_%I_%M_%S_%p' | tr -d '[:space:]')"
           echo "UTC_TIME=${UTC_TIME}" >> "${GITHUB_ENV}"
         continue-on-error: true
 

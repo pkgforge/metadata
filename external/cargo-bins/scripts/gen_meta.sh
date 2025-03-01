@@ -174,14 +174,14 @@ generate_meta()
        PKG_LICENSE="Blessing"
      fi
     #Provides
-     PKG_PROVIDES="$(jq -r '.. | objects | select(has("bin_names")) | .bin_names' "${TMPDIR}/tmp/${PKG_NAME_TAG}.crates.json" | tr -d '[]' | sort -u | paste -sd, - | tr -d '[:space:]' | sed 's/, /, /g' | sed 's/,/, /g' | sed 's/|//g' | sed 's/"//g' | sed 's/^, //; s/, $//')"
+     PKG_PROVIDES="$(jq -r '.. | objects | select(has("bin_names")) | .bin_names' "${TMPDIR}/tmp/${PKG_NAME_TAG}.crates.json" | tr -d '[]' | sort -u | grep -iv 'null' | paste -sd, - | tr -d '[:space:]' | sed 's/, /, /g' | sed 's/,/, /g' | sed 's/|//g' | sed 's/"//g' | sed 's/^, //; s/, $//')"
      if [[ "$(echo "${PKG_PROVIDES}" | tr -d '[:space:]' | wc -c)" -ge 2 ]]; then
        echo "[+] Provides: ${PKG_PROVIDES}"
      else
        PKG_PROVIDES="${PKG_NAME}"
      fi
     #Tags
-     PKG_TAGS="$(jq -r '.. | objects | select(has("keyword")) | .keyword' "${TMPDIR}/tmp/${PKG_NAME_TAG}.crates.json" | tr -d '[]' | sort -u | paste -sd, - | tr -d '[:space:]' | sed 's/, /, /g' | sed 's/,/, /g' | sed 's/|//g' | sed 's/"//g' | sed 's/^, //; s/, $//')" 
+     PKG_TAGS="$(jq -r '.. | objects | select(has("keyword")) | .keyword' "${TMPDIR}/tmp/${PKG_NAME_TAG}.crates.json" | tr -d '[]' | sort -u | grep -iv 'null' | paste -sd, - | tr -d '[:space:]' | sed 's/, /, /g' | sed 's/,/, /g' | sed 's/|//g' | sed 's/"//g' | sed 's/^, //; s/, $//')" 
      if [[ "$(echo "${PKG_TAGS}" | tr -d '[:space:]' | wc -c)" -ge 3 ]]; then
        echo "[+] Tags: ${PKG_TAGS}"
      else

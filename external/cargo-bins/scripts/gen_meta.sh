@@ -19,7 +19,7 @@ rm -rvf "${SYSTMP}/${HOST_TRIPLET}.json" 2>/dev/null
 pushd "${TMPDIR}" &>/dev/null
 #Get Repo Tags
  REL_REPO="cargo-bins/cargo-quickinstall"
- CUTOFF_DATE="$(date --utc -d '12 months ago' '+%Y-%m-%d' | tr -d '[:space:]')"
+ CUTOFF_DATE="$(date --utc -d '24 months ago' '+%Y-%m-%d' | tr -d '[:space:]')"
  export REL_REPO CUTOFF_DATE
  for i in {1..5}; do
    gh api "repos/${REL_REPO}/releases" --paginate 2>/dev/null |& cat - > "${TMPDIR}/tmp/RELEASES.json"

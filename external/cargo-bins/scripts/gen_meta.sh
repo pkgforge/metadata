@@ -167,14 +167,21 @@ generate_meta()
     #ID
      PKG_ID="cargo-bins.${PKG_NAME_TAG}.${PKG_NAME}"
     #License
-     PKG_LICENSE="$(jq -r '.. | objects | select(has("license")) | .license' "${TMPDIR}/tmp/${PKG_NAME_TAG}.crates.json" | grep -iv 'null' | head -n 1 | sed 's/"//g' | sed 's/^[ \t]*//;s/[ \t]*$//' | sed 's/["'\'']//g' | sed 's/|//g' | sed 's/`//g')"
+     PKG_LICENSE="$(jq -r '.. | objects | select(has("license")) | .license' "${TMPDIR}/tmp/${PKG_NAME_TAG}.crates.json" | grep -iv 'null' | head -n 1 | sed 's/"//g' | sed 's/^[ \t]*//;s/[ \t]*$//' | sed 's/["'\'']//g' | sed 's/|//g' | sed 's/`//g' | sed 's/^, //; s/, $//')"
      if [[ "$(echo "${PKG_LICENSE}" | tr -d '[:space:]' | wc -c)" -ge 2 ]]; then
        echo "[+] License: ${PKG_LICENSE}"
      else
        PKG_LICENSE="Blessing"
      fi
+    #Provides
+     PKG_PROVIDES="$(jq -r '.. | objects | select(has("bin_names")) | .bin_names' "${TMPDIR}/tmp/${PKG_NAME_TAG}.crates.json" | tr -d '[]' | sort -u | paste -sd, - | tr -d '[:space:]' | sed 's/, /, /g' | sed 's/,/, /g' | sed 's/|//g' | sed 's/"//g' | sed 's/^, //; s/, $//')"
+     if [[ "$(echo "${PKG_PROVIDES}" | tr -d '[:space:]' | wc -c)" -ge 2 ]]; then
+       echo "[+] Provides: ${PKG_PROVIDES}"
+     else
+       PKG_PROVIDES="${PKG_NAME}"
+     fi
     #Tags
-     PKG_TAGS="$(jq -r '.. | objects | select(has("keyword")) | .keyword' "${TMPDIR}/tmp/${PKG_NAME_TAG}.crates.json" | tr -d '[]' | sort -u | paste -sd, - | tr -d '[:space:]' | sed 's/, /, /g' | sed 's/,/, /g' | sed 's/|//g' | sed 's/"//g')" 
+     PKG_TAGS="$(jq -r '.. | objects | select(has("keyword")) | .keyword' "${TMPDIR}/tmp/${PKG_NAME_TAG}.crates.json" | tr -d '[]' | sort -u | paste -sd, - | tr -d '[:space:]' | sed 's/, /, /g' | sed 's/,/, /g' | sed 's/|//g' | sed 's/"//g' | sed 's/^, //; s/, $//')" 
      if [[ "$(echo "${PKG_TAGS}" | tr -d '[:space:]' | wc -c)" -ge 3 ]]; then
        echo "[+] Tags: ${PKG_TAGS}"
      else
@@ -194,6 +201,7 @@ generate_meta()
        --arg DOWNLOAD_COUNT "${PKG_DOWNLOAD_COUNT}" \
        --arg DOWNLOAD_URL "${PKG_DOWNLOAD_URL}" \
        --arg LICENSE "${PKG_LICENSE}" \
+       --arg PROVIDES "${PKG_PROVIDES}" \
        --arg RANK "${RANK}" \
        --arg SIZE "${PKG_SIZE}" \
        --arg SIZE_RAW "${PKG_SIZE_RAW}" \
@@ -229,7 +237,7 @@ generate_meta()
         "Learn More: https://docs.pkgforge.dev/repositories/external/cargo-bins",
         "Please create an Issue or send a PR for an official Package"
         ],
-        provides: [($PKG_NAME | ascii_downcase | gsub("[[:space:]]"; ""))],
+        provides: ($PROVIDES | split(", ")),
         rank: ($RANK | tostring),
         size: ($SIZE | tostring),
         size_raw: ($SIZE_RAW | tostring),

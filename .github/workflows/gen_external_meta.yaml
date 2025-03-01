@@ -15,9 +15,28 @@ jobs:
       contents: write
       statuses: read
     strategy:
+      max-parallel: 3
       fail-fast: false
       matrix:
         include:
+          - source: "am"
+            script: "${GITHUB_WORKSPACE}/main/external/am/scripts/gen_meta.sh"
+            host: "x86_64-Linux"
+            runner: "ubuntu-latest"
+            file: "/tmp/AM.json"
+ 
+          - source: "cargo-bins"
+            script: "${GITHUB_WORKSPACE}/main/external/cargo-bins/scripts/gen_meta.sh"
+            host: "aarch64-Linux"
+            runner: "ubuntu-24.04-arm"
+            file: "/tmp/cargo-bins.json"
+
+          - source: "cargo-bins"
+            script: "${GITHUB_WORKSPACE}/main/external/cargo-bins/scripts/gen_meta.sh"
+            host: "x86_64-Linux"
+            runner: "ubuntu-latest"
+            file: "/tmp/cargo-bins.json"
+                      
           - source: "appimagehub"
             script: "${GITHUB_WORKSPACE}/main/external/appimagehub/scripts/gen_meta.sh"
             host: "aarch64-Linux"
@@ -41,24 +60,6 @@ jobs:
             host: "x86_64-Linux"
             runner: "ubuntu-latest"
             file: "/tmp/appimage.json"
-
-          - source: "am"
-            script: "${GITHUB_WORKSPACE}/main/external/am/scripts/gen_meta.sh"
-            host: "x86_64-Linux"
-            runner: "ubuntu-latest"
-            file: "/tmp/AM.json"
- 
-          - source: "cargo-bins"
-            script: "${GITHUB_WORKSPACE}/main/external/cargo-bins/scripts/gen_meta.sh"
-            host: "aarch64-Linux"
-            runner: "ubuntu-24.04-arm"
-            file: "/tmp/cargo-bins.json"
-
-          - source: "cargo-bins"
-            script: "${GITHUB_WORKSPACE}/main/external/cargo-bins/scripts/gen_meta.sh"
-            host: "x86_64-Linux"
-            runner: "ubuntu-latest"
-            file: "/tmp/cargo-bins.json"
 
     steps:
       - name: Checkout repository

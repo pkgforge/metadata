@@ -113,7 +113,7 @@ generate_meta()
        echo -e "[+] Size ==> ${PKG_SIZE}"
        echo -e "[+] Size (RAW) ==> ${PKG_SIZE_RAW}"
      else
-       echo -e "[-] FATAL: Failed to find Any Github Release <== ${PKG_DL_URL}"
+       echo -e "[-] FATAL: Failed to find Any Github Release <== ${PKG_DOWNLOAD_URL}"
        return
      fi
     #Check Build Date

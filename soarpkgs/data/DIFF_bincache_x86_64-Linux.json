@@ -247,68 +247,46 @@
   },
   {
     "_disabled": "false",
-    "pkg": "b3sum",
-    "pkg_family": "b3sum",
-    "pkg_id": "github.com.BLAKE3-team.BLAKE3",
+    "pkg": "aws-wire-lengths",
+    "pkg_family": "aws-wire-lengths",
+    "pkg_id": "github.com.oxidecomputer.aws-wire-lengths",
     "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/team-blake3/b3sum/b3sum",
-    "bincache": "ghcr.io/pkgforge/bincache/b3sum/official/b3sum",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/b3sum/static.official.source.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wire-lengths/aws-wire-lengths/aws-wire-lengths",
+    "bincache": "ghcr.io/pkgforge/bincache/aws-wire-lengths/official/aws-wire-lengths",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aws-wire-lengths/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "Command line utility for calculating BLAKE3 hashes",
-    "distro_pkg": {
-      "alpine": [
-        "b3sum"
-      ],
-      "archlinux": {
-        "extra": [
-          "b3sum"
-        ]
-      },
-      "debian": [
-        "rust-b3sum",
-        "rust-blake3"
-      ],
-      "nixpkgs": [
-        "b3sum"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/b3sum/static.official.source.yaml",
+    "description": "Simple command line for various AWS management tasks",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aws-wire-lengths/static.official.source.yaml",
     "homepage": [
-      "https://blake3.io",
-      "https://github.com/BLAKE3-team/BLAKE3"
+      "https://github.com/oxidecomputer/aws-wire-lengths"
     ],
     "host": [
       "aarch64-linux",
       "x86_64-linux"
     ],
     "license": [
-      "Apache-2.0"
+      "MPL-2.0"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BLAKE3-team/BLAKE3"
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/oxidecomputer/aws-wire-lengths"
     ],
     "provides": [
-      "b3sum"
-    ],
-    "repology": [
-      "blake3"
+      "aws-wire-lengths"
     ],
     "src_url": [
-      "https://github.com/BLAKE3-team/BLAKE3"
+      "https://github.com/oxidecomputer/aws-wire-lengths"
     ],
     "tag": [
-      "bsum",
-      "checksum"
+      "aws"
     ],
-    "version": "HEAD-0f9dc27-250227T093223"
+    "version": "HEAD-39b7c74-250228T143943"
   },
   {
     "_disabled": "false",
@@ -909,72 +887,6 @@
       "git-commit"
     ],
     "version": "HEAD-cff93d3-250220T150219"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "containerd",
-    "pkg_family": "containerd",
-    "pkg_id": "github.com.containerd.containerd",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containerd-containerd/containerd/containerd",
-    "bincache": "ghcr.io/pkgforge/bincache/containerd/official/containerd",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/containerd/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "An open and reliable container runtime",
-    "distro_pkg": {
-      "alpine": [
-        "containerd"
-      ],
-      "archlinux": {
-        "aur": [
-          "containerd-git"
-        ],
-        "extra": [
-          "containerd"
-        ]
-      },
-      "debian": [
-        "containerd"
-      ],
-      "nixpkgs": [
-        "containerd"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/containerd/static.official.stable.yaml",
-    "homepage": [
-      "https://github.com/containerd/containerd"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/containerd/containerd"
-    ],
-    "provides": [
-      "containerd"
-    ],
-    "repology": [
-      "containerd"
-    ],
-    "src_url": [
-      "https://github.com/containerd/containerd"
-    ],
-    "tag": [
-      "container",
-      "oci"
-    ],
-    "version": "v1.7.26"
   },
   {
     "_disabled": "false",
@@ -2497,63 +2409,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "ghfetch",
-    "pkg_family": "ghfetch",
-    "pkg_id": "github.com.orangekame3.ghfetch",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/orangekame3-ghfetch/ghfetch/ghfetch",
-    "bincache": "ghcr.io/pkgforge/bincache/ghfetch/official/ghfetch",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ghfetch/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "CLI tool to fetch GitHub user information and show like neofetch",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "ghfetch",
-          "ghfetch-git"
-        ]
-      },
-      "nixpkgs": [
-        "ghfetch"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ghfetch/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/orangekame3/ghfetch"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/orangekame3/ghfetch"
-    ],
-    "provides": [
-      "ghfetch"
-    ],
-    "repology": [
-      "ghfetch"
-    ],
-    "src_url": [
-      "https://github.com/orangekame3/ghfetch"
-    ],
-    "tag": [
-      "github"
-    ],
-    "version": "HEAD-7238b49-250228T180312"
-  },
-  {
-    "_disabled": "false",
     "pkg": "gitoxide",
     "pkg_family": "gitoxide",
     "pkg_id": "github.com.GitoxideLabs.gitoxide",
@@ -3970,7 +3825,73 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-8a6bfc9-250228T175906"
+    "version": "HEAD-2af5b60-250228T232306"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "k9s",
+    "pkg_family": "k9s",
+    "pkg_id": "github.com.derailed.k9s",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/derailed-k9s/k9s/k9s",
+    "bincache": "ghcr.io/pkgforge/bincache/k9s/official/k9s",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/k9s/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Terminal UI to interact with Kubernetes clusters",
+    "distro_pkg": {
+      "alpine": [
+        "k9s"
+      ],
+      "archlinux": {
+        "aur": [
+          "k9s-git"
+        ],
+        "extra": [
+          "k9s"
+        ]
+      },
+      "homebrew": [
+        "k9s"
+      ],
+      "nixpkgs": [
+        "k9s"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/k9s/static.official.stable.yaml",
+    "homepage": [
+      "https://k9scli.io",
+      "https://github.com/derailed/k9s"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/derailed/k9s"
+    ],
+    "provides": [
+      "k9s"
+    ],
+    "repology": [
+      "k9s"
+    ],
+    "src_url": [
+      "https://github.com/derailed/k9s"
+    ],
+    "tag": [
+      "kubernetes"
+    ],
+    "version": "HEAD-1e9f85d-250228T175059"
   },
   {
     "_disabled": "false",
@@ -4469,7 +4390,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3337f81-250227T223218"
+    "version": "HEAD-094b4f1-250228T222902"
   },
   {
     "_disabled": "false",
@@ -5282,7 +5203,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-22c4c4f-250228T123117"
+    "version": "HEAD-b779dfb-250228T192331"
   },
   {
     "_disabled": "false",
@@ -5829,7 +5750,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-48bdcc7-250228T174127"
+    "version": "HEAD-9361297-250228T200844"
   },
   {
     "_disabled": "false",
@@ -7092,7 +7013,7 @@
       "analyzer",
       "linter"
     ],
-    "version": "HEAD-a06a84a-250227T220647"
+    "version": "HEAD-671fa49-250228T213908"
   },
   {
     "_disabled": "false",
@@ -9033,7 +8954,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-2791b5d-250228T092808"
+    "version": "HEAD-dc18091-250228T141728"
   },
   {
     "_disabled": "false",

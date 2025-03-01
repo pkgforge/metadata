@@ -61,7 +61,7 @@ generate_meta()
  ##Main
   export PKG_NAME_TAG="$1"
   echo -e "\n[+] Processing ${PKG_NAME_TAG##*[[:space:]]}\n"
-  unset BUILD_DATE BUILD_DATE_TMP CRATE_NAME CRATE_VERSION_TMP PKG_BIN_ASSETS PKG_APP_ENTRY PKG_ASSET PKG_DOWNLOAD_URL PKG_LICENSE PKG_NAME PKG_TAGS PKG_SIZE PKG_SIZE_RAW PKG_SRC_URL PKG_VERSION PKG_VERSION_TMP
+  unset BUILD_DATE BUILD_DATE_TMP CRATE_NAME CRATE_VERSION_TMP PKG_BIN_ASSETS PKG_APP_ENTRY PKG_ASSET PKG_DOWNLOAD_URL PKG_LICENSE PKG_NAME PKG_TAGS PKG_SIZE PKG_SIZE_RAW PKG_SRC_URL PKG_VERSION PKG_VERSION_TMP PKG_VERSION_UPSTREAM
   #Get GH Metadata
    curl -qfsSl "https://api.gh.pkgforge.dev/repos/${REL_REPO}/releases/tags/${PKG_NAME_TAG}" | jq . > "${TMPDIR}/assets/${PKG_NAME_TAG}.gh.json"
    unset REL_COUNT ; REL_COUNT="$(jq -r '.. | objects | select(has("browser_download_url")) | .browser_download_url' "${TMPDIR}/assets/${PKG_NAME_TAG}.gh.json" | grep -iv 'null' | grep -i 'http' | grep -i 'linux' | sort -u | wc -l | tr -d '[:space:]')"
@@ -71,6 +71,7 @@ generate_meta()
        return
      else
        PKG_SRC_URL="https://github.com/${REL_REPO}/releases/tag/${PKG_NAME_TAG}"
+       PKG_VERSION="$(echo "${PKG_NAME_TAG}" | awk -F'-' '{print $NF}' | awk '{gsub(/^-+|-+$/,""); print}' | tr -d '[:space:]')"
      fi
     #Parse
      PKG_BIN_ASSETS=()
@@ -142,7 +143,7 @@ generate_meta()
     #Name
      PKG_NAME="${CRATE_NAME##*[[:space:]]}"
     #Version 
-     PKG_VERSION="$(jq -r '.version' "${TMPDIR}/assets/${PKG_NAME_TAG}.crates.json" 2>/dev/null | grep -iv 'null' | tr -d '[:space:]')"
+     PKG_VERSION_UPSTREAM="$(jq -r '.version' "${TMPDIR}/assets/${PKG_NAME_TAG}.crates.json" 2>/dev/null | grep -iv 'null' | tr -d '[:space:]')"
     #Description 
      PKG_DESCRIPTION="$(jq -r '.description' "${TMPDIR}/assets/${PKG_NAME_TAG}.crates.json" 2>/dev/null | grep -iv 'null' | sed 's/`//g' | sed 's/^[ \t]*//;s/[ \t]*$//' | sed ':a;N;$!ba;s/\r\n//g; s/\n//g' | sed 's/["'\'']//g' | sed 's/|//g' | sed 's/`//g')"
      if [[ "$(echo "${PKG_DESCRIPTION}" | tr -d '[:space:]' | wc -c)" -ge 5 ]]; then
@@ -208,6 +209,7 @@ generate_meta()
        --arg SRC_URL "${PKG_SRC_URL}" \
        --arg TAGS "${PKG_TAGS}" \
        --arg VERSION "${PKG_VERSION}" \
+       --arg VERSION_UPSTREAM "${PKG_VERSION_UPSTREAM}" \
      '
       {
         _disabled: ("false"),
@@ -243,7 +245,8 @@ generate_meta()
         size_raw: ($SIZE_RAW | tostring),
         src_url: [($SRC_URL | tostring)],
         tag: ($TAGS | split(",") | map(gsub("^\\s+|\\s+$"; "")) | unique | sort),
-        version: $VERSION
+        version: ($VERSION | tostring),
+        version_upstream: ($VERSION_UPSTREAM | tostring)
       }
      ' | jq . > "${TMPDIR}/data/${PKG_NAME_TAG}.json.raw"
  #Sanity Check   

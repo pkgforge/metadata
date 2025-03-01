@@ -225,7 +225,7 @@ generate_meta()
         download_count: ($DOWNLOAD_COUNT | tostring),
         download_url: ($DOWNLOAD_URL | tostring),
         homepage: [($PKG_WEBPAGE | tostring)],
-        license: ($LICENSE | split(", ")),
+        license: ($LICENSE | split(",") | map(gsub("^\\s+|\\s+$"; "")) | unique | sort),
         maintainer: [
         "cargo-bins (https://github.com/cargo-bins/cargo-quickinstall)"
         ],
@@ -237,12 +237,12 @@ generate_meta()
         "Learn More: https://docs.pkgforge.dev/repositories/external/cargo-bins",
         "Please create an Issue or send a PR for an official Package"
         ],
-        provides: ($PROVIDES | split(", ")),
+        provides: ($PROVIDES | split(",") | map(gsub("^\\s+|\\s+$"; "")) | unique | sort),
         rank: ($RANK | tostring),
         size: ($SIZE | tostring),
         size_raw: ($SIZE_RAW | tostring),
         src_url: [($SRC_URL | tostring)],
-        tag: ($TAGS | split(", ")),
+        tag: ($TAGS | split(",") | map(gsub("^\\s+|\\s+$"; "")) | unique | sort),
         version: $VERSION
       }
      ' | jq . > "${TMPDIR}/data/${PKG_NAME_TAG}.json.raw"

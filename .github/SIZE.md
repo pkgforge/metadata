@@ -174,7 +174,7 @@
   32K   │   └─┬ scripts
   28K   │     └── gen_meta.sh
  7.8M   ├─┬ soarpkgs
- 7.4M   │ ├─┬ data
+ 7.5M   │ ├─┬ data
  2.0M   │ │ ├── INDEX.json
  1.2M   │ │ ├── BACKAGE.json
  1.0M   │ │ ├── INDEX.db
@@ -189,8 +189,8 @@
  164K   │ │ ├── GH_REPO.md
  144K   │ │ ├── INDEX.db.zstd
  136K   │ │ ├── INDEX.db.xz
+  44K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   40K   │ │ ├── URLS.txt
-  36K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   32K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   28K   │ │ ├── GH_REPO_ARCHIVED.md
   28K   │ │ ├── DIFF_bincache.json

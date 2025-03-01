@@ -2018,6 +2018,67 @@
   },
   {
     "_disabled": "false",
+    "pkg": "aliyun-cli",
+    "pkg_family": "aliyun-cli",
+    "pkg_id": "github.com.aliyun.aliyun-cli.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-source/aliyun-cli/aliyun-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aliyun-cli/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Universal Command-Line Interface for Alibaba Cloud",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "aliyun-cli-bin"
+        ],
+        "extra": [
+          "aliyun-cli"
+        ]
+      },
+      "homebrew": [
+        "aliyun-cli"
+      ],
+      "nixpkgs": [
+        "aliyun-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aliyun-cli/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/aliyun/aliyun-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/aliyun/aliyun-cli"
+    ],
+    "provides": [
+      "aliyun-cli==aliyun"
+    ],
+    "repology": [
+      "aliyun-cli"
+    ],
+    "src_url": [
+      "https://github.com/aliyun/aliyun-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-b5a8beb-250225T053920"
+  },
+  {
+    "_disabled": "false",
     "pkg": "allusion",
     "pkg_family": "allusion",
     "pkg_id": "github.com.allusion-app.Allusion",
@@ -4863,6 +4924,58 @@
       "download-manager"
     ],
     "version": "HEAD-b1b8c2f-250203T001558"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "axfr2hosts",
+    "pkg_family": "axfr2hosts",
+    "pkg_id": "github.com.dkorunic.axfr2hosts.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/axfr2hosts-source/axfr2hosts/axfr2hosts",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/axfr2hosts/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Transfer DNS zones (AXFR) and convert A/AAAA/CNAME records into a hosts file for offline use",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "axfr2hosts-git"
+        ]
+      },
+      "nixpkgs": [
+        "axfr2hosts"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/axfr2hosts/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dkorunic/axfr2hosts"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dkorunic/axfr2hosts"
+    ],
+    "provides": [
+      "axfr2hosts"
+    ],
+    "src_url": [
+      "https://github.com/dkorunic/axfr2hosts"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-1c78050-250224T175125"
   },
   {
     "_disabled": "false",
@@ -8893,7 +9006,907 @@
       "bootstrap",
       "busybox",
       "coreutils"
-    ]
+    ],
+    "version": "HEAD-8872956-250209T150915"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "busybox",
+    "pkg_family": "busybox",
+    "pkg_id": "nixpkgs.busybox",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-busybox/busybox/busybox",
+    "bincache": "ghcr.io/pkgforge/bincache/busybox/nixpkgs/busybox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/busybox/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tiny versions of many common UNIX utilities into a single small executable (Multicall)",
+      "[": "Provides test command in the '[ EXPR ]' form [busybox]",
+      "[[": "Provides test command in the '[[ EXPR ]]' form [busybox]",
+      "acpid": "Listen to ACPI events and spawn specific helpers on event arrival [busybox]",
+      "addgroup": "Add a group or add a user to a group [busybox]",
+      "add-shell": "Add SHELLs to /etc/shells [busybox]",
+      "add_shell": "Add SHELLs to /etc/shells [busybox]",
+      "adduser": "Add a user to the System [busybox]",
+      "adjtimex": "Read and optionally set system timebase parameters [busybox]",
+      "ar": "Extract or list FILES from an ar archive [busybox]",
+      "arch": "Print system architecture [busybox]",
+      "arp": "Manipulate ARP cache [busybox]",
+      "arping": "Send ARP requests/replies [busybox]",
+      "ascii": "Prints a formatted ASCII table with decimal, hex, and symbols [busybox]",
+      "ash": "Unix shell interpreter [busybox]",
+      "awk": "Pattern scanning and text processing language for extracting and transforming data [busybox]",
+      "base32": "Encode or decode data using Base32 encoding [busybox]",
+      "base64": "Encode or decode data using Base64 encoding [busybox]",
+      "basename": "Strip directory path and .SUFFIX from FILE [busybox]",
+      "bc": "An arbitrary precision calculator language [busybox]",
+      "beep": "Generate a tone through the PC speaker [busybox]",
+      "blkdiscard": "Discard blocks on a block device [busybox]",
+      "blkid": "Print UUIDs of all filesystems [busybox]",
+      "blockdev": "Perform block device operations [busybox]",
+      "bootchartd": "Create performance charts of the boot process [busybox]",
+      "brctl": "Manage ethernet bridges [busybox]",
+      "bunzip2": "Uncompress FILE (or standard input if FILE is '-' or omitted) [busybox]",
+      "busybox": "A multi-purpose executable providing many standard UNIX utilities [busybox]",
+      "bzcat": "Uncompress to stdout [busybox]",
+      "bzip2": "Compress FILE(s) with bzip2 algorithm [busybox]",
+      "cal": "Display a calendar [busybox]",
+      "cat": "Concatenate FILE(s) and print them to stdout [busybox]",
+      "catv": "Display nonprinting characters as ^x or M-x [busybox]",
+      "chat": "Interact with a modem connected to stdin/stdou [busybox]",
+      "chattr": "Change file attributes on an ext2 fs [busybox]",
+      "chgrp": "Change the group membership of each FILE to GROUP [busybox]",
+      "chmod": "Change the permissions of a file or directory [busybox]",
+      "chown": "Change the owner and/or group of each FILE to OWNER and/or GROUP [busybox]",
+      "chpasswd": "Read user:password from stdin and update /etc/passwd [busybox]",
+      "chpst": "Change the process state and run PROG [busybox]",
+      "chroot": "Run PROG with root directory set to NEWROOT [busybox]",
+      "chrt": "Manipulate real-time attributes of a process [busybox]",
+      "chvt": "Change the foreground virtual terminal to /dev/ttyN [busybox]",
+      "cksum": "Calculate the CRC32 checksums of FILES [busybox]",
+      "clear": "Clear screen [busybox]",
+      "cmp": "Compares FILE1 vs stdin if FILE2 is not specified [busybox]",
+      "comm": "Compare FILE1 to FILE2, or to stdin if - is specified [busybox]",
+      "conspy": "View and interact with the system console from a remote terminal [busybox]",
+      "cp": "Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY [busybox]",
+      "cpio": "Extract or list files from a cpio archive, or create a cpio archive [busybox]",
+      "crc32": "Calculate CRC32 checksums of FILES [busybox]",
+      "crond": "Daemon to execute scheduled commands [busybox]",
+      "crontab": "Command to manage cron jobs for the current user [busybox]",
+      "cryptpw": "Crypt the PASSWORD using crypt(3) [busybox]",
+      "cttyhack": "Option to allow a program to access the controlling terminal [busybox]",
+      "cut": "Print selected fields from each input FILE to standard output [busybox]",
+      "date": "Display time (using +FMT), or set time [busybox]",
+      "dc": "Tiny RPN calculator [busybox]",
+      "dd": "Copy a file with converting and formatting [busybox]",
+      "deallocvt": "Deallocate unused virtual terminal /dev/ttyN [busybox]",
+      "delgroup": "Delete group GROUP from the system or user USER from group GROUP [busybox]",
+      "deluser": "Delete USER from the system [busybox]",
+      "depmod": "Generate a list of module dependencies for the Linux kernel [busybox]",
+      "devmem": "Read/write from physical address [busybox]",
+      "df": "Print filesystem usage statistics [busybox]",
+      "dhcprelay": "Relay DHCP requests between clients and server [busybox]",
+      "diff": "Compare files line by line and output the differences between them [busybox]",
+      "dirname": "Strip non-directory suffix from FILENAME [busybox]",
+      "dmesg": "Print or control the kernel ring buffer [busybox]",
+      "dnsd": "Small static DNS server daemon [busybox]",
+      "dnsdomainname": "Displays or sets the system's domain name for DNS lookups [busybox]",
+      "dos2unix": "Convert FILE in-place from DOS to Unix format [busybox]",
+      "dpkg": "Install, remove and manage Debian packages [busybox]",
+      "dpkg-deb": "Create, Manipulate, and Extract Debian package files (.deb) [busybox]",
+      "du": "Summarize disk space used for each FILE and/or directory [busybox]",
+      "dumpkmap": "Print a binary keyboard translation table to standard output [busybox]",
+      "dumpleases": "Display DHCP leases granted by udhcpd [busybox]",
+      "echo": "Print the specified ARGs to stdout [busybox]",
+      "ed": "A line-oriented text editor [busybox]",
+      "egrep": "Searches text using extended regular expressions (EREs). [busybox]",
+      "eject": "Eject specified DEVICE (or default /dev/cdrom) [busybox]",
+      "env": "Print the current environment or run PROG after setting up the specified environment [busybox]",
+      "envdir": "Set various environment variables as specified by files in the directory dir and run PROG [busybox]",
+      "envuidgid": "et $UID to account's uid and $GID to account's gid and run PROG [busybox]",
+      "ether-wake": "Send a magic packet to wake up a computer [busybox]",
+      "expand": "Convert tabs to spaces, writing to standard output [busybox]",
+      "expr": "Print the value of EXPRESSION to standard output [busybox]",
+      "factor": "Factor a number into its prime factors [busybox]",
+      "fakeidentd": "Provide fake ident (auth) service [busybox]",
+      "fallocate": "Preallocate space to a file [busybox]",
+      "false": "Return an exit code of FALSE (1) [busybox]",
+      "fatattr": "Change attributes on FAT filesystems [busybox]",
+      "fbset": "Show and modify frame buffer settings [busybox]",
+      "fbsplash": "Display a splash screen on the framebuffer [busybox]",
+      "fdflush": "Force floppy disk drive to detect disk change [busybox]",
+      "fdformat": "Format floppy disk [busybox]",
+      "fdisk": "Change partition table [busybox]",
+      "fgconsole": "Print the number of the active virtual console [busybox]",
+      "fgrep": "Searches for fixed strings (literal text), ignoring regular expressions [busybox]",
+      "find": "Search for files [busybox]",
+      "findfs": "Find a filesystem by its label or UUID [busybox]",
+      "flash_lock": "Lock part or all of an MTD device [busybox]",
+      "flash_unlock": "Unlock an MTD device [busybox]",
+      "flock": "Utilize serialization using file locks [busybox]",
+      "fold": "Wrap input lines in each FILE (standard input by default), writing to standard output [busybox]",
+      "free": "Display the amount of free and used system memory [busybox]",
+      "freeramdisk": "Free all memory used by the specified ramdisk [busybox]",
+      "fsck": "Check and repair filesystems [busybox]",
+      "fsck.minix": "Check MINIX filesystem [busybox]",
+      "fsck-minix": "Check MINIX filesystem [busybox]",
+      "fsfreeze": "Suspend access to a filesystem [busybox]",
+      "fstrim": "Discard/trim unused blocks on a filesystem [busybox]",
+      "fsync": "Synchronize a file's in-core state with storage device [busybox]",
+      "ftpd": "Anonymous FTP server [busybox]",
+      "ftpget": "Retrieve a remote file via FTP [busybox]",
+      "ftpput": "Store a local file on a remote machine via FTP [busybox]",
+      "fuser": "Find processes which use FILEs or PORTs [busybox]",
+      "getfattr": "Get extended attributes of a file or directory [busybox]",
+      "getopt": "Parse command options [busybox]",
+      "getty": "Open a tty, prompt for a login name, then invoke /bin/login [busybox]",
+      "grep": "Search for PATTERN in each FILE or standard input [busybox]",
+      "groups": "Print the groups a user is in [busybox]",
+      "gunzip": "Uncompress FILEs (or standard input) [busybox]",
+      "gzip": "Compress FILEs (or standard input) [busybox]",
+      "halt": "Shuts down or reboots the system immediately [busybox]",
+      "hd": "An alias for hexdump -C [busybox]",
+      "hdparm": "Utility to set and view hardware parameters of hard disk drives [busybox]",
+      "head": "Print first N lines of each FILE to standard output [busybox]",
+      "hexdump": "Display file(s) or standard input in a user specified format [busybox]",
+      "hexedit": "View and edit files in hexadecimal [busybox]",
+      "hostid": "Print out a unique 32-bit identifier for the machine [busybox]",
+      "hostname": "Get or set hostname or DNS domain name [busybox]",
+      "httpd": "Listen for incoming HTTP requests [busybox]",
+      "hush": "A minimal, lightweight shell for Unix-like systems [busybox]",
+      "hwclock": "Query and set hardware clock (RTC) [busybox]",
+      "i2cdetect": "Detect I2C devices on an I2C bus [busybox]",
+      "i2cdump": "Dump I2C registers [busybox]",
+      "i2cget": "Read from I2C device registers [busybox]",
+      "i2cset": "Write to I2C device registers [busybox]",
+      "i2ctransfer": "Perform I2C block transfers [busybox]",
+      "id": "Print information about USER or the current user [busybox]",
+      "ifconfig": "Configure a network interface [busybox]",
+      "ifdown": "Bring a network interface down [busybox]",
+      "ifenslave": "Configure network interfaces for parallel routing [busybox]",
+      "ifplugd": "Network interface plug detection daemon [busybox]",
+      "ifup": "Bring a network interface up [busybox]",
+      "inetd": "Listen for network connections and launch programs [busybox]",
+      "init": "Init is the parent of all processes [busybox]",
+      "insmod": "Load the specified kernel modules into the kernel [busybox]",
+      "install": "Copy files and set attributes [busybox]",
+      "ionice": "Change I/O scheduling class and priority [busybox]",
+      "iostat": "Report CPU and I/O statistics [busybox]",
+      "ip": "Manage network interfaces, routing, and network devices [busybox]",
+      "ipaddr": "Display or Manipulate IP address assignments on network interfaces [busybox]",
+      "ipcalc": "Calculate IP network settings from a IP address [busybox]",
+      "ipcrm": "Upper-case options MQS remove an object by shmkey value [busybox]",
+      "ipcs": "Show information about IPC mechanisms [busybox]",
+      "iplink": "Manage network devices (e.g., enable/disable interfaces) [busybox]",
+      "ipneigh": "Manage neighbor cache (ARP entries) in the IP network [busybox]",
+      "iproute": "Manage routing tables and IP routes in the Linux kernel [busybox]",
+      "iprule": "Manage routing policy rules in Linux [busybox]",
+      "iptunnel": "Manages network tunnels [busybox]",
+      "kbd_mode": "Report or set the keyboard mode [busybox]",
+      "kbd-mode": "Report or set the keyboard mode [busybox]",
+      "kill": "Send a signal (default: TERM) to given PIDs [busybox]",
+      "killall": "Send a signal (default: TERM) to given processes [busybox]",
+      "killall5": "Send a signal (default: TERM) to all processes outside current session [busybox]",
+      "klogd": "Kernel logger [busybox]",
+      "last": "Show listing of the last users that logged into the system [busybox]",
+      "less": "View a file or list of files [busybox]",
+      "length": "Print STRING's length [busybox]",
+      "link": "Manage network interfaces [busybox]",
+      "linux32": "Change reported architecture to 32bit [busybox]",
+      "linux64": "Change reported architecture to 64bit [busybox]",
+      "ln": "Create a link LINK or DIRECTORY/TARGET to the specified TARGET(s) [busybox]",
+      "loadfont": "Load a console font from standard input [busybox]",
+      "loadkmap": "Load a binary keyboard translation table from standard input [busybox]",
+      "logger": "Write MESSAGE to the system log [busybox]",
+      "login": "Begin a new session on the system [busybox]",
+      "logname": "Print the name of the current user [busybox]",
+      "logread": "Show messages in syslogd's circular buffer [busybox]",
+      "losetup": "Control loop devices [busybox]",
+      "lpd": "Line printer daemon, handles print jobs [busybox]",
+      "lpq": "List print jobs in the queue [busybox]",
+      "lpr": "Submit a print job to the printer [busybox]",
+      "ls": "List directory contents [busybox]",
+      "lsattr": "List file attributes on an ext2 fs [busybox]",
+      "lsmod": "List the currently loaded kernel modules [busybox]",
+      "lsof": "Lists open files and the processes using them [busybox]",
+      "lspci": "Lists all PCI devices on the system [busybox]",
+      "lsscsi": "Displays SCSI devices on the system [busybox]",
+      "lsusb": "Lists USB devices connected to the system [busybox]",
+      "lzcat": "Uncompress to stdout [busybox]",
+      "lzma": "Compression tool using the LZMA algorithm [busybox]",
+      "lzop": "Fast compression tool based on LZO algorithm [busybox]",
+      "makedevs": "Utility to create device files in /dev [busybox]",
+      "makemime": "Create multipart MIME-encoded message from FILEs [busybox]",
+      "man": "Format and display manual page [busybox]",
+      "md5sum": "Print or check MD5 checksums [busybox]",
+      "mdev": "A minimal device manager for Linux [busybox]",
+      "mesg": "Control write access to your terminal [busybox]",
+      "microcom": "Copy bytes for stdin to TTY and from TTY to stdout [busybox]",
+      "mim": "Perform MIME encoding/decoding [busybox]",
+      "mkdir": "Create DIRECTORY [busybox]",
+      "mkdosfs": "Make a FAT32 filesystem [busybox]",
+      "mke2fs": "Utility to create ext2/ext3/ext4 filesystems [busybox]",
+      "mkfifo": "Create named pipe (identical to 'mknod name p') [busybox]",
+      "mkfs.ext2": "Make an EXT2 filesystem [busybox]",
+      "mkfs-ext2": "Make an EXT2 filesystem [busybox]",
+      "mkfs.minix": "Make a MINIX filesystem [busybox]",
+      "mkfs-minix": "Make a MINIX filesystem [busybox]",
+      "mkfs.vfat": "Make a FAT32 filesystem [busybox]",
+      "mkfs-vfat": "Make a FAT32 filesystem [busybox]",
+      "mknod": "Create a special file (block, character, or pipe) [busybox]",
+      "mkpasswd": "Crypt the PASSWORD using crypt(3) [busybox]",
+      "mkswap": "Prepare block device to be used as swap partition [busybox]",
+      "mktemp": "Create a temporary file with name based on TEMPLATE and print its name [busybox]",
+      "modinfo": "Show information about a Linux kernel module [busybox]",
+      "modprobe": "Add or remove kernel modules [busybox]",
+      "more": "View FILE or standard input one screenful at a time [busybox]",
+      "mount": "Mount a filesystem [busybox]",
+      "mountpoint": "Check if the directory is a mountpoint [busybox]",
+      "mpstat": "Report per-processor statistics [busybox]",
+      "mt": "Control magnetic tape drive operation [busybox]",
+      "mv": "Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY [busybox]",
+      "nameif": "Rename network interface while it in the down state [busybox]",
+      "nanddump": "Reads NAND flash memory and dumps its contents [busybox]",
+      "nandwrite": "Writes data to a NAND flash memory device [busybox]",
+      "nbdclient": "Connects to a Network Block Device server [busybox]",
+      "nbd-client": "Connects to a Network Block Device server [busybox]",
+      "nc": "Netcat, a tool for network connections [busybox]",
+      "netstat": "Display networking information [busybox]",
+      "nice": "Run PROG with modified scheduling priority [busybox]",
+      "nl": "Number lines of input [busybox]",
+      "nmeter": "Monitor system in real time [busybox]",
+      "nohup": "Run PROG immune to hangups, with output to a non-tty [busybox]",
+      "nologin": "Refuse login with an error message [busybox]",
+      "nproc": "Print the number of processing units available [busybox]",
+      "nsenter": "Run command in a different namespace [busybox]",
+      "nslookup": "Query the nameserver for the IP address of the given HOST [busybox]",
+      "ntpd": "Network Time Protocol daemon [busybox]",
+      "od": "Write an unambiguous representation, octal bytes by default, of FILE to standard output [busybox]",
+      "openvt": "Start PROG on a new virtual terminal [busybox]",
+      "partprobe": "Inform the OS of partition table changes [busybox]",
+      "passwd": "Change USER's password [busybox]",
+      "paste": "Concatenate and paste lines from files [busybox]",
+      "patch": "Apply patches to files [busybox]",
+      "pgrep": "Display process(es) selected by regex PATTERN [busybox]",
+      "pidof": "List PIDs of all processes with names that match NAMEs [busybox]",
+      "ping": "Send ICMP ECHO_REQUEST packets to IPv4 network hosts [busybox]",
+      "ping6": "Send ICMP ECHO_REQUEST packets to IPv6 network hosts [busybox]",
+      "pipe_progress": "Show progress of piped data transfer [busybox]",
+      "pipe-progress": "Show progress of piped data transfer [busybox]",
+      "pivot_root": "Move the current root file system to PUT_OLD and make NEW_ROOT the new root file system [busybox]",
+      "pivot-root": "Move the current root file system to PUT_OLD and make NEW_ROOT the new root file system [busybox]",
+      "pkill": "Send a signal to process(es) selected by regex PATTERN [busybox]",
+      "pmap": "Report memory map of a process [busybox]",
+      "popmaildir": "Retrieve mail from a Maildir [busybox]",
+      "poweroff": "Shut down the system [busybox]",
+      "powertop": "Monitor and optimize power usage [busybox]",
+      "printenv": "Print all or part of environment [busybox]",
+      "printf": "Format and print ARGUMENT(s) according to FORMAT [busybox]",
+      "ps": "Report process status [busybox]",
+      "pscan": "Scan a host, print all open ports [busybox]",
+      "pstree": "Display a tree of processes [busybox]",
+      "pwd": "Print the full filename of the current working directory [busybox]",
+      "pwdx": "Show the current working directory of a process [busybox]",
+      "raidautorun": "Tell the kernel to automatically search and start RAID arrays [busybox]",
+      "rdate": "Get and possibly set the system date and time from a remote HOST [busybox]",
+      "rdev": "Print the device node associated with the filesystem mounted at '/' [busybox]",
+      "readahead": "Pre-read files into page cache [busybox]",
+      "readlink": "Display the value of a symlink [busybox]",
+      "readprofile": "Read kernel profiling information [busybox]",
+      "realpath": "Return the absolute pathnames of given argument [busybox]",
+      "reboot": "Reboots the system [busybox]",
+      "reformime": "Parse MIME-encoded message [busybox]",
+      "remove-shell": "Remove SHELLs from /etc/shells [busybox]",
+      "remove_shell": "Remove SHELLs from /etc/shells [busybox]",
+      "renice": "Change priority of running processes [busybox]",
+      "reset": "Reset the screen [busybox]",
+      "resize": "Resize the screen [busybox]",
+      "resume": "Resume a suspended job [busybox]",
+      "rev": "Reverse lines of input [busybox]",
+      "rm": "Remove (unlink) the FILE(s) [busybox]",
+      "rmdir": "Remove the DIRECTORY [busybox]",
+      "rmmod": "Removes a module from the Linux kernel [busybox]",
+      "route": "Edit kernel routing tables [busybox]",
+      "rpm": "Manipulate RPM packages [busybox]",
+      "rpm2cpio": "Output a cpio archive of the rpm file [busybox]",
+      "rtcwake": "Enter a system sleep state until specified wakeup time [busybox]",
+      "run-init": "Executes the specified program as the initial process in a new system environment [busybox]",
+      "run_init": "Executes the specified program as the initial process in a new system environment [busybox]",
+      "run-parts": "Run a bunch of scripts in a directory [busybox]",
+      "runlevel": "Find the current and previous system runlevel [busybox]",
+      "runsv": "Start and monitor a service and optionally an appendant log service [busybox]",
+      "runsvdir": "Start a runsv process for each subdirectory [busybox]",
+      "rx": "Receive a file using the xmodem protocol [busybox]",
+      "script": "Record a terminal session [busybox]",
+      "scriptreplay": "Play back typescripts, using timing information [busybox]",
+      "sed": "Stream editor for filtering and transforming text [busybox]",
+      "seedrng": "Seed the random number generator [busybox]",
+      "sendmail": "Read email from stdin and send it [busybox]",
+      "seq": "Print numbers from FIRST to LAST, in steps of IN [busybox]",
+      "setarch": "Change reported architecture for program [busybox]",
+      "setconsole": "Redirect system console output to DEVICE [busybox]",
+      "setfattr": "Set file attributes [busybox]",
+      "setfont": "Load a console font [busybox]",
+      "setkeycodes": "Set entries into the kernel's scancode-to-keycode map [busybox]",
+      "setlogcons": "Redirect the kernel output to console N [busybox]",
+      "setpriv": "Run a program with different privilege settings [busybox]",
+      "setserial": "Set or view serial port configuration [busybox]",
+      "setsid": "Run PROG in a new session [busybox]",
+      "setuidgid": "Set uid and gid to account's uid and gid [busybox]",
+      "sh": "The ASH Shell [busybox]",
+      "sh-is-ash": "The ASH Shell [busybox]",
+      "sha1sum": "Print or check SHA1 checksums [busybox]",
+      "sha256sum": "Print or check SHA256 checksums [busybox]",
+      "sha3sum": "Compute SHA-3 checksums for files [busybox]",
+      "sha512sum": "Print or check SHA512 checksums [busybox]",
+      "showkey": "Show keys pressed [busybox]",
+      "shred": "Overwrite a file to hide its contents [busybox]",
+      "shuf": "Generate random permutations [busybox]",
+      "slattach": "Attach network interface(s) to serial line(s) [busybox]",
+      "sleep": "Pause for a time [busybox]",
+      "smemcap": "Capture system memory usage details [busybox]",
+      "softlimit": "Set soft resource limits, then run PROG [busybox]",
+      "sort": "Sort lines of text [busybox]",
+      "split": "Split a file into pieces [busybox]",
+      "ssl_client": "SSL/TLS client [busybox]",
+      "ssl-client": "SSL/TLS client [busybox]",
+      "start-stop-daemon": "Search for matching processes, and stop all matching processes [busybox]",
+      "stat": "Display file (default) or filesystem status [busybox]",
+      "strings": "Display printable strings in a binary file [busybox]",
+      "stty": "Without arguments, prints baud rate, line discipline, and deviations from stty sane [busybox]",
+      "su": "Change user id or become root [busybox]",
+      "sulogin": "Single user login [busybox]",
+      "sum": "Checksum and count the blocks in a file [busybox]",
+      "sv": "Control services monitored by runsv supervisor [busybox]",
+      "svc": "Controls services: start, stop, or send signals to daemons [busybox]",
+      "svlogd": "Continuously read log data from standard input [busybox]",
+      "svok": "Checks if a service is running under 'svscan' supervision [busybox]",
+      "swapoff": "Stop swapping on DEVICE [busybox]",
+      "swapon": "Start swapping on DEVICE [busybox]",
+      "switch_root": "Free initramfs and switch to another root fs [busybox]",
+      "switch-root": "Free initramfs and switch to another root fs [busybox]",
+      "sync": "Write all buffered blocks to disk [busybox]",
+      "sysctl": "Configure kernel parameters at runtime [busybox]",
+      "syslogd": "System logging utility [busybox]",
+      "tac": "Concatenate FILE(s) and print them in reverse [busybox]",
+      "tail": "Print last N lines of each FILE to standard output [busybox]",
+      "tar": "Create, extract, or list files from a tar file [busybox]",
+      "taskset": "Set or get CPU affinity [busybox]",
+      "tcpsvd": "Create TCP socket, bind to IP:PORT and listen for incoming connection [busybox]",
+      "tee": "Copy standard input to each FILE, and also to standard output [busybox]",
+      "telnet": "Connect to telnet server [busybox]",
+      "telnetd": "Handle incoming telnet connections [busybox]",
+      "test": "Check file types, compare values etc [busybox]",
+      "test1": "Check file types, compare values etc '[' [busybox]",
+      "test2": "Check file types, compare values etc '[[' [busybox]",
+      "tftp": "Transfer a file from/to tftp server [busybox]",
+      "tftpd": "Transfer a file on tftp client's request [busybox]",
+      "time": "Run PROG. When it finishes, its resource usage is displayed [busybox]",
+      "timeout": "Runs PROG. Sends SIG to it if it is not gone in SECS seconds [busybox]",
+      "top": "Provide a view of process activity in real time [busybox]",
+      "touch": "Update the last-modified date on the given FILE[s] [busybox]",
+      "tr": "Translate, squeeze, and/or delete characters from standard input, writing to standard output [busybox]",
+      "traceroute": "Trace the route to IPv4 HOST [busybox]",
+      "traceroute6": "Trace the route to IPv6 HOST [busybox]",
+      "tree": "List contents of directories in a tree-like format [busybox]",
+      "true": "Return an exit code of TRUE (0) [busybox]",
+      "truncate": "Shrink or extend the size of a file [busybox]",
+      "ts": "Add timestamp to input lines [busybox]",
+      "tsort": "Perform a topological sort [busybox]",
+      "tty": "Print file name of standard input's terminal [busybox]",
+      "ttysize": "Print dimension(s) of standard input's terminal, on error return 80x25 [busybox]",
+      "tunctl": "Create and manage TUN/TAP network devices [busybox]",
+      "ubiattach": "Attach an UBI device to a MTD device [busybox]",
+      "ubidetach": "Detach an UBI device from a MTD device [busybox]",
+      "ubimkvol": "Create an UBI volume [busybox]",
+      "ubirename": "Rename UBI volumes [busybox]",
+      "ubirmvol": "Remove an UBI volume [busybox]",
+      "ubirsvol": "Resize an UBI volume [busybox]",
+      "ubiupdatevol": "Update an UBI volume [busybox]",
+      "udhcpc": "Lightweight DHCP client to obtain IPv4 configuration [busybox]",
+      "udhcpc6": "Lightweight DHCP client to obtain IPv6 configuration [busybox]",
+      "udhcpd": "DHCP server [busybox]",
+      "udpsvd": "Create UDP socket, bind to IP:PORT and wait for incoming packets [busybox]",
+      "uevent": "Handle kernel uevents [busybox]",
+      "umount": "Unmount file systems [busybox]",
+      "uname": "Print system information [busybox]",
+      "uncompress": "Uncompress .Z file[s] [busybox]",
+      "unexpand": "Convert spaces to tabs, writing to standard output [busybox]",
+      "uniq": "Discard duplicate lines [busybox]",
+      "unix2dos": "Convert FILE in-place from Unix to DOS format [busybox]",
+      "unlink": "Remove a file [busybox]",
+      "unlzma": "Uncompress FILE [busybox]",
+      "unshare": "Run a program in a new namespace [busybox]",
+      "unxz": "Decompress files compressed with xz [busybox]",
+      "unzip": "Extract files from ZIP archives [busybox]",
+      "uptime": "Display the time since the last boot [busybox]",
+      "users": "List the usernames of currently logged-in users [busybox]",
+      "usleep": "Pause for N microseconds [busybox]",
+      "uudecode": "Uudecode a file Finds outfile name in uuencoded source unless -o is given [busybox]",
+      "uuencode": "Uuencode a file to stdout [busybox]",
+      "vconfig": "Create and remove virtual ethernet devices [busybox]",
+      "vi": "Edit FILE [busybox]",
+      "vlock": "Lock a virtual terminal [busybox]",
+      "volname": "Show CD volume name of the DEVICE (default /dev/cdrom) [busybox]",
+      "w": "Shows who is logged in and their activity [busybox]",
+      "wall": "Send a message to all logged-in users [busybox]",
+      "watch": "Run a command periodically and displays its output [busybox]",
+      "watchdog": "Monitor the system for hangs or failures, restarting it if necessary [busybox]",
+      "wc": "Print line, word, and byte counts for each FILE [busybox]",
+      "wget": "Retrieve files via HTTP or FTP [busybox]",
+      "which": "Locate a COMMAND [busybox]",
+      "who": "Show who is logged on [busybox]",
+      "whoami": "Print the user name associated with the current effective user id [busybox]",
+      "whois": "Look up IP or domain registration information [busybox]",
+      "xargs": "Run PROG on every item given by standard input [busybox]",
+      "xxd": "Create a hex dump of a file or convert a hex dump back to binary [busybox]",
+      "xz": "Compress files using the xz format [busybox]",
+      "xzcat": "Decompress and display xz-compressed files to standard output [busybox]",
+      "yes": "Repeatedly output a line with STRING, or 'y' [busybox]",
+      "zcat": "Uncompress and concatenate files [busybox]",
+      "zcip": "Manage a ZeroConf IPv4 link-local address [busybox]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "busybox"
+      ],
+      "archlinux": {
+        "aur": [
+          "busybox-git"
+        ],
+        "extra": [
+          "busybox"
+        ]
+      },
+      "debian": [
+        "busybox"
+      ],
+      "gnuguix": [
+        "busybox"
+      ],
+      "nixpkgs": [
+        "busybox"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/busybox/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.busybox.net/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "This is the multicall version i.e all applets are symlinked"
+    ],
+    "provides": [
+      "busybox==[",
+      "busybox==[[",
+      "busybox==acpid",
+      "busybox==addgroup",
+      "busybox==add-shell",
+      "busybox==adduser",
+      "busybox==adjtimex",
+      "busybox==arch",
+      "busybox==arp",
+      "busybox==arping",
+      "busybox==ascii",
+      "busybox==ash",
+      "busybox==awk",
+      "busybox==base32",
+      "busybox==base64",
+      "busybox==basename",
+      "busybox==bc",
+      "busybox==beep",
+      "busybox==blkdiscard",
+      "busybox==blkid",
+      "busybox==blockdev",
+      "busybox==bootchartd",
+      "busybox==brctl",
+      "busybox==bunzip2",
+      "busybox==bzcat",
+      "busybox==bzip2",
+      "busybox==cal",
+      "busybox==cat",
+      "busybox==chat",
+      "busybox==chattr",
+      "busybox==chgrp",
+      "busybox==chmod",
+      "busybox==chown",
+      "busybox==chpasswd",
+      "busybox==chpst",
+      "busybox==chroot",
+      "busybox==chrt",
+      "busybox==chvt",
+      "busybox==cksum",
+      "busybox==clear",
+      "busybox==cmp",
+      "busybox==comm",
+      "busybox==conspy",
+      "busybox==cp",
+      "busybox==cpio",
+      "busybox==crc32",
+      "busybox==crond",
+      "busybox==crontab",
+      "busybox==cryptpw",
+      "busybox==cttyhack",
+      "busybox==cut",
+      "busybox==date",
+      "busybox==dc",
+      "busybox==dd",
+      "busybox==deallocvt",
+      "busybox==delgroup",
+      "busybox==deluser",
+      "busybox==depmod",
+      "busybox==devmem",
+      "busybox==df",
+      "busybox==dhcprelay",
+      "busybox==diff",
+      "busybox==dirname",
+      "busybox==dmesg",
+      "busybox==dnsd",
+      "busybox==dnsdomainname",
+      "busybox==dos2unix",
+      "busybox==dpkg",
+      "busybox==dpkg-deb",
+      "busybox==du",
+      "busybox==dumpkmap",
+      "busybox==dumpleases",
+      "busybox==echo",
+      "busybox==ed",
+      "busybox==egrep",
+      "busybox==eject",
+      "busybox==env",
+      "busybox==envdir",
+      "busybox==envuidgid",
+      "busybox==ether-wake",
+      "busybox==expand",
+      "busybox==expr",
+      "busybox==factor",
+      "busybox==fakeidentd",
+      "busybox==fallocate",
+      "busybox==false",
+      "busybox==fatattr",
+      "busybox==fbset",
+      "busybox==fbsplash",
+      "busybox==fdflush",
+      "busybox==fdformat",
+      "busybox==fdisk",
+      "busybox==fgconsole",
+      "busybox==fgrep",
+      "busybox==find",
+      "busybox==findfs",
+      "busybox==flock",
+      "busybox==fold",
+      "busybox==free",
+      "busybox==freeramdisk",
+      "busybox==fsck",
+      "busybox==fsck-minix",
+      "busybox==fsck.minix",
+      "busybox==fsfreeze",
+      "busybox==fstrim",
+      "busybox==fsync",
+      "busybox==ftpd",
+      "busybox==ftpget",
+      "busybox==ftpput",
+      "busybox==fuser",
+      "busybox==getfattr",
+      "busybox==getopt",
+      "busybox==getty",
+      "busybox==grep",
+      "busybox==groups",
+      "busybox==gunzip",
+      "busybox==gzip",
+      "busybox==halt",
+      "busybox==hd",
+      "busybox==hdparm",
+      "busybox==head",
+      "busybox==hexdump",
+      "busybox==hexedit",
+      "busybox==hostid",
+      "busybox==hostname",
+      "busybox==httpd",
+      "busybox==hush",
+      "busybox==hwclock",
+      "busybox==i2cdetect",
+      "busybox==i2cdump",
+      "busybox==i2cget",
+      "busybox==i2cset",
+      "busybox==i2ctransfer",
+      "busybox==id",
+      "busybox==ifconfig",
+      "busybox==ifdown",
+      "busybox==ifenslave",
+      "busybox==ifplugd",
+      "busybox==ifup",
+      "busybox==inetd",
+      "busybox==init",
+      "busybox==insmod",
+      "busybox==install",
+      "busybox==ionice",
+      "busybox==iostat",
+      "busybox==ip",
+      "busybox==ipaddr",
+      "busybox==ipcalc",
+      "busybox==ipcrm",
+      "busybox==ipcs",
+      "busybox==iplink",
+      "busybox==ipneigh",
+      "busybox==iproute",
+      "busybox==iprule",
+      "busybox==iptunnel",
+      "busybox==kbd_mode",
+      "busybox==kill",
+      "busybox==killall",
+      "busybox==killall5",
+      "busybox==klogd",
+      "busybox==last",
+      "busybox==less",
+      "busybox==link",
+      "busybox==linux32",
+      "busybox==linux64",
+      "busybox==linurc",
+      "busybox==ln",
+      "busybox==loadfont",
+      "busybox==loadkmap",
+      "busybox==logger",
+      "busybox==login",
+      "busybox==logname",
+      "busybox==logread",
+      "busybox==losetup",
+      "busybox==lpd",
+      "busybox==lpq",
+      "busybox==lpr",
+      "busybox==ls",
+      "busybox==lsattr",
+      "busybox==lsmod",
+      "busybox==lsof",
+      "busybox==lspci",
+      "busybox==lsscsi",
+      "busybox==lsusb",
+      "busybox==lzcat",
+      "busybox==lzma",
+      "busybox==lzop",
+      "busybox==makedevs",
+      "busybox==makemime",
+      "busybox==man",
+      "busybox==md5sum",
+      "busybox==mdev",
+      "busybox==mesg",
+      "busybox==microcom",
+      "busybox==mim",
+      "busybox==mkdir",
+      "busybox==mkdosfs",
+      "busybox==mke2fs",
+      "busybox==mkfifo",
+      "busybox==mkfs.ext2",
+      "busybox==mkfs.minix",
+      "busybox==mkfs.vfat",
+      "busybox==mknod",
+      "busybox==mkpasswd",
+      "busybox==mkswap",
+      "busybox==mktemp",
+      "busybox==modinfo",
+      "busybox==modprobe",
+      "busybox==more",
+      "busybox==mount",
+      "busybox==mountpoint",
+      "busybox==mpstat",
+      "busybox==mt",
+      "busybox==mv",
+      "busybox==nameif",
+      "busybox==nanddump",
+      "busybox==nandwrite",
+      "busybox==nbd-client",
+      "busybox==nc",
+      "busybox==netstat",
+      "busybox==nice",
+      "busybox==nl",
+      "busybox==nmeter",
+      "busybox==nohup",
+      "busybox==nologin",
+      "busybox==nproc",
+      "busybox==nsenter",
+      "busybox==nslookup",
+      "busybox==ntpd",
+      "busybox==od",
+      "busybox==openvt",
+      "busybox==partprobe",
+      "busybox==passwd",
+      "busybox==paste",
+      "busybox==patch",
+      "busybox==pgrep",
+      "busybox==pidof",
+      "busybox==ping",
+      "busybox==ping6",
+      "busybox==pipe_progress",
+      "busybox==pivot_root",
+      "busybox==pkill",
+      "busybox==pmap",
+      "busybox==popmaildir",
+      "busybox==poweroff",
+      "busybox==powertop",
+      "busybox==printenv",
+      "busybox==printf",
+      "busybox==ps",
+      "busybox==pscan",
+      "busybox==pstree",
+      "busybox==pwd",
+      "busybox==pwdx",
+      "busybox==raidautorun",
+      "busybox==rdate",
+      "busybox==rdev",
+      "busybox==readahead",
+      "busybox==readlink",
+      "busybox==readprofile",
+      "busybox==realpath",
+      "busybox==reboot",
+      "busybox==reformime",
+      "busybox==remove-shell",
+      "busybox==renice",
+      "busybox==reset",
+      "busybox==resize",
+      "busybox==resume",
+      "busybox==rev",
+      "busybox==rm",
+      "busybox==rmdir",
+      "busybox==rmmod",
+      "busybox==route",
+      "busybox==rpm",
+      "busybox==rpm2cpio",
+      "busybox==rtcwake",
+      "busybox==run-init",
+      "busybox==run-parts",
+      "busybox==runsv",
+      "busybox==runsvdir",
+      "busybox==rx",
+      "busybox==script",
+      "busybox==scriptreplay",
+      "busybox==sed",
+      "busybox==seedrng",
+      "busybox==sendmail",
+      "busybox==seq",
+      "busybox==setarch",
+      "busybox==setconsole",
+      "busybox==setfattr",
+      "busybox==setfont",
+      "busybox==setkeycodes",
+      "busybox==setlogcons",
+      "busybox==setpriv",
+      "busybox==setserial",
+      "busybox==setsid",
+      "busybox==setuidgid",
+      "busybox==sh",
+      "busybox==sha1sum",
+      "busybox==sha256sum",
+      "busybox==sha3sum",
+      "busybox==sha512sum",
+      "busybox==showkey",
+      "busybox==shred",
+      "busybox==shuf",
+      "busybox==slattach",
+      "busybox==sleep",
+      "busybox==smemcap",
+      "busybox==softlimit",
+      "busybox==sort",
+      "busybox==split",
+      "busybox==ssl_client",
+      "busybox==start-stop-daemon",
+      "busybox==stat",
+      "busybox==strings",
+      "busybox==stty",
+      "busybox==su",
+      "busybox==sulogin",
+      "busybox==sum",
+      "busybox==sv",
+      "busybox==svc",
+      "busybox==svlogd",
+      "busybox==svok",
+      "busybox==swapoff",
+      "busybox==swapon",
+      "busybox==switch_root",
+      "busybox==sync",
+      "busybox==sysctl",
+      "busybox==syslogd",
+      "busybox==tac",
+      "busybox==tail",
+      "busybox==tar",
+      "busybox==taskset",
+      "busybox==tcpsvd",
+      "busybox==tee",
+      "busybox==telnet",
+      "busybox==telnetd",
+      "busybox==test",
+      "busybox==test1",
+      "busybox==test2",
+      "busybox==tftp",
+      "busybox==tftpd",
+      "busybox==time",
+      "busybox==timeout",
+      "busybox==top",
+      "busybox==touch",
+      "busybox==tr",
+      "busybox==traceroute",
+      "busybox==traceroute6",
+      "busybox==tree",
+      "busybox==true",
+      "busybox==truncate",
+      "busybox==ts",
+      "busybox==tsort",
+      "busybox==tty",
+      "busybox==ttysize",
+      "busybox==tunctl",
+      "busybox==ubiattach",
+      "busybox==ubidetach",
+      "busybox==ubimkvol",
+      "busybox==ubirename",
+      "busybox==ubirmvol",
+      "busybox==ubirsvol",
+      "busybox==ubiupdatevol",
+      "busybox==udhcpc",
+      "busybox==udhcpc6",
+      "busybox==udhcpd",
+      "busybox==udpsvd",
+      "busybox==uevent",
+      "busybox==umount",
+      "busybox==uname",
+      "busybox==unexpand",
+      "busybox==uniq",
+      "busybox==unix2dos",
+      "busybox==unlink",
+      "busybox==unlzma",
+      "busybox==unshare",
+      "busybox==unxz",
+      "busybox==unzip",
+      "busybox==uptime",
+      "busybox==usleep",
+      "busybox==uudecode",
+      "busybox==uuencode",
+      "busybox==vconfig",
+      "busybox==vi",
+      "busybox==vlock",
+      "busybox==volname",
+      "busybox==w",
+      "busybox==wall",
+      "busybox==watch",
+      "busybox==watchdog",
+      "busybox==wc",
+      "busybox==wget",
+      "busybox==which",
+      "busybox==who",
+      "busybox==whoami",
+      "busybox==whois",
+      "busybox==xargs",
+      "busybox==xxd",
+      "busybox==xz",
+      "busybox==xzcat",
+      "busybox==yes",
+      "busybox==zcat",
+      "busybox==zcip"
+    ],
+    "repology": [
+      "busybox"
+    ],
+    "src_url": [
+      "https://git.busybox.net/busybox"
+    ],
+    "tag": [
+      "bootstrap",
+      "busybox",
+      "coreutils"
+    ],
+    "version": "1.36.1"
   },
   {
     "_disabled": "false",
@@ -9811,906 +10824,8 @@
       "bootstrap",
       "busybox",
       "coreutils"
-    ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "busybox",
-    "pkg_family": "busybox",
-    "pkg_id": "nixpkgs.busybox",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-busybox/busybox/busybox",
-    "bincache": "ghcr.io/pkgforge/bincache/busybox/nixpkgs/busybox",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/busybox/static.nixpkgs.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
     ],
-    "description": {
-      "_default": "Tiny versions of many common UNIX utilities into a single small executable (Multicall)",
-      "[": "Provides test command in the '[ EXPR ]' form [busybox]",
-      "[[": "Provides test command in the '[[ EXPR ]]' form [busybox]",
-      "acpid": "Listen to ACPI events and spawn specific helpers on event arrival [busybox]",
-      "addgroup": "Add a group or add a user to a group [busybox]",
-      "add-shell": "Add SHELLs to /etc/shells [busybox]",
-      "add_shell": "Add SHELLs to /etc/shells [busybox]",
-      "adduser": "Add a user to the System [busybox]",
-      "adjtimex": "Read and optionally set system timebase parameters [busybox]",
-      "ar": "Extract or list FILES from an ar archive [busybox]",
-      "arch": "Print system architecture [busybox]",
-      "arp": "Manipulate ARP cache [busybox]",
-      "arping": "Send ARP requests/replies [busybox]",
-      "ascii": "Prints a formatted ASCII table with decimal, hex, and symbols [busybox]",
-      "ash": "Unix shell interpreter [busybox]",
-      "awk": "Pattern scanning and text processing language for extracting and transforming data [busybox]",
-      "base32": "Encode or decode data using Base32 encoding [busybox]",
-      "base64": "Encode or decode data using Base64 encoding [busybox]",
-      "basename": "Strip directory path and .SUFFIX from FILE [busybox]",
-      "bc": "An arbitrary precision calculator language [busybox]",
-      "beep": "Generate a tone through the PC speaker [busybox]",
-      "blkdiscard": "Discard blocks on a block device [busybox]",
-      "blkid": "Print UUIDs of all filesystems [busybox]",
-      "blockdev": "Perform block device operations [busybox]",
-      "bootchartd": "Create performance charts of the boot process [busybox]",
-      "brctl": "Manage ethernet bridges [busybox]",
-      "bunzip2": "Uncompress FILE (or standard input if FILE is '-' or omitted) [busybox]",
-      "busybox": "A multi-purpose executable providing many standard UNIX utilities [busybox]",
-      "bzcat": "Uncompress to stdout [busybox]",
-      "bzip2": "Compress FILE(s) with bzip2 algorithm [busybox]",
-      "cal": "Display a calendar [busybox]",
-      "cat": "Concatenate FILE(s) and print them to stdout [busybox]",
-      "catv": "Display nonprinting characters as ^x or M-x [busybox]",
-      "chat": "Interact with a modem connected to stdin/stdou [busybox]",
-      "chattr": "Change file attributes on an ext2 fs [busybox]",
-      "chgrp": "Change the group membership of each FILE to GROUP [busybox]",
-      "chmod": "Change the permissions of a file or directory [busybox]",
-      "chown": "Change the owner and/or group of each FILE to OWNER and/or GROUP [busybox]",
-      "chpasswd": "Read user:password from stdin and update /etc/passwd [busybox]",
-      "chpst": "Change the process state and run PROG [busybox]",
-      "chroot": "Run PROG with root directory set to NEWROOT [busybox]",
-      "chrt": "Manipulate real-time attributes of a process [busybox]",
-      "chvt": "Change the foreground virtual terminal to /dev/ttyN [busybox]",
-      "cksum": "Calculate the CRC32 checksums of FILES [busybox]",
-      "clear": "Clear screen [busybox]",
-      "cmp": "Compares FILE1 vs stdin if FILE2 is not specified [busybox]",
-      "comm": "Compare FILE1 to FILE2, or to stdin if - is specified [busybox]",
-      "conspy": "View and interact with the system console from a remote terminal [busybox]",
-      "cp": "Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY [busybox]",
-      "cpio": "Extract or list files from a cpio archive, or create a cpio archive [busybox]",
-      "crc32": "Calculate CRC32 checksums of FILES [busybox]",
-      "crond": "Daemon to execute scheduled commands [busybox]",
-      "crontab": "Command to manage cron jobs for the current user [busybox]",
-      "cryptpw": "Crypt the PASSWORD using crypt(3) [busybox]",
-      "cttyhack": "Option to allow a program to access the controlling terminal [busybox]",
-      "cut": "Print selected fields from each input FILE to standard output [busybox]",
-      "date": "Display time (using +FMT), or set time [busybox]",
-      "dc": "Tiny RPN calculator [busybox]",
-      "dd": "Copy a file with converting and formatting [busybox]",
-      "deallocvt": "Deallocate unused virtual terminal /dev/ttyN [busybox]",
-      "delgroup": "Delete group GROUP from the system or user USER from group GROUP [busybox]",
-      "deluser": "Delete USER from the system [busybox]",
-      "depmod": "Generate a list of module dependencies for the Linux kernel [busybox]",
-      "devmem": "Read/write from physical address [busybox]",
-      "df": "Print filesystem usage statistics [busybox]",
-      "dhcprelay": "Relay DHCP requests between clients and server [busybox]",
-      "diff": "Compare files line by line and output the differences between them [busybox]",
-      "dirname": "Strip non-directory suffix from FILENAME [busybox]",
-      "dmesg": "Print or control the kernel ring buffer [busybox]",
-      "dnsd": "Small static DNS server daemon [busybox]",
-      "dnsdomainname": "Displays or sets the system's domain name for DNS lookups [busybox]",
-      "dos2unix": "Convert FILE in-place from DOS to Unix format [busybox]",
-      "dpkg": "Install, remove and manage Debian packages [busybox]",
-      "dpkg-deb": "Create, Manipulate, and Extract Debian package files (.deb) [busybox]",
-      "du": "Summarize disk space used for each FILE and/or directory [busybox]",
-      "dumpkmap": "Print a binary keyboard translation table to standard output [busybox]",
-      "dumpleases": "Display DHCP leases granted by udhcpd [busybox]",
-      "echo": "Print the specified ARGs to stdout [busybox]",
-      "ed": "A line-oriented text editor [busybox]",
-      "egrep": "Searches text using extended regular expressions (EREs). [busybox]",
-      "eject": "Eject specified DEVICE (or default /dev/cdrom) [busybox]",
-      "env": "Print the current environment or run PROG after setting up the specified environment [busybox]",
-      "envdir": "Set various environment variables as specified by files in the directory dir and run PROG [busybox]",
-      "envuidgid": "et $UID to account's uid and $GID to account's gid and run PROG [busybox]",
-      "ether-wake": "Send a magic packet to wake up a computer [busybox]",
-      "expand": "Convert tabs to spaces, writing to standard output [busybox]",
-      "expr": "Print the value of EXPRESSION to standard output [busybox]",
-      "factor": "Factor a number into its prime factors [busybox]",
-      "fakeidentd": "Provide fake ident (auth) service [busybox]",
-      "fallocate": "Preallocate space to a file [busybox]",
-      "false": "Return an exit code of FALSE (1) [busybox]",
-      "fatattr": "Change attributes on FAT filesystems [busybox]",
-      "fbset": "Show and modify frame buffer settings [busybox]",
-      "fbsplash": "Display a splash screen on the framebuffer [busybox]",
-      "fdflush": "Force floppy disk drive to detect disk change [busybox]",
-      "fdformat": "Format floppy disk [busybox]",
-      "fdisk": "Change partition table [busybox]",
-      "fgconsole": "Print the number of the active virtual console [busybox]",
-      "fgrep": "Searches for fixed strings (literal text), ignoring regular expressions [busybox]",
-      "find": "Search for files [busybox]",
-      "findfs": "Find a filesystem by its label or UUID [busybox]",
-      "flash_lock": "Lock part or all of an MTD device [busybox]",
-      "flash_unlock": "Unlock an MTD device [busybox]",
-      "flock": "Utilize serialization using file locks [busybox]",
-      "fold": "Wrap input lines in each FILE (standard input by default), writing to standard output [busybox]",
-      "free": "Display the amount of free and used system memory [busybox]",
-      "freeramdisk": "Free all memory used by the specified ramdisk [busybox]",
-      "fsck": "Check and repair filesystems [busybox]",
-      "fsck.minix": "Check MINIX filesystem [busybox]",
-      "fsck-minix": "Check MINIX filesystem [busybox]",
-      "fsfreeze": "Suspend access to a filesystem [busybox]",
-      "fstrim": "Discard/trim unused blocks on a filesystem [busybox]",
-      "fsync": "Synchronize a file's in-core state with storage device [busybox]",
-      "ftpd": "Anonymous FTP server [busybox]",
-      "ftpget": "Retrieve a remote file via FTP [busybox]",
-      "ftpput": "Store a local file on a remote machine via FTP [busybox]",
-      "fuser": "Find processes which use FILEs or PORTs [busybox]",
-      "getfattr": "Get extended attributes of a file or directory [busybox]",
-      "getopt": "Parse command options [busybox]",
-      "getty": "Open a tty, prompt for a login name, then invoke /bin/login [busybox]",
-      "grep": "Search for PATTERN in each FILE or standard input [busybox]",
-      "groups": "Print the groups a user is in [busybox]",
-      "gunzip": "Uncompress FILEs (or standard input) [busybox]",
-      "gzip": "Compress FILEs (or standard input) [busybox]",
-      "halt": "Shuts down or reboots the system immediately [busybox]",
-      "hd": "An alias for hexdump -C [busybox]",
-      "hdparm": "Utility to set and view hardware parameters of hard disk drives [busybox]",
-      "head": "Print first N lines of each FILE to standard output [busybox]",
-      "hexdump": "Display file(s) or standard input in a user specified format [busybox]",
-      "hexedit": "View and edit files in hexadecimal [busybox]",
-      "hostid": "Print out a unique 32-bit identifier for the machine [busybox]",
-      "hostname": "Get or set hostname or DNS domain name [busybox]",
-      "httpd": "Listen for incoming HTTP requests [busybox]",
-      "hush": "A minimal, lightweight shell for Unix-like systems [busybox]",
-      "hwclock": "Query and set hardware clock (RTC) [busybox]",
-      "i2cdetect": "Detect I2C devices on an I2C bus [busybox]",
-      "i2cdump": "Dump I2C registers [busybox]",
-      "i2cget": "Read from I2C device registers [busybox]",
-      "i2cset": "Write to I2C device registers [busybox]",
-      "i2ctransfer": "Perform I2C block transfers [busybox]",
-      "id": "Print information about USER or the current user [busybox]",
-      "ifconfig": "Configure a network interface [busybox]",
-      "ifdown": "Bring a network interface down [busybox]",
-      "ifenslave": "Configure network interfaces for parallel routing [busybox]",
-      "ifplugd": "Network interface plug detection daemon [busybox]",
-      "ifup": "Bring a network interface up [busybox]",
-      "inetd": "Listen for network connections and launch programs [busybox]",
-      "init": "Init is the parent of all processes [busybox]",
-      "insmod": "Load the specified kernel modules into the kernel [busybox]",
-      "install": "Copy files and set attributes [busybox]",
-      "ionice": "Change I/O scheduling class and priority [busybox]",
-      "iostat": "Report CPU and I/O statistics [busybox]",
-      "ip": "Manage network interfaces, routing, and network devices [busybox]",
-      "ipaddr": "Display or Manipulate IP address assignments on network interfaces [busybox]",
-      "ipcalc": "Calculate IP network settings from a IP address [busybox]",
-      "ipcrm": "Upper-case options MQS remove an object by shmkey value [busybox]",
-      "ipcs": "Show information about IPC mechanisms [busybox]",
-      "iplink": "Manage network devices (e.g., enable/disable interfaces) [busybox]",
-      "ipneigh": "Manage neighbor cache (ARP entries) in the IP network [busybox]",
-      "iproute": "Manage routing tables and IP routes in the Linux kernel [busybox]",
-      "iprule": "Manage routing policy rules in Linux [busybox]",
-      "iptunnel": "Manages network tunnels [busybox]",
-      "kbd_mode": "Report or set the keyboard mode [busybox]",
-      "kbd-mode": "Report or set the keyboard mode [busybox]",
-      "kill": "Send a signal (default: TERM) to given PIDs [busybox]",
-      "killall": "Send a signal (default: TERM) to given processes [busybox]",
-      "killall5": "Send a signal (default: TERM) to all processes outside current session [busybox]",
-      "klogd": "Kernel logger [busybox]",
-      "last": "Show listing of the last users that logged into the system [busybox]",
-      "less": "View a file or list of files [busybox]",
-      "length": "Print STRING's length [busybox]",
-      "link": "Manage network interfaces [busybox]",
-      "linux32": "Change reported architecture to 32bit [busybox]",
-      "linux64": "Change reported architecture to 64bit [busybox]",
-      "ln": "Create a link LINK or DIRECTORY/TARGET to the specified TARGET(s) [busybox]",
-      "loadfont": "Load a console font from standard input [busybox]",
-      "loadkmap": "Load a binary keyboard translation table from standard input [busybox]",
-      "logger": "Write MESSAGE to the system log [busybox]",
-      "login": "Begin a new session on the system [busybox]",
-      "logname": "Print the name of the current user [busybox]",
-      "logread": "Show messages in syslogd's circular buffer [busybox]",
-      "losetup": "Control loop devices [busybox]",
-      "lpd": "Line printer daemon, handles print jobs [busybox]",
-      "lpq": "List print jobs in the queue [busybox]",
-      "lpr": "Submit a print job to the printer [busybox]",
-      "ls": "List directory contents [busybox]",
-      "lsattr": "List file attributes on an ext2 fs [busybox]",
-      "lsmod": "List the currently loaded kernel modules [busybox]",
-      "lsof": "Lists open files and the processes using them [busybox]",
-      "lspci": "Lists all PCI devices on the system [busybox]",
-      "lsscsi": "Displays SCSI devices on the system [busybox]",
-      "lsusb": "Lists USB devices connected to the system [busybox]",
-      "lzcat": "Uncompress to stdout [busybox]",
-      "lzma": "Compression tool using the LZMA algorithm [busybox]",
-      "lzop": "Fast compression tool based on LZO algorithm [busybox]",
-      "makedevs": "Utility to create device files in /dev [busybox]",
-      "makemime": "Create multipart MIME-encoded message from FILEs [busybox]",
-      "man": "Format and display manual page [busybox]",
-      "md5sum": "Print or check MD5 checksums [busybox]",
-      "mdev": "A minimal device manager for Linux [busybox]",
-      "mesg": "Control write access to your terminal [busybox]",
-      "microcom": "Copy bytes for stdin to TTY and from TTY to stdout [busybox]",
-      "mim": "Perform MIME encoding/decoding [busybox]",
-      "mkdir": "Create DIRECTORY [busybox]",
-      "mkdosfs": "Make a FAT32 filesystem [busybox]",
-      "mke2fs": "Utility to create ext2/ext3/ext4 filesystems [busybox]",
-      "mkfifo": "Create named pipe (identical to 'mknod name p') [busybox]",
-      "mkfs.ext2": "Make an EXT2 filesystem [busybox]",
-      "mkfs-ext2": "Make an EXT2 filesystem [busybox]",
-      "mkfs.minix": "Make a MINIX filesystem [busybox]",
-      "mkfs-minix": "Make a MINIX filesystem [busybox]",
-      "mkfs.vfat": "Make a FAT32 filesystem [busybox]",
-      "mkfs-vfat": "Make a FAT32 filesystem [busybox]",
-      "mknod": "Create a special file (block, character, or pipe) [busybox]",
-      "mkpasswd": "Crypt the PASSWORD using crypt(3) [busybox]",
-      "mkswap": "Prepare block device to be used as swap partition [busybox]",
-      "mktemp": "Create a temporary file with name based on TEMPLATE and print its name [busybox]",
-      "modinfo": "Show information about a Linux kernel module [busybox]",
-      "modprobe": "Add or remove kernel modules [busybox]",
-      "more": "View FILE or standard input one screenful at a time [busybox]",
-      "mount": "Mount a filesystem [busybox]",
-      "mountpoint": "Check if the directory is a mountpoint [busybox]",
-      "mpstat": "Report per-processor statistics [busybox]",
-      "mt": "Control magnetic tape drive operation [busybox]",
-      "mv": "Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY [busybox]",
-      "nameif": "Rename network interface while it in the down state [busybox]",
-      "nanddump": "Reads NAND flash memory and dumps its contents [busybox]",
-      "nandwrite": "Writes data to a NAND flash memory device [busybox]",
-      "nbdclient": "Connects to a Network Block Device server [busybox]",
-      "nbd-client": "Connects to a Network Block Device server [busybox]",
-      "nc": "Netcat, a tool for network connections [busybox]",
-      "netstat": "Display networking information [busybox]",
-      "nice": "Run PROG with modified scheduling priority [busybox]",
-      "nl": "Number lines of input [busybox]",
-      "nmeter": "Monitor system in real time [busybox]",
-      "nohup": "Run PROG immune to hangups, with output to a non-tty [busybox]",
-      "nologin": "Refuse login with an error message [busybox]",
-      "nproc": "Print the number of processing units available [busybox]",
-      "nsenter": "Run command in a different namespace [busybox]",
-      "nslookup": "Query the nameserver for the IP address of the given HOST [busybox]",
-      "ntpd": "Network Time Protocol daemon [busybox]",
-      "od": "Write an unambiguous representation, octal bytes by default, of FILE to standard output [busybox]",
-      "openvt": "Start PROG on a new virtual terminal [busybox]",
-      "partprobe": "Inform the OS of partition table changes [busybox]",
-      "passwd": "Change USER's password [busybox]",
-      "paste": "Concatenate and paste lines from files [busybox]",
-      "patch": "Apply patches to files [busybox]",
-      "pgrep": "Display process(es) selected by regex PATTERN [busybox]",
-      "pidof": "List PIDs of all processes with names that match NAMEs [busybox]",
-      "ping": "Send ICMP ECHO_REQUEST packets to IPv4 network hosts [busybox]",
-      "ping6": "Send ICMP ECHO_REQUEST packets to IPv6 network hosts [busybox]",
-      "pipe_progress": "Show progress of piped data transfer [busybox]",
-      "pipe-progress": "Show progress of piped data transfer [busybox]",
-      "pivot_root": "Move the current root file system to PUT_OLD and make NEW_ROOT the new root file system [busybox]",
-      "pivot-root": "Move the current root file system to PUT_OLD and make NEW_ROOT the new root file system [busybox]",
-      "pkill": "Send a signal to process(es) selected by regex PATTERN [busybox]",
-      "pmap": "Report memory map of a process [busybox]",
-      "popmaildir": "Retrieve mail from a Maildir [busybox]",
-      "poweroff": "Shut down the system [busybox]",
-      "powertop": "Monitor and optimize power usage [busybox]",
-      "printenv": "Print all or part of environment [busybox]",
-      "printf": "Format and print ARGUMENT(s) according to FORMAT [busybox]",
-      "ps": "Report process status [busybox]",
-      "pscan": "Scan a host, print all open ports [busybox]",
-      "pstree": "Display a tree of processes [busybox]",
-      "pwd": "Print the full filename of the current working directory [busybox]",
-      "pwdx": "Show the current working directory of a process [busybox]",
-      "raidautorun": "Tell the kernel to automatically search and start RAID arrays [busybox]",
-      "rdate": "Get and possibly set the system date and time from a remote HOST [busybox]",
-      "rdev": "Print the device node associated with the filesystem mounted at '/' [busybox]",
-      "readahead": "Pre-read files into page cache [busybox]",
-      "readlink": "Display the value of a symlink [busybox]",
-      "readprofile": "Read kernel profiling information [busybox]",
-      "realpath": "Return the absolute pathnames of given argument [busybox]",
-      "reboot": "Reboots the system [busybox]",
-      "reformime": "Parse MIME-encoded message [busybox]",
-      "remove-shell": "Remove SHELLs from /etc/shells [busybox]",
-      "remove_shell": "Remove SHELLs from /etc/shells [busybox]",
-      "renice": "Change priority of running processes [busybox]",
-      "reset": "Reset the screen [busybox]",
-      "resize": "Resize the screen [busybox]",
-      "resume": "Resume a suspended job [busybox]",
-      "rev": "Reverse lines of input [busybox]",
-      "rm": "Remove (unlink) the FILE(s) [busybox]",
-      "rmdir": "Remove the DIRECTORY [busybox]",
-      "rmmod": "Removes a module from the Linux kernel [busybox]",
-      "route": "Edit kernel routing tables [busybox]",
-      "rpm": "Manipulate RPM packages [busybox]",
-      "rpm2cpio": "Output a cpio archive of the rpm file [busybox]",
-      "rtcwake": "Enter a system sleep state until specified wakeup time [busybox]",
-      "run-init": "Executes the specified program as the initial process in a new system environment [busybox]",
-      "run_init": "Executes the specified program as the initial process in a new system environment [busybox]",
-      "run-parts": "Run a bunch of scripts in a directory [busybox]",
-      "runlevel": "Find the current and previous system runlevel [busybox]",
-      "runsv": "Start and monitor a service and optionally an appendant log service [busybox]",
-      "runsvdir": "Start a runsv process for each subdirectory [busybox]",
-      "rx": "Receive a file using the xmodem protocol [busybox]",
-      "script": "Record a terminal session [busybox]",
-      "scriptreplay": "Play back typescripts, using timing information [busybox]",
-      "sed": "Stream editor for filtering and transforming text [busybox]",
-      "seedrng": "Seed the random number generator [busybox]",
-      "sendmail": "Read email from stdin and send it [busybox]",
-      "seq": "Print numbers from FIRST to LAST, in steps of IN [busybox]",
-      "setarch": "Change reported architecture for program [busybox]",
-      "setconsole": "Redirect system console output to DEVICE [busybox]",
-      "setfattr": "Set file attributes [busybox]",
-      "setfont": "Load a console font [busybox]",
-      "setkeycodes": "Set entries into the kernel's scancode-to-keycode map [busybox]",
-      "setlogcons": "Redirect the kernel output to console N [busybox]",
-      "setpriv": "Run a program with different privilege settings [busybox]",
-      "setserial": "Set or view serial port configuration [busybox]",
-      "setsid": "Run PROG in a new session [busybox]",
-      "setuidgid": "Set uid and gid to account's uid and gid [busybox]",
-      "sh": "The ASH Shell [busybox]",
-      "sh-is-ash": "The ASH Shell [busybox]",
-      "sha1sum": "Print or check SHA1 checksums [busybox]",
-      "sha256sum": "Print or check SHA256 checksums [busybox]",
-      "sha3sum": "Compute SHA-3 checksums for files [busybox]",
-      "sha512sum": "Print or check SHA512 checksums [busybox]",
-      "showkey": "Show keys pressed [busybox]",
-      "shred": "Overwrite a file to hide its contents [busybox]",
-      "shuf": "Generate random permutations [busybox]",
-      "slattach": "Attach network interface(s) to serial line(s) [busybox]",
-      "sleep": "Pause for a time [busybox]",
-      "smemcap": "Capture system memory usage details [busybox]",
-      "softlimit": "Set soft resource limits, then run PROG [busybox]",
-      "sort": "Sort lines of text [busybox]",
-      "split": "Split a file into pieces [busybox]",
-      "ssl_client": "SSL/TLS client [busybox]",
-      "ssl-client": "SSL/TLS client [busybox]",
-      "start-stop-daemon": "Search for matching processes, and stop all matching processes [busybox]",
-      "stat": "Display file (default) or filesystem status [busybox]",
-      "strings": "Display printable strings in a binary file [busybox]",
-      "stty": "Without arguments, prints baud rate, line discipline, and deviations from stty sane [busybox]",
-      "su": "Change user id or become root [busybox]",
-      "sulogin": "Single user login [busybox]",
-      "sum": "Checksum and count the blocks in a file [busybox]",
-      "sv": "Control services monitored by runsv supervisor [busybox]",
-      "svc": "Controls services: start, stop, or send signals to daemons [busybox]",
-      "svlogd": "Continuously read log data from standard input [busybox]",
-      "svok": "Checks if a service is running under 'svscan' supervision [busybox]",
-      "swapoff": "Stop swapping on DEVICE [busybox]",
-      "swapon": "Start swapping on DEVICE [busybox]",
-      "switch_root": "Free initramfs and switch to another root fs [busybox]",
-      "switch-root": "Free initramfs and switch to another root fs [busybox]",
-      "sync": "Write all buffered blocks to disk [busybox]",
-      "sysctl": "Configure kernel parameters at runtime [busybox]",
-      "syslogd": "System logging utility [busybox]",
-      "tac": "Concatenate FILE(s) and print them in reverse [busybox]",
-      "tail": "Print last N lines of each FILE to standard output [busybox]",
-      "tar": "Create, extract, or list files from a tar file [busybox]",
-      "taskset": "Set or get CPU affinity [busybox]",
-      "tcpsvd": "Create TCP socket, bind to IP:PORT and listen for incoming connection [busybox]",
-      "tee": "Copy standard input to each FILE, and also to standard output [busybox]",
-      "telnet": "Connect to telnet server [busybox]",
-      "telnetd": "Handle incoming telnet connections [busybox]",
-      "test": "Check file types, compare values etc [busybox]",
-      "test1": "Check file types, compare values etc '[' [busybox]",
-      "test2": "Check file types, compare values etc '[[' [busybox]",
-      "tftp": "Transfer a file from/to tftp server [busybox]",
-      "tftpd": "Transfer a file on tftp client's request [busybox]",
-      "time": "Run PROG. When it finishes, its resource usage is displayed [busybox]",
-      "timeout": "Runs PROG. Sends SIG to it if it is not gone in SECS seconds [busybox]",
-      "top": "Provide a view of process activity in real time [busybox]",
-      "touch": "Update the last-modified date on the given FILE[s] [busybox]",
-      "tr": "Translate, squeeze, and/or delete characters from standard input, writing to standard output [busybox]",
-      "traceroute": "Trace the route to IPv4 HOST [busybox]",
-      "traceroute6": "Trace the route to IPv6 HOST [busybox]",
-      "tree": "List contents of directories in a tree-like format [busybox]",
-      "true": "Return an exit code of TRUE (0) [busybox]",
-      "truncate": "Shrink or extend the size of a file [busybox]",
-      "ts": "Add timestamp to input lines [busybox]",
-      "tsort": "Perform a topological sort [busybox]",
-      "tty": "Print file name of standard input's terminal [busybox]",
-      "ttysize": "Print dimension(s) of standard input's terminal, on error return 80x25 [busybox]",
-      "tunctl": "Create and manage TUN/TAP network devices [busybox]",
-      "ubiattach": "Attach an UBI device to a MTD device [busybox]",
-      "ubidetach": "Detach an UBI device from a MTD device [busybox]",
-      "ubimkvol": "Create an UBI volume [busybox]",
-      "ubirename": "Rename UBI volumes [busybox]",
-      "ubirmvol": "Remove an UBI volume [busybox]",
-      "ubirsvol": "Resize an UBI volume [busybox]",
-      "ubiupdatevol": "Update an UBI volume [busybox]",
-      "udhcpc": "Lightweight DHCP client to obtain IPv4 configuration [busybox]",
-      "udhcpc6": "Lightweight DHCP client to obtain IPv6 configuration [busybox]",
-      "udhcpd": "DHCP server [busybox]",
-      "udpsvd": "Create UDP socket, bind to IP:PORT and wait for incoming packets [busybox]",
-      "uevent": "Handle kernel uevents [busybox]",
-      "umount": "Unmount file systems [busybox]",
-      "uname": "Print system information [busybox]",
-      "uncompress": "Uncompress .Z file[s] [busybox]",
-      "unexpand": "Convert spaces to tabs, writing to standard output [busybox]",
-      "uniq": "Discard duplicate lines [busybox]",
-      "unix2dos": "Convert FILE in-place from Unix to DOS format [busybox]",
-      "unlink": "Remove a file [busybox]",
-      "unlzma": "Uncompress FILE [busybox]",
-      "unshare": "Run a program in a new namespace [busybox]",
-      "unxz": "Decompress files compressed with xz [busybox]",
-      "unzip": "Extract files from ZIP archives [busybox]",
-      "uptime": "Display the time since the last boot [busybox]",
-      "users": "List the usernames of currently logged-in users [busybox]",
-      "usleep": "Pause for N microseconds [busybox]",
-      "uudecode": "Uudecode a file Finds outfile name in uuencoded source unless -o is given [busybox]",
-      "uuencode": "Uuencode a file to stdout [busybox]",
-      "vconfig": "Create and remove virtual ethernet devices [busybox]",
-      "vi": "Edit FILE [busybox]",
-      "vlock": "Lock a virtual terminal [busybox]",
-      "volname": "Show CD volume name of the DEVICE (default /dev/cdrom) [busybox]",
-      "w": "Shows who is logged in and their activity [busybox]",
-      "wall": "Send a message to all logged-in users [busybox]",
-      "watch": "Run a command periodically and displays its output [busybox]",
-      "watchdog": "Monitor the system for hangs or failures, restarting it if necessary [busybox]",
-      "wc": "Print line, word, and byte counts for each FILE [busybox]",
-      "wget": "Retrieve files via HTTP or FTP [busybox]",
-      "which": "Locate a COMMAND [busybox]",
-      "who": "Show who is logged on [busybox]",
-      "whoami": "Print the user name associated with the current effective user id [busybox]",
-      "whois": "Look up IP or domain registration information [busybox]",
-      "xargs": "Run PROG on every item given by standard input [busybox]",
-      "xxd": "Create a hex dump of a file or convert a hex dump back to binary [busybox]",
-      "xz": "Compress files using the xz format [busybox]",
-      "xzcat": "Decompress and display xz-compressed files to standard output [busybox]",
-      "yes": "Repeatedly output a line with STRING, or 'y' [busybox]",
-      "zcat": "Uncompress and concatenate files [busybox]",
-      "zcip": "Manage a ZeroConf IPv4 link-local address [busybox]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "busybox"
-      ],
-      "archlinux": {
-        "aur": [
-          "busybox-git"
-        ],
-        "extra": [
-          "busybox"
-        ]
-      },
-      "debian": [
-        "busybox"
-      ],
-      "gnuguix": [
-        "busybox"
-      ],
-      "nixpkgs": [
-        "busybox"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/busybox/static.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://www.busybox.net/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs",
-      "This is the multicall version i.e all applets are symlinked"
-    ],
-    "provides": [
-      "busybox==[",
-      "busybox==[[",
-      "busybox==acpid",
-      "busybox==addgroup",
-      "busybox==add-shell",
-      "busybox==adduser",
-      "busybox==adjtimex",
-      "busybox==arch",
-      "busybox==arp",
-      "busybox==arping",
-      "busybox==ascii",
-      "busybox==ash",
-      "busybox==awk",
-      "busybox==base32",
-      "busybox==base64",
-      "busybox==basename",
-      "busybox==bc",
-      "busybox==beep",
-      "busybox==blkdiscard",
-      "busybox==blkid",
-      "busybox==blockdev",
-      "busybox==bootchartd",
-      "busybox==brctl",
-      "busybox==bunzip2",
-      "busybox==bzcat",
-      "busybox==bzip2",
-      "busybox==cal",
-      "busybox==cat",
-      "busybox==chat",
-      "busybox==chattr",
-      "busybox==chgrp",
-      "busybox==chmod",
-      "busybox==chown",
-      "busybox==chpasswd",
-      "busybox==chpst",
-      "busybox==chroot",
-      "busybox==chrt",
-      "busybox==chvt",
-      "busybox==cksum",
-      "busybox==clear",
-      "busybox==cmp",
-      "busybox==comm",
-      "busybox==conspy",
-      "busybox==cp",
-      "busybox==cpio",
-      "busybox==crc32",
-      "busybox==crond",
-      "busybox==crontab",
-      "busybox==cryptpw",
-      "busybox==cttyhack",
-      "busybox==cut",
-      "busybox==date",
-      "busybox==dc",
-      "busybox==dd",
-      "busybox==deallocvt",
-      "busybox==delgroup",
-      "busybox==deluser",
-      "busybox==depmod",
-      "busybox==devmem",
-      "busybox==df",
-      "busybox==dhcprelay",
-      "busybox==diff",
-      "busybox==dirname",
-      "busybox==dmesg",
-      "busybox==dnsd",
-      "busybox==dnsdomainname",
-      "busybox==dos2unix",
-      "busybox==dpkg",
-      "busybox==dpkg-deb",
-      "busybox==du",
-      "busybox==dumpkmap",
-      "busybox==dumpleases",
-      "busybox==echo",
-      "busybox==ed",
-      "busybox==egrep",
-      "busybox==eject",
-      "busybox==env",
-      "busybox==envdir",
-      "busybox==envuidgid",
-      "busybox==ether-wake",
-      "busybox==expand",
-      "busybox==expr",
-      "busybox==factor",
-      "busybox==fakeidentd",
-      "busybox==fallocate",
-      "busybox==false",
-      "busybox==fatattr",
-      "busybox==fbset",
-      "busybox==fbsplash",
-      "busybox==fdflush",
-      "busybox==fdformat",
-      "busybox==fdisk",
-      "busybox==fgconsole",
-      "busybox==fgrep",
-      "busybox==find",
-      "busybox==findfs",
-      "busybox==flock",
-      "busybox==fold",
-      "busybox==free",
-      "busybox==freeramdisk",
-      "busybox==fsck",
-      "busybox==fsck-minix",
-      "busybox==fsck.minix",
-      "busybox==fsfreeze",
-      "busybox==fstrim",
-      "busybox==fsync",
-      "busybox==ftpd",
-      "busybox==ftpget",
-      "busybox==ftpput",
-      "busybox==fuser",
-      "busybox==getfattr",
-      "busybox==getopt",
-      "busybox==getty",
-      "busybox==grep",
-      "busybox==groups",
-      "busybox==gunzip",
-      "busybox==gzip",
-      "busybox==halt",
-      "busybox==hd",
-      "busybox==hdparm",
-      "busybox==head",
-      "busybox==hexdump",
-      "busybox==hexedit",
-      "busybox==hostid",
-      "busybox==hostname",
-      "busybox==httpd",
-      "busybox==hush",
-      "busybox==hwclock",
-      "busybox==i2cdetect",
-      "busybox==i2cdump",
-      "busybox==i2cget",
-      "busybox==i2cset",
-      "busybox==i2ctransfer",
-      "busybox==id",
-      "busybox==ifconfig",
-      "busybox==ifdown",
-      "busybox==ifenslave",
-      "busybox==ifplugd",
-      "busybox==ifup",
-      "busybox==inetd",
-      "busybox==init",
-      "busybox==insmod",
-      "busybox==install",
-      "busybox==ionice",
-      "busybox==iostat",
-      "busybox==ip",
-      "busybox==ipaddr",
-      "busybox==ipcalc",
-      "busybox==ipcrm",
-      "busybox==ipcs",
-      "busybox==iplink",
-      "busybox==ipneigh",
-      "busybox==iproute",
-      "busybox==iprule",
-      "busybox==iptunnel",
-      "busybox==kbd_mode",
-      "busybox==kill",
-      "busybox==killall",
-      "busybox==killall5",
-      "busybox==klogd",
-      "busybox==last",
-      "busybox==less",
-      "busybox==link",
-      "busybox==linux32",
-      "busybox==linux64",
-      "busybox==linurc",
-      "busybox==ln",
-      "busybox==loadfont",
-      "busybox==loadkmap",
-      "busybox==logger",
-      "busybox==login",
-      "busybox==logname",
-      "busybox==logread",
-      "busybox==losetup",
-      "busybox==lpd",
-      "busybox==lpq",
-      "busybox==lpr",
-      "busybox==ls",
-      "busybox==lsattr",
-      "busybox==lsmod",
-      "busybox==lsof",
-      "busybox==lspci",
-      "busybox==lsscsi",
-      "busybox==lsusb",
-      "busybox==lzcat",
-      "busybox==lzma",
-      "busybox==lzop",
-      "busybox==makedevs",
-      "busybox==makemime",
-      "busybox==man",
-      "busybox==md5sum",
-      "busybox==mdev",
-      "busybox==mesg",
-      "busybox==microcom",
-      "busybox==mim",
-      "busybox==mkdir",
-      "busybox==mkdosfs",
-      "busybox==mke2fs",
-      "busybox==mkfifo",
-      "busybox==mkfs.ext2",
-      "busybox==mkfs.minix",
-      "busybox==mkfs.vfat",
-      "busybox==mknod",
-      "busybox==mkpasswd",
-      "busybox==mkswap",
-      "busybox==mktemp",
-      "busybox==modinfo",
-      "busybox==modprobe",
-      "busybox==more",
-      "busybox==mount",
-      "busybox==mountpoint",
-      "busybox==mpstat",
-      "busybox==mt",
-      "busybox==mv",
-      "busybox==nameif",
-      "busybox==nanddump",
-      "busybox==nandwrite",
-      "busybox==nbd-client",
-      "busybox==nc",
-      "busybox==netstat",
-      "busybox==nice",
-      "busybox==nl",
-      "busybox==nmeter",
-      "busybox==nohup",
-      "busybox==nologin",
-      "busybox==nproc",
-      "busybox==nsenter",
-      "busybox==nslookup",
-      "busybox==ntpd",
-      "busybox==od",
-      "busybox==openvt",
-      "busybox==partprobe",
-      "busybox==passwd",
-      "busybox==paste",
-      "busybox==patch",
-      "busybox==pgrep",
-      "busybox==pidof",
-      "busybox==ping",
-      "busybox==ping6",
-      "busybox==pipe_progress",
-      "busybox==pivot_root",
-      "busybox==pkill",
-      "busybox==pmap",
-      "busybox==popmaildir",
-      "busybox==poweroff",
-      "busybox==powertop",
-      "busybox==printenv",
-      "busybox==printf",
-      "busybox==ps",
-      "busybox==pscan",
-      "busybox==pstree",
-      "busybox==pwd",
-      "busybox==pwdx",
-      "busybox==raidautorun",
-      "busybox==rdate",
-      "busybox==rdev",
-      "busybox==readahead",
-      "busybox==readlink",
-      "busybox==readprofile",
-      "busybox==realpath",
-      "busybox==reboot",
-      "busybox==reformime",
-      "busybox==remove-shell",
-      "busybox==renice",
-      "busybox==reset",
-      "busybox==resize",
-      "busybox==resume",
-      "busybox==rev",
-      "busybox==rm",
-      "busybox==rmdir",
-      "busybox==rmmod",
-      "busybox==route",
-      "busybox==rpm",
-      "busybox==rpm2cpio",
-      "busybox==rtcwake",
-      "busybox==run-init",
-      "busybox==run-parts",
-      "busybox==runsv",
-      "busybox==runsvdir",
-      "busybox==rx",
-      "busybox==script",
-      "busybox==scriptreplay",
-      "busybox==sed",
-      "busybox==seedrng",
-      "busybox==sendmail",
-      "busybox==seq",
-      "busybox==setarch",
-      "busybox==setconsole",
-      "busybox==setfattr",
-      "busybox==setfont",
-      "busybox==setkeycodes",
-      "busybox==setlogcons",
-      "busybox==setpriv",
-      "busybox==setserial",
-      "busybox==setsid",
-      "busybox==setuidgid",
-      "busybox==sh",
-      "busybox==sha1sum",
-      "busybox==sha256sum",
-      "busybox==sha3sum",
-      "busybox==sha512sum",
-      "busybox==showkey",
-      "busybox==shred",
-      "busybox==shuf",
-      "busybox==slattach",
-      "busybox==sleep",
-      "busybox==smemcap",
-      "busybox==softlimit",
-      "busybox==sort",
-      "busybox==split",
-      "busybox==ssl_client",
-      "busybox==start-stop-daemon",
-      "busybox==stat",
-      "busybox==strings",
-      "busybox==stty",
-      "busybox==su",
-      "busybox==sulogin",
-      "busybox==sum",
-      "busybox==sv",
-      "busybox==svc",
-      "busybox==svlogd",
-      "busybox==svok",
-      "busybox==swapoff",
-      "busybox==swapon",
-      "busybox==switch_root",
-      "busybox==sync",
-      "busybox==sysctl",
-      "busybox==syslogd",
-      "busybox==tac",
-      "busybox==tail",
-      "busybox==tar",
-      "busybox==taskset",
-      "busybox==tcpsvd",
-      "busybox==tee",
-      "busybox==telnet",
-      "busybox==telnetd",
-      "busybox==test",
-      "busybox==test1",
-      "busybox==test2",
-      "busybox==tftp",
-      "busybox==tftpd",
-      "busybox==time",
-      "busybox==timeout",
-      "busybox==top",
-      "busybox==touch",
-      "busybox==tr",
-      "busybox==traceroute",
-      "busybox==traceroute6",
-      "busybox==tree",
-      "busybox==true",
-      "busybox==truncate",
-      "busybox==ts",
-      "busybox==tsort",
-      "busybox==tty",
-      "busybox==ttysize",
-      "busybox==tunctl",
-      "busybox==ubiattach",
-      "busybox==ubidetach",
-      "busybox==ubimkvol",
-      "busybox==ubirename",
-      "busybox==ubirmvol",
-      "busybox==ubirsvol",
-      "busybox==ubiupdatevol",
-      "busybox==udhcpc",
-      "busybox==udhcpc6",
-      "busybox==udhcpd",
-      "busybox==udpsvd",
-      "busybox==uevent",
-      "busybox==umount",
-      "busybox==uname",
-      "busybox==unexpand",
-      "busybox==uniq",
-      "busybox==unix2dos",
-      "busybox==unlink",
-      "busybox==unlzma",
-      "busybox==unshare",
-      "busybox==unxz",
-      "busybox==unzip",
-      "busybox==uptime",
-      "busybox==usleep",
-      "busybox==uudecode",
-      "busybox==uuencode",
-      "busybox==vconfig",
-      "busybox==vi",
-      "busybox==vlock",
-      "busybox==volname",
-      "busybox==w",
-      "busybox==wall",
-      "busybox==watch",
-      "busybox==watchdog",
-      "busybox==wc",
-      "busybox==wget",
-      "busybox==which",
-      "busybox==who",
-      "busybox==whoami",
-      "busybox==whois",
-      "busybox==xargs",
-      "busybox==xxd",
-      "busybox==xz",
-      "busybox==xzcat",
-      "busybox==yes",
-      "busybox==zcat",
-      "busybox==zcip"
-    ],
-    "repology": [
-      "busybox"
-    ],
-    "src_url": [
-      "https://git.busybox.net/busybox"
-    ],
-    "tag": [
-      "bootstrap",
-      "busybox",
-      "coreutils"
-    ],
-    "version": "1.36.1"
+    "version": "HEAD-8872956-250209T150915"
   },
   {
     "_disabled": "false",
@@ -12290,6 +12405,45 @@
       "tunnel"
     ],
     "version": "HEAD-ab8f06a-240929T093505"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromedb",
+    "pkg_family": "chromedb",
+    "pkg_id": "github.com.noperator.chromedb.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/chromedb-source/chromedb/chromedb",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/chromedb/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Read Chromium data (namely, cookies and local storage) straight from disk",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/chromedb/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/noperator/chromedb"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/noperator/chromedb"
+    ],
+    "provides": [
+      "chromedb"
+    ],
+    "src_url": [
+      "https://github.com/noperator/chromedb"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-09b2128-240815T122320"
   },
   {
     "_disabled": "false",
@@ -21635,6 +21789,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "dyff",
+    "pkg_family": "dyff",
+    "pkg_id": "github.com.homeport.dyff.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dyff-source/dyff/dyff",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dyff/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Diff tool for JSON/YAML files",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "dyff",
+          "dyff-bin"
+        ]
+      },
+      "homebrew": [
+        "dyff"
+      ],
+      "nixpkgs": [
+        "dyff"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dyff/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/homeport/dyff"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/homeport/dyff"
+    ],
+    "provides": [
+      "dyff"
+    ],
+    "repology": [
+      "dyff"
+    ],
+    "src_url": [
+      "https://github.com/homeport/dyff"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-3b10db1-250224T202650"
+  },
+  {
+    "_disabled": "false",
     "pkg": "dynamic-file-searcher",
     "pkg_family": "dynamic-file-searcher",
     "pkg_id": "github.com.dsecuredcom.dynamic-file-searcher.source",
@@ -21902,6 +22115,9 @@
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/keith-turner/ecoji"
+    ],
+    "provides": [
+      "ecoji"
     ],
     "repology": [
       "ecoji"
@@ -22647,6 +22863,48 @@
   },
   {
     "_disabled": "false",
+    "pkg": "enumeraga",
+    "pkg_family": "enumeraga",
+    "pkg_id": "github.com.0x5ubt13.enumeraga.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/enumeraga-source/enumeraga/enumeraga",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/enumeraga/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Automatic multiprocess tool for a quick enumeration wrapping pentesting tools",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/enumeraga/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/0x5ubt13/enumeraga"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/0x5ubt13/enumeraga"
+    ],
+    "provides": [
+      "enumeraga"
+    ],
+    "src_url": [
+      "https://github.com/0x5ubt13/enumeraga"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-52f8727-250228T084229"
+  },
+  {
+    "_disabled": "false",
     "pkg": "enumerepo",
     "pkg_family": "enumerepo",
     "pkg_id": "github.com.trickest.enumerepo",
@@ -23293,6 +23551,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "f2",
+    "pkg_family": "f2",
+    "pkg_id": "github.com.ayoisaiah.f2.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/f2-source/f2/f2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/f2/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line tool for batch renaming files and directories",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "f2",
+          "f2-bin"
+        ]
+      },
+      "homebrew": [
+        "f2"
+      ],
+      "nixpkgs": [
+        "f2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/f2/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ayoisaiah/f2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ayoisaiah/f2"
+    ],
+    "provides": [
+      "f2"
+    ],
+    "repology": [
+      "f2"
+    ],
+    "src_url": [
+      "https://github.com/ayoisaiah/f2"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-010261a-250130T191929"
+  },
+  {
+    "_disabled": "false",
     "pkg": "faketty",
     "pkg_family": "faketty",
     "pkg_id": "github.com.dtolnay.faketty",
@@ -23737,7 +24054,7 @@
       "json",
       "log"
     ],
-    "version": "HEAD-6540085-250201T181402"
+    "version": "HEAD-cf3d513-250301T171409"
   },
   {
     "_disabled": "false",
@@ -24678,6 +24995,45 @@
       "filemanager"
     ],
     "version": "v2.32.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "find-suid",
+    "pkg_family": "find-suid",
+    "pkg_id": "github.com.sweetbbak.find-suid.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/suid-source/find-suid/find-suid",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/find-suid/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Find setuid binaries on a file system with speed",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/find-suid/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sweetbbak/find-suid"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sweetbbak/find-suid"
+    ],
+    "provides": [
+      "find-suid"
+    ],
+    "src_url": [
+      "https://github.com/sweetbbak/find-suid"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-ff7a961-231220T142317"
   },
   {
     "_disabled": "false",
@@ -25853,6 +26209,48 @@
       "bug-bounty"
     ],
     "version": "HEAD-cb6d67e-250225T201515"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fsize",
+    "pkg_family": "fsize",
+    "pkg_id": "github.com.Tom5521.fsize.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fsize-source/fsize/fsize",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fsize/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A more readable alternative to the stat command",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fsize/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/Tom5521/fsize"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Tom5521/fsize"
+    ],
+    "provides": [
+      "fsize"
+    ],
+    "src_url": [
+      "https://github.com/Tom5521/fsize"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-247fd88-250301T150140"
   },
   {
     "_disabled": "false",
@@ -27353,7 +27751,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-968d93e-250301T120304"
+    "version": "HEAD-00ce68c-250301T180442"
   },
   {
     "_disabled": "false",
@@ -27480,7 +27878,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-99c8240-250201T065954"
+    "version": "HEAD-b04873e-250301T080726"
   },
   {
     "_disabled": "true",
@@ -29301,7 +29699,7 @@
       "secret",
       "security"
     ],
-    "version": "HEAD-b449582-250226T120701"
+    "version": "HEAD-a3be722-250301T103308"
   },
   {
     "_disabled": "false",
@@ -29423,6 +29821,48 @@
       "git"
     ],
     "version": "HEAD-9aab2f5-240614T233858"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gitty",
+    "pkg_family": "gitty",
+    "pkg_id": "github.com.worlpaker.gitty.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gitty-source/gitty/gitty",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gitty/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Download GitHub File & Directory",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gitty/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/worlpaker/gitty"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/worlpaker/gitty"
+    ],
+    "provides": [
+      "gitty"
+    ],
+    "src_url": [
+      "https://github.com/worlpaker/gitty"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-de49384-241129T200023"
   },
   {
     "_disabled": "false",
@@ -29591,6 +30031,62 @@
       "gnome"
     ],
     "version": "2.80.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "globalping-cli",
+    "pkg_family": "globalping-cli",
+    "pkg_id": "github.com.jsdelivr.globalping-cli.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-source/globalping-cli/globalping-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/globalping-cli/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI tool for benchmarking, monitoring, and optimizing internet infrastructure using a global network of probes",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "globalping-cli"
+        ]
+      },
+      "nixpkgs": [
+        "globalping-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/globalping-cli/static.official.source.yaml",
+    "homepage": [
+      "https://www.jsdelivr.com/globalping/cli",
+      "https://github.com/jsdelivr/globalping-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jsdelivr/globalping-cli"
+    ],
+    "provides": [
+      "globalping-cli==globalping"
+    ],
+    "repology": [
+      "globalping-cli"
+    ],
+    "src_url": [
+      "https://github.com/jsdelivr/globalping-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-e825f24-250228T184045"
   },
   {
     "_disabled": "false",
@@ -30694,7 +31190,7 @@
       "password",
       "security"
     ],
-    "version": "HEAD-81604c1-250227T130330"
+    "version": "HEAD-17b66f5-250301T185017"
   },
   {
     "_disabled": "false",
@@ -34920,6 +35416,48 @@
   },
   {
     "_disabled": "false",
+    "pkg": "ini-file",
+    "pkg_family": "ini-file",
+    "pkg_id": "github.com.bitnami.ini-file.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/file-source/ini-file/ini-file",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ini-file/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI tool for modifying .ini files",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ini-file/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/bitnami/ini-file"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/bitnami/ini-file"
+    ],
+    "provides": [
+      "ini-file"
+    ],
+    "src_url": [
+      "https://github.com/bitnami/ini-file"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-2471edd-250224T084925"
+  },
+  {
+    "_disabled": "false",
     "pkg": "inkscape",
     "pkg_family": "inkscape",
     "pkg_id": "gitlab.com.inkscape.inkscape",
@@ -36851,7 +37389,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-038da96-250301T095431"
+    "version": "HEAD-7b52ff5-250301T121119"
   },
   {
     "_disabled": "false",
@@ -42720,7 +43258,67 @@
     "tag": [
       "text-editor"
     ],
-    "version": "HEAD-272a308-250227T190330"
+    "version": "HEAD-3c68655-250301T135830"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "micromamba",
+    "pkg_family": "micromamba",
+    "pkg_id": "github.com.mamba-org.micromamba-releases.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/releases-stable/micromamba/micromamba",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/micromamba/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tiny version of mamba, the fast conda package installer",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "micromamba",
+          "micromamba-bin"
+        ]
+      },
+      "homebrew": [
+        "micromamba"
+      ],
+      "nixpkgs": [
+        "micromamba"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/micromamba/static.official.stable.yaml",
+    "homepage": [
+      "https://mamba.readthedocs.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/mamba-org/micromamba-releases"
+    ],
+    "provides": [
+      "micromamba:microconda"
+    ],
+    "repology": [
+      "micromamba"
+    ],
+    "src_url": [
+      "https://github.com/mamba-org/micromamba-releases"
+    ],
+    "tag": [
+      "conda",
+      "mamba"
+    ],
+    "version": "2.0.5-0"
   },
   {
     "_disabled": "false",
@@ -43572,6 +44170,48 @@
   },
   {
     "_disabled": "false",
+    "pkg": "morrigan",
+    "pkg_family": "morrigan",
+    "pkg_id": "github.com.nao1215.morrigan.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/morrigan-source/morrigan/morrigan",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/morrigan/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Busybox like Penetration Tool Set",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/morrigan/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/nao1215/morrigan"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/nao1215/morrigan"
+    ],
+    "provides": [
+      "morrigan"
+    ],
+    "src_url": [
+      "https://github.com/nao1215/morrigan"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-94bc989-250228T190315"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mosh",
     "pkg_family": "mosh",
     "pkg_id": "github.com.blinksh.mosh-static-multiarch.stable",
@@ -43722,7 +44362,7 @@
       "Video",
       "Video/Utilities"
     ],
-    "version": "v0.39.0-876-gb848ffad1"
+    "version": "v0.39.0-928-g6a1cbad0c"
   },
   {
     "_disabled": "false",
@@ -43781,7 +44421,7 @@
     "tag": [
       "mqtt"
     ],
-    "version": "HEAD-a4cfc46-250209T023154"
+    "version": "HEAD-021ad89-250301T185127"
   },
   {
     "_disabled": "false",
@@ -44155,6 +44795,48 @@
       "proxy"
     ],
     "version": "HEAD-c87d7fa-250203T212537"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mult",
+    "pkg_family": "mult",
+    "pkg_id": "github.com.dhth.mult.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mult-source/mult/mult",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mult/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Run a command multiple times and glance at the outputs",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mult/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dhth/mult"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dhth/mult"
+    ],
+    "provides": [
+      "mult"
+    ],
+    "src_url": [
+      "https://github.com/dhth/mult"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-33a52d0-250131T173404"
   },
   {
     "_disabled": "false",
@@ -44790,7 +45472,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-a57c66c-250228T231825"
+    "version": "HEAD-499f905-250301T095918"
   },
   {
     "_disabled": "false",
@@ -46394,7 +47076,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-7555743-250301T062153"
+    "version": "HEAD-95f89a0-250301T113000"
   },
   {
     "_disabled": "false",
@@ -48826,6 +49508,63 @@
   },
   {
     "_disabled": "false",
+    "pkg": "picocrypt",
+    "pkg_family": "picocrypt",
+    "pkg_id": "github.com.Picocrypt.CLI.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-source/picocrypt/picocrypt",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/picocrypt/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Small, simple, & Secure Encryption Tool",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "picocrypt",
+          "picocrypt-bin",
+          "picocrypt-git"
+        ]
+      },
+      "nixpkgs": [
+        "picocrypt"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/picocrypt/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/Picocrypt/CLI"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Picocrypt/CLI"
+    ],
+    "provides": [
+      "picocrypt==picocrypt-cli"
+    ],
+    "repology": [
+      "picocrypt"
+    ],
+    "src_url": [
+      "https://github.com/Picocrypt/CLI"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-e3c22b8-250224T181629"
+  },
+  {
+    "_disabled": "false",
     "pkg": "pier",
     "pkg_family": "pier",
     "pkg_id": "github.com.pier-cli.pier",
@@ -49132,7 +49871,7 @@
       "pixelpulse2",
       "adalm1000"
     ],
-    "version": "13595063368"
+    "version": "13605952739"
   },
   {
     "_disabled": "false",
@@ -50231,6 +50970,48 @@
       "rootfs"
     ],
     "version": "5.4.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "protocurl",
+    "pkg_family": "protocurl",
+    "pkg_id": "github.com.qaware.protocurl.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/protocurl-source/protocurl/protocurl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/protocurl/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "cURL for Protobuf",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/protocurl/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/qaware/protocurl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/qaware/protocurl"
+    ],
+    "provides": [
+      "protocurl"
+    ],
+    "src_url": [
+      "https://github.com/qaware/protocurl"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-f5c08ee-250124T134247"
   },
   {
     "_disabled": "false",
@@ -51733,6 +52514,48 @@
   },
   {
     "_disabled": "false",
+    "pkg": "qq",
+    "pkg_family": "qq",
+    "pkg_id": "github.com.JFryy.qq.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qq-source/qq/qq",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qq/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Interoperable configuration format Transcoder with jq query syntax",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qq/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/JFryy/qq"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/JFryy/qq"
+    ],
+    "provides": [
+      "qq"
+    ],
+    "src_url": [
+      "https://github.com/JFryy/qq"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-fdc28b3-250220T205014"
+  },
+  {
+    "_disabled": "false",
     "pkg": "qsreplace",
     "pkg_family": "qsreplace",
     "pkg_id": "github.com.tomnomnom.qsreplace",
@@ -51833,7 +52656,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-1c5609e-250228T060503"
+    "version": "HEAD-11c2178-250301T083319"
   },
   {
     "_disabled": "false",
@@ -54599,7 +55422,7 @@
     "tag": [
       "pastebin"
     ],
-    "version": "HEAD-71675b2-250228T201445"
+    "version": "HEAD-f579881-250301T165552"
   },
   {
     "_disabled": "false",
@@ -55941,7 +56764,7 @@
       "secureboot",
       "uefi"
     ],
-    "version": "HEAD-4386be4-250215T150158"
+    "version": "HEAD-c74a6a3-250301T151229"
   },
   {
     "_disabled": "false",
@@ -56478,6 +57301,58 @@
       "Archiving/Backup"
     ],
     "version": "4.15.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "shcopy",
+    "pkg_family": "shcopy",
+    "pkg_id": "github.com.aymanbagabas.shcopy.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/shcopy-source/shcopy/shcopy",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/shcopy/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Copy text to clipboard from anywhere using ANSI OSC 52 sequence",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "shcopy-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/shcopy/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/aymanbagabas/shcopy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/aymanbagabas/shcopy"
+    ],
+    "provides": [
+      "shcopy"
+    ],
+    "repology": [
+      "shcopy"
+    ],
+    "src_url": [
+      "https://github.com/aymanbagabas/shcopy"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-61b986d-250129T191316"
   },
   {
     "_disabled": "false",
@@ -58120,7 +58995,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-9ed3027-250301T173745"
+    "version": "HEAD-aff38ec-250301T231155"
   },
   {
     "_disabled": "false",
@@ -58175,7 +59050,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-9ed3027-250301T173745"
+    "version": "HEAD-aff38ec-250301T231155"
   },
   {
     "_disabled": "false",
@@ -58230,7 +59105,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-9ed3027-250301T173745"
+    "version": "HEAD-aff38ec-250301T231155"
   },
   {
     "_disabled": "false",
@@ -58286,7 +59161,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-9ed3027-250301T173745"
+    "version": "HEAD-aff38ec-250301T231155"
   },
   {
     "_disabled": "false",
@@ -58341,7 +59216,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-9ed3027-250301T173745"
+    "version": "HEAD-aff38ec-250301T231155"
   },
   {
     "_disabled": "false",
@@ -58396,7 +59271,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-9ed3027-250301T173745"
+    "version": "HEAD-aff38ec-250301T231155"
   },
   {
     "_disabled": "false",
@@ -58452,7 +59327,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-9ed3027-250301T173745"
+    "version": "HEAD-aff38ec-250301T231155"
   },
   {
     "_disabled": "false",
@@ -58650,7 +59525,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-1b99a29-250227T211022"
+    "version": "HEAD-daffabb-250301T183007"
   },
   {
     "_disabled": "false",
@@ -59633,6 +60508,231 @@
       "ssh"
     ],
     "version": "HEAD-778dc4e-250217T090155"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sshpass",
+    "pkg_family": "sshpass",
+    "pkg_id": "sf.net.sshpass.code-git.glibc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/git-glibc/sshpass/sshpass",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sshpass/static.glibc.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Non-interactive SSH authentication utility",
+    "distro_pkg": {
+      "alpine": [
+        "sshpass"
+      ],
+      "archlinux": {
+        "aur": [
+          "sshpass-svn"
+        ],
+        "extra": [
+          "sshpass"
+        ]
+      },
+      "debian": [
+        "sshpass"
+      ],
+      "gnuguix": [
+        "sshpass"
+      ],
+      "homebrew": [
+        "sshpass"
+      ],
+      "nixpkgs": [
+        "sshpass"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sshpass/static.glibc.source.yaml",
+    "homepage": [
+      "https://sourceforge.net/projects/sshpass/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://git.code.sf.net/p/sshpass/code-git",
+      "Statically Linked on Debian (GLIBC)"
+    ],
+    "provides": [
+      "sshpass"
+    ],
+    "repology": [
+      "sshpass"
+    ],
+    "src_url": [
+      "https://git.code.sf.net/p/sshpass/code-git"
+    ],
+    "tag": [
+      "ssh"
+    ],
+    "version": "HEAD-f4b9e2c-241020T215058"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sshpass",
+    "pkg_family": "sshpass",
+    "pkg_id": "sf.net.sshpass.code-git.musl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/git-musl/sshpass/sshpass",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sshpass/static.musl.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Non-interactive SSH authentication utility",
+    "distro_pkg": {
+      "alpine": [
+        "sshpass"
+      ],
+      "archlinux": {
+        "aur": [
+          "sshpass-svn"
+        ],
+        "extra": [
+          "sshpass"
+        ]
+      },
+      "debian": [
+        "sshpass"
+      ],
+      "gnuguix": [
+        "sshpass"
+      ],
+      "homebrew": [
+        "sshpass"
+      ],
+      "nixpkgs": [
+        "sshpass"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sshpass/static.musl.source.yaml",
+    "homepage": [
+      "https://sourceforge.net/projects/sshpass/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://git.code.sf.net/p/sshpass/code-git"
+    ],
+    "provides": [
+      "sshpass"
+    ],
+    "repology": [
+      "sshpass"
+    ],
+    "src_url": [
+      "https://git.code.sf.net/p/sshpass/code-git"
+    ],
+    "tag": [
+      "ssh"
+    ],
+    "version": "HEAD-f4b9e2c-241020T215058"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sshpass",
+    "pkg_family": "sshpass-go",
+    "pkg_id": "github.com.billcoding.sshpass.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sshpass-source/sshpass-go/sshpass",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sshpass-go/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "sshpass implementation in Go",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sshpass-go/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/billcoding/sshpass"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/billcoding/sshpass"
+    ],
+    "provides": [
+      "sshpass"
+    ],
+    "src_url": [
+      "https://github.com/billcoding/sshpass"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-f9021a9-240516T175848"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sshpiper",
+    "pkg_family": "sshpiperd",
+    "pkg_id": "github.com.tg123.sshpiper.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sshpiper-source/sshpiperd/sshpiper",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sshpiperd/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Reverse proxy for SSH",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sshpiperd/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/tg123/sshpiper"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tg123/sshpiper"
+    ],
+    "provides": [
+      "sshpiper==sshpiperd"
+    ],
+    "src_url": [
+      "https://github.com/tg123/sshpiper"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-c12ddd9-250217T012220"
   },
   {
     "_disabled": "false",
@@ -61344,15 +62444,15 @@
     "_disabled": "false",
     "pkg": "syncthing",
     "pkg_family": "syncthing",
-    "pkg_id": "github.com.syncthing.syncthing",
+    "pkg_id": "github.com.syncthing.syncthing.stable",
     "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/syncthing-syncthing/syncthing/syncthing",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/syncthing-stable/syncthing/syncthing",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/syncthing/static.official.stable.yaml",
     "category": [
       "ConsoleOnly",
       "Utility"
     ],
-    "description": "Open Source Continuous File Synchronization",
+    "description": "FOSS Continuous File Synchronisation",
     "distro_pkg": {
       "alpine": [
         "syncthing"
@@ -61381,6 +62481,7 @@
     },
     "download_url": "https://soarpkgs.pkgforge.dev/binaries/syncthing/static.official.stable.yaml",
     "homepage": [
+      "https://syncthing.net",
       "https://github.com/syncthing/syncthing"
     ],
     "host": [
@@ -61410,7 +62511,7 @@
       "backup",
       "p2p"
     ],
-    "version": "v1.29.3-rc.1"
+    "version": "v1.29.2"
   },
   {
     "_disabled": "false",
@@ -61996,6 +63097,48 @@
       "decompression"
     ],
     "version": "1.35"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tar-split",
+    "pkg_family": "tar-split",
+    "pkg_id": "github.com.vbatts.tar-split.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/split-source/tar-split/tar-split",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tar-split/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "tar Assembly and Disassembly utility",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tar-split/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/vbatts/tar-split"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/vbatts/tar-split"
+    ],
+    "provides": [
+      "tar-split"
+    ],
+    "src_url": [
+      "https://github.com/vbatts/tar-split"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-ced2b07-250130T145854"
   },
   {
     "_disabled": "false",
@@ -64369,7 +65512,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c90b137-250228T042621"
+    "version": "HEAD-7864eae-250301T165452"
   },
   {
     "_disabled": "false",
@@ -64528,7 +65671,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-dcb841b-250217T111043"
+    "version": "HEAD-b4d5032-250301T180309"
   },
   {
     "_disabled": "false",
@@ -67251,7 +68394,7 @@
       "multiplexer",
       "terminal"
     ],
-    "version": "v0.9.99.64"
+    "version": "v0.9.99.65"
   },
   {
     "_disabled": "false",
@@ -68114,6 +69257,58 @@
       "Terminal"
     ],
     "version": "20240203.110809.5046fc22"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wgcf-cli",
+    "pkg_family": "wgcf-cli",
+    "pkg_id": "github.com.ArchiveNetwork.wgcf-cli.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-source/wgcf-cli/wgcf-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wgcf-cli/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line tool for Cloudflare-WARP API",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "wgcf-cli"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wgcf-cli/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ArchiveNetwork/wgcf-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ArchiveNetwork/wgcf-cli"
+    ],
+    "provides": [
+      "wgcf-cli"
+    ],
+    "repology": [
+      "wgcf-cli"
+    ],
+    "src_url": [
+      "https://github.com/ArchiveNetwork/wgcf-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-1b43d47-241012T183507"
   },
   {
     "_disabled": "false",
@@ -69317,7 +70512,8 @@
     ],
     "tag": [
       "utility"
-    ]
+    ],
+    "version": "250301T131345"
   },
   {
     "_disabled": "false",
@@ -69364,7 +70560,8 @@
     ],
     "tag": [
       "Utility"
-    ]
+    ],
+    "version": "250301T131345"
   },
   {
     "_disabled": "false",
@@ -70477,7 +71674,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-84d71bf-250228T190340"
+    "version": "HEAD-57ef8f9-250301T231138"
   },
   {
     "_disabled": "false",
@@ -71345,7 +72542,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.8.2t(2025-02-28at23:03:25)"
+    "version": "Twilightbuild-1.8.2t(2025-03-01at13:25:05)"
   },
   {
     "_disabled": "false",

@@ -69,6 +69,69 @@
   },
   {
     "_disabled": "false",
+    "pkg": "archey",
+    "pkg_family": "archey",
+    "pkg_id": "sharun.wrappe.source.archey",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-archey/archey/archey",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/archey/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A simple system information tool written in Python",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "archey4",
+          "archey4-git"
+        ]
+      },
+      "homebrew": [
+        "archey4"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/archey/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/HorlogeSkynet/archey4"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/archey/archive/sharun",
+    "provides": [
+      "archey==archey4"
+    ],
+    "repology": [
+      "archey4"
+    ],
+    "src_url": [
+      "https://github.com/HorlogeSkynet/archey4"
+    ],
+    "tag": [
+      "archey",
+      "neofetch",
+      "screenfetch",
+      "system-information",
+      "sysutils"
+    ],
+    "version": "HEAD-ef6c91f-250302T101418"
+  },
+  {
+    "_disabled": "false",
     "pkg": "chromium",
     "pkg_family": "chromium",
     "pkg_id": "nixpkgs.ungoogled-chromium",
@@ -722,7 +785,7 @@
     "pkg_id": "github.com.benjamimgois.goverlay.beta",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goverlay-beta/goverlay/goverlay",
-    "app_id": "io.github.benjamimgois",
+    "app_id": "io.github.benjamimgois.goverlay",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/goverlay/appimage.official.beta.yaml",
     "category": [
       "Utility"
@@ -790,7 +853,7 @@
     "pkg_id": "github.com.benjamimgois.goverlay.beta2",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goverlay-beta2/goverlay/goverlay",
-    "app_id": "io.github.benjamimgois",
+    "app_id": "io.github.benjamimgois.goverlay",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/goverlay/appimage.official.beta2.yaml",
     "category": [
       "Utility"
@@ -841,6 +904,78 @@
     ],
     "src_url": [
       "https://github.com/benjamimgois/goverlay"
+    ],
+    "tag": [
+      "mangohud",
+      "overlay",
+      "replaysorcery",
+      "replay-sorcery",
+      "vkbasalt"
+    ],
+    "version": "1.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "goverlay",
+    "pkg_family": "goverlay",
+    "pkg_id": "runimage.cachyos.goverlay.stable",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goverlay-stable/goverlay/goverlay",
+    "app_id": "io.github.benjamimgois",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/goverlay/runimage.cachyos.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "GUI for configuring Vulkan/OpenGL overlays",
+    "distro_pkg": {
+      "alpine": [
+        "goverlay"
+      ],
+      "archlinux": {
+        "aur": [
+          "goverlay-git"
+        ],
+        "extra": [
+          "goverlay"
+        ]
+      },
+      "debian": [
+        "goverlay"
+      ],
+      "nixpkgs": [
+        "goverlay"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/goverlay/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://www.goverlay.org",
+      "https://gitlab.gnome.org/GNOME/goverlay"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/goverlay/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/goverlay/runimage/cachyos",
+    "provides": [
+      "goverlay"
+    ],
+    "repology": [
+      "goverlay"
+    ],
+    "src_url": [
+      "https://archlinux.org/packages/extra/x86_64/goverlay/"
     ],
     "tag": [
       "mangohud",
@@ -1086,6 +1221,81 @@
       "editor"
     ],
     "version": "3.8"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "librewolf",
+    "pkg_family": "librewolf",
+    "pkg_id": "runimage.cachyos.librewolf",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-librewolf/librewolf/librewolf",
+    "app_id": "io.gitlab.librewolf-community",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/librewolf/runimage.cachyos.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A fork of Firefox, focused on privacy, security and freedom",
+    "distro_pkg": {
+      "alpine": [
+        "librewolf"
+      ],
+      "archlinux": {
+        "aur": [
+          "librewolf",
+          "librewolf-bin",
+          "librewolf-hg"
+        ]
+      },
+      "gnuguix": [
+        "librewolf"
+      ],
+      "homebrew": [
+        "librewolf"
+      ],
+      "nixpkgs": [
+        "librewolf"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/librewolf/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://librewolf.net",
+      "https://codeberg.org/librewolf/source",
+      "https://gitlab.com/librewolf-community/browser/source"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/librewolf/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/librewolf/runimage/cachyos",
+    "provides": [
+      "librewolf"
+    ],
+    "repology": [
+      "librewolf"
+    ],
+    "src_url": [
+      "https://codeberg.org/librewolf/source",
+      "https://gitlab.com/librewolf-community/browser/source"
+    ],
+    "tag": [
+      "Applications/Internet",
+      "browser",
+      "Networking/WWW",
+      "www-client"
+    ],
+    "version": "135.0.1_1"
   },
   {
     "_disabled": "false",

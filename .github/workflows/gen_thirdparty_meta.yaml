@@ -16,6 +16,7 @@ jobs:
       contents: write
       statuses: read
     strategy:
+      max-parallel: 3
       fail-fast: false
       matrix:
         include:

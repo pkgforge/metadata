@@ -1784,7 +1784,7 @@
   },
   {
     "pkgname": "check",
-    "pkgtype": "exe",
+    "pkgtype": "lib",
     "version": "0.15.2",
     "license": "LGPL-2.1-or-later",
     "summary": "C unit testing framework",
@@ -3851,6 +3851,25 @@
     "install": "cmakew -DFREEGLUT_BUILD_DEMOS=OFF"
   },
   {
+    "pkgname": "freerdp",
+    "pkgtype": "exe",
+    "version": "3.12.0",
+    "license": "Apache-2.0",
+    "summary": "A free implementation of the Remote Desktop Protocol (RDP)",
+    "web-url": "https://www.freerdp.com/",
+    "git-url": "https://github.com/FreeRDP/FreeRDP",
+    "src-url": "https://github.com/FreeRDP/FreeRDP/releases/download/3.12.0/freerdp-3.12.0.tar.gz",
+    "src-sha": "b08c1bfe867cde0feb3e51f72f32ee3fa3a37acbd20d6fdeb5a0f614b549f5cb",
+    "dep-pkg": "cjson wayland ffmpeg-dev libicu libusb libcups libfuse libkrb5 libsdl2_ttf libpkcs11-helper libxkbcommon xorg-libxv",
+    "dep-lib": "xcb libavcodec SDL2_ttf -lffi -lgomp -lstdc++",
+    "dep-upp": "curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "dosetup": "export CPPFLAGS=\"$CPPFLAGS -I$libsdl2_ttf_INCLUDE_DIR/SDL2\"",
+    "install": "cmakew \\\n    -DWITH_X11=ON \\\n    -DWITH_JPEG=ON \\\n    -DWITH_MANPAGES=OFF \\\n    -DWITH_WEBVIEW=OFF \\\n    -DWITH_CLIENT_SDL=ON \\\n    -DBUILD_SHARED_LIBS=OFF"
+  },
+  {
     "pkgname": "frei0r",
     "pkgtype": "exe",
     "version": "2.3.2",
@@ -5202,6 +5221,24 @@
     "install": "gow ./cmd/gobind\ngow ./cmd/gomobile"
   },
   {
+    "pkgname": "google-authenticator-libpam",
+    "pkgtype": "lib",
+    "version": "1.11",
+    "license": "Apache-2.0",
+    "summary": "PAM module for two-factor authentication",
+    "web-url": "https://github.com/google/google-authenticator-libpam",
+    "git-url": "https://github.com/google/google-authenticator-libpam",
+    "src-url": "https://github.com/google/google-authenticator-libpam/archive/refs/tags/1.11.tar.gz",
+    "src-sha": "3ee08a6dd46aace7dba1c88cf47e9cd267447ccd1cd8be1d5a05fd0e6816062d",
+    "dep-pkg": "libpam",
+    "dep-upp": "libtool curl bsdtar gmake gm4 perl autoconf automake gmake",
+    "bsystem": "autotools",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "configure",
+    "caveats": "This module will look for libqrencode.so.[234], if found, a QRCode would be shown.\n\nAdd 2-factor authentication for ssh:\n    printf 'auth required %s/lib/security/pam_google_authenticator.so' \"$INSTALL_DIR\" | sudo tee -a /etc/pam.d/sshd\n\nAdd 2-factor authentication for ssh allowing users to log in without OTP:\n    printf 'auth required %s/lib/security/pam_google_authenticator.so nullok' \"$INSTALL_DIR\" | sudo tee -a /etc/pam.d/sshd"
+  },
+  {
     "pkgname": "google-benchmark",
     "pkgtype": "exe",
     "version": "1.8.3",
@@ -5509,7 +5546,7 @@
     "binbstd": "0",
     "parallel": "1",
     "install": "configure \\\n    --enable-threads=posix \\\n    --disable-assert \\\n    --disable-gcc-warnings \\\n    --with-included-regex",
-    "dotweak": "gsed -i 's|bash|sh|' bin/egrep\ngsed -i 's|bash|sh|' bin/fgrep"
+    "dotweak": "gsed -i 's|bash|sh|' bin/[ef]grep"
   },
   {
     "pkgname": "grex",
@@ -7967,6 +8004,22 @@
     "install": "cmakew -DLLVM_SPIRV=\"$(command -v llvm-spirv)\""
   },
   {
+    "pkgname": "libconfig",
+    "pkgtype": "lib",
+    "version": "1.7.3",
+    "license": "LGPL-2.1-or-later",
+    "summary": "Configuration file processing library",
+    "web-url": "https://hyperrealm.github.io/libconfig/",
+    "git-url": "https://github.com/hyperrealm/libconfig",
+    "src-url": "https://github.com/hyperrealm/libconfig/releases/download/v1.7.3/libconfig-1.7.3.tar.gz",
+    "src-sha": "545166d6cac037744381d1e9cc5a5405094e7bfad16a411699bcff40bbb31ee7",
+    "dep-upp": "curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "configure"
+  },
+  {
     "pkgname": "libcpr",
     "pkgtype": "lib",
     "version": "1.10.5",
@@ -8420,6 +8473,23 @@
     "binbstd": "0",
     "parallel": "1",
     "install": "configure"
+  },
+  {
+    "pkgname": "libeconf",
+    "pkgtype": "lib",
+    "version": "0.7.7",
+    "license": "MIT",
+    "summary": "A highly flexible and configurable library to parse and manage key=value configuration files",
+    "web-url": "https://opensuse.github.io/libeconf/",
+    "git-url": "https://github.com/openSUSE/libeconf",
+    "src-url": "https://github.com/openSUSE/libeconf/archive/refs/tags/v0.7.7.tar.gz",
+    "src-sha": "d340187f0bba5d2c5fdc9dd6486a83432c4504cb7cc0e1a172ccb112591aee35",
+    "dep-upp": "curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "dosetup": "gsed -i 's|SHARED||' lib/CMakeLists.txt",
+    "install": "cmakew 2"
   },
   {
     "pkgname": "libedit",
@@ -11037,6 +11107,25 @@
     "install": "mesonw -Dexamples=false"
   },
   {
+    "pkgname": "libpam+modules",
+    "pkgtype": "lib",
+    "version": "1.7.0",
+    "license": "BSD-3-Clause GPL-1.0-only",
+    "summary": "Pluggable Authentication Modules for Linux",
+    "web-url": "https://github.com/linux-pam/linux-pam",
+    "git-url": "https://github.com/linux-pam/linux-pam",
+    "src-url": "https://github.com/linux-pam/linux-pam/releases/download/v1.7.0/Linux-PAM-1.7.0.tar.xz",
+    "src-sha": "57dcd7a6b966ecd5bbd95e1d11173734691e16b68692fa59661cdae9b13b1697",
+    "dep-pkg": "libxcrypt libnsl",
+    "dep-lib": "libintl",
+    "dep-upp": "curl bsdtar python3 ninja",
+    "dep-pym": " meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "mesonw -Dexamples=false -Dsconfigdir=/etc -Dsecuredir=/lib/security"
+  },
+  {
     "pkgname": "libpango",
     "pkgtype": "lib",
     "version": "1.55.5",
@@ -11238,6 +11327,23 @@
     "binbstd": "0",
     "parallel": "1",
     "install": "mesonw -Dneon=disabled -Darm-simd=disabled -Da64-neon=disabled"
+  },
+  {
+    "pkgname": "libpkcs11-helper",
+    "pkgtype": "lib",
+    "version": "1.30.0",
+    "license": "BSD-3-Clause GPL-2.0-or-later",
+    "summary": "Library to simplify the interaction with PKCS#11",
+    "web-url": "https://github.com/OpenSC/pkcs11-helper",
+    "git-url": "https://github.com/OpenSC/pkcs11-helper",
+    "src-url": "https://github.com/OpenSC/pkcs11-helper/releases/download/pkcs11-helper-1.30.0/pkcs11-helper-1.30.0.tar.bz2",
+    "src-sha": "4c5815ba910cabf26df08d449ca2909daf4538c9899aa7f7fadc61229d3488a9",
+    "dep-pkg": "libopenssl",
+    "dep-upp": "libtool curl bsdtar gmake gm4 perl autoconf automake gmake",
+    "bsystem": "autotools",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "configure"
   },
   {
     "pkgname": "libplacebo",
@@ -11951,6 +12057,23 @@
     "parallel": "1",
     "dosetup": "case $TARGET_PLATFORM_ARCH in\n    arm*)\n        _3DNOW=OFF\n        ARMNEON=ON\n        ARMSIMD=ON\n        ;;\n    i386|x86_64)\n        _3DNOW=ON\n        ARMNEON=OFF\n        ARMSIMD=OFF\n        ;;\n    *)  _3DNOW=OFF\n        ARMNEON=OFF\n        ARMSIMD=OFF\nesac",
     "install": "cmakew \\\n    -DSDL_SHARED=ON \\\n    -DSDL_STATIC=ON \\\n    -DSDL_TEST=OFF \\\n    -DSDL_HAPTIC=OFF \\\n    -DSDL_HIDAPI=ON \\\n    -DSDL_FRAMEWORK_IOKIT=OFF \\\n    -DSDL_JOYSTICK=OFF \\\n    -DSDL_POWER=OFF \\\n    -DPTHREADS=ON \\\n    -DPTHREADS_SEM=ON \\\n    -DLIBSAMPLERATE=OFF \\\n    -DPULSEAUDIO=ON \\\n    -DALSA=ON \\\n    -DASSEMBLY=ON \\\n    -D3DNOW=\"$_3DNOW\" \\\n    -DARMNEON=\"$ARMNEON\" \\\n    -DARMSIMD=\"$ARMSIMD\" \\\n    -DVIDEO_OPENGL=OFF \\\n    -DVIDEO_OPENGLES=OFF \\\n    -DVIDEO_COCOA=OFF"
+  },
+  {
+    "pkgname": "libsdl2_ttf",
+    "pkgtype": "lib",
+    "version": "2.24.0",
+    "license": "Zlib",
+    "summary": "Library for using TrueType fonts in SDL applications",
+    "web-url": "https://github.com/libsdl-org/SDL_ttf",
+    "git-url": "https://github.com/libsdl-org/SDL_ttf",
+    "src-url": "https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.24.0/SDL2_ttf-2.24.0.tar.gz",
+    "src-sha": "0b2bf1e7b6568adbdbc9bb924643f79d9dedafe061fa1ed687d1d9ac4e453bfd",
+    "dep-pkg": "libsdl2 libharfbuzz",
+    "dep-upp": "curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "configure \\\n    --disable-freetype-builtin \\\n    --disable-harfbuzz-builtin \\\n    --enable-libharfbuzz"
   },
   {
     "pkgname": "libseccomp",
@@ -16287,19 +16410,20 @@
   {
     "pkgname": "perl",
     "pkgtype": "pie",
-    "version": "5.38.2",
+    "version": "5.40.1",
     "license": "GPL-1.0-or-later",
     "summary": "Highly capable, feature-rich programming language",
     "web-url": "https://www.perl.org/",
     "git-url": "https://github.com/perl/perl5",
-    "src-url": "https://www.cpan.org/src/5.0/perl-5.38.2.tar.xz",
-    "src-uri": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.38.2.tar.xz",
-    "src-sha": "d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8",
+    "src-url": "https://www.cpan.org/src/5.0/perl-5.40.1.tar.xz",
+    "src-uri": "https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.40.1.tar.xz",
+    "src-sha": "dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f",
+    "dep-pkg": "libdb libgdbm",
     "dep-upp": "curl bsdtar gmake",
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "install": "run ./Configure \\\n    -des \\\n    -Dprefix=\"$PACKAGE_INSTALL_DIR\" \\\n    -Dman1dir=\"$PACKAGE_INSTALL_DIR/share/man/man1\" \\\n    -Dman3dir=\"$PACKAGE_INSTALL_DIR/share/man/man3\" \\\n    -Dcc=\"'$CC'\" \\\n    -Dar=\"'$AR'\" \\\n    -Dnm=\"'$NM'\" \\\n    -Dccflags=\"'$CFLAGS'\" \\\n    -Dldflags=\"'$LDFLAGS'\" \\\n    -Dcppflags=\"'$CPPFLAGS'\" \\\n    -Dmake=gmake \\\n    -Dusenm=false \\\n    -Dusedl=true \\\n    -Duselargefiles \\\n    -Duseshrplib \\\n    -Dusethreads\ngmakew\ngmakew install",
+    "install": "run ./Configure \\\n    -des \\\n    -Dprefix=\"$PACKAGE_INSTALL_DIR\" \\\n    -Dman1dir=\"$PACKAGE_INSTALL_DIR/share/man/man1\" \\\n    -Dman3dir=\"$PACKAGE_INSTALL_DIR/share/man/man3\" \\\n    -Dcc=\"'$CC'\" \\\n    -Dar=\"'$AR'\" \\\n    -Dnm=\"'$NM'\" \\\n    -Dlocincpth=\"'$libdb_INCLUDE_DIR $libgdbm_INCLUDE_DIR'\" \\\n    -Accflags=\"'$CFLAGS'\" \\\n    -Aldflags=\"'$LDFLAGS'\" \\\n    -Alddlflags=\"'-shared $LDFLAGS'\" \\\n    -Acppflags=\"'$CPPFLAGS'\" \\\n    -Dmake=gmake \\\n    -Dusenm=false \\\n    -Dusedl=true \\\n    -Duselargefiles \\\n    -Duseshrplib \\\n    -Dusethreads\ngmakew\ngmakew install",
     "dotweak": "__check_elf_files() {\n    :\n}"
   },
   {
@@ -21204,6 +21328,27 @@
     "binbstd": "1",
     "parallel": "1",
     "install": "run go mod init\nrun go mod tidy\ngow"
+  },
+  {
+    "pkgname": "xrdp",
+    "pkgtype": "pie",
+    "version": "0.10.2",
+    "license": "Apache-2.0",
+    "summary": "An open source RDP server",
+    "web-url": "https://www.xrdp.org/",
+    "git-url": "https://github.com/neutrinolabs/xrdp",
+    "src-url": "https://github.com/neutrinolabs/xrdp/releases/download/v0.10.2/xrdp-0.10.2.tar.gz",
+    "src-sha": "6e2b4fb719fbd74a42c1008afc670e5e2940c8cbf3d8977e78c8451f7d267b62",
+    "dep-pkg": "libopus libjpeg-turbo libopenssl libpam libfuse xorg-libxfixes xorg-libxrandr check cmocka",
+    "dep-lib": "xrandr xfixes -lm",
+    "dep-upp": "libtool nasm curl bsdtar gmake gm4 perl autoconf automake gmake",
+    "bsystem": "autotools",
+    "binbstd": "0",
+    "parallel": "1",
+    "onstart": "PACKAGE_CREATE_MOSTLY_STATICALLY_LINKED_EXECUTABLE=0",
+    "dopatch": "gsed -i 's|-Werror||g' configure.ac",
+    "dosetup": "run ./bootstrap\nexport TURBOJPEG_PATH=\"$libjpeg_turbo_INSTALL_DIR\"",
+    "install": "configure \\\n    --enable-pam \\\n    --enable-fuse \\\n    --enable-ipv6 \\\n    --enable-opus \\\n    --enable-tjpeg \\\n    --enable-vsock \\\n    --enable-shared \\\n    --disable-static \\\n    --disable-tests \\\n    --enable-strict-locations \\\n    --sysconfdir=\"$PACKAGE_INSTALL_DIR/etc\" \\\n    --localstatedir=\"$PACKAGE_INSTALL_DIR/var\""
   },
   {
     "pkgname": "xsel",

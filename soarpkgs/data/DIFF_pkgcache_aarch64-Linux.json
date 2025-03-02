@@ -123,6 +123,80 @@
   },
   {
     "_disabled": "false",
+    "pkg": "cmake",
+    "pkg_family": "cmake",
+    "pkg_id": "ppkg.bundle.cmake.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cmake-stable/cmake/cmake",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/cmake/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Cross-platform, open-source build system",
+    "distro_pkg": {
+      "alpine": [
+        "cmake"
+      ],
+      "archlinux": {
+        "aur": [
+          "cmake-git"
+        ],
+        "extra": [
+          "cmake"
+        ]
+      },
+      "debian": [
+        "cmake"
+      ],
+      "gnuguix": [
+        "cmake"
+      ],
+      "homebrew": [
+        "cmake"
+      ],
+      "nixpkgs": [
+        "cmake"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/cmake/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.cmake.org",
+      "https://gitlab.kitware.com/cmake/cmake"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "cmake==cpack",
+      "cmake==ctest"
+    ],
+    "repology": [
+      "cmake"
+    ],
+    "src_url": [
+      "https://gitlab.kitware.com/cmake/cmake"
+    ],
+    "tag": [
+      "build-system"
+    ],
+    "version": "3.31.5"
+  },
+  {
+    "_disabled": "false",
     "pkg": "discord",
     "pkg_family": "discord",
     "pkg_id": "nixpkgs.discord",
@@ -498,6 +572,90 @@
     "version": "4.43.0"
   },
   {
+    "_disabled": "false",
+    "pkg": "freerdp",
+    "pkg_family": "freerdp",
+    "pkg_id": "ppkg.bundle.freerdp.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/freerdp-stable/freerdp/freerdp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/freerdp/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Free implementation of the Remote Desktop Protocol [freerdp]",
+      "freerdp": "Free implementation of the Remote Desktop Protocol [freerdp]",
+      "freerdp-proxy": "A server binary allowing MITM proxying of RDP connections [freerdp]",
+      "freerdp-shadow-cli": "A utility for sharing a X display via RDP [freerdp]",
+      "winpr-hash": "NTLM hashing tool [freerdp]",
+      "winpr-makecert": "A tool to create X.509 certificates [freerdp]",
+      "wlfreerdp": "FreeRDP wayland client [freerdp]",
+      "xfreerdp": "FreeRDP X11 client [freerdp]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "freerdp"
+      ],
+      "archlinux": {
+        "aur": [
+          "freerdp-git"
+        ],
+        "extra": [
+          "freerdp"
+        ]
+      },
+      "gnuguix": [
+        "freerdp"
+      ],
+      "homebrew": [
+        "freerdp"
+      ],
+      "nixpkgs": [
+        "freerdp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/freerdp/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.freerdp.com",
+      "https://github.com/FreeRDP/FreeRDP"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "freerdp==freerdp-proxy",
+      "freerdp==freerdp-shadow-cli",
+      "freerdp==winpr-hash",
+      "freerdp==winpr-makecert",
+      "freerdp==wlfreerdp",
+      "freerdp==xfreerdp"
+    ],
+    "repology": [
+      "freerdp"
+    ],
+    "src_url": [
+      "https://github.com/FreeRDP/FreeRDP"
+    ],
+    "tag": [
+      "remote"
+    ],
+    "version": "3.12.0"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "replaced": [
@@ -803,56 +961,6 @@
       "editor"
     ],
     "version": "3.8"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "pixelpulse2",
-    "pkg_family": "pixelpulse2",
-    "pkg_id": "github.com.sounddrill31.pixelpulse2",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sounddrill31-pixelpulse2/pixelpulse2/pixelpulse2",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/pixelpulse2/appimage.sounddrill31.stable.yaml",
-    "category": [
-      "Development",
-      "Education",
-      "Science"
-    ],
-    "description": "Pixelpulse2 is a user interface for analog systems exploration.",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/pixelpulse2/appimage.sounddrill31.stable.yaml",
-    "homepage": [
-      "https://wiki.analog.com/university/tools/m1k/pixelpulse",
-      "https://sounddrill31.github.io/Pixelpulse2/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Souhrud Reddy (https://github.com/sounddrill31)"
-    ],
-    "note": [
-      "Pre Built AppImage, with Build-related changes. Check/Report @ https://github.com/sounddrill31/Pixelpulse2",
-      "Run it with --getudev flag the first time to configure udev rules. It may not detect the board otherwise",
-      "To reduce crashes, plug in your device after configuring the udev rule and opening the app"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/pixelpulse2/appimage/sounddrill31",
-    "provides": [
-      "pixelpulse2"
-    ],
-    "repology": [
-      "pixelpulse2"
-    ],
-    "src_url": [
-      "https://github.com/sounddrill31/Pixelpulse2"
-    ],
-    "tag": [
-      "pixelpulse2",
-      "adalm1000"
-    ],
-    "version": "13605952739"
   },
   {
     "_disabled": "false",
@@ -1165,7 +1273,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250301T195431"
+    "version": "250302T173149"
   },
   {
     "_disabled": "false",
@@ -1225,6 +1333,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.8.2t(2025-03-01at22:02:42)"
+    "version": "Twilightbuild-1.8.2t(2025-03-02at13:03:49)"
   }
 ]

@@ -113,10 +113,10 @@
  1.9M   │ │ │ ├── x86_64-Linux.db
  1.0M   │ │ │ ├── aarch64-Linux.json
  796K   │ │ │ ├── aarch64-Linux.db
- 260K   │ │ │ ├── x86_64-Linux.db.cba
+ 264K   │ │ │ ├── x86_64-Linux.db.cba
  244K   │ │ │ ├── x86_64-Linux.json.cba
  212K   │ │ │ ├── x86_64-Linux.db.zstd
- 204K   │ │ │ ├── x86_64-Linux.db.xz
+ 200K   │ │ │ ├── x86_64-Linux.db.xz
  192K   │ │ │ ├── x86_64-Linux.json.zstd
  184K   │ │ │ ├── x86_64-Linux.json.xz
  108K   │ │ │ ├── aarch64-Linux.db.cba
@@ -261,15 +261,15 @@
  5.4M   ├─┬ pkgcache
  5.3M   │ ├─┬ data
  972K   │ │ ├── x86_64-Linux.db
- 900K   │ │ ├── x86_64-Linux.json
+ 904K   │ │ ├── x86_64-Linux.json
  852K   │ │ ├── x86_64-Linux.sdb
  488K   │ │ ├── aarch64-Linux.db
  436K   │ │ ├── aarch64-Linux.json
  384K   │ │ ├── aarch64-Linux.sdb
  116K   │ │ ├── x86_64-Linux.sdb.cba
  112K   │ │ ├── x86_64-Linux.db.cba
- 104K   │ │ ├── x86_64-Linux.json.cba
   96K   │ │ ├── x86_64-Linux.sdb.zstd
+  96K   │ │ ├── x86_64-Linux.json.cba
   92K   │ │ ├── x86_64-Linux.db.zstd
   88K   │ │ ├── x86_64-Linux.sdb.xz
   88K   │ │ ├── x86_64-Linux.db.xz
@@ -283,7 +283,7 @@
   48K   │ │ ├── aarch64-Linux.db.zstd
   48K   │ │ ├── aarch64-Linux.db.xz
   44K   │ │ ├── aarch64-Linux.json.zstd
-  40K   │ │ ├── aarch64-Linux.json.xz
+  44K   │ │ ├── aarch64-Linux.json.xz
  4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.bsum

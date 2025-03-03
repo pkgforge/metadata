@@ -26,7 +26,18 @@ sudo chmod -v 'a+x' "/usr/local/bin/soarql"
 #-------------------------------------------------------#
 ##Get All Pkgs
 echo -e "\n[+] Fetching Package List <== https://github.com/orgs/pkgforge/packages\n"
-gh api "/orgs/pkgforge/packages?package_type=container" --paginate | jq -r '.[] | select(.visibility=="public") | .name' | grep -i 'bincache' | sort -u -o "${TMPDIR}/ghcr_pkgs.tmp"
+ for i in {1..5}; do
+   gh api "/orgs/pkgforge/packages?package_type=container" --paginate 2>/dev/null |& cat - > "${TMPDIR}/ghcr_pkgs.tmp.json"
+   unset PKG_GH_TMP; PKG_GH_TMP="$(jq -r '.[] | select(.visibility=="public") | .name' "${TMPDIR}/ghcr_pkgs.tmp.json" 2>/dev/null | grep -iv 'null' | sort -u | wc -l | tr -cd '0-9')"
+   if [[ "${PKG_GH_TMP}" -lt 50 ]]; then
+     echo "Retrying... ${i}/5"
+     sleep 2
+   elif [[ "${PKG_GH_TMP}" -gt 50 ]]; then
+     jq -r '.[] | select(.visibility=="public") | .name' "${TMPDIR}/ghcr_pkgs.tmp.json" | grep -i 'bincache' | sort -u -o "${TMPDIR}/ghcr_pkgs.tmp"
+     unset PKG_GH_TMP
+     break
+   fi
+ done
 PKG_COUNT_TMP="$(wc -l < "${TMPDIR}/ghcr_pkgs.tmp" | tr -d '[:space:]')" ; export PKG_COUNT_TMP
 if [[ "${PKG_COUNT_TMP}" -le 3000 ]]; then
  echo -e "\n[X] FATAL: Package Count is < 3000, API Failed?\n"
@@ -93,6 +104,9 @@ generate_meta()
   MANIFEST_JSON="$(basename $(mktemp -u --suffix=-manifest)).json"
   METADATA_JSON="$(basename $(mktemp -u --suffix=-metadata)).json"
   jq --arg pkg "${PKG%/*}" 'map(select(.ghcr_pkg | contains($pkg | gsub(" "; ""))))' "${TMPDIR}/sbuilds.json" > "${TMPDIR}/${TMPJSON}"
+  if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/${TMPJSON}" | tr -d '[:space:]' | wc -l)" -gt 1 ]]; then
+    jq --arg pkg "${PKG}" 'map(select(.ghcr_pkg | ascii_downcase | gsub("\\s+"; "") == ($pkg | ascii_downcase | gsub("\\s+"; ""))))' "${TMPDIR}/sbuilds.json" > "${TMPDIR}/${TMPJSON}"
+  fi
  #Check if contains needed fields
   if jq -e 'map(select(.ghcr_pkg != null and .ghcr_pkg != "")) | length > 0' "${TMPDIR}/${TMPJSON}" > /dev/null; then
    #Get Tag
@@ -300,6 +314,23 @@ generate_meta()
                else [.]
                end
              ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="hf_pkg" validate_json
+           #Add/Update replaces
+            echo -e "[+] Adding/Updating [${PKG}] ('replaces')"
+            jq --arg ghcr_pkg "$(jq -r '.ghcr_pkg | split(":")[0]' "${TMPDIR}/${METADATA_JSON}.tmp01")" \
+              --slurpfile replaces "${TMPDIR}/${TMPJSON}" '
+              to_entries |
+              map(
+                if .key == "shasum" then
+                  [
+                    {
+                      key: "replaces",
+                      value: ($replaces[0] | map(select(.ghcr_pkg as $pkg | $ghcr_pkg | contains($pkg))) | .[0].replaces // [])
+                    },
+                    .
+                  ]
+                else [.] end
+              ) | flatten | from_entries
+            ' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="replaces" validate_json
            #Cleanup & Finalize
              echo -e "[+] Cleaning Up..."
              jq 'walk(if type == "object" then with_entries(select(.value != "" and .value != [] and .value != {})) else . end)' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="cleanup" validate_json

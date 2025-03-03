@@ -56,7 +56,7 @@
       "api",
       "graphql"
     ],
-    "version": "v8.1.6"
+    "version": "v8.2.0"
   },
   {
     "_disabled": "false",
@@ -119,81 +119,7 @@
       "system-information",
       "sysutils"
     ],
-    "version": "HEAD-ef6c91f-250302T101418"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "cmake",
-    "pkg_family": "cmake",
-    "pkg_id": "ppkg.bundle.cmake.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cmake-stable/cmake/cmake",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/cmake/appimage.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Cross-platform, open-source build system",
-    "distro_pkg": {
-      "alpine": [
-        "cmake"
-      ],
-      "archlinux": {
-        "aur": [
-          "cmake-git"
-        ],
-        "extra": [
-          "cmake"
-        ]
-      },
-      "debian": [
-        "cmake"
-      ],
-      "gnuguix": [
-        "cmake"
-      ],
-      "homebrew": [
-        "cmake"
-      ],
-      "nixpkgs": [
-        "cmake"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/cmake/appimage.ppkg.stable.yaml",
-    "homepage": [
-      "https://www.cmake.org",
-      "https://gitlab.kitware.com/cmake/cmake"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Custom"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "provides": [
-      "cmake==cpack",
-      "cmake==ctest"
-    ],
-    "repology": [
-      "cmake"
-    ],
-    "src_url": [
-      "https://gitlab.kitware.com/cmake/cmake"
-    ],
-    "tag": [
-      "build-system"
-    ],
-    "version": "3.31.5"
+    "version": "HEAD-f9e98a2-250302T200506"
   },
   {
     "_disabled": "false",
@@ -513,149 +439,6 @@
     "version": "1.11.93"
   },
   {
-    "_disabled": "false",
-    "pkg": "fanficfare",
-    "pkg_family": "fanficfare",
-    "pkg_id": "sharun.wrappe.pypi.fanficfare",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-fanficfare/fanficfare/fanficfare",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fanficfare/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Tool to make eBooks from stories on fanfiction and other websites",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "fanficfare",
-          "fanficfare-git"
-        ]
-      },
-      "nixpkgs": [
-        "fanficfare"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/fanficfare/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/JimmXinu/FanFicFare"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/fanficfare/archive/sharun",
-    "provides": [
-      "fanficfare"
-    ],
-    "repology": [
-      "fanficfare"
-    ],
-    "src_url": [
-      "https://pypi.org/project/fanficfare"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "4.43.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "freerdp",
-    "pkg_family": "freerdp",
-    "pkg_id": "ppkg.bundle.freerdp.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/freerdp-stable/freerdp/freerdp",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/freerdp/appimage.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Free implementation of the Remote Desktop Protocol [freerdp]",
-      "freerdp": "Free implementation of the Remote Desktop Protocol [freerdp]",
-      "freerdp-proxy": "A server binary allowing MITM proxying of RDP connections [freerdp]",
-      "freerdp-shadow-cli": "A utility for sharing a X display via RDP [freerdp]",
-      "winpr-hash": "NTLM hashing tool [freerdp]",
-      "winpr-makecert": "A tool to create X.509 certificates [freerdp]",
-      "wlfreerdp": "FreeRDP wayland client [freerdp]",
-      "xfreerdp": "FreeRDP X11 client [freerdp]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "freerdp"
-      ],
-      "archlinux": {
-        "aur": [
-          "freerdp-git"
-        ],
-        "extra": [
-          "freerdp"
-        ]
-      },
-      "gnuguix": [
-        "freerdp"
-      ],
-      "homebrew": [
-        "freerdp"
-      ],
-      "nixpkgs": [
-        "freerdp"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/freerdp/appimage.ppkg.stable.yaml",
-    "homepage": [
-      "https://www.freerdp.com",
-      "https://github.com/FreeRDP/FreeRDP"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "provides": [
-      "freerdp==freerdp-proxy",
-      "freerdp==freerdp-shadow-cli",
-      "freerdp==winpr-hash",
-      "freerdp==winpr-makecert",
-      "freerdp==wlfreerdp",
-      "freerdp==xfreerdp"
-    ],
-    "repology": [
-      "freerdp"
-    ],
-    "src_url": [
-      "https://github.com/FreeRDP/FreeRDP"
-    ],
-    "tag": [
-      "remote"
-    ],
-    "version": "3.12.0"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "replaced": [
@@ -964,6 +747,57 @@
   },
   {
     "_disabled": "false",
+    "pkg": "pixelpulse2",
+    "pkg_family": "pixelpulse2",
+    "pkg_id": "github.com.pkgforge-dev.pixelpulse2",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dev-pixelpulse2/pixelpulse2/pixelpulse2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/pixelpulse2/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "Development",
+      "Education",
+      "Science"
+    ],
+    "description": "Pixelpulse2 is a user interface for analog systems exploration.",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/pixelpulse2/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://wiki.analog.com/university/tools/m1k/pixelpulse",
+      "https://sounddrill31.github.io/Pixelpulse2/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Souhrud Reddy (https://github.com/sounddrill31)"
+    ],
+    "note": [
+      "Pre Built AppImage, with Build-related changes. Check/Report @ https://github.com/pkgforge-dev/Pixelpulse2-AppImage",
+      "[PORTABLE] (Works on AnyLinux)",
+      "Run it with --getudev flag the first time to configure udev rules. It may not detect the board otherwise",
+      "To reduce crashes, plug in your device after configuring the udev rule and opening the app"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/pixelpulse2/appimage/pkgforge-dev",
+    "provides": [
+      "pixelpulse2"
+    ],
+    "repology": [
+      "pixelpulse2"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Pixelpulse2-AppImage"
+    ],
+    "tag": [
+      "pixelpulse2",
+      "adalm1000"
+    ],
+    "version": "13618778201"
+  },
+  {
+    "_disabled": "false",
     "pkg": "player432hz",
     "pkg_family": "player432hz",
     "pkg_id": "github.com.mysteryx93.HanumanInstituteApps",
@@ -1034,6 +868,161 @@
       "youtube-downloader"
     ],
     "version": "v3.3.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "scons",
+    "pkg_family": "scons",
+    "pkg_id": "sharun.wrappe.pypi.scons",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-scons/scons/scons",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/scons/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A Python replacement for Makefile-based build systems",
+    "distro_pkg": {
+      "alpine": [
+        "scons"
+      ],
+      "archlinux": {
+        "aur": [
+          "scons2"
+        ],
+        "extra": [
+          "scons"
+        ]
+      },
+      "debian": [
+        "scons"
+      ],
+      "gnuguix": [
+        "scons"
+      ],
+      "homebrew": [
+        "scons"
+      ],
+      "nixpkgs": [
+        "scons"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/scons/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://scons.org",
+      "https://github.com/SCons/scons"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/scons/archive/sharun",
+    "provides": [
+      "scons"
+    ],
+    "repology": [
+      "scons"
+    ],
+    "src_url": [
+      "https://pypi.org/project/scons"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "4.9.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sudo-rs",
+    "pkg_family": "sudo-rs",
+    "pkg_id": "sharun.wrappe.sudo-rs.source",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-source/sudo-rs/sudo-rs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/sudo-rs/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Memory safe implementation of sudo and su",
+      "cvtsudoers": "Convert between sudoers file formats [sudo-rs]",
+      "sudo": "Execute a command as another user [sudo-rs]",
+      "sudo.conf": "Configuration for sudo front-end [sudo-rs]",
+      "sudo_logsrvd": "sudo event and I/O log server [sudo-rs]",
+      "sudo_logsrvd.conf": "Configuration for sudo_logsrvd [sudo-rs]",
+      "sudo_sendlog": "Send sudo I/O log to log server [sudo-rs]",
+      "sudoedit": "An extension of the sudo -e command to edit a file [sudo-rs]",
+      "sudoers": "Default sudo security policy plugin [sudo-rs]",
+      "sudoers.dist": "Default configuration file for sudoers [sudo-rs]",
+      "sudoreplay": "Replay sudo session logs [sudo-rs]",
+      "su": "Change user id or become root [sudo-rs]",
+      "visudo": "Edit the sudoers file [sudo-rs]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "sudo-rs",
+          "sudo-rs-git"
+        ]
+      },
+      "nixpkgs": [
+        "sudo-rs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/sudo-rs/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/trifectatechfoundation/sudo-rs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trifectatechfoundation/sudo-rs",
+      "Built Using Sharun. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "sudo must be owned by uid 0 and have the setuid bit set",
+      "chown -v 'root:root' sudo",
+      "chmod -v 'a=rx,u+ws' sudo",
+      "Requires '/etc/sudoers' file & '/etc/sudoers.d' dir",
+      "Also requires PAM to be setup: https://github.com/trifectatechfoundation/sudo-rs#differences-from-original-sudo"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/sudo-rs/archive/sharun",
+    "provides": [
+      "su",
+      "sudo",
+      "visudo"
+    ],
+    "repology": [
+      "sudo-rs"
+    ],
+    "src_url": [
+      "https://github.com/trifectatechfoundation/sudo-rs"
+    ],
+    "tag": [
+      "sudo"
+    ],
+    "version": "HEAD-84552b9-250302T222053"
   },
   {
     "_disabled": "true",
@@ -1229,51 +1218,76 @@
   },
   {
     "_disabled": "false",
-    "pkg": "xashds",
-    "pkg_family": "xashds",
-    "pkg_id": "wrappe.xashds",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.source.yt-dlp",
     "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.source.yaml",
     "category": [
       "Utility"
     ],
-    "description": "Xash3D FWGS Dedicated Server",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.source.yaml",
     "homepage": [
-      "https://github.com/FWGS/xash3d-fwgs"
+      "https://github.com/yt-dlp/yt-dlp"
     ],
     "host": [
       "aarch64-linux",
       "x86_64-linux"
     ],
     "license": [
-      "GPL"
+      "Unlicense"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
-      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
       "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "Host Dependencies: A lot, please use soar log to view the ldd output"
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
     "provides": [
-      "xashds==xash"
+      "yt-dlp"
     ],
     "repology": [
-      "xash3d-fwgs"
+      "yt-dlp"
     ],
     "src_url": [
-      "https://github.com/FWGS/xash3d-fwgs"
+      "https://github.com/yt-dlp/yt-dlp"
     ],
     "tag": [
       "Utility"
     ],
-    "version": "250302T173149"
+    "version": "HEAD-7d18fed-250303T001001"
   },
   {
     "_disabled": "false",
@@ -1333,6 +1347,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.8.2t(2025-03-02at13:03:49)"
+    "version": "Twilightbuild-1.8.2t(2025-03-02at20:37:42)"
   }
 ]

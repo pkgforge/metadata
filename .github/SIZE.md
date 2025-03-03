@@ -1,5 +1,5 @@
 ```mathematica
- 309M └─┬ main
+ 310M └─┬ main
  171M   ├─┬ misc
  171M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -108,12 +108,12 @@
   12K   │ │   ├── gen_meta_old.sh
  8.0K   │ │   └── gen_meta_tmp.sh
  8.4M   │ ├─┬ cargo-bins
- 8.3M   │ │ ├─┬ data
+ 8.4M   │ │ ├─┬ data
  2.7M   │ │ │ ├── x86_64-Linux.json
  1.9M   │ │ │ ├── x86_64-Linux.db
  1.1M   │ │ │ ├── aarch64-Linux.json
- 812K   │ │ │ ├── aarch64-Linux.db
- 260K   │ │ │ ├── x86_64-Linux.db.cba
+ 816K   │ │ │ ├── aarch64-Linux.db
+ 264K   │ │ │ ├── x86_64-Linux.db.cba
  244K   │ │ │ ├── x86_64-Linux.json.cba
  212K   │ │ │ ├── x86_64-Linux.db.zstd
  204K   │ │ │ ├── x86_64-Linux.db.xz
@@ -123,8 +123,8 @@
  104K   │ │ │ ├── aarch64-Linux.json.cba
   92K   │ │ │ ├── aarch64-Linux.db.zstd
   88K   │ │ │ ├── aarch64-Linux.db.xz
-  80K   │ │ │ ├── aarch64-Linux.json.zstd
-  76K   │ │ │ ├── aarch64-Linux.json.xz
+  84K   │ │ │ ├── aarch64-Linux.json.zstd
+  80K   │ │ │ ├── aarch64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum

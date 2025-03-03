@@ -1121,7 +1121,7 @@
       "knowledge-base",
       "wiki"
     ],
-    "version": "v0.20.3"
+    "version": "v0.20.4"
   },
   {
     "_disabled": "false",
@@ -3867,7 +3867,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-0a4a546-250228T120049"
+    "version": "HEAD-58e6648-250303T134750"
   },
   {
     "_disabled": "false",
@@ -4535,7 +4535,7 @@
       "sysutils",
       "utils"
     ],
-    "version": "HEAD-c6d50bb-250218T211230"
+    "version": "HEAD-4b758aa-250303T120248"
   },
   {
     "_disabled": "false",
@@ -4977,7 +4977,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-1c78050-250224T175125"
+    "version": "HEAD-267a150-250303T091304"
   },
   {
     "_disabled": "false",
@@ -5732,6 +5732,60 @@
       "p2p"
     ],
     "version": "HEAD-29eb0b4-250131T161712"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "beszel",
+    "pkg_family": "beszel",
+    "pkg_id": "github.com.henrygd.beszel.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/beszel-stable/beszel/beszel",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/beszel/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Lightweight server monitoring hub with historical data, docker stats, and alerts",
+    "distro_pkg": {
+      "alpine": [
+        "beszel"
+      ],
+      "nixpkgs": [
+        "beszel"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/beszel/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/henrygd/beszel"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/henrygd/beszel"
+    ],
+    "provides": [
+      "beszel",
+      "beszel-agent"
+    ],
+    "repology": [
+      "beszel"
+    ],
+    "src_url": [
+      "https://github.com/henrygd/beszel"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v0.9.1"
   },
   {
     "_disabled": "false",
@@ -11263,6 +11317,116 @@
   },
   {
     "_disabled": "false",
+    "pkg": "caido",
+    "pkg_family": "caido",
+    "pkg_id": "github.com.caido.caido.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caido-stable/caido/caido",
+    "app_id": "io.caido.caido",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/caido/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Lightweight web security auditing toolkit",
+    "distro_pkg": {
+      "homebrew": [
+        "caido"
+      ],
+      "nixpkgs": [
+        "caido"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/caido/appimage.official.stable.yaml",
+    "homepage": [
+      "https://caido.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/caido/caido",
+      "You may need to run this with: --no-sandbox"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/caido/appimage/official",
+    "provides": [
+      "caido"
+    ],
+    "repology": [
+      "caido"
+    ],
+    "src_url": [
+      "https://github.com/caido/caido"
+    ],
+    "tag": [
+      "security"
+    ],
+    "version": "v0.46.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "caido-cli",
+    "pkg_family": "caido-cli",
+    "pkg_id": "sharun.wrappe.stable.caido-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caido-cli/caido-cli/caido-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/caido-cli/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI for Caido: Lightweight web security auditing toolkit",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "caido-cli"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/caido-cli/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://caido.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This version was repacked from official Release"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/caido-cli/archive/sharun",
+    "provides": [
+      "caido-cli"
+    ],
+    "repology": [
+      "caido-cli"
+    ],
+    "src_url": [
+      "https://github.com/caido/caido"
+    ],
+    "tag": [
+      "security"
+    ],
+    "version": "v0.46.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "cargo-binstall",
     "pkg_family": "cargo-binstall",
     "pkg_id": "github.com.cargo-bins.cargo-binstall.source",
@@ -11364,7 +11528,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-ca048f0-250219T003334"
+    "version": "HEAD-cfcf014-250303T212709"
   },
   {
     "_disabled": "false",
@@ -16350,7 +16514,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-ba57fdb-250303T073224"
+    "version": "HEAD-8b6bd7c-250303T114237"
   },
   {
     "_disabled": "false",
@@ -16667,7 +16831,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-ba57fdb-250303T073224"
+    "version": "HEAD-8b6bd7c-250303T114237"
   },
   {
     "_disabled": "false",
@@ -17909,7 +18073,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-6040e00-250220T073608"
+    "version": "HEAD-5761f4f-250303T192926"
   },
   {
     "_disabled": "false",
@@ -18215,7 +18379,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-5338b2c-250217T132845"
+    "version": "HEAD-0ec6ce6-250303T111814"
   },
   {
     "_disabled": "false",
@@ -24637,7 +24801,7 @@
     "tag": [
       "sysutils"
     ],
-    "version": "HEAD-c0865f5-250302T182443"
+    "version": "HEAD-a74f90d-250303T104819"
   },
   {
     "_disabled": "false",
@@ -24704,7 +24868,7 @@
     "tag": [
       "find"
     ],
-    "version": "HEAD-595c1af-250302T175134"
+    "version": "HEAD-da7ccc2-250303T003119"
   },
   {
     "_disabled": "false",
@@ -26033,7 +26197,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "137.0.20250302213319"
+    "version": "137.0.20250303090051"
   },
   {
     "_disabled": "false",
@@ -27374,7 +27538,7 @@
     "tag": [
       "fzf"
     ],
-    "version": "v0.60.2"
+    "version": "v0.60.3"
   },
   {
     "_disabled": "false",
@@ -28404,7 +28568,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-26684d3-250303T060253"
+    "version": "HEAD-f41733f-250303T120327"
   },
   {
     "_disabled": "false",
@@ -30250,7 +30414,7 @@
     "tag": [
       "gitlab"
     ],
-    "version": "HEAD-fb13d62-250227T090418"
+    "version": "HEAD-697210d-250303T075919"
   },
   {
     "_disabled": "false",
@@ -30741,7 +30905,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-e825f24-250228T184045"
+    "version": "HEAD-8c27d8f-250303T134552"
   },
   {
     "_disabled": "false",
@@ -30806,7 +30970,7 @@
     "tag": [
       "markdown"
     ],
-    "version": "HEAD-2da054e-250226T203911"
+    "version": "HEAD-7dc4b9c-250303T103624"
   },
   {
     "_disabled": "false",
@@ -31699,7 +31863,7 @@
     "tag": [
       "matrix"
     ],
-    "version": "HEAD-c78ef2e-250303T000220"
+    "version": "HEAD-e20f316-250303T125716"
   },
   {
     "_disabled": "false",
@@ -31947,7 +32111,7 @@
     "tag": [
       "security"
     ],
-    "version": "HEAD-76ccee5-250224T102414"
+    "version": "HEAD-047453a-250303T095053"
   },
   {
     "_disabled": "false",
@@ -32262,7 +32426,6 @@
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/benjamimgois/goverlay"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/goverlay/appimage/official",
     "provides": [
       "goverlay"
     ],
@@ -32339,7 +32502,6 @@
     "note": [
       "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/benjamimgois/goverlay"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/goverlay/appimage/official",
     "provides": [
       "goverlay"
     ],
@@ -32821,7 +32983,7 @@
     "tag": [
       "gpg"
     ],
-    "version": "HEAD-b3c2ce8-250226T114910"
+    "version": "HEAD-e48ec95-250303T114125"
   },
   {
     "_disabled": "false",
@@ -33587,7 +33749,7 @@
       "shell",
       "tui"
     ],
-    "version": "HEAD-db86a90-250224T110537"
+    "version": "HEAD-dbac6a8-250303T102958"
   },
   {
     "_disabled": "false",
@@ -34366,7 +34528,7 @@
     "tag": [
       "hetzner"
     ],
-    "version": "HEAD-b4b9f34-250302T015700"
+    "version": "HEAD-cb1bb68-250303T132132"
   },
   {
     "_disabled": "false",
@@ -35840,7 +36002,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-3a11d22-250226T211706"
+    "version": "HEAD-3f2e1c0-250303T125033"
   },
   {
     "_disabled": "false",
@@ -38857,7 +39019,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-03-02"
+    "version": "2025-03-03"
   },
   {
     "_disabled": "false",
@@ -41841,7 +42003,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-cd02a47-250225T142816"
+    "version": "HEAD-d1b316f-250303T111443"
   },
   {
     "_disabled": "false",
@@ -44870,7 +45032,7 @@
     "tag": [
       "minifier"
     ],
-    "version": "HEAD-2d27b5b-250128T181738"
+    "version": "HEAD-250c2ae-250303T111316"
   },
   {
     "_disabled": "false",
@@ -46836,7 +46998,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-a948780-250303T115558"
+    "version": "HEAD-a85ee2b-250303T193124"
   },
   {
     "_disabled": "false",
@@ -48495,7 +48657,7 @@
       "recon",
       "security"
     ],
-    "version": "HEAD-aefe32d-250227T164236"
+    "version": "HEAD-3a3f5e2-250303T161916"
   },
   {
     "_disabled": "false",
@@ -50232,7 +50394,7 @@
     "tag": [
       "pager"
     ],
-    "version": "HEAD-6fe96f9-250226T143305"
+    "version": "HEAD-2167387-250303T194946"
   },
   {
     "_disabled": "false",
@@ -54390,7 +54552,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-e952014-250302T163348"
+    "version": "HEAD-48893ba-250303T074034"
   },
   {
     "_disabled": "false",
@@ -55105,7 +55267,7 @@
       "provenance",
       "security"
     ],
-    "version": "HEAD-daf79c1-250302T085153"
+    "version": "HEAD-73bac31-250303T134148"
   },
   {
     "_disabled": "false",
@@ -55518,7 +55680,7 @@
     "tag": [
       "linter"
     ],
-    "version": "HEAD-b04d5a7-250226T222731"
+    "version": "HEAD-88d5434-250303T131940"
   },
   {
     "_disabled": "false",
@@ -58986,7 +59148,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-dbf2c77-250225T110535"
+    "version": "HEAD-38d6c4f-250303T115238"
   },
   {
     "_disabled": "false",
@@ -59045,7 +59207,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-1d4ddd8-250224T115457"
+    "version": "HEAD-fac4513-250303T110617"
   },
   {
     "_disabled": "false",
@@ -60577,7 +60739,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-c095839-250228T100640"
+    "version": "HEAD-333d07d-250303T081822"
   },
   {
     "_disabled": "false",
@@ -68054,7 +68216,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2.10.0"
+    "version": "2.11.0"
   },
   {
     "_disabled": "false",
@@ -69042,7 +69204,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3a6ef8d-250303T035443"
+    "version": "HEAD-ed57a46-250303T134246"
   },
   {
     "_disabled": "false",
@@ -72553,7 +72715,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-1cc2656-250228T142825"
+    "version": "HEAD-7a73f1d-250303T113002"
   },
   {
     "_disabled": "false",
@@ -74977,6 +75139,87 @@
       "security"
     ],
     "version": "HEAD-281fcdd-250226T115846"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zmap",
+    "pkg_family": "zmap",
+    "pkg_id": "sharun.wrappe.source.zmap",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-zmap/zmap/zmap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zmap/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast single packet network scanner designed for Internet-wide network surveys",
+      "zblocklist": "Tool for limiting and deduplicating a list of IP addresses using a blocklist or allowlist [zmap]",
+      "ziterate": "IP permutation generation file [zmap]",
+      "zmap": "The Fast Internet Scanner [zmap]",
+      "ztee": "Output buffer and splitter for use with ZMap output data [zmap]",
+      "ztests": "A tests harness tool for zmap [zmap]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "zmap"
+      ],
+      "archlinux": {
+        "aur": [
+          "zmap-git"
+        ],
+        "extra": [
+          "zmap"
+        ]
+      },
+      "debian": [
+        "zmap"
+      ],
+      "homebrew": [
+        "zmap"
+      ],
+      "nixpkgs": [
+        "zmap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zmap/archive.sharun.source.yaml",
+    "homepage": [
+      "https://zmap.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zmap/archive/sharun",
+    "provides": [
+      "zblocklist",
+      "ziterate",
+      "zmap",
+      "ztee",
+      "ztests"
+    ],
+    "repology": [
+      "zmap-network-scanner"
+    ],
+    "src_url": [
+      "https://github.com/zmap/zmap"
+    ],
+    "tag": [
+      "security"
+    ],
+    "version": "HEAD-be51080-250302T133311"
   },
   {
     "_disabled": "false",

@@ -218,7 +218,7 @@
  192K   │ │ ├── INDEX.db.cba
  188K   │ │ ├── INDEX.json.xz
  184K   │ │ ├── INDEX.json.zstd
- 168K   │ │ ├── GH_REPO.md
+ 172K   │ │ ├── GH_REPO.md
  152K   │ │ ├── INDEX.db.zstd
  144K   │ │ ├── INDEX.db.xz
   64K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json

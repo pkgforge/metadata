@@ -107,7 +107,7 @@
   16K   │ │   ├── gen_meta.sh
   12K   │ │   ├── gen_meta_old.sh
  8.0K   │ │   └── gen_meta_tmp.sh
- 8.3M   │ ├─┬ cargo-bins
+ 8.4M   │ ├─┬ cargo-bins
  8.3M   │ │ ├─┬ data
  2.7M   │ │ │ ├── x86_64-Linux.json
  1.9M   │ │ │ ├── x86_64-Linux.db
@@ -136,7 +136,8 @@
  4.0K   │ │ │ ├── aarch64-Linux.json.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
- 4.0K   │ │ │ └── aarch64-Linux.db.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.bsum
+ 4.0K   │ │ │ └── TOTAL.json
   28K   │ │ └─┬ scripts
   24K   │ │   └── gen_meta.sh
  5.5M   │ ├─┬ appimagehub

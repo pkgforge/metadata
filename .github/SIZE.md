@@ -108,19 +108,19 @@
   12K   │ │   ├── gen_meta_old.sh
  8.0K   │ │   └── gen_meta_tmp.sh
  8.4M   │ ├─┬ cargo-bins
- 8.3M   │ │ ├─┬ data
+ 8.4M   │ │ ├─┬ data
  2.7M   │ │ │ ├── x86_64-Linux.json
- 1.9M   │ │ │ ├── x86_64-Linux.db
+ 2.0M   │ │ │ ├── x86_64-Linux.db
  1.1M   │ │ │ ├── aarch64-Linux.json
  816K   │ │ │ ├── aarch64-Linux.db
- 260K   │ │ │ ├── x86_64-Linux.db.cba
+ 264K   │ │ │ ├── x86_64-Linux.db.cba
  244K   │ │ │ ├── x86_64-Linux.json.cba
  212K   │ │ │ ├── x86_64-Linux.db.zstd
  204K   │ │ │ ├── x86_64-Linux.db.xz
  192K   │ │ │ ├── x86_64-Linux.json.zstd
  184K   │ │ │ ├── x86_64-Linux.json.xz
- 108K   │ │ │ ├── aarch64-Linux.db.cba
- 100K   │ │ │ ├── aarch64-Linux.json.cba
+ 112K   │ │ │ ├── aarch64-Linux.db.cba
+ 104K   │ │ │ ├── aarch64-Linux.json.cba
   92K   │ │ │ ├── aarch64-Linux.db.zstd
   88K   │ │ │ ├── aarch64-Linux.db.xz
   84K   │ │ │ ├── aarch64-Linux.json.zstd

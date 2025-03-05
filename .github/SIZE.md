@@ -47,7 +47,7 @@
 1.0M   │ │ ├── x86_64-Linux.json.cba
 1.0M   │ │ ├── aarch64-Linux.sdb.cba
 992K   │ │ ├── aarch64-Linux.json.cba
-796K   │ │ ├── x86_64-Linux.sdb.zstd
+800K   │ │ ├── x86_64-Linux.sdb.zstd
 772K   │ │ ├── x86_64-Linux.db.zstd
 764K   │ │ ├── aarch64-Linux.sdb.zstd
 760K   │ │ ├── x86_64-Linux.db.xz
@@ -214,7 +214,7 @@
 788K   │ │ ├── pub_issues_binaries.txt
 316K   │ │ ├── INDEX.json.cba
 304K   │ │ ├── pub_issues_packages.txt
-260K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+236K   │ │ ├── DIFF_bincache_aarch64-Linux.json
 204K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 196K   │ │ ├── INDEX.json.xz
 196K   │ │ ├── INDEX.db.cba
@@ -222,7 +222,7 @@
 180K   │ │ ├── GH_REPO.md
 156K   │ │ ├── INDEX.db.zstd
 148K   │ │ ├── INDEX.db.xz
- 68K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 64K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  44K   │ │ ├── URLS.txt
  36K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  28K   │ │ ├── GH_REPO_ARCHIVED.md
@@ -259,20 +259,20 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-5.8M   ├─┬ pkgcache
+5.9M   ├─┬ pkgcache
 5.7M   │ ├─┬ data
 1.0M   │ │ ├── x86_64-Linux.db
-956K   │ │ ├── x86_64-Linux.json
-892K   │ │ ├── x86_64-Linux.sdb
+964K   │ │ ├── x86_64-Linux.json
+896K   │ │ ├── x86_64-Linux.sdb
 544K   │ │ ├── aarch64-Linux.db
-484K   │ │ ├── aarch64-Linux.json
+488K   │ │ ├── aarch64-Linux.json
 424K   │ │ ├── aarch64-Linux.sdb
-124K   │ │ ├── x86_64-Linux.sdb.cba
+128K   │ │ ├── x86_64-Linux.sdb.cba
 124K   │ │ ├── x86_64-Linux.db.cba
 116K   │ │ ├── x86_64-Linux.json.cba
 100K   │ │ ├── x86_64-Linux.sdb.zstd
- 96K   │ │ ├── x86_64-Linux.db.zstd
- 92K   │ │ ├── x86_64-Linux.sdb.xz
+100K   │ │ ├── x86_64-Linux.db.zstd
+ 96K   │ │ ├── x86_64-Linux.sdb.xz
  92K   │ │ ├── x86_64-Linux.db.xz
  88K   │ │ ├── x86_64-Linux.json.zstd
  84K   │ │ ├── x86_64-Linux.json.xz
@@ -280,8 +280,8 @@
  68K   │ │ ├── aarch64-Linux.db.cba
  64K   │ │ ├── aarch64-Linux.json.cba
  56K   │ │ ├── aarch64-Linux.sdb.zstd
+ 56K   │ │ ├── aarch64-Linux.db.zstd
  52K   │ │ ├── aarch64-Linux.sdb.xz
- 52K   │ │ ├── aarch64-Linux.db.zstd
  52K   │ │ ├── aarch64-Linux.db.xz
  48K   │ │ ├── aarch64-Linux.json.zstd
  48K   │ │ ├── aarch64-Linux.json.xz

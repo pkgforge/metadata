@@ -1523,75 +1523,6 @@
     "_disabled": "false",
     "pkg": "librewolf",
     "pkg_family": "librewolf",
-    "pkg_id": "gitlab.com.librewolf-community.browser.appimage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/librewolf/librewolf",
-    "app_id": "io.gitlab.librewolf-community",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/librewolf/appimage.official.stable.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "A fork of Firefox, focused on privacy, security and freedom",
-    "distro_pkg": {
-      "alpine": [
-        "librewolf"
-      ],
-      "archlinux": {
-        "aur": [
-          "librewolf",
-          "librewolf-bin",
-          "librewolf-hg"
-        ]
-      },
-      "gnuguix": [
-        "librewolf"
-      ],
-      "homebrew": [
-        "librewolf"
-      ],
-      "nixpkgs": [
-        "librewolf"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/librewolf/appimage.official.stable.yaml",
-    "homepage": [
-      "https://librewolf.net",
-      "https://librewolf-community.gitlab.io",
-      "https://gitlab.com/librewolf-community/browser/appimage"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/librewolf/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/librewolf-community/browser/appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/librewolf/appimage/official",
-    "provides": [
-      "librewolf"
-    ],
-    "repology": [
-      "librewolf"
-    ],
-    "src_url": [
-      "https://gitlab.com/librewolf-community/browser/appimage"
-    ],
-    "tag": [
-      "Browser"
-    ],
-    "version": "v136.0-2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "librewolf",
-    "pkg_family": "librewolf",
     "pkg_id": "runimage.cachyos.librewolf",
     "pkg_type": "runimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-librewolf/librewolf/librewolf",
@@ -2413,6 +2344,105 @@
       "Utility"
     ],
     "version": "3.113.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xash3d-fwgs",
+    "pkg_family": "xash3d-fwgs",
+    "pkg_id": "github.com.FWGS.xash3d-fwgs",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xash3d-fwgs/xash3d-fwgs/xash3d-fwgs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xash3d-fwgs/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Heavily modified fork of an original Xash3D Engine for Half Life",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "xash3d-fwgs-bin",
+          "xash3d-fwgs-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xash3d-fwgs/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xash3d-fwgs/appimage/official",
+    "provides": [
+      "xash3d-fwgs"
+    ],
+    "repology": [
+      "xash3d-fwgs"
+    ],
+    "src_url": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "tag": [
+      "utility"
+    ],
+    "version": "250306T094957"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xashds",
+    "pkg_family": "xashds",
+    "pkg_id": "wrappe.xashds",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Xash3D FWGS Dedicated Server",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
+    "provides": [
+      "xashds==xash"
+    ],
+    "repology": [
+      "xash3d-fwgs"
+    ],
+    "src_url": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "250306T094957"
   },
   {
     "_disabled": "false",

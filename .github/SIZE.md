@@ -3,7 +3,7 @@
  171M   ├─┬ misc
  170M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
-  36M   │ │ ├── FLATPAK_APPSTREAM.xml
+  35M   │ │ ├── FLATPAK_APPSTREAM.xml
   23M   │ │ ├── DEBIAN.json
   10M   │ │ ├── ALPINE_PKG.json
   10M   │ │ ├── NIXPKGS.json
@@ -55,7 +55,7 @@
  764K   │ │ ├── x86_64-Linux.sdb.xz
  764K   │ │ ├── aarch64-Linux.db.xz
  748K   │ │ ├── x86_64-Linux.json.zstd
- 736K   │ │ ├── aarch64-Linux.sdb.xz
+ 732K   │ │ ├── aarch64-Linux.sdb.xz
  724K   │ │ ├── x86_64-Linux.json.xz
  716K   │ │ ├── aarch64-Linux.json.zstd
  692K   │ │ ├── aarch64-Linux.json.xz
@@ -212,8 +212,8 @@
  1.3M   │ │ ├── BACKAGE.json
  1.2M   │ │ ├── INDEX.db
  784K   │ │ ├── pub_issues_binaries.txt
- 380K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 352K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 384K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 360K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  340K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
  216K   │ │ ├── INDEX.db.cba
@@ -222,11 +222,11 @@
  188K   │ │ ├── GH_REPO.md
  168K   │ │ ├── INDEX.db.zstd
  160K   │ │ ├── INDEX.db.xz
-  80K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+  84K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   48K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
-  48K   │ │ ├── DIFF_bincache.json
   44K   │ │ ├── URLS.txt
   28K   │ │ ├── GH_REPO_ARCHIVED.md
+  24K   │ │ ├── DIFF_bincache.json
  8.0K   │ │ ├── DIFF_pkgcache.json
  4.0K   │ │ ├── minisign.pub
  4.0K   │ │ ├── TOTAL_CACHE.txt

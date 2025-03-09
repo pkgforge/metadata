@@ -42,8 +42,8 @@
  9.4M   │ │ ├── x86_64-Linux.sdb
  9.0M   │ │ ├── aarch64-Linux.sdb
  1.2M   │ │ ├── x86_64-Linux.db.cba
- 1.1M   │ │ ├── x86_64-Linux.sdb.cba
  1.1M   │ │ ├── aarch64-Linux.db.cba
+ 1.1M   │ │ ├── x86_64-Linux.sdb.cba
  1.1M   │ │ ├── x86_64-Linux.json.cba
  1.1M   │ │ ├── aarch64-Linux.sdb.cba
  1.0M   │ │ ├── aarch64-Linux.json.cba
@@ -119,7 +119,7 @@
  208K   │ │ │ ├── x86_64-Linux.db.xz
  196K   │ │ │ ├── x86_64-Linux.json.zstd
  188K   │ │ │ ├── x86_64-Linux.json.xz
- 112K   │ │ │ ├── aarch64-Linux.db.cba
+ 116K   │ │ │ ├── aarch64-Linux.db.cba
  108K   │ │ │ ├── aarch64-Linux.json.cba
   96K   │ │ │ ├── aarch64-Linux.db.zstd
   92K   │ │ │ ├── aarch64-Linux.db.xz
@@ -207,24 +207,24 @@
   32K   │   └─┬ scripts
   28K   │     └── gen_meta.sh
  8.5M   ├─┬ soarpkgs
- 8.2M   │ ├─┬ data
+ 8.1M   │ ├─┬ data
  2.3M   │ │ ├── INDEX.json
  1.3M   │ │ ├── BACKAGE.json
  1.2M   │ │ ├── INDEX.db
- 780K   │ │ ├── pub_issues_binaries.txt
+ 784K   │ │ ├── pub_issues_binaries.txt
  340K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
- 292K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 260K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 300K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 268K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  220K   │ │ ├── INDEX.db.cba
  208K   │ │ ├── INDEX.json.xz
  208K   │ │ ├── GH_REPO.md
  200K   │ │ ├── INDEX.json.zstd
  168K   │ │ ├── INDEX.db.zstd
  160K   │ │ ├── INDEX.db.xz
-  72K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   48K   │ │ ├── URLS.txt
-  44K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+  48K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+  32K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   28K   │ │ ├── GH_REPO_ARCHIVED.md
   24K   │ │ ├── DIFF_bincache.json
  8.0K   │ │ ├── DIFF_pkgcache.json
@@ -260,14 +260,14 @@
  4.0K   │   ├── gen_ghcr_backage.sh
  4.0K   │   └── gen_diff.sh
  6.2M   ├─┬ pkgcache
- 6.0M   │ ├─┬ data
+ 6.1M   │ ├─┬ data
  1.1M   │ │ ├── x86_64-Linux.db
-1004K   │ │ ├── x86_64-Linux.json
+1008K   │ │ ├── x86_64-Linux.json
  928K   │ │ ├── x86_64-Linux.sdb
  592K   │ │ ├── aarch64-Linux.db
  524K   │ │ ├── aarch64-Linux.json
  460K   │ │ ├── aarch64-Linux.sdb
- 132K   │ │ ├── x86_64-Linux.sdb.cba
+ 136K   │ │ ├── x86_64-Linux.sdb.cba
  128K   │ │ ├── x86_64-Linux.db.cba
  120K   │ │ ├── x86_64-Linux.json.cba
  108K   │ │ ├── x86_64-Linux.sdb.zstd
@@ -280,8 +280,8 @@
   72K   │ │ ├── aarch64-Linux.db.cba
   64K   │ │ ├── aarch64-Linux.json.cba
   60K   │ │ ├── aarch64-Linux.sdb.zstd
+  60K   │ │ ├── aarch64-Linux.db.zstd
   56K   │ │ ├── aarch64-Linux.sdb.xz
-  56K   │ │ ├── aarch64-Linux.db.zstd
   56K   │ │ ├── aarch64-Linux.db.xz
   52K   │ │ ├── aarch64-Linux.json.zstd
   48K   │ │ ├── aarch64-Linux.json.xz

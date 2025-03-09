@@ -1,5 +1,5 @@
 ```mathematica
- 315M └─┬ main
+ 316M └─┬ main
  171M   ├─┬ misc
  170M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -42,8 +42,8 @@
  9.4M   │ │ ├── x86_64-Linux.sdb
  9.0M   │ │ ├── aarch64-Linux.sdb
  1.2M   │ │ ├── x86_64-Linux.db.cba
- 1.1M   │ │ ├── aarch64-Linux.db.cba
  1.1M   │ │ ├── x86_64-Linux.sdb.cba
+ 1.1M   │ │ ├── aarch64-Linux.db.cba
  1.1M   │ │ ├── x86_64-Linux.json.cba
  1.1M   │ │ ├── aarch64-Linux.sdb.cba
  1.0M   │ │ ├── aarch64-Linux.json.cba
@@ -52,7 +52,7 @@
  804K   │ │ ├── aarch64-Linux.sdb.zstd
  796K   │ │ ├── x86_64-Linux.db.xz
  780K   │ │ ├── aarch64-Linux.db.zstd
- 768K   │ │ ├── x86_64-Linux.sdb.xz
+ 764K   │ │ ├── x86_64-Linux.sdb.xz
  764K   │ │ ├── aarch64-Linux.db.xz
  744K   │ │ ├── x86_64-Linux.json.zstd
  736K   │ │ ├── aarch64-Linux.sdb.xz
@@ -207,15 +207,15 @@
   32K   │   └─┬ scripts
   28K   │     └── gen_meta.sh
  8.5M   ├─┬ soarpkgs
- 8.1M   │ ├─┬ data
+ 8.2M   │ ├─┬ data
  2.3M   │ │ ├── INDEX.json
  1.3M   │ │ ├── BACKAGE.json
  1.2M   │ │ ├── INDEX.db
  784K   │ │ ├── pub_issues_binaries.txt
  340K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
- 300K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 268K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 304K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 272K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  220K   │ │ ├── INDEX.db.cba
  208K   │ │ ├── INDEX.json.xz
  208K   │ │ ├── GH_REPO.md
@@ -278,7 +278,7 @@
   88K   │ │ ├── x86_64-Linux.json.xz
   72K   │ │ ├── aarch64-Linux.sdb.cba
   72K   │ │ ├── aarch64-Linux.db.cba
-  64K   │ │ ├── aarch64-Linux.json.cba
+  68K   │ │ ├── aarch64-Linux.json.cba
   60K   │ │ ├── aarch64-Linux.sdb.zstd
   60K   │ │ ├── aarch64-Linux.db.zstd
   56K   │ │ ├── aarch64-Linux.sdb.xz

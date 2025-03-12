@@ -17655,7 +17655,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-9bbe579-250311T155449"
+    "version": "HEAD-065a4de-250312T070603"
   },
   {
     "_disabled": "false",
@@ -17972,7 +17972,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-9bbe579-250311T155449"
+    "version": "HEAD-065a4de-250312T070603"
   },
   {
     "_disabled": "false",
@@ -30897,7 +30897,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-bcea180-250312T000530"
+    "version": "HEAD-644f290-250312T060303"
   },
   {
     "_disabled": "false",
@@ -42183,7 +42183,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-a01d0bf-250312T041517"
+    "version": "HEAD-902ef9f-250312T043201"
   },
   {
     "_disabled": "false",
@@ -42343,7 +42343,7 @@
     "tag": [
       "kubernetes"
     ],
-    "version": "HEAD-772faa5-250311T181737"
+    "version": "HEAD-39eef03-250311T233747"
   },
   {
     "_disabled": "false",
@@ -52980,6 +52980,70 @@
     "_disabled": "false",
     "pkg": "nushell",
     "pkg_family": "nushell",
+    "pkg_id": "github.com.nushell.nushell.glibc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nushell-glibc/nushell/nushell",
+    "bincache": "ghcr.io/pkgforge/bincache/nushell/glibc/nushell",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nushell/static.glibc.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Shell with a focus on structured data",
+    "distro_pkg": {
+      "alpine": [
+        "nushell"
+      ],
+      "archlinux": {
+        "aur": [
+          "nushell-git"
+        ],
+        "extra": [
+          "nushell"
+        ]
+      },
+      "nixpkgs": [
+        "nushell"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nushell/static.glibc.source.yaml",
+    "homepage": [
+      "https://www.nushell.sh",
+      "https://github.com/nushell/nushell"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/nushell/nushell",
+      "Statically Linked on Debian (GLIBC)"
+    ],
+    "provides": [
+      "nushell==nu"
+    ],
+    "repology": [
+      "nushell"
+    ],
+    "src_url": [
+      "https://github.com/nushell/nushell"
+    ],
+    "tag": [
+      "shell"
+    ],
+    "version": "HEAD-e926919-250311T141836"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "nushell",
+    "pkg_family": "nushell",
     "pkg_id": "github.com.nushell.nushell",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nushell-nushell/nushell/nushell",
@@ -53024,69 +53088,6 @@
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/nushell/nushell"
-    ],
-    "provides": [
-      "nushell==nu"
-    ],
-    "repology": [
-      "nushell"
-    ],
-    "src_url": [
-      "https://github.com/nushell/nushell"
-    ],
-    "tag": [
-      "shell"
-    ],
-    "version": "HEAD-e926919-250311T141836"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "nushell",
-    "pkg_family": "nushell",
-    "pkg_id": "github.com.nushell.nushell.glibc",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nushell-glibc/nushell/nushell",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nushell/static.glibc.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Shell with a focus on structured data",
-    "distro_pkg": {
-      "alpine": [
-        "nushell"
-      ],
-      "archlinux": {
-        "aur": [
-          "nushell-git"
-        ],
-        "extra": [
-          "nushell"
-        ]
-      },
-      "nixpkgs": [
-        "nushell"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nushell/static.glibc.source.yaml",
-    "homepage": [
-      "https://www.nushell.sh",
-      "https://github.com/nushell/nushell"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/nushell/nushell",
-      "Statically Linked on Debian (GLIBC)"
     ],
     "provides": [
       "nushell==nu"
@@ -60998,6 +60999,73 @@
     "_disabled": "false",
     "pkg": "ripgrep",
     "pkg_family": "ripgrep",
+    "pkg_id": "github.com.BurntSushi.ripgrep.glibc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ripgrep-glibc/ripgrep/ripgrep",
+    "bincache": "ghcr.io/pkgforge/bincache/ripgrep/glibc/ripgrep",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ripgrep/static.glibc.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Recursive & Line-Oriented Search Tool, combining The Silver Searcher (ag) with the raw speed of grep",
+    "distro_pkg": {
+      "alpine": [
+        "ripgrep"
+      ],
+      "archlinux": {
+        "aur": [
+          "ripgrep-git"
+        ],
+        "extra": [
+          "ripgrep"
+        ]
+      },
+      "debian": [
+        "rust-ripgrep"
+      ],
+      "nixpkgs": [
+        "ripgrep"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ripgrep/static.glibc.source.yaml",
+    "homepage": [
+      "https://github.com/BurntSushi/ripgrep"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BurntSushi/ripgrep",
+      "Statically Linked on Debian (GLIBC)"
+    ],
+    "provides": [
+      "ripgrep==rg"
+    ],
+    "repology": [
+      "ripgrep"
+    ],
+    "src_url": [
+      "https://github.com/BurntSushi/ripgrep"
+    ],
+    "tag": [
+      "grep",
+      "regex"
+    ],
+    "version": "HEAD-de4baa1-250227T124658"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ripgrep",
+    "pkg_family": "ripgrep",
     "pkg_id": "github.com.BurntSushi.ripgrep",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/burntsushi-ripgrep/ripgrep/ripgrep",
@@ -61044,72 +61112,6 @@
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BurntSushi/ripgrep"
-    ],
-    "provides": [
-      "ripgrep==rg"
-    ],
-    "repology": [
-      "ripgrep"
-    ],
-    "src_url": [
-      "https://github.com/BurntSushi/ripgrep"
-    ],
-    "tag": [
-      "grep",
-      "regex"
-    ],
-    "version": "HEAD-de4baa1-250227T124658"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "ripgrep",
-    "pkg_family": "ripgrep",
-    "pkg_id": "github.com.BurntSushi.ripgrep.glibc",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ripgrep-glibc/ripgrep/ripgrep",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ripgrep/static.glibc.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Recursive & Line-Oriented Search Tool, combining The Silver Searcher (ag) with the raw speed of grep",
-    "distro_pkg": {
-      "alpine": [
-        "ripgrep"
-      ],
-      "archlinux": {
-        "aur": [
-          "ripgrep-git"
-        ],
-        "extra": [
-          "ripgrep"
-        ]
-      },
-      "debian": [
-        "rust-ripgrep"
-      ],
-      "nixpkgs": [
-        "ripgrep"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ripgrep/static.glibc.source.yaml",
-    "homepage": [
-      "https://github.com/BurntSushi/ripgrep"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BurntSushi/ripgrep",
-      "Statically Linked on Debian (GLIBC)"
     ],
     "provides": [
       "ripgrep==rg"
@@ -62782,7 +62784,7 @@
       "emulator",
       "game"
     ],
-    "version": "1.2.444"
+    "version": "1.2.445"
   },
   {
     "_disabled": "false",
@@ -75091,7 +75093,7 @@
       "busybox",
       "coreboot"
     ],
-    "version": "HEAD-978a84c-250311T133324"
+    "version": "HEAD-e4ac59a-250311T224711"
   },
   {
     "_disabled": "false",
@@ -82036,7 +82038,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-faee35f-250311T151930"
+    "version": "HEAD-abfbd1c-250312T141707"
   },
   {
     "_disabled": "false",

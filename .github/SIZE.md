@@ -3,7 +3,7 @@
  171M   ├─┬ misc
  171M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
-  35M   │ │ ├── FLATPAK_APPSTREAM.xml
+  36M   │ │ ├── FLATPAK_APPSTREAM.xml
   23M   │ │ ├── DEBIAN.json
   10M   │ │ ├── ALPINE_PKG.json
   10M   │ │ ├── NIXPKGS.json

@@ -484,7 +484,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b6eaf19-250312T231110"
+    "version": "HEAD-c10b323-250313T231102"
   },
   {
     "_disabled": "false",
@@ -556,7 +556,72 @@
       "sysutils",
       "utils"
     ],
-    "version": "HEAD-264da9e-250312T142726"
+    "version": "HEAD-28d5ff8-250313T221131"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "b3sum",
+    "pkg_family": "b3sum",
+    "pkg_id": "github.com.BLAKE3-team.BLAKE3",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/team-blake3/b3sum/b3sum",
+    "bincache": "ghcr.io/pkgforge/bincache/b3sum/official/b3sum",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/b3sum/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command line utility for calculating BLAKE3 hashes",
+    "distro_pkg": {
+      "alpine": [
+        "b3sum"
+      ],
+      "archlinux": {
+        "extra": [
+          "b3sum"
+        ]
+      },
+      "debian": [
+        "rust-b3sum",
+        "rust-blake3"
+      ],
+      "nixpkgs": [
+        "b3sum"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/b3sum/static.official.source.yaml",
+    "homepage": [
+      "https://blake3.io",
+      "https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "provides": [
+      "b3sum"
+    ],
+    "repology": [
+      "blake3"
+    ],
+    "src_url": [
+      "https://github.com/BLAKE3-team/BLAKE3"
+    ],
+    "tag": [
+      "bsum",
+      "checksum"
+    ],
+    "version": "HEAD-eb69399-250313T133711"
   },
   {
     "_disabled": "true",
@@ -1391,6 +1456,59 @@
       "Utility"
     ],
     "version": "v0.139.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "cloudfox",
+    "pkg_family": "cloudfox",
+    "pkg_id": "github.com.BishopFox.cloudfox",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bishopfox-cloudfox/cloudfox/cloudfox",
+    "bincache": "ghcr.io/pkgforge/bincache/cloudfox/official/cloudfox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/cloudfox/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Automating situational awareness for cloud penetration tests",
+    "distro_pkg": {
+      "nixpkgs": [
+        "cloudfox"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/cloudfox/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/BishopFox/cloudfox"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BishopFox/cloudfox"
+    ],
+    "provides": [
+      "cloudfox"
+    ],
+    "repology": [
+      "cloudfox"
+    ],
+    "src_url": [
+      "https://github.com/BishopFox/cloudfox"
+    ],
+    "tag": [
+      "cloud",
+      "cloud-security",
+      "security"
+    ],
+    "version": "HEAD-2cb5ad2-250313T190421"
   },
   {
     "_disabled": "false",
@@ -3396,7 +3514,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-589c0dd-250313T094038"
+    "version": "HEAD-9efdde7-250314T090632"
   },
   {
     "_disabled": "false",
@@ -4794,6 +4912,46 @@
   },
   {
     "_disabled": "false",
+    "pkg": "freq",
+    "pkg_family": "freq",
+    "pkg_id": "github.com.ryancdotorg.freq.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/freq-source/freq/freq",
+    "bincache": "ghcr.io/pkgforge/bincache/freq/official/freq",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/freq/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Like 'sort | uniq -c | sort -rn' but better",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/freq/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ryancdotorg/freq"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ryancdotorg/freq"
+    ],
+    "provides": [
+      "freq"
+    ],
+    "src_url": [
+      "https://github.com/ryancdotorg/freq"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-2618062-250313T222955"
+  },
+  {
+    "_disabled": "false",
     "pkg": "fyne",
     "pkg_family": "fyne",
     "pkg_id": "github.com.fyne-io.fyne",
@@ -4938,7 +5096,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-e745c05-250313T180256"
+    "version": "HEAD-ad117c9-250314T000627"
   },
   {
     "_disabled": "false",
@@ -5216,7 +5374,7 @@
     "tag": [
       "gitlab"
     ],
-    "version": "HEAD-3299074-250312T143057"
+    "version": "HEAD-e69f602-250313T141757"
   },
   {
     "_disabled": "false",
@@ -5608,7 +5766,7 @@
     "tag": [
       "matrix"
     ],
-    "version": "HEAD-0f2263c-250313T022518"
+    "version": "HEAD-4262b5a-250314T020737"
   },
   {
     "_disabled": "false",
@@ -6113,7 +6271,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-ba1c9d5-250313T095437"
+    "version": "HEAD-a9fee6f-250314T003104"
   },
   {
     "_disabled": "false",
@@ -6610,7 +6768,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-81f8ae4-250313T161312"
+    "version": "HEAD-67e17d5-250313T235945"
   },
   {
     "_disabled": "false",
@@ -6806,7 +6964,7 @@
     "tag": [
       "ipfs"
     ],
-    "version": "HEAD-095cc0d-250311T140416"
+    "version": "HEAD-183dc7d-250313T164401"
   },
   {
     "_disabled": "false",
@@ -7275,7 +7433,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-881f41b-250312T232656"
+    "version": "HEAD-1b272db-250313T194522"
   },
   {
     "_disabled": "false",
@@ -7405,6 +7563,57 @@
       "text-editor"
     ],
     "version": "HEAD-fa31745-250312T221151"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mieru",
+    "pkg_family": "mieru",
+    "pkg_id": "github.com.enfein.mieru.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mieru-source/mieru/mieru",
+    "bincache": "ghcr.io/pkgforge/bincache/mieru/official/mieru",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mieru/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Socks5/HTTP/HTTPS proxy to bypass censorship",
+    "distro_pkg": {
+      "nixpkgs": [
+        "mieru"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mieru/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/enfein/mieru"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/enfein/mieru"
+    ],
+    "provides": [
+      "mieru"
+    ],
+    "repology": [
+      "mieru"
+    ],
+    "src_url": [
+      "https://github.com/enfein/mieru"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-27aa907-250313T211052"
   },
   {
     "_disabled": "false",
@@ -8220,7 +8429,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-0f6996b-250312T221100"
+    "version": "HEAD-8f634f4-250314T020035"
   },
   {
     "_disabled": "false",
@@ -8284,7 +8493,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-0f6996b-250312T221100"
+    "version": "HEAD-8f634f4-250314T020035"
   },
   {
     "_disabled": "false",
@@ -8572,7 +8781,7 @@
       "editor",
       "text-editor"
     ],
-    "version": "HEAD-4a2ef25-241224T135507"
+    "version": "HEAD-6cb11e7-250313T202545"
   },
   {
     "_disabled": "false",
@@ -8731,6 +8940,70 @@
       "monitor"
     ],
     "version": "HEAD-a367254-231013T135550"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "procs",
+    "pkg_family": "procs",
+    "pkg_id": "github.com.dalance.procs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dalance-procs/procs/procs",
+    "bincache": "ghcr.io/pkgforge/bincache/procs/official/procs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/procs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A modern replacement for ps written in Rust",
+    "distro_pkg": {
+      "alpine": [
+        "procs"
+      ],
+      "archlinux": {
+        "aur": [
+          "procs-git"
+        ],
+        "extra": [
+          "procs"
+        ]
+      },
+      "debian": [
+        "rust-procs"
+      ],
+      "nixpkgs": [
+        "procs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/procs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dalance/procs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "ISC",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dalance/procs"
+    ],
+    "repology": [
+      "procs"
+    ],
+    "src_url": [
+      "https://github.com/dalance/procs"
+    ],
+    "tag": [
+      "Monitoring"
+    ],
+    "version": "HEAD-9134ce3-250313T202249"
   },
   {
     "_disabled": "true",
@@ -9135,6 +9408,127 @@
   },
   {
     "_disabled": "false",
+    "pkg": "rekor",
+    "pkg_family": "rekor",
+    "pkg_id": "github.com.sigstore.rekor",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sigstore-rekor/rekor/rekor",
+    "bincache": "ghcr.io/pkgforge/bincache/rekor/official/rekor-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rekor/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Software Supply Chain Transparency Log",
+    "distro_pkg": {
+      "alpine": [
+        "rekor"
+      ],
+      "archlinux": {
+        "aur": [
+          "rekor-git"
+        ],
+        "extra": [
+          "rekor"
+        ]
+      },
+      "debian": [
+        "rekor"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rekor/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sigstore/rekor"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sigstore/rekor"
+    ],
+    "provides": [
+      "rekor-cli",
+      "rekor-server"
+    ],
+    "repology": [
+      "rekor"
+    ],
+    "src_url": [
+      "https://github.com/sigstore/rekor"
+    ],
+    "tag": [
+      "provenance",
+      "security"
+    ],
+    "version": "HEAD-4b01f83-250313T141354"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "reviewdog",
+    "pkg_family": "reviewdog",
+    "pkg_id": "github.com.reviewdog.reviewdog",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/reviewdog-reviewdog/reviewdog/reviewdog",
+    "bincache": "ghcr.io/pkgforge/bincache/reviewdog/official/reviewdog",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/reviewdog/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Automated code review tool integrated with any code analysis tools regardless of programming language",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "reviewdog-bin"
+        ]
+      },
+      "nixpkgs": [
+        "reviewdog"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/reviewdog/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/reviewdog/reviewdog"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/reviewdog/reviewdog"
+    ],
+    "provides": [
+      "reviewdog"
+    ],
+    "repology": [
+      "reviewdog"
+    ],
+    "src_url": [
+      "https://github.com/reviewdog/reviewdog"
+    ],
+    "tag": [
+      "analyzer",
+      "linter"
+    ],
+    "version": "HEAD-b14bd74-250313T215402"
+  },
+  {
+    "_disabled": "false",
     "pkg": "revive",
     "pkg_family": "revive",
     "pkg_id": "github.com.mgechev.revive",
@@ -9396,6 +9790,69 @@
   },
   {
     "_disabled": "false",
+    "pkg": "ruff",
+    "pkg_family": "ruff",
+    "pkg_id": "github.com.astral-sh.ruff",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sh-ruff/ruff/ruff",
+    "bincache": "ghcr.io/pkgforge/bincache/ruff/official/ruff",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ruff/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Extremely fast Python linter and code formatter",
+    "distro_pkg": {
+      "alpine": [
+        "ruff"
+      ],
+      "archlinux": {
+        "extra": [
+          "ruff"
+        ]
+      },
+      "homebrew": [
+        "ruff"
+      ],
+      "nixpkgs": [
+        "ruff"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ruff/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/astral-sh/ruff"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/astral-sh/ruff"
+    ],
+    "provides": [
+      "ruff"
+    ],
+    "repology": [
+      "ruff-python-linter"
+    ],
+    "src_url": [
+      "https://github.com/astral-sh/ruff"
+    ],
+    "tag": [
+      "linter",
+      "python"
+    ],
+    "version": "0.10.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "runc",
     "pkg_family": "runc",
     "pkg_id": "github.com.opencontainers.runc",
@@ -9461,6 +9918,61 @@
       "oci"
     ],
     "version": "v1.3.0-rc.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "runme",
+    "pkg_family": "runme",
+    "pkg_id": "github.com.stateful.runme",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stateful-runme/runme/runme",
+    "bincache": "ghcr.io/pkgforge/bincache/runme/official/runme",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/runme/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Execute commands inside/from runbooks, docs, and READMEs",
+    "distro_pkg": {
+      "homebrew": [
+        "runme"
+      ],
+      "nixpkgs": [
+        "runme"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/runme/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/stateful/runme"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/stateful/runme"
+    ],
+    "provides": [
+      "runme"
+    ],
+    "repology": [
+      "runme"
+    ],
+    "src_url": [
+      "https://github.com/stateful/runme"
+    ],
+    "tag": [
+      "cloud",
+      "devops"
+    ],
+    "version": "v3.12.6"
   },
   {
     "_disabled": "false",
@@ -10570,7 +11082,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-f0b395d-250313T103742"
+    "version": "HEAD-8b1e7f6-250313T133326"
   },
   {
     "_disabled": "false",

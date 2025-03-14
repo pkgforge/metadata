@@ -26,6 +26,7 @@
     "web-url": "https://abook.sourceforge.io/",
     "git-url": "https://git.code.sf.net/p/abook/git.git",
     "src-url": "https://abook.sourceforge.io/devel/abook-0.6.1.tar.gz",
+    "src-uri": "https://deb.debian.org/debian/pool/main/a/abook/abook_0.6.1.orig.tar.gz",
     "src-sha": "f0a90df8694fb34685ecdd45d97db28b88046c15c95e7b0700596028bd8bc0f9",
     "dep-pkg": "libreadline",
     "dep-lib": "-lncursesw",
@@ -1891,22 +1892,6 @@
     "install": "gow \\\n    -X github.com/CircleCI-Public/circleci-cli/version.packageManager=ppkg \\\n    -X github.com/CircleCI-Public/circleci-cli/version.Version=$PACKAGE_VERSION \\\n    -X github.com/CircleCI-Public/circleci-cli/version.Commit=$PACKAGE_GIT_SHA"
   },
   {
-    "pkgname": "cjson",
-    "pkgtype": "lib",
-    "version": "1.7.17",
-    "license": "MIT",
-    "summary": "Ultralightweight JSON parser in ANSI C",
-    "web-url": "https://github.com/DaveGamble/cJSON",
-    "git-url": "https://github.com/DaveGamble/cJSON",
-    "src-url": "https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz",
-    "src-sha": "c91d1eeb7175c50d49f6ba2a25e69b46bd05cffb798382c19bfb202e467ec51c",
-    "dep-upp": "curl bsdtar cmake ninja",
-    "bsystem": "cmake",
-    "binbstd": "0",
-    "parallel": "1",
-    "install": "cmakew \\\n    -DENABLE_CJSON_UTILS=ON \\\n    -DENABLE_CJSON_TEST=OFF \\\n    -DBUILD_SHARED_AND_STATIC_LIBS=ON"
-  },
-  {
     "pkgname": "cli11",
     "pkgtype": "lib",
     "version": "2.4.1",
@@ -3488,19 +3473,20 @@
   {
     "pkgname": "ffmpeg",
     "pkgtype": "exe",
-    "version": "7.1",
+    "version": "7.1.1",
     "license": "GPL-2.0-or-later",
     "summary": "A complete, cross-platform solution to record, convert and stream audio and video",
     "web-url": "https://ffmpeg.org/",
     "git-url": "https://github.com/FFmpeg/FFmpeg",
-    "src-url": "https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz",
-    "src-sha": "40973d44970dbc83ef302b0609f2e74982be2d85916dd2ee7472d30678a7abe6",
-    "dep-pkg": "libmp3lame libsamplerate libtheora libvorbis libspeex librav1e libdav1d libx264 libx265 libopus libxvid libsoxr libvpx libwebp libtiff libpng libjpeg-turbo libgif libsrt libzimg libzmq libxml2 libarchive libsdl2 xorg-libxv",
+    "src-url": "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz",
+    "src-sha": "733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1",
+    "dep-pkg": "libtesseract librubberband libbluray libaribb24 libass libarchive libvidstab libopencore-amr libSvtAv1 libmp3lame libtheora libspeex librav1e libdav1d libx264 libx265 libxvid libvpx libaom libsdl2 libzimg libzmq libssh libsrt librist xorg-libxv",
+    "dep-lib": "tesseract -lstdc++ -lgomp -lm",
     "dep-upp": "nasm curl bsdtar gmake",
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "install": "unset CONFIGURE_EXTRA_ARGS\n\ncase $TARGET_PLATFORM_ARCH in\n    aarch64) CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    arm64)   CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    armv7a)  CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    i686)    CONFIGURE_EXTRA_ARGS='--disable-asm' ;;\nesac\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS=\"$CONFIGURE_EXTRA_ARGS --enable-videotoolbox --enable-audiotoolbox\"\n\n    CLANG_VERSION_MAJOR=\"$(\"$CC\" -E -dM - < /dev/null | grep __clang_major__ | cut -d ' ' -f3)\"\n\n    # https://github.com/spack/spack/issues/40159\n    if [ \"$CLANG_VERSION_MAJOR\" -ge 15 ] ; then\n        export LDFLAGS=\"$LDFLAGS -Wl,-ld_classic\"\n    fi\n\n    TARGET_OS=darwin\nelse\n    TARGET_OS=\"$TARGET_PLATFORM_NAME\"\nfi\n\ngsed -i 's|-lxvidcore|-lxvidcore -lm|' configure\ngsed -i \"/SDL2_CONFIG=/c SDL2_CONFIG='$libsdl2_INSTALL_DIR/bin/sdl2-config'\" configure\n\nexport PROXIED_CC_ARGS=\"$PROXIED_CC_ARGS -lgomp -lm\"\n\nif run ./configure \\\n    --prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    --sysroot=\"$SYSROOT\" \\\n    --ar=\"$AR\" \\\n    --as=\"$CC\" \\\n    --ld=\"$CC\" \\\n    --cc=\"$CC\" \\\n    --cxx=\"$CXX\" \\\n    --nm=\"$NM\" \\\n    --ranlib=\"$RANLIB\" \\\n    --strip=\"$STRIP\" \\\n    --pkg-config=\"$PKG_CONFIG\" \\\n    --arch=\"$TARGET_PLATFORM_ARCH\" \\\n    --target-os=\"$TARGET_OS\" \\\n    --enable-pic \\\n    --enable-static \\\n    --disable-shared \\\n    --enable-ffplay \\\n    --enable-ffprobe \\\n    --enable-openssl \\\n    --enable-version3 \\\n    --enable-libmp3lame \\\n    --enable-libtheora \\\n    --enable-libvorbis \\\n    --enable-libspeex \\\n    --enable-librav1e \\\n    --enable-libdav1d \\\n    --enable-libopus \\\n    --enable-libwebp \\\n    --enable-libzimg \\\n    --enable-libx264 \\\n    --enable-libx265 \\\n    --enable-libxvid \\\n    --enable-libsoxr \\\n    --enable-libvpx \\\n    --enable-libsrt \\\n    --enable-libxml2 \\\n    --enable-lzma \\\n    --enable-sdl \\\n    --enable-gpl \\\n    --disable-jni \\\n    --disable-doc \\\n    --disable-debug \\\n    --disable-vulkan \\\n    --disable-mediacodec \\\n    --disable-libfdk-aac \\\n    $CONFIGURE_EXTRA_ARGS ; then\n    gmakew clean\n    gmakew install V=1\n    run cp ffbuild/config.log .\nelse\n    cat ffbuild/config.log\n    return 1\nfi"
+    "install": "unset CONFIGURE_EXTRA_ARGS\n\ncase $TARGET_PLATFORM_ARCH in\n    aarch64) CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    arm64)   CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    armv7a)  CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    i686)    CONFIGURE_EXTRA_ARGS='--disable-asm' ;;\nesac\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS=\"$CONFIGURE_EXTRA_ARGS --enable-videotoolbox --enable-audiotoolbox\"\n\n    CLANG_VERSION_MAJOR=\"$(\"$CC\" -E -dM - < /dev/null | grep __clang_major__ | cut -d ' ' -f3)\"\n\n    # https://github.com/spack/spack/issues/40159\n    if [ \"$CLANG_VERSION_MAJOR\" -ge 15 ] ; then\n        export LDFLAGS=\"$LDFLAGS -Wl,-ld_classic\"\n    fi\n\n    TARGET_OS=darwin\nelse\n    TARGET_OS=\"$TARGET_PLATFORM_NAME\"\nfi\n\ngsed -i 's|-lxvidcore|-lxvidcore -lm|' configure\ngsed -i \"/SDL2_CONFIG=/c SDL2_CONFIG='$libsdl2_INSTALL_DIR/bin/sdl2-config'\" configure\n\nif run ./configure \\\n    --prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    --sysroot=\"$SYSROOT\" \\\n    --ar=\"$AR\" \\\n    --as=\"$CC\" \\\n    --ld=\"$CC\" \\\n    --cc=\"$CC\" \\\n    --cxx=\"$CXX\" \\\n    --nm=\"$NM\" \\\n    --ranlib=\"$RANLIB\" \\\n    --strip=\"$STRIP\" \\\n    --pkg-config=\"$PKG_CONFIG\" \\\n    --arch=\"$TARGET_PLATFORM_ARCH\" \\\n    --target-os=\"$TARGET_OS\" \\\n    --enable-pic \\\n    --enable-static \\\n    --disable-shared \\\n    --enable-ffplay \\\n    --enable-ffprobe \\\n    --enable-openssl \\\n    --enable-version3 \\\n    --enable-libtesseract \\\n    --enable-librubberband \\\n    --enable-libfontconfig \\\n    --enable-libharfbuzz \\\n    --enable-libfreetype \\\n    --enable-libfribidi \\\n    --enable-libopenjpeg \\\n    --enable-libaribb24 \\\n    --enable-libbluray \\\n    --enable-libvidstab \\\n    --enable-libopencore-amrnb \\\n    --enable-libopencore-amrwb \\\n    --enable-libmp3lame \\\n    --enable-libtheora \\\n    --enable-libvorbis \\\n    --enable-libsvtav1 \\\n    --enable-libspeex \\\n    --enable-librav1e \\\n    --enable-libdav1d \\\n    --enable-libopus \\\n    --enable-libwebp \\\n    --enable-libx264 \\\n    --enable-libx265 \\\n    --enable-libxvid \\\n    --enable-libsoxr \\\n    --enable-libvpx \\\n    --enable-libsrt \\\n    --enable-libssh \\\n    --enable-libass \\\n    --enable-libaom \\\n    --enable-libjxl \\\n    --enable-libvmaf \\\n    --enable-libxml2 \\\n    --enable-librist \\\n    --enable-libzimg \\\n    --enable-libzmq \\\n    --enable-lzma \\\n    --enable-sdl \\\n    --enable-gpl \\\n    --disable-jni \\\n    --disable-doc \\\n    --disable-debug \\\n    --disable-vulkan \\\n    --disable-libjack \\\n    --disable-indev=jack \\\n    --disable-mediacodec \\\n    --disable-libfdk-aac \\\n    $CONFIGURE_EXTRA_ARGS ; then\n    gmakew clean\n    gmakew install V=1\n    run cp ffbuild/config.log .\nelse\n    cat ffbuild/config.log\n    return 1\nfi"
   },
   {
     "pkgname": "ffmpeg-dev",
@@ -3512,12 +3498,12 @@
     "git-url": "https://github.com/FFmpeg/FFmpeg",
     "src-url": "https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz",
     "src-sha": "40973d44970dbc83ef302b0609f2e74982be2d85916dd2ee7472d30678a7abe6",
-    "dep-pkg": "libmp3lame libsamplerate libtheora libvorbis libspeex librav1e libdav1d libx264 libx265 libopus libxvid libsoxr libvpx libwebp libtiff libpng libjpeg-turbo libgif libsrt libzimg libzmq libxml2 libarchive libsdl2",
+    "dep-pkg": "libtesseract librubberband libbluray libaribb24 libass libarchive libvidstab libopencore-amr libSvtAv1 libmp3lame libtheora libspeex librav1e libdav1d libx264 libx265 libxvid libvpx libaom libsdl2 libzimg libzmq libssh libsrt librist xorg-libxv",
     "dep-upp": "nasm curl bsdtar gmake",
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "install": "unset CONFIGURE_EXTRA_ARGS\n\ncase $TARGET_PLATFORM_ARCH in\n    aarch64) CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    arm64)   CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    armv7a)  CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    i686)    CONFIGURE_EXTRA_ARGS='--disable-asm' ;;\nesac\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS=\"$CONFIGURE_EXTRA_ARGS --enable-videotoolbox --enable-audiotoolbox\"\n\n    CLANG_VERSION_MAJOR=\"$(\"$CC\" -E -dM - < /dev/null | grep __clang_major__ | cut -d ' ' -f3)\"\n\n    # https://github.com/spack/spack/issues/40159\n    if [ \"$CLANG_VERSION_MAJOR\" -ge 15 ] ; then\n        export LDFLAGS=\"$LDFLAGS -Wl,-ld_classic\"\n    fi\n\n    TARGET_OS=darwin\nelse\n    TARGET_OS=\"$TARGET_PLATFORM_NAME\"\nfi\n\ngsed -i 's|-lxvidcore|-lxvidcore -lm|' configure\ngsed -i \"/SDL2_CONFIG=/c SDL2_CONFIG='$libsdl2_INSTALL_DIR/bin/sdl2-config'\" configure\n\nif run ./configure \\\n    --prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    --sysroot=\"$SYSROOT\" \\\n    --ar=\"$AR\" \\\n    --as=\"$CC\" \\\n    --ld=\"$CC\" \\\n    --cc=\"$CC\" \\\n    --cxx=\"$CXX\" \\\n    --nm=\"$NM\" \\\n    --ranlib=\"$RANLIB\" \\\n    --strip=\"$STRIP\" \\\n    --pkg-config=\"$PKG_CONFIG\" \\\n    --arch=\"$TARGET_PLATFORM_ARCH\" \\\n    --target-os=\"$TARGET_OS\" \\\n    --enable-pic \\\n    --enable-static \\\n    --enable-shared \\\n    --disable-ffplay \\\n    --disable-ffprobe \\\n    --enable-openssl \\\n    --enable-version3 \\\n    --enable-libmp3lame \\\n    --enable-libtheora \\\n    --enable-libvorbis \\\n    --enable-libspeex \\\n    --enable-librav1e \\\n    --enable-libdav1d \\\n    --enable-libopus \\\n    --enable-libwebp \\\n    --enable-libzimg \\\n    --enable-libx264 \\\n    --enable-libx265 \\\n    --enable-libxvid \\\n    --enable-libsoxr \\\n    --enable-libvpx \\\n    --enable-libsrt \\\n    --enable-libxml2 \\\n    --enable-lzma \\\n    --enable-sdl \\\n    --enable-gpl \\\n    --disable-jni \\\n    --disable-doc \\\n    --disable-debug \\\n    --disable-vulkan \\\n    --disable-mediacodec \\\n    --disable-libfdk-aac \\\n    $CONFIGURE_EXTRA_ARGS ; then\n    gmakew clean\n    gmakew install V=1\n    run cp ffbuild/config.log .\nelse\n    cat ffbuild/config.log\n    return 1\nfi"
+    "install": "unset CONFIGURE_EXTRA_ARGS\n\ncase $TARGET_PLATFORM_ARCH in\n    aarch64) CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    arm64)   CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    armv7a)  CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    i686)    CONFIGURE_EXTRA_ARGS='--disable-asm' ;;\nesac\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS=\"$CONFIGURE_EXTRA_ARGS --enable-videotoolbox --enable-audiotoolbox\"\n\n    CLANG_VERSION_MAJOR=\"$(\"$CC\" -E -dM - < /dev/null | grep __clang_major__ | cut -d ' ' -f3)\"\n\n    # https://github.com/spack/spack/issues/40159\n    if [ \"$CLANG_VERSION_MAJOR\" -ge 15 ] ; then\n        export LDFLAGS=\"$LDFLAGS -Wl,-ld_classic\"\n    fi\n\n    TARGET_OS=darwin\nelse\n    TARGET_OS=\"$TARGET_PLATFORM_NAME\"\nfi\n\ngsed -i 's|-lxvidcore|-lxvidcore -lm|' configure\ngsed -i \"/SDL2_CONFIG=/c SDL2_CONFIG='$libsdl2_INSTALL_DIR/bin/sdl2-config'\" configure\n\nif run ./configure \\\n    --prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    --sysroot=\"$SYSROOT\" \\\n    --ar=\"$AR\" \\\n    --as=\"$CC\" \\\n    --ld=\"$CC\" \\\n    --cc=\"$CC\" \\\n    --cxx=\"$CXX\" \\\n    --nm=\"$NM\" \\\n    --ranlib=\"$RANLIB\" \\\n    --strip=\"$STRIP\" \\\n    --pkg-config=\"$PKG_CONFIG\" \\\n    --arch=\"$TARGET_PLATFORM_ARCH\" \\\n    --target-os=\"$TARGET_OS\" \\\n    --enable-pic \\\n    --enable-static \\\n    --enable-shared \\\n    --enable-ffplay \\\n    --enable-ffprobe \\\n    --enable-openssl \\\n    --enable-version3 \\\n    --enable-libtesseract \\\n    --enable-librubberband \\\n    --enable-libfontconfig \\\n    --enable-libharfbuzz \\\n    --enable-libfreetype \\\n    --enable-libfribidi \\\n    --enable-libopenjpeg \\\n    --enable-libaribb24 \\\n    --enable-libbluray \\\n    --enable-libvidstab \\\n    --enable-libopencore-amrnb \\\n    --enable-libopencore-amrwb \\\n    --enable-libmp3lame \\\n    --enable-libtheora \\\n    --enable-libvorbis \\\n    --enable-libsvtav1 \\\n    --enable-libspeex \\\n    --enable-librav1e \\\n    --enable-libdav1d \\\n    --enable-libopus \\\n    --enable-libwebp \\\n    --enable-libx264 \\\n    --enable-libx265 \\\n    --enable-libxvid \\\n    --enable-libsoxr \\\n    --enable-libvpx \\\n    --enable-libsrt \\\n    --enable-libssh \\\n    --enable-libass \\\n    --enable-libaom \\\n    --enable-libjxl \\\n    --enable-libvmaf \\\n    --enable-libxml2 \\\n    --enable-librist \\\n    --enable-libzimg \\\n    --enable-libzmq \\\n    --enable-lzma \\\n    --enable-sdl \\\n    --enable-gpl \\\n    --disable-jni \\\n    --disable-doc \\\n    --disable-debug \\\n    --disable-vulkan \\\n    --disable-libjack \\\n    --disable-indev=jack \\\n    --disable-mediacodec \\\n    --disable-libfdk-aac \\\n    $CONFIGURE_EXTRA_ARGS ; then\n    gmakew clean\n    gmakew install V=1\n    run cp ffbuild/config.log .\nelse\n    cat ffbuild/config.log\n    return 1\nfi"
   },
   {
     "pkgname": "fftw",
@@ -3842,7 +3828,7 @@
     "git-url": "https://github.com/FreeRDP/FreeRDP",
     "src-url": "https://github.com/FreeRDP/FreeRDP/releases/download/3.12.0/freerdp-3.12.0.tar.gz",
     "src-sha": "b08c1bfe867cde0feb3e51f72f32ee3fa3a37acbd20d6fdeb5a0f614b549f5cb",
-    "dep-pkg": "cjson wayland ffmpeg-dev libicu libusb libcups libfuse libkrb5 libsdl2_ttf libpkcs11-helper libxkbcommon xorg-libxv",
+    "dep-pkg": "wayland ffmpeg-dev libicu libusb libcups libfuse libkrb5 libsdl2_ttf libpkcs11-helper libxkbcommon xorg-libxv",
     "dep-lib": "xcb libavcodec SDL2_ttf -lffi -lgomp -lstdc++",
     "dep-upp": "curl bsdtar cmake ninja",
     "bsystem": "cmake",
@@ -7972,6 +7958,22 @@
     "install": "mesonw -Dtests=false"
   },
   {
+    "pkgname": "libcjson",
+    "pkgtype": "lib",
+    "version": "1.7.18",
+    "license": "MIT",
+    "summary": "C library for parsing and manipulating JSON",
+    "web-url": "https://github.com/DaveGamble/cJSON",
+    "git-url": "https://github.com/DaveGamble/cJSON",
+    "src-url": "https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.18.tar.gz",
+    "src-sha": "3aa806844a03442c00769b83e99970be70fbef03735ff898f4811dd03b9f5ee5",
+    "dep-upp": "curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "cmakew \\\n    -DENABLE_CJSON_UTILS=ON \\\n    -DENABLE_CJSON_TEST=OFF \\\n    -DBUILD_SHARED_AND_STATIC_LIBS=ON"
+  },
+  {
     "pkgname": "libclang@18",
     "pkgtype": "lib",
     "version": "18.1.8",
@@ -11021,6 +11023,21 @@
     "install": "cmakew 2 \\\n    -Dpystring_INCLUDE_DIR=\"$libpystring_INCLUDE_DIR/pystring\" \\\n    -Dpystring_LIBRARY=\"$libpystring_LIBRARY_DIR/libpystring$SHARED_LIBRARY_SUFFIX\" \\\n    -DOCIO_BUILD_APPS=OFF \\\n    -DOCIO_BUILD_DOCS=OFF \\\n    -DOCIO_BUILD_TESTS=OFF \\\n    -DOCIO_BUILD_JAVA=OFF \\\n    -DOCIO_BUILD_PYTHON=OFF \\\n    -DOCIO_WARNING_AS_ERROR=OFF"
   },
   {
+    "pkgname": "libopencore-amr",
+    "pkgtype": "lib",
+    "version": "0.1.6",
+    "license": "Apache-2.0",
+    "summary": "Audio codecs extracted from Android open source project",
+    "web-url": "https://opencore-amr.sourceforge.io/",
+    "src-url": "https://downloads.sourceforge.net/project/opencore-amr/opencore-amr/opencore-amr-0.1.6.tar.gz",
+    "src-sha": "483eb4061088e2b34b358e47540b5d495a96cd468e361050fae615b1809dc4a1",
+    "dep-upp": "curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "configure"
+  },
+  {
     "pkgname": "libopenexr",
     "pkgtype": "lib",
     "version": "3.2.4",
@@ -11440,7 +11457,7 @@
     "git-url": "https://code.videolan.org/videolan/libplacebo",
     "src-url": "https://code.videolan.org/videolan/libplacebo/-/archive/v7.349.0/libplacebo-v7.349.0.tar.bz2",
     "src-sha": "38c9c75d9c1bb412baf34845d1ca58c41a9804d1d0798091d7a8602a0d7c9aa6",
-    "dep-pkg": "ffmpeg-dev vulkan-loader shaderc liblcms2",
+    "dep-pkg": "vulkan-loader shaderc liblcms2",
     "dep-upp": "curl bsdtar python3 python3 ninja",
     "dep-pym": "MarkupSafe Jinja2 glad2 meson",
     "bsystem": "meson",
@@ -11991,20 +12008,20 @@
   {
     "pkgname": "librist",
     "pkgtype": "lib",
-    "version": "0.2.10",
+    "version": "0.2.11",
     "license": "BSD-2-Clause",
     "summary": "Reliable Internet Stream Transport (RIST)",
     "web-url": "https://code.videolan.org/rist/",
     "git-url": "https://code.videolan.org/rist/librist",
-    "src-url": "https://code.videolan.org/rist/librist/-/archive/v0.2.10/librist-v0.2.10.tar.gz",
-    "src-sha": "797e486961cd09bc220c5f6561ca5a08e7747b313ec84029704d39cbd73c598c",
-    "dep-pkg": "cjson cmocka mbedtls",
+    "src-url": "https://code.videolan.org/rist/librist/-/archive/v0.2.11/librist-v0.2.11.tar.gz",
+    "src-sha": "84e413fa9a1bc4e2607ecc0e51add363e1bc5ad42f7cc5baec7b253e8f685ad3",
+    "dep-pkg": "libcjson mbedtls",
     "dep-upp": "curl bsdtar python3 ninja",
     "dep-pym": " meson",
     "bsystem": "meson",
     "binbstd": "0",
     "parallel": "1",
-    "install": "mesonw \\\n    -Dtest=false \\\n    -Duse_tun=false \\\n    -Duse_nettle=false \\\n    -Duse_gnutls=false \\\n    -Duse_mbedtls=true \\\n    -Dfallback_builtin=true"
+    "install": "mesonw \\\n    -Dbuilt_tools=false \\\n    -Dtest=false \\\n    -Duse_tun=false \\\n    -Duse_nettle=false \\\n    -Duse_gnutls=false \\\n    -Duse_mbedtls=true \\\n    -Dfallback_builtin=true"
   },
   {
     "pkgname": "librsvg",
@@ -13372,7 +13389,7 @@
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
-    "install": "cmakew -DUSE_OMP=OFF"
+    "install": "cmakew 2 -DUSE_OMP=OFF"
   },
   {
     "pkgname": "libvips",
@@ -15145,7 +15162,7 @@
     "git-url": "https://github.com/mpv-player/mpv",
     "src-url": "https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz",
     "src-sha": "2ca92437affb62c2b559b4419ea4785c70d023590500e8a52e95ea3ab4554683",
-    "dep-pkg": "libplacebo libbluray libluajit libmujs libass libuchardet librubberband mesa",
+    "dep-pkg": "libplacebo libluajit libmujs libuchardet mesa",
     "dep-lib": "soxr xcb-dri3",
     "dep-upp": "curl bsdtar python3 ninja",
     "dep-pym": " meson",
@@ -16033,21 +16050,6 @@
     "install": "cmakew \\\n    -Dpystring_INCLUDE_DIR=\"$libpystring_INCLUDE_DIR/pystring\" \\\n    -Dpystring_LIBRARY=\"$libpystring_LIBRARY_DIR/libpystring.a\" \\\n    -DOCIO_BUILD_APPS=ON \\\n    -DOCIO_BUILD_DOCS=OFF \\\n    -DOCIO_BUILD_TESTS=OFF \\\n    -DOCIO_BUILD_JAVA=OFF \\\n    -DOCIO_BUILD_PYTHON=OFF \\\n    -DOCIO_WARNING_AS_ERROR=OFF \\\n    -DBUILD_SHARED_LIBS=OFF"
   },
   {
-    "pkgname": "opencore-amr",
-    "pkgtype": "exe",
-    "version": "0.1.6",
-    "license": "Apache-2.0",
-    "summary": "Audio codecs extracted from Android open source project",
-    "web-url": "https://opencore-amr.sourceforge.io/",
-    "src-url": "https://downloads.sourceforge.net/project/opencore-amr/opencore-amr/opencore-amr-0.1.6.tar.gz",
-    "src-sha": "483eb4061088e2b34b358e47540b5d495a96cd468e361050fae615b1809dc4a1",
-    "dep-upp": "curl bsdtar gmake gmake",
-    "bsystem": "configure",
-    "binbstd": "0",
-    "parallel": "1",
-    "install": "configure"
-  },
-  {
     "pkgname": "opencv",
     "pkgtype": "lib",
     "version": "4.9.0",
@@ -16057,7 +16059,7 @@
     "git-url": "https://github.com/opencv/opencv",
     "src-url": "https://github.com/opencv/opencv/archive/refs/tags/4.9.0.tar.gz",
     "src-sha": "ddf76f9dffd322c7c3cb1f721d0887f62d747b82059342213138dc190f28bc6c",
-    "dep-pkg": "libeigen libtbb libopenjpeg libopenexr libopenblas ffmpeg-dev",
+    "dep-pkg": "libeigen libtbb libopenexr libopenblas ffmpeg-dev",
     "dep-upp": "python3 curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",

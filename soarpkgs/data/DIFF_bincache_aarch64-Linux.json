@@ -2533,7 +2533,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-56c3553-250313T170551"
+    "version": "HEAD-22145d7-250314T071559"
   },
   {
     "_disabled": "false",
@@ -2850,7 +2850,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-56c3553-250313T170551"
+    "version": "HEAD-22145d7-250314T071559"
   },
   {
     "_disabled": "false",
@@ -3693,7 +3693,7 @@
       "bugbounty",
       "xss"
     ],
-    "version": "HEAD-bf76089-250313T205701"
+    "version": "HEAD-3d138e9-250314T052157"
   },
   {
     "_disabled": "false",
@@ -3910,6 +3910,46 @@
       "devcontainer"
     ],
     "version": "v0.7.0-alpha.9"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "diffutils-rs",
+    "pkg_family": "diffutils-rs",
+    "pkg_id": "github.com.uutils.diffutils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/uutils-diffutils/diffutils-rs/diffutils-rs",
+    "bincache": "ghcr.io/pkgforge/bincache/diffutils-rs/official/diffutils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/diffutils-rs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Drop-in replacement of diffutils in Rust",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/diffutils-rs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/uutils/diffutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/uutils/diffutils"
+    ],
+    "provides": [
+      "diffutils"
+    ],
+    "src_url": [
+      "https://github.com/uutils/diffutils"
+    ],
+    "tag": [
+      "diff"
+    ],
+    "version": "HEAD-360bff5-250314T062833"
   },
   {
     "_disabled": "true",
@@ -4165,7 +4205,7 @@
     "tag": [
       "elf"
     ],
-    "version": "HEAD-eaa6b85-250313T093345"
+    "version": "HEAD-e7ea82e-250314T063945"
   },
   {
     "_disabled": "false",
@@ -4670,7 +4710,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-b66a009-250311T084839"
+    "version": "HEAD-3227e93-250314T094316"
   },
   {
     "_disabled": "false",
@@ -4816,6 +4856,54 @@
     "tag": [
       "media"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "findutils",
+    "pkg_family": "findutils",
+    "pkg_id": "github.com.uutils.findutils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/uutils-findutils/findutils/findutils",
+    "bincache": "ghcr.io/pkgforge/bincache/findutils/uutils/find",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/findutils/static.uutils.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A toolset for searching and processing files [Rust (uutils)]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/findutils/static.uutils.source.yaml",
+    "homepage": [
+      "https://github.com/uutils/findutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/uutils/findutils"
+    ],
+    "provides": [
+      "find",
+      "xargs"
+    ],
+    "repology": [
+      "rust-findutils",
+      "rust:findutils",
+      "uutils-findutils"
+    ],
+    "src_url": [
+      "https://github.com/uutils/findutils"
+    ],
+    "tag": [
+      "findutils"
+    ],
+    "version": "HEAD-0f9ca9e-250314T072048"
   },
   {
     "_disabled": "false",
@@ -5096,7 +5184,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-ad117c9-250314T000627"
+    "version": "HEAD-162755a-250314T061245"
   },
   {
     "_disabled": "false",
@@ -6571,7 +6659,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-14795ab-250313T175459"
+    "version": "HEAD-f6b5f5c-250314T014246"
   },
   {
     "_disabled": "false",
@@ -7613,7 +7701,75 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-27aa907-250313T211052"
+    "version": "HEAD-8fd59a7-250314T033213"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "miniflux",
+    "pkg_family": "miniflux",
+    "pkg_id": "github.com.miniflux.v2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/miniflux-v2/miniflux/miniflux",
+    "bincache": "ghcr.io/pkgforge/bincache/miniflux/official/miniflux",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miniflux/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Minimalist and opinionated feed reader",
+    "distro_pkg": {
+      "alpine": [
+        "miniflux"
+      ],
+      "archlinux": {
+        "aur": [
+          "miniflux-git"
+        ],
+        "extra": [
+          "miniflux"
+        ]
+      },
+      "debian": [
+        "miniflux"
+      ],
+      "gnuguix": [
+        "miniflux"
+      ],
+      "nixpkgs": [
+        "miniflux"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/miniflux/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/miniflux/v2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/miniflux/v2"
+    ],
+    "provides": [
+      "miniflux"
+    ],
+    "repology": [
+      "miniflux"
+    ],
+    "src_url": [
+      "https://github.com/miniflux/v2"
+    ],
+    "tag": [
+      "rss"
+    ],
+    "version": "HEAD-baccb9e-250313T193026"
   },
   {
     "_disabled": "false",
@@ -8049,7 +8205,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-497c7cf-250313T141214"
+    "version": "HEAD-d13fb45-250314T122622"
   },
   {
     "_disabled": "false",
@@ -8291,6 +8447,66 @@
       "nfs"
     ],
     "version": "2.7.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ngrok",
+    "pkg_family": "ngrok",
+    "pkg_id": "equinox.com.ngrok.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ngrok-stable/ngrok/ngrok",
+    "bincache": "ghcr.io/pkgforge/bincache/ngrok/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ngrok/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "External Tunnel to Internal Assets",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ngrok"
+        ]
+      },
+      "homebrew": [
+        "ngrok"
+      ],
+      "nixpkgs": [
+        "ngrok"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ngrok/static.official.stable.yaml",
+    "homepage": [
+      "https://ngrok.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://ngrok.com/downloads/linux"
+    ],
+    "provides": [
+      "ngrok"
+    ],
+    "repology": [
+      "ngrok"
+    ],
+    "src_url": [
+      "https://ngrok.com/downloads/linux?tab=download",
+      "https://dl.equinox.io/ngrok/ngrok-v3/stable/archive"
+    ],
+    "tag": [
+      "tunnel"
+    ],
+    "version": "3.21.0"
   },
   {
     "_disabled": "false",
@@ -8673,6 +8889,69 @@
       "Utility"
     ],
     "version": "HEAD-e02dcb2-250312T130741"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "oras",
+    "pkg_family": "oras",
+    "pkg_id": "github.com.oras-project.oras",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/project-oras/oras/oras",
+    "bincache": "ghcr.io/pkgforge/bincache/oras/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/oras/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "OCI registry client - manage content like artifacts, images, packages",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "oras"
+        ]
+      },
+      "debian": [
+        "oras"
+      ],
+      "homebrew": [
+        "oras"
+      ],
+      "nixpkgs": [
+        "oras"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/oras/static.official.source.yaml",
+    "homepage": [
+      "https://oras.land"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/oras-project/oras"
+    ],
+    "provides": [
+      "oras"
+    ],
+    "repology": [
+      "oras"
+    ],
+    "src_url": [
+      "https://github.com/oras-project/oras"
+    ],
+    "tag": [
+      "oci",
+      "registry"
+    ],
+    "version": "HEAD-e90e21a-250314T123638"
   },
   {
     "_disabled": "false",

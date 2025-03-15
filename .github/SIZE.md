@@ -13,7 +13,7 @@
  1.5M   │ │ ├── BREW_CASK.json
  1.0M   │ │ ├── PPKG_RAW.json
  452K   │ │ ├── FLATPAK_APPS_INFO.json
- 420K   │ │ ├── FLATPAK_APPS_INFO.txt
+ 424K   │ │ ├── FLATPAK_APPS_INFO.txt
  300K   │ │ ├── PPKG.json
  240K   │ │ ├── FLATPAK_POPULAR.json
  224K   │ │ ├── FLATPAK_TRENDING.json

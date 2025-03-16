@@ -73,6 +73,7 @@ jobs:
 
       - name: Fetch (${{ matrix.repo }}/${{ matrix.arch }})
         env:
+          GHCR_TOKEN: "${{ github.token }}"
           GH_TOKEN: "${{ github.token }}"
           GITHUB_TOKEN: "${{ github.token }}"
           #GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"

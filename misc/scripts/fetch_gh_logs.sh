@@ -54,8 +54,14 @@ download_action_logs()
  ##Tmpdir
   pushd "${LOGS_DIR}" >/dev/null 2>&1
  ##Get Run IDs 
-  readarray -t RUN_IDS < <(gh api "/repos/${REPO}/actions/runs" --paginate \
-    -q '[.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed")] | sort_by(.created_at) | reverse | .[:300] | .[].id')
+  rm "${TMPDIR}/RUN_IDS.txt" 2>/dev/null
+  for page in {1..50}; do
+    echo -e "\n[+] Fetching https://github.com/pkgforge/${REPO}/actions [Page=${page}/50]\n"
+    gh api "/repos/${REPO}/actions/runs?per_page=100&page=${page}" 2>/dev/null |\
+      jq -r '.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed") | .id' 2>/dev/null |\
+      grep -oP '^\s*\d+\s*$' | tr -d ' ' >> "${TMPDIR}/RUN_IDS.txt"
+  done
+  readarray -t RUN_IDS < <(cat "${TMPDIR}/RUN_IDS.txt" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | sort -u | sed -e '/^[[:space:]]*$/d;100q')
  ##Check if there are any workflow runs
   if [ ${#RUN_IDS[@]} -eq 0 ]; then
    echo -e "\n[-] No workflow runs found\n"
@@ -74,7 +80,7 @@ download_action_logs()
   for JOB_ID in "${JOB_IDS[@]}"; do
     echo "[${RUN_ID}] ==> ${JOB_ID}"
     JOB_LOGS="logs-${JOB_ID}-${RUN_ID}.txt"
-    gh api "/repos/${REPO}/actions/jobs/${JOB_ID}/logs" > "${LOGS_DIR}/${JOB_LOGS}"
+    gh api "/repos/${REPO}/actions/jobs/${JOB_ID}/logs" 2>/dev/null > "${LOGS_DIR}/${JOB_LOGS}"
     du -sh "${LOGS_DIR}/${JOB_LOGS}"
   done
  '

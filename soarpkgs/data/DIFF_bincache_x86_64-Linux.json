@@ -884,7 +884,7 @@
       "bsum",
       "checksum"
     ],
-    "version": "HEAD-2374b56-250315T142740"
+    "version": "HEAD-a2516b7-250315T222150"
   },
   {
     "_disabled": "false",
@@ -3851,6 +3851,43 @@
   },
   {
     "_disabled": "false",
+    "pkg": "dbin",
+    "pkg_family": "dbin",
+    "pkg_id": "github.com.xplshn.dbin",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xplshn-dbin/dbin/dbin",
+    "bincache": "ghcr.io/pkgforge/bincache/dbin/official/dbin",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dbin/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Poor man's package manager",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dbin/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/xplshn/dbin"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/xplshn/dbin"
+    ],
+    "src_url": [
+      "https://github.com/xplshn/dbin"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "HEAD-85d16ed-250316T012549"
+  },
+  {
+    "_disabled": "false",
     "pkg": "dblab",
     "pkg_family": "dblab",
     "pkg_id": "github.com.danvergara.dblab",
@@ -4896,7 +4933,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-99415a3-250315T234702"
+    "version": "HEAD-96e9e61-250316T103804"
   },
   {
     "_disabled": "false",
@@ -5776,7 +5813,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-dc8bd63-250315T120737"
+    "version": "HEAD-36a846f-250316T110535"
   },
   {
     "_disabled": "false",
@@ -7393,7 +7430,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-acaedc3-250316T003556"
+    "version": "HEAD-d1c2a1c-250316T041415"
   },
   {
     "_disabled": "false",
@@ -8696,7 +8733,7 @@
     "tag": [
       "archiving"
     ],
-    "version": "HEAD-dc78a40-250315T131329"
+    "version": "HEAD-de3b588-250315T235004"
   },
   {
     "_disabled": "false",
@@ -10632,7 +10669,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-9ed6411-250314T073948"
+    "version": "HEAD-84c591f-250315T234925"
   },
   {
     "_disabled": "false",
@@ -11971,7 +12008,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-0be9c71-250311T170326"
+    "version": "HEAD-851824f-250316T101224"
   },
   {
     "_disabled": "false",
@@ -12104,6 +12141,98 @@
       "ssh"
     ],
     "version": "HEAD-2adc390-250313T022047"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "spirv-tools",
+    "pkg_family": "spirv-tools",
+    "pkg_id": "ppkg.spirv-tools",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/spirv-tools/spirv-tools/spirv-tools",
+    "bincache": "ghcr.io/pkgforge/bincache/spirv-tools/ppkg/spirv-as",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/spirv-tools/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for processing SPIR-V intermediate shader language modules",
+      "spirv-as": "Standalone assembler [spirv-tools]",
+      "spirv-cfg": "Control flow graph dumper [spirv-tools]",
+      "spirv-dis": "Standalone disassembler [spirv-tools]",
+      "spirv-link": "Standalone linker [spirv-tools]",
+      "spirv-lint": "Standalone linter [spirv-tools]",
+      "spirv-objdump": "Dump information from a SPIR-V binary [spirv-tools]",
+      "spirv-opt": "Standalone optimizer [spirv-tools]",
+      "spirv-reduce": "Standalone reducer [spirv-tools]",
+      "spirv-val": "Standalone validator [spirv-tools]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "spirv-tools"
+      ],
+      "archlinux": {
+        "aur": [
+          "spirv-tools-git"
+        ],
+        "extra": [
+          "spirv-tools"
+        ]
+      },
+      "debian": [
+        "spirv-tools"
+      ],
+      "gnuguix": [
+        "spirv-tools"
+      ],
+      "homebrew": [
+        "spirv-tools"
+      ],
+      "nixpkgs": [
+        "spirv-tools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/spirv-tools/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.khronos.org/registry/spir-v",
+      "https://github.com/KhronosGroup/SPIRV-Tools"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "spirv-as",
+      "spirv-cfg",
+      "spirv-dis",
+      "spirv-link",
+      "spirv-lint",
+      "spirv-objdump",
+      "spirv-opt",
+      "spirv-reduce",
+      "spirv-val"
+    ],
+    "repology": [
+      "spirv-tools"
+    ],
+    "src_url": [
+      "https://github.com/KhronosGroup/SPIRV-Tools"
+    ],
+    "tag": [
+      "spirv",
+      "vulkan"
+    ],
+    "version": "1.4.309.0"
   },
   {
     "_disabled": "false",

@@ -112,17 +112,17 @@ download_action_logs()
          echo -e "\n[-] No logs found for Run ID (${RUN_ID}) <== [${RUN_ID}]\n"
          continue
        else
-         echo -e "\nCompressing logs for Run ID [${RUN_ID}] ==> [${RUN_ID}.log.xz]"
-         7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "${LOGS_DIR}/${RUN_ID}.log.xz" "${C_RUN_ID[@]}"
+         echo -e "\nCompressing logs for Run ID [${RUN_ID}] ==> [${RUN_ID}.log.7z]"
+         7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "${LOGS_DIR}/${RUN_ID}.log.7z" "${C_RUN_ID[@]}"
          rm -rvf "${C_RUN_ID[@]}" 2>/dev/null
        fi
      done
    fi
  ##Upload
    LOG_IDS=()
-   mapfile -t "LOG_IDS" < <(find "${LOGS_DIR}" -type f -name '*.log.xz' -exec basename "{}" .log.xz \; | sort -u)
+   mapfile -t "LOG_IDS" < <(find "${LOGS_DIR}" -type f -name '*.log.7z' -exec basename "{}" .log.7z \; | sort -u)
    if [ ${#LOG_IDS[@]} -le 0 ]; then
-    echo -e "\n[-] No XZ Archives Found"
+    echo -e "\n[-] No 7Z Archives Found"
     return 1
    else
     pushd "${LOGS_DIR}" >/dev/null 2>&1
@@ -130,22 +130,22 @@ download_action_logs()
       for LOG_ID in "${LOG_IDS[@]}"; do
        if echo "${REPO}" | grep -qi 'bincache'; then
         ##Github Releases
-        # echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-bincache/${LOG_ID}.log.xz]"
-        # gh release upload "build-log-bincache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.xz" & #--clobber
+        # echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.7z] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-bincache/${LOG_ID}.log.7z]"
+        # gh release upload "build-log-bincache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.7z" & #--clobber
         #ghcr
          echo -e "[+] Uploading [${LOG_ID}] ==> [https://github.com/pkgforge/metadata/pkgs/container/metadata%2Fbuild-logs/] (bincache-${LOG_ID})"
-         [[ -f "./${LOG_ID}.log.xz" && -s "./${LOG_ID}.log.xz" ]] && oras push --disable-path-validation \
-        --config "/dev/null:application/vnd.oci.empty.v1+json" "${GHCRPKG_URL}:bincache-${LOG_ID}" "./${LOG_ID}.log.xz"
+         [[ -f "./${LOG_ID}.log.7z" && -s "./${LOG_ID}.log.7z" ]] && oras push --disable-path-validation \
+        --config "/dev/null:application/vnd.oci.empty.v1+json" "${GHCRPKG_URL}:bincache-${LOG_ID}" "./${LOG_ID}.log.7z"
        elif echo "${REPO}" | grep -qi 'pkgcache'; then
-        # echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-pkgcache/${LOG_ID}.log.xz]"
-        # gh release upload "build-log-pkgcache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.xz" & #--clobber
+        # echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.7z] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-pkgcache/${LOG_ID}.log.7z]"
+        # gh release upload "build-log-pkgcache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.7z" & #--clobber
         echo -e "[+] Uploading [${LOG_ID}] ==> [https://github.com/pkgforge/metadata/pkgs/container/metadata%2Fbuild-logs/] (pkgcache-${LOG_ID})"
-        [[ -f "./${LOG_ID}.log.xz" && -s "./${LOG_ID}.log.xz" ]] && oras push --disable-path-validation \
-        --config "/dev/null:application/vnd.oci.empty.v1+json" "${GHCRPKG_URL}:pkgcache-${LOG_ID}" "./${LOG_ID}.log.xz"
+        [[ -f "./${LOG_ID}.log.7z" && -s "./${LOG_ID}.log.7z" ]] && oras push --disable-path-validation \
+        --config "/dev/null:application/vnd.oci.empty.v1+json" "${GHCRPKG_URL}:pkgcache-${LOG_ID}" "./${LOG_ID}.log.7z"
        fi
       done
      #Upload to HF
-       huggingface-cli upload "pkgforge/build-logs" "${LOGS_DIR}" --include "*.log.xz" --repo-type "dataset" --commit-message "[+] Build Log (${LOG_ID})"
+       huggingface-cli upload "pkgforge/build-logs" "${LOGS_DIR}" --include "*.log.7z" --repo-type "dataset" --commit-message "[+] Build Log (${LOG_ID})"
    fi
  ##Exit
   wait ; popd >/dev/null 2>&1

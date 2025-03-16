@@ -33,7 +33,7 @@ download_action_logs()
   pushd "${LOGS_DIR}" >/dev/null 2>&1
  ##Get Run IDs 
   readarray -t RUN_IDS < <(gh api "/repos/${REPO}/actions/runs" --paginate \
-    -q '[.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed")] | sort_by(.created_at) | reverse | .[:100] | .[].id')
+    -q '[.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed")] | sort_by(.created_at) | reverse | .[:1000] | .[].id')
  ##Check if there are any workflow runs
   if [ ${#RUN_IDS[@]} -eq 0 ]; then
    echo -e "\n[-] No workflow runs found\n"
@@ -72,6 +72,7 @@ download_action_logs()
        else
          echo -e "\nCompressing logs for Run ID [${RUN_ID}] ==> [${RUN_ID}.log.xz]"
          7z a -t7z -mx=9 -mmt="$(($(nproc)+1))" -bsp1 -bt "${LOGS_DIR}/${RUN_ID}.log.xz" "${C_RUN_ID[@]}"
+         rm -rvf "${C_RUN_ID[@]}" 2>/dev/null
        fi
      done
    fi
@@ -84,11 +85,12 @@ download_action_logs()
    else
     for LOG_ID in "${LOG_IDS[@]}"; do
      if echo "${REPO}" | grep -qi 'bincache'; then
-       echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://meta.pkgforge.dev/bincache/logs/${LOG_ID}.log.xz]"
-       rclone copyto "${LOGS_DIR}/${LOG_ID}.log.xz" "r2:/meta/bincache/logs/${LOG_ID}.log.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+      #Github Releases
+       echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-bincache/${LOG_ID}.log.xz]"
+       gh release upload "build-log-bincache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.xz" & #--clobber
      elif echo "${REPO}" | grep -qi 'pkgcache'; then
-       echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://meta.pkgforge.dev/pkgcache/logs/${LOG_ID}.log.xz]"
-       rclone copyto "${LOGS_DIR}/${LOG_ID}.log.xz" "r2:/meta/pkgcache/logs/${LOG_ID}.log.xz" --checksum --check-first --user-agent="${USER_AGENT}" &
+       echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-pkgcache/${LOG_ID}.log.xz]"
+       gh release upload "build-log-pkgcache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.xz" & #--clobber
      fi
     done
    fi

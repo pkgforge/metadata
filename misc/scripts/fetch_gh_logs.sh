@@ -6,6 +6,28 @@
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
+##Sanity
+if ! command -v huggingface-cli &> /dev/null; then
+  echo -e "[-] Failed to find huggingface-cli\n"
+ exit 1 
+fi
+if [ -z "${HF_TOKEN+x}" ] || [ -z "${HF_TOKEN##*[[:space:]]}" ]; then
+  echo -e "\n[-] FATAL: Failed to Find HF Token (\${HF_TOKEN}\n"
+ exit 1
+else
+  export GIT_TERMINAL_PROMPT="0"
+  export GIT_ASKPASS="/bin/echo"
+  git config --global "credential.helper" store
+  git config --global "user.email" "AjamX101@gmail.com"
+  git config --global "user.name" "Azathothas"
+  huggingface-cli login --token "${HF_TOKEN}" --add-to-git-credential
+fi
+if ! command -v oras &> /dev/null; then
+  echo -e "[-] Failed to find oras\n"
+ exit 1
+else
+  oras login --username "Azathothas" --password "${GHCR_TOKEN}" "ghcr.io"
+fi
 ##ENV
 export TZ="UTC"
 SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
@@ -83,16 +105,27 @@ download_action_logs()
     echo -e "\n[-] No XZ Archives Found"
     return 1
    else
-    for LOG_ID in "${LOG_IDS[@]}"; do
-     if echo "${REPO}" | grep -qi 'bincache'; then
-      #Github Releases
-       echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-bincache/${LOG_ID}.log.xz]"
-       gh release upload "build-log-bincache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.xz" & #--clobber
-     elif echo "${REPO}" | grep -qi 'pkgcache'; then
-       echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-pkgcache/${LOG_ID}.log.xz]"
-       gh release upload "build-log-pkgcache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.xz" & #--clobber
-     fi
-    done
+    pushd "${LOGS_DIR}" >/dev/null 2>&1
+     #Upload to GHCR
+      for LOG_ID in "${LOG_IDS[@]}"; do
+       if echo "${REPO}" | grep -qi 'bincache'; then
+        ##Github Releases
+        # echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-bincache/${LOG_ID}.log.xz]"
+        # gh release upload "build-log-bincache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.xz" & #--clobber
+        #ghcr
+         echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/pkgs/container/build-log] (bincache-${LOG_ID})"
+         [[ -f "./${LOG_ID}.log.xz" && -s "./${LOG_ID}.log.xz" ]] && oras push --disable-path-validation \
+        --config "/dev/null:application/vnd.oci.empty.v1+json" "ghcr.io/pkgforge/metadata/build-logs:bincache-${LOG_ID}" "./${LOG_ID}.log.xz"
+       elif echo "${REPO}" | grep -qi 'pkgcache'; then
+        # echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-pkgcache/${LOG_ID}.log.xz]"
+        # gh release upload "build-log-pkgcache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.xz" & #--clobber
+        echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/pkgs/container/build-log] (pkgcache-${LOG_ID})"
+        [[ -f "./${LOG_ID}.log.xz" && -s "./${LOG_ID}.log.xz" ]] && oras push --disable-path-validation \
+        --config "/dev/null:application/vnd.oci.empty.v1+json" "ghcr.io/pkgforge/metadata/build-logs:pkgcache-${LOG_ID}" "./${LOG_ID}.log.xz"
+       fi
+      done
+     #Upload to HF
+       huggingface-cli upload "pkgforge/build-logs" "${LOGS_DIR}" --include "*.log.xz" --repo-type "dataset" --commit-message "[+] Build Log (${LOG_ID})"
    fi
  ##Exit
   wait ; popd >/dev/null 2>&1

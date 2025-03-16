@@ -5,13 +5,14 @@ concurrency:
 
 on:
   workflow_dispatch:
-  #schedule:
-  # - cron: "0 */12 * * *" #every 12 hrs
+  schedule:
+   - cron: "0 */12 * * *" #every 12 hrs
 jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 200
-    permissions: read-all
+    permissions:
+      contents: write
     strategy:
       matrix:
         include:
@@ -45,8 +46,17 @@ jobs:
           SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
           echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
           #-------------#
-          ##rclone
-          echo "${{ secrets.CF_META }}" > "${HOME}/.rclone.conf"
+          ##gh
+          echo "GH_PAGER=" >> "${GITHUB_ENV}"
+          gh config set prompt disabled
+          echo "GHA_MODE=MATRIX" >> "${GITHUB_ENV}"
+          echo "GIT_TERMINAL_PROMPT=0" >> "${GITHUB_ENV}"
+          echo "GIT_ASKPASS=/bin/echo" >> "${GITHUB_ENV}"
+          gh release create "build-log-bincache" --repo "${GITHUB_REPOSITORY}" --title "BinCache Build Logs (CI)" --prerelease || true
+          gh release create "build-log-pkgcache" --repo "${GITHUB_REPOSITORY}" --title "PkgCache Build Logs (CI)" --prerelease || true
+          sleep 5
+          gh release view "build-log-bincache" --repo "${GITHUB_REPOSITORY}"
+          gh release view "build-log-pkgcache" --repo "${GITHUB_REPOSITORY}"
           #-------------#
           ##User-Agent
           USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
@@ -55,8 +65,8 @@ jobs:
 
       - name: Fetch (${{ matrix.repo }}/${{ matrix.arch }})
         env:
-          #GITHUB_TOKEN: "${{ github.token }}"
-          GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
+          GITHUB_TOKEN: "${{ github.token }}"
+          #GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
         run: |
           #presets
           set +x ; set +e

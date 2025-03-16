@@ -23,11 +23,6 @@ jobs:
             script: "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_gh_logs.sh"
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          path: main
-          filter: "blob:none"
 
       - name: Install Addons
         run: |
@@ -46,6 +41,9 @@ jobs:
         continue-on-error: true
         
       - name: Setup Env
+        env:
+          GH_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ github.token }}"
         run: |
           #presets
           set +x ; set +e
@@ -73,6 +71,7 @@ jobs:
 
       - name: Fetch (${{ matrix.repo }}/${{ matrix.arch }})
         env:
+          GH_TOKEN: "${{ github.token }}"
           GITHUB_TOKEN: "${{ github.token }}"
           #GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
         run: |

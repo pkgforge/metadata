@@ -18,11 +18,11 @@ jobs:
         include:
           - repo: "pkgforge/bincache"
             repo_name: "bincache"
-            script: "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_gh_logs.sh"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_gh_logs.sh"
 
           - repo: "pkgforge/pkgcache"
             repo_name: "pkgcache"
-            script: "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_gh_logs.sh"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_gh_logs.sh"
 
     steps:
 
@@ -78,7 +78,10 @@ jobs:
           #presets
           set +x ; set +e
           #-------------#
-          dos2unix --quiet "${{ matrix.script }}"
-          chmod +x "${{ matrix.script }}"
-          PARALLEL_LIMIT="$(($(nproc)+1))" bash "${{ matrix.script }}" "${{ matrix.repo }}"
+          pushd "$(mktemp -d)" &>/dev/null
+            curl -qfsSL "${{ matrix.script }}" -o "./sync.sh"
+            dos2unix --quiet "./sync.sh"
+            chmod 'a+x' -v "./sync.sh"
+            PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh" "${{ matrix.repo }}"
+          popd &>/dev/null
         continue-on-error: true

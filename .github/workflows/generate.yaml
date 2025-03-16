@@ -427,7 +427,7 @@ jobs:
             ($x86_64[0] | map(.pkg_id) | contains([$id]) | not) or
             ($x86_64[0][] | select(.pkg_id == $id).build_date) as $x86_date |
             $x86_date == null or $x86_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
-           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_pkgcache_aarch64-Linux.json"
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_pkgcache_x86_64-Linux.json"
         continue-on-error: true
 
       - name: Get DateTime & Purge files (=> 95 MB)

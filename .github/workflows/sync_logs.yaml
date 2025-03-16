@@ -13,6 +13,8 @@ jobs:
     timeout-minutes: 200
     permissions:
       contents: write
+      packages: write
+      statuses: read
     strategy:
       matrix:
         include:
@@ -60,9 +62,9 @@ jobs:
           echo "GHA_MODE=MATRIX" >> "${GITHUB_ENV}"
           echo "GIT_TERMINAL_PROMPT=0" >> "${GITHUB_ENV}"
           echo "GIT_ASKPASS=/bin/echo" >> "${GITHUB_ENV}"
-          gh release create "build-log-${{ matrix.repo_name }}" --repo "${GITHUB_REPOSITORY}" --title "Build Logs (CI) [${{ matrix.repo_name }}]" --prerelease || true
-          sleep 5
-          gh release view "build-log-${{ matrix.repo_name }}" --repo "${GITHUB_REPOSITORY}"
+          #gh release create "build-log-${{ matrix.repo_name }}" --repo "${GITHUB_REPOSITORY}" --title "Build Logs (CI) [${{ matrix.repo_name }}]" --prerelease || true
+          #sleep 5
+          #gh release view "build-log-${{ matrix.repo_name }}" --repo "${GITHUB_REPOSITORY}"
           #-------------#
           ##User-Agent
           USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
@@ -74,6 +76,7 @@ jobs:
           GH_TOKEN: "${{ github.token }}"
           GITHUB_TOKEN: "${{ github.token }}"
           #GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
+          HF_TOKEN: "${{ secrets.HF_TOKEN }}"
         run: |
           #presets
           set +x ; set +e

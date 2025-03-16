@@ -318,7 +318,7 @@ jobs:
           labels: report, automated issue
         continue-on-error: true
 
-      - name: Generate Diffs (BinCache)
+      - name: Generate Diffs [pkg_id] (BinCache)
         run: |
           #presets
           set +x ; set +e
@@ -328,7 +328,7 @@ jobs:
           jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json") \
           '.[] | 
           select((.pkg_type == "static" and (.host | contains(["aarch64-linux"]))) and (
-            .pkg_id as $id | 
+            .pkg_id as $id |
             .version as $ver |
             ($aarch64[0] | map(.pkg_id) | contains([$id]) | not) or
             ($aarch64[0][] | select(.pkg_id == $id).version) as $aarch64_ver |
@@ -347,7 +347,34 @@ jobs:
           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_x86_64-Linux.json"
         continue-on-error: true
 
-      - name: Generate Diffs (PkgCache)
+      - name: Generate Diffs [build_date] (BinCache)
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          ##Date Diff (aarch64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+           jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json") \
+           '.[] | 
+           select((.pkg_type == "static" and (.host | contains(["aarch64-linux"]))) and (
+             .pkg_id as $id |
+             ($aarch64[0] | map(.pkg_id) | contains([$id]) | not) or
+             ($aarch64[0][] | select(.pkg_id == $id).build_date) as $aarch64_date |
+             $aarch64_date == null or $aarch64_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_bincache_aarch64-Linux.json"
+          ##Date Diff (x86_64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+           jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json") \
+           '.[] | 
+           select((.pkg_type == "static" and (.host | contains(["x86_64-linux"]))) and (
+             .pkg_id as $id |
+             ($x86_64[0] | map(.pkg_id) | contains([$id]) | not) or
+             ($x86_64[0][] | select(.pkg_id == $id).build_date) as $x86_date |
+             $x86_date == null or $x86_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_bincache_x86_64-Linux.json"
+        continue-on-error: true
+
+      - name: Generate Diffs [pkg_id] (PkgCache)
         run: |
           #presets
           set +x ; set +e
@@ -357,7 +384,7 @@ jobs:
           jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json") \
           '.[] | 
           select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["aarch64-linux"])) and (
-            .pkg_id as $id | 
+            .pkg_id as $id |
             .version as $ver |
             ($aarch64[0] | map(.pkg_id) | contains([$id]) | not) or
             ($aarch64[0][] | select(.pkg_id == $id).version) as $aarch64_ver |
@@ -374,6 +401,33 @@ jobs:
             ($x86_64[0][] | select(.pkg_id == $id).version) as $x86_ver |
             $x86_ver == null or $ver != $x86_ver
           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_x86_64-Linux.json"
+        continue-on-error: true
+
+      - name: Generate Diffs [build_date] (PkgCache)
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          ##Date Diff (aarch64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["aarch64-linux"])) and (
+            .pkg_id as $id |
+            ($aarch64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($aarch64[0][] | select(.pkg_id == $id).build_date) as $aarch64_date |
+            $aarch64_date == null or $aarch64_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_pkgcache_aarch64-Linux.json"
+          ##Date Diff (x86_64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["x86_64-linux"])) and (
+            .pkg_id as $id |
+            ($x86_64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($x86_64[0][] | select(.pkg_id == $id).build_date) as $x86_date |
+            $x86_date == null or $x86_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_pkgcache_aarch64-Linux.json"
         continue-on-error: true
 
       - name: Get DateTime & Purge files (=> 95 MB)

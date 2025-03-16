@@ -35,6 +35,17 @@ TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: 
 if [[ -z "${USER_AGENT}" ]]; then
  USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')"
 fi
+GHCRPKG_URL="ghcr.io/pkgforge/metadata/build-logs"
+export GHCRPKG_URL USER_AGENT
+##Repo
+pushd "$(mktemp -d)" &>/dev/null && git clone --filter="blob:none" --depth="1" --no-checkout "https://huggingface.co/datasets/pkgforge/build-logs" && cd "./build-logs"
+git sparse-checkout set "" && git checkout
+unset HF_REPO_LOCAL ; HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
+if [ ! -d "${HF_REPO_LOCAL}" ] || [ $(du -s "${HF_REPO_LOCAL}" | cut -f1) -le 100 ]; then
+  echo -e "\n[X] FATAL: Failed to clone HF Repo\n"
+ exit 1
+fi
+popd &>/dev/null
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
@@ -61,9 +72,12 @@ download_action_logs()
       jq -r '.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed") | .id' 2>/dev/null |\
       grep -oP '^\s*\d+\s*$' | tr -d ' ' >> "${TMPDIR}/RUN_IDS.txt"
   done
-  readarray -t RUN_IDS < <(cat "${TMPDIR}/RUN_IDS.txt" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | sort -u | sed -e '/^[[:space:]]*$/d;100q')
+  RUN_IDS_TMP=() ; readarray -t RUN_IDS_TMP < <(cat "${TMPDIR}/RUN_IDS.txt" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | sort -u)
+  #IDS_EXIST=() ; readarray -t "IDS_EXIST" < <(oras repo tags "${GHCRPKG_URL}" 2>/dev/null | grep -i "${REPO}" | awk -F'[-]' '{print $2}' | grep -oP '^\s*\d+\s*$' | sort -u)
+  IDS_EXIST=() ; readarray -t "IDS_EXIST" < <(git -C "${HF_REPO_LOCAL}" ls-tree --name-only 'HEAD' | xargs -I "{}" basename "{}" | sort -u | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | grep -Eiv '\.(git|md|txt)' | grep -oP '^\s*\d+\s*' | sort -u)
+  RUN_IDS=() ; readarray -t RUN_IDS < <(printf "%s\n" "${RUN_IDS_TMP[@]}" | grep -Fxv -f <(printf "%s\n" "${IDS_EXIST[@]}" | grep -oP '^\s*\d+\s*$') | sort -u | sed -e '/^[[:space:]]*$/d;200q')
  ##Check if there are any workflow runs
-  if [ ${#RUN_IDS[@]} -eq 0 ]; then
+  if [ ${#RUN_IDS[@]} -le 1 ]; then
    echo -e "\n[-] No workflow runs found\n"
    return 1
   fi
@@ -87,14 +101,14 @@ download_action_logs()
  ##Archive
    RUN_IDS=()
    mapfile -t RUN_IDS < <(find "${LOGS_DIR}" -maxdepth 1 -name "logs-*.txt" -printf "%f\n" | awk -F'-' '{print $3}' | sed '/^$/d; s/\.txt$//' | sort -u)
-   if [ ${#RUN_IDS[@]} -eq 0 ]; then
+   if [ ${#RUN_IDS[@]} -le 0 ]; then
     echo -e "\n[-] No Logs found\n"
     return 1
    else
      for RUN_ID in "${RUN_IDS[@]}"; do
        C_RUN_ID=()
        mapfile -t C_RUN_ID < <(find "${LOGS_DIR}" -maxdepth 1 -name "logs-*${RUN_ID}*.txt")
-       if [ ${#C_RUN_ID[@]} -eq 0 ]; then
+       if [ ${#C_RUN_ID[@]} -le 0 ]; then
          echo -e "\n[-] No logs found for Run ID (${RUN_ID}) <== [${RUN_ID}]\n"
          continue
        else
@@ -107,7 +121,7 @@ download_action_logs()
  ##Upload
    LOG_IDS=()
    mapfile -t "LOG_IDS" < <(find "${LOGS_DIR}" -type f -name '*.log.xz' -exec basename "{}" .log.xz \; | sort -u)
-   if [ ${#LOG_IDS[@]} -eq 0 ]; then
+   if [ ${#LOG_IDS[@]} -le 0 ]; then
     echo -e "\n[-] No XZ Archives Found"
     return 1
    else
@@ -119,15 +133,15 @@ download_action_logs()
         # echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-bincache/${LOG_ID}.log.xz]"
         # gh release upload "build-log-bincache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.xz" & #--clobber
         #ghcr
-         echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/pkgs/container/build-log] (bincache-${LOG_ID})"
+         echo -e "[+] Uploading [${LOG_ID}] ==> [https://github.com/pkgforge/metadata/pkgs/container/metadata%2Fbuild-logs/] (bincache-${LOG_ID})"
          [[ -f "./${LOG_ID}.log.xz" && -s "./${LOG_ID}.log.xz" ]] && oras push --disable-path-validation \
-        --config "/dev/null:application/vnd.oci.empty.v1+json" "ghcr.io/pkgforge/metadata/build-logs:bincache-${LOG_ID}" "./${LOG_ID}.log.xz"
+        --config "/dev/null:application/vnd.oci.empty.v1+json" "${GHCRPKG_URL}:bincache-${LOG_ID}" "./${LOG_ID}.log.xz"
        elif echo "${REPO}" | grep -qi 'pkgcache'; then
         # echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/releases/download/build-log-pkgcache/${LOG_ID}.log.xz]"
         # gh release upload "build-log-pkgcache" --repo "https://github.com/pkgforge/metadata" "${LOGS_DIR}/${LOG_ID}.log.xz" & #--clobber
-        echo -e "[+] Uploading [${LOGS_DIR}/${LOG_ID}.log.xz] ==> [https://github.com/pkgforge/metadata/pkgs/container/build-log] (pkgcache-${LOG_ID})"
+        echo -e "[+] Uploading [${LOG_ID}] ==> [https://github.com/pkgforge/metadata/pkgs/container/metadata%2Fbuild-logs/] (pkgcache-${LOG_ID})"
         [[ -f "./${LOG_ID}.log.xz" && -s "./${LOG_ID}.log.xz" ]] && oras push --disable-path-validation \
-        --config "/dev/null:application/vnd.oci.empty.v1+json" "ghcr.io/pkgforge/metadata/build-logs:pkgcache-${LOG_ID}" "./${LOG_ID}.log.xz"
+        --config "/dev/null:application/vnd.oci.empty.v1+json" "${GHCRPKG_URL}:pkgcache-${LOG_ID}" "./${LOG_ID}.log.xz"
        fi
       done
      #Upload to HF

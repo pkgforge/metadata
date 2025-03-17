@@ -1069,50 +1069,75 @@
   },
   {
     "_disabled": "false",
-    "pkg": "xashds",
-    "pkg_family": "xashds",
-    "pkg_id": "wrappe.xashds",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.source.yt-dlp",
     "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.source.yaml",
     "category": [
       "Utility"
     ],
-    "description": "Xash3D FWGS Dedicated Server",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.source.yaml",
     "homepage": [
-      "https://github.com/FWGS/xash3d-fwgs"
+      "https://github.com/yt-dlp/yt-dlp"
     ],
     "host": [
       "aarch64-linux",
       "x86_64-linux"
     ],
     "license": [
-      "GPL"
+      "Unlicense"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
-      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
       "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "Host Dependencies: A lot, please use soar log to view the ldd output"
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
     "provides": [
-      "xashds==xash"
+      "yt-dlp"
     ],
     "repology": [
-      "xash3d-fwgs"
+      "yt-dlp"
     ],
     "src_url": [
-      "https://github.com/FWGS/xash3d-fwgs"
+      "https://github.com/yt-dlp/yt-dlp"
     ],
     "tag": [
       "Utility"
     ],
-    "version": "250316T175621"
+    "version": "HEAD-2ee3a0a-250316T231016"
   }
 ]

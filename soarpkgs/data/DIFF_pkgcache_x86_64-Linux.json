@@ -126,6 +126,82 @@
   },
   {
     "_disabled": "false",
+    "pkg": "awscli",
+    "pkg_family": "awscli",
+    "pkg_id": "sharun.wrappe.pypi.awscli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-awscli/awscli/awscli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/awscli/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Universal Command Line Interface for Amazon Web Services",
+    "distro_pkg": {
+      "alpine": [
+        "aws-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "aws-cli-bin",
+          "aws-cli-git",
+          "aws-cli-v2"
+        ],
+        "extra": [
+          "aws-cli"
+        ]
+      },
+      "debian": [
+        "awscli"
+      ],
+      "gnuguix": [
+        "awscli"
+      ],
+      "homebrew": [
+        "awscli"
+      ],
+      "nixpkgs": [
+        "awscli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/awscli/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/aws/aws-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/awscli/archive/sharun",
+    "provides": [
+      "aws==awscli",
+      "aws==aws-cli"
+    ],
+    "repology": [
+      "awscli"
+    ],
+    "src_url": [
+      "https://pypi.org/project/awscli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.38.14"
+  },
+  {
+    "_disabled": "false",
     "pkg": "brave",
     "pkg_family": "brave",
     "pkg_id": "github.com.srevinsaju.Brave-AppImage.nightly",
@@ -762,6 +838,135 @@
     "_disabled": "false",
     "pkg": "firefox",
     "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (Beta)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "firefox-beta-bin"
+        ]
+      },
+      "homebrew": [
+        "firefox@beta"
+      ],
+      "nixpkgs": [
+        "firefox-beta",
+        "firefox-beta-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-beta"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "137.0.20250317100200"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.dev",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-dev/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (DEV)",
+    "distro_pkg": {
+      "alpine": [
+        "firefox-developer-edition"
+      ],
+      "archlinux": {
+        "extra": [
+          "firefox-developer-edition"
+        ]
+      },
+      "homebrew": [
+        "firefox@developer-edition"
+      ],
+      "nixpkgs": [
+        "firefox-devedition",
+        "firefox-devedition-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-dev"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "137.0.20250317100200"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
     "pkg_id": "github.com.srevinsaju.Firefox-Appimage.nightly",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/firefox/firefox",
@@ -816,7 +1021,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "138.0.20250316213034"
+    "version": "138.0.20250317212230"
   },
   {
     "_disabled": "false",
@@ -1315,6 +1520,78 @@
   },
   {
     "_disabled": "false",
+    "pkg": "kdenlive",
+    "pkg_family": "kdenlive",
+    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
+    "app_id": "org.kde.kdenlive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
+    "category": [
+      "AudioVideoEditing"
+    ],
+    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
+    "distro_pkg": {
+      "alpine": [
+        "kdenlive"
+      ],
+      "archlinux": {
+        "aur": [
+          "kdenlive-appimage",
+          "kdenlive-git"
+        ],
+        "extra": [
+          "kdenlive"
+        ]
+      },
+      "debian": [
+        "kdenlive"
+      ],
+      "gnuguix": [
+        "kdenlive"
+      ],
+      "homebrew": [
+        "kdenlive"
+      ],
+      "nixpkgs": [
+        "kdePackages.kdenlive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
+    "homepage": [
+      "https://apps.kde.org/kdenlive",
+      "https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
+    "provides": [
+      "kdenlive"
+    ],
+    "repology": [
+      "kdenlive"
+    ],
+    "src_url": [
+      "https://kdenlive.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "2025-03-17"
+  },
+  {
+    "_disabled": "false",
     "pkg": "knot",
     "pkg_family": "android-knot",
     "pkg_id": "github.com.ic005k.Knot",
@@ -1360,6 +1637,79 @@
       "https://github.com/ic005k/Knot"
     ],
     "version": "1.2.16"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "krita",
+    "pkg_family": "krita",
+    "pkg_id": "gitlab.com.krita.krita.next",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/krita-next/krita/krita",
+    "app_id": "org.kde.krita",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/krita/appimage.official.next.yaml",
+    "category": [
+      "Graphics",
+      "ImageProcessing"
+    ],
+    "description": "A free and open source painting application (Alpha/Next)",
+    "distro_pkg": {
+      "alpine": [
+        "krita"
+      ],
+      "archlinux": {
+        "aur": [
+          "krita-git"
+        ],
+        "extra": [
+          "krita"
+        ]
+      },
+      "debian": [
+        "krita"
+      ],
+      "gnuguix": [
+        "krita"
+      ],
+      "homebrew": [
+        "krita"
+      ],
+      "nixpkgs": [
+        "krita",
+        "krita-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/krita/appimage.official.next.yaml",
+    "homepage": [
+      "https://krita.org",
+      "https://invent.kde.org/graphics/krita"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/krita/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/graphics/krita"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/krita/appimage/official",
+    "provides": [
+      "krita"
+    ],
+    "repology": [
+      "krita"
+    ],
+    "src_url": [
+      "https://krita.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "2025-03-17"
   },
   {
     "_disabled": "true",
@@ -1711,7 +2061,7 @@
       "pixelpulse2",
       "adalm1000"
     ],
-    "version": "13906423323"
+    "version": "13907245614"
   },
   {
     "_disabled": "false",
@@ -2120,7 +2470,7 @@
     "tag": [
       "sudo"
     ],
-    "version": "HEAD-de2e899-250317T104339"
+    "version": "HEAD-bbc541c-250317T220957"
   },
   {
     "_disabled": "false",
@@ -2487,6 +2837,68 @@
       "downloader"
     ],
     "version": "2.1.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wrangler",
+    "pkg_family": "wrangler",
+    "pkg_id": "sharun.wrappe.npm.wrangler",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/npm-wrangler/wrangler/wrangler",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wrangler/archive.sharun.npm.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Command-line interface for all things Cloudflare Workers",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "wrangler"
+        ]
+      },
+      "homebrew": [
+        "wrangler"
+      ],
+      "nixpkgs": [
+        "wrangler"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/wrangler/archive.sharun.npm.yaml",
+    "homepage": [
+      "https://developers.cloudflare.com/workers/cli-wrangler",
+      "https://github.com/cloudflare/workers-sdk"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [npm]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/wrangler/archive/sharun",
+    "provides": [
+      "wrangler"
+    ],
+    "repology": [
+      "wrangler"
+    ],
+    "src_url": [
+      "https://www.npmjs.com/package/wrangler"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "4.1.0"
   },
   {
     "_disabled": "false",

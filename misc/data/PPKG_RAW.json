@@ -390,14 +390,15 @@
     "git-url": "https://github.com/ximion/appstream",
     "src-url": "https://github.com/ximion/appstream/archive/refs/tags/v1.0.4.tar.gz",
     "src-sha": "dff6efa67d9ea4797870d70e3370b9e3fa66ce3c749aba68e6b10222473463cf",
-    "dep-pkg": "libxmlb libxml2 libyaml libcurl systemd",
+    "dep-pkg": "libxmlb libxml2 libyaml libcurl",
     "dep-upp": "gettext-tools itstool xsltproc docbook-xsl gperf curl bsdtar python3 ninja",
     "dep-pym": " meson",
     "bsystem": "meson",
     "binbstd": "0",
     "parallel": "1",
     "dopatch": "gsed -i '/tests/d' meson.build",
-    "install": "mesonw \\\n    -Dsystemd=true \\\n    -Dstemming=false \\\n    -Dvapi=true \\\n    -Dgir=false \\\n    -Ddocs=false \\\n    -Dapidocs=false \\\n    -Dinstall-docs=false"
+    "install": "mesonw \\\n    -Dsystemd=false \\\n    -Dstemming=false \\\n    -Dvapi=true \\\n    -Dgir=false \\\n    -Ddocs=false \\\n    -Dapidocs=false \\\n    -Dinstall-docs=false",
+    "dotweak": "run rm -rf include/ lib/"
   },
   {
     "pkgname": "appstream-glib",
@@ -1171,7 +1172,7 @@
     "dep-upp": "curl bsdtar",
     "binbstd": "1",
     "parallel": "1",
-    "dopatch": "gsed -i '/deptgt-delete_on_error/d' unit-tests/Makefile",
+    "dopatch": "gsed -i -e '/deptgt-delete_on_error/d' -e '/directive-export$/d' -e '/directive-export-gmake$/d' unit-tests/Makefile",
     "install": "run sh boot-strap --prefix=$PACKAGE_INSTALL_DIR -DWITHOUT_PROG_LINK --install BROKEN_TESTS=shell-ksh\ninstall_mans bmake.1",
     "bindenv": "MAKESYSPATH=%s/share/mk"
   },
@@ -2550,6 +2551,7 @@
     "web-url": "https://wiki.freedesktop.org/www/Software/desktop-file-utils/",
     "git-url": "https://gitlab.freedesktop.org/xdg/desktop-file-utils",
     "src-url": "https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz",
+    "src-uri": "https://distfiles.macports.org/desktop-file-utils/desktop-file-utils-0.28.tar.xz",
     "src-sha": "4401d4e231d842c2de8242395a74a395ca468cd96f5f610d822df33594898a70",
     "dep-pkg": "glib",
     "dep-upp": "curl bsdtar python3 ninja",
@@ -3758,6 +3760,7 @@
     "web-url": "https://wiki.freedesktop.org/www/Software/fontconfig",
     "git-url": "https://gitlab.freedesktop.org/fontconfig/fontconfig",
     "src-url": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.xz",
+    "src-uri": "https://distfiles.macports.org/fontconfig/fontconfig-2.15.0.tar.xz",
     "src-sha": "63a0658d0e06e0fa886106452b58ef04f21f58202ea02a94c39de0d3335d7c0e",
     "dep-pkg": "libfreetype libexpat libintl",
     "dep-upp": "gettext-tools python3 gperf curl bsdtar gmake gmake",
@@ -8909,6 +8912,7 @@
     "web-url": "https://wiki.freedesktop.org/www/Software/fontconfig",
     "git-url": "https://gitlab.freedesktop.org/fontconfig/fontconfig",
     "src-url": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.xz",
+    "src-uri": "https://distfiles.macports.org/fontconfig/fontconfig-2.15.0.tar.xz",
     "src-sha": "63a0658d0e06e0fa886106452b58ef04f21f58202ea02a94c39de0d3335d7c0e",
     "dep-pkg": "libfreetype libexpat libiconv",
     "dep-upp": "gperf curl bsdtar python3 ninja",
@@ -11490,13 +11494,14 @@
   {
     "pkgname": "libpixman",
     "pkgtype": "lib",
-    "version": "0.42.2",
+    "version": "0.44.2",
     "license": "MIT",
     "summary": "A low-level library for pixel manipulation",
     "web-url": "https://cairographics.org",
     "git-url": "https://gitlab.freedesktop.org/pixman/pixman",
-    "src-url": "https://cairographics.org/releases/pixman-0.42.2.tar.gz",
-    "src-sha": "ea1480efada2fd948bc75366f7c349e1c96d3297d09a3fe62626e38e234a625e",
+    "src-url": "https://cairographics.org/releases/pixman-0.44.2.tar.xz",
+    "src-uri": "https://distfiles.macports.org/pixman/pixman-0.44.2.tar.xz",
+    "src-sha": "50baf820dde0c5ff9714d03d2df4970f606a3d3b1024f5404c0398a9821cc4b0",
     "dep-upp": "curl bsdtar python3 ninja",
     "dep-pym": " meson",
     "bsystem": "meson",
@@ -12289,6 +12294,24 @@
     "install": "configure \\\n    --disable-freetype-builtin \\\n    --disable-harfbuzz-builtin \\\n    --enable-libharfbuzz"
   },
   {
+    "pkgname": "libsdl3",
+    "pkgtype": "lib",
+    "version": "3.2.8",
+    "license": "Zlib",
+    "summary": "Low-level access to audio, keyboard, mouse, joystick and graphics",
+    "web-url": "https://www.libsdl.org/",
+    "git-url": "https://github.com/libsdl-org/SDL",
+    "src-url": "https://github.com/libsdl-org/SDL/releases/download/release-3.2.8/SDL3-3.2.8.tar.gz",
+    "src-sha": "13388fabb361de768ecdf2b65e52bb27d1054cae6ccb6942ba926e378e00db03",
+    "dep-pkg": "pulseaudio xorg-xinput xorg-libice xorg-libxcursor xorg-libxscrnsaver xorg-libxxf86vm",
+    "dep-upp": "curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "dosetup": "case $TARGET_PLATFORM_ARCH in\n    arm*)\n        _3DNOW=OFF\n        ARMNEON=ON\n        ARMSIMD=ON\n        ;;\n    i386|x86_64)\n        _3DNOW=ON\n        ARMNEON=OFF\n        ARMSIMD=OFF\n        ;;\n    *)  _3DNOW=OFF\n        ARMNEON=OFF\n        ARMSIMD=OFF\nesac",
+    "install": "cmakew \\\n    -DSDL_SHARED=ON \\\n    -DSDL_STATIC=ON \\\n    -DSDL_TEST=OFF \\\n    -DSDL_HAPTIC=OFF \\\n    -DSDL_HIDAPI=ON \\\n    -DSDL_FRAMEWORK_IOKIT=OFF \\\n    -DSDL_JOYSTICK=OFF \\\n    -DSDL_POWER=OFF \\\n    -DPTHREADS=ON \\\n    -DPTHREADS_SEM=ON \\\n    -DLIBSAMPLERATE=OFF \\\n    -DPULSEAUDIO=ON \\\n    -DALSA=ON \\\n    -DASSEMBLY=ON \\\n    -D3DNOW=\"$_3DNOW\" \\\n    -DARMNEON=\"$ARMNEON\" \\\n    -DARMSIMD=\"$ARMSIMD\" \\\n    -DVIDEO_OPENGL=OFF \\\n    -DVIDEO_OPENGLES=OFF \\\n    -DVIDEO_COCOA=OFF\n\n    #-DSDL_ALSA_SHARED=OFF \\\n    #-DSDL_PULSEAUDIO_SHARED=OFF \\\n    #-DSDL_LIBSAMPLERATE_SHARED=OFF"
+  },
+  {
     "pkgname": "libseccomp",
     "pkgtype": "lib",
     "version": "2.5.5",
@@ -12697,13 +12720,13 @@
   {
     "pkgname": "libsqlite3",
     "pkgtype": "lib",
-    "version": "3.46.0",
+    "version": "3.49.1",
     "license": "blessing",
     "summary": "A small, fast, self-contained, high-reliability, full-featured, SQL database engine written in C",
     "web-url": "https://sqlite.org/",
     "git-url": "https://github.com/sqlite/sqlite",
-    "src-url": "https://sqlite.org/2024/sqlite-amalgamation-3460000.zip",
-    "src-sha": "712a7d09d2a22652fb06a49af516e051979a3984adb067da86760e60ed51a7f5",
+    "src-url": "https://sqlite.org/2025/sqlite-amalgamation-3490100.zip",
+    "src-sha": "6cebd1d8403fc58c30e93939b246f3e6e58d0765a5cd50546f16c00fd805d2c3",
     "dep-upp": "curl bsdtar",
     "binbstd": "0",
     "parallel": "1",
@@ -16375,6 +16398,7 @@
     "summary": "OIL(Optimized Inner Loops) Runtime Compiler",
     "web-url": "https://gstreamer.freedesktop.org/projects/orc.html",
     "src-url": "https://gstreamer.freedesktop.org/src/orc/orc-0.4.41.tar.xz",
+    "src-uri": "https://distfiles.macports.org/orc/orc-0.4.41.tar.xz",
     "src-sha": "cb1bfd4f655289cd39bc04642d597be9de5427623f0861c1fc19c08d98467fa2",
     "dep-upp": "curl bsdtar python3 ninja",
     "dep-pym": " meson",
@@ -17785,7 +17809,7 @@
     "binbstd": "1",
     "parallel": "0",
     "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    SYS=darwin\nelse\n    SYS=posix\nfi\n\nOPENSSL_LIBS=\"$(pkg-config --libs openssl)\"\nprintf 'OPENSSL_LIBS=%s\\n' \"$OPENSSL_LIBS\"",
-    "install": "gmakew clean   SYS=$SYS\ngmakew         SYS=$SYS CC=$CC LD=$LD CRYPTO=OPENSSL LIB_OPENSSL=\"'$OPENSSL_LIBS -lz'\" OPT= XCFLAGS=\"'$CFLAGS $CPPFLAGS'\" XLDFLAGS=\"'$LDFLAGS'\"\ngmakew install SYS=$SYS prefix=\"$PACKAGE_INSTALL_DIR\" mandir=\"$PACKAGE_INSTALL_DIR/share/man\""
+    "install": "gmakew clean   SYS=$SYS\ngmakew         SYS=$SYS CC=$CC LD=$LD CRYPTO=OPENSSL LIB_OPENSSL=\"'$OPENSSL_LIBS -lz'\" OPT= XCFLAGS=\"'$CFLAGS -Wno-error=incompatible-pointer-types $CPPFLAGS'\" XLDFLAGS=\"'$LDFLAGS'\"\ngmakew install SYS=$SYS prefix=\"$PACKAGE_INSTALL_DIR\" mandir=\"$PACKAGE_INSTALL_DIR/share/man\""
   },
   {
     "pkgname": "rtorrent",
@@ -18485,19 +18509,18 @@
   {
     "pkgname": "sqlite3",
     "pkgtype": "exe",
-    "version": "3.46.0",
+    "version": "3.49.1",
     "license": "blessing",
-    "summary": "A small, fast, self-contained, high-reliability, full-featured, SQL database engine written in C",
-    "web-url": "https://www.sqlite.org/",
+    "summary": "A command-line tool for interacting with SQLite databases",
+    "web-url": "https://sqlite.org/",
     "git-url": "https://github.com/sqlite/sqlite",
-    "src-url": "https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz",
-    "src-sha": "6f8e6a7b335273748816f9b3b62bbdc372a889de8782d7f048c653a447417a7d",
+    "src-url": "https://sqlite.org/2025/sqlite-amalgamation-3490100.zip",
+    "src-sha": "6cebd1d8403fc58c30e93939b246f3e6e58d0765a5cd50546f16c00fd805d2c3",
     "dep-pkg": "libreadline libz",
-    "dep-upp": "curl bsdtar gmake gmake",
-    "bsystem": "configure",
+    "dep-upp": "curl bsdtar",
     "binbstd": "0",
     "parallel": "1",
-    "install": "configure --disable-editline --enable-readline --enable-static-shell"
+    "install": "run \"$CC\" \"$CFLAGS\" \"$CPPFLAGS\" -DHAVE_READLINE -DSQLITE_HAVE_ZLIB \"$LDFLAGS\" -o sqlite3 ../shell.c ../sqlite3.c -lreadline -lncurses -lz -lm -ldl -lpthread\ninstall_bins sqlite3"
   },
   {
     "pkgname": "sqlite3_analyzer",
@@ -19717,11 +19740,10 @@
     "dep-upp": "curl bsdtar patch gmake",
     "bsystem": "gmake",
     "binbstd": "1",
-    "ccflags": "-include time.h",
     "parallel": "1",
-    "dopatch": "for patchfile in $(cat ../fix/patches/series)\ndo\n    patch -p1 < ../fix/patches/$patchfile || return 1\ndone\n\nif [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n    # https://www.gnu.org/software/gnulib/manual/html_node/sys_002ftimeb_002eh.html\n    # https://github.com/facebook/zstd/issues/319\n    mkdir sys\n    cat > sys/timeb.h <<EOF\n#ifndef _SYS_TIMEB_H\n#define _SYS_TIMEB_H\n#include <sys/time.h>\nstruct timeb {\n    time_t          time;\n    unsigned short  millitm;\n    short           timezone;\n    short           dstflag;\n};\nextern int  ftime(struct timeb*  timebuf);\n#endif\nEOF\n\n    cat > ftime.c <<EOF\n#include <sys/timeb.h>\n#include <sys/time.h>\nint ftime(struct timeb *tb)\n{\n    struct timeval  tv;\n    struct timezone tz;\n    if (gettimeofday (&tv, &tz) < 0)\n        return -1;\n    tb->time    = tv.tv_sec;\n    tb->millitm = (tv.tv_usec + 500) / 1000;\n    if (tb->millitm == 1000) {\n        ++tb->time;\n        tb->millitm = 0;\n    }\n    tb->timezone = tz.tz_minuteswest;\n    tb->dstflag  = tz.tz_dsttime;\n    return 0;\n}\nEOF\n\n    run $CC $CFLAGS $CPPFLAGS -I. -c -o ftime.o ftime.c\n    gsed -i 's|^LFLAGS2=\"|LFLAGS2=\"ftime.o |' unix/configure\nfi\n\nif [ \"$PACKAGE_CREATE_FULLY_STATICALLY_LINKED_EXECUTABLE\" = 1 ] ; then\n    gsed -i 's|^LFLAGS2=\"|LFLAGS2=\"-static |' unix/configure\nfi\n\ngsed -i -e '/-DNO_DIR/c true' unix/configure",
+    "dopatch": "for patchfile in $(cat ../fix/patches/series)\ndo\n    patch -p1 < ../fix/patches/$patchfile || return 1\ndone\n\nif [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n    # https://www.gnu.org/software/gnulib/manual/html_node/sys_002ftimeb_002eh.html\n    # https://github.com/facebook/zstd/issues/319\n    mkdir sys\n    cat > sys/timeb.h <<EOF\n#ifndef _SYS_TIMEB_H\n#define _SYS_TIMEB_H\n#include <sys/time.h>\nstruct timeb {\n    time_t          time;\n    unsigned short  millitm;\n    short           timezone;\n    short           dstflag;\n};\nextern int  ftime(struct timeb*  timebuf);\n#endif\nEOF\n\n    cat > ftime.c <<EOF\n#include <sys/timeb.h>\n#include <sys/time.h>\nint ftime(struct timeb *tb)\n{\n    struct timeval  tv;\n    struct timezone tz;\n    if (gettimeofday (&tv, &tz) < 0)\n        return -1;\n    tb->time    = tv.tv_sec;\n    tb->millitm = (tv.tv_usec + 500) / 1000;\n    if (tb->millitm == 1000) {\n        ++tb->time;\n        tb->millitm = 0;\n    }\n    tb->timezone = tz.tz_minuteswest;\n    tb->dstflag  = tz.tz_dsttime;\n    return 0;\n}\nEOF\n\n    run $CC $CFLAGS $CPPFLAGS -I. -c -o ftime.o ftime.c\n    gsed -i 's|^LFLAGS2=\"|LFLAGS2=\"ftime.o |' unix/configure\nfi\n\ngsed -i -e '/-DNO_DIR/c true' -e '/-DZMEM/c true' -e \"/^LFLAGS2=/c LFLAGS2='$LDFLAGS'\" -e 's| != \"bzip2\"| = \"bzip2\"|' unix/configure\n\ngsed -i '/$(RM) /s| libbz2.a||' bzip2/Makebz2.iz\n\nrun ln -s \"$libbz2_INCLUDE_DIR/bzlib.h\"  bzip2/\nrun ln -s \"$libbz2_LIBRARY_DIR/libbz2.a\" bzip2/",
     "dosetup": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    TARGET_COMPILE=macosx\nelse\n    TARGET_COMPILE=generic\nfi",
-    "install": "gmakew -f unix/Makefile clean\ngmakew -f unix/Makefile $TARGET_COMPILE \\\n    CC=\"$CC\" \\\n    CFLAGS=\"'$CFLAGS $CPPFLAGS $LDFLAGS'\" \\\n    AS=\"$AS\" \\\n    LD=\"'$CC'\" \\\n    STRIP=\"$STRIP\" \\\n    LOCAL_UNZIP=\"'$CFLAGS $CPPFLAGS $LDFLAGS'\" \\\n    LOC=-DLARGE_FILE_SUPPORT \\\n    D_USE_BZ2=-DUSE_BZIP2 \\\n    L_BZ2=-lbz2\ngmakew -f unix/Makefile install \\\n    prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    MANDIR=\"$PACKAGE_INSTALL_DIR/share/man/man1\""
+    "install": "gmakew -f unix/Makefile clean\ngmakew -f unix/Makefile $TARGET_COMPILE \\\n    CC=\"$CC\" \\\n    AS=\"$AS\" \\\n    LD=\"'$CC'\" \\\n    STRIP=true \\\n    LOCAL_UNZIP=\"'$CFLAGS $CPPFLAGS -include time.h'\"\ngmakew -f unix/Makefile install \\\n    prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    MANDIR=\"$PACKAGE_INSTALL_DIR/share/man/man1\""
   },
   {
     "pkgname": "uppm",
@@ -19902,7 +19924,9 @@
     "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
-    "install": "export AUTOMAKE=\"$(command -v automake)\"\nexport ACLOCAL=\"$(command -v aclocal)\"\n\nunset EXTRA_CONFIGURE_ARGS\n\ncase $TARGET_PLATFORM_NAME in\n    macos) EXTRA_CONFIGURE_ARGS='--disable-libmount --disable-ipcrm --disable-ipcs --disable-wall' ;;\nesac\n\nconfigure \\\n    --without-python \\\n    --without-systemd \\\n    --enable-widechar \\\n    --enable-libuuid \\\n    --disable-use-tty-group \\\n    --disable-chfn-chsh \\\n    --disable-login \\\n    --disable-su \\\n    --disable-runuser \\\n    --disable-makeinstall-chown \\\n    --disable-makeinstall-setuid \\\n    $EXTRA_CONFIGURE_ARGS"
+    "dopatch": "for f in tools/*\ndo\n    [ -f \"$f\" ] || continue\n    [ -L \"$f\" ] && continue\n\n    if [ \"$(head -n 1 \"$f\")\" = '#!/bin/bash' ] ; then\n        gsed -i '1c #!/usr/bin/env bash' \"$f\"\n    fi\ndone",
+    "dosetup": "export AUTOMAKE=\"$(command -v automake)\"\nexport ACLOCAL=\"$(command -v aclocal)\"\n\nunset EXTRA_CONFIGURE_ARGS\n\ncase $TARGET_PLATFORM_NAME in\n    macos) EXTRA_CONFIGURE_ARGS='--disable-libmount --disable-ipcrm --disable-ipcs --disable-wall' ;;\nesac",
+    "install": "configure \\\n    --without-python \\\n    --without-systemd \\\n    --enable-widechar \\\n    --enable-libuuid \\\n    --disable-use-tty-group \\\n    --disable-chfn-chsh \\\n    --disable-login \\\n    --disable-su \\\n    --disable-runuser \\\n    --disable-makeinstall-chown \\\n    --disable-makeinstall-setuid \\\n    $EXTRA_CONFIGURE_ARGS"
   },
   {
     "pkgname": "uv",
@@ -19919,6 +19943,23 @@
     "binbstd": "1",
     "parallel": "1",
     "install": "cargow install --path crates/uv"
+  },
+  {
+    "pkgname": "v8",
+    "pkgtype": "exe",
+    "version": "12.7.224.16",
+    "license": "BSD-3-Clause",
+    "summary": "A high-performance JavaScript and WebAssembly Engine powered by Google",
+    "web-url": "https://v8.dev/",
+    "git-url": "https://github.com/v8/v8",
+    "src-url": "https://github.com/v8/v8/archive/refs/tags/12.7.224.16.tar.gz",
+    "src-sha": "00425fe7fd851f11839537256922addbfee0f5d27c6bf5ab375b9d0347d8ed94",
+    "dep-pkg": "glib",
+    "dep-upp": "git gn ninja python3 curl bsdtar",
+    "binbstd": "0",
+    "parallel": "1",
+    "dosetup": "git_checkout https://chromium.googlesource.com/chromium/src/build.git                   --ref-from=faf20f32f1d19bd492f8f16ac4a7ecfabdbb60c1 -C build\ngit_checkout https://chromium.googlesource.com/external/github.com/Maratyszcza/FP16.git --ref-from=0a92994d729ff76a58f692d3028ca1b64b145d91 -C third_party/fp16/src\ngit_checkout https://chromium.googlesource.com/external/github.com/google/googletest.git --ref-from=a7f443b80b105f940225332ed3c31f2790092f47 -C third_party/googletest/src\ngit_checkout https://chromium.googlesource.com/chromium/deps/icu.git                    --ref-from=98f2494518c2dbb9c488e83e507b070ea5910e95 -C third_party/icu\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/zlib.git        --ref-from=209717dd69cd62f24cbacc4758261ae2dd78cfac -C third_party/zlib\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/abseil-cpp.git  --ref-from=bfe59c2726fda7494a800f7d0ee461f0564653b3 -C third_party/abseil-cpp\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/jinja2.git      --ref-from=2f6f2ff5e4c1d727377f5e1b9e1903d871f41e74 -C third_party/jinja2\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/markupsafe.git  --ref-from=e582d7f0edb9d67499b0f5abd6ae5550e91da7f2 -C third_party/markupsafe\n\ncat > build/config/gclient_args.gni <<EOF\ndeclare_args() {\n    checkout_google_benchmark = false\n}\nEOF\n\ncase $TARGET_PLATFORM_ARCH in\n    armv7a)  GN_ARG_TARGET_CPU=arm   ;;\n    aarch64) GN_ARG_TARGET_CPU=arm64 ;;\n    i686)    GN_ARG_TARGET_CPU=x86   ;;\n    x86_64)  GN_ARG_TARGET_CPU=x64   ;;\nesac\n\ncat >> args.gn <<EOF\ntarget_cpu=\"$GN_ARG_TARGET_CPU\"\nEOF\n\nGN_ARGS='is_debug=false is_component_build=true treat_warnings_as_errors=false v8_enable_fuzztest=false v8_enable_i18n_support=false v8_use_external_startup_data=false use_lld=false use_custom_libcxx=false clang_use_chrome_plugins=false'\n\ncase $TARGET_PLATFORM_NAME in\n    linux)  GN_ARGS=\"$GN_ARGS is_clang=false use_sysroot=false use_rbe=false target_os=\\\"linux\\\" custom_toolchain=\\\"//build/toolchain/linux/unbundle:default\\\" host_toolchain=\\\"//build/toolchain/linux/unbundle:default\\\"\" ;;\nesac\n\nrun gn gen _ \"'--args=$GN_ARGS'\"",
+    "install": "run ninja --version\nrun ninja --verbose d8\nrun install_bins d8\nrun install_incs \"$PACKAGE_BSCRIPT_DIR\"/include/*.h\nrun install_libs *.so"
   },
   {
     "pkgname": "vala",
@@ -21687,13 +21728,13 @@
   {
     "pkgname": "youtubedr",
     "pkgtype": "exe",
-    "version": "2.10.1",
+    "version": "2.10.3",
     "license": "MIT",
     "summary": "A command-line tool to download videos from youtube.com",
     "web-url": "https://github.com/kkdai/youtube",
     "git-url": "https://github.com/kkdai/youtube",
-    "src-url": "https://github.com/kkdai/youtube/archive/refs/tags/v2.10.1.tar.gz",
-    "src-sha": "9d71c4a7e192d81f12944b3c881fa7d61a20d48d083bfad72bd357f9becb04ef",
+    "src-url": "https://github.com/kkdai/youtube/archive/refs/tags/v2.10.3.tar.gz",
+    "src-sha": "697ca27f894efdd3f1249b46d7e587a3d1348158e130c5c1307ce32d505c6d01",
     "dep-upp": "curl bsdtar golang",
     "bsystem": "go",
     "binbstd": "1",
@@ -21849,8 +21890,8 @@
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
-    "dopatch": "for patchfile in $(cat ../fix/patches/series)\ndo  \n    patch -p1 < ../fix/patches/$patchfile || return 1\ndone\n\npatch -p1 < ../res/99cb7eeeb6fdb8df700f40bfffbc30516c94774cbf585f725d81c3224a2c530c.diff\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    gsed -i -e '/-DZMEM/c true' -e '/-DNO_/c  true' unix/configure\nfi",
-    "install": "gmakew -f unix/Makefile clean\ngmakew -f unix/Makefile generic \\\n    CC=\"$CC\" \\\n    CPP=\"'$CPP'\" \\\n    AS=\"$AS\" \\\n    AR=\"$AR\" \\\n    LOCAL_ZIP=\"'$CFLAGS $CPPFLAGS'\" \\\n    LFLAGS2=\"'$LDFLAGS'\"\ngmakew -f unix/Makefile install \\\n    prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    MANDIR=\"$PACKAGE_INSTALL_DIR/share/man/man1\""
+    "dopatch": "for patchfile in $(cat ../fix/patches/series)\ndo  \n    patch -p1 < ../fix/patches/$patchfile || return 1\ndone\n\npatch -p1 < ../res/99cb7eeeb6fdb8df700f40bfffbc30516c94774cbf585f725d81c3224a2c530c.diff\n\ngsed -i -e '/-DNO_DIR/c true' -e '/-DZMEM/c true' -e \"/^LFLAGS2=/c LFLAGS2='$LDFLAGS'\" unix/configure\n\nrun ln -s \"$libbz2_INCLUDE_DIR/bzlib.h\"  bzip2/\nrun ln -s \"$libbz2_LIBRARY_DIR/libbz2.a\" bzip2/",
+    "install": "gmakew -f unix/Makefile clean\ngmakew -f unix/Makefile generic \\\n    CC=\"$CC\" \\\n    AS=\"$AS\" \\\n    LD=\"'$CC'\" \\\n    STRIP=true \\\n    LOCAL_ZIP=\"'$CFLAGS $CPPFLAGS'\"\ngmakew -f unix/Makefile install \\\n    prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    MANDIR=\"$PACKAGE_INSTALL_DIR/share/man/man1\""
   },
   {
     "pkgname": "zlib",

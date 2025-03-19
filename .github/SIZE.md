@@ -1,5 +1,5 @@
 ```mathematica
- 320M └─┬ main
+ 321M └─┬ main
  171M   ├─┬ misc
  171M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -58,7 +58,7 @@
  740K   │ │ ├── aarch64-Linux.sdb.xz
  728K   │ │ ├── x86_64-Linux.json.xz
  720K   │ │ ├── aarch64-Linux.json.zstd
- 696K   │ │ ├── aarch64-Linux.json.xz
+ 700K   │ │ ├── aarch64-Linux.json.xz
  4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.bsum
@@ -214,8 +214,8 @@
 1020K   │ │ ├── OLD_bincache_aarch64-Linux.json
  976K   │ │ ├── OLD_bincache_x86_64-Linux.json
  788K   │ │ ├── pub_issues_binaries.txt
- 488K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 460K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 512K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 484K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  340K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
  216K   │ │ ├── INDEX.db.cba
@@ -225,10 +225,10 @@
  168K   │ │ ├── INDEX.db.zstd
  160K   │ │ ├── INDEX.db.xz
  140K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
-  80K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 100K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   68K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
+  64K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   48K   │ │ ├── URLS.txt
-  48K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   28K   │ │ ├── GH_REPO_ARCHIVED.md
   24K   │ │ ├── DIFF_bincache.json
  8.0K   │ │ ├── DIFF_pkgcache.json

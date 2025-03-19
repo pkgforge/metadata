@@ -368,7 +368,7 @@
   {
     "pkgname": "appimagetool",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A command-line tool to generate an AppImage from an existing AppDir",
     "web-url": "https://github.com/AppImage/appimagetool",
     "git-url": "https://github.com/AppImage/appimagetool",
@@ -752,7 +752,7 @@
   {
     "pkgname": "base16",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "base16 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -765,7 +765,7 @@
   {
     "pkgname": "base64",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "base64 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -1213,7 +1213,7 @@
   {
     "pkgname": "boringssl",
     "pkgtype": "exe+lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A fork of OpenSSL that is designed to meet Google needs",
     "web-url": "https://boringssl.googlesource.com/boringssl/",
     "git-url": "https://github.com/google/boringssl",
@@ -1406,7 +1406,7 @@
   {
     "pkgname": "c-examples",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "C语言学习项目",
     "web-url": "https://github.com/leleliu008/C-examples",
@@ -2210,7 +2210,7 @@
   {
     "pkgname": "cpuinfo",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -2424,6 +2424,24 @@
     "binbstd": "1",
     "parallel": "1",
     "install": "gow -X oss.terrastruct.com/d2/lib/version.Version=$PACKAGE_VERSION\ninstall_mans ci/release/template/man/d2.1"
+  },
+  {
+    "pkgname": "d8",
+    "pkgtype": "pie",
+    "version": "12.7.224.16",
+    "license": "BSD-3-Clause",
+    "summary": "A high-performance JavaScript and WebAssembly Engine powered by Google",
+    "web-url": "https://v8.dev/",
+    "git-url": "https://github.com/v8/v8",
+    "src-url": "https://github.com/v8/v8/archive/refs/tags/12.7.224.16.tar.gz",
+    "src-sha": "00425fe7fd851f11839537256922addbfee0f5d27c6bf5ab375b9d0347d8ed94",
+    "dep-pkg": "glib",
+    "dep-upp": "git gn ninja python3 curl bsdtar",
+    "bsystem": "gn",
+    "binbstd": "0",
+    "parallel": "1",
+    "dosetup": "git_checkout https://chromium.googlesource.com/chromium/src/build.git                   --ref-from=faf20f32f1d19bd492f8f16ac4a7ecfabdbb60c1 -C build\ngit_checkout https://chromium.googlesource.com/external/github.com/Maratyszcza/FP16.git --ref-from=0a92994d729ff76a58f692d3028ca1b64b145d91 -C third_party/fp16/src\ngit_checkout https://chromium.googlesource.com/external/github.com/google/googletest.git --ref-from=a7f443b80b105f940225332ed3c31f2790092f47 -C third_party/googletest/src\ngit_checkout https://chromium.googlesource.com/chromium/deps/icu.git                    --ref-from=98f2494518c2dbb9c488e83e507b070ea5910e95 -C third_party/icu\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/zlib.git        --ref-from=209717dd69cd62f24cbacc4758261ae2dd78cfac -C third_party/zlib\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/abseil-cpp.git  --ref-from=bfe59c2726fda7494a800f7d0ee461f0564653b3 -C third_party/abseil-cpp\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/jinja2.git      --ref-from=2f6f2ff5e4c1d727377f5e1b9e1903d871f41e74 -C third_party/jinja2\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/markupsafe.git  --ref-from=e582d7f0edb9d67499b0f5abd6ae5550e91da7f2 -C third_party/markupsafe\n\ncat > build/config/gclient_args.gni <<EOF\ndeclare_args() {\n    checkout_google_benchmark = false\n}\nEOF\n\nGN_ARGS='is_debug=false is_cfi=false is_component_build=false is_official_build=true treat_warnings_as_errors=false v8_static_library=true v8_enable_future=true v8_enable_fuzztest=false v8_enable_i18n_support=false v8_use_external_startup_data=false use_lld=false use_custom_libcxx=false clang_use_chrome_plugins=false'\n\ncase $TARGET_PLATFORM_NAME in\n    linux)  GN_ARGS=\"$GN_ARGS is_clang=false use_sysroot=false use_rbe=false target_os=\\\"linux\\\" custom_toolchain=\\\"//build/toolchain/linux/unbundle:default\\\" host_toolchain=\\\"//build/toolchain/linux/unbundle:default\\\"\" ;;\nesac\n\nrun gn gen _ \"'--args=$GN_ARGS'\"",
+    "install": "run ninja --version\nrun ninja --verbose d8\nrun install_bins d8"
   },
   {
     "pkgname": "darkhttpd",
@@ -3008,7 +3026,7 @@
   {
     "pkgname": "easyutils",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A collections of easy to use command-line utilities",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -3053,7 +3071,7 @@
   {
     "pkgname": "effcee",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A C++ library for stateful pattern matching of strings",
     "web-url": "https://github.com/google/effcee",
     "git-url": "https://github.com/google/effcee",
@@ -3942,13 +3960,13 @@
   {
     "pkgname": "fzf",
     "pkgtype": "exe",
-    "version": "0.54.3",
+    "version": "0.60.3",
     "license": "MIT",
     "summary": "A command-line fuzzy finder written in Go",
     "web-url": "https://github.com/junegunn/fzf",
     "git-url": "https://github.com/junegunn/fzf",
-    "src-url": "https://github.com/junegunn/fzf/archive/refs/tags/v0.54.3.tar.gz",
-    "src-sha": "6413f3916f8058b396820f9078b1336d94c72cbae39c593b1d16b83fcc4fdf74",
+    "src-url": "https://github.com/junegunn/fzf/archive/refs/tags/v0.60.3.tar.gz",
+    "src-sha": "bdef337774050c26c6c4a6f38bc4ccb0901450854cd7f667cb3a330166a9ada5",
     "dep-upp": "curl bsdtar golang",
     "bsystem": "go",
     "binbstd": "1",
@@ -4916,7 +4934,7 @@
   {
     "pkgname": "gn",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A meta-build system that generates build files for ninja",
     "web-url": "https://gn.googlesource.com/gn",
     "git-url": "https://gn.googlesource.com/gn",
@@ -4926,7 +4944,8 @@
     "binbstd": "1",
     "xxflags": "-Wno-error",
     "parallel": "1",
-    "install": "# c++: error: unrecognized command line option '-Wextra-semi'\n# https://github.com/randombit/botan/issues/2239\n\nif \"$CXX\" --version | grep -q 'Free Software Foundation' ; then\n    unset GCC_VERSION_MAJOR\n\n    # https://gcc.gnu.org/onlinedocs/cpp/Common-Predefined-Macros.html\n    GCC_VERSION_MAJOR=$(\"$CXX\" -E -dM - < /dev/null | grep __GNUC__ | cut -d ' ' -f3)\n\n    if [ -n \"$GCC_VERSION_MAJOR\" ] && [ \"$GCC_VERSION_MAJOR\" -le 7 ] ; then\n        gsed -i \"s|'-Wextra-semi',||\" build/gen.py\n    fi\nfi\n\nrun python3 build/gen.py\nrun ninja -C out/\nrun install_bins out/gn"
+    "dopatch": "# c++: error: unrecognized command line option '-Wextra-semi'\n# https://github.com/randombit/botan/issues/2239\n\nif \"$CXX\" --version | grep -q 'Free Software Foundation' ; then\n    unset GCC_VERSION_MAJOR\n\n    # https://gcc.gnu.org/onlinedocs/cpp/Common-Predefined-Macros.html\n    GCC_VERSION_MAJOR=$(\"$CXX\" -E -dM - < /dev/null | grep __GNUC__ | cut -d ' ' -f3)\n\n    if [ -n \"$GCC_VERSION_MAJOR\" ] && [ \"$GCC_VERSION_MAJOR\" -le 7 ] ; then\n        gsed -i \"s|'-Wextra-semi',||\" build/gen.py\n    fi\nfi",
+    "install": "run python3 build/gen.py\nrun ninja -C out/\nrun install_bins out/gn"
   },
   {
     "pkgname": "gnu-barcode",
@@ -5202,7 +5221,7 @@
   {
     "pkgname": "gomobile",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A tool for building and running mobile apps written in golang",
     "web-url": "https://github.com/golang/mobile",
     "git-url": "https://github.com/golang/mobile",
@@ -6169,7 +6188,7 @@
   {
     "pkgname": "hunter",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "The fastest file manager in the galaxy!",
     "web-url": "https://github.com/rabite0/hunter",
     "git-url": "https://github.com/rabite0/hunter",
@@ -6646,13 +6665,13 @@
   {
     "pkgname": "jj",
     "pkgtype": "exe",
-    "version": "0.20.0",
+    "version": "0.27.0",
     "license": "Apache-2.0",
     "summary": "A git-compatible distributed version control system",
     "web-url": "https://github.com/martinvonz/jj",
     "git-url": "https://github.com/martinvonz/jj",
-    "src-url": "https://github.com/martinvonz/jj/archive/refs/tags/v0.20.0.tar.gz",
-    "src-sha": "b2c898ea224fe45df81c241bf1f0bc8e74c0988b8f549e894b15a38f2f4d6665",
+    "src-url": "https://github.com/martinvonz/jj/archive/refs/tags/v0.27.0.tar.gz",
+    "src-sha": "a9d2ab04698f971a215ae2510082d0bc00540188deb90d48e12e86a6d6a023af",
     "dep-pkg": "libopenssl libz",
     "dep-upp": "curl bsdtar",
     "bsystem": "cargo",
@@ -7535,7 +7554,7 @@
   {
     "pkgname": "libbcrypt",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A password hashing method based on the Blowfish block cipher, provided via the crypt(3) and a reentrant interface",
     "web-url": "https://www.openwall.com/crypt",
     "git-url": "https://github.com/leleliu008/libbcrypt",
@@ -7789,7 +7808,7 @@
   {
     "pkgname": "libcamera",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "MIT",
     "summary": "An open source camera stack and framework",
     "web-url": "https://libcamera.org/",
@@ -8100,7 +8119,7 @@
   {
     "pkgname": "libcpuinfo",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -8625,7 +8644,7 @@
   {
     "pkgname": "libexecinfo",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A quick-n-dirty BSD licensed clone of backtrace facility found in the GNU libc",
     "web-url": "https://github.com/leleliu008/libexecinfo",
     "git-url": "https://github.com/leleliu008/libexecinfo",
@@ -9220,7 +9239,7 @@
   {
     "pkgname": "libglob",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "glob(3) implementation",
     "web-url": "https://linux.die.net/man/3/glob",
     "git-url": "https://github.com/leleliu008/libglob",
@@ -9777,7 +9796,7 @@
   {
     "pkgname": "libintl-lite",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "BSL-1.0",
     "summary": "A simple (but less powerful) GNU gettext libintl replacement",
     "web-url": "https://github.com/j-jorge/libintl-lite",
@@ -10429,7 +10448,7 @@
   {
     "pkgname": "libmesalink",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "BSD-3-Clause",
     "summary": "memory-safe and OpenSSL-compatible TLS library",
     "web-url": "https://mesalink.io",
@@ -10490,7 +10509,7 @@
   {
     "pkgname": "libmill",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "MIT",
     "summary": "Go-style concurrency in C",
     "web-url": "https://github.com/sustrik/libmill",
@@ -10859,7 +10878,7 @@
   {
     "pkgname": "libnghttp3",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -10888,7 +10907,7 @@
   {
     "pkgname": "libngtcp2",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -11871,7 +11890,7 @@
   {
     "pkgname": "libquiche",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "BSD-2-Clause",
     "summary": "Savoury implementation of the QUIC transport protocol and HTTP/3",
     "web-url": "https://github.com/cloudflare/quiche",
@@ -13734,7 +13753,7 @@
   {
     "pkgname": "libwordexp",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "wordexp(3) implementation",
     "web-url": "https://linux.die.net/man/3/wordexp",
     "git-url": "https://github.com/leleliu008/libwordexp",
@@ -14225,7 +14244,7 @@
   {
     "pkgname": "lief",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "Library to Instrument Executable Formats",
     "web-url": "https://github.com/lief-project/LIEF",
@@ -14582,7 +14601,7 @@
   {
     "pkgname": "lodepng",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Zlib",
     "summary": "PNG encoder and decoder in C and C++",
     "web-url": "https://github.com/lvandeve/lodepng",
@@ -15578,7 +15597,7 @@
   {
     "pkgname": "ndk-pkg",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "A package builder for Android NDK to build projects written in C, C++, Rust, Golang, etc",
     "web-url": "https://github.com/leleliu008/ndk-pkg",
@@ -15693,7 +15712,7 @@
   {
     "pkgname": "nghttp3",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -15740,7 +15759,7 @@
   {
     "pkgname": "ngtcp2",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -15754,7 +15773,7 @@
   {
     "pkgname": "nilaway",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "A static analysis tool to detect potential nil panics in Go code",
     "web-url": "https://github.com/uber-go/nilaway",
@@ -16429,7 +16448,7 @@
   {
     "pkgname": "packcc",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A packrat parser generator for C",
     "web-url": "https://github.com/arithy/packcc",
     "git-url": "https://github.com/arithy/packcc",
@@ -16639,7 +16658,7 @@
   {
     "pkgname": "pegof",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "PEG grammar optimizer and formatter. Supports any grammar supported by PackCC parser generator.",
     "web-url": "https://github.com/dolik-rce/pegof",
     "git-url": "https://github.com/dolik-rce/pegof",
@@ -16809,7 +16828,7 @@
   {
     "pkgname": "plog",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "MPL-2.0",
     "summary": "Portable, simple and extensible C++ logging library",
     "web-url": "https://github.com/SergiusTheBest/plog",
@@ -16987,7 +17006,7 @@
   {
     "pkgname": "ppkg",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "A portable package manager for Unix-like system",
     "web-url": "https://github.com/leleliu008/ppkg",
@@ -17124,7 +17143,7 @@
   {
     "pkgname": "psimd",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "MIT",
     "summary": "Portable 128-bit SIMD intrinsics",
     "web-url": "https://github.com/Maratyszcza/psimd",
@@ -17174,7 +17193,7 @@
   {
     "pkgname": "pup",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "MIT",
     "summary": "Parse HTML at the command-line",
     "web-url": "https://github.com/EricChiang/pup",
@@ -17962,7 +17981,7 @@
   {
     "pkgname": "ruy",
     "pkgtype": "lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "matrix multiplication library",
     "web-url": "https://github.com/google/ruy",
@@ -18068,6 +18087,7 @@
     "summary": "A small man page generator",
     "web-url": "https://sr.ht/~sircmpwn/scdoc/",
     "src-url": "https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.3.tar.gz",
+    "src-uri": "https://distfiles.macports.org/scdoc/1.11.3.tar.gz",
     "src-sha": "4c5c6136540384e5455b250f768e7ca11b03fdba1a8efc2341ee0f1111e57612",
     "dep-upp": "curl bsdtar gmake",
     "bsystem": "gmake",
@@ -18247,7 +18267,7 @@
   {
     "pkgname": "sjpeg",
     "pkgtype": "exe+lib",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "simple jpeg encoder",
     "web-url": "https://github.com/webmproject/sjpeg",
@@ -18262,7 +18282,7 @@
   {
     "pkgname": "skcms",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "BSD",
     "summary": "SkCMS",
     "web-url": "https://skia.googlesource.com/skcms.git",
@@ -18921,7 +18941,7 @@
   {
     "pkgname": "sysinfo",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A command-line utility to print your currently running system information",
     "web-url": "https://github.com/leleliu008/sysinfo",
     "git-url": "https://github.com/leleliu008/sysinfo",
@@ -19667,7 +19687,7 @@
   {
     "pkgname": "uctags",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "GPL-2.0-or-later",
     "summary": "Maintained ctags implementation",
     "web-url": "https://ctags.io/",
@@ -19748,7 +19768,7 @@
   {
     "pkgname": "uppm",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19764,7 +19784,7 @@
   {
     "pkgname": "uppm@0.15.1",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19781,7 +19801,7 @@
   {
     "pkgname": "uppm@0.15.2",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19798,7 +19818,7 @@
   {
     "pkgname": "uppm@0.15.3",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19815,7 +19835,7 @@
   {
     "pkgname": "uppm@0.15.4",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -19868,7 +19888,7 @@
   {
     "pkgname": "utf8.h",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Unlicense",
     "summary": "single header utf8 string functions for C and C++",
     "web-url": "https://github.com/sheredom/utf8.h",
@@ -19946,7 +19966,7 @@
   },
   {
     "pkgname": "v8",
-    "pkgtype": "exe",
+    "pkgtype": "lib",
     "version": "12.7.224.16",
     "license": "BSD-3-Clause",
     "summary": "A high-performance JavaScript and WebAssembly Engine powered by Google",
@@ -19956,10 +19976,11 @@
     "src-sha": "00425fe7fd851f11839537256922addbfee0f5d27c6bf5ab375b9d0347d8ed94",
     "dep-pkg": "glib",
     "dep-upp": "git gn ninja python3 curl bsdtar",
+    "bsystem": "gn",
     "binbstd": "0",
     "parallel": "1",
-    "dosetup": "git_checkout https://chromium.googlesource.com/chromium/src/build.git                   --ref-from=faf20f32f1d19bd492f8f16ac4a7ecfabdbb60c1 -C build\ngit_checkout https://chromium.googlesource.com/external/github.com/Maratyszcza/FP16.git --ref-from=0a92994d729ff76a58f692d3028ca1b64b145d91 -C third_party/fp16/src\ngit_checkout https://chromium.googlesource.com/external/github.com/google/googletest.git --ref-from=a7f443b80b105f940225332ed3c31f2790092f47 -C third_party/googletest/src\ngit_checkout https://chromium.googlesource.com/chromium/deps/icu.git                    --ref-from=98f2494518c2dbb9c488e83e507b070ea5910e95 -C third_party/icu\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/zlib.git        --ref-from=209717dd69cd62f24cbacc4758261ae2dd78cfac -C third_party/zlib\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/abseil-cpp.git  --ref-from=bfe59c2726fda7494a800f7d0ee461f0564653b3 -C third_party/abseil-cpp\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/jinja2.git      --ref-from=2f6f2ff5e4c1d727377f5e1b9e1903d871f41e74 -C third_party/jinja2\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/markupsafe.git  --ref-from=e582d7f0edb9d67499b0f5abd6ae5550e91da7f2 -C third_party/markupsafe\n\ncat > build/config/gclient_args.gni <<EOF\ndeclare_args() {\n    checkout_google_benchmark = false\n}\nEOF\n\ncase $TARGET_PLATFORM_ARCH in\n    armv7a)  GN_ARG_TARGET_CPU=arm   ;;\n    aarch64) GN_ARG_TARGET_CPU=arm64 ;;\n    i686)    GN_ARG_TARGET_CPU=x86   ;;\n    x86_64)  GN_ARG_TARGET_CPU=x64   ;;\nesac\n\ncat >> args.gn <<EOF\ntarget_cpu=\"$GN_ARG_TARGET_CPU\"\nEOF\n\nGN_ARGS='is_debug=false is_component_build=true treat_warnings_as_errors=false v8_enable_fuzztest=false v8_enable_i18n_support=false v8_use_external_startup_data=false use_lld=false use_custom_libcxx=false clang_use_chrome_plugins=false'\n\ncase $TARGET_PLATFORM_NAME in\n    linux)  GN_ARGS=\"$GN_ARGS is_clang=false use_sysroot=false use_rbe=false target_os=\\\"linux\\\" custom_toolchain=\\\"//build/toolchain/linux/unbundle:default\\\" host_toolchain=\\\"//build/toolchain/linux/unbundle:default\\\"\" ;;\nesac\n\nrun gn gen _ \"'--args=$GN_ARGS'\"",
-    "install": "run ninja --version\nrun ninja --verbose d8\nrun install_bins d8\nrun install_incs \"$PACKAGE_BSCRIPT_DIR\"/include/*.h\nrun install_libs *.so"
+    "dosetup": "git_checkout https://chromium.googlesource.com/chromium/src/build.git                   --ref-from=faf20f32f1d19bd492f8f16ac4a7ecfabdbb60c1 -C build\ngit_checkout https://chromium.googlesource.com/external/github.com/Maratyszcza/FP16.git --ref-from=0a92994d729ff76a58f692d3028ca1b64b145d91 -C third_party/fp16/src\ngit_checkout https://chromium.googlesource.com/external/github.com/google/googletest.git --ref-from=a7f443b80b105f940225332ed3c31f2790092f47 -C third_party/googletest/src\ngit_checkout https://chromium.googlesource.com/chromium/deps/icu.git                    --ref-from=98f2494518c2dbb9c488e83e507b070ea5910e95 -C third_party/icu\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/zlib.git        --ref-from=209717dd69cd62f24cbacc4758261ae2dd78cfac -C third_party/zlib\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/abseil-cpp.git  --ref-from=bfe59c2726fda7494a800f7d0ee461f0564653b3 -C third_party/abseil-cpp\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/jinja2.git      --ref-from=2f6f2ff5e4c1d727377f5e1b9e1903d871f41e74 -C third_party/jinja2\ngit_checkout https://chromium.googlesource.com/chromium/src/third_party/markupsafe.git  --ref-from=e582d7f0edb9d67499b0f5abd6ae5550e91da7f2 -C third_party/markupsafe\n\ncat > build/config/gclient_args.gni <<EOF\ndeclare_args() {\n    checkout_google_benchmark = false\n}\nEOF\n\nGN_ARGS='is_debug=false is_cfi=false is_component_build=false is_official_build=true treat_warnings_as_errors=false v8_static_library=false v8_enable_future=true v8_enable_fuzztest=false v8_enable_i18n_support=false v8_use_external_startup_data=false use_lld=false use_custom_libcxx=false clang_use_chrome_plugins=false'\n\ncase $TARGET_PLATFORM_NAME in\n    linux)  GN_ARGS=\"$GN_ARGS is_clang=false use_sysroot=false use_rbe=false target_os=\\\"linux\\\" custom_toolchain=\\\"//build/toolchain/linux/unbundle:default\\\" host_toolchain=\\\"//build/toolchain/linux/unbundle:default\\\"\" ;;\nesac\n\nrun gn gen _ \"'--args=$GN_ARGS'\"",
+    "install": "run ninja --version\nrun ninja --verbose\nrun install_bins d8\nrun install_incs \"$PACKAGE_BSCRIPT_DIR\"/include/*.h\nrun install_libs *.so"
   },
   {
     "pkgname": "vala",
@@ -20647,7 +20668,7 @@
   {
     "pkgname": "xbps",
     "pkgtype": "pie",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "summary": "A binary package system designed and implemented from scratch",
     "web-url": "https://github.com/void-linux/xbps",
     "git-url": "https://github.com/void-linux/xbps",
@@ -21531,7 +21552,7 @@
   {
     "pkgname": "xpup",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "Apache-2.0",
     "summary": "A command line tool for XML parsing",
     "web-url": "https://github.com/ericchiang/xpup",
@@ -21713,7 +21734,7 @@
   {
     "pkgname": "ycm",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "GPL-v3",
     "summary": "A code-completion engine for Vim",
     "web-url": "https://github.com/ycm-core/YouCompleteMe",
@@ -21827,7 +21848,7 @@
   {
     "pkgname": "zeta",
     "pkgtype": "exe",
-    "version": "2025.03.18",
+    "version": "2025.03.19",
     "license": "LGPL-3.0",
     "summary": "Header-only general purpose library",
     "web-url": "https://github.com/redcode/Zeta",

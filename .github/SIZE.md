@@ -42,8 +42,8 @@
  9.5M   │ │ ├── x86_64-Linux.sdb
  9.1M   │ │ ├── aarch64-Linux.sdb
  1.2M   │ │ ├── x86_64-Linux.db.cba
- 1.1M   │ │ ├── aarch64-Linux.db.cba
  1.1M   │ │ ├── x86_64-Linux.sdb.cba
+ 1.1M   │ │ ├── aarch64-Linux.db.cba
  1.1M   │ │ ├── x86_64-Linux.json.cba
  1.1M   │ │ ├── aarch64-Linux.sdb.cba
  1.0M   │ │ ├── aarch64-Linux.json.cba
@@ -113,13 +113,13 @@
  2.3M   │ │ │ ├── x86_64-Linux.db
  1.3M   │ │ │ ├── aarch64-Linux.json
  964K   │ │ │ ├── aarch64-Linux.db
- 292K   │ │ │ ├── x86_64-Linux.db.cba
+ 288K   │ │ │ ├── x86_64-Linux.db.cba
  264K   │ │ │ ├── x86_64-Linux.json.cba
  232K   │ │ │ ├── x86_64-Linux.db.zstd
  224K   │ │ │ ├── x86_64-Linux.db.xz
  208K   │ │ │ ├── x86_64-Linux.json.zstd
  200K   │ │ │ ├── x86_64-Linux.json.xz
- 124K   │ │ │ ├── aarch64-Linux.db.cba
+ 120K   │ │ │ ├── aarch64-Linux.db.cba
  116K   │ │ │ ├── aarch64-Linux.json.cba
  100K   │ │ │ ├── aarch64-Linux.db.zstd
   96K   │ │ │ ├── aarch64-Linux.db.xz
@@ -215,17 +215,17 @@
 1000K   │ │ ├── OLD_bincache_x86_64-Linux.json
  792K   │ │ ├── pub_issues_binaries.txt
  536K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 504K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 508K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  340K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
  216K   │ │ ├── INDEX.db.cba
  208K   │ │ ├── INDEX.json.xz
  208K   │ │ ├── GH_REPO.md
  204K   │ │ ├── INDEX.json.zstd
- 172K   │ │ ├── INDEX.db.zstd
+ 168K   │ │ ├── INDEX.db.zstd
  160K   │ │ ├── INDEX.db.xz
  144K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
- 124K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 120K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   76K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   72K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
   48K   │ │ ├── URLS.txt
@@ -272,7 +272,7 @@
  532K   │ │ ├── aarch64-Linux.json
  472K   │ │ ├── aarch64-Linux.sdb
  136K   │ │ ├── x86_64-Linux.sdb.cba
- 128K   │ │ ├── x86_64-Linux.db.cba
+ 132K   │ │ ├── x86_64-Linux.db.cba
  116K   │ │ ├── x86_64-Linux.json.cba
  108K   │ │ ├── x86_64-Linux.sdb.zstd
  104K   │ │ ├── x86_64-Linux.db.zstd

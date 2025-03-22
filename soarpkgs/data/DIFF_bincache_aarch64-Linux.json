@@ -5699,6 +5699,80 @@
   },
   {
     "_disabled": "false",
+    "pkg": "etcd",
+    "pkg_family": "etcd",
+    "pkg_id": "github.com.etcd-io.etcd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/io-etcd/etcd/etcd",
+    "bincache": "ghcr.io/pkgforge/bincache/etcd/official/etcd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/etcd/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Distributed reliable key-value store for the most critical data of a distributed system",
+      "etcd": "The official Go etcd client [etcd]",
+      "etcdctl": "Command Line Client for etcd [etcd]",
+      "etcdutl": "Command Line Administration utility for etcd [etcd]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "etcd"
+      ],
+      "archlinux": {
+        "aur": [
+          "etcd",
+          "etcd-bin",
+          "etcd-git"
+        ]
+      },
+      "debian": [
+        "etcd"
+      ],
+      "homebrew": [
+        "etcd"
+      ],
+      "nixpkgs": [
+        "etcd"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/etcd/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/etcd-io/etcd"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/etcd-io/etcd"
+    ],
+    "provides": [
+      "etcd",
+      "etcdctl",
+      "etcdutl"
+    ],
+    "repology": [
+      "etcd"
+    ],
+    "src_url": [
+      "https://github.com/etcd-io/etcd"
+    ],
+    "tag": [
+      "distributed"
+    ],
+    "version": "v3.5.20"
+  },
+  {
+    "_disabled": "false",
     "pkg": "exatorrent",
     "pkg_family": "exatorrent",
     "pkg_id": "github.com.varbhat.exatorrent",
@@ -6280,7 +6354,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-4c02546-250321T180310"
+    "version": "HEAD-aaf5550-250322T000547"
   },
   {
     "_disabled": "false",
@@ -7451,7 +7525,7 @@
     "tag": [
       "utility"
     ],
-    "version": "HEAD-ef595c0-250321T093624"
+    "version": "HEAD-920daa5-250321T131703"
   },
   {
     "_disabled": "false",
@@ -7523,7 +7597,7 @@
     "tag": [
       "utility"
     ],
-    "version": "HEAD-ef595c0-250321T093624"
+    "version": "HEAD-920daa5-250321T131703"
   },
   {
     "_disabled": "false",
@@ -8645,7 +8719,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-35fea25-250315T074905"
+    "version": "HEAD-a907909-250321T155144"
   },
   {
     "_disabled": "false",
@@ -8926,7 +9000,58 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-be0ad55-250321T162751"
+    "version": "HEAD-1a98a73-250321T195626"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "jwt-hack",
+    "pkg_family": "jwt-hack",
+    "pkg_id": "github.com.hahwul.jwt-hack",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jwt-hack/jwt-hack/jwt-hack",
+    "bincache": "ghcr.io/pkgforge/bincache/jwt-hack/official/jwt-hack",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jwt-hack/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A tool for hacking/security testing to JWT",
+    "distro_pkg": {
+      "nixpkgs": [
+        "jwt-hack"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jwt-hack/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/hahwul/jwt-hack"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/hahwul/jwt-hack"
+    ],
+    "repology": [
+      "jwt-hack"
+    ],
+    "src_url": [
+      "https://github.com/hahwul/jwt-hack"
+    ],
+    "tag": [
+      "bugbounty",
+      "cracking",
+      "jwt",
+      "security"
+    ],
+    "version": "HEAD-de22655-250322T080943"
   },
   {
     "_disabled": "false",
@@ -8992,7 +9117,7 @@
     "tag": [
       "kubernetes"
     ],
-    "version": "HEAD-d0e373f-250318T202507"
+    "version": "HEAD-e36716a-250321T173652"
   },
   {
     "_disabled": "false",
@@ -9542,6 +9667,52 @@
       "kernel"
     ],
     "version": "1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "lnav",
+    "pkg_family": "lnav",
+    "pkg_id": "github.com.tstack.lnav",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tstack-lnav/lnav/lnav",
+    "bincache": "ghcr.io/pkgforge/bincache/lnav/official/lnav",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lnav/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Log file navigator",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lnav/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/tstack/lnav"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-2-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/tstack/lnav"
+    ],
+    "provides": [
+      "lnav"
+    ],
+    "repology": [
+      "lnav"
+    ],
+    "src_url": [
+      "https://github.com/tstack/lnav"
+    ],
+    "tag": [
+      "log"
+    ],
+    "version": "v0.13.0-beta1"
   },
   {
     "_disabled": "false",
@@ -10484,7 +10655,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-bd79ad2-250320T202638"
+    "version": "HEAD-984a66b-250321T153319"
   },
   {
     "_disabled": "false",
@@ -13949,7 +14120,7 @@
     "tag": [
       "checksum"
     ],
-    "version": "HEAD-5dd4665-250319T022654"
+    "version": "HEAD-faa052a-250322T003140"
   },
   {
     "_disabled": "false",
@@ -14769,7 +14940,7 @@
     "tag": [
       "pastebin"
     ],
-    "version": "HEAD-dada3b9-250319T174237"
+    "version": "HEAD-b9f5fa9-250321T170356"
   },
   {
     "_disabled": "false",
@@ -15767,7 +15938,7 @@
       "git",
       "ssh"
     ],
-    "version": "HEAD-f23cdc4-250320T194258"
+    "version": "HEAD-821a823-250321T221730"
   },
   {
     "_disabled": "false",
@@ -15833,7 +16004,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-2eb776b-250317T174654"
+    "version": "HEAD-c197e6b-250321T235924"
   },
   {
     "_disabled": "false",
@@ -16548,7 +16719,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-e107868-250321T105532"
+    "version": "HEAD-6bbf98b-250321T144602"
   },
   {
     "_disabled": "false",
@@ -18935,7 +19106,7 @@
       "explorer",
       "file"
     ],
-    "version": "HEAD-a06bd94-250321T215620"
+    "version": "HEAD-22968fa-250322T030253"
   },
   {
     "_disabled": "false",
@@ -19658,7 +19829,7 @@
     "tag": [
       "security"
     ],
-    "version": "HEAD-589d4e0-250320T095614"
+    "version": "HEAD-6c6c595-250321T112612"
   },
   {
     "_disabled": "false",

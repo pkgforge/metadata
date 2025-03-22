@@ -95,7 +95,7 @@
  420K   │ │ │ ├── x86_64-Linux.db.zstd
  412K   │ │ │ ├── x86_64-Linux.db.xz
  384K   │ │ │ ├── x86_64-Linux.json.zstd
- 380K   │ │ │ ├── x86_64-Linux.json.xz
+ 376K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum

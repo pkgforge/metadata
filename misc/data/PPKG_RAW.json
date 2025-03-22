@@ -12939,6 +12939,22 @@
     "install": "cmakew \\\n    -DTBB_TEST=OFF \\\n    -DTBB_EXAMPLES=OFF \\\n    -DTBB_STRICT=OFF \\\n    -DTBB_ENABLE_IPO=ON \\\n    -DTBB4PY_BUILD=OFF"
   },
   {
+    "pkgname": "libtbox",
+    "pkgtype": "lib",
+    "version": "1.7.6",
+    "license": "Apache-2.0",
+    "summary": "A glib-like multi-platform c library",
+    "web-url": "https://tboox.org/",
+    "git-url": "https://github.com/tboox/tbox",
+    "src-url": "https://github.com/tboox/tbox/archive/refs/tags/v1.7.6.tar.gz",
+    "src-sha": "2622de5473b8f2e94b800b86ff6ef4a535bc138c61c940c3ab84737bb94a126a",
+    "dep-upp": "curl bsdtar xmake",
+    "bsystem": "xmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "install": "xmakew --charset=y --small=y --xml=y --demo=n"
+  },
+  {
     "pkgname": "libtcl",
     "pkgtype": "lib",
     "version": "8.6.16",
@@ -19050,22 +19066,6 @@
     "install": "# https://github.com/goccy/go-graphviz/issues/43\nexport CGO_ENABLED=1\ngow \\\n    -X github.com/k1LoW/tbls.commit=$PACKAGE_GIT_SHA \\\n    -X github.com/k1LoW/tbls.date=$(date -u '+%Y-%m-%d_%H:%M:%S') \\\n    -X github.com/k1LoW/tbls.version=\"$PACKAGE_VERSION\""
   },
   {
-    "pkgname": "tbox",
-    "pkgtype": "exe",
-    "version": "1.7.5",
-    "license": "Apache-2.0",
-    "summary": "A glib-like multi-platform c library",
-    "web-url": "https://tboox.org/",
-    "git-url": "https://github.com/tboox/tbox",
-    "src-url": "https://github.com/tboox/tbox/archive/v1.7.5.tar.gz",
-    "src-sha": "6382cf7d6110cbe6f29e8346d0e4eb078dd2cbf7e62913b96065848e351eb15e",
-    "dep-upp": "curl bsdtar xmake",
-    "bsystem": "xmake",
-    "binbstd": "1",
-    "parallel": "1",
-    "install": "xmakew --charset=y --small=y --xml=y --demo=n"
-  },
-  {
     "pkgname": "tcc",
     "pkgtype": "exe",
     "version": "0.9.27",
@@ -20813,7 +20813,8 @@
     "bsystem": "xmake",
     "binbstd": "1",
     "parallel": "1",
-    "install": "xmakew"
+    "dosetup": "run ln -s libncurses.a ../../lib/libcurses.a",
+    "install": "xmakew --charset=y --small=y --xml=y --demo=n --curses=y"
   },
   {
     "pkgname": "xmlto",

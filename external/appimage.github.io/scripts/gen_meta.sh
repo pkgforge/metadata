@@ -302,12 +302,12 @@ pushd "${TMPDIR}" >/dev/null 2>&1
   PKG_NAMES_STR="${PKG_NAMES[*]}"
   export PKG_APPS_STR PKG_DATA_STR PKG_DB_STR PKG_NAMES_STR
   printf '%s\n' "${PKG_NAMES[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" \
-     bash -c '
+     timeout -k 10s 180s bash -c '
         PKG_APPS=(${PKG_APPS_STR})
         PKG_DATA=(${PKG_DATA_STR})
         PKG_DB=(${PKG_DB_STR})
         PKG_NAMES=(${PKG_NAMES_STR})
-        timeout -k 10s 180s generate_meta "$@"
+        generate_meta "$@"
      ' _ "{}"
 popd >/dev/null 2>&1
 #-------------------------------------------------------#

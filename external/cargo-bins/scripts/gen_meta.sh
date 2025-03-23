@@ -272,6 +272,7 @@ popd &>/dev/null
 
 #-------------------------------------------------------#
 ##Merge
+echo -e "\n[+] Merging ...\n"
 find "${TMPDIR}/data/" -type f -name '*.json' ! -iname "*.raw" -exec bash -c 'jq empty "{}" 2>/dev/null && cat "{}"' \; | jq -s 'sort_by(.pkg)' > "${TMPDIR}/cargo-bins.json.raw"
 ##Sort Rank
 jq '

@@ -266,7 +266,7 @@ export -f generate_meta
 #-------------------------------------------------------#
 ##Generate
 pushd "${TMPDIR}" &>/dev/null
- printf '%s\n' "${REPO_TAGS[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'generate_meta "$@"' _ "{}"
+ printf '%s\n' "${REPO_TAGS[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'timeout -k 10s 180s generate_meta "$@"' _ "{}"
 popd &>/dev/null
 #-------------------------------------------------------#
 

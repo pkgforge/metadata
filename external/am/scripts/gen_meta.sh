@@ -13,20 +13,33 @@ SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
 TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
 mkdir -pv "${TMPDIR}/assets" "${TMPDIR}/data" "${TMPDIR}/src" "${TMPDIR}/tmp"
 rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
+#-------------------------------------------------------#
+
+#-------------------------------------------------------#
+pushd "${TMPDIR}" &>/dev/null
 #Get Repo Tags
  META_REPO="pkgforge-community/AM-HF-SYNC"
  CUTOFF_DATE="$(date --utc -d '7 days ago' '+%Y-%m-%d' | tr -d '[:space:]')" ; unset META_TAGS
- readarray -t "META_TAGS" < <(gh api "repos/${META_REPO}/releases" --paginate 2>/dev/null |\
-  jq -r --arg cutoff "${CUTOFF_DATE}" \
-  '.[] | select(.tag_name | test("METADATA-[0-9]{4}_[0-9]{2}_[0-9]{2}")) | select((.published_at | strptime("%Y-%m-%dT%H:%M:%SZ") | mktime) >= ($cutoff | strptime("%Y-%m-%d") | mktime)) | .tag_name' |\
-  grep -i "METADATA-[0-9]\{4\}_[0-9]\{2\}_[0-9]\{2\}" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | sort -u)
-  if [[ -n "${META_TAGS[*]}" && "${#META_TAGS[@]}" -ge 2 ]]; then
-    echo -e "\n[+] Total Tags: ${#META_TAGS[@]}"
-    echo -e "[+] Tags: ${META_TAGS[*]}"
-  else
-    echo -e "\n[X] FATAL: Failed to Fetch needed Tags\n"
-    echo -e "[+] Tags: ${META_TAGS[*]}"
-   exit 1
+ export META_REPO CUTOFF_DATE
+ for i in {1..5}; do
+   gh api "repos/${META_REPO}/releases" --paginate 2>/dev/null |& cat - > "${TMPDIR}/tmp/RELEASES.json"
+   if [[ $(stat -c%s "${TMPDIR}/tmp/RELEASES.json" | tr -d '[:space:]') -le 1000 ]]; then
+     echo "Retrying... ${i}/5"
+     sleep 2
+   elif [[ $(stat -c%s "${TMPDIR}/tmp/RELEASES.json" | tr -d '[:space:]') -gt 1000 ]]; then
+     readarray -t "META_TAGS" < <(cat "${TMPDIR}/tmp/RELEASES.json" | jq -r --arg cutoff "${CUTOFF_DATE}" \
+       '.[] | select(.tag_name | test("METADATA-[0-9]{4}_[0-9]{2}_[0-9]{2}")) | select((.published_at | strptime("%Y-%m-%dT%H:%M:%SZ") | mktime) >= ($cutoff | strptime("%Y-%m-%d") | mktime)) | .tag_name' |\
+       grep -i "METADATA-[0-9]\{4\}_[0-9]\{2\}_[0-9]\{2\}" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | sort -u)
+     break
+   fi
+ done
+ if [[ -n "${META_TAGS[*]}" && "${#META_TAGS[@]}" -ge 2 ]]; then
+   echo -e "\n[+] Total Tags: ${#META_TAGS[@]}"
+   echo -e "[+] Tags: ${META_TAGS[*]}"
+ else
+   echo -e "\n[X] FATAL: Failed to Fetch needed Tags\n"
+   echo -e "[+] Tags: ${META_TAGS[*]}"
+  exit 1
   fi
 #Download Assets
  unset REL_TAG

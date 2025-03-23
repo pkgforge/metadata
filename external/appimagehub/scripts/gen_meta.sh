@@ -292,7 +292,7 @@ export -f generate_meta
 pushd "${TMPDIR}" &>/dev/null
  jq -r '.. | .detailpage? // ""' "${TMPDIR}/data/appimagehub.json.tmp" | sort -uo "${TMPDIR}/pkg_pages.txt"
  unset PKG_PAGES ; readarray -t "PKG_PAGES" < "${TMPDIR}/pkg_pages.txt"
- printf '%s\n' "${PKG_PAGES[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'generate_meta "$@" 2>/dev/null' _ "{}"
+ printf '%s\n' "${PKG_PAGES[@]}" | xargs -P "${PARALLEL_LIMIT:-$(($(nproc)+1))}" -I "{}" bash -c 'timeout -k 10s 180s generate_meta "$@"' _ "{}"
 popd &>/dev/null
 #-------------------------------------------------------#
 

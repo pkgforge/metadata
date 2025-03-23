@@ -1,5 +1,5 @@
 ```mathematica
- 321M └─┬ main
+ 322M └─┬ main
  171M   ├─┬ misc
  171M   │ ├─┬ data
   69M   │ │ ├── ARCHLINUX.json
@@ -53,7 +53,7 @@
  800K   │ │ ├── x86_64-Linux.db.xz
  784K   │ │ ├── aarch64-Linux.db.zstd
  772K   │ │ ├── x86_64-Linux.sdb.xz
- 772K   │ │ ├── aarch64-Linux.db.xz
+ 768K   │ │ ├── aarch64-Linux.db.xz
  756K   │ │ ├── x86_64-Linux.json.zstd
  740K   │ │ ├── aarch64-Linux.sdb.xz
  732K   │ │ ├── x86_64-Linux.json.xz
@@ -214,8 +214,8 @@
 1016K   │ │ ├── OLD_bincache_aarch64-Linux.json
  992K   │ │ ├── OLD_bincache_x86_64-Linux.json
  792K   │ │ ├── pub_issues_binaries.txt
- 496K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 472K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 500K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 476K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  340K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
  216K   │ │ ├── INDEX.db.cba

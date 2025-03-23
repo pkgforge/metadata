@@ -307,7 +307,7 @@ pushd "${TMPDIR}" >/dev/null 2>&1
         PKG_DATA=(${PKG_DATA_STR})
         PKG_DB=(${PKG_DB_STR})
         PKG_NAMES=(${PKG_NAMES_STR})
-        generate_meta "$@"
+        timeout -k 10s 180s generate_meta "$@"
      ' _ "{}"
 popd >/dev/null 2>&1
 #-------------------------------------------------------#

@@ -12,7 +12,7 @@
  2.7M   │ │ ├── BREW_FORMULA.json
  1.5M   │ │ ├── BREW_CASK.json
  1.0M   │ │ ├── PPKG_RAW.json
- 452K   │ │ ├── FLATPAK_APPS_INFO.json
+ 456K   │ │ ├── FLATPAK_APPS_INFO.json
  424K   │ │ ├── FLATPAK_APPS_INFO.txt
  300K   │ │ ├── PPKG.json
  240K   │ │ ├── FLATPAK_POPULAR.json
@@ -108,16 +108,16 @@
   12K   │ │   ├── gen_meta_old.sh
  8.0K   │ │   └── gen_meta_tmp.sh
  9.9M   │ ├─┬ cargo-bins
- 9.8M   │ │ ├─┬ data
+ 9.9M   │ │ ├─┬ data
  3.2M   │ │ │ ├── x86_64-Linux.json
  2.3M   │ │ │ ├── x86_64-Linux.db
  1.3M   │ │ │ ├── aarch64-Linux.json
  988K   │ │ │ ├── aarch64-Linux.db
- 292K   │ │ │ ├── x86_64-Linux.db.cba
+ 296K   │ │ │ ├── x86_64-Linux.db.cba
  272K   │ │ │ ├── x86_64-Linux.json.cba
- 236K   │ │ │ ├── x86_64-Linux.db.zstd
+ 240K   │ │ │ ├── x86_64-Linux.db.zstd
  228K   │ │ │ ├── x86_64-Linux.db.xz
- 212K   │ │ │ ├── x86_64-Linux.json.zstd
+ 216K   │ │ │ ├── x86_64-Linux.json.zstd
  204K   │ │ │ ├── x86_64-Linux.json.xz
  124K   │ │ │ ├── aarch64-Linux.db.cba
  120K   │ │ │ ├── aarch64-Linux.json.cba

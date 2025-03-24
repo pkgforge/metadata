@@ -55,7 +55,7 @@
  772K   │ │ ├── x86_64-Linux.sdb.xz
  768K   │ │ ├── aarch64-Linux.db.xz
  756K   │ │ ├── x86_64-Linux.json.zstd
- 740K   │ │ ├── aarch64-Linux.sdb.xz
+ 744K   │ │ ├── aarch64-Linux.sdb.xz
  732K   │ │ ├── x86_64-Linux.json.xz
  724K   │ │ ├── aarch64-Linux.json.zstd
  700K   │ │ ├── aarch64-Linux.json.xz
@@ -107,18 +107,18 @@
   16K   │ │   ├── gen_meta.sh
   12K   │ │   ├── gen_meta_old.sh
  8.0K   │ │   └── gen_meta_tmp.sh
- 9.8M   │ ├─┬ cargo-bins
+ 9.9M   │ ├─┬ cargo-bins
  9.8M   │ │ ├─┬ data
  3.2M   │ │ │ ├── x86_64-Linux.json
  2.3M   │ │ │ ├── x86_64-Linux.db
  1.3M   │ │ │ ├── aarch64-Linux.json
- 980K   │ │ │ ├── aarch64-Linux.db
+ 984K   │ │ │ ├── aarch64-Linux.db
  296K   │ │ │ ├── x86_64-Linux.db.cba
- 268K   │ │ │ ├── x86_64-Linux.json.cba
+ 272K   │ │ │ ├── x86_64-Linux.json.cba
  236K   │ │ │ ├── x86_64-Linux.db.zstd
- 224K   │ │ │ ├── x86_64-Linux.db.xz
+ 228K   │ │ │ ├── x86_64-Linux.db.xz
  212K   │ │ │ ├── x86_64-Linux.json.zstd
- 200K   │ │ │ ├── x86_64-Linux.json.xz
+ 204K   │ │ │ ├── x86_64-Linux.json.xz
  124K   │ │ │ ├── aarch64-Linux.db.cba
  120K   │ │ │ ├── aarch64-Linux.json.cba
  104K   │ │ │ ├── aarch64-Linux.db.zstd
@@ -213,9 +213,9 @@
  1.2M   │ │ ├── INDEX.db
 1016K   │ │ ├── OLD_bincache_aarch64-Linux.json
  992K   │ │ ├── OLD_bincache_x86_64-Linux.json
- 792K   │ │ ├── pub_issues_binaries.txt
+ 788K   │ │ ├── pub_issues_binaries.txt
  500K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 476K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 472K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  340K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
  216K   │ │ ├── INDEX.db.cba
@@ -225,10 +225,10 @@
  168K   │ │ ├── INDEX.db.zstd
  160K   │ │ ├── INDEX.db.xz
  144K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
-  84K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   68K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
-  56K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+  68K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   48K   │ │ ├── URLS.txt
+  48K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   28K   │ │ ├── GH_REPO_ARCHIVED.md
   24K   │ │ ├── DIFF_bincache.json
  8.0K   │ │ ├── DIFF_pkgcache.json

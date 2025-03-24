@@ -171,7 +171,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.77.86"
+    "version": "v1.77.87"
   },
   {
     "_disabled": "false",
@@ -814,7 +814,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "138.0.20250323204755"
+    "version": "138.0.20250324091950"
   },
   {
     "_disabled": "false",
@@ -1112,6 +1112,76 @@
     "version": "3.0.0"
   },
   {
+    "_disabled": "false",
+    "pkg": "gimp",
+    "pkg_family": "gimp",
+    "pkg_id": "runimage.cachyos.gimp.stable",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gimp-stable/gimp/gimp",
+    "app_id": "org.gimp.GIMP",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gimp/runimage.cachyos.stable.yaml",
+    "category": [
+      "Graphics",
+      "ImageProcessing"
+    ],
+    "description": "The GNU Image Manipulation Program",
+    "distro_pkg": {
+      "alpine": [
+        "gimp"
+      ],
+      "archlinux": {
+        "aur": [
+          "gimp-git"
+        ],
+        "extra": [
+          "gimp"
+        ]
+      },
+      "debian": [
+        "gimp"
+      ],
+      "nixpkgs": [
+        "gimp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/gimp/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://www.gimp.org",
+      "https://gitlab.gnome.org/GNOME/gimp"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/gimp/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/gimp/runimage/cachyos",
+    "provides": [
+      "gimp"
+    ],
+    "repology": [
+      "gimp"
+    ],
+    "src_url": [
+      "https://archlinux.org/packages/extra/x86_64/gimp/"
+    ],
+    "tag": [
+      "editor",
+      "graphics"
+    ],
+    "version": "3.0.2"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "replaced": [
@@ -1262,6 +1332,107 @@
       "vkbasalt"
     ],
     "version": "1.3-3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "huggingface-cli",
+    "pkg_family": "huggingface-cli",
+    "pkg_id": "sharun.wrappe.source.huggingface-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/huggingface-cli/huggingface-cli/huggingface-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/huggingface-cli/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "The official Python client for the Huggingface Hub",
+    "distro_pkg": {
+      "homebrew": [
+        "huggingface-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/huggingface-cli/archive.sharun.source.yaml",
+    "homepage": [
+      "https://huggingface.co/docs/huggingface_hub"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/huggingface-cli/archive/sharun",
+    "provides": [
+      "huggingface-cli"
+    ],
+    "repology": [
+      "huggingface-cli"
+    ],
+    "src_url": [
+      "https://github.com/huggingface/huggingface_hub"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-df6366c-250324T105257"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "knot",
+    "pkg_family": "android-knot",
+    "pkg_id": "github.com.ic005k.Knot",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ic005k-knot/android-knot/knot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/android-knot/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Record everything in the simplest way possible",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "android-knot-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/android-knot/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/ic005k/Knot"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/android-knot/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ic005k/Knot"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/knot/appimage/official",
+    "provides": [
+      "knot"
+    ],
+    "repology": [
+      "android-knot"
+    ],
+    "src_url": [
+      "https://github.com/ic005k/Knot"
+    ],
+    "version": "1.2.19"
   },
   {
     "_disabled": "true",

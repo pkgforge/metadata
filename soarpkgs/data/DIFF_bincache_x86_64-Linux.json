@@ -422,7 +422,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-fd19272-250320T082242"
+    "version": "HEAD-bbfcdd6-250325T021800"
   },
   {
     "_disabled": "false",
@@ -1111,7 +1111,7 @@
       "server",
       "nginx"
     ],
-    "version": "v2.10.0-beta.3"
+    "version": "v2.10.0-beta.4"
   },
   {
     "_disabled": "false",
@@ -1286,7 +1286,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "v0.140.1"
+    "version": "v0.140.4"
   },
   {
     "_disabled": "false",
@@ -2700,6 +2700,73 @@
       "coreutils"
     ],
     "version": "0.0.30"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "croc",
+    "pkg_family": "croc",
+    "pkg_id": "github.com.schollz.croc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/schollz-croc/croc/croc",
+    "bincache": "ghcr.io/pkgforge/bincache/croc/official/croc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/croc/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Easily and securely send things from one computer to another",
+    "distro_pkg": {
+      "alpine": [
+        "croc"
+      ],
+      "archlinux": {
+        "aur": [
+          "croc-git"
+        ],
+        "extra": [
+          "croc"
+        ]
+      },
+      "homebrew": [
+        "croc"
+      ],
+      "nixpkgs": [
+        "croc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/croc/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/schollz/croc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/schollz/croc"
+    ],
+    "provides": [
+      "croc"
+    ],
+    "repology": [
+      "croc"
+    ],
+    "src_url": [
+      "https://github.com/schollz/croc"
+    ],
+    "tag": [
+      "p2p",
+      "sharing",
+      "transfer"
+    ],
+    "version": "v10.2.2"
   },
   {
     "_disabled": "false",
@@ -4582,7 +4649,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-767a214-250325T000606"
+    "version": "HEAD-f904c54-250325T060323"
   },
   {
     "_disabled": "false",
@@ -8039,7 +8106,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-9fa510c-250323T154842"
+    "version": "HEAD-9e77404-250325T062402"
   },
   {
     "_disabled": "false",
@@ -8252,7 +8319,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b0f420c-250324T205654"
+    "version": "HEAD-572e79b-250325T011746"
   },
   {
     "_disabled": "false",
@@ -8735,7 +8802,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-537867a-250324T172731"
+    "version": "HEAD-e342a4f-250324T204846"
   },
   {
     "_disabled": "false",
@@ -10974,7 +11041,7 @@
     "tag": [
       "podcast"
     ],
-    "version": "HEAD-0e2c5b9-250323T105002"
+    "version": "HEAD-62fa6bf-250324T182333"
   },
   {
     "_disabled": "false",
@@ -13565,7 +13632,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-58fdae3-250324T204033"
+    "version": "HEAD-85ba9c4-250325T103805"
   },
   {
     "_disabled": "false",
@@ -17337,7 +17404,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-449c4e4-250320T101813"
+    "version": "HEAD-9418116-250324T212736"
   },
   {
     "_disabled": "false",
@@ -17711,6 +17778,72 @@
       "init"
     ],
     "version": "HEAD-a4c86c9-250319T084640"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yq",
+    "pkg_family": "yq",
+    "pkg_id": "github.com.mikefarah.yq",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mikefarah-yq/yq/yq",
+    "bincache": "ghcr.io/pkgforge/bincache/yq/official/yq",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/yq/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Portable command-line YAML, JSON, XML, CSV, TOML and properties processor",
+    "distro_pkg": {
+      "alpine": [
+        "yq",
+        "yq-go"
+      ],
+      "archlinux": {
+        "extra": [
+          "go-yq"
+        ]
+      },
+      "homebrew": [
+        "yq"
+      ],
+      "nixpkgs": [
+        "yq-go"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/yq/static.official.source.yaml",
+    "homepage": [
+      "https://mikefarah.gitbook.io/yq",
+      "https://github.com/mikefarah/yq"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0",
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mikefarah/yq"
+    ],
+    "repology": [
+      "yq-mikefarah"
+    ],
+    "src_url": [
+      "https://github.com/mikefarah/yq"
+    ],
+    "tag": [
+      "json",
+      "jq",
+      "toml",
+      "yaml"
+    ],
+    "version": "HEAD-64bee0f-250325T154553"
   },
   {
     "_disabled": "false",

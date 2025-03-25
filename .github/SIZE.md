@@ -113,7 +113,7 @@
  2.3M   │ │ │ ├── x86_64-Linux.db
  1.3M   │ │ │ ├── aarch64-Linux.json
  992K   │ │ │ ├── aarch64-Linux.db
- 292K   │ │ │ ├── x86_64-Linux.db.cba
+ 296K   │ │ │ ├── x86_64-Linux.db.cba
  276K   │ │ │ ├── x86_64-Linux.json.cba
  240K   │ │ │ ├── x86_64-Linux.db.zstd
  228K   │ │ │ ├── x86_64-Linux.db.xz
@@ -154,7 +154,6 @@
   84K   │ │ │ ├── aarch64-Linux.db
   12K   │ │ │ ├── aarch64-Linux.json.zstd
   12K   │ │ │ ├── aarch64-Linux.json.xz
-  12K   │ │ │ ├── aarch64-Linux.json.cba
   12K   │ │ │ ├── aarch64-Linux.db.zstd
   12K   │ │ │ ├── aarch64-Linux.db.xz
   12K   │ │ │ ├── aarch64-Linux.db.cba
@@ -166,6 +165,7 @@
  4.0K   │ │ │ ├── x86_64-Linux.db.bsum
  4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.cba
  4.0K   │ │ │ ├── aarch64-Linux.json.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
@@ -211,11 +211,11 @@
  2.3M   │ │ ├── INDEX.json
  1.3M   │ │ ├── BACKAGE.json
  1.2M   │ │ ├── INDEX.db
-1016K   │ │ ├── OLD_bincache_aarch64-Linux.json
+1020K   │ │ ├── OLD_bincache_aarch64-Linux.json
  992K   │ │ ├── OLD_bincache_x86_64-Linux.json
  788K   │ │ ├── pub_issues_binaries.txt
- 524K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 492K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 532K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 504K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  340K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
  216K   │ │ ├── INDEX.db.cba
@@ -225,9 +225,9 @@
  172K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
  168K   │ │ ├── INDEX.db.zstd
  160K   │ │ ├── INDEX.db.xz
-  92K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
-  76K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
-  52K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+  96K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
+  88K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+  56K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   48K   │ │ ├── URLS.txt
   28K   │ │ ├── GH_REPO_ARCHIVED.md
   24K   │ │ ├── DIFF_bincache.json

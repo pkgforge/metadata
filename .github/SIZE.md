@@ -108,7 +108,7 @@
   12K   │ │   ├── gen_meta_old.sh
  8.0K   │ │   └── gen_meta_tmp.sh
   10M   │ ├─┬ cargo-bins
-10.0M   │ │ ├─┬ data
+  10M   │ │ ├─┬ data
  3.2M   │ │ │ ├── x86_64-Linux.json
  2.4M   │ │ │ ├── x86_64-Linux.db
  1.3M   │ │ │ ├── aarch64-Linux.json
@@ -119,8 +119,8 @@
  228K   │ │ │ ├── x86_64-Linux.db.xz
  216K   │ │ │ ├── x86_64-Linux.json.zstd
  204K   │ │ │ ├── x86_64-Linux.json.xz
- 128K   │ │ │ ├── aarch64-Linux.db.cba
- 120K   │ │ │ ├── aarch64-Linux.json.cba
+ 124K   │ │ │ ├── aarch64-Linux.json.cba
+ 124K   │ │ │ ├── aarch64-Linux.db.cba
  104K   │ │ │ ├── aarch64-Linux.db.zstd
  100K   │ │ │ ├── aarch64-Linux.db.xz
   92K   │ │ │ ├── aarch64-Linux.json.zstd
@@ -154,7 +154,6 @@
   84K   │ │ │ ├── aarch64-Linux.db
   12K   │ │ │ ├── aarch64-Linux.json.zstd
   12K   │ │ │ ├── aarch64-Linux.json.xz
-  12K   │ │ │ ├── aarch64-Linux.json.cba
   12K   │ │ │ ├── aarch64-Linux.db.zstd
   12K   │ │ │ ├── aarch64-Linux.db.xz
   12K   │ │ │ ├── aarch64-Linux.db.cba
@@ -166,6 +165,7 @@
  4.0K   │ │ │ ├── x86_64-Linux.db.bsum
  4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.cba
  4.0K   │ │ │ ├── aarch64-Linux.json.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum

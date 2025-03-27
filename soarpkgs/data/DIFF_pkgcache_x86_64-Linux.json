@@ -306,6 +306,65 @@
     "_disabled": "false",
     "pkg": "brave",
     "pkg_family": "brave",
+    "pkg_id": "github.com.srevinsaju.Brave-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/appimage/srevinsaju",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "v1.77.91"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
     "pkg_id": "nixpkgs.brave",
     "pkg_type": "nixappimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
@@ -1483,7 +1542,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-97241ee-250326T140557"
+    "version": "HEAD-6b08e6d-250327T172455"
   },
   {
     "_disabled": "false",
@@ -1868,6 +1927,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "netexec",
+    "pkg_family": "netexec",
+    "pkg_id": "sharun.wrappe.source.netexec",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-netexec/netexec/netexec",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/netexec/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "The Network Execution (CrackMapExec) Tool",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "netexec"
+        ]
+      },
+      "nixpkgs": [
+        "netexec"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/netexec/archive.sharun.source.yaml",
+    "homepage": [
+      "https://netexec.wiki",
+      "https://www.netexec.wiki"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-2-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/netexec/archive/sharun",
+    "provides": [
+      "netexec==nxc"
+    ],
+    "repology": [
+      "netexec"
+    ],
+    "src_url": [
+      "https://github.com/Pennyw0rth/NetExec"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-2d3e1be-250327T151343"
+  },
+  {
+    "_disabled": "false",
     "pkg": "obs-studio",
     "pkg_family": "obs-studio",
     "pkg_id": "github.com.pkgforge-dev.OBS-Studio-AppImage.stable",
@@ -1944,78 +2062,6 @@
       "Video/Utilities"
     ],
     "version": "31.0.1-2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "player432hz",
-    "pkg_family": "player432hz",
-    "pkg_id": "github.com.mysteryx93.HanumanInstituteApps",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mysteryx93-hanumaninstituteapps/player432hz/player432hz",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/player432hz/appimage.official.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": {
-      "_default": "A suite of Audio/Video Tools",
-      "converter432hz": "Converts and re-encodes music to 432Hz in Batch [player432hz]",
-      "player432hz": "Plays music in 432Hz [player432hz]",
-      "powerliminalsplayer": "Plays multiple audios simultaneously at varying speeds [player432hz]",
-      "yangdownloader": "Downloads best-quality audio and video from YouTube [player432hz]"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "converter432hz-appimage",
-          "player432hz-appimage",
-          "powerliminalsplayer-appimage",
-          "yangdownloader-appimage"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/player432hz/appimage.official.stable.yaml",
-    "homepage": [
-      "https://github.com/mysteryx93/HanumanInstituteApps",
-      "https://github.com/mysteryx93/HanumanInstituteApps/wiki"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/player432hz/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/mysteryx93/HanumanInstituteApps"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/player432hz/appimage/official",
-    "provides": [
-      "converter432hz==Converter432Hz",
-      "player432hz==Player432Hz",
-      "powerliminalsplayer==PowerliminalsPlayer",
-      "yangdownloader==YangDownloader"
-    ],
-    "repology": [
-      "converter432hz",
-      "player432hz",
-      "powerliminalsplayer",
-      "yangdownloader"
-    ],
-    "src_url": [
-      "https://github.com/mysteryx93/HanumanInstituteApps"
-    ],
-    "tag": [
-      "encoding-videos",
-      "media-encoder",
-      "video-downloader",
-      "video-player",
-      "video-processing",
-      "youtube-downloader"
-    ]
   },
   {
     "_disabled": "false",
@@ -2418,7 +2464,7 @@
     "tag": [
       "sudo"
     ],
-    "version": "HEAD-b16a12b-250327T123351"
+    "version": "HEAD-c7c4379-250327T182237"
   },
   {
     "_disabled": "false",
@@ -2705,70 +2751,6 @@
       "minecraft"
     ],
     "version": "250301T010230"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wezterm",
-    "pkg_family": "wezterm",
-    "pkg_id": "github.com.wez.wezterm.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wezterm-stable/wezterm/wezterm",
-    "app_id": "org.wezfurlong.wezterm",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wezterm/appimage.official.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A GPU-accelerated cross-platform terminal emulator and multiplexer",
-    "distro_pkg": {
-      "alpine": [
-        "wezterm"
-      ],
-      "archlinux": {
-        "aur": [
-          "wezterm-git"
-        ],
-        "extra": [
-          "wezterm"
-        ]
-      },
-      "homebrew": [
-        "wezterm",
-        "wezterm@nightly"
-      ],
-      "nixpkgs": [
-        "wezterm"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/wezterm/appimage.official.stable.yaml",
-    "homepage": [
-      "https://wezfurlong.org/wezterm/"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/wezterm/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/wez/wezterm"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/wezterm/appimage/official",
-    "provides": [
-      "wezterm"
-    ],
-    "repology": [
-      "wezterm"
-    ],
-    "src_url": [
-      "https://github.com/wez/wezterm"
-    ],
-    "tag": [
-      "Terminal"
-    ]
   },
   {
     "_disabled": "true",
@@ -3275,7 +3257,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.10.2t(2025-03-25at23:03:24)"
+    "version": "Twilightbuild-1.10.3t(2025-03-27at14:52:33)"
   },
   {
     "_disabled": "false",

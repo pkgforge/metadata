@@ -43,7 +43,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b9e3bf6-250328T172605"
+    "version": "HEAD-6f11113-250329T141952"
   },
   {
     "_disabled": "false",
@@ -650,6 +650,78 @@
   },
   {
     "_disabled": "false",
+    "pkg": "aria2",
+    "pkg_family": "aria2",
+    "pkg_id": "github.com.aria2.aria2.continuous",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-continuous/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
+    "distro_pkg": {
+      "alpine": [
+        "aria2"
+      ],
+      "archlinux": {
+        "aur": [
+          "aria2-fast",
+          "aria2-git"
+        ],
+        "extra": [
+          "aria2"
+        ]
+      },
+      "debian": [
+        "aria2"
+      ],
+      "nixpkgs": [
+        "aria",
+        "aria2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "homepage": [
+      "https://aria2.github.io",
+      "https://github.com/aria2/aria2",
+      "https://aria2.sourceforge.net",
+      "https://sourceforge.net/projects/aria2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
+      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
+    ],
+    "provides": [
+      "aria2:aria2c"
+    ],
+    "repology": [
+      "aria2"
+    ],
+    "src_url": [
+      "https://github.com/abcfy2/aria2-static-build"
+    ],
+    "tag": [
+      "bittorrent",
+      "downloader"
+    ],
+    "version": "250329T014501"
+  },
+  {
+    "_disabled": "false",
     "pkg": "atuin",
     "pkg_family": "atuin",
     "pkg_id": "github.com.atuinsh.atuin",
@@ -908,6 +980,72 @@
       "shell"
     ],
     "version": "5.2p37"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "batcat",
+    "pkg_family": "bat",
+    "pkg_id": "github.com.sharkdp.bat",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sharkdp-bat/bat/batcat",
+    "bincache": "ghcr.io/pkgforge/bincache/bat/official/bat",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bat/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Cat clone with colors, syntax highlighting and git integration",
+    "distro_pkg": {
+      "alpine": [
+        "bat"
+      ],
+      "archlinux": {
+        "aur": [
+          "bat-cat-git"
+        ],
+        "extra": [
+          "bat"
+        ]
+      },
+      "debian": [
+        "rust-bat"
+      ],
+      "nixpkgs": [
+        "bat"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bat/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sharkdp/bat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sharkdp/bat"
+    ],
+    "provides": [
+      "bat==batcat"
+    ],
+    "repology": [
+      "bat-cat"
+    ],
+    "src_url": [
+      "https://github.com/sharkdp/bat"
+    ],
+    "tag": [
+      "cat",
+      "text-viewer"
+    ],
+    "version": "HEAD-ad8da94-250329T052711"
   },
   {
     "_disabled": "false",
@@ -1879,6 +2017,75 @@
       "git-commit"
     ],
     "version": "HEAD-e641002-250319T180822"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "colorized-logs",
+    "pkg_family": "colorized-logs",
+    "pkg_id": "github.com.kilobyte.colorized-logs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/colorized-logs/colorized-logs/colorized-logs",
+    "bincache": "ghcr.io/pkgforge/bincache/colorized-logs/official/ansi2html",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/colorized-logs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for logs with ANSI color",
+      "ansi2html": "ANSI to HTML converter [colorized-logs]",
+      "ansi2txt": "ANSI to plain text converter [colorized-logs]",
+      "pipetty": "Tool to pipe from a pseudoterminal [colorized-logs]",
+      "ttyrec2ansi": "TTYREC to ANSI converter [colorized-logs]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "colorized-logs"
+        ]
+      },
+      "debian": [
+        "colorized-logs"
+      ],
+      "nixpkgs": [
+        "colorized-logs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/colorized-logs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/kilobyte/colorized-logs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/kilobyte/colorized-logs"
+    ],
+    "provides": [
+      "ansi2html",
+      "ansi2txt",
+      "pipetty",
+      "ttyrec2ansi"
+    ],
+    "repology": [
+      "colorized-logs"
+    ],
+    "src_url": [
+      "https://github.com/kilobyte/colorized-logs"
+    ],
+    "tag": [
+      "ansii",
+      "logs"
+    ],
+    "version": "HEAD-8b75724-250329T033222"
   },
   {
     "_disabled": "false",
@@ -5673,7 +5880,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-90f3f3f-250329T000627"
+    "version": "HEAD-64368c9-250329T060257"
   },
   {
     "_disabled": "false",
@@ -7300,7 +7507,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9b36af9-250325T082957"
+    "version": "HEAD-0bdf4fe-250329T033135"
   },
   {
     "_disabled": "false",
@@ -8498,7 +8705,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-6327cc1-250328T191612"
+    "version": "HEAD-0cd352e-250329T050238"
   },
   {
     "_disabled": "false",
@@ -11563,6 +11770,79 @@
   },
   {
     "_disabled": "false",
+    "pkg": "ninja",
+    "pkg_family": "ninja",
+    "pkg_id": "ppkg.ninja",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-ninja/ninja/ninja",
+    "bincache": "ghcr.io/pkgforge/bincache/ninja/ppkg/ninja",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ninja/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Small build system with a focus on speed",
+    "distro_pkg": {
+      "alpine": [
+        "ninja",
+        "ninja-build"
+      ],
+      "archlinux": {
+        "aur": [
+          "ninja-git"
+        ],
+        "extra": [
+          "ninja"
+        ]
+      },
+      "debian": [
+        "ninja-build"
+      ],
+      "gnuguix": [
+        "ninja"
+      ],
+      "homebrew": [
+        "ninja"
+      ],
+      "nixpkgs": [
+        "ninja"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ninja/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://ninja-build.org",
+      "https://github.com/ninja-build/ninja"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "ninja"
+    ],
+    "repology": [
+      "ninja"
+    ],
+    "src_url": [
+      "https://github.com/ninja-build/ninja"
+    ],
+    "tag": [
+      "build"
+    ],
+    "version": "1.12.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "nmap",
     "pkg_family": "nmap",
     "pkg_id": "nixpkgs.nmap",
@@ -13907,7 +14187,7 @@
       "analyzer",
       "linter"
     ],
-    "version": "HEAD-bf38c3d-250325T130045"
+    "version": "HEAD-a7be6b5-250329T023916"
   },
   {
     "_disabled": "false",
@@ -17002,6 +17282,49 @@
   },
   {
     "_disabled": "false",
+    "pkg": "subxtract",
+    "pkg_family": "subxtract",
+    "pkg_id": "github.com.pkgforge-security.subxtract",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/security-subxtract/subxtract/subxtract",
+    "bincache": "ghcr.io/pkgforge/bincache/subxtract/official/subxtract",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/subxtract/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Extract TLD (Top-Level-Domains), Root Domains & More using public-suffix List",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/subxtract/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/pkgforge-security/subxtract"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge-security/subxtract"
+    ],
+    "provides": [
+      "subxtract"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-security/subxtract"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-b6beb31-250329T100217"
+  },
+  {
+    "_disabled": "false",
     "pkg": "syncat",
     "pkg_family": "syncat",
     "pkg_id": "github.com.foxfriends.syncat",
@@ -17254,7 +17577,7 @@
       "logfile",
       "tail"
     ],
-    "version": "HEAD-b873bda-250328T155506"
+    "version": "HEAD-3f2d435-250329T071509"
   },
   {
     "_disabled": "false",
@@ -18124,7 +18447,7 @@
       "busybox",
       "coreboot"
     ],
-    "version": "HEAD-7c7c514-250328T091119"
+    "version": "HEAD-584088f-250329T060616"
   },
   {
     "_disabled": "false",
@@ -19575,7 +19898,7 @@
     "tag": [
       "cp"
     ],
-    "version": "HEAD-9ab42f3-250329T114353"
+    "version": "HEAD-1bd7dbb-250329T160452"
   },
   {
     "_disabled": "false",

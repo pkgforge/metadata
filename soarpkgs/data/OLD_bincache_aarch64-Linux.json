@@ -6803,7 +6803,7 @@
       "ansii",
       "logs"
     ],
-    "version": "HEAD-2fb2ea5-240220T214511"
+    "version": "HEAD-8b75724-250329T033222"
   },
   {
     "_disabled": "false",
@@ -24271,6 +24271,103 @@
     "_disabled": "false",
     "pkg": "openssh",
     "pkg_family": "openssh",
+    "pkg_id": "nixpkgs.openssh",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-openssh/openssh/openssh",
+    "bincache": "ghcr.io/pkgforge/bincache/openssh/nixpkgs/scp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/openssh/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities and servers for secure shell connections",
+      "scp": "OpenSSH secure file copy [openssh]",
+      "sftp": "OpenSSH secure file transfer [openssh]",
+      "sftp-server": "OpenSSH SFTP server subsystem [openssh]",
+      "ssh": "OpenSSH remote login client [openssh]",
+      "ssh-add": "Add private key identities to the OpenSSH authentication agent [openssh]",
+      "ssh-agent": "OpenSSH authentication agent [openssh]",
+      "ssh-copy-id": "Use locally available keys to authorize logins on a remote machine [openssh]",
+      "sshd": "OpenSSH daemon [openssh]",
+      "sshd-session": "OpenSSH Privilege Separation [openssh]",
+      "ssh-keygen": "OpenSSH authentication key utility [openssh]",
+      "ssh-keyscan": "Gather SSH public keys from servers [openssh]",
+      "ssh-keysign": "OpenSSH helper for host-based authentication [openssh]",
+      "ssh-pkcs11-helper": "OpenSSH helper for PKCS#11 support [openssh]",
+      "ssh-sk-helper": "OpenSSH helper for FIDO authenticator support [openssh]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "openssh"
+      ],
+      "archlinux": {
+        "aur": [
+          "openssh-git"
+        ]
+      },
+      "debian": [
+        "openssh"
+      ],
+      "gnuguix": [
+        "openssh"
+      ],
+      "homebrew": [
+        "openssh"
+      ],
+      "nixpkgs": [
+        "openssh"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/openssh/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.openssh.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "scp",
+      "sftp",
+      "sftp-server",
+      "ssh",
+      "ssh-add",
+      "ssh-agent",
+      "ssh-copy-id",
+      "sshd",
+      "sshd-session",
+      "ssh-keygen",
+      "ssh-keyscan",
+      "ssh-keysign",
+      "ssh-pkcs11-helper",
+      "ssh-sk-helper"
+    ],
+    "repology": [
+      "openssh"
+    ],
+    "src_url": [
+      "https://github.com/openssh/openssh-portable"
+    ],
+    "tag": [
+      "ssh"
+    ],
+    "version": "9.9p2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "openssh",
+    "pkg_family": "openssh",
     "pkg_id": "ppkg.openssh",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-openssh/openssh/openssh",
@@ -36331,7 +36428,7 @@
     "tag": [
       "cp"
     ],
-    "version": "HEAD-9ab42f3-250329T114353"
+    "version": "HEAD-1bd7dbb-250329T160452"
   },
   {
     "_disabled": "false",

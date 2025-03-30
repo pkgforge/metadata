@@ -110,7 +110,7 @@ generate_meta()
  #Check if contains needed fields
   if jq -e 'map(select(.ghcr_pkg != null and .ghcr_pkg != "")) | length > 0' "${TMPDIR}/${TMPJSON}" > /dev/null; then
    #Get Tag
-     PKG_TAG="$(oras repo tags "ghcr.io/pkgforge/${PKG}" | grep -vE '^latest\.[0-9]{6}T[0-9]{6}\.' | grep -i "x86_64-Linux" | tail -n 1 | tr -d '[:space:]')"
+     PKG_TAG="$(oras repo tags "ghcr.io/pkgforge/${PKG}" | grep -viE '^\s*(latest|srcbuild)[.-][0-9]{6}T[0-9]{6}[.-]' | grep -i "x86_64-Linux" | tail -n 1 | tr -d '[:space:]')"
    #Check Tag 
      if [ -n "${PKG_TAG+x}" ] && [[ "${PKG_TAG}" =~ ^[^[:space:]]+$ ]]; then
      #Fetch Manifest

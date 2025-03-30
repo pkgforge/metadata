@@ -187,6 +187,9 @@ jobs:
         continue-on-error: true
 
       - name: Get GHCR Package Metadata
+        env:
+          GH_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ github.token }}"
         run: |
           #Presets
           set +x ; set +e

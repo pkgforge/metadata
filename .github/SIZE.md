@@ -1,5 +1,5 @@
 ```mathematica
-323M └─┬ main
+364M └─┬ main
 171M   ├─┬ misc
 171M   │ ├─┬ data
  69M   │ │ ├── ARCHLINUX.json
@@ -83,6 +83,7 @@
  32K   │   ├── gen_meta_x86_64-Linux.sh
  32K   │   ├── gen_meta_aarch64-Linux.sh
  12K   │   └── sync_hf_mirror.sh
+ 41M   ├── GHCR_PKGS.json
  31M   ├─┬ external
  11M   │ ├─┬ am
  11M   │ │ ├─┬ data

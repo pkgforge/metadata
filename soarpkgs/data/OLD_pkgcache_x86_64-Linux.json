@@ -500,6 +500,63 @@
   },
   {
     "_disabled": "false",
+    "pkg": "agregore",
+    "pkg_family": "agregore",
+    "pkg_id": "github.com.AgregoreWeb.agregore-browser",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/agregore-browser/agregore/agregore",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/agregore/appimage.official.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A minimal browser for the distributed web",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "agregore-browser-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/agregore/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/AgregoreWeb/agregore-browser"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/agregore/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/AgregoreWeb/agregore-browser"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/agregore/appimage/official",
+    "provides": [
+      "agregore"
+    ],
+    "repology": [
+      "agregore-browser"
+    ],
+    "src_url": [
+      "https://github.com/AgregoreWeb/agregore-browser"
+    ],
+    "tag": [
+      "browser",
+      "decentralization",
+      "dweb",
+      "hypercore-protocol",
+      "ipfs",
+      "p2p",
+      "ssb"
+    ],
+    "version": "v2.8.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "air-controller-desktop",
     "pkg_family": "air-controller-desktop",
     "pkg_id": "github.com.air-controller.air-controller-desktop",
@@ -1533,6 +1590,71 @@
     "_disabled": "false",
     "pkg": "discord",
     "pkg_family": "discord",
+    "pkg_id": "nixpkgs.discord-canary",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/discord-canary/discord/discord",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/nixappimage.nixpkgs.canary.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Canary)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord@canary"
+      ],
+      "nixpkgs": [
+        "discord-canary"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/nixappimage.nixpkgs.canary.yaml",
+    "homepage": [
+      "https://discordapp.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/discord/nixappimage/nixpkgs",
+    "provides": [
+      "discord=>discord-canary"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://discordapp.com"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "discord",
+    "pkg_family": "discord",
     "pkg_id": "nixpkgs.discord-development",
     "pkg_type": "nixappimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/discord-development/discord/discord",
@@ -1581,6 +1703,71 @@
     "pkgcache": "ghcr.io/pkgforge/pkgcache/discord/nixappimage/nixpkgs",
     "provides": [
       "discord=>discord-development"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://discordapp.com"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "discord",
+    "pkg_family": "discord",
+    "pkg_id": "nixpkgs.discord-ptb",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/discord-ptb/discord/discord",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/nixappimage.nixpkgs.ptb.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Public Test Beta)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord"
+      ],
+      "nixpkgs": [
+        "discord-ptb"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/nixappimage.nixpkgs.ptb.yaml",
+    "homepage": [
+      "https://discordapp.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/discord/nixappimage/nixpkgs",
+    "provides": [
+      "discord=>discord-ptb"
     ],
     "repology": [
       "discord"
@@ -3308,7 +3495,8 @@
     "tag": [
       "editor",
       "graphics"
-    ]
+    ],
+    "version": "1.4"
   },
   {
     "_disabled": "false",
@@ -6733,6 +6921,71 @@
       "Utility"
     ],
     "version": "5.1.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tmuxp",
+    "pkg_family": "tmuxp",
+    "pkg_id": "sharun.wrappe.pypi.tmuxp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-tmuxp/tmuxp/tmuxp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/tmuxp/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Manage tmux workspaces from JSON and YAML",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "tmuxp"
+        ]
+      },
+      "debian": [
+        "tmuxp"
+      ],
+      "homebrew": [
+        "tmuxp"
+      ],
+      "nixpkgs": [
+        "tmuxp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/tmuxp/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://tmuxp.git-pull.com",
+      "https://github.com/tmux-python/tmuxp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/tmuxp/archive/sharun",
+    "provides": [
+      "tmuxp"
+    ],
+    "repology": [
+      "tmuxp"
+    ],
+    "src_url": [
+      "https://pypi.org/project/tmuxp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.55.0"
   },
   {
     "_disabled": "false",

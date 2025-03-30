@@ -314,7 +314,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.79.8"
+    "version": "v1.79.9"
   },
   {
     "_disabled": "false",
@@ -953,7 +953,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "138.0.20250329091943"
+    "version": "138.0.20250329211620"
   },
   {
     "_disabled": "true",
@@ -1253,75 +1253,143 @@
   },
   {
     "_disabled": "false",
-    "pkg": "inkscape",
-    "pkg_family": "inkscape",
-    "pkg_id": "gitlab.com.inkscape.inkscape",
+    "pkg": "goverlay",
+    "pkg_family": "goverlay",
+    "pkg_id": "github.com.benjamimgois.goverlay.nightly",
     "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inkscape-inkscape/inkscape/inkscape",
-    "app_id": "org.inkscape.Inkscape",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/inkscape/appimage.official.stable.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goverlay-nightly/goverlay/goverlay",
+    "app_id": "io.github.benjamimgois.goverlay",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/goverlay/appimage.official.nightly.yaml",
     "category": [
-      "Graphics",
-      "Office"
+      "Utility"
     ],
-    "description": "FOSS Vector Graphics Editor",
+    "description": "GUI for configuring Vulkan/OpenGL overlays (nightly)",
     "distro_pkg": {
       "alpine": [
-        "inkscape"
+        "goverlay"
       ],
       "archlinux": {
         "aur": [
-          "inkscape-git"
+          "goverlay-git"
         ],
         "extra": [
-          "inkscape"
+          "goverlay"
         ]
       },
       "debian": [
-        "inkscape"
-      ],
-      "gnuguix": [
-        "inkscape"
-      ],
-      "homebrew": [
-        "inkscape"
+        "goverlay"
       ],
       "nixpkgs": [
-        "inkscape",
-        "inkscape-with-extensions"
+        "goverlay"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/inkscape/appimage.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/goverlay/appimage.official.nightly.yaml",
     "homepage": [
-      "https://inkscape.org"
+      "https://github.com/benjamimgois/goverlay"
     ],
     "host": [
       "x86_64-linux"
     ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/inkscape/assets/default.png",
+    "icon": "https://soarpkgs.pkgforge.dev/packages/goverlay/assets/default.png",
     "license": [
-      "GPL-2.0"
+      "GPL-3.0"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/inkscape/inkscape"
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/benjamimgois/goverlay"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/inkscape/appimage/official",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/goverlay/appimage/official",
     "provides": [
-      "inkscape"
+      "goverlay"
     ],
     "repology": [
-      "inkscape"
+      "goverlay"
     ],
     "src_url": [
-      "https://inkscape.org/release"
+      "https://github.com/benjamimgois/goverlay"
     ],
     "tag": [
-      "editor",
-      "graphics"
-    ]
+      "mangohud",
+      "overlay",
+      "replaysorcery",
+      "replay-sorcery",
+      "vkbasalt"
+    ],
+    "version": "250330T010632"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kdenlive",
+    "pkg_family": "kdenlive",
+    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
+    "app_id": "org.kde.kdenlive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
+    "category": [
+      "AudioVideoEditing"
+    ],
+    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
+    "distro_pkg": {
+      "alpine": [
+        "kdenlive"
+      ],
+      "archlinux": {
+        "aur": [
+          "kdenlive-appimage",
+          "kdenlive-git"
+        ],
+        "extra": [
+          "kdenlive"
+        ]
+      },
+      "debian": [
+        "kdenlive"
+      ],
+      "gnuguix": [
+        "kdenlive"
+      ],
+      "homebrew": [
+        "kdenlive"
+      ],
+      "nixpkgs": [
+        "kdePackages.kdenlive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
+    "homepage": [
+      "https://apps.kde.org/kdenlive",
+      "https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
+    "provides": [
+      "kdenlive"
+    ],
+    "repology": [
+      "kdenlive"
+    ],
+    "src_url": [
+      "https://kdenlive.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "2025-03-29"
   },
   {
     "_disabled": "false",
@@ -1394,7 +1462,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-03-28"
+    "version": "2025-03-29"
   },
   {
     "_disabled": "true",

@@ -1431,6 +1431,640 @@
     "version": "9.6"
   },
   {
+    "_disabled": "false",
+    "pkg": "coreutils_uutils",
+    "pkg_family": "coreutils",
+    "pkg_id": "github.com.uutils.coreutils.multicall",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-multicall/coreutils/coreutils_uutils",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils_uutils/multicall/coreutils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.multicall.uutils.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Cross-platform Rust rewrite of the GNU coreutils",
+      "[": "Check file types and compare values [coreutils-uutils]",
+      "arch": "Print machine hardware name (same as uname -m) [coreutils-uutils]",
+      "b2sum": "Compute and check BLAKE2 message digest [coreutils-uutils]",
+      "b3sum": "Compute and check BLAKE3 message digest [coreutils-uutils]",
+      "base32": "Base32 encode/decode data and print to standard output [coreutils-uutils]",
+      "base64": "Base64 encode/decode data and print to standard output [coreutils-uutils]",
+      "basename": "Strip directory and suffix from filenames [coreutils-uutils]",
+      "basenc": "Encode/decode data and print to standard output [coreutils-uutils]",
+      "cat": "Concatenate files and print on the standard output [coreutils-uutils]",
+      "chcon": "Change file security context [coreutils-uutils]",
+      "chgrp": "Change group ownership [coreutils-uutils]",
+      "chmod": "Change file owner and group [coreutils-uutils]",
+      "chown": "Change file owner and group [coreutils-uutils]",
+      "chroot": "Run command or interactive shell with special root directory [coreutils-uutils]",
+      "cksum": "Compute and verify file checksums [coreutils-uutils]",
+      "comm": "Compare two sorted files line by line [coreutils-uutils]",
+      "coreutils": "Multicall Binary for Coreutils: GNU File, Shell, and Text utilities",
+      "cp": "Copy files and directories [coreutils-uutils]",
+      "csplit": "Split a file into sections determined by context lines [coreutils-uutils]",
+      "cut": "Remove sections from each line of files [coreutils-uutils]",
+      "date": "Print or set the system date and time [coreutils-uutils]",
+      "dd": "Convert and Copy a file [coreutils-uutils]",
+      "df": "Report file system space usage [coreutils-uutils]",
+      "dir": "List directory contents [coreutils-uutils]",
+      "dircolors": "Color setup for ls [coreutils-uutils]",
+      "dirname": "Strip last component from file name [coreutils-uutils]",
+      "du": "Estimate file space usage [coreutils-uutils]",
+      "echo": "Display a line of text [coreutils-uutils]",
+      "env": "Run a program in a modified environment [coreutils-uutils]",
+      "expand": "Convert tabs to spaces [coreutils-uutils]",
+      "expr": "Evaluate expressions [coreutils-uutils]",
+      "factor": "Factor numbers [coreutils-uutils]",
+      "false": "Do nothing, unsuccessfully [coreutils-uutils]",
+      "fmt": "Simple optimal text formatter [coreutils-uutils]",
+      "fold": "Wrap each input line to fit in specified width [coreutils-uutils]",
+      "ginstall": "Copy files and set attributes [coreutils-uutils]",
+      "groups": "Print the groups a user is in [coreutils-uutils]",
+      "hashsum": "Compute and check message digests for many Algorithms",
+      "head": "Output the first part of files [coreutils-uutils]",
+      "hostid": "Print the numeric identifier for the current host [coreutils-uutils]",
+      "hostname": "Display or set the system's host name [coreutils-uutils]",
+      "id": "Print real and effective user and group IDs [coreutils-uutils]",
+      "install": "Copy files and set attributes [coreutils-uutils]",
+      "join": "Join lines of two files on a common field [coreutils-uutils]",
+      "kill": "Send a signal (default: TERM) to given PIDs [coreutils-uutils]",
+      "link": "Call the link function to create a link to a file [coreutils-uutils]",
+      "ln": "Make links between files [coreutils-uutils]",
+      "logname": "Print user's login name [coreutils-uutils]",
+      "ls": "List directory contents [coreutils-uutils]",
+      "make-prime-list": "Generate Prime Numbers [coreutils-uutils]",
+      "md5sum": "Compute and check MD5 message digest [coreutils-uutils]",
+      "mkdir": "Make directories [coreutils-uutils]",
+      "mkfifo": "Make FIFOs (named pipes) [coreutils-uutils]",
+      "mknod": "Make block or character special files [coreutils-uutils]",
+      "mktemp": "Create a temporary file or directory [coreutils-uutils]",
+      "mv": "Move (rename) files [coreutils-uutils]",
+      "nice": "Run a program with modified scheduling priority [coreutils-uutils]",
+      "nl": "Number lines of files [coreutils-uutils]",
+      "nohup": "Run a command immune to hangups, with output to a non-tty [coreutils-uutils]",
+      "nproc": "Print the number of processing units available [coreutils-uutils]",
+      "numfmt": "Convert numbers from/to human-readable strings [coreutils-uutils]",
+      "od": "Dump files in octal and other formats [coreutils-uutils]",
+      "paste": "Merge lines of files [coreutils-uutils]",
+      "pathchk": "Check whether file names are valid or portable [coreutils-uutils]",
+      "pinky": "Lightweight finger [coreutils-uutils]",
+      "pr": "Convert text files for printing [coreutils-uutils]",
+      "printenv": "Print all or part of environment [coreutils-uutils]",
+      "printf": "Format and print data [coreutils-uutils]",
+      "ptx": "Produce a permuted index of file contents [coreutils-uutils]",
+      "pwd": "Print name of current/working directory [coreutils-uutils]",
+      "readlink": "Print resolved symbolic links or canonical file names [coreutils-uutils]",
+      "realpath": "Print the resolved path [coreutils-uutils]",
+      "rm": "Remove files or directories [coreutils-uutils]",
+      "rmdir": "Remove empty directories [coreutils-uutils]",
+      "runcon": "Run command with specified security context [coreutils-uutils]",
+      "seq": "Print a sequence of numbers [coreutils-uutils]",
+      "sha1sum": "Compute and check SHA1 message digest [coreutils-uutils]",
+      "sha224sum": "Compute and check SHA224 message digest [coreutils-uutils]",
+      "sha256sum": "Compute and check SHA256 message digest [coreutils-uutils]",
+      "sha3sum": "Compute and check SHA3 message digest [coreutils-uutils]",
+      "sha3-224sum": "Compute and check SHA3-224 message digest [coreutils-uutils]",
+      "sha3-256sum": "Compute and check SHA3-256 message digest [coreutils-uutils]",
+      "sha3-384sum": "Compute and check SHA3-384 message digest [coreutils-uutils]",
+      "sha3-512sum": "Compute and check SHA3-512 message digest [coreutils-uutils]",
+      "sha384sum": "Compute and check SHA384 message digest [coreutils-uutils]",
+      "sha512sum": "Compute and check SHA512 message digest [coreutils-uutils]",
+      "shake128sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
+      "shake256sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
+      "shred": "Overwrite a file to hide its contents, and optionally delete it [coreutils-uutils]",
+      "shuf": "Generate random permutations [coreutils-uutils]",
+      "sleep": "Delay for a specified amount of time [coreutils-uutils]",
+      "sort": "Sort lines of text files [coreutils-uutils]",
+      "split": "Split a file into pieces [coreutils-uutils]",
+      "stat": "Display file or file system status [coreutils-uutils]",
+      "stdbuf": "Run COMMAND, with modified buffering operations for its standard streams [coreutils-uutils]",
+      "stty": "Change and print terminal line settings [coreutils-uutils]",
+      "sum": "Checksum and count the blocks in a file [coreutils-uutils]",
+      "sync": "Synchronize cached writes to persistent storage [coreutils-uutils]",
+      "tac": "Concatenate and print files in reverse [coreutils-uutils]",
+      "tail": "Output the last part of files [coreutils-uutils]",
+      "tee": "Read from standard input and write to standard output and files [coreutils-uutils]",
+      "test": "Check file types and compare values [coreutils-uutils]",
+      "timeout": "Run a command with a time limit [coreutils-uutils]",
+      "touch": "Change file timestamps [coreutils-uutils]",
+      "tr": "Translate or Delete characters [coreutils-uutils]",
+      "true": "Do nothing, successfully [coreutils-uutils]",
+      "truncate": "Shrink or extend the size of a file to the specified size [coreutils-uutils]",
+      "tsort": "Perform topological sort [coreutils-uutils]",
+      "tty": "Print the file name of the terminal connected to standard input [coreutils-uutils]",
+      "uname": "Print system information [coreutils-uutils]",
+      "unexpand": "Convert spaces to tabs [coreutils-uutils]",
+      "uniq": "Report or omit repeated lines [coreutils-uutils]",
+      "unlink": "Call the unlink function to remove the specified file [coreutils-uutils]",
+      "uptime": "Display the time since the last boot [coreutils-uutils]",
+      "users": "Print the user names of users currently logged in to the current host [coreutils-uutils]",
+      "vdir": "List directory contents [coreutils-uutils]",
+      "wc": "Print newline, word, and byte counts for each file [coreutils-uutils]",
+      "who": "Show who is logged on [coreutils-uutils]",
+      "whoami": "Print effective user name [coreutils-uutils]",
+      "yes": "Output a string repeatedly until killed [coreutils-uutils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "uutils",
+        "uutils-coreutils"
+      ],
+      "archlinux": {
+        "aur": [
+          "coreutils-uutils",
+          "uutils-coreutils-git"
+        ],
+        "extra": [
+          "uutils-coreutils"
+        ]
+      },
+      "debian": [
+        "rust-coreutils",
+        "rust-uucore"
+      ],
+      "gnuguix": [
+        "rust-uucore"
+      ],
+      "homebrew": [
+        "uutils-coreutils"
+      ],
+      "nixpkgs": [
+        "uutils-coreutils",
+        "uutils-coreutils-noprefix"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/coreutils/static.multicall.uutils.yaml",
+    "homepage": [
+      "https://uutils.github.io/coreutils/docs/index.html",
+      "https://github.com/uutils/coreutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/uutils/coreutils",
+      "This is the multicall version i.e all progs are symlinked"
+    ],
+    "provides": [
+      "coreutils==[",
+      "coreutils==[[",
+      "coreutils==arch",
+      "coreutils==b2sum",
+      "coreutils==b3sum",
+      "coreutils==base32",
+      "coreutils==base64",
+      "coreutils==basename",
+      "coreutils==basenc",
+      "coreutils==cat",
+      "coreutils==chgrp",
+      "coreutils==chmod",
+      "coreutils==chown",
+      "coreutils==chroot",
+      "coreutils==cksum",
+      "coreutils==comm",
+      "coreutils==cp",
+      "coreutils==csplit",
+      "coreutils==cut",
+      "coreutils==date",
+      "coreutils==dd",
+      "coreutils==df",
+      "coreutils==dir",
+      "coreutils==dircolors",
+      "coreutils==dirname",
+      "coreutils==du",
+      "coreutils==echo",
+      "coreutils==env",
+      "coreutils==expand",
+      "coreutils==expr",
+      "coreutils==factor",
+      "coreutils==false",
+      "coreutils==fmt",
+      "coreutils==fold",
+      "coreutils==groups",
+      "coreutils==hashsum",
+      "coreutils==head",
+      "coreutils==hostid",
+      "coreutils==hostname",
+      "coreutils==id",
+      "coreutils==install",
+      "coreutils==join",
+      "coreutils==kill",
+      "coreutils==link",
+      "coreutils==ln",
+      "coreutils==logname",
+      "coreutils==ls",
+      "coreutils==md5sum",
+      "coreutils==mkdir",
+      "coreutils==mkfifo",
+      "coreutils==mknod",
+      "coreutils==mktemp",
+      "coreutils==more",
+      "coreutils==mv",
+      "coreutils==nice",
+      "coreutils==nl",
+      "coreutils==nohup",
+      "coreutils==nproc",
+      "coreutils==numfmt",
+      "coreutils==od",
+      "coreutils==paste",
+      "coreutils==pathchk",
+      "coreutils==pinky",
+      "coreutils==pr",
+      "coreutils==printenv",
+      "coreutils==printf",
+      "coreutils==ptx",
+      "coreutils==pwd",
+      "coreutils==readlink",
+      "coreutils==realpath",
+      "coreutils==rm",
+      "coreutils==rmdir",
+      "coreutils==seq",
+      "coreutils==sha1sum",
+      "coreutils==sha224sum",
+      "coreutils==sha256sum",
+      "coreutils==sha3-224sum",
+      "coreutils==sha3-256sum",
+      "coreutils==sha3-384sum",
+      "coreutils==sha3-512sum",
+      "coreutils==sha384sum",
+      "coreutils==sha3sum",
+      "coreutils==sha512sum",
+      "coreutils==shake128sum",
+      "coreutils==shake256sum",
+      "coreutils==shred",
+      "coreutils==shuf",
+      "coreutils==sleep",
+      "coreutils==sort",
+      "coreutils==split",
+      "coreutils==stat",
+      "coreutils==stdbuf",
+      "coreutils==stty",
+      "coreutils==sum",
+      "coreutils==sync",
+      "coreutils==tac",
+      "coreutils==tail",
+      "coreutils==tee",
+      "coreutils==test",
+      "coreutils==timeout",
+      "coreutils==touch",
+      "coreutils==tr",
+      "coreutils==true",
+      "coreutils==truncate",
+      "coreutils==tsort",
+      "coreutils==tty",
+      "coreutils==uname",
+      "coreutils==unexpand",
+      "coreutils==uniq",
+      "coreutils==unlink",
+      "coreutils==uptime",
+      "coreutils==users",
+      "coreutils==vdir",
+      "coreutils==wc",
+      "coreutils==who",
+      "coreutils==whoami",
+      "coreutils==yes"
+    ],
+    "repology": [
+      "uutils-coreutils"
+    ],
+    "src_url": [
+      "https://github.com/uutils/coreutils"
+    ],
+    "tag": [
+      "bootstrap",
+      "busybox",
+      "coreutils"
+    ],
+    "version": "HEAD-aea2340-250330T112157"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "coreutils_uutils",
+    "pkg_family": "coreutils",
+    "pkg_id": "github.com.uutils.coreutils.standalone",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/coreutils-standalone/coreutils/coreutils_uutils",
+    "bincache": "ghcr.io/pkgforge/bincache/coreutils_uutils/standalone/arch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/coreutils/static.standalone.uutils.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Cross-platform Rust rewrite of the GNU coreutils",
+      "[": "Check file types and compare values [coreutils-uutils]",
+      "arch": "Print machine hardware name (same as uname -m) [coreutils-uutils]",
+      "b2sum": "Compute and check BLAKE2 message digest [coreutils-uutils]",
+      "b3sum": "Compute and check BLAKE3 message digest [coreutils-uutils]",
+      "base32": "Base32 encode/decode data and print to standard output [coreutils-uutils]",
+      "base64": "Base64 encode/decode data and print to standard output [coreutils-uutils]",
+      "basename": "Strip directory and suffix from filenames [coreutils-uutils]",
+      "basenc": "Encode/decode data and print to standard output [coreutils-uutils]",
+      "cat": "Concatenate files and print on the standard output [coreutils-uutils]",
+      "chcon": "Change file security context [coreutils-uutils]",
+      "chgrp": "Change group ownership [coreutils-uutils]",
+      "chmod": "Change file owner and group [coreutils-uutils]",
+      "chown": "Change file owner and group [coreutils-uutils]",
+      "chroot": "Run command or interactive shell with special root directory [coreutils-uutils]",
+      "cksum": "Compute and verify file checksums [coreutils-uutils]",
+      "comm": "Compare two sorted files line by line [coreutils-uutils]",
+      "coreutils": "Multicall Binary for Coreutils: GNU File, Shell, and Text utilities",
+      "cp": "Copy files and directories [coreutils-uutils]",
+      "csplit": "Split a file into sections determined by context lines [coreutils-uutils]",
+      "cut": "Remove sections from each line of files [coreutils-uutils]",
+      "date": "Print or set the system date and time [coreutils-uutils]",
+      "dd": "Convert and Copy a file [coreutils-uutils]",
+      "df": "Report file system space usage [coreutils-uutils]",
+      "dir": "List directory contents [coreutils-uutils]",
+      "dircolors": "Color setup for ls [coreutils-uutils]",
+      "dirname": "Strip last component from file name [coreutils-uutils]",
+      "du": "Estimate file space usage [coreutils-uutils]",
+      "echo": "Display a line of text [coreutils-uutils]",
+      "env": "Run a program in a modified environment [coreutils-uutils]",
+      "expand": "Convert tabs to spaces [coreutils-uutils]",
+      "expr": "Evaluate expressions [coreutils-uutils]",
+      "factor": "Factor numbers [coreutils-uutils]",
+      "false": "Do nothing, unsuccessfully [coreutils-uutils]",
+      "fmt": "Simple optimal text formatter [coreutils-uutils]",
+      "fold": "Wrap each input line to fit in specified width [coreutils-uutils]",
+      "ginstall": "Copy files and set attributes [coreutils-uutils]",
+      "groups": "Print the groups a user is in [coreutils-uutils]",
+      "hashsum": "Compute and check message digests for many Algorithms",
+      "head": "Output the first part of files [coreutils-uutils]",
+      "hostid": "Print the numeric identifier for the current host [coreutils-uutils]",
+      "hostname": "Display or set the system's host name [coreutils-uutils]",
+      "id": "Print real and effective user and group IDs [coreutils-uutils]",
+      "install": "Copy files and set attributes [coreutils-uutils]",
+      "join": "Join lines of two files on a common field [coreutils-uutils]",
+      "kill": "Send a signal (default: TERM) to given PIDs [coreutils-uutils]",
+      "link": "Call the link function to create a link to a file [coreutils-uutils]",
+      "ln": "Make links between files [coreutils-uutils]",
+      "logname": "Print user's login name [coreutils-uutils]",
+      "ls": "List directory contents [coreutils-uutils]",
+      "make-prime-list": "Generate Prime Numbers [coreutils-uutils]",
+      "md5sum": "Compute and check MD5 message digest [coreutils-uutils]",
+      "mkdir": "Make directories [coreutils-uutils]",
+      "mkfifo": "Make FIFOs (named pipes) [coreutils-uutils]",
+      "mknod": "Make block or character special files [coreutils-uutils]",
+      "mktemp": "Create a temporary file or directory [coreutils-uutils]",
+      "mv": "Move (rename) files [coreutils-uutils]",
+      "nice": "Run a program with modified scheduling priority [coreutils-uutils]",
+      "nl": "Number lines of files [coreutils-uutils]",
+      "nohup": "Run a command immune to hangups, with output to a non-tty [coreutils-uutils]",
+      "nproc": "Print the number of processing units available [coreutils-uutils]",
+      "numfmt": "Convert numbers from/to human-readable strings [coreutils-uutils]",
+      "od": "Dump files in octal and other formats [coreutils-uutils]",
+      "paste": "Merge lines of files [coreutils-uutils]",
+      "pathchk": "Check whether file names are valid or portable [coreutils-uutils]",
+      "pinky": "Lightweight finger [coreutils-uutils]",
+      "pr": "Convert text files for printing [coreutils-uutils]",
+      "printenv": "Print all or part of environment [coreutils-uutils]",
+      "printf": "Format and print data [coreutils-uutils]",
+      "ptx": "Produce a permuted index of file contents [coreutils-uutils]",
+      "pwd": "Print name of current/working directory [coreutils-uutils]",
+      "readlink": "Print resolved symbolic links or canonical file names [coreutils-uutils]",
+      "realpath": "Print the resolved path [coreutils-uutils]",
+      "rm": "Remove files or directories [coreutils-uutils]",
+      "rmdir": "Remove empty directories [coreutils-uutils]",
+      "runcon": "Run command with specified security context [coreutils-uutils]",
+      "seq": "Print a sequence of numbers [coreutils-uutils]",
+      "sha1sum": "Compute and check SHA1 message digest [coreutils-uutils]",
+      "sha224sum": "Compute and check SHA224 message digest [coreutils-uutils]",
+      "sha256sum": "Compute and check SHA256 message digest [coreutils-uutils]",
+      "sha3sum": "Compute and check SHA3 message digest [coreutils-uutils]",
+      "sha3-224sum": "Compute and check SHA3-224 message digest [coreutils-uutils]",
+      "sha3-256sum": "Compute and check SHA3-256 message digest [coreutils-uutils]",
+      "sha3-384sum": "Compute and check SHA3-384 message digest [coreutils-uutils]",
+      "sha3-512sum": "Compute and check SHA3-512 message digest [coreutils-uutils]",
+      "sha384sum": "Compute and check SHA384 message digest [coreutils-uutils]",
+      "sha512sum": "Compute and check SHA512 message digest [coreutils-uutils]",
+      "shake128sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
+      "shake256sum": "Compute and check SHAKE-128 message digest [coreutils-uutils]",
+      "shred": "Overwrite a file to hide its contents, and optionally delete it [coreutils-uutils]",
+      "shuf": "Generate random permutations [coreutils-uutils]",
+      "sleep": "Delay for a specified amount of time [coreutils-uutils]",
+      "sort": "Sort lines of text files [coreutils-uutils]",
+      "split": "Split a file into pieces [coreutils-uutils]",
+      "stat": "Display file or file system status [coreutils-uutils]",
+      "stdbuf": "Run COMMAND, with modified buffering operations for its standard streams [coreutils-uutils]",
+      "stty": "Change and print terminal line settings [coreutils-uutils]",
+      "sum": "Checksum and count the blocks in a file [coreutils-uutils]",
+      "sync": "Synchronize cached writes to persistent storage [coreutils-uutils]",
+      "tac": "Concatenate and print files in reverse [coreutils-uutils]",
+      "tail": "Output the last part of files [coreutils-uutils]",
+      "tee": "Read from standard input and write to standard output and files [coreutils-uutils]",
+      "test": "Check file types and compare values [coreutils-uutils]",
+      "timeout": "Run a command with a time limit [coreutils-uutils]",
+      "touch": "Change file timestamps [coreutils-uutils]",
+      "tr": "Translate or Delete characters [coreutils-uutils]",
+      "true": "Do nothing, successfully [coreutils-uutils]",
+      "truncate": "Shrink or extend the size of a file to the specified size [coreutils-uutils]",
+      "tsort": "Perform topological sort [coreutils-uutils]",
+      "tty": "Print the file name of the terminal connected to standard input [coreutils-uutils]",
+      "uname": "Print system information [coreutils-uutils]",
+      "unexpand": "Convert spaces to tabs [coreutils-uutils]",
+      "uniq": "Report or omit repeated lines [coreutils-uutils]",
+      "unlink": "Call the unlink function to remove the specified file [coreutils-uutils]",
+      "uptime": "Display the time since the last boot [coreutils-uutils]",
+      "users": "Print the user names of users currently logged in to the current host [coreutils-uutils]",
+      "vdir": "List directory contents [coreutils-uutils]",
+      "wc": "Print newline, word, and byte counts for each file [coreutils-uutils]",
+      "who": "Show who is logged on [coreutils-uutils]",
+      "whoami": "Print effective user name [coreutils-uutils]",
+      "yes": "Output a string repeatedly until killed [coreutils-uutils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "uutils",
+        "uutils-coreutils"
+      ],
+      "archlinux": {
+        "aur": [
+          "coreutils-uutils",
+          "uutils-coreutils-git"
+        ],
+        "extra": [
+          "uutils-coreutils"
+        ]
+      },
+      "debian": [
+        "rust-coreutils",
+        "rust-uucore"
+      ],
+      "gnuguix": [
+        "rust-uucore"
+      ],
+      "homebrew": [
+        "uutils-coreutils"
+      ],
+      "nixpkgs": [
+        "uutils-coreutils",
+        "uutils-coreutils-noprefix"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/coreutils/static.standalone.uutils.yaml",
+    "homepage": [
+      "https://uutils.github.io/coreutils/docs/index.html",
+      "https://github.com/uutils/coreutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/uutils/coreutils",
+      "This is the standalone version i.e all progs are built individually"
+    ],
+    "provides": [
+      "arch",
+      "b2sum",
+      "b3sum",
+      "base32",
+      "base64",
+      "basename",
+      "basenc",
+      "cat",
+      "chgrp",
+      "chmod",
+      "chown",
+      "chroot",
+      "cksum",
+      "comm",
+      "coreutils",
+      "cp",
+      "csplit",
+      "cut",
+      "date",
+      "dd",
+      "df",
+      "dir",
+      "dircolors",
+      "dirname",
+      "du",
+      "echo",
+      "env",
+      "expand",
+      "expr",
+      "factor",
+      "false",
+      "fmt",
+      "fold",
+      "groups",
+      "hashsum",
+      "head",
+      "hostid",
+      "hostname",
+      "id",
+      "install",
+      "join",
+      "kill",
+      "link",
+      "ln",
+      "logname",
+      "ls",
+      "md5sum",
+      "mkdir",
+      "mkfifo",
+      "mknod",
+      "mktemp",
+      "more",
+      "mv",
+      "nice",
+      "nl",
+      "nohup",
+      "nproc",
+      "numfmt",
+      "od",
+      "paste",
+      "pathchk",
+      "pinky",
+      "pr",
+      "printenv",
+      "printf",
+      "ptx",
+      "pwd",
+      "readlink",
+      "realpath",
+      "rm",
+      "rmdir",
+      "seq",
+      "sha1sum",
+      "sha224sum",
+      "sha256sum",
+      "sha3-224sum",
+      "sha3-256sum",
+      "sha3-384sum",
+      "sha3-512sum",
+      "sha384sum",
+      "sha3sum",
+      "sha512sum",
+      "shake128sum",
+      "shake256sum",
+      "shred",
+      "shuf",
+      "sleep",
+      "sort",
+      "split",
+      "stat",
+      "stdbuf",
+      "stty",
+      "sum",
+      "sync",
+      "tac",
+      "tail",
+      "tee",
+      "test==[",
+      "test==[[",
+      "timeout",
+      "touch",
+      "tr",
+      "true",
+      "truncate",
+      "tsort",
+      "tty",
+      "uname",
+      "unexpand",
+      "uniq",
+      "unlink",
+      "uptime",
+      "users",
+      "vdir",
+      "wc",
+      "who",
+      "whoami",
+      "yes"
+    ],
+    "repology": [
+      "uutils-coreutils"
+    ],
+    "src_url": [
+      "https://github.com/uutils/coreutils"
+    ],
+    "tag": [
+      "bootstrap",
+      "busybox",
+      "coreutils"
+    ],
+    "version": "HEAD-aea2340-250330T112157"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": [
       "Too Slow & Expensive"
@@ -2015,7 +2649,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-52ed444-250330T012811"
+    "version": "HEAD-737120a-250330T035627"
   },
   {
     "_disabled": "false",
@@ -2573,6 +3207,149 @@
   },
   {
     "_disabled": "false",
+    "pkg": "eza",
+    "pkg_family": "eza",
+    "pkg_id": "github.com.eza-community.eza",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/community-eza/eza/eza",
+    "bincache": "ghcr.io/pkgforge/bincache/eza/official/eza",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/eza/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A modern replacement for ls",
+    "distro_pkg": {
+      "alpine": [
+        "eza"
+      ],
+      "archlinux": {
+        "aur": [
+          "eza-git"
+        ],
+        "extra": [
+          "eza"
+        ]
+      },
+      "debian": [
+        "rust-eza"
+      ],
+      "nixpkgs": [
+        "eza"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/eza/static.official.source.yaml",
+    "homepage": [
+      "https://eza.rocks",
+      "https://github.com/eza-community/eza"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/eza-community/eza"
+    ],
+    "repology": [
+      "eza"
+    ],
+    "src_url": [
+      "https://github.com/eza-community/eza"
+    ],
+    "tag": [
+      "ls"
+    ],
+    "version": "HEAD-5500c4e-250330T103021"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "github.com.fastfetch-cli.fastfetch",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-fastfetch/fastfetch/fastfetch",
+    "bincache": "ghcr.io/pkgforge/bincache/fastfetch/official/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fastfetch/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fastfetch/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fastfetch-cli/fastfetch",
+      "Related Discussion: https://github.com/fastfetch-cli/fastfetch/issues/808",
+      "This version contains a limited set of features due to static linking",
+      "Please use the version from pkgcache if all features are needed"
+    ],
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "HEAD-f34d51d-250330T163854"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ffmpeg",
     "pkg_family": "ffmpeg",
     "pkg_id": "github.com.wader.static-ffmpeg.stable",
@@ -2697,6 +3474,77 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fzf",
+    "pkg_family": "fzf",
+    "pkg_id": "github.com.junegunn.fzf",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/junegunn-fzf/fzf/fzf",
+    "bincache": "ghcr.io/pkgforge/bincache/fzf/official/fzf",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fzf/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "General-purpose command-line fuzzy finder",
+    "distro_pkg": {
+      "alpine": [
+        "fzf"
+      ],
+      "archlinux": {
+        "aur": [
+          "fzf-git"
+        ],
+        "extra": [
+          "fzf"
+        ]
+      },
+      "debian": [
+        "fzf"
+      ],
+      "gnuguix": [
+        "fzf"
+      ],
+      "homebrew": [
+        "fzf"
+      ],
+      "nixpkgs": [
+        "fzf"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fzf/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/junegunn/fzf"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/junegunn/fzf"
+    ],
+    "provides": [
+      "fzf"
+    ],
+    "repology": [
+      "fzf"
+    ],
+    "src_url": [
+      "https://github.com/junegunn/fzf"
+    ],
+    "tag": [
+      "fzf"
+    ],
+    "version": "v0.61.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "gfx",
     "pkg_family": "gfx",
     "pkg_id": "github.com.dwisiswant0.gfx",
@@ -2792,7 +3640,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-477c0a6-250330T060316"
+    "version": "HEAD-2e027a6-250330T120310"
   },
   {
     "_disabled": "false",
@@ -2857,7 +3705,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-5cb5337-250330T134316"
+    "version": "HEAD-5fa79d9-250330T153408"
   },
   {
     "_disabled": "false",
@@ -3875,7 +4723,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-328f90e-250330T030805"
+    "version": "HEAD-a39c318-250330T133423"
   },
   {
     "_disabled": "false",
@@ -6301,7 +7149,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-cc5c47a-250330T000852"
+    "version": "HEAD-67f7ffd-250330T062006"
   },
   {
     "_disabled": "false",
@@ -8408,7 +9256,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-334cf18-250329T071644"
+    "version": "HEAD-6d1f7cb-250330T065152"
   },
   {
     "_disabled": "false",
@@ -8472,7 +9320,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-334cf18-250329T071644"
+    "version": "HEAD-6d1f7cb-250330T065152"
   },
   {
     "_disabled": "false",
@@ -11650,7 +12498,7 @@
       "interpreter",
       "ryelang"
     ],
-    "version": "v0.0.55"
+    "version": "v0.0.80"
   },
   {
     "_disabled": "false",
@@ -12750,7 +13598,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-03fb746-250328T220423"
+    "version": "HEAD-2e22c04-250330T141845"
   },
   {
     "_disabled": "false",
@@ -13945,7 +14793,7 @@
       "logfile",
       "tail"
     ],
-    "version": "HEAD-aff3224-250329T075559"
+    "version": "HEAD-a0a12d7-250330T140750"
   },
   {
     "_disabled": "false",

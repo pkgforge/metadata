@@ -126,6 +126,87 @@
   },
   {
     "_disabled": "false",
+    "pkg": "android-tools",
+    "pkg_family": "android-tools",
+    "pkg_id": "github.com.pkgforge-dev.android-tools-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/android-tools/android-tools",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/android-tools/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Android SDK Platform-Tools (adb, fastboot & more)",
+      "adb": "Android Debug Bridge (adb) to communicate with an emulator instance or connected Android-powered device [android-tools]",
+      "etc1tool": "Encode/Decode PNG images to & from the ETC1 compression standard [android-tools]",
+      "fastboot": "Android flashing and booting utility [android-tools]",
+      "hprof-conv": "HPROF Converter [android-tools]",
+      "make_f2fs": "Tool to create a flash-friendly F2FS file system [android-tools]",
+      "make_f2fs_casefold": "Version of make_f2fs with casefolding support for file systems [android-tools]",
+      "mke2fs": "Utility to create ext2, ext3, or ext4 file systems [android-tools]",
+      "sqlite3": "Command-line interface for SQLite databases [android-tools]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "android-tools"
+      ],
+      "archlinux": {
+        "extra": [
+          "android-tools"
+        ]
+      },
+      "debian": [
+        "android-tools"
+      ],
+      "nixpkgs": [
+        "android-tools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/android-tools/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://android.googlesource.com/platform/tools/base",
+      "https://github.com/pkgforge-dev/android-tools-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/android-tools/assets/default.png",
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Samueru-sama (https://github.com/Samueru-sama)"
+    ],
+    "note": [
+      "Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/android-tools-AppImage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/android-tools/appimage/pkgforge-dev",
+    "provides": [
+      "android-tools=>adb",
+      "android-tools=>etc1tool",
+      "android-tools=>fastboot",
+      "android-tools=>hprof-conv",
+      "android-tools=>make_f2fs",
+      "android-tools=>make_f2fs_casefold",
+      "android-tools=>mke2fs",
+      "android-tools=>sqlite3"
+    ],
+    "repology": [
+      "android-tools"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/android-tools-AppImage"
+    ],
+    "tag": [
+      "adb",
+      "android-tools",
+      "utils"
+    ],
+    "version": "36.0.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "awscli",
     "pkg_family": "awscli",
     "pkg_id": "sharun.wrappe.pypi.awscli",
@@ -437,7 +518,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "1.76.74"
+    "version": "1.76.81"
   },
   {
     "_disabled": "false",
@@ -577,6 +658,65 @@
       "browser"
     ],
     "version": "134.0.6998.165"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "commix",
+    "pkg_family": "commix",
+    "pkg_id": "sharun.wrappe.pypi.commix",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-commix/commix/commix",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/commix/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Automated All-in-One OS Command Injection and Exploitation Tool",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "commix"
+        ]
+      },
+      "nixpkgs": [
+        "commix"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/commix/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://commixproject.com",
+      "https://github.com/commixproject/commix"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/commix/archive/sharun",
+    "provides": [
+      "commix"
+    ],
+    "repology": [
+      "commix"
+    ],
+    "src_url": [
+      "https://github.com/commixproject/commix"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-7f82a22-250330T094417"
   },
   {
     "_disabled": "false",
@@ -953,7 +1093,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "138.0.20250329211620"
+    "version": "138.0.20250330093237"
   },
   {
     "_disabled": "true",
@@ -1389,7 +1529,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-03-29"
+    "version": "2025-03-30"
   },
   {
     "_disabled": "false",

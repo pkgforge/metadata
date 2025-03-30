@@ -39,8 +39,10 @@ jobs:
           #temp
           SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
           echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          echo "GH_PAGER=" >> "${GITHUB_ENV}"
           echo "GIT_TERMINAL_PROMPT=0" >> "${GITHUB_ENV}"
           echo "GIT_ASKPASS=/bin/echo" >> "${GITHUB_ENV}"
+          gh config set prompt disabled
           git config --global "user.email" "AjamX101@gmail.com"
           git config --global "user.name" "Azathothas"
           ##User-Agent
@@ -182,6 +184,26 @@ jobs:
           ##Gif
           cd "${GITHUB_WORKSPACE}/main"
           sed -E "s~(https://soar\.pkgforge\.dev/gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g" -i "${GITHUB_WORKSPACE}/main/README.md"
+        continue-on-error: true
+
+      - name: Get GHCR Package Metadata
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          echo -e "\n[+] Fetching Package List <== https://github.com/orgs/pkgforge/packages\n"
+          for i in {1..10}; do
+            gh api "/orgs/pkgforge/packages?package_type=container" --paginate 2>/dev/null |& cat - > "${SYSTMP}/ghcr_pkgs.tmp.json"
+            unset PKG_GH_TMP; PKG_GH_TMP="$(jq -r '.[] | select(.visibility=="public") | .name' "${SYSTMP}/ghcr_pkgs.tmp.json" 2>/dev/null | grep -iv 'null' | sort -u | wc -l | tr -cd '0-9')"
+            if [[ "${PKG_GH_TMP}" -lt 50 ]]; then
+              echo "Retrying... ${i}/10"
+              sleep 2
+            elif [[ "${PKG_GH_TMP}" -gt 50 ]]; then
+              cat "${SYSTMP}/ghcr_pkgs.tmp.json" | jq . > "${GITHUB_WORKSPACE}/main/GHCR_PKGS.json"
+              break
+            fi
+          done
         continue-on-error: true
 
       - name: Get DateTime & Purge files (=> 95 MB)

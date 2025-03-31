@@ -117,10 +117,10 @@
 304K   │ │ │ ├── x86_64-Linux.db.cba
 284K   │ │ │ ├── x86_64-Linux.json.cba
 244K   │ │ │ ├── x86_64-Linux.db.zstd
-232K   │ │ │ ├── x86_64-Linux.db.xz
+236K   │ │ │ ├── x86_64-Linux.db.xz
 220K   │ │ │ ├── x86_64-Linux.json.zstd
 208K   │ │ │ ├── x86_64-Linux.json.xz
-128K   │ │ │ ├── aarch64-Linux.db.cba
+132K   │ │ │ ├── aarch64-Linux.db.cba
 124K   │ │ │ ├── aarch64-Linux.json.cba
 108K   │ │ │ ├── aarch64-Linux.db.zstd
 100K   │ │ │ ├── aarch64-Linux.db.xz

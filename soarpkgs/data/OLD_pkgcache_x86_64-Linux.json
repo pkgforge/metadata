@@ -2244,6 +2244,74 @@
     "version": "5.0.0"
   },
   {
+    "_disabled": "false",
+    "pkg": "ghidra",
+    "pkg_family": "ghidra",
+    "pkg_id": "runimage.cachyos.ghidra",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-ghidra/ghidra/ghidra",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghidra/runimage.cachyos.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Software reverse engineering (SRE) suite of tools",
+    "distro_pkg": {
+      "alpine": [
+        "ghidra"
+      ],
+      "archlinux": {
+        "aur": [
+          "ghidra-git"
+        ],
+        "extra": [
+          "ghidra"
+        ]
+      },
+      "homebrew": [
+        "ghidra"
+      ],
+      "nixpkgs": [
+        "ghidra",
+        "ghidra-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghidra/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://ghidra-sre.org",
+      "https://github.com/NationalSecurityAgency/ghidra"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/ghidra/assets/default.png",
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghidra/runimage/cachyos",
+    "provides": [
+      "ghidra"
+    ],
+    "repology": [
+      "ghidra"
+    ],
+    "src_url": [
+      "https://aur.archlinux.org/packages/ghidra-git-bin"
+    ],
+    "tag": [
+      "Security"
+    ],
+    "version": "11.3.1"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "replaced": [
@@ -5259,6 +5327,80 @@
   },
   {
     "_disabled": "false",
+    "pkg": "proxychains",
+    "pkg_family": "proxychains",
+    "pkg_id": "sharun.wrappe.alpine.proxychains",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-proxychains/proxychains/proxychains",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/proxychains/archive.sharun.alpine.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Redirect any TCP connection through a proxy or proxy chain",
+    "distro_pkg": {
+      "alpine": [
+        "proxychains-ng"
+      ],
+      "archlinux": {
+        "aur": [
+          "proxychains-ng-git"
+        ],
+        "extra": [
+          "proxychains-ng"
+        ]
+      },
+      "debian": [
+        "proxychains-ng"
+      ],
+      "gnuguix": [
+        "proxychains-ng"
+      ],
+      "homebrew": [
+        "proxychains-ng"
+      ],
+      "nixpkgs": [
+        "proxychains-ng"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/proxychains/archive.sharun.alpine.yaml",
+    "homepage": [
+      "https://github.com/rofl0r/proxychains-ng"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [alpine]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/proxychains/archive/sharun",
+    "provides": [
+      "proxychains==proxychains-ng",
+      "proxychains-daemon==proxychains-ng-daemon"
+    ],
+    "repology": [
+      "proxychains-ng"
+    ],
+    "src_url": [
+      "https://github.com/rofl0r/proxychains-ng"
+    ],
+    "tag": [
+      "proxy"
+    ],
+    "version": "4.17"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ps_mem",
     "pkg_family": "ps_mem",
     "pkg_id": "sharun.wrappe.pypi.ps_mem",
@@ -7669,5 +7811,80 @@
       "www-client"
     ],
     "version": "1.0.2-b.5"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zerotier",
+    "pkg_family": "zerotier",
+    "pkg_id": "sharun.wrappe.zerotier.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zerotier-stable/zerotier/zerotier",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zerotier/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "A Smart Ethernet Switch for Earth",
+      "zerotier-cli": "Control local ZeroTier virtual network service [zerotier]",
+      "zerotier-idtool": "Tool for creating and manipulating ZeroTier identities [zerotier]",
+      "zerotier-one": "Connect a Unix system to ZeroTier networks as virtual ports [zerotier]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "zerotier-one"
+      ],
+      "archlinux": {
+        "aur": [
+          "zerotier-one-git"
+        ],
+        "extra": [
+          "zerotier-one"
+        ]
+      },
+      "homebrew": [
+        "zerotier-one"
+      ],
+      "nixpkgs": [
+        "zerotierone"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zerotier/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://www.zerotier.com",
+      "https://github.com/zerotier/ZeroTierOne"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BUSL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zerotier/archive/sharun",
+    "provides": [
+      "zerotier-cli",
+      "zerotier-idtool",
+      "zerotier-one"
+    ],
+    "repology": [
+      "zerotier-one"
+    ],
+    "src_url": [
+      "https://github.com/zerotier/ZeroTierOne"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.14.2"
   }
 ]

@@ -1,8 +1,8 @@
 ```mathematica
- 365M └─┬ main
- 171M   ├─┬ misc
- 171M   │ ├─┬ data
-  69M   │ │ ├── ARCHLINUX.json
+ 367M └─┬ main
+ 173M   ├─┬ misc
+ 173M   │ ├─┬ data
+  71M   │ │ ├── ARCHLINUX.json
   36M   │ │ ├── FLATPAK_APPSTREAM.xml
   23M   │ │ ├── DEBIAN.json
   10M   │ │ ├── ALPINE_PKG.json
@@ -42,8 +42,8 @@
  9.6M   │ │ ├── x86_64-Linux.sdb
  9.3M   │ │ ├── aarch64-Linux.sdb
  1.2M   │ │ ├── x86_64-Linux.db.cba
- 1.1M   │ │ ├── aarch64-Linux.db.cba
  1.1M   │ │ ├── x86_64-Linux.sdb.cba
+ 1.1M   │ │ ├── aarch64-Linux.db.cba
  1.1M   │ │ ├── x86_64-Linux.json.cba
  1.1M   │ │ ├── aarch64-Linux.sdb.cba
  1.0M   │ │ ├── aarch64-Linux.json.cba
@@ -228,7 +228,7 @@
  160K   │ │ ├── INDEX.db.xz
  128K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
   88K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
-  60K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+  64K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   48K   │ │ ├── URLS.txt
   28K   │ │ ├── GH_REPO_ARCHIVED.md
   24K   │ │ ├── DIFF_bincache.json

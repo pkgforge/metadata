@@ -206,6 +206,7 @@ jobs:
               sleep 2
             elif [[ "${PKG_GH_TMP}" -gt 50 ]]; then
               cat "${SYSTMP}/ghcr_pkgs.tmp.json" | jq . > "${GITHUB_WORKSPACE}/main/GHCR_PKGS.json"
+              zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/GHCR_PKGS.json" -o "${GITHUB_WORKSPACE}/main/GHCR_PKGS.json.zstd"
               break
             fi
           done

@@ -174,6 +174,7 @@ if [ -s "${SYSTMP}/ARCHLINUX.json" ] &&\
   cd "${GITHUB_WORKSPACE}/main"
  #Git pull
   git pull origin main --no-edit 2>/dev/null
+  git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
  #Copy (GitHub)
   cp -fv "${SYSTMP}/ARCHLINUX.json" "${GITHUB_WORKSPACE}/main/misc/data/ARCHLINUX.json"
  ##rClone

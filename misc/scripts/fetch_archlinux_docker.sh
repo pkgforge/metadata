@@ -13,6 +13,12 @@ if [ -d "${GITHUB_WORKSPACE}" ] &&\
     docker cp "archlinux:/tmp/ARCHLINUX.json" "$(realpath . | tr -d '[:space:]')/ARCHLINUX.json"
     cp -fv "./ARCHLINUX.json" "${SYSTMP}/ARCHLINUX.json"
     if [[ -s "${SYSTMP}/ARCHLINUX.json" ]] && [[ $(stat -c%s "${SYSTMP}/ARCHLINUX.json") -gt 1000 ]]; then
+    #chdir to Repo
+     cd "${GITHUB_WORKSPACE}/main"
+    #Git pull
+     git pull origin main --no-edit 2>/dev/null
+     git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
+    #Copy
      cp -fv "${SYSTMP}/ARCHLINUX.json" "${GITHUB_WORKSPACE}/main/misc/data/ARCHLINUX.json"
      #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/ARCHLINUX.json" "r2:/meta/misc/ARCHLINUX.json" --checksum --check-first --user-agent="${USER_AGENT}"
     fi

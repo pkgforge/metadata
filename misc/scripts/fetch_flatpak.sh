@@ -10,6 +10,8 @@
 #   "${SYSTMP}/FLATPAK_TRENDING.json"
 ## Self: https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_flatpak.sh
 # bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_flatpak.sh")
+##Source:
+# https://github.com/flathub-infra/website/blob/main/frontend/src/env.ts
 #-------------------------------------------------------#
 
 
@@ -103,9 +105,9 @@ if [[ -f "${TMPDIR}/FLATPAK_APPS.tmp.txt" ]] && [[ $(stat -c%s "${TMPDIR}/FLATPA
    fi
 fi
 #Fetch AppStream IDs
-curl -A "${USER_AGENT}" -qfsSL "https://flathub.org/api/v2/appstream" | jq -r '.[]' > "${SYSTMP}/FLATPAK_APP_IDS.txt"
+curl -A "${USER_AGENT}" -qfsSL --retry 3 --retry-all-errors "https://flathub.org/api/v2/appstream" | jq -r '.[]' > "${SYSTMP}/FLATPAK_APP_IDS.txt"
 #Fetch Popular Apps
-curl -A "${USER_AGENT}" -qfsSL "https://flathub.org/api/v2/popular/last-month?locale=en" | jq '
+curl -A "${USER_AGENT}" -qfsSL --retry 3 --retry-all-errors "https://flathub.org/api/v2/collection/popular?locale=en" | jq '
 [.hits[] | {
   pkg: (.name // ""),
   app_id: (.app_id // ""),
@@ -133,7 +135,7 @@ if jq --exit-status . "${TMPDIR}/FLATPAK_POPULAR.json" >/dev/null 2>&1; then
  cp -fv "${TMPDIR}/FLATPAK_POPULAR.json" "${SYSTMP}/FLATPAK_POPULAR.json"
 fi
 #Fetch Trending Apps
-curl -A "${USER_AGENT}" -qfsSL "https://flathub.org/api/v2/trending/last-two-weeks?locale=en" | jq '
+curl -A "${USER_AGENT}" -qfsSL "https://flathub.org/api/v2/collection/trending?locale=en" | jq '
 [.hits[] | {
   pkg: (.name // ""),
   app_id: (.app_id // ""),

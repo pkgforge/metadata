@@ -10,7 +10,7 @@
 #-------------------------------------------------------#
 ##ENV
 sudo pacman -Syy --noconfirm
-sudo pacman -S coreutils curl findutils jq grep pacman-contrib sed --noconfirm
+sudo pacman -S coreutils curl findutils jq grep pacman-contrib sed --needed --noconfirm
 export TZ="UTC"
 SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
 TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
@@ -108,9 +108,12 @@ process_package()
 }
 export -f process_package
 #Generate
-pacman -Ss '' | awk -F'/' '/\// {split($2, pkg, " "); print pkg[1]}' | grep -v '^\s*$' | sort -u | xargs -P "$(($(nproc)+1))" -I "{}" bash -c 'process_package "$@"' _ "{}" >> "${TMPDIR}/ARCH.json.raw"
+pacman -Ss '' | awk -F'/' '/\// {split($2, pkg, " "); print pkg[1]}' |\
+   sed "s/[\'\"']//g" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | grep -v '^\s*$' | sort -u |\
+   xargs -P "$(($(nproc)+1))" -I "{}" bash -c 'process_package "$@" 2>/dev/null' _ "{}" >> "${TMPDIR}/ARCH.json.raw.tmp" 2>/dev/null
+   awk '/^\s*{\s*$/{flag=1; buffer="{\n"; next} /^\s*}\s*$/{if(flag){buffer=buffer"}\n"; print buffer}; flag=0; next} flag{buffer=buffer$0"\n"}' "${TMPDIR}/ARCH.json.raw.tmp" | jq -c '. as $line | (fromjson? | .message) // $line' >> "${TMPDIR}/ARCH.json.raw"
 if jq --exit-status . "${TMPDIR}/ARCH.json.raw" >/dev/null 2>&1; then
-  jq -s 'map(select(.repo and .version)) | .' "${TMPDIR}/ARCH.json.raw" > "${TMPDIR}/ARCH.json.tmp"
+  jq -s 'map(select(.repo and .pkg and .version and (.repo | length > 0) and (.pkg | length > 0) and (.version | length > 0)))' "${TMPDIR}/ARCH.json.raw" > "${TMPDIR}/ARCH.json.tmp"
 fi
 if [[ "$(jq -r '.[] | .pkg' "${TMPDIR}/ARCH.json.tmp" | wc -l)" -gt 10000 ]]; then
   cp -fv "${TMPDIR}/ARCH.json.tmp" "${TMPDIR}/ARCH.json"
@@ -123,7 +126,7 @@ popd >/dev/null 2>&1
 #-------------------------------------------------------#
 ##Generate AUR
 pushd "${TMPDIR}" >/dev/null 2>&1
-curl -qfsSL "https://aur.archlinux.org/packages-meta-ext-v1.json.gz" -o "./aur.json.gz"
+curl -qfsSL --retry 3 --retry-all-errors "https://aur.archlinux.org/packages-meta-ext-v1.json.gz" -o "./aur.json.gz"
 7z e "./aur.json.gz" -o. -y
 find "." -type f -iname "*packages*.json" -print0 | xargs -0 jq '.[] | {
   repo: ("aur"),

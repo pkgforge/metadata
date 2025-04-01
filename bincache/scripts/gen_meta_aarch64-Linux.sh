@@ -27,14 +27,15 @@ sudo chmod -v 'a+x' "/usr/local/bin/soarql"
 ##Get All Pkgs
 echo -e "\n[+] Fetching Package List <== https://github.com/orgs/pkgforge/packages\n"
  for i in {1..5}; do
-   curl -w "(DL) <== %{url}\n" -fSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/GHCR_PKGS.json" \
-     --retry 3 --retry-all-errors -o "${TMPDIR}/ghcr_pkgs.tmp.json"
+   curl -w "(DL) <== %{url}\n" -fSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/GHCR_PKGS.json.zstd" \
+     --retry 3 --retry-all-errors -o "${TMPDIR}/ghcr_pkgs.tmp.json.zstd"
+     zstd --decompress --force "${TMPDIR}/ghcr_pkgs.tmp.json.zstd" -o "${TMPDIR}/ghcr_pkgs.tmp.json"
    unset PKG_GH_TMP; PKG_GH_TMP="$(jq -r '.[] | select(.visibility=="public") | .name' "${TMPDIR}/ghcr_pkgs.tmp.json" 2>/dev/null | grep -iv 'null' | sort -u | wc -l | tr -cd '0-9')"
    if [[ "${PKG_GH_TMP}" -lt 50 ]]; then
      echo "Retrying... ${i}/5"
      sleep 2
    elif [[ "${PKG_GH_TMP}" -gt 50 ]]; then
-     jq -r '.[] | select(.visibility=="public") | .name' "${TMPDIR}/ghcr_pkgs.tmp.json" | grep -i 'bincache' | sort -u -o "${TMPDIR}/ghcr_pkgs.tmp"
+     jq -r '.[] | select(.visibility=="public") | .name' "${TMPDIR}/ghcr_pkgs.tmp.json" | grep -Eiv '.*-srcbuild(-.*|$)' | grep -i 'bincache' | sort -u -o "${TMPDIR}/ghcr_pkgs.tmp"
      unset PKG_GH_TMP
      break
    fi

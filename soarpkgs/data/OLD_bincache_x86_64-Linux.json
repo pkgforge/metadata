@@ -4149,7 +4149,7 @@
     "tag": [
       "btrfs"
     ],
-    "version": "6.13"
+    "version": "6.14"
   },
   {
     "_disabled": "false",
@@ -33196,46 +33196,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "svn-lite",
-    "pkg_family": "svn-lite",
-    "pkg_id": "github.com.rofl0r.svn-lite.source",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/lite-source/svn-lite/svn-lite",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/svn-lite/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Minimalist svn client to checkout/update Subversion repositories",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/svn-lite/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/rofl0r/svn-lite"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rofl0r/svn-lite"
-    ],
-    "provides": [
-      "svn-lite",
-      "svn2git"
-    ],
-    "src_url": [
-      "https://github.com/rofl0r/svn-lite"
-    ],
-    "tag": [
-      "vcs"
-    ],
-    "version": "HEAD-87c728f-240118T194214"
-  },
-  {
-    "_disabled": "false",
     "pkg": "syncat",
     "pkg_family": "syncat",
     "pkg_id": "github.com.foxfriends.syncat",
@@ -33817,6 +33777,64 @@
   },
   {
     "_disabled": "false",
+    "pkg": "tgpt",
+    "pkg_family": "tgpt",
+    "pkg_id": "github.com.aandrew-me.tgpt",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/me-tgpt/tgpt/tgpt",
+    "bincache": "ghcr.io/pkgforge/bincache/tgpt/official/tgpt",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tgpt/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "AI Chatbots in terminal without needing API keys",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "tgpt-git"
+        ],
+        "extra": [
+          "tgpt"
+        ]
+      },
+      "nixpkgs": [
+        "tgpt"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tgpt/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/aandrew-me/tgpt"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/aandrew-me/tgpt"
+    ],
+    "repology": [
+      "tgpt"
+    ],
+    "src_url": [
+      "https://github.com/aandrew-me/tgpt"
+    ],
+    "tag": [
+      "ai",
+      "chatbot",
+      "chatgpt"
+    ],
+    "version": "HEAD-9a93342-250321T133346"
+  },
+  {
+    "_disabled": "false",
     "pkg": "tidy-viewer",
     "pkg_family": "tidy-viewer",
     "pkg_id": "github.com.alexhallam.tv",
@@ -34270,6 +34288,72 @@
       "terminal-emulator"
     ],
     "version": "3.5a"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tokei",
+    "pkg_family": "tokei",
+    "pkg_id": "github.com.XAMPPRocky.tokei",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xampprocky-tokei/tokei/tokei",
+    "bincache": "ghcr.io/pkgforge/bincache/tokei/official/tokei",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tokei/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A blazingly fast CLOC(Count Lines Of Code) program",
+    "distro_pkg": {
+      "alpine": [
+        "tokei"
+      ],
+      "archlinux": {
+        "aur": [
+          "tokei-git"
+        ],
+        "extra": [
+          "tokei"
+        ]
+      },
+      "debian": [
+        "rust-tokei"
+      ],
+      "nixpkgs": [
+        "tokei"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tokei/static.official.source.yaml",
+    "homepage": [
+      "https://tokei.rs",
+      "https://github.com/XAMPPRocky/tokei"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/XAMPPRocky/tokei"
+    ],
+    "repology": [
+      "tokei"
+    ],
+    "src_url": [
+      "https://github.com/XAMPPRocky/tokei"
+    ],
+    "tag": [
+      "cloc",
+      "file",
+      "stats"
+    ],
+    "version": "HEAD-62a564d-250224T182537"
   },
   {
     "_disabled": "false",

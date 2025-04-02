@@ -8750,7 +8750,7 @@
       "tunnel",
       "proxy"
     ],
-    "version": "2025.2.1"
+    "version": "2025.4.0"
   },
   {
     "_disabled": "false",
@@ -8923,7 +8923,7 @@
     "tag": [
       "contabo"
     ],
-    "version": "v1.5.3"
+    "version": "v1.5.4"
   },
   {
     "_disabled": "false",
@@ -24112,6 +24112,142 @@
   },
   {
     "_disabled": "false",
+    "pkg": "make",
+    "pkg_family": "make",
+    "pkg_id": "nixpkgs.gnumake",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-gnumake/make/make",
+    "bincache": "ghcr.io/pkgforge/bincache/make/nixpkgs/make",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/make/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GNU Make build tool to compile programs",
+    "distro_pkg": {
+      "alpine": [
+        "make"
+      ],
+      "archlinux": {
+        "aur": [
+          "make-git"
+        ]
+      },
+      "gnuguix": [
+        "make"
+      ],
+      "homebrew": [
+        "make"
+      ],
+      "nixpkgs": [
+        "gnumake"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/make/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/make",
+      "https://git.savannah.gnu.org/cgit/make",
+      "https://savannah.gnu.org/projects/make"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "make==gmake",
+      "make==gnu-make"
+    ],
+    "repology": [
+      "make"
+    ],
+    "src_url": [
+      "https://git.savannah.gnu.org/cgit/make.git"
+    ],
+    "tag": [
+      "make"
+    ],
+    "version": "4.4.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "make",
+    "pkg_family": "make",
+    "pkg_id": "ppkg.gmake",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-gmake/make/make",
+    "bincache": "ghcr.io/pkgforge/bincache/bmake/ppkg/bmake",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/make/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GNU Make build tool to compile programs",
+    "distro_pkg": {
+      "alpine": [
+        "make"
+      ],
+      "archlinux": {
+        "aur": [
+          "make-git"
+        ]
+      },
+      "gnuguix": [
+        "make"
+      ],
+      "homebrew": [
+        "make"
+      ],
+      "nixpkgs": [
+        "gnumake"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/make/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/make",
+      "https://git.savannah.gnu.org/cgit/make",
+      "https://savannah.gnu.org/projects/make"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "make==gmake",
+      "make==gnu-make"
+    ],
+    "repology": [
+      "make"
+    ],
+    "src_url": [
+      "https://git.savannah.gnu.org/cgit/make.git"
+    ],
+    "tag": [
+      "make"
+    ],
+    "version": "4.4.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mani",
     "pkg_family": "mani",
     "pkg_id": "github.com.alajmo.mani",
@@ -24895,7 +25031,7 @@
       "mirror",
       "rsync"
     ],
-    "version": "HEAD-0435651-250328T074806"
+    "version": "HEAD-dbf532a-250402T182043"
   },
   {
     "_disabled": "false",
@@ -26520,6 +26656,79 @@
   },
   {
     "_disabled": "false",
+    "pkg": "ninja",
+    "pkg_family": "ninja",
+    "pkg_id": "ppkg.ninja",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-ninja/ninja/ninja",
+    "bincache": "ghcr.io/pkgforge/bincache/ninja/ppkg/ninja",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ninja/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Small build system with a focus on speed",
+    "distro_pkg": {
+      "alpine": [
+        "ninja",
+        "ninja-build"
+      ],
+      "archlinux": {
+        "aur": [
+          "ninja-git"
+        ],
+        "extra": [
+          "ninja"
+        ]
+      },
+      "debian": [
+        "ninja-build"
+      ],
+      "gnuguix": [
+        "ninja"
+      ],
+      "homebrew": [
+        "ninja"
+      ],
+      "nixpkgs": [
+        "ninja"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ninja/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://ninja-build.org",
+      "https://github.com/ninja-build/ninja"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "ninja"
+    ],
+    "repology": [
+      "ninja"
+    ],
+    "src_url": [
+      "https://github.com/ninja-build/ninja"
+    ],
+    "tag": [
+      "build"
+    ],
+    "version": "1.12.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "nmap",
     "pkg_family": "nmap",
     "pkg_id": "nixpkgs.nmap",
@@ -26935,7 +27144,7 @@
     "tag": [
       "nvme"
     ],
-    "version": "HEAD-191a098-250402T071507"
+    "version": "HEAD-b6bd051-250402T125419"
   },
   {
     "_disabled": "false",
@@ -28119,7 +28328,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-bc5b9a8-250301T153831"
+    "version": "HEAD-3ccc5d7-250402T225442"
   },
   {
     "_disabled": "false",
@@ -36125,7 +36334,7 @@
     "tag": [
       "string"
     ],
-    "version": "HEAD-7d42e8e-250328T010841"
+    "version": "HEAD-89ac189-250402T194915"
   },
   {
     "_disabled": "false",
@@ -37312,7 +37521,7 @@
       "chatbot",
       "chatgpt"
     ],
-    "version": "HEAD-9a93342-250321T133346"
+    "version": "HEAD-dcd145f-250402T205023"
   },
   {
     "_disabled": "false",

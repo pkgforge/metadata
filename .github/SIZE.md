@@ -33,7 +33,7 @@
  4.0K   │   ├── fetch_debian_docker.sh
  4.0K   │   ├── fetch_archlinux_docker.sh
  4.0K   │   └── fetch_alpine_git.sh
-  97M   ├─┬ bincache
+  98M   ├─┬ bincache
   97M   │ ├─┬ data
   18M   │ │ ├── x86_64-Linux.json
   17M   │ │ ├── aarch64-Linux.json
@@ -211,12 +211,12 @@
   11M   │ ├─┬ data
  2.3M   │ │ ├── INDEX.json
  1.3M   │ │ ├── BACKAGE.json
+ 1.2M   │ │ ├── OLD_bincache_aarch64-Linux.json
  1.2M   │ │ ├── INDEX.db
  1.2M   │ │ ├── OLD_bincache_x86_64-Linux.json
- 1.2M   │ │ ├── OLD_bincache_aarch64-Linux.json
  764K   │ │ ├── pub_issues_binaries.txt
- 608K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 588K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 616K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 592K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  340K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
  220K   │ │ ├── INDEX.db.cba
@@ -227,7 +227,7 @@
  172K   │ │ ├── INDEX.db.zstd
  160K   │ │ ├── INDEX.db.xz
  124K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
-  88K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+  92K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   60K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   48K   │ │ ├── URLS.txt
   28K   │ │ ├── GH_REPO_ARCHIVED.md
@@ -281,8 +281,8 @@
  104K   │ │ ├── x86_64-Linux.db.xz
   96K   │ │ ├── x86_64-Linux.json.zstd
   92K   │ │ ├── x86_64-Linux.json.xz
-  80K   │ │ ├── aarch64-Linux.sdb.cba
   80K   │ │ ├── aarch64-Linux.db.cba
+  72K   │ │ ├── aarch64-Linux.sdb.cba
   72K   │ │ ├── aarch64-Linux.json.cba
   64K   │ │ ├── aarch64-Linux.sdb.zstd
   64K   │ │ ├── aarch64-Linux.db.zstd

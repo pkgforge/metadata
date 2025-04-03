@@ -8365,6 +8365,330 @@
   },
   {
     "_disabled": "false",
+    "pkg": "chimerautils",
+    "pkg_family": "chimerautils",
+    "pkg_id": "github.com.chimera-linux.chimerautils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/linux-chimerautils/chimerautils/chimerautils",
+    "bincache": "ghcr.io/pkgforge/bincache/chimerautils/official/addpart",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/chimerautils/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Chimera Linux userland Tools",
+      "addpart": "Tell the kernel about the existence of a specified partition [chimerautils]",
+      "apply": "Apply a command to a set of arguments [chimerautils]",
+      "arch": "Print system architecture [chimerautils]",
+      "awk": "Pattern scanning and text processing language for extracting and transforming data [chimerautils]",
+      "basename": "Strip directory path and .SUFFIX from FILE [chimerautils]",
+      "bc": "An arbitrary precision calculator language [chimerautils]",
+      "bintrans": "A Dynamic Binary Translator [chimerautils]",
+      "cat": "Concatenate FILE(s) and print them to stdout [chimerautils]",
+      "chmod": "Change the permissions of a file or directory [chimerautils]",
+      "chown": "Change the owner and/or group of each FILE to OWNER and/or GROUP [chimerautils]",
+      "chroot": "Run PROG with root directory set to NEWROOT [chimerautils]",
+      "cksum": "Calculate the CRC32 checksums of FILES [chimerautils]",
+      "colrm": "Remove columns from a file [chimerautils]",
+      "column": "Format input into multiple columns [chimerautils]",
+      "clear": "Clear screen [chimerautils]",
+      "comm": "Compare FILE1 to FILE2, or to stdin if - is specified [chimerautils]",
+      "compress": "Reduces the size of files [chimerautils]",
+      "cp": "Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY [chimerautils]",
+      "csplit": "Split file into pieces [chimerautils]",
+      "ctrlaltdel": "Set the function of the Ctrl-Alt-Del combination [chimerautils]",
+      "cut": "Print selected fields from each input FILE to standard output [chimerautils]",
+      "date": "Display time (using +FMT), or set time [chimerautils]",
+      "dd": "Copy a file with converting and formatting [chimerautils]",
+      "delpart": "Tell the kernel to forget about a partition [chimerautils]",
+      "df": "Print filesystem usage statistics [chimerautils]",
+      "diff": "Compare files line by line and output the differences between them [chimerautils]",
+      "diff3": "Compare files line by line and output the differences between them [chimerautils]",
+      "dirname": "Strip non-directory suffix from FILENAME [chimerautils]",
+      "du": "Summarize disk space used for each FILE and/or directory [chimerautils]",
+      "echo": "Print the specified ARGs to stdout [chimerautils]",
+      "ed": "A line-oriented text editor [chimerautils]",
+      "env": "Print the current environment or run PROG after setting up the specified environment [chimerautils]",
+      "expand": "Convert tabs to spaces, writing to standard output [chimerautils]",
+      "expr": "Print the value of EXPRESSION to standard output [chimerautils]",
+      "factor": "Factor a number into its prime factors [chimerautils]",
+      "fallocate": "Preallocate space to a file [chimerautils]",
+      "false": "Return an exit code of FALSE (1) [chimerautils]",
+      "flock": "Utilize serialization using file locks [chimerautils]",
+      "fmt": "Simple text formatter [chimerautils]",
+      "fold": "Wrap input lines in each FILE (standard input by default), writing to standard output [chimerautils]",
+      "fsfreeze": "Suspend access to a filesystem [chimerautils]",
+      "gencat": "NLS catalog compiler [chimerautils]",
+      "getopt": "Parse command options [chimerautils]",
+      "grep": "Search for PATTERN in each FILE or standard input [chimerautils]",
+      "head": "Print first N lines of each FILE to standard output [chimerautils]",
+      "hostid": "Print out a unique 32-bit identifier for the machine [chimerautils]",
+      "hostname": "Get or set hostname or DNS domain name [chimerautils]",
+      "id": "Print information about USER or the current user [chimerautils]",
+      "ionice": "Change I/O scheduling class and priority [chimerautils]",
+      "isosize": "Output the length of an iso9660 filesystem in a specified file [chimerautils]",
+      "join": "Relational database operator [chimerautils]",
+      "jot": "Print sequential or random data [chimerautils]",
+      "ln": "Create a link LINK or DIRECTORY/TARGET to the specified TARGET(s) [chimerautils]",
+      "locate": "Search a database for all pathnames which match the specified pattern [chimerautils]",
+      "logger": "Write MESSAGE to the system log [chimerautils]",
+      "logname": "Print the name of the current user [chimerautils]",
+      "m4": "Macro language processor [chimerautils]",
+      "mcookie": "Print the name of the current user [chimerautils]",
+      "md5": "Print or check MD5 checksums [chimerautils]",
+      "md5sum": "Print or check MD5 checksums [chimerautils]",
+      "mdev": "A minimal device manager for Linux [chimerautils]",
+      "mesg": "Control write access to your terminal [chimerautils]",
+      "mkdir": "Create DIRECTORY [chimerautils]",
+      "mkfifo": "Create named pipe (identical to 'mknod name p') [chimerautils]",
+      "mknod": "Create a special file (block, character, or pipe) [chimerautils]",
+      "mktemp": "Create a temporary file with name based on TEMPLATE and print its name [chimerautils]",
+      "mv": "Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY [chimerautils]",
+      "nc": "Netcat, a tool for network connections [chimerautils]",
+      "netcat": "Netcat, a tool for network connections [chimerautils]",
+      "nice": "Run PROG with modified scheduling priority [chimerautils]",
+      "nl": "Number lines of input [chimerautils]",
+      "nohup": "Run PROG immune to hangups, with output to a non-tty [chimerautils]",
+      "nproc": "Print the number of processing units available [chimerautils]",
+      "paste": "Concatenate and paste lines from files [chimerautils]",
+      "patch": "Apply patches to files [chimerautils]",
+      "pathchk": "check pathnames [chimerautils]",
+      "pivot_root": "Move the current root file system to PUT_OLD and make NEW_ROOT the new root file system [chimerautils]",
+      "printenv": "Print all or part of environment [chimerautils]",
+      "printf": "Format and print ARGUMENT(s) according to FORMAT [chimerautils]",
+      "pwd": "Print the full filename of the current working directory [chimerautils]",
+      "realpath": "Return the absolute pathnames of given argument [chimerautils]",
+      "renice": "Change priority of running processes [chimerautils]",
+      "resizepart": "Resize a Partition [chimerautils]",
+      "rev": "Reverse lines of input [chimerautils]",
+      "rm": "Remove (unlink) the FILE(s) [chimerautils]",
+      "rmdir": "Remove the DIRECTORY [chimerautils]",
+      "sed": "Stream editor for filtering and transforming text [chimerautils]",
+      "seq": "Print numbers from FIRST to LAST, in steps of IN [chimerautils]",
+      "setarch": "Change reported architecture for program [chimerautils]",
+      "setsid": "Run PROG in a new session [chimerautils]",
+      "sh": "The ASH Shell [chimerautils]",
+      "shar": "Create a shell archive of files [chimerautils]",
+      "sleep": "Pause for a time [chimerautils]",
+      "sort": "Sort lines of text [chimerautils]",
+      "stat": "Display file (default) or filesystem status [chimerautils]",
+      "stdbuf": "Change standard streams initial buffering [chimerautils]",
+      "stty": "Without arguments, prints baud rate, line discipline, and deviations from stty sane [chimerautils]",
+      "switch_root": "Free initramfs and switch to another root fs [chimerautils]",
+      "sync": "Write all buffered blocks to disk [chimerautils]",
+      "tee": "Copy standard input to each FILE, and also to standard output [chimerautils]",
+      "test": "Condition evaluation utility [chimerautils]",
+      "time": "Run PROG. When it finishes, its resource usage is displayed [chimerautils]",
+      "timeout": "Runs PROG. Sends SIG to it if it is not gone in SECS seconds [chimerautils]",
+      "tip": "Connect to a remote system [chimerautils]",
+      "touch": "Update the last-modified date on the given FILE[s] [chimerautils]",
+      "tr": "Translate, squeeze, and/or delete characters from standard input, writing to standard output [chimerautils]",
+      "true": "Return an exit code of TRUE (0) [chimerautils]",
+      "truncate": "Shrink or extend the size of a file [chimerautils]",
+      "tsort": "Perform a topological sort [chimerautils]",
+      "tty": "Print file name of standard input's terminal [chimerautils]",
+      "ul": "Convert underscores in text to terminal-specific underline sequences [chimerautils]",
+      "uname": "Print system information [chimerautils]",
+      "uncompress": "Uncompress .Z file[s] [chimerautils]",
+      "unexpand": "Convert spaces to tabs, writing to standard output [chimerautils]",
+      "uniq": "Discard duplicate lines [chimerautils]",
+      "unvis": "Decode characters previously encoded by vis [chimerautils]",
+      "users": "List the usernames of currently logged-in users [chimerautils]",
+      "vis": "Display non-printable characters in a visual format [chimerautils]",
+      "wc": "Print line, word, and byte counts for each FILE [chimerautils]",
+      "whereis": "Locate programs [chimerautils]",
+      "which": "Locate a COMMAND [chimerautils]",
+      "who": "Show who is logged on [chimerautils]",
+      "xinstall": "Install files [chimerautils]",
+      "xtest": "Condition evaluation utility [chimerautils]",
+      "yes": "Repeatedly output a line with STRING, or 'y' [chimerautils]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/chimerautils/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/chimera-linux/chimerautils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/chimera-linux/chimerautils"
+    ],
+    "provides": [
+      "addpart",
+      "apply",
+      "arch",
+      "awk",
+      "basename",
+      "bc",
+      "bigram",
+      "bintrans",
+      "calendar",
+      "cat",
+      "chmod",
+      "chown",
+      "chroot",
+      "cksum",
+      "cmp",
+      "code",
+      "col",
+      "colrm",
+      "column",
+      "comm",
+      "compress",
+      "cp",
+      "csplit",
+      "ctrlaltdel",
+      "cut",
+      "date",
+      "dc",
+      "dd",
+      "delpart",
+      "df",
+      "diff",
+      "diff3",
+      "dirname",
+      "du",
+      "echo",
+      "ed",
+      "ee",
+      "env",
+      "expand",
+      "expr",
+      "factor",
+      "fallocate",
+      "false",
+      "fetch",
+      "find",
+      "flock",
+      "fmt",
+      "fold",
+      "fsfreeze",
+      "gencat",
+      "getopt",
+      "grep",
+      "gzip",
+      "head",
+      "hexdump",
+      "hostid",
+      "hostname",
+      "id",
+      "ionice",
+      "isosize",
+      "join",
+      "jot",
+      "kill",
+      "ln",
+      "locate",
+      "logger",
+      "logname",
+      "look",
+      "ls",
+      "m4",
+      "maketab",
+      "mcookie",
+      "md5",
+      "mesg",
+      "mkdir",
+      "mkfifo",
+      "mknod",
+      "mknodes",
+      "mksyntax",
+      "mktemp",
+      "mv",
+      "ncal",
+      "netcat",
+      "nice",
+      "nl",
+      "nohup",
+      "nproc",
+      "nvi",
+      "paste",
+      "patch",
+      "pathchk",
+      "pivot_root",
+      "pr",
+      "printenv",
+      "printf",
+      "pwd",
+      "realpath",
+      "renice",
+      "resizepart",
+      "rev",
+      "rm",
+      "rmdir",
+      "script",
+      "sdiff",
+      "sed",
+      "seq",
+      "setarch",
+      "setsid",
+      "sh",
+      "shar",
+      "sleep",
+      "sort",
+      "split",
+      "stat",
+      "stdbuf",
+      "stty",
+      "su",
+      "switch_root",
+      "sync",
+      "tail",
+      "taskset",
+      "tee",
+      "telnet",
+      "test",
+      "time",
+      "timeout",
+      "tip",
+      "touch",
+      "tr",
+      "true",
+      "truncate",
+      "tsort",
+      "tty",
+      "ul",
+      "uname",
+      "unexpand",
+      "uniq",
+      "unvis",
+      "users",
+      "vis",
+      "wall",
+      "wc",
+      "whereis",
+      "which",
+      "who",
+      "write",
+      "xargs",
+      "xinstall",
+      "xtest",
+      "yes"
+    ],
+    "repology": [
+      "chimerautils"
+    ],
+    "src_url": [
+      "https://github.com/chimera-linux/chimerautils"
+    ],
+    "tag": [
+      "busybox",
+      "coreutils",
+      "toybox"
+    ],
+    "version": "HEAD-ef5c5f2-250301T201352"
+  },
+  {
+    "_disabled": "false",
     "pkg": "chisel",
     "pkg_family": "chisel",
     "pkg_id": "github.com.jpillora.chisel",
@@ -11783,6 +12107,72 @@
   },
   {
     "_disabled": "false",
+    "pkg": "curlie",
+    "pkg_family": "curlie",
+    "pkg_id": "github.com.rs.curlie",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-curlie/curlie/curlie",
+    "bincache": "ghcr.io/pkgforge/bincache/curlie/official/curlie",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/curlie/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Frontend to cURL that adds the ease of use of HTTPie",
+    "distro_pkg": {
+      "alpine": [
+        "curlie"
+      ],
+      "archlinux": {
+        "extra": [
+          "curlie"
+        ]
+      },
+      "gnuguix": [
+        "curlie"
+      ],
+      "homebrew": [
+        "curlie"
+      ],
+      "nixpkgs": [
+        "curlie"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/curlie/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rs/curlie"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rs/curlie"
+    ],
+    "provides": [
+      "curlie"
+    ],
+    "repology": [
+      "curlie"
+    ],
+    "src_url": [
+      "https://github.com/rs/curlie"
+    ],
+    "tag": [
+      "api",
+      "cli"
+    ],
+    "version": "HEAD-56211ba-250302T182011"
+  },
+  {
+    "_disabled": "false",
     "pkg": "cut-cdn",
     "pkg_family": "cut-cdn",
     "pkg_id": "github.com.ImAyrix.cut-cdn",
@@ -14843,6 +15233,62 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fblog",
+    "pkg_family": "fblog",
+    "pkg_id": "github.com.brocode.fblog",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/brocode-fblog/fblog/fblog",
+    "bincache": "ghcr.io/pkgforge/bincache/fblog/official/fblog",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fblog/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Small command-line JSON Log viewer",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "fblog",
+          "fblog-bin",
+          "fblog-git"
+        ]
+      },
+      "nixpkgs": [
+        "fblog"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fblog/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/brocode/fblog"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/brocode/fblog"
+    ],
+    "repology": [
+      "fblog"
+    ],
+    "src_url": [
+      "https://github.com/brocode/fblog"
+    ],
+    "tag": [
+      "json",
+      "log"
+    ],
+    "version": "HEAD-d64396f-250401T182733"
+  },
+  {
+    "_disabled": "false",
     "pkg": "fdupes",
     "pkg_family": "fdupes",
     "pkg_id": "nixpkgs.fdupes",
@@ -17527,6 +17973,76 @@
       "Utility"
     ],
     "version": "HEAD-61bb2f1-240412T201545"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gojq",
+    "pkg_family": "gojq",
+    "pkg_id": "github.com.itchyny.gojq",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/itchyny-gojq/gojq/gojq",
+    "bincache": "ghcr.io/pkgforge/bincache/gojq/official/gojq",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gojq/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Pure Go implementation of jq with yaml support",
+    "distro_pkg": {
+      "alpine": [
+        "gojq"
+      ],
+      "archlinux": {
+        "aur": [
+          "gojq",
+          "gojq-bin"
+        ]
+      },
+      "debian": [
+        "gojq"
+      ],
+      "gnuguix": [
+        "gojq"
+      ],
+      "homebrew": [
+        "gojq"
+      ],
+      "nixpkgs": [
+        "gojq"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gojq/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/itchyny/gojq"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/itchyny/gojq"
+    ],
+    "provides": [
+      "gojq"
+    ],
+    "repology": [
+      "gojq"
+    ],
+    "src_url": [
+      "https://github.com/itchyny/gojq"
+    ],
+    "tag": [
+      "jq",
+      "json"
+    ],
+    "version": "HEAD-05329e2-250302T142750"
   },
   {
     "_disabled": "false",
@@ -22949,7 +23465,7 @@
       "aws",
       "infra"
     ],
-    "version": "HEAD-7de3598-250401T191440"
+    "version": "HEAD-642e981-250402T122330"
   },
   {
     "_disabled": "false",
@@ -25340,6 +25856,49 @@
   },
   {
     "_disabled": "false",
+    "pkg": "morrigan",
+    "pkg_family": "morrigan",
+    "pkg_id": "github.com.nao1215.morrigan.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/morrigan-source/morrigan/morrigan",
+    "bincache": "ghcr.io/pkgforge/bincache/morrigan/official/morrigan",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/morrigan/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Busybox like Penetration Tool Set",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/morrigan/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/nao1215/morrigan"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/nao1215/morrigan"
+    ],
+    "provides": [
+      "morrigan"
+    ],
+    "src_url": [
+      "https://github.com/nao1215/morrigan"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-4d64db5-250302T210449"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mosh",
     "pkg_family": "mosh",
     "pkg_id": "github.com.blinksh.mosh-static-multiarch.stable",
@@ -25410,6 +25969,65 @@
       "ssh"
     ],
     "version": "1.4.0+blink-17.3.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mqttui",
+    "pkg_family": "mqttui",
+    "pkg_id": "github.com.EdJoPaTo.mqttui",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/edjopato-mqttui/mqttui/mqttui",
+    "bincache": "ghcr.io/pkgforge/bincache/mqttui/official/mqttui",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mqttui/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Simple lightweight terminal based MQTT monitor and publisher",
+    "distro_pkg": {
+      "alpine": [
+        "mqttui"
+      ],
+      "archlinux": {
+        "aur": [
+          "mqttui-git"
+        ],
+        "extra": [
+          "mqttui"
+        ]
+      },
+      "nixpkgs": [
+        "mqttui"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mqttui/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/EdJoPaTo/mqttui"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL3"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/EdJoPaTo/mqttui"
+    ],
+    "repology": [
+      "mqttui"
+    ],
+    "src_url": [
+      "https://github.com/EdJoPaTo/mqttui"
+    ],
+    "tag": [
+      "mqtt"
+    ],
+    "version": "HEAD-c0dcb00-250325T233842"
   },
   {
     "_disabled": "false",
@@ -31479,7 +32097,7 @@
       "backup",
       "dedupe"
     ],
-    "version": "HEAD-f13e9c1-250331T212112"
+    "version": "HEAD-0dffa12-250402T211611"
   },
   {
     "_disabled": "false",
@@ -33471,6 +34089,69 @@
       "ssh"
     ],
     "version": "HEAD-5b7c4b8-241214T072638"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "samurai",
+    "pkg_family": "samurai",
+    "pkg_id": "ppkg.samurai",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-samurai/samurai/samurai",
+    "bincache": "ghcr.io/pkgforge/bincache/samurai/ppkg/samurai",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/samurai/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Ninja-compatible build tool written in C",
+    "distro_pkg": {
+      "alpine": [
+        "samurai"
+      ],
+      "archlinux": {
+        "extra": [
+          "samurai"
+        ]
+      },
+      "homebrew": [
+        "samurai"
+      ],
+      "nixpkgs": [
+        "samurai"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/samurai/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://git.sr.ht/~mcf/samurai",
+      "https://github.com/michaelforney/samurai"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "samurai==samu"
+    ],
+    "repology": [
+      "samurai-build-tool"
+    ],
+    "src_url": [
+      "https://github.com/michaelforney/samurai"
+    ],
+    "tag": [
+      "build"
+    ],
+    "version": "1.2"
   },
   {
     "_disabled": "false",

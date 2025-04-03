@@ -478,6 +478,81 @@
   },
   {
     "_disabled": "false",
+    "pkg": "cmake",
+    "pkg_family": "cmake",
+    "pkg_id": "ppkg.bundle.cmake.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cmake-stable/cmake/cmake",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/cmake/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Cross-platform, open-source build system",
+    "distro_pkg": {
+      "alpine": [
+        "cmake"
+      ],
+      "archlinux": {
+        "aur": [
+          "cmake-git"
+        ],
+        "extra": [
+          "cmake"
+        ]
+      },
+      "debian": [
+        "cmake"
+      ],
+      "gnuguix": [
+        "cmake"
+      ],
+      "homebrew": [
+        "cmake"
+      ],
+      "nixpkgs": [
+        "cmake"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/cmake/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.cmake.org",
+      "https://gitlab.kitware.com/cmake/cmake"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/cmake/appimage/ppkg",
+    "provides": [
+      "cmake==cpack",
+      "cmake==ctest"
+    ],
+    "repology": [
+      "cmake"
+    ],
+    "src_url": [
+      "https://gitlab.kitware.com/cmake/cmake"
+    ],
+    "tag": [
+      "build-system"
+    ],
+    "version": "3.31.5"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ddgr",
     "pkg_family": "ddgr",
     "pkg_id": "sharun.wrappe.pypi.ddgr",
@@ -1072,6 +1147,91 @@
       "screenshot"
     ],
     "version": "12.1.0-unstable-2025-03-10"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "freerdp",
+    "pkg_family": "freerdp",
+    "pkg_id": "ppkg.bundle.freerdp.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/freerdp-stable/freerdp/freerdp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/freerdp/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Free implementation of the Remote Desktop Protocol [freerdp]",
+      "freerdp": "Free implementation of the Remote Desktop Protocol [freerdp]",
+      "freerdp-proxy": "A server binary allowing MITM proxying of RDP connections [freerdp]",
+      "freerdp-shadow-cli": "A utility for sharing a X display via RDP [freerdp]",
+      "winpr-hash": "NTLM hashing tool [freerdp]",
+      "winpr-makecert": "A tool to create X.509 certificates [freerdp]",
+      "wlfreerdp": "FreeRDP wayland client [freerdp]",
+      "xfreerdp": "FreeRDP X11 client [freerdp]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "freerdp"
+      ],
+      "archlinux": {
+        "aur": [
+          "freerdp-git"
+        ],
+        "extra": [
+          "freerdp"
+        ]
+      },
+      "gnuguix": [
+        "freerdp"
+      ],
+      "homebrew": [
+        "freerdp"
+      ],
+      "nixpkgs": [
+        "freerdp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/freerdp/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.freerdp.com",
+      "https://github.com/FreeRDP/FreeRDP"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/freerdp/appimage/ppkg",
+    "provides": [
+      "freerdp==freerdp-proxy",
+      "freerdp==freerdp-shadow-cli",
+      "freerdp==winpr-hash",
+      "freerdp==winpr-makecert",
+      "freerdp==wlfreerdp",
+      "freerdp==xfreerdp"
+    ],
+    "repology": [
+      "freerdp"
+    ],
+    "src_url": [
+      "https://github.com/FreeRDP/FreeRDP"
+    ],
+    "tag": [
+      "remote"
+    ],
+    "version": "3.12.0"
   },
   {
     "_disabled": "false",

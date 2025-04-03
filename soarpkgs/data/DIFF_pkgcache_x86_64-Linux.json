@@ -306,7 +306,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.38.25"
+    "version": "1.38.26"
   },
   {
     "_disabled": "false",
@@ -422,7 +422,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.79.20"
+    "version": "v1.79.25"
   },
   {
     "_disabled": "false",
@@ -1249,6 +1249,86 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "sharun.wrappe.stable.fastfetch",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stable-fastfetch/fastfetch/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fastfetch/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fastfetch/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This version was repacked from official Deb & contains the most features"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fastfetch/archive/sharun",
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "2.40.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "fdm",
     "pkg_family": "fdm",
     "pkg_id": "runimage.cachyos.fdm",
@@ -1306,6 +1386,135 @@
       "download-manager"
     ],
     "version": "6.26.1.6177"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (Beta)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "firefox-beta-bin"
+        ]
+      },
+      "homebrew": [
+        "firefox@beta"
+      ],
+      "nixpkgs": [
+        "firefox-beta",
+        "firefox-beta-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-beta"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "138.0.20250402091540"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.dev",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-dev/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (DEV)",
+    "distro_pkg": {
+      "alpine": [
+        "firefox-developer-edition"
+      ],
+      "archlinux": {
+        "extra": [
+          "firefox-developer-edition"
+        ]
+      },
+      "homebrew": [
+        "firefox@developer-edition"
+      ],
+      "nixpkgs": [
+        "firefox-devedition",
+        "firefox-devedition-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-dev"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "138.0.20250402091540"
   },
   {
     "_disabled": "false",
@@ -1434,7 +1643,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "139.0.20250401212749"
+    "version": "139.0.20250402162225"
   },
   {
     "_disabled": "false",
@@ -1919,6 +2128,78 @@
   },
   {
     "_disabled": "false",
+    "pkg": "inkscape",
+    "pkg_family": "inkscape",
+    "pkg_id": "gitlab.com.inkscape.inkscape",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inkscape-inkscape/inkscape/inkscape",
+    "app_id": "org.inkscape.Inkscape",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/inkscape/appimage.official.stable.yaml",
+    "category": [
+      "Graphics",
+      "Office"
+    ],
+    "description": "FOSS Vector Graphics Editor",
+    "distro_pkg": {
+      "alpine": [
+        "inkscape"
+      ],
+      "archlinux": {
+        "aur": [
+          "inkscape-git"
+        ],
+        "extra": [
+          "inkscape"
+        ]
+      },
+      "debian": [
+        "inkscape"
+      ],
+      "gnuguix": [
+        "inkscape"
+      ],
+      "homebrew": [
+        "inkscape"
+      ],
+      "nixpkgs": [
+        "inkscape",
+        "inkscape-with-extensions"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/inkscape/appimage.official.stable.yaml",
+    "homepage": [
+      "https://inkscape.org"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/inkscape/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/inkscape/inkscape"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/inkscape/appimage/official",
+    "provides": [
+      "inkscape"
+    ],
+    "repology": [
+      "inkscape"
+    ],
+    "src_url": [
+      "https://inkscape.org/release"
+    ],
+    "tag": [
+      "editor",
+      "graphics"
+    ]
+  },
+  {
+    "_disabled": "false",
     "pkg": "knot",
     "pkg_family": "android-knot",
     "pkg_id": "github.com.ic005k.Knot",
@@ -2036,7 +2317,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-04-01"
+    "version": "2025-04-02"
   },
   {
     "_disabled": "true",
@@ -2905,6 +3186,121 @@
     "version": "5.13.1"
   },
   {
+    "_disabled": "false",
+    "pkg": "torzu",
+    "pkg_family": "torzu",
+    "pkg_id": "github.com.pkgforge-dev.Torzu-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/torzu/torzu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/torzu/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Fork of yuzu, an open-source Nintendo Switch emulator",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "torzu",
+          "torzu-git"
+        ]
+      },
+      "nixpkgs": [
+        "torzu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/torzu/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://notabug.org/litucks/torzu"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/torzu/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Torzu-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/torzu/appimage/pkgforge-dev",
+    "provides": [
+      "torzu"
+    ],
+    "repology": [
+      "torzu"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Torzu-AppImage"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "r27206.eaa9c9e3a"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "torzu",
+    "pkg_family": "torzu",
+    "pkg_id": "github.com.pkgforge-dev.Torzu-AppImage.v3",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-v3/torzu/torzu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/torzu/appimage.pkgforge-dev.v3.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Fork of yuzu, an open-source Nintendo Switch emulator (x86-64-v3)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "torzu",
+          "torzu-git"
+        ]
+      },
+      "nixpkgs": [
+        "torzu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/torzu/appimage.pkgforge-dev.v3.yaml",
+    "homepage": [
+      "https://notabug.org/litucks/torzu"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/torzu/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Torzu-AppImage",
+      "Optimized for x86-64-v3",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/torzu/appimage/pkgforge-dev",
+    "provides": [
+      "torzu"
+    ],
+    "repology": [
+      "torzu"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Torzu-AppImage"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "r27206.eaa9c9e3a"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": [
       "Too slow & Expensive"
@@ -3189,6 +3585,68 @@
   },
   {
     "_disabled": "false",
+    "pkg": "wrangler",
+    "pkg_family": "wrangler",
+    "pkg_id": "sharun.wrappe.npm.wrangler",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/npm-wrangler/wrangler/wrangler",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wrangler/archive.sharun.npm.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Command-line interface for all things Cloudflare Workers",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "wrangler"
+        ]
+      },
+      "homebrew": [
+        "wrangler"
+      ],
+      "nixpkgs": [
+        "wrangler"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/wrangler/archive.sharun.npm.yaml",
+    "homepage": [
+      "https://developers.cloudflare.com/workers/cli-wrangler",
+      "https://github.com/cloudflare/workers-sdk"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [npm]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/wrangler/archive/sharun",
+    "provides": [
+      "wrangler"
+    ],
+    "repology": [
+      "wrangler"
+    ],
+    "src_url": [
+      "https://www.npmjs.com/package/wrangler"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "4.7.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "xash3d-fwgs",
     "pkg_family": "xash3d-fwgs",
     "pkg_id": "github.com.FWGS.xash3d-fwgs",
@@ -3285,6 +3743,73 @@
       "Utility"
     ],
     "version": "250402T092028"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zed",
+    "pkg_family": "zed",
+    "pkg_id": "wrappe.zed",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-zed/zed/zed",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zed/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "High-performance, multiplayer code editor",
+    "distro_pkg": {
+      "alpine": [
+        "zed"
+      ],
+      "archlinux": {
+        "aur": [
+          "zed-git"
+        ],
+        "extra": [
+          "zed"
+        ]
+      },
+      "homebrew": [
+        "zed"
+      ],
+      "nixpkgs": [
+        "zed-editor"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zed/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://zed.dev"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/zed-industries/zed",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zed/archive/wrappe",
+    "provides": [
+      "zed==zed-editor"
+    ],
+    "repology": [
+      "zed"
+    ],
+    "src_url": [
+      "https://github.com/zed-industries/zed"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "v0.180.2"
   },
   {
     "_disabled": "false",

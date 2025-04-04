@@ -114,13 +114,13 @@
  2.5M   │ │ │ ├── x86_64-Linux.db
  1.4M   │ │ │ ├── aarch64-Linux.json
  1.1M   │ │ │ ├── aarch64-Linux.db
- 312K   │ │ │ ├── x86_64-Linux.db.cba
+ 308K   │ │ │ ├── x86_64-Linux.db.cba
  288K   │ │ │ ├── x86_64-Linux.json.cba
  248K   │ │ │ ├── x86_64-Linux.db.zstd
  236K   │ │ │ ├── x86_64-Linux.db.xz
  224K   │ │ │ ├── x86_64-Linux.json.zstd
  212K   │ │ │ ├── x86_64-Linux.json.xz
- 128K   │ │ │ ├── aarch64-Linux.db.cba
+ 132K   │ │ │ ├── aarch64-Linux.db.cba
  124K   │ │ │ ├── aarch64-Linux.json.cba
  108K   │ │ │ ├── aarch64-Linux.db.zstd
  104K   │ │ │ ├── aarch64-Linux.db.xz
@@ -334,7 +334,7 @@
   28K   │   ├── icon_database.png
   24K   │   ├── icon_config_multi.png
   20K   │   └── icon_json.png
- 212K   ├── GHCR_PKGS.json.zstd
+ 216K   ├── GHCR_PKGS.json.zstd
   28K   ├─┬ r2
   12K   │ ├─┬ scripts
  8.0K   │ │ └── sync_r2_mirror.sh

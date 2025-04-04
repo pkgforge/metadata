@@ -207,16 +207,16 @@
 4.0K   │   │ └── TOTAL.json
  32K   │   └─┬ scripts
  28K   │     └── gen_meta.sh
- 11M   ├─┬ soarpkgs
+ 12M   ├─┬ soarpkgs
  11M   │ ├─┬ data
 2.3M   │ │ ├── INDEX.json
 1.4M   │ │ ├── BACKAGE.json
-1.2M   │ │ ├── OLD_bincache_aarch64-Linux.json
-1.2M   │ │ ├── OLD_bincache_x86_64-Linux.json
+1.3M   │ │ ├── OLD_bincache_aarch64-Linux.json
+1.3M   │ │ ├── OLD_bincache_x86_64-Linux.json
 1.2M   │ │ ├── INDEX.db
 768K   │ │ ├── pub_issues_binaries.txt
-556K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-528K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+560K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+532K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 340K   │ │ ├── INDEX.json.cba
 304K   │ │ ├── pub_issues_packages.txt
 216K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
@@ -228,7 +228,7 @@
 160K   │ │ ├── INDEX.db.xz
 132K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
 112K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 72K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+ 68K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  48K   │ │ ├── URLS.txt
  28K   │ │ ├── GH_REPO_ARCHIVED.md
  24K   │ │ ├── DIFF_bincache.json

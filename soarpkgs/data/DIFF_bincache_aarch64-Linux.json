@@ -460,7 +460,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250405T014457"
+    "version": "250405T134850"
   },
   {
     "_disabled": "false",
@@ -3702,7 +3702,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-1db0f3e-250404T015006"
+    "version": "HEAD-96570a3-250405T135909"
   },
   {
     "_disabled": "false",
@@ -3756,6 +3756,52 @@
       "development"
     ],
     "version": "HEAD-fe46535-250106T222454"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "desync",
+    "pkg_family": "desync",
+    "pkg_id": "github.com.folbricht.desync.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desync-source/desync/desync",
+    "bincache": "ghcr.io/pkgforge/bincache/desync/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/desync/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Content-Addressable Data Synchronization Tool",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/desync/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/folbricht/desync"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/folbricht/desync"
+    ],
+    "provides": [
+      "desync"
+    ],
+    "repology": [
+      "desync"
+    ],
+    "src_url": [
+      "https://github.com/folbricht/desync"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-bac6a5b-250405T185706"
   },
   {
     "_disabled": "false",
@@ -4626,86 +4672,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "fastfetch",
-    "pkg_family": "fastfetch",
-    "pkg_id": "github.com.fastfetch-cli.fastfetch",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-fastfetch/fastfetch/fastfetch",
-    "bincache": "ghcr.io/pkgforge/bincache/fastfetch/official/fastfetch",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fastfetch/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Fast and feature-rich tool displaying system information",
-      "fastfetch": "Fast and feature-rich tool displaying system information",
-      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "fastfetch"
-      ],
-      "archlinux": {
-        "aur": [
-          "fastfetch-git"
-        ],
-        "extra": [
-          "fastfetch"
-        ]
-      },
-      "debian": [
-        "fastfetch"
-      ],
-      "gnuguix": [
-        "fastfetch"
-      ],
-      "homebrew": [
-        "fastfetch"
-      ],
-      "nixpkgs": [
-        "fastfetch"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fastfetch/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/fastfetch-cli/fastfetch"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fastfetch-cli/fastfetch",
-      "Related Discussion: https://github.com/fastfetch-cli/fastfetch/issues/808",
-      "This version contains a limited set of features due to static linking",
-      "Please use the version from pkgcache if all features are needed"
-    ],
-    "provides": [
-      "fastfetch",
-      "flashfetch"
-    ],
-    "repology": [
-      "fastfetch"
-    ],
-    "src_url": [
-      "https://github.com/fastfetch-cli/fastfetch"
-    ],
-    "tag": [
-      "fetch",
-      "neofetch"
-    ],
-    "version": "HEAD-3def466-250405T135420"
-  },
-  {
-    "_disabled": "false",
     "pkg": "ffmpeg",
     "pkg_family": "ffmpeg",
     "pkg_id": "github.com.wader.static-ffmpeg.stable",
@@ -4781,6 +4747,52 @@
     "tag": [
       "media"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ffuf",
+    "pkg_family": "ffuf",
+    "pkg_id": "github.com.ffuf.ffuf",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ffuf-ffuf/ffuf/ffuf",
+    "bincache": "ghcr.io/pkgforge/bincache/ffuf/official/ffuf",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ffuf/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast web fuzzer written in Go",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ffuf/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ffuf/ffuf"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ffuf/ffuf"
+    ],
+    "provides": [
+      "ffuf"
+    ],
+    "repology": [
+      "ffuf"
+    ],
+    "src_url": [
+      "https://github.com/ffuf/ffuf"
+    ],
+    "tag": [
+      "infosec"
+    ],
+    "version": "HEAD-ce3cf6b-250405T203517"
   },
   {
     "_disabled": "false",
@@ -4875,6 +4887,60 @@
       "nvm"
     ],
     "version": "v1.38.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "garble",
+    "pkg_family": "garble",
+    "pkg_id": "github.com.burrowers.garble.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/garble-source/garble/garble",
+    "bincache": "ghcr.io/pkgforge/bincache/garble/official/garble",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/garble/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Obfuscate Go code by wrapping the Go toolchain",
+    "distro_pkg": {
+      "homebrew": [
+        "garble"
+      ],
+      "nixpkgs": [
+        "garble"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/garble/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/burrowers/garble"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/burrowers/garble"
+    ],
+    "provides": [
+      "garble"
+    ],
+    "repology": [
+      "garble"
+    ],
+    "src_url": [
+      "https://github.com/burrowers/garble"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-a3a9235-250405T155100"
   },
   {
     "_disabled": "false",
@@ -4974,6 +5040,61 @@
       "github"
     ],
     "version": "HEAD-6f364e0-250405T120312"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gickup",
+    "pkg_family": "gickup",
+    "pkg_id": "github.com.cooperspencer.gickup",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cooperspencer-gickup/gickup/gickup",
+    "bincache": "ghcr.io/pkgforge/bincache/gickup/official/gickup",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gickup/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tool to backup repositories",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "gickup"
+        ]
+      },
+      "nixpkgs": [
+        "gickup"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gickup/static.official.source.yaml",
+    "homepage": [
+      "https://cooperspencer.github.io/gickup-documentation",
+      "https://github.com/cooperspencer/gickup"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/cooperspencer/gickup"
+    ],
+    "repology": [
+      "gickup"
+    ],
+    "src_url": [
+      "https://github.com/cooperspencer/gickup"
+    ],
+    "tag": [
+      "backup",
+      "git"
+    ],
+    "version": "HEAD-06a97f1-250405T165519"
   },
   {
     "_disabled": "false",
@@ -5908,7 +6029,79 @@
     "tag": [
       "utility"
     ],
-    "version": "HEAD-2f5068b-250327T205713"
+    "version": "HEAD-05f8c68-250404T142248"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "grep",
+    "pkg_family": "grep",
+    "pkg_id": "git.savannah.gnu.org.cgit.grep.glibc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/grep-glibc/grep/grep",
+    "bincache": "ghcr.io/pkgforge/bincache/grep/glibc/egrep",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/grep/static.glibc.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Search one or more input files for lines containing a match to a specified pattern",
+    "distro_pkg": {
+      "alpine": [
+        "grep"
+      ],
+      "archlinux": {
+        "aur": [
+          "grep-git"
+        ]
+      },
+      "debian": [
+        "grep"
+      ],
+      "gnuguix": [
+        "grep"
+      ],
+      "homebrew": [
+        "grep"
+      ],
+      "nixpkgs": [
+        "gnugrep"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/grep/static.glibc.source.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/grep/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://git.savannah.gnu.org/cgit/grep.git",
+      "Statically Linked on Debian (GLIBC)"
+    ],
+    "provides": [
+      "egrep",
+      "fgrep",
+      "grep"
+    ],
+    "repology": [
+      "grep"
+    ],
+    "src_url": [
+      "https://www.gnu.org/software/grep/",
+      "https://git.savannah.gnu.org/cgit/grep.git"
+    ],
+    "tag": [
+      "utility"
+    ],
+    "version": "HEAD-05f8c68-250404T142248"
   },
   {
     "_disabled": "false",
@@ -7633,7 +7826,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-97c6fb9-250405T073010"
+    "version": "HEAD-47b7717-250405T164132"
   },
   {
     "_disabled": "false",
@@ -11128,7 +11321,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-7ca2a6f-250404T094321"
+    "version": "HEAD-f25525b-250405T092416"
   },
   {
     "_disabled": "false",
@@ -11192,7 +11385,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-7ca2a6f-250404T094321"
+    "version": "HEAD-f25525b-250405T092416"
   },
   {
     "_disabled": "false",
@@ -11917,7 +12110,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c0d417b-250405T112314"
+    "version": "HEAD-8724bfd-250405T135127"
   },
   {
     "_disabled": "false",
@@ -12858,7 +13051,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-94d32da-250404T063927"
+    "version": "HEAD-a491cde-250405T123554"
   },
   {
     "_disabled": "false",
@@ -13427,7 +13620,7 @@
       "analyzer",
       "linter"
     ],
-    "version": "HEAD-bee2aee-250403T183154"
+    "version": "HEAD-c72d175-250405T142919"
   },
   {
     "_disabled": "false",
@@ -16463,6 +16656,53 @@
   },
   {
     "_disabled": "false",
+    "pkg": "stowaway",
+    "pkg_family": "stowaway",
+    "pkg_id": "github.com.ph4ntonn.Stowaway.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stowaway-source/stowaway/stowaway",
+    "bincache": "ghcr.io/pkgforge/bincache/stowaway/official/stowaway-admin",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/stowaway/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Multi-hop proxy tool for security researchers and pentesters",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/stowaway/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ph4ntonn/Stowaway"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ph4ntonn/Stowaway"
+    ],
+    "provides": [
+      "stowaway-admin",
+      "stowaway-agent"
+    ],
+    "repology": [
+      "stowaway"
+    ],
+    "src_url": [
+      "https://github.com/ph4ntonn/Stowaway"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-c22010f-250405T224837"
+  },
+  {
+    "_disabled": "false",
     "pkg": "strace",
     "pkg_family": "strace",
     "pkg_id": "nixpkgs.strace",
@@ -19326,6 +19566,64 @@
     "version": "HEAD-a7384fa-250318T165444"
   },
   {
+    "_disabled": "false",
+    "pkg": "vopono",
+    "pkg_family": "vopono",
+    "pkg_id": "github.com.jamesmcm.vopono.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vopono-source/vopono/vopono",
+    "bincache": "ghcr.io/pkgforge/bincache/vopono/official/vopono",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vopono/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Run applications through VPN connections in network namespaces",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vopono",
+          "vopono-bin",
+          "vopono-git"
+        ]
+      },
+      "nixpkgs": [
+        "vopono"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vopono/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/jamesmcm/vopono"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jamesmcm/vopono"
+    ],
+    "provides": [
+      "vopono"
+    ],
+    "repology": [
+      "vopono"
+    ],
+    "src_url": [
+      "https://github.com/jamesmcm/vopono"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-2923cc0-250405T160740"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -20441,7 +20739,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-ff0a74f-250405T111656"
+    "version": "HEAD-fd007ab-250405T215248"
   },
   {
     "_disabled": "false",

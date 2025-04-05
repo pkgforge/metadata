@@ -392,6 +392,78 @@
   },
   {
     "_disabled": "false",
+    "pkg": "aria2",
+    "pkg_family": "aria2",
+    "pkg_id": "github.com.aria2.aria2.continuous",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-continuous/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
+    "distro_pkg": {
+      "alpine": [
+        "aria2"
+      ],
+      "archlinux": {
+        "aur": [
+          "aria2-fast",
+          "aria2-git"
+        ],
+        "extra": [
+          "aria2"
+        ]
+      },
+      "debian": [
+        "aria2"
+      ],
+      "nixpkgs": [
+        "aria",
+        "aria2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "homepage": [
+      "https://aria2.github.io",
+      "https://github.com/aria2/aria2",
+      "https://aria2.sourceforge.net",
+      "https://sourceforge.net/projects/aria2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
+      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
+    ],
+    "provides": [
+      "aria2:aria2c"
+    ],
+    "repology": [
+      "aria2"
+    ],
+    "src_url": [
+      "https://github.com/abcfy2/aria2-static-build"
+    ],
+    "tag": [
+      "bittorrent",
+      "downloader"
+    ],
+    "version": "250405T014457"
+  },
+  {
+    "_disabled": "false",
     "pkg": "atuin",
     "pkg_family": "atuin",
     "pkg_id": "github.com.atuinsh.atuin",
@@ -683,6 +755,72 @@
       "shell"
     ],
     "version": "5.2p37"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "batcat",
+    "pkg_family": "bat",
+    "pkg_id": "github.com.sharkdp.bat",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sharkdp-bat/bat/batcat",
+    "bincache": "ghcr.io/pkgforge/bincache/bat/official/bat",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bat/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Cat clone with colors, syntax highlighting and git integration",
+    "distro_pkg": {
+      "alpine": [
+        "bat"
+      ],
+      "archlinux": {
+        "aur": [
+          "bat-cat-git"
+        ],
+        "extra": [
+          "bat"
+        ]
+      },
+      "debian": [
+        "rust-bat"
+      ],
+      "nixpkgs": [
+        "bat"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bat/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sharkdp/bat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sharkdp/bat"
+    ],
+    "provides": [
+      "bat==batcat"
+    ],
+    "repology": [
+      "bat-cat"
+    ],
+    "src_url": [
+      "https://github.com/sharkdp/bat"
+    ],
+    "tag": [
+      "cat",
+      "text-viewer"
+    ],
+    "version": "HEAD-57629bc-250405T090835"
   },
   {
     "_disabled": "false",
@@ -1371,6 +1509,49 @@
       "speedtest-cli"
     ],
     "version": "HEAD-b749478-250404T233843"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ci-info",
+    "pkg_family": "ci-info",
+    "pkg_id": "github.com.suzuki-shunsuke.ci-info.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/info-stable/ci-info/ci-info",
+    "bincache": "ghcr.io/pkgforge/bincache/ci-info/official/ci-info",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ci-info/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI tool to get CI related information",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ci-info/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/suzuki-shunsuke/ci-info"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/suzuki-shunsuke/ci-info"
+    ],
+    "provides": [
+      "ci-info"
+    ],
+    "src_url": [
+      "https://github.com/suzuki-shunsuke/ci-info"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v2.3.2"
   },
   {
     "_disabled": "false",
@@ -2446,7 +2627,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-e6ff6d5-250404T234728"
+    "version": "HEAD-856e92c-250405T074101"
   },
   {
     "_disabled": "false",
@@ -2763,7 +2944,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-e6ff6d5-250404T234728"
+    "version": "HEAD-856e92c-250405T074101"
   },
   {
     "_disabled": "true",
@@ -4414,7 +4595,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-a7ac898-250405T085935"
+    "version": "HEAD-3def466-250405T135420"
   },
   {
     "_disabled": "false",
@@ -4685,7 +4866,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-acf9eda-250405T000548"
+    "version": "HEAD-460a2f2-250405T060303"
   },
   {
     "_disabled": "false",
@@ -4923,7 +5104,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-420e730-250404T105606"
+    "version": "HEAD-c13a403-250405T111141"
   },
   {
     "_disabled": "false",
@@ -5574,7 +5755,8 @@
     ],
     "tag": [
       "utility"
-    ]
+    ],
+    "version": "HEAD-2f5068b-250327T205713"
   },
   {
     "_disabled": "false",
@@ -7299,7 +7481,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-29f24ad-250404T211945"
+    "version": "HEAD-3aac8d2-250405T034518"
   },
   {
     "_disabled": "false",
@@ -9053,7 +9235,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-038d336-250403T173417"
+    "version": "HEAD-7514e8a-250404T194044"
   },
   {
     "_disabled": "false",
@@ -12728,7 +12910,7 @@
       "cybersecurity",
       "redteam"
     ],
-    "version": "HEAD-9627f49-250324T200904"
+    "version": "HEAD-5c43575-250404T214108"
   },
   {
     "_disabled": "false",
@@ -14603,6 +14785,54 @@
       "Utility"
     ],
     "version": "HEAD-d5dba09-250325T085125"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "siegfried",
+    "pkg_family": "siegfried",
+    "pkg_id": "github.com.richardlehane.siegfried",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/richardlehane-siegfried/siegfried/siegfried",
+    "bincache": "ghcr.io/pkgforge/bincache/siegfried/official/sf",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/siegfried/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Signature-based file format identification",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/siegfried/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/richardlehane/siegfried"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0",
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/richardlehane/siegfried"
+    ],
+    "provides": [
+      "sf",
+      "siegfried"
+    ],
+    "repology": [
+      "siegfried"
+    ],
+    "src_url": [
+      "https://github.com/richardlehane/siegfried"
+    ],
+    "tag": [
+      "file"
+    ],
+    "version": "HEAD-1dacee4-250405T134224"
   },
   {
     "_disabled": "false",
@@ -19839,7 +20069,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-9565c1b-250405T074227"
+    "version": "HEAD-ff0a74f-250405T111656"
   },
   {
     "_disabled": "false",

@@ -3181,7 +3181,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-15bb29c-250405T204657"
+    "version": "HEAD-181885b-250406T102841"
   },
   {
     "_disabled": "false",
@@ -3498,7 +3498,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-15bb29c-250405T204657"
+    "version": "HEAD-181885b-250406T102841"
   },
   {
     "_disabled": "true",
@@ -9672,7 +9672,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-22fbdc8-250402T011648"
+    "version": "HEAD-a347870-250406T041004"
   },
   {
     "_disabled": "false",
@@ -11229,7 +11229,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-87a9f52-250404T210422"
+    "version": "HEAD-a43a2e0-250406T091045"
   },
   {
     "_disabled": "false",
@@ -11967,7 +11967,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-1c6c85d-250406T094928"
+    "version": "HEAD-b81d465-250406T102455"
   },
   {
     "_disabled": "false",
@@ -12031,7 +12031,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-1c6c85d-250406T094928"
+    "version": "HEAD-b81d465-250406T102455"
   },
   {
     "_disabled": "false",
@@ -14266,7 +14266,7 @@
       "analyzer",
       "linter"
     ],
-    "version": "HEAD-598ff71-250406T135851"
+    "version": "HEAD-6787674-250406T160005"
   },
   {
     "_disabled": "false",
@@ -14325,7 +14325,7 @@
     "tag": [
       "linter"
     ],
-    "version": "HEAD-62f0b01-250405T132306"
+    "version": "HEAD-2442da0-250406T095631"
   },
   {
     "_disabled": "false",
@@ -16272,6 +16272,62 @@
     "version": "HEAD-cf4ff14-250331T081411"
   },
   {
+    "_disabled": "false",
+    "pkg": "soar",
+    "pkg_family": "soar",
+    "pkg_id": "github.com.pkgforge.soar.glibc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soar-glibc/soar/soar",
+    "bincache": "ghcr.io/pkgforge/bincache/soar/glibc/soar",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.glibc.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (GLIBC)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "soar-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.glibc.source.yaml",
+    "homepage": [
+      "https://soar.qaidvoid.dev",
+      "https://github.com/pkgforge/soar"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
+      "Statically Linked on Debian (GLIBC)"
+    ],
+    "provides": [
+      "soar"
+    ],
+    "repology": [
+      "soar"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge/soar"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "HEAD-b5a6c04-250406T133002"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -16331,7 +16387,63 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-a75bab6-250405T140508"
+    "version": "HEAD-b5a6c04-250406T133002"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "soar",
+    "pkg_family": "soar",
+    "pkg_id": "github.com.pkgforge.soar.musl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soar-musl/soar/soar",
+    "bincache": "ghcr.io/pkgforge/bincache/soar/musl/soar",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.musl.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (MUSL)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "soar-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.musl.source.yaml",
+    "homepage": [
+      "https://soar.qaidvoid.dev",
+      "https://github.com/pkgforge/soar"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
+      "Built on Vanilla Musl"
+    ],
+    "provides": [
+      "soar"
+    ],
+    "repology": [
+      "soar"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge/soar"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "HEAD-b5a6c04-250406T133002"
   },
   {
     "_disabled": "false",
@@ -16374,7 +16486,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3e9ec34-250401T150807"
+    "version": "HEAD-9406056-250406T132142"
   },
   {
     "_disabled": "false",
@@ -17918,7 +18030,7 @@
       "logfile",
       "tail"
     ],
-    "version": "HEAD-cc4a27c-250405T091940"
+    "version": "HEAD-a8b37af-250406T103135"
   },
   {
     "_disabled": "false",
@@ -19319,6 +19431,48 @@
       "sql"
     ],
     "version": "HEAD-d40ed53-250305T091934"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "usque",
+    "pkg_family": "usque",
+    "pkg_id": "github.com.Diniboy1123.usque.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/usque-source/usque/usque",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/usque/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "FOSS reimplementation of the Cloudflare WARP client's MASQUE protocol",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/usque/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/Diniboy1123/usque"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Diniboy1123/usque"
+    ],
+    "provides": [
+      "usque"
+    ],
+    "src_url": [
+      "https://github.com/Diniboy1123/usque"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-8349101-250331T234750"
   },
   {
     "_disabled": "false",

@@ -1,5 +1,5 @@
 ```mathematica
-367M └─┬ main
+368M └─┬ main
 173M   ├─┬ misc
 173M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
@@ -209,29 +209,29 @@
  28K   │     └── gen_meta.sh
  12M   ├─┬ soarpkgs
  12M   │ ├─┬ data
-2.3M   │ │ ├── INDEX.json
+2.4M   │ │ ├── INDEX.json
+1.5M   │ │ ├── OLD_bincache_aarch64-Linux.json
+1.5M   │ │ ├── OLD_bincache_x86_64-Linux.json
 1.4M   │ │ ├── BACKAGE.json
-1.4M   │ │ ├── OLD_bincache_aarch64-Linux.json
-1.3M   │ │ ├── OLD_bincache_x86_64-Linux.json
 1.2M   │ │ ├── INDEX.db
 776K   │ │ ├── pub_issues_binaries.txt
-692K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-664K   │ │ ├── DIFF_bincache_x86_64-Linux.json
-344K   │ │ ├── INDEX.json.cba
+740K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+716K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+348K   │ │ ├── INDEX.json.cba
 304K   │ │ ├── pub_issues_packages.txt
-220K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
-220K   │ │ ├── INDEX.db.cba
-212K   │ │ ├── INDEX.json.xz
+236K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
+224K   │ │ ├── INDEX.db.cba
+216K   │ │ ├── INDEX.json.xz
 212K   │ │ ├── GH_REPO.md
-204K   │ │ ├── INDEX.json.zstd
-172K   │ │ ├── INDEX.db.zstd
-164K   │ │ ├── INDEX.db.xz
-140K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
- 72K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 52K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+208K   │ │ ├── INDEX.json.zstd
+176K   │ │ ├── INDEX.db.zstd
+168K   │ │ ├── INDEX.db.xz
+156K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
+ 84K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 56K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  48K   │ │ ├── URLS.txt
+ 32K   │ │ ├── DIFF_bincache.json
  28K   │ │ ├── GH_REPO_ARCHIVED.md
- 20K   │ │ ├── DIFF_bincache.json
 8.0K   │ │ ├── DIFF_pkgcache.json
 4.0K   │ │ ├── minisign.pub
 4.0K   │ │ ├── TOTAL_CACHE.txt

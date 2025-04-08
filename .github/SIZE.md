@@ -10,7 +10,7 @@
 9.0M   │ │ ├── PKGSRC.json
 5.0M   │ │ ├── ALPINE_GIT.json
 2.7M   │ │ ├── BREW_FORMULA.json
-1.5M   │ │ ├── BREW_CASK.json
+1.6M   │ │ ├── BREW_CASK.json
 1.0M   │ │ ├── PPKG_RAW.json
 456K   │ │ ├── FLATPAK_APPS_INFO.json
 424K   │ │ ├── FLATPAK_APPS_INFO.txt
@@ -115,13 +115,13 @@
 1.4M   │ │ │ ├── aarch64-Linux.json
 1.1M   │ │ │ ├── aarch64-Linux.db
 312K   │ │ │ ├── x86_64-Linux.db.cba
-296K   │ │ │ ├── x86_64-Linux.json.cba
+292K   │ │ │ ├── x86_64-Linux.json.cba
 252K   │ │ │ ├── x86_64-Linux.db.zstd
 240K   │ │ │ ├── x86_64-Linux.db.xz
 228K   │ │ │ ├── x86_64-Linux.json.zstd
 216K   │ │ │ ├── x86_64-Linux.json.xz
 132K   │ │ │ ├── aarch64-Linux.db.cba
-124K   │ │ │ ├── aarch64-Linux.json.cba
+128K   │ │ │ ├── aarch64-Linux.json.cba
 112K   │ │ │ ├── aarch64-Linux.db.zstd
 104K   │ │ │ ├── aarch64-Linux.db.xz
 100K   │ │ │ ├── aarch64-Linux.json.zstd

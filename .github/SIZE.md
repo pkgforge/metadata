@@ -222,7 +222,7 @@
 236K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
 224K   │ │ ├── INDEX.db.cba
 216K   │ │ ├── INDEX.json.xz
-212K   │ │ ├── GH_REPO.md
+216K   │ │ ├── GH_REPO.md
 208K   │ │ ├── INDEX.json.zstd
 176K   │ │ ├── INDEX.db.zstd
 168K   │ │ ├── INDEX.db.xz
@@ -334,7 +334,7 @@
  28K   │   ├── icon_database.png
  24K   │   ├── icon_config_multi.png
  20K   │   └── icon_json.png
-220K   ├── GHCR_PKGS.json.zstd
+224K   ├── GHCR_PKGS.json.zstd
  28K   ├─┬ r2
  12K   │ ├─┬ scripts
 8.0K   │ │ └── sync_r2_mirror.sh

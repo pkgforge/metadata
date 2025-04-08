@@ -66,6 +66,68 @@
     "_disabled": "false",
     "pkg": "affine",
     "pkg_family": "affine",
+    "pkg_id": "github.com.affine-mirror.affine.canary.1",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/canary-1/affine/affine",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/affine/appimage.official.canary-1.yaml",
+    "category": [
+      "Database",
+      "Education"
+    ],
+    "description": "FOSS Knowledge Base with fully merged docs, whiteboards and databases [canary.1]",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "affine",
+          "affine-bin",
+          "affine-canary-bin"
+        ]
+      },
+      "homebrew": [
+        "affine"
+      ],
+      "nixpkgs": [
+        "affine"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/affine/appimage.official.canary-1.yaml",
+    "homepage": [
+      "https://affine.pro",
+      "https://github.com/toeverything/AFFiNE"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/affine/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/toeverything/AFFiNE"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/affine/appimage/official",
+    "provides": [
+      "affine"
+    ],
+    "repology": [
+      "affine-whiteboard"
+    ],
+    "src_url": [
+      "https://github.com/toeverything/AFFiNE"
+    ],
+    "tag": [
+      "knowledge-base",
+      "wiki"
+    ],
+    "version": "v0.21.1-canary.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "affine",
+    "pkg_family": "affine",
     "pkg_id": "github.com.affine-mirror.affine.stable",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/affine-stable/affine/affine",
@@ -370,81 +432,6 @@
       "Utility"
     ],
     "version": "1.38.29"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "bear",
-    "pkg_family": "bear",
-    "pkg_id": "ppkg.bundle.bear.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bear-stable/bear/bear",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/bear/appimage.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Generate a compilation database for clang tooling",
-    "distro_pkg": {
-      "alpine": [
-        "bear"
-      ],
-      "archlinux": {
-        "aur": [
-          "bear-git"
-        ],
-        "extra": [
-          "bear"
-        ]
-      },
-      "debian": [
-        "bear"
-      ],
-      "gentoo": [
-        "dev-util/bear"
-      ],
-      "gnuguix": [
-        "bear"
-      ],
-      "homebrew": [
-        "bear"
-      ],
-      "nixpkgs": [
-        "bear"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/bear/appimage.ppkg.stable.yaml",
-    "homepage": [
-      "https://github.com/rizsotto/Bear"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "QaidVoid (https://github.com/QaidVoid)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "provides": [
-      "bear"
-    ],
-    "repology": [
-      "bear-clang"
-    ],
-    "src_url": [
-      "https://github.com/rizsotto/Bear"
-    ],
-    "tag": [
-      "clang"
-    ],
-    "version": "3.1.6"
   },
   {
     "_disabled": "false",
@@ -971,53 +958,6 @@
       "Utility"
     ],
     "version": "HEAD-a7fa812-250407T083343"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "compiledb",
-    "pkg_family": "compiledb",
-    "pkg_id": "sharun.wrappe.pypi.compiledb",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-compiledb/compiledb/compiledb",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/compiledb/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Generate Clang's JSON Compilation Database files for make-based build systems",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/compiledb/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/nickdiego/compiledb"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "provides": [
-      "compiledb"
-    ],
-    "repology": [
-      "compiledb"
-    ],
-    "src_url": [
-      "https://pypi.org/project/compiledb"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "0.10.7"
   },
   {
     "_disabled": "false",
@@ -2124,6 +2064,59 @@
   },
   {
     "_disabled": "false",
+    "pkg": "huggingface-cli",
+    "pkg_family": "huggingface-cli",
+    "pkg_id": "sharun.wrappe.source.huggingface-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/huggingface-cli/huggingface-cli/huggingface-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/huggingface-cli/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "The official Python client for the Huggingface Hub",
+    "distro_pkg": {
+      "homebrew": [
+        "huggingface-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/huggingface-cli/archive.sharun.source.yaml",
+    "homepage": [
+      "https://huggingface.co/docs/huggingface_hub"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/huggingface-cli/archive/sharun",
+    "provides": [
+      "huggingface-cli"
+    ],
+    "repology": [
+      "huggingface-cli"
+    ],
+    "src_url": [
+      "https://github.com/huggingface/huggingface_hub"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-e430ffe-250408T103045"
+  },
+  {
+    "_disabled": "false",
     "pkg": "kdenlive",
     "pkg_family": "kdenlive",
     "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
@@ -2668,6 +2661,71 @@
   },
   {
     "_disabled": "false",
+    "pkg": "oci-cli",
+    "pkg_family": "oci-cli",
+    "pkg_id": "sharun.wrappe.pypi.oci-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oci-cli/oci-cli/oci-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oci-cli/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Command Line Interface for Oracle Cloud Infrastructure",
+    "distro_pkg": {
+      "alpine": [
+        "oci-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "oci-cli"
+        ]
+      },
+      "homebrew": [
+        "oci-cli"
+      ],
+      "nixpkgs": [
+        "oci-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/oci-cli/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://cloud.oracle.com/cloud-infrastructure",
+      "https://github.com/oracle/oci-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "UPL-1.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
+    "provides": [
+      "oci==oci-cli"
+    ],
+    "repology": [
+      "oci-cli"
+    ],
+    "src_url": [
+      "https://pypi.org/project/oci-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.54.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "puddletag",
     "pkg_family": "puddletag",
     "pkg_id": "github.com.pkgforge-dev.puddletag-AppImage.stable",
@@ -2855,6 +2913,66 @@
   },
   {
     "_disabled": "false",
+    "pkg": "shell-gpt",
+    "pkg_family": "shell-gpt",
+    "pkg_id": "sharun.wrappe.pypi.shell-gpt",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/shell-gpt/shell-gpt/shell-gpt",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/shell-gpt/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Postgres CLI with autocompletion and syntax highlighting",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "shell-gpt",
+          "shellgpt-git"
+        ]
+      },
+      "nixpkgs": [
+        "shell-gpt",
+        "shell_gpt"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/shell-gpt/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/TheR1D/shell_gpt"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/shell-gpt/archive/sharun",
+    "provides": [
+      "sgpt==shell-gpt"
+    ],
+    "repology": [
+      "shell-gpt"
+    ],
+    "src_url": [
+      "https://pypi.org/project/shell-gpt"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.4.5"
+  },
+  {
+    "_disabled": "false",
     "pkg": "simplex-desktop",
     "pkg_family": "simplex-desktop",
     "pkg_id": "nixpkgs.simplex-chat-desktop",
@@ -2916,7 +3034,7 @@
       "messenger",
       "privacy"
     ],
-    "version": "6.3.0"
+    "version": "6.3.1"
   },
   {
     "_disabled": "false",

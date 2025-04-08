@@ -1167,7 +1167,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9a7c564-250407T165201"
+    "version": "HEAD-174b612-250408T112433"
   },
   {
     "_disabled": "false",
@@ -4292,7 +4292,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-ea3a0d2-250408T000101"
+    "version": "HEAD-228fa64-250408T020914"
   },
   {
     "_disabled": "false",
@@ -5789,7 +5789,82 @@
       "cat",
       "text-viewer"
     ],
-    "version": "HEAD-ea17f6a-250407T173112"
+    "version": "HEAD-2f70906-250408T050000"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bear",
+    "pkg_family": "bear",
+    "pkg_id": "ppkg.bundle.bear.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bear-stable/bear/bear",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/bear/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Generate a compilation database for clang tooling",
+    "distro_pkg": {
+      "alpine": [
+        "bear"
+      ],
+      "archlinux": {
+        "aur": [
+          "bear-git"
+        ],
+        "extra": [
+          "bear"
+        ]
+      },
+      "debian": [
+        "bear"
+      ],
+      "gentoo": [
+        "dev-util/bear"
+      ],
+      "gnuguix": [
+        "bear"
+      ],
+      "homebrew": [
+        "bear"
+      ],
+      "nixpkgs": [
+        "bear"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/bear/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/rizsotto/Bear"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "QaidVoid (https://github.com/QaidVoid)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "bear"
+    ],
+    "repology": [
+      "bear-clang"
+    ],
+    "src_url": [
+      "https://github.com/rizsotto/Bear"
+    ],
+    "tag": [
+      "clang"
+    ],
+    "version": "3.1.6"
   },
   {
     "_disabled": "false",
@@ -6289,6 +6364,7 @@
     "pkg_id": "codeberg.org.koutheir.binary-security-check",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/security-check/binary-security-check/binary-security-check",
+    "bincache": "ghcr.io/pkgforge/bincache/binary-security-check/official/binary-security-check",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/binary-security-check/static.official.source.yaml",
     "category": [
       "ConsoleOnly",
@@ -12553,7 +12629,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "3.3.0"
+    "version": "4.0.0"
   },
   {
     "_disabled": "false",
@@ -15809,6 +15885,95 @@
   },
   {
     "_disabled": "false",
+    "pkg": "compiledb",
+    "pkg_family": "compiledb",
+    "pkg_id": "sharun.wrappe.pypi.compiledb",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-compiledb/compiledb/compiledb",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/compiledb/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Generate Clang's JSON Compilation Database files for make-based build systems",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/compiledb/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/nickdiego/compiledb"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "compiledb"
+    ],
+    "repology": [
+      "compiledb"
+    ],
+    "src_url": [
+      "https://pypi.org/project/compiledb"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "0.10.7"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "compiledb-go",
+    "pkg_family": "compiledb-go",
+    "pkg_id": "github.com.fcying.compiledb-go.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/go-source/compiledb-go/compiledb-go",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/compiledb-go/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Generate Clang's JSON Compilation Database files for make-based build systems",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/compiledb-go/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fcying/compiledb-go"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fcying/compiledb-go"
+    ],
+    "provides": [
+      "compiledb-go"
+    ],
+    "src_url": [
+      "https://github.com/fcying/compiledb-go"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-c0d7016-250327T173521"
+  },
+  {
+    "_disabled": "false",
     "pkg": "containerd",
     "pkg_family": "containerd",
     "pkg_id": "github.com.containerd.containerd",
@@ -18014,7 +18179,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-b7bf8c9-250407T161800"
+    "version": "HEAD-8aaa8ff-250408T081554"
   },
   {
     "_disabled": "false",
@@ -18331,7 +18496,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-b7bf8c9-250407T161800"
+    "version": "HEAD-8aaa8ff-250408T081554"
   },
   {
     "_disabled": "false",
@@ -18675,7 +18840,7 @@
       "authy",
       "totp"
     ],
-    "version": "HEAD-01c8e2b-250407T221609"
+    "version": "HEAD-41fc561-250408T061645"
   },
   {
     "_disabled": "false",
@@ -24582,7 +24747,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-e455ee6-250407T090209"
+    "version": "HEAD-6cc349e-250408T031509"
   },
   {
     "_disabled": "false",
@@ -26341,7 +26506,7 @@
       "torrent",
       "transmission"
     ],
-    "version": "HEAD-09ae702-250408T073357"
+    "version": "HEAD-d6fd157-250408T093221"
   },
   {
     "_disabled": "false",
@@ -31722,7 +31887,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-6ca67bd-250408T000608"
+    "version": "HEAD-6528e5b-250408T060342"
   },
   {
     "_disabled": "false",
@@ -32115,7 +32280,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250405T005017"
+    "version": "250408T044653"
   },
   {
     "_disabled": "false",
@@ -32571,7 +32736,7 @@
       "editor",
       "graphics"
     ],
-    "version": "54454.b303b6e20b1"
+    "version": "54461.14b1c112737"
   },
   {
     "_disabled": "false",
@@ -33772,7 +33937,7 @@
     "tag": [
       "gitlab"
     ],
-    "version": "HEAD-99fb6f8-250407T171104"
+    "version": "HEAD-950fa32-250407T204755"
   },
   {
     "_disabled": "false",
@@ -33939,7 +34104,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-705b86d-250406T213637"
+    "version": "HEAD-65ffe81-250408T022904"
   },
   {
     "_disabled": "false",
@@ -34605,7 +34770,7 @@
       "public-suffix",
       "tld"
     ],
-    "version": "HEAD-9c0c56e-250401T215439"
+    "version": "HEAD-978072d-250408T033250"
   },
   {
     "_disabled": "false",
@@ -34816,7 +34981,7 @@
     "tag": [
       "pentesting"
     ],
-    "version": "HEAD-53badb9-250401T160626"
+    "version": "HEAD-3f34b63-250408T071415"
   },
   {
     "_disabled": "false",
@@ -38608,7 +38773,7 @@
     "tag": [
       "hetzner"
     ],
-    "version": "HEAD-f8b8abc-250404T173542"
+    "version": "HEAD-4746a36-250408T030120"
   },
   {
     "_disabled": "false",
@@ -43549,7 +43714,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-5dc9da3-250407T193829"
+    "version": "HEAD-3e51038-250407T220411"
   },
   {
     "_disabled": "false",
@@ -50461,7 +50626,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-c4e92e6-250407T120644"
+    "version": "HEAD-7438d67-250407T204912"
   },
   {
     "_disabled": "false",
@@ -55118,7 +55283,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-30ca197-250331T125013"
+    "version": "HEAD-bcca638-250408T094050"
   },
   {
     "_disabled": "false",
@@ -56629,7 +56794,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3ccc5d7-250402T225442"
+    "version": "HEAD-c60ba05-250408T022135"
   },
   {
     "_disabled": "false",
@@ -58693,7 +58858,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6dac1e4-250401T094056"
+    "version": "HEAD-d13d328-250408T081059"
   },
   {
     "_disabled": "false",
@@ -61876,7 +62041,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6a5be45-250322T162817"
+    "version": "HEAD-5ed8b39-250408T120648"
   },
   {
     "_disabled": "false",
@@ -61940,7 +62105,7 @@
       "provenance",
       "security"
     ],
-    "version": "HEAD-7b74193-250407T085759"
+    "version": "HEAD-8f8fb19-250408T080022"
   },
   {
     "_disabled": "false",
@@ -62404,7 +62569,7 @@
     "tag": [
       "linter"
     ],
-    "version": "HEAD-343da9f-250407T205955"
+    "version": "HEAD-02f0a40-250408T071758"
   },
   {
     "_disabled": "false",
@@ -64065,7 +64230,7 @@
       "screen-sharing",
       "teamviewer"
     ],
-    "version": "250408T005000"
+    "version": "250408T012225"
   },
   {
     "_disabled": "false",
@@ -64188,7 +64353,7 @@
       "scanning",
       "security"
     ],
-    "version": "HEAD-cf42642-250402T094949"
+    "version": "HEAD-6ec01bb-250408T021453"
   },
   {
     "_disabled": "false",
@@ -67882,7 +68047,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d7a88a2-250406T220545"
+    "version": "HEAD-ce2eeea-250408T142031"
   },
   {
     "_disabled": "false",
@@ -72891,7 +73056,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-0655dd7-250407T130934"
+    "version": "HEAD-ad2b075-250407T192451"
   },
   {
     "_disabled": "false",
@@ -72956,7 +73121,7 @@
       "logfile",
       "tail"
     ],
-    "version": "HEAD-092f4ce-250407T114955"
+    "version": "HEAD-ca7c087-250408T081645"
   },
   {
     "_disabled": "false",
@@ -75080,7 +75245,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9742900-250401T090948"
+    "version": "HEAD-1b2f39e-250407T214048"
   },
   {
     "_disabled": "false",
@@ -84091,7 +84256,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-0082d11-250407T235055"
+    "version": "HEAD-2e1156f-250408T132946"
   },
   {
     "_disabled": "false",

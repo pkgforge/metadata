@@ -1405,6 +1405,23 @@
     "install": "cmakew --targets=bz2-static,bzip2,bzip2recover --components=bin,man"
   },
   {
+    "pkgname": "bzip3",
+    "pkgtype": "exe",
+    "version": "1.5.1",
+    "license": "LGPL-3.0-only",
+    "summary": "A better and stronger spiritual successor to BZip2",
+    "web-url": "https://github.com/kspalaiologos/bzip3",
+    "git-url": "https://github.com/kspalaiologos/bzip3",
+    "src-url": "https://github.com/kspalaiologos/bzip3/releases/download/1.5.1/bzip3-1.5.1.tar.gz",
+    "src-sha": "cc7cacda6d15f24d3fe73fd87b895d5fd2c0f8b6dd0630ae4993aa45c4853c3b",
+    "dep-upp": "curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "0",
+    "parallel": "1",
+    "install": "configure --disable-arch-native --disable-shared --enable-static",
+    "dotweak": "run rm -rf include/ lib/"
+  },
+  {
     "pkgname": "c-examples",
     "pkgtype": "exe",
     "version": "2025.04.09",
@@ -13132,7 +13149,7 @@
     "git-url": "https://src.fedoraproject.org/rpms/libtirpc.git",
     "src-url": "https://downloads.sourceforge.net/project/libtirpc/libtirpc/1.3.5/libtirpc-1.3.5.tar.bz2",
     "src-sha": "9b31370e5a38d3391bf37edfa22498e28fe2142467ae6be7a17c9068ec0bf12f",
-    "dep-pkg": "sys-queue.h",
+    "dep-res": "sys/queue.h",
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
@@ -14295,7 +14312,8 @@
     "web-url": "https://www.lighttpd.net/",
     "src-url": "https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.76.tar.xz",
     "src-sha": "8cbf4296e373cfd0cedfe9d978760b5b05c58fdc4048b4e2bcaf0a61ac8f5011",
-    "dep-pkg": "libopenssl libz libbz2 libpcre2 sys-queue.h",
+    "dep-pkg": "libopenssl libz libbz2 libpcre2",
+    "dep-res": "sys/queue.h",
     "dep-lib": "-lpthread",
     "dep-upp": "libtool curl bsdtar gmake gm4 perl autoconf automake gmake",
     "bsystem": "autogen",
@@ -15934,6 +15952,25 @@
     "install": "cargow install --locked"
   },
   {
+    "pkgname": "nsjail",
+    "pkgtype": "exe",
+    "version": "3.4",
+    "summary": "A lightweight process isolation tool that utilizes Linux namespaces, cgroups, rlimits and seccomp-bpf syscall filters, leveraging the Kafel BPF language for enhanced security",
+    "web-url": "https://github.com/google/nsjail",
+    "git-url": "https://github.com/google/nsjail",
+    "git-sha": "refs/tags/3.4",
+    "fix-url": "https://gitlab.alpinelinux.org/alpine/aports/-/raw/master/community/nsjail/protobuf-23.patch",
+    "fix-sha": "ff06210d23fba3d531895e8b225a2fe999938141a3ba39bca52f5b560d0ec6ac",
+    "dep-pkg": "libprotobuf.a libnl",
+    "dep-res": "sys/queue.h",
+    "dep-upp": "gm4 flex bison git curl patch gmake",
+    "bsystem": "gmake",
+    "binbstd": "1",
+    "ppflags": "-Wno-error=return-type",
+    "parallel": "1",
+    "install": "gmakew clean\ngmakew\ninstall_bins nsjail"
+  },
+  {
     "pkgname": "nspr",
     "pkgtype": "lib",
     "version": "4.36",
@@ -17132,7 +17169,8 @@
     "git-url": "https://github.com/proot-me/proot",
     "src-url": "https://github.com/proot-me/proot/archive/refs/tags/v5.4.0.tar.gz",
     "src-sha": "29248aac2a7ce10c3bd5ee5602742ec33b2532310ff9cf73b79f3c133e5a5f68",
-    "dep-pkg": "libarchive libtalloc sys-queue.h",
+    "dep-pkg": "libarchive libtalloc",
+    "dep-res": "sys/queue.h",
     "dep-upp": "curl bsdtar gmake",
     "bsystem": "gmake",
     "binbstd": "1",
@@ -17431,6 +17469,25 @@
     "dopatch": "if [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    LIST='\n    0006-linux-user-signal.c-define-__SIGRTMIN-MAX-for-non-GN.patch\n    xattr_size_max.patch\n    MAP_SYNC-fix.patch\n    fix-sockios-header.patch\n    guest-agent-shutdown.patch\n    musl-initialise-msghdr.patch\n    fix-strerrorname_np.patch\n    liburing.patch\n    '\n\n    for f in $LIST\n    do\n        wfetch \"https://gitlab.alpinelinux.org/alpine/aports/-/raw/master/community/qemu/$f\"\n    done\n\n    for f in $LIST\n    do\n        patch -p1 < \"$f\"\n    done\nfi\n\ngsed -i 's|-static-pie|-pie|' meson.build\ngsed -i 's|$meson setup |meson setup --prefer-static |' configure\ngsed -i \"s|cc.find_library('vdeplug'|cc.find_library('vdeplug', static : true, dirs : ['$vde_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('cap-ng'|cc.find_library('cap-ng', static : true, dirs : ['$libcap_ng_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('attr'|cc.find_library('attr', static : true, dirs : ['$libattr_LIBRARY_DIR']|\" meson.build\ngsed -i \"s|cc.find_library('fdt'|cc.find_library('fdt', static : true, dirs : ['$libfdt_LIBRARY_DIR']|\" meson.build\ngsed -i \"/iconv = /c iconv = cc.find_library('iconv', static : true, dirs: ['$libiconv_LIBRARY_DIR'])\" meson.build",
     "dosetup": "unset CONFIGURE_EXTRA_ARGS\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS='--enable-cocoa'\nfi",
     "install": "./configure \\\n    --prefix=$PACKAGE_INSTALL_DIR \\\n    --cc=$CC \\\n    --host-cc=$CC \\\n    --extra-cflags=\"$CFLAGS $CPPFLAGS -DNCURSES_WIDECHAR=1\" \\\n    --extra-ldflags=\"$LDFLAGS\" \\\n    --disable-bsd-user \\\n    --disable-guest-agent \\\n    --enable-capstone \\\n    --enable-virtfs \\\n    --enable-curses \\\n    --enable-libssh \\\n    --enable-slirp \\\n    --enable-zstd \\\n    --enable-fdt=system \\\n    --enable-vde \\\n    --disable-sdl \\\n    --disable-gtk $CONFIGURE_EXTRA_ARGS\ngmakew install V=1"
+  },
+  {
+    "pkgname": "qman",
+    "pkgtype": "exe",
+    "version": "1.4.0",
+    "license": "BSD-2-Clause",
+    "summary": "A more modern man page viewer for our terminals",
+    "web-url": "https://github.com/plp13/qman",
+    "git-url": "https://github.com/plp13/qman",
+    "src-url": "https://github.com/plp13/qman/archive/refs/tags/v1.4.0.tar.gz",
+    "src-sha": "e59365d83b670e197a9596db5cdd806795fbe86ecd6853a0bd362c9261339ed8",
+    "dep-pkg": "libncurses liblzma libbz2 libz",
+    "dep-upp": "curl bsdtar python3 python3 ninja",
+    "dep-pym": "cogapp meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "dopatch": "gsed -i \"s|dependency('bzip2'|dependency('libbz2'|\" src/meson.build\ngsed -i '1i #include<signal.h>' src/tui.c",
+    "install": "mesonw -Dtests=disabled -Dconfigdir=\"$PACKAGE_INSTALL_DIR/etc/xdg/qman\""
   },
   {
     "pkgname": "qpdf",
@@ -18389,6 +18446,7 @@
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
+    "dosetup": "export RUSTUP_TOOLCHAIN=1.81",
     "install": "cargow install"
   },
   {
@@ -20628,6 +20686,7 @@
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
+    "dosetup": "export RUSTUP_TOOLCHAIN=1.81",
     "install": "cargow install"
   },
   {
@@ -21172,7 +21231,8 @@
     "git-url": "https://github.com/Airblader/xcb-util-xrm",
     "src-url": "https://github.com/Airblader/xcb-util-xrm/releases/download/v1.3/xcb-util-xrm-1.3.tar.gz",
     "src-sha": "0129f74c327ae65e2f4ad4002f300b4f02c9aff78c00997f1f1c5a430f922f34",
-    "dep-pkg": "xorg-libx11 xorg-libxcb-util sys-queue.h",
+    "dep-pkg": "xorg-libx11 xorg-libxcb-util",
+    "dep-res": "sys/queue.h",
     "dep-upp": "gm4 curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
@@ -22078,6 +22138,22 @@
     "binbstd": "1",
     "parallel": "1",
     "install": "cargow install"
+  },
+  {
+    "pkgname": "zpaq",
+    "pkgtype": "exe",
+    "version": "7.15",
+    "license": "Unlicense MIT public_domain",
+    "summary": "Incremental, journaling command-line archiver",
+    "web-url": "https://mattmahoney.net/dc/zpaq.html",
+    "git-url": "https://github.com/zpaq/zpaq",
+    "src-url": "https://github.com/zpaq/zpaq/archive/refs/tags/7.15.tar.gz",
+    "src-sha": "64280d86cd38ad5ebc1c6415b17eb09ee292078d772176b90e16287687191efe",
+    "dep-upp": "curl bsdtar gmake",
+    "bsystem": "gmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "install": "gmakew clean\ngmakew \ngmakew install PREFIX=\"$PACKAGE_INSTALL_DIR\""
   },
   {
     "pkgname": "zsh",

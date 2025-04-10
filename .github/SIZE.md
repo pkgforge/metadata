@@ -221,8 +221,8 @@
 304K   │ │ ├── pub_issues_packages.txt
 232K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
 228K   │ │ ├── INDEX.db.cba
+220K   │ │ ├── GH_REPO.md
 216K   │ │ ├── INDEX.json.xz
-216K   │ │ ├── GH_REPO.md
 208K   │ │ ├── INDEX.json.zstd
 176K   │ │ ├── INDEX.db.zstd
 168K   │ │ ├── INDEX.db.xz
@@ -230,7 +230,6 @@
  96K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  64K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  48K   │ │ ├── URLS.txt
- 28K   │ │ ├── GH_REPO_ARCHIVED.md
  24K   │ │ ├── DIFF_bincache.json
 8.0K   │ │ ├── DIFF_pkgcache.json
 4.0K   │ │ ├── minisign.pub
@@ -242,7 +241,8 @@
 4.0K   │ │ ├── INDEX.json.bsum
 4.0K   │ │ ├── INDEX.db.zstd.bsum
 4.0K   │ │ ├── INDEX.db.xz.bsum
-4.0K   │ │ └── INDEX.db.bsum
+4.0K   │ │ ├── INDEX.db.bsum
+4.0K   │ │ └── GH_REPO_ARCHIVED.md
 356K   │ └─┬ scripts
 204K   │   ├─┬ archived
  52K   │   │ ├── pkgcache_.github_scripts.7z

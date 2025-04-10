@@ -243,7 +243,7 @@
     "tag": [
       "whatsapp"
     ],
-    "version": "5.6.2"
+    "version": "5.7.0"
   },
   {
     "_disabled": "false",
@@ -538,7 +538,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.79.46"
+    "version": "v1.79.49"
   },
   {
     "_disabled": "false",
@@ -1186,7 +1186,7 @@
       "Communications",
       "Networking/Chat"
     ],
-    "version": "0.0.632"
+    "version": "0.0.633"
   },
   {
     "_disabled": "false",
@@ -1298,6 +1298,79 @@
     "version": "HEAD-a3b6722-250410T130220"
   },
   {
+    "_disabled": "false",
+    "pkg": "element-desktop",
+    "pkg_family": "element-desktop",
+    "pkg_id": "runimage.alpine.element-desktop",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/element-desktop/element-desktop/element-desktop",
+    "app_id": "im.riot.Riot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/element-desktop/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A glossy Matrix collaboration client for desktop",
+    "distro_pkg": {
+      "alpine": [
+        "element-desktop",
+        "element-web"
+      ],
+      "archlinux": {
+        "aur": [
+          "element-desktop-git",
+          "element-desktop-nightly-bin",
+          "riot-web-develop-bin",
+          "riot-web-develop-git"
+        ],
+        "extra": [
+          "element.io"
+        ]
+      },
+      "homebrew": [
+        "element"
+      ],
+      "nixpkgs": [
+        "element-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/element-desktop/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://github.com/element-hq/element-desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/element-desktop/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/element-desktop/runimage/alpine",
+    "provides": [
+      "element-desktop:riot-desktop"
+    ],
+    "repology": [
+      "element-desktop"
+    ],
+    "src_url": [
+      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/testing/element-desktop"
+    ],
+    "tag": [
+      "chat",
+      "matrix"
+    ],
+    "version": "1.11.97"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -1352,7 +1425,7 @@
       "chat",
       "matrix"
     ],
-    "version": "1.11.96"
+    "version": "1.11.97"
   },
   {
     "_disabled": "false",
@@ -1621,7 +1694,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "139.0.20250409210623"
+    "version": "139.0.20250410092904"
   },
   {
     "_disabled": "false",
@@ -2846,6 +2919,57 @@
   },
   {
     "_disabled": "false",
+    "pkg": "pixelpulse2",
+    "pkg_family": "pixelpulse2",
+    "pkg_id": "github.com.pkgforge-dev.pixelpulse2",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dev-pixelpulse2/pixelpulse2/pixelpulse2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/pixelpulse2/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "Development",
+      "Education",
+      "Science"
+    ],
+    "description": "Pixelpulse2 is a user interface for analog systems exploration.",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/pixelpulse2/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://wiki.analog.com/university/tools/m1k/pixelpulse",
+      "https://sounddrill31.github.io/Pixelpulse2/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Souhrud Reddy (https://github.com/sounddrill31)"
+    ],
+    "note": [
+      "Pre Built AppImage, with Build-related changes. Check/Report @ https://github.com/pkgforge-dev/Pixelpulse2-AppImage",
+      "[PORTABLE] (Works on AnyLinux)",
+      "Run it with --getudev flag the first time to configure udev rules. It may not detect the board otherwise",
+      "To reduce crashes, plug in your device after configuring the udev rule and opening the app"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/pixelpulse2/appimage/pkgforge-dev",
+    "provides": [
+      "pixelpulse2"
+    ],
+    "repology": [
+      "pixelpulse2"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Pixelpulse2-AppImage"
+    ],
+    "tag": [
+      "pixelpulse2",
+      "adalm1000"
+    ],
+    "version": "14379866776"
+  },
+  {
+    "_disabled": "false",
     "pkg": "puddletag",
     "pkg_family": "puddletag",
     "pkg_id": "github.com.pkgforge-dev.puddletag-AppImage.stable",
@@ -3925,7 +4049,7 @@
     "tag": [
       "utility"
     ],
-    "version": "250410T101015"
+    "version": "250410T171413"
   },
   {
     "_disabled": "false",
@@ -3973,7 +4097,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250410T101015"
+    "version": "250410T171413"
   },
   {
     "_disabled": "false",
@@ -4100,6 +4224,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.11.2t(2025-04-10at05:34:10)"
+    "version": "Twilightbuild-1.11.2t(2025-04-10at09:14:19)"
   }
 ]

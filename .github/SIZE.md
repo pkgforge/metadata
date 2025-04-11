@@ -1,5 +1,5 @@
 ```mathematica
-407M └─┬ main
+408M └─┬ main
 173M   ├─┬ misc
 173M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
@@ -41,13 +41,13 @@
  18M   │ │ ├── aarch64-Linux.db
  13M   │ │ ├── x86_64-Linux.sdb
  12M   │ │ ├── aarch64-Linux.sdb
-4.0M   │ │ ├── x86_64-Linux.json.cba
+4.1M   │ │ ├── x86_64-Linux.json.cba
 4.0M   │ │ ├── aarch64-Linux.json.cba
 1.3M   │ │ ├── x86_64-Linux.db.cba
 1.2M   │ │ ├── aarch64-Linux.db.cba
 1.2M   │ │ ├── x86_64-Linux.sdb.cba
 1.2M   │ │ ├── aarch64-Linux.sdb.cba
-892K   │ │ ├── x86_64-Linux.sdb.zstd
+896K   │ │ ├── x86_64-Linux.sdb.zstd
 864K   │ │ ├── x86_64-Linux.db.zstd
 860K   │ │ ├── aarch64-Linux.sdb.zstd
 844K   │ │ ├── x86_64-Linux.db.xz
@@ -207,30 +207,30 @@
 4.0K   │   │ └── TOTAL.json
  32K   │   └─┬ scripts
  28K   │     └── gen_meta.sh
- 12M   ├─┬ soarpkgs
+ 13M   ├─┬ soarpkgs
  12M   │ ├─┬ data
 2.4M   │ │ ├── INDEX.json
-1.4M   │ │ ├── BACKAGE.json
 1.4M   │ │ ├── OLD_bincache_aarch64-Linux.json
 1.4M   │ │ ├── OLD_bincache_x86_64-Linux.json
+1.4M   │ │ ├── BACKAGE.json
 1.3M   │ │ ├── INDEX.db
-760K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-732K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+792K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+768K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 588K   │ │ ├── pub_issues_binaries.txt
-356K   │ │ ├── INDEX.json.cba
+360K   │ │ ├── INDEX.json.cba
 304K   │ │ ├── pub_issues_packages.txt
 248K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
-232K   │ │ ├── INDEX.db.cba
+236K   │ │ ├── INDEX.db.cba
 224K   │ │ ├── GH_REPO.md
 220K   │ │ ├── INDEX.json.xz
-212K   │ │ ├── INDEX.json.zstd
+216K   │ │ ├── INDEX.json.zstd
 180K   │ │ ├── INDEX.db.zstd
-168K   │ │ ├── INDEX.db.xz
+172K   │ │ ├── INDEX.db.xz
 152K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
-120K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 72K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+124K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 76K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  52K   │ │ ├── URLS.txt
- 20K   │ │ ├── DIFF_bincache.json
+ 28K   │ │ ├── DIFF_bincache.json
 8.0K   │ │ ├── DIFF_pkgcache.json
 4.0K   │ │ ├── minisign.pub
 4.0K   │ │ ├── TOTAL_CACHE.txt

@@ -51,7 +51,7 @@
 880K   │ │ ├── x86_64-Linux.db.zstd
 880K   │ │ ├── aarch64-Linux.sdb.zstd
 860K   │ │ ├── x86_64-Linux.db.xz
-844K   │ │ ├── aarch64-Linux.db.zstd
+848K   │ │ ├── aarch64-Linux.db.zstd
 836K   │ │ ├── x86_64-Linux.sdb.xz
 828K   │ │ ├── aarch64-Linux.db.xz
 812K   │ │ ├── x86_64-Linux.json.zstd
@@ -83,7 +83,7 @@
  32K   │   ├── gen_meta_x86_64-Linux.sh
  32K   │   ├── gen_meta_aarch64-Linux.sh
  12K   │   └── sync_hf_mirror.sh
- 45M   ├── GHCR_PKGS.json
+ 46M   ├── GHCR_PKGS.json
  32M   ├─┬ external
  11M   │ ├─┬ am
  11M   │ │ ├─┬ data
@@ -214,7 +214,7 @@
 1.4M   │ │ ├── OLD_bincache_aarch64-Linux.json
 1.4M   │ │ ├── OLD_bincache_x86_64-Linux.json
 1.3M   │ │ ├── INDEX.db
-764K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+768K   │ │ ├── DIFF_bincache_aarch64-Linux.json
 740K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 588K   │ │ ├── pub_issues_binaries.txt
 360K   │ │ ├── INDEX.json.cba
@@ -226,9 +226,9 @@
 216K   │ │ ├── INDEX.json.zstd
 180K   │ │ ├── INDEX.db.zstd
 172K   │ │ ├── INDEX.db.xz
-156K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
-124K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 80K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+152K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
+ 84K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 56K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  52K   │ │ ├── URLS.txt
  20K   │ │ ├── DIFF_bincache.json
 8.0K   │ │ ├── DIFF_pkgcache.json
@@ -264,17 +264,17 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-7.0M   ├─┬ pkgcache
+6.9M   ├─┬ pkgcache
 6.8M   │ ├─┬ data
 1.2M   │ │ ├── x86_64-Linux.db
 1.1M   │ │ ├── x86_64-Linux.json
 1.0M   │ │ ├── x86_64-Linux.sdb
 680K   │ │ ├── aarch64-Linux.db
-620K   │ │ ├── aarch64-Linux.json
+616K   │ │ ├── aarch64-Linux.json
 564K   │ │ ├── aarch64-Linux.sdb
 144K   │ │ ├── x86_64-Linux.sdb.cba
 140K   │ │ ├── x86_64-Linux.db.cba
-128K   │ │ ├── x86_64-Linux.json.cba
+124K   │ │ ├── x86_64-Linux.json.cba
 116K   │ │ ├── x86_64-Linux.sdb.zstd
 116K   │ │ ├── x86_64-Linux.db.zstd
 108K   │ │ ├── x86_64-Linux.sdb.xz

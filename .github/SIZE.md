@@ -264,23 +264,23 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-7.0M   ├─┬ pkgcache
+7.1M   ├─┬ pkgcache
 6.9M   │ ├─┬ data
 1.2M   │ │ ├── x86_64-Linux.db
 1.1M   │ │ ├── x86_64-Linux.json
 1.0M   │ │ ├── x86_64-Linux.sdb
-684K   │ │ ├── aarch64-Linux.db
-624K   │ │ ├── aarch64-Linux.json
-568K   │ │ ├── aarch64-Linux.sdb
+688K   │ │ ├── aarch64-Linux.db
+628K   │ │ ├── aarch64-Linux.json
+576K   │ │ ├── aarch64-Linux.sdb
 144K   │ │ ├── x86_64-Linux.sdb.cba
 140K   │ │ ├── x86_64-Linux.db.cba
 128K   │ │ ├── x86_64-Linux.json.cba
 120K   │ │ ├── x86_64-Linux.sdb.zstd
 116K   │ │ ├── x86_64-Linux.db.zstd
-108K   │ │ ├── x86_64-Linux.sdb.xz
+112K   │ │ ├── x86_64-Linux.sdb.xz
 108K   │ │ ├── x86_64-Linux.db.xz
-100K   │ │ ├── x86_64-Linux.json.zstd
- 96K   │ │ ├── x86_64-Linux.json.xz
+104K   │ │ ├── x86_64-Linux.json.zstd
+100K   │ │ ├── x86_64-Linux.json.xz
  84K   │ │ ├── aarch64-Linux.sdb.cba
  84K   │ │ ├── aarch64-Linux.db.cba
  76K   │ │ ├── aarch64-Linux.json.cba
@@ -289,7 +289,7 @@
  64K   │ │ ├── aarch64-Linux.sdb.xz
  64K   │ │ ├── aarch64-Linux.db.xz
  60K   │ │ ├── aarch64-Linux.json.zstd
- 56K   │ │ ├── aarch64-Linux.json.xz
+ 60K   │ │ ├── aarch64-Linux.json.xz
 4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.sdb.bsum

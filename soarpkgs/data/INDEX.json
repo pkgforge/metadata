@@ -1130,6 +1130,7 @@
     "pkg_id": "nixpkgs.afio",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-afio/afio/afio",
+    "bincache": "ghcr.io/pkgforge/bincache/afio/nixpkgs/afio",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/afio/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -4293,6 +4294,7 @@
     "pkg_id": "nixpkgs.archivemount",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-archivemount/archivemount/archivemount",
+    "bincache": "ghcr.io/pkgforge/bincache/archivemount/nixpkgs/archivemount",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/archivemount/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -4608,7 +4610,7 @@
       "bittorrent",
       "downloader"
     ],
-    "version": "250412T051007"
+    "version": "250412T123731"
   },
   {
     "_disabled": "false",
@@ -7030,6 +7032,101 @@
     ],
     "tag": [
       "build-tools"
+    ],
+    "version": "2.43.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "binutils",
+    "pkg_family": "binutils",
+    "pkg_id": "ppkg.bundle.binutils.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/binutils-stable/binutils/binutils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/binutils/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for manipulating binaries (linker, assembler, etc.) [alias=bintools]",
+      "addr2line": "Converts addresses into filenames and line numbers [binutils]",
+      "ar": "A utility for creating, modifying and extracting from archives [binutils]",
+      "as": "The GNU Assembler [binutils]",
+      "c++filt": "Filter to demangle encoded C++ symbols [binutils]",
+      "coffdump": "COFF-specific dumper for objdump [binutils]",
+      "dllwrap": "Generate PE style dll [binutils]",
+      "dwp": "The DWARF packaging utility [binutils]",
+      "elfedit": "Allows alteration of ELF format files [binutils]",
+      "gprof": "Displays profiling information [binutils]",
+      "ld": "The GNU linker [binutils]",
+      "ld.bfd": "The GNU linker with BFD libraries [binutils]",
+      "ld.gold": "A new, faster, ELF only linker [binutils]",
+      "nm": "Lists symbols from object files [binutils]",
+      "objcopy": "Copies and translates object files [binutils]",
+      "objdump": "Displays information from object files [binutils]",
+      "ranlib": "Generates an index to the contents of an archive [binutils]",
+      "readelf": "Displays information from any ELF format object file [binutils]",
+      "size": "Lists the section sizes of an object or archive file [binutils]",
+      "srconv": "Sysroff conversion program [binutils]",
+      "strings": "Lists printable strings from files [binutils]",
+      "strip": "Discards symbols [binutils]",
+      "sysdump": "Sysroff object format dumper [binutils]",
+      "windmc": "Generate Windows message resources [binutils]",
+      "windres": "Manipulate Windows resources [binutils]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/binutils/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/binutils/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "This is the multilib version & works for many targets",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "binutils==addr2line",
+      "binutils==ar",
+      "binutils==as",
+      "binutils==c++filt",
+      "binutils==coffdump",
+      "binutils==dlltool",
+      "binutils==dllwrap",
+      "binutils==dwp",
+      "binutils==elfedit",
+      "binutils==gprof",
+      "binutils==ld",
+      "binutils==ld.bfd",
+      "binutils==ld.gold",
+      "binutils==nm",
+      "binutils==objcopy",
+      "binutils==objdump",
+      "binutils==ranlib",
+      "binutils==readelf",
+      "binutils==size",
+      "binutils==srconv",
+      "binutils==strings",
+      "binutils==strip",
+      "binutils==sysdump",
+      "binutils==windmc",
+      "binutils==windres"
+    ],
+    "repology": [
+      "binutils"
+    ],
+    "src_url": [
+      "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git"
+    ],
+    "tag": [
+      "Utility"
     ],
     "version": "2.43.1"
   },
@@ -15786,7 +15883,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-97dc541-250411T203418"
+    "version": "HEAD-ab587f3-250412T124430"
   },
   {
     "_disabled": "false",
@@ -21608,7 +21705,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-2044b72-250411T175444"
+    "version": "HEAD-249b4bf-250412T110435"
   },
   {
     "_disabled": "false",
@@ -27746,6 +27843,7 @@
     "pkg_id": "ppkg.fakeroot",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-fakeroot/fakeroot/fakeroot",
+    "bincache": "ghcr.io/pkgforge/bincache/fakeroot/ppkg/faked",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fakeroot/static.ppkg.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -28095,7 +28193,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-6e77b59-250412T104826"
+    "version": "HEAD-114088b-250412T203842"
   },
   {
     "_disabled": "false",
@@ -31710,6 +31808,116 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gcc",
+    "pkg_family": "gcc",
+    "pkg_id": "ppkg.bundle.gcc.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gcc-stable/gcc/gcc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gcc/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "GNU Compiler Collection",
+      "c++": "GNU C++ Compiler [gcc]",
+      "cpp": "GNU CPP Preprocessor [gcc]",
+      "g++": "GNU C++ Compiler Driver [gcc]",
+      "gcc-ar": "Wrapper around ar adding the --plugin option [gcc]",
+      "gcc-nm": "Wrapper around nm adding the --plugin option [gcc]",
+      "gcc-ranlib": "Wrapper around ranlib adding the --plugin option [gcc]",
+      "gcov": "Coverage testing tool [gcc]",
+      "gcov-dump": "Gcov intermediate dump tool [gcc]",
+      "gcov-tool": "Tool for manipulating gcda and gcno files [gcc]",
+      "gfortran": "GNU Fortran Compiler [gcc]",
+      "lto-dump": "Tool for dumping LTO object files [gcc]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/gcc/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/gcc/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "gcc==c++",
+      "gcc==cpp",
+      "gcc==g++",
+      "gcc==gcc-ar",
+      "gcc==gcc-nm",
+      "gcc==gcc-ranlib",
+      "gcc==gcov",
+      "gcc==gcov-dump",
+      "gcc==gcov-tool",
+      "gcc==gfortran",
+      "gcc==lto-dump"
+    ],
+    "repology": [
+      "gcc"
+    ],
+    "src_url": [
+      "https://gcc.gnu.org/git/gitweb.cgi?p=gcc.git"
+    ],
+    "tag": [
+      "Utility"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gcli",
+    "pkg_family": "gcli",
+    "pkg_id": "ppkg.gcli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-gcli/gcli/gcli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gcli/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Portable Github|Gitlab|Gittea/Forgejo/Bugzilla CLI tool",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gcli/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/herrhotzenplotz/gcli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-2-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "gcli"
+    ],
+    "repology": [
+      "gcli"
+    ],
+    "src_url": [
+      "https://github.com/herrhotzenplotz/gcli"
+    ],
+    "tag": [
+      "Utility"
+    ]
+  },
+  {
+    "_disabled": "false",
     "pkg": "gdb",
     "pkg_family": "gdb",
     "pkg_id": "nixpkgs.gdb",
@@ -34940,7 +35148,7 @@
       "secret",
       "security"
     ],
-    "version": "HEAD-107a418-250409T093556"
+    "version": "HEAD-cfdeb0d-250412T100919"
   },
   {
     "_disabled": "false",
@@ -39318,7 +39526,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-eec8df8-250412T193654"
+    "version": "HEAD-9495246-250412T225928"
   },
   {
     "_disabled": "false",
@@ -40512,7 +40720,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9a49321-250412T120600"
+    "version": "HEAD-168ba4f-250412T163802"
   },
   {
     "_disabled": "false",
@@ -44877,7 +45085,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-1e94ee2-250412T085805"
+    "version": "HEAD-fbaa51b-250412T141426"
   },
   {
     "_disabled": "false",
@@ -46037,7 +46245,7 @@
     "src_url": [
       "https://github.com/ic005k/Knot"
     ],
-    "version": "1.2.29"
+    "version": "1.2.30"
   },
   {
     "_disabled": "false",
@@ -51355,7 +51563,7 @@
       "email",
       "mail"
     ],
-    "version": "HEAD-0cc5272-250411T211354"
+    "version": "HEAD-e11ab83-250412T122342"
   },
   {
     "_disabled": "false",
@@ -54562,7 +54770,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-5a78648-250410T103406"
+    "version": "HEAD-5509c6b-250412T143203"
   },
   {
     "_disabled": "false",
@@ -65281,7 +65489,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-bcc2faf-250412T135001"
+    "version": "HEAD-cf68c13-250412T144637"
   },
   {
     "_disabled": "false",
@@ -69926,7 +70134,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b1b5c8f-250411T220310"
+    "version": "HEAD-c50bcd8-250412T212622"
   },
   {
     "_disabled": "false",
@@ -71026,7 +71234,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f5c96b0-250412T154955"
+    "version": "HEAD-4357d40-250412T204702"
   },
   {
     "_disabled": "false",
@@ -74859,7 +75067,7 @@
       "backup",
       "p2p"
     ],
-    "version": "v1.29.4"
+    "version": "v1.29.5"
   },
   {
     "_disabled": "false",
@@ -78080,7 +78288,7 @@
       "network",
       "traceroute"
     ],
-    "version": "HEAD-3fc52a8-250410T225020"
+    "version": "HEAD-261ec00-250412T205127"
   },
   {
     "_disabled": "false",
@@ -83011,7 +83219,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-4b66d61-250412T130928"
+    "version": "HEAD-ce6214e-250412T161544"
   },
   {
     "_disabled": "false",
@@ -83987,7 +84195,7 @@
     "tag": [
       "downloader"
     ],
-    "version": "2.1.0"
+    "version": "2.2.0"
   },
   {
     "_disabled": "false",
@@ -87041,7 +87249,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-5b3ca6f-250401T211439"
+    "version": "HEAD-4c0fbf1-250412T092522"
   },
   {
     "_disabled": "false",

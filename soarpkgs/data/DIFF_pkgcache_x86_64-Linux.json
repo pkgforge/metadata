@@ -172,106 +172,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "apptainer",
-    "pkg_family": "apptainer",
-    "pkg_id": "wrappe.github.com.apptainer.apptainer.glibc",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apptainer-glibc/apptainer/apptainer",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/apptainer/archive.wrappe.glibc.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Standalone Linux Container Alternative to docker/podman that runs anywhere with 0 Dependency",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/apptainer/archive.wrappe.glibc.yaml",
-    "homepage": [
-      "https://github.com/apptainer/apptainer"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/apptainer/apptainer",
-      "Statically Linked on Debian (GLIBC)",
-      "Packed Using Wrappe. Check/Report @ https://github.com/Systemcluster/wrappe",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "This may need extra requirements on host, read more: https://apptainer.org/docs/user/latest/bind_paths_and_mounts.html#requirements"
-    ],
-    "provides": [
-      "apptainer"
-    ],
-    "repology": [
-      "apptainer"
-    ],
-    "src_url": [
-      "https://github.com/apptainer/apptainer"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-0410607-250411T070923"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "apptainer",
-    "pkg_family": "apptainer",
-    "pkg_id": "wrappe.github.com.apptainer.apptainer.musl",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apptainer-musl/apptainer/apptainer",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/apptainer/archive.wrappe.musl.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Standalone Linux Container Alternative to docker/podman that runs anywhere with 0 Dependency",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/apptainer/archive.wrappe.musl.yaml",
-    "homepage": [
-      "https://github.com/apptainer/apptainer"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/apptainer/apptainer",
-      "Statically Linked on Alpine (MUSL)",
-      "Packed Using Wrappe. Check/Report @ https://github.com/Systemcluster/wrappe",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "This may need extra requirements on host, read more: https://apptainer.org/docs/user/latest/bind_paths_and_mounts.html#requirements"
-    ],
-    "provides": [
-      "apptainer"
-    ],
-    "repology": [
-      "apptainer"
-    ],
-    "src_url": [
-      "https://github.com/apptainer/apptainer"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-0410607-250411T070923"
-  },
-  {
-    "_disabled": "false",
     "pkg": "awscli",
     "pkg_family": "awscli",
     "pkg_id": "sharun.wrappe.pypi.awscli",
@@ -345,6 +245,101 @@
       "Utility"
     ],
     "version": "1.38.33"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "binutils",
+    "pkg_family": "binutils",
+    "pkg_id": "ppkg.bundle.binutils.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/binutils-stable/binutils/binutils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/binutils/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for manipulating binaries (linker, assembler, etc.) [alias=bintools]",
+      "addr2line": "Converts addresses into filenames and line numbers [binutils]",
+      "ar": "A utility for creating, modifying and extracting from archives [binutils]",
+      "as": "The GNU Assembler [binutils]",
+      "c++filt": "Filter to demangle encoded C++ symbols [binutils]",
+      "coffdump": "COFF-specific dumper for objdump [binutils]",
+      "dllwrap": "Generate PE style dll [binutils]",
+      "dwp": "The DWARF packaging utility [binutils]",
+      "elfedit": "Allows alteration of ELF format files [binutils]",
+      "gprof": "Displays profiling information [binutils]",
+      "ld": "The GNU linker [binutils]",
+      "ld.bfd": "The GNU linker with BFD libraries [binutils]",
+      "ld.gold": "A new, faster, ELF only linker [binutils]",
+      "nm": "Lists symbols from object files [binutils]",
+      "objcopy": "Copies and translates object files [binutils]",
+      "objdump": "Displays information from object files [binutils]",
+      "ranlib": "Generates an index to the contents of an archive [binutils]",
+      "readelf": "Displays information from any ELF format object file [binutils]",
+      "size": "Lists the section sizes of an object or archive file [binutils]",
+      "srconv": "Sysroff conversion program [binutils]",
+      "strings": "Lists printable strings from files [binutils]",
+      "strip": "Discards symbols [binutils]",
+      "sysdump": "Sysroff object format dumper [binutils]",
+      "windmc": "Generate Windows message resources [binutils]",
+      "windres": "Manipulate Windows resources [binutils]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/binutils/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/binutils/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "This is the multilib version & works for many targets",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "binutils==addr2line",
+      "binutils==ar",
+      "binutils==as",
+      "binutils==c++filt",
+      "binutils==coffdump",
+      "binutils==dlltool",
+      "binutils==dllwrap",
+      "binutils==dwp",
+      "binutils==elfedit",
+      "binutils==gprof",
+      "binutils==ld",
+      "binutils==ld.bfd",
+      "binutils==ld.gold",
+      "binutils==nm",
+      "binutils==objcopy",
+      "binutils==objdump",
+      "binutils==ranlib",
+      "binutils==readelf",
+      "binutils==size",
+      "binutils==srconv",
+      "binutils==strings",
+      "binutils==strip",
+      "binutils==sysdump",
+      "binutils==windmc",
+      "binutils==windres"
+    ],
+    "repology": [
+      "binutils"
+    ],
+    "src_url": [
+      "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2.43.1"
   },
   {
     "_disabled": "false",
@@ -1350,6 +1345,72 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gcc",
+    "pkg_family": "gcc",
+    "pkg_id": "ppkg.bundle.gcc.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gcc-stable/gcc/gcc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gcc/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "GNU Compiler Collection",
+      "c++": "GNU C++ Compiler [gcc]",
+      "cpp": "GNU CPP Preprocessor [gcc]",
+      "g++": "GNU C++ Compiler Driver [gcc]",
+      "gcc-ar": "Wrapper around ar adding the --plugin option [gcc]",
+      "gcc-nm": "Wrapper around nm adding the --plugin option [gcc]",
+      "gcc-ranlib": "Wrapper around ranlib adding the --plugin option [gcc]",
+      "gcov": "Coverage testing tool [gcc]",
+      "gcov-dump": "Gcov intermediate dump tool [gcc]",
+      "gcov-tool": "Tool for manipulating gcda and gcno files [gcc]",
+      "gfortran": "GNU Fortran Compiler [gcc]",
+      "lto-dump": "Tool for dumping LTO object files [gcc]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/gcc/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/gcc/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "gcc==c++",
+      "gcc==cpp",
+      "gcc==g++",
+      "gcc==gcc-ar",
+      "gcc==gcc-nm",
+      "gcc==gcc-ranlib",
+      "gcc==gcov",
+      "gcc==gcov-dump",
+      "gcc==gcov-tool",
+      "gcc==gfortran",
+      "gcc==lto-dump"
+    ],
+    "repology": [
+      "gcc"
+    ],
+    "src_url": [
+      "https://gcc.gnu.org/git/gitweb.cgi?p=gcc.git"
+    ],
+    "tag": [
+      "Utility"
+    ]
+  },
+  {
+    "_disabled": "false",
     "pkg": "gearlever",
     "pkg_family": "gearlever",
     "pkg_id": "nixpkgs.gearlever",
@@ -1884,7 +1945,7 @@
     "src_url": [
       "https://github.com/ic005k/Knot"
     ],
-    "version": "1.2.29"
+    "version": "1.2.30"
   },
   {
     "_disabled": "false",
@@ -2571,6 +2632,65 @@
       "office"
     ],
     "version": "25.2.3.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "netexec",
+    "pkg_family": "netexec",
+    "pkg_id": "sharun.wrappe.source.netexec",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-netexec/netexec/netexec",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/netexec/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "The Network Execution (CrackMapExec) Tool",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "netexec"
+        ]
+      },
+      "nixpkgs": [
+        "netexec"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/netexec/archive.sharun.source.yaml",
+    "homepage": [
+      "https://netexec.wiki",
+      "https://www.netexec.wiki"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-2-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/netexec/archive/sharun",
+    "provides": [
+      "netexec==nxc"
+    ],
+    "repology": [
+      "netexec"
+    ],
+    "src_url": [
+      "https://github.com/Pennyw0rth/NetExec"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-5509c6b-250412T143203"
   },
   {
     "_disabled": "false",
@@ -3433,7 +3553,7 @@
     "tag": [
       "downloader"
     ],
-    "version": "2.1.0"
+    "version": "2.2.0"
   },
   {
     "_disabled": "false",

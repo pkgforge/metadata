@@ -1,6 +1,48 @@
 [
   {
     "_disabled": "false",
+    "pkg": "afio",
+    "pkg_family": "afio",
+    "pkg_id": "nixpkgs.afio",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-afio/afio/afio",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/afio/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Archiver & backup program with fault tolerant compression",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/afio/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://github.com/kholtman/afio"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "afio"
+    ],
+    "repology": [
+      "afio"
+    ],
+    "src_url": [
+      "https://github.com/kholtman/afio"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2.5.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "afrog",
     "pkg_family": "afrog",
     "pkg_id": "github.com.iangcarroll.afrog.source",
@@ -490,6 +532,51 @@
   },
   {
     "_disabled": "false",
+    "pkg": "archivemount",
+    "pkg_family": "archivemount",
+    "pkg_id": "nixpkgs.archivemount",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-archivemount/archivemount/archivemount",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/archivemount/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Mount cpio, .tar.gz, .tar.bz2 Archives",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/archivemount/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://git.sr.ht/~nabijaczleweli/archivemount-ng"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "0BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "archivemount"
+    ],
+    "repology": [
+      "archivemount"
+    ],
+    "src_url": [
+      "https://git.sr.ht/~nabijaczleweli/archivemount-ng"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1a"
+  },
+  {
+    "_disabled": "false",
     "pkg": "archlinux",
     "pkg_family": "archlinux",
     "pkg_id": "github.com.Azathothas.docker-archlinux",
@@ -575,6 +662,78 @@
       "Utility"
     ],
     "version": "HEAD-9a14ad4-250412T000137"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "aria2",
+    "pkg_family": "aria2",
+    "pkg_id": "github.com.aria2.aria2.continuous",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-continuous/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
+    "distro_pkg": {
+      "alpine": [
+        "aria2"
+      ],
+      "archlinux": {
+        "aur": [
+          "aria2-fast",
+          "aria2-git"
+        ],
+        "extra": [
+          "aria2"
+        ]
+      },
+      "debian": [
+        "aria2"
+      ],
+      "nixpkgs": [
+        "aria",
+        "aria2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "homepage": [
+      "https://aria2.github.io",
+      "https://github.com/aria2/aria2",
+      "https://aria2.sourceforge.net",
+      "https://sourceforge.net/projects/aria2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
+      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
+    ],
+    "provides": [
+      "aria2:aria2c"
+    ],
+    "repology": [
+      "aria2"
+    ],
+    "src_url": [
+      "https://github.com/abcfy2/aria2-static-build"
+    ],
+    "tag": [
+      "bittorrent",
+      "downloader"
+    ],
+    "version": "250412T051007"
   },
   {
     "_disabled": "false",
@@ -5795,7 +5954,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-b10aa47-250411T192644"
+    "version": "HEAD-01a3936-250412T071457"
   },
   {
     "_disabled": "false",
@@ -6112,7 +6271,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-b10aa47-250411T192644"
+    "version": "HEAD-01a3936-250412T071457"
   },
   {
     "_disabled": "true",
@@ -6878,7 +7037,7 @@
       "bugbounty",
       "xss"
     ],
-    "version": "HEAD-3f01236-250409T231946"
+    "version": "HEAD-0704fd0-250412T131224"
   },
   {
     "_disabled": "false",
@@ -8180,6 +8339,53 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fakeroot",
+    "pkg_family": "fakeroot",
+    "pkg_id": "ppkg.fakeroot",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-fakeroot/fakeroot/fakeroot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fakeroot/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line tool for simulating superuser privileges",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fakeroot/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://salsa.debian.org/clint/fakeroot"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "Statically Linked on Ubuntu (GLIBC)"
+    ],
+    "provides": [
+      "faked",
+      "fakeroot"
+    ],
+    "repology": [
+      "fakeroot"
+    ],
+    "src_url": [
+      "https://salsa.debian.org/clint/fakeroot"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.37"
+  },
+  {
+    "_disabled": "false",
     "pkg": "fastfetch",
     "pkg_family": "fastfetch",
     "pkg_id": "github.com.fastfetch-cli.fastfetch",
@@ -8255,7 +8461,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-090529f-250410T231326"
+    "version": "HEAD-6e77b59-250412T104826"
   },
   {
     "_disabled": "false",
@@ -8622,7 +8828,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-0ec7dc6-250412T000740"
+    "version": "HEAD-d8719ad-250412T060251"
   },
   {
     "_disabled": "false",
@@ -10342,7 +10548,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-655a9c4-250410T201501"
+    "version": "HEAD-ac596ac-250412T072217"
   },
   {
     "_disabled": "false",
@@ -11755,7 +11961,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-6015480-250412T002046"
+    "version": "HEAD-1305912-250412T014335"
   },
   {
     "_disabled": "false",
@@ -14327,6 +14533,61 @@
   },
   {
     "_disabled": "false",
+    "pkg": "mubeng",
+    "pkg_family": "mubeng",
+    "pkg_id": "github.com.mubeng.mubeng.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mubeng-source/mubeng/mubeng",
+    "bincache": "ghcr.io/pkgforge/bincache/mubeng/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mubeng/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "An incredibly fast proxy checker & IP rotator with ease",
+    "distro_pkg": {
+      "homebrew": [
+        "mubeng"
+      ],
+      "nixpkgs": [
+        "mubeng"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mubeng/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/mubeng/mubeng"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mubeng/mubeng"
+    ],
+    "provides": [
+      "mubeng"
+    ],
+    "repology": [
+      "mubeng"
+    ],
+    "src_url": [
+      "https://github.com/mubeng/mubeng"
+    ],
+    "tag": [
+      "ip",
+      "proxy"
+    ],
+    "version": "HEAD-53cac2d-250412T081917"
+  },
+  {
+    "_disabled": "false",
     "pkg": "muffet",
     "pkg_family": "muffet",
     "pkg_id": "github.com.raviqqe.muffet.source",
@@ -14385,6 +14646,49 @@
       "Utility"
     ],
     "version": "HEAD-2f0ff7f-250408T155338"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mult",
+    "pkg_family": "mult",
+    "pkg_id": "github.com.dhth.mult.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mult-source/mult/mult",
+    "bincache": "ghcr.io/pkgforge/bincache/mult/official/mult",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mult/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Run a command multiple times and glance at the outputs",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mult/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dhth/mult"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dhth/mult"
+    ],
+    "provides": [
+      "mult"
+    ],
+    "src_url": [
+      "https://github.com/dhth/mult"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-81d7277-250412T063103"
   },
   {
     "_disabled": "false",
@@ -16141,7 +16445,7 @@
     "tag": [
       "pager"
     ],
-    "version": "HEAD-526f76d-250411T121046"
+    "version": "HEAD-5c3ece8-250412T123708"
   },
   {
     "_disabled": "false",
@@ -21847,7 +22151,7 @@
       "logfile",
       "tail"
     ],
-    "version": "HEAD-baa336e-250411T222945"
+    "version": "HEAD-e6fcabb-250412T075936"
   },
   {
     "_disabled": "false",
@@ -26230,7 +26534,7 @@
     "tag": [
       "security"
     ],
-    "version": "HEAD-a572b15-250411T163828"
+    "version": "HEAD-371daeb-250412T010310"
   },
   {
     "_disabled": "false",

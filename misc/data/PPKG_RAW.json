@@ -6245,7 +6245,8 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "gmakew clean\ngmakew CROSS_COMPILE= CC=$CC CXX=$CXX AR=$AR\ngmakew install PREFIX=\"$PACKAGE_INSTALL_DIR\""
+    "dopatch": "gsed -i 's|$^ -o $@|$^ -o $@ $(LDFLAGS)|' Makefile\n\nif [ \"$PACKAGE_CREATE_FULLY_STATICALLY_LINKED_EXECUTABLE\" = 1 ] ; then\n    gsed -i 's|-s -w|-s -w -linkmode external -extldflags=-static|' local/Makefile\nfi",
+    "install": "export CGO_ENABLED=1\ngmakew clean\ngmakew CROSS_COMPILE= CC=$CC CXX=$CXX AR=$AR VERSION=\"v$PACKAGE_VERSION\"\ngmakew install PREFIX=\"$PACKAGE_INSTALL_DIR\""
   },
   {
     "pkgname": "graphene",
@@ -6971,13 +6972,13 @@
   {
     "pkgname": "htop",
     "pkgtype": "exe",
-    "version": "3.3.0",
+    "version": "3.4.1",
     "license": "GPL-2.0-or-later",
     "summary": "Improved top (interactive process viewer)",
     "web-url": "https://htop.dev",
     "git-url": "https://github.com/htop-dev/htop",
-    "src-url": "https://github.com/htop-dev/htop/archive/refs/tags/3.3.0.tar.gz",
-    "src-sha": "1e5cc328eee2bd1acff89f860e3179ea24b85df3ac483433f92a29977b14b045",
+    "src-url": "https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz",
+    "src-sha": "af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf",
     "dep-pkg": "libncurses",
     "dep-upp": "curl bsdtar gmake gm4 perl autoconf automake gmake",
     "bsystem": "autogen",
@@ -6985,7 +6986,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "configure --disable-static --enable-unicode LIBS=\"$libncurses_LIBRARY_DIR/libncursesw.a\""
+    "install": "configure --disable-static --enable-unicode"
   },
   {
     "pkgname": "htslib",
@@ -7874,6 +7875,24 @@
     "ltoable": "1",
     "movable": "1",
     "install": "gow -X github.com/google/ko/pkg/commands.Version=$PACKAGE_NAME"
+  },
+  {
+    "pkgname": "koka",
+    "pkgtype": "exe",
+    "version": "3.1.2",
+    "license": "Apache-2.0",
+    "summary": "Compiler for the Koka language",
+    "web-url": "http://koka-lang.org",
+    "git-url": "https://github.com/koka-lang/koka",
+    "git-ref": "refs/tags/v3.1.2",
+    "dep-pkg": "libpcre2 libncurses libffi libgmp libz",
+    "dep-upp": "git gmake",
+    "bsystem": "cabal",
+    "binbstd": "1",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "cabal_v2_install"
   },
   {
     "pkgname": "krb5",
@@ -22521,7 +22540,7 @@
   {
     "pkgname": "uppm@0.15.1",
     "pkgtype": "exe",
-    "version": "2025.04.15",
+    "version": "0.15.1",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -22534,13 +22553,12 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "prepare": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
     "install": "cmakew -DLINK_STATIC_LIBS=ON"
   },
   {
     "pkgname": "uppm@0.15.2",
     "pkgtype": "exe",
-    "version": "2025.04.15",
+    "version": "0.15.2",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -22553,13 +22571,12 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "prepare": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
     "install": "cmakew -DLINK_STATIC_LIBS=ON"
   },
   {
     "pkgname": "uppm@0.15.3",
     "pkgtype": "exe",
-    "version": "2025.04.15",
+    "version": "0.15.3",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -22572,13 +22589,12 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "prepare": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
     "install": "cmakew -DLINK_STATIC_LIBS=ON"
   },
   {
     "pkgname": "uppm@0.15.4",
     "pkgtype": "exe",
-    "version": "2025.04.15",
+    "version": "0.15.4",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -22591,7 +22607,6 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "prepare": "PACKAGE_VERSION=$(sed -n '/set(PROJECT_VERSION /p' CMakeLists.txt | sed 's|set(PROJECT_VERSION[[:space:]]*\\(.*\\))|\\1|')",
     "install": "cmakew -DLINK_STATIC_LIBS=ON"
   },
   {

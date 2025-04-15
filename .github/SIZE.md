@@ -1,13 +1,13 @@
 ```mathematica
- 412M └─┬ main
- 173M   ├─┬ misc
- 173M   │ ├─┬ data
+ 410M └─┬ main
+ 171M   ├─┬ misc
+ 171M   │ ├─┬ data
   71M   │ │ ├── ARCHLINUX.json
   36M   │ │ ├── FLATPAK_APPSTREAM.xml
   23M   │ │ ├── DEBIAN.json
   10M   │ │ ├── ALPINE_PKG.json
   10M   │ │ ├── NIXPKGS.json
- 9.0M   │ │ ├── PKGSRC.json
+ 6.9M   │ │ ├── PKGSRC.json
  5.0M   │ │ ├── ALPINE_GIT.json
  2.7M   │ │ ├── BREW_FORMULA.json
  1.6M   │ │ ├── BREW_CASK.json
@@ -120,7 +120,7 @@
  248K   │ │ │ ├── x86_64-Linux.db.xz
  232K   │ │ │ ├── x86_64-Linux.json.zstd
  220K   │ │ │ ├── x86_64-Linux.json.xz
- 136K   │ │ │ ├── aarch64-Linux.db.cba
+ 140K   │ │ │ ├── aarch64-Linux.db.cba
  132K   │ │ │ ├── aarch64-Linux.json.cba
  112K   │ │ │ ├── aarch64-Linux.db.zstd
  108K   │ │ │ ├── aarch64-Linux.db.xz

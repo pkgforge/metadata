@@ -3303,7 +3303,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "3.4.5"
+    "version": "3.4.8"
   },
   {
     "_disabled": "false",
@@ -5090,7 +5090,7 @@
       "sysutils",
       "utils"
     ],
-    "version": "HEAD-a3a9502-250414T161757"
+    "version": "HEAD-28ddb45-250416T122539"
   },
   {
     "_disabled": "false",
@@ -6810,7 +6810,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d3b90ad-250223T011316"
+    "version": "HEAD-338d919-250416T114615"
   },
   {
     "_disabled": "false",
@@ -7987,7 +7987,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.77.92"
+    "version": "v1.77.100"
   },
   {
     "_disabled": "false",
@@ -16051,7 +16051,7 @@
       "changelog",
       "git-commit"
     ],
-    "version": "HEAD-e641002-250319T180822"
+    "version": "HEAD-8d69072-250416T091712"
   },
   {
     "_disabled": "false",
@@ -18682,7 +18682,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-8a5a2ee-250415T195458"
+    "version": "HEAD-219e87d-250416T110636"
   },
   {
     "_disabled": "false",
@@ -18999,7 +18999,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-8a5a2ee-250415T195458"
+    "version": "HEAD-219e87d-250416T110636"
   },
   {
     "_disabled": "false",
@@ -23540,7 +23540,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-942cbe1-250416T085933"
+    "version": "HEAD-3a2d9e9-250416T140254"
   },
   {
     "_disabled": "false",
@@ -25638,7 +25638,7 @@
       "compression",
       "dwarfs"
     ],
-    "version": "v0.12.1"
+    "version": "v0.12.2"
   },
   {
     "_disabled": "false",
@@ -25722,7 +25722,7 @@
       "compression",
       "dwarfs"
     ],
-    "version": "v0.12.1"
+    "version": "v0.12.2"
   },
   {
     "_disabled": "false",
@@ -26632,6 +26632,45 @@
   },
   {
     "_disabled": "false",
+    "pkg": "elfexec",
+    "pkg_family": "elfexec",
+    "pkg_id": "github.com.abbat.elfexec.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/elfexec-source/elfexec/elfexec",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/elfexec/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Execute ELF binary directly from stdin pipe",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/elfexec/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/abbat/elfexec"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/abbat/elfexec"
+    ],
+    "provides": [
+      "elfexec"
+    ],
+    "src_url": [
+      "https://github.com/abbat/elfexec"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-66a9019-221025T193046"
+  },
+  {
+    "_disabled": "false",
     "pkg": "elftools",
     "pkg_family": "elftools",
     "pkg_id": "github.com.pkgforge-dev.elftools.source",
@@ -26848,6 +26887,75 @@
       "Utility"
     ],
     "version": "HEAD-0676bc0-210907T170325"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "emanutils",
+    "pkg_family": "emanutils",
+    "pkg_id": "github.com.emanuele6.emanutils.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/emanutils-source/emanutils/emanutils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/emanutils/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Collection of exec tools",
+      "chainif": "Conditionally run command chains based on another command's success or failure [emanutils]",
+      "creatememfd": "Create a memory file descriptor at a given FD & execute a command with [emanutils]",
+      "fdcmp": "Compare two file descriptors and run a command based on the result [emanutils]",
+      "fdseal": "Add/Check/Get memfd seals on file descriptors using F_ADD_SEALS and F_GET_SEALS [emanutils]",
+      "fdtruncate": "Truncate an open file descriptor to a specified length & execute a command [emanutils]",
+      "mergeeet": "Read from multiple file descriptors (FDs) concurrently and merge their output to stdout [emanutils]",
+      "openpathfd": "Replace the specified file descriptor with an O_PATH-opened path & execute a command [emanutils]",
+      "openpidfd": "Open a pidfd for a given PID, assign it to a specified FD & execute a command [emanutils]",
+      "pidfdgetfd": "Retrieve a file descriptor from a pidfd, assign it to a target file descriptor & execute a command [emanutils]",
+      "pollinfd": "Monitor a file descriptor for input events & execute a command [emanutils]",
+      "psendfd": "Use ptrace to manipulate and redirect file descriptors of a running process [emanutils]",
+      "ptytty": "Execute a command with I/O redirection to a specified pseudo-terminal device [emanutils]",
+      "secretmemfd": "Create a secret memory file descriptor, duplicate it to a given file descriptor & execute a command [emanutils]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/emanutils/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/emanuele6/emanutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/emanuele6/emanutils"
+    ],
+    "provides": [
+      "chainif",
+      "creatememfd",
+      "fdcmp",
+      "fdseal",
+      "fdtruncate",
+      "mergeeet",
+      "openpathfd",
+      "openpidfd",
+      "pidfdgetfd",
+      "pollinfd",
+      "psendfd",
+      "ptytty",
+      "secretmemfd"
+    ],
+    "src_url": [
+      "https://github.com/emanuele6/emanutils"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-fe254cf-250128T153306"
   },
   {
     "_disabled": "false",
@@ -27550,6 +27658,178 @@
       "transmission"
     ],
     "version": "HEAD-50a3e17-250415T102906"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "execline",
+    "pkg_family": "execline",
+    "pkg_id": "nixpkgs.execline",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-execline/execline/execline",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/execline/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Non-interactive scripting Tools",
+      "background": "Launch a command in the background [execline]",
+      "backtick": "Run a program and stores its output in an environment variable [execline]",
+      "case": "Compare a value against a series of regular expressions & execute a program [execline]",
+      "cd": "Change the current working directory to a given directory & execute a program [execline]",
+      "define": "Replace a literal with a value & execute a program [execline]",
+      "dollarat": "Print the positional parameters of an execline script [execline]",
+      "elgetopt": "Perform getopt-style parsing on the arguments to an execline script [execline]",
+      "elgetpositionals": "Substitute the positional parameters of an execline script [execline]",
+      "elglob": "Perform globbing on a pattern & execute a program [execline]",
+      "eltest": "Evaluate an expression and indicates the result via its exit status [execline]",
+      "emptyenv": "Empty/Cleanup the current environment & execute a program [execline]",
+      "envfile": "Read a file containing variable assignments, add the variables to the environment & execute a program [execline]",
+      "exec": "Execute the command line as given [execline]",
+      "execlineb": "Read and Execute a script from a file as command line [execline]",
+      "execline-cd": "Change the current working directory to a given directory & execute a program [execline]",
+      "execline-umask": "Set the umask (file creation mask) & execute a program [execline]",
+      "exit": "Exit with a given exit code [execline]",
+      "export": "Set an environment variable to a given value & execute a program [execline]",
+      "export-array": "Encode a set of values into an environment variable & execute a program [execline]",
+      "fdblock": "Set/Unset the O_NONBLOCK flag on a given file descriptor & execute a program [execline]",
+      "fdclose": "Close a given file descriptor & execute a program [execline]",
+      "fdmove": "Move/Copy a given file descriptor & execute a program [execline]",
+      "fdreserve": "Update the environment with file descriptors that are guaranteed safe to use & execute a program [execline]",
+      "fdswap": "Swap two file descriptors & execute a program [execline]",
+      "forbacktickx": "Run a program and uses its output as loop elements to run another program [execline]",
+      "foreground": "Execute a sequence of commands [execline]",
+      "forstdin": "Use its input as loop elements to run another program [execline]",
+      "forx": "Run a loop [execline]",
+      "getcwd": "Store its current working directory into a given environment variable & execute a program [execline]",
+      "getpid": "Store its process ID in a given environment variable & execute a program [execline]",
+      "heredoc": "Run a command with a certain string fed to a file descriptor [execline]",
+      "homeof": "Print the home directory of a user [execline]",
+      "if": "Perform conditional execution [execline]",
+      "ifelse": "Perform conditional execution, with two branches [execline]",
+      "ifte": "Perform a conditional alternative [execline]",
+      "ifthenelse": "Perform a conditional alternative [execline]",
+      "importas": "Replace a literal with the value of an environment variable & execute a program [execline]",
+      "loopwhilex": "Perform a conditional loop [execline]",
+      "multidefine": "Split a value and define several variables at once & execute a program [execline]",
+      "multisubstitute": "Perform several substitutions at once in its argv & execute a program [execline]",
+      "pipeline": "Run two commands with a pipe between them [execline]",
+      "piperw": "Create a pipe (an anonymous one) & execute a program [execline]",
+      "posix-cd": "Change the current working directory to a given directory & execute a program [execline]",
+      "posix-umask": "Change its file mode creation mask & execute a program [execline]",
+      "redirfd": "Redirect a given file descriptor to a file & execute a program [execline]",
+      "runblock": "Write execline commands in the execline language [execline]",
+      "shift": "Shift the positional parameters of an execline script [execline]",
+      "trap": "Trap signals and run a variety of commands according to the signals it catches [execline]",
+      "tryexec": "Execute into a command line, with a fallback [execline]",
+      "umask": "Unsets the umask (file creation mask) & execute a program [execline]",
+      "unexport": "Remove a variable from the environment & execute a program [execline]",
+      "wait": "Wait for a set of children & execute a program [execline]",
+      "withstdinas": "Read the entirety of standard input in an environment variable & execute a program [execline]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "execline"
+      ],
+      "archlinux": {
+        "aur": [
+          "execline",
+          "execline-git"
+        ]
+      },
+      "debian": [
+        "execline"
+      ],
+      "gnuguix": [
+        "execline"
+      ],
+      "nixpkgs": [
+        "execline"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/execline/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://skarnet.org/software/execline",
+      "https://github.com/skarnet/execline"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "background",
+      "backtick",
+      "case",
+      "cd",
+      "define",
+      "dollarat",
+      "elgetopt",
+      "elgetpositionals",
+      "elglob",
+      "eltest",
+      "emptyenv",
+      "envfile",
+      "exec",
+      "execlineb",
+      "execline-cd",
+      "execline-umask",
+      "exit",
+      "export",
+      "fdblock",
+      "fdclose",
+      "fdmove",
+      "fdreserve",
+      "fdswap",
+      "forbacktickx",
+      "foreground",
+      "forstdin",
+      "forx",
+      "getcwd",
+      "getpid",
+      "heredoc",
+      "homeof",
+      "if",
+      "ifelse",
+      "ifte",
+      "ifthenelse",
+      "importas",
+      "loopwhilex",
+      "multidefine",
+      "multisubstitute",
+      "pipeline",
+      "piperw",
+      "posix-cd",
+      "posix-umask",
+      "redirfd",
+      "runblock",
+      "shift",
+      "trap",
+      "tryexec",
+      "umask",
+      "unexport",
+      "wait",
+      "withstdinas"
+    ],
+    "repology": [
+      "execline"
+    ],
+    "src_url": [
+      "https://github.com/skarnet/execline"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2.9.6.1"
   },
   {
     "_disabled": "false",
@@ -28695,7 +28975,7 @@
       "downloader",
       "download-manager"
     ],
-    "version": "6.26.1"
+    "version": "6.26.2"
   },
   {
     "_disabled": "false",
@@ -28815,7 +29095,7 @@
       "downloader",
       "download-manager"
     ],
-    "version": "6.26.1"
+    "version": "6.26.2"
   },
   {
     "_disabled": "false",
@@ -30092,7 +30372,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "139.0.20250415212106"
+    "version": "139.0.20250416091230"
   },
   {
     "_disabled": "false",
@@ -30594,7 +30874,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6d3bea2-250101T224107"
+    "version": "HEAD-4efddd6-250416T101208"
   },
   {
     "_disabled": "false",
@@ -31018,7 +31298,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-773169e-250307T172251"
+    "version": "HEAD-e208043-250416T161726"
   },
   {
     "_disabled": "false",
@@ -33135,7 +33415,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-47ac61e-250416T060315"
+    "version": "HEAD-8ae80ab-250416T120345"
   },
   {
     "_disabled": "false",
@@ -35514,7 +35794,7 @@
       "git",
       "tui"
     ],
-    "version": "HEAD-711210b-250415T150139"
+    "version": "HEAD-e08d954-250416T104508"
   },
   {
     "_disabled": "false",
@@ -36890,7 +37170,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-00cb557-250311T160628"
+    "version": "HEAD-b2cc815-250416T163716"
   },
   {
     "_disabled": "false",
@@ -37137,7 +37417,7 @@
       "password",
       "security"
     ],
-    "version": "HEAD-0b09b7f-250407T135500"
+    "version": "HEAD-3a05d06-250416T101248"
   },
   {
     "_disabled": "false",
@@ -41387,7 +41667,7 @@
     "tag": [
       "monitor"
     ],
-    "version": "HEAD-bd1c277-250415T085827"
+    "version": "HEAD-3276b57-250416T100845"
   },
   {
     "_disabled": "false",
@@ -41916,7 +42196,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-d5a8c33-250415T180942"
+    "version": "HEAD-a88b488-250416T082819"
   },
   {
     "_disabled": "false",
@@ -44055,7 +44335,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8a24a95-250408T072532"
+    "version": "HEAD-792e6c4-250416T105738"
   },
   {
     "_disabled": "false",
@@ -44500,7 +44780,7 @@
       "atlassian",
       "jira"
     ],
-    "version": "HEAD-92b3415-250324T091300"
+    "version": "HEAD-1ecc0cf-250416T095510"
   },
   {
     "_disabled": "false",
@@ -46381,7 +46661,7 @@
       "kernel",
       "monitoring"
     ],
-    "version": "HEAD-7d47330-250205T121418"
+    "version": "HEAD-ae88b94-250416T113124"
   },
   {
     "_disabled": "false",
@@ -46828,7 +47108,7 @@
       "dns",
       "subdomain"
     ],
-    "version": "HEAD-670f6bc-250416T005059"
+    "version": "HEAD-0478e16-250416T145134"
   },
   {
     "_disabled": "false",
@@ -51790,7 +52070,7 @@
       "email",
       "mail"
     ],
-    "version": "HEAD-e11ab83-250412T122342"
+    "version": "HEAD-4b5ad73-250412T170103"
   },
   {
     "_disabled": "false",
@@ -54669,7 +54949,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-f64f383-250416T113341"
+    "version": "HEAD-88c6393-250416T153429"
   },
   {
     "_disabled": "false",
@@ -54829,7 +55109,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-7cb366b-250415T181552"
+    "version": "HEAD-a37368f-250416T142325"
   },
   {
     "_disabled": "false",
@@ -56157,7 +56437,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-27220a6-250414T232321"
+    "version": "HEAD-9fd570b-250416T085010"
   },
   {
     "_disabled": "false",
@@ -56800,7 +57080,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-24cc2f9-250416T012645"
+    "version": "HEAD-cd4560e-250416T064321"
   },
   {
     "_disabled": "false",
@@ -56863,7 +57143,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-24cc2f9-250416T012645"
+    "version": "HEAD-cd4560e-250416T064321"
   },
   {
     "_disabled": "false",
@@ -61089,7 +61369,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d13d328-250408T081059"
+    "version": "HEAD-0b0c2b1-250416T091629"
   },
   {
     "_disabled": "false",
@@ -63621,7 +63901,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-ad0150c-250415T193307"
+    "version": "HEAD-0b90972-250416T075304"
   },
   {
     "_disabled": "false",
@@ -64929,7 +65209,7 @@
     "tag": [
       "linter"
     ],
-    "version": "HEAD-57ed899-250410T075756"
+    "version": "HEAD-5585802-250416T023028"
   },
   {
     "_disabled": "false",
@@ -65066,7 +65346,7 @@
     "tag": [
       "checksum"
     ],
-    "version": "HEAD-5a22f03-250416T001112"
+    "version": "HEAD-22f215f-250416T102837"
   },
   {
     "_disabled": "false",
@@ -66208,7 +66488,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f1eaad8-250415T181028"
+    "version": "HEAD-3d8a278-250416T154119"
   },
   {
     "_disabled": "false",
@@ -68456,7 +68736,7 @@
       "security",
       "subdomain"
     ],
-    "version": "HEAD-3da6a12-250316T101921"
+    "version": "HEAD-c1c5530-250416T091810"
   },
   {
     "_disabled": "false",
@@ -73363,6 +73643,51 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sslscan",
+    "pkg_family": "sslscan",
+    "pkg_id": "github.com.rbsec.sslscan.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sslscan-source/sslscan/sslscan",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sslscan/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Test SSL/TLS enabled services to discover supported cipher suites",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sslscan/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rbsec/sslscan"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rbsec/sslscan"
+    ],
+    "provides": [
+      "sslscan"
+    ],
+    "repology": [
+      "sslscan"
+    ],
+    "src_url": [
+      "https://github.com/rbsec/sslscan"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-7ba5ee0-250127T195620"
+  },
+  {
+    "_disabled": "false",
     "pkg": "sslsearch",
     "pkg_family": "sslsearch",
     "pkg_id": "github.com.HarshVaragiya.sslsearch",
@@ -73706,7 +74031,7 @@
       "certificate",
       "sso"
     ],
-    "version": "HEAD-00cb2f6-250407T133653"
+    "version": "HEAD-c4a4997-250416T115656"
   },
   {
     "_disabled": "false",
@@ -74112,7 +74437,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-cd67b9b-250416T005223"
+    "version": "HEAD-ae139a6-250416T121410"
   },
   {
     "_disabled": "false",
@@ -75840,7 +76165,7 @@
       "logfile",
       "tail"
     ],
-    "version": "HEAD-54b48fe-250415T155328"
+    "version": "HEAD-f20c4ce-250416T110023"
   },
   {
     "_disabled": "false",
@@ -82229,7 +82554,7 @@
     "tag": [
       "asdf"
     ],
-    "version": "HEAD-d5402ff-250412T144727"
+    "version": "HEAD-0379852-250416T180945"
   },
   {
     "_disabled": "false",
@@ -84050,7 +84375,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-fb9174d-250411T182209"
+    "version": "HEAD-1d80c7e-250416T104135"
   },
   {
     "_disabled": "false",
@@ -86120,7 +86445,7 @@
     "tag": [
       "utility"
     ],
-    "version": "250415T181806"
+    "version": "250416T120546"
   },
   {
     "_disabled": "false",
@@ -86168,7 +86493,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250415T181806"
+    "version": "250416T120546"
   },
   {
     "_disabled": "false",
@@ -86980,7 +87305,7 @@
       "xml",
       "xpath"
     ],
-    "version": "HEAD-412d524-250407T142004"
+    "version": "HEAD-3cb3111-250416T143804"
   },
   {
     "_disabled": "false",
@@ -87904,7 +88229,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-d2cc73c-250413T144616"
+    "version": "HEAD-510cb14-250416T200812"
   },
   {
     "_disabled": "false",

@@ -1,6 +1,6 @@
 ```mathematica
 413M └─┬ main
-174M   ├─┬ misc
+173M   ├─┬ misc
 173M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
  36M   │ │ ├── FLATPAK_APPSTREAM.xml

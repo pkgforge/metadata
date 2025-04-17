@@ -478,6 +478,46 @@ jobs:
            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_pkgcache_x86_64-Linux.json"
         continue-on-error: true
 
+      - name: Generate Completions
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          mkdir -pv "${GITHUB_WORKSPACE}/main/completions"
+          ##aarch64-Linux
+          pushd "$(mktemp -d)" &>/dev/null &&\
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):bincache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json" > "./ALL_aarch64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):pkgcache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json" >> "./ALL_aarch64-Linux.txt"
+            #jq -r '.[] | "\(.pkg_name)#\(.pkg_id):ivan-hc-am ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/am/data/aarch64-Linux.json" >> "./ALL_aarch64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):appimage-github-io ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/aarch64-Linux.json" >> "./ALL_aarch64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):cargo-bins ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/cargo-bins/data/aarch64-Linux.json" >> "./ALL_aarch64-Linux.txt"
+            sort -u "./ALL_aarch64-Linux.txt" -o "./ALL_aarch64-Linux.txt"
+            sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "./ALL_aarch64-Linux.txt"
+            if [[ -s "./ALL_aarch64-Linux.txt" && $(wc -l < "./ALL_aarch64-Linux.txt" | tr -cd '0-9') -gt 1000 ]]; then
+               cp -fv "./ALL_aarch64-Linux.txt" "${GITHUB_WORKSPACE}/main/completions/ALL_aarch64-Linux.txt"
+               awk -F ' ## ' '{print $1}' "${GITHUB_WORKSPACE}/main/completions/ALL_aarch64-Linux.txt" > "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_aarch64-Linux.txt"
+               sort -u "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_aarch64-Linux.txt" -o "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_aarch64-Linux.txt"
+               sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_aarch64-Linux.txt"
+            fi
+          popd &>/dev/null
+          ##x86_64-Linux
+          pushd "$(mktemp -d)" &>/dev/null &&\
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):bincache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/bincache/data/x86_64-Linux.json" > "./ALL_x86_64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):pkgcache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.json" >> "./ALL_x86_64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):ivan-hc-am ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/am/data/x86_64-Linux.json" >> "./ALL_x86_64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):appimage-github-io ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/x86_64-Linux.json" >> "./ALL_x86_64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):cargo-bins ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/cargo-bins/data/x86_64-Linux.json" >> "./ALL_x86_64-Linux.txt"
+            sort -u "./ALL_x86_64-Linux.txt" -o "./ALL_x86_64-Linux.txt"
+            sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "./ALL_x86_64-Linux.txt"
+            if [[ -s "./ALL_x86_64-Linux.txt" && $(wc -l < "./ALL_x86_64-Linux.txt" | tr -cd '0-9') -gt 1000 ]]; then
+               cp -fv "./ALL_x86_64-Linux.txt" "${GITHUB_WORKSPACE}/main/completions/ALL_x86_64-Linux.txt"
+               awk -F ' ## ' '{print $1}' "${GITHUB_WORKSPACE}/main/completions/ALL_x86_64-Linux.txt" > "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_x86_64-Linux.txt"
+               sort -u "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_x86_64-Linux.txt" -o "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_x86_64-Linux.txt"
+               sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_x86_64-Linux.txt"
+            fi
+          popd &>/dev/null
+        continue-on-error: true
+
       - name: Get DateTime & Purge files (=> 95 MB)
         run: |
           #Presets
@@ -497,7 +537,7 @@ jobs:
           repository: ./main
           commit_user_name: Azathothas
           commit_user_email: AjamX101@gmail.com
-          commit_message: "✅ Updated Metadata [Diff] ♻️"
+          commit_message: "✅ Updated Metadata [Completions + Diff] ♻️"
           #push_options: '--force'
         continue-on-error: true
 
@@ -515,6 +555,6 @@ jobs:
           repository: ./main
           commit_user_name: Azathothas
           commit_user_email: AjamX101@gmail.com
-          commit_message: "✅ Updated Metadata [Diff] ♻️"
+          commit_message: "✅ Updated Metadata [Completions + Diff] ♻️"
           #push_options: '--force'
         continue-on-error: true

@@ -1,13 +1,13 @@
 ```mathematica
-413M └─┬ main
-174M   ├─┬ misc
-173M   │ ├─┬ data
+411M └─┬ main
+171M   ├─┬ misc
+171M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
  36M   │ │ ├── FLATPAK_APPSTREAM.xml
  23M   │ │ ├── DEBIAN.json
  10M   │ │ ├── ALPINE_PKG.json
  10M   │ │ ├── NIXPKGS.json
-9.0M   │ │ ├── PKGSRC.json
+6.9M   │ │ ├── PKGSRC.json
 5.0M   │ │ ├── ALPINE_GIT.json
 2.7M   │ │ ├── BREW_FORMULA.json
 1.6M   │ │ ├── BREW_CASK.json

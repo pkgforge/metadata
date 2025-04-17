@@ -3735,7 +3735,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "dopatch": "if [ \"$TARGET_PLATFORM_NAME\" != macos ] ; then\n    gsed -i 's|-soname|-install_name|' Makefile\nfi",
+    "dopatch": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    gsed -i 's|-soname|-install_name|' Makefile\nfi",
     "install": "configure --enable-multicall --with-sysdeps=\"$skalibs_INSTALL_DIR/lib/skalibs/sysdeps\""
   },
   {
@@ -13989,6 +13989,22 @@
     "install": "configure"
   },
   {
+    "pkgname": "libscrypt",
+    "pkgtype": "lib",
+    "version": "1.22",
+    "license": "BSD-2-Clause",
+    "summary": "A shared library that implements scrypt() functionality - a replacement for bcrypt()",
+    "web-url": "https://github.com/technion/libscrypt",
+    "git-url": "https://github.com/technion/libscrypt",
+    "git-sha": "69a6f21d7648e18e4e5711d22d0db1af4620b3e9",
+    "dep-upp": "git",
+    "binbstd": "1",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "run rm main.c\n\nfor f in *.c\ndo\n    run \"$CC\" -c \"$CPPFLAGS\" \"$CFLAGS\" -O2 \"$f\"\ndone\n\nrun \"$AR\" crs libscrypt.a *.o\n\nrun \"$CC\" -shared $LDFLAGS -o libscrypt$SHARED_LIBRARY_SUFFIX *.o\n\ninstall_libs libscrypt.a libscrypt$SHARED_LIBRARY_SUFFIX\n\ninstall_incs libscrypt.h"
+  },
+  {
     "pkgname": "libsdl2",
     "pkgtype": "lib",
     "version": "2.32.2",
@@ -22262,6 +22278,26 @@
     "ltoable": "1",
     "movable": "1",
     "install": "cmakew -DCMAKE_CXX_STANDARD=11"
+  },
+  {
+    "pkgname": "tor",
+    "pkgtype": "exe",
+    "version": "0.4.8.16",
+    "license": "BSD-2-Clause BSD-3-Clause MIT NCSA",
+    "summary": "Anonymizing overlay network for TCP",
+    "web-url": "https://www.torproject.org/",
+    "src-url": "https://fossies.org/linux/misc/tor-0.4.8.16.tar.gz",
+    "src-uri": "https://www.torproject.org/dist/tor-0.4.8.16.tar.gz",
+    "src-sha": "6540dd377a120fb8e7d27530aa3b7ff72a0fa5b4f670fe1d64c987c1cfd390cb",
+    "dep-pkg": "libevent libscrypt libzstd liblzma libz",
+    "dep-upp": "curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "0",
+    "ppflags": "-UNDEBUG",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "configure --enable-gpl --disable-html-manual"
   },
   {
     "pkgname": "totp-cli",

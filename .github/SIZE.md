@@ -1,7 +1,7 @@
 ```mathematica
-415M └─┬ main
+416M └─┬ main
 172M   ├─┬ misc
-171M   │ ├─┬ data
+172M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
  36M   │ │ ├── FLATPAK_APPSTREAM.xml
  23M   │ │ ├── DEBIAN.json
@@ -120,7 +120,7 @@
 248K   │ │ │ ├── x86_64-Linux.db.xz
 232K   │ │ │ ├── x86_64-Linux.json.zstd
 220K   │ │ │ ├── x86_64-Linux.json.xz
-140K   │ │ │ ├── aarch64-Linux.db.cba
+136K   │ │ │ ├── aarch64-Linux.db.cba
 132K   │ │ │ ├── aarch64-Linux.json.cba
 112K   │ │ │ ├── aarch64-Linux.db.zstd
 108K   │ │ │ ├── aarch64-Linux.db.xz
@@ -155,6 +155,7 @@
  84K   │ │ │ ├── aarch64-Linux.db
  12K   │ │ │ ├── aarch64-Linux.json.zstd
  12K   │ │ │ ├── aarch64-Linux.json.xz
+ 12K   │ │ │ ├── aarch64-Linux.json.cba
  12K   │ │ │ ├── aarch64-Linux.db.zstd
  12K   │ │ │ ├── aarch64-Linux.db.xz
  12K   │ │ │ ├── aarch64-Linux.db.cba
@@ -166,7 +167,6 @@
 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
 4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
 4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
-4.0K   │ │ │ ├── aarch64-Linux.json.cba
 4.0K   │ │ │ ├── aarch64-Linux.json.bsum
 4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
 4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
@@ -339,7 +339,7 @@
  28K   │   ├── icon_database.png
  24K   │   ├── icon_config_multi.png
  20K   │   └── icon_json.png
-240K   ├── GHCR_PKGS.json.zstd
+244K   ├── GHCR_PKGS.json.zstd
  28K   ├─┬ r2
  12K   │ ├─┬ scripts
 8.0K   │ │ └── sync_r2_mirror.sh

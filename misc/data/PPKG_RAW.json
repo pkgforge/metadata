@@ -4217,13 +4217,15 @@
     "git-url": "https://github.com/pouriyajamshidi/flat",
     "src-url": "https://github.com/pouriyajamshidi/flat/archive/refs/tags/v0.3.0.tar.gz",
     "src-sha": "61ede81b1399977f9d516812f8d1a015a87c8a90ccb29e47275bb3ad2b6b4199",
+    "dep-pkg": "libbpf",
     "dep-upp": "curl bsdtar golang",
     "bsystem": "go",
     "binbstd": "1",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "run go generate ./...\ngow ./cmd/"
+    "prepare": "# https://github.com/cilium/ebpf/blob/main/cmd/bpf2go/main.go\nunset BPF2GO_CC\nunset BPF2GO_STRIP\nunset BPF2GO_MAKEBASE\nunset GOFILE\nunset GOPACKAGE\n\nexport BPF2GO_CFLAGS=\"$CPPFLAGS -v\"\n\nrun go generate ./...",
+    "install": "gow -o flat ./cmd/"
   },
   {
     "pkgname": "flatbuffers",
@@ -8412,7 +8414,7 @@
     "git-url": "https://github.com/argp-standalone/argp-standalone",
     "src-url": "https://github.com/argp-standalone/argp-standalone/archive/refs/tags/1.5.0.tar.gz",
     "src-sha": "c29eae929dfebd575c38174f2c8c315766092cec99a8f987569d0cad3c6d64f6",
-    "fix-url": "https://git.alpinelinux.org/aports/plain/main/argp-standalone/gnu89-inline.patch",
+    "fix-url": "https://gitlab.alpinelinux.org/alpine/aports/-/raw/master/main/argp-standalone/gnu89-inline.patch",
     "fix-sha": "29be7cf514ecebe0c8879e9c510931d5ed03cb5f06ddd230f08b541b168fd5b6",
     "dep-upp": "curl bsdtar patch python3 ninja",
     "dep-pym": " meson",
@@ -23709,6 +23711,24 @@
     "dopatch": "[ \"$TARGET_PLATFORM_NAME\" = macos ] && return 0\n\nrm  ../lib/libX11.a\nrm  ../lib/libXt.a\n\nprintf 'INPUT(%s %s)\\n' \"$xorg_libx11_LIBRARY_DIR/libX11.a\" \"$(pkg-config --libs-only-l x11 | sed 's|-lX11||g')\" > ../lib/libX11.a\nprintf 'INPUT(%s %s)\\n' \"$xorg_libxt_LIBRARY_DIR/libXt.a\"   \"$(pkg-config --libs-only-l xt  | sed 's|-lXt||g')\"  > ../lib/libXt.a",
     "prepare": "export CFLAGS=\"$CFLAGS $CPPFLAGS\"\nexport LIBS=\"$(pkg-config --libs xmu)\"",
     "install": "configure"
+  },
+  {
+    "pkgname": "xcpkg",
+    "pkgtype": "exe",
+    "version": "2025.04.18",
+    "license": "Apache-2.0",
+    "summary": "A package builder/manager for Xcode to build projects written in C, C++, Rust, Zig, Go, Haskell, etc",
+    "web-url": "https://github.com/leleliu008/xcpkg",
+    "git-url": "https://github.com/leleliu008/xcpkg",
+    "dep-pkg": "libcurl libgit2 libarchive libyaml libjansson",
+    "dep-upp": "git cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "dopatch": "PACKAGE_VERSION=$(sed -n '/project(xcpkg VERSION /p' CMakeLists.txt | sed 's|project(xcpkg VERSION \\([0-9.]*\\) .*)|\\1|')",
+    "install": "cmakew"
   },
   {
     "pkgname": "xdo",

@@ -1,6 +1,6 @@
 ```mathematica
 415M └─┬ main
-171M   ├─┬ misc
+172M   ├─┬ misc
 171M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
  36M   │ │ ├── FLATPAK_APPSTREAM.xml
@@ -16,7 +16,7 @@
 428K   │ │ ├── FLATPAK_APPS_INFO.txt
 308K   │ │ ├── PPKG.json
 236K   │ │ ├── FLATPAK_POPULAR.json
-224K   │ │ ├── FLATPAK_TRENDING.json
+212K   │ │ ├── FLATPAK_TRENDING.json
  76K   │ │ ├── FLATPAK_APP_IDS.txt
  20K   │ │ ├── CATEGORY.json
 4.0K   │ │ └── CATEGORY.md

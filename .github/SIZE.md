@@ -1,7 +1,7 @@
 ```mathematica
 416M └─┬ main
 172M   ├─┬ misc
-172M   │ ├─┬ data
+171M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
  36M   │ │ ├── FLATPAK_APPSTREAM.xml
  23M   │ │ ├── DEBIAN.json

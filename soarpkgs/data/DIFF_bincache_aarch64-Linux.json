@@ -674,7 +674,7 @@
       "modal-editing",
       "text-editor"
     ],
-    "version": "HEAD-6de06ae-250419T111423"
+    "version": "HEAD-46b3341-250419T131905"
   },
   {
     "_disabled": "false",
@@ -1303,6 +1303,166 @@
       "Utility"
     ],
     "version": "deploy/v9.2.2-52"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bintools",
+    "pkg_family": "bintools",
+    "pkg_id": "nixpkgs.bintools",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bintools/bintools/bintools",
+    "bincache": "ghcr.io/pkgforge/bincache/bintools/nixpkgs/addr2line",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bintools/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for manipulating binaries (linker, assembler, etc.) [alias=binutils]",
+      "addr2line": "Converts addresses into filenames and line numbers [bintools]",
+      "ar": "A utility for creating, modifying and extracting from archives [bintools]",
+      "as": "The GNU Assembler [bintools]",
+      "c++filt": "Filter to demangle encoded C++ symbols [bintools]",
+      "dwp": "The DWARF packaging utility [bintools]",
+      "elfedit": "Allows alteration of ELF format files [bintools]",
+      "gprof": "Displays profiling information [bintools]",
+      "ld": "The GNU linker [bintools]",
+      "ld.bfd": "The GNU linker with BFD libraries [bintools]",
+      "ld.gold": "A new, faster, ELF only linker [bintools]",
+      "nm": "Lists symbols from object files [bintools]",
+      "objcopy": "Copies and translates object files [bintools]",
+      "objdump": "Displays information from object files [bintools]",
+      "ranlib": "Generates an index to the contents of an archive [bintools]",
+      "readelf": "Displays information from any ELF format object file [bintools]",
+      "size": "Lists the section sizes of an object or archive file [bintools]",
+      "strings": "Lists printable strings from files [bintools]",
+      "strip": "Discards symbols [bintools]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bintools/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/binutils/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL3"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "addr2line",
+      "ar",
+      "as",
+      "c++filt",
+      "dwp",
+      "elfedit",
+      "gprof",
+      "ld",
+      "ld.bfd",
+      "ld.gold",
+      "nm",
+      "objcopy",
+      "objdump",
+      "ranlib",
+      "readelf",
+      "size",
+      "strings",
+      "strip"
+    ],
+    "src_url": [
+      "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git"
+    ],
+    "tag": [
+      "build-tools"
+    ],
+    "version": "2.44"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "binutils",
+    "pkg_family": "binutils",
+    "pkg_id": "nixpkgs.binutils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-binutils/binutils/binutils",
+    "bincache": "ghcr.io/pkgforge/bincache/binutils/nixpkgs/addr2line",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/binutils/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for manipulating binaries (linker, assembler, etc.) [alias=bintools]",
+      "addr2line": "Converts addresses into filenames and line numbers [binutils]",
+      "ar": "A utility for creating, modifying and extracting from archives [binutils]",
+      "as": "The GNU Assembler [binutils]",
+      "c++filt": "Filter to demangle encoded C++ symbols [binutils]",
+      "dwp": "The DWARF packaging utility [binutils]",
+      "elfedit": "Allows alteration of ELF format files [binutils]",
+      "gprof": "Displays profiling information [binutils]",
+      "ld": "The GNU linker [binutils]",
+      "ld.bfd": "The GNU linker with BFD libraries [binutils]",
+      "ld.gold": "A new, faster, ELF only linker [binutils]",
+      "nm": "Lists symbols from object files [binutils]",
+      "objcopy": "Copies and translates object files [binutils]",
+      "objdump": "Displays information from object files [binutils]",
+      "ranlib": "Generates an index to the contents of an archive [binutils]",
+      "readelf": "Displays information from any ELF format object file [binutils]",
+      "size": "Lists the section sizes of an object or archive file [binutils]",
+      "strings": "Lists printable strings from files [binutils]",
+      "strip": "Discards symbols [binutils]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/binutils/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/binutils/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "addr2line",
+      "ar",
+      "as",
+      "c++filt",
+      "dwp",
+      "elfedit",
+      "gprof",
+      "ld",
+      "ld.bfd",
+      "ld.gold",
+      "nm",
+      "objcopy",
+      "objdump",
+      "ranlib",
+      "readelf",
+      "size",
+      "strings",
+      "strip"
+    ],
+    "repology": [
+      "binutils"
+    ],
+    "src_url": [
+      "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git"
+    ],
+    "tag": [
+      "build-tools"
+    ],
+    "version": "2.44"
   },
   {
     "_disabled": "false",
@@ -3966,7 +4126,7 @@
       "bugbounty",
       "cdn"
     ],
-    "version": "v1.1.14"
+    "version": "v1.1.15"
   },
   {
     "_disabled": "false",
@@ -4009,7 +4169,7 @@
       "certificate-transparency",
       "certstream"
     ],
-    "version": "HEAD-fe5d16b-250408T215738"
+    "version": "HEAD-47f9d9e-250419T220703"
   },
   {
     "_disabled": "false",
@@ -7992,7 +8152,7 @@
       "bugbounty",
       "xss"
     ],
-    "version": "HEAD-a27f097-250414T225714"
+    "version": "HEAD-75932eb-250420T084933"
   },
   {
     "_disabled": "false",
@@ -8072,7 +8232,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-d32693c-250418T020133"
+    "version": "HEAD-ec9363a-250419T190757"
   },
   {
     "_disabled": "false",
@@ -8125,7 +8285,7 @@
     "tag": [
       "development"
     ],
-    "version": "HEAD-2fd4b96-250417T104217"
+    "version": "HEAD-afb91a3-250419T152424"
   },
   {
     "_disabled": "false",
@@ -10614,7 +10774,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-1887fef-250419T180419"
+    "version": "HEAD-b004922-250420T000626"
   },
   {
     "_disabled": "false",
@@ -11778,7 +11938,7 @@
       "password",
       "security"
     ],
-    "version": "HEAD-4bceec1-250419T195637"
+    "version": "HEAD-c5f25ac-250419T213738"
   },
   {
     "_disabled": "false",
@@ -13539,6 +13699,109 @@
   },
   {
     "_disabled": "false",
+    "pkg": "iproute2",
+    "pkg_family": "iproute2",
+    "pkg_id": "nixpkgs.iproute2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-iproute2/iproute2/iproute2",
+    "bincache": "ghcr.io/pkgforge/bincache/iproute2/nixpkgs/arpd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/iproute2/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A Collection of utilities for controlling TCP/IP networking and traffic control in Linux",
+      "arpd": "Userspace arp daemon [iproute2]",
+      "bridge": "Show/Manipulate bridge addresses and devices [iproute2]",
+      "ctstat": "Unified linux network connection tracking statistics [iproute2]",
+      "dcb": "Show/Manipulate DCB (Data Center Bridging) settings [iproute2]",
+      "devlink": "Manage/Monitor network device links [iproute2]",
+      "genl": "Generic netlink utility frontend [iproute2]",
+      "ifstat": "Handy utility to read network interface statistics [iproute2]",
+      "ip": "Show/Manipulate routing, network devices, interfaces and tunnels [iproute2]",
+      "lnstat": "Unified linux network interface/route statistics [iproute2]",
+      "nstat": "Display network statistics for network interfaces, protocols, and sockets [iproute2]",
+      "rdma": "Manage Remote Direct Memory Access (RDMA) devices and connections for high-performance networking [iproute2]",
+      "routel": "List routes with pretty output format [iproute2]",
+      "rtacct": "Display and monitors the accounting information of routing tables [iproute2]",
+      "rtmon": "Listen to and monitor RTnetlink [iproute2]",
+      "rtstat": "Display routing table statistics, including the number of routes and related metrics [iproute2]",
+      "ss": "Utility to dump/investigate sockets [iproute2]",
+      "tc": "Show/Manipulate traffic control settings [iproute2]",
+      "tipc": "A TIPC configuration and management tool [iproute2]",
+      "vdpa": "vDPA management tool [iproute2]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "iproute2"
+      ],
+      "archlinux": {
+        "aur": [
+          "iproute2-git"
+        ]
+      },
+      "debian": [
+        "iproute2"
+      ],
+      "nixpkgs": [
+        "iproute2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/iproute2/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://wiki.linuxfoundation.org/networking/iproute2",
+      "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "arpd",
+      "bridge",
+      "ctstat",
+      "dcb",
+      "devlink",
+      "genl",
+      "ifstat",
+      "ip",
+      "lnstat",
+      "nstat",
+      "rdma",
+      "routel",
+      "rtacct",
+      "rtmon",
+      "rtstat",
+      "ss",
+      "tc",
+      "tipc",
+      "vdpa"
+    ],
+    "repology": [
+      "iproute2"
+    ],
+    "src_url": [
+      "https://github.com/iproute2/iproute2"
+    ],
+    "tag": [
+      "network",
+      "Network/Routing"
+    ],
+    "version": "6.14.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "iroh",
     "pkg_family": "iroh",
     "pkg_id": "github.com.n0-computer.iroh.source",
@@ -15131,6 +15394,80 @@
   },
   {
     "_disabled": "false",
+    "pkg": "libarchive",
+    "pkg_family": "libarchive",
+    "pkg_id": "nixpkgs.libarchive",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-libarchive/libarchive/libarchive",
+    "bincache": "ghcr.io/pkgforge/bincache/libarchive/nixpkgs/bsdcat",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/libarchive/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Multi-format archive and compression Tools",
+      "bsdcat": "Expand files/std-in to standard output, decompressing data as needed [libarchive]",
+      "bsdcpio": "Copy files to and from archives [libarchive]",
+      "bsdtar": "Create/Manipulate Archive Files [libarchive]",
+      "bsdunzip": "Extract files from a ZIP archive [libarchive]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "libarchive"
+      ],
+      "archlinux": {
+        "aur": [
+          "libarchive-git"
+        ]
+      },
+      "debian": [
+        "libarchive"
+      ],
+      "nixpkgs": [
+        "libarchive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/libarchive/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.libarchive.org/",
+      "https://github.com/libarchive/libarchive"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "public-domain"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "bsdcat",
+      "bsdcpio",
+      "bsdtar",
+      "bsdunzip"
+    ],
+    "repology": [
+      "libarchive"
+    ],
+    "src_url": [
+      "https://github.com/libarchive/libarchive"
+    ],
+    "tag": [
+      "Archive",
+      "Archiver"
+    ],
+    "version": "3.7.8"
+  },
+  {
+    "_disabled": "false",
     "pkg": "libaws",
     "pkg_family": "libaws-cli",
     "pkg_id": "github.com.nathants.libaws",
@@ -15366,7 +15703,7 @@
     "tag": [
       "log"
     ],
-    "version": "v0.13.0-rc1"
+    "version": "v0.13.0-rc2"
   },
   {
     "_disabled": "false",
@@ -16269,7 +16606,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-66382a2-250417T050227"
+    "version": "HEAD-af596a3-250419T220317"
   },
   {
     "_disabled": "false",
@@ -17529,7 +17866,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-5e8765b-250419T230126"
+    "version": "HEAD-1a81a20-250420T052048"
   },
   {
     "_disabled": "false",
@@ -18481,7 +18818,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-24dba9d-250419T060249"
+    "version": "HEAD-5c59611-250419T182912"
   },
   {
     "_disabled": "false",
@@ -18545,7 +18882,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-24dba9d-250419T060249"
+    "version": "HEAD-5c59611-250419T182912"
   },
   {
     "_disabled": "false",
@@ -19129,7 +19466,7 @@
     "tag": [
       "pager"
     ],
-    "version": "HEAD-3c1a121-250416T121813"
+    "version": "HEAD-99b6d52-250420T092746"
   },
   {
     "_disabled": "false",
@@ -20511,7 +20848,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-e0b92a5-250419T135929"
+    "version": "HEAD-c98623c-250419T160759"
   },
   {
     "_disabled": "false",
@@ -22442,6 +22779,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sbctl",
+    "pkg_family": "sbctl",
+    "pkg_id": "github.com.Foxboron.sbctl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/foxboron-sbctl/sbctl/sbctl",
+    "bincache": "ghcr.io/pkgforge/bincache/sbctl/official/sbctl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sbctl/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Secure Boot key manager",
+    "distro_pkg": {
+      "alpine": [
+        "sbctl"
+      ],
+      "archlinux": {
+        "aur": [
+          "sbctl-git"
+        ],
+        "extra": [
+          "sbctl"
+        ]
+      },
+      "nixpkgs": [
+        "sbctl"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sbctl/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/Foxboron/sbctl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Foxboron/sbctl"
+    ],
+    "provides": [
+      "sbctl"
+    ],
+    "repology": [
+      "sbctl"
+    ],
+    "src_url": [
+      "https://github.com/Foxboron/sbctl"
+    ],
+    "tag": [
+      "efi",
+      "secureboot",
+      "uefi"
+    ],
+    "version": "HEAD-7f52460-250420T002651"
+  },
+  {
+    "_disabled": "false",
     "pkg": "sbuilder",
     "pkg_family": "sbuilder",
     "pkg_id": "github.com.pkgforge.sbuilder",
@@ -22663,6 +23064,137 @@
       "Utility"
     ],
     "version": "HEAD-025641c-250417T170237"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "shadow",
+    "pkg_family": "shadow",
+    "pkg_id": "nixpkgs.shadow",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-shadow/shadow/shadow",
+    "bincache": "ghcr.io/pkgforge/bincache/shadow/official/chage",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/shadow/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Authentication-related Utilities tools for managing accounts and shadow files [alias=shadow-utils]",
+      "chage": "Change user password expiry information [shadow]",
+      "chfn": "Change real user name and information [shadow]",
+      "chgpasswd": "Update group passwords in batch mode [shadow]",
+      "chpasswd": "Update passwords in batch mode [shadow]",
+      "chsh": "Change login shell [shadow]",
+      "expiry": "Check and enforce password expiration policy [shadow]",
+      "faillog": "Display faillog records or set login failure limits [shadow]",
+      "getsubids": "Get the subordinate id ranges for a user [shadow]",
+      "gpasswd": "Administer /etc/group and /etc/gshadow files [shadow]",
+      "groupadd": "Create a new group [shadow]",
+      "groupdel": "Delete a group [shadow]",
+      "groupmems": "Administer members of a user's primary group [shadow]",
+      "groupmod": "Modify a group definition on the system [shadow]",
+      "grpck": "Verify integrity of group files [shadow]",
+      "grpconv": "Creates gshadow from group and gshadow [shadow]",
+      "grpunconv": "Create group from group and gshadow and then removes gshadow [shadow]",
+      "lastlog": "Report the most recent login of all users or of a given user [shadow]",
+      "login": "Begin session on the system [shadow]",
+      "logoutd": "Enforce login time restrictions [shadow]",
+      "newgidmap": "Set the gid mapping of a user namespace [shadow]",
+      "newgrp": "Log in to a new group [shadow]",
+      "newuidmap": "Set the uid mapping of a user namespace [shadow]",
+      "newusers": "Update and Create new users in batch [shadow]",
+      "nologin": "Politely refuse a login [shadow]",
+      "passwd": "Change user password [shadow]",
+      "pwck": "Verify the integrity of password files [shadow]",
+      "pwconv": "Convert to shadow passwords and groups [shadow]",
+      "pwunconv": "Convert from shadow passwords and groups [shadow]",
+      "sg": "Execute command as different group ID [shadow]",
+      "su": "Change user ID or become superuser [shadow]",
+      "sulogin": "Single-user login [shadow]",
+      "useradd": "Create a new user or Update default new user information [shadow]",
+      "userdel": "Delete a user account and related files [shadow]",
+      "usermod": "Modify a user account [shadow]",
+      "vigr": "Edit the group or shadow-group file [shadow]",
+      "vipw": "Edit the password or shadow-password file [shadow]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "shadow"
+      ],
+      "debian": [
+        "shadow"
+      ],
+      "gnuguix": [
+        "shadow"
+      ],
+      "nixpkgs": [
+        "shadow",
+        "su"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/shadow/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/shadow-maint/shadow"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "chage",
+      "chfn",
+      "chgpasswd",
+      "chpasswd",
+      "chsh",
+      "expiry",
+      "faillog",
+      "getsubids",
+      "gpasswd",
+      "groupadd",
+      "groupdel",
+      "groupmems",
+      "groupmod",
+      "grpck",
+      "grpconv",
+      "grpunconv",
+      "login",
+      "logoutd",
+      "newgidmap",
+      "newgrp",
+      "newuidmap",
+      "newusers",
+      "nologin",
+      "passwd",
+      "pwck",
+      "pwconv",
+      "pwunconv",
+      "sg",
+      "useradd",
+      "userdel",
+      "usermod",
+      "vigr",
+      "vipw"
+    ],
+    "repology": [
+      "shadow"
+    ],
+    "src_url": [
+      "https://github.com/shadow-maint/shadow"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "4.17.4"
   },
   {
     "_disabled": "false",
@@ -25610,6 +26142,68 @@
   },
   {
     "_disabled": "false",
+    "pkg": "tio",
+    "pkg_family": "tio",
+    "pkg_id": "nixpkgs.tio",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-tio/tio/tio",
+    "bincache": "ghcr.io/pkgforge/bincache/tio/nixpkgs/tio",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tio/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A serial device I/O tool for connecting to TTY devices",
+    "distro_pkg": {
+      "alpine": [
+        "tio"
+      ],
+      "archlinux": {
+        "aur": [
+          "tio",
+          "tio-git"
+        ]
+      },
+      "debian": [
+        "tio"
+      ],
+      "nixpkgs": [
+        "tio"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tio/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://tio.github.io",
+      "https://github.com/tio/tio"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "repology": [
+      "tio"
+    ],
+    "src_url": [
+      "https://github.com/tio/tio"
+    ],
+    "tag": [
+      "utility",
+      "Hardware/Modem"
+    ],
+    "version": "3.9"
+  },
+  {
+    "_disabled": "false",
     "pkg": "tlrc",
     "pkg_family": "tlrc",
     "pkg_id": "github.com.tldr-pages.tlrc",
@@ -26311,6 +26905,55 @@
       "Utility"
     ],
     "version": "HEAD-9293942-250402T131217"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tuiarchiver",
+    "pkg_family": "tuiarchiver",
+    "pkg_id": "codeberg.org.dnalor.tuiarchiver",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dnalor-tuiarchiver/tuiarchiver/tuiarchiver",
+    "bincache": "ghcr.io/pkgforge/bincache/tuiarchiver/official/tuiarchiver",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tuiarchiver/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "TUI archive manager",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "tuiarchiver-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tuiarchiver/static.official.source.yaml",
+    "homepage": [
+      "https://codeberg.org/dnalor/tuiarchiver"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "EUPL-1.2-or-later"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://codeberg.org/dnalor/tuiarchiver"
+    ],
+    "repology": [
+      "tuiarchiver"
+    ],
+    "src_url": [
+      "https://codeberg.org/dnalor/tuiarchiver"
+    ],
+    "tag": [
+      "archiver"
+    ]
   },
   {
     "_disabled": "false",
@@ -27687,7 +28330,7 @@
       "Editor",
       "text-editor"
     ],
-    "version": "9.1.1122"
+    "version": "9.1.1231"
   },
   {
     "_disabled": "false",
@@ -29438,7 +30081,7 @@
     "tag": [
       "Archiving/Compression"
     ],
-    "version": "5.6.4"
+    "version": "5.8.1"
   },
   {
     "_disabled": "false",
@@ -29523,7 +30166,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3b08c1e-250415T194114"
+    "version": "HEAD-a0684ee-250419T193858"
   },
   {
     "_disabled": "false",
@@ -29932,7 +30575,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "70.5"
+    "version": "70.6"
   },
   {
     "_disabled": "false",
@@ -30246,6 +30889,81 @@
       "Utility"
     ],
     "version": "HEAD-28cc3b7-250414T043114"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zstd",
+    "pkg_family": "zstd",
+    "pkg_id": "nixpkgs.zstd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-zstd/zstd/zstd",
+    "bincache": "ghcr.io/pkgforge/bincache/zstd/nixpkgs/unzstd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zstd/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Zstandard (Zstd) compression utilities",
+      "pzstd": "Parallelized zstd, a la pigz [zstd]",
+      "unzstd": "Decompress .zst files [alias=zstd -d] [zstd]",
+      "zstd": "Zstandard Compression/Decompression Utility [zstd]",
+      "zstdcat": "Output Zstandard compressed files to stdout [alias=zstd -dcf] [zstd]",
+      "zstdgrep": "Search Zstandard compressed files using regular expressions [zstd]",
+      "zstdless": "View Zstandard compressed files with less [zstd]",
+      "zstdmt": "Multi-threaded zstd [alias=zstd -T0] [zstd]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "zstd"
+      ],
+      "archlinux": {
+        "aur": [
+          "zstd-git",
+          "zstd-static"
+        ]
+      },
+      "nixpkgs": [
+        "zstd"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zstd/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://facebook.github.io/zstd/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "pzstd",
+      "unzstd",
+      "zstd",
+      "zstdcat",
+      "zstdgrep",
+      "zstdless",
+      "zstdmt"
+    ],
+    "repology": [
+      "zstd"
+    ],
+    "src_url": [
+      "https://github.com/facebook/zstd"
+    ],
+    "tag": [
+      "Archiving/Compression"
+    ],
+    "version": "1.5.7"
   },
   {
     "_disabled": "false",

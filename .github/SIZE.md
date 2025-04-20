@@ -34,7 +34,7 @@
 4.0K   │   ├── fetch_archlinux_docker.sh
 4.0K   │   └── fetch_alpine_git.sh
 139M   ├─┬ bincache
-138M   │ ├─┬ data
+139M   │ ├─┬ data
  25M   │ │ ├── x86_64-Linux.json
  25M   │ │ ├── aarch64-Linux.json
  18M   │ │ ├── x86_64-Linux.db
@@ -53,8 +53,8 @@
 872K   │ │ ├── x86_64-Linux.db.xz
 868K   │ │ ├── x86_64-Linux.sdb.xz
 860K   │ │ ├── aarch64-Linux.db.zstd
+844K   │ │ ├── aarch64-Linux.db.xz
 836K   │ │ ├── aarch64-Linux.sdb.xz
-836K   │ │ ├── aarch64-Linux.db.xz
 828K   │ │ ├── x86_64-Linux.json.zstd
 800K   │ │ ├── x86_64-Linux.json.xz
 796K   │ │ ├── aarch64-Linux.json.zstd
@@ -214,8 +214,8 @@
 1.5M   │ │ ├── OLD_bincache_aarch64-Linux.json
 1.4M   │ │ ├── BACKAGE.json
 1.3M   │ │ ├── INDEX.db
-892K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-872K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+896K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+876K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 700K   │ │ ├── pub_issues_binaries.txt
 368K   │ │ ├── INDEX.json.cba
 304K   │ │ ├── pub_issues_packages.txt

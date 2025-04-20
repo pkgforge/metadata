@@ -65,7 +65,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250419T022332"
+    "version": "250420T024221"
   },
   {
     "_disabled": "false",
@@ -1602,78 +1602,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "inkscape",
-    "pkg_family": "inkscape",
-    "pkg_id": "gitlab.com.inkscape.inkscape",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inkscape-inkscape/inkscape/inkscape",
-    "app_id": "org.inkscape.Inkscape",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/inkscape/appimage.official.stable.yaml",
-    "category": [
-      "Graphics",
-      "Office"
-    ],
-    "description": "FOSS Vector Graphics Editor",
-    "distro_pkg": {
-      "alpine": [
-        "inkscape"
-      ],
-      "archlinux": {
-        "aur": [
-          "inkscape-git"
-        ],
-        "extra": [
-          "inkscape"
-        ]
-      },
-      "debian": [
-        "inkscape"
-      ],
-      "gnuguix": [
-        "inkscape"
-      ],
-      "homebrew": [
-        "inkscape"
-      ],
-      "nixpkgs": [
-        "inkscape",
-        "inkscape-with-extensions"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/inkscape/appimage.official.stable.yaml",
-    "homepage": [
-      "https://inkscape.org"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/inkscape/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/inkscape/inkscape"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/inkscape/appimage/official",
-    "provides": [
-      "inkscape"
-    ],
-    "repology": [
-      "inkscape"
-    ],
-    "src_url": [
-      "https://inkscape.org/release"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ]
-  },
-  {
-    "_disabled": "false",
     "pkg": "interlace",
     "pkg_family": "interlace",
     "pkg_id": "sharun.wrappe.source.Interlace",
@@ -2903,6 +2831,72 @@
   },
   {
     "_disabled": "false",
+    "pkg": "signal-desktop",
+    "pkg_family": "signal-desktop",
+    "pkg_id": "github.com.karo-solutions.Signal-Desktop-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/signal-desktop/signal-desktop",
+    "app_id": "org.signal.Signal",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/signal-desktop/appimage.karo-solutions.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Private, simple, and secure messenger",
+    "distro_pkg": {
+      "alpine": [
+        "signal-desktop"
+      ],
+      "archlinux": {
+        "aur": [
+          "signal-desktop-beta"
+        ],
+        "extra": [
+          "signal-desktop"
+        ]
+      },
+      "homebrew": [
+        "signal"
+      ],
+      "nixpkgs": [
+        "signal-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/signal-desktop/appimage.karo-solutions.stable.yaml",
+    "homepage": [
+      "https://signal.org",
+      "https://github.com/signalapp/signal-desktop"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/signal-desktop/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/karo-solutions/Signal-Desktop-AppImage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/signal-desktop/appimage/karo-solutions",
+    "provides": [
+      "signal-desktop"
+    ],
+    "repology": [
+      "signal-desktop"
+    ],
+    "src_url": [
+      "https://github.com/karo-solutions/Signal-Desktop-AppImage"
+    ],
+    "tag": [
+      "chat",
+      "messenger"
+    ],
+    "version": "v7.51.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "simplex-desktop",
     "pkg_family": "simplex-desktop",
     "pkg_id": "nixpkgs.simplex-chat-desktop",
@@ -3081,6 +3075,61 @@
       "game"
     ],
     "version": "v1.0.15"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "suyu",
+    "pkg_family": "suyu",
+    "pkg_id": "git.suyu.dev.suyu.suyu.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/suyu-stable/suyu/suyu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/suyu/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Nintendo Switch emulator based on yuzu, with additional features",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "suyu-bin",
+          "suyu-git"
+        ]
+      },
+      "nixpkgs": [
+        "suyu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/suyu/appimage.official.stable.yaml",
+    "homepage": [
+      "https://suyu.dev",
+      "https://git.suyu.dev/suyu/suyu"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/suyu/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://git.suyu.dev/suyu/suyu"
+    ],
+    "provides": [
+      "suyu"
+    ],
+    "repology": [
+      "suyu"
+    ],
+    "src_url": [
+      "https://git.suyu.dev/suyu/suyu"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ]
   },
   {
     "_disabled": "false",

@@ -1,5 +1,5 @@
 ```mathematica
-417M └─┬ main
+416M └─┬ main
 172M   ├─┬ misc
 172M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
@@ -58,7 +58,7 @@
 832K   │ │ ├── x86_64-Linux.json.zstd
 800K   │ │ ├── x86_64-Linux.json.xz
 796K   │ │ ├── aarch64-Linux.json.zstd
-764K   │ │ ├── aarch64-Linux.json.xz
+768K   │ │ ├── aarch64-Linux.json.xz
 4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.sdb.bsum
@@ -210,23 +210,23 @@
  13M   ├─┬ soarpkgs
  13M   │ ├─┬ data
 2.5M   │ │ ├── INDEX.json
-1.6M   │ │ ├── BACKAGE.json
 1.5M   │ │ ├── OLD_bincache_x86_64-Linux.json
 1.5M   │ │ ├── OLD_bincache_aarch64-Linux.json
+1.4M   │ │ ├── BACKAGE.json
 1.3M   │ │ ├── INDEX.db
-908K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-888K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+912K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+892K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 700K   │ │ ├── pub_issues_binaries.txt
 368K   │ │ ├── INDEX.json.cba
 304K   │ │ ├── pub_issues_packages.txt
+252K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
 240K   │ │ ├── INDEX.db.cba
-236K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
 232K   │ │ ├── GH_REPO.md
 228K   │ │ ├── INDEX.json.xz
 220K   │ │ ├── INDEX.json.zstd
 184K   │ │ ├── INDEX.db.zstd
 176K   │ │ ├── INDEX.db.xz
-152K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
+164K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  60K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  52K   │ │ ├── URLS.txt
  44K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
@@ -274,7 +274,7 @@
 588K   │ │ ├── aarch64-Linux.sdb
 148K   │ │ ├── x86_64-Linux.sdb.cba
 140K   │ │ ├── x86_64-Linux.db.cba
-124K   │ │ ├── x86_64-Linux.json.cba
+128K   │ │ ├── x86_64-Linux.json.cba
 120K   │ │ ├── x86_64-Linux.sdb.zstd
 116K   │ │ ├── x86_64-Linux.db.zstd
 112K   │ │ ├── x86_64-Linux.sdb.xz
@@ -339,7 +339,7 @@
  28K   │   ├── icon_database.png
  24K   │   ├── icon_config_multi.png
  20K   │   └── icon_json.png
-244K   ├── GHCR_PKGS.json.zstd
+248K   ├── GHCR_PKGS.json.zstd
  28K   ├─┬ r2
  12K   │ ├─┬ scripts
 8.0K   │ │ └── sync_r2_mirror.sh

@@ -43,7 +43,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-015a73f-250410T112931"
+    "version": "HEAD-c976613-250422T153212"
   },
   {
     "_disabled": "false",
@@ -3994,7 +3994,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3a37ef3-250414T111034"
+    "version": "HEAD-8acbccc-250422T092240"
   },
   {
     "_disabled": "false",
@@ -7010,7 +7010,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-77c4ba5-250421T230326"
+    "version": "HEAD-0bb8a0a-250422T114257"
   },
   {
     "_disabled": "false",
@@ -7327,7 +7327,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-77c4ba5-250421T230326"
+    "version": "HEAD-0bb8a0a-250422T114257"
   },
   {
     "_disabled": "true",
@@ -7764,6 +7764,72 @@
       "Utility"
     ],
     "version": "HEAD-264e2f3-250417T143014"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "cri-tools",
+    "pkg_family": "cri-tools",
+    "pkg_id": "github.com.kubernetes-sigs.cri-tools",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cri-tools/cri-tools/cri-tools",
+    "bincache": "ghcr.io/pkgforge/bincache/cri-tools/official/crictl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/cri-tools/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "CLI and validation tools for Kubelet Container Runtime Interface (CRI)",
+      "crictl": "CLI for kubelet CRI [cri-tools]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "cri-tools"
+      ],
+      "archlinux": {
+        "extra": [
+          "cri-tools"
+        ]
+      },
+      "homebrew": [
+        "cri-tools"
+      ],
+      "nixpkgs": [
+        "cri-tools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/cri-tools/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/kubernetes-sigs/cri-tools"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/kubernetes-sigs/cri-tools"
+    ],
+    "provides": [
+      "crictl"
+    ],
+    "repology": [
+      "cri-tools"
+    ],
+    "src_url": [
+      "https://github.com/kubernetes-sigs/cri-tools"
+    ],
+    "tag": [
+      "container",
+      "kubernetes"
+    ],
+    "version": "v1.33.0"
   },
   {
     "_disabled": "false",
@@ -10141,7 +10207,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-9c455c3-250420T124106"
+    "version": "HEAD-c1f6a2f-250422T143039"
   },
   {
     "_disabled": "false",
@@ -10184,7 +10250,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f5d1409-250418T090809"
+    "version": "HEAD-608b917-250422T085651"
   },
   {
     "_disabled": "false",
@@ -10995,6 +11061,75 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gdu",
+    "pkg_family": "gdu",
+    "pkg_id": "github.com.dundee.gdu",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dundee-gdu/gdu/gdu",
+    "bincache": "ghcr.io/pkgforge/bincache/gdu/official/gdu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gdu/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast disk usage calculator with console interface",
+    "distro_pkg": {
+      "alpine": [
+        "gdu"
+      ],
+      "archlinux": {
+        "aur": [
+          "gdu-bin",
+          "gdu-git"
+        ],
+        "extra": [
+          "gdu"
+        ]
+      },
+      "debian": [
+        "gdu"
+      ],
+      "homebrew": [
+        "gdu"
+      ],
+      "nixpkgs": [
+        "gdu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gdu/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dundee/gdu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dundee/gdu"
+    ],
+    "provides": [
+      "gdu"
+    ],
+    "repology": [
+      "gdu"
+    ],
+    "src_url": [
+      "https://github.com/dundee/gdu"
+    ],
+    "tag": [
+      "disk-usage"
+    ],
+    "version": "HEAD-b105795-250422T105503"
+  },
+  {
+    "_disabled": "false",
     "pkg": "gfx",
     "pkg_family": "gfx",
     "pkg_id": "github.com.dwisiswant0.gfx",
@@ -11158,7 +11293,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-391c755-250422T060256"
+    "version": "HEAD-12d741c-250422T120326"
   },
   {
     "_disabled": "false",
@@ -11629,7 +11764,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-359914c-250421T144138"
+    "version": "HEAD-737bb49-250422T090048"
   },
   {
     "_disabled": "false",
@@ -12440,7 +12575,7 @@
     "tag": [
       "security"
     ],
-    "version": "HEAD-55dbf5a-250414T104453"
+    "version": "HEAD-dc1c38b-250422T101722"
   },
   {
     "_disabled": "false",
@@ -12685,8 +12820,7 @@
     ],
     "tag": [
       "utility"
-    ],
-    "version": "HEAD-335fcd3-250419T231535"
+    ]
   },
   {
     "_disabled": "false",
@@ -13565,7 +13699,7 @@
     "tag": [
       "monitor"
     ],
-    "version": "HEAD-42273e3-250421T225501"
+    "version": "HEAD-598e2c5-250422T125555"
   },
   {
     "_disabled": "false",
@@ -16427,7 +16561,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-2a16140-250421T213316"
+    "version": "HEAD-383f62d-250422T095924"
   },
   {
     "_disabled": "false",
@@ -16903,7 +17037,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-ef04876-250418T093805"
+    "version": "HEAD-8f00e84-250422T121105"
   },
   {
     "_disabled": "false",
@@ -19293,7 +19427,7 @@
       "recon",
       "security"
     ],
-    "version": "HEAD-d0e289e-250421T181814"
+    "version": "HEAD-24311cc-250422T110722"
   },
   {
     "_disabled": "false",
@@ -20207,7 +20341,7 @@
     "tag": [
       "pdf"
     ],
-    "version": "HEAD-4804a29-250422T023818"
+    "version": "HEAD-cd39124-250422T103849"
   },
   {
     "_disabled": "false",
@@ -20872,7 +21006,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-09c3c31-250418T090329"
+    "version": "HEAD-3c85299-250422T090955"
   },
   {
     "_disabled": "false",
@@ -21488,7 +21622,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-ebb6084-250421T144335"
+    "version": "HEAD-65dc7c8-250422T063633"
   },
   {
     "_disabled": "false",
@@ -21915,7 +22049,7 @@
       "provenance",
       "security"
     ],
-    "version": "HEAD-c571c23-250421T152117"
+    "version": "HEAD-1f43fb5-250422T142355"
   },
   {
     "_disabled": "false",
@@ -22231,7 +22365,7 @@
     "tag": [
       "checksum"
     ],
-    "version": "HEAD-be120d8-250422T072338"
+    "version": "HEAD-5070cea-250422T114302"
   },
   {
     "_disabled": "false",
@@ -23362,7 +23496,7 @@
       "interpreter",
       "ryelang"
     ],
-    "version": "v0.0.80"
+    "version": "v0.0.81"
   },
   {
     "_disabled": "false",
@@ -24011,7 +24145,7 @@
     "tag": [
       "shellcheck"
     ],
-    "version": "HEAD-14ccc2e-250421T233510"
+    "version": "HEAD-513f2df-250422T140953"
   },
   {
     "_disabled": "false",
@@ -24178,7 +24312,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-230ac25-250419T154031"
+    "version": "HEAD-81adb3c-250422T184227"
   },
   {
     "_disabled": "false",
@@ -24424,7 +24558,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-8240914-250416T135446"
+    "version": "HEAD-403ffcb-250422T053407"
   },
   {
     "_disabled": "false",
@@ -26105,7 +26239,7 @@
       "bugbounty",
       "subdomain"
     ],
-    "version": "HEAD-86d333e-250416T233039"
+    "version": "HEAD-601d019-250422T094315"
   },
   {
     "_disabled": "false",
@@ -26491,7 +26625,7 @@
       "logfile",
       "tail"
     ],
-    "version": "HEAD-aa2a5b8-250420T061452"
+    "version": "HEAD-a47b552-250422T082550"
   },
   {
     "_disabled": "false",
@@ -29458,6 +29592,50 @@
       "s3"
     ],
     "version": "HEAD-ab52d2b-250417T101530"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "warp-plus",
+    "pkg_family": "warp-plus",
+    "pkg_id": "github.com.bepass-org.warp-plus.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/plus-source/warp-plus/warp-plus",
+    "bincache": "ghcr.io/pkgforge/bincache/warp-plus/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/warp-plus/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Anti Censorship Utility using Cloudflare Warp+Psiphon",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/warp-plus/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/bepass-org/warp-plus"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/bepass-org/warp-plus"
+    ],
+    "provides": [
+      "warp-plus",
+      "warp-scan"
+    ],
+    "src_url": [
+      "https://github.com/bepass-org/warp-plus"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-3f6476a-250422T084127"
   },
   {
     "_disabled": "false",

@@ -44,7 +44,7 @@
 4.1M   │ │ ├── x86_64-Linux.json.cba
 4.0M   │ │ ├── aarch64-Linux.json.cba
 1.4M   │ │ ├── x86_64-Linux.db.cba
-1.4M   │ │ ├── aarch64-Linux.db.cba
+1.3M   │ │ ├── aarch64-Linux.db.cba
 1.3M   │ │ ├── x86_64-Linux.sdb.cba
 1.2M   │ │ ├── aarch64-Linux.sdb.cba
 948K   │ │ ├── x86_64-Linux.sdb.zstd
@@ -55,7 +55,7 @@
 860K   │ │ ├── aarch64-Linux.db.zstd
 844K   │ │ ├── aarch64-Linux.db.xz
 836K   │ │ ├── aarch64-Linux.sdb.xz
-828K   │ │ ├── x86_64-Linux.json.zstd
+832K   │ │ ├── x86_64-Linux.json.zstd
 800K   │ │ ├── x86_64-Linux.json.xz
 796K   │ │ ├── aarch64-Linux.json.zstd
 764K   │ │ ├── aarch64-Linux.json.xz
@@ -229,7 +229,7 @@
 164K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  76K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  52K   │ │ ├── URLS.txt
- 48K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+ 52K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  20K   │ │ ├── DIFF_bincache.json
 8.0K   │ │ ├── DIFF_pkgcache.json
 4.0K   │ │ ├── minisign.pub

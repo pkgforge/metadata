@@ -1,5 +1,5 @@
 ```mathematica
-419M └─┬ main
+420M └─┬ main
 174M   ├─┬ misc
 174M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
@@ -15,7 +15,7 @@
 456K   │ │ ├── FLATPAK_APPS_INFO.json
 428K   │ │ ├── FLATPAK_APPS_INFO.txt
 308K   │ │ ├── PPKG.json
-240K   │ │ ├── FLATPAK_POPULAR.json
+236K   │ │ ├── FLATPAK_POPULAR.json
 216K   │ │ ├── FLATPAK_TRENDING.json
  76K   │ │ ├── FLATPAK_APP_IDS.txt
  20K   │ │ ├── CATEGORY.json
@@ -120,7 +120,7 @@
 248K   │ │ │ ├── x86_64-Linux.db.xz
 232K   │ │ │ ├── x86_64-Linux.json.zstd
 220K   │ │ │ ├── x86_64-Linux.json.xz
-140K   │ │ │ ├── aarch64-Linux.db.cba
+136K   │ │ │ ├── aarch64-Linux.db.cba
 132K   │ │ │ ├── aarch64-Linux.json.cba
 112K   │ │ │ ├── aarch64-Linux.db.zstd
 108K   │ │ │ ├── aarch64-Linux.db.xz

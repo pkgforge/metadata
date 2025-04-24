@@ -168,7 +168,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "3.4.10"
+    "version": "3.4.11"
   },
   {
     "_disabled": "false",
@@ -244,7 +244,56 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.39.0"
+    "version": "1.40.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "github.com.srevinsaju.Brave-AppImage.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.beta.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers (Beta)",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.beta.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/appimage/srevinsaju",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "v1.78.88"
   },
   {
     "_disabled": "false",
@@ -695,6 +744,129 @@
     ]
   },
   {
+    "_disabled": "false",
+    "pkg": "discord-canary",
+    "pkg_family": "discord",
+    "pkg_id": "github.com.srevinsaju.discord-AppImage.canary",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-canary/discord/discord-canary",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/appimage.srevinsaju.canary.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Canary)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord@canary"
+      ],
+      "nixpkgs": [
+        "discord-canary"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/appimage.srevinsaju.canary.yaml",
+    "homepage": [
+      "https://discordapp.com",
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/discord-appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/discord-canary/appimage/srevinsaju",
+    "provides": [
+      "discord-canary"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "0.0.659"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dvc",
+    "pkg_family": "dvc",
+    "pkg_id": "sharun.wrappe.source.dvc",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-dvc/dvc/dvc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/dvc/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A version control system and experiment tracker designed for machine learning projects",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "dvc"
+        ]
+      },
+      "homebrew": [
+        "dvc"
+      ],
+      "nixpkgs": [
+        "dvc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/dvc/archive.sharun.source.yaml",
+    "homepage": [
+      "https://dvc.org/doc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/dvc/archive/sharun",
+    "provides": [
+      "dvc"
+    ],
+    "repology": [
+      "dvc"
+    ],
+    "src_url": [
+      "https://github.com/iterative/dvc"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-19f31d7-250424T061928"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -809,7 +981,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "139.0.20250423092127"
+    "version": "139.0.20250423212507"
   },
   {
     "_disabled": "false",
@@ -866,73 +1038,6 @@
       "game"
     ],
     "version": "v0.6.2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "ghidra",
-    "pkg_family": "ghidra",
-    "pkg_id": "runimage.cachyos.ghidra",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-ghidra/ghidra/ghidra",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghidra/runimage.cachyos.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Software reverse engineering (SRE) suite of tools",
-    "distro_pkg": {
-      "alpine": [
-        "ghidra"
-      ],
-      "archlinux": {
-        "aur": [
-          "ghidra-git"
-        ],
-        "extra": [
-          "ghidra"
-        ]
-      },
-      "homebrew": [
-        "ghidra"
-      ],
-      "nixpkgs": [
-        "ghidra",
-        "ghidra-bin"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghidra/runimage.cachyos.stable.yaml",
-    "homepage": [
-      "https://ghidra-sre.org",
-      "https://github.com/NationalSecurityAgency/ghidra"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/ghidra/assets/default.png",
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghidra/runimage/cachyos",
-    "provides": [
-      "ghidra"
-    ],
-    "repology": [
-      "ghidra"
-    ],
-    "src_url": [
-      "https://aur.archlinux.org/packages/ghidra-git-bin"
-    ],
-    "tag": [
-      "Security"
-    ]
   },
   {
     "_disabled": "true",
@@ -1137,76 +1242,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250423T004651"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "gimp",
-    "pkg_family": "gimp",
-    "pkg_id": "runimage.cachyos.gimp.git",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gimp-git/gimp/gimp",
-    "app_id": "org.gimp.GIMP",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gimp/runimage.cachyos.git.yaml",
-    "category": [
-      "Graphics",
-      "ImageProcessing"
-    ],
-    "description": "The GNU Image Manipulation Program (Git)",
-    "distro_pkg": {
-      "alpine": [
-        "gimp"
-      ],
-      "archlinux": {
-        "aur": [
-          "gimp-git"
-        ],
-        "extra": [
-          "gimp"
-        ]
-      },
-      "debian": [
-        "gimp"
-      ],
-      "nixpkgs": [
-        "gimp"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/gimp/runimage.cachyos.git.yaml",
-    "homepage": [
-      "https://www.gimp.org",
-      "https://gitlab.gnome.org/GNOME/gimp"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/gimp/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/gimp/runimage/cachyos",
-    "provides": [
-      "gimp"
-    ],
-    "repology": [
-      "gimp"
-    ],
-    "src_url": [
-      "https://aur.archlinux.org/packages/gimp-git"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ]
+    "version": "250424T004720"
   },
   {
     "_disabled": "true",
@@ -1499,66 +1535,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "haguichi",
-    "pkg_family": "haguichi",
-    "pkg_id": "runimage.cachyos.haguichi",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-haguichi/haguichi/haguichi",
-    "app_id": "com.github.ztefn.haguichi",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/haguichi/runimage.cachyos.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Graphical frontend for Hamachi",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "haguichi",
-          "haguichi-git"
-        ]
-      },
-      "nixpkgs": [
-        "haguichi"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/haguichi/runimage.cachyos.stable.yaml",
-    "homepage": [
-      "https://www.haguichi.net",
-      "https://github.com/ztefn/haguichi"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/haguichi/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/haguichi/runimage/cachyos",
-    "provides": [
-      "haguichi"
-    ],
-    "repology": [
-      "haguichi"
-    ],
-    "src_url": [
-      "https://aur.archlinux.org/packages/haguichi"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ]
-  },
-  {
-    "_disabled": "false",
     "pkg": "huggingface-cli",
     "pkg_family": "huggingface-cli",
     "pkg_id": "sharun.wrappe.source.huggingface-cli",
@@ -1824,7 +1800,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-04-22"
+    "version": "2025-04-23"
   },
   {
     "_disabled": "true",
@@ -1991,144 +1967,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "libresprite",
-    "pkg_family": "libresprite",
-    "pkg_id": "runimage.cachyos.libresprite",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-libresprite/libresprite/libresprite",
-    "app_id": "io.github.libresprite.libresprite",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libresprite/runimage.cachyos.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Animated sprite editor & pixel art tool",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "libresprite",
-          "libresprite-bin",
-          "libresprite-git"
-        ]
-      },
-      "gnuguix": [
-        "libresprite"
-      ],
-      "nixpkgs": [
-        "libresprite"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/libresprite/runimage.cachyos.stable.yaml",
-    "homepage": [
-      "https://libresprite.github.io",
-      "https://github.com/LibreSprite/LibreSprite"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/libresprite/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/libresprite/runimage/cachyos",
-    "provides": [
-      "libresprite"
-    ],
-    "repology": [
-      "libresprite"
-    ],
-    "src_url": [
-      "https://aur.archlinux.org/packages/libresprite-git"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "librewolf",
-    "pkg_family": "librewolf",
-    "pkg_id": "runimage.cachyos.librewolf",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-librewolf/librewolf/librewolf",
-    "app_id": "io.gitlab.librewolf-community",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/librewolf/runimage.cachyos.stable.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "A fork of Firefox, focused on privacy, security and freedom",
-    "distro_pkg": {
-      "alpine": [
-        "librewolf"
-      ],
-      "archlinux": {
-        "aur": [
-          "librewolf",
-          "librewolf-bin",
-          "librewolf-hg"
-        ]
-      },
-      "gnuguix": [
-        "librewolf"
-      ],
-      "homebrew": [
-        "librewolf"
-      ],
-      "nixpkgs": [
-        "librewolf"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/librewolf/runimage.cachyos.stable.yaml",
-    "homepage": [
-      "https://librewolf.net",
-      "https://codeberg.org/librewolf/source",
-      "https://gitlab.com/librewolf-community/browser/source"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/librewolf/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/librewolf/runimage/cachyos",
-    "provides": [
-      "librewolf"
-    ],
-    "repology": [
-      "librewolf"
-    ],
-    "src_url": [
-      "https://codeberg.org/librewolf/source",
-      "https://gitlab.com/librewolf-community/browser/source"
-    ],
-    "tag": [
-      "Applications/Internet",
-      "browser",
-      "Networking/WWW",
-      "www-client"
-    ]
-  },
-  {
-    "_disabled": "false",
     "pkg": "puddletag",
     "pkg_family": "puddletag",
     "pkg_id": "github.com.pkgforge-dev.puddletag-AppImage.stable",
@@ -2266,63 +2104,6 @@
     ],
     "tag": [
       "editor"
-    ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "ruffle",
-    "pkg_family": "ruffle",
-    "pkg_id": "runimage.cachyos.ruffle.nightly",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ruffle-nightly/ruffle/ruffle",
-    "app_id": "rs.ruffle.Ruffle",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ruffle/runimage.cachyos.nightly.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Adobe Flash Player emulator",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "ruffle-bin",
-          "ruffle-git"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/ruffle/runimage.cachyos.nightly.yaml",
-    "homepage": [
-      "https://ruffle.rs",
-      "https://github.com/ruffle-rs/ruffle"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/ruffle/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/ruffle/runimage/cachyos",
-    "provides": [
-      "ruffle"
-    ],
-    "repology": [
-      "ruffle"
-    ],
-    "src_url": [
-      "https://github.com/ruffle-rs/ruffle"
-    ],
-    "tag": [
-      "adobe",
-      "flashplayer"
     ]
   },
   {

@@ -58,7 +58,7 @@
 832K   │ │ ├── x86_64-Linux.json.zstd
 800K   │ │ ├── x86_64-Linux.json.xz
 796K   │ │ ├── aarch64-Linux.json.zstd
-764K   │ │ ├── aarch64-Linux.json.xz
+768K   │ │ ├── aarch64-Linux.json.xz
 4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.sdb.bsum
@@ -83,7 +83,7 @@
  32K   │   ├── gen_meta_x86_64-Linux.sh
  32K   │   ├── gen_meta_aarch64-Linux.sh
  12K   │   └── sync_hf_mirror.sh
- 48M   ├── GHCR_PKGS.json
+ 49M   ├── GHCR_PKGS.json
  33M   ├─┬ external
  11M   │ ├─┬ am
  11M   │ │ ├─┬ data
@@ -220,7 +220,7 @@
 368K   │ │ ├── INDEX.json.cba
 304K   │ │ ├── pub_issues_packages.txt
 252K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
-240K   │ │ ├── INDEX.db.cba
+236K   │ │ ├── INDEX.db.cba
 232K   │ │ ├── GH_REPO.md
 228K   │ │ ├── INDEX.json.xz
 220K   │ │ ├── INDEX.json.zstd
@@ -265,26 +265,26 @@
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
 7.1M   ├─┬ pkgcache
-6.9M   │ ├─┬ data
+7.0M   │ ├─┬ data
 1.2M   │ │ ├── x86_64-Linux.db
 1.1M   │ │ ├── x86_64-Linux.json
 1.0M   │ │ ├── x86_64-Linux.sdb
 692K   │ │ ├── aarch64-Linux.db
 620K   │ │ ├── aarch64-Linux.json
 588K   │ │ ├── aarch64-Linux.sdb
-152K   │ │ ├── x86_64-Linux.sdb.cba
+156K   │ │ ├── x86_64-Linux.sdb.cba
 136K   │ │ ├── x86_64-Linux.db.cba
-128K   │ │ ├── x86_64-Linux.json.cba
+132K   │ │ ├── x86_64-Linux.json.cba
 120K   │ │ ├── x86_64-Linux.sdb.zstd
 116K   │ │ ├── x86_64-Linux.db.zstd
 112K   │ │ ├── x86_64-Linux.sdb.xz
 108K   │ │ ├── x86_64-Linux.db.xz
 104K   │ │ ├── x86_64-Linux.json.zstd
 100K   │ │ ├── x86_64-Linux.json.xz
- 84K   │ │ ├── aarch64-Linux.sdb.cba
+ 88K   │ │ ├── aarch64-Linux.sdb.cba
  84K   │ │ ├── aarch64-Linux.db.cba
+ 76K   │ │ ├── aarch64-Linux.json.cba
  72K   │ │ ├── aarch64-Linux.sdb.zstd
- 72K   │ │ ├── aarch64-Linux.json.cba
  68K   │ │ ├── aarch64-Linux.db.zstd
  64K   │ │ ├── aarch64-Linux.sdb.xz
  64K   │ │ ├── aarch64-Linux.db.xz

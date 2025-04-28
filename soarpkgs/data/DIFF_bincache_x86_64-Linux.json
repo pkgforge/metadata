@@ -5291,7 +5291,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f03f449-250427T193450"
+    "version": "HEAD-82f450e-250428T080524"
   },
   {
     "_disabled": "false",
@@ -7054,7 +7054,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-d957e64-250427T235416"
+    "version": "HEAD-e92e419-250428T095643"
   },
   {
     "_disabled": "false",
@@ -7371,7 +7371,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-d957e64-250427T235416"
+    "version": "HEAD-e92e419-250428T095643"
   },
   {
     "_disabled": "true",
@@ -8104,7 +8104,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-7646335-250425T193452"
+    "version": "HEAD-df614ab-250428T162116"
   },
   {
     "_disabled": "false",
@@ -11073,7 +11073,7 @@
       "image",
       "screenshot"
     ],
-    "version": "HEAD-11d9108-250421T112210"
+    "version": "HEAD-ce99232-250428T122331"
   },
   {
     "_disabled": "false",
@@ -11685,7 +11685,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-6b53827-250428T060506"
+    "version": "HEAD-0fdfdae-250428T120507"
   },
   {
     "_disabled": "false",
@@ -11853,7 +11853,7 @@
       "backup",
       "git"
     ],
-    "version": "HEAD-4688acb-250420T114602"
+    "version": "HEAD-533b98b-250428T115800"
   },
   {
     "_disabled": "false",
@@ -12284,7 +12284,7 @@
     "tag": [
       "markdown"
     ],
-    "version": "HEAD-bb9fcb4-250421T104708"
+    "version": "HEAD-e60e83c-250428T084631"
   },
   {
     "_disabled": "false",
@@ -13037,7 +13037,7 @@
     "tag": [
       "security"
     ],
-    "version": "HEAD-dc1c38b-250422T101722"
+    "version": "HEAD-6027926-250428T124512"
   },
   {
     "_disabled": "false",
@@ -13475,7 +13475,7 @@
       "shell",
       "tui"
     ],
-    "version": "HEAD-1baa828-250421T105643"
+    "version": "HEAD-6682e20-250428T084421"
   },
   {
     "_disabled": "false",
@@ -13658,7 +13658,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-10f27fa-250427T160703"
+    "version": "HEAD-c914b82-250428T174828"
   },
   {
     "_disabled": "false",
@@ -13721,6 +13721,96 @@
       "hetzner"
     ],
     "version": "HEAD-2248a1d-250425T104540"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "hdiffpatch",
+    "pkg_family": "hdiffpatch",
+    "pkg_id": "github.com.sisong.HDiffPatch.glibc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hdiffpatch-glibc/hdiffpatch/hdiffpatch",
+    "bincache": "ghcr.io/pkgforge/bincache/hdiffpatch/glibc/hdiffz",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hdiffpatch/static.glibc.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast Binary diff/patch tools with small deltas/differentials and low memory use",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hdiffpatch/static.glibc.source.yaml",
+    "homepage": [
+      "https://github.com/sisong/HDiffPatch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sisong/HDiffPatch",
+      "Statically Linked on Debian (GLIBC)"
+    ],
+    "provides": [
+      "hdiffz",
+      "hpatchz"
+    ],
+    "src_url": [
+      "https://github.com/sisong/HDiffPatch"
+    ],
+    "tag": [
+      "zsync"
+    ],
+    "version": "HEAD-b26e349-250408T152522"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "hdiffpatch",
+    "pkg_family": "hdiffpatch",
+    "pkg_id": "github.com.sisong.HDiffPatch.musl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hdiffpatch-musl/hdiffpatch/hdiffpatch",
+    "bincache": "ghcr.io/pkgforge/bincache/hdiffpatch/musl/hdiffz",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hdiffpatch/static.musl.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast Binary diff/patch tools with small deltas/differentials and low memory use",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hdiffpatch/static.musl.source.yaml",
+    "homepage": [
+      "https://github.com/sisong/HDiffPatch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sisong/HDiffPatch",
+      "Built on Vanilla Musl"
+    ],
+    "provides": [
+      "hdiffz",
+      "hpatchz"
+    ],
+    "src_url": [
+      "https://github.com/sisong/HDiffPatch"
+    ],
+    "tag": [
+      "zsync"
+    ],
+    "version": "HEAD-b26e349-250408T152522"
   },
   {
     "_disabled": "false",
@@ -13806,7 +13896,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-0574360-250421T153549"
+    "version": "HEAD-7e896b7-250428T092955"
   },
   {
     "_disabled": "false",
@@ -18898,6 +18988,77 @@
   },
   {
     "_disabled": "false",
+    "pkg": "ncdu",
+    "pkg_family": "ncdu",
+    "pkg_id": "dev.yorhel.nl.ncdu",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nl-ncdu/ncdu/ncdu",
+    "bincache": "ghcr.io/pkgforge/bincache/ncdu/official/ncdu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ncdu/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Disk usage analyzer with an ncurses interface",
+    "distro_pkg": {
+      "alpine": [
+        "ncdu"
+      ],
+      "archlinux": {
+        "extra": [
+          "ncdu"
+        ]
+      },
+      "debian": [
+        "ncdu"
+      ],
+      "gnuguix": [
+        "ncdu"
+      ],
+      "homebrew": [
+        "ncdu"
+      ],
+      "nixpkgs": [
+        "ncdu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ncdu/static.official.stable.yaml",
+    "homepage": [
+      "https://dev.yorhel.nl/ncdu",
+      "https://code.blicky.net/yorhel/ncdu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://code.blicky.net/yorhel/ncdu"
+    ],
+    "provides": [
+      "ncdu"
+    ],
+    "repology": [
+      "ncdu"
+    ],
+    "src_url": [
+      "https://dev.yorhel.nl",
+      "https://code.blicky.net/yorhel/ncdu",
+      "https://g.blicky.net/ncdu.git"
+    ],
+    "tag": [
+      "disk-usage"
+    ],
+    "version": "v2.8.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ncgopher",
     "pkg_family": "ncgopher",
     "pkg_id": "github.com.jansc.ncgopher",
@@ -19151,7 +19312,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-3cf87b6-250425T185044"
+    "version": "HEAD-d8dc107-250428T151040"
   },
   {
     "_disabled": "false",
@@ -19910,7 +20071,7 @@
       "recon",
       "security"
     ],
-    "version": "HEAD-d8b7c64-250428T051624"
+    "version": "HEAD-c4c1496-250428T170433"
   },
   {
     "_disabled": "false",
@@ -20104,7 +20265,7 @@
     "tag": [
       "nvme"
     ],
-    "version": "HEAD-a6ead8d-250422T191815"
+    "version": "HEAD-5ced5c0-250428T105606"
   },
   {
     "_disabled": "false",
@@ -22080,7 +22241,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-1263cd6-250427T131057"
+    "version": "HEAD-3cd97e9-250428T055945"
   },
   {
     "_disabled": "false",
@@ -23433,7 +23594,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c1d480a-250421T063612"
+    "version": "HEAD-a38720d-250428T091335"
   },
   {
     "_disabled": "false",
@@ -23972,7 +24133,7 @@
     "tag": [
       "pastebin"
     ],
-    "version": "HEAD-20821b2-250427T111410"
+    "version": "HEAD-8fd372f-250428T104028"
   },
   {
     "_disabled": "false",
@@ -24403,7 +24564,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c1d72e3-250420T111223"
+    "version": "HEAD-1c2644c-250428T090215"
   },
   {
     "_disabled": "false",
@@ -25521,7 +25682,7 @@
       "git",
       "ssh"
     ],
-    "version": "HEAD-9a06ef5-250421T111254"
+    "version": "HEAD-454df5d-250428T085731"
   },
   {
     "_disabled": "false",
@@ -26584,7 +26745,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-824356a-250427T144213"
+    "version": "HEAD-9e9677b-250428T130458"
   },
   {
     "_disabled": "false",
@@ -26857,7 +27018,7 @@
       "bugbounty",
       "subdomain"
     ],
-    "version": "HEAD-4c7044d-250423T144815"
+    "version": "HEAD-ab4e885-250428T151046"
   },
   {
     "_disabled": "false",
@@ -29058,7 +29219,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-510269f-250421T065126"
+    "version": "HEAD-3551b91-250428T071214"
   },
   {
     "_disabled": "false",
@@ -29919,7 +30080,7 @@
       "gif",
       "recording"
     ],
-    "version": "HEAD-4fb70ff-250420T111118"
+    "version": "HEAD-f3fc99b-250428T084152"
   },
   {
     "_disabled": "false",
@@ -30504,7 +30665,7 @@
       "benchmark",
       "s3"
     ],
-    "version": "HEAD-27b021d-250425T100503"
+    "version": "HEAD-1f832fa-250428T105203"
   },
   {
     "_disabled": "false",
@@ -30591,7 +30752,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6593b3f-250427T114857"
+    "version": "HEAD-84767f9-250428T164353"
   },
   {
     "_disabled": "false",
@@ -30677,7 +30838,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-688a545-250428T001329"
+    "version": "HEAD-6d62374-250428T113657"
   },
   {
     "_disabled": "false",
@@ -32064,7 +32225,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-5ffe741-250427T184257"
+    "version": "HEAD-6a9e7da-250428T195112"
   },
   {
     "_disabled": "false",

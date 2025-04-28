@@ -6792,6 +6792,24 @@
     "install": "gmakew clean\ngmakew         $MAKE_FLAGS\ngmakew install $MAKE_FLAGS"
   },
   {
+    "pkgname": "hdiffpatch",
+    "pkgtype": "exe",
+    "version": "2025.04.28",
+    "license": "MIT",
+    "summary": "A command-line tools for diff & patch",
+    "web-url": "https://github.com/sisong/HDiffPatch",
+    "git-url": "https://github.com/sisong/HDiffPatch",
+    "git-ref": "refs/heads/dev",
+    "dep-upp": "git gmake",
+    "bsystem": "gmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "prepare": "run git clone https://github.com/sisong/libmd5.git ../libmd5\nrun git clone https://github.com/sisong/bzip2.git ../bzip2\nrun git clone https://github.com/sisong/lzma.git ../lzma\nrun git clone https://github.com/sisong/zstd.git ../zstd\n#run git clone https://github.com/sisong/zlib.git ../zlib\nrun git clone https://github.com/sisong/libdeflate.git ../libdeflate",
+    "install": "gmakew clean\ngmakew ZSTD=1 LZMA=1 ZLIB=0 BZIP2=1 LDEF=1 MD5=1 CC=\"$CC\" PATCH_LINK=\"'$LDFLAGS'\" DIFF_LINK=\"'$LDFLAGS'\"\ninstall_bins hdiffz hpatchz"
+  },
+  {
     "pkgname": "helix",
     "pkgtype": "exe",
     "version": "25.01.1",

@@ -1,5 +1,5 @@
 ```mathematica
-420M └─┬ main
+421M └─┬ main
 174M   ├─┬ misc
 174M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
@@ -207,15 +207,15 @@
 4.0K   │   │ └── TOTAL.json
  32K   │   └─┬ scripts
  28K   │     └── gen_meta.sh
- 13M   ├─┬ soarpkgs
+ 14M   ├─┬ soarpkgs
  13M   │ ├─┬ data
 2.5M   │ │ ├── INDEX.json
 1.5M   │ │ ├── OLD_bincache_x86_64-Linux.json
 1.5M   │ │ ├── OLD_bincache_aarch64-Linux.json
 1.5M   │ │ ├── BACKAGE.json
 1.3M   │ │ ├── INDEX.db
-968K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-948K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+972K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+952K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 708K   │ │ ├── pub_issues_binaries.txt
 368K   │ │ ├── INDEX.json.cba
 304K   │ │ ├── pub_issues_packages.txt
@@ -227,8 +227,8 @@
 184K   │ │ ├── INDEX.db.zstd
 176K   │ │ ├── INDEX.db.xz
 164K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
-108K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 60K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+152K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+104K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  52K   │ │ ├── URLS.txt
  20K   │ │ ├── DIFF_bincache.json
 8.0K   │ │ ├── DIFF_pkgcache.json

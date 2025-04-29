@@ -63,6 +63,63 @@
   },
   {
     "_disabled": "false",
+    "pkg": "agregore",
+    "pkg_family": "agregore",
+    "pkg_id": "github.com.AgregoreWeb.agregore-browser",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/agregore-browser/agregore/agregore",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/agregore/appimage.official.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A minimal browser for the distributed web",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "agregore-browser-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/agregore/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/AgregoreWeb/agregore-browser"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/agregore/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/AgregoreWeb/agregore-browser"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/agregore/appimage/official",
+    "provides": [
+      "agregore"
+    ],
+    "repology": [
+      "agregore-browser"
+    ],
+    "src_url": [
+      "https://github.com/AgregoreWeb/agregore-browser"
+    ],
+    "tag": [
+      "browser",
+      "decentralization",
+      "dweb",
+      "hypercore-protocol",
+      "ipfs",
+      "p2p",
+      "ssb"
+    ],
+    "version": "v2.10.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "aisleriot",
     "pkg_family": "aisleriot",
     "pkg_id": "github.com.ivan-hc.Aisleriot-appimage",
@@ -127,7 +184,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250428T024300"
+    "version": "250429T023859"
   },
   {
     "_disabled": "false",
@@ -423,6 +480,209 @@
       "network.web.browser"
     ],
     "version": "v1.80.11"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "nixpkgs.brave",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/nixappimage/nixpkgs",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/brave/brave-browser"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "1.77.101"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
+    "app_id": "org.chromium.Chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google (Stable)",
+    "distro_pkg": {
+      "alpine": [
+        "chromium"
+      ],
+      "archlinux": {
+        "extra": [
+          "chromium"
+        ]
+      },
+      "debian": [
+        "chromium"
+      ],
+      "homebrew": [
+        "chromium"
+      ],
+      "nixpkgs": [
+        "chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.chromium.org",
+      "https://chromium.googlesource.com/chromium/src",
+      "https://github.com/chromium/chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "chromium"
+    ],
+    "src_url": [
+      "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "135.0.7049.114"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "135.0.7049.114"
   },
   {
     "_disabled": "false",
@@ -985,6 +1245,82 @@
       "network.web.browser"
     ],
     "version": "139.0.20250428093632"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "flameshot",
+    "pkg_family": "flameshot",
+    "pkg_id": "nixpkgs.flameshot",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-flameshot/flameshot/flameshot",
+    "app_id": "org.flameshot.Flameshot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/flameshot/nixappimage.nixpkgs.unstable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Powerful and simple to use screenshot software",
+    "distro_pkg": {
+      "alpine": [
+        "flameshot"
+      ],
+      "archlinux": {
+        "aur": [
+          "flameshot-git"
+        ],
+        "extra": [
+          "flameshot"
+        ]
+      },
+      "debian": [
+        "flameshot"
+      ],
+      "gnuguix": [
+        "flameshot"
+      ],
+      "homebrew": [
+        "flameshot"
+      ],
+      "nixpkgs": [
+        "flameshot"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/flameshot/nixappimage.nixpkgs.unstable.yaml",
+    "homepage": [
+      "https://flameshot.org",
+      "https://github.com/flameshot-org/flameshot"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/flameshot/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/flameshot/nixappimage/nixpkgs",
+    "provides": [
+      "flameshot"
+    ],
+    "repology": [
+      "flameshot"
+    ],
+    "src_url": [
+      "https://github.com/flameshot/flameshot"
+    ],
+    "tag": [
+      "screenshot"
+    ],
+    "version": "12.1.0-unstable-2025-04-07"
   },
   {
     "_disabled": "false",
@@ -2211,6 +2547,83 @@
   },
   {
     "_disabled": "false",
+    "pkg": "neovim",
+    "pkg_family": "neovim",
+    "pkg_id": "nixpkgs.neovim",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-neovim/neovim/neovim",
+    "app_id": "io.neovim.nvim",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/neovim/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "TextEditor"
+    ],
+    "description": "Vim text editor fork focused on extensibility and agility",
+    "distro_pkg": {
+      "alpine": [
+        "neovim"
+      ],
+      "archlinux": {
+        "aur": [
+          "neovim-git"
+        ],
+        "extra": [
+          "neovim"
+        ]
+      },
+      "debian": [
+        "neovim"
+      ],
+      "gnuguix": [
+        "neovim"
+      ],
+      "homebrew": [
+        "neovim"
+      ],
+      "nixpkgs": [
+        "neovim",
+        "neovim-unwrapped"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/neovim/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://neovim.io",
+      "https://neovim.org"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/neovim/nixappimage/nixpkgs",
+    "provides": [
+      "neovim=>nvim"
+    ],
+    "repology": [
+      "neovim"
+    ],
+    "src_url": [
+      "https://github.com/neovim/neovim"
+    ],
+    "tag": [
+      "code",
+      "editor"
+    ],
+    "version": "0.11.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "netexec",
     "pkg_family": "netexec",
     "pkg_id": "sharun.wrappe.source.netexec",
@@ -2523,6 +2936,71 @@
       "privacy"
     ],
     "version": "v6.3.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "simplex-desktop",
+    "pkg_family": "simplex-desktop",
+    "pkg_id": "nixpkgs.simplex-chat-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/chat-desktop/simplex-desktop/simplex-desktop",
+    "app_id": "chat.simplex.simplex",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "Desktop application for SimpleX Chat, A 100% private-by-design chat platform",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "simplex-chat"
+        ]
+      },
+      "nixpkgs": [
+        "simplex-chat-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://simplex.chat",
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/simplex-desktop/nixappimage/nixpkgs",
+    "provides": [
+      "simplex-desktop==simplex-chat-desktop"
+    ],
+    "repology": [
+      "simplex-chat",
+      "simplex-chat-desktop"
+    ],
+    "src_url": [
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "tag": [
+      "chat",
+      "messenger",
+      "privacy"
+    ],
+    "version": "6.3.3"
   },
   {
     "_disabled": "false",
@@ -3408,6 +3886,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.11.5t(2025-04-28at09:49:50)"
+    "version": "Twilightbuild-1.11.5t(2025-04-28at23:03:29)"
   }
 ]

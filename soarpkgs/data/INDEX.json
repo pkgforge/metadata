@@ -1121,7 +1121,7 @@
       "knowledge-base",
       "wiki"
     ],
-    "version": "v0.21.4"
+    "version": "v0.21.5"
   },
   {
     "_disabled": "false",
@@ -1806,8 +1806,7 @@
     ],
     "tag": [
       "rss"
-    ],
-    "version": "25.04.0"
+    ]
   },
   {
     "_disabled": "false",
@@ -3452,8 +3451,7 @@
     "tag": [
       "alpine",
       "package-manager"
-    ],
-    "version": "v2.14.10"
+    ]
   },
   {
     "_disabled": "false",
@@ -5598,7 +5596,7 @@
       "bsum",
       "checksum"
     ],
-    "version": "HEAD-f813ff4-250424T114604"
+    "version": "HEAD-cd6e3e4-250429T120559"
   },
   {
     "_disabled": "false",
@@ -6406,7 +6404,7 @@
       "messaging",
       "p2p"
     ],
-    "version": "HEAD-59a2449-250428T165240"
+    "version": "HEAD-d3ef5fe-250429T105309"
   },
   {
     "_disabled": "false",
@@ -8101,7 +8099,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.79.94"
+    "version": "v1.79.95"
   },
   {
     "_disabled": "false",
@@ -13576,8 +13574,7 @@
     ],
     "tag": [
       "image"
-    ],
-    "version": "1.14.5"
+    ]
   },
   {
     "_disabled": "false",
@@ -25600,7 +25597,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-bd65c20-250429T045242"
+    "version": "HEAD-88f1ada-250429T132528"
   },
   {
     "_disabled": "false",
@@ -26620,8 +26617,7 @@
     "tag": [
       "chat",
       "matrix"
-    ],
-    "version": "1.11.99"
+    ]
   },
   {
     "_disabled": "true",
@@ -26677,8 +26673,7 @@
     "tag": [
       "chat",
       "matrix"
-    ],
-    "version": "1.11.99"
+    ]
   },
   {
     "_disabled": "false",
@@ -27746,7 +27741,7 @@
       "torrent",
       "transmission"
     ],
-    "version": "HEAD-f79dbdb-250422T081803"
+    "version": "HEAD-907c7fc-250429T165733"
   },
   {
     "_disabled": "false",
@@ -28757,8 +28752,7 @@
     "tag": [
       "chat",
       "matrix"
-    ],
-    "version": "25.04.0"
+    ]
   },
   {
     "_disabled": "false",
@@ -28976,7 +28970,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "2.41.0"
+    "version": "2.42.0"
   },
   {
     "_disabled": "false",
@@ -30660,7 +30654,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "139.0.20250428093632"
+    "version": "140.0.20250428211601"
   },
   {
     "_disabled": "false",
@@ -33645,8 +33639,7 @@
       "binary",
       "editor",
       "hex"
-    ],
-    "version": "46.2"
+    ]
   },
   {
     "_disabled": "false",
@@ -33703,7 +33696,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-242f89b-250429T060304"
+    "version": "HEAD-c972729-250429T120310"
   },
   {
     "_disabled": "false",
@@ -34665,6 +34658,237 @@
     "_disabled": "false",
     "pkg": "git",
     "pkg_family": "git",
+    "pkg_id": "runimage.alpine.git",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-git/git/git",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/git/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Fast, scalable, distributed revision control system",
+    "distro_pkg": {
+      "alpine": [
+        "git"
+      ],
+      "archlinux": {
+        "aur": [
+          "git-git"
+        ],
+        "extra": [
+          "git"
+        ]
+      },
+      "debian": [
+        "git"
+      ],
+      "gnuguix": [
+        "git"
+      ],
+      "homebrew": [
+        "git"
+      ],
+      "nixpkgs": [
+        "git"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/git/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://git-scm.com/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/git/runimage/alpine",
+    "provides": [
+      "git==git-add",
+      "git==git-am",
+      "git==git-annotate",
+      "git==git-apply",
+      "git==git-archive",
+      "git==git-bisect",
+      "git==git-blame",
+      "git==git-branch",
+      "git==git-bugreport",
+      "git==git-bundle",
+      "git==git-cat-file",
+      "git==git-check-attr",
+      "git==git-check-ignore",
+      "git==git-check-mailmap",
+      "git==git-checkout",
+      "git==git-checkout-index",
+      "git==git-checkout--worker",
+      "git==git-check-ref-format",
+      "git==git-cherry",
+      "git==git-cherry-pick",
+      "git==git-clean",
+      "git==git-clone",
+      "git==git-column",
+      "git==git-commit",
+      "git==git-commit-graph",
+      "git==git-commit-tree",
+      "git==git-config",
+      "git==git-count-objects",
+      "git==git-credential",
+      "git==git-credential-cache",
+      "git==git-credential-cache--daemon",
+      "git==git-credential-store",
+      "git==git-describe",
+      "git==git-diagnose",
+      "git==git-diff",
+      "git==git-diff-files",
+      "git==git-diff-index",
+      "git==git-difftool",
+      "git==git-difftool--helper",
+      "git==git-diff-tree",
+      "git==git-fast-export",
+      "git==git-fetch",
+      "git==git-fetch-pack",
+      "git==git-filter-branch",
+      "git==git-fmt-merge-msg",
+      "git==git-for-each-ref",
+      "git==git-for-each-repo",
+      "git==git-format-patch",
+      "git==git-fsck",
+      "git==git-fsck-objects",
+      "git==git-fsmonitor--daemon",
+      "git==git-gc",
+      "git==git-get-tar-commit-id",
+      "git==git-grep",
+      "git==git-hash-object",
+      "git==git-help",
+      "git==git-hook",
+      "git==git-http-fetch",
+      "git==git-http-push",
+      "git==git-index-pack",
+      "git==git-init",
+      "git==git-init-db",
+      "git==git-interpret-trailers",
+      "git==git-log",
+      "git==git-ls-files",
+      "git==git-ls-remote",
+      "git==git-ls-tree",
+      "git==git-mailinfo",
+      "git==git-mailsplit",
+      "git==git-maintenance",
+      "git==git-merge",
+      "git==git-merge-base",
+      "git==git-merge-file",
+      "git==git-merge-index",
+      "git==git-merge-octopus",
+      "git==git-merge-one-file",
+      "git==git-merge-ours",
+      "git==git-merge-recursive",
+      "git==git-merge-resolve",
+      "git==git-merge-subtree",
+      "git==git-mergetool",
+      "git==git-mergetool--lib",
+      "git==git-merge-tree",
+      "git==git-mktag",
+      "git==git-mktree",
+      "git==git-multi-pack-index",
+      "git==git-mv",
+      "git==git-name-rev",
+      "git==git-notes",
+      "git==git-pack-objects",
+      "git==git-pack-redundant",
+      "git==git-pack-refs",
+      "git==git-patch-id",
+      "git==git-prune",
+      "git==git-prune-packed",
+      "git==git-pull",
+      "git==git-push",
+      "git==git-quiltimport",
+      "git==git-range-diff",
+      "git==git-read-tree",
+      "git==git-rebase",
+      "git==git-receive-pack",
+      "git==git-reflog",
+      "git==git-refs",
+      "git==git-remote",
+      "git==git-remote-ext",
+      "git==git-remote-fd",
+      "git==git-remote-ftp",
+      "git==git-remote-ftps",
+      "git==git-remote-http",
+      "git==git-remote-https",
+      "git==git-repack",
+      "git==git-replace",
+      "git==git-replay",
+      "git==git-request-pull",
+      "git==git-rerere",
+      "git==git-reset",
+      "git==git-restore",
+      "git==git-revert",
+      "git==git-rev-list",
+      "git==git-rev-parse",
+      "git==git-rm",
+      "git==git-send-pack",
+      "git==git-shell",
+      "git==git-sh-i18n",
+      "git==git-sh-i18n--envsubst",
+      "git==git-shortlog",
+      "git==git-show",
+      "git==git-show-branch",
+      "git==git-show-index",
+      "git==git-show-ref",
+      "git==git-sh-setup",
+      "git==git-sparse-checkout",
+      "git==git-stage",
+      "git==git-stash",
+      "git==git-status",
+      "git==git-stripspace",
+      "git==git-submodule",
+      "git==git-submodule--helper",
+      "git==git-switch",
+      "git==git-symbolic-ref",
+      "git==git-tag",
+      "git==git-unpack-file",
+      "git==git-unpack-objects",
+      "git==git-update-index",
+      "git==git-update-ref",
+      "git==git-update-server-info",
+      "git==git-upload-archive",
+      "git==git-upload-pack",
+      "git==git-var",
+      "git==git-verify-commit",
+      "git==git-verify-pack",
+      "git==git-verify-tag",
+      "git==git-version",
+      "git==git-web--browse",
+      "git==git-whatchanged",
+      "git==git-worktree",
+      "git==git-write-tree"
+    ],
+    "repology": [
+      "git"
+    ],
+    "src_url": [
+      "https://github.com/git/git"
+    ],
+    "tag": [
+      "scm",
+      "vcs",
+      "version-control"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "git",
+    "pkg_family": "git",
     "pkg_id": "ppkg.bundle.git.stable",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/git-stable/git/git",
@@ -34892,238 +35116,6 @@
       "version-control"
     ],
     "version": "2.48.1"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "git",
-    "pkg_family": "git",
-    "pkg_id": "runimage.alpine.git",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-git/git/git",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/git/runimage.alpine.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Fast, scalable, distributed revision control system",
-    "distro_pkg": {
-      "alpine": [
-        "git"
-      ],
-      "archlinux": {
-        "aur": [
-          "git-git"
-        ],
-        "extra": [
-          "git"
-        ]
-      },
-      "debian": [
-        "git"
-      ],
-      "gnuguix": [
-        "git"
-      ],
-      "homebrew": [
-        "git"
-      ],
-      "nixpkgs": [
-        "git"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/git/runimage.alpine.stable.yaml",
-    "homepage": [
-      "https://git-scm.com/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/git/runimage/alpine",
-    "provides": [
-      "git==git-add",
-      "git==git-am",
-      "git==git-annotate",
-      "git==git-apply",
-      "git==git-archive",
-      "git==git-bisect",
-      "git==git-blame",
-      "git==git-branch",
-      "git==git-bugreport",
-      "git==git-bundle",
-      "git==git-cat-file",
-      "git==git-check-attr",
-      "git==git-check-ignore",
-      "git==git-check-mailmap",
-      "git==git-checkout",
-      "git==git-checkout-index",
-      "git==git-checkout--worker",
-      "git==git-check-ref-format",
-      "git==git-cherry",
-      "git==git-cherry-pick",
-      "git==git-clean",
-      "git==git-clone",
-      "git==git-column",
-      "git==git-commit",
-      "git==git-commit-graph",
-      "git==git-commit-tree",
-      "git==git-config",
-      "git==git-count-objects",
-      "git==git-credential",
-      "git==git-credential-cache",
-      "git==git-credential-cache--daemon",
-      "git==git-credential-store",
-      "git==git-describe",
-      "git==git-diagnose",
-      "git==git-diff",
-      "git==git-diff-files",
-      "git==git-diff-index",
-      "git==git-difftool",
-      "git==git-difftool--helper",
-      "git==git-diff-tree",
-      "git==git-fast-export",
-      "git==git-fetch",
-      "git==git-fetch-pack",
-      "git==git-filter-branch",
-      "git==git-fmt-merge-msg",
-      "git==git-for-each-ref",
-      "git==git-for-each-repo",
-      "git==git-format-patch",
-      "git==git-fsck",
-      "git==git-fsck-objects",
-      "git==git-fsmonitor--daemon",
-      "git==git-gc",
-      "git==git-get-tar-commit-id",
-      "git==git-grep",
-      "git==git-hash-object",
-      "git==git-help",
-      "git==git-hook",
-      "git==git-http-fetch",
-      "git==git-http-push",
-      "git==git-index-pack",
-      "git==git-init",
-      "git==git-init-db",
-      "git==git-interpret-trailers",
-      "git==git-log",
-      "git==git-ls-files",
-      "git==git-ls-remote",
-      "git==git-ls-tree",
-      "git==git-mailinfo",
-      "git==git-mailsplit",
-      "git==git-maintenance",
-      "git==git-merge",
-      "git==git-merge-base",
-      "git==git-merge-file",
-      "git==git-merge-index",
-      "git==git-merge-octopus",
-      "git==git-merge-one-file",
-      "git==git-merge-ours",
-      "git==git-merge-recursive",
-      "git==git-merge-resolve",
-      "git==git-merge-subtree",
-      "git==git-mergetool",
-      "git==git-mergetool--lib",
-      "git==git-merge-tree",
-      "git==git-mktag",
-      "git==git-mktree",
-      "git==git-multi-pack-index",
-      "git==git-mv",
-      "git==git-name-rev",
-      "git==git-notes",
-      "git==git-pack-objects",
-      "git==git-pack-redundant",
-      "git==git-pack-refs",
-      "git==git-patch-id",
-      "git==git-prune",
-      "git==git-prune-packed",
-      "git==git-pull",
-      "git==git-push",
-      "git==git-quiltimport",
-      "git==git-range-diff",
-      "git==git-read-tree",
-      "git==git-rebase",
-      "git==git-receive-pack",
-      "git==git-reflog",
-      "git==git-refs",
-      "git==git-remote",
-      "git==git-remote-ext",
-      "git==git-remote-fd",
-      "git==git-remote-ftp",
-      "git==git-remote-ftps",
-      "git==git-remote-http",
-      "git==git-remote-https",
-      "git==git-repack",
-      "git==git-replace",
-      "git==git-replay",
-      "git==git-request-pull",
-      "git==git-rerere",
-      "git==git-reset",
-      "git==git-restore",
-      "git==git-revert",
-      "git==git-rev-list",
-      "git==git-rev-parse",
-      "git==git-rm",
-      "git==git-send-pack",
-      "git==git-shell",
-      "git==git-sh-i18n",
-      "git==git-sh-i18n--envsubst",
-      "git==git-shortlog",
-      "git==git-show",
-      "git==git-show-branch",
-      "git==git-show-index",
-      "git==git-show-ref",
-      "git==git-sh-setup",
-      "git==git-sparse-checkout",
-      "git==git-stage",
-      "git==git-stash",
-      "git==git-status",
-      "git==git-stripspace",
-      "git==git-submodule",
-      "git==git-submodule--helper",
-      "git==git-switch",
-      "git==git-symbolic-ref",
-      "git==git-tag",
-      "git==git-unpack-file",
-      "git==git-unpack-objects",
-      "git==git-update-index",
-      "git==git-update-ref",
-      "git==git-update-server-info",
-      "git==git-upload-archive",
-      "git==git-upload-pack",
-      "git==git-var",
-      "git==git-verify-commit",
-      "git==git-verify-pack",
-      "git==git-verify-tag",
-      "git==git-version",
-      "git==git-web--browse",
-      "git==git-whatchanged",
-      "git==git-worktree",
-      "git==git-write-tree"
-    ],
-    "repology": [
-      "git"
-    ],
-    "src_url": [
-      "https://github.com/git/git"
-    ],
-    "tag": [
-      "scm",
-      "vcs",
-      "version-control"
-    ],
-    "version": "2.49.0"
   },
   {
     "_disabled": "false",
@@ -37559,7 +37551,7 @@
     "tag": [
       "matrix"
     ],
-    "version": "HEAD-aaac844-250426T032716"
+    "version": "HEAD-1ccb6d8-250429T122521"
   },
   {
     "_disabled": "false",
@@ -37906,7 +37898,7 @@
     "tag": [
       "webhook"
     ],
-    "version": "HEAD-a066226-250429T080659"
+    "version": "HEAD-73d28b5-250429T130931"
   },
   {
     "_disabled": "false",
@@ -38827,7 +38819,7 @@
     "tag": [
       "gpg"
     ],
-    "version": "HEAD-fff4d3a-250421T132018"
+    "version": "HEAD-27bd81a-250429T114609"
   },
   {
     "_disabled": "false",
@@ -40278,7 +40270,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8bf0622-250428T224912"
+    "version": "HEAD-034591d-250429T144108"
   },
   {
     "_disabled": "false",
@@ -42736,8 +42728,7 @@
     ],
     "tag": [
       "Utility"
-    ],
-    "version": "24.0"
+    ]
   },
   {
     "_disabled": "false",
@@ -43192,80 +43183,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-1ef3620-250327T132618"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "inkscape",
-    "pkg_family": "inkscape",
-    "pkg_id": "gitlab.com.inkscape.inkscape",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inkscape-inkscape/inkscape/inkscape",
-    "app_id": "org.inkscape.Inkscape",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/inkscape/appimage.official.stable.yaml",
-    "category": [
-      "Graphics",
-      "Office"
-    ],
-    "description": "FOSS Vector Graphics Editor",
-    "distro_pkg": {
-      "alpine": [
-        "inkscape"
-      ],
-      "archlinux": {
-        "aur": [
-          "inkscape-git"
-        ],
-        "extra": [
-          "inkscape"
-        ]
-      },
-      "debian": [
-        "inkscape"
-      ],
-      "gnuguix": [
-        "inkscape"
-      ],
-      "homebrew": [
-        "inkscape"
-      ],
-      "nixpkgs": [
-        "inkscape",
-        "inkscape-with-extensions"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/inkscape/appimage.official.stable.yaml",
-    "homepage": [
-      "https://inkscape.org"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/inkscape/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/inkscape/inkscape"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/inkscape/appimage/official",
-    "provides": [
-      "inkscape"
-    ],
-    "repology": [
-      "inkscape"
-    ],
-    "src_url": [
-      "https://inkscape.org/release"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ],
-    "version": "1.4"
+    "version": "HEAD-573fb1f-250429T093258"
   },
   {
     "_disabled": "false",
@@ -43337,6 +43255,78 @@
     ],
     "src_url": [
       "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/inkscape"
+    ],
+    "tag": [
+      "editor",
+      "graphics"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "inkscape",
+    "pkg_family": "inkscape",
+    "pkg_id": "gitlab.com.inkscape.inkscape",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inkscape-inkscape/inkscape/inkscape",
+    "app_id": "org.inkscape.Inkscape",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/inkscape/appimage.official.stable.yaml",
+    "category": [
+      "Graphics",
+      "Office"
+    ],
+    "description": "FOSS Vector Graphics Editor",
+    "distro_pkg": {
+      "alpine": [
+        "inkscape"
+      ],
+      "archlinux": {
+        "aur": [
+          "inkscape-git"
+        ],
+        "extra": [
+          "inkscape"
+        ]
+      },
+      "debian": [
+        "inkscape"
+      ],
+      "gnuguix": [
+        "inkscape"
+      ],
+      "homebrew": [
+        "inkscape"
+      ],
+      "nixpkgs": [
+        "inkscape",
+        "inkscape-with-extensions"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/inkscape/appimage.official.stable.yaml",
+    "homepage": [
+      "https://inkscape.org"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/inkscape/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/inkscape/inkscape"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/inkscape/appimage/official",
+    "provides": [
+      "inkscape"
+    ],
+    "repology": [
+      "inkscape"
+    ],
+    "src_url": [
+      "https://inkscape.org/release"
     ],
     "tag": [
       "editor",
@@ -44623,7 +44613,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7e13aa3-250417T090916"
+    "version": "HEAD-1d79f92-250429T104213"
   },
   {
     "_disabled": "false",
@@ -45837,7 +45827,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-b7489aa-250429T042247"
+    "version": "HEAD-2c4a032-250429T063612"
   },
   {
     "_disabled": "false",
@@ -46301,78 +46291,6 @@
     "_disabled": "false",
     "pkg": "kdenlive",
     "pkg_family": "kdenlive",
-    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
-    "app_id": "org.kde.kdenlive",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
-    "category": [
-      "AudioVideoEditing"
-    ],
-    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
-    "distro_pkg": {
-      "alpine": [
-        "kdenlive"
-      ],
-      "archlinux": {
-        "aur": [
-          "kdenlive-appimage",
-          "kdenlive-git"
-        ],
-        "extra": [
-          "kdenlive"
-        ]
-      },
-      "debian": [
-        "kdenlive"
-      ],
-      "gnuguix": [
-        "kdenlive"
-      ],
-      "homebrew": [
-        "kdenlive"
-      ],
-      "nixpkgs": [
-        "kdePackages.kdenlive"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
-    "homepage": [
-      "https://apps.kde.org/kdenlive",
-      "https://invent.kde.org/multimedia/kdenlive"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
-    "provides": [
-      "kdenlive"
-    ],
-    "repology": [
-      "kdenlive"
-    ],
-    "src_url": [
-      "https://kdenlive.org/en/download/"
-    ],
-    "tag": [
-      "editor"
-    ],
-    "version": "2025-04-27"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "kdenlive",
-    "pkg_family": "kdenlive",
     "pkg_id": "runimage.alpine.kdenlive",
     "pkg_type": "runimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-kdenlive/kdenlive/kdenlive",
@@ -46442,8 +46360,79 @@
     ],
     "tag": [
       "editor"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kdenlive",
+    "pkg_family": "kdenlive",
+    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
+    "app_id": "org.kde.kdenlive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
+    "category": [
+      "AudioVideoEditing"
     ],
-    "version": "25.04.0"
+    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
+    "distro_pkg": {
+      "alpine": [
+        "kdenlive"
+      ],
+      "archlinux": {
+        "aur": [
+          "kdenlive-appimage",
+          "kdenlive-git"
+        ],
+        "extra": [
+          "kdenlive"
+        ]
+      },
+      "debian": [
+        "kdenlive"
+      ],
+      "gnuguix": [
+        "kdenlive"
+      ],
+      "homebrew": [
+        "kdenlive"
+      ],
+      "nixpkgs": [
+        "kdePackages.kdenlive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
+    "homepage": [
+      "https://apps.kde.org/kdenlive",
+      "https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
+    "provides": [
+      "kdenlive"
+    ],
+    "repology": [
+      "kdenlive"
+    ],
+    "src_url": [
+      "https://kdenlive.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "2025-04-29"
   },
   {
     "_disabled": "false",
@@ -47125,6 +47114,82 @@
     "_disabled": "false",
     "pkg": "krita",
     "pkg_family": "krita",
+    "pkg_id": "runimage.alpine.krita",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-krita/krita/krita",
+    "app_id": "org.kde.krita",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/krita/runimage.alpine.stable.yaml",
+    "category": [
+      "Graphics",
+      "ImageProcessing"
+    ],
+    "description": "A free and open source painting application",
+    "distro_pkg": {
+      "alpine": [
+        "krita"
+      ],
+      "archlinux": {
+        "aur": [
+          "krita-git"
+        ],
+        "extra": [
+          "krita"
+        ]
+      },
+      "debian": [
+        "krita"
+      ],
+      "gnuguix": [
+        "krita"
+      ],
+      "homebrew": [
+        "krita"
+      ],
+      "nixpkgs": [
+        "krita",
+        "krita-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/krita/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://krita.org",
+      "https://invent.kde.org/graphics/krita"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/krita/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/krita/runimage/alpine",
+    "provides": [
+      "krita"
+    ],
+    "repology": [
+      "krita"
+    ],
+    "src_url": [
+      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/krita"
+    ],
+    "tag": [
+      "editor"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "krita",
+    "pkg_family": "krita",
     "pkg_id": "gitlab.com.krita.krita.next",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/krita-next/krita/krita",
@@ -47261,83 +47326,6 @@
     ],
     "src_url": [
       "https://krita.org/en/download/"
-    ],
-    "tag": [
-      "editor"
-    ],
-    "version": "5.2.9"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "krita",
-    "pkg_family": "krita",
-    "pkg_id": "runimage.alpine.krita",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-krita/krita/krita",
-    "app_id": "org.kde.krita",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/krita/runimage.alpine.stable.yaml",
-    "category": [
-      "Graphics",
-      "ImageProcessing"
-    ],
-    "description": "A free and open source painting application",
-    "distro_pkg": {
-      "alpine": [
-        "krita"
-      ],
-      "archlinux": {
-        "aur": [
-          "krita-git"
-        ],
-        "extra": [
-          "krita"
-        ]
-      },
-      "debian": [
-        "krita"
-      ],
-      "gnuguix": [
-        "krita"
-      ],
-      "homebrew": [
-        "krita"
-      ],
-      "nixpkgs": [
-        "krita",
-        "krita-beta"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/krita/runimage.alpine.stable.yaml",
-    "homepage": [
-      "https://krita.org",
-      "https://invent.kde.org/graphics/krita"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/krita/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/krita/runimage/alpine",
-    "provides": [
-      "krita"
-    ],
-    "repology": [
-      "krita"
-    ],
-    "src_url": [
-      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/krita"
     ],
     "tag": [
       "editor"
@@ -48077,7 +48065,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-bb64e3c-250427T201440"
+    "version": "HEAD-d87bdaf-250429T141722"
   },
   {
     "_disabled": "false",
@@ -55396,7 +55384,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-2f44fe2-250429T004350"
+    "version": "HEAD-d2b42c8-250429T134342"
   },
   {
     "_disabled": "false",
@@ -56447,8 +56435,7 @@
     "tag": [
       "network-discovery",
       "port-scanner"
-    ],
-    "version": "7.95"
+    ]
   },
   {
     "_disabled": "false",
@@ -56519,8 +56506,7 @@
     "tag": [
       "network-discovery",
       "port-scanner"
-    ],
-    "version": "7.95"
+    ]
   },
   {
     "_disabled": "false",
@@ -56724,7 +56710,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-1a0f9fd-250428T034118"
+    "version": "HEAD-712e4ab-250429T070727"
   },
   {
     "_disabled": "false",
@@ -57497,7 +57483,7 @@
     "tag": [
       "nvme"
     ],
-    "version": "HEAD-5ced5c0-250428T105606"
+    "version": "HEAD-f114030-250429T142219"
   },
   {
     "_disabled": "false",
@@ -57641,7 +57627,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "3.54.4"
+    "version": "3.54.5"
   },
   {
     "_disabled": "false",
@@ -58782,7 +58768,7 @@
       "oci",
       "registry"
     ],
-    "version": "v1.2.2"
+    "version": "v1.2.3"
   },
   {
     "_disabled": "false",
@@ -59032,7 +59018,7 @@
       "treeview",
       "yaml"
     ],
-    "version": "HEAD-c519c1d-250331T112452"
+    "version": "HEAD-9c9b54f-250429T153048"
   },
   {
     "_disabled": "false",
@@ -62428,8 +62414,7 @@
     ],
     "tag": [
       "proxy"
-    ],
-    "version": "4.17"
+    ]
   },
   {
     "_disabled": "false",
@@ -66775,7 +66760,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-57d1c30-250429T090149"
+    "version": "HEAD-8ba0a16-250429T180808"
   },
   {
     "_disabled": "false",
@@ -67368,7 +67353,7 @@
       "scanning",
       "security"
     ],
-    "version": "HEAD-8330e43-250421T112715"
+    "version": "HEAD-a5c36c3-250429T090633"
   },
   {
     "_disabled": "false",
@@ -71370,7 +71355,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-4633419-250424T195056"
+    "version": "HEAD-79b63a8-250428T235047"
   },
   {
     "_disabled": "false",
@@ -74725,7 +74710,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-4b87104-250428T165123"
+    "version": "HEAD-ffc8303-250429T112012"
   },
   {
     "_disabled": "false",
@@ -75276,8 +75261,7 @@
     "tag": [
       "svn",
       "vcs"
-    ],
-    "version": "1.14.5"
+    ]
   },
   {
     "_disabled": "false",
@@ -76387,7 +76371,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-ac1215c-250428T163519"
+    "version": "HEAD-1f1c323-250429T123638"
   },
   {
     "_disabled": "false",
@@ -76601,7 +76585,7 @@
     "tag": [
       "toml"
     ],
-    "version": "HEAD-11e64bb-250408T200857"
+    "version": "HEAD-1bb2c18-250429T141514"
   },
   {
     "_disabled": "false",
@@ -76958,7 +76942,7 @@
     "tag": [
       "Remote"
     ],
-    "version": "15.64.3"
+    "version": "15.65.4"
   },
   {
     "_disabled": "false",
@@ -82937,7 +82921,7 @@
     "tag": [
       "asdf"
     ],
-    "version": "HEAD-abd52a0-250427T133151"
+    "version": "HEAD-b70b327-250429T191626"
   },
   {
     "_disabled": "false",
@@ -84509,7 +84493,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-fd03297-250428T195714"
+    "version": "HEAD-0ed3714-250429T113201"
   },
   {
     "_disabled": "false",
@@ -84994,71 +84978,6 @@
     "_disabled": "false",
     "pkg": "wezterm",
     "pkg_family": "wezterm",
-    "pkg_id": "github.com.wez.wezterm.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wezterm-stable/wezterm/wezterm",
-    "app_id": "org.wezfurlong.wezterm",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wezterm/appimage.official.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A GPU-accelerated cross-platform terminal emulator and multiplexer",
-    "distro_pkg": {
-      "alpine": [
-        "wezterm"
-      ],
-      "archlinux": {
-        "aur": [
-          "wezterm-git"
-        ],
-        "extra": [
-          "wezterm"
-        ]
-      },
-      "homebrew": [
-        "wezterm",
-        "wezterm@nightly"
-      ],
-      "nixpkgs": [
-        "wezterm"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/wezterm/appimage.official.stable.yaml",
-    "homepage": [
-      "https://wezfurlong.org/wezterm/"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/wezterm/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/wez/wezterm"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/wezterm/appimage/official",
-    "provides": [
-      "wezterm"
-    ],
-    "repology": [
-      "wezterm"
-    ],
-    "src_url": [
-      "https://github.com/wez/wezterm"
-    ],
-    "tag": [
-      "Terminal"
-    ],
-    "version": "20240203-110809-5046fc22"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "wezterm",
-    "pkg_family": "wezterm",
     "pkg_id": "runimage.alpine.wezterm",
     "pkg_type": "runimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-wezterm/wezterm/wezterm",
@@ -85125,8 +85044,72 @@
     ],
     "tag": [
       "Terminal"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wezterm",
+    "pkg_family": "wezterm",
+    "pkg_id": "github.com.wez.wezterm.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wezterm-stable/wezterm/wezterm",
+    "app_id": "org.wezfurlong.wezterm",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wezterm/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
     ],
-    "version": "20240203.110809"
+    "description": "A GPU-accelerated cross-platform terminal emulator and multiplexer",
+    "distro_pkg": {
+      "alpine": [
+        "wezterm"
+      ],
+      "archlinux": {
+        "aur": [
+          "wezterm-git"
+        ],
+        "extra": [
+          "wezterm"
+        ]
+      },
+      "homebrew": [
+        "wezterm",
+        "wezterm@nightly"
+      ],
+      "nixpkgs": [
+        "wezterm"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/wezterm/appimage.official.stable.yaml",
+    "homepage": [
+      "https://wezfurlong.org/wezterm/"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/wezterm/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/wez/wezterm"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/wezterm/appimage/official",
+    "provides": [
+      "wezterm"
+    ],
+    "repology": [
+      "wezterm"
+    ],
+    "src_url": [
+      "https://github.com/wez/wezterm"
+    ],
+    "tag": [
+      "Terminal"
+    ],
+    "version": "20240203-110809-5046fc22"
   },
   {
     "_disabled": "false",
@@ -86863,7 +86846,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-6111ea9-250428T171556"
+    "version": "HEAD-7be3e55-250429T115855"
   },
   {
     "_disabled": "false",
@@ -87348,8 +87331,7 @@
     ],
     "tag": [
       "x11"
-    ],
-    "version": "1.0.10"
+    ]
   },
   {
     "_disabled": "false",
@@ -88281,8 +88263,7 @@
     ],
     "tag": [
       "x11"
-    ],
-    "version": "1.20.10.3#LastdigitisDebianspkgrel"
+    ]
   },
   {
     "_disabled": "false",
@@ -89745,7 +89726,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.11.5t(2025-04-28at23:03:29)"
+    "version": "Twilightbuild-1.11.5t(2025-04-29at08:09:05)"
   },
   {
     "_disabled": "false",

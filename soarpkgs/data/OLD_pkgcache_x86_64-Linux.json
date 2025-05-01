@@ -890,6 +890,88 @@
   },
   {
     "_disabled": "false",
+    "pkg": "android-tools",
+    "pkg_family": "android-tools",
+    "pkg_id": "github.com.pkgforge-dev.android-tools-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/android-tools/android-tools",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/android-tools/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Android SDK Platform-Tools (adb, fastboot & more)",
+      "adb": "Android Debug Bridge (adb) to communicate with an emulator instance or connected Android-powered device [android-tools]",
+      "etc1tool": "Encode/Decode PNG images to & from the ETC1 compression standard [android-tools]",
+      "fastboot": "Android flashing and booting utility [android-tools]",
+      "hprof-conv": "HPROF Converter [android-tools]",
+      "make_f2fs": "Tool to create a flash-friendly F2FS file system [android-tools]",
+      "make_f2fs_casefold": "Version of make_f2fs with casefolding support for file systems [android-tools]",
+      "mke2fs": "Utility to create ext2, ext3, or ext4 file systems [android-tools]",
+      "sqlite3": "Command-line interface for SQLite databases [android-tools]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "android-tools"
+      ],
+      "archlinux": {
+        "extra": [
+          "android-tools"
+        ]
+      },
+      "debian": [
+        "android-tools"
+      ],
+      "nixpkgs": [
+        "android-tools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/android-tools/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://android.googlesource.com/platform/tools/base",
+      "https://github.com/pkgforge-dev/android-tools-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/android-tools/assets/default.png",
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Samueru-sama (https://github.com/Samueru-sama)"
+    ],
+    "note": [
+      "Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/android-tools-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/android-tools/appimage/pkgforge-dev",
+    "provides": [
+      "android-tools=>adb",
+      "android-tools=>etc1tool",
+      "android-tools=>fastboot",
+      "android-tools=>hprof-conv",
+      "android-tools=>make_f2fs",
+      "android-tools=>make_f2fs_casefold",
+      "android-tools=>mke2fs",
+      "android-tools=>sqlite3"
+    ],
+    "repology": [
+      "android-tools"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/android-tools-AppImage"
+    ],
+    "tag": [
+      "adb",
+      "android-tools",
+      "utils"
+    ],
+    "version": "36.0.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "aqtinstall",
     "pkg_family": "aqtinstall",
     "pkg_id": "sharun.wrappe.pypi.aqtinstall",
@@ -3965,7 +4047,7 @@
       "editor",
       "graphics"
     ],
-    "version": "1.5.1"
+    "version": "1.5.2"
   },
   {
     "_disabled": "false",
@@ -5899,6 +5981,85 @@
       "port-scanner"
     ],
     "version": "7.95"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "obs-studio",
+    "pkg_family": "obs-studio",
+    "pkg_id": "github.com.pkgforge-dev.OBS-Studio-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/obs-studio/obs-studio",
+    "app_id": "com.obsproject.Studio",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/obs-studio/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "AudioVideoEditing",
+      "Recorder"
+    ],
+    "description": "FOSS cross-platform screencasting and streaming app",
+    "distro_pkg": {
+      "alpine": [
+        "obs-studio"
+      ],
+      "archlinux": {
+        "aur": [
+          "obs-studio-git"
+        ],
+        "extra": [
+          "obs-studio"
+        ]
+      },
+      "debian": [
+        "obs-studio"
+      ],
+      "gnuguix": [
+        "obs"
+      ],
+      "homebrew": [
+        "obs",
+        "obs@beta"
+      ],
+      "nixpkgs": [
+        "obs-studio"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/obs-studio/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://obsproject.com",
+      "https://github.com/obsproject/obs-studio",
+      "https://github.com/pkgforge-dev/OBS-Studio-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/obs-studio/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/OBS-Studio-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/obs-studio/appimage/pkgforge-dev",
+    "provides": [
+      "obs-studio"
+    ],
+    "repology": [
+      "obs-studio"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/OBS-Studio-AppImage"
+    ],
+    "tag": [
+      "Graphical",
+      "media-video",
+      "Productivity/Multimedia/Video/Editors",
+      "Video",
+      "Video/Utilities"
+    ],
+    "version": "31.0.3-1"
   },
   {
     "_disabled": "false",
@@ -7911,6 +8072,63 @@
       "Utility"
     ],
     "version": "1.55.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "torzu",
+    "pkg_family": "torzu",
+    "pkg_id": "github.com.pkgforge-dev.Torzu-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/torzu/torzu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/torzu/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Fork of yuzu, an open-source Nintendo Switch emulator",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "torzu",
+          "torzu-git"
+        ]
+      },
+      "nixpkgs": [
+        "torzu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/torzu/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://notabug.org/litucks/torzu"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/torzu/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Torzu-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/torzu/appimage/pkgforge-dev",
+    "provides": [
+      "torzu"
+    ],
+    "repology": [
+      "torzu"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Torzu-AppImage"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "r27239.945de31fb"
   },
   {
     "_disabled": "false",

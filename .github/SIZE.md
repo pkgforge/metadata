@@ -83,7 +83,7 @@
   32K   │   ├── gen_meta_x86_64-Linux.sh
   32K   │   ├── gen_meta_aarch64-Linux.sh
   12K   │   └── sync_hf_mirror.sh
-  49M   ├── GHCR_PKGS.json
+  50M   ├── GHCR_PKGS.json
   33M   ├─┬ external
   11M   │ ├─┬ am
   11M   │ │ ├─┬ data
@@ -114,7 +114,7 @@
  2.7M   │ │ │ ├── x86_64-Linux.db
  1.5M   │ │ │ ├── aarch64-Linux.json
  1.1M   │ │ │ ├── aarch64-Linux.db
- 320K   │ │ │ ├── x86_64-Linux.db.cba
+ 324K   │ │ │ ├── x86_64-Linux.db.cba
  300K   │ │ │ ├── x86_64-Linux.json.cba
  260K   │ │ │ ├── x86_64-Linux.db.zstd
  248K   │ │ │ ├── x86_64-Linux.db.xz

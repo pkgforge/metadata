@@ -1,13 +1,13 @@
 ```mathematica
- 422M └─┬ main
- 175M   ├─┬ misc
- 175M   │ ├─┬ data
+ 420M └─┬ main
+ 173M   ├─┬ misc
+ 173M   │ ├─┬ data
   71M   │ │ ├── ARCHLINUX.json
   37M   │ │ ├── FLATPAK_APPSTREAM.xml
   23M   │ │ ├── DEBIAN.json
   10M   │ │ ├── ALPINE_PKG.json
   10M   │ │ ├── NIXPKGS.json
- 9.0M   │ │ ├── PKGSRC.json
+ 6.9M   │ │ ├── PKGSRC.json
  5.1M   │ │ ├── ALPINE_GIT.json
  2.8M   │ │ ├── BREW_FORMULA.json
  1.6M   │ │ ├── BREW_CASK.json
@@ -114,13 +114,13 @@
  2.7M   │ │ │ ├── x86_64-Linux.db
  1.5M   │ │ │ ├── aarch64-Linux.json
  1.1M   │ │ │ ├── aarch64-Linux.db
- 320K   │ │ │ ├── x86_64-Linux.db.cba
+ 324K   │ │ │ ├── x86_64-Linux.db.cba
  304K   │ │ │ ├── x86_64-Linux.json.cba
  260K   │ │ │ ├── x86_64-Linux.db.zstd
  248K   │ │ │ ├── x86_64-Linux.db.xz
  232K   │ │ │ ├── x86_64-Linux.json.zstd
  220K   │ │ │ ├── x86_64-Linux.json.xz
- 136K   │ │ │ ├── aarch64-Linux.db.cba
+ 140K   │ │ │ ├── aarch64-Linux.db.cba
  132K   │ │ │ ├── aarch64-Linux.json.cba
  112K   │ │ │ ├── aarch64-Linux.db.zstd
  108K   │ │ │ ├── aarch64-Linux.db.xz
@@ -155,9 +155,9 @@
   84K   │ │ │ ├── aarch64-Linux.db
   12K   │ │ │ ├── aarch64-Linux.json.zstd
   12K   │ │ │ ├── aarch64-Linux.json.xz
-  12K   │ │ │ ├── aarch64-Linux.json.cba
   12K   │ │ │ ├── aarch64-Linux.db.zstd
   12K   │ │ │ ├── aarch64-Linux.db.xz
+  12K   │ │ │ ├── aarch64-Linux.db.cba
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum
@@ -166,10 +166,10 @@
  4.0K   │ │ │ ├── x86_64-Linux.db.bsum
  4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.cba
  4.0K   │ │ │ ├── aarch64-Linux.json.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
- 4.0K   │ │ │ ├── aarch64-Linux.db.cba
  4.0K   │ │ │ ├── aarch64-Linux.db.bsum
  4.0K   │ │ │ └── TOTAL.json
   32K   │ │ └─┬ scripts

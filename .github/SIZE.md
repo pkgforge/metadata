@@ -1,13 +1,13 @@
 ```mathematica
- 420M └─┬ main
- 173M   ├─┬ misc
- 173M   │ ├─┬ data
+ 422M └─┬ main
+ 175M   ├─┬ misc
+ 175M   │ ├─┬ data
   71M   │ │ ├── ARCHLINUX.json
   37M   │ │ ├── FLATPAK_APPSTREAM.xml
   23M   │ │ ├── DEBIAN.json
   10M   │ │ ├── ALPINE_PKG.json
   10M   │ │ ├── NIXPKGS.json
- 6.9M   │ │ ├── PKGSRC.json
+ 9.0M   │ │ ├── PKGSRC.json
  5.1M   │ │ ├── ALPINE_GIT.json
  2.8M   │ │ ├── BREW_FORMULA.json
  1.6M   │ │ ├── BREW_CASK.json
@@ -16,7 +16,7 @@
  428K   │ │ ├── FLATPAK_APPS_INFO.txt
  312K   │ │ ├── PPKG.json
  236K   │ │ ├── FLATPAK_POPULAR.json
- 216K   │ │ ├── FLATPAK_TRENDING.json
+ 224K   │ │ ├── FLATPAK_TRENDING.json
   76K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md

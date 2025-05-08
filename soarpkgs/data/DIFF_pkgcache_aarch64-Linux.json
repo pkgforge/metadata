@@ -756,6 +756,79 @@
     "version": "HEAD-9908ca7-250507T143427"
   },
   {
+    "_disabled": "false",
+    "pkg": "element-desktop",
+    "pkg_family": "element-desktop",
+    "pkg_id": "runimage.alpine.element-desktop",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/element-desktop/element-desktop/element-desktop",
+    "app_id": "im.riot.Riot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/element-desktop/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A glossy Matrix collaboration client for desktop",
+    "distro_pkg": {
+      "alpine": [
+        "element-desktop",
+        "element-web"
+      ],
+      "archlinux": {
+        "aur": [
+          "element-desktop-git",
+          "element-desktop-nightly-bin",
+          "riot-web-develop-bin",
+          "riot-web-develop-git"
+        ],
+        "extra": [
+          "element.io"
+        ]
+      },
+      "homebrew": [
+        "element"
+      ],
+      "nixpkgs": [
+        "element-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/element-desktop/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://github.com/element-hq/element-desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/element-desktop/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/element-desktop/runimage/alpine",
+    "provides": [
+      "element-desktop:riot-desktop"
+    ],
+    "repology": [
+      "element-desktop"
+    ],
+    "src_url": [
+      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/testing/element-desktop"
+    ],
+    "tag": [
+      "chat",
+      "matrix"
+    ],
+    "version": "1.11.100"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -810,7 +883,7 @@
       "chat",
       "matrix"
     ],
-    "version": "1.11.99"
+    "version": "1.11.100"
   },
   {
     "_disabled": "false",
@@ -1593,6 +1666,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "openvscode-server",
+    "pkg_family": "openvscode-server",
+    "pkg_id": "wrappe.openvscode-server.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/openvscode-server/openvscode-server",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/openvscode-server/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Run VS Code on any machine anywhere and access it in the browser (GitPod)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "openvscode-server"
+        ]
+      },
+      "nixpkgs": [
+        "openvscode-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/openvscode-server/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://github.com/gitpod-io/openvscode-server"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/gitpod-io/openvscode-server",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/openvscode-server/archive/wrappe",
+    "provides": [
+      "openvscode-server"
+    ],
+    "repology": [
+      "openvscode-server"
+    ],
+    "src_url": [
+      "https://github.com/gitpod-io/openvscode-server"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "openvscode-server-v1.99.3"
+  },
+  {
+    "_disabled": "false",
     "pkg": "player432hz",
     "pkg_family": "player432hz",
     "pkg_id": "github.com.mysteryx93.HanumanInstituteApps",
@@ -2132,7 +2264,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "4.14.3"
+    "version": "4.14.4"
   },
   {
     "_disabled": "false",

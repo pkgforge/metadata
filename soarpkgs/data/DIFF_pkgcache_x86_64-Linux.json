@@ -553,7 +553,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.80.44"
+    "version": "v1.80.46"
   },
   {
     "_disabled": "false",
@@ -1010,6 +1010,79 @@
     "version": "HEAD-9908ca7-250507T143427"
   },
   {
+    "_disabled": "false",
+    "pkg": "element-desktop",
+    "pkg_family": "element-desktop",
+    "pkg_id": "runimage.alpine.element-desktop",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/element-desktop/element-desktop/element-desktop",
+    "app_id": "im.riot.Riot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/element-desktop/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A glossy Matrix collaboration client for desktop",
+    "distro_pkg": {
+      "alpine": [
+        "element-desktop",
+        "element-web"
+      ],
+      "archlinux": {
+        "aur": [
+          "element-desktop-git",
+          "element-desktop-nightly-bin",
+          "riot-web-develop-bin",
+          "riot-web-develop-git"
+        ],
+        "extra": [
+          "element.io"
+        ]
+      },
+      "homebrew": [
+        "element"
+      ],
+      "nixpkgs": [
+        "element-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/element-desktop/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://github.com/element-hq/element-desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/element-desktop/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/element-desktop/runimage/alpine",
+    "provides": [
+      "element-desktop:riot-desktop"
+    ],
+    "repology": [
+      "element-desktop"
+    ],
+    "src_url": [
+      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/testing/element-desktop"
+    ],
+    "tag": [
+      "chat",
+      "matrix"
+    ],
+    "version": "1.11.100"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -1064,7 +1137,7 @@
       "chat",
       "matrix"
     ],
-    "version": "1.11.99"
+    "version": "1.11.100"
   },
   {
     "_disabled": "false",
@@ -1374,7 +1447,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "140.0.20250507164202"
+    "version": "140.0.20250508092440"
   },
   {
     "_disabled": "false",
@@ -1787,6 +1860,76 @@
       "graphics"
     ],
     "version": "3.0.2-3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gimp",
+    "pkg_family": "gimp",
+    "pkg_id": "runimage.cachyos.gimp.git",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gimp-git/gimp/gimp",
+    "app_id": "org.gimp.GIMP",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gimp/runimage.cachyos.git.yaml",
+    "category": [
+      "Graphics",
+      "ImageProcessing"
+    ],
+    "description": "The GNU Image Manipulation Program (Git)",
+    "distro_pkg": {
+      "alpine": [
+        "gimp"
+      ],
+      "archlinux": {
+        "aur": [
+          "gimp-git"
+        ],
+        "extra": [
+          "gimp"
+        ]
+      },
+      "debian": [
+        "gimp"
+      ],
+      "nixpkgs": [
+        "gimp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/gimp/runimage.cachyos.git.yaml",
+    "homepage": [
+      "https://www.gimp.org",
+      "https://gitlab.gnome.org/GNOME/gimp"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/gimp/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/gimp/runimage/cachyos",
+    "provides": [
+      "gimp"
+    ],
+    "repology": [
+      "gimp"
+    ],
+    "src_url": [
+      "https://aur.archlinux.org/packages/gimp-git"
+    ],
+    "tag": [
+      "editor",
+      "graphics"
+    ],
+    "version": "3.0.3.r218.eeed283da2"
   },
   {
     "_disabled": "true",
@@ -2581,6 +2724,65 @@
       "port-scanner"
     ],
     "version": "7.96"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "openvscode-server",
+    "pkg_family": "openvscode-server",
+    "pkg_id": "wrappe.openvscode-server.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/openvscode-server/openvscode-server",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/openvscode-server/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Run VS Code on any machine anywhere and access it in the browser (GitPod)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "openvscode-server"
+        ]
+      },
+      "nixpkgs": [
+        "openvscode-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/openvscode-server/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://github.com/gitpod-io/openvscode-server"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/gitpod-io/openvscode-server",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/openvscode-server/archive/wrappe",
+    "provides": [
+      "openvscode-server"
+    ],
+    "repology": [
+      "openvscode-server"
+    ],
+    "src_url": [
+      "https://github.com/gitpod-io/openvscode-server"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "openvscode-server-v1.99.3"
   },
   {
     "_disabled": "false",
@@ -3527,7 +3729,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "4.14.3"
+    "version": "4.14.4"
   },
   {
     "_disabled": "false",

@@ -228,7 +228,7 @@
 176K   │ │ ├── INDEX.db.xz
 168K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
 112K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 68K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+ 72K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  52K   │ │ ├── URLS.txt
  20K   │ │ ├── DIFF_bincache.json
 8.0K   │ │ ├── DIFF_pkgcache.json

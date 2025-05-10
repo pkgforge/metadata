@@ -1110,6 +1110,87 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sudo-rs",
+    "pkg_family": "sudo-rs",
+    "pkg_id": "sharun.wrappe.sudo-rs.source",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-source/sudo-rs/sudo-rs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/sudo-rs/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Memory safe implementation of sudo and su",
+      "cvtsudoers": "Convert between sudoers file formats [sudo-rs]",
+      "sudo": "Execute a command as another user [sudo-rs]",
+      "sudo.conf": "Configuration for sudo front-end [sudo-rs]",
+      "sudo_logsrvd": "sudo event and I/O log server [sudo-rs]",
+      "sudo_logsrvd.conf": "Configuration for sudo_logsrvd [sudo-rs]",
+      "sudo_sendlog": "Send sudo I/O log to log server [sudo-rs]",
+      "sudoedit": "An extension of the sudo -e command to edit a file [sudo-rs]",
+      "sudoers": "Default sudo security policy plugin [sudo-rs]",
+      "sudoers.dist": "Default configuration file for sudoers [sudo-rs]",
+      "sudoreplay": "Replay sudo session logs [sudo-rs]",
+      "su": "Change user id or become root [sudo-rs]",
+      "visudo": "Edit the sudoers file [sudo-rs]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "sudo-rs",
+          "sudo-rs-git"
+        ]
+      },
+      "nixpkgs": [
+        "sudo-rs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/sudo-rs/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/trifectatechfoundation/sudo-rs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trifectatechfoundation/sudo-rs",
+      "Built Using Sharun. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "sudo must be owned by uid 0 and have the setuid bit set",
+      "chown -v 'root:root' sudo",
+      "chmod -v 'a=rx,u+ws' sudo",
+      "Requires '/etc/sudoers' file & '/etc/sudoers.d' dir",
+      "Also requires PAM to be setup: https://github.com/trifectatechfoundation/sudo-rs#differences-from-original-sudo"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/sudo-rs/archive/sharun",
+    "provides": [
+      "su",
+      "sudo",
+      "visudo"
+    ],
+    "repology": [
+      "sudo-rs"
+    ],
+    "src_url": [
+      "https://github.com/trifectatechfoundation/sudo-rs"
+    ],
+    "tag": [
+      "sudo"
+    ],
+    "version": "HEAD-c9d6939-250510T161344"
+  },
+  {
+    "_disabled": "false",
     "pkg": "tangent",
     "pkg_family": "tangent",
     "pkg_id": "github.com.suchnsuch.Tangent.alpha",
@@ -1543,6 +1624,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.12.3t(2025-05-09at23:03:08)"
+    "version": "Twilightbuild-1.12.3t(2025-05-10at13:51:23)"
   }
 ]

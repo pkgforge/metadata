@@ -45,8 +45,8 @@
 4.0M   │ │ ├── aarch64-Linux.json.cba
 1.4M   │ │ ├── x86_64-Linux.db.cba
 1.3M   │ │ ├── x86_64-Linux.sdb.cba
-1.3M   │ │ ├── aarch64-Linux.sdb.cba
 1.2M   │ │ ├── aarch64-Linux.db.cba
+1.2M   │ │ ├── aarch64-Linux.sdb.cba
 944K   │ │ ├── x86_64-Linux.sdb.zstd
 912K   │ │ ├── aarch64-Linux.sdb.zstd
 896K   │ │ ├── x86_64-Linux.db.zstd
@@ -227,7 +227,7 @@
 184K   │ │ ├── INDEX.db.zstd
 176K   │ │ ├── INDEX.db.xz
 164K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
- 72K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 76K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  52K   │ │ ├── URLS.txt
  44K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  20K   │ │ ├── DIFF_bincache.json

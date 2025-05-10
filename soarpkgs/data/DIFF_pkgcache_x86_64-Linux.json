@@ -1,6 +1,74 @@
 [
   {
     "_disabled": "false",
+    "pkg": "aisleriot",
+    "pkg_family": "aisleriot",
+    "pkg_id": "github.com.ivan-hc.Aisleriot-appimage",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aisleriot-appimage/aisleriot/aisleriot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/aisleriot/appimage.ivan-hc.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Collection of solitaire and other card games",
+    "distro_pkg": {
+      "alpine": [
+        "aisleriot"
+      ],
+      "archlinux": {
+        "aur": [
+          "aisleriot-git"
+        ],
+        "extra": [
+          "aisleriot"
+        ]
+      },
+      "debian": [
+        "aisleriot"
+      ],
+      "nixpkgs": [
+        "aisleriot",
+        "gnome.aisleriot"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/aisleriot/appimage.ivan-hc.stable.yaml",
+    "homepage": [
+      "https://live.gnome.org/Aisleriot",
+      "https://wiki.gnome.org/Aisleriot",
+      "https://download.gnome.org/sources/aisleriot",
+      "https://gitlab.gnome.org/GNOME/aisleriot"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/aisleriot/assets/default.png",
+    "license": [
+      "CC-BY-4.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ivan-hc/Aisleriot-appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/aisleriot/appimage/ivan-hc",
+    "provides": [
+      "aisleriot"
+    ],
+    "repology": [
+      "aisleriot"
+    ],
+    "src_url": [
+      "https://github.com/ivan-hc/Aisleriot-appimage"
+    ],
+    "tag": [
+      "Games/Cards",
+      "games-board"
+    ],
+    "version": "250510T022930"
+  },
+  {
+    "_disabled": "false",
     "pkg": "amdgpu_top",
     "pkg_family": "amdgpu_top",
     "pkg_id": "github.com.Umio-Yasuno.amdgpu_top",
@@ -55,6 +123,108 @@
       "top"
     ],
     "version": "v0.10.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "apptainer",
+    "pkg_family": "apptainer",
+    "pkg_id": "wrappe.github.com.apptainer.apptainer.glibc",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apptainer-glibc/apptainer/apptainer",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/apptainer/archive.wrappe.glibc.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Standalone Linux Container Alternative to docker/podman that runs anywhere with 0 Dependency",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/apptainer/archive.wrappe.glibc.yaml",
+    "homepage": [
+      "https://github.com/apptainer/apptainer"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/apptainer/apptainer",
+      "Statically Linked on Debian (GLIBC)",
+      "Packed Using Wrappe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This may need extra requirements on host, read more: https://apptainer.org/docs/user/latest/bind_paths_and_mounts.html#requirements"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/apptainer/archive/wrappe",
+    "provides": [
+      "apptainer"
+    ],
+    "repology": [
+      "apptainer"
+    ],
+    "src_url": [
+      "https://github.com/apptainer/apptainer"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-2ca3a09-250509T215504"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "apptainer",
+    "pkg_family": "apptainer",
+    "pkg_id": "wrappe.github.com.apptainer.apptainer.musl",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apptainer-musl/apptainer/apptainer",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/apptainer/archive.wrappe.musl.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Standalone Linux Container Alternative to docker/podman that runs anywhere with 0 Dependency",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/apptainer/archive.wrappe.musl.yaml",
+    "homepage": [
+      "https://github.com/apptainer/apptainer"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/apptainer/apptainer",
+      "Statically Linked on Alpine (MUSL)",
+      "Packed Using Wrappe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This may need extra requirements on host, read more: https://apptainer.org/docs/user/latest/bind_paths_and_mounts.html#requirements"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/apptainer/archive/wrappe",
+    "provides": [
+      "apptainer"
+    ],
+    "repology": [
+      "apptainer"
+    ],
+    "src_url": [
+      "https://github.com/apptainer/apptainer"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-2ca3a09-250509T215504"
   },
   {
     "_disabled": "false",
@@ -1166,6 +1336,78 @@
       "vkbasalt"
     ],
     "version": "1.3-3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kdenlive",
+    "pkg_family": "kdenlive",
+    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
+    "app_id": "org.kde.kdenlive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
+    "category": [
+      "AudioVideoEditing"
+    ],
+    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
+    "distro_pkg": {
+      "alpine": [
+        "kdenlive"
+      ],
+      "archlinux": {
+        "aur": [
+          "kdenlive-appimage",
+          "kdenlive-git"
+        ],
+        "extra": [
+          "kdenlive"
+        ]
+      },
+      "debian": [
+        "kdenlive"
+      ],
+      "gnuguix": [
+        "kdenlive"
+      ],
+      "homebrew": [
+        "kdenlive"
+      ],
+      "nixpkgs": [
+        "kdePackages.kdenlive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
+    "homepage": [
+      "https://apps.kde.org/kdenlive",
+      "https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
+    "provides": [
+      "kdenlive"
+    ],
+    "repology": [
+      "kdenlive"
+    ],
+    "src_url": [
+      "https://kdenlive.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "2025-05-10"
   },
   {
     "_disabled": "false",
@@ -2367,6 +2609,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.12.3t(2025-05-09at15:43:26)"
+    "version": "Twilightbuild-1.12.3t(2025-05-09at23:03:08)"
   }
 ]

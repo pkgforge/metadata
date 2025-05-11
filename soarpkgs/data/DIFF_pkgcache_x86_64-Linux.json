@@ -922,7 +922,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "140.0.20250510092934"
+    "version": "140.0.20250510210452"
   },
   {
     "_disabled": "false",
@@ -1183,7 +1183,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250510T004606"
+    "version": "250511T005057"
   },
   {
     "_disabled": "true",
@@ -1339,75 +1339,76 @@
   },
   {
     "_disabled": "false",
-    "pkg": "inkscape",
-    "pkg_family": "inkscape",
-    "pkg_id": "gitlab.com.inkscape.inkscape",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inkscape-inkscape/inkscape/inkscape",
-    "app_id": "org.inkscape.Inkscape",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/inkscape/appimage.official.stable.yaml",
+    "pkg": "jc",
+    "pkg_family": "jc",
+    "pkg_id": "sharun.wrappe.pypi.jc",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-jc/jc/jc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/jc/archive.sharun.pypi.yaml",
     "category": [
-      "Graphics",
-      "Office"
+      "Utility"
     ],
-    "description": "FOSS Vector Graphics Editor",
+    "description": "Convert the output of command-line tools to JSON",
     "distro_pkg": {
       "alpine": [
-        "inkscape"
+        "jc"
       ],
       "archlinux": {
         "aur": [
-          "inkscape-git"
+          "jc-git"
         ],
         "extra": [
-          "inkscape"
+          "jc"
         ]
       },
       "debian": [
-        "inkscape"
+        "jc"
       ],
       "gnuguix": [
-        "inkscape"
+        "jc"
       ],
       "homebrew": [
-        "inkscape"
+        "jc"
       ],
       "nixpkgs": [
-        "inkscape",
-        "inkscape-with-extensions"
+        "jc"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/inkscape/appimage.official.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/jc/archive.sharun.pypi.yaml",
     "homepage": [
-      "https://inkscape.org"
+      "https://github.com/kellyjonbrazil/jc"
     ],
     "host": [
+      "aarch64-linux",
       "x86_64-linux"
     ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/inkscape/assets/default.png",
     "license": [
-      "GPL-2.0"
+      "MIT"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/inkscape/inkscape"
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/inkscape/appimage/official",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/jc/archive/sharun",
     "provides": [
-      "inkscape"
+      "jc"
     ],
     "repology": [
-      "inkscape"
+      "jc"
     ],
     "src_url": [
-      "https://inkscape.org/release"
+      "https://pypi.org/project/jc"
     ],
     "tag": [
-      "editor",
-      "graphics"
-    ]
+      "Utility"
+    ],
+    "version": "1.25.5"
   },
   {
     "_disabled": "false",
@@ -1623,7 +1624,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-05-09"
+    "version": "2025-05-10"
   },
   {
     "_disabled": "true",
@@ -2639,6 +2640,105 @@
   },
   {
     "_disabled": "false",
+    "pkg": "xash3d-fwgs",
+    "pkg_family": "xash3d-fwgs",
+    "pkg_id": "github.com.FWGS.xash3d-fwgs",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xash3d-fwgs/xash3d-fwgs/xash3d-fwgs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xash3d-fwgs/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Heavily modified fork of an original Xash3D Engine for Half Life",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "xash3d-fwgs-bin",
+          "xash3d-fwgs-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xash3d-fwgs/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xash3d-fwgs/appimage/official",
+    "provides": [
+      "xash3d-fwgs"
+    ],
+    "repology": [
+      "xash3d-fwgs"
+    ],
+    "src_url": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "tag": [
+      "utility"
+    ],
+    "version": "250511T005341"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xashds",
+    "pkg_family": "xashds",
+    "pkg_id": "wrappe.xashds",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Xash3D FWGS Dedicated Server",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
+    "provides": [
+      "xashds==xash"
+    ],
+    "repology": [
+      "xash3d-fwgs"
+    ],
+    "src_url": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "250511T005341"
+  },
+  {
+    "_disabled": "false",
     "pkg": "yt-dlp",
     "pkg_family": "yt-dlp",
     "pkg_id": "sharun.wrappe.source.yt-dlp",
@@ -2708,7 +2808,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-ea8498e-250510T085359"
+    "version": "HEAD-cbcfe63-250510T232253"
   },
   {
     "_disabled": "false",
@@ -2835,6 +2935,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.12.3t(2025-05-10at13:51:23)"
+    "version": "Twilightbuild-1.12.3t(2025-05-10at19:24:07)"
   }
 ]

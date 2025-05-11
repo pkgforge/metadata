@@ -212,7 +212,7 @@
 2.5M   │ │ ├── INDEX.json
 1.9M   │ │ ├── OLD_bincache_x86_64-Linux.json
 1.9M   │ │ ├── OLD_bincache_aarch64-Linux.json
-1.7M   │ │ ├── BACKAGE.json
+1.6M   │ │ ├── BACKAGE.json
 1.3M   │ │ ├── INDEX.db
 1.0M   │ │ ├── DIFF_bincache_aarch64-Linux.json
 1.0M   │ │ ├── DIFF_bincache_x86_64-Linux.json
@@ -285,10 +285,10 @@
  88K   │ │ ├── aarch64-Linux.db.cba
  80K   │ │ ├── aarch64-Linux.json.cba
  72K   │ │ ├── aarch64-Linux.sdb.zstd
+ 72K   │ │ ├── aarch64-Linux.db.zstd
  68K   │ │ ├── aarch64-Linux.sdb.xz
- 68K   │ │ ├── aarch64-Linux.db.zstd
  68K   │ │ ├── aarch64-Linux.db.xz
- 60K   │ │ ├── aarch64-Linux.json.zstd
+ 64K   │ │ ├── aarch64-Linux.json.zstd
  60K   │ │ ├── aarch64-Linux.json.xz
 4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum

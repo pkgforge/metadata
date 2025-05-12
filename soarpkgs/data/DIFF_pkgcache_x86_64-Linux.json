@@ -232,6 +232,137 @@
   },
   {
     "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "github.com.srevinsaju.Brave-AppImage.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.nightly.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers (Nightly)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-beta-bin",
+          "brave-bin",
+          "brave-nightly-bin"
+        ]
+      },
+      "homebrew": [
+        "brave-browser",
+        "brave-browser@beta",
+        "brave-browser@dev",
+        "brave-browser@nightly"
+      ],
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.nightly.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/appimage/srevinsaju",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "v1.80.55"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "code-server",
+    "pkg_family": "code-server",
+    "pkg_id": "wrappe.code-server.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/code-server/code-server",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/code-server/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Run VS Code on any machine anywhere and access it in the browser",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "code-server"
+        ]
+      },
+      "homebrew": [
+        "code-server"
+      ],
+      "nixpkgs": [
+        "code-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/code-server/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://coder.com/",
+      "https://github.com/coder/code-server"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/code-server/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/coder/code-server",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/code-server/archive/wrappe",
+    "provides": [
+      "code-server==vs-code-server"
+    ],
+    "repology": [
+      "code-server"
+    ],
+    "src_url": [
+      "https://github.com/coder/code-server"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v4.100.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "commix",
     "pkg_family": "commix",
     "pkg_id": "sharun.wrappe.pypi.commix",
@@ -594,6 +725,54 @@
       "Communications",
       "Networking/Chat"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dotbins",
+    "pkg_family": "dotbins",
+    "pkg_id": "sharun.wrappe.pypi.dotbins",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-dotbins/dotbins/dotbins",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/dotbins/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Manage CLI tool binaries in your dotfiles repository",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/dotbins/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/basnijholt/dotbins"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/dotbins/archive/sharun",
+    "provides": [
+      "dotbins"
+    ],
+    "repology": [
+      "dotbins"
+    ],
+    "src_url": [
+      "https://pypi.org/project/dotbins"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2.3.0"
   },
   {
     "_disabled": "true",
@@ -1240,6 +1419,79 @@
       "Utility"
     ],
     "version": "HEAD-814ac17-250512T141141"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "inkscape",
+    "pkg_family": "inkscape",
+    "pkg_id": "gitlab.com.inkscape.inkscape",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inkscape-inkscape/inkscape/inkscape",
+    "app_id": "org.inkscape.Inkscape",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/inkscape/appimage.official.stable.yaml",
+    "category": [
+      "Graphics",
+      "Office"
+    ],
+    "description": "FOSS Vector Graphics Editor",
+    "distro_pkg": {
+      "alpine": [
+        "inkscape"
+      ],
+      "archlinux": {
+        "aur": [
+          "inkscape-git"
+        ],
+        "extra": [
+          "inkscape"
+        ]
+      },
+      "debian": [
+        "inkscape"
+      ],
+      "gnuguix": [
+        "inkscape"
+      ],
+      "homebrew": [
+        "inkscape"
+      ],
+      "nixpkgs": [
+        "inkscape",
+        "inkscape-with-extensions"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/inkscape/appimage.official.stable.yaml",
+    "homepage": [
+      "https://inkscape.org"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/inkscape/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/inkscape/inkscape"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/inkscape/appimage/official",
+    "provides": [
+      "inkscape"
+    ],
+    "repology": [
+      "inkscape"
+    ],
+    "src_url": [
+      "https://inkscape.org/release"
+    ],
+    "tag": [
+      "editor",
+      "graphics"
+    ],
+    "version": "1.4.2"
   },
   {
     "_disabled": "false",
@@ -2570,6 +2822,73 @@
   },
   {
     "_disabled": "false",
+    "pkg": "zed",
+    "pkg_family": "zed",
+    "pkg_id": "wrappe.zed",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-zed/zed/zed",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zed/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "High-performance, multiplayer code editor",
+    "distro_pkg": {
+      "alpine": [
+        "zed"
+      ],
+      "archlinux": {
+        "aur": [
+          "zed-git"
+        ],
+        "extra": [
+          "zed"
+        ]
+      },
+      "homebrew": [
+        "zed"
+      ],
+      "nixpkgs": [
+        "zed-editor"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zed/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://zed.dev"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/zed-industries/zed",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zed/archive/wrappe",
+    "provides": [
+      "zed==zed-editor"
+    ],
+    "repology": [
+      "zed"
+    ],
+    "src_url": [
+      "https://github.com/zed-industries/zed"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "v0.185.16"
+  },
+  {
+    "_disabled": "false",
     "pkg": "zen-browser",
     "pkg_family": "zen-browser",
     "pkg_id": "github.com.zen-browser.desktop.twilight",
@@ -2626,7 +2945,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.12.3t(2025-05-12at07:15:11)"
+    "version": "Twilightbuild-1.12.3t(2025-05-12at11:37:02)"
   },
   {
     "_disabled": "false",

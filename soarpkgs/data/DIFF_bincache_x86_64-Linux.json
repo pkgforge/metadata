@@ -7986,7 +7986,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-05c161c-250511T142857"
+    "version": "HEAD-a73c0ea-250511T233653"
   },
   {
     "_disabled": "false",
@@ -8303,7 +8303,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-05c161c-250511T142857"
+    "version": "HEAD-a73c0ea-250511T233653"
   },
   {
     "_disabled": "true",
@@ -11539,7 +11539,7 @@
       "dns",
       "dnscrypt"
     ],
-    "version": "HEAD-2b0e18f-250416T165150"
+    "version": "HEAD-16375d9-250511T222418"
   },
   {
     "_disabled": "false",
@@ -13661,7 +13661,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-534b156-250511T180301"
+    "version": "HEAD-d60a02d-250512T000645"
   },
   {
     "_disabled": "false",
@@ -13916,7 +13916,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9036dfe-250509T104008"
+    "version": "HEAD-8ba2f73-250511T160954"
   },
   {
     "_disabled": "false",
@@ -19184,6 +19184,49 @@
   },
   {
     "_disabled": "false",
+    "pkg": "libdeflate",
+    "pkg_family": "libdeflate",
+    "pkg_id": "github.com.ebiggers.libdeflate.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/libdeflate-source/libdeflate/libdeflate",
+    "bincache": "ghcr.io/pkgforge/bincache/libdeflate/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/libdeflate/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Heavily optimized CLI for DEFLATE/zlib/gzip compression and decompression",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/libdeflate/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ebiggers/libdeflate"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ebiggers/libdeflate"
+    ],
+    "provides": [
+      "libdeflate-gzip"
+    ],
+    "src_url": [
+      "https://github.com/ebiggers/libdeflate"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-96836d7-250511T120237"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ligolo-ng",
     "pkg_family": "ligolo-ng",
     "pkg_id": "github.com.nicocha30.ligolo-ng.source",
@@ -20163,7 +20206,7 @@
       "cidr",
       "subnet"
     ],
-    "version": "HEAD-934280d-250504T235602"
+    "version": "HEAD-0f9dbb3-250511T235556"
   },
   {
     "_disabled": "false",
@@ -20614,7 +20657,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c8129e7-250508T221819"
+    "version": "HEAD-d59aaab-250511T214749"
   },
   {
     "_disabled": "false",
@@ -20753,7 +20796,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-f15d29d-250508T190312"
+    "version": "HEAD-5ae2cbd-250511T175259"
   },
   {
     "_disabled": "false",
@@ -20851,6 +20894,75 @@
       "utility"
     ],
     "version": "HEAD-fd93b7b-250501T215028"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "minisign",
+    "pkg_family": "minisign",
+    "pkg_id": "github.com.jedisct1.minisign",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jedisct1-minisign/minisign/minisign",
+    "bincache": "ghcr.io/pkgforge/bincache/minisign/official/minisign",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/minisign/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A dead simple tool to sign files and verify signatures",
+    "distro_pkg": {
+      "alpine": [
+        "minisign"
+      ],
+      "archlinux": {
+        "aur": [
+          "minisign-git"
+        ],
+        "extra": [
+          "minisign"
+        ]
+      },
+      "debian": [
+        "minisign"
+      ],
+      "nixpkgs": [
+        "minisign"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/minisign/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/jedisct1/minisign",
+      "https://jedisct1.github.io/minisign"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom:ISC",
+      "ISC",
+      "spdx:ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jedisct1/minisign"
+    ],
+    "repology": [
+      "minisign"
+    ],
+    "src_url": [
+      "https://github.com/jedisct1/minisign"
+    ],
+    "tag": [
+      "app-crypt",
+      "crypto",
+      "extra/security",
+      "Productivity/Networking/Security",
+      "Security"
+    ],
+    "version": "HEAD-ae7232f-250511T214729"
   },
   {
     "_disabled": "false",
@@ -21876,7 +21988,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-f860057-250511T013046"
+    "version": "HEAD-0b7f069-250512T065605"
   },
   {
     "_disabled": "false",
@@ -26059,7 +26171,7 @@
       "backup",
       "dedupe"
     ],
-    "version": "HEAD-5eb4f5a-250502T010508"
+    "version": "HEAD-126ad04-250511T203520"
   },
   {
     "_disabled": "false",
@@ -26284,7 +26396,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-878666d-250511T121834"
+    "version": "HEAD-2ccf3ee-250511T213618"
   },
   {
     "_disabled": "false",
@@ -26356,7 +26468,7 @@
     "tag": [
       "checksum"
     ],
-    "version": "HEAD-8b68680-250510T141711"
+    "version": "HEAD-0870299-250512T031309"
   },
   {
     "_disabled": "false",
@@ -30467,7 +30579,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "b289"
+    "version": "b290"
   },
   {
     "_disabled": "false",
@@ -34534,7 +34646,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9fc7bbd-250511T200815"
+    "version": "HEAD-d63125c-250511T205625"
   },
   {
     "_disabled": "false",

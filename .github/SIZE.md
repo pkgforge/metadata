@@ -288,7 +288,7 @@
  68K   │ │ ├── aarch64-Linux.sdb.xz
  68K   │ │ ├── aarch64-Linux.db.zstd
  68K   │ │ ├── aarch64-Linux.db.xz
- 64K   │ │ ├── aarch64-Linux.json.zstd
+ 60K   │ │ ├── aarch64-Linux.json.zstd
  60K   │ │ ├── aarch64-Linux.json.xz
 4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
 4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum

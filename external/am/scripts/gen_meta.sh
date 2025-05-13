@@ -22,7 +22,8 @@ pushd "${TMPDIR}" &>/dev/null
  CUTOFF_DATE="$(date --utc -d '7 days ago' '+%Y-%m-%d' | tr -d '[:space:]')" ; unset META_TAGS
  export META_REPO CUTOFF_DATE
  for i in {1..5}; do
-   gh api "repos/${META_REPO}/releases" --paginate 2>/dev/null |& cat - > "${TMPDIR}/tmp/RELEASES.json"
+   #gh api "repos/${META_REPO}/releases" --paginate 2>/dev/null |& cat - > "${TMPDIR}/tmp/RELEASES.json"
+   gh api "repos/${META_REPO}/releases" 2>/dev/null |& cat - > "${TMPDIR}/tmp/RELEASES.json"
    if [[ $(stat -c%s "${TMPDIR}/tmp/RELEASES.json" | tr -d '[:space:]') -le 1000 ]]; then
      echo "Retrying... ${i}/5"
      sleep 2

@@ -406,7 +406,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.79.104"
+    "version": "v1.79.105"
   },
   {
     "_disabled": "false",
@@ -1450,7 +1450,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "140.0.20250512213630"
+    "version": "140.0.20250513092634"
   },
   {
     "_disabled": "false",
@@ -1867,6 +1867,55 @@
   },
   {
     "_disabled": "false",
+    "pkg": "guarddog",
+    "pkg_family": "guarddog",
+    "pkg_id": "sharun.wrappe.pypi.guarddog",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-guarddog/guarddog/guarddog",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/guarddog/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI tool to Identify malicious PyPI and npm packages",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/guarddog/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://securitylabs.datadoghq.com/articles/guarddog-identify-malicious-pypi-packages/",
+      "https://github.com/DataDog/guarddog"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/guarddog/archive/sharun",
+    "provides": [
+      "guarddog"
+    ],
+    "repology": [
+      "guarddog"
+    ],
+    "src_url": [
+      "https://pypi.org/project/guarddog"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2.6.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "huggingface-cli",
     "pkg_family": "huggingface-cli",
     "pkg_id": "sharun.wrappe.source.huggingface-cli",
@@ -1916,7 +1965,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-814ac17-250512T141141"
+    "version": "HEAD-5713342-250513T115912"
   },
   {
     "_disabled": "false",
@@ -1988,8 +2037,7 @@
     "tag": [
       "editor",
       "graphics"
-    ],
-    "version": "1.4.2"
+    ]
   },
   {
     "_disabled": "false",
@@ -2061,7 +2109,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-05-12"
+    "version": "2025-05-13"
   },
   {
     "_disabled": "false",
@@ -2569,6 +2617,121 @@
     "tag": [
       "editor"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "simplex-chat",
+    "pkg_family": "simplex-chat",
+    "pkg_id": "sharun.wrappe.stable.simplex-chat",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/simplex-chat/simplex-chat/simplex-chat",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-chat/archive.sharun.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A 100% private-by-design chat platform for the command-line",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "simplex-chat-bin",
+          "simplex-chat-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-chat/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://simplex.chat",
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "AGPL-3.0"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/simplex-chat/archive/sharun",
+    "provides": [
+      "simplex-chat==simplex-chat-cli"
+    ],
+    "repology": [
+      "simplex-chat"
+    ],
+    "src_url": [
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "tag": [
+      "chat",
+      "privacy"
+    ],
+    "version": "v6.3.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "simplex-desktop",
+    "pkg_family": "simplex-desktop",
+    "pkg_id": "github.com.simplex-chat.simplex-chat",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/simplex-chat/simplex-desktop/simplex-desktop",
+    "app_id": "chat.simplex.simplex",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-desktop/appimage.official.stable.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "Desktop application for SimpleX Chat, A 100% private-by-design chat platform",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "simplex-chat"
+        ]
+      },
+      "nixpkgs": [
+        "simplex-chat-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/appimage.official.stable.yaml",
+    "homepage": [
+      "https://simplex.chat",
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/simplex-chat/simplex-chat"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/simplex-desktop/appimage/official",
+    "provides": [
+      "simplex-desktop==simplex-chat-desktop"
+    ],
+    "repology": [
+      "simplex-chat",
+      "simplex-chat-desktop"
+    ],
+    "src_url": [
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "tag": [
+      "chat",
+      "messenger",
+      "privacy"
+    ],
+    "version": "v6.3.4"
   },
   {
     "_disabled": "false",

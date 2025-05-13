@@ -473,7 +473,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.80.57"
+    "version": "v1.80.59"
   },
   {
     "_disabled": "false",
@@ -1965,7 +1965,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-5713342-250513T115912"
+    "version": "HEAD-c8f81df-250513T164316"
   },
   {
     "_disabled": "false",
@@ -2037,7 +2037,8 @@
     "tag": [
       "editor",
       "graphics"
-    ]
+    ],
+    "version": "1.4.2"
   },
   {
     "_disabled": "false",
@@ -2475,7 +2476,72 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b243ee8-250510T120000"
+    "version": "HEAD-4f028ea-250513T193230"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "oci-cli",
+    "pkg_family": "oci-cli",
+    "pkg_id": "sharun.wrappe.pypi.oci-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oci-cli/oci-cli/oci-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oci-cli/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Command Line Interface for Oracle Cloud Infrastructure",
+    "distro_pkg": {
+      "alpine": [
+        "oci-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "oci-cli"
+        ]
+      },
+      "homebrew": [
+        "oci-cli"
+      ],
+      "nixpkgs": [
+        "oci-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/oci-cli/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://cloud.oracle.com/cloud-infrastructure",
+      "https://github.com/oracle/oci-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "UPL-1.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
+    "provides": [
+      "oci==oci-cli"
+    ],
+    "repology": [
+      "oci-cli"
+    ],
+    "src_url": [
+      "https://pypi.org/project/oci-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.56.0"
   },
   {
     "_disabled": "false",
@@ -2617,121 +2683,6 @@
     "tag": [
       "editor"
     ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "simplex-chat",
-    "pkg_family": "simplex-chat",
-    "pkg_id": "sharun.wrappe.stable.simplex-chat",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/simplex-chat/simplex-chat/simplex-chat",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-chat/archive.sharun.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "A 100% private-by-design chat platform for the command-line",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "simplex-chat-bin",
-          "simplex-chat-git"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-chat/archive.sharun.stable.yaml",
-    "homepage": [
-      "https://simplex.chat",
-      "https://github.com/simplex-chat/simplex-chat"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "license": [
-      "AGPL-3.0"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/simplex-chat/archive/sharun",
-    "provides": [
-      "simplex-chat==simplex-chat-cli"
-    ],
-    "repology": [
-      "simplex-chat"
-    ],
-    "src_url": [
-      "https://github.com/simplex-chat/simplex-chat"
-    ],
-    "tag": [
-      "chat",
-      "privacy"
-    ],
-    "version": "v6.3.4"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "simplex-desktop",
-    "pkg_family": "simplex-desktop",
-    "pkg_id": "github.com.simplex-chat.simplex-chat",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/simplex-chat/simplex-desktop/simplex-desktop",
-    "app_id": "chat.simplex.simplex",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-desktop/appimage.official.stable.yaml",
-    "category": [
-      "Chat",
-      "InstantMessaging"
-    ],
-    "description": "Desktop application for SimpleX Chat, A 100% private-by-design chat platform",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "simplex-chat"
-        ]
-      },
-      "nixpkgs": [
-        "simplex-chat-desktop"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/appimage.official.stable.yaml",
-    "homepage": [
-      "https://simplex.chat",
-      "https://github.com/simplex-chat/simplex-chat"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/assets/default.png",
-    "license": [
-      "AGPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/simplex-chat/simplex-chat"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/simplex-desktop/appimage/official",
-    "provides": [
-      "simplex-desktop==simplex-chat-desktop"
-    ],
-    "repology": [
-      "simplex-chat",
-      "simplex-chat-desktop"
-    ],
-    "src_url": [
-      "https://github.com/simplex-chat/simplex-chat"
-    ],
-    "tag": [
-      "chat",
-      "messenger",
-      "privacy"
-    ],
-    "version": "v6.3.4"
   },
   {
     "_disabled": "false",
@@ -3303,6 +3254,68 @@
     "version": "250501T010951"
   },
   {
+    "_disabled": "false",
+    "pkg": "vscodium",
+    "pkg_family": "vscodium",
+    "pkg_id": "github.com.VSCodium.vscodium",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vscodium-vscodium/vscodium/vscodium",
+    "app_id": "com.vscodium.codium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/vscodium/appimage.official.stable.yaml",
+    "category": [
+      "IDE"
+    ],
+    "description": "Visual Studio Code without MS branding/telemetry/licensing",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vscodium",
+          "vscodium-bin",
+          "vscodium-electron",
+          "vscodium-electron-bin",
+          "vscodium-git"
+        ]
+      },
+      "nixpkgs": [
+        "vscodium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/vscodium/appimage.official.stable.yaml",
+    "homepage": [
+      "https://vscodium.com",
+      "https://github.com/VSCodium/vscodium"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/vscodium/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/VSCodium/vscodium"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/vscodium/appimage/official",
+    "provides": [
+      "vscodium==codium"
+    ],
+    "repology": [
+      "vscodium"
+    ],
+    "src_url": [
+      "https://github.com/VSCodium/vscodium"
+    ],
+    "tag": [
+      "code",
+      "editor",
+      "ide"
+    ],
+    "version": "1.100.13210"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -3381,6 +3394,68 @@
       "downloader"
     ],
     "version": "2.2.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wrangler",
+    "pkg_family": "wrangler",
+    "pkg_id": "sharun.wrappe.npm.wrangler",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/npm-wrangler/wrangler/wrangler",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wrangler/archive.sharun.npm.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Command-line interface for all things Cloudflare Workers",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "wrangler"
+        ]
+      },
+      "homebrew": [
+        "wrangler"
+      ],
+      "nixpkgs": [
+        "wrangler"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/wrangler/archive.sharun.npm.yaml",
+    "homepage": [
+      "https://developers.cloudflare.com/workers/cli-wrangler",
+      "https://github.com/cloudflare/workers-sdk"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [npm]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/wrangler/archive/sharun",
+    "provides": [
+      "wrangler"
+    ],
+    "repology": [
+      "wrangler"
+    ],
+    "src_url": [
+      "https://www.npmjs.com/package/wrangler"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "4.15.0"
   },
   {
     "_disabled": "false",
@@ -3606,7 +3681,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "Twilightbuild-1.12.3t(2025-05-12at11:37:02)"
+    "version": "Twilightbuild-1.12.4t(2025-05-13at11:41:40)"
   },
   {
     "_disabled": "false",

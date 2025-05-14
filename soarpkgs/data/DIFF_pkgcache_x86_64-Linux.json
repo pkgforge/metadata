@@ -1090,6 +1090,66 @@
     "_disabled": "false",
     "pkg": "firefox",
     "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.nightly.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (Nightly)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "firefox-nightly",
+          "firefox-nightly-bin"
+        ]
+      },
+      "homebrew": [
+        "firefox@nightly"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.nightly.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-nightly"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "140.0.20250513214736"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
     "pkg_id": "github.com.srevinsaju.Firefox-Appimage.stable",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/firefox/firefox",
@@ -3017,6 +3077,73 @@
       "Utility"
     ],
     "version": "4.14.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zed",
+    "pkg_family": "zed",
+    "pkg_id": "wrappe.zed",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-zed/zed/zed",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zed/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "High-performance, multiplayer code editor",
+    "distro_pkg": {
+      "alpine": [
+        "zed"
+      ],
+      "archlinux": {
+        "aur": [
+          "zed-git"
+        ],
+        "extra": [
+          "zed"
+        ]
+      },
+      "homebrew": [
+        "zed"
+      ],
+      "nixpkgs": [
+        "zed-editor"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zed/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://zed.dev"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/zed-industries/zed",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zed/archive/wrappe",
+    "provides": [
+      "zed==zed-editor"
+    ],
+    "repology": [
+      "zed"
+    ],
+    "src_url": [
+      "https://github.com/zed-industries/zed"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "v0.186.7"
   },
   {
     "_disabled": "false",

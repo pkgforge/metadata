@@ -53,7 +53,7 @@
 884K   │ │ ├── x86_64-Linux.db.xz
 876K   │ │ ├── x86_64-Linux.sdb.xz
 868K   │ │ ├── aarch64-Linux.db.zstd
-848K   │ │ ├── aarch64-Linux.db.xz
+852K   │ │ ├── aarch64-Linux.db.xz
 840K   │ │ ├── aarch64-Linux.sdb.xz
 836K   │ │ ├── x86_64-Linux.json.zstd
 804K   │ │ ├── x86_64-Linux.json.xz
@@ -227,8 +227,8 @@
 188K   │ │ ├── INDEX.db.zstd
 176K   │ │ ├── INDEX.db.xz
 172K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
- 92K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 64K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+ 96K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 68K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  52K   │ │ ├── URLS.txt
  20K   │ │ ├── DIFF_bincache.json
 8.0K   │ │ ├── DIFF_pkgcache.json
@@ -318,9 +318,9 @@
  12K   │   └── sync_hf_mirror.sh
 2.5M   ├─┬ completions
 1.2M   │ ├── ALL_x86_64-Linux.txt
-572K   │ ├── ALL_aarch64-Linux.txt
+576K   │ ├── ALL_aarch64-Linux.txt
 512K   │ ├── PKG_NAME_ONLY_x86_64-Linux.txt
-240K   │ └── PKG_NAME_ONLY_aarch64-Linux.txt
+244K   │ └── PKG_NAME_ONLY_aarch64-Linux.txt
 320K   ├─┬ web
 164K   │ ├─┬ cloudflare
  88K   │ │ ├─┬ src

@@ -247,7 +247,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.79.105"
+    "version": "v1.79.106"
   },
   {
     "_disabled": "false",
@@ -1213,6 +1213,67 @@
     "version": "$(catVERSION)$(tar-tfghostty-${GHOSTTY_VERSION}.tar.gz--wildcards"
   },
   {
+    "_disabled": "false",
+    "pkg": "ghostty",
+    "pkg_family": "ghostty",
+    "pkg_id": "github.com.pkgforge-dev.ghostty-appimage.stable-glfw",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stable-glfw/ghostty/ghostty",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty/appimage.pkgforge-dev.stable-glfw.yaml",
+    "category": [
+      "TerminalEmulator"
+    ],
+    "description": "Fast, native, feature-rich terminal emulator pushing modern features (Experimental)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ghostty-git"
+        ],
+        "extra": [
+          "ghostty"
+        ]
+      },
+      "homebrew": [
+        "ghostty"
+      ],
+      "nixpkgs": [
+        "ghostty"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty/appimage.pkgforge-dev.stable-glfw.yaml",
+    "homepage": [
+      "https://ghostty.org",
+      "https://github.com/ghostty-org/ghostty"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "psadi (https://github.com/psadi)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/ghostty-appimage",
+      "This is an Experimental Build: https://github.com/pkgforge-dev/ghostty-appimage#-experimental-builds-glfw"
+    ],
+    "provides": [
+      "ghostty"
+    ],
+    "repology": [
+      "ghostty"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/ghostty-appimage"
+    ],
+    "tag": [
+      "terminal"
+    ],
+    "version": "v1.1.3+2"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -1332,6 +1393,67 @@
       "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/ghostty-appimage"
     ],
     "pkgcache": "ghcr.io/pkgforge/pkgcache/ghostty-nightly/appimage/pkgforge-dev",
+    "provides": [
+      "ghostty-nightly"
+    ],
+    "repology": [
+      "ghostty"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/ghostty-appimage"
+    ],
+    "tag": [
+      "terminal"
+    ],
+    "version": "250514T004751"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ghostty-nightly",
+    "pkg_family": "ghostty-nightly",
+    "pkg_id": "github.com.pkgforge-dev.ghostty-appimage.nightly-glfw",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nightly-glfw/ghostty-nightly/ghostty-nightly",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty-nightly/appimage.pkgforge-dev.nightly-glfw.yaml",
+    "category": [
+      "TerminalEmulator"
+    ],
+    "description": "Fast, native, feature-rich terminal emulator pushing modern features (Experimental Nightly)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ghostty-git"
+        ],
+        "extra": [
+          "ghostty"
+        ]
+      },
+      "homebrew": [
+        "ghostty"
+      ],
+      "nixpkgs": [
+        "ghostty"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty-nightly/appimage.pkgforge-dev.nightly-glfw.yaml",
+    "homepage": [
+      "https://ghostty.org",
+      "https://github.com/ghostty-org/ghostty"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "psadi (https://github.com/psadi)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/ghostty-appimage",
+      "This is an Experimental Build: https://github.com/pkgforge-dev/ghostty-appimage#-experimental-builds-glfw"
+    ],
     "provides": [
       "ghostty-nightly"
     ],
@@ -1709,6 +1831,70 @@
     "version": "2025-05-13"
   },
   {
+    "_disabled": "false",
+    "pkg": "lact",
+    "pkg_family": "lact",
+    "pkg_id": "runimage.cachyos.lact",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-lact/lact/lact",
+    "app_id": "io.github.lact-linux",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/lact/runimage.cachyos.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Linux GPU Control Application",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "lact",
+          "lact-bin",
+          "lact-git"
+        ],
+        "extra": [
+          "lact"
+        ]
+      },
+      "nixpkgs": [
+        "lact"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/lact/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://github.com/ilya-zlobintsev/LACT"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/lact/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/lact/runimage/cachyos",
+    "provides": [
+      "lact"
+    ],
+    "repology": [
+      "lact"
+    ],
+    "src_url": [
+      "https://archlinux.org/packages/extra/x86_64/lact/"
+    ],
+    "tag": [
+      "gpu",
+      "Utility"
+    ],
+    "version": "0.7.4"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -2070,6 +2256,50 @@
     "tag": [
       "editor"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "remarshal",
+    "pkg_family": "remarshal",
+    "pkg_id": "sharun.wrappe.pypi.remarshal",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-remarshal/remarshal/remarshal",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/remarshal/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Convert between CBOR, JSON, MessagePack, TOML, and YAML",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/remarshal/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/remarshal-project/remarshal"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "provides": [
+      "remarshal"
+    ],
+    "src_url": [
+      "https://pypi.org/project/remarshal"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.0.0"
   },
   {
     "_disabled": "false",

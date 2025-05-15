@@ -109,7 +109,8 @@ if [ -s "${SYSTMP}/AM.json" ] &&\
    echo '[]' > "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json"
   jq -s 'map(.[]) | group_by(.pkg_id) | map(if length > 1 then .[1] + .[0] else .[0] end) | unique_by(.download_url) | sort_by(.pkg)' "${SYSTMP}/AM.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" | jq . > "${SYSTMP}/merged.json"
   if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 50 ]]; then
-    cat "${SYSTMP}/merged.json" | jq '[ .[] | select(.pkg_type? and (.pkg_type | test("appimage"; "i"))) ]' |\
+    #cat "${SYSTMP}/merged.json" | jq '[ .[] | select(.pkg_type? and (.pkg_type | test("appimage"; "i"))) ]' |\
+    cat "${SYSTMP}/merged.json" | jq '[ .[] | select(.pkg_type? and (.pkg_type | test("^(appimage|archive)$"; "i"))) ]' |\
      jq . > "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json"
   fi
   #Checksum

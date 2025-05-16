@@ -114,13 +114,13 @@
 2.7M   │ │ │ ├── x86_64-Linux.db
 1.5M   │ │ │ ├── aarch64-Linux.json
 1.1M   │ │ │ ├── aarch64-Linux.db
-324K   │ │ │ ├── x86_64-Linux.db.cba
+320K   │ │ │ ├── x86_64-Linux.db.cba
 304K   │ │ │ ├── x86_64-Linux.json.cba
 260K   │ │ │ ├── x86_64-Linux.db.zstd
 248K   │ │ │ ├── x86_64-Linux.db.xz
 232K   │ │ │ ├── x86_64-Linux.json.zstd
 220K   │ │ │ ├── x86_64-Linux.json.xz
-140K   │ │ │ ├── aarch64-Linux.db.cba
+136K   │ │ │ ├── aarch64-Linux.db.cba
 132K   │ │ │ ├── aarch64-Linux.json.cba
 112K   │ │ │ ├── aarch64-Linux.db.zstd
 108K   │ │ │ ├── aarch64-Linux.db.xz
@@ -143,7 +143,7 @@
  24K   │ │   └── gen_meta.sh
 5.5M   │ ├─┬ appimagehub
 5.5M   │ │ ├─┬ data
-2.0M   │ │ │ ├── x86_64-Linux.json
+2.1M   │ │ │ ├── x86_64-Linux.json
 1.8M   │ │ │ ├── x86_64-Linux.db
 280K   │ │ │ ├── x86_64-Linux.json.cba
 268K   │ │ │ ├── x86_64-Linux.db.cba

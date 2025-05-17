@@ -21345,6 +21345,46 @@
   },
   {
     "_disabled": "false",
+    "pkg": "elfexec",
+    "pkg_family": "elfexec",
+    "pkg_id": "github.com.abbat.elfexec.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/elfexec-source/elfexec/elfexec",
+    "bincache": "ghcr.io/pkgforge/bincache/elfexec/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/elfexec/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Execute ELF binary directly from stdin pipe",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/elfexec/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/abbat/elfexec"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/abbat/elfexec"
+    ],
+    "provides": [
+      "elfexec"
+    ],
+    "src_url": [
+      "https://github.com/abbat/elfexec"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-66a9019-221025T193046"
+  },
+  {
+    "_disabled": "false",
     "pkg": "elftools",
     "pkg_family": "elftools",
     "pkg_id": "github.com.pkgforge-dev.elftools.source",
@@ -21516,6 +21556,76 @@
       "shell"
     ],
     "version": "HEAD-49937be-250308T121232"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "emanutils",
+    "pkg_family": "emanutils",
+    "pkg_id": "github.com.emanuele6.emanutils.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/emanutils-source/emanutils/emanutils",
+    "bincache": "ghcr.io/pkgforge/bincache/emanutils/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/emanutils/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Collection of exec tools",
+      "chainif": "Conditionally run command chains based on another command's success or failure [emanutils]",
+      "creatememfd": "Create a memory file descriptor at a given FD & execute a command with [emanutils]",
+      "fdcmp": "Compare two file descriptors and run a command based on the result [emanutils]",
+      "fdseal": "Add/Check/Get memfd seals on file descriptors using F_ADD_SEALS and F_GET_SEALS [emanutils]",
+      "fdtruncate": "Truncate an open file descriptor to a specified length & execute a command [emanutils]",
+      "mergeeet": "Read from multiple file descriptors (FDs) concurrently and merge their output to stdout [emanutils]",
+      "openpathfd": "Replace the specified file descriptor with an O_PATH-opened path & execute a command [emanutils]",
+      "openpidfd": "Open a pidfd for a given PID, assign it to a specified FD & execute a command [emanutils]",
+      "pidfdgetfd": "Retrieve a file descriptor from a pidfd, assign it to a target file descriptor & execute a command [emanutils]",
+      "pollinfd": "Monitor a file descriptor for input events & execute a command [emanutils]",
+      "psendfd": "Use ptrace to manipulate and redirect file descriptors of a running process [emanutils]",
+      "ptytty": "Execute a command with I/O redirection to a specified pseudo-terminal device [emanutils]",
+      "secretmemfd": "Create a secret memory file descriptor, duplicate it to a given file descriptor & execute a command [emanutils]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/emanutils/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/emanuele6/emanutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/emanuele6/emanutils"
+    ],
+    "provides": [
+      "chainif",
+      "creatememfd",
+      "fdcmp",
+      "fdseal",
+      "fdtruncate",
+      "mergeeet",
+      "openpathfd",
+      "openpidfd",
+      "pidfdgetfd",
+      "pollinfd",
+      "psendfd",
+      "ptytty",
+      "secretmemfd"
+    ],
+    "src_url": [
+      "https://github.com/emanuele6/emanutils"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-fe254cf-250128T153306"
   },
   {
     "_disabled": "false",
@@ -22163,6 +22273,179 @@
       "transmission"
     ],
     "version": "HEAD-58652aa-250513T073242"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "execline",
+    "pkg_family": "execline",
+    "pkg_id": "nixpkgs.execline",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-execline/execline/execline",
+    "bincache": "ghcr.io/pkgforge/bincache/execline/nixpkgs/background",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/execline/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Non-interactive scripting Tools",
+      "background": "Launch a command in the background [execline]",
+      "backtick": "Run a program and stores its output in an environment variable [execline]",
+      "case": "Compare a value against a series of regular expressions & execute a program [execline]",
+      "cd": "Change the current working directory to a given directory & execute a program [execline]",
+      "define": "Replace a literal with a value & execute a program [execline]",
+      "dollarat": "Print the positional parameters of an execline script [execline]",
+      "elgetopt": "Perform getopt-style parsing on the arguments to an execline script [execline]",
+      "elgetpositionals": "Substitute the positional parameters of an execline script [execline]",
+      "elglob": "Perform globbing on a pattern & execute a program [execline]",
+      "eltest": "Evaluate an expression and indicates the result via its exit status [execline]",
+      "emptyenv": "Empty/Cleanup the current environment & execute a program [execline]",
+      "envfile": "Read a file containing variable assignments, add the variables to the environment & execute a program [execline]",
+      "exec": "Execute the command line as given [execline]",
+      "execlineb": "Read and Execute a script from a file as command line [execline]",
+      "execline-cd": "Change the current working directory to a given directory & execute a program [execline]",
+      "execline-umask": "Set the umask (file creation mask) & execute a program [execline]",
+      "exit": "Exit with a given exit code [execline]",
+      "export": "Set an environment variable to a given value & execute a program [execline]",
+      "export-array": "Encode a set of values into an environment variable & execute a program [execline]",
+      "fdblock": "Set/Unset the O_NONBLOCK flag on a given file descriptor & execute a program [execline]",
+      "fdclose": "Close a given file descriptor & execute a program [execline]",
+      "fdmove": "Move/Copy a given file descriptor & execute a program [execline]",
+      "fdreserve": "Update the environment with file descriptors that are guaranteed safe to use & execute a program [execline]",
+      "fdswap": "Swap two file descriptors & execute a program [execline]",
+      "forbacktickx": "Run a program and uses its output as loop elements to run another program [execline]",
+      "foreground": "Execute a sequence of commands [execline]",
+      "forstdin": "Use its input as loop elements to run another program [execline]",
+      "forx": "Run a loop [execline]",
+      "getcwd": "Store its current working directory into a given environment variable & execute a program [execline]",
+      "getpid": "Store its process ID in a given environment variable & execute a program [execline]",
+      "heredoc": "Run a command with a certain string fed to a file descriptor [execline]",
+      "homeof": "Print the home directory of a user [execline]",
+      "if": "Perform conditional execution [execline]",
+      "ifelse": "Perform conditional execution, with two branches [execline]",
+      "ifte": "Perform a conditional alternative [execline]",
+      "ifthenelse": "Perform a conditional alternative [execline]",
+      "importas": "Replace a literal with the value of an environment variable & execute a program [execline]",
+      "loopwhilex": "Perform a conditional loop [execline]",
+      "multidefine": "Split a value and define several variables at once & execute a program [execline]",
+      "multisubstitute": "Perform several substitutions at once in its argv & execute a program [execline]",
+      "pipeline": "Run two commands with a pipe between them [execline]",
+      "piperw": "Create a pipe (an anonymous one) & execute a program [execline]",
+      "posix-cd": "Change the current working directory to a given directory & execute a program [execline]",
+      "posix-umask": "Change its file mode creation mask & execute a program [execline]",
+      "redirfd": "Redirect a given file descriptor to a file & execute a program [execline]",
+      "runblock": "Write execline commands in the execline language [execline]",
+      "shift": "Shift the positional parameters of an execline script [execline]",
+      "trap": "Trap signals and run a variety of commands according to the signals it catches [execline]",
+      "tryexec": "Execute into a command line, with a fallback [execline]",
+      "umask": "Unsets the umask (file creation mask) & execute a program [execline]",
+      "unexport": "Remove a variable from the environment & execute a program [execline]",
+      "wait": "Wait for a set of children & execute a program [execline]",
+      "withstdinas": "Read the entirety of standard input in an environment variable & execute a program [execline]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "execline"
+      ],
+      "archlinux": {
+        "aur": [
+          "execline",
+          "execline-git"
+        ]
+      },
+      "debian": [
+        "execline"
+      ],
+      "gnuguix": [
+        "execline"
+      ],
+      "nixpkgs": [
+        "execline"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/execline/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://skarnet.org/software/execline",
+      "https://github.com/skarnet/execline"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "background",
+      "backtick",
+      "case",
+      "cd",
+      "define",
+      "dollarat",
+      "elgetopt",
+      "elgetpositionals",
+      "elglob",
+      "eltest",
+      "emptyenv",
+      "envfile",
+      "exec",
+      "execlineb",
+      "execline-cd",
+      "execline-umask",
+      "exit",
+      "export",
+      "fdblock",
+      "fdclose",
+      "fdmove",
+      "fdreserve",
+      "fdswap",
+      "forbacktickx",
+      "foreground",
+      "forstdin",
+      "forx",
+      "getcwd",
+      "getpid",
+      "heredoc",
+      "homeof",
+      "if",
+      "ifelse",
+      "ifte",
+      "ifthenelse",
+      "importas",
+      "loopwhilex",
+      "multidefine",
+      "multisubstitute",
+      "pipeline",
+      "piperw",
+      "posix-cd",
+      "posix-umask",
+      "redirfd",
+      "runblock",
+      "shift",
+      "trap",
+      "tryexec",
+      "umask",
+      "unexport",
+      "wait",
+      "withstdinas"
+    ],
+    "repology": [
+      "execline"
+    ],
+    "src_url": [
+      "https://github.com/skarnet/execline"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2.9.6.1"
   },
   {
     "_disabled": "false",
@@ -57864,6 +58147,52 @@
       "terminal"
     ],
     "version": "HEAD-5dd5ff9-250212T153939"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sslscan",
+    "pkg_family": "sslscan",
+    "pkg_id": "github.com.rbsec.sslscan.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sslscan-source/sslscan/sslscan",
+    "bincache": "ghcr.io/pkgforge/bincache/sslscan/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sslscan/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Test SSL/TLS enabled services to discover supported cipher suites",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sslscan/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rbsec/sslscan"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rbsec/sslscan"
+    ],
+    "provides": [
+      "sslscan"
+    ],
+    "repology": [
+      "sslscan"
+    ],
+    "src_url": [
+      "https://github.com/rbsec/sslscan"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-7ba5ee0-250127T195620"
   },
   {
     "_disabled": "false",

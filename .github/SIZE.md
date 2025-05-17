@@ -264,7 +264,7 @@
 8.0K   │   ├── repology_fetcher.sh
 4.0K   │   ├── gen_ghcr_backage.sh
 4.0K   │   └── gen_diff.sh
-7.3M   ├─┬ pkgcache
+7.2M   ├─┬ pkgcache
 7.1M   │ ├─┬ data
 1.2M   │ │ ├── x86_64-Linux.db
 1.1M   │ │ ├── x86_64-Linux.json
@@ -274,7 +274,7 @@
 608K   │ │ ├── aarch64-Linux.sdb
 152K   │ │ ├── x86_64-Linux.sdb.cba
 144K   │ │ ├── x86_64-Linux.db.cba
-136K   │ │ ├── x86_64-Linux.json.cba
+132K   │ │ ├── x86_64-Linux.json.cba
 124K   │ │ ├── x86_64-Linux.sdb.zstd
 120K   │ │ ├── x86_64-Linux.db.zstd
 116K   │ │ ├── x86_64-Linux.sdb.xz
@@ -283,7 +283,7 @@
 104K   │ │ ├── x86_64-Linux.json.xz
  92K   │ │ ├── aarch64-Linux.sdb.cba
  88K   │ │ ├── aarch64-Linux.db.cba
- 84K   │ │ ├── aarch64-Linux.json.cba
+ 80K   │ │ ├── aarch64-Linux.json.cba
  72K   │ │ ├── aarch64-Linux.sdb.zstd
  72K   │ │ ├── aarch64-Linux.db.zstd
  68K   │ │ ├── aarch64-Linux.sdb.xz
@@ -300,16 +300,16 @@
 4.0K   │ │ ├── x86_64-Linux.db.xz.bsum
 4.0K   │ │ ├── x86_64-Linux.db.bsum
 4.0K   │ │ ├── minisign.pub
-4.0K   │ │ ├── aarch64-Linux.sdb.zstd.bsum
-4.0K   │ │ ├── aarch64-Linux.sdb.xz.bsum
-4.0K   │ │ ├── aarch64-Linux.sdb.bsum
-4.0K   │ │ ├── aarch64-Linux.json.zstd.bsum
-4.0K   │ │ ├── aarch64-Linux.json.xz.bsum
-4.0K   │ │ ├── aarch64-Linux.json.bsum
-4.0K   │ │ ├── aarch64-Linux.db.zstd.bsum
-4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
-4.0K   │ │ ├── aarch64-Linux.db.bsum
-4.0K   │ │ └── TOTAL.json
+4.0K   │ │ ├── TOTAL.json
+  0B   │ │ ├── aarch64-Linux.sdb.zstd.bsum
+  0B   │ │ ├── aarch64-Linux.sdb.xz.bsum
+  0B   │ │ ├── aarch64-Linux.sdb.bsum
+  0B   │ │ ├── aarch64-Linux.json.zstd.bsum
+  0B   │ │ ├── aarch64-Linux.json.xz.bsum
+  0B   │ │ ├── aarch64-Linux.json.bsum
+  0B   │ │ ├── aarch64-Linux.db.zstd.bsum
+  0B   │ │ ├── aarch64-Linux.db.xz.bsum
+  0B   │ │ └── aarch64-Linux.db.bsum
 132K   │ └─┬ scripts
  52K   │   ├─┬ archived
  48K   │   │ └── healthchecks.yaml

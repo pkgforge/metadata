@@ -1694,7 +1694,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250518T024912"
+    "version": "250519T024904"
   },
   {
     "_disabled": "false",
@@ -5981,7 +5981,7 @@
       "cat",
       "text-viewer"
     ],
-    "version": "HEAD-861b868-250514T190150"
+    "version": "HEAD-c32fa66-250519T044228"
   },
   {
     "_disabled": "false",
@@ -16339,7 +16339,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-70121dd-250515T091943"
+    "version": "HEAD-f7b9ba4-250519T090847"
   },
   {
     "_disabled": "false",
@@ -21335,7 +21335,7 @@
       "bugbounty",
       "xss"
     ],
-    "version": "HEAD-a68001c-250516T060850"
+    "version": "HEAD-b4b5353-250519T115613"
   },
   {
     "_disabled": "false",
@@ -31678,7 +31678,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6cbb262-250506T121120"
+    "version": "HEAD-3be6efd-250519T113935"
   },
   {
     "_disabled": "false",
@@ -33795,7 +33795,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-583e09d-250519T000845"
+    "version": "HEAD-d1df890-250519T060332"
   },
   {
     "_disabled": "false",
@@ -34766,7 +34766,7 @@
       "editor",
       "graphics"
     ],
-    "version": "250518T032224"
+    "version": "250519T032159"
   },
   {
     "_disabled": "false",
@@ -39212,6 +39212,77 @@
     "_disabled": "false",
     "pkg": "grep",
     "pkg_family": "grep",
+    "pkg_id": "git.savannah.gnu.org.cgit.grep",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cgit-grep/grep/grep",
+    "bincache": "ghcr.io/pkgforge/bincache/bingrep/official/bingrep",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/grep/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Search one or more input files for lines containing a match to a specified pattern",
+    "distro_pkg": {
+      "alpine": [
+        "grep"
+      ],
+      "archlinux": {
+        "aur": [
+          "grep-git"
+        ]
+      },
+      "debian": [
+        "grep"
+      ],
+      "gnuguix": [
+        "grep"
+      ],
+      "homebrew": [
+        "grep"
+      ],
+      "nixpkgs": [
+        "gnugrep"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/grep/static.official.source.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/grep/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://git.savannah.gnu.org/cgit/grep.git"
+    ],
+    "provides": [
+      "egrep",
+      "fgrep",
+      "grep"
+    ],
+    "repology": [
+      "grep"
+    ],
+    "src_url": [
+      "https://www.gnu.org/software/grep/",
+      "https://git.savannah.gnu.org/cgit/grep.git"
+    ],
+    "tag": [
+      "utility"
+    ],
+    "version": "HEAD-682f7f6-250514T105616"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "grep",
+    "pkg_family": "grep",
     "pkg_id": "git.savannah.gnu.org.cgit.grep.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/grep-glibc/grep/grep",
@@ -39262,76 +39333,6 @@
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
       "Built From Source (Latest Git HEAD). Check/Report @ https://git.savannah.gnu.org/cgit/grep.git",
       "Statically Linked on Debian (GLIBC)"
-    ],
-    "provides": [
-      "egrep",
-      "fgrep",
-      "grep"
-    ],
-    "repology": [
-      "grep"
-    ],
-    "src_url": [
-      "https://www.gnu.org/software/grep/",
-      "https://git.savannah.gnu.org/cgit/grep.git"
-    ],
-    "tag": [
-      "utility"
-    ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "grep",
-    "pkg_family": "grep",
-    "pkg_id": "git.savannah.gnu.org.cgit.grep",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cgit-grep/grep/grep",
-    "bincache": "ghcr.io/pkgforge/bincache/bingrep/official/bingrep",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/grep/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Search one or more input files for lines containing a match to a specified pattern",
-    "distro_pkg": {
-      "alpine": [
-        "grep"
-      ],
-      "archlinux": {
-        "aur": [
-          "grep-git"
-        ]
-      },
-      "debian": [
-        "grep"
-      ],
-      "gnuguix": [
-        "grep"
-      ],
-      "homebrew": [
-        "grep"
-      ],
-      "nixpkgs": [
-        "gnugrep"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/grep/static.official.source.yaml",
-    "homepage": [
-      "https://www.gnu.org/software/grep/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://git.savannah.gnu.org/cgit/grep.git"
     ],
     "provides": [
       "egrep",
@@ -46050,7 +46051,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-9e5205d-250518T073046"
+    "version": "HEAD-941f55d-250519T021949"
   },
   {
     "_disabled": "false",
@@ -46580,7 +46581,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-05-17"
+    "version": "2025-05-19"
   },
   {
     "_disabled": "false",
@@ -51273,7 +51274,7 @@
     "tag": [
       "downloader"
     ],
-    "version": "HEAD-2d2334d-250509T133408"
+    "version": "HEAD-179d4a9-250519T114050"
   },
   {
     "_disabled": "false",
@@ -67831,7 +67832,7 @@
       "screen-sharing",
       "teamviewer"
     ],
-    "version": "250519T005120"
+    "version": "250519T012238"
   },
   {
     "_disabled": "false",
@@ -84701,7 +84702,7 @@
       "multiplexer",
       "terminal"
     ],
-    "version": "v0.9.99.70"
+    "version": "v0.9.99.71"
   },
   {
     "_disabled": "false",
@@ -85412,7 +85413,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c7b2db1-250514T173200"
+    "version": "HEAD-f4f33b6-250519T103309"
   },
   {
     "_disabled": "false",
@@ -91431,7 +91432,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-77cb69a-250512T181123"
+    "version": "HEAD-302c0d9-250519T043955"
   },
   {
     "_disabled": "false",

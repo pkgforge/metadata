@@ -51,7 +51,7 @@
 920K   │ │ ├── aarch64-Linux.sdb.zstd
 904K   │ │ ├── x86_64-Linux.db.zstd
 884K   │ │ ├── x86_64-Linux.db.xz
-876K   │ │ ├── x86_64-Linux.sdb.xz
+872K   │ │ ├── x86_64-Linux.sdb.xz
 868K   │ │ ├── aarch64-Linux.db.zstd
 852K   │ │ ├── aarch64-Linux.db.xz
 840K   │ │ ├── aarch64-Linux.sdb.xz
@@ -227,7 +227,7 @@
 188K   │ │ ├── INDEX.db.zstd
 176K   │ │ ├── INDEX.db.xz
 172K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
- 96K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+100K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  60K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  52K   │ │ ├── URLS.txt
  20K   │ │ ├── DIFF_bincache.json

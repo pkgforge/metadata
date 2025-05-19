@@ -96,14 +96,14 @@
 432K   │ │ │ ├── x86_64-Linux.db.zstd
 424K   │ │ │ ├── x86_64-Linux.db.xz
 400K   │ │ │ ├── x86_64-Linux.json.zstd
-392K   │ │ │ ├── x86_64-Linux.json.xz
-4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
-4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
-4.0K   │ │ │ ├── x86_64-Linux.json.bsum
+388K   │ │ │ ├── x86_64-Linux.json.xz
 4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
 4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
-4.0K   │ │ │ └── TOTAL.json
+4.0K   │ │ │ ├── TOTAL.json
+  0B   │ │ │ ├── x86_64-Linux.json.zstd.bsum
+  0B   │ │ │ ├── x86_64-Linux.json.xz.bsum
+  0B   │ │ │ └── x86_64-Linux.json.bsum
  40K   │ │ └─┬ scripts
  16K   │ │   ├── gen_meta.sh
  12K   │ │   ├── gen_meta_old.sh

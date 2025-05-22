@@ -34,7 +34,7 @@
 4.0K   │   ├── fetch_archlinux_docker.sh
 4.0K   │   └── fetch_alpine_git.sh
 140M   ├─┬ bincache
-139M   │ ├─┬ data
+140M   │ ├─┬ data
  25M   │ │ ├── x86_64-Linux.json
  25M   │ │ ├── aarch64-Linux.json
  19M   │ │ ├── x86_64-Linux.db
@@ -48,7 +48,7 @@
 1.3M   │ │ ├── aarch64-Linux.db.cba
 1.3M   │ │ ├── aarch64-Linux.sdb.cba
 956K   │ │ ├── x86_64-Linux.sdb.zstd
-924K   │ │ ├── aarch64-Linux.sdb.zstd
+920K   │ │ ├── aarch64-Linux.sdb.zstd
 908K   │ │ ├── x86_64-Linux.db.zstd
 888K   │ │ ├── x86_64-Linux.db.xz
 876K   │ │ ├── x86_64-Linux.sdb.xz

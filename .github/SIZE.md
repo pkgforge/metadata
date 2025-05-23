@@ -1,7 +1,7 @@
 ```mathematica
-428M └─┬ main
-175M   ├─┬ misc
-175M   │ ├─┬ data
+429M └─┬ main
+176M   ├─┬ misc
+176M   │ ├─┬ data
  71M   │ │ ├── ARCHLINUX.json
  37M   │ │ ├── FLATPAK_APPSTREAM.xml
  23M   │ │ ├── DEBIAN.json
@@ -12,6 +12,7 @@
 2.8M   │ │ ├── BREW_FORMULA.json
 1.6M   │ │ ├── BREW_CASK.json
 1.1M   │ │ ├── PPKG_RAW.json
+540K   │ │ ├── STALIX.json
 464K   │ │ ├── FLATPAK_APPS_INFO.json
 432K   │ │ ├── FLATPAK_APPS_INFO.txt
 312K   │ │ ├── PPKG.json
@@ -27,7 +28,7 @@
 8.0K   │   ├── fetch_gh_logs.sh
 8.0K   │   ├── fetch_debian_src.sh
 8.0K   │   ├── fetch_archlinux_src.sh
-4.0K   │   ├── fetch_stal-ix.sh
+4.0K   │   ├── fetch_stalix.sh
 4.0K   │   ├── fetch_ppkg.sh
 4.0K   │   ├── fetch_pkgsrc.sh
 4.0K   │   ├── fetch_nixpkgs.sh
@@ -56,7 +57,7 @@
 872K   │ │ ├── aarch64-Linux.db.zstd
 852K   │ │ ├── aarch64-Linux.db.xz
 844K   │ │ ├── aarch64-Linux.sdb.xz
-836K   │ │ ├── x86_64-Linux.json.zstd
+840K   │ │ ├── x86_64-Linux.json.zstd
 808K   │ │ ├── x86_64-Linux.json.xz
 804K   │ │ ├── aarch64-Linux.json.zstd
 772K   │ │ ├── aarch64-Linux.json.xz

@@ -47,6 +47,9 @@ jobs:
           - source: "ppkg"
             script: "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_ppkg.sh"
 
+          - source: "stal-ix"
+            script: "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_stal-ix.sh"
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

@@ -72,6 +72,10 @@ repology_fetcher()
               nixpkgs: (
                 [ .[] | select(.repo | test("^nix_")) ]
                 | map(.srcname) | unique
+              ),
+              stalix: (
+                [ .[] | select(.repo | test("stalix")) ]
+                | map(.srcname) | unique
               )
             }
           )

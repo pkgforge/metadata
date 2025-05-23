@@ -63,7 +63,7 @@ curl -qfsSL "https://raw.githubusercontent.com/pg83/ix/refs/heads/main/pkgs/die/
      .pkg_name != null and .pkg_name != "" and
      .pkg_path != null and .pkg_path != "" and
      .version != null and .version != ""
-  ))' | jq 'unique_by(.pkg_path) | sort_by(.pkg)' > "${TMPDIR}/STALIX.json.tmp"
+  ))' | jq 'unique_by(.pkg_id) | sort_by(.pkg)' > "${TMPDIR}/STALIX.json.tmp"
 if jq --exit-status . "${TMPDIR}/STALIX.json.tmp" >/dev/null 2>&1; then
  cp -fv "${TMPDIR}/STALIX.json.tmp" "${TMPDIR}/STALIX.json"
 fi

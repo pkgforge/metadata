@@ -2,9 +2,9 @@
 ## <DO NOT RUN STANDALONE, meant for CI Only>
 ## Meant to Fetch Stal/IX data
 ## Files:
-#   "${SYSTMP}/STAL_IX.json"
-## Self: https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_stal-ix.sh
-# bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_stal-ix.sh")
+#   "${SYSTMP}/STALIX.json"
+## Self: https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_stalix.sh
+# bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_stalix.sh")
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
@@ -13,7 +13,7 @@ export TZ="UTC"
 SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
 TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
 #Cleanup
-rm -rvf "${SYSTMP}/STAL_IX.json" 2>/dev/null
+rm -rvf "${SYSTMP}/STALIX.json" 2>/dev/null
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
@@ -39,7 +39,7 @@ curl -qfsSL "https://raw.githubusercontent.com/pg83/ix/refs/heads/main/pkgs/die/
   
   def generate_pkg_id(pkg_name):
     if pkg_name and pkg_name != "" and pkg_name != null then
-      "stal-ix." + (pkg_name | gsub("[^a-zA-Z0-9]"; "_")) + ".stable"
+      "stalix." + (pkg_name | gsub("[^a-zA-Z0-9]"; "_")) + ".stable"
     else
       null
     end;
@@ -63,13 +63,13 @@ curl -qfsSL "https://raw.githubusercontent.com/pg83/ix/refs/heads/main/pkgs/die/
      .pkg_name != null and .pkg_name != "" and
      .pkg_path != null and .pkg_path != "" and
      .version != null and .version != ""
-  ))' | jq 'unique_by(.pkg_path) | sort_by(.pkg)' > "${TMPDIR}/STAL_IX.json.tmp"
-if jq --exit-status . "${TMPDIR}/STAL_IX.json.tmp" >/dev/null 2>&1; then
- cp -fv "${TMPDIR}/STAL_IX.json.tmp" "${TMPDIR}/STAL_IX.json"
+  ))' | jq 'unique_by(.pkg_path) | sort_by(.pkg)' > "${TMPDIR}/STALIX.json.tmp"
+if jq --exit-status . "${TMPDIR}/STALIX.json.tmp" >/dev/null 2>&1; then
+ cp -fv "${TMPDIR}/STALIX.json.tmp" "${TMPDIR}/STALIX.json"
 fi
 #Copy
-if [[ "$(jq -r '.[] | .pkg' "${TMPDIR}/STAL_IX.json" | wc -l)" -gt 1000 ]]; then
-  cp -fv "${TMPDIR}/STAL_IX.json" "${SYSTMP}/STAL_IX.json"
+if [[ "$(jq -r '.[] | .pkg' "${TMPDIR}/STALIX.json" | wc -l)" -gt 1000 ]]; then
+  cp -fv "${TMPDIR}/STALIX.json" "${SYSTMP}/STALIX.json"
 else
   echo -e "\n[-] FATAL: Failed to Generate Stal/IX Metadata\n"
 fi
@@ -78,7 +78,7 @@ popd >/dev/null 2>&1
 
 #-------------------------------------------------------#
 ##Copy to "${GITHUB_WORKSPACE}/main/misc/data"
-if [ -s "${SYSTMP}/STAL_IX.json" ] &&\
+if [ -s "${SYSTMP}/STALIX.json" ] &&\
  [ -d "${GITHUB_WORKSPACE}" ] &&\
  [ "$(find "${GITHUB_WORKSPACE}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
  #chdir to Repo
@@ -86,8 +86,8 @@ if [ -s "${SYSTMP}/STAL_IX.json" ] &&\
  #Git pull
   git pull origin main --no-edit 2>/dev/null
  #Copy (GitHub)
-  cp -fv "${SYSTMP}/STAL_IX.json" "${GITHUB_WORKSPACE}/main/misc/data/STAL_IX.json"
+  cp -fv "${SYSTMP}/STALIX.json" "${GITHUB_WORKSPACE}/main/misc/data/STALIX.json"
  ##rClone
-  #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/STAL_IX.json" "r2:/meta/misc/STAL_IX.json" --checksum --check-first --user-agent="${USER_AGENT}"
+  #rclone copyto "${GITHUB_WORKSPACE}/main/misc/data/STALIX.json" "r2:/meta/misc/STALIX.json" --checksum --check-first --user-agent="${USER_AGENT}"
 fi
 #-------------------------------------------------------#

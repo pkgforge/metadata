@@ -350,7 +350,7 @@
   28K   │   ├── icon_database.png
   24K   │   ├── icon_config_multi.png
   20K   │   └── icon_json.png
- 268K   ├── GHCR_PKGS.json.zstd
+ 272K   ├── GHCR_PKGS.json.zstd
   28K   ├─┬ r2
   12K   │ ├─┬ scripts
  8.0K   │ │ └── sync_r2_mirror.sh

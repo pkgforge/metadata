@@ -201,6 +201,105 @@ jobs:
           sed -E "s~(https://soar\.pkgforge\.dev/gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g" -i "${GITHUB_WORKSPACE}/main/README.md"
         continue-on-error: true
 
+
+      - name: Generate Stats Data
+        run: |
+          #Presets
+          set +x ; set +e ; ulimit -S -s unlimited ; ulimit -f unlimited 2>/dev/null
+          #--------------#
+          compare_cache() {
+              local cache_data="$1"
+              local output_name="${2:-COMP_VER_cache.json}"
+              jq -s '
+                # Create lookup table from index data
+                (.[0] | map({(.pkg_id): .version}) | add) as $index_versions |                
+                .[1][] |
+                select(.pkg_id and ($index_versions[.pkg_id] // false)) |
+                {
+                  pkg: (.pkg_name + "#" + .pkg_id),
+                  pkgver: .version,
+                  upver: $index_versions[.pkg_id],
+                  build_date: .build_date
+                }
+              ' "${SYSTMP}/soarpkgs_INDEX.json" "${cache_data}" | 
+              jq -s 'sort_by(.pkg)' > "./${output_name}"
+          }
+          ##Bincache (aarch64-Linux)
+           pushd "$(mktemp -d)" &>/dev/null && \
+             compare_cache "${SYSTMP}/bincache_aarch64-Linux.json" "./COMP_VER_bincache_aarch64-Linux.json"
+             if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_bincache_aarch64-Linux.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
+               mv -fv "./COMP_VER_bincache_aarch64-Linux.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_bincache_aarch64-Linux.json"
+             fi
+           popd &>/dev/null
+          ##Bincache (x86_64-Linux)
+           pushd "$(mktemp -d)" &>/dev/null && \
+             compare_cache "${SYSTMP}/bincache_x86_64-Linux.json" "./COMP_VER_bincache_x86_64-Linux.json"
+             if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_bincache_x86_64-Linux.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
+               mv -fv "./COMP_VER_bincache_x86_64-Linux.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_bincache_x86_64-Linux.json"
+             fi
+           popd &>/dev/null
+          ##Pkgcache (aarch64-Linux)
+           pushd "$(mktemp -d)" &>/dev/null && \
+             compare_cache "${SYSTMP}/pkgcache_aarch64-Linux.json" "./COMP_VER_pkgcache_aarch64-Linux.json"
+             if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_pkgcache_aarch64-Linux.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
+               mv -fv "./COMP_VER_pkgcache_aarch64-Linux.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_pkgcache_aarch64-Linux.json"
+             fi
+           popd &>/dev/null
+          ##Pkgcache (x86_64-Linux)
+           pushd "$(mktemp -d)" &>/dev/null && \
+             compare_cache "${SYSTMP}/pkgcache_x86_64-Linux.json" "./COMP_VER_pkgcache_x86_64-Linux.json"
+             if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_pkgcache_x86_64-Linux.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
+               mv -fv "./COMP_VER_pkgcache_x86_64-Linux.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_pkgcache_x86_64-Linux.json"
+             fi
+           popd &>/dev/null
+          ##Merge 
+          pushd "$(mktemp -d)" &>/dev/null && \
+           jq -s '
+             (.[0] | map(. + {"host": "aarch64-Linux", "repo": "bincache"})) +
+             (.[1] | map(. + {"host": "x86_64-Linux", "repo": "bincache"})) +
+             (.[2] | map(. + {"host": "aarch64-Linux", "repo": "pkgcache"})) +
+             (.[3] | map(. + {"host": "x86_64-Linux", "repo": "pkgcache"})) | sort_by(.pkg)' \
+           "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_bincache_aarch64-Linux.json" \
+           "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_bincache_x86_64-Linux.json" \
+           "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_pkgcache_aarch64-Linux.json" \
+           "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_pkgcache_x86_64-Linux.json" |\
+           jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' |\
+           jq 'map(select(
+              .pkg != null and .pkg != "" and
+              .repo != null and .repo != "" and
+              .host != null and .host != "" and
+              .pkgver != null and .pkgver != "" and
+              .upver != null and .upver != "" and
+              .build_date != null and .build_date != ""
+           ))' | jq 'sort_by(.pkg)' | jq . > "./COMP_VER_CACHE.json"
+           if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_CACHE.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
+             mv -fv "./COMP_VER_CACHE.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json"
+           fi
+          ##Parse & Filter
+          pushd "$(mktemp -d)" &>/dev/null && \
+           jq '[.[] | select(.pkgver != .upver)] | sort_by(.build_date)' "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json" > "./COMP_VER_CACHE_OLD.json"
+           if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_CACHE_OLD.json" | wc -l | tr -cd '0-9')" -gt 2 ]]; then
+             mv -fv "./COMP_VER_CACHE_OLD.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE_OLD.json"
+           fi
+          ##Gen Markdown
+          {
+            echo "| Package | Current | Latest | Status |"
+            echo "|---------|---------|--------|--------|"
+            jq -r '.[] |
+              if .pkgver == .upver then
+                "| \(.pkg):\(.repo) (\(.host)) | \(.pkgver) | \(.upver) | ✅ Updated |"
+              else
+                "| \(.pkg):\(.repo) (\(.host)) | \(.pkgver) | \(.upver) | ⚠️ Outdated |"
+              end' "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json"
+          } 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/PKG_STATUS.md"
+          {
+            echo "| Package | Current | Latest | Built |"
+            echo "|---------|---------|--------|--------|"
+            cat "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json" |\
+            jq -r '.[] | "| \(.pkg):\(.repo) (\(.host)) | \(.pkgver) | \(.upver) | \(.build_date) |"'            
+          } 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.md"
+        continue-on-error: true
+
       - name: Get GHCR Package Metadata
         env:
           #GH_TOKEN: "${{ github.token }}"

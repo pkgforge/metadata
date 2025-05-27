@@ -17,7 +17,7 @@
  432K   │ │ ├── FLATPAK_APPS_INFO.txt
  312K   │ │ ├── PPKG.json
  236K   │ │ ├── FLATPAK_POPULAR.json
- 228K   │ │ ├── FLATPAK_TRENDING.json
+ 220K   │ │ ├── FLATPAK_TRENDING.json
   76K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
@@ -209,7 +209,7 @@
  4.0K   │   │ └── TOTAL.json
   32K   │   └─┬ scripts
   28K   │     └── gen_meta.sh
-  20M   ├─┬ soarpkgs
+  21M   ├─┬ soarpkgs
   20M   │ ├─┬ data
  2.5M   │ │ ├── INDEX.json
  2.0M   │ │ ├── OLD_bincache_x86_64-Linux.json
@@ -223,6 +223,7 @@
 1004K   │ │ ├── COMP_VER_CACHE.md
  728K   │ │ ├── pub_issues_binaries.txt
  636K   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
+ 624K   │ │ ├── COMP_VER_CACHE_OLD.md
  616K   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
  376K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
@@ -361,5 +362,6 @@
   12K   ├── README.md
  4.0K   ├── TOTAL_INSTALLABLE.json
  4.0K   ├── TOTAL_ALL.json
- 4.0K   └── LICENSE
+ 4.0K   ├── LICENSE
+   0B   └── PKG_STATUS_SUM.md
 ```

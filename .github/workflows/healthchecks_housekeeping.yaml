@@ -291,10 +291,9 @@ jobs:
            if jq -e 'all(.[]; to_entries[].value.packages > 10)' "./PKG_STATUS_SUM.json" &>/dev/null; then
             mv -fv "./PKG_STATUS_SUM.json" "${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.json"
            fi
-           cat "${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.json" | jq -r '\
-           "| 📦 Repository | 📊 Total Packages | ✅ Updated | ⚠️ Outdated | 💚 Healthy % | 🔴 Stale % |",
+           jq -r '"| 📦 Repository | 📊 Total Packages | ✅ Updated | ⚠️ Outdated | 💚 Healthy % | 🔴 Stale % |",
            "|---------------|-------------------|------------|-------------|-------------|------------|",
-           (.[] | to_entries[] | "| 🗂️ \(.key) | \(.value.packages) | ✅ \(.value.updated) | ⚠️ \(.value.outdated) | 💚 \(.value.healthy)% | 🔴 \(.value.stale)% |")' 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.md"
+           (.[] | to_entries[] | "| 🗂️ \(.key) | \(.value.packages) | ✅ \(.value.updated) | ⚠️ \(.value.outdated) | 💚 \(.value.healthy)% | 🔴 \(.value.stale)% |")' "${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.json" 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.md"
           ##Gen Markdown
           {
             echo "| Package | Current | Latest | Status |"

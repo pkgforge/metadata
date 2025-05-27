@@ -280,16 +280,15 @@ jobs:
            if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_CACHE_OLD.json" | wc -l | tr -cd '0-9')" -gt 2 ]]; then
              mv -fv "./COMP_VER_CACHE_OLD.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE_OLD.json"
            fi
-           cat "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json" | jq \
-           'group_by(.repo) | map({
+           jq 'group_by(.repo) | map({
               (.[0].repo): {
                 "packages": length,
                 "updated": ([.[] | select(.pkgver == .upver)] | length),
                 "outdated": ([.[] | select(.pkgver != .upver)] | length),
                 "healthy": (([.[] | select(.pkgver == .upver)] | length) / length * 100 | round),
                 "stale": (100 - (([.[] | select(.pkgver == .upver)] | length) / length * 100 | round))
-              }})' > "./PKG_STATUS_SUM.json"
-           if jq -e 'all(.[]; to_entries[].value.packages > 10)' "./PKG_STATUS_SUM.json" >/dev/null 2>&1; then
+              }})' "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json" > "./PKG_STATUS_SUM.json"
+           if jq -e 'all(.[]; to_entries[].value.packages > 10)' "./PKG_STATUS_SUM.json" &>/dev/null; then
             mv -fv "./PKG_STATUS_SUM.json" "${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.json"
            fi
            cat "${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.json" | jq -r '\

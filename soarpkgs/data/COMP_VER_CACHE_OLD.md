@@ -1764,7 +1764,7 @@
 | hugo#github.com.gohugoio.hugo:bincache (aarch64-Linux) | HEAD-d78d4cf-250311T210349 | HEAD-eaf5ace-250526T212619 | 2025-03-12T04:07:36Z |
 | hyperfine#github.com.sharkdp.hyperfine:bincache (aarch64-Linux) | HEAD-92cc4f2-250309T192722 | HEAD-3cedcc3-250314T210411 | 2025-03-12T04:13:02Z |
 | procs#github.com.dalance.procs:bincache (x86_64-Linux) | HEAD-154d733-250311T205134 | HEAD-1935f1d-250527T094905 | 2025-03-12T04:14:12Z |
-| protocurl#github.com.qaware.protocurl.source:bincache (x86_64-Linux) | HEAD-f0d3892-250311T151451 | HEAD-2cc592c-250514T135000 | 2025-03-12T04:17:03Z |
+| protocurl#github.com.qaware.protocurl.source:bincache (x86_64-Linux) | HEAD-f0d3892-250311T151451 | HEAD-46d24b3-250527T085642 | 2025-03-12T04:17:03Z |
 | jd#github.com.josephburnett.jd.source:bincache (aarch64-Linux) | HEAD-1bac524-250309T151515 | HEAD-286f515-250507T190323 | 2025-03-12T04:18:47Z |
 | pwdsafety#github.com.edoardottt.pwdsafety.source:bincache (x86_64-Linux) | HEAD-0f97555-250310T212548 | HEAD-2e69457-250513T091515 | 2025-03-12T04:19:59Z |
 | jq#github.com.jqlang.jq.source:bincache (aarch64-Linux) | HEAD-4b84a6e-250310T221749 | HEAD-aaace54-250523T212530 | 2025-03-12T04:23:50Z |
@@ -1838,7 +1838,7 @@
 | oras#github.com.oras-project.oras:bincache (aarch64-Linux) | HEAD-3b495b1-250311T110855 | HEAD-a008df7-250526T165705 | 2025-03-12T07:36:46Z |
 | ov#github.com.noborus.ov:bincache (aarch64-Linux) | HEAD-2a24ed8-250311T093201 | HEAD-a8a394d-250527T082145 | 2025-03-12T07:41:19Z |
 | procs#github.com.dalance.procs:bincache (aarch64-Linux) | HEAD-154d733-250311T205134 | HEAD-1935f1d-250527T094905 | 2025-03-12T07:57:36Z |
-| protocurl#github.com.qaware.protocurl.source:bincache (aarch64-Linux) | HEAD-f0d3892-250311T151451 | HEAD-2cc592c-250514T135000 | 2025-03-12T08:00:52Z |
+| protocurl#github.com.qaware.protocurl.source:bincache (aarch64-Linux) | HEAD-f0d3892-250311T151451 | HEAD-46d24b3-250527T085642 | 2025-03-12T08:00:52Z |
 | pwdsafety#github.com.edoardottt.pwdsafety.source:bincache (aarch64-Linux) | HEAD-0f97555-250310T212548 | HEAD-2e69457-250513T091515 | 2025-03-12T08:04:15Z |
 | qsv#github.com.dathere.qsv:bincache (aarch64-Linux) | HEAD-5d3ce21-250311T224119 | HEAD-1e3272c-250526T221557 | 2025-03-12T08:25:31Z |
 | regbot#github.com.regclient.regclient:bincache (aarch64-Linux) | HEAD-0364600-250311T110912 | HEAD-5483ed8-250518T074906 | 2025-03-12T08:32:48Z |
@@ -2290,8 +2290,8 @@
 | keep-sorted#github.com.google.keep-sorted.source:bincache (aarch64-Linux) | HEAD-1e5a257-250401T160311 | HEAD-3f9cf7d-250408T154131 | 2025-04-07T14:56:14Z |
 | nodepass#github.com.yosebyte.nodepass.source:bincache (x86_64-Linux) | HEAD-751cb3a-250407T174817 | HEAD-5f4c78c-250526T194344 | 2025-04-07T14:58:12Z |
 | nodepass#github.com.yosebyte.nodepass.source:bincache (aarch64-Linux) | HEAD-751cb3a-250407T174817 | HEAD-5f4c78c-250526T194344 | 2025-04-07T14:59:52Z |
-| lazyjournal#github.com.Lifailon.lazyjournal.source:bincache (x86_64-Linux) | HEAD-6b5344e-250407T124142 | HEAD-4231781-250522T125533 | 2025-04-07T15:00:08Z |
-| lazyjournal#github.com.Lifailon.lazyjournal.source:bincache (aarch64-Linux) | HEAD-6b5344e-250407T124142 | HEAD-4231781-250522T125533 | 2025-04-07T15:02:19Z |
+| lazyjournal#github.com.Lifailon.lazyjournal.source:bincache (x86_64-Linux) | HEAD-6b5344e-250407T124142 | HEAD-53271e6-250527T095253 | 2025-04-07T15:00:08Z |
+| lazyjournal#github.com.Lifailon.lazyjournal.source:bincache (aarch64-Linux) | HEAD-6b5344e-250407T124142 | HEAD-53271e6-250527T095253 | 2025-04-07T15:02:19Z |
 | urx#github.com.hahwul.urx.source:bincache (x86_64-Linux) | HEAD-dd9de40-250406T185650 | HEAD-8f18408-250522T161850 | 2025-04-07T15:03:15Z |
 | proxy-ns#github.com.OkamiW.proxy-ns.source:bincache (x86_64-Linux) | HEAD-27eba2c-250207T194521 | HEAD-5bf936e-250510T161418 | 2025-04-07T15:03:26Z |
 | urx#github.com.hahwul.urx.source:bincache (aarch64-Linux) | HEAD-dd9de40-250406T185650 | HEAD-8f18408-250522T161850 | 2025-04-07T15:03:32Z |
@@ -4435,7 +4435,7 @@
 | netbird-relay#github.com.netbirdio.netbird.source:bincache (x86_64-Linux) | HEAD-fd2a21c-250411T104359 | HEAD-670446d-250525T165734 | 2025-04-11T14:00:29Z |
 | netbird-signal#github.com.netbirdio.netbird.source:bincache (x86_64-Linux) | HEAD-fd2a21c-250411T104359 | HEAD-670446d-250525T165734 | 2025-04-11T14:00:30Z |
 | powerstat#github.com.ColinIanKing.powerstat.source:bincache (x86_64-Linux) | HEAD-2681f6f-250226T132145 | HEAD-ce69493-250507T122438 | 2025-04-11T14:02:26Z |
-| stress-ng#github.com.ColinIanKing.stress-ng.source:bincache (aarch64-Linux) | HEAD-9d08ba3-250410T212249 | HEAD-5e76379-250526T130516 | 2025-04-11T14:02:49Z |
+| stress-ng#github.com.ColinIanKing.stress-ng.source:bincache (aarch64-Linux) | HEAD-9d08ba3-250410T212249 | HEAD-4d6a6ed-250527T081634 | 2025-04-11T14:02:49Z |
 | netbird#github.com.netbirdio.netbird.source:bincache (aarch64-Linux) | HEAD-fd2a21c-250411T104359 | HEAD-670446d-250525T165734 | 2025-04-11T14:02:53Z |
 | netbird-mgmt#github.com.netbirdio.netbird.source:bincache (aarch64-Linux) | HEAD-fd2a21c-250411T104359 | HEAD-670446d-250525T165734 | 2025-04-11T14:02:56Z |
 | netbird-relay#github.com.netbirdio.netbird.source:bincache (aarch64-Linux) | HEAD-fd2a21c-250411T104359 | HEAD-670446d-250525T165734 | 2025-04-11T14:02:57Z |
@@ -4443,7 +4443,7 @@
 | powerstat#github.com.ColinIanKing.powerstat.source:bincache (aarch64-Linux) | HEAD-2681f6f-250226T132145 | HEAD-ce69493-250507T122438 | 2025-04-11T14:03:53Z |
 | tinyxxd#github.com.xyproto.tinyxxd.source:bincache (x86_64-Linux) | HEAD-a4b670c-241119T194152 | HEAD-0527410-250510T164014 | 2025-04-11T14:06:50Z |
 | tinyxxd#github.com.xyproto.tinyxxd.source:bincache (aarch64-Linux) | HEAD-a4b670c-241119T194152 | HEAD-0527410-250510T164014 | 2025-04-11T14:07:20Z |
-| stress-ng#github.com.ColinIanKing.stress-ng.source:bincache (x86_64-Linux) | HEAD-9d08ba3-250410T212249 | HEAD-5e76379-250526T130516 | 2025-04-11T14:10:07Z |
+| stress-ng#github.com.ColinIanKing.stress-ng.source:bincache (x86_64-Linux) | HEAD-9d08ba3-250410T212249 | HEAD-4d6a6ed-250527T081634 | 2025-04-11T14:10:07Z |
 | archivemount#nixpkgs.archivemount:bincache (aarch64-Linux) | 1a | 1b | 2025-04-12T06:28:59Z |
 | archivemount#nixpkgs.archivemount:bincache (x86_64-Linux) | 1a | 1b | 2025-04-12T06:29:30Z |
 | faked#ppkg.fakeroot:bincache (x86_64-Linux) | 1.37 | 1.37.1.1 | 2025-04-12T07:46:17Z |

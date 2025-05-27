@@ -201,7 +201,6 @@ jobs:
           sed -E "s~(https://soar\.pkgforge\.dev/gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g" -i "${GITHUB_WORKSPACE}/main/README.md"
         continue-on-error: true
 
-
       - name: Generate Stats Data
         run: |
           #Presets
@@ -281,6 +280,25 @@ jobs:
            if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_CACHE_OLD.json" | wc -l | tr -cd '0-9')" -gt 2 ]]; then
              mv -fv "./COMP_VER_CACHE_OLD.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE_OLD.json"
            fi
+           cat "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json" |\ 
+           jq 'group_by(.repo) | map({
+              (.[0].repo): {
+                "packages": length,
+                "updated": ([.[] | select(.pkgver == .upver)] | length),
+                "outdated": ([.[] | select(.pkgver != .upver)] | length),
+                "healthy": (([.[] | select(.pkgver == .upver)] | length) / length * 100 | round),
+                "stale": (100 - (([.[] | select(.pkgver == .upver)] | length) / length * 100 | round))
+              }
+            })' > "./PKG_STATUS_SUM.json"
+           if jq -e 'all(.[]; to_entries[].value.packages > 10)' "./PKG_STATUS_SUM.json" >/dev/null 2>&1; then
+            mv -fv "./PKG_STATUS_SUM.json" "${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.json"
+           fi
+           cat "${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.json" | jq -r \
+           '
+           "| 📦 Repository | 📊 Total Packages | ✅ Updated | ⚠️ Outdated | 💚 Healthy % | 🔴 Stale % |",
+           "|---------------|-------------------|------------|-------------|-------------|------------|",
+           (.[] | to_entries[] | "| 🗂️ \(.key) | \(.value.packages) | ✅ \(.value.updated) | ⚠️ \(.value.outdated) | 💚 \(.value.healthy)% | 🔴 \(.value.stale)% |")
+           ' 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.md"
           ##Gen Markdown
           {
             echo "| Package | Current | Latest | Status |"
@@ -298,6 +316,12 @@ jobs:
             cat "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json" |\
             jq -r '.[] | "| \(.pkg):\(.repo) (\(.host)) | \(.pkgver) | \(.upver) | \(.build_date) |"'            
           } 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.md"
+          {
+            echo "| Package | Current | Latest | Built |"
+            echo "|---------|---------|--------|--------|"
+            cat "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE_OLD.json" |\
+            jq -r '.[] | "| \(.pkg):\(.repo) (\(.host)) | \(.pkgver) | \(.upver) | \(.build_date) |"'
+          } 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE_OLD.md"
         continue-on-error: true
 
       - name: Get GHCR Package Metadata

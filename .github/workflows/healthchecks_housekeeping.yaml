@@ -124,40 +124,55 @@ jobs:
           #Presets
           set +x ; set +e ; ulimit -S -s unlimited ; ulimit -f unlimited 2>/dev/null
           #--------------#
+          ##Get Data
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json" -o "${SYSTMP}/bincache_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json" -o "${SYSTMP}/bincache_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/am/aarch64-Linux.json" -o "${SYSTMP}/am_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/am/x86_64-Linux.json" -o "${SYSTMP}/am_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/appimage.github.io/aarch64-Linux.json" -o "${SYSTMP}/appimage_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/appimage.github.io/x86_64-Linux.json" -o "${SYSTMP}/appimage_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/appimagehub/aarch64-Linux.json" -o "${SYSTMP}/appimagehub_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/appimagehub/x86_64-Linux.json" -o "${SYSTMP}/appimagehub_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/cargo-bins/aarch64-Linux.json" -o "${SYSTMP}/cargo-bins_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/cargo-bins/x86_64-Linux.json" -o "${SYSTMP}/cargo-bins_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json" -o "${SYSTMP}/pkgcache_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json" -o "${SYSTMP}/pkgcache_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" -o "${SYSTMP}/soarpkgs_INDEX.json" &
+          wait ; echo
           ##Total (Bincache)
           jq -n '[
-           {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/bincache/x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},
-           {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/bincache/aarch64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'}
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/bincache_x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/bincache_aarch64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json"
           ##Total (External/AM)
           jq -n '[
-           {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/am/x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
-           {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/am/aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/am_x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/am_aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json"
           ##Total (External/appimage.github.io)
           jq -n '[
-           {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/appimage.github.io/x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
-           {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/appimage.github.io/aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/appimage_x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/appimage_aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json"
           ##Total (External/appimagehub)
           jq -n '[
-           {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/appimagehub/x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
-           {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/appimagehub/aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/appimagehub_x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/appimagehub_aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/appimagehub/data/TOTAL.json"
           ##Total (External/cargo-bins)
           jq -n '[
-           {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/cargo-bins/x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
-           {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/external/cargo-bins/aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/cargo-bins_x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/cargo-bins_aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/cargo-bins/data/TOTAL.json"
           ##Total (pkgcache)
           jq -n '[
-           {host: "x86_64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},
-           {host: "aarch64-Linux", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'}
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/pkgcache_x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/pkgcache_aarch64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json"
           ##Total (soarpkgs)
           jq -n '[
-           {type: "binaries", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/soarpkgs/INDEX.json' | jq -r '.[] | select(.build_script | contains("binaries")) | .pkg' | wc -l)"'},
-           {type: "packages", total: '"$(curl -qfsSL 'https://meta.pkgforge.dev/soarpkgs/INDEX.json' | jq -r '.[] | select(.build_script | contains("packages")) | .pkg' | wc -l)"'}
+           {type: "binaries", total: '"$(cat '/tmp/soarpkgs_INDEX.json' | jq -r '.[] | select(.build_script | contains("binaries")) | .pkg' | wc -l)"'},
+           {type: "packages", total: '"$(cat '/tmp/soarpkgs_INDEX.json' | jq -r '.[] | select(.build_script | contains("packages")) | .pkg' | wc -l)"'}
           ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL.json"
           ##Total ALL
           jq -n '[inputs | .[] | select(.sum == "total").total] | add' "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL_CACHE.txt"

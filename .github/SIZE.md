@@ -16,7 +16,7 @@
  464K   │ │ ├── FLATPAK_APPS_INFO.json
  432K   │ │ ├── FLATPAK_APPS_INFO.txt
  312K   │ │ ├── PPKG.json
- 236K   │ │ ├── FLATPAK_POPULAR.json
+ 232K   │ │ ├── FLATPAK_POPULAR.json
  220K   │ │ ├── FLATPAK_TRENDING.json
   76K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
@@ -99,7 +99,7 @@
  256K   │ │ │ ├── x86_64-Linux.db.xz
  236K   │ │ │ ├── x86_64-Linux.json.zstd
  224K   │ │ │ ├── x86_64-Linux.json.xz
- 144K   │ │ │ ├── aarch64-Linux.db.cba
+ 140K   │ │ │ ├── aarch64-Linux.db.cba
  136K   │ │ │ ├── aarch64-Linux.json.cba
  116K   │ │ │ ├── aarch64-Linux.db.zstd
  112K   │ │ │ ├── aarch64-Linux.db.xz
@@ -222,11 +222,11 @@
 1004K   │ │ ├── COMP_VER_CACHE.md
  844K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  788K   │ │ ├── DIFF_bincache_x86_64-Linux.json
- 756K   │ │ ├── COMP_VER_CACHE_OLD.json
+ 760K   │ │ ├── COMP_VER_CACHE_OLD.json
  728K   │ │ ├── pub_issues_binaries.txt
  376K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
- 292K   │ │ ├── COMP_VER_CACHE_OLD.md
+ 296K   │ │ ├── COMP_VER_CACHE_OLD.md
  288K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
  240K   │ │ ├── INDEX.db.cba
  236K   │ │ ├── GH_REPO.md

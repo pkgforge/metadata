@@ -318,7 +318,28 @@ popd >/dev/null 2>&1
 find "${TMPDIR}/data/" -type f -name '*.json' -exec bash -c 'jq empty "{}" 2>/dev/null && cat "{}"' \; | jq -s 'sort_by(.pkg)' > "${TMPDIR}/appimage.json.raw"
 #sanity check urls
 sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/appimage.json.raw"
-cat "${TMPDIR}/appimage.json.raw" | jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' |\
+cat "${TMPDIR}/appimage.json.raw" | jq \
+   'map(
+    . + {
+      external: (if (.note // [] | any(test("\\[EXTERNAL\\]"))) then "true" else "false" end),
+      bundle: (if (.pkg_type == "archive" and (.note // [] | any(test("\\[BUNDLE\\]")))) then "true" else "false" end),
+      soar_syms: (if (.pkg_type == "archive" and (.note // [] | any(test("\\[BUNDLE\\]")))) then "true" else "false" end),
+      bundle_type: (
+        if (.pkg_type == "archive" and (.note // [] | any(test("tar\\.gz")))) then "tar+gz"
+        elif (.pkg_type == "archive" and (.note // [] | any(test("tar\\.xz")))) then "tar+xz"
+        elif (.pkg_type == "archive" and (.note // [] | any(test("tar\\.zst")))) then "tar+zstd"
+        elif (.pkg_type == "archive" and (.note // [] | any(test("\\[BUNDLE\\]"))) and (.note // [] | any(test("tar\\.(gz|xz|zst)")) | not)) then "tar"
+        else ""
+        end
+      ),
+      deprecated: (if (.note // [] | any(test("\\[DEPRECATED\\]"))) then "true" else "false" end),
+      desktop_integration: (if (.note // [] | any(test("\\[NO_DESKTOP_INTEGRATION\\]"))) then "false" else "true" end),
+      installable: (if (.note // [] | any(test("\\[NO_INSTALL\\]"))) then "false" else "true" end),
+      portable: (if (.note // [] | any(test("\\[PORTABLE\\]"))) then "true" else "false" end),
+      recurse_provides: (if (.note // [] | any(test("\\[NO_RECURSE_PROVIDES\\]"))) then "false" else "false" end),
+      trusted: "false"
+    })' | jq 'map(to_entries | sort_by(.key) | from_entries)' |\
+ jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' |\
  jq 'map(select(
     .pkg != null and .pkg != "" and
     .pkg_id != null and .pkg_id != "" and

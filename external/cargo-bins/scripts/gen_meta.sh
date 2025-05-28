@@ -217,7 +217,7 @@ generate_meta()
         pkg: ($PKG_NAME | tostring),
         pkg_id: ($PKG_ID | gsub("[[:space:]]"; "") | gsub("^\\.+|\\.+$"; "")),
         pkg_name: ($PKG_NAME | ascii_downcase | gsub("[[:space:]]"; "")),
-        pkg_type: ("dynamic"),
+        pkg_type: ("archive"),
         pkg_webpage: ($PKG_WEBPAGE | tostring),
         build_date: ($BUILD_DATE | tostring),
         category: (.categories // []),
@@ -307,7 +307,20 @@ jq '
   map(.value) | sort_by(.pkg)' | jq . > "${TMPDIR}/cargo-bins.json.tmp"
 #sanity check urls
 sed -E 's~\bhttps?:/{1,2}\b~https://~g' -i "${TMPDIR}/cargo-bins.json.tmp"
-cat "${TMPDIR}/cargo-bins.json.tmp" | jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' |\
+cat "${TMPDIR}/cargo-bins.json.tmp" | jq \
+   'map(
+    . + {
+      external: (if (.note // [] | any(test("\\[EXTERNAL\\]"))) then "true" else "false" end),
+      bundle: "false",
+      soar_syms: "false",
+      deprecated: (if (.note // [] | any(test("\\[DEPRECATED\\]"))) then "true" else "false" end),
+      desktop_integration: "false",
+      installable: (if (.note // [] | any(test("\\[NO_INSTALL\\]"))) then "false" else "true" end),
+      portable: (if (.note // [] | any(test("\\[PORTABLE\\]"))) then "true" else "false" end),
+      recurse_provides: (if (.note // [] | any(test("\\[NO_RECURSE_PROVIDES\\]"))) then "false" else "true" end),
+      trusted: "true"
+    })' | jq 'map(to_entries | sort_by(.key) | from_entries)' |\
+ jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' |\
  jq 'map(select(
     .pkg != null and .pkg != "" and
     .pkg_id != null and .pkg_id != "" and

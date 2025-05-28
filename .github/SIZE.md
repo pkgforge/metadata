@@ -1,5 +1,5 @@
 ```mathematica
- 434M └─┬ main
+ 436M └─┬ main
  176M   ├─┬ misc
  176M   │ ├─┬ data
   71M   │ │ ├── ARCHLINUX.json
@@ -116,8 +116,8 @@
  3.0M   │ │ │ ├── x86_64-Linux.db
  1.6M   │ │ │ ├── aarch64-Linux.json
  1.2M   │ │ │ ├── aarch64-Linux.db
- 324K   │ │ │ ├── x86_64-Linux.db.cba
- 304K   │ │ │ ├── x86_64-Linux.json.cba
+ 332K   │ │ │ ├── x86_64-Linux.db.cba
+ 308K   │ │ │ ├── x86_64-Linux.json.cba
  264K   │ │ │ ├── x86_64-Linux.db.zstd
  252K   │ │ │ ├── x86_64-Linux.db.xz
  232K   │ │ │ ├── x86_64-Linux.json.zstd
@@ -209,21 +209,21 @@
  4.0K   │   │ └── TOTAL.json
   32K   │   └─┬ scripts
   28K   │     └── gen_meta.sh
-  19M   ├─┬ soarpkgs
-  18M   │ ├─┬ data
+  21M   ├─┬ soarpkgs
+  20M   │ ├─┬ data
+ 2.6M   │ │ ├── COMP_VER_CACHE.json
  2.5M   │ │ ├── INDEX.json
  1.7M   │ │ ├── BACKAGE.json
  1.7M   │ │ ├── OLD_bincache_aarch64-Linux.json
- 1.7M   │ │ ├── COMP_VER_CACHE.json
  1.7M   │ │ ├── OLD_bincache_x86_64-Linux.json
  1.4M   │ │ ├── INDEX.db
+ 1.0M   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
+ 1.0M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
 1004K   │ │ ├── COMP_VER_CACHE.md
- 824K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 760K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 832K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 768K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 748K   │ │ ├── COMP_VER_CACHE_OLD.json
  728K   │ │ ├── pub_issues_binaries.txt
- 636K   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
- 616K   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
- 496K   │ │ ├── COMP_VER_CACHE_OLD.json
  376K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
  292K   │ │ ├── COMP_VER_CACHE_OLD.md
@@ -235,11 +235,11 @@
  192K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  188K   │ │ ├── INDEX.db.zstd
  176K   │ │ ├── INDEX.db.xz
- 132K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
-  76K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+ 120K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+  80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
+  64K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   52K   │ │ ├── URLS.txt
-  48K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
-  28K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
+  48K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
   20K   │ │ ├── DIFF_bincache.json
  8.0K   │ │ ├── DIFF_pkgcache.json
  4.0K   │ │ ├── minisign.pub
@@ -280,9 +280,9 @@
  1.1M   │ │ ├── x86_64-Linux.sdb
  1.1M   │ │ ├── x86_64-Linux.json
  684K   │ │ ├── aarch64-Linux.db
- 616K   │ │ ├── aarch64-Linux.json
+ 620K   │ │ ├── aarch64-Linux.json
  612K   │ │ ├── aarch64-Linux.sdb
- 148K   │ │ ├── x86_64-Linux.sdb.cba
+ 144K   │ │ ├── x86_64-Linux.sdb.cba
  140K   │ │ ├── x86_64-Linux.db.cba
  124K   │ │ ├── x86_64-Linux.sdb.zstd
  124K   │ │ ├── x86_64-Linux.json.cba

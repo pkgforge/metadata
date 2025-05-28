@@ -6,4 +6,4 @@
 | [KathanP19](https://github.com/KathanP19) | [Gxss](https://github.com/KathanP19/Gxss) | 577 | A tool to check a bunch of URLs that contain reflecting params. | 2025-05-25T10:44:18Z |
 | [lc](https://github.com/lc) | [subjs](https://github.com/lc/subjs) | 773 | Fetches javascript file from a list of URLS or subdomains. | 2025-05-19T17:31:57Z |
 | [svenstaro](https://github.com/svenstaro) | [vmexec](https://github.com/svenstaro/vmexec) | 25 | 🔧 Run a single command in a speedy virtual machine with zero-setup THE PROJECT MOVED TO https://gitlab.archlinux.org/archlinux/vmexec | 2025-05-21T06:48:32Z |
-| [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1973 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-05-17T16:23:06Z |
+| [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1974 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-05-28T13:42:35Z |

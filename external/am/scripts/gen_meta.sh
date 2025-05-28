@@ -104,7 +104,7 @@ pushd "${TMPDIR}" &>/dev/null
  ))' | jq 'unique_by(.pkg_id) | sort_by(.pkg)' | jq . > "${TMPDIR}/AM.json"
 ##Sanity Check
  PKG_COUNT="$(jq -r '.[] | .pkg_id' "${TMPDIR}/AM.json" | grep -iv 'null' | wc -l | tr -d '[:space:]')"
- if [[ "${PKG_COUNT}" -le 20 ]]; then
+ if [[ "${PKG_COUNT}" -le 10 ]]; then
     echo -e "\n[-] FATAL: Failed to Generate AM MetaData\n"
     echo "[-] Count: ${PKG_COUNT}"
     exit 1

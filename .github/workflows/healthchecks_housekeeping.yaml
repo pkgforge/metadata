@@ -218,7 +218,8 @@ jobs:
                   pkg: (.pkg_name + "#" + .pkg_id),
                   pkgver: .version,
                   upver: $index_versions[.pkg_id],
-                  build_date: .build_date
+                  build_date: .build_date,
+                  build_script: .build_script
                 }
               ' "${SYSTMP}/soarpkgs_INDEX.json" "${cache_data}" | 
               jq -s 'sort_by(.pkg)' > "./${output_name}"
@@ -269,7 +270,8 @@ jobs:
               .host != null and .host != "" and
               .pkgver != null and .pkgver != "" and
               .upver != null and .upver != "" and
-              .build_date != null and .build_date != ""
+              .build_date != null and .build_date != "" and
+              .build_script != null and .build_script != ""
            ))' | jq 'sort_by(.pkg)' | jq . > "./COMP_VER_CACHE.json"
            if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_CACHE.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
              mv -fv "./COMP_VER_CACHE.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json"

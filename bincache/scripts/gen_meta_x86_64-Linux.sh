@@ -519,7 +519,7 @@ jq '
   (map(select(.download_count != -1)) | sort_by(.rank, .pkg)) as $valid_entries |
   (map(select(.download_count == -1)) | sort_by(.pkg)) as $invalid_entries |
   ($valid_entries + $invalid_entries) | to_entries | map(.value.rank = (.key + 1 | tostring)) |
-  map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' |\
+  map(.value) | sort_by(.pkg)' | jq '.[] | .download_count |= tostring' | jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq -s 'if type == "array" then . else [.] end' | jq 'map(to_entries | sort_by(.key) | from_entries)' |\
   jq 'map(select(
      .pkg != null and .pkg != "" and
      .pkg_id != null and .pkg_id != "" and

@@ -631,8 +631,12 @@
 | warp#github.com.minio.warp:bincache (x86_64-Linux) | HEAD-db05e44-250224T143041 | HEAD-4736827-250518T102550 | 2025-02-26T02:02:57Z |
 | ipasd#github.com.iineva.ipa-server:bincache (x86_64-Linux) | HEAD-9249069-250226T225940 | HEAD-197db0f-250523T004649 | 2025-03-01T01:53:51Z |
 | ipa-server#github.com.iineva.ipa-server:bincache (x86_64-Linux) | HEAD-9249069-250226T225940 | HEAD-197db0f-250523T004649 | 2025-03-01T01:53:54Z |
+| iperf#nixpkgs.iperf3:bincache (x86_64-Linux) | 3.18 | 3.19 | 2025-03-01T01:54:51Z |
+| iperf3#nixpkgs.iperf3:bincache (x86_64-Linux) | 3.18 | 3.19 | 2025-03-01T01:54:53Z |
 | ipasd#github.com.iineva.ipa-server:bincache (aarch64-Linux) | HEAD-9249069-250226T225940 | HEAD-197db0f-250523T004649 | 2025-03-01T01:57:21Z |
 | ipa-server#github.com.iineva.ipa-server:bincache (aarch64-Linux) | HEAD-9249069-250226T225940 | HEAD-197db0f-250523T004649 | 2025-03-01T01:57:38Z |
+| iperf#nixpkgs.iperf3:bincache (aarch64-Linux) | 3.18 | 3.19 | 2025-03-01T01:59:30Z |
+| iperf3#nixpkgs.iperf3:bincache (aarch64-Linux) | 3.18 | 3.19 | 2025-03-01T01:59:39Z |
 | mirrorbits#github.com.etix.mirrorbits:bincache (x86_64-Linux) | HEAD-178f979-250228T122353 | HEAD-dbf532a-250402T182043 | 2025-03-01T02:57:07Z |
 | netmaker#github.com.gravitl.netmaker:bincache (x86_64-Linux) | HEAD-06484ad-250228T122105 | HEAD-35ddfc7-250520T091746 | 2025-03-01T03:20:56Z |
 | nmctl#github.com.gravitl.netmaker:bincache (x86_64-Linux) | HEAD-06484ad-250228T122105 | HEAD-35ddfc7-250520T091746 | 2025-03-01T03:21:12Z |
@@ -860,10 +864,10 @@
 | mdq#github.com.yshavit.mdq.source:bincache (x86_64-Linux) | HEAD-e022479-250304T233919 | HEAD-14eed27-250525T015225 | 2025-03-05T20:11:41Z |
 | ncdu#dev.yorhel.nl.ncdu:bincache (x86_64-Linux) | v2.8 | v2.8.2 | 2025-03-05T20:17:20Z |
 | ncdu#dev.yorhel.nl.ncdu:bincache (aarch64-Linux) | v2.8 | v2.8.2 | 2025-03-05T20:18:08Z |
-| mieru#github.com.enfein.mieru.source:bincache (x86_64-Linux) | HEAD-1b09548-250303T220152 | HEAD-5cdea0a-250518T220324 | 2025-03-06T10:28:17Z |
+| mieru#github.com.enfein.mieru.source:bincache (x86_64-Linux) | HEAD-1b09548-250303T220152 | HEAD-a7bfb5f-250528T045759 | 2025-03-06T10:28:17Z |
 | ligolo-proxy#github.com.nicocha30.ligolo-ng.source:bincache (x86_64-Linux) | HEAD-9c75364-250222T144349 | HEAD-82bec5b-250524T210250 | 2025-03-06T10:28:19Z |
 | ligolo-proxy#github.com.nicocha30.ligolo-ng.source:bincache (aarch64-Linux) | HEAD-9c75364-250222T144349 | HEAD-82bec5b-250524T210250 | 2025-03-06T10:28:57Z |
-| mieru#github.com.enfein.mieru.source:bincache (aarch64-Linux) | HEAD-1b09548-250303T220152 | HEAD-5cdea0a-250518T220324 | 2025-03-06T10:29:28Z |
+| mieru#github.com.enfein.mieru.source:bincache (aarch64-Linux) | HEAD-1b09548-250303T220152 | HEAD-a7bfb5f-250528T045759 | 2025-03-06T10:29:28Z |
 | reverse-ssh-client#github.com.NHAS.reverse_ssh.source:bincache (aarch64-Linux) | HEAD-71420af-250131T161540 | HEAD-d042bc4-250519T220906 | 2025-03-06T10:31:06Z |
 | reverse-ssh-server#github.com.NHAS.reverse_ssh.source:bincache (aarch64-Linux) | HEAD-71420af-250131T161540 | HEAD-d042bc4-250519T220906 | 2025-03-06T10:31:07Z |
 | reverse-ssh-client#github.com.NHAS.reverse_ssh.source:bincache (x86_64-Linux) | HEAD-71420af-250131T161540 | HEAD-d042bc4-250519T220906 | 2025-03-06T10:33:54Z |
@@ -2245,3 +2249,11 @@
 | krita#gitlab.com.krita.krita.next:pkgcache (x86_64-Linux) | 2025-05-26 | 2025-05-27 | 2025-05-27T19:13:02Z |
 | yt-dlp#sharun.wrappe.source.yt-dlp:pkgcache (x86_64-Linux) | HEAD-f7bbf5a-250526T225443 | HEAD-cc749a8-250527T231158 | 2025-05-27T19:29:37Z |
 | yt-dlp#sharun.wrappe.source.yt-dlp:pkgcache (aarch64-Linux) | HEAD-f7bbf5a-250526T225443 | HEAD-cc749a8-250527T231158 | 2025-05-27T19:29:40Z |
+| soar#github.com.pkgforge.soar.glibc:bincache (x86_64-Linux) | HEAD-9f15193-250526T182922 | HEAD-6ee0954-250528T101512 | 2025-05-27T23:50:12Z |
+| soar#github.com.pkgforge.soar.glibc-v3:bincache (x86_64-Linux) | HEAD-9f15193-250526T182922 | HEAD-6ee0954-250528T101512 | 2025-05-27T23:50:50Z |
+| soar#github.com.pkgforge.soar.glibc:bincache (aarch64-Linux) | HEAD-9f15193-250526T182922 | HEAD-6ee0954-250528T101512 | 2025-05-27T23:51:11Z |
+| soar#github.com.pkgforge.soar.glibc-v4:bincache (x86_64-Linux) | HEAD-9f15193-250526T182922 | HEAD-6ee0954-250528T101512 | 2025-05-27T23:51:29Z |
+| soar#github.com.pkgforge.soar.musl:bincache (x86_64-Linux) | HEAD-9f15193-250526T182922 | HEAD-6ee0954-250528T101512 | 2025-05-27T23:52:03Z |
+| soar#github.com.pkgforge.soar.musl-v4:bincache (x86_64-Linux) | HEAD-9f15193-250526T182922 | HEAD-6ee0954-250528T101512 | 2025-05-27T23:53:02Z |
+| soar#github.com.pkgforge.soar.musl:bincache (aarch64-Linux) | HEAD-9f15193-250526T182922 | HEAD-6ee0954-250528T101512 | 2025-05-27T23:53:04Z |
+| soar#github.com.pkgforge.soar.musl-v3:bincache (x86_64-Linux) | HEAD-9f15193-250526T182922 | HEAD-6ee0954-250528T101512 | 2025-05-27T23:53:59Z |

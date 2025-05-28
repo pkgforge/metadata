@@ -126,6 +126,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "altair",
+    "pkg_family": "altair",
+    "pkg_id": "github.com.altair-graphql.altair",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/graphql-altair/altair/altair",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/altair/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A beautiful feature-rich GraphQL Client",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "altair",
+          "altair-bin"
+        ]
+      },
+      "nixpkgs": [
+        "altair"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/altair/appimage.official.stable.yaml",
+    "homepage": [
+      "https://altair.sirmuel.design",
+      "https://altairgraphql.dev",
+      "https://github.com/imolorhe/altair"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/altair/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/altair-graphql/altair"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/altair/appimage/official",
+    "provides": [
+      "altair"
+    ],
+    "repology": [
+      "altair"
+    ],
+    "src_url": [
+      "https://github.com/altair-graphql/altair"
+    ],
+    "tag": [
+      "api",
+      "graphql"
+    ],
+    "version": "v8.2.3"
+  },
+  {
+    "_disabled": "false",
     "pkg": "amdgpu_top",
     "pkg_family": "amdgpu_top",
     "pkg_id": "github.com.Umio-Yasuno.amdgpu_top",
@@ -183,27 +242,53 @@
   },
   {
     "_disabled": "false",
-    "pkg": "anipy-cli",
-    "pkg_family": "anipy-cli",
-    "pkg_id": "sharun.wrappe.pypi.anipy-cli",
+    "pkg": "awscli",
+    "pkg_family": "awscli",
+    "pkg_id": "sharun.wrappe.pypi.awscli",
     "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/anipy-cli/anipy-cli/anipy-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/anipy-cli/archive.sharun.pypi.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-awscli/awscli/awscli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/awscli/archive.sharun.pypi.yaml",
     "category": [
       "Utility"
     ],
-    "description": "Watch and Download Anime from the terminal",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/anipy-cli/archive.sharun.pypi.yaml",
+    "description": "Universal Command Line Interface for Amazon Web Services",
+    "distro_pkg": {
+      "alpine": [
+        "aws-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "aws-cli-bin",
+          "aws-cli-git",
+          "aws-cli-v2"
+        ],
+        "extra": [
+          "aws-cli"
+        ]
+      },
+      "debian": [
+        "awscli"
+      ],
+      "gnuguix": [
+        "awscli"
+      ],
+      "homebrew": [
+        "awscli"
+      ],
+      "nixpkgs": [
+        "awscli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/awscli/archive.sharun.pypi.yaml",
     "homepage": [
-      "https://sdaqo.dev/anipy-cli",
-      "https://github.com/sdaqo/anipy-cli"
+      "https://github.com/aws/aws-cli"
     ],
     "host": [
       "aarch64-linux",
       "x86_64-linux"
     ],
     "license": [
-      "GPL-3.0"
+      "Apache-2.0"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
@@ -215,17 +300,21 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/anipy-cli/archive/sharun",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/awscli/archive/sharun",
     "provides": [
-      "anipy-cli"
+      "aws==awscli",
+      "aws==aws-cli"
+    ],
+    "repology": [
+      "awscli"
     ],
     "src_url": [
-      "https://pypi.org/project/anipy-cli"
+      "https://pypi.org/project/awscli"
     ],
     "tag": [
       "Utility"
     ],
-    "version": "3.5.8"
+    "version": "1.40.23"
   },
   {
     "_disabled": "false",
@@ -341,7 +430,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.81.14"
+    "version": "v1.81.19"
   },
   {
     "_disabled": "false",
@@ -401,65 +490,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "commix",
-    "pkg_family": "commix",
-    "pkg_id": "sharun.wrappe.pypi.commix",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-commix/commix/commix",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/commix/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Automated All-in-One OS Command Injection and Exploitation Tool",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "commix"
-        ]
-      },
-      "nixpkgs": [
-        "commix"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/commix/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://commixproject.com",
-      "https://github.com/commixproject/commix"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/commix/archive/sharun",
-    "provides": [
-      "commix"
-    ],
-    "repology": [
-      "commix"
-    ],
-    "src_url": [
-      "https://github.com/commixproject/commix"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-e822d49-250527T080710"
-  },
-  {
-    "_disabled": "false",
     "pkg": "crave",
     "pkg_family": "crave",
     "pkg_id": "sharun.wrappe.stable.crave",
@@ -513,7 +543,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "0.2-7090"
+    "version": "0.2-7091"
   },
   {
     "_disabled": "false",
@@ -1015,67 +1045,6 @@
     "version": "0.0.144"
   },
   {
-    "_disabled": "false",
-    "pkg": "dvc",
-    "pkg_family": "dvc",
-    "pkg_id": "sharun.wrappe.source.dvc",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-dvc/dvc/dvc",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/dvc/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A version control system and experiment tracker designed for machine learning projects",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "dvc"
-        ]
-      },
-      "homebrew": [
-        "dvc"
-      ],
-      "nixpkgs": [
-        "dvc"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/dvc/archive.sharun.source.yaml",
-    "homepage": [
-      "https://dvc.org/doc"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/dvc/archive/sharun",
-    "provides": [
-      "dvc"
-    ],
-    "repology": [
-      "dvc"
-    ],
-    "src_url": [
-      "https://github.com/iterative/dvc"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-1de7f89-250527T071008"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -1253,7 +1222,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "139.0.20250517142841"
+    "version": "140.0.20250526170029"
   },
   {
     "_disabled": "false",
@@ -1319,7 +1288,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "139.0.20250517142841"
+    "version": "140.0.20250526170029"
   },
   {
     "_disabled": "false",
@@ -1388,7 +1357,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "128.10.20250517152055"
+    "version": "128.11.20250519114620"
   },
   {
     "_disabled": "false",
@@ -1448,7 +1417,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "141.0.20250527035423"
+    "version": "141.0.20250527164239"
   },
   {
     "_disabled": "false",
@@ -1519,7 +1488,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "138.0.20250517143237"
+    "version": "139.0.20250522210034"
   },
   {
     "_disabled": "false",
@@ -1905,7 +1874,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250527T004757"
+    "version": "250528T004847"
   },
   {
     "_disabled": "false",
@@ -1967,7 +1936,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250527T004757"
+    "version": "250528T004847"
   },
   {
     "_disabled": "false",
@@ -2198,131 +2167,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "huggingface-cli",
-    "pkg_family": "huggingface-cli",
-    "pkg_id": "sharun.wrappe.source.huggingface-cli",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/huggingface-cli/huggingface-cli/huggingface-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/huggingface-cli/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "The official Python client for the Huggingface Hub",
-    "distro_pkg": {
-      "homebrew": [
-        "huggingface-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/huggingface-cli/archive.sharun.source.yaml",
-    "homepage": [
-      "https://huggingface.co/docs/huggingface_hub"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/huggingface-cli/archive/sharun",
-    "provides": [
-      "huggingface-cli"
-    ],
-    "repology": [
-      "huggingface-cli"
-    ],
-    "src_url": [
-      "https://github.com/huggingface/huggingface_hub"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-975df7f-250527T151957"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "kdenlive",
-    "pkg_family": "kdenlive",
-    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
-    "app_id": "org.kde.kdenlive",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
-    "category": [
-      "AudioVideoEditing"
-    ],
-    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
-    "distro_pkg": {
-      "alpine": [
-        "kdenlive"
-      ],
-      "archlinux": {
-        "aur": [
-          "kdenlive-appimage",
-          "kdenlive-git"
-        ],
-        "extra": [
-          "kdenlive"
-        ]
-      },
-      "debian": [
-        "kdenlive"
-      ],
-      "gnuguix": [
-        "kdenlive"
-      ],
-      "homebrew": [
-        "kdenlive"
-      ],
-      "nixpkgs": [
-        "kdePackages.kdenlive"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
-    "homepage": [
-      "https://apps.kde.org/kdenlive",
-      "https://invent.kde.org/multimedia/kdenlive"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
-    "provides": [
-      "kdenlive"
-    ],
-    "repology": [
-      "kdenlive"
-    ],
-    "src_url": [
-      "https://kdenlive.org/en/download/"
-    ],
-    "tag": [
-      "editor"
-    ],
-    "version": "2025-05-27"
-  },
-  {
-    "_disabled": "false",
     "pkg": "kdenlive",
     "pkg_family": "kdenlive",
     "pkg_id": "gitlab.com.kdenlive.kdenlive.stable",
@@ -2511,7 +2355,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-05-26"
+    "version": "2025-05-27"
   },
   {
     "_disabled": "true",
@@ -2747,77 +2591,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "mitmproxy",
-    "pkg_family": "mitmproxy",
-    "pkg_id": "sharun.wrappe.pypi.mitmproxy",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-mitmproxy/mitmproxy/mitmproxy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/mitmproxy/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "SSL/TLS-capable man-in-the-middle proxy for HTTP and Websockets",
-    "distro_pkg": {
-      "alpine": [
-        "mitmproxy"
-      ],
-      "archlinux": {
-        "aur": [
-          "mitmproxy-git"
-        ],
-        "extra": [
-          "mitmproxy"
-        ]
-      },
-      "debian": [
-        "mitmproxy"
-      ],
-      "homebrew": [
-        "mitmproxy"
-      ],
-      "nixpkgs": [
-        "mitmproxy"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/mitmproxy/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://mitmproxy.org",
-      "https://docs.mitmproxy.org"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/mitmproxy/archive/sharun",
-    "provides": [
-      "mitmproxy"
-    ],
-    "repology": [
-      "mitmproxy"
-    ],
-    "src_url": [
-      "https://pypi.org/project/mitmproxy"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "12.1.1"
-  },
-  {
-    "_disabled": "false",
     "pkg": "netexec",
     "pkg_family": "netexec",
     "pkg_id": "sharun.wrappe.source.netexec",
@@ -2874,71 +2647,6 @@
       "Utility"
     ],
     "version": "HEAD-3bf9de3-250527T151614"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "oci-cli",
-    "pkg_family": "oci-cli",
-    "pkg_id": "sharun.wrappe.pypi.oci-cli",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oci-cli/oci-cli/oci-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oci-cli/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Command Line Interface for Oracle Cloud Infrastructure",
-    "distro_pkg": {
-      "alpine": [
-        "oci-cli"
-      ],
-      "archlinux": {
-        "aur": [
-          "oci-cli"
-        ]
-      },
-      "homebrew": [
-        "oci-cli"
-      ],
-      "nixpkgs": [
-        "oci-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/oci-cli/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://cloud.oracle.com/cloud-infrastructure",
-      "https://github.com/oracle/oci-cli"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "UPL-1.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
-    "provides": [
-      "oci==oci-cli"
-    ],
-    "repology": [
-      "oci-cli"
-    ],
-    "src_url": [
-      "https://pypi.org/project/oci-cli"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "3.57.0"
   },
   {
     "_disabled": "false",
@@ -3004,65 +2712,6 @@
       "Sound/Utilities"
     ],
     "version": "2.4.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "puncia",
-    "pkg_family": "puncia",
-    "pkg_id": "sharun.wrappe.pypi.puncia",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-puncia/puncia/puncia",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/puncia/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "CLI utility for Subdomain Center & Exploit Observer",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "puncia"
-        ]
-      },
-      "nixpkgs": [
-        "puncia"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/puncia/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://subdomain.center",
-      "https://github.com/ARPSyndicate/puncia"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/puncia/archive/sharun",
-    "provides": [
-      "puncia"
-    ],
-    "repology": [
-      "puncia"
-    ],
-    "src_url": [
-      "https://pypi.org/project/puncia"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "0.33"
   },
   {
     "_disabled": "false",
@@ -4205,68 +3854,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "wrangler",
-    "pkg_family": "wrangler",
-    "pkg_id": "sharun.wrappe.npm.wrangler",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/npm-wrangler/wrangler/wrangler",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wrangler/archive.sharun.npm.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Command-line interface for all things Cloudflare Workers",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "wrangler"
-        ]
-      },
-      "homebrew": [
-        "wrangler"
-      ],
-      "nixpkgs": [
-        "wrangler"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/wrangler/archive.sharun.npm.yaml",
-    "homepage": [
-      "https://developers.cloudflare.com/workers/cli-wrangler",
-      "https://github.com/cloudflare/workers-sdk"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [npm]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/wrangler/archive/sharun",
-    "provides": [
-      "wrangler"
-    ],
-    "repology": [
-      "wrangler"
-    ],
-    "src_url": [
-      "https://www.npmjs.com/package/wrangler"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "4.17.0"
-  },
-  {
-    "_disabled": "false",
     "pkg": "xash3d-fwgs",
     "pkg_family": "xash3d-fwgs",
     "pkg_id": "github.com.FWGS.xash3d-fwgs",
@@ -4314,7 +3901,7 @@
     "tag": [
       "utility"
     ],
-    "version": "250527T180231"
+    "version": "250527T200655"
   },
   {
     "_disabled": "false",
@@ -4362,7 +3949,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250527T180231"
+    "version": "250527T200655"
   },
   {
     "_disabled": "false",
@@ -4435,7 +4022,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f7bbf5a-250526T225443"
+    "version": "HEAD-cc749a8-250527T231158"
   },
   {
     "_disabled": "false",

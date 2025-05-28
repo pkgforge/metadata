@@ -1,5 +1,5 @@
 ```mathematica
- 436M └─┬ main
+ 440M └─┬ main
  176M   ├─┬ misc
  176M   │ ├─┬ data
   71M   │ │ ├── ARCHLINUX.json
@@ -35,32 +35,32 @@
  4.0K   │   ├── fetch_debian_docker.sh
  4.0K   │   ├── fetch_archlinux_docker.sh
  4.0K   │   └── fetch_alpine_git.sh
- 139M   ├─┬ bincache
- 139M   │ ├─┬ data
-  25M   │ │ ├── x86_64-Linux.json
-  25M   │ │ ├── aarch64-Linux.json
+ 142M   ├─┬ bincache
+ 142M   │ ├─┬ data
+  26M   │ │ ├── x86_64-Linux.json
+  26M   │ │ ├── aarch64-Linux.json
   18M   │ │ ├── x86_64-Linux.db
-  17M   │ │ ├── aarch64-Linux.db
+  18M   │ │ ├── aarch64-Linux.db
   14M   │ │ ├── x86_64-Linux.sdb
   13M   │ │ ├── aarch64-Linux.sdb
  4.1M   │ │ ├── x86_64-Linux.json.cba
- 4.0M   │ │ ├── aarch64-Linux.json.cba
+ 4.1M   │ │ ├── aarch64-Linux.json.cba
  1.4M   │ │ ├── x86_64-Linux.db.cba
  1.3M   │ │ ├── x86_64-Linux.sdb.cba
  1.3M   │ │ ├── aarch64-Linux.sdb.cba
  1.3M   │ │ ├── aarch64-Linux.db.cba
  964K   │ │ ├── x86_64-Linux.sdb.zstd
  932K   │ │ ├── aarch64-Linux.sdb.zstd
- 884K   │ │ ├── x86_64-Linux.db.zstd
- 880K   │ │ ├── x86_64-Linux.sdb.xz
- 864K   │ │ ├── x86_64-Linux.db.xz
- 856K   │ │ ├── aarch64-Linux.db.zstd
+ 900K   │ │ ├── x86_64-Linux.db.zstd
+ 884K   │ │ ├── x86_64-Linux.sdb.xz
+ 876K   │ │ ├── x86_64-Linux.db.xz
+ 868K   │ │ ├── aarch64-Linux.db.zstd
  852K   │ │ ├── aarch64-Linux.sdb.xz
- 832K   │ │ ├── aarch64-Linux.db.xz
- 828K   │ │ ├── x86_64-Linux.json.zstd
- 796K   │ │ ├── x86_64-Linux.json.xz
- 796K   │ │ ├── aarch64-Linux.json.zstd
- 768K   │ │ ├── aarch64-Linux.json.xz
+ 844K   │ │ ├── aarch64-Linux.db.xz
+ 836K   │ │ ├── x86_64-Linux.json.zstd
+ 808K   │ │ ├── x86_64-Linux.json.xz
+ 804K   │ │ ├── aarch64-Linux.json.zstd
+ 776K   │ │ ├── aarch64-Linux.json.xz
  4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.bsum
@@ -81,9 +81,9 @@
  4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
  4.0K   │ │ ├── aarch64-Linux.db.bsum
  4.0K   │ │ └── TOTAL.json
-  80K   │ └─┬ scripts
-  32K   │   ├── gen_meta_x86_64-Linux.sh
-  32K   │   ├── gen_meta_aarch64-Linux.sh
+  88K   │ └─┬ scripts
+  36K   │   ├── gen_meta_x86_64-Linux.sh
+  36K   │   ├── gen_meta_aarch64-Linux.sh
   12K   │   └── sync_hf_mirror.sh
   53M   ├── GHCR_PKGS.json
   34M   ├─┬ external
@@ -274,31 +274,31 @@
  8.0K   │   ├── repology_fetcher.sh
  4.0K   │   ├── gen_ghcr_backage.sh
  4.0K   │   └── gen_diff.sh
- 7.1M   ├─┬ pkgcache
- 7.0M   │ ├─┬ data
+ 7.3M   ├─┬ pkgcache
+ 7.2M   │ ├─┬ data
  1.2M   │ │ ├── x86_64-Linux.db
+ 1.2M   │ │ ├── x86_64-Linux.json
  1.1M   │ │ ├── x86_64-Linux.sdb
- 1.1M   │ │ ├── x86_64-Linux.json
- 684K   │ │ ├── aarch64-Linux.db
- 620K   │ │ ├── aarch64-Linux.json
+ 696K   │ │ ├── aarch64-Linux.db
+ 664K   │ │ ├── aarch64-Linux.json
  612K   │ │ ├── aarch64-Linux.sdb
- 144K   │ │ ├── x86_64-Linux.sdb.cba
- 140K   │ │ ├── x86_64-Linux.db.cba
+ 156K   │ │ ├── x86_64-Linux.sdb.cba
+ 144K   │ │ ├── x86_64-Linux.db.cba
+ 128K   │ │ ├── x86_64-Linux.json.cba
  124K   │ │ ├── x86_64-Linux.sdb.zstd
- 124K   │ │ ├── x86_64-Linux.json.cba
+ 120K   │ │ ├── x86_64-Linux.db.zstd
  116K   │ │ ├── x86_64-Linux.sdb.xz
- 116K   │ │ ├── x86_64-Linux.db.zstd
- 108K   │ │ ├── x86_64-Linux.db.xz
+ 112K   │ │ ├── x86_64-Linux.db.xz
  104K   │ │ ├── x86_64-Linux.json.zstd
  100K   │ │ ├── x86_64-Linux.json.xz
   92K   │ │ ├── aarch64-Linux.sdb.cba
-  88K   │ │ ├── aarch64-Linux.db.cba
-  76K   │ │ ├── aarch64-Linux.json.cba
+  92K   │ │ ├── aarch64-Linux.db.cba
+  80K   │ │ ├── aarch64-Linux.json.cba
   72K   │ │ ├── aarch64-Linux.sdb.zstd
+  72K   │ │ ├── aarch64-Linux.db.zstd
   68K   │ │ ├── aarch64-Linux.sdb.xz
-  68K   │ │ ├── aarch64-Linux.db.zstd
-  64K   │ │ ├── aarch64-Linux.db.xz
-  60K   │ │ ├── aarch64-Linux.json.zstd
+  68K   │ │ ├── aarch64-Linux.db.xz
+  64K   │ │ ├── aarch64-Linux.json.zstd
   60K   │ │ ├── aarch64-Linux.json.xz
  4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
@@ -320,11 +320,11 @@
  4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
  4.0K   │ │ ├── aarch64-Linux.db.bsum
  4.0K   │ │ └── TOTAL.json
- 132K   │ └─┬ scripts
+ 148K   │ └─┬ scripts
   52K   │   ├─┬ archived
   48K   │   │ └── healthchecks.yaml
-  32K   │   ├── gen_meta_x86_64-Linux.sh
-  32K   │   ├── gen_meta_aarch64-Linux.sh
+  40K   │   ├── gen_meta_x86_64-Linux.sh
+  40K   │   ├── gen_meta_aarch64-Linux.sh
   12K   │   └── sync_hf_mirror.sh
  2.5M   ├─┬ completions
  1.2M   │ ├── ALL_x86_64-Linux.txt

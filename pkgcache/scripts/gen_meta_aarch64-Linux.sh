@@ -8,6 +8,8 @@
 #-------------------------------------------------------#
 ##ENV
 export TZ="UTC"
+#export HOST_TRIPLET="$(uname -m)-$(uname -s)"
+export HOST_TRIPLET="aarch64-Linux"
 SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
 TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
 rm -rvf "${SYSTMP}/pkgcache_aarch64-Linux.json" 2>/dev/null
@@ -49,6 +51,16 @@ else
 fi
 ##Get BACKAGE.json
 curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/soarpkgs/data/BACKAGE.json" -o "${TMPDIR}/BACKAGE.json"
+if [[ "$(jq -r '.[] | .ghcr_pkg' "${TMPDIR}/BACKAGE.json" | grep -iv 'null' | wc -l | tr -cd '0-9')" -lt 10 ]]; then
+ echo -e "\n[X] FATAL: GHCR PKG is < 10, Parsing Failed?\n"
+ exit 1
+fi
+##Get COMP_CACHE.json
+curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/soarpkgs/data/COMP_VER_CACHE.json" -o "${TMPDIR}/COMP_CACHE.json"
+if [[ "$(jq -r '.[] | .build_script' "${TMPDIR}/COMP_CACHE.json" | grep -iv 'null' | wc -l | tr -cd '0-9')" -lt 10 ]]; then
+ echo -e "\n[X] FATAL: COMP_PKG is < 10, Parsing Failed?\n"
+ exit 1
+fi
 ##Get SBUILD.json
 curl -qfsSL "https://raw.githubusercontent.com/pkgforge/pkgcache/refs/heads/main/SBUILD_LIST.json" -o "${TMPDIR}/sbuilds.json"
 jq -r '.[] | .ghcr_pkg' "${TMPDIR}/sbuilds.json" | sed 's/^ghcr\.io\/pkgforge\///' | sort -u -o "${TMPDIR}/sbuild_list.tmp"
@@ -333,6 +345,160 @@ generate_meta()
                 else [.] end
               ) | flatten | from_entries   
             ' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="replaces" validate_json
+           #Add/Update version comparison
+            echo -e "[+] Adding/Updating [${PKG}] ('version_latest')"
+            unset VER_LATEST VER_OUTDATED
+            rm -rf "${TMPDIR}/${METADATA_JSON}.tmpxx" 2>/dev/null
+            jq --argjson target "$(jq '.build_script' "${TMPDIR}/${METADATA_JSON}.tmp01")" \
+               --arg HOST_TRIPLET "${HOST_TRIPLET}" --arg REPO "pkgcache" \
+               '[.[] | select(.build_script == $target and .host == $HOST_TRIPLET and .repo == $REPO )] | first' "${TMPDIR}/COMP_CACHE.json" > "${TMPDIR}/${METADATA_JSON}.tmpxx"
+            if jq -e '.upver != null and .upver != ""' "${TMPDIR}/${METADATA_JSON}.tmpxx" &>/dev/null; then
+              VER_LATEST="$(jq -r '.upver' "${TMPDIR}/${METADATA_JSON}.tmpxx" | grep -iv 'null' | tr -d '[:space:]')"
+              if jq -e '.pkgver == .upver' "${TMPDIR}/${METADATA_JSON}.tmpxx" &>/dev/null; then
+                VER_OUTDATED="false"
+              else
+                VER_OUTDATED="true"
+              fi
+            else
+              VER_LATEST="$(jq -r '.version' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -iv 'null' | tr -d '[:space:]')"
+              VER_OUTDATED="false"
+            fi
+            jq --arg VER_LATEST "${VER_LATEST}" --arg VER_OUTDATED "${VER_OUTDATED}" \
+            'to_entries | map(
+               if .key == "version" then
+                 [., {
+                   key: "version_latest",
+                   value: ($VER_LATEST | tostring)
+                 },
+                 {
+                   key: "version_outdated", 
+                   value: ($VER_OUTDATED | tostring)
+                 }]
+               else [.]
+               end
+             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="ver_comp" validate_json
+           #Add/Update Notes Parsers
+            echo -e "[+] Adding/Updating [${PKG}] ('notes*')"
+            unset PKG_DEPRECATED PKG_EXTERNAL PKG_DESKTOP_INTEGRATION PKG_INSTALLABLE PKG_PORTABLE PKG_BUNDLE PKG_BUNDLE_TYPE PKG_TRUSTED RECURSE_PROVIDES SOAR_SYMS
+            rm -rf "${TMPDIR}/${METADATA_JSON}.tmpxx" 2>/dev/null
+           #Archive
+            if [[ "$(jq -r '.pkg_type' "${TMPDIR}/${METADATA_JSON}.tmp01")" == "archive" ]]; then
+             #bundle 
+              if jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "[BUNDLE]" ; then
+                PKG_BUNDLE="true"
+                SOAR_SYMS="true"
+              elif jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "[NO_BUNDLE]" ; then
+                PKG_BUNDLE="true"
+                SOAR_SYMS="false"
+              else
+                PKG_BUNDLE="false"
+              fi
+             #bundle type
+              if [[ "${PKG_BUNDLE}" == "true" ]]; then
+               if jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "tar.gz" ; then
+                 PKG_BUNDLE_TYPE="tar+gz"
+               elif jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "tar.xz" ; then
+                 PKG_BUNDLE_TYPE="tar+xz"
+               elif jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "tar.zst" ; then
+                 PKG_BUNDLE_TYPE="tar+zstd"
+               else
+                 PKG_BUNDLE_TYPE="tar"
+               fi
+              fi
+            fi
+           #deprecated
+            if jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "[DEPRECATED]" ; then
+              PKG_DEPRECATED="true"
+            else
+              PKG_DEPRECATED="false"
+            fi
+           #external
+            if jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "[EXTERNAL]" ; then
+              PKG_EXTERNAL="true"
+            else
+              PKG_EXTERNAL="false"
+            fi
+           #no desktop integration
+            if jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "[NO_DESKTOP_INTEGRATION]" ; then
+              PKG_DESKTOP_INTEGRATION="false"
+            else
+              PKG_DESKTOP_INTEGRATION="true"
+            fi
+           #no install
+            if jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "[NO_INSTALL]" ; then
+              PKG_INSTALLABLE="false"
+            else
+              PKG_INSTALLABLE="true"
+            fi
+           #Portable
+            if jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "[PORTABLE]" ; then
+              PKG_PORTABLE="true"
+            else
+              PKG_PORTABLE="false"
+            fi
+           #Provides
+            if jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "[NO_RECURSE_PROVIDES]" ; then
+              RECURSE_PROVIDES="false"
+            else
+              #RECURSE_PROVIDES="true"
+              RECURSE_PROVIDES="false"
+            fi
+           #untrusted
+            if jq -r '.note[]' "${TMPDIR}/${METADATA_JSON}.tmp01" | grep -qiF "[UNTRUSTED]" ; then
+              PKG_TRUSTED="false"
+            else
+              PKG_TRUSTED="true"
+            fi
+            jq --arg PKG_DEPRECATED "${PKG_DEPRECATED}" --arg PKG_EXTERNAL "${PKG_EXTERNAL}" \
+            --arg PKG_DESKTOP_INTEGRATION "${PKG_DESKTOP_INTEGRATION}" --arg PKG_INSTALLABLE "${PKG_INSTALLABLE}" \
+            --arg PKG_PORTABLE "${PKG_PORTABLE}" --arg PKG_BUNDLE "${PKG_BUNDLE}" \
+            --arg PKG_BUNDLE_TYPE "${PKG_BUNDLE_TYPE}" --arg PKG_TRUSTED "${PKG_TRUSTED}" \
+            --arg RECURSE_PROVIDES "${RECURSE_PROVIDES}" --arg SOAR_SYMS "${SOAR_SYMS}" \
+            'to_entries | map(
+               if .key == "note" then
+                 [., {
+                   key: "deprecated",
+                   value: ($PKG_DEPRECATED | tostring)
+                 },
+                 {
+                   key: "external", 
+                   value: ($PKG_EXTERNAL | tostring)
+                 },
+                 {
+                   key: "desktop_integration", 
+                   value: ($PKG_DESKTOP_INTEGRATION | tostring)
+                 },
+                 {
+                   key: "installable", 
+                   value: ($PKG_INSTALLABLE | tostring)
+                 },
+                 {
+                   key: "portable", 
+                   value: ($PKG_PORTABLE | tostring)
+                 },
+                 {
+                   key: "bundle", 
+                   value: ($PKG_BUNDLE | tostring)
+                 },
+                 {
+                   key: "bundle_type", 
+                   value: ($PKG_BUNDLE_TYPE | tostring)
+                 },
+                 {
+                   key: "trusted", 
+                   value: ($PKG_TRUSTED | tostring)
+                 },
+                 {
+                   key: "recurse_provides", 
+                   value: ($RECURSE_PROVIDES | tostring)
+                 },
+                 {
+                   key: "soar_syms",
+                   value: ($SOAR_SYMS | tostring)
+                 }]
+               else [.]
+               end
+             ) | flatten | from_entries' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="ver_comp" validate_json
            #Cleanup & Finalize
              echo -e "[+] Cleaning Up..."
              jq 'walk(if type == "object" then with_entries(select(.value != "" and .value != [] and .value != {})) else . end)' "${TMPDIR}/${METADATA_JSON}.tmp01" > "${TMPDIR}/${METADATA_JSON}.tmp02" ; STEP="cleanup" validate_json

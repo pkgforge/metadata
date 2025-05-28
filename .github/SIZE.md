@@ -81,9 +81,9 @@
  4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
  4.0K   │ │ ├── aarch64-Linux.db.bsum
  4.0K   │ │ └── TOTAL.json
-  80K   │ └─┬ scripts
-  32K   │   ├── gen_meta_x86_64-Linux.sh
-  32K   │   ├── gen_meta_aarch64-Linux.sh
+  88K   │ └─┬ scripts
+  36K   │   ├── gen_meta_x86_64-Linux.sh
+  36K   │   ├── gen_meta_aarch64-Linux.sh
   12K   │   └── sync_hf_mirror.sh
   53M   ├── GHCR_PKGS.json
   34M   ├─┬ external
@@ -320,11 +320,11 @@
  4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
  4.0K   │ │ ├── aarch64-Linux.db.bsum
  4.0K   │ │ └── TOTAL.json
- 132K   │ └─┬ scripts
+ 148K   │ └─┬ scripts
   52K   │   ├─┬ archived
   48K   │   │ └── healthchecks.yaml
-  32K   │   ├── gen_meta_x86_64-Linux.sh
-  32K   │   ├── gen_meta_aarch64-Linux.sh
+  40K   │   ├── gen_meta_x86_64-Linux.sh
+  40K   │   ├── gen_meta_aarch64-Linux.sh
   12K   │   └── sync_hf_mirror.sh
  2.5M   ├─┬ completions
  1.2M   │ ├── ALL_x86_64-Linux.txt

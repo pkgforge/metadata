@@ -4911,7 +4911,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "0.0.30"
+    "version": "0.1.0"
   },
   {
     "_disabled": "false",
@@ -5534,6 +5534,49 @@
       "ddns"
     ],
     "version": "HEAD-3756c60-250529T204512"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "deark",
+    "pkg_family": "deark",
+    "pkg_id": "github.com.jsummers.deark.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/deark-source/deark/deark",
+    "bincache": "ghcr.io/pkgforge/bincache/deark/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/deark/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A utility for extracting data from various file formats",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/deark/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/jsummers/deark"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jsummers/deark"
+    ],
+    "provides": [
+      "deark"
+    ],
+    "src_url": [
+      "https://github.com/jsummers/deark"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-bdbc412-250528T140102"
   },
   {
     "_disabled": "false",
@@ -7354,7 +7397,7 @@
     "tag": [
       "git"
     ],
-    "version": "v2.73.0"
+    "version": "v2.74.0"
   },
   {
     "_disabled": "false",
@@ -7453,7 +7496,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "v1.4.0"
+    "version": "v1.4.1"
   },
   {
     "_disabled": "false",
@@ -7510,7 +7553,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-50a2a9a-250529T180432"
+    "version": "HEAD-4acefed-250530T000724"
   },
   {
     "_disabled": "false",
@@ -7597,7 +7640,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-fdd88fe-250529T082611"
+    "version": "HEAD-cd24b1a-250529T183633"
   },
   {
     "_disabled": "false",
@@ -7663,6 +7706,75 @@
       "cicd"
     ],
     "version": "v1.23.8"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gitlab-cli",
+    "pkg_family": "gitlab-cli",
+    "pkg_id": "gitlab.com.gitlab-org.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/org-cli/gitlab-cli/gitlab-cli",
+    "bincache": "ghcr.io/pkgforge/bincache/gitlab-cli/official/gitlab-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gitlab-cli/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Official Gitlab CLI",
+    "distro_pkg": {
+      "alpine": [
+        "glab"
+      ],
+      "archlinux": {
+        "aur": [
+          "glab-git"
+        ],
+        "extra": [
+          "glab"
+        ]
+      },
+      "debian": [
+        "glab"
+      ],
+      "homebrew": [
+        "glab"
+      ],
+      "nixpkgs": [
+        "glab"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gitlab-cli/static.official.source.yaml",
+    "homepage": [
+      "https://docs.gitlab.com/ee/editor_extensions/gitlab_cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://gitlab.com/gitlab-org/cli"
+    ],
+    "provides": [
+      "glab",
+      "gitlab-cli"
+    ],
+    "repology": [
+      "glab-gitlab-cli"
+    ],
+    "src_url": [
+      "https://gitlab.com/gitlab-org/cli"
+    ],
+    "tag": [
+      "gitlab"
+    ],
+    "version": "HEAD-271bf0a-250529T164618"
   },
   {
     "_disabled": "false",
@@ -7869,6 +7981,51 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gocryptfs",
+    "pkg_family": "gocryptfs",
+    "pkg_id": "github.com.rfjakob.gocryptfs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rfjakob-gocryptfs/gocryptfs/gocryptfs",
+    "bincache": "ghcr.io/pkgforge/bincache/gocryptfs/official/gocryptfs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gocryptfs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Encrypted overlay filesystem written in Go",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gocryptfs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/rfjakob/gocryptfs"
+    ],
+    "provides": [
+      "gocryptfs",
+      "gocryptfs-xray"
+    ],
+    "repology": [
+      "gocryptfs"
+    ],
+    "src_url": [
+      "https://github.com/rfjakob/gocryptfs"
+    ],
+    "tag": [
+      "encryption",
+      "filesystem"
+    ],
+    "version": "HEAD-2609c72-250529T213825"
+  },
+  {
+    "_disabled": "false",
     "pkg": "godns",
     "pkg_family": "godns",
     "pkg_id": "github.com.TimothyYe.godns",
@@ -7923,6 +8080,76 @@
       "ddns"
     ],
     "version": "v3.2.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gojq",
+    "pkg_family": "gojq",
+    "pkg_id": "github.com.itchyny.gojq",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/itchyny-gojq/gojq/gojq",
+    "bincache": "ghcr.io/pkgforge/bincache/gojq/official/gojq",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gojq/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Pure Go implementation of jq with yaml support",
+    "distro_pkg": {
+      "alpine": [
+        "gojq"
+      ],
+      "archlinux": {
+        "aur": [
+          "gojq",
+          "gojq-bin"
+        ]
+      },
+      "debian": [
+        "gojq"
+      ],
+      "gnuguix": [
+        "gojq"
+      ],
+      "homebrew": [
+        "gojq"
+      ],
+      "nixpkgs": [
+        "gojq"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gojq/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/itchyny/gojq"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/itchyny/gojq"
+    ],
+    "provides": [
+      "gojq"
+    ],
+    "repology": [
+      "gojq"
+    ],
+    "src_url": [
+      "https://github.com/itchyny/gojq"
+    ],
+    "tag": [
+      "jq",
+      "json"
+    ],
+    "version": "HEAD-db661fa-250530T053756"
   },
   {
     "_disabled": "false",
@@ -8645,7 +8872,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-bff5d19-250529T091713"
+    "version": "HEAD-202fe0d-250529T221258"
   },
   {
     "_disabled": "false",
@@ -8994,6 +9221,49 @@
       "random"
     ],
     "version": "HEAD-2f5c872-250512T215610"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "jyt",
+    "pkg_family": "jyt",
+    "pkg_id": "github.com.ken-matsui.jyt.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jyt-source/jyt/jyt",
+    "bincache": "ghcr.io/pkgforge/bincache/jyt/official/jyt",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jyt/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A tridirectional converter between Json, Yaml, and Toml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jyt/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ken-matsui/jyt"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ken-matsui/jyt"
+    ],
+    "provides": [
+      "jyt"
+    ],
+    "src_url": [
+      "https://github.com/ken-matsui/jyt"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-582c419-250529T202852"
   },
   {
     "_disabled": "false",
@@ -9409,7 +9679,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-5b4d009-250529T144509"
+    "version": "HEAD-8280fde-250529T224237"
   },
   {
     "_disabled": "false",
@@ -9997,7 +10267,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-590ed9d-250529T162545"
+    "version": "HEAD-65b41ce-250529T140412"
   },
   {
     "_disabled": "false",
@@ -10708,6 +10978,71 @@
   },
   {
     "_disabled": "false",
+    "pkg": "nerdctl",
+    "pkg_family": "nerdctl",
+    "pkg_id": "github.com.containerd.nerdctl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containerd-nerdctl/nerdctl/nerdctl",
+    "bincache": "ghcr.io/pkgforge/bincache/nerdctl/official/nerdctl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nerdctl/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Docker-compatible CLI for containerd, with support for Compose, Rootless, eStargz, OCIcrypt, IPFS",
+    "distro_pkg": {
+      "alpine": [
+        "nerdctl"
+      ],
+      "archlinux": {
+        "aur": [
+          "nerdctl-git"
+        ],
+        "extra": [
+          "nerdctl"
+        ]
+      },
+      "homebrew": [
+        "nerdctl"
+      ],
+      "nixpkgs": [
+        "nerdctl"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nerdctl/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/containerd/nerdctl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containerd/nerdctl"
+    ],
+    "provides": [
+      "nerdctl"
+    ],
+    "repology": [
+      "nerdctl"
+    ],
+    "src_url": [
+      "https://github.com/containerd/nerdctl"
+    ],
+    "tag": [
+      "container"
+    ],
+    "version": "HEAD-7fc539b-250529T232819"
+  },
+  {
+    "_disabled": "false",
     "pkg": "netbird",
     "pkg_family": "netbird",
     "pkg_id": "github.com.netbirdio.netbird.source",
@@ -11302,7 +11637,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-fbde023-250529T054930"
+    "version": "HEAD-18ce5de-250529T175310"
   },
   {
     "_disabled": "false",
@@ -11366,7 +11701,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-fbde023-250529T054930"
+    "version": "HEAD-18ce5de-250529T175310"
   },
   {
     "_disabled": "false",
@@ -15560,7 +15895,7 @@
     "tag": [
       "shellcheck"
     ],
-    "version": "HEAD-0bb228b-250528T233213"
+    "version": "HEAD-46bb4f2-250530T011257"
   },
   {
     "_disabled": "false",
@@ -17084,7 +17419,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3dda361-250528T125206"
+    "version": "HEAD-11f3500-250529T131856"
   },
   {
     "_disabled": "false",
@@ -17474,7 +17809,7 @@
       "certificate",
       "sso"
     ],
-    "version": "HEAD-cb02664-250529T192448"
+    "version": "HEAD-7d7a8ed-250529T183018"
   },
   {
     "_disabled": "false",
@@ -17640,7 +17975,7 @@
     "tag": [
       "debugger"
     ],
-    "version": "6.14"
+    "version": "6.15"
   },
   {
     "_disabled": "false",
@@ -17686,7 +18021,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6b512a9-250529T123119"
+    "version": "HEAD-bf24393-250529T192831"
   },
   {
     "_disabled": "false",
@@ -18382,7 +18717,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-b0d3597-250528T175404"
+    "version": "HEAD-ef49e75-250529T130629"
   },
   {
     "_disabled": "false",
@@ -18502,7 +18837,7 @@
     "tag": [
       "toml"
     ],
-    "version": "HEAD-b18a173-250523T073552"
+    "version": "HEAD-e918c77-250530T014753"
   },
   {
     "_disabled": "false",
@@ -18964,7 +19299,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c3db0ff-250524T183611"
+    "version": "HEAD-cd2c62c-250529T211618"
   },
   {
     "_disabled": "false",
@@ -20084,7 +20419,7 @@
       "busybox",
       "coreboot"
     ],
-    "version": "HEAD-9935e1b-250526T195049"
+    "version": "HEAD-794e324-250529T114932"
   },
   {
     "_disabled": "false",
@@ -22161,7 +22496,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-af11729-250529T155756"
+    "version": "HEAD-9ae7cd8-250530T020435"
   },
   {
     "_disabled": "false",
@@ -22311,7 +22646,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3580d1a-250528T203005"
+    "version": "HEAD-207da7b-250530T074239"
   },
   {
     "_disabled": "false",
@@ -22354,7 +22689,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-e2fd474-250529T182232"
+    "version": "HEAD-856c8e5-250529T224718"
   },
   {
     "_disabled": "false",
@@ -23252,7 +23587,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-54e89e5-250529T134841"
+    "version": "HEAD-5d309ab-250529T234239"
   },
   {
     "_disabled": "false",

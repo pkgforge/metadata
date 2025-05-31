@@ -43,7 +43,7 @@
   },
   {
     "pkgname": "abseil",
-    "pkgtype": "exe",
+    "pkgtype": "lib",
     "version": "20240722.1",
     "license": "Apache-2.0",
     "summary": "C++ Common Libraries",
@@ -1093,6 +1093,23 @@
     "install": "run $CC $CFLAGS $CPPFLAGS $LDFLAGS -o bgrep ../bgrep.c\ninstall_bins bgrep"
   },
   {
+    "pkgname": "bin-graph",
+    "pkgtype": "exe",
+    "version": "2025.05.31",
+    "license": "GPL-3.0",
+    "summary": "A command-line tool for visualizing the different regions of a binary file",
+    "web-url": "https://github.com/8dcc/bin-graph",
+    "git-url": "https://github.com/8dcc/bin-graph",
+    "dep-pkg": "libpng",
+    "dep-upp": "git gmake",
+    "bsystem": "gmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "gmakew clean\ngmakew CC=\"$CC\" CFLAGS=\"'$CFLAGS $CPPFLAGS $LDFLAGS'\" LDLIBS=\"'-lpng -lz -lm'\"\ngmakew install PREFIX=\"$PACKAGE_INSTALL_DIR\""
+  },
+  {
     "pkgname": "binaryen",
     "pkgtype": "exe",
     "version": "118",
@@ -1184,7 +1201,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "configure \\\n    --with-isl=\"$libisl_INSTALL_DIR\" \\\n    --with-gmp=\"$libgmp_INSTALL_DIR\" \\\n    --with-mpc=\"$libmpc_INSTALL_DIR\" \\\n    --with-mpfr=\"$libmpfr_INSTALL_DIR\" \\\n    --with-static-standard-libraries \\\n    --with-zstd \\\n    --with-system-zlib \\\n    --disable-gprofng \\\n    --disable-werror \\\n    --disable-nls \\\n    --disable-install-libbfd \\\n    --disable-shared \\\n    --enable-static \\\n    --enable-gold \\\n    --enable-64-bit-bfd \\\n    --enable-plugins \\\n    --enable-interwork \\\n    --enable-multilib \\\n    --enable-targets=all\n\n    # https://www.mail-archive.com/bug-binutils@gnu.org/msg38641.html"
+    "install": "configure \\\n    --with-isl=\"$libisl_INSTALL_DIR\" \\\n    --with-gmp=\"$libgmp_INSTALL_DIR\" \\\n    --with-mpc=\"$libmpc_INSTALL_DIR\" \\\n    --with-mpfr=\"$libmpfr_INSTALL_DIR\" \\\n    --with-static-standard-libraries \\\n    --with-zstd \\\n    --with-system-zlib \\\n    --disable-gprofng \\\n    --disable-werror \\\n    --disable-nls \\\n    --disable-install-libbfd \\\n    --disable-shared \\\n    --enable-static \\\n    --enable-gold \\\n    --enable-64-bit-bfd \\\n    --enable-plugins \\\n    --enable-interwork \\\n    --enable-multilib \\\n    --enable-targets=all"
   },
   {
     "pkgname": "binutils-dev",
@@ -5070,7 +5087,7 @@
   },
   {
     "pkgname": "gflags",
-    "pkgtype": "exe",
+    "pkgtype": "lib",
     "version": "2.2.2",
     "license": "BSD-3-Clause",
     "summary": "Library for processing command-line flags",

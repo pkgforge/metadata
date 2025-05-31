@@ -1,5 +1,5 @@
 ```mathematica
- 442M └─┬ main
+ 443M └─┬ main
  176M   ├─┬ misc
  176M   │ ├─┬ data
   71M   │ │ ├── ARCHLINUX.json
@@ -87,6 +87,29 @@
   12K   │   └── sync_hf_mirror.sh
   55M   ├── GHCR_PKGS.json
   36M   ├─┬ external
+  12M   │ ├─┬ am
+  12M   │ │ ├─┬ data
+ 4.3M   │ │ │ ├── x86_64-Linux.json
+ 3.6M   │ │ │ ├── x86_64-Linux.db
+ 1.1M   │ │ │ ├── x86_64-Linux.AM.txt
+ 1.0M   │ │ │ ├── aarch64-Linux.AM.txt
+ 528K   │ │ │ ├── x86_64-Linux.db.cba
+ 500K   │ │ │ ├── x86_64-Linux.json.cba
+ 440K   │ │ │ ├── x86_64-Linux.db.zstd
+ 432K   │ │ │ ├── x86_64-Linux.db.xz
+ 404K   │ │ │ ├── x86_64-Linux.json.zstd
+ 396K   │ │ │ ├── x86_64-Linux.json.xz
+ 4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
+ 4.0K   │ │ │ └── TOTAL.json
+  44K   │ │ └─┬ scripts
+  20K   │ │   ├── gen_meta.sh
+  12K   │ │   ├── gen_meta_old.sh
+ 8.0K   │ │   └── gen_meta_tmp.sh
   12M   │ ├─┬ cargo-bins
   12M   │ │ ├─┬ data
  4.1M   │ │ │ ├── x86_64-Linux.json
@@ -99,7 +122,7 @@
  256K   │ │ │ ├── x86_64-Linux.db.xz
  236K   │ │ │ ├── x86_64-Linux.json.zstd
  224K   │ │ │ ├── x86_64-Linux.json.xz
- 140K   │ │ │ ├── aarch64-Linux.db.cba
+ 144K   │ │ │ ├── aarch64-Linux.db.cba
  136K   │ │ │ ├── aarch64-Linux.json.cba
  116K   │ │ │ ├── aarch64-Linux.db.zstd
  112K   │ │ │ ├── aarch64-Linux.db.xz
@@ -120,29 +143,6 @@
  4.0K   │ │ │ └── TOTAL.json
   28K   │ │ └─┬ scripts
   24K   │ │   └── gen_meta.sh
-  12M   │ ├─┬ am
-  12M   │ │ ├─┬ data
- 4.2M   │ │ │ ├── x86_64-Linux.json
- 3.5M   │ │ │ ├── x86_64-Linux.db
- 1.1M   │ │ │ ├── x86_64-Linux.AM.txt
- 1.0M   │ │ │ ├── aarch64-Linux.AM.txt
- 524K   │ │ │ ├── x86_64-Linux.db.cba
- 496K   │ │ │ ├── x86_64-Linux.json.cba
- 440K   │ │ │ ├── x86_64-Linux.db.zstd
- 428K   │ │ │ ├── x86_64-Linux.db.xz
- 404K   │ │ │ ├── x86_64-Linux.json.zstd
- 392K   │ │ │ ├── x86_64-Linux.json.xz
- 4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
- 4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
- 4.0K   │ │ │ ├── x86_64-Linux.json.bsum
- 4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
- 4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
- 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
- 4.0K   │ │ │ └── TOTAL.json
-  44K   │ │ └─┬ scripts
-  20K   │ │   ├── gen_meta.sh
-  12K   │ │   ├── gen_meta_old.sh
- 8.0K   │ │   └── gen_meta_tmp.sh
  6.0M   │ ├─┬ appimagehub
  5.9M   │ │ ├─┬ data
  2.3M   │ │ │ ├── x86_64-Linux.json

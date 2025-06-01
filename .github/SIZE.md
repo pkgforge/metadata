@@ -1,5 +1,5 @@
 ```mathematica
- 443M └─┬ main
+ 444M └─┬ main
  176M   ├─┬ misc
  176M   │ ├─┬ data
   71M   │ │ ├── ARCHLINUX.json
@@ -350,7 +350,7 @@
   28K   │   ├── icon_database.png
   24K   │   ├── icon_config_multi.png
   20K   │   └── icon_json.png
- 284K   ├── GHCR_PKGS.json.zstd
+ 288K   ├── GHCR_PKGS.json.zstd
   28K   ├─┬ r2
   12K   │ ├─┬ scripts
  8.0K   │ │ └── sync_r2_mirror.sh

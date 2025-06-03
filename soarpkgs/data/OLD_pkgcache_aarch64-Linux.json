@@ -1754,6 +1754,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fanficfare",
+    "pkg_family": "fanficfare",
+    "pkg_id": "sharun.wrappe.pypi.fanficfare",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-fanficfare/fanficfare/fanficfare",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fanficfare/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Tool to make eBooks from stories on fanfiction and other websites",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "fanficfare",
+          "fanficfare-git"
+        ]
+      },
+      "nixpkgs": [
+        "fanficfare"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fanficfare/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/JimmXinu/FanFicFare"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fanficfare/archive/sharun",
+    "provides": [
+      "fanficfare"
+    ],
+    "repology": [
+      "fanficfare"
+    ],
+    "src_url": [
+      "https://pypi.org/project/fanficfare"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "4.45.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "file",
     "pkg_family": "file",
     "pkg_id": "ppkg.bundle.file.stable",
@@ -2552,7 +2611,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250602T005111"
+    "version": "250603T005009"
   },
   {
     "_disabled": "false",
@@ -7118,5 +7177,86 @@
       "Utility"
     ],
     "version": "1.14.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zmap",
+    "pkg_family": "zmap",
+    "pkg_id": "sharun.wrappe.source.zmap",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-zmap/zmap/zmap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zmap/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast single packet network scanner designed for Internet-wide network surveys",
+      "zblocklist": "Tool for limiting and deduplicating a list of IP addresses using a blocklist or allowlist [zmap]",
+      "ziterate": "IP permutation generation file [zmap]",
+      "zmap": "The Fast Internet Scanner [zmap]",
+      "ztee": "Output buffer and splitter for use with ZMap output data [zmap]",
+      "ztests": "A tests harness tool for zmap [zmap]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "zmap"
+      ],
+      "archlinux": {
+        "aur": [
+          "zmap-git"
+        ],
+        "extra": [
+          "zmap"
+        ]
+      },
+      "debian": [
+        "zmap"
+      ],
+      "homebrew": [
+        "zmap"
+      ],
+      "nixpkgs": [
+        "zmap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zmap/archive.sharun.source.yaml",
+    "homepage": [
+      "https://zmap.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zmap/archive/sharun",
+    "provides": [
+      "zblocklist",
+      "ziterate",
+      "zmap",
+      "ztee",
+      "ztests"
+    ],
+    "repology": [
+      "zmap-network-scanner"
+    ],
+    "src_url": [
+      "https://github.com/zmap/zmap"
+    ],
+    "tag": [
+      "security"
+    ],
+    "version": "HEAD-324a89a-250511T135239"
   }
 ]

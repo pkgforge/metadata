@@ -6036,6 +6036,7 @@
     "pkg_id": "nixpkgs.bc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bc/bc/bc",
+    "bincache": "ghcr.io/pkgforge/bincache/bc/nixpkgs/bc",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bc/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -6609,6 +6610,7 @@
     "pkg_id": "ppkg.bin-graph.stable",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/graph-stable/bin-graph/bin-graph",
+    "bincache": "ghcr.io/pkgforge/bincache/bin-graph/ppkg/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bin-graph/static.ppkg.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -7279,6 +7281,7 @@
     "pkg_id": "nixpkgs.bison",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bison/bison/bison",
+    "bincache": "ghcr.io/pkgforge/bincache/bison/nixpkgs/bison",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bison/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -8470,6 +8473,7 @@
     "pkg_id": "nixpkgs.brotli",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brotli/brotli/brotli",
+    "bincache": "ghcr.io/pkgforge/bincache/brotli/nixpkgs/brotli",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/brotli/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -12176,6 +12180,7 @@
     "pkg_id": "nixpkgs.byacc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-byacc/byacc/byacc",
+    "bincache": "ghcr.io/pkgforge/bincache/byacc/nixpkgs/byacc",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/byacc/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -28885,7 +28890,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7b6ca37-250602T020741"
+    "version": "HEAD-0b947e1-250603T193002"
   },
   {
     "_disabled": "false",
@@ -28939,6 +28944,7 @@
     "pkg_id": "nixpkgs.faad2",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-faad2/faad2/faad2",
+    "bincache": "ghcr.io/pkgforge/bincache/faad2/nixpkgs/faad",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/faad2/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -31685,6 +31691,52 @@
     "_disabled": "false",
     "pkg": "forkstat",
     "pkg_family": "forkstat",
+    "pkg_id": "ppkg.forkstat.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/forkstat-stable/forkstat/forkstat",
+    "bincache": "ghcr.io/pkgforge/bincache/forkstat/ppkg/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/forkstat/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Log process fork(), exec() and exit() activity",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/forkstat/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/ColinIanKing/forkstat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "forkstat"
+    ],
+    "repology": [
+      "forkstat"
+    ],
+    "src_url": [
+      "https://github.com/ColinIanKing/forkstat"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "V0.04.00"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "forkstat",
+    "pkg_family": "forkstat",
     "pkg_id": "github.com.ColinIanKing.forkstat.source",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/forkstat-source/forkstat/forkstat",
@@ -31723,51 +31775,6 @@
       "Utility"
     ],
     "version": "HEAD-4efddd6-250416T101208"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "forkstat",
-    "pkg_family": "forkstat",
-    "pkg_id": "ppkg.forkstat.stable",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/forkstat-stable/forkstat/forkstat",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/forkstat/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Log process fork(), exec() and exit() activity",
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/forkstat/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://github.com/ColinIanKing/forkstat"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "forkstat"
-    ],
-    "repology": [
-      "forkstat"
-    ],
-    "src_url": [
-      "https://github.com/ColinIanKing/forkstat"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "V0.04.00"
   },
   {
     "_disabled": "false",
@@ -34308,7 +34315,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-795ecf9-250603T120340"
+    "version": "HEAD-8966b16-250603T180411"
   },
   {
     "_disabled": "false",
@@ -41658,6 +41665,7 @@
     "pkg_id": "ppkg.hdiffpatch.stable",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hdiffpatch-stable/hdiffpatch/hdiffpatch",
+    "bincache": "ghcr.io/pkgforge/bincache/hdiffpatch/ppkg/stable",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hdiffpatch/static.ppkg.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -44047,7 +44055,8 @@
     "tag": [
       "editor",
       "graphics"
-    ]
+    ],
+    "version": "1.4.2"
   },
   {
     "_disabled": "false",
@@ -44313,6 +44322,7 @@
     "pkg_id": "nixpkgs.interception-tools",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/interception-tools/interception-tools/interception-tools",
+    "bincache": "ghcr.io/pkgforge/bincache/interception-tools/nixpkgs/intercept",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/interception-tools/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -54483,6 +54493,7 @@
     "pkg_id": "nixpkgs.mjpegtools",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-mjpegtools/mjpegtools/mjpegtools",
+    "bincache": "ghcr.io/pkgforge/bincache/mjpegtools/nixpkgs/jpeg2yuv",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mjpegtools/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -55523,6 +55534,7 @@
     "pkg_id": "nixpkgs.mtools",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-mtools/mtools/mtools",
+    "bincache": "ghcr.io/pkgforge/bincache/mtools/nixpkgs/lz",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mtools/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -65909,7 +65921,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-1be15eb-250603T121003"
+    "version": "HEAD-0017dae-250603T135818"
   },
   {
     "_disabled": "false",
@@ -73116,7 +73128,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-cfae4fd-250602T084902"
+    "version": "HEAD-65cee5a-250603T201037"
   },
   {
     "_disabled": "false",
@@ -82327,6 +82339,7 @@
     "pkg_id": "nixpkgs.twolame",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-twolame/twolame/twolame",
+    "bincache": "ghcr.io/pkgforge/bincache/twolame/nixpkgs/twolame",
     "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/twolame/static.nixpkgs.stable.yaml",
     "category": [
       "ConsoleOnly",
@@ -82605,7 +82618,7 @@
       "busybox",
       "coreboot"
     ],
-    "version": "HEAD-9747061-250603T113650"
+    "version": "HEAD-54a842e-250603T215854"
   },
   {
     "_disabled": "false",
@@ -85758,7 +85771,7 @@
       "editor",
       "ide"
     ],
-    "version": "1.100.23258"
+    "version": "1.100.33714"
   },
   {
     "_disabled": "false",
@@ -85986,7 +85999,7 @@
     "tag": [
       "vultr"
     ],
-    "version": "HEAD-c39e78a-250516T163133"
+    "version": "HEAD-7af49c7-250603T140127"
   },
   {
     "_disabled": "false",
@@ -86770,7 +86783,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f89fb25-250603T165541"
+    "version": "HEAD-583655a-250603T172735"
   },
   {
     "_disabled": "false",
@@ -91909,7 +91922,7 @@
       "emulator",
       "game"
     ],
-    "version": "v0.188.5"
+    "version": "v0.188.6"
   },
   {
     "_disabled": "false",

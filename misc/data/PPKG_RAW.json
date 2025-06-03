@@ -14529,13 +14529,14 @@
   {
     "pkgname": "libsodium",
     "pkgtype": "lib",
-    "version": "1.0.19",
+    "version": "1.0.20",
     "license": "ISC",
     "summary": "A modern, portable, easy to use crypto library",
     "web-url": "https://libsodium.org/",
     "git-url": "https://github.com/jedisct1/libsodium",
-    "src-url": "https://download.libsodium.org/libsodium/releases/libsodium-1.0.19.tar.gz",
-    "src-sha": "018d79fe0a045cca07331d37bd0cb57b2e838c51bc48fd837a1472e50068bbea",
+    "src-url": "https://download.libsodium.org/libsodium/releases/libsodium-1.0.20.tar.gz",
+    "src-uri": "https://distfiles.macports.org/libsodium/libsodium-1.0.20.tar.gz",
+    "src-sha": "ebb65ef6ca439333c2bb41a0c1990587288da07f6c7fd07cb3a18cc18d30ce19",
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
@@ -17704,6 +17705,24 @@
     "install": "configure \\\n    --disable-debug \\\n    --enable-ipv6 \\\n    --enable-static \\\n    --with-module-suffix=$SHARED_LIBRARY_SUFFIX"
   },
   {
+    "pkgname": "mprocs",
+    "pkgtype": "exe",
+    "version": "0.7.3",
+    "license": "MIT",
+    "summary": "Run multiple commands in parallel",
+    "web-url": "https://github.com/pvolok/mprocs",
+    "git-url": "https://github.com/pvolok/mprocs",
+    "src-url": "https://github.com/pvolok/mprocs/archive/refs/tags/v0.7.3.tar.gz",
+    "src-sha": "a058a2806319a0a1ab644158b741e9a54be28540c88d15d213b820b3f97a65da",
+    "dep-upp": "curl bsdtar",
+    "bsystem": "cargo",
+    "binbstd": "1",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "cargow install --path src"
+  },
+  {
     "pkgname": "mpv",
     "pkgtype": "exe",
     "version": "0.39.0",
@@ -20845,6 +20864,24 @@
     "install": "cmakew \\\n    -DRUY_PROFILER=OFF \\\n    -DRUY_FIND_CPUINFO=ON \\\n    -DRUY_MINIMAL_BUILD=ON \\\n    -DRUY_ENABLE_INSTALL=ON"
   },
   {
+    "pkgname": "rvvm",
+    "pkgtype": "exe",
+    "version": "0.6",
+    "license": "GPL-3.0 MPL-2.0",
+    "summary": "A virtual machine / emulator for RISC-V guests, which emphasizes on performance, security, lean code and portability",
+    "web-url": "https://github.com/LekKit/RVVM",
+    "git-url": "https://github.com/LekKit/RVVM",
+    "src-url": "https://github.com/LekKit/RVVM/archive/refs/tags/v0.6.tar.gz",
+    "src-sha": "97e98c95d8785438758b81fb5c695b8eafb564502c6af7f52555b056e3bb7d7a",
+    "dep-upp": "curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "cmakew -DRVVM_USE_LIB=OFF -DRVVM_USE_JNI=OFF -DRVVM_USE_JIT=ON\ninstall_bins rvvm"
+  },
+  {
     "pkgname": "samba",
     "pkgtype": "exe",
     "version": "4.21.2",
@@ -22630,7 +22667,7 @@
   },
   {
     "pkgname": "torsocks",
-    "pkgtype": "exe",
+    "pkgtype": "exe+lib",
     "version": "2.5.0",
     "license": "GPL-2.0-only",
     "summary": "Use SOCKS-friendly applications with Tor",
@@ -22648,7 +22685,7 @@
     "movable": "1",
     "prepare": "if printf 'int main() { return 0; }\\n' | \"$CC\" -c -x c -Werror -Wimplicit-function-declaration -o /dev/null - ; then\n    export CFLAGS=\"$CFLAGS -Wno-implicit-function-declaration\"\nfi",
     "install": "configure",
-    "dotweak": "run rm -rf lib/"
+    "dotweak": "gsed -i '/^prefix=/c prefix=\"$(dirname \"$0\")\"\\ncd \"$prefix\"\\nprefix=\"${PWD%/*}\"\\ncd - > /dev/null' bin/torsocks"
   },
   {
     "pkgname": "totp-cli",

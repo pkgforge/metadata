@@ -623,6 +623,85 @@
     "version": "v3.56.0"
   },
   {
+    "_disabled": "true",
+    "_disabled_reason": [
+      "Too slow & Expensive"
+    ],
+    "pkg": "bash",
+    "pkg_family": "bash",
+    "pkg_id": "gnuguix.bash",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gnuguix-bash/bash/bash",
+    "bincache": "ghcr.io/pkgforge/bincache/bash/gnuguix/bash",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bash/static.gnuguix.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux",
+    "distro_pkg": {
+      "alpine": [
+        "bash"
+      ],
+      "archlinux": {
+        "aur": [
+          "bash-devel-git",
+          "bash-devel-static-git",
+          "bash-git",
+          "bash3",
+          "bash4"
+        ]
+      },
+      "debian": [
+        "bash"
+      ],
+      "gnuguix": [
+        "bash",
+        "bash-minimal",
+        "bash-static"
+      ],
+      "homebrew": [
+        "bash"
+      ],
+      "nixpkgs": [
+        "bash"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bash/static.gnuguix.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/bash/",
+      "https://git.savannah.gnu.org/cgit/bash.git",
+      "https://savannah.gnu.org/projects/bash"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Guix. Check/Report @ https://issues.guix.gnu.org/search?query=bash-static"
+    ],
+    "provides": [
+      "bash==sh"
+    ],
+    "repology": [
+      "bash"
+    ],
+    "src_url": [
+      "https://git.savannah.gnu.org/cgit/bash.git"
+    ],
+    "tag": [
+      "bash",
+      "shell"
+    ]
+  },
+  {
     "_disabled": "false",
     "pkg": "bash",
     "pkg_family": "bash",
@@ -4388,7 +4467,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-2c3bd7a-250603T035001"
+    "version": "HEAD-7a903bd-250603T162719"
   },
   {
     "_disabled": "false",
@@ -5897,7 +5976,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-0b947e1-250603T193002"
+    "version": "HEAD-a657120-250603T234543"
   },
   {
     "_disabled": "false",
@@ -6695,7 +6774,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-8966b16-250603T180411"
+    "version": "HEAD-9fc86e2-250604T000809"
   },
   {
     "_disabled": "false",
@@ -7073,7 +7152,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-4f95dc6-250524T145610"
+    "version": "HEAD-89fc507-250603T234102"
   },
   {
     "_disabled": "false",
@@ -7619,6 +7698,111 @@
       "gpg"
     ],
     "version": "HEAD-18b4a9a-250602T124924"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "hakoniwa",
+    "pkg_family": "hakoniwa",
+    "pkg_id": "github.com.souk4711.hakoniwa.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hakoniwa-source/hakoniwa/hakoniwa",
+    "bincache": "ghcr.io/pkgforge/bincache/hakoniwa/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hakoniwa/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Process isolation for Linux using namespaces, resource limits, landlock and seccomp",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hakoniwa/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/souk4711/hakoniwa"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/souk4711/hakoniwa"
+    ],
+    "provides": [
+      "hakoniwa"
+    ],
+    "src_url": [
+      "https://github.com/souk4711/hakoniwa"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-9e584f1-250604T003856"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "hcloud",
+    "pkg_family": "hcloud",
+    "pkg_id": "github.com.hetznercloud.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hetznercloud-cli/hcloud/hcloud",
+    "bincache": "ghcr.io/pkgforge/bincache/hcloud/official/hcloud",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hcloud/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line interface for Hetzner Cloud",
+    "distro_pkg": {
+      "alpine": [
+        "hcloud"
+      ],
+      "archlinux": {
+        "extra": [
+          "hcloud"
+        ]
+      },
+      "homebrew": [
+        "hcloud"
+      ],
+      "nixpkgs": [
+        "hcloud"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hcloud/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/hetznercloud/cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/hetznercloud/cli"
+    ],
+    "provides": [
+      "hcloud"
+    ],
+    "repology": [
+      "hcloud"
+    ],
+    "src_url": [
+      "https://github.com/hetznercloud/cli"
+    ],
+    "tag": [
+      "hetzner"
+    ],
+    "version": "HEAD-173ebe2-250603T185326"
   },
   {
     "_disabled": "false",
@@ -8553,7 +8737,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-8739bdf-250603T083417"
+    "version": "HEAD-56b3939-250604T002800"
   },
   {
     "_disabled": "false",
@@ -10408,7 +10592,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-e7d2717-250603T112112"
+    "version": "HEAD-b83aa17-250604T084839"
   },
   {
     "_disabled": "false",
@@ -10472,7 +10656,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-e7d2717-250603T112112"
+    "version": "HEAD-b83aa17-250604T084839"
   },
   {
     "_disabled": "false",
@@ -11381,6 +11565,73 @@
     "version": "v0.8.6"
   },
   {
+    "_disabled": "true",
+    "_disabled_reason": [
+      "Too slow & Expensive"
+    ],
+    "pkg": "proot",
+    "pkg_family": "proot",
+    "pkg_id": "gnuguix.proot-static",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/proot-static/proot/proot",
+    "bincache": "ghcr.io/pkgforge/bincache/proot/gnuguix/proot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/proot/static.gnuguix.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "User-space implementation of chroot, bind mount, and binfmt_misc",
+    "distro_pkg": {
+      "alpine": [
+        "proot"
+      ],
+      "archlinux": {
+        "aur": [
+          "proot",
+          "proot-git"
+        ]
+      },
+      "debian": [
+        "proot"
+      ],
+      "gnuguix": [
+        "proot",
+        "proot-static"
+      ],
+      "nixpkgs": [
+        "proot"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/proot/static.gnuguix.stable.yaml",
+    "homepage": [
+      "https://proot-me.github.io/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Guix. Check/Report @ https://issues.guix.gnu.org/search?query=proot-static"
+    ],
+    "repology": [
+      "proot"
+    ],
+    "src_url": [
+      "https://github.com/proot-me/proot"
+    ],
+    "tag": [
+      "chroot",
+      "rootfs"
+    ]
+  },
+  {
     "_disabled": "false",
     "pkg": "proxychains-ng",
     "pkg_family": "proxychains-ng",
@@ -11671,7 +11922,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-135e785-250602T234814"
+    "version": "HEAD-38dc1eb-250603T180417"
   },
   {
     "_disabled": "false",
@@ -11727,7 +11978,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-0017dae-250603T135818"
+    "version": "HEAD-8a9f18e-250603T203101"
   },
   {
     "_disabled": "false",
@@ -13513,173 +13764,6 @@
     "version": "HEAD-b845a85-250101T225511"
   },
   {
-    "_disabled": "false",
-    "pkg": "soar",
-    "pkg_family": "soar",
-    "pkg_id": "github.com.pkgforge.soar.glibc",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soar-glibc/soar/soar",
-    "bincache": "ghcr.io/pkgforge/bincache/soar/glibc/soar",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.glibc.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (GLIBC)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "soar-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.glibc.source.yaml",
-    "homepage": [
-      "https://soar.qaidvoid.dev",
-      "https://github.com/pkgforge/soar"
-    ],
-    "host": [
-      "aarch64-linux",
-      "riscv64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
-      "Statically Linked on Debian (GLIBC)"
-    ],
-    "provides": [
-      "soar"
-    ],
-    "repology": [
-      "soar"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge/soar"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-927d59f-250603T225516"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "soar",
-    "pkg_family": "soar",
-    "pkg_id": "github.com.pkgforge.soar.glibc-v3",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/glibc-v3/soar/soar",
-    "bincache": "ghcr.io/pkgforge/bincache/soar/glibc-v3/soar",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.glibc-v3.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (GLIBC-x86-64-v3)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "soar-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.glibc-v3.source.yaml",
-    "homepage": [
-      "https://soar.qaidvoid.dev",
-      "https://github.com/pkgforge/soar"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
-      "Statically Linked on Debian (GLIBC), optimized for x86-64-v3"
-    ],
-    "provides": [
-      "soar"
-    ],
-    "repology": [
-      "soar"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge/soar"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-927d59f-250603T225516"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "soar",
-    "pkg_family": "soar",
-    "pkg_id": "github.com.pkgforge.soar.glibc-v4",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/glibc-v4/soar/soar",
-    "bincache": "ghcr.io/pkgforge/bincache/soar/glibc-v4/soar",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.glibc-v4.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (GLIBC-x86-64-v4)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "soar-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.glibc-v4.source.yaml",
-    "homepage": [
-      "https://soar.qaidvoid.dev",
-      "https://github.com/pkgforge/soar"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
-      "Statically Linked on Debian (GLIBC), optimized for x86-64-v4"
-    ],
-    "provides": [
-      "soar"
-    ],
-    "repology": [
-      "soar"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge/soar"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-927d59f-250603T225516"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -13726,172 +13810,6 @@
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar"
-    ],
-    "provides": [
-      "soar"
-    ],
-    "repology": [
-      "soar"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge/soar"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-927d59f-250603T225516"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "soar",
-    "pkg_family": "soar",
-    "pkg_id": "github.com.pkgforge.soar.musl",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soar-musl/soar/soar",
-    "bincache": "ghcr.io/pkgforge/bincache/soar/musl/soar",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.musl.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (MUSL)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "soar-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.musl.source.yaml",
-    "homepage": [
-      "https://soar.qaidvoid.dev",
-      "https://github.com/pkgforge/soar"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
-      "Built on Vanilla Musl"
-    ],
-    "provides": [
-      "soar"
-    ],
-    "repology": [
-      "soar"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge/soar"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-927d59f-250603T225516"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "soar",
-    "pkg_family": "soar",
-    "pkg_id": "github.com.pkgforge.soar.musl-v3",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/musl-v3/soar/soar",
-    "bincache": "ghcr.io/pkgforge/bincache/soar/musl-v3/soar",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.musl-v3.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (MUSL-x86-64-v3)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "soar-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.musl-v3.source.yaml",
-    "homepage": [
-      "https://soar.qaidvoid.dev",
-      "https://github.com/pkgforge/soar"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
-      "Built on Vanilla Musl, optimized for x86-64-v3"
-    ],
-    "provides": [
-      "soar"
-    ],
-    "repology": [
-      "soar"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge/soar"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "HEAD-927d59f-250603T225516"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "soar",
-    "pkg_family": "soar",
-    "pkg_id": "github.com.pkgforge.soar.musl-v4",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/musl-v4/soar/soar",
-    "bincache": "ghcr.io/pkgforge/bincache/soar/musl-v4/soar",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soar/static.musl-v4.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "The Modern, Bloat-Free Distro-Independent Package Manager (MUSL-x86-64-v4)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "soar-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soar/static.musl-v4.source.yaml",
-    "homepage": [
-      "https://soar.qaidvoid.dev",
-      "https://github.com/pkgforge/soar"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/binaries/soar/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pkgforge/soar",
-      "Built on Vanilla Musl, optimized for x86-64-v4"
     ],
     "provides": [
       "soar"
@@ -14470,7 +14388,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-5f0e139-250603T125200"
+    "version": "HEAD-1635ccc-250603T140004"
   },
   {
     "_disabled": "false",
@@ -18494,7 +18412,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-a523f31-250602T185001"
+    "version": "HEAD-150a220-250603T213345"
   },
   {
     "_disabled": "false",
@@ -18580,7 +18498,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-583655a-250603T172735"
+    "version": "HEAD-5603ee7-250603T221129"
   },
   {
     "_disabled": "false",
@@ -19392,7 +19310,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-211733b-250603T183503"
+    "version": "HEAD-a8c4240-250603T214116"
   },
   {
     "_disabled": "false",

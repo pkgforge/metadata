@@ -1121,7 +1121,7 @@
       "knowledge-base",
       "wiki"
     ],
-    "version": "v0.21.6"
+    "version": "v0.22.0"
   },
   {
     "_disabled": "false",
@@ -1210,7 +1210,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3caf04f-250602T180533"
+    "version": "HEAD-5f2dbce-250604T162901"
   },
   {
     "_disabled": "false",
@@ -2208,7 +2208,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-2465778-250603T020312"
+    "version": "HEAD-0dd2ea5-250604T085400"
   },
   {
     "_disabled": "false",
@@ -5619,6 +5619,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -15016,7 +15017,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "v0.144.0"
+    "version": "v0.144.1"
   },
   {
     "_disabled": "false",
@@ -16494,6 +16495,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -19672,7 +19674,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7225485-250531T043557"
+    "version": "HEAD-93b0d0b-250604T133257"
   },
   {
     "_disabled": "false",
@@ -21071,6 +21073,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "icon": "https://soarpkgs.pkgforge.dev/binaries/curl/assets/default.svg",
@@ -21098,7 +21101,7 @@
       "http3",
       "http3-client"
     ],
-    "version": "8.14.0"
+    "version": "8.14.1"
   },
   {
     "_disabled": "false",
@@ -22108,7 +22111,7 @@
     "tag": [
       "devenv"
     ],
-    "version": "HEAD-b747a03-250603T151538"
+    "version": "HEAD-60d45e9-250604T103955"
   },
   {
     "_disabled": "false",
@@ -22151,7 +22154,7 @@
       "benchmark",
       "database"
     ],
-    "version": "HEAD-8ce6793-250529T102603"
+    "version": "HEAD-9b82e86-250604T083437"
   },
   {
     "_disabled": "false",
@@ -24019,7 +24022,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3687181-250603T094620"
+    "version": "HEAD-2d099e2-250604T094856"
   },
   {
     "_disabled": "false",
@@ -28890,7 +28893,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-a657120-250603T234543"
+    "version": "HEAD-ddd8fc4-250604T073631"
   },
   {
     "_disabled": "false",
@@ -31105,7 +31108,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "141.0.20250603213222"
+    "version": "141.0.20250604040711"
   },
   {
     "_disabled": "false",
@@ -31842,7 +31845,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b62a37e-250524T144749"
+    "version": "HEAD-9874bac-250604T124410"
   },
   {
     "_disabled": "false",
@@ -32137,7 +32140,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f262374-250522T233902"
+    "version": "HEAD-4ad5fe5-250603T215653"
   },
   {
     "_disabled": "false",
@@ -33998,6 +34001,74 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gh",
+    "pkg_family": "gh",
+    "pkg_id": "github.com.cli.cli.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-source/gh/gh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gh/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GitHub CLI tool",
+    "distro_pkg": {
+      "alpine": [
+        "github-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "github-cli-git"
+        ],
+        "extra": [
+          "github-cli"
+        ]
+      },
+      "debian": [
+        "gh"
+      ],
+      "homebrew": [
+        "gh"
+      ],
+      "nixpkgs": [
+        "gh"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gh/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/cli/cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/cli/cli"
+    ],
+    "provides": [
+      "gh==github-cli"
+    ],
+    "repology": [
+      "github-cli"
+    ],
+    "src_url": [
+      "https://github.com/cli/cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-c13f2f1-250602T174430"
+  },
+  {
+    "_disabled": "false",
     "pkg": "gh-dash",
     "pkg_family": "gh-dash",
     "pkg_id": "github.com.dlvhdr.gh-dash",
@@ -34315,7 +34386,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-0340c9b-250604T060359"
+    "version": "HEAD-82e719c-250604T120336"
   },
   {
     "_disabled": "false",
@@ -36466,6 +36537,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -42746,7 +42818,7 @@
     "tag": [
       "monitor"
     ],
-    "version": "HEAD-8988cff-250603T132217"
+    "version": "HEAD-3c32af7-250604T083218"
   },
   {
     "_disabled": "false",
@@ -44841,7 +44913,7 @@
       "ios",
       "ipa"
     ],
-    "version": "HEAD-197db0f-250523T004649"
+    "version": "HEAD-6faaeed-250604T175301"
   },
   {
     "_disabled": "false",
@@ -45469,7 +45541,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-fad99ab-250603T162916"
+    "version": "HEAD-d4de591-250604T114227"
   },
   {
     "_disabled": "false",
@@ -46231,6 +46303,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -46683,7 +46756,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-56b3939-250604T002800"
+    "version": "HEAD-1158582-250604T072449"
   },
   {
     "_disabled": "false",
@@ -47213,7 +47286,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-06-03"
+    "version": "2025-06-04"
   },
   {
     "_disabled": "false",
@@ -54061,7 +54134,7 @@
     "tag": [
       "utility"
     ],
-    "version": "HEAD-68f2845-250516T083228"
+    "version": "HEAD-cc7f72b-250604T081140"
   },
   {
     "_disabled": "false",
@@ -56768,7 +56841,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-0cd36ba-250603T130939"
+    "version": "HEAD-87148c5-250604T112131"
   },
   {
     "_disabled": "false",
@@ -58739,7 +58812,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-b83aa17-250604T084839"
+    "version": "HEAD-42fc9f5-250604T101925"
   },
   {
     "_disabled": "false",
@@ -58802,7 +58875,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-b83aa17-250604T084839"
+    "version": "HEAD-42fc9f5-250604T101925"
   },
   {
     "_disabled": "false",
@@ -60285,6 +60358,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -60348,6 +60422,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -65921,7 +65996,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-8a9f18e-250603T203101"
+    "version": "HEAD-90d8c5d-250603T220155"
   },
   {
     "_disabled": "false",
@@ -68195,7 +68270,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-44b9fe0-250426T234414"
+    "version": "HEAD-7696694-250604T114618"
   },
   {
     "_disabled": "false",
@@ -71934,6 +72009,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -72931,7 +73007,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-0639329-250529T121343"
+    "version": "HEAD-46470cc-250604T201207"
   },
   {
     "_disabled": "false",
@@ -76643,7 +76719,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8cbe22c-250603T174526"
+    "version": "HEAD-4ae6fc1-250604T122453"
   },
   {
     "_disabled": "false",
@@ -77463,7 +77539,7 @@
     "tag": [
       "sudo"
     ],
-    "version": "HEAD-c56c853-250603T153057"
+    "version": "HEAD-b7fa6c6-250604T115033"
   },
   {
     "_disabled": "false",
@@ -78350,7 +78426,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-1635ccc-250603T140004"
+    "version": "HEAD-5fde183-250604T110102"
   },
   {
     "_disabled": "false",
@@ -81366,7 +81442,7 @@
       "network",
       "traceroute"
     ],
-    "version": "HEAD-d11e230-250601T203054"
+    "version": "HEAD-496537d-250604T202916"
   },
   {
     "_disabled": "false",
@@ -81428,6 +81504,66 @@
       "security"
     ],
     "version": "v3.88.35"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "trufflehog",
+    "pkg_family": "trufflehog",
+    "pkg_id": "github.com.trufflesecurity.trufflehog.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/trufflehog-source/trufflehog/trufflehog",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/trufflehog/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Find, verify, and analyze leaked credentials",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "trufflehog",
+          "trufflehog-bin"
+        ]
+      },
+      "homebrew": [
+        "trufflehog"
+      ],
+      "nixpkgs": [
+        "trufflehog"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/trufflehog/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/trufflesecurity/trufflehog"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trufflesecurity/trufflehog"
+    ],
+    "provides": [
+      "trufflehog"
+    ],
+    "repology": [
+      "trufflehog"
+    ],
+    "src_url": [
+      "https://github.com/trufflesecurity/trufflehog"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-8b6aac3-250604T161300"
   },
   {
     "_disabled": "false",
@@ -86611,7 +86747,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3f6476a-250422T084127"
+    "version": "HEAD-29e0189-250604T115056"
   },
   {
     "_disabled": "false",
@@ -88663,6 +88799,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -89286,7 +89423,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-2a5d067-250603T162934"
+    "version": "HEAD-2bfb0cc-250604T122110"
   },
   {
     "_disabled": "false",
@@ -89944,7 +90081,7 @@
       "monero",
       "xmr"
     ],
-    "version": "v6.22.2"
+    "version": "v6.22.3"
   },
   {
     "_disabled": "false",
@@ -91257,6 +91394,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "maintainer": [
@@ -91320,6 +91458,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [

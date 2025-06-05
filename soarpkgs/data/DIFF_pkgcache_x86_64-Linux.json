@@ -116,7 +116,7 @@
     "tag": [
       "finance"
     ],
-    "version": "v25.6.0"
+    "version": "v25.6.1"
   },
   {
     "_disabled": "false",
@@ -495,7 +495,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.40.28"
+    "version": "1.40.29"
   },
   {
     "_disabled": "false",
@@ -611,7 +611,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.81.41"
+    "version": "v1.81.44"
   },
   {
     "_disabled": "false",
@@ -1284,7 +1284,7 @@
       "Communications",
       "Networking/Chat"
     ],
-    "version": "0.0.687"
+    "version": "0.0.688"
   },
   {
     "_disabled": "false",
@@ -1842,7 +1842,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "141.0.20250604040711"
+    "version": "141.0.20250604183413"
   },
   {
     "_disabled": "false",
@@ -2972,7 +2972,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-06-03"
+    "version": "2025-06-04"
   },
   {
     "_disabled": "true",
@@ -4447,8 +4447,76 @@
     ],
     "tag": [
       "Utility"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "twingate",
+    "pkg_family": "twingate",
+    "pkg_id": "sharun.wrappe.twingate.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/twingate-stable/twingate/twingate",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
     ],
-    "version": "1.76.0"
+    "description": {
+      "_default": "Zero trust remote access client for resource and networks",
+      "twingate": "Zero trust remote access client for resource and networks [twingate]",
+      "twingated": "Daemon for Twingate [twingate]",
+      "twingate-notifier": "Monitor & Notify for Twingate Client [twingate]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "twingate",
+          "twingate-bin"
+        ]
+      },
+      "homebrew": [
+        "twingate"
+      ],
+      "nixpkgs": [
+        "twingate"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/twingate/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://www.twingate.com/docs",
+      "https://www.twingate.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/twingate/archive/sharun",
+    "provides": [
+      "twingate",
+      "twingated",
+      "twingate-notifier"
+    ],
+    "repology": [
+      "twingate"
+    ],
+    "src_url": [
+      "https://packages.twingate.com/deb:twingate"
+    ],
+    "tag": [
+      "Utility"
+    ]
   },
   {
     "_disabled": "false",

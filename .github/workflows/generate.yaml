@@ -78,6 +78,11 @@ jobs:
             file: "/tmp/bincache_aarch64-Linux.json"
 
           - repo: "bincache"
+            script: "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_riscv64-Linux.sh"
+            arch: "riscv64"
+            file: "/tmp/bincache_riscv64-Linux.json"
+
+          - repo: "bincache"
             script: "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_x86_64-Linux.sh"
             arch: "x86_64"
             file: "/tmp/bincache_x86_64-Linux.json"
@@ -86,6 +91,11 @@ jobs:
             script: "${GITHUB_WORKSPACE}/main/pkgcache/scripts/gen_meta_aarch64-Linux.sh"
             arch: "aarch64"
             file: "/tmp/pkgcache_aarch64-Linux.json"
+
+          - repo: "pkgcache"
+            script: "${GITHUB_WORKSPACE}/main/pkgcache/scripts/gen_meta_riscv64-Linux.sh"
+            arch: "riscv64"
+            file: "/tmp/pkgcache_riscv64-Linux.json"
 
           - repo: "pkgcache"
             script: "${GITHUB_WORKSPACE}/main/pkgcache/scripts/gen_meta_x86_64-Linux.sh"
@@ -344,8 +354,10 @@ jobs:
           set +x ; set +e
           #--------------#
           curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d > "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/riscv64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
           curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
           curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/riscv64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
           curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
           if [[ -s "${SYSTMP}/DUPES_PKG_ID.txt.tmp" && $(stat -c%s "${SYSTMP}/DUPES_PKG_ID.txt.tmp") -gt 3 ]]; then
@@ -382,6 +394,17 @@ jobs:
             ($aarch64[0][] | select(.pkg_id == $id).version) as $aarch64_ver |
             $aarch64_ver == null or $ver != $aarch64_ver
            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_aarch64-Linux.json"
+          ##Version Diff (riscv64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile riscv64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/riscv64-Linux.json") \
+          '.[] | 
+          select((.pkg_type == "static" and (.host | contains(["riscv64-linux"]))) and (
+            .pkg_id as $id | 
+            .version as $ver |
+            ($riscv64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($riscv64[0][] | select(.pkg_id == $id).version) as $rv64_ver |
+            $rv64_ver == null or $ver != $rv64_ver
+          ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_riscv64-Linux.json"
           ##Version Diff (x86_64-Linux)
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
           jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json") \
@@ -410,6 +433,16 @@ jobs:
              ($aarch64[0][] | select(.pkg_id == $id).build_date) as $aarch64_date |
              $aarch64_date == null or $aarch64_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
             ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_bincache_aarch64-Linux.json"
+          ##Date Diff (riscv64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+           jq --slurpfile riscv64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/riscv64-Linux.json") \
+           '.[] | 
+           select((.pkg_type == "static" and (.host | contains(["riscv64-linux"]))) and (
+             .pkg_id as $id |
+             ($riscv64[0] | map(.pkg_id) | contains([$id]) | not) or
+             ($riscv64[0][] | select(.pkg_id == $id).build_date) as $rv64_date |
+             $rv64_date == null or $rv64_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_bincache_riscv64-Linux.json"
           ##Date Diff (x86_64-Linux)
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
            jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json") \
@@ -438,6 +471,17 @@ jobs:
             ($aarch64[0][] | select(.pkg_id == $id).version) as $aarch64_ver |
             $aarch64_ver == null or $ver != $aarch64_ver
            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_aarch64-Linux.json"
+          ##Version Diff (riscv64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile riscv64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/riscv64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["riscv64-linux"])) and (
+            .pkg_id as $id | 
+            .version as $ver |
+            ($riscv64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($riscv64[0][] | select(.pkg_id == $id).version) as $rv64_ver |
+            $rv64_ver == null or $ver != $rv64_ver
+          ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_riscv64-Linux.json"
           ##Version Diff (x86_64-Linux)
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
           jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json") \
@@ -466,6 +510,16 @@ jobs:
             ($aarch64[0][] | select(.pkg_id == $id).build_date) as $aarch64_date |
             $aarch64_date == null or $aarch64_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_pkgcache_aarch64-Linux.json"
+          ##Date Diff (riscv64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile riscv64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/riscv64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["riscv64-linux"])) and (
+            .pkg_id as $id |
+            ($riscv64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($riscv64[0][] | select(.pkg_id == $id).build_date) as $rv64_date |
+            $rv64_date == null or $rv64_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_pkgcache_riscv64-Linux.json"
           ##Date Diff (x86_64-Linux)
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
           jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json") \
@@ -500,6 +554,21 @@ jobs:
                sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_aarch64-Linux.txt"
             fi
           popd &>/dev/null
+          ##riscv64-Linux
+          pushd "$(mktemp -d)" &>/dev/null &&\
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):bincache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/bincache/data/riscv64-Linux.json" > "./ALL_riscv64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):pkgcache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/pkgcache/data/riscv64-Linux.json" >> "./ALL_riscv64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):ivan-hc-am ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/am/data/riscv64-Linux.json" >> "./ALL_riscv64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):appimage-github-io ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/riscv64-Linux.json" >> "./ALL_riscv64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):cargo-bins ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/cargo-bins/data/riscv64-Linux.json" >> "./ALL_riscv64-Linux.txt"
+            sort -u "./ALL_riscv64-Linux.txt" -o "./ALL_riscv64-Linux.txt"
+            sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "./ALL_riscv64-Linux.txt"
+            if [[ -s "./ALL_riscv64-Linux.txt" && $(wc -l < "./ALL_riscv64-Linux.txt" | tr -cd '0-9') -gt 1000 ]]; then
+               cp -fv "./ALL_riscv64-Linux.txt" "${GITHUB_WORKSPACE}/main/completions/ALL_riscv64-Linux.txt"
+               awk -F ' ## ' '{print $1}' "${GITHUB_WORKSPACE}/main/completions/ALL_riscv64-Linux.txt" > "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_riscv64-Linux.txt"
+               sort -u "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_riscv64-Linux.txt" -o "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_riscv64-Linux.txt"
+               sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_riscv64-Linux.txt"
+            fi
           ##x86_64-Linux
           pushd "$(mktemp -d)" &>/dev/null &&\
             jq -r '.[] | "\(.pkg_name)#\(.pkg_id):bincache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/bincache/data/x86_64-Linux.json" > "./ALL_x86_64-Linux.txt"

@@ -126,6 +126,7 @@ jobs:
           #--------------#
           ##Get Data
           curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json" -o "${SYSTMP}/bincache_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/riscv64-Linux.json" -o "${SYSTMP}/bincache_riscv64-Linux.json" &
           curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json" -o "${SYSTMP}/bincache_x86_64-Linux.json" &
           curl -qfsSL "https://meta.pkgforge.dev/external/am/aarch64-Linux.json" -o "${SYSTMP}/am_aarch64-Linux.json" &
           curl -qfsSL "https://meta.pkgforge.dev/external/am/x86_64-Linux.json" -o "${SYSTMP}/am_x86_64-Linux.json" &
@@ -136,6 +137,7 @@ jobs:
           curl -qfsSL "https://meta.pkgforge.dev/external/cargo-bins/aarch64-Linux.json" -o "${SYSTMP}/cargo-bins_aarch64-Linux.json" &
           curl -qfsSL "https://meta.pkgforge.dev/external/cargo-bins/x86_64-Linux.json" -o "${SYSTMP}/cargo-bins_x86_64-Linux.json" &
           curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json" -o "${SYSTMP}/pkgcache_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/riscv64-Linux.json" -o "${SYSTMP}/pkgcache_riscv64-Linux.json" &
           curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json" -o "${SYSTMP}/pkgcache_x86_64-Linux.json" &
           curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" -o "${SYSTMP}/soarpkgs_INDEX.json" &
           wait ; echo

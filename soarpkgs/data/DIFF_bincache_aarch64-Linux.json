@@ -529,6 +529,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -2074,6 +2075,46 @@
   },
   {
     "_disabled": "false",
+    "pkg": "cftun",
+    "pkg_family": "cftun",
+    "pkg_id": "github.com.fmnx.cftun.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cftun-source/cftun/cftun",
+    "bincache": "ghcr.io/pkgforge/bincache/cftun/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/cftun/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Third-party Cloudflare Tunnel client",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/cftun/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fmnx/cftun"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fmnx/cftun"
+    ],
+    "provides": [
+      "cftun"
+    ],
+    "src_url": [
+      "https://github.com/fmnx/cftun"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-4dce762-250605T123205"
+  },
+  {
+    "_disabled": "false",
     "pkg": "cirrus-cli",
     "pkg_family": "cirrus-cli",
     "pkg_id": "github.com.cirruslabs.cirrus-cli.stable",
@@ -2986,6 +3027,7 @@
     ],
     "host": [
       "aarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -3439,7 +3481,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-a7a493a-250604T172553"
+    "version": "HEAD-dd57bcf-250605T080358"
   },
   {
     "_disabled": "false",
@@ -3756,7 +3798,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-a7a493a-250604T172553"
+    "version": "HEAD-dd57bcf-250605T080358"
   },
   {
     "_disabled": "true",
@@ -4265,6 +4307,54 @@
       "Utility"
     ],
     "version": "HEAD-d77c065-250527T065425"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ctrsploit",
+    "pkg_family": "ctrsploit",
+    "pkg_id": "github.com.ctrsploit.ctrsploit",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ctrsploit-ctrsploit/ctrsploit/ctrsploit",
+    "bincache": "ghcr.io/pkgforge/bincache/ctrsploit/official/ctrsploit",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ctrsploit/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A Penetration Toolkit for Container Environments",
+      "ctrsploit-checksec": "Check basic security posture on a Container Environment [ctrsploit]",
+      "ctrsploit": "A Penetration Toolkit for Container Environments [ctrsploit]",
+      "ctrsploit-env": "Gather basic information on a Container Environment [ctrsploit]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ctrsploit/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ctrsploit/ctrsploit"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ctrsploit/ctrsploit"
+    ],
+    "provides": [
+      "ctrsploit-checksec",
+      "ctrsploit",
+      "ctrsploit-env"
+    ],
+    "src_url": [
+      "https://github.com/ctrsploit/ctrsploit"
+    ],
+    "tag": [
+      "container",
+      "security"
+    ],
+    "version": "HEAD-a042cd1-250605T115833"
   },
   {
     "_disabled": "false",
@@ -5462,6 +5552,86 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "github.com.fastfetch-cli.fastfetch",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-fastfetch/fastfetch/fastfetch",
+    "bincache": "ghcr.io/pkgforge/bincache/fastfetch/official/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fastfetch/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fastfetch/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fastfetch-cli/fastfetch",
+      "This version contains a limited set of features due to static linking",
+      "Please use the version from pkgcache if all features are needed"
+    ],
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "HEAD-20a3737-250605T105916"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ffmpeg",
     "pkg_family": "ffmpeg",
     "pkg_id": "github.com.wader.static-ffmpeg.stable",
@@ -5796,7 +5966,131 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-722e63e-250605T000647"
+    "version": "HEAD-0a35c77-250605T060308"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ghostunnel",
+    "pkg_family": "ghostunnel",
+    "pkg_id": "github.com.ghostunnel.ghostunnel.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ghostunnel-source/ghostunnel/ghostunnel",
+    "bincache": "ghcr.io/pkgforge/bincache/ghostunnel/official/ghostunnel",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ghostunnel/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "SSL/TLS proxy with mutual authentication for securing non-TLS services",
+    "distro_pkg": {
+      "homebrew": [
+        "ghostunnel"
+      ],
+      "nixpkgs": [
+        "ghostunnel"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ghostunnel/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ghostunnel/ghostunnel"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ghostunnel/ghostunnel"
+    ],
+    "provides": [
+      "ghostunnel"
+    ],
+    "repology": [
+      "ghostunnel"
+    ],
+    "src_url": [
+      "https://github.com/ghostunnel/ghostunnel"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-ade2a62-250604T211833"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gitlab-cli",
+    "pkg_family": "gitlab-cli",
+    "pkg_id": "gitlab.com.gitlab-org.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/org-cli/gitlab-cli/gitlab-cli",
+    "bincache": "ghcr.io/pkgforge/bincache/gitlab-cli/official/gitlab-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gitlab-cli/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Official Gitlab CLI",
+    "distro_pkg": {
+      "alpine": [
+        "glab"
+      ],
+      "archlinux": {
+        "aur": [
+          "glab-git"
+        ],
+        "extra": [
+          "glab"
+        ]
+      },
+      "debian": [
+        "glab"
+      ],
+      "homebrew": [
+        "glab"
+      ],
+      "nixpkgs": [
+        "glab"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gitlab-cli/static.official.source.yaml",
+    "homepage": [
+      "https://docs.gitlab.com/ee/editor_extensions/gitlab_cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://gitlab.com/gitlab-org/cli"
+    ],
+    "provides": [
+      "glab",
+      "gitlab-cli"
+    ],
+    "repology": [
+      "glab-gitlab-cli"
+    ],
+    "src_url": [
+      "https://gitlab.com/gitlab-org/cli"
+    ],
+    "tag": [
+      "gitlab"
+    ],
+    "version": "HEAD-9a13938-250605T082048"
   },
   {
     "_disabled": "false",
@@ -6615,6 +6909,69 @@
   },
   {
     "_disabled": "false",
+    "pkg": "iamb",
+    "pkg_family": "iamb",
+    "pkg_id": "github.com.ulyssa.iamb",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ulyssa-iamb/iamb/iamb",
+    "bincache": "ghcr.io/pkgforge/bincache/iamb/official/iamb",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/iamb/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A Matrix client for Vim addicts",
+    "distro_pkg": {
+      "alpine": [
+        "iamb"
+      ],
+      "archlinux": {
+        "aur": [
+          "iamb",
+          "iamb-bin",
+          "iamb-git"
+        ]
+      },
+      "nixpkgs": [
+        "iamb"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/iamb/static.official.source.yaml",
+    "homepage": [
+      "https://iamb.chat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "ISC",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ulyssa/iamb"
+    ],
+    "repology": [
+      "iamb"
+    ],
+    "src_url": [
+      "https://github.com/ulyssa/iamb"
+    ],
+    "tag": [
+      "chat",
+      "matrix",
+      "net",
+      "net-im"
+    ],
+    "version": "HEAD-a9cb560-250605T045706"
+  },
+  {
+    "_disabled": "false",
     "pkg": "is",
     "pkg_family": "is",
     "pkg_id": "github.com.oalders.is.source",
@@ -6926,7 +7283,7 @@
       "calculator",
       "math"
     ],
-    "version": "HEAD-89eb483-250604T143133"
+    "version": "HEAD-7d9df4f-250605T020027"
   },
   {
     "_disabled": "false",
@@ -7358,6 +7715,74 @@
       "mail"
     ],
     "version": "HEAD-c509830-250429T172945"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "miniflux",
+    "pkg_family": "miniflux",
+    "pkg_id": "github.com.miniflux.v2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/miniflux-v2/miniflux/miniflux",
+    "bincache": "ghcr.io/pkgforge/bincache/miniflux/official/miniflux",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miniflux/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Minimalist and opinionated feed reader",
+    "distro_pkg": {
+      "alpine": [
+        "miniflux"
+      ],
+      "archlinux": {
+        "aur": [
+          "miniflux-git"
+        ],
+        "extra": [
+          "miniflux"
+        ]
+      },
+      "debian": [
+        "miniflux"
+      ],
+      "gnuguix": [
+        "miniflux"
+      ],
+      "nixpkgs": [
+        "miniflux"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/miniflux/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/miniflux/v2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/miniflux/v2"
+    ],
+    "provides": [
+      "miniflux"
+    ],
+    "repology": [
+      "miniflux"
+    ],
+    "src_url": [
+      "https://github.com/miniflux/v2"
+    ],
+    "tag": [
+      "rss"
+    ],
+    "version": "HEAD-43d302e-250604T211026"
   },
   {
     "_disabled": "false",
@@ -9127,6 +9552,52 @@
       "torrent"
     ],
     "version": "release-5.1.0_v2.0.11"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "qp",
+    "pkg_family": "qp",
+    "pkg_id": "github.com.Zweih.qp.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qp-source/qp/qp",
+    "bincache": "ghcr.io/pkgforge/bincache/jqp/official/jqp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qp/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Query installed packages from any ecosystem",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qp/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/Zweih/qp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/Zweih/qp"
+    ],
+    "provides": [
+      "qp"
+    ],
+    "repology": [
+      "qp"
+    ],
+    "src_url": [
+      "https://github.com/Zweih/qp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-bb86bcb-250604T223644"
   },
   {
     "_disabled": "false",
@@ -13194,7 +13665,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-85efe08-250605T091946"
+    "version": "HEAD-602e86a-250605T115729"
   },
   {
     "_disabled": "false",
@@ -13323,7 +13794,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7883618-250605T002027"
+    "version": "HEAD-efa236e-250605T013923"
   },
   {
     "_disabled": "false",
@@ -14064,6 +14535,10 @@
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
       "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/magic-wormhole/magic-wormhole.rs"
     ],
+    "provides": [
+      "wormhole",
+      "wormhole-rs"
+    ],
     "repology": [
       "magic-wormhole-rs",
       "magic-wormhole.rs"
@@ -14180,7 +14655,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-73c53b0-250604T080650"
+    "version": "HEAD-f13fb41-250605T082944"
   },
   {
     "_disabled": "false",

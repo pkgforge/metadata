@@ -365,7 +365,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250605T024637"
+    "version": "250606T024615"
   },
   {
     "_disabled": "false",
@@ -673,7 +673,71 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.81.57"
+    "version": "v1.81.58"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "nixpkgs.brave",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/nixappimage/nixpkgs",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/brave/brave-browser"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "1.79.119"
   },
   {
     "_disabled": "false",
@@ -730,6 +794,145 @@
       "security"
     ],
     "version": "v0.48.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
+    "app_id": "org.chromium.Chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google (Stable)",
+    "distro_pkg": {
+      "alpine": [
+        "chromium"
+      ],
+      "archlinux": {
+        "extra": [
+          "chromium"
+        ]
+      },
+      "debian": [
+        "chromium"
+      ],
+      "homebrew": [
+        "chromium"
+      ],
+      "nixpkgs": [
+        "chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.chromium.org",
+      "https://chromium.googlesource.com/chromium/src",
+      "https://github.com/chromium/chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "chromium"
+    ],
+    "src_url": [
+      "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "137.0.7151.68"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "137.0.7151.68"
   },
   {
     "_disabled": "false",
@@ -852,7 +1055,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-007112f-250605T075115"
+    "version": "HEAD-8c5bdb0-250606T072435"
   },
   {
     "_disabled": "false",
@@ -963,6 +1166,74 @@
       "browser"
     ],
     "version": "v137.0.7151.56"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ddnet",
+    "pkg_family": "ddnet",
+    "pkg_id": "runimage.cachyos.ddnet",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-ddnet/ddnet/ddnet",
+    "app_id": "tw.ddnet.ddnet",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ddnet/runimage.cachyos.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Cooperative online platform game based on Teeworlds",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ddnet",
+          "ddnet-git"
+        ]
+      },
+      "debian": [
+        "ddnet"
+      ],
+      "homebrew": [
+        "ddnet"
+      ],
+      "nixpkgs": [
+        "ddnet",
+        "ddnet-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ddnet/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://ddnet.org",
+      "https://github.com/ddnet/ddnet"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/ddnet/assets/default.png",
+    "license": [
+      "CC-BY-SA-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ddnet/runimage/cachyos",
+    "provides": [
+      "ddnet=>DDNet",
+      "ddnet=>DDNet-server"
+    ],
+    "repology": [
+      "ddnet"
+    ],
+    "src_url": [
+      "https://github.com/ddnet/ddnet"
+    ],
+    "tag": [
+      "Game"
+    ],
+    "version": "19.2.1"
   },
   {
     "_disabled": "false",
@@ -1409,6 +1680,67 @@
       "Networking/Chat"
     ],
     "version": "0.0.147"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dvc",
+    "pkg_family": "dvc",
+    "pkg_id": "sharun.wrappe.pypi.dvc",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-dvc/dvc/dvc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/dvc/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A version control system and experiment tracker designed for machine learning projects",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "dvc"
+        ]
+      },
+      "homebrew": [
+        "dvc"
+      ],
+      "nixpkgs": [
+        "dvc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/dvc/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://dvc.org/doc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/dvc/archive/sharun",
+    "provides": [
+      "dvc"
+    ],
+    "repology": [
+      "dvc"
+    ],
+    "src_url": [
+      "https://pypi.org/project/dvc"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.60.0"
   },
   {
     "_disabled": "false",
@@ -1984,7 +2316,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "141.0.20250605212508"
+    "version": "141.0.20250606085416"
   },
   {
     "_disabled": "false",
@@ -2923,7 +3255,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-06-05"
+    "version": "2025-06-06"
   },
   {
     "_disabled": "false",
@@ -3278,6 +3610,456 @@
       "editor"
     ],
     "version": "4.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.fresh-basic",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fresh-basic/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.fresh-basic.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (fresh-basic)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.fresh-basic.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the latest LibreOffice major release",
+      "This version includes support only for the default language i.e English (US)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.2.4.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.fresh-full",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fresh-full/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.fresh-full.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (fresh-full)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.fresh-full.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the latest LibreOffice major release",
+      "This version includes support for all languages supported by LibreOffice"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.2.4.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.fresh-standard",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fresh-standard/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.fresh-standard.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (fresh-standard)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.fresh-standard.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the latest LibreOffice major release",
+      "This version includes support for: English (US and GB), Arabic, Chinese (Simplified and Traditional), French, German, Italian, Japanese, Korean, Portuguese (Brazilian and Portugal), Russian, and Spanish"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.2.4.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.still-basic",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/still-basic/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.still-basic.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (still-basic)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.still-basic.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the previous LibreOffice major release",
+      "This version includes support only for the default language i.e English (US)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.2.4.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.still-full",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/still-full/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.still-full.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (still-full)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.still-full.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the previous LibreOffice major release",
+      "This version includes support for all languages supported by LibreOffice"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.2.4.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.still-standard",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/still-standard/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.still-standard.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (still-standard)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.still-standard.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the previous LibreOffice major release",
+      "This version includes support for: English (US and GB), Arabic, Chinese (Simplified and Traditional), French, German, Italian, Japanese, Korean, Portuguese (Brazilian and Portugal), Russian, and Spanish"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.2.4.3"
   },
   {
     "_disabled": "false",
@@ -4425,6 +5207,89 @@
   },
   {
     "_disabled": "false",
+    "pkg": "telegram-desktop",
+    "pkg_family": "telegram-desktop",
+    "pkg_id": "nixpkgs.telegram-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/telegram-desktop/telegram-desktop/telegram-desktop",
+    "app_id": "org.telegram.desktop",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "IRCClient"
+    ],
+    "description": "Official desktop version of Telegram messaging app",
+    "distro_pkg": {
+      "alpine": [
+        "telegram-desktop"
+      ],
+      "archlinux": {
+        "aur": [
+          "telegram-desktop-bin",
+          "telegram-desktop-dev",
+          "telegram-desktop-dev-bin",
+          "telegram-desktop-git"
+        ],
+        "extra": [
+          "telegram-desktop"
+        ]
+      },
+      "debian": [
+        "telegram-desktop"
+      ],
+      "gnuguix": [
+        "telegram-desktop"
+      ],
+      "homebrew": [
+        "telegram-desktop",
+        "telegram-desktop@beta"
+      ],
+      "nixpkgs": [
+        "tdesktop",
+        "telegram-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://desktop.telegram.org",
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/telegram-desktop/nixappimage/nixpkgs",
+    "provides": [
+      "telegram-desktop==Telegram-Desktop"
+    ],
+    "repology": [
+      "telegram-desktop"
+    ],
+    "src_url": [
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "5.14.3"
+  },
+  {
+    "_disabled": "false",
     "pkg": "torzu",
     "pkg_family": "torzu",
     "pkg_id": "github.com.pkgforge-dev.Torzu-AppImage.stable",
@@ -5057,7 +5922,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9e38b27-250605T235058"
+    "version": "HEAD-f37d599-250606T095021"
   },
   {
     "_disabled": "false",
@@ -5244,7 +6109,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.13t_2025-06-04"
+    "version": "1.13t_2025-06-05"
   },
   {
     "_disabled": "false",

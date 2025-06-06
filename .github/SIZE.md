@@ -1,7 +1,7 @@
 ```mathematica
  459M └─┬ main
  177M   ├─┬ misc
- 176M   │ ├─┬ data
+ 177M   │ ├─┬ data
   72M   │ │ ├── ARCHLINUX.json
   37M   │ │ ├── FLATPAK_APPSTREAM.xml
   23M   │ │ ├── DEBIAN.json
@@ -138,7 +138,7 @@
  3.1M   │ │ │ ├── x86_64-Linux.db
  1.7M   │ │ │ ├── aarch64-Linux.json
  1.3M   │ │ │ ├── aarch64-Linux.db
- 336K   │ │ │ ├── x86_64-Linux.db.cba
+ 344K   │ │ │ ├── x86_64-Linux.db.cba
  316K   │ │ │ ├── x86_64-Linux.json.cba
  268K   │ │ │ ├── x86_64-Linux.db.zstd
  256K   │ │ │ ├── x86_64-Linux.db.xz
@@ -243,14 +243,14 @@
  1.0M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
  1.0M   │ │ ├── COMP_VER_CACHE.md
  692K   │ │ ├── pub_issues_binaries.txt
- 624K   │ │ ├── COMP_VER_CACHE_OLD.json
+ 644K   │ │ ├── COMP_VER_CACHE_OLD.json
  572K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  504K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  380K   │ │ ├── INDEX.json.cba
  320K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
  304K   │ │ ├── pub_issues_packages.txt
  244K   │ │ ├── INDEX.db.cba
- 240K   │ │ ├── COMP_VER_CACHE_OLD.md
+ 244K   │ │ ├── COMP_VER_CACHE_OLD.md
  236K   │ │ ├── GH_REPO.md
  232K   │ │ ├── INDEX.json.xz
  224K   │ │ ├── INDEX.json.zstd

@@ -371,7 +371,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-edc55cd-250530T231457"
+    "version": "HEAD-1c736c4-250606T235035"
   },
   {
     "_disabled": "false",
@@ -3699,6 +3699,49 @@
     "version": "HEAD-d6c6919-250516T191726"
   },
   {
+    "_disabled": "false",
+    "pkg": "dnscrypt-proxy",
+    "pkg_family": "dnscrypt-proxy",
+    "pkg_id": "github.com.DNSCrypt.dnscrypt-proxy.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/proxy-source/dnscrypt-proxy/dnscrypt-proxy",
+    "bincache": "ghcr.io/pkgforge/bincache/dnscrypt-proxy/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dnscrypt-proxy/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Flexible DNS proxy, with support for encrypted DNS protocols",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dnscrypt-proxy/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/DNSCrypt/dnscrypt-proxy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/DNSCrypt/dnscrypt-proxy"
+    ],
+    "provides": [
+      "dnscrypt-proxy"
+    ],
+    "src_url": [
+      "https://github.com/DNSCrypt/dnscrypt-proxy"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-c51e9dc-250606T232431"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -4090,7 +4133,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9b2dc46-250604T205757"
+    "version": "HEAD-74ffd78-250606T204400"
   },
   {
     "_disabled": "false",
@@ -4150,7 +4193,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-ca42a0e-250605T195754"
+    "version": "HEAD-1bdcc8d-250606T192731"
   },
   {
     "_disabled": "false",
@@ -4479,6 +4522,80 @@
   },
   {
     "_disabled": "false",
+    "pkg": "etcd",
+    "pkg_family": "etcd",
+    "pkg_id": "github.com.etcd-io.etcd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/io-etcd/etcd/etcd",
+    "bincache": "ghcr.io/pkgforge/bincache/etcd/official/etcd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/etcd/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Distributed reliable key-value store for the most critical data of a distributed system",
+      "etcd": "The official Go etcd client [etcd]",
+      "etcdctl": "Command Line Client for etcd [etcd]",
+      "etcdutl": "Command Line Administration utility for etcd [etcd]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "etcd"
+      ],
+      "archlinux": {
+        "aur": [
+          "etcd",
+          "etcd-bin",
+          "etcd-git"
+        ]
+      },
+      "debian": [
+        "etcd"
+      ],
+      "homebrew": [
+        "etcd"
+      ],
+      "nixpkgs": [
+        "etcd"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/etcd/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/etcd-io/etcd"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/etcd-io/etcd"
+    ],
+    "provides": [
+      "etcd",
+      "etcdctl",
+      "etcdutl"
+    ],
+    "repology": [
+      "etcd"
+    ],
+    "src_url": [
+      "https://github.com/etcd-io/etcd"
+    ],
+    "tag": [
+      "distributed"
+    ],
+    "version": "v3.6.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "execline",
     "pkg_family": "execline",
     "pkg_id": "nixpkgs.execline",
@@ -4650,6 +4767,66 @@
       "Utility"
     ],
     "version": "2.9.7.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "f2",
+    "pkg_family": "f2",
+    "pkg_id": "github.com.ayoisaiah.f2.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/f2-source/f2/f2",
+    "bincache": "ghcr.io/pkgforge/bincache/f2/official/f2",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/f2/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line tool for batch renaming files and directories",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "f2",
+          "f2-bin"
+        ]
+      },
+      "homebrew": [
+        "f2"
+      ],
+      "nixpkgs": [
+        "f2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/f2/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ayoisaiah/f2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ayoisaiah/f2"
+    ],
+    "provides": [
+      "f2"
+    ],
+    "repology": [
+      "f2"
+    ],
+    "src_url": [
+      "https://github.com/ayoisaiah/f2"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-6901558-250606T215926"
   },
   {
     "_disabled": "false",
@@ -5014,7 +5191,7 @@
       "binary",
       "hexdump"
     ],
-    "version": "HEAD-9f0f72e-250605T200627"
+    "version": "HEAD-bfaa3fb-250606T210353"
   },
   {
     "_disabled": "false",
@@ -5250,7 +5427,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-408d720-250606T180301"
+    "version": "HEAD-daa2679-250607T000630"
   },
   {
     "_disabled": "false",
@@ -5360,6 +5537,47 @@
       "git"
     ],
     "version": "HEAD-4c4cbea-250606T150653"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gip",
+    "pkg_family": "gip",
+    "pkg_id": "github.com.dalance.gip",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dalance-gip/gip/gip",
+    "bincache": "ghcr.io/pkgforge/bincache/gip/official/gip",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gip/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line tool to get Global IP address",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gip/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dalance/gip"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dalance/gip"
+    ],
+    "repology": [
+      "gip"
+    ],
+    "src_url": [
+      "https://github.com/dalance/gip"
+    ],
+    "tag": [
+      "ipv4",
+      "ipv6"
+    ],
+    "version": "HEAD-ceee744-250606T201935"
   },
   {
     "_disabled": "false",
@@ -5558,6 +5776,47 @@
       "version-control"
     ],
     "version": "HEAD-76eddf8-250606T120934"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "go-fasttld",
+    "pkg_family": "go-fasttld",
+    "pkg_id": "github.com.elliotwutingfeng.go-fasttld",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/go-fasttld/go-fasttld/go-fasttld",
+    "bincache": "ghcr.io/pkgforge/bincache/go-fasttld/official/go-fasttld",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/go-fasttld/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A high performance effective top level domains (eTLD) extraction module",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/go-fasttld/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/elliotwutingfeng/go-fasttld"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/elliotwutingfeng/go-fasttld"
+    ],
+    "repology": [
+      "go-fasttld"
+    ],
+    "src_url": [
+      "https://github.com/elliotwutingfeng/go-fasttld"
+    ],
+    "tag": [
+      "public-suffix",
+      "tld"
+    ],
+    "version": "HEAD-a573f3a-250607T005606"
   },
   {
     "_disabled": "false",
@@ -5953,6 +6212,47 @@
       "gpg"
     ],
     "version": "HEAD-18b4a9a-250602T124924"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "hacker-scoper",
+    "pkg_family": "hacker-scoper",
+    "pkg_id": "github.com.ItsIgnacioPortal.hacker-scoper",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hacker-scoper/hacker-scoper/hacker-scoper",
+    "bincache": "ghcr.io/pkgforge/bincache/hacker-scoper/official/hacker-scoper",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hacker-scoper/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Automagically filter URLs with Bug Bounty program scope rules scraped from the internet",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hacker-scoper/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ItsIgnacioPortal/hacker-scoper"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ItsIgnacioPortal/hacker-scoper"
+    ],
+    "repology": [
+      "hacker-scoper"
+    ],
+    "src_url": [
+      "https://github.com/ItsIgnacioPortal/hacker-scoper"
+    ],
+    "tag": [
+      "bugbounty",
+      "recon"
+    ],
+    "version": "HEAD-74869f4-250606T181050"
   },
   {
     "_disabled": "false",
@@ -6794,7 +7094,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-b16bed1-250605T212103"
+    "version": "HEAD-ab91323-250606T235820"
   },
   {
     "_disabled": "false",
@@ -8785,7 +9085,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-b886fd3-250605T155934"
+    "version": "HEAD-e3124d3-250606T162812"
   },
   {
     "_disabled": "false",
@@ -8849,7 +9149,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-b886fd3-250605T155934"
+    "version": "HEAD-e3124d3-250606T162812"
   },
   {
     "_disabled": "false",
@@ -9423,6 +9723,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "procs",
+    "pkg_family": "procs",
+    "pkg_id": "github.com.dalance.procs",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dalance-procs/procs/procs",
+    "bincache": "ghcr.io/pkgforge/bincache/procs/official/procs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/procs/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A modern replacement for ps written in Rust",
+    "distro_pkg": {
+      "alpine": [
+        "procs"
+      ],
+      "archlinux": {
+        "aur": [
+          "procs-git"
+        ],
+        "extra": [
+          "procs"
+        ]
+      },
+      "debian": [
+        "rust-procs"
+      ],
+      "nixpkgs": [
+        "procs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/procs/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/dalance/procs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "ISC",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dalance/procs"
+    ],
+    "repology": [
+      "procs"
+    ],
+    "src_url": [
+      "https://github.com/dalance/procs"
+    ],
+    "tag": [
+      "Monitoring"
+    ],
+    "version": "HEAD-ce2ac95-250606T210137"
+  },
+  {
+    "_disabled": "false",
     "pkg": "proxychains-ng",
     "pkg_family": "proxychains-ng",
     "pkg_id": "nixpkgs.proxychains-ng",
@@ -9713,7 +10077,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7f1f0f6-250606T122648"
+    "version": "HEAD-ff5a844-250606T140021"
   },
   {
     "_disabled": "false",
@@ -9929,7 +10293,7 @@
       "analyzer",
       "linter"
     ],
-    "version": "HEAD-ae24733-250605T160854"
+    "version": "HEAD-c16c79e-250606T204626"
   },
   {
     "_disabled": "false",
@@ -12432,7 +12796,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "b311"
+    "version": "b312"
   },
   {
     "_disabled": "false",
@@ -12513,7 +12877,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-66ae873-250606T094629"
+    "version": "HEAD-7b06532-250606T152023"
   },
   {
     "_disabled": "false",
@@ -12579,6 +12943,77 @@
       "tail"
     ],
     "version": "HEAD-86c2794-250605T112234"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tealdeer",
+    "pkg_family": "tealdeer",
+    "pkg_id": "github.com.tealdeer-rs.tealdeer",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-tealdeer/tealdeer/tealdeer",
+    "bincache": "ghcr.io/pkgforge/bincache/tealdeer/official/tldr",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tealdeer/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fetch and show tldr help pages for many CLI commands",
+    "distro_pkg": {
+      "alpine": [
+        "tealdeer"
+      ],
+      "archlinux": {
+        "aur": [
+          "tealdeer-git"
+        ],
+        "extra": [
+          "tealdeer"
+        ]
+      },
+      "debian": [
+        "rust-tealdeer"
+      ],
+      "gnuguix": [
+        "tealdeer"
+      ],
+      "homebrew": [
+        "tealdeer"
+      ],
+      "nixpkgs": [
+        "tealdeer"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tealdeer/static.official.source.yaml",
+    "homepage": [
+      "https://tealdeer-rs.github.io/tealdeer"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tealdeer-rs/tealdeer"
+    ],
+    "provides": [
+      "tldr==tealdeer"
+    ],
+    "repology": [
+      "tealdeer"
+    ],
+    "src_url": [
+      "https://github.com/tealdeer-rs/tealdeer"
+    ],
+    "tag": [
+      "utility"
+    ],
+    "version": "HEAD-d1be7d6-250606T232530"
   },
   {
     "_disabled": "false",
@@ -15179,7 +15614,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-83d6c69-250606T174159"
+    "version": "HEAD-95f36d2-250606T182857"
   },
   {
     "_disabled": "false",
@@ -15265,7 +15700,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8a42768-250606T180628"
+    "version": "HEAD-7f8370a-250607T004054"
   },
   {
     "_disabled": "false",
@@ -15852,7 +16287,7 @@
       "proxy",
       "wireguard"
     ],
-    "version": "HEAD-82dd587-250604T135914"
+    "version": "HEAD-729d333-250606T145459"
   },
   {
     "_disabled": "false",
@@ -15955,7 +16390,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9b8f2e0-250602T115151"
+    "version": "HEAD-34f5f2d-250606T121508"
   },
   {
     "_disabled": "false",

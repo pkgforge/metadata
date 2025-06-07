@@ -2593,7 +2593,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "v0.144.1"
+    "version": "v0.144.2"
   },
   {
     "_disabled": "false",
@@ -3999,7 +3999,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-0f29f84-250607T143256"
+    "version": "HEAD-4128efa-250607T161331"
   },
   {
     "_disabled": "false",
@@ -4316,7 +4316,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-0f29f84-250607T143256"
+    "version": "HEAD-4128efa-250607T161331"
   },
   {
     "_disabled": "true",
@@ -5067,7 +5067,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-1677ca1-250606T135205"
+    "version": "HEAD-fd17c9f-250607T152322"
   },
   {
     "_disabled": "false",
@@ -5290,6 +5290,49 @@
       "inspector"
     ],
     "version": "HEAD-d6c6919-250516T191726"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dns-bench",
+    "pkg_family": "dns-bench",
+    "pkg_id": "github.com.qwerty541.dns-bench.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bench-source/dns-bench/dns-bench",
+    "bincache": "ghcr.io/pkgforge/bincache/dns-bench/official/dns-bench",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dns-bench/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Find the fastest DNS in your location to improve internet browsing experience",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dns-bench/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/qwerty541/dns-bench"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/qwerty541/dns-bench"
+    ],
+    "provides": [
+      "dns-bench"
+    ],
+    "src_url": [
+      "https://github.com/qwerty541/dns-bench"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-45a224a-250607T174759"
   },
   {
     "_disabled": "false",
@@ -6564,7 +6607,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-781a692-250607T192325"
+    "version": "HEAD-ddf5099-250608T000003"
   },
   {
     "_disabled": "false",
@@ -7039,7 +7082,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-cf64ea7-250607T120422"
+    "version": "HEAD-4b97eb6-250607T180256"
   },
   {
     "_disabled": "false",
@@ -7704,7 +7747,7 @@
     "tag": [
       "matrix"
     ],
-    "version": "HEAD-3014cb0-250602T234143"
+    "version": "HEAD-717a406-250607T171751"
   },
   {
     "_disabled": "false",
@@ -8398,7 +8441,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-01241d5-250607T130228"
+    "version": "HEAD-fad5796-250607T131356"
   },
   {
     "_disabled": "false",
@@ -8765,7 +8808,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-b8c156b-250607T021531"
+    "version": "HEAD-9925d52-250607T175123"
   },
   {
     "_disabled": "false",
@@ -10621,6 +10664,69 @@
   },
   {
     "_disabled": "false",
+    "pkg": "nfpm",
+    "pkg_family": "nfpm",
+    "pkg_id": "github.com.goreleaser.nfpm",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goreleaser-nfpm/nfpm/nfpm",
+    "bincache": "ghcr.io/pkgforge/bincache/nfpm/official/nfpm",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nfpm/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A simple deb, rpm, apk, ipk, and arch linux packager",
+    "distro_pkg": {
+      "alpine": [
+        "nfpm"
+      ],
+      "archlinux": {
+        "aur": [
+          "nfpm",
+          "nfpm-bin"
+        ]
+      },
+      "homebrew": [
+        "nfpm"
+      ],
+      "nixpkgs": [
+        "nfpm"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nfpm/static.official.source.yaml",
+    "homepage": [
+      "https://nfpm.goreleaser.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/goreleaser/nfpm"
+    ],
+    "provides": [
+      "nfpm"
+    ],
+    "repology": [
+      "nfpm"
+    ],
+    "src_url": [
+      "https://github.com/goreleaser/nfpm"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "HEAD-9c3ba6b-250607T164413"
+  },
+  {
+    "_disabled": "false",
     "pkg": "nfs-utils",
     "pkg_family": "nfs-utils",
     "pkg_id": "nixpkgs.nfs-utils",
@@ -11188,7 +11294,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-461d558-250607T124243"
+    "version": "HEAD-8d46398-250607T114602"
   },
   {
     "_disabled": "false",
@@ -11252,7 +11358,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-461d558-250607T124243"
+    "version": "HEAD-8d46398-250607T114602"
   },
   {
     "_disabled": "false",
@@ -11683,6 +11789,60 @@
       "registry"
     ],
     "version": "HEAD-b28a30b-250606T043129"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "oryx",
+    "pkg_family": "oryx",
+    "pkg_id": "github.com.pythops.oryx.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oryx-stable/oryx/oryx",
+    "bincache": "ghcr.io/pkgforge/bincache/oryx/official/oryx",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/oryx/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "TUI for sniffing network traffic using eBPF on Linux",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "oryx",
+          "oryx-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/oryx/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/pythops/oryx"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/pythops/oryx"
+    ],
+    "provides": [
+      "oryx"
+    ],
+    "repology": [
+      "oryx"
+    ],
+    "src_url": [
+      "https://github.com/pythops/oryx"
+    ],
+    "tag": [
+      "log"
+    ],
+    "version": "v0.6.1"
   },
   {
     "_disabled": "false",
@@ -14099,7 +14259,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-eca06a6-250606T135039"
+    "version": "HEAD-07860e9-250607T211944"
   },
   {
     "_disabled": "false",
@@ -14771,7 +14931,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-605520e-250607T101550"
+    "version": "HEAD-0d8511a-250607T145247"
   },
   {
     "_disabled": "false",
@@ -16158,7 +16318,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b459e43-250607T000411"
+    "version": "HEAD-60c7502-250608T014535"
   },
   {
     "_disabled": "false",

@@ -80,7 +80,7 @@
 | air-controller-desktop#github.com.air-controller.air-controller-desktop:pkgcache (x86_64-Linux) | 0.4.0 | 0.4.0 | 2025-01-26T18:41:38Z |
 | airixss#github.com.ferreiraklet.airixss:bincache (aarch64-Linux) | HEAD-4c36e01-220913T161250 | HEAD-4c36e01-220913T161250 | 2025-01-07T08:25:17Z |
 | airixss#github.com.ferreiraklet.airixss:bincache (x86_64-Linux) | HEAD-4c36e01-220913T161250 | HEAD-4c36e01-220913T161250 | 2025-01-07T08:28:04Z |
-| aisleriot#github.com.ivan-hc.Aisleriot-appimage:pkgcache (x86_64-Linux) | 250516T024410 | 250607T024400 | 2025-05-16T19:03:14Z |
+| aisleriot#github.com.ivan-hc.Aisleriot-appimage:pkgcache (x86_64-Linux) | 250516T024410 | 250608T025501 | 2025-05-16T19:03:14Z |
 | aix#github.com.projectdiscovery.aix:bincache (aarch64-Linux) | v0.0.5 | v0.0.5 | 2025-01-07T08:25:38Z |
 | aix#github.com.projectdiscovery.aix:bincache (x86_64-Linux) | v0.0.5 | v0.0.5 | 2025-01-07T08:28:18Z |
 | akregator#runimage.alpine.akregator:pkgcache (aarch64-Linux) | 25.04.0 | 25.04.0 | 2025-04-25T18:58:42Z |
@@ -2401,8 +2401,8 @@
 | ghcp#github.com.suzuki-shunsuke.ghcp.stable:bincache (x86_64-Linux) | v1.16.0 | v1.16.0 | 2025-03-04T11:19:42Z |
 | ghex#runimage.alpine.ghex:pkgcache (aarch64-Linux) | 46.2 | 46.2 | 2025-03-04T18:56:58Z |
 | ghex#runimage.alpine.ghex:pkgcache (x86_64-Linux) | 46.2 | 46.2 | 2025-03-04T18:55:27Z |
-| ghfetch#github.com.orangekame3.ghfetch:bincache (aarch64-Linux) | HEAD-129eb76-250604T180401 | HEAD-3f1146a-250608T000714 | 2025-06-04T19:56:08Z |
-| ghfetch#github.com.orangekame3.ghfetch:bincache (x86_64-Linux) | HEAD-129eb76-250604T180401 | HEAD-3f1146a-250608T000714 | 2025-06-04T20:21:16Z |
+| ghfetch#github.com.orangekame3.ghfetch:bincache (aarch64-Linux) | HEAD-129eb76-250604T180401 | HEAD-af1335f-250608T060256 | 2025-06-04T19:56:08Z |
+| ghfetch#github.com.orangekame3.ghfetch:bincache (x86_64-Linux) | HEAD-129eb76-250604T180401 | HEAD-af1335f-250608T060256 | 2025-06-04T20:21:16Z |
 | ghidra#runimage.cachyos.ghidra:pkgcache (x86_64-Linux) | 11.3.2 | 11.3.2 | 2025-05-04T19:11:20Z |
 | ghorg#github.com.gabrie30.ghorg:bincache (aarch64-Linux) | HEAD-5f23c0d-250601T075414 | HEAD-5f23c0d-250601T075414 | 2025-06-02T20:16:55Z |
 | ghorg#github.com.gabrie30.ghorg:bincache (x86_64-Linux) | HEAD-5f23c0d-250601T075414 | HEAD-5f23c0d-250601T075414 | 2025-06-02T20:18:15Z |
@@ -2672,8 +2672,8 @@
 | haguichi#runimage.cachyos.haguichi:pkgcache (x86_64-Linux) | 1.5.2 | 1.5.2 | 2025-05-02T19:18:17Z |
 | hakip2host#github.com.hakluke.hakip2host:bincache (aarch64-Linux) | HEAD-da8b628-220427T104646 | HEAD-da8b628-220427T104646 | 2025-01-11T21:04:23Z |
 | hakip2host#github.com.hakluke.hakip2host:bincache (x86_64-Linux) | HEAD-da8b628-220427T104646 | HEAD-da8b628-220427T104646 | 2025-01-12T08:42:01Z |
-| hakoniwa#github.com.souk4711.hakoniwa.source:bincache (aarch64-Linux) | HEAD-9e584f1-250604T003856 | HEAD-8f28429-250605T171157 | 2025-06-04T20:48:43Z |
-| hakoniwa#github.com.souk4711.hakoniwa.source:bincache (x86_64-Linux) | HEAD-9e584f1-250604T003856 | HEAD-8f28429-250605T171157 | 2025-06-04T20:48:51Z |
+| hakoniwa#github.com.souk4711.hakoniwa.source:bincache (aarch64-Linux) | HEAD-9e584f1-250604T003856 | HEAD-ab4440c-250608T021212 | 2025-06-04T20:48:43Z |
+| hakoniwa#github.com.souk4711.hakoniwa.source:bincache (x86_64-Linux) | HEAD-9e584f1-250604T003856 | HEAD-ab4440c-250608T021212 | 2025-06-04T20:48:51Z |
 | hakoriginfinder#github.com.hakluke.hakoriginfinder:bincache (aarch64-Linux) | HEAD-38d78c0-240112T215634 | HEAD-38d78c0-240112T215634 | 2025-01-11T21:06:01Z |
 | hakoriginfinder#github.com.hakluke.hakoriginfinder:bincache (x86_64-Linux) | HEAD-38d78c0-240112T215634 | HEAD-38d78c0-240112T215634 | 2025-01-12T08:44:35Z |
 | hakrawler#github.com.hakluke.hakrawler:bincache (aarch64-Linux) | HEAD-7615255-241222T064001 | HEAD-7615255-241222T064001 | 2025-01-11T21:07:47Z |
@@ -3158,8 +3158,8 @@
 | jen#github.com.whitfin.jen:bincache (x86_64-Linux) | HEAD-7852844-250404T102753 | HEAD-7852844-250404T102753 | 2025-05-28T20:41:22Z |
 | jira-cli#github.com.ankitpokhrel.jira-cli:bincache (aarch64-Linux) | HEAD-adab79f-250527T191524 | HEAD-adab79f-250527T191524 | 2025-05-28T20:42:11Z |
 | jira-cli#github.com.ankitpokhrel.jira-cli:bincache (x86_64-Linux) | HEAD-adab79f-250527T191524 | HEAD-adab79f-250527T191524 | 2025-05-28T20:41:14Z |
-| jj#github.com.martinvonz.jj:bincache (aarch64-Linux) | HEAD-34b0961-250604T140113 | HEAD-4ff0594-250608T004953 | 2025-06-04T21:14:00Z |
-| jj#github.com.martinvonz.jj:bincache (x86_64-Linux) | HEAD-34b0961-250604T140113 | HEAD-4ff0594-250608T004953 | 2025-06-04T21:12:01Z |
+| jj#github.com.martinvonz.jj:bincache (aarch64-Linux) | HEAD-34b0961-250604T140113 | HEAD-b1503b4-250608T044412 | 2025-06-04T21:14:00Z |
+| jj#github.com.martinvonz.jj:bincache (x86_64-Linux) | HEAD-34b0961-250604T140113 | HEAD-b1503b4-250608T044412 | 2025-06-04T21:12:01Z |
 | jless#ppkg.bundle.jless.stable:pkgcache (aarch64-Linux) | 0.9.0 | 0.9.0 | 2025-02-13T19:21:56Z |
 | jless#ppkg.bundle.jless.stable:pkgcache (x86_64-Linux) | 0.9.0 | 0.9.0 | 2025-02-13T19:22:17Z |
 | jless#ppkg.jless:bincache (aarch64-Linux) | 0.9.0 | 0.9.0 | 2025-02-09T08:09:23Z |
@@ -3199,8 +3199,8 @@
 | jsluice#github.com.BishopFox.jsluice.source:bincache (x86_64-Linux) | HEAD-0ddfab1-240110T145140 | HEAD-0ddfab1-240110T145140 | 2025-03-07T12:04:13Z |
 | json-cleaner#github.com.j3ssie.json-cleaner.source:bincache (aarch64-Linux) | HEAD-76fafe6-240406T002055 | HEAD-76fafe6-240406T002055 | 2025-03-07T12:08:23Z |
 | json-cleaner#github.com.j3ssie.json-cleaner.source:bincache (x86_64-Linux) | HEAD-76fafe6-240406T002055 | HEAD-76fafe6-240406T002055 | 2025-03-07T12:06:14Z |
-| jujutsu#github.com.martinvonz.jj:bincache (aarch64-Linux) | HEAD-34b0961-250604T140113 | HEAD-4ff0594-250608T004953 | 2025-06-04T21:14:17Z |
-| jujutsu#github.com.martinvonz.jj:bincache (x86_64-Linux) | HEAD-34b0961-250604T140113 | HEAD-4ff0594-250608T004953 | 2025-06-04T21:12:10Z |
+| jujutsu#github.com.martinvonz.jj:bincache (aarch64-Linux) | HEAD-34b0961-250604T140113 | HEAD-b1503b4-250608T044412 | 2025-06-04T21:14:17Z |
+| jujutsu#github.com.martinvonz.jj:bincache (x86_64-Linux) | HEAD-34b0961-250604T140113 | HEAD-b1503b4-250608T044412 | 2025-06-04T21:12:10Z |
 | jumbo6#github.com.fgont.ipv6toolkit.source:bincache (aarch64-Linux) | HEAD-9ee80b6-241202T005144 | HEAD-9ee80b6-241202T005144 | 2025-04-11T13:51:11Z |
 | jumbo6#github.com.fgont.ipv6toolkit.source:bincache (x86_64-Linux) | HEAD-9ee80b6-241202T005144 | HEAD-9ee80b6-241202T005144 | 2025-04-11T13:49:05Z |
 | jwt-hack#github.com.hahwul.jwt-hack:bincache (aarch64-Linux) | HEAD-de22655-250322T080943 | HEAD-349b140-250607T115321 | 2025-05-28T20:49:26Z |
@@ -3744,8 +3744,8 @@
 | mdir#nixpkgs.mtools:bincache (x86_64-Linux) | 4.0.48 | 4.0.48 | 2025-06-03T04:35:24Z |
 | mdoctorfat#nixpkgs.mtools:bincache (aarch64-Linux) | 4.0.48 | 4.0.48 | 2025-06-03T04:37:36Z |
 | mdoctorfat#nixpkgs.mtools:bincache (x86_64-Linux) | 4.0.48 | 4.0.48 | 2025-06-03T04:35:24Z |
-| mdq#github.com.yshavit.mdq.source:bincache (aarch64-Linux) | HEAD-7506347-250602T223201 | HEAD-4488211-250607T165651 | 2025-06-04T21:27:50Z |
-| mdq#github.com.yshavit.mdq.source:bincache (x86_64-Linux) | HEAD-7506347-250602T223201 | HEAD-4488211-250607T165651 | 2025-06-04T21:23:40Z |
+| mdq#github.com.yshavit.mdq.source:bincache (aarch64-Linux) | HEAD-7506347-250602T223201 | HEAD-7bd674e-250607T224111 | 2025-06-04T21:27:50Z |
+| mdq#github.com.yshavit.mdq.source:bincache (x86_64-Linux) | HEAD-7506347-250602T223201 | HEAD-7bd674e-250607T224111 | 2025-06-04T21:23:40Z |
 | mdsh#github.com.zimbatm.mdsh:bincache (aarch64-Linux) | HEAD-a5c8b48-250502T123746 | HEAD-a5c8b48-250502T123746 | 2025-05-28T21:32:05Z |
 | mdsh#github.com.zimbatm.mdsh:bincache (x86_64-Linux) | HEAD-a5c8b48-250502T123746 | HEAD-a5c8b48-250502T123746 | 2025-05-28T21:28:30Z |
 | mdu#nixpkgs.mtools:bincache (aarch64-Linux) | 4.0.48 | 4.0.48 | 2025-06-03T04:37:37Z |
@@ -5496,8 +5496,8 @@
 | rust-parallel#github.com.aaronriekenberg.rust-parallel:bincache (x86_64-Linux) | HEAD-7358f22-250531T043756 | HEAD-68dfbae-250607T055240 | 2025-05-31T22:24:32Z |
 | rustcat#github.com.robiot.rustcat:bincache (aarch64-Linux) | HEAD-3f80eaf-240720T222034 | HEAD-3f80eaf-240720T222034 | 2025-01-12T02:14:13Z |
 | rustcat#github.com.robiot.rustcat:bincache (x86_64-Linux) | HEAD-3f80eaf-240720T222034 | HEAD-3f80eaf-240720T222034 | 2025-01-12T21:01:06Z |
-| rustdesk#github.com.rustdesk.rustdesk.nightly:pkgcache (aarch64-Linux) | 250204T131430 | 250608T011927 | 2025-02-08T08:53:01Z |
-| rustdesk#github.com.rustdesk.rustdesk.nightly:pkgcache (x86_64-Linux) | 250204T131430 | 250608T011927 | 2025-02-08T08:54:16Z |
+| rustdesk#github.com.rustdesk.rustdesk.nightly:pkgcache (aarch64-Linux) | 250204T131430 | 250608T022936 | 2025-02-08T08:53:01Z |
+| rustdesk#github.com.rustdesk.rustdesk.nightly:pkgcache (x86_64-Linux) | 250204T131430 | 250608T022936 | 2025-02-08T08:54:16Z |
 | rustdesk#github.com.rustdesk.rustdesk.stable:pkgcache (aarch64-Linux) | 1.3.7 | 1.4.0 | 2025-02-08T08:53:20Z |
 | rustdesk#github.com.rustdesk.rustdesk.stable:pkgcache (x86_64-Linux) | 1.3.7 | 1.4.0 | 2025-02-08T08:53:55Z |
 | rustscan#github.com.RustScan.RustScan:bincache (aarch64-Linux) | HEAD-0f23a67-250602T063428 | HEAD-cf1eaf8-250605T093359 | 2025-06-02T22:10:50Z |
@@ -6123,7 +6123,7 @@
 | sic#github.com.foresterre.sic:bincache (x86_64-Linux) | HEAD-c0d5d09-250308T030632 | HEAD-c8ed2f9-250605T155017 | 2025-03-08T05:07:34Z |
 | siegfried#github.com.richardlehane.siegfried:bincache (aarch64-Linux) | HEAD-d041e49-250407T183637 | HEAD-d041e49-250407T183637 | 2025-05-31T22:43:30Z |
 | siegfried#github.com.richardlehane.siegfried:bincache (x86_64-Linux) | HEAD-d041e49-250407T183637 | HEAD-d041e49-250407T183637 | 2025-05-31T22:42:09Z |
-| signal-desktop#github.com.karo-solutions.Signal-Desktop-AppImage.stable:pkgcache (x86_64-Linux) | v7.53.0 | v7.56.0 | 2025-05-04T19:08:53Z |
+| signal-desktop#github.com.karo-solutions.Signal-Desktop-AppImage.stable:pkgcache (x86_64-Linux) | v7.53.0 | v7.56.1 | 2025-05-04T19:08:53Z |
 | signify#nixpkgs.outils:bincache (aarch64-Linux) | 0.13 | 0.13 | 2025-01-19T07:28:30Z |
 | signify#nixpkgs.outils:bincache (x86_64-Linux) | 0.13 | 0.13 | 2025-01-21T06:00:12Z |
 | simplex-chat#ppkg.simplex-chat:bincache (aarch64-Linux) | 6.2.5 | 6.2.5 | 2025-03-01T08:44:50Z |
@@ -7352,8 +7352,8 @@
 | urlhunter#github.com.utkusen.urlhunter.source:bincache (x86_64-Linux) | HEAD-39f2051-250123T154700 | HEAD-39f2051-250123T154700 | 2025-03-06T10:43:13Z |
 | uro#sharun.wrappe.pypi.uro:pkgcache (aarch64-Linux) | 1.0.2 | 1.0.2 | 2025-02-25T13:45:33Z |
 | uro#sharun.wrappe.pypi.uro:pkgcache (x86_64-Linux) | 1.0.2 | 1.0.2 | 2025-02-25T13:41:51Z |
-| urx#github.com.hahwul.urx.source:bincache (aarch64-Linux) | HEAD-dd9de40-250406T185650 | HEAD-3bd3c5a-250608T012606 | 2025-04-07T15:03:32Z |
-| urx#github.com.hahwul.urx.source:bincache (x86_64-Linux) | HEAD-dd9de40-250406T185650 | HEAD-3bd3c5a-250608T012606 | 2025-04-07T15:03:15Z |
+| urx#github.com.hahwul.urx.source:bincache (aarch64-Linux) | HEAD-dd9de40-250406T185650 | HEAD-c1a76e1-250608T105423 | 2025-04-07T15:03:32Z |
+| urx#github.com.hahwul.urx.source:bincache (x86_64-Linux) | HEAD-dd9de40-250406T185650 | HEAD-c1a76e1-250608T105423 | 2025-04-07T15:03:15Z |
 | usbhid-dump#ppkg.usbutils:bincache (x86_64-Linux) | 018 | 018 | 2025-02-09T08:17:27Z |
 | useradd#nixpkgs.shadow:bincache (aarch64-Linux) | 4.17.4 | 4.17.4 | 2025-05-31T22:38:48Z |
 | useradd#nixpkgs.shadow:bincache (x86_64-Linux) | 4.17.4 | 4.17.4 | 2025-05-31T22:36:18Z |
@@ -7603,8 +7603,8 @@
 | wasm-strip#github.com.WebAssembly.wabt.source:bincache (x86_64-Linux) | HEAD-d30f043-250403T111440 | HEAD-6d4abfd-250521T103833 | 2025-04-09T13:49:20Z |
 | wasm-strip#github.com.dasimmet.wabt.source:bincache (aarch64-Linux) | HEAD-e304325-250307T125315 | HEAD-f76733b-250502T153624 | 2025-04-15T14:43:54Z |
 | wasm-strip#github.com.dasimmet.wabt.source:bincache (x86_64-Linux) | HEAD-e304325-250307T125315 | HEAD-f76733b-250502T153624 | 2025-04-15T13:57:05Z |
-| wasm-tools#github.com.bytecodealliance.wasm-tools.source:bincache (aarch64-Linux) | HEAD-df50cdf-250408T144126 | HEAD-95f36d2-250606T182857 | 2025-04-09T13:56:23Z |
-| wasm-tools#github.com.bytecodealliance.wasm-tools.source:bincache (x86_64-Linux) | HEAD-df50cdf-250408T144126 | HEAD-95f36d2-250606T182857 | 2025-04-09T13:53:17Z |
+| wasm-tools#github.com.bytecodealliance.wasm-tools.source:bincache (aarch64-Linux) | HEAD-df50cdf-250408T144126 | HEAD-a05eaa5-250608T013940 | 2025-04-09T13:56:23Z |
+| wasm-tools#github.com.bytecodealliance.wasm-tools.source:bincache (x86_64-Linux) | HEAD-df50cdf-250408T144126 | HEAD-a05eaa5-250608T013940 | 2025-04-09T13:53:17Z |
 | wasm-validate#github.com.WebAssembly.wabt.source:bincache (aarch64-Linux) | HEAD-d30f043-250403T111440 | HEAD-6d4abfd-250521T103833 | 2025-04-09T13:49:19Z |
 | wasm-validate#github.com.WebAssembly.wabt.source:bincache (x86_64-Linux) | HEAD-d30f043-250403T111440 | HEAD-6d4abfd-250521T103833 | 2025-04-09T13:49:20Z |
 | wasm-validate#github.com.dasimmet.wabt.source:bincache (aarch64-Linux) | HEAD-e304325-250307T125315 | HEAD-f76733b-250502T153624 | 2025-04-15T14:43:55Z |

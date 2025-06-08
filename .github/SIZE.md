@@ -12,7 +12,7 @@
  2.8M   │ │ ├── BREW_FORMULA.json
  1.6M   │ │ ├── BREW_CASK.json
  1.1M   │ │ ├── PPKG_RAW.json
- 540K   │ │ ├── STALIX.json
+ 544K   │ │ ├── STALIX.json
  464K   │ │ ├── FLATPAK_APPS_INFO.json
  436K   │ │ ├── FLATPAK_APPS_INFO.txt
  316K   │ │ ├── PPKG.json
@@ -138,7 +138,7 @@
  3.1M   │ │ │ ├── x86_64-Linux.db
  1.7M   │ │ │ ├── aarch64-Linux.json
  1.3M   │ │ │ ├── aarch64-Linux.db
- 336K   │ │ │ ├── x86_64-Linux.db.cba
+ 340K   │ │ │ ├── x86_64-Linux.db.cba
  316K   │ │ │ ├── x86_64-Linux.json.cba
  268K   │ │ │ ├── x86_64-Linux.db.zstd
  256K   │ │ │ ├── x86_64-Linux.db.xz

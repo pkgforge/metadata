@@ -1063,8 +1063,6 @@
     "git-url": "https://github.com/rizsotto/Bear",
     "src-url": "https://github.com/rizsotto/Bear/archive/refs/tags/3.1.6.tar.gz",
     "src-sha": "99cd891eec6e89b734d7cafe0e623dd8c2f27d8cbf3ee9bc4807e69e5c8fb55c",
-    "res-url": "https://raw.githubusercontent.com/leleliu008/ppkg-formula-repository-official-core/refs/heads/master/wrappers/bear.c",
-    "res-sha": "c996351aa9a3336819d517967a03db6413c3447337f085c078ccca0378ad7f75",
     "dep-pkg": "grpc nlohmann-json spdlog",
     "dep-upp": "grpc-plugins curl bsdtar cmake ninja",
     "bsystem": "cmake",
@@ -1073,8 +1071,7 @@
     "ltoable": "1",
     "movable": "1",
     "dopatch": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    gsed -i 's|spdlog::spdlog|spdlog::spdlog -lresolv|' source/intercept/CMakeLists.txt\nfi",
-    "install": "cmakew \\\n    -DENABLE_UNIT_TESTS=OFF \\\n    -DENABLE_FUNC_TESTS=OFF",
-    "dotweak": "run mv \"$PACKAGE_WORKING_DIR/res/bear.c\" bin/bear.c"
+    "install": "cmakew \\\n    -DENABLE_UNIT_TESTS=OFF \\\n    -DENABLE_FUNC_TESTS=OFF"
   },
   {
     "pkgname": "berkeley-db",

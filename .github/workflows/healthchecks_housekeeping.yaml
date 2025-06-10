@@ -350,6 +350,40 @@ jobs:
           done
         continue-on-error: true
 
+      - name: Generate PPKG/Brew Comparision
+        run: |
+          #Presets
+          set +x ; set +e ; ulimit -S -s unlimited ; ulimit -f unlimited 2>/dev/null
+          #--------------#
+          pushd "$(mktemp -d)" &>/dev/null &&\
+          {
+            jq -rn \
+            '
+              (input | map({pkg, version, src_url})) as $ppkg |
+              (input | map({pkg, version, homepage})) as $brew |
+              ($ppkg | map(.pkg)) as $ppkg_names |
+              ($brew | map(.pkg)) as $brew_names |
+              ($ppkg_names | map(select(. as $name | $brew_names | index($name)))) as $common |
+              
+              $common[] as $pkg_name |
+              ($ppkg[] | select(.pkg == $pkg_name)) as $p |
+              ($brew[] | select(.pkg == $pkg_name)) as $b |
+              
+              if $p.version != $b.version then
+                "## \($pkg_name)\n\n| Source | Version | URL/Homepage |\n|--------|---------|-------------|\n| PPKG   | \($p.version) ⚠️ | \($p.src_url) |\n| BREW   | **\($b.version)** | \($b.homepage) |\n\n*BREW has newer version*\n"
+              else
+                "## \($pkg_name)\n\n| Source | Version | URL/Homepage |\n|--------|---------|-------------|\n| PPKG   | \($p.version) ✅ | \($p.src_url) |\n| BREW   | \($b.version) | \($b.homepage) |\n"
+              end
+            ' \
+            <(curl -qfsSL "https://github.com/pkgforge/metadata/raw/refs/heads/main/misc/data/PPKG.json") \
+            <(curl -qfsSL "https://github.com/pkgforge/metadata/raw/refs/heads/main/misc/data/BREW_FORMULA.json")
+          } 2>/dev/null 1>"./PPKG_BREW.md"
+          if [[ -s "./PPKG_BREW.md" ]] && [[ $(stat -c%s "./PPKG_BREW.md") -gt 100000 ]]; then
+             cp -fv "./PPKG_BREW.md" "${GITHUB_WORKSPACE}/main/misc/data/PPKG_BREW.md"
+          fi
+          popd &>/dev/null
+        continue-on-error: true
+
       - name: Get DateTime & Purge files (=> 95 MB)
         run: |
           #Presets

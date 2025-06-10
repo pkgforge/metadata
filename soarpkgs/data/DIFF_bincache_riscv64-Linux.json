@@ -1557,63 +1557,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "curl",
-    "pkg_family": "curl",
-    "pkg_id": "github.com.stunnel.static-curl",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/static-curl/curl/curl",
-    "bincache": "ghcr.io/pkgforge/bincache/curl/stunnel/curl",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/curl/static.stunnel.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Command Line Tools for working with URLs (curl & trurl)",
-      "curl": "A command line tool for transferring files with URL syntax",
-      "trurl": "A command line tool for URL parsing and Manipulation"
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/curl/static.stunnel.stable.yaml",
-    "homepage": [
-      "https://curl.se",
-      "https://github.com/curl/curl",
-      "https://github.com/curl/trurl",
-      "https://github.com/stunnel/static-curl"
-    ],
-    "host": [
-      "aarch64-linux",
-      "riscv64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/binaries/curl/assets/default.svg",
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Community Created Binary. Check/Report @ https://github.com/stunnel/static-curl"
-    ],
-    "provides": [
-      "curl",
-      "trurl"
-    ],
-    "repology": [
-      "curl",
-      "trurl"
-    ],
-    "src_url": [
-      "https://github.com/stunnel/static-curl"
-    ],
-    "tag": [
-      "curl",
-      "http-client",
-      "http3",
-      "http3-client"
-    ],
-    "version": "8.14.1"
-  },
-  {
-    "_disabled": "false",
     "pkg": "cy",
     "pkg_family": "cy",
     "pkg_id": "ppkg.cy.stable",
@@ -3307,6 +3250,68 @@
       "gnome"
     ],
     "version": "2.80.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gosu",
+    "pkg_family": "gosu",
+    "pkg_id": "github.com.tianon.gosu",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tianon-gosu/gosu/gosu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gosu/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Simple Go-based setuid+setgid+setgroups+exec",
+    "distro_pkg": {
+      "alpine": [
+        "gosu"
+      ],
+      "archlinux": {
+        "aur": [
+          "gosu"
+        ]
+      },
+      "debian": [
+        "gosu"
+      ],
+      "nixpkgs": [
+        "gosu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gosu/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/tianon/gosu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/tianon/gosu"
+    ],
+    "provides": [
+      "gosu"
+    ],
+    "repology": [
+      "gosu"
+    ],
+    "src_url": [
+      "https://github.com/tianon/gosu"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.17"
   },
   {
     "_disabled": "false",
@@ -6570,134 +6575,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "oras",
-    "pkg_family": "oras",
-    "pkg_id": "github.com.oras-project.oras",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/project-oras/oras/oras",
-    "bincache": "ghcr.io/pkgforge/bincache/oras/official/source",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/oras/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "OCI registry client - manage content like artifacts, images, packages",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "oras"
-        ]
-      },
-      "debian": [
-        "oras"
-      ],
-      "homebrew": [
-        "oras"
-      ],
-      "nixpkgs": [
-        "oras"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/oras/static.official.source.yaml",
-    "homepage": [
-      "https://oras.land"
-    ],
-    "host": [
-      "aarch64-linux",
-      "riscv64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/oras-project/oras"
-    ],
-    "provides": [
-      "oras"
-    ],
-    "repology": [
-      "oras"
-    ],
-    "src_url": [
-      "https://github.com/oras-project/oras"
-    ],
-    "tag": [
-      "oci",
-      "registry"
-    ],
-    "version": "HEAD-b28a30b-250606T043129"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "oras",
-    "pkg_family": "oras",
-    "pkg_id": "github.com.oras-project.oras.stable",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oras-stable/oras/oras",
-    "bincache": "ghcr.io/pkgforge/bincache/oras/official/stable",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/oras/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "OCI registry client - manage content like artifacts, images, packages",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "oras"
-        ]
-      },
-      "debian": [
-        "oras"
-      ],
-      "homebrew": [
-        "oras"
-      ],
-      "nixpkgs": [
-        "oras"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/oras/static.official.stable.yaml",
-    "homepage": [
-      "https://oras.land"
-    ],
-    "host": [
-      "aarch64-linux",
-      "riscv64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/oras-project/oras"
-    ],
-    "provides": [
-      "oras"
-    ],
-    "repology": [
-      "oras"
-    ],
-    "src_url": [
-      "https://github.com/oras-project/oras"
-    ],
-    "tag": [
-      "oci",
-      "registry"
-    ],
-    "version": "v1.2.3"
-  },
-  {
-    "_disabled": "false",
     "pkg": "ouch",
     "pkg_family": "ouch",
     "pkg_id": "github.com.ouch-org.ouch.source",
@@ -7495,6 +7372,130 @@
       "editor"
     ],
     "version": "0.46.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "runc",
+    "pkg_family": "runc",
+    "pkg_id": "github.com.opencontainers.runc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/opencontainers-runc/runc/runc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/runc/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI tool for spawning and running containers according to the OCI specification",
+    "distro_pkg": {
+      "alpine": [
+        "runc"
+      ],
+      "archlinux": {
+        "aur": [
+          "runc-git"
+        ],
+        "extra": [
+          "runc"
+        ]
+      },
+      "debian": [
+        "runc"
+      ],
+      "gnuguix": [
+        "runc"
+      ],
+      "nixpkgs": [
+        "runc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/runc/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/opencontainers/runc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/opencontainers/runc"
+    ],
+    "provides": [
+      "runc"
+    ],
+    "repology": [
+      "runc"
+    ],
+    "src_url": [
+      "https://github.com/opencontainers/runc"
+    ],
+    "tag": [
+      "container",
+      "oci"
+    ],
+    "version": "v1.3.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ruri",
+    "pkg_family": "ruri",
+    "pkg_id": "github.com.Moe-hacker.ruri",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hacker-ruri/ruri/ruri",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ruri/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A self-contained Linux container implementation",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ruri",
+          "ruri-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ruri/static.official.stable.yaml",
+    "homepage": [
+      "https://blog.crack.moe/2023/07/31/moe-ruri-notes/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/Moe-hacker/ruri"
+    ],
+    "provides": [
+      "ruri"
+    ],
+    "repology": [
+      "ruri"
+    ],
+    "src_url": [
+      "https://github.com/Moe-hacker/ruri"
+    ],
+    "tag": [
+      "chroot",
+      "container"
+    ],
+    "version": "v3.8"
   },
   {
     "_disabled": "false",
@@ -8585,80 +8586,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "shellcheck",
-    "pkg_family": "shellcheck",
-    "pkg_id": "github.com.koalaman.shellcheck",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/koalaman-shellcheck/shellcheck/shellcheck",
-    "bincache": "ghcr.io/pkgforge/bincache/shellcheck/official/shellcheck",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/shellcheck/static.official.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Static analysis and lint tool for shell scripts",
-    "distro_pkg": {
-      "alpine": [
-        "shellcheck"
-      ],
-      "archlinux": {
-        "aur": [
-          "shellcheck-bin",
-          "shellcheck-git"
-        ],
-        "extra": [
-          "shellcheck"
-        ]
-      },
-      "debian": [
-        "shellcheck"
-      ],
-      "gnuguix": [
-        "shellcheck"
-      ],
-      "homebrew": [
-        "shellcheck"
-      ],
-      "nixpkgs": [
-        "shellcheck",
-        "shellcheck-minimal"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/shellcheck/static.official.stable.yaml",
-    "homepage": [
-      "https://www.shellcheck.net"
-    ],
-    "host": [
-      "aarch64-linux",
-      "riscv64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/koalaman/shellcheck"
-    ],
-    "provides": [
-      "shellcheck"
-    ],
-    "repology": [
-      "shellcheck"
-    ],
-    "src_url": [
-      "https://github.com/koalaman/shellcheck"
-    ],
-    "tag": [
-      "shell"
-    ],
-    "version": "v0.10.0"
-  },
-  {
-    "_disabled": "false",
     "pkg": "simplex-chat",
     "pkg_family": "simplex-chat",
     "pkg_id": "ppkg.simplex-chat",
@@ -9290,7 +9217,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-cc8dc9e-250609T161212"
+    "version": "HEAD-db34cdc-250610T073806"
   },
   {
     "_disabled": "false",

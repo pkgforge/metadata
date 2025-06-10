@@ -359,27 +359,24 @@ jobs:
           {
             jq -rn \
             '
-              (input | map({pkg, version, src_url})) as $ppkg |
+              (input | map({pkgname, version, summary, "src-url"})) as $ppkg_raw |
               (input | map({pkg, version, homepage})) as $brew |
-              (input | map({pkgname, summary})) as $ppkg_raw |
-              ($ppkg | map(.pkg)) as $ppkg_names |
+              ($ppkg_raw | map(.pkgname)) as $ppkg_names |
               ($brew | map(.pkg)) as $brew_names |
               ($ppkg_names | map(select(. as $name | $brew_names | index($name)))) as $common |
               
               $common[] as $pkg_name |
-              ($ppkg[] | select(.pkg == $pkg_name)) as $p |
+              ($ppkg_raw[] | select(.pkgname == $pkg_name)) as $p |
               ($brew[] | select(.pkg == $pkg_name)) as $b |
-              ($ppkg_raw[] | select(.pkgname == $pkg_name)) as $pr |
               
               if $p.version != $b.version then
-                "## \($pkg_name)\n\n**Description:** \($pr.summary // "No description available")\n\n| Source | Version | URL/Homepage |\n|--------|---------|-------------|\n| PPKG   | \($p.version) ⚠️ | \($p.src_url) |\n| BREW   | **\($b.version)** | \($b.homepage) |\n\n*Outdated*\n"
+                "## \($pkg_name)\n\n**Description:** \($p.summary // "No description available")\n\n| Source | Version | URL/Homepage |\n|--------|---------|-------------|\n| PPKG   | \($p.version) ⚠️ | \($p["src-url"]) |\n| BREW   | **\($b.version)** | \($b.homepage) |\n\n*Outdated*\n"
               else
-                "## \($pkg_name)\n\n**Description:** \($pr.summary // "No description available")\n\n| Source | Version | URL/Homepage |\n|--------|---------|-------------|\n| PPKG   | \($p.version) ✅ | \($p.src_url) |\n| BREW   | \($b.version) | \($b.homepage) |\n"
+                "## \($pkg_name)\n\n**Description:** \($p.summary // "No description available")\n\n| Source | Version | URL/Homepage |\n|--------|---------|-------------|\n| PPKG   | \($p.version) ✅ | \($p["src-url"]) |\n| BREW   | \($b.version) | \($b.homepage) |\n"
               end
             ' \
-            <(curl -qfsSL "https://github.com/pkgforge/metadata/raw/refs/heads/main/misc/data/PPKG.json") \
-            <(curl -qfsSL "https://github.com/pkgforge/metadata/raw/refs/heads/main/misc/data/BREW_FORMULA.json") \
-            <(curl -qfsSL "https://github.com/pkgforge/metadata/raw/refs/heads/main/misc/data/PPKG_RAW.json")
+            <(curl -qfsSL "https://github.com/pkgforge/metadata/raw/refs/heads/main/misc/data/PPKG_RAW.json") \
+            <(curl -qfsSL "https://github.com/pkgforge/metadata/raw/refs/heads/main/misc/data/BREW_FORMULA.json")
           } 2>/dev/null 1>"./PPKG_BREW.md"
           if [[ -s "./PPKG_BREW.md" ]] && [[ $(stat -c%s "./PPKG_BREW.md") -gt 100000 ]]; then
              cp -fv "./PPKG_BREW.md" "${GITHUB_WORKSPACE}/main/misc/data/PPKG_BREW.md"

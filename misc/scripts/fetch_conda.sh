@@ -69,6 +69,9 @@ pushd "${TMPDIR}" &>/dev/null
      jq -s 'if type == "array" then . else [.] end' |\
      jq 'map(to_entries | sort_by(.key) | from_entries)' 2>/dev/null 1>"${TMPDIR}/CONDA_RAW.json"
      du -bh "${TMPDIR}/CONDA_RAW.json"
+  else
+     echo -e "\n[✗] FATAL: Failed to generate Initial Data\n"
+    exit 1
   fi
  #Parse & Generate
   if [[ "$(jq -r '.[] | .url' "${TMPDIR}/CONDA_RAW.json" 2>/dev/null | wc -l | tr -cd '0-9')" -gt 10000 ]]; then
@@ -115,6 +118,9 @@ pushd "${TMPDIR}" &>/dev/null
   if [[ "$(jq -r '.[] | .pkg' "${TMPDIR}/CONDA.json.tmp" 2>/dev/null | wc -l | tr -cd '0-9')" -gt 10000 ]]; then 
      cp -fv "${TMPDIR}/CONDA.json.tmp" "${SYSTMP}/CONDA.json"
      du -bh "${SYSTMP}/CONDA.json"
+  else
+     echo -e "\n[✗] FATAL: Failed to generate Merged Data\n"
+    exit 1
   fi
 popd &>/dev/null  
 #-------------------------------------------------------#

@@ -1,5 +1,5 @@
 ```mathematica
- 509M └─┬ main
+ 510M └─┬ main
  226M   ├─┬ misc
  226M   │ ├─┬ data
   72M   │ │ ├── ARCHLINUX.json
@@ -114,13 +114,13 @@
   59M   ├── GHCR_PKGS.json
   37M   ├─┬ external
   14M   │ ├─┬ am
-  13M   │ │ ├─┬ data
+  14M   │ │ ├─┬ data
  4.8M   │ │ │ ├── x86_64-Linux.json
  4.4M   │ │ │ ├── x86_64-Linux.db
  1.1M   │ │ │ ├── x86_64-Linux.AM.txt
  1.0M   │ │ │ ├── aarch64-Linux.AM.txt
  536K   │ │ │ ├── x86_64-Linux.db.cba
- 500K   │ │ │ ├── x86_64-Linux.json.cba
+ 504K   │ │ │ ├── x86_64-Linux.json.cba
  440K   │ │ │ ├── x86_64-Linux.db.zstd
  432K   │ │ │ ├── x86_64-Linux.db.xz
  404K   │ │ │ ├── x86_64-Linux.json.zstd
@@ -236,7 +236,7 @@
   36K   │   └─┬ scripts
   32K   │     └── gen_meta.sh
   21M   ├─┬ soarpkgs
-  20M   │ ├─┬ data
+  21M   │ ├─┬ data
  2.6M   │ │ ├── COMP_VER_CACHE.json
  2.6M   │ │ ├── INDEX.json
  1.9M   │ │ ├── BACKAGE.json
@@ -246,16 +246,16 @@
  1.1M   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
  1.0M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
  1.0M   │ │ ├── COMP_VER_CACHE.md
- 744K   │ │ ├── COMP_VER_CACHE_OLD.json
+ 848K   │ │ ├── COMP_VER_CACHE_OLD.json
  728K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  720K   │ │ ├── pub_issues_binaries.txt
  660K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  384K   │ │ ├── INDEX.json.cba
  348K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
+ 328K   │ │ ├── COMP_VER_CACHE_OLD.md
  316K   │ │ ├── DIFF_bincache_riscv64-Linux.json
  312K   │ │ ├── OLD_bincache_riscv64-Linux.json
  304K   │ │ ├── pub_issues_packages.txt
- 284K   │ │ ├── COMP_VER_CACHE_OLD.md
  248K   │ │ ├── INDEX.db.cba
  240K   │ │ ├── GH_REPO.md
  236K   │ │ ├── INDEX.json.xz

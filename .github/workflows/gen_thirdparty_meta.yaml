@@ -16,7 +16,7 @@ jobs:
       contents: write
       statuses: read
     strategy:
-      max-parallel: 3
+      max-parallel: 4
       fail-fast: false
       matrix:
         include:
@@ -28,6 +28,9 @@ jobs:
 
           - source: "archlinux"
             script: "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_archlinux_docker.sh"
+
+          - source: "conda"
+            script: "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_conda.sh"
 
           - source: "debian"
             script: "${GITHUB_WORKSPACE}/main/misc/scripts/fetch_debian_docker.sh"

@@ -43,7 +43,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-0cd87ca-250610T114307"
+    "version": "HEAD-d5c4fe7-250611T101428"
   },
   {
     "_disabled": "false",
@@ -1138,7 +1138,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.10"
+    "version": "2025.06.11"
   },
   {
     "_disabled": "false",
@@ -3951,7 +3951,7 @@
       "container",
       "security"
     ],
-    "version": "HEAD-5d535cc-250605T171937"
+    "version": "HEAD-e984146-250611T105140"
   },
   {
     "_disabled": "false",
@@ -4974,7 +4974,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "1.22.18"
+    "version": "1.22.20"
   },
   {
     "_disabled": "false",
@@ -5966,7 +5966,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-9e959bc-250610T112231"
+    "version": "HEAD-1e32a95-250611T001540"
   },
   {
     "_disabled": "false",
@@ -6747,7 +6747,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-d783857-250611T000630"
+    "version": "HEAD-26fd855-250611T060423"
   },
   {
     "_disabled": "false",
@@ -7032,8 +7032,7 @@
     ],
     "tag": [
       "gitlab"
-    ],
-    "version": "HEAD-b43d620-250610T155927"
+    ]
   },
   {
     "_disabled": "false",
@@ -7161,7 +7160,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-e09825a-250610T190734"
+    "version": "HEAD-08e7777-250611T055637"
   },
   {
     "_disabled": "false",
@@ -8214,7 +8213,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.10"
+    "version": "2025.06.11"
   },
   {
     "_disabled": "false",
@@ -9160,6 +9159,66 @@
       "math"
     ],
     "version": "HEAD-228edc4-250609T140652"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kcptun",
+    "pkg_family": "kcptun",
+    "pkg_id": "github.com.xtaci.kcptun.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kcptun-source/kcptun/kcptun",
+    "bincache": "ghcr.io/pkgforge/bincache/kcptun/official/kcptun-client",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/kcptun/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Stable & Secure Tunnel based on KCP with N:M multiplexing and FEC",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "kcptun"
+        ]
+      },
+      "debian": [
+        "kcptun"
+      ],
+      "homebrew": [
+        "kcptun"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/kcptun/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/xtaci/kcptun"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/xtaci/kcptun"
+    ],
+    "provides": [
+      "kcptun-client",
+      "kcptun-server"
+    ],
+    "repology": [
+      "kcptun"
+    ],
+    "src_url": [
+      "https://github.com/xtaci/kcptun"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-7482ed2-250611T100804"
   },
   {
     "_disabled": "false",
@@ -10412,7 +10471,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-70b513b-250609T211455"
+    "version": "HEAD-a4d16cc-250610T202815"
   },
   {
     "_disabled": "false",
@@ -11200,7 +11259,7 @@
     "tag": [
       "container"
     ],
-    "version": "HEAD-221e3e0-250607T203929"
+    "version": "HEAD-401800a-250611T114800"
   },
   {
     "_disabled": "false",
@@ -11721,6 +11780,59 @@
   },
   {
     "_disabled": "false",
+    "pkg": "nrich",
+    "pkg_family": "nrich",
+    "pkg_id": "gitlab.com.shodan-public.nrich",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/public-nrich/nrich/nrich",
+    "bincache": "ghcr.io/pkgforge/bincache/nrich/official/nrich",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/nrich/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Quickly analyze all IPs in a file and see which ones have open ports/vulnerabilities using Shodan",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "nrich-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/nrich/static.official.source.yaml",
+    "homepage": [
+      "https://gitlab.com/shodan-public/nrich"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://gitlab.com/shodan-public/nrich"
+    ],
+    "provides": [
+      "nrich"
+    ],
+    "repology": [
+      "nrich"
+    ],
+    "src_url": [
+      "https://gitlab.com/shodan-public/nrich"
+    ],
+    "tag": [
+      "osnit",
+      "recon"
+    ]
+  },
+  {
+    "_disabled": "false",
     "pkg": "nushell",
     "pkg_family": "nushell",
     "pkg_id": "github.com.nushell.nushell",
@@ -12055,7 +12167,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.10"
+    "version": "2025.06.11"
   },
   {
     "_disabled": "false",
@@ -13357,6 +13469,61 @@
       "redteam"
     ],
     "version": "HEAD-dcde613-250607T223637"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "rebos",
+    "pkg_family": "rebos",
+    "pkg_id": "gitlab.com.Oglo12.rebos",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oglo12-rebos/rebos/rebos",
+    "bincache": "ghcr.io/pkgforge/bincache/rebos/official/rebos",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rebos/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tool to mimic NixOS's repeatability, managing packages and services on any Linux distro",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "rebos-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rebos/static.official.source.yaml",
+    "homepage": [
+      "https://gitlab.com/Oglo12/rebos/-/wikis/home",
+      "https://gitlab.com/Oglo12/rebos"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://gitlab.com/Oglo12/rebos"
+    ],
+    "provides": [
+      "rebos"
+    ],
+    "repology": [
+      "rebos"
+    ],
+    "src_url": [
+      "https://gitlab.com/Oglo12/rebos"
+    ],
+    "tag": [
+      "config",
+      "nix",
+      "reproducible"
+    ]
   },
   {
     "_disabled": "false",
@@ -15540,7 +15707,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-0c82206-250609T131832"
+    "version": "HEAD-7e75ac6-250611T071616"
   },
   {
     "_disabled": "false",
@@ -15784,6 +15951,70 @@
       "ssh"
     ],
     "version": "HEAD-f9c8f60-230520T112637"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sshx",
+    "pkg_family": "sshx",
+    "pkg_id": "github.com.ekzhang.sshx",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ekzhang-sshx/sshx/sshx",
+    "bincache": "ghcr.io/pkgforge/bincache/sshx/official/sshx",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sshx/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast, collaborative live terminal sharing over the web",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "sshx-git"
+        ],
+        "extra": [
+          "sshx"
+        ]
+      },
+      "nixpkgs": [
+        "sshx"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sshx/static.official.source.yaml",
+    "homepage": [
+      "https://sshx.io",
+      "https://github.com/ekzhang/sshx"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "ISC",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ekzhang/sshx"
+    ],
+    "provides": [
+      "sshx",
+      "sshx-server"
+    ],
+    "repology": [
+      "sshx"
+    ],
+    "src_url": [
+      "https://github.com/ekzhang/sshx"
+    ],
+    "tag": [
+      "ssh",
+      "terminal"
+    ],
+    "version": "HEAD-a0133d9-250611T025813"
   },
   {
     "_disabled": "false",
@@ -17107,7 +17338,7 @@
       "busybox",
       "coreboot"
     ],
-    "version": "HEAD-b5ec1a2-250609T185945"
+    "version": "HEAD-146e482-250611T071151"
   },
   {
     "_disabled": "false",
@@ -19366,7 +19597,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3d67b75-250611T004747"
+    "version": "HEAD-070387a-250611T011017"
   },
   {
     "_disabled": "false",
@@ -21124,7 +21355,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-0752b53-250611T084905"
+    "version": "HEAD-414d46f-250611T101351"
   },
   {
     "_disabled": "false",

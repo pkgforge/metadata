@@ -36,7 +36,15 @@ pushd "${TMPDIR}" &>/dev/null
    micromamba search "*" --channel "anaconda" --json 2>/dev/null 1>"${TMPDIR}/ANACONDA.json.tmp"
    jq -c '.. | select(type == "array") | select(length > 0) | select(.[0] | type == "object") | select(.[0] | has("build_string")) | .[]' "${TMPDIR}/ANACONDA.json.tmp" 2>/dev/null 1>"${TMPDIR}/ANACONDA.jsonl.tmp"
    jq -c 'del(.build_number, .build_string, .constrains, .depends, .fn, .md5, .md5sum, .noarch, .subdir, .track_features)' "${TMPDIR}/ANACONDA.jsonl.tmp" 2>/dev/null 1>"${TMPDIR}/ANACONDA.jsonl"
-   cat "${TMPDIR}/ANACONDA.jsonl" | jq -s 'group_by(.name) | map(max_by([.version, .timestamp])) | .[]' -c 2>/dev/null 1>"${TMPDIR}/ANACONDA.jsonl.tmp"
+   cat "${TMPDIR}/ANACONDA.jsonl" | jq -s \
+    '
+      def normalize_version(v):
+        v | tostring | split(".") | map(tonumber? // 0) | 
+        . + [0,0,0,0] | .[0:4];  # Pad to 4 elements for consistent comparison
+      group_by(.name) | 
+      map(sort_by(.timestamp) | sort_by(normalize_version(.version)) | last) | 
+      .[]
+    ' -c 2>/dev/null 1>"${TMPDIR}/ANACONDA.jsonl.tmp"
    if [[ -s "${TMPDIR}/ANACONDA.jsonl.tmp" ]] && [[ $(stat -c%s "${TMPDIR}/ANACONDA.jsonl.tmp") -gt 100000 ]]; then
      cp -fv "${TMPDIR}/ANACONDA.jsonl.tmp" "${TMPDIR}/ANACONDA.jsonl"
      du -bh "${TMPDIR}/ANACONDA.jsonl"
@@ -45,7 +53,15 @@ pushd "${TMPDIR}" &>/dev/null
    micromamba search "*" --channel "bioconda" --json 2>/dev/null 1>"${TMPDIR}/BIOCONDA.json.tmp"
    jq -c '.. | select(type == "array") | select(length > 0) | select(.[0] | type == "object") | select(.[0] | has("build_string")) | .[]' "${TMPDIR}/BIOCONDA.json.tmp" 2>/dev/null 1>"${TMPDIR}/BIOCONDA.jsonl.tmp"
    jq -c 'del(.build_number, .build_string, .constrains, .depends, .fn, .md5, .md5sum, .noarch, .subdir, .track_features)' "${TMPDIR}/BIOCONDA.jsonl.tmp" 2>/dev/null 1>"${TMPDIR}/BIOCONDA.jsonl"
-   cat "${TMPDIR}/BIOCONDA.jsonl" | jq -s 'group_by(.name) | map(max_by([.version, .timestamp])) | .[]' -c 2>/dev/null 1>"${TMPDIR}/BIOCONDA.jsonl.tmp"
+   cat "${TMPDIR}/BIOCONDA.jsonl" | jq -s \
+    '
+      def normalize_version(v):
+        v | tostring | split(".") | map(tonumber? // 0) | 
+        . + [0,0,0,0] | .[0:4];  # Pad to 4 elements for consistent comparison
+      group_by(.name) | 
+      map(sort_by(.timestamp) | sort_by(normalize_version(.version)) | last) | 
+      .[]
+    ' -c 2>/dev/null 1>"${TMPDIR}/BIOCONDA.jsonl.tmp"
    if [[ -s "${TMPDIR}/BIOCONDA.jsonl.tmp" ]] && [[ $(stat -c%s "${TMPDIR}/BIOCONDA.jsonl.tmp") -gt 100000 ]]; then
      cp -fv "${TMPDIR}/BIOCONDA.jsonl.tmp" "${TMPDIR}/BIOCONDA.jsonl"
      du -bh "${TMPDIR}/BIOCONDA.jsonl"
@@ -54,7 +70,15 @@ pushd "${TMPDIR}" &>/dev/null
    micromamba search "*" --channel "conda-forge" --json 2>/dev/null 1>"${TMPDIR}/CONDA_FORGE.json.tmp"
    jq -c '.. | select(type == "array") | select(length > 0) | select(.[0] | type == "object") | select(.[0] | has("build_string")) | .[]' "${TMPDIR}/CONDA_FORGE.json.tmp" 2>/dev/null 1>"${TMPDIR}/CONDA_FORGE.jsonl.tmp"
    jq -c 'del(.build_number, .build_string, .constrains, .depends, .fn, .md5, .md5sum, .noarch, .subdir, .track_features)' "${TMPDIR}/CONDA_FORGE.jsonl.tmp" 2>/dev/null 1>"${TMPDIR}/CONDA_FORGE.jsonl"
-   cat "${TMPDIR}/CONDA_FORGE.jsonl" | jq -s 'group_by(.name) | map(max_by([.version, .timestamp])) | .[]' -c 2>/dev/null 1>"${TMPDIR}/CONDA_FORGE.jsonl.tmp"
+   cat "${TMPDIR}/CONDA_FORGE.jsonl" | jq -s \
+    '
+      def normalize_version(v):
+        v | tostring | split(".") | map(tonumber? // 0) | 
+        . + [0,0,0,0] | .[0:4];  # Pad to 4 elements for consistent comparison
+      group_by(.name) | 
+      map(sort_by(.timestamp) | sort_by(normalize_version(.version)) | last) | 
+      .[]
+    ' -c 2>/dev/null 1>"${TMPDIR}/CONDA_FORGE.jsonl.tmp"
    if [[ -s "${TMPDIR}/CONDA_FORGE.jsonl.tmp" ]] && [[ $(stat -c%s "${TMPDIR}/CONDA_FORGE.jsonl.tmp") -gt 100000 ]]; then
      cp -fv "${TMPDIR}/CONDA_FORGE.jsonl.tmp" "${TMPDIR}/CONDA_FORGE.jsonl"
      du -bh "${TMPDIR}/CONDA_FORGE.jsonl"

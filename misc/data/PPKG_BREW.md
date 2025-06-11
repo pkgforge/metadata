@@ -2165,8 +2165,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 13.3.0 ✅ | https://ftp.gnu.org/gnu/gcc/gcc-13.3.0/gcc-13.3.0.tar.xz |
-| BREW   | 13.3.0 | https://gcc.gnu.org/ |
+| PPKG   | 13.3.0 ⚠️ | https://ftp.gnu.org/gnu/gcc/gcc-13.3.0/gcc-13.3.0.tar.xz |
+| BREW   | **13.4.0** | https://gcc.gnu.org/ |
+
+*Outdated*
 
 ## gcc@14
 
@@ -4027,7 +4029,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.4.6 ⚠️ | https://github.com/libffi/libffi/releases/download/v3.4.6/libffi-3.4.6.tar.gz |
-| BREW   | **3.5.0** | https://sourceware.org/libffi/ |
+| BREW   | **3.5.1** | https://sourceware.org/libffi/ |
 
 *Outdated*
 
@@ -6202,7 +6204,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.104.1 ⚠️ | https://github.com/nushell/nushell/archive/refs/tags/0.104.1.tar.gz |
-| BREW   | **0.105.0** | https://www.nushell.sh |
+| BREW   | **0.105.1** | https://www.nushell.sh |
 
 *Outdated*
 
@@ -8734,7 +8736,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.12.6 ⚠️ | https://github.com/Z3Prover/z3/archive/z3-4.12.6.tar.gz |
-| BREW   | **4.15.0** | https://github.com/Z3Prover/z3 |
+| BREW   | **4.15.1** | https://github.com/Z3Prover/z3 |
 
 *Outdated*
 

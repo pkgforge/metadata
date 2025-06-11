@@ -394,7 +394,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.10 ⚠️ | null |
+| PPKG   | 2025.06.11 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1254,7 +1254,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.8.1 ⚠️ | https://github.com/cue-lang/cue/archive/refs/tags/v0.8.1.tar.gz |
-| BREW   | **0.13.0** | https://cuelang.org/ |
+| BREW   | **0.13.1** | https://cuelang.org/ |
 
 *Outdated*
 
@@ -1548,10 +1548,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.22.18 ⚠️ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.18.tar.xz |
-| BREW   | **1.22.20** | https://wiki.debian.org/Teams/Dpkg |
-
-*Outdated*
+| PPKG   | 1.22.20 ✅ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.20.tar.xz |
+| BREW   | 1.22.20 | https://wiki.debian.org/Teams/Dpkg |
 
 ## dtc
 
@@ -1917,17 +1915,6 @@
 
 *Outdated*
 
-## fish
-
-**Description:** A smart and user-friendly command line shell for Linux, macOS, and the rest of the family
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 3.7.1 ⚠️ | https://github.com/fish-shell/fish-shell/releases/download/3.7.1/fish-3.7.1.tar.xz |
-| BREW   | **4.0.2** | https://fishshell.com |
-
-*Outdated*
-
 ## fizz
 
 **Description:** C++14 implementation of the TLS-1.3 standard
@@ -2187,8 +2174,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 14.2.0 ✅ | https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz |
-| BREW   | 14.2.0 | https://gcc.gnu.org/ |
+| PPKG   | 14.2.0 ⚠️ | https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz |
+| BREW   | **14.3.0** | https://gcc.gnu.org/ |
+
+*Outdated*
 
 ## gcli
 
@@ -3348,10 +3337,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.7.1 ⚠️ | https://github.com/stedolan/jq/releases/download/jq-1.7.1/jq-1.7.1.tar.gz |
-| BREW   | **1.8.0** | https://jqlang.github.io/jq/ |
-
-*Outdated*
+| PPKG   | 1.8.0 ✅ | https://github.com/stedolan/jq/releases/download/jq-1.8.0/jq-1.8.0.tar.gz |
+| BREW   | 1.8.0 | https://jqlang.github.io/jq/ |
 
 ## json-glib
 
@@ -4436,7 +4423,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.10 ⚠️ | null |
+| PPKG   | 2025.06.11 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6214,8 +6201,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.104.1 ✅ | https://github.com/nushell/nushell/archive/refs/tags/0.104.1.tar.gz |
-| BREW   | 0.104.1 | https://www.nushell.sh |
+| PPKG   | 0.104.1 ⚠️ | https://github.com/nushell/nushell/archive/refs/tags/0.104.1.tar.gz |
+| BREW   | **0.105.0** | https://www.nushell.sh |
+
+*Outdated*
 
 ## obfs4proxy
 
@@ -6466,7 +6455,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.10 ⚠️ | null |
+| PPKG   | 2025.06.11 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6603,7 +6592,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.37.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.37.0.tar.gz |
-| BREW   | **0.48.0** | https://pixi.sh |
+| BREW   | **0.48.1** | https://pixi.sh |
 
 *Outdated*
 
@@ -6624,7 +6613,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.10 ⚠️ | null |
+| PPKG   | 2025.06.11 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6786,7 +6775,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.10 ⚠️ | null |
+| PPKG   | 2025.06.11 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7134,7 +7123,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/apollographql/rover/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.32.1** | https://www.apollographql.com/docs/rover/ |
+| BREW   | **0.33.0** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
 
@@ -7805,7 +7794,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.81.1** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.81.3** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8228,7 +8217,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.1.0450 ⚠️ | https://github.com/vim/vim/archive/refs/tags/v9.1.0450.tar.gz |
-| BREW   | **9.1.1400** | https://www.vim.org/ |
+| BREW   | **9.1.1450** | https://www.vim.org/ |
 
 *Outdated*
 

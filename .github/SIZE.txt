@@ -1,9 +1,11 @@
- 460M └─┬ main
- 177M   ├─┬ misc
- 177M   │ ├─┬ data
+ 497M └─┬ main
+ 214M   ├─┬ misc
+ 214M   │ ├─┬ data
   72M   │ │ ├── ARCHLINUX.json
   37M   │ │ ├── FLATPAK_APPSTREAM.xml
   23M   │ │ ├── DEBIAN.json
+  19M   │ │ ├── CONDA.json
+  16M   │ │ ├── CONDA_RAW.json
   11M   │ │ ├── ALPINE_PKG.json
   10M   │ │ ├── NIXPKGS.json
  9.0M   │ │ ├── PKGSRC.json
@@ -21,12 +23,13 @@
   76K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
-  88K   │ └─┬ scripts
+  96K   │ └─┬ scripts
   12K   │   ├── fetch_flatpak.sh
   12K   │   ├── fetch_alpine_pkg.sh
  8.0K   │   ├── fetch_homebrew.sh
  8.0K   │   ├── fetch_gh_logs.sh
  8.0K   │   ├── fetch_debian_src.sh
+ 8.0K   │   ├── fetch_conda.sh
  8.0K   │   ├── fetch_archlinux_src.sh
  4.0K   │   ├── fetch_stalix.sh
  4.0K   │   ├── fetch_ppkg.sh
@@ -64,8 +67,8 @@
  844K   │ │ ├── x86_64-Linux.json.xz
  840K   │ │ ├── aarch64-Linux.json.zstd
  812K   │ │ ├── aarch64-Linux.json.xz
- 184K   │ │ ├── riscv64-Linux.sdb.cba
- 180K   │ │ ├── riscv64-Linux.db.cba
+ 188K   │ │ ├── riscv64-Linux.sdb.cba
+ 184K   │ │ ├── riscv64-Linux.db.cba
  156K   │ │ ├── riscv64-Linux.sdb.zstd
  156K   │ │ ├── riscv64-Linux.json.cba
  148K   │ │ ├── riscv64-Linux.db.zstd
@@ -244,8 +247,8 @@
  1.0M   │ │ ├── COMP_VER_CACHE.md
  736K   │ │ ├── COMP_VER_CACHE_OLD.json
  720K   │ │ ├── pub_issues_binaries.txt
- 696K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 624K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 700K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 632K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  384K   │ │ ├── INDEX.json.cba
  348K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
  316K   │ │ ├── DIFF_bincache_riscv64-Linux.json
@@ -317,7 +320,7 @@
  112K   │ │ ├── x86_64-Linux.db.xz
  104K   │ │ ├── x86_64-Linux.json.zstd
  100K   │ │ ├── x86_64-Linux.json.xz
-  92K   │ │ ├── aarch64-Linux.sdb.cba
+  96K   │ │ ├── aarch64-Linux.sdb.cba
   88K   │ │ ├── aarch64-Linux.db.cba
   80K   │ │ ├── aarch64-Linux.json.cba
   76K   │ │ ├── aarch64-Linux.sdb.zstd

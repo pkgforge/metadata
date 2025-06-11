@@ -106,6 +106,24 @@ pushd "${TMPDIR}" &>/dev/null
      pkg_family: (.name // ""),
      build_date: (.timestamp // ""),
      build_id: (.build // ""),
+     build_recipe: (
+       if (.channel // "") == "conda-forge" then
+         "https://raw.githubusercontent.com/conda-forge/" + (.name // "") + "-feedstock/main/recipe/meta.yaml"
+       elif (.channel // "") == "bioconda" then
+         "https://raw.githubusercontent.com/bioconda/bioconda-recipes/master/recipes/" + (.name // "") + "/meta.yaml"
+       else
+         ""
+       end
+     ),
+     build_script: (
+       if (.channel // "") == "conda-forge" then
+         "https://raw.githubusercontent.com/conda-forge/" + (.name // "") + "-feedstock/main/recipe/build.sh"
+       elif (.channel // "") == "bioconda" then
+         "https://raw.githubusercontent.com/bioconda/bioconda-recipes/master/recipes/" + (.name // "") + "/build.sh"
+       else
+         ""
+       end
+     ),
      channel: (.channel // ""),
      download_url: (.url // ""),
      license: (.license // ""),
@@ -125,6 +143,15 @@ pushd "${TMPDIR}" &>/dev/null
        end
      ),
      size_raw: (.size // ""),
+     src_url: (
+       if (.channel // "") == "conda-forge" then
+         "https://github.com/conda-forge/" + (.name // "") + "-feedstock"
+       elif (.channel // "") == "bioconda" then
+         "https://github.com/bioconda/bioconda-recipes"
+       else
+         ""
+       end
+     ),
      version: (.version // "")
    })' 2>/dev/null 1>"${TMPDIR}/CONDA.json"
 

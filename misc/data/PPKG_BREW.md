@@ -3389,7 +3389,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20240107 ⚠️ | https://github.com/xtaci/kcptun/archive/refs/tags/v20240107.tar.gz |
-| BREW   | **20250427** | https://github.com/xtaci/kcptun |
+| BREW   | **20250612** | https://github.com/xtaci/kcptun |
 
 *Outdated*
 
@@ -5955,7 +5955,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.2 ⚠️ | https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz |
-| BREW   | **8.4** | https://www.nano-editor.org/ |
+| BREW   | **8.5** | https://www.nano-editor.org/ |
 
 *Outdated*
 

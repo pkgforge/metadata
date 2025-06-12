@@ -394,7 +394,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.11 ⚠️ | null |
+| PPKG   | 2025.06.12 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1507,7 +1507,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.54.2** | https://github.com/dolthub/dolt |
+| BREW   | **1.55.0** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2408,8 +2408,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.2 ✅ | https://github.com/gitwatch/gitwatch/archive/refs/tags/v0.2.tar.gz |
-| BREW   | 0.2 | https://github.com/gitwatch/gitwatch |
+| PPKG   | 0.2 ⚠️ | https://github.com/gitwatch/gitwatch/archive/refs/tags/v0.2.tar.gz |
+| BREW   | **0.3** | https://github.com/gitwatch/gitwatch |
+
+*Outdated*
 
 ## glew
 
@@ -4425,7 +4427,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.11 ⚠️ | null |
+| PPKG   | 2025.06.12 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5114,7 +5116,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.14.18 ⚠️ | https://github.com/pupnp/pupnp/releases/download/release-1.14.18/libupnp-1.14.18.tar.bz2 |
-| BREW   | **1.14.23** | https://pupnp.sourceforge.io/ |
+| BREW   | **1.14.24** | https://pupnp.sourceforge.io/ |
 
 *Outdated*
 
@@ -6455,7 +6457,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.11 ⚠️ | null |
+| PPKG   | 2025.06.12 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6613,7 +6615,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.11 ⚠️ | null |
+| PPKG   | 2025.06.12 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6775,7 +6777,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.11 ⚠️ | null |
+| PPKG   | 2025.06.12 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7788,7 +7790,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.81.4** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.81.5** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

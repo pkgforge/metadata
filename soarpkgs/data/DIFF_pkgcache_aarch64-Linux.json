@@ -1241,7 +1241,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "3.60.0"
+    "version": "3.60.1"
   },
   {
     "_disabled": "false",
@@ -1302,7 +1302,80 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b89cb89-250610T072540"
+    "version": "HEAD-c7c7ba6-250612T141930"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "element-desktop",
+    "pkg_family": "element-desktop",
+    "pkg_id": "runimage.alpine.element-desktop",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/element-desktop/element-desktop/element-desktop",
+    "app_id": "im.riot.Riot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/element-desktop/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A glossy Matrix collaboration client for desktop",
+    "distro_pkg": {
+      "alpine": [
+        "element-desktop",
+        "element-web"
+      ],
+      "archlinux": {
+        "aur": [
+          "element-desktop-git",
+          "element-desktop-nightly-bin",
+          "riot-web-develop-bin",
+          "riot-web-develop-git"
+        ],
+        "extra": [
+          "element.io"
+        ]
+      },
+      "homebrew": [
+        "element"
+      ],
+      "nixpkgs": [
+        "element-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/element-desktop/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://github.com/element-hq/element-desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/element-desktop/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/element-desktop/runimage/alpine",
+    "provides": [
+      "element-desktop:riot-desktop"
+    ],
+    "repology": [
+      "element-desktop"
+    ],
+    "src_url": [
+      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/testing/element-desktop"
+    ],
+    "tag": [
+      "chat",
+      "matrix"
+    ],
+    "version": "1.11.103"
   },
   {
     "_disabled": "true",
@@ -1359,7 +1432,7 @@
       "chat",
       "matrix"
     ],
-    "version": "1.11.100"
+    "version": "1.11.103"
   },
   {
     "_disabled": "false",
@@ -2735,7 +2808,7 @@
     "tag": [
       "sudo"
     ],
-    "version": "HEAD-162381e-250612T082644"
+    "version": "HEAD-e64c6a8-250612T154303"
   },
   {
     "_disabled": "false",
@@ -3089,76 +3162,8 @@
     ],
     "tag": [
       "Utility"
-    ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "twingate",
-    "pkg_family": "twingate",
-    "pkg_id": "sharun.wrappe.twingate.stable",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/twingate-stable/twingate/twingate",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate/archive.sharun.stable.yaml",
-    "category": [
-      "Utility"
     ],
-    "description": {
-      "_default": "Zero trust remote access client for resource and networks",
-      "twingate": "Zero trust remote access client for resource and networks [twingate]",
-      "twingated": "Daemon for Twingate [twingate]",
-      "twingate-notifier": "Monitor & Notify for Twingate Client [twingate]"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "twingate",
-          "twingate-bin"
-        ]
-      },
-      "homebrew": [
-        "twingate"
-      ],
-      "nixpkgs": [
-        "twingate"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/twingate/archive.sharun.stable.yaml",
-    "homepage": [
-      "https://www.twingate.com/docs",
-      "https://www.twingate.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Unfree"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/twingate/archive/sharun",
-    "provides": [
-      "twingate",
-      "twingated",
-      "twingate-notifier"
-    ],
-    "repology": [
-      "twingate"
-    ],
-    "src_url": [
-      "https://packages.twingate.com/deb:twingate"
-    ],
-    "tag": [
-      "Utility"
-    ]
+    "version": "1.76.0"
   },
   {
     "_disabled": "false",
@@ -3363,7 +3368,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "4.19.2"
+    "version": "4.20.0"
   },
   {
     "_disabled": "false",
@@ -3677,7 +3682,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.13t_2025-06-11"
+    "version": "1.14t_2025-06-12"
   },
   {
     "_disabled": "false",

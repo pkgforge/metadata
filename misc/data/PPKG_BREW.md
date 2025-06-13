@@ -6322,8 +6322,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2024.10.24 ✅ | https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2024.10.24.tar.gz |
-| BREW   | 2024.10.24 | https://www.khronos.org/registry/OpenCL/ |
+| PPKG   | 2024.10.24 ⚠️ | https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v2024.10.24.tar.gz |
+| BREW   | **2025.06.13** | https://www.khronos.org/registry/OpenCL/ |
+
+*Outdated*
 
 ## opencolorio
 

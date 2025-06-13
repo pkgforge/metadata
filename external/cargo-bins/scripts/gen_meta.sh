@@ -175,7 +175,8 @@ generate_meta()
        PKG_LICENSE="Blessing"
      fi
     #Provides
-     PKG_PROVIDES="$(jq -r '.. | objects | select(has("bin_names")) | .bin_names' "${TMPDIR}/tmp/${PKG_NAME_TAG}.crates.json" | tr -d '[]' | sort -u | grep -iv 'null' | paste -sd, - | tr -d '[:space:]' | sed 's/, /, /g' | sed 's/,/, /g' | sed 's/|//g' | sed 's/"//g' | sed 's/^, //; s/, $//')"
+     PKG_PROVIDES="$(jq -r '.. | objects | select(has("bin_names")) | .bin_names' | jq -r 'if type == "array" then .[] else . end' | tr -d '[]' | sort -u | grep -v '^null$' | grep -v '^$' | sort -u | paste -sd, - |  tr -d '[:space:]' | sed 's/^,\+//; s/,\+$//; s/,\+/,/g; s/,/, /g')"
+               
      if [[ "$(echo "${PKG_PROVIDES}" | tr -d '[:space:]' | wc -c)" -ge 2 ]]; then
        echo "[+] Provides: ${PKG_PROVIDES}"
      else

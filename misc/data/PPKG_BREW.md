@@ -394,7 +394,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.12 ⚠️ | null |
+| PPKG   | 2025.06.13 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1094,7 +1094,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.100.3** | https://github.com/microsoft/vscode |
+| BREW   | **1.101.0** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -3282,7 +3282,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.76.1** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.77.0** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -3588,8 +3588,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.1.3 ✅ | https://gitlab.dkrz.de/k202009/libaec/-/archive/v1.1.3/libaec-v1.1.3.tar.bz2 |
-| BREW   | 1.1.3 | https://gitlab.dkrz.de/k202009/libaec |
+| PPKG   | 1.1.3 ⚠️ | https://gitlab.dkrz.de/k202009/libaec/-/archive/v1.1.3/libaec-v1.1.3.tar.bz2 |
+| BREW   | **1.1.4** | https://gitlab.dkrz.de/k202009/libaec |
+
+*Outdated*
 
 ## libaio
 
@@ -4427,7 +4429,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.12 ⚠️ | null |
+| PPKG   | 2025.06.13 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6457,7 +6459,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.12 ⚠️ | null |
+| PPKG   | 2025.06.13 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6615,7 +6617,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.12 ⚠️ | null |
+| PPKG   | 2025.06.13 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6777,7 +6779,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.12 ⚠️ | null |
+| PPKG   | 2025.06.13 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -6864,7 +6866,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.13.2 ⚠️ | https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tgz |
-| BREW   | **3.13.4** | https://www.python.org/ |
+| BREW   | **3.13.5** | https://www.python.org/ |
 
 *Outdated*
 
@@ -8077,8 +8079,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.7.12 ✅ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | 0.7.12 | https://docs.astral.sh/uv/ |
+| PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
+| BREW   | **0.7.13** | https://docs.astral.sh/uv/ |
+
+*Outdated*
 
 ## v8
 

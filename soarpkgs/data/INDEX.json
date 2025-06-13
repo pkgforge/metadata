@@ -1212,7 +1212,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-5bd85fe-250612T111042"
+    "version": "HEAD-8372bca-250613T100245"
   },
   {
     "_disabled": "false",
@@ -1696,7 +1696,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250612T024708"
+    "version": "250613T024853"
   },
   {
     "_disabled": "false",
@@ -6707,7 +6707,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.12"
+    "version": "2025.06.13"
   },
   {
     "_disabled": "false",
@@ -8532,7 +8532,7 @@
     "tag": [
       "tree"
     ],
-    "version": "HEAD-f19ab14-250530T093742"
+    "version": "HEAD-d9f4dd6-250613T080825"
   },
   {
     "_disabled": "false",
@@ -19098,7 +19098,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-3104a93-250612T162551"
+    "version": "HEAD-6d44dde-250613T081138"
   },
   {
     "_disabled": "false",
@@ -19415,7 +19415,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-3104a93-250612T162551"
+    "version": "HEAD-6d44dde-250613T081138"
   },
   {
     "_disabled": "false",
@@ -22372,7 +22372,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-cc342c0-250609T230914"
+    "version": "HEAD-dd2a6c8-250613T020808"
   },
   {
     "_disabled": "false",
@@ -22426,7 +22426,7 @@
     "tag": [
       "development"
     ],
-    "version": "HEAD-db0e6b4-250426T225433"
+    "version": "HEAD-333307c-250612T211412"
   },
   {
     "_disabled": "false",
@@ -22652,8 +22652,7 @@
     ],
     "tag": [
       "Game"
-    ],
-    "version": "19.2.1"
+    ]
   },
   {
     "_disabled": "false",
@@ -28981,7 +28980,7 @@
     "tag": [
       "ls"
     ],
-    "version": "HEAD-a72d4fd-250530T150309"
+    "version": "HEAD-67970d6-250613T061551"
   },
   {
     "_disabled": "false",
@@ -29853,6 +29852,65 @@
     "_disabled": "false",
     "pkg": "fdm",
     "pkg_family": "fdm",
+    "pkg_id": "runimage.cachyos.fdm",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-fdm/fdm/fdm",
+    "app_id": "org.freedownloadmanager.Manager",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fdm/runimage.cachyos.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A powerful modern download accelerator and organizer",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "freedownloadmanager"
+        ]
+      },
+      "homebrew": [
+        "free-download-manager"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fdm/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://www.freedownloadmanager.org"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/fdm/assets/default.png",
+    "license": [
+      "freeware"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fdm/runimage/cachyos",
+    "provides": [
+      "fdm==freedownloadmanager",
+      "fdm==free-download-manager"
+    ],
+    "repology": [
+      "freedownloadmanager"
+    ],
+    "src_url": [
+      "https://www.freedownloadmanager.org/download-fdm-for-linux.htm"
+    ],
+    "tag": [
+      "downloader",
+      "download-manager"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fdm",
+    "pkg_family": "fdm",
     "pkg_id": "wrappe.fdm",
     "pkg_type": "archive",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-fdm/fdm/fdm",
@@ -29909,66 +29967,6 @@
       "download-manager"
     ],
     "version": "6.28"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "fdm",
-    "pkg_family": "fdm",
-    "pkg_id": "runimage.cachyos.fdm",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-fdm/fdm/fdm",
-    "app_id": "org.freedownloadmanager.Manager",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fdm/runimage.cachyos.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A powerful modern download accelerator and organizer",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "freedownloadmanager"
-        ]
-      },
-      "homebrew": [
-        "free-download-manager"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/fdm/runimage.cachyos.stable.yaml",
-    "homepage": [
-      "https://www.freedownloadmanager.org"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/fdm/assets/default.png",
-    "license": [
-      "freeware"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/fdm/runimage/cachyos",
-    "provides": [
-      "fdm==freedownloadmanager",
-      "fdm==free-download-manager"
-    ],
-    "repology": [
-      "freedownloadmanager"
-    ],
-    "src_url": [
-      "https://www.freedownloadmanager.org/download-fdm-for-linux.htm"
-    ],
-    "tag": [
-      "downloader",
-      "download-manager"
-    ],
-    "version": "6.28.0.6294"
   },
   {
     "_disabled": "false",
@@ -30202,8 +30200,7 @@
     "tag": [
       "debugger",
       "decompiler"
-    ],
-    "version": "22.0.1"
+    ]
   },
   {
     "_disabled": "false",
@@ -34599,7 +34596,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-89e6535-250613T000735"
+    "version": "HEAD-45c27b5-250613T060304"
   },
   {
     "_disabled": "false",
@@ -35574,7 +35571,7 @@
       "editor",
       "graphics"
     ],
-    "version": "250612T031951"
+    "version": "250613T032222"
   },
   {
     "_disabled": "false",
@@ -38624,7 +38621,7 @@
       "downloader",
       "google-drive"
     ],
-    "version": "HEAD-24b9f01-240310T171124"
+    "version": "HEAD-e453670-250613T152147"
   },
   {
     "_disabled": "false",
@@ -39458,8 +39455,7 @@
       "replaysorcery",
       "replay-sorcery",
       "vkbasalt"
-    ],
-    "version": "1.3.3.r32.g44d0471"
+    ]
   },
   {
     "_disabled": "false",
@@ -41310,7 +41306,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d4d466e-250613T042751"
+    "version": "HEAD-bbd71b8-250613T131537"
   },
   {
     "_disabled": "false",
@@ -42001,7 +41997,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.12"
+    "version": "2025.06.13"
   },
   {
     "_disabled": "false",
@@ -42756,7 +42752,7 @@
     "tag": [
       "zsync"
     ],
-    "version": "HEAD-b83408c-250408T191204"
+    "version": "HEAD-269b78a-250613T142112"
   },
   {
     "_disabled": "false",
@@ -50860,7 +50856,7 @@
       "Networking/WWW",
       "www-client"
     ],
-    "version": "139.0.1_1"
+    "version": "139.0.4_1"
   },
   {
     "_disabled": "false",
@@ -53546,8 +53542,7 @@
     "tag": [
       "editor",
       "graphics"
-    ],
-    "version": "1.2.0.r0.gfe07760"
+    ]
   },
   {
     "_disabled": "false",
@@ -54556,7 +54551,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-60ad19c-250611T190615"
+    "version": "HEAD-4072770-250612T210246"
   },
   {
     "_disabled": "false",
@@ -60026,8 +60021,7 @@
     "tag": [
       "editor",
       "graphics"
-    ],
-    "version": "1.7.3"
+    ]
   },
   {
     "_disabled": "false",
@@ -60235,7 +60229,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.12"
+    "version": "2025.06.13"
   },
   {
     "_disabled": "false",
@@ -69171,8 +69165,7 @@
     "tag": [
       "adobe",
       "flashplayer"
-    ],
-    "version": "0.1.0"
+    ]
   },
   {
     "_disabled": "false",
@@ -69593,7 +69586,7 @@
     "tag": [
       "parallel"
     ],
-    "version": "HEAD-2cf3445-250312T165625"
+    "version": "HEAD-767b1d9-250613T131712"
   },
   {
     "_disabled": "false",
@@ -75507,8 +75500,7 @@
       "downloader",
       "music",
       "spotify"
-    ],
-    "version": "4.0.2"
+    ]
   },
   {
     "_disabled": "false",
@@ -75715,7 +75707,7 @@
       "database",
       "sql"
     ],
-    "version": "HEAD-71e66bf-250608T153740"
+    "version": "HEAD-3da0b82-250612T225143"
   },
   {
     "_disabled": "false",

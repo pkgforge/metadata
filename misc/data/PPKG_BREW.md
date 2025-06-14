@@ -2429,7 +2429,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.82.4 ⚠️ | https://download.gnome.org/sources/glib/2.82/glib-2.82.4.tar.xz |
-| BREW   | **2.84.2** | https://docs.gtk.org/glib/ |
+| BREW   | **2.84.3** | https://docs.gtk.org/glib/ |
 
 *Outdated*
 
@@ -3809,7 +3809,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 18.1.2 ⚠️ | https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.2/libclc-18.1.2.src.tar.xz |
-| BREW   | **20.1.6** | https://libclc.llvm.org/ |
+| BREW   | **20.1.7** | https://libclc.llvm.org/ |
 
 *Outdated*
 
@@ -4583,7 +4583,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.6.46 ⚠️ | https://downloads.sourceforge.net/libpng/libpng-1.6.46.tar.xz |
-| BREW   | **1.6.48** | http://www.libpng.org/pub/png/libpng.html |
+| BREW   | **1.6.49** | http://www.libpng.org/pub/png/libpng.html |
 
 *Outdated*
 

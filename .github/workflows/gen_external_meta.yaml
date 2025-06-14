@@ -19,6 +19,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - source: "pkgforge-cargo"
+            script: "${GITHUB_WORKSPACE}/main/external/pkgforge-cargo/scripts/gen_meta.sh"
+            host: "ALL"
+            runner: "ubuntu-latest"
+            dir: "/tmp/_META"
+
           - source: "am"
             script: "${GITHUB_WORKSPACE}/main/external/am/scripts/gen_meta.sh"
             host: "x86_64-Linux"
@@ -94,6 +100,7 @@ jobs:
           gh config set prompt disabled
           git config --global "user.email" "AjamX101@gmail.com"
           git config --global "user.name" "Azathothas"
+          mkdir -pv "${{ matrix.dir }}"
           #-------------#
           ##User-Agent
           USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
@@ -160,6 +167,7 @@ jobs:
             name: ${{ matrix.source }}_${{ matrix.host }}
             path: |
               ${{ matrix.file }}
+              ${{ matrix.dir }}/**
             compression-level: 0 # no compression, [Default: 6 (GNU Gzip)]
             retention-days: 7
             overwrite: true

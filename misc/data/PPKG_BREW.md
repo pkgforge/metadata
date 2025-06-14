@@ -394,7 +394,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.13 ⚠️ | null |
+| PPKG   | 2025.06.14 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1507,7 +1507,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.55.0** | https://github.com/dolthub/dolt |
+| BREW   | **1.56.0** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -4429,7 +4429,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.13 ⚠️ | null |
+| PPKG   | 2025.06.14 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5571,7 +5571,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.677** | https://luau.org |
+| BREW   | **0.678** | https://luau.org |
 
 *Outdated*
 
@@ -6461,7 +6461,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.13 ⚠️ | null |
+| PPKG   | 2025.06.14 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6619,7 +6619,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.13 ⚠️ | null |
+| PPKG   | 2025.06.14 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6781,7 +6781,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.13 ⚠️ | null |
+| PPKG   | 2025.06.14 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7794,7 +7794,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.81.5** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.81.6** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8275,7 +8275,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.3.280 ⚠️ | https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.280.tar.gz |
-| BREW   | **1.4.317** | https://github.com/KhronosGroup/Vulkan-Headers |
+| BREW   | **1.4.318** | https://github.com/KhronosGroup/Vulkan-Headers |
 
 *Outdated*
 

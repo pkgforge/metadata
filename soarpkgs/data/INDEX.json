@@ -19098,7 +19098,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-625e5ee-250615T004256"
+    "version": "HEAD-3090434-250615T103804"
   },
   {
     "_disabled": "false",
@@ -19415,7 +19415,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-625e5ee-250615T004256"
+    "version": "HEAD-3090434-250615T103804"
   },
   {
     "_disabled": "false",
@@ -22291,7 +22291,7 @@
     "tag": [
       "devenv"
     ],
-    "version": "HEAD-cea8560-250613T232226"
+    "version": "HEAD-b88a506-250615T114737"
   },
   {
     "_disabled": "false",
@@ -26743,7 +26743,7 @@
       "e2fs",
       "ext2"
     ],
-    "version": "HEAD-c54a2e8-250614T223402"
+    "version": "HEAD-386e7db-250615T063005"
   },
   {
     "_disabled": "false",
@@ -31308,7 +31308,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "141.0.20250614091208"
+    "version": "141.0.20250615090340"
   },
   {
     "_disabled": "false",
@@ -34599,7 +34599,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-87703cb-250615T060505"
+    "version": "HEAD-b4c9cd2-250615T120446"
   },
   {
     "_disabled": "false",
@@ -35233,6 +35233,75 @@
     "_disabled": "false",
     "pkg": "gimp",
     "pkg_family": "gimp",
+    "pkg_id": "runimage.cachyos.gimp.git",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gimp-git/gimp/gimp",
+    "app_id": "org.gimp.GIMP",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gimp/runimage.cachyos.git.yaml",
+    "category": [
+      "Graphics",
+      "ImageProcessing"
+    ],
+    "description": "The GNU Image Manipulation Program (Git)",
+    "distro_pkg": {
+      "alpine": [
+        "gimp"
+      ],
+      "archlinux": {
+        "aur": [
+          "gimp-git"
+        ],
+        "extra": [
+          "gimp"
+        ]
+      },
+      "debian": [
+        "gimp"
+      ],
+      "nixpkgs": [
+        "gimp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/gimp/runimage.cachyos.git.yaml",
+    "homepage": [
+      "https://www.gimp.org",
+      "https://gitlab.gnome.org/GNOME/gimp"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/gimp/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/gimp/runimage/cachyos",
+    "provides": [
+      "gimp"
+    ],
+    "repology": [
+      "gimp"
+    ],
+    "src_url": [
+      "https://aur.archlinux.org/packages/gimp-git"
+    ],
+    "tag": [
+      "editor",
+      "graphics"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gimp",
+    "pkg_family": "gimp",
     "pkg_id": "github.com.pkgforge-dev.GIMP-AppImage",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gimp-appimage/gimp/gimp",
@@ -35303,76 +35372,6 @@
       "graphics"
     ],
     "version": "3.0.4-3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "gimp",
-    "pkg_family": "gimp",
-    "pkg_id": "runimage.cachyos.gimp.git",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gimp-git/gimp/gimp",
-    "app_id": "org.gimp.GIMP",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gimp/runimage.cachyos.git.yaml",
-    "category": [
-      "Graphics",
-      "ImageProcessing"
-    ],
-    "description": "The GNU Image Manipulation Program (Git)",
-    "distro_pkg": {
-      "alpine": [
-        "gimp"
-      ],
-      "archlinux": {
-        "aur": [
-          "gimp-git"
-        ],
-        "extra": [
-          "gimp"
-        ]
-      },
-      "debian": [
-        "gimp"
-      ],
-      "nixpkgs": [
-        "gimp"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/gimp/runimage.cachyos.git.yaml",
-    "homepage": [
-      "https://www.gimp.org",
-      "https://gitlab.gnome.org/GNOME/gimp"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/gimp/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/gimp/runimage/cachyos",
-    "provides": [
-      "gimp"
-    ],
-    "repology": [
-      "gimp"
-    ],
-    "src_url": [
-      "https://aur.archlinux.org/packages/gimp-git"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ],
-    "version": "3.0.3.r218.eeed283da2"
   },
   {
     "_disabled": "false",
@@ -41227,8 +41226,7 @@
     "tag": [
       "editor",
       "graphics"
-    ],
-    "version": "1.5.2"
+    ]
   },
   {
     "_disabled": "false",
@@ -53546,8 +53544,7 @@
     "tag": [
       "editor",
       "graphics"
-    ],
-    "version": "1.2.0.r0.gfe07760"
+    ]
   },
   {
     "_disabled": "false",
@@ -55645,7 +55642,7 @@
       "Video",
       "Video/Utilities"
     ],
-    "version": "v0.40.0-99-g2b38b382c"
+    "version": "v0.40.0-135-ge8ade130f"
   },
   {
     "_disabled": "false",
@@ -56300,7 +56297,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-1fe55b1-250527T205803"
+    "version": "HEAD-59b2cf0-250615T133808"
   },
   {
     "_disabled": "false",
@@ -59182,7 +59179,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-091d14f-250614T183939"
+    "version": "HEAD-5be8717-250615T134958"
   },
   {
     "_disabled": "false",
@@ -59245,7 +59242,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-091d14f-250614T183939"
+    "version": "HEAD-5be8717-250615T134958"
   },
   {
     "_disabled": "false",
@@ -59391,7 +59388,7 @@
       "Video",
       "Video/Utilities"
     ],
-    "version": "20250601-080811"
+    "version": "31.0.3-2"
   },
   {
     "_disabled": "false",
@@ -68838,7 +68835,7 @@
       "bittorrent",
       "torrent"
     ],
-    "version": "HEAD-4dd838f-250613T215831"
+    "version": "HEAD-e6b2c64-250615T123022"
   },
   {
     "_disabled": "false",
@@ -69171,8 +69168,7 @@
     "tag": [
       "adobe",
       "flashplayer"
-    ],
-    "version": "0.1.0"
+    ]
   },
   {
     "_disabled": "false",
@@ -69757,7 +69753,7 @@
       "screen-sharing",
       "teamviewer"
     ],
-    "version": "250615T012635"
+    "version": "250615T080433"
   },
   {
     "_disabled": "false",
@@ -73267,7 +73263,7 @@
     "tag": [
       "image"
     ],
-    "version": "HEAD-3a562d9-250613T194516"
+    "version": "HEAD-d1d517e-250615T132037"
   },
   {
     "_disabled": "false",
@@ -73681,7 +73677,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-2eded38-250614T162147"
+    "version": "HEAD-1c597d1-250615T202938"
   },
   {
     "_disabled": "false",
@@ -76693,7 +76689,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-771e01a-250613T101839"
+    "version": "HEAD-50f324c-250615T113958"
   },
   {
     "_disabled": "false",
@@ -85181,7 +85177,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b9cd6f5-250602T175527"
+    "version": "HEAD-a793d34-250615T102241"
   },
   {
     "_disabled": "false",
@@ -87680,7 +87676,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-28f4e18-250614T135617"
+    "version": "HEAD-352d564-250615T114557"
   },
   {
     "_disabled": "false",
@@ -90238,7 +90234,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-eda8492-250606T180039"
+    "version": "HEAD-5b687be-250615T090713"
   },
   {
     "_disabled": "false",
@@ -90289,7 +90285,7 @@
     "tag": [
       "utility"
     ],
-    "version": "250615T042457"
+    "version": "250615T111422"
   },
   {
     "_disabled": "false",
@@ -90337,7 +90333,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250615T042457"
+    "version": "250615T111422"
   },
   {
     "_disabled": "false",
@@ -90391,7 +90387,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-434f129-250607T185152"
+    "version": "HEAD-67e1ea9-250615T171958"
   },
   {
     "_disabled": "false",
@@ -91259,7 +91255,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c8d8fd9-250615T001055"
+    "version": "HEAD-90b8a86-250615T154248"
   },
   {
     "_disabled": "false",
@@ -93071,7 +93067,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.13b"
+    "version": "1.13.1b"
   },
   {
     "_disabled": "false",
@@ -93131,7 +93127,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.14t_2025-06-14"
+    "version": "1.14t_2025-06-15"
   },
   {
     "_disabled": "false",

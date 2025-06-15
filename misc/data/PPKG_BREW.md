@@ -8590,8 +8590,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.9.9 ✅ | https://github.com/xmake-io/xmake/releases/download/v2.9.9/xmake-v2.9.9.tar.gz |
-| BREW   | 2.9.9 | https://xmake.io/ |
+| PPKG   | 2.9.9 ⚠️ | https://github.com/xmake-io/xmake/releases/download/v2.9.9/xmake-v2.9.9.tar.gz |
+| BREW   | **3.0.0** | https://xmake.io/ |
+
+*Outdated*
 
 ## xmlto
 

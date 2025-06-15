@@ -394,7 +394,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.14 ⚠️ | null |
+| PPKG   | 2025.06.15 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1043,7 +1043,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.31.7 ⚠️ | https://github.com/Kitware/CMake/releases/download/v3.31.7/cmake-3.31.7.tar.gz |
-| BREW   | **4.0.2** | https://www.cmake.org/ |
+| BREW   | **4.0.3** | https://www.cmake.org/ |
 
 *Outdated*
 
@@ -4429,7 +4429,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.14 ⚠️ | null |
+| PPKG   | 2025.06.15 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6461,7 +6461,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.14 ⚠️ | null |
+| PPKG   | 2025.06.15 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6619,7 +6619,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.14 ⚠️ | null |
+| PPKG   | 2025.06.15 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6781,7 +6781,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.14 ⚠️ | null |
+| PPKG   | 2025.06.15 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

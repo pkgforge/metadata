@@ -1,5 +1,5 @@
 ```mathematica
- 541M └─┬ main
+ 544M └─┬ main
  226M   ├─┬ misc
  226M   │ ├─┬ data
   72M   │ │ ├── ARCHLINUX.json
@@ -111,29 +111,29 @@
   36K   │   ├── gen_meta_riscv64-Linux.sh
   36K   │   ├── gen_meta_aarch64-Linux.sh
   12K   │   └── sync_hf_mirror.sh
-  65M   ├─┬ external
-  28M   │ ├─┬ pkgforge-cargo
-  28M   │ │ ├─┬ data
- 3.7M   │ │ │ ├── x86_64-Linux.json
- 3.7M   │ │ │ ├── aarch64-Linux.json
- 3.3M   │ │ │ ├── riscv64-Linux.json
- 3.1M   │ │ │ ├── x86_64-Linux.db
- 3.1M   │ │ │ ├── aarch64-Linux.db
- 2.7M   │ │ │ ├── riscv64-Linux.db
- 2.6M   │ │ │ ├── loongarch64-Linux.json
- 2.2M   │ │ │ ├── loongarch64-Linux.db
- 372K   │ │ │ ├── x86_64-Linux.db.zstd
- 372K   │ │ │ ├── aarch64-Linux.db.zstd
- 340K   │ │ │ ├── x86_64-Linux.json.zstd
- 336K   │ │ │ ├── aarch64-Linux.json.zstd
- 332K   │ │ │ ├── riscv64-Linux.db.zstd
- 328K   │ │ │ ├── x86_64-Linux.json.xz
- 324K   │ │ │ ├── aarch64-Linux.json.xz
- 300K   │ │ │ ├── riscv64-Linux.json.zstd
- 288K   │ │ │ ├── riscv64-Linux.json.xz
- 260K   │ │ │ ├── loongarch64-Linux.db.zstd
- 236K   │ │ │ ├── loongarch64-Linux.json.zstd
- 228K   │ │ │ ├── loongarch64-Linux.json.xz
+  69M   ├─┬ external
+  31M   │ ├─┬ pkgforge-cargo
+  31M   │ │ ├─┬ data
+ 4.1M   │ │ │ ├── x86_64-Linux.json
+ 4.1M   │ │ │ ├── aarch64-Linux.json
+ 3.7M   │ │ │ ├── riscv64-Linux.json
+ 3.4M   │ │ │ ├── x86_64-Linux.db
+ 3.4M   │ │ │ ├── aarch64-Linux.db
+ 3.1M   │ │ │ ├── riscv64-Linux.db
+ 2.9M   │ │ │ ├── loongarch64-Linux.json
+ 2.4M   │ │ │ ├── loongarch64-Linux.db
+ 412K   │ │ │ ├── x86_64-Linux.db.zstd
+ 408K   │ │ │ ├── aarch64-Linux.db.zstd
+ 372K   │ │ │ ├── x86_64-Linux.json.zstd
+ 368K   │ │ │ ├── riscv64-Linux.db.zstd
+ 368K   │ │ │ ├── aarch64-Linux.json.zstd
+ 360K   │ │ │ ├── x86_64-Linux.json.xz
+ 356K   │ │ │ ├── aarch64-Linux.json.xz
+ 332K   │ │ │ ├── riscv64-Linux.json.zstd
+ 320K   │ │ │ ├── riscv64-Linux.json.xz
+ 292K   │ │ │ ├── loongarch64-Linux.db.zstd
+ 264K   │ │ │ ├── loongarch64-Linux.json.zstd
+ 256K   │ │ │ ├── loongarch64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum
@@ -162,12 +162,12 @@
  4.4M   │ │ │ ├── x86_64-Linux.db
  1.1M   │ │ │ ├── x86_64-Linux.AM.txt
  1.0M   │ │ │ ├── aarch64-Linux.AM.txt
- 496K   │ │ │ ├── x86_64-Linux.db.cba
- 464K   │ │ │ ├── x86_64-Linux.json.cba
+ 492K   │ │ │ ├── x86_64-Linux.db.cba
+ 456K   │ │ │ ├── x86_64-Linux.json.cba
  408K   │ │ │ ├── x86_64-Linux.db.zstd
  404K   │ │ │ ├── x86_64-Linux.db.xz
- 376K   │ │ │ ├── x86_64-Linux.json.zstd
- 368K   │ │ │ ├── x86_64-Linux.json.xz
+ 372K   │ │ │ ├── x86_64-Linux.json.zstd
+ 364K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum
@@ -188,7 +188,7 @@
  340K   │ │ │ ├── x86_64-Linux.db.cba
  316K   │ │ │ ├── x86_64-Linux.json.cba
  264K   │ │ │ ├── x86_64-Linux.db.zstd
- 256K   │ │ │ ├── x86_64-Linux.db.xz
+ 252K   │ │ │ ├── x86_64-Linux.db.xz
  236K   │ │ │ ├── x86_64-Linux.json.zstd
  224K   │ │ │ ├── x86_64-Linux.json.xz
  144K   │ │ │ ├── aarch64-Linux.db.cba

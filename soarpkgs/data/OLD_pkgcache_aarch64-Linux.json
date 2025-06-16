@@ -902,6 +902,60 @@
   },
   {
     "_disabled": "false",
+    "pkg": "caido",
+    "pkg_family": "caido",
+    "pkg_id": "github.com.caido.caido.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caido-stable/caido/caido",
+    "app_id": "io.caido.caido",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/caido/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Lightweight web security auditing toolkit",
+    "distro_pkg": {
+      "homebrew": [
+        "caido"
+      ],
+      "nixpkgs": [
+        "caido"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/caido/appimage.official.stable.yaml",
+    "homepage": [
+      "https://caido.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/caido/caido",
+      "You may need to run this with: --no-sandbox"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/caido/appimage/official",
+    "provides": [
+      "caido"
+    ],
+    "repology": [
+      "caido"
+    ],
+    "src_url": [
+      "https://github.com/caido/caido"
+    ],
+    "tag": [
+      "security"
+    ],
+    "version": "v0.48.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "caido-cli",
     "pkg_family": "caido-cli",
     "pkg_id": "sharun.wrappe.stable.caido-cli",
@@ -1084,6 +1138,70 @@
       "Utility"
     ],
     "version": "HEAD-5dfbe93-231012T002040"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "code-server",
+    "pkg_family": "code-server",
+    "pkg_id": "wrappe.code-server.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/code-server/code-server",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/code-server/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Run VS Code on any machine anywhere and access it in the browser",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "code-server"
+        ]
+      },
+      "homebrew": [
+        "code-server"
+      ],
+      "nixpkgs": [
+        "code-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/code-server/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://coder.com/",
+      "https://github.com/coder/code-server"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/code-server/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/coder/code-server",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/code-server/archive/wrappe",
+    "provides": [
+      "code-server==vs-code-server"
+    ],
+    "repology": [
+      "code-server"
+    ],
+    "src_url": [
+      "https://github.com/coder/code-server"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v4.100.3"
   },
   {
     "_disabled": "false",

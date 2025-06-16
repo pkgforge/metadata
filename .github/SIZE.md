@@ -52,16 +52,16 @@
  2.6M   │ │ ├── riscv64-Linux.json
  2.1M   │ │ ├── riscv64-Linux.db
  1.7M   │ │ ├── riscv64-Linux.sdb
- 1.4M   │ │ ├── x86_64-Linux.sdb.cba
  1.4M   │ │ ├── aarch64-Linux.sdb.cba
- 1.4M   │ │ ├── x86_64-Linux.db.cba
+ 1.4M   │ │ ├── x86_64-Linux.sdb.cba
+ 1.3M   │ │ ├── x86_64-Linux.db.cba
  1.3M   │ │ ├── aarch64-Linux.db.cba
 1020K   │ │ ├── x86_64-Linux.sdb.zstd
 1012K   │ │ ├── aarch64-Linux.sdb.zstd
+ 936K   │ │ ├── x86_64-Linux.db.zstd
  932K   │ │ ├── x86_64-Linux.sdb.xz
- 932K   │ │ ├── x86_64-Linux.db.zstd
- 928K   │ │ ├── aarch64-Linux.sdb.xz
  928K   │ │ ├── aarch64-Linux.db.zstd
+ 924K   │ │ ├── aarch64-Linux.sdb.xz
  908K   │ │ ├── x86_64-Linux.db.xz
  904K   │ │ ├── aarch64-Linux.db.xz
  880K   │ │ ├── x86_64-Linux.json.zstd
@@ -291,18 +291,18 @@
  1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
  1.0M   │ │ ├── COMP_VER_CACHE.md
  796K   │ │ ├── pub_issues_binaries.txt
- 428K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 456K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  416K   │ │ ├── COMP_VER_CACHE_OLD.json
+ 396K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  384K   │ │ ├── INDEX.json.cba
- 372K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
- 364K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 376K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
  320K   │ │ ├── DIFF_bincache_riscv64-Linux.json
  312K   │ │ ├── OLD_bincache_riscv64-Linux.json
  304K   │ │ ├── pub_issues_packages.txt
  248K   │ │ ├── INDEX.db.cba
  240K   │ │ ├── GH_REPO.md
  236K   │ │ ├── INDEX.json.xz
- 228K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
+ 232K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  228K   │ │ ├── INDEX.json.zstd
  200K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
@@ -366,7 +366,7 @@
  104K   │ │ ├── x86_64-Linux.json.zstd
  100K   │ │ ├── x86_64-Linux.json.xz
   92K   │ │ ├── aarch64-Linux.sdb.cba
-  88K   │ │ ├── aarch64-Linux.db.cba
+  92K   │ │ ├── aarch64-Linux.db.cba
   84K   │ │ ├── aarch64-Linux.json.cba
   76K   │ │ ├── aarch64-Linux.sdb.zstd
   72K   │ │ ├── aarch64-Linux.db.zstd

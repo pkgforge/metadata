@@ -1,5 +1,5 @@
 ```mathematica
- 535M └─┬ main
+ 538M └─┬ main
  226M   ├─┬ misc
  226M   │ ├─┬ data
   72M   │ │ ├── ARCHLINUX.json
@@ -111,30 +111,29 @@
   36K   │   ├── gen_meta_riscv64-Linux.sh
   36K   │   ├── gen_meta_aarch64-Linux.sh
   12K   │   └── sync_hf_mirror.sh
-  59M   ├── GHCR_PKGS.json
-  59M   ├─┬ external
-  22M   │ ├─┬ pkgforge-cargo
-  21M   │ │ ├─┬ data
- 2.9M   │ │ │ ├── x86_64-Linux.json
- 2.9M   │ │ │ ├── aarch64-Linux.json
- 2.6M   │ │ │ ├── riscv64-Linux.json
- 2.4M   │ │ │ ├── x86_64-Linux.db
- 2.4M   │ │ │ ├── aarch64-Linux.db
- 2.2M   │ │ │ ├── riscv64-Linux.db
- 2.1M   │ │ │ ├── loongarch64-Linux.json
- 1.7M   │ │ │ ├── loongarch64-Linux.db
- 296K   │ │ │ ├── x86_64-Linux.db.zstd
- 292K   │ │ │ ├── aarch64-Linux.db.zstd
- 268K   │ │ │ ├── x86_64-Linux.json.zstd
- 264K   │ │ │ ├── riscv64-Linux.db.zstd
- 264K   │ │ │ ├── aarch64-Linux.json.zstd
- 256K   │ │ │ ├── x86_64-Linux.json.xz
- 256K   │ │ │ ├── aarch64-Linux.json.xz
- 236K   │ │ │ ├── riscv64-Linux.json.zstd
- 228K   │ │ │ ├── riscv64-Linux.json.xz
- 208K   │ │ │ ├── loongarch64-Linux.db.zstd
- 188K   │ │ │ ├── loongarch64-Linux.json.zstd
- 184K   │ │ │ ├── loongarch64-Linux.json.xz
+  63M   ├─┬ external
+  25M   │ ├─┬ pkgforge-cargo
+  25M   │ │ ├─┬ data
+ 3.4M   │ │ │ ├── x86_64-Linux.json
+ 3.3M   │ │ │ ├── aarch64-Linux.json
+ 3.0M   │ │ │ ├── riscv64-Linux.json
+ 2.8M   │ │ │ ├── x86_64-Linux.db
+ 2.8M   │ │ │ ├── aarch64-Linux.db
+ 2.5M   │ │ │ ├── riscv64-Linux.db
+ 2.3M   │ │ │ ├── loongarch64-Linux.json
+ 1.9M   │ │ │ ├── loongarch64-Linux.db
+ 340K   │ │ │ ├── x86_64-Linux.db.zstd
+ 336K   │ │ │ ├── aarch64-Linux.db.zstd
+ 308K   │ │ │ ├── x86_64-Linux.json.zstd
+ 304K   │ │ │ ├── aarch64-Linux.json.zstd
+ 300K   │ │ │ ├── riscv64-Linux.db.zstd
+ 296K   │ │ │ ├── x86_64-Linux.json.xz
+ 296K   │ │ │ ├── aarch64-Linux.json.xz
+ 272K   │ │ │ ├── riscv64-Linux.json.zstd
+ 264K   │ │ │ ├── riscv64-Linux.json.xz
+ 236K   │ │ │ ├── loongarch64-Linux.db.zstd
+ 212K   │ │ │ ├── loongarch64-Linux.json.zstd
+ 208K   │ │ │ ├── loongarch64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum
@@ -279,6 +278,7 @@
  4.0K   │   │ └── TOTAL.json
   36K   │   └─┬ scripts
   32K   │     └── gen_meta.sh
+  59M   ├── GHCR_PKGS.json
   19M   ├─┬ soarpkgs
   19M   │ ├─┬ data
  2.7M   │ │ ├── COMP_VER_CACHE.json

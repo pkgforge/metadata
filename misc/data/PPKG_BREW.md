@@ -2022,7 +2022,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.12.0 ⚠️ | https://github.com/FreeRDP/FreeRDP/releases/download/3.12.0/freerdp-3.12.0.tar.gz |
-| BREW   | **3.15.0** | https://www.freerdp.com/ |
+| BREW   | **3.16.0** | https://www.freerdp.com/ |
 
 *Outdated*
 
@@ -2751,7 +2751,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 12.2.0 ⚠️ | https://gitlab.com/graphviz/graphviz/-/archive/12.2.0/graphviz-12.2.0.tar.bz2 |
-| BREW   | **13.0.0** | https://graphviz.org/ |
+| BREW   | **13.0.1** | https://graphviz.org/ |
 
 *Outdated*
 
@@ -5593,7 +5593,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.15.1 ⚠️ | https://github.com/lycheeverse/lychee/archive/refs/tags/v0.15.1.tar.gz |
-| BREW   | **0.19.0** | https://lychee.cli.rs/ |
+| BREW   | **0.19.1** | https://lychee.cli.rs/ |
 
 *Outdated*
 
@@ -6598,7 +6598,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.48.1** | https://pixi.sh |
+| BREW   | **0.48.2** | https://pixi.sh |
 
 *Outdated*
 
@@ -7202,7 +7202,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-06-09** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-06-16** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 

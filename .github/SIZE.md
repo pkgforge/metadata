@@ -63,7 +63,7 @@
  928K   │ │ ├── aarch64-Linux.sdb.xz
  928K   │ │ ├── aarch64-Linux.db.zstd
  908K   │ │ ├── x86_64-Linux.db.xz
- 900K   │ │ ├── aarch64-Linux.db.xz
+ 904K   │ │ ├── aarch64-Linux.db.xz
  880K   │ │ ├── x86_64-Linux.json.zstd
  872K   │ │ ├── aarch64-Linux.json.zstd
  848K   │ │ ├── x86_64-Linux.json.xz
@@ -291,11 +291,11 @@
  1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
  1.0M   │ │ ├── COMP_VER_CACHE.md
  796K   │ │ ├── pub_issues_binaries.txt
- 392K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 408K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  388K   │ │ ├── COMP_VER_CACHE_OLD.json
  384K   │ │ ├── INDEX.json.cba
  372K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
- 328K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 344K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  320K   │ │ ├── DIFF_bincache_riscv64-Linux.json
  312K   │ │ ├── OLD_bincache_riscv64-Linux.json
  304K   │ │ ├── pub_issues_packages.txt

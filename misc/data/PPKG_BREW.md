@@ -394,7 +394,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.15 ⚠️ | null |
+| PPKG   | 2025.06.16 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1398,7 +1398,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.57.0 ⚠️ | https://github.com/Wilfred/difftastic/archive/refs/tags/0.57.0.tar.gz |
-| BREW   | **0.63.0** | https://github.com/Wilfred/difftastic |
+| BREW   | **0.64.0** | https://github.com/Wilfred/difftastic |
 
 *Outdated*
 
@@ -4429,7 +4429,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.15 ⚠️ | null |
+| PPKG   | 2025.06.16 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6461,7 +6461,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.15 ⚠️ | null |
+| PPKG   | 2025.06.16 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6619,7 +6619,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.15 ⚠️ | null |
+| PPKG   | 2025.06.16 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6781,7 +6781,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.15 ⚠️ | null |
+| PPKG   | 2025.06.16 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8410,7 +8410,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.34 ⚠️ | https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.34/downloads/wayland-protocols-1.34.tar.xz |
-| BREW   | **1.44** | https://wayland.freedesktop.org |
+| BREW   | **1.45** | https://wayland.freedesktop.org |
 
 *Outdated*
 

@@ -467,6 +467,25 @@
     "install": "cargow install"
   },
   {
+    "pkgname": "appimage-runtime-type2",
+    "pkgtype": "exe",
+    "version": "2025.06.17",
+    "license": "MIT",
+    "summary": "type2 AppImage runtime",
+    "web-url": "https://github.com/AppImage/type2-runtime",
+    "git-url": "https://github.com/AppImage/type2-runtime",
+    "dep-pkg": "libsquashfuse",
+    "dep-upp": "git",
+    "binbstd": "1",
+    "ccflags": "-std=gnu99 -Wall -Werror -Wno-error=unused-result",
+    "ppflags": "-D_FILE_OFFSET_BITS=64",
+    "ldflags": "-T data_sections.ld",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "CFLAGS2=\"$(pkg-config --cflags squashfuse_ll)\"\nLIBS=\"$(pkg-config --libs-only-l squashfuse_ll)\"\nrun $CC $CFLAGS $CPPFLAGS $CFLAGS2 -DGIT_COMMIT=\"\\\\\\\"$PACKAGE_GIT_SHA\\\\\\\"\" $LDFLAGS -o appimage-runtime-type2 runtime.c $LIBS\ninstall_bins appimage-runtime-type2"
+  },
+  {
     "pkgname": "appimagetool",
     "pkgtype": "exe",
     "version": "2025.06.17",
@@ -15093,6 +15112,26 @@
     "dotweak": "writepc sqlite3 <<EOF\nprefix=\\${pcfiledir}/../..\nexec_prefix=\\${prefix}\nlibdir=\\${exec_prefix}/lib\nincludedir=\\${prefix}/include\n\nName: SQLite\nDescription: SQL database engine\nVersion: $PACKAGE_VERSION\nCflags: -I\\${includedir}\nLibs: -L\\${libdir} -lsqlite3 -lm\nEOF"
   },
   {
+    "pkgname": "libsquashfuse",
+    "pkgtype": "lib",
+    "version": "0.5.2",
+    "license": "BSD-2-Clause",
+    "summary": "FUSE filesystem to mount squashfs archives",
+    "web-url": "https://github.com/vasi/squashfuse",
+    "git-url": "https://github.com/vasi/squashfuse",
+    "src-url": "https://github.com/vasi/squashfuse/releases/download/0.5.2/squashfuse-0.5.2.tar.gz",
+    "src-sha": "54e4baaa20796e86a214a1f62bab07c7c361fb7a598375576d585712691178f5",
+    "dep-pkg": "libfuse liblz4 liblzo libzstd liblzma libz",
+    "dep-upp": "curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "1",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "configure && install_incs :squashfuse fuseprivate.h",
+    "dotweak": "gsed -i '/^Requires:/s|$| fuse3 liblz4 lzo2 libzstd liblzma libz|' lib/pkgconfig/squashfuse*.pc"
+  },
+  {
     "pkgname": "libsrt",
     "pkgtype": "lib",
     "version": "1.5.3",
@@ -21400,6 +21439,23 @@
     "ltoable": "1",
     "movable": "1",
     "install": "configure --with-libsass=$libsass_INSTALL_DIR"
+  },
+  {
+    "pkgname": "sbase",
+    "pkgtype": "exe",
+    "version": "0.1",
+    "license": "MIT",
+    "summary": "A collection of portable unix tools",
+    "web-url": "https://core.suckless.org/sbase/",
+    "git-url": "git://git.suckless.org/sbase",
+    "dep-upp": "git gmake",
+    "bsystem": "gmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "prepare": "cat > config.mk <<EOF\nVERSION=$PACKAGE_VERSION\nPREFIX=$PACKAGE_INSTALL_DIR\nMANPREFIX=$PACKAGE_INSTALL_DIR/share/man\nCC=$CC\nAR=$AR\nRANLIB=$RANLIB\nCFLAGS=$CFLAGS $LDFLAGS\nLDFLAGS=$LDFLAGS\nEOF",
+    "install": "gmakew clean\ngmakew\ngmakew install"
   },
   {
     "pkgname": "scc",

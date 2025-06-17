@@ -394,7 +394,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.16 ⚠️ | null |
+| PPKG   | 2025.06.17 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2356,7 +2356,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.48.1 ⚠️ | https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz |
-| BREW   | **2.49.0** | https://git-scm.com |
+| BREW   | **2.50.0** | https://git-scm.com |
 
 *Outdated*
 
@@ -2624,7 +2624,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.16.1 ⚠️ | https://github.com/golang/tools/archive/refs/tags/gopls/v0.16.1.tar.gz |
-| BREW   | **0.18.1** | https://github.com/golang/tools/tree/master/gopls |
+| BREW   | **0.19.0** | https://github.com/golang/tools/tree/master/gopls |
 
 *Outdated*
 
@@ -2913,7 +2913,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.4 ⚠️ | https://github.com/helm/helm/archive/refs/tags/v3.15.4.tar.gz |
-| BREW   | **3.18.2** | https://helm.sh/ |
+| BREW   | **3.18.3** | https://helm.sh/ |
 
 *Outdated*
 
@@ -4429,7 +4429,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.16 ⚠️ | null |
+| PPKG   | 2025.06.17 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5670,17 +5670,6 @@
 
 *Outdated*
 
-## makepkg
-
-**Description:** Compile and build packages suitable for installation with pacman
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 6.1.0 ⚠️ | https://gitlab.archlinux.org/pacman/pacman/-/releases/v6.1.0/downloads/pacman-6.1.0.tar.xz |
-| BREW   | **7.0.0** | https://wiki.archlinux.org/index.php/makepkg |
-
-*Outdated*
-
 ## mandoc
 
 **Description:** UNIX manpage compiler toolset
@@ -6188,7 +6177,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.2.8 ⚠️ | https://github.com/projectdiscovery/nuclei/archive/refs/tags/v3.2.8.tar.gz |
-| BREW   | **3.4.4** | https://docs.projectdiscovery.io/tools/nuclei/overview |
+| BREW   | **3.4.5** | https://docs.projectdiscovery.io/tools/nuclei/overview |
 
 *Outdated*
 
@@ -6280,8 +6269,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.9.0 ✅ | null |
-| BREW   | 0.9.0 | https://ollama.com/ |
+| PPKG   | 0.9.0 ⚠️ | null |
+| BREW   | **0.9.1** | https://ollama.com/ |
+
+*Outdated*
 
 ## onefetch
 
@@ -6461,7 +6452,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.16 ⚠️ | null |
+| PPKG   | 2025.06.17 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6619,7 +6610,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.16 ⚠️ | null |
+| PPKG   | 2025.06.17 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6781,7 +6772,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.16 ⚠️ | null |
+| PPKG   | 2025.06.17 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -6979,7 +6970,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.1 ⚠️ | https://github.com/xiph/rav1e/archive/refs/tags/v0.7.1.tar.gz |
-| BREW   | **0.8.0** | https://github.com/xiph/rav1e |
+| BREW   | **0.8.1** | https://github.com/xiph/rav1e |
 
 *Outdated*
 
@@ -7714,7 +7705,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.77.0 ⚠️ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.77.0.tar.gz |
-| BREW   | **1.85.4** | https://github.com/k1LoW/tbls |
+| BREW   | **1.85.5** | https://github.com/k1LoW/tbls |
 
 *Outdated*
 
@@ -7794,7 +7785,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.81.6** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.81.7** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

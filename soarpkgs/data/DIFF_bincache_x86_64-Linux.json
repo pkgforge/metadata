@@ -967,6 +967,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "byedpi",
+    "pkg_family": "byedpi",
+    "pkg_id": "nixpkgs.byedpi",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-byedpi/byedpi/byedpi",
+    "bincache": "ghcr.io/pkgforge/bincache/byedpi/nixpkgs/ciadpi",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/byedpi/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "SOCKS proxy server implementing some DPI bypass methods",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "byedpi",
+          "byedpi-bin",
+          "byedpi-git"
+        ]
+      },
+      "nixpkgs": [
+        "byedpi"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/byedpi/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://github.com/hufrea/byedpi"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "ciadpi==byedpi"
+    ],
+    "repology": [
+      "byedpi"
+    ],
+    "src_url": [
+      "https://github.com/hufrea/byedpi"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "0.17"
+  },
+  {
+    "_disabled": "false",
     "pkg": "byp4xx",
     "pkg_family": "byp4xx",
     "pkg_id": "github.com.lobuhi.byp4xx",
@@ -1077,7 +1136,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-e4d731d-250616T235542"
+    "version": "HEAD-5de9e7f-250618T145851"
   },
   {
     "_disabled": "false",
@@ -2535,7 +2594,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-2451682-250618T105148"
+    "version": "HEAD-2ba6c32-250618T185133"
   },
   {
     "_disabled": "false",
@@ -2852,7 +2911,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-2451682-250618T105148"
+    "version": "HEAD-2ba6c32-250618T185133"
   },
   {
     "_disabled": "true",
@@ -3230,6 +3289,65 @@
       "Utility"
     ],
     "version": "HEAD-264e2f3-250417T143014"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "crawley",
+    "pkg_family": "crawley",
+    "pkg_id": "github.com.s0rg.crawley",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/s0rg-crawley/crawley/crawley",
+    "bincache": "ghcr.io/pkgforge/bincache/crawley/official/crawley",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/crawley/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The unix-way web crawler",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "crawley",
+          "crawley-bin"
+        ]
+      },
+      "nixpkgs": [
+        "crawley"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/crawley/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/s0rg/crawley"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/s0rg/crawley"
+    ],
+    "provides": [
+      "crawley"
+    ],
+    "repology": [
+      "crawley"
+    ],
+    "src_url": [
+      "https://github.com/s0rg/crawley"
+    ],
+    "tag": [
+      "crawler",
+      "scraper",
+      "spider"
+    ],
+    "version": "v1.7.12"
   },
   {
     "_disabled": "false",
@@ -3619,7 +3737,7 @@
     "tag": [
       "devenv"
     ],
-    "version": "HEAD-eac0b0d-250618T024257"
+    "version": "HEAD-62d85b0-250618T170954"
   },
   {
     "_disabled": "false",
@@ -4847,6 +4965,74 @@
     "_disabled": "false",
     "pkg": "gh",
     "pkg_family": "gh",
+    "pkg_id": "github.com.cli.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-cli/gh/gh",
+    "bincache": "ghcr.io/pkgforge/bincache/gh/official/gh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gh/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GitHub CLI tool",
+    "distro_pkg": {
+      "alpine": [
+        "github-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "github-cli-git"
+        ],
+        "extra": [
+          "github-cli"
+        ]
+      },
+      "debian": [
+        "gh"
+      ],
+      "homebrew": [
+        "gh"
+      ],
+      "nixpkgs": [
+        "gh"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gh/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/cli/cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/cli/cli"
+    ],
+    "provides": [
+      "gh==github-cli"
+    ],
+    "repology": [
+      "github-cli"
+    ],
+    "src_url": [
+      "https://github.com/cli/cli"
+    ],
+    "tag": [
+      "git"
+    ],
+    "version": "v2.74.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gh",
+    "pkg_family": "gh",
     "pkg_id": "github.com.cli.cli.source",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-source/gh/gh",
@@ -4967,7 +5153,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-9a54196-250618T120350"
+    "version": "HEAD-ef6845f-250618T180328"
   },
   {
     "_disabled": "false",
@@ -6751,7 +6937,7 @@
       "jwt",
       "security"
     ],
-    "version": "HEAD-349b140-250607T115321"
+    "version": "HEAD-f27f302-250618T230447"
   },
   {
     "_disabled": "false",
@@ -6986,7 +7172,7 @@
     "tag": [
       "ipfs"
     ],
-    "version": "HEAD-002d981-250617T173705"
+    "version": "HEAD-92aa993-250618T191558"
   },
   {
     "_disabled": "false",
@@ -8212,7 +8398,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-08c9107-250617T171408"
+    "version": "HEAD-23b5d45-250618T185648"
   },
   {
     "_disabled": "false",
@@ -9865,7 +10051,66 @@
       "provenance",
       "security"
     ],
-    "version": "HEAD-fa87121-250616T173848"
+    "version": "HEAD-1ef8b66-250618T181451"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "revive",
+    "pkg_family": "revive",
+    "pkg_id": "github.com.mgechev.revive",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mgechev-revive/revive/revive",
+    "bincache": "ghcr.io/pkgforge/bincache/revive/official/revive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/revive/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Faster, stricter, configurable, extensible, and beautiful drop-in replacement for golint",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "revive"
+        ]
+      },
+      "homebrew": [
+        "revive"
+      ],
+      "nixpkgs": [
+        "revive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/revive/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/mgechev/revive"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mgechev/revive"
+    ],
+    "provides": [
+      "revive"
+    ],
+    "repology": [
+      "revive"
+    ],
+    "src_url": [
+      "https://github.com/mgechev/revive"
+    ],
+    "tag": [
+      "linter"
+    ],
+    "version": "HEAD-87bd73b-250618T075816"
   },
   {
     "_disabled": "false",
@@ -10023,7 +10268,7 @@
       "bittorrent",
       "torrent"
     ],
-    "version": "HEAD-acd60b0-250617T113748"
+    "version": "HEAD-5db8212-250618T190805"
   },
   {
     "_disabled": "false",
@@ -10356,6 +10601,55 @@
       "Utility"
     ],
     "version": "HEAD-ccceb8b-250617T142711"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "skupper",
+    "pkg_family": "skupper",
+    "pkg_id": "github.com.skupperproject.skupper",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/skupperproject-skupper/skupper/skupper",
+    "bincache": "ghcr.io/pkgforge/bincache/skupper/official/skupper",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/skupper/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Virtual Application Network, enabling rich hybrid cloud communication",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/skupper/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/skupperproject/skupper"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/skupperproject/skupper"
+    ],
+    "provides": [
+      "skupper",
+      "skupper-controller"
+    ],
+    "repology": [
+      "cloud",
+      "network"
+    ],
+    "src_url": [
+      "https://github.com/skupperproject/skupper"
+    ],
+    "tag": [
+      "utility",
+      "skupper"
+    ],
+    "version": "HEAD-6a81e6f-250618T114000"
   },
   {
     "_disabled": "false",
@@ -11174,7 +11468,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-49ae66c-250617T203959"
+    "version": "HEAD-ad0dfcb-250618T104520"
   },
   {
     "_disabled": "false",
@@ -11710,6 +12004,49 @@
       "coreboot"
     ],
     "version": "HEAD-0dfc947-250618T125916"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "urx",
+    "pkg_family": "urx",
+    "pkg_id": "github.com.hahwul.urx.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/urx-source/urx/urx",
+    "bincache": "ghcr.io/pkgforge/bincache/urx/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/urx/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Extract URLs from OSINT Archives for Security Insights",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/urx/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/hahwul/urx"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/hahwul/urx"
+    ],
+    "provides": [
+      "urx"
+    ],
+    "src_url": [
+      "https://github.com/hahwul/urx"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-5421d17-250618T230906"
   },
   {
     "_disabled": "false",
@@ -12472,7 +12809,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-ef7a296-250617T203019"
+    "version": "HEAD-935097c-250618T153157"
   },
   {
     "_disabled": "false",
@@ -12820,7 +13157,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-beff6db-250618T105818"
+    "version": "HEAD-01cf2c5-250618T170058"
   },
   {
     "_disabled": "false",
@@ -13059,7 +13396,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-750ca0c-250618T193031"
+    "version": "HEAD-1a6abae-250618T220136"
   },
   {
     "_disabled": "false",

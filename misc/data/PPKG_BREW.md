@@ -138,7 +138,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.283** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.284** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -513,7 +513,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.18.25 ⚠️ | https://downloads.isc.org/isc/bind9/9.18.25/bind-9.18.25.tar.xz |
-| BREW   | **9.20.9** | https://www.isc.org/bind/ |
+| BREW   | **9.20.10** | https://www.isc.org/bind/ |
 
 *Outdated*
 
@@ -4480,8 +4480,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.3.5 ✅ | https://github.com/xiph/ogg/releases/download/v1.3.5/libogg-1.3.5.tar.gz |
-| BREW   | 1.3.5 | https://www.xiph.org/ogg/ |
+| PPKG   | 1.3.5 ⚠️ | https://github.com/xiph/ogg/releases/download/v1.3.5/libogg-1.3.5.tar.gz |
+| BREW   | **1.3.6** | https://www.xiph.org/ogg/ |
+
+*Outdated*
 
 ## libolm
 
@@ -6096,8 +6098,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.12.1 ✅ | https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.1.tar.gz |
-| BREW   | 1.12.1 | https://ninja-build.org/ |
+| PPKG   | 1.12.1 ⚠️ | https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.1.tar.gz |
+| BREW   | **1.13.0** | https://ninja-build.org/ |
+
+*Outdated*
 
 ## nixpacks
 

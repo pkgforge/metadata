@@ -56,7 +56,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 47.0 ⚠️ | https://download.gnome.org/sources/adwaita-icon-theme/47/adwaita-icon-theme-47.0.tar.xz |
-| BREW   | **48.0** | https://developer.gnome.org |
+| BREW   | **48.1** | https://developer.gnome.org |
 
 *Outdated*
 
@@ -394,7 +394,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.17 ⚠️ | null |
+| PPKG   | 2025.06.18 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -697,7 +697,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.52.1 ⚠️ | https://github.com/bufbuild/buf/archive/refs/tags/v1.52.1.tar.gz |
-| BREW   | **1.54.0** | https://github.com/bufbuild/buf |
+| BREW   | **1.55.1** | https://github.com/bufbuild/buf |
 
 *Outdated*
 
@@ -4429,7 +4429,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.17 ⚠️ | null |
+| PPKG   | 2025.06.18 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6452,7 +6452,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.17 ⚠️ | null |
+| PPKG   | 2025.06.18 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6610,7 +6610,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.17 ⚠️ | null |
+| PPKG   | 2025.06.18 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6772,7 +6772,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.17 ⚠️ | null |
+| PPKG   | 2025.06.18 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -6991,8 +6991,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.69.3 ✅ | https://github.com/rclone/rclone/archive/refs/tags/v1.69.3.tar.gz |
-| BREW   | 1.69.3 | https://rclone.org/ |
+| PPKG   | 1.69.3 ⚠️ | https://github.com/rclone/rclone/archive/refs/tags/v1.69.3.tar.gz |
+| BREW   | **1.70.0** | https://rclone.org/ |
+
+*Outdated*
 
 ## re2c
 
@@ -7182,7 +7184,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.11.13** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.0** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 

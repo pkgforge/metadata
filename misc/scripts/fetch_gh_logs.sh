@@ -38,7 +38,13 @@ fi
 GHCRPKG_URL="ghcr.io/pkgforge/metadata/build-logs"
 export GHCRPKG_URL USER_AGENT
 ##Repo
-pushd "$(mktemp -d)" &>/dev/null && git clone --filter="blob:none" --depth="1" --no-checkout "https://huggingface.co/datasets/pkgforge/build-logs" && cd "./build-logs"
+if echo "${REPO}" | grep -qi 'pkgforge-cargo'; then
+  pushd "$(mktemp -d)" &>/dev/null && git clone --filter="blob:none" --depth="1" --no-checkout "https://huggingface.co/datasets/pkgforge-cargo/build-logs" && cd "./build-logs"
+elif echo "${REPO}" | grep -qi 'pkgforge-go'; then
+  pushd "$(mktemp -d)" &>/dev/null && git clone --filter="blob:none" --depth="1" --no-checkout "https://huggingface.co/datasets/pkgforge-go/build-logs" && cd "./build-logs"
+else
+  pushd "$(mktemp -d)" &>/dev/null && git clone --filter="blob:none" --depth="1" --no-checkout "https://huggingface.co/datasets/pkgforge/build-logs" && cd "./build-logs"
+fi
 git sparse-checkout set "" && git checkout
 unset HF_REPO_LOCAL ; HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
 if [ ! -d "${HF_REPO_LOCAL}" ] || [ $(du -s "${HF_REPO_LOCAL}" | cut -f1) -le 100 ]; then
@@ -68,8 +74,10 @@ download_action_logs()
   rm "${TMPDIR}/RUN_IDS.txt" 2>/dev/null
   for page in {1..50}; do
     echo -e "\n[+] Fetching https://github.com/${REPO}/actions [Page=${page}/50]\n"
+    #gh api "/repos/${REPO}/actions/runs?per_page=100&page=${page}" 2>/dev/null |\
+    #  jq -r '.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed") | .id' 2>/dev/null |\
     gh api "/repos/${REPO}/actions/runs?per_page=100&page=${page}" 2>/dev/null |\
-      jq -r '.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed") | .id' 2>/dev/null |\
+      jq -r '.workflow_runs[] | select(.status == "completed") | .id' 2>/dev/null |\
       grep -oP '^\s*\d+\s*$' | tr -d ' ' >> "${TMPDIR}/RUN_IDS.txt"
   done
   RUN_IDS_TMP=() ; readarray -t RUN_IDS_TMP < <(cat "${TMPDIR}/RUN_IDS.txt" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | sort -u)
@@ -142,10 +150,26 @@ download_action_logs()
         echo -e "[+] Uploading [${LOG_ID}] ==> [https://github.com/pkgforge/metadata/pkgs/container/metadata%2Fbuild-logs/] (pkgcache-${LOG_ID})"
         [[ -f "./${LOG_ID}.log.7z" && -s "./${LOG_ID}.log.7z" ]] && oras push --disable-path-validation \
         --config "/dev/null:application/vnd.oci.empty.v1+json" "${GHCRPKG_URL}:pkgcache-${LOG_ID}" "./${LOG_ID}.log.7z"
+       elif echo "${REPO}" | grep -qi 'pkgforge-cargo'; then
+        echo -e "[+] Uploading [${LOG_ID}] ==> [https://github.com/pkgforge/metadata/pkgs/container/metadata%2Fbuild-logs/] (pkgforge-cargo-${LOG_ID})"
+        [[ -f "./${LOG_ID}.log.7z" && -s "./${LOG_ID}.log.7z" ]] && oras push --disable-path-validation \
+        --config "/dev/null:application/vnd.oci.empty.v1+json" "${GHCRPKG_URL}:pkgforge-cargo-${LOG_ID}" "./${LOG_ID}.log.7z"
+       elif echo "${REPO}" | grep -qi 'pkgforge-go'; then
+        echo -e "[+] Uploading [${LOG_ID}] ==> [https://github.com/pkgforge/metadata/pkgs/container/metadata%2Fbuild-logs/] (pkgforge-go-${LOG_ID})"
+        [[ -f "./${LOG_ID}.log.7z" && -s "./${LOG_ID}.log.7z" ]] && oras push --disable-path-validation \
+        --config "/dev/null:application/vnd.oci.empty.v1+json" "${GHCRPKG_URL}:pkgforge-go-${LOG_ID}" "./${LOG_ID}.log.7z"
        fi
       done
      #Upload to HF
-       huggingface-cli upload "pkgforge/build-logs" "${LOGS_DIR}" --include "*.log.7z" --repo-type "dataset" --commit-message "[+] Build Log (${LOG_ID})"
+      if echo "${REPO}" | grep -qi 'bincache'; then
+        huggingface-cli upload "pkgforge/build-logs" "${LOGS_DIR}" --include "*.log.7z" --repo-type "dataset" --commit-message "[+] Build Log (${LOG_ID})"
+      elif echo "${REPO}" | grep -qi 'pkgcache'; then
+        huggingface-cli upload "pkgforge/build-logs" "${LOGS_DIR}" --include "*.log.7z" --repo-type "dataset" --commit-message "[+] Build Log (${LOG_ID})"
+      elif echo "${REPO}" | grep -qi 'pkgforge-cargo'; then
+        huggingface-cli upload "pkgforge-cargo/build-logs" "${LOGS_DIR}" --include "*.log.7z" --repo-type "dataset" --commit-message "[+] Build Log (${LOG_ID})"
+      elif echo "${REPO}" | grep -qi 'pkgforge-go'; then
+        huggingface-cli upload "pkgforge-go/build-logs" "${LOGS_DIR}" --include "*.log.7z" --repo-type "dataset" --commit-message "[+] Build Log (${LOG_ID})"
+      fi
    fi
  ##Exit
   wait ; popd >/dev/null 2>&1

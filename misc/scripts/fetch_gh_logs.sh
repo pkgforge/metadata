@@ -67,7 +67,7 @@ download_action_logs()
  ##Get Run IDs 
   rm "${TMPDIR}/RUN_IDS.txt" 2>/dev/null
   for page in {1..50}; do
-    echo -e "\n[+] Fetching https://github.com/pkgforge/${REPO}/actions [Page=${page}/50]\n"
+    echo -e "\n[+] Fetching https://github.com/${REPO}/actions [Page=${page}/50]\n"
     gh api "/repos/${REPO}/actions/runs?per_page=100&page=${page}" 2>/dev/null |\
       jq -r '.workflow_runs[] | select(.name | ascii_downcase | test("build|pkg")) | select(.status == "completed") | .id' 2>/dev/null |\
       grep -oP '^\s*\d+\s*$' | tr -d ' ' >> "${TMPDIR}/RUN_IDS.txt"

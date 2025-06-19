@@ -51,14 +51,12 @@
 
 ## adwaita-icon-theme
 
-**Description:** Icons for the GNOME project
+**Description:** A collection of icons for the GNOME project
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 47.0 ⚠️ | https://download.gnome.org/sources/adwaita-icon-theme/47/adwaita-icon-theme-47.0.tar.xz |
-| BREW   | **48.1** | https://developer.gnome.org |
-
-*Outdated*
+| PPKG   | 48.1 ✅ | https://download.gnome.org/sources/adwaita-icon-theme/48/adwaita-icon-theme-48.1.tar.xz |
+| BREW   | 48.1 | https://developer.gnome.org |
 
 ## aerc
 
@@ -179,10 +177,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.0.4 ⚠️ | https://github.com/ximion/appstream/archive/refs/tags/v1.0.4.tar.gz |
-| BREW   | **1.0.5** | https://www.freedesktop.org/wiki/Distributions/AppStream/ |
-
-*Outdated*
+| PPKG   | 1.0.5 ✅ | https://github.com/ximion/appstream/archive/refs/tags/v1.0.5.tar.gz |
+| BREW   | 1.0.5 | https://www.freedesktop.org/wiki/Distributions/AppStream/ |
 
 ## appstream-glib
 
@@ -379,14 +375,12 @@
 
 ## baobab
 
-**Description:** Gnome disk usage analyzer
+**Description:** GNOME Disk Usage Analyzer
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 47.0 ⚠️ | https://download.gnome.org/sources/baobab/47/baobab-47.0.tar.xz |
-| BREW   | **48.0** | https://apps.gnome.org/Baobab/ |
-
-*Outdated*
+| PPKG   | 48.0 ✅ | https://download.gnome.org/sources/baobab/48/baobab-48.0.tar.xz |
+| BREW   | 48.0 | https://apps.gnome.org/Baobab/ |
 
 ## base64
 
@@ -523,10 +517,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.71.1 ⚠️ | https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.71.1.tar.gz |
-| BREW   | **0.72.0** | https://rust-lang.github.io/rust-bindgen/ |
-
-*Outdated*
+| PPKG   | 0.72.0 ✅ | https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.0.tar.gz |
+| BREW   | 0.72.0 | https://rust-lang.github.io/rust-bindgen/ |
 
 ## binocle
 
@@ -931,10 +923,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.14.5 ⚠️ | https://hpjansson.org/chafa/releases/chafa-1.14.5.tar.xz |
-| BREW   | **1.16.1** | https://hpjansson.org/chafa/ |
-
-*Outdated*
+| PPKG   | 1.16.1 ✅ | https://hpjansson.org/chafa/releases/chafa-1.16.1.tar.xz |
+| BREW   | 1.16.1 | https://hpjansson.org/chafa/ |
 
 ## cheat
 
@@ -2274,15 +2264,6 @@
 
 *Outdated*
 
-## gexiv2
-
-**Description:** GObject wrapper around the Exiv2 photo metadata library
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 0.14.5 ✅ | https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.5.tar.xz |
-| BREW   | 0.14.5 | https://wiki.gnome.org/Projects/gexiv2 |
-
 ## gf
 
 **Description:** App development framework of Golang
@@ -2837,14 +2818,12 @@
 
 ## gtk4
 
-**Description:** Toolkit for creating graphical user interfaces
+**Description:** GNOME Toolkit for creating GUI Apps
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.16.7 ⚠️ | https://download.gnome.org/sources/gtk/4.16/gtk-4.16.7.tar.xz |
-| BREW   | **4.18.6** | https://gtk.org/ |
-
-*Outdated*
+| PPKG   | 4.18.6 ✅ | https://download.gnome.org/sources/gtk/4.18/gtk-4.18.6.tar.xz |
+| BREW   | 4.18.6 | https://gtk.org/ |
 
 ## guile
 
@@ -3566,10 +3545,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.6.2 ⚠️ | https://download.gnome.org/sources/libadwaita/1.6/libadwaita-1.6.2.tar.xz |
-| BREW   | **1.7.4** | https://gnome.pages.gitlab.gnome.org/libadwaita/ |
-
-*Outdated*
+| PPKG   | 1.7.4 ✅ | https://download.gnome.org/sources/libadwaita/1.7/libadwaita-1.7.4.tar.xz |
+| BREW   | 1.7.4 | https://gnome.pages.gitlab.gnome.org/libadwaita/ |
 
 ## libaec
 
@@ -3626,10 +3603,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.17.1 ⚠️ | https://github.com/libass/libass/releases/download/0.17.1/libass-0.17.1.tar.xz |
-| BREW   | **0.17.4** | https://github.com/libass/libass |
-
-*Outdated*
+| PPKG   | 0.17.4 ✅ | https://github.com/libass/libass/releases/download/0.17.4/libass-0.17.4.tar.xz |
+| BREW   | 0.17.4 | https://github.com/libass/libass |
 
 ## libassuan
 
@@ -4719,10 +4694,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.58.3 ⚠️ | https://download.gnome.org/sources/librsvg/2.58/librsvg-2.58.3.tar.xz |
-| BREW   | **2.60.0** | https://wiki.gnome.org/Projects/LibRsvg |
-
-*Outdated*
+| PPKG   | 2.60.0 ✅ | https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz |
+| BREW   | 2.60.0 | https://wiki.gnome.org/Projects/LibRsvg |
 
 ## librsync
 
@@ -6994,7 +6967,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.69.3 ⚠️ | https://github.com/rclone/rclone/archive/refs/tags/v1.69.3.tar.gz |
-| BREW   | **1.70.0** | https://rclone.org/ |
+| BREW   | **1.70.1** | https://rclone.org/ |
 
 *Outdated*
 
@@ -7339,10 +7312,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.5.2 ⚠️ | https://github.com/Aloxaf/silicon/archive/refs/tags/v0.5.2.tar.gz |
-| BREW   | **0.5.3** | https://github.com/Aloxaf/silicon/ |
-
-*Outdated*
+| PPKG   | 0.5.3 ✅ | https://github.com/Aloxaf/silicon/archive/refs/tags/v0.5.3.tar.gz |
+| BREW   | 0.5.3 | https://github.com/Aloxaf/silicon/ |
 
 ## six
 
@@ -8430,6 +8401,15 @@
 | BREW   | **1.5.0** | https://developers.google.com/speed/webp/ |
 
 *Outdated*
+
+## webp-pixbuf-loader
+
+**Description:** WebP Image format GdkPixbuf loader
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.2.7 ✅ | https://github.com/aruiz/webp-pixbuf-loader/archive/refs/tags/0.2.7.tar.gz |
+| BREW   | 0.2.7 | https://github.com/aruiz/webp-pixbuf-loader |
 
 ## websocat
 

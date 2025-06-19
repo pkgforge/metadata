@@ -17,7 +17,7 @@
  540K   │ │ ├── STALIX.json
  468K   │ │ ├── FLATPAK_APPS_INFO.json
  436K   │ │ ├── FLATPAK_APPS_INFO.txt
- 320K   │ │ ├── PPKG.json
+ 324K   │ │ ├── PPKG.json
  268K   │ │ ├── PPKG_BREW.md
  232K   │ │ ├── FLATPAK_POPULAR.json
  216K   │ │ ├── FLATPAK_TRENDING.json
@@ -292,9 +292,9 @@
  1.0M   │ │ ├── COMP_VER_CACHE.md
  756K   │ │ ├── pub_issues_binaries.txt
  408K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
- 400K   │ │ ├── COMP_VER_CACHE_OLD.json
  384K   │ │ ├── INDEX.json.cba
  356K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 356K   │ │ ├── COMP_VER_CACHE_OLD.json
  324K   │ │ ├── DIFF_bincache_riscv64-Linux.json
  312K   │ │ ├── OLD_bincache_riscv64-Linux.json
  304K   │ │ ├── pub_issues_packages.txt
@@ -307,7 +307,7 @@
  216K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
  180K   │ │ ├── INDEX.db.xz
- 160K   │ │ ├── COMP_VER_CACHE_OLD.md
+ 144K   │ │ ├── COMP_VER_CACHE_OLD.md
  124K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
   52K   │ │ ├── URLS.txt

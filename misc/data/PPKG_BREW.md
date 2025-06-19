@@ -394,7 +394,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.18 ⚠️ | null |
+| PPKG   | 2025.06.19 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2086,7 +2086,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | https://github.com/antonmedv/fx/archive/refs/tags/35.0.0.tar.gz |
-| BREW   | **36.0.3** | https://fx.wtf |
+| BREW   | **36.0.4** | https://fx.wtf |
 
 *Outdated*
 
@@ -2274,6 +2274,15 @@
 
 *Outdated*
 
+## gexiv2
+
+**Description:** GObject wrapper around the Exiv2 photo metadata library
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.14.5 ✅ | https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.5.tar.xz |
+| BREW   | 0.14.5 | https://wiki.gnome.org/Projects/gexiv2 |
+
 ## gf
 
 **Description:** App development framework of Golang
@@ -2292,7 +2301,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.74.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.74.0.tar.gz |
-| BREW   | **2.74.1** | https://cli.github.com/ |
+| BREW   | **2.74.2** | https://cli.github.com/ |
 
 *Outdated*
 
@@ -3232,10 +3241,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.17.0 ⚠️ | https://deb.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.17.0.orig.tar.xz |
-| BREW   | **4.18.0** | https://salsa.debian.org/iso-codes-team/iso-codes |
-
-*Outdated*
+| PPKG   | 4.18.0 ✅ | https://deb.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.18.0.orig.tar.xz |
+| BREW   | 4.18.0 | https://salsa.debian.org/iso-codes-team/iso-codes |
 
 ## itstool
 
@@ -3343,24 +3350,6 @@
 |--------|---------|-------------|
 | PPKG   | 1.8.0 ✅ | https://github.com/stedolan/jq/releases/download/jq-1.8.0/jq-1.8.0.tar.gz |
 | BREW   | 1.8.0 | https://jqlang.github.io/jq/ |
-
-## json-glib
-
-**Description:** Library for JSON, based on GLib
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 1.10.6 ✅ | https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.6.tar.xz |
-| BREW   | 1.10.6 | https://wiki.gnome.org/Projects/JsonGlib |
-
-## jsonrpc-glib
-
-**Description:** GNOME library to communicate with JSON-RPC based peers
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 3.44.1 ✅ | https://download.gnome.org/sources/jsonrpc-glib/3.44/jsonrpc-glib-3.44.1.tar.xz |
-| BREW   | 3.44.1 | https://gitlab.gnome.org/GNOME/jsonrpc-glib |
 
 ## jump
 
@@ -4394,6 +4383,15 @@
 | PPKG   | 1.3.1 ✅ | https://ftp.gnu.org/gnu/mpc/mpc-1.3.1.tar.gz |
 | BREW   | 1.3.1 | https://www.multiprecision.org/ |
 
+## libmypaint
+
+**Description:** MyPaint brush engine library
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 1.6.1 ✅ | https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz |
+| BREW   | 1.6.1 | https://github.com/mypaint/libmypaint/wiki |
+
 ## libnet
 
 **Description:** A portable C library for low-level network packet construction
@@ -4429,7 +4427,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.18 ⚠️ | null |
+| PPKG   | 2025.06.19 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5759,7 +5757,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 24.2.8 ⚠️ | https://mesa.freedesktop.org/archive/mesa-24.2.8.tar.xz |
-| BREW   | **25.1.3** | https://www.mesa3d.org/ |
+| BREW   | **25.1.4** | https://www.mesa3d.org/ |
 
 *Outdated*
 
@@ -6274,7 +6272,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.9.1** | https://ollama.com/ |
+| BREW   | **0.9.2** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6456,7 +6454,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.18 ⚠️ | null |
+| PPKG   | 2025.06.19 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6614,7 +6612,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.18 ⚠️ | null |
+| PPKG   | 2025.06.19 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6776,7 +6774,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.18 ⚠️ | null |
+| PPKG   | 2025.06.19 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

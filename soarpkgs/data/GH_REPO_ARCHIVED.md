@@ -7,4 +7,4 @@
 | [lc](https://github.com/lc) | [subjs](https://github.com/lc/subjs) | 776 | Fetches javascript file from a list of URLS or subdomains. | 2025-06-03T08:59:37Z |
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [PPSSPP-AppImage](https://github.com/pkgforge-dev/PPSSPP-AppImage) | 15 | Unofficial AppImage of the PPSSPP emulator [Maintainer=@Samueru-sama] | 2025-06-15T14:10:22Z |
 | [svenstaro](https://github.com/svenstaro) | [vmexec](https://github.com/svenstaro/vmexec) | 25 | 🔧 Run a single command in a speedy virtual machine with zero-setup THE PROJECT MOVED TO https://gitlab.archlinux.org/archlinux/vmexec | 2025-06-04T21:30:44Z |
-| [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1974 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-06-07T08:18:23Z |
+| [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1974 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-06-19T04:30:02Z |

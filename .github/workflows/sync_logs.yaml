@@ -26,6 +26,13 @@ jobs:
             repo_name: "pkgcache"
             script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_gh_logs.sh"
 
+          - repo: "pkgforge-cargo/builder"
+            repo_name: "builder"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_gh_logs.sh"
+            
+          - repo: "pkgforge-go/builder"
+            repo_name: "builder"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_gh_logs.sh"
     steps:
 
       - name: Install Addons

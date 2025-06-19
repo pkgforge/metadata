@@ -25,6 +25,12 @@ jobs:
             runner: "ubuntu-latest"
             dir: "/tmp/_META"
 
+          - source: "pkgforge-go"
+            script: "${GITHUB_WORKSPACE}/main/external/pkgforge-go/scripts/gen_meta.sh"
+            host: "ALL"
+            runner: "ubuntu-latest"
+            dir: "/tmp/_META"
+
           - source: "am"
             script: "${GITHUB_WORKSPACE}/main/external/am/scripts/gen_meta.sh"
             host: "x86_64-Linux"

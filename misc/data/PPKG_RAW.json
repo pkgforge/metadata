@@ -246,6 +246,25 @@
     "install": "cargow install"
   },
   {
+    "pkgname": "aim",
+    "pkgtype": "exe",
+    "version": "1.8.6",
+    "license": "MIT",
+    "summary": "A command line download/upload tool with resume",
+    "web-url": "https://github.com/mihaigalos/aim",
+    "git-url": "https://github.com/mihaigalos/aim",
+    "src-url": "https://github.com/mihaigalos/aim/archive/refs/tags/1.8.6.tar.gz",
+    "src-sha": "1f6b7bce494106e0503024eecbc75b449c9bd30a12f3286a9c44bd0dfdd2c3fb",
+    "dep-pkg": "libopenssl",
+    "dep-upp": "curl bsdtar",
+    "bsystem": "cargo",
+    "binbstd": "1",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "cargow install"
+  },
+  {
     "pkgname": "alacritty",
     "pkgtype": "exe",
     "version": "0.15.1",
@@ -469,7 +488,7 @@
   {
     "pkgname": "appimage-runtime-type2",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "MIT",
     "summary": "type2 AppImage runtime",
     "web-url": "https://github.com/AppImage/type2-runtime",
@@ -488,7 +507,7 @@
   {
     "pkgname": "appimagetool",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A command-line tool to generate an AppImage from an existing AppDir",
     "web-url": "https://github.com/AppImage/appimagetool",
     "git-url": "https://github.com/AppImage/appimagetool",
@@ -534,7 +553,7 @@
     "git-url": "https://github.com/hughsie/appstream-glib",
     "src-url": "https://github.com/hughsie/appstream-glib/archive/refs/tags/appstream_glib_0_8_3.tar.gz",
     "src-sha": "15ad7690b0132d883bd066699a7b55f6cef4c0f266d18d781ce5d8112fb4ee63",
-    "dep-pkg": "json-glib libgdk-pixbuf libarchive libcurl libuuid",
+    "dep-pkg": "libjson-glib libgdk-pixbuf libarchive libcurl libuuid",
     "dep-upp": "gperf docbook-xsl curl bsdtar python3 ninja",
     "dep-pym": " meson",
     "bsystem": "meson",
@@ -918,7 +937,7 @@
   {
     "pkgname": "base16",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "base16 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -933,7 +952,7 @@
   {
     "pkgname": "base64",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "base64 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -1152,7 +1171,7 @@
   {
     "pkgname": "bin-graph",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "GPL-3.0",
     "summary": "A command-line tool for visualizing the different regions of a binary file",
     "web-url": "https://github.com/8dcc/bin-graph",
@@ -1452,7 +1471,7 @@
   {
     "pkgname": "boringssl",
     "pkgtype": "exe+lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A fork of OpenSSL that is designed to meet Google needs",
     "web-url": "https://boringssl.googlesource.com/boringssl/",
     "git-url": "https://github.com/google/boringssl",
@@ -1726,7 +1745,7 @@
   {
     "pkgname": "c-examples",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "C语言学习项目",
     "web-url": "https://github.com/leleliu008/C-examples",
@@ -2668,7 +2687,7 @@
   {
     "pkgname": "cpuinfo",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -3665,7 +3684,7 @@
   {
     "pkgname": "easyutils",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A collections of easy to use command-line utilities",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -3716,7 +3735,7 @@
   {
     "pkgname": "effcee",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A C++ library for stateful pattern matching of strings",
     "web-url": "https://github.com/google/effcee",
     "git-url": "https://github.com/google/effcee",
@@ -5287,6 +5306,25 @@
     "dotweak": "rm -rf include/ lib/"
   },
   {
+    "pkgname": "gexiv2",
+    "pkgtype": "lib",
+    "version": "0.14.5",
+    "license": "GPL-2.0-or-later",
+    "summary": "GObject wrapper around the Exiv2 photo metadata library",
+    "web-url": "https://wiki.gnome.org/Projects/gexiv2",
+    "src-url": "https://download.gnome.org/sources/gexiv2/0.14/gexiv2-0.14.5.tar.xz",
+    "src-sha": "0913c53daabab1f1ab586afd55bb55370796f2b8abcc6e37640ab7704ad99ce1",
+    "dep-pkg": "vala libexiv2",
+    "dep-upp": "curl bsdtar python3 python3 ninja",
+    "dep-pym": "PyGObject meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "mesonw -Dcpp_std=c++11"
+  },
+  {
     "pkgname": "gf",
     "pkgtype": "exe",
     "version": "2.7.2",
@@ -5439,6 +5477,25 @@
     "ltoable": "1",
     "movable": "1",
     "install": "gsed -i 's#$(MAKE) -C doc#@mkdir -p doc \\&\\& ([ -f doc/giflib.1 ] || touch doc/giflib.1)#' Makefile\ngmakew clean\ngmakew install PREFIX=$PACKAGE_INSTALL_DIR CC=$CC AR=$AR CFLAGS=\"'$CFLAGS'\""
+  },
+  {
+    "pkgname": "gimp",
+    "pkgtype": "exe",
+    "version": "3.0.4",
+    "license": "GPL-3.0-or-later",
+    "summary": "GNU Image Manipulation Program",
+    "web-url": "https://www.gimp.org/",
+    "src-url": "https://download.gimp.org/gimp/v3.0/gimp-3.0.4.tar.xz",
+    "src-sha": "8caa2ec275bf09326575654ac276afc083f8491e7cca45d19cf29e696aecab25",
+    "dep-pkg": "libappstream-glib libgegl",
+    "dep-upp": "curl bsdtar python3 ninja",
+    "dep-pym": " meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "mesonw"
   },
   {
     "pkgname": "gindent",
@@ -5899,7 +5956,7 @@
   {
     "pkgname": "gn",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A meta-build system that generates build files for ninja",
     "web-url": "https://gn.googlesource.com/gn",
     "git-url": "https://gn.googlesource.com/gn",
@@ -6220,7 +6277,7 @@
   {
     "pkgname": "gomobile",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A tool for building and running mobile apps written in golang",
     "web-url": "https://github.com/golang/mobile",
     "git-url": "https://github.com/golang/mobile",
@@ -7069,7 +7126,7 @@
   {
     "pkgname": "hdiffpatch",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "MIT",
     "summary": "A command-line tools for diff & patch",
     "web-url": "https://github.com/sisong/HDiffPatch",
@@ -7455,7 +7512,7 @@
   {
     "pkgname": "hunter",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "The fastest file manager in the galaxy!",
     "web-url": "https://github.com/rabite0/hunter",
     "git-url": "https://github.com/rabite0/hunter",
@@ -7837,12 +7894,12 @@
   {
     "pkgname": "iso-codes",
     "pkgtype": "exe",
-    "version": "4.17.0",
+    "version": "4.18.0",
     "license": "LGPL-2.1-or-later",
     "summary": "Provides lists of various ISO standards",
     "web-url": "https://salsa.debian.org/iso-codes-team/iso-codes",
-    "src-url": "https://deb.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.17.0.orig.tar.xz",
-    "src-sha": "0fe126a5d3903790ae0d839280f4b590415bf4ad20e39facf186b35304ac9603",
+    "src-url": "https://deb.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.18.0.orig.tar.xz",
+    "src-sha": "066bc4df7bf299561856a07119cde01d563c8c4c39906537a39363bb833d466c",
     "dep-upp": "python3 gettext-tools curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
@@ -8117,46 +8174,6 @@
     "ltoable": "1",
     "movable": "1",
     "install": "configure --disable-shared --enable-static --with-oniguruma=\"$libonig_INSTALL_DIR\""
-  },
-  {
-    "pkgname": "json-glib",
-    "pkgtype": "lib",
-    "version": "1.10.6",
-    "license": "LGPL-2.1-or-later",
-    "summary": "Library for JSON, based on GLib",
-    "web-url": "https://wiki.gnome.org/Projects/JsonGlib",
-    "git-url": "https://gitlab.gnome.org/GNOME/json-glib",
-    "src-url": "https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.6.tar.xz",
-    "src-sha": "77f4bcbf9339528f166b8073458693f0a20b77b7059dbc2db61746a1928b0293",
-    "dep-pkg": "glib",
-    "dep-upp": "curl bsdtar python3 ninja",
-    "dep-pym": " meson",
-    "bsystem": "meson",
-    "binbstd": "0",
-    "parallel": "1",
-    "ltoable": "1",
-    "movable": "1",
-    "install": "mesonw \\\n    -Dman=false \\\n    -Dtests=false \\\n    -Dgtk_doc=disabled \\\n    -Dintrospection=disabled"
-  },
-  {
-    "pkgname": "jsonrpc-glib",
-    "pkgtype": "lib",
-    "version": "3.44.1",
-    "license": "LGPL-2.1-or-later",
-    "summary": "GNOME library to communicate with JSON-RPC based peers",
-    "web-url": "https://gitlab.gnome.org/GNOME/jsonrpc-glib",
-    "git-url": "https://gitlab.gnome.org/GNOME/jsonrpc-glib",
-    "src-url": "https://download.gnome.org/sources/jsonrpc-glib/3.44/jsonrpc-glib-3.44.1.tar.xz",
-    "src-sha": "1361d17e9c805646afe5102e59baf8ca450238600fcabd01586c654b78bb30df",
-    "dep-pkg": "vala json-glib glib-gir",
-    "dep-upp": "curl bsdtar python3 ninja",
-    "dep-pym": " meson",
-    "bsystem": "meson",
-    "binbstd": "0",
-    "parallel": "1",
-    "ltoable": "1",
-    "movable": "1",
-    "install": "mesonw -Dwith_vapi=true"
   },
   {
     "pkgname": "jump",
@@ -8848,6 +8865,26 @@
     "install": "mesonw \\\n    -Dsystemd=false \\\n    -Dstemming=false \\\n    -Dvapi=true \\\n    -Dgir=false \\\n    -Ddocs=false \\\n    -Dapidocs=false \\\n    -Dinstall-docs=false"
   },
   {
+    "pkgname": "libappstream-glib",
+    "pkgtype": "lib",
+    "version": "0.8.3",
+    "license": "LGPL-2.1-or-later",
+    "summary": "Helper library for reading and writing AppStream metadata",
+    "web-url": "https://github.com/hughsie/appstream-glib",
+    "git-url": "https://github.com/hughsie/appstream-glib",
+    "src-url": "https://github.com/hughsie/appstream-glib/archive/refs/tags/appstream_glib_0_8_3.tar.gz",
+    "src-sha": "15ad7690b0132d883bd066699a7b55f6cef4c0f266d18d781ce5d8112fb4ee63",
+    "dep-pkg": "libjson-glib libgdk-pixbuf libarchive libcurl libuuid",
+    "dep-upp": "gperf docbook-xsl curl bsdtar python3 ninja",
+    "dep-pym": " meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "mesonw -Dintrospection=false -Dbuilder=false -Drpm=false -Ddep11=false"
+  },
+  {
     "pkgname": "libarchive",
     "pkgtype": "lib",
     "version": "3.7.7",
@@ -9112,6 +9149,26 @@
     "install": "gmakew clean\ngmakew all_src\ninstall_libs src/libb64.a\ninstall_incs :b64 include/b64/*"
   },
   {
+    "pkgname": "libbabl",
+    "pkgtype": "lib",
+    "version": "0.1.114",
+    "license": "LGPL-3.0-or-later",
+    "summary": "Dynamic, any-to-any, pixel format translation library",
+    "web-url": "https://www.gegl.org/babl/",
+    "git-url": "https://github.com/GNOME/babl",
+    "src-url": "https://download.gimp.org/pub/babl/0.1/babl-0.1.114.tar.xz",
+    "src-sha": "bcbb7786c1e447703db3bc7fa34d62d0d2d117b22f04d8834c7b2d5ded456487",
+    "dep-pkg": "vala",
+    "dep-upp": "curl bsdtar python3 ninja",
+    "dep-pym": " meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "mesonw -Dwith-docs=false"
+  },
+  {
     "pkgname": "libbcc",
     "pkgtype": "lib",
     "version": "0.32.0",
@@ -9133,7 +9190,7 @@
   {
     "pkgname": "libbcrypt",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A password hashing method based on the Blowfish block cipher, provided via the crypt(3) and a reentrant interface",
     "web-url": "https://www.openwall.com/crypt",
     "git-url": "https://github.com/leleliu008/libbcrypt",
@@ -9417,7 +9474,7 @@
   {
     "pkgname": "libcamera",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "MIT",
     "summary": "An open source camera stack and framework",
     "web-url": "https://libcamera.org/",
@@ -9765,7 +9822,7 @@
   {
     "pkgname": "libcpuinfo",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -10370,7 +10427,7 @@
   {
     "pkgname": "libexecinfo",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A quick-n-dirty BSD licensed clone of backtrace facility found in the GNU libc",
     "web-url": "https://github.com/leleliu008/libexecinfo",
     "git-url": "https://github.com/leleliu008/libexecinfo",
@@ -10897,6 +10954,26 @@
     "install": "configure"
   },
   {
+    "pkgname": "libgegl",
+    "pkgtype": "lib",
+    "version": "0.4.62",
+    "license": "LGPL-3.0-or-later GPL-3.0-or-later BSD-3-Clause MIT",
+    "summary": "Graph based image processing framework",
+    "web-url": "https://www.gegl.org/",
+    "git-url": "https://gitlab.gnome.org/GNOME/gegl",
+    "src-url": "https://download.gimp.org/pub/gegl/0.4/gegl-0.4.62.tar.xz",
+    "src-sha": "5887576371ebf1d9e90797d10e4b9a7f1658228d4827583e79e1db3d94505c6c",
+    "dep-pkg": "libbabl libjson-glib glib-gir",
+    "dep-upp": "curl bsdtar python3 ninja",
+    "dep-pym": " meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "mesonw \\\n    -Ddocs=false \\\n    -Djasper=disabled \\\n    -Dumfpack=disabled \\\n    -Dlibspiro=disabled"
+  },
+  {
     "pkgname": "libgeos",
     "pkgtype": "lib",
     "version": "3.12.2",
@@ -11072,7 +11149,7 @@
   {
     "pkgname": "libglob",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "glob(3) implementation",
     "web-url": "https://linux.die.net/man/3/glob",
     "git-url": "https://github.com/leleliu008/libglob",
@@ -11695,7 +11772,7 @@
   {
     "pkgname": "libintl-lite",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "BSL-1.0",
     "summary": "A simple (but less powerful) GNU gettext libintl replacement",
     "web-url": "https://github.com/j-jorge/libintl-lite",
@@ -11932,6 +12009,26 @@
     "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=ON \\\n    -DBUILD_STATIC_LIBS=ON \\\n    -DDISABLE_BSYMBOLIC=OFF \\\n    -DDISABLE_THREAD_LOCAL_STORAGE=OFF \\\n    -DDISABLE_WERROR=ON \\\n    -DENABLE_RDRAND=ON \\\n    -DENABLE_THREADING=ON"
   },
   {
+    "pkgname": "libjson-glib",
+    "pkgtype": "lib",
+    "version": "1.10.6",
+    "license": "LGPL-2.1-or-later",
+    "summary": "Library for JSON, based on GLib",
+    "web-url": "https://wiki.gnome.org/Projects/JsonGlib",
+    "git-url": "https://gitlab.gnome.org/GNOME/json-glib",
+    "src-url": "https://download.gnome.org/sources/json-glib/1.10/json-glib-1.10.6.tar.xz",
+    "src-sha": "77f4bcbf9339528f166b8073458693f0a20b77b7059dbc2db61746a1928b0293",
+    "dep-pkg": "glib",
+    "dep-upp": "curl bsdtar python3 ninja",
+    "dep-pym": " meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "mesonw \\\n    -Dman=false \\\n    -Dtests=false \\\n    -Dgtk_doc=disabled \\\n    -Dintrospection=disabled"
+  },
+  {
     "pkgname": "libjsoncpp",
     "pkgtype": "lib",
     "version": "1.9.5",
@@ -11948,6 +12045,26 @@
     "ltoable": "1",
     "movable": "1",
     "install": "cmakew \\\n    -DJSONCPP_WITH_EXAMPLE=OFF \\\n    -DJSONCPP_WITH_TESTS=OFF \\\n    -DJSONCPP_WITH_POST_BUILD_UNITTEST=OFF \\\n    -DJSONCPP_WITH_WARNING_AS_ERROR=OFF \\\n    -DJSONCPP_WITH_PKGCONFIG_SUPPORT=ON \\\n    -DJSONCPP_WITH_CMAKE_PACKAGE=ON \\\n    -DJSONCPP_USE_SECURE_MEMORY=ON \\\n    -DJSONCPP_WITH_STRICT_ISO=ON"
+  },
+  {
+    "pkgname": "libjsonrpc-glib",
+    "pkgtype": "lib",
+    "version": "3.44.1",
+    "license": "LGPL-2.1-or-later",
+    "summary": "GNOME library to communicate with JSON-RPC based peers",
+    "web-url": "https://gitlab.gnome.org/GNOME/jsonrpc-glib",
+    "git-url": "https://gitlab.gnome.org/GNOME/jsonrpc-glib",
+    "src-url": "https://download.gnome.org/sources/jsonrpc-glib/3.44/jsonrpc-glib-3.44.1.tar.xz",
+    "src-sha": "1361d17e9c805646afe5102e59baf8ca450238600fcabd01586c654b78bb30df",
+    "dep-pkg": "vala libjson-glib glib-gir",
+    "dep-upp": "curl bsdtar python3 ninja",
+    "dep-pym": " meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "mesonw -Dwith_vapi=true"
   },
   {
     "pkgname": "libjxl",
@@ -12461,7 +12578,7 @@
   {
     "pkgname": "libmesalink",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "BSD-3-Clause",
     "summary": "memory-safe and OpenSSL-compatible TLS library",
     "web-url": "https://mesalink.io",
@@ -12530,7 +12647,7 @@
   {
     "pkgname": "libmill",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "MIT",
     "summary": "Go-style concurrency in C",
     "web-url": "https://github.com/sustrik/libmill",
@@ -12822,6 +12939,25 @@
     "install": "gmakew clean\ngmakew install-libs \\\n    build=release \\\n    shared=yes \\\n    verbose=yes \\\n    prefix=$PACKAGE_INSTALL_DIR \\\n    CC=$CC \\\n    AR=$AR \\\n    RANLIB=$RANLIB \\\n    XCFLAGS=\"'$CFLAGS $CPPFLAGS'\" \\\n    USE_SYSTEM_LIBS=yes \\\n    USE_SYSTEM_MUJS=yes \\\n    $GMAKE_EXTRA_ARGS"
   },
   {
+    "pkgname": "libmypaint",
+    "pkgtype": "lib",
+    "version": "1.6.1",
+    "license": "ISC",
+    "summary": "MyPaint brush engine library",
+    "web-url": "https://github.com/mypaint/libmypaint",
+    "git-url": "https://github.com/mypaint/libmypaint",
+    "src-url": "https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz",
+    "src-sha": "741754f293f6b7668f941506da07cd7725629a793108bb31633fb6c3eae5315f",
+    "dep-pkg": "libjson-c glib",
+    "dep-upp": "intltool gettext-tools curl bsdtar gmake gmake",
+    "bsystem": "configure",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "configure --disable-introspection"
+  },
+  {
     "pkgname": "libncurses",
     "pkgtype": "lib",
     "version": "6.5",
@@ -12960,7 +13096,7 @@
   {
     "pkgname": "libnghttp3",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -12993,7 +13129,7 @@
   {
     "pkgname": "libngtcp2",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -14129,7 +14265,7 @@
   {
     "pkgname": "libquiche",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "BSD-2-Clause",
     "summary": "Savoury implementation of the QUIC transport protocol and HTTP/3",
     "web-url": "https://github.com/cloudflare/quiche",
@@ -16286,7 +16422,7 @@
   {
     "pkgname": "libwordexp",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "wordexp(3) implementation",
     "web-url": "https://linux.die.net/man/3/wordexp",
     "git-url": "https://github.com/leleliu008/libwordexp",
@@ -16853,7 +16989,7 @@
   {
     "pkgname": "lief",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "Library to Instrument Executable Formats",
     "web-url": "https://github.com/lief-project/LIEF",
@@ -17272,7 +17408,7 @@
   {
     "pkgname": "lodepng",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Zlib",
     "summary": "PNG encoder and decoder in C and C++",
     "web-url": "https://github.com/lvandeve/lodepng",
@@ -18386,7 +18522,7 @@
   {
     "pkgname": "ndk-pkg",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "A package builder for Android NDK to build projects written in C, C++, Rust, Golang, etc",
     "web-url": "https://github.com/leleliu008/ndk-pkg",
@@ -18421,7 +18557,7 @@
   {
     "pkgname": "neper",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "A  networking performance tool for Linux",
     "web-url": "https://github.com/google/neper",
@@ -18531,7 +18667,7 @@
   {
     "pkgname": "nghttp3",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -18584,7 +18720,7 @@
   {
     "pkgname": "ngtcp2",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -18600,7 +18736,7 @@
   {
     "pkgname": "nilaway",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "A static analysis tool to detect potential nil panics in Go code",
     "web-url": "https://github.com/uber-go/nilaway",
@@ -19311,7 +19447,7 @@
   {
     "pkgname": "openrsync",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "ISC",
     "summary": "BSD-licensed implementation of rsync",
     "web-url": "https://github.com/kristapsdz/openrsync",
@@ -19464,7 +19600,7 @@
   {
     "pkgname": "packcc",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A packrat parser generator for C",
     "web-url": "https://github.com/arithy/packcc",
     "git-url": "https://github.com/arithy/packcc",
@@ -19738,7 +19874,7 @@
   {
     "pkgname": "pegof",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "PEG grammar optimizer and formatter. Supports any grammar supported by PackCC parser generator.",
     "web-url": "https://github.com/dolik-rce/pegof",
     "git-url": "https://github.com/dolik-rce/pegof",
@@ -19927,7 +20063,7 @@
   {
     "pkgname": "plog",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "MPL-2.0",
     "summary": "Portable, simple and extensible C++ logging library",
     "web-url": "https://github.com/SergiusTheBest/plog",
@@ -20127,7 +20263,7 @@
   {
     "pkgname": "ppkg",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "A portable package manager for Unix-like system",
     "web-url": "https://github.com/leleliu008/ppkg",
@@ -20301,7 +20437,7 @@
   {
     "pkgname": "psimd",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "MIT",
     "summary": "Portable 128-bit SIMD intrinsics",
     "web-url": "https://github.com/Maratyszcza/psimd",
@@ -20376,7 +20512,7 @@
   {
     "pkgname": "pup",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "MIT",
     "summary": "Parse HTML at the command-line",
     "web-url": "https://github.com/EricChiang/pup",
@@ -21349,7 +21485,7 @@
   {
     "pkgname": "ruy",
     "pkgtype": "lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "matrix multiplication library",
     "web-url": "https://github.com/google/ruy",
@@ -21704,7 +21840,7 @@
   {
     "pkgname": "sjpeg",
     "pkgtype": "exe+lib",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "simple jpeg encoder",
     "web-url": "https://github.com/webmproject/sjpeg",
@@ -21739,7 +21875,7 @@
   {
     "pkgname": "skcms",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "BSD",
     "summary": "SkCMS",
     "web-url": "https://skia.googlesource.com/skcms.git",
@@ -22535,7 +22671,7 @@
   {
     "pkgname": "sysinfo",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A command-line utility to print your currently running system information",
     "web-url": "https://github.com/leleliu008/sysinfo",
     "git-url": "https://github.com/leleliu008/sysinfo",
@@ -23447,7 +23583,7 @@
   {
     "pkgname": "uctags",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "GPL-2.0-or-later",
     "summary": "Maintained ctags implementation",
     "web-url": "https://ctags.io/",
@@ -23557,7 +23693,7 @@
   {
     "pkgname": "uppm",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -23687,7 +23823,7 @@
   {
     "pkgname": "utf8.h",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Unlicense",
     "summary": "single header utf8 string functions for C and C++",
     "web-url": "https://github.com/sheredom/utf8.h",
@@ -23841,7 +23977,7 @@
     "git-url": "https://github.com/vala-lang/vala-language-server",
     "src-url": "https://github.com/vala-lang/vala-language-server/releases/download/0.48.7/vala-language-server-0.48.7.tar.xz",
     "src-sha": "a93e09497738144792466d0c5ccb1347583d84a9987b65b08f6aa5d5a1e3f431",
-    "dep-pkg": "jsonrpc-glib libgee",
+    "dep-pkg": "libjsonrpc-glib libgee",
     "dep-upp": "curl bsdtar python3 ninja",
     "dep-pym": " meson",
     "bsystem": "meson",
@@ -24659,7 +24795,7 @@
   {
     "pkgname": "xbps",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "summary": "A binary package system designed and implemented from scratch",
     "web-url": "https://github.com/void-linux/xbps",
     "git-url": "https://github.com/void-linux/xbps",
@@ -24732,7 +24868,7 @@
   {
     "pkgname": "xcpkg",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "A package builder/manager for Xcode to build projects written in C, C++, Rust, Zig, Go, Haskell, etc",
     "web-url": "https://github.com/leleliu008/xcpkg",
@@ -25671,7 +25807,7 @@
   {
     "pkgname": "xpup",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "Apache-2.0",
     "summary": "A command line tool for XML parsing",
     "web-url": "https://github.com/ericchiang/xpup",
@@ -25874,7 +26010,7 @@
   {
     "pkgname": "ycm",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "GPL-v3",
     "summary": "A code-completion engine for Vim",
     "web-url": "https://github.com/ycm-core/YouCompleteMe",
@@ -26002,7 +26138,7 @@
   {
     "pkgname": "zeta",
     "pkgtype": "exe",
-    "version": "2025.06.18",
+    "version": "2025.06.19",
     "license": "LGPL-3.0",
     "summary": "Header-only general purpose library",
     "web-url": "https://github.com/redcode/Zeta",

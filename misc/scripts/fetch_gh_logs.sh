@@ -83,7 +83,7 @@ download_action_logs()
   RUN_IDS_TMP=() ; readarray -t RUN_IDS_TMP < <(cat "${TMPDIR}/RUN_IDS.txt" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | sort -u)
   #IDS_EXIST=() ; readarray -t "IDS_EXIST" < <(oras repo tags "${GHCRPKG_URL}" 2>/dev/null | grep -i "${REPO}" | awk -F'[-]' '{print $2}' | grep -oP '^\s*\d+\s*$' | sort -u)
   IDS_EXIST=() ; readarray -t "IDS_EXIST" < <(git -C "${HF_REPO_LOCAL}" ls-tree --name-only 'HEAD' | xargs -I "{}" basename "{}" | sort -u | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | grep -Eiv '\.(git|md|txt)' | grep -oP '^\s*\d+\s*' | sort -u)
-  RUN_IDS=() ; readarray -t RUN_IDS < <(printf "%s\n" "${RUN_IDS_TMP[@]}" | grep -Fxv -f <(printf "%s\n" "${IDS_EXIST[@]}" | grep -oP '^\s*\d+\s*$') | sort -u | sed -e '/^[[:space:]]*$/d;10000q')
+  RUN_IDS=() ; readarray -t RUN_IDS < <(printf "%s\n" "${RUN_IDS_TMP[@]}" | grep -Fxv -f <(printf "%s\n" "${IDS_EXIST[@]}" | grep -oP '^\s*\d+\s*$') | sort -u | sed -e '/^[[:space:]]*$/d;200q')
  ##Check if there are any workflow runs
   if [ ${#RUN_IDS[@]} -le 1 ]; then
    echo -e "\n[-] No workflow runs found\n"

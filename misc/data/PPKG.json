@@ -371,13 +371,13 @@
   },
   {
     "pkg": "at-spi2-core",
-    "pkg_type": "exe",
+    "pkg_type": "lib",
     "homepage": "https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/",
     "license": [
       "LGPL-2.1-or-later"
     ],
-    "src_url": "https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.0.tar.xz",
-    "version": "2.54.0"
+    "src_url": "https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.2.tar.xz",
+    "version": "2.56.2"
   },
   {
     "pkg": "atuin",
@@ -1645,10 +1645,11 @@
     "pkg_type": "lib",
     "homepage": "https://wiki.freedesktop.org/www/Software/dbus",
     "license": [
-      "GPL-2.0-or-later"
+      "GPL-2.0-or-later",
+      "AFL-2.1"
     ],
     "src_url": "https://gitlab.freedesktop.org/dbus/dbus",
-    "version": "1.14.10"
+    "version": "1.16.2"
   },
   {
     "pkg": "delta",
@@ -2716,26 +2717,6 @@
     "version": "1.23"
   },
   {
-    "pkg": "gdk-pixbuf",
-    "pkg_type": "exe",
-    "homepage": "https://gtk.org/",
-    "license": [
-      "LGPL-2.1-or-later"
-    ],
-    "src_url": "https://github.com/GNOME/gdk-pixbuf",
-    "version": "2.42.12"
-  },
-  {
-    "pkg": "gdk-pixbuf-tools",
-    "pkg_type": "exe",
-    "homepage": "https://gtk.org/",
-    "license": [
-      "LGPL-2.1-or-later"
-    ],
-    "src_url": "https://github.com/GNOME/gdk-pixbuf",
-    "version": "2.42.12"
-  },
-  {
     "pkg": "gdu",
     "pkg_type": "exe",
     "homepage": "https://github.com/dundee/gdu",
@@ -2973,6 +2954,17 @@
     ],
     "src_url": "https://github.com/gitwatch/gitwatch",
     "version": "0.2"
+  },
+  {
+    "pkg": "gjs",
+    "pkg_type": "exe",
+    "homepage": "https://gitlab.gnome.org/GNOME/gjs",
+    "license": [
+      "LGPL-2.0-or-later",
+      "MIT"
+    ],
+    "src_url": "https://gitlab.gnome.org/GNOME/gjs",
+    "version": "1.82.1"
   },
   {
     "pkg": "glew",
@@ -3684,6 +3676,16 @@
     ],
     "src_url": "https://ftp.gnu.org/gnu/time/time-1.9.tar.gz",
     "version": "1.9"
+  },
+  {
+    "pkg": "gtk+3",
+    "pkg_type": "lib",
+    "homepage": "https://gtk.org/",
+    "license": [
+      "LGPL-2.0-or-later"
+    ],
+    "src_url": "https://gitlab.gnome.org/GNOME/gtk",
+    "version": "3.24.43"
   },
   {
     "pkg": "gtk4",
@@ -8670,6 +8672,16 @@
     "version": "4.3.3"
   },
   {
+    "pkg": "libwmf",
+    "pkg_type": "lib",
+    "homepage": "https://wvware.sourceforge.net/libwmf.html",
+    "license": [
+      "LGPL-2.1-only"
+    ],
+    "src_url": "https://github.com/caolanm/libwmf",
+    "version": "0.2.13"
+  },
+  {
     "pkg": "libwoff2",
     "pkg_type": "lib",
     "homepage": "https://github.com/google/woff2",
@@ -9732,6 +9744,26 @@
     "version": "2025.02.17.00"
   },
   {
+    "pkg": "mypaint-brushes",
+    "pkg_type": "exe",
+    "homepage": "https://github.com/mypaint/mypaint-brushes",
+    "license": [
+      "CC0-1.0"
+    ],
+    "src_url": "https://github.com/mypaint/mypaint-brushes",
+    "version": "2.0.2"
+  },
+  {
+    "pkg": "mypaint-brushes@1",
+    "pkg_type": "exe",
+    "homepage": "https://github.com/mypaint/mypaint-brushes",
+    "license": [
+      "CC0-1.0"
+    ],
+    "src_url": "https://github.com/mypaint/mypaint-brushes",
+    "version": "1.3.1"
+  },
+  {
     "pkg": "nano",
     "pkg_type": "exe",
     "homepage": "https://www.nano-editor.org/",
@@ -10712,6 +10744,18 @@
     ],
     "src_url": "https://github.com/charmbracelet/pop",
     "version": "0.2.0"
+  },
+  {
+    "pkg": "poppler-data",
+    "pkg_type": "exe",
+    "homepage": "https://poppler.freedesktop.org/",
+    "license": [
+      "GPL-2.0-or-later",
+      "BSD-3-Clause",
+      "MIT"
+    ],
+    "src_url": "https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz",
+    "version": "0.4.12"
   },
   {
     "pkg": "potrace",
@@ -11710,6 +11754,16 @@
     "version": "0.14.4"
   },
   {
+    "pkg": "spidermonkey",
+    "pkg_type": "exe",
+    "homepage": "https://spidermonkey.dev",
+    "license": [
+      "MPL-2.0"
+    ],
+    "src_url": "https://archive.mozilla.org/pub/firefox/releases/128.11.0esr/source/firefox-128.11.0esr.source.tar.xz",
+    "version": "128.11.0"
+  },
+  {
     "pkg": "spirv-headers",
     "pkg_type": "exe",
     "homepage": "https://github.com/KhronosGroup/SPIRV-Headers",
@@ -12557,6 +12611,16 @@
     ],
     "src_url": "https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz",
     "version": "6.0.28"
+  },
+  {
+    "pkg": "update-mime-database",
+    "pkg_type": "exe",
+    "homepage": "https://wiki.freedesktop.org/www/Software/shared-mime-info",
+    "license": [
+      "GPL-2.0-only"
+    ],
+    "src_url": "https://gitlab.freedesktop.org/xdg/shared-mime-info",
+    "version": "2.4"
   },
   {
     "pkg": "uppm",

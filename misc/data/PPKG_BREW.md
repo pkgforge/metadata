@@ -388,7 +388,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.19 ⚠️ | null |
+| PPKG   | 2025.06.20 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1084,7 +1084,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.101.0** | https://github.com/microsoft/vscode |
+| BREW   | **1.101.1** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -2614,7 +2614,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.16.1 ⚠️ | https://github.com/golang/tools/archive/refs/tags/gopls/v0.16.1.tar.gz |
-| BREW   | **0.19.0** | https://github.com/golang/tools/tree/master/gopls |
+| BREW   | **0.19.1** | https://github.com/golang/tools/tree/master/gopls |
 
 *Outdated*
 
@@ -4402,7 +4402,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.19 ⚠️ | null |
+| PPKG   | 2025.06.20 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6132,7 +6132,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.107 ⚠️ | https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz |
-| BREW   | **3.112** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
+| BREW   | **3.113** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
 
 *Outdated*
 
@@ -6427,7 +6427,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.19 ⚠️ | null |
+| PPKG   | 2025.06.20 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6585,7 +6585,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.19 ⚠️ | null |
+| PPKG   | 2025.06.20 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6747,7 +6747,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.19 ⚠️ | null |
+| PPKG   | 2025.06.20 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7760,7 +7760,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.81.7** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.81.8** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

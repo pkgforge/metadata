@@ -1,67 +1,28 @@
 ```mathematica
- 694M └─┬ main
- 226M   ├─┬ misc
- 226M   │ ├─┬ data
-  72M   │ │ ├── ARCHLINUX.json
-  37M   │ │ ├── FLATPAK_APPSTREAM.xml
-  31M   │ │ ├── CONDA.json
-  23M   │ │ ├── DEBIAN.json
-  16M   │ │ ├── CONDA_RAW.json
-  11M   │ │ ├── ALPINE_PKG.json
-  10M   │ │ ├── NIXPKGS.json
- 9.0M   │ │ ├── PKGSRC.json
- 5.1M   │ │ ├── ALPINE_GIT.json
- 2.8M   │ │ ├── BREW_FORMULA.json
- 1.6M   │ │ ├── BREW_CASK.json
- 1.1M   │ │ ├── PPKG_RAW.json
- 540K   │ │ ├── STALIX.json
- 468K   │ │ ├── FLATPAK_APPS_INFO.json
- 436K   │ │ ├── FLATPAK_APPS_INFO.txt
- 324K   │ │ ├── PPKG.json
- 268K   │ │ ├── PPKG_BREW.md
- 228K   │ │ ├── FLATPAK_POPULAR.json
- 216K   │ │ ├── FLATPAK_TRENDING.json
-  76K   │ │ ├── FLATPAK_APP_IDS.txt
-  20K   │ │ ├── CATEGORY.json
- 4.0K   │ │ └── CATEGORY.md
- 104K   │ └─┬ scripts
-  12K   │   ├── fetch_gh_logs.sh
-  12K   │   ├── fetch_flatpak.sh
-  12K   │   ├── fetch_conda.sh
-  12K   │   ├── fetch_alpine_pkg.sh
- 8.0K   │   ├── fetch_homebrew.sh
- 8.0K   │   ├── fetch_debian_src.sh
- 8.0K   │   ├── fetch_archlinux_src.sh
- 4.0K   │   ├── fetch_stalix.sh
- 4.0K   │   ├── fetch_ppkg.sh
- 4.0K   │   ├── fetch_pkgsrc.sh
- 4.0K   │   ├── fetch_nixpkgs.sh
- 4.0K   │   ├── fetch_debian_docker.sh
- 4.0K   │   ├── fetch_archlinux_docker.sh
- 4.0K   │   └── fetch_alpine_git.sh
- 218M   ├─┬ external
-  96M   │ ├─┬ pkgforge-go
-  96M   │ │ ├─┬ data
-  12M   │ │ │ ├── x86_64-Linux.json
-  12M   │ │ │ ├── aarch64-Linux.json
-  12M   │ │ │ ├── riscv64-Linux.json
-  11M   │ │ │ ├── loongarch64-Linux.json
- 9.7M   │ │ │ ├── x86_64-Linux.db
- 9.5M   │ │ │ ├── aarch64-Linux.db
- 9.4M   │ │ │ ├── riscv64-Linux.db
- 8.9M   │ │ │ ├── loongarch64-Linux.db
- 980K   │ │ │ ├── x86_64-Linux.db.zstd
- 956K   │ │ │ ├── aarch64-Linux.db.zstd
- 944K   │ │ │ ├── riscv64-Linux.db.zstd
- 896K   │ │ │ ├── loongarch64-Linux.db.zstd
- 892K   │ │ │ ├── x86_64-Linux.json.zstd
- 876K   │ │ │ ├── x86_64-Linux.json.xz
- 872K   │ │ │ ├── aarch64-Linux.json.zstd
- 864K   │ │ │ ├── riscv64-Linux.json.zstd
- 856K   │ │ │ ├── aarch64-Linux.json.xz
- 844K   │ │ │ ├── riscv64-Linux.json.xz
- 820K   │ │ │ ├── loongarch64-Linux.json.zstd
- 804K   │ │ │ ├── loongarch64-Linux.json.xz
+ 718M └─┬ main
+ 241M   ├─┬ external
+ 120M   │ ├─┬ pkgforge-go
+ 120M   │ │ ├─┬ data
+  15M   │ │ │ ├── x86_64-Linux.json
+  15M   │ │ │ ├── aarch64-Linux.json
+  15M   │ │ │ ├── riscv64-Linux.json
+  14M   │ │ │ ├── loongarch64-Linux.json
+  12M   │ │ │ ├── x86_64-Linux.db
+  11M   │ │ │ ├── aarch64-Linux.db
+  11M   │ │ │ ├── riscv64-Linux.db
+  11M   │ │ │ ├── loongarch64-Linux.db
+ 1.2M   │ │ │ ├── x86_64-Linux.db.zstd
+ 1.1M   │ │ │ ├── aarch64-Linux.db.zstd
+ 1.1M   │ │ │ ├── riscv64-Linux.db.zstd
+ 1.1M   │ │ │ ├── loongarch64-Linux.db.zstd
+ 1.1M   │ │ │ ├── x86_64-Linux.json.zstd
+ 1.1M   │ │ │ ├── x86_64-Linux.json.xz
+ 1.0M   │ │ │ ├── aarch64-Linux.json.zstd
+ 1.0M   │ │ │ ├── riscv64-Linux.json.zstd
+ 1.0M   │ │ │ ├── aarch64-Linux.json.xz
+ 1.0M   │ │ │ ├── riscv64-Linux.json.xz
+1016K   │ │ │ ├── loongarch64-Linux.json.zstd
+ 996K   │ │ │ ├── loongarch64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum
@@ -136,7 +97,7 @@
  1.0M   │ │ │ ├── aarch64-Linux.AM.txt
  480K   │ │ │ ├── x86_64-Linux.db.cba
  444K   │ │ │ ├── x86_64-Linux.json.cba
- 400K   │ │ │ ├── x86_64-Linux.db.zstd
+ 396K   │ │ │ ├── x86_64-Linux.db.zstd
  396K   │ │ │ ├── x86_64-Linux.db.xz
  364K   │ │ │ ├── x86_64-Linux.json.zstd
  356K   │ │ │ ├── x86_64-Linux.json.xz
@@ -250,6 +211,45 @@
  4.0K   │   │ └── TOTAL.json
   36K   │   └─┬ scripts
   32K   │     └── gen_meta.sh
+ 226M   ├─┬ misc
+ 226M   │ ├─┬ data
+  72M   │ │ ├── ARCHLINUX.json
+  37M   │ │ ├── FLATPAK_APPSTREAM.xml
+  31M   │ │ ├── CONDA.json
+  23M   │ │ ├── DEBIAN.json
+  16M   │ │ ├── CONDA_RAW.json
+  11M   │ │ ├── ALPINE_PKG.json
+  10M   │ │ ├── NIXPKGS.json
+ 9.0M   │ │ ├── PKGSRC.json
+ 5.1M   │ │ ├── ALPINE_GIT.json
+ 2.8M   │ │ ├── BREW_FORMULA.json
+ 1.6M   │ │ ├── BREW_CASK.json
+ 1.1M   │ │ ├── PPKG_RAW.json
+ 540K   │ │ ├── STALIX.json
+ 468K   │ │ ├── FLATPAK_APPS_INFO.json
+ 436K   │ │ ├── FLATPAK_APPS_INFO.txt
+ 324K   │ │ ├── PPKG.json
+ 268K   │ │ ├── PPKG_BREW.md
+ 228K   │ │ ├── FLATPAK_POPULAR.json
+ 216K   │ │ ├── FLATPAK_TRENDING.json
+  76K   │ │ ├── FLATPAK_APP_IDS.txt
+  20K   │ │ ├── CATEGORY.json
+ 4.0K   │ │ └── CATEGORY.md
+ 104K   │ └─┬ scripts
+  12K   │   ├── fetch_gh_logs.sh
+  12K   │   ├── fetch_flatpak.sh
+  12K   │   ├── fetch_conda.sh
+  12K   │   ├── fetch_alpine_pkg.sh
+ 8.0K   │   ├── fetch_homebrew.sh
+ 8.0K   │   ├── fetch_debian_src.sh
+ 8.0K   │   ├── fetch_archlinux_src.sh
+ 4.0K   │   ├── fetch_stalix.sh
+ 4.0K   │   ├── fetch_ppkg.sh
+ 4.0K   │   ├── fetch_pkgsrc.sh
+ 4.0K   │   ├── fetch_nixpkgs.sh
+ 4.0K   │   ├── fetch_debian_docker.sh
+ 4.0K   │   ├── fetch_archlinux_docker.sh
+ 4.0K   │   └── fetch_alpine_git.sh
  158M   ├─┬ bincache
  158M   │ ├─┬ data
   28M   │ │ ├── x86_64-Linux.json
@@ -336,8 +336,8 @@
  1.0M   │ │ ├── COMP_VER_CACHE.md
  752K   │ │ ├── pub_issues_binaries.txt
  452K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 416K   │ │ ├── COMP_VER_CACHE_OLD.json
  412K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
- 408K   │ │ ├── COMP_VER_CACHE_OLD.json
  388K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  384K   │ │ ├── INDEX.json.cba
  328K   │ │ ├── DIFF_bincache_riscv64-Linux.json
@@ -351,7 +351,7 @@
  220K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
  180K   │ │ ├── INDEX.db.xz
- 164K   │ │ ├── COMP_VER_CACHE_OLD.md
+ 168K   │ │ ├── COMP_VER_CACHE_OLD.md
  120K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
   52K   │ │ ├── URLS.txt

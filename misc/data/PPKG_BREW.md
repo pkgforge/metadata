@@ -257,10 +257,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.54.0 ⚠️ | https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.0.tar.xz |
-| BREW   | **2.56.2** | https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/ |
-
-*Outdated*
+| PPKG   | 2.56.2 ✅ | https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.2.tar.xz |
+| BREW   | 2.56.2 | https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/ |
 
 ## atuin
 
@@ -1367,10 +1365,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.14.10 ⚠️ | https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz |
-| BREW   | **1.16.2** | https://wiki.freedesktop.org/www/Software/dbus |
-
-*Outdated*
+| PPKG   | 1.16.2 ✅ | https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz |
+| BREW   | 1.16.2 | https://wiki.freedesktop.org/www/Software/dbus |
 
 ## desktop-file-utils
 
@@ -1757,7 +1753,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.0 ⚠️ | https://github.com/eza-community/eza/archive/refs/tags/v0.19.0.tar.gz |
-| BREW   | **0.21.4** | https://github.com/eza-community/eza |
+| BREW   | **0.21.5** | https://github.com/eza-community/eza |
 
 *Outdated*
 
@@ -2213,15 +2209,6 @@
 
 *Outdated*
 
-## gdk-pixbuf
-
-**Description:** Toolkit for image loading and pixel buffer manipulation
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 2.42.12 ✅ | https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz |
-| BREW   | 2.42.12 | https://gtk.org |
-
 ## gdu
 
 **Description:** Disk usage analyzer with console interface written in Go
@@ -2379,7 +2366,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.37.0 ⚠️ | https://github.com/Byron/gitoxide/archive/refs/tags/v0.37.0.tar.gz |
-| BREW   | **0.44.0** | https://github.com/Byron/gitoxide |
+| BREW   | **0.44.0** | https://github.com/GitoxideLabs/gitoxide |
 
 *Outdated*
 
@@ -2390,7 +2377,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ✅ | https://github.com/extrawurst/gitui/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | 0.27.0 | https://github.com/extrawurst/gitui |
+| BREW   | 0.27.0 | https://github.com/gitui-org/gitui |
 
 ## gitwatch
 
@@ -2402,6 +2389,15 @@
 | BREW   | **0.3** | https://github.com/gitwatch/gitwatch |
 
 *Outdated*
+
+## gjs
+
+**Description:** GNOME Javascript bindings
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 1.82.1 ✅ | https://download.gnome.org/sources/gjs/1.82/gjs-1.82.1.tar.xz |
+| BREW   | 1.82.1 | https://gitlab.gnome.org/GNOME/gjs/wikis/Home |
 
 ## glew
 
@@ -2815,6 +2811,15 @@
 | BREW   | **1.26.2** | https://gstreamer.freedesktop.org/ |
 
 *Outdated*
+
+## gtk+3
+
+**Description:** GNOME Toolkit for creating GUI Apps
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 3.24.43 ✅ | https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz |
+| BREW   | 3.24.43 | https://gtk.org/ |
 
 ## gtk4
 
@@ -3504,7 +3509,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 661 ⚠️ | http://www.greenwoodsoftware.com/less/less-661.tar.gz |
-| BREW   | **678** | https://www.greenwoodsoftware.com/less/index.html |
+| BREW   | **679** | https://www.greenwoodsoftware.com/less/index.html |
 
 *Outdated*
 
@@ -5231,6 +5236,15 @@
 
 *Outdated*
 
+## libwmf
+
+**Description:** Library for converting WMF (Window Metafile Format) files
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.2.13 ✅ | https://github.com/caolanm/libwmf/archive/refs/tags/v0.2.13.tar.gz |
+| BREW   | 0.2.13 | https://github.com/caolanm/libwmf |
+
 ## libxcrypt
 
 **Description:** Extended crypt library for descrypt, md5crypt, bcrypt, and others
@@ -5912,6 +5926,15 @@
 
 *Outdated*
 
+## mypaint-brushes
+
+**Description:** Brushes used by MyPaint and other software using libmypaint
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 2.0.2 ✅ | https://github.com/mypaint/mypaint-brushes/archive/refs/tags/v2.0.2.tar.gz |
+| BREW   | 2.0.2 | https://github.com/mypaint/mypaint-brushes |
+
 ## nano
 
 **Description:** Free (GNU) replacement for the Pico text editor
@@ -6575,7 +6598,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.3.0 ⚠️ | https://distfiles.ariadne.space/pkgconf/pkgconf-2.3.0.tar.xz |
-| BREW   | **2.4.3** | https://github.com/pkgconf/pkgconf |
+| BREW   | **2.5.0** | https://github.com/pkgconf/pkgconf |
 
 *Outdated*
 
@@ -7018,7 +7041,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.42.0 ⚠️ | https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.42.0.tar.gz |
-| BREW   | **0.45.1** | https://github.com/RazrFalcon/resvg |
+| BREW   | **0.45.1** | https://github.com/linebender/resvg |
 
 *Outdated*
 
@@ -7190,7 +7213,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.3.0 ⚠️ | https://github.com/RustScan/RustScan/archive/refs/tags/2.3.0.tar.gz |
-| BREW   | **2.4.1** | https://github.com/rustscan/rustscan |
+| BREW   | **2.4.1** | https://github.com/bee-san/RustScan |
 
 *Outdated*
 
@@ -7420,6 +7443,15 @@
 | BREW   | **0.14.5** | https://www.spice-space.org/ |
 
 *Outdated*
+
+## spidermonkey
+
+**Description:** A JavaScript and WebAssembly Engine powered by Mozilla and used by Firefox
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 128.11.0 ✅ | https://archive.mozilla.org/pub/firefox/releases/128.11.0esr/source/firefox-128.11.0esr.source.tar.xz |
+| BREW   | 128.11.0 | https://spidermonkey.dev |
 
 ## spirv-headers
 

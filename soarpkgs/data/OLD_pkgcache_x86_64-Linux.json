@@ -2290,7 +2290,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.82.6"
+    "version": "v1.82.9"
   },
   {
     "_disabled": "false",
@@ -2767,7 +2767,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "v4.100.3"
+    "version": "v4.101.0"
   },
   {
     "_disabled": "false",
@@ -3103,6 +3103,71 @@
       "Networking/Chat"
     ],
     "version": "0.0.98"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "discord",
+    "pkg_family": "discord",
+    "pkg_id": "nixpkgs.discord-development",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/discord-development/discord/discord",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/nixappimage.nixpkgs.development.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Development)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord@development"
+      ],
+      "nixpkgs": [
+        "discord-development"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/nixappimage.nixpkgs.development.yaml",
+    "homepage": [
+      "https://discordapp.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/discord/nixappimage/nixpkgs",
+    "provides": [
+      "discord=>discord-development"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://discordapp.com"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ]
   },
   {
     "_disabled": "false",
@@ -5372,7 +5437,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250620T004938"
+    "version": "250621T004846"
   },
   {
     "_disabled": "false",
@@ -5434,7 +5499,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250620T004938"
+    "version": "250621T004846"
   },
   {
     "_disabled": "false",
@@ -9640,6 +9705,158 @@
   },
   {
     "_disabled": "false",
+    "pkg": "nmap",
+    "pkg_family": "nmap",
+    "pkg_id": "runimage.alpine.nmap",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-nmap/nmap/nmap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/nmap/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Network exploration tool and security/port scanner",
+    "distro_pkg": {
+      "alpine": [
+        "nmap"
+      ],
+      "archlinux": {
+        "extra": [
+          "nmap"
+        ]
+      },
+      "debian": [
+        "nmap"
+      ],
+      "gnuguix": [
+        "nmap"
+      ],
+      "homebrew": [
+        "nmap"
+      ],
+      "nixpkgs": [
+        "nmap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/nmap/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://nmap.org",
+      "https://github.com/nmap/nmap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/nmap/runimage/alpine",
+    "provides": [
+      "nmap"
+    ],
+    "repology": [
+      "nmap"
+    ],
+    "src_url": [
+      "https://github.com/nmap/nmap"
+    ],
+    "tag": [
+      "network-discovery",
+      "port-scanner"
+    ],
+    "version": "7.97"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "nmap",
+    "pkg_family": "nmap",
+    "pkg_id": "sharun.wrappe.alpine.nmap",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-nmap/nmap/nmap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/nmap/archive.sharun.alpine.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities for Network Discovery and Security Auditing",
+      "ncat": "Concatenate and redirect sockets [nmap]",
+      "nmap": "Network exploration tool and security/port scanner [nmap]",
+      "nping": "Network packet generation tool/ping utility [nmap]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "nmap"
+      ],
+      "archlinux": {
+        "extra": [
+          "nmap"
+        ]
+      },
+      "debian": [
+        "nmap"
+      ],
+      "gnuguix": [
+        "nmap"
+      ],
+      "homebrew": [
+        "nmap"
+      ],
+      "nixpkgs": [
+        "nmap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/nmap/archive.sharun.alpine.yaml",
+    "homepage": [
+      "https://nmap.org",
+      "https://github.com/nmap/nmap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [alpine]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Please use runimage version of nmap if this doesn't work"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/nmap/archive/sharun",
+    "provides": [
+      "ncat",
+      "nmap",
+      "nping"
+    ],
+    "repology": [
+      "nmap"
+    ],
+    "src_url": [
+      "https://github.com/nmap/nmap"
+    ],
+    "tag": [
+      "network-discovery",
+      "port-scanner"
+    ],
+    "version": "7.97"
+  },
+  {
+    "_disabled": "false",
     "pkg": "obs-studio",
     "pkg_family": "obs-studio",
     "pkg_id": "github.com.pkgforge-dev.OBS-Studio-AppImage.stable",
@@ -11621,6 +11838,71 @@
       "privacy"
     ],
     "version": "v6.3.5"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "simplex-desktop",
+    "pkg_family": "simplex-desktop",
+    "pkg_id": "nixpkgs.simplex-chat-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/chat-desktop/simplex-desktop/simplex-desktop",
+    "app_id": "chat.simplex.simplex",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "Desktop application for SimpleX Chat, A 100% private-by-design chat platform",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "simplex-chat"
+        ]
+      },
+      "nixpkgs": [
+        "simplex-chat-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://simplex.chat",
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/simplex-desktop/nixappimage/nixpkgs",
+    "provides": [
+      "simplex-desktop==simplex-chat-desktop"
+    ],
+    "repology": [
+      "simplex-chat",
+      "simplex-chat-desktop"
+    ],
+    "src_url": [
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "tag": [
+      "chat",
+      "messenger",
+      "privacy"
+    ],
+    "version": "6.3.5"
   },
   {
     "_disabled": "false",

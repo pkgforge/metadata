@@ -6246,7 +6246,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.5.0 ⚠️ | https://github.com/hatoo/oha/archive/refs/tags/v1.5.0.tar.gz |
-| BREW   | **1.8.0** | https://github.com/hatoo/oha/ |
+| BREW   | **1.9.0** | https://github.com/hatoo/oha/ |
 
 *Outdated*
 

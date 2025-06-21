@@ -1,0 +1,53 @@
+name: ⏫ Deploy (CloudFlare) 🌩️
+
+on:
+  workflow_dispatch:
+  #schedule:
+  #  - cron: "45 23 * * *"  # 11:45 PM UTC --> 05:30 AM Morning NPT
+  push:
+    branches:
+      - main
+    paths:
+      - 'web/cloudflare/**'
+
+env:
+  CLOUDFLARE_ACCOUNT_ID: "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}"
+  CLOUDFLARE_API_TOKEN: "${{ secrets.CLOUDFLARE_API_TOKEN }}"
+#------------------------------------------------------------------------------------#  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: "main"
+          fetch-depth: "1"
+          filter: "blob:none"
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+
+      - name: Build Src & Deploy
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          pushd "$GITHUB_WORKSPACE/main/web/cloudflare" >/dev/null 2>&1
+            #Install Deps
+             npm install "npx@latest" -g
+             npm install "wrangler@latest" -g
+             npm install "yarn@latest" -g
+            #Build
+             npm install
+             npx "update-browserslist-db@latest"
+            #Deploy (Login from ENV)
+             wrangler whoami ; wrangler deploy
+          popd >/dev/null 2>&1
+        continue-on-error: true
+#------------------------------------------------------------------------------------#

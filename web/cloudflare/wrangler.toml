@@ -1,0 +1,14 @@
+name = "r2-dir-list-meta-pkgforge-dev"
+main = "src/index.ts"
+compatibility_date = "2023-03-01"
+
+workers_dev = false
+logpush = true
+routes = [
+    { pattern = "meta.pkgforge.dev/*", zone_name = "pkgforge.dev" },
+]
+
+# Docs: https://developers.cloudflare.com/r2/api/workers/workers-api-usage/
+[[r2_buckets]]
+binding = "BUCKET_bucketname"
+bucket_name = "meta"

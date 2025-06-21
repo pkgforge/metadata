@@ -386,7 +386,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.20 ⚠️ | null |
+| PPKG   | 2025.06.21 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -4407,7 +4407,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.20 ⚠️ | null |
+| PPKG   | 2025.06.21 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5558,7 +5558,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.678** | https://luau.org |
+| BREW   | **0.679** | https://luau.org |
 
 *Outdated*
 
@@ -6450,7 +6450,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.20 ⚠️ | null |
+| PPKG   | 2025.06.21 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6608,7 +6608,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.20 ⚠️ | null |
+| PPKG   | 2025.06.21 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6770,7 +6770,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.20 ⚠️ | null |
+| PPKG   | 2025.06.21 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7118,7 +7118,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/apollographql/rover/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.33.0** | https://www.apollographql.com/docs/rover/ |
+| BREW   | **0.34.0** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
 
@@ -7387,7 +7387,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.1 ⚠️ | https://github.com/LucasPickering/slumber/archive/refs/tags/v3.0.1.tar.gz |
-| BREW   | **3.1.3** | https://slumber.lucaspickering.me/ |
+| BREW   | **3.2.0** | https://slumber.lucaspickering.me/ |
 
 *Outdated*
 
@@ -7595,7 +7595,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.6.6 ⚠️ | https://github.com/projectdiscovery/subfinder/archive/refs/tags/v2.6.6.tar.gz |
-| BREW   | **2.7.1** | https://github.com/projectdiscovery/subfinder |
+| BREW   | **2.8.0** | https://github.com/projectdiscovery/subfinder |
 
 *Outdated*
 
@@ -7701,7 +7701,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25 ⚠️ | https://download.savannah.gnu.org/releases/lzip/tarlz/tarlz-0.25.tar.lz |
-| BREW   | **0.27.1** | https://www.nongnu.org/lzip/tarlz.html |
+| BREW   | **0.28** | https://www.nongnu.org/lzip/tarlz.html |
 
 *Outdated*
 
@@ -7792,7 +7792,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.81.8** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.81.10** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8273,7 +8273,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.3.280 ⚠️ | https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.280.tar.gz |
-| BREW   | **1.4.318** | https://github.com/KhronosGroup/Vulkan-Headers |
+| BREW   | **1.4.319** | https://github.com/KhronosGroup/Vulkan-Headers |
 
 *Outdated*
 
@@ -8355,7 +8355,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 19.0.0 ⚠️ | null |
-| BREW   | **33.0.0** | https://wasmtime.dev/ |
+| BREW   | **34.0.0** | https://wasmtime.dev/ |
 
 *Outdated*
 

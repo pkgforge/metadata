@@ -1,5 +1,5 @@
 ```mathematica
- 792M └─┬ main
+ 793M └─┬ main
  316M   ├─┬ external
  194M   │ ├─┬ pkgforge-go
  194M   │ │ ├─┬ data
@@ -89,18 +89,18 @@
  4.0K   │ │ │ └── aarch64-Linux.db.bsum
   12K   │ │ └─┬ scripts
  8.0K   │ │   └── gen_meta.sh
-  13M   │ ├─┬ am
+  14M   │ ├─┬ am
   13M   │ │ ├─┬ data
  4.8M   │ │ │ ├── x86_64-Linux.json
- 4.5M   │ │ │ ├── x86_64-Linux.db
+ 4.4M   │ │ │ ├── x86_64-Linux.db
  1.1M   │ │ │ ├── x86_64-Linux.AM.txt
  1.0M   │ │ │ ├── aarch64-Linux.AM.txt
- 480K   │ │ │ ├── x86_64-Linux.db.cba
- 440K   │ │ │ ├── x86_64-Linux.json.cba
- 396K   │ │ │ ├── x86_64-Linux.db.zstd
- 396K   │ │ │ ├── x86_64-Linux.db.xz
- 364K   │ │ │ ├── x86_64-Linux.json.zstd
- 356K   │ │ │ ├── x86_64-Linux.json.xz
+ 544K   │ │ │ ├── x86_64-Linux.db.cba
+ 504K   │ │ │ ├── x86_64-Linux.json.cba
+ 440K   │ │ │ ├── x86_64-Linux.db.zstd
+ 432K   │ │ │ ├── x86_64-Linux.db.xz
+ 404K   │ │ │ ├── x86_64-Linux.json.zstd
+ 396K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.json.bsum

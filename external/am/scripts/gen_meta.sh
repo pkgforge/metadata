@@ -104,25 +104,7 @@ pushd "${TMPDIR}" &>/dev/null
     .description != null and .description != "" and
     .download_url != null and .download_url != "" and
     .version != null and .version != ""
- ))' | jq 'unique_by(.pkg_id) | sort_by(.pkg)' | jq . > "${TMPDIR}/AM.json.tmp"
-#Fix Descr
-jq -s '
-  (.[1] | map({(.pkg): .description}) | add) as $descs |
-  .[1] as $descr_array |
-  .[0] | map(
-    if .description | contains("------") then
-      . as $am |
-      ($descr_array[] | select(.pkg == $am.pkg)) as $desc |
-      if ($am.build_script == $desc.source_blob or $am.build_script == $desc.source_raw) then
-        .description = ($descs[.pkg] // "No Description Provided")
-      else
-        .description = "No Description Provided"
-      end
-    else
-      .
-    end
-  )
-' "${TMPDIR}/AM.json.tmp" "${SYSTMP}/DESCR.json" | jq . > "${TMPDIR}/AM.json"
+ ))' | jq 'unique_by(.pkg_id) | sort_by(.pkg)' | jq . > "${TMPDIR}/AM.json"
 ##Sanity Check
  PKG_COUNT="$(jq -r '.[] | .pkg_id' "${TMPDIR}/AM.json" | grep -iv 'null' | wc -l | tr -d '[:space:]')"
  if [[ "${PKG_COUNT}" -le 5 ]]; then
@@ -149,7 +131,26 @@ if [ -s "${SYSTMP}/AM.json" ] &&\
   cd "${GITHUB_WORKSPACE}/main/external/am/data"
   [[ ! -f "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" ]] &&\
    echo '[]' > "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json"
-  jq -s 'map(.[]) | group_by(.pkg_id) | map(if length > 1 then .[1] + .[0] else .[0] end) | unique_by(.download_url) | sort_by(.pkg)' "${SYSTMP}/AM.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" | jq . > "${SYSTMP}/merged.json"
+  jq -s 'map(.[]) | group_by(.pkg_id) | map(if length > 1 then .[1] + .[0] else .[0] end) | unique_by(.download_url) | sort_by(.pkg)' "${SYSTMP}/AM.json" "${GITHUB_WORKSPACE}/main/external/am/data/${HOST_TRIPLET}.json" | jq . > "${SYSTMP}/merged.json.tmp"
+ #Fix Descr
+  jq -s '
+    (.[1] | map({(.pkg): .description}) | add) as $descs |
+    .[1] as $descr_array |
+    .[0] | map(
+      if .description | contains("------") then
+        . as $am |
+        ($descr_array[] | select(.pkg == $am.pkg)) as $desc |
+        if ($am.build_script == $desc.source_blob or $am.build_script == $desc.source_raw) then
+          .description = ($descs[.pkg] // "No Description Provided")
+        else
+          .description = "No Description Provided"
+        end
+      else
+        .
+      end
+    )
+  ' "${SYSTMP}/merged.json.tmp" "${SYSTMP}/DESCR.json" | jq . > "${SYSTMP}/merged.json"
+ #Copy
   if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 50 ]]; then
     #cat "${SYSTMP}/merged.json" | jq '[ .[] | select(.pkg_type? and (.pkg_type | test("appimage"; "i"))) ]' |\
     cat "${SYSTMP}/merged.json" | jq '[ .[] | select(.pkg_type? and (.pkg_type | test("^(appimage|archive)$"; "i"))) ]' |\

@@ -5387,7 +5387,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.10 ⚠️ | https://github.com/triyanox/lla/archive/refs/tags/v0.3.10.tar.gz |
-| BREW   | **0.3.11** | https://github.com/triyanox/lla |
+| BREW   | **0.3.11** | https://github.com/chaqchase/lla |
 
 *Outdated*
 

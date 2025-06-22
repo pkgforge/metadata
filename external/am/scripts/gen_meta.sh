@@ -13,6 +13,9 @@ SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
 TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
 mkdir -pv "${TMPDIR}/assets" "${TMPDIR}/data" "${TMPDIR}/src" "${TMPDIR}/tmp"
 rm -rvf "${SYSTMP}/AM.json" 2>/dev/null
+##Get Descr
+ curl -qfsSL "https://github.com/pkgforge-community/AM-HF-SYNC/raw/main/.github/PKGS.json" -o "${SYSTMP}/DESCR.json"
+ [[ -s "${SYSTMP}/DESCR.json" ]] || exit 1
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
@@ -101,7 +104,25 @@ pushd "${TMPDIR}" &>/dev/null
     .description != null and .description != "" and
     .download_url != null and .download_url != "" and
     .version != null and .version != ""
- ))' | jq 'unique_by(.pkg_id) | sort_by(.pkg)' | jq . > "${TMPDIR}/AM.json"
+ ))' | jq 'unique_by(.pkg_id) | sort_by(.pkg)' | jq . > "${TMPDIR}/AM.json.tmp"
+#Fix Descr
+jq -s '
+  (.[1] | map({(.pkg): .description}) | add) as $descs |
+  .[1] as $descr_array |
+  .[0] | map(
+    if .description | contains("------") then
+      . as $am |
+      ($descr_array[] | select(.pkg == $am.pkg)) as $desc |
+      if ($am.build_script == $desc.source_blob or $am.build_script == $desc.source_raw) then
+        .description = ($descs[.pkg] // "No Description Provided")
+      else
+        .description = "No Description Provided"
+      end
+    else
+      .
+    end
+  )
+' "${TMPDIR}/AM.json.tmp" "${SYSTMP}/DESCR.json" | jq . > "${TMPDIR}/AM.json"
 ##Sanity Check
  PKG_COUNT="$(jq -r '.[] | .pkg_id' "${TMPDIR}/AM.json" | grep -iv 'null' | wc -l | tr -d '[:space:]')"
  if [[ "${PKG_COUNT}" -le 5 ]]; then

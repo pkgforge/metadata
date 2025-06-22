@@ -386,7 +386,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.21 ⚠️ | null |
+| PPKG   | 2025.06.22 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -4407,7 +4407,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.21 ⚠️ | null |
+| PPKG   | 2025.06.22 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6450,7 +6450,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.21 ⚠️ | null |
+| PPKG   | 2025.06.22 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6519,8 +6519,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.13.0 ✅ | https://github.com/pciutils/pciutils/archive/refs/tags/v3.13.0.tar.gz |
-| BREW   | 3.13.0 | https://github.com/pciutils/pciutils |
+| PPKG   | 3.13.0 ⚠️ | https://github.com/pciutils/pciutils/archive/refs/tags/v3.13.0.tar.gz |
+| BREW   | **3.14.0** | https://github.com/pciutils/pciutils |
+
+*Outdated*
 
 ## pcre2
 
@@ -6608,7 +6610,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.21 ⚠️ | null |
+| PPKG   | 2025.06.22 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6770,7 +6772,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.21 ⚠️ | null |
+| PPKG   | 2025.06.22 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

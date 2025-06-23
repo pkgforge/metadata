@@ -55,6 +55,12 @@ pushd "${TMPDIR}" &>/dev/null
        if [[ "$(jq -r '.[] | .pkg_id' "${SYSTMP}/merged-${HOST_TRIPLET}.json" | sort -u | wc -l | tr -d '[:space:]')" -gt 20 ]]; then
           cp -fv "${SYSTMP}/merged-${HOST_TRIPLET}.json" "${O_D}/${HOST_TRIPLET}.json"
        fi
+      #Fix ID
+       #sed -E \
+       # '
+       #  /^[[:space:]]*"pkg_id"[[:space:]]*:[[:space:]]*"[^"]*#[^"]*"/ {
+       #  s/("pkg_id"[[:space:]]*:[[:space:]]*"[[:space:]]*)[^#]*#/\1/
+       # }' -i "${O_D}/${HOST_TRIPLET}.json"
        #Checksum
        generate_checksum()
        {

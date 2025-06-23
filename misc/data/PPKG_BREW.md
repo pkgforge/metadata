@@ -386,7 +386,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.22 ⚠️ | null |
+| PPKG   | 2025.06.23 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -949,7 +949,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.54.0 ⚠️ | https://github.com/twpayne/chezmoi/archive/refs/tags/v2.54.0.tar.gz |
-| BREW   | **2.62.6** | https://chezmoi.io/ |
+| BREW   | **2.62.7** | https://chezmoi.io/ |
 
 *Outdated*
 
@@ -4397,7 +4397,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.60.0 ⚠️ | https://github.com/nghttp2/nghttp2/releases/download/v1.60.0/nghttp2-1.60.0.tar.gz |
-| BREW   | **1.65.0** | https://nghttp2.org/ |
+| BREW   | **1.66.0** | https://nghttp2.org/ |
 
 *Outdated*
 
@@ -4407,7 +4407,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.22 ⚠️ | null |
+| PPKG   | 2025.06.23 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5023,7 +5023,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.13.8 ⚠️ | https://github.com/rakshasa/libtorrent/archive/v0.13.8.tar.gz |
-| BREW   | **0.15.4** | https://github.com/rakshasa/libtorrent |
+| BREW   | **0.15.5** | https://github.com/rakshasa/libtorrent |
 
 *Outdated*
 
@@ -6062,7 +6062,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.64.0 ⚠️ | https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.gz |
-| BREW   | **1.65.0** | https://nghttp2.org/ |
+| BREW   | **1.66.0** | https://nghttp2.org/ |
 
 *Outdated*
 
@@ -6450,7 +6450,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.22 ⚠️ | null |
+| PPKG   | 2025.06.23 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6610,7 +6610,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.22 ⚠️ | null |
+| PPKG   | 2025.06.23 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6772,7 +6772,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.22 ⚠️ | null |
+| PPKG   | 2025.06.23 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7151,7 +7151,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.8 ⚠️ | https://github.com/rakshasa/rtorrent/releases/download/v0.9.8/rtorrent-0.9.8.tar.gz |
-| BREW   | **0.15.4** | https://github.com/rakshasa/rtorrent |
+| BREW   | **0.15.5** | https://github.com/rakshasa/rtorrent |
 
 *Outdated*
 

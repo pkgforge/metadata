@@ -251,6 +251,15 @@
 
 *Outdated*
 
+## assimp
+
+**Description:** A command line utilitiy that allows interaction with 3D models
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 6.0.1 ✅ | https://github.com/assimp/assimp/archive/refs/tags/v6.0.1.tar.gz |
+| BREW   | 6.0.1 | https://www.assimp.org/ |
+
 ## at-spi2-core
 
 **Description:** Protocol definitions and daemon for D-Bus at-spi
@@ -1330,15 +1339,6 @@
 
 *Outdated*
 
-## dash
-
-**Description:** A POSIX-compliant implementation of /bin/sh that aims to be as small as possible
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 0.5.12 ✅ | http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz |
-| BREW   | 0.5.12 | http://gondor.apana.org.au/~herbert/dash/ |
-
 ## dashing
 
 **Description:** Generate Dash documentation from HTML files
@@ -1839,7 +1839,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.0 ⚠️ | https://github.com/mvdan/fdroidcl/archive/refs/tags/v0.7.0.tar.gz |
-| BREW   | **0.8.0** | https://github.com/mvdan/fdroidcl |
+| BREW   | **0.8.0** | https://github.com/Hoverth/fdroidcl |
 
 *Outdated*
 
@@ -1976,10 +1976,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.15.0 ⚠️ | https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.xz |
-| BREW   | **2.16.0** | https://wiki.freedesktop.org/www/Software/fontconfig/ |
-
-*Outdated*
+| PPKG   | 2.16.0 ✅ | https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz |
+| BREW   | 2.16.0 | https://wiki.freedesktop.org/www/Software/fontconfig/ |
 
 ## fontforge
 
@@ -2343,10 +2341,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.8.0 ⚠️ | https://github.com/orhun/git-cliff/archive/refs/tags/v2.8.0.tar.gz |
-| BREW   | **2.9.1** | https://git-cliff.org/ |
-
-*Outdated*
+| PPKG   | 2.9.1 ✅ | https://github.com/orhun/git-cliff/archive/refs/tags/v2.9.1.tar.gz |
+| BREW   | 2.9.1 | https://git-cliff.org/ |
 
 ## git-lfs
 
@@ -2807,10 +2803,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.22.10 ⚠️ | https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.10/gstreamer-1.22.10.tar.gz |
-| BREW   | **1.26.2** | https://gstreamer.freedesktop.org/ |
-
-*Outdated*
+| PPKG   | 1.26.2 ✅ | https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.26.2/gstreamer-1.26.2.tar.bz2 |
+| BREW   | 1.26.2 | https://gstreamer.freedesktop.org/ |
 
 ## gtk+3
 
@@ -3042,7 +3036,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.147.8** | https://gohugo.io/ |
+| BREW   | **0.147.9** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -3813,6 +3807,15 @@
 | PPKG   | 0.6.13 ✅ | https://download.gnome.org/sources/libcroco/0.6/libcroco-0.6.13.tar.xz |
 | BREW   | 0.6.13 | https://gitlab.gnome.org/Archive/libcroco |
 
+## libcss
+
+**Description:** CSS parser and selection engine
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.9.2 ✅ | https://download.netsurf-browser.org/libs/releases/libcss-0.9.2-src.tar.gz |
+| BREW   | 0.9.2 | https://www.netsurf-browser.org/projects/libcss/ |
+
 ## libcuefile
 
 **Description:** Library to work with CUE files
@@ -3872,10 +3875,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.0.5 ⚠️ | https://github.com/ImagingDataCommons/libdicom/releases/download/v1.0.5/libdicom-1.0.5.tar.xz |
-| BREW   | **1.2.0** | https://github.com/ImagingDataCommons/libdicom |
-
-*Outdated*
+| PPKG   | 1.2.0 ✅ | https://github.com/ImagingDataCommons/libdicom/releases/download/v1.2.0/libdicom-1.2.0.tar.xz |
+| BREW   | 1.2.0 | https://github.com/ImagingDataCommons/libdicom |
 
 ## libdiscid
 
@@ -4345,6 +4346,15 @@
 | PPKG   | 0.6.4 ✅ | https://downloads.sourceforge.net/project/libmms/libmms/0.6.4/libmms-0.6.4.tar.gz |
 | BREW   | 0.6.4 | https://sourceforge.net/projects/libmms/ |
 
+## libmng
+
+**Description:** MNG/JNG reference library
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 2.0.3 ✅ | https://downloads.sourceforge.net/project/libmng/libmng-devel/2.0.3/libmng-2.0.3.tar.gz |
+| BREW   | 2.0.3 | https://sourceforge.net/projects/libmng/ |
+
 ## libmnl
 
 **Description:** Minimalistic Netlink Library based Linux kernel interfaces
@@ -4427,10 +4437,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.1.21 ⚠️ | https://nice.freedesktop.org/releases/libnice-0.1.21.tar.gz |
-| BREW   | **0.1.22** | https://wiki.freedesktop.org/nice/ |
-
-*Outdated*
+| PPKG   | 0.1.22 ✅ | https://nice.freedesktop.org/releases/libnice-0.1.22.tar.gz |
+| BREW   | 0.1.22 | https://wiki.freedesktop.org/nice/ |
 
 ## libnl
 
@@ -4492,6 +4500,15 @@
 
 *Outdated*
 
+## libparserutils
+
+**Description:** Library for building efficient parsers
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.2.5 ✅ | https://download.netsurf-browser.org/libs/releases/libparserutils-0.2.5-src.tar.gz |
+| BREW   | 0.2.5 | https://www.netsurf-browser.org/projects/libparserutils/ |
+
 ## libpcap
 
 **Description:** Packet(TCP/IP) Capture libray
@@ -4540,10 +4557,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 7.349.0 ⚠️ | https://code.videolan.org/videolan/libplacebo/-/archive/v7.349.0/libplacebo-v7.349.0.tar.bz2 |
-| BREW   | **7.351.0** | https://code.videolan.org/videolan/libplacebo |
-
-*Outdated*
+| PPKG   | 7.351.0 ✅ | https://code.videolan.org/videolan/libplacebo/-/archive/v7.351.0/libplacebo-v7.351.0.tar.bz2 |
+| BREW   | 7.351.0 | https://code.videolan.org/videolan/libplacebo |
 
 ## libplist
 
@@ -5216,6 +5231,15 @@
 
 *Outdated*
 
+## libwapcaplet
+
+**Description:** String internment library
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.4.3 ✅ | https://download.netsurf-browser.org/libs/releases/libwapcaplet-0.4.3-src.tar.gz |
+| BREW   | 0.4.3 | https://www.netsurf-browser.org/projects/libwapcaplet/ |
+
 ## libwebm
 
 **Description:** WebM container
@@ -5251,10 +5275,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.4.36 ⚠️ | https://github.com/besser82/libxcrypt/releases/download/v4.4.36/libxcrypt-4.4.36.tar.xz |
-| BREW   | **4.4.38** | https://github.com/besser82/libxcrypt |
-
-*Outdated*
+| PPKG   | 4.4.38 ✅ | https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz |
+| BREW   | 4.4.38 | https://github.com/besser82/libxcrypt |
 
 ## libxkbcommon
 
@@ -5262,10 +5284,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.5.0 ⚠️ | https://xkbcommon.org/download/libxkbcommon-1.5.0.tar.xz |
-| BREW   | **1.10.0** | https://xkbcommon.org/ |
-
-*Outdated*
+| PPKG   | 1.10.0 ✅ | https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.10.0.tar.gz |
+| BREW   | 1.10.0 | https://xkbcommon.org/ |
 
 ## libxml2
 
@@ -5819,10 +5839,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 6.12.0.206 ⚠️ | null |
-| BREW   | **6.14.1** | https://www.mono-project.com/ |
-
-*Outdated*
+| PPKG   | 6.14.1 ✅ | https://dl.winehq.org/mono/sources/mono/mono-6.14.1.tar.xz |
+| BREW   | 6.14.1 | https://www.mono-project.com/ |
 
 ## moreutils
 
@@ -5888,10 +5906,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.39.0 ⚠️ | https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz |
-| BREW   | **0.40.0** | https://mpv.io |
-
-*Outdated*
+| PPKG   | 0.40.0 ✅ | https://github.com/mpv-player/mpv/archive/refs/tags/v0.40.0.tar.gz |
+| BREW   | 0.40.0 | https://mpv.io |
 
 ## mujs
 
@@ -6559,10 +6575,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 5.40.1 ⚠️ | https://www.cpan.org/src/5.0/perl-5.40.1.tar.xz |
-| BREW   | **5.40.2** | https://www.perl.org/ |
-
-*Outdated*
+| PPKG   | 5.40.2 ✅ | https://www.cpan.org/src/5.0/perl-5.40.2.tar.xz |
+| BREW   | 5.40.2 | https://www.perl.org/ |
 
 ## pget
 
@@ -7172,10 +7186,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.3.5 ⚠️ | https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.5.tar.gz |
-| BREW   | **3.4.4** | https://www.ruby-lang.org/ |
-
-*Outdated*
+| PPKG   | 3.4.4 ✅ | https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.4.tar.gz |
+| BREW   | 3.4.4 | https://www.ruby-lang.org/ |
 
 ## ruff
 
@@ -7195,7 +7207,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-06-16** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-06-23** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 
@@ -7629,10 +7641,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.1.2 ⚠️ | https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.1.2/SVT-AV1-v2.1.2.tar.bz2 |
-| BREW   | **3.0.2** | https://gitlab.com/AOMediaCodec/SVT-AV1 |
-
-*Outdated*
+| PPKG   | 3.0.2 ✅ | https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.2/SVT-AV1-v3.0.2.tar.bz2 |
+| BREW   | 3.0.2 | https://gitlab.com/AOMediaCodec/SVT-AV1 |
 
 ## swig
 
@@ -7804,10 +7814,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 5.4.1 ⚠️ | https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.4.1.tar.gz |
-| BREW   | **5.5.1** | https://tesseract-ocr.github.io/ |
-
-*Outdated*
+| PPKG   | 5.5.1 ✅ | https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.5.1.tar.gz |
+| BREW   | 5.5.1 | https://tesseract-ocr.github.io/ |
 
 ## texinfo
 
@@ -8165,7 +8173,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | R70.11 ⚠️ | https://github.com/vapoursynth/vapoursynth/archive/refs/tags/R70.11.tar.gz |
+| PPKG   | R72 ⚠️ | https://github.com/vapoursynth/vapoursynth/archive/refs/tags/R72.tar.gz |
 | BREW   | **72** | https://www.vapoursynth.com |
 
 *Outdated*
@@ -8274,10 +8282,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.3.280 ⚠️ | https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.280.tar.gz |
-| BREW   | **1.4.319** | https://github.com/KhronosGroup/Vulkan-Headers |
-
-*Outdated*
+| PPKG   | 1.4.319 ✅ | https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.319.tar.gz |
+| BREW   | 1.4.319 | https://github.com/KhronosGroup/Vulkan-Headers |
 
 ## w3m
 

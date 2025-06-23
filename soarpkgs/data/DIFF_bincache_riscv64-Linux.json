@@ -457,7 +457,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.22"
+    "version": "2025.06.23"
   },
   {
     "_disabled": "false",
@@ -1928,7 +1928,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-a1137b5-250620T010519"
+    "version": "HEAD-23895e2-250623T030022"
   },
   {
     "_disabled": "false",
@@ -4265,7 +4265,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.22"
+    "version": "2025.06.23"
   },
   {
     "_disabled": "false",
@@ -6623,7 +6623,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.22"
+    "version": "2025.06.23"
   },
   {
     "_disabled": "false",
@@ -9638,6 +9638,94 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sudo",
+    "pkg_family": "sudo",
+    "pkg_id": "nixpkgs.sudo",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-sudo/sudo/sudo",
+    "bincache": "ghcr.io/pkgforge/bincache/sudo/nixpkgs/cvtsudoers",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sudo/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for privilege escalation, secure command execution, and sudo policy management",
+      "cvtsudoers": "Convert between sudoers file formats [sudo]",
+      "sudo": "Execute a command as another user [sudo]",
+      "sudo.conf": "Configuration for sudo front-end [sudo]",
+      "sudo_logsrvd": "sudo event and I/O log server [sudo]",
+      "sudo_logsrvd.conf": "Configuration for sudo_logsrvd [sudo]",
+      "sudo_sendlog": "Send sudo I/O log to log server [sudo]",
+      "sudoedit": "An extension of the sudo -e command to edit a file [sudo]",
+      "sudoers": "Default sudo security policy plugin [sudo]",
+      "sudoers.dist": "Default configuration file for sudoers [sudo]",
+      "sudoreplay": "Replay sudo session logs [sudo]",
+      "visudo": "Edit the sudoers file [sudo]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "sudo"
+      ],
+      "archlinux": {
+        "aur": [
+          "sudo-git"
+        ]
+      },
+      "debian": [
+        "sudo"
+      ],
+      "nixpkgs": [
+        "sudo"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sudo/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.sudo.ws/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "sudo must be owned by uid 0 and have the setuid bit set (RUN: sudo chown 'root:root' sudo ; sudo chmod 'a=rx,u+ws' sudo)"
+    ],
+    "provides": [
+      "cvtsudoers",
+      "sudo",
+      "sudo.conf",
+      "sudo_logsrvd",
+      "sudo_logsrvd.conf",
+      "sudo_sendlog",
+      "sudoedit",
+      "sudoers",
+      "sudoers.dist",
+      "sudoreplay",
+      "visudo"
+    ],
+    "repology": [
+      "sudo"
+    ],
+    "src_url": [
+      "https://github.com/sudo-project/sudo"
+    ],
+    "tag": [
+      "security",
+      "sudo"
+    ],
+    "version": "1.9.17"
+  },
+  {
+    "_disabled": "false",
     "pkg": "tailscale",
     "pkg_family": "tailscale",
     "pkg_id": "github.com.tailscale.tailscale",
@@ -9715,7 +9803,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-0905936-250621T211442"
+    "version": "HEAD-b3e7436-250622T220501"
   },
   {
     "_disabled": "false",
@@ -10292,6 +10380,78 @@
       "usb"
     ],
     "version": "018"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "v2ray-core",
+    "pkg_family": "v2ray-core",
+    "pkg_id": "github.com.v2fly.v2ray-core.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/core-stable/v2ray-core/v2ray-core",
+    "bincache": "ghcr.io/pkgforge/bincache/v2ray-core/official/geoip.dat",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/v2ray-core/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A proxy server for bypassing network restrictions",
+    "distro_pkg": {
+      "alpine": [
+        "v2ray"
+      ],
+      "archlinux": {
+        "aur": [
+          "v2ray-git"
+        ],
+        "extra": [
+          "v2ray"
+        ]
+      },
+      "debian": [
+        "golang-v2ray-core"
+      ],
+      "homebrew": [
+        "v2ray"
+      ],
+      "nixpkgs": [
+        "v2ray"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/v2ray-core/static.official.stable.yaml",
+    "homepage": [
+      "https://v2fly.org",
+      "https://github.com/v2fly/v2ray-core"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/v2fly/v2ray-core"
+    ],
+    "provides": [
+      "v2ray==v2ray-core",
+      "geoip.dat=>xray-geoip.dat",
+      "geosite.dat=>xray-geosite.dat"
+    ],
+    "repology": [
+      "v2ray-core"
+    ],
+    "src_url": [
+      "https://github.com/v2fly/v2ray-core"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v5.33.0"
   },
   {
     "_disabled": "false",

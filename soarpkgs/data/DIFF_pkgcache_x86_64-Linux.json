@@ -427,7 +427,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250622T025632"
+    "version": "250623T025718"
   },
   {
     "_disabled": "false",
@@ -1345,7 +1345,7 @@
     "tag": [
       "browser"
     ],
-    "version": "137.0.7151.103"
+    "version": "137.0.7151.119"
   },
   {
     "_disabled": "false",
@@ -1468,7 +1468,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-0036c91-250620T070613"
+    "version": "HEAD-ec004f2-250623T081009"
   },
   {
     "_disabled": "false",
@@ -3051,7 +3051,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "141.0.20250622091724"
+    "version": "141.0.20250622215648"
   },
   {
     "_disabled": "false",
@@ -3569,7 +3569,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250622T005459"
+    "version": "250623T005250"
   },
   {
     "_disabled": "false",
@@ -3631,7 +3631,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250622T005459"
+    "version": "250623T005250"
   },
   {
     "_disabled": "false",
@@ -4620,7 +4620,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-06-21"
+    "version": "2025-06-22"
   },
   {
     "_disabled": "true",
@@ -5706,6 +5706,55 @@
   },
   {
     "_disabled": "false",
+    "pkg": "oils",
+    "pkg_family": "oils",
+    "pkg_id": "sharun.wrappe.alpine.oils",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-oils/oils/oils",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oils/archive.sharun.alpine.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Unix shell with JSON-compatible structured data",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/oils/archive.sharun.alpine.yaml",
+    "homepage": [
+      "https://github.com/oils-for-unix/oils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [alpine]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/oils/archive/sharun",
+    "provides": [
+      "osh",
+      "ysh"
+    ],
+    "repology": [
+      "oils"
+    ],
+    "src_url": [
+      "https://github.com/oils-for-unix/oils"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "0.31.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ppsspp",
     "pkg_family": "ppsspp",
     "pkg_id": "github.com.pkgforge-dev.PPSSPP-AppImage.stable",
@@ -5916,6 +5965,83 @@
     "tag": [
       "editor"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "qbittorrent",
+    "pkg_family": "qbittorrent",
+    "pkg_id": "gitlab.com.qbittorrent.qbittorrent.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/qbittorrent-stable/qbittorrent/qbittorrent",
+    "app_id": "org.qbittorrent.qBittorrent",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/qbittorrent/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A P2P (peer-to-peer) Bittorrent client",
+    "distro_pkg": {
+      "alpine": [
+        "qbittorrent"
+      ],
+      "archlinux": {
+        "aur": [
+          "qbittorrent-git",
+          "qbittorrent-qt5"
+        ],
+        "extra": [
+          "qbittorrent"
+        ]
+      },
+      "debian": [
+        "qbittorrent"
+      ],
+      "gnuguix": [
+        "qbittorrent"
+      ],
+      "homebrew": [
+        "qbittorrent"
+      ],
+      "nixpkgs": [
+        "qbittorrent",
+        "qbittorrent-nox",
+        "qbittorrent-qt5"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/appimage.official.stable.yaml",
+    "homepage": [
+      "https://www.qbittorrent.org",
+      "https://github.com/qbittorrent/qBittorrent",
+      "https://sourceforge.net/projects/qbittorrent"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/qbittorrent/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://www.qbittorrent.org/download"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/qbittorrent/appimage/official",
+    "provides": [
+      "qbittorrent"
+    ],
+    "repology": [
+      "qbittorrent"
+    ],
+    "src_url": [
+      "https://www.qbittorrent.org/download",
+      "https://www.fosshub.com/qBittorrent.html",
+      "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-appimage"
+    ],
+    "tag": [
+      "torrent"
+    ],
+    "version": "5.1.1"
   },
   {
     "_disabled": "false",
@@ -7923,7 +8049,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.14t_2025-06-21"
+    "version": "1.14t_2025-06-22"
   },
   {
     "_disabled": "false",

@@ -56,20 +56,20 @@ pushd "${TMPDIR}" &>/dev/null
           cp -fv "${SYSTMP}/merged-${HOST_TRIPLET}.json" "${O_D}/${HOST_TRIPLET}.json"
        fi
       #Fix ID
-       #sed -E \
-       # '
-       #  /^[[:space:]]*"pkg_id"[[:space:]]*:[[:space:]]*"[^"]*#[^"]*"/ {
-       #  s/("pkg_id"[[:space:]]*:[[:space:]]*"[[:space:]]*)[^#]*#/\1/
-       # }' -i "${O_D}/${HOST_TRIPLET}.json"
+       sed -E \
+        '
+         /^[[:space:]]*"pkg_id"[[:space:]]*:[[:space:]]*"[^"]*#[^"]*"/ {
+         s/("pkg_id"[[:space:]]*:[[:space:]]*"[[:space:]]*)[^#]*#/\1/
+        }' "${O_D}/${HOST_TRIPLET}.json" > "${SYSTMP}/${HOST_TRIPLET}.json.in"
        #Checksum
        generate_checksum()
        {
          b3sum "$1" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "$1.bsum"
        }
-       generate_checksum "${HOST_TRIPLET}.json"
+       generate_checksum "${SYSTMP}/${HOST_TRIPLET}.json.in"
       #To Sqlite
        if command -v "qsv" &>/dev/null; then
-         jq -c '.[]' "${HOST_TRIPLET}.json" > "${TMPDIR}/${HOST_TRIPLET}.jsonl"
+         jq -c '.[]' "${SYSTMP}/${HOST_TRIPLET}.json.in" > "${TMPDIR}/${HOST_TRIPLET}.jsonl"
          qsv jsonl "${TMPDIR}/${HOST_TRIPLET}.jsonl" > "${TMPDIR}/${HOST_TRIPLET}.csv"
          qsv to sqlite "${TMPDIR}/${HOST_TRIPLET}.db" "${TMPDIR}/${HOST_TRIPLET}.csv"
          if [[ -s "${TMPDIR}/${HOST_TRIPLET}.db" && $(stat -c%s "${TMPDIR}/${HOST_TRIPLET}.db") -gt 1024 ]]; then
@@ -78,9 +78,9 @@ pushd "${TMPDIR}" &>/dev/null
          fi
        fi
       #To xz
-       xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.json" ; generate_checksum "${HOST_TRIPLET}.json.xz"
+       xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${SYSTMP}/${HOST_TRIPLET}.json.in" ; generate_checksum "${HOST_TRIPLET}.json.xz"
       #To Zstd
-       zstd --ultra -22 --force "${HOST_TRIPLET}.json" -o "${HOST_TRIPLET}.json.zstd" ; generate_checksum "${HOST_TRIPLET}.json.zstd"
+       zstd --ultra -22 --force "${SYSTMP}/${HOST_TRIPLET}.json.in" -o "${HOST_TRIPLET}.json.zstd" ; generate_checksum "${HOST_TRIPLET}.json.zstd"
      fi
  done
 popd &>/dev/null

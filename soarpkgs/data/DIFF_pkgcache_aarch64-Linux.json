@@ -2508,7 +2508,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-07b7654-250624T103706"
+    "version": "HEAD-3734b64-250624T101832"
   },
   {
     "_disabled": "false",
@@ -3321,7 +3321,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "0.4.3"
+    "version": "0.4.4"
   },
   {
     "_disabled": "false",
@@ -3700,7 +3700,7 @@
     "tag": [
       "Remote"
     ],
-    "version": "15.66.5"
+    "version": "15.67.3"
   },
   {
     "_disabled": "false",
@@ -3896,7 +3896,77 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.76.0"
+    "version": "1.77.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "twingate",
+    "pkg_family": "twingate",
+    "pkg_id": "sharun.wrappe.twingate.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/twingate-stable/twingate/twingate",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Zero trust remote access client for resource and networks",
+      "twingate": "Zero trust remote access client for resource and networks [twingate]",
+      "twingated": "Daemon for Twingate [twingate]",
+      "twingate-notifier": "Monitor & Notify for Twingate Client [twingate]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "twingate",
+          "twingate-bin"
+        ]
+      },
+      "homebrew": [
+        "twingate"
+      ],
+      "nixpkgs": [
+        "twingate"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/twingate/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://www.twingate.com/docs",
+      "https://www.twingate.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/twingate/archive/sharun",
+    "provides": [
+      "twingate",
+      "twingated",
+      "twingate-notifier"
+    ],
+    "repology": [
+      "twingate"
+    ],
+    "src_url": [
+      "https://packages.twingate.com/deb:twingate"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2025.175.154516"
   },
   {
     "_disabled": "false",
@@ -4101,7 +4171,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "4.21.0"
+    "version": "4.21.1"
   },
   {
     "_disabled": "false",
@@ -4150,6 +4220,82 @@
       "Utility"
     ],
     "version": "250619T115519"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xonsh",
+    "pkg_family": "xonsh",
+    "pkg_id": "sharun.wrappe.pypi.xonsh",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-xonsh/xonsh/xonsh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xonsh/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Python-ish, BASHwards-compatible shell",
+    "distro_pkg": {
+      "alpine": [
+        "xonsh"
+      ],
+      "archlinux": {
+        "aur": [
+          "xonsh-git"
+        ],
+        "extra": [
+          "xonsh"
+        ]
+      },
+      "debian": [
+        "xonsh"
+      ],
+      "gnuguix": [
+        "xonsh"
+      ],
+      "homebrew": [
+        "xonsh"
+      ],
+      "nixpkgs": [
+        "xonsh",
+        "xonsh-unwrapped"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xonsh/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://xon.sh",
+      "https://github.com/xonsh/xonsh"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/xonsh/assets/default.png",
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xonsh/archive/sharun",
+    "provides": [
+      "xonsh"
+    ],
+    "repology": [
+      "xonsh"
+    ],
+    "src_url": [
+      "https://pypi.org/project/xonsh"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "0.19.8"
   },
   {
     "_disabled": "false",

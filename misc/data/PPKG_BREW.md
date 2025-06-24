@@ -1144,7 +1144,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.18.3 ⚠️ | https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.18.3.tar.gz |
-| BREW   | **0.21.0** | https://github.com/yhirose/cpp-httplib |
+| BREW   | **0.22.0** | https://github.com/yhirose/cpp-httplib |
 
 *Outdated*
 
@@ -4536,7 +4536,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.13.37 ⚠️ | https://github.com/google/libphonenumber/archive/refs/tags/v8.13.37.tar.gz |
-| BREW   | **9.0.7** | https://github.com/google/libphonenumber |
+| BREW   | **9.0.8** | https://github.com/google/libphonenumber |
 
 *Outdated*
 
@@ -6102,6 +6102,15 @@
 | PPKG   | 44.2 ✅ | https://downloads.sourceforge.net/project/ngspice/ng-spice-rework/44.2/ngspice-44.2.tar.gz |
 | BREW   | 44.2 | https://ngspice.sourceforge.io/ |
 
+## nim
+
+**Description:** Statically typed compiled systems programming language
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 2.2.4 ✅ | https://nim-lang.org/download/nim-2.2.4.tar.xz |
+| BREW   | 2.2.4 | https://nim-lang.org/ |
+
 ## ninja
 
 **Description:** A small build system with a focus on speed
@@ -6927,6 +6936,15 @@
 |--------|---------|-------------|
 | PPKG   | 4.1.1 ✅ | https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz |
 | BREW   | 4.1.1 | https://fukuchi.org/works/qrencode/index.html.en |
+
+## qt
+
+**Description:** Cross-platform application and UI framework
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 6.9.0 ✅ | https://download.qt.io/official_releases/qt/6.9/6.9.0/single/qt-everywhere-src-6.9.0.tar.xz |
+| BREW   | 6.9.0 | https://www.qt.io/ |
 
 ## quickjs
 

@@ -979,7 +979,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250623T025718"
+    "version": "250624T024937"
   },
   {
     "_disabled": "false",
@@ -2290,7 +2290,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.82.10"
+    "version": "v1.82.14"
   },
   {
     "_disabled": "false",
@@ -3359,7 +3359,7 @@
       "Communications",
       "Networking/Chat"
     ],
-    "version": "0.0.702"
+    "version": "0.0.703"
   },
   {
     "_disabled": "false",
@@ -3421,7 +3421,7 @@
       "Communications",
       "Networking/Chat"
     ],
-    "version": "0.0.148"
+    "version": "0.0.149"
   },
   {
     "_disabled": "false",
@@ -3994,6 +3994,86 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "sharun.wrappe.stable.fastfetch",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stable-fastfetch/fastfetch/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fastfetch/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fastfetch/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This version was repacked from official Deb & contains the most features"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fastfetch/archive/sharun",
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "2.46.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "fdm",
     "pkg_family": "fdm",
     "pkg_id": "runimage.cachyos.fdm",
@@ -4096,6 +4176,67 @@
       "[PORTABLE] (Works on AnyLinux)"
     ],
     "pkgcache": "ghcr.io/pkgforge/pkgcache/fdm/runimage/debian",
+    "provides": [
+      "fdm==freedownloadmanager",
+      "fdm==free-download-manager"
+    ],
+    "repology": [
+      "freedownloadmanager"
+    ],
+    "src_url": [
+      "https://www.freedownloadmanager.org/download-fdm-for-linux.htm"
+    ],
+    "tag": [
+      "downloader",
+      "download-manager"
+    ],
+    "version": "6.28.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fdm",
+    "pkg_family": "fdm",
+    "pkg_id": "wrappe.fdm",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-fdm/fdm/fdm",
+    "app_id": "org.freedownloadmanager.Manager",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fdm/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A powerful modern download accelerator and organizer",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "freedownloadmanager"
+        ]
+      },
+      "homebrew": [
+        "free-download-manager"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fdm/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://www.freedownloadmanager.org"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/fdm/assets/default.png",
+    "license": [
+      "freeware"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/fdm/Launcher",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fdm/archive/wrappe",
     "provides": [
       "fdm==freedownloadmanager",
       "fdm==free-download-manager"
@@ -5567,7 +5708,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250623T005250"
+    "version": "250624T005025"
   },
   {
     "_disabled": "false",
@@ -5629,7 +5770,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250623T005250"
+    "version": "250624T005025"
   },
   {
     "_disabled": "false",
@@ -10895,6 +11036,52 @@
   },
   {
     "_disabled": "false",
+    "pkg": "pyarmor",
+    "pkg_family": "pyarmor",
+    "pkg_id": "sharun.wrappe.pypi.pyarmor",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-pyarmor/pyarmor/pyarmor",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/pyarmor/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Obfuscate, Bind & expire Python Scripts",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/pyarmor/archive.sharun.pypi.yaml",
+    "homepage": [
+      "http://pyarmor.dashingsoft.com",
+      "https://github.com/dashingsoft/pyarmor"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/pyarmor/archive/sharun",
+    "provides": [
+      "pyarmor"
+    ],
+    "src_url": [
+      "https://pypi.org/project/pyarmor"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "9.1.7"
+  },
+  {
+    "_disabled": "false",
     "pkg": "pyp",
     "pkg_family": "pyp",
     "pkg_id": "sharun.wrappe.pypi.pyp",
@@ -14671,6 +14858,54 @@
   },
   {
     "_disabled": "false",
+    "pkg": "xnlinkfinder",
+    "pkg_family": "xnlinkfinder",
+    "pkg_id": "sharun.wrappe.source.xnLinkFinder",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-xnlinkfinder/xnlinkfinder/xnlinkfinder",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xnlinkfinder/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Tool to discover endpoints, potential parameters & more for a given Target",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xnlinkfinder/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/xnl-h4ck3r/xnLinkFinder"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xnlinkfinder/archive/sharun",
+    "provides": [
+      "xnlinkfinder==xnLinkFinder"
+    ],
+    "repology": [
+      "xnlinkfinder"
+    ],
+    "src_url": [
+      "https://github.com/xnl-h4ck3r/xnLinkFinder"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-92c1a4a-250520T195452"
+  },
+  {
+    "_disabled": "false",
     "pkg": "xonsh",
     "pkg_family": "xonsh",
     "pkg_id": "sharun.wrappe.pypi.xonsh",
@@ -14957,6 +15192,79 @@
       "Utility"
     ],
     "version": "1.37.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.pypi.yt-dlp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
+    "provides": [
+      "yt-dlp"
+    ],
+    "repology": [
+      "yt-dlp"
+    ],
+    "src_url": [
+      "https://pypi.org/project/yt-dlp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2025.6.9"
   },
   {
     "_disabled": "false",

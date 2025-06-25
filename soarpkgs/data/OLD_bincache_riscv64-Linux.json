@@ -283,7 +283,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.24"
+    "version": "2025.06.25"
   },
   {
     "_disabled": "false",
@@ -370,76 +370,6 @@
       "payment"
     ],
     "version": "26.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "bmake",
-    "pkg_family": "bmake",
-    "pkg_id": "ppkg.bmake",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-bmake/bmake/bmake",
-    "bincache": "ghcr.io/pkgforge/bincache/bmake/ppkg/bmake",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bmake/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Portable version of NetBSD make utility",
-    "distro_pkg": {
-      "alpine": [
-        "bmake"
-      ],
-      "archlinux": {
-        "extra": [
-          "bmake"
-        ]
-      },
-      "debian": [
-        "bmake"
-      ],
-      "gnuguix": [
-        "bmake"
-      ],
-      "homebrew": [
-        "bmake"
-      ],
-      "nixpkgs": [
-        "bmake"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bmake/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://www.crufty.net/help/sjg/bmake.htm",
-      "https://github.com/NetBSD/src/tree/trunk/usr.bin/make"
-    ],
-    "host": [
-      "aarch64-linux",
-      "riscv64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "bmake"
-    ],
-    "repology": [
-      "bmake"
-    ],
-    "src_url": [
-      "https://www.crufty.net/ftp/pub/sjg/"
-    ],
-    "tag": [
-      "utility"
-    ],
-    "version": "20250308"
   },
   {
     "_disabled": "false",
@@ -533,80 +463,6 @@
     "_disabled": "false",
     "pkg": "bubblewrap",
     "pkg_family": "bubblewrap",
-    "pkg_id": "github.com.containers.bubblewrap",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containers-bubblewrap/bubblewrap/bubblewrap",
-    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/official/bwrap",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Namespaces-powered chroot-like solution for Unprivileged Sandboxing",
-    "distro_pkg": {
-      "alpine": [
-        "bubblewrap"
-      ],
-      "archlinux": {
-        "aur": [
-          "bubblewrap-git"
-        ],
-        "extra": [
-          "bubblewrap"
-        ]
-      },
-      "debian": [
-        "bubblewrap"
-      ],
-      "gnuguix": [
-        "bubblewrap"
-      ],
-      "homebrew": [
-        "bubblewrap"
-      ],
-      "nixpkgs": [
-        "bubblewrap"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bubblewrap/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/containers/bubblewrap"
-    ],
-    "host": [
-      "aarch64-linux",
-      "riscv64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "LGPL-2.0-or-later"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containers/bubblewrap"
-    ],
-    "provides": [
-      "bwrap==bubblewrap"
-    ],
-    "repology": [
-      "bubblewrap"
-    ],
-    "src_url": [
-      "https://github.com/containers/bubblewrap"
-    ],
-    "tag": [
-      "container",
-      "namespace",
-      "sandbox"
-    ],
-    "version": "HEAD-9ca3b05-241030T160747"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "bubblewrap",
-    "pkg_family": "bubblewrap",
     "pkg_id": "github.com.containers.bubblewrap.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bubblewrap-glibc/bubblewrap/bubblewrap",
@@ -664,83 +520,6 @@
     ],
     "provides": [
       "bwrap==bubblewrap"
-    ],
-    "repology": [
-      "bubblewrap"
-    ],
-    "src_url": [
-      "https://github.com/containers/bubblewrap"
-    ],
-    "tag": [
-      "container",
-      "namespace",
-      "sandbox"
-    ],
-    "version": "HEAD-9ca3b05-241030T160747"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "bubblewrap",
-    "pkg_family": "bubblewrap",
-    "pkg_id": "github.com.containers.bubblewrap.patched",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bubblewrap-patched/bubblewrap/bubblewrap",
-    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/patched/bwrap",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.patched.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Namespaces-powered chroot-like solution for Unprivileged Sandboxing (Patched)",
-    "distro_pkg": {
-      "alpine": [
-        "bubblewrap"
-      ],
-      "archlinux": {
-        "aur": [
-          "bubblewrap-git"
-        ],
-        "extra": [
-          "bubblewrap"
-        ]
-      },
-      "debian": [
-        "bubblewrap"
-      ],
-      "gnuguix": [
-        "bubblewrap"
-      ],
-      "homebrew": [
-        "bubblewrap"
-      ],
-      "nixpkgs": [
-        "bubblewrap"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bubblewrap/static.patched.source.yaml",
-    "homepage": [
-      "https://github.com/containers/bubblewrap"
-    ],
-    "host": [
-      "aarch64-linux",
-      "riscv64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "LGPL-2.0-or-later"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containers/bubblewrap",
-      "The bwrap-patched binary is patched to allow nested bubblewraps with capabilities (INSECURE)",
-      "Learn more @ https://github.com/VHSgunzo/bubblewrap-static/blob/main/caps.patch"
-    ],
-    "provides": [
-      "bwrap=>bwrap-patched",
-      "bwrap=>bubblewrap-patched"
     ],
     "repology": [
       "bubblewrap"
@@ -832,90 +611,6 @@
       "sandbox"
     ],
     "version": "HEAD-9ca3b05-241030T160747"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "bzip3",
-    "pkg_family": "bzip3",
-    "pkg_id": "ppkg.bzip3",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-bzip3/bzip3/bzip3",
-    "bincache": "ghcr.io/pkgforge/bincache/bzip3/ppkg/bzip3",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bzip3/static.ppkg.stable.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": {
-      "_default": "Tools for compressing and decompressing bzip3 files",
-      "bunzip3": "Decompress data from standard input to the standard output [bzip3]",
-      "bz3cat": "Decompress data from standard input & concatenate [bzip3]",
-      "bz3grep": "Print lines matching a pattern in bzip3-compressed files [bzip3]",
-      "bz3less": "View bzip3-compressed files using less pager [bzip3]",
-      "bz3more": "View bzip3-compressed files using more pager [bzip3]",
-      "bz3most": "Browse/Page through bzip3-compressed files [bzip3]",
-      "bzip3": "Efficient statistical file compressor and spiritual successor to bzip2 [bzip3]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "bzip3"
-      ],
-      "archlinux": {
-        "aur": [
-          "bzip3-git"
-        ],
-        "extra": [
-          "bzip3"
-        ]
-      },
-      "debian": [
-        "bzip3"
-      ],
-      "homebrew": [
-        "bzip3"
-      ],
-      "nixpkgs": [
-        "bzip3"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bzip3/static.ppkg.stable.yaml",
-    "homepage": [
-      "https://github.com/kspalaiologos/bzip3"
-    ],
-    "host": [
-      "aarch64-linux",
-      "riscv64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
-    ],
-    "provides": [
-      "bunzip3",
-      "bz3cat",
-      "bz3grep",
-      "bz3less",
-      "bz3more",
-      "bz3most",
-      "bzip3"
-    ],
-    "repology": [
-      "bzip3"
-    ],
-    "src_url": [
-      "https://github.com/kspalaiologos/bzip3"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "1.5.1"
   },
   {
     "_disabled": "false",
@@ -1700,6 +1395,83 @@
     ],
     "src_url": [
       "https://www.freedesktop.org/wiki/Software/desktop-file-utils"
+    ],
+    "tag": [
+      "appstream",
+      "desktop"
+    ],
+    "version": "0.28"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "desktop-file-utils",
+    "pkg_family": "desktop-file-utils",
+    "pkg_id": "ppkg.desktop-file-utils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/file-utils/desktop-file-utils/desktop-file-utils",
+    "bincache": "ghcr.io/pkgforge/bincache/desktop-file-utils/ppkg/desktop-file-edit",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/desktop-file-utils/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities for working with Desktop Entry files",
+      "desktop-file-edit": "Modify an existing desktop file entry [desktop-file-utils]",
+      "desktop-file-install": "Install a new desktop file entry or rebuild/modify the MIME-types DB [desktop-file-utils]",
+      "desktop-file-validate": "Validate & Verify the integrity of a desktop file [desktop-file-utils]",
+      "update-desktop-database": "Update the MIME-types application database [desktop-file-utils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "desktop-file-utils"
+      ],
+      "archlinux": {
+        "aur": [
+          "desktop-file-utils-git"
+        ],
+        "extra": [
+          "desktop-file-utils"
+        ]
+      },
+      "debian": [
+        "desktop-file-utils"
+      ],
+      "nixpkgs": [
+        "desktop-file-utils"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/desktop-file-utils/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.freedesktop.org/wiki/Software/desktop-file-utils",
+      "https://gitlab.freedesktop.org/xdg/desktop-file-utils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "desktop-file-edit",
+      "desktop-file-install",
+      "desktop-file-validate",
+      "update-desktop-database"
+    ],
+    "repology": [
+      "desktop-file-utils"
+    ],
+    "src_url": [
+      "https://gitlab.freedesktop.org/xdg/desktop-file-utils"
     ],
     "tag": [
       "appstream",
@@ -2620,7 +2392,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-e68f766-250623T221050"
+    "version": "HEAD-863c558-250625T134549"
   },
   {
     "_disabled": "false",
@@ -3028,7 +2800,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b31f38c-250624T125443"
+    "version": "HEAD-2fc1e54-250624T172918"
   },
   {
     "_disabled": "false",
@@ -3098,7 +2870,7 @@
     "tag": [
       "gitlab"
     ],
-    "version": "HEAD-9bbdaea-250624T114212"
+    "version": "HEAD-ef3ade5-250625T083143"
   },
   {
     "_disabled": "false",
@@ -3784,7 +3556,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.24"
+    "version": "2025.06.25"
   },
   {
     "_disabled": "false",
@@ -5039,75 +4811,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "micro",
-    "pkg_family": "micro",
-    "pkg_id": "github.com.zyedidia.micro",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zyedidia-micro/micro/micro",
-    "bincache": "ghcr.io/pkgforge/bincache/micro/official/micro",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/micro/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Modern and intuitive terminal-based text editor",
-    "distro_pkg": {
-      "alpine": [
-        "micro"
-      ],
-      "archlinux": {
-        "aur": [
-          "micro-git"
-        ],
-        "extra": [
-          "micro"
-        ]
-      },
-      "debian": [
-        "micro"
-      ],
-      "homebrew": [
-        "micro"
-      ],
-      "nixpkgs": [
-        "micro"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/micro/static.official.source.yaml",
-    "homepage": [
-      "https://github.com/zyedidia/micro"
-    ],
-    "host": [
-      "aarch64-linux",
-      "riscv64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/zyedidia/micro"
-    ],
-    "provides": [
-      "micro"
-    ],
-    "repology": [
-      "micro"
-    ],
-    "src_url": [
-      "https://github.com/zyedidia/micro"
-    ],
-    "tag": [
-      "text-editor"
-    ],
-    "version": "HEAD-97b5e35-250620T210025"
-  },
-  {
-    "_disabled": "false",
     "pkg": "mkpasswd",
     "pkg_family": "mkpasswd",
     "pkg_id": "nixpkgs.mkpasswd",
@@ -6142,7 +5845,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.06.24"
+    "version": "2025.06.25"
   },
   {
     "_disabled": "false",
@@ -9172,7 +8875,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-4a1fc37-250623T193002"
+    "version": "HEAD-83cd446-250624T204911"
   },
   {
     "_disabled": "false",

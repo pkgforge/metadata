@@ -257,8 +257,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 6.0.1 ✅ | https://github.com/assimp/assimp/archive/refs/tags/v6.0.1.tar.gz |
-| BREW   | 6.0.1 | https://www.assimp.org/ |
+| PPKG   | 6.0.1 ⚠️ | https://github.com/assimp/assimp/archive/refs/tags/v6.0.1.tar.gz |
+| BREW   | **6.0.2** | https://www.assimp.org/ |
+
+*Outdated*
 
 ## at-spi2-core
 
@@ -1191,7 +1193,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.2.7 ⚠️ | https://github.com/klauspost/cpuid/archive/refs/tags/v2.2.7.tar.gz |
-| BREW   | **2.2.10** | https://github.com/klauspost/cpuid |
+| BREW   | **2.2.11** | https://github.com/klauspost/cpuid |
 
 *Outdated*
 
@@ -1225,6 +1227,15 @@
 | BREW   | **1.21** | https://github.com/containers/crun |
 
 *Outdated*
+
+## crystal
+
+**Description:** Fast and statically typed, compiled language with Ruby-like syntax
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 1.16.3 ✅ | https://github.com/crystal-lang/crystal/archive/refs/tags/1.16.3.tar.gz |
+| BREW   | 1.16.3 | https://crystal-lang.org/ |
 
 ## ctop
 
@@ -1484,7 +1495,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.56.0** | https://github.com/dolthub/dolt |
+| BREW   | **1.55.2** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -7693,7 +7704,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 256.7 ⚠️ | https://github.com/systemd/systemd/archive/refs/tags/v256.7.tar.gz |
-| BREW   | **257.5** | https://systemd.io |
+| BREW   | **257.6** | https://systemd.io |
 
 *Outdated*
 
@@ -7815,7 +7826,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.81.10** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.82.0** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8080,8 +8091,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.40.4 ✅ | https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.4.tar.xz |
-| BREW   | 2.40.4 | https://github.com/util-linux/util-linux |
+| PPKG   | 2.40.4 ⚠️ | https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.4.tar.xz |
+| BREW   | **2.41.1** | https://github.com/util-linux/util-linux |
+
+*Outdated*
 
 ## uutils-coreutils
 
@@ -8101,7 +8114,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.7.14** | https://docs.astral.sh/uv/ |
+| BREW   | **0.7.15** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

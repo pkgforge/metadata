@@ -395,7 +395,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.24 ⚠️ | null |
+| PPKG   | 2025.06.25 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -459,15 +459,6 @@
 |--------|---------|-------------|
 | PPKG   | 1.1 ✅ | https://bcrypt.sourceforge.io/bcrypt-1.1.tar.gz |
 | BREW   | 1.1 | https://bcrypt.sourceforge.net/ |
-
-## bdw-gc
-
-**Description:** Garbage collector for C and C++
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 8.2.8 ✅ | https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz |
-| BREW   | 8.2.8 | https://www.hboehm.info/gc/ |
 
 ## bear
 
@@ -1251,7 +1242,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.8.1 ⚠️ | https://github.com/cue-lang/cue/archive/refs/tags/v0.8.1.tar.gz |
-| BREW   | **0.13.1** | https://cuelang.org/ |
+| BREW   | **0.13.2** | https://cuelang.org/ |
 
 *Outdated*
 
@@ -2722,7 +2713,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.3.43 ⚠️ | https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.43/GraphicsMagick-1.3.43.tar.xz |
-| BREW   | **1.3.45** | http://www.graphicsmagick.org/ |
+| BREW   | **1.3.45** | https://graphicsmagick.sourceforge.io/ |
 
 *Outdated*
 
@@ -3622,7 +3613,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 7.8.2 ✅ | https://github.com/ivmai/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz |
+| PPKG   | 7.8.2 ✅ | https://github.com/bdwgc/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz |
 | BREW   | 7.8.2 | https://github.com/bdwgc/libatomic_ops/ |
 
 ## libavif
@@ -4417,7 +4408,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.24 ⚠️ | null |
+| PPKG   | 2025.06.25 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4927,7 +4918,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.6 ⚠️ | https://www.libssh.org/files/0.10/libssh-0.10.6.tar.xz |
-| BREW   | **0.11.1** | https://www.libssh.org/ |
+| BREW   | **0.11.2** | https://www.libssh.org/ |
 
 *Outdated*
 
@@ -6089,7 +6080,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.4 ⚠️ | https://nginx.org/download/nginx-1.25.4.tar.gz |
-| BREW   | **1.27.5** | https://nginx.org/ |
+| BREW   | **1.29.0** | https://nginx.org/ |
 
 *Outdated*
 
@@ -6475,7 +6466,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.24 ⚠️ | null |
+| PPKG   | 2025.06.25 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6633,7 +6624,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.24 ⚠️ | null |
+| PPKG   | 2025.06.25 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6795,7 +6786,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.24 ⚠️ | null |
+| PPKG   | 2025.06.25 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7152,7 +7143,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/apollographql/rover/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.34.0** | https://www.apollographql.com/docs/rover/ |
+| BREW   | **0.34.1** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
 
@@ -7482,8 +7473,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 128.11.0 ✅ | https://archive.mozilla.org/pub/firefox/releases/128.11.0esr/source/firefox-128.11.0esr.source.tar.xz |
-| BREW   | 128.11.0 | https://spidermonkey.dev |
+| PPKG   | 128.11.0 ⚠️ | https://archive.mozilla.org/pub/firefox/releases/128.11.0esr/source/firefox-128.11.0esr.source.tar.xz |
+| BREW   | **128.12.0** | https://spidermonkey.dev |
+
+*Outdated*
 
 ## spirv-headers
 
@@ -7731,7 +7724,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25 ⚠️ | https://download.savannah.gnu.org/releases/lzip/tarlz/tarlz-0.25.tar.lz |
-| BREW   | **0.28** | https://www.nongnu.org/lzip/tarlz.html |
+| BREW   | **0.28.1** | https://www.nongnu.org/lzip/tarlz.html |
 
 *Outdated*
 
@@ -8309,7 +8302,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.5.3.20220429 ⚠️ | https://github.com/tats/w3m/archive/refs/tags/v0.5.3+git20220429.tar.gz |
+| PPKG   | 0.5.3.20230121 ⚠️ | https://deb.debian.org/debian/pool/main/w/w3m/w3m_0.5.3+git20230121.orig.tar.xz |
 | BREW   | **0.5.3-git20230121** | https://w3m.sourceforge.net/ |
 
 *Outdated*
@@ -8381,7 +8374,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 19.0.0 ⚠️ | null |
-| BREW   | **34.0.0** | https://wasmtime.dev/ |
+| BREW   | **34.0.1** | https://wasmtime.dev/ |
 
 *Outdated*
 

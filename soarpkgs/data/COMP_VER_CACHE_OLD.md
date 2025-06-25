@@ -82,8 +82,8 @@
 | apk-static#gitlab.alpinelinux.org.alpine.apk-tools:bincache (x86_64-Linux) | v2.14.10 | v3.0.0_rc5 | 2025-02-16T19:12:34Z |
 | puddletag#github.com.pkgforge-dev.puddletag-AppImage.stable:pkgcache (x86_64-Linux) | 20250217-182502 | 20250608-102047 | 2025-02-17T19:54:52Z |
 | qbittorrent#gitlab.com.qbittorrent.qbittorrent.stable:pkgcache (x86_64-Linux) | 5.1.0 | 5.1.1 | 2025-02-18T19:01:21Z |
-| daytona#github.com.daytonaio.daytona:bincache (x86_64-Linux) | HEAD-c947632-250222T081152 | HEAD-571c8bb-250624T154238 | 2025-02-22T19:13:54Z |
-| daytona#github.com.daytonaio.daytona:bincache (aarch64-Linux) | HEAD-c947632-250222T081152 | HEAD-571c8bb-250624T154238 | 2025-02-22T19:16:26Z |
+| daytona#github.com.daytonaio.daytona:bincache (x86_64-Linux) | HEAD-c947632-250222T081152 | HEAD-59d1883-250625T144408 | 2025-02-22T19:13:54Z |
+| daytona#github.com.daytonaio.daytona:bincache (aarch64-Linux) | HEAD-c947632-250222T081152 | HEAD-59d1883-250625T144408 | 2025-02-22T19:16:26Z |
 | showcert#sharun.wrappe.pypi.showcert:pkgcache (x86_64-Linux) | 0.3.3 | 0.4.4 | 2025-02-23T08:51:46Z |
 | showcert#sharun.wrappe.pypi.showcert:pkgcache (aarch64-Linux) | 0.3.3 | 0.4.4 | 2025-02-23T08:56:17Z |
 | kalc#github.com.bgkillas.kalc:bincache (x86_64-Linux) | HEAD-f753a11-250224T081526 | HEAD-228edc4-250609T140652 | 2025-02-24T20:10:08Z |
@@ -907,7 +907,7 @@
 | discord-canary#github.com.srevinsaju.discord-AppImage.canary:pkgcache (x86_64-Linux) | 0.0.677 | 0.0.705 | 2025-05-16T19:07:01Z |
 | discord-ptb#github.com.srevinsaju.discord-AppImage.ptb:pkgcache (x86_64-Linux) | 0.0.143 | 0.0.149 | 2025-05-16T19:08:40Z |
 | ghostty-nightly#github.com.pkgforge-dev.ghostty-appimage.nightly:pkgcache (x86_64-Linux) | 250516T004849 | 250625T005053 | 2025-05-16T19:14:06Z |
-| firefox#github.com.srevinsaju.Firefox-Appimage.nightly:pkgcache (x86_64-Linux) | 140.0.20250516092940 | 142.0.20250624211752 | 2025-05-16T19:14:40Z |
+| firefox#github.com.srevinsaju.Firefox-Appimage.nightly:pkgcache (x86_64-Linux) | 140.0.20250516092940 | 142.0.20250625034313 | 2025-05-16T19:14:40Z |
 | firefox#github.com.srevinsaju.Firefox-Appimage.stable:pkgcache (x86_64-Linux) | 138.0.20250512124033 | 140.0.20250616215311 | 2025-05-16T19:14:51Z |
 | firefox#github.com.srevinsaju.Firefox-Appimage.dev:pkgcache (x86_64-Linux) | 139.0.20250514034321 | 141.0.20250624005653 | 2025-05-16T19:15:16Z |
 | firefox#github.com.srevinsaju.Firefox-Appimage.beta:pkgcache (x86_64-Linux) | 139.0.20250514034321 | 141.0.20250624005653 | 2025-05-16T19:15:53Z |
@@ -997,6 +997,8 @@
 | lurk#github.com.JakWai01.lurk.source:bincache (x86_64-Linux) | HEAD-c5e217b-250602T205837 | HEAD-1400e34-250625T090221 | 2025-06-04T21:21:40Z |
 | miniserve#github.com.svenstaro.miniserve:bincache (x86_64-Linux) | HEAD-9009994-250603T172721 | HEAD-bb2c3f8-250624T154630 | 2025-06-04T21:36:57Z |
 | miniserve#github.com.svenstaro.miniserve:bincache (aarch64-Linux) | HEAD-9009994-250603T172721 | HEAD-bb2c3f8-250624T154630 | 2025-06-04T21:37:43Z |
+| dagger-cli#github.com.dagger.dagger:bincache (x86_64-Linux) | v0.18.10 | v0.18.11 | 2025-06-11T19:44:41Z |
+| dagger-cli#github.com.dagger.dagger:bincache (aarch64-Linux) | v0.18.10 | v0.18.11 | 2025-06-11T19:47:00Z |
 | fd#github.com.sharkdp.fd:bincache (aarch64-Linux) | HEAD-ba35c5e-250608T150833 | HEAD-b7fe2ce-250623T150333 | 2025-06-11T20:21:42Z |
 | fd-find#github.com.sharkdp.fd:bincache (aarch64-Linux) | HEAD-ba35c5e-250608T150833 | HEAD-b7fe2ce-250623T150333 | 2025-06-11T20:21:50Z |
 | fd#github.com.sharkdp.fd:bincache (x86_64-Linux) | HEAD-ba35c5e-250608T150833 | HEAD-b7fe2ce-250623T150333 | 2025-06-11T20:31:34Z |
@@ -1070,8 +1072,8 @@
 | lf#github.com.gokcehan.lf:bincache (x86_64-Linux) | HEAD-35b2764-250621T135719 | HEAD-017951f-250624T120211 | 2025-06-21T20:43:52Z |
 | lf#github.com.gokcehan.lf:bincache (aarch64-Linux) | HEAD-35b2764-250621T135719 | HEAD-017951f-250624T120211 | 2025-06-21T20:46:21Z |
 | micro#github.com.zyedidia.micro:bincache (x86_64-Linux) | HEAD-97b5e35-250620T210025 | HEAD-4db233a-250624T223026 | 2025-06-21T20:54:36Z |
-| melange#github.com.chainguard-dev.melange:bincache (x86_64-Linux) | HEAD-4946b05-250620T145044 | HEAD-28df1dc-250624T074156 | 2025-06-21T20:55:19Z |
-| melange#github.com.chainguard-dev.melange:bincache (aarch64-Linux) | HEAD-4946b05-250620T145044 | HEAD-28df1dc-250624T074156 | 2025-06-21T20:56:32Z |
+| melange#github.com.chainguard-dev.melange:bincache (x86_64-Linux) | HEAD-4946b05-250620T145044 | HEAD-9e77b79-250625T080303 | 2025-06-21T20:55:19Z |
+| melange#github.com.chainguard-dev.melange:bincache (aarch64-Linux) | HEAD-4946b05-250620T145044 | HEAD-9e77b79-250625T080303 | 2025-06-21T20:56:32Z |
 | micro#github.com.zyedidia.micro:bincache (aarch64-Linux) | HEAD-97b5e35-250620T210025 | HEAD-4db233a-250624T223026 | 2025-06-21T20:56:35Z |
 | muffet#github.com.raviqqe.muffet.source:bincache (x86_64-Linux) | HEAD-b2b2a82-250619T153621 | HEAD-034d059-250624T155440 | 2025-06-21T20:59:46Z |
 | muffet#github.com.raviqqe.muffet.source:bincache (aarch64-Linux) | HEAD-b2b2a82-250619T153621 | HEAD-034d059-250624T155440 | 2025-06-21T21:03:42Z |
@@ -1116,11 +1118,11 @@
 | fastfetch#github.com.fastfetch-cli.fastfetch:bincache (aarch64-Linux) | HEAD-e68f766-250623T221050 | HEAD-863c558-250625T134549 | 2025-06-23T19:51:00Z |
 | flashfetch#github.com.fastfetch-cli.fastfetch:bincache (aarch64-Linux) | HEAD-e68f766-250623T221050 | HEAD-863c558-250625T134549 | 2025-06-23T19:51:30Z |
 | dnspyre#github.com.Tantalor93.dnspyre:bincache (x86_64-Linux) | HEAD-aedc546-250623T180522 | HEAD-50e2db2-250624T010815 | 2025-06-23T19:53:36Z |
-| ghfetch#github.com.orangekame3.ghfetch:bincache (aarch64-Linux) | HEAD-817db9e-250623T180338 | HEAD-33f3476-250625T060419 | 2025-06-23T19:54:25Z |
+| ghfetch#github.com.orangekame3.ghfetch:bincache (aarch64-Linux) | HEAD-817db9e-250623T180338 | HEAD-d826740-250625T120429 | 2025-06-23T19:54:25Z |
 | filebrowser#github.com.filebrowser.filebrowser:bincache (x86_64-Linux) | v2.33.4 | v2.33.6 | 2025-06-23T20:07:11Z |
 | fastfetch#github.com.fastfetch-cli.fastfetch:bincache (x86_64-Linux) | HEAD-e68f766-250623T221050 | HEAD-863c558-250625T134549 | 2025-06-23T20:09:19Z |
 | flashfetch#github.com.fastfetch-cli.fastfetch:bincache (x86_64-Linux) | HEAD-e68f766-250623T221050 | HEAD-863c558-250625T134549 | 2025-06-23T20:09:46Z |
-| ghfetch#github.com.orangekame3.ghfetch:bincache (x86_64-Linux) | HEAD-817db9e-250623T180338 | HEAD-33f3476-250625T060419 | 2025-06-23T20:11:07Z |
+| ghfetch#github.com.orangekame3.ghfetch:bincache (x86_64-Linux) | HEAD-817db9e-250623T180338 | HEAD-d826740-250625T120429 | 2025-06-23T20:11:07Z |
 | hakoniwa#github.com.souk4711.hakoniwa.source:bincache (aarch64-Linux) | HEAD-214bdba-250623T224530 | HEAD-70fd0b5-250625T024312 | 2025-06-23T20:11:19Z |
 | miniflux#github.com.miniflux.v2:bincache (aarch64-Linux) | HEAD-1503a5c-250622T124402 | HEAD-fcf86e3-250624T212555 | 2025-06-23T20:22:56Z |
 | hakoniwa#github.com.souk4711.hakoniwa.source:bincache (x86_64-Linux) | HEAD-214bdba-250623T224530 | HEAD-70fd0b5-250625T024312 | 2025-06-23T20:28:09Z |
@@ -1174,7 +1176,7 @@
 | wsl#github.com.bombsimon.wsl.source:bincache (x86_64-Linux) | HEAD-0423af1-250622T190124 | HEAD-4ab9357-250624T234126 | 2025-06-23T22:12:55Z |
 | wtf#github.com.wtfutil.wtf:bincache (x86_64-Linux) | HEAD-c118963-250622T225953 | HEAD-49d0830-250624T234130 | 2025-06-23T22:18:37Z |
 | wsl#github.com.bombsimon.wsl.source:bincache (aarch64-Linux) | HEAD-0423af1-250622T190124 | HEAD-4ab9357-250624T234126 | 2025-06-23T22:20:47Z |
-| xan#github.com.medialab.xan:bincache (x86_64-Linux) | HEAD-c3c5a19-250623T172931 | HEAD-9ce25c0-250625T111721 | 2025-06-23T22:20:54Z |
+| xan#github.com.medialab.xan:bincache (x86_64-Linux) | HEAD-c3c5a19-250623T172931 | HEAD-5f8b1aa-250625T144348 | 2025-06-23T22:20:54Z |
 | wtf#github.com.wtfutil.wtf:bincache (aarch64-Linux) | HEAD-c118963-250622T225953 | HEAD-49d0830-250624T234130 | 2025-06-23T22:22:06Z |
 | generate-bidi#github.com.wez.wezterm.source:bincache (x86_64-Linux) | HEAD-2b656cb-250622T064717 | HEAD-2deb317-250624T071246 | 2025-06-23T22:25:11Z |
 | strip-ansi-escapes#github.com.wez.wezterm.source:bincache (x86_64-Linux) | HEAD-2b656cb-250622T064717 | HEAD-2deb317-250624T071246 | 2025-06-23T22:25:16Z |
@@ -1186,7 +1188,7 @@
 | wezterm-mux-server#github.com.wez.wezterm.source:bincache (x86_64-Linux) | HEAD-2b656cb-250622T064717 | HEAD-2deb317-250624T071246 | 2025-06-23T22:25:27Z |
 | wezterm#github.com.wez.wezterm.source:bincache (aarch64-Linux) | HEAD-2b656cb-250622T064717 | HEAD-2deb317-250624T071246 | 2025-06-23T22:25:30Z |
 | wezterm-mux-server#github.com.wez.wezterm.source:bincache (aarch64-Linux) | HEAD-2b656cb-250622T064717 | HEAD-2deb317-250624T071246 | 2025-06-23T22:25:34Z |
-| xan#github.com.medialab.xan:bincache (aarch64-Linux) | HEAD-c3c5a19-250623T172931 | HEAD-9ce25c0-250625T111721 | 2025-06-23T22:26:28Z |
+| xan#github.com.medialab.xan:bincache (aarch64-Linux) | HEAD-c3c5a19-250623T172931 | HEAD-5f8b1aa-250625T144348 | 2025-06-23T22:26:28Z |
 | ya#github.com.sxyazi.yazi:bincache (x86_64-Linux) | HEAD-ab0fe93-250622T212346 | HEAD-590d336-250624T164739 | 2025-06-23T22:33:22Z |
 | yazi#github.com.sxyazi.yazi:bincache (x86_64-Linux) | HEAD-ab0fe93-250622T212346 | HEAD-590d336-250624T164739 | 2025-06-23T22:33:30Z |
 | ya#github.com.sxyazi.yazi:bincache (aarch64-Linux) | HEAD-ab0fe93-250622T212346 | HEAD-590d336-250624T164739 | 2025-06-23T22:34:02Z |

@@ -83,7 +83,8 @@ pushd "${TMPDIR}" &>/dev/null
         if [[ $(stat -c%s "${SYSTMP}/${HOST_TRIPLET}.sdb") -le 1024 ]] || file -i "${SYSTMP}/${HOST_TRIPLET}.sdb" | grep -qiv 'sqlite'; then
           echo -e "\n[✗] FATAL: Failed to generate Soar DB...\n"
           echo "META_GEN=FAILED" >> "${GITHUB_ENV}"
-        exit 1
+        else
+          cp -fv "${SYSTMP}/${HOST_TRIPLET}.sdb" "${O_D}/${HOST_TRIPLET}.sdb"
         fi
       #To Sqlite
        if command -v "qsv" &>/dev/null; then

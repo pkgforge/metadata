@@ -1237,6 +1237,15 @@
 | PPKG   | 1.16.3 ✅ | https://github.com/crystal-lang/crystal/archive/refs/tags/1.16.3.tar.gz |
 | BREW   | 1.16.3 | https://crystal-lang.org/ |
 
+## crystal-icr
+
+**Description:** Interactive console for Crystal programming language
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.9.0 ✅ | https://github.com/crystal-community/icr/archive/refs/tags/v0.9.0.tar.gz |
+| BREW   | 0.9.0 | https://github.com/crystal-community/icr |
+
 ## ctop
 
 **Description:** Top-like interface for container metrics
@@ -1550,6 +1559,15 @@
 
 *Outdated*
 
+## ducker
+
+**Description:** A slightly quackers Docker TUI based on k9s
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.3.0 ✅ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
+| BREW   | 0.3.0 | https://github.com/robertpsoane/ducker |
+
 ## duf
 
 **Description:** A better alternative to df(1)
@@ -1755,7 +1773,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.0 ⚠️ | https://github.com/eza-community/eza/archive/refs/tags/v0.19.0.tar.gz |
-| BREW   | **0.21.5** | https://github.com/eza-community/eza |
+| BREW   | **0.21.6** | https://github.com/eza-community/eza |
 
 *Outdated*
 
@@ -6901,6 +6919,15 @@
 
 *Outdated*
 
+## qbe
+
+**Description:** A simple C compiler backend
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 1.2 ✅ | https://c9x.me/compile/release/qbe-1.2.tar.xz |
+| BREW   | 1.2 | https://c9x.me/compile/ |
+
 ## qbittorrent-cli
 
 **Description:** A command-line interface for qBittorrent written in Go
@@ -7828,7 +7855,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.82.0** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.82.1** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

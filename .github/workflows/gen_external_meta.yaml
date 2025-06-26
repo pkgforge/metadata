@@ -126,6 +126,14 @@ jobs:
           PARALLEL_LIMIT="$(($(nproc)+1))" bash "${{ matrix.script }}"
         continue-on-error: true
 
+      - name: Exit if failed
+        run: |
+          if [[ "${META_GEN}" == "FAILED" ]]; then
+             echo -e "\n[X] FATAL: Failed to Generate Metadata"
+            exit 1
+          fi
+        continue-on-error: false
+
       - name: Get DateTime & Purge files (=> 95 MB)
         run: |
           #Presets

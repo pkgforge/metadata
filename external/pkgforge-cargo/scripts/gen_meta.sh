@@ -10,6 +10,15 @@
 export TZ="UTC"
 SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
 TMPDIR="$(mktemp -d)" && export TMPDIR="${TMPDIR}" ; echo -e "\n[+] Using TEMP: ${TMPDIR}\n"
+##Install Requirements
+curl -qfsSL "https://api.gh.pkgforge.dev/repos/pkgforge/soarql/releases?per_page=100" | jq -r '.. | objects | .browser_download_url? // empty' | grep -Ei "$(uname -m)" | grep -Eiv "tar\.gz|\.b3sum" | grep -Ei "soarql" | sort --version-sort | tail -n 1 | tr -d '[:space:]' | xargs -I "{}" sudo curl -qfsSL "{}" -o "/usr/local/bin/soarql"
+sudo chmod -v 'a+x' "/usr/local/bin/soarql"
+ if [[ ! -s "/usr/local/bin/soarql" || $(stat -c%s "/usr/local/bin/soarql") -le 1024 ]]; then
+   echo -e "\n[✗] FATAL: soarql Appears to be NOT INSTALLED...\n"
+  exit 1
+ else
+   timeout 10 "/usr/local/bin/soarql" --help
+ fi
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
@@ -40,7 +49,7 @@ pushd "${TMPDIR}" &>/dev/null
       #Git pull
        git pull origin main --no-edit 2>/dev/null
       #Merge
-       mkdir -pv "${O_D}" ; cd "${O_D}"
+       mkdir -pv "${O_D}" ; cd "${O_D}" || exit 1
        [[ ! -f "${O_D}/${HOST_TRIPLET}.json" ]] &&\
         echo '[]' > "${O_D}/${HOST_TRIPLET}.json"
        jq -s \
@@ -61,6 +70,14 @@ pushd "${TMPDIR}" &>/dev/null
          b3sum "$1" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "$1.bsum"
        }
        generate_checksum "${HOST_TRIPLET}.json"
+       #To SDB
+       soarql --repo "pkgforge-cargo" --input "${HOST_TRIPLET}.json" --output "${HOST_TRIPLET}.sdb"
+       generate_checksum "${HOST_TRIPLET}.sdb"
+        if [[ $(stat -c%s "${HOST_TRIPLET}.sdb") -le 1024 ]] || file -i "${HOST_TRIPLET}.sdb" | grep -qiv 'sqlite'; then
+          echo -e "\n[✗] FATAL: Failed to generate Soar DB...\n"
+          echo "META_GEN=FAILED" >> "${GITHUB_ENV}"
+        exit 1
+        fi
       #To Sqlite
        if command -v "qsv" &>/dev/null; then
          jq -c '.[]' "${HOST_TRIPLET}.json" > "${TMPDIR}/${HOST_TRIPLET}.jsonl"
@@ -68,13 +85,16 @@ pushd "${TMPDIR}" &>/dev/null
          qsv to sqlite "${TMPDIR}/${HOST_TRIPLET}.db" "${TMPDIR}/${HOST_TRIPLET}.csv"
          if [[ -s "${TMPDIR}/${HOST_TRIPLET}.db" && $(stat -c%s "${TMPDIR}/${HOST_TRIPLET}.db") -gt 1024 ]]; then
            cp -fv "${TMPDIR}/${HOST_TRIPLET}.db" "${O_D}/${HOST_TRIPLET}.db" ; generate_checksum "${HOST_TRIPLET}.db"
-           zstd --ultra -22 --force "${O_D}/${HOST_TRIPLET}.db" -o "${O_D}/${HOST_TRIPLET}.db.zstd" ; generate_checksum "${HOST_TRIPLET}.db.zstd"
          fi
        fi
       #To xz
        xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.json" ; generate_checksum "${HOST_TRIPLET}.json.xz"
+       xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.db" ; generate_checksum "${HOST_TRIPLET}.db.xz"
+       xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.sdb" ; generate_checksum "${HOST_TRIPLET}.sdb.xz"
       #To Zstd
+       zstd --ultra -22 --force "${HOST_TRIPLET}.db" -o "${HOST_TRIPLET}.db.zstd" ; generate_checksum "${HOST_TRIPLET}.db.zstd"
        zstd --ultra -22 --force "${HOST_TRIPLET}.json" -o "${HOST_TRIPLET}.json.zstd" ; generate_checksum "${HOST_TRIPLET}.json.zstd"
+       zstd --ultra -22 --force "${HOST_TRIPLET}.sdb" -o "${HOST_TRIPLET}.sdb.zstd" ; generate_checksum "${HOST_TRIPLET}.sdb.zstd"
      fi
  done
 popd &>/dev/null

@@ -17,6 +17,14 @@ if [[ -z "${USER_AGENT}" ]]; then
 fi
 rm -rvf "${SYSTMP}/appimagehub.json" 2>/dev/null
 ##Install Requirements
+curl -qfsSL "https://api.gh.pkgforge.dev/repos/pkgforge/soarql/releases?per_page=100" | jq -r '.. | objects | .browser_download_url? // empty' | grep -Ei "$(uname -m)" | grep -Eiv "tar\.gz|\.b3sum" | grep -Ei "soarql" | sort --version-sort | tail -n 1 | tr -d '[:space:]' | xargs -I "{}" sudo curl -qfsSL "{}" -o "/usr/local/bin/soarql"
+sudo chmod -v 'a+x' "/usr/local/bin/soarql"
+ if [[ ! -s "/usr/local/bin/soarql" || $(stat -c%s "/usr/local/bin/soarql") -le 1024 ]]; then
+   echo -e "\n[✗] FATAL: soarql Appears to be NOT INSTALLED...\n"
+  exit 1
+ else
+   timeout 10 "/usr/local/bin/soarql" --help
+ fi
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
@@ -405,8 +413,14 @@ if [ -s "${SYSTMP}/appimagehub.json" ] &&\
       b3sum "$1" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "$1.bsum"
   }
   generate_checksum "${HOST_TRIPLET}.json"
- #To Bita
-  bita compress --input "${HOST_TRIPLET}.json" --compression "zstd" --compression-level "21" --force-create "${HOST_TRIPLET}.json.cba"
+ #To SDB
+  soarql --repo "appimagehub" --input "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.json" --output "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.sdb"
+  generate_checksum "${HOST_TRIPLET}.sdb"
+   if [[ $(stat -c%s "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.sdb") -le 1024 ]] || file -i "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.sdb" | grep -qiv 'sqlite'; then
+     echo -e "\n[✗] FATAL: Failed to generate Soar DB...\n"
+     echo "META_GEN=FAILED" >> "${GITHUB_ENV}"
+   exit 1
+   fi
  #To Sqlite
   if command -v "qsv" &>/dev/null; then
     jq -c '.[]' "${HOST_TRIPLET}.json" > "${TMPDIR}/${HOST_TRIPLET}.jsonl"
@@ -414,9 +428,8 @@ if [ -s "${SYSTMP}/appimagehub.json" ] &&\
     qsv to sqlite "${TMPDIR}/${HOST_TRIPLET}.db" "${TMPDIR}/${HOST_TRIPLET}.csv"
     if [[ -s "${TMPDIR}/${HOST_TRIPLET}.db" && $(stat -c%s "${TMPDIR}/${HOST_TRIPLET}.db") -gt 1024 ]]; then
      cp -fv "${TMPDIR}/${HOST_TRIPLET}.db" "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.db" ; generate_checksum "${HOST_TRIPLET}.db"
-     bita compress --input "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.db" --compression "zstd" --compression-level "21" --force-create "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.db.cba"
-     7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.db.xz" "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.db" 2>/dev/null ; generate_checksum "${HOST_TRIPLET}.db.xz"
-     zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.db" -o "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.db.zstd" ; generate_checksum "${HOST_TRIPLET}.db.zstd"
+     xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.db" ; generate_checksum "${HOST_TRIPLET}.db.xz"
+     zstd --ultra -22 --force "${HOST_TRIPLET}.db" -o "${HOST_TRIPLET}.db.zstd" ; generate_checksum "${HOST_TRIPLET}.db.zstd"
      ##Upload
       #rclone copyto "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.db" "r2:/meta/external/appimagehub/${HOST_TRIPLET}.db" --checksum --check-first --user-agent="${USER_AGENT}" &
       #rclone copyto "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.db.bsum" "r2:/meta/external/appimagehub/${HOST_TRIPLET}.db.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &
@@ -429,8 +442,10 @@ if [ -s "${SYSTMP}/appimagehub.json" ] &&\
   fi
  #To xz
   xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.json" ; generate_checksum "${HOST_TRIPLET}.json.xz"
+  xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "${HOST_TRIPLET}.sdb" ; generate_checksum "${HOST_TRIPLET}.sdb.xz"
  #To Zstd
   zstd --ultra -22 --force "${HOST_TRIPLET}.json" -o "${HOST_TRIPLET}.json.zstd" ; generate_checksum "${HOST_TRIPLET}.json.zstd"
+  zstd --ultra -22 --force "${HOST_TRIPLET}.sdb" -o "${HOST_TRIPLET}.sdb.zstd" ; generate_checksum "${HOST_TRIPLET}.sdb.zstd"
  ##Upload (Json)
   #rclone copyto "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.json" "r2:/meta/external/appimagehub/${HOST_TRIPLET}.json" --checksum --check-first --user-agent="${USER_AGENT}" &
   #rclone copyto "${GITHUB_WORKSPACE}/main/external/appimagehub/data/${HOST_TRIPLET}.json.bsum" "r2:/meta/external/appimagehub/${HOST_TRIPLET}.json.bsum" --checksum --check-first --user-agent="${USER_AGENT}" &

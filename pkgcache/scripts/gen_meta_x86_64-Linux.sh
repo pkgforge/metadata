@@ -615,8 +615,7 @@ if [ -s "${SYSTMP}/pkgcache_x86_64-Linux.json" ] &&\
     qsv to sqlite "${TMPDIR}/x86_64-Linux.db" "${TMPDIR}/x86_64-Linux.csv"
     if [[ -s "${TMPDIR}/x86_64-Linux.db" && $(stat -c%s "${TMPDIR}/x86_64-Linux.db") -gt 1024 ]]; then
      cp -fv "${TMPDIR}/x86_64-Linux.db" "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.db" ; generate_checksum "x86_64-Linux.db"
-     bita compress --input "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.db" --compression "zstd" --compression-level "21" --force-create "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.db.cba"
-     7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.db.xz" "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.db" 2>/dev/null ; generate_checksum "x86_64-Linux.db.xz"
+     xz -9 -T"$(($(nproc) + 1))" --compress --extreme --keep --force --verbose "x86_64-Linux.db" ; generate_checksum "x86_64-Linux.db.xz"
      zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.db" -o "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.db.zstd" ; generate_checksum "x86_64-Linux.db.zstd"
      ##Upload
       #rclone copyto "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.db" "r2:/meta/pkgcache/x86_64-Linux.db" --checksum --check-first --user-agent="${USER_AGENT}" &

@@ -90,13 +90,13 @@
   12K   │ │ └─┬ scripts
  8.0K   │ │   └── gen_meta.sh
   14M   │ ├─┬ am
-  14M   │ │ ├─┬ data
+  13M   │ │ ├─┬ data
  4.8M   │ │ │ ├── x86_64-Linux.json
  4.4M   │ │ │ ├── x86_64-Linux.db
  1.1M   │ │ │ ├── x86_64-Linux.AM.txt
  1.0M   │ │ │ ├── aarch64-Linux.AM.txt
  548K   │ │ │ ├── x86_64-Linux.db.cba
- 500K   │ │ │ ├── x86_64-Linux.json.cba
+ 496K   │ │ │ ├── x86_64-Linux.json.cba
  440K   │ │ │ ├── x86_64-Linux.db.zstd
  436K   │ │ │ ├── x86_64-Linux.db.xz
  404K   │ │ │ ├── x86_64-Linux.json.zstd
@@ -323,7 +323,7 @@
   36K   │   ├── gen_meta_aarch64-Linux.sh
   12K   │   └── sync_hf_mirror.sh
   59M   ├── GHCR_PKGS.json
-  20M   ├─┬ soarpkgs
+  19M   ├─┬ soarpkgs
   19M   │ ├─┬ data
  2.7M   │ │ ├── COMP_VER_CACHE.json
  2.6M   │ │ ├── INDEX.json
@@ -334,7 +334,7 @@
  1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
  1.1M   │ │ ├── OLD_bincache_x86_64-Linux.json
  1.0M   │ │ ├── COMP_VER_CACHE.md
-1012K   │ │ ├── pub_issues_binaries.txt
+ 972K   │ │ ├── pub_issues_binaries.txt
  452K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  432K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
  420K   │ │ ├── COMP_VER_CACHE_OLD.json

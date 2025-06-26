@@ -136,7 +136,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.284** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.285** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -397,7 +397,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.25 ⚠️ | null |
+| PPKG   | 2025.06.26 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -598,7 +598,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20250308 ⚠️ | https://www.crufty.net/ftp/pub/sjg/bmake-20250308.tar.gz |
-| BREW   | **20250528** | https://www.crufty.net/help/sjg/bmake.html |
+| BREW   | **20250618** | https://www.crufty.net/help/sjg/bmake.html |
 
 *Outdated*
 
@@ -1084,7 +1084,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.101.1** | https://github.com/microsoft/vscode |
+| BREW   | **1.101.2** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -1495,7 +1495,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.55.2** | https://github.com/dolthub/dolt |
+| BREW   | **1.55.3** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2784,7 +2784,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.71.0 ⚠️ | https://github.com/grpc/grpc/archive/refs/tags/v1.71.0.tar.gz |
-| BREW   | **1.73.0** | https://grpc.io/ |
+| BREW   | **1.73.1** | https://grpc.io/ |
 
 *Outdated*
 
@@ -4419,7 +4419,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.25 ⚠️ | null |
+| PPKG   | 2025.06.26 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5248,8 +5248,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.0.0.31 ✅ | https://github.com/webmproject/libwebm/archive/refs/tags/libwebm-1.0.0.31.tar.gz |
-| BREW   | 1.0.0.31 | https://www.webmproject.org/code/ |
+| PPKG   | 1.0.0.31 ⚠️ | https://github.com/webmproject/libwebm/archive/refs/tags/libwebm-1.0.0.31.tar.gz |
+| BREW   | **1.0.0.32** | https://www.webmproject.org/code/ |
+
+*Outdated*
 
 ## libwebsockets
 
@@ -6477,7 +6479,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.25 ⚠️ | null |
+| PPKG   | 2025.06.26 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6625,7 +6627,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.3.0 ⚠️ | https://distfiles.ariadne.space/pkgconf/pkgconf-2.3.0.tar.xz |
-| BREW   | **2.5.0** | https://github.com/pkgconf/pkgconf |
+| BREW   | **2.5.1** | https://github.com/pkgconf/pkgconf |
 
 *Outdated*
 
@@ -6635,7 +6637,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.25 ⚠️ | null |
+| PPKG   | 2025.06.26 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6797,7 +6799,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.25 ⚠️ | null |
+| PPKG   | 2025.06.26 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7704,7 +7706,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 256.7 ⚠️ | https://github.com/systemd/systemd/archive/refs/tags/v256.7.tar.gz |
-| BREW   | **257.6** | https://systemd.io |
+| BREW   | **257.7** | https://systemd.io |
 
 *Outdated*
 
@@ -8755,7 +8757,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.15.0 ⚠️ | https://github.com/Z3Prover/z3/archive/z3-4.15.0.tar.gz |
-| BREW   | **4.15.1** | https://github.com/Z3Prover/z3 |
+| BREW   | **4.15.2** | https://github.com/Z3Prover/z3 |
 
 *Outdated*
 

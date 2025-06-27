@@ -318,7 +318,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.17 ⚠️ | https://ftp.gnu.org/gnu/automake/automake-1.17.tar.xz |
-| BREW   | **1.18** | https://www.gnu.org/software/automake/ |
+| BREW   | **1.18.1** | https://www.gnu.org/software/automake/ |
 
 *Outdated*
 
@@ -397,7 +397,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.26 ⚠️ | null |
+| PPKG   | 2025.06.27 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -660,7 +660,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.44.6 ⚠️ | https://github.com/Canop/broot/archive/refs/tags/v1.44.6.tar.gz |
-| BREW   | **1.46.5** | https://dystroy.org/broot/ |
+| BREW   | **1.47.0** | https://dystroy.org/broot/ |
 
 *Outdated*
 
@@ -1863,6 +1863,15 @@
 
 *Outdated*
 
+## feh
+
+**Description:** A fast and light image viewer
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 3.10.3 ✅ | https://feh.finalrewind.org/feh-3.10.3.tar.bz2 |
+| BREW   | 3.10.3 | https://feh.finalrewind.org/ |
+
 ## fff
 
 **Description:** Simple file manager written in bash
@@ -2823,8 +2832,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.26.2 ✅ | https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.26.2/gstreamer-1.26.2.tar.bz2 |
-| BREW   | 1.26.2 | https://gstreamer.freedesktop.org/ |
+| PPKG   | 1.26.2 ⚠️ | https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.26.2/gstreamer-1.26.2.tar.bz2 |
+| BREW   | **1.26.3** | https://gstreamer.freedesktop.org/ |
+
+*Outdated*
 
 ## gtk+3
 
@@ -3148,10 +3159,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.12.2 ⚠️ | https://downloads.sourceforge.net/project/enlightenment/imlib2-src/1.12.2/imlib2-1.12.2.tar.xz |
-| BREW   | **1.12.5** | https://sourceforge.net/projects/enlightenment/ |
-
-*Outdated*
+| PPKG   | 1.12.5 ✅ | https://downloads.sourceforge.net/project/enlightenment/imlib2-src/1.12.5/imlib2-1.12.5.tar.gz |
+| BREW   | 1.12.5 | https://sourceforge.net/projects/enlightenment/ |
 
 ## incus
 
@@ -4171,6 +4180,15 @@
 | PPKG   | 1.18 ✅ | https://ftp.gnu.org/gnu/libiconv/libiconv-1.18.tar.gz |
 | BREW   | 1.18 | https://www.gnu.org/software/libiconv/ |
 
+## libid3tag
+
+**Description:** ID3 tag manipulation library
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.16.3 ✅ | https://codeberg.org/tenacityteam/libid3tag/archive/0.16.3.tar.gz |
+| BREW   | 0.16.3 | https://www.underbit.com/products/mad/ |
+
 ## libidn
 
 **Description:** International domain name library
@@ -4437,7 +4455,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.26 ⚠️ | null |
+| PPKG   | 2025.06.27 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6315,7 +6333,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.9.2** | https://ollama.com/ |
+| BREW   | **0.9.3** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6497,7 +6515,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.26 ⚠️ | null |
+| PPKG   | 2025.06.27 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6655,7 +6673,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.26 ⚠️ | null |
+| PPKG   | 2025.06.27 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6817,7 +6835,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.26 ⚠️ | null |
+| PPKG   | 2025.06.27 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7245,7 +7263,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.0** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.1** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -7855,7 +7873,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.82.1** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.82.2** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

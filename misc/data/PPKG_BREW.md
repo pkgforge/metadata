@@ -2380,7 +2380,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.5.1 ⚠️ | https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-v3.5.1.tar.gz |
-| BREW   | **3.6.1** | https://git-lfs.com/ |
+| BREW   | **3.7.0** | https://git-lfs.com/ |
 
 *Outdated*
 
@@ -2821,10 +2821,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 47.1 ⚠️ | https://download.gnome.org/sources/gsettings-desktop-schemas/47/gsettings-desktop-schemas-47.1.tar.xz |
-| BREW   | **48.0** | https://download.gnome.org/sources/gsettings-desktop-schemas/ |
-
-*Outdated*
+| PPKG   | 48.0 ✅ | https://download.gnome.org/sources/gsettings-desktop-schemas/48/gsettings-desktop-schemas-48.0.tar.xz |
+| BREW   | 48.0 | https://download.gnome.org/sources/gsettings-desktop-schemas/ |
 
 ## gstreamer
 
@@ -4855,10 +4853,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.10.3 ⚠️ | https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.3.tar.gz |
-| BREW   | **1.10.5** | https://github.com/saitoha/sixel |
-
-*Outdated*
+| PPKG   | 1.10.5 ✅ | https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.5.tar.gz |
+| BREW   | 1.10.5 | https://github.com/saitoha/sixel |
 
 ## libslirp
 
@@ -6469,15 +6465,6 @@
 
 *Outdated*
 
-## openslide
-
-**Description:** C library to read whole-slide images (a.k.a. virtual slides)
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 4.0.0 ✅ | https://github.com/openslide/openslide/releases/download/v4.0.0/openslide-4.0.0.tar.xz |
-| BREW   | 4.0.0 | https://openslide.org/ |
-
 ## openssh
 
 **Description:** OpenBSD freely-licensed SSH connectivity tools
@@ -6992,8 +6979,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 6.9.0 ✅ | https://download.qt.io/official_releases/qt/6.9/6.9.0/single/qt-everywhere-src-6.9.0.tar.xz |
-| BREW   | 6.9.0 | https://www.qt.io/ |
+| PPKG   | 6.9.0 ⚠️ | https://download.qt.io/official_releases/qt/6.9/6.9.0/single/qt-everywhere-src-6.9.0.tar.xz |
+| BREW   | **6.9.1** | https://www.qt.io/ |
+
+*Outdated*
 
 ## quickjs
 
@@ -7073,7 +7062,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.69.3 ⚠️ | https://github.com/rclone/rclone/archive/refs/tags/v1.69.3.tar.gz |
-| BREW   | **1.70.1** | https://rclone.org/ |
+| BREW   | **1.70.2** | https://rclone.org/ |
 
 *Outdated*
 
@@ -7910,10 +7899,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.6.0 ⚠️ | https://github.com/hzeller/timg/archive/refs/tags/v1.6.0.tar.gz |
-| BREW   | **1.6.2** | https://timg.sh/ |
-
-*Outdated*
+| PPKG   | 1.6.2 ✅ | https://github.com/hzeller/timg/archive/refs/tags/v1.6.2.tar.gz |
+| BREW   | 1.6.2 | https://timg.sh/ |
 
 ## tinysearch
 

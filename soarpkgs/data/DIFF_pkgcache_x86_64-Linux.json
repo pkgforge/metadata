@@ -1,6 +1,74 @@
 [
   {
     "_disabled": "false",
+    "pkg": "aisleriot",
+    "pkg_family": "aisleriot",
+    "pkg_id": "github.com.ivan-hc.Aisleriot-appimage",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aisleriot-appimage/aisleriot/aisleriot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/aisleriot/appimage.ivan-hc.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Collection of solitaire and other card games",
+    "distro_pkg": {
+      "alpine": [
+        "aisleriot"
+      ],
+      "archlinux": {
+        "aur": [
+          "aisleriot-git"
+        ],
+        "extra": [
+          "aisleriot"
+        ]
+      },
+      "debian": [
+        "aisleriot"
+      ],
+      "nixpkgs": [
+        "aisleriot",
+        "gnome.aisleriot"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/aisleriot/appimage.ivan-hc.stable.yaml",
+    "homepage": [
+      "https://live.gnome.org/Aisleriot",
+      "https://wiki.gnome.org/Aisleriot",
+      "https://download.gnome.org/sources/aisleriot",
+      "https://gitlab.gnome.org/GNOME/aisleriot"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/aisleriot/assets/default.png",
+    "license": [
+      "CC-BY-4.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ivan-hc/Aisleriot-appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/aisleriot/appimage/ivan-hc",
+    "provides": [
+      "aisleriot"
+    ],
+    "repology": [
+      "aisleriot"
+    ],
+    "src_url": [
+      "https://github.com/ivan-hc/Aisleriot-appimage"
+    ],
+    "tag": [
+      "Games/Cards",
+      "games-board"
+    ],
+    "version": "250628T024443"
+  },
+  {
+    "_disabled": "false",
     "pkg": "appimagetool",
     "pkg_family": "appimagetool",
     "pkg_id": "github.com.AppImage.appimagetool.stable",
@@ -187,6 +255,74 @@
       "network.web.browser"
     ],
     "version": "v1.82.32"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "138.0.7204.49"
   },
   {
     "_disabled": "false",
@@ -3370,7 +3506,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-5e292ba-250627T223106"
+    "version": "HEAD-b5bd057-250628T022943"
   },
   {
     "_disabled": "false",

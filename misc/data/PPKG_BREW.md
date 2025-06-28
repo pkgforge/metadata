@@ -136,7 +136,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.285** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.286** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -773,7 +773,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.9 ⚠️ | https://github.com/lu-zero/cargo-c/archive/refs/tags/v0.10.9.tar.gz |
-| BREW   | **0.10.13** | https://github.com/lu-zero/cargo-c |
+| BREW   | **0.10.14** | https://github.com/lu-zero/cargo-c |
 
 *Outdated*
 
@@ -1809,6 +1809,15 @@
 | BREW   | **1.37.1.2** | https://tracker.debian.org/pkg/fakeroot |
 
 *Outdated*
+
+## fastfetch
+
+**Description:** Like neofetch, but much faster because written mostly in C
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 2.46.0 ✅ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.46.0.tar.gz |
+| BREW   | 2.46.0 | https://github.com/fastfetch-cli/fastfetch |
 
 ## fb303
 
@@ -3169,7 +3178,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.4 ⚠️ | https://linuxcontainers.org/downloads/incus/incus-6.4.tar.xz |
-| BREW   | **6.13** | https://linuxcontainers.org/incus |
+| BREW   | **6.14** | https://linuxcontainers.org/incus |
 
 *Outdated*
 
@@ -3611,10 +3620,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.7.7 ⚠️ | https://www.libarchive.org/downloads/libarchive-3.7.7.tar.xz |
-| BREW   | **3.8.1** | https://www.libarchive.org |
-
-*Outdated*
+| PPKG   | 3.8.1 ✅ | https://www.libarchive.org/downloads/libarchive-3.8.1.tar.xz |
+| BREW   | 3.8.1 | https://www.libarchive.org |
 
 ## libart
 
@@ -4649,7 +4656,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.5.4 ⚠️ | https://github.com/libproxy/libproxy/archive/refs/tags/0.5.4.tar.gz |
-| BREW   | **0.5.9** | https://libproxy.github.io/libproxy/ |
+| BREW   | **0.5.10** | https://libproxy.github.io/libproxy/ |
 
 *Outdated*
 
@@ -8776,15 +8783,6 @@
 |--------|---------|-------------|
 | PPKG   | 4.45.4 ✅ | https://github.com/mikefarah/yq/archive/refs/tags/v4.45.4.tar.gz |
 | BREW   | 4.45.4 | https://github.com/mikefarah/yq |
-
-## yyjson
-
-**Description:** A high performance JSON library written in ANSI C
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 0.11.1 ✅ | https://github.com/ibireme/yyjson/archive/refs/tags/0.11.1.tar.gz |
-| BREW   | 0.11.1 | https://github.com/ibireme/yyjson |
 
 ## z3
 

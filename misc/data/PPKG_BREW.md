@@ -397,7 +397,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.27 ⚠️ | null |
+| PPKG   | 2025.06.28 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2109,8 +2109,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.62.0 ✅ | https://github.com/junegunn/fzf/archive/refs/tags/v0.62.0.tar.gz |
-| BREW   | 0.62.0 | https://github.com/junegunn/fzf |
+| PPKG   | 0.62.0 ⚠️ | https://github.com/junegunn/fzf/archive/refs/tags/v0.62.0.tar.gz |
+| BREW   | **0.63.0** | https://github.com/junegunn/fzf |
+
+*Outdated*
 
 ## fzy
 
@@ -2491,7 +2493,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 15.1.0 ⚠️ | https://github.com/KhronosGroup/glslang/archive/refs/tags/15.1.0.tar.gz |
-| BREW   | **15.3.0** | https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/ |
+| BREW   | **15.4.0** | https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/ |
 
 *Outdated*
 
@@ -3892,7 +3894,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | https://gitlab.gnome.org/GNOME/libdex/-/archive/0.9.0/libdex-0.9.0.tar.gz |
-| BREW   | **0.10.0** | https://gitlab.gnome.org/GNOME/libdex |
+| BREW   | **0.10.1** | https://gitlab.gnome.org/GNOME/libdex |
 
 *Outdated*
 
@@ -4453,7 +4455,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.27 ⚠️ | null |
+| PPKG   | 2025.06.28 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5614,7 +5616,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.679** | https://luau.org |
+| BREW   | **0.680** | https://luau.org |
 
 *Outdated*
 
@@ -6502,7 +6504,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.27 ⚠️ | null |
+| PPKG   | 2025.06.28 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6660,7 +6662,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.27 ⚠️ | null |
+| PPKG   | 2025.06.28 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6822,7 +6824,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.27 ⚠️ | null |
+| PPKG   | 2025.06.28 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7862,7 +7864,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.82.2** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.82.3** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8148,7 +8150,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.7.15** | https://docs.astral.sh/uv/ |
+| BREW   | **0.7.16** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -8340,8 +8342,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.4.319 ✅ | https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.319.tar.gz |
-| BREW   | 1.4.319 | https://github.com/KhronosGroup/Vulkan-Headers |
+| PPKG   | 1.4.319 ⚠️ | https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.319.tar.gz |
+| BREW   | **1.4.320** | https://github.com/KhronosGroup/Vulkan-Headers |
+
+*Outdated*
 
 ## w3m
 

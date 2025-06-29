@@ -65,7 +65,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250628T024443"
+    "version": "250629T025941"
   },
   {
     "_disabled": "false",
@@ -888,7 +888,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "142.0.20250627160956"
+    "version": "142.0.20250628205111"
   },
   {
     "_disabled": "false",
@@ -1351,7 +1351,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250628T004834"
+    "version": "250629T005633"
   },
   {
     "_disabled": "false",
@@ -1413,7 +1413,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250628T004834"
+    "version": "250629T005633"
   },
   {
     "_disabled": "false",
@@ -1644,78 +1644,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "inkscape",
-    "pkg_family": "inkscape",
-    "pkg_id": "gitlab.com.inkscape.inkscape",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inkscape-inkscape/inkscape/inkscape",
-    "app_id": "org.inkscape.Inkscape",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/inkscape/appimage.official.stable.yaml",
-    "category": [
-      "Graphics",
-      "Office"
-    ],
-    "description": "FOSS Vector Graphics Editor",
-    "distro_pkg": {
-      "alpine": [
-        "inkscape"
-      ],
-      "archlinux": {
-        "aur": [
-          "inkscape-git"
-        ],
-        "extra": [
-          "inkscape"
-        ]
-      },
-      "debian": [
-        "inkscape"
-      ],
-      "gnuguix": [
-        "inkscape"
-      ],
-      "homebrew": [
-        "inkscape"
-      ],
-      "nixpkgs": [
-        "inkscape",
-        "inkscape-with-extensions"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/inkscape/appimage.official.stable.yaml",
-    "homepage": [
-      "https://inkscape.org"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/inkscape/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/inkscape/inkscape"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/inkscape/appimage/official",
-    "provides": [
-      "inkscape"
-    ],
-    "repology": [
-      "inkscape"
-    ],
-    "src_url": [
-      "https://inkscape.org/release"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ]
-  },
-  {
-    "_disabled": "false",
     "pkg": "kdenlive",
     "pkg_family": "kdenlive",
     "pkg_id": "gitlab.com.kdenlive.kdenlive.stable",
@@ -1856,7 +1784,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-06-27"
+    "version": "2025-06-28"
   },
   {
     "_disabled": "true",
@@ -2070,6 +1998,150 @@
   },
   {
     "_disabled": "false",
+    "pkg": "librewolf",
+    "pkg_family": "librewolf",
+    "pkg_id": "gitlab.com.librewolf-community.browser.appimage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/librewolf/librewolf",
+    "app_id": "io.gitlab.librewolf-community",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/librewolf/appimage.official.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A fork of Firefox, focused on privacy, security and freedom",
+    "distro_pkg": {
+      "alpine": [
+        "librewolf"
+      ],
+      "archlinux": {
+        "aur": [
+          "librewolf",
+          "librewolf-bin",
+          "librewolf-hg"
+        ]
+      },
+      "gnuguix": [
+        "librewolf"
+      ],
+      "homebrew": [
+        "librewolf"
+      ],
+      "nixpkgs": [
+        "librewolf"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/librewolf/appimage.official.stable.yaml",
+    "homepage": [
+      "https://librewolf.net",
+      "https://librewolf-community.gitlab.io",
+      "https://gitlab.com/librewolf-community/browser/appimage"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/librewolf/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/librewolf-community/browser/appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/librewolf/appimage/official",
+    "provides": [
+      "librewolf"
+    ],
+    "repology": [
+      "librewolf"
+    ],
+    "src_url": [
+      "https://gitlab.com/librewolf-community/browser/appimage"
+    ],
+    "tag": [
+      "Browser"
+    ],
+    "version": "v140.0.2-1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "librewolf",
+    "pkg_family": "librewolf",
+    "pkg_id": "runimage.cachyos.librewolf",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-librewolf/librewolf/librewolf",
+    "app_id": "io.gitlab.librewolf-community",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/librewolf/runimage.cachyos.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A fork of Firefox, focused on privacy, security and freedom",
+    "distro_pkg": {
+      "alpine": [
+        "librewolf"
+      ],
+      "archlinux": {
+        "aur": [
+          "librewolf",
+          "librewolf-bin",
+          "librewolf-hg"
+        ]
+      },
+      "gnuguix": [
+        "librewolf"
+      ],
+      "homebrew": [
+        "librewolf"
+      ],
+      "nixpkgs": [
+        "librewolf"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/librewolf/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://librewolf.net",
+      "https://codeberg.org/librewolf/source",
+      "https://gitlab.com/librewolf-community/browser/source"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/librewolf/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/librewolf/runimage/cachyos",
+    "provides": [
+      "librewolf"
+    ],
+    "repology": [
+      "librewolf"
+    ],
+    "src_url": [
+      "https://codeberg.org/librewolf/source",
+      "https://gitlab.com/librewolf-community/browser/source"
+    ],
+    "tag": [
+      "Applications/Internet",
+      "browser",
+      "Networking/WWW",
+      "www-client"
+    ],
+    "version": "140.0.2_1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "netexec",
     "pkg_family": "netexec",
     "pkg_id": "sharun.wrappe.source.netexec",
@@ -2126,6 +2198,65 @@
       "Utility"
     ],
     "version": "HEAD-d28b11d-250626T183724"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "puncia",
+    "pkg_family": "puncia",
+    "pkg_id": "sharun.wrappe.pypi.puncia",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-puncia/puncia/puncia",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/puncia/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI utility for Subdomain Center & Exploit Observer",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "puncia"
+        ]
+      },
+      "nixpkgs": [
+        "puncia"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/puncia/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://subdomain.center",
+      "https://github.com/ARPSyndicate/puncia"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/puncia/archive/sharun",
+    "provides": [
+      "puncia"
+    ],
+    "repology": [
+      "puncia"
+    ],
+    "src_url": [
+      "https://pypi.org/project/puncia"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "0.34"
   },
   {
     "_disabled": "false",
@@ -2202,6 +2333,64 @@
     "tag": [
       "editor"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "qbittorrent-enhanced",
+    "pkg_family": "qbittorrent-enhanced",
+    "pkg_id": "github.com.c0re100.qBittorrent-Enhanced-Edition.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/edition-stable/qbittorrent-enhanced/qbittorrent-enhanced",
+    "app_id": "org.qbittorrent.qBittorrent",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/qbittorrent-enhanced/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Enhanced version of qBittorrent with extra features",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "qbittorrent-enhanced",
+          "qbittorrent-enhanced-appimage",
+          "qbittorrent-enhanced-git"
+        ]
+      },
+      "gnuguix": [
+        "qbittorrent-enhanced"
+      ],
+      "nixpkgs": [
+        "qbittorrent-enhanced"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/qbittorrent-enhanced/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/c0re100/qBittorrent-Enhanced-Edition"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/qbittorrent-enhanced/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/qbittorrent-enhanced/appimage/official",
+    "provides": [
+      "qbittorrent-enhanced"
+    ],
+    "repology": [
+      "qbittorrent-enhanced"
+    ],
+    "src_url": [
+      "https://github.com/c0re100/qBittorrent-Enhanced-Edition"
+    ],
+    "tag": [
+      "qbittorrent",
+      "torrent"
+    ],
+    "version": "release-5.1.1.10"
   },
   {
     "_disabled": "false",
@@ -2302,6 +2491,72 @@
       "Utility"
     ],
     "version": "1.0.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "signal-desktop",
+    "pkg_family": "signal-desktop",
+    "pkg_id": "github.com.karo-solutions.Signal-Desktop-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/signal-desktop/signal-desktop",
+    "app_id": "org.signal.Signal",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/signal-desktop/appimage.karo-solutions.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Private, simple, and secure messenger",
+    "distro_pkg": {
+      "alpine": [
+        "signal-desktop"
+      ],
+      "archlinux": {
+        "aur": [
+          "signal-desktop-beta"
+        ],
+        "extra": [
+          "signal-desktop"
+        ]
+      },
+      "homebrew": [
+        "signal"
+      ],
+      "nixpkgs": [
+        "signal-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/signal-desktop/appimage.karo-solutions.stable.yaml",
+    "homepage": [
+      "https://signal.org",
+      "https://github.com/signalapp/signal-desktop"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/signal-desktop/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/karo-solutions/Signal-Desktop-AppImage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/signal-desktop/appimage/karo-solutions",
+    "provides": [
+      "signal-desktop"
+    ],
+    "repology": [
+      "signal-desktop"
+    ],
+    "src_url": [
+      "https://github.com/karo-solutions/Signal-Desktop-AppImage"
+    ],
+    "tag": [
+      "chat",
+      "messenger"
+    ],
+    "version": "v7.59.0"
   },
   {
     "_disabled": "false",
@@ -3578,7 +3833,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b5bd057-250628T022943"
+    "version": "HEAD-7e2504f-250628T233221"
   },
   {
     "_disabled": "false",
@@ -3765,7 +4020,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.15t_2025-06-27"
+    "version": "1.15t_2025-06-28"
   },
   {
     "_disabled": "false",

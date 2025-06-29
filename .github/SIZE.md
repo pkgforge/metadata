@@ -1,12 +1,12 @@
 ```mathematica
  1.2G └─┬ main
  701M   ├─┬ external
- 505M   │ ├─┬ pkgforge-go
- 505M   │ │ ├─┬ data
+ 506M   │ ├─┬ pkgforge-go
+ 506M   │ │ ├─┬ data
   44M   │ │ │ ├── x86_64-Linux.json
   43M   │ │ │ ├── riscv64-Linux.json
   43M   │ │ │ ├── aarch64-Linux.json
-  41M   │ │ │ ├── loongarch64-Linux.json
+  42M   │ │ │ ├── loongarch64-Linux.json
   34M   │ │ │ ├── x86_64-Linux.db
   34M   │ │ │ ├── riscv64-Linux.db
   34M   │ │ │ ├── aarch64-Linux.db
@@ -262,7 +262,7 @@
  1.6M   │   │ ├── x86_64-Linux.db
  1.4M   │   │ ├── x86_64-Linux.sdb
  220K   │   │ ├── x86_64-Linux.db.cba
- 216K   │   │ ├── aarch64-Linux.json
+ 220K   │   │ ├── aarch64-Linux.json
  200K   │   │ ├── x86_64-Linux.json.cba
  196K   │   │ ├── x86_64-Linux.sdb.zstd
  196K   │   │ ├── aarch64-Linux.sdb
@@ -428,7 +428,7 @@
  452K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  408K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  384K   │ │ ├── INDEX.json.cba
- 352K   │ │ ├── COMP_VER_CACHE_OLD.json
+ 364K   │ │ ├── COMP_VER_CACHE_OLD.json
  324K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
  304K   │ │ ├── pub_issues_packages.txt
  260K   │ │ ├── DIFF_bincache_riscv64-Linux.json
@@ -440,7 +440,7 @@
  216K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
  180K   │ │ ├── INDEX.db.xz
- 144K   │ │ ├── COMP_VER_CACHE_OLD.md
+ 148K   │ │ ├── COMP_VER_CACHE_OLD.md
  116K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   80K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json

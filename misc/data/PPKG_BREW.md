@@ -755,6 +755,24 @@
 
 *Outdated*
 
+## cargo-about
+
+**Description:** Cargo plugin to generate list of all licenses for a crate
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.7.1 ✅ | https://github.com/EmbarkStudios/cargo-about/archive/refs/tags/0.7.1.tar.gz |
+| BREW   | 0.7.1 | https://github.com/EmbarkStudios/cargo-about |
+
+## cargo-all-features
+
+**Description:** Cargo subcommands to build and test all feature flag combinations
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 1.10.0 ✅ | https://github.com/frewsxcv/cargo-all-features/archive/refs/tags/1.10.0.tar.gz |
+| BREW   | 1.10.0 | https://github.com/frewsxcv/cargo-all-features |
+
 ## cargo-auditable
 
 **Description:** Make production Rust binaries auditable
@@ -766,6 +784,15 @@
 
 *Outdated*
 
+## cargo-bundle
+
+**Description:** Wrap rust executables in OS-specific app bundles
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.7.0 ✅ | https://github.com/burtonageo/cargo-bundle/archive/refs/tags/v0.7.0.tar.gz |
+| BREW   | 0.7.0 | https://github.com/burtonageo/cargo-bundle |
+
 ## cargo-c
 
 **Description:** A helper program to build and install C-ABI compatible dynamic and static libraries
@@ -776,6 +803,24 @@
 | BREW   | **0.10.14** | https://github.com/lu-zero/cargo-c |
 
 *Outdated*
+
+## cargo-generate
+
+**Description:** Use pre-existing git repositories as templates
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.23.3 ✅ | https://github.com/cargo-generate/cargo-generate/archive/refs/tags/v0.23.3.tar.gz |
+| BREW   | 0.23.3 | https://github.com/cargo-generate/cargo-generate |
+
+## cargo-hack
+
+**Description:** Cargo subcommand to provide options for testing and continuous integration
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.6.36 ✅ | https://github.com/taiki-e/cargo-hack/archive/refs/tags/v0.6.36.tar.gz |
+| BREW   | 0.6.36 | https://github.com/taiki-e/cargo-hack |
 
 ## cargo-llvm-cov
 
@@ -807,6 +852,15 @@
 |--------|---------|-------------|
 | PPKG   | 0.37.24 ✅ | https://github.com/sagiegurari/cargo-make/archive/refs/tags/0.37.24.tar.gz |
 | BREW   | 0.37.24 | https://github.com/sagiegurari/cargo-make |
+
+## cargo-nextest
+
+**Description:** Next-generation test runner for Rust
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.9.99 ✅ | https://github.com/nextest-rs/nextest/archive/refs/tags/cargo-nextest-0.9.99.tar.gz |
+| BREW   | 0.9.99 | https://nexte.st |
 
 ## catch2
 
@@ -1556,6 +1610,15 @@
 |--------|---------|-------------|
 | PPKG   | 1.22.20 ✅ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.20.tar.xz |
 | BREW   | 1.22.20 | https://wiki.debian.org/Teams/Dpkg |
+
+## dra
+
+**Description:** A command-line tool to download release assets from GitHub
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.8.2 ✅ | https://github.com/devmatteini/dra/archive/refs/tags/0.8.2.tar.gz |
+| BREW   | 0.8.2 | https://github.com/devmatteini/dra |
 
 ## dtc
 
@@ -3177,7 +3240,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 7.1.1.43 ⚠️ | https://imagemagick.org/archive/releases/ImageMagick-7.1.1-43.tar.xz |
+| PPKG   | 7.1.1.47 ⚠️ | https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz |
 | BREW   | **7.1.1-47** | https://imagemagick.org/index.php |
 
 *Outdated*
@@ -4958,7 +5021,7 @@
 
 ## libspectre
 
-**Description:** Small library for rendering Postscript documents
+**Description:** A small library for rendering Postscript documents
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
@@ -5989,14 +6052,12 @@
 
 ## mupdf
 
-**Description:** Lightweight PDF and XPS viewer
+**Description:** A lightweight PDF, XPS, and ePub viewer
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.23.11 ⚠️ | https://mupdf.com/downloads/archive/mupdf-1.23.11-source.tar.gz |
-| BREW   | **1.26.2** | https://mupdf.com/ |
-
-*Outdated*
+| PPKG   | 1.26.2 ✅ | https://mupdf.com/downloads/archive/mupdf-1.26.2-source.tar.gz |
+| BREW   | 1.26.2 | https://mupdf.com/ |
 
 ## mvfst
 
@@ -6617,6 +6678,15 @@
 | BREW   | **10.45** | https://www.pcre.org/ |
 
 *Outdated*
+
+## pdf-diff
+
+**Description:** A tool for visualizing differences between two pdf files
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.0.1 ✅ | https://github.com/serhack/pdf-diff/archive/refs/tags/v0.0.1.tar.gz |
+| BREW   | 0.0.1 | https://github.com/serhack/pdf-diff |
 
 ## pdsh
 
@@ -8091,6 +8161,24 @@
 |--------|---------|-------------|
 | PPKG   | 2.0.1 ✅ | https://github.com/RasmusLindroth/tut/archive/refs/tags/2.0.1.tar.gz |
 | BREW   | 2.0.1 | https://tut.anv.nu |
+
+## typst
+
+**Description:** Markup-based typesetting system
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.13.1 ✅ | https://github.com/typst/typst/archive/refs/tags/v0.13.1.tar.gz |
+| BREW   | 0.13.1 | https://typst.app/ |
+
+## typstyle
+
+**Description:** A beautiful and reliable code formatter for Typst
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.13.11 ✅ | https://github.com/Enter-tainer/typstyle/archive/refs/tags/v0.13.11.tar.gz |
+| BREW   | 0.13.11 | https://enter-tainer.github.io/typstyle/ |
 
 ## unbound
 

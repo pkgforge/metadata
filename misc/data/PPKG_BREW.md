@@ -397,7 +397,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.28 ⚠️ | null |
+| PPKG   | 2025.06.29 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1410,6 +1410,15 @@
 
 *Outdated*
 
+## diskus
+
+**Description:** A minimal, fast alternative to du -sh
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.8.0 ✅ | https://github.com/sharkdp/diskus/archive/refs/tags/v0.8.0.tar.gz |
+| BREW   | 0.8.0 | https://github.com/sharkdp/diskus |
+
 ## distcc
 
 **Description:** A fast, free distributed C/C++ compiler
@@ -1565,8 +1574,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.3.0 ✅ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
-| BREW   | 0.3.0 | https://github.com/robertpsoane/ducker |
+| PPKG   | 0.3.0 ⚠️ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
+| BREW   | **0.3.1** | https://github.com/robertpsoane/ducker |
+
+*Outdated*
 
 ## duf
 
@@ -2363,6 +2374,15 @@
 | BREW   | **5.2.2** | https://giflib.sourceforge.net/ |
 
 *Outdated*
+
+## gifski
+
+**Description:** Highest-quality GIF encoder based on pngquant
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 1.33.0 ✅ | https://github.com/ImageOptim/gifski/archive/refs/tags/1.33.0.tar.gz |
+| BREW   | 1.33.0 | https://gif.ski/ |
 
 ## git
 
@@ -3582,8 +3602,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.7.4 ✅ | https://download.gnome.org/sources/libadwaita/1.7/libadwaita-1.7.4.tar.xz |
-| BREW   | 1.7.4 | https://gnome.pages.gitlab.gnome.org/libadwaita/ |
+| PPKG   | 1.7.4 ⚠️ | https://download.gnome.org/sources/libadwaita/1.7/libadwaita-1.7.4.tar.xz |
+| BREW   | **1.7.5** | https://gnome.pages.gitlab.gnome.org/libadwaita/ |
+
+*Outdated*
 
 ## libaec
 
@@ -4462,7 +4484,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.28 ⚠️ | null |
+| PPKG   | 2025.06.29 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6511,7 +6533,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.28 ⚠️ | null |
+| PPKG   | 2025.06.29 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6669,7 +6691,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.28 ⚠️ | null |
+| PPKG   | 2025.06.29 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6831,7 +6853,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.28 ⚠️ | null |
+| PPKG   | 2025.06.29 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -6999,7 +7021,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2024.01.13 ⚠️ | https://bellard.org/quickjs/quickjs-2024-01-13.tar.xz |
+| PPKG   | 2025.04.26 ⚠️ | https://bellard.org/quickjs/quickjs-2025-04-26.tar.xz |
 | BREW   | **2025-04-26** | https://bellard.org/quickjs/ |
 
 *Outdated*
@@ -7202,6 +7224,15 @@
 | BREW   | **0.34.1** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
+
+## rpm
+
+**Description:** RedHat Package Manager
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 4.20.1 ✅ | https://ftp.osuosl.org/pub/rpm/releases/rpm-4.20.x/rpm-4.20.1.tar.bz2 |
+| BREW   | 4.20.1 | https://rpm.org/ |
 
 ## rsync
 

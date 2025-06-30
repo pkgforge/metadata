@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.29 ⚠️ | null |
+| PPKG   | 2025.06.30 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2857,10 +2857,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 12.2.0 ⚠️ | https://gitlab.com/graphviz/graphviz/-/archive/12.2.0/graphviz-12.2.0.tar.bz2 |
-| BREW   | **13.0.1** | https://graphviz.org/ |
-
-*Outdated*
+| PPKG   | 13.0.1 ✅ | https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.0.1/graphviz-13.0.1.tar.xz |
+| BREW   | 13.0.1 | https://graphviz.org/ |
 
 ## grep
 
@@ -4549,7 +4547,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.29 ⚠️ | null |
+| PPKG   | 2025.06.30 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5895,10 +5893,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 24.2.8 ⚠️ | https://mesa.freedesktop.org/archive/mesa-24.2.8.tar.xz |
-| BREW   | **25.1.4** | https://www.mesa3d.org/ |
-
-*Outdated*
+| PPKG   | 25.1.4 ✅ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
+| BREW   | 25.1.4 | https://www.mesa3d.org/ |
 
 ## mftrace
 
@@ -6447,7 +6443,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.65.0 ⚠️ | https://github.com/open-policy-agent/opa/archive/refs/tags/v0.65.0.tar.gz |
-| BREW   | **1.5.1** | https://www.openpolicyagent.org |
+| BREW   | **1.6.0** | https://www.openpolicyagent.org |
 
 *Outdated*
 
@@ -6598,7 +6594,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.29 ⚠️ | null |
+| PPKG   | 2025.06.30 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6744,7 +6740,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.48.2** | https://pixi.sh |
+| BREW   | **0.49.0** | https://pixi.sh |
 
 *Outdated*
 
@@ -6765,7 +6761,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.29 ⚠️ | null |
+| PPKG   | 2025.06.30 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6927,7 +6923,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.29 ⚠️ | null |
+| PPKG   | 2025.06.30 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7377,7 +7373,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-06-23** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-06-30** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 
@@ -7874,7 +7870,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.13.1 ⚠️ | https://github.com/taglib/taglib/archive/refs/tags/v1.13.1.tar.gz |
-| BREW   | **2.1** | https://taglib.org/ |
+| BREW   | **2.1.1** | https://taglib.org/ |
 
 *Outdated*
 
@@ -7895,10 +7891,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.77.0 ⚠️ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.77.0.tar.gz |
-| BREW   | **1.85.5** | https://github.com/k1LoW/tbls |
-
-*Outdated*
+| PPKG   | 1.85.5 ✅ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.85.5.tar.gz |
+| BREW   | 1.85.5 | https://github.com/k1LoW/tbls |
 
 ## tcc
 
@@ -8308,7 +8302,7 @@
 
 ## vala-language-server
 
-**Description:** Code Intelligence for Vala & Genie
+**Description:** A language server for Vala
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|

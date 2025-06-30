@@ -268,8 +268,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.56.2 ✅ | https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.2.tar.xz |
-| BREW   | 2.56.2 | https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/ |
+| PPKG   | 2.56.2 ⚠️ | https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.2.tar.xz |
+| BREW   | **2.56.3** | https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/ |
+
+*Outdated*
 
 ## atuin
 
@@ -6056,8 +6058,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.26.2 ✅ | https://mupdf.com/downloads/archive/mupdf-1.26.2-source.tar.gz |
-| BREW   | 1.26.2 | https://mupdf.com/ |
+| PPKG   | 1.26.2 ⚠️ | https://mupdf.com/downloads/archive/mupdf-1.26.2-source.tar.gz |
+| BREW   | **1.26.3** | https://mupdf.com/ |
+
+*Outdated*
 
 ## mvfst
 
@@ -8276,7 +8280,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.7.16** | https://docs.astral.sh/uv/ |
+| BREW   | **0.7.17** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

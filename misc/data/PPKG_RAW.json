@@ -488,7 +488,7 @@
   {
     "pkgname": "appimage-runtime-type2",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "MIT",
     "summary": "type2 AppImage runtime",
     "web-url": "https://github.com/AppImage/type2-runtime",
@@ -507,7 +507,7 @@
   {
     "pkgname": "appimagetool",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A command-line tool to generate an AppImage from an existing AppDir",
     "web-url": "https://github.com/AppImage/appimagetool",
     "git-url": "https://github.com/AppImage/appimagetool",
@@ -956,7 +956,7 @@
   {
     "pkgname": "base16",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "base16 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -971,7 +971,7 @@
   {
     "pkgname": "base64",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "base64 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -1171,7 +1171,7 @@
   {
     "pkgname": "bin-graph",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "GPL-3.0",
     "summary": "A command-line tool for visualizing the different regions of a binary file",
     "web-url": "https://github.com/8dcc/bin-graph",
@@ -1471,7 +1471,7 @@
   {
     "pkgname": "boringssl",
     "pkgtype": "exe+lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A fork of OpenSSL that is designed to meet Google needs",
     "web-url": "https://boringssl.googlesource.com/boringssl/",
     "git-url": "https://github.com/google/boringssl",
@@ -1745,7 +1745,7 @@
   {
     "pkgname": "c-examples",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "C语言学习项目",
     "web-url": "https://github.com/leleliu008/C-examples",
@@ -2796,7 +2796,7 @@
   {
     "pkgname": "cpuinfo",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -3886,7 +3886,7 @@
   {
     "pkgname": "easyutils",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A collections of easy to use command-line utilities",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -3937,7 +3937,7 @@
   {
     "pkgname": "effcee",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A C++ library for stateful pattern matching of strings",
     "web-url": "https://github.com/google/effcee",
     "git-url": "https://github.com/google/effcee",
@@ -4542,7 +4542,7 @@
     "git-url": "https://github.com/FFmpeg/FFmpeg",
     "src-url": "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz",
     "src-sha": "733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1",
-    "dep-pkg": "libtesseract librubberband libbluray libaribb24 libass libarchive libvidstab libopencore-amr libSvtAv1 libmp3lame libtheora libspeex librav1e libdav1d libx264 libx265 libxvid libvpx libaom libsdl2 libzimg libzmq libssh libsrt librist xorg-libxv",
+    "dep-pkg": "libtesseract librubberband libbluray libaribb24 libass libarchive libvidstab libopencore-amr libSvtAv1 libmp3lame libtheora libspeex librav1e libdav1d libx264 libx265 libxvid libvpx libaom libsdl2 libzimg libzmq libssh libsrt librist xorg-libxv libva",
     "dep-lib": "tesseract -lstdc++ -lgomp -lm",
     "dep-upp": "nasm curl bsdtar gmake",
     "bsystem": "gmake",
@@ -4550,7 +4550,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "unset CONFIGURE_EXTRA_ARGS\n\ncase $TARGET_PLATFORM_ARCH in\n    aarch64) CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    arm64)   CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    armv7a)  CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    i686)    CONFIGURE_EXTRA_ARGS='--disable-asm' ;;\nesac\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS=\"$CONFIGURE_EXTRA_ARGS --enable-videotoolbox --enable-audiotoolbox\"\n\n    CLANG_VERSION_MAJOR=\"$(\"$CC\" -E -dM - < /dev/null | grep __clang_major__ | cut -d ' ' -f3)\"\n\n    # https://github.com/spack/spack/issues/40159\n    if [ \"$CLANG_VERSION_MAJOR\" -ge 15 ] ; then\n        export LDFLAGS=\"$LDFLAGS -Wl,-ld_classic\"\n    fi\n\n    TARGET_OS=darwin\nelse\n    TARGET_OS=\"$TARGET_PLATFORM_NAME\"\nfi\n\ngsed -i 's|-lxvidcore|-lxvidcore -lm|' configure\ngsed -i \"/SDL2_CONFIG=/c SDL2_CONFIG='$libsdl2_INSTALL_DIR/bin/sdl2-config'\" configure\n\nif run ./configure \\\n    --prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    --sysroot=\"$SYSROOT\" \\\n    --ar=\"$AR\" \\\n    --as=\"$CC\" \\\n    --ld=\"$CC\" \\\n    --cc=\"$CC\" \\\n    --cxx=\"$CXX\" \\\n    --nm=\"$NM\" \\\n    --ranlib=\"$RANLIB\" \\\n    --strip=\"$STRIP\" \\\n    --pkg-config=\"$PKG_CONFIG\" \\\n    --arch=\"$TARGET_PLATFORM_ARCH\" \\\n    --target-os=\"$TARGET_OS\" \\\n    --enable-pic \\\n    --enable-static \\\n    --disable-shared \\\n    --enable-ffplay \\\n    --enable-ffprobe \\\n    --enable-openssl \\\n    --enable-version3 \\\n    --enable-libtesseract \\\n    --enable-librubberband \\\n    --enable-libfontconfig \\\n    --enable-libharfbuzz \\\n    --enable-libfreetype \\\n    --enable-libfribidi \\\n    --enable-libopenjpeg \\\n    --enable-libaribb24 \\\n    --enable-libbluray \\\n    --enable-libvidstab \\\n    --enable-libopencore-amrnb \\\n    --enable-libopencore-amrwb \\\n    --enable-libmp3lame \\\n    --enable-libtheora \\\n    --enable-libvorbis \\\n    --enable-libsvtav1 \\\n    --enable-libspeex \\\n    --enable-librav1e \\\n    --enable-libdav1d \\\n    --enable-libopus \\\n    --enable-libwebp \\\n    --enable-libx264 \\\n    --enable-libx265 \\\n    --enable-libxvid \\\n    --enable-libsoxr \\\n    --enable-libvpx \\\n    --enable-libsrt \\\n    --enable-libssh \\\n    --enable-libass \\\n    --enable-libaom \\\n    --enable-libjxl \\\n    --enable-libvmaf \\\n    --enable-libxml2 \\\n    --enable-librist \\\n    --enable-libzimg \\\n    --enable-libzmq \\\n    --enable-lzma \\\n    --enable-sdl \\\n    --enable-gpl \\\n    --disable-jni \\\n    --disable-doc \\\n    --disable-debug \\\n    --disable-vulkan \\\n    --disable-libjack \\\n    --disable-indev=jack \\\n    --disable-mediacodec \\\n    --disable-libfdk-aac \\\n    $CONFIGURE_EXTRA_ARGS ; then\n    gmakew clean\n    gmakew install V=1\n    run cp ffbuild/config.log .\nelse\n    cat ffbuild/config.log\n    return 1\nfi"
+    "install": "unset CONFIGURE_EXTRA_ARGS\n\ncase $TARGET_PLATFORM_ARCH in\n    aarch64) CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    arm64)   CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    armv7a)  CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    i686)    CONFIGURE_EXTRA_ARGS='--disable-asm' ;;\nesac\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS=\"$CONFIGURE_EXTRA_ARGS --enable-videotoolbox --enable-audiotoolbox\"\n\n    CLANG_VERSION_MAJOR=\"$(\"$CC\" -E -dM - < /dev/null | grep __clang_major__ | cut -d ' ' -f3)\"\n\n    # https://github.com/spack/spack/issues/40159\n    if [ \"$CLANG_VERSION_MAJOR\" -ge 15 ] ; then\n        export LDFLAGS=\"$LDFLAGS -Wl,-ld_classic\"\n    fi\n\n    TARGET_OS=darwin\nelse\n    TARGET_OS=\"$TARGET_PLATFORM_NAME\"\nfi\n\ngsed -i 's|-lxvidcore|-lxvidcore -lm|' configure\ngsed -i \"/SDL2_CONFIG=/c SDL2_CONFIG='$libsdl2_INSTALL_DIR/bin/sdl2-config'\" configure\n\nif run ./configure \\\n    --prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    --sysroot=\"$SYSROOT\" \\\n    --ar=\"$AR\" \\\n    --as=\"$CC\" \\\n    --ld=\"$CC\" \\\n    --cc=\"$CC\" \\\n    --cxx=\"$CXX\" \\\n    --nm=\"$NM\" \\\n    --ranlib=\"$RANLIB\" \\\n    --strip=\"$STRIP\" \\\n    --pkg-config=\"$PKG_CONFIG\" \\\n    --arch=\"$TARGET_PLATFORM_ARCH\" \\\n    --target-os=\"$TARGET_OS\" \\\n    --enable-pic \\\n    --enable-vaapi \\\n    --enable-static \\\n    --disable-shared \\\n    --enable-ffplay \\\n    --enable-ffprobe \\\n    --enable-openssl \\\n    --enable-version3 \\\n    --enable-libtesseract \\\n    --enable-librubberband \\\n    --enable-libfontconfig \\\n    --enable-libharfbuzz \\\n    --enable-libfreetype \\\n    --enable-libfribidi \\\n    --enable-libopenjpeg \\\n    --enable-libaribb24 \\\n    --enable-libbluray \\\n    --enable-libvidstab \\\n    --enable-libopencore-amrnb \\\n    --enable-libopencore-amrwb \\\n    --enable-libmp3lame \\\n    --enable-libtheora \\\n    --enable-libvorbis \\\n    --enable-libsvtav1 \\\n    --enable-libspeex \\\n    --enable-librav1e \\\n    --enable-libdav1d \\\n    --enable-libopus \\\n    --enable-libwebp \\\n    --enable-libx264 \\\n    --enable-libx265 \\\n    --enable-libxvid \\\n    --enable-libsoxr \\\n    --enable-libvpx \\\n    --enable-libsrt \\\n    --enable-libssh \\\n    --enable-libass \\\n    --enable-libaom \\\n    --enable-libjxl \\\n    --enable-libvmaf \\\n    --enable-libxml2 \\\n    --enable-librist \\\n    --enable-libzimg \\\n    --enable-libzmq \\\n    --enable-lzma \\\n    --enable-sdl \\\n    --enable-gpl \\\n    --disable-jni \\\n    --disable-doc \\\n    --disable-debug \\\n    --disable-vulkan \\\n    --disable-libjack \\\n    --disable-indev=jack \\\n    --disable-mediacodec \\\n    --disable-libfdk-aac \\\n    $CONFIGURE_EXTRA_ARGS ; then\n    gmakew clean\n    gmakew install V=1\n    run cp ffbuild/config.log .\nelse\n    cat ffbuild/config.log\n    return 1\nfi"
   },
   {
     "pkgname": "ffmpeg-dev",
@@ -4562,14 +4562,14 @@
     "git-url": "https://github.com/FFmpeg/FFmpeg",
     "src-url": "https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz",
     "src-sha": "40973d44970dbc83ef302b0609f2e74982be2d85916dd2ee7472d30678a7abe6",
-    "dep-pkg": "libtesseract librubberband libbluray libaribb24 libass libarchive libvidstab libopencore-amr libSvtAv1 libmp3lame libtheora libspeex librav1e libdav1d libx264 libx265 libxvid libvpx libaom libsdl2 libzimg libzmq libssh libsrt librist xorg-libxv",
+    "dep-pkg": "libtesseract librubberband libbluray libaribb24 libass libarchive libvidstab libopencore-amr libSvtAv1 libmp3lame libtheora libspeex librav1e libdav1d libx264 libx265 libxvid libvpx libaom libsdl2 libzimg libzmq libssh libsrt librist xorg-libxv libva",
     "dep-upp": "nasm curl bsdtar gmake",
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "unset CONFIGURE_EXTRA_ARGS\n\ncase $TARGET_PLATFORM_ARCH in\n    aarch64) CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    arm64)   CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    armv7a)  CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    i686)    CONFIGURE_EXTRA_ARGS='--disable-asm' ;;\nesac\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS=\"$CONFIGURE_EXTRA_ARGS --enable-videotoolbox --enable-audiotoolbox\"\n\n    CLANG_VERSION_MAJOR=\"$(\"$CC\" -E -dM - < /dev/null | grep __clang_major__ | cut -d ' ' -f3)\"\n\n    # https://github.com/spack/spack/issues/40159\n    if [ \"$CLANG_VERSION_MAJOR\" -ge 15 ] ; then\n        export LDFLAGS=\"$LDFLAGS -Wl,-ld_classic\"\n    fi\n\n    TARGET_OS=darwin\nelse\n    TARGET_OS=\"$TARGET_PLATFORM_NAME\"\nfi\n\ngsed -i 's|-lxvidcore|-lxvidcore -lm|' configure\ngsed -i \"/SDL2_CONFIG=/c SDL2_CONFIG='$libsdl2_INSTALL_DIR/bin/sdl2-config'\" configure\n\nif run ./configure \\\n    --prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    --sysroot=\"$SYSROOT\" \\\n    --ar=\"$AR\" \\\n    --as=\"$CC\" \\\n    --ld=\"$CC\" \\\n    --cc=\"$CC\" \\\n    --cxx=\"$CXX\" \\\n    --nm=\"$NM\" \\\n    --ranlib=\"$RANLIB\" \\\n    --strip=\"$STRIP\" \\\n    --pkg-config=\"$PKG_CONFIG\" \\\n    --arch=\"$TARGET_PLATFORM_ARCH\" \\\n    --target-os=\"$TARGET_OS\" \\\n    --enable-pic \\\n    --enable-static \\\n    --enable-shared \\\n    --enable-ffplay \\\n    --enable-ffprobe \\\n    --enable-openssl \\\n    --enable-version3 \\\n    --enable-libtesseract \\\n    --enable-librubberband \\\n    --enable-libfontconfig \\\n    --enable-libharfbuzz \\\n    --enable-libfreetype \\\n    --enable-libfribidi \\\n    --enable-libopenjpeg \\\n    --enable-libaribb24 \\\n    --enable-libbluray \\\n    --enable-libvidstab \\\n    --enable-libopencore-amrnb \\\n    --enable-libopencore-amrwb \\\n    --enable-libmp3lame \\\n    --enable-libtheora \\\n    --enable-libvorbis \\\n    --enable-libsvtav1 \\\n    --enable-libspeex \\\n    --enable-librav1e \\\n    --enable-libdav1d \\\n    --enable-libopus \\\n    --enable-libwebp \\\n    --enable-libx264 \\\n    --enable-libx265 \\\n    --enable-libxvid \\\n    --enable-libsoxr \\\n    --enable-libvpx \\\n    --enable-libsrt \\\n    --enable-libssh \\\n    --enable-libass \\\n    --enable-libaom \\\n    --enable-libjxl \\\n    --enable-libvmaf \\\n    --enable-libxml2 \\\n    --enable-librist \\\n    --enable-libzimg \\\n    --enable-libzmq \\\n    --enable-lzma \\\n    --enable-sdl \\\n    --enable-gpl \\\n    --disable-jni \\\n    --disable-doc \\\n    --disable-debug \\\n    --disable-vulkan \\\n    --disable-libjack \\\n    --disable-indev=jack \\\n    --disable-mediacodec \\\n    --disable-libfdk-aac \\\n    $CONFIGURE_EXTRA_ARGS ; then\n    gmakew clean\n    gmakew install V=1\n    run cp ffbuild/config.log .\nelse\n    cat ffbuild/config.log\n    return 1\nfi"
+    "install": "unset CONFIGURE_EXTRA_ARGS\n\ncase $TARGET_PLATFORM_ARCH in\n    aarch64) CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    arm64)   CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    armv7a)  CONFIGURE_EXTRA_ARGS='--enable-neon' ;;\n    i686)    CONFIGURE_EXTRA_ARGS='--disable-asm' ;;\nesac\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    CONFIGURE_EXTRA_ARGS=\"$CONFIGURE_EXTRA_ARGS --enable-videotoolbox --enable-audiotoolbox\"\n\n    CLANG_VERSION_MAJOR=\"$(\"$CC\" -E -dM - < /dev/null | grep __clang_major__ | cut -d ' ' -f3)\"\n\n    # https://github.com/spack/spack/issues/40159\n    if [ \"$CLANG_VERSION_MAJOR\" -ge 15 ] ; then\n        export LDFLAGS=\"$LDFLAGS -Wl,-ld_classic\"\n    fi\n\n    TARGET_OS=darwin\nelse\n    TARGET_OS=\"$TARGET_PLATFORM_NAME\"\nfi\n\ngsed -i 's|-lxvidcore|-lxvidcore -lm|' configure\ngsed -i \"/SDL2_CONFIG=/c SDL2_CONFIG='$libsdl2_INSTALL_DIR/bin/sdl2-config'\" configure\n\nif run ./configure \\\n    --prefix=\"$PACKAGE_INSTALL_DIR\" \\\n    --sysroot=\"$SYSROOT\" \\\n    --ar=\"$AR\" \\\n    --as=\"$CC\" \\\n    --ld=\"$CC\" \\\n    --cc=\"$CC\" \\\n    --cxx=\"$CXX\" \\\n    --nm=\"$NM\" \\\n    --ranlib=\"$RANLIB\" \\\n    --strip=\"$STRIP\" \\\n    --pkg-config=\"$PKG_CONFIG\" \\\n    --arch=\"$TARGET_PLATFORM_ARCH\" \\\n    --target-os=\"$TARGET_OS\" \\\n    --enable-pic \\\n    --enable-vaapi \\\n    --enable-static \\\n    --enable-shared \\\n    --enable-ffplay \\\n    --enable-ffprobe \\\n    --enable-openssl \\\n    --enable-version3 \\\n    --enable-libtesseract \\\n    --enable-librubberband \\\n    --enable-libfontconfig \\\n    --enable-libharfbuzz \\\n    --enable-libfreetype \\\n    --enable-libfribidi \\\n    --enable-libopenjpeg \\\n    --enable-libaribb24 \\\n    --enable-libbluray \\\n    --enable-libvidstab \\\n    --enable-libopencore-amrnb \\\n    --enable-libopencore-amrwb \\\n    --enable-libmp3lame \\\n    --enable-libtheora \\\n    --enable-libvorbis \\\n    --enable-libsvtav1 \\\n    --enable-libspeex \\\n    --enable-librav1e \\\n    --enable-libdav1d \\\n    --enable-libopus \\\n    --enable-libwebp \\\n    --enable-libx264 \\\n    --enable-libx265 \\\n    --enable-libxvid \\\n    --enable-libsoxr \\\n    --enable-libvpx \\\n    --enable-libsrt \\\n    --enable-libssh \\\n    --enable-libass \\\n    --enable-libaom \\\n    --enable-libjxl \\\n    --enable-libvmaf \\\n    --enable-libxml2 \\\n    --enable-librist \\\n    --enable-libzimg \\\n    --enable-libzmq \\\n    --enable-lzma \\\n    --enable-sdl \\\n    --enable-gpl \\\n    --disable-jni \\\n    --disable-doc \\\n    --disable-debug \\\n    --disable-vulkan \\\n    --disable-libjack \\\n    --disable-indev=jack \\\n    --disable-mediacodec \\\n    --disable-libfdk-aac \\\n    $CONFIGURE_EXTRA_ARGS ; then\n    gmakew clean\n    gmakew install V=1\n    run cp ffbuild/config.log .\nelse\n    cat ffbuild/config.log\n    return 1\nfi"
   },
   {
     "pkgname": "fftw",
@@ -6193,7 +6193,7 @@
   {
     "pkgname": "gn",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A meta-build system that generates build files for ninja",
     "web-url": "https://gn.googlesource.com/gn",
     "git-url": "https://gn.googlesource.com/gn",
@@ -6534,7 +6534,7 @@
   {
     "pkgname": "gomobile",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A tool for building and running mobile apps written in golang",
     "web-url": "https://github.com/golang/mobile",
     "git-url": "https://github.com/golang/mobile",
@@ -6919,21 +6919,21 @@
   {
     "pkgname": "graphviz",
     "pkgtype": "exe",
-    "version": "12.2.0",
+    "version": "13.0.1",
     "license": "EPL-1.0",
     "summary": "An open source graph visualization software",
     "web-url": "https://www.graphviz.org/",
     "git-url": "https://gitlab.com/graphviz/graphviz",
-    "src-url": "https://gitlab.com/graphviz/graphviz/-/archive/12.2.0/graphviz-12.2.0.tar.bz2",
-    "src-sha": "56090fb1e5986919d6099041871744d84231d632f8649ea07028052a5487d444",
-    "dep-pkg": "libtool libgd libpango",
-    "dep-upp": "libtool gm4 flex bison gawk git python3 curl bsdtar gmake gm4 perl autoconf automake gmake",
-    "bsystem": "autogen",
+    "src-url": "https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.0.1/graphviz-13.0.1.tar.xz",
+    "src-sha": "eabb50ea256165a072e99c46a00cce9cb9063b6bf6b3bd8e088c9855212b664a",
+    "dep-pkg": "libltdl librsvg libgd",
+    "dep-upp": "libtool gm4 flex bison gawk git python3 curl bsdtar gmake gmake",
+    "bsystem": "configure",
     "binbstd": "0",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "configure --disable-swig"
+    "install": "configure \\\n    --disable-swig \\\n    --disable-php \\\n    --disable-tcl \\\n    --without-gdk \\\n    --without-gtk \\\n    --without-qt \\\n    --without-x \\\n    --with-freetype2 \\\n    --with-gdk-pixbuf"
   },
   {
     "pkgname": "grep",
@@ -7444,7 +7444,7 @@
   {
     "pkgname": "hdiffpatch",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "MIT",
     "summary": "A command-line tools for diff & patch",
     "web-url": "https://github.com/sisong/HDiffPatch",
@@ -7830,7 +7830,7 @@
   {
     "pkgname": "hunter",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "The fastest file manager in the galaxy!",
     "web-url": "https://github.com/rabite0/hunter",
     "git-url": "https://github.com/rabite0/hunter",
@@ -9358,6 +9358,25 @@
     "install": "cmakew 2 \\\n    -DASSIMP_BUILD_TESTS=OFF \\\n    -DASSIMP_BUILD_ASSIMP_TOOLS=OFF"
   },
   {
+    "pkgname": "libassimp@5",
+    "pkgtype": "lib",
+    "version": "5.4.3",
+    "license": "BSD-3-Clause CC-PDDC MIT BSL-1.0 Unlicense Zlib",
+    "summary": "Portable library for importing many well-known 3D model formats",
+    "web-url": "https://www.assimp.org/",
+    "git-url": "https://github.com/assimp/assimp",
+    "src-url": "https://github.com/assimp/assimp/archive/refs/tags/v5.4.3.tar.gz",
+    "src-sha": "66dfbaee288f2bc43172440a55d0235dfc7bf885dda6435c038e8000e79582cb",
+    "dep-pkg": "libz",
+    "dep-upp": "curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "cmakew 2 \\\n    -DASSIMP_BUILD_TESTS=OFF \\\n    -DASSIMP_BUILD_ASSIMP_TOOLS=OFF"
+  },
+  {
     "pkgname": "libassuan",
     "pkgtype": "lib",
     "version": "2.5.7",
@@ -9528,7 +9547,7 @@
   {
     "pkgname": "libbcrypt",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A password hashing method based on the Blowfish block cipher, provided via the crypt(3) and a reentrant interface",
     "web-url": "https://www.openwall.com/crypt",
     "git-url": "https://github.com/leleliu008/libbcrypt",
@@ -9813,7 +9832,7 @@
   {
     "pkgname": "libcamera",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "MIT",
     "summary": "An open source camera stack and framework",
     "web-url": "https://libcamera.org/",
@@ -10180,7 +10199,7 @@
   {
     "pkgname": "libcpuinfo",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -10805,7 +10824,7 @@
   {
     "pkgname": "libexecinfo",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A quick-n-dirty BSD licensed clone of backtrace facility found in the GNU libc",
     "web-url": "https://github.com/leleliu008/libexecinfo",
     "git-url": "https://github.com/leleliu008/libexecinfo",
@@ -11621,7 +11640,7 @@
   {
     "pkgname": "libglob",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "glob(3) implementation",
     "web-url": "https://linux.die.net/man/3/glob",
     "git-url": "https://github.com/leleliu008/libglob",
@@ -12322,7 +12341,7 @@
   {
     "pkgname": "libintl-lite",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "BSL-1.0",
     "summary": "A simple (but less powerful) GNU gettext libintl replacement",
     "web-url": "https://github.com/j-jorge/libintl-lite",
@@ -13147,7 +13166,7 @@
   {
     "pkgname": "libmesalink",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "BSD-3-Clause",
     "summary": "memory-safe and OpenSSL-compatible TLS library",
     "web-url": "https://mesalink.io",
@@ -13216,7 +13235,7 @@
   {
     "pkgname": "libmill",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "MIT",
     "summary": "Go-style concurrency in C",
     "web-url": "https://github.com/sustrik/libmill",
@@ -13684,7 +13703,7 @@
   {
     "pkgname": "libnghttp3",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -13717,7 +13736,7 @@
   {
     "pkgname": "libngtcp2",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -14913,7 +14932,7 @@
   {
     "pkgname": "libquiche",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "BSD-2-Clause",
     "summary": "Savoury implementation of the QUIC transport protocol and HTTP/3",
     "web-url": "https://github.com/cloudflare/quiche",
@@ -15441,7 +15460,7 @@
   {
     "pkgname": "libsequoia",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "An OpenPGP backend for rpm using Sequoia PGP",
     "web-url": "https://github.com/rpm-software-management/rpm-sequoia",
     "git-url": "https://github.com/rpm-software-management/rpm-sequoia",
@@ -15886,6 +15905,7 @@
     "src-sha": "6cebd1d8403fc58c30e93939b246f3e6e58d0765a5cd50546f16c00fd805d2c3",
     "dep-upp": "curl bsdtar",
     "binbstd": "0",
+    "ppflags": "-DSQLITE_ENABLE_API_ARMOR=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1 -DSQLITE_ENABLE_FTS3=1 -DSQLITE_ENABLE_FTS3_PARENTHESIS=1 -DSQLITE_ENABLE_FTS5=1 -DSQLITE_ENABLE_JSON1=1 -DSQLITE_ENABLE_MEMORY_MANAGEMENT=1 -DSQLITE_ENABLE_RTREE=1 -DSQLITE_ENABLE_STAT4=1 -DSQLITE_ENABLE_UNLOCK_NOTIFY=1 -DSQLITE_MAX_VARIABLE_NUMBER=250000 -DSQLITE_USE_URI=1",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
@@ -17106,7 +17126,7 @@
   {
     "pkgname": "libwordexp",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "wordexp(3) implementation",
     "web-url": "https://linux.die.net/man/3/wordexp",
     "git-url": "https://github.com/leleliu008/libwordexp",
@@ -17691,7 +17711,7 @@
   {
     "pkgname": "lief",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "Library to Instrument Executable Formats",
     "web-url": "https://github.com/lief-project/LIEF",
@@ -18110,7 +18130,7 @@
   {
     "pkgname": "lodepng",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Zlib",
     "summary": "PNG encoder and decoder in C and C++",
     "web-url": "https://github.com/lvandeve/lodepng",
@@ -18639,23 +18659,23 @@
   {
     "pkgname": "mesa",
     "pkgtype": "lib",
-    "version": "24.2.8",
+    "version": "25.1.4",
     "license": "MIT",
     "summary": "Graphics Library",
     "web-url": "https://www.mesa3d.org/",
     "git-url": "https://gitlab.freedesktop.org/mesa/mesa",
-    "src-url": "https://mesa.freedesktop.org/archive/mesa-24.2.8.tar.xz",
-    "src-sha": "999d0a854f43864fc098266aaf25600ce7961318a1e2e358bff94a7f53580e30",
+    "src-url": "https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz",
+    "src-sha": "164872a5e792408aa72fecd52b7be6409724c4ad81700798675a7d801d976704",
     "dep-pkg": "xorg-libxdamage xorg-libxxf86vm xorg-libxvmc xorg-libxshmfence xorg-libxpresent wayland-protocols libvdpau libva libclc liblua libsensors libarchive glslang bindgen",
     "dep-upp": "gm4 flex bison cbindgen curl bsdtar python3 python3 ninja",
-    "dep-pym": "Mako PyYAML ply meson",
-    "bsystem": "meson",
-    "binbstd": "0",
+    "dep-pym": "Mako MarkupSafe PyYAML packaging ply meson",
+    "bsystem": "meson cargo",
+    "binbstd": "1",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
     "dopatch": "gsed -i \"/clangBasic/a cpp.find_library('clangAPINotes', dirs : llvm_libdir),\" src/gallium/targets/opencl/meson.build",
-    "install": "mesonw \\\n    -Dglx=dri \\\n    -Degl=enabled \\\n    -Dgbm=enabled \\\n    -Ddri3=enabled \\\n    -Dllvm=enabled \\\n    -Dshared-llvm=disabled \\\n    -Dopengl=true \\\n    -Dgles1=enabled \\\n    -Dgles2=enabled \\\n    -Dlibunwind=disabled \\\n    -Dvalgrind=disabled \\\n    -Dintel-clc=enabled \\\n    -Dlmsensors=enabled \\\n    -Dgallium-extra-hud=true \\\n    -Dgallium-nine=true \\\n    -Dgallium-opencl=icd \\\n    -Dgallium-va=enabled \\\n    -Dgallium-xa=enabled \\\n    -Dgallium-vdpau=enabled \\\n    -Dgallium-omx=disabled \\\n    -Dgallium-drivers=auto \\\n    -Dvulkan-drivers=auto  \\\n    -Dplatforms=x11,wayland \\\n    -Dvideo-codecs=all \\\n    -Dtools=drm-shim,etnaviv,freedreno,glsl,nir,nouveau,lima \\\n    -Db_ndebug=true"
+    "install": "mesonw \\\n    -Dglx=dri \\\n    -Degl=enabled \\\n    -Dgbm=enabled \\\n    -Dllvm=enabled \\\n    -Dshared-llvm=disabled \\\n    -Dopengl=true \\\n    -Dgles1=enabled \\\n    -Dgles2=enabled \\\n    -Dlibunwind=disabled \\\n    -Dvalgrind=disabled \\\n    -Dintel-clc=enabled \\\n    -Dlmsensors=enabled \\\n    -Dgallium-extra-hud=true \\\n    -Dgallium-nine=true \\\n    -Dgallium-opencl=icd \\\n    -Dgallium-va=enabled \\\n    -Dgallium-xa=enabled \\\n    -Dgallium-vdpau=enabled \\\n    -Dgallium-drivers=auto \\\n    -Dvulkan-drivers=auto  \\\n    -Dplatforms=x11,wayland \\\n    -Dvideo-codecs=all \\\n    -Dtools=drm-shim,etnaviv,freedreno,glsl,nir,nouveau,lima \\\n    -Db_ndebug=true"
   },
   {
     "pkgname": "mftrace",
@@ -19230,7 +19250,7 @@
   {
     "pkgname": "ndk-pkg",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "A package builder for Android NDK to build projects written in C, C++, Rust, Golang, etc",
     "web-url": "https://github.com/leleliu008/ndk-pkg",
@@ -19265,7 +19285,7 @@
   {
     "pkgname": "neper",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "A networking performance tool for Linux",
     "web-url": "https://github.com/google/neper",
@@ -19375,7 +19395,7 @@
   {
     "pkgname": "nghttp3",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -19428,7 +19448,7 @@
   {
     "pkgname": "ngtcp2",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -19444,7 +19464,7 @@
   {
     "pkgname": "nilaway",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "A static analysis tool to detect potential nil panics in Go code",
     "web-url": "https://github.com/uber-go/nilaway",
@@ -20176,7 +20196,7 @@
   {
     "pkgname": "openrsync",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "ISC",
     "summary": "BSD-licensed implementation of rsync",
     "web-url": "https://github.com/kristapsdz/openrsync",
@@ -20309,7 +20329,7 @@
   {
     "pkgname": "packcc",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A packrat parser generator for C",
     "web-url": "https://github.com/arithy/packcc",
     "git-url": "https://github.com/arithy/packcc",
@@ -20601,7 +20621,7 @@
   {
     "pkgname": "pegof",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "PEG grammar optimizer and formatter. Supports any grammar supported by PackCC parser generator.",
     "web-url": "https://github.com/dolik-rce/pegof",
     "git-url": "https://github.com/dolik-rce/pegof",
@@ -20790,7 +20810,7 @@
   {
     "pkgname": "plog",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "MPL-2.0",
     "summary": "Portable, simple and extensible C++ logging library",
     "web-url": "https://github.com/SergiusTheBest/plog",
@@ -21007,7 +21027,7 @@
   {
     "pkgname": "ppkg",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "A portable package manager for Unix-like system",
     "web-url": "https://github.com/leleliu008/ppkg",
@@ -21181,7 +21201,7 @@
   {
     "pkgname": "psimd",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "MIT",
     "summary": "Portable 128-bit SIMD intrinsics",
     "web-url": "https://github.com/Maratyszcza/psimd",
@@ -21256,7 +21276,7 @@
   {
     "pkgname": "pup",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "MIT",
     "summary": "Parse HTML at the command-line",
     "web-url": "https://github.com/EricChiang/pup",
@@ -21607,7 +21627,7 @@
     "src-url": "https://download.qt.io/official_releases/qt/6.9/6.9.0/single/qt-everywhere-src-6.9.0.tar.xz",
     "src-uri": "https://qt.mirror.constant.com/archive/qt/6.9/6.9.0/single/qt-everywhere-src-6.9.0.tar.xz",
     "src-sha": "4f61e50551d0004a513fefbdb0a410595d94812a48600646fb7341ea0d17e1cb",
-    "dep-pkg": "gtk+3 ffmpeg-dev libb2 libkrb5 libmd4c libmng libjasper libassimp libsqlite3 libhunspell libpoppler libdouble-conversion libevent libsnappy libminizip libprotobuf",
+    "dep-pkg": "gtk+3 ffmpeg-dev libb2 libkrb5 libmd4c libmng libjasper libassimp@5 libsqlite3 libhunspell libpoppler libdouble-conversion libevent libsnappy libminizip libprotobuf",
     "dep-upp": "python3 gm4 flex bison gperf curl bsdtar python3 cmake ninja",
     "dep-pym": "six html5lib webencodings",
     "bsystem": "cmake",
@@ -22288,7 +22308,7 @@
   {
     "pkgname": "ruy",
     "pkgtype": "lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "matrix multiplication library",
     "web-url": "https://github.com/google/ruy",
@@ -22642,7 +22662,7 @@
   {
     "pkgname": "sjpeg",
     "pkgtype": "exe+lib",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "simple jpeg encoder",
     "web-url": "https://github.com/webmproject/sjpeg",
@@ -22677,7 +22697,7 @@
   {
     "pkgname": "skcms",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "BSD",
     "summary": "SkCMS",
     "web-url": "https://skia.googlesource.com/skcms.git",
@@ -23491,7 +23511,7 @@
   {
     "pkgname": "sysinfo",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A command-line utility to print your currently running system information",
     "web-url": "https://github.com/leleliu008/sysinfo",
     "git-url": "https://github.com/leleliu008/sysinfo",
@@ -23598,20 +23618,21 @@
   {
     "pkgname": "tbls",
     "pkgtype": "exe",
-    "version": "1.77.0",
+    "version": "1.85.5",
     "license": "MIT",
     "summary": "A CI-Friendly tool for document a database",
     "web-url": "https://github.com/k1LoW/tbls",
     "git-url": "https://github.com/k1LoW/tbls",
-    "src-url": "https://github.com/k1LoW/tbls/archive/refs/tags/v1.77.0.tar.gz",
-    "src-sha": "6be85cfa82cf3a75bca03cd49739307f5ca60768624742f7020d36a1c5ee4984",
+    "src-url": "https://github.com/k1LoW/tbls/archive/refs/tags/v1.85.5.tar.gz",
+    "src-sha": "b885fd467b83faf6f44aab5a8f402136ed8a17c1bde0ee8fecd6e52d05743822",
     "dep-upp": "curl bsdtar golang",
     "bsystem": "go",
     "binbstd": "1",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "# https://github.com/goccy/go-graphviz/issues/43\nexport CGO_ENABLED=1\ngow \\\n    -X github.com/k1LoW/tbls.commit=$PACKAGE_GIT_SHA \\\n    -X github.com/k1LoW/tbls.date=$(date -u '+%Y-%m-%d_%H:%M:%S') \\\n    -X github.com/k1LoW/tbls.version=\"$PACKAGE_VERSION\""
+    "prepare": "export CGO_ENABLED=1",
+    "install": "gow \\\n    -X github.com/k1LoW/tbls.commit=$PACKAGE_GIT_SHA \\\n    -X github.com/k1LoW/tbls.date=$(date -u '+%Y-%m-%d_%H:%M:%S') \\\n    -X github.com/k1LoW/tbls.version=\"$PACKAGE_VERSION\""
   },
   {
     "pkgname": "tcc",
@@ -24441,7 +24462,7 @@
   {
     "pkgname": "uctags",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "GPL-2.0-or-later",
     "summary": "Maintained ctags implementation",
     "web-url": "https://ctags.io/",
@@ -24572,7 +24593,7 @@
   {
     "pkgname": "uppm",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -24702,7 +24723,7 @@
   {
     "pkgname": "utf8.h",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Unlicense",
     "summary": "single header utf8 string functions for C and C++",
     "web-url": "https://github.com/sheredom/utf8.h",
@@ -24851,7 +24872,7 @@
     "pkgtype": "exe",
     "version": "0.48.7",
     "license": "LGPL-2.1-only",
-    "summary": "Code Intelligence for Vala & Genie",
+    "summary": "A language server for Vala",
     "web-url": "https://github.com/vala-lang/vala-language-server",
     "git-url": "https://github.com/vala-lang/vala-language-server",
     "src-url": "https://github.com/vala-lang/vala-language-server/releases/download/0.48.7/vala-language-server-0.48.7.tar.xz",
@@ -24864,7 +24885,27 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
+    "prepare": "export VALAFLAGS=\"--vapidir=$vala_INSTALL_DIR/share/vala/vapi\"",
     "install": "mesonw -Dplugins=false"
+  },
+  {
+    "pkgname": "vala-lint",
+    "pkgtype": "exe",
+    "version": "2025.06.30",
+    "license": "GPL-2.0-or-later",
+    "summary": "A small command-line tool for checking Vala code files for code-style errors",
+    "web-url": "https://github.com/vala-lang/vala-lint",
+    "git-url": "https://github.com/vala-lang/vala-lint",
+    "dep-pkg": "vala libjson-glib",
+    "dep-upp": "git python3 ninja",
+    "dep-pym": " meson",
+    "bsystem": "meson",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "prepare": "export VALAFLAGS=\"--vapidir=$vala_INSTALL_DIR/share/vala/vapi\"",
+    "install": "mesonw"
   },
   {
     "pkgname": "vale",
@@ -25696,7 +25737,7 @@
   {
     "pkgname": "xbps",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "summary": "A binary package system designed and implemented from scratch",
     "web-url": "https://github.com/void-linux/xbps",
     "git-url": "https://github.com/void-linux/xbps",
@@ -25769,7 +25810,7 @@
   {
     "pkgname": "xcpkg",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "A package builder/manager for Xcode to build projects written in C, C++, Rust, Zig, Go, Haskell, etc",
     "web-url": "https://github.com/leleliu008/xcpkg",
@@ -26708,7 +26749,7 @@
   {
     "pkgname": "xpup",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "Apache-2.0",
     "summary": "A command line tool for XML parsing",
     "web-url": "https://github.com/ericchiang/xpup",
@@ -26911,7 +26952,7 @@
   {
     "pkgname": "ycm",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "GPL-v3",
     "summary": "A code-completion engine for Vim",
     "web-url": "https://github.com/ycm-core/YouCompleteMe",
@@ -27021,7 +27062,7 @@
   {
     "pkgname": "zeta",
     "pkgtype": "exe",
-    "version": "2025.06.29",
+    "version": "2025.06.30",
     "license": "LGPL-3.0",
     "summary": "Header-only general purpose library",
     "web-url": "https://github.com/redcode/Zeta",

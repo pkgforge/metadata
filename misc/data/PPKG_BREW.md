@@ -34,7 +34,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.2.62 ⚠️ | https://github.com/nektos/act/archive/refs/tags/v0.2.62.tar.gz |
-| BREW   | **0.2.78** | https://github.com/nektos/act |
+| BREW   | **0.2.79** | https://github.com/nektos/act |
 
 *Outdated*
 
@@ -4239,7 +4239,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.18.2 ⚠️ | https://github.com/strukturag/libheif/releases/download/v1.18.2/libheif-1.18.2.tar.gz |
-| BREW   | **1.19.8** | https://www.libde265.org/ |
+| BREW   | **1.20.0** | https://www.libde265.org/ |
 
 *Outdated*
 
@@ -5675,7 +5675,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.99.3 ⚠️ | https://github.com/lsof-org/lsof/archive/refs/tags/4.99.3.tar.gz |
-| BREW   | **4.99.4** | https://github.com/lsof-org/lsof |
+| BREW   | **4.99.5** | https://github.com/lsof-org/lsof |
 
 *Outdated*
 
@@ -7655,7 +7655,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 18.1.7 ⚠️ | https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v18.1.7.tar.gz |
-| BREW   | **20.1.3** | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
+| BREW   | **20.1.4** | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
 
 *Outdated*
 
@@ -7831,8 +7831,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.29.7 ✅ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | 1.29.7 | https://syncthing.net/ |
+| PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
+| BREW   | **1.30.0** | https://syncthing.net/ |
+
+*Outdated*
 
 ## sysdig
 
@@ -7893,8 +7895,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.85.5 ✅ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.85.5.tar.gz |
-| BREW   | 1.85.5 | https://github.com/k1LoW/tbls |
+| PPKG   | 1.85.5 ⚠️ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.85.5.tar.gz |
+| BREW   | **1.86.0** | https://github.com/k1LoW/tbls |
+
+*Outdated*
 
 ## tcc
 

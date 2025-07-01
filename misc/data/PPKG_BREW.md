@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.30 ⚠️ | null |
+| PPKG   | 2025.07.01 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1720,7 +1720,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookexperimental/edencommon/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.23.00** | https://github.com/facebookexperimental/edencommon |
+| BREW   | **2025.06.30.00** | https://github.com/facebookexperimental/edencommon |
 
 *Outdated*
 
@@ -1902,7 +1902,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fb303/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.23.00** | https://github.com/facebook/fb303 |
+| BREW   | **2025.06.30.00** | https://github.com/facebook/fb303 |
 
 *Outdated*
 
@@ -1913,7 +1913,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fbthrift/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.23.00** | https://github.com/facebook/fbthrift |
+| BREW   | **2025.06.30.00** | https://github.com/facebook/fbthrift |
 
 *Outdated*
 
@@ -2022,7 +2022,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/fizz/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.23.00** | https://github.com/facebookincubator/fizz |
+| BREW   | **2025.06.30.00** | https://github.com/facebookincubator/fizz |
 
 *Outdated*
 
@@ -4547,7 +4547,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.30 ⚠️ | null |
+| PPKG   | 2025.07.01 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4761,7 +4761,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.1.1 ⚠️ | https://github.com/Qalculate/libqalculate/releases/download/v5.1.1/libqalculate-5.1.1.tar.gz |
-| BREW   | **5.5.2** | https://qalculate.github.io/ |
+| BREW   | **5.6.0** | https://qalculate.github.io/ |
 
 *Outdated*
 
@@ -6066,7 +6066,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/mvfst/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.23.00** | https://github.com/facebook/mvfst |
+| BREW   | **2025.06.30.00** | https://github.com/facebook/mvfst |
 
 *Outdated*
 
@@ -6328,7 +6328,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.2.8 ⚠️ | https://github.com/projectdiscovery/nuclei/archive/refs/tags/v3.2.8.tar.gz |
-| BREW   | **3.4.5** | https://docs.projectdiscovery.io/tools/nuclei/overview |
+| BREW   | **3.4.6** | https://docs.projectdiscovery.io/tools/nuclei/overview |
 
 *Outdated*
 
@@ -6594,7 +6594,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.30 ⚠️ | null |
+| PPKG   | 2025.07.01 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6761,7 +6761,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.30 ⚠️ | null |
+| PPKG   | 2025.07.01 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6923,7 +6923,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.06.30 ⚠️ | null |
+| PPKG   | 2025.07.01 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7173,8 +7173,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.2 ✅ | https://github.com/skvadrik/re2c/releases/download/4.2/re2c-4.2.tar.xz |
-| BREW   | 4.2 | https://re2c.org/ |
+| PPKG   | 4.2 ⚠️ | https://github.com/skvadrik/re2c/releases/download/4.2/re2c-4.2.tar.xz |
+| BREW   | **4.3** | https://re2c.org/ |
+
+*Outdated*
 
 ## readpe
 
@@ -8083,8 +8085,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.4.8.16 ✅ | https://fossies.org/linux/misc/tor-0.4.8.16.tar.gz |
-| BREW   | 0.4.8.16 | https://www.torproject.org/ |
+| PPKG   | 0.4.8.16 ⚠️ | https://fossies.org/linux/misc/tor-0.4.8.16.tar.gz |
+| BREW   | **0.4.8.17** | https://www.torproject.org/ |
+
+*Outdated*
 
 ## torsocks
 
@@ -8509,7 +8513,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/wangle/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.23.00** | https://github.com/facebook/wangle |
+| BREW   | **2025.06.30.00** | https://github.com/facebook/wangle |
 
 *Outdated*
 
@@ -8571,7 +8575,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/watchman/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.23.00** | https://github.com/facebook/watchman |
+| BREW   | **2025.06.30.00** | https://github.com/facebook/watchman |
 
 *Outdated*
 

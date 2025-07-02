@@ -321,7 +321,7 @@
  336K   │ │ ├── PPKG.json
  276K   │ │ ├── PPKG_BREW.md
  232K   │ │ ├── FLATPAK_POPULAR.json
- 224K   │ │ ├── FLATPAK_TRENDING.json
+ 212K   │ │ ├── FLATPAK_TRENDING.json
   76K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
@@ -561,7 +561,7 @@
  604K   │ ├── ALL_aarch64-Linux.txt
  516K   │ ├── PKG_NAME_ONLY_x86_64-Linux.txt
  252K   │ └── PKG_NAME_ONLY_aarch64-Linux.txt
- 976K   ├── PKG_STATUS.md
+ 972K   ├── PKG_STATUS.md
  320K   ├─┬ web
  164K   │ ├─┬ cloudflare
   88K   │ │ ├─┬ src

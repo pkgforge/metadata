@@ -247,7 +247,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.24 ⚠️ | https://github.com/ThomasHabets/arping/archive/refs/tags/arping-2.24.tar.gz |
-| BREW   | **2.25** | https://github.com/ThomasHabets/arping |
+| BREW   | **2.26** | https://github.com/ThomasHabets/arping |
 
 *Outdated*
 
@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.01 ⚠️ | null |
+| PPKG   | 2025.07.02 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1610,8 +1610,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.22.20 ✅ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.20.tar.xz |
-| BREW   | 1.22.20 | https://wiki.debian.org/Teams/Dpkg |
+| PPKG   | 1.22.20 ⚠️ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.20.tar.xz |
+| BREW   | **1.22.21** | https://wiki.debian.org/Teams/Dpkg |
+
+*Outdated*
 
 ## dra
 
@@ -1640,7 +1642,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.0 ⚠️ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
-| BREW   | **0.3.1** | https://github.com/robertpsoane/ducker |
+| BREW   | **0.4.0** | https://github.com/robertpsoane/ducker |
 
 *Outdated*
 
@@ -1944,7 +1946,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.0 ⚠️ | https://github.com/mvdan/fdroidcl/archive/refs/tags/v0.7.0.tar.gz |
-| BREW   | **0.8.0** | https://github.com/Hoverth/fdroidcl |
+| BREW   | **0.8.1** | https://github.com/Hoverth/fdroidcl |
 
 *Outdated*
 
@@ -2857,8 +2859,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 13.0.1 ✅ | https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.0.1/graphviz-13.0.1.tar.xz |
-| BREW   | 13.0.1 | https://graphviz.org/ |
+| PPKG   | 13.0.1 ⚠️ | https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.0.1/graphviz-13.0.1.tar.xz |
+| BREW   | **13.1.0** | https://graphviz.org/ |
+
+*Outdated*
 
 ## grep
 
@@ -3447,8 +3451,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.8.0 ✅ | https://github.com/stedolan/jq/releases/download/jq-1.8.0/jq-1.8.0.tar.gz |
-| BREW   | 1.8.0 | https://jqlang.github.io/jq/ |
+| PPKG   | 1.8.0 ⚠️ | https://github.com/stedolan/jq/releases/download/jq-1.8.0/jq-1.8.0.tar.gz |
+| BREW   | **1.8.1** | https://jqlang.github.io/jq/ |
+
+*Outdated*
 
 ## jump
 
@@ -4547,7 +4553,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.01 ⚠️ | null |
+| PPKG   | 2025.07.02 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6328,7 +6334,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.2.8 ⚠️ | https://github.com/projectdiscovery/nuclei/archive/refs/tags/v3.2.8.tar.gz |
-| BREW   | **3.4.6** | https://docs.projectdiscovery.io/tools/nuclei/overview |
+| BREW   | **3.4.7** | https://docs.projectdiscovery.io/tools/nuclei/overview |
 
 *Outdated*
 
@@ -6421,7 +6427,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.9.3** | https://ollama.com/ |
+| BREW   | **0.9.4** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6520,7 +6526,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.15.0 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v2.5.15.0.tar.gz |
-| BREW   | **3.0.7.0** | https://openimageio.readthedocs.io/en/stable/ |
+| BREW   | **3.0.8.0** | https://openimageio.readthedocs.io/en/stable/ |
 
 *Outdated*
 
@@ -6594,7 +6600,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.01 ⚠️ | null |
+| PPKG   | 2025.07.02 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6761,7 +6767,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.01 ⚠️ | null |
+| PPKG   | 2025.07.02 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6923,7 +6929,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.01 ⚠️ | null |
+| PPKG   | 2025.07.02 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7896,7 +7902,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.85.5 ⚠️ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.85.5.tar.gz |
-| BREW   | **1.86.0** | https://github.com/k1LoW/tbls |
+| BREW   | **1.86.1** | https://github.com/k1LoW/tbls |
 
 *Outdated*
 
@@ -8183,8 +8189,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.13.11 ✅ | https://github.com/Enter-tainer/typstyle/archive/refs/tags/v0.13.11.tar.gz |
-| BREW   | 0.13.11 | https://enter-tainer.github.io/typstyle/ |
+| PPKG   | 0.13.11 ⚠️ | https://github.com/Enter-tainer/typstyle/archive/refs/tags/v0.13.11.tar.gz |
+| BREW   | **0.13.12** | https://typstyle-rs.github.io/typstyle/ |
+
+*Outdated*
 
 ## unbound
 
@@ -8282,7 +8290,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.7.17** | https://docs.astral.sh/uv/ |
+| BREW   | **0.7.18** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -8415,7 +8423,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.1.0450 ⚠️ | https://github.com/vim/vim/archive/refs/tags/v9.1.0450.tar.gz |
-| BREW   | **9.1.1450** | https://www.vim.org/ |
+| BREW   | **9.1.1500** | https://www.vim.org/ |
 
 *Outdated*
 

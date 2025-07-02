@@ -136,7 +136,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.286** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.287** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -7982,7 +7982,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.82.3** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.82.4** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

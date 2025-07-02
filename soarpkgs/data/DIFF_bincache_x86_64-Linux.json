@@ -1883,7 +1883,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-dcd8df2-250701T202137"
+    "version": "HEAD-244f5c4-250701T212116"
   },
   {
     "_disabled": "false",
@@ -2803,7 +2803,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-dcd8df2-250701T202137"
+    "version": "HEAD-244f5c4-250701T212116"
   },
   {
     "_disabled": "false",
@@ -5618,7 +5618,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-fdb9816-250629T205634"
+    "version": "HEAD-b1e697d-250701T210708"
   },
   {
     "_disabled": "false",
@@ -6025,6 +6025,49 @@
       "package-manager"
     ],
     "version": "1.22.20"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dummyhttp",
+    "pkg_family": "dummyhttp",
+    "pkg_id": "github.com.svenstaro.dummyhttp.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dummyhttp-source/dummyhttp/dummyhttp",
+    "bincache": "ghcr.io/pkgforge/bincache/dummyhttp/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dummyhttp/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Super simple HTTP server that replies a fixed body with a fixed response code",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dummyhttp/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/svenstaro/dummyhttp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/svenstaro/dummyhttp"
+    ],
+    "provides": [
+      "dummyhttp"
+    ],
+    "src_url": [
+      "https://github.com/svenstaro/dummyhttp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-7905701-250701T235706"
   },
   {
     "_disabled": "false",
@@ -6711,6 +6754,73 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fd",
+    "pkg_family": "fd-find",
+    "pkg_id": "github.com.sharkdp.fd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sharkdp-fd/fd-find/fd",
+    "bincache": "ghcr.io/pkgforge/bincache/fd/official/fd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fd-find/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A simple, fast and user-friendly alternative to find",
+    "distro_pkg": {
+      "alpine": [
+        "fd"
+      ],
+      "archlinux": {
+        "aur": [
+          "fd-git"
+        ],
+        "extra": [
+          "fd"
+        ]
+      },
+      "debian": [
+        "rust-fd-find"
+      ],
+      "nixpkgs": [
+        "fd"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fd-find/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/sharkdp/fd"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "APACHE",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sharkdp/fd"
+    ],
+    "provides": [
+      "fd",
+      "fd-find"
+    ],
+    "repology": [
+      "fd-find"
+    ],
+    "src_url": [
+      "https://github.com/sharkdp/fd"
+    ],
+    "tag": [
+      "find"
+    ],
+    "version": "HEAD-f91d97e-250701T132546"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ffmpeg",
     "pkg_family": "ffmpeg",
     "pkg_id": "github.com.wader.static-ffmpeg.stable",
@@ -7111,7 +7221,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-a697f81-250630T225515"
+    "version": "HEAD-a659209-250701T185901"
   },
   {
     "_disabled": "false",
@@ -7279,7 +7389,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-b1609a7-250701T180428"
+    "version": "HEAD-8ae3400-250702T000738"
   },
   {
     "_disabled": "false",
@@ -7379,7 +7489,7 @@
       "ipv4",
       "ipv6"
     ],
-    "version": "HEAD-bb2f64d-250630T233716"
+    "version": "HEAD-440717a-250701T200611"
   },
   {
     "_disabled": "false",
@@ -8291,6 +8401,147 @@
       "gpg"
     ],
     "version": "HEAD-359b57f-250620T114155"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "grep",
+    "pkg_family": "grep",
+    "pkg_id": "git.savannah.gnu.org.cgit.grep",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cgit-grep/grep/grep",
+    "bincache": "ghcr.io/pkgforge/bincache/bingrep/official/bingrep",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/grep/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Search one or more input files for lines containing a match to a specified pattern",
+    "distro_pkg": {
+      "alpine": [
+        "grep"
+      ],
+      "archlinux": {
+        "aur": [
+          "grep-git"
+        ]
+      },
+      "debian": [
+        "grep"
+      ],
+      "gnuguix": [
+        "grep"
+      ],
+      "homebrew": [
+        "grep"
+      ],
+      "nixpkgs": [
+        "gnugrep"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/grep/static.official.source.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/grep/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://git.savannah.gnu.org/cgit/grep.git"
+    ],
+    "provides": [
+      "egrep",
+      "fgrep",
+      "grep"
+    ],
+    "repology": [
+      "grep"
+    ],
+    "src_url": [
+      "https://www.gnu.org/software/grep/",
+      "https://git.savannah.gnu.org/cgit/grep.git"
+    ],
+    "tag": [
+      "utility"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "grep",
+    "pkg_family": "grep",
+    "pkg_id": "git.savannah.gnu.org.cgit.grep.glibc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/grep-glibc/grep/grep",
+    "bincache": "ghcr.io/pkgforge/bincache/grep/glibc/egrep",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/grep/static.glibc.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Search one or more input files for lines containing a match to a specified pattern",
+    "distro_pkg": {
+      "alpine": [
+        "grep"
+      ],
+      "archlinux": {
+        "aur": [
+          "grep-git"
+        ]
+      },
+      "debian": [
+        "grep"
+      ],
+      "gnuguix": [
+        "grep"
+      ],
+      "homebrew": [
+        "grep"
+      ],
+      "nixpkgs": [
+        "gnugrep"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/grep/static.glibc.source.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/grep/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://git.savannah.gnu.org/cgit/grep.git",
+      "Statically Linked on Debian (GLIBC)"
+    ],
+    "provides": [
+      "egrep",
+      "fgrep",
+      "grep"
+    ],
+    "repology": [
+      "grep"
+    ],
+    "src_url": [
+      "https://www.gnu.org/software/grep/",
+      "https://git.savannah.gnu.org/cgit/grep.git"
+    ],
+    "tag": [
+      "utility"
+    ]
   },
   {
     "_disabled": "false",
@@ -9312,7 +9563,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-60ccf67-250701T122433"
+    "version": "HEAD-f5a470a-250701T204656"
   },
   {
     "_disabled": "false",
@@ -9364,6 +9615,49 @@
       "security"
     ],
     "version": "HEAD-f27f302-250618T230447"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "jyt",
+    "pkg_family": "jyt",
+    "pkg_id": "github.com.ken-matsui.jyt.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jyt-source/jyt/jyt",
+    "bincache": "ghcr.io/pkgforge/bincache/jyt/official/jyt",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jyt/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A tridirectional converter between Json, Yaml, and Toml",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jyt/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ken-matsui/jyt"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ken-matsui/jyt"
+    ],
+    "provides": [
+      "jyt"
+    ],
+    "src_url": [
+      "https://github.com/ken-matsui/jyt"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-fa8c588-250701T190656"
   },
   {
     "_disabled": "false",
@@ -9843,7 +10137,7 @@
     "tag": [
       "file-manager"
     ],
-    "version": "HEAD-0639e71-250626T160911"
+    "version": "HEAD-e47b2fd-250702T110824"
   },
   {
     "_disabled": "false",
@@ -10478,7 +10772,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6d6efeb-250628T004109"
+    "version": "HEAD-d905087-250701T233205"
   },
   {
     "_disabled": "false",
@@ -11347,7 +11641,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-29cbfe8-250701T162331"
+    "version": "HEAD-d940216-250702T024159"
   },
   {
     "_disabled": "false",
@@ -12423,7 +12717,7 @@
     "tag": [
       "pager"
     ],
-    "version": "HEAD-01f1970-250629T090738"
+    "version": "HEAD-63d9143-250702T092823"
   },
   {
     "_disabled": "false",
@@ -12994,7 +13288,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-97a81d0-250630T175728"
+    "version": "HEAD-b8060fd-250701T191802"
   },
   {
     "_disabled": "false",
@@ -13386,7 +13680,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-377bec3-250701T200957"
+    "version": "HEAD-6957196-250701T222952"
   },
   {
     "_disabled": "false",
@@ -14066,6 +14360,52 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sish",
+    "pkg_family": "sish",
+    "pkg_id": "github.com.antoniomika.sish",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/antoniomika-sish/sish/sish",
+    "bincache": "ghcr.io/pkgforge/bincache/sish/official/sish",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sish/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "HTTP(S)/WS(S)/TCP Tunnels to localhost using only SSH",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sish/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/antoniomika/sish"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/antoniomika/sish"
+    ],
+    "provides": [
+      "sish"
+    ],
+    "repology": [
+      "sish"
+    ],
+    "src_url": [
+      "https://github.com/antoniomika/sish"
+    ],
+    "tag": [
+      "tunnel"
+    ],
+    "version": "HEAD-d4c13b3-250701T162254"
+  },
+  {
+    "_disabled": "false",
     "pkg": "skopeo",
     "pkg_family": "skopeo",
     "pkg_id": "github.com.containers.skopeo.source",
@@ -14542,6 +14882,64 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sqlc",
+    "pkg_family": "sqlc",
+    "pkg_id": "github.com.sqlc-dev.sqlc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dev-sqlc/sqlc/sqlc",
+    "bincache": "ghcr.io/pkgforge/bincache/sqlc/official/sqlc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sqlc/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Generate type-safe Golang code from SQL",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "sqlc"
+        ]
+      },
+      "homebrew": [
+        "sqlc"
+      ],
+      "nixpkgs": [
+        "sqlc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sqlc/static.official.source.yaml",
+    "homepage": [
+      "https://sqlc.dev",
+      "https://github.com/sqlc-dev/sqlc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/sqlc-dev/sqlc"
+    ],
+    "repology": [
+      "sqlc"
+    ],
+    "src_url": [
+      "https://github.com/sqlc-dev/sqlc"
+    ],
+    "tag": [
+      "database",
+      "sql"
+    ],
+    "version": "HEAD-b34aa37-250701T170919"
+  },
+  {
+    "_disabled": "false",
     "pkg": "squashfs-mount",
     "pkg_family": "squashfs-mount",
     "pkg_id": "ppkg.squashfs-mount.stable",
@@ -14953,7 +15351,7 @@
     "tag": [
       "benchmark"
     ],
-    "version": "0.19.01"
+    "version": "0.19.02"
   },
   {
     "_disabled": "false",
@@ -15152,7 +15550,7 @@
       "security",
       "sudo"
     ],
-    "version": "1.9.17"
+    "version": "1.9.17p1"
   },
   {
     "_disabled": "false",
@@ -15761,7 +16159,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-00f9ae6-250701T192557"
+    "version": "HEAD-96ca7db-250701T155429"
   },
   {
     "_disabled": "false",
@@ -16675,7 +17073,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c953cc8-250701T012425"
+    "version": "HEAD-df72542-250701T224230"
   },
   {
     "_disabled": "false",

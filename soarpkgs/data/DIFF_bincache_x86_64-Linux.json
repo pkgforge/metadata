@@ -750,7 +750,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.01"
+    "version": "2025.07.02"
   },
   {
     "_disabled": "false",
@@ -6260,7 +6260,7 @@
       "e2fs",
       "ext2"
     ],
-    "version": "HEAD-e50fbaa-250625T134607"
+    "version": "HEAD-705a51d-250701T230718"
   },
   {
     "_disabled": "false",
@@ -6694,7 +6694,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-18a6929-250701T220808"
+    "version": "HEAD-2e5769d-250702T094107"
   },
   {
     "_disabled": "false",
@@ -6896,6 +6896,67 @@
     "tag": [
       "media"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "filebrowser",
+    "pkg_family": "filebrowser",
+    "pkg_id": "github.com.filebrowser.filebrowser",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/filebrowser-filebrowser/filebrowser/filebrowser",
+    "bincache": "ghcr.io/pkgforge/bincache/filebrowser/official/filebrowser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/filebrowser/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Standalone Web Application for browsing/managing files and directories",
+    "distro_pkg": {
+      "alpine": [
+        "filebrowser"
+      ],
+      "archlinux": {
+        "aur": [
+          "filebrowser",
+          "filebrowser-bin",
+          "filebrowser-git"
+        ]
+      },
+      "nixpkgs": [
+        "filebrowser"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/filebrowser/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/filebrowser/filebrowser"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/filebrowser/filebrowser"
+    ],
+    "provides": [
+      "filebrowser"
+    ],
+    "repology": [
+      "filebrowser"
+    ],
+    "src_url": [
+      "https://github.com/filebrowser/filebrowser"
+    ],
+    "tag": [
+      "filemanager"
+    ],
+    "version": "v2.36.0"
   },
   {
     "_disabled": "false",
@@ -7221,7 +7282,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-a659209-250701T185901"
+    "version": "HEAD-0ea9209-250702T014227"
   },
   {
     "_disabled": "false",
@@ -7389,7 +7450,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-8ae3400-250702T000738"
+    "version": "HEAD-3b488f4-250702T060336"
   },
   {
     "_disabled": "false",
@@ -8404,147 +8465,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "grep",
-    "pkg_family": "grep",
-    "pkg_id": "git.savannah.gnu.org.cgit.grep",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cgit-grep/grep/grep",
-    "bincache": "ghcr.io/pkgforge/bincache/bingrep/official/bingrep",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/grep/static.official.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Search one or more input files for lines containing a match to a specified pattern",
-    "distro_pkg": {
-      "alpine": [
-        "grep"
-      ],
-      "archlinux": {
-        "aur": [
-          "grep-git"
-        ]
-      },
-      "debian": [
-        "grep"
-      ],
-      "gnuguix": [
-        "grep"
-      ],
-      "homebrew": [
-        "grep"
-      ],
-      "nixpkgs": [
-        "gnugrep"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/grep/static.official.source.yaml",
-    "homepage": [
-      "https://www.gnu.org/software/grep/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://git.savannah.gnu.org/cgit/grep.git"
-    ],
-    "provides": [
-      "egrep",
-      "fgrep",
-      "grep"
-    ],
-    "repology": [
-      "grep"
-    ],
-    "src_url": [
-      "https://www.gnu.org/software/grep/",
-      "https://git.savannah.gnu.org/cgit/grep.git"
-    ],
-    "tag": [
-      "utility"
-    ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "grep",
-    "pkg_family": "grep",
-    "pkg_id": "git.savannah.gnu.org.cgit.grep.glibc",
-    "pkg_type": "static",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/grep-glibc/grep/grep",
-    "bincache": "ghcr.io/pkgforge/bincache/grep/glibc/egrep",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/grep/static.glibc.source.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Search one or more input files for lines containing a match to a specified pattern",
-    "distro_pkg": {
-      "alpine": [
-        "grep"
-      ],
-      "archlinux": {
-        "aur": [
-          "grep-git"
-        ]
-      },
-      "debian": [
-        "grep"
-      ],
-      "gnuguix": [
-        "grep"
-      ],
-      "homebrew": [
-        "grep"
-      ],
-      "nixpkgs": [
-        "gnugrep"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/binaries/grep/static.glibc.source.yaml",
-    "homepage": [
-      "https://www.gnu.org/software/grep/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://git.savannah.gnu.org/cgit/grep.git",
-      "Statically Linked on Debian (GLIBC)"
-    ],
-    "provides": [
-      "egrep",
-      "fgrep",
-      "grep"
-    ],
-    "repology": [
-      "grep"
-    ],
-    "src_url": [
-      "https://www.gnu.org/software/grep/",
-      "https://git.savannah.gnu.org/cgit/grep.git"
-    ],
-    "tag": [
-      "utility"
-    ]
-  },
-  {
-    "_disabled": "false",
     "pkg": "gum",
     "pkg_family": "gum",
     "pkg_id": "github.com.charmbracelet.gum",
@@ -8816,7 +8736,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.01"
+    "version": "2025.07.02"
   },
   {
     "_disabled": "false",
@@ -9563,7 +9483,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-f5a470a-250701T204656"
+    "version": "HEAD-0921975-250702T033859"
   },
   {
     "_disabled": "false",
@@ -9905,7 +9825,7 @@
     "tag": [
       "ipfs"
     ],
-    "version": "HEAD-a0632aa-250627T102123"
+    "version": "HEAD-6f0c1de-250701T193233"
   },
   {
     "_disabled": "false",
@@ -10344,6 +10264,67 @@
       "Utility"
     ],
     "version": "HEAD-e472b9a-241112T170753"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "lux",
+    "pkg_family": "lux",
+    "pkg_id": "github.com.iawia002.lux",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/iawia002-lux/lux/lux",
+    "bincache": "ghcr.io/pkgforge/bincache/lux/official/lux",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lux/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast, simple and clean video downloader",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "lux-dl",
+          "lux-dl-bin",
+          "lux-go-git"
+        ]
+      },
+      "homebrew": [
+        "lux"
+      ],
+      "nixpkgs": [
+        "lux"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lux/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/iawia002/lux"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/iawia002/lux"
+    ],
+    "provides": [
+      "lux"
+    ],
+    "repology": [
+      "lux-video-downloader"
+    ],
+    "src_url": [
+      "https://github.com/iawia002/lux"
+    ],
+    "tag": [
+      "downloader"
+    ],
+    "version": "HEAD-73af966-250702T135518"
   },
   {
     "_disabled": "false",
@@ -10911,7 +10892,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-6eeccae-250630T212907"
+    "version": "HEAD-cb617ff-250701T205245"
   },
   {
     "_disabled": "false",
@@ -11335,7 +11316,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-fd78b2f-250701T154133"
+    "version": "HEAD-9610a2f-250702T031330"
   },
   {
     "_disabled": "false",
@@ -12176,7 +12157,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-a86a0dd-250701T183651"
+    "version": "HEAD-a18ff1d-250702T142445"
   },
   {
     "_disabled": "false",
@@ -12240,7 +12221,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-a86a0dd-250701T183651"
+    "version": "HEAD-a18ff1d-250702T142445"
   },
   {
     "_disabled": "false",
@@ -12307,7 +12288,7 @@
     "tag": [
       "nvme"
     ],
-    "version": "HEAD-faeec14-250701T180214"
+    "version": "HEAD-d16e8d8-250702T084438"
   },
   {
     "_disabled": "false",
@@ -12466,7 +12447,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.01"
+    "version": "2025.07.02"
   },
   {
     "_disabled": "false",
@@ -13680,7 +13661,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6957196-250701T222952"
+    "version": "HEAD-87869b9-250702T075413"
   },
   {
     "_disabled": "false",
@@ -14022,7 +14003,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b1722d7-250620T113046"
+    "version": "HEAD-c3d127f-250702T034215"
   },
   {
     "_disabled": "false",
@@ -16944,7 +16925,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d598c0d-250701T193201"
+    "version": "HEAD-68d5ae1-250702T093729"
   },
   {
     "_disabled": "false",
@@ -17472,7 +17453,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-628ebb7-250628T221905"
+    "version": "HEAD-ebb08fc-250702T082042"
   },
   {
     "_disabled": "false",

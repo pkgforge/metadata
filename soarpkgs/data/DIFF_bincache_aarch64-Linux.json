@@ -178,7 +178,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-2247bc5-250702T085149"
+    "version": "HEAD-3ec2f97-250703T092933"
   },
   {
     "_disabled": "false",
@@ -4540,7 +4540,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-c65bf9e-250703T075113"
+    "version": "HEAD-854d9af-250703T104952"
   },
   {
     "_disabled": "false",
@@ -4857,7 +4857,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-c65bf9e-250703T075113"
+    "version": "HEAD-854d9af-250703T104952"
   },
   {
     "_disabled": "true",
@@ -5553,7 +5553,7 @@
     "tag": [
       "devenv"
     ],
-    "version": "HEAD-f06bd42-250702T222831"
+    "version": "HEAD-7afa912-250703T125821"
   },
   {
     "_disabled": "false",
@@ -5695,6 +5695,65 @@
       "ddns"
     ],
     "version": "HEAD-3a708d2-250626T090524"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "devbox",
+    "pkg_family": "devbox",
+    "pkg_id": "github.com.jetify-com.devbox.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/devbox-stable/devbox/devbox",
+    "bincache": "ghcr.io/pkgforge/bincache/devbox/official/devbox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/devbox/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI tool to easily create isolated shells and containers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "devbox",
+          "devbox-bin"
+        ]
+      },
+      "nixpkgs": [
+        "devbox"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/devbox/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/jetify-com/devbox"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/jetify-com/devbox"
+    ],
+    "provides": [
+      "devbox"
+    ],
+    "repology": [
+      "devbox"
+    ],
+    "src_url": [
+      "https://github.com/jetify-com/devbox"
+    ],
+    "tag": [
+      "build",
+      "dev",
+      "venv"
+    ],
+    "version": "0.0.0-edge.2025-07-03"
   },
   {
     "_disabled": "false",
@@ -6518,7 +6577,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-268e9af-250703T104037"
+    "version": "HEAD-df2b418-250703T154523"
   },
   {
     "_disabled": "false",
@@ -6962,7 +7021,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-8be6471-250703T110314"
+    "version": "HEAD-b015fd5-250703T145314"
   },
   {
     "_disabled": "false",
@@ -7478,6 +7537,8 @@
     ],
     "host": [
       "aarch64-linux",
+      "loongarch64-linux",
+      "riscv64-linux",
       "x86_64-linux"
     ],
     "license": [
@@ -7613,7 +7674,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-4c47bad-250702T163514"
+    "version": "HEAD-5450b7f-250703T133746"
   },
   {
     "_disabled": "false",
@@ -7726,7 +7787,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-4faf106-250703T060502"
+    "version": "HEAD-051b755-250703T120417"
   },
   {
     "_disabled": "false",
@@ -7840,7 +7901,7 @@
       "backup",
       "git"
     ],
-    "version": "HEAD-593c15a-250702T122950"
+    "version": "HEAD-6f2bfc2-250703T090648"
   },
   {
     "_disabled": "false",
@@ -7910,7 +7971,7 @@
     "tag": [
       "gitlab"
     ],
-    "version": "HEAD-4ae4cc1-250702T194225"
+    "version": "HEAD-74e9a5d-250703T133841"
   },
   {
     "_disabled": "false",
@@ -9264,7 +9325,7 @@
       "blog",
       "cms"
     ],
-    "version": "HEAD-cfc8d31-250702T134340"
+    "version": "HEAD-1e9a0b9-250703T104637"
   },
   {
     "_disabled": "false",
@@ -9607,7 +9668,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-2ee0cdf-250703T001211"
+    "version": "HEAD-ea8aa1e-250703T090621"
   },
   {
     "_disabled": "false",
@@ -11775,7 +11836,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-551cb4e-250702T200428"
+    "version": "HEAD-9afbecb-250703T090253"
   },
   {
     "_disabled": "false",
@@ -11892,7 +11953,7 @@
     "tag": [
       "package-manager"
     ],
-    "version": "HEAD-4497fb3-250630T103945"
+    "version": "HEAD-ca337dc-250703T090755"
   },
   {
     "_disabled": "false",
@@ -13820,6 +13881,62 @@
   },
   {
     "_disabled": "false",
+    "pkg": "qsv",
+    "pkg_family": "qsv",
+    "pkg_id": "github.com.dathere.qsv",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dathere-qsv/qsv/qsv",
+    "bincache": "ghcr.io/pkgforge/bincache/qsv/official/qsv",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/qsv/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Blazing-fast Data-Wrangling toolkit",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "qsv",
+          "qsv-bin"
+        ]
+      },
+      "nixpkgs": [
+        "qsv"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/qsv/static.official.source.yaml",
+    "homepage": [
+      "https://qsv.dathere.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT",
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/dathere/qsv"
+    ],
+    "repology": [
+      "qsv"
+    ],
+    "src_url": [
+      "https://github.com/dathere/qsv"
+    ],
+    "tag": [
+      "csv",
+      "textproc"
+    ],
+    "version": "HEAD-e69c064-250703T074824"
+  },
+  {
+    "_disabled": "false",
     "pkg": "realm-tavern",
     "pkg_family": "realm-tavern",
     "pkg_id": "github.com.spellshift.realm",
@@ -14050,7 +14167,7 @@
       "analyzer",
       "linter"
     ],
-    "version": "HEAD-16a8a31-250702T190553"
+    "version": "HEAD-1523624-250703T125435"
   },
   {
     "_disabled": "false",
@@ -14888,7 +15005,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-a9fc462-250702T192223"
+    "version": "HEAD-152df7f-250703T203822"
   },
   {
     "_disabled": "false",
@@ -15783,6 +15900,52 @@
     "_disabled": "false",
     "pkg": "stress-ng",
     "pkg_family": "stress-ng",
+    "pkg_id": "github.com.ColinIanKing.stress-ng.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ng-source/stress-ng/stress-ng",
+    "bincache": "ghcr.io/pkgforge/bincache/stress-ng/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/stress-ng/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Stress test a computer system in various selectable ways",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/stress-ng/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ColinIanKing/stress-ng"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ColinIanKing/stress-ng"
+    ],
+    "provides": [
+      "stress-ng"
+    ],
+    "repology": [
+      "stress-ng"
+    ],
+    "src_url": [
+      "https://github.com/ColinIanKing/stress-ng"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-55589a5-250703T125652"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "stress-ng",
+    "pkg_family": "stress-ng",
     "pkg_id": "nixpkgs.stress-ng",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stress-ng/stress-ng/stress-ng",
@@ -16495,6 +16658,51 @@
   },
   {
     "_disabled": "false",
+    "pkg": "trippy",
+    "pkg_family": "trippy",
+    "pkg_id": "github.com.fujiapple852.trippy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fujiapple852-trippy/trippy/trippy",
+    "bincache": "ghcr.io/pkgforge/bincache/trippy/official/trip",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/trippy/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A network diagnostic tool",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/trippy/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fujiapple852/trippy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fujiapple852/trippy"
+    ],
+    "provides": [
+      "trip",
+      "trippy"
+    ],
+    "repology": [
+      "trippy"
+    ],
+    "src_url": [
+      "https://github.com/fujiapple852/trippy"
+    ],
+    "tag": [
+      "network",
+      "traceroute"
+    ],
+    "version": "HEAD-73ebd3e-250703T181734"
+  },
+  {
+    "_disabled": "false",
     "pkg": "trufflehog",
     "pkg_family": "trufflehog",
     "pkg_id": "github.com.trufflesecurity.trufflehog.source",
@@ -16551,7 +16759,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c61749f-250702T151130"
+    "version": "HEAD-78435c8-250703T161851"
   },
   {
     "_disabled": "false",
@@ -17102,6 +17310,49 @@
       "Utility"
     ],
     "version": "HEAD-ee056d8-250703T101719"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wasmi",
+    "pkg_family": "wasmi",
+    "pkg_id": "github.com.wasmi-labs.wasmi.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wasmi-source/wasmi/wasmi",
+    "bincache": "ghcr.io/pkgforge/bincache/wasmi/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wasmi/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Efficient and Lightweight WebAssembly interpreter with a focus on constrained and embedded systems",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wasmi/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/wasmi-labs/wasmi"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wasmi-labs/wasmi"
+    ],
+    "provides": [
+      "wasmi-cli==wasm_cli"
+    ],
+    "src_url": [
+      "https://github.com/wasmi-labs/wasmi"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-8fea281-250703T142549"
   },
   {
     "_disabled": "false",
@@ -17740,6 +17991,44 @@
   },
   {
     "_disabled": "false",
+    "pkg": "xan",
+    "pkg_family": "xan",
+    "pkg_id": "github.com.medialab.xan",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/medialab-xan/xan/xan",
+    "bincache": "ghcr.io/pkgforge/bincache/xan/official/xan",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xan/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The CSV magician",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xan/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/medialab/xan"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/medialab/xan"
+    ],
+    "src_url": [
+      "https://github.com/medialab/xan"
+    ],
+    "tag": [
+      "csv",
+      "tsv"
+    ],
+    "version": "HEAD-e46f0fd-250703T144056"
+  },
+  {
+    "_disabled": "false",
     "pkg": "xcc",
     "pkg_family": "xcc",
     "pkg_id": "github.com.tyfkda.xcc.source",
@@ -17998,7 +18287,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-c7f800a-250702T232613"
+    "version": "HEAD-39f50c8-250703T171003"
   },
   {
     "_disabled": "false",

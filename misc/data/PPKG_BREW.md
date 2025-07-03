@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.02 ⚠️ | null |
+| PPKG   | 2025.07.03 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1049,7 +1049,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.16.15 ⚠️ | https://github.com/cilium/cilium-cli/archive/refs/tags/v0.16.15.tar.gz |
-| BREW   | **0.18.4** | https://cilium.io |
+| BREW   | **0.18.5** | https://cilium.io |
 
 *Outdated*
 
@@ -1569,7 +1569,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.55.3** | https://github.com/dolthub/dolt |
+| BREW   | **1.55.4** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -1642,7 +1642,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.0 ⚠️ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
-| BREW   | **0.4.0** | https://github.com/robertpsoane/ducker |
+| BREW   | **0.4.1** | https://github.com/robertpsoane/ducker |
 
 *Outdated*
 
@@ -2363,7 +2363,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.22.5 ⚠️ | https://ftp.gnu.org/gnu/gettext/gettext-0.22.5.tar.gz |
-| BREW   | **0.25** | https://www.gnu.org/software/gettext/ |
+| BREW   | **0.25.1** | https://www.gnu.org/software/gettext/ |
 
 *Outdated*
 
@@ -3403,7 +3403,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/martinvonz/jj/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.30.0** | https://github.com/jj-vcs/jj |
+| BREW   | **0.31.0** | https://github.com/jj-vcs/jj |
 
 *Outdated*
 
@@ -4245,7 +4245,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.18.2 ⚠️ | https://github.com/strukturag/libheif/releases/download/v1.18.2/libheif-1.18.2.tar.gz |
-| BREW   | **1.20.0** | https://www.libde265.org/ |
+| BREW   | **1.20.1** | https://www.libde265.org/ |
 
 *Outdated*
 
@@ -4553,7 +4553,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.02 ⚠️ | null |
+| PPKG   | 2025.07.03 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5840,7 +5840,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.6.2 ⚠️ | https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.2/mbedtls-3.6.2.tar.bz2 |
-| BREW   | **3.6.3.1** | https://tls.mbed.org/ |
+| BREW   | **3.6.4** | https://tls.mbed.org/ |
 
 *Outdated*
 
@@ -5899,8 +5899,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 25.1.4 ✅ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
-| BREW   | 25.1.4 | https://www.mesa3d.org/ |
+| PPKG   | 25.1.4 ⚠️ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
+| BREW   | **25.1.5** | https://www.mesa3d.org/ |
+
+*Outdated*
 
 ## mftrace
 
@@ -6314,7 +6316,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.107 ⚠️ | https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz |
-| BREW   | **3.113** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
+| BREW   | **3.113.1** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
 
 *Outdated*
 
@@ -6427,7 +6429,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.9.4** | https://ollama.com/ |
+| BREW   | **0.9.5** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6600,7 +6602,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.02 ⚠️ | null |
+| PPKG   | 2025.07.03 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6767,7 +6769,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.02 ⚠️ | null |
+| PPKG   | 2025.07.03 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6929,7 +6931,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.02 ⚠️ | null |
+| PPKG   | 2025.07.03 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8190,7 +8192,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.13.11 ⚠️ | https://github.com/Enter-tainer/typstyle/archive/refs/tags/v0.13.11.tar.gz |
-| BREW   | **0.13.12** | https://typstyle-rs.github.io/typstyle/ |
+| BREW   | **0.13.13** | https://typstyle-rs.github.io/typstyle/ |
 
 *Outdated*
 
@@ -8290,7 +8292,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.7.18** | https://docs.astral.sh/uv/ |
+| BREW   | **0.7.19** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

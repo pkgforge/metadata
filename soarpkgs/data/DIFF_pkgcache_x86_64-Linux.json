@@ -53,7 +53,69 @@
     "tag": [
       "finance"
     ],
-    "version": "v25.7.0"
+    "version": "v25.7.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "affine",
+    "pkg_family": "affine",
+    "pkg_id": "github.com.affine-mirror.affine.canary.1",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/canary-1/affine/affine",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/affine/appimage.official.canary-1.yaml",
+    "category": [
+      "Database",
+      "Education"
+    ],
+    "description": "FOSS Knowledge Base with fully merged docs, whiteboards and databases [canary.1]",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "affine",
+          "affine-bin",
+          "affine-canary-bin"
+        ]
+      },
+      "homebrew": [
+        "affine"
+      ],
+      "nixpkgs": [
+        "affine"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/affine/appimage.official.canary-1.yaml",
+    "homepage": [
+      "https://affine.pro",
+      "https://github.com/toeverything/AFFiNE"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/affine/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/toeverything/AFFiNE"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/affine/appimage/official",
+    "provides": [
+      "affine"
+    ],
+    "repology": [
+      "affine-whiteboard"
+    ],
+    "src_url": [
+      "https://github.com/toeverything/AFFiNE"
+    ],
+    "tag": [
+      "knowledge-base",
+      "wiki"
+    ],
+    "version": "2025.7.3-canary.113"
   },
   {
     "_disabled": "false",
@@ -121,7 +183,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250702T025016"
+    "version": "250703T025147"
   },
   {
     "_disabled": "false",
@@ -427,7 +489,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.41.1"
+    "version": "1.41.2"
   },
   {
     "_disabled": "false",
@@ -728,6 +790,74 @@
   },
   {
     "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "138.0.7204.96"
+  },
+  {
+    "_disabled": "false",
     "pkg": "citron",
     "pkg_family": "citron",
     "pkg_id": "github.com.pkgforge-dev.Citron-AppImage.stable",
@@ -898,7 +1028,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7507aa1-250702T070515"
+    "version": "HEAD-d3159c4-250703T082543"
   },
   {
     "_disabled": "false",
@@ -952,6 +1082,74 @@
       "browser"
     ],
     "version": "v138.0.7204.50@2025-07-01_1751413176"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ddnet",
+    "pkg_family": "ddnet",
+    "pkg_id": "runimage.cachyos.ddnet",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-ddnet/ddnet/ddnet",
+    "app_id": "tw.ddnet.ddnet",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ddnet/runimage.cachyos.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Cooperative online platform game based on Teeworlds",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ddnet",
+          "ddnet-git"
+        ]
+      },
+      "debian": [
+        "ddnet"
+      ],
+      "homebrew": [
+        "ddnet"
+      ],
+      "nixpkgs": [
+        "ddnet",
+        "ddnet-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ddnet/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://ddnet.org",
+      "https://github.com/ddnet/ddnet"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/ddnet/assets/default.png",
+    "license": [
+      "CC-BY-SA-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ddnet/runimage/cachyos",
+    "provides": [
+      "ddnet=>DDNet",
+      "ddnet=>DDNet-server"
+    ],
+    "repology": [
+      "ddnet"
+    ],
+    "src_url": [
+      "https://github.com/ddnet/ddnet"
+    ],
+    "tag": [
+      "Game"
+    ],
+    "version": "19.3"
   },
   {
     "_disabled": "false",
@@ -1273,7 +1471,7 @@
       "Communications",
       "Networking/Chat"
     ],
-    "version": "0.0.709"
+    "version": "0.0.711"
   },
   {
     "_disabled": "true",
@@ -1331,6 +1529,86 @@
       "matrix"
     ],
     "version": "1.11.103"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "sharun.wrappe.stable.fastfetch",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stable-fastfetch/fastfetch/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fastfetch/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fastfetch/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This version was repacked from official Deb & contains the most features"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fastfetch/archive/sharun",
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "2.47.0"
   },
   {
     "_disabled": "false",
@@ -1396,6 +1674,135 @@
     "_disabled": "false",
     "pkg": "firefox",
     "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (Beta)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "firefox-beta-bin"
+        ]
+      },
+      "homebrew": [
+        "firefox@beta"
+      ],
+      "nixpkgs": [
+        "firefox-beta",
+        "firefox-beta-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-beta"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "141.0.20250702090806"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.dev",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-dev/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (DEV)",
+    "distro_pkg": {
+      "alpine": [
+        "firefox-developer-edition"
+      ],
+      "archlinux": {
+        "extra": [
+          "firefox-developer-edition"
+        ]
+      },
+      "homebrew": [
+        "firefox@developer-edition"
+      ],
+      "nixpkgs": [
+        "firefox-devedition",
+        "firefox-devedition-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-dev"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "141.0.20250702090806"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
     "pkg_id": "github.com.srevinsaju.Firefox-Appimage.nightly",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/firefox/firefox",
@@ -1450,7 +1857,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "142.0.20250701155448"
+    "version": "142.0.20250702091546"
   },
   {
     "_disabled": "false",
@@ -1848,7 +2255,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250702T005011"
+    "version": "250703T005014"
   },
   {
     "_disabled": "false",
@@ -1910,7 +2317,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250702T005011"
+    "version": "250703T005014"
   },
   {
     "_disabled": "false",
@@ -2190,7 +2597,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-60e77ae-250702T141700"
+    "version": "HEAD-943a79b-250702T233303"
   },
   {
     "_disabled": "false",
@@ -2411,7 +2818,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-07-01"
+    "version": "2025-07-02"
   },
   {
     "_disabled": "true",
@@ -2625,6 +3032,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "megasync",
+    "pkg_family": "megasync",
+    "pkg_id": "runimage.debian.megasync",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/debian-megasync/megasync/megasync",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/megasync/runimage.debian.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Syncs files between computers and MEGA Cloud drives",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "megasync",
+          "megasync-bin",
+          "megasync-git",
+          "megasync-nopdfium"
+        ]
+      },
+      "homebrew": [
+        "megasync"
+      ],
+      "nixpkgs": [
+        "megasync"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/megasync/runimage.debian.stable.yaml",
+    "homepage": [
+      "https://mega.io",
+      "https://mega.io/desktop#download"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/megasync/assets/default.png",
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [debian]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/megasync/runimage/debian",
+    "provides": [
+      "megasync"
+    ],
+    "repology": [
+      "megasync"
+    ],
+    "src_url": [
+      "https://mega.nz/linux/repo/Debian_12/"
+    ],
+    "tag": [
+      "Sync"
+    ],
+    "version": "5.13.0-1.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mpv",
     "pkg_family": "mpv",
     "pkg_id": "github.com.pkgforge-dev.mpv-AppImage.stable",
@@ -2761,7 +3232,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c1b0421-250701T102433"
+    "version": "HEAD-b0263cb-250702T223916"
   },
   {
     "_disabled": "false",

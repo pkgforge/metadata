@@ -565,7 +565,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.02"
+    "version": "2025.07.03"
   },
   {
     "_disabled": "false",
@@ -1740,6 +1740,54 @@
     "version": "0.28"
   },
   {
+    "_disabled": "false",
+    "pkg": "desync",
+    "pkg_family": "desync",
+    "pkg_id": "github.com.folbricht.desync.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desync-source/desync/desync",
+    "bincache": "ghcr.io/pkgforge/bincache/desync/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/desync/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Content-Addressable Data Synchronization Tool",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/desync/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/folbricht/desync"
+    ],
+    "host": [
+      "aarch64-linux",
+      "loongarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/folbricht/desync"
+    ],
+    "provides": [
+      "desync"
+    ],
+    "repology": [
+      "desync"
+    ],
+    "src_url": [
+      "https://github.com/folbricht/desync"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-b340c05-250417T074953"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -2245,7 +2293,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-98738b6-250702T194022"
+    "version": "HEAD-8be6471-250703T110314"
   },
   {
     "_disabled": "false",
@@ -3200,7 +3248,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.02"
+    "version": "2025.07.03"
   },
   {
     "_disabled": "false",
@@ -4360,6 +4408,119 @@
   },
   {
     "_disabled": "false",
+    "pkg": "mtools",
+    "pkg_family": "mtools",
+    "pkg_id": "nixpkgs.mtools",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-mtools/mtools/mtools",
+    "bincache": "ghcr.io/pkgforge/bincache/mtools/nixpkgs/lz",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mtools/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities to access MS-DOS disks",
+      "lz": "Gunzip and show a listing of a gzip'd tar'd archive [mtools]",
+      "mattrib": "Change MSDOS file attribute flags [mtools]",
+      "mbadblock": "Tests a floppy disk, and mark the bad blocks in the FAT [mtools]",
+      "mcat": "Dump raw disk image [mtools]",
+      "mcd": "Change MSDOS directory [mtools]",
+      "mcheck": "Verify all files on an MS-DOS formatted disk [mtools]",
+      "mclasserase": "Erase memory cards [mtools]",
+      "mcomp": "Compares two files [mtools]",
+      "mcopy": "Copy MSDOS files to/from Unix [mtools]",
+      "mdel": "Delete an MSDOS file [mtools]",
+      "mdeltree": "Recursively delete an MSDOS directory and its contents [mtools]",
+      "mdir": "Display an MSDOS directory [mtools]",
+      "mdoctorfat": "Doctor the allocation table of a file [mtools]",
+      "mdu": "Display the amount of space occupied by an MSDOS directory [mtools]",
+      "mformat": "Add an MSDOS filesystem to a low-level formatted floppy disk [mtools]",
+      "minfo": "Print the parameters of a MSDOS filesystem [mtools]",
+      "mkmanifest": "Make list of file names and their DOS 8+3 equivalent [mtools]",
+      "mlabel": "Make an MSDOS volume label [mtools]",
+      "mmd": "Make an MSDOS subdirectory [mtools]",
+      "mmount": "Mount an MSDOS disk [mtools]",
+      "mmove": "Move/Rename an MSDOS file or subdirectory [mtools]",
+      "mpartition": "Partition an MSDOS hard disk [mtools]",
+      "mrd": "Remove an MSDOS subdirectory [mtools]",
+      "mren": "Rename an existing MSDOS file [mtools]",
+      "mshortname": "Show short name of a file [mtools]",
+      "mshowfat": "Show FAT clusters allocated to file [mtools]",
+      "mtools": "Utilities to access DOS disks in Unix [mtools]",
+      "mtoolstest": "Tests and Display the configuration [mtools]",
+      "mtype": "Display contents of an MSDOS file [mtools]",
+      "mxtar": "Wrapper for using GNU tar directly from a floppy disk [mtools]",
+      "mzip": "Change protection mode and eject disk on Zip/Jaz drive [mtools]",
+      "tgz": "Make a gzip'd tar archive [mtools]",
+      "uz": "Gunzip and Extract a gzip'd tar'd archive [mtools]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mtools/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/mtools"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "lz",
+      "mattrib",
+      "mbadblock",
+      "mcat",
+      "mcd",
+      "mcheck",
+      "mcomp",
+      "mcopy",
+      "mdel",
+      "mdeltree",
+      "mdir",
+      "mdoctorfat",
+      "mdu",
+      "mformat",
+      "minfo",
+      "mkmanifest",
+      "mlabel",
+      "mmd",
+      "mmount",
+      "mmove",
+      "mpartition",
+      "mrd",
+      "mren",
+      "mshortname",
+      "mshowfat",
+      "mtools",
+      "mtoolstest",
+      "mtype",
+      "mxtar",
+      "mzip",
+      "tgz",
+      "uz"
+    ],
+    "repology": [
+      "mtools"
+    ],
+    "src_url": [
+      "https://github.com/google/mtools"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "4.0.49"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mtr",
     "pkg_family": "mtr",
     "pkg_id": "nixpkgs.mtr",
@@ -4802,7 +4963,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.02"
+    "version": "2025.07.03"
   },
   {
     "_disabled": "false",
@@ -7722,7 +7883,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-172e26b-250702T105200"
+    "version": "HEAD-3a4b439-250702T203839"
   },
   {
     "_disabled": "false",

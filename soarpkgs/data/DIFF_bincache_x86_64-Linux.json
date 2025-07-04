@@ -3066,7 +3066,7 @@
       "certificate-transparency",
       "security"
     ],
-    "version": "HEAD-43d6c4d-250703T133644"
+    "version": "HEAD-ed8cec7-250704T123751"
   },
   {
     "_disabled": "false",
@@ -4340,7 +4340,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-6584c99-250704T142852"
+    "version": "HEAD-bbe8d87-250704T152611"
   },
   {
     "_disabled": "false",
@@ -4657,7 +4657,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-6584c99-250704T142852"
+    "version": "HEAD-bbe8d87-250704T152611"
   },
   {
     "_disabled": "true",
@@ -5353,7 +5353,7 @@
     "tag": [
       "devenv"
     ],
-    "version": "HEAD-1bb4a04-250704T094753"
+    "version": "HEAD-edb94d3-250704T174142"
   },
   {
     "_disabled": "false",
@@ -5537,7 +5537,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-92eeb13-250703T135609"
+    "version": "HEAD-6d75013-250704T130147"
   },
   {
     "_disabled": "false",
@@ -7602,7 +7602,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f5134c4-250703T172505"
+    "version": "HEAD-5ac1846-250704T163447"
   },
   {
     "_disabled": "false",
@@ -7715,7 +7715,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-face374-250704T120440"
+    "version": "HEAD-cfb706f-250704T180354"
   },
   {
     "_disabled": "false",
@@ -9300,6 +9300,81 @@
   },
   {
     "_disabled": "false",
+    "pkg": "iputils",
+    "pkg_family": "iputils",
+    "pkg_id": "nixpkgs.iputils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-iputils/iputils/iputils",
+    "bincache": "ghcr.io/pkgforge/bincache/iputils/nixpkgs/arping",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/iputils/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A set of small useful utilities for Linux networking",
+      "arping": "Send ARP REQUEST to a neighbour host [iputils]",
+      "clockdiff": "Measure clock difference between hosts [iputils]",
+      "ping": "Send ICMP ECHO_REQUEST to network hosts [iputils]",
+      "tracepath": "Trace path to a network host discovering MTU along this path [iputils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "iputils"
+      ],
+      "archlinux": {
+        "aur": [
+          "iputils-git"
+        ]
+      },
+      "debian": [
+        "iputils"
+      ],
+      "nixpkgs": [
+        "iputils"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/iputils/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://wiki.linuxfoundation.org/networking/iputils",
+      "https://github.com/iputils/iputils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "arping",
+      "clockdiff",
+      "ping",
+      "tracepath"
+    ],
+    "repology": [
+      "iputils"
+    ],
+    "src_url": [
+      "https://github.com/iputils/iputils"
+    ],
+    "tag": [
+      "network",
+      "Network/Routing"
+    ],
+    "version": "20250605"
+  },
+  {
+    "_disabled": "false",
     "pkg": "is",
     "pkg_family": "is",
     "pkg_id": "github.com.oalders.is.source",
@@ -9492,6 +9567,79 @@
   },
   {
     "_disabled": "false",
+    "pkg": "jq",
+    "pkg_family": "jq",
+    "pkg_id": "github.com.jqlang.jq.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jq-source/jq/jq",
+    "bincache": "ghcr.io/pkgforge/bincache/gojq/official/gojq",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jq/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Lightweight and flexible command-line JSON processor",
+    "distro_pkg": {
+      "alpine": [
+        "jq"
+      ],
+      "archlinux": {
+        "aur": [
+          "jq-git"
+        ],
+        "extra": [
+          "jq"
+        ]
+      },
+      "debian": [
+        "jq"
+      ],
+      "gnuguix": [
+        "jq"
+      ],
+      "homebrew": [
+        "jq"
+      ],
+      "nixpkgs": [
+        "jq"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jq/static.official.source.yaml",
+    "homepage": [
+      "https://jqlang.github.io/jq",
+      "https://github.com/jqlang/jq"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "CC-BY-SA-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jqlang/jq"
+    ],
+    "provides": [
+      "jq"
+    ],
+    "repology": [
+      "jq"
+    ],
+    "src_url": [
+      "https://github.com/jqlang/jq"
+    ],
+    "tag": [
+      "json"
+    ],
+    "version": "HEAD-3c5ceac-250705T012528"
+  },
+  {
+    "_disabled": "false",
     "pkg": "jr",
     "pkg_family": "jr",
     "pkg_id": "github.com.ugol.jr",
@@ -9596,7 +9744,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-3211e9c-250704T011218"
+    "version": "HEAD-4a02ff2-250704T132608"
   },
   {
     "_disabled": "false",
@@ -10012,7 +10160,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-61ff8a4-250704T101645"
+    "version": "HEAD-bc4b50f-250704T194636"
   },
   {
     "_disabled": "false",
@@ -10334,6 +10482,64 @@
       "Utility"
     ],
     "version": "HEAD-e472b9a-241112T170753"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "lurk",
+    "pkg_family": "lurk",
+    "pkg_id": "github.com.JakWai01.lurk.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/lurk-source/lurk/lurk",
+    "bincache": "ghcr.io/pkgforge/bincache/lurk/official/lurk",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lurk/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Simple and pretty alternative to strace",
+    "distro_pkg": {
+      "alpine": [
+        "lurk"
+      ],
+      "archlinux": {
+        "extra": [
+          "lurk"
+        ]
+      },
+      "nixpkgs": [
+        "lurk"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lurk/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/JakWai01/lurk"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/JakWai01/lurk"
+    ],
+    "provides": [
+      "lurk==lurk-cli"
+    ],
+    "repology": [
+      "lurk"
+    ],
+    "src_url": [
+      "https://github.com/JakWai01/lurk"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-f0fc594-250704T174358"
   },
   {
     "_disabled": "false",
@@ -10894,7 +11100,7 @@
     "tag": [
       "utility"
     ],
-    "version": "HEAD-99a98b0-250703T192338"
+    "version": "HEAD-127c492-250704T141614"
   },
   {
     "_disabled": "false",
@@ -11694,7 +11900,56 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-8c09a55-250704T105158"
+    "version": "HEAD-fbb1b55-250704T195227"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "netcat",
+    "pkg_family": "netcat",
+    "pkg_id": "nixpkgs.netcat-libressl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/netcat-libressl/netcat/netcat",
+    "bincache": "ghcr.io/pkgforge/bincache/netcat-libressl/nixpkgs/nc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netcat/static.nixpkgs.libressl.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "TCP/IP swiss army knife (libressl-variant)",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/netcat/static.nixpkgs.libressl.yaml",
+    "homepage": [
+      "https://www.libressl.org/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "nc",
+      "netcat"
+    ],
+    "repology": [
+      "netcat-openbsd"
+    ],
+    "src_url": [
+      "https://github.com/libressl/portable"
+    ],
+    "tag": [
+      "net",
+      "network"
+    ],
+    "version": "4.1.0"
   },
   {
     "_disabled": "false",
@@ -12105,7 +12360,7 @@
       "recon",
       "security"
     ],
-    "version": "HEAD-84a76b3-250701T211721"
+    "version": "HEAD-eccd90d-250704T215109"
   },
   {
     "_disabled": "false",
@@ -13136,7 +13391,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-45fbdff-250625T205148"
+    "version": "HEAD-ee36c41-250705T000023"
   },
   {
     "_disabled": "false",
@@ -13500,7 +13755,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-0b314ac-250704T084845"
+    "version": "HEAD-6590328-250704T092556"
   },
   {
     "_disabled": "false",
@@ -13896,7 +14151,74 @@
       "grep",
       "regex"
     ],
-    "version": "HEAD-cbc598f-250530T083052"
+    "version": "HEAD-3b7fd44-250704T101238"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ripgrep",
+    "pkg_family": "ripgrep",
+    "pkg_id": "github.com.BurntSushi.ripgrep.glibc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ripgrep-glibc/ripgrep/ripgrep",
+    "bincache": "ghcr.io/pkgforge/bincache/ripgrep/glibc/ripgrep",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ripgrep/static.glibc.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Recursive & Line-Oriented Search Tool, combining The Silver Searcher (ag) with the raw speed of grep",
+    "distro_pkg": {
+      "alpine": [
+        "ripgrep"
+      ],
+      "archlinux": {
+        "aur": [
+          "ripgrep-git"
+        ],
+        "extra": [
+          "ripgrep"
+        ]
+      },
+      "debian": [
+        "rust-ripgrep"
+      ],
+      "nixpkgs": [
+        "ripgrep"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ripgrep/static.glibc.source.yaml",
+    "homepage": [
+      "https://github.com/BurntSushi/ripgrep"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/BurntSushi/ripgrep",
+      "Statically Linked on Debian (GLIBC)"
+    ],
+    "provides": [
+      "ripgrep==rg"
+    ],
+    "repology": [
+      "ripgrep"
+    ],
+    "src_url": [
+      "https://github.com/BurntSushi/ripgrep"
+    ],
+    "tag": [
+      "grep",
+      "regex"
+    ],
+    "version": "HEAD-3b7fd44-250704T101238"
   },
   {
     "_disabled": "false",
@@ -14488,6 +14810,66 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sendme",
+    "pkg_family": "sendme",
+    "pkg_id": "github.com.n0-computer.sendme.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sendme-source/sendme/sendme",
+    "bincache": "ghcr.io/pkgforge/bincache/sendme/official/sendme",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sendme/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Tool to send files and directories",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "sendme",
+          "sendme-bin"
+        ]
+      },
+      "homebrew": [
+        "sendme"
+      ],
+      "nixpkgs": [
+        "sendme"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sendme/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/n0-computer/sendme"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/n0-computer/sendme"
+    ],
+    "provides": [
+      "sendme"
+    ],
+    "repology": [
+      "sendme"
+    ],
+    "src_url": [
+      "https://github.com/n0-computer/sendme"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-2bed36f-250704T181749"
+  },
+  {
+    "_disabled": "false",
     "pkg": "sequin",
     "pkg_family": "sequin",
     "pkg_id": "github.com.charmbracelet.sequin.source",
@@ -14544,6 +14926,75 @@
       "Utility"
     ],
     "version": "HEAD-5dec891-250626T103719"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "shadowsocks-rust",
+    "pkg_family": "shadowsocks-rust",
+    "pkg_id": "github.com.shadowsocks.shadowsocks-rust.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rust-stable/shadowsocks-rust/shadowsocks-rust",
+    "bincache": "ghcr.io/pkgforge/bincache/shadowsocks-rust/official/sslocal",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/shadowsocks-rust/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Lightweight secured SOCKS5 proxy",
+    "distro_pkg": {
+      "alpine": [
+        "shadowsocks-rust"
+      ],
+      "archlinux": {
+        "aur": [
+          "shadowsocks-rust-git"
+        ],
+        "extra": [
+          "shadowsocks-rust"
+        ]
+      },
+      "homebrew": [
+        "shadowsocks-rust"
+      ],
+      "nixpkgs": [
+        "shadowsocks-rust"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/shadowsocks-rust/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/shadowsocks/shadowsocks-rust"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/shadowsocks/shadowsocks-rust"
+    ],
+    "provides": [
+      "sslocal",
+      "ssmanager",
+      "ssserver",
+      "ssservice",
+      "ssurl"
+    ],
+    "repology": [
+      "shadowsocks-rust"
+    ],
+    "src_url": [
+      "https://github.com/shadowsocks/shadowsocks-rust"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v1.23.5"
   },
   {
     "_disabled": "false",
@@ -16058,7 +16509,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-c46145b-250704T121923"
+    "version": "HEAD-92a114c-250704T124838"
   },
   {
     "_disabled": "false",
@@ -16585,6 +17036,49 @@
       "Utility"
     ],
     "version": "HEAD-e75313c-250704T141153"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ttfb",
+    "pkg_family": "ttfb",
+    "pkg_id": "github.com.phip1611.ttfb.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ttfb-source/ttfb/ttfb",
+    "bincache": "ghcr.io/pkgforge/bincache/ttfb/official/ttfb",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ttfb/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Measure the TTFB (time to first byte) of HTTP/DNS/TCP/TLS Connections",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ttfb/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/phip1611/ttfb"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/phip1611/ttfb"
+    ],
+    "provides": [
+      "ttfb"
+    ],
+    "src_url": [
+      "https://github.com/phip1611/ttfb"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-783ac51-250704T145555"
   },
   {
     "_disabled": "false",
@@ -18304,7 +18798,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3a6d9af-250630T204918"
+    "version": "HEAD-fa4fb13-250704T155505"
   },
   {
     "_disabled": "false",

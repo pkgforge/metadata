@@ -2655,7 +2655,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f5134c4-250703T172505"
+    "version": "HEAD-5ac1846-250704T163447"
   },
   {
     "_disabled": "false",
@@ -3669,6 +3669,81 @@
   },
   {
     "_disabled": "false",
+    "pkg": "iputils",
+    "pkg_family": "iputils",
+    "pkg_id": "nixpkgs.iputils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-iputils/iputils/iputils",
+    "bincache": "ghcr.io/pkgforge/bincache/iputils/nixpkgs/arping",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/iputils/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A set of small useful utilities for Linux networking",
+      "arping": "Send ARP REQUEST to a neighbour host [iputils]",
+      "clockdiff": "Measure clock difference between hosts [iputils]",
+      "ping": "Send ICMP ECHO_REQUEST to network hosts [iputils]",
+      "tracepath": "Trace path to a network host discovering MTU along this path [iputils]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "iputils"
+      ],
+      "archlinux": {
+        "aur": [
+          "iputils-git"
+        ]
+      },
+      "debian": [
+        "iputils"
+      ],
+      "nixpkgs": [
+        "iputils"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/iputils/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://wiki.linuxfoundation.org/networking/iputils",
+      "https://github.com/iputils/iputils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "arping",
+      "clockdiff",
+      "ping",
+      "tracepath"
+    ],
+    "repology": [
+      "iputils"
+    ],
+    "src_url": [
+      "https://github.com/iputils/iputils"
+    ],
+    "tag": [
+      "network",
+      "Network/Routing"
+    ],
+    "version": "20250605"
+  },
+  {
+    "_disabled": "false",
     "pkg": "isolate",
     "pkg_family": "isolate",
     "pkg_id": "ppkg.isolate.stable",
@@ -3849,7 +3924,7 @@
     "tag": [
       "json"
     ],
-    "version": "HEAD-b9e19de-250701T205428"
+    "version": "HEAD-3c5ceac-250705T012528"
   },
   {
     "_disabled": "false",
@@ -4661,6 +4736,55 @@
       "net-analyzer"
     ],
     "version": "0.95"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "netcat",
+    "pkg_family": "netcat",
+    "pkg_id": "nixpkgs.netcat-libressl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/netcat-libressl/netcat/netcat",
+    "bincache": "ghcr.io/pkgforge/bincache/netcat-libressl/nixpkgs/nc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/netcat/static.nixpkgs.libressl.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "TCP/IP swiss army knife (libressl-variant)",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/netcat/static.nixpkgs.libressl.yaml",
+    "homepage": [
+      "https://www.libressl.org/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "nc",
+      "netcat"
+    ],
+    "repology": [
+      "netcat-openbsd"
+    ],
+    "src_url": [
+      "https://github.com/libressl/portable"
+    ],
+    "tag": [
+      "net",
+      "network"
+    ],
+    "version": "4.1.0"
   },
   {
     "_disabled": "false",
@@ -7954,7 +8078,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-c46145b-250704T121923"
+    "version": "HEAD-92a114c-250704T124838"
   },
   {
     "_disabled": "false",

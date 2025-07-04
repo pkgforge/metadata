@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.03 ⚠️ | null |
+| PPKG   | 2025.07.04 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1851,7 +1851,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.0 ⚠️ | https://github.com/eza-community/eza/archive/refs/tags/v0.19.0.tar.gz |
-| BREW   | **0.21.6** | https://github.com/eza-community/eza |
+| BREW   | **0.22.0** | https://github.com/eza-community/eza |
 
 *Outdated*
 
@@ -4555,7 +4555,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.03 ⚠️ | null |
+| PPKG   | 2025.07.04 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6604,7 +6604,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.03 ⚠️ | null |
+| PPKG   | 2025.07.04 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6771,7 +6771,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.03 ⚠️ | null |
+| PPKG   | 2025.07.04 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6933,7 +6933,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.03 ⚠️ | null |
+| PPKG   | 2025.07.04 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7374,7 +7374,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.1** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.2** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 

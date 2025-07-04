@@ -782,7 +782,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.6.6 ⚠️ | https://github.com/rust-secure-code/cargo-auditable/archive/refs/tags/v0.6.6.tar.gz |
-| BREW   | **0.6.7** | https://github.com/rust-secure-code/cargo-auditable |
+| BREW   | **0.7.0** | https://github.com/rust-secure-code/cargo-auditable |
 
 *Outdated*
 
@@ -2459,10 +2459,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.48.1 ⚠️ | https://www.kernel.org/pub/software/scm/git/git-2.48.1.tar.xz |
-| BREW   | **2.50.0** | https://git-scm.com |
-
-*Outdated*
+| PPKG   | 2.50.0 ✅ | https://www.kernel.org/pub/software/scm/git/git-2.50.0.tar.xz |
+| BREW   | 2.50.0 | https://git-scm.com |
 
 ## git-cliff
 
@@ -3591,8 +3589,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.3.7 ✅ | https://github.com/jorgerojas26/lazysql/archive/refs/tags/v0.3.7.tar.gz |
-| BREW   | 0.3.7 | https://github.com/jorgerojas26/lazysql |
+| PPKG   | 0.3.7 ⚠️ | https://github.com/jorgerojas26/lazysql/archive/refs/tags/v0.3.7.tar.gz |
+| BREW   | **0.3.8** | https://github.com/jorgerojas26/lazysql |
+
+*Outdated*
 
 ## lcdf-typetools
 

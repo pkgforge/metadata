@@ -414,7 +414,7 @@
   12K   │   └── sync_hf_mirror.sh
   59M   ├── GHCR_PKGS.json
   21M   ├─┬ soarpkgs
-  20M   │ ├─┬ data
+  21M   │ ├─┬ data
  2.7M   │ │ ├── COMP_VER_CACHE.json
  2.6M   │ │ ├── INDEX.json
  2.0M   │ │ ├── BACKAGE.json
@@ -426,13 +426,13 @@
  1.0M   │ │ ├── COMP_VER_CACHE.md
  856K   │ │ ├── COMP_VER_CACHE_OLD.json
  756K   │ │ ├── pub_issues_binaries.txt
- 568K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 552K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 580K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 564K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  384K   │ │ ├── INDEX.json.cba
  356K   │ │ ├── COMP_VER_CACHE_OLD.md
  304K   │ │ ├── pub_issues_packages.txt
  300K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
- 272K   │ │ ├── DIFF_bincache_riscv64-Linux.json
+ 276K   │ │ ├── DIFF_bincache_riscv64-Linux.json
  244K   │ │ ├── INDEX.db.cba
  240K   │ │ ├── GH_REPO.md
  236K   │ │ ├── OLD_bincache_riscv64-Linux.json
@@ -441,14 +441,14 @@
  200K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
  180K   │ │ ├── INDEX.db.xz
- 136K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
-  80K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+ 144K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+  88K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
   52K   │ │ ├── URLS.txt
   48K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
+  24K   │ │ ├── DIFF_pkgcache_riscv64-Linux.json
   24K   │ │ ├── DIFF_bincache.json
   16K   │ │ ├── OLD_pkgcache_riscv64-Linux.json
-  16K   │ │ ├── DIFF_pkgcache_riscv64-Linux.json
  8.0K   │ │ ├── DIFF_pkgcache.json
  4.0K   │ │ ├── minisign.pub
  4.0K   │ │ ├── TOTAL_CACHE.txt

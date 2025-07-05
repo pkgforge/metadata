@@ -481,6 +481,78 @@
   },
   {
     "_disabled": "false",
+    "pkg": "aria2",
+    "pkg_family": "aria2",
+    "pkg_id": "github.com.aria2.aria2.continuous",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-continuous/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
+    "distro_pkg": {
+      "alpine": [
+        "aria2"
+      ],
+      "archlinux": {
+        "aur": [
+          "aria2-fast",
+          "aria2-git"
+        ],
+        "extra": [
+          "aria2"
+        ]
+      },
+      "debian": [
+        "aria2"
+      ],
+      "nixpkgs": [
+        "aria",
+        "aria2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "homepage": [
+      "https://aria2.github.io",
+      "https://github.com/aria2/aria2",
+      "https://aria2.sourceforge.net",
+      "https://sourceforge.net/projects/aria2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
+      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
+    ],
+    "provides": [
+      "aria2:aria2c"
+    ],
+    "repology": [
+      "aria2"
+    ],
+    "src_url": [
+      "https://github.com/abcfy2/aria2-static-build"
+    ],
+    "tag": [
+      "bittorrent",
+      "downloader"
+    ],
+    "version": "250705T015526"
+  },
+  {
+    "_disabled": "false",
     "pkg": "atuin",
     "pkg_family": "atuin",
     "pkg_id": "github.com.atuinsh.atuin",
@@ -773,7 +845,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.04"
+    "version": "2025.07.05"
   },
   {
     "_disabled": "false",
@@ -2940,7 +3012,50 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-56ad5a7-250704T120503"
+    "version": "HEAD-53353f5-250705T021913"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "cargo-quickinstall",
+    "pkg_family": "cargo-quickinstall",
+    "pkg_id": "github.com.cargo-bins.cargo-quickinstall.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/quickinstall-source/cargo-quickinstall/cargo-quickinstall",
+    "bincache": "ghcr.io/pkgforge/bincache/cargo-quickinstall/official/cargo-quickinstall",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/cargo-quickinstall/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "cargo install with Pre-Compiled binary packages",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/cargo-quickinstall/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/cargo-bins/cargo-quickinstall"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/cargo-bins/cargo-quickinstall"
+    ],
+    "provides": [
+      "cargo-quickinstall"
+    ],
+    "src_url": [
+      "https://github.com/cargo-bins/cargo-quickinstall"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-febfa8e-250705T130915"
   },
   {
     "_disabled": "false",
@@ -3224,6 +3339,63 @@
       "proxy"
     ],
     "version": "2025.7.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "cloudreve",
+    "pkg_family": "cloudreve",
+    "pkg_id": "github.com.cloudreve.Cloudreve",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cloudreve-cloudreve/cloudreve/cloudreve",
+    "bincache": "ghcr.io/pkgforge/bincache/cloudreve/official/cloudreve",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/cloudreve/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Self-hosted file management and sharing system, supports multiple storage providers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "cloudreve",
+          "cloudreve-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/cloudreve/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/cloudreve/Cloudreve"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/cloudreve/Cloudreve"
+    ],
+    "provides": [
+      "cloudreve"
+    ],
+    "repology": [
+      "cloudreve"
+    ],
+    "src_url": [
+      "https://github.com/cloudreve/Cloudreve"
+    ],
+    "tag": [
+      "utility",
+      "cloud",
+      "file",
+      "sharing"
+    ],
+    "version": "4.2.0"
   },
   {
     "_disabled": "false",
@@ -5494,7 +5666,7 @@
     "tag": [
       "ddns"
     ],
-    "version": "HEAD-57d365c-250703T211229"
+    "version": "HEAD-d6ebbf4-250705T094718"
   },
   {
     "_disabled": "false",
@@ -7715,7 +7887,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-323835f-250705T000659"
+    "version": "HEAD-bed7639-250705T060316"
   },
   {
     "_disabled": "false",
@@ -9104,7 +9276,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.04"
+    "version": "2025.07.05"
   },
   {
     "_disabled": "false",
@@ -9853,7 +10025,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-4a02ff2-250704T132608"
+    "version": "HEAD-be27966-250705T024836"
   },
   {
     "_disabled": "false",
@@ -10384,7 +10556,7 @@
     "tag": [
       "file-manager"
     ],
-    "version": "HEAD-cb8026d-250705T113345"
+    "version": "HEAD-7fd12a2-250705T151116"
   },
   {
     "_disabled": "false",
@@ -12532,7 +12704,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-a4bd51a-250704T024849"
+    "version": "HEAD-a317284-250704T220535"
   },
   {
     "_disabled": "false",
@@ -12596,7 +12768,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-a4bd51a-250704T024849"
+    "version": "HEAD-a317284-250704T220535"
   },
   {
     "_disabled": "false",
@@ -12822,7 +12994,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.04"
+    "version": "2025.07.05"
   },
   {
     "_disabled": "false",
@@ -15682,7 +15854,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b2edaad-250630T193527"
+    "version": "HEAD-ae1e89f-250705T074451"
   },
   {
     "_disabled": "false",

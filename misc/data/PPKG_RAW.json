@@ -488,7 +488,7 @@
   {
     "pkgname": "appimage-runtime-type2",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "MIT",
     "summary": "type2 AppImage runtime",
     "web-url": "https://github.com/AppImage/type2-runtime",
@@ -507,7 +507,7 @@
   {
     "pkgname": "appimagetool",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A command-line tool to generate an AppImage from an existing AppDir",
     "web-url": "https://github.com/AppImage/appimagetool",
     "git-url": "https://github.com/AppImage/appimagetool",
@@ -955,7 +955,7 @@
   {
     "pkgname": "base16",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "base16 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -970,7 +970,7 @@
   {
     "pkgname": "base64",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "base64 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -1170,7 +1170,7 @@
   {
     "pkgname": "bin-graph",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "GPL-3.0",
     "summary": "A command-line tool for visualizing the different regions of a binary file",
     "web-url": "https://github.com/8dcc/bin-graph",
@@ -1470,7 +1470,7 @@
   {
     "pkgname": "boringssl",
     "pkgtype": "exe+lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A fork of OpenSSL that is designed to meet Google needs",
     "web-url": "https://boringssl.googlesource.com/boringssl/",
     "git-url": "https://github.com/google/boringssl",
@@ -1536,6 +1536,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
+    "prepare": "find \"$llvm_clang_18_LIBRARY_DIR\" -type f -name 'libLLVM*.a' | tr '\\n' ' ' > libllvm.rsp\nexport WRAPPER_TARGET_CXXFLAGS=\"$WRAPPER_TARGET_CXXFLAGS @$PWD/libllvm.rsp\" ",
     "install": "cmakew -DUSE_SYSTEM_BPF_BCC=ON"
   },
   {
@@ -1744,7 +1745,7 @@
   {
     "pkgname": "c-examples",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "C语言学习项目",
     "web-url": "https://github.com/leleliu008/C-examples",
@@ -2795,7 +2796,7 @@
   {
     "pkgname": "cpuinfo",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -3905,7 +3906,7 @@
   {
     "pkgname": "easyutils",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A collections of easy to use command-line utilities",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -3956,7 +3957,7 @@
   {
     "pkgname": "effcee",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A C++ library for stateful pattern matching of strings",
     "web-url": "https://github.com/google/effcee",
     "git-url": "https://github.com/google/effcee",
@@ -6053,6 +6054,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
+    "prepare": "# https://sourceware.org/pipermail/libc-alpha/2024-September/159664.html\nexport WRAPPER_TARGET_CCFLAGS=\"$WRAPPER_TARGET_CCFLAGS -U_FORTIFY_SOURCE\"\n\n# error: #error \"glibc cannot be compiled without optimization\"\nCFLAGS=\"$(printf '%s\\n' \"$CFLAGS\" | sed 's|-O0|-O2|g')\"",
     "install": "configure --without-selinux"
   },
   {
@@ -6213,7 +6215,7 @@
   {
     "pkgname": "gn",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A meta-build system that generates build files for ninja",
     "web-url": "https://gn.googlesource.com/gn",
     "git-url": "https://gn.googlesource.com/gn",
@@ -6554,7 +6556,7 @@
   {
     "pkgname": "gomobile",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A tool for building and running mobile apps written in golang",
     "web-url": "https://github.com/golang/mobile",
     "git-url": "https://github.com/golang/mobile",
@@ -7464,7 +7466,7 @@
   {
     "pkgname": "hdiffpatch",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "MIT",
     "summary": "A command-line tools for diff & patch",
     "web-url": "https://github.com/sisong/HDiffPatch",
@@ -7850,7 +7852,7 @@
   {
     "pkgname": "hunter",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "The fastest file manager in the galaxy!",
     "web-url": "https://github.com/rabite0/hunter",
     "git-url": "https://github.com/rabite0/hunter",
@@ -9567,7 +9569,7 @@
   {
     "pkgname": "libbcrypt",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A password hashing method based on the Blowfish block cipher, provided via the crypt(3) and a reentrant interface",
     "web-url": "https://www.openwall.com/crypt",
     "git-url": "https://github.com/leleliu008/libbcrypt",
@@ -9852,7 +9854,7 @@
   {
     "pkgname": "libcamera",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "MIT",
     "summary": "An open source camera stack and framework",
     "web-url": "https://libcamera.org/",
@@ -10219,7 +10221,7 @@
   {
     "pkgname": "libcpuinfo",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -10781,7 +10783,8 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "dopatch": "gsed -i '/libintl\\.h/d' lib/eu-config.h\ngsed -i '/dgettext/d'   lib/eu-config.h\ngsed -i '/N_(Str/a #define _(Str) Str' lib/eu-config.h",
+    "dopatch": "gsed -i -e '/libintl\\.h/d' -e '/dgettext/d' -e '/N_(Str/a #define _(Str) Str' lib/eu-config.h",
+    "prepare": "# FNM_EXTMATCH is a GNU externsion, musl does not define it\nif [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    export CPPFLAGS=\"$CPPFLAGS -DFNM_EXTMATCH=0\"\nfi",
     "install": "configure only \\\n    --disable-libdebuginfod \\\n    --disable-debuginfod \\\n    --enable-install-elfh \\\n    --with-zlib=\"$libz_INSTALL_DIR\" \\\n    --without-zstd \\\n    --without-lzma \\\n    --without-bzlib\ngmake -C lib\ngmake -C libelf\ngmake -C libelf install\ninstall_pcfs config/libelf.pc"
   },
   {
@@ -10844,7 +10847,7 @@
   {
     "pkgname": "libexecinfo",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A quick-n-dirty BSD licensed clone of backtrace facility found in the GNU libc",
     "web-url": "https://github.com/leleliu008/libexecinfo",
     "git-url": "https://github.com/leleliu008/libexecinfo",
@@ -11560,13 +11563,13 @@
   {
     "pkgname": "libgit2",
     "pkgtype": "lib",
-    "version": "1.9.0",
+    "version": "1.9.1",
     "license": "GPL-2.0-only",
     "summary": "C library of Git core methods that is re-entrant and linkable",
     "web-url": "https://libgit2.github.com",
     "git-url": "https://github.com/libgit2/libgit2",
-    "src-url": "https://github.com/libgit2/libgit2/archive/refs/tags/v1.9.0.tar.gz",
-    "src-sha": "75b27d4d6df44bd34e2f70663cfd998f5ec41e680e1e593238bbe517a84c7ed2",
+    "src-url": "https://github.com/libgit2/libgit2/archive/refs/tags/v1.9.1.tar.gz",
+    "src-sha": "14cab3014b2b7ad75970ff4548e83615f74d719afe00aa479b4a889c1e13fc00",
     "dep-pkg": "libssh2 libpcre2 libiconv",
     "dep-upp": "curl bsdtar cmake ninja",
     "bsystem": "cmake",
@@ -11660,7 +11663,7 @@
   {
     "pkgname": "libglob",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "glob(3) implementation",
     "web-url": "https://linux.die.net/man/3/glob",
     "git-url": "https://github.com/leleliu008/libglob",
@@ -12361,7 +12364,7 @@
   {
     "pkgname": "libintl-lite",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "BSL-1.0",
     "summary": "A simple (but less powerful) GNU gettext libintl replacement",
     "web-url": "https://github.com/j-jorge/libintl-lite",
@@ -13186,7 +13189,7 @@
   {
     "pkgname": "libmesalink",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "BSD-3-Clause",
     "summary": "memory-safe and OpenSSL-compatible TLS library",
     "web-url": "https://mesalink.io",
@@ -13255,7 +13258,7 @@
   {
     "pkgname": "libmill",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "MIT",
     "summary": "Go-style concurrency in C",
     "web-url": "https://github.com/sustrik/libmill",
@@ -13723,7 +13726,7 @@
   {
     "pkgname": "libnghttp3",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -13756,7 +13759,7 @@
   {
     "pkgname": "libngtcp2",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -14952,7 +14955,7 @@
   {
     "pkgname": "libquiche",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "BSD-2-Clause",
     "summary": "Savoury implementation of the QUIC transport protocol and HTTP/3",
     "web-url": "https://github.com/cloudflare/quiche",
@@ -15480,7 +15483,7 @@
   {
     "pkgname": "libsequoia",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "An OpenPGP backend for rpm using Sequoia PGP",
     "web-url": "https://github.com/rpm-software-management/rpm-sequoia",
     "git-url": "https://github.com/rpm-software-management/rpm-sequoia",
@@ -17146,7 +17149,7 @@
   {
     "pkgname": "libwordexp",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "wordexp(3) implementation",
     "web-url": "https://linux.die.net/man/3/wordexp",
     "git-url": "https://github.com/leleliu008/libwordexp",
@@ -17731,7 +17734,7 @@
   {
     "pkgname": "lief",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "Library to Instrument Executable Formats",
     "web-url": "https://github.com/lief-project/LIEF",
@@ -17920,7 +17923,7 @@
     "git-url": "https://github.com/llvm/llvm-project",
     "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.7/llvm-project-15.0.7.src.tar.xz",
     "src-sha": "8b5fcb24b4128cf04df1b0b9410ce8b1a729cb3c544e6da885d234280dedeac6",
-    "dep-pkg": "binutils-dev libelf libedit libffi libxml2 libzstd libz3.a",
+    "dep-pkg": "binutils-dev libelf libffi libxml2 libedit libz3.a",
     "dep-upp": "python3 perl swig curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
@@ -17940,7 +17943,7 @@
     "git-url": "https://github.com/llvm/llvm-project",
     "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.8/llvm-project-18.1.8.src.tar.xz",
     "src-sha": "0b58557a6d32ceee97c8d533a59b9212d87e0fc4d2833924eb6c611247db2f2a",
-    "dep-pkg": "binutils-dev libelf libedit libffi libxml2 libzstd libz3.a",
+    "dep-pkg": "binutils-dev libelf libffi libxml2 libedit libz3.a",
     "dep-upp": "python3 perl swig curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
@@ -17948,7 +17951,8 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=\"'clang;lld'\" \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=ON \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=ON \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_LINK_LLVM_DYLIB=ON \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF \\\n    -DLLD_BUILD_TOOLS=ON"
+    "dopatch": "printf 'set(Z3_LIBRARIES z3)\\n' >> cmake/modules/FindZ3.cmake",
+    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=\"'clang;lld'\" \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=ON \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=ON \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_STATIC_LINK_CXX_STDLIB=OFF \\\n    -DLLVM_LINK_LLVM_DYLIB=ON \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF \\\n    -DLLD_BUILD_TOOLS=ON"
   },
   {
     "pkgname": "llvm+clang@18",
@@ -17960,7 +17964,7 @@
     "git-url": "https://github.com/llvm/llvm-project",
     "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.8/llvm-project-18.1.8.src.tar.xz",
     "src-sha": "0b58557a6d32ceee97c8d533a59b9212d87e0fc4d2833924eb6c611247db2f2a",
-    "dep-pkg": "binutils-dev libelf libedit libffi libxml2 libz3.a",
+    "dep-pkg": "binutils-dev libelf libffi libxml2 libedit libz3.a",
     "dep-upp": "python3 perl swig curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
@@ -17969,8 +17973,7 @@
     "ltoable": "1",
     "movable": "1",
     "dopatch": "printf 'set(Z3_LIBRARIES z3)\\n' >> cmake/modules/FindZ3.cmake",
-    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=clang \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=ON \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=OFF \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_STATIC_LINK_CXX_STDLIB=ON \\\n    -DLLVM_LINK_LLVM_DYLIB=OFF \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF",
-    "dotweak": "#gsed -i -e 's|zstd::libzstd_static|zstd|' -e \"s|$PACKAGE_WORKING_DIR/lib/libz3\\.a|z3|\" lib/cmake/llvm/LLVMExports.cmake\nrun cat lib/cmake/llvm/LLVMExports.cmake"
+    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=clang \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=ON \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=OFF \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_STATIC_LINK_CXX_STDLIB=ON \\\n    -DLLVM_LINK_LLVM_DYLIB=OFF \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF"
   },
   {
     "pkgname": "llvm@14",
@@ -17982,8 +17985,8 @@
     "git-url": "https://github.com/llvm/llvm-project",
     "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.6/llvm-project-14.0.6.src.tar.xz",
     "src-sha": "8b3cfd7bc695bd6cea0f37f53f0981f34f87496e79e2529874fd03a2f9dd3a8a",
-    "dep-pkg": "binutils-dev libelf libedit libffi libxml2 liblzma libz3.a",
-    "dep-upp": "python3 perl swig patch curl bsdtar cmake ninja",
+    "dep-pkg": "binutils-dev libelf libffi libxml2 liblzma libedit libz3.a",
+    "dep-upp": "python3 perl swig curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
@@ -18002,7 +18005,7 @@
     "git-url": "https://github.com/llvm/llvm-project",
     "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.7/llvm-project-15.0.7.src.tar.xz",
     "src-sha": "8b5fcb24b4128cf04df1b0b9410ce8b1a729cb3c544e6da885d234280dedeac6",
-    "dep-pkg": "binutils-dev libelf libedit libffi libxml2 liblzma libz3.a",
+    "dep-pkg": "binutils-dev libelf libffi libxml2 liblzma libedit libz3.a",
     "dep-upp": "python3 perl swig curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
@@ -18022,7 +18025,7 @@
     "git-url": "https://github.com/llvm/llvm-project",
     "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz",
     "src-sha": "ce5e71081d17ce9e86d7cbcfa28c4b04b9300f8fb7e78422b1feb6bc52c3028e",
-    "dep-pkg": "binutils-dev libelf libedit libffi libxml2 liblzma libz3.a",
+    "dep-pkg": "binutils-dev libelf libffi libxml2 liblzma libedit libz3.a",
     "dep-upp": "python3 perl swig patch curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
@@ -18042,7 +18045,7 @@
     "git-url": "https://github.com/llvm/llvm-project",
     "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-project-17.0.6.src.tar.xz",
     "src-sha": "58a8818c60e6627064f312dbf46c02d9949956558340938b71cf731ad8bc0813",
-    "dep-pkg": "binutils-dev libelf libedit libffi libxml2 liblzma libz3.a",
+    "dep-pkg": "binutils-dev libelf libffi libxml2 liblzma libedit libz3.a",
     "dep-upp": "python3 perl swig curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
@@ -18062,7 +18065,7 @@
     "git-url": "https://github.com/llvm/llvm-project",
     "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.8/llvm-project-18.1.8.src.tar.xz",
     "src-sha": "0b58557a6d32ceee97c8d533a59b9212d87e0fc4d2833924eb6c611247db2f2a",
-    "dep-pkg": "binutils-dev libelf libedit libffi libxml2 liblzma libz3.a",
+    "dep-pkg": "binutils-dev libelf libffi libxml2 liblzma libedit libz3.a",
     "dep-upp": "python3 perl swig curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
@@ -18076,14 +18079,14 @@
   {
     "pkgname": "llvm@19",
     "pkgtype": "exe",
-    "version": "19.1.5",
+    "version": "19.1.7",
     "license": "Apache-2.0 with LLVM-exception",
     "summary": "Next-gen compiler infrastructure",
     "web-url": "https://llvm.org/",
     "git-url": "https://github.com/llvm/llvm-project",
-    "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.5/llvm-project-19.1.5.src.tar.xz",
-    "src-sha": "bd8445f554aae33d50d3212a15e993a667c0ad1b694ac1977f3463db3338e542",
-    "dep-pkg": "python3 binutils-dev libelf libedit libffi libxml2 liblzma libz3.a",
+    "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/llvm-project-19.1.7.src.tar.xz",
+    "src-sha": "82401fea7b79d0078043f7598b835284d6650a75b93e64b6f761ea7b63097501",
+    "dep-pkg": "python3 binutils-dev libelf libffi libxml2 liblzma libedit libz3.a",
     "dep-upp": "perl swig patch curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
@@ -18093,6 +18096,27 @@
     "movable": "1",
     "dopatch": "gsed -i '/add_optional_dependency(LLDB_ENABLE_LIBXML2/c find_package(LibXml2 CONFIG REQUIRED)' ../lldb/cmake/modules/LLDBConfig.cmake\ngsed -i '/find_package(LibXml2/a set(LIBXML2_FOUND TRUE)'                                      ../lldb/cmake/modules/LLDBConfig.cmake\n\nLIBELF_LIBRARIES=\"$(pkg-config --libs-only-l libelf)\"\n#gsed -i \"/set(LIBOMPTARGET_DEP_LIBELF_INCLUDE_DIRS/a set(LIBOMPTARGET_DEP_LIBELF_LIBRARIES $LIBELF_LIBRARIES)\" ../openmp/libomptarget/cmake/Modules/LibomptargetGetDependencies.cmake",
     "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=\"'clang;clang-tools-extra;lld;lldb;mlir;polly;openmp'\" \\\n    -DLLVM_ENABLE_RUNTIMES=\"'compiler-rt;libcxx;libcxxabi;libunwind'\" \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=ON \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=ON \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_LINK_LLVM_DYLIB=ON \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF \\\n    -DLLD_BUILD_TOOLS=ON \\\n    -DLLDB_USE_SYSTEM_DEBUGSERVER=ON \\\n    -DLLDB_USE_SYSTEM_SIX=OFF \\\n    -DLLDB_ENABLE_LUA=OFF \\\n    -DLLDB_ENABLE_PYTHON=OFF \\\n    -DLLDB_ENABLE_CURSES=ON \\\n    -DLLDB_ENABLE_LIBEDIT=ON \\\n    -DLLDB_ENABLE_LIBXML2=ON \\\n    -DLLDB_ENABLE_LZMA=ON \\\n    -DLIBOMP_INSTALL_ALIASES=OFF"
+  },
+  {
+    "pkgname": "llvm@20",
+    "pkgtype": "exe",
+    "version": "20.1.7",
+    "license": "Apache-2.0 with LLVM-exception",
+    "summary": "Next-gen compiler infrastructure",
+    "web-url": "https://llvm.org/",
+    "git-url": "https://github.com/llvm/llvm-project",
+    "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/llvm-project-20.1.7.src.tar.xz",
+    "src-sha": "cd8fd55d97ad3e360b1d5aaf98388d1f70dfffb7df36beee478be3b839ff9008",
+    "dep-pkg": "python3 binutils-dev libelf libffi libxml2 liblzma libedit libz3.a",
+    "dep-upp": "perl swig patch curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "ldflags": "-lncurses",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "dopatch": "gsed -i '/add_optional_dependency(LLDB_ENABLE_LIBXML2/c find_package(LibXml2 CONFIG REQUIRED)' ../lldb/cmake/modules/LLDBConfig.cmake\ngsed -i '/find_package(LibXml2/a set(LIBXML2_FOUND TRUE)'                                      ../lldb/cmake/modules/LLDBConfig.cmake\n\n#LIBELF_LIBRARIES=\"$(pkg-config --libs-only-l libelf)\"\n#gsed -i \"/set(LIBOMPTARGET_DEP_LIBELF_INCLUDE_DIRS/a set(LIBOMPTARGET_DEP_LIBELF_LIBRARIES $LIBELF_LIBRARIES)\" ../openmp/libomptarget/cmake/Modules/LibomptargetGetDependencies.cmake",
+    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=\"'clang;clang-tools-extra;lld;lldb;mlir;polly;openmp'\" \\\n    -DLLVM_ENABLE_RUNTIMES=\"'compiler-rt;libcxx;libcxxabi;libunwind'\" \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=ON \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=ON \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_LINK_LLVM_DYLIB=ON \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF \\\n    -DLLD_BUILD_TOOLS=ON \\\n    -DLLDB_USE_SYSTEM_DEBUGSERVER=ON \\\n    -DLLDB_USE_SYSTEM_SIX=OFF \\\n    -DLLDB_ENABLE_LUA=OFF \\\n    -DLLDB_ENABLE_PYTHON=OFF \\\n    -DLLDB_ENABLE_CURSES=ON \\\n    -DLLDB_ENABLE_LIBEDIT=ON \\\n    -DLLDB_ENABLE_LIBXML2=ON \\\n    -DLLDB_ENABLE_LZMA=ON \\\n    -DLIBOMP_INSTALL_ALIASES=OFF"
   },
   {
     "pkgname": "lm-sensors",
@@ -18150,7 +18174,7 @@
   {
     "pkgname": "lodepng",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Zlib",
     "summary": "PNG encoder and decoder in C and C++",
     "web-url": "https://github.com/lvandeve/lodepng",
@@ -19271,7 +19295,7 @@
   {
     "pkgname": "ndk-pkg",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "A package builder for Android NDK to build projects written in C, C++, Rust, Golang, etc",
     "web-url": "https://github.com/leleliu008/ndk-pkg",
@@ -19306,7 +19330,7 @@
   {
     "pkgname": "neper",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "A networking performance tool for Linux",
     "web-url": "https://github.com/google/neper",
@@ -19416,7 +19440,7 @@
   {
     "pkgname": "nghttp3",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -19469,7 +19493,7 @@
   {
     "pkgname": "ngtcp2",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -19485,7 +19509,7 @@
   {
     "pkgname": "nilaway",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "A static analysis tool to detect potential nil panics in Go code",
     "web-url": "https://github.com/uber-go/nilaway",
@@ -20217,7 +20241,7 @@
   {
     "pkgname": "openrsync",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "ISC",
     "summary": "BSD-licensed implementation of rsync",
     "web-url": "https://github.com/kristapsdz/openrsync",
@@ -20248,6 +20272,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
+    "prepare": "if [ \"$PACKAGE_CREATE_FULLY_STATICALLY_LINKED_EXECUTABLE\" = 1 ] ; then\n    CONFIGURE_EXTRA_ARGS='--without-pam'\nelse\n    CONFIGURE_EXTRA_ARGS='--with-pam'\nfi",
     "install": "configure \\\n    --with-ldns \\\n    --with-libedit \\\n    --with-kerberos5 \\\n    --with-security-key-builtin \\\n    --with-privsep-path=$PACKAGE_INSTALL_DIR/var/lib/sshd \\\n    $CONFIGURE_EXTRA_ARGS"
   },
   {
@@ -20350,7 +20375,7 @@
   {
     "pkgname": "packcc",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A packrat parser generator for C",
     "web-url": "https://github.com/arithy/packcc",
     "git-url": "https://github.com/arithy/packcc",
@@ -20642,7 +20667,7 @@
   {
     "pkgname": "pegof",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "PEG grammar optimizer and formatter. Supports any grammar supported by PackCC parser generator.",
     "web-url": "https://github.com/dolik-rce/pegof",
     "git-url": "https://github.com/dolik-rce/pegof",
@@ -20831,7 +20856,7 @@
   {
     "pkgname": "plog",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "MPL-2.0",
     "summary": "Portable, simple and extensible C++ logging library",
     "web-url": "https://github.com/SergiusTheBest/plog",
@@ -21048,7 +21073,7 @@
   {
     "pkgname": "ppkg",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "A portable package manager for Unix-like system",
     "web-url": "https://github.com/leleliu008/ppkg",
@@ -21222,7 +21247,7 @@
   {
     "pkgname": "psimd",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "MIT",
     "summary": "Portable 128-bit SIMD intrinsics",
     "web-url": "https://github.com/Maratyszcza/psimd",
@@ -21297,7 +21322,7 @@
   {
     "pkgname": "pup",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "MIT",
     "summary": "Parse HTML at the command-line",
     "web-url": "https://github.com/EricChiang/pup",
@@ -22329,7 +22354,7 @@
   {
     "pkgname": "ruy",
     "pkgtype": "lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "matrix multiplication library",
     "web-url": "https://github.com/google/ruy",
@@ -22683,7 +22708,7 @@
   {
     "pkgname": "sjpeg",
     "pkgtype": "exe+lib",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "simple jpeg encoder",
     "web-url": "https://github.com/webmproject/sjpeg",
@@ -22718,7 +22743,7 @@
   {
     "pkgname": "skcms",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "BSD",
     "summary": "SkCMS",
     "web-url": "https://skia.googlesource.com/skcms.git",
@@ -23532,7 +23557,7 @@
   {
     "pkgname": "sysinfo",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A command-line utility to print your currently running system information",
     "web-url": "https://github.com/leleliu008/sysinfo",
     "git-url": "https://github.com/leleliu008/sysinfo",
@@ -23562,6 +23587,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
+    "prepare": "unset MESON_EXTRA_ARGS\n\nif [ \"$TARGET_PLATFORM_VERS\" = musl ] ; then\n    MESON_EXTRA_ARGS='-Dnss-systemd=false -Dnss-myhostname=false -Dnss-mymachines=false -Dnss-resolve=false'\n\n    LIST='\n    0001-binfmt-Don-t-install-dependency-links-at-install-tim.patch\n    0002-implment-systemd-sysv-install-for-OE.patch\n    0003-coredump-set-ProtectHome-to-read-only.patch\n    0004-missing_type.h-add-comparison_fn_t.patch\n    0005-add-fallback-parse_printf_format-implementation.patch\n    0006-don-t-fail-if-GLOB_BRACE-and-GLOB_ALTDIRFUNC-is-not-.patch\n    0007-add-missing-FTW_-macros-for-musl.patch\n    0008-Use-uintmax_t-for-handling-rlim_t.patch\n    0009-don-t-pass-AT_SYMLINK_NOFOLLOW-flag-to-faccessat.patch\n    0010-Define-glibc-compatible-basename-for-non-glibc-syste.patch\n    0011-Do-not-disable-buffering-when-writing-to-oom_score_a.patch\n    0012-distinguish-XSI-compliant-strerror_r-from-GNU-specif.patch\n    0013-avoid-redefinition-of-prctl_mm_map-structure.patch\n    0014-do-not-disable-buffer-in-writing-files.patch\n    0015-Handle-__cpu_mask-usage.patch\n    0016-Handle-missing-gshadow.patch\n    0017-missing_syscall.h-Define-MIPS-ABI-defines-for-musl.patch\n    0018-pass-correct-parameters-to-getdents64.patch\n    0019-Adjust-for-musl-headers.patch\n    0020-test-bus-error-strerror-is-assumed-to-be-GNU-specifi.patch\n    0021-errno-util-Make-STRERROR-portable-for-musl.patch\n    0022-sd-event-Make-malloc_trim-conditional-on-glibc.patch\n    0023-shared-Do-not-use-malloc_info-on-musl.patch\n    0024-avoid-missing-LOCK_EX-declaration.patch\n    0025-include-signal.h-to-avoid-the-undeclared-error.patch\n    0026-undef-stdin-for-references-using-stdin-as-a-struct-m.patch\n    0027-adjust-header-inclusion-order-to-avoid-redeclaration.patch\n    0028-build-path.c-avoid-boot-time-segfault-for-musl.patch\n    '\n\n    for f in $LIST\n    do\n        wfetch \"https://raw.githubusercontent.com/openembedded/openembedded-core/refs/heads/master/meta/recipes-core/systemd/systemd/$f\"\n    done\n\n    for f in $LIST\n    do\n        patch -p1 < \"$f\"\n    done\nfi",
     "install": "mesonw \\\n    --sysconfdir=$PACKAGE_INSTALL_DIR/etc \\\n    --localstatedir=$PACKAGE_INSTALL_DIR/var \\\n    -Drootprefix=$PACKAGE_INSTALL_DIR \\\n    -Dsysvinit-path=$PACKAGE_INSTALL_DIR/etc/init.d \\\n    -Dsysvrcnd-path=$PACKAGE_INSTALL_DIR/etc/rc.d \\\n    -Dpamconfdir=$PACKAGE_INSTALL_DIR/etc/pam.d \\\n    -Dbashcompletiondir=$PACKAGE_INSTALL_DIR/share/bash_completion \\\n    -Dstatic-libsystemd=pic \\\n    -Dman=enabled \\\n    -Dacl=disabled \\\n    -Dpam=disabled \\\n    -Dlz4=enabled \\\n    -Dhwdb=false \\\n    -Dtests=false \\\n    -Dp11kit=disabled \\\n    -Dgnutls=disabled \\\n    -Dlibcurl=disabled \\\n    -Dmicrohttpd=disabled \\\n    -Dcreate-log-dirs=false $MESON_EXTRA_ARGS",
     "dotweak": "printf 'Requires: libcap\\n' >> lib/pkgconfig/libsystemd.pc"
   },
@@ -24482,7 +24508,7 @@
   {
     "pkgname": "uctags",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "GPL-2.0-or-later",
     "summary": "Maintained ctags implementation",
     "web-url": "https://ctags.io/",
@@ -24613,7 +24639,7 @@
   {
     "pkgname": "uppm",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -24743,7 +24769,7 @@
   {
     "pkgname": "utf8.h",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Unlicense",
     "summary": "single header utf8 string functions for C and C++",
     "web-url": "https://github.com/sheredom/utf8.h",
@@ -24911,7 +24937,7 @@
   {
     "pkgname": "vala-lint",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "GPL-2.0-or-later",
     "summary": "A small command-line tool for checking Vala code files for code-style errors",
     "web-url": "https://github.com/vala-lang/vala-lint",
@@ -25757,7 +25783,7 @@
   {
     "pkgname": "xbps",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "summary": "A binary package system designed and implemented from scratch",
     "web-url": "https://github.com/void-linux/xbps",
     "git-url": "https://github.com/void-linux/xbps",
@@ -25830,7 +25856,7 @@
   {
     "pkgname": "xcpkg",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "A package builder/manager for Xcode to build projects written in C, C++, Rust, Zig, Go, Haskell, etc",
     "web-url": "https://github.com/leleliu008/xcpkg",
@@ -26769,7 +26795,7 @@
   {
     "pkgname": "xpup",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "Apache-2.0",
     "summary": "A command line tool for XML parsing",
     "web-url": "https://github.com/ericchiang/xpup",
@@ -26972,7 +26998,7 @@
   {
     "pkgname": "ycm",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "GPL-v3",
     "summary": "A code-completion engine for Vim",
     "web-url": "https://github.com/ycm-core/YouCompleteMe",
@@ -27082,7 +27108,7 @@
   {
     "pkgname": "zeta",
     "pkgtype": "exe",
-    "version": "2025.07.04",
+    "version": "2025.07.05",
     "license": "LGPL-3.0",
     "summary": "Header-only general purpose library",
     "web-url": "https://github.com/redcode/Zeta",

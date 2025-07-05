@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.04 ⚠️ | null |
+| PPKG   | 2025.07.05 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -979,8 +979,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.16.1 ✅ | https://hpjansson.org/chafa/releases/chafa-1.16.1.tar.xz |
-| BREW   | 1.16.1 | https://hpjansson.org/chafa/ |
+| PPKG   | 1.16.1 ⚠️ | https://hpjansson.org/chafa/releases/chafa-1.16.1.tar.xz |
+| BREW   | **1.16.2** | https://hpjansson.org/chafa/ |
+
+*Outdated*
 
 ## cheat
 
@@ -3515,8 +3517,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.1.2 ✅ | null |
-| BREW   | 3.1.2 | http://koka-lang.org |
+| PPKG   | 3.1.2 ⚠️ | null |
+| BREW   | **3.1.3** | http://koka-lang.org |
+
+*Outdated*
 
 ## kondo
 
@@ -3570,7 +3574,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.41.0 ⚠️ | https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz |
-| BREW   | **0.52.0** | https://github.com/jesseduffield/lazygit/ |
+| BREW   | **0.53.0** | https://github.com/jesseduffield/lazygit/ |
 
 *Outdated*
 
@@ -4195,10 +4199,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.9.0 ⚠️ | https://github.com/libgit2/libgit2/archive/refs/tags/v1.9.0.tar.gz |
-| BREW   | **1.9.1** | https://libgit2.org/ |
-
-*Outdated*
+| PPKG   | 1.9.1 ✅ | https://github.com/libgit2/libgit2/archive/refs/tags/v1.9.1.tar.gz |
+| BREW   | 1.9.1 | https://libgit2.org/ |
 
 ## libgit2@1.7
 
@@ -4555,7 +4557,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.04 ⚠️ | null |
+| PPKG   | 2025.07.05 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4716,7 +4718,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.6.46 ⚠️ | https://downloads.sourceforge.net/libpng/libpng-1.6.46.tar.xz |
-| BREW   | **1.6.49** | http://www.libpng.org/pub/png/libpng.html |
+| BREW   | **1.6.50** | http://www.libpng.org/pub/png/libpng.html |
 
 *Outdated*
 
@@ -5600,10 +5602,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 19.1.5 ⚠️ | https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.5/llvm-project-19.1.5.src.tar.xz |
-| BREW   | **19.1.7** | https://llvm.org/ |
-
-*Outdated*
+| PPKG   | 19.1.7 ✅ | https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/llvm-project-19.1.7.src.tar.xz |
+| BREW   | 19.1.7 | https://llvm.org/ |
 
 ## lm-sensors
 
@@ -5716,7 +5716,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.680** | https://luau.org |
+| BREW   | **0.681** | https://luau.org |
 
 *Outdated*
 
@@ -6604,7 +6604,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.04 ⚠️ | null |
+| PPKG   | 2025.07.05 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6771,7 +6771,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.04 ⚠️ | null |
+| PPKG   | 2025.07.05 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6933,7 +6933,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.04 ⚠️ | null |
+| PPKG   | 2025.07.05 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7986,7 +7986,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.82.4** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.83.0** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

@@ -342,6 +342,61 @@
   },
   {
     "_disabled": "false",
+    "pkg": "aqtinstall",
+    "pkg_family": "aqtinstall",
+    "pkg_id": "sharun.wrappe.pypi.aqtinstall",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-aqtinstall/aqtinstall/aqtinstall",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/aqtinstall/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Qt CLI Installer on multi-platforms",
+    "distro_pkg": {
+      "homebrew": [
+        "aqtinstall"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/aqtinstall/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://aqtinstall.readthedocs.io",
+      "https://github.com/miurahr/aqtinstall"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/aqtinstall/archive/sharun",
+    "provides": [
+      "aqtinstall==aqt"
+    ],
+    "repology": [
+      "aqt",
+      "aqtinstall"
+    ],
+    "src_url": [
+      "https://pypi.org/project/aqtinstall"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.3.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "archey",
     "pkg_family": "archey",
     "pkg_id": "sharun.wrappe.pypi.archey",
@@ -883,60 +938,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "caido",
-    "pkg_family": "caido",
-    "pkg_id": "github.com.caido.caido.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caido-stable/caido/caido",
-    "app_id": "io.caido.caido",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/caido/appimage.official.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Lightweight web security auditing toolkit",
-    "distro_pkg": {
-      "homebrew": [
-        "caido"
-      ],
-      "nixpkgs": [
-        "caido"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/caido/appimage.official.stable.yaml",
-    "homepage": [
-      "https://caido.io"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Unfree"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/caido/caido",
-      "You may need to run this with: --no-sandbox"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/caido/appimage/official",
-    "provides": [
-      "caido"
-    ],
-    "repology": [
-      "caido"
-    ],
-    "src_url": [
-      "https://github.com/caido/caido"
-    ],
-    "tag": [
-      "security"
-    ],
-    "version": "v0.49.0"
-  },
-  {
-    "_disabled": "false",
     "pkg": "chafa",
     "pkg_family": "chafa",
     "pkg_id": "sharun.wrappe.alpine.chafa",
@@ -1063,6 +1064,82 @@
       "Utility"
     ],
     "version": "HEAD-5dfbe93-231012T002040"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "cmake",
+    "pkg_family": "cmake",
+    "pkg_id": "ppkg.bundle.cmake.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cmake-stable/cmake/cmake",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/cmake/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Cross-platform, open-source build system",
+    "distro_pkg": {
+      "alpine": [
+        "cmake"
+      ],
+      "archlinux": {
+        "aur": [
+          "cmake-git"
+        ],
+        "extra": [
+          "cmake"
+        ]
+      },
+      "debian": [
+        "cmake"
+      ],
+      "gnuguix": [
+        "cmake"
+      ],
+      "homebrew": [
+        "cmake"
+      ],
+      "nixpkgs": [
+        "cmake"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/cmake/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.cmake.org",
+      "https://gitlab.kitware.com/cmake/cmake"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/cmake/appimage/ppkg",
+    "provides": [
+      "cmake==cpack",
+      "cmake==ctest"
+    ],
+    "repology": [
+      "cmake"
+    ],
+    "src_url": [
+      "https://gitlab.kitware.com/cmake/cmake"
+    ],
+    "tag": [
+      "build-system"
+    ],
+    "version": "3.31.7"
   },
   {
     "_disabled": "false",
@@ -2057,80 +2134,6 @@
     "version": "HEAD-d6bb1e5-250226T000945"
   },
   {
-    "_disabled": "false",
-    "pkg": "ghex",
-    "pkg_family": "ghex",
-    "pkg_id": "runimage.alpine.ghex",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-ghex/ghex/ghex",
-    "app_id": "org.gnome.GHex",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghex/runimage.alpine.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A simple Binary/Hex editor",
-    "distro_pkg": {
-      "alpine": [
-        "ghex"
-      ],
-      "archlinux": {
-        "extra": [
-          "ghex"
-        ]
-      },
-      "debian": [
-        "ghex"
-      ],
-      "gnuguix": [
-        "ghex"
-      ],
-      "homebrew": [
-        "ghex"
-      ],
-      "nixpkgs": [
-        "ghex",
-        "gnome.ghex"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghex/runimage.alpine.stable.yaml",
-    "homepage": [
-      "https://wiki.gnome.org/Apps/Ghex"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/ghex/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghex/runimage/alpine",
-    "provides": [
-      "ghex"
-    ],
-    "repology": [
-      "ghex"
-    ],
-    "src_url": [
-      "https://gitlab.gnome.org/GNOME/ghex"
-    ],
-    "tag": [
-      "binary",
-      "editor",
-      "hex"
-    ],
-    "version": "46.3"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "replaced": [
@@ -2396,7 +2399,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250704T005030"
+    "version": "250705T004746"
   },
   {
     "_disabled": "false",
@@ -3088,83 +3091,6 @@
       "Utility"
     ],
     "version": "2.0.5"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "inkscape",
-    "pkg_family": "inkscape",
-    "pkg_id": "runimage.alpine.inkscape",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-inkscape/inkscape/inkscape",
-    "app_id": "org.inkscape.Inkscape",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/inkscape/runimage.alpine.stable.yaml",
-    "category": [
-      "Graphics",
-      "Office"
-    ],
-    "description": "FOSS Vector Graphics Editor",
-    "distro_pkg": {
-      "alpine": [
-        "inkscape"
-      ],
-      "archlinux": {
-        "aur": [
-          "inkscape-git"
-        ],
-        "extra": [
-          "inkscape"
-        ]
-      },
-      "debian": [
-        "inkscape"
-      ],
-      "gnuguix": [
-        "inkscape"
-      ],
-      "homebrew": [
-        "inkscape"
-      ],
-      "nixpkgs": [
-        "inkscape",
-        "inkscape-with-extensions"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/inkscape/runimage.alpine.stable.yaml",
-    "homepage": [
-      "https://inkscape.org"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/inkscape/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/inkscape/runimage/alpine",
-    "provides": [
-      "inkscape"
-    ],
-    "repology": [
-      "inkscape"
-    ],
-    "src_url": [
-      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/inkscape"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ],
-    "version": "1.4.2"
   },
   {
     "_disabled": "false",
@@ -4346,7 +4272,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-bbca423-250703T185605"
+    "version": "HEAD-991f871-250704T220314"
   },
   {
     "_disabled": "false",
@@ -4598,6 +4524,70 @@
       "Utility"
     ],
     "version": "0.4.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "pg_activity",
+    "pkg_family": "pg_activity",
+    "pkg_id": "sharun.wrappe.pypi.pg_activity",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-pg_activity/pg_activity/pg_activity",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/pg_activity/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Top-like application for PostgreSQL server activity monitoring",
+    "distro_pkg": {
+      "alpine": [
+        "pg_activity"
+      ],
+      "archlinux": {
+        "aur": [
+          "pg_activity"
+        ]
+      },
+      "debian": [
+        "pg-activity"
+      ],
+      "nixpkgs": [
+        "pg_activity"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/pg_activity/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/dalibo/pg_activity"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/pg_activity/archive/sharun",
+    "provides": [
+      "pg_activity==pg-activity"
+    ],
+    "repology": [
+      "pg-activity"
+    ],
+    "src_url": [
+      "https://pypi.org/project/pg_activity"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.6.1"
   },
   {
     "_disabled": "false",

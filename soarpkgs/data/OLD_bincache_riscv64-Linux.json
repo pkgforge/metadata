@@ -1,6 +1,50 @@
 [
   {
     "_disabled": "false",
+    "pkg": "afio",
+    "pkg_family": "afio",
+    "pkg_id": "nixpkgs.afio",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-afio/afio/afio",
+    "bincache": "ghcr.io/pkgforge/bincache/afio/nixpkgs/afio",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/afio/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Archiver & backup program with fault tolerant compression",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/afio/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://github.com/kholtman/afio"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "afio"
+    ],
+    "repology": [
+      "afio"
+    ],
+    "src_url": [
+      "https://github.com/kholtman/afio"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2.5.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "alacritty",
     "pkg_family": "alacritty",
     "pkg_id": "ppkg.alacritty",
@@ -240,6 +284,133 @@
   },
   {
     "_disabled": "false",
+    "pkg": "bash",
+    "pkg_family": "bash",
+    "pkg_id": "nixpkgs.bash",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bash/bash/bash",
+    "bincache": "ghcr.io/pkgforge/bincache/bash/nixpkgs/bash",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bash/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GNU Bourne-Again Shell, the de facto standard shell on Linux",
+    "distro_pkg": {
+      "alpine": [
+        "bash"
+      ],
+      "archlinux": {
+        "aur": [
+          "bash-devel-git",
+          "bash-devel-static-git",
+          "bash-git",
+          "bash3",
+          "bash4"
+        ]
+      },
+      "debian": [
+        "bash"
+      ],
+      "gnuguix": [
+        "bash",
+        "bash-minimal",
+        "bash-static"
+      ],
+      "homebrew": [
+        "bash"
+      ],
+      "nixpkgs": [
+        "bash"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bash/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/bash/",
+      "https://git.savannah.gnu.org/cgit/bash.git",
+      "https://savannah.gnu.org/projects/bash"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "bash==sh"
+    ],
+    "repology": [
+      "bash"
+    ],
+    "src_url": [
+      "https://git.savannah.gnu.org/cgit/bash.git"
+    ],
+    "tag": [
+      "bash",
+      "shell"
+    ],
+    "version": "5.2p37"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bc",
+    "pkg_family": "bc",
+    "pkg_id": "nixpkgs.bc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bc/bc/bc",
+    "bincache": "ghcr.io/pkgforge/bincache/bc/nixpkgs/bc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bc/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GNU software calculator",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bc/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/bc",
+      "https://github.com/gavinhoward/bc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "bc"
+    ],
+    "repology": [
+      "bc",
+      "dc"
+    ],
+    "src_url": [
+      "https://github.com/gavinhoward/bc"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.08.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "bin-graph",
     "pkg_family": "bin-graph",
     "pkg_id": "ppkg.bin-graph.stable",
@@ -284,6 +455,54 @@
       "Utility"
     ],
     "version": "2025.07.06"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bison",
+    "pkg_family": "bison",
+    "pkg_id": "nixpkgs.bison",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-bison/bison/bison",
+    "bincache": "ghcr.io/pkgforge/bincache/bison/nixpkgs/bison",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bison/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Yacc-compatible parser generator",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bison/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://savannah.gnu.org/projects/bison/",
+      "https://https.git.savannah.gnu.org/git/bison.git"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "bison"
+    ],
+    "repology": [
+      "bison"
+    ],
+    "src_url": [
+      "https://https.git.savannah.gnu.org/git/bison.git"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.8.2"
   },
   {
     "_disabled": "false",
@@ -370,6 +589,53 @@
       "payment"
     ],
     "version": "26.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brotli",
+    "pkg_family": "brotli",
+    "pkg_id": "nixpkgs.brotli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brotli/brotli/brotli",
+    "bincache": "ghcr.io/pkgforge/bincache/brotli/nixpkgs/brotli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/brotli/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Generic-purpose lossless compression tool",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/brotli/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://github.com/google/brotli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "brotli"
+    ],
+    "repology": [
+      "brotli"
+    ],
+    "src_url": [
+      "https://github.com/google/brotli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.1.0"
   },
   {
     "_disabled": "false",
@@ -1534,6 +1800,83 @@
   },
   {
     "_disabled": "false",
+    "pkg": "dos2unix",
+    "pkg_family": "dos2unix",
+    "pkg_id": "nixpkgs.dos2unix",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-dos2unix/dos2unix/dos2unix",
+    "bincache": "ghcr.io/pkgforge/bincache/dos2unix/nixpkgs/dos2unix",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dos2unix/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Convert text between DOS, UNIX, and Mac formats",
+      "dos2unix": "DOS to Unix and vice versa text file format (line endings) converter [dos2unix]",
+      "mac2unix": "MAC to Unix and vice versa text file format (line endings) converter [dos2unix]",
+      "unix2dos": "Unix to DOS and vice versa text file format (line endings) converter [dos2unix]",
+      "unix2mac": "Unix to MAC and vice versa text file format (line endings) converter [dos2unix]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "dos2unix"
+      ],
+      "archlinux": {
+        "aur": [
+          "dos2unix-git"
+        ],
+        "extra": [
+          "dos2unix"
+        ]
+      },
+      "debian": [
+        "dos2unix"
+      ],
+      "nixpkgs": [
+        "dos2unix"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dos2unix/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://dos2unix.sourceforge.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "dos2unix",
+      "mac2unix",
+      "unix2dos",
+      "unix2mac"
+    ],
+    "repology": [
+      "dos2unix"
+    ],
+    "src_url": [
+      "https://dos2unix.sourceforge.io"
+    ],
+    "tag": [
+      "crlf",
+      "line-endings"
+    ],
+    "version": "7.5.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "eget",
     "pkg_family": "eget",
     "pkg_id": "github.com.zyedidia.eget",
@@ -1840,6 +2183,80 @@
       "neofetch"
     ],
     "version": "HEAD-9ba30ad-250706T182314"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "findutils",
+    "pkg_family": "findutils",
+    "pkg_id": "nixpkgs.findutils",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-findutils/findutils/findutils",
+    "bincache": "ghcr.io/pkgforge/bincache/findutils/nixpkgs/find",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/findutils/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A toolset for searching and processing files [GNU]",
+      "find": "Search for files in a directory hierarchy",
+      "locate": "List files in databases that match a pattern",
+      "updatedb": "Update a file name database",
+      "xargs": "Build and Execute command lines from standard input"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "findutils"
+      ],
+      "archlinux": {
+        "aur": [
+          "findutils-git"
+        ]
+      },
+      "debian": [
+        "findutils"
+      ],
+      "nixpkgs": [
+        "findutils"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/findutils/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/findutils/",
+      "https://savannah.gnu.org/projects/findutils"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "find",
+      "locate",
+      "updatedb",
+      "xargs"
+    ],
+    "repology": [
+      "findutils"
+    ],
+    "src_url": [
+      "https://savannah.gnu.org/git/?group=findutils"
+    ],
+    "tag": [
+      "find",
+      "xargs"
+    ],
+    "version": "4.10.0"
   },
   {
     "_disabled": "false",
@@ -3005,6 +3422,56 @@
       "text"
     ],
     "version": "0.51.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "iperf3",
+    "pkg_family": "iperf3",
+    "pkg_id": "nixpkgs.iperf3",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-iperf3/iperf3/iperf3",
+    "bincache": "ghcr.io/pkgforge/bincache/iperf3/nixpkgs/iperf",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/iperf3/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A TCP, UDP, and SCTP network bandwidth measurement tool",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/iperf3/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://github.com/esnet/iperf",
+      "https://sourceforge.net/projects/iperf"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "iperf",
+      "iperf3"
+    ],
+    "repology": [
+      "iperf3"
+    ],
+    "src_url": [
+      "https://github.com/esnet/iperf"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.19"
   },
   {
     "_disabled": "false",
@@ -6122,6 +6589,67 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sed",
+    "pkg_family": "sed",
+    "pkg_id": "nixpkgs.gnused",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-gnused/sed/sed",
+    "bincache": "ghcr.io/pkgforge/bincache/sed/nixpkgs/sed",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sed/static.nixpkgs.gnused.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "SEd (stream editor) is a Unix utility that parses and transforms text",
+    "distro_pkg": {
+      "alpine": [
+        "sed"
+      ],
+      "archlinux": {
+        "aur": [
+          "sed-git"
+        ]
+      },
+      "debian": [
+        "sed"
+      ],
+      "nixpkgs": [
+        "gnused"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sed/static.nixpkgs.gnused.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/sed/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "repology": [
+      "sed"
+    ],
+    "src_url": [
+      "https://www.gnu.org/software/sed/"
+    ],
+    "tag": [
+      "Editors",
+      "ShellUtils"
+    ],
+    "version": "4.9"
+  },
+  {
+    "_disabled": "false",
     "pkg": "shadow",
     "pkg_family": "shadow",
     "pkg_id": "nixpkgs.shadow",
@@ -7195,6 +7723,268 @@
   },
   {
     "_disabled": "false",
+    "pkg": "vim",
+    "pkg_family": "vim",
+    "pkg_id": "nixpkgs.vim",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-vim/vim/vim",
+    "bincache": "ghcr.io/pkgforge/bincache/vim/nixpkgs/ex",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vim/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "VIsual editor iMproved (VIM) & related Tools",
+      "ex": "Vim in Ex mode [vim]",
+      "rview": "Vim in View Mode with restrictions [vim]",
+      "rvim": "Vim in Read-Only with restrictions [vim]",
+      "vi": "VIsual editor iMproved [alias=vim] [vim]",
+      "view": "Vim in Read-Only Mode [vim]",
+      "vim": "VIsual editor iMproved [alias=vi] [vim]",
+      "vimdiff": "Edit between 2 & 8 versions of a file with Vim and show differences [vim]",
+      "vimtutor": "The VIM Tutor for learning VIM [vim]",
+      "xxd": "Make a hex dump or do the reverse [vim]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "vim"
+      ],
+      "archlinux": {
+        "aur": [
+          "vim-git"
+        ],
+        "extra": [
+          "vim"
+        ]
+      },
+      "debian": [
+        "vim"
+      ],
+      "nixpkgs": [
+        "vim"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vim/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.vim.org",
+      "https://vim.sourceforge.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "ex",
+      "rview",
+      "rvim",
+      "vi",
+      "view",
+      "vim",
+      "vimdiff",
+      "vimtutor",
+      "xxd"
+    ],
+    "repology": [
+      "vim"
+    ],
+    "src_url": [
+      "https://github.com/vim/vim"
+    ],
+    "tag": [
+      "Editor",
+      "text-editor"
+    ],
+    "version": "9.1.1401"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wavpack",
+    "pkg_family": "wavpack",
+    "pkg_id": "nixpkgs.wavpack",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-wavpack/wavpack/wavpack",
+    "bincache": "ghcr.io/pkgforge/bincache/wavpack/nixpkgs/wavpack",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wavpack/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for Hybrid audio compression format",
+      "wavpack": "Encode audio files to wavpack [wavpack]",
+      "wvgain": "Add ReplayGain information to wavpack files [wavpack]",
+      "wvtag": "Manipulate wavpack metadata [wavpack]",
+      "wvunpack": "Decode wavpack encoded files [wavpack]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wavpack/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.wavpack.com",
+      "https://github.com/dbry/WavPack"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "wavpack",
+      "wvgain",
+      "wvtag",
+      "wvunpack"
+    ],
+    "repology": [
+      "wavpack"
+    ],
+    "src_url": [
+      "https://github.com/dbry/WavPack"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "5.8.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "which",
+    "pkg_family": "which",
+    "pkg_id": "nixpkgs.which",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-which/which/which",
+    "bincache": "ghcr.io/pkgforge/bincache/which/nixpkgs/which",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/which/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Shows the full path of (shell) commands",
+    "distro_pkg": {
+      "alpine": [
+        "which"
+      ],
+      "debian": [
+        "gnu-which"
+      ],
+      "nixpkgs": [
+        "which"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/which/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/which/",
+      "https://savannah.gnu.org/projects/which"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "repology": [
+      "which"
+    ],
+    "src_url": [
+      "https://www.gnu.org/software/which/"
+    ],
+    "tag": [
+      "ShellUtils"
+    ],
+    "version": "2.23"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "whois",
+    "pkg_family": "whois",
+    "pkg_id": "nixpkgs.whois",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-whois/whois/whois",
+    "bincache": "ghcr.io/pkgforge/bincache/whois/nixpkgs/whois",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/whois/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Lookup tool for domain names and other internet resources",
+    "distro_pkg": {
+      "alpine": [
+        "whois"
+      ],
+      "archlinux": {
+        "aur": [
+          "whois-git"
+        ],
+        "extra": [
+          "whois"
+        ]
+      },
+      "debian": [
+        "whois"
+      ],
+      "nixpkgs": [
+        "whois"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/whois/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://packages.qa.debian.org/w/whois.html",
+      "https://github.com/rfc1036/whois"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "repology": [
+      "whois"
+    ],
+    "src_url": [
+      "https://github.com/rfc1036/whois"
+    ],
+    "tag": [
+      "network",
+      "whois"
+    ],
+    "version": "5.6.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "wireless-tools",
     "pkg_family": "wireless-tools",
     "pkg_id": "nixpkgs.wireless-tools",
@@ -7481,6 +8271,118 @@
       "Utility"
     ],
     "version": "3.20211022.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xz",
+    "pkg_family": "xz",
+    "pkg_id": "nixpkgs.xz",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-xz/xz/xz",
+    "bincache": "ghcr.io/pkgforge/bincache/xz/nixpkgs/lzcat",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xz/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "XZ Compression/Decompression utilities for the .xz and .lzma formats [alias=xz-utils]",
+      "lzcat": "Decompress LZMA files to stdout [alias=xz --format=lzma --decompress --stdout] [xz]",
+      "lzcmp": "Compare LZMA compressed files [xz]",
+      "lzdiff": "Diff LZMA compressed files [xz]",
+      "lzegrep": "Search LZMA compressed files using extended regular expressions [xz]",
+      "lzfgrep": "Search LZMA compressed files using fixed strings [xz]",
+      "lzgrep": "Search LZMA compressed files using regular expressions [xz]",
+      "lzless": "View LZMA compressed files with less [xz]",
+      "lzma": "Compress/Decompress files using LZMA format [alias=xz --format=lzma] [xz]",
+      "lzmadec": "Small and fast decoder for LZMA compressed files [xz]",
+      "lzmainfo": "Show information stored in the .lzma file header [xz]",
+      "lzmore": "View LZMA compressed files with more [xz]",
+      "unlzma": "Decompress files in LZMA format [alias=xz --format=lzma --decompress] [xz]",
+      "unxz": "Decompress files in XZ format [alias=xz --decompress] [xz]",
+      "xz": "Compress/Decompress files using XZ format [xz]",
+      "xzcat": "Decompress XZ files to stdout [alias=xz --decompress --stdout] [xz]",
+      "xzcmp": "Compare XZ compressed files [xz]",
+      "xzdec": "Small and fast decoder for XZ compressed files [xz]",
+      "xzdiff": "Diff XZ compressed files [xz]",
+      "xzegrep": "Search XZ compressed files using extended regular expressions [xz]",
+      "xzfgrep": "Search XZ compressed files using fixed strings [xz]",
+      "xzgrep": "Search XZ compressed files using regular expressions [xz]",
+      "xzless": "View XZ compressed files with less [xz]",
+      "xzmore": "View XZ compressed files with more [xz]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "xz"
+      ],
+      "archlinux": {
+        "aur": [
+          "xz-git",
+          "xz-static"
+        ]
+      },
+      "debian": [
+        "xz-utils"
+      ],
+      "nixpkgs": [
+        "xz"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xz/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://tukaani.org/xz/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "0BSD",
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "lzcat",
+      "lzcmp",
+      "lzdiff",
+      "lzegrep",
+      "lzfgrep",
+      "lzgrep",
+      "lzless",
+      "lzma",
+      "lzmadec",
+      "lzmainfo",
+      "lzmore",
+      "unlzma",
+      "unxz",
+      "xz",
+      "xzcat",
+      "xzcmp",
+      "xzdec",
+      "xzdiff",
+      "xzegrep",
+      "xzfgrep",
+      "xzgrep",
+      "xzless",
+      "xzmore"
+    ],
+    "repology": [
+      "xz"
+    ],
+    "src_url": [
+      "https://github.com/tukaani-project/xz"
+    ],
+    "tag": [
+      "Archiving/Compression"
+    ],
+    "version": "5.8.1"
   },
   {
     "_disabled": "false",
@@ -7773,6 +8675,146 @@
       "Utility"
     ],
     "version": "71"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zsh",
+    "pkg_family": "zsh",
+    "pkg_id": "nixpkgs.zsh",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-zsh/zsh/zsh",
+    "bincache": "ghcr.io/pkgforge/bincache/zsh/nixpkgs/zsh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zsh/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The Z shell, A Very advanced and programmable Command Interpreter",
+    "distro_pkg": {
+      "alpine": [
+        "zsh"
+      ],
+      "archlinux": {
+        "aur": [
+          "zsh-git"
+        ],
+        "extra": [
+          "zsh"
+        ]
+      },
+      "debian": [
+        "zsh"
+      ],
+      "nixpkgs": [
+        "zsh"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zsh/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.zsh.org/",
+      "https://zsh.sourceforge.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "repology": [
+      "zsh"
+    ],
+    "src_url": [
+      "https://github.com/zsh-users/zsh"
+    ],
+    "tag": [
+      "shell"
+    ],
+    "version": "5.9"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zstd",
+    "pkg_family": "zstd",
+    "pkg_id": "nixpkgs.zstd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-zstd/zstd/zstd",
+    "bincache": "ghcr.io/pkgforge/bincache/zstd/nixpkgs/unzstd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/zstd/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Zstandard (Zstd) compression utilities",
+      "pzstd": "Parallelized zstd, a la pigz [zstd]",
+      "unzstd": "Decompress .zst files [alias=zstd -d] [zstd]",
+      "zstd": "Zstandard Compression/Decompression Utility [zstd]",
+      "zstdcat": "Output Zstandard compressed files to stdout [alias=zstd -dcf] [zstd]",
+      "zstdgrep": "Search Zstandard compressed files using regular expressions [zstd]",
+      "zstdless": "View Zstandard compressed files with less [zstd]",
+      "zstdmt": "Multi-threaded zstd [alias=zstd -T0] [zstd]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "zstd"
+      ],
+      "archlinux": {
+        "aur": [
+          "zstd-git",
+          "zstd-static"
+        ]
+      },
+      "nixpkgs": [
+        "zstd"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/zstd/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://facebook.github.io/zstd/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "pzstd",
+      "unzstd",
+      "zstd",
+      "zstdcat",
+      "zstdgrep",
+      "zstdless",
+      "zstdmt"
+    ],
+    "repology": [
+      "zstd"
+    ],
+    "src_url": [
+      "https://github.com/facebook/zstd"
+    ],
+    "tag": [
+      "Archiving/Compression"
+    ],
+    "version": "1.5.7"
   },
   {
     "_disabled": "false",

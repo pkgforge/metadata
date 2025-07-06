@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.05 ⚠️ | null |
+| PPKG   | 2025.07.06 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -3474,7 +3474,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.32.5 ⚠️ | https://github.com/derailed/k9s/archive/refs/tags/v0.32.5.tar.gz |
-| BREW   | **0.50.6** | https://k9scli.io/ |
+| BREW   | **0.50.7** | https://k9scli.io/ |
 
 *Outdated*
 
@@ -4557,7 +4557,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.05 ⚠️ | null |
+| PPKG   | 2025.07.06 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6442,7 +6442,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.20.0 ⚠️ | https://github.com/o2sh/onefetch/archive/refs/tags/2.20.0.tar.gz |
-| BREW   | **2.24.0** | https://onefetch.dev/ |
+| BREW   | **2.25.0** | https://onefetch.dev/ |
 
 *Outdated*
 
@@ -6604,7 +6604,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.05 ⚠️ | null |
+| PPKG   | 2025.07.06 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6771,7 +6771,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.05 ⚠️ | null |
+| PPKG   | 2025.07.06 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6933,7 +6933,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.05 ⚠️ | null |
+| PPKG   | 2025.07.06 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

@@ -831,7 +831,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.6.14.crate ⚠️ | https://static.crates.io/crates/cargo-llvm-cov/cargo-llvm-cov-0.6.14.crate |
-| BREW   | **0.6.16** | https://github.com/taiki-e/cargo-llvm-cov |
+| BREW   | **0.6.17** | https://github.com/taiki-e/cargo-llvm-cov |
 
 *Outdated*
 
@@ -1682,7 +1682,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.0.0 ⚠️ | https://github.com/bootandy/dust/archive/refs/tags/v1.0.0.tar.gz |
-| BREW   | **1.2.1** | https://github.com/bootandy/dust |
+| BREW   | **1.2.2** | https://github.com/bootandy/dust |
 
 *Outdated*
 
@@ -4239,8 +4239,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.5.31 ✅ | https://downloads.sourceforge.net/project/gphoto/libgphoto/2.5.31/libgphoto2-2.5.31.tar.bz2 |
-| BREW   | 2.5.31 | http://www.gphoto.org/proj/libgphoto2/ |
+| PPKG   | 2.5.31 ⚠️ | https://downloads.sourceforge.net/project/gphoto/libgphoto/2.5.31/libgphoto2-2.5.31.tar.bz2 |
+| BREW   | **2.5.32** | http://www.gphoto.org/proj/libgphoto2/ |
+
+*Outdated*
 
 ## libheif
 
@@ -6530,7 +6532,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.15.0 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v2.5.15.0.tar.gz |
-| BREW   | **3.0.8.0** | https://openimageio.readthedocs.io/en/stable/ |
+| BREW   | **3.0.8.1** | https://openimageio.readthedocs.io/en/stable/ |
 
 *Outdated*
 

@@ -102,7 +102,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "3.6.0"
+    "version": "3.7.0"
   },
   {
     "_disabled": "false",
@@ -1147,6 +1147,59 @@
     "version": "250707T005400"
   },
   {
+    "_disabled": "false",
+    "pkg": "huggingface-cli",
+    "pkg_family": "huggingface-cli",
+    "pkg_id": "sharun.wrappe.source.huggingface-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/huggingface-cli/huggingface-cli/huggingface-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/huggingface-cli/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "The official Python client for the Huggingface Hub",
+    "distro_pkg": {
+      "homebrew": [
+        "huggingface-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/huggingface-cli/archive.sharun.source.yaml",
+    "homepage": [
+      "https://huggingface.co/docs/huggingface_hub"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/huggingface-cli/archive/sharun",
+    "provides": [
+      "huggingface-cli"
+    ],
+    "repology": [
+      "huggingface-cli"
+    ],
+    "src_url": [
+      "https://github.com/huggingface/huggingface_hub"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-6e944cf-250707T155902"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -1587,6 +1640,152 @@
       "Utility"
     ],
     "version": "1.0.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "simplex-desktop",
+    "pkg_family": "simplex-desktop",
+    "pkg_id": "nixpkgs.simplex-chat-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/chat-desktop/simplex-desktop/simplex-desktop",
+    "app_id": "chat.simplex.simplex",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "Desktop application for SimpleX Chat, A 100% private-by-design chat platform",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "simplex-chat"
+        ]
+      },
+      "nixpkgs": [
+        "simplex-chat-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://simplex.chat",
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/simplex-desktop/nixappimage/nixpkgs",
+    "provides": [
+      "simplex-desktop==simplex-chat-desktop"
+    ],
+    "repology": [
+      "simplex-chat",
+      "simplex-chat-desktop"
+    ],
+    "src_url": [
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "tag": [
+      "chat",
+      "messenger",
+      "privacy"
+    ],
+    "version": "6.3.7"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sudo-rs",
+    "pkg_family": "sudo-rs",
+    "pkg_id": "sharun.wrappe.sudo-rs.source",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-source/sudo-rs/sudo-rs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/sudo-rs/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Memory safe implementation of sudo and su",
+      "cvtsudoers": "Convert between sudoers file formats [sudo-rs]",
+      "sudo": "Execute a command as another user [sudo-rs]",
+      "sudo.conf": "Configuration for sudo front-end [sudo-rs]",
+      "sudo_logsrvd": "sudo event and I/O log server [sudo-rs]",
+      "sudo_logsrvd.conf": "Configuration for sudo_logsrvd [sudo-rs]",
+      "sudo_sendlog": "Send sudo I/O log to log server [sudo-rs]",
+      "sudoedit": "An extension of the sudo -e command to edit a file [sudo-rs]",
+      "sudoers": "Default sudo security policy plugin [sudo-rs]",
+      "sudoers.dist": "Default configuration file for sudoers [sudo-rs]",
+      "sudoreplay": "Replay sudo session logs [sudo-rs]",
+      "su": "Change user id or become root [sudo-rs]",
+      "visudo": "Edit the sudoers file [sudo-rs]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "sudo-rs",
+          "sudo-rs-git"
+        ]
+      },
+      "nixpkgs": [
+        "sudo-rs"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/sudo-rs/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/trifectatechfoundation/sudo-rs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trifectatechfoundation/sudo-rs",
+      "Built Using Sharun. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "sudo must be owned by uid 0 and have the setuid bit set",
+      "chown -v 'root:root' sudo",
+      "chmod -v 'a=rx,u+ws' sudo",
+      "Requires '/etc/sudoers' file & '/etc/sudoers.d' dir",
+      "Also requires PAM to be setup: https://github.com/trifectatechfoundation/sudo-rs#differences-from-original-sudo"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/sudo-rs/archive/sharun",
+    "provides": [
+      "su",
+      "sudo",
+      "visudo"
+    ],
+    "repology": [
+      "sudo-rs"
+    ],
+    "src_url": [
+      "https://github.com/trifectatechfoundation/sudo-rs"
+    ],
+    "tag": [
+      "sudo"
+    ],
+    "version": "HEAD-c3f4de3-250707T201631"
   },
   {
     "_disabled": "false",

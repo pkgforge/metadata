@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.06 ⚠️ | null |
+| PPKG   | 2025.07.07 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2006,7 +2006,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.3.2 ⚠️ | https://downloads.sourceforge.net/project/findent/findent-4.3.2.tar.gz |
-| BREW   | **4.3.5** | https://www.ratrabbit.nl/ratrabbit/findent/index.html |
+| BREW   | **4.3.6** | https://www.ratrabbit.nl/ratrabbit/findent/index.html |
 
 *Outdated*
 
@@ -2201,7 +2201,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.62.0 ⚠️ | https://github.com/junegunn/fzf/archive/refs/tags/v0.62.0.tar.gz |
-| BREW   | **0.63.0** | https://github.com/junegunn/fzf |
+| BREW   | **0.64.0** | https://github.com/junegunn/fzf |
 
 *Outdated*
 
@@ -4559,7 +4559,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.06 ⚠️ | null |
+| PPKG   | 2025.07.07 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6606,7 +6606,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.06 ⚠️ | null |
+| PPKG   | 2025.07.07 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6773,7 +6773,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.06 ⚠️ | null |
+| PPKG   | 2025.07.07 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6935,7 +6935,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.06 ⚠️ | null |
+| PPKG   | 2025.07.07 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7206,7 +7206,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.0.12 ⚠️ | https://download.redis.io/releases/redis-7.0.12.tar.gz |
-| BREW   | **8.0.2** | https://redis.io/ |
+| BREW   | **8.0.3** | https://redis.io/ |
 
 *Outdated*
 
@@ -8455,6 +8455,15 @@
 
 *Outdated*
 
+## vlang
+
+**Description:** V programming language compiler
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.4.11 ✅ | https://github.com/vlang/v/archive/refs/tags/0.4.11.tar.gz |
+| BREW   | 0.4.11 | https://vlang.io |
+
 ## volta
 
 **Description:** JavaScript toolchain manager for reproducible environments
@@ -8613,7 +8622,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.22.0 ⚠️ | https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz |
-| BREW   | **1.23.1** | https://wayland.freedesktop.org |
+| BREW   | **1.24.0** | https://wayland.freedesktop.org |
 
 *Outdated*
 

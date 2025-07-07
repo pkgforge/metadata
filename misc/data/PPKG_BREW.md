@@ -410,8 +410,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 5.2.37 ✅ | https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz |
-| BREW   | 5.2.37 | https://www.gnu.org/software/bash/ |
+| PPKG   | 5.2.37 ⚠️ | https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz |
+| BREW   | **5.3** | https://www.gnu.org/software/bash/ |
+
+*Outdated*
 
 ## basis_universal
 
@@ -6916,7 +6918,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.3.9 ⚠️ | https://files.pythonhosted.org/packages/6f/c9/ed4c246612b0e42afe8fad52a2dddde28f1389997c043e8cf8d414d5a0ee/psutils-3.3.9.tar.gz |
-| BREW   | **3.3.10** | https://github.com/rrthomas/psutils |
+| BREW   | **3.3.11** | https://github.com/rrthomas/psutils |
 
 *Outdated*
 
@@ -7387,7 +7389,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-06-30** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-07-07** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 

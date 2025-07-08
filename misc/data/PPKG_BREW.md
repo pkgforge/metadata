@@ -3169,7 +3169,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.147.9** | https://gohugo.io/ |
+| BREW   | **0.148.0** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -4691,7 +4691,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.13.37 ⚠️ | https://github.com/google/libphonenumber/archive/refs/tags/v8.13.37.tar.gz |
-| BREW   | **9.0.8** | https://github.com/google/libphonenumber |
+| BREW   | **9.0.9** | https://github.com/google/libphonenumber |
 
 *Outdated*
 
@@ -6189,7 +6189,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.0.1 ⚠️ | https://github.com/containerd/nerdctl/archive/refs/tags/v2.0.1.tar.gz |
-| BREW   | **2.1.2** | https://github.com/containerd/nerdctl |
+| BREW   | **2.1.3** | https://github.com/containerd/nerdctl |
 
 *Outdated*
 

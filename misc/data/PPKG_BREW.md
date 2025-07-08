@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.07 ⚠️ | null |
+| PPKG   | 2025.07.08 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -863,8 +863,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.9.99 ✅ | https://github.com/nextest-rs/nextest/archive/refs/tags/cargo-nextest-0.9.99.tar.gz |
-| BREW   | 0.9.99 | https://nexte.st |
+| PPKG   | 0.9.99 ⚠️ | https://github.com/nextest-rs/nextest/archive/refs/tags/cargo-nextest-0.9.99.tar.gz |
+| BREW   | **0.9.100** | https://nexte.st |
+
+*Outdated*
 
 ## catch2
 
@@ -1573,7 +1575,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.55.4** | https://github.com/dolthub/dolt |
+| BREW   | **1.55.5** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -1793,7 +1795,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.20.2 ⚠️ | https://github.com/evanw/esbuild/archive/refs/tags/v0.20.2.tar.gz |
-| BREW   | **0.25.5** | https://esbuild.github.io/ |
+| BREW   | **0.25.6** | https://esbuild.github.io/ |
 
 *Outdated*
 
@@ -3642,6 +3644,15 @@
 
 *Outdated*
 
+## lesspipe
+
+**Description:** A input filter for the pager less
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 2.18 ✅ | https://github.com/wofr06/lesspipe/archive/refs/tags/v2.18.tar.gz |
+| BREW   | 2.18 | https://www-zeuthen.desy.de/~friebel/unix/lesspipe.html |
+
 ## lexbor
 
 **Description:** A fast embeddable web browser engine written in C with no dependencies
@@ -4333,7 +4344,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.3.0 ⚠️ | https://github.com/ImageOptim/libimagequant/archive/refs/tags/4.3.0.tar.gz |
-| BREW   | **4.3.4** | https://pngquant.org/lib/ |
+| BREW   | **4.4.0** | https://pngquant.org/lib/ |
 
 *Outdated*
 
@@ -4561,7 +4572,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.07 ⚠️ | null |
+| PPKG   | 2025.07.08 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6608,7 +6619,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.07 ⚠️ | null |
+| PPKG   | 2025.07.08 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6775,7 +6786,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.07 ⚠️ | null |
+| PPKG   | 2025.07.08 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6937,7 +6948,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.07 ⚠️ | null |
+| PPKG   | 2025.07.08 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7420,7 +7431,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.21.2 ⚠️ | https://download.samba.org/pub/samba/stable/samba-4.21.2.tar.gz |
-| BREW   | **4.22.2** | https://www.samba.org/ |
+| BREW   | **4.22.3** | https://www.samba.org/ |
 
 *Outdated*
 

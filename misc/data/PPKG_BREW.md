@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.08 ⚠️ | null |
+| PPKG   | 2025.07.09 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1013,7 +1013,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.54.0 ⚠️ | https://github.com/twpayne/chezmoi/archive/refs/tags/v2.54.0.tar.gz |
-| BREW   | **2.62.7** | https://chezmoi.io/ |
+| BREW   | **2.63.0** | https://chezmoi.io/ |
 
 *Outdated*
 
@@ -1706,7 +1706,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.47.0 ⚠️ | https://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.47.0/e2fsprogs-1.47.0.tar.gz |
-| BREW   | **1.47.2** | https://e2fsprogs.sourceforge.net/ |
+| BREW   | **1.47.3** | https://e2fsprogs.sourceforge.net/ |
 
 *Outdated*
 
@@ -2465,8 +2465,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.50.0 ✅ | https://www.kernel.org/pub/software/scm/git/git-2.50.0.tar.xz |
-| BREW   | 2.50.0 | https://git-scm.com |
+| PPKG   | 2.50.0 ⚠️ | https://www.kernel.org/pub/software/scm/git/git-2.50.0.tar.xz |
+| BREW   | **2.50.1** | https://git-scm.com |
+
+*Outdated*
 
 ## git-cliff
 
@@ -2750,7 +2752,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.1 ⚠️ | https://github.com/goreleaser/goreleaser/archive/refs/tags/v1.25.1.tar.gz |
-| BREW   | **2.10.2** | https://goreleaser.com/ |
+| BREW   | **2.11.0** | https://goreleaser.com/ |
 
 *Outdated*
 
@@ -3033,7 +3035,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.4 ⚠️ | https://github.com/helm/helm/archive/refs/tags/v3.15.4.tar.gz |
-| BREW   | **3.18.3** | https://helm.sh/ |
+| BREW   | **3.18.4** | https://helm.sh/ |
 
 *Outdated*
 
@@ -4572,7 +4574,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.08 ⚠️ | null |
+| PPKG   | 2025.07.09 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6446,7 +6448,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.9.5** | https://ollama.com/ |
+| BREW   | **0.9.6** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6619,7 +6621,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.08 ⚠️ | null |
+| PPKG   | 2025.07.09 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6786,7 +6788,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.08 ⚠️ | null |
+| PPKG   | 2025.07.09 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6948,7 +6950,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.08 ⚠️ | null |
+| PPKG   | 2025.07.09 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7826,7 +7828,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.0.6 ⚠️ | https://www.openinfosecfoundation.org/download/suricata-7.0.6.tar.gz |
-| BREW   | **7.0.10** | https://suricata.io |
+| BREW   | **8.0.0** | https://suricata.io |
 
 *Outdated*
 

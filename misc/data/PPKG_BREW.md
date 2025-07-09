@@ -4832,7 +4832,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.0 ⚠️ | https://github.com/baresip/re/archive/refs/tags/v3.15.0.tar.gz |
-| BREW   | **3.23.0** | https://github.com/baresip/re |
+| BREW   | **3.24.0** | https://github.com/baresip/re |
 
 *Outdated*
 
@@ -7190,7 +7190,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.69.3 ⚠️ | https://github.com/rclone/rclone/archive/refs/tags/v1.69.3.tar.gz |
-| BREW   | **1.70.2** | https://rclone.org/ |
+| BREW   | **1.70.3** | https://rclone.org/ |
 
 *Outdated*
 
@@ -7402,7 +7402,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-07-07** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-07-09** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 
@@ -8425,8 +8425,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 5.036 ✅ | https://github.com/verilator/verilator/archive/refs/tags/v5.036.tar.gz |
-| BREW   | 5.036 | https://www.veripool.org/wiki/verilator |
+| PPKG   | 5.036 ⚠️ | https://github.com/verilator/verilator/archive/refs/tags/v5.036.tar.gz |
+| BREW   | **5.038** | https://www.veripool.org/wiki/verilator |
+
+*Outdated*
 
 ## viddy
 

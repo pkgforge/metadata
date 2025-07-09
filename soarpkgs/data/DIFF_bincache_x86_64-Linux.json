@@ -2766,7 +2766,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-5efbdc8-250709T211623"
+    "version": "HEAD-4351507-250710T010546"
   },
   {
     "_disabled": "false",
@@ -3949,7 +3949,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-1d85566-250709T113928"
+    "version": "HEAD-745ae4b-250709T162413"
   },
   {
     "_disabled": "false",
@@ -4266,7 +4266,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-1d85566-250709T113928"
+    "version": "HEAD-745ae4b-250709T162413"
   },
   {
     "_disabled": "true",
@@ -4965,7 +4965,7 @@
     "tag": [
       "devenv"
     ],
-    "version": "HEAD-02948e5-250709T120317"
+    "version": "HEAD-c88a26f-250709T180427"
   },
   {
     "_disabled": "false",
@@ -5750,7 +5750,7 @@
       "e2fs",
       "ext2"
     ],
-    "version": "HEAD-da631e1-250708T180850"
+    "version": "HEAD-fb9b2e7-250709T124309"
   },
   {
     "_disabled": "false",
@@ -6681,6 +6681,74 @@
     "_disabled": "false",
     "pkg": "gh",
     "pkg_family": "gh",
+    "pkg_id": "github.com.cli.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-cli/gh/gh",
+    "bincache": "ghcr.io/pkgforge/bincache/gh/official/gh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gh/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GitHub CLI tool",
+    "distro_pkg": {
+      "alpine": [
+        "github-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "github-cli-git"
+        ],
+        "extra": [
+          "github-cli"
+        ]
+      },
+      "debian": [
+        "gh"
+      ],
+      "homebrew": [
+        "gh"
+      ],
+      "nixpkgs": [
+        "gh"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gh/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/cli/cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/cli/cli"
+    ],
+    "provides": [
+      "gh==github-cli"
+    ],
+    "repology": [
+      "github-cli"
+    ],
+    "src_url": [
+      "https://github.com/cli/cli"
+    ],
+    "tag": [
+      "git"
+    ],
+    "version": "v2.75.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gh",
+    "pkg_family": "gh",
     "pkg_id": "github.com.cli.cli.source",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-source/gh/gh",
@@ -6744,7 +6812,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c93136b-250708T070211"
+    "version": "HEAD-4d2abc0-250709T111127"
   },
   {
     "_disabled": "false",
@@ -6801,7 +6869,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-705c114-250709T120422"
+    "version": "HEAD-970b02a-250709T180332"
   },
   {
     "_disabled": "false",
@@ -7076,7 +7144,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-604ca20-250709T104354"
+    "version": "HEAD-d767b72-250709T181604"
   },
   {
     "_disabled": "false",
@@ -7403,7 +7471,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3c84478-250708T235115"
+    "version": "HEAD-129309e-250709T163531"
   },
   {
     "_disabled": "false",
@@ -7667,6 +7735,49 @@
       "utility"
     ],
     "version": "HEAD-275600f-250707T111000"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "hakoniwa",
+    "pkg_family": "hakoniwa",
+    "pkg_id": "github.com.souk4711.hakoniwa.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hakoniwa-source/hakoniwa/hakoniwa",
+    "bincache": "ghcr.io/pkgforge/bincache/hakoniwa/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hakoniwa/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Process isolation for Linux using namespaces, resource limits, landlock and seccomp",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hakoniwa/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/souk4711/hakoniwa"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/souk4711/hakoniwa"
+    ],
+    "provides": [
+      "hakoniwa"
+    ],
+    "src_url": [
+      "https://github.com/souk4711/hakoniwa"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-b61ea66-250710T022635"
   },
   {
     "_disabled": "false",
@@ -8827,7 +8938,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-8026fc2-250709T132028"
+    "version": "HEAD-656cb32-250709T160354"
   },
   {
     "_disabled": "false",
@@ -9949,7 +10060,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-07776bf-250708T155522"
+    "version": "HEAD-5afd19c-250709T162027"
   },
   {
     "_disabled": "false",
@@ -10212,7 +10323,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-969f1ed-250709T101410"
+    "version": "HEAD-f17dd36-250709T154909"
   },
   {
     "_disabled": "false",
@@ -10754,7 +10865,7 @@
     "tag": [
       "nvme"
     ],
-    "version": "HEAD-d907d7e-250709T122223"
+    "version": "HEAD-ae099f5-250709T150102"
   },
   {
     "_disabled": "false",
@@ -11644,6 +11755,80 @@
       "textproc"
     ],
     "version": "HEAD-75e572d-250709T075716"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "rclone",
+    "pkg_family": "rclone",
+    "pkg_id": "github.com.rclone.rclone.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rclone-stable/rclone/rclone",
+    "bincache": "ghcr.io/pkgforge/bincache/rclone/official/rclone",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/rclone/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A program to sync files to and from various cloud storage providers",
+    "distro_pkg": {
+      "alpine": [
+        "rclone"
+      ],
+      "archlinux": {
+        "aur": [
+          "rclone-beta-bin",
+          "rclone-git"
+        ],
+        "extra": [
+          "rclone"
+        ]
+      },
+      "debian": [
+        "rclone"
+      ],
+      "homebrew": [
+        "rclone"
+      ],
+      "nixpkgs": [
+        "rclone"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/rclone/static.official.stable.yaml",
+    "homepage": [
+      "https://rclone.org",
+      "https://github.com/rclone/rclone"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/rclone/rclone"
+    ],
+    "provides": [
+      "rclone"
+    ],
+    "repology": [
+      "rclone"
+    ],
+    "src_url": [
+      "https://github.com/rclone/rclone"
+    ],
+    "tag": [
+      "cloud",
+      "mount",
+      "rsync",
+      "s3",
+      "sync"
+    ],
+    "version": "v1.70.3"
   },
   {
     "_disabled": "false",
@@ -12698,6 +12883,52 @@
   },
   {
     "_disabled": "false",
+    "pkg": "sling",
+    "pkg_family": "sling",
+    "pkg_id": "github.com.slingdata-io.sling.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/sling-source/sling/sling",
+    "bincache": "ghcr.io/pkgforge/bincache/sling/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sling/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Extract data from a source storage/database and Load it in a target storage/database",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sling/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/slingdata-io/sling-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/slingdata-io/sling-cli"
+    ],
+    "provides": [
+      "sling"
+    ],
+    "repology": [
+      "sling-cli"
+    ],
+    "src_url": [
+      "https://github.com/slingdata-io/sling-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-3add725-250709T123133"
+  },
+  {
+    "_disabled": "false",
     "pkg": "sluice",
     "pkg_family": "sluice",
     "pkg_id": "github.com.ColinIanKing.sluice.source",
@@ -12803,6 +13034,66 @@
       "package-manager"
     ],
     "version": "HEAD-6672d91-250706T150713"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "soft-serve",
+    "pkg_family": "soft-serve",
+    "pkg_id": "github.com.charmbracelet.soft-serve",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/soft-serve/soft-serve/soft-serve",
+    "bincache": "ghcr.io/pkgforge/bincache/soft-serve/official/soft-serve",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/soft-serve/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Self-hosted Git server for the command line",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "soft-serve-git"
+        ],
+        "extra": [
+          "soft-serve"
+        ]
+      },
+      "nixpkgs": [
+        "soft-serve"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/soft-serve/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/charmbracelet/soft-serve"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/charmbracelet/soft-serve"
+    ],
+    "provides": [
+      "soft-serve==soft"
+    ],
+    "repology": [
+      "soft-serve"
+    ],
+    "src_url": [
+      "https://github.com/charmbracelet/soft-serve"
+    ],
+    "tag": [
+      "git",
+      "ssh"
+    ],
+    "version": "HEAD-397288d-250709T110355"
   },
   {
     "_disabled": "false",
@@ -13008,6 +13299,66 @@
   },
   {
     "_disabled": "false",
+    "pkg": "step-cli",
+    "pkg_family": "step-cli",
+    "pkg_id": "github.com.smallstep.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/smallstep-cli/step-cli/step-cli",
+    "bincache": "ghcr.io/pkgforge/bincache/step-cli/official/step-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/step-cli/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Zero trust swiss army knife for working with X509, OAuth, JWT, OATH OTP, etc",
+    "distro_pkg": {
+      "alpine": [
+        "step-cli"
+      ],
+      "archlinux": {
+        "extra": [
+          "step-cli"
+        ]
+      },
+      "nixpkgs": [
+        "step-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/step-cli/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/smallstep/cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/smallstep/cli"
+    ],
+    "provides": [
+      "step-cli"
+    ],
+    "repology": [
+      "step-cli"
+    ],
+    "src_url": [
+      "https://github.com/smallstep/cli"
+    ],
+    "tag": [
+      "certificate",
+      "sso"
+    ],
+    "version": "HEAD-632b477-250709T110527"
+  },
+  {
+    "_disabled": "false",
     "pkg": "stress-ng",
     "pkg_family": "stress-ng",
     "pkg_id": "github.com.ColinIanKing.stress-ng.source",
@@ -13050,7 +13401,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-ec00dd0-250709T122405"
+    "version": "HEAD-9807885-250709T181735"
   },
   {
     "_disabled": "false",
@@ -13329,7 +13680,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-27fa2ad-250709T093745"
+    "version": "HEAD-21a4058-250709T124812"
   },
   {
     "_disabled": "false",
@@ -13797,7 +14148,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7907482-250709T115617"
+    "version": "HEAD-f0e4c99-250709T112412"
   },
   {
     "_disabled": "false",
@@ -14452,7 +14803,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-10d3a22-250709T020353"
+    "version": "HEAD-c848860-250709T143532"
   },
   {
     "_disabled": "false",
@@ -14800,7 +15151,7 @@
       "csv",
       "tsv"
     ],
-    "version": "HEAD-1a79c31-250709T142537"
+    "version": "HEAD-1ddef54-250709T175506"
   },
   {
     "_disabled": "false",
@@ -15008,7 +15359,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-452b435-250708T235950"
+    "version": "HEAD-bc9dbd3-250710T003859"
   },
   {
     "_disabled": "false",

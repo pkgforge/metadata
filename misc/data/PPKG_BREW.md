@@ -399,7 +399,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.09 ⚠️ | null |
+| PPKG   | 2025.07.10 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2393,7 +2393,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.74.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.74.0.tar.gz |
-| BREW   | **2.74.2** | https://cli.github.com/ |
+| BREW   | **2.75.0** | https://cli.github.com/ |
 
 *Outdated*
 
@@ -2668,7 +2668,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.8.4 ⚠️ | https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.4.tar.xz |
-| BREW   | **3.8.9** | https://gnutls.org/ |
+| BREW   | **3.8.10** | https://gnutls.org/ |
 
 *Outdated*
 
@@ -3920,7 +3920,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 18.1.2 ⚠️ | https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.2/libclc-18.1.2.src.tar.xz |
-| BREW   | **20.1.7** | https://libclc.llvm.org/ |
+| BREW   | **20.1.8** | https://libclc.llvm.org/ |
 
 *Outdated*
 
@@ -4574,7 +4574,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.09 ⚠️ | null |
+| PPKG   | 2025.07.10 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6621,7 +6621,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.09 ⚠️ | null |
+| PPKG   | 2025.07.10 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6788,7 +6788,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.09 ⚠️ | null |
+| PPKG   | 2025.07.10 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6950,7 +6950,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.09 ⚠️ | null |
+| PPKG   | 2025.07.10 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8311,7 +8311,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.7.19** | https://docs.astral.sh/uv/ |
+| BREW   | **0.7.20** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

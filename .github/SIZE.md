@@ -1,10 +1,10 @@
 ```mathematica
  1.4G └─┬ main
- 987M   ├─┬ external
- 788M   │ ├─┬ pkgforge-go
- 788M   │ │ ├─┬ data
+ 988M   ├─┬ external
+ 790M   │ ├─┬ pkgforge-go
+ 789M   │ │ ├─┬ data
   69M   │ │ │ ├── x86_64-Linux.json
-  68M   │ │ │ ├── riscv64-Linux.json
+  69M   │ │ │ ├── riscv64-Linux.json
   68M   │ │ │ ├── aarch64-Linux.json
   68M   │ │ │ ├── loongarch64-Linux.json
   55M   │ │ │ ├── x86_64-Linux.db

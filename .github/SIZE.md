@@ -438,12 +438,12 @@
  228K   │ │ ├── INDEX.json.zstd
  192K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
+ 184K   │ │ ├── COMP_VER_CACHE_OLD.json
  180K   │ │ ├── INDEX.db.xz
- 168K   │ │ ├── COMP_VER_CACHE_OLD.json
  124K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
   80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
   76K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
-  68K   │ │ ├── COMP_VER_CACHE_OLD.md
+  76K   │ │ ├── COMP_VER_CACHE_OLD.md
   52K   │ │ ├── URLS.txt
   48K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
   24K   │ │ ├── DIFF_pkgcache_riscv64-Linux.json

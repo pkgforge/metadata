@@ -136,7 +136,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.288** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.289** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -159,6 +159,15 @@
 |--------|---------|-------------|
 | PPKG   | 1.10.0 ✅ | https://github.com/makew0rld/amfora/archive/refs/tags/v1.10.0.tar.gz |
 | BREW   | 1.10.0 | https://github.com/makew0rld/amfora |
+
+## amp
+
+**Description:** Text editor for your terminal
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.7.1 ✅ | https://github.com/jmacdonald/amp/archive/refs/tags/0.7.1.tar.gz |
+| BREW   | 0.7.1 | https://amp.rs |
 
 ## aom
 
@@ -1199,7 +1208,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.18.3 ⚠️ | https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.18.3.tar.gz |
-| BREW   | **0.22.0** | https://github.com/yhirose/cpp-httplib |
+| BREW   | **0.23.0** | https://github.com/yhirose/cpp-httplib |
 
 *Outdated*
 
@@ -1356,10 +1365,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 8.9.1 ⚠️ | https://curl.haxx.se/download/curl-8.9.1.tar.bz2 |
-| BREW   | **8.14.1** | https://curl.se |
-
-*Outdated*
+| PPKG   | 8.14.1 ✅ | https://curl.haxx.se/download/curl-8.14.1.tar.bz2 |
+| BREW   | 8.14.1 | https://curl.se |
 
 ## curlie
 
@@ -5544,7 +5551,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.21.0 ⚠️ | https://github.com/lima-vm/lima/archive/refs/tags/v0.21.0.tar.gz |
-| BREW   | **1.1.1** | https://lima-vm.io/ |
+| BREW   | **1.2.0** | https://lima-vm.io/ |
 
 *Outdated*
 
@@ -5983,10 +5990,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.34.1 ⚠️ | https://github.com/rui314/mold/archive/refs/tags/v2.34.1.tar.gz |
-| BREW   | **2.40.1** | https://github.com/rui314/mold |
-
-*Outdated*
+| PPKG   | 2.40.1 ✅ | https://github.com/rui314/mold/archive/refs/tags/v2.40.1.tar.gz |
+| BREW   | 2.40.1 | https://github.com/rui314/mold |
 
 ## mono
 
@@ -8946,8 +8951,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.45.4 ✅ | https://github.com/mikefarah/yq/archive/refs/tags/v4.45.4.tar.gz |
-| BREW   | 4.45.4 | https://github.com/mikefarah/yq |
+| PPKG   | 4.45.4 ⚠️ | https://github.com/mikefarah/yq/archive/refs/tags/v4.45.4.tar.gz |
+| BREW   | **4.46.1** | https://github.com/mikefarah/yq |
+
+*Outdated*
 
 ## z3
 

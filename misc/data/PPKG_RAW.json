@@ -391,6 +391,25 @@
     "install": "gow -X main.version=PACKAGE_VERSION -X main.commit= -X main.builtBy=ppkg\nrun install -d \"$PACKAGE_INSTALL_DIR/share/\"\nrun cp -r contrib/themes \"$PACKAGE_INSTALL_DIR/share/\""
   },
   {
+    "pkgname": "amp",
+    "pkgtype": "exe",
+    "version": "0.7.1",
+    "license": "GPL-3.0-or-later",
+    "summary": "Text editor for your terminal",
+    "web-url": "https://amp.rs",
+    "git-url": "https://github.com/jmacdonald/amp",
+    "src-url": "https://github.com/jmacdonald/amp/archive/refs/tags/0.7.1.tar.gz",
+    "src-sha": "59a65c2c4592eed188433fe7c4bf2ba84206f217bdafc5a2c7f97623f5607c12",
+    "dep-pkg": "libz xorg-libxcb",
+    "dep-upp": "curl bsdtar cmake ninja",
+    "bsystem": "cargo cmake",
+    "binbstd": "1",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "cargow install"
+  },
+  {
     "pkgname": "anchor-cli",
     "pkgtype": "exe",
     "version": "0.30.1",
@@ -3004,13 +3023,13 @@
   {
     "pkgname": "curl",
     "pkgtype": "exe",
-    "version": "8.9.1",
+    "version": "8.14.1",
     "license": "curl",
     "summary": "A command-line tool for transferring data from/to an HTTP, HTTPS or FTP server",
     "web-url": "https://curl.haxx.se/",
     "git-url": "https://github.com/curl/curl",
-    "src-url": "https://curl.haxx.se/download/curl-8.9.1.tar.bz2",
-    "src-sha": "b57285d9e18bf12a5f2309fc45244f6cf9cb14734e7454121099dd0a83d669a3",
+    "src-url": "https://curl.haxx.se/download/curl-8.14.1.tar.bz2",
+    "src-sha": "5760ed3c1a6aac68793fc502114f35c3e088e8cd5c084c2d044abdf646ee48fb",
     "dep-pkg": "libnghttp2 libopenssl libbrotli libzstd libz",
     "dep-upp": "perl curl bsdtar gmake gmake",
     "bsystem": "configure",
@@ -3019,8 +3038,8 @@
     "ltoable": "1",
     "movable": "1",
     "dopatch": "gsed -i 's|-lbrotlidec|-lbrotlidec -lbrotlicommon|' configure\n\n# https://gitlab.com/qemu-project/qemu/-/issues/2485\nif [ \"$TARGET_PLATFORM_ARCH\" = s390x ] ; then\n    gsed -i '/tst_links_getifaddrs=/c tst_links_getifaddrs=no' configure\nfi",
-    "install": "configure \\\n    --enable-optimize \\\n    --enable-pthreads \\\n    --with-default-ssl-backend=openssl \\\n    --with-ssl=\"$libopenssl_INSTALL_DIR\" \\\n    --with-nghttp2 \\\n    --without-nghttp3 \\\n    --without-ngtcp2 \\\n    --without-quiche \\\n    --without-libpsl \\\n    --without-librtmp \\\n    --without-libidn2",
-    "dotweak": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    gsed -i '/^Libs:/s|$| -framework CoreFoundation -framework SystemConfiguration|' lib/pkgconfig/libcurl.pc\nfi"
+    "install": "configure \\\n    --enable-optimize \\\n    --enable-pthreads \\\n    --enable-static \\\n    --disable-shared \\\n    --with-default-ssl-backend=openssl \\\n    --with-ssl=\"$libopenssl_INSTALL_DIR\" \\\n    --with-nghttp2 \\\n    --without-nghttp3 \\\n    --without-ngtcp2 \\\n    --without-quiche \\\n    --without-libpsl \\\n    --without-librtmp \\\n    --without-libidn2",
+    "dotweak": "run rm -rf include/ lib/ share/aclocal/ share/man/man3/ share/man/man1/curl-config.1 bin/curl-config"
   },
   {
     "pkgname": "curlie",
@@ -17990,7 +18009,7 @@
     "ltoable": "1",
     "movable": "1",
     "dopatch": "printf 'set(Z3_LIBRARIES z3)\\n' >> cmake/modules/FindZ3.cmake",
-    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=\"'clang;lld'\" \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=ON \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=ON \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_STATIC_LINK_CXX_STDLIB=OFF \\\n    -DLLVM_LINK_LLVM_DYLIB=ON \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF \\\n    -DLLD_BUILD_TOOLS=ON"
+    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=\"'clang;lld'\" \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=ON \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=ON \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_STATIC_LINK_CXX_STDLIB=OFF \\\n    -DLLVM_LINK_LLVM_DYLIB=ON \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DLLVM_BINUTILS_INCDIR=\"$binutils_dev_INCLUDE_DIR\" \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF \\\n    -DLLD_BUILD_TOOLS=ON"
   },
   {
     "pkgname": "llvm+clang@18",
@@ -18891,21 +18910,21 @@
   {
     "pkgname": "mold",
     "pkgtype": "exe",
-    "version": "2.34.1",
+    "version": "2.40.1",
     "license": "MIT",
     "summary": "Modern Linker",
     "web-url": "https://github.com/rui314/mold",
     "git-url": "https://github.com/rui314/mold",
-    "src-url": "https://github.com/rui314/mold/archive/refs/tags/v2.34.1.tar.gz",
-    "src-sha": "a8cf638045b4a4b2697d0bcc77fd96eae93d54d57ad3021bf03b0333a727a59d",
+    "src-url": "https://github.com/rui314/mold/archive/refs/tags/v2.40.1.tar.gz",
+    "src-sha": "d1ce09a69941f8158604c3edcc96c7178231e7dba2da66b20f5ef6e112c443b7",
     "dep-upp": "curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "dopatch": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    gsed -i 's|__OpenBSD__|__NetBSD__|' elf/mold-wrapper.c\nfi\n\ngsed -i 's|if(MOLD_MOSTLY_STATIC)|if(TRUE)|' CMakeLists.txt\ngsed -i 's|-static-libstdc++|-static-libstdc++ -static-libgcc|' CMakeLists.txt",
-    "install": "cmakew \\\n    -DMOLD_LTO=OFF \\\n    -DMOLD_USE_ASAN=OFF \\\n    -DMOLD_USE_TSAN=OFF \\\n    -DMOLD_USE_MIMALLOC=ON \\\n    -DMOLD_MOSTLY_STATIC=OFF \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DCMAKE_SKIP_INSTALL_RULES=OFF"
+    "dopatch": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    gsed -i 's|__OpenBSD__|__NetBSD__|' elf/mold-wrapper.c\nfi\n\ngsed -i 's|if(MOLD_MOSTLY_STATIC)|if(TRUE)|' CMakeLists.txt",
+    "install": "cmakew \\\n    -DMOLD_LTO=ON \\\n    -DMOLD_USE_ASAN=OFF \\\n    -DMOLD_USE_TSAN=OFF \\\n    -DMOLD_USE_MIMALLOC=ON \\\n    -DMOLD_MOSTLY_STATIC=OFF \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DCMAKE_SKIP_INSTALL_RULES=OFF"
   },
   {
     "pkgname": "mono",

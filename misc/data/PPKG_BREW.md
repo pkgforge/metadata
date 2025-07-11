@@ -408,7 +408,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.10 ⚠️ | null |
+| PPKG   | 2025.07.11 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1155,7 +1155,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.101.2** | https://github.com/microsoft/vscode |
+| BREW   | **1.102.0** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -4581,7 +4581,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.10 ⚠️ | null |
+| PPKG   | 2025.07.11 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6278,7 +6278,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.1 ⚠️ | https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.1.tar.gz |
-| BREW   | **1.13.0** | https://ninja-build.org/ |
+| BREW   | **1.13.1** | https://ninja-build.org/ |
 
 *Outdated*
 
@@ -6626,7 +6626,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.10 ⚠️ | null |
+| PPKG   | 2025.07.11 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6793,7 +6793,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.10 ⚠️ | null |
+| PPKG   | 2025.07.11 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6955,7 +6955,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.10 ⚠️ | null |
+| PPKG   | 2025.07.11 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

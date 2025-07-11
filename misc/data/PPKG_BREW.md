@@ -2271,10 +2271,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 12.2.0 ⚠️ | https://ftp.gnu.org/gnu/gcc/gcc-12.2.0/gcc-12.2.0.tar.xz |
-| BREW   | **12.4.0** | https://gcc.gnu.org/ |
-
-*Outdated*
+| PPKG   | 12.4.0 ✅ | https://ftp.gnu.org/gnu/gcc/gcc-12.4.0/gcc-12.4.0.tar.xz |
+| BREW   | 12.4.0 | https://gcc.gnu.org/ |
 
 ## gcc@13
 
@@ -2282,10 +2280,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 13.3.0 ⚠️ | https://ftp.gnu.org/gnu/gcc/gcc-13.3.0/gcc-13.3.0.tar.xz |
-| BREW   | **13.4.0** | https://gcc.gnu.org/ |
-
-*Outdated*
+| PPKG   | 13.4.0 ✅ | https://ftp.gnu.org/gnu/gcc/gcc-13.4.0/gcc-13.4.0.tar.xz |
+| BREW   | 13.4.0 | https://gcc.gnu.org/ |
 
 ## gcc@14
 
@@ -2293,10 +2289,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 14.2.0 ⚠️ | https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz |
-| BREW   | **14.3.0** | https://gcc.gnu.org/ |
-
-*Outdated*
+| PPKG   | 14.3.0 ✅ | https://ftp.gnu.org/gnu/gcc/gcc-14.3.0/gcc-14.3.0.tar.xz |
+| BREW   | 14.3.0 | https://gcc.gnu.org/ |
 
 ## gcli
 

@@ -1,8 +1,8 @@
 ```mathematica
  1.4G └─┬ main
- 991M   ├─┬ external
- 792M   │ ├─┬ pkgforge-go
- 792M   │ │ ├─┬ data
+ 992M   ├─┬ external
+ 793M   │ ├─┬ pkgforge-go
+ 793M   │ │ ├─┬ data
   69M   │ │ │ ├── x86_64-Linux.json
   69M   │ │ │ ├── riscv64-Linux.json
   68M   │ │ │ ├── aarch64-Linux.json
@@ -20,7 +20,7 @@
  4.9M   │ │ │ ├── aarch64-Linux.sdb.zstd
  4.8M   │ │ │ ├── loongarch64-Linux.sdb.zstd
  4.7M   │ │ │ ├── x86_64-Linux.db.zstd
- 4.6M   │ │ │ ├── riscv64-Linux.db.zstd
+ 4.7M   │ │ │ ├── riscv64-Linux.db.zstd
  4.6M   │ │ │ ├── x86_64-Linux.sdb.xz
  4.6M   │ │ │ ├── aarch64-Linux.db.zstd
  4.6M   │ │ │ ├── riscv64-Linux.sdb.xz
@@ -31,7 +31,7 @@
  4.4M   │ │ │ ├── riscv64-Linux.db.xz
  4.4M   │ │ │ ├── aarch64-Linux.db.xz
  4.3M   │ │ │ ├── loongarch64-Linux.db.xz
- 4.2M   │ │ │ ├── x86_64-Linux.json.zstd
+ 4.3M   │ │ │ ├── x86_64-Linux.json.zstd
  4.2M   │ │ │ ├── riscv64-Linux.json.zstd
  4.2M   │ │ │ ├── aarch64-Linux.json.zstd
  4.1M   │ │ │ ├── loongarch64-Linux.json.zstd

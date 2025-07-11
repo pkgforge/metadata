@@ -153,7 +153,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-dfe9c38-250701T082251"
+    "version": "HEAD-b19b3e7-250711T103047"
   },
   {
     "_disabled": "false",
@@ -204,7 +204,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-dfe9c38-250701T082251"
+    "version": "HEAD-b19b3e7-250711T103047"
   },
   {
     "_disabled": "false",
@@ -786,6 +786,67 @@
     ]
   },
   {
+    "_disabled": "false",
+    "pkg": "dvc",
+    "pkg_family": "dvc",
+    "pkg_id": "sharun.wrappe.source.dvc",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-dvc/dvc/dvc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/dvc/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A version control system and experiment tracker designed for machine learning projects",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "dvc"
+        ]
+      },
+      "homebrew": [
+        "dvc"
+      ],
+      "nixpkgs": [
+        "dvc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/dvc/archive.sharun.source.yaml",
+    "homepage": [
+      "https://dvc.org/doc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/dvc/archive/sharun",
+    "provides": [
+      "dvc"
+    ],
+    "repology": [
+      "dvc"
+    ],
+    "src_url": [
+      "https://github.com/iterative/dvc"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-1b9b1f8-250711T201729"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -841,6 +902,75 @@
       "matrix"
     ],
     "version": "1.11.103"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gcc",
+    "pkg_family": "gcc",
+    "pkg_id": "ppkg.bundle.gcc.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gcc-stable/gcc/gcc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gcc/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "GNU Compiler Collection",
+      "c++": "GNU C++ Compiler [gcc]",
+      "cpp": "GNU CPP Preprocessor [gcc]",
+      "g++": "GNU C++ Compiler Driver [gcc]",
+      "gcc-ar": "Wrapper around ar adding the --plugin option [gcc]",
+      "gcc-nm": "Wrapper around nm adding the --plugin option [gcc]",
+      "gcc-ranlib": "Wrapper around ranlib adding the --plugin option [gcc]",
+      "gcov": "Coverage testing tool [gcc]",
+      "gcov-dump": "Gcov intermediate dump tool [gcc]",
+      "gcov-tool": "Tool for manipulating gcda and gcno files [gcc]",
+      "gfortran": "GNU Fortran Compiler [gcc]",
+      "lto-dump": "Tool for dumping LTO object files [gcc]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/gcc/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/gcc/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/gcc/appimage/ppkg",
+    "provides": [
+      "gcc==c++",
+      "gcc==cpp",
+      "gcc==g++",
+      "gcc==gcc-ar",
+      "gcc==gcc-nm",
+      "gcc==gcc-ranlib",
+      "gcc==gcov",
+      "gcc==gcov-dump",
+      "gcc==gcov-tool",
+      "gcc==gfortran",
+      "gcc==lto-dump"
+    ],
+    "repology": [
+      "gcc"
+    ],
+    "src_url": [
+      "https://gcc.gnu.org/git/gitweb.cgi?p=gcc.git"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "12.4.0"
   },
   {
     "_disabled": "true",
@@ -2710,7 +2840,7 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.14.3b"
+    "version": "1.14.4b"
   },
   {
     "_disabled": "false",

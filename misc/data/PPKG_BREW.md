@@ -855,7 +855,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.4.41 ⚠️ | https://github.com/dtolnay/cargo-llvm-lines/archive/refs/tags/0.4.41.tar.gz |
-| BREW   | **0.4.42** | https://github.com/dtolnay/cargo-llvm-lines |
+| BREW   | **0.4.43** | https://github.com/dtolnay/cargo-llvm-lines |
 
 *Outdated*
 
@@ -2224,8 +2224,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.0 ✅ | https://github.com/jhawthorn/fzy/releases/download/1.0/fzy-1.0.tar.gz |
-| BREW   | 1.0 | https://github.com/jhawthorn/fzy |
+| PPKG   | 1.0 ⚠️ | https://github.com/jhawthorn/fzy/releases/download/1.0/fzy-1.0.tar.gz |
+| BREW   | **1.1** | https://github.com/jhawthorn/fzy |
+
+*Outdated*
 
 ## garble
 
@@ -5986,8 +5988,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.40.1 ✅ | https://github.com/rui314/mold/archive/refs/tags/v2.40.1.tar.gz |
-| BREW   | 2.40.1 | https://github.com/rui314/mold |
+| PPKG   | 2.40.1 ⚠️ | https://github.com/rui314/mold/archive/refs/tags/v2.40.1.tar.gz |
+| BREW   | **2.40.2** | https://github.com/rui314/mold |
+
+*Outdated*
 
 ## mono
 

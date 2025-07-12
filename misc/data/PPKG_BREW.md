@@ -408,7 +408,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.11 ⚠️ | null |
+| PPKG   | 2025.07.12 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -832,8 +832,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.6.36 ✅ | https://github.com/taiki-e/cargo-hack/archive/refs/tags/v0.6.36.tar.gz |
-| BREW   | 0.6.36 | https://github.com/taiki-e/cargo-hack |
+| PPKG   | 0.6.36 ⚠️ | https://github.com/taiki-e/cargo-hack/archive/refs/tags/v0.6.36.tar.gz |
+| BREW   | **0.6.37** | https://github.com/taiki-e/cargo-hack |
+
+*Outdated*
 
 ## cargo-llvm-cov
 
@@ -873,7 +875,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.99 ⚠️ | https://github.com/nextest-rs/nextest/archive/refs/tags/cargo-nextest-0.9.99.tar.gz |
-| BREW   | **0.9.100** | https://nexte.st |
+| BREW   | **0.9.101** | https://nexte.st |
 
 *Outdated*
 
@@ -2201,7 +2203,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | https://github.com/antonmedv/fx/archive/refs/tags/35.0.0.tar.gz |
-| BREW   | **37.0.0** | https://fx.wtf |
+| BREW   | **37.0.1** | https://fx.wtf |
 
 *Outdated*
 
@@ -2566,7 +2568,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.40 ⚠️ | https://ftp.gnu.org/gnu/glibc/glibc-2.40.tar.gz |
+| PPKG   | 2.41 ⚠️ | https://ftp.gnu.org/gnu/glibc/glibc-2.41.tar.gz |
 | BREW   | **2.35** | https://www.gnu.org/software/libc/ |
 
 *Outdated*
@@ -3172,7 +3174,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.148.0** | https://gohugo.io/ |
+| BREW   | **0.148.1** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -4575,7 +4577,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.11 ⚠️ | null |
+| PPKG   | 2025.07.12 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5734,7 +5736,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.681** | https://luau.org |
+| BREW   | **0.682** | https://luau.org |
 
 *Outdated*
 
@@ -6620,7 +6622,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.11 ⚠️ | null |
+| PPKG   | 2025.07.12 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6787,7 +6789,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.11 ⚠️ | null |
+| PPKG   | 2025.07.12 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6949,7 +6951,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.11 ⚠️ | null |
+| PPKG   | 2025.07.12 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7390,7 +7392,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.2** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.3** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -8002,7 +8004,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.83.0** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.83.1** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8210,7 +8212,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.13.11 ⚠️ | https://github.com/Enter-tainer/typstyle/archive/refs/tags/v0.13.11.tar.gz |
-| BREW   | **0.13.13** | https://typstyle-rs.github.io/typstyle/ |
+| BREW   | **0.13.14** | https://typstyle-rs.github.io/typstyle/ |
 
 *Outdated*
 

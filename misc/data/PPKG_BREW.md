@@ -408,7 +408,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.12 ⚠️ | null |
+| PPKG   | 2025.07.13 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1866,7 +1866,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.0 ⚠️ | https://github.com/eza-community/eza/archive/refs/tags/v0.19.0.tar.gz |
-| BREW   | **0.22.0** | https://github.com/eza-community/eza |
+| BREW   | **0.22.1** | https://github.com/eza-community/eza |
 
 *Outdated*
 
@@ -4579,7 +4579,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.12 ⚠️ | null |
+| PPKG   | 2025.07.13 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6626,7 +6626,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.12 ⚠️ | null |
+| PPKG   | 2025.07.13 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6793,7 +6793,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.12 ⚠️ | null |
+| PPKG   | 2025.07.13 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6955,7 +6955,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.12 ⚠️ | null |
+| PPKG   | 2025.07.13 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8063,8 +8063,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.1.0 ✅ | https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz |
-| BREW   | 1.1.0 | https://tl.tartanllama.xyz/en/latest/ |
+| PPKG   | 1.1.0 ⚠️ | https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz |
+| BREW   | **1.2.0** | https://tl.tartanllama.xyz/en/latest/ |
+
+*Outdated*
 
 ## tldr
 
@@ -8161,8 +8163,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.25.6 ✅ | https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.6.tar.gz |
-| BREW   | 0.25.6 | https://tree-sitter.github.io/ |
+| PPKG   | 0.25.6 ⚠️ | https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.6.tar.gz |
+| BREW   | **0.25.7** | https://tree-sitter.github.io/ |
+
+*Outdated*
 
 ## ttyd
 

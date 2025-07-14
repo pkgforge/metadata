@@ -507,7 +507,7 @@
   {
     "pkgname": "appimage-runtime-type2",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "MIT",
     "summary": "type2 AppImage runtime",
     "web-url": "https://github.com/AppImage/type2-runtime",
@@ -526,7 +526,7 @@
   {
     "pkgname": "appimagetool",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A command-line tool to generate an AppImage from an existing AppDir",
     "web-url": "https://github.com/AppImage/appimagetool",
     "git-url": "https://github.com/AppImage/appimagetool",
@@ -974,7 +974,7 @@
   {
     "pkgname": "base16",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "base16 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -989,7 +989,7 @@
   {
     "pkgname": "base64",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "base64 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -1189,7 +1189,7 @@
   {
     "pkgname": "bin-graph",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "GPL-3.0",
     "summary": "A command-line tool for visualizing the different regions of a binary file",
     "web-url": "https://github.com/8dcc/bin-graph",
@@ -1489,7 +1489,7 @@
   {
     "pkgname": "boringssl",
     "pkgtype": "exe+lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A fork of OpenSSL that is designed to meet Google needs",
     "web-url": "https://boringssl.googlesource.com/boringssl/",
     "git-url": "https://github.com/google/boringssl",
@@ -1765,7 +1765,7 @@
   {
     "pkgname": "c-examples",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "C语言学习项目",
     "web-url": "https://github.com/leleliu008/C-examples",
@@ -2440,6 +2440,25 @@
     "install": "gow \\\n    -X github.com/CircleCI-Public/circleci-cli/version.packageManager=ppkg \\\n    -X github.com/CircleCI-Public/circleci-cli/version.Version=$PACKAGE_VERSION \\\n    -X github.com/CircleCI-Public/circleci-cli/version.Commit=$PACKAGE_GIT_SHA"
   },
   {
+    "pkgname": "clang@20",
+    "pkgtype": "exe",
+    "version": "20.1.8",
+    "license": "Apache-2.0 with LLVM-exception",
+    "summary": "A C language family frontend for LLVM",
+    "web-url": "https://clang.llvm.org/",
+    "git-url": "https://github.com/llvm/llvm-project",
+    "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/llvm-project-20.1.8.src.tar.xz",
+    "src-sha": "6898f963c8e938981e6c4a302e83ec5beb4630147c7311183cf61069af16333d",
+    "dep-pkg": "libllvm@20",
+    "dep-upp": "python3 curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_ENABLE_LTO=ON \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_BUILD_EXAMPLES=OFF \\\n    -DCLANG_BUILT_STANDALONE=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF"
+  },
+  {
     "pkgname": "cli11",
     "pkgtype": "lib",
     "version": "2.4.1",
@@ -2835,7 +2854,7 @@
   {
     "pkgname": "cpuinfo",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -2935,14 +2954,15 @@
     "git-url": "https://github.com/crystal-lang/crystal",
     "src-url": "https://github.com/crystal-lang/crystal/archive/refs/tags/1.16.3.tar.gz",
     "src-sha": "eb222af4d2aa269ed0f6c731661431a4fd97713de13f2f0a7c71e26140ca9d23",
-    "dep-pkg": "libgc libgmp libyaml libpcre2 libevent llvm+clang@18",
+    "dep-pkg": "libgc libgmp libyaml libpcre2 libevent libllvm@20",
     "dep-upp": "crystal@1.15.1 curl bsdtar gmake",
     "bsystem": "gmake",
     "binbstd": "1",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "prepare": "export CRYSTAL_CONFIG_VERSION=\"$PACKAGE_VERSION\"\nexport CRYSTAL_CACHE_DIR=\"$PACKAGE_BCACHED_DIR\"\nexport LLVM_CONFIG=\"$llvm_clang_18_INSTALL_DIR/bin/llvm-config\"",
+    "dopatch": "gsed -i 's|--libs|--link-static --libs|' src/llvm/lib_llvm.cr",
+    "prepare": "export CRYSTAL_CONFIG_VERSION=\"$PACKAGE_VERSION\"\nexport CRYSTAL_CACHE_DIR=\"$PACKAGE_BCACHED_DIR\"\nexport LLVM_CONFIG=\"$libllvm_20_INSTALL_DIR/bin/llvm-config\"",
     "install": "gmakew clean\ngmakew crystal interpreter=1 release=1 static= debug= stats= check= target= verbose=1 order=random threads=$BUILD_NJOBS\ngmakew install PREFIX=\"$PACKAGE_INSTALL_DIR\""
   },
   {
@@ -3945,7 +3965,7 @@
   {
     "pkgname": "easyutils",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A collections of easy to use command-line utilities",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -3996,7 +4016,7 @@
   {
     "pkgname": "effcee",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A C++ library for stateful pattern matching of strings",
     "web-url": "https://github.com/google/effcee",
     "git-url": "https://github.com/google/effcee",
@@ -6274,7 +6294,7 @@
   {
     "pkgname": "gn",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A meta-build system that generates build files for ninja",
     "web-url": "https://gn.googlesource.com/gn",
     "git-url": "https://gn.googlesource.com/gn",
@@ -6615,7 +6635,7 @@
   {
     "pkgname": "gomobile",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A tool for building and running mobile apps written in golang",
     "web-url": "https://github.com/golang/mobile",
     "git-url": "https://github.com/golang/mobile",
@@ -7525,7 +7545,7 @@
   {
     "pkgname": "hdiffpatch",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "MIT",
     "summary": "A command-line tools for diff & patch",
     "web-url": "https://github.com/sisong/HDiffPatch",
@@ -7911,7 +7931,7 @@
   {
     "pkgname": "hunter",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "The fastest file manager in the galaxy!",
     "web-url": "https://github.com/rabite0/hunter",
     "git-url": "https://github.com/rabite0/hunter",
@@ -9646,7 +9666,7 @@
   {
     "pkgname": "libbcrypt",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A password hashing method based on the Blowfish block cipher, provided via the crypt(3) and a reentrant interface",
     "web-url": "https://www.openwall.com/crypt",
     "git-url": "https://github.com/leleliu008/libbcrypt",
@@ -9931,7 +9951,7 @@
   {
     "pkgname": "libcamera",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "MIT",
     "summary": "An open source camera stack and framework",
     "web-url": "https://libcamera.org/",
@@ -10298,7 +10318,7 @@
   {
     "pkgname": "libcpuinfo",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -10943,7 +10963,7 @@
   {
     "pkgname": "libexecinfo",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A quick-n-dirty BSD licensed clone of backtrace facility found in the GNU libc",
     "web-url": "https://github.com/leleliu008/libexecinfo",
     "git-url": "https://github.com/leleliu008/libexecinfo",
@@ -11759,7 +11779,7 @@
   {
     "pkgname": "libglob",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "glob(3) implementation",
     "web-url": "https://linux.die.net/man/3/glob",
     "git-url": "https://github.com/leleliu008/libglob",
@@ -12460,7 +12480,7 @@
   {
     "pkgname": "libintl-lite",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "BSL-1.0",
     "summary": "A simple (but less powerful) GNU gettext libintl replacement",
     "web-url": "https://github.com/j-jorge/libintl-lite",
@@ -12975,16 +12995,37 @@
     "git-url": "https://github.com/llvm/llvm-project",
     "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.8/llvm-project-18.1.8.src.tar.xz",
     "src-sha": "0b58557a6d32ceee97c8d533a59b9212d87e0fc4d2833924eb6c611247db2f2a",
-    "dep-pkg": "binutils-dev libelf libedit libffi libxml2 libzstd libz3.a",
+    "dep-pkg": "binutils-dev libelf libffi libxml2 libedit libz3",
     "dep-upp": "python3 perl swig curl bsdtar cmake ninja",
     "bsystem": "cmake",
     "binbstd": "0",
-    "ldflags": "-lncurses",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=host \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=OFF \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=OFF \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_LINK_LLVM_DYLIB=OFF \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF",
-    "dotweak": "gsed -i -e 's|zstd::libzstd_static|zstd|' -e \"s|$PACKAGE_WORKING_DIR/lib/libz3\\.a|z3|\" lib/cmake/llvm/LLVMExports.cmake"
+    "dopatch": "gsed -i -e 's|NOT LLVM_BUILD_TOOLS|NOT name STREQUAL \"llvm-config\"|' -e 's|LLVM_BUILD_TOOLS|name STREQUAL \"llvm-config\"|' cmake/modules/AddLLVM.cmake\nprintf 'set(Z3_LIBRARIES z3)\\n' >> cmake/modules/FindZ3.cmake",
+    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=OFF \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=ON \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_STATIC_LINK_CXX_STDLIB=OFF \\\n    -DLLVM_LINK_LLVM_DYLIB=ON \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DLLVM_BINUTILS_INCDIR=\"$binutils_dev_INCLUDE_DIR\"",
+    "dotweak": "gsed -i 's|zstd::libzstd_shared|zstd|' lib/cmake/llvm/LLVMExports.cmake"
+  },
+  {
+    "pkgname": "libllvm@20",
+    "pkgtype": "lib",
+    "version": "20.1.8",
+    "license": "Apache-2.0 with LLVM-exception",
+    "summary": "Next-gen compiler infrastructure",
+    "web-url": "https://llvm.org/",
+    "git-url": "https://github.com/llvm/llvm-project",
+    "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/llvm-project-20.1.8.src.tar.xz",
+    "src-sha": "6898f963c8e938981e6c4a302e83ec5beb4630147c7311183cf61069af16333d",
+    "dep-pkg": "binutils-dev libelf libffi libxml2 libedit libz3",
+    "dep-upp": "python3 perl swig curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "dopatch": "gsed -i -e 's|NOT LLVM_BUILD_TOOLS|NOT name STREQUAL \"llvm-config\"|' -e 's|LLVM_BUILD_TOOLS|name STREQUAL \"llvm-config\"|' cmake/modules/AddLLVM.cmake\nprintf 'set(Z3_LIBRARIES z3)\\n' >> cmake/modules/FindZ3.cmake",
+    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=OFF \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=ON \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_STATIC_LINK_CXX_STDLIB=OFF \\\n    -DLLVM_LINK_LLVM_DYLIB=ON \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DLLVM_BINUTILS_INCDIR=\"$binutils_dev_INCLUDE_DIR\"",
+    "dotweak": "gsed -i 's|zstd::libzstd_shared|zstd|' lib/cmake/llvm/LLVMExports.cmake"
   },
   {
     "pkgname": "liblmdb",
@@ -13285,7 +13326,7 @@
   {
     "pkgname": "libmesalink",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "BSD-3-Clause",
     "summary": "memory-safe and OpenSSL-compatible TLS library",
     "web-url": "https://mesalink.io",
@@ -13354,7 +13395,7 @@
   {
     "pkgname": "libmill",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "MIT",
     "summary": "Go-style concurrency in C",
     "web-url": "https://github.com/sustrik/libmill",
@@ -13822,7 +13863,7 @@
   {
     "pkgname": "libnghttp3",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -13855,7 +13896,7 @@
   {
     "pkgname": "libngtcp2",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -15051,7 +15092,7 @@
   {
     "pkgname": "libquiche",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "BSD-2-Clause",
     "summary": "Savoury implementation of the QUIC transport protocol and HTTP/3",
     "web-url": "https://github.com/cloudflare/quiche",
@@ -15579,7 +15620,7 @@
   {
     "pkgname": "libsequoia",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "An OpenPGP backend for rpm using Sequoia PGP",
     "web-url": "https://github.com/rpm-software-management/rpm-sequoia",
     "git-url": "https://github.com/rpm-software-management/rpm-sequoia",
@@ -17245,7 +17286,7 @@
   {
     "pkgname": "libwordexp",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "wordexp(3) implementation",
     "web-url": "https://linux.die.net/man/3/wordexp",
     "git-url": "https://github.com/leleliu008/libwordexp",
@@ -17830,7 +17871,7 @@
   {
     "pkgname": "lief",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "Library to Instrument Executable Formats",
     "web-url": "https://github.com/lief-project/LIEF",
@@ -17992,6 +18033,25 @@
     "install": "cargow install --path lla\n\nfor item in plugins/*\ndo\n    cargow build --locked --lib --manifest-path=\"$item/Cargo.toml\"\n    install_libs target/$RUST_TARGET/release/*$SHARED_LIBRARY_SUFFIX\ndone"
   },
   {
+    "pkgname": "lld@20",
+    "pkgtype": "exe",
+    "version": "20.1.8",
+    "license": "Apache-2.0 with LLVM-exception",
+    "summary": "The LLVM Linker",
+    "web-url": "https://lld.llvm.org/",
+    "git-url": "https://github.com/llvm/llvm-project",
+    "src-url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/llvm-project-20.1.8.src.tar.xz",
+    "src-sha": "6898f963c8e938981e6c4a302e83ec5beb4630147c7311183cf61069af16333d",
+    "dep-pkg": "libllvm@20",
+    "dep-upp": "curl bsdtar cmake ninja",
+    "bsystem": "cmake",
+    "binbstd": "0",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "cmakew \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_USE_SYMLINKS=ON \\\n    -DLLVM_ENABLE_LTO=ON \\\n    -DLLD_BUILD_TOOLS=ON \\\n    -DLLD_BUILT_STANDALONE=ON \\\n    -DBUILD_SHARED_LIBS=OFF"
+  },
+  {
     "pkgname": "llhttp",
     "pkgtype": "exe",
     "version": "9.1.3",
@@ -18090,7 +18150,7 @@
     "ltoable": "1",
     "movable": "1",
     "dopatch": "printf 'set(Z3_LIBRARIES z3)\\n' >> cmake/modules/FindZ3.cmake",
-    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=clang \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=ON \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=OFF \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_STATIC_LINK_CXX_STDLIB=ON \\\n    -DLLVM_LINK_LLVM_DYLIB=OFF \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF"
+    "install": "cmakew \\\n    -DBUILD_SHARED_LIBS=OFF \\\n    -DLLVM_TARGETS_TO_BUILD=all \\\n    -DLLVM_ENABLE_PROJECTS=clang \\\n    -DLLVM_ENABLE_EH=ON \\\n    -DLLVM_ENABLE_RTTI=ON \\\n    -DLLVM_ENABLE_PIC=ON \\\n    -DLLVM_ENABLE_FFI=ON \\\n    -DLLVM_ENABLE_ZLIB=ON \\\n    -DLLVM_ENABLE_ZSTD=ON \\\n    -DLLVM_ENABLE_LIBXML2=OFF \\\n    -DLLVM_ENABLE_TERMINFO=OFF \\\n    -DLLVM_ENABLE_SPHINX=OFF \\\n    -DLLVM_ENABLE_DOXYGEN=OFF \\\n    -DLLVM_ENABLE_Z3_SOLVER=ON \\\n    -DLLVM_INCLUDE_DOCS=OFF \\\n    -DLLVM_INCLUDE_TESTS=OFF \\\n    -DLLVM_BUILD_DOCS=OFF \\\n    -DLLVM_BUILD_TESTS=OFF \\\n    -DLLVM_BUILD_TOOLS=ON \\\n    -DLLVM_BUILD_EXAMPLES=OFF \\\n    -DLLVM_BUILD_LLVM_DYLIB=OFF \\\n    -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON \\\n    -DLLVM_STATIC_LINK_CXX_STDLIB=OFF \\\n    -DLLVM_LINK_LLVM_DYLIB=OFF \\\n    -DLLVM_POLLY_LINK_INTO_TOOLS=ON \\\n    -DLLVM_INSTALL_UTILS=ON \\\n    -DLLVM_OPTIMIZED_TABLEGEN=ON \\\n    -DLLVM_CREATE_XCODE_TOOLCHAIN=OFF \\\n    -DCLANG_BUILD_TOOLS=ON \\\n    -DCLANG_FORCE_MATCHING_LIBCLANG_SOVERSION=OFF"
   },
   {
     "pkgname": "llvm+clang@20",
@@ -18312,7 +18372,7 @@
   {
     "pkgname": "lodepng",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Zlib",
     "summary": "PNG encoder and decoder in C and C++",
     "web-url": "https://github.com/lvandeve/lodepng",
@@ -19433,7 +19493,7 @@
   {
     "pkgname": "ndk-pkg",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "A package builder for Android NDK to build projects written in C, C++, Rust, Golang, etc",
     "web-url": "https://github.com/leleliu008/ndk-pkg",
@@ -19468,7 +19528,7 @@
   {
     "pkgname": "neper",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "A networking performance tool for Linux",
     "web-url": "https://github.com/google/neper",
@@ -19578,7 +19638,7 @@
   {
     "pkgname": "nghttp3",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -19631,7 +19691,7 @@
   {
     "pkgname": "ngtcp2",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -19647,7 +19707,7 @@
   {
     "pkgname": "nilaway",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "A static analysis tool to detect potential nil panics in Go code",
     "web-url": "https://github.com/uber-go/nilaway",
@@ -20323,12 +20383,12 @@
   {
     "pkgname": "openldap",
     "pkgtype": "exe",
-    "version": "2.6.6",
+    "version": "2.6.10",
     "license": "OLDAP-2.8",
     "summary": "Open source suite of directory software",
     "web-url": "https://www.openldap.org/software/",
-    "src-url": "https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.6.tgz",
-    "src-sha": "082e998cf542984d43634442dbe11da860759e510907152ea579bdc42fe39ea0",
+    "src-url": "https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.10.tgz",
+    "src-sha": "c065f04aad42737aebd60b2fe4939704ac844266bc0aeaa1609f0cad987be516",
     "dep-pkg": "libopenssl",
     "dep-upp": "curl bsdtar gmake gmake",
     "bsystem": "configure",
@@ -20379,7 +20439,7 @@
   {
     "pkgname": "openrsync",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "ISC",
     "summary": "BSD-licensed implementation of rsync",
     "web-url": "https://github.com/kristapsdz/openrsync",
@@ -20513,7 +20573,7 @@
   {
     "pkgname": "packcc",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A packrat parser generator for C",
     "web-url": "https://github.com/arithy/packcc",
     "git-url": "https://github.com/arithy/packcc",
@@ -20805,7 +20865,7 @@
   {
     "pkgname": "pegof",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "PEG grammar optimizer and formatter. Supports any grammar supported by PackCC parser generator.",
     "web-url": "https://github.com/dolik-rce/pegof",
     "git-url": "https://github.com/dolik-rce/pegof",
@@ -20994,7 +21054,7 @@
   {
     "pkgname": "plog",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "MPL-2.0",
     "summary": "Portable, simple and extensible C++ logging library",
     "web-url": "https://github.com/SergiusTheBest/plog",
@@ -21212,7 +21272,7 @@
   {
     "pkgname": "ppkg",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "A portable package manager for Unix-like system",
     "web-url": "https://github.com/leleliu008/ppkg",
@@ -21386,7 +21446,7 @@
   {
     "pkgname": "psimd",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "MIT",
     "summary": "Portable 128-bit SIMD intrinsics",
     "web-url": "https://github.com/Maratyszcza/psimd",
@@ -21461,7 +21521,7 @@
   {
     "pkgname": "pup",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "MIT",
     "summary": "Parse HTML at the command-line",
     "web-url": "https://github.com/EricChiang/pup",
@@ -22493,7 +22553,7 @@
   {
     "pkgname": "ruy",
     "pkgtype": "lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "matrix multiplication library",
     "web-url": "https://github.com/google/ruy",
@@ -22847,7 +22907,7 @@
   {
     "pkgname": "sjpeg",
     "pkgtype": "exe+lib",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "simple jpeg encoder",
     "web-url": "https://github.com/webmproject/sjpeg",
@@ -22882,7 +22942,7 @@
   {
     "pkgname": "skcms",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "BSD",
     "summary": "SkCMS",
     "web-url": "https://skia.googlesource.com/skcms.git",
@@ -23696,7 +23756,7 @@
   {
     "pkgname": "sysinfo",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A command-line utility to print your currently running system information",
     "web-url": "https://github.com/leleliu008/sysinfo",
     "git-url": "https://github.com/leleliu008/sysinfo",
@@ -24647,7 +24707,7 @@
   {
     "pkgname": "uctags",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "GPL-2.0-or-later",
     "summary": "Maintained ctags implementation",
     "web-url": "https://ctags.io/",
@@ -24778,7 +24838,7 @@
   {
     "pkgname": "uppm",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -24908,7 +24968,7 @@
   {
     "pkgname": "utf8.h",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Unlicense",
     "summary": "single header utf8 string functions for C and C++",
     "web-url": "https://github.com/sheredom/utf8.h",
@@ -25076,7 +25136,7 @@
   {
     "pkgname": "vala-lint",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "GPL-2.0-or-later",
     "summary": "A small command-line tool for checking Vala code files for code-style errors",
     "web-url": "https://github.com/vala-lang/vala-lint",
@@ -25943,7 +26003,7 @@
   {
     "pkgname": "xbps",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "summary": "A binary package system designed and implemented from scratch",
     "web-url": "https://github.com/void-linux/xbps",
     "git-url": "https://github.com/void-linux/xbps",
@@ -26016,7 +26076,7 @@
   {
     "pkgname": "xcpkg",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "A package builder/manager for Xcode to build projects written in C, C++, Rust, Zig, Go, Haskell, etc",
     "web-url": "https://github.com/leleliu008/xcpkg",
@@ -26955,7 +27015,7 @@
   {
     "pkgname": "xpup",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "Apache-2.0",
     "summary": "A command line tool for XML parsing",
     "web-url": "https://github.com/ericchiang/xpup",
@@ -27158,7 +27218,7 @@
   {
     "pkgname": "ycm",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "GPL-v3",
     "summary": "A code-completion engine for Vim",
     "web-url": "https://github.com/ycm-core/YouCompleteMe",
@@ -27268,7 +27328,7 @@
   {
     "pkgname": "zeta",
     "pkgtype": "exe",
-    "version": "2025.07.13",
+    "version": "2025.07.14",
     "license": "LGPL-3.0",
     "summary": "Header-only general purpose library",
     "web-url": "https://github.com/redcode/Zeta",

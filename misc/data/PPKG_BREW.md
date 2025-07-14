@@ -408,7 +408,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.13 ⚠️ | null |
+| PPKG   | 2025.07.14 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -823,8 +823,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.23.3 ✅ | https://github.com/cargo-generate/cargo-generate/archive/refs/tags/v0.23.3.tar.gz |
-| BREW   | 0.23.3 | https://github.com/cargo-generate/cargo-generate |
+| PPKG   | 0.23.3 ⚠️ | https://github.com/cargo-generate/cargo-generate/archive/refs/tags/v0.23.3.tar.gz |
+| BREW   | **0.23.4** | https://github.com/cargo-generate/cargo-generate |
+
+*Outdated*
 
 ## cargo-hack
 
@@ -2461,8 +2463,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.33.0 ✅ | https://github.com/ImageOptim/gifski/archive/refs/tags/1.33.0.tar.gz |
-| BREW   | 1.33.0 | https://gif.ski/ |
+| PPKG   | 1.33.0 ⚠️ | https://github.com/ImageOptim/gifski/archive/refs/tags/1.33.0.tar.gz |
+| BREW   | **1.34.0** | https://gif.ski/ |
+
+*Outdated*
 
 ## git
 
@@ -3258,7 +3262,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.1.1.47 ⚠️ | https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz |
-| BREW   | **7.1.1-47** | https://imagemagick.org/index.php |
+| BREW   | **7.1.2-0** | https://imagemagick.org/index.php |
 
 *Outdated*
 
@@ -4579,7 +4583,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.13 ⚠️ | null |
+| PPKG   | 2025.07.14 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6573,10 +6577,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.6.6 ⚠️ | https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.6.tgz |
-| BREW   | **2.6.10** | https://www.openldap.org/software/ |
-
-*Outdated*
+| PPKG   | 2.6.10 ✅ | https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.10.tgz |
+| BREW   | 2.6.10 | https://www.openldap.org/software/ |
 
 ## openlibm
 
@@ -6626,7 +6628,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.13 ⚠️ | null |
+| PPKG   | 2025.07.14 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6793,7 +6795,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.13 ⚠️ | null |
+| PPKG   | 2025.07.14 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6955,7 +6957,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.13 ⚠️ | null |
+| PPKG   | 2025.07.14 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -6998,7 +7000,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.12.0 ⚠️ | https://github.com/pybind/pybind11/archive/refs/tags/v2.12.0.tar.gz |
-| BREW   | **2.13.6** | https://github.com/pybind/pybind11 |
+| BREW   | **3.0.0** | https://github.com/pybind/pybind11 |
 
 *Outdated*
 
@@ -8164,7 +8166,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.6 ⚠️ | https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.6.tar.gz |
-| BREW   | **0.25.7** | https://tree-sitter.github.io/ |
+| BREW   | **0.25.8** | https://tree-sitter.github.io/ |
 
 *Outdated*
 

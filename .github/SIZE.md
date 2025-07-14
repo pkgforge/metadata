@@ -311,7 +311,7 @@
   11M   │ │ ├── ALPINE_PKG.json
   10M   │ │ ├── NIXPKGS.json
  9.0M   │ │ ├── PKGSRC.json
- 5.2M   │ │ ├── ALPINE_GIT.json
+ 5.1M   │ │ ├── ALPINE_GIT.json
  2.8M   │ │ ├── BREW_FORMULA.json
  1.6M   │ │ ├── BREW_CASK.json
  1.2M   │ │ ├── PPKG_RAW.json
@@ -321,7 +321,7 @@
  336K   │ │ ├── PPKG.json
  276K   │ │ ├── PPKG_BREW.md
  236K   │ │ ├── FLATPAK_POPULAR.json
- 220K   │ │ ├── FLATPAK_TRENDING.json
+ 216K   │ │ ├── FLATPAK_TRENDING.json
   76K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md

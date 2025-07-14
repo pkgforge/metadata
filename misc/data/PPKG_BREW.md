@@ -1268,7 +1268,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.2.7 ⚠️ | https://github.com/klauspost/cpuid/archive/refs/tags/v2.2.7.tar.gz |
-| BREW   | **2.2.11** | https://github.com/klauspost/cpuid |
+| BREW   | **2.3.0** | https://github.com/klauspost/cpuid |
 
 *Outdated*
 
@@ -3928,10 +3928,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 18.1.2 ⚠️ | https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.2/libclc-18.1.2.src.tar.xz |
-| BREW   | **20.1.8** | https://libclc.llvm.org/ |
-
-*Outdated*
+| PPKG   | 20.1.8 ✅ | https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/libclc-20.1.8.src.tar.xz |
+| BREW   | 20.1.8 | https://libclc.llvm.org/ |
 
 ## libconfig
 
@@ -7409,7 +7407,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-07-09** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-07-14** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 
@@ -7684,14 +7682,12 @@
 
 ## spirv-llvm-translator
 
-**Description:** Tool and a library for bi-directional translation between SPIR-V and LLVM IR
+**Description:** A command-line utility for translating between LLVM bitcode and SPIR-V binary
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 18.1.7 ⚠️ | https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v18.1.7.tar.gz |
-| BREW   | **20.1.4** | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
-
-*Outdated*
+| PPKG   | 20.1.4 ✅ | https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v20.1.4.tar.gz |
+| BREW   | 20.1.4 | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
 
 ## spirv-tools
 

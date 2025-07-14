@@ -305,7 +305,7 @@
  227M   │ ├─┬ data
   72M   │ │ ├── ARCHLINUX.json
   38M   │ │ ├── FLATPAK_APPSTREAM.xml
-  31M   │ │ ├── CONDA.json
+  32M   │ │ ├── CONDA.json
   23M   │ │ ├── DEBIAN.json
   16M   │ │ ├── CONDA_RAW.json
   11M   │ │ ├── ALPINE_PKG.json
@@ -426,7 +426,7 @@
  1.0M   │ │ ├── COMP_VER_CACHE.md
  784K   │ │ ├── pub_issues_binaries.txt
  492K   │ │ ├── OLD_bincache_riscv64-Linux.json
- 456K   │ │ ├── COMP_VER_CACHE_OLD.json
+ 472K   │ │ ├── COMP_VER_CACHE_OLD.json
  420K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  400K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  384K   │ │ ├── INDEX.json.cba
@@ -437,8 +437,8 @@
  240K   │ │ ├── GH_REPO.md
  236K   │ │ ├── INDEX.json.xz
  228K   │ │ ├── INDEX.json.zstd
+ 196K   │ │ ├── COMP_VER_CACHE_OLD.md
  192K   │ │ ├── INDEX.db.zstd
- 192K   │ │ ├── COMP_VER_CACHE_OLD.md
  184K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  180K   │ │ ├── INDEX.db.xz
   84K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json

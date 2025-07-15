@@ -229,6 +229,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "nixpkgs.brave",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/nixappimage/nixpkgs",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/brave/brave-browser"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "1.80.120"
+  },
+  {
+    "_disabled": "false",
     "pkg": "chromium",
     "pkg_family": "chromium",
     "pkg_id": "nixpkgs.chromium",
@@ -292,6 +356,74 @@
     ],
     "src_url": [
       "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "138.0.7204.100"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
     ],
     "tag": [
       "browser"
@@ -731,7 +863,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d938a1c-250715T110626"
+    "version": "HEAD-c2506ab-250715T170156"
   },
   {
     "_disabled": "false",
@@ -916,7 +1048,7 @@
       "gui-scrcpy",
       "scrcpy"
     ],
-    "version": "v1.30.1"
+    "version": "v1.30.2"
   },
   {
     "_disabled": "true",
@@ -1299,7 +1431,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c8dc0c0-250714T115627"
+    "version": "HEAD-37d3278-250715T105838"
   },
   {
     "_disabled": "true",
@@ -1568,7 +1700,72 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8f973b1-250714T164734"
+    "version": "HEAD-11d484b-250715T120318"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "oci-cli",
+    "pkg_family": "oci-cli",
+    "pkg_id": "sharun.wrappe.pypi.oci-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oci-cli/oci-cli/oci-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oci-cli/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Command Line Interface for Oracle Cloud Infrastructure",
+    "distro_pkg": {
+      "alpine": [
+        "oci-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "oci-cli"
+        ]
+      },
+      "homebrew": [
+        "oci-cli"
+      ],
+      "nixpkgs": [
+        "oci-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/oci-cli/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://cloud.oracle.com/cloud-infrastructure",
+      "https://github.com/oracle/oci-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "UPL-1.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
+    "provides": [
+      "oci==oci-cli"
+    ],
+    "repology": [
+      "oci-cli"
+    ],
+    "src_url": [
+      "https://pypi.org/project/oci-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.62.2"
   },
   {
     "_disabled": "false",
@@ -2048,6 +2245,75 @@
       "Utility"
     ],
     "version": "1.77.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "twingate",
+    "pkg_family": "twingate",
+    "pkg_id": "sharun.wrappe.twingate.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/twingate-stable/twingate/twingate",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Zero trust remote access client for resource and networks",
+      "twingate": "Zero trust remote access client for resource and networks [twingate]",
+      "twingated": "Daemon for Twingate [twingate]",
+      "twingate-notifier": "Monitor & Notify for Twingate Client [twingate]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "twingate",
+          "twingate-bin"
+        ]
+      },
+      "homebrew": [
+        "twingate"
+      ],
+      "nixpkgs": [
+        "twingate"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/twingate/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://www.twingate.com/docs",
+      "https://www.twingate.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/twingate/archive/sharun",
+    "provides": [
+      "twingate",
+      "twingated",
+      "twingate-notifier"
+    ],
+    "repology": [
+      "twingate"
+    ],
+    "src_url": [
+      "https://packages.twingate.com/deb:twingate"
+    ],
+    "tag": [
+      "Utility"
+    ]
   },
   {
     "_disabled": "true",

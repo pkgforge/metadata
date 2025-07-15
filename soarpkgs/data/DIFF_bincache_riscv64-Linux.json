@@ -739,7 +739,7 @@
     "tag": [
       "btrfs"
     ],
-    "version": "6.14"
+    "version": "6.15"
   },
   {
     "_disabled": "false",
@@ -951,7 +951,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "0.17"
+    "version": "0.17.1"
   },
   {
     "_disabled": "false",
@@ -1579,7 +1579,7 @@
       "encryption",
       "security"
     ],
-    "version": "2.7.5"
+    "version": "2.8.0"
   },
   {
     "_disabled": "false",
@@ -2293,7 +2293,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-60a54f4-250715T110231"
+    "version": "HEAD-1311a80-250715T175209"
   },
   {
     "_disabled": "false",
@@ -2587,6 +2587,113 @@
       "disk-usage"
     ],
     "version": "HEAD-7d1a28d-250709T105237"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gettext",
+    "pkg_family": "gettext",
+    "pkg_id": "nixpkgs.gettext",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-gettext/gettext/gettext",
+    "bincache": "ghcr.io/pkgforge/bincache/gettext/nixpkgs/autopoint",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gettext/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Utilities for the GNU Translation Project",
+      "autopoint": "Copies standard gettext infrastructure files into a source package [gettext]",
+      "envsubst": "Substitutes Environment variables in shell format strings [gettext]",
+      "gettext": "Retrieve text string from message database [gettext]",
+      "gettextize": "Prepares a source package to use gettext [gettext]",
+      "gettext.sh": "Gettext as a shell function library [gettext]",
+      "msgattrib": "Filter messages of a translation catalog according to their attributes & manipulate them [gettext]",
+      "msgcat": "Concatenate and merge the specified PO files [gettext]",
+      "msgcmp": "Compare message catalog and template [gettext]",
+      "msgcomm": "Find messages which are common to two or more of the specified PO files [gettext]",
+      "msgconv": "Convert a translation catalog to a different character encoding [gettext]",
+      "msgen": "Create an English translation catalog [gettext]",
+      "msgexec": "Apply a command to all translations of a translation catalog [gettext]",
+      "msgfilter": "Apply a filter to all translations of a translation catalog [gettext]",
+      "msgfmt": "Generate binary message catalog from textual translation description [gettext]",
+      "msggrep": "Extracts all messages of a translation catalog based on a pattern or belonging to some source files [gettext]",
+      "msginit": "Initialize a message catalog [gettext]",
+      "msgmerge": "Merge message catalog and template [gettext]",
+      "msgunfmt": "Convert binary message catalog to Uniforum style .po file [gettext]",
+      "msguniq": "Unify duplicate translations in message catalog [gettext]",
+      "ngettext": "Translate message and choose plural form [gettext]",
+      "recode-sr-latin": "Convert Serbian text from Cyrillic to Latin script [gettext]",
+      "xgettext": "Extract gettext strings from source [gettext]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "gettext"
+      ],
+      "archlinux": {
+        "aur": [
+          "gettext-git"
+        ]
+      },
+      "debian": [
+        "gettext"
+      ],
+      "nixpkgs": [
+        "gettext"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gettext/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.gnu.org/software/gettext",
+      "https://savannah.gnu.org/projects/gettext"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "autopoint",
+      "envsubst",
+      "gettext",
+      "gettextize",
+      "gettext.sh",
+      "msgattrib",
+      "msgcat",
+      "msgcmp",
+      "msgcomm",
+      "msgconv",
+      "msgen",
+      "msgexec",
+      "msgfilter",
+      "msgfmt",
+      "msggrep",
+      "msginit",
+      "msgmerge",
+      "msgunfmt",
+      "msguniq",
+      "ngettext",
+      "recode-sr-latin",
+      "xgettext"
+    ],
+    "repology": [
+      "gettext"
+    ],
+    "src_url": [
+      "https://git.savannah.gnu.org/gitweb/?p=gettext.git"
+    ],
+    "tag": [
+      "text",
+      "translation"
+    ],
+    "version": "0.25"
   },
   {
     "_disabled": "false",
@@ -3669,6 +3776,110 @@
   },
   {
     "_disabled": "false",
+    "pkg": "iproute2",
+    "pkg_family": "iproute2",
+    "pkg_id": "nixpkgs.iproute2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-iproute2/iproute2/iproute2",
+    "bincache": "ghcr.io/pkgforge/bincache/iproute2/nixpkgs/arpd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/iproute2/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "A Collection of utilities for controlling TCP/IP networking and traffic control in Linux",
+      "arpd": "Userspace arp daemon [iproute2]",
+      "bridge": "Show/Manipulate bridge addresses and devices [iproute2]",
+      "ctstat": "Unified linux network connection tracking statistics [iproute2]",
+      "dcb": "Show/Manipulate DCB (Data Center Bridging) settings [iproute2]",
+      "devlink": "Manage/Monitor network device links [iproute2]",
+      "genl": "Generic netlink utility frontend [iproute2]",
+      "ifstat": "Handy utility to read network interface statistics [iproute2]",
+      "ip": "Show/Manipulate routing, network devices, interfaces and tunnels [iproute2]",
+      "lnstat": "Unified linux network interface/route statistics [iproute2]",
+      "nstat": "Display network statistics for network interfaces, protocols, and sockets [iproute2]",
+      "rdma": "Manage Remote Direct Memory Access (RDMA) devices and connections for high-performance networking [iproute2]",
+      "routel": "List routes with pretty output format [iproute2]",
+      "rtacct": "Display and monitors the accounting information of routing tables [iproute2]",
+      "rtmon": "Listen to and monitor RTnetlink [iproute2]",
+      "rtstat": "Display routing table statistics, including the number of routes and related metrics [iproute2]",
+      "ss": "Utility to dump/investigate sockets [iproute2]",
+      "tc": "Show/Manipulate traffic control settings [iproute2]",
+      "tipc": "A TIPC configuration and management tool [iproute2]",
+      "vdpa": "vDPA management tool [iproute2]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "iproute2"
+      ],
+      "archlinux": {
+        "aur": [
+          "iproute2-git"
+        ]
+      },
+      "debian": [
+        "iproute2"
+      ],
+      "nixpkgs": [
+        "iproute2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/iproute2/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://wiki.linuxfoundation.org/networking/iproute2",
+      "https://git.kernel.org/pub/scm/network/iproute2/iproute2.git"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "arpd",
+      "bridge",
+      "ctstat",
+      "dcb",
+      "devlink",
+      "genl",
+      "ifstat",
+      "ip",
+      "lnstat",
+      "nstat",
+      "rdma",
+      "routel",
+      "rtacct",
+      "rtmon",
+      "rtstat",
+      "ss",
+      "tc",
+      "tipc",
+      "vdpa"
+    ],
+    "repology": [
+      "iproute2"
+    ],
+    "src_url": [
+      "https://github.com/iproute2/iproute2"
+    ],
+    "tag": [
+      "network",
+      "Network/Routing"
+    ],
+    "version": "6.15.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "iputils",
     "pkg_family": "iputils",
     "pkg_id": "nixpkgs.iputils",
@@ -4001,6 +4212,62 @@
   },
   {
     "_disabled": "false",
+    "pkg": "less",
+    "pkg_family": "less",
+    "pkg_id": "nixpkgs.less",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-less/less/less",
+    "bincache": "ghcr.io/pkgforge/bincache/less/nixpkgs/less",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/less/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "More advanced file pager than more",
+      "less": "A fast file pager/viewer allowing both forward and backward navigation [less]",
+      "lessecho": "Echoe arguments with metacharacters preceded by an escape character (backslash by default) [less]",
+      "lesskey": "Customize key bindings for less [less]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/less/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.greenwoodsoftware.com/less/",
+      "https://github.com/gwsw/less"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "less",
+      "lessecho",
+      "lesskey"
+    ],
+    "repology": [
+      "less"
+    ],
+    "src_url": [
+      "https://github.com/gwsw/less"
+    ],
+    "tag": [
+      "pager"
+    ],
+    "version": "679"
+  },
+  {
+    "_disabled": "false",
     "pkg": "libarchive",
     "pkg_family": "libarchive",
     "pkg_id": "nixpkgs.libarchive",
@@ -4072,7 +4339,66 @@
       "Archive",
       "Archiver"
     ],
-    "version": "3.8.0"
+    "version": "3.8.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libcap",
+    "pkg_family": "libcap",
+    "pkg_id": "nixpkgs.libcap",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-libcap/libcap/libcap",
+    "bincache": "ghcr.io/pkgforge/bincache/libcap/nixpkgs/capsh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/libcap/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for working with POSIX capabilities",
+      "capsh": "Capability Shell Wrapper [libcap]",
+      "captree": "Display tree of process capabilities [libcap]",
+      "getcap": "Display the capabilities on the queried file(s) [libcap]",
+      "getpcaps": "Display process capabilities [libcap]",
+      "setcap": "Set file capabilities [libcap]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/libcap/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://sites.google.com/site/fullycapable",
+      "https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "capsh",
+      "captree",
+      "getcap",
+      "getpcaps",
+      "setcap"
+    ],
+    "repology": [
+      "libcap"
+    ],
+    "src_url": [
+      "https://git.kernel.org/pub/scm/libs/libcap/libcap.git"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2.76"
   },
   {
     "_disabled": "false",
@@ -5358,6 +5684,73 @@
   },
   {
     "_disabled": "false",
+    "pkg": "openssl",
+    "pkg_family": "openssl",
+    "pkg_id": "nixpkgs.openssl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-openssl/openssl/openssl",
+    "bincache": "ghcr.io/pkgforge/bincache/openssl/nixpkgs/c_rehash",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/openssl/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols",
+    "distro_pkg": {
+      "alpine": [
+        "openssl"
+      ],
+      "archlinux": {
+        "aur": [
+          "openssl-git",
+          "openssl-static"
+        ]
+      },
+      "debian": [
+        "openssl"
+      ],
+      "nixpkgs": [
+        "openssl"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/openssl/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.openssl.org/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache",
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "c_rehash",
+      "openssl"
+    ],
+    "repology": [
+      "openssl"
+    ],
+    "src_url": [
+      "https://github.com/openssl/openssl"
+    ],
+    "tag": [
+      "ssl"
+    ],
+    "version": "3.5.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "openvpn",
     "pkg_family": "openvpn",
     "pkg_id": "nixpkgs.openvpn",
@@ -5852,7 +6245,7 @@
     "tag": [
       "python"
     ],
-    "version": "3.13.4"
+    "version": "3.13.5"
   },
   {
     "_disabled": "false",
@@ -8078,7 +8471,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-b63f8a4-250714T150931"
+    "version": "HEAD-205f822-250715T012324"
   },
   {
     "_disabled": "false",
@@ -8656,7 +9049,7 @@
       "Editor",
       "text-editor"
     ],
-    "version": "9.1.1401"
+    "version": "9.1.1475"
   },
   {
     "_disabled": "false",
@@ -9120,7 +9513,7 @@
       "toml",
       "yaml"
     ],
-    "version": "HEAD-6e8cc00-250714T162626"
+    "version": "HEAD-8e731ac-250715T213554"
   },
   {
     "_disabled": "false",

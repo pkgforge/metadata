@@ -2508,7 +2508,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.37.0 ⚠️ | https://github.com/Byron/gitoxide/archive/refs/tags/v0.37.0.tar.gz |
-| BREW   | **0.44.0** | https://github.com/GitoxideLabs/gitoxide |
+| BREW   | **0.45.0** | https://github.com/GitoxideLabs/gitoxide |
 
 *Outdated*
 
@@ -4500,8 +4500,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.0.1 ✅ | https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.1.tar.gz |
-| BREW   | 1.0.1 | https://www.gnu.org/software/libmicrohttpd/ |
+| PPKG   | 1.0.1 ⚠️ | https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.1.tar.gz |
+| BREW   | **1.0.2** | https://www.gnu.org/software/libmicrohttpd/ |
+
+*Outdated*
 
 ## libmms
 

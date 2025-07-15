@@ -8,8 +8,8 @@
   69M   │ │ │ ├── aarch64-Linux.json
   69M   │ │ │ ├── loongarch64-Linux.json
   56M   │ │ │ ├── x86_64-Linux.db
-  56M   │ │ │ ├── riscv64-Linux.db
   56M   │ │ │ ├── loongarch64-Linux.db
+  56M   │ │ │ ├── riscv64-Linux.db
   55M   │ │ │ ├── aarch64-Linux.db
   50M   │ │ │ ├── x86_64-Linux.sdb
   49M   │ │ │ ├── riscv64-Linux.sdb

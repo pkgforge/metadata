@@ -157,8 +157,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.10.0 ✅ | https://github.com/makew0rld/amfora/archive/refs/tags/v1.10.0.tar.gz |
-| BREW   | 1.10.0 | https://github.com/makew0rld/amfora |
+| PPKG   | 1.10.0 ⚠️ | https://github.com/makew0rld/amfora/archive/refs/tags/v1.10.0.tar.gz |
+| BREW   | **1.11.0** | https://github.com/makew0rld/amfora |
+
+*Outdated*
 
 ## amp
 
@@ -408,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.14 ⚠️ | null |
+| PPKG   | 2025.07.15 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1586,7 +1588,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.55.5** | https://github.com/dolthub/dolt |
+| BREW   | **1.55.6** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2400,7 +2402,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.74.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.74.0.tar.gz |
-| BREW   | **2.75.0** | https://cli.github.com/ |
+| BREW   | **2.75.1** | https://cli.github.com/ |
 
 *Outdated*
 
@@ -4581,7 +4583,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.14 ⚠️ | null |
+| PPKG   | 2025.07.15 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5897,7 +5899,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.4.37 ⚠️ | https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.37.tar.gz |
-| BREW   | **0.4.51** | https://rust-lang.github.io/mdBook/ |
+| BREW   | **0.4.52** | https://rust-lang.github.io/mdBook/ |
 
 *Outdated*
 
@@ -6626,7 +6628,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.14 ⚠️ | null |
+| PPKG   | 2025.07.15 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6793,7 +6795,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.14 ⚠️ | null |
+| PPKG   | 2025.07.15 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6955,7 +6957,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.14 ⚠️ | null |
+| PPKG   | 2025.07.15 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8006,7 +8008,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.83.1** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.83.2** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8318,7 +8320,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.7.20** | https://docs.astral.sh/uv/ |
+| BREW   | **0.7.21** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -9044,8 +9046,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.20.0 ✅ | https://github.com/getzola/zola/archive/refs/tags/v0.20.0.tar.gz |
-| BREW   | 0.20.0 | https://www.getzola.org/ |
+| PPKG   | 0.20.0 ⚠️ | https://github.com/getzola/zola/archive/refs/tags/v0.20.0.tar.gz |
+| BREW   | **0.21.0** | https://www.getzola.org/ |
+
+*Outdated*
 
 ## zopfli
 

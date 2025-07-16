@@ -1,68 +1,6 @@
 [
   {
     "_disabled": "false",
-    "pkg": "affine",
-    "pkg_family": "affine",
-    "pkg_id": "github.com.affine-mirror.affine.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/affine-stable/affine/affine",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/affine/appimage.official.stable.yaml",
-    "category": [
-      "Database",
-      "Education"
-    ],
-    "description": "FOSS Knowledge Base with fully merged docs, whiteboards and databases",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "affine",
-          "affine-bin",
-          "affine-canary-bin"
-        ]
-      },
-      "homebrew": [
-        "affine"
-      ],
-      "nixpkgs": [
-        "affine"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/affine/appimage.official.stable.yaml",
-    "homepage": [
-      "https://affine.pro",
-      "https://github.com/toeverything/AFFiNE"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/affine/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/toeverything/AFFiNE"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/affine/appimage/official",
-    "provides": [
-      "affine"
-    ],
-    "repology": [
-      "affine-whiteboard"
-    ],
-    "src_url": [
-      "https://github.com/toeverything/AFFiNE"
-    ],
-    "tag": [
-      "knowledge-base",
-      "wiki"
-    ],
-    "version": "v0.23.0"
-  },
-  {
-    "_disabled": "false",
     "pkg": "aisleriot",
     "pkg_family": "aisleriot",
     "pkg_id": "github.com.ivan-hc.Aisleriot-appimage",
@@ -127,7 +65,89 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250715T030038"
+    "version": "250716T025735"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "android-tools",
+    "pkg_family": "android-tools",
+    "pkg_id": "github.com.pkgforge-dev.android-tools-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/android-tools/android-tools",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/android-tools/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Android SDK Platform-Tools (adb, fastboot & more)",
+      "adb": "Android Debug Bridge (adb) to communicate with an emulator instance or connected Android-powered device [android-tools]",
+      "etc1tool": "Encode/Decode PNG images to & from the ETC1 compression standard [android-tools]",
+      "fastboot": "Android flashing and booting utility [android-tools]",
+      "hprof-conv": "HPROF Converter [android-tools]",
+      "make_f2fs": "Tool to create a flash-friendly F2FS file system [android-tools]",
+      "make_f2fs_casefold": "Version of make_f2fs with casefolding support for file systems [android-tools]",
+      "mke2fs": "Utility to create ext2, ext3, or ext4 file systems [android-tools]",
+      "sqlite3": "Command-line interface for SQLite databases [android-tools]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "android-tools"
+      ],
+      "archlinux": {
+        "extra": [
+          "android-tools"
+        ]
+      },
+      "debian": [
+        "android-tools"
+      ],
+      "nixpkgs": [
+        "android-tools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/android-tools/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://android.googlesource.com/platform/tools/base",
+      "https://github.com/pkgforge-dev/android-tools-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/android-tools/assets/default.png",
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Samueru-sama (https://github.com/Samueru-sama)"
+    ],
+    "note": [
+      "Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/android-tools-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/android-tools/appimage/pkgforge-dev",
+    "provides": [
+      "android-tools=>adb",
+      "android-tools=>etc1tool",
+      "android-tools=>fastboot",
+      "android-tools=>hprof-conv",
+      "android-tools=>make_f2fs",
+      "android-tools=>make_f2fs_casefold",
+      "android-tools=>mke2fs",
+      "android-tools=>sqlite3"
+    ],
+    "repology": [
+      "android-tools"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/android-tools-AppImage"
+    ],
+    "tag": [
+      "adb",
+      "android-tools",
+      "utils"
+    ],
+    "version": "36.0.0@2025-07-15_1752596339"
   },
   {
     "_disabled": "false",
@@ -177,119 +197,181 @@
   },
   {
     "_disabled": "false",
-    "pkg": "brave",
-    "pkg_family": "brave",
-    "pkg_id": "github.com.srevinsaju.Brave-AppImage.beta",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/brave/brave",
-    "app_id": "com.brave.Browser",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.beta.yaml",
+    "pkg": "apptainer",
+    "pkg_family": "apptainer",
+    "pkg_id": "wrappe.github.com.apptainer.apptainer.glibc",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apptainer-glibc/apptainer/apptainer",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/apptainer/archive.wrappe.glibc.yaml",
     "category": [
-      "WebBrowser"
+      "ConsoleOnly",
+      "Utility"
     ],
-    "description": "Privacy-oriented browser for Desktop and Laptop computers (Beta)",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.beta.yaml",
+    "description": "Standalone Linux Container Alternative to docker/podman that runs anywhere with 0 Dependency",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/apptainer/archive.wrappe.glibc.yaml",
     "homepage": [
-      "https://brave.com",
-      "https://github.com/brave/brave-browser",
-      "https://github.com/srevinsaju/Brave-AppImage"
+      "https://github.com/apptainer/apptainer"
     ],
     "host": [
+      "aarch64-linux",
       "x86_64-linux"
     ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
     "license": [
-      "MPL-2.0"
+      "BSD-3-Clause"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/apptainer/apptainer",
+      "Statically Linked on Debian (GLIBC)",
+      "Packed Using Wrappe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This may need extra requirements on host, read more: https://apptainer.org/docs/user/latest/bind_paths_and_mounts.html#requirements"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/appimage/srevinsaju",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/apptainer/archive/wrappe",
     "provides": [
-      "brave"
+      "apptainer"
     ],
     "repology": [
-      "brave"
+      "apptainer"
     ],
     "src_url": [
-      "https://github.com/srevinsaju/Brave-AppImage"
+      "https://github.com/apptainer/apptainer"
     ],
     "tag": [
-      "browser",
-      "Networking/WWW",
-      "network.web.browser"
+      "Utility"
     ],
-    "version": "v1.81.114"
+    "version": "HEAD-8b2d2fc-250715T083219"
   },
   {
     "_disabled": "false",
-    "pkg": "brave",
-    "pkg_family": "brave",
-    "pkg_id": "github.com.srevinsaju.Brave-AppImage.nightly",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/brave/brave",
-    "app_id": "com.brave.Browser",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.nightly.yaml",
+    "pkg": "apptainer",
+    "pkg_family": "apptainer",
+    "pkg_id": "wrappe.github.com.apptainer.apptainer.musl",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apptainer-musl/apptainer/apptainer",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/apptainer/archive.wrappe.musl.yaml",
     "category": [
-      "WebBrowser"
+      "ConsoleOnly",
+      "Utility"
     ],
-    "description": "Privacy-oriented browser for Desktop and Laptop computers (Nightly)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "brave-beta-bin",
-          "brave-bin",
-          "brave-nightly-bin"
-        ]
-      },
-      "homebrew": [
-        "brave-browser",
-        "brave-browser@beta",
-        "brave-browser@dev",
-        "brave-browser@nightly"
-      ],
-      "nixpkgs": [
-        "brave"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.nightly.yaml",
+    "description": "Standalone Linux Container Alternative to docker/podman that runs anywhere with 0 Dependency",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/apptainer/archive.wrappe.musl.yaml",
     "homepage": [
-      "https://brave.com",
-      "https://github.com/brave/brave-browser",
-      "https://github.com/srevinsaju/Brave-AppImage"
+      "https://github.com/apptainer/apptainer"
     ],
     "host": [
+      "aarch64-linux",
       "x86_64-linux"
     ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
     "license": [
-      "MPL-2.0"
+      "BSD-3-Clause"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/apptainer/apptainer",
+      "Statically Linked on Alpine (MUSL)",
+      "Packed Using Wrappe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This may need extra requirements on host, read more: https://apptainer.org/docs/user/latest/bind_paths_and_mounts.html#requirements"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/appimage/srevinsaju",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/apptainer/archive/wrappe",
     "provides": [
-      "brave"
+      "apptainer"
     ],
     "repology": [
-      "brave"
+      "apptainer"
     ],
     "src_url": [
-      "https://github.com/srevinsaju/Brave-AppImage"
+      "https://github.com/apptainer/apptainer"
     ],
     "tag": [
-      "browser",
-      "Networking/WWW",
-      "network.web.browser"
+      "Utility"
     ],
-    "version": "v1.82.81"
+    "version": "HEAD-8b2d2fc-250715T083219"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "awscli",
+    "pkg_family": "awscli",
+    "pkg_id": "sharun.wrappe.pypi.awscli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-awscli/awscli/awscli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/awscli/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Universal Command Line Interface for Amazon Web Services",
+    "distro_pkg": {
+      "alpine": [
+        "aws-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "aws-cli-bin",
+          "aws-cli-git",
+          "aws-cli-v2"
+        ],
+        "extra": [
+          "aws-cli"
+        ]
+      },
+      "debian": [
+        "awscli"
+      ],
+      "gnuguix": [
+        "awscli"
+      ],
+      "homebrew": [
+        "awscli"
+      ],
+      "nixpkgs": [
+        "awscli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/awscli/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/aws/aws-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/awscli/archive/sharun",
+    "provides": [
+      "aws==awscli",
+      "aws==aws-cli"
+    ],
+    "repology": [
+      "awscli"
+    ],
+    "src_url": [
+      "https://pypi.org/project/awscli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.41.6"
   },
   {
     "_disabled": "false",
@@ -352,324 +434,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "brave",
-    "pkg_family": "brave",
-    "pkg_id": "nixpkgs.brave",
-    "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
-    "app_id": "com.brave.Browser",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/nixappimage.nixpkgs.stable.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "Privacy-oriented browser for Desktop and Laptop computers",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "brave-bin"
-        ]
-      },
-      "nixpkgs": [
-        "brave"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/nixappimage.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://brave.com",
-      "https://github.com/brave/brave-browser",
-      "https://github.com/srevinsaju/Brave-AppImage"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
-      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/nixappimage/nixpkgs",
-    "provides": [
-      "brave"
-    ],
-    "repology": [
-      "brave"
-    ],
-    "src_url": [
-      "https://github.com/brave/brave-browser"
-    ],
-    "tag": [
-      "browser",
-      "Networking/WWW",
-      "network.web.browser"
-    ],
-    "version": "1.80.120"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "chromium",
-    "pkg_family": "chromium",
-    "pkg_id": "nixpkgs.chromium",
-    "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
-    "app_id": "org.chromium.Chromium",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "Open source web browser from Google (Stable)",
-    "distro_pkg": {
-      "alpine": [
-        "chromium"
-      ],
-      "archlinux": {
-        "extra": [
-          "chromium"
-        ]
-      },
-      "debian": [
-        "chromium"
-      ],
-      "homebrew": [
-        "chromium"
-      ],
-      "nixpkgs": [
-        "chromium"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://www.chromium.org",
-      "https://chromium.googlesource.com/chromium/src",
-      "https://github.com/chromium/chromium"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
-      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
-    "provides": [
-      "chromium==chromium-browser"
-    ],
-    "repology": [
-      "chromium"
-    ],
-    "src_url": [
-      "https://github.com/chromium/chromium"
-    ],
-    "tag": [
-      "browser"
-    ],
-    "version": "138.0.7204.100"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "chromium",
-    "pkg_family": "chromium",
-    "pkg_id": "nixpkgs.ungoogled-chromium",
-    "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
-    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "ungoogled-chromium",
-          "ungoogled-chromium-bin",
-          "ungoogled-chromium-git",
-          "ungoogled-chromium-xdg",
-          "ungoogled-chromium-xdg-bin"
-        ]
-      },
-      "gnuguix": [
-        "ungoogled-chromium"
-      ],
-      "nixpkgs": [
-        "ungoogled-chromium"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
-    "homepage": [
-      "https://github.com/ungoogled-software/ungoogled-chromium"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
-      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
-    "provides": [
-      "chromium:ungoogled-chromium",
-      "chromium==chromium-browser"
-    ],
-    "repology": [
-      "ungoogled-chromium"
-    ],
-    "src_url": [
-      "https://github.com/ungoogled-software/ungoogled-chromium"
-    ],
-    "tag": [
-      "browser"
-    ],
-    "version": "138.0.7204.100"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "citron",
-    "pkg_family": "citron",
-    "pkg_id": "github.com.pkgforge-dev.Citron-AppImage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/citron/citron",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/citron/appimage.pkgforge-dev.stable.yaml",
-    "category": [
-      "Game"
-    ],
-    "description": "Nintendo Switch emulator forked from yuzu",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "citron",
-          "citron-git"
-        ]
-      },
-      "nixpkgs": [
-        "citron"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/citron/appimage.pkgforge-dev.stable.yaml",
-    "homepage": [
-      "https://citron-emu.org",
-      "https://git.sr.ht/~grtcdr/citron"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Citron-AppImage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/citron/appimage/pkgforge-dev",
-    "provides": [
-      "citron"
-    ],
-    "repology": [
-      "citron"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge-dev/Citron-AppImage"
-    ],
-    "tag": [
-      "emulator",
-      "game"
-    ],
-    "version": "v0.6.1@2025-07-15_1752565155"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "citron",
-    "pkg_family": "citron",
-    "pkg_id": "github.com.pkgforge-dev.Citron-AppImage.v3",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-v3/citron/citron",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/citron/appimage.pkgforge-dev.v3.yaml",
-    "category": [
-      "Game"
-    ],
-    "description": "Nintendo Switch emulator forked from yuzu (x86-64-v3)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "citron",
-          "citron-git"
-        ]
-      },
-      "nixpkgs": [
-        "citron"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/citron/appimage.pkgforge-dev.v3.yaml",
-    "homepage": [
-      "https://citron-emu.org",
-      "https://git.sr.ht/~grtcdr/citron"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Citron-AppImage",
-      "Optimized for x86-64-v3",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/citron/appimage/pkgforge-dev",
-    "provides": [
-      "citron"
-    ],
-    "repology": [
-      "citron"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge-dev/Citron-AppImage"
-    ],
-    "tag": [
-      "emulator",
-      "game"
-    ],
-    "version": "v0.6.1@2025-07-15_1752565155"
-  },
-  {
-    "_disabled": "false",
     "pkg": "commix",
     "pkg_family": "commix",
     "pkg_id": "sharun.wrappe.pypi.commix",
@@ -725,69 +489,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-18b48bc-250715T070059"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "discord",
-    "pkg_family": "discord",
-    "pkg_id": "github.com.srevinsaju.discord-AppImage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/discord/discord",
-    "app_id": "com.discordapp.Discord",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/appimage.srevinsaju.stable.yaml",
-    "category": [
-      "Chat",
-      "InstantMessaging"
-    ],
-    "description": "All-in-one cross-platform voice and text chat for gamers",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "discord"
-        ]
-      },
-      "homebrew": [
-        "discord"
-      ],
-      "nixpkgs": [
-        "discord"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/appimage.srevinsaju.stable.yaml",
-    "homepage": [
-      "https://discordapp.com",
-      "https://github.com/srevinsaju/discord-appimage"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
-    "license": [
-      "Unfree"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/discord-appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/discord/appimage/srevinsaju",
-    "provides": [
-      "discord"
-    ],
-    "repology": [
-      "discord"
-    ],
-    "src_url": [
-      "https://github.com/srevinsaju/discord-appimage"
-    ],
-    "tag": [
-      "chat",
-      "Communications",
-      "Networking/Chat"
-    ],
-    "version": "0.0.102"
+    "version": "HEAD-460b4f0-250716T065346"
   },
   {
     "_disabled": "false",
@@ -1051,64 +753,65 @@
   },
   {
     "_disabled": "false",
-    "pkg": "dvc",
-    "pkg_family": "dvc",
-    "pkg_id": "sharun.wrappe.source.dvc",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-dvc/dvc/dvc",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/dvc/archive.sharun.source.yaml",
+    "pkg": "discord-canary",
+    "pkg_family": "discord",
+    "pkg_id": "github.com.srevinsaju.discord-AppImage.canary",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-canary/discord/discord-canary",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/appimage.srevinsaju.canary.yaml",
     "category": [
-      "Utility"
+      "Chat",
+      "InstantMessaging"
     ],
-    "description": "A version control system and experiment tracker designed for machine learning projects",
+    "description": "All-in-one cross-platform voice and text chat for gamers (Canary)",
     "distro_pkg": {
       "archlinux": {
-        "aur": [
-          "dvc"
+        "extra": [
+          "discord"
         ]
       },
       "homebrew": [
-        "dvc"
+        "discord@canary"
       ],
       "nixpkgs": [
-        "dvc"
+        "discord-canary"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/dvc/archive.sharun.source.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/appimage.srevinsaju.canary.yaml",
     "homepage": [
-      "https://dvc.org/doc"
+      "https://discordapp.com",
+      "https://github.com/srevinsaju/discord-appimage"
     ],
     "host": [
-      "aarch64-linux",
       "x86_64-linux"
     ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
     "license": [
-      "Apache-2.0"
+      "Unfree"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/discord-appimage"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/dvc/archive/sharun",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/discord-canary/appimage/srevinsaju",
     "provides": [
-      "dvc"
+      "discord-canary"
     ],
     "repology": [
-      "dvc"
+      "discord"
     ],
     "src_url": [
-      "https://github.com/iterative/dvc"
+      "https://github.com/srevinsaju/discord-appimage"
     ],
     "tag": [
-      "Utility"
+      "chat",
+      "Communications",
+      "Networking/Chat"
     ],
-    "version": "HEAD-c2506ab-250715T170156"
+    "version": "0.0.718"
   },
   {
     "_disabled": "false",
@@ -1242,61 +945,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "escrcpy",
-    "pkg_family": "escrcpy",
-    "pkg_id": "github.com.viarotel-org.escrcpy",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/org-escrcpy/escrcpy/escrcpy",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/escrcpy/appimage.official.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Graphical Scrcpy to display and control Android, devices",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "escrcpy",
-          "escrcpy-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/escrcpy/appimage.official.stable.yaml",
-    "homepage": [
-      "https://github.com/viarotel-org/escrcpy"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/escrcpy/assets/default.png",
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/viarotel-org/escrcpy"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/escrcpy/appimage/official",
-    "provides": [
-      "escrcpy"
-    ],
-    "repology": [
-      "escrcpy"
-    ],
-    "src_url": [
-      "https://github.com/viarotel-org/escrcpy"
-    ],
-    "tag": [
-      "adb",
-      "gui-scrcpy",
-      "scrcpy"
-    ],
-    "version": "v1.30.2"
-  },
-  {
-    "_disabled": "false",
     "pkg": "fdm",
     "pkg_family": "fdm",
     "pkg_id": "runimage.debian.fdm",
@@ -1413,7 +1061,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "142.0.20250715090639"
+    "version": "142.0.20250715212043"
   },
   {
     "_disabled": "false",
@@ -1737,7 +1385,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250715T012851"
+    "version": "250716T005146"
   },
   {
     "_disabled": "false",
@@ -1799,7 +1447,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250715T012851"
+    "version": "250716T005146"
   },
   {
     "_disabled": "false",
@@ -2030,203 +1678,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "huggingface-cli",
-    "pkg_family": "huggingface-cli",
-    "pkg_id": "sharun.wrappe.source.huggingface-cli",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/huggingface-cli/huggingface-cli/huggingface-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/huggingface-cli/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "The official Python client for the Huggingface Hub",
-    "distro_pkg": {
-      "homebrew": [
-        "huggingface-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/huggingface-cli/archive.sharun.source.yaml",
-    "homepage": [
-      "https://huggingface.co/docs/huggingface_hub"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/huggingface-cli/archive/sharun",
-    "provides": [
-      "huggingface-cli"
-    ],
-    "repology": [
-      "huggingface-cli"
-    ],
-    "src_url": [
-      "https://github.com/huggingface/huggingface_hub"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-37d3278-250715T105838"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "inkscape",
-    "pkg_family": "inkscape",
-    "pkg_id": "gitlab.com.inkscape.inkscape",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/inkscape-inkscape/inkscape/inkscape",
-    "app_id": "org.inkscape.Inkscape",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/inkscape/appimage.official.stable.yaml",
-    "category": [
-      "Graphics",
-      "Office"
-    ],
-    "description": "FOSS Vector Graphics Editor",
-    "distro_pkg": {
-      "alpine": [
-        "inkscape"
-      ],
-      "archlinux": {
-        "aur": [
-          "inkscape-git"
-        ],
-        "extra": [
-          "inkscape"
-        ]
-      },
-      "debian": [
-        "inkscape"
-      ],
-      "gnuguix": [
-        "inkscape"
-      ],
-      "homebrew": [
-        "inkscape"
-      ],
-      "nixpkgs": [
-        "inkscape",
-        "inkscape-with-extensions"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/inkscape/appimage.official.stable.yaml",
-    "homepage": [
-      "https://inkscape.org"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/inkscape/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/inkscape/inkscape"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/inkscape/appimage/official",
-    "provides": [
-      "inkscape"
-    ],
-    "repology": [
-      "inkscape"
-    ],
-    "src_url": [
-      "https://inkscape.org/release"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "kdenlive",
-    "pkg_family": "kdenlive",
-    "pkg_id": "gitlab.com.kdenlive.kdenlive.nightly",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/kdenlive-nightly/kdenlive/kdenlive",
-    "app_id": "org.kde.kdenlive",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/appimage.official.nightly.yaml",
-    "category": [
-      "AudioVideoEditing"
-    ],
-    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks (Nightly)",
-    "distro_pkg": {
-      "alpine": [
-        "kdenlive"
-      ],
-      "archlinux": {
-        "aur": [
-          "kdenlive-appimage",
-          "kdenlive-git"
-        ],
-        "extra": [
-          "kdenlive"
-        ]
-      },
-      "debian": [
-        "kdenlive"
-      ],
-      "gnuguix": [
-        "kdenlive"
-      ],
-      "homebrew": [
-        "kdenlive"
-      ],
-      "nixpkgs": [
-        "kdePackages.kdenlive"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/appimage.official.nightly.yaml",
-    "homepage": [
-      "https://apps.kde.org/kdenlive",
-      "https://invent.kde.org/multimedia/kdenlive"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/multimedia/kdenlive"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/appimage/official",
-    "provides": [
-      "kdenlive"
-    ],
-    "repology": [
-      "kdenlive"
-    ],
-    "src_url": [
-      "https://kdenlive.org/en/download/"
-    ],
-    "tag": [
-      "editor"
-    ],
-    "version": "2025-07-15"
-  },
-  {
-    "_disabled": "false",
     "pkg": "kdenlive",
     "pkg_family": "kdenlive",
     "pkg_id": "gitlab.com.kdenlive.kdenlive.stable",
@@ -2295,54 +1746,6 @@
     "tag": [
       "editor"
     ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "knot",
-    "pkg_family": "android-knot",
-    "pkg_id": "github.com.ic005k.Knot",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ic005k-knot/android-knot/knot",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/android-knot/appimage.official.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Record everything in the simplest way possible",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "android-knot-bin"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/android-knot/appimage.official.stable.yaml",
-    "homepage": [
-      "https://github.com/ic005k/Knot"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/android-knot/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ic005k/Knot"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/knot/appimage/official",
-    "provides": [
-      "knot"
-    ],
-    "repology": [
-      "android-knot"
-    ],
-    "src_url": [
-      "https://github.com/ic005k/Knot"
-    ],
-    "version": "2.0.16"
   },
   {
     "_disabled": "false",
@@ -2415,7 +1818,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-07-14"
+    "version": "2025-07-15"
   },
   {
     "_disabled": "true",
@@ -2629,6 +2032,83 @@
   },
   {
     "_disabled": "false",
+    "pkg": "neovim",
+    "pkg_family": "neovim",
+    "pkg_id": "nixpkgs.neovim",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-neovim/neovim/neovim",
+    "app_id": "io.neovim.nvim",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/neovim/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "TextEditor"
+    ],
+    "description": "Vim text editor fork focused on extensibility and agility",
+    "distro_pkg": {
+      "alpine": [
+        "neovim"
+      ],
+      "archlinux": {
+        "aur": [
+          "neovim-git"
+        ],
+        "extra": [
+          "neovim"
+        ]
+      },
+      "debian": [
+        "neovim"
+      ],
+      "gnuguix": [
+        "neovim"
+      ],
+      "homebrew": [
+        "neovim"
+      ],
+      "nixpkgs": [
+        "neovim",
+        "neovim-unwrapped"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/neovim/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://neovim.io",
+      "https://neovim.org"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/neovim/nixappimage/nixpkgs",
+    "provides": [
+      "neovim=>nvim"
+    ],
+    "repology": [
+      "neovim"
+    ],
+    "src_url": [
+      "https://github.com/neovim/neovim"
+    ],
+    "tag": [
+      "code",
+      "editor"
+    ],
+    "version": "0.11.3"
+  },
+  {
+    "_disabled": "false",
     "pkg": "netexec",
     "pkg_family": "netexec",
     "pkg_id": "sharun.wrappe.source.netexec",
@@ -2685,150 +2165,6 @@
       "Utility"
     ],
     "version": "HEAD-11d484b-250715T120318"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "obs-studio",
-    "pkg_family": "obs-studio",
-    "pkg_id": "github.com.pkgforge-dev.OBS-Studio-AppImage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/obs-studio/obs-studio",
-    "app_id": "com.obsproject.Studio",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/obs-studio/appimage.pkgforge-dev.stable.yaml",
-    "category": [
-      "AudioVideoEditing",
-      "Recorder"
-    ],
-    "description": "FOSS cross-platform screencasting and streaming app",
-    "distro_pkg": {
-      "alpine": [
-        "obs-studio"
-      ],
-      "archlinux": {
-        "aur": [
-          "obs-studio-git"
-        ],
-        "extra": [
-          "obs-studio"
-        ]
-      },
-      "debian": [
-        "obs-studio"
-      ],
-      "gnuguix": [
-        "obs"
-      ],
-      "homebrew": [
-        "obs",
-        "obs@beta"
-      ],
-      "nixpkgs": [
-        "obs-studio"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/obs-studio/appimage.pkgforge-dev.stable.yaml",
-    "homepage": [
-      "https://obsproject.com",
-      "https://github.com/obsproject/obs-studio",
-      "https://github.com/pkgforge-dev/OBS-Studio-AppImage"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/obs-studio/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/OBS-Studio-AppImage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/obs-studio/appimage/pkgforge-dev",
-    "provides": [
-      "obs-studio"
-    ],
-    "repology": [
-      "obs-studio"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge-dev/OBS-Studio-AppImage"
-    ],
-    "tag": [
-      "Graphical",
-      "media-video",
-      "Productivity/Multimedia/Video/Editors",
-      "Video",
-      "Video/Utilities"
-    ],
-    "version": "31.0.4-1@2025-07-15_1752564743"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "oci-cli",
-    "pkg_family": "oci-cli",
-    "pkg_id": "sharun.wrappe.pypi.oci-cli",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oci-cli/oci-cli/oci-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oci-cli/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Command Line Interface for Oracle Cloud Infrastructure",
-    "distro_pkg": {
-      "alpine": [
-        "oci-cli"
-      ],
-      "archlinux": {
-        "aur": [
-          "oci-cli"
-        ]
-      },
-      "homebrew": [
-        "oci-cli"
-      ],
-      "nixpkgs": [
-        "oci-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/oci-cli/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://cloud.oracle.com/cloud-infrastructure",
-      "https://github.com/oracle/oci-cli"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "UPL-1.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
-    "provides": [
-      "oci==oci-cli"
-    ],
-    "repology": [
-      "oci-cli"
-    ],
-    "src_url": [
-      "https://pypi.org/project/oci-cli"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "3.62.2"
   },
   {
     "_disabled": "false",
@@ -3008,78 +2344,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "strawberry",
-    "pkg_family": "strawberry",
-    "pkg_id": "github.com.pkgforge-dev.strawberry-AppImage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/strawberry/strawberry",
-    "app_id": "org.strawberrymusicplayer.strawberry",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/strawberry/appimage.pkgforge-dev.stable.yaml",
-    "category": [
-      "Music",
-      "Player"
-    ],
-    "description": "A Audio Player and Music Collection Organizer",
-    "distro_pkg": {
-      "alpine": [
-        "strawberry"
-      ],
-      "archlinux": {
-        "aur": [
-          "strawberry-git"
-        ],
-        "extra": [
-          "strawberry"
-        ]
-      },
-      "debian": [
-        "strawberry"
-      ],
-      "gnuguix": [
-        "strawberry"
-      ],
-      "nixpkgs": [
-        "strawberry"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/strawberry/appimage.pkgforge-dev.stable.yaml",
-    "homepage": [
-      "https://strawberrymusicplayer.org",
-      "https://github.com/jonaski/strawberry",
-      "https://github.com/pkgforge-dev/strawberry-AppImage"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/strawberry/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/strawberry-AppImage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/strawberry/appimage/pkgforge-dev",
-    "provides": [
-      "strawberry"
-    ],
-    "repology": [
-      "strawberry"
-    ],
-    "src_url": [
-      "https://github.com/pkgforge-dev/strawberry-AppImage"
-    ],
-    "tag": [
-      "Music",
-      "Sound/Players"
-    ],
-    "version": "1.2.11-2.1@2025-07-13_1752420315"
-  },
-  {
-    "_disabled": "false",
     "pkg": "sudachi",
     "pkg_family": "sudachi",
     "pkg_id": "wrappe.sudachi",
@@ -3134,87 +2398,6 @@
       "game"
     ],
     "version": "v1.0.15"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "sudo-rs",
-    "pkg_family": "sudo-rs",
-    "pkg_id": "sharun.wrappe.sudo-rs.source",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-source/sudo-rs/sudo-rs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/sudo-rs/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": {
-      "_default": "Memory safe implementation of sudo and su",
-      "cvtsudoers": "Convert between sudoers file formats [sudo-rs]",
-      "sudo": "Execute a command as another user [sudo-rs]",
-      "sudo.conf": "Configuration for sudo front-end [sudo-rs]",
-      "sudo_logsrvd": "sudo event and I/O log server [sudo-rs]",
-      "sudo_logsrvd.conf": "Configuration for sudo_logsrvd [sudo-rs]",
-      "sudo_sendlog": "Send sudo I/O log to log server [sudo-rs]",
-      "sudoedit": "An extension of the sudo -e command to edit a file [sudo-rs]",
-      "sudoers": "Default sudo security policy plugin [sudo-rs]",
-      "sudoers.dist": "Default configuration file for sudoers [sudo-rs]",
-      "sudoreplay": "Replay sudo session logs [sudo-rs]",
-      "su": "Change user id or become root [sudo-rs]",
-      "visudo": "Edit the sudoers file [sudo-rs]"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "sudo-rs",
-          "sudo-rs-git"
-        ]
-      },
-      "nixpkgs": [
-        "sudo-rs"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/sudo-rs/archive.sharun.source.yaml",
-    "homepage": [
-      "https://github.com/trifectatechfoundation/sudo-rs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trifectatechfoundation/sudo-rs",
-      "Built Using Sharun. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "sudo must be owned by uid 0 and have the setuid bit set",
-      "chown -v 'root:root' sudo",
-      "chmod -v 'a=rx,u+ws' sudo",
-      "Requires '/etc/sudoers' file & '/etc/sudoers.d' dir",
-      "Also requires PAM to be setup: https://github.com/trifectatechfoundation/sudo-rs#differences-from-original-sudo"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/sudo-rs/archive/sharun",
-    "provides": [
-      "su",
-      "sudo",
-      "visudo"
-    ],
-    "repology": [
-      "sudo-rs"
-    ],
-    "src_url": [
-      "https://github.com/trifectatechfoundation/sudo-rs"
-    ],
-    "tag": [
-      "sudo"
-    ],
-    "version": "HEAD-52d093c-250714T182709"
   },
   {
     "_disabled": "false",
@@ -3280,6 +2463,121 @@
       "Remote"
     ],
     "version": "15.67.4"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "torzu",
+    "pkg_family": "torzu",
+    "pkg_id": "github.com.pkgforge-dev.Torzu-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/torzu/torzu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/torzu/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Fork of yuzu, an open-source Nintendo Switch emulator",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "torzu",
+          "torzu-git"
+        ]
+      },
+      "nixpkgs": [
+        "torzu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/torzu/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://notabug.org/litucks/torzu"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/torzu/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Torzu-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/torzu/appimage/pkgforge-dev",
+    "provides": [
+      "torzu"
+    ],
+    "repology": [
+      "torzu"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Torzu-AppImage"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "dee5dca@2025-07-15_1752598079"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "torzu",
+    "pkg_family": "torzu",
+    "pkg_id": "github.com.pkgforge-dev.Torzu-AppImage.v3",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-v3/torzu/torzu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/torzu/appimage.pkgforge-dev.v3.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Fork of yuzu, an open-source Nintendo Switch emulator (x86-64-v3)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "torzu",
+          "torzu-git"
+        ]
+      },
+      "nixpkgs": [
+        "torzu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/torzu/appimage.pkgforge-dev.v3.yaml",
+    "homepage": [
+      "https://notabug.org/litucks/torzu"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/torzu/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/Torzu-AppImage",
+      "Optimized for x86-64-v3",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/torzu/appimage/pkgforge-dev",
+    "provides": [
+      "torzu"
+    ],
+    "repology": [
+      "torzu"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/Torzu-AppImage"
+    ],
+    "tag": [
+      "emulator",
+      "game"
+    ],
+    "version": "dee5dca@2025-07-15_1752598079"
   },
   {
     "_disabled": "true",
@@ -3393,75 +2691,6 @@
       "Utility"
     ],
     "version": "1.77.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "twingate",
-    "pkg_family": "twingate",
-    "pkg_id": "sharun.wrappe.twingate.stable",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/twingate-stable/twingate/twingate",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate/archive.sharun.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": {
-      "_default": "Zero trust remote access client for resource and networks",
-      "twingate": "Zero trust remote access client for resource and networks [twingate]",
-      "twingated": "Daemon for Twingate [twingate]",
-      "twingate-notifier": "Monitor & Notify for Twingate Client [twingate]"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "twingate",
-          "twingate-bin"
-        ]
-      },
-      "homebrew": [
-        "twingate"
-      ],
-      "nixpkgs": [
-        "twingate"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/twingate/archive.sharun.stable.yaml",
-    "homepage": [
-      "https://www.twingate.com/docs",
-      "https://www.twingate.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Unfree"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/twingate/archive/sharun",
-    "provides": [
-      "twingate",
-      "twingated",
-      "twingate-notifier"
-    ],
-    "repology": [
-      "twingate"
-    ],
-    "src_url": [
-      "https://packages.twingate.com/deb:twingate"
-    ],
-    "tag": [
-      "Utility"
-    ]
   },
   {
     "_disabled": "false",
@@ -3698,195 +2927,101 @@
   },
   {
     "_disabled": "false",
-    "pkg": "yt-dlp",
-    "pkg_family": "yt-dlp",
-    "pkg_id": "sharun.wrappe.source.yt-dlp",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.source.yaml",
+    "pkg": "xash3d-fwgs",
+    "pkg_family": "xash3d-fwgs",
+    "pkg_id": "github.com.FWGS.xash3d-fwgs",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xash3d-fwgs/xash3d-fwgs/xash3d-fwgs",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xash3d-fwgs/appimage.official.stable.yaml",
     "category": [
       "Utility"
     ],
-    "description": "CLI program to download videos from YouTube and other sites",
+    "description": "Heavily modified fork of an original Xash3D Engine for Half Life",
     "distro_pkg": {
-      "alpine": [
-        "yt-dlp"
-      ],
       "archlinux": {
         "aur": [
-          "yt-dlp-git"
-        ],
-        "extra": [
-          "yt-dlp"
+          "xash3d-fwgs-bin",
+          "xash3d-fwgs-git"
         ]
-      },
-      "debian": [
-        "yt-dlp"
-      ],
-      "gnuguix": [
-        "yt-dlp"
-      ],
-      "homebrew": [
-        "yt-dlp"
-      ],
-      "nixpkgs": [
-        "yt-dlp"
-      ]
+      }
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.source.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xash3d-fwgs/appimage.official.stable.yaml",
     "homepage": [
-      "https://github.com/yt-dlp/yt-dlp"
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xash3d-fwgs/appimage/official",
+    "provides": [
+      "xash3d-fwgs"
+    ],
+    "repology": [
+      "xash3d-fwgs"
+    ],
+    "src_url": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "tag": [
+      "utility"
+    ],
+    "version": "250715T140858"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xashds",
+    "pkg_family": "xashds",
+    "pkg_id": "wrappe.xashds",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Xash3D FWGS Dedicated Server",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://github.com/FWGS/xash3d-fwgs"
     ],
     "host": [
       "aarch64-linux",
       "x86_64-linux"
     ],
     "license": [
-      "Unlicense"
+      "GPL"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
       "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
     "provides": [
-      "yt-dlp"
+      "xashds==xash"
     ],
     "repology": [
-      "yt-dlp"
+      "xash3d-fwgs"
     ],
     "src_url": [
-      "https://github.com/yt-dlp/yt-dlp"
+      "https://github.com/FWGS/xash3d-fwgs"
     ],
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3a84be9-250714T190153"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zen-browser",
-    "pkg_family": "zen-browser",
-    "pkg_id": "github.com.zen-browser.desktop.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desktop-stable/zen-browser/zen-browser",
-    "app_id": "app.zen_browser.zen",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zen-browser/appimage.official.stable.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "Performance oriented Firefox-based web browser",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "zen-browser",
-          "zen-browser-bin"
-        ]
-      },
-      "homebrew": [
-        "zen-browser"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/zen-browser/appimage.official.stable.yaml",
-    "homepage": [
-      "https://zen-browser.app",
-      "https://github.com/zen-browser/desktop"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/zen-browser/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
-    "provides": [
-      "zen-browser==zen"
-    ],
-    "repology": [
-      "zen-browser"
-    ],
-    "src_url": [
-      "https://github.com/zen-browser/desktop"
-    ],
-    "tag": [
-      "arc",
-      "firefox",
-      "www-client"
-    ],
-    "version": "1.14.5b"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zen-browser",
-    "pkg_family": "zen-browser",
-    "pkg_id": "github.com.zen-browser.desktop.twilight",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desktop-twilight/zen-browser/zen-browser",
-    "app_id": "app.zen_browser.zen",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zen-browser/appimage.official.twilight.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "Performance oriented Firefox-based web browser (Twilight)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "zen-browser",
-          "zen-browser-bin"
-        ]
-      },
-      "homebrew": [
-        "zen-browser"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/zen-browser/appimage.official.twilight.yaml",
-    "homepage": [
-      "https://zen-browser.app",
-      "https://github.com/zen-browser/desktop"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/zen-browser/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
-    "provides": [
-      "zen-browser==zen"
-    ],
-    "repology": [
-      "zen-browser"
-    ],
-    "src_url": [
-      "https://github.com/zen-browser/desktop"
-    ],
-    "tag": [
-      "arc",
-      "firefox",
-      "www-client"
-    ],
-    "version": "1.15t_2025-07-14"
+    "version": "250715T140858"
   }
 ]

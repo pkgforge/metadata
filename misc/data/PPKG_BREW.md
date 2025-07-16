@@ -136,7 +136,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.289** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.290** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -291,7 +291,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 18.1.0 ⚠️ | https://github.com/ellie/atuin/archive/refs/tags/v18.1.0.tar.gz |
-| BREW   | **18.6.1** | https://atuin.sh/ |
+| BREW   | **18.7.0** | https://atuin.sh/ |
 
 *Outdated*
 
@@ -531,7 +531,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.18.25 ⚠️ | https://downloads.isc.org/isc/bind9/9.18.25/bind-9.18.25.tar.xz |
-| BREW   | **9.20.10** | https://www.isc.org/bind/ |
+| BREW   | **9.20.11** | https://www.isc.org/bind/ |
 
 *Outdated*
 
@@ -1923,7 +1923,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.46.0 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.46.0.tar.gz |
-| BREW   | **2.47.0** | https://github.com/fastfetch-cli/fastfetch |
+| BREW   | **2.48.0** | https://github.com/fastfetch-cli/fastfetch |
 
 *Outdated*
 
@@ -2183,7 +2183,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.8.5 ⚠️ | https://github.com/jhspetersson/fselect/archive/refs/tags/0.8.5.tar.gz |
-| BREW   | **0.8.12** | https://github.com/jhspetersson/fselect |
+| BREW   | **0.9.0** | https://github.com/jhspetersson/fselect |
 
 *Outdated*
 
@@ -3173,7 +3173,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.6.3 ⚠️ | https://github.com/projectdiscovery/httpx/archive/refs/tags/v1.6.3.tar.gz |
-| BREW   | **1.7.0** | https://github.com/projectdiscovery/httpx |
+| BREW   | **1.7.1** | https://github.com/projectdiscovery/httpx |
 
 *Outdated*
 
@@ -3502,7 +3502,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.32.5 ⚠️ | https://github.com/derailed/k9s/archive/refs/tags/v0.32.5.tar.gz |
-| BREW   | **0.50.8** | https://k9scli.io/ |
+| BREW   | **0.50.9** | https://k9scli.io/ |
 
 *Outdated*
 

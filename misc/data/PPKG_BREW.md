@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.15 ⚠️ | null |
+| PPKG   | 2025.07.16 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -485,6 +485,15 @@
 |--------|---------|-------------|
 | PPKG   | 3.1.6 ✅ | https://github.com/rizsotto/Bear/archive/refs/tags/3.1.6.tar.gz |
 | BREW   | 3.1.6 | https://github.com/rizsotto/Bear |
+
+## bed
+
+**Description:** Binary editor written in Go
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.2.8 ✅ | https://github.com/itchyny/bed/archive/refs/tags/v0.2.8.tar.gz |
+| BREW   | 0.2.8 | https://github.com/itchyny/bed |
 
 ## berkeley-db
 
@@ -3036,8 +3045,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 25.01.1 ✅ | https://github.com/helix-editor/helix/releases/download/25.01.1/helix-25.01.1-source.tar.xz |
-| BREW   | 25.01.1 | https://helix-editor.com |
+| PPKG   | 25.01.1 ⚠️ | https://github.com/helix-editor/helix/releases/download/25.01.1/helix-25.01.1-source.tar.xz |
+| BREW   | **25.07** | https://helix-editor.com |
+
+*Outdated*
 
 ## helm
 
@@ -3491,7 +3502,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.32.5 ⚠️ | https://github.com/derailed/k9s/archive/refs/tags/v0.32.5.tar.gz |
-| BREW   | **0.50.7** | https://k9scli.io/ |
+| BREW   | **0.50.8** | https://k9scli.io/ |
 
 *Outdated*
 
@@ -4585,7 +4596,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.15 ⚠️ | null |
+| PPKG   | 2025.07.16 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -6630,7 +6641,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.15 ⚠️ | null |
+| PPKG   | 2025.07.16 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6797,7 +6808,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.15 ⚠️ | null |
+| PPKG   | 2025.07.16 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6959,7 +6970,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.15 ⚠️ | null |
+| PPKG   | 2025.07.16 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7390,8 +7401,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.4.4 ✅ | https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.4.tar.gz |
-| BREW   | 3.4.4 | https://www.ruby-lang.org/ |
+| PPKG   | 3.4.4 ⚠️ | https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.4.tar.gz |
+| BREW   | **3.4.5** | https://www.ruby-lang.org/ |
+
+*Outdated*
 
 ## ruff
 
@@ -7441,10 +7454,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.21.2 ⚠️ | https://download.samba.org/pub/samba/stable/samba-4.21.2.tar.gz |
-| BREW   | **4.22.3** | https://www.samba.org/ |
-
-*Outdated*
+| PPKG   | 4.22.3 ✅ | https://download.samba.org/pub/samba/stable/samba-4.22.3.tar.gz |
+| BREW   | 4.22.3 | https://www.samba.org/ |
 
 ## samurai
 
@@ -8457,7 +8468,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.1.0450 ⚠️ | https://github.com/vim/vim/archive/refs/tags/v9.1.0450.tar.gz |
-| BREW   | **9.1.1500** | https://www.vim.org/ |
+| BREW   | **9.1.1550** | https://www.vim.org/ |
 
 *Outdated*
 

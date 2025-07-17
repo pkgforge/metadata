@@ -291,7 +291,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 18.1.0 ⚠️ | https://github.com/ellie/atuin/archive/refs/tags/v18.1.0.tar.gz |
-| BREW   | **18.7.0** | https://atuin.sh/ |
+| BREW   | **18.7.1** | https://atuin.sh/ |
 
 *Outdated*
 
@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.16 ⚠️ | null |
+| PPKG   | 2025.07.17 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1170,7 +1170,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.102.0** | https://github.com/microsoft/vscode |
+| BREW   | **1.102.1** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -1223,7 +1223,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.18.3 ⚠️ | https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.18.3.tar.gz |
-| BREW   | **0.23.0** | https://github.com/yhirose/cpp-httplib |
+| BREW   | **0.23.1** | https://github.com/yhirose/cpp-httplib |
 
 *Outdated*
 
@@ -1320,8 +1320,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.16.3 ✅ | https://github.com/crystal-lang/crystal/archive/refs/tags/1.16.3.tar.gz |
-| BREW   | 1.16.3 | https://crystal-lang.org/ |
+| PPKG   | 1.16.3 ⚠️ | https://github.com/crystal-lang/crystal/archive/refs/tags/1.16.3.tar.gz |
+| BREW   | **1.17.0** | https://crystal-lang.org/ |
+
+*Outdated*
 
 ## crystal-icr
 
@@ -1380,8 +1382,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 8.14.1 ✅ | https://curl.haxx.se/download/curl-8.14.1.tar.bz2 |
-| BREW   | 8.14.1 | https://curl.se |
+| PPKG   | 8.14.1 ⚠️ | https://curl.haxx.se/download/curl-8.14.1.tar.bz2 |
+| BREW   | **8.15.0** | https://curl.se |
+
+*Outdated*
 
 ## curlie
 
@@ -1597,7 +1601,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.55.6** | https://github.com/dolthub/dolt |
+| BREW   | **1.57.0** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2957,7 +2961,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.26.2 ⚠️ | https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.26.2/gstreamer-1.26.2.tar.bz2 |
-| BREW   | **1.26.3** | https://gstreamer.freedesktop.org/ |
+| BREW   | **1.26.4** | https://gstreamer.freedesktop.org/ |
 
 *Outdated*
 
@@ -3570,7 +3574,7 @@
 
 ## ladspa-sdk
 
-**Description:** Linux Audio Developer Simple Plugin
+**Description:** Linux Audio Developer Simple Plugin API
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
@@ -3840,7 +3844,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.5 ⚠️ | https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.5.tar.gz |
-| BREW   | **1.5.1** | https://github.com/libbpf/libbpf |
+| BREW   | **1.6.0** | https://github.com/libbpf/libbpf |
 
 *Outdated*
 
@@ -4596,7 +4600,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.16 ⚠️ | null |
+| PPKG   | 2025.07.17 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5941,7 +5945,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 25.1.4 ⚠️ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
-| BREW   | **25.1.5** | https://www.mesa3d.org/ |
+| BREW   | **25.1.6** | https://www.mesa3d.org/ |
 
 *Outdated*
 
@@ -6063,10 +6067,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.32.5 ⚠️ | https://www.mpg123.de/download/mpg123-1.32.5.tar.bz2 |
-| BREW   | **1.33.0** | https://www.mpg123.de/ |
-
-*Outdated*
+| PPKG   | 1.33.0 ✅ | https://www.mpg123.de/download/mpg123-1.33.0.tar.bz2 |
+| BREW   | 1.33.0 | https://www.mpg123.de/ |
 
 ## mprocs
 
@@ -6115,7 +6117,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/mvfst/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.30.00** | https://github.com/facebook/mvfst |
+| BREW   | **2025.07.14.00** | https://github.com/facebook/mvfst |
 
 *Outdated*
 
@@ -6641,7 +6643,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.16 ⚠️ | null |
+| PPKG   | 2025.07.17 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6808,7 +6810,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.16 ⚠️ | null |
+| PPKG   | 2025.07.17 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6970,7 +6972,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.16 ⚠️ | null |
+| PPKG   | 2025.07.17 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7384,17 +7386,6 @@
 
 *Outdated*
 
-## rubberband
-
-**Description:** Audio time stretcher tool and library
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 3.3.0 ⚠️ | https://breakfastquay.com/files/releases/rubberband-3.3.0.tar.bz2 |
-| BREW   | **4.0.0** | https://breakfastquay.com/rubberband/ |
-
-*Outdated*
-
 ## ruby
 
 **Description:** Powerful, clean, object-oriented scripting language
@@ -7691,7 +7682,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5e3ad389ee56fca27c9705d093ae5387ce404df4 ⚠️ | https://github.com/KhronosGroup/SPIRV-Headers/archive/5e3ad389ee56fca27c9705d093ae5387ce404df4.tar.gz |
-| BREW   | **1.4.313.0** | https://github.com/KhronosGroup/SPIRV-Headers |
+| BREW   | **1.4.321.0** | https://github.com/KhronosGroup/SPIRV-Headers |
 
 *Outdated*
 
@@ -7835,7 +7826,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.1.5 ⚠️ | https://github.com/yorukot/superfile/archive/refs/tags/v1.1.5.tar.gz |
-| BREW   | **1.3.1** | https://superfile.netlify.app/ |
+| BREW   | **1.3.2** | https://superfile.netlify.app/ |
 
 *Outdated*
 
@@ -8244,7 +8235,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.22.0 ⚠️ | https://nlnetlabs.nl/downloads/unbound/unbound-1.22.0.tar.gz |
-| BREW   | **1.23.0** | https://www.unbound.net |
+| BREW   | **1.23.1** | https://www.unbound.net |
 
 *Outdated*
 

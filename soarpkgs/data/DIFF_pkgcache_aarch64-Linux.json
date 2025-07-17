@@ -153,7 +153,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8b2d2fc-250715T083219"
+    "version": "HEAD-b7045fb-250716T165643"
   },
   {
     "_disabled": "false",
@@ -204,7 +204,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8b2d2fc-250715T083219"
+    "version": "HEAD-b7045fb-250716T165643"
   },
   {
     "_disabled": "false",
@@ -356,6 +356,77 @@
   },
   {
     "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
+    "app_id": "org.chromium.Chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google (Stable)",
+    "distro_pkg": {
+      "alpine": [
+        "chromium"
+      ],
+      "archlinux": {
+        "extra": [
+          "chromium"
+        ]
+      },
+      "debian": [
+        "chromium"
+      ],
+      "homebrew": [
+        "chromium"
+      ],
+      "nixpkgs": [
+        "chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.chromium.org",
+      "https://chromium.googlesource.com/chromium/src",
+      "https://github.com/chromium/chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "chromium"
+    ],
+    "src_url": [
+      "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "138.0.7204.157"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ciphey",
     "pkg_family": "ciphey",
     "pkg_id": "sharun.wrappe.source.ciphey",
@@ -408,6 +479,70 @@
       "Utility"
     ],
     "version": "HEAD-5dfbe93-231012T002040"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "code-server",
+    "pkg_family": "code-server",
+    "pkg_id": "wrappe.code-server.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/code-server/code-server",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/code-server/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Run VS Code on any machine anywhere and access it in the browser",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "code-server"
+        ]
+      },
+      "homebrew": [
+        "code-server"
+      ],
+      "nixpkgs": [
+        "code-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/code-server/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://coder.com/",
+      "https://github.com/coder/code-server"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/code-server/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/coder/code-server",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/code-server/archive/wrappe",
+    "provides": [
+      "code-server==vs-code-server"
+    ],
+    "repology": [
+      "code-server"
+    ],
+    "src_url": [
+      "https://github.com/coder/code-server"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v4.102.0"
   },
   {
     "_disabled": "false",
@@ -466,7 +601,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-460b4f0-250716T065346"
+    "version": "HEAD-6c9c6cc-250717T080511"
   },
   {
     "_disabled": "false",
@@ -1265,7 +1400,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250716T005146"
+    "version": "250717T005216"
   },
   {
     "_disabled": "false",
@@ -1327,7 +1462,81 @@
     "tag": [
       "terminal"
     ],
-    "version": "250716T005146"
+    "version": "250717T005216"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "helix",
+    "pkg_family": "helix",
+    "pkg_id": "nixpkgs.helix",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-helix/helix/helix",
+    "app_id": "com.helix_editor.Helix",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/helix/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "TextEditor"
+    ],
+    "description": "Fast modal terminal-based text editor",
+    "distro_pkg": {
+      "alpine": [
+        "helix"
+      ],
+      "archlinux": {
+        "aur": [
+          "helix-git"
+        ],
+        "extra": [
+          "helix"
+        ]
+      },
+      "gnuguix": [
+        "helix"
+      ],
+      "homebrew": [
+        "helix"
+      ],
+      "nixpkgs": [
+        "helix"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/helix/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://helix-editor.com",
+      "https://github.com/helix-editor/helix"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/helix/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/helix/nixappimage/nixpkgs",
+    "provides": [
+      "helix==hx"
+    ],
+    "repology": [
+      "helix-editor"
+    ],
+    "src_url": [
+      "https://github.com/helix-editor/helix"
+    ],
+    "tag": [
+      "code",
+      "editor"
+    ],
+    "version": "25.07"
   },
   {
     "_disabled": "false",
@@ -1795,7 +2004,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8d53bb5-250716T172952"
+    "version": "HEAD-da949f1-250717T001558"
   },
   {
     "_disabled": "false",
@@ -2464,6 +2673,139 @@
     "tag": [
       "Utility"
     ],
-    "version": "250715T140858"
+    "version": "250716T213340"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.source.yt-dlp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
+    "provides": [
+      "yt-dlp"
+    ],
+    "repology": [
+      "yt-dlp"
+    ],
+    "src_url": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-c1ac543-250716T231958"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zen-browser",
+    "pkg_family": "zen-browser",
+    "pkg_id": "github.com.zen-browser.desktop.twilight",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desktop-twilight/zen-browser/zen-browser",
+    "app_id": "app.zen_browser.zen",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zen-browser/appimage.official.twilight.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Performance oriented Firefox-based web browser (Twilight)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "zen-browser",
+          "zen-browser-bin"
+        ]
+      },
+      "homebrew": [
+        "zen-browser"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zen-browser/appimage.official.twilight.yaml",
+    "homepage": [
+      "https://zen-browser.app",
+      "https://github.com/zen-browser/desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/zen-browser/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
+    "provides": [
+      "zen-browser==zen"
+    ],
+    "repology": [
+      "zen-browser"
+    ],
+    "src_url": [
+      "https://github.com/zen-browser/desktop"
+    ],
+    "tag": [
+      "arc",
+      "firefox",
+      "www-client"
+    ],
+    "version": "1.15t_2025-07-16"
   }
 ]

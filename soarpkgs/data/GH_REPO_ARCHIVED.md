@@ -8,5 +8,5 @@
 | [lc](https://github.com/lc) | [subjs](https://github.com/lc/subjs) | 779 | Fetches javascript file from a list of URLS or subdomains. | 2025-07-06T12:09:05Z |
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [PPSSPP-AppImage](https://github.com/pkgforge-dev/PPSSPP-AppImage) | 16 | Unofficial AppImage of the PPSSPP emulator [Maintainer=@Samueru-sama] | 2025-07-01T16:11:19Z |
 | [svenstaro](https://github.com/svenstaro) | [vmexec](https://github.com/svenstaro/vmexec) | 25 | 🔧 Run a single command in a speedy virtual machine with zero-setup THE PROJECT MOVED TO https://gitlab.archlinux.org/archlinux/vmexec | 2025-06-04T21:30:44Z |
-| [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1977 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-07-12T20:42:37Z |
+| [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1975 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-07-17T16:30:19Z |
 | [xplshn](https://github.com/xplshn) | [a-utils](https://github.com/xplshn/a-utils) | 8 | Andes-utilities | 2025-06-30T01:30:28Z |

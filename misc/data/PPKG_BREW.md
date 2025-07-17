@@ -1754,7 +1754,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookexperimental/edencommon/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.30.00** | https://github.com/facebookexperimental/edencommon |
+| BREW   | **2025.07.14.00** | https://github.com/facebookexperimental/edencommon |
 
 *Outdated*
 
@@ -1938,7 +1938,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fb303/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.30.00** | https://github.com/facebook/fb303 |
+| BREW   | **2025.07.14.00** | https://github.com/facebook/fb303 |
 
 *Outdated*
 
@@ -1949,7 +1949,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fbthrift/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.30.00** | https://github.com/facebook/fbthrift |
+| BREW   | **2025.07.14.00** | https://github.com/facebook/fbthrift |
 
 *Outdated*
 
@@ -2058,7 +2058,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/fizz/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.30.00** | https://github.com/facebookincubator/fizz |
+| BREW   | **2025.07.14.00** | https://github.com/facebookincubator/fizz |
 
 *Outdated*
 
@@ -7201,7 +7201,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/rbspy/rbspy/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.34.1** | https://rbspy.github.io/ |
+| BREW   | **0.35.0** | https://rbspy.github.io/ |
 
 *Outdated*
 
@@ -8570,7 +8570,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/wangle/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.30.00** | https://github.com/facebook/wangle |
+| BREW   | **2025.07.14.00** | https://github.com/facebook/wangle |
 
 *Outdated*
 
@@ -8632,7 +8632,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/watchman/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.06.30.00** | https://github.com/facebook/watchman |
+| BREW   | **2025.07.14.00** | https://github.com/facebook/watchman |
 
 *Outdated*
 
@@ -8740,8 +8740,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 5.6.2 ✅ | https://github.com/rfc1036/whois/archive/refs/tags/v5.6.2.tar.gz |
-| BREW   | 5.6.2 | https://github.com/rfc1036/whois |
+| PPKG   | 5.6.2 ⚠️ | https://github.com/rfc1036/whois/archive/refs/tags/v5.6.2.tar.gz |
+| BREW   | **5.6.3** | https://github.com/rfc1036/whois |
+
+*Outdated*
 
 ## woff2
 

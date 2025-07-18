@@ -1929,7 +1929,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.46.0 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.46.0.tar.gz |
-| BREW   | **2.48.0** | https://github.com/fastfetch-cli/fastfetch |
+| BREW   | **2.48.1** | https://github.com/fastfetch-cli/fastfetch |
 
 *Outdated*
 
@@ -3701,7 +3701,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | r26 ⚠️ | https://github.com/gokcehan/lf/archive/r26.tar.gz |
-| BREW   | **35** | https://godoc.org/github.com/gokcehan/lf |
+| BREW   | **36** | https://godoc.org/github.com/gokcehan/lf |
 
 *Outdated*
 
@@ -4721,7 +4721,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.13.37 ⚠️ | https://github.com/google/libphonenumber/archive/refs/tags/v8.13.37.tar.gz |
-| BREW   | **9.0.9** | https://github.com/google/libphonenumber |
+| BREW   | **9.0.10** | https://github.com/google/libphonenumber |
 
 *Outdated*
 
@@ -8859,7 +8859,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.9.9 ⚠️ | https://github.com/xmake-io/xmake/releases/download/v2.9.9/xmake-v2.9.9.tar.gz |
-| BREW   | **3.0.0** | https://xmake.io/ |
+| BREW   | **3.0.1** | https://xmake.io/ |
 
 *Outdated*
 

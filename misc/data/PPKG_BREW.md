@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.17 ⚠️ | null |
+| PPKG   | 2025.07.18 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1149,8 +1149,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.1.7 ✅ | https://gitlab.com/cmocka/cmocka/-/archive/cmocka-1.1.7/cmocka-cmocka-1.1.7.tar.gz |
-| BREW   | 1.1.7 | https://cmocka.org/ |
+| PPKG   | 1.1.7 ⚠️ | https://gitlab.com/cmocka/cmocka/-/archive/cmocka-1.1.7/cmocka-cmocka-1.1.7.tar.gz |
+| BREW   | **1.1.8** | https://cmocka.org/ |
+
+*Outdated*
 
 ## cobalt
 
@@ -2415,7 +2417,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.74.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.74.0.tar.gz |
-| BREW   | **2.75.1** | https://cli.github.com/ |
+| BREW   | **2.76.0** | https://cli.github.com/ |
 
 *Outdated*
 
@@ -3550,7 +3552,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.1.2 ⚠️ | null |
-| BREW   | **3.1.3** | http://koka-lang.org |
+| BREW   | **3.2.0** | http://koka-lang.org |
 
 *Outdated*
 
@@ -4600,7 +4602,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.17 ⚠️ | null |
+| PPKG   | 2025.07.18 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5439,7 +5441,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.3.3 ⚠️ | https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.3.tar.gz |
-| BREW   | **4.3.5** | https://github.com/warmcat/libwebsockets |
+| BREW   | **4.4.1** | https://github.com/warmcat/libwebsockets |
 
 *Outdated*
 
@@ -6349,8 +6351,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.36 ✅ | https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz |
-| BREW   | 4.36 | https://hg.mozilla.org/projects/nspr |
+| PPKG   | 4.36 ⚠️ | https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz |
+| BREW   | **4.37** | https://hg.mozilla.org/projects/nspr |
+
+*Outdated*
 
 ## nss
 
@@ -6643,7 +6647,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.17 ⚠️ | null |
+| PPKG   | 2025.07.18 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6810,7 +6814,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.17 ⚠️ | null |
+| PPKG   | 2025.07.18 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6972,7 +6976,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.17 ⚠️ | null |
+| PPKG   | 2025.07.18 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7404,7 +7408,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.3** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.4** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -7702,7 +7706,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.309.0 ⚠️ | https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.4.309.0.tar.gz |
-| BREW   | **1.4.313.0** | https://github.com/KhronosGroup/SPIRV-Tools |
+| BREW   | **1.4.321.0** | https://github.com/KhronosGroup/SPIRV-Tools |
 
 *Outdated*
 
@@ -8324,7 +8328,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.7.21** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.0** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

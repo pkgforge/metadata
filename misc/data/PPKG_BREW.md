@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.18 ⚠️ | null |
+| PPKG   | 2025.07.19 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1823,7 +1823,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.20.2 ⚠️ | https://github.com/evanw/esbuild/archive/refs/tags/v0.20.2.tar.gz |
-| BREW   | **0.25.6** | https://esbuild.github.io/ |
+| BREW   | **0.25.7** | https://esbuild.github.io/ |
 
 *Outdated*
 
@@ -3052,7 +3052,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 25.01.1 ⚠️ | https://github.com/helix-editor/helix/releases/download/25.01.1/helix-25.01.1-source.tar.xz |
-| BREW   | **25.07** | https://helix-editor.com |
+| BREW   | **25.07.1** | https://helix-editor.com |
 
 *Outdated*
 
@@ -4602,7 +4602,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.18 ⚠️ | null |
+| PPKG   | 2025.07.19 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -5761,7 +5761,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.682** | https://luau.org |
+| BREW   | **0.683** | https://luau.org |
 
 *Outdated*
 
@@ -6363,7 +6363,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.107 ⚠️ | https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz |
-| BREW   | **3.113.1** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
+| BREW   | **3.114** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
 
 *Outdated*
 
@@ -6647,7 +6647,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.18 ⚠️ | null |
+| PPKG   | 2025.07.19 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6814,7 +6814,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.18 ⚠️ | null |
+| PPKG   | 2025.07.19 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6976,7 +6976,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.18 ⚠️ | null |
+| PPKG   | 2025.07.19 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8614,7 +8614,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 19.0.0 ⚠️ | null |
-| BREW   | **34.0.1** | https://wasmtime.dev/ |
+| BREW   | **34.0.2** | https://wasmtime.dev/ |
 
 *Outdated*
 
@@ -8764,8 +8764,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 5.8.0 ✅ | https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.8.0-stable.tar.gz |
-| BREW   | 5.8.0 | https://www.wolfssl.com |
+| PPKG   | 5.8.0 ⚠️ | https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.8.0-stable.tar.gz |
+| BREW   | **5.8.2** | https://www.wolfssl.com |
+
+*Outdated*
 
 ## wrk
 

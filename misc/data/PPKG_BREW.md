@@ -857,7 +857,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.6.14.crate ⚠️ | https://static.crates.io/crates/cargo-llvm-cov/cargo-llvm-cov-0.6.14.crate |
-| BREW   | **0.6.17** | https://github.com/taiki-e/cargo-llvm-cov |
+| BREW   | **0.6.18** | https://github.com/taiki-e/cargo-llvm-cov |
 
 *Outdated*
 
@@ -3846,7 +3846,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.5 ⚠️ | https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.5.tar.gz |
-| BREW   | **1.6.0** | https://github.com/libbpf/libbpf |
+| BREW   | **1.6.1** | https://github.com/libbpf/libbpf |
 
 *Outdated*
 
@@ -4615,6 +4615,17 @@
 |--------|---------|-------------|
 | PPKG   | 44.2 ✅ | https://downloads.sourceforge.net/project/ngspice/ng-spice-rework/44.2/ngspice-44.2.tar.gz |
 | BREW   | 44.2 | https://ngspice.sourceforge.io/ |
+
+## libngtcp2
+
+**Description:** QUIC library written in C
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 2025.07.19 ⚠️ | null |
+| BREW   | **1.13.0** | https://nghttp2.org/ngtcp2/ |
+
+*Outdated*
 
 ## libnice
 
@@ -8228,7 +8239,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.13.11 ⚠️ | https://github.com/Enter-tainer/typstyle/archive/refs/tags/v0.13.11.tar.gz |
-| BREW   | **0.13.14** | https://typstyle-rs.github.io/typstyle/ |
+| BREW   | **0.13.16** | https://typstyle-rs.github.io/typstyle/ |
 
 *Outdated*
 

@@ -495,7 +495,79 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-5a4a09c-250715T044903"
+    "version": "HEAD-5821f02-250718T234310"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "aria2",
+    "pkg_family": "aria2",
+    "pkg_id": "github.com.aria2.aria2.continuous",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/aria2-continuous/aria2/aria2",
+    "bincache": "ghcr.io/pkgforge/bincache/aria2/abcfy2/continuous",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/aria2/static.abcfy2.continuous.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A multi-protocol (HTTP/HTTPS, FTP, SFTP, BitTorrent & Metalink) & multi-source command-line download utility",
+    "distro_pkg": {
+      "alpine": [
+        "aria2"
+      ],
+      "archlinux": {
+        "aur": [
+          "aria2-fast",
+          "aria2-git"
+        ],
+        "extra": [
+          "aria2"
+        ]
+      },
+      "debian": [
+        "aria2"
+      ],
+      "nixpkgs": [
+        "aria",
+        "aria2"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/aria2/static.abcfy2.continuous.yaml",
+    "homepage": [
+      "https://aria2.github.io",
+      "https://github.com/aria2/aria2",
+      "https://aria2.sourceforge.net",
+      "https://sourceforge.net/projects/aria2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "This is a continuous build",
+      "Community Created Binary. Check/Report @ https://github.com/abcfy2/aria2-static-build"
+    ],
+    "provides": [
+      "aria2:aria2c"
+    ],
+    "repology": [
+      "aria2"
+    ],
+    "src_url": [
+      "https://github.com/abcfy2/aria2-static-build"
+    ],
+    "tag": [
+      "bittorrent",
+      "downloader"
+    ],
+    "version": "250719T020144"
   },
   {
     "_disabled": "false",
@@ -880,7 +952,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.18"
+    "version": "2025.07.19"
   },
   {
     "_disabled": "false",
@@ -2056,7 +2128,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-504f444-250718T072924"
+    "version": "HEAD-94591a1-250719T022620"
   },
   {
     "_disabled": "false",
@@ -2976,7 +3048,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-504f444-250718T072924"
+    "version": "HEAD-94591a1-250719T022620"
   },
   {
     "_disabled": "false",
@@ -3497,6 +3569,50 @@
       "Utility"
     ],
     "version": "1.0.8"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "container2wasm",
+    "pkg_family": "container2wasm",
+    "pkg_id": "github.com.container2wasm.container2wasm.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/container2wasm-source/container2wasm/container2wasm",
+    "bincache": "ghcr.io/pkgforge/bincache/container2wasm/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/container2wasm/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Container to WASM converter",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/container2wasm/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/container2wasm/container2wasm"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/container2wasm/container2wasm"
+    ],
+    "provides": [
+      "c2w==container2wasm",
+      "c2w-net==container2wasm-net"
+    ],
+    "src_url": [
+      "https://github.com/container2wasm/container2wasm"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-a63e271-250719T124903"
   },
   {
     "_disabled": "false",
@@ -5428,6 +5544,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "dagger-cli",
+    "pkg_family": "dagger-cli",
+    "pkg_id": "github.com.dagger.dagger",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dagger-dagger/dagger-cli/dagger-cli",
+    "bincache": "ghcr.io/pkgforge/bincache/dagger-cli/official/dagger-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dagger-cli/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A portable devkit for CI/CD pipelines",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "dagger-git"
+        ],
+        "extra": [
+          "dagger"
+        ]
+      },
+      "homebrew": [
+        "dagger"
+      ],
+      "nixpkgs": [
+        "dagger"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dagger-cli/static.official.stable.yaml",
+    "homepage": [
+      "https://dagger.io",
+      "https://github.com/dagger/dagger"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/dagger/dagger"
+    ],
+    "provides": [
+      "dagger-cli"
+    ],
+    "repology": [
+      "dagger-ci-cd-devkit"
+    ],
+    "src_url": [
+      "https://github.com/dagger/dagger"
+    ],
+    "tag": [
+      "ci-cd",
+      "container"
+    ],
+    "version": "v0.18.14"
+  },
+  {
+    "_disabled": "false",
     "pkg": "daytona",
     "pkg_family": "daytona",
     "pkg_id": "github.com.daytonaio.daytona",
@@ -5521,6 +5701,49 @@
       "database"
     ],
     "version": "HEAD-5b55afb-250718T201436"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "deark",
+    "pkg_family": "deark",
+    "pkg_id": "github.com.jsummers.deark.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/deark-source/deark/deark",
+    "bincache": "ghcr.io/pkgforge/bincache/deark/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/deark/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A utility for extracting data from various file formats",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/deark/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/jsummers/deark"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jsummers/deark"
+    ],
+    "provides": [
+      "deark"
+    ],
+    "src_url": [
+      "https://github.com/jsummers/deark"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-0c5bae9-250718T152217"
   },
   {
     "_disabled": "false",
@@ -6397,6 +6620,49 @@
   },
   {
     "_disabled": "false",
+    "pkg": "enscan",
+    "pkg_family": "enscan",
+    "pkg_id": "github.com.wgpsec.ENScan_GO.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/enscan_go-source/enscan/enscan",
+    "bincache": "ghcr.io/pkgforge/bincache/enscan/official/enscan",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/enscan/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "OSINT Tool to Aggregate and Export Enterprise Information",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/enscan/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/wgpsec/ENScan_GO"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wgpsec/ENScan_GO"
+    ],
+    "provides": [
+      "enscan"
+    ],
+    "src_url": [
+      "https://github.com/wgpsec/ENScan_GO"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-25695cc-250719T110755"
+  },
+  {
+    "_disabled": "false",
     "pkg": "enumeraga",
     "pkg_family": "enumeraga",
     "pkg_id": "github.com.0x5ubt13.enumeraga.source",
@@ -6540,7 +6806,7 @@
       "javascript",
       "typescript"
     ],
-    "version": "HEAD-fc3da57-250718T142442"
+    "version": "HEAD-9b42f68-250718T184938"
   },
   {
     "_disabled": "false",
@@ -6603,7 +6869,7 @@
     "tag": [
       "ls"
     ],
-    "version": "HEAD-7a2b266-250718T162527"
+    "version": "HEAD-97f9f36-250719T055213"
   },
   {
     "_disabled": "false",
@@ -7270,7 +7536,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-16f9dc2-250717T133933"
+    "version": "HEAD-72a52fc-250718T195918"
   },
   {
     "_disabled": "false",
@@ -7656,7 +7922,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-34f898a-250718T180319"
+    "version": "HEAD-5fbf140-250719T060444"
   },
   {
     "_disabled": "false",
@@ -7815,7 +8081,7 @@
     "tag": [
       "gitlab"
     ],
-    "version": "HEAD-3051123-250718T133838"
+    "version": "HEAD-5350a44-250718T195143"
   },
   {
     "_disabled": "false",
@@ -8233,7 +8499,7 @@
     "tag": [
       "matrix"
     ],
-    "version": "HEAD-2bd40fa-250718T005357"
+    "version": "HEAD-7299993-250719T001611"
   },
   {
     "_disabled": "false",
@@ -8354,6 +8620,64 @@
       "gpg"
     ],
     "version": "HEAD-e35b7a7-250714T132707"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "grpcurl",
+    "pkg_family": "grpcurl",
+    "pkg_id": "github.com.fullstorydev.grpcurl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fullstorydev-grpcurl/grpcurl/grpcurl",
+    "bincache": "ghcr.io/pkgforge/bincache/grpcurl/official/grpcurl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/grpcurl/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command-line tool for interacting with gRPC servers",
+    "distro_pkg": {
+      "alpine": [
+        "grpcurl"
+      ],
+      "archlinux": {
+        "aur": [
+          "grpcurl",
+          "grpcurl-bin"
+        ]
+      },
+      "nixpkgs": [
+        "grpcurl"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/grpcurl/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fullstorydev/grpcurl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fullstorydev/grpcurl"
+    ],
+    "repology": [
+      "grpcurl"
+    ],
+    "src_url": [
+      "https://github.com/fullstorydev/grpcurl"
+    ],
+    "tag": [
+      "curl",
+      "grpc"
+    ],
+    "version": "HEAD-7155fb6-250718T144735"
   },
   {
     "_disabled": "false",
@@ -8566,7 +8890,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.18"
+    "version": "2025.07.19"
   },
   {
     "_disabled": "false",
@@ -8654,6 +8978,65 @@
       "Utility"
     ],
     "version": "HEAD-000f91e-250717T221519"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "hl",
+    "pkg_family": "hl",
+    "pkg_id": "github.com.pamburus.hl.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/hl-source/hl/hl",
+    "bincache": "ghcr.io/pkgforge/bincache/hl/official/hl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hl/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Log viewer/processor that transforms logs in JSON/logfmt formats into a human-readable output",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "hl-git"
+        ],
+        "extra": [
+          "hl"
+        ]
+      },
+      "homebrew": [
+        "hl"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hl/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/pamburus/hl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/pamburus/hl"
+    ],
+    "provides": [
+      "hl"
+    ],
+    "repology": [
+      "hl"
+    ],
+    "src_url": [
+      "https://github.com/pamburus/hl"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-71b265f-250718T234814"
   },
   {
     "_disabled": "false",
@@ -9251,7 +9634,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-d7fa04f-250718T171609"
+    "version": "HEAD-7dadc13-250719T033916"
   },
   {
     "_disabled": "false",
@@ -9586,7 +9969,7 @@
     "tag": [
       "file-manager"
     ],
-    "version": "HEAD-e5c2cc4-250718T115231"
+    "version": "HEAD-93400c1-250719T160444"
   },
   {
     "_disabled": "false",
@@ -9623,7 +10006,7 @@
       "aws",
       "infra"
     ],
-    "version": "HEAD-da4d591-250704T003108"
+    "version": "HEAD-df2b810-250717T205140"
   },
   {
     "_disabled": "false",
@@ -9894,6 +10277,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "lsof",
+    "pkg_family": "lsof",
+    "pkg_id": "nixpkgs.lsof",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-lsof/lsof/lsof",
+    "bincache": "ghcr.io/pkgforge/bincache/lsof/nixpkgs/lsof",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lsof/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "List Information about Files Opened by Processes",
+    "distro_pkg": {
+      "alpine": [
+        "lsof"
+      ],
+      "archlinux": {
+        "aur": [
+          "lsof-git"
+        ],
+        "extra": [
+          "lsof"
+        ]
+      },
+      "debian": [
+        "lsof"
+      ],
+      "nixpkgs": [
+        "lsof"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lsof/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://lsof.readthedocs.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "repology": [
+      "lsof"
+    ],
+    "src_url": [
+      "https://github.com/lsof-org/lsof"
+    ],
+    "tag": [
+      "lsof"
+    ],
+    "version": "4.99.5"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mc",
     "pkg_family": "mc",
     "pkg_id": "github.com.minio.mc",
@@ -10129,7 +10576,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-1825320-250717T205341"
+    "version": "HEAD-33d55cc-250718T173503"
   },
   {
     "_disabled": "false",
@@ -10245,7 +10692,51 @@
       "asdf",
       "dev-env"
     ],
-    "version": "v2025.7.16"
+    "version": "v2025.7.17"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mkpasswd",
+    "pkg_family": "mkpasswd",
+    "pkg_id": "nixpkgs.mkpasswd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-mkpasswd/mkpasswd/mkpasswd",
+    "bincache": "ghcr.io/pkgforge/bincache/mkpasswd/nixpkgs/mkpasswd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/mkpasswd/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Generate new password, optionally apply it to a user",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/mkpasswd/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://packages.qa.debian.org/w/whois.html"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "repology": [
+      "mkpasswd"
+    ],
+    "src_url": [
+      "https://packages.qa.debian.org/w/whois.html"
+    ],
+    "tag": [
+      "security"
+    ],
+    "version": "5.6.3"
   },
   {
     "_disabled": "false",
@@ -11301,7 +11792,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-38009c7-250717T221655"
+    "version": "HEAD-16167a2-250718T184950"
   },
   {
     "_disabled": "false",
@@ -11365,7 +11856,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-38009c7-250717T221655"
+    "version": "HEAD-16167a2-250718T184950"
   },
   {
     "_disabled": "false",
@@ -11532,7 +12023,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.18"
+    "version": "2025.07.19"
   },
   {
     "_disabled": "false",
@@ -12355,6 +12846,63 @@
   },
   {
     "_disabled": "false",
+    "pkg": "reviewdog",
+    "pkg_family": "reviewdog",
+    "pkg_id": "github.com.reviewdog.reviewdog",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/reviewdog-reviewdog/reviewdog/reviewdog",
+    "bincache": "ghcr.io/pkgforge/bincache/reviewdog/official/reviewdog",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/reviewdog/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Automated code review tool integrated with any code analysis tools regardless of programming language",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "reviewdog-bin"
+        ]
+      },
+      "nixpkgs": [
+        "reviewdog"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/reviewdog/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/reviewdog/reviewdog"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/reviewdog/reviewdog"
+    ],
+    "provides": [
+      "reviewdog"
+    ],
+    "repology": [
+      "reviewdog"
+    ],
+    "src_url": [
+      "https://github.com/reviewdog/reviewdog"
+    ],
+    "tag": [
+      "analyzer",
+      "linter"
+    ],
+    "version": "HEAD-05e9d32-250718T220629"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ripgen",
     "pkg_family": "ripgen",
     "pkg_id": "github.com.resyncgg.ripgen",
@@ -13038,7 +13586,7 @@
       "utility",
       "skupper"
     ],
-    "version": "HEAD-5e99249-250718T120902"
+    "version": "HEAD-4379a0d-250718T170901"
   },
   {
     "_disabled": "false",
@@ -13733,7 +14281,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-e01618a-250718T134603"
+    "version": "HEAD-5adde9e-250718T150609"
   },
   {
     "_disabled": "false",
@@ -13906,7 +14454,7 @@
     "tag": [
       "compiler"
     ],
-    "version": "HEAD-2eca4df-250718T081558"
+    "version": "HEAD-2ffb586-250719T003012"
   },
   {
     "_disabled": "false",
@@ -13979,7 +14527,7 @@
     "tag": [
       "compiler"
     ],
-    "version": "HEAD-2eca4df-250718T081558"
+    "version": "HEAD-2ffb586-250719T003012"
   },
   {
     "_disabled": "false",
@@ -14397,6 +14945,52 @@
       "Utility"
     ],
     "version": "HEAD-907ac64-250717T111255"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "umoci",
+    "pkg_family": "umoci",
+    "pkg_id": "github.com.opencontainers.umoci.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/umoci-source/umoci/umoci",
+    "bincache": "ghcr.io/pkgforge/bincache/umoci/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/umoci/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Create, Manipulate, and Interact with container images",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/umoci/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/opencontainers/umoci"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/opencontainers/umoci"
+    ],
+    "provides": [
+      "umoci"
+    ],
+    "repology": [
+      "umoci"
+    ],
+    "src_url": [
+      "https://github.com/opencontainers/umoci"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-409d773-250719T121934"
   },
   {
     "_disabled": "false",
@@ -15132,6 +15726,68 @@
       "Utility"
     ],
     "version": "HEAD-aec935f-250718T180454"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "whois",
+    "pkg_family": "whois",
+    "pkg_id": "nixpkgs.whois",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-whois/whois/whois",
+    "bincache": "ghcr.io/pkgforge/bincache/whois/nixpkgs/whois",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/whois/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Lookup tool for domain names and other internet resources",
+    "distro_pkg": {
+      "alpine": [
+        "whois"
+      ],
+      "archlinux": {
+        "aur": [
+          "whois-git"
+        ],
+        "extra": [
+          "whois"
+        ]
+      },
+      "debian": [
+        "whois"
+      ],
+      "nixpkgs": [
+        "whois"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/whois/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://packages.qa.debian.org/w/whois.html",
+      "https://github.com/rfc1036/whois"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "repology": [
+      "whois"
+    ],
+    "src_url": [
+      "https://github.com/rfc1036/whois"
+    ],
+    "tag": [
+      "network",
+      "whois"
+    ],
+    "version": "5.6.3"
   },
   {
     "_disabled": "false",

@@ -13151,6 +13151,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
+    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -Wl,-install_name,liblua.dylib\"\nelse\n    export LDFLAGS=\"$LDFLAGS -Wl,-soname,liblua.so\"\nfi",
     "install": "gmakew clean\ngmakew liblua.a PLAT=generic CC=\"$CC\" AR=\"'$AR crs'\" RANLIB=\"$RANLIB\" CFLAGS=\"'$CFLAGS -std=c99 -DLUA_COMPAT_5_3 $CPPFLAGS'\"\nrun \"$CC\" -shared \"$CFLAGS\" \"$LDFLAGS\" -o liblua$SHARED_LIBRARY_SUFFIX *.o\ninstall_libs liblua.a liblua$SHARED_LIBRARY_SUFFIX\ninstall_incs lua.h luaconf.h lualib.h lauxlib.h lua.hpp",
     "dotweak": "writepc lua <<EOF\nprefix=\\${pcfiledir}/../..\nexec_prefix=\\${prefix}\nlibdir=\\${exec_prefix}/lib\nincludedir=\\${prefix}/include\n\nName: Lua\nDescription: $PACKAGE_SUMMARY\nVersion: $PACKAGE_VERSION\nCflags: -I\\${includedir}\nLibs: -L\\${libdir} -llua\nEOF"
   },

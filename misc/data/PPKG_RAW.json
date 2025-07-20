@@ -2549,7 +2549,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "dopatch": "[ \"$TARGET_PLATFORM_NAME\" = netbsd ] || return 0\n\nLIST='\npatch-Auxiliary_CMakeLists.txt\npatch-CMakeLists.txt\npatch-Modules_Compiler_GNU.cmake\npatch-Modules_FindCurses.cmake\npatch-Modules_FindGTK2.cmake\npatch-Modules_FindPythonInterp.cmake\npatch-Modules_FindPythonLibs.cmake\npatch-Modules_FindPython_Support.cmake\npatch-Modules_FindX11.cmake\npatch-Modules_FortranCInterface_CMakeLists.txt\npatch-Modules_Platform_Darwin.cmake\npatch-Modules_Platform_UnixPaths.cmake\npatch-Source_Checks_Curses_CMakeLists.txt\npatch-Source_Checks_Curses_CheckCurses.c\npatch-Source_Checks_cm__cxx17__check.cpp\npatch-Source_Modules_CMakeBuildUtilities.cmake\npatch-Source_QtDialog_CMakeLists.txt\npatch-Source_kwsys_ProcessUNIX.c\npatch-Tests_CMakeLists.txt\npatch-Utilities_KWIML_CMakeLists.txt\npatch-bootstrap'\n\nfor f in $LIST\ndo\n    wfetch \"https://raw.githubusercontent.com/NetBSD/pkgsrc/trunk/devel/cmake/patches/$f\"\ndone\n\nfor f in $LIST\ndo\n    patch -p0 < \"$f\"\ndone",
+    "dopatch": "printf 'set(LIBIDN2_FOUND FALSE)\\n' > Utilities/cmcurl/CMake/FindLibidn2.cmake\n\n[ \"$TARGET_PLATFORM_NAME\" = netbsd ] || return 0\n\nLIST='\npatch-Auxiliary_CMakeLists.txt\npatch-CMakeLists.txt\npatch-Modules_Compiler_GNU.cmake\npatch-Modules_FindCurses.cmake\npatch-Modules_FindGTK2.cmake\npatch-Modules_FindPythonInterp.cmake\npatch-Modules_FindPythonLibs.cmake\npatch-Modules_FindPython_Support.cmake\npatch-Modules_FindX11.cmake\npatch-Modules_FortranCInterface_CMakeLists.txt\npatch-Modules_Platform_Darwin.cmake\npatch-Modules_Platform_UnixPaths.cmake\npatch-Source_Checks_Curses_CMakeLists.txt\npatch-Source_Checks_Curses_CheckCurses.c\npatch-Source_Checks_cm__cxx17__check.cpp\npatch-Source_Modules_CMakeBuildUtilities.cmake\npatch-Source_QtDialog_CMakeLists.txt\npatch-Source_kwsys_ProcessUNIX.c\npatch-Tests_CMakeLists.txt\npatch-Utilities_KWIML_CMakeLists.txt\npatch-bootstrap'\n\nfor f in $LIST\ndo\n    wfetch \"https://raw.githubusercontent.com/NetBSD/pkgsrc/trunk/devel/cmake/patches/$f\"\ndone\n\nfor f in $LIST\ndo\n    patch -p0 < \"$f\"\ndone",
     "install": "cmakew \\\n    -DCMAKE_USE_SYSTEM_LIBRARIES=OFF \\\n    -DCMAKE_USE_OPENSSL=ON \\\n    -DCMake_BUILD_LTO=ON \\\n    -DBUILD_QtDialog=OFF \\\n    -DBUILD_CursesDialog=ON"
   },
   {
@@ -6024,7 +6024,8 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "mesonw \\\n    -Dintrospection=disabled \\\n    -Ddocumentation=false \\\n    -Dman-pages=disabled \\\n    -Dnls=disabled \\\n    -Ddtrace=false \\\n    -Dglib_debug=disabled \\\n    -Dglib_assert=false \\\n    -Dtests=false \\\n    -Dinstalled_tests=false \\\n    -Dbsymbolic_functions=false",
+    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = freebsd ] ; then\n    MESON_EXTRA_ARGS='-Dxattr=false'\nelse\n    MESON_EXTRA_ARGS=\nfi",
+    "install": "mesonw \\\n    -Dintrospection=disabled \\\n    -Ddocumentation=false \\\n    -Dman-pages=disabled \\\n    -Dnls=disabled \\\n    -Ddtrace=false \\\n    -Dglib_debug=disabled \\\n    -Dglib_assert=false \\\n    -Dtests=false \\\n    -Dinstalled_tests=false \\\n    -Dbsymbolic_functions=false $MESON_EXTRA_ARGS",
     "dotweak": "gsed -i 's|libiconv|libintl libffi libz|' lib/pkgconfig/glib-2.0.pc\n\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    gsed -i 's|-lintl|-lresolv|g'         lib/pkgconfig/glib-2.0.pc\nfi"
   },
   {
@@ -7341,7 +7342,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "prepare": "# https://savannah.gnu.org/bugs/?64441\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] ; then\n    export LDFLAGS=\"$LDFLAGS -liconv\"\nfi",
+    "prepare": "# https://savannah.gnu.org/bugs/?64441\nif [ \"$TARGET_PLATFORM_NAME\" = macos ] || [ \"$TARGET_PLATFORM_NAME\" = freebsd ] ; then\n    add_ldflags -liconv\nfi",
     "install": "configure \\\n    --program-prefix=g \\\n    --with-included-regex \\\n    --with-xattrs \\\n    --without-posix-acls \\\n    --without-selinux \\\n    --disable-acl \\\n    --disable-gcc-warnings",
     "dotweak": "ln -s gtar bin/tar"
   },
@@ -20499,13 +20500,13 @@
   {
     "pkgname": "openssl",
     "pkgtype": "exe",
-    "version": "3.3.1",
+    "version": "3.5.1",
     "license": "Apache-2.0",
     "summary": "Cryptography and SSL/TLS Toolkit",
     "web-url": "https://www.openssl.org/",
     "git-url": "https://github.com/openssl/openssl",
-    "src-url": "https://www.openssl.org/source/openssl-3.3.1.tar.gz",
-    "src-sha": "777cd596284c883375a2a7a11bf5d2786fc5413255efab20c50d6ffe6d020b7e",
+    "src-url": "https://www.openssl.org/source/openssl-3.5.1.tar.gz",
+    "src-sha": "529043b15cffa5f36077a4d0af83f3de399807181d607441d734196d889b641f",
     "dep-upp": "perl curl bsdtar gmake",
     "bsystem": "gmake",
     "binbstd": "1",
@@ -20513,8 +20514,8 @@
     "ltoable": "1",
     "movable": "1",
     "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = openbsd ] ; then\n    gsed -i 's|-Wl,-z,defs||' Configurations/shared-info.pl\n\n    if isCrossBuild ; then\n        export LDFLAGS=\"$LDFLAGS -fuse-ld=lld\"\n        CONFIG_ARGS=\"$CONFIG_ARGS no-devcryptoeng\"\n    fi\nfi",
-    "install": "unset OS_COMPILER\n\nif isCrossBuild ; then\n    CMD=./Configure\n\n    case $TARGET_PLATFORM_NAME in\n        linux)\n            case $TARGET_PLATFORM_ARCH in\n                riscv64) OS_COMPILER='linux64-riscv64' ;;\n                s390x)   OS_COMPILER='linux64-s390x'   ;;\n                *)       OS_COMPILER=\"linux-$TARGET_PLATFORM_ARCH\"\n            esac\n            ;;\n        macos)\n            OS_COMPILER=\"darwin64-$TARGET_PLATFORM_ARCH\"\n            ;;\n        *bsd)\n            case $TARGET_PLATFORM_ARCH in\n                amd64)  OS_COMPILER='BSD-x86_64' ;;\n                *)      OS_COMPILER=\"BSD-$TARGET_PLATFORM_ARCH\"\n            esac\n    esac\nelse\n    CMD=./config\nfi\n\n# https://github.com/openssl/openssl/blob/master/INSTALL.md\nrun \"$CMD\" no-shared no-tests no-ssl3 no-ssl3-method no-zlib --libdir=lib --openssldir=/etc/ssl --prefix=\"$PACKAGE_INSTALL_DIR\" \"$OS_COMPILER\"\ngmakew clean\ngmakew CROSS_COMPILE=\ngmakew CROSS_COMPILE= install",
-    "dotweak": "gsed -i '/Libs:/s|-lcrypto|-lcrypto -lpthread -ldl|' lib/pkgconfig/libcrypto.pc"
+    "install": "unset OS_COMPILER\n\nif isCrossBuild ; then\n    CMD=./Configure\n\n    case $TARGET_PLATFORM_NAME in\n        linux)\n            case $TARGET_PLATFORM_ARCH in\n                riscv64) OS_COMPILER='linux64-riscv64' ;;\n                s390x)   OS_COMPILER='linux64-s390x'   ;;\n                *)       OS_COMPILER=\"linux-$TARGET_PLATFORM_ARCH\"\n            esac\n            ;;\n        macos)\n            OS_COMPILER=\"darwin64-$TARGET_PLATFORM_ARCH\"\n            ;;\n        *bsd)\n            case $TARGET_PLATFORM_ARCH in\n                amd64)  OS_COMPILER='BSD-x86_64' ;;\n                *)      OS_COMPILER=\"BSD-$TARGET_PLATFORM_ARCH\"\n            esac\n    esac\nelse\n    CMD=./config\nfi\n\n# https://github.com/openssl/openssl/blob/master/INSTALL.md\nrun \"$CMD\" no-shared no-tests no-ssl3 no-ssl3-method no-zlib no-legacy --libdir=lib --openssldir=/etc/ssl --prefix=\"$PACKAGE_INSTALL_DIR\" \"$OS_COMPILER\"\ngmakew clean\ngmakew CROSS_COMPILE=\ngmakew CROSS_COMPILE= install_sw",
+    "dotweak": "run rm -rf include/ lib/"
   },
   {
     "pkgname": "ops",
@@ -22378,11 +22379,11 @@
     "dep-upp": "curl bsdtar patch gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
+    "ldflags": "-lpthread",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
     "dopatch": "patch -p1 < ../fix/patches/fileflags.diff",
-    "prepare": "if [ \"$TARGET_PLATFORM_NAME\" = netbsd ] ; then\n    add_ldflags -lpthread\nfi",
     "install": "configure --disable-simd --enable-ipv6 --with-included-popt=no --with-included-zlib=no"
   },
   {

@@ -3095,7 +3095,7 @@
       "speedtest",
       "speedtest-cli"
     ],
-    "version": "HEAD-3dad05d-250720T143926"
+    "version": "HEAD-1d6918b-250720T152231"
   },
   {
     "_disabled": "false",
@@ -6933,7 +6933,70 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-1802674-250720T120723"
+    "version": "HEAD-45e76c7-250720T180404"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gitleaks",
+    "pkg_family": "gitleaks",
+    "pkg_id": "github.com.gitleaks.gitleaks",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gitleaks-gitleaks/gitleaks/gitleaks",
+    "bincache": "ghcr.io/pkgforge/bincache/gitleaks/official/gitleaks",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gitleaks/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Scan git repos (or files) for secrets using regex and entropy",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "gitleaks"
+        ]
+      },
+      "debian": [
+        "gitleaks"
+      ],
+      "homebrew": [
+        "gitleaks"
+      ],
+      "nixpkgs": [
+        "gitleaks"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gitleaks/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/gitleaks/gitleaks"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/gitleaks/gitleaks"
+    ],
+    "provides": [
+      "gitleaks"
+    ],
+    "repology": [
+      "gitleaks"
+    ],
+    "src_url": [
+      "https://github.com/gitleaks/gitleaks"
+    ],
+    "tag": [
+      "secret",
+      "security"
+    ],
+    "version": "HEAD-4fb4382-250720T111425"
   },
   {
     "_disabled": "false",
@@ -7337,7 +7400,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-05052d6-250720T172535"
+    "version": "HEAD-21239d7-250721T020418"
   },
   {
     "_disabled": "false",
@@ -7857,7 +7920,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-38a23f9-250720T082225"
+    "version": "HEAD-eec028d-250720T180543"
   },
   {
     "_disabled": "false",
@@ -8641,6 +8704,75 @@
       "mail"
     ],
     "version": "HEAD-e5a7276-250628T121400"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "micro",
+    "pkg_family": "micro",
+    "pkg_id": "github.com.zyedidia.micro",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zyedidia-micro/micro/micro",
+    "bincache": "ghcr.io/pkgforge/bincache/micro/official/micro",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/micro/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Modern and intuitive terminal-based text editor",
+    "distro_pkg": {
+      "alpine": [
+        "micro"
+      ],
+      "archlinux": {
+        "aur": [
+          "micro-git"
+        ],
+        "extra": [
+          "micro"
+        ]
+      },
+      "debian": [
+        "micro"
+      ],
+      "homebrew": [
+        "micro"
+      ],
+      "nixpkgs": [
+        "micro"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/micro/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/zyedidia/micro"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/zyedidia/micro"
+    ],
+    "provides": [
+      "micro"
+    ],
+    "repology": [
+      "micro"
+    ],
+    "src_url": [
+      "https://github.com/zyedidia/micro"
+    ],
+    "tag": [
+      "text-editor"
+    ],
+    "version": "HEAD-dbdf753-250720T161432"
   },
   {
     "_disabled": "false",
@@ -10564,6 +10696,79 @@
   },
   {
     "_disabled": "false",
+    "pkg": "regclient",
+    "pkg_family": "regclient",
+    "pkg_id": "github.com.regclient.regclient",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/regclient-regclient/regclient/regclient",
+    "bincache": "ghcr.io/pkgforge/bincache/regclient/official/regbot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/regclient/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Docker and OCI Registry Client Tools",
+      "regbot": "A scripting tool on top of the regclient [regclient]",
+      "regctl": "Client interface to interacting with registries [regclient]",
+      "regsync": "OCI Image mirroring tool to copy images between two locations [regclient]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "regclient"
+      ],
+      "archlinux": {
+        "aur": [
+          "regclient"
+        ]
+      },
+      "homebrew": [
+        "regclient"
+      ],
+      "nixpkgs": [
+        "regbot",
+        "regclient",
+        "regctl",
+        "regsync"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/regclient/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/regclient/regclient"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/regclient/regclient"
+    ],
+    "provides": [
+      "regbot",
+      "regctl",
+      "regsync"
+    ],
+    "repology": [
+      "regclient"
+    ],
+    "src_url": [
+      "https://github.com/regclient/regclient"
+    ],
+    "tag": [
+      "oci",
+      "registry"
+    ],
+    "version": "HEAD-19d0a98-250720T105113"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ripgen",
     "pkg_family": "ripgen",
     "pkg_id": "github.com.resyncgg.ripgen",
@@ -11865,6 +12070,51 @@
   },
   {
     "_disabled": "false",
+    "pkg": "trippy",
+    "pkg_family": "trippy",
+    "pkg_id": "github.com.fujiapple852.trippy",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fujiapple852-trippy/trippy/trippy",
+    "bincache": "ghcr.io/pkgforge/bincache/trippy/official/trip",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/trippy/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A network diagnostic tool",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/trippy/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fujiapple852/trippy"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fujiapple852/trippy"
+    ],
+    "provides": [
+      "trip",
+      "trippy"
+    ],
+    "repology": [
+      "trippy"
+    ],
+    "src_url": [
+      "https://github.com/fujiapple852/trippy"
+    ],
+    "tag": [
+      "network",
+      "traceroute"
+    ],
+    "version": "HEAD-a07fb60-250720T235607"
+  },
+  {
+    "_disabled": "false",
     "pkg": "trufflehog",
     "pkg_family": "trufflehog",
     "pkg_id": "github.com.trufflesecurity.trufflehog.source",
@@ -11968,6 +12218,77 @@
   },
   {
     "_disabled": "false",
+    "pkg": "upx",
+    "pkg_family": "upx",
+    "pkg_id": "github.com.upx.upx",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/upx-upx/upx/upx",
+    "bincache": "ghcr.io/pkgforge/bincache/upx/official/upx",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/upx/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Extendable, high-performance executable packer for several executable formats",
+    "distro_pkg": {
+      "alpine": [
+        "upx"
+      ],
+      "archlinux": {
+        "aur": [
+          "upx-git"
+        ],
+        "extra": [
+          "upx"
+        ]
+      },
+      "debian": [
+        "upx-ucl"
+      ],
+      "gnuguix": [
+        "upx"
+      ],
+      "homebrew": [
+        "upx"
+      ],
+      "nixpkgs": [
+        "upx"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/upx/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/upx/upx"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/upx/upx"
+    ],
+    "provides": [
+      "upx"
+    ],
+    "repology": [
+      "upx"
+    ],
+    "src_url": [
+      "https://github.com/upx/upx"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v5.0.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "urx",
     "pkg_family": "urx",
     "pkg_id": "github.com.hahwul.urx.source",
@@ -12007,7 +12328,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-07cb477-250720T183422"
+    "version": "HEAD-dfc3ae5-250721T005619"
   },
   {
     "_disabled": "false",
@@ -12167,6 +12488,49 @@
       "Utility"
     ],
     "version": "HEAD-cd8efe0-250719T144300"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wasmi",
+    "pkg_family": "wasmi",
+    "pkg_id": "github.com.wasmi-labs.wasmi.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wasmi-source/wasmi/wasmi",
+    "bincache": "ghcr.io/pkgforge/bincache/wasmi/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wasmi/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Efficient and Lightweight WebAssembly interpreter with a focus on constrained and embedded systems",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wasmi/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/wasmi-labs/wasmi"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wasmi-labs/wasmi"
+    ],
+    "provides": [
+      "wasmi-cli==wasm_cli"
+    ],
+    "src_url": [
+      "https://github.com/wasmi-labs/wasmi"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-d26a06f-250720T172747"
   },
   {
     "_disabled": "false",

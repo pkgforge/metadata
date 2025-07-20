@@ -3678,8 +3678,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.18 ✅ | https://github.com/wofr06/lesspipe/archive/refs/tags/v2.18.tar.gz |
-| BREW   | 2.18 | https://www-zeuthen.desy.de/~friebel/unix/lesspipe.html |
+| PPKG   | 2.18 ⚠️ | https://github.com/wofr06/lesspipe/archive/refs/tags/v2.18.tar.gz |
+| BREW   | **2.19** | https://www-zeuthen.desy.de/~friebel/unix/lesspipe.html |
+
+*Outdated*
 
 ## lexbor
 

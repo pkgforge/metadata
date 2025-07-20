@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.19 ⚠️ | null |
+| PPKG   | 2025.07.20 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -622,7 +622,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20250308 ⚠️ | https://www.crufty.net/ftp/pub/sjg/bmake-20250308.tar.gz |
-| BREW   | **20250618** | https://www.crufty.net/help/sjg/bmake.html |
+| BREW   | **20250707** | https://www.crufty.net/help/sjg/bmake.html |
 
 *Outdated*
 
@@ -1823,7 +1823,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.20.2 ⚠️ | https://github.com/evanw/esbuild/archive/refs/tags/v0.20.2.tar.gz |
-| BREW   | **0.25.7** | https://esbuild.github.io/ |
+| BREW   | **0.25.8** | https://esbuild.github.io/ |
 
 *Outdated*
 
@@ -2904,10 +2904,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.11 ⚠️ | https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz |
-| BREW   | **3.12** | https://www.gnu.org/software/grep/ |
-
-*Outdated*
+| PPKG   | 3.12 ✅ | https://ftp.gnu.org/gnu/grep/grep-3.12.tar.xz |
+| BREW   | 3.12 | https://www.gnu.org/software/grep/ |
 
 ## grex
 
@@ -4199,7 +4197,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.16.2 ⚠️ | https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar.gz |
-| BREW   | **3.17.2** | https://github.com/libfuse/libfuse |
+| BREW   | **3.17.3** | https://github.com/libfuse/libfuse |
 
 *Outdated*
 
@@ -4602,7 +4600,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.19 ⚠️ | null |
+| PPKG   | 2025.07.20 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4622,7 +4620,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.19 ⚠️ | null |
+| PPKG   | 2025.07.20 ⚠️ | null |
 | BREW   | **1.13.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6658,7 +6656,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.19 ⚠️ | null |
+| PPKG   | 2025.07.20 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6825,7 +6823,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.19 ⚠️ | null |
+| PPKG   | 2025.07.20 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6987,7 +6985,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.19 ⚠️ | null |
+| PPKG   | 2025.07.20 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

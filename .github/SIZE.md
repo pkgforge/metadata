@@ -2,7 +2,7 @@
  1.5G └─┬ main
 1022M   ├─┬ external
  822M   │ ├─┬ pkgforge-go
- 822M   │ │ ├─┬ data
+ 821M   │ │ ├─┬ data
   72M   │ │ │ ├── x86_64-Linux.json
   71M   │ │ │ ├── riscv64-Linux.json
   71M   │ │ │ ├── aarch64-Linux.json

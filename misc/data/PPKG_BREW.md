@@ -981,17 +981,6 @@
 
 *Outdated*
 
-## cgif
-
-**Description:** GIF encoder written in C
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | V0.3.0 ⚠️ | https://github.com/dloebl/cgif/archive/refs/tags/V0.3.0.tar.gz |
-| BREW   | **0.5.0** | https://github.com/dloebl/cgif |
-
-*Outdated*
-
 ## cgit
 
 **Description:** Hyperfast web frontend for Git repositories written in C
@@ -2395,7 +2384,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.22.5 ⚠️ | https://ftp.gnu.org/gnu/gettext/gettext-0.22.5.tar.gz |
-| BREW   | **0.25.1** | https://www.gnu.org/software/gettext/ |
+| BREW   | **0.26** | https://www.gnu.org/software/gettext/ |
 
 *Outdated*
 
@@ -2416,10 +2405,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.74.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.74.0.tar.gz |
-| BREW   | **2.76.0** | https://cli.github.com/ |
-
-*Outdated*
+| PPKG   | 2.76.0 ✅ | https://github.com/cli/cli/archive/refs/tags/v2.76.0.tar.gz |
+| BREW   | 2.76.0 | https://cli.github.com/ |
 
 ## ghcup
 
@@ -3422,7 +3409,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.77.0** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.78.0** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -7426,7 +7413,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-07-14** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-07-21** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 
@@ -9123,6 +9110,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.6.2 ✅ | https://distfiles.macports.org/zsync/zsync-0.6.2.tar.bz2 |
-| BREW   | 0.6.2 | https://web.archive.org/web/20241223233525/http://zsync.moria.org.uk/ |
+| PPKG   | 0.6.2 ⚠️ | https://distfiles.macports.org/zsync/zsync-0.6.2.tar.bz2 |
+| BREW   | **0.6.3** | https://zsync.moria.org.uk/ |
+
+*Outdated*
 

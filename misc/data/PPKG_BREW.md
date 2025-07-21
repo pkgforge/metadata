@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.20 ⚠️ | null |
+| PPKG   | 2025.07.21 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2571,10 +2571,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.82.4 ⚠️ | https://download.gnome.org/sources/glib/2.82/glib-2.82.4.tar.xz |
-| BREW   | **2.84.3** | https://docs.gtk.org/glib/ |
-
-*Outdated*
+| PPKG   | 2.84.3 ✅ | https://download.gnome.org/sources/glib/2.84/glib-2.84.3.tar.xz |
+| BREW   | 2.84.3 | https://docs.gtk.org/glib/ |
 
 ## glib-networking
 
@@ -2715,10 +2713,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.82.0 ⚠️ | https://download.gnome.org/sources/gobject-introspection/1.82/gobject-introspection-1.82.0.tar.xz |
-| BREW   | **1.84.0** | https://gi.readthedocs.io/en/latest/ |
-
-*Outdated*
+| PPKG   | 1.84.0 ✅ | https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspection-1.84.0.tar.xz |
+| BREW   | 1.84.0 | https://gi.readthedocs.io/en/latest/ |
 
 ## gojq
 
@@ -4602,7 +4598,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.20 ⚠️ | null |
+| PPKG   | 2025.07.21 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4622,7 +4618,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.20 ⚠️ | null |
+| PPKG   | 2025.07.21 ⚠️ | null |
 | BREW   | **1.13.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5583,7 +5579,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.21.0 ⚠️ | https://github.com/lima-vm/lima/archive/refs/tags/v0.21.0.tar.gz |
-| BREW   | **1.2.0** | https://lima-vm.io/ |
+| BREW   | **1.2.1** | https://lima-vm.io/ |
 
 *Outdated*
 
@@ -6658,7 +6654,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.20 ⚠️ | null |
+| PPKG   | 2025.07.21 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6825,7 +6821,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.20 ⚠️ | null |
+| PPKG   | 2025.07.21 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6987,7 +6983,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.20 ⚠️ | null |
+| PPKG   | 2025.07.21 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

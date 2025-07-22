@@ -1369,7 +1369,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3267a90-250722T145416"
+    "version": "HEAD-9d25831-250722T181208"
   },
   {
     "_disabled": "true",
@@ -1638,7 +1638,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7328c08-250721T170223"
+    "version": "HEAD-a4d54d1-250722T182643"
   },
   {
     "_disabled": "false",
@@ -2679,7 +2679,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-035b1ec-250721T234712"
+    "version": "HEAD-eed94c7-250722T201051"
   },
   {
     "_disabled": "false",
@@ -2740,5 +2740,86 @@
       "www-client"
     ],
     "version": "1.15t_2025-07-20"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zmap",
+    "pkg_family": "zmap",
+    "pkg_id": "sharun.wrappe.source.zmap",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-zmap/zmap/zmap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zmap/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast single packet network scanner designed for Internet-wide network surveys",
+      "zblocklist": "Tool for limiting and deduplicating a list of IP addresses using a blocklist or allowlist [zmap]",
+      "ziterate": "IP permutation generation file [zmap]",
+      "zmap": "The Fast Internet Scanner [zmap]",
+      "ztee": "Output buffer and splitter for use with ZMap output data [zmap]",
+      "ztests": "A tests harness tool for zmap [zmap]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "zmap"
+      ],
+      "archlinux": {
+        "aur": [
+          "zmap-git"
+        ],
+        "extra": [
+          "zmap"
+        ]
+      },
+      "debian": [
+        "zmap"
+      ],
+      "homebrew": [
+        "zmap"
+      ],
+      "nixpkgs": [
+        "zmap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zmap/archive.sharun.source.yaml",
+    "homepage": [
+      "https://zmap.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zmap/archive/sharun",
+    "provides": [
+      "zblocklist",
+      "ziterate",
+      "zmap",
+      "ztee",
+      "ztests"
+    ],
+    "repology": [
+      "zmap-network-scanner"
+    ],
+    "src_url": [
+      "https://github.com/zmap/zmap"
+    ],
+    "tag": [
+      "security"
+    ],
+    "version": "HEAD-89bf867-250722T113056"
   }
 ]

@@ -1312,7 +1312,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.16.3 ⚠️ | https://github.com/crystal-lang/crystal/archive/refs/tags/1.16.3.tar.gz |
-| BREW   | **1.17.0** | https://crystal-lang.org/ |
+| BREW   | **1.17.1** | https://crystal-lang.org/ |
 
 *Outdated*
 
@@ -2211,7 +2211,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | https://github.com/antonmedv/fx/archive/refs/tags/35.0.0.tar.gz |
-| BREW   | **37.0.1** | https://fx.wtf |
+| BREW   | **38.0.0** | https://fx.wtf |
 
 *Outdated*
 
@@ -8272,8 +8272,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.2.4 ✅ | https://github.com/upx/upx/releases/download/v4.2.4/upx-4.2.4-src.tar.xz |
-| BREW   | 4.2.4 | https://upx.github.io/ |
+| PPKG   | 4.2.4 ⚠️ | https://github.com/upx/upx/releases/download/v4.2.4/upx-4.2.4-src.tar.xz |
+| BREW   | **5.0.2** | https://upx.github.io/ |
+
+*Outdated*
 
 ## usbutils
 

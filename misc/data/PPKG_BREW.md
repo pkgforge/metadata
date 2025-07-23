@@ -136,7 +136,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.290** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.291** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -3609,7 +3609,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.7 ⚠️ | https://github.com/jorgerojas26/lazysql/archive/refs/tags/v0.3.7.tar.gz |
-| BREW   | **0.3.8** | https://github.com/jorgerojas26/lazysql |
+| BREW   | **0.3.9** | https://github.com/jorgerojas26/lazysql |
 
 *Outdated*
 
@@ -8964,7 +8964,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.45.4 ⚠️ | https://github.com/mikefarah/yq/archive/refs/tags/v4.45.4.tar.gz |
-| BREW   | **4.46.1** | https://github.com/mikefarah/yq |
+| BREW   | **4.47.1** | https://github.com/mikefarah/yq |
 
 *Outdated*
 

@@ -4892,7 +4892,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-cf3fece-250723T144727"
+    "version": "HEAD-d2b95eb-250723T163920"
   },
   {
     "_disabled": "false",
@@ -5209,7 +5209,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-cf3fece-250723T144727"
+    "version": "HEAD-d2b95eb-250723T163920"
   },
   {
     "_disabled": "true",
@@ -5882,7 +5882,7 @@
     "tag": [
       "cleaner"
     ],
-    "version": "HEAD-b9f3c31-250720T122121"
+    "version": "HEAD-99603e1-250723T150722"
   },
   {
     "_disabled": "false",
@@ -5935,7 +5935,7 @@
     "tag": [
       "devenv"
     ],
-    "version": "HEAD-7d8ac39-250723T141849"
+    "version": "HEAD-f97e619-250723T155220"
   },
   {
     "_disabled": "false",
@@ -7611,6 +7611,74 @@
     "_disabled": "false",
     "pkg": "gh",
     "pkg_family": "gh",
+    "pkg_id": "github.com.cli.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-cli/gh/gh",
+    "bincache": "ghcr.io/pkgforge/bincache/gh/official/gh",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gh/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "GitHub CLI tool",
+    "distro_pkg": {
+      "alpine": [
+        "github-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "github-cli-git"
+        ],
+        "extra": [
+          "github-cli"
+        ]
+      },
+      "debian": [
+        "gh"
+      ],
+      "homebrew": [
+        "gh"
+      ],
+      "nixpkgs": [
+        "gh"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gh/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/cli/cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/cli/cli"
+    ],
+    "provides": [
+      "gh==github-cli"
+    ],
+    "repology": [
+      "github-cli"
+    ],
+    "src_url": [
+      "https://github.com/cli/cli"
+    ],
+    "tag": [
+      "git"
+    ],
+    "version": "v2.76.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gh",
+    "pkg_family": "gh",
     "pkg_id": "github.com.cli.cli.source",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cli-source/gh/gh",
@@ -7674,7 +7742,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-43e7609-250723T104213"
+    "version": "HEAD-1b94463-250723T142127"
   },
   {
     "_disabled": "false",
@@ -7731,7 +7799,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-c343443-250723T120359"
+    "version": "HEAD-46a6adc-250723T180435"
   },
   {
     "_disabled": "false",
@@ -7888,7 +7956,7 @@
     "tag": [
       "gitlab"
     ],
-    "version": "HEAD-fe60bcf-250723T095924"
+    "version": "HEAD-9a93bcb-250723T163600"
   },
   {
     "_disabled": "false",
@@ -8338,6 +8406,68 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gost",
+    "pkg_family": "gost",
+    "pkg_id": "github.com.go-gost.gost.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gost-source/gost/gost",
+    "bincache": "ghcr.io/pkgforge/bincache/gost/go-gost/gost",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gost/static.go-gost.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A simple tunnel written in golang",
+    "distro_pkg": {
+      "alpine": [
+        "gost"
+      ],
+      "archlinux": {
+        "extra": [
+          "gost"
+        ]
+      },
+      "debian": [
+        "gost"
+      ],
+      "homebrew": [
+        "gost"
+      ],
+      "nixpkgs": [
+        "gost"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gost/static.go-gost.source.yaml",
+    "homepage": [
+      "https://github.com/go-gost/gost"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/go-gost/gost"
+    ],
+    "repology": [
+      "gost"
+    ],
+    "src_url": [
+      "https://github.com/go-gost/gost"
+    ],
+    "tag": [
+      "tunnel"
+    ],
+    "version": "HEAD-0bfc7f1-250723T224959"
+  },
+  {
+    "_disabled": "false",
     "pkg": "gosu",
     "pkg_family": "gosu",
     "pkg_id": "github.com.tianon.gosu",
@@ -8497,7 +8627,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b37e9e0-250723T172356"
+    "version": "HEAD-76df3da-250724T015245"
   },
   {
     "_disabled": "false",
@@ -9274,7 +9404,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-e160f7d-250723T010507"
+    "version": "HEAD-d8f2c40-250723T163802"
   },
   {
     "_disabled": "false",
@@ -9444,6 +9574,63 @@
       "math"
     ],
     "version": "HEAD-228edc4-250609T140652"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "katana",
+    "pkg_family": "katana",
+    "pkg_id": "github.com.projectdiscovery.katana",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-katana/katana/katana",
+    "bincache": "ghcr.io/pkgforge/bincache/katana/official/katana",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/katana/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Crawling and spidering framework",
+    "distro_pkg": {
+      "alpine": [
+        "katana"
+      ],
+      "archlinux": {
+        "aur": [
+          "katana-git"
+        ]
+      },
+      "nixpkgs": [
+        "katana"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/katana/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/katana"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/katana"
+    ],
+    "repology": [
+      "katana-crawling"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/katana"
+    ],
+    "tag": [
+      "crawler",
+      "spider"
+    ],
+    "version": "HEAD-e6e1946-250723T191622"
   },
   {
     "_disabled": "false",
@@ -9840,7 +10027,7 @@
       "aws",
       "infra"
     ],
-    "version": "HEAD-df2b810-250717T205140"
+    "version": "HEAD-cfec62f-250722T195729"
   },
   {
     "_disabled": "false",
@@ -10185,6 +10372,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "melange",
+    "pkg_family": "melange",
+    "pkg_id": "github.com.chainguard-dev.melange",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/dev-melange/melange/melange",
+    "bincache": "ghcr.io/pkgforge/bincache/melange/official/melange",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/melange/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Build APKs from source code",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "melange"
+        ]
+      },
+      "homebrew": [
+        "melange"
+      ],
+      "nixpkgs": [
+        "melange"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/melange/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/chainguard-dev/melange"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/chainguard-dev/melange"
+    ],
+    "provides": [
+      "melange"
+    ],
+    "repology": [
+      "melange"
+    ],
+    "src_url": [
+      "https://github.com/chainguard-dev/melange"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-955df03-250723T173331"
+  },
+  {
+    "_disabled": "false",
     "pkg": "meli",
     "pkg_family": "meli",
     "pkg_id": "github.com.meli.meli",
@@ -10382,7 +10628,7 @@
     "tag": [
       "utility"
     ],
-    "version": "HEAD-f3fdfc4-250722T231125"
+    "version": "HEAD-cf03b6d-250723T105304"
   },
   {
     "_disabled": "false",
@@ -10879,7 +11125,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6370244-250722T163300"
+    "version": "HEAD-bd569e6-250723T163029"
   },
   {
     "_disabled": "false",
@@ -11620,7 +11866,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-51265b2-250722T172421"
+    "version": "HEAD-1b01625-250723T225421"
   },
   {
     "_disabled": "false",
@@ -11684,7 +11930,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-51265b2-250722T172421"
+    "version": "HEAD-1b01625-250723T225421"
   },
   {
     "_disabled": "false",
@@ -11751,7 +11997,7 @@
     "tag": [
       "nvme"
     ],
-    "version": "HEAD-1494a4d-250716T141646"
+    "version": "HEAD-be2d5fa-250723T150033"
   },
   {
     "_disabled": "false",
@@ -13335,7 +13581,7 @@
       "analyzer",
       "linter"
     ],
-    "version": "HEAD-1f96d5c-250721T200904"
+    "version": "HEAD-165b8d4-250723T141627"
   },
   {
     "_disabled": "false",
@@ -13667,6 +13913,61 @@
       "Utility"
     ],
     "version": "HEAD-6bae6ca-250721T234631"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "runme",
+    "pkg_family": "runme",
+    "pkg_id": "github.com.stateful.runme",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stateful-runme/runme/runme",
+    "bincache": "ghcr.io/pkgforge/bincache/runme/official/runme",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/runme/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Execute commands inside/from runbooks, docs, and READMEs",
+    "distro_pkg": {
+      "homebrew": [
+        "runme"
+      ],
+      "nixpkgs": [
+        "runme"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/runme/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/stateful/runme"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/stateful/runme"
+    ],
+    "provides": [
+      "runme"
+    ],
+    "repology": [
+      "runme"
+    ],
+    "src_url": [
+      "https://github.com/stateful/runme"
+    ],
+    "tag": [
+      "cloud",
+      "devops"
+    ],
+    "version": "v3.15.1-rc.0"
   },
   {
     "_disabled": "false",
@@ -14034,7 +14335,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-cf76c89-250722T120445"
+    "version": "HEAD-92ee8a5-250723T190927"
   },
   {
     "_disabled": "false",
@@ -14623,7 +14924,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7286aae-250723T134608"
+    "version": "HEAD-6dda390-250723T175918"
   },
   {
     "_disabled": "false",
@@ -14929,7 +15230,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-1ae6a97-250722T211325"
+    "version": "HEAD-f1f334b-250723T112505"
   },
   {
     "_disabled": "false",
@@ -15302,7 +15603,7 @@
       "load-balancer",
       "proxy"
     ],
-    "version": "v3.4.5"
+    "version": "v3.5.0"
   },
   {
     "_disabled": "false",
@@ -15888,6 +16189,49 @@
   },
   {
     "_disabled": "false",
+    "pkg": "wait4x",
+    "pkg_family": "wait4x",
+    "pkg_id": "github.com.wait4x.wait4x.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wait4x-source/wait4x/wait4x",
+    "bincache": "ghcr.io/pkgforge/bincache/wait4x/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wait4x/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Wait for a port or a service to enter the requested state",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wait4x/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/wait4x/wait4x"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wait4x/wait4x"
+    ],
+    "provides": [
+      "wait4x"
+    ],
+    "src_url": [
+      "https://github.com/wait4x/wait4x"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-33cbc6b-250723T180835"
+  },
+  {
+    "_disabled": "false",
     "pkg": "wasm-micro-runtime",
     "pkg_family": "wasm-micro-runtime",
     "pkg_id": "github.com.bytecodealliance.wasm-micro-runtime.source",
@@ -15928,6 +16272,49 @@
       "Utility"
     ],
     "version": "HEAD-c080aa8-250722T050114"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wasm-tools",
+    "pkg_family": "wasm-tools",
+    "pkg_id": "github.com.bytecodealliance.wasm-tools.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tools-source/wasm-tools/wasm-tools",
+    "bincache": "ghcr.io/pkgforge/bincache/wasm-tools/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wasm-tools/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI for low-level manipulation of WebAssembly modules",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wasm-tools/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/bytecodealliance/wasm-tools"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/bytecodealliance/wasm-tools"
+    ],
+    "provides": [
+      "wasm-tools"
+    ],
+    "src_url": [
+      "https://github.com/bytecodealliance/wasm-tools"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-2a8fd3c-250723T144415"
   },
   {
     "_disabled": "false",
@@ -16013,7 +16400,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-0e6d9c6-250722T223151"
+    "version": "HEAD-ef3d260-250723T152319"
   },
   {
     "_disabled": "false",
@@ -16821,7 +17208,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-1f596a0-250723T150201"
+    "version": "HEAD-c2883f1-250723T224311"
   },
   {
     "_disabled": "false",

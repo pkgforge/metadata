@@ -2,7 +2,7 @@
  1.5G └─┬ main
  1.0G   ├─┬ external
  832M   │ ├─┬ pkgforge-go
- 832M   │ │ ├─┬ data
+ 831M   │ │ ├─┬ data
   73M   │ │ │ ├── x86_64-Linux.json
   72M   │ │ │ ├── riscv64-Linux.json
   72M   │ │ │ ├── aarch64-Linux.json
@@ -302,7 +302,7 @@
   36K   │   └─┬ scripts
   32K   │     └── gen_meta.sh
  228M   ├─┬ misc
- 227M   │ ├─┬ data
+ 228M   │ ├─┬ data
   72M   │ │ ├── ARCHLINUX.json
   38M   │ │ ├── FLATPAK_APPSTREAM.xml
   32M   │ │ ├── CONDA.json
@@ -321,7 +321,7 @@
  336K   │ │ ├── PPKG.json
  276K   │ │ ├── PPKG_BREW.md
  240K   │ │ ├── FLATPAK_POPULAR.json
- 224K   │ │ ├── FLATPAK_TRENDING.json
+ 228K   │ │ ├── FLATPAK_TRENDING.json
   76K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
@@ -424,7 +424,7 @@
  1.1M   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
  1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
  1.0M   │ │ ├── COMP_VER_CACHE.md
- 792K   │ │ ├── COMP_VER_CACHE_OLD.json
+ 796K   │ │ ├── COMP_VER_CACHE_OLD.json
  776K   │ │ ├── pub_issues_binaries.txt
  492K   │ │ ├── OLD_bincache_riscv64-Linux.json
  492K   │ │ ├── DIFF_bincache_aarch64-Linux.json

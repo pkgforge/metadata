@@ -525,6 +525,99 @@
   },
   {
     "_disabled": "false",
+    "pkg": "bin",
+    "pkg_family": "bin",
+    "pkg_id": "github.com.marcosnils.bin",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/marcosnils-bin/bin/bin",
+    "bincache": "ghcr.io/pkgforge/bincache/bin/official/bin",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bin/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Effortless binary manager",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bin/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/marcosnils/bin"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/marcosnils/bin"
+    ],
+    "provides": [
+      "bin"
+    ],
+    "repology": [
+      "bin-marcosnils"
+    ],
+    "src_url": [
+      "https://github.com/marcosnils/bin"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "v0.23.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bin-graph",
+    "pkg_family": "bin-graph",
+    "pkg_id": "ppkg.bin-graph.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/graph-stable/bin-graph/bin-graph",
+    "bincache": "ghcr.io/pkgforge/bincache/bin-graph/ppkg/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bin-graph/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Visualize binary files",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bin-graph/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/8dcc/bin-graph"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "bin-graph"
+    ],
+    "repology": [
+      "bin-graph"
+    ],
+    "src_url": [
+      "https://github.com/8dcc/bin-graph"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2025.07.24"
+  },
+  {
+    "_disabled": "false",
     "pkg": "boringtun",
     "pkg_family": "boringtun",
     "pkg_id": "github.com.cloudflare.boringtun",
@@ -5151,6 +5244,67 @@
   },
   {
     "_disabled": "false",
+    "pkg": "frp",
+    "pkg_family": "frp",
+    "pkg_id": "github.com.fatedier.frp.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/frp-source/frp/frp",
+    "bincache": "ghcr.io/pkgforge/bincache/frp/official/frpc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/frp/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast Reverse Proxy",
+    "distro_pkg": {
+      "alpine": [
+        "frp"
+      ],
+      "archlinux": {
+        "aur": [
+          "frp",
+          "frp-bin"
+        ]
+      },
+      "nixpkgs": [
+        "frp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/frp/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/fatedier/frp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/fatedier/frp"
+    ],
+    "provides": [
+      "frpc==frp-client",
+      "frps==frp-server"
+    ],
+    "repology": [
+      "frp"
+    ],
+    "src_url": [
+      "https://github.com/fatedier/frp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-c3bf952-250724T101644"
+  },
+  {
+    "_disabled": "false",
     "pkg": "gettext",
     "pkg_family": "gettext",
     "pkg_id": "nixpkgs.gettext",
@@ -5421,7 +5575,77 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-55b4284-250724T000803"
+    "version": "HEAD-41f9dcc-250724T060414"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gitlab-cli",
+    "pkg_family": "gitlab-cli",
+    "pkg_id": "gitlab.com.gitlab-org.cli",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/org-cli/gitlab-cli/gitlab-cli",
+    "bincache": "ghcr.io/pkgforge/bincache/gitlab-cli/official/gitlab-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gitlab-cli/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Official Gitlab CLI",
+    "distro_pkg": {
+      "alpine": [
+        "glab"
+      ],
+      "archlinux": {
+        "aur": [
+          "glab-git"
+        ],
+        "extra": [
+          "glab"
+        ]
+      },
+      "debian": [
+        "glab"
+      ],
+      "homebrew": [
+        "glab"
+      ],
+      "nixpkgs": [
+        "glab"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gitlab-cli/static.official.source.yaml",
+    "homepage": [
+      "https://docs.gitlab.com/ee/editor_extensions/gitlab_cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://gitlab.com/gitlab-org/cli"
+    ],
+    "provides": [
+      "glab",
+      "gitlab-cli"
+    ],
+    "repology": [
+      "glab-gitlab-cli"
+    ],
+    "src_url": [
+      "https://gitlab.com/gitlab-org/cli"
+    ],
+    "tag": [
+      "gitlab"
+    ],
+    "version": "HEAD-6dd100b-250723T235322"
   },
   {
     "_disabled": "false",
@@ -5995,7 +6219,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.23"
+    "version": "2025.07.24"
   },
   {
     "_disabled": "false",
@@ -6341,6 +6565,73 @@
       "random"
     ],
     "version": "HEAD-2a28345-250715T225038"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "jujutsu",
+    "pkg_family": "jujutsu",
+    "pkg_id": "github.com.martinvonz.jj",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/martinvonz-jj/jujutsu/jujutsu",
+    "bincache": "ghcr.io/pkgforge/bincache/jujutsu/official/jj",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/jujutsu/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Jujutsu is a Git-compatible DVCS that is both simple and powerful",
+    "distro_pkg": {
+      "alpine": [
+        "jujutsu"
+      ],
+      "archlinux": {
+        "aur": [
+          "jujutsu-git"
+        ],
+        "extra": [
+          "jujutsu"
+        ]
+      },
+      "nixpkgs": [
+        "jujutsu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/jujutsu/static.official.source.yaml",
+    "homepage": [
+      "https://jj-vcs.github.io/jj",
+      "https://github.com/jj-vcs/jj"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache",
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jj-vcs/jj"
+    ],
+    "provides": [
+      "jj",
+      "jujutsu"
+    ],
+    "repology": [
+      "jujutsu"
+    ],
+    "src_url": [
+      "https://github.com/jj-vcs/jj"
+    ],
+    "tag": [
+      "git",
+      "vcs"
+    ],
+    "version": "HEAD-1acd2a0-250724T045758"
   },
   {
     "_disabled": "false",
@@ -6976,6 +7267,74 @@
   },
   {
     "_disabled": "false",
+    "pkg": "miniflux",
+    "pkg_family": "miniflux",
+    "pkg_id": "github.com.miniflux.v2",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/miniflux-v2/miniflux/miniflux",
+    "bincache": "ghcr.io/pkgforge/bincache/miniflux/official/miniflux",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/miniflux/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Minimalist and opinionated feed reader",
+    "distro_pkg": {
+      "alpine": [
+        "miniflux"
+      ],
+      "archlinux": {
+        "aur": [
+          "miniflux-git"
+        ],
+        "extra": [
+          "miniflux"
+        ]
+      },
+      "debian": [
+        "miniflux"
+      ],
+      "gnuguix": [
+        "miniflux"
+      ],
+      "nixpkgs": [
+        "miniflux"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/miniflux/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/miniflux/v2"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/miniflux/v2"
+    ],
+    "provides": [
+      "miniflux"
+    ],
+    "repology": [
+      "miniflux"
+    ],
+    "src_url": [
+      "https://github.com/miniflux/v2"
+    ],
+    "tag": [
+      "rss"
+    ],
+    "version": "HEAD-54abd0a-250723T210615"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mtdutils",
     "pkg_family": "mtd-utils",
     "pkg_id": "nixpkgs.mtdutils",
@@ -7225,6 +7584,66 @@
       "mtd"
     ],
     "version": "2.3.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "naabu",
+    "pkg_family": "naabu",
+    "pkg_id": "github.com.projectdiscovery.naabu",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-naabu/naabu/naabu",
+    "bincache": "ghcr.io/pkgforge/bincache/naabu/official/naabu",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/naabu/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A fast port scanner written in go with a focus on reliability and simplicity",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "naabu",
+          "naabu-bin",
+          "naabu-git"
+        ]
+      },
+      "homebrew": [
+        "naabu"
+      ],
+      "nixpkgs": [
+        "naabu"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/naabu/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/naabu"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL3",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/naabu"
+    ],
+    "repology": [
+      "naabu"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/naabu"
+    ],
+    "tag": [
+      "nmap",
+      "security"
+    ],
+    "version": "HEAD-bfac034-250724T063818"
   },
   {
     "_disabled": "false",
@@ -7778,7 +8197,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.23"
+    "version": "2025.07.24"
   },
   {
     "_disabled": "false",
@@ -8897,7 +9316,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-9095e57-250724T092130"
+    "version": "HEAD-66a767d-250724T122218"
   },
   {
     "_disabled": "false",
@@ -9252,6 +9671,52 @@
       "ssh"
     ],
     "version": "HEAD-f9c8f60-230520T112637"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "stress-ng",
+    "pkg_family": "stress-ng",
+    "pkg_id": "github.com.ColinIanKing.stress-ng.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ng-source/stress-ng/stress-ng",
+    "bincache": "ghcr.io/pkgforge/bincache/stress-ng/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/stress-ng/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Stress test a computer system in various selectable ways",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/stress-ng/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/ColinIanKing/stress-ng"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/ColinIanKing/stress-ng"
+    ],
+    "provides": [
+      "stress-ng"
+    ],
+    "repology": [
+      "stress-ng"
+    ],
+    "src_url": [
+      "https://github.com/ColinIanKing/stress-ng"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-a4578f7-250724T073822"
   },
   {
     "_disabled": "false",

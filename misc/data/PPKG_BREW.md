@@ -422,7 +422,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.2.37 ⚠️ | https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz |
-| BREW   | **5.3** | https://www.gnu.org/software/bash/ |
+| BREW   | **5.3.3** | https://www.gnu.org/software/bash/ |
 
 *Outdated*
 
@@ -1415,8 +1415,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.16 ✅ | https://github.com/emikulic/darkhttpd/archive/refs/tags/v1.16.tar.gz |
-| BREW   | 1.16 | https://unix4lyfe.org/darkhttpd/ |
+| PPKG   | 1.16 ⚠️ | https://github.com/emikulic/darkhttpd/archive/refs/tags/v1.16.tar.gz |
+| BREW   | **1.17** | https://unix4lyfe.org/darkhttpd/ |
+
+*Outdated*
 
 ## dasel
 
@@ -6538,7 +6540,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.9.0 ⚠️ | https://github.com/opencv/opencv/archive/refs/tags/4.9.0.tar.gz |
-| BREW   | **4.11.0** | https://opencv.org/ |
+| BREW   | **4.12.0** | https://opencv.org/ |
 
 *Outdated*
 
@@ -7826,7 +7828,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.1.5 ⚠️ | https://github.com/yorukot/superfile/archive/refs/tags/v1.1.5.tar.gz |
-| BREW   | **1.3.2** | https://superfile.netlify.app/ |
+| BREW   | **1.3.3** | https://superfile.netlify.app/ |
 
 *Outdated*
 

@@ -5883,7 +5883,7 @@
     "tag": [
       "devenv"
     ],
-    "version": "HEAD-8964570-250724T171211"
+    "version": "HEAD-f09349a-250725T155247"
   },
   {
     "_disabled": "false",
@@ -6950,6 +6950,80 @@
   },
   {
     "_disabled": "false",
+    "pkg": "etcd",
+    "pkg_family": "etcd",
+    "pkg_id": "github.com.etcd-io.etcd",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/io-etcd/etcd/etcd",
+    "bincache": "ghcr.io/pkgforge/bincache/etcd/official/etcd",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/etcd/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Distributed reliable key-value store for the most critical data of a distributed system",
+      "etcd": "The official Go etcd client [etcd]",
+      "etcdctl": "Command Line Client for etcd [etcd]",
+      "etcdutl": "Command Line Administration utility for etcd [etcd]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "etcd"
+      ],
+      "archlinux": {
+        "aur": [
+          "etcd",
+          "etcd-bin",
+          "etcd-git"
+        ]
+      },
+      "debian": [
+        "etcd"
+      ],
+      "homebrew": [
+        "etcd"
+      ],
+      "nixpkgs": [
+        "etcd"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/etcd/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/etcd-io/etcd"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/etcd-io/etcd"
+    ],
+    "provides": [
+      "etcd",
+      "etcdctl",
+      "etcdutl"
+    ],
+    "repology": [
+      "etcd"
+    ],
+    "src_url": [
+      "https://github.com/etcd-io/etcd"
+    ],
+    "tag": [
+      "distributed"
+    ],
+    "version": "v3.6.4"
+  },
+  {
+    "_disabled": "false",
     "pkg": "faac",
     "pkg_family": "faac",
     "pkg_id": "nixpkgs.faac",
@@ -7227,7 +7301,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-07ff4e7-250725T115510"
+    "version": "HEAD-30ff371-250725T182821"
   },
   {
     "_disabled": "false",
@@ -7695,7 +7769,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-76843ae-250725T120517"
+    "version": "HEAD-8ea8d38-250725T180427"
   },
   {
     "_disabled": "false",
@@ -8456,6 +8530,50 @@
   },
   {
     "_disabled": "false",
+    "pkg": "headless-terminal",
+    "pkg_family": "headless-terminal",
+    "pkg_id": "github.com.andyk.ht",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/andyk-ht/headless-terminal/headless-terminal",
+    "bincache": "ghcr.io/pkgforge/bincache/headless-terminal/official/headless-terminal",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/headless-terminal/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Headless Terminal (ht) - wrap any binary with a terminal interface for easy programmatic access",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/headless-terminal/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/andyk/ht"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/andyk/ht"
+    ],
+    "provides": [
+      "ht",
+      "headless-terminal"
+    ],
+    "repology": [
+      "headless-terminal"
+    ],
+    "src_url": [
+      "https://github.com/andyk/ht"
+    ],
+    "tag": [
+      "terminal"
+    ],
+    "version": "HEAD-ed569e9-250725T171222"
+  },
+  {
+    "_disabled": "false",
     "pkg": "html-xml-utils",
     "pkg_family": "html-xml-utils",
     "pkg_id": "nixpkgs.html-xml-utils",
@@ -9059,7 +9177,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-3269c63-250725T104434"
+    "version": "HEAD-47868dd-250725T175818"
   },
   {
     "_disabled": "false",
@@ -10436,7 +10554,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-351e2f5-250724T155237"
+    "version": "HEAD-cc63d1b-250725T154337"
   },
   {
     "_disabled": "false",
@@ -10704,7 +10822,7 @@
       "mesh",
       "wireguard"
     ],
-    "version": "HEAD-31872a7-250725T141445"
+    "version": "HEAD-3d9be50-250725T184348"
   },
   {
     "_disabled": "false",
@@ -10817,6 +10935,66 @@
       "nfs"
     ],
     "version": "2.7.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ngrok",
+    "pkg_family": "ngrok",
+    "pkg_id": "equinox.com.ngrok.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ngrok-stable/ngrok/ngrok",
+    "bincache": "ghcr.io/pkgforge/bincache/ngrok/official/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/ngrok/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "External Tunnel to Internal Assets",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ngrok"
+        ]
+      },
+      "homebrew": [
+        "ngrok"
+      ],
+      "nixpkgs": [
+        "ngrok"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/ngrok/static.official.stable.yaml",
+    "homepage": [
+      "https://ngrok.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://ngrok.com/downloads/linux"
+    ],
+    "provides": [
+      "ngrok"
+    ],
+    "repology": [
+      "ngrok"
+    ],
+    "src_url": [
+      "https://ngrok.com/downloads/linux?tab=download",
+      "https://dl.equinox.io/ngrok/ngrok-v3/stable/archive"
+    ],
+    "tag": [
+      "tunnel"
+    ],
+    "version": "3.25.0"
   },
   {
     "_disabled": "false",
@@ -12357,7 +12535,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-dfcf6d8-250725T064118"
+    "version": "HEAD-5e0829d-250725T144616"
   },
   {
     "_disabled": "false",
@@ -12846,7 +13024,7 @@
       "cloud",
       "devops"
     ],
-    "version": "v3.15.1-rc.0"
+    "version": "v3.15.1-rc.1"
   },
   {
     "_disabled": "false",
@@ -13862,7 +14040,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-4007887-250725T123705"
+    "version": "HEAD-6d6ffce-250725T145646"
   },
   {
     "_disabled": "false",
@@ -13923,6 +14101,63 @@
       "benchmark"
     ],
     "version": "0.19.02"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "sttr",
+    "pkg_family": "sttr",
+    "pkg_id": "github.com.abhimanyu003.sttr",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/abhimanyu003-sttr/sttr/sttr",
+    "bincache": "ghcr.io/pkgforge/bincache/sttr/official/sttr",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/sttr/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Cli app to perform various operations on string",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "sttr",
+          "sttr-bin"
+        ]
+      },
+      "nixpkgs": [
+        "sttr"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/sttr/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/abhimanyu003/sttr"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/abhimanyu003/sttr"
+    ],
+    "provides": [
+      "sttr"
+    ],
+    "repology": [
+      "sttr"
+    ],
+    "src_url": [
+      "https://github.com/abhimanyu003/sttr"
+    ],
+    "tag": [
+      "string"
+    ],
+    "version": "HEAD-edb984f-250725T215954"
   },
   {
     "_disabled": "false",
@@ -14114,7 +14349,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-c572442-250725T102141"
+    "version": "HEAD-bfebf87-250725T110357"
   },
   {
     "_disabled": "false",
@@ -14540,7 +14775,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-5e45fad-250725T163617"
+    "version": "HEAD-c6a5001-250725T103140"
   },
   {
     "_disabled": "false",
@@ -14590,7 +14825,7 @@
       "busybox",
       "coreboot"
     ],
-    "version": "HEAD-b019017-250724T151933"
+    "version": "HEAD-a8e4d08-250725T145106"
   },
   {
     "_disabled": "false",
@@ -14993,6 +15228,49 @@
   },
   {
     "_disabled": "false",
+    "pkg": "wasmi",
+    "pkg_family": "wasmi",
+    "pkg_id": "github.com.wasmi-labs.wasmi.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wasmi-source/wasmi/wasmi",
+    "bincache": "ghcr.io/pkgforge/bincache/wasmi/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wasmi/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Efficient and Lightweight WebAssembly interpreter with a focus on constrained and embedded systems",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wasmi/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/wasmi-labs/wasmi"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wasmi-labs/wasmi"
+    ],
+    "provides": [
+      "wasmi-cli==wasm_cli"
+    ],
+    "src_url": [
+      "https://github.com/wasmi-labs/wasmi"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-f920c28-250725T180840"
+  },
+  {
+    "_disabled": "false",
     "pkg": "wasmtime",
     "pkg_family": "wasmtime",
     "pkg_id": "github.com.bytecodealliance.wasmtime.source",
@@ -15032,7 +15310,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-88079b4-250724T202521"
+    "version": "HEAD-0f457fa-250725T182203"
   },
   {
     "_disabled": "false",

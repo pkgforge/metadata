@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.24 ⚠️ | null |
+| PPKG   | 2025.07.25 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -899,7 +899,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.5.3 ⚠️ | https://github.com/catchorg/Catch2/archive/refs/tags/v3.5.3.tar.gz |
-| BREW   | **3.8.1** | https://github.com/catchorg/Catch2 |
+| BREW   | **3.9.0** | https://github.com/catchorg/Catch2 |
 
 *Outdated*
 
@@ -1301,7 +1301,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.14.4 ⚠️ | https://github.com/containers/crun/releases/download/1.14.4/crun-1.14.4.tar.xz |
-| BREW   | **1.21** | https://github.com/containers/crun |
+| BREW   | **1.23** | https://github.com/containers/crun |
 
 *Outdated*
 
@@ -1594,7 +1594,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.57.1** | https://github.com/dolthub/dolt |
+| BREW   | **1.57.2** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2928,7 +2928,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.71.0 ⚠️ | https://github.com/grpc/grpc/archive/refs/tags/v1.71.0.tar.gz |
-| BREW   | **1.73.1** | https://grpc.io/ |
+| BREW   | **1.74.0** | https://grpc.io/ |
 
 *Outdated*
 
@@ -4589,7 +4589,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.24 ⚠️ | null |
+| PPKG   | 2025.07.25 ⚠️ | null |
 | BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4609,7 +4609,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.24 ⚠️ | null |
+| PPKG   | 2025.07.25 ⚠️ | null |
 | BREW   | **1.13.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6645,7 +6645,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.24 ⚠️ | null |
+| PPKG   | 2025.07.25 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6791,7 +6791,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.49.0** | https://pixi.sh |
+| BREW   | **0.50.0** | https://pixi.sh |
 
 *Outdated*
 
@@ -6812,7 +6812,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.24 ⚠️ | null |
+| PPKG   | 2025.07.25 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6974,7 +6974,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.24 ⚠️ | null |
+| PPKG   | 2025.07.25 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7101,7 +7101,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.2.0 ⚠️ | https://download.qemu.org/qemu-9.2.0.tar.xz |
-| BREW   | **10.0.2** | https://www.qemu.org/ |
+| BREW   | **10.0.3** | https://www.qemu.org/ |
 
 *Outdated*
 
@@ -7203,7 +7203,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/rbspy/rbspy/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.35.0** | https://rbspy.github.io/ |
+| BREW   | **0.36.0** | https://rbspy.github.io/ |
 
 *Outdated*
 
@@ -7406,7 +7406,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.4** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.5** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -8328,7 +8328,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.2** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.3** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

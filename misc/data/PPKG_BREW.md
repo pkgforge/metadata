@@ -2765,7 +2765,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.1 ⚠️ | https://github.com/goreleaser/goreleaser/archive/refs/tags/v1.25.1.tar.gz |
-| BREW   | **2.11.0** | https://goreleaser.com/ |
+| BREW   | **2.11.1** | https://goreleaser.com/ |
 
 *Outdated*
 
@@ -3297,7 +3297,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | r58 ⚠️ | https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz |
-| BREW   | **60** | https://github.com/benhoyt/inih |
+| BREW   | **61** | https://github.com/benhoyt/inih |
 
 *Outdated*
 
@@ -5748,7 +5748,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.1.1732813678 ⚠️ | https://github.com/LuaJIT/LuaJIT/archive/19878ec05c239ccaf5f3d17af27670a963e25b8b.tar.gz |
-| BREW   | **2.1.1748459687** | https://luajit.org/luajit.html |
+| BREW   | **2.1.1753364724** | https://luajit.org/luajit.html |
 
 *Outdated*
 

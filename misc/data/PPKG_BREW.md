@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.25 ⚠️ | null |
+| PPKG   | 2025.07.26 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -3344,7 +3344,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.18 ⚠️ | https://github.com/esnet/iperf/releases/download/3.18/iperf-3.18.tar.gz |
-| BREW   | **3.19** | https://github.com/esnet/iperf |
+| BREW   | **3.19.1** | https://github.com/esnet/iperf |
 
 *Outdated*
 
@@ -4589,8 +4589,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.25 ⚠️ | null |
-| BREW   | **1.10.1** | https://nghttp2.org/nghttp3/ |
+| PPKG   | 2025.07.26 ⚠️ | null |
+| BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
 
@@ -4609,8 +4609,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.25 ⚠️ | null |
-| BREW   | **1.13.0** | https://nghttp2.org/ngtcp2/ |
+| PPKG   | 2025.07.26 ⚠️ | null |
+| BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
 
@@ -5759,7 +5759,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.683** | https://luau.org |
+| BREW   | **0.684** | https://luau.org |
 
 *Outdated*
 
@@ -6645,7 +6645,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.25 ⚠️ | null |
+| PPKG   | 2025.07.26 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6791,7 +6791,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.50.0** | https://pixi.sh |
+| BREW   | **0.50.1** | https://pixi.sh |
 
 *Outdated*
 
@@ -6812,7 +6812,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.25 ⚠️ | null |
+| PPKG   | 2025.07.26 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6974,7 +6974,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.25 ⚠️ | null |
+| PPKG   | 2025.07.26 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7796,8 +7796,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.2.25 ✅ | https://github.com/abhimanyu003/sttr/archive/refs/tags/v0.2.25.tar.gz |
-| BREW   | 0.2.25 | https://github.com/abhimanyu003/sttr |
+| PPKG   | 0.2.25 ⚠️ | https://github.com/abhimanyu003/sttr/archive/refs/tags/v0.2.25.tar.gz |
+| BREW   | **0.2.26** | https://github.com/abhimanyu003/sttr |
+
+*Outdated*
 
 ## stylua
 

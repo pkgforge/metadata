@@ -222,7 +222,7 @@
     "tag": [
       "file-server"
     ],
-    "version": "v3.45.1"
+    "version": "v3.46.0"
   },
   {
     "_disabled": "false",
@@ -781,7 +781,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.25"
+    "version": "2025.07.26"
   },
   {
     "_disabled": "false",
@@ -1125,6 +1125,76 @@
   },
   {
     "_disabled": "false",
+    "pkg": "bmake",
+    "pkg_family": "bmake",
+    "pkg_id": "ppkg.bmake",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-bmake/bmake/bmake",
+    "bincache": "ghcr.io/pkgforge/bincache/bmake/ppkg/bmake",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bmake/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Portable version of NetBSD make utility",
+    "distro_pkg": {
+      "alpine": [
+        "bmake"
+      ],
+      "archlinux": {
+        "extra": [
+          "bmake"
+        ]
+      },
+      "debian": [
+        "bmake"
+      ],
+      "gnuguix": [
+        "bmake"
+      ],
+      "homebrew": [
+        "bmake"
+      ],
+      "nixpkgs": [
+        "bmake"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bmake/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.crufty.net/help/sjg/bmake.htm",
+      "https://github.com/NetBSD/src/tree/trunk/usr.bin/make"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "bmake"
+    ],
+    "repology": [
+      "bmake"
+    ],
+    "src_url": [
+      "https://www.crufty.net/ftp/pub/sjg/"
+    ],
+    "tag": [
+      "utility"
+    ],
+    "version": "20250308"
+  },
+  {
+    "_disabled": "false",
     "pkg": "brotli",
     "pkg_family": "brotli",
     "pkg_id": "nixpkgs.brotli",
@@ -1262,6 +1332,80 @@
     "_disabled": "false",
     "pkg": "bubblewrap",
     "pkg_family": "bubblewrap",
+    "pkg_id": "github.com.containers.bubblewrap",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containers-bubblewrap/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/official/bwrap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Namespaces-powered chroot-like solution for Unprivileged Sandboxing",
+    "distro_pkg": {
+      "alpine": [
+        "bubblewrap"
+      ],
+      "archlinux": {
+        "aur": [
+          "bubblewrap-git"
+        ],
+        "extra": [
+          "bubblewrap"
+        ]
+      },
+      "debian": [
+        "bubblewrap"
+      ],
+      "gnuguix": [
+        "bubblewrap"
+      ],
+      "homebrew": [
+        "bubblewrap"
+      ],
+      "nixpkgs": [
+        "bubblewrap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bubblewrap/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "LGPL-2.0-or-later"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containers/bubblewrap"
+    ],
+    "provides": [
+      "bwrap==bubblewrap"
+    ],
+    "repology": [
+      "bubblewrap"
+    ],
+    "src_url": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "tag": [
+      "container",
+      "namespace",
+      "sandbox"
+    ],
+    "version": "HEAD-9ca3b05-241030T160747"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bubblewrap",
+    "pkg_family": "bubblewrap",
     "pkg_id": "github.com.containers.bubblewrap.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bubblewrap-glibc/bubblewrap/bubblewrap",
@@ -1319,6 +1463,83 @@
     ],
     "provides": [
       "bwrap==bubblewrap"
+    ],
+    "repology": [
+      "bubblewrap"
+    ],
+    "src_url": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "tag": [
+      "container",
+      "namespace",
+      "sandbox"
+    ],
+    "version": "HEAD-9ca3b05-241030T160747"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bubblewrap",
+    "pkg_family": "bubblewrap",
+    "pkg_id": "github.com.containers.bubblewrap.patched",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bubblewrap-patched/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/patched/bwrap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.patched.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Namespaces-powered chroot-like solution for Unprivileged Sandboxing (Patched)",
+    "distro_pkg": {
+      "alpine": [
+        "bubblewrap"
+      ],
+      "archlinux": {
+        "aur": [
+          "bubblewrap-git"
+        ],
+        "extra": [
+          "bubblewrap"
+        ]
+      },
+      "debian": [
+        "bubblewrap"
+      ],
+      "gnuguix": [
+        "bubblewrap"
+      ],
+      "homebrew": [
+        "bubblewrap"
+      ],
+      "nixpkgs": [
+        "bubblewrap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bubblewrap/static.patched.source.yaml",
+    "homepage": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "LGPL-2.0-or-later"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containers/bubblewrap",
+      "The bwrap-patched binary is patched to allow nested bubblewraps with capabilities (INSECURE)",
+      "Learn more @ https://github.com/VHSgunzo/bubblewrap-static/blob/main/caps.patch"
+    ],
+    "provides": [
+      "bwrap=>bwrap-patched",
+      "bwrap=>bubblewrap-patched"
     ],
     "repology": [
       "bubblewrap"
@@ -2418,6 +2639,90 @@
       "Utility"
     ],
     "version": "0.17.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bzip3",
+    "pkg_family": "bzip3",
+    "pkg_id": "ppkg.bzip3",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-bzip3/bzip3/bzip3",
+    "bincache": "ghcr.io/pkgforge/bincache/bzip3/ppkg/bzip3",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bzip3/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Tools for compressing and decompressing bzip3 files",
+      "bunzip3": "Decompress data from standard input to the standard output [bzip3]",
+      "bz3cat": "Decompress data from standard input & concatenate [bzip3]",
+      "bz3grep": "Print lines matching a pattern in bzip3-compressed files [bzip3]",
+      "bz3less": "View bzip3-compressed files using less pager [bzip3]",
+      "bz3more": "View bzip3-compressed files using more pager [bzip3]",
+      "bz3most": "Browse/Page through bzip3-compressed files [bzip3]",
+      "bzip3": "Efficient statistical file compressor and spiritual successor to bzip2 [bzip3]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "bzip3"
+      ],
+      "archlinux": {
+        "aur": [
+          "bzip3-git"
+        ],
+        "extra": [
+          "bzip3"
+        ]
+      },
+      "debian": [
+        "bzip3"
+      ],
+      "homebrew": [
+        "bzip3"
+      ],
+      "nixpkgs": [
+        "bzip3"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bzip3/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/kspalaiologos/bzip3"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "bunzip3",
+      "bz3cat",
+      "bz3grep",
+      "bz3less",
+      "bz3more",
+      "bz3most",
+      "bzip3"
+    ],
+    "repology": [
+      "bzip3"
+    ],
+    "src_url": [
+      "https://github.com/kspalaiologos/bzip3"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.5.1"
   },
   {
     "_disabled": "false",
@@ -4905,6 +5210,206 @@
   },
   {
     "_disabled": "false",
+    "pkg": "execline",
+    "pkg_family": "execline",
+    "pkg_id": "ppkg.execline.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/execline-stable/execline/execline",
+    "bincache": "ghcr.io/pkgforge/bincache/execline/ppkg/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/execline/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Non-interactive scripting Tools",
+      "background": "Launch a command in the background [execline]",
+      "backtick": "Run a program and stores its output in an environment variable [execline]",
+      "case": "Compare a value against a series of regular expressions & execute a program [execline]",
+      "cd": "Change the current working directory to a given directory & execute a program [execline]",
+      "define": "Replace a literal with a value & execute a program [execline]",
+      "dollarat": "Print the positional parameters of an execline script [execline]",
+      "elgetopt": "Perform getopt-style parsing on the arguments to an execline script [execline]",
+      "elgetpositionals": "Substitute the positional parameters of an execline script [execline]",
+      "elglob": "Perform globbing on a pattern & execute a program [execline]",
+      "eltest": "Evaluate an expression and indicates the result via its exit status [execline]",
+      "emptyenv": "Empty/Cleanup the current environment & execute a program [execline]",
+      "envfile": "Read a file containing variable assignments, add the variables to the environment & execute a program [execline]",
+      "exec": "Execute the command line as given [execline]",
+      "execlineb": "Read and Execute a script from a file as command line [execline]",
+      "execline-cd": "Change the current working directory to a given directory & execute a program [execline]",
+      "execline-umask": "Set the umask (file creation mask) & execute a program [execline]",
+      "exit": "Exit with a given exit code [execline]",
+      "export": "Set an environment variable to a given value & execute a program [execline]",
+      "export-array": "Encode a set of values into an environment variable & execute a program [execline]",
+      "fdblock": "Set/Unset the O_NONBLOCK flag on a given file descriptor & execute a program [execline]",
+      "fdclose": "Close a given file descriptor & execute a program [execline]",
+      "fdmove": "Move/Copy a given file descriptor & execute a program [execline]",
+      "fdreserve": "Update the environment with file descriptors that are guaranteed safe to use & execute a program [execline]",
+      "fdswap": "Swap two file descriptors & execute a program [execline]",
+      "forbacktickx": "Run a program and uses its output as loop elements to run another program [execline]",
+      "foreground": "Execute a sequence of commands [execline]",
+      "forstdin": "Use its input as loop elements to run another program [execline]",
+      "forx": "Run a loop [execline]",
+      "getcwd": "Store its current working directory into a given environment variable & execute a program [execline]",
+      "getpid": "Store its process ID in a given environment variable & execute a program [execline]",
+      "heredoc": "Run a command with a certain string fed to a file descriptor [execline]",
+      "homeof": "Print the home directory of a user [execline]",
+      "if": "Perform conditional execution [execline]",
+      "ifelse": "Perform conditional execution, with two branches [execline]",
+      "ifte": "Perform a conditional alternative [execline]",
+      "ifthenelse": "Perform a conditional alternative [execline]",
+      "importas": "Replace a literal with the value of an environment variable & execute a program [execline]",
+      "loopwhilex": "Perform a conditional loop [execline]",
+      "multidefine": "Split a value and define several variables at once & execute a program [execline]",
+      "multisubstitute": "Perform several substitutions at once in its argv & execute a program [execline]",
+      "pipeline": "Run two commands with a pipe between them [execline]",
+      "piperw": "Create a pipe (an anonymous one) & execute a program [execline]",
+      "posix-cd": "Change the current working directory to a given directory & execute a program [execline]",
+      "posix-umask": "Change its file mode creation mask & execute a program [execline]",
+      "redirfd": "Redirect a given file descriptor to a file & execute a program [execline]",
+      "runblock": "Write execline commands in the execline language [execline]",
+      "shift": "Shift the positional parameters of an execline script [execline]",
+      "trap": "Trap signals and run a variety of commands according to the signals it catches [execline]",
+      "tryexec": "Execute into a command line, with a fallback [execline]",
+      "umask": "Unsets the umask (file creation mask) & execute a program [execline]",
+      "unexport": "Remove a variable from the environment & execute a program [execline]",
+      "wait": "Wait for a set of children & execute a program [execline]",
+      "withstdinas": "Read the entirety of standard input in an environment variable & execute a program [execline]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/execline/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/skarnet/execline"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "background",
+      "backtick",
+      "case",
+      "cd",
+      "define",
+      "dollarat",
+      "elgetopt",
+      "elgetpositionals",
+      "elglob",
+      "eltest",
+      "emptyenv",
+      "envfile",
+      "exec",
+      "execlineb",
+      "execline-cd",
+      "execline-umask",
+      "exit",
+      "export",
+      "fdblock",
+      "fdclose",
+      "fdmove",
+      "fdreserve",
+      "fdswap",
+      "forbacktickx",
+      "foreground",
+      "forstdin",
+      "forx",
+      "getcwd",
+      "getpid",
+      "heredoc",
+      "homeof",
+      "if",
+      "ifelse",
+      "ifte",
+      "ifthenelse",
+      "importas",
+      "loopwhilex",
+      "multidefine",
+      "multisubstitute",
+      "pipeline",
+      "piperw",
+      "posix-cd",
+      "posix-umask",
+      "redirfd",
+      "runblock",
+      "shift",
+      "trap",
+      "tryexec",
+      "umask",
+      "unexport",
+      "wait",
+      "withstdinas"
+    ],
+    "repology": [
+      "execline"
+    ],
+    "src_url": [
+      "https://github.com/skarnet/execline"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2.9.6.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "execline-multicall",
+    "pkg_family": "execline-multicall",
+    "pkg_id": "ppkg.execline-multicall.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/multicall-stable/execline-multicall/execline-multicall",
+    "bincache": "ghcr.io/pkgforge/bincache/execline-multicall/ppkg/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/execline-multicall/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Non-interactive scripting Tools (Multicall)",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/execline-multicall/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/skarnet/execline"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "execline"
+    ],
+    "repology": [
+      "execline"
+    ],
+    "src_url": [
+      "https://github.com/skarnet/execline"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2.9.6.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "exfat",
     "pkg_family": "exfat",
     "pkg_id": "nixpkgs.exfat",
@@ -5129,6 +5634,55 @@
       "Utility"
     ],
     "version": "2.11.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fakeroot",
+    "pkg_family": "fakeroot",
+    "pkg_id": "ppkg.fakeroot",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-fakeroot/fakeroot/fakeroot",
+    "bincache": "ghcr.io/pkgforge/bincache/fakeroot/ppkg/faked",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/fakeroot/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A command-line tool for simulating superuser privileges",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/fakeroot/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://salsa.debian.org/clint/fakeroot"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "Statically Linked on Ubuntu (GLIBC)"
+    ],
+    "provides": [
+      "faked",
+      "fakeroot"
+    ],
+    "repology": [
+      "fakeroot"
+    ],
+    "src_url": [
+      "https://salsa.debian.org/clint/fakeroot"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.37.1.1"
   },
   {
     "_disabled": "false",
@@ -5469,6 +6023,53 @@
       "Utility"
     ],
     "version": "1.5.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "forkstat",
+    "pkg_family": "forkstat",
+    "pkg_id": "ppkg.forkstat.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/forkstat-stable/forkstat/forkstat",
+    "bincache": "ghcr.io/pkgforge/bincache/forkstat/ppkg/stable",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/forkstat/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Log process fork(), exec() and exit() activity",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/forkstat/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://github.com/ColinIanKing/forkstat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "forkstat"
+    ],
+    "repology": [
+      "forkstat"
+    ],
+    "src_url": [
+      "https://github.com/ColinIanKing/forkstat"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "V0.04.00"
   },
   {
     "_disabled": "false",
@@ -6810,7 +7411,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.25"
+    "version": "2025.07.26"
   },
   {
     "_disabled": "false",
@@ -8620,6 +9221,75 @@
   },
   {
     "_disabled": "false",
+    "pkg": "micro",
+    "pkg_family": "micro",
+    "pkg_id": "github.com.zyedidia.micro",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/zyedidia-micro/micro/micro",
+    "bincache": "ghcr.io/pkgforge/bincache/micro/official/micro",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/micro/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Modern and intuitive terminal-based text editor",
+    "distro_pkg": {
+      "alpine": [
+        "micro"
+      ],
+      "archlinux": {
+        "aur": [
+          "micro-git"
+        ],
+        "extra": [
+          "micro"
+        ]
+      },
+      "debian": [
+        "micro"
+      ],
+      "homebrew": [
+        "micro"
+      ],
+      "nixpkgs": [
+        "micro"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/micro/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/zyedidia/micro"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/zyedidia/micro"
+    ],
+    "provides": [
+      "micro"
+    ],
+    "repology": [
+      "micro"
+    ],
+    "src_url": [
+      "https://github.com/zyedidia/micro"
+    ],
+    "tag": [
+      "text-editor"
+    ],
+    "version": "HEAD-f97cba3-250725T210233"
+  },
+  {
+    "_disabled": "false",
     "pkg": "mjpegtools",
     "pkg_family": "mjpegtools",
     "pkg_id": "nixpkgs.mjpegtools",
@@ -10022,7 +10692,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.07.25"
+    "version": "2025.07.26"
   },
   {
     "_disabled": "false",
@@ -14724,7 +15394,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-eb1aff3-250725T175800"
+    "version": "HEAD-b484b9e-250725T184737"
   },
   {
     "_disabled": "false",

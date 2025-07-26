@@ -1876,7 +1876,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.0 ⚠️ | https://github.com/eza-community/eza/archive/refs/tags/v0.19.0.tar.gz |
-| BREW   | **0.22.1** | https://github.com/eza-community/eza |
+| BREW   | **0.23.0** | https://github.com/eza-community/eza |
 
 *Outdated*
 

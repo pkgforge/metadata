@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.26 ⚠️ | null |
+| PPKG   | 2025.07.27 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2958,8 +2958,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.24.43 ✅ | https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz |
-| BREW   | 3.24.43 | https://gtk.org/ |
+| PPKG   | 3.24.43 ⚠️ | https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz |
+| BREW   | **3.24.49** | https://gtk.org/ |
+
+*Outdated*
 
 ## gtk4
 
@@ -4589,7 +4591,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.26 ⚠️ | null |
+| PPKG   | 2025.07.27 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4609,7 +4611,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.26 ⚠️ | null |
+| PPKG   | 2025.07.27 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6645,7 +6647,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.26 ⚠️ | null |
+| PPKG   | 2025.07.27 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6812,7 +6814,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.26 ⚠️ | null |
+| PPKG   | 2025.07.27 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6974,7 +6976,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.26 ⚠️ | null |
+| PPKG   | 2025.07.27 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7006,7 +7008,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.8.10 ⚠️ | https://www.ivarch.com/programs/sources/pv-1.8.10.tar.gz |
-| BREW   | **1.9.31** | https://www.ivarch.com/programs/pv.shtml |
+| BREW   | **1.9.34** | https://www.ivarch.com/programs/pv.shtml |
 
 *Outdated*
 

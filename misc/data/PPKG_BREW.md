@@ -562,7 +562,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.43.1 ⚠️ | https://ftp.gnu.org/gnu/binutils/binutils-2.43.1.tar.xz |
-| BREW   | **2.44** | https://www.gnu.org/software/binutils/binutils.html |
+| BREW   | **2.45** | https://www.gnu.org/software/binutils/binutils.html |
 
 *Outdated*
 
@@ -764,7 +764,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.14.1.1 ⚠️ | https://hackage.haskell.org/package/cabal-install-3.14.1.1/cabal-install-3.14.1.1.tar.gz |
-| BREW   | **3.14.2.0** | https://www.haskell.org/cabal/ |
+| BREW   | **3.16.0.0** | https://www.haskell.org/cabal/ |
 
 *Outdated*
 
@@ -2224,7 +2224,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.62.0 ⚠️ | https://github.com/junegunn/fzf/archive/refs/tags/v0.62.0.tar.gz |
-| BREW   | **0.64.0** | https://github.com/junegunn/fzf |
+| BREW   | **0.65.0** | https://github.com/junegunn/fzf |
 
 *Outdated*
 
@@ -3186,7 +3186,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.148.1** | https://gohugo.io/ |
+| BREW   | **0.148.2** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -6553,7 +6553,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.3.2 ⚠️ | https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.2.tar.gz |
-| BREW   | **3.3.4** | https://www.openexr.com/ |
+| BREW   | **3.3.5** | https://www.openexr.com/ |
 
 *Outdated*
 
@@ -7205,7 +7205,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/rbspy/rbspy/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.36.0** | https://rbspy.github.io/ |
+| BREW   | **0.36.1** | https://rbspy.github.io/ |
 
 *Outdated*
 

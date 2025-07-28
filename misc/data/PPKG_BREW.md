@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.27 ⚠️ | null |
+| PPKG   | 2025.07.28 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -814,8 +814,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.7.0 ✅ | https://github.com/burtonageo/cargo-bundle/archive/refs/tags/v0.7.0.tar.gz |
-| BREW   | 0.7.0 | https://github.com/burtonageo/cargo-bundle |
+| PPKG   | 0.7.0 ⚠️ | https://github.com/burtonageo/cargo-bundle/archive/refs/tags/v0.7.0.tar.gz |
+| BREW   | **0.8.0** | https://github.com/burtonageo/cargo-bundle |
+
+*Outdated*
 
 ## cargo-c
 
@@ -2493,8 +2495,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.9.1 ✅ | https://github.com/orhun/git-cliff/archive/refs/tags/v2.9.1.tar.gz |
-| BREW   | 2.9.1 | https://git-cliff.org/ |
+| PPKG   | 2.9.1 ⚠️ | https://github.com/orhun/git-cliff/archive/refs/tags/v2.9.1.tar.gz |
+| BREW   | **2.10.0** | https://git-cliff.org/ |
+
+*Outdated*
 
 ## git-lfs
 
@@ -4591,7 +4595,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.27 ⚠️ | null |
+| PPKG   | 2025.07.28 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4611,7 +4615,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.27 ⚠️ | null |
+| PPKG   | 2025.07.28 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6069,8 +6073,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.33.0 ✅ | https://www.mpg123.de/download/mpg123-1.33.0.tar.bz2 |
-| BREW   | 1.33.0 | https://www.mpg123.de/ |
+| PPKG   | 1.33.0 ⚠️ | https://www.mpg123.de/download/mpg123-1.33.0.tar.bz2 |
+| BREW   | **1.33.1** | https://www.mpg123.de/ |
+
+*Outdated*
 
 ## mprocs
 
@@ -6647,7 +6653,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.27 ⚠️ | null |
+| PPKG   | 2025.07.28 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6814,7 +6820,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.27 ⚠️ | null |
+| PPKG   | 2025.07.28 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6976,7 +6982,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.27 ⚠️ | null |
+| PPKG   | 2025.07.28 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7853,8 +7859,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.0.2 ✅ | https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.2/SVT-AV1-v3.0.2.tar.bz2 |
-| BREW   | 3.0.2 | https://gitlab.com/AOMediaCodec/SVT-AV1 |
+| PPKG   | 3.0.2 ⚠️ | https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.2/SVT-AV1-v3.0.2.tar.bz2 |
+| BREW   | **3.1.0** | https://gitlab.com/AOMediaCodec/SVT-AV1 |
+
+*Outdated*
 
 ## swig
 

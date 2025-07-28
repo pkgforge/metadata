@@ -11700,7 +11700,7 @@
     "ltoable": "1",
     "movable": "1",
     "install": "cmakew 2 \\\n    -DBUILD_CLI=OFF \\\n    -DBUILD_TESTS=OFF \\\n    -DBUILD_FUZZERS=OFF \\\n    -DBUILD_EXAMPLES=OFF \\\n    -DENABLE_WERROR=OFF \\\n    -DDEPRECATE_HARD=OFF \\\n    -DUSE_SSH=ON \\\n    -DUSE_ICONV=ON \\\n    -DUSE_HTTPS=OpenSSL \\\n    -DUSE_BUNDLED_ZLIB=OFF \\\n    -DREGEX_BACKEND=pcre2",
-    "dotweak": "gsed -i -e '/Libs.private:/d' -e '/^Requires/s|openssl|libssh2|' -e '/^Requires/s|zlib|libiconv|' lib/pkgconfig/libgit2.pc"
+    "dotweak": "gsed -i -e '/Libs.private:/d' -e '/^Requires/s|openssl|libssh2 libiconv|' lib/pkgconfig/libgit2.pc"
   },
   {
     "pkgname": "libgit2@1.7",

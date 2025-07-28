@@ -93,7 +93,7 @@
  1.3M   │ │ │ ├── x86_64-Linux.db.zstd
  1.3M   │ │ │ ├── aarch64-Linux.db.zstd
  1.3M   │ │ │ ├── x86_64-Linux.sdb.xz
- 1.2M   │ │ │ ├── aarch64-Linux.sdb.xz
+ 1.3M   │ │ │ ├── aarch64-Linux.sdb.xz
  1.2M   │ │ │ ├── x86_64-Linux.db.xz
  1.2M   │ │ │ ├── riscv64-Linux.db.zstd
  1.2M   │ │ │ ├── aarch64-Linux.db.xz
@@ -414,7 +414,7 @@
   12K   │   └── sync_hf_mirror.sh
   59M   ├── GHCR_PKGS.json
   21M   ├─┬ soarpkgs
-  20M   │ ├─┬ data
+  21M   │ ├─┬ data
  2.7M   │ │ ├── COMP_VER_CACHE.json
  2.6M   │ │ ├── INDEX.json
  2.0M   │ │ ├── BACKAGE.json
@@ -424,7 +424,7 @@
  1.1M   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
  1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
  1.0M   │ │ ├── COMP_VER_CACHE.md
- 784K   │ │ ├── pub_issues_binaries.txt
+ 812K   │ │ ├── pub_issues_binaries.txt
  748K   │ │ ├── COMP_VER_CACHE_OLD.json
  580K   │ │ ├── OLD_bincache_riscv64-Linux.json
  432K   │ │ ├── DIFF_bincache_aarch64-Linux.json

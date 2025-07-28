@@ -257,7 +257,7 @@
   32K   │ │ └─┬ scripts
   28K   │ │   └── gen_meta.sh
  7.3M   │ └─┬ appimage.github.io
- 7.3M   │   ├─┬ data
+ 7.2M   │   ├─┬ data
  2.0M   │   │ ├── x86_64-Linux.json
  1.6M   │   │ ├── x86_64-Linux.db
  1.4M   │   │ ├── x86_64-Linux.sdb
@@ -289,16 +289,16 @@
  4.0K   │   │ ├── x86_64-Linux.db.zstd.bsum
  4.0K   │   │ ├── x86_64-Linux.db.xz.bsum
  4.0K   │   │ ├── x86_64-Linux.db.bsum
- 4.0K   │   │ ├── aarch64-Linux.sdb.zstd.bsum
- 4.0K   │   │ ├── aarch64-Linux.sdb.xz.bsum
- 4.0K   │   │ ├── aarch64-Linux.sdb.bsum
- 4.0K   │   │ ├── aarch64-Linux.json.zstd.bsum
- 4.0K   │   │ ├── aarch64-Linux.json.xz.bsum
- 4.0K   │   │ ├── aarch64-Linux.json.bsum
- 4.0K   │   │ ├── aarch64-Linux.db.zstd.bsum
- 4.0K   │   │ ├── aarch64-Linux.db.xz.bsum
- 4.0K   │   │ ├── aarch64-Linux.db.bsum
- 4.0K   │   │ └── TOTAL.json
+ 4.0K   │   │ ├── TOTAL.json
+   0B   │   │ ├── aarch64-Linux.sdb.zstd.bsum
+   0B   │   │ ├── aarch64-Linux.sdb.xz.bsum
+   0B   │   │ ├── aarch64-Linux.sdb.bsum
+   0B   │   │ ├── aarch64-Linux.json.zstd.bsum
+   0B   │   │ ├── aarch64-Linux.json.xz.bsum
+   0B   │   │ ├── aarch64-Linux.json.bsum
+   0B   │   │ ├── aarch64-Linux.db.zstd.bsum
+   0B   │   │ ├── aarch64-Linux.db.xz.bsum
+   0B   │   │ └── aarch64-Linux.db.bsum
   36K   │   └─┬ scripts
   32K   │     └── gen_meta.sh
  228M   ├─┬ misc
@@ -315,7 +315,7 @@
  2.8M   │ │ ├── BREW_FORMULA.json
  1.6M   │ │ ├── BREW_CASK.json
  1.2M   │ │ ├── PPKG_RAW.json
- 544K   │ │ ├── STALIX.json
+ 540K   │ │ ├── STALIX.json
  472K   │ │ ├── FLATPAK_APPS_INFO.json
  440K   │ │ ├── FLATPAK_APPS_INFO.txt
  336K   │ │ ├── PPKG.json
@@ -425,12 +425,12 @@
  1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
  1.0M   │ │ ├── COMP_VER_CACHE.md
  812K   │ │ ├── pub_issues_binaries.txt
- 744K   │ │ ├── COMP_VER_CACHE_OLD.json
+ 764K   │ │ ├── COMP_VER_CACHE_OLD.json
  580K   │ │ ├── OLD_bincache_riscv64-Linux.json
  472K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  448K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  384K   │ │ ├── INDEX.json.cba
- 312K   │ │ ├── COMP_VER_CACHE_OLD.md
+ 320K   │ │ ├── COMP_VER_CACHE_OLD.md
  304K   │ │ ├── pub_issues_packages.txt
  300K   │ │ ├── DIFF_bincache_riscv64-Linux.json
  252K   │ │ ├── OLD_pkgcache_x86_64-Linux.json

@@ -1596,7 +1596,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.57.2** | https://github.com/dolthub/dolt |
+| BREW   | **1.57.3** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2885,7 +2885,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 13.0.1 ⚠️ | https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.0.1/graphviz-13.0.1.tar.xz |
-| BREW   | **13.1.0** | https://graphviz.org/ |
+| BREW   | **13.1.1** | https://graphviz.org/ |
 
 *Outdated*
 

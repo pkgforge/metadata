@@ -4,7 +4,7 @@
  858M   │ ├─┬ pkgforge-go
  858M   │ │ ├─┬ data
   75M   │ │ │ ├── x86_64-Linux.json
-  75M   │ │ │ ├── riscv64-Linux.json
+  74M   │ │ │ ├── riscv64-Linux.json
   74M   │ │ │ ├── aarch64-Linux.json
   74M   │ │ │ ├── loongarch64-Linux.json
   60M   │ │ │ ├── x86_64-Linux.db

@@ -2348,7 +2348,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.23 ⚠️ | https://ftp.gnu.org/gnu/gdbm/gdbm-1.23.tar.gz |
-| BREW   | **1.25** | https://www.gnu.org.ua/software/gdbm/ |
+| BREW   | **1.26** | https://www.gnu.org.ua/software/gdbm/ |
 
 *Outdated*
 
@@ -3512,7 +3512,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20240107 ⚠️ | https://github.com/xtaci/kcptun/archive/refs/tags/v20240107.tar.gz |
-| BREW   | **20250612** | https://github.com/xtaci/kcptun |
+| BREW   | **20250730** | https://github.com/xtaci/kcptun |
 
 *Outdated*
 
@@ -6018,7 +6018,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.40.1 ⚠️ | https://github.com/rui314/mold/archive/refs/tags/v2.40.1.tar.gz |
-| BREW   | **2.40.2** | https://github.com/rui314/mold |
+| BREW   | **2.40.3** | https://github.com/rui314/mold |
 
 *Outdated*
 

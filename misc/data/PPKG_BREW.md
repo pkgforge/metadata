@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.29 ⚠️ | null |
+| PPKG   | 2025.07.30 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1163,7 +1163,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.102.2** | https://github.com/microsoft/vscode |
+| BREW   | **1.102.3** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -1216,7 +1216,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.18.3 ⚠️ | https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.18.3.tar.gz |
-| BREW   | **0.23.1** | https://github.com/yhirose/cpp-httplib |
+| BREW   | **0.24.0** | https://github.com/yhirose/cpp-httplib |
 
 *Outdated*
 
@@ -1226,8 +1226,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.17.1 ✅ | https://github.com/danmar/cppcheck/archive/refs/tags/2.17.1.tar.gz |
-| BREW   | 2.17.1 | https://sourceforge.net/projects/cppcheck/ |
+| PPKG   | 2.17.1 ⚠️ | https://github.com/danmar/cppcheck/archive/refs/tags/2.17.1.tar.gz |
+| BREW   | **2.18.0** | https://sourceforge.net/projects/cppcheck/ |
+
+*Outdated*
 
 ## cpprestsdk
 
@@ -3419,7 +3421,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.78.1** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.78.2** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -4491,7 +4493,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 24.06 ⚠️ | https://mediaarea.net/download/source/libmediainfo/24.06/libmediainfo_24.06.tar.xz |
-| BREW   | **25.04** | https://mediaarea.net/en/MediaInfo |
+| BREW   | **25.07** | https://mediaarea.net/en/MediaInfo |
 
 *Outdated*
 
@@ -4595,7 +4597,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.29 ⚠️ | null |
+| PPKG   | 2025.07.30 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4615,7 +4617,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.29 ⚠️ | null |
+| PPKG   | 2025.07.30 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6409,7 +6411,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.104.1 ⚠️ | https://github.com/nushell/nushell/archive/refs/tags/0.104.1.tar.gz |
-| BREW   | **0.106.0** | https://www.nushell.sh |
+| BREW   | **0.106.1** | https://www.nushell.sh |
 
 *Outdated*
 
@@ -6653,7 +6655,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.29 ⚠️ | null |
+| PPKG   | 2025.07.30 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6820,7 +6822,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.29 ⚠️ | null |
+| PPKG   | 2025.07.30 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6862,8 +6864,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 6.0 ✅ | https://github.com/pocl/pocl/archive/refs/tags/v6.0.tar.gz |
-| BREW   | 6.0 | https://portablecl.org/ |
+| PPKG   | 6.0 ⚠️ | https://github.com/pocl/pocl/archive/refs/tags/v6.0.tar.gz |
+| BREW   | **7.0** | https://portablecl.org/ |
+
+*Outdated*
 
 ## poco
 
@@ -6982,7 +6986,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.29 ⚠️ | null |
+| PPKG   | 2025.07.30 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7414,7 +7418,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.5** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.7** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 

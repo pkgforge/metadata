@@ -229,7 +229,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.41.15"
+    "version": "1.41.16"
   },
   {
     "_disabled": "false",
@@ -305,6 +305,116 @@
   },
   {
     "_disabled": "false",
+    "pkg": "caido",
+    "pkg_family": "caido",
+    "pkg_id": "github.com.caido.caido.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caido-stable/caido/caido",
+    "app_id": "io.caido.caido",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/caido/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Lightweight web security auditing toolkit",
+    "distro_pkg": {
+      "homebrew": [
+        "caido"
+      ],
+      "nixpkgs": [
+        "caido"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/caido/appimage.official.stable.yaml",
+    "homepage": [
+      "https://caido.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/caido/caido",
+      "You may need to run this with: --no-sandbox"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/caido/appimage/official",
+    "provides": [
+      "caido"
+    ],
+    "repology": [
+      "caido"
+    ],
+    "src_url": [
+      "https://github.com/caido/caido"
+    ],
+    "tag": [
+      "security"
+    ],
+    "version": "v0.50.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "caido-cli",
+    "pkg_family": "caido-cli",
+    "pkg_id": "sharun.wrappe.stable.caido-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caido-cli/caido-cli/caido-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/caido-cli/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI for Caido: Lightweight web security auditing toolkit",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "caido-cli"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/caido-cli/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://caido.io"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This version was repacked from official Release"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/caido-cli/archive/sharun",
+    "provides": [
+      "caido-cli"
+    ],
+    "repology": [
+      "caido-cli"
+    ],
+    "src_url": [
+      "https://github.com/caido/caido"
+    ],
+    "tag": [
+      "security"
+    ],
+    "version": "v0.50.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ciphey",
     "pkg_family": "ciphey",
     "pkg_id": "sharun.wrappe.source.ciphey",
@@ -357,65 +467,6 @@
       "Utility"
     ],
     "version": "HEAD-5dfbe93-231012T002040"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "commix",
-    "pkg_family": "commix",
-    "pkg_id": "sharun.wrappe.pypi.commix",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-commix/commix/commix",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/commix/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Automated All-in-One OS Command Injection and Exploitation Tool",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "commix"
-        ]
-      },
-      "nixpkgs": [
-        "commix"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/commix/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://commixproject.com",
-      "https://github.com/commixproject/commix"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/commix/archive/sharun",
-    "provides": [
-      "commix"
-    ],
-    "repology": [
-      "commix"
-    ],
-    "src_url": [
-      "https://github.com/commixproject/commix"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-5d2c0e0-250729T065438"
   },
   {
     "_disabled": "false",
@@ -676,67 +727,6 @@
       "Communications",
       "Networking/Chat"
     ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "dvc",
-    "pkg_family": "dvc",
-    "pkg_id": "sharun.wrappe.source.dvc",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-dvc/dvc/dvc",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/dvc/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A version control system and experiment tracker designed for machine learning projects",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "dvc"
-        ]
-      },
-      "homebrew": [
-        "dvc"
-      ],
-      "nixpkgs": [
-        "dvc"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/dvc/archive.sharun.source.yaml",
-    "homepage": [
-      "https://dvc.org/doc"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/dvc/archive/sharun",
-    "provides": [
-      "dvc"
-    ],
-    "repology": [
-      "dvc"
-    ],
-    "src_url": [
-      "https://github.com/iterative/dvc"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-fade6c5-250729T090724"
   },
   {
     "_disabled": "false",
@@ -1134,7 +1124,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250729T050225"
+    "version": "250730T005342"
   },
   {
     "_disabled": "false",
@@ -1196,7 +1186,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250729T050225"
+    "version": "250730T005342"
   },
   {
     "_disabled": "false",
@@ -1249,7 +1239,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d23abb3-250728T154753"
+    "version": "HEAD-e961ed6-250730T114919"
   },
   {
     "_disabled": "true",
@@ -1463,75 +1453,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "librewolf",
-    "pkg_family": "librewolf",
-    "pkg_id": "gitlab.com.librewolf-community.browser.appimage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/librewolf/librewolf",
-    "app_id": "io.gitlab.librewolf-community",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/librewolf/appimage.official.stable.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "A fork of Firefox, focused on privacy, security and freedom",
-    "distro_pkg": {
-      "alpine": [
-        "librewolf"
-      ],
-      "archlinux": {
-        "aur": [
-          "librewolf",
-          "librewolf-bin",
-          "librewolf-hg"
-        ]
-      },
-      "gnuguix": [
-        "librewolf"
-      ],
-      "homebrew": [
-        "librewolf"
-      ],
-      "nixpkgs": [
-        "librewolf"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/librewolf/appimage.official.stable.yaml",
-    "homepage": [
-      "https://librewolf.net",
-      "https://librewolf-community.gitlab.io",
-      "https://gitlab.com/librewolf-community/browser/appimage"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/librewolf/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/librewolf-community/browser/appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/librewolf/appimage/official",
-    "provides": [
-      "librewolf"
-    ],
-    "repology": [
-      "librewolf"
-    ],
-    "src_url": [
-      "https://gitlab.com/librewolf-community/browser/appimage"
-    ],
-    "tag": [
-      "Browser"
-    ],
-    "version": "v141.0-1"
-  },
-  {
-    "_disabled": "false",
     "pkg": "netexec",
     "pkg_family": "netexec",
     "pkg_id": "sharun.wrappe.source.netexec",
@@ -1588,6 +1509,130 @@
       "Utility"
     ],
     "version": "HEAD-714c44b-250728T131545"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "oci-cli",
+    "pkg_family": "oci-cli",
+    "pkg_id": "sharun.wrappe.pypi.oci-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oci-cli/oci-cli/oci-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oci-cli/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Command Line Interface for Oracle Cloud Infrastructure",
+    "distro_pkg": {
+      "alpine": [
+        "oci-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "oci-cli"
+        ]
+      },
+      "homebrew": [
+        "oci-cli"
+      ],
+      "nixpkgs": [
+        "oci-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/oci-cli/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://cloud.oracle.com/cloud-infrastructure",
+      "https://github.com/oracle/oci-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "UPL-1.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
+    "provides": [
+      "oci==oci-cli"
+    ],
+    "repology": [
+      "oci-cli"
+    ],
+    "src_url": [
+      "https://pypi.org/project/oci-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.63.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "openvscode-server",
+    "pkg_family": "openvscode-server",
+    "pkg_id": "wrappe.openvscode-server.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/openvscode-server/openvscode-server",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/openvscode-server/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Run VS Code on any machine anywhere and access it in the browser (GitPod)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "openvscode-server"
+        ]
+      },
+      "nixpkgs": [
+        "openvscode-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/openvscode-server/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://github.com/gitpod-io/openvscode-server"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/gitpod-io/openvscode-server",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/openvscode-server/archive/wrappe",
+    "provides": [
+      "openvscode-server"
+    ],
+    "repology": [
+      "openvscode-server"
+    ],
+    "src_url": [
+      "https://github.com/gitpod-io/openvscode-server"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "openvscode-server-v1.102.3"
   },
   {
     "_disabled": "false",
@@ -1811,87 +1856,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "sudo-rs",
-    "pkg_family": "sudo-rs",
-    "pkg_id": "sharun.wrappe.sudo-rs.source",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-source/sudo-rs/sudo-rs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/sudo-rs/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": {
-      "_default": "Memory safe implementation of sudo and su",
-      "cvtsudoers": "Convert between sudoers file formats [sudo-rs]",
-      "sudo": "Execute a command as another user [sudo-rs]",
-      "sudo.conf": "Configuration for sudo front-end [sudo-rs]",
-      "sudo_logsrvd": "sudo event and I/O log server [sudo-rs]",
-      "sudo_logsrvd.conf": "Configuration for sudo_logsrvd [sudo-rs]",
-      "sudo_sendlog": "Send sudo I/O log to log server [sudo-rs]",
-      "sudoedit": "An extension of the sudo -e command to edit a file [sudo-rs]",
-      "sudoers": "Default sudo security policy plugin [sudo-rs]",
-      "sudoers.dist": "Default configuration file for sudoers [sudo-rs]",
-      "sudoreplay": "Replay sudo session logs [sudo-rs]",
-      "su": "Change user id or become root [sudo-rs]",
-      "visudo": "Edit the sudoers file [sudo-rs]"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "sudo-rs",
-          "sudo-rs-git"
-        ]
-      },
-      "nixpkgs": [
-        "sudo-rs"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/sudo-rs/archive.sharun.source.yaml",
-    "homepage": [
-      "https://github.com/trifectatechfoundation/sudo-rs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trifectatechfoundation/sudo-rs",
-      "Built Using Sharun. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "sudo must be owned by uid 0 and have the setuid bit set",
-      "chown -v 'root:root' sudo",
-      "chmod -v 'a=rx,u+ws' sudo",
-      "Requires '/etc/sudoers' file & '/etc/sudoers.d' dir",
-      "Also requires PAM to be setup: https://github.com/trifectatechfoundation/sudo-rs#differences-from-original-sudo"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/sudo-rs/archive/sharun",
-    "provides": [
-      "su",
-      "sudo",
-      "visudo"
-    ],
-    "repology": [
-      "sudo-rs"
-    ],
-    "src_url": [
-      "https://github.com/trifectatechfoundation/sudo-rs"
-    ],
-    "tag": [
-      "sudo"
-    ],
-    "version": "HEAD-dbc0501-250728T172844"
-  },
-  {
-    "_disabled": "false",
     "pkg": "tangent",
     "pkg_family": "tangent",
     "pkg_id": "github.com.suchnsuch.Tangent",
@@ -2047,7 +2011,7 @@
     "tag": [
       "Remote"
     ],
-    "version": "15.67.4"
+    "version": "15.68.5"
   },
   {
     "_disabled": "true",
@@ -2244,54 +2208,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "xashds",
-    "pkg_family": "xashds",
-    "pkg_id": "wrappe.xashds",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Xash3D FWGS Dedicated Server",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
-    "homepage": [
-      "https://github.com/FWGS/xash3d-fwgs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
-      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "Host Dependencies: A lot, please use soar log to view the ldd output"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
-    "provides": [
-      "xashds==xash"
-    ],
-    "repology": [
-      "xash3d-fwgs"
-    ],
-    "src_url": [
-      "https://github.com/FWGS/xash3d-fwgs"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "250729T064717"
-  },
-  {
-    "_disabled": "false",
     "pkg": "yt-dlp",
     "pkg_family": "yt-dlp",
     "pkg_id": "sharun.wrappe.source.yt-dlp",
@@ -2361,7 +2277,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-682334e-250727T222633"
+    "version": "HEAD-42ca3d6-250730T061109"
   },
   {
     "_disabled": "false",
@@ -2421,6 +2337,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.15t_2025-07-27"
+    "version": "1.15t_2025-07-30"
   }
 ]

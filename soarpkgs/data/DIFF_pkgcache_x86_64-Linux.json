@@ -1,6 +1,63 @@
 [
   {
     "_disabled": "false",
+    "pkg": "agregore",
+    "pkg_family": "agregore",
+    "pkg_id": "github.com.AgregoreWeb.agregore-browser",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/agregore-browser/agregore/agregore",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/agregore/appimage.official.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A minimal browser for the distributed web",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "agregore-browser-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/agregore/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/AgregoreWeb/agregore-browser"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/agregore/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/AgregoreWeb/agregore-browser"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/agregore/appimage/official",
+    "provides": [
+      "agregore"
+    ],
+    "repology": [
+      "agregore-browser"
+    ],
+    "src_url": [
+      "https://github.com/AgregoreWeb/agregore-browser"
+    ],
+    "tag": [
+      "browser",
+      "decentralization",
+      "dweb",
+      "hypercore-protocol",
+      "ipfs",
+      "p2p",
+      "ssb"
+    ],
+    "version": "v2.16.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "aisleriot",
     "pkg_family": "aisleriot",
     "pkg_id": "github.com.ivan-hc.Aisleriot-appimage",
@@ -65,7 +122,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250730T030441"
+    "version": "250731T030401"
   },
   {
     "_disabled": "false",
@@ -197,6 +254,108 @@
   },
   {
     "_disabled": "false",
+    "pkg": "apptainer",
+    "pkg_family": "apptainer",
+    "pkg_id": "wrappe.github.com.apptainer.apptainer.glibc",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apptainer-glibc/apptainer/apptainer",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/apptainer/archive.wrappe.glibc.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Standalone Linux Container Alternative to docker/podman that runs anywhere with 0 Dependency",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/apptainer/archive.wrappe.glibc.yaml",
+    "homepage": [
+      "https://github.com/apptainer/apptainer"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/apptainer/apptainer",
+      "Statically Linked on Debian (GLIBC)",
+      "Packed Using Wrappe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This may need extra requirements on host, read more: https://apptainer.org/docs/user/latest/bind_paths_and_mounts.html#requirements"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/apptainer/archive/wrappe",
+    "provides": [
+      "apptainer"
+    ],
+    "repology": [
+      "apptainer"
+    ],
+    "src_url": [
+      "https://github.com/apptainer/apptainer"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-a56b7de-250730T151602"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "apptainer",
+    "pkg_family": "apptainer",
+    "pkg_id": "wrappe.github.com.apptainer.apptainer.musl",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apptainer-musl/apptainer/apptainer",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/apptainer/archive.wrappe.musl.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Standalone Linux Container Alternative to docker/podman that runs anywhere with 0 Dependency",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/apptainer/archive.wrappe.musl.yaml",
+    "homepage": [
+      "https://github.com/apptainer/apptainer"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/apptainer/apptainer",
+      "Statically Linked on Alpine (MUSL)",
+      "Packed Using Wrappe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This may need extra requirements on host, read more: https://apptainer.org/docs/user/latest/bind_paths_and_mounts.html#requirements"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/apptainer/archive/wrappe",
+    "provides": [
+      "apptainer"
+    ],
+    "repology": [
+      "apptainer"
+    ],
+    "src_url": [
+      "https://github.com/apptainer/apptainer"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-a56b7de-250730T151602"
+  },
+  {
+    "_disabled": "false",
     "pkg": "awscli",
     "pkg_family": "awscli",
     "pkg_id": "sharun.wrappe.pypi.awscli",
@@ -269,7 +428,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.41.16"
+    "version": "1.41.17"
   },
   {
     "_disabled": "false",
@@ -621,6 +780,70 @@
       "game"
     ],
     "version": "v0.6.1@2025-07-29_1753774864"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "code-server",
+    "pkg_family": "code-server",
+    "pkg_id": "wrappe.code-server.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/code-server/code-server",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/code-server/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Run VS Code on any machine anywhere and access it in the browser",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "code-server"
+        ]
+      },
+      "homebrew": [
+        "code-server"
+      ],
+      "nixpkgs": [
+        "code-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/code-server/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://coder.com/",
+      "https://github.com/coder/code-server"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/code-server/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/coder/code-server",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/code-server/archive/wrappe",
+    "provides": [
+      "code-server==vs-code-server"
+    ],
+    "repology": [
+      "code-server"
+    ],
+    "src_url": [
+      "https://github.com/coder/code-server"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v4.102.3"
   },
   {
     "_disabled": "false",
@@ -998,6 +1221,86 @@
   },
   {
     "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "sharun.wrappe.stable.fastfetch",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stable-fastfetch/fastfetch/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fastfetch/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fastfetch/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This version was repacked from official Deb & contains the most features"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fastfetch/archive/sharun",
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "2.49.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "fdm",
     "pkg_family": "fdm",
     "pkg_id": "runimage.debian.fdm",
@@ -1060,6 +1363,135 @@
     "_disabled": "false",
     "pkg": "firefox",
     "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (Beta)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "firefox-beta-bin"
+        ]
+      },
+      "homebrew": [
+        "firefox@beta"
+      ],
+      "nixpkgs": [
+        "firefox-beta",
+        "firefox-beta-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-beta"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "142.0.20250730090632"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.dev",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-dev/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (DEV)",
+    "distro_pkg": {
+      "alpine": [
+        "firefox-developer-edition"
+      ],
+      "archlinux": {
+        "extra": [
+          "firefox-developer-edition"
+        ]
+      },
+      "homebrew": [
+        "firefox@developer-edition"
+      ],
+      "nixpkgs": [
+        "firefox-devedition",
+        "firefox-devedition-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-dev"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "142.0.20250730090632"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
     "pkg_id": "github.com.srevinsaju.Firefox-Appimage.nightly",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/firefox/firefox",
@@ -1114,7 +1546,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "143.0.20250730092527"
+    "version": "143.0.20250730213201"
   },
   {
     "_disabled": "false",
@@ -1438,7 +1870,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250730T005342"
+    "version": "250731T005301"
   },
   {
     "_disabled": "false",
@@ -1500,7 +1932,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250730T005342"
+    "version": "250731T005301"
   },
   {
     "_disabled": "false",
@@ -1852,7 +2284,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-07-29"
+    "version": "2025-07-30"
   },
   {
     "_disabled": "false",
@@ -1927,6 +2359,54 @@
   },
   {
     "_disabled": "false",
+    "pkg": "knot",
+    "pkg_family": "android-knot",
+    "pkg_id": "github.com.ic005k.Knot",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ic005k-knot/android-knot/knot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/android-knot/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Record everything in the simplest way possible",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "android-knot-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/android-knot/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/ic005k/Knot"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/android-knot/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ic005k/Knot"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/knot/appimage/official",
+    "provides": [
+      "knot"
+    ],
+    "repology": [
+      "android-knot"
+    ],
+    "src_url": [
+      "https://github.com/ic005k/Knot"
+    ],
+    "version": "2.0.24"
+  },
+  {
+    "_disabled": "false",
     "pkg": "krita",
     "pkg_family": "krita",
     "pkg_id": "gitlab.com.krita.krita.next",
@@ -1996,7 +2476,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-07-29"
+    "version": "2025-07-30"
   },
   {
     "_disabled": "true",
@@ -2516,6 +2996,71 @@
     "tag": [
       "Utility"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "puddletag",
+    "pkg_family": "puddletag",
+    "pkg_id": "github.com.pkgforge-dev.puddletag-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/puddletag/puddletag",
+    "app_id": "net.puddletag.puddletag",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/puddletag/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "AudioVideoEditing",
+      "Music"
+    ],
+    "description": "Powerful, simple, audio tag editor for GNU/Linux",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "puddletag",
+          "puddletag-git"
+        ]
+      },
+      "debian": [
+        "puddletag"
+      ],
+      "nixpkgs": [
+        "puddletag"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/puddletag/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://docs.puddletag.net",
+      "https://github.com/puddletag/puddletag",
+      "https://github.com/pkgforge-dev/puddletag-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/puddletag/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/puddletag-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/puddletag/appimage/pkgforge-dev",
+    "provides": [
+      "puddletag"
+    ],
+    "repology": [
+      "puddletag"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/puddletag-AppImage"
+    ],
+    "tag": [
+      "Applications/Multimedia",
+      "Productivity/Multimedia/Sound/Utilities",
+      "Sound/Utilities"
+    ],
+    "version": "2.5.0@2025-07-31_1753926391"
   },
   {
     "_disabled": "false",
@@ -3614,7 +4159,7 @@
     "tag": [
       "utility"
     ],
-    "version": "250730T184958"
+    "version": "250731T014310"
   },
   {
     "_disabled": "false",
@@ -3662,7 +4207,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250730T184958"
+    "version": "250731T014310"
   },
   {
     "_disabled": "false",
@@ -3735,7 +4280,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-42ca3d6-250730T061109"
+    "version": "HEAD-1216477-250730T232306"
   },
   {
     "_disabled": "false",

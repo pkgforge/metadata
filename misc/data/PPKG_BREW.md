@@ -136,7 +136,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.291** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.292** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -1926,7 +1926,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.46.0 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.46.0.tar.gz |
-| BREW   | **2.48.1** | https://github.com/fastfetch-cli/fastfetch |
+| BREW   | **2.49.0** | https://github.com/fastfetch-cli/fastfetch |
 
 *Outdated*
 
@@ -2773,7 +2773,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.1 ⚠️ | https://github.com/goreleaser/goreleaser/archive/refs/tags/v1.25.1.tar.gz |
-| BREW   | **2.11.1** | https://goreleaser.com/ |
+| BREW   | **2.11.2** | https://goreleaser.com/ |
 
 *Outdated*
 
@@ -3623,7 +3623,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.7 ⚠️ | https://github.com/jorgerojas26/lazysql/archive/refs/tags/v0.3.7.tar.gz |
-| BREW   | **0.3.9** | https://github.com/jorgerojas26/lazysql |
+| BREW   | **0.4.0** | https://github.com/jorgerojas26/lazysql |
 
 *Outdated*
 
@@ -6486,7 +6486,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.9.6** | https://ollama.com/ |
+| BREW   | **0.10.1** | https://ollama.com/ |
 
 *Outdated*
 

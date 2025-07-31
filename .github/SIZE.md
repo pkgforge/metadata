@@ -353,13 +353,13 @@
  3.4M   │ │ ├── riscv64-Linux.json
  2.7M   │ │ ├── riscv64-Linux.db
  2.3M   │ │ ├── riscv64-Linux.sdb
- 1.4M   │ │ ├── aarch64-Linux.sdb.cba
  1.4M   │ │ ├── x86_64-Linux.sdb.cba
+ 1.4M   │ │ ├── aarch64-Linux.sdb.cba
  1.4M   │ │ ├── x86_64-Linux.db.cba
  1.3M   │ │ ├── aarch64-Linux.db.cba
  1.0M   │ │ ├── x86_64-Linux.sdb.zstd
  1.0M   │ │ ├── aarch64-Linux.sdb.zstd
- 952K   │ │ ├── x86_64-Linux.sdb.xz
+ 956K   │ │ ├── x86_64-Linux.sdb.xz
  948K   │ │ ├── aarch64-Linux.sdb.xz
  940K   │ │ ├── x86_64-Linux.db.zstd
  932K   │ │ ├── aarch64-Linux.db.zstd
@@ -369,7 +369,7 @@
  872K   │ │ ├── x86_64-Linux.db.xz
  864K   │ │ ├── aarch64-Linux.db.xz
  860K   │ │ ├── aarch64-Linux.json.xz
- 256K   │ │ ├── riscv64-Linux.sdb.cba
+ 252K   │ │ ├── riscv64-Linux.sdb.cba
  248K   │ │ ├── riscv64-Linux.db.cba
  208K   │ │ ├── riscv64-Linux.sdb.zstd
  208K   │ │ ├── riscv64-Linux.json.cba
@@ -427,11 +427,11 @@
  788K   │ │ ├── pub_issues_binaries.txt
  680K   │ │ ├── COMP_VER_CACHE_OLD.json
  580K   │ │ ├── OLD_bincache_riscv64-Linux.json
- 428K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 404K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 456K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 440K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  384K   │ │ ├── INDEX.json.cba
  304K   │ │ ├── pub_issues_packages.txt
- 300K   │ │ ├── DIFF_bincache_riscv64-Linux.json
+ 304K   │ │ ├── DIFF_bincache_riscv64-Linux.json
  284K   │ │ ├── COMP_VER_CACHE_OLD.md
  280K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
  244K   │ │ ├── INDEX.db.cba
@@ -441,9 +441,9 @@
  192K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
  180K   │ │ ├── INDEX.db.xz
- 124K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 128K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+  80K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
-  76K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   52K   │ │ ├── URLS.txt
   48K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
   32K   │ │ ├── OLD_pkgcache_riscv64-Linux.json
@@ -483,7 +483,7 @@
  4.0K   │   ├── gen_ghcr_backage.sh
  4.0K   │   └── gen_diff.sh
  7.7M   ├─┬ pkgcache
- 7.6M   │ ├─┬ data
+ 7.5M   │ ├─┬ data
  1.2M   │ │ ├── x86_64-Linux.json
  1.2M   │ │ ├── x86_64-Linux.db
  1.1M   │ │ ├── x86_64-Linux.sdb
@@ -499,7 +499,7 @@
  116K   │ │ ├── x86_64-Linux.db.xz
  108K   │ │ ├── x86_64-Linux.json.zstd
  104K   │ │ ├── x86_64-Linux.json.xz
-  96K   │ │ ├── aarch64-Linux.sdb.cba
+  92K   │ │ ├── aarch64-Linux.sdb.cba
   88K   │ │ ├── aarch64-Linux.db.cba
   80K   │ │ ├── aarch64-Linux.json.cba
   76K   │ │ ├── aarch64-Linux.sdb.zstd

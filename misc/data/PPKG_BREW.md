@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.30 ⚠️ | null |
+| PPKG   | 2025.07.31 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -969,8 +969,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.7 ✅ | https://ftp.gnu.org/gnu/cflow/cflow-1.7.tar.bz2 |
-| BREW   | 1.7 | https://www.gnu.org/software/cflow/ |
+| PPKG   | 1.7 ⚠️ | https://ftp.gnu.org/gnu/cflow/cflow-1.7.tar.bz2 |
+| BREW   | **1.8** | https://www.gnu.org/software/cflow/ |
+
+*Outdated*
 
 ## cgal
 
@@ -1070,7 +1072,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.16.15 ⚠️ | https://github.com/cilium/cilium-cli/archive/refs/tags/v0.16.15.tar.gz |
-| BREW   | **0.18.5** | https://cilium.io |
+| BREW   | **0.18.6** | https://cilium.io |
 
 *Outdated*
 
@@ -1598,7 +1600,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.57.3** | https://github.com/dolthub/dolt |
+| BREW   | **1.57.4** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2412,7 +2414,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.76.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.76.0.tar.gz |
-| BREW   | **2.76.1** | https://cli.github.com/ |
+| BREW   | **2.76.2** | https://cli.github.com/ |
 
 *Outdated*
 
@@ -3212,7 +3214,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.0.1 ⚠️ | https://github.com/Orange-OpenSource/hurl/archive/refs/tags/5.0.1.tar.gz |
-| BREW   | **6.1.1** | https://hurl.dev |
+| BREW   | **7.0.0** | https://hurl.dev |
 
 *Outdated*
 
@@ -4597,7 +4599,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.30 ⚠️ | null |
+| PPKG   | 2025.07.31 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4617,7 +4619,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.30 ⚠️ | null |
+| PPKG   | 2025.07.31 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6655,7 +6657,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.30 ⚠️ | null |
+| PPKG   | 2025.07.31 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6822,7 +6824,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.30 ⚠️ | null |
+| PPKG   | 2025.07.31 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6986,7 +6988,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.30 ⚠️ | null |
+| PPKG   | 2025.07.31 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7356,7 +7358,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/apollographql/rover/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.34.1** | https://www.apollographql.com/docs/rover/ |
+| BREW   | **0.35.0** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
 
@@ -8344,7 +8346,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.3** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.4** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

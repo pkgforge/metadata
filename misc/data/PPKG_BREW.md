@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.31 ⚠️ | null |
+| PPKG   | 2025.08.01 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -713,7 +713,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.52.1 ⚠️ | https://github.com/bufbuild/buf/archive/refs/tags/v1.52.1.tar.gz |
-| BREW   | **1.55.1** | https://github.com/bufbuild/buf |
+| BREW   | **1.56.0** | https://github.com/bufbuild/buf |
 
 *Outdated*
 
@@ -1307,7 +1307,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.14.4 ⚠️ | https://github.com/containers/crun/releases/download/1.14.4/crun-1.14.4.tar.xz |
-| BREW   | **1.23** | https://github.com/containers/crun |
+| BREW   | **1.23.1** | https://github.com/containers/crun |
 
 *Outdated*
 
@@ -1711,7 +1711,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.0.0 ⚠️ | https://github.com/bootandy/dust/archive/refs/tags/v1.0.0.tar.gz |
-| BREW   | **1.2.2** | https://github.com/bootandy/dust |
+| BREW   | **1.2.3** | https://github.com/bootandy/dust |
 
 *Outdated*
 
@@ -4599,7 +4599,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.31 ⚠️ | null |
+| PPKG   | 2025.08.01 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4619,7 +4619,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.31 ⚠️ | null |
+| PPKG   | 2025.08.01 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5955,7 +5955,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 25.1.4 ⚠️ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
-| BREW   | **25.1.6** | https://www.mesa3d.org/ |
+| BREW   | **25.1.7** | https://www.mesa3d.org/ |
 
 *Outdated*
 
@@ -6508,7 +6508,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.65.0 ⚠️ | https://github.com/open-policy-agent/opa/archive/refs/tags/v0.65.0.tar.gz |
-| BREW   | **1.6.0** | https://www.openpolicyagent.org |
+| BREW   | **1.7.1** | https://www.openpolicyagent.org |
 
 *Outdated*
 
@@ -6657,7 +6657,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.31 ⚠️ | null |
+| PPKG   | 2025.08.01 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6824,7 +6824,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.31 ⚠️ | null |
+| PPKG   | 2025.08.01 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6988,7 +6988,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.07.31 ⚠️ | null |
+| PPKG   | 2025.08.01 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

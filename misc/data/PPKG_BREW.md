@@ -34,7 +34,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.2.62 ⚠️ | https://github.com/nektos/act/archive/refs/tags/v0.2.62.tar.gz |
-| BREW   | **0.2.79** | https://github.com/nektos/act |
+| BREW   | **0.2.80** | https://github.com/nektos/act |
 
 *Outdated*
 
@@ -674,8 +674,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 20250202 ✅ | https://github.com/txthinking/brook/archive/refs/tags/v20250202.tar.gz |
-| BREW   | 20250202 | https://brook.app/ |
+| PPKG   | 20250202 ⚠️ | https://github.com/txthinking/brook/archive/refs/tags/v20250202.tar.gz |
+| BREW   | **20250808** | https://brook.app/ |
+
+*Outdated*
 
 ## broot
 
@@ -3296,7 +3298,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.4 ⚠️ | https://linuxcontainers.org/downloads/incus/incus-6.4.tar.xz |
-| BREW   | **6.14** | https://linuxcontainers.org/incus |
+| BREW   | **6.15** | https://linuxcontainers.org/incus |
 
 *Outdated*
 
@@ -7708,8 +7710,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 20.1.4 ✅ | https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v20.1.4.tar.gz |
-| BREW   | 20.1.4 | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
+| PPKG   | 20.1.4 ⚠️ | https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v20.1.4.tar.gz |
+| BREW   | **20.1.5** | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
+
+*Outdated*
 
 ## spirv-tools
 

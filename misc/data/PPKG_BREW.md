@@ -280,7 +280,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.56.2 ⚠️ | https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.2.tar.xz |
-| BREW   | **2.56.3** | https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/ |
+| BREW   | **2.56.4** | https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/ |
 
 *Outdated*
 
@@ -1289,7 +1289,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 10.0.11 ⚠️ | https://github.com/schollz/croc/archive/refs/tags/v10.0.11.tar.gz |
-| BREW   | **10.2.2** | https://github.com/schollz/croc |
+| BREW   | **10.2.3** | https://github.com/schollz/croc |
 
 *Outdated*
 
@@ -1593,7 +1593,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.57.4** | https://github.com/dolthub/dolt |
+| BREW   | **1.57.5** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -3596,7 +3596,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.41.0 ⚠️ | https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz |
-| BREW   | **0.53.0** | https://github.com/jesseduffield/lazygit/ |
+| BREW   | **0.54.0** | https://github.com/jesseduffield/lazygit/ |
 
 *Outdated*
 
@@ -3711,7 +3711,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.7.4 ⚠️ | https://download.gnome.org/sources/libadwaita/1.7/libadwaita-1.7.4.tar.xz |
-| BREW   | **1.7.5** | https://gnome.pages.gitlab.gnome.org/libadwaita/ |
+| BREW   | **1.7.6** | https://gnome.pages.gitlab.gnome.org/libadwaita/ |
 
 *Outdated*
 
@@ -4167,7 +4167,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.4.6 ⚠️ | https://github.com/libffi/libffi/releases/download/v3.4.6/libffi-3.4.6.tar.gz |
-| BREW   | **3.5.1** | https://sourceware.org/libffi/ |
+| BREW   | **3.5.2** | https://sourceware.org/libffi/ |
 
 *Outdated*
 
@@ -7947,7 +7947,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.85.5 ⚠️ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.85.5.tar.gz |
-| BREW   | **1.86.1** | https://github.com/k1LoW/tbls |
+| BREW   | **1.87.0** | https://github.com/k1LoW/tbls |
 
 *Outdated*
 

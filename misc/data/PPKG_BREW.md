@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.01 ⚠️ | null |
+| PPKG   | 2025.08.02 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1349,7 +1349,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.8.1 ⚠️ | https://github.com/cue-lang/cue/archive/refs/tags/v0.8.1.tar.gz |
-| BREW   | **0.13.2** | https://cuelang.org/ |
+| BREW   | **0.14.0** | https://cuelang.org/ |
 
 *Outdated*
 
@@ -1574,15 +1574,6 @@
 | BREW   | **5.1** | https://docbook.org/ |
 
 *Outdated*
-
-## dog
-
-**Description:** A command-line DNS client
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 0.1.0 ✅ | https://github.com/ogham/dog/archive/v0.1.0.tar.gz |
-| BREW   | 0.1.0 | https://dns.lookup.dog/ |
 
 ## doggo
 
@@ -4601,7 +4592,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.01 ⚠️ | null |
+| PPKG   | 2025.08.02 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4621,7 +4612,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.01 ⚠️ | null |
+| PPKG   | 2025.08.02 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5771,7 +5762,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.684** | https://luau.org |
+| BREW   | **0.685** | https://luau.org |
 
 *Outdated*
 
@@ -6587,7 +6578,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.15.0 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v2.5.15.0.tar.gz |
-| BREW   | **3.0.8.1** | https://openimageio.readthedocs.io/en/stable/ |
+| BREW   | **3.0.9.0** | https://openimageio.readthedocs.io/en/stable/ |
 
 *Outdated*
 
@@ -6659,7 +6650,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.01 ⚠️ | null |
+| PPKG   | 2025.08.02 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6826,7 +6817,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.01 ⚠️ | null |
+| PPKG   | 2025.08.02 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6990,7 +6981,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.01 ⚠️ | null |
+| PPKG   | 2025.08.02 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8036,7 +8027,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.83.2** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.84.0** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8767,7 +8758,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.6.2 ⚠️ | https://github.com/rfc1036/whois/archive/refs/tags/v5.6.2.tar.gz |
-| BREW   | **5.6.3** | https://github.com/rfc1036/whois |
+| BREW   | **5.6.4** | https://github.com/rfc1036/whois |
 
 *Outdated*
 

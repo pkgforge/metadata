@@ -153,7 +153,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d217af8-250801T112315"
+    "version": "HEAD-ac7c9f3-250801T140208"
   },
   {
     "_disabled": "false",
@@ -204,7 +204,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d217af8-250801T112315"
+    "version": "HEAD-ac7c9f3-250801T140208"
   },
   {
     "_disabled": "false",
@@ -280,7 +280,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.42.0"
+    "version": "1.42.1"
   },
   {
     "_disabled": "false",
@@ -356,151 +356,101 @@
   },
   {
     "_disabled": "false",
-    "pkg": "caido",
-    "pkg_family": "caido",
-    "pkg_id": "github.com.caido.caido.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caido-stable/caido/caido",
-    "app_id": "io.caido.caido",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/caido/appimage.official.stable.yaml",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "nixpkgs.brave",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/nixappimage.nixpkgs.stable.yaml",
     "category": [
-      "Utility"
+      "WebBrowser"
     ],
-    "description": "Lightweight web security auditing toolkit",
-    "distro_pkg": {
-      "homebrew": [
-        "caido"
-      ],
-      "nixpkgs": [
-        "caido"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/caido/appimage.official.stable.yaml",
-    "homepage": [
-      "https://caido.io"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Unfree"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/caido/caido",
-      "You may need to run this with: --no-sandbox"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/caido/appimage/official",
-    "provides": [
-      "caido"
-    ],
-    "repology": [
-      "caido"
-    ],
-    "src_url": [
-      "https://github.com/caido/caido"
-    ],
-    "tag": [
-      "security"
-    ],
-    "version": "v0.50.2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "caido-cli",
-    "pkg_family": "caido-cli",
-    "pkg_id": "sharun.wrappe.stable.caido-cli",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/caido-cli/caido-cli/caido-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/caido-cli/archive.sharun.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "CLI for Caido: Lightweight web security auditing toolkit",
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
     "distro_pkg": {
       "archlinux": {
         "aur": [
-          "caido-cli"
+          "brave-bin"
         ]
-      }
+      },
+      "nixpkgs": [
+        "brave"
+      ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/caido-cli/archive.sharun.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/nixappimage.nixpkgs.stable.yaml",
     "homepage": [
-      "https://caido.io"
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
     ],
     "host": [
       "aarch64-linux",
       "x86_64-linux"
     ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
     "license": [
-      "Unfree"
+      "MPL-2.0"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "This version was repacked from official Release"
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/caido-cli/archive/sharun",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/nixappimage/nixpkgs",
     "provides": [
-      "caido-cli"
+      "brave"
     ],
     "repology": [
-      "caido-cli"
+      "brave"
     ],
     "src_url": [
-      "https://github.com/caido/caido"
+      "https://github.com/brave/brave-browser"
     ],
     "tag": [
-      "security"
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
     ],
-    "version": "v0.50.2"
+    "version": "1.80.125"
   },
   {
     "_disabled": "false",
     "pkg": "chromium",
     "pkg_family": "chromium",
-    "pkg_id": "nixpkgs.chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
     "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
-    "app_id": "org.chromium.Chromium",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
     "category": [
       "WebBrowser"
     ],
-    "description": "Open source web browser from Google (Stable)",
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
     "distro_pkg": {
-      "alpine": [
-        "chromium"
-      ],
       "archlinux": {
-        "extra": [
-          "chromium"
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
         ]
       },
-      "debian": [
-        "chromium"
-      ],
-      "homebrew": [
-        "chromium"
+      "gnuguix": [
+        "ungoogled-chromium"
       ],
       "nixpkgs": [
-        "chromium"
+        "ungoogled-chromium"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
     "homepage": [
-      "https://www.chromium.org",
-      "https://chromium.googlesource.com/chromium/src",
-      "https://github.com/chromium/chromium"
+      "https://github.com/ungoogled-software/ungoogled-chromium"
     ],
     "host": [
       "aarch64-linux",
@@ -522,13 +472,14 @@
     ],
     "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
     "provides": [
+      "chromium:ungoogled-chromium",
       "chromium==chromium-browser"
     ],
     "repology": [
-      "chromium"
+      "ungoogled-chromium"
     ],
     "src_url": [
-      "https://github.com/chromium/chromium"
+      "https://github.com/ungoogled-software/ungoogled-chromium"
     ],
     "tag": [
       "browser"
@@ -589,127 +540,6 @@
       "Utility"
     ],
     "version": "HEAD-5dfbe93-231012T002040"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "code-server",
-    "pkg_family": "code-server",
-    "pkg_id": "wrappe.code-server.stable",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/code-server/code-server",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/code-server/archive.wrappe.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Run VS Code on any machine anywhere and access it in the browser",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "code-server"
-        ]
-      },
-      "homebrew": [
-        "code-server"
-      ],
-      "nixpkgs": [
-        "code-server"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/code-server/archive.wrappe.stable.yaml",
-    "homepage": [
-      "https://coder.com/",
-      "https://github.com/coder/code-server"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/code-server/assets/default.png",
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/coder/code-server",
-      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "Host Dependencies: A lot, please use soar log to view the ldd output"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/code-server/archive/wrappe",
-    "provides": [
-      "code-server==vs-code-server"
-    ],
-    "repology": [
-      "code-server"
-    ],
-    "src_url": [
-      "https://github.com/coder/code-server"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "v4.102.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "crave",
-    "pkg_family": "crave",
-    "pkg_id": "sharun.wrappe.stable.crave",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stable-crave/crave/crave",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/crave/archive.sharun.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "CLI Client for Crave.io",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "crave"
-        ]
-      }
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/crave/archive.sharun.stable.yaml",
-    "homepage": [
-      "https://foss.crave.io/docs/",
-      "https://fosson.top/crave/getting-started/introduction.html",
-      "https://github.com/accupara/crave"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "proprietary"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/crave/archive/sharun",
-    "provides": [
-      "crave==crave-cli"
-    ],
-    "repology": [
-      "crave"
-    ],
-    "src_url": [
-      "https://github.com/accupara/crave"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "0.2-7139"
   },
   {
     "_disabled": "false",
@@ -1030,7 +860,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-1f325bc-250731T142300"
+    "version": "HEAD-08f3197-250802T083923"
   },
   {
     "_disabled": "false",
@@ -1161,86 +991,6 @@
       "matrix"
     ],
     "version": "1.11.103"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "fastfetch",
-    "pkg_family": "fastfetch",
-    "pkg_id": "sharun.wrappe.stable.fastfetch",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stable-fastfetch/fastfetch/fastfetch",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fastfetch/archive.sharun.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": {
-      "_default": "Fast and feature-rich tool displaying system information",
-      "fastfetch": "Fast and feature-rich tool displaying system information",
-      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
-    },
-    "distro_pkg": {
-      "alpine": [
-        "fastfetch"
-      ],
-      "archlinux": {
-        "aur": [
-          "fastfetch-git"
-        ],
-        "extra": [
-          "fastfetch"
-        ]
-      },
-      "debian": [
-        "fastfetch"
-      ],
-      "gnuguix": [
-        "fastfetch"
-      ],
-      "homebrew": [
-        "fastfetch"
-      ],
-      "nixpkgs": [
-        "fastfetch"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/fastfetch/archive.sharun.stable.yaml",
-    "homepage": [
-      "https://github.com/fastfetch-cli/fastfetch"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "This version was repacked from official Deb & contains the most features"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/fastfetch/archive/sharun",
-    "provides": [
-      "fastfetch",
-      "flashfetch"
-    ],
-    "repology": [
-      "fastfetch"
-    ],
-    "src_url": [
-      "https://github.com/fastfetch-cli/fastfetch"
-    ],
-    "tag": [
-      "fetch",
-      "neofetch"
-    ],
-    "version": "2.49.0"
   },
   {
     "_disabled": "true",
@@ -1508,7 +1258,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250801T010046"
+    "version": "250802T005108"
   },
   {
     "_disabled": "false",
@@ -1570,60 +1320,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250801T010046"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "huggingface-cli",
-    "pkg_family": "huggingface-cli",
-    "pkg_id": "sharun.wrappe.source.huggingface-cli",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/huggingface-cli/huggingface-cli/huggingface-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/huggingface-cli/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "The official Python client for the Huggingface Hub",
-    "distro_pkg": {
-      "homebrew": [
-        "huggingface-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/huggingface-cli/archive.sharun.source.yaml",
-    "homepage": [
-      "https://huggingface.co/docs/huggingface_hub"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/huggingface-cli/archive/sharun",
-    "provides": [
-      "huggingface-cli"
-    ],
-    "repology": [
-      "huggingface-cli"
-    ],
-    "src_url": [
-      "https://github.com/huggingface/huggingface_hub"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-8318fe4-250731T115737"
+    "version": "250802T005108"
   },
   {
     "_disabled": "true",
@@ -1893,130 +1590,6 @@
       "Utility"
     ],
     "version": "HEAD-4137704-250731T163339"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "oci-cli",
-    "pkg_family": "oci-cli",
-    "pkg_id": "sharun.wrappe.pypi.oci-cli",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oci-cli/oci-cli/oci-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oci-cli/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Command Line Interface for Oracle Cloud Infrastructure",
-    "distro_pkg": {
-      "alpine": [
-        "oci-cli"
-      ],
-      "archlinux": {
-        "aur": [
-          "oci-cli"
-        ]
-      },
-      "homebrew": [
-        "oci-cli"
-      ],
-      "nixpkgs": [
-        "oci-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/oci-cli/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://cloud.oracle.com/cloud-infrastructure",
-      "https://github.com/oracle/oci-cli"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "UPL-1.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
-    "provides": [
-      "oci==oci-cli"
-    ],
-    "repology": [
-      "oci-cli"
-    ],
-    "src_url": [
-      "https://pypi.org/project/oci-cli"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "3.63.2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "openvscode-server",
-    "pkg_family": "openvscode-server",
-    "pkg_id": "wrappe.openvscode-server.stable",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/openvscode-server/openvscode-server",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/openvscode-server/archive.wrappe.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Run VS Code on any machine anywhere and access it in the browser (GitPod)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "openvscode-server"
-        ]
-      },
-      "nixpkgs": [
-        "openvscode-server"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/openvscode-server/archive.wrappe.stable.yaml",
-    "homepage": [
-      "https://github.com/gitpod-io/openvscode-server"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/gitpod-io/openvscode-server",
-      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "Host Dependencies: A lot, please use soar log to view the ldd output"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/openvscode-server/archive/wrappe",
-    "provides": [
-      "openvscode-server"
-    ],
-    "repology": [
-      "openvscode-server"
-    ],
-    "src_url": [
-      "https://github.com/gitpod-io/openvscode-server"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "openvscode-server-v1.102.3"
   },
   {
     "_disabled": "false",
@@ -2588,7 +2161,8 @@
     ],
     "tag": [
       "Utility"
-    ]
+    ],
+    "version": "1.78.01.78.01.78.0"
   },
   {
     "_disabled": "false",
@@ -2657,7 +2231,8 @@
     ],
     "tag": [
       "Utility"
-    ]
+    ],
+    "version": "2025.175.1545162025.175.1545162025.175.154516"
   },
   {
     "_disabled": "true",
@@ -2741,116 +2316,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "wrangler",
-    "pkg_family": "wrangler",
-    "pkg_id": "sharun.wrappe.npm.wrangler",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/npm-wrangler/wrangler/wrangler",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wrangler/archive.sharun.npm.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Command-line interface for all things Cloudflare Workers",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "wrangler"
-        ]
-      },
-      "homebrew": [
-        "wrangler"
-      ],
-      "nixpkgs": [
-        "wrangler"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/wrangler/archive.sharun.npm.yaml",
-    "homepage": [
-      "https://developers.cloudflare.com/workers/cli-wrangler",
-      "https://github.com/cloudflare/workers-sdk"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [npm]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/wrangler/archive/sharun",
-    "provides": [
-      "wrangler"
-    ],
-    "repology": [
-      "wrangler"
-    ],
-    "src_url": [
-      "https://www.npmjs.com/package/wrangler"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "4.27.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xashds",
-    "pkg_family": "xashds",
-    "pkg_id": "wrappe.xashds",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Xash3D FWGS Dedicated Server",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
-    "homepage": [
-      "https://github.com/FWGS/xash3d-fwgs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
-      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "Host Dependencies: A lot, please use soar log to view the ldd output"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
-    "provides": [
-      "xashds==xash"
-    ],
-    "repology": [
-      "xash3d-fwgs"
-    ],
-    "src_url": [
-      "https://github.com/FWGS/xash3d-fwgs"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "250731T161238"
-  },
-  {
-    "_disabled": "false",
     "pkg": "yt-dlp",
     "pkg_family": "yt-dlp",
     "pkg_id": "sharun.wrappe.source.yt-dlp",
@@ -2920,66 +2385,6 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-71f3092-250731T203305"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zen-browser",
-    "pkg_family": "zen-browser",
-    "pkg_id": "github.com.zen-browser.desktop.twilight",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desktop-twilight/zen-browser/zen-browser",
-    "app_id": "app.zen_browser.zen",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zen-browser/appimage.official.twilight.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "Performance oriented Firefox-based web browser (Twilight)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "zen-browser",
-          "zen-browser-bin"
-        ]
-      },
-      "homebrew": [
-        "zen-browser"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/zen-browser/appimage.official.twilight.yaml",
-    "homepage": [
-      "https://zen-browser.app",
-      "https://github.com/zen-browser/desktop"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/zen-browser/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
-    "provides": [
-      "zen-browser==zen"
-    ],
-    "repology": [
-      "zen-browser"
-    ],
-    "src_url": [
-      "https://github.com/zen-browser/desktop"
-    ],
-    "tag": [
-      "arc",
-      "firefox",
-      "www-client"
-    ],
-    "version": "1.15t_2025-07-30"
+    "version": "HEAD-1c6068a-250801T205020"
   }
 ]

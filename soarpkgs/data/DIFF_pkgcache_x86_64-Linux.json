@@ -1644,7 +1644,7 @@
       "editor",
       "graphics"
     ],
-    "version": "3.0.4-3@2025-07-27_1753629896"
+    "version": "3.0.4-3@2025-08-03_1754234704"
   },
   {
     "_disabled": "true",
@@ -2687,7 +2687,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-97838b4-250802T180445"
+    "version": "HEAD-8ca5874-250803T171241"
   },
   {
     "_disabled": "false",
@@ -2914,6 +2914,59 @@
   },
   {
     "_disabled": "false",
+    "pkg": "showcert",
+    "pkg_family": "showcert",
+    "pkg_id": "sharun.wrappe.pypi.showcert",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-showcert/showcert/showcert",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/showcert/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Inspect TLS certificates presented by remote servers",
+    "distro_pkg": {
+      "homebrew": [
+        "showcert"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/showcert/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/yaroslaff/showcert"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/showcert/archive/sharun",
+    "provides": [
+      "showcert"
+    ],
+    "repology": [
+      "showcert"
+    ],
+    "src_url": [
+      "https://pypi.org/project/showcert"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "0.4.6"
+  },
+  {
+    "_disabled": "false",
     "pkg": "signal-desktop",
     "pkg_family": "signal-desktop",
     "pkg_id": "github.com.karo-solutions.Signal-Desktop-AppImage.stable",
@@ -2977,6 +3030,143 @@
       "messenger"
     ],
     "version": "v7.64.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "simplex-desktop",
+    "pkg_family": "simplex-desktop",
+    "pkg_id": "nixpkgs.simplex-chat-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/chat-desktop/simplex-desktop/simplex-desktop",
+    "app_id": "chat.simplex.simplex",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "Desktop application for SimpleX Chat, A 100% private-by-design chat platform",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "simplex-chat"
+        ]
+      },
+      "nixpkgs": [
+        "simplex-chat-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://simplex.chat",
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/assets/default.png",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/simplex-desktop/nixappimage/nixpkgs",
+    "provides": [
+      "simplex-desktop==simplex-chat-desktop"
+    ],
+    "repology": [
+      "simplex-chat",
+      "simplex-chat-desktop"
+    ],
+    "src_url": [
+      "https://github.com/simplex-chat/simplex-chat"
+    ],
+    "tag": [
+      "chat",
+      "messenger",
+      "privacy"
+    ],
+    "version": "6.4.2"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "strawberry",
+    "pkg_family": "strawberry",
+    "pkg_id": "github.com.pkgforge-dev.strawberry-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/strawberry/strawberry",
+    "app_id": "org.strawberrymusicplayer.strawberry",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/strawberry/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "Music",
+      "Player"
+    ],
+    "description": "A Audio Player and Music Collection Organizer",
+    "distro_pkg": {
+      "alpine": [
+        "strawberry"
+      ],
+      "archlinux": {
+        "aur": [
+          "strawberry-git"
+        ],
+        "extra": [
+          "strawberry"
+        ]
+      },
+      "debian": [
+        "strawberry"
+      ],
+      "gnuguix": [
+        "strawberry"
+      ],
+      "nixpkgs": [
+        "strawberry"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/strawberry/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://strawberrymusicplayer.org",
+      "https://github.com/jonaski/strawberry",
+      "https://github.com/pkgforge-dev/strawberry-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/strawberry/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/strawberry-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/strawberry/appimage/pkgforge-dev",
+    "provides": [
+      "strawberry"
+    ],
+    "repology": [
+      "strawberry"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/strawberry-AppImage"
+    ],
+    "tag": [
+      "Music",
+      "Sound/Players"
+    ],
+    "version": "1.2.11-2.1@2025-08-03_1754234802"
   },
   {
     "_disabled": "false",
@@ -3120,6 +3310,53 @@
     "_disabled": "false",
     "pkg": "tangent",
     "pkg_family": "tangent",
+    "pkg_id": "github.com.suchnsuch.Tangent",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/suchnsuch-tangent/tangent/tangent",
+    "app_id": "io.github.suchnsuch.Tangent",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/tangent/appimage.official.stable.yaml",
+    "category": [
+      "TextEditor"
+    ],
+    "description": "A clean and powerful open source notes app",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/tangent/appimage.official.stable.yaml",
+    "homepage": [
+      "https://www.tangentnotes.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/suchnsuch/Tangent"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/tangent/appimage/official",
+    "provides": [
+      "tangent"
+    ],
+    "repology": [
+      "tangent"
+    ],
+    "src_url": [
+      "https://www.tangentnotes.com/Download",
+      "https://github.com/suchnsuch/Tangent"
+    ],
+    "tag": [
+      "editor",
+      "note"
+    ],
+    "version": "0.10.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tangent",
+    "pkg_family": "tangent",
     "pkg_id": "github.com.suchnsuch.Tangent.alpha",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tangent-alpha/tangent/tangent",
@@ -3161,7 +3398,7 @@
       "editor",
       "note"
     ],
-    "version": "0.10.0-beta.2"
+    "version": "0.10.0"
   },
   {
     "_disabled": "false",
@@ -3623,7 +3860,7 @@
     "tag": [
       "utility"
     ],
-    "version": "250803T054101"
+    "version": "250803T141144"
   },
   {
     "_disabled": "false",
@@ -3671,7 +3908,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250803T054101"
+    "version": "250803T141144"
   },
   {
     "_disabled": "false",

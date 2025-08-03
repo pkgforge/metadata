@@ -2223,7 +2223,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.62.0 ⚠️ | https://github.com/junegunn/fzf/archive/refs/tags/v0.62.0.tar.gz |
-| BREW   | **0.65.0** | https://github.com/junegunn/fzf |
+| BREW   | **0.65.1** | https://github.com/junegunn/fzf |
 
 *Outdated*
 
@@ -3387,7 +3387,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.2.4 ⚠️ | https://github.com/jasper-software/jasper/releases/download/version-4.2.4/jasper-4.2.4.tar.gz |
-| BREW   | **4.2.5** | https://ece.engr.uvic.ca/~frodo/jasper/ |
+| BREW   | **4.2.7** | https://ece.engr.uvic.ca/~frodo/jasper/ |
 
 *Outdated*
 
@@ -8239,7 +8239,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.13.11 ⚠️ | https://github.com/Enter-tainer/typstyle/archive/refs/tags/v0.13.11.tar.gz |
-| BREW   | **0.13.16** | https://typstyle-rs.github.io/typstyle/ |
+| BREW   | **0.13.17** | https://typstyle-rs.github.io/typstyle/ |
 
 *Outdated*
 

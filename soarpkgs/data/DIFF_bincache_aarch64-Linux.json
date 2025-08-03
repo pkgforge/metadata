@@ -1,6 +1,82 @@
 [
   {
     "_disabled": "false",
+    "pkg": "7z",
+    "pkg_family": "7z",
+    "pkg_id": "github.com.ip7z.7zip",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ip7z-7zip/7z/7z",
+    "bincache": "ghcr.io/pkgforge/bincache/7z/official/7z",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/7z/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Command line archiver utility",
+    "distro_pkg": {
+      "alpine": [
+        "7zip"
+      ],
+      "archlinux": {
+        "aur": [
+          "7-zip",
+          "7-zip-bin",
+          "7-zip-full"
+        ]
+      },
+      "debian": [
+        "7zip"
+      ],
+      "nixpkgs": [
+        "_7zz",
+        "_7zz-rar"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/7z/static.official.stable.yaml",
+    "homepage": [
+      "https://7-zip.org",
+      "https://github.com/ip7z/7zip",
+      "https://sourceforge.net/projects/sevenzip",
+      "https://www.7-zip.org"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/ip7z/7zip"
+    ],
+    "provides": [
+      "7z"
+    ],
+    "repology": [
+      "7z"
+    ],
+    "src_url": [
+      "https://github.com/ip7z/7zip"
+    ],
+    "tag": [
+      "7zip",
+      "archive",
+      "archiver",
+      "archivers",
+      "Archiving/Compression",
+      "Productivity/Archiving/Compression",
+      "system",
+      "Tools",
+      "utils"
+    ],
+    "version": "25.01"
+  },
+  {
+    "_disabled": "false",
     "pkg": "alacritty",
     "pkg_family": "alacritty",
     "pkg_id": "ppkg.alacritty",
@@ -1910,7 +1986,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-cdbb695-250803T012625"
+    "version": "HEAD-26fdc7c-250803T105320"
   },
   {
     "_disabled": "false",
@@ -2829,8 +2905,7 @@
       "bootstrap",
       "busybox",
       "coreutils"
-    ],
-    "version": "HEAD-cdbb695-250803T012625"
+    ]
   },
   {
     "_disabled": "false",
@@ -4470,7 +4545,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-cf79675-250801T125052"
+    "version": "HEAD-3b4b769-250803T143849"
   },
   {
     "_disabled": "false",
@@ -4787,7 +4862,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-cf79675-250801T125052"
+    "version": "HEAD-3b4b769-250803T143849"
   },
   {
     "_disabled": "true",
@@ -6482,7 +6557,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-badae2b-250803T102232"
+    "version": "HEAD-582268f-250803T181945"
   },
   {
     "_disabled": "false",
@@ -6740,7 +6815,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-5c216f4-250802T110722"
+    "version": "HEAD-54e8ad7-250803T080018"
   },
   {
     "_disabled": "false",
@@ -7110,7 +7185,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-93aea34-250803T060406"
+    "version": "HEAD-50fee0c-250803T120345"
   },
   {
     "_disabled": "false",
@@ -7175,7 +7250,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "HEAD-8f51845-250802T175622"
+    "version": "HEAD-a149d4e-250803T114022"
   },
   {
     "_disabled": "false",
@@ -7251,6 +7326,50 @@
       "httpserver"
     ],
     "version": "HEAD-9862845-230726T055235"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gokr-rsync",
+    "pkg_family": "gokr-rsync",
+    "pkg_id": "github.com.gokrazy.rsync.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rsync-source/gokr-rsync/gokr-rsync",
+    "bincache": "ghcr.io/pkgforge/bincache/gokr-rsync/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gokr-rsync/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Go Implementation of rsync Client & Server",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gokr-rsync/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/gokrazy/rsync"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/gokrazy/rsync"
+    ],
+    "provides": [
+      "gokr-rsync",
+      "gokr-rsyncd"
+    ],
+    "src_url": [
+      "https://github.com/gokrazy/rsync"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-4d679b8-250803T101234"
   },
   {
     "_disabled": "false",
@@ -7352,6 +7471,68 @@
       "matrix"
     ],
     "version": "HEAD-1c5d56b-250723T110847"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gost",
+    "pkg_family": "gost",
+    "pkg_id": "github.com.go-gost.gost.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gost-source/gost/gost",
+    "bincache": "ghcr.io/pkgforge/bincache/gost/go-gost/gost",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/gost/static.go-gost.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A simple tunnel written in golang",
+    "distro_pkg": {
+      "alpine": [
+        "gost"
+      ],
+      "archlinux": {
+        "extra": [
+          "gost"
+        ]
+      },
+      "debian": [
+        "gost"
+      ],
+      "homebrew": [
+        "gost"
+      ],
+      "nixpkgs": [
+        "gost"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/gost/static.go-gost.source.yaml",
+    "homepage": [
+      "https://github.com/go-gost/gost"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/go-gost/gost"
+    ],
+    "repology": [
+      "gost"
+    ],
+    "src_url": [
+      "https://github.com/go-gost/gost"
+    ],
+    "tag": [
+      "tunnel"
+    ],
+    "version": "HEAD-1a0e2b0-250803T153857"
   },
   {
     "_disabled": "false",
@@ -8818,7 +8999,7 @@
       "asdf",
       "dev-env"
     ],
-    "version": "v2025.8.3"
+    "version": "v2025.8.4"
   },
   {
     "_disabled": "false",
@@ -9695,7 +9876,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-2c9f6ac-250802T210443"
+    "version": "HEAD-7cc1a86-250803T132703"
   },
   {
     "_disabled": "false",
@@ -9759,7 +9940,7 @@
     "tag": [
       "shell"
     ],
-    "version": "HEAD-2c9f6ac-250802T210443"
+    "version": "HEAD-7cc1a86-250803T132703"
   },
   {
     "_disabled": "false",
@@ -10752,7 +10933,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-8b096cc-250803T001706"
+    "version": "HEAD-b10c89e-250803T082632"
   },
   {
     "_disabled": "false",
@@ -11365,7 +11546,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-371268f-250802T130725"
+    "version": "HEAD-71c54b0-250803T202340"
   },
   {
     "_disabled": "false",
@@ -11941,6 +12122,71 @@
   },
   {
     "_disabled": "false",
+    "pkg": "tailspin",
+    "pkg_family": "tailspin",
+    "pkg_id": "github.com.bensadeh.tailspin",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bensadeh-tailspin/tailspin/tailspin",
+    "bincache": "ghcr.io/pkgforge/bincache/tailspin/official/tailspin",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tailspin/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A log file highlighter and a drop-in replacement for tail -f",
+    "distro_pkg": {
+      "alpine": [
+        "tailspin"
+      ],
+      "archlinux": {
+        "extra": [
+          "tailspin"
+        ]
+      },
+      "debian": [
+        "tailspin"
+      ],
+      "nixpkgs": [
+        "tailspin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tailspin/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/bensadeh/tailspin"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/bensadeh/tailspin"
+    ],
+    "provides": [
+      "tspin",
+      "tailspin"
+    ],
+    "repology": [
+      "tailspin"
+    ],
+    "src_url": [
+      "https://github.com/bensadeh/tailspin"
+    ],
+    "tag": [
+      "log",
+      "logfile",
+      "tail"
+    ],
+    "version": "HEAD-bf6572e-250803T113657"
+  },
+  {
+    "_disabled": "false",
     "pkg": "teldrive",
     "pkg_family": "teldrive",
     "pkg_id": "github.com.divyam234.teldrive",
@@ -11980,7 +12226,7 @@
       "drive",
       "telegram"
     ],
-    "version": "HEAD-e7f5fca-250801T202249"
+    "version": "HEAD-e6cbf3f-250803T140226"
   },
   {
     "_disabled": "false",
@@ -12037,6 +12283,153 @@
       "Utility"
     ],
     "version": "HEAD-3105abf-250718T081217"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tinycc",
+    "pkg_family": "tinycc",
+    "pkg_id": "github.com.TinyCC.tinycc.glibc",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tinycc-glibc/tinycc/tinycc",
+    "bincache": "ghcr.io/pkgforge/bincache/tinycc/official/glibc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tinycc/static.official.glibc.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast Tiny C Compiler",
+    "distro_pkg": {
+      "alpine": [
+        "tcc"
+      ],
+      "archlinux": {
+        "aur": [
+          "tcc-git"
+        ],
+        "extra": [
+          "tcc"
+        ]
+      },
+      "debian": [
+        "tcc"
+      ],
+      "gnuguix": [
+        "tcc"
+      ],
+      "homebrew": [
+        "tcc"
+      ],
+      "nixpkgs": [
+        "tinycc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tinycc/static.official.glibc.yaml",
+    "homepage": [
+      "https://bellard.org/tcc/",
+      "https://github.com/TinyCC/tinycc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "LGPL-2.1"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/TinyCC/tinycc",
+      "Statically Linked on Debian (GLIBC)"
+    ],
+    "provides": [
+      "tcc==tinycc"
+    ],
+    "repology": [
+      "tinycc"
+    ],
+    "src_url": [
+      "https://github.com/TinyCC/tinycc",
+      "https://repo.or.cz/tinycc.git"
+    ],
+    "tag": [
+      "compiler"
+    ],
+    "version": "HEAD-6694391-250803T103558"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tinycc",
+    "pkg_family": "tinycc",
+    "pkg_id": "github.com.TinyCC.tinycc.musl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tinycc-musl/tinycc/tinycc",
+    "bincache": "ghcr.io/pkgforge/bincache/tinycc/official/musl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tinycc/static.official.musl.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Fast Tiny C Compiler",
+    "distro_pkg": {
+      "alpine": [
+        "tcc"
+      ],
+      "archlinux": {
+        "aur": [
+          "tcc-git"
+        ],
+        "extra": [
+          "tcc"
+        ]
+      },
+      "debian": [
+        "tcc"
+      ],
+      "gnuguix": [
+        "tcc"
+      ],
+      "homebrew": [
+        "tcc"
+      ],
+      "nixpkgs": [
+        "tinycc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tinycc/static.official.musl.yaml",
+    "homepage": [
+      "https://bellard.org/tcc/",
+      "https://github.com/TinyCC/tinycc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "LGPL-2.1"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/TinyCC/tinycc"
+    ],
+    "provides": [
+      "tcc==tinycc"
+    ],
+    "repology": [
+      "tinycc"
+    ],
+    "src_url": [
+      "https://github.com/TinyCC/tinycc",
+      "https://repo.or.cz/tinycc.git"
+    ],
+    "tag": [
+      "compiler"
+    ],
+    "version": "HEAD-6694391-250803T103558"
   },
   {
     "_disabled": "false",
@@ -12505,6 +12898,108 @@
       "postgres"
     ],
     "version": "HEAD-8791067-241231T014152"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "vtm",
+    "pkg_family": "vtm",
+    "pkg_id": "github.com.directvt.vtm",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/directvt-vtm/vtm/vtm",
+    "bincache": "ghcr.io/pkgforge/bincache/vtm/official/vtm",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vtm/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vtm",
+          "vtm-bin",
+          "vtm-git"
+        ]
+      },
+      "nixpkgs": [
+        "vtm"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vtm/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/directvt/vtm"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/directvt/vtm"
+    ],
+    "provides": [
+      "vtm"
+    ],
+    "repology": [
+      "vtm"
+    ],
+    "src_url": [
+      "https://github.com/directvt/vtm"
+    ],
+    "tag": [
+      "multiplexer",
+      "terminal"
+    ],
+    "version": "v2025.08.03"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wasmi",
+    "pkg_family": "wasmi",
+    "pkg_id": "github.com.wasmi-labs.wasmi.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wasmi-source/wasmi/wasmi",
+    "bincache": "ghcr.io/pkgforge/bincache/wasmi/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/wasmi/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Efficient and Lightweight WebAssembly interpreter with a focus on constrained and embedded systems",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/wasmi/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/wasmi-labs/wasmi"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/wasmi-labs/wasmi"
+    ],
+    "provides": [
+      "wasmi-cli==wasm_cli"
+    ],
+    "src_url": [
+      "https://github.com/wasmi-labs/wasmi"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-ff509ef-250803T134605"
   },
   {
     "_disabled": "false",

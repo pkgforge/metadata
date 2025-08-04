@@ -868,6 +868,80 @@
     "_disabled": "false",
     "pkg": "bubblewrap",
     "pkg_family": "bubblewrap",
+    "pkg_id": "github.com.containers.bubblewrap",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/containers-bubblewrap/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/official/bwrap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Namespaces-powered chroot-like solution for Unprivileged Sandboxing",
+    "distro_pkg": {
+      "alpine": [
+        "bubblewrap"
+      ],
+      "archlinux": {
+        "aur": [
+          "bubblewrap-git"
+        ],
+        "extra": [
+          "bubblewrap"
+        ]
+      },
+      "debian": [
+        "bubblewrap"
+      ],
+      "gnuguix": [
+        "bubblewrap"
+      ],
+      "homebrew": [
+        "bubblewrap"
+      ],
+      "nixpkgs": [
+        "bubblewrap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bubblewrap/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "LGPL-2.0-or-later"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containers/bubblewrap"
+    ],
+    "provides": [
+      "bwrap==bubblewrap"
+    ],
+    "repology": [
+      "bubblewrap"
+    ],
+    "src_url": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "tag": [
+      "container",
+      "namespace",
+      "sandbox"
+    ],
+    "version": "HEAD-d6180f2-250804T153038"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bubblewrap",
+    "pkg_family": "bubblewrap",
     "pkg_id": "github.com.containers.bubblewrap.glibc",
     "pkg_type": "static",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bubblewrap-glibc/bubblewrap/bubblewrap",
@@ -937,7 +1011,84 @@
       "namespace",
       "sandbox"
     ],
-    "version": "HEAD-9ca3b05-241030T160747"
+    "version": "HEAD-d6180f2-250804T153038"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "bubblewrap",
+    "pkg_family": "bubblewrap",
+    "pkg_id": "github.com.containers.bubblewrap.patched",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/bubblewrap-patched/bubblewrap/bubblewrap",
+    "bincache": "ghcr.io/pkgforge/bincache/bubblewrap/patched/bwrap",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/bubblewrap/static.patched.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Namespaces-powered chroot-like solution for Unprivileged Sandboxing (Patched)",
+    "distro_pkg": {
+      "alpine": [
+        "bubblewrap"
+      ],
+      "archlinux": {
+        "aur": [
+          "bubblewrap-git"
+        ],
+        "extra": [
+          "bubblewrap"
+        ]
+      },
+      "debian": [
+        "bubblewrap"
+      ],
+      "gnuguix": [
+        "bubblewrap"
+      ],
+      "homebrew": [
+        "bubblewrap"
+      ],
+      "nixpkgs": [
+        "bubblewrap"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/bubblewrap/static.patched.source.yaml",
+    "homepage": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "LGPL-2.0-or-later"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/containers/bubblewrap",
+      "The bwrap-patched binary is patched to allow nested bubblewraps with capabilities (INSECURE)",
+      "Learn more @ https://github.com/VHSgunzo/bubblewrap-static/blob/main/caps.patch"
+    ],
+    "provides": [
+      "bwrap=>bwrap-patched",
+      "bwrap=>bubblewrap-patched"
+    ],
+    "repology": [
+      "bubblewrap"
+    ],
+    "src_url": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "tag": [
+      "container",
+      "namespace",
+      "sandbox"
+    ],
+    "version": "HEAD-d6180f2-250804T153038"
   },
   {
     "_disabled": "false",
@@ -1015,7 +1166,7 @@
       "namespace",
       "sandbox"
     ],
-    "version": "HEAD-9ca3b05-241030T160747"
+    "version": "HEAD-d6180f2-250804T153038"
   },
   {
     "_disabled": "false",
@@ -2536,7 +2687,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-75d2c66-250804T144601"
+    "version": "HEAD-e753d4d-250804T150830"
   },
   {
     "_disabled": "false",
@@ -3005,7 +3156,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-24f502b-250801T160502"
+    "version": "HEAD-cf7c2b9-250804T084041"
   },
   {
     "_disabled": "false",
@@ -3213,7 +3364,7 @@
     "tag": [
       "gitlab"
     ],
-    "version": "HEAD-0545e8f-250801T131346"
+    "version": "HEAD-b505f4b-250804T202308"
   },
   {
     "_disabled": "false",
@@ -4584,7 +4735,7 @@
     "tag": [
       "json"
     ],
-    "version": "HEAD-0ff997f-250731T230024"
+    "version": "HEAD-a8115e5-250804T211216"
   },
   {
     "_disabled": "false",
@@ -9383,7 +9534,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-bd1c660-250804T105125"
+    "version": "HEAD-9b59e90-250804T193057"
   },
   {
     "_disabled": "false",

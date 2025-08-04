@@ -291,7 +291,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 18.1.0 ⚠️ | https://github.com/ellie/atuin/archive/refs/tags/v18.1.0.tar.gz |
-| BREW   | **18.7.1** | https://atuin.sh/ |
+| BREW   | **18.8.0** | https://atuin.sh/ |
 
 *Outdated*
 
@@ -4722,7 +4722,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.13.37 ⚠️ | https://github.com/google/libphonenumber/archive/refs/tags/v8.13.37.tar.gz |
-| BREW   | **9.0.10** | https://github.com/google/libphonenumber |
+| BREW   | **9.0.11** | https://github.com/google/libphonenumber |
 
 *Outdated*
 
@@ -7424,7 +7424,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-07-28** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-08-04** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 
@@ -7546,8 +7546,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.10.0 ✅ | https://github.com/koalaman/shellcheck/archive/refs/tags/v0.10.0.tar.gz |
-| BREW   | 0.10.0 | https://www.shellcheck.net/ |
+| PPKG   | 0.10.0 ⚠️ | https://github.com/koalaman/shellcheck/archive/refs/tags/v0.10.0.tar.gz |
+| BREW   | **0.11.0** | https://www.shellcheck.net/ |
+
+*Outdated*
 
 ## shellharden
 

@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.03 ⚠️ | null |
+| PPKG   | 2025.08.04 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -892,7 +892,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.99 ⚠️ | https://github.com/nextest-rs/nextest/archive/refs/tags/cargo-nextest-0.9.99.tar.gz |
-| BREW   | **0.9.101** | https://nexte.st |
+| BREW   | **0.9.102** | https://nexte.st |
 
 *Outdated*
 
@@ -1289,7 +1289,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 10.0.11 ⚠️ | https://github.com/schollz/croc/archive/refs/tags/v10.0.11.tar.gz |
-| BREW   | **10.2.3** | https://github.com/schollz/croc |
+| BREW   | **10.2.4** | https://github.com/schollz/croc |
 
 *Outdated*
 
@@ -3927,7 +3927,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.4 ⚠️ | https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v2.4/libcerf-v2.4.tar.gz |
-| BREW   | **3.0** | https://jugit.fz-juelich.de/mlz/libcerf |
+| BREW   | **3.1** | https://jugit.fz-juelich.de/mlz/libcerf |
 
 *Outdated*
 
@@ -4592,7 +4592,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.03 ⚠️ | null |
+| PPKG   | 2025.08.04 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4612,7 +4612,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.03 ⚠️ | null |
+| PPKG   | 2025.08.04 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6650,7 +6650,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.03 ⚠️ | null |
+| PPKG   | 2025.08.04 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6817,7 +6817,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.03 ⚠️ | null |
+| PPKG   | 2025.08.04 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6981,7 +6981,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.03 ⚠️ | null |
+| PPKG   | 2025.08.04 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

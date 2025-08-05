@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.04 ⚠️ | null |
+| PPKG   | 2025.08.05 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1593,7 +1593,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.57.5** | https://github.com/dolthub/dolt |
+| BREW   | **1.57.6** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -1746,7 +1746,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookexperimental/edencommon/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.07.28.00** | https://github.com/facebookexperimental/edencommon |
+| BREW   | **2025.08.04.00** | https://github.com/facebookexperimental/edencommon |
 
 *Outdated*
 
@@ -1930,7 +1930,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fb303/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.07.28.00** | https://github.com/facebook/fb303 |
+| BREW   | **2025.08.04.00** | https://github.com/facebook/fb303 |
 
 *Outdated*
 
@@ -1941,7 +1941,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fbthrift/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.07.28.00** | https://github.com/facebook/fbthrift |
+| BREW   | **2025.08.04.00** | https://github.com/facebook/fbthrift |
 
 *Outdated*
 
@@ -2050,7 +2050,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/fizz/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.07.28.00** | https://github.com/facebookincubator/fizz |
+| BREW   | **2025.08.04.00** | https://github.com/facebookincubator/fizz |
 
 *Outdated*
 
@@ -2815,7 +2815,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.15 ⚠️ | https://github.com/gperftools/gperftools/releases/download/gperftools-2.15/gperftools-2.15.tar.gz |
-| BREW   | **2.16** | https://github.com/gperftools/gperftools |
+| BREW   | **2.17** | https://github.com/gperftools/gperftools |
 
 *Outdated*
 
@@ -4200,7 +4200,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.10.3 ⚠️ | https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.3.tar.bz2 |
-| BREW   | **1.11.1** | https://gnupg.org/related_software/libgcrypt/ |
+| BREW   | **1.11.2** | https://gnupg.org/related_software/libgcrypt/ |
 
 *Outdated*
 
@@ -4592,7 +4592,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.04 ⚠️ | null |
+| PPKG   | 2025.08.05 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4612,7 +4612,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.04 ⚠️ | null |
+| PPKG   | 2025.08.05 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -4817,7 +4817,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.1.1 ⚠️ | https://github.com/Qalculate/libqalculate/releases/download/v5.1.1/libqalculate-5.1.1.tar.gz |
-| BREW   | **5.6.0** | https://qalculate.github.io/ |
+| BREW   | **5.7.0** | https://qalculate.github.io/ |
 
 *Outdated*
 
@@ -6122,7 +6122,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/mvfst/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.07.28.00** | https://github.com/facebook/mvfst |
+| BREW   | **2025.08.04.00** | https://github.com/facebook/mvfst |
 
 *Outdated*
 
@@ -6650,7 +6650,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.04 ⚠️ | null |
+| PPKG   | 2025.08.05 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6817,7 +6817,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.04 ⚠️ | null |
+| PPKG   | 2025.08.05 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6981,7 +6981,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.04 ⚠️ | null |
+| PPKG   | 2025.08.05 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7252,7 +7252,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.0.12 ⚠️ | https://download.redis.io/releases/redis-7.0.12.tar.gz |
-| BREW   | **8.0.3** | https://redis.io/ |
+| BREW   | **8.2.0** | https://redis.io/ |
 
 *Outdated*
 
@@ -8029,7 +8029,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.84.0** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.84.1** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8589,7 +8589,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/wangle/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.07.28.00** | https://github.com/facebook/wangle |
+| BREW   | **2025.08.04.00** | https://github.com/facebook/wangle |
 
 *Outdated*
 
@@ -8651,7 +8651,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/watchman/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.07.28.00** | https://github.com/facebook/watchman |
+| BREW   | **2025.08.04.00** | https://github.com/facebook/watchman |
 
 *Outdated*
 

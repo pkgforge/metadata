@@ -9005,7 +9005,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.41.2 ⚠️ | https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.2.tar.gz |
-| BREW   | **0.42.2** | https://zellij.dev |
+| BREW   | **0.43.0** | https://zellij.dev |
 
 *Outdated*
 

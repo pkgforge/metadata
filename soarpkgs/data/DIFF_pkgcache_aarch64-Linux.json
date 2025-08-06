@@ -153,58 +153,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-dbd3a4e-250804T115726"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "apptainer",
-    "pkg_family": "apptainer",
-    "pkg_id": "wrappe.github.com.apptainer.apptainer.musl",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apptainer-musl/apptainer/apptainer",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/apptainer/archive.wrappe.musl.yaml",
-    "category": [
-      "ConsoleOnly",
-      "Utility"
-    ],
-    "description": "Standalone Linux Container Alternative to docker/podman that runs anywhere with 0 Dependency",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/apptainer/archive.wrappe.musl.yaml",
-    "homepage": [
-      "https://github.com/apptainer/apptainer"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/apptainer/apptainer",
-      "Statically Linked on Alpine (MUSL)",
-      "Packed Using Wrappe. Check/Report @ https://github.com/Systemcluster/wrappe",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "This may need extra requirements on host, read more: https://apptainer.org/docs/user/latest/bind_paths_and_mounts.html#requirements"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/apptainer/archive/wrappe",
-    "provides": [
-      "apptainer"
-    ],
-    "repology": [
-      "apptainer"
-    ],
-    "src_url": [
-      "https://github.com/apptainer/apptainer"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-dbd3a4e-250804T115726"
+    "version": "HEAD-dd820ea-250805T111124"
   },
   {
     "_disabled": "false",
@@ -280,7 +229,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.42.2"
+    "version": "1.42.3"
   },
   {
     "_disabled": "false",
@@ -353,6 +302,80 @@
       "Utility"
     ],
     "version": "2.3.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "certbot",
+    "pkg_family": "certbot",
+    "pkg_id": "sharun.wrappe.pypi.certbot",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-certbot/certbot/certbot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/certbot/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Tool to obtain certificates from Lets Encrypt and other ACME compliant CAs",
+    "distro_pkg": {
+      "alpine": [
+        "certbot"
+      ],
+      "archlinux": {
+        "aur": [
+          "certbot-git"
+        ],
+        "extra": [
+          "certbot"
+        ]
+      },
+      "debian": [
+        "python-certbot"
+      ],
+      "gnuguix": [
+        "certbot"
+      ],
+      "homebrew": [
+        "certbot"
+      ],
+      "nixpkgs": [
+        "certbot"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/certbot/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://certbot.eff.org/docs",
+      "https://github.com/certbot/certbot"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/certbot/archive/sharun",
+    "provides": [
+      "certbot"
+    ],
+    "repology": [
+      "certbot"
+    ],
+    "src_url": [
+      "https://pypi.org/project/certbot"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "4.2.0"
   },
   {
     "_disabled": "false",
@@ -466,53 +489,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-0b08aa2-250805T070701"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "credsweeper",
-    "pkg_family": "credsweeper",
-    "pkg_id": "sharun.wrappe.pypi.credsweeper",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-credsweeper/credsweeper/credsweeper",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/credsweeper/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Tool to detect credentials in any directories or files",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/credsweeper/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://credsweeper.readthedocs.io",
-      "https://github.com/Samsung/CredSweeper"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/credsweeper/archive/sharun",
-    "provides": [
-      "credsweeper"
-    ],
-    "src_url": [
-      "https://pypi.org/project/credsweeper"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "1.12.1"
+    "version": "HEAD-6640ee9-250806T070656"
   },
   {
     "_disabled": "false",
@@ -833,7 +810,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c6a393e-250805T085919"
+    "version": "HEAD-396e71f-250806T091009"
   },
   {
     "_disabled": "false",
@@ -964,67 +941,6 @@
       "matrix"
     ],
     "version": "1.11.103"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "gearlever",
-    "pkg_family": "gearlever",
-    "pkg_id": "nixpkgs.gearlever",
-    "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-gearlever/gearlever/gearlever",
-    "app_id": "it.mijorus.gearlever",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gearlever/nixappimage.nixpkgs.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Manage AppImages with ease",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "gearlever"
-        ]
-      },
-      "nixpkgs": [
-        "gearlever"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/gearlever/nixappimage.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://gearlever.mijorus.it",
-      "https://mijorus.it/projects/gearlever"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/gearlever/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
-      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/gearlever/nixappimage/nixpkgs",
-    "provides": [
-      "gearlever"
-    ],
-    "repology": [
-      "gearlever"
-    ],
-    "src_url": [
-      "https://github.com/mijorus/gearlever"
-    ],
-    "tag": [
-      "package-manager"
-    ],
-    "version": "3.3.4"
   },
   {
     "_disabled": "true",
@@ -1292,7 +1208,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250805T005443"
+    "version": "250806T005334"
   },
   {
     "_disabled": "false",
@@ -1354,60 +1270,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250805T005443"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "huggingface-cli",
-    "pkg_family": "huggingface-cli",
-    "pkg_id": "sharun.wrappe.source.huggingface-cli",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/huggingface-cli/huggingface-cli/huggingface-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/huggingface-cli/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "The official Python client for the Huggingface Hub",
-    "distro_pkg": {
-      "homebrew": [
-        "huggingface-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/huggingface-cli/archive.sharun.source.yaml",
-    "homepage": [
-      "https://huggingface.co/docs/huggingface_hub"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/huggingface-cli/archive/sharun",
-    "provides": [
-      "huggingface-cli"
-    ],
-    "repology": [
-      "huggingface-cli"
-    ],
-    "src_url": [
-      "https://github.com/huggingface/huggingface_hub"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-c7ffbdb-250804T160547"
+    "version": "250806T005334"
   },
   {
     "_disabled": "true",
@@ -1676,72 +1539,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-3c8bb13-250804T183253"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "oci-cli",
-    "pkg_family": "oci-cli",
-    "pkg_id": "sharun.wrappe.pypi.oci-cli",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oci-cli/oci-cli/oci-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oci-cli/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Command Line Interface for Oracle Cloud Infrastructure",
-    "distro_pkg": {
-      "alpine": [
-        "oci-cli"
-      ],
-      "archlinux": {
-        "aur": [
-          "oci-cli"
-        ]
-      },
-      "homebrew": [
-        "oci-cli"
-      ],
-      "nixpkgs": [
-        "oci-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/oci-cli/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://cloud.oracle.com/cloud-infrastructure",
-      "https://github.com/oracle/oci-cli"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "UPL-1.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
-    "provides": [
-      "oci==oci-cli"
-    ],
-    "repology": [
-      "oci-cli"
-    ],
-    "src_url": [
-      "https://pypi.org/project/oci-cli"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "3.63.3"
+    "version": "HEAD-84d8f10-250805T223825"
   },
   {
     "_disabled": "false",
@@ -1962,252 +1760,6 @@
       "Utility"
     ],
     "version": "1.0.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "showcert",
-    "pkg_family": "showcert",
-    "pkg_id": "sharun.wrappe.pypi.showcert",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-showcert/showcert/showcert",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/showcert/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Inspect TLS certificates presented by remote servers",
-    "distro_pkg": {
-      "homebrew": [
-        "showcert"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/showcert/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/yaroslaff/showcert"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/showcert/archive/sharun",
-    "provides": [
-      "showcert"
-    ],
-    "repology": [
-      "showcert"
-    ],
-    "src_url": [
-      "https://pypi.org/project/showcert"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "0.4.6"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "simplex-desktop",
-    "pkg_family": "simplex-desktop",
-    "pkg_id": "nixpkgs.simplex-chat-desktop",
-    "pkg_type": "nixappimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/chat-desktop/simplex-desktop/simplex-desktop",
-    "app_id": "chat.simplex.simplex",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
-    "category": [
-      "Chat",
-      "InstantMessaging"
-    ],
-    "description": "Desktop application for SimpleX Chat, A 100% private-by-design chat platform",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "simplex-chat"
-        ]
-      },
-      "nixpkgs": [
-        "simplex-chat-desktop"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/nixappimage.nixpkgs.stable.yaml",
-    "homepage": [
-      "https://simplex.chat",
-      "https://github.com/simplex-chat/simplex-chat"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/simplex-desktop/assets/default.png",
-    "license": [
-      "AGPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
-      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/simplex-desktop/nixappimage/nixpkgs",
-    "provides": [
-      "simplex-desktop==simplex-chat-desktop"
-    ],
-    "repology": [
-      "simplex-chat",
-      "simplex-chat-desktop"
-    ],
-    "src_url": [
-      "https://github.com/simplex-chat/simplex-chat"
-    ],
-    "tag": [
-      "chat",
-      "messenger",
-      "privacy"
-    ],
-    "version": "6.4.2"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "sudo-rs",
-    "pkg_family": "sudo-rs",
-    "pkg_id": "sharun.wrappe.sudo-rs.source",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-source/sudo-rs/sudo-rs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/sudo-rs/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": {
-      "_default": "Memory safe implementation of sudo and su",
-      "cvtsudoers": "Convert between sudoers file formats [sudo-rs]",
-      "sudo": "Execute a command as another user [sudo-rs]",
-      "sudo.conf": "Configuration for sudo front-end [sudo-rs]",
-      "sudo_logsrvd": "sudo event and I/O log server [sudo-rs]",
-      "sudo_logsrvd.conf": "Configuration for sudo_logsrvd [sudo-rs]",
-      "sudo_sendlog": "Send sudo I/O log to log server [sudo-rs]",
-      "sudoedit": "An extension of the sudo -e command to edit a file [sudo-rs]",
-      "sudoers": "Default sudo security policy plugin [sudo-rs]",
-      "sudoers.dist": "Default configuration file for sudoers [sudo-rs]",
-      "sudoreplay": "Replay sudo session logs [sudo-rs]",
-      "su": "Change user id or become root [sudo-rs]",
-      "visudo": "Edit the sudoers file [sudo-rs]"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "sudo-rs",
-          "sudo-rs-git"
-        ]
-      },
-      "nixpkgs": [
-        "sudo-rs"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/sudo-rs/archive.sharun.source.yaml",
-    "homepage": [
-      "https://github.com/trifectatechfoundation/sudo-rs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trifectatechfoundation/sudo-rs",
-      "Built Using Sharun. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "sudo must be owned by uid 0 and have the setuid bit set",
-      "chown -v 'root:root' sudo",
-      "chmod -v 'a=rx,u+ws' sudo",
-      "Requires '/etc/sudoers' file & '/etc/sudoers.d' dir",
-      "Also requires PAM to be setup: https://github.com/trifectatechfoundation/sudo-rs#differences-from-original-sudo"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/sudo-rs/archive/sharun",
-    "provides": [
-      "su",
-      "sudo",
-      "visudo"
-    ],
-    "repology": [
-      "sudo-rs"
-    ],
-    "src_url": [
-      "https://github.com/trifectatechfoundation/sudo-rs"
-    ],
-    "tag": [
-      "sudo"
-    ],
-    "version": "HEAD-fdebaec-250805T105128"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "tangent",
-    "pkg_family": "tangent",
-    "pkg_id": "github.com.suchnsuch.Tangent",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/suchnsuch-tangent/tangent/tangent",
-    "app_id": "io.github.suchnsuch.Tangent",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/tangent/appimage.official.stable.yaml",
-    "category": [
-      "TextEditor"
-    ],
-    "description": "A clean and powerful open source notes app",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/tangent/appimage.official.stable.yaml",
-    "homepage": [
-      "https://www.tangentnotes.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/suchnsuch/Tangent"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/tangent/appimage/official",
-    "provides": [
-      "tangent"
-    ],
-    "repology": [
-      "tangent"
-    ],
-    "src_url": [
-      "https://www.tangentnotes.com/Download",
-      "https://github.com/suchnsuch/Tangent"
-    ],
-    "tag": [
-      "editor",
-      "note"
-    ],
-    "version": "0.10.0"
   },
   {
     "_disabled": "false",
@@ -2516,113 +2068,76 @@
   },
   {
     "_disabled": "false",
-    "pkg": "wrangler",
-    "pkg_family": "wrangler",
-    "pkg_id": "sharun.wrappe.npm.wrangler",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.source.yt-dlp",
     "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/npm-wrangler/wrangler/wrangler",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wrangler/archive.sharun.npm.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.source.yaml",
     "category": [
       "Utility"
     ],
-    "description": "Command-line interface for all things Cloudflare Workers",
+    "description": "CLI program to download videos from YouTube and other sites",
     "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
       "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
         "extra": [
-          "wrangler"
+          "yt-dlp"
         ]
       },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
       "homebrew": [
-        "wrangler"
+        "yt-dlp"
       ],
       "nixpkgs": [
-        "wrangler"
+        "yt-dlp"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/wrangler/archive.sharun.npm.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.source.yaml",
     "homepage": [
-      "https://developers.cloudflare.com/workers/cli-wrangler",
-      "https://github.com/cloudflare/workers-sdk"
+      "https://github.com/yt-dlp/yt-dlp"
     ],
     "host": [
       "aarch64-linux",
       "x86_64-linux"
     ],
     "license": [
-      "MIT"
+      "Unlicense"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [npm]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
       "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/wrangler/archive/sharun",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
     "provides": [
-      "wrangler"
+      "yt-dlp"
     ],
     "repology": [
-      "wrangler"
+      "yt-dlp"
     ],
     "src_url": [
-      "https://www.npmjs.com/package/wrangler"
+      "https://github.com/yt-dlp/yt-dlp"
     ],
     "tag": [
       "Utility"
     ],
-    "version": "4.28.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xashds",
-    "pkg_family": "xashds",
-    "pkg_id": "wrappe.xashds",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Xash3D FWGS Dedicated Server",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
-    "homepage": [
-      "https://github.com/FWGS/xash3d-fwgs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
-      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "Host Dependencies: A lot, please use soar log to view the ldd output"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
-    "provides": [
-      "xashds==xash"
-    ],
-    "repology": [
-      "xash3d-fwgs"
-    ],
-    "src_url": [
-      "https://github.com/FWGS/xash3d-fwgs"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "250804T204251"
+    "version": "HEAD-e651a53-250805T220213"
   },
   {
     "_disabled": "false",
@@ -2682,6 +2197,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.15t_2025-08-04"
+    "version": "1.15t_2025-08-05"
   }
 ]

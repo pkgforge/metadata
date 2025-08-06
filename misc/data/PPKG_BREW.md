@@ -136,7 +136,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.292** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.294** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -654,8 +654,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.10.2 ✅ | https://github.com/ClementTsang/bottom/archive/refs/tags/0.10.2.tar.gz |
-| BREW   | 0.10.2 | https://clementtsang.github.io/bottom/ |
+| PPKG   | 0.10.2 ⚠️ | https://github.com/ClementTsang/bottom/archive/refs/tags/0.10.2.tar.gz |
+| BREW   | **0.11.0** | https://clementtsang.github.io/bottom/ |
+
+*Outdated*
 
 ## boxes
 
@@ -1593,7 +1595,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.57.6** | https://github.com/dolthub/dolt |
+| BREW   | **1.58.0** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -1824,7 +1826,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.13.14 ⚠️ | https://github.com/ethereum/go-ethereum/archive/refs/tags/v1.13.14.tar.gz |
-| BREW   | **1.15.11** | https://geth.ethereum.org/ |
+| BREW   | **1.16.2** | https://geth.ethereum.org/ |
 
 *Outdated*
 
@@ -3387,7 +3389,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.2.4 ⚠️ | https://github.com/jasper-software/jasper/releases/download/version-4.2.4/jasper-4.2.4.tar.gz |
-| BREW   | **4.2.7** | https://ece.engr.uvic.ca/~frodo/jasper/ |
+| BREW   | **4.2.8** | https://ece.engr.uvic.ca/~frodo/jasper/ |
 
 *Outdated*
 
@@ -3596,7 +3598,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.41.0 ⚠️ | https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz |
-| BREW   | **0.54.0** | https://github.com/jesseduffield/lazygit/ |
+| BREW   | **0.54.1** | https://github.com/jesseduffield/lazygit/ |
 
 *Outdated*
 
@@ -4861,7 +4863,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.0 ⚠️ | https://github.com/baresip/re/archive/refs/tags/v3.15.0.tar.gz |
-| BREW   | **3.24.0** | https://github.com/baresip/re |
+| BREW   | **4.0.0** | https://github.com/baresip/re |
 
 *Outdated*
 

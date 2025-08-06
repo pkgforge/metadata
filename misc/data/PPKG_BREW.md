@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.05 ⚠️ | null |
+| PPKG   | 2025.08.06 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -622,7 +622,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20250308 ⚠️ | https://www.crufty.net/ftp/pub/sjg/bmake-20250308.tar.gz |
-| BREW   | **20250707** | https://www.crufty.net/help/sjg/bmake.html |
+| BREW   | **20250804** | https://www.crufty.net/help/sjg/bmake.html |
 
 *Outdated*
 
@@ -1735,7 +1735,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.20.1 ⚠️ | https://ftp.gnu.org/gnu/ed/ed-1.20.1.tar.lz |
-| BREW   | **1.22** | https://www.gnu.org/software/ed/ed.html |
+| BREW   | **1.22.1** | https://www.gnu.org/software/ed/ed.html |
 
 *Outdated*
 
@@ -4282,7 +4282,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.18.2 ⚠️ | https://github.com/strukturag/libheif/releases/download/v1.18.2/libheif-1.18.2.tar.gz |
-| BREW   | **1.20.1** | https://www.libde265.org/ |
+| BREW   | **1.20.2** | https://www.libde265.org/ |
 
 *Outdated*
 
@@ -4592,7 +4592,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.05 ⚠️ | null |
+| PPKG   | 2025.08.06 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4612,7 +4612,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.05 ⚠️ | null |
+| PPKG   | 2025.08.06 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -4828,7 +4828,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.1 ⚠️ | https://github.com/HOST-Oman/libraqm/archive/refs/tags/v0.10.1.tar.gz |
-| BREW   | **0.10.2** | https://github.com/HOST-Oman/libraqm |
+| BREW   | **0.10.3** | https://github.com/HOST-Oman/libraqm |
 
 *Outdated*
 
@@ -6479,7 +6479,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.10.1** | https://ollama.com/ |
+| BREW   | **0.11.2** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6650,7 +6650,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.05 ⚠️ | null |
+| PPKG   | 2025.08.06 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6817,7 +6817,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.05 ⚠️ | null |
+| PPKG   | 2025.08.06 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6981,7 +6981,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.05 ⚠️ | null |
+| PPKG   | 2025.08.06 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7797,7 +7797,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.13 ⚠️ | https://github.com/strace/strace/releases/download/v6.13/strace-6.13.tar.xz |
-| BREW   | **6.15** | https://strace.io/ |
+| BREW   | **6.16** | https://strace.io/ |
 
 *Outdated*
 
@@ -7907,7 +7907,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 256.7 ⚠️ | https://github.com/systemd/systemd/archive/refs/tags/v256.7.tar.gz |
-| BREW   | **257.7** | https://systemd.io |
+| BREW   | **257.8** | https://systemd.io |
 
 *Outdated*
 
@@ -8343,7 +8343,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.4** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.5** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

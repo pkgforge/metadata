@@ -9057,8 +9057,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.2.4 ✅ | https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.2.4.tar.gz |
-| BREW   | 2.2.4 | https://github.com/zlib-ng/zlib-ng |
+| PPKG   | 2.2.4 ⚠️ | https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.2.4.tar.gz |
+| BREW   | **2.2.5** | https://github.com/zlib-ng/zlib-ng |
+
+*Outdated*
 
 ## zls
 

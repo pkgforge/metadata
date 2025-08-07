@@ -371,7 +371,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 10.25.1 ⚠️ | https://github.com/Azure/azure-storage-azcopy/archive/refs/tags/v10.25.1.tar.gz |
-| BREW   | **10.29.1** | https://github.com/Azure/azure-storage-azcopy |
+| BREW   | **10.30.0** | https://github.com/Azure/azure-storage-azcopy |
 
 *Outdated*
 
@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.06 ⚠️ | null |
+| PPKG   | 2025.08.07 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1034,7 +1034,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.54.0 ⚠️ | https://github.com/twpayne/chezmoi/archive/refs/tags/v2.54.0.tar.gz |
-| BREW   | **2.63.1** | https://chezmoi.io/ |
+| BREW   | **2.64.0** | https://chezmoi.io/ |
 
 *Outdated*
 
@@ -1595,7 +1595,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.58.0** | https://github.com/dolthub/dolt |
+| BREW   | **1.58.2** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -3429,7 +3429,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/martinvonz/jj/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.31.0** | https://github.com/jj-vcs/jj |
+| BREW   | **0.32.0** | https://github.com/jj-vcs/jj |
 
 *Outdated*
 
@@ -4594,7 +4594,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.06 ⚠️ | null |
+| PPKG   | 2025.08.07 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4614,7 +4614,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.06 ⚠️ | null |
+| PPKG   | 2025.08.07 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6481,7 +6481,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.11.2** | https://ollama.com/ |
+| BREW   | **0.11.3** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6652,7 +6652,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.06 ⚠️ | null |
+| PPKG   | 2025.08.07 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6819,7 +6819,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.06 ⚠️ | null |
+| PPKG   | 2025.08.07 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6983,7 +6983,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.06 ⚠️ | null |
+| PPKG   | 2025.08.07 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

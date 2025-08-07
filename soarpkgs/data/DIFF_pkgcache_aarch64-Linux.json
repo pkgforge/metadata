@@ -229,7 +229,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.42.3"
+    "version": "1.42.4"
   },
   {
     "_disabled": "false",
@@ -489,7 +489,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6640ee9-250806T070656"
+    "version": "HEAD-bd8acfc-250807T082723"
   },
   {
     "_disabled": "false",
@@ -1208,7 +1208,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250806T005334"
+    "version": "250807T005418"
   },
   {
     "_disabled": "false",
@@ -1270,7 +1270,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250806T005334"
+    "version": "250807T005418"
   },
   {
     "_disabled": "true",
@@ -1481,6 +1481,75 @@
       "Utility"
     ],
     "version": "4.9.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "librewolf",
+    "pkg_family": "librewolf",
+    "pkg_id": "gitlab.com.librewolf-community.browser.appimage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/librewolf/librewolf",
+    "app_id": "io.gitlab.librewolf-community",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/librewolf/appimage.official.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A fork of Firefox, focused on privacy, security and freedom",
+    "distro_pkg": {
+      "alpine": [
+        "librewolf"
+      ],
+      "archlinux": {
+        "aur": [
+          "librewolf",
+          "librewolf-bin",
+          "librewolf-hg"
+        ]
+      },
+      "gnuguix": [
+        "librewolf"
+      ],
+      "homebrew": [
+        "librewolf"
+      ],
+      "nixpkgs": [
+        "librewolf"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/librewolf/appimage.official.stable.yaml",
+    "homepage": [
+      "https://librewolf.net",
+      "https://librewolf-community.gitlab.io",
+      "https://gitlab.com/librewolf-community/browser/appimage"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/librewolf/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/librewolf-community/browser/appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/librewolf/appimage/official",
+    "provides": [
+      "librewolf"
+    ],
+    "repology": [
+      "librewolf"
+    ],
+    "src_url": [
+      "https://gitlab.com/librewolf-community/browser/appimage"
+    ],
+    "tag": [
+      "Browser"
+    ],
+    "version": "v141.0.2-1"
   },
   {
     "_disabled": "false",
@@ -1874,6 +1943,89 @@
     "version": "15.68.5"
   },
   {
+    "_disabled": "false",
+    "pkg": "telegram-desktop",
+    "pkg_family": "telegram-desktop",
+    "pkg_id": "nixpkgs.telegram-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/telegram-desktop/telegram-desktop/telegram-desktop",
+    "app_id": "org.telegram.desktop",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "IRCClient"
+    ],
+    "description": "Official desktop version of Telegram messaging app",
+    "distro_pkg": {
+      "alpine": [
+        "telegram-desktop"
+      ],
+      "archlinux": {
+        "aur": [
+          "telegram-desktop-bin",
+          "telegram-desktop-dev",
+          "telegram-desktop-dev-bin",
+          "telegram-desktop-git"
+        ],
+        "extra": [
+          "telegram-desktop"
+        ]
+      },
+      "debian": [
+        "telegram-desktop"
+      ],
+      "gnuguix": [
+        "telegram-desktop"
+      ],
+      "homebrew": [
+        "telegram-desktop",
+        "telegram-desktop@beta"
+      ],
+      "nixpkgs": [
+        "tdesktop",
+        "telegram-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://desktop.telegram.org",
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/telegram-desktop/nixappimage/nixpkgs",
+    "provides": [
+      "telegram-desktop==Telegram-Desktop"
+    ],
+    "repology": [
+      "telegram-desktop"
+    ],
+    "src_url": [
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "6.0.2"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": [
       "Too slow & Expensive"
@@ -2137,7 +2289,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-1e0c77d-250806T165234"
+    "version": "HEAD-e8d2807-250807T000344"
   },
   {
     "_disabled": "false",

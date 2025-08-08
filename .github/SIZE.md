@@ -301,7 +301,7 @@
 4.0K   │   │ └── TOTAL.json
  36K   │   └─┬ scripts
  32K   │     └── gen_meta.sh
-228M   ├─┬ misc
+229M   ├─┬ misc
 228M   │ ├─┬ data
  73M   │ │ ├── ARCHLINUX.json
  38M   │ │ ├── FLATPAK_APPSTREAM.xml
@@ -424,7 +424,7 @@
 1.1M   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
 1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
 1.0M   │ │ ├── COMP_VER_CACHE.md
-784K   │ │ ├── pub_issues_binaries.txt
+780K   │ │ ├── pub_issues_binaries.txt
 760K   │ │ ├── COMP_VER_CACHE_OLD.json
 580K   │ │ ├── OLD_bincache_riscv64-Linux.json
 448K   │ │ ├── DIFF_bincache_aarch64-Linux.json

@@ -116,7 +116,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.16.0 ⚠️ | https://github.com/xyproto/algernon/archive/refs/tags/v1.16.0.tar.gz |
-| BREW   | **1.17.3** | https://github.com/xyproto/algernon |
+| BREW   | **1.17.4** | https://github.com/xyproto/algernon |
 
 *Outdated*
 
@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.07 ⚠️ | null |
+| PPKG   | 2025.08.08 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1169,7 +1169,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.102.3** | https://github.com/microsoft/vscode |
+| BREW   | **1.103.0** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -1222,7 +1222,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.18.3 ⚠️ | https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.18.3.tar.gz |
-| BREW   | **0.24.0** | https://github.com/yhirose/cpp-httplib |
+| BREW   | **0.25.0** | https://github.com/yhirose/cpp-httplib |
 
 *Outdated*
 
@@ -4594,7 +4594,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.07 ⚠️ | null |
+| PPKG   | 2025.08.08 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4614,7 +4614,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.07 ⚠️ | null |
+| PPKG   | 2025.08.08 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5493,7 +5493,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.21 ⚠️ | https://github.com/hughsie/libxmlb/releases/download/0.3.21/libxmlb-0.3.21.tar.xz |
-| BREW   | **0.3.22** | https://github.com/hughsie/libxmlb |
+| BREW   | **0.3.23** | https://github.com/hughsie/libxmlb |
 
 *Outdated*
 
@@ -6073,7 +6073,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.33.0 ⚠️ | https://www.mpg123.de/download/mpg123-1.33.0.tar.bz2 |
-| BREW   | **1.33.1** | https://www.mpg123.de/ |
+| BREW   | **1.33.2** | https://www.mpg123.de/ |
 
 *Outdated*
 
@@ -6652,7 +6652,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.07 ⚠️ | null |
+| PPKG   | 2025.08.08 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6819,7 +6819,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.07 ⚠️ | null |
+| PPKG   | 2025.08.08 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6983,7 +6983,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.07 ⚠️ | null |
+| PPKG   | 2025.08.08 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7415,7 +7415,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.7** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.8** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -8345,7 +8345,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.5** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.6** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -8480,7 +8480,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.1.0450 ⚠️ | https://github.com/vim/vim/archive/refs/tags/v9.1.0450.tar.gz |
-| BREW   | **9.1.1550** | https://www.vim.org/ |
+| BREW   | **9.1.1600** | https://www.vim.org/ |
 
 *Outdated*
 

@@ -24,8 +24,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 20240722.1 ✅ | https://github.com/abseil/abseil-cpp/archive/refs/tags/20240722.1.tar.gz |
-| BREW   | 20240722.1 | https://abseil.io |
+| PPKG   | 20240722.1 ⚠️ | https://github.com/abseil/abseil-cpp/archive/refs/tags/20240722.1.tar.gz |
+| BREW   | **20250127.1** | https://abseil.io |
+
+*Outdated*
 
 ## act
 
@@ -2931,7 +2933,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.71.0 ⚠️ | https://github.com/grpc/grpc/archive/refs/tags/v1.71.0.tar.gz |
-| BREW   | **1.74.0** | https://grpc.io/ |
+| BREW   | **1.74.1** | https://grpc.io/ |
 
 *Outdated*
 
@@ -6481,7 +6483,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.11.3** | https://ollama.com/ |
+| BREW   | **0.11.4** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6580,7 +6582,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.15.0 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v2.5.15.0.tar.gz |
-| BREW   | **3.0.9.0** | https://openimageio.readthedocs.io/en/stable/ |
+| BREW   | **3.0.9.1** | https://openimageio.readthedocs.io/en/stable/ |
 
 *Outdated*
 
@@ -7244,8 +7246,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.84 ✅ | https://github.com/mentebinaria/readpe/archive/refs/tags/v0.84.tar.gz |
-| BREW   | 0.84 | https://github.com/mentebinaria/readpe |
+| PPKG   | 0.84 ⚠️ | https://github.com/mentebinaria/readpe/archive/refs/tags/v0.84.tar.gz |
+| BREW   | **0.85** | https://github.com/mentebinaria/readpe |
+
+*Outdated*
 
 ## redis
 

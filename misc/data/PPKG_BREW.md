@@ -412,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.08 ⚠️ | null |
+| PPKG   | 2025.08.09 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -907,7 +907,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.5.3 ⚠️ | https://github.com/catchorg/Catch2/archive/refs/tags/v3.5.3.tar.gz |
-| BREW   | **3.9.0** | https://github.com/catchorg/Catch2 |
+| BREW   | **3.9.1** | https://github.com/catchorg/Catch2 |
 
 *Outdated*
 
@@ -1118,7 +1118,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.31.7 ⚠️ | https://github.com/Kitware/CMake/releases/download/v3.31.7/cmake-3.31.7.tar.gz |
-| BREW   | **4.0.3** | https://www.cmake.org/ |
+| BREW   | **4.1.0** | https://www.cmake.org/ |
 
 *Outdated*
 
@@ -2216,7 +2216,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | https://github.com/antonmedv/fx/archive/refs/tags/35.0.0.tar.gz |
-| BREW   | **38.0.0** | https://fx.wtf |
+| BREW   | **39.0.1** | https://fx.wtf |
 
 *Outdated*
 
@@ -2953,7 +2953,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.26.2 ⚠️ | https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.26.2/gstreamer-1.26.2.tar.bz2 |
-| BREW   | **1.26.4** | https://gstreamer.freedesktop.org/ |
+| BREW   | **1.26.5** | https://gstreamer.freedesktop.org/ |
 
 *Outdated*
 
@@ -3034,8 +3034,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 6.2.6 ✅ | https://hashcat.net/files/hashcat-6.2.6.tar.gz |
-| BREW   | 6.2.6 | https://hashcat.net/hashcat/ |
+| PPKG   | 6.2.6 ⚠️ | https://hashcat.net/files/hashcat-6.2.6.tar.gz |
+| BREW   | **7.0.0** | https://hashcat.net/hashcat/ |
+
+*Outdated*
 
 ## helix
 
@@ -4596,7 +4598,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.08 ⚠️ | null |
+| PPKG   | 2025.08.09 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4616,7 +4618,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.08 ⚠️ | null |
+| PPKG   | 2025.08.09 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5474,8 +5476,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.10.0 ✅ | https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.10.0.tar.gz |
-| BREW   | 1.10.0 | https://xkbcommon.org/ |
+| PPKG   | 1.10.0 ⚠️ | https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.10.0.tar.gz |
+| BREW   | **1.11.0** | https://xkbcommon.org/ |
+
+*Outdated*
 
 ## libxml2
 
@@ -5766,7 +5770,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.685** | https://luau.org |
+| BREW   | **0.686** | https://luau.org |
 
 *Outdated*
 
@@ -6654,7 +6658,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.08 ⚠️ | null |
+| PPKG   | 2025.08.09 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6821,7 +6825,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.08 ⚠️ | null |
+| PPKG   | 2025.08.09 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6985,7 +6989,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.08 ⚠️ | null |
+| PPKG   | 2025.08.09 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8349,7 +8353,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.6** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.7** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -9011,7 +9015,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.41.2 ⚠️ | https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.2.tar.gz |
-| BREW   | **0.43.0** | https://zellij.dev |
+| BREW   | **0.43.1** | https://zellij.dev |
 
 *Outdated*
 

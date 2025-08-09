@@ -302,7 +302,7 @@
  36K   │   └─┬ scripts
  32K   │     └── gen_meta.sh
 229M   ├─┬ misc
-228M   │ ├─┬ data
+229M   │ ├─┬ data
  73M   │ │ ├── ARCHLINUX.json
  38M   │ │ ├── FLATPAK_APPSTREAM.xml
  32M   │ │ ├── CONDA.json
@@ -321,7 +321,7 @@
 336K   │ │ ├── PPKG.json
 276K   │ │ ├── PPKG_BREW.md
 236K   │ │ ├── FLATPAK_POPULAR.json
-220K   │ │ ├── FLATPAK_TRENDING.json
+228K   │ │ ├── FLATPAK_TRENDING.json
  76K   │ │ ├── FLATPAK_APP_IDS.txt
  20K   │ │ ├── CATEGORY.json
 4.0K   │ │ └── CATEGORY.md

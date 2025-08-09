@@ -1536,8 +1536,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 5.3 ✅ | https://dl.suckless.org/tools/dmenu-5.3.tar.gz |
-| BREW   | 5.3 | https://tools.suckless.org/dmenu/ |
+| PPKG   | 5.3 ⚠️ | https://dl.suckless.org/tools/dmenu-5.3.tar.gz |
+| BREW   | **5.4** | https://tools.suckless.org/dmenu/ |
+
+*Outdated*
 
 ## dns2tcp
 
@@ -2886,7 +2888,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 13.0.1 ⚠️ | https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.0.1/graphviz-13.0.1.tar.xz |
-| BREW   | **13.1.1** | https://graphviz.org/ |
+| BREW   | **13.1.2** | https://graphviz.org/ |
 
 *Outdated*
 
@@ -5956,7 +5958,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 25.1.4 ⚠️ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
-| BREW   | **25.1.7** | https://www.mesa3d.org/ |
+| BREW   | **25.2.0** | https://www.mesa3d.org/ |
 
 *Outdated*
 
@@ -8353,7 +8355,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.7** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.8** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -8714,7 +8716,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.0 ⚠️ | http://downloads.webmproject.org/releases/webp/libwebp-1.4.0.tar.gz |
-| BREW   | **1.5.0** | https://developers.google.com/speed/webp/ |
+| BREW   | **1.6.0** | https://developers.google.com/speed/webp/ |
 
 *Outdated*
 

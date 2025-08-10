@@ -3569,8 +3569,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.21.3 ✅ | https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz |
-| BREW   | 1.21.3 | https://web.mit.edu/kerberos/ |
+| PPKG   | 1.21.3 ⚠️ | https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz |
+| BREW   | **1.22** | https://web.mit.edu/kerberos/ |
+
+*Outdated*
 
 ## ladspa-sdk
 

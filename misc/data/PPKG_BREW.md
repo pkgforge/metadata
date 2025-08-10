@@ -412,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.09 ⚠️ | null |
+| PPKG   | 2025.08.10 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2569,8 +2569,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.84.3 ✅ | https://download.gnome.org/sources/glib/2.84/glib-2.84.3.tar.xz |
-| BREW   | 2.84.3 | https://docs.gtk.org/glib/ |
+| PPKG   | 2.84.3 ⚠️ | https://download.gnome.org/sources/glib/2.84/glib-2.84.3.tar.xz |
+| BREW   | **2.84.4** | https://docs.gtk.org/glib/ |
+
+*Outdated*
 
 ## glib-networking
 
@@ -4600,7 +4602,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.09 ⚠️ | null |
+| PPKG   | 2025.08.10 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4620,7 +4622,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.09 ⚠️ | null |
+| PPKG   | 2025.08.10 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5603,7 +5605,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.10 ⚠️ | https://github.com/triyanox/lla/archive/refs/tags/v0.3.10.tar.gz |
-| BREW   | **0.3.11** | https://github.com/chaqchase/lla |
+| BREW   | **0.4.0** | https://github.com/chaqchase/lla |
 
 *Outdated*
 
@@ -6660,7 +6662,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.09 ⚠️ | null |
+| PPKG   | 2025.08.10 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6827,7 +6829,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.09 ⚠️ | null |
+| PPKG   | 2025.08.10 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6991,7 +6993,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.09 ⚠️ | null |
+| PPKG   | 2025.08.10 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

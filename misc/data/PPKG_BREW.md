@@ -832,7 +832,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.9 ⚠️ | https://github.com/lu-zero/cargo-c/archive/refs/tags/v0.10.9.tar.gz |
-| BREW   | **0.10.14** | https://github.com/lu-zero/cargo-c |
+| BREW   | **0.10.15** | https://github.com/lu-zero/cargo-c |
 
 *Outdated*
 

@@ -412,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.10 ⚠️ | null |
+| PPKG   | 2025.08.11 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -539,7 +539,7 @@
 
 ## bindgen
 
-**Description:** Automatically generates Rust FFI bindings to C (and some C++) libraries
+**Description:** A command-line tool to generate Rust FFI bindings from C/C++ sources
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
@@ -3426,7 +3426,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.78.2** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.78.3** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -4604,7 +4604,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.10 ⚠️ | null |
+| PPKG   | 2025.08.11 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4624,7 +4624,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.10 ⚠️ | null |
+| PPKG   | 2025.08.11 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6664,7 +6664,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.10 ⚠️ | null |
+| PPKG   | 2025.08.11 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6831,7 +6831,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.10 ⚠️ | null |
+| PPKG   | 2025.08.11 ⚠️ | null |
 | BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6995,7 +6995,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.10 ⚠️ | null |
+| PPKG   | 2025.08.11 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7440,7 +7440,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-08-04** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-08-11** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 

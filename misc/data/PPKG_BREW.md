@@ -412,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.11 ⚠️ | null |
+| PPKG   | 2025.08.12 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1353,7 +1353,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.8.1 ⚠️ | https://github.com/cue-lang/cue/archive/refs/tags/v0.8.1.tar.gz |
-| BREW   | **0.14.0** | https://cuelang.org/ |
+| BREW   | **0.14.1** | https://cuelang.org/ |
 
 *Outdated*
 
@@ -3608,7 +3608,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.41.0 ⚠️ | https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz |
-| BREW   | **0.54.1** | https://github.com/jesseduffield/lazygit/ |
+| BREW   | **0.54.2** | https://github.com/jesseduffield/lazygit/ |
 
 *Outdated*
 
@@ -4194,17 +4194,6 @@
 
 *Outdated*
 
-## libfuse
-
-**Description:** Reference implementation of the Linux FUSE interface
-
-| Source | Version | URL/Homepage |
-|--------|---------|-------------|
-| PPKG   | 3.16.2 ⚠️ | https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar.gz |
-| BREW   | **3.17.3** | https://github.com/libfuse/libfuse |
-
-*Outdated*
-
 ## libgcrypt
 
 **Description:** Cryptographic library based on the code from GnuPG
@@ -4604,7 +4593,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.11 ⚠️ | null |
+| PPKG   | 2025.08.12 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4624,7 +4613,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.11 ⚠️ | null |
+| PPKG   | 2025.08.12 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6664,7 +6653,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.11 ⚠️ | null |
+| PPKG   | 2025.08.12 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6831,8 +6820,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.11 ⚠️ | null |
-| BREW   | **1.1.10** | https://github.com/SergiusTheBest/plog |
+| PPKG   | 2025.08.12 ⚠️ | null |
+| BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
 
@@ -6995,7 +6984,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.11 ⚠️ | null |
+| PPKG   | 2025.08.12 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7082,7 +7071,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.13.2 ⚠️ | https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tgz |
-| BREW   | **3.13.5** | https://www.python.org/ |
+| BREW   | **3.13.6** | https://www.python.org/ |
 
 *Outdated*
 

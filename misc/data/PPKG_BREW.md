@@ -138,7 +138,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.294** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.295** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -759,7 +759,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.5.1 ⚠️ | https://github.com/kspalaiologos/bzip3/releases/download/1.5.1/bzip3-1.5.1.tar.gz |
-| BREW   | **1.5.2** | https://github.com/kspalaiologos/bzip3 |
+| BREW   | **1.5.3** | https://github.com/kspalaiologos/bzip3 |
 
 *Outdated*
 
@@ -3279,7 +3279,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.1.1.47 ⚠️ | https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz |
-| BREW   | **7.1.2-0** | https://imagemagick.org/index.php |
+| BREW   | **7.1.2-1** | https://imagemagick.org/index.php |
 
 *Outdated*
 
@@ -8548,7 +8548,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.319 ⚠️ | https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.319.tar.gz |
-| BREW   | **1.4.323** | https://github.com/KhronosGroup/Vulkan-Headers |
+| BREW   | **1.4.325** | https://github.com/KhronosGroup/Vulkan-Headers |
 
 *Outdated*
 

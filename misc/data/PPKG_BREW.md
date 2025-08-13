@@ -412,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.12 ⚠️ | null |
+| PPKG   | 2025.08.13 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -455,7 +455,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.19.0 ⚠️ | https://github.com/bazelbuild/bazelisk/archive/refs/tags/v1.19.0.tar.gz |
-| BREW   | **1.26.0** | https://github.com/bazelbuild/bazelisk/ |
+| BREW   | **1.27.0** | https://github.com/bazelbuild/bazelisk/ |
 
 *Outdated*
 
@@ -864,7 +864,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.6.14.crate ⚠️ | https://static.crates.io/crates/cargo-llvm-cov/cargo-llvm-cov-0.6.14.crate |
+| PPKG   | 0.6.14 ⚠️ | https://static.crates.io/crates/cargo-llvm-cov/cargo-llvm-cov-0.6.14.crate |
 | BREW   | **0.6.18** | https://github.com/taiki-e/cargo-llvm-cov |
 
 *Outdated*
@@ -1599,7 +1599,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.58.2** | https://github.com/dolthub/dolt |
+| BREW   | **1.58.3** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -1819,7 +1819,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.20.2 ⚠️ | https://github.com/evanw/esbuild/archive/refs/tags/v0.20.2.tar.gz |
-| BREW   | **0.25.8** | https://esbuild.github.io/ |
+| BREW   | **0.25.9** | https://esbuild.github.io/ |
 
 *Outdated*
 
@@ -4593,7 +4593,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.12 ⚠️ | null |
+| PPKG   | 2025.08.13 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4613,7 +4613,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.12 ⚠️ | null |
+| PPKG   | 2025.08.13 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6114,7 +6114,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.26.2 ⚠️ | https://mupdf.com/downloads/archive/mupdf-1.26.2-source.tar.gz |
-| BREW   | **1.26.4** | https://mupdf.com/ |
+| BREW   | **1.26.5** | https://mupdf.com/ |
 
 *Outdated*
 
@@ -6304,10 +6304,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.12.1 ⚠️ | https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.1.tar.gz |
-| BREW   | **1.13.1** | https://ninja-build.org/ |
-
-*Outdated*
+| PPKG   | 1.13.1 ✅ | https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.1.tar.gz |
+| BREW   | 1.13.1 | https://ninja-build.org/ |
 
 ## nixpacks
 
@@ -6653,7 +6651,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.12 ⚠️ | null |
+| PPKG   | 2025.08.13 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6820,7 +6818,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.12 ⚠️ | null |
+| PPKG   | 2025.08.13 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6851,10 +6849,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.0.3.crate ⚠️ | https://static.crates.io/crates/pngquant/pngquant-3.0.3.crate |
-| BREW   | **3.0.3** | https://pngquant.org/ |
-
-*Outdated*
+| PPKG   | 3.0.3 ✅ | https://static.crates.io/crates/pngquant/pngquant-3.0.3.crate |
+| BREW   | 3.0.3 | https://pngquant.org/ |
 
 ## pocl
 
@@ -6984,7 +6980,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.12 ⚠️ | null |
+| PPKG   | 2025.08.13 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

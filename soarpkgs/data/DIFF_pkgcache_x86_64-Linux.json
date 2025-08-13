@@ -253,6 +253,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "github.com.srevinsaju.Brave-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/appimage/srevinsaju",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "v1.81.135"
+  },
+  {
+    "_disabled": "false",
     "pkg": "cmake",
     "pkg_family": "cmake",
     "pkg_id": "ppkg.bundle.cmake.stable",
@@ -1699,7 +1758,7 @@
       "replay-sorcery",
       "vkbasalt"
     ],
-    "version": "250812T195011"
+    "version": "250813T182513"
   },
   {
     "_disabled": "false",
@@ -3165,6 +3224,75 @@
   },
   {
     "_disabled": "false",
+    "pkg": "twingate",
+    "pkg_family": "twingate",
+    "pkg_id": "sharun.wrappe.twingate.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/twingate-stable/twingate/twingate",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Zero trust remote access client for resource and networks",
+      "twingate": "Zero trust remote access client for resource and networks [twingate]",
+      "twingated": "Daemon for Twingate [twingate]",
+      "twingate-notifier": "Monitor & Notify for Twingate Client [twingate]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "twingate",
+          "twingate-bin"
+        ]
+      },
+      "homebrew": [
+        "twingate"
+      ],
+      "nixpkgs": [
+        "twingate"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/twingate/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://www.twingate.com/docs",
+      "https://www.twingate.com"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/twingate/archive/sharun",
+    "provides": [
+      "twingate",
+      "twingated",
+      "twingate-notifier"
+    ],
+    "repology": [
+      "twingate"
+    ],
+    "src_url": [
+      "https://packages.twingate.com/deb:twingate"
+    ],
+    "tag": [
+      "Utility"
+    ]
+  },
+  {
+    "_disabled": "false",
     "pkg": "ultimmc",
     "pkg_family": "ultimmc",
     "pkg_id": "runimage.debian.ultimmc",
@@ -3253,6 +3381,68 @@
       "minecraft"
     ],
     "version": "250801T012057"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "vscodium",
+    "pkg_family": "vscodium",
+    "pkg_id": "github.com.VSCodium.vscodium",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/vscodium-vscodium/vscodium/vscodium",
+    "app_id": "com.vscodium.codium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/vscodium/appimage.official.stable.yaml",
+    "category": [
+      "IDE"
+    ],
+    "description": "Visual Studio Code without MS branding/telemetry/licensing",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vscodium",
+          "vscodium-bin",
+          "vscodium-electron",
+          "vscodium-electron-bin",
+          "vscodium-git"
+        ]
+      },
+      "nixpkgs": [
+        "vscodium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/vscodium/appimage.official.stable.yaml",
+    "homepage": [
+      "https://vscodium.com",
+      "https://github.com/VSCodium/vscodium"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/vscodium/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/VSCodium/vscodium"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/vscodium/appimage/official",
+    "provides": [
+      "vscodium==codium"
+    ],
+    "repology": [
+      "vscodium"
+    ],
+    "src_url": [
+      "https://github.com/VSCodium/vscodium"
+    ],
+    "tag": [
+      "code",
+      "editor",
+      "ide"
+    ],
+    "version": "1.103.15418"
   },
   {
     "_disabled": "true",
@@ -3445,7 +3635,7 @@
     "tag": [
       "utility"
     ],
-    "version": "250813T121328"
+    "version": "250813T160226"
   },
   {
     "_disabled": "false",
@@ -3493,7 +3683,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250813T121328"
+    "version": "250813T160226"
   },
   {
     "_disabled": "false",

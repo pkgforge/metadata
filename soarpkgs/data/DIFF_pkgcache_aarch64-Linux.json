@@ -157,6 +157,82 @@
   },
   {
     "_disabled": "false",
+    "pkg": "awscli",
+    "pkg_family": "awscli",
+    "pkg_id": "sharun.wrappe.pypi.awscli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-awscli/awscli/awscli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/awscli/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Universal Command Line Interface for Amazon Web Services",
+    "distro_pkg": {
+      "alpine": [
+        "aws-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "aws-cli-bin",
+          "aws-cli-git",
+          "aws-cli-v2"
+        ],
+        "extra": [
+          "aws-cli"
+        ]
+      },
+      "debian": [
+        "awscli"
+      ],
+      "gnuguix": [
+        "awscli"
+      ],
+      "homebrew": [
+        "awscli"
+      ],
+      "nixpkgs": [
+        "awscli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/awscli/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/aws/aws-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/awscli/archive/sharun",
+    "provides": [
+      "aws==awscli",
+      "aws==aws-cli"
+    ],
+    "repology": [
+      "awscli"
+    ],
+    "src_url": [
+      "https://pypi.org/project/awscli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.42.8"
+  },
+  {
+    "_disabled": "false",
     "pkg": "beet",
     "pkg_family": "beet",
     "pkg_id": "sharun.wrappe.pypi.beet",
@@ -281,6 +357,205 @@
       "Utility"
     ],
     "version": "HEAD-5dfbe93-231012T002040"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "cmake",
+    "pkg_family": "cmake",
+    "pkg_id": "ppkg.bundle.cmake.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cmake-stable/cmake/cmake",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/cmake/appimage.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Cross-platform, open-source build system",
+    "distro_pkg": {
+      "alpine": [
+        "cmake"
+      ],
+      "archlinux": {
+        "aur": [
+          "cmake-git"
+        ],
+        "extra": [
+          "cmake"
+        ]
+      },
+      "debian": [
+        "cmake"
+      ],
+      "gnuguix": [
+        "cmake"
+      ],
+      "homebrew": [
+        "cmake"
+      ],
+      "nixpkgs": [
+        "cmake"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/cmake/appimage.ppkg.stable.yaml",
+    "homepage": [
+      "https://www.cmake.org",
+      "https://gitlab.kitware.com/cmake/cmake"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Custom"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/cmake/appimage/ppkg",
+    "provides": [
+      "cmake==cpack",
+      "cmake==ctest"
+    ],
+    "repology": [
+      "cmake"
+    ],
+    "src_url": [
+      "https://gitlab.kitware.com/cmake/cmake"
+    ],
+    "tag": [
+      "build-system"
+    ],
+    "version": "3.31.8"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "code-server",
+    "pkg_family": "code-server",
+    "pkg_id": "wrappe.code-server.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/code-server/code-server",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/code-server/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Run VS Code on any machine anywhere and access it in the browser",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "code-server"
+        ]
+      },
+      "homebrew": [
+        "code-server"
+      ],
+      "nixpkgs": [
+        "code-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/code-server/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://coder.com/",
+      "https://github.com/coder/code-server"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/code-server/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/coder/code-server",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/code-server/archive/wrappe",
+    "provides": [
+      "code-server==vs-code-server"
+    ],
+    "repology": [
+      "code-server"
+    ],
+    "src_url": [
+      "https://github.com/coder/code-server"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v4.103.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "commix",
+    "pkg_family": "commix",
+    "pkg_id": "sharun.wrappe.pypi.commix",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-commix/commix/commix",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/commix/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Automated All-in-One OS Command Injection and Exploitation Tool",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "commix"
+        ]
+      },
+      "nixpkgs": [
+        "commix"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/commix/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://commixproject.com",
+      "https://github.com/commixproject/commix"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/commix/archive/sharun",
+    "provides": [
+      "commix"
+    ],
+    "repology": [
+      "commix"
+    ],
+    "src_url": [
+      "https://github.com/commixproject/commix"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-beb30ac-250813T065211"
   },
   {
     "_disabled": "false",
@@ -541,6 +816,67 @@
       "Communications",
       "Networking/Chat"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "dvc",
+    "pkg_family": "dvc",
+    "pkg_id": "sharun.wrappe.source.dvc",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-dvc/dvc/dvc",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/dvc/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A version control system and experiment tracker designed for machine learning projects",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "dvc"
+        ]
+      },
+      "homebrew": [
+        "dvc"
+      ],
+      "nixpkgs": [
+        "dvc"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/dvc/archive.sharun.source.yaml",
+    "homepage": [
+      "https://dvc.org/doc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/dvc/archive/sharun",
+    "provides": [
+      "dvc"
+    ],
+    "repology": [
+      "dvc"
+    ],
+    "src_url": [
+      "https://github.com/iterative/dvc"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-4b1adfd-250813T155404"
   },
   {
     "_disabled": "true",
@@ -809,6 +1145,68 @@
     "_disabled": "false",
     "pkg": "ghostty-nightly",
     "pkg_family": "ghostty-nightly",
+    "pkg_id": "github.com.pkgforge-dev.ghostty-appimage.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/ghostty-nightly/ghostty-nightly",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ghostty-nightly/appimage.pkgforge-dev.nightly.yaml",
+    "category": [
+      "TerminalEmulator"
+    ],
+    "description": "Fast, native, feature-rich terminal emulator pushing modern features (Nightly)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ghostty-git"
+        ],
+        "extra": [
+          "ghostty"
+        ]
+      },
+      "homebrew": [
+        "ghostty"
+      ],
+      "nixpkgs": [
+        "ghostty"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ghostty-nightly/appimage.pkgforge-dev.nightly.yaml",
+    "homepage": [
+      "https://ghostty.org",
+      "https://github.com/ghostty-org/ghostty"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "psadi (https://github.com/psadi)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/ghostty-appimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ghostty-nightly/appimage/pkgforge-dev",
+    "provides": [
+      "ghostty-nightly"
+    ],
+    "repology": [
+      "ghostty"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/ghostty-appimage"
+    ],
+    "tag": [
+      "terminal"
+    ],
+    "version": "250813T005518"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ghostty-nightly",
+    "pkg_family": "ghostty-nightly",
     "pkg_id": "github.com.pkgforge-dev.ghostty-appimage.nightly-glfw",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nightly-glfw/ghostty-nightly/ghostty-nightly",
@@ -865,7 +1263,61 @@
     "tag": [
       "terminal"
     ],
-    "version": "250812T005044"
+    "version": "250813T005518"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gptme",
+    "pkg_family": "gptme",
+    "pkg_id": "sharun.wrappe.pypi.gptme",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-gptme/gptme/gptme",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gptme/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "AI assistant in your terminal",
+    "distro_pkg": {
+      "homebrew": [
+        "gptme"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/gptme/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://gptme.org/docs",
+      "https://github.com/ErikBjare/gptme"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/gptme/archive/sharun",
+    "provides": [
+      "gptme"
+    ],
+    "repology": [
+      "gptme"
+    ],
+    "src_url": [
+      "https://pypi.org/project/gptme"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "0.28.0"
   },
   {
     "_disabled": "true",
@@ -1721,7 +2173,55 @@
     "tag": [
       "Utility"
     ],
-    "version": "4.28.1"
+    "version": "4.29.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xashds",
+    "pkg_family": "xashds",
+    "pkg_id": "wrappe.xashds",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Xash3D FWGS Dedicated Server",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
+    "provides": [
+      "xashds==xash"
+    ],
+    "repology": [
+      "xash3d-fwgs"
+    ],
+    "src_url": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "250813T121328"
   },
   {
     "_disabled": "false",
@@ -1777,5 +2277,138 @@
       "security"
     ],
     "version": "HEAD-eee573e-250812T103839"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.source.yt-dlp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
+    "provides": [
+      "yt-dlp"
+    ],
+    "repology": [
+      "yt-dlp"
+    ],
+    "src_url": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-f2919bd-250812T232431"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zen-browser",
+    "pkg_family": "zen-browser",
+    "pkg_id": "github.com.zen-browser.desktop.twilight",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desktop-twilight/zen-browser/zen-browser",
+    "app_id": "app.zen_browser.zen",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zen-browser/appimage.official.twilight.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Performance oriented Firefox-based web browser (Twilight)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "zen-browser",
+          "zen-browser-bin"
+        ]
+      },
+      "homebrew": [
+        "zen-browser"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zen-browser/appimage.official.twilight.yaml",
+    "homepage": [
+      "https://zen-browser.app",
+      "https://github.com/zen-browser/desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/zen-browser/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
+    "provides": [
+      "zen-browser==zen"
+    ],
+    "repology": [
+      "zen-browser"
+    ],
+    "src_url": [
+      "https://github.com/zen-browser/desktop"
+    ],
+    "tag": [
+      "arc",
+      "firefox",
+      "www-client"
+    ],
+    "version": "1.15t_2025-08-12"
   }
 ]

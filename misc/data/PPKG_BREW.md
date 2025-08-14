@@ -1171,7 +1171,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.103.0** | https://github.com/microsoft/vscode |
+| BREW   | **1.103.1** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -1691,8 +1691,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.43.0 ✅ | https://github.com/sigoden/dufs/archive/refs/tags/v0.43.0.tar.gz |
-| BREW   | 0.43.0 | https://github.com/sigoden/dufs |
+| PPKG   | 0.43.0 ⚠️ | https://github.com/sigoden/dufs/archive/refs/tags/v0.43.0.tar.gz |
+| BREW   | **0.44.0** | https://github.com/sigoden/dufs |
+
+*Outdated*
 
 ## duktape
 
@@ -7001,7 +7003,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.80 ⚠️ | https://the.earth.li/~sgtatham/putty/0.80/putty-0.80.tar.gz |
-| BREW   | **0.83** | https://www.chiark.greenend.org.uk/~sgtatham/putty/ |
+| BREW   | **0.83** | https://putty.software/ |
 
 *Outdated*
 
@@ -7886,7 +7888,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.0** | https://syncthing.net/ |
+| BREW   | **2.0.1** | https://syncthing.net/ |
 
 *Outdated*
 

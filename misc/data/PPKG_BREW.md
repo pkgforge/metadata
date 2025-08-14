@@ -412,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.13 ⚠️ | null |
+| PPKG   | 2025.08.14 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2823,7 +2823,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.15 ⚠️ | https://github.com/gperftools/gperftools/releases/download/gperftools-2.15/gperftools-2.15.tar.gz |
-| BREW   | **2.17** | https://github.com/gperftools/gperftools |
+| BREW   | **2.17.1** | https://github.com/gperftools/gperftools |
 
 *Outdated*
 
@@ -3061,7 +3061,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.4 ⚠️ | https://github.com/helm/helm/archive/refs/tags/v3.15.4.tar.gz |
-| BREW   | **3.18.4** | https://helm.sh/ |
+| BREW   | **3.18.5** | https://helm.sh/ |
 
 *Outdated*
 
@@ -3692,7 +3692,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.3.0 ⚠️ | https://github.com/lexbor/lexbor/archive/refs/tags/v2.3.0.tar.gz |
-| BREW   | **2.4.0** | https://lexbor.com/ |
+| BREW   | **2.5.0** | https://lexbor.com/ |
 
 *Outdated*
 
@@ -4593,7 +4593,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.13 ⚠️ | null |
+| PPKG   | 2025.08.14 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4613,7 +4613,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.13 ⚠️ | null |
+| PPKG   | 2025.08.14 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5565,7 +5565,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.76 ⚠️ | https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.76.tar.xz |
-| BREW   | **1.4.79** | https://www.lighttpd.net/ |
+| BREW   | **1.4.80** | https://www.lighttpd.net/ |
 
 *Outdated*
 
@@ -6651,7 +6651,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.13 ⚠️ | null |
+| PPKG   | 2025.08.14 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6818,7 +6818,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.13 ⚠️ | null |
+| PPKG   | 2025.08.14 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6980,7 +6980,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.13 ⚠️ | null |
+| PPKG   | 2025.08.14 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8344,7 +8344,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.9** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.10** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

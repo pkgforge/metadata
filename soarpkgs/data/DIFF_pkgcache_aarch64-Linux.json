@@ -229,7 +229,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.42.8"
+    "version": "1.42.9"
   },
   {
     "_disabled": "false",
@@ -302,6 +302,77 @@
       "Utility"
     ],
     "version": "2.3.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
+    "app_id": "org.chromium.Chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google (Stable)",
+    "distro_pkg": {
+      "alpine": [
+        "chromium"
+      ],
+      "archlinux": {
+        "extra": [
+          "chromium"
+        ]
+      },
+      "debian": [
+        "chromium"
+      ],
+      "homebrew": [
+        "chromium"
+      ],
+      "nixpkgs": [
+        "chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.chromium.org",
+      "https://chromium.googlesource.com/chromium/src",
+      "https://github.com/chromium/chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "chromium"
+    ],
+    "src_url": [
+      "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "139.0.7258.127"
   },
   {
     "_disabled": "false",
@@ -555,7 +626,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-beb30ac-250813T065211"
+    "version": "HEAD-40e3dd4-250814T073428"
   },
   {
     "_disabled": "false",
@@ -1201,7 +1272,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250813T005518"
+    "version": "250814T005454"
   },
   {
     "_disabled": "false",
@@ -1263,7 +1334,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250813T005518"
+    "version": "250814T005454"
   },
   {
     "_disabled": "false",
@@ -1586,7 +1657,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-dbb0545-250812T110109"
+    "version": "HEAD-9784c2c-250814T084524"
   },
   {
     "_disabled": "false",
@@ -2034,75 +2105,6 @@
     "version": "1.78.01.78.0"
   },
   {
-    "_disabled": "false",
-    "pkg": "twingate",
-    "pkg_family": "twingate",
-    "pkg_id": "sharun.wrappe.twingate.stable",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/twingate-stable/twingate/twingate",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twingate/archive.sharun.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": {
-      "_default": "Zero trust remote access client for resource and networks",
-      "twingate": "Zero trust remote access client for resource and networks [twingate]",
-      "twingated": "Daemon for Twingate [twingate]",
-      "twingate-notifier": "Monitor & Notify for Twingate Client [twingate]"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "twingate",
-          "twingate-bin"
-        ]
-      },
-      "homebrew": [
-        "twingate"
-      ],
-      "nixpkgs": [
-        "twingate"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/twingate/archive.sharun.stable.yaml",
-    "homepage": [
-      "https://www.twingate.com/docs",
-      "https://www.twingate.com"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Unfree"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/twingate/archive/sharun",
-    "provides": [
-      "twingate",
-      "twingated",
-      "twingate-notifier"
-    ],
-    "repology": [
-      "twingate"
-    ],
-    "src_url": [
-      "https://packages.twingate.com/deb:twingate"
-    ],
-    "tag": [
-      "Utility"
-    ]
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -2418,7 +2420,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f2919bd-250812T232431"
+    "version": "HEAD-aea85d5-250813T220258"
   },
   {
     "_disabled": "false",
@@ -2478,6 +2480,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.15t_2025-08-12"
+    "version": "1.15t_2025-08-13"
   }
 ]

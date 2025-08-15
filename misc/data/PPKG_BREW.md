@@ -655,7 +655,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.2 ⚠️ | https://github.com/ClementTsang/bottom/archive/refs/tags/0.10.2.tar.gz |
-| BREW   | **0.11.0** | https://clementtsang.github.io/bottom/ |
+| BREW   | **0.11.1** | https://clementtsang.github.io/bottom/ |
 
 *Outdated*
 
@@ -2837,8 +2837,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.19.0 ✅ | https://github.com/orf/gping/archive/refs/tags/gping-v1.19.0.tar.gz |
-| BREW   | 1.19.0 | https://github.com/orf/gping |
+| PPKG   | 1.19.0 ⚠️ | https://github.com/orf/gping/archive/refs/tags/gping-v1.19.0.tar.gz |
+| BREW   | **1.20.1** | https://github.com/orf/gping |
+
+*Outdated*
 
 ## gpsim
 
@@ -4727,7 +4729,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.13.37 ⚠️ | https://github.com/google/libphonenumber/archive/refs/tags/v8.13.37.tar.gz |
-| BREW   | **9.0.11** | https://github.com/google/libphonenumber |
+| BREW   | **9.0.12** | https://github.com/google/libphonenumber |
 
 *Outdated*
 
@@ -4780,7 +4782,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 17.2 ⚠️ | https://ftp.postgresql.org/pub/source/v17.2/postgresql-17.2.tar.bz2 |
-| BREW   | **17.5** | https://www.postgresql.org/docs/current/libpq.html |
+| BREW   | **17.6** | https://www.postgresql.org/docs/current/libpq.html |
 
 *Outdated*
 

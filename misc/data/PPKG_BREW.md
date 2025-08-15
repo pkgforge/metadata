@@ -25,7 +25,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20240722.1 ⚠️ | https://github.com/abseil/abseil-cpp/archive/refs/tags/20240722.1.tar.gz |
-| BREW   | **20250127.1** | https://abseil.io |
+| BREW   | **20250512.1** | https://abseil.io |
 
 *Outdated*
 
@@ -179,10 +179,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.12.0 ⚠️ | null |
-| BREW   | **3.12.1** | https://aomedia.googlesource.com/aom |
-
-*Outdated*
+| PPKG   | 3.12.1 ✅ | https://storage.googleapis.com/aom-releases/libaom-3.12.1.tar.gz |
+| BREW   | 3.12.1 | https://aomedia.googlesource.com/aom |
 
 ## appstream
 
@@ -190,8 +188,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.0.5 ✅ | https://github.com/ximion/appstream/archive/refs/tags/v1.0.5.tar.gz |
-| BREW   | 1.0.5 | https://www.freedesktop.org/wiki/Distributions/AppStream/ |
+| PPKG   | 1.0.5 ⚠️ | https://github.com/ximion/appstream/archive/refs/tags/v1.0.5.tar.gz |
+| BREW   | **1.0.6** | https://www.freedesktop.org/wiki/Distributions/AppStream/ |
+
+*Outdated*
 
 ## appstream-glib
 
@@ -332,10 +332,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.17 ⚠️ | https://ftp.gnu.org/gnu/automake/automake-1.17.tar.xz |
-| BREW   | **1.18.1** | https://www.gnu.org/software/automake/ |
-
-*Outdated*
+| PPKG   | 1.18.1 ✅ | https://ftp.gnu.org/gnu/automake/automake-1.18.1.tar.xz |
+| BREW   | 1.18.1 | https://www.gnu.org/software/automake/ |
 
 ## autossh
 
@@ -412,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.14 ⚠️ | null |
+| PPKG   | 2025.08.15 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1651,8 +1649,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.8.2 ✅ | https://github.com/devmatteini/dra/archive/refs/tags/0.8.2.tar.gz |
-| BREW   | 0.8.2 | https://github.com/devmatteini/dra |
+| PPKG   | 0.8.2 ⚠️ | https://github.com/devmatteini/dra/archive/refs/tags/0.8.2.tar.gz |
+| BREW   | **0.9.0** | https://github.com/devmatteini/dra |
+
+*Outdated*
 
 ## dtc
 
@@ -1793,8 +1793,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 30.1 ✅ | https://ftp.gnu.org/gnu/emacs/emacs-30.1.tar.xz |
-| BREW   | 30.1 | https://www.gnu.org/software/emacs/ |
+| PPKG   | 30.1 ⚠️ | https://ftp.gnu.org/gnu/emacs/emacs-30.1.tar.xz |
+| BREW   | **30.2** | https://www.gnu.org/software/emacs/ |
+
+*Outdated*
 
 ## epsilon
 
@@ -1927,7 +1929,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.46.0 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.46.0.tar.gz |
-| BREW   | **2.49.0** | https://github.com/fastfetch-cli/fastfetch |
+| BREW   | **2.50.1** | https://github.com/fastfetch-cli/fastfetch |
 
 *Outdated*
 
@@ -4595,7 +4597,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.14 ⚠️ | null |
+| PPKG   | 2025.08.15 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4615,7 +4617,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.14 ⚠️ | null |
+| PPKG   | 2025.08.15 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6278,7 +6280,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.4 ⚠️ | https://nginx.org/download/nginx-1.25.4.tar.gz |
-| BREW   | **1.29.0** | https://nginx.org/ |
+| BREW   | **1.29.1** | https://nginx.org/ |
 
 *Outdated*
 
@@ -6636,6 +6638,15 @@
 | PPKG   | 0.2 ✅ | https://ftp.osuosl.org/pub/xiph/releases/opus/opus-tools-0.2.tar.gz |
 | BREW   | 0.2 | https://www.opus-codec.org/ |
 
+## oxlint
+
+**Description:** A suite of high-performance tools for JavaScript and TypeScript written in Rust
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 1.11.2 ✅ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.11.2.tar.gz |
+| BREW   | 1.11.2 | https://oxc.rs/ |
+
 ## p7zip
 
 **Description:** 7-Zip (high compression file archiver) implementation
@@ -6653,7 +6664,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.14 ⚠️ | null |
+| PPKG   | 2025.08.15 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6799,7 +6810,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.51.0** | https://pixi.sh |
+| BREW   | **0.52.0** | https://pixi.sh |
 
 *Outdated*
 
@@ -6820,7 +6831,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.14 ⚠️ | null |
+| PPKG   | 2025.08.15 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6943,7 +6954,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 26.1 ⚠️ | null |
-| BREW   | **29.3** | https://protobuf.dev/ |
+| BREW   | **31.1** | https://protobuf.dev/ |
 
 *Outdated*
 
@@ -6982,7 +6993,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.14 ⚠️ | null |
+| PPKG   | 2025.08.15 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7416,7 +7427,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.8** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.9** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -8346,7 +8357,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.10** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.11** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

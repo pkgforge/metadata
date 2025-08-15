@@ -184,7 +184,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250814T025144"
+    "version": "250815T025249"
   },
   {
     "_disabled": "false",
@@ -312,7 +312,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250601T160750"
+    "version": "250814T213941"
   },
   {
     "_disabled": "false",
@@ -388,7 +388,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.42.9"
+    "version": "1.42.10"
   },
   {
     "_disabled": "false",
@@ -504,7 +504,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.83.45"
+    "version": "v1.83.48"
   },
   {
     "_disabled": "false",
@@ -630,6 +630,74 @@
     ],
     "src_url": [
       "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "139.0.7258.127"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
     ],
     "tag": [
       "browser"
@@ -833,7 +901,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-40e3dd4-250814T073428"
+    "version": "HEAD-e1f0887-250815T075654"
   },
   {
     "_disabled": "false",
@@ -1526,7 +1594,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "143.0.20250814095102"
+    "version": "143.0.20250814213309"
   },
   {
     "_disabled": "false",
@@ -1860,7 +1928,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250814T005454"
+    "version": "250815T011111"
   },
   {
     "_disabled": "false",
@@ -1922,7 +1990,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250814T005454"
+    "version": "250815T011111"
   },
   {
     "_disabled": "false",
@@ -2361,6 +2429,71 @@
   },
   {
     "_disabled": "false",
+    "pkg": "gpt4all",
+    "pkg_family": "gpt4all",
+    "pkg_id": "runimage.cachyos.gpt4all.git",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gpt4all-git/gpt4all/gpt4all",
+    "app_id": "io.gpt4all.gpt4all",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gpt4all/runimage.cachyos.git.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Free-to-use, locally running, privacy-aware chatbot (Git)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "gpt4all-chat",
+          "gpt4all-chat-git"
+        ]
+      },
+      "homebrew": [
+        "gpt4all"
+      ],
+      "nixpkgs": [
+        "gpt4all",
+        "gpt4all-cuda"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/gpt4all/runimage.cachyos.git.yaml",
+    "homepage": [
+      "https://nomic.ai/gpt4all",
+      "https://github.com/nomic-ai/gpt4all"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/gpt4all/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/gpt4all/runimage/cachyos",
+    "provides": [
+      "gpt4all"
+    ],
+    "repology": [
+      "gpt4all",
+      "gpt4all-chat"
+    ],
+    "src_url": [
+      "https://aur.archlinux.org/packages/gpt4all-chat-git"
+    ],
+    "tag": [
+      "chat",
+      "llm"
+    ]
+  },
+  {
+    "_disabled": "false",
     "pkg": "gptme",
     "pkg_family": "gptme",
     "pkg_id": "sharun.wrappe.pypi.gptme",
@@ -2675,7 +2808,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-08-13"
+    "version": "2025-08-14"
   },
   {
     "_disabled": "true",
@@ -3395,6 +3528,85 @@
       "Utility"
     ],
     "version": "HEAD-05d15a9-250814T164528"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "obs-studio",
+    "pkg_family": "obs-studio",
+    "pkg_id": "github.com.pkgforge-dev.OBS-Studio-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/obs-studio/obs-studio",
+    "app_id": "com.obsproject.Studio",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/obs-studio/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "AudioVideoEditing",
+      "Recorder"
+    ],
+    "description": "FOSS cross-platform screencasting and streaming app",
+    "distro_pkg": {
+      "alpine": [
+        "obs-studio"
+      ],
+      "archlinux": {
+        "aur": [
+          "obs-studio-git"
+        ],
+        "extra": [
+          "obs-studio"
+        ]
+      },
+      "debian": [
+        "obs-studio"
+      ],
+      "gnuguix": [
+        "obs"
+      ],
+      "homebrew": [
+        "obs",
+        "obs@beta"
+      ],
+      "nixpkgs": [
+        "obs-studio"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/obs-studio/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://obsproject.com",
+      "https://github.com/obsproject/obs-studio",
+      "https://github.com/pkgforge-dev/OBS-Studio-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/obs-studio/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/OBS-Studio-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/obs-studio/appimage/pkgforge-dev",
+    "provides": [
+      "obs-studio"
+    ],
+    "repology": [
+      "obs-studio"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/OBS-Studio-AppImage"
+    ],
+    "tag": [
+      "Graphical",
+      "media-video",
+      "Productivity/Multimedia/Video/Editors",
+      "Video",
+      "Video/Utilities"
+    ],
+    "version": "31.1.2-1@2025-08-15_1755232952"
   },
   {
     "_disabled": "false",

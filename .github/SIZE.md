@@ -1,8 +1,8 @@
 ```mathematica
 1.6G └─┬ main
 1.1G   ├─┬ external
-954M   │ ├─┬ pkgforge-go
-954M   │ │ ├─┬ data
+955M   │ ├─┬ pkgforge-go
+955M   │ │ ├─┬ data
  83M   │ │ │ ├── x86_64-Linux.json
  83M   │ │ │ ├── riscv64-Linux.json
  82M   │ │ │ ├── aarch64-Linux.json
@@ -28,7 +28,7 @@
 5.5M   │ │ │ ├── loongarch64-Linux.db.zstd
 5.4M   │ │ │ ├── x86_64-Linux.db.xz
 5.4M   │ │ │ ├── loongarch64-Linux.sdb.xz
-5.3M   │ │ │ ├── riscv64-Linux.db.xz
+5.4M   │ │ │ ├── riscv64-Linux.db.xz
 5.3M   │ │ │ ├── aarch64-Linux.db.xz
 5.2M   │ │ │ ├── loongarch64-Linux.db.xz
 5.1M   │ │ │ ├── x86_64-Linux.json.zstd
@@ -163,7 +163,7 @@
 432K   │ │ │ ├── x86_64-Linux.db.zstd
 408K   │ │ │ ├── x86_64-Linux.db.xz
 396K   │ │ │ ├── x86_64-Linux.json.zstd
-388K   │ │ │ ├── x86_64-Linux.json.xz
+392K   │ │ │ ├── x86_64-Linux.json.xz
 4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
 4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum
 4.0K   │ │ │ ├── x86_64-Linux.sdb.bsum
@@ -425,7 +425,7 @@
 1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
 1.0M   │ │ ├── COMP_VER_CACHE.md
 812K   │ │ ├── pub_issues_binaries.txt
-788K   │ │ ├── COMP_VER_CACHE_OLD.json
+796K   │ │ ├── COMP_VER_CACHE_OLD.json
 580K   │ │ ├── OLD_bincache_riscv64-Linux.json
 496K   │ │ ├── DIFF_bincache_aarch64-Linux.json
 476K   │ │ ├── DIFF_bincache_x86_64-Linux.json

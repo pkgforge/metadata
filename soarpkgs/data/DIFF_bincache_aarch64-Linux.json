@@ -2178,7 +2178,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-3e766dc-250815T000811"
+    "version": "HEAD-5806d2a-250816T015346"
   },
   {
     "_disabled": "false",
@@ -3098,7 +3098,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-3e766dc-250815T000811"
+    "version": "HEAD-5806d2a-250816T015346"
   },
   {
     "_disabled": "false",
@@ -5590,6 +5590,65 @@
   },
   {
     "_disabled": "false",
+    "pkg": "crawley",
+    "pkg_family": "crawley",
+    "pkg_id": "github.com.s0rg.crawley",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/s0rg-crawley/crawley/crawley",
+    "bincache": "ghcr.io/pkgforge/bincache/crawley/official/crawley",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/crawley/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "The unix-way web crawler",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "crawley",
+          "crawley-bin"
+        ]
+      },
+      "nixpkgs": [
+        "crawley"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/crawley/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/s0rg/crawley"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/s0rg/crawley"
+    ],
+    "provides": [
+      "crawley"
+    ],
+    "repology": [
+      "crawley"
+    ],
+    "src_url": [
+      "https://github.com/s0rg/crawley"
+    ],
+    "tag": [
+      "crawler",
+      "scraper",
+      "spider"
+    ],
+    "version": "v1.7.13"
+  },
+  {
+    "_disabled": "false",
     "pkg": "croc",
     "pkg_family": "croc",
     "pkg_id": "github.com.schollz.croc",
@@ -5756,7 +5815,7 @@
     "tag": [
       "cleaner"
     ],
-    "version": "HEAD-f25ccfe-250810T174511"
+    "version": "HEAD-3f7f86a-250815T213709"
   },
   {
     "_disabled": "false",
@@ -5948,7 +6007,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8383ffe-250815T110743"
+    "version": "HEAD-269b390-250815T154558"
   },
   {
     "_disabled": "false",
@@ -7523,7 +7582,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-f648924-250815T094458"
+    "version": "HEAD-5ae174b-250815T165819"
   },
   {
     "_disabled": "false",
@@ -7580,7 +7639,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-d2b7640-250815T180333"
+    "version": "HEAD-cae62f6-250816T000713"
   },
   {
     "_disabled": "false",
@@ -8704,7 +8763,91 @@
       "wifi",
       "wifi-security"
     ],
-    "version": "6.3.5"
+    "version": "7.0.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "hcxtools",
+    "pkg_family": "hcxtools",
+    "pkg_id": "nixpkgs.hcxtools",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-hcxtools/hcxtools/hcxtools",
+    "bincache": "ghcr.io/pkgforge/bincache/hcxtools/nixpkgs/hcxeiutool",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hcxtools/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Portable solution for conversion of cap/pcap/pcapng WiFi dump files",
+      "hcxeiutool": "Prepare -E -I -U output of hcxpcapngtool for use by hashcat + rule or JtR + rule [hcxtools]",
+      "hcxhash2cap": "Converts hash file (PMKID&EAPOL, PMKID, EAPOL-hccapx, EAPOL-hccap, WPAPSK-john) to cap [hcxtools]",
+      "hcxhashtool": "Provide various filter operations on new PMKID/EAPOL hash line [hcxtools]",
+      "hcxpcapngtool": "Convert raw capture files to Hashcat and JtR readable formats [hcxtools]",
+      "hcxpmktool": "Calculate and verify a PSK and/or a PMK [hcxtools]",
+      "hcxpsktool": "Calculate candidates for hashcat and john [hcxtools]",
+      "hcxwltool": "Calculate candidates for hashcat and john based on mixed wordlists [hcxtools]",
+      "whoismac": "Show vendor information and/or download oui reference list [hcxtools]",
+      "wlancap2wpasec": "Upload multiple (gzip compressed) pcapng, pcap and cap files to https://wpa-sec.stanev.org [hcxtools]"
+    },
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "hcxtools-git"
+        ],
+        "extra": [
+          "hcxtools"
+        ]
+      },
+      "debian": [
+        "hcxtools"
+      ],
+      "nixpkgs": [
+        "hcxtools"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hcxtools/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://github.com/checkpoint-restore/hcxtools"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "hcxeiutool",
+      "hcxhash2cap",
+      "hcxhashtool",
+      "hcxpcapngtool",
+      "hcxpmktool",
+      "hcxpsktool",
+      "hcxwltool",
+      "whoismac",
+      "wlancap2wpasec"
+    ],
+    "repology": [
+      "hcxtools"
+    ],
+    "src_url": [
+      "https://github.com/checkpoint-restore/hcxtools"
+    ],
+    "tag": [
+      "net",
+      "net-wireless",
+      "security"
+    ],
+    "version": "7.0.0"
   },
   {
     "_disabled": "false",
@@ -9589,7 +9732,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-2dd5934-250815T114649"
+    "version": "HEAD-e6867a1-250815T215148"
   },
   {
     "_disabled": "false",
@@ -9924,7 +10067,7 @@
     "tag": [
       "ipfs"
     ],
-    "version": "HEAD-1ca5c9d-250815T052156"
+    "version": "HEAD-7109534-250815T144326"
   },
   {
     "_disabled": "false",
@@ -10222,7 +10365,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b9e1ebf-250815T084107"
+    "version": "HEAD-346f8fb-250815T143800"
   },
   {
     "_disabled": "false",
@@ -10663,7 +10806,7 @@
     "tag": [
       "utility"
     ],
-    "version": "HEAD-cd6431f-250815T080706"
+    "version": "HEAD-db11c17-250815T203056"
   },
   {
     "_disabled": "false",
@@ -10731,7 +10874,7 @@
     "tag": [
       "rss"
     ],
-    "version": "HEAD-2c4f4e2-250814T194030"
+    "version": "HEAD-ce6cadc-250815T181244"
   },
   {
     "_disabled": "false",
@@ -11610,7 +11753,7 @@
       "network-discovery",
       "port-scanner"
     ],
-    "version": "7.97"
+    "version": "7.98"
   },
   {
     "_disabled": "false",
@@ -11787,7 +11930,7 @@
       "recon",
       "security"
     ],
-    "version": "HEAD-7e95d9a-250815T060551"
+    "version": "HEAD-70eeb6c-250816T045020"
   },
   {
     "_disabled": "false",
@@ -13203,7 +13346,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-76301dc-250815T122853"
+    "version": "HEAD-f59a8e6-250815T152153"
   },
   {
     "_disabled": "false",
@@ -13496,7 +13639,7 @@
     "tag": [
       "linter"
     ],
-    "version": "HEAD-9d600b6-250814T042547"
+    "version": "HEAD-f07a47a-250815T213040"
   },
   {
     "_disabled": "false",
@@ -14802,6 +14945,50 @@
   },
   {
     "_disabled": "false",
+    "pkg": "subtrace",
+    "pkg_family": "subtrace",
+    "pkg_id": "github.com.rhysd.subtrace.stable",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/subtrace-stable/subtrace/subtrace",
+    "bincache": "ghcr.io/pkgforge/bincache/subtrace/official/subtrace",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/subtrace/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Wireshark for Docker containers",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/subtrace/static.official.stable.yaml",
+    "homepage": [
+      "https://subtrace.dev",
+      "https://github.com/subtrace/subtrace"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/subtrace/subtrace"
+    ],
+    "provides": [
+      "subtrace"
+    ],
+    "src_url": [
+      "https://github.com/subtrace/subtrace"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "b335"
+  },
+  {
+    "_disabled": "false",
     "pkg": "syncthing",
     "pkg_family": "syncthing",
     "pkg_id": "github.com.syncthing.syncthing.stable",
@@ -14954,7 +15141,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-55beba4-250815T113630"
+    "version": "HEAD-192fa6f-250815T162746"
   },
   {
     "_disabled": "false",
@@ -15167,6 +15354,72 @@
       "Utility"
     ],
     "version": "20250501"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "tokei",
+    "pkg_family": "tokei",
+    "pkg_id": "github.com.XAMPPRocky.tokei",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xampprocky-tokei/tokei/tokei",
+    "bincache": "ghcr.io/pkgforge/bincache/tokei/official/tokei",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/tokei/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A blazingly fast CLOC(Count Lines Of Code) program",
+    "distro_pkg": {
+      "alpine": [
+        "tokei"
+      ],
+      "archlinux": {
+        "aur": [
+          "tokei-git"
+        ],
+        "extra": [
+          "tokei"
+        ]
+      },
+      "debian": [
+        "rust-tokei"
+      ],
+      "nixpkgs": [
+        "tokei"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/tokei/static.official.source.yaml",
+    "homepage": [
+      "https://tokei.rs",
+      "https://github.com/XAMPPRocky/tokei"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/XAMPPRocky/tokei"
+    ],
+    "repology": [
+      "tokei"
+    ],
+    "src_url": [
+      "https://github.com/XAMPPRocky/tokei"
+    ],
+    "tag": [
+      "cloc",
+      "file",
+      "stats"
+    ],
+    "version": "HEAD-f78be23-250815T225355"
   },
   {
     "_disabled": "false",
@@ -15872,7 +16125,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-6f6a514-250815T175344"
+    "version": "HEAD-82f3b2a-250815T225440"
   },
   {
     "_disabled": "false",
@@ -16295,6 +16548,60 @@
       "dashboard"
     ],
     "version": "HEAD-8cd3bae-230703T145814"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "xcc",
+    "pkg_family": "xcc",
+    "pkg_id": "github.com.tyfkda.xcc.source",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/xcc-source/xcc/xcc",
+    "bincache": "ghcr.io/pkgforge/bincache/xcc/official/source",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/xcc/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Standalone C compiler/assembler/linker/libc",
+      "as": "Standalone C Assembler [xcc]",
+      "cc1": "Standalone C Compiler [xcc]",
+      "cpp": "Standalone C Preprocessor [xcc]",
+      "ld": "Standalone Linker Compiler [xcc]",
+      "xcc": "Entrypoint to xcc [xcc]"
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/xcc/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/tyfkda/xcc"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/tyfkda/xcc"
+    ],
+    "provides": [
+      "as",
+      "cc1",
+      "cpp",
+      "ld",
+      "xcc"
+    ],
+    "src_url": [
+      "https://github.com/tyfkda/xcc"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-f43e539-250816T084448"
   },
   {
     "_disabled": "false",

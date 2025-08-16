@@ -15,7 +15,7 @@
  59M   │ │ │ ├── riscv64-Linux.sdb
  59M   │ │ │ ├── aarch64-Linux.sdb
  58M   │ │ │ ├── loongarch64-Linux.sdb
-6.0M   │ │ │ ├── x86_64-Linux.sdb.zstd
+6.1M   │ │ │ ├── x86_64-Linux.sdb.zstd
 6.0M   │ │ │ ├── riscv64-Linux.sdb.zstd
 5.9M   │ │ │ ├── aarch64-Linux.sdb.zstd
 5.8M   │ │ │ ├── loongarch64-Linux.sdb.zstd
@@ -158,10 +158,10 @@
 1.0M   │ │ │ ├── aarch64-Linux.AM.txt
 548K   │ │ │ ├── x86_64-Linux.db.cba
 496K   │ │ │ ├── x86_64-Linux.json.cba
-476K   │ │ │ ├── x86_64-Linux.sdb.zstd
+480K   │ │ │ ├── x86_64-Linux.sdb.zstd
 444K   │ │ │ ├── x86_64-Linux.sdb.xz
 432K   │ │ │ ├── x86_64-Linux.db.zstd
-412K   │ │ │ ├── x86_64-Linux.db.xz
+408K   │ │ │ ├── x86_64-Linux.db.xz
 396K   │ │ │ ├── x86_64-Linux.json.zstd
 388K   │ │ │ ├── x86_64-Linux.json.xz
 4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
@@ -261,11 +261,11 @@
 2.0M   │   │ ├── x86_64-Linux.json
 1.6M   │   │ ├── x86_64-Linux.db
 1.4M   │   │ ├── x86_64-Linux.sdb
-228K   │   │ ├── aarch64-Linux.json
+232K   │   │ ├── aarch64-Linux.json
 220K   │   │ ├── x86_64-Linux.db.cba
-204K   │   │ ├── aarch64-Linux.sdb
+208K   │   │ ├── aarch64-Linux.sdb
+204K   │   │ ├── aarch64-Linux.db
 200K   │   │ ├── x86_64-Linux.json.cba
-200K   │   │ ├── aarch64-Linux.db
 196K   │   │ ├── x86_64-Linux.sdb.zstd
 184K   │   │ ├── x86_64-Linux.sdb.xz
 172K   │   │ ├── x86_64-Linux.db.zstd

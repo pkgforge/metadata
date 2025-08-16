@@ -2266,7 +2266,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.17.0 ⚠️ | https://github.com/koki-develop/gat/archive/refs/tags/v0.17.0.tar.gz |
-| BREW   | **0.24.1** | https://github.com/koki-develop/gat |
+| BREW   | **0.25.0** | https://github.com/koki-develop/gat |
 
 *Outdated*
 
@@ -3045,7 +3045,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.2.6 ⚠️ | https://hashcat.net/files/hashcat-6.2.6.tar.gz |
-| BREW   | **7.0.0** | https://hashcat.net/hashcat/ |
+| BREW   | **7.1.0** | https://hashcat.net/hashcat/ |
 
 *Outdated*
 
@@ -6956,7 +6956,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 26.1 ⚠️ | null |
-| BREW   | **31.1** | https://protobuf.dev/ |
+| BREW   | **32.0** | https://protobuf.dev/ |
 
 *Outdated*
 
@@ -7082,7 +7082,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.13.2 ⚠️ | https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tgz |
-| BREW   | **3.13.6** | https://www.python.org/ |
+| BREW   | **3.13.7** | https://www.python.org/ |
 
 *Outdated*
 
@@ -7901,7 +7901,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.1** | https://syncthing.net/ |
+| BREW   | **2.0.2** | https://syncthing.net/ |
 
 *Outdated*
 

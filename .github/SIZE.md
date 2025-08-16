@@ -353,7 +353,7 @@
 3.4M   │ │ ├── riscv64-Linux.json
 2.7M   │ │ ├── riscv64-Linux.db
 2.3M   │ │ ├── riscv64-Linux.sdb
-1.5M   │ │ ├── x86_64-Linux.sdb.cba
+1.4M   │ │ ├── x86_64-Linux.sdb.cba
 1.4M   │ │ ├── aarch64-Linux.sdb.cba
 1.4M   │ │ ├── x86_64-Linux.db.cba
 1.3M   │ │ ├── aarch64-Linux.db.cba
@@ -368,8 +368,8 @@
 876K   │ │ ├── x86_64-Linux.json.xz
 876K   │ │ ├── x86_64-Linux.db.xz
 868K   │ │ ├── aarch64-Linux.json.xz
-864K   │ │ ├── aarch64-Linux.db.xz
-252K   │ │ ├── riscv64-Linux.sdb.cba
+868K   │ │ ├── aarch64-Linux.db.xz
+256K   │ │ ├── riscv64-Linux.sdb.cba
 248K   │ │ ├── riscv64-Linux.db.cba
 208K   │ │ ├── riscv64-Linux.sdb.zstd
 208K   │ │ ├── riscv64-Linux.json.cba

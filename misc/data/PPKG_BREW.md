@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.15 ⚠️ | null |
+| PPKG   | 2025.08.16 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2827,7 +2827,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.15 ⚠️ | https://github.com/gperftools/gperftools/releases/download/gperftools-2.15/gperftools-2.15.tar.gz |
-| BREW   | **2.17.1** | https://github.com/gperftools/gperftools |
+| BREW   | **2.17.2** | https://github.com/gperftools/gperftools |
 
 *Outdated*
 
@@ -4599,7 +4599,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.15 ⚠️ | null |
+| PPKG   | 2025.08.16 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4619,7 +4619,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.15 ⚠️ | null |
+| PPKG   | 2025.08.16 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5771,7 +5771,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.686** | https://luau.org |
+| BREW   | **0.687** | https://luau.org |
 
 *Outdated*
 
@@ -6373,7 +6373,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.107 ⚠️ | https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz |
-| BREW   | **3.114** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
+| BREW   | **3.115** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
 
 *Outdated*
 
@@ -6666,7 +6666,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.15 ⚠️ | null |
+| PPKG   | 2025.08.16 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6833,7 +6833,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.15 ⚠️ | null |
+| PPKG   | 2025.08.16 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6995,7 +6995,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.15 ⚠️ | null |
+| PPKG   | 2025.08.16 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8045,7 +8045,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.84.1** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.85.0** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

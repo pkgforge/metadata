@@ -5571,7 +5571,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.76 ⚠️ | https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.76.tar.xz |
-| BREW   | **1.4.80** | https://www.lighttpd.net/ |
+| BREW   | **1.4.81** | https://www.lighttpd.net/ |
 
 *Outdated*
 
@@ -6022,7 +6022,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.40.1 ⚠️ | https://github.com/rui314/mold/archive/refs/tags/v2.40.1.tar.gz |
-| BREW   | **2.40.3** | https://github.com/rui314/mold |
+| BREW   | **2.40.4** | https://github.com/rui314/mold |
 
 *Outdated*
 
@@ -6646,8 +6646,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.11.2 ✅ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.11.2.tar.gz |
-| BREW   | 1.11.2 | https://oxc.rs/ |
+| PPKG   | 1.11.2 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.11.2.tar.gz |
+| BREW   | **1.12.0** | https://oxc.rs/ |
+
+*Outdated*
 
 ## p7zip
 

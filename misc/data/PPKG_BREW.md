@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.16 ⚠️ | null |
+| PPKG   | 2025.08.17 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1929,7 +1929,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.46.0 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.46.0.tar.gz |
-| BREW   | **2.50.1** | https://github.com/fastfetch-cli/fastfetch |
+| BREW   | **2.50.2** | https://github.com/fastfetch-cli/fastfetch |
 
 *Outdated*
 
@@ -4599,7 +4599,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.16 ⚠️ | null |
+| PPKG   | 2025.08.17 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4619,7 +4619,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.16 ⚠️ | null |
+| PPKG   | 2025.08.17 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6200,7 +6200,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7 ⚠️ | https://dev.yorhel.nl/download/ncdu-2.7.tar.gz |
-| BREW   | **2.8.2** | https://dev.yorhel.nl/ncdu |
+| BREW   | **2.9** | https://dev.yorhel.nl/ncdu |
 
 *Outdated*
 
@@ -6666,7 +6666,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.16 ⚠️ | null |
+| PPKG   | 2025.08.17 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6833,7 +6833,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.16 ⚠️ | null |
+| PPKG   | 2025.08.17 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6995,7 +6995,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.16 ⚠️ | null |
+| PPKG   | 2025.08.17 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -9010,7 +9010,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.15.0 ⚠️ | https://github.com/Z3Prover/z3/archive/z3-4.15.0.tar.gz |
-| BREW   | **4.15.2** | https://github.com/Z3Prover/z3 |
+| BREW   | **4.15.3** | https://github.com/Z3Prover/z3 |
 
 *Outdated*
 

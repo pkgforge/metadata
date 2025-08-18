@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.17 ⚠️ | null |
+| PPKG   | 2025.08.18 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -4599,7 +4599,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.17 ⚠️ | null |
+| PPKG   | 2025.08.18 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4619,7 +4619,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.17 ⚠️ | null |
+| PPKG   | 2025.08.18 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -4907,8 +4907,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.60.0 ✅ | https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz |
-| BREW   | 2.60.0 | https://wiki.gnome.org/Projects/LibRsvg |
+| PPKG   | 2.60.0 ⚠️ | https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz |
+| BREW   | **2.61.0** | https://wiki.gnome.org/Projects/LibRsvg |
+
+*Outdated*
 
 ## librsync
 
@@ -6668,7 +6670,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.17 ⚠️ | null |
+| PPKG   | 2025.08.18 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6835,7 +6837,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.17 ⚠️ | null |
+| PPKG   | 2025.08.18 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -6997,7 +6999,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.17 ⚠️ | null |
+| PPKG   | 2025.08.18 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7636,7 +7638,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.1 ⚠️ | https://github.com/LucasPickering/slumber/archive/refs/tags/v3.0.1.tar.gz |
-| BREW   | **3.3.0** | https://slumber.lucaspickering.me/ |
+| BREW   | **3.4.0** | https://slumber.lucaspickering.me/ |
 
 *Outdated*
 

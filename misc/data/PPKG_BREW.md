@@ -138,7 +138,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.295** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.296** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -633,7 +633,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.84.0 ⚠️ | https://github.com/boostorg/boost/releases/download/boost-1.84.0/boost-1.84.0.tar.xz |
-| BREW   | **1.88.0** | https://www.boost.org/ |
+| BREW   | **1.89.0** | https://www.boost.org/ |
 
 *Outdated*
 
@@ -3045,7 +3045,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.2.6 ⚠️ | https://hashcat.net/files/hashcat-6.2.6.tar.gz |
-| BREW   | **7.1.0** | https://hashcat.net/hashcat/ |
+| BREW   | **7.1.1** | https://hashcat.net/hashcat/ |
 
 *Outdated*
 
@@ -7130,6 +7130,17 @@
 
 *Outdated*
 
+## qman
+
+**Description:** A more modern man page viewer for our terminals
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 1.4.0 ⚠️ | https://github.com/plp13/qman/archive/refs/tags/v1.4.0.tar.gz |
+| BREW   | **1.5.0** | https://github.com/plp13/qman |
+
+*Outdated*
+
 ## qpdf
 
 **Description:** A command-line tool that performs content-preserving transformations on PDF files
@@ -8095,8 +8106,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.8.2 ✅ | https://github.com/tinysearch/tinysearch/archive/refs/tags/v0.8.2.tar.gz |
-| BREW   | 0.8.2 | https://github.com/tinysearch/tinysearch |
+| PPKG   | 0.8.2 ⚠️ | https://github.com/tinysearch/tinysearch/archive/refs/tags/v0.8.2.tar.gz |
+| BREW   | **0.9.0** | https://github.com/tinysearch/tinysearch |
+
+*Outdated*
 
 ## tl-expected
 

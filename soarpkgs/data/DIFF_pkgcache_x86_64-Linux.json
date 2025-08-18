@@ -1,6 +1,68 @@
 [
   {
     "_disabled": "false",
+    "pkg": "affine",
+    "pkg_family": "affine",
+    "pkg_id": "github.com.affine-mirror.affine.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/affine-stable/affine/affine",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/affine/appimage.official.stable.yaml",
+    "category": [
+      "Database",
+      "Education"
+    ],
+    "description": "FOSS Knowledge Base with fully merged docs, whiteboards and databases",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "affine",
+          "affine-bin",
+          "affine-canary-bin"
+        ]
+      },
+      "homebrew": [
+        "affine"
+      ],
+      "nixpkgs": [
+        "affine"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/affine/appimage.official.stable.yaml",
+    "homepage": [
+      "https://affine.pro",
+      "https://github.com/toeverything/AFFiNE"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/affine/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/toeverything/AFFiNE"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/affine/appimage/official",
+    "provides": [
+      "affine"
+    ],
+    "repology": [
+      "affine-whiteboard"
+    ],
+    "src_url": [
+      "https://github.com/toeverything/AFFiNE"
+    ],
+    "tag": [
+      "knowledge-base",
+      "wiki"
+    ],
+    "version": "v0.24.1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "aisleriot",
     "pkg_family": "aisleriot",
     "pkg_id": "github.com.ivan-hc.Aisleriot-appimage",
@@ -112,6 +174,55 @@
       "Utility"
     ],
     "version": "250814T213941"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "github.com.srevinsaju.Brave-AppImage.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/appimage.srevinsaju.beta.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers (Beta)",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/appimage.srevinsaju.beta.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/appimage/srevinsaju",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "v1.82.147"
   },
   {
     "_disabled": "false",
@@ -551,59 +662,63 @@
   },
   {
     "_disabled": "false",
-    "pkg": "ffdec",
-    "pkg_family": "ffdec",
-    "pkg_id": "runimage.cachyos.ffdec",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-ffdec/ffdec/ffdec",
-    "app_id": "com.jpexs.decompiler.flash",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ffdec/runimage.cachyos.stable.yaml",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.nightly.yaml",
     "category": [
-      "Utility"
+      "WebBrowser"
     ],
-    "description": "Open source Flash SWF decompiler and editor",
+    "description": "A web browser built from Firefox source tree (Nightly)",
     "distro_pkg": {
       "archlinux": {
         "aur": [
-          "ffdec",
-          "ffdec-bin"
+          "firefox-nightly",
+          "firefox-nightly-bin"
         ]
-      }
+      },
+      "homebrew": [
+        "firefox@nightly"
+      ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/ffdec/runimage.cachyos.stable.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.nightly.yaml",
     "homepage": [
-      "https://github.com/jindrapetrik/jpexs-decompiler"
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
     ],
     "host": [
       "x86_64-linux"
     ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/ffdec/assets/default.png",
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
     "license": [
-      "GPL-3.0"
+      "MPL-2.0"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/ffdec/runimage/cachyos",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
     "provides": [
-      "ffdec"
+      "firefox=>firefox-nightly"
     ],
     "repology": [
-      "ffdec"
+      "firefox"
     ],
     "src_url": [
-      "https://github.com/jindrapetrik/jpexs-decompiler"
+      "https://github.com/srevinsaju/Firefox-Appimage"
     ],
     "tag": [
-      "debugger",
-      "decompiler"
-    ]
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "143.0.20250818083741"
   },
   {
     "_disabled": "true",
@@ -1011,75 +1126,6 @@
     "version": "3.0.4-3@2025-08-17_1755444239"
   },
   {
-    "_disabled": "false",
-    "pkg": "gimp",
-    "pkg_family": "gimp",
-    "pkg_id": "runimage.cachyos.gimp.git",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gimp-git/gimp/gimp",
-    "app_id": "org.gimp.GIMP",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gimp/runimage.cachyos.git.yaml",
-    "category": [
-      "Graphics",
-      "ImageProcessing"
-    ],
-    "description": "The GNU Image Manipulation Program (Git)",
-    "distro_pkg": {
-      "alpine": [
-        "gimp"
-      ],
-      "archlinux": {
-        "aur": [
-          "gimp-git"
-        ],
-        "extra": [
-          "gimp"
-        ]
-      },
-      "debian": [
-        "gimp"
-      ],
-      "nixpkgs": [
-        "gimp"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/gimp/runimage.cachyos.git.yaml",
-    "homepage": [
-      "https://www.gimp.org",
-      "https://gitlab.gnome.org/GNOME/gimp"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/gimp/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/gimp/runimage/cachyos",
-    "provides": [
-      "gimp"
-    ],
-    "repology": [
-      "gimp"
-    ],
-    "src_url": [
-      "https://aur.archlinux.org/packages/gimp-git"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ]
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "replaced": [
@@ -1233,6 +1279,74 @@
   },
   {
     "_disabled": "false",
+    "pkg": "goverlay",
+    "pkg_family": "goverlay",
+    "pkg_id": "github.com.benjamimgois.goverlay.nightly",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/goverlay-nightly/goverlay/goverlay",
+    "app_id": "io.github.benjamimgois.goverlay",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/goverlay/appimage.official.nightly.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "GUI for configuring Vulkan/OpenGL overlays (nightly)",
+    "distro_pkg": {
+      "alpine": [
+        "goverlay"
+      ],
+      "archlinux": {
+        "aur": [
+          "goverlay-git"
+        ],
+        "extra": [
+          "goverlay"
+        ]
+      },
+      "debian": [
+        "goverlay"
+      ],
+      "nixpkgs": [
+        "goverlay"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/goverlay/appimage.official.nightly.yaml",
+    "homepage": [
+      "https://github.com/benjamimgois/goverlay"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/goverlay/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/benjamimgois/goverlay"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/goverlay/appimage/official",
+    "provides": [
+      "goverlay"
+    ],
+    "repology": [
+      "goverlay"
+    ],
+    "src_url": [
+      "https://github.com/benjamimgois/goverlay"
+    ],
+    "tag": [
+      "mangohud",
+      "overlay",
+      "replaysorcery",
+      "replay-sorcery",
+      "vkbasalt"
+    ],
+    "version": "250818T125446"
+  },
+  {
+    "_disabled": "false",
     "pkg": "kdenlive",
     "pkg_family": "kdenlive",
     "pkg_id": "gitlab.com.kdenlive.kdenlive.stable",
@@ -1301,6 +1415,54 @@
     "tag": [
       "editor"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "knot",
+    "pkg_family": "android-knot",
+    "pkg_id": "github.com.ic005k.Knot",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ic005k-knot/android-knot/knot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/android-knot/appimage.official.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Record everything in the simplest way possible",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "android-knot-bin"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/android-knot/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/ic005k/Knot"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/android-knot/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/ic005k/Knot"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/knot/appimage/official",
+    "provides": [
+      "knot"
+    ],
+    "repology": [
+      "android-knot"
+    ],
+    "src_url": [
+      "https://github.com/ic005k/Knot"
+    ],
+    "version": "2.1.08"
   },
   {
     "_disabled": "false",
@@ -1584,70 +1746,6 @@
       "Utility"
     ],
     "version": "4.9.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "libresprite",
-    "pkg_family": "libresprite",
-    "pkg_id": "runimage.cachyos.libresprite",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-libresprite/libresprite/libresprite",
-    "app_id": "io.github.libresprite.libresprite",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libresprite/runimage.cachyos.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Animated sprite editor & pixel art tool",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "libresprite",
-          "libresprite-bin",
-          "libresprite-git"
-        ]
-      },
-      "gnuguix": [
-        "libresprite"
-      ],
-      "nixpkgs": [
-        "libresprite"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/libresprite/runimage.cachyos.stable.yaml",
-    "homepage": [
-      "https://libresprite.github.io",
-      "https://github.com/LibreSprite/LibreSprite"
-    ],
-    "host": [
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/libresprite/assets/default.png",
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/libresprite/runimage/cachyos",
-    "provides": [
-      "libresprite"
-    ],
-    "repology": [
-      "libresprite"
-    ],
-    "src_url": [
-      "https://aur.archlinux.org/packages/libresprite-git"
-    ],
-    "tag": [
-      "editor",
-      "graphics"
-    ]
   },
   {
     "_disabled": "false",

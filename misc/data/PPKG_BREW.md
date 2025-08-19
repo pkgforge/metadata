@@ -1416,8 +1416,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.7.0 ✅ | https://github.com/terrastruct/d2/archive/refs/tags/v0.7.0.tar.gz |
-| BREW   | 0.7.0 | https://d2lang.com/ |
+| PPKG   | 0.7.0 ⚠️ | https://github.com/terrastruct/d2/archive/refs/tags/v0.7.0.tar.gz |
+| BREW   | **0.7.1** | https://d2lang.com/ |
+
+*Outdated*
 
 ## darkhttpd
 
@@ -2492,7 +2494,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.50.0 ⚠️ | https://www.kernel.org/pub/software/scm/git/git-2.50.0.tar.xz |
-| BREW   | **2.50.1** | https://git-scm.com |
+| BREW   | **2.51.0** | https://git-scm.com |
 
 *Outdated*
 
@@ -2545,7 +2547,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.2 ⚠️ | https://github.com/gitwatch/gitwatch/archive/refs/tags/v0.2.tar.gz |
-| BREW   | **0.3** | https://github.com/gitwatch/gitwatch |
+| BREW   | **0.4** | https://github.com/gitwatch/gitwatch |
 
 *Outdated*
 
@@ -8376,7 +8378,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.11** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.12** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -8511,7 +8513,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.1.0450 ⚠️ | https://github.com/vim/vim/archive/refs/tags/v9.1.0450.tar.gz |
-| BREW   | **9.1.1600** | https://www.vim.org/ |
+| BREW   | **9.1.1650** | https://www.vim.org/ |
 
 *Outdated*
 
@@ -8661,10 +8663,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 19.0.0 ⚠️ | null |
-| BREW   | **35.0.0** | https://wasmtime.dev/ |
-
-*Outdated*
+| PPKG   | 35.0.0 ✅ | null |
+| BREW   | 35.0.0 | https://wasmtime.dev/ |
 
 ## watchexec
 
@@ -9015,10 +9015,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.45.4 ⚠️ | https://github.com/mikefarah/yq/archive/refs/tags/v4.45.4.tar.gz |
-| BREW   | **4.47.1** | https://github.com/mikefarah/yq |
-
-*Outdated*
+| PPKG   | 4.47.1 ✅ | https://github.com/mikefarah/yq/archive/refs/tags/v4.47.1.tar.gz |
+| BREW   | 4.47.1 | https://github.com/mikefarah/yq |
 
 ## z3
 

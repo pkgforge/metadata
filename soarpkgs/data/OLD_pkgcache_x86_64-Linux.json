@@ -3125,7 +3125,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250818T010438"
+    "version": "250819T004905"
   },
   {
     "_disabled": "false",
@@ -3805,7 +3805,7 @@
       "vcs",
       "version-control"
     ],
-    "version": "2.50.1"
+    "version": "2.51.0"
   },
   {
     "_disabled": "false",
@@ -5567,6 +5567,79 @@
     "_disabled": "false",
     "pkg": "krita",
     "pkg_family": "krita",
+    "pkg_id": "gitlab.com.krita.krita.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/krita-stable/krita/krita",
+    "app_id": "org.kde.krita",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/krita/appimage.official.stable.yaml",
+    "category": [
+      "Graphics",
+      "ImageProcessing"
+    ],
+    "description": "A free and open source painting application",
+    "distro_pkg": {
+      "alpine": [
+        "krita"
+      ],
+      "archlinux": {
+        "aur": [
+          "krita-git"
+        ],
+        "extra": [
+          "krita"
+        ]
+      },
+      "debian": [
+        "krita"
+      ],
+      "gnuguix": [
+        "krita"
+      ],
+      "homebrew": [
+        "krita"
+      ],
+      "nixpkgs": [
+        "krita",
+        "krita-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/krita/appimage.official.stable.yaml",
+    "homepage": [
+      "https://krita.org",
+      "https://invent.kde.org/graphics/krita"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/krita/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/graphics/krita"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/krita/appimage/official",
+    "provides": [
+      "krita"
+    ],
+    "repology": [
+      "krita"
+    ],
+    "src_url": [
+      "https://krita.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "5.2.11"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "krita",
+    "pkg_family": "krita",
     "pkg_id": "runimage.alpine.krita",
     "pkg_type": "runimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-krita/krita/krita",
@@ -6400,6 +6473,83 @@
       "www-client"
     ],
     "version": "v0.11.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "neovim",
+    "pkg_family": "neovim",
+    "pkg_id": "nixpkgs.neovim",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-neovim/neovim/neovim",
+    "app_id": "io.neovim.nvim",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/neovim/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "TextEditor"
+    ],
+    "description": "Vim text editor fork focused on extensibility and agility",
+    "distro_pkg": {
+      "alpine": [
+        "neovim"
+      ],
+      "archlinux": {
+        "aur": [
+          "neovim-git"
+        ],
+        "extra": [
+          "neovim"
+        ]
+      },
+      "debian": [
+        "neovim"
+      ],
+      "gnuguix": [
+        "neovim"
+      ],
+      "homebrew": [
+        "neovim"
+      ],
+      "nixpkgs": [
+        "neovim",
+        "neovim-unwrapped"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/neovim/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://neovim.io",
+      "https://neovim.org"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/neovim/nixappimage/nixpkgs",
+    "provides": [
+      "neovim=>nvim"
+    ],
+    "repology": [
+      "neovim"
+    ],
+    "src_url": [
+      "https://github.com/neovim/neovim"
+    ],
+    "tag": [
+      "code",
+      "editor"
+    ],
+    "version": "0.11.3"
   },
   {
     "_disabled": "false",

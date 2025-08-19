@@ -106,6 +106,82 @@
   },
   {
     "_disabled": "false",
+    "pkg": "awscli",
+    "pkg_family": "awscli",
+    "pkg_id": "sharun.wrappe.pypi.awscli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-awscli/awscli/awscli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/awscli/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Universal Command Line Interface for Amazon Web Services",
+    "distro_pkg": {
+      "alpine": [
+        "aws-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "aws-cli-bin",
+          "aws-cli-git",
+          "aws-cli-v2"
+        ],
+        "extra": [
+          "aws-cli"
+        ]
+      },
+      "debian": [
+        "awscli"
+      ],
+      "gnuguix": [
+        "awscli"
+      ],
+      "homebrew": [
+        "awscli"
+      ],
+      "nixpkgs": [
+        "awscli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/awscli/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/aws/aws-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/awscli/archive/sharun",
+    "provides": [
+      "aws==awscli",
+      "aws==aws-cli"
+    ],
+    "repology": [
+      "awscli"
+    ],
+    "src_url": [
+      "https://pypi.org/project/awscli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "1.42.12"
+  },
+  {
+    "_disabled": "false",
     "pkg": "beet",
     "pkg_family": "beet",
     "pkg_id": "sharun.wrappe.pypi.beet",
@@ -934,7 +1010,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250818T010438"
+    "version": "250819T004905"
   },
   {
     "_disabled": "false",
@@ -996,7 +1072,239 @@
     "tag": [
       "terminal"
     ],
-    "version": "250818T010438"
+    "version": "250819T004905"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "git",
+    "pkg_family": "git",
+    "pkg_id": "runimage.alpine.git",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-git/git/git",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/git/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Fast, scalable, distributed revision control system",
+    "distro_pkg": {
+      "alpine": [
+        "git"
+      ],
+      "archlinux": {
+        "aur": [
+          "git-git"
+        ],
+        "extra": [
+          "git"
+        ]
+      },
+      "debian": [
+        "git"
+      ],
+      "gnuguix": [
+        "git"
+      ],
+      "homebrew": [
+        "git"
+      ],
+      "nixpkgs": [
+        "git"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/git/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://git-scm.com/"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/git/runimage/alpine",
+    "provides": [
+      "git==git-add",
+      "git==git-am",
+      "git==git-annotate",
+      "git==git-apply",
+      "git==git-archive",
+      "git==git-bisect",
+      "git==git-blame",
+      "git==git-branch",
+      "git==git-bugreport",
+      "git==git-bundle",
+      "git==git-cat-file",
+      "git==git-check-attr",
+      "git==git-check-ignore",
+      "git==git-check-mailmap",
+      "git==git-checkout",
+      "git==git-checkout-index",
+      "git==git-checkout--worker",
+      "git==git-check-ref-format",
+      "git==git-cherry",
+      "git==git-cherry-pick",
+      "git==git-clean",
+      "git==git-clone",
+      "git==git-column",
+      "git==git-commit",
+      "git==git-commit-graph",
+      "git==git-commit-tree",
+      "git==git-config",
+      "git==git-count-objects",
+      "git==git-credential",
+      "git==git-credential-cache",
+      "git==git-credential-cache--daemon",
+      "git==git-credential-store",
+      "git==git-describe",
+      "git==git-diagnose",
+      "git==git-diff",
+      "git==git-diff-files",
+      "git==git-diff-index",
+      "git==git-difftool",
+      "git==git-difftool--helper",
+      "git==git-diff-tree",
+      "git==git-fast-export",
+      "git==git-fetch",
+      "git==git-fetch-pack",
+      "git==git-filter-branch",
+      "git==git-fmt-merge-msg",
+      "git==git-for-each-ref",
+      "git==git-for-each-repo",
+      "git==git-format-patch",
+      "git==git-fsck",
+      "git==git-fsck-objects",
+      "git==git-fsmonitor--daemon",
+      "git==git-gc",
+      "git==git-get-tar-commit-id",
+      "git==git-grep",
+      "git==git-hash-object",
+      "git==git-help",
+      "git==git-hook",
+      "git==git-http-fetch",
+      "git==git-http-push",
+      "git==git-index-pack",
+      "git==git-init",
+      "git==git-init-db",
+      "git==git-interpret-trailers",
+      "git==git-log",
+      "git==git-ls-files",
+      "git==git-ls-remote",
+      "git==git-ls-tree",
+      "git==git-mailinfo",
+      "git==git-mailsplit",
+      "git==git-maintenance",
+      "git==git-merge",
+      "git==git-merge-base",
+      "git==git-merge-file",
+      "git==git-merge-index",
+      "git==git-merge-octopus",
+      "git==git-merge-one-file",
+      "git==git-merge-ours",
+      "git==git-merge-recursive",
+      "git==git-merge-resolve",
+      "git==git-merge-subtree",
+      "git==git-mergetool",
+      "git==git-mergetool--lib",
+      "git==git-merge-tree",
+      "git==git-mktag",
+      "git==git-mktree",
+      "git==git-multi-pack-index",
+      "git==git-mv",
+      "git==git-name-rev",
+      "git==git-notes",
+      "git==git-pack-objects",
+      "git==git-pack-redundant",
+      "git==git-pack-refs",
+      "git==git-patch-id",
+      "git==git-prune",
+      "git==git-prune-packed",
+      "git==git-pull",
+      "git==git-push",
+      "git==git-quiltimport",
+      "git==git-range-diff",
+      "git==git-read-tree",
+      "git==git-rebase",
+      "git==git-receive-pack",
+      "git==git-reflog",
+      "git==git-refs",
+      "git==git-remote",
+      "git==git-remote-ext",
+      "git==git-remote-fd",
+      "git==git-remote-ftp",
+      "git==git-remote-ftps",
+      "git==git-remote-http",
+      "git==git-remote-https",
+      "git==git-repack",
+      "git==git-replace",
+      "git==git-replay",
+      "git==git-request-pull",
+      "git==git-rerere",
+      "git==git-reset",
+      "git==git-restore",
+      "git==git-revert",
+      "git==git-rev-list",
+      "git==git-rev-parse",
+      "git==git-rm",
+      "git==git-send-pack",
+      "git==git-shell",
+      "git==git-sh-i18n",
+      "git==git-sh-i18n--envsubst",
+      "git==git-shortlog",
+      "git==git-show",
+      "git==git-show-branch",
+      "git==git-show-index",
+      "git==git-show-ref",
+      "git==git-sh-setup",
+      "git==git-sparse-checkout",
+      "git==git-stage",
+      "git==git-stash",
+      "git==git-status",
+      "git==git-stripspace",
+      "git==git-submodule",
+      "git==git-submodule--helper",
+      "git==git-switch",
+      "git==git-symbolic-ref",
+      "git==git-tag",
+      "git==git-unpack-file",
+      "git==git-unpack-objects",
+      "git==git-update-index",
+      "git==git-update-ref",
+      "git==git-update-server-info",
+      "git==git-upload-archive",
+      "git==git-upload-pack",
+      "git==git-var",
+      "git==git-verify-commit",
+      "git==git-verify-pack",
+      "git==git-verify-tag",
+      "git==git-version",
+      "git==git-web--browse",
+      "git==git-whatchanged",
+      "git==git-worktree",
+      "git==git-write-tree"
+    ],
+    "repology": [
+      "git"
+    ],
+    "src_url": [
+      "https://github.com/git/git"
+    ],
+    "tag": [
+      "scm",
+      "vcs",
+      "version-control"
+    ],
+    "version": "2.51.0"
   },
   {
     "_disabled": "true",
@@ -1980,7 +2288,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-374ea04-250818T174340"
+    "version": "HEAD-d8200ff-250818T220935"
   },
   {
     "_disabled": "false",

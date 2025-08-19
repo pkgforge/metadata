@@ -1484,7 +1484,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "waf configure --prefix=$PACKAGE_INSTALL_DIR\nwaf\nwaf install"
+    "install": "waf"
   },
   {
     "pkgname": "bmake",
@@ -8461,7 +8461,7 @@
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "waf configure --prefix=$PACKAGE_INSTALL_DIR\nwaf build\nwaf install"
+    "install": "waf"
   },
   {
     "pkgname": "jasper",
@@ -20299,8 +20299,8 @@
     "web-url": "https://ollama.com/",
     "git-url": "https://github.com/ollama/ollama",
     "git-sha": "5f57b0ef4268a6bd9e8043d54c351a608a7e1bca",
-    "dep-upp": "git golang",
-    "bsystem": "go cmake-gmake",
+    "dep-upp": "git cmake gmake golang",
+    "bsystem": "go cmake+gmake",
     "binbstd": "1",
     "parallel": "1",
     "ltoable": "1",
@@ -25762,19 +25762,19 @@
   {
     "pkgname": "wasmtime",
     "pkgtype": "exe",
-    "version": "19.0.0",
+    "version": "35.0.0",
     "license": "Apache-2.0",
     "summary": "Standalone JIT-style runtime for WebAssembly, using Cranelift",
     "web-url": "https://wasmtime.dev/",
     "git-url": "https://github.com/bytecodealliance/wasmtime",
-    "git-sha": "6e0abd75440159e57e9f1c59a62dbc691eff18a4",
+    "git-sha": "509af9e5fb6c43f95428c3b297882bbf746faa5e",
     "dep-upp": "git",
     "bsystem": "cargo",
     "binbstd": "1",
     "parallel": "1",
     "ltoable": "1",
     "movable": "1",
-    "install": "cargow install"
+    "install": "cargow install --profile=fastest-runtime"
   },
   {
     "pkgname": "watchexec",
@@ -27412,13 +27412,13 @@
   {
     "pkgname": "yq",
     "pkgtype": "exe",
-    "version": "4.45.4",
+    "version": "4.47.1",
     "license": "MIT",
     "summary": "A lightweight and portable command-line YAML processor",
     "web-url": "https://mikefarah.gitbook.io/yq",
     "git-url": "https://github.com/mikefarah/yq",
-    "src-url": "https://github.com/mikefarah/yq/archive/refs/tags/v4.45.4.tar.gz",
-    "src-sha": "e06b9b219ad885b08cf983a7ce5ff6d946587ab4ffc62de4538655bb50e39111",
+    "src-url": "https://github.com/mikefarah/yq/archive/refs/tags/v4.47.1.tar.gz",
+    "src-sha": "48ef09b9ffdb80f26ee516fa2fc83f713c1b49f503cedef79a96435509d456af",
     "dep-upp": "curl bsdtar golang",
     "bsystem": "go",
     "binbstd": "1",

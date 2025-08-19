@@ -301,7 +301,7 @@
 4.0K   │   │ └── TOTAL.json
  36K   │   └─┬ scripts
  32K   │     └── gen_meta.sh
-231M   ├─┬ misc
+232M   ├─┬ misc
 231M   │ ├─┬ data
  73M   │ │ ├── ARCHLINUX.json
  38M   │ │ ├── FLATPAK_APPSTREAM.xml
@@ -413,8 +413,8 @@
  36K   │   ├── gen_meta_aarch64-Linux.sh
  12K   │   └── sync_hf_mirror.sh
  59M   ├── GHCR_PKGS.json
- 21M   ├─┬ soarpkgs
- 20M   │ ├─┬ data
+ 20M   ├─┬ soarpkgs
+ 19M   │ ├─┬ data
 2.7M   │ │ ├── COMP_VER_CACHE.json
 2.6M   │ │ ├── INDEX.json
 2.0M   │ │ ├── BACKAGE.json
@@ -424,12 +424,10 @@
 1.1M   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
 1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
 1.0M   │ │ ├── COMP_VER_CACHE.md
-784K   │ │ ├── COMP_VER_CACHE_OLD.json
 780K   │ │ ├── pub_issues_binaries.txt
 580K   │ │ ├── OLD_bincache_riscv64-Linux.json
 384K   │ │ ├── INDEX.json.cba
 344K   │ │ ├── DIFF_bincache_aarch64-Linux.json
-328K   │ │ ├── COMP_VER_CACHE_OLD.md
 324K   │ │ ├── DIFF_bincache_x86_64-Linux.json
 312K   │ │ ├── DIFF_bincache_riscv64-Linux.json
 304K   │ │ ├── pub_issues_packages.txt
@@ -442,10 +440,12 @@
 192K   │ │ ├── INDEX.db.zstd
 180K   │ │ ├── INDEX.db.xz
 100K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+ 92K   │ │ ├── COMP_VER_CACHE_OLD.json
  80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
  64K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  52K   │ │ ├── URLS.txt
  48K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
+ 36K   │ │ ├── COMP_VER_CACHE_OLD.md
  32K   │ │ ├── OLD_pkgcache_riscv64-Linux.json
  24K   │ │ ├── DIFF_pkgcache_riscv64-Linux.json
  24K   │ │ ├── DIFF_bincache.json
@@ -561,7 +561,7 @@
 608K   │ ├── ALL_aarch64-Linux.txt
 520K   │ ├── PKG_NAME_ONLY_x86_64-Linux.txt
 252K   │ └── PKG_NAME_ONLY_aarch64-Linux.txt
-976K   ├── PKG_STATUS.md
+968K   ├── PKG_STATUS.md
 320K   ├─┬ web
 164K   │ ├─┬ cloudflare
  88K   │ │ ├─┬ src

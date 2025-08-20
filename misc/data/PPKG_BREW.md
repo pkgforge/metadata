@@ -3155,7 +3155,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.1.0 ✅ | https://distfiles.macports.org/ht/ht-2.1.0.tar.bz2 |
+| PPKG   | 2.1.0 ✅ | https://downloads.sourceforge.net/project/hte/ht-source/ht-2.1.0.tar.bz2 |
 | BREW   | 2.1.0 | https://hte.sourceforge.net/ |
 
 ## htop
@@ -4157,7 +4157,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.33 ✅ | https://fossies.org/linux/misc/libev-4.33.tar.gz |
+| PPKG   | 4.33 ✅ | http://dist.schmorp.de/libev/Attic/libev-4.33.tar.gz |
 | BREW   | 4.33 | https://software.schmorp.de/pkg/libev.html |
 
 ## libevent
@@ -5829,7 +5829,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.24.1 ⚠️ | https://mirrors.aliyun.com/macports/distfiles/lzip/lzip-1.24.1.tar.gz |
+| PPKG   | 1.24.1 ⚠️ | https://download-mirror.savannah.gnu.org/releases/lzip/lzip-1.24.1.tar.gz |
 | BREW   | **1.25** | https://www.nongnu.org/lzip/ |
 
 *Outdated*
@@ -7032,10 +7032,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.8.10 ⚠️ | https://www.ivarch.com/programs/sources/pv-1.8.10.tar.gz |
-| BREW   | **1.9.34** | https://www.ivarch.com/programs/pv.shtml |
-
-*Outdated*
+| PPKG   | 1.9.34 ✅ | https://www.ivarch.com/programs/sources/pv-1.9.34.tar.gz |
+| BREW   | 1.9.34 | https://www.ivarch.com/programs/pv.shtml |
 
 ## pybind11
 
@@ -9077,7 +9075,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.3.1 ✅ | https://distfiles.macports.org/zlib/zlib-1.3.1.tar.xz |
+| PPKG   | 1.3.1 ✅ | https://zlib.net/zlib-1.3.1.tar.gz |
 | BREW   | 1.3.1 | https://zlib.net/ |
 
 ## zlib-ng
@@ -9164,8 +9162,6 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.6.2 ⚠️ | https://distfiles.macports.org/zsync/zsync-0.6.2.tar.bz2 |
-| BREW   | **0.6.3** | https://zsync.moria.org.uk/ |
-
-*Outdated*
+| PPKG   | 0.6.3 ✅ | https://zsync.moria.org.uk/download/zsync-0.6.3.tar.bz2 |
+| BREW   | 0.6.3 | https://zsync.moria.org.uk/ |
 

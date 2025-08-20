@@ -73,8 +73,8 @@
 4.0K   │ │ │ └── aarch64-Linux.db.bsum
  12K   │ │ └─┬ scripts
 8.0K   │ │   └── gen_meta.sh
-160M   │ ├─┬ pkgforge-cargo
-160M   │ │ ├─┬ data
+161M   │ ├─┬ pkgforge-cargo
+161M   │ │ ├─┬ data
  14M   │ │ │ ├── x86_64-Linux.json
  14M   │ │ │ ├── aarch64-Linux.json
  13M   │ │ │ ├── riscv64-Linux.json
@@ -83,7 +83,7 @@
  11M   │ │ │ ├── loongarch64-Linux.json
  11M   │ │ │ ├── riscv64-Linux.db
 9.5M   │ │ │ ├── loongarch64-Linux.db
-9.0M   │ │ │ ├── x86_64-Linux.sdb
+9.1M   │ │ │ ├── x86_64-Linux.sdb
 9.0M   │ │ │ ├── aarch64-Linux.sdb
 8.7M   │ │ │ ├── riscv64-Linux.sdb
 7.4M   │ │ │ ├── loongarch64-Linux.sdb

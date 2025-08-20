@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.19 ⚠️ | null |
+| PPKG   | 2025.08.20 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1599,7 +1599,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.58.3** | https://github.com/dolthub/dolt |
+| BREW   | **1.58.4** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -3069,7 +3069,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.4 ⚠️ | https://github.com/helm/helm/archive/refs/tags/v3.15.4.tar.gz |
-| BREW   | **3.18.5** | https://helm.sh/ |
+| BREW   | **3.18.6** | https://helm.sh/ |
 
 *Outdated*
 
@@ -3978,7 +3978,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.1 ⚠️ | https://github.com/anrieff/libcpuid/archive/refs/tags/v0.7.1.tar.gz |
-| BREW   | **0.8.0** | https://github.com/anrieff/libcpuid |
+| BREW   | **0.8.1** | https://github.com/anrieff/libcpuid |
 
 *Outdated*
 
@@ -4601,7 +4601,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.19 ⚠️ | null |
+| PPKG   | 2025.08.20 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4621,7 +4621,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.19 ⚠️ | null |
+| PPKG   | 2025.08.20 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6672,7 +6672,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.19 ⚠️ | null |
+| PPKG   | 2025.08.20 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6818,7 +6818,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.52.0** | https://pixi.sh |
+| BREW   | **0.53.0** | https://pixi.sh |
 
 *Outdated*
 
@@ -6839,7 +6839,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.19 ⚠️ | null |
+| PPKG   | 2025.08.20 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7001,7 +7001,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.19 ⚠️ | null |
+| PPKG   | 2025.08.20 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7715,7 +7715,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 128.11.0 ⚠️ | https://archive.mozilla.org/pub/firefox/releases/128.11.0esr/source/firefox-128.11.0esr.source.tar.xz |
-| BREW   | **128.13.0** | https://spidermonkey.dev |
+| BREW   | **128.14.0** | https://spidermonkey.dev |
 
 *Outdated*
 

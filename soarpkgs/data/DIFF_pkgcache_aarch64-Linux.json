@@ -178,7 +178,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.42.12"
+    "version": "1.42.13"
   },
   {
     "_disabled": "false",
@@ -309,62 +309,59 @@
   },
   {
     "_disabled": "false",
-    "pkg": "commix",
-    "pkg_family": "commix",
-    "pkg_id": "sharun.wrappe.pypi.commix",
+    "pkg": "cloudflare-warp",
+    "pkg_family": "cloudflare-warp",
+    "pkg_id": "sharun.wrappe.cloudflare-warp.stable",
     "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-commix/commix/commix",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/commix/archive.sharun.pypi.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/warp-stable/cloudflare-warp/cloudflare-warp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/cloudflare-warp/archive.sharun.stable.yaml",
     "category": [
       "Utility"
     ],
-    "description": "Automated All-in-One OS Command Injection and Exploitation Tool",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "commix"
-        ]
-      },
-      "nixpkgs": [
-        "commix"
-      ]
+    "description": {
+      "_default": "Free VPN-like service that secures and optimizes internet traffic using Cloudflare's network",
+      "warp-cli": "Cloudflare WARP client [cloudflare-warp]",
+      "warp-dex": "CLI to perform DEX (Digital Experience Monitoring) tests [cloudflare-warp]",
+      "warp-diag": "CLI to diagnose & troubleshoot Warp Connections [cloudflare-warp]",
+      "warp-svc": "Cloudflare WARP Service Manager/Daemon [cloudflare-warp]",
+      "warp-taskbar": "Cloudflare WARP Taskbar Applet [cloudflare-warp]"
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/commix/archive.sharun.pypi.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/cloudflare-warp/archive.sharun.stable.yaml",
     "homepage": [
-      "https://commixproject.com",
-      "https://github.com/commixproject/commix"
+      "https://developers.cloudflare.com/warp-client/"
     ],
     "host": [
       "aarch64-linux",
       "x86_64-linux"
     ],
     "license": [
-      "GPL-3.0"
+      "Unfree"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
     ],
     "note": [
       "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Built Using Sharun [Deb Package]. Check/Report @ https://github.com/VHSgunzo/sharun",
       "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/commix/archive/sharun",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/cloudflare-warp/archive/sharun",
     "provides": [
-      "commix"
-    ],
-    "repology": [
-      "commix"
+      "warp-cli",
+      "warp-dex",
+      "warp-diag",
+      "warp-svc",
+      "warp-taskbar"
     ],
     "src_url": [
-      "https://github.com/commixproject/commix"
+      "https://pkg.cloudflareclient.com/"
     ],
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-b2b63d6-250819T065214"
+    "version": "2025.6.1335.0"
   },
   {
     "_disabled": "false",
@@ -627,67 +624,6 @@
     ]
   },
   {
-    "_disabled": "false",
-    "pkg": "dvc",
-    "pkg_family": "dvc",
-    "pkg_id": "sharun.wrappe.source.dvc",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-dvc/dvc/dvc",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/dvc/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A version control system and experiment tracker designed for machine learning projects",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "dvc"
-        ]
-      },
-      "homebrew": [
-        "dvc"
-      ],
-      "nixpkgs": [
-        "dvc"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/dvc/archive.sharun.source.yaml",
-    "homepage": [
-      "https://dvc.org/doc"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "Apache-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/dvc/archive/sharun",
-    "provides": [
-      "dvc"
-    ],
-    "repology": [
-      "dvc"
-    ],
-    "src_url": [
-      "https://github.com/iterative/dvc"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "HEAD-8504684-250819T120418"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -743,6 +679,82 @@
       "matrix"
     ],
     "version": "1.11.109"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "flameshot",
+    "pkg_family": "flameshot",
+    "pkg_id": "nixpkgs.flameshot",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-flameshot/flameshot/flameshot",
+    "app_id": "org.flameshot.Flameshot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/flameshot/nixappimage.nixpkgs.unstable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Powerful and simple to use screenshot software",
+    "distro_pkg": {
+      "alpine": [
+        "flameshot"
+      ],
+      "archlinux": {
+        "aur": [
+          "flameshot-git"
+        ],
+        "extra": [
+          "flameshot"
+        ]
+      },
+      "debian": [
+        "flameshot"
+      ],
+      "gnuguix": [
+        "flameshot"
+      ],
+      "homebrew": [
+        "flameshot"
+      ],
+      "nixpkgs": [
+        "flameshot"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/flameshot/nixappimage.nixpkgs.unstable.yaml",
+    "homepage": [
+      "https://flameshot.org",
+      "https://github.com/flameshot-org/flameshot"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/flameshot/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/flameshot/nixappimage/nixpkgs",
+    "provides": [
+      "flameshot"
+    ],
+    "repology": [
+      "flameshot"
+    ],
+    "src_url": [
+      "https://github.com/flameshot/flameshot"
+    ],
+    "tag": [
+      "screenshot"
+    ],
+    "version": "13.0.1"
   },
   {
     "_disabled": "true",
@@ -1010,7 +1022,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250819T004905"
+    "version": "250820T004727"
   },
   {
     "_disabled": "false",
@@ -1072,239 +1084,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250819T004905"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "git",
-    "pkg_family": "git",
-    "pkg_id": "runimage.alpine.git",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-git/git/git",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/git/runimage.alpine.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Fast, scalable, distributed revision control system",
-    "distro_pkg": {
-      "alpine": [
-        "git"
-      ],
-      "archlinux": {
-        "aur": [
-          "git-git"
-        ],
-        "extra": [
-          "git"
-        ]
-      },
-      "debian": [
-        "git"
-      ],
-      "gnuguix": [
-        "git"
-      ],
-      "homebrew": [
-        "git"
-      ],
-      "nixpkgs": [
-        "git"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/git/runimage.alpine.stable.yaml",
-    "homepage": [
-      "https://git-scm.com/"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/git/runimage/alpine",
-    "provides": [
-      "git==git-add",
-      "git==git-am",
-      "git==git-annotate",
-      "git==git-apply",
-      "git==git-archive",
-      "git==git-bisect",
-      "git==git-blame",
-      "git==git-branch",
-      "git==git-bugreport",
-      "git==git-bundle",
-      "git==git-cat-file",
-      "git==git-check-attr",
-      "git==git-check-ignore",
-      "git==git-check-mailmap",
-      "git==git-checkout",
-      "git==git-checkout-index",
-      "git==git-checkout--worker",
-      "git==git-check-ref-format",
-      "git==git-cherry",
-      "git==git-cherry-pick",
-      "git==git-clean",
-      "git==git-clone",
-      "git==git-column",
-      "git==git-commit",
-      "git==git-commit-graph",
-      "git==git-commit-tree",
-      "git==git-config",
-      "git==git-count-objects",
-      "git==git-credential",
-      "git==git-credential-cache",
-      "git==git-credential-cache--daemon",
-      "git==git-credential-store",
-      "git==git-describe",
-      "git==git-diagnose",
-      "git==git-diff",
-      "git==git-diff-files",
-      "git==git-diff-index",
-      "git==git-difftool",
-      "git==git-difftool--helper",
-      "git==git-diff-tree",
-      "git==git-fast-export",
-      "git==git-fetch",
-      "git==git-fetch-pack",
-      "git==git-filter-branch",
-      "git==git-fmt-merge-msg",
-      "git==git-for-each-ref",
-      "git==git-for-each-repo",
-      "git==git-format-patch",
-      "git==git-fsck",
-      "git==git-fsck-objects",
-      "git==git-fsmonitor--daemon",
-      "git==git-gc",
-      "git==git-get-tar-commit-id",
-      "git==git-grep",
-      "git==git-hash-object",
-      "git==git-help",
-      "git==git-hook",
-      "git==git-http-fetch",
-      "git==git-http-push",
-      "git==git-index-pack",
-      "git==git-init",
-      "git==git-init-db",
-      "git==git-interpret-trailers",
-      "git==git-log",
-      "git==git-ls-files",
-      "git==git-ls-remote",
-      "git==git-ls-tree",
-      "git==git-mailinfo",
-      "git==git-mailsplit",
-      "git==git-maintenance",
-      "git==git-merge",
-      "git==git-merge-base",
-      "git==git-merge-file",
-      "git==git-merge-index",
-      "git==git-merge-octopus",
-      "git==git-merge-one-file",
-      "git==git-merge-ours",
-      "git==git-merge-recursive",
-      "git==git-merge-resolve",
-      "git==git-merge-subtree",
-      "git==git-mergetool",
-      "git==git-mergetool--lib",
-      "git==git-merge-tree",
-      "git==git-mktag",
-      "git==git-mktree",
-      "git==git-multi-pack-index",
-      "git==git-mv",
-      "git==git-name-rev",
-      "git==git-notes",
-      "git==git-pack-objects",
-      "git==git-pack-redundant",
-      "git==git-pack-refs",
-      "git==git-patch-id",
-      "git==git-prune",
-      "git==git-prune-packed",
-      "git==git-pull",
-      "git==git-push",
-      "git==git-quiltimport",
-      "git==git-range-diff",
-      "git==git-read-tree",
-      "git==git-rebase",
-      "git==git-receive-pack",
-      "git==git-reflog",
-      "git==git-refs",
-      "git==git-remote",
-      "git==git-remote-ext",
-      "git==git-remote-fd",
-      "git==git-remote-ftp",
-      "git==git-remote-ftps",
-      "git==git-remote-http",
-      "git==git-remote-https",
-      "git==git-repack",
-      "git==git-replace",
-      "git==git-replay",
-      "git==git-request-pull",
-      "git==git-rerere",
-      "git==git-reset",
-      "git==git-restore",
-      "git==git-revert",
-      "git==git-rev-list",
-      "git==git-rev-parse",
-      "git==git-rm",
-      "git==git-send-pack",
-      "git==git-shell",
-      "git==git-sh-i18n",
-      "git==git-sh-i18n--envsubst",
-      "git==git-shortlog",
-      "git==git-show",
-      "git==git-show-branch",
-      "git==git-show-index",
-      "git==git-show-ref",
-      "git==git-sh-setup",
-      "git==git-sparse-checkout",
-      "git==git-stage",
-      "git==git-stash",
-      "git==git-status",
-      "git==git-stripspace",
-      "git==git-submodule",
-      "git==git-submodule--helper",
-      "git==git-switch",
-      "git==git-symbolic-ref",
-      "git==git-tag",
-      "git==git-unpack-file",
-      "git==git-unpack-objects",
-      "git==git-update-index",
-      "git==git-update-ref",
-      "git==git-update-server-info",
-      "git==git-upload-archive",
-      "git==git-upload-pack",
-      "git==git-var",
-      "git==git-verify-commit",
-      "git==git-verify-pack",
-      "git==git-verify-tag",
-      "git==git-version",
-      "git==git-web--browse",
-      "git==git-whatchanged",
-      "git==git-worktree",
-      "git==git-write-tree"
-    ],
-    "repology": [
-      "git"
-    ],
-    "src_url": [
-      "https://github.com/git/git"
-    ],
-    "tag": [
-      "scm",
-      "vcs",
-      "version-control"
-    ],
-    "version": "2.51.0"
+    "version": "250820T004727"
   },
   {
     "_disabled": "true",
@@ -1574,130 +1354,6 @@
       "Utility"
     ],
     "version": "HEAD-8af4bfa-250817T220726"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "oci-cli",
-    "pkg_family": "oci-cli",
-    "pkg_id": "sharun.wrappe.pypi.oci-cli",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oci-cli/oci-cli/oci-cli",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oci-cli/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Command Line Interface for Oracle Cloud Infrastructure",
-    "distro_pkg": {
-      "alpine": [
-        "oci-cli"
-      ],
-      "archlinux": {
-        "aur": [
-          "oci-cli"
-        ]
-      },
-      "homebrew": [
-        "oci-cli"
-      ],
-      "nixpkgs": [
-        "oci-cli"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/oci-cli/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://cloud.oracle.com/cloud-infrastructure",
-      "https://github.com/oracle/oci-cli"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "UPL-1.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
-    "provides": [
-      "oci==oci-cli"
-    ],
-    "repology": [
-      "oci-cli"
-    ],
-    "src_url": [
-      "https://pypi.org/project/oci-cli"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "3.64.1"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "openvscode-server",
-    "pkg_family": "openvscode-server",
-    "pkg_id": "wrappe.openvscode-server.stable",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/openvscode-server/openvscode-server",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/openvscode-server/archive.wrappe.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Run VS Code on any machine anywhere and access it in the browser (GitPod)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "openvscode-server"
-        ]
-      },
-      "nixpkgs": [
-        "openvscode-server"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/openvscode-server/archive.wrappe.stable.yaml",
-    "homepage": [
-      "https://github.com/gitpod-io/openvscode-server"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/gitpod-io/openvscode-server",
-      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "Host Dependencies: A lot, please use soar log to view the ldd output"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/openvscode-server/archive/wrappe",
-    "provides": [
-      "openvscode-server"
-    ],
-    "repology": [
-      "openvscode-server"
-    ],
-    "src_url": [
-      "https://github.com/gitpod-io/openvscode-server"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "openvscode-server-v1.103.1"
   },
   {
     "_disabled": "false",
@@ -2226,68 +1882,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "wrangler",
-    "pkg_family": "wrangler",
-    "pkg_id": "sharun.wrappe.npm.wrangler",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/npm-wrangler/wrangler/wrangler",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wrangler/archive.sharun.npm.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Command-line interface for all things Cloudflare Workers",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "wrangler"
-        ]
-      },
-      "homebrew": [
-        "wrangler"
-      ],
-      "nixpkgs": [
-        "wrangler"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/wrangler/archive.sharun.npm.yaml",
-    "homepage": [
-      "https://developers.cloudflare.com/workers/cli-wrangler",
-      "https://github.com/cloudflare/workers-sdk"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [npm]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/wrangler/archive/sharun",
-    "provides": [
-      "wrangler"
-    ],
-    "repology": [
-      "wrangler"
-    ],
-    "src_url": [
-      "https://www.npmjs.com/package/wrangler"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "4.31.0"
-  },
-  {
-    "_disabled": "false",
     "pkg": "xmap",
     "pkg_family": "xmap",
     "pkg_id": "sharun.wrappe.source.xmap",
@@ -2412,66 +2006,6 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d8200ff-250818T220935"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "zen-browser",
-    "pkg_family": "zen-browser",
-    "pkg_id": "github.com.zen-browser.desktop.twilight",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desktop-twilight/zen-browser/zen-browser",
-    "app_id": "app.zen_browser.zen",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zen-browser/appimage.official.twilight.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "Performance oriented Firefox-based web browser (Twilight)",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "zen-browser",
-          "zen-browser-bin"
-        ]
-      },
-      "homebrew": [
-        "zen-browser"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/zen-browser/appimage.official.twilight.yaml",
-    "homepage": [
-      "https://zen-browser.app",
-      "https://github.com/zen-browser/desktop"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/zen-browser/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
-    "provides": [
-      "zen-browser==zen"
-    ],
-    "repology": [
-      "zen-browser"
-    ],
-    "src_url": [
-      "https://github.com/zen-browser/desktop"
-    ],
-    "tag": [
-      "arc",
-      "firefox",
-      "www-client"
-    ],
-    "version": "1.15t_2025-08-18"
+    "version": "HEAD-7b8a8ab-250820T013532"
   }
 ]

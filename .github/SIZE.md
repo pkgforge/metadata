@@ -20,8 +20,8 @@
 6.1M   │ │ │ ├── aarch64-Linux.sdb.zstd
 6.0M   │ │ │ ├── loongarch64-Linux.sdb.zstd
 5.9M   │ │ │ ├── x86_64-Linux.db.zstd
-5.8M   │ │ │ ├── x86_64-Linux.sdb.xz
 5.8M   │ │ │ ├── riscv64-Linux.db.zstd
+5.8M   │ │ │ ├── x86_64-Linux.sdb.xz
 5.8M   │ │ │ ├── aarch64-Linux.db.zstd
 5.7M   │ │ │ ├── riscv64-Linux.sdb.xz
 5.7M   │ │ │ ├── aarch64-Linux.sdb.xz
@@ -161,9 +161,9 @@
 480K   │ │ │ ├── x86_64-Linux.sdb.zstd
 444K   │ │ │ ├── x86_64-Linux.sdb.xz
 432K   │ │ │ ├── x86_64-Linux.db.zstd
-412K   │ │ │ ├── x86_64-Linux.db.xz
+408K   │ │ │ ├── x86_64-Linux.db.xz
 396K   │ │ │ ├── x86_64-Linux.json.zstd
-392K   │ │ │ ├── x86_64-Linux.json.xz
+388K   │ │ │ ├── x86_64-Linux.json.xz
 4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
 4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum
 4.0K   │ │ │ ├── x86_64-Linux.sdb.bsum
@@ -414,16 +414,16 @@
  12K   │   └── sync_hf_mirror.sh
  59M   ├── GHCR_PKGS.json
  20M   ├─┬ soarpkgs
- 19M   │ ├─┬ data
+ 20M   │ ├─┬ data
+2.7M   │ │ ├── COMP_VER_CACHE.json
 2.6M   │ │ ├── INDEX.json
-2.4M   │ │ ├── COMP_VER_CACHE.json
 2.0M   │ │ ├── BACKAGE.json
 1.5M   │ │ ├── OLD_bincache_x86_64-Linux.json
 1.5M   │ │ ├── OLD_bincache_aarch64-Linux.json
 1.4M   │ │ ├── INDEX.db
-972K   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
-968K   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
-916K   │ │ ├── COMP_VER_CACHE.md
+1.1M   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
+1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
+1.0M   │ │ ├── COMP_VER_CACHE.md
 780K   │ │ ├── pub_issues_binaries.txt
 580K   │ │ ├── OLD_bincache_riscv64-Linux.json
 440K   │ │ ├── DIFF_bincache_aarch64-Linux.json
@@ -434,14 +434,14 @@
 292K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
 244K   │ │ ├── INDEX.db.cba
 240K   │ │ ├── GH_REPO.md
+240K   │ │ ├── COMP_VER_CACHE_OLD.json
 236K   │ │ ├── INDEX.json.xz
 228K   │ │ ├── INDEX.json.zstd
-228K   │ │ ├── COMP_VER_CACHE_OLD.json
 200K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
 192K   │ │ ├── INDEX.db.zstd
 180K   │ │ ├── INDEX.db.xz
 104K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 92K   │ │ ├── COMP_VER_CACHE_OLD.md
+100K   │ │ ├── COMP_VER_CACHE_OLD.md
  80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
  68K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
  52K   │ │ ├── URLS.txt
@@ -561,7 +561,7 @@
 608K   │ ├── ALL_aarch64-Linux.txt
 520K   │ ├── PKG_NAME_ONLY_x86_64-Linux.txt
 252K   │ └── PKG_NAME_ONLY_aarch64-Linux.txt
-852K   ├── PKG_STATUS.md
+968K   ├── PKG_STATUS.md
 320K   ├─┬ web
 164K   │ ├─┬ cloudflare
  88K   │ │ ├─┬ src

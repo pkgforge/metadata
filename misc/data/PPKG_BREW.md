@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.20 ⚠️ | null |
+| PPKG   | 2025.08.21 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -531,7 +531,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.18.25 ⚠️ | https://downloads.isc.org/isc/bind9/9.18.25/bind-9.18.25.tar.xz |
-| BREW   | **9.20.11** | https://www.isc.org/bind/ |
+| BREW   | **9.20.12** | https://www.isc.org/bind/ |
 
 *Outdated*
 
@@ -1599,7 +1599,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.58.4** | https://github.com/dolthub/dolt |
+| BREW   | **1.58.5** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2386,7 +2386,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | r2.5 ⚠️ | https://github.com/geographiclib/geographiclib/archive/refs/tags/r2.5.tar.gz |
-| BREW   | **2.5** | https://geographiclib.sourceforge.io/ |
+| BREW   | **2.5.1** | https://geographiclib.sourceforge.io/ |
 
 *Outdated*
 
@@ -4020,6 +4020,15 @@
 
 *Outdated*
 
+## libdatrie
+
+**Description:** Double-Array Trie Library
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.2.13 ✅ | https://github.com/tlwg/libdatrie/releases/download/v0.2.13/libdatrie-0.2.13.tar.xz |
+| BREW   | 0.2.13 | https://github.com/tlwg/libdatrie |
+
 ## libde265
 
 **Description:** An open source implementation of the H.265 video codec
@@ -4601,7 +4610,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.20 ⚠️ | null |
+| PPKG   | 2025.08.21 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4621,7 +4630,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.20 ⚠️ | null |
+| PPKG   | 2025.08.21 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5961,7 +5970,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 25.1.4 ⚠️ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
-| BREW   | **25.2.0** | https://www.mesa3d.org/ |
+| BREW   | **25.2.1** | https://www.mesa3d.org/ |
 
 *Outdated*
 
@@ -6490,7 +6499,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.11.4** | https://ollama.com/ |
+| BREW   | **0.11.5** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6672,7 +6681,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.20 ⚠️ | null |
+| PPKG   | 2025.08.21 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6839,7 +6848,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.20 ⚠️ | null |
+| PPKG   | 2025.08.21 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7001,7 +7010,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.20 ⚠️ | null |
+| PPKG   | 2025.08.21 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7349,7 +7358,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.46.1 ⚠️ | https://github.com/hanslub42/rlwrap/archive/refs/tags/0.46.1.tar.gz |
-| BREW   | **0.46.2** | https://github.com/hanslub42/rlwrap |
+| BREW   | **0.47** | https://github.com/hanslub42/rlwrap |
 
 *Outdated*
 
@@ -8661,8 +8670,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 35.0.0 ✅ | null |
-| BREW   | 35.0.0 | https://wasmtime.dev/ |
+| PPKG   | 35.0.0 ⚠️ | null |
+| BREW   | **36.0.0** | https://wasmtime.dev/ |
+
+*Outdated*
 
 ## watchexec
 

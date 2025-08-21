@@ -25,7 +25,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20240722.1 ⚠️ | https://github.com/abseil/abseil-cpp/archive/refs/tags/20240722.1.tar.gz |
-| BREW   | **20250512.1** | https://abseil.io |
+| BREW   | **20250814.0** | https://abseil.io |
 
 *Outdated*
 
@@ -138,7 +138,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.296** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.297** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -3434,7 +3434,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.78.3** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.78.5** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -6164,7 +6164,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.2 ⚠️ | https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz |
-| BREW   | **8.5** | https://www.nano-editor.org/ |
+| BREW   | **8.6** | https://www.nano-editor.org/ |
 
 *Outdated*
 
@@ -6213,7 +6213,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7 ⚠️ | https://dev.yorhel.nl/download/ncdu-2.7.tar.gz |
-| BREW   | **2.9** | https://dev.yorhel.nl/ncdu |
+| BREW   | **2.9.1** | https://dev.yorhel.nl/ncdu |
 
 *Outdated*
 
@@ -6445,8 +6445,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 5.2.1 ✅ | https://caml.inria.fr/pub/distrib/ocaml-5.2/ocaml-5.2.1.tar.xz |
-| BREW   | 5.2.1 | https://ocaml.org/ |
+| PPKG   | 5.2.1 ⚠️ | https://caml.inria.fr/pub/distrib/ocaml-5.2/ocaml-5.2.1.tar.xz |
+| BREW   | **5.3.0** | https://ocaml.org/ |
+
+*Outdated*
 
 ## ocl-icd
 
@@ -6499,7 +6501,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.11.5** | https://ollama.com/ |
+| BREW   | **0.11.6** | https://ollama.com/ |
 
 *Outdated*
 

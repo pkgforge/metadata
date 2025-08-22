@@ -1619,7 +1619,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.1.3 ⚠️ | https://github.com/quietvoid/dovi_tool/archive/refs/tags/2.1.3.tar.gz |
-| BREW   | **2.3.0** | https://github.com/quietvoid/dovi_tool/ |
+| BREW   | **2.3.1** | https://github.com/quietvoid/dovi_tool/ |
 
 *Outdated*
 
@@ -2160,7 +2160,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.12.0 ⚠️ | https://github.com/FreeRDP/FreeRDP/releases/download/3.12.0/freerdp-3.12.0.tar.gz |
-| BREW   | **3.16.0** | https://www.freerdp.com/ |
+| BREW   | **3.17.0** | https://www.freerdp.com/ |
 
 *Outdated*
 
@@ -3949,7 +3949,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.4 ⚠️ | https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v2.4/libcerf-v2.4.tar.gz |
-| BREW   | **3.1** | https://jugit.fz-juelich.de/mlz/libcerf |
+| BREW   | **3.2** | https://jugit.fz-juelich.de/mlz/libcerf |
 
 *Outdated*
 
@@ -5621,6 +5621,15 @@
 
 *Outdated*
 
+## lld@20
+
+**Description:** The LLVM Linker
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 20.1.8 ✅ | https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/llvm-project-20.1.8.src.tar.xz |
+| BREW   | 20.1.8 | https://lld.llvm.org/ |
+
 ## llvm@14
 
 **Description:** Next-gen compiler infrastructure
@@ -5674,6 +5683,15 @@
 |--------|---------|-------------|
 | PPKG   | 19.1.7 ✅ | https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.7/llvm-project-19.1.7.src.tar.xz |
 | BREW   | 19.1.7 | https://llvm.org/ |
+
+## llvm@20
+
+**Description:** Next-gen compiler infrastructure
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 20.1.8 ✅ | https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/llvm-project-20.1.8.src.tar.xz |
+| BREW   | 20.1.8 | https://llvm.org/ |
 
 ## lm-sensors
 
@@ -5808,7 +5826,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.15.1 ⚠️ | https://github.com/lycheeverse/lychee/archive/refs/tags/v0.15.1.tar.gz |
-| BREW   | **0.19.1** | https://lychee.cli.rs/ |
+| BREW   | **0.20.0** | https://lychee.cli.rs/ |
 
 *Outdated*
 
@@ -7362,7 +7380,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.46.1 ⚠️ | https://github.com/hanslub42/rlwrap/archive/refs/tags/0.46.1.tar.gz |
-| BREW   | **0.47** | https://github.com/hanslub42/rlwrap |
+| BREW   | **0.47.1** | https://github.com/hanslub42/rlwrap |
 
 *Outdated*
 
@@ -7931,7 +7949,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.2** | https://syncthing.net/ |
+| BREW   | **2.0.3** | https://syncthing.net/ |
 
 *Outdated*
 
@@ -8075,7 +8093,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.85.1** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.86.0** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -9061,8 +9079,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.14.1 ✅ | https://ziglang.org/download/0.14.1/zig-0.14.1.tar.xz |
-| BREW   | 0.14.1 | https://ziglang.org/ |
+| PPKG   | 0.14.1 ⚠️ | https://ziglang.org/download/0.14.1/zig-0.14.1.tar.xz |
+| BREW   | **0.15.1** | https://ziglang.org/ |
+
+*Outdated*
 
 ## zigmod
 

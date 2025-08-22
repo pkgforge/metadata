@@ -321,7 +321,7 @@
  340K   │ │ ├── PPKG.json
  276K   │ │ ├── PPKG_BREW.md
  236K   │ │ ├── FLATPAK_POPULAR.json
- 224K   │ │ ├── FLATPAK_TRENDING.json
+ 216K   │ │ ├── FLATPAK_TRENDING.json
   80K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
@@ -435,17 +435,17 @@
  244K   │ │ ├── INDEX.db.cba
  240K   │ │ ├── GH_REPO.md
  236K   │ │ ├── INDEX.json.xz
+ 236K   │ │ ├── COMP_VER_CACHE_OLD.json
  228K   │ │ ├── INDEX.json.zstd
  204K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
  180K   │ │ ├── INDEX.db.xz
  132K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 104K   │ │ ├── COMP_VER_CACHE_OLD.json
+  96K   │ │ ├── COMP_VER_CACHE_OLD.md
   80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
   72K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   52K   │ │ ├── URLS.txt
   48K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
-  40K   │ │ ├── COMP_VER_CACHE_OLD.md
   32K   │ │ ├── OLD_pkgcache_riscv64-Linux.json
   24K   │ │ ├── DIFF_pkgcache_riscv64-Linux.json
   24K   │ │ ├── DIFF_bincache.json

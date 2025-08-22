@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.21 ⚠️ | null |
+| PPKG   | 2025.08.22 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1169,7 +1169,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.103.1** | https://github.com/microsoft/vscode |
+| BREW   | **1.103.2** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -2224,7 +2224,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | https://github.com/antonmedv/fx/archive/refs/tags/35.0.0.tar.gz |
-| BREW   | **39.0.1** | https://fx.wtf |
+| BREW   | **39.0.2** | https://fx.wtf |
 
 *Outdated*
 
@@ -2419,7 +2419,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.76.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.76.0.tar.gz |
-| BREW   | **2.76.2** | https://cli.github.com/ |
+| BREW   | **2.78.0** | https://cli.github.com/ |
 
 *Outdated*
 
@@ -3846,8 +3846,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.3.4 ✅ | https://download.videolan.org/videolan/libbluray/1.3.4/libbluray-1.3.4.tar.bz2 |
-| BREW   | 1.3.4 | https://www.videolan.org/developers/libbluray.html |
+| PPKG   | 1.3.4 ⚠️ | https://download.videolan.org/videolan/libbluray/1.3.4/libbluray-1.3.4.tar.bz2 |
+| BREW   | **1.4.0** | https://www.videolan.org/developers/libbluray.html |
+
+*Outdated*
 
 ## libbpf
 
@@ -3856,7 +3858,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.5 ⚠️ | https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.5.tar.gz |
-| BREW   | **1.6.1** | https://github.com/libbpf/libbpf |
+| BREW   | **1.6.2** | https://github.com/libbpf/libbpf |
 
 *Outdated*
 
@@ -4610,7 +4612,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.21 ⚠️ | null |
+| PPKG   | 2025.08.22 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4630,7 +4632,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.21 ⚠️ | null |
+| PPKG   | 2025.08.22 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6406,7 +6408,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.2.8 ⚠️ | https://github.com/projectdiscovery/nuclei/archive/refs/tags/v3.2.8.tar.gz |
-| BREW   | **3.4.7** | https://docs.projectdiscovery.io/tools/nuclei/overview |
+| BREW   | **3.4.8** | https://docs.projectdiscovery.io/tools/nuclei/overview |
 
 *Outdated*
 
@@ -6683,7 +6685,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.21 ⚠️ | null |
+| PPKG   | 2025.08.22 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6850,7 +6852,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.21 ⚠️ | null |
+| PPKG   | 2025.08.22 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7012,7 +7014,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.21 ⚠️ | null |
+| PPKG   | 2025.08.22 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7455,7 +7457,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.9** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.10** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -7496,8 +7498,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.22.3 ✅ | https://download.samba.org/pub/samba/stable/samba-4.22.3.tar.gz |
-| BREW   | 4.22.3 | https://www.samba.org/ |
+| PPKG   | 4.22.3 ⚠️ | https://download.samba.org/pub/samba/stable/samba-4.22.3.tar.gz |
+| BREW   | **4.22.4** | https://www.samba.org/ |
+
+*Outdated*
 
 ## samurai
 
@@ -8071,7 +8075,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.85.0** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.85.1** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8387,7 +8391,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.12** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.13** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -8673,7 +8677,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | null |
-| BREW   | **36.0.0** | https://wasmtime.dev/ |
+| BREW   | **36.0.1** | https://wasmtime.dev/ |
 
 *Outdated*
 

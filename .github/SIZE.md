@@ -434,8 +434,8 @@
  292K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
  244K   │ │ ├── INDEX.db.cba
  240K   │ │ ├── GH_REPO.md
+ 240K   │ │ ├── COMP_VER_CACHE_OLD.json
  236K   │ │ ├── INDEX.json.xz
- 236K   │ │ ├── COMP_VER_CACHE_OLD.json
  228K   │ │ ├── INDEX.json.zstd
  204K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  192K   │ │ ├── INDEX.db.zstd

@@ -427,7 +427,7 @@
  780K   │ │ ├── pub_issues_binaries.txt
  580K   │ │ ├── OLD_bincache_riscv64-Linux.json
  460K   │ │ ├── DIFF_bincache_aarch64-Linux.json
- 436K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 440K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  384K   │ │ ├── INDEX.json.cba
  316K   │ │ ├── DIFF_bincache_riscv64-Linux.json
  304K   │ │ ├── pub_issues_packages.txt

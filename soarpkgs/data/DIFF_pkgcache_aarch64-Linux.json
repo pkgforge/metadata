@@ -280,7 +280,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.42.15"
+    "version": "1.42.16"
   },
   {
     "_disabled": "false",
@@ -1311,7 +1311,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250822T004738"
+    "version": "250823T004619"
   },
   {
     "_disabled": "false",
@@ -1373,7 +1373,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250822T004738"
+    "version": "250823T004619"
   },
   {
     "_disabled": "true",
@@ -1584,75 +1584,6 @@
       "Utility"
     ],
     "version": "4.9.3"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "librewolf",
-    "pkg_family": "librewolf",
-    "pkg_id": "gitlab.com.librewolf-community.browser.appimage.stable",
-    "pkg_type": "appimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/librewolf/librewolf",
-    "app_id": "io.gitlab.librewolf-community",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/librewolf/appimage.official.stable.yaml",
-    "category": [
-      "WebBrowser"
-    ],
-    "description": "A fork of Firefox, focused on privacy, security and freedom",
-    "distro_pkg": {
-      "alpine": [
-        "librewolf"
-      ],
-      "archlinux": {
-        "aur": [
-          "librewolf",
-          "librewolf-bin",
-          "librewolf-hg"
-        ]
-      },
-      "gnuguix": [
-        "librewolf"
-      ],
-      "homebrew": [
-        "librewolf"
-      ],
-      "nixpkgs": [
-        "librewolf"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/librewolf/appimage.official.stable.yaml",
-    "homepage": [
-      "https://librewolf.net",
-      "https://librewolf-community.gitlab.io",
-      "https://gitlab.com/librewolf-community/browser/appimage"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/librewolf/assets/default.png",
-    "license": [
-      "MPL-2.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://gitlab.com/librewolf-community/browser/appimage"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/librewolf/appimage/official",
-    "provides": [
-      "librewolf"
-    ],
-    "repology": [
-      "librewolf"
-    ],
-    "src_url": [
-      "https://gitlab.com/librewolf-community/browser/appimage"
-    ],
-    "tag": [
-      "Browser"
-    ],
-    "version": "v142.0-1"
   },
   {
     "_disabled": "false",
@@ -1932,87 +1863,6 @@
       "Utility"
     ],
     "version": "1.2.0"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "sudo-rs",
-    "pkg_family": "sudo-rs",
-    "pkg_id": "sharun.wrappe.sudo-rs.source",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/rs-source/sudo-rs/sudo-rs",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/sudo-rs/archive.sharun.source.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": {
-      "_default": "Memory safe implementation of sudo and su",
-      "cvtsudoers": "Convert between sudoers file formats [sudo-rs]",
-      "sudo": "Execute a command as another user [sudo-rs]",
-      "sudo.conf": "Configuration for sudo front-end [sudo-rs]",
-      "sudo_logsrvd": "sudo event and I/O log server [sudo-rs]",
-      "sudo_logsrvd.conf": "Configuration for sudo_logsrvd [sudo-rs]",
-      "sudo_sendlog": "Send sudo I/O log to log server [sudo-rs]",
-      "sudoedit": "An extension of the sudo -e command to edit a file [sudo-rs]",
-      "sudoers": "Default sudo security policy plugin [sudo-rs]",
-      "sudoers.dist": "Default configuration file for sudoers [sudo-rs]",
-      "sudoreplay": "Replay sudo session logs [sudo-rs]",
-      "su": "Change user id or become root [sudo-rs]",
-      "visudo": "Edit the sudoers file [sudo-rs]"
-    },
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "sudo-rs",
-          "sudo-rs-git"
-        ]
-      },
-      "nixpkgs": [
-        "sudo-rs"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/sudo-rs/archive.sharun.source.yaml",
-    "homepage": [
-      "https://github.com/trifectatechfoundation/sudo-rs"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/trifectatechfoundation/sudo-rs",
-      "Built Using Sharun. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
-      "sudo must be owned by uid 0 and have the setuid bit set",
-      "chown -v 'root:root' sudo",
-      "chmod -v 'a=rx,u+ws' sudo",
-      "Requires '/etc/sudoers' file & '/etc/sudoers.d' dir",
-      "Also requires PAM to be setup: https://github.com/trifectatechfoundation/sudo-rs#differences-from-original-sudo"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/sudo-rs/archive/sharun",
-    "provides": [
-      "su",
-      "sudo",
-      "visudo"
-    ],
-    "repology": [
-      "sudo-rs"
-    ],
-    "src_url": [
-      "https://github.com/trifectatechfoundation/sudo-rs"
-    ],
-    "tag": [
-      "sudo"
-    ],
-    "version": "HEAD-ff69042-250821T154222"
   },
   {
     "_disabled": "false",
@@ -2321,68 +2171,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "wrangler",
-    "pkg_family": "wrangler",
-    "pkg_id": "sharun.wrappe.npm.wrangler",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/npm-wrangler/wrangler/wrangler",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wrangler/archive.sharun.npm.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Command-line interface for all things Cloudflare Workers",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "wrangler"
-        ]
-      },
-      "homebrew": [
-        "wrangler"
-      ],
-      "nixpkgs": [
-        "wrangler"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/wrangler/archive.sharun.npm.yaml",
-    "homepage": [
-      "https://developers.cloudflare.com/workers/cli-wrangler",
-      "https://github.com/cloudflare/workers-sdk"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [npm]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/wrangler/archive/sharun",
-    "provides": [
-      "wrangler"
-    ],
-    "repology": [
-      "wrangler"
-    ],
-    "src_url": [
-      "https://www.npmjs.com/package/wrangler"
-    ],
-    "tag": [
-      "Utility"
-    ],
-    "version": "4.32.0"
-  },
-  {
-    "_disabled": "false",
     "pkg": "xashds",
     "pkg_family": "xashds",
     "pkg_id": "wrappe.xashds",
@@ -2555,7 +2343,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.8.20"
+    "version": "2025.8.22"
   },
   {
     "_disabled": "false",
@@ -2628,7 +2416,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-526410b-250821T221345"
+    "version": "HEAD-f1ba9f4-250822T235902"
   },
   {
     "_disabled": "false",
@@ -2688,6 +2476,6 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.15t_2025-08-21"
+    "version": "1.15t_2025-08-22"
   }
 ]

@@ -43,7 +43,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-e7ccf19-250823T191750"
+    "version": "HEAD-8ee209b-250824T003452"
   },
   {
     "_disabled": "false",
@@ -3230,7 +3230,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-06b14c0-250823T115547"
+    "version": "HEAD-bba4d99-250823T190540"
   },
   {
     "_disabled": "false",
@@ -3547,7 +3547,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-06b14c0-250823T115547"
+    "version": "HEAD-bba4d99-250823T190540"
   },
   {
     "_disabled": "true",
@@ -4260,7 +4260,7 @@
       "bugbounty",
       "xss"
     ],
-    "version": "HEAD-95cab73-250822T001506"
+    "version": "HEAD-be3f4f8-250824T002350"
   },
   {
     "_disabled": "false",
@@ -5722,7 +5722,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-8589bf2-250823T153142"
+    "version": "HEAD-f2f9b10-250824T000010"
   },
   {
     "_disabled": "false",
@@ -6218,7 +6218,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7acb75b-250823T121240"
+    "version": "HEAD-c658db0-250823T174804"
   },
   {
     "_disabled": "false",
@@ -6672,7 +6672,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-24e5550-250823T120422"
+    "version": "HEAD-b02ddc8-250823T180304"
   },
   {
     "_disabled": "false",
@@ -6731,7 +6731,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-4dcca7a-250821T091047"
+    "version": "HEAD-03f7987-250823T094757"
   },
   {
     "_disabled": "false",
@@ -8139,7 +8139,7 @@
       "git",
       "vcs"
     ],
-    "version": "HEAD-1b33da4-250823T034611"
+    "version": "HEAD-1b150d1-250823T134825"
   },
   {
     "_disabled": "false",
@@ -8256,7 +8256,7 @@
     "tag": [
       "kubernetes"
     ],
-    "version": "HEAD-2b280df-250821T072655"
+    "version": "HEAD-e521287-250823T074609"
   },
   {
     "_disabled": "false",
@@ -9130,6 +9130,75 @@
       "minifier"
     ],
     "version": "HEAD-b8f685a-250820T224150"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "minisign",
+    "pkg_family": "minisign",
+    "pkg_id": "github.com.jedisct1.minisign",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/jedisct1-minisign/minisign/minisign",
+    "bincache": "ghcr.io/pkgforge/bincache/minisign/official/minisign",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/minisign/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "A dead simple tool to sign files and verify signatures",
+    "distro_pkg": {
+      "alpine": [
+        "minisign"
+      ],
+      "archlinux": {
+        "aur": [
+          "minisign-git"
+        ],
+        "extra": [
+          "minisign"
+        ]
+      },
+      "debian": [
+        "minisign"
+      ],
+      "nixpkgs": [
+        "minisign"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/minisign/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/jedisct1/minisign",
+      "https://jedisct1.github.io/minisign"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "custom:ISC",
+      "ISC",
+      "spdx:ISC"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/jedisct1/minisign"
+    ],
+    "repology": [
+      "minisign"
+    ],
+    "src_url": [
+      "https://github.com/jedisct1/minisign"
+    ],
+    "tag": [
+      "app-crypt",
+      "crypto",
+      "extra/security",
+      "Productivity/Networking/Security",
+      "Security"
+    ],
+    "version": "HEAD-20ccc77-250823T173506"
   },
   {
     "_disabled": "false",
@@ -10173,7 +10242,7 @@
       "recon",
       "security"
     ],
-    "version": "HEAD-00f4595-250822T202744"
+    "version": "HEAD-309018f-250823T200123"
   },
   {
     "_disabled": "false",
@@ -11795,6 +11864,65 @@
       "linter"
     ],
     "version": "HEAD-cf20f3f-250822T173703"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "revive",
+    "pkg_family": "revive",
+    "pkg_id": "github.com.mgechev.revive",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/mgechev-revive/revive/revive",
+    "bincache": "ghcr.io/pkgforge/bincache/revive/official/revive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/revive/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Faster, stricter, configurable, extensible, and beautiful drop-in replacement for golint",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "revive"
+        ]
+      },
+      "homebrew": [
+        "revive"
+      ],
+      "nixpkgs": [
+        "revive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/revive/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/mgechev/revive"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/mgechev/revive"
+    ],
+    "provides": [
+      "revive"
+    ],
+    "repology": [
+      "revive"
+    ],
+    "src_url": [
+      "https://github.com/mgechev/revive"
+    ],
+    "tag": [
+      "linter"
+    ],
+    "version": "HEAD-cf49015-250823T174110"
   },
   {
     "_disabled": "false",
@@ -13999,7 +14127,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-6c8fef9-250823T020722"
+    "version": "HEAD-16bd60f-250823T080736"
   },
   {
     "_disabled": "false",
@@ -14290,7 +14418,7 @@
     "tag": [
       "compiler"
     ],
-    "version": "HEAD-acb2a90-250822T191444"
+    "version": "HEAD-6ca6328-250823T144834"
   },
   {
     "_disabled": "false",
@@ -14363,7 +14491,7 @@
     "tag": [
       "compiler"
     ],
-    "version": "HEAD-acb2a90-250822T191444"
+    "version": "HEAD-6ca6328-250823T144834"
   },
   {
     "_disabled": "false",
@@ -15908,7 +16036,7 @@
       "explorer",
       "manager"
     ],
-    "version": "HEAD-98a5828-250823T121916"
+    "version": "HEAD-c27ef58-250823T230611"
   },
   {
     "_disabled": "false",

@@ -309,7 +309,7 @@
   25M   │ │ ├── DEBIAN.json
   17M   │ │ ├── CONDA_RAW.json
   11M   │ │ ├── ALPINE_PKG.json
-  11M   │ │ ├── NIXPKGS.json
+  10M   │ │ ├── NIXPKGS.json
  9.1M   │ │ ├── PKGSRC.json
  5.2M   │ │ ├── ALPINE_GIT.json
  2.8M   │ │ ├── BREW_FORMULA.json
@@ -432,7 +432,7 @@
  316K   │ │ ├── DIFF_bincache_riscv64-Linux.json
  304K   │ │ ├── pub_issues_packages.txt
  300K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
- 252K   │ │ ├── COMP_VER_CACHE_OLD.json
+ 260K   │ │ ├── COMP_VER_CACHE_OLD.json
  244K   │ │ ├── INDEX.db.cba
  240K   │ │ ├── GH_REPO.md
  236K   │ │ ├── INDEX.json.xz
@@ -440,8 +440,8 @@
  208K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
  180K   │ │ ├── INDEX.db.xz
+ 108K   │ │ ├── COMP_VER_CACHE_OLD.md
  104K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 104K   │ │ ├── COMP_VER_CACHE_OLD.md
   80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
   76K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   52K   │ │ ├── URLS.txt

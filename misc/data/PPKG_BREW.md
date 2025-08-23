@@ -138,7 +138,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.297** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.298** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -3047,7 +3047,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.2.6 ⚠️ | https://hashcat.net/files/hashcat-6.2.6.tar.gz |
-| BREW   | **7.1.1** | https://hashcat.net/hashcat/ |
+| BREW   | **7.1.2** | https://hashcat.net/hashcat/ |
 
 *Outdated*
 
@@ -3578,7 +3578,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.21.3 ⚠️ | https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz |
-| BREW   | **1.22** | https://web.mit.edu/kerberos/ |
+| BREW   | **1.22.1** | https://web.mit.edu/kerberos/ |
 
 *Outdated*
 
@@ -4633,7 +4633,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.08.23 ⚠️ | null |
-| BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
+| BREW   | **1.15.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
 
@@ -5244,7 +5244,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.13.8 ⚠️ | https://github.com/rakshasa/libtorrent/archive/v0.13.8.tar.gz |
-| BREW   | **0.15.5** | https://github.com/rakshasa/libtorrent |
+| BREW   | **0.15.6** | https://github.com/rakshasa/libtorrent |
 
 *Outdated*
 
@@ -6293,7 +6293,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 10.86.40 ⚠️ | https://downloads.sourceforge.net/project/netpbm/super_stable/10.86.40/netpbm-10.86.40.tgz |
-| BREW   | **11.02.17** | https://netpbm.sourceforge.net/ |
+| BREW   | **11.02.18** | https://netpbm.sourceforge.net/ |
 
 *Outdated*
 
@@ -7073,7 +7073,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.12.0 ⚠️ | https://github.com/pybind/pybind11/archive/refs/tags/v2.12.0.tar.gz |
-| BREW   | **3.0.0** | https://github.com/pybind/pybind11 |
+| BREW   | **3.0.1** | https://github.com/pybind/pybind11 |
 
 *Outdated*
 
@@ -7453,7 +7453,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.8 ⚠️ | https://github.com/rakshasa/rtorrent/releases/download/v0.9.8/rtorrent-0.9.8.tar.gz |
-| BREW   | **0.15.5** | https://github.com/rakshasa/rtorrent |
+| BREW   | **0.15.6** | https://github.com/rakshasa/rtorrent |
 
 *Outdated*
 
@@ -7927,7 +7927,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.2 ⚠️ | https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.2/SVT-AV1-v3.0.2.tar.bz2 |
-| BREW   | **3.1.0** | https://gitlab.com/AOMediaCodec/SVT-AV1 |
+| BREW   | **3.1.1** | https://gitlab.com/AOMediaCodec/SVT-AV1 |
 
 *Outdated*
 

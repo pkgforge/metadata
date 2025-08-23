@@ -356,6 +356,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "brave",
+    "pkg_family": "brave",
+    "pkg_id": "nixpkgs.brave",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-brave/brave/brave",
+    "app_id": "com.brave.Browser",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Privacy-oriented browser for Desktop and Laptop computers",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "brave-bin"
+        ]
+      },
+      "nixpkgs": [
+        "brave"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/brave/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://brave.com",
+      "https://github.com/brave/brave-browser",
+      "https://github.com/srevinsaju/Brave-AppImage"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/brave/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/brave/nixappimage/nixpkgs",
+    "provides": [
+      "brave"
+    ],
+    "repology": [
+      "brave"
+    ],
+    "src_url": [
+      "https://github.com/brave/brave-browser"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "1.81.136"
+  },
+  {
+    "_disabled": "false",
     "pkg": "chromium",
     "pkg_family": "chromium",
     "pkg_id": "nixpkgs.chromium",
@@ -419,6 +483,74 @@
     ],
     "src_url": [
       "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "139.0.7258.138"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
     ],
     "tag": [
       "browser"
@@ -1642,7 +1774,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8af4bfa-250817T220726"
+    "version": "HEAD-a1ccb90-250823T133908"
   },
   {
     "_disabled": "false",

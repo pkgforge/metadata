@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.22 ⚠️ | null |
+| PPKG   | 2025.08.23 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -779,7 +779,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.6 ⚠️ | https://github.com/caddyserver/caddy/archive/refs/tags/v2.7.6.tar.gz |
-| BREW   | **2.10.0** | https://caddyserver.com/ |
+| BREW   | **2.10.2** | https://caddyserver.com/ |
 
 *Outdated*
 
@@ -841,7 +841,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.23.3 ⚠️ | https://github.com/cargo-generate/cargo-generate/archive/refs/tags/v0.23.3.tar.gz |
-| BREW   | **0.23.4** | https://github.com/cargo-generate/cargo-generate |
+| BREW   | **0.23.5** | https://github.com/cargo-generate/cargo-generate |
 
 *Outdated*
 
@@ -2386,7 +2386,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | r2.5 ⚠️ | https://github.com/geographiclib/geographiclib/archive/refs/tags/r2.5.tar.gz |
-| BREW   | **2.5.1** | https://geographiclib.sourceforge.io/ |
+| BREW   | **2.5.2** | https://geographiclib.sourceforge.io/ |
 
 *Outdated*
 
@@ -3145,7 +3145,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.38.0 ⚠️ | https://github.com/sol/hpack/archive/refs/tags/0.38.0.tar.gz |
-| BREW   | **0.38.1** | https://github.com/sol/hpack |
+| BREW   | **0.38.2** | https://github.com/sol/hpack |
 
 *Outdated*
 
@@ -4612,7 +4612,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.22 ⚠️ | null |
+| PPKG   | 2025.08.23 ⚠️ | null |
 | BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
@@ -4632,7 +4632,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.22 ⚠️ | null |
+| PPKG   | 2025.08.23 ⚠️ | null |
 | BREW   | **1.14.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5804,7 +5804,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.687** | https://luau.org |
+| BREW   | **0.688** | https://luau.org |
 
 *Outdated*
 
@@ -6406,7 +6406,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.107 ⚠️ | https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz |
-| BREW   | **3.115** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
+| BREW   | **3.115.1** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
 
 *Outdated*
 
@@ -6426,7 +6426,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.2.8 ⚠️ | https://github.com/projectdiscovery/nuclei/archive/refs/tags/v3.2.8.tar.gz |
-| BREW   | **3.4.8** | https://docs.projectdiscovery.io/tools/nuclei/overview |
+| BREW   | **3.4.9** | https://docs.projectdiscovery.io/tools/nuclei/overview |
 
 *Outdated*
 
@@ -6703,7 +6703,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.22 ⚠️ | null |
+| PPKG   | 2025.08.23 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6870,7 +6870,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.22 ⚠️ | null |
+| PPKG   | 2025.08.23 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7032,7 +7032,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.22 ⚠️ | null |
+| PPKG   | 2025.08.23 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7281,7 +7281,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.69.3 ⚠️ | https://github.com/rclone/rclone/archive/refs/tags/v1.69.3.tar.gz |
-| BREW   | **1.70.3** | https://rclone.org/ |
+| BREW   | **1.71.0** | https://rclone.org/ |
 
 *Outdated*
 

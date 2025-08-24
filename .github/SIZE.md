@@ -20,8 +20,8 @@
  6.2M   │ │ │ ├── aarch64-Linux.sdb.zstd
  6.1M   │ │ │ ├── loongarch64-Linux.sdb.zstd
  5.9M   │ │ │ ├── x86_64-Linux.db.zstd
- 5.9M   │ │ │ ├── riscv64-Linux.db.zstd
  5.9M   │ │ │ ├── x86_64-Linux.sdb.xz
+ 5.9M   │ │ │ ├── riscv64-Linux.db.zstd
  5.8M   │ │ │ ├── aarch64-Linux.db.zstd
  5.8M   │ │ │ ├── riscv64-Linux.sdb.xz
  5.8M   │ │ │ ├── aarch64-Linux.sdb.xz
@@ -73,8 +73,8 @@
  4.0K   │ │ │ └── aarch64-Linux.db.bsum
   12K   │ │ └─┬ scripts
  8.0K   │ │   └── gen_meta.sh
- 161M   │ ├─┬ pkgforge-cargo
- 161M   │ │ ├─┬ data
+ 162M   │ ├─┬ pkgforge-cargo
+ 162M   │ │ ├─┬ data
   14M   │ │ │ ├── x86_64-Linux.json
   14M   │ │ │ ├── aarch64-Linux.json
   13M   │ │ │ ├── riscv64-Linux.json
@@ -82,7 +82,7 @@
   11M   │ │ │ ├── aarch64-Linux.db
   11M   │ │ │ ├── loongarch64-Linux.json
   11M   │ │ │ ├── riscv64-Linux.db
- 9.5M   │ │ │ ├── loongarch64-Linux.db
+ 9.6M   │ │ │ ├── loongarch64-Linux.db
  9.1M   │ │ │ ├── x86_64-Linux.sdb
  9.1M   │ │ │ ├── aarch64-Linux.sdb
  8.8M   │ │ │ ├── riscv64-Linux.sdb
@@ -97,7 +97,7 @@
  1.3M   │ │ │ ├── x86_64-Linux.db.xz
  1.3M   │ │ │ ├── riscv64-Linux.db.zstd
  1.3M   │ │ │ ├── aarch64-Linux.db.xz
- 1.2M   │ │ │ ├── riscv64-Linux.sdb.xz
+ 1.3M   │ │ │ ├── riscv64-Linux.sdb.xz
  1.2M   │ │ │ ├── riscv64-Linux.db.xz
  1.2M   │ │ │ ├── x86_64-Linux.json.zstd
  1.2M   │ │ │ ├── aarch64-Linux.json.zstd
@@ -438,14 +438,14 @@
  228K   │ │ ├── INDEX.json.zstd
  208K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
+ 188K   │ │ ├── COMP_VER_CACHE_OLD.json
  180K   │ │ ├── INDEX.db.xz
  116K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 104K   │ │ ├── COMP_VER_CACHE_OLD.json
   80K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
+  76K   │ │ ├── COMP_VER_CACHE_OLD.md
   52K   │ │ ├── URLS.txt
   48K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
-  40K   │ │ ├── COMP_VER_CACHE_OLD.md
   32K   │ │ ├── OLD_pkgcache_riscv64-Linux.json
   24K   │ │ ├── DIFF_pkgcache_riscv64-Linux.json
   24K   │ │ ├── DIFF_bincache.json

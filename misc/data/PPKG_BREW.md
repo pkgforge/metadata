@@ -1930,10 +1930,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.46.0 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.46.0.tar.gz |
-| BREW   | **2.50.2** | https://github.com/fastfetch-cli/fastfetch |
-
-*Outdated*
+| PPKG   | 2.50.2 ✅ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.50.2.tar.gz |
+| BREW   | 2.50.2 | https://github.com/fastfetch-cli/fastfetch |
 
 ## fb303
 
@@ -4612,10 +4610,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.24 ⚠️ | null |
-| BREW   | **1.11.0** | https://nghttp2.org/nghttp3/ |
-
-*Outdated*
+| PPKG   | 1.11.0 ✅ | https://github.com/ngtcp2/nghttp3/releases/download/v1.11.0/nghttp3-1.11.0.tar.xz |
+| BREW   | 1.11.0 | https://nghttp2.org/nghttp3/ |
 
 ## libngspice
 
@@ -5503,10 +5499,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.13.5 ⚠️ | https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.5.tar.xz |
-| BREW   | **2.13.8** | http://xmlsoft.org/ |
-
-*Outdated*
+| PPKG   | 2.13.8 ✅ | https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.8.tar.xz |
+| BREW   | 2.13.8 | http://xmlsoft.org/ |
 
 ## libxmlb
 
@@ -6292,7 +6286,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 10.86.40 ⚠️ | https://downloads.sourceforge.net/project/netpbm/super_stable/10.86.40/netpbm-10.86.40.tgz |
+| PPKG   | 10.86.47 ⚠️ | https://downloads.sourceforge.net/project/netpbm/super_stable/10.86.47/netpbm-10.86.47.tgz |
 | BREW   | **11.02.18** | https://netpbm.sourceforge.net/ |
 
 *Outdated*
@@ -7428,7 +7422,7 @@
 
 ## rsync
 
-**Description:** Utility that provides fast incremental file transfer
+**Description:** A command-line tool for synchronizing files
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
@@ -9195,7 +9189,7 @@
 
 ## zsync
 
-**Description:** File transfer program
+**Description:** A command-line tool similar to rsync but optimised for transfering single large files across the network
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|

@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.24 ⚠️ | null |
+| PPKG   | 2025.08.25 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -894,7 +894,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.99 ⚠️ | https://github.com/nextest-rs/nextest/archive/refs/tags/cargo-nextest-0.9.99.tar.gz |
-| BREW   | **0.9.102** | https://nexte.st |
+| BREW   | **0.9.103** | https://nexte.st |
 
 *Outdated*
 
@@ -3285,7 +3285,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.1.1.47 ⚠️ | https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz |
-| BREW   | **7.1.2-1** | https://imagemagick.org/index.php |
+| BREW   | **7.1.2-2** | https://imagemagick.org/index.php |
 
 *Outdated*
 
@@ -3654,7 +3654,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.0 ⚠️ | https://github.com/linux-test-project/lcov/releases/download/v2.0/lcov-2.0.tar.gz |
-| BREW   | **2.3.1** | https://github.com/linux-test-project/lcov |
+| BREW   | **2.3.2** | https://github.com/linux-test-project/lcov |
 
 *Outdated*
 
@@ -4628,7 +4628,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.24 ⚠️ | null |
+| PPKG   | 2025.08.25 ⚠️ | null |
 | BREW   | **1.15.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6675,10 +6675,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.11.2 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.11.2.tar.gz |
-| BREW   | **1.12.0** | https://oxc.rs/ |
-
-*Outdated*
+| PPKG   | 1.12.0 ✅ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
+| BREW   | 1.12.0 | https://oxc.rs/ |
 
 ## p7zip
 
@@ -6697,7 +6695,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.24 ⚠️ | null |
+| PPKG   | 2025.08.25 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6864,7 +6862,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.24 ⚠️ | null |
+| PPKG   | 2025.08.25 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7026,7 +7024,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.24 ⚠️ | null |
+| PPKG   | 2025.08.25 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -9126,8 +9124,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.14.0 ✅ | https://github.com/zigtools/zls/archive/refs/tags/0.14.0.tar.gz |
-| BREW   | 0.14.0 | https://zigtools.org/zls/ |
+| PPKG   | 0.14.0 ⚠️ | https://github.com/zigtools/zls/archive/refs/tags/0.14.0.tar.gz |
+| BREW   | **0.15.0** | https://zigtools.org/zls/ |
+
+*Outdated*
 
 ## zola
 

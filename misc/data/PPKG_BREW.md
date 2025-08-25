@@ -3709,7 +3709,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | r26 ⚠️ | https://github.com/gokcehan/lf/archive/r26.tar.gz |
-| BREW   | **36** | https://godoc.org/github.com/gokcehan/lf |
+| BREW   | **37** | https://godoc.org/github.com/gokcehan/lf |
 
 *Outdated*
 
@@ -5820,7 +5820,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.15.1 ⚠️ | https://github.com/lycheeverse/lychee/archive/refs/tags/v0.15.1.tar.gz |
-| BREW   | **0.20.0** | https://lychee.cli.rs/ |
+| BREW   | **0.20.1** | https://lychee.cli.rs/ |
 
 *Outdated*
 
@@ -7478,7 +7478,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-08-11** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-08-25** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 
@@ -7919,7 +7919,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.2 ⚠️ | https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.2/SVT-AV1-v3.0.2.tar.bz2 |
-| BREW   | **3.1.1** | https://gitlab.com/AOMediaCodec/SVT-AV1 |
+| BREW   | **3.1.2** | https://gitlab.com/AOMediaCodec/SVT-AV1 |
 
 *Outdated*
 

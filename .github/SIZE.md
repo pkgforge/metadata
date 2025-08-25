@@ -10,7 +10,7 @@
   70M   │ │ │ ├── x86_64-Linux.db
   70M   │ │ │ ├── riscv64-Linux.db
   70M   │ │ │ ├── loongarch64-Linux.db
-  70M   │ │ │ ├── aarch64-Linux.db
+  69M   │ │ │ ├── aarch64-Linux.db
   62M   │ │ │ ├── x86_64-Linux.sdb
   61M   │ │ │ ├── riscv64-Linux.sdb
   61M   │ │ │ ├── aarch64-Linux.sdb
@@ -162,7 +162,7 @@
  444K   │ │ │ ├── x86_64-Linux.sdb.xz
  432K   │ │ │ ├── x86_64-Linux.db.zstd
  412K   │ │ │ ├── x86_64-Linux.db.xz
- 396K   │ │ │ ├── x86_64-Linux.json.zstd
+ 400K   │ │ │ ├── x86_64-Linux.json.zstd
  392K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum

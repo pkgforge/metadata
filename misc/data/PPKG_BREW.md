@@ -1034,7 +1034,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.54.0 ⚠️ | https://github.com/twpayne/chezmoi/archive/refs/tags/v2.54.0.tar.gz |
-| BREW   | **2.64.0** | https://chezmoi.io/ |
+| BREW   | **2.65.0** | https://chezmoi.io/ |
 
 *Outdated*
 
@@ -1756,7 +1756,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookexperimental/edencommon/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.18.00** | https://github.com/facebookexperimental/edencommon |
+| BREW   | **2025.08.25.00** | https://github.com/facebookexperimental/edencommon |
 
 *Outdated*
 
@@ -1940,7 +1940,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fb303/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.18.00** | https://github.com/facebook/fb303 |
+| BREW   | **2025.08.25.00** | https://github.com/facebook/fb303 |
 
 *Outdated*
 
@@ -1951,7 +1951,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fbthrift/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.18.00** | https://github.com/facebook/fbthrift |
+| BREW   | **2025.08.25.00** | https://github.com/facebook/fbthrift |
 
 *Outdated*
 
@@ -1971,7 +1971,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.0.0 ⚠️ | https://github.com/sharkdp/fd/archive/refs/tags/v9.0.0.tar.gz |
-| BREW   | **10.2.0** | https://github.com/sharkdp/fd |
+| BREW   | **10.3.0** | https://github.com/sharkdp/fd |
 
 *Outdated*
 
@@ -2060,7 +2060,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/fizz/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.18.00** | https://github.com/facebookincubator/fizz |
+| BREW   | **2025.08.25.00** | https://github.com/facebookincubator/fizz |
 
 *Outdated*
 
@@ -2266,7 +2266,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.17.0 ⚠️ | https://github.com/koki-develop/gat/archive/refs/tags/v0.17.0.tar.gz |
-| BREW   | **0.25.1** | https://github.com/koki-develop/gat |
+| BREW   | **0.25.2** | https://github.com/koki-develop/gat |
 
 *Outdated*
 
@@ -2322,7 +2322,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.0 ⚠️ | https://github.com/herrhotzenplotz/gcli/archive/refs/tags/v2.7.0.tar.gz |
-| BREW   | **2.8.0** | https://herrhotzenplotz.de/gcli/ |
+| BREW   | **2.9.0** | https://herrhotzenplotz.de/gcli/ |
 
 *Outdated*
 
@@ -3432,7 +3432,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.78.5** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.78.6** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -6158,7 +6158,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/mvfst/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.18.00** | https://github.com/facebook/mvfst |
+| BREW   | **2025.08.25.00** | https://github.com/facebook/mvfst |
 
 *Outdated*
 
@@ -6675,8 +6675,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.12.0 ✅ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | 1.12.0 | https://oxc.rs/ |
+| PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
+| BREW   | **1.13.0** | https://oxc.rs/ |
+
+*Outdated*
 
 ## p7zip
 
@@ -7864,7 +7866,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.2.25 ⚠️ | https://github.com/abhimanyu003/sttr/archive/refs/tags/v0.2.25.tar.gz |
-| BREW   | **0.2.26** | https://github.com/abhimanyu003/sttr |
+| BREW   | **0.2.27** | https://github.com/abhimanyu003/sttr |
 
 *Outdated*
 
@@ -8647,7 +8649,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/wangle/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.18.00** | https://github.com/facebook/wangle |
+| BREW   | **2025.08.25.00** | https://github.com/facebook/wangle |
 
 *Outdated*
 
@@ -8709,7 +8711,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/watchman/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.18.00** | https://github.com/facebook/watchman |
+| BREW   | **2025.08.25.00** | https://github.com/facebook/watchman |
 
 *Outdated*
 

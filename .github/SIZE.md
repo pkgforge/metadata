@@ -301,10 +301,10 @@
  4.0K   │   │ └── TOTAL.json
   36K   │   └─┬ scripts
   32K   │     └── gen_meta.sh
- 231M   ├─┬ misc
+ 232M   ├─┬ misc
  231M   │ ├─┬ data
   73M   │ │ ├── ARCHLINUX.json
-  38M   │ │ ├── FLATPAK_APPSTREAM.xml
+  39M   │ │ ├── FLATPAK_APPSTREAM.xml
   32M   │ │ ├── CONDA.json
   25M   │ │ ├── DEBIAN.json
   17M   │ │ ├── CONDA_RAW.json
@@ -321,7 +321,7 @@
  340K   │ │ ├── PPKG.json
  276K   │ │ ├── PPKG_BREW.md
  236K   │ │ ├── FLATPAK_POPULAR.json
- 224K   │ │ ├── FLATPAK_TRENDING.json
+ 220K   │ │ ├── FLATPAK_TRENDING.json
   80K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
@@ -430,7 +430,6 @@
  384K   │ │ ├── INDEX.json.cba
  356K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  336K   │ │ ├── DIFF_bincache_riscv64-Linux.json
- 328K   │ │ ├── COMP_VER_CACHE_OLD.json
  304K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
  292K   │ │ ├── pub_issues_packages.txt
  244K   │ │ ├── INDEX.db.cba
@@ -440,12 +439,13 @@
  212K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
  180K   │ │ ├── INDEX.db.xz
+ 136K   │ │ ├── COMP_VER_CACHE_OLD.json
  124K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
- 124K   │ │ ├── COMP_VER_CACHE_OLD.md
   76K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
   72K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   52K   │ │ ├── URLS.txt
-  44K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
+  52K   │ │ ├── COMP_VER_CACHE_OLD.md
+  48K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
   32K   │ │ ├── OLD_pkgcache_riscv64-Linux.json
   24K   │ │ ├── DIFF_pkgcache_riscv64-Linux.json
   24K   │ │ ├── DIFF_bincache.json

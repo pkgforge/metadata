@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.25 ⚠️ | null |
+| PPKG   | 2025.08.26 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -905,7 +905,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.5.3 ⚠️ | https://github.com/catchorg/Catch2/archive/refs/tags/v3.5.3.tar.gz |
-| BREW   | **3.9.1** | https://github.com/catchorg/Catch2 |
+| BREW   | **3.10.0** | https://github.com/catchorg/Catch2 |
 
 *Outdated*
 
@@ -4628,7 +4628,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.25 ⚠️ | null |
+| PPKG   | 2025.08.26 ⚠️ | null |
 | BREW   | **1.15.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5211,7 +5211,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.3.5 ⚠️ | https://downloads.sourceforge.net/project/libtirpc/libtirpc/1.3.5/libtirpc-1.3.5.tar.bz2 |
-| BREW   | **1.3.6** | https://sourceforge.net/projects/libtirpc/ |
+| BREW   | **1.3.7** | https://sourceforge.net/projects/libtirpc/ |
 
 *Outdated*
 
@@ -6147,7 +6147,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.26.2 ⚠️ | https://mupdf.com/downloads/archive/mupdf-1.26.2-source.tar.gz |
-| BREW   | **1.26.5** | https://mupdf.com/ |
+| BREW   | **1.26.7** | https://mupdf.com/ |
 
 *Outdated*
 
@@ -6695,7 +6695,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.25 ⚠️ | null |
+| PPKG   | 2025.08.26 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6862,7 +6862,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.25 ⚠️ | null |
+| PPKG   | 2025.08.26 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7024,7 +7024,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.25 ⚠️ | null |
+| PPKG   | 2025.08.26 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8085,7 +8085,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.86.1** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.86.2** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

@@ -223,32 +223,53 @@
   },
   {
     "_disabled": "false",
-    "pkg": "aqtinstall",
-    "pkg_family": "aqtinstall",
-    "pkg_id": "sharun.wrappe.pypi.aqtinstall",
+    "pkg": "awscli",
+    "pkg_family": "awscli",
+    "pkg_id": "sharun.wrappe.pypi.awscli",
     "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-aqtinstall/aqtinstall/aqtinstall",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/aqtinstall/archive.sharun.pypi.yaml",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-awscli/awscli/awscli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/awscli/archive.sharun.pypi.yaml",
     "category": [
       "Utility"
     ],
-    "description": "Qt CLI Installer on multi-platforms",
+    "description": "Universal Command Line Interface for Amazon Web Services",
     "distro_pkg": {
+      "alpine": [
+        "aws-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "aws-cli-bin",
+          "aws-cli-git",
+          "aws-cli-v2"
+        ],
+        "extra": [
+          "aws-cli"
+        ]
+      },
+      "debian": [
+        "awscli"
+      ],
+      "gnuguix": [
+        "awscli"
+      ],
       "homebrew": [
-        "aqtinstall"
+        "awscli"
+      ],
+      "nixpkgs": [
+        "awscli"
       ]
     },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/aqtinstall/archive.sharun.pypi.yaml",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/awscli/archive.sharun.pypi.yaml",
     "homepage": [
-      "https://aqtinstall.readthedocs.io",
-      "https://github.com/miurahr/aqtinstall"
+      "https://github.com/aws/aws-cli"
     ],
     "host": [
       "aarch64-linux",
       "x86_64-linux"
     ],
     "license": [
-      "MIT"
+      "Apache-2.0"
     ],
     "maintainer": [
       "Azathothas (https://github.com/Azathothas)"
@@ -260,64 +281,21 @@
       "[PORTABLE] (Works on AnyLinux)",
       "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
     ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/aqtinstall/archive/sharun",
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/awscli/archive/sharun",
     "provides": [
-      "aqtinstall==aqt"
+      "aws==awscli",
+      "aws==aws-cli"
     ],
     "repology": [
-      "aqt",
-      "aqtinstall"
+      "awscli"
     ],
     "src_url": [
-      "https://pypi.org/project/aqtinstall"
+      "https://pypi.org/project/awscli"
     ],
     "tag": [
       "Utility"
-    ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "audiobook-dl",
-    "pkg_family": "audiobook-dl",
-    "pkg_id": "sharun.wrappe.pypi.audiobook-dl",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/audiobook-dl/audiobook-dl/audiobook-dl",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/audiobook-dl/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
     ],
-    "description": "Audiobook CLI downloader",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/audiobook-dl/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/jo1gi/audiobook-dl"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/audiobook-dl/archive/sharun",
-    "provides": [
-      "audiobook-dl"
-    ],
-    "src_url": [
-      "https://pypi.org/project/audiobook-dl"
-    ],
-    "tag": [
-      "Utility"
-    ]
+    "version": "1.42.17"
   },
   {
     "_disabled": "false",
@@ -516,6 +494,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "code-server",
+    "pkg_family": "code-server",
+    "pkg_id": "wrappe.code-server.stable",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/server-stable/code-server/code-server",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/code-server/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Run VS Code on any machine anywhere and access it in the browser",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "code-server"
+        ]
+      },
+      "homebrew": [
+        "code-server"
+      ],
+      "nixpkgs": [
+        "code-server"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/code-server/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://coder.com/",
+      "https://github.com/coder/code-server"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/code-server/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/coder/code-server",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/code-server/archive/wrappe",
+    "provides": [
+      "code-server==vs-code-server"
+    ],
+    "repology": [
+      "code-server"
+    ],
+    "src_url": [
+      "https://github.com/coder/code-server"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "v4.103.2"
+  },
+  {
+    "_disabled": "false",
     "pkg": "commix",
     "pkg_family": "commix",
     "pkg_id": "sharun.wrappe.pypi.commix",
@@ -572,75 +614,6 @@
       "Utility"
     ],
     "version": "HEAD-5f42db3-250825T080644"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "ddgr",
-    "pkg_family": "ddgr",
-    "pkg_id": "sharun.wrappe.pypi.ddgr",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-ddgr/ddgr/ddgr",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ddgr/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "DuckDuckGo from the terminal",
-    "distro_pkg": {
-      "alpine": [
-        "ddgr"
-      ],
-      "archlinux": {
-        "aur": [
-          "ddgr-git"
-        ],
-        "extra": [
-          "ddgr"
-        ]
-      },
-      "debian": [
-        "ddgr"
-      ],
-      "homebrew": [
-        "ddgr"
-      ],
-      "nixpkgs": [
-        "ddgr"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/ddgr/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/jarun/ddgr"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/ddgr/archive/sharun",
-    "provides": [
-      "ddgr"
-    ],
-    "repology": [
-      "ddgr"
-    ],
-    "src_url": [
-      "https://pypi.org/project/ddgr"
-    ],
-    "tag": [
-      "Utility"
-    ]
   },
   {
     "_disabled": "false",
@@ -1097,68 +1070,6 @@
     "version": "3.4.2"
   },
   {
-    "_disabled": "false",
-    "pkg": "getaltname",
-    "pkg_family": "getaltname",
-    "pkg_id": "sharun.wrappe.pypi.getaltname",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-getaltname/getaltname/getaltname",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/getaltname/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Extract subdomains from SSL certificates in HTTPS sites",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "getaltname-git"
-        ]
-      },
-      "homebrew": [
-        "gsan"
-      ],
-      "nixpkgs": [
-        "gsan"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/getaltname/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://franccesco.github.io/getaltname",
-      "https://github.com/franccesco/getaltname"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/getaltname/archive/sharun",
-    "provides": [
-      "gsan==getaltname"
-    ],
-    "repology": [
-      "getaltname",
-      "gsan"
-    ],
-    "src_url": [
-      "https://pypi.org/project/gsan"
-    ],
-    "tag": [
-      "Utility"
-    ]
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "replaced": [
@@ -1424,7 +1335,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250825T005000"
+    "version": "250826T004808"
   },
   {
     "_disabled": "false",
@@ -1486,79 +1397,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250825T005000"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "jc",
-    "pkg_family": "jc",
-    "pkg_id": "sharun.wrappe.pypi.jc",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-jc/jc/jc",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/jc/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Convert the output of command-line tools to JSON",
-    "distro_pkg": {
-      "alpine": [
-        "jc"
-      ],
-      "archlinux": {
-        "aur": [
-          "jc-git"
-        ],
-        "extra": [
-          "jc"
-        ]
-      },
-      "debian": [
-        "jc"
-      ],
-      "gnuguix": [
-        "jc"
-      ],
-      "homebrew": [
-        "jc"
-      ],
-      "nixpkgs": [
-        "jc"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/jc/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/kellyjonbrazil/jc"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/jc/archive/sharun",
-    "provides": [
-      "jc"
-    ],
-    "repology": [
-      "jc"
-    ],
-    "src_url": [
-      "https://pypi.org/project/jc"
-    ],
-    "tag": [
-      "Utility"
-    ]
+    "version": "250826T004808"
   },
   {
     "_disabled": "true",
@@ -1772,50 +1611,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "linkook",
-    "pkg_family": "linkook",
-    "pkg_id": "sharun.wrappe.pypi.linkook",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-linkook/linkook/linkook",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/linkook/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "OSINT tool to find Accounts/Emails across multiple platforms using a single Username",
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/linkook/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/JackJuly/linkook"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/linkook/archive/sharun",
-    "provides": [
-      "linkook"
-    ],
-    "src_url": [
-      "https://pypi.org/project/linkook"
-    ],
-    "tag": [
-      "Utility"
-    ]
-  },
-  {
-    "_disabled": "false",
     "pkg": "mitmproxy",
     "pkg_family": "mitmproxy",
     "pkg_id": "sharun.wrappe.pypi.mitmproxy",
@@ -2019,58 +1814,6 @@
   },
   {
     "_disabled": "false",
-    "pkg": "port-for",
-    "pkg_family": "port-for",
-    "pkg_id": "sharun.wrappe.pypi.port-for",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/port-for/port-for/port-for",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/port-for/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "CLI for local TCP ports management",
-    "distro_pkg": {
-      "debian": [
-        "port-for"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/port-for/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/fizyk/port-for"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "MIT"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/port-for/archive/sharun",
-    "provides": [
-      "port-for"
-    ],
-    "repology": [
-      "port-for"
-    ],
-    "src_url": [
-      "https://pypi.org/project/port-for"
-    ],
-    "tag": [
-      "Utility"
-    ]
-  },
-  {
-    "_disabled": "false",
     "pkg": "powertop",
     "pkg_family": "powertop",
     "pkg_id": "sharun.wrappe.alpine.powertop",
@@ -2111,64 +1854,6 @@
     ],
     "src_url": [
       "https://github.com/fenrus75/powertop"
-    ],
-    "tag": [
-      "Utility"
-    ]
-  },
-  {
-    "_disabled": "false",
-    "pkg": "puncia",
-    "pkg_family": "puncia",
-    "pkg_id": "sharun.wrappe.pypi.puncia",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-puncia/puncia/puncia",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/puncia/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "CLI utility for Subdomain Center & Exploit Observer",
-    "distro_pkg": {
-      "archlinux": {
-        "aur": [
-          "puncia"
-        ]
-      },
-      "nixpkgs": [
-        "puncia"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/puncia/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://subdomain.center",
-      "https://github.com/ARPSyndicate/puncia"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/puncia/archive/sharun",
-    "provides": [
-      "puncia"
-    ],
-    "repology": [
-      "puncia"
-    ],
-    "src_url": [
-      "https://pypi.org/project/puncia"
     ],
     "tag": [
       "Utility"
@@ -2468,66 +2153,6 @@
     "version": "15.68.5"
   },
   {
-    "_disabled": "false",
-    "pkg": "tldextract",
-    "pkg_family": "tldextract",
-    "pkg_id": "sharun.wrappe.pypi.tldextract",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-tldextract/tldextract/tldextract",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/tldextract/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Separates a URL's subdomain, domain, and public suffix, using the Public Suffix List (PSL)",
-    "distro_pkg": {
-      "archlinux": {
-        "extra": [
-          "tldextract"
-        ]
-      },
-      "homebrew": [
-        "tldextract"
-      ],
-      "nixpkgs": [
-        "tldextract"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/tldextract/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://github.com/john-kurkowski/tldextract"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "license": [
-      "BSD-3-Clause"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/tldextract/archive/sharun",
-    "provides": [
-      "tldextract"
-    ],
-    "repology": [
-      "tldextract"
-    ],
-    "src_url": [
-      "https://pypi.org/project/tldextract"
-    ],
-    "tag": [
-      "Utility"
-    ]
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": [
       "Too slow & Expensive"
@@ -2822,81 +2447,6 @@
       "security"
     ],
     "version": "HEAD-eee573e-250812T103839"
-  },
-  {
-    "_disabled": "false",
-    "pkg": "xonsh",
-    "pkg_family": "xonsh",
-    "pkg_id": "sharun.wrappe.pypi.xonsh",
-    "pkg_type": "archive",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-xonsh/xonsh/xonsh",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xonsh/archive.sharun.pypi.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "Python-ish, BASHwards-compatible shell",
-    "distro_pkg": {
-      "alpine": [
-        "xonsh"
-      ],
-      "archlinux": {
-        "aur": [
-          "xonsh-git"
-        ],
-        "extra": [
-          "xonsh"
-        ]
-      },
-      "debian": [
-        "xonsh"
-      ],
-      "gnuguix": [
-        "xonsh"
-      ],
-      "homebrew": [
-        "xonsh"
-      ],
-      "nixpkgs": [
-        "xonsh",
-        "xonsh-unwrapped"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/xonsh/archive.sharun.pypi.yaml",
-    "homepage": [
-      "https://xon.sh",
-      "https://github.com/xonsh/xonsh"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/xonsh/assets/default.png",
-    "license": [
-      "custom"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
-      "[PORTABLE] (Works on AnyLinux)",
-      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/xonsh/archive/sharun",
-    "provides": [
-      "xonsh"
-    ],
-    "repology": [
-      "xonsh"
-    ],
-    "src_url": [
-      "https://pypi.org/project/xonsh"
-    ],
-    "tag": [
-      "Utility"
-    ]
   },
   {
     "_disabled": "false",

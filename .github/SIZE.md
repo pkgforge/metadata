@@ -424,14 +424,14 @@
  1.1M   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
  1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
  1.0M   │ │ ├── COMP_VER_CACHE.md
- 764K   │ │ ├── pub_issues_binaries.txt
+ 768K   │ │ ├── pub_issues_binaries.txt
  580K   │ │ ├── OLD_bincache_riscv64-Linux.json
  388K   │ │ ├── DIFF_bincache_aarch64-Linux.json
  384K   │ │ ├── INDEX.json.cba
  356K   │ │ ├── DIFF_bincache_x86_64-Linux.json
  336K   │ │ ├── DIFF_bincache_riscv64-Linux.json
+ 304K   │ │ ├── pub_issues_packages.txt
  304K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
- 292K   │ │ ├── pub_issues_packages.txt
  244K   │ │ ├── INDEX.db.cba
  240K   │ │ ├── GH_REPO.md
  236K   │ │ ├── INDEX.json.xz

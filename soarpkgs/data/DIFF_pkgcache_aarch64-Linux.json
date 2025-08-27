@@ -892,7 +892,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-7945455-250826T122943"
+    "version": "HEAD-76cfe92-250827T191429"
   },
   {
     "_disabled": "true",
@@ -1025,7 +1025,7 @@
     "tag": [
       "screenshot"
     ],
-    "version": "13.0.1"
+    "version": "13.1.0"
   },
   {
     "_disabled": "true",
@@ -1624,7 +1624,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d4c38ea-250824T194833"
+    "version": "HEAD-864c88b-250827T204334"
   },
   {
     "_disabled": "false",
@@ -2218,6 +2218,54 @@
   },
   {
     "_disabled": "false",
+    "pkg": "xashds",
+    "pkg_family": "xashds",
+    "pkg_id": "wrappe.xashds",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/wrappe-xashds/xashds/xashds",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/xashds/archive.wrappe.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Xash3D FWGS Dedicated Server",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/xashds/archive.wrappe.stable.yaml",
+    "homepage": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Source Bundle fetched from Upstream. Check/Report @ https://github.com/FWGS/xash3d-fwgs",
+      "Packed as-is using WrapPe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "Host Dependencies: A lot, please use soar log to view the ldd output"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/xashds/archive/wrappe",
+    "provides": [
+      "xashds==xash"
+    ],
+    "repology": [
+      "xash3d-fwgs"
+    ],
+    "src_url": [
+      "https://github.com/FWGS/xash3d-fwgs"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "250827T170325"
+  },
+  {
+    "_disabled": "false",
     "pkg": "xmap",
     "pkg_family": "xmap",
     "pkg_id": "sharun.wrappe.source.xmap",
@@ -2270,5 +2318,138 @@
       "security"
     ],
     "version": "HEAD-eee573e-250812T103839"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.source.yt-dlp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
+    "provides": [
+      "yt-dlp"
+    ],
+    "repology": [
+      "yt-dlp"
+    ],
+    "src_url": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-d6950c2-250827T153444"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zen-browser",
+    "pkg_family": "zen-browser",
+    "pkg_id": "github.com.zen-browser.desktop.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desktop-stable/zen-browser/zen-browser",
+    "app_id": "app.zen_browser.zen",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zen-browser/appimage.official.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Performance oriented Firefox-based web browser",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "zen-browser",
+          "zen-browser-bin"
+        ]
+      },
+      "homebrew": [
+        "zen-browser"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zen-browser/appimage.official.stable.yaml",
+    "homepage": [
+      "https://zen-browser.app",
+      "https://github.com/zen-browser/desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/zen-browser/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
+    "provides": [
+      "zen-browser==zen"
+    ],
+    "repology": [
+      "zen-browser"
+    ],
+    "src_url": [
+      "https://github.com/zen-browser/desktop"
+    ],
+    "tag": [
+      "arc",
+      "firefox",
+      "www-client"
+    ],
+    "version": "1.15b"
   }
 ]

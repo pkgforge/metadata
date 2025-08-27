@@ -302,7 +302,7 @@
   36K   │   └─┬ scripts
   32K   │     └── gen_meta.sh
  232M   ├─┬ misc
- 231M   │ ├─┬ data
+ 232M   │ ├─┬ data
   73M   │ │ ├── ARCHLINUX.json
   39M   │ │ ├── FLATPAK_APPSTREAM.xml
   32M   │ │ ├── CONDA.json

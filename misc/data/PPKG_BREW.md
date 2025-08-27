@@ -138,7 +138,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.298** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.299** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -2408,7 +2408,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.2 ⚠️ | https://github.com/gogf/gf/archive/refs/tags/v2.7.2.tar.gz |
-| BREW   | **2.9.0** | https://goframe.org |
+| BREW   | **2.9.1** | https://goframe.org |
 
 *Outdated*
 

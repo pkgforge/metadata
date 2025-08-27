@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.26 ⚠️ | null |
+| PPKG   | 2025.08.27 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1599,7 +1599,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.58.5** | https://github.com/dolthub/dolt |
+| BREW   | **1.58.6** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2010,8 +2010,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 7.1.1 ✅ | https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz |
-| BREW   | 7.1.1 | https://ffmpeg.org/ |
+| PPKG   | 7.1.1 ⚠️ | https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz |
+| BREW   | **8.0** | https://ffmpeg.org/ |
+
+*Outdated*
 
 ## fftw
 
@@ -3234,7 +3236,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.12.0 ⚠️ | https://www.open-mpi.org/software/hwloc/v2.12/downloads/hwloc-2.12.0.tar.bz2 |
-| BREW   | **2.12.1** | https://www.open-mpi.org/projects/hwloc/ |
+| BREW   | **2.12.2** | https://www.open-mpi.org/projects/hwloc/ |
 
 *Outdated*
 
@@ -3957,8 +3959,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 20.1.8 ✅ | https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/libclc-20.1.8.src.tar.xz |
-| BREW   | 20.1.8 | https://libclc.llvm.org/ |
+| PPKG   | 20.1.8 ⚠️ | https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/libclc-20.1.8.src.tar.xz |
+| BREW   | **21.1.0** | https://libclc.llvm.org/ |
+
+*Outdated*
 
 ## libconfig
 
@@ -4628,7 +4632,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.26 ⚠️ | null |
+| PPKG   | 2025.08.27 ⚠️ | null |
 | BREW   | **1.15.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6515,7 +6519,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.11.6** | https://ollama.com/ |
+| BREW   | **0.11.7** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6697,7 +6701,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.26 ⚠️ | null |
+| PPKG   | 2025.08.27 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6864,7 +6868,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.26 ⚠️ | null |
+| PPKG   | 2025.08.27 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7026,7 +7030,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.26 ⚠️ | null |
+| PPKG   | 2025.08.27 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7151,7 +7155,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.2.0 ⚠️ | https://download.qemu.org/qemu-9.2.0.tar.xz |
-| BREW   | **10.0.3** | https://www.qemu.org/ |
+| BREW   | **10.1.0** | https://www.qemu.org/ |
 
 *Outdated*
 
@@ -8689,7 +8693,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | null |
-| BREW   | **36.0.1** | https://wasmtime.dev/ |
+| BREW   | **36.0.2** | https://wasmtime.dev/ |
 
 *Outdated*
 

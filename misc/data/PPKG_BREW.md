@@ -67,7 +67,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.17.0 ⚠️ | https://git.sr.ht/~rjarry/aerc/archive/0.17.0.tar.gz |
-| BREW   | **0.20.1** | https://aerc-mail.org/ |
+| BREW   | **0.21.0** | https://aerc-mail.org/ |
 
 *Outdated*
 
@@ -874,7 +874,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.4.41 ⚠️ | https://github.com/dtolnay/cargo-llvm-lines/archive/refs/tags/0.4.41.tar.gz |
-| BREW   | **0.4.43** | https://github.com/dtolnay/cargo-llvm-lines |
+| BREW   | **0.4.44** | https://github.com/dtolnay/cargo-llvm-lines |
 
 *Outdated*
 
@@ -2226,7 +2226,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | https://github.com/antonmedv/fx/archive/refs/tags/35.0.0.tar.gz |
-| BREW   | **39.0.2** | https://fx.wtf |
+| BREW   | **39.0.3** | https://fx.wtf |
 
 *Outdated*
 

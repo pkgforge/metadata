@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.27 ⚠️ | null |
+| PPKG   | 2025.08.28 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -717,7 +717,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.52.1 ⚠️ | https://github.com/bufbuild/buf/archive/refs/tags/v1.52.1.tar.gz |
-| BREW   | **1.56.0** | https://github.com/bufbuild/buf |
+| BREW   | **1.57.0** | https://github.com/bufbuild/buf |
 
 *Outdated*
 
@@ -1992,8 +1992,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.10.3 ✅ | https://feh.finalrewind.org/feh-3.10.3.tar.bz2 |
-| BREW   | 3.10.3 | https://feh.finalrewind.org/ |
+| PPKG   | 3.10.3 ⚠️ | https://feh.finalrewind.org/feh-3.10.3.tar.bz2 |
+| BREW   | **3.11** | https://feh.finalrewind.org/ |
+
+*Outdated*
 
 ## fff
 
@@ -3205,7 +3207,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.148.2** | https://gohugo.io/ |
+| BREW   | **0.149.0** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -3434,7 +3436,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.78.6** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.78.7** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -4632,7 +4634,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.27 ⚠️ | null |
+| PPKG   | 2025.08.28 ⚠️ | null |
 | BREW   | **1.15.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6701,7 +6703,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.27 ⚠️ | null |
+| PPKG   | 2025.08.28 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6782,7 +6784,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 10.43 ⚠️ | https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.43/pcre2-10.43.tar.bz2 |
-| BREW   | **10.45** | https://www.pcre.org/ |
+| BREW   | **10.46** | https://www.pcre.org/ |
 
 *Outdated*
 
@@ -6868,7 +6870,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.27 ⚠️ | null |
+| PPKG   | 2025.08.28 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7030,7 +7032,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.27 ⚠️ | null |
+| PPKG   | 2025.08.28 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7197,7 +7199,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.9.0 ⚠️ | https://download.qt.io/official_releases/qt/6.9/6.9.0/single/qt-everywhere-src-6.9.0.tar.xz |
-| BREW   | **6.9.1** | https://www.qt.io/ |
+| BREW   | **6.9.2** | https://www.qt.io/ |
 
 *Outdated*
 
@@ -7766,7 +7768,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20.1.4 ⚠️ | https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v20.1.4.tar.gz |
-| BREW   | **20.1.5** | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
+| BREW   | **21.1.0** | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
 
 *Outdated*
 
@@ -8542,7 +8544,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.1.0450 ⚠️ | https://github.com/vim/vim/archive/refs/tags/v9.1.0450.tar.gz |
-| BREW   | **9.1.1650** | https://www.vim.org/ |
+| BREW   | **9.1.1700** | https://www.vim.org/ |
 
 *Outdated*
 

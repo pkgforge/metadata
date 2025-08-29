@@ -311,7 +311,7 @@ jobs:
         continue-on-error: true
 
       - name: Attest Build Provenance
-        uses: actions/attest-build-provenance@v2.4.0
+        uses: actions/attest-build-provenance@v3.0.0
         with:
           subject-name: "metadata-${{ matrix.repo }}-${{ matrix.arch }}"
           subject-path: "${{ matrix.file }}"

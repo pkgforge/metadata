@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.28 ⚠️ | null |
+| PPKG   | 2025.08.29 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -4634,7 +4634,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.28 ⚠️ | null |
+| PPKG   | 2025.08.29 ⚠️ | null |
 | BREW   | **1.15.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6521,7 +6521,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.11.7** | https://ollama.com/ |
+| BREW   | **0.11.8** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6543,7 +6543,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.65.0 ⚠️ | https://github.com/open-policy-agent/opa/archive/refs/tags/v0.65.0.tar.gz |
-| BREW   | **1.7.1** | https://www.openpolicyagent.org |
+| BREW   | **1.8.0** | https://www.openpolicyagent.org |
 
 *Outdated*
 
@@ -6703,7 +6703,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.28 ⚠️ | null |
+| PPKG   | 2025.08.29 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6870,7 +6870,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.28 ⚠️ | null |
+| PPKG   | 2025.08.29 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7032,7 +7032,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.28 ⚠️ | null |
+| PPKG   | 2025.08.29 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7475,7 +7475,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.10** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.11** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -8409,7 +8409,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.13** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.14** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

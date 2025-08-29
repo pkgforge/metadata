@@ -65,7 +65,7 @@
       "Games/Cards",
       "games-board"
     ],
-    "version": "250827T022757"
+    "version": "250828T022652"
   },
   {
     "_disabled": "false",
@@ -187,7 +187,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.42.18"
+    "version": "1.42.20"
   },
   {
     "_disabled": "false",
@@ -303,7 +303,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.83.83"
+    "version": "v1.84.5"
   },
   {
     "_disabled": "false",
@@ -417,6 +417,145 @@
   },
   {
     "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
+    "app_id": "org.chromium.Chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google (Stable)",
+    "distro_pkg": {
+      "alpine": [
+        "chromium"
+      ],
+      "archlinux": {
+        "extra": [
+          "chromium"
+        ]
+      },
+      "debian": [
+        "chromium"
+      ],
+      "homebrew": [
+        "chromium"
+      ],
+      "nixpkgs": [
+        "chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.chromium.org",
+      "https://chromium.googlesource.com/chromium/src",
+      "https://github.com/chromium/chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "chromium"
+    ],
+    "src_url": [
+      "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "139.0.7258.154"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.ungoogled-chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ungoogled-chromium/chromium/chromium",
+    "app_id": "io.github.ungoogled_software.ungoogled_chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google, with dependencies on Google web services removed (Ungoogled)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ungoogled-chromium",
+          "ungoogled-chromium-bin",
+          "ungoogled-chromium-git",
+          "ungoogled-chromium-xdg",
+          "ungoogled-chromium-xdg-bin"
+        ]
+      },
+      "gnuguix": [
+        "ungoogled-chromium"
+      ],
+      "nixpkgs": [
+        "ungoogled-chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.ungoogled.yaml",
+    "homepage": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium:ungoogled-chromium",
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "ungoogled-chromium"
+    ],
+    "src_url": [
+      "https://github.com/ungoogled-software/ungoogled-chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "139.0.7258.154"
+  },
+  {
+    "_disabled": "false",
     "pkg": "commix",
     "pkg_family": "commix",
     "pkg_id": "sharun.wrappe.pypi.commix",
@@ -472,7 +611,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-ad4b20f-250827T065442"
+    "version": "HEAD-8149583-250828T074420"
   },
   {
     "_disabled": "false",
@@ -844,6 +983,68 @@
   },
   {
     "_disabled": "false",
+    "pkg": "discord-canary",
+    "pkg_family": "discord",
+    "pkg_id": "github.com.srevinsaju.discord-AppImage.canary",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-canary/discord/discord-canary",
+    "app_id": "com.discordapp.Discord",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/discord/appimage.srevinsaju.canary.yaml",
+    "category": [
+      "Chat",
+      "InstantMessaging"
+    ],
+    "description": "All-in-one cross-platform voice and text chat for gamers (Canary)",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "discord"
+        ]
+      },
+      "homebrew": [
+        "discord@canary"
+      ],
+      "nixpkgs": [
+        "discord-canary"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/discord/appimage.srevinsaju.canary.yaml",
+    "homepage": [
+      "https://discordapp.com",
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/discord/assets/default.png",
+    "license": [
+      "Unfree"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/discord-appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/discord-canary/appimage/srevinsaju",
+    "provides": [
+      "discord-canary"
+    ],
+    "repology": [
+      "discord"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/discord-appimage"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "0.0.748"
+  },
+  {
+    "_disabled": "false",
     "pkg": "dvc",
     "pkg_family": "dvc",
     "pkg_id": "sharun.wrappe.source.dvc",
@@ -901,7 +1102,80 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-76cfe92-250827T191429"
+    "version": "HEAD-4f4c5b1-250828T170933"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "element-desktop",
+    "pkg_family": "element-desktop",
+    "pkg_id": "runimage.alpine.element-desktop",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/element-desktop/element-desktop/element-desktop",
+    "app_id": "im.riot.Riot",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/element-desktop/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A glossy Matrix collaboration client for desktop",
+    "distro_pkg": {
+      "alpine": [
+        "element-desktop",
+        "element-web"
+      ],
+      "archlinux": {
+        "aur": [
+          "element-desktop-git",
+          "element-desktop-nightly-bin",
+          "riot-web-develop-bin",
+          "riot-web-develop-git"
+        ],
+        "extra": [
+          "element.io"
+        ]
+      },
+      "homebrew": [
+        "element"
+      ],
+      "nixpkgs": [
+        "element-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/element-desktop/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://github.com/element-hq/element-desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/element-desktop/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/element-desktop/runimage/alpine",
+    "provides": [
+      "element-desktop:riot-desktop"
+    ],
+    "repology": [
+      "element-desktop"
+    ],
+    "src_url": [
+      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/testing/element-desktop"
+    ],
+    "tag": [
+      "chat",
+      "matrix"
+    ],
+    "version": "1.11.110"
   },
   {
     "_disabled": "true",
@@ -958,7 +1232,87 @@
       "chat",
       "matrix"
     ],
-    "version": "1.11.109"
+    "version": "1.11.110"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "sharun.wrappe.stable.fastfetch",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stable-fastfetch/fastfetch/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fastfetch/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fastfetch/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This version was repacked from official Deb & contains the most features"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fastfetch/archive/sharun",
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "2.51.0"
   },
   {
     "_disabled": "false",
@@ -1024,6 +1378,135 @@
     "_disabled": "false",
     "pkg": "firefox",
     "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (Beta)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "firefox-beta-bin"
+        ]
+      },
+      "homebrew": [
+        "firefox@beta"
+      ],
+      "nixpkgs": [
+        "firefox-beta",
+        "firefox-beta-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-beta"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "143.0.20250827090822"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.dev",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-dev/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (DEV)",
+    "distro_pkg": {
+      "alpine": [
+        "firefox-developer-edition"
+      ],
+      "archlinux": {
+        "extra": [
+          "firefox-developer-edition"
+        ]
+      },
+      "homebrew": [
+        "firefox@developer-edition"
+      ],
+      "nixpkgs": [
+        "firefox-devedition",
+        "firefox-devedition-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-dev"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "143.0.20250827090822"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
     "pkg_id": "github.com.srevinsaju.Firefox-Appimage.nightly",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/firefox/firefox",
@@ -1078,7 +1561,78 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "144.0.20250827091530"
+    "version": "144.0.20250828210358"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree",
+    "distro_pkg": {
+      "alpine": [
+        "firefox"
+      ],
+      "archlinux": {
+        "aur": [
+          "firefox-hg"
+        ],
+        "extra": [
+          "firefox"
+        ]
+      },
+      "debian": [
+        "firefox"
+      ],
+      "homebrew": [
+        "firefox"
+      ],
+      "nixpkgs": [
+        "firefox"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.stable.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "142.0.20250827004350"
   },
   {
     "_disabled": "false",
@@ -1422,7 +1976,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250827T004748"
+    "version": "250829T004700"
   },
   {
     "_disabled": "false",
@@ -1484,7 +2038,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250827T004748"
+    "version": "250829T004700"
   },
   {
     "_disabled": "false",
@@ -1779,7 +2333,7 @@
       "replay-sorcery",
       "vkbasalt"
     ],
-    "version": "250827T174849"
+    "version": "250827T185326"
   },
   {
     "_disabled": "false",
@@ -1923,6 +2477,79 @@
     "tag": [
       "editor"
     ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "krita",
+    "pkg_family": "krita",
+    "pkg_id": "gitlab.com.krita.krita.next",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/krita-next/krita/krita",
+    "app_id": "org.kde.krita",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/krita/appimage.official.next.yaml",
+    "category": [
+      "Graphics",
+      "ImageProcessing"
+    ],
+    "description": "A free and open source painting application (Alpha/Next)",
+    "distro_pkg": {
+      "alpine": [
+        "krita"
+      ],
+      "archlinux": {
+        "aur": [
+          "krita-git"
+        ],
+        "extra": [
+          "krita"
+        ]
+      },
+      "debian": [
+        "krita"
+      ],
+      "gnuguix": [
+        "krita"
+      ],
+      "homebrew": [
+        "krita"
+      ],
+      "nixpkgs": [
+        "krita",
+        "krita-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/krita/appimage.official.next.yaml",
+    "homepage": [
+      "https://krita.org",
+      "https://invent.kde.org/graphics/krita"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/krita/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://invent.kde.org/graphics/krita"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/krita/appimage/official",
+    "provides": [
+      "krita"
+    ],
+    "repology": [
+      "krita"
+    ],
+    "src_url": [
+      "https://krita.org/en/download/"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "2025-08-28"
   },
   {
     "_disabled": "true",
@@ -2133,6 +2760,537 @@
       "Utility"
     ],
     "version": "4.9.3"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.fresh-basic",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fresh-basic/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.fresh-basic.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (fresh-basic)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.fresh-basic.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the latest LibreOffice major release",
+      "This version includes support only for the default language i.e English (US)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.8.1.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.fresh-full",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fresh-full/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.fresh-full.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (fresh-full)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.fresh-full.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the latest LibreOffice major release",
+      "This version includes support for all languages supported by LibreOffice"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.8.1.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.fresh-standard",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/fresh-standard/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.fresh-standard.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (fresh-standard)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.fresh-standard.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the latest LibreOffice major release",
+      "This version includes support for: English (US and GB), Arabic, Chinese (Simplified and Traditional), French, German, Italian, Japanese, Korean, Portuguese (Brazilian and Portugal), Russian, and Spanish"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.8.1.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.still-basic",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/still-basic/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.still-basic.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (still-basic)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.still-basic.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the previous LibreOffice major release",
+      "This version includes support only for the default language i.e English (US)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.8.1.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.still-full",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/still-full/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.still-full.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (still-full)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.still-full.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the previous LibreOffice major release",
+      "This version includes support for all languages supported by LibreOffice"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.8.1.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "libreoffice",
+    "pkg_family": "libreoffice",
+    "pkg_id": "gitlab.com.libreoffice.libreoffice.still-standard",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/still-standard/libreoffice/libreoffice",
+    "app_id": "org.libreoffice.LibreOffice",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/libreoffice/appimage.official.still-standard.yaml",
+    "category": [
+      "Office"
+    ],
+    "description": "A free and open source painting application (still-standard)",
+    "distro_pkg": {
+      "alpine": [
+        "libreoffice"
+      ],
+      "archlinux": {
+        "aur": [
+          "libreoffice-git"
+        ],
+        "extra": [
+          "libreoffice"
+        ]
+      },
+      "debian": [
+        "libreoffice"
+      ],
+      "gnuguix": [
+        "libreoffice"
+      ],
+      "homebrew": [
+        "libreoffice"
+      ],
+      "nixpkgs": [
+        "libreoffice",
+        "libreoffice-beta"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/libreoffice/appimage.official.still-standard.yaml",
+    "homepage": [
+      "https://libreoffice.org",
+      "https://cgit.freedesktop.org/libreoffice/core/tree/",
+      "https://github.com/LibreOffice/core"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/libreoffice/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://libreoffice.org",
+      "This version is the previous LibreOffice major release",
+      "This version includes support for: English (US and GB), Arabic, Chinese (Simplified and Traditional), French, German, Italian, Japanese, Korean, Portuguese (Brazilian and Portugal), Russian, and Spanish"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/libreoffice/appimage/official",
+    "provides": [
+      "libreoffice"
+    ],
+    "repology": [
+      "libreoffice"
+    ],
+    "src_url": [
+      "https://www.libreoffice.org/download/appimage/"
+    ],
+    "tag": [
+      "office"
+    ],
+    "version": "25.8.1.1"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "mpv",
+    "pkg_family": "mpv",
+    "pkg_id": "github.com.pkgforge-dev.mpv-AppImage.stable",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-stable/mpv/mpv",
+    "app_id": "io.mpv.Mpv",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/mpv/appimage.pkgforge-dev.stable.yaml",
+    "category": [
+      "Music",
+      "Player",
+      "TV"
+    ],
+    "description": "General Purpose Command line video player",
+    "distro_pkg": {
+      "alpine": [
+        "mpv"
+      ],
+      "archlinux": {
+        "aur": [
+          "mpv-full",
+          "mpv-full-git",
+          "mpv-git"
+        ],
+        "extra": [
+          "mpv"
+        ]
+      },
+      "debian": [
+        "mpv"
+      ],
+      "gnuguix": [
+        "mpv"
+      ],
+      "homebrew": [
+        "mpv"
+      ],
+      "nixpkgs": [
+        "mpv"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/mpv/appimage.pkgforge-dev.stable.yaml",
+    "homepage": [
+      "https://mpv.io",
+      "https://github.com/mpv-player/mpv",
+      "https://github.com/pkgforge-dev/mpv-AppImage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/mpv/assets/default.png",
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/pkgforge-dev/mpv-AppImage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/mpv/appimage/pkgforge-dev",
+    "provides": [
+      "mpv"
+    ],
+    "repology": [
+      "mpv"
+    ],
+    "src_url": [
+      "https://github.com/pkgforge-dev/mpv-AppImage"
+    ],
+    "tag": [
+      "Graphical",
+      "media-video",
+      "Productivity/Multimedia/Video/Players",
+      "Video",
+      "Video/Utilities"
+    ],
+    "version": "v0.40.0-294-g0f910ec51@2025-08-28_1756412808"
   },
   {
     "_disabled": "false",
@@ -2994,7 +4152,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "4.33.0"
+    "version": "4.33.1"
   },
   {
     "_disabled": "false",
@@ -3154,6 +4312,79 @@
     "_disabled": "false",
     "pkg": "yt-dlp",
     "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.pypi.yt-dlp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
+    "provides": [
+      "yt-dlp"
+    ],
+    "repology": [
+      "yt-dlp"
+    ],
+    "src_url": [
+      "https://pypi.org/project/yt-dlp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2025.8.27"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
     "pkg_id": "sharun.wrappe.source.yt-dlp",
     "pkg_type": "archive",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
@@ -3221,7 +4452,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-d6950c2-250827T153444"
+    "version": "HEAD-1e28f6b-250828T012649"
   },
   {
     "_disabled": "false",
@@ -3288,7 +4519,7 @@
       "emulator",
       "game"
     ],
-    "version": "v0.201.5"
+    "version": "v0.201.6"
   },
   {
     "_disabled": "false",
@@ -3348,6 +4579,66 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.15b"
+    "version": "1.15.1b"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zen-browser",
+    "pkg_family": "zen-browser",
+    "pkg_id": "github.com.zen-browser.desktop.twilight",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desktop-twilight/zen-browser/zen-browser",
+    "app_id": "app.zen_browser.zen",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zen-browser/appimage.official.twilight.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Performance oriented Firefox-based web browser (Twilight)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "zen-browser",
+          "zen-browser-bin"
+        ]
+      },
+      "homebrew": [
+        "zen-browser"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zen-browser/appimage.official.twilight.yaml",
+    "homepage": [
+      "https://zen-browser.app",
+      "https://github.com/zen-browser/desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/zen-browser/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
+    "provides": [
+      "zen-browser==zen"
+    ],
+    "repology": [
+      "zen-browser"
+    ],
+    "src_url": [
+      "https://github.com/zen-browser/desktop"
+    ],
+    "tag": [
+      "arc",
+      "firefox",
+      "www-client"
+    ],
+    "version": "1.15t_2025-08-28"
   }
 ]

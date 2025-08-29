@@ -688,7 +688,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.44.6 ⚠️ | https://github.com/Canop/broot/archive/refs/tags/v1.44.6.tar.gz |
-| BREW   | **1.47.0** | https://dystroy.org/broot/ |
+| BREW   | **1.48.0** | https://dystroy.org/broot/ |
 
 *Outdated*
 
@@ -1116,7 +1116,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.31.8 ⚠️ | https://github.com/Kitware/CMake/releases/download/v3.31.8/cmake-3.31.8.tar.gz |
-| BREW   | **4.1.0** | https://www.cmake.org/ |
+| BREW   | **4.1.1** | https://www.cmake.org/ |
 
 *Outdated*
 
@@ -1930,8 +1930,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.50.2 ✅ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.50.2.tar.gz |
-| BREW   | 2.50.2 | https://github.com/fastfetch-cli/fastfetch |
+| PPKG   | 2.50.2 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.50.2.tar.gz |
+| BREW   | **2.51.1** | https://github.com/fastfetch-cli/fastfetch |
+
+*Outdated*
 
 ## fb303
 
@@ -3309,7 +3311,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.4 ⚠️ | https://linuxcontainers.org/downloads/incus/incus-6.4.tar.xz |
-| BREW   | **6.15** | https://linuxcontainers.org/incus |
+| BREW   | **6.16** | https://linuxcontainers.org/incus |
 
 *Outdated*
 
@@ -4744,7 +4746,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.13.37 ⚠️ | https://github.com/google/libphonenumber/archive/refs/tags/v8.13.37.tar.gz |
-| BREW   | **9.0.12** | https://github.com/google/libphonenumber |
+| BREW   | **9.0.13** | https://github.com/google/libphonenumber |
 
 *Outdated*
 

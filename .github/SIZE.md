@@ -74,7 +74,7 @@
   12K   │ │ └─┬ scripts
  8.0K   │ │   └── gen_meta.sh
  163M   │ ├─┬ pkgforge-cargo
- 162M   │ │ ├─┬ data
+ 163M   │ │ ├─┬ data
   14M   │ │ │ ├── x86_64-Linux.json
   14M   │ │ │ ├── aarch64-Linux.json
   13M   │ │ │ ├── riscv64-Linux.json
@@ -160,7 +160,7 @@
  496K   │ │ │ ├── x86_64-Linux.json.cba
  480K   │ │ │ ├── x86_64-Linux.sdb.zstd
  444K   │ │ │ ├── x86_64-Linux.sdb.xz
- 432K   │ │ │ ├── x86_64-Linux.db.zstd
+ 436K   │ │ │ ├── x86_64-Linux.db.zstd
  412K   │ │ │ ├── x86_64-Linux.db.xz
  400K   │ │ │ ├── x86_64-Linux.json.zstd
  392K   │ │ │ ├── x86_64-Linux.json.xz
@@ -322,7 +322,7 @@
  276K   │ │ ├── PPKG_BREW.md
  240K   │ │ ├── FLATPAK_POPULAR.json
  224K   │ │ ├── FLATPAK_TRENDING.json
-  80K   │ │ ├── FLATPAK_APP_IDS.txt
+  76K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md
  104K   │ └─┬ scripts
@@ -435,13 +435,13 @@
  248K   │ │ ├── INDEX.db.cba
  240K   │ │ ├── GH_REPO.md
  236K   │ │ ├── INDEX.json.xz
+ 236K   │ │ ├── COMP_VER_CACHE_OLD.json
  228K   │ │ ├── INDEX.json.zstd
- 228K   │ │ ├── COMP_VER_CACHE_OLD.json
  212K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
  192K   │ │ ├── INDEX.db.zstd
  180K   │ │ ├── INDEX.db.xz
  136K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
-  92K   │ │ ├── COMP_VER_CACHE_OLD.md
+  96K   │ │ ├── COMP_VER_CACHE_OLD.md
   84K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
   52K   │ │ ├── URLS.txt

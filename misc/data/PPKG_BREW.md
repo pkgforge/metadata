@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.29 ⚠️ | null |
+| PPKG   | 2025.08.30 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1222,7 +1222,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.18.3 ⚠️ | https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.18.3.tar.gz |
-| BREW   | **0.25.0** | https://github.com/yhirose/cpp-httplib |
+| BREW   | **0.26.0** | https://github.com/yhirose/cpp-httplib |
 
 *Outdated*
 
@@ -1724,8 +1724,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.12.4 ✅ | https://github.com/mhx/dwarfs/releases/download/v0.12.4/dwarfs-0.12.4.tar.xz |
-| BREW   | 0.12.4 | https://github.com/mhx/dwarfs |
+| PPKG   | 0.12.4 ⚠️ | https://github.com/mhx/dwarfs/releases/download/v0.12.4/dwarfs-0.12.4.tar.xz |
+| BREW   | **0.13.0** | https://github.com/mhx/dwarfs |
+
+*Outdated*
 
 ## e2fsprogs
 
@@ -1867,7 +1869,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.28.3 ⚠️ | https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.3.tar.gz |
-| BREW   | **0.28.5** | https://exiv2.org/ |
+| BREW   | **0.28.6** | https://exiv2.org/ |
 
 *Outdated*
 
@@ -1995,7 +1997,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.10.3 ⚠️ | https://feh.finalrewind.org/feh-3.10.3.tar.bz2 |
-| BREW   | **3.11** | https://feh.finalrewind.org/ |
+| BREW   | **3.11.1** | https://feh.finalrewind.org/ |
 
 *Outdated*
 
@@ -2134,8 +2136,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.16.0 ✅ | https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz |
-| BREW   | 2.16.0 | https://wiki.freedesktop.org/www/Software/fontconfig/ |
+| PPKG   | 2.16.0 ⚠️ | https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz |
+| BREW   | **2.17.1** | https://wiki.freedesktop.org/www/Software/fontconfig/ |
+
+*Outdated*
 
 ## fontforge
 
@@ -4636,7 +4640,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.29 ⚠️ | null |
+| PPKG   | 2025.08.30 ⚠️ | null |
 | BREW   | **1.15.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5806,7 +5810,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.688** | https://luau.org |
+| BREW   | **0.689** | https://luau.org |
 
 *Outdated*
 
@@ -6705,7 +6709,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.29 ⚠️ | null |
+| PPKG   | 2025.08.30 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6872,7 +6876,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.29 ⚠️ | null |
+| PPKG   | 2025.08.30 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7015,7 +7019,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.3.9 ⚠️ | https://files.pythonhosted.org/packages/6f/c9/ed4c246612b0e42afe8fad52a2dddde28f1389997c043e8cf8d414d5a0ee/psutils-3.3.9.tar.gz |
-| BREW   | **3.3.11** | https://github.com/rrthomas/psutils |
+| BREW   | **3.3.12** | https://github.com/rrthomas/psutils |
 
 *Outdated*
 
@@ -7034,7 +7038,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.29 ⚠️ | null |
+| PPKG   | 2025.08.30 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7305,7 +7309,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.84 ⚠️ | https://github.com/mentebinaria/readpe/archive/refs/tags/v0.84.tar.gz |
-| BREW   | **0.85** | https://github.com/mentebinaria/readpe |
+| BREW   | **0.85.1** | https://github.com/mentebinaria/readpe |
 
 *Outdated*
 

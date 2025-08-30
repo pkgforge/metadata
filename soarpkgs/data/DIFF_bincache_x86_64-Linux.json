@@ -421,7 +421,7 @@
       "debian",
       "packaging"
     ],
-    "version": "HEAD-94a600c-250829T103502"
+    "version": "HEAD-d3bed78-250830T192252"
   },
   {
     "_disabled": "false",
@@ -1708,7 +1708,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-8364ff4-250830T073854"
+    "version": "HEAD-316a77c-250830T154404"
   },
   {
     "_disabled": "false",
@@ -3087,7 +3087,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-7d2d674-250830T132743"
+    "version": "HEAD-e6276c6-250830T150741"
   },
   {
     "_disabled": "false",
@@ -3404,7 +3404,7 @@
       "busybox",
       "coreutils"
     ],
-    "version": "HEAD-7d2d674-250830T132743"
+    "version": "HEAD-e6276c6-250830T150741"
   },
   {
     "_disabled": "true",
@@ -5502,7 +5502,7 @@
     "tag": [
       "utility"
     ],
-    "version": "HEAD-b6d2455-250829T095306"
+    "version": "HEAD-30b3525-250830T152124"
   },
   {
     "_disabled": "false",
@@ -6748,7 +6748,7 @@
     "tag": [
       "github"
     ],
-    "version": "HEAD-6da8899-250830T120337"
+    "version": "HEAD-82015c3-250830T180409"
   },
   {
     "_disabled": "false",
@@ -6807,7 +6807,7 @@
     "tag": [
       "git"
     ],
-    "version": "HEAD-fc57b26-250829T075747"
+    "version": "HEAD-ccd0fc8-250830T083424"
   },
   {
     "_disabled": "false",
@@ -8118,6 +8118,70 @@
   },
   {
     "_disabled": "false",
+    "pkg": "hurl",
+    "pkg_family": "hurl",
+    "pkg_id": "nixpkgs.hurl",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-hurl/hurl/hurl",
+    "bincache": "ghcr.io/pkgforge/bincache/hurl/nixpkgs/hurl",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/hurl/static.nixpkgs.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "CLI to run HTTP requests defined in simple plain text format",
+    "distro_pkg": {
+      "alpine": [
+        "hurl"
+      ],
+      "archlinux": {
+        "extra": [
+          "hurl"
+        ]
+      },
+      "nixpkgs": [
+        "hurl"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/hurl/static.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://hurl.dev",
+      "https://github.com/Orange-OpenSource/hurl"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD",
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nix. Check/Report @ https://github.com/NixOS/nixpkgs"
+    ],
+    "provides": [
+      "hurl",
+      "hurlfmt"
+    ],
+    "repology": [
+      "hurl-http-requester"
+    ],
+    "src_url": [
+      "https://github.com/Orange-OpenSource/hurl"
+    ],
+    "tag": [
+      "api-testing",
+      "http-client"
+    ],
+    "version": "7.0.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "husarnet",
     "pkg_family": "husarnet",
     "pkg_id": "github.com.husarnet.husarnet",
@@ -8638,7 +8702,7 @@
     "tag": [
       "kubernetes"
     ],
-    "version": "HEAD-eed0cb8-250829T172736"
+    "version": "HEAD-af27aff-250830T082826"
   },
   {
     "_disabled": "false",
@@ -8691,6 +8755,63 @@
       "math"
     ],
     "version": "HEAD-4afeae5-250829T133201"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "katana",
+    "pkg_family": "katana",
+    "pkg_id": "github.com.projectdiscovery.katana",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/projectdiscovery-katana/katana/katana",
+    "bincache": "ghcr.io/pkgforge/bincache/katana/official/katana",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/katana/static.official.source.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Crawling and spidering framework",
+    "distro_pkg": {
+      "alpine": [
+        "katana"
+      ],
+      "archlinux": {
+        "aur": [
+          "katana-git"
+        ]
+      },
+      "nixpkgs": [
+        "katana"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/katana/static.official.source.yaml",
+    "homepage": [
+      "https://github.com/projectdiscovery/katana"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/projectdiscovery/katana"
+    ],
+    "repology": [
+      "katana-crawling"
+    ],
+    "src_url": [
+      "https://github.com/projectdiscovery/katana"
+    ],
+    "tag": [
+      "crawler",
+      "spider"
+    ],
+    "version": "HEAD-6253b22-250830T221435"
   },
   {
     "_disabled": "false",
@@ -9146,6 +9267,52 @@
   },
   {
     "_disabled": "false",
+    "pkg": "lnav",
+    "pkg_family": "lnav",
+    "pkg_id": "github.com.tstack.lnav",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/tstack-lnav/lnav/lnav",
+    "bincache": "ghcr.io/pkgforge/bincache/lnav/official/lnav",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/lnav/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Log file navigator",
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/lnav/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/tstack/lnav"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-2-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/tstack/lnav"
+    ],
+    "provides": [
+      "lnav"
+    ],
+    "repology": [
+      "lnav"
+    ],
+    "src_url": [
+      "https://github.com/tstack/lnav"
+    ],
+    "tag": [
+      "log"
+    ],
+    "version": "v0.13.1-rc1"
+  },
+  {
+    "_disabled": "false",
     "pkg": "loki",
     "pkg_family": "loki",
     "pkg_id": "github.com.grafana.loki",
@@ -9265,7 +9432,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-e472b9a-241112T170753"
+    "version": "HEAD-7b94f48-250830T175206"
   },
   {
     "_disabled": "false",
@@ -10629,7 +10796,8 @@
     ],
     "tag": [
       "tunnel"
-    ]
+    ],
+    "version": "3.27.0"
   },
   {
     "_disabled": "false",
@@ -12139,7 +12307,7 @@
       "csv",
       "textproc"
     ],
-    "version": "HEAD-23a7025-250830T081925"
+    "version": "HEAD-5700deb-250830T094744"
   },
   {
     "_disabled": "false",
@@ -13609,7 +13777,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-89ab72b-250829T200431"
+    "version": "HEAD-85d1e1a-250830T095929"
   },
   {
     "_disabled": "false",
@@ -14539,7 +14707,7 @@
       "debugger",
       "strace"
     ],
-    "version": "HEAD-cff1133-250830T071957"
+    "version": "HEAD-1a978ba-250830T231330"
   },
   {
     "_disabled": "false",
@@ -15223,6 +15391,65 @@
       "postgres"
     ],
     "version": "HEAD-8791067-241231T014152"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "vtm",
+    "pkg_family": "vtm",
+    "pkg_id": "github.com.directvt.vtm",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/directvt-vtm/vtm/vtm",
+    "bincache": "ghcr.io/pkgforge/bincache/vtm/official/vtm",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/vtm/static.official.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Terminal multiplexer with TUI window manager and multi-party session sharing",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vtm",
+          "vtm-bin",
+          "vtm-git"
+        ]
+      },
+      "nixpkgs": [
+        "vtm"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/vtm/static.official.stable.yaml",
+    "homepage": [
+      "https://github.com/directvt/vtm"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Pre Built Binary Fetched from Upstream. Check/Report @ https://github.com/directvt/vtm"
+    ],
+    "provides": [
+      "vtm"
+    ],
+    "repology": [
+      "vtm"
+    ],
+    "src_url": [
+      "https://github.com/directvt/vtm"
+    ],
+    "tag": [
+      "multiplexer",
+      "terminal"
+    ],
+    "version": "v2025.08.30"
   },
   {
     "_disabled": "false",

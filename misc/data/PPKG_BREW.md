@@ -2984,7 +2984,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.24.43 ⚠️ | https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz |
-| BREW   | **3.24.49** | https://gtk.org/ |
+| BREW   | **3.24.50** | https://gtk.org/ |
 
 *Outdated*
 

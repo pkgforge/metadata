@@ -310,7 +310,7 @@
   17M   │ │ ├── CONDA_RAW.json
   11M   │ │ ├── ALPINE_PKG.json
   10M   │ │ ├── NIXPKGS.json
- 9.1M   │ │ ├── PKGSRC.json
+ 9.0M   │ │ ├── PKGSRC.json
  5.2M   │ │ ├── ALPINE_GIT.json
  2.8M   │ │ ├── BREW_FORMULA.json
  1.6M   │ │ ├── BREW_CASK.json
@@ -442,7 +442,7 @@
  180K   │ │ ├── INDEX.db.xz
  116K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
  100K   │ │ ├── COMP_VER_CACHE_OLD.md
-  80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
+  76K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
   60K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
   52K   │ │ ├── URLS.txt
   48K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json

@@ -5,7 +5,7 @@
 1012M   │ │ ├─┬ data
   89M   │ │ │ ├── x86_64-Linux.json
   88M   │ │ │ ├── riscv64-Linux.json
-  87M   │ │ │ ├── aarch64-Linux.json
+  88M   │ │ │ ├── aarch64-Linux.json
   87M   │ │ │ ├── loongarch64-Linux.json
   71M   │ │ │ ├── x86_64-Linux.db
   71M   │ │ │ ├── riscv64-Linux.db

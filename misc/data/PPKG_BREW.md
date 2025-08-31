@@ -3928,7 +3928,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.11.0 ⚠️ | https://github.com/PJK/libcbor/archive/refs/tags/v0.11.0.tar.gz |
-| BREW   | **0.12.0** | https://github.com/PJK/libcbor |
+| BREW   | **0.13.0** | https://github.com/PJK/libcbor |
 
 *Outdated*
 
@@ -4643,7 +4643,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.08.31 ⚠️ | null |
-| BREW   | **1.15.0** | https://nghttp2.org/ngtcp2/ |
+| BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
 

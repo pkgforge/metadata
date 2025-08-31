@@ -5,7 +5,7 @@
 1012M   │ │ ├─┬ data
   89M   │ │ │ ├── x86_64-Linux.json
   88M   │ │ │ ├── riscv64-Linux.json
-  88M   │ │ │ ├── aarch64-Linux.json
+  87M   │ │ │ ├── aarch64-Linux.json
   87M   │ │ │ ├── loongarch64-Linux.json
   71M   │ │ │ ├── x86_64-Linux.db
   71M   │ │ │ ├── riscv64-Linux.db
@@ -321,7 +321,7 @@
  340K   │ │ ├── PPKG.json
  276K   │ │ ├── PPKG_BREW.md
  240K   │ │ ├── FLATPAK_POPULAR.json
- 216K   │ │ ├── FLATPAK_TRENDING.json
+ 224K   │ │ ├── FLATPAK_TRENDING.json
   76K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md

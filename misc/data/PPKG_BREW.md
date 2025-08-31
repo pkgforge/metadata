@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.30 ⚠️ | null |
+| PPKG   | 2025.08.31 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2994,8 +2994,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.18.6 ✅ | https://download.gnome.org/sources/gtk/4.18/gtk-4.18.6.tar.xz |
-| BREW   | 4.18.6 | https://gtk.org/ |
+| PPKG   | 4.18.6 ⚠️ | https://download.gnome.org/sources/gtk/4.18/gtk-4.18.6.tar.xz |
+| BREW   | **4.20.0** | https://gtk.org/ |
+
+*Outdated*
 
 ## guile
 
@@ -3295,7 +3297,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.1.1.47 ⚠️ | https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz |
-| BREW   | **7.1.2-2** | https://imagemagick.org/index.php |
+| BREW   | **7.1.2-3** | https://imagemagick.org/index.php |
 
 *Outdated*
 
@@ -4070,7 +4072,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | https://gitlab.gnome.org/GNOME/libdex/-/archive/0.9.0/libdex-0.9.0.tar.gz |
-| BREW   | **0.10.1** | https://gitlab.gnome.org/GNOME/libdex |
+| BREW   | **1.0.0** | https://gitlab.gnome.org/GNOME/libdex |
 
 *Outdated*
 
@@ -4640,7 +4642,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.30 ⚠️ | null |
+| PPKG   | 2025.08.31 ⚠️ | null |
 | BREW   | **1.15.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6688,7 +6690,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | **1.13.0** | https://oxc.rs/ |
+| BREW   | **1.14.0** | https://oxc.rs/ |
 
 *Outdated*
 
@@ -6709,7 +6711,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.30 ⚠️ | null |
+| PPKG   | 2025.08.31 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6876,7 +6878,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.30 ⚠️ | null |
+| PPKG   | 2025.08.31 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7038,7 +7040,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.30 ⚠️ | null |
+| PPKG   | 2025.08.31 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

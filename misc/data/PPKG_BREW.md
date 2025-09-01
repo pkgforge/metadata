@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.31 ⚠️ | null |
+| PPKG   | 2025.09.01 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -541,8 +541,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.72.0 ✅ | https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.0.tar.gz |
-| BREW   | 0.72.0 | https://rust-lang.github.io/rust-bindgen/ |
+| PPKG   | 0.72.0 ⚠️ | https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.0.tar.gz |
+| BREW   | **0.72.1** | https://rust-lang.github.io/rust-bindgen/ |
+
+*Outdated*
 
 ## binocle
 
@@ -1869,7 +1871,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.28.3 ⚠️ | https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.3.tar.gz |
-| BREW   | **0.28.6** | https://exiv2.org/ |
+| BREW   | **0.28.7** | https://exiv2.org/ |
 
 *Outdated*
 
@@ -1889,7 +1891,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.0 ⚠️ | https://github.com/eza-community/eza/archive/refs/tags/v0.19.0.tar.gz |
-| BREW   | **0.23.0** | https://github.com/eza-community/eza |
+| BREW   | **0.23.1** | https://github.com/eza-community/eza |
 
 *Outdated*
 
@@ -2232,7 +2234,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | https://github.com/antonmedv/fx/archive/refs/tags/35.0.0.tar.gz |
-| BREW   | **39.0.3** | https://fx.wtf |
+| BREW   | **39.0.4** | https://fx.wtf |
 
 *Outdated*
 
@@ -2243,7 +2245,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.62.0 ⚠️ | https://github.com/junegunn/fzf/archive/refs/tags/v0.62.0.tar.gz |
-| BREW   | **0.65.1** | https://github.com/junegunn/fzf |
+| BREW   | **0.65.2** | https://github.com/junegunn/fzf |
 
 *Outdated*
 
@@ -2265,7 +2267,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.12.1 ⚠️ | https://github.com/burrowers/garble/archive/refs/tags/v0.12.1.tar.gz |
-| BREW   | **0.14.2** | https://github.com/burrowers/garble |
+| BREW   | **0.15.0** | https://github.com/burrowers/garble |
 
 *Outdated*
 
@@ -4642,7 +4644,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.31 ⚠️ | null |
+| PPKG   | 2025.09.01 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6711,7 +6713,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.31 ⚠️ | null |
+| PPKG   | 2025.09.01 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6878,7 +6880,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.31 ⚠️ | null |
+| PPKG   | 2025.09.01 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7040,7 +7042,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.08.31 ⚠️ | null |
+| PPKG   | 2025.09.01 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

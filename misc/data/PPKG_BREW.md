@@ -36,7 +36,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.2.62 ⚠️ | https://github.com/nektos/act/archive/refs/tags/v0.2.62.tar.gz |
-| BREW   | **0.2.80** | https://github.com/nektos/act |
+| BREW   | **0.2.81** | https://github.com/nektos/act |
 
 *Outdated*
 
@@ -2170,7 +2170,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.12.0 ⚠️ | https://github.com/FreeRDP/FreeRDP/releases/download/3.12.0/freerdp-3.12.0.tar.gz |
-| BREW   | **3.17.0** | https://www.freerdp.com/ |
+| BREW   | **3.17.1** | https://www.freerdp.com/ |
 
 *Outdated*
 
@@ -2418,7 +2418,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.2 ⚠️ | https://github.com/gogf/gf/archive/refs/tags/v2.7.2.tar.gz |
-| BREW   | **2.9.1** | https://goframe.org |
+| BREW   | **2.9.2** | https://goframe.org |
 
 *Outdated*
 
@@ -3446,7 +3446,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.78.7** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.78.8** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -8150,7 +8150,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.8.2 ⚠️ | https://github.com/tinysearch/tinysearch/archive/refs/tags/v0.8.2.tar.gz |
-| BREW   | **0.9.0** | https://github.com/tinysearch/tinysearch |
+| BREW   | **0.10.0** | https://github.com/tinysearch/tinysearch |
 
 *Outdated*
 
@@ -8161,7 +8161,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.1.0 ⚠️ | https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz |
-| BREW   | **1.2.0** | https://tl.tartanllama.xyz/en/latest/ |
+| BREW   | **1.3.1** | https://tl.tartanllama.xyz/en/latest/ |
 
 *Outdated*
 

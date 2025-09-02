@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.01 ⚠️ | null |
+| PPKG   | 2025.09.02 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1223,7 +1223,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.18.3 ⚠️ | https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.18.3.tar.gz |
+| PPKG   | 0.25.0 ⚠️ | https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.25.0.tar.gz |
 | BREW   | **0.26.0** | https://github.com/yhirose/cpp-httplib |
 
 *Outdated*
@@ -1642,10 +1642,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.22.20 ⚠️ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.20.tar.xz |
-| BREW   | **1.22.21** | https://wiki.debian.org/Teams/Dpkg |
-
-*Outdated*
+| PPKG   | 1.22.21 ✅ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.21.tar.xz |
+| BREW   | 1.22.21 | https://wiki.debian.org/Teams/Dpkg |
 
 ## dra
 
@@ -1760,7 +1758,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookexperimental/edencommon/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.25.00** | https://github.com/facebookexperimental/edencommon |
+| BREW   | **2025.09.01.00** | https://github.com/facebookexperimental/edencommon |
 
 *Outdated*
 
@@ -1946,7 +1944,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fb303/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.25.00** | https://github.com/facebook/fb303 |
+| BREW   | **2025.09.01.00** | https://github.com/facebook/fb303 |
 
 *Outdated*
 
@@ -1957,7 +1955,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fbthrift/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.25.00** | https://github.com/facebook/fbthrift |
+| BREW   | **2025.09.01.00** | https://github.com/facebook/fbthrift |
 
 *Outdated*
 
@@ -2070,7 +2068,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/fizz/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.25.00** | https://github.com/facebookincubator/fizz |
+| BREW   | **2025.09.01.00** | https://github.com/facebookincubator/fizz |
 
 *Outdated*
 
@@ -4644,7 +4642,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.01 ⚠️ | null |
+| PPKG   | 2025.09.02 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6174,7 +6172,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/mvfst/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.25.00** | https://github.com/facebook/mvfst |
+| BREW   | **2025.09.01.00** | https://github.com/facebook/mvfst |
 
 *Outdated*
 
@@ -6630,7 +6628,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.15.0 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v2.5.15.0.tar.gz |
-| BREW   | **3.0.9.1** | https://openimageio.readthedocs.io/en/stable/ |
+| BREW   | **3.0.10.0** | https://openimageio.readthedocs.io/en/stable/ |
 
 *Outdated*
 
@@ -6713,7 +6711,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.01 ⚠️ | null |
+| PPKG   | 2025.09.02 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6880,7 +6878,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.01 ⚠️ | null |
+| PPKG   | 2025.09.02 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7042,7 +7040,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.01 ⚠️ | null |
+| PPKG   | 2025.09.02 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7412,7 +7410,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.7.8 ⚠️ | https://github.com/davatorium/rofi/releases/download/1.7.8/rofi-1.7.8.tar.xz |
-| BREW   | **1.7.9.1** | https://davatorium.github.io/rofi/ |
+| BREW   | **2.0.0** | https://davatorium.github.io/rofi/ |
 
 *Outdated*
 
@@ -8665,7 +8663,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/wangle/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.25.00** | https://github.com/facebook/wangle |
+| BREW   | **2025.09.01.00** | https://github.com/facebook/wangle |
 
 *Outdated*
 
@@ -8727,7 +8725,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/watchman/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.08.25.00** | https://github.com/facebook/watchman |
+| BREW   | **2025.09.01.00** | https://github.com/facebook/watchman |
 
 *Outdated*
 

@@ -3,36 +3,36 @@
  1.2G   ├─┬ external
  1.0G   │ ├─┬ pkgforge-go
  1.0G   │ │ ├─┬ data
-  91M   │ │ │ ├── x86_64-Linux.json
-  91M   │ │ │ ├── riscv64-Linux.json
-  90M   │ │ │ ├── aarch64-Linux.json
-  89M   │ │ │ ├── loongarch64-Linux.json
-  74M   │ │ │ ├── x86_64-Linux.db
-  73M   │ │ │ ├── riscv64-Linux.db
-  73M   │ │ │ ├── aarch64-Linux.db
-  72M   │ │ │ ├── loongarch64-Linux.db
+  93M   │ │ │ ├── x86_64-Linux.json
+  92M   │ │ │ ├── riscv64-Linux.json
+  92M   │ │ │ ├── aarch64-Linux.json
+  91M   │ │ │ ├── loongarch64-Linux.json
+  75M   │ │ │ ├── x86_64-Linux.db
+  74M   │ │ │ ├── riscv64-Linux.db
+  74M   │ │ │ ├── aarch64-Linux.db
+  74M   │ │ │ ├── loongarch64-Linux.db
   65M   │ │ │ ├── x86_64-Linux.sdb
-  64M   │ │ │ ├── riscv64-Linux.sdb
+  65M   │ │ │ ├── riscv64-Linux.sdb
   64M   │ │ │ ├── aarch64-Linux.sdb
   63M   │ │ │ ├── loongarch64-Linux.sdb
  6.6M   │ │ │ ├── x86_64-Linux.sdb.zstd
  6.5M   │ │ │ ├── riscv64-Linux.sdb.zstd
- 6.4M   │ │ │ ├── aarch64-Linux.sdb.zstd
- 6.3M   │ │ │ ├── loongarch64-Linux.sdb.zstd
+ 6.5M   │ │ │ ├── aarch64-Linux.sdb.zstd
+ 6.4M   │ │ │ ├── loongarch64-Linux.sdb.zstd
  6.2M   │ │ │ ├── x86_64-Linux.db.zstd
+ 6.2M   │ │ │ ├── riscv64-Linux.db.zstd
  6.1M   │ │ │ ├── x86_64-Linux.sdb.xz
- 6.1M   │ │ │ ├── riscv64-Linux.db.zstd
  6.1M   │ │ │ ├── aarch64-Linux.db.zstd
- 6.0M   │ │ │ ├── riscv64-Linux.sdb.xz
+ 6.1M   │ │ │ ├── riscv64-Linux.sdb.xz
  6.0M   │ │ │ ├── aarch64-Linux.sdb.xz
- 5.9M   │ │ │ ├── loongarch64-Linux.db.zstd
- 5.9M   │ │ │ ├── x86_64-Linux.db.xz
+ 6.0M   │ │ │ ├── loongarch64-Linux.db.zstd
+ 6.0M   │ │ │ ├── x86_64-Linux.db.xz
  5.9M   │ │ │ ├── loongarch64-Linux.sdb.xz
- 5.8M   │ │ │ ├── riscv64-Linux.db.xz
- 5.8M   │ │ │ ├── aarch64-Linux.db.xz
+ 5.9M   │ │ │ ├── riscv64-Linux.db.xz
+ 5.9M   │ │ │ ├── aarch64-Linux.db.xz
  5.7M   │ │ │ ├── loongarch64-Linux.db.xz
  5.6M   │ │ │ ├── x86_64-Linux.json.zstd
- 5.5M   │ │ │ ├── riscv64-Linux.json.zstd
+ 5.6M   │ │ │ ├── riscv64-Linux.json.zstd
  5.5M   │ │ │ ├── aarch64-Linux.json.zstd
  5.4M   │ │ │ ├── loongarch64-Linux.json.zstd
  2.3M   │ │ │ ├── x86_64-Linux.json.xz

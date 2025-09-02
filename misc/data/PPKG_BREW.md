@@ -1838,7 +1838,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.13.14 ⚠️ | https://github.com/ethereum/go-ethereum/archive/refs/tags/v1.13.14.tar.gz |
-| BREW   | **1.16.2** | https://geth.ethereum.org/ |
+| BREW   | **1.16.3** | https://geth.ethereum.org/ |
 
 *Outdated*
 
@@ -6857,7 +6857,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.53.0** | https://pixi.sh |
+| BREW   | **0.54.0** | https://pixi.sh |
 
 *Outdated*
 
@@ -7957,7 +7957,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.3** | https://syncthing.net/ |
+| BREW   | **2.0.4** | https://syncthing.net/ |
 
 *Outdated*
 
@@ -8873,8 +8873,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | r3108 ✅ | null |
-| BREW   | r3108 | https://www.videolan.org/developers/x264.html |
+| PPKG   | r3108 ⚠️ | null |
+| BREW   | **r3222** | https://www.videolan.org/developers/x264.html |
+
+*Outdated*
 
 ## x265
 

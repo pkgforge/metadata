@@ -132,6 +132,63 @@
   },
   {
     "_disabled": "false",
+    "pkg": "amdgpu_top",
+    "pkg_family": "amdgpu_top",
+    "pkg_id": "github.com.Umio-Yasuno.amdgpu_top",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yasuno-amdgpu_top/amdgpu_top/amdgpu_top",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/amdgpu_top/appimage.official.stable.yaml",
+    "category": [
+      "Monitor",
+      "Utility"
+    ],
+    "description": "Tool to display AMDGPU usage",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "amdgpu_top",
+          "amdgpu_top-git"
+        ]
+      },
+      "nixpkgs": [
+        "amdgpu_top"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/amdgpu_top/appimage.official.stable.yaml",
+    "homepage": [
+      "https://github.com/Umio-Yasuno/amdgpu_top"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/amdgpu_top/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/Umio-Yasuno/amdgpu_top"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/amdgpu_top/appimage/official",
+    "provides": [
+      "amdgpu_top"
+    ],
+    "repology": [
+      "amdgpu-top"
+    ],
+    "src_url": [
+      "https://github.com/Umio-Yasuno/amdgpu_top"
+    ],
+    "tag": [
+      "monitor",
+      "top"
+    ],
+    "version": "v0.11.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "android-tools",
     "pkg_family": "android-tools",
     "pkg_id": "github.com.pkgforge-dev.android-tools-AppImage.stable",
@@ -372,7 +429,7 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "v1.84.12"
+    "version": "v1.84.15"
   },
   {
     "_disabled": "false",
@@ -1153,6 +1210,135 @@
     "_disabled": "false",
     "pkg": "firefox",
     "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.beta",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-beta/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (Beta)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "firefox-beta-bin"
+        ]
+      },
+      "homebrew": [
+        "firefox@beta"
+      ],
+      "nixpkgs": [
+        "firefox-beta",
+        "firefox-beta-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.beta.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-beta"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "143.0.20250901090535"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
+    "pkg_id": "github.com.srevinsaju.Firefox-Appimage.dev",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-dev/firefox/firefox",
+    "app_id": "org.mozilla.firefox",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "A web browser built from Firefox source tree (DEV)",
+    "distro_pkg": {
+      "alpine": [
+        "firefox-developer-edition"
+      ],
+      "archlinux": {
+        "extra": [
+          "firefox-developer-edition"
+        ]
+      },
+      "homebrew": [
+        "firefox@developer-edition"
+      ],
+      "nixpkgs": [
+        "firefox-devedition",
+        "firefox-devedition-bin"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/firefox/appimage.srevinsaju.dev.yaml",
+    "homepage": [
+      "http://www.mozilla.com",
+      "https://hg.mozilla.org/mozilla-central",
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/firefox/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Fetched from Pre Built Community Created AppImage. Check/Report @ https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/firefox/appimage/srevinsaju",
+    "provides": [
+      "firefox=>firefox-dev"
+    ],
+    "repology": [
+      "firefox"
+    ],
+    "src_url": [
+      "https://github.com/srevinsaju/Firefox-Appimage"
+    ],
+    "tag": [
+      "browser",
+      "Networking/WWW",
+      "network.web.browser"
+    ],
+    "version": "143.0.20250901090535"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "firefox",
+    "pkg_family": "firefox",
     "pkg_id": "github.com.srevinsaju.Firefox-Appimage.nightly",
     "pkg_type": "appimage",
     "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/appimage-nightly/firefox/firefox",
@@ -1207,7 +1393,63 @@
       "Networking/WWW",
       "network.web.browser"
     ],
-    "version": "144.0.20250901094023"
+    "version": "144.0.20250901162158"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "funkin",
+    "pkg_family": "funkin",
+    "pkg_id": "runimage.debian.funkin",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/debian-funkin/funkin/funkin",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/funkin/runimage.debian.stable.yaml",
+    "category": [
+      "Game"
+    ],
+    "description": "Friday Night Funkin: A rhythm game",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "funkin",
+          "funkin-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/funkin/runimage.debian.stable.yaml",
+    "homepage": [
+      "https://www.newgrounds.com/portal/view/770371",
+      "https://github.com/FunkinCrew/Funkin"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/funkin/assets/default.png",
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [debian]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/funkin/runimage/debian",
+    "provides": [
+      "funkin==Funkin"
+    ],
+    "repology": [
+      "funkin"
+    ],
+    "src_url": [
+      "https://github.com/FunkinCrew/Funkin"
+    ],
+    "tag": [
+      "game"
+    ],
+    "version": "v0.7.4"
   },
   {
     "_disabled": "true",
@@ -1475,7 +1717,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250901T013257"
+    "version": "250902T004714"
   },
   {
     "_disabled": "false",
@@ -1537,7 +1779,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250901T013257"
+    "version": "250902T004714"
   },
   {
     "_disabled": "false",
@@ -1832,7 +2074,132 @@
       "replay-sorcery",
       "vkbasalt"
     ],
-    "version": "250901T011120"
+    "version": "250902T004347"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "gpt4all",
+    "pkg_family": "gpt4all",
+    "pkg_id": "runimage.cachyos.gpt4all.git",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/gpt4all-git/gpt4all/gpt4all",
+    "app_id": "io.gpt4all.gpt4all",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/gpt4all/runimage.cachyos.git.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Free-to-use, locally running, privacy-aware chatbot (Git)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "gpt4all-chat",
+          "gpt4all-chat-git"
+        ]
+      },
+      "homebrew": [
+        "gpt4all"
+      ],
+      "nixpkgs": [
+        "gpt4all",
+        "gpt4all-cuda"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/gpt4all/runimage.cachyos.git.yaml",
+    "homepage": [
+      "https://nomic.ai/gpt4all",
+      "https://github.com/nomic-ai/gpt4all"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/gpt4all/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/gpt4all/runimage/cachyos",
+    "provides": [
+      "gpt4all"
+    ],
+    "repology": [
+      "gpt4all",
+      "gpt4all-chat"
+    ],
+    "src_url": [
+      "https://aur.archlinux.org/packages/gpt4all-chat-git"
+    ],
+    "tag": [
+      "chat",
+      "llm"
+    ]
+  },
+  {
+    "_disabled": "false",
+    "pkg": "haguichi",
+    "pkg_family": "haguichi",
+    "pkg_id": "runimage.cachyos.haguichi",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-haguichi/haguichi/haguichi",
+    "app_id": "com.github.ztefn.haguichi",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/haguichi/runimage.cachyos.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Graphical frontend for Hamachi",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "haguichi",
+          "haguichi-git"
+        ]
+      },
+      "nixpkgs": [
+        "haguichi"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/haguichi/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://www.haguichi.net",
+      "https://github.com/ztefn/haguichi"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/haguichi/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/haguichi/runimage/cachyos",
+    "provides": [
+      "haguichi"
+    ],
+    "repology": [
+      "haguichi"
+    ],
+    "src_url": [
+      "https://aur.archlinux.org/packages/haguichi"
+    ],
+    "tag": [
+      "editor",
+      "graphics"
+    ]
   },
   {
     "_disabled": "false",
@@ -2077,7 +2444,7 @@
     "tag": [
       "editor"
     ],
-    "version": "2025-08-31"
+    "version": "2025-09-01"
   },
   {
     "_disabled": "true",
@@ -2575,7 +2942,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-2f62843-250831T214020"
+    "version": "HEAD-c13aba6-250902T013237"
   },
   {
     "_disabled": "false",
@@ -2655,6 +3022,74 @@
       "Video/Utilities"
     ],
     "version": "31.1.2-1@2025-09-01_1756711907"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "openboard",
+    "pkg_family": "openboard",
+    "pkg_id": "runimage.cachyos.openboard",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-openboard/openboard/openboard",
+    "app_id": "ch.openboard.OpenBoard",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/openboard/runimage.cachyos.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Interactive whiteboard software for schools and universities",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "openboard"
+        ]
+      },
+      "debian": [
+        "openboard"
+      ],
+      "gnuguix": [
+        "openboard"
+      ],
+      "homebrew": [
+        "openboard"
+      ],
+      "nixpkgs": [
+        "openboard"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/openboard/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://openboard.ch/",
+      "https://github.com/OpenBoard-org/OpenBoard"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/openboard/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/openboard/runimage/cachyos",
+    "provides": [
+      "openboard"
+    ],
+    "repology": [
+      "openboard"
+    ],
+    "src_url": [
+      "https://aur.archlinux.org/packages/openboard"
+    ],
+    "tag": [
+      "editor",
+      "graphics"
+    ]
   },
   {
     "_disabled": "false",
@@ -2943,6 +3378,63 @@
       "Utility"
     ],
     "version": "1.2.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "ruffle",
+    "pkg_family": "ruffle",
+    "pkg_id": "runimage.cachyos.ruffle.nightly",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ruffle-nightly/ruffle/ruffle",
+    "app_id": "rs.ruffle.Ruffle",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ruffle/runimage.cachyos.nightly.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Adobe Flash Player emulator",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "ruffle-bin",
+          "ruffle-git"
+        ]
+      }
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/ruffle/runimage.cachyos.nightly.yaml",
+    "homepage": [
+      "https://ruffle.rs",
+      "https://github.com/ruffle-rs/ruffle"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/ruffle/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/ruffle/runimage/cachyos",
+    "provides": [
+      "ruffle"
+    ],
+    "repology": [
+      "ruffle"
+    ],
+    "src_url": [
+      "https://github.com/ruffle-rs/ruffle"
+    ],
+    "tag": [
+      "adobe",
+      "flashplayer"
+    ]
   },
   {
     "_disabled": "false",
@@ -3316,6 +3808,70 @@
       "minecraft"
     ],
     "version": "250901T011249"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "vscodium",
+    "pkg_family": "vscodium",
+    "pkg_id": "runimage.cachyos.vscodium",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/cachyos-vscodium/vscodium/vscodium",
+    "app_id": "com.vscodium.codium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/vscodium/runimage.cachyos.stable.yaml",
+    "category": [
+      "IDE"
+    ],
+    "description": "Visual Studio Code without MS branding/telemetry/licensing",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "vscodium",
+          "vscodium-bin",
+          "vscodium-electron",
+          "vscodium-electron-bin",
+          "vscodium-git"
+        ]
+      },
+      "nixpkgs": [
+        "vscodium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/vscodium/runimage.cachyos.stable.yaml",
+    "homepage": [
+      "https://vscodium.com",
+      "https://github.com/VSCodium/vscodium"
+    ],
+    "host": [
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/vscodium/assets/default.png",
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [cachyos]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/vscodium/runimage/cachyos",
+    "provides": [
+      "vscodium==codium"
+    ],
+    "repology": [
+      "vscodium"
+    ],
+    "src_url": [
+      "https://github.com/VSCodium/vscodium"
+    ],
+    "tag": [
+      "code",
+      "editor",
+      "ide"
+    ]
   },
   {
     "_disabled": "false",

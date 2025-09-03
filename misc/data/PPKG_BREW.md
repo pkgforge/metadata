@@ -410,7 +410,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.02 ⚠️ | null |
+| PPKG   | 2025.09.03 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -520,7 +520,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 118 ⚠️ | https://github.com/WebAssembly/binaryen/archive/version_118.tar.gz |
-| BREW   | **123** | https://webassembly.org/ |
+| BREW   | **124** | https://webassembly.org/ |
 
 *Outdated*
 
@@ -1601,7 +1601,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.58.6** | https://github.com/dolthub/dolt |
+| BREW   | **1.58.7** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -3038,8 +3038,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.12.0 ✅ | https://github.com/hadolint/hadolint/archive/refs/tags/v2.12.0.tar.gz |
-| BREW   | 2.12.0 | https://github.com/hadolint/hadolint |
+| PPKG   | 2.12.0 ⚠️ | https://github.com/hadolint/hadolint/archive/refs/tags/v2.12.0.tar.gz |
+| BREW   | **2.13.1** | https://github.com/hadolint/hadolint |
+
+*Outdated*
 
 ## halibut
 
@@ -4642,7 +4644,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.02 ⚠️ | null |
+| PPKG   | 2025.09.03 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6711,7 +6713,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.02 ⚠️ | null |
+| PPKG   | 2025.09.03 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6878,7 +6880,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.02 ⚠️ | null |
+| PPKG   | 2025.09.03 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7040,7 +7042,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.02 ⚠️ | null |
+| PPKG   | 2025.09.03 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7957,7 +7959,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.4** | https://syncthing.net/ |
+| BREW   | **2.0.5** | https://syncthing.net/ |
 
 *Outdated*
 

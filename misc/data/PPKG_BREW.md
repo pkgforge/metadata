@@ -138,7 +138,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.299** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.300** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -1601,7 +1601,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.58.7** | https://github.com/dolthub/dolt |
+| BREW   | **1.58.8** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2416,7 +2416,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.2 ⚠️ | https://github.com/gogf/gf/archive/refs/tags/v2.7.2.tar.gz |
-| BREW   | **2.9.2** | https://goframe.org |
+| BREW   | **2.9.3** | https://goframe.org |
 
 *Outdated*
 
@@ -2788,7 +2788,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.1 ⚠️ | https://github.com/goreleaser/goreleaser/archive/refs/tags/v1.25.1.tar.gz |
-| BREW   | **2.11.2** | https://goreleaser.com/ |
+| BREW   | **2.12.0** | https://goreleaser.com/ |
 
 *Outdated*
 
@@ -4616,7 +4616,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.60.0 ⚠️ | https://github.com/nghttp2/nghttp2/releases/download/v1.60.0/nghttp2-1.60.0.tar.gz |
-| BREW   | **1.66.0** | https://nghttp2.org/ |
+| BREW   | **1.67.0** | https://nghttp2.org/ |
 
 *Outdated*
 
@@ -6314,7 +6314,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.64.0 ⚠️ | https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.gz |
-| BREW   | **1.66.0** | https://nghttp2.org/ |
+| BREW   | **1.67.0** | https://nghttp2.org/ |
 
 *Outdated*
 
@@ -6456,7 +6456,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.104.1 ⚠️ | https://github.com/nushell/nushell/archive/refs/tags/0.104.1.tar.gz |
-| BREW   | **0.106.1** | https://www.nushell.sh |
+| BREW   | **0.107.0** | https://www.nushell.sh |
 
 *Outdated*
 
@@ -7023,7 +7023,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.3.9 ⚠️ | https://files.pythonhosted.org/packages/6f/c9/ed4c246612b0e42afe8fad52a2dddde28f1389997c043e8cf8d414d5a0ee/psutils-3.3.9.tar.gz |
-| BREW   | **3.3.12** | https://github.com/rrthomas/psutils |
+| BREW   | **3.3.13** | https://github.com/rrthomas/psutils |
 
 *Outdated*
 
@@ -7959,7 +7959,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.5** | https://syncthing.net/ |
+| BREW   | **2.0.6** | https://syncthing.net/ |
 
 *Outdated*
 
@@ -8623,7 +8623,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.319 ⚠️ | https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.319.tar.gz |
-| BREW   | **1.4.325** | https://github.com/KhronosGroup/Vulkan-Headers |
+| BREW   | **1.4.326** | https://github.com/KhronosGroup/Vulkan-Headers |
 
 *Outdated*
 

@@ -1,9 +1,8 @@
 ```mathematica
- 1.7G └─┬ main
- 1.2G   ├─┬ external
- 987M   │ ├─┬ pkgforge-go
- 987M   │ │ ├─┬ data
-  94M   │ │ │ ├── riscv64-Linux.json
+ 1.6G └─┬ main
+ 1.1G   ├─┬ external
+ 894M   │ ├─┬ pkgforge-go
+ 894M   │ │ ├─┬ data
   94M   │ │ │ ├── aarch64-Linux.json
   93M   │ │ │ ├── loongarch64-Linux.json
   77M   │ │ │ ├── x86_64-Linux.db
@@ -16,17 +15,17 @@
   65M   │ │ │ ├── loongarch64-Linux.sdb
  6.8M   │ │ │ ├── x86_64-Linux.sdb.zstd
  6.7M   │ │ │ ├── riscv64-Linux.sdb.zstd
- 6.6M   │ │ │ ├── aarch64-Linux.sdb.zstd
+ 6.7M   │ │ │ ├── aarch64-Linux.sdb.zstd
  6.5M   │ │ │ ├── loongarch64-Linux.sdb.zstd
  6.4M   │ │ │ ├── x86_64-Linux.db.zstd
- 6.3M   │ │ │ ├── riscv64-Linux.db.zstd
  6.3M   │ │ │ ├── x86_64-Linux.sdb.xz
+ 6.3M   │ │ │ ├── riscv64-Linux.db.zstd
  6.3M   │ │ │ ├── aarch64-Linux.db.zstd
  6.2M   │ │ │ ├── riscv64-Linux.sdb.xz
  6.2M   │ │ │ ├── aarch64-Linux.sdb.xz
  6.1M   │ │ │ ├── loongarch64-Linux.db.zstd
  6.1M   │ │ │ ├── x86_64-Linux.db.xz
- 6.0M   │ │ │ ├── loongarch64-Linux.sdb.xz
+ 6.1M   │ │ │ ├── loongarch64-Linux.sdb.xz
  6.0M   │ │ │ ├── riscv64-Linux.db.xz
  6.0M   │ │ │ ├── aarch64-Linux.db.xz
  5.9M   │ │ │ ├── loongarch64-Linux.db.xz
@@ -309,7 +308,7 @@
   17M   │ │ ├── CONDA_RAW.json
   12M   │ │ ├── NIXPKGS.json
   11M   │ │ ├── ALPINE_PKG.json
- 9.1M   │ │ ├── PKGSRC.json
+ 9.0M   │ │ ├── PKGSRC.json
  5.2M   │ │ ├── ALPINE_GIT.json
  2.8M   │ │ ├── BREW_FORMULA.json
  1.6M   │ │ ├── BREW_CASK.json

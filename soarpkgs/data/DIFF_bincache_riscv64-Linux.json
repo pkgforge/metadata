@@ -688,7 +688,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.09.01"
+    "version": "2025.09.02"
   },
   {
     "_disabled": "false",
@@ -2475,6 +2475,144 @@
   },
   {
     "_disabled": "false",
+    "pkg": "dpkg",
+    "pkg_family": "dpkg",
+    "pkg_id": "ppkg.dpkg",
+    "pkg_type": "static",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/ppkg-dpkg/dpkg/dpkg",
+    "bincache": "ghcr.io/pkgforge/bincache/dpkg/ppkg/dpkg",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/binaries/dpkg/static.ppkg.stable.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": {
+      "_default": "Debian package manager tools",
+      "dpkg": "Package Manager for Debian [dpkg]",
+      "dpkg-architecture": "Set and Determine the architecture for package building [dpkg]",
+      "dpkg-buildapi": "Returns the build API level to use during package build [dpkg]",
+      "dpkg-buildflags": "Return build flags to use during package build [dpkg]",
+      "dpkg-buildpackage": "Build binary or source packages from sources [dpkg]",
+      "dpkg-buildtree": "Perform common operations on the build tree for a source package [dpkg]",
+      "dpkg-checkbuilddeps": "Check build dependencies and conflicts [dpkg]",
+      "dpkg-deb": "Debian package archive (.deb) manipulation tool [dpkg]",
+      "dpkg-distaddfile": "Add entries to debian/files [dpkg]",
+      "dpkg-divert": "Override a package's version of a file [dpkg]",
+      "dpkg-fsys-usrunmess": "Undoes the merged-/usr-via-aliased-dirs mess [dpkg]",
+      "dpkg-genbuildinfo": "Generate Debian .buildinfo files [dpkg]",
+      "dpkg-genchanges": "Generate Debian .changes files [dpkg]",
+      "dpkg-gencontrol": "Generate Debian control files [dpkg]",
+      "dpkg-gensymbols": "Generate symbols files (shared library dependency information) [dpkg]",
+      "dpkg-maintscript-helper": "Works around known dpkg limitations in maintainer scripts [dpkg]",
+      "dpkg-mergechangelogs": "3-way merge of debian/changelog files [dpkg]",
+      "dpkg-name": "Rename Debian packages to full package names [dpkg]",
+      "dpkg-parsechangelog": "Parse Debian changelog files [dpkg]",
+      "dpkg-query": "A tool to query the dpkg database [dpkg]",
+      "dpkg-realpath": "Print the resolved pathname with DPKG_ROOT support [dpkg]",
+      "dpkg-scanpackages": "Create Packages index files [dpkg]",
+      "dpkg-scansources": "Create Sources index files [dpkg]",
+      "dpkg-shlibdeps": "Generate shared library substvar dependencies [dpkg]",
+      "dpkg-source": "Debian source package (.dsc) manipulation tool [dpkg]",
+      "dpkg-split": "Debian package archive split/join tool [dpkg]",
+      "dpkg-statoverride": "Override ownership and mode of files [dpkg]",
+      "dpkg-trigger": "A package trigger utility [dpkg]",
+      "dpkg-vendor": "Queries information about distribution vendors [dpkg]",
+      "dselect": "Debian package management frontend [dpkg]",
+      "start-stop-daemon": "Start and stop system daemon programs [dpkg]",
+      "update-alternatives": "Maintain symbolic links determining default commands [dpkg]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "dpkg"
+      ],
+      "archlinux": {
+        "aur": [
+          "dpkg-git"
+        ],
+        "extra": [
+          "dpkg"
+        ]
+      },
+      "debian": [
+        "dpkg"
+      ],
+      "gnuguix": [
+        "dpkg"
+      ],
+      "homebrew": [
+        "dpkg"
+      ],
+      "nixpkgs": [
+        "dpkg"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/binaries/dpkg/static.ppkg.stable.yaml",
+    "homepage": [
+      "https://wiki.debian.org/dpkg",
+      "https://gitlab.com/gnuwget/dpkg"
+    ],
+    "host": [
+      "aarch64-linux",
+      "riscv64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using ppkg. Check/Report @ https://github.com/leleliu008/ppkg-formula-repository-official-core"
+    ],
+    "provides": [
+      "dpkg",
+      "dpkg-architecture",
+      "dpkg-buildapi",
+      "dpkg-buildflags",
+      "dpkg-buildpackage",
+      "dpkg-buildtree",
+      "dpkg-checkbuilddeps",
+      "dpkg-deb",
+      "dpkg-distaddfile",
+      "dpkg-divert",
+      "dpkg-fsys-usrunmess",
+      "dpkg-genbuildinfo",
+      "dpkg-genchanges",
+      "dpkg-gencontrol",
+      "dpkg-gensymbols",
+      "dpkg-maintscript-helper",
+      "dpkg-mergechangelogs",
+      "dpkg-name",
+      "dpkg-parsechangelog",
+      "dpkg-query",
+      "dpkg-realpath",
+      "dpkg-scanpackages",
+      "dpkg-scansources",
+      "dpkg-shlibdeps",
+      "dpkg-source",
+      "dpkg-split",
+      "dpkg-statoverride",
+      "dpkg-trigger",
+      "dpkg-vendor",
+      "dselect",
+      "start-stop-daemon",
+      "update-alternatives"
+    ],
+    "repology": [
+      "dpkg"
+    ],
+    "src_url": [
+      "https://git.dpkg.org/cgit/dpkg/dpkg.git"
+    ],
+    "tag": [
+      "package-manager"
+    ],
+    "version": "1.22.21"
+  },
+  {
+    "_disabled": "false",
     "pkg": "e2fsprogs",
     "pkg_family": "e2fsprogs",
     "pkg_id": "nixpkgs.e2fsprogs",
@@ -2960,7 +3098,7 @@
       "fetch",
       "neofetch"
     ],
-    "version": "HEAD-e3d6a85-250901T212034"
+    "version": "HEAD-8687505-250902T150035"
   },
   {
     "_disabled": "false",
@@ -3429,7 +3567,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-21b08bd-250826T152919"
+    "version": "HEAD-ade5816-250902T165956"
   },
   {
     "_disabled": "false",
@@ -3637,7 +3775,7 @@
     "tag": [
       "gitlab"
     ],
-    "version": "HEAD-73fcc0d-250902T094720"
+    "version": "HEAD-bb41e08-250903T104108"
   },
   {
     "_disabled": "false",
@@ -4199,7 +4337,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.09.01"
+    "version": "4.11.1"
   },
   {
     "_disabled": "false",
@@ -5517,7 +5655,7 @@
     "tag": [
       "text-editor"
     ],
-    "version": "HEAD-4b2f8aa-250901T204610"
+    "version": "HEAD-bbea2a3-250902T194635"
   },
   {
     "_disabled": "false",
@@ -6567,7 +6705,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "2025.09.01"
+    "version": "2025.09.02"
   },
   {
     "_disabled": "false",
@@ -9617,7 +9755,7 @@
       "backup",
       "p2p"
     ],
-    "version": "v2.0.3"
+    "version": "v2.0.5"
   },
   {
     "_disabled": "false",
@@ -9698,7 +9836,7 @@
       "wireguard",
       "zerotier"
     ],
-    "version": "HEAD-d05e6dc-250901T093429"
+    "version": "HEAD-21f21bd-250902T180916"
   },
   {
     "_disabled": "false",
@@ -10023,7 +10161,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-000d748-250901T183008"
+    "version": "HEAD-1e8671c-250901T224923"
   },
   {
     "_disabled": "false",

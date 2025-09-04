@@ -1694,7 +1694,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.43.0 ⚠️ | https://github.com/sigoden/dufs/archive/refs/tags/v0.43.0.tar.gz |
-| BREW   | **0.44.0** | https://github.com/sigoden/dufs |
+| BREW   | **0.45.0** | https://github.com/sigoden/dufs |
 
 *Outdated*
 
@@ -2179,7 +2179,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.3.2 ⚠️ | https://github.com/dyne/frei0r/archive/refs/tags/v2.3.2.tar.gz |
-| BREW   | **2.3.3** | https://frei0r.dyne.org/ |
+| BREW   | **2.4.0** | https://frei0r.dyne.org/ |
 
 *Outdated*
 
@@ -3457,7 +3457,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/martinvonz/jj/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.32.0** | https://github.com/jj-vcs/jj |
+| BREW   | **0.33.0** | https://github.com/jj-vcs/jj |
 
 *Outdated*
 
@@ -6676,7 +6676,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.9.1 ⚠️ | https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.9p1.tar.gz |
-| BREW   | **9.9p2** | https://www.openssh.com/ |
+| BREW   | **10.0p2** | https://www.openssh.com/ |
 
 *Outdated*
 
@@ -8958,7 +8958,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.9.9 ⚠️ | https://github.com/xmake-io/xmake/releases/download/v2.9.9/xmake-v2.9.9.tar.gz |
-| BREW   | **3.0.1** | https://xmake.io/ |
+| BREW   | **3.0.2** | https://xmake.io/ |
 
 *Outdated*
 

@@ -793,8 +793,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.7.1 ✅ | https://github.com/EmbarkStudios/cargo-about/archive/refs/tags/0.7.1.tar.gz |
-| BREW   | 0.7.1 | https://github.com/EmbarkStudios/cargo-about |
+| PPKG   | 0.7.1 ⚠️ | https://github.com/EmbarkStudios/cargo-about/archive/refs/tags/0.7.1.tar.gz |
+| BREW   | **0.8.0** | https://github.com/EmbarkStudios/cargo-about |
+
+*Outdated*
 
 ## cargo-all-features
 
@@ -1935,7 +1937,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.50.2 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.50.2.tar.gz |
-| BREW   | **2.51.1** | https://github.com/fastfetch-cli/fastfetch |
+| BREW   | **2.52.0** | https://github.com/fastfetch-cli/fastfetch |
 
 *Outdated*
 
@@ -5260,7 +5262,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.13.8 ⚠️ | https://github.com/rakshasa/libtorrent/archive/v0.13.8.tar.gz |
-| BREW   | **0.15.6** | https://github.com/rakshasa/libtorrent |
+| BREW   | **0.16.0** | https://github.com/rakshasa/libtorrent |
 
 *Outdated*
 
@@ -6276,7 +6278,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.0.1 ⚠️ | https://github.com/containerd/nerdctl/archive/refs/tags/v2.0.1.tar.gz |
-| BREW   | **2.1.3** | https://github.com/containerd/nerdctl |
+| BREW   | **2.1.4** | https://github.com/containerd/nerdctl |
 
 *Outdated*
 
@@ -7469,7 +7471,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.8 ⚠️ | https://github.com/rakshasa/rtorrent/releases/download/v0.9.8/rtorrent-0.9.8.tar.gz |
-| BREW   | **0.15.6** | https://github.com/rakshasa/rtorrent |
+| BREW   | **0.16.0** | https://github.com/rakshasa/rtorrent |
 
 *Outdated*
 
@@ -7965,7 +7967,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.6** | https://syncthing.net/ |
+| BREW   | **2.0.7** | https://syncthing.net/ |
 
 *Outdated*
 
@@ -8109,7 +8111,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.86.2** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.86.3** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

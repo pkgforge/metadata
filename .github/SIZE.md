@@ -209,30 +209,30 @@
  4.0K   │ │ │ └── TOTAL.json
   28K   │ │ └─┬ scripts
   24K   │ │   └── gen_meta.sh
- 7.9M   │ ├─┬ appimagehub
- 7.8M   │ │ ├─┬ data
- 2.4M   │ │ │ ├── x86_64-Linux.json
- 2.0M   │ │ │ ├── x86_64-Linux.db
- 1.3M   │ │ │ ├── x86_64-Linux.sdb
- 292K   │ │ │ ├── x86_64-Linux.json.cba
- 268K   │ │ │ ├── x86_64-Linux.db.cba
- 232K   │ │ │ ├── x86_64-Linux.db.zstd
- 228K   │ │ │ ├── x86_64-Linux.json.zstd
- 220K   │ │ │ ├── x86_64-Linux.json.xz
- 220K   │ │ │ ├── x86_64-Linux.db.xz
- 180K   │ │ │ ├── x86_64-Linux.sdb.zstd
- 168K   │ │ │ ├── x86_64-Linux.sdb.xz
- 104K   │ │ │ ├── aarch64-Linux.json
-  96K   │ │ │ ├── aarch64-Linux.db
-  88K   │ │ │ ├── aarch64-Linux.sdb
-  12K   │ │ │ ├── aarch64-Linux.sdb.zstd
-  12K   │ │ │ ├── aarch64-Linux.sdb.xz
-  12K   │ │ │ ├── aarch64-Linux.json.zstd
-  12K   │ │ │ ├── aarch64-Linux.json.xz
-  12K   │ │ │ ├── aarch64-Linux.json.cba
-  12K   │ │ │ ├── aarch64-Linux.db.zstd
-  12K   │ │ │ ├── aarch64-Linux.db.xz
-  12K   │ │ │ ├── aarch64-Linux.db.cba
+ 7.4M   │ ├─┬ appimage.github.io
+ 7.3M   │ │ ├─┬ data
+ 2.0M   │ │ │ ├── x86_64-Linux.json
+ 1.6M   │ │ │ ├── x86_64-Linux.db
+ 1.4M   │ │ │ ├── x86_64-Linux.sdb
+ 232K   │ │ │ ├── aarch64-Linux.json
+ 220K   │ │ │ ├── x86_64-Linux.db.cba
+ 208K   │ │ │ ├── aarch64-Linux.sdb
+ 204K   │ │ │ ├── aarch64-Linux.db
+ 200K   │ │ │ ├── x86_64-Linux.json.cba
+ 196K   │ │ │ ├── x86_64-Linux.sdb.zstd
+ 184K   │ │ │ ├── x86_64-Linux.sdb.xz
+ 172K   │ │ │ ├── x86_64-Linux.db.zstd
+ 164K   │ │ │ ├── x86_64-Linux.db.xz
+ 152K   │ │ │ ├── x86_64-Linux.json.zstd
+ 148K   │ │ │ ├── x86_64-Linux.json.xz
+  28K   │ │ │ ├── aarch64-Linux.sdb.zstd
+  28K   │ │ │ ├── aarch64-Linux.sdb.xz
+  28K   │ │ │ ├── aarch64-Linux.db.zstd
+  28K   │ │ │ ├── aarch64-Linux.db.cba
+  24K   │ │ │ ├── aarch64-Linux.json.zstd
+  24K   │ │ │ ├── aarch64-Linux.json.xz
+  24K   │ │ │ ├── aarch64-Linux.json.cba
+  24K   │ │ │ ├── aarch64-Linux.db.xz
  4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.sdb.bsum
@@ -252,32 +252,32 @@
  4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
  4.0K   │ │ │ ├── aarch64-Linux.db.bsum
  4.0K   │ │ │ └── TOTAL.json
-  32K   │ │ └─┬ scripts
-  28K   │ │   └── gen_meta.sh
- 7.4M   │ └─┬ appimage.github.io
- 7.3M   │   ├─┬ data
- 2.0M   │   │ ├── x86_64-Linux.json
- 1.6M   │   │ ├── x86_64-Linux.db
- 1.4M   │   │ ├── x86_64-Linux.sdb
- 232K   │   │ ├── aarch64-Linux.json
- 220K   │   │ ├── x86_64-Linux.db.cba
- 208K   │   │ ├── aarch64-Linux.sdb
- 204K   │   │ ├── aarch64-Linux.db
- 200K   │   │ ├── x86_64-Linux.json.cba
- 196K   │   │ ├── x86_64-Linux.sdb.zstd
- 184K   │   │ ├── x86_64-Linux.sdb.xz
- 172K   │   │ ├── x86_64-Linux.db.zstd
+  36K   │ │ └─┬ scripts
+  32K   │ │   └── gen_meta.sh
+ 6.6M   │ └─┬ appimagehub
+ 6.6M   │   ├─┬ data
+ 2.1M   │   │ ├── x86_64-Linux.json
+ 1.5M   │   │ ├── x86_64-Linux.db
+ 1.2M   │   │ ├── x86_64-Linux.sdb
+ 292K   │   │ ├── x86_64-Linux.json.cba
+ 268K   │   │ ├── x86_64-Linux.db.cba
+ 176K   │   │ ├── x86_64-Linux.db.zstd
+ 172K   │   │ ├── x86_64-Linux.json.zstd
+ 164K   │   │ ├── x86_64-Linux.json.xz
  164K   │   │ ├── x86_64-Linux.db.xz
- 152K   │   │ ├── x86_64-Linux.json.zstd
- 148K   │   │ ├── x86_64-Linux.json.xz
-  28K   │   │ ├── aarch64-Linux.sdb.zstd
-  28K   │   │ ├── aarch64-Linux.sdb.xz
-  28K   │   │ ├── aarch64-Linux.db.zstd
-  28K   │   │ ├── aarch64-Linux.db.cba
-  24K   │   │ ├── aarch64-Linux.json.zstd
-  24K   │   │ ├── aarch64-Linux.json.xz
-  24K   │   │ ├── aarch64-Linux.json.cba
-  24K   │   │ ├── aarch64-Linux.db.xz
+ 136K   │   │ ├── x86_64-Linux.sdb.zstd
+ 124K   │   │ ├── x86_64-Linux.sdb.xz
+  92K   │   │ ├── aarch64-Linux.json
+  84K   │   │ ├── aarch64-Linux.sdb
+  76K   │   │ ├── aarch64-Linux.db
+  12K   │   │ ├── aarch64-Linux.sdb.zstd
+  12K   │   │ ├── aarch64-Linux.json.zstd
+  12K   │   │ ├── aarch64-Linux.json.xz
+  12K   │   │ ├── aarch64-Linux.json.cba
+  12K   │   │ ├── aarch64-Linux.db.zstd
+  12K   │   │ ├── aarch64-Linux.db.xz
+  12K   │   │ ├── aarch64-Linux.db.cba
+ 8.0K   │   │ ├── aarch64-Linux.sdb.xz
  4.0K   │   │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │   │ ├── x86_64-Linux.sdb.xz.bsum
  4.0K   │   │ ├── x86_64-Linux.sdb.bsum
@@ -297,8 +297,8 @@
  4.0K   │   │ ├── aarch64-Linux.db.xz.bsum
  4.0K   │   │ ├── aarch64-Linux.db.bsum
  4.0K   │   │ └── TOTAL.json
-  36K   │   └─┬ scripts
-  32K   │     └── gen_meta.sh
+  32K   │   └─┬ scripts
+  28K   │     └── gen_meta.sh
  234M   ├─┬ misc
  234M   │ ├─┬ data
   73M   │ │ ├── ARCHLINUX.json

@@ -179,8 +179,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.12.1 ✅ | https://storage.googleapis.com/aom-releases/libaom-3.12.1.tar.gz |
-| BREW   | 3.12.1 | https://aomedia.googlesource.com/aom |
+| PPKG   | 3.12.1 ⚠️ | https://storage.googleapis.com/aom-releases/libaom-3.12.1.tar.gz |
+| BREW   | **3.13.0** | https://aomedia.googlesource.com/aom |
+
+*Outdated*
 
 ## appstream
 
@@ -410,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.04 ⚠️ | null |
+| PPKG   | 2025.09.05 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -3217,7 +3219,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.149.0** | https://gohugo.io/ |
+| BREW   | **0.149.1** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -4646,7 +4648,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.04 ⚠️ | null |
+| PPKG   | 2025.09.05 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5320,7 +5322,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.8.1 ⚠️ | https://github.com/libunwind/libunwind/releases/download/v1.8.1/libunwind-1.8.1.tar.gz |
-| BREW   | **1.8.2** | https://www.nongnu.org/libunwind/ |
+| BREW   | **1.8.3** | https://www.nongnu.org/libunwind/ |
 
 *Outdated*
 
@@ -6535,7 +6537,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.11.8** | https://ollama.com/ |
+| BREW   | **0.11.10** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6717,7 +6719,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.04 ⚠️ | null |
+| PPKG   | 2025.09.05 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6884,7 +6886,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.04 ⚠️ | null |
+| PPKG   | 2025.09.05 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7046,7 +7048,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.04 ⚠️ | null |
+| PPKG   | 2025.09.05 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7489,7 +7491,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.11** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.12.12** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 

@@ -412,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.05 ⚠️ | null |
+| PPKG   | 2025.09.06 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -3021,7 +3021,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.14.5 ⚠️ | https://github.com/charmbracelet/gum/archive/refs/tags/v0.14.5.tar.gz |
-| BREW   | **0.16.2** | https://github.com/charmbracelet/gum |
+| BREW   | **0.17.0** | https://github.com/charmbracelet/gum |
 
 *Outdated*
 
@@ -4650,7 +4650,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.05 ⚠️ | null |
+| PPKG   | 2025.09.06 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5820,7 +5820,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.689** | https://luau.org |
+| BREW   | **0.690** | https://luau.org |
 
 *Outdated*
 
@@ -6721,7 +6721,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.05 ⚠️ | null |
+| PPKG   | 2025.09.06 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6888,7 +6888,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.05 ⚠️ | null |
+| PPKG   | 2025.09.06 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7050,7 +7050,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.05 ⚠️ | null |
+| PPKG   | 2025.09.06 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8111,7 +8111,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.86.3** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.87.0** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

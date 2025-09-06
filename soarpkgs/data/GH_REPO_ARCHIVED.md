@@ -4,7 +4,7 @@
 | [HewlettPackard](https://github.com/HewlettPackard) | [wireless-tools](https://github.com/HewlettPackard/wireless-tools) | 102 | Wireless Tools for Linux | 2025-09-03T19:58:49Z |
 | [Josue87](https://github.com/Josue87) | [EmailFinder](https://github.com/Josue87/EmailFinder) | 404 | Search emails from a domain through search engines | 2025-08-31T11:28:14Z |
 | [Josue87](https://github.com/Josue87) | [MetaFinder](https://github.com/Josue87/MetaFinder) | 219 | Search for documents in a domain through Search Engines (Google, Bing and Baidu). The objective is to extract metadata | 2025-08-17T03:56:31Z |
-| [KathanP19](https://github.com/KathanP19) | [Gxss](https://github.com/KathanP19/Gxss) | 589 | A tool to check a bunch of URLs that contain reflecting params. | 2025-08-28T13:42:40Z |
+| [KathanP19](https://github.com/KathanP19) | [Gxss](https://github.com/KathanP19/Gxss) | 590 | A tool to check a bunch of URLs that contain reflecting params. | 2025-09-06T06:49:16Z |
 | [Picocrypt](https://github.com/Picocrypt) | [CLI](https://github.com/Picocrypt/CLI) | 70 | A command-line interface for Picocrypt. | 2025-09-05T20:40:53Z |
 | [clearlinux](https://github.com/clearlinux) | [docker-brew-clearlinux](https://github.com/clearlinux/docker-brew-clearlinux) | 34 | Dockerhub image snapshots for Clear Linux | 2025-08-13T22:29:58Z |
 | [dcantrell](https://github.com/dcantrell) | [bsdutils](https://github.com/dcantrell/bsdutils) | 177 | Alternative to GNU coreutils using software from FreeBSD | 2025-07-31T13:21:02Z |

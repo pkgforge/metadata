@@ -1,6 +1,76 @@
 [
   {
     "_disabled": "false",
+    "pkg": "akregator",
+    "pkg_family": "akregator",
+    "pkg_id": "runimage.alpine.akregator",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-akregator/akregator/akregator",
+    "app_id": "org.kde.akregator",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/akregator/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "KDE RSS feed reader",
+    "distro_pkg": {
+      "alpine": [
+        "akregator"
+      ],
+      "archlinux": {
+        "aur": [
+          "akregator-git"
+        ],
+        "extra": [
+          "akregator"
+        ]
+      },
+      "debian": [
+        "akregator"
+      ],
+      "gnuguix": [
+        "akregator"
+      ],
+      "nixpkgs": [
+        "kdePackages.akregator"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/akregator/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://apps.kde.org/akregator"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/akregator/runimage/alpine",
+    "provides": [
+      "akregator"
+    ],
+    "repology": [
+      "akregator"
+    ],
+    "src_url": [
+      "https://invent.kde.org/pim/akregator"
+    ],
+    "tag": [
+      "rss"
+    ],
+    "version": "25.08.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "altair",
     "pkg_family": "altair",
     "pkg_id": "github.com.altair-graphql.altair",
@@ -153,7 +223,121 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-454fe84-250829T163242"
+    "version": "HEAD-25ae991-250905T171925"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "apptainer",
+    "pkg_family": "apptainer",
+    "pkg_id": "wrappe.github.com.apptainer.apptainer.musl",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/apptainer-musl/apptainer/apptainer",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/apptainer/archive.wrappe.musl.yaml",
+    "category": [
+      "ConsoleOnly",
+      "Utility"
+    ],
+    "description": "Standalone Linux Container Alternative to docker/podman that runs anywhere with 0 Dependency",
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/apptainer/archive.wrappe.musl.yaml",
+    "homepage": [
+      "https://github.com/apptainer/apptainer"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built From Source (Latest Git HEAD). Check/Report @ https://github.com/apptainer/apptainer",
+      "Statically Linked on Alpine (MUSL)",
+      "Packed Using Wrappe. Check/Report @ https://github.com/Systemcluster/wrappe",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This may need extra requirements on host, read more: https://apptainer.org/docs/user/latest/bind_paths_and_mounts.html#requirements"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/apptainer/archive/wrappe",
+    "provides": [
+      "apptainer"
+    ],
+    "repology": [
+      "apptainer"
+    ],
+    "src_url": [
+      "https://github.com/apptainer/apptainer"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-25ae991-250905T171925"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "archey",
+    "pkg_family": "archey",
+    "pkg_id": "sharun.wrappe.source.archey",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/source-archey/archey/archey",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/archey/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "A simple system information tool written in Python",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "archey4",
+          "archey4-git"
+        ]
+      },
+      "homebrew": [
+        "archey4"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/archey/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/HorlogeSkynet/archey4"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/archey/archive/sharun",
+    "provides": [
+      "archey==archey4"
+    ],
+    "repology": [
+      "archey4"
+    ],
+    "src_url": [
+      "https://github.com/HorlogeSkynet/archey4"
+    ],
+    "tag": [
+      "archey",
+      "neofetch",
+      "screenfetch",
+      "system-information",
+      "sysutils"
+    ],
+    "version": "HEAD-d20c748-250905T200104"
   },
   {
     "_disabled": "false",
@@ -229,7 +413,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "1.42.22"
+    "version": "1.42.25"
   },
   {
     "_disabled": "false",
@@ -379,6 +563,77 @@
   },
   {
     "_disabled": "false",
+    "pkg": "chromium",
+    "pkg_family": "chromium",
+    "pkg_id": "nixpkgs.chromium",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/nixpkgs-chromium/chromium/chromium",
+    "app_id": "org.chromium.Chromium",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Open source web browser from Google (Stable)",
+    "distro_pkg": {
+      "alpine": [
+        "chromium"
+      ],
+      "archlinux": {
+        "extra": [
+          "chromium"
+        ]
+      },
+      "debian": [
+        "chromium"
+      ],
+      "homebrew": [
+        "chromium"
+      ],
+      "nixpkgs": [
+        "chromium"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/chromium/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://www.chromium.org",
+      "https://chromium.googlesource.com/chromium/src",
+      "https://github.com/chromium/chromium"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/chromium/assets/default.png",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/chromium/nixappimage/nixpkgs",
+    "provides": [
+      "chromium==chromium-browser"
+    ],
+    "repology": [
+      "chromium"
+    ],
+    "src_url": [
+      "https://github.com/chromium/chromium"
+    ],
+    "tag": [
+      "browser"
+    ],
+    "version": "140.0.7339.80"
+  },
+  {
+    "_disabled": "false",
     "pkg": "ciphey",
     "pkg_family": "ciphey",
     "pkg_id": "sharun.wrappe.source.ciphey",
@@ -489,7 +744,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-594bbe9-250903T062412"
+    "version": "HEAD-a845b0f-250905T065237"
   },
   {
     "_disabled": "false",
@@ -871,7 +1126,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-75c5d17-250902T121520"
+    "version": "HEAD-b39a888-250905T150532"
   },
   {
     "_disabled": "true",
@@ -929,6 +1184,160 @@
       "matrix"
     ],
     "version": "1.11.110"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "falkon",
+    "pkg_family": "falkon",
+    "pkg_id": "runimage.alpine.falkon",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-falkon/falkon/falkon",
+    "app_id": "org.kde.falkon",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/falkon/runimage.alpine.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Fast, lightweight web browser based on QtWebEngine",
+    "distro_pkg": {
+      "alpine": [
+        "falkon"
+      ],
+      "archlinux": {
+        "aur": [
+          "falkon-git"
+        ],
+        "extra": [
+          "falkon"
+        ]
+      },
+      "debian": [
+        "falkon"
+      ],
+      "gnuguix": [
+        "falkon"
+      ],
+      "nixpkgs": [
+        "falkon"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/falkon/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://apps.kde.org/falkon",
+      "https://invent.kde.org/network/falkon",
+      "https://github.com/KDE/falkon"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/falkon/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/falkon/runimage/alpine",
+    "provides": [
+      "falkon"
+    ],
+    "repology": [
+      "falkon"
+    ],
+    "src_url": [
+      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/falkon"
+    ],
+    "tag": [
+      "chat",
+      "matrix"
+    ],
+    "version": "25.08.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "fastfetch",
+    "pkg_family": "fastfetch",
+    "pkg_id": "sharun.wrappe.stable.fastfetch",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/stable-fastfetch/fastfetch/fastfetch",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/fastfetch/archive.sharun.stable.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": {
+      "_default": "Fast and feature-rich tool displaying system information",
+      "fastfetch": "Fast and feature-rich tool displaying system information",
+      "flashfetch": "Fastfetch with minimal features & configuration [fastfetch]"
+    },
+    "distro_pkg": {
+      "alpine": [
+        "fastfetch"
+      ],
+      "archlinux": {
+        "aur": [
+          "fastfetch-git"
+        ],
+        "extra": [
+          "fastfetch"
+        ]
+      },
+      "debian": [
+        "fastfetch"
+      ],
+      "gnuguix": [
+        "fastfetch"
+      ],
+      "homebrew": [
+        "fastfetch"
+      ],
+      "nixpkgs": [
+        "fastfetch"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/fastfetch/archive.sharun.stable.yaml",
+    "homepage": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Stable]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)",
+      "This version was repacked from official Deb & contains the most features"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/fastfetch/archive/sharun",
+    "provides": [
+      "fastfetch",
+      "flashfetch"
+    ],
+    "repology": [
+      "fastfetch"
+    ],
+    "src_url": [
+      "https://github.com/fastfetch-cli/fastfetch"
+    ],
+    "tag": [
+      "fetch",
+      "neofetch"
+    ],
+    "version": "2.52.0"
   },
   {
     "_disabled": "true",
@@ -1196,7 +1605,7 @@
     "tag": [
       "terminal"
     ],
-    "version": "250903T004608"
+    "version": "250906T004543"
   },
   {
     "_disabled": "false",
@@ -1258,7 +1667,136 @@
     "tag": [
       "terminal"
     ],
-    "version": "250903T004608"
+    "version": "250906T004543"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "huggingface-cli",
+    "pkg_family": "huggingface-cli",
+    "pkg_id": "sharun.wrappe.source.huggingface-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/huggingface-cli/huggingface-cli/huggingface-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/huggingface-cli/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "The official Python client for the Huggingface Hub",
+    "distro_pkg": {
+      "homebrew": [
+        "huggingface-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/huggingface-cli/archive.sharun.source.yaml",
+    "homepage": [
+      "https://huggingface.co/docs/huggingface_hub"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/huggingface-cli/archive/sharun",
+    "provides": [
+      "huggingface-cli"
+    ],
+    "repology": [
+      "huggingface-cli"
+    ],
+    "src_url": [
+      "https://github.com/huggingface/huggingface_hub"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-6378f83-250905T094014"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "kdenlive",
+    "pkg_family": "kdenlive",
+    "pkg_id": "runimage.alpine.kdenlive",
+    "pkg_type": "runimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/alpine-kdenlive/kdenlive/kdenlive",
+    "app_id": "org.kde.kdenlive",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/kdenlive/runimage.alpine.stable.yaml",
+    "category": [
+      "AudioVideoEditing"
+    ],
+    "description": "FOSS video editor, based on MLT Framework and KDE Frameworks",
+    "distro_pkg": {
+      "alpine": [
+        "kdenlive"
+      ],
+      "archlinux": {
+        "aur": [
+          "kdenlive-appimage",
+          "kdenlive-git"
+        ],
+        "extra": [
+          "kdenlive"
+        ]
+      },
+      "debian": [
+        "kdenlive"
+      ],
+      "gnuguix": [
+        "kdenlive"
+      ],
+      "homebrew": [
+        "kdenlive"
+      ],
+      "nixpkgs": [
+        "kdePackages.kdenlive"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/kdenlive/runimage.alpine.stable.yaml",
+    "homepage": [
+      "https://apps.kde.org/kdenlive",
+      "https://invent.kde.org/multimedia/kdenlive"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/kdenlive/assets/default.png",
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/kdenlive/runimage/alpine",
+    "provides": [
+      "kdenlive"
+    ],
+    "repology": [
+      "kdenlive"
+    ],
+    "src_url": [
+      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/kdenlive"
+    ],
+    "tag": [
+      "editor"
+    ],
+    "version": "25.08.0"
   },
   {
     "_disabled": "true",
@@ -1604,7 +2142,72 @@
     "tag": [
       "Utility"
     ],
-    "version": "HEAD-c13aba6-250902T013237"
+    "version": "HEAD-e434ec0-250903T174122"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "oci-cli",
+    "pkg_family": "oci-cli",
+    "pkg_id": "sharun.wrappe.pypi.oci-cli",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/oci-cli/oci-cli/oci-cli",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/oci-cli/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Command Line Interface for Oracle Cloud Infrastructure",
+    "distro_pkg": {
+      "alpine": [
+        "oci-cli"
+      ],
+      "archlinux": {
+        "aur": [
+          "oci-cli"
+        ]
+      },
+      "homebrew": [
+        "oci-cli"
+      ],
+      "nixpkgs": [
+        "oci-cli"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/oci-cli/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://cloud.oracle.com/cloud-infrastructure",
+      "https://github.com/oracle/oci-cli"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "UPL-1.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/oci-cli/archive/sharun",
+    "provides": [
+      "oci==oci-cli"
+    ],
+    "repology": [
+      "oci-cli"
+    ],
+    "src_url": [
+      "https://pypi.org/project/oci-cli"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "3.65.1"
   },
   {
     "_disabled": "false",
@@ -1828,6 +2431,59 @@
   },
   {
     "_disabled": "false",
+    "pkg": "showcert",
+    "pkg_family": "showcert",
+    "pkg_id": "sharun.wrappe.pypi.showcert",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-showcert/showcert/showcert",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/showcert/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Inspect TLS certificates presented by remote servers",
+    "distro_pkg": {
+      "homebrew": [
+        "showcert"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/showcert/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/yaroslaff/showcert"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/showcert/archive/sharun",
+    "provides": [
+      "showcert"
+    ],
+    "repology": [
+      "showcert"
+    ],
+    "src_url": [
+      "https://pypi.org/project/showcert"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "0.4.7"
+  },
+  {
+    "_disabled": "false",
     "pkg": "tangent",
     "pkg_family": "tangent",
     "pkg_id": "github.com.suchnsuch.Tangent.alpha",
@@ -1939,6 +2595,89 @@
     "version": "15.69.4"
   },
   {
+    "_disabled": "false",
+    "pkg": "telegram-desktop",
+    "pkg_family": "telegram-desktop",
+    "pkg_id": "nixpkgs.telegram-desktop",
+    "pkg_type": "nixappimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/telegram-desktop/telegram-desktop/telegram-desktop",
+    "app_id": "org.telegram.desktop",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "category": [
+      "Chat",
+      "IRCClient"
+    ],
+    "description": "Official desktop version of Telegram messaging app",
+    "distro_pkg": {
+      "alpine": [
+        "telegram-desktop"
+      ],
+      "archlinux": {
+        "aur": [
+          "telegram-desktop-bin",
+          "telegram-desktop-dev",
+          "telegram-desktop-dev-bin",
+          "telegram-desktop-git"
+        ],
+        "extra": [
+          "telegram-desktop"
+        ]
+      },
+      "debian": [
+        "telegram-desktop"
+      ],
+      "gnuguix": [
+        "telegram-desktop"
+      ],
+      "homebrew": [
+        "telegram-desktop",
+        "telegram-desktop@beta"
+      ],
+      "nixpkgs": [
+        "tdesktop",
+        "telegram-desktop"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/telegram-desktop/nixappimage.nixpkgs.stable.yaml",
+    "homepage": [
+      "https://desktop.telegram.org",
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "GPL-3.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Nixpkgs. Check/Report @ https://github.com/NixOS/nixpkgs",
+      "Packed Using NixAppImage. Check/Report @ https://github.com/pkgforge/nix-appimage",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/nixappimage",
+      "[PORTABLE] (Works on AnyLinux)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/telegram-desktop/nixappimage/nixpkgs",
+    "provides": [
+      "telegram-desktop==Telegram-Desktop"
+    ],
+    "repology": [
+      "telegram-desktop"
+    ],
+    "src_url": [
+      "https://github.com/telegramdesktop/tdesktop"
+    ],
+    "tag": [
+      "chat",
+      "Communications",
+      "Networking/Chat"
+    ],
+    "version": "6.1.1"
+  },
+  {
     "_disabled": "true",
     "_disabled_reason": [
       "Too slow & Expensive"
@@ -1997,6 +2736,74 @@
       "tailscale"
     ],
     "version": "0.18.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "twine",
+    "pkg_family": "twine",
+    "pkg_id": "sharun.wrappe.pypi.twine",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/pypi-twine/twine/twine",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/twine/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Utility for publishing Python packages on PyPI",
+    "distro_pkg": {
+      "alpine": [
+        "twine"
+      ],
+      "archlinux": {
+        "extra": [
+          "twine"
+        ]
+      },
+      "debian": [
+        "twine"
+      ],
+      "gnuguix": [
+        "python-twine"
+      ],
+      "homebrew": [
+        "twine"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/twine/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://twine.readthedocs.io",
+      "https://github.com/pypa/twine"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Apache-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/twine/archive/sharun",
+    "provides": [
+      "twine"
+    ],
+    "repology": [
+      "twine"
+    ],
+    "src_url": [
+      "https://pypi.org/project/twine"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "6.2.0"
   },
   {
     "_disabled": "false",
@@ -2181,6 +2988,68 @@
   },
   {
     "_disabled": "false",
+    "pkg": "wrangler",
+    "pkg_family": "wrangler",
+    "pkg_id": "sharun.wrappe.npm.wrangler",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/npm-wrangler/wrangler/wrangler",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wrangler/archive.sharun.npm.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Command-line interface for all things Cloudflare Workers",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "wrangler"
+        ]
+      },
+      "homebrew": [
+        "wrangler"
+      ],
+      "nixpkgs": [
+        "wrangler"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/wrangler/archive.sharun.npm.yaml",
+    "homepage": [
+      "https://developers.cloudflare.com/workers/cli-wrangler",
+      "https://github.com/cloudflare/workers-sdk"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [npm]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/wrangler/archive/sharun",
+    "provides": [
+      "wrangler"
+    ],
+    "repology": [
+      "wrangler"
+    ],
+    "src_url": [
+      "https://www.npmjs.com/package/wrangler"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "4.34.0"
+  },
+  {
+    "_disabled": "false",
     "pkg": "xashds",
     "pkg_family": "xashds",
     "pkg_id": "wrappe.xashds",
@@ -2225,7 +3094,7 @@
     "tag": [
       "Utility"
     ],
-    "version": "250902T233027"
+    "version": "250906T000153"
   },
   {
     "_disabled": "false",
@@ -2281,6 +3150,152 @@
       "security"
     ],
     "version": "HEAD-eee573e-250812T103839"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.pypi.yt-dlp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.pypi.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.pypi.yaml",
+    "homepage": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [pypi]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
+    "provides": [
+      "yt-dlp"
+    ],
+    "repology": [
+      "yt-dlp"
+    ],
+    "src_url": [
+      "https://pypi.org/project/yt-dlp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "2025.9.5"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "yt-dlp",
+    "pkg_family": "yt-dlp",
+    "pkg_id": "sharun.wrappe.source.yt-dlp",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/yt-dlp/yt-dlp/yt-dlp",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/yt-dlp/archive.sharun.source.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "CLI program to download videos from YouTube and other sites",
+    "distro_pkg": {
+      "alpine": [
+        "yt-dlp"
+      ],
+      "archlinux": {
+        "aur": [
+          "yt-dlp-git"
+        ],
+        "extra": [
+          "yt-dlp"
+        ]
+      },
+      "debian": [
+        "yt-dlp"
+      ],
+      "gnuguix": [
+        "yt-dlp"
+      ],
+      "homebrew": [
+        "yt-dlp"
+      ],
+      "nixpkgs": [
+        "yt-dlp"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/yt-dlp/archive.sharun.source.yaml",
+    "homepage": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "Unlicense"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [Source]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/yt-dlp/archive/sharun",
+    "provides": [
+      "yt-dlp"
+    ],
+    "repology": [
+      "yt-dlp"
+    ],
+    "src_url": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "HEAD-7c27965-250905T224600"
   },
   {
     "_disabled": "false",
@@ -2340,6 +3355,66 @@
       "firefox",
       "www-client"
     ],
-    "version": "1.15.3b"
+    "version": "1.15.4b"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "zen-browser",
+    "pkg_family": "zen-browser",
+    "pkg_id": "github.com.zen-browser.desktop.twilight",
+    "pkg_type": "appimage",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/desktop-twilight/zen-browser/zen-browser",
+    "app_id": "app.zen_browser.zen",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/zen-browser/appimage.official.twilight.yaml",
+    "category": [
+      "WebBrowser"
+    ],
+    "description": "Performance oriented Firefox-based web browser (Twilight)",
+    "distro_pkg": {
+      "archlinux": {
+        "aur": [
+          "zen-browser",
+          "zen-browser-bin"
+        ]
+      },
+      "homebrew": [
+        "zen-browser"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/zen-browser/appimage.official.twilight.yaml",
+    "homepage": [
+      "https://zen-browser.app",
+      "https://github.com/zen-browser/desktop"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "icon": "https://soarpkgs.pkgforge.dev/packages/zen-browser/assets/default.png",
+    "license": [
+      "MPL-2.0"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "Pre Built AppImage Fetched from Upstream. Check/Report @ https://github.com/zen-browser/desktop"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/zen-browser/appimage/official",
+    "provides": [
+      "zen-browser==zen"
+    ],
+    "repology": [
+      "zen-browser"
+    ],
+    "src_url": [
+      "https://github.com/zen-browser/desktop"
+    ],
+    "tag": [
+      "arc",
+      "firefox",
+      "www-client"
+    ],
+    "version": "1.15t_2025-09-04"
   }
 ]

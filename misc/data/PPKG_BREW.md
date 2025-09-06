@@ -180,7 +180,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.12.1 ⚠️ | https://storage.googleapis.com/aom-releases/libaom-3.12.1.tar.gz |
-| BREW   | **3.13.0** | https://aomedia.googlesource.com/aom |
+| BREW   | **3.13.1** | https://aomedia.googlesource.com/aom |
 
 *Outdated*
 
@@ -1605,7 +1605,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.2** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.4** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -1893,7 +1893,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.0 ⚠️ | https://github.com/eza-community/eza/archive/refs/tags/v0.19.0.tar.gz |
-| BREW   | **0.23.1** | https://github.com/eza-community/eza |
+| BREW   | **0.23.2** | https://github.com/eza-community/eza |
 
 *Outdated*
 
@@ -3632,7 +3632,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.41.0 ⚠️ | https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz |
-| BREW   | **0.54.2** | https://github.com/jesseduffield/lazygit/ |
+| BREW   | **0.55.0** | https://github.com/jesseduffield/lazygit/ |
 
 *Outdated*
 
@@ -3824,8 +3824,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 7.8.2 ✅ | https://github.com/bdwgc/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz |
-| BREW   | 7.8.2 | https://github.com/bdwgc/libatomic_ops/ |
+| PPKG   | 7.8.2 ⚠️ | https://github.com/bdwgc/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz |
+| BREW   | **7.8.4** | https://github.com/bdwgc/libatomic_ops/ |
+
+*Outdated*
 
 ## libavif
 
@@ -6517,7 +6519,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.5.0 ⚠️ | https://github.com/hatoo/oha/archive/refs/tags/v1.5.0.tar.gz |
-| BREW   | **1.9.0** | https://github.com/hatoo/oha/ |
+| BREW   | **1.10.0** | https://github.com/hatoo/oha/ |
 
 *Outdated*
 

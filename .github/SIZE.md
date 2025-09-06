@@ -299,7 +299,7 @@
  4.0K   │   │ └── TOTAL.json
   32K   │   └─┬ scripts
   28K   │     └── gen_meta.sh
- 234M   ├─┬ misc
+ 235M   ├─┬ misc
  234M   │ ├─┬ data
   73M   │ │ ├── ARCHLINUX.json
   39M   │ │ ├── FLATPAK_APPSTREAM.xml

@@ -858,7 +858,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.6.36 ⚠️ | https://github.com/taiki-e/cargo-hack/archive/refs/tags/v0.6.36.tar.gz |
-| BREW   | **0.6.37** | https://github.com/taiki-e/cargo-hack |
+| BREW   | **0.6.38** | https://github.com/taiki-e/cargo-hack |
 
 *Outdated*
 
@@ -869,7 +869,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.6.14 ⚠️ | https://static.crates.io/crates/cargo-llvm-cov/cargo-llvm-cov-0.6.14.crate |
-| BREW   | **0.6.18** | https://github.com/taiki-e/cargo-llvm-cov |
+| BREW   | **0.6.19** | https://github.com/taiki-e/cargo-llvm-cov |
 
 *Outdated*
 
@@ -2238,7 +2238,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | https://github.com/antonmedv/fx/archive/refs/tags/35.0.0.tar.gz |
-| BREW   | **39.0.4** | https://fx.wtf |
+| BREW   | **39.1.0** | https://fx.wtf |
 
 *Outdated*
 
@@ -3654,7 +3654,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.7 ⚠️ | https://github.com/jorgerojas26/lazysql/archive/refs/tags/v0.3.7.tar.gz |
-| BREW   | **0.4.0** | https://github.com/jorgerojas26/lazysql |
+| BREW   | **0.4.1** | https://github.com/jorgerojas26/lazysql |
 
 *Outdated*
 
@@ -4644,7 +4644,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 44.2 ⚠️ | https://downloads.sourceforge.net/project/ngspice/ng-spice-rework/44.2/ngspice-44.2.tar.gz |
-| BREW   | **45** | https://ngspice.sourceforge.io/ |
+| BREW   | **45.2** | https://ngspice.sourceforge.io/ |
 
 *Outdated*
 
@@ -6346,7 +6346,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 44.2 ⚠️ | https://downloads.sourceforge.net/project/ngspice/ng-spice-rework/44.2/ngspice-44.2.tar.gz |
-| BREW   | **45** | https://ngspice.sourceforge.io/ |
+| BREW   | **45.2** | https://ngspice.sourceforge.io/ |
 
 *Outdated*
 
@@ -6620,7 +6620,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.3.2 ⚠️ | https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.2.tar.gz |
-| BREW   | **3.3.5** | https://www.openexr.com/ |
+| BREW   | **3.4.0** | https://www.openexr.com/ |
 
 *Outdated*
 
@@ -8420,7 +8420,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.0.30 ⚠️ | https://github.com/uutils/coreutils/archive/refs/tags/0.0.30.tar.gz |
-| BREW   | **0.1.0** | https://uutils.github.io/coreutils/ |
+| BREW   | **0.2.0** | https://uutils.github.io/coreutils/ |
 
 *Outdated*
 

@@ -412,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.06 ⚠️ | null |
+| PPKG   | 2025.09.07 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -597,7 +597,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 26.0 ⚠️ | https://bitcoincore.org/bin/bitcoin-core-26.0/bitcoin-26.0.tar.gz |
-| BREW   | **29.0** | https://bitcoincore.org/ |
+| BREW   | **29.1** | https://bitcoincore.org/ |
 
 *Outdated*
 
@@ -1307,8 +1307,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.27.0 ✅ | https://github.com/crosstool-ng/crosstool-ng/releases/download/crosstool-ng-1.27.0/crosstool-ng-1.27.0.tar.xz |
-| BREW   | 1.27.0 | https://crosstool-ng.github.io/ |
+| PPKG   | 1.27.0 ⚠️ | https://github.com/crosstool-ng/crosstool-ng/releases/download/crosstool-ng-1.27.0/crosstool-ng-1.27.0.tar.xz |
+| BREW   | **1.28.0** | https://crosstool-ng.github.io/ |
+
+*Outdated*
 
 ## crun
 
@@ -2588,7 +2590,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.84.3 ⚠️ | https://download.gnome.org/sources/glib/2.84/glib-2.84.3.tar.xz |
-| BREW   | **2.84.4** | https://docs.gtk.org/glib/ |
+| BREW   | **2.86.0** | https://docs.gtk.org/glib/ |
 
 *Outdated*
 
@@ -4652,7 +4654,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.06 ⚠️ | null |
+| PPKG   | 2025.09.07 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6723,7 +6725,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.06 ⚠️ | null |
+| PPKG   | 2025.09.07 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6890,7 +6892,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.06 ⚠️ | null |
+| PPKG   | 2025.09.07 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7052,7 +7054,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.06 ⚠️ | null |
+| PPKG   | 2025.09.07 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8271,7 +8273,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.6 ⚠️ | https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.6.tar.gz |
-| BREW   | **0.25.8** | https://tree-sitter.github.io/ |
+| BREW   | **0.25.9** | https://tree-sitter.github.io/ |
 
 *Outdated*
 

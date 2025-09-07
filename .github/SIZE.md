@@ -29,7 +29,7 @@
  6.1M   │ │ │ ├── aarch64-Linux.db.xz
  5.9M   │ │ │ ├── loongarch64-Linux.db.xz
  5.8M   │ │ │ ├── x86_64-Linux.json.zstd
- 5.7M   │ │ │ ├── riscv64-Linux.json.zstd
+ 5.8M   │ │ │ ├── riscv64-Linux.json.zstd
  5.7M   │ │ │ ├── aarch64-Linux.json.zstd
  5.6M   │ │ │ ├── loongarch64-Linux.json.zstd
  2.3M   │ │ │ ├── x86_64-Linux.json.xz

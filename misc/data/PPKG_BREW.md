@@ -1690,8 +1690,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.8.1 ✅ | https://github.com/muesli/duf/archive/v0.8.1.tar.gz |
-| BREW   | 0.8.1 | https://github.com/muesli/duf |
+| PPKG   | 0.8.1 ⚠️ | https://github.com/muesli/duf/archive/v0.8.1.tar.gz |
+| BREW   | **0.9.0** | https://github.com/muesli/duf |
+
+*Outdated*
 
 ## dufs
 
@@ -7971,7 +7973,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.7** | https://syncthing.net/ |
+| BREW   | **2.0.8** | https://syncthing.net/ |
 
 *Outdated*
 

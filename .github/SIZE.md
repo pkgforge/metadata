@@ -95,8 +95,8 @@
  1.3M   │ │ │ ├── riscv64-Linux.db.zstd
  1.3M   │ │ │ ├── aarch64-Linux.db.xz
  1.3M   │ │ │ ├── riscv64-Linux.sdb.xz
- 1.2M   │ │ │ ├── x86_64-Linux.json.zstd
  1.2M   │ │ │ ├── riscv64-Linux.db.xz
+ 1.2M   │ │ │ ├── x86_64-Linux.json.zstd
  1.2M   │ │ │ ├── aarch64-Linux.json.zstd
  1.2M   │ │ │ ├── x86_64-Linux.json.xz
  1.2M   │ │ │ ├── aarch64-Linux.json.xz

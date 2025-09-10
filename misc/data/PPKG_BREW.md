@@ -412,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.09 ⚠️ | null |
+| PPKG   | 2025.09.10 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1040,7 +1040,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.54.0 ⚠️ | https://github.com/twpayne/chezmoi/archive/refs/tags/v2.54.0.tar.gz |
-| BREW   | **2.65.0** | https://chezmoi.io/ |
+| BREW   | **2.65.1** | https://chezmoi.io/ |
 
 *Outdated*
 
@@ -1319,7 +1319,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.14.4 ⚠️ | https://github.com/containers/crun/releases/download/1.14.4/crun-1.14.4.tar.xz |
-| BREW   | **1.23.1** | https://github.com/containers/crun |
+| BREW   | **1.24** | https://github.com/containers/crun |
 
 *Outdated*
 
@@ -1607,7 +1607,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.4** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.5** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2005,7 +2005,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.10.3 ⚠️ | https://feh.finalrewind.org/feh-3.10.3.tar.bz2 |
-| BREW   | **3.11.1** | https://feh.finalrewind.org/ |
+| BREW   | **3.11.2** | https://feh.finalrewind.org/ |
 
 *Outdated*
 
@@ -2435,7 +2435,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.76.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.76.0.tar.gz |
-| BREW   | **2.78.0** | https://cli.github.com/ |
+| BREW   | **2.79.0** | https://cli.github.com/ |
 
 *Outdated*
 
@@ -4656,7 +4656,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.09 ⚠️ | null |
+| PPKG   | 2025.09.10 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -4841,7 +4841,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.5.4 ⚠️ | https://github.com/libproxy/libproxy/archive/refs/tags/0.5.4.tar.gz |
-| BREW   | **0.5.10** | https://libproxy.github.io/libproxy/ |
+| BREW   | **0.5.11** | https://libproxy.github.io/libproxy/ |
 
 *Outdated*
 
@@ -5157,7 +5157,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.6 ⚠️ | https://www.libssh.org/files/0.10/libssh-0.10.6.tar.xz |
-| BREW   | **0.11.2** | https://www.libssh.org/ |
+| BREW   | **0.11.3** | https://www.libssh.org/ |
 
 *Outdated*
 
@@ -6727,7 +6727,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.09 ⚠️ | null |
+| PPKG   | 2025.09.10 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6894,7 +6894,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.09 ⚠️ | null |
+| PPKG   | 2025.09.10 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7056,7 +7056,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.09 ⚠️ | null |
+| PPKG   | 2025.09.10 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8422,7 +8422,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.0.30 ⚠️ | https://github.com/uutils/coreutils/archive/refs/tags/0.0.30.tar.gz |
-| BREW   | **0.2.0** | https://uutils.github.io/coreutils/ |
+| BREW   | **0.2.2** | https://uutils.github.io/coreutils/ |
 
 *Outdated*
 

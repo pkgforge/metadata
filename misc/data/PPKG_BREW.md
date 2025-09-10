@@ -1607,7 +1607,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.5** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.6** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -3982,7 +3982,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20.1.8 ⚠️ | https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/libclc-20.1.8.src.tar.xz |
-| BREW   | **21.1.0** | https://libclc.llvm.org/ |
+| BREW   | **21.1.1** | https://libclc.llvm.org/ |
 
 *Outdated*
 
@@ -4905,7 +4905,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.0 ⚠️ | https://github.com/baresip/re/archive/refs/tags/v3.15.0.tar.gz |
-| BREW   | **4.0.0** | https://github.com/baresip/re |
+| BREW   | **4.1.0** | https://github.com/baresip/re |
 
 *Outdated*
 
@@ -4945,7 +4945,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.60.0 ⚠️ | https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz |
-| BREW   | **2.61.0** | https://wiki.gnome.org/Projects/LibRsvg |
+| BREW   | **2.61.1** | https://wiki.gnome.org/Projects/LibRsvg |
 
 *Outdated*
 
@@ -8433,7 +8433,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.15** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.16** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -8568,7 +8568,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.1.0450 ⚠️ | https://github.com/vim/vim/archive/refs/tags/v9.1.0450.tar.gz |
-| BREW   | **9.1.1700** | https://www.vim.org/ |
+| BREW   | **9.1.1750** | https://www.vim.org/ |
 
 *Outdated*
 

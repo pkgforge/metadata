@@ -412,7 +412,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.10 ⚠️ | null |
+| PPKG   | 2025.09.11 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -533,7 +533,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.18.25 ⚠️ | https://downloads.isc.org/isc/bind9/9.18.25/bind-9.18.25.tar.xz |
-| BREW   | **9.20.12** | https://www.isc.org/bind/ |
+| BREW   | **9.20.13** | https://www.isc.org/bind/ |
 
 *Outdated*
 
@@ -1607,7 +1607,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.6** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.7** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -4656,7 +4656,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.10 ⚠️ | null |
+| PPKG   | 2025.09.11 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5308,7 +5308,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20230916 ⚠️ | https://github.com/fontforge/libuninameslist/releases/download/20230916/libuninameslist-dist-20230916.tar.gz |
-| BREW   | **20240910** | https://github.com/fontforge/libuninameslist |
+| BREW   | **20250909** | https://github.com/fontforge/libuninameslist |
 
 *Outdated*
 
@@ -5430,7 +5430,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.1.1 ✅ | https://github.com/georgmartius/vid.stab/archive/refs/tags/v1.1.1.tar.gz |
-| BREW   | 1.1.1 | http://public.hronopik.de/vid.stab/ |
+| BREW   | 1.1.1 | https://github.com/georgmartius/vid.stab |
 
 ## libvmaf
 
@@ -5537,7 +5537,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.21 ⚠️ | https://github.com/hughsie/libxmlb/releases/download/0.3.21/libxmlb-0.3.21.tar.xz |
-| BREW   | **0.3.23** | https://github.com/hughsie/libxmlb |
+| BREW   | **0.3.24** | https://github.com/hughsie/libxmlb |
 
 *Outdated*
 
@@ -6727,7 +6727,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.10 ⚠️ | null |
+| PPKG   | 2025.09.11 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6894,7 +6894,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.10 ⚠️ | null |
+| PPKG   | 2025.09.11 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7056,7 +7056,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.10 ⚠️ | null |
+| PPKG   | 2025.09.11 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7499,7 +7499,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.12.12** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.13.0** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -8117,7 +8117,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.87.0** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.87.1** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8433,7 +8433,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.16** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.17** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

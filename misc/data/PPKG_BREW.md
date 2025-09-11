@@ -1175,7 +1175,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.103.2** | https://github.com/microsoft/vscode |
+| BREW   | **1.104.0** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -1392,7 +1392,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.14.1 ⚠️ | https://curl.haxx.se/download/curl-8.14.1.tar.bz2 |
-| BREW   | **8.15.0** | https://curl.se |
+| BREW   | **8.16.0** | https://curl.se |
 
 *Outdated*
 
@@ -6706,7 +6706,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | **1.14.0** | https://oxc.rs/ |
+| BREW   | **1.15.0** | https://oxc.rs/ |
 
 *Outdated*
 

@@ -138,7 +138,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.300** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.301** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -403,8 +403,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 48.0 ✅ | https://download.gnome.org/sources/baobab/48/baobab-48.0.tar.xz |
-| BREW   | 48.0 | https://apps.gnome.org/Baobab/ |
+| PPKG   | 48.0 ⚠️ | https://download.gnome.org/sources/baobab/48/baobab-48.0.tar.xz |
+| BREW   | **49.0** | https://apps.gnome.org/Baobab/ |
+
+*Outdated*
 
 ## base64
 
@@ -412,7 +414,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.11 ⚠️ | null |
+| PPKG   | 2025.09.12 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1381,7 +1383,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.4.11 ⚠️ | https://github.com/OpenPrinting/cups/releases/download/v2.4.11/cups-2.4.11-source.tar.gz |
-| BREW   | **2.4.12** | https://github.com/OpenPrinting/cups |
+| BREW   | **2.4.14** | https://github.com/OpenPrinting/cups |
 
 *Outdated*
 
@@ -1607,7 +1609,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.7** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.8** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -3089,7 +3091,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.4 ⚠️ | https://github.com/helm/helm/archive/refs/tags/v3.15.4.tar.gz |
-| BREW   | **3.18.6** | https://helm.sh/ |
+| BREW   | **3.19.0** | https://helm.sh/ |
 
 *Outdated*
 
@@ -3338,7 +3340,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | r58 ⚠️ | https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz |
-| BREW   | **61** | https://github.com/benhoyt/inih |
+| BREW   | **62** | https://github.com/benhoyt/inih |
 
 *Outdated*
 
@@ -4656,7 +4658,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.11 ⚠️ | null |
+| PPKG   | 2025.09.12 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6727,7 +6729,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.11 ⚠️ | null |
+| PPKG   | 2025.09.12 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6894,7 +6896,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.11 ⚠️ | null |
+| PPKG   | 2025.09.12 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7056,7 +7058,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.11 ⚠️ | null |
+| PPKG   | 2025.09.12 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

@@ -4439,7 +4439,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.2.0 ⚠️ | https://github.com/libimobiledevice/libirecovery/releases/download/1.2.0/libirecovery-1.2.0.tar.bz2 |
-| BREW   | **1.2.1** | https://www.libimobiledevice.org/ |
+| BREW   | **1.3.0** | https://www.libimobiledevice.org/ |
 
 *Outdated*
 

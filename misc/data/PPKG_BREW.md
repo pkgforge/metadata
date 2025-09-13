@@ -57,8 +57,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 48.1 ✅ | https://download.gnome.org/sources/adwaita-icon-theme/48/adwaita-icon-theme-48.1.tar.xz |
-| BREW   | 48.1 | https://developer.gnome.org |
+| PPKG   | 48.1 ⚠️ | https://download.gnome.org/sources/adwaita-icon-theme/48/adwaita-icon-theme-48.1.tar.xz |
+| BREW   | **49.0** | https://developer.gnome.org |
+
+*Outdated*
 
 ## aerc
 
@@ -414,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.12 ⚠️ | null |
+| PPKG   | 2025.09.13 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1609,7 +1611,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.8** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.9** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -3711,7 +3713,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.18 ⚠️ | https://github.com/wofr06/lesspipe/archive/refs/tags/v2.18.tar.gz |
-| BREW   | **2.19** | https://www-zeuthen.desy.de/~friebel/unix/lesspipe.html |
+| BREW   | **2.20** | https://www-zeuthen.desy.de/~friebel/unix/lesspipe.html |
 
 *Outdated*
 
@@ -3753,7 +3755,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.7.4 ⚠️ | https://download.gnome.org/sources/libadwaita/1.7/libadwaita-1.7.4.tar.xz |
-| BREW   | **1.7.6** | https://gnome.pages.gitlab.gnome.org/libadwaita/ |
+| BREW   | **1.8.0** | https://gnome.pages.gitlab.gnome.org/libadwaita/ |
 
 *Outdated*
 
@@ -4658,7 +4660,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.12 ⚠️ | null |
+| PPKG   | 2025.09.13 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5610,7 +5612,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.76 ⚠️ | https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.76.tar.xz |
-| BREW   | **1.4.81** | https://www.lighttpd.net/ |
+| BREW   | **1.4.82** | https://www.lighttpd.net/ |
 
 *Outdated*
 
@@ -6432,7 +6434,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.107 ⚠️ | https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz |
-| BREW   | **3.115.1** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
+| BREW   | **3.116** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
 
 *Outdated*
 
@@ -6729,7 +6731,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.12 ⚠️ | null |
+| PPKG   | 2025.09.13 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6896,7 +6898,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.12 ⚠️ | null |
+| PPKG   | 2025.09.13 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7058,7 +7060,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.12 ⚠️ | null |
+| PPKG   | 2025.09.13 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7522,8 +7524,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.9.5 ✅ | https://github.com/rustic-rs/rustic/archive/refs/tags/v0.9.5.tar.gz |
-| BREW   | 0.9.5 | https://rustic.cli.rs |
+| PPKG   | 0.9.5 ⚠️ | https://github.com/rustic-rs/rustic/archive/refs/tags/v0.9.5.tar.gz |
+| BREW   | **0.10.0** | https://rustic.cli.rs |
+
+*Outdated*
 
 ## rustscan
 
@@ -7708,7 +7712,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.1 ⚠️ | https://github.com/LucasPickering/slumber/archive/refs/tags/v3.0.1.tar.gz |
-| BREW   | **3.4.0** | https://slumber.lucaspickering.me/ |
+| BREW   | **4.0.0** | https://slumber.lucaspickering.me/ |
 
 *Outdated*
 
@@ -8039,7 +8043,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.85.5 ⚠️ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.85.5.tar.gz |
-| BREW   | **1.87.0** | https://github.com/k1LoW/tbls |
+| BREW   | **1.88.0** | https://github.com/k1LoW/tbls |
 
 *Outdated*
 
@@ -8119,7 +8123,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.87.1** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.87.2** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

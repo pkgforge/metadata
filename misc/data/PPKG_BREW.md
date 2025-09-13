@@ -696,7 +696,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.44.6 ⚠️ | https://github.com/Canop/broot/archive/refs/tags/v1.44.6.tar.gz |
-| BREW   | **1.48.0** | https://dystroy.org/broot/ |
+| BREW   | **1.49.0** | https://dystroy.org/broot/ |
 
 *Outdated*
 
@@ -2739,8 +2739,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.84.0 ✅ | https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspection-1.84.0.tar.xz |
-| BREW   | 1.84.0 | https://gi.readthedocs.io/en/latest/ |
+| PPKG   | 1.84.0 ⚠️ | https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspection-1.84.0.tar.xz |
+| BREW   | **1.86.0** | https://gi.readthedocs.io/en/latest/ |
+
+*Outdated*
 
 ## gojq
 
@@ -7979,7 +7981,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.8** | https://syncthing.net/ |
+| BREW   | **2.0.9** | https://syncthing.net/ |
 
 *Outdated*
 
@@ -8102,8 +8104,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.36.3 ✅ | https://download.gnome.org/sources/template-glib/3.36/template-glib-3.36.3.tar.xz |
-| BREW   | 3.36.3 | https://gitlab.gnome.org/GNOME/template-glib |
+| PPKG   | 3.36.3 ⚠️ | https://download.gnome.org/sources/template-glib/3.36/template-glib-3.36.3.tar.xz |
+| BREW   | **3.38.0** | https://gitlab.gnome.org/GNOME/template-glib |
+
+*Outdated*
 
 ## tengo
 

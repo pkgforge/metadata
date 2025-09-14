@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.13 ⚠️ | null |
+| PPKG   | 2025.09.14 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -3652,8 +3652,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.7.9 ✅ | https://github.com/Lifailon/lazyjournal/archive/refs/tags/0.7.9.tar.gz |
-| BREW   | 0.7.9 | https://github.com/Lifailon/lazyjournal |
+| PPKG   | 0.7.9 ⚠️ | https://github.com/Lifailon/lazyjournal/archive/refs/tags/0.7.9.tar.gz |
+| BREW   | **0.8.0** | https://github.com/Lifailon/lazyjournal |
+
+*Outdated*
 
 ## lazysql
 
@@ -4662,7 +4664,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.13 ⚠️ | null |
+| PPKG   | 2025.09.14 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6181,7 +6183,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.26.2 ⚠️ | https://mupdf.com/downloads/archive/mupdf-1.26.2-source.tar.gz |
-| BREW   | **1.26.7** | https://mupdf.com/ |
+| BREW   | **1.26.8** | https://mupdf.com/ |
 
 *Outdated*
 
@@ -6733,7 +6735,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.13 ⚠️ | null |
+| PPKG   | 2025.09.14 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6900,7 +6902,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.13 ⚠️ | null |
+| PPKG   | 2025.09.14 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7062,7 +7064,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.13 ⚠️ | null |
+| PPKG   | 2025.09.14 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7240,7 +7242,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.04.26 ⚠️ | https://bellard.org/quickjs/quickjs-2025-04-26.tar.xz |
-| BREW   | **2025-04-26** | https://bellard.org/quickjs/ |
+| BREW   | **2025-09-13** | https://bellard.org/quickjs/ |
 
 *Outdated*
 

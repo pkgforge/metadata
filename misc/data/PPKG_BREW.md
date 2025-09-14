@@ -1901,7 +1901,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.0 ⚠️ | https://github.com/eza-community/eza/archive/refs/tags/v0.19.0.tar.gz |
-| BREW   | **0.23.2** | https://github.com/eza-community/eza |
+| BREW   | **0.23.3** | https://github.com/eza-community/eza |
 
 *Outdated*
 
@@ -6747,7 +6747,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.6.3 ⚠️ | https://github.com/jgm/pandoc/archive/refs/tags/3.6.3.tar.gz |
-| BREW   | **3.7.0.2** | https://pandoc.org/ |
+| BREW   | **3.8** | https://pandoc.org/ |
 
 *Outdated*
 

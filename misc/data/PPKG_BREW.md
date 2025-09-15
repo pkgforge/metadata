@@ -696,7 +696,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.44.6 ⚠️ | https://github.com/Canop/broot/archive/refs/tags/v1.44.6.tar.gz |
-| BREW   | **1.49.0** | https://dystroy.org/broot/ |
+| BREW   | **1.49.1** | https://dystroy.org/broot/ |
 
 *Outdated*
 
@@ -2977,8 +2977,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 48.0 ✅ | https://download.gnome.org/sources/gsettings-desktop-schemas/48/gsettings-desktop-schemas-48.0.tar.xz |
-| BREW   | 48.0 | https://download.gnome.org/sources/gsettings-desktop-schemas/ |
+| PPKG   | 48.0 ⚠️ | https://download.gnome.org/sources/gsettings-desktop-schemas/48/gsettings-desktop-schemas-48.0.tar.xz |
+| BREW   | **49.0** | https://download.gnome.org/sources/gsettings-desktop-schemas/ |
+
+*Outdated*
 
 ## gstreamer
 
@@ -3510,8 +3512,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.5.5 ✅ | https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.5.tar.gz |
-| BREW   | 1.5.5 | https://github.com/tjko/jpegoptim |
+| PPKG   | 1.5.5 ⚠️ | https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.5.tar.gz |
+| BREW   | **1.5.6** | https://github.com/tjko/jpegoptim |
+
+*Outdated*
 
 ## jq
 
@@ -7025,7 +7029,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 26.1 ⚠️ | null |
-| BREW   | **32.0** | https://protobuf.dev/ |
+| BREW   | **32.1** | https://protobuf.dev/ |
 
 *Outdated*
 
@@ -8649,7 +8653,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.319 ⚠️ | https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.319.tar.gz |
-| BREW   | **1.4.326** | https://github.com/KhronosGroup/Vulkan-Headers |
+| BREW   | **1.4.321.0** | https://github.com/KhronosGroup/Vulkan-Headers |
 
 *Outdated*
 

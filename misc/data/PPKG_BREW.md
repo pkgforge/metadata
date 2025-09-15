@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.14 ⚠️ | null |
+| PPKG   | 2025.09.15 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -904,7 +904,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.99 ⚠️ | https://github.com/nextest-rs/nextest/archive/refs/tags/cargo-nextest-0.9.99.tar.gz |
-| BREW   | **0.9.103** | https://nexte.st |
+| BREW   | **0.9.104** | https://nexte.st |
 
 *Outdated*
 
@@ -944,7 +944,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.10.2 ⚠️ | https://github.com/ccache/ccache/releases/download/v4.10.2/ccache-4.10.2.tar.xz |
-| BREW   | **4.11.3** | https://ccache.dev/ |
+| BREW   | **4.12** | https://ccache.dev/ |
 
 *Outdated*
 
@@ -4664,7 +4664,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.14 ⚠️ | null |
+| PPKG   | 2025.09.15 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6735,7 +6735,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.14 ⚠️ | null |
+| PPKG   | 2025.09.15 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6902,7 +6902,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.14 ⚠️ | null |
+| PPKG   | 2025.09.15 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7064,7 +7064,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.14 ⚠️ | null |
+| PPKG   | 2025.09.15 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7716,7 +7716,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.1 ⚠️ | https://github.com/LucasPickering/slumber/archive/refs/tags/v3.0.1.tar.gz |
-| BREW   | **4.0.0** | https://slumber.lucaspickering.me/ |
+| BREW   | **4.0.1** | https://slumber.lucaspickering.me/ |
 
 *Outdated*
 
@@ -7917,7 +7917,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.20.0 ⚠️ | https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.20.0.tar.gz |
-| BREW   | **2.1.0** | https://github.com/JohnnyMorganz/StyLua |
+| BREW   | **2.2.0** | https://github.com/JohnnyMorganz/StyLua |
 
 *Outdated*
 

@@ -428,7 +428,7 @@
  384K   │ │ ├── INDEX.json.cba
  340K   │ │ ├── DIFF_bincache_riscv64-Linux.json
  308K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
- 292K   │ │ ├── pub_issues_packages.txt
+ 304K   │ │ ├── pub_issues_packages.txt
  244K   │ │ ├── INDEX.db.cba
  240K   │ │ ├── GH_REPO.md
  236K   │ │ ├── INDEX.json.xz

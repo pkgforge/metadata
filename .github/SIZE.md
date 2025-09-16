@@ -304,7 +304,7 @@
   32M   │ │ ├── CONDA.json
   25M   │ │ ├── DEBIAN.json
   17M   │ │ ├── CONDA_RAW.json
-  13M   │ │ ├── NIXPKGS.json
+  12M   │ │ ├── NIXPKGS.json
   11M   │ │ ├── ALPINE_PKG.json
  9.1M   │ │ ├── PKGSRC.json
  5.2M   │ │ ├── ALPINE_GIT.json

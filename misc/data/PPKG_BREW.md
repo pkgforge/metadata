@@ -1611,7 +1611,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.9** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.10** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2802,7 +2802,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.1 ⚠️ | https://github.com/goreleaser/goreleaser/archive/refs/tags/v1.25.1.tar.gz |
-| BREW   | **2.12.0** | https://goreleaser.com/ |
+| BREW   | **2.12.1** | https://goreleaser.com/ |
 
 *Outdated*
 
@@ -2967,7 +2967,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.71.0 ⚠️ | https://github.com/grpc/grpc/archive/refs/tags/v1.71.0.tar.gz |
-| BREW   | **1.74.1** | https://grpc.io/ |
+| BREW   | **1.75.0** | https://grpc.io/ |
 
 *Outdated*
 
@@ -4778,7 +4778,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.13.37 ⚠️ | https://github.com/google/libphonenumber/archive/refs/tags/v8.13.37.tar.gz |
-| BREW   | **9.0.13** | https://github.com/google/libphonenumber |
+| BREW   | **9.0.14** | https://github.com/google/libphonenumber |
 
 *Outdated*
 
@@ -7018,7 +7018,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.4.1 ⚠️ | https://github.com/OSGeo/PROJ/releases/download/9.4.1/proj-9.4.1.tar.gz |
-| BREW   | **9.6.2** | https://proj.org/ |
+| BREW   | **9.7.0** | https://proj.org/ |
 
 *Outdated*
 

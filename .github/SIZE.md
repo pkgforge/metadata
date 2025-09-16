@@ -2,7 +2,7 @@
  1.4G └─┬ main
  938M   ├─┬ external
  726M   │ ├─┬ pkgforge-go
- 725M   │ │ ├─┬ data
+ 726M   │ │ ├─┬ data
   79M   │ │ │ ├── x86_64-Linux.db
   78M   │ │ │ ├── riscv64-Linux.db
   78M   │ │ │ ├── aarch64-Linux.db
@@ -23,7 +23,7 @@
  6.4M   │ │ │ ├── aarch64-Linux.sdb.xz
  6.3M   │ │ │ ├── loongarch64-Linux.db.zstd
  6.3M   │ │ │ ├── x86_64-Linux.db.xz
- 6.2M   │ │ │ ├── loongarch64-Linux.sdb.xz
+ 6.3M   │ │ │ ├── loongarch64-Linux.sdb.xz
  6.2M   │ │ │ ├── riscv64-Linux.db.xz
  6.2M   │ │ │ ├── aarch64-Linux.db.xz
  6.1M   │ │ │ ├── loongarch64-Linux.db.xz
@@ -88,7 +88,7 @@
  1.4M   │ │ │ ├── riscv64-Linux.sdb.zstd
  1.4M   │ │ │ ├── x86_64-Linux.db.zstd
  1.4M   │ │ │ ├── aarch64-Linux.db.zstd
- 1.3M   │ │ │ ├── x86_64-Linux.sdb.xz
+ 1.4M   │ │ │ ├── x86_64-Linux.sdb.xz
  1.3M   │ │ │ ├── aarch64-Linux.sdb.xz
  1.3M   │ │ │ ├── x86_64-Linux.db.xz
  1.3M   │ │ │ ├── riscv64-Linux.db.zstd
@@ -159,7 +159,7 @@
  436K   │ │ │ ├── x86_64-Linux.db.zstd
  416K   │ │ │ ├── x86_64-Linux.db.xz
  400K   │ │ │ ├── x86_64-Linux.json.zstd
- 396K   │ │ │ ├── x86_64-Linux.json.xz
+ 392K   │ │ │ ├── x86_64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.sdb.bsum

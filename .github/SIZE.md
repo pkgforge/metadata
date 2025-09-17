@@ -154,8 +154,8 @@
  1.0M   │ │ │ ├── aarch64-Linux.AM.txt
  548K   │ │ │ ├── x86_64-Linux.db.cba
  496K   │ │ │ ├── x86_64-Linux.json.cba
- 484K   │ │ │ ├── x86_64-Linux.sdb.zstd
- 448K   │ │ │ ├── x86_64-Linux.sdb.xz
+ 480K   │ │ │ ├── x86_64-Linux.sdb.zstd
+ 444K   │ │ │ ├── x86_64-Linux.sdb.xz
  436K   │ │ │ ├── x86_64-Linux.db.zstd
  416K   │ │ │ ├── x86_64-Linux.db.xz
  400K   │ │ │ ├── x86_64-Linux.json.zstd

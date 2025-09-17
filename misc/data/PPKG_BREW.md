@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.16 ⚠️ | null |
+| PPKG   | 2025.09.17 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -725,7 +725,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.52.1 ⚠️ | https://github.com/bufbuild/buf/archive/refs/tags/v1.52.1.tar.gz |
-| BREW   | **1.57.0** | https://github.com/bufbuild/buf |
+| BREW   | **1.57.2** | https://github.com/bufbuild/buf |
 
 *Outdated*
 
@@ -3356,8 +3356,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.23.9.0 ✅ | https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.23.9.0.tar.gz |
-| BREW   | 4.23.9.0 | https://github.com/inotify-tools/inotify-tools |
+| PPKG   | 4.23.9.0 ⚠️ | https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.23.9.0.tar.gz |
+| BREW   | **4.25.9.0** | https://github.com/inotify-tools/inotify-tools |
+
+*Outdated*
 
 ## intltool
 
@@ -4638,7 +4640,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.60.0 ⚠️ | https://github.com/nghttp2/nghttp2/releases/download/v1.60.0/nghttp2-1.60.0.tar.gz |
-| BREW   | **1.67.0** | https://nghttp2.org/ |
+| BREW   | **1.67.1** | https://nghttp2.org/ |
 
 *Outdated*
 
@@ -4668,7 +4670,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.16 ⚠️ | null |
+| PPKG   | 2025.09.17 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5651,7 +5653,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.10 ⚠️ | https://github.com/triyanox/lla/archive/refs/tags/v0.3.10.tar.gz |
-| BREW   | **0.4.0** | https://github.com/chaqchase/lla |
+| BREW   | **0.4.1** | https://github.com/chaqchase/lla |
 
 *Outdated*
 
@@ -6338,7 +6340,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.64.0 ⚠️ | https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.gz |
-| BREW   | **1.67.0** | https://nghttp2.org/ |
+| BREW   | **1.67.1** | https://nghttp2.org/ |
 
 *Outdated*
 
@@ -6718,7 +6720,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | **1.15.0** | https://oxc.rs/ |
+| BREW   | **1.16.0** | https://oxc.rs/ |
 
 *Outdated*
 
@@ -6739,7 +6741,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.16 ⚠️ | null |
+| PPKG   | 2025.09.17 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6906,7 +6908,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.16 ⚠️ | null |
+| PPKG   | 2025.09.17 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7068,7 +7070,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.16 ⚠️ | null |
+| PPKG   | 2025.09.17 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7954,7 +7956,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.0.6 ⚠️ | https://www.openinfosecfoundation.org/download/suricata-7.0.6.tar.gz |
-| BREW   | **8.0.0** | https://suricata.io |
+| BREW   | **8.0.1** | https://suricata.io |
 
 *Outdated*
 
@@ -8133,7 +8135,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.87.3** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.87.4** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8161,8 +8163,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.5.12 ✅ | https://github.com/jonas/tig/releases/download/tig-2.5.12/tig-2.5.12.tar.gz |
-| BREW   | 2.5.12 | https://jonas.github.io/tig/ |
+| PPKG   | 2.5.12 ⚠️ | https://github.com/jonas/tig/releases/download/tig-2.5.12/tig-2.5.12.tar.gz |
+| BREW   | **2.6.0** | https://jonas.github.io/tig/ |
+
+*Outdated*
 
 ## timg
 
@@ -8251,7 +8255,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.4.8.16 ⚠️ | https://fossies.org/linux/misc/tor-0.4.8.16.tar.gz |
-| BREW   | **0.4.8.17** | https://www.torproject.org/ |
+| BREW   | **0.4.8.18** | https://www.torproject.org/ |
 
 *Outdated*
 

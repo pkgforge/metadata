@@ -6329,7 +6329,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 10.86.47 ⚠️ | https://downloads.sourceforge.net/project/netpbm/super_stable/10.86.47/netpbm-10.86.47.tgz |
-| BREW   | **11.02.18** | https://netpbm.sourceforge.net/ |
+| BREW   | **11.02.19** | https://netpbm.sourceforge.net/ |
 
 *Outdated*
 
@@ -6658,7 +6658,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.15.0 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v2.5.15.0.tar.gz |
-| BREW   | **3.0.10.0** | https://openimageio.readthedocs.io/en/stable/ |
+| BREW   | **3.0.10.1** | https://openimageio.readthedocs.io/en/stable/ |
 
 *Outdated*
 

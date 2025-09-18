@@ -286,7 +286,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.56.2 ⚠️ | https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.2.tar.xz |
-| BREW   | **2.56.4** | https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/ |
+| BREW   | **2.58.0** | https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/ |
 
 *Outdated*
 
@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.17 ⚠️ | null |
+| PPKG   | 2025.09.18 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -995,7 +995,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.6.1 ⚠️ | https://github.com/CGAL/cgal/releases/download/v5.6.1/CGAL-5.6.1.tar.xz |
-| BREW   | **6.0.1** | https://www.cgal.org/ |
+| BREW   | **6.0.2** | https://www.cgal.org/ |
 
 *Outdated*
 
@@ -1839,7 +1839,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.20.2 ⚠️ | https://github.com/evanw/esbuild/archive/refs/tags/v0.20.2.tar.gz |
-| BREW   | **0.25.9** | https://esbuild.github.io/ |
+| BREW   | **0.25.10** | https://esbuild.github.io/ |
 
 *Outdated*
 
@@ -2577,8 +2577,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.82.1 ✅ | https://download.gnome.org/sources/gjs/1.82/gjs-1.82.1.tar.xz |
-| BREW   | 1.82.1 | https://gitlab.gnome.org/GNOME/gjs/wikis/Home |
+| PPKG   | 1.82.1 ⚠️ | https://download.gnome.org/sources/gjs/1.82/gjs-1.82.1.tar.xz |
+| BREW   | **1.86.0** | https://gitlab.gnome.org/GNOME/gjs/wikis/Home |
+
+*Outdated*
 
 ## glew
 
@@ -2802,7 +2804,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.1 ⚠️ | https://github.com/goreleaser/goreleaser/archive/refs/tags/v1.25.1.tar.gz |
-| BREW   | **2.12.1** | https://goreleaser.com/ |
+| BREW   | **2.12.2** | https://goreleaser.com/ |
 
 *Outdated*
 
@@ -3648,7 +3650,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.41.0 ⚠️ | https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz |
-| BREW   | **0.55.0** | https://github.com/jesseduffield/lazygit/ |
+| BREW   | **0.55.1** | https://github.com/jesseduffield/lazygit/ |
 
 *Outdated*
 
@@ -4670,7 +4672,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.17 ⚠️ | null |
+| PPKG   | 2025.09.18 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6026,7 +6028,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 25.1.4 ⚠️ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
-| BREW   | **25.2.2** | https://www.mesa3d.org/ |
+| BREW   | **25.2.3** | https://www.mesa3d.org/ |
 
 *Outdated*
 
@@ -6741,7 +6743,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.17 ⚠️ | null |
+| PPKG   | 2025.09.18 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6908,7 +6910,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.17 ⚠️ | null |
+| PPKG   | 2025.09.18 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7070,7 +7072,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.17 ⚠️ | null |
+| PPKG   | 2025.09.18 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7502,7 +7504,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.4.4 ⚠️ | https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.4.tar.gz |
-| BREW   | **3.4.5** | https://www.ruby-lang.org/ |
+| BREW   | **3.4.6** | https://www.ruby-lang.org/ |
 
 *Outdated*
 
@@ -7786,7 +7788,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 128.11.0 ⚠️ | https://archive.mozilla.org/pub/firefox/releases/128.11.0esr/source/firefox-128.11.0esr.source.tar.xz |
-| BREW   | **128.14.0** | https://spidermonkey.dev |
+| BREW   | **140.3.0** | https://spidermonkey.dev |
 
 *Outdated*
 
@@ -8011,7 +8013,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 256.7 ⚠️ | https://github.com/systemd/systemd/archive/refs/tags/v256.7.tar.gz |
-| BREW   | **257.9** | https://systemd.io |
+| BREW   | **258** | https://systemd.io |
 
 *Outdated*
 
@@ -8453,7 +8455,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.17** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.18** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

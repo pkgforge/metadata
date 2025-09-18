@@ -7,7 +7,7 @@
   79M   │ │ │ ├── riscv64-Linux.db
   78M   │ │ │ ├── aarch64-Linux.db
   78M   │ │ │ ├── loongarch64-Linux.db
-  69M   │ │ │ ├── x86_64-Linux.sdb
+  70M   │ │ │ ├── x86_64-Linux.sdb
   69M   │ │ │ ├── riscv64-Linux.sdb
   68M   │ │ │ ├── aarch64-Linux.sdb
   67M   │ │ │ ├── loongarch64-Linux.sdb

@@ -140,7 +140,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.301** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.302** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -798,7 +798,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.1 ⚠️ | https://github.com/EmbarkStudios/cargo-about/archive/refs/tags/0.7.1.tar.gz |
-| BREW   | **0.8.0** | https://github.com/EmbarkStudios/cargo-about |
+| BREW   | **0.8.1** | https://github.com/EmbarkStudios/cargo-about |
 
 *Outdated*
 
@@ -1179,7 +1179,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.104.0** | https://github.com/microsoft/vscode |
+| BREW   | **1.104.1** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -1611,7 +1611,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.10** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.11** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -3548,7 +3548,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.32.5 ⚠️ | https://github.com/derailed/k9s/archive/refs/tags/v0.32.5.tar.gz |
-| BREW   | **0.50.9** | https://k9scli.io/ |
+| BREW   | **0.50.10** | https://k9scli.io/ |
 
 *Outdated*
 
@@ -7250,7 +7250,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.04.26 ⚠️ | https://bellard.org/quickjs/quickjs-2025-04-26.tar.xz |
-| BREW   | **2025-09-13** | https://bellard.org/quickjs/ |
+| BREW   | **2025-09-13-2** | https://bellard.org/quickjs/ |
 
 *Outdated*
 
@@ -7310,7 +7310,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/rbspy/rbspy/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.36.1** | https://rbspy.github.io/ |
+| BREW   | **0.37.0** | https://rbspy.github.io/ |
 
 *Outdated*
 

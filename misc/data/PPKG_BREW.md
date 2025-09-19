@@ -798,7 +798,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.1 ⚠️ | https://github.com/EmbarkStudios/cargo-about/archive/refs/tags/0.7.1.tar.gz |
-| BREW   | **0.8.1** | https://github.com/EmbarkStudios/cargo-about |
+| BREW   | **0.8.2** | https://github.com/EmbarkStudios/cargo-about |
 
 *Outdated*
 
@@ -1611,7 +1611,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.11** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.12** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2180,7 +2180,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.12.0 ⚠️ | https://github.com/FreeRDP/FreeRDP/releases/download/3.12.0/freerdp-3.12.0.tar.gz |
-| BREW   | **3.17.1** | https://www.freerdp.com/ |
+| BREW   | **3.17.2** | https://www.freerdp.com/ |
 
 *Outdated*
 
@@ -3747,7 +3747,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | r26 ⚠️ | https://github.com/gokcehan/lf/archive/r26.tar.gz |
-| BREW   | **37** | https://godoc.org/github.com/gokcehan/lf |
+| BREW   | **38** | https://godoc.org/github.com/gokcehan/lf |
 
 *Outdated*
 

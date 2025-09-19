@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.18 ⚠️ | null |
+| PPKG   | 2025.09.19 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -3466,7 +3466,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.78.9** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.79.0** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -3548,7 +3548,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.32.5 ⚠️ | https://github.com/derailed/k9s/archive/refs/tags/v0.32.5.tar.gz |
-| BREW   | **0.50.10** | https://k9scli.io/ |
+| BREW   | **0.50.11** | https://k9scli.io/ |
 
 *Outdated*
 
@@ -4672,7 +4672,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.18 ⚠️ | null |
+| PPKG   | 2025.09.19 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5655,7 +5655,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.10 ⚠️ | https://github.com/triyanox/lla/archive/refs/tags/v0.3.10.tar.gz |
-| BREW   | **0.4.1** | https://github.com/chaqchase/lla |
+| BREW   | **0.4.2** | https://github.com/chaqchase/lla |
 
 *Outdated*
 
@@ -6517,7 +6517,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.3.2 ⚠️ | https://github.com/OCL-dev/ocl-icd/archive/refs/tags/v2.3.2.tar.gz |
-| BREW   | **2.3.3** | https://github.com/OCL-dev/ocl-icd/ |
+| BREW   | **2.3.4** | https://github.com/OCL-dev/ocl-icd/ |
 
 *Outdated*
 
@@ -6743,7 +6743,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.18 ⚠️ | null |
+| PPKG   | 2025.09.19 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6910,7 +6910,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.18 ⚠️ | null |
+| PPKG   | 2025.09.19 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7072,7 +7072,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.18 ⚠️ | null |
+| PPKG   | 2025.09.19 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7515,7 +7515,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.13.0** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.13.1** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 

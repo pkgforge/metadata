@@ -16,7 +16,7 @@
  6.9M   │ │ │ ├── aarch64-Linux.sdb.zstd
  6.8M   │ │ │ ├── loongarch64-Linux.sdb.zstd
  6.6M   │ │ │ ├── x86_64-Linux.db.zstd
- 6.5M   │ │ │ ├── x86_64-Linux.sdb.xz
+ 6.6M   │ │ │ ├── x86_64-Linux.sdb.xz
  6.5M   │ │ │ ├── riscv64-Linux.db.zstd
  6.5M   │ │ │ ├── aarch64-Linux.db.zstd
  6.5M   │ │ │ ├── riscv64-Linux.sdb.xz

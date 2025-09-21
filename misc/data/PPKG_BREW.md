@@ -840,7 +840,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.9 ⚠️ | https://github.com/lu-zero/cargo-c/archive/refs/tags/v0.10.9.tar.gz |
-| BREW   | **0.10.15** | https://github.com/lu-zero/cargo-c |
+| BREW   | **0.10.16** | https://github.com/lu-zero/cargo-c |
 
 *Outdated*
 
@@ -6671,7 +6671,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.2 ⚠️ | https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.2.tar.gz |
-| BREW   | **2.5.3** | https://www.openjpeg.org/ |
+| BREW   | **2.5.4** | https://www.openjpeg.org/ |
 
 *Outdated*
 
@@ -8992,7 +8992,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.9.9 ⚠️ | https://github.com/xmake-io/xmake/releases/download/v2.9.9/xmake-v2.9.9.tar.gz |
-| BREW   | **3.0.2** | https://xmake.io/ |
+| BREW   | **3.0.3** | https://xmake.io/ |
 
 *Outdated*
 

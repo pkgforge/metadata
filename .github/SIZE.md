@@ -276,6 +276,12 @@
   12K   │   │ ├── aarch64-Linux.db.xz
   12K   │   │ ├── aarch64-Linux.db.cba
  8.0K   │   │ ├── aarch64-Linux.sdb.xz
+ 4.0K   │   │ ├── x86_64-Linux.sdb.zstd.bsum
+ 4.0K   │   │ ├── x86_64-Linux.sdb.xz.bsum
+ 4.0K   │   │ ├── x86_64-Linux.sdb.bsum
+ 4.0K   │   │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │   │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │   │ ├── x86_64-Linux.json.bsum
  4.0K   │   │ ├── x86_64-Linux.db.zstd.bsum
  4.0K   │   │ ├── x86_64-Linux.db.xz.bsum
  4.0K   │   │ ├── x86_64-Linux.db.bsum
@@ -288,13 +294,7 @@
  4.0K   │   │ ├── aarch64-Linux.db.zstd.bsum
  4.0K   │   │ ├── aarch64-Linux.db.xz.bsum
  4.0K   │   │ ├── aarch64-Linux.db.bsum
- 4.0K   │   │ ├── TOTAL.json
-   0B   │   │ ├── x86_64-Linux.sdb.zstd.bsum
-   0B   │   │ ├── x86_64-Linux.sdb.xz.bsum
-   0B   │   │ ├── x86_64-Linux.sdb.bsum
-   0B   │   │ ├── x86_64-Linux.json.zstd.bsum
-   0B   │   │ ├── x86_64-Linux.json.xz.bsum
-   0B   │   │ └── x86_64-Linux.json.bsum
+ 4.0K   │   │ └── TOTAL.json
   32K   │   └─┬ scripts
   28K   │     └── gen_meta.sh
  235M   ├─┬ misc
@@ -316,8 +316,8 @@
  444K   │ │ ├── FLATPAK_APPS_INFO.txt
  340K   │ │ ├── PPKG.json
  276K   │ │ ├── PPKG_BREW.md
- 232K   │ │ ├── FLATPAK_POPULAR.json
- 224K   │ │ ├── FLATPAK_TRENDING.json
+ 236K   │ │ ├── FLATPAK_POPULAR.json
+ 220K   │ │ ├── FLATPAK_TRENDING.json
   76K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md

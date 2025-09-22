@@ -140,7 +140,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.302** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.303** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -3057,7 +3057,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.12.0 ⚠️ | https://github.com/hadolint/hadolint/archive/refs/tags/v2.12.0.tar.gz |
-| BREW   | **2.13.1** | https://github.com/hadolint/hadolint |
+| BREW   | **2.14.0** | https://github.com/hadolint/hadolint |
 
 *Outdated*
 
@@ -7310,7 +7310,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/rbspy/rbspy/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.37.0** | https://rbspy.github.io/ |
+| BREW   | **0.37.1** | https://rbspy.github.io/ |
 
 *Outdated*
 

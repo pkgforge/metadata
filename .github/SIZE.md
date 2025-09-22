@@ -82,7 +82,7 @@
  9.5M   │ │ │ ├── x86_64-Linux.sdb
  9.4M   │ │ │ ├── aarch64-Linux.sdb
  9.1M   │ │ │ ├── riscv64-Linux.sdb
- 7.7M   │ │ │ ├── loongarch64-Linux.sdb
+ 7.8M   │ │ │ ├── loongarch64-Linux.sdb
  1.5M   │ │ │ ├── x86_64-Linux.sdb.zstd
  1.5M   │ │ │ ├── aarch64-Linux.sdb.zstd
  1.4M   │ │ │ ├── riscv64-Linux.sdb.zstd
@@ -106,7 +106,7 @@
  1.1M   │ │ │ ├── loongarch64-Linux.sdb.xz
  1.1M   │ │ │ ├── loongarch64-Linux.db.xz
  1.0M   │ │ │ ├── loongarch64-Linux.json.zstd
-1012K   │ │ │ ├── loongarch64-Linux.json.xz
+1016K   │ │ │ ├── loongarch64-Linux.json.xz
  4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum
  4.0K   │ │ │ ├── x86_64-Linux.sdb.bsum
@@ -276,12 +276,6 @@
   12K   │   │ ├── aarch64-Linux.db.xz
   12K   │   │ ├── aarch64-Linux.db.cba
  8.0K   │   │ ├── aarch64-Linux.sdb.xz
- 4.0K   │   │ ├── x86_64-Linux.sdb.zstd.bsum
- 4.0K   │   │ ├── x86_64-Linux.sdb.xz.bsum
- 4.0K   │   │ ├── x86_64-Linux.sdb.bsum
- 4.0K   │   │ ├── x86_64-Linux.json.zstd.bsum
- 4.0K   │   │ ├── x86_64-Linux.json.xz.bsum
- 4.0K   │   │ ├── x86_64-Linux.json.bsum
  4.0K   │   │ ├── x86_64-Linux.db.zstd.bsum
  4.0K   │   │ ├── x86_64-Linux.db.xz.bsum
  4.0K   │   │ ├── x86_64-Linux.db.bsum
@@ -294,7 +288,13 @@
  4.0K   │   │ ├── aarch64-Linux.db.zstd.bsum
  4.0K   │   │ ├── aarch64-Linux.db.xz.bsum
  4.0K   │   │ ├── aarch64-Linux.db.bsum
- 4.0K   │   │ └── TOTAL.json
+ 4.0K   │   │ ├── TOTAL.json
+   0B   │   │ ├── x86_64-Linux.sdb.zstd.bsum
+   0B   │   │ ├── x86_64-Linux.sdb.xz.bsum
+   0B   │   │ ├── x86_64-Linux.sdb.bsum
+   0B   │   │ ├── x86_64-Linux.json.zstd.bsum
+   0B   │   │ ├── x86_64-Linux.json.xz.bsum
+   0B   │   │ └── x86_64-Linux.json.bsum
   32K   │   └─┬ scripts
   28K   │     └── gen_meta.sh
  235M   ├─┬ misc

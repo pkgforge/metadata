@@ -140,7 +140,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.303** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.304** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.22 ⚠️ | null |
+| PPKG   | 2025.09.23 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1201,7 +1201,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.4 ⚠️ | https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.xz |
-| BREW   | **9.7** | https://www.gnu.org/software/coreutils/ |
+| BREW   | **9.8** | https://www.gnu.org/software/coreutils/ |
 
 *Outdated*
 
@@ -2922,7 +2922,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 13.0.1 ⚠️ | https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.0.1/graphviz-13.0.1.tar.xz |
-| BREW   | **13.1.2** | https://graphviz.org/ |
+| BREW   | **14.0.0** | https://graphviz.org/ |
 
 *Outdated*
 
@@ -4672,7 +4672,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.22 ⚠️ | null |
+| PPKG   | 2025.09.23 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6191,7 +6191,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.26.2 ⚠️ | https://mupdf.com/downloads/archive/mupdf-1.26.2-source.tar.gz |
-| BREW   | **1.26.8** | https://mupdf.com/ |
+| BREW   | **1.26.9** | https://mupdf.com/ |
 
 *Outdated*
 
@@ -6743,7 +6743,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.22 ⚠️ | null |
+| PPKG   | 2025.09.23 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6910,7 +6910,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.22 ⚠️ | null |
+| PPKG   | 2025.09.23 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7072,7 +7072,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.22 ⚠️ | null |
+| PPKG   | 2025.09.23 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8137,7 +8137,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.87.4** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.87.5** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8433,7 +8433,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.40.4 ⚠️ | https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.4.tar.xz |
-| BREW   | **2.41.1** | https://github.com/util-linux/util-linux |
+| BREW   | **2.41.2** | https://github.com/util-linux/util-linux |
 
 *Outdated*
 
@@ -8455,7 +8455,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.19** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.20** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

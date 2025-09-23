@@ -25,7 +25,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20240722.1 ⚠️ | https://github.com/abseil/abseil-cpp/archive/refs/tags/20240722.1.tar.gz |
-| BREW   | **20250814.0** | https://abseil.io |
+| BREW   | **20250814.1** | https://abseil.io |
 
 *Outdated*
 
@@ -808,8 +808,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.10.0 ✅ | https://github.com/frewsxcv/cargo-all-features/archive/refs/tags/1.10.0.tar.gz |
-| BREW   | 1.10.0 | https://github.com/frewsxcv/cargo-all-features |
+| PPKG   | 1.10.0 ⚠️ | https://github.com/frewsxcv/cargo-all-features/archive/refs/tags/1.10.0.tar.gz |
+| BREW   | **1.11.0** | https://github.com/frewsxcv/cargo-all-features |
+
+*Outdated*
 
 ## cargo-auditable
 
@@ -1945,7 +1947,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.50.2 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.50.2.tar.gz |
-| BREW   | **2.52.0** | https://github.com/fastfetch-cli/fastfetch |
+| BREW   | **2.53.0** | https://github.com/fastfetch-cli/fastfetch |
 
 *Outdated*
 

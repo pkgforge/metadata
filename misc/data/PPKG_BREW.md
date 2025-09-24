@@ -140,7 +140,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.0.304** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.0.305** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -1502,7 +1502,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.57.0 ⚠️ | https://github.com/Wilfred/difftastic/archive/refs/tags/0.57.0.tar.gz |
-| BREW   | **0.64.0** | https://github.com/Wilfred/difftastic |
+| BREW   | **0.65.0** | https://github.com/Wilfred/difftastic |
 
 *Outdated*
 
@@ -2104,7 +2104,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 24.3.25 ⚠️ | https://github.com/google/flatbuffers/archive/refs/tags/v24.3.25.tar.gz |
-| BREW   | **25.2.10** | https://google.github.io/flatbuffers |
+| BREW   | **25.9.23** | https://google.github.io/flatbuffers |
 
 *Outdated*
 
@@ -4000,7 +4000,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20.1.8 ⚠️ | https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/libclc-20.1.8.src.tar.xz |
-| BREW   | **21.1.1** | https://libclc.llvm.org/ |
+| BREW   | **21.1.2** | https://libclc.llvm.org/ |
 
 *Outdated*
 
@@ -7993,7 +7993,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.9** | https://syncthing.net/ |
+| BREW   | **2.0.10** | https://syncthing.net/ |
 
 *Outdated*
 

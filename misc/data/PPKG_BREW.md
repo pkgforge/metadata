@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.23 ⚠️ | null |
+| PPKG   | 2025.09.24 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1046,7 +1046,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.54.0 ⚠️ | https://github.com/twpayne/chezmoi/archive/refs/tags/v2.54.0.tar.gz |
-| BREW   | **2.65.1** | https://chezmoi.io/ |
+| BREW   | **2.65.2** | https://chezmoi.io/ |
 
 *Outdated*
 
@@ -2441,7 +2441,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.76.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.76.0.tar.gz |
-| BREW   | **2.79.0** | https://cli.github.com/ |
+| BREW   | **2.80.0** | https://cli.github.com/ |
 
 *Outdated*
 
@@ -4674,7 +4674,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.23 ⚠️ | null |
+| PPKG   | 2025.09.24 ⚠️ | null |
 | BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6563,7 +6563,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.12.0** | https://ollama.com/ |
+| BREW   | **0.12.1** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6724,7 +6724,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | **1.16.0** | https://oxc.rs/ |
+| BREW   | **1.17.0** | https://oxc.rs/ |
 
 *Outdated*
 
@@ -6745,7 +6745,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.23 ⚠️ | null |
+| PPKG   | 2025.09.24 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6912,7 +6912,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.23 ⚠️ | null |
+| PPKG   | 2025.09.24 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7074,7 +7074,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.23 ⚠️ | null |
+| PPKG   | 2025.09.24 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7790,7 +7790,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 128.11.0 ⚠️ | https://archive.mozilla.org/pub/firefox/releases/128.11.0esr/source/firefox-128.11.0esr.source.tar.xz |
-| BREW   | **140.3.0** | https://spidermonkey.dev |
+| BREW   | **140.3.1** | https://spidermonkey.dev |
 
 *Outdated*
 
@@ -8299,7 +8299,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.6 ⚠️ | https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.6.tar.gz |
-| BREW   | **0.25.9** | https://tree-sitter.github.io/ |
+| BREW   | **0.25.10** | https://tree-sitter.github.io/ |
 
 *Outdated*
 
@@ -8457,7 +8457,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.8.20** | https://docs.astral.sh/uv/ |
+| BREW   | **0.8.22** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -8745,7 +8745,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | null |
-| BREW   | **37.0.0** | https://wasmtime.dev/ |
+| BREW   | **37.0.1** | https://wasmtime.dev/ |
 
 *Outdated*
 

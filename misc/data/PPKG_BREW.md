@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.24 ⚠️ | null |
+| PPKG   | 2025.09.25 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -831,7 +831,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.0 ⚠️ | https://github.com/burtonageo/cargo-bundle/archive/refs/tags/v0.7.0.tar.gz |
-| BREW   | **0.8.0** | https://github.com/burtonageo/cargo-bundle |
+| BREW   | **0.9.0** | https://github.com/burtonageo/cargo-bundle |
 
 *Outdated*
 
@@ -2806,7 +2806,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.1 ⚠️ | https://github.com/goreleaser/goreleaser/archive/refs/tags/v1.25.1.tar.gz |
-| BREW   | **2.12.2** | https://goreleaser.com/ |
+| BREW   | **2.12.3** | https://goreleaser.com/ |
 
 *Outdated*
 
@@ -4654,8 +4654,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.11.0 ✅ | https://github.com/ngtcp2/nghttp3/releases/download/v1.11.0/nghttp3-1.11.0.tar.xz |
-| BREW   | 1.11.0 | https://nghttp2.org/nghttp3/ |
+| PPKG   | 1.11.0 ⚠️ | https://github.com/ngtcp2/nghttp3/releases/download/v1.11.0/nghttp3-1.11.0.tar.xz |
+| BREW   | **1.12.0** | https://nghttp2.org/nghttp3/ |
+
+*Outdated*
 
 ## libngspice
 
@@ -4674,8 +4676,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.24 ⚠️ | null |
-| BREW   | **1.15.1** | https://nghttp2.org/ngtcp2/ |
+| PPKG   | 2025.09.25 ⚠️ | null |
+| BREW   | **1.16.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
 
@@ -6724,7 +6726,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | **1.17.0** | https://oxc.rs/ |
+| BREW   | **1.18.0** | https://oxc.rs/ |
 
 *Outdated*
 
@@ -6745,7 +6747,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.24 ⚠️ | null |
+| PPKG   | 2025.09.25 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6912,7 +6914,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.24 ⚠️ | null |
+| PPKG   | 2025.09.25 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7074,7 +7076,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.24 ⚠️ | null |
+| PPKG   | 2025.09.25 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7323,7 +7325,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.69.3 ⚠️ | https://github.com/rclone/rclone/archive/refs/tags/v1.69.3.tar.gz |
-| BREW   | **1.71.0** | https://rclone.org/ |
+| BREW   | **1.71.1** | https://rclone.org/ |
 
 *Outdated*
 
@@ -8139,7 +8141,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.87.5** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.87.6** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

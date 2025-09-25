@@ -1686,7 +1686,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.0 ⚠️ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
-| BREW   | **0.4.1** | https://github.com/robertpsoane/ducker |
+| BREW   | **0.4.2** | https://github.com/robertpsoane/ducker |
 
 *Outdated*
 
@@ -6565,7 +6565,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.12.1** | https://ollama.com/ |
+| BREW   | **0.12.2** | https://ollama.com/ |
 
 *Outdated*
 

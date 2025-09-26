@@ -100,7 +100,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.3 ⚠️ | https://github.com/asciinema/agg/archive/refs/tags/v1.4.3.tar.gz |
-| BREW   | **1.5.0** | https://github.com/asciinema/agg |
+| BREW   | **1.6.0** | https://github.com/asciinema/agg |
 
 *Outdated*
 
@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.25 ⚠️ | null |
+| PPKG   | 2025.09.26 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -696,7 +696,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.44.6 ⚠️ | https://github.com/Canop/broot/archive/refs/tags/v1.44.6.tar.gz |
-| BREW   | **1.49.1** | https://dystroy.org/broot/ |
+| BREW   | **1.50.0** | https://dystroy.org/broot/ |
 
 *Outdated*
 
@@ -1170,7 +1170,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.6 ⚠️ | https://github.com/cobalt-org/cobalt.rs/archive/refs/tags/v0.19.6.tar.gz |
-| BREW   | **0.20.0** | https://cobalt-org.github.io/ |
+| BREW   | **0.20.1** | https://cobalt-org.github.io/ |
 
 *Outdated*
 
@@ -2651,7 +2651,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 15.1.0 ⚠️ | https://github.com/KhronosGroup/glslang/archive/refs/tags/15.1.0.tar.gz |
-| BREW   | **15.4.0** | https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/ |
+| BREW   | **16.0.0** | https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/ |
 
 *Outdated*
 
@@ -3237,7 +3237,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.150.0** | https://gohugo.io/ |
+| BREW   | **0.150.1** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -3339,7 +3339,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.4 ⚠️ | https://linuxcontainers.org/downloads/incus/incus-6.4.tar.xz |
-| BREW   | **6.16** | https://linuxcontainers.org/incus |
+| BREW   | **6.17** | https://linuxcontainers.org/incus |
 
 *Outdated*
 
@@ -3468,7 +3468,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.79.0** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.79.1** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -4676,7 +4676,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.25 ⚠️ | null |
+| PPKG   | 2025.09.26 ⚠️ | null |
 | BREW   | **1.16.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -4839,7 +4839,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 17.2 ⚠️ | https://ftp.postgresql.org/pub/source/v17.2/postgresql-17.2.tar.bz2 |
-| BREW   | **17.6** | https://www.postgresql.org/docs/current/libpq.html |
+| BREW   | **18.0** | https://www.postgresql.org/docs/current/libpq.html |
 
 *Outdated*
 
@@ -6747,7 +6747,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.25 ⚠️ | null |
+| PPKG   | 2025.09.26 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6914,7 +6914,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.25 ⚠️ | null |
+| PPKG   | 2025.09.26 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7076,7 +7076,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.25 ⚠️ | null |
+| PPKG   | 2025.09.26 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7519,7 +7519,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.13.1** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.13.2** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -8141,7 +8141,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.87.6** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.87.7** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 

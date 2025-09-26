@@ -1181,7 +1181,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.104.1** | https://github.com/microsoft/vscode |
+| BREW   | **1.104.2** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -2971,7 +2971,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.71.0 ⚠️ | https://github.com/grpc/grpc/archive/refs/tags/v1.71.0.tar.gz |
-| BREW   | **1.75.0** | https://grpc.io/ |
+| BREW   | **1.75.1** | https://grpc.io/ |
 
 *Outdated*
 
@@ -4786,7 +4786,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.13.37 ⚠️ | https://github.com/google/libphonenumber/archive/refs/tags/v8.13.37.tar.gz |
-| BREW   | **9.0.14** | https://github.com/google/libphonenumber |
+| BREW   | **9.0.15** | https://github.com/google/libphonenumber |
 
 *Outdated*
 
@@ -6304,7 +6304,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.0.1 ⚠️ | https://github.com/containerd/nerdctl/archive/refs/tags/v2.0.1.tar.gz |
-| BREW   | **2.1.4** | https://github.com/containerd/nerdctl |
+| BREW   | **2.1.5** | https://github.com/containerd/nerdctl |
 
 *Outdated*
 
@@ -6587,7 +6587,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.65.0 ⚠️ | https://github.com/open-policy-agent/opa/archive/refs/tags/v0.65.0.tar.gz |
-| BREW   | **1.8.0** | https://www.openpolicyagent.org |
+| BREW   | **1.9.0** | https://www.openpolicyagent.org |
 
 *Outdated*
 

@@ -6565,7 +6565,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.12.2** | https://ollama.com/ |
+| BREW   | **0.12.3** | https://ollama.com/ |
 
 *Outdated*
 
@@ -7929,7 +7929,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.20.0 ⚠️ | https://github.com/JohnnyMorganz/StyLua/archive/refs/tags/v0.20.0.tar.gz |
-| BREW   | **2.2.0** | https://github.com/JohnnyMorganz/StyLua |
+| BREW   | **2.3.0** | https://github.com/JohnnyMorganz/StyLua |
 
 *Outdated*
 
@@ -8131,6 +8131,17 @@
 |--------|---------|-------------|
 | PPKG   | 2.17.0 ⚠️ | https://github.com/d5/tengo/archive/refs/tags/v2.17.0.tar.gz |
 | BREW   | **3.0.0** | https://tengolang.com |
+
+*Outdated*
+
+## termsvg
+
+**Description:** A command-line tool to rcord, share and export your terminal as a animated SVG image
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.9.2 ⚠️ | https://github.com/MrMarble/termsvg/archive/refs/tags/v0.9.2.tar.gz |
+| BREW   | **0.9.3** | https://github.com/MrMarble/termsvg |
 
 *Outdated*
 

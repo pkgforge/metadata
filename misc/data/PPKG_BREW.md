@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.27 ⚠️ | null |
+| PPKG   | 2025.09.28 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -3550,7 +3550,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.32.5 ⚠️ | https://github.com/derailed/k9s/archive/refs/tags/v0.32.5.tar.gz |
-| BREW   | **0.50.12** | https://k9scli.io/ |
+| BREW   | **0.50.13** | https://k9scli.io/ |
 
 *Outdated*
 
@@ -4676,7 +4676,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.27 ⚠️ | null |
+| PPKG   | 2025.09.28 ⚠️ | null |
 | BREW   | **1.16.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6747,7 +6747,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.27 ⚠️ | null |
+| PPKG   | 2025.09.28 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6914,7 +6914,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.27 ⚠️ | null |
+| PPKG   | 2025.09.28 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7076,7 +7076,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.27 ⚠️ | null |
+| PPKG   | 2025.09.28 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

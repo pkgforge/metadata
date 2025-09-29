@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.28 ⚠️ | null |
+| PPKG   | 2025.09.29 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -4676,7 +4676,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.28 ⚠️ | null |
+| PPKG   | 2025.09.29 ⚠️ | null |
 | BREW   | **1.16.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6747,7 +6747,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.28 ⚠️ | null |
+| PPKG   | 2025.09.29 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6914,7 +6914,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.28 ⚠️ | null |
+| PPKG   | 2025.09.29 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7076,7 +7076,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.28 ⚠️ | null |
+| PPKG   | 2025.09.29 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8607,7 +8607,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.1.0450 ⚠️ | https://github.com/vim/vim/archive/refs/tags/v9.1.0450.tar.gz |
-| BREW   | **9.1.1750** | https://www.vim.org/ |
+| BREW   | **9.1.1800** | https://www.vim.org/ |
 
 *Outdated*
 

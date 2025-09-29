@@ -6726,7 +6726,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | **1.18.0** | https://oxc.rs/ |
+| BREW   | **1.19.0** | https://oxc.rs/ |
 
 *Outdated*
 

@@ -299,7 +299,7 @@
   28K   │     └── gen_meta.sh
  236M   ├─┬ misc
  235M   │ ├─┬ data
-  73M   │ │ ├── ARCHLINUX.json
+  74M   │ │ ├── ARCHLINUX.json
   39M   │ │ ├── FLATPAK_APPSTREAM.xml
   32M   │ │ ├── CONDA.json
   25M   │ │ ├── DEBIAN.json

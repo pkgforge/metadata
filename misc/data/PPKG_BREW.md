@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.29 ⚠️ | null |
+| PPKG   | 2025.09.30 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1686,7 +1686,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.0 ⚠️ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
-| BREW   | **0.4.2** | https://github.com/robertpsoane/ducker |
+| BREW   | **0.5.0** | https://github.com/robertpsoane/ducker |
 
 *Outdated*
 
@@ -3705,7 +3705,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.84.1 ⚠️ | https://github.com/DanBloomberg/leptonica/releases/download/1.84.1/leptonica-1.84.1.tar.gz |
-| BREW   | **1.85.0** | http://www.leptonica.org/ |
+| BREW   | **1.86.0** | http://www.leptonica.org/ |
 
 *Outdated*
 
@@ -4676,7 +4676,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.29 ⚠️ | null |
+| PPKG   | 2025.09.30 ⚠️ | null |
 | BREW   | **1.16.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5339,7 +5339,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.2 ⚠️ | https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.gz |
-| BREW   | **1.3** | https://www.gnu.org/software/libunistring/ |
+| BREW   | **1.4** | https://www.gnu.org/software/libunistring/ |
 
 *Outdated*
 
@@ -6747,7 +6747,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.29 ⚠️ | null |
+| PPKG   | 2025.09.30 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6759,7 +6759,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.6.3 ⚠️ | https://github.com/jgm/pandoc/archive/refs/tags/3.6.3.tar.gz |
-| BREW   | **3.8** | https://pandoc.org/ |
+| BREW   | **3.8.1** | https://pandoc.org/ |
 
 *Outdated*
 
@@ -6914,7 +6914,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.29 ⚠️ | null |
+| PPKG   | 2025.09.30 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7076,7 +7076,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.29 ⚠️ | null |
+| PPKG   | 2025.09.30 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8152,7 +8152,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.88.0** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.88.1** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8400,8 +8400,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.3.12 ✅ | http://www.unixodbc.org/unixODBC-2.3.12.tar.gz |
-| BREW   | 2.3.12 | https://www.unixodbc.org/ |
+| PPKG   | 2.3.12 ⚠️ | http://www.unixodbc.org/unixODBC-2.3.12.tar.gz |
+| BREW   | **2.3.13** | https://www.unixodbc.org/ |
+
+*Outdated*
 
 ## unzip
 

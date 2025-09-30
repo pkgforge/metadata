@@ -917,7 +917,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.5.3 ⚠️ | https://github.com/catchorg/Catch2/archive/refs/tags/v3.5.3.tar.gz |
-| BREW   | **3.10.0** | https://github.com/catchorg/Catch2 |
+| BREW   | **3.11.0** | https://github.com/catchorg/Catch2 |
 
 *Outdated*
 
@@ -1686,7 +1686,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.0 ⚠️ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
-| BREW   | **0.5.0** | https://github.com/robertpsoane/ducker |
+| BREW   | **0.5.1** | https://github.com/robertpsoane/ducker |
 
 *Outdated*
 
@@ -3004,7 +3004,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.24.43 ⚠️ | https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz |
-| BREW   | **3.24.50** | https://gtk.org/ |
+| BREW   | **3.24.51** | https://gtk.org/ |
 
 *Outdated*
 
@@ -7907,7 +7907,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.13 ⚠️ | https://github.com/strace/strace/releases/download/v6.13/strace-6.13.tar.xz |
-| BREW   | **6.16** | https://strace.io/ |
+| BREW   | **6.17** | https://strace.io/ |
 
 *Outdated*
 

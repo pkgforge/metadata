@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.30 ⚠️ | null |
+| PPKG   | 2025.10.01 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -975,7 +975,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.4.0 ⚠️ | https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.4.0.tar.gz |
-| BREW   | **4.6.2** | https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html |
+| BREW   | **4.6.3** | https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html |
 
 *Outdated*
 
@@ -1686,7 +1686,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.0 ⚠️ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
-| BREW   | **0.5.1** | https://github.com/robertpsoane/ducker |
+| BREW   | **0.5.2** | https://github.com/robertpsoane/ducker |
 
 *Outdated*
 
@@ -2408,7 +2408,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | r2.5 ⚠️ | https://github.com/geographiclib/geographiclib/archive/refs/tags/r2.5.tar.gz |
-| BREW   | **2.5.2** | https://geographiclib.sourceforge.io/ |
+| BREW   | **2.6** | https://geographiclib.sourceforge.io/ |
 
 *Outdated*
 
@@ -3015,7 +3015,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.18.6 ⚠️ | https://download.gnome.org/sources/gtk/4.18/gtk-4.18.6.tar.xz |
-| BREW   | **4.20.1** | https://gtk.org/ |
+| BREW   | **4.20.2** | https://gtk.org/ |
 
 *Outdated*
 
@@ -4550,7 +4550,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 24.06 ⚠️ | https://mediaarea.net/download/source/libmediainfo/24.06/libmediainfo_24.06.tar.xz |
-| BREW   | **25.07** | https://mediaarea.net/en/MediaInfo |
+| BREW   | **25.09** | https://mediaarea.net/en/MediaInfo |
 
 *Outdated*
 
@@ -4676,7 +4676,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.30 ⚠️ | null |
+| PPKG   | 2025.10.01 ⚠️ | null |
 | BREW   | **1.16.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6304,7 +6304,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.0.1 ⚠️ | https://github.com/containerd/nerdctl/archive/refs/tags/v2.0.1.tar.gz |
-| BREW   | **2.1.5** | https://github.com/containerd/nerdctl |
+| BREW   | **2.1.6** | https://github.com/containerd/nerdctl |
 
 *Outdated*
 
@@ -6747,7 +6747,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.30 ⚠️ | null |
+| PPKG   | 2025.10.01 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6914,7 +6914,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.30 ⚠️ | null |
+| PPKG   | 2025.10.01 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7076,7 +7076,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.09.30 ⚠️ | null |
+| PPKG   | 2025.10.01 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7457,7 +7457,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/apollographql/rover/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.35.0** | https://www.apollographql.com/docs/rover/ |
+| BREW   | **0.36.0** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
 
@@ -7728,7 +7728,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.1 ⚠️ | https://github.com/LucasPickering/slumber/archive/refs/tags/v3.0.1.tar.gz |
-| BREW   | **4.0.1** | https://slumber.lucaspickering.me/ |
+| BREW   | **4.1.0** | https://slumber.lucaspickering.me/ |
 
 *Outdated*
 

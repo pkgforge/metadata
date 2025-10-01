@@ -36,7 +36,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.2.62 ⚠️ | https://github.com/nektos/act/archive/refs/tags/v0.2.62.tar.gz |
-| BREW   | **0.2.81** | https://github.com/nektos/act |
+| BREW   | **0.2.82** | https://github.com/nektos/act |
 
 *Outdated*
 
@@ -2806,7 +2806,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.1 ⚠️ | https://github.com/goreleaser/goreleaser/archive/refs/tags/v1.25.1.tar.gz |
-| BREW   | **2.12.3** | https://goreleaser.com/ |
+| BREW   | **2.12.5** | https://goreleaser.com/ |
 
 *Outdated*
 
@@ -6620,7 +6620,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.4.1 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenColorIO/archive/refs/tags/v2.4.1.tar.gz |
-| BREW   | **2.4.2** | https://opencolorio.org/ |
+| BREW   | **2.5.0** | https://opencolorio.org/ |
 
 *Outdated*
 
@@ -7814,7 +7814,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20.1.4 ⚠️ | https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v20.1.4.tar.gz |
-| BREW   | **21.1.0** | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
+| BREW   | **21.1.1** | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
 
 *Outdated*
 

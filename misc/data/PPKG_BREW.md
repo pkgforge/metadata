@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.01 ⚠️ | null |
+| PPKG   | 2025.10.02 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -946,7 +946,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.10.2 ⚠️ | https://github.com/ccache/ccache/releases/download/v4.10.2/ccache-4.10.2.tar.xz |
-| BREW   | **4.12** | https://ccache.dev/ |
+| BREW   | **4.12.1** | https://ccache.dev/ |
 
 *Outdated*
 
@@ -997,7 +997,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.6.1 ⚠️ | https://github.com/CGAL/cgal/releases/download/v5.6.1/CGAL-5.6.1.tar.xz |
-| BREW   | **6.0.2** | https://www.cgal.org/ |
+| BREW   | **6.1** | https://www.cgal.org/ |
 
 *Outdated*
 
@@ -1128,7 +1128,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.31.8 ⚠️ | https://github.com/Kitware/CMake/releases/download/v3.31.8/cmake-3.31.8.tar.gz |
-| BREW   | **4.1.1** | https://www.cmake.org/ |
+| BREW   | **4.1.2** | https://www.cmake.org/ |
 
 *Outdated*
 
@@ -1170,7 +1170,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.6 ⚠️ | https://github.com/cobalt-org/cobalt.rs/archive/refs/tags/v0.19.6.tar.gz |
-| BREW   | **0.20.1** | https://cobalt-org.github.io/ |
+| BREW   | **0.20.2** | https://cobalt-org.github.io/ |
 
 *Outdated*
 
@@ -1613,7 +1613,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.13** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.15** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2441,7 +2441,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.76.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.76.0.tar.gz |
-| BREW   | **2.80.0** | https://cli.github.com/ |
+| BREW   | **2.81.0** | https://cli.github.com/ |
 
 *Outdated*
 
@@ -4676,7 +4676,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.01 ⚠️ | null |
+| PPKG   | 2025.10.02 ⚠️ | null |
 | BREW   | **1.16.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6032,7 +6032,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 25.1.4 ⚠️ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
-| BREW   | **25.2.3** | https://www.mesa3d.org/ |
+| BREW   | **25.2.4** | https://www.mesa3d.org/ |
 
 *Outdated*
 
@@ -6664,7 +6664,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.15.0 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v2.5.15.0.tar.gz |
-| BREW   | **3.0.10.1** | https://openimageio.readthedocs.io/en/stable/ |
+| BREW   | **3.0.11.0** | https://openimageio.readthedocs.io/en/stable/ |
 
 *Outdated*
 
@@ -6747,7 +6747,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.01 ⚠️ | null |
+| PPKG   | 2025.10.02 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6914,7 +6914,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.01 ⚠️ | null |
+| PPKG   | 2025.10.02 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7076,7 +7076,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.01 ⚠️ | null |
+| PPKG   | 2025.10.02 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7457,7 +7457,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/apollographql/rover/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.36.0** | https://www.apollographql.com/docs/rover/ |
+| BREW   | **0.36.1** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
 
@@ -8234,7 +8234,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.9.2 ⚠️ | https://github.com/tldr-pages/tlrc/archive/refs/tags/v1.9.2.tar.gz |
-| BREW   | **1.11.1** | https://tldr.sh/tlrc/ |
+| BREW   | **1.12.0** | https://tldr.sh/tlrc/ |
 
 *Outdated*
 
@@ -8620,7 +8620,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.0.0 ⚠️ | https://github.com/VirusTotal/vt-cli/archive/refs/tags/1.0.0.tar.gz |
-| BREW   | **1.1.1** | https://github.com/VirusTotal/vt-cli |
+| BREW   | **1.2.0** | https://github.com/VirusTotal/vt-cli |
 
 *Outdated*
 

@@ -158,7 +158,7 @@
 448K   │ │ │ ├── x86_64-Linux.sdb.xz
 440K   │ │ │ ├── x86_64-Linux.db.zstd
 416K   │ │ │ ├── x86_64-Linux.db.xz
-400K   │ │ │ ├── x86_64-Linux.json.zstd
+404K   │ │ │ ├── x86_64-Linux.json.zstd
 396K   │ │ │ ├── x86_64-Linux.json.xz
 4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
 4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum
@@ -304,7 +304,7 @@
  32M   │ │ ├── CONDA.json
  25M   │ │ ├── DEBIAN.json
  17M   │ │ ├── CONDA_RAW.json
- 12M   │ │ ├── NIXPKGS.json
+ 13M   │ │ ├── NIXPKGS.json
  11M   │ │ ├── ALPINE_PKG.json
 9.1M   │ │ ├── PKGSRC.json
 5.2M   │ │ ├── ALPINE_GIT.json

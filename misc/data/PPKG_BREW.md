@@ -886,7 +886,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.4.41 ⚠️ | https://github.com/dtolnay/cargo-llvm-lines/archive/refs/tags/0.4.41.tar.gz |
-| BREW   | **0.4.44** | https://github.com/dtolnay/cargo-llvm-lines |
+| BREW   | **0.4.45** | https://github.com/dtolnay/cargo-llvm-lines |
 
 *Outdated*
 
@@ -3237,7 +3237,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.150.1** | https://gohugo.io/ |
+| BREW   | **0.151.0** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -3468,7 +3468,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.79.2** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.80.0** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -3479,7 +3479,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/martinvonz/jj/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.33.0** | https://github.com/jj-vcs/jj |
+| BREW   | **0.34.0** | https://github.com/jj-vcs/jj |
 
 *Outdated*
 
@@ -4133,7 +4133,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.4.124 ⚠️ | https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz |
-| BREW   | **2.4.125** | https://dri.freedesktop.org |
+| BREW   | **2.4.126** | https://dri.freedesktop.org |
 
 *Outdated*
 
@@ -4498,8 +4498,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.32 ✅ | https://downloads.sourceforge.net/project/liblo/liblo/0.32/liblo-0.32.tar.gz |
-| BREW   | 0.32 | https://liblo.sourceforge.net/ |
+| PPKG   | 0.32 ⚠️ | https://downloads.sourceforge.net/project/liblo/liblo/0.32/liblo-0.32.tar.gz |
+| BREW   | **0.33** | https://liblo.sourceforge.net/ |
+
+*Outdated*
 
 ## liblqr
 

@@ -193,7 +193,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.0.5 ⚠️ | https://github.com/ximion/appstream/archive/refs/tags/v1.0.5.tar.gz |
-| BREW   | **1.1.0** | https://www.freedesktop.org/wiki/Distributions/AppStream/ |
+| BREW   | **1.1.1** | https://www.freedesktop.org/wiki/Distributions/AppStream/ |
 
 *Outdated*
 
@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.02 ⚠️ | null |
+| PPKG   | 2025.10.03 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -906,7 +906,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.99 ⚠️ | https://github.com/nextest-rs/nextest/archive/refs/tags/cargo-nextest-0.9.99.tar.gz |
-| BREW   | **0.9.104** | https://nexte.st |
+| BREW   | **0.9.105** | https://nexte.st |
 
 *Outdated*
 
@@ -1181,7 +1181,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.104.2** | https://github.com/microsoft/vscode |
+| BREW   | **1.104.3** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -4678,7 +4678,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.02 ⚠️ | null |
+| PPKG   | 2025.10.03 ⚠️ | null |
 | BREW   | **1.16.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -4852,7 +4852,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.10.0 ⚠️ | https://github.com/jtv/libpqxx/archive/refs/tags/7.10.0.tar.gz |
-| BREW   | **7.10.1** | https://pqxx.org/development/libpqxx/ |
+| BREW   | **7.10.2** | https://pqxx.org/development/libpqxx/ |
 
 *Outdated*
 
@@ -6666,7 +6666,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.15.0 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v2.5.15.0.tar.gz |
-| BREW   | **3.0.11.0** | https://openimageio.readthedocs.io/en/stable/ |
+| BREW   | **3.1.6.1** | https://openimageio.readthedocs.io/en/stable/ |
 
 *Outdated*
 
@@ -6749,7 +6749,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.02 ⚠️ | null |
+| PPKG   | 2025.10.03 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6916,7 +6916,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.02 ⚠️ | null |
+| PPKG   | 2025.10.03 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7078,7 +7078,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.02 ⚠️ | null |
+| PPKG   | 2025.10.03 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7521,7 +7521,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.13.2** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.13.3** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 

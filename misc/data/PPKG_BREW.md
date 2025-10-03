@@ -1613,7 +1613,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.15** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.16** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -7360,7 +7360,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.0.12 ⚠️ | https://download.redis.io/releases/redis-7.0.12.tar.gz |
-| BREW   | **8.2.1** | https://redis.io/ |
+| BREW   | **8.2.2** | https://redis.io/ |
 
 *Outdated*
 

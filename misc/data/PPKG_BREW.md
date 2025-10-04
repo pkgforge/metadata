@@ -875,7 +875,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.6.14 ⚠️ | https://static.crates.io/crates/cargo-llvm-cov/cargo-llvm-cov-0.6.14.crate |
-| BREW   | **0.6.19** | https://github.com/taiki-e/cargo-llvm-cov |
+| BREW   | **0.6.20** | https://github.com/taiki-e/cargo-llvm-cov |
 
 *Outdated*
 
@@ -2290,7 +2290,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.17.0 ⚠️ | https://github.com/koki-develop/gat/archive/refs/tags/v0.17.0.tar.gz |
-| BREW   | **0.25.2** | https://github.com/koki-develop/gat |
+| BREW   | **0.25.4** | https://github.com/koki-develop/gat |
 
 *Outdated*
 
@@ -2346,7 +2346,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.0 ⚠️ | https://github.com/herrhotzenplotz/gcli/archive/refs/tags/v2.7.0.tar.gz |
-| BREW   | **2.9.0** | https://herrhotzenplotz.de/gcli/ |
+| BREW   | **2.9.1** | https://herrhotzenplotz.de/gcli/ |
 
 *Outdated*
 
@@ -6256,8 +6256,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.16.03 ✅ | https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz |
-| BREW   | 2.16.03 | https://www.nasm.us/ |
+| PPKG   | 2.16.03 ⚠️ | https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz |
+| BREW   | **3.00** | https://www.nasm.us/ |
+
+*Outdated*
 
 ## navi
 
@@ -6666,7 +6668,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.15.0 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v2.5.15.0.tar.gz |
-| BREW   | **3.1.6.1** | https://openimageio.readthedocs.io/en/stable/ |
+| BREW   | **3.1.6.2** | https://openimageio.readthedocs.io/en/stable/ |
 
 *Outdated*
 

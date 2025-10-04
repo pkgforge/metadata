@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.03 ⚠️ | null |
+| PPKG   | 2025.10.04 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1613,7 +1613,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.59.16** | https://github.com/dolthub/dolt |
+| BREW   | **1.59.17** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -1903,7 +1903,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.0 ⚠️ | https://github.com/eza-community/eza/archive/refs/tags/v0.19.0.tar.gz |
-| BREW   | **0.23.3** | https://github.com/eza-community/eza |
+| BREW   | **0.23.4** | https://github.com/eza-community/eza |
 
 *Outdated*
 
@@ -4678,7 +4678,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.03 ⚠️ | null |
+| PPKG   | 2025.10.04 ⚠️ | null |
 | BREW   | **1.16.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5848,7 +5848,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.693** | https://luau.org |
+| BREW   | **0.694** | https://luau.org |
 
 *Outdated*
 
@@ -6452,7 +6452,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.107 ⚠️ | https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz |
-| BREW   | **3.116** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
+| BREW   | **3.117** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
 
 *Outdated*
 
@@ -6749,7 +6749,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.03 ⚠️ | null |
+| PPKG   | 2025.10.04 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6916,7 +6916,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.03 ⚠️ | null |
+| PPKG   | 2025.10.04 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7078,7 +7078,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.10.03 ⚠️ | null |
+| PPKG   | 2025.10.04 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7459,7 +7459,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/apollographql/rover/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.36.1** | https://www.apollographql.com/docs/rover/ |
+| BREW   | **0.36.2** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
 
@@ -8101,7 +8101,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.7.1 ⚠️ | https://github.com/dbrgn/tealdeer/archive/refs/tags/v1.7.1.tar.gz |
-| BREW   | **1.7.2** | https://tealdeer-rs.github.io/tealdeer/ |
+| BREW   | **1.8.0** | https://tealdeer-rs.github.io/tealdeer/ |
 
 *Outdated*
 
@@ -9002,7 +9002,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.40 ⚠️ | https://xorg.freedesktop.org/archive/individual/data/xkeyboard-config/xkeyboard-config-2.40.tar.xz |
-| BREW   | **2.45** | https://www.freedesktop.org/wiki/Software/XKeyboardConfig/ |
+| BREW   | **2.46** | https://www.freedesktop.org/wiki/Software/XKeyboardConfig/ |
 
 *Outdated*
 

@@ -1,0 +1,98 @@
+name: 📃 Sync Logs 📃
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  schedule:
+   - cron: "0 */2 * * *" #every 02 hrs
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    permissions:
+      contents: write
+      packages: write
+      statuses: read
+    strategy:
+      matrix:
+        include:
+          - repo: "pkgforge/bincache"
+            repo_name: "bincache"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_gh_logs.sh"
+
+          - repo: "pkgforge/pkgcache"
+            repo_name: "pkgcache"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_gh_logs.sh"
+
+          - repo: "pkgforge-cargo/builder"
+            repo_name: "builder"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_gh_logs.sh"
+            
+          - repo: "pkgforge-go/builder"
+            repo_name: "builder"
+            script: "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/scripts/fetch_gh_logs.sh"
+    steps:
+
+      - name: Install Addons
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
+        continue-on-error: true
+
+      - name: Debloat Runner
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/main/Github/Runners/debloat_ubuntu.sh")
+        continue-on-error: true
+        
+      - name: Setup Env
+        env:
+          GH_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ github.token }}"
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          #tmp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          #-------------#
+          ##gh
+          echo "GH_PAGER=" >> "${GITHUB_ENV}"
+          gh config set prompt disabled
+          echo "GHA_MODE=MATRIX" >> "${GITHUB_ENV}"
+          echo "GIT_TERMINAL_PROMPT=0" >> "${GITHUB_ENV}"
+          echo "GIT_ASKPASS=/bin/echo" >> "${GITHUB_ENV}"
+          #gh release create "build-log-${{ matrix.repo_name }}" --repo "${GITHUB_REPOSITORY}" --title "Build Logs (CI) [${{ matrix.repo_name }}]" --prerelease || true
+          #sleep 5
+          #gh release view "build-log-${{ matrix.repo_name }}" --repo "${GITHUB_REPOSITORY}"
+          #-------------#
+          ##User-Agent
+          USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Fetch (${{ matrix.repo }}/${{ matrix.arch }})
+        env:
+          GHCR_TOKEN: "${{ github.token }}"
+          GH_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ github.token }}"
+          #GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
+          HF_TOKEN: "${{ secrets.HF_TOKEN }}"
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          pushd "$(mktemp -d)" &>/dev/null
+            curl -qfsSL "${{ matrix.script }}" -o "./sync.sh"
+            dos2unix --quiet "./sync.sh"
+            chmod 'a+x' -v "./sync.sh"
+            PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh" "${{ matrix.repo }}"
+          popd &>/dev/null
+        continue-on-error: true

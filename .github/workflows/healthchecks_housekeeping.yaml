@@ -1,0 +1,420 @@
+name: 🐧🧹 HealthChecks 🖳🗑️
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+on:
+  #push:
+  workflow_dispatch:
+  schedule:
+  #  - cron: "45 03 * * *"  # 03:45 AM UTC --> 09:30 AM Morning NPT
+   - cron: "0 */2 * * *"  # Every 02 Hrs
+
+#env:
+  #GHCR_TOKEN: "${{ secrets.GHCR_TOKEN }}"
+jobs:
+#------------------------------------------------------------------------------------#
+  check-post:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: main
+          filter: "blob:none"
+
+      - name: Setup Env
+        run: |
+          ##presets
+          set +x ; set +e
+          #-------------#
+          ##CoreUtils
+          sudo apt update -y
+          sudo apt install bc coreutils curl dos2unix fdupes jq moreutils wget -y
+          sudo apt-get install apt-transport-https apt-utils ca-certificates coreutils dos2unix gnupg2 jq moreutils p7zip-full rename rsync software-properties-common texinfo tmux util-linux wget -y 2>/dev/null ; sudo apt-get update -y 2>/dev/null
+          #temp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          echo "GH_PAGER=" >> "${GITHUB_ENV}"
+          echo "GIT_TERMINAL_PROMPT=0" >> "${GITHUB_ENV}"
+          echo "GIT_ASKPASS=/bin/echo" >> "${GITHUB_ENV}"
+          ##User-Agent
+          USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Install Addons
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
+        continue-on-error: true
+
+      - name: Dos2Unix Everything
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          find . -type f ! -path "./.git/*" -exec dos2unix {} \; 2>/dev/null
+        continue-on-error: true
+
+      - name: ActionLint
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          find ".github/workflows" -type f -name "*ml" -exec actionlint {} \;
+        continue-on-error: true
+
+      - name: Sanity Check R2 List
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          sed '/:/!s/^/#/' -i "${GITHUB_WORKSPACE}/main/r2/data/PKG_LIST.txt"
+          sed -E 's/^[[:space:]]+|[[:space:]]+$//g' -i "${GITHUB_WORKSPACE}/main/r2/data/PKG_LIST.txt"
+          sort -u "${GITHUB_WORKSPACE}/main/r2/data/PKG_LIST.txt" -o "${GITHUB_WORKSPACE}/main/r2/data/PKG_LIST.txt"
+          sed -E 's/^[[:space:]]+|[[:space:]]+$//g' -i "${GITHUB_WORKSPACE}/main/r2/data/PKG_LIST.txt"
+        continue-on-error: true
+
+      - name: Shellcheck
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          find ".github" -type f -name '*.sh' -exec shellcheck --exclude="SC2261" --severity=error "{}" \; 2>/dev/null | tee "${GITHUB_WORKSPACE}/main/.github/shellcheck.txt"
+        continue-on-error: true
+
+      - name: Close Issues (> 3 Days)
+        env:
+          GITHUB_TOKEN: "${{ github.token }}"
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          gh issue list -R "pkgforge/metadata" --limit "1000" --json 'number,createdAt' --jq '.[] | select(((now - (.createdAt | fromdate)) / 86400) > 3) | .number' | xargs -I "{}" gh issue close "{}" -R "pkgforge/metadata"
+        continue-on-error: true
+
+      - name: Generate Repo Metadata (git-sizer)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          #Dust sizes
+          echo '```mathematica' > "${GITHUB_WORKSPACE}/main/.github/SIZE.md"
+          dust -b -c -i -r -n 99999999 "${GITHUB_WORKSPACE}/main" | tee -a "${GITHUB_WORKSPACE}/main/.github/SIZE.md"
+          dust -b -c -i -r -n 99999999 "${GITHUB_WORKSPACE}/main" | tee "${GITHUB_WORKSPACE}/main/.github/SIZE.txt"
+          echo '```' >> "${GITHUB_WORKSPACE}/main/.github/SIZE.md"
+        continue-on-error: true
+
+      - name: Generate Dynamic Data
+        run: |
+          #Presets
+          set +x ; set +e ; ulimit -S -s unlimited ; ulimit -f unlimited 2>/dev/null
+          #--------------#
+          ##Get Data
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json" -o "${SYSTMP}/bincache_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/riscv64-Linux.json" -o "${SYSTMP}/bincache_riscv64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json" -o "${SYSTMP}/bincache_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/am/aarch64-Linux.json" -o "${SYSTMP}/am_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/am/x86_64-Linux.json" -o "${SYSTMP}/am_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/appimage.github.io/aarch64-Linux.json" -o "${SYSTMP}/appimage_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/appimage.github.io/x86_64-Linux.json" -o "${SYSTMP}/appimage_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/appimagehub/aarch64-Linux.json" -o "${SYSTMP}/appimagehub_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/appimagehub/x86_64-Linux.json" -o "${SYSTMP}/appimagehub_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/cargo-bins/aarch64-Linux.json" -o "${SYSTMP}/cargo-bins_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/external/cargo-bins/x86_64-Linux.json" -o "${SYSTMP}/cargo-bins_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json" -o "${SYSTMP}/pkgcache_aarch64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/riscv64-Linux.json" -o "${SYSTMP}/pkgcache_riscv64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json" -o "${SYSTMP}/pkgcache_x86_64-Linux.json" &
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" -o "${SYSTMP}/soarpkgs_INDEX.json" &
+          wait ; echo
+          ##Total (Bincache)
+          jq -n '[
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/bincache_x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/bincache_aarch64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json"
+          ##Total (External/AM)
+          jq -n '[
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/am_x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/am_aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json"
+          ##Total (External/appimage.github.io)
+          jq -n '[
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/appimage_x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/appimage_aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json"
+          ##Total (External/appimagehub)
+          jq -n '[
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/appimagehub_x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/appimagehub_aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/appimagehub/data/TOTAL.json"
+          ##Total (External/cargo-bins)
+          jq -n '[
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/cargo-bins_x86_64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/cargo-bins_aarch64-Linux.json' | jq -r '.[] | .download_url' | sort -u | wc -l)"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/external/cargo-bins/data/TOTAL.json"
+          ##Total (pkgcache)
+          jq -n '[
+           {host: "x86_64-Linux", total: '"$(cat '/tmp/pkgcache_x86_64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'},
+           {host: "aarch64-Linux", total: '"$(cat '/tmp/pkgcache_aarch64-Linux.json' | jq -r '.[] | .ghcr_pkg' | sort -u | wc -l)"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json"
+          ##Total (soarpkgs)
+          jq -n '[
+           {type: "binaries", total: '"$(cat '/tmp/soarpkgs_INDEX.json' | jq -r '.[] | select(.build_script | contains("binaries")) | .pkg' | wc -l)"'},
+           {type: "packages", total: '"$(cat '/tmp/soarpkgs_INDEX.json' | jq -r '.[] | select(.build_script | contains("packages")) | .pkg' | wc -l)"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL.json"
+          ##Total ALL
+          jq -n '[inputs | .[] | select(.sum == "total").total] | add' "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL_CACHE.txt"
+          jq -n '{total: ([inputs | .[] | select(.sum == "total").total] | add)}' "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | jq . > "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL_CACHE.json"
+          #Installable
+          jq -n '[
+           {source: "bincache", total: '"$(cat "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "pkgcache", total: '"$(cat "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "ivan-hc-am", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "appimage-github-io", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "appimagehub", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimagehub/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "cargo-bins", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/cargo-bins/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/TOTAL_INSTALLABLE.json"
+          #Installable + Buildable
+          jq -n '[
+           {source: "bincache", total: '"$(cat "${GITHUB_WORKSPACE}/main/bincache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "pkgcache", total: '"$(cat "${GITHUB_WORKSPACE}/main/pkgcache/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "soarpkgs", total: '"$(cat "${GITHUB_WORKSPACE}/main/soarpkgs/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "ivan-hc-am", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/am/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "appimage-github-io", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "appimagehub", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/appimagehub/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'},
+           {source: "cargo-bins", total: '"$(cat "${GITHUB_WORKSPACE}/main/external/cargo-bins/data/TOTAL.json" | jq -r '.[] | select(.sum=="total") | .total')"'}
+          ] | . + [{"sum": "total", "total": (map(.total) | add)}]' | jq . > "${GITHUB_WORKSPACE}/main/TOTAL_ALL.json"
+          ##Gif
+          cd "${GITHUB_WORKSPACE}/main"
+          sed -E "s~(https://soar\.pkgforge\.dev/gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g" -i "${GITHUB_WORKSPACE}/main/README.md"
+        continue-on-error: true
+
+      - name: Generate Stats Data
+        run: |
+          #Presets
+          set +x ; set +e ; ulimit -S -s unlimited ; ulimit -f unlimited 2>/dev/null
+          #--------------#
+          compare_cache() {
+              local cache_data="$1"
+              local output_name="${2:-COMP_VER_cache.json}"
+              jq -s '
+                # Create lookup table from index data
+                (.[0] | map({(.pkg_id): .version}) | add) as $index_versions |                
+                .[1][] |
+                select(.pkg_id and ($index_versions[.pkg_id] // false)) |
+                {
+                  pkg: (.pkg_name + "#" + .pkg_id),
+                  pkgver: .version,
+                  upver: $index_versions[.pkg_id],
+                  build_date: .build_date,
+                  build_script: .build_script
+                }
+              ' "${SYSTMP}/soarpkgs_INDEX.json" "${cache_data}" | 
+              jq -s 'sort_by(.pkg)' > "./${output_name}"
+          }
+          ##Bincache (aarch64-Linux)
+           pushd "$(mktemp -d)" &>/dev/null && \
+             compare_cache "${SYSTMP}/bincache_aarch64-Linux.json" "./COMP_VER_bincache_aarch64-Linux.json"
+             if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_bincache_aarch64-Linux.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
+               mv -fv "./COMP_VER_bincache_aarch64-Linux.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_bincache_aarch64-Linux.json"
+             fi
+           popd &>/dev/null
+          ##Bincache (x86_64-Linux)
+           pushd "$(mktemp -d)" &>/dev/null && \
+             compare_cache "${SYSTMP}/bincache_x86_64-Linux.json" "./COMP_VER_bincache_x86_64-Linux.json"
+             if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_bincache_x86_64-Linux.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
+               mv -fv "./COMP_VER_bincache_x86_64-Linux.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_bincache_x86_64-Linux.json"
+             fi
+           popd &>/dev/null
+          ##Pkgcache (aarch64-Linux)
+           pushd "$(mktemp -d)" &>/dev/null && \
+             compare_cache "${SYSTMP}/pkgcache_aarch64-Linux.json" "./COMP_VER_pkgcache_aarch64-Linux.json"
+             if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_pkgcache_aarch64-Linux.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
+               mv -fv "./COMP_VER_pkgcache_aarch64-Linux.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_pkgcache_aarch64-Linux.json"
+             fi
+           popd &>/dev/null
+          ##Pkgcache (x86_64-Linux)
+           pushd "$(mktemp -d)" &>/dev/null && \
+             compare_cache "${SYSTMP}/pkgcache_x86_64-Linux.json" "./COMP_VER_pkgcache_x86_64-Linux.json"
+             if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_pkgcache_x86_64-Linux.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
+               mv -fv "./COMP_VER_pkgcache_x86_64-Linux.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_pkgcache_x86_64-Linux.json"
+             fi
+           popd &>/dev/null
+          ##Merge 
+          pushd "$(mktemp -d)" &>/dev/null && \
+           jq -s '
+             (.[0] | map(. + {"host": "aarch64-Linux", "repo": "bincache"})) +
+             (.[1] | map(. + {"host": "x86_64-Linux", "repo": "bincache"})) +
+             (.[2] | map(. + {"host": "aarch64-Linux", "repo": "pkgcache"})) +
+             (.[3] | map(. + {"host": "x86_64-Linux", "repo": "pkgcache"})) | sort_by(.pkg)' \
+           "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_bincache_aarch64-Linux.json" \
+           "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_bincache_x86_64-Linux.json" \
+           "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_pkgcache_aarch64-Linux.json" \
+           "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_pkgcache_x86_64-Linux.json" |\
+           jq 'walk(if type == "boolean" or type == "number" then tostring else . end)' | jq 'if type == "array" then . else [.] end' | jq 'walk(if type == "object" then with_entries(select(.value != null and .value != "")) | select(length > 0) elif type == "array" then map(select(. != null and . != "")) | select(length > 0) else . end)' |\
+           jq 'map(select(
+              .pkg != null and .pkg != "" and
+              .repo != null and .repo != "" and
+              .host != null and .host != "" and
+              .pkgver != null and .pkgver != "" and
+              .upver != null and .upver != "" and
+              .build_date != null and .build_date != "" and
+              .build_script != null and .build_script != ""
+           ))' | jq 'sort_by(.pkg)' | jq . > "./COMP_VER_CACHE.json"
+           if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_CACHE.json" | wc -l | tr -cd '0-9')" -gt 100 ]]; then
+             mv -fv "./COMP_VER_CACHE.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json"
+           fi
+          ##Parse & Filter
+          pushd "$(mktemp -d)" &>/dev/null && \
+           jq '[.[] | select(.pkgver != .upver)] | sort_by(.build_date)' "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json" > "./COMP_VER_CACHE_OLD.json"
+           if [[ "$(jq -r '.[] | .pkg' "./COMP_VER_CACHE_OLD.json" | wc -l | tr -cd '0-9')" -gt 2 ]]; then
+             mv -fv "./COMP_VER_CACHE_OLD.json" "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE_OLD.json"
+           fi
+           jq 'group_by(.repo) | map({
+              (.[0].repo): {
+                "packages": length,
+                "updated": ([.[] | select(.pkgver == .upver)] | length),
+                "outdated": ([.[] | select(.pkgver != .upver)] | length),
+                "healthy": (([.[] | select(.pkgver == .upver)] | length) / length * 100 | round),
+                "stale": (100 - (([.[] | select(.pkgver == .upver)] | length) / length * 100 | round))
+              }})' "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json" > "./PKG_STATUS_SUM.json"
+           if jq -e 'all(.[]; to_entries[].value.packages > 10)' "./PKG_STATUS_SUM.json" &>/dev/null; then
+            mv -fv "./PKG_STATUS_SUM.json" "${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.json"
+           fi
+           jq -r '"| 📦 Repository | 📊 Total Packages | ✅ Updated | ⚠️ Outdated | 💚 Healthy % | 🔴 Stale % |",
+           "|---------------|-------------------|------------|-------------|-------------|------------|",
+           (.[] | to_entries[] | "| 🗂️ \(.key) | \(.value.packages) | ✅ \(.value.updated) | ⚠️ \(.value.outdated) | 💚 \(.value.healthy)% | 🔴 \(.value.stale)% |")' "${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.json" 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/PKG_STATUS_SUM.md"
+          ##Gen Markdown
+          {
+            echo "| Package | Current | Latest | Status |"
+            echo "|---------|---------|--------|--------|"
+            jq -r '.[] |
+              if .pkgver == .upver then
+                "| \(.pkg):\(.repo) (\(.host)) | \(.pkgver) | \(.upver) | ✅ Updated |"
+              else
+                "| \(.pkg):\(.repo) (\(.host)) | \(.pkgver) | \(.upver) | ⚠️ Outdated |"
+              end' "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json"
+          } 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/PKG_STATUS.md"
+          {
+            echo "| Package | Current | Latest | Built |"
+            echo "|---------|---------|--------|--------|"
+            cat "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.json" |\
+            jq -r '.[] | "| \(.pkg):\(.repo) (\(.host)) | \(.pkgver) | \(.upver) | \(.build_date) |"'            
+          } 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE.md"
+          {
+            echo "| Package | Current | Latest | Built |"
+            echo "|---------|---------|--------|--------|"
+            cat "${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE_OLD.json" |\
+            jq -r '.[] | "| \(.pkg):\(.repo) (\(.host)) | \(.pkgver) | \(.upver) | \(.build_date) |"'
+          } 2>/dev/null 1>"${GITHUB_WORKSPACE}/main/soarpkgs/data/COMP_VER_CACHE_OLD.md"
+        continue-on-error: true
+
+      - name: Get GHCR Package Metadata
+        env:
+          #GH_TOKEN: "${{ github.token }}"
+          #GITHUB_TOKEN: "${{ github.token }}"
+          GH_TOKEN: "${{ secrets.RO_GHTOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          echo -e "\n[+] Fetching Package List <== https://github.com/orgs/pkgforge/packages\n"
+          for i in {1..10}; do
+            gh api "/orgs/pkgforge/packages?package_type=container" --paginate 2>/dev/null |& cat - > "${SYSTMP}/ghcr_pkgs.tmp.json"
+            unset PKG_GH_TMP; PKG_GH_TMP="$(jq -r '.[] | select(.visibility=="public") | .name' "${SYSTMP}/ghcr_pkgs.tmp.json" 2>/dev/null | grep -iv 'null' | sort -u | wc -l | tr -cd '0-9')"
+            if [[ "${PKG_GH_TMP}" -lt 50 ]]; then
+              echo "Retrying... ${i}/10"
+              sleep 2
+            elif [[ "${PKG_GH_TMP}" -gt 50 ]]; then
+              cat "${SYSTMP}/ghcr_pkgs.tmp.json" | jq . > "${GITHUB_WORKSPACE}/main/GHCR_PKGS.json"
+              cd "${GITHUB_WORKSPACE}/main" &&\
+              zstd --ultra -22 --force "GHCR_PKGS.json" -o "GHCR_PKGS.json.zstd"
+              break
+            fi
+          done
+        continue-on-error: true
+
+      - name: Generate PPKG/Brew Comparision
+        run: |
+          #Presets
+          set +x ; set +e ; ulimit -S -s unlimited ; ulimit -f unlimited 2>/dev/null
+          #--------------#
+          pushd "$(mktemp -d)" &>/dev/null &&\
+          {
+            jq -rn \
+            '
+              (input | map({pkgname, version, summary, "src-url"})) as $ppkg_raw |
+              (input | map({pkg, version, homepage})) as $brew |
+              ($ppkg_raw | map(.pkgname)) as $ppkg_names |
+              ($brew | map(.pkg)) as $brew_names |
+              ($ppkg_names | map(select(. as $name | $brew_names | index($name)))) as $common |
+              
+              $common[] as $pkg_name |
+              ($ppkg_raw[] | select(.pkgname == $pkg_name)) as $p |
+              ($brew[] | select(.pkg == $pkg_name)) as $b |
+              
+              if $p.version != $b.version then
+                "## \($pkg_name)\n\n**Description:** \($p.summary // "No description available")\n\n| Source | Version | URL/Homepage |\n|--------|---------|-------------|\n| PPKG   | \($p.version) ⚠️ | \($p["src-url"]) |\n| BREW   | **\($b.version)** | \($b.homepage) |\n\n*Outdated*\n"
+              else
+                "## \($pkg_name)\n\n**Description:** \($p.summary // "No description available")\n\n| Source | Version | URL/Homepage |\n|--------|---------|-------------|\n| PPKG   | \($p.version) ✅ | \($p["src-url"]) |\n| BREW   | \($b.version) | \($b.homepage) |\n"
+              end
+            ' \
+            <(curl -qfsSL "https://github.com/pkgforge/metadata/raw/refs/heads/main/misc/data/PPKG_RAW.json") \
+            <(curl -qfsSL "https://github.com/pkgforge/metadata/raw/refs/heads/main/misc/data/BREW_FORMULA.json")
+          } 2>/dev/null 1>"./PPKG_BREW.md"
+          if [[ -s "./PPKG_BREW.md" ]] && [[ $(stat -c%s "./PPKG_BREW.md") -gt 100000 ]]; then
+             cp -fv "./PPKG_BREW.md" "${GITHUB_WORKSPACE}/main/misc/data/PPKG_BREW.md"
+          fi
+          popd &>/dev/null
+        continue-on-error: true
+
+      - name: Get DateTime & Purge files (=> 95 MB)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          UTC_TIME="$(TZ='UTC' date +'%Y-%m-%d (%I:%M:%S %p)')"
+          echo "UTC_TIME=${UTC_TIME}" >> "${GITHUB_ENV}"
+          #Sync
+          cd "${GITHUB_WORKSPACE}/main"
+          git pull origin main --no-edit 2>/dev/null
+          #Purge
+          find "${GITHUB_WORKSPACE}/main" -path "${GITHUB_WORKSPACE}/main/.git" -prune -o -type f -size +95M -exec rm -rvf "{}" + 2>/dev/null
+        continue-on-error: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          repository: ./main        
+          #commit_message: "‎‎‏‏‎ ‎"
+          commit_message: "✅ Healthchecks"
+          #push_options: '--force'
+        continue-on-error: true
+
+      - name: Pull & Push (2)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          git pull origin main --no-edit 2>/dev/null
+          git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
+        continue-on-error: true
+      - uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          repository: ./main
+          commit_message: "✅ Healthchecks"
+          #push_options: '--force'
+        continue-on-error: true

@@ -1,0 +1,624 @@
+name: ♻️ Generate Metadata ♻️
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  schedule:
+  # - cron: "0 3 * * *"  #UTC 03:00 AM --> 08:45 AM NPT @everyday
+   - cron: "0 */6 * * *" #every 06 hrs
+  # - cron: "0 0/1,3,4,6,7,9,10,12,13,15,16,18,19,21,22 * * *" #every 90 mins
+jobs:
+  healthcheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      actions: write
+      attestations: write
+      contents: write
+      id-token: write
+      issues: write
+      packages: write
+      statuses: read
+    steps:
+      - name: Run Healthcheck
+        env:
+          GH_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ github.token }}"
+        run: |
+          ##presets
+          set +x ; set +e
+          #-------------#
+          echo "GH_PAGER=" >> "${GITHUB_ENV}"
+          echo "GIT_TERMINAL_PROMPT=0" >> "${GITHUB_ENV}"
+          echo "GIT_ASKPASS=/bin/echo" >> "${GITHUB_ENV}"
+          gh config set prompt disabled
+          ##Trigger
+          gh workflow run "healthchecks_housekeeping.yaml" \
+           --repo "${GITHUB_REPOSITORY}" \
+           --ref "${GITHUB_REF}"
+          sleep 5
+          ##Get ID
+          RUN_ID=""
+          while [[ -z "${RUN_ID}" ]]; do
+            RUN_ID="$(gh run list --repo "${GITHUB_REPOSITORY}" --workflow "healthchecks_housekeeping.yaml" --json 'databaseId' --jq '.[0].databaseId' 2>/dev/null | tr -d '[:space:]')"
+            sleep 5
+          done
+          gh run list --repo "${GITHUB_REPOSITORY}" --workflow "healthchecks_housekeeping.yaml"
+          ##Wait
+          while true; do
+           STATUS="$(gh run view "${RUN_ID}" --repo "${GITHUB_REPOSITORY}" --json status --jq '.status' | tr -d '[:space:]')"
+             if [[ "${STATUS}" == "completed" ]]; then
+               break
+             fi
+             sleep 10
+          done
+          gh run list --repo "${GITHUB_REPOSITORY}" --workflow "healthchecks_housekeeping.yaml"
+        continue-on-error: false
+
+  generate:
+    needs: [healthcheck]
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      attestations: write   
+      contents: write
+      id-token: write
+      issues: write
+      packages: write
+      statuses: read
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - repo: "bincache"
+            script: "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_aarch64-Linux.sh"
+            arch: "aarch64"
+            file: "/tmp/bincache_aarch64-Linux.json"
+
+          - repo: "bincache"
+            script: "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_riscv64-Linux.sh"
+            arch: "riscv64"
+            file: "/tmp/bincache_riscv64-Linux.json"
+
+          - repo: "bincache"
+            script: "${GITHUB_WORKSPACE}/main/bincache/scripts/gen_meta_x86_64-Linux.sh"
+            arch: "x86_64"
+            file: "/tmp/bincache_x86_64-Linux.json"
+
+          - repo: "pkgcache"
+            script: "${GITHUB_WORKSPACE}/main/pkgcache/scripts/gen_meta_aarch64-Linux.sh"
+            arch: "aarch64"
+            file: "/tmp/pkgcache_aarch64-Linux.json"
+
+          - repo: "pkgcache"
+            script: "${GITHUB_WORKSPACE}/main/pkgcache/scripts/gen_meta_riscv64-Linux.sh"
+            arch: "riscv64"
+            file: "/tmp/pkgcache_riscv64-Linux.json"
+
+          - repo: "pkgcache"
+            script: "${GITHUB_WORKSPACE}/main/pkgcache/scripts/gen_meta_x86_64-Linux.sh"
+            arch: "x86_64"
+            file: "/tmp/pkgcache_x86_64-Linux.json"
+
+          - repo: "soarpkgs"
+            #script: "${GITHUB_WORKSPACE}/main/soarpkgs/scripts/gen_meta.sh"
+            script: "${GITHUB_WORKSPACE}/main/soarpkgs/scripts/gen_meta_docker.sh"
+            arch: "MULTI"
+            file: "/tmp/INDEX.json"
+
+          - repo: "soarpkgs"
+            script: "${GITHUB_WORKSPACE}/main/soarpkgs/scripts/gen_ghcr_backage.sh"
+            arch: "MULTI"
+            file: "/tmp/BACKAGE.json"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: main
+          fetch-depth: "1"
+          filter: "blob:none"
+
+      - name: Install Addons
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
+        continue-on-error: true
+
+      - name: Setup Env
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          #tmp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          #-------------#
+          #GH Dirs
+          mkdir -pv "${GITHUB_WORKSPACE}/main/bincache/data"
+          mkdir -pv "${GITHUB_WORKSPACE}/main/misc/data"
+          mkdir -pv "${GITHUB_WORKSPACE}/main/pkgcache/data"
+          mkdir -pv "${GITHUB_WORKSPACE}/main/soarpkgs/data"
+          echo "GH_PAGER=" >> "${GITHUB_ENV}"
+          echo "GIT_TERMINAL_PROMPT=0" >> "${GITHUB_ENV}"
+          echo "GIT_ASKPASS=/bin/echo" >> "${GITHUB_ENV}"
+          #-------------#
+          ##User-Agent
+          USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Generate (${{ matrix.repo }}/${{ matrix.arch }})
+        env:
+          #GITHUB_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          dos2unix --quiet "${{ matrix.script }}"
+          chmod -v 'a+x' "${{ matrix.script }}"
+          if echo "${{ matrix.repo }}" | grep -qi "bincache"; then
+           export PARALLEL_LIMIT="20"
+          elif echo "${{ matrix.repo }}" | grep -qi "pkgcache"; then
+           export PARALLEL_LIMIT="10"
+          else
+           export PARALLEL_LIMIT="$(($(nproc)+1))"
+          fi
+          bash "${{ matrix.script }}"
+        continue-on-error: true
+
+      - name: Exit if failed
+        run: |
+          if [[ "${META_GEN}" == "FAILED" ]]; then
+             echo -e "\n[X] FATAL: Failed to Generate Metadata"
+            exit 1
+          fi
+        continue-on-error: false
+        
+      - name: Get DateTime & Purge files (=> 95 MB)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          UTC_TIME="$(TZ='UTC' date +'%Y-%m-%d (%I:%M:%S %p)')"
+          echo "UTC_TIME=${UTC_TIME}" >> "${GITHUB_ENV}"
+          #Sync
+          cd "${GITHUB_WORKSPACE}/main"
+          git pull origin main --no-edit 2>/dev/null
+          #Purge
+          find "${GITHUB_WORKSPACE}/main" -path "${GITHUB_WORKSPACE}/main/.git" -prune -o -type f -size +95M -exec rm -rvf "{}" + 2>/dev/null
+        continue-on-error: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          repository: ./main
+          commit_message: "✅ Updated Metadata [${{ matrix.repo }}-${{ matrix.arch }}] ♻️"
+          #push_options: '--force'
+        continue-on-error: true
+
+      - name: Pull & Push (2)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          git pull origin main --no-edit 2>/dev/null
+          git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
+        continue-on-error: true   
+      - uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          repository: ./main
+          commit_message: "✅ Updated Metadata [${{ matrix.repo }}-${{ matrix.arch }}] ♻️"
+          #push_options: '--force'
+        continue-on-error: true
+
+      - name: Report Invalid SBUILDS
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          ##Failed SBUILDS (Binaries)
+          if [[ -s "${SYSTMP}/INVALID_BINARIES.txt" && $(wc -l < "${SYSTMP}/INVALID_BINARIES.txt" | tr -d '[:space:]') -gt 1 ]]; then
+           #sed 's|.*/binaries|https://github.com/pkgforge/soarpkgs/blob/main/binaries|' -i  "${SYSTMP}/INVALID_BINARIES.txt"
+           #sed 's|^|- |' -i "${SYSTMP}/INVALID_BINARIES.txt"
+           #sort -u "${SYSTMP}/INVALID_BINARIES.txt" -o "${SYSTMP}/INVALID_BINARIES.txt"
+           export HAS_INVALID_BINS="TRUE"
+           echo "HAS_INVALID_BINS=${HAS_INVALID_BINS}" >> "${GITHUB_ENV}"
+          fi
+          ##Failed SBUILDS (Packages)
+          if [[ -s "${SYSTMP}/INVALID_PACKAGES.txt" && $(wc -l < "${SYSTMP}/INVALID_PACKAGES.txt" | tr -d '[:space:]') -gt 1 ]]; then
+           #sed 's|.*/packages|https://github.com/pkgforge/soarpkgs/blob/main/packages|' -i  "${SYSTMP}/INVALID_PACKAGES.txt"
+           #sed 's|^|- |' -i "${SYSTMP}/INVALID_PACKAGES.txt"
+           #sort -u "${SYSTMP}/INVALID_PACKAGES.txt" -o "${SYSTMP}/INVALID_PACKAGES.txt"
+           export HAS_INVALID_PKGS="TRUE"
+           echo "HAS_INVALID_PKGS=${HAS_INVALID_PKGS}" >> "${GITHUB_ENV}"
+          fi
+        continue-on-error: true
+
+      - name: Create Issue (Invalid Binary SBUILDS)
+        if: env.HAS_INVALID_BINS == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Failed Binary Validation)
+          content-filepath: "/tmp/INVALID_BINARIES.txt"
+          labels: report, automated issue
+        continue-on-error: true
+
+      - name: Create Issue (Invalid Package SBUILDS)
+        if: env.HAS_INVALID_PKGS == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Failed Package Validation)
+          content-filepath: "/tmp/INVALID_PACKAGES.txt"
+          labels: report, automated issue
+        continue-on-error: true
+
+      - name: Report Duplicate pkg_webpages
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          if [[ -s "${SYSTMP}/DUPES_PKG_WEBPAGE.json" && $(wc -l < "${SYSTMP}/DUPES_PKG_WEBPAGE.json" | tr -d '[:space:]') -gt 1 ]]; then
+           echo '```json' > "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
+           cat "${SYSTMP}/DUPES_PKG_WEBPAGE.json" >> "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
+           echo '```' >> "${SYSTMP}/DUPES_PKG_WEBPAGE.txt"
+           export HAS_DUPE_PKG_WEBPAGES="TRUE"
+           echo "HAS_DUPE_PKG_WEBPAGES=${HAS_DUPE_PKG_WEBPAGES}" >> "${GITHUB_ENV}"
+          fi
+        continue-on-error: true
+
+      - name: Create Issue (Duplicate Webpages)
+        if: env.HAS_DUPE_PKG_WEBPAGES == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Duplicate Webpages)
+          content-filepath: "/tmp/DUPES_PKG_WEBPAGE.txt"
+          labels: report, automated issue
+        continue-on-error: true
+
+      - name: Report Missing pkg_id
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          if [[ -s "${SYSTMP}/MISSING_PKG_ID.json" && $(wc -l < "${SYSTMP}/MISSING_PKG_ID.json" | tr -d '[:space:]') -gt 1 ]]; then
+           echo '```json' > "${SYSTMP}/MISSING_PKG_ID.txt"
+           cat "${SYSTMP}/MISSING_PKG_ID.json" >> "${SYSTMP}/MISSING_PKG_ID.txt"
+           echo '```' >> "${SYSTMP}/MISSING_PKG_ID.txt"
+           export HAS_MISSING_PKG_ID="TRUE"
+           echo "HAS_MISSING_PKG_ID=${HAS_MISSING_PKG_ID}" >> "${GITHUB_ENV}"
+          fi
+        continue-on-error: true
+
+      - name: Create Issue (Missing Package ID)
+        if: env.HAS_MISSING_PKG_ID == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Missing Package ID)
+          content-filepath: "/tmp/MISSING_PKG_ID.txt"
+          labels: report, automated issue
+        continue-on-error: true
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v2.4.0
+        with:
+          subject-name: "metadata-${{ matrix.repo }}-${{ matrix.arch }}"
+          subject-path: "${{ matrix.file }}"
+          show-summary: true
+        continue-on-error: true
+
+  moderate:
+    needs: [generate]
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    permissions:
+      attestations: write   
+      contents: write
+      id-token: write
+      issues: write
+      packages: write
+      statuses: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: main
+          filter: "blob:none"
+
+      - name: Install Addons
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          #tmp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          #bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
+          ##CoreUtils
+          sudo apt update -y
+          sudo apt install bc coreutils curl dos2unix fdupes jq moreutils wget -y
+          sudo apt-get install apt-transport-https apt-utils ca-certificates coreutils dos2unix gnupg2 jq moreutils p7zip-full rename rsync software-properties-common texinfo tmux util-linux wget -y 2>/dev/null ; sudo apt-get update -y 2>/dev/null
+          echo "GIT_TERMINAL_PROMPT=0" >> "${GITHUB_ENV}"
+          echo "GIT_ASKPASS=/bin/echo" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Report Duplicate pkg_ids
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d > "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/riscv64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/riscv64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg_name)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq -r '.[] | "\(.pkg_id) --> \(.pkg)"' | sort | uniq -d >> "${SYSTMP}/DUPES_PKG_ID.txt.tmp"
+          if [[ -s "${SYSTMP}/DUPES_PKG_ID.txt.tmp" && $(stat -c%s "${SYSTMP}/DUPES_PKG_ID.txt.tmp") -gt 3 ]]; then
+           echo '```bash' > "${SYSTMP}/DUPES_PKG_ID.txt"
+           cat "${SYSTMP}/DUPES_PKG_ID.txt.tmp" >> "${SYSTMP}/DUPES_PKG_ID.txt"
+           echo '```' >> "${SYSTMP}/DUPES_PKG_ID.txt"
+           export HAS_DUPE_PKG_IDS="TRUE"
+           echo "HAS_DUPE_PKG_IDS=${HAS_DUPE_PKG_IDS}" >> "${GITHUB_ENV}"
+          fi
+        continue-on-error: true
+
+      - name: Create Issue (Duplicate PKG_ID)
+        if: env.HAS_DUPE_PKG_IDS == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Duplicate PKG_ID)
+          content-filepath: "/tmp/DUPES_PKG_ID.txt"
+          labels: report, automated issue
+        continue-on-error: true
+
+      - name: Generate Diffs [pkg_id] (BinCache)
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          ##Version Diff (aarch64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json") \
+          '.[] | 
+          select((.pkg_type == "static" and (.host | contains(["aarch64-linux"]))) and (
+            .pkg_id as $id |
+            .version as $ver |
+            ($aarch64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($aarch64[0][] | select(.pkg_id == $id).version) as $aarch64_ver |
+            $aarch64_ver == null or $ver != $aarch64_ver
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_aarch64-Linux.json"
+          ##Version Diff (riscv64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile riscv64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/riscv64-Linux.json") \
+          '.[] | 
+          select((.pkg_type == "static" and (.host | contains(["riscv64-linux"]))) and (
+            .pkg_id as $id | 
+            .version as $ver |
+            ($riscv64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($riscv64[0][] | select(.pkg_id == $id).version) as $rv64_ver |
+            $rv64_ver == null or $ver != $rv64_ver
+          ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_riscv64-Linux.json"
+          ##Version Diff (x86_64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json") \
+          '.[] | 
+          select((.pkg_type == "static" and (.host | contains(["x86_64-linux"]))) and (
+            .pkg_id as $id | 
+            .version as $ver |
+            ($x86_64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($x86_64[0][] | select(.pkg_id == $id).version) as $x86_ver |
+            $x86_ver == null or $ver != $x86_ver
+          ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_bincache_x86_64-Linux.json"
+        continue-on-error: true
+
+      - name: Generate Diffs [build_date] (BinCache)
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          ##Date Diff (aarch64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+           jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/aarch64-Linux.json") \
+           '.[] | 
+           select((.pkg_type == "static" and (.host | contains(["aarch64-linux"]))) and (
+             .pkg_id as $id |
+             ($aarch64[0] | map(.pkg_id) | contains([$id]) | not) or
+             ($aarch64[0][] | select(.pkg_id == $id).build_date) as $aarch64_date |
+             $aarch64_date == null or $aarch64_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_bincache_aarch64-Linux.json"
+          ##Date Diff (riscv64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+           jq --slurpfile riscv64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/riscv64-Linux.json") \
+           '.[] | 
+           select((.pkg_type == "static" and (.host | contains(["riscv64-linux"]))) and (
+             .pkg_id as $id |
+             ($riscv64[0] | map(.pkg_id) | contains([$id]) | not) or
+             ($riscv64[0][] | select(.pkg_id == $id).build_date) as $rv64_date |
+             $rv64_date == null or $rv64_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_bincache_riscv64-Linux.json"
+          ##Date Diff (x86_64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+           jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/bincache/x86_64-Linux.json") \
+           '.[] | 
+           select((.pkg_type == "static" and (.host | contains(["x86_64-linux"]))) and (
+             .pkg_id as $id |
+             ($x86_64[0] | map(.pkg_id) | contains([$id]) | not) or
+             ($x86_64[0][] | select(.pkg_id == $id).build_date) as $x86_date |
+             $x86_date == null or $x86_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+            ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_bincache_x86_64-Linux.json"
+        continue-on-error: true
+
+      - name: Generate Diffs [pkg_id] (PkgCache)
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          ##Version Diff (aarch64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["aarch64-linux"])) and (
+            .pkg_id as $id |
+            .version as $ver |
+            ($aarch64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($aarch64[0][] | select(.pkg_id == $id).version) as $aarch64_ver |
+            $aarch64_ver == null or $ver != $aarch64_ver
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_aarch64-Linux.json"
+          ##Version Diff (riscv64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile riscv64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/riscv64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["riscv64-linux"])) and (
+            .pkg_id as $id | 
+            .version as $ver |
+            ($riscv64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($riscv64[0][] | select(.pkg_id == $id).version) as $rv64_ver |
+            $rv64_ver == null or $ver != $rv64_ver
+          ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_riscv64-Linux.json"
+          ##Version Diff (x86_64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["x86_64-linux"])) and (
+            .pkg_id as $id | 
+            .version as $ver |
+            ($x86_64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($x86_64[0][] | select(.pkg_id == $id).version) as $x86_ver |
+            $x86_ver == null or $ver != $x86_ver
+          ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/DIFF_pkgcache_x86_64-Linux.json"
+        continue-on-error: true
+
+      - name: Generate Diffs [build_date] (PkgCache)
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          ##Date Diff (aarch64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile aarch64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/aarch64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["aarch64-linux"])) and (
+            .pkg_id as $id |
+            ($aarch64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($aarch64[0][] | select(.pkg_id == $id).build_date) as $aarch64_date |
+            $aarch64_date == null or $aarch64_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_pkgcache_aarch64-Linux.json"
+          ##Date Diff (riscv64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile riscv64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/riscv64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["riscv64-linux"])) and (
+            .pkg_id as $id |
+            ($riscv64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($riscv64[0][] | select(.pkg_id == $id).build_date) as $rv64_date |
+            $rv64_date == null or $rv64_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_pkgcache_riscv64-Linux.json"
+          ##Date Diff (x86_64-Linux)
+          curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | \
+          jq --slurpfile x86_64 <(curl -qfsSL "https://meta.pkgforge.dev/pkgcache/x86_64-Linux.json") \
+          '.[] | 
+          select((.pkg_type | test("^(appbundle|appimage|archive|flatimage|gameimage|nixappimage|runimage)$"; "i")) and (.host | contains(["x86_64-linux"])) and (
+            .pkg_id as $id |
+            ($x86_64[0] | map(.pkg_id) | contains([$id]) | not) or
+            ($x86_64[0][] | select(.pkg_id == $id).build_date) as $x86_date |
+            $x86_date == null or $x86_date < "'$(date -u -d '31 days ago' +%Y-%m-%dT%H:%M:%SZ)'"
+           ))' | jq -s 'unique_by(.pkg_id) | sort_by(.pkg)' > "${GITHUB_WORKSPACE}/main/soarpkgs/data/OLD_pkgcache_x86_64-Linux.json"
+        continue-on-error: true
+
+      - name: Generate Completions
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          mkdir -pv "${GITHUB_WORKSPACE}/main/completions"
+          ##aarch64-Linux
+          pushd "$(mktemp -d)" &>/dev/null &&\
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):bincache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/bincache/data/aarch64-Linux.json" > "./ALL_aarch64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):pkgcache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/pkgcache/data/aarch64-Linux.json" >> "./ALL_aarch64-Linux.txt"
+            #jq -r '.[] | "\(.pkg_name)#\(.pkg_id):ivan-hc-am ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/am/data/aarch64-Linux.json" >> "./ALL_aarch64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):appimage-github-io ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/aarch64-Linux.json" >> "./ALL_aarch64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):cargo-bins ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/cargo-bins/data/aarch64-Linux.json" >> "./ALL_aarch64-Linux.txt"
+            sort -u "./ALL_aarch64-Linux.txt" -o "./ALL_aarch64-Linux.txt"
+            sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "./ALL_aarch64-Linux.txt"
+            if [[ -s "./ALL_aarch64-Linux.txt" && $(wc -l < "./ALL_aarch64-Linux.txt" | tr -cd '0-9') -gt 1000 ]]; then
+               cp -fv "./ALL_aarch64-Linux.txt" "${GITHUB_WORKSPACE}/main/completions/ALL_aarch64-Linux.txt"
+               awk -F ' ## ' '{print $1}' "${GITHUB_WORKSPACE}/main/completions/ALL_aarch64-Linux.txt" > "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_aarch64-Linux.txt"
+               sort -u "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_aarch64-Linux.txt" -o "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_aarch64-Linux.txt"
+               sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_aarch64-Linux.txt"
+            fi
+          popd &>/dev/null
+          ##riscv64-Linux
+          pushd "$(mktemp -d)" &>/dev/null &&\
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):bincache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/bincache/data/riscv64-Linux.json" > "./ALL_riscv64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):pkgcache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/pkgcache/data/riscv64-Linux.json" >> "./ALL_riscv64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):ivan-hc-am ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/am/data/riscv64-Linux.json" >> "./ALL_riscv64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):appimage-github-io ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/riscv64-Linux.json" >> "./ALL_riscv64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):cargo-bins ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/cargo-bins/data/riscv64-Linux.json" >> "./ALL_riscv64-Linux.txt"
+            sort -u "./ALL_riscv64-Linux.txt" -o "./ALL_riscv64-Linux.txt"
+            sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "./ALL_riscv64-Linux.txt"
+            if [[ -s "./ALL_riscv64-Linux.txt" && $(wc -l < "./ALL_riscv64-Linux.txt" | tr -cd '0-9') -gt 1000 ]]; then
+               cp -fv "./ALL_riscv64-Linux.txt" "${GITHUB_WORKSPACE}/main/completions/ALL_riscv64-Linux.txt"
+               awk -F ' ## ' '{print $1}' "${GITHUB_WORKSPACE}/main/completions/ALL_riscv64-Linux.txt" > "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_riscv64-Linux.txt"
+               sort -u "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_riscv64-Linux.txt" -o "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_riscv64-Linux.txt"
+               sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_riscv64-Linux.txt"
+            fi
+          ##x86_64-Linux
+          pushd "$(mktemp -d)" &>/dev/null &&\
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):bincache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/bincache/data/x86_64-Linux.json" > "./ALL_x86_64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):pkgcache ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/pkgcache/data/x86_64-Linux.json" >> "./ALL_x86_64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):ivan-hc-am ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/am/data/x86_64-Linux.json" >> "./ALL_x86_64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):appimage-github-io ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/appimage.github.io/data/x86_64-Linux.json" >> "./ALL_x86_64-Linux.txt"
+            jq -r '.[] | "\(.pkg_name)#\(.pkg_id):cargo-bins ## \(.description) [\(.size)]"' "${GITHUB_WORKSPACE}/main/external/cargo-bins/data/x86_64-Linux.json" >> "./ALL_x86_64-Linux.txt"
+            sort -u "./ALL_x86_64-Linux.txt" -o "./ALL_x86_64-Linux.txt"
+            sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "./ALL_x86_64-Linux.txt"
+            if [[ -s "./ALL_x86_64-Linux.txt" && $(wc -l < "./ALL_x86_64-Linux.txt" | tr -cd '0-9') -gt 1000 ]]; then
+               cp -fv "./ALL_x86_64-Linux.txt" "${GITHUB_WORKSPACE}/main/completions/ALL_x86_64-Linux.txt"
+               awk -F ' ## ' '{print $1}' "${GITHUB_WORKSPACE}/main/completions/ALL_x86_64-Linux.txt" > "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_x86_64-Linux.txt"
+               sort -u "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_x86_64-Linux.txt" -o "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_x86_64-Linux.txt"
+               sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${GITHUB_WORKSPACE}/main/completions/PKG_NAME_ONLY_x86_64-Linux.txt"
+            fi
+          popd &>/dev/null
+        continue-on-error: true
+
+      - name: Get DateTime & Purge files (=> 95 MB)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          UTC_TIME="$(TZ='UTC' date +'%Y-%m-%d (%I:%M:%S %p)')"
+          echo "UTC_TIME=${UTC_TIME}" >> "${GITHUB_ENV}"
+          #Sync
+          cd "${GITHUB_WORKSPACE}/main"
+          git pull origin main --no-edit 2>/dev/null
+          #Purge
+          find "${GITHUB_WORKSPACE}/main" -path "${GITHUB_WORKSPACE}/main/.git" -prune -o -type f -size +95M -exec rm -rvf "{}" + 2>/dev/null
+        continue-on-error: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          repository: ./main
+          commit_message: "✅ Updated Metadata [Completions + Diff] ♻️"
+          #push_options: '--force'
+        continue-on-error: true
+
+      - name: Pull & Push (2)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          git pull origin main --no-edit 2>/dev/null
+          git pull origin main --ff-only ; git merge --no-ff -m "Merge & Sync"
+        continue-on-error: true   
+      - uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          repository: ./main
+          commit_message: "✅ Updated Metadata [Completions + Diff] ♻️"
+          #push_options: '--force'
+        continue-on-error: true

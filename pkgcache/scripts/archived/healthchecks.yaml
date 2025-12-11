@@ -1,0 +1,631 @@
+name: 🐧🧹 HealthChecks 🖳🗑️
+#MAX_RUNTIME: 02 Minutes */10 * * * * 
+
+on:
+  #push:
+  workflow_dispatch:
+  schedule:
+   - cron: "0 */6 * * *"  # Every 06 Hrs
+
+env:
+  GITHUB_TOKEN: "${{ secrets.TOOLPACKS_GHRO }}"
+  GITLAB_TOKEN: "${{ secrets.TOOLPACKS_GLRO }}"
+  HF_TOKEN: "${{ secrets.TOOLPACKS_HFRO }}"
+  R2_PUB_REPO: "https://pub.ajam.dev/repos/pkgforge/pkgcache"
+  SKIP_AARCH64: "NO" #YES--> SKip Generating HF Metadata for aarch64-Linux
+  SKIP_X86_64: "NO" #YES--> SKip Generating HF Metadata for x86_64-Linux
+jobs:
+#------------------------------------------------------------------------------------#
+  check_build_status:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+    steps:
+      - name: Check Build Packages workflow status
+        id: check
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          AARCH64_STATUS="$(curl -qfsSL -H "Authorization: bearer ${GITHUB_TOKEN}" "https://api.github.com/repos/pkgforge/pkgcache/actions/workflows/build_aarch64_Linux.yaml/runs?status=in_progress" | jq '.total_count')" && export AARCH64_STATUS="${AARCH64_STATUS}"
+          X86_64_STATUS="$(curl -qfsSL -H "Authorization: bearer ${GITHUB_TOKEN}" "https://api.github.com/repos/pkgforge/pkgcache/actions/workflows/build_x86_64_Linux.yaml/runs?status=in_progress" | jq '.total_count')" && export X86_64_STATUS="${X86_64_STATUS}"
+          if [ "${X86_64_STATUS}" -eq "0" ] && [ "${AARCH64_STATUS}" -eq "0" ]; then
+            echo "should_run=true" >> "${GITHUB_OUTPUT}"
+          else
+            echo "should_run=false" >> "${GITHUB_OUTPUT}"
+          fi
+        continue-on-error: true
+#------------------------------------------------------------------------------------#
+  sync-metadata:
+    needs: check_build_status
+    if: needs.check_build_status.outputs.should_run == 'true'  
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+      
+    steps:
+      #- name: Debloat Runner
+      #  run: |
+      #    #Presets
+      #    set +x ; set +e
+      #    #--------------#
+      #    bash <(curl -qfsSL "https://pub.ajam.dev/repos/Azathothas/Arsenal/misc/Github/Runners/Ubuntu/debloat.sh")
+      #  continue-on-error: true
+        
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: main
+          filter: "blob:none"
+
+      - name: Install Addons
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          bash <(curl -qfsSL "https://pub.ajam.dev/repos/Azathothas/Arsenal/misc/Linux/install_dev_tools.sh")
+        continue-on-error: true
+        
+      #- name: Install to-capnp
+      #  run: |
+      #    #presets
+      #    set +x ; set +e
+      #    #-------------#
+      #    sudo curl -qfsSL "https://github.com/QaidVoid/to-capnp/releases/download/nightly/to-capnp-nightly-$(uname -m)-linux" -o "/usr/local/bin/to-capnp" && sudo chmod +x "/usr/local/bin/to-capnp"
+      #    if ! command -v to-capnp &> /dev/null; then
+      #       echo -e "\n[+] to-capnp NOT Installed\n"
+      #     exit 1
+      #    fi
+      #  continue-on-error: false
+
+      - name: Setup Env
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          #tmp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          #GH Dirs
+          mkdir -pv "${GITHUB_WORKSPACE}/main/aarch64-Linux"
+          mkdir -pv "${GITHUB_WORKSPACE}/main/x86_64-Linux"
+          mkdir -pv "${GITHUB_WORKSPACE}/main/metadata"
+          #Setup Flatpak
+          sudo apt update -y -qq
+          sudo apt install flatpak -y
+          sudo usermod -aG "_flatpak" "runner"
+          #-------------#
+          #Setup HF
+          git config --global "credential.helper" store
+          git config --global "user.email" "AjamX101@gmail.com"
+          git config --global "user.name" "Azathothas"
+          #huggingface-cli login --token "${HF_TOKEN}" --add-to-git-credential
+          huggingface-cli login --token "${HF_TOKEN}" --add-to-git-credential >/dev/null 2>&1     
+          #-------------#
+          ##User-Agent
+          USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Dos2Unix Everything
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          find . -type f ! -path "./.git/*" -exec dos2unix {} \; 2>/dev/null
+        continue-on-error: true
+
+      - name: ActionLint
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          find ".github/workflows" -type f -name "*ml" -exec actionlint {} \;
+        continue-on-error: true
+
+      - name: Shellcheck
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main"
+          find ".github" -type f -name '*.sh' -exec shellcheck --exclude="SC2261" --severity=error "{}" \; 2>/dev/null | tee "${GITHUB_WORKSPACE}/main/.github/shellcheck.txt"
+        continue-on-error: true
+
+      - name: YAMLint
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main/.github/scripts/aarch64-Linux/pkgs"
+          find "." -name '*.yaml' -exec sh -c 'for file; do bins=$(yq .bins[] "$file"); if [ "$(echo "$bins" | wc -l)" -eq 1 ] && [ "$(echo "$bins" | wc -w)" -gt 1 ]; then echo "$file --> $file.invalid";  mv "$file" "$file.invalid" ; fi; done' sh {} +
+          cd "${GITHUB_WORKSPACE}/main/.github/scripts/x86_64-Linux/pkgs"
+          find "." -name '*.yaml' -exec sh -c 'for file; do bins=$(yq .bins[] "$file"); if [ "$(echo "$bins" | wc -l)" -eq 1 ] && [ "$(echo "$bins" | wc -w)" -gt 1 ]; then echo "$file --> $file.invalid";  mv "$file" "$file.invalid" ; fi; done' sh {} +
+        continue-on-error: true
+
+      - name: Gen Metadata (aarch64-Linux)
+        if: env.SKIP_AARCH64 != 'YES'
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          pushd "$(mktemp -d)" >/dev/null 2>&1
+           export HOST_TRIPLET="aarch64-Linux"
+           #source <(curl -qfsSL "https://l.ajam.dev/hf-gen-meta-main")
+           source <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/pkgcache/main/.github/scripts/hf_gen_meta_main.sh")
+           hf_gen_meta_main
+          popd "$(mktemp -d)" >/dev/null 2>&1
+        continue-on-error: true
+
+      - name: Sync Metadata (aarch64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          pushd "${GITHUB_WORKSPACE}/main" >/dev/null 2>&1
+           mkdir -p "${GITHUB_WORKSPACE}/main/aarch64-Linux"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux/BUILD.log.txt" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/BUILD.log.txt"
+           curl -qfsSL "https://pub.ajam.dev/repos/pkgforge/pkgcache/aarch64-Linux/BUILD.gh.log.txt" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/BUILD.gh.log.txt"
+           curl -qfsSL "https://pub.ajam.dev/repos/pkgforge/pkgcache/aarch64-Linux/BUILD_FAILED.gh.log.txt" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/BUILD_FAILED.gh.log.txt"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux/BLAKE3SUM.json" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/BLAKE3SUM.json"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux/FILE.json" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/FILE.json"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux/METADATA.json" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.json"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux/METADATA.min.json" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.min.json"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux/SHA256SUM.json" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/SHA256SUM.json"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux/SIZE.json" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/SIZE.json"
+          popd >/dev/null 2>&1
+        continue-on-error: true
+
+      - name: Gen Metadata (x86_64-Linux)
+        if: env.SKIP_X86_64 != 'YES'
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          pushd "$(mktemp -d)" >/dev/null 2>&1
+           export HOST_TRIPLET="x86_64-Linux"
+           #source <(curl -qfsSL "https://l.ajam.dev/hf-gen-meta-main")
+           source <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/pkgcache/main/.github/scripts/hf_gen_meta_main.sh")
+           hf_gen_meta_main
+          popd "$(mktemp -d)" >/dev/null 2>&1
+        continue-on-error: true
+
+      - name: Sync Metadata (x86_64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          pushd "${GITHUB_WORKSPACE}/main" >/dev/null 2>&1
+           mkdir -p "${GITHUB_WORKSPACE}/main/x86_64-Linux"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux/BUILD.log.txt" -o "${GITHUB_WORKSPACE}/main/x86_64-Linux/BUILD.log.txt"
+           curl -qfsSL "https://pub.ajam.dev/repos/pkgforge/pkgcache/x86_64-Linux/BUILD.gh.log.txt" -o "${GITHUB_WORKSPACE}/main/x86_64-Linux/BUILD.gh.log.txt"
+           curl -qfsSL "https://pub.ajam.dev/repos/pkgforge/pkgcache/x86_64-Linux/BUILD_FAILED.gh.log.txt" -o "${GITHUB_WORKSPACE}/main/x86_64-Linux/BUILD_FAILED.gh.log.txt"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux/BLAKE3SUM.json" -o "${GITHUB_WORKSPACE}/main/x86_64-Linux/BLAKE3SUM.json"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux/FILE.json" -o "${GITHUB_WORKSPACE}/main/x86_64-Linux/FILE.json"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux/METADATA.json" -o "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.json"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux/METADATA.min.json" -o "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.min.json"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux/SHA256SUM.json" -o "${GITHUB_WORKSPACE}/main/x86_64-Linux/SHA256SUM.json"
+           curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux/SIZE.json" -o "${GITHUB_WORKSPACE}/main/x86_64-Linux/SIZE.json"
+          popd >/dev/null 2>&1
+        continue-on-error: true
+
+      - name: Sync Metadata (ROOT)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          #Generate
+          pushd "${GITHUB_WORKSPACE}/main" >/dev/null 2>&1
+           ##Get JSON
+           #aarch64-Linux
+            curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux/METADATA.json" -o "${SYSTMP}/aarch64-Linux-METADATA.json" || echo '{}' > "${SYSTMP}/aarch64-Linux-METADATA.json"
+           #x86_64-Linux
+            curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux/METADATA.json" -o "${SYSTMP}/x86_64-Linux-METADATA.json" || echo '{}' > "${SYSTMP}/x86_64-Linux-METADATA.json"
+           ##Merge
+            jq -s '[{ "host": "aarch64-Linux", "main": .[0] },{ "host": "x86_64-Linux", "main": .[1] }]' "${SYSTMP}/aarch64-Linux-METADATA.json" "${SYSTMP}/x86_64-Linux-METADATA.json" | jq . > "${GITHUB_WORKSPACE}/main/metadata/METADATA.json"
+            sed "s|https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux|https://pkgcache.pkgforge.dev/aarch64-Linux|g" "${GITHUB_WORKSPACE}/main/metadata/METADATA.json" | sed "s|https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux|https://pkgcache.pkgforge.dev/x86_64-Linux|g" | jq -r tostring > "${GITHUB_WORKSPACE}/main/metadata/METADATA.min.json"
+           #Gen Yaml
+            cat "${GITHUB_WORKSPACE}/main/metadata/METADATA.json" | yj -jy | yq . > "${GITHUB_WORKSPACE}/main/metadata/METADATA.yaml"
+            cat "${GITHUB_WORKSPACE}/main/metadata/METADATA.min.json" | yj -jy | yq . > "${GITHUB_WORKSPACE}/main/metadata/METADATA.min.yaml"
+          popd >/dev/null 2>&1
+          ##Sync
+           if jq --exit-status . "${GITHUB_WORKSPACE}/main/metadata/METADATA.json" >/dev/null 2>&1; then
+             pushd "$(mktemp -d)" >/dev/null 2>&1 && git clone --depth="1" --filter="blob:none" --no-checkout "https://huggingface.co/datasets/pkgforge/pkgcache" && cd "./pkgcache"
+               git lfs install
+               huggingface-cli lfs-enable-largefiles "." ; df -h
+               git fetch origin main ; git lfs track "./FLATPAK_APPSTREAM.xml" "./FLATPAK_APPS_INFO.txt" "./FLATPAK_APP_IDS.txt" "./FLATPAK_POPULAR.json" "./FLATPAK_TRENDING.json" "./METADATA.json" "./METADATA.min.json" "./METADATA.yaml" "./METADATA.min.yaml"
+               git sparse-checkout set ""
+               git sparse-checkout set --no-cone --sparse-index "/FLATPAK_APPSTREAM.xml" "/FLATPAK_APPS_INFO.txt" "/FLATPAK_APP_IDS.txt" "/FLATPAK_POPULAR.json" "/FLATPAK_TRENDING.json" "/METADATA.json" "/METADATA.min.json" "/METADATA.yaml" "/METADATA.min.yaml"
+               git checkout ; ls -lah "."
+               cat "${GITHUB_WORKSPACE}/main/metadata/ALPINE_GIT.json" | jq . > "./ALPINE_GIT.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/ALPINE_PKG.json" | jq . > "./ALPINE_PKG.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/ARCHLINUX.json" | jq . > "./ARCHLINUX.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/BREW_FORMULA.json" | jq . > "./BREW_FORMULA.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/BREW_CASK.json" | jq . > "./BREW_CASK.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/DEBIAN.json" | jq . > "./DEBIAN.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/FLATPAK_POPULAR.json" | jq . > "./FLATPAK_POPULAR.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/FLATPAK_APPSTREAM.xml" > "./FLATPAK_APPSTREAM.xml"
+               cat "${GITHUB_WORKSPACE}/main/metadata/FLATPAK_APPS_INFO.txt" > "./FLATPAK_APPS_INFO.txt"
+               cat "${GITHUB_WORKSPACE}/main/metadata/FLATPAK_APPS_INFO.json" > "./FLATPAK_APPS_INFO.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/FLATPAK_APP_IDS.txt" > "./FLATPAK_APP_IDS.txt"
+               cat "${GITHUB_WORKSPACE}/main/metadata/FLATPAK_POPULAR.json" | jq . > "./FLATPAK_POPULAR.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/FLATPAK_TRENDING.json" | jq . > "./FLATPAK_TRENDING.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/METADATA.json" | jq . > "./METADATA.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/METADATA.min.json" | jq . > "./METADATA.min.json"
+               cat "${GITHUB_WORKSPACE}/main/metadata/METADATA.yaml" | yq . > "./METADATA.yaml"
+               cat "${GITHUB_WORKSPACE}/main/metadata/METADATA.min.yaml" | yq . > "./METADATA.min.yaml"
+               cat "${GITHUB_WORKSPACE}/main/metadata/PKGSRC.json" | jq . > "./PKGSRC.json"
+               find "." -type f -size -3c -delete
+               git add --all --verbose && git commit -m "[+] METADATA (ROOT) $(TZ='UTC' date +'%Y_%m_%d')]" ; df -h
+               git pull origin main ; git push origin main
+             popd >/dev/null 2>&1
+           fi
+        continue-on-error: true
+
+      - name: Generate All-In-One (aarch64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          #bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/pkgcache/refs/heads/main/scripts/metadata/gen_meta_aio_aarch64-Linux.sh")
+          dos2unix --quiet "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_aarch64-Linux.sh"
+          chmod +x "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_aarch64-Linux.sh"
+          bash "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_aarch64-Linux.sh"
+        continue-on-error: true
+
+      - name: Generate Sqlite (aarch64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          pushd "$(mktemp -d)" >/dev/null 2>&1
+          if jq --exit-status . "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.json" >/dev/null 2>&1; then
+           if command -v "qsv" >/dev/null 2>&1; then
+             jq -c '.base[]' "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.json" > "./base.json"
+             qsv jsonl "./base.json" > "./base.csv"
+             jq -c '.bin[]' "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.json" > "./bin.json"
+             qsv jsonl "./bin.json" > "./bin.csv"
+             jq -c '.pkg[]' "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.json" > "./pkg.json"
+             qsv jsonl "./pkg.json" > "./pkg.csv"
+             qsv to sqlite "./METADATA.AIO.db" "./base.csv" "./bin.csv" "./pkg.csv"
+           fi
+           if [[ -s "./METADATA.AIO.db" && $(stat -c%s "./METADATA.AIO.db") -gt 1024 ]]; then
+             cp -fv "./METADATA.AIO.db" "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db"
+             b3sum "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db.bsum"
+             7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db.xz" "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db" 2>/dev/null
+             b3sum "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db.xz" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db.xz.bsum"
+             zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db" -o "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db.zstd"
+             b3sum "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db.zstd" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db.zstd.bsum"
+           fi
+          fi
+          popd >/dev/null 2>&1
+        continue-on-error: true
+
+      - name: Generate Hot/Popular/Trending List (aarch64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          #bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/pkgcache/refs/heads/main/scripts/metadata/gen_meta_aio_aarch64-Linux_web.sh")
+          dos2unix --quiet "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_aarch64-Linux_web.sh"
+          chmod +x "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_aarch64-Linux_web.sh"
+          bash "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_aarch64-Linux_web.sh"
+          if [[ -s "${SYSTMP}/aarch64-Linux.METADATA.WEB.json" ]] && [[ $(stat -c%s "${SYSTMP}/aarch64-Linux.METADATA.WEB.json") -gt 1000 ]]; then
+           cp -fv "${SYSTMP}/aarch64-Linux.METADATA.WEB.json" "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.WEB.json"
+          fi
+        continue-on-error: true
+
+      - name: Generate New List (aarch64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          pushd "$(mktemp -d)" >/dev/null 2>&1 && git clone --filter="blob:none" --no-checkout "https://huggingface.co/datasets/pkgforge/pkgcache" && cd "./pkgcache"
+          git sparse-checkout set "" && git checkout
+          #Generate New Pkgs
+           if jq --exit-status . "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.json" >/dev/null 2>&1; then 
+             git --no-pager log --since='7 days ago' --diff-filter=A --name-only | grep -Ei "aarch64-Linux" | grep -Ei '\.(AppBundle|AppImage|FlatImage|NixAppImage|RunImage)$' | sort -u | while read -r G_FILE; do
+                C_COUNT="$(git log --oneline -- "${G_FILE}" | wc -l)"
+                if [ "${C_COUNT}" -le 2 ]; then
+                    echo "${G_FILE}"
+                fi
+             done | sed 's|.*/||' | sort -u | jq -R '.' | jq -s '.' > "${SYSTMP}/LATEST.json.tmp"
+             if jq --exit-status . "${SYSTMP}/LATEST.json.tmp" >/dev/null 2>&1; then
+                LATEST="$(cat "${SYSTMP}/LATEST.json.tmp")"
+                jq --argjson LATEST "${LATEST}" '.pkg[] | select((.name | ascii_downcase) as $name | ($LATEST | map(ascii_downcase) | index($name))) | {name: .name, bin_id: .pkg_id, description: .description, icon: .icon}' "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.json" | jq -s '.' > "${SYSTMP}/LATEST.json"
+                if jq --exit-status . "${SYSTMP}/LATEST.json" >/dev/null 2>&1; then
+                  cat "${SYSTMP}/LATEST.json" | jq . > "${GITHUB_WORKSPACE}/main/aarch64-Linux/LATEST.json"
+                fi
+             fi
+           fi
+          rm -rf "$(realpath .)" ; popd >/dev/null 2>&1
+        continue-on-error: true
+
+      - name: Sync Metadata --> HF (aarch64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          ##Sync
+          PKG_COUNT="$(cat "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.json" | jq -r '(.base[], .bin[], .pkg[]) | .pkg' | wc -l | tr -d '[:space:]')"
+          if [[ "${PKG_COUNT}" -gt 2900 ]]; then
+           pushd "$(mktemp -d)" >/dev/null 2>&1 && git clone --depth="1" --filter="blob:none" --no-checkout "https://huggingface.co/datasets/pkgforge/pkgcache" && cd "./pkgcache"
+             git lfs install
+             huggingface-cli lfs-enable-largefiles "." ; df -h
+             git sparse-checkout set ""
+             git sparse-checkout set --no-cone --sparse-index "aarch64-Linux/*.db" "aarch64-Linux/*.json" "aarch64-Linux/*.log" "aarch64-Linux/*.png" "aarch64-Linux/*.temp" "aarch64-Linux/*.toml" "aarch64-Linux/*.tmp" "aarch64-Linux/*.txt" "aarch64-Linux/*.yaml" "aarch64-Linux/*.yml"
+             git checkout ; ls -lah "." "./aarch64-Linux"
+             git sparse-checkout list
+             #copy TOML
+             taplo check "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.toml" && cp "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.toml" "./aarch64-Linux/METADATA.AIO.toml"
+             #copy json
+             if jq --exit-status . "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.json" >/dev/null 2>&1; then
+               cp -fv "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.json" "./aarch64-Linux/METADATA.AIO.json"
+               cp -fv "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.WEB.json" "./aarch64-Linux/METADATA.WEB.json"
+               cp -fv "${GITHUB_WORKSPACE}/main/aarch64-Linux/LATEST.json" "./aarch64-Linux/LATEST.json"
+               #AM
+               cp -fv "${GITHUB_WORKSPACE}/main/aarch64-Linux/AM.txt" "./aarch64-Linux/AM.txt"
+             fi
+             #copy min.json
+             if jq --exit-status . "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.min.json" >/dev/null 2>&1; then
+               cp -fv "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.min.json" "./aarch64-Linux/METADATA.AIO.min.json"
+             fi
+             #Copy DB
+             if [[ -s "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db" && $(stat -c%s "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db") -gt 1024 ]]; then
+              cp -fv "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.db" "./aarch64-Linux/METADATA.AIO.db"
+             fi
+             #copy yaml
+             if yq --exit-status . "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.yaml" >/dev/null 2>&1; then
+               cp -fv "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.AIO.yaml" "./aarch64-Linux/METADATA.AIO.yaml"
+             fi
+             #copy icon
+             cp -fv "${GITHUB_WORKSPACE}/main/.github/assets/base.png" "./aarch64-Linux/base.default.png"
+             cp -fv "${GITHUB_WORKSPACE}/main/.github/assets/bin.png" "./aarch64-Linux/bin.default.png"
+             cp -fv "${GITHUB_WORKSPACE}/main/.github/assets/pkg.png" "./aarch64-Linux/pkg.default.png"
+             find "." -type f -size -3c -delete
+             git add --all --verbose && git commit -m "[+] METADATA (AIO) $(TZ='UTC' date +'%Y_%m_%d')]"
+             git pull origin main ; git push origin main
+           popd >/dev/null 2>&1
+          else
+           echo -e "\n[-] FATAL: PKG_COUNT is < 3000 or broken\n"
+           echo "${PKG_COUNT}"
+           export METADATA_FAILED="TRUE"
+           echo "METADATA_FAILED=${METADATA_FAILED}" >> "${GITHUB_ENV}"
+          fi
+        continue-on-error: true
+
+      - name: Exit if Failed (aarch64)
+        if: env.METADATA_FAILED == 'TRUE'
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          exit 1
+        continue-on-error: false
+
+      - name: Generate All-In-One (x86_64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          #bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/pkgcache/refs/heads/main/scripts/metadata/gen_meta_aio_x86_64-Linux.sh")
+          dos2unix --quiet "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_x86_64-Linux.sh"
+          chmod +x "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_x86_64-Linux.sh"
+          bash "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_x86_64-Linux.sh"
+        continue-on-error: true
+
+      - name: Generate Sqlite (x86_64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          pushd "$(mktemp -d)" >/dev/null 2>&1
+          if jq --exit-status . "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.json" >/dev/null 2>&1; then
+           if command -v "qsv" >/dev/null 2>&1; then
+             jq -c '.base[]' "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.json" > "./base.json"
+             qsv jsonl "./base.json" > "./base.csv"
+             jq -c '.bin[]' "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.json" > "./bin.json"
+             qsv jsonl "./bin.json" > "./bin.csv"
+             jq -c '.pkg[]' "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.json" > "./pkg.json"
+             qsv jsonl "./pkg.json" > "./pkg.csv"
+             qsv to sqlite "./METADATA.AIO.db" "./base.csv" "./bin.csv" "./pkg.csv"
+           fi
+           if [[ -s "./METADATA.AIO.db" && $(stat -c%s "./METADATA.AIO.db") -gt 1024 ]]; then
+             cp -fv "./METADATA.AIO.db" "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db"
+             b3sum "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db.bsum"
+             7z a -t7z -mx="9" -mmt="$(($(nproc)+1))" -bsp1 -bt "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db.xz" "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db" 2>/dev/null
+             b3sum "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db.xz" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db.xz.bsum"
+             zstd --ultra -22 --force "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db" -o "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db.zstd"
+             b3sum "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db.zstd" | grep -oE '^[a-f0-9]{64}' | tr -d '[:space:]' > "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db.zstd.bsum"
+           fi
+          fi
+          popd >/dev/null 2>&1
+        continue-on-error: true
+
+      - name: Generate Hot/Popular/Trending List (x86_64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          #bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/pkgcache/refs/heads/main/scripts/metadata/gen_meta_aio_x86_64-Linux_web.sh")
+          dos2unix --quiet "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_x86_64-Linux_web.sh"
+          chmod +x "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_x86_64-Linux_web.sh"
+          bash "${GITHUB_WORKSPACE}/main/scripts/metadata/gen_meta_aio_x86_64-Linux_web.sh"
+          if [[ -s "${SYSTMP}/x86_64-Linux.METADATA.WEB.json" ]] && [[ $(stat -c%s "${SYSTMP}/x86_64-Linux.METADATA.WEB.json") -gt 1000 ]]; then
+           cp -fv "${SYSTMP}/x86_64-Linux.METADATA.WEB.json" "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.WEB.json"
+          fi
+        continue-on-error: true
+
+      - name: Generate New List (x86_64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          pushd "$(mktemp -d)" >/dev/null 2>&1 && git clone --filter="blob:none" --no-checkout "https://huggingface.co/datasets/pkgforge/pkgcache" && cd "./pkgcache"
+          git sparse-checkout set "" && git checkout
+          #Generate New Pkgs
+           if jq --exit-status . "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.json" >/dev/null 2>&1; then 
+             git --no-pager log --since='7 days ago' --diff-filter=A --name-only | grep -Ei "x86_64-Linux" | grep -Ei '\.(AppBundle|AppImage|FlatImage|NixAppImage|RunImage)$' | sort -u | while read -r G_FILE; do
+                C_COUNT="$(git log --oneline -- "${G_FILE}" | wc -l)"
+                if [ "${C_COUNT}" -le 2 ]; then
+                    echo "${G_FILE}"
+                fi
+             done | sed 's|.*/||' | sort -u | jq -R '.' | jq -s '.' > "${SYSTMP}/LATEST.json.tmp"
+             if jq --exit-status . "${SYSTMP}/LATEST.json.tmp" >/dev/null 2>&1; then
+                LATEST="$(cat "${SYSTMP}/LATEST.json.tmp")"
+                jq --argjson LATEST "${LATEST}" '.pkg[] | select((.name | ascii_downcase) as $name | ($LATEST | map(ascii_downcase) | index($name))) | {name: .name, bin_id: .pkg_id, description: .description, icon: .icon}' "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.json" | jq -s '.' > "${SYSTMP}/LATEST.json"
+                if jq --exit-status . "${SYSTMP}/LATEST.json" >/dev/null 2>&1; then
+                  cat "${SYSTMP}/LATEST.json" | jq . > "${GITHUB_WORKSPACE}/main/x86_64-Linux/LATEST.json"
+                fi
+             fi
+           fi
+          rm -rf "$(realpath .)" ; popd >/dev/null 2>&1
+        continue-on-error: true
+
+      - name: Sync Metadata --> HF (x86_64-Linux)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          ##Sync
+          PKG_COUNT="$(cat "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.json" | jq -r '(.base[], .bin[], .pkg[]) | .pkg' | wc -l | tr -d '[:space:]')"
+          if [[ "${PKG_COUNT}" -gt 2900 ]]; then
+           pushd "$(mktemp -d)" >/dev/null 2>&1 && git clone --depth="1" --filter="blob:none" --no-checkout "https://huggingface.co/datasets/pkgforge/pkgcache" && cd "./pkgcache"
+             git lfs install
+             huggingface-cli lfs-enable-largefiles "." ; df -h
+             git sparse-checkout set ""
+             git sparse-checkout set --no-cone --sparse-index "x86_64-Linux/*.db" "x86_64-Linux/*.json" "x86_64-Linux/*.log" "x86_64-Linux/*.png" "x86_64-Linux/*.temp" "x86_64-Linux/*.toml" "x86_64-Linux/*.tmp" "x86_64-Linux/*.txt" "x86_64-Linux/*.yaml" "x86_64-Linux/*.yml"
+             git checkout ; ls -lah "." "./x86_64-Linux"
+             git sparse-checkout list
+             #copy TOML
+             taplo check "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.toml" && cp "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.toml" "./x86_64-Linux/METADATA.AIO.toml"
+             #copy json
+             if jq --exit-status . "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.json" >/dev/null 2>&1; then
+               cp -fv "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.json" "./x86_64-Linux/METADATA.AIO.json"
+               cp -fv "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.WEB.json" "./x86_64-Linux/METADATA.WEB.json"
+               cp -fv "${GITHUB_WORKSPACE}/main/x86_64-Linux/LATEST.json" "./x86_64-Linux/LATEST.json"
+               #AM
+               cp -fv "${GITHUB_WORKSPACE}/main/x86_64-Linux/AM.txt" "./x86_64-Linux/AM.txt"
+             fi
+             #copy min.json
+             if jq --exit-status . "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.min.json" >/dev/null 2>&1; then
+               cp -fv "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.min.json" "./x86_64-Linux/METADATA.AIO.min.json"
+             fi
+             #Copy DB
+             if [[ -s "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db" && $(stat -c%s "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db") -gt 1024 ]]; then
+              cp -fv "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.db" "./x86_64-Linux/METADATA.AIO.db"
+             fi
+             #copy yaml
+             if yq --exit-status . "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.yaml" >/dev/null 2>&1; then
+               cp -fv "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.AIO.yaml" "./x86_64-Linux/METADATA.AIO.yaml"
+             fi
+             #copy icon
+             cp -fv "${GITHUB_WORKSPACE}/main/.github/assets/base.png" "./x86_64-Linux/base.default.png"
+             cp -fv "${GITHUB_WORKSPACE}/main/.github/assets/bin.png" "./x86_64-Linux/bin.default.png"
+             cp -fv "${GITHUB_WORKSPACE}/main/.github/assets/pkg.png" "./x86_64-Linux/pkg.default.png"
+             find "." -type f -size -3c -delete
+             git add --all --verbose && git commit -m "[+] METADATA (AIO) $(TZ='UTC' date +'%Y_%m_%d')]" ; df -h
+             git pull origin main ; git push origin main
+           popd >/dev/null 2>&1
+          else
+           echo -e "\n[-] FATAL: PKG_COUNT is < 3000 or broken\n"
+           echo "${PKG_COUNT}"
+           export METADATA_FAILED="TRUE"
+           echo "METADATA_FAILED=${METADATA_FAILED}" >> "${GITHUB_ENV}"
+          fi
+        continue-on-error: true
+
+      - name: Exit if Failed (x86_64)
+        if: env.METADATA_FAILED == 'TRUE'
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          exit 1
+        continue-on-error: false
+
+      - name: Git Pull
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main" && git pull origin main
+        continue-on-error: true
+
+      - name: Update TOTAL_PACKAGES
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          ##aarch64-Linux/
+           unset TOTAL_PACKAGES
+           TOTAL_PACKAGES="$(curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/METADATA.json" | jq '.[] | select(.host == "aarch64-Linux") | .main' | jq -r '.[].name' | sort -u | wc -l)" && export TOTAL_PACKAGES="${TOTAL_PACKAGES}"
+           sed "s|\(https://img.shields.io/badge/Packages-[(]*\)[0-9]\+|\1${TOTAL_PACKAGES}|" -i "$GITHUB_WORKSPACE/main/README.md"
+           #sed 's#\(tree/main/aarch64-Linux)| \)[0-9]*\( |.*\)#\1'"${TOTAL_PACKAGES}"'\2#' -i "${GITHUB_WORKSPACE}/main/README.md"
+          ##x86_64-Linux/
+           unset TOTAL_PACKAGES
+           TOTAL_PACKAGES="$(curl -qfsSL "https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/METADATA.json" | jq '.[] | select(.host == "x86_64-Linux") | .main' | jq -r '.[].name' | sort -u | wc -l)" && export TOTAL_PACKAGES="${TOTAL_PACKAGES}"
+           sed -E "s|(https://img.shields.io/badge/Packages-[^(]*\([0-9]+\)\+\()[0-9]+|\1${TOTAL_PACKAGES}|" -i "$GITHUB_WORKSPACE/main/README.md"
+           #sed 's#\(tree/main/x86_64-Linux)| \)[0-9]*\( |.*\)#\1'"${TOTAL_PACKAGES}"'\2#' -i "${GITHUB_WORKSPACE}/main/README.md"
+           sed -E "s~(https://bin\.pkgforge\.dev/list\.gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g" -i "${GITHUB_WORKSPACE}/main/README.md"
+        continue-on-error: true
+
+      - name: Generate README (aarch64-Linux)
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          if jq empty "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.json" 2>/dev/null; then
+            #Convert to YAML
+             cat "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.json" | yj -jy | yq . > "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.yaml"
+            ##Gen aarch64-Linux/DETAILED.md
+             cat "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.json" | jq -r '.[] | "### [`\(.name // "" | if . == null or . == "" then "" else . end)` 📀](\(.download_url // "" | if . == null or . == "" then "" else . end))\n- **PKG_Name 📦:** \(.pkg_name // "" | if . == null or . == "" then "" else . end)\n- **Version 🧬:** `\(.version // "" | if . == null or . == "" then "" else . end)`\n- **Description ℹ️:** \(.description // "" | if . == null or . == "" then "" else . end)\n- **Note ⚠️:** \(.note // "" | if . == null or . == "" then "" else . end)\n- **Homepage 🌐:** [\(.web_url // "" | if . == null or . == "" then "" else . end)](\(.web_url // "" | if . == null or . == "" then "" else . end))\n- **Source 📡:** [\(.src_url // "" | if . == null or . == "" then "" else . end)](\(.src_url // "" | if . == null or . == "" then "" else . end))\n- **Download ⬇️:** \(.download_url // "" | if . == null or . == "" then "" else . end)\n- **Size 💾:** `\(.size // "" | if . == null or . == "" then "" else . end)`\n- **SHA256SUM 🔐:** `\(.shasum // "" | if . == null or . == "" then "" else . end)`\n- **B3SUM 🔐:** `\(.bsum // "" | if . == null or . == "" then "" else . end)`\n- **Script ⚙️:** \(.build_script // "" | if . == null or . == "" then "" else . end)\n- **Log 🧾:** \(.build_log // "" | if . == null or . == "" then "" else . end)\n- **Icon 🖼️:** \(.icon // "" | if . == null or . == "" then "" else . end)\n- **Desktop 🖥️:** \(.build_log | sub("\\.log$"; ".desktop"))\n- **Zsync ♻️:** \(.build_log | sub("\\.log$"; ".zsync"))\n\n---\n"' > "${GITHUB_WORKSPACE}/main/aarch64-Linux/DETAILED.md"
+             sed "s|https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux|https://pkgcache.pkgforge.dev/aarch64-Linux|g" "${GITHUB_WORKSPACE}/main/aarch64-Linux/DETAILED.md" > "${GITHUB_WORKSPACE}/main/aarch64-Linux/DETAILED.min.md"
+            ##aarch64-Linux/README.md
+             { echo '|ICON 🖼️|PKG 📀|PKG_Name 📦|Version 🧬| Description ℹ️|Note ⚠️|Homepage 🌐|Source 📡|Size 💾|SHA256SUM 🔐|B3SUM 🔐|Script ⚙️|Log 🧾|' ; echo '| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |' ; cat "${GITHUB_WORKSPACE}/main/aarch64-Linux/METADATA.json" | sed 's/|/,/g' | jq -r '.[] | "| <img src=\"\(.icon // "" | if . == null or . == "" then "" else . end)\" width=\"28\" height=\"28\"> | [`\(.name // "" | if . == null or . == "" then "" else . end)`](\(.download_url // "" | if . == null or . == "" then "" else . end)) | \(.pkg_name // "" | if . == null or . == "" then "" else . end) | \(.version // "" | if . == null or . == "" then "" else . end) | \(.description // "" | if . == null or . == "" then "" else . end) | \(.note // "" | if . == null or . == "" then "" else . end) | [\(.web_url // "" | if . == null or . == "" then "" else . end)](\(.web_url // "" | if . == null or . == "" then "" else . end)) | [\(.src_url // "" | if . == null or . == "" then "" else . end)](\(.src_url // "" | if . == null or . == "" then "" else . end)) |\(.size // "" | if . == null or . == "" then "" else . end) | `\(.shasum // "" | if . == null or . == "" then "" else . end)` | `\(.bsum // "" | if . == null or . == "" then "" else . end)` | \(.build_script // "" | if . == null or . == "" then "" else . end) | \(.build_log // "" | if . == null or . == "" then "" else . end) | \(.category // "" | if . == null or . == "" then "" else . end) |"' ; } > "${GITHUB_WORKSPACE}/main/aarch64-Linux/README.md"
+             sed 's/||//g' -i "${GITHUB_WORKSPACE}/main/aarch64-Linux/README.md"
+             sed "s|https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/aarch64-Linux|https://pkgcache.pkgforge.dev/aarch64-Linux|g" "${GITHUB_WORKSPACE}/main/aarch64-Linux/README.md" > "${GITHUB_WORKSPACE}/main/aarch64-Linux/README.min.md"
+          fi
+        continue-on-error: true
+
+      - name: Generate README (x86_64-Linux)
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          if jq empty "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.json" 2>/dev/null; then
+            #Convert to YAML
+             cat "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.json" | yj -jy | yq . > "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.yaml"
+            ##Gen x86_64-Linux/DETAILED.md
+             cat "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.json" | jq -r '.[] | "### [`\(.name // "" | if . == null or . == "" then "" else . end)` 📀](\(.download_url // "" | if . == null or . == "" then "" else . end))\n- **PKG_Name 📦:** \(.pkg_name // "" | if . == null or . == "" then "" else . end)\n- **Version 🧬:** `\(.version // "" | if . == null or . == "" then "" else . end)`\n- **Description ℹ️:** \(.description // "" | if . == null or . == "" then "" else . end)\n- **Note ⚠️:** \(.note // "" | if . == null or . == "" then "" else . end)\n- **Homepage 🌐:** [\(.web_url // "" | if . == null or . == "" then "" else . end)](\(.web_url // "" | if . == null or . == "" then "" else . end))\n- **Source 📡:** [\(.src_url // "" | if . == null or . == "" then "" else . end)](\(.src_url // "" | if . == null or . == "" then "" else . end))\n- **Download ⬇️:** \(.download_url // "" | if . == null or . == "" then "" else . end)\n- **Size 💾:** `\(.size // "" | if . == null or . == "" then "" else . end)`\n- **SHA256SUM 🔐:** `\(.shasum // "" | if . == null or . == "" then "" else . end)`\n- **B3SUM 🔐:** `\(.bsum // "" | if . == null or . == "" then "" else . end)`\n- **Script ⚙️:** \(.build_script // "" | if . == null or . == "" then "" else . end)\n- **Log 🧾:** \(.build_log // "" | if . == null or . == "" then "" else . end)\n- **Icon 🖼️:** \(.icon // "" | if . == null or . == "" then "" else . end)\n- **Desktop 🖥️:** \(.build_log | sub("\\.log$"; ".desktop"))\n- **Zsync ♻️:** \(.build_log | sub("\\.log$"; ".zsync"))\n\n---\n"' > "${GITHUB_WORKSPACE}/main/x86_64-Linux/DETAILED.md"
+             sed "s|https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux|https://pkgcache.pkgforge.dev/x86_64-Linux|g" "${GITHUB_WORKSPACE}/main/x86_64-Linux/DETAILED.md" > "${GITHUB_WORKSPACE}/main/x86_64-Linux/DETAILED.min.md"
+            ##x86_64-Linux/README.md
+             { echo '|ICON 🖼️|PKG 📀|PKG_Name 📦|Version 🧬| Description ℹ️|Note ⚠️|Homepage 🌐|Source 📡|Size 💾|SHA256SUM 🔐|B3SUM 🔐|Script ⚙️|Log 🧾|' ; echo '| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |' ; cat "${GITHUB_WORKSPACE}/main/x86_64-Linux/METADATA.json" | sed 's/|/,/g' | jq -r '.[] | "| <img src=\"\(.icon // "" | if . == null or . == "" then "" else . end)\" width=\"28\" height=\"28\"> | [`\(.name // "" | if . == null or . == "" then "" else . end)`](\(.download_url // "" | if . == null or . == "" then "" else . end)) | \(.pkg_name // "" | if . == null or . == "" then "" else . end) | \(.version // "" | if . == null or . == "" then "" else . end) | \(.description // "" | if . == null or . == "" then "" else . end) | \(.note // "" | if . == null or . == "" then "" else . end) | [\(.web_url // "" | if . == null or . == "" then "" else . end)](\(.web_url // "" | if . == null or . == "" then "" else . end)) | [\(.src_url // "" | if . == null or . == "" then "" else . end)](\(.src_url // "" | if . == null or . == "" then "" else . end)) |\(.size // "" | if . == null or . == "" then "" else . end) | `\(.shasum // "" | if . == null or . == "" then "" else . end)` | `\(.bsum // "" | if . == null or . == "" then "" else . end)` | \(.build_script // "" | if . == null or . == "" then "" else . end) | \(.build_log // "" | if . == null or . == "" then "" else . end) | \(.category // "" | if . == null or . == "" then "" else . end) |"' ; } > "${GITHUB_WORKSPACE}/main/x86_64-Linux/README.md"
+             sed 's/||//g' -i "${GITHUB_WORKSPACE}/main/x86_64-Linux/README.md"
+             sed "s|https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/x86_64-Linux|https://pkgcache.pkgforge.dev/x86_64-Linux|g" "${GITHUB_WORKSPACE}/main/x86_64-Linux/README.md" > "${GITHUB_WORKSPACE}/main/x86_64-Linux/README.min.md"
+          fi
+        continue-on-error: true
+
+      - name: Get DateTime & Purge files (=> 95 MB)
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          UTC_TIME="$(TZ='UTC' date +'%Y-%m-%d (%I:%M:%S %p)')"
+          echo "UTC_TIME=${UTC_TIME}" >> "${GITHUB_ENV}"
+          #Purge
+          find "${GITHUB_WORKSPACE}/main" -path "${GITHUB_WORKSPACE}/main/.git" -prune -o -type f -size +95M -exec rm -rvf "{}" + 2>/dev/null
+        continue-on-error: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./main
+          commit_user_name: Azathothas
+          commit_user_email: AjamX101@gmail.com
+          commit_message: "✅ Updated (Metadata) 🛍️ <-- ${{ env.UTC_TIME }} ⌚"
+          #push_options: '--force'
+        continue-on-error: true
+#------------------------------------------------------------------------------------#

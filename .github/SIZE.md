@@ -1,0 +1,594 @@
+```mathematica
+ 1.4G └─┬ main
+ 961M   ├─┬ external
+ 735M   │ ├─┬ pkgforge-go
+ 735M   │ │ ├─┬ data
+  80M   │ │ │ ├── x86_64-Linux.db
+  79M   │ │ │ ├── riscv64-Linux.db
+  79M   │ │ │ ├── aarch64-Linux.db
+  79M   │ │ │ ├── loongarch64-Linux.db
+  70M   │ │ │ ├── x86_64-Linux.sdb
+  69M   │ │ │ ├── riscv64-Linux.sdb
+  69M   │ │ │ ├── aarch64-Linux.sdb
+  68M   │ │ │ ├── loongarch64-Linux.sdb
+ 7.1M   │ │ │ ├── x86_64-Linux.sdb.zstd
+ 7.0M   │ │ │ ├── riscv64-Linux.sdb.zstd
+ 7.0M   │ │ │ ├── aarch64-Linux.sdb.zstd
+ 6.8M   │ │ │ ├── loongarch64-Linux.sdb.zstd
+ 6.7M   │ │ │ ├── x86_64-Linux.db.zstd
+ 6.6M   │ │ │ ├── x86_64-Linux.sdb.xz
+ 6.6M   │ │ │ ├── riscv64-Linux.db.zstd
+ 6.6M   │ │ │ ├── aarch64-Linux.db.zstd
+ 6.5M   │ │ │ ├── riscv64-Linux.sdb.xz
+ 6.5M   │ │ │ ├── aarch64-Linux.sdb.xz
+ 6.4M   │ │ │ ├── loongarch64-Linux.db.zstd
+ 6.4M   │ │ │ ├── x86_64-Linux.db.xz
+ 6.3M   │ │ │ ├── loongarch64-Linux.sdb.xz
+ 6.3M   │ │ │ ├── riscv64-Linux.db.xz
+ 6.3M   │ │ │ ├── aarch64-Linux.db.xz
+ 6.1M   │ │ │ ├── loongarch64-Linux.db.xz
+ 6.0M   │ │ │ ├── x86_64-Linux.json.zstd
+ 6.0M   │ │ │ ├── riscv64-Linux.json.zstd
+ 5.9M   │ │ │ ├── aarch64-Linux.json.zstd
+ 5.8M   │ │ │ ├── loongarch64-Linux.json.zstd
+ 2.3M   │ │ │ ├── x86_64-Linux.json.xz
+ 2.2M   │ │ │ ├── riscv64-Linux.json.xz
+ 2.2M   │ │ │ ├── aarch64-Linux.json.xz
+ 2.1M   │ │ │ ├── loongarch64-Linux.json.xz
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.json.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.db.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.json.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.db.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
+ 4.0K   │ │ │ └── aarch64-Linux.db.bsum
+  12K   │ │ └─┬ scripts
+ 8.0K   │ │   └── gen_meta.sh
+ 179M   │ ├─┬ pkgforge-cargo
+ 179M   │ │ ├─┬ data
+  15M   │ │ │ ├── x86_64-Linux.json
+  15M   │ │ │ ├── aarch64-Linux.json
+  15M   │ │ │ ├── riscv64-Linux.json
+  13M   │ │ │ ├── x86_64-Linux.db
+  13M   │ │ │ ├── aarch64-Linux.db
+  12M   │ │ │ ├── loongarch64-Linux.json
+  12M   │ │ │ ├── riscv64-Linux.db
+  10M   │ │ │ ├── loongarch64-Linux.db
+  10M   │ │ │ ├── x86_64-Linux.sdb
+  10M   │ │ │ ├── aarch64-Linux.sdb
+ 9.7M   │ │ │ ├── riscv64-Linux.sdb
+ 8.3M   │ │ │ ├── loongarch64-Linux.sdb
+ 1.6M   │ │ │ ├── x86_64-Linux.sdb.zstd
+ 1.6M   │ │ │ ├── aarch64-Linux.sdb.zstd
+ 1.5M   │ │ │ ├── riscv64-Linux.sdb.zstd
+ 1.5M   │ │ │ ├── x86_64-Linux.db.zstd
+ 1.5M   │ │ │ ├── aarch64-Linux.db.zstd
+ 1.4M   │ │ │ ├── x86_64-Linux.sdb.xz
+ 1.4M   │ │ │ ├── aarch64-Linux.sdb.xz
+ 1.4M   │ │ │ ├── x86_64-Linux.db.xz
+ 1.4M   │ │ │ ├── riscv64-Linux.db.zstd
+ 1.4M   │ │ │ ├── aarch64-Linux.db.xz
+ 1.4M   │ │ │ ├── riscv64-Linux.sdb.xz
+ 1.4M   │ │ │ ├── riscv64-Linux.db.xz
+ 1.3M   │ │ │ ├── x86_64-Linux.json.zstd
+ 1.3M   │ │ │ ├── aarch64-Linux.json.zstd
+ 1.3M   │ │ │ ├── x86_64-Linux.json.xz
+ 1.3M   │ │ │ ├── aarch64-Linux.json.xz
+ 1.3M   │ │ │ ├── riscv64-Linux.json.zstd
+ 1.3M   │ │ │ ├── loongarch64-Linux.sdb.zstd
+ 1.3M   │ │ │ ├── riscv64-Linux.json.xz
+ 1.2M   │ │ │ ├── loongarch64-Linux.db.zstd
+ 1.2M   │ │ │ ├── loongarch64-Linux.sdb.xz
+ 1.1M   │ │ │ ├── loongarch64-Linux.db.xz
+ 1.1M   │ │ │ ├── loongarch64-Linux.json.zstd
+ 1.1M   │ │ │ ├── loongarch64-Linux.json.xz
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.sdb.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.json.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── riscv64-Linux.db.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.sdb.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.json.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── loongarch64-Linux.db.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.sdb.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
+ 4.0K   │ │ │ └── aarch64-Linux.db.bsum
+  12K   │ │ └─┬ scripts
+ 8.0K   │ │   └── gen_meta.sh
+  19M   │ ├─┬ am
+  19M   │ │ ├─┬ data
+ 4.8M   │ │ │ ├── x86_64-Linux.json
+ 4.3M   │ │ │ ├── x86_64-Linux.db
+ 4.2M   │ │ │ ├── x86_64-Linux.sdb
+ 1.1M   │ │ │ ├── x86_64-Linux.AM.txt
+ 1.0M   │ │ │ ├── aarch64-Linux.AM.txt
+ 548K   │ │ │ ├── x86_64-Linux.db.cba
+ 496K   │ │ │ ├── x86_64-Linux.json.cba
+ 492K   │ │ │ ├── x86_64-Linux.sdb.zstd
+ 456K   │ │ │ ├── x86_64-Linux.sdb.xz
+ 444K   │ │ │ ├── x86_64-Linux.db.zstd
+ 424K   │ │ │ ├── x86_64-Linux.db.xz
+ 408K   │ │ │ ├── x86_64-Linux.json.zstd
+ 400K   │ │ │ ├── x86_64-Linux.json.xz
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
+ 4.0K   │ │ │ └── TOTAL.json
+  44K   │ │ └─┬ scripts
+  20K   │ │   ├── gen_meta.sh
+  12K   │ │   ├── gen_meta_old.sh
+ 8.0K   │ │   └── gen_meta_tmp.sh
+  12M   │ ├─┬ cargo-bins
+  12M   │ │ ├─┬ data
+ 4.1M   │ │ │ ├── x86_64-Linux.json
+ 3.1M   │ │ │ ├── x86_64-Linux.db
+ 1.7M   │ │ │ ├── aarch64-Linux.json
+ 1.3M   │ │ │ ├── aarch64-Linux.db
+ 340K   │ │ │ ├── x86_64-Linux.db.cba
+ 316K   │ │ │ ├── x86_64-Linux.json.cba
+ 264K   │ │ │ ├── x86_64-Linux.db.zstd
+ 256K   │ │ │ ├── x86_64-Linux.db.xz
+ 236K   │ │ │ ├── x86_64-Linux.json.zstd
+ 224K   │ │ │ ├── x86_64-Linux.json.xz
+ 144K   │ │ │ ├── aarch64-Linux.db.cba
+ 140K   │ │ │ ├── aarch64-Linux.json.cba
+ 116K   │ │ │ ├── aarch64-Linux.db.zstd
+ 112K   │ │ │ ├── aarch64-Linux.db.xz
+ 104K   │ │ │ ├── aarch64-Linux.json.zstd
+  96K   │ │ │ ├── aarch64-Linux.json.xz
+ 4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.bsum
+ 4.0K   │ │ │ └── TOTAL.json
+  28K   │ │ └─┬ scripts
+  24K   │ │   └── gen_meta.sh
+ 7.4M   │ ├─┬ appimage.github.io
+ 7.3M   │ │ ├─┬ data
+ 2.0M   │ │ │ ├── x86_64-Linux.json
+ 1.6M   │ │ │ ├── x86_64-Linux.db
+ 1.4M   │ │ │ ├── x86_64-Linux.sdb
+ 236K   │ │ │ ├── aarch64-Linux.json
+ 220K   │ │ │ ├── x86_64-Linux.db.cba
+ 208K   │ │ │ ├── aarch64-Linux.sdb
+ 204K   │ │ │ ├── aarch64-Linux.db
+ 200K   │ │ │ ├── x86_64-Linux.json.cba
+ 196K   │ │ │ ├── x86_64-Linux.sdb.zstd
+ 184K   │ │ │ ├── x86_64-Linux.sdb.xz
+ 172K   │ │ │ ├── x86_64-Linux.db.zstd
+ 164K   │ │ │ ├── x86_64-Linux.db.xz
+ 152K   │ │ │ ├── x86_64-Linux.json.zstd
+ 148K   │ │ │ ├── x86_64-Linux.json.xz
+  32K   │ │ │ ├── aarch64-Linux.sdb.zstd
+  28K   │ │ │ ├── aarch64-Linux.sdb.xz
+  28K   │ │ │ ├── aarch64-Linux.db.zstd
+  28K   │ │ │ ├── aarch64-Linux.db.cba
+  24K   │ │ │ ├── aarch64-Linux.json.zstd
+  24K   │ │ │ ├── aarch64-Linux.json.xz
+  24K   │ │ │ ├── aarch64-Linux.json.cba
+  24K   │ │ │ ├── aarch64-Linux.db.xz
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.sdb.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.json.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── x86_64-Linux.db.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.sdb.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.sdb.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.json.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.zstd.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.xz.bsum
+ 4.0K   │ │ │ ├── aarch64-Linux.db.bsum
+ 4.0K   │ │ │ └── TOTAL.json
+  36K   │ │ └─┬ scripts
+  32K   │ │   └── gen_meta.sh
+ 6.6M   │ └─┬ appimagehub
+ 6.6M   │   ├─┬ data
+ 2.1M   │   │ ├── x86_64-Linux.json
+ 1.5M   │   │ ├── x86_64-Linux.db
+ 1.2M   │   │ ├── x86_64-Linux.sdb
+ 292K   │   │ ├── x86_64-Linux.json.cba
+ 268K   │   │ ├── x86_64-Linux.db.cba
+ 176K   │   │ ├── x86_64-Linux.db.zstd
+ 172K   │   │ ├── x86_64-Linux.json.zstd
+ 164K   │   │ ├── x86_64-Linux.json.xz
+ 164K   │   │ ├── x86_64-Linux.db.xz
+ 136K   │   │ ├── x86_64-Linux.sdb.zstd
+ 124K   │   │ ├── x86_64-Linux.sdb.xz
+  92K   │   │ ├── aarch64-Linux.json
+  84K   │   │ ├── aarch64-Linux.sdb
+  76K   │   │ ├── aarch64-Linux.db
+  12K   │   │ ├── aarch64-Linux.sdb.zstd
+  12K   │   │ ├── aarch64-Linux.json.zstd
+  12K   │   │ ├── aarch64-Linux.json.xz
+  12K   │   │ ├── aarch64-Linux.json.cba
+  12K   │   │ ├── aarch64-Linux.db.zstd
+  12K   │   │ ├── aarch64-Linux.db.xz
+  12K   │   │ ├── aarch64-Linux.db.cba
+ 8.0K   │   │ ├── aarch64-Linux.sdb.xz
+ 4.0K   │   │ ├── x86_64-Linux.sdb.zstd.bsum
+ 4.0K   │   │ ├── x86_64-Linux.sdb.xz.bsum
+ 4.0K   │   │ ├── x86_64-Linux.sdb.bsum
+ 4.0K   │   │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │   │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │   │ ├── x86_64-Linux.json.bsum
+ 4.0K   │   │ ├── x86_64-Linux.db.zstd.bsum
+ 4.0K   │   │ ├── x86_64-Linux.db.xz.bsum
+ 4.0K   │   │ ├── x86_64-Linux.db.bsum
+ 4.0K   │   │ ├── aarch64-Linux.sdb.zstd.bsum
+ 4.0K   │   │ ├── aarch64-Linux.sdb.xz.bsum
+ 4.0K   │   │ ├── aarch64-Linux.sdb.bsum
+ 4.0K   │   │ ├── aarch64-Linux.json.zstd.bsum
+ 4.0K   │   │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │   │ ├── aarch64-Linux.json.bsum
+ 4.0K   │   │ ├── aarch64-Linux.db.zstd.bsum
+ 4.0K   │   │ ├── aarch64-Linux.db.xz.bsum
+ 4.0K   │   │ ├── aarch64-Linux.db.bsum
+ 4.0K   │   │ └── TOTAL.json
+  32K   │   └─┬ scripts
+  28K   │     └── gen_meta.sh
+ 238M   ├─┬ misc
+ 237M   │ ├─┬ data
+  74M   │ │ ├── ARCHLINUX.json
+  40M   │ │ ├── FLATPAK_APPSTREAM.xml
+  32M   │ │ ├── CONDA.json
+  25M   │ │ ├── DEBIAN.json
+  17M   │ │ ├── CONDA_RAW.json
+  12M   │ │ ├── NIXPKGS.json
+  11M   │ │ ├── ALPINE_PKG.json
+ 9.1M   │ │ ├── PKGSRC.json
+ 5.2M   │ │ ├── ALPINE_GIT.json
+ 2.9M   │ │ ├── BREW_FORMULA.json
+ 1.6M   │ │ ├── BREW_CASK.json
+ 1.2M   │ │ ├── PPKG_RAW.json
+ 544K   │ │ ├── STALIX.json
+ 476K   │ │ ├── FLATPAK_APPS_INFO.json
+ 444K   │ │ ├── FLATPAK_APPS_INFO.txt
+ 340K   │ │ ├── PPKG.json
+ 280K   │ │ ├── PPKG_BREW.md
+ 236K   │ │ ├── FLATPAK_TRENDING.json
+ 232K   │ │ ├── FLATPAK_POPULAR.json
+  80K   │ │ ├── FLATPAK_APP_IDS.txt
+  20K   │ │ ├── CATEGORY.json
+ 4.0K   │ │ └── CATEGORY.md
+ 104K   │ └─┬ scripts
+  12K   │   ├── fetch_gh_logs.sh
+  12K   │   ├── fetch_flatpak.sh
+  12K   │   ├── fetch_conda.sh
+  12K   │   ├── fetch_alpine_pkg.sh
+ 8.0K   │   ├── fetch_homebrew.sh
+ 8.0K   │   ├── fetch_debian_src.sh
+ 8.0K   │   ├── fetch_archlinux_src.sh
+ 4.0K   │   ├── fetch_stalix.sh
+ 4.0K   │   ├── fetch_ppkg.sh
+ 4.0K   │   ├── fetch_pkgsrc.sh
+ 4.0K   │   ├── fetch_nixpkgs.sh
+ 4.0K   │   ├── fetch_debian_docker.sh
+ 4.0K   │   ├── fetch_archlinux_docker.sh
+ 4.0K   │   └── fetch_alpine_git.sh
+ 167M   ├─┬ bincache
+ 166M   │ ├─┬ data
+  29M   │ │ ├── x86_64-Linux.json
+  29M   │ │ ├── aarch64-Linux.json
+  19M   │ │ ├── aarch64-Linux.db
+  19M   │ │ ├── x86_64-Linux.db
+  16M   │ │ ├── x86_64-Linux.sdb
+  16M   │ │ ├── aarch64-Linux.sdb
+ 4.7M   │ │ ├── x86_64-Linux.json.cba
+ 4.5M   │ │ ├── aarch64-Linux.json.cba
+ 3.4M   │ │ ├── riscv64-Linux.json
+ 2.7M   │ │ ├── riscv64-Linux.db
+ 2.3M   │ │ ├── riscv64-Linux.sdb
+ 1.5M   │ │ ├── x86_64-Linux.sdb.cba
+ 1.5M   │ │ ├── aarch64-Linux.sdb.cba
+ 1.4M   │ │ ├── x86_64-Linux.db.cba
+ 1.3M   │ │ ├── aarch64-Linux.db.cba
+ 1.1M   │ │ ├── x86_64-Linux.sdb.zstd
+ 1.1M   │ │ ├── aarch64-Linux.sdb.zstd
+1000K   │ │ ├── x86_64-Linux.sdb.xz
+ 992K   │ │ ├── aarch64-Linux.sdb.xz
+ 948K   │ │ ├── x86_64-Linux.json.zstd
+ 944K   │ │ ├── x86_64-Linux.db.zstd
+ 940K   │ │ ├── aarch64-Linux.json.zstd
+ 940K   │ │ ├── aarch64-Linux.db.zstd
+ 908K   │ │ ├── x86_64-Linux.json.xz
+ 900K   │ │ ├── aarch64-Linux.json.xz
+ 880K   │ │ ├── x86_64-Linux.db.xz
+ 872K   │ │ ├── aarch64-Linux.db.xz
+ 256K   │ │ ├── riscv64-Linux.sdb.cba
+ 248K   │ │ ├── riscv64-Linux.db.cba
+ 208K   │ │ ├── riscv64-Linux.sdb.zstd
+ 208K   │ │ ├── riscv64-Linux.json.cba
+ 196K   │ │ ├── riscv64-Linux.db.zstd
+ 192K   │ │ ├── riscv64-Linux.sdb.xz
+ 184K   │ │ ├── riscv64-Linux.db.xz
+ 172K   │ │ ├── riscv64-Linux.json.zstd
+ 164K   │ │ ├── riscv64-Linux.json.xz
+ 4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
+ 4.0K   │ │ ├── x86_64-Linux.sdb.bsum
+ 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │ │ ├── x86_64-Linux.json.bsum
+ 4.0K   │ │ ├── x86_64-Linux.db.zstd.bsum
+ 4.0K   │ │ ├── x86_64-Linux.db.xz.bsum
+ 4.0K   │ │ ├── x86_64-Linux.db.bsum
+ 4.0K   │ │ ├── riscv64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ ├── riscv64-Linux.sdb.xz.bsum
+ 4.0K   │ │ ├── riscv64-Linux.sdb.bsum
+ 4.0K   │ │ ├── riscv64-Linux.json.zstd.bsum
+ 4.0K   │ │ ├── riscv64-Linux.json.xz.bsum
+ 4.0K   │ │ ├── riscv64-Linux.json.bsum
+ 4.0K   │ │ ├── riscv64-Linux.db.zstd.bsum
+ 4.0K   │ │ ├── riscv64-Linux.db.xz.bsum
+ 4.0K   │ │ ├── riscv64-Linux.db.bsum
+ 4.0K   │ │ ├── minisign.pub
+ 4.0K   │ │ ├── aarch64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ ├── aarch64-Linux.sdb.xz.bsum
+ 4.0K   │ │ ├── aarch64-Linux.sdb.bsum
+ 4.0K   │ │ ├── aarch64-Linux.json.zstd.bsum
+ 4.0K   │ │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │ │ ├── aarch64-Linux.json.bsum
+ 4.0K   │ │ ├── aarch64-Linux.db.zstd.bsum
+ 4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
+ 4.0K   │ │ ├── aarch64-Linux.db.bsum
+ 4.0K   │ │ └── TOTAL.json
+ 124K   │ └─┬ scripts
+  36K   │   ├── gen_meta_x86_64-Linux.sh
+  36K   │   ├── gen_meta_riscv64-Linux.sh
+  36K   │   ├── gen_meta_aarch64-Linux.sh
+  12K   │   └── sync_hf_mirror.sh
+  59M   ├── GHCR_PKGS.json
+  22M   ├─┬ soarpkgs
+  22M   │ ├─┬ data
+ 2.7M   │ │ ├── COMP_VER_CACHE.json
+ 2.6M   │ │ ├── INDEX.json
+ 2.0M   │ │ ├── BACKAGE.json
+ 1.4M   │ │ ├── INDEX.db
+ 1.3M   │ │ ├── OLD_bincache_aarch64-Linux.json
+ 1.3M   │ │ ├── OLD_bincache_x86_64-Linux.json
+ 1.3M   │ │ ├── OLD_bincache_riscv64-Linux.json
+ 1.2M   │ │ ├── DIFF_bincache_riscv64-Linux.json
+ 1.1M   │ │ ├── COMP_VER_bincache_x86_64-Linux.json
+ 1.1M   │ │ ├── COMP_VER_bincache_aarch64-Linux.json
+ 1.0M   │ │ ├── COMP_VER_CACHE.md
+ 732K   │ │ ├── pub_issues_binaries.txt
+ 688K   │ │ ├── COMP_VER_CACHE_OLD.json
+ 584K   │ │ ├── DIFF_bincache_aarch64-Linux.json
+ 468K   │ │ ├── DIFF_bincache_x86_64-Linux.json
+ 384K   │ │ ├── INDEX.json.cba
+ 308K   │ │ ├── pub_issues_packages.txt
+ 296K   │ │ ├── OLD_pkgcache_x86_64-Linux.json
+ 272K   │ │ ├── COMP_VER_CACHE_OLD.md
+ 248K   │ │ ├── INDEX.db.cba
+ 240K   │ │ ├── GH_REPO.md
+ 236K   │ │ ├── INDEX.json.xz
+ 228K   │ │ ├── INDEX.json.zstd
+ 192K   │ │ ├── INDEX.db.zstd
+ 188K   │ │ ├── OLD_pkgcache_aarch64-Linux.json
+ 180K   │ │ ├── INDEX.db.xz
+ 104K   │ │ ├── DIFF_pkgcache_x86_64-Linux.json
+  80K   │ │ ├── COMP_VER_pkgcache_x86_64-Linux.json
+  68K   │ │ ├── DIFF_pkgcache_aarch64-Linux.json
+  52K   │ │ ├── URLS.txt
+  48K   │ │ ├── COMP_VER_pkgcache_aarch64-Linux.json
+  32K   │ │ ├── OLD_pkgcache_riscv64-Linux.json
+  24K   │ │ ├── DIFF_pkgcache_riscv64-Linux.json
+  24K   │ │ ├── DIFF_bincache.json
+ 8.0K   │ │ ├── DIFF_pkgcache.json
+ 4.0K   │ │ ├── minisign.pub
+ 4.0K   │ │ ├── TOTAL_CACHE.txt
+ 4.0K   │ │ ├── TOTAL_CACHE.json
+ 4.0K   │ │ ├── TOTAL.json
+ 4.0K   │ │ ├── INDEX.json.zstd.bsum
+ 4.0K   │ │ ├── INDEX.json.xz.bsum
+ 4.0K   │ │ ├── INDEX.json.bsum
+ 4.0K   │ │ ├── INDEX.db.zstd.bsum
+ 4.0K   │ │ ├── INDEX.db.xz.bsum
+ 4.0K   │ │ ├── INDEX.db.bsum
+ 4.0K   │ │ └── GH_REPO_ARCHIVED.md
+ 356K   │ └─┬ scripts
+ 204K   │   ├─┬ archived
+  52K   │   │ ├── pkgcache_.github_scripts.7z
+  36K   │   │ ├── sbuild_runner.sh
+  24K   │   │ ├── upload_to_r2.sh
+  20K   │   │ ├── sbuild_linter.sh
+  16K   │   │ ├── gen_meta_aio_x86_64-Linux_web.sh
+  16K   │   │ ├── gen_meta_aio_aarch64-Linux_web.sh
+  12K   │   │ ├── gen_meta_aio_x86_64-Linux.sh
+  12K   │   │ ├── gen_meta_aio_aarch64-Linux.sh
+  12K   │   │ └── add_to_ghcr.sh
+  28K   │   ├── sbuild_creator.sh
+  28K   │   ├── github_fetcher.sh
+  28K   │   ├── gen_meta.sh
+  20K   │   ├── gen_meta_index.sh
+  12K   │   ├── gen_meta_docker.sh
+ 8.0K   │   ├── scrape_pub_issues_packages.sh
+ 8.0K   │   ├── scrape_pub_issues_binaries.sh
+ 8.0K   │   ├── repology_fetcher.sh
+ 4.0K   │   ├── gen_ghcr_backage.sh
+ 4.0K   │   └── gen_diff.sh
+ 8.1M   ├─┬ pkgcache
+ 7.9M   │ ├─┬ data
+ 1.3M   │ │ ├── x86_64-Linux.json
+ 1.2M   │ │ ├── x86_64-Linux.db
+ 1.2M   │ │ ├── x86_64-Linux.sdb
+ 744K   │ │ ├── aarch64-Linux.db
+ 728K   │ │ ├── aarch64-Linux.json
+ 684K   │ │ ├── aarch64-Linux.sdb
+ 168K   │ │ ├── x86_64-Linux.sdb.cba
+ 144K   │ │ ├── x86_64-Linux.json.cba
+ 144K   │ │ ├── x86_64-Linux.db.cba
+ 140K   │ │ ├── x86_64-Linux.sdb.zstd
+ 132K   │ │ ├── x86_64-Linux.db.zstd
+ 128K   │ │ ├── x86_64-Linux.sdb.xz
+ 120K   │ │ ├── x86_64-Linux.db.xz
+ 116K   │ │ ├── x86_64-Linux.json.zstd
+ 112K   │ │ ├── x86_64-Linux.json.xz
+ 100K   │ │ ├── aarch64-Linux.sdb.cba
+  88K   │ │ ├── aarch64-Linux.json.cba
+  88K   │ │ ├── aarch64-Linux.db.cba
+  84K   │ │ ├── aarch64-Linux.sdb.zstd
+  80K   │ │ ├── aarch64-Linux.db.zstd
+  76K   │ │ ├── aarch64-Linux.sdb.xz
+  72K   │ │ ├── aarch64-Linux.db.xz
+  68K   │ │ ├── aarch64-Linux.json.zstd
+  64K   │ │ ├── riscv64-Linux.sdb
+  64K   │ │ ├── aarch64-Linux.json.xz
+  32K   │ │ ├── riscv64-Linux.db
+  28K   │ │ ├── riscv64-Linux.json
+ 8.0K   │ │ ├── riscv64-Linux.sdb.zstd
+ 8.0K   │ │ ├── riscv64-Linux.sdb.xz
+ 8.0K   │ │ ├── riscv64-Linux.sdb.cba
+ 8.0K   │ │ ├── riscv64-Linux.json.cba
+ 8.0K   │ │ ├── riscv64-Linux.db.zstd
+ 8.0K   │ │ ├── riscv64-Linux.db.xz
+ 8.0K   │ │ ├── riscv64-Linux.db.cba
+ 4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
+ 4.0K   │ │ ├── x86_64-Linux.sdb.bsum
+ 4.0K   │ │ ├── x86_64-Linux.json.zstd.bsum
+ 4.0K   │ │ ├── x86_64-Linux.json.xz.bsum
+ 4.0K   │ │ ├── x86_64-Linux.json.bsum
+ 4.0K   │ │ ├── x86_64-Linux.db.zstd.bsum
+ 4.0K   │ │ ├── x86_64-Linux.db.xz.bsum
+ 4.0K   │ │ ├── x86_64-Linux.db.bsum
+ 4.0K   │ │ ├── riscv64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ ├── riscv64-Linux.sdb.xz.bsum
+ 4.0K   │ │ ├── riscv64-Linux.sdb.bsum
+ 4.0K   │ │ ├── riscv64-Linux.json.zstd.bsum
+ 4.0K   │ │ ├── riscv64-Linux.json.zstd
+ 4.0K   │ │ ├── riscv64-Linux.json.xz.bsum
+ 4.0K   │ │ ├── riscv64-Linux.json.xz
+ 4.0K   │ │ ├── riscv64-Linux.json.bsum
+ 4.0K   │ │ ├── riscv64-Linux.db.zstd.bsum
+ 4.0K   │ │ ├── riscv64-Linux.db.xz.bsum
+ 4.0K   │ │ ├── riscv64-Linux.db.bsum
+ 4.0K   │ │ ├── minisign.pub
+ 4.0K   │ │ ├── aarch64-Linux.sdb.zstd.bsum
+ 4.0K   │ │ ├── aarch64-Linux.sdb.xz.bsum
+ 4.0K   │ │ ├── aarch64-Linux.sdb.bsum
+ 4.0K   │ │ ├── aarch64-Linux.json.zstd.bsum
+ 4.0K   │ │ ├── aarch64-Linux.json.xz.bsum
+ 4.0K   │ │ ├── aarch64-Linux.json.bsum
+ 4.0K   │ │ ├── aarch64-Linux.db.zstd.bsum
+ 4.0K   │ │ ├── aarch64-Linux.db.xz.bsum
+ 4.0K   │ │ ├── aarch64-Linux.db.bsum
+ 4.0K   │ │ └── TOTAL.json
+ 188K   │ └─┬ scripts
+  52K   │   ├─┬ archived
+  48K   │   │ └── healthchecks.yaml
+  40K   │   ├── gen_meta_x86_64-Linux.sh
+  40K   │   ├── gen_meta_riscv64-Linux.sh
+  40K   │   ├── gen_meta_aarch64-Linux.sh
+  12K   │   └── sync_hf_mirror.sh
+ 2.5M   ├─┬ completions
+ 1.2M   │ ├── ALL_x86_64-Linux.txt
+ 608K   │ ├── ALL_aarch64-Linux.txt
+ 524K   │ ├── PKG_NAME_ONLY_x86_64-Linux.txt
+ 252K   │ └── PKG_NAME_ONLY_aarch64-Linux.txt
+ 980K   ├── PKG_STATUS.md
+ 320K   ├─┬ web
+ 164K   │ ├─┬ cloudflare
+  88K   │ │ ├─┬ src
+  48K   │ │ │ ├── config.ts
+  16K   │ │ │ ├── static.ts
+  12K   │ │ │ ├── render.ts
+ 4.0K   │ │ │ ├── types.ts
+ 4.0K   │ │ │ └── index.ts
+  52K   │ │ ├── package-lock.json
+  12K   │ │ ├── tsconfig.json
+ 4.0K   │ │ ├── wrangler.toml
+ 4.0K   │ │ └── package.json
+ 152K   │ └─┬ assets
+  40K   │   ├── icon_package_multi.png
+  36K   │   ├── icon_server.png
+  28K   │   ├── icon_database.png
+  24K   │   ├── icon_config_multi.png
+  20K   │   └── icon_json.png
+ 312K   ├── GHCR_PKGS.json.zstd
+  28K   ├─┬ r2
+  12K   │ ├─┬ scripts
+ 8.0K   │ │ └── sync_r2_mirror.sh
+  12K   │ └─┬ data
+ 8.0K   │   └── PKG_LIST.txt
+  16K   ├─┬ workers
+  12K   │ └─┬ omni-redirector-pkgforge-dev
+ 8.0K   │   └── worker.js
+  12K   ├── README.md
+ 4.0K   ├── TOTAL_INSTALLABLE.json
+ 4.0K   ├── TOTAL_ALL.json
+ 4.0K   ├── PKG_STATUS_SUM.md
+ 4.0K   ├── PKG_STATUS_SUM.json
+ 4.0K   └── LICENSE
+```

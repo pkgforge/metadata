@@ -1,0 +1,59 @@
+name: 🔎 Check Versions 🧬
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 0 * * *" #12:30 AM UTC --> 06:15 AM NPT
+
+jobs:
+  versionChecker:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: main
+          filter: "blob:none"
+          
+      - name: Setup Env
+        run: |
+          ##presets
+          set +x ; set +e
+          #-------------#
+          ##CoreUtils
+          sudo apt update -y -qq
+          sudo apt install bc coreutils curl dos2unix fdupes jq moreutils rsync util-linux wget -y -qq
+          #temp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Version Checker
+        run: |
+          ##presets
+          set +x ; set +e
+          #-------------#
+          echo '- ### Empty/Non-Existent' > "${SYSTMP}/VERSION.md"
+          jq -r '["| Package | SBUILD |", "|----------|----------|"] + (map(select(type == "object" and .version != null and ((.version | length == 0) or .version == null) and ._disabled == "false")) | map("| \(.pkg) | \(.build_script) |")) | .[]' "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json" | awk '!seen[$0]++' >> "${SYSTMP}/VERSION.md"
+          echo -e '---\n' >> "${SYSTMP}/VERSION.md"
+          echo -e '- ### Only Words' >> "${SYSTMP}/VERSION.md"
+          jq -r '["| Package | Version |", "|----------|----------|"] + (map(select(type == "object" and (.version | type == "string" and test("^[a-zA-Z-_+.]+$")) and ._disabled == "false")) | map("| [\(.pkg)](\(.build_script)) | \(.version) |")) | .[]' "${GITHUB_WORKSPACE}/main/soarpkgs/data/INDEX.json" | awk '!seen[$0]++' >> "${SYSTMP}/VERSION.md"
+          echo -e '---\n' >> "${SYSTMP}/VERSION.md"
+          ##Check
+          if [[ $(sed '/^[[:space:]]*$/d' "${SYSTMP}/VERSION.md" | wc -l) -gt 8 ]]; then
+            echo "HAS_RESULTS=TRUE" >> "${GITHUB_ENV}"
+          else
+            echo -e "\n\n" && cat "${SYSTMP}/VERSION.md" && echo -e "\n\n"
+          fi
+        continue-on-error: true
+
+      - name: Create Issue From File
+        if: env.HAS_RESULTS == 'TRUE'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: SBUILDS (Empty/Non-Existent/Weird Versions)
+          content-filepath: "/tmp/VERSION.md"
+          labels: report, automated issue
+        continue-on-error: false

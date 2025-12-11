@@ -644,79 +644,6 @@
     ]
   },
   {
-    "_disabled": "false",
-    "pkg": "element-desktop",
-    "pkg_family": "element-desktop",
-    "pkg_id": "runimage.alpine.element-desktop",
-    "pkg_type": "runimage",
-    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/element-desktop/element-desktop/element-desktop",
-    "app_id": "im.riot.Riot",
-    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/element-desktop/runimage.alpine.stable.yaml",
-    "category": [
-      "Utility"
-    ],
-    "description": "A glossy Matrix collaboration client for desktop",
-    "distro_pkg": {
-      "alpine": [
-        "element-desktop",
-        "element-web"
-      ],
-      "archlinux": {
-        "aur": [
-          "element-desktop-git",
-          "element-desktop-nightly-bin",
-          "riot-web-develop-bin",
-          "riot-web-develop-git"
-        ],
-        "extra": [
-          "element.io"
-        ]
-      },
-      "homebrew": [
-        "element"
-      ],
-      "nixpkgs": [
-        "element-desktop"
-      ]
-    },
-    "download_url": "https://soarpkgs.pkgforge.dev/packages/element-desktop/runimage.alpine.stable.yaml",
-    "homepage": [
-      "https://github.com/element-hq/element-desktop"
-    ],
-    "host": [
-      "aarch64-linux",
-      "x86_64-linux"
-    ],
-    "icon": "https://soarpkgs.pkgforge.dev/packages/element-desktop/assets/default.png",
-    "license": [
-      "GPL-3.0"
-    ],
-    "maintainer": [
-      "Azathothas (https://github.com/Azathothas)"
-    ],
-    "note": [
-      "[DO NOT RUN] (Meant for pkgforge CI Only)",
-      "Built Using RunImage [alpine]. Check/Report @ https://github.com/VHSgunzo/runimage",
-      "Learn more @ https://docs.pkgforge.dev/formats/packages/runimage",
-      "[PORTABLE] (Works on AnyLinux)"
-    ],
-    "pkgcache": "ghcr.io/pkgforge/pkgcache/element-desktop/runimage/alpine",
-    "provides": [
-      "element-desktop:riot-desktop"
-    ],
-    "repology": [
-      "element-desktop"
-    ],
-    "src_url": [
-      "https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/testing/element-desktop"
-    ],
-    "tag": [
-      "chat",
-      "matrix"
-    ],
-    "version": "1.12.3"
-  },
-  {
     "_disabled": "true",
     "_disabled_reason": {
       "broken": [
@@ -2115,6 +2042,68 @@
       "downloader"
     ],
     "version": "32.2.0"
+  },
+  {
+    "_disabled": "false",
+    "pkg": "wrangler",
+    "pkg_family": "wrangler",
+    "pkg_id": "sharun.wrappe.npm.wrangler",
+    "pkg_type": "archive",
+    "pkg_webpage": "https://pkgs.pkgforge.dev/repo/soarpkgs/npm-wrangler/wrangler/wrangler",
+    "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/wrangler/archive.sharun.npm.yaml",
+    "category": [
+      "Utility"
+    ],
+    "description": "Command-line interface for all things Cloudflare Workers",
+    "distro_pkg": {
+      "archlinux": {
+        "extra": [
+          "wrangler"
+        ]
+      },
+      "homebrew": [
+        "wrangler"
+      ],
+      "nixpkgs": [
+        "wrangler"
+      ]
+    },
+    "download_url": "https://soarpkgs.pkgforge.dev/packages/wrangler/archive.sharun.npm.yaml",
+    "homepage": [
+      "https://developers.cloudflare.com/workers/cli-wrangler",
+      "https://github.com/cloudflare/workers-sdk"
+    ],
+    "host": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "license": [
+      "MIT"
+    ],
+    "maintainer": [
+      "Azathothas (https://github.com/Azathothas)"
+    ],
+    "note": [
+      "[DO NOT RUN] (Meant for pkgforge CI Only)",
+      "Built Using Sharun [npm]. Check/Report @ https://github.com/VHSgunzo/sharun",
+      "Learn more @ https://docs.pkgforge.dev/formats/packages/archive",
+      "[PORTABLE] (Works on AnyLinux)",
+      "[NO_DESKTOP_INTEGRATION] (Does not need desktop integration)"
+    ],
+    "pkgcache": "ghcr.io/pkgforge/pkgcache/wrangler/archive/sharun",
+    "provides": [
+      "wrangler"
+    ],
+    "repology": [
+      "wrangler"
+    ],
+    "src_url": [
+      "https://www.npmjs.com/package/wrangler"
+    ],
+    "tag": [
+      "Utility"
+    ],
+    "version": "4.45.4"
   },
   {
     "_disabled": "false",

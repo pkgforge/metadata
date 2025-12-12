@@ -1645,7 +1645,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.78.8** | https://github.com/dolthub/dolt |
+| BREW   | **1.79.0** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -2216,7 +2216,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.12.0 ⚠️ | https://github.com/FreeRDP/FreeRDP/releases/download/3.12.0/freerdp-3.12.0.tar.gz |
-| BREW   | **3.19.0** | https://www.freerdp.com/ |
+| BREW   | **3.19.1** | https://www.freerdp.com/ |
 
 *Outdated*
 
@@ -3603,7 +3603,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20240107 ⚠️ | https://github.com/xtaci/kcptun/archive/refs/tags/v20240107.tar.gz |
-| BREW   | **20251205** | https://github.com/xtaci/kcptun |
+| BREW   | **20251212** | https://github.com/xtaci/kcptun |
 
 *Outdated*
 
@@ -4203,7 +4203,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.4.124 ⚠️ | https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz |
-| BREW   | **2.4.130** | https://dri.freedesktop.org |
+| BREW   | **2.4.131** | https://dri.freedesktop.org |
 
 *Outdated*
 
@@ -5923,7 +5923,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.1.1732813678 ⚠️ | https://github.com/LuaJIT/LuaJIT/archive/19878ec05c239ccaf5f3d17af27670a963e25b8b.tar.gz |
-| BREW   | **2.1.1765007043** | https://luajit.org/luajit.html |
+| BREW   | **2.1.1765228720** | https://luajit.org/luajit.html |
 
 *Outdated*
 
@@ -6091,7 +6091,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.4.37 ⚠️ | https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.37.tar.gz |
-| BREW   | **0.5.1** | https://rust-lang.github.io/mdBook/ |
+| BREW   | **0.5.2** | https://rust-lang.github.io/mdBook/ |
 
 *Outdated*
 
@@ -6661,7 +6661,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.13.2** | https://ollama.com/ |
+| BREW   | **0.13.3** | https://ollama.com/ |
 
 *Outdated*
 
@@ -7639,7 +7639,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.14.8** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.14.9** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -7927,7 +7927,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5e3ad389ee56fca27c9705d093ae5387ce404df4 ⚠️ | https://github.com/KhronosGroup/SPIRV-Headers/archive/5e3ad389ee56fca27c9705d093ae5387ce404df4.tar.gz |
-| BREW   | **1.4.328.1** | https://github.com/KhronosGroup/SPIRV-Headers |
+| BREW   | **1.4.335.0** | https://github.com/KhronosGroup/SPIRV-Headers |
 
 *Outdated*
 
@@ -7949,7 +7949,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.309.0 ⚠️ | https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.4.309.0.tar.gz |
-| BREW   | **1.4.328.1** | https://github.com/KhronosGroup/SPIRV-Tools |
+| BREW   | **1.4.335.0** | https://github.com/KhronosGroup/SPIRV-Tools |
 
 *Outdated*
 
@@ -8816,7 +8816,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.319 ⚠️ | https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.4.319.tar.gz |
-| BREW   | **1.4.328.1** | https://github.com/KhronosGroup/Vulkan-Headers |
+| BREW   | **1.4.335.0** | https://github.com/KhronosGroup/Vulkan-Headers |
 
 *Outdated*
 

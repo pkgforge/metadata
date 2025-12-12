@@ -36,7 +36,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.2.62 ⚠️ | https://github.com/nektos/act/archive/refs/tags/v0.2.62.tar.gz |
-| BREW   | **0.2.82** | https://github.com/nektos/act |
+| BREW   | **0.2.83** | https://github.com/nektos/act |
 
 *Outdated*
 
@@ -47,7 +47,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.7.1 ⚠️ | https://github.com/rhysd/actionlint/archive/refs/tags/v1.7.1.tar.gz |
-| BREW   | **1.7.8** | https://rhysd.github.io/actionlint/ |
+| BREW   | **1.7.9** | https://rhysd.github.io/actionlint/ |
 
 *Outdated*
 
@@ -120,7 +120,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.16.0 ⚠️ | https://github.com/xyproto/algernon/archive/refs/tags/v1.16.0.tar.gz |
-| BREW   | **1.17.4** | https://github.com/xyproto/algernon |
+| BREW   | **1.17.5** | https://github.com/xyproto/algernon |
 
 *Outdated*
 
@@ -140,7 +140,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.1.1** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.2.2** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -151,7 +151,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.2.13 ⚠️ | https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.13.tar.bz2 |
-| BREW   | **1.2.14** | https://www.alsa-project.org/ |
+| BREW   | **1.2.15** | https://www.alsa-project.org/ |
 
 *Outdated*
 
@@ -286,7 +286,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.56.2 ⚠️ | https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.2.tar.xz |
-| BREW   | **2.58.1** | https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/ |
+| BREW   | **2.58.2** | https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/ |
 
 *Outdated*
 
@@ -406,7 +406,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 48.0 ⚠️ | https://download.gnome.org/sources/baobab/48/baobab-48.0.tar.xz |
-| BREW   | **49.0** | https://apps.gnome.org/Baobab/ |
+| BREW   | **49.1** | https://apps.gnome.org/Baobab/ |
 
 *Outdated*
 
@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.11.05 ⚠️ | null |
+| PPKG   | 2025.12.12 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -428,7 +428,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.2.37 ⚠️ | https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz |
-| BREW   | **5.3.3** | https://www.gnu.org/software/bash/ |
+| BREW   | **5.3.9** | https://www.gnu.org/software/bash/ |
 
 *Outdated*
 
@@ -450,7 +450,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/sharkdp/bat/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.26.0** | https://github.com/sharkdp/bat |
+| BREW   | **0.26.1** | https://github.com/sharkdp/bat |
 
 *Outdated*
 
@@ -528,7 +528,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 118 ⚠️ | https://github.com/WebAssembly/binaryen/archive/version_118.tar.gz |
-| BREW   | **124** | https://webassembly.org/ |
+| BREW   | **125** | https://webassembly.org/ |
 
 *Outdated*
 
@@ -539,7 +539,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.18.25 ⚠️ | https://downloads.isc.org/isc/bind9/9.18.25/bind-9.18.25.tar.xz |
-| BREW   | **9.20.15** | https://www.isc.org/bind/ |
+| BREW   | **9.20.16** | https://www.isc.org/bind/ |
 
 *Outdated*
 
@@ -565,6 +565,17 @@
 
 *Outdated*
 
+## binsider
+
+**Description:** A command-line tool to analyze ELF binaries
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.2.1 ⚠️ | https://github.com/orhun/binsider/archive/refs/tags/v0.2.1.tar.gz |
+| BREW   | **0.3.0** | https://binsider.dev/ |
+
+*Outdated*
+
 ## binutils
 
 **Description:** GNU binary tools for native development
@@ -572,7 +583,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.43.1 ⚠️ | https://ftp.gnu.org/gnu/binutils/binutils-2.43.1.tar.xz |
-| BREW   | **2.45** | https://www.gnu.org/software/binutils/binutils.html |
+| BREW   | **2.45.1** | https://www.gnu.org/software/binutils/binutils.html |
 
 *Outdated*
 
@@ -632,7 +643,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20250308 ⚠️ | https://www.crufty.net/ftp/pub/sjg/bmake-20250308.tar.gz |
-| BREW   | **20250804** | https://www.crufty.net/help/sjg/bmake.html |
+| BREW   | **20251111** | https://www.crufty.net/help/sjg/bmake.html |
 
 *Outdated*
 
@@ -665,7 +676,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.2 ⚠️ | https://github.com/ClementTsang/bottom/archive/refs/tags/0.10.2.tar.gz |
-| BREW   | **0.11.2** | https://clementtsang.github.io/bottom/ |
+| BREW   | **0.11.4** | https://clementtsang.github.io/bottom/ |
 
 *Outdated*
 
@@ -698,7 +709,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.44.6 ⚠️ | https://github.com/Canop/broot/archive/refs/tags/v1.44.6.tar.gz |
-| BREW   | **1.52.0** | https://dystroy.org/broot/ |
+| BREW   | **1.54.0** | https://dystroy.org/broot/ |
 
 *Outdated*
 
@@ -729,7 +740,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.52.1 ⚠️ | https://github.com/bufbuild/buf/archive/refs/tags/v1.52.1.tar.gz |
-| BREW   | **1.59.0** | https://github.com/bufbuild/buf |
+| BREW   | **1.61.0** | https://github.com/bufbuild/buf |
 
 *Outdated*
 
@@ -802,7 +813,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.1 ⚠️ | https://github.com/EmbarkStudios/cargo-about/archive/refs/tags/0.7.1.tar.gz |
-| BREW   | **0.8.2** | https://github.com/EmbarkStudios/cargo-about |
+| BREW   | **0.8.4** | https://github.com/EmbarkStudios/cargo-about |
 
 *Outdated*
 
@@ -813,7 +824,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.10.0 ⚠️ | https://github.com/frewsxcv/cargo-all-features/archive/refs/tags/1.10.0.tar.gz |
-| BREW   | **1.11.0** | https://github.com/frewsxcv/cargo-all-features |
+| BREW   | **1.12.0** | https://github.com/frewsxcv/cargo-all-features |
 
 *Outdated*
 
@@ -824,7 +835,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.6.6 ⚠️ | https://github.com/rust-secure-code/cargo-auditable/archive/refs/tags/v0.6.6.tar.gz |
-| BREW   | **0.7.1** | https://github.com/rust-secure-code/cargo-auditable |
+| BREW   | **0.7.2** | https://github.com/rust-secure-code/cargo-auditable |
 
 *Outdated*
 
@@ -857,7 +868,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.23.3 ⚠️ | https://github.com/cargo-generate/cargo-generate/archive/refs/tags/v0.23.3.tar.gz |
-| BREW   | **0.23.5** | https://github.com/cargo-generate/cargo-generate |
+| BREW   | **0.23.7** | https://github.com/cargo-generate/cargo-generate |
 
 *Outdated*
 
@@ -910,7 +921,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.99 ⚠️ | https://github.com/nextest-rs/nextest/archive/refs/tags/cargo-nextest-0.9.99.tar.gz |
-| BREW   | **0.9.111** | https://nexte.st |
+| BREW   | **0.9.114** | https://nexte.st |
 
 *Outdated*
 
@@ -931,8 +942,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.7.0 ✅ | https://github.com/posva/catimg/archive/2.7.0.tar.gz |
-| BREW   | 2.7.0 | https://github.com/posva/catimg |
+| PPKG   | 2.7.0 ⚠️ | https://github.com/posva/catimg/archive/2.7.0.tar.gz |
+| BREW   | **2.8.0** | https://github.com/posva/catimg |
+
+*Outdated*
 
 ## cbindgen
 
@@ -950,7 +963,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.10.2 ⚠️ | https://github.com/ccache/ccache/releases/download/v4.10.2/ccache-4.10.2.tar.xz |
-| BREW   | **4.12.1** | https://ccache.dev/ |
+| BREW   | **4.12.2** | https://ccache.dev/ |
 
 *Outdated*
 
@@ -1021,7 +1034,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.16.1 ⚠️ | https://hpjansson.org/chafa/releases/chafa-1.16.1.tar.xz |
-| BREW   | **1.16.2** | https://hpjansson.org/chafa/ |
+| BREW   | **1.18.0** | https://hpjansson.org/chafa/ |
 
 *Outdated*
 
@@ -1050,7 +1063,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.54.0 ⚠️ | https://github.com/twpayne/chezmoi/archive/refs/tags/v2.54.0.tar.gz |
-| BREW   | **2.67.0** | https://chezmoi.io/ |
+| BREW   | **2.68.1** | https://chezmoi.io/ |
 
 *Outdated*
 
@@ -1092,7 +1105,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.16.15 ⚠️ | https://github.com/cilium/cilium-cli/archive/refs/tags/v0.16.15.tar.gz |
-| BREW   | **0.18.8** | https://cilium.io |
+| BREW   | **0.18.9** | https://cilium.io |
 
 *Outdated*
 
@@ -1132,7 +1145,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.31.8 ⚠️ | https://github.com/Kitware/CMake/releases/download/v3.31.8/cmake-3.31.8.tar.gz |
-| BREW   | **4.1.2** | https://www.cmake.org/ |
+| BREW   | **4.2.1** | https://www.cmake.org/ |
 
 *Outdated*
 
@@ -1163,7 +1176,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.1.7 ⚠️ | https://gitlab.com/cmocka/cmocka/-/archive/cmocka-1.1.7/cmocka-cmocka-1.1.7.tar.gz |
-| BREW   | **1.1.8** | https://cmocka.org/ |
+| BREW   | **2.0.0** | https://cmocka.org/ |
 
 *Outdated*
 
@@ -1185,7 +1198,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.105.1** | https://github.com/microsoft/vscode |
+| BREW   | **1.107.0** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -1207,7 +1220,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.4 ⚠️ | https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.xz |
-| BREW   | **9.8** | https://www.gnu.org/software/coreutils/ |
+| BREW   | **9.9** | https://www.gnu.org/software/coreutils/ |
 
 *Outdated*
 
@@ -1238,7 +1251,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.27.0** | https://github.com/yhirose/cpp-httplib |
+| BREW   | **0.28.0** | https://github.com/yhirose/cpp-httplib |
 
 *Outdated*
 
@@ -1309,7 +1322,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 10.0.11 ⚠️ | https://github.com/schollz/croc/archive/refs/tags/v10.0.11.tar.gz |
-| BREW   | **10.2.7** | https://github.com/schollz/croc |
+| BREW   | **10.3.1** | https://github.com/schollz/croc |
 
 *Outdated*
 
@@ -1331,7 +1344,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.14.4 ⚠️ | https://github.com/containers/crun/releases/download/1.14.4/crun-1.14.4.tar.xz |
-| BREW   | **1.24** | https://github.com/containers/crun |
+| BREW   | **1.25.1** | https://github.com/containers/crun |
 
 *Outdated*
 
@@ -1371,7 +1384,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.8.1 ⚠️ | https://github.com/cue-lang/cue/archive/refs/tags/v0.8.1.tar.gz |
-| BREW   | **0.14.2** | https://cuelang.org/ |
+| BREW   | **0.15.1** | https://cuelang.org/ |
 
 *Outdated*
 
@@ -1393,7 +1406,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.4.11 ⚠️ | https://github.com/OpenPrinting/cups/releases/download/v2.4.11/cups-2.4.11-source.tar.gz |
-| BREW   | **2.4.14** | https://github.com/OpenPrinting/cups |
+| BREW   | **2.4.16** | https://github.com/OpenPrinting/cups |
 
 *Outdated*
 
@@ -1404,7 +1417,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.14.1 ⚠️ | https://curl.haxx.se/download/curl-8.14.1.tar.bz2 |
-| BREW   | **8.16.0** | https://curl.se |
+| BREW   | **8.17.0** | https://curl.se |
 
 *Outdated*
 
@@ -1508,7 +1521,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.57.0 ⚠️ | https://github.com/Wilfred/difftastic/archive/refs/tags/0.57.0.tar.gz |
-| BREW   | **0.65.0** | https://github.com/Wilfred/difftastic |
+| BREW   | **0.67.0** | https://github.com/Wilfred/difftastic |
 
 *Outdated*
 
@@ -1529,8 +1542,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.8.0 ✅ | https://github.com/sharkdp/diskus/archive/refs/tags/v0.8.0.tar.gz |
-| BREW   | 0.8.0 | https://github.com/sharkdp/diskus |
+| PPKG   | 0.8.0 ⚠️ | https://github.com/sharkdp/diskus/archive/refs/tags/v0.8.0.tar.gz |
+| BREW   | **0.9.0** | https://github.com/sharkdp/diskus |
+
+*Outdated*
 
 ## distcc
 
@@ -1568,7 +1583,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.15.1 ⚠️ | https://github.com/dnote/dnote/archive/refs/tags/cli-v0.15.1.tar.gz |
-| BREW   | **0.15.5** | https://www.getdnote.com |
+| BREW   | **0.16.0** | https://www.getdnote.com |
 
 *Outdated*
 
@@ -1597,7 +1612,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.2.1 ⚠️ | https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.2.1.tar.gz |
-| BREW   | **1.2.2** | https://github.com/projectdiscovery/dnsx |
+| BREW   | **1.2.3** | https://github.com/projectdiscovery/dnsx |
 
 *Outdated*
 
@@ -1630,7 +1645,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.76.4** | https://github.com/dolthub/dolt |
+| BREW   | **1.78.8** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -1683,7 +1698,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.8.2 ⚠️ | https://github.com/devmatteini/dra/archive/refs/tags/0.8.2.tar.gz |
-| BREW   | **0.9.0** | https://github.com/devmatteini/dra |
+| BREW   | **0.10.0** | https://github.com/devmatteini/dra |
 
 *Outdated*
 
@@ -1705,7 +1720,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.0 ⚠️ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
-| BREW   | **0.5.4** | https://github.com/robertpsoane/ducker |
+| BREW   | **0.5.5** | https://github.com/robertpsoane/ducker |
 
 *Outdated*
 
@@ -1778,7 +1793,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.20.1 ⚠️ | https://ftp.gnu.org/gnu/ed/ed-1.20.1.tar.lz |
-| BREW   | **1.22.2** | https://www.gnu.org/software/ed/ed.html |
+| BREW   | **1.22.3** | https://www.gnu.org/software/ed/ed.html |
 
 *Outdated*
 
@@ -1789,7 +1804,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookexperimental/edencommon/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.03.00** | https://github.com/facebookexperimental/edencommon |
+| BREW   | **2025.11.10.00** | https://github.com/facebookexperimental/edencommon |
 
 *Outdated*
 
@@ -1860,7 +1875,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.20.2 ⚠️ | https://github.com/evanw/esbuild/archive/refs/tags/v0.20.2.tar.gz |
-| BREW   | **0.25.12** | https://esbuild.github.io/ |
+| BREW   | **0.27.1** | https://esbuild.github.io/ |
 
 *Outdated*
 
@@ -1966,7 +1981,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.50.2 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.50.2.tar.gz |
-| BREW   | **2.54.0** | https://github.com/fastfetch-cli/fastfetch |
+| BREW   | **2.56.0** | https://github.com/fastfetch-cli/fastfetch |
 
 *Outdated*
 
@@ -1977,7 +1992,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fb303/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.03.00** | https://github.com/facebook/fb303 |
+| BREW   | **2025.11.10.00** | https://github.com/facebook/fb303 |
 
 *Outdated*
 
@@ -1988,7 +2003,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fbthrift/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.03.00** | https://github.com/facebook/fbthrift |
+| BREW   | **2025.11.10.00** | https://github.com/facebook/fbthrift |
 
 *Outdated*
 
@@ -2049,10 +2064,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 7.1.1 ⚠️ | https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz |
-| BREW   | **8.0** | https://ffmpeg.org/ |
-
-*Outdated*
+| PPKG   | 8.0.1 ✅ | https://ffmpeg.org/releases/ffmpeg-8.0.1.tar.xz |
+| BREW   | 8.0.1 | https://ffmpeg.org/ |
 
 ## fftw
 
@@ -2101,7 +2114,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/fizz/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.03.00** | https://github.com/facebookincubator/fizz |
+| BREW   | **2025.11.10.00** | https://github.com/facebookincubator/fizz |
 
 *Outdated*
 
@@ -2203,7 +2216,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.12.0 ⚠️ | https://github.com/FreeRDP/FreeRDP/releases/download/3.12.0/freerdp-3.12.0.tar.gz |
-| BREW   | **3.17.2** | https://www.freerdp.com/ |
+| BREW   | **3.19.0** | https://www.freerdp.com/ |
 
 *Outdated*
 
@@ -2214,7 +2227,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.3.2 ⚠️ | https://github.com/dyne/frei0r/archive/refs/tags/v2.3.2.tar.gz |
-| BREW   | **2.5.0** | https://frei0r.dyne.org/ |
+| BREW   | **2.5.1** | https://frei0r.dyne.org/ |
 
 *Outdated*
 
@@ -2234,7 +2247,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.8.5 ⚠️ | https://github.com/jhspetersson/fselect/archive/refs/tags/0.8.5.tar.gz |
-| BREW   | **0.9.0** | https://github.com/jhspetersson/fselect |
+| BREW   | **0.9.2** | https://github.com/jhspetersson/fselect |
 
 *Outdated*
 
@@ -2256,7 +2269,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.13 ⚠️ | https://github.com/containers/fuse-overlayfs/archive/refs/tags/v1.13.tar.gz |
-| BREW   | **1.15** | https://github.com/containers/fuse-overlayfs |
+| BREW   | **1.16** | https://github.com/containers/fuse-overlayfs |
 
 *Outdated*
 
@@ -2267,7 +2280,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | https://github.com/antonmedv/fx/archive/refs/tags/35.0.0.tar.gz |
-| BREW   | **39.1.0** | https://fx.wtf |
+| BREW   | **39.2.0** | https://fx.wtf |
 
 *Outdated*
 
@@ -2278,7 +2291,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.62.0 ⚠️ | https://github.com/junegunn/fzf/archive/refs/tags/v0.62.0.tar.gz |
-| BREW   | **0.66.1** | https://github.com/junegunn/fzf |
+| BREW   | **0.67.0** | https://github.com/junegunn/fzf |
 
 *Outdated*
 
@@ -2311,7 +2324,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.17.0 ⚠️ | https://github.com/koki-develop/gat/archive/refs/tags/v0.17.0.tar.gz |
-| BREW   | **0.25.4** | https://github.com/koki-develop/gat |
+| BREW   | **0.25.8** | https://github.com/koki-develop/gat |
 
 *Outdated*
 
@@ -2409,7 +2422,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.27.0 ⚠️ | https://github.com/dundee/gdu/archive/refs/tags/v5.27.0.tar.gz |
-| BREW   | **5.31.0** | https://github.com/dundee/gdu |
+| BREW   | **5.32.0** | https://github.com/dundee/gdu |
 
 *Outdated*
 
@@ -2429,7 +2442,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | r2.5 ⚠️ | https://github.com/geographiclib/geographiclib/archive/refs/tags/r2.5.tar.gz |
-| BREW   | **2.6** | https://geographiclib.sourceforge.io/ |
+| BREW   | **2.7** | https://geographiclib.sourceforge.io/ |
 
 *Outdated*
 
@@ -2451,7 +2464,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.2 ⚠️ | https://github.com/gogf/gf/archive/refs/tags/v2.7.2.tar.gz |
-| BREW   | **2.9.4** | https://goframe.org |
+| BREW   | **2.9.6** | https://goframe.org |
 
 *Outdated*
 
@@ -2462,7 +2475,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.76.0 ⚠️ | https://github.com/cli/cli/archive/refs/tags/v2.76.0.tar.gz |
-| BREW   | **2.83.0** | https://cli.github.com/ |
+| BREW   | **2.83.2** | https://cli.github.com/ |
 
 *Outdated*
 
@@ -2495,7 +2508,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.16.2 ⚠️ | https://github.com/tcnksm/ghr/archive/refs/tags/v0.16.2.tar.gz |
-| BREW   | **0.17.0** | https://deeeet.com/ghr/ |
+| BREW   | **0.17.0** | https://github.com/tcnksm/ghr |
 
 *Outdated*
 
@@ -2537,7 +2550,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.50.0 ⚠️ | https://www.kernel.org/pub/software/scm/git/git-2.50.0.tar.xz |
-| BREW   | **2.51.2** | https://git-scm.com |
+| BREW   | **2.52.0** | https://git-scm.com |
 
 *Outdated*
 
@@ -2570,7 +2583,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.37.0 ⚠️ | https://github.com/Byron/gitoxide/archive/refs/tags/v0.37.0.tar.gz |
-| BREW   | **0.46.0** | https://github.com/GitoxideLabs/gitoxide |
+| BREW   | **0.47.0** | https://github.com/GitoxideLabs/gitoxide |
 
 *Outdated*
 
@@ -2621,7 +2634,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.84.3 ⚠️ | https://download.gnome.org/sources/glib/2.84/glib-2.84.3.tar.xz |
-| BREW   | **2.86.1** | https://docs.gtk.org/glib/ |
+| BREW   | **2.86.3** | https://docs.gtk.org/glib/ |
 
 *Outdated*
 
@@ -2672,7 +2685,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 15.1.0 ⚠️ | https://github.com/KhronosGroup/glslang/archive/refs/tags/15.1.0.tar.gz |
-| BREW   | **16.0.0** | https://www.khronos.org/opengles/sdk/Reference-Compiler/ |
+| BREW   | **16.1.0** | https://www.khronos.org/opengles/sdk/Reference-Compiler/ |
 
 *Outdated*
 
@@ -2741,7 +2754,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.8.4 ⚠️ | https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.4.tar.xz |
-| BREW   | **3.8.10** | https://gnutls.org/ |
+| BREW   | **3.8.11** | https://gnutls.org/ |
 
 *Outdated*
 
@@ -2773,8 +2786,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.12.17 ✅ | https://github.com/itchyny/gojq/archive/refs/tags/v0.12.17.tar.gz |
-| BREW   | 0.12.17 | https://github.com/itchyny/gojq |
+| PPKG   | 0.12.17 ⚠️ | https://github.com/itchyny/gojq/archive/refs/tags/v0.12.17.tar.gz |
+| BREW   | **0.12.18** | https://github.com/itchyny/gojq |
+
+*Outdated*
 
 ## google-authenticator-libpam
 
@@ -2825,7 +2840,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.1 ⚠️ | https://github.com/goreleaser/goreleaser/archive/refs/tags/v1.25.1.tar.gz |
-| BREW   | **2.12.7** | https://goreleaser.com/ |
+| BREW   | **2.13.1** | https://goreleaser.com/ |
 
 *Outdated*
 
@@ -2905,7 +2920,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.5 ⚠️ | https://github.com/gptscript-ai/gptscript/archive/refs/tags/v0.9.5.tar.gz |
-| BREW   | **0.9.6** | https://docs.gptscript.ai/ |
+| BREW   | **0.9.7** | https://docs.gptscript.ai/ |
 
 *Outdated*
 
@@ -2945,7 +2960,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 13.0.1 ⚠️ | https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.0.1/graphviz-13.0.1.tar.xz |
-| BREW   | **14.0.2** | https://graphviz.org/ |
+| BREW   | **14.1.0** | https://graphviz.org/ |
 
 *Outdated*
 
@@ -2964,8 +2979,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.4.5 ✅ | https://github.com/pemistahl/grex/archive/v1.4.5.tar.gz |
-| BREW   | 1.4.5 | https://github.com/pemistahl/grex |
+| PPKG   | 1.4.5 ⚠️ | https://github.com/pemistahl/grex/archive/v1.4.5.tar.gz |
+| BREW   | **1.4.6** | https://github.com/pemistahl/grex |
+
+*Outdated*
 
 ## groff
 
@@ -3014,7 +3031,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.26.2 ⚠️ | https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.26.2/gstreamer-1.26.2.tar.bz2 |
-| BREW   | **1.26.7** | https://gstreamer.freedesktop.org/ |
+| BREW   | **1.26.9** | https://gstreamer.freedesktop.org/ |
 
 *Outdated*
 
@@ -3036,7 +3053,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.18.6 ⚠️ | https://download.gnome.org/sources/gtk/4.18/gtk-4.18.6.tar.xz |
-| BREW   | **4.20.2** | https://gtk.org/ |
+| BREW   | **4.20.3** | https://gtk.org/ |
 
 *Outdated*
 
@@ -3047,7 +3064,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.9 ⚠️ | https://ftp.gnu.org/gnu/guile/guile-3.0.9.tar.xz |
-| BREW   | **3.0.10** | https://www.gnu.org/software/guile/ |
+| BREW   | **3.0.11** | https://www.gnu.org/software/guile/ |
 
 *Outdated*
 
@@ -3122,7 +3139,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.4 ⚠️ | https://github.com/helm/helm/archive/refs/tags/v3.15.4.tar.gz |
-| BREW   | **3.19.0** | https://helm.sh/ |
+| BREW   | **4.0.2** | https://helm.sh/ |
 
 *Outdated*
 
@@ -3198,7 +3215,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.38.0 ⚠️ | https://github.com/sol/hpack/archive/refs/tags/0.38.0.tar.gz |
-| BREW   | **0.38.3** | https://github.com/sol/hpack |
+| BREW   | **0.39.1** | https://github.com/sol/hpack |
 
 *Outdated*
 
@@ -3238,7 +3255,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.6.3 ⚠️ | https://github.com/projectdiscovery/httpx/archive/refs/tags/v1.6.3.tar.gz |
-| BREW   | **1.7.1** | https://github.com/projectdiscovery/httpx |
+| BREW   | **1.7.4** | https://github.com/projectdiscovery/httpx |
 
 *Outdated*
 
@@ -3278,7 +3295,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.0.1 ⚠️ | https://github.com/Orange-OpenSource/hurl/archive/refs/tags/5.0.1.tar.gz |
-| BREW   | **7.0.0** | https://hurl.dev |
+| BREW   | **7.1.0** | https://hurl.dev |
 
 *Outdated*
 
@@ -3300,7 +3317,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.18.0 ⚠️ | https://github.com/sharkdp/hyperfine/archive/v1.18.0.tar.gz |
-| BREW   | **1.19.0** | https://github.com/sharkdp/hyperfine |
+| BREW   | **1.20.0** | https://github.com/sharkdp/hyperfine |
 
 *Outdated*
 
@@ -3342,7 +3359,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.1.1.47 ⚠️ | https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz |
-| BREW   | **7.1.2-8** | https://imagemagick.org/index.php |
+| BREW   | **7.1.2-10** | https://imagemagick.org/index.php |
 
 *Outdated*
 
@@ -3362,7 +3379,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.4 ⚠️ | https://linuxcontainers.org/downloads/incus/incus-6.4.tar.xz |
-| BREW   | **6.18** | https://linuxcontainers.org/incus |
+| BREW   | **6.19.1** | https://linuxcontainers.org/incus |
 
 *Outdated*
 
@@ -3422,7 +3439,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.18 ⚠️ | https://github.com/esnet/iperf/releases/download/3.18/iperf-3.18.tar.gz |
-| BREW   | **3.19.1** | https://github.com/esnet/iperf |
+| BREW   | **3.20** | https://github.com/esnet/iperf |
 
 *Outdated*
 
@@ -3443,8 +3460,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.18.0 ✅ | https://deb.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.18.0.orig.tar.xz |
-| BREW   | 4.18.0 | https://salsa.debian.org/iso-codes-team/iso-codes |
+| PPKG   | 4.18.0 ⚠️ | https://deb.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.18.0.orig.tar.xz |
+| BREW   | **4.19.0** | https://salsa.debian.org/iso-codes-team/iso-codes |
+
+*Outdated*
 
 ## itstool
 
@@ -3491,7 +3510,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.82.0** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.86.0** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -3502,7 +3521,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/martinvonz/jj/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.34.0** | https://github.com/jj-vcs/jj |
+| BREW   | **0.36.0** | https://github.com/jj-vcs/jj |
 
 *Outdated*
 
@@ -3584,7 +3603,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20240107 ⚠️ | https://github.com/xtaci/kcptun/archive/refs/tags/v20240107.tar.gz |
-| BREW   | **20250730** | https://github.com/xtaci/kcptun |
+| BREW   | **20251205** | https://github.com/xtaci/kcptun |
 
 *Outdated*
 
@@ -3595,7 +3614,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.2.2 ⚠️ | https://github.com/ilai-deutel/kibi/archive/v0.2.2.tar.gz |
-| BREW   | **0.3.1** | https://github.com/ilai-deutel/kibi |
+| BREW   | **0.3.2** | https://github.com/ilai-deutel/kibi |
 
 *Outdated*
 
@@ -3676,8 +3695,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.24.1 ✅ | https://github.com/jesseduffield/lazydocker/archive/refs/tags/v0.24.1.tar.gz |
-| BREW   | 0.24.1 | https://github.com/jesseduffield/lazydocker |
+| PPKG   | 0.24.1 ⚠️ | https://github.com/jesseduffield/lazydocker/archive/refs/tags/v0.24.1.tar.gz |
+| BREW   | **0.24.2** | https://github.com/jesseduffield/lazydocker |
+
+*Outdated*
 
 ## lazygit
 
@@ -3686,7 +3707,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.41.0 ⚠️ | https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz |
-| BREW   | **0.56.0** | https://github.com/jesseduffield/lazygit/ |
+| BREW   | **0.57.0** | https://github.com/jesseduffield/lazygit/ |
 
 *Outdated*
 
@@ -3697,7 +3718,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.9 ⚠️ | https://github.com/Lifailon/lazyjournal/archive/refs/tags/0.7.9.tar.gz |
-| BREW   | **0.8.1** | https://github.com/Lifailon/lazyjournal |
+| BREW   | **0.8.2** | https://github.com/Lifailon/lazyjournal |
 
 *Outdated*
 
@@ -3761,7 +3782,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.18 ⚠️ | https://github.com/wofr06/lesspipe/archive/refs/tags/v2.18.tar.gz |
-| BREW   | **2.20** | https://www-zeuthen.desy.de/~friebel/unix/lesspipe.html |
+| BREW   | **2.21** | https://www-zeuthen.desy.de/~friebel/unix/lesspipe.html |
 
 *Outdated*
 
@@ -3772,7 +3793,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.3.0 ⚠️ | https://github.com/lexbor/lexbor/archive/refs/tags/v2.3.0.tar.gz |
-| BREW   | **2.5.0** | https://lexbor.com/ |
+| BREW   | **2.6.0** | https://lexbor.com/ |
 
 *Outdated*
 
@@ -3783,7 +3804,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | r26 ⚠️ | https://github.com/gokcehan/lf/archive/r26.tar.gz |
-| BREW   | **38** | https://godoc.org/github.com/gokcehan/lf |
+| BREW   | **40** | https://godoc.org/github.com/gokcehan/lf |
 
 *Outdated*
 
@@ -3803,7 +3824,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.7.4 ⚠️ | https://download.gnome.org/sources/libadwaita/1.7/libadwaita-1.7.4.tar.xz |
-| BREW   | **1.8.1** | https://gnome.pages.gitlab.gnome.org/libadwaita/ |
+| BREW   | **1.8.2** | https://gnome.pages.gitlab.gnome.org/libadwaita/ |
 
 *Outdated*
 
@@ -3843,7 +3864,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.8.1 ⚠️ | https://www.libarchive.org/downloads/libarchive-3.8.1.tar.xz |
-| BREW   | **3.8.2** | https://www.libarchive.org |
+| BREW   | **3.8.4** | https://www.libarchive.org |
 
 *Outdated*
 
@@ -3883,7 +3904,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.8.2 ⚠️ | https://github.com/bdwgc/libatomic_ops/releases/download/v7.8.2/libatomic_ops-7.8.2.tar.gz |
-| BREW   | **7.8.4** | https://github.com/bdwgc/libatomic_ops/ |
+| BREW   | **7.10.0** | https://github.com/bdwgc/libatomic_ops/ |
 
 *Outdated*
 
@@ -4036,7 +4057,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20.1.8 ⚠️ | https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/libclc-20.1.8.src.tar.xz |
-| BREW   | **21.1.5** | https://libclc.llvm.org/ |
+| BREW   | **21.1.7** | https://libclc.llvm.org/ |
 
 *Outdated*
 
@@ -4106,8 +4127,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.2.13 ✅ | https://github.com/tlwg/libdatrie/releases/download/v0.2.13/libdatrie-0.2.13.tar.xz |
-| BREW   | 0.2.13 | https://github.com/tlwg/libdatrie |
+| PPKG   | 0.2.13 ⚠️ | https://github.com/tlwg/libdatrie/releases/download/v0.2.13/libdatrie-0.2.13.tar.xz |
+| BREW   | **0.2.14** | https://github.com/tlwg/libdatrie |
+
+*Outdated*
 
 ## libde265
 
@@ -4117,6 +4140,17 @@
 |--------|---------|-------------|
 | PPKG   | 1.0.15 ⚠️ | https://github.com/strukturag/libde265/releases/download/v1.0.15/libde265-1.0.15.tar.gz |
 | BREW   | **1.0.16** | https://github.com/strukturag/libde265 |
+
+*Outdated*
+
+## libdecor
+
+**Description:** A client-side decorations library for Wayland client
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.1.1 ⚠️ | https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2 |
+| BREW   | **0.2.4** | https://gitlab.freedesktop.org/libdecor/libdecor |
 
 *Outdated*
 
@@ -4169,7 +4203,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.4.124 ⚠️ | https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz |
-| BREW   | **2.4.128** | https://dri.freedesktop.org |
+| BREW   | **2.4.130** | https://dri.freedesktop.org |
 
 *Outdated*
 
@@ -4188,8 +4222,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.4.3 ✅ | https://download.videolan.org/pub/videolan/libdvdcss/1.4.3/libdvdcss-1.4.3.tar.bz2 |
-| BREW   | 1.4.3 | https://www.videolan.org/developers/libdvdcss.html |
+| PPKG   | 1.4.3 ⚠️ | https://download.videolan.org/pub/videolan/libdvdcss/1.4.3/libdvdcss-1.4.3.tar.bz2 |
+| BREW   | **1.5.0** | https://www.videolan.org/developers/libdvdcss.html |
+
+*Outdated*
 
 ## libdvdnav
 
@@ -4197,8 +4233,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 6.1.1 ✅ | https://download.videolan.org/pub/videolan/libdvdnav/6.1.1/libdvdnav-6.1.1.tar.bz2 |
-| BREW   | 6.1.1 | https://www.videolan.org/developers/libdvdnav.html |
+| PPKG   | 6.1.1 ⚠️ | https://download.videolan.org/pub/videolan/libdvdnav/6.1.1/libdvdnav-6.1.1.tar.bz2 |
+| BREW   | **7.0.0** | https://www.videolan.org/developers/libdvdnav.html |
+
+*Outdated*
 
 ## libdvdread
 
@@ -4206,8 +4244,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 6.1.3 ✅ | https://download.videolan.org/pub/videolan/libdvdread/6.1.3/libdvdread-6.1.3.tar.bz2 |
-| BREW   | 6.1.3 | https://www.videolan.org/developers/libdvdnav.html |
+| PPKG   | 6.1.3 ⚠️ | https://download.videolan.org/pub/videolan/libdvdread/6.1.3/libdvdread-6.1.3.tar.bz2 |
+| BREW   | **7.0.1** | https://www.videolan.org/developers/libdvdnav.html |
+
+*Outdated*
 
 ## libedit
 
@@ -4328,8 +4368,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.9.1 ✅ | https://github.com/libgit2/libgit2/archive/refs/tags/v1.9.1.tar.gz |
-| BREW   | 1.9.1 | https://libgit2.org/ |
+| PPKG   | 1.9.1 ⚠️ | https://github.com/libgit2/libgit2/archive/refs/tags/v1.9.1.tar.gz |
+| BREW   | **1.9.2** | https://libgit2.org/ |
+
+*Outdated*
 
 ## libgit2@1.7
 
@@ -4338,7 +4380,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.7.2 ✅ | https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.2.tar.gz |
-| BREW   | 1.7.2 | https://libgit2.github.com/ |
+| BREW   | 1.7.2 | https://libgit2.org/ |
 
 ## libgit2@1.8
 
@@ -4347,7 +4389,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.8.1 ⚠️ | https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.1.tar.gz |
-| BREW   | **1.8.4** | https://libgit2.github.com/ |
+| BREW   | **1.8.5** | https://libgit2.org/ |
 
 *Outdated*
 
@@ -4358,7 +4400,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.48 ⚠️ | https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.48.tar.bz2 |
-| BREW   | **1.56** | https://www.gnupg.org/related_software/libgpg-error/ |
+| BREW   | **1.57** | https://www.gnupg.org/related_software/libgpg-error/ |
 
 *Outdated*
 
@@ -4460,7 +4502,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.3.0 ⚠️ | https://github.com/ImageOptim/libimagequant/archive/refs/tags/4.3.0.tar.gz |
-| BREW   | **4.4.0** | https://pngquant.org/lib/ |
+| BREW   | **4.4.1** | https://pngquant.org/lib/ |
 
 *Outdated*
 
@@ -4590,7 +4632,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 25.07 ⚠️ | https://mediaarea.net/download/source/libmediainfo/25.07/libmediainfo_25.07.tar.xz |
-| BREW   | **25.09** | https://mediaarea.net/en/MediaInfo |
+| BREW   | **25.10** | https://mediaarea.net/en/MediaInfo |
 
 *Outdated*
 
@@ -4695,7 +4737,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.11.0 ⚠️ | https://github.com/ngtcp2/nghttp3/releases/download/v1.11.0/nghttp3-1.11.0.tar.xz |
-| BREW   | **1.12.0** | https://nghttp2.org/nghttp3/ |
+| BREW   | **1.13.1** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
 
@@ -4716,8 +4758,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.11.05 ⚠️ | null |
-| BREW   | **1.17.0** | https://nghttp2.org/ngtcp2/ |
+| PPKG   | 2025.12.12 ⚠️ | null |
+| BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
 
@@ -4727,8 +4769,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.1.22 ✅ | https://nice.freedesktop.org/releases/libnice-0.1.22.tar.gz |
-| BREW   | 0.1.22 | https://wiki.freedesktop.org/nice/ |
+| PPKG   | 0.1.22 ⚠️ | https://nice.freedesktop.org/releases/libnice-0.1.22.tar.gz |
+| BREW   | **0.1.23** | https://wiki.freedesktop.org/nice/ |
+
+*Outdated*
 
 ## libnl
 
@@ -4737,7 +4781,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.9.0 ⚠️ | https://github.com/thom311/libnl/releases/download/libnl3_9_0/libnl-3.9.0.tar.gz |
-| BREW   | **3.11.0** | https://github.com/thom311/libnl |
+| BREW   | **3.12.0** | https://github.com/thom311/libnl |
 
 *Outdated*
 
@@ -4786,7 +4830,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.2.5 ⚠️ | https://github.com/rrthomas/libpaper/releases/download/v2.2.5/libpaper-2.2.5.tar.gz |
-| BREW   | **2.2.6** | https://github.com/rrthomas/libpaper |
+| BREW   | **2.2.7** | https://github.com/rrthomas/libpaper |
 
 *Outdated*
 
@@ -4826,7 +4870,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.13.37 ⚠️ | https://github.com/google/libphonenumber/archive/refs/tags/v8.13.37.tar.gz |
-| BREW   | **9.0.17** | https://github.com/google/libphonenumber |
+| BREW   | **9.0.20** | https://github.com/google/libphonenumber |
 
 *Outdated*
 
@@ -4868,7 +4912,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.6.46 ⚠️ | https://downloads.sourceforge.net/libpng/libpng-1.6.46.tar.xz |
-| BREW   | **1.6.50** | http://www.libpng.org/pub/png/libpng.html |
+| BREW   | **1.6.53** | http://www.libpng.org/pub/png/libpng.html |
 
 *Outdated*
 
@@ -4879,7 +4923,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 17.2 ⚠️ | https://ftp.postgresql.org/pub/source/v17.2/postgresql-17.2.tar.bz2 |
-| BREW   | **18.0** | https://www.postgresql.org/docs/current/libpq.html |
+| BREW   | **18.1** | https://www.postgresql.org/docs/current/libpq.html |
 
 *Outdated*
 
@@ -4890,7 +4934,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.10.0 ⚠️ | https://github.com/jtv/libpqxx/archive/refs/tags/7.10.0.tar.gz |
-| BREW   | **7.10.3** | https://pqxx.org/development/libpqxx/ |
+| BREW   | **7.10.4** | https://pqxx.org/development/libpqxx/ |
 
 *Outdated*
 
@@ -4901,7 +4945,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.5.4 ⚠️ | https://github.com/libproxy/libproxy/archive/refs/tags/0.5.4.tar.gz |
-| BREW   | **0.5.11** | https://libproxy.github.io/libproxy/ |
+| BREW   | **0.5.12** | https://libproxy.github.io/libproxy/ |
 
 *Outdated*
 
@@ -4921,7 +4965,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.7.0 ⚠️ | https://github.com/Qalculate/libqalculate/releases/download/v5.7.0/libqalculate-5.7.0.tar.gz |
-| BREW   | **5.8.1** | https://qalculate.github.io/ |
+| BREW   | **5.8.2** | https://qalculate.github.io/ |
 
 *Outdated*
 
@@ -4965,7 +5009,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.0 ⚠️ | https://github.com/baresip/re/archive/refs/tags/v3.15.0.tar.gz |
-| BREW   | **4.2.0** | https://github.com/baresip/re |
+| BREW   | **4.3.0** | https://github.com/baresip/re |
 
 *Outdated*
 
@@ -5328,7 +5372,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.13.8 ⚠️ | https://github.com/rakshasa/libtorrent/archive/v0.13.8.tar.gz |
-| BREW   | **0.16.2** | https://github.com/rakshasa/libtorrent |
+| BREW   | **0.16.5** | https://github.com/rakshasa/libtorrent |
 
 *Outdated*
 
@@ -5349,8 +5393,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.9.2 ✅ | https://github.com/vstakhov/libucl/archive/refs/tags/0.9.2.tar.gz |
-| BREW   | 0.9.2 | https://github.com/vstakhov/libucl |
+| PPKG   | 0.9.2 ⚠️ | https://github.com/vstakhov/libucl/archive/refs/tags/0.9.2.tar.gz |
+| BREW   | **0.9.3** | https://github.com/vstakhov/libucl |
+
+*Outdated*
 
 ## libunibreak
 
@@ -5548,7 +5594,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.3.3 ⚠️ | https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.3.tar.gz |
-| BREW   | **4.4.1** | https://github.com/warmcat/libwebsockets |
+| BREW   | **4.5.2** | https://github.com/warmcat/libwebsockets |
 
 *Outdated*
 
@@ -5567,10 +5613,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 4.4.38 ⚠️ | https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz |
-| BREW   | **4.5.0** | https://github.com/besser82/libxcrypt |
-
-*Outdated*
+| PPKG   | 4.5.2 ✅ | https://github.com/besser82/libxcrypt/releases/download/v4.5.2/libxcrypt-4.5.2.tar.xz |
+| BREW   | 4.5.2 | https://github.com/besser82/libxcrypt |
 
 ## libxkbcommon
 
@@ -5579,7 +5623,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.10.0 ⚠️ | https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.10.0.tar.gz |
-| BREW   | **1.12.3** | https://xkbcommon.org/ |
+| BREW   | **1.13.1** | https://xkbcommon.org/ |
 
 *Outdated*
 
@@ -5589,8 +5633,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.13.8 ✅ | https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.8.tar.xz |
-| BREW   | 2.13.8 | http://xmlsoft.org/ |
+| PPKG   | 2.13.8 ⚠️ | https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.8.tar.xz |
+| BREW   | **2.15.1** | http://xmlsoft.org/ |
+
+*Outdated*
 
 ## libxmlb
 
@@ -5610,7 +5656,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.1.39 ⚠️ | https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.39.tar.xz |
-| BREW   | **1.1.43** | http://xmlsoft.org/XSLT/ |
+| BREW   | **1.1.45** | http://xmlsoft.org/XSLT/ |
 
 *Outdated*
 
@@ -5681,7 +5727,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.21.0 ⚠️ | https://github.com/lima-vm/lima/archive/refs/tags/v0.21.0.tar.gz |
-| BREW   | **1.2.1** | https://lima-vm.io/ |
+| BREW   | **2.0.2** | https://lima-vm.io/ |
 
 *Outdated*
 
@@ -5701,7 +5747,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.10 ⚠️ | https://github.com/triyanox/lla/archive/refs/tags/v0.3.10.tar.gz |
-| BREW   | **0.5.0** | https://github.com/chaqchase/lla |
+| BREW   | **0.5.1** | https://github.com/chaqchase/lla |
 
 *Outdated*
 
@@ -5877,7 +5923,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.1.1732813678 ⚠️ | https://github.com/LuaJIT/LuaJIT/archive/19878ec05c239ccaf5f3d17af27670a963e25b8b.tar.gz |
-| BREW   | **2.1.1761727121** | https://luajit.org/luajit.html |
+| BREW   | **2.1.1765007043** | https://luajit.org/luajit.html |
 
 *Outdated*
 
@@ -5888,7 +5934,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.698** | https://luau.org |
+| BREW   | **0.702** | https://luau.org |
 
 *Outdated*
 
@@ -5910,7 +5956,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.15.1 ⚠️ | https://github.com/lycheeverse/lychee/archive/refs/tags/v0.15.1.tar.gz |
-| BREW   | **0.21.0** | https://lychee.cli.rs/ |
+| BREW   | **0.22.0** | https://lychee.cli.rs/ |
 
 *Outdated*
 
@@ -6014,7 +6060,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.6.2 ⚠️ | https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.2/mbedtls-3.6.2.tar.bz2 |
-| BREW   | **3.6.4** | https://tls.mbed.org/ |
+| BREW   | **4.0.0** | https://tls.mbed.org/ |
 
 *Outdated*
 
@@ -6045,7 +6091,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.4.37 ⚠️ | https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.37.tar.gz |
-| BREW   | **0.4.52** | https://rust-lang.github.io/mdBook/ |
+| BREW   | **0.5.1** | https://rust-lang.github.io/mdBook/ |
 
 *Outdated*
 
@@ -6074,7 +6120,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 25.1.4 ⚠️ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
-| BREW   | **25.2.6** | https://www.mesa3d.org/ |
+| BREW   | **25.3.1** | https://www.mesa3d.org/ |
 
 *Outdated*
 
@@ -6226,7 +6272,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.3.4 ⚠️ | https://github.com/ccxvii/mujs/archive/refs/tags/1.3.4.tar.gz |
-| BREW   | **1.3.7** | https://www.mujs.com/ |
+| BREW   | **1.3.8** | https://www.mujs.com/ |
 
 *Outdated*
 
@@ -6248,7 +6294,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/mvfst/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.03.00** | https://github.com/facebook/mvfst |
+| BREW   | **2025.11.10.00** | https://github.com/facebook/mvfst |
 
 *Outdated*
 
@@ -6268,7 +6314,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.2 ⚠️ | https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz |
-| BREW   | **8.6** | https://www.nano-editor.org/ |
+| BREW   | **8.7** | https://www.nano-editor.org/ |
 
 *Outdated*
 
@@ -6350,7 +6396,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.0.1 ⚠️ | https://github.com/containerd/nerdctl/archive/refs/tags/v2.0.1.tar.gz |
-| BREW   | **2.1.6** | https://github.com/containerd/nerdctl |
+| BREW   | **2.2.0** | https://github.com/containerd/nerdctl |
 
 *Outdated*
 
@@ -6402,8 +6448,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.25.4 ⚠️ | https://nginx.org/download/nginx-1.25.4.tar.gz |
-| BREW   | **1.29.3** | https://nginx.org/ |
+| PPKG   | 1.29.3 ⚠️ | https://nginx.org/download/nginx-1.29.3.tar.gz |
+| BREW   | **1.29.4** | https://nginx.org/ |
 
 *Outdated*
 
@@ -6435,8 +6481,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.13.1 ✅ | https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.1.tar.gz |
-| BREW   | 1.13.1 | https://ninja-build.org/ |
+| PPKG   | 1.13.1 ⚠️ | https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.1.tar.gz |
+| BREW   | **1.13.2** | https://ninja-build.org/ |
+
+*Outdated*
 
 ## nixpacks
 
@@ -6487,7 +6535,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.36 ⚠️ | https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz |
-| BREW   | **4.37** | https://hg.mozilla.org/projects/nspr |
+| BREW   | **4.38.2** | https://hg.mozilla.org/projects/nspr |
 
 *Outdated*
 
@@ -6498,7 +6546,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.107 ⚠️ | https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz |
-| BREW   | **3.117** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
+| BREW   | **3.119.1** | https://firefox-source-docs.mozilla.org/security/nss/index.html |
 
 *Outdated*
 
@@ -6518,7 +6566,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.2.8 ⚠️ | https://github.com/projectdiscovery/nuclei/archive/refs/tags/v3.2.8.tar.gz |
-| BREW   | **3.4.10** | https://docs.projectdiscovery.io/tools/nuclei/overview |
+| BREW   | **3.6.0** | https://docs.projectdiscovery.io/tools/nuclei/overview |
 
 *Outdated*
 
@@ -6538,7 +6586,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.104.1 ⚠️ | https://github.com/nushell/nushell/archive/refs/tags/0.104.1.tar.gz |
-| BREW   | **0.108.0** | https://www.nushell.sh |
+| BREW   | **0.109.1** | https://www.nushell.sh |
 
 *Outdated*
 
@@ -6591,7 +6639,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.5.0 ⚠️ | https://github.com/hatoo/oha/archive/refs/tags/v1.5.0.tar.gz |
-| BREW   | **1.11.0** | https://github.com/hatoo/oha/ |
+| BREW   | **1.12.0** | https://github.com/hatoo/oha/ |
 
 *Outdated*
 
@@ -6613,7 +6661,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.12.9** | https://ollama.com/ |
+| BREW   | **0.13.2** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6635,7 +6683,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.65.0 ⚠️ | https://github.com/open-policy-agent/opa/archive/refs/tags/v0.65.0.tar.gz |
-| BREW   | **1.10.0** | https://www.openpolicyagent.org |
+| BREW   | **1.11.0** | https://www.openpolicyagent.org |
 
 *Outdated*
 
@@ -6690,7 +6738,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.3.2 ⚠️ | https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.2.tar.gz |
-| BREW   | **3.4.2** | https://www.openexr.com/ |
+| BREW   | **3.4.4** | https://www.openexr.com/ |
 
 *Outdated*
 
@@ -6712,7 +6760,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.5.15.0 ⚠️ | https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v2.5.15.0.tar.gz |
-| BREW   | **3.1.7.0** | https://openimageio.readthedocs.io/en/stable/ |
+| BREW   | **3.1.8.0** | https://openimageio.readthedocs.io/en/stable/ |
 
 *Outdated*
 
@@ -6774,7 +6822,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | **1.25.0** | https://oxc.rs/ |
+| BREW   | **1.32.0** | https://oxc.rs/ |
 
 *Outdated*
 
@@ -6795,7 +6843,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.11.05 ⚠️ | null |
+| PPKG   | 2025.12.12 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -6807,7 +6855,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.6.3 ⚠️ | https://github.com/jgm/pandoc/archive/refs/tags/3.6.3.tar.gz |
-| BREW   | **3.8.2.1** | https://pandoc.org/ |
+| BREW   | **3.8.3** | https://pandoc.org/ |
 
 *Outdated*
 
@@ -6934,6 +6982,17 @@
 | PPKG   | 2.8 ✅ | https://zlib.net/pigz/pigz-2.8.tar.gz |
 | BREW   | 2.8 | https://zlib.net/pigz/ |
 
+## pipewire
+
+**Description:** A server and user space API to deal with multimedia pipelines
+
+| Source | Version | URL/Homepage |
+|--------|---------|-------------|
+| PPKG   | 0.3.60 ⚠️ | https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.60/pipewire-0.3.60.tar.bz2 |
+| BREW   | **1.4.9** | https://pipewire.org |
+
+*Outdated*
+
 ## pixi
 
 **Description:** Package management made easy
@@ -6941,7 +7000,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.59.0** | https://pixi.sh |
+| BREW   | **0.61.0** | https://pixi.sh |
 
 *Outdated*
 
@@ -6962,7 +7021,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.11.05 ⚠️ | null |
+| PPKG   | 2025.12.12 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7074,7 +7133,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.4.1 ⚠️ | https://github.com/OSGeo/PROJ/releases/download/9.4.1/proj-9.4.1.tar.gz |
-| BREW   | **9.7.0** | https://proj.org/ |
+| BREW   | **9.7.1** | https://proj.org/ |
 
 *Outdated*
 
@@ -7085,7 +7144,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 26.1 ⚠️ | null |
-| BREW   | **33.0** | https://protobuf.dev/ |
+| BREW   | **33.1** | https://protobuf.dev/ |
 
 *Outdated*
 
@@ -7124,7 +7183,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.11.05 ⚠️ | null |
+| PPKG   | 2025.12.12 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7156,7 +7215,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.9.34 ⚠️ | https://www.ivarch.com/programs/sources/pv-1.9.34.tar.gz |
-| BREW   | **1.9.44** | https://www.ivarch.com/programs/pv.shtml |
+| BREW   | **1.10.2** | https://www.ivarch.com/programs/pv.shtml |
 
 *Outdated*
 
@@ -7211,7 +7270,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.13.2 ⚠️ | https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tgz |
-| BREW   | **3.13.9** | https://www.python.org/ |
+| BREW   | **3.13.11** | https://www.python.org/ |
 
 *Outdated*
 
@@ -7222,7 +7281,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.9.21 ⚠️ | https://www.python.org/ftp/python/3.9.21/Python-3.9.21.tar.xz |
-| BREW   | **3.9.24** | https://www.python.org/ |
+| BREW   | **3.9.25** | https://www.python.org/ |
 
 *Outdated*
 
@@ -7233,7 +7292,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.19.1 ⚠️ | https://github.com/natesales/q/archive/refs/tags/v0.19.1.tar.gz |
-| BREW   | **0.19.10** | https://github.com/natesales/q |
+| BREW   | **0.19.11** | https://github.com/natesales/q |
 
 *Outdated*
 
@@ -7262,7 +7321,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.2.0 ⚠️ | https://download.qemu.org/qemu-9.2.0.tar.xz |
-| BREW   | **10.1.2** | https://www.qemu.org/ |
+| BREW   | **10.1.3** | https://www.qemu.org/ |
 
 *Outdated*
 
@@ -7273,7 +7332,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.4.0 ⚠️ | https://github.com/plp13/qman/archive/refs/tags/v1.4.0.tar.gz |
-| BREW   | **1.5.0** | https://github.com/plp13/qman |
+| BREW   | **1.5.1** | https://github.com/plp13/qman |
 
 *Outdated*
 
@@ -7386,7 +7445,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.69.3 ⚠️ | https://github.com/rclone/rclone/archive/refs/tags/v1.69.3.tar.gz |
-| BREW   | **1.71.2** | https://rclone.org/ |
+| BREW   | **1.72.1** | https://rclone.org/ |
 
 *Outdated*
 
@@ -7397,7 +7456,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.2 ⚠️ | https://github.com/skvadrik/re2c/releases/download/4.2/re2c-4.2.tar.xz |
-| BREW   | **4.3** | https://re2c.org/ |
+| BREW   | **4.3.1** | https://re2c.org/ |
 
 *Outdated*
 
@@ -7419,7 +7478,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.0.12 ⚠️ | https://download.redis.io/releases/redis-7.0.12.tar.gz |
-| BREW   | **8.2.3** | https://redis.io/ |
+| BREW   | **8.4.0** | https://redis.io/ |
 
 *Outdated*
 
@@ -7474,7 +7533,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.6 ⚠️ | https://github.com/phiresky/ripgrep-all/archive/refs/tags/v0.10.6.tar.gz |
-| BREW   | **0.10.9** | https://github.com/phiresky/ripgrep-all |
+| BREW   | **0.10.10** | https://github.com/phiresky/ripgrep-all |
 
 *Outdated*
 
@@ -7485,7 +7544,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.46.1 ⚠️ | https://github.com/hanslub42/rlwrap/archive/refs/tags/0.46.1.tar.gz |
-| BREW   | **0.47.1** | https://github.com/hanslub42/rlwrap |
+| BREW   | **0.48** | https://github.com/hanslub42/rlwrap |
 
 *Outdated*
 
@@ -7518,7 +7577,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/apollographql/rover/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.36.2** | https://www.apollographql.com/docs/rover/ |
+| BREW   | **0.37.0** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
 
@@ -7558,7 +7617,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.8 ⚠️ | https://github.com/rakshasa/rtorrent/releases/download/v0.9.8/rtorrent-0.9.8.tar.gz |
-| BREW   | **0.16.2** | https://github.com/rakshasa/rtorrent |
+| BREW   | **0.16.5** | https://github.com/rakshasa/rtorrent |
 
 *Outdated*
 
@@ -7580,7 +7639,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.14.3** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.14.8** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 
@@ -7591,7 +7650,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-11-03** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-12-08** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 
@@ -7602,7 +7661,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.5 ⚠️ | https://github.com/rustic-rs/rustic/archive/refs/tags/v0.9.5.tar.gz |
-| BREW   | **0.10.0** | https://rustic.cli.rs |
+| BREW   | **0.10.2** | https://rustic.cli.rs |
 
 *Outdated*
 
@@ -7624,7 +7683,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.22.3 ⚠️ | https://download.samba.org/pub/samba/stable/samba-4.22.3.tar.gz |
-| BREW   | **4.23.2** | https://www.samba.org/ |
+| BREW   | **4.23.3** | https://www.samba.org/ |
 
 *Outdated*
 
@@ -7674,8 +7733,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.11.3 ✅ | https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.3.tar.gz |
-| BREW   | 1.11.3 | https://sr.ht/~sircmpwn/scdoc/ |
+| PPKG   | 1.11.3 ⚠️ | https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.3.tar.gz |
+| BREW   | **1.11.4** | https://sr.ht/~sircmpwn/scdoc/ |
+
+*Outdated*
 
 ## sd
 
@@ -7791,7 +7852,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.1 ⚠️ | https://github.com/LucasPickering/slumber/archive/refs/tags/v3.0.1.tar.gz |
-| BREW   | **4.2.0** | https://slumber.lucaspickering.me/ |
+| BREW   | **4.2.1** | https://slumber.lucaspickering.me/ |
 
 *Outdated*
 
@@ -7813,7 +7874,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.8.0.0 ⚠️ | http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz |
-| BREW   | **1.8.0.3** | http://www.dest-unreach.org/socat/ |
+| BREW   | **1.8.1.0** | http://www.dest-unreach.org/socat/ |
 
 *Outdated*
 
@@ -7855,7 +7916,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 128.11.0 ⚠️ | https://archive.mozilla.org/pub/firefox/releases/128.11.0esr/source/firefox-128.11.0esr.source.tar.xz |
-| BREW   | **140.4.0** | https://spidermonkey.dev |
+| BREW   | **140.6.0** | https://spidermonkey.dev |
 
 *Outdated*
 
@@ -7877,7 +7938,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20.1.4 ⚠️ | https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v20.1.4.tar.gz |
-| BREW   | **21.1.2** | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
+| BREW   | **21.1.3** | https://github.com/KhronosGroup/SPIRV-LLVM-Translator |
 
 *Outdated*
 
@@ -7908,7 +7969,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.6.1 ⚠️ | https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz |
-| BREW   | **4.7.2** | https://github.com/plougher/squashfs-tools |
+| BREW   | **4.7.4** | https://github.com/plougher/squashfs-tools |
 
 *Outdated*
 
@@ -7940,8 +8001,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.7.3 ✅ | https://github.com/libfuse/sshfs/archive/refs/tags/sshfs-3.7.3.tar.gz |
-| BREW   | 3.7.3 | https://github.com/libfuse/sshfs |
+| PPKG   | 3.7.3 ⚠️ | https://github.com/libfuse/sshfs/archive/refs/tags/sshfs-3.7.3.tar.gz |
+| BREW   | **3.7.5** | https://github.com/libfuse/sshfs |
+
+*Outdated*
 
 ## starship
 
@@ -7950,7 +8013,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.22.1 ⚠️ | https://github.com/starship/starship/archive/refs/tags/v1.22.1.tar.gz |
-| BREW   | **1.24.0** | https://starship.rs/ |
+| BREW   | **1.24.1** | https://starship.rs/ |
 
 *Outdated*
 
@@ -7970,7 +8033,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.13 ⚠️ | https://github.com/strace/strace/releases/download/v6.13/strace-6.13.tar.xz |
-| BREW   | **6.17** | https://strace.io/ |
+| BREW   | **6.18** | https://strace.io/ |
 
 *Outdated*
 
@@ -8003,7 +8066,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.6.6 ⚠️ | https://github.com/projectdiscovery/subfinder/archive/refs/tags/v2.6.6.tar.gz |
-| BREW   | **2.9.0** | https://github.com/projectdiscovery/subfinder |
+| BREW   | **2.10.1** | https://github.com/projectdiscovery/subfinder |
 
 *Outdated*
 
@@ -8025,7 +8088,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.0.6 ⚠️ | https://www.openinfosecfoundation.org/download/suricata-7.0.6.tar.gz |
-| BREW   | **8.0.1** | https://suricata.io |
+| BREW   | **8.0.2** | https://suricata.io |
 
 *Outdated*
 
@@ -8047,7 +8110,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.3.0 ⚠️ | https://downloads.sourceforge.net/project/swig/swig/swig-4.3.0/swig-4.3.0.tar.gz |
-| BREW   | **4.4.0** | https://www.swig.org/ |
+| BREW   | **4.4.1** | https://www.swig.org/ |
 
 *Outdated*
 
@@ -8058,7 +8121,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.29.7 ⚠️ | https://github.com/syncthing/syncthing/archive/refs/tags/v1.29.7.tar.gz |
-| BREW   | **2.0.11** | https://syncthing.net/ |
+| BREW   | **2.0.12** | https://syncthing.net/ |
 
 *Outdated*
 
@@ -8069,7 +8132,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.36.0 ⚠️ | https://github.com/draios/sysdig/archive/refs/tags/0.36.0.tar.gz |
-| BREW   | **0.40.1** | https://sysdig.com/ |
+| BREW   | **0.41.3** | https://sysdig.com/ |
 
 *Outdated*
 
@@ -8080,7 +8143,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 256.7 ⚠️ | https://github.com/systemd/systemd/archive/refs/tags/v256.7.tar.gz |
-| BREW   | **258.1** | https://systemd.io |
+| BREW   | **258.2** | https://systemd.io |
 
 *Outdated*
 
@@ -8122,7 +8185,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.85.5 ⚠️ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.85.5.tar.gz |
-| BREW   | **1.91.2** | https://github.com/k1LoW/tbls |
+| BREW   | **1.92.0** | https://github.com/k1LoW/tbls |
 
 *Outdated*
 
@@ -8162,7 +8225,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.7.1 ⚠️ | https://github.com/dbrgn/tealdeer/archive/refs/tags/v1.7.1.tar.gz |
-| BREW   | **1.8.0** | https://tealdeer-rs.github.io/tealdeer/ |
+| BREW   | **1.8.1** | https://tealdeer-rs.github.io/tealdeer/ |
 
 *Outdated*
 
@@ -8215,7 +8278,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.93.1** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.94.0** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8307,8 +8370,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.5a ✅ | https://github.com/tmux/tmux/releases/download/3.5a/tmux-3.5a.tar.gz |
-| BREW   | 3.5a | https://tmux.github.io/ |
+| PPKG   | 3.5a ⚠️ | https://github.com/tmux/tmux/releases/download/3.5a/tmux-3.5a.tar.gz |
+| BREW   | **3.6a** | https://tmux.github.io/ |
+
+*Outdated*
 
 ## tokei
 
@@ -8316,8 +8381,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 12.1.2 ✅ | https://github.com/XAMPPRocky/tokei/archive/v12.1.2.tar.gz |
-| BREW   | 12.1.2 | https://github.com/XAMPPRocky/tokei |
+| PPKG   | 12.1.2 ⚠️ | https://github.com/XAMPPRocky/tokei/archive/v12.1.2.tar.gz |
+| BREW   | **13.0.0** | https://github.com/XAMPPRocky/tokei |
+
+*Outdated*
 
 ## toml11
 
@@ -8337,7 +8404,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.4.8.16 ⚠️ | https://fossies.org/linux/misc/tor-0.4.8.16.tar.gz |
-| BREW   | **0.4.8.19** | https://www.torproject.org/ |
+| BREW   | **0.4.8.21** | https://www.torproject.org/ |
 
 *Outdated*
 
@@ -8377,7 +8444,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.8 ⚠️ | https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.8.tar.gz |
-| BREW   | **0.25.10** | https://tree-sitter.github.io/ |
+| BREW   | **0.26.2** | https://tree-sitter.github.io/ |
 
 *Outdated*
 
@@ -8424,7 +8491,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.13.1 ⚠️ | https://github.com/typst/typst/archive/refs/tags/v0.13.1.tar.gz |
-| BREW   | **0.14.0** | https://typst.app/ |
+| BREW   | **0.14.1** | https://typst.app/ |
 
 *Outdated*
 
@@ -8446,7 +8513,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.22.0 ⚠️ | https://nlnetlabs.nl/downloads/unbound/unbound-1.22.0.tar.gz |
-| BREW   | **1.24.1** | https://www.unbound.net |
+| BREW   | **1.24.2** | https://www.unbound.net |
 
 *Outdated*
 
@@ -8456,8 +8523,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.53.7 ✅ | https://github.com/bcpierce00/unison/archive/refs/tags/v2.53.7.tar.gz |
-| BREW   | 2.53.7 | https://www.cis.upenn.edu/~bcpierce/unison/ |
+| PPKG   | 2.53.7 ⚠️ | https://github.com/bcpierce00/unison/archive/refs/tags/v2.53.7.tar.gz |
+| BREW   | **2.53.8** | https://www.cis.upenn.edu/~bcpierce/unison/ |
+
+*Outdated*
 
 ## unixodbc
 
@@ -8530,7 +8599,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.0.30 ⚠️ | https://github.com/uutils/coreutils/archive/refs/tags/0.0.30.tar.gz |
-| BREW   | **0.3.0** | https://uutils.github.io/coreutils/ |
+| BREW   | **0.4.0** | https://uutils.github.io/coreutils/ |
 
 *Outdated*
 
@@ -8541,7 +8610,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.9.7** | https://docs.astral.sh/uv/ |
+| BREW   | **0.9.17** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 
@@ -8625,7 +8694,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | R72 ⚠️ | https://github.com/vapoursynth/vapoursynth/archive/refs/tags/R72.tar.gz |
-| BREW   | **72** | https://www.vapoursynth.com |
+| BREW   | **73** | https://www.vapoursynth.com |
 
 *Outdated*
 
@@ -8676,7 +8745,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.1.0450 ⚠️ | https://github.com/vim/vim/archive/refs/tags/v9.1.0450.tar.gz |
-| BREW   | **9.1.1850** | https://www.vim.org/ |
+| BREW   | **9.1.1950** | https://www.vim.org/ |
 
 *Outdated*
 
@@ -8698,7 +8767,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.5.0 ⚠️ | https://github.com/atanunq/viu/archive/refs/tags/v1.5.0.tar.gz |
-| BREW   | **1.5.1** | https://github.com/atanunq/viu |
+| BREW   | **1.6.0** | https://github.com/atanunq/viu |
 
 *Outdated*
 
@@ -8789,7 +8858,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/wangle/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.03.00** | https://github.com/facebook/wangle |
+| BREW   | **2025.11.10.00** | https://github.com/facebook/wangle |
 
 *Outdated*
 
@@ -8831,7 +8900,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 35.0.0 ⚠️ | null |
-| BREW   | **38.0.3** | https://wasmtime.dev/ |
+| BREW   | **39.0.1** | https://wasmtime.dev/ |
 
 *Outdated*
 
@@ -8853,7 +8922,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/watchman/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.03.00** | https://github.com/facebook/watchman |
+| BREW   | **2025.11.10.00** | https://github.com/facebook/watchman |
 
 *Outdated*
 
@@ -8884,7 +8953,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.34 ⚠️ | https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.34/downloads/wayland-protocols-1.34.tar.xz |
-| BREW   | **1.45** | https://wayland.freedesktop.org |
+| BREW   | **1.46** | https://wayland.freedesktop.org |
 
 *Outdated*
 
@@ -8982,7 +9051,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 5.8.0 ⚠️ | https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.8.0-stable.tar.gz |
-| BREW   | **5.8.2** | https://www.wolfssl.com |
+| BREW   | **5.8.4** | https://www.wolfssl.com |
 
 *Outdated*
 
@@ -9048,8 +9117,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.20211022.1 ✅ | https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz |
-| BREW   | 3.20211022.1 | https://www.semicomplete.com/projects/xdotool/ |
+| PPKG   | 3.20211022.1 ⚠️ | https://github.com/jordansissel/xdotool/releases/download/v3.20211022.1/xdotool-3.20211022.1.tar.gz |
+| BREW   | **4.20251130.1** | https://www.semicomplete.com/projects/xdotool/ |
+
+*Outdated*
 
 ## xh
 
@@ -9080,7 +9151,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.9.9 ⚠️ | https://github.com/xmake-io/xmake/releases/download/v2.9.9/xmake-v2.9.9.tar.gz |
-| BREW   | **3.0.4** | https://xmake.io/ |
+| BREW   | **3.0.5** | https://xmake.io/ |
 
 *Outdated*
 
@@ -9175,8 +9246,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.10.3 ⚠️ | https://github.com/kkdai/youtube/archive/refs/tags/v2.10.3.tar.gz |
-| BREW   | **2.10.4** | https://github.com/kkdai/youtube |
+| PPKG   | 2.10.4 ⚠️ | https://github.com/kkdai/youtube/archive/refs/tags/v2.10.4.tar.gz |
+| BREW   | **2.10.5** | https://github.com/kkdai/youtube |
 
 *Outdated*
 
@@ -9187,7 +9258,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.47.1 ⚠️ | https://github.com/mikefarah/yq/archive/refs/tags/v4.47.1.tar.gz |
-| BREW   | **4.48.1** | https://github.com/mikefarah/yq |
+| BREW   | **4.49.2** | https://github.com/mikefarah/yq |
 
 *Outdated*
 
@@ -9262,7 +9333,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.2.4 ⚠️ | https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.2.4.tar.gz |
-| BREW   | **2.2.5** | https://github.com/zlib-ng/zlib-ng |
+| BREW   | **2.3.2** | https://github.com/zlib-ng/zlib-ng |
 
 *Outdated*
 
@@ -9273,7 +9344,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.14.0 ⚠️ | https://github.com/zigtools/zls/archive/refs/tags/0.14.0.tar.gz |
-| BREW   | **0.15.0** | https://zigtools.org/zls/ |
+| BREW   | **0.15.1** | https://zigtools.org/zls/ |
 
 *Outdated*
 
@@ -9342,7 +9413,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.4.4 ⚠️ | https://github.com/liquidaty/zsv/archive/refs/tags/v0.4.4-alpha.tar.gz |
-| BREW   | **1.0.1** | https://github.com/liquidaty/zsv |
+| BREW   | **1.3.0** | https://github.com/liquidaty/zsv |
 
 *Outdated*
 

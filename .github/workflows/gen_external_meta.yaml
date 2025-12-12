@@ -169,7 +169,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload (LOG) Artifacts [${{ matrix.source }}/${{ matrix.host }})
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
             name: ${{ matrix.source }}_${{ matrix.host }}
             path: |

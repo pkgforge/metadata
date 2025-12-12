@@ -545,7 +545,7 @@
   {
     "pkgname": "appimage-runtime-type2",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "MIT",
     "summary": "type2 AppImage runtime",
     "web-url": "https://github.com/AppImage/type2-runtime",
@@ -564,7 +564,7 @@
   {
     "pkgname": "appimagetool",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A command-line tool to generate an AppImage from an existing AppDir",
     "web-url": "https://github.com/AppImage/appimagetool",
     "git-url": "https://github.com/AppImage/appimagetool",
@@ -1011,7 +1011,7 @@
   {
     "pkgname": "base16",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "base16 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -1026,7 +1026,7 @@
   {
     "pkgname": "base64",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "base64 encoder and decoder",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -1243,7 +1243,7 @@
   {
     "pkgname": "bin-graph",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "GPL-3.0",
     "summary": "A command-line tool for visualizing the different regions of a binary file",
     "web-url": "https://github.com/8dcc/bin-graph",
@@ -1330,6 +1330,24 @@
     "ltoable": "1",
     "movable": "1",
     "install": "cargow install"
+  },
+  {
+    "pkgname": "binsider",
+    "pkgtype": "exe",
+    "version": "0.2.1",
+    "license": "Apache-2.0 MIT",
+    "summary": "A command-line tool to analyze ELF binaries",
+    "web-url": "https://binsider.dev/",
+    "git-url": "https://github.com/orhun/binsider",
+    "src-url": "https://github.com/orhun/binsider/archive/refs/tags/v0.2.1.tar.gz",
+    "src-sha": "a3bc10379677b19656436924f478798f205b371bc703feab938c1b2512f39500",
+    "dep-upp": "curl bsdtar",
+    "bsystem": "cargo",
+    "binbstd": "1",
+    "parallel": "1",
+    "ltoable": "1",
+    "movable": "1",
+    "install": "cargow install --no-default-features"
   },
   {
     "pkgname": "binutils",
@@ -1543,7 +1561,7 @@
   {
     "pkgname": "boringssl",
     "pkgtype": "exe+lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A fork of OpenSSL that is designed to meet Google needs",
     "web-url": "https://boringssl.googlesource.com/boringssl/",
     "git-url": "https://github.com/google/boringssl",
@@ -1818,7 +1836,7 @@
   {
     "pkgname": "c-examples",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "C语言学习项目",
     "web-url": "https://github.com/leleliu008/C-examples",
@@ -2889,7 +2907,7 @@
   {
     "pkgname": "cpuinfo",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -3999,7 +4017,7 @@
   {
     "pkgname": "easyutils",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A collections of easy to use command-line utilities",
     "web-url": "https://github.com/leleliu008/C-examples",
     "git-url": "https://github.com/leleliu008/C-examples",
@@ -4050,7 +4068,7 @@
   {
     "pkgname": "effcee",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A C++ library for stateful pattern matching of strings",
     "web-url": "https://github.com/google/effcee",
     "git-url": "https://github.com/google/effcee",
@@ -4647,13 +4665,13 @@
   {
     "pkgname": "ffmpeg",
     "pkgtype": "exe",
-    "version": "7.1.1",
+    "version": "8.0.1",
     "license": "GPL-2.0-or-later",
     "summary": "A complete, cross-platform solution to record, convert and stream audio and video",
     "web-url": "https://ffmpeg.org/",
     "git-url": "https://github.com/FFmpeg/FFmpeg",
-    "src-url": "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz",
-    "src-sha": "733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1",
+    "src-url": "https://ffmpeg.org/releases/ffmpeg-8.0.1.tar.xz",
+    "src-sha": "05ee0b03119b45c0bdb4df654b96802e909e0a752f72e4fe3794f487229e5a41",
     "dep-pkg": "libtesseract librubberband libbluray libaribb24 libass libarchive libvidstab libopencore-amr libSvtAv1 libmp3lame libtheora libspeex librav1e libdav1d libx264 libx265 libxvid libvpx libaom libsdl2 libzimg libzmq libssh libsrt librist xorg-libxv libva",
     "dep-upp": "nasm curl bsdtar gmake",
     "bsystem": "gmake",
@@ -5673,7 +5691,7 @@
   {
     "pkgname": "gftp",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "MIT",
     "summary": "A free multithreaded file transfer client for *NIX",
     "web-url": "https://github.com/masneyb/gftp",
@@ -6346,7 +6364,7 @@
   {
     "pkgname": "gn",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A meta-build system that generates build files for ninja",
     "web-url": "https://gn.googlesource.com/gn",
     "git-url": "https://gn.googlesource.com/gn",
@@ -6686,7 +6704,7 @@
   {
     "pkgname": "gomobile",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A tool for building and running mobile apps written in golang",
     "web-url": "https://github.com/golang/mobile",
     "git-url": "https://github.com/golang/mobile",
@@ -7999,7 +8017,7 @@
   {
     "pkgname": "hunter",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "The fastest file manager in the galaxy!",
     "web-url": "https://github.com/rabite0/hunter",
     "git-url": "https://github.com/rabite0/hunter",
@@ -8773,7 +8791,7 @@
   {
     "pkgname": "kilo",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "BSD-2-Clause",
     "summary": "A text editor in less than 1000 LOC with syntax highlight and search",
     "web-url": "https://github.com/antirez/kilo",
@@ -9766,7 +9784,7 @@
   {
     "pkgname": "libbcrypt",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A password hashing method based on the Blowfish block cipher, provided via the crypt(3) and a reentrant interface",
     "web-url": "https://www.openwall.com/crypt",
     "git-url": "https://github.com/leleliu008/libbcrypt",
@@ -10050,7 +10068,7 @@
   {
     "pkgname": "libcamera",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "MIT",
     "summary": "An open source camera stack and framework",
     "web-url": "https://libcamera.org/",
@@ -10417,7 +10435,7 @@
   {
     "pkgname": "libcpuinfo",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "BSD-2-Clause",
     "summary": "CPU INFOrmation library",
     "web-url": "https://github.com/pytorch/cpuinfo",
@@ -11060,7 +11078,7 @@
   {
     "pkgname": "libexecinfo",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A quick-n-dirty BSD licensed clone of backtrace facility found in the GNU libc",
     "web-url": "https://github.com/leleliu008/libexecinfo",
     "git-url": "https://github.com/leleliu008/libexecinfo",
@@ -11897,7 +11915,7 @@
   {
     "pkgname": "libglob",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "glob(3) implementation",
     "web-url": "https://linux.die.net/man/3/glob",
     "git-url": "https://github.com/leleliu008/libglob",
@@ -12596,7 +12614,7 @@
   {
     "pkgname": "libintl-lite",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "BSL-1.0",
     "summary": "A simple (but less powerful) GNU gettext libintl replacement",
     "web-url": "https://github.com/j-jorge/libintl-lite",
@@ -13441,7 +13459,7 @@
   {
     "pkgname": "libmesalink",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "BSD-3-Clause",
     "summary": "memory-safe and OpenSSL-compatible TLS library",
     "web-url": "https://mesalink.io",
@@ -13509,7 +13527,7 @@
   {
     "pkgname": "libmill",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "MIT",
     "summary": "Go-style concurrency in C",
     "web-url": "https://github.com/sustrik/libmill",
@@ -14015,7 +14033,7 @@
   {
     "pkgname": "libngtcp2",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -15211,7 +15229,7 @@
   {
     "pkgname": "libquiche",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "BSD-2-Clause",
     "summary": "Savoury implementation of the QUIC transport protocol and HTTP/3",
     "web-url": "https://github.com/cloudflare/quiche",
@@ -15739,7 +15757,7 @@
   {
     "pkgname": "libsequoia",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "An OpenPGP backend for rpm using Sequoia PGP",
     "web-url": "https://github.com/rpm-software-management/rpm-sequoia",
     "git-url": "https://github.com/rpm-software-management/rpm-sequoia",
@@ -15887,7 +15905,7 @@
   {
     "pkgname": "libskcms",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "BSD",
     "summary": "SkCMS",
     "web-url": "https://skia.googlesource.com/skcms.git",
@@ -17418,7 +17436,7 @@
   {
     "pkgname": "libwordexp",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "wordexp(3) implementation",
     "web-url": "https://linux.die.net/man/3/wordexp",
     "git-url": "https://github.com/leleliu008/libwordexp",
@@ -17488,13 +17506,13 @@
   {
     "pkgname": "libxcrypt",
     "pkgtype": "lib",
-    "version": "4.4.38",
+    "version": "4.5.2",
     "license": "LGPL-2.1-or-later",
     "summary": "Extended crypt library for descrypt, md5crypt, bcrypt, and others",
     "web-url": "https://github.com/besser82/libxcrypt",
     "git-url": "https://github.com/besser82/libxcrypt",
-    "src-url": "https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz",
-    "src-sha": "80304b9c306ea799327f01d9a7549bdb28317789182631f1b54f4511b4206dd6",
+    "src-url": "https://github.com/besser82/libxcrypt/releases/download/v4.5.2/libxcrypt-4.5.2.tar.xz",
+    "src-sha": "71513a31c01a428bccd5367a32fd95f115d6dac50fb5b60c779d5c7942aec071",
     "dep-upp": "perl curl bsdtar gmake gmake",
     "bsystem": "configure",
     "binbstd": "0",
@@ -17999,7 +18017,7 @@
   {
     "pkgname": "lief",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "Library to Instrument Executable Formats",
     "web-url": "https://github.com/lief-project/LIEF",
@@ -18499,7 +18517,7 @@
   {
     "pkgname": "lodepng",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Zlib",
     "summary": "PNG encoder and decoder in C and C++",
     "web-url": "https://github.com/lvandeve/lodepng",
@@ -19617,7 +19635,7 @@
   {
     "pkgname": "ndk-pkg",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "A package builder for Android NDK to build projects written in C, C++, Rust, Golang, etc",
     "web-url": "https://github.com/leleliu008/ndk-pkg",
@@ -19652,7 +19670,7 @@
   {
     "pkgname": "neper",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "A networking performance tool for Linux",
     "web-url": "https://github.com/google/neper",
@@ -19763,7 +19781,7 @@
   {
     "pkgname": "nghttp3",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "MIT",
     "summary": "HTTP/3 library written in C",
     "web-url": "https://github.com/ngtcp2/nghttp3",
@@ -19779,14 +19797,14 @@
   {
     "pkgname": "nginx",
     "pkgtype": "exe",
-    "version": "1.25.4",
+    "version": "1.29.3",
     "license": "BSD-2-Clause",
     "summary": "HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server",
     "web-url": "https://nginx.org/",
     "git-url": "https://github.com/nginx/nginx",
-    "src-url": "https://nginx.org/download/nginx-1.25.4.tar.gz",
-    "src-sha": "760729901acbaa517996e681ee6ea259032985e37c2768beef80df3a877deed9",
-    "dep-pkg": "libopenssl libpcre2 libz",
+    "src-url": "https://nginx.org/download/nginx-1.29.3.tar.gz",
+    "src-sha": "9befcced12ee09c2f4e1385d7e8e21c91f1a5a63b196f78f897c2d044b8c9312",
+    "dep-pkg": "libopenssl libxcrypt libpcre2 libz",
     "dep-upp": "curl bsdtar gmake",
     "bsystem": "gmake",
     "binbstd": "1",
@@ -19816,7 +19834,7 @@
   {
     "pkgname": "ngtcp2",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "QUIC library written in C",
     "web-url": "https://github.com/ngtcp2/ngtcp2",
     "git-url": "https://github.com/ngtcp2/ngtcp2",
@@ -19832,7 +19850,7 @@
   {
     "pkgname": "nilaway",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "A static analysis tool to detect potential nil panics in Go code",
     "web-url": "https://github.com/uber-go/nilaway",
@@ -20564,7 +20582,7 @@
   {
     "pkgname": "openrsync",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "ISC",
     "summary": "BSD-licensed implementation of rsync",
     "web-url": "https://github.com/kristapsdz/openrsync",
@@ -20717,7 +20735,7 @@
   {
     "pkgname": "packcc",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A packrat parser generator for C",
     "web-url": "https://github.com/arithy/packcc",
     "git-url": "https://github.com/arithy/packcc",
@@ -21009,7 +21027,7 @@
   {
     "pkgname": "pegof",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "PEG grammar optimizer and formatter. Supports any grammar supported by PackCC parser generator.",
     "web-url": "https://github.com/dolik-rce/pegof",
     "git-url": "https://github.com/dolik-rce/pegof",
@@ -21198,7 +21216,7 @@
   {
     "pkgname": "plog",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "MPL-2.0",
     "summary": "Portable, simple and extensible C++ logging library",
     "web-url": "https://github.com/SergiusTheBest/plog",
@@ -21415,7 +21433,7 @@
   {
     "pkgname": "ppkg",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "A portable package manager for Unix-like system",
     "web-url": "https://github.com/leleliu008/ppkg",
@@ -21590,7 +21608,7 @@
   {
     "pkgname": "psimd",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "MIT",
     "summary": "Portable 128-bit SIMD intrinsics",
     "web-url": "https://github.com/Maratyszcza/psimd",
@@ -21665,7 +21683,7 @@
   {
     "pkgname": "pup",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "MIT",
     "summary": "Parse HTML at the command-line",
     "web-url": "https://github.com/EricChiang/pup",
@@ -22678,7 +22696,7 @@
   {
     "pkgname": "ruy",
     "pkgtype": "lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "matrix multiplication library",
     "web-url": "https://github.com/google/ruy",
@@ -23070,7 +23088,7 @@
   {
     "pkgname": "sjpeg",
     "pkgtype": "exe+lib",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "simple jpeg encoder",
     "web-url": "https://github.com/webmproject/sjpeg",
@@ -23903,7 +23921,7 @@
   {
     "pkgname": "sysinfo",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A command-line utility to print your currently running system information",
     "web-url": "https://github.com/leleliu008/sysinfo",
     "git-url": "https://github.com/leleliu008/sysinfo",
@@ -24854,7 +24872,7 @@
   {
     "pkgname": "uctags",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "GPL-2.0-or-later",
     "summary": "Maintained ctags implementation",
     "web-url": "https://ctags.io/",
@@ -24985,7 +25003,7 @@
   {
     "pkgname": "uppm",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "Universal Prebuild Package Manager",
     "web-url": "https://github.com/leleliu008/uppm",
@@ -25115,7 +25133,7 @@
   {
     "pkgname": "utf8.h",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Unlicense",
     "summary": "single header utf8 string functions for C and C++",
     "web-url": "https://github.com/sheredom/utf8.h",
@@ -25283,7 +25301,7 @@
   {
     "pkgname": "vala-lint",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "GPL-2.0-or-later",
     "summary": "A small command-line tool for checking Vala code files for code-style errors",
     "web-url": "https://github.com/vala-lang/vala-lint",
@@ -26150,7 +26168,7 @@
   {
     "pkgname": "xbps",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "summary": "A binary package system designed and implemented from scratch",
     "web-url": "https://github.com/void-linux/xbps",
     "git-url": "https://github.com/void-linux/xbps",
@@ -26223,7 +26241,7 @@
   {
     "pkgname": "xcpkg",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "A package builder/manager for Xcode to build projects written in C, C++, Rust, Zig, Go, Haskell, etc",
     "web-url": "https://github.com/leleliu008/xcpkg",
@@ -27162,7 +27180,7 @@
   {
     "pkgname": "xpup",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "Apache-2.0",
     "summary": "A command line tool for XML parsing",
     "web-url": "https://github.com/ericchiang/xpup",
@@ -27365,7 +27383,7 @@
   {
     "pkgname": "ycm",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "GPL-v3",
     "summary": "A code-completion engine for Vim",
     "web-url": "https://github.com/ycm-core/YouCompleteMe",
@@ -27382,13 +27400,13 @@
   {
     "pkgname": "youtubedr",
     "pkgtype": "exe",
-    "version": "2.10.3",
+    "version": "2.10.4",
     "license": "MIT",
     "summary": "A command-line tool to download videos from youtube.com",
     "web-url": "https://github.com/kkdai/youtube",
     "git-url": "https://github.com/kkdai/youtube",
-    "src-url": "https://github.com/kkdai/youtube/archive/refs/tags/v2.10.3.tar.gz",
-    "src-sha": "697ca27f894efdd3f1249b46d7e587a3d1348158e130c5c1307ce32d505c6d01",
+    "src-url": "https://github.com/kkdai/youtube/archive/refs/tags/v2.10.4.tar.gz",
+    "src-sha": "c1c282ae902d84f65ea3e891bb8da48525b5d9b0cc9662c277312d5cc402ea66",
     "dep-upp": "curl bsdtar golang",
     "bsystem": "go",
     "binbstd": "1",
@@ -27475,7 +27493,7 @@
   {
     "pkgname": "zeta",
     "pkgtype": "exe",
-    "version": "2025.11.05",
+    "version": "2025.12.12",
     "license": "LGPL-3.0",
     "summary": "Header-only general purpose library",
     "web-url": "https://github.com/redcode/Zeta",

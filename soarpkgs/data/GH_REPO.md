@@ -4,14 +4,14 @@
 | [0ad-matters](https://github.com/0ad-matters) | [0ad-appimage](https://github.com/0ad-matters/0ad-appimage) | 40 | @0ad appimage | 2025-11-24T01:16:11Z |
 | [0x4f53](https://github.com/0x4f53) | [subs](https://github.com/0x4f53/subs) | 7 | Grab valid subdomains, resolve them, split them and more! | 2025-10-23T20:33:28Z |
 | [0x5ubt13](https://github.com/0x5ubt13) | [enumeraga](https://github.com/0x5ubt13/enumeraga) | 13 | Automatic multiprocess Linux CLI tool that aims for a quick enumeration wrapping pentesting tools. | 2025-12-11T14:32:40Z |
-| [0xsha](https://github.com/0xsha) | [GoLinkFinder](https://github.com/0xsha/GoLinkFinder) | 384 | A fast and minimal JS endpoint extractor | 2025-12-10T23:56:05Z |
-| [42wim](https://github.com/42wim) | [matterbridge](https://github.com/42wim/matterbridge) | 7274 | bridge between mattermost, IRC, gitter, xmpp, slack, discord, telegram, rocketchat, twitch, ssh-chat, zulip, whatsapp, keybase, matrix, microsoft teams, nextcloud, mumble, vk and more with REST API (mattermost not required!) | 2025-12-11T14:55:08Z |
-| [86Box](https://github.com/86Box) | [86Box](https://github.com/86Box/86Box) | 3903 | Emulator of x86-based machines. | 2025-12-12T22:59:49Z |
+| [0xsha](https://github.com/0xsha) | [GoLinkFinder](https://github.com/0xsha/GoLinkFinder) | 385 | A fast and minimal JS endpoint extractor | 2025-12-13T23:25:39Z |
+| [42wim](https://github.com/42wim) | [matterbridge](https://github.com/42wim/matterbridge) | 7274 | bridge between mattermost, IRC, gitter, xmpp, slack, discord, telegram, rocketchat, twitch, ssh-chat, zulip, whatsapp, keybase, matrix, microsoft teams, nextcloud, mumble, vk and more with REST API (mattermost not required!) | 2025-12-13T00:59:57Z |
+| [86Box](https://github.com/86Box) | [86Box](https://github.com/86Box/86Box) | 3904 | Emulator of x86-based machines. | 2025-12-13T21:07:13Z |
 | [89luca89](https://github.com/89luca89) | [lilipod](https://github.com/89luca89/lilipod) | 559 | Lilipod is a simple container manager, able to download, unpack and use OCI images from various container registries. | 2025-12-11T19:11:25Z |
 | [8dcc](https://github.com/8dcc) | [bin-graph](https://github.com/8dcc/bin-graph) | 133 | Visualize binary files | 2025-09-10T18:02:24Z |
 | [Acceis](https://github.com/Acceis) | [eBPF-hide-PID](https://github.com/Acceis/eBPF-hide-PID) | 30 | This tool have the power to hide any PID/directory in the Linux kernel | 2025-11-18T05:57:41Z |
-| [Achiefs](https://github.com/Achiefs) | [fim](https://github.com/Achiefs/fim) | 172 | FIM is an Open Source Host-based file integrity monitoring tool that performs file system analysis, file integrity checking, real time alerting and provides Audit daemon data. | 2025-12-03T07:33:23Z |
-| [Acreom](https://github.com/Acreom) | [app](https://github.com/Acreom/app) | 446 | 2nd brain for software engineers. A local-first knowledge base for your daily context and projects. | 2025-12-11T05:06:00Z |
+| [Achiefs](https://github.com/Achiefs) | [fim](https://github.com/Achiefs/fim) | 173 | FIM is an Open Source Host-based file integrity monitoring tool that performs file system analysis, file integrity checking, real time alerting and provides Audit daemon data. | 2025-12-13T09:53:30Z |
+| [Acreom](https://github.com/Acreom) | [app](https://github.com/Acreom/app) | 447 | 2nd brain for software engineers. A local-first knowledge base for your daily context and projects. | 2025-12-13T03:21:54Z |
 | [AgentD](https://github.com/AgentD) | [squashfs-tools-ng](https://github.com/AgentD/squashfs-tools-ng) | 233 | A new set of tools and libraries for working with SquashFS images | 2025-12-08T09:23:11Z |
 | [AgregoreWeb](https://github.com/AgregoreWeb) | [agregore-browser](https://github.com/AgregoreWeb/agregore-browser) | 872 | A minimal browser for the distributed web (Desktop version) | 2025-12-12T16:16:51Z |
 | [Allaman](https://github.com/Allaman) | [gstring](https://github.com/Allaman/gstring) | 6 | Swiss army knife for manipulating strings. | 2025-11-23T15:21:18Z |
@@ -19,58 +19,58 @@
 | [Anomalocaridid](https://github.com/Anomalocaridid) | [handlr-regex](https://github.com/Anomalocaridid/handlr-regex) | 192 | Fork of handlr with support for regex | 2025-12-12T12:43:40Z |
 | [AppImage](https://github.com/AppImage) | [appimagetool](https://github.com/AppImage/appimagetool) | 285 | A low-level tool to generate an AppImage from an existing AppDir | 2025-12-12T23:11:36Z |
 | [ArchiveNetwork](https://github.com/ArchiveNetwork) | [wgcf-cli](https://github.com/ArchiveNetwork/wgcf-cli) | 95 | A command-line tool for Cloudflare-WARP API, built using Cobra. | 2025-11-19T11:34:56Z |
-| [BLAKE3-team](https://github.com/BLAKE3-team) | [BLAKE3](https://github.com/BLAKE3-team/BLAKE3) | 5951 | the official Rust and C implementations of the BLAKE3 cryptographic hash function | 2025-12-12T21:33:19Z |
-| [Bearer](https://github.com/Bearer) | [bearer](https://github.com/Bearer/bearer) | 2500 | Code security scanning tool (SAST) to discover, filter and prioritize security and privacy risks. | 2025-12-12T13:18:28Z |
+| [BLAKE3-team](https://github.com/BLAKE3-team) | [BLAKE3](https://github.com/BLAKE3-team/BLAKE3) | 5951 | the official Rust and C implementations of the BLAKE3 cryptographic hash function | 2025-12-13T12:09:47Z |
+| [Bearer](https://github.com/Bearer) | [bearer](https://github.com/Bearer/bearer) | 2501 | Code security scanning tool (SAST) to discover, filter and prioritize security and privacy risks. | 2025-12-13T14:29:13Z |
 | [Ben-Lichtman](https://github.com/Ben-Lichtman) | [ropr](https://github.com/Ben-Lichtman/ropr) | 536 | A blazing fast™ multithreaded ROP Gadget finder. ropper / ropgadget alternative (currently x86 only) | 2025-12-08T18:31:09Z |
 | [BishopFox](https://github.com/BishopFox) | [cloudfox](https://github.com/BishopFox/cloudfox) | 2254 | Automating situational awareness for cloud penetration tests. | 2025-12-08T12:10:30Z |
 | [BishopFox](https://github.com/BishopFox) | [jsluice](https://github.com/BishopFox/jsluice) | 1707 | Extract URLs, paths, secrets, and other interesting bits from JavaScript | 2025-12-12T12:58:26Z |
 | [BishopFox](https://github.com/BishopFox) | [sj](https://github.com/BishopFox/sj) | 714 | A tool for auditing endpoints defined in exposed (Swagger/OpenAPI) definition files. | 2025-12-07T03:22:19Z |
-| [BishopFox](https://github.com/BishopFox) | [sliver](https://github.com/BishopFox/sliver) | 10344 | Adversary Emulation Framework | 2025-12-12T18:58:40Z |
+| [BishopFox](https://github.com/BishopFox) | [sliver](https://github.com/BishopFox/sliver) | 10346 | Adversary Emulation Framework | 2025-12-13T18:33:07Z |
 | [Brum3ns](https://github.com/Brum3ns) | [encode](https://github.com/Brum3ns/encode) | 19 | Script to read input from stdin and encode it | 2025-05-06T03:12:39Z |
 | [BuffaloWill](https://github.com/BuffaloWill) | [whoiswatcher](https://github.com/BuffaloWill/whoiswatcher) | 43 | Do bulk whois lookups and get alerted on domains of interest. | 2025-11-22T23:23:46Z |
-| [BurntSushi](https://github.com/BurntSushi) | [ripgrep](https://github.com/BurntSushi/ripgrep) | 58009 | ripgrep recursively searches directories for a regex pattern while respecting your gitignore | 2025-12-12T22:40:54Z |
-| [Canop](https://github.com/Canop) | [broot](https://github.com/Canop/broot) | 12170 | A new way to see and navigate directory trees : https://dystroy.org/broot | 2025-12-11T21:02:41Z |
+| [BurntSushi](https://github.com/BurntSushi) | [ripgrep](https://github.com/BurntSushi/ripgrep) | 58033 | ripgrep recursively searches directories for a regex pattern while respecting your gitignore | 2025-12-13T21:53:28Z |
+| [Canop](https://github.com/Canop) | [broot](https://github.com/Canop/broot) | 12178 | A new way to see and navigate directory trees : https://dystroy.org/broot | 2025-12-13T22:31:49Z |
 | [Canop](https://github.com/Canop) | [dysk](https://github.com/Canop/dysk) | 2578 | A linux utility to get information on filesystems, like df but better | 2025-12-12T13:20:37Z |
 | [Chleba](https://github.com/Chleba) | [netscanner](https://github.com/Chleba/netscanner) | 1496 | Terminal Network scanner & diagnostic tool with modern TUI | 2025-12-12T22:34:32Z |
-| [ChrisTitusTech](https://github.com/ChrisTitusTech) | [linutil](https://github.com/ChrisTitusTech/linutil) | 4579 | Chris Titus Techs Linux Toolbox - Linutil is a distro-agnostic toolbox designed to simplify everyday Linux tasks. | 2025-12-12T15:51:15Z |
+| [ChrisTitusTech](https://github.com/ChrisTitusTech) | [linutil](https://github.com/ChrisTitusTech/linutil) | 4580 | Chris Titus Techs Linux Toolbox - Linutil is a distro-agnostic toolbox designed to simplify everyday Linux tasks. | 2025-12-13T19:54:36Z |
 | [CleanCut](https://github.com/CleanCut) | [headtail](https://github.com/CleanCut/headtail) | 46 | head and tail simultaneously | 2025-12-03T17:13:49Z |
-| [ClementTsang](https://github.com/ClementTsang) | [bottom](https://github.com/ClementTsang/bottom) | 12422 | Yet another cross-platform graphical process/system monitor. | 2025-12-12T23:11:35Z |
+| [ClementTsang](https://github.com/ClementTsang) | [bottom](https://github.com/ClementTsang/bottom) | 12424 | Yet another cross-platform graphical process/system monitor. | 2025-12-13T18:21:06Z |
 | [Code-Hex](https://github.com/Code-Hex) | [Neo-cowsay](https://github.com/Code-Hex/Neo-cowsay) | 340 | 🐮 cowsay is reborn. Neo Cowsay has written in Go. | 2025-12-04T05:16:18Z |
 | [CodeDead](https://github.com/CodeDead) | [Advanced-PassGen](https://github.com/CodeDead/Advanced-PassGen) | 77 | Advanced Password Generator | 2025-12-04T12:56:51Z |
 | [ColinIanKing](https://github.com/ColinIanKing) | [cpustat](https://github.com/ColinIanKing/cpustat) | 19 | cpustat periodically dumps out the current CPU utilisation statistics of running processes. cpustat has been optimised to have a minimal CPU overhead and typically uses about 35% of the CPU compared to top. cpustat also includes some simple statistical analysis options that can help characterise the way CPUs are being loaded. | 2025-04-10T13:56:48Z |
-| [ColinIanKing](https://github.com/ColinIanKing) | [forkstat](https://github.com/ColinIanKing/forkstat) | 112 | Forkstat is a program that logs process fork(), exec() and exit() activity. It is useful for monitoring system behaviour and to track down rogue processes that are spawning off processes and potentially abusing the system. | 2025-12-12T01:05:48Z |
+| [ColinIanKing](https://github.com/ColinIanKing) | [forkstat](https://github.com/ColinIanKing/forkstat) | 113 | Forkstat is a program that logs process fork(), exec() and exit() activity. It is useful for monitoring system behaviour and to track down rogue processes that are spawning off processes and potentially abusing the system. | 2025-12-13T02:10:29Z |
 | [ColinIanKing](https://github.com/ColinIanKing) | [pagemon](https://github.com/ColinIanKing/pagemon) | 46 | Pagemon is an interactive memory/page monitoring tool allowing one to browse the memory map of an active running process. | 2025-10-08T02:40:07Z |
 | [ColinIanKing](https://github.com/ColinIanKing) | [powerstat](https://github.com/ColinIanKing/powerstat) | 170 | Powerstat measures the power consumption of a machine using the battery stats or the Intel RAPL interface. The output is like vmstat but also shows power consumption statistics. At the end of a run, powerstat will calculate the average, standard deviation and min/max of the gathered data. | 2025-12-11T11:59:00Z |
 | [ColinIanKing](https://github.com/ColinIanKing) | [sluice](https://github.com/ColinIanKing/sluice) | 8 | Sluice is a program that reads input on stdin and outputs on stdout at a specified data rate. | 2025-07-24T10:17:29Z |
 | [ColinIanKing](https://github.com/ColinIanKing) | [smemstat](https://github.com/ColinIanKing/smemstat) | 32 | Smemstat reports the physical memory usage taking into consideration shared memory. The tool can either report a current snapshot of memory usage or periodically dump out any changes in memory. | 2025-11-11T15:38:15Z |
-| [ColinIanKing](https://github.com/ColinIanKing) | [stress-ng](https://github.com/ColinIanKing/stress-ng) | 2420 | This is the stress-ng upstream project git repository.  stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces. | 2025-12-11T16:53:45Z |
-| [DNSCrypt](https://github.com/DNSCrypt) | [dnscrypt-proxy](https://github.com/DNSCrypt/dnscrypt-proxy) | 12736 | dnscrypt-proxy 2 - A flexible DNS proxy, with support for encrypted DNS protocols. | 2025-12-12T12:26:47Z |
-| [DNSCrypt](https://github.com/DNSCrypt) | [encrypted-dns-server](https://github.com/DNSCrypt/encrypted-dns-server) | 1201 | An easy to install, high-performance, zero maintenance proxy to run an encrypted DNS server. | 2025-12-10T07:19:50Z |
-| [DarthSim](https://github.com/DarthSim) | [overmind](https://github.com/DarthSim/overmind) | 3381 | Process manager for Procfile-based applications and tmux | 2025-12-12T03:44:12Z |
-| [Diniboy1123](https://github.com/Diniboy1123) | [usque](https://github.com/Diniboy1123/usque) | 527 | Open-source reimplementation of the Cloudflare WARP clients MASQUE protocol. | 2025-12-11T22:11:38Z |
-| [DominicBreuker](https://github.com/DominicBreuker) | [pspy](https://github.com/DominicBreuker/pspy) | 5801 | Monitor linux processes without root permissions | 2025-12-12T22:15:27Z |
-| [Dr-Noob](https://github.com/Dr-Noob) | [cpufetch](https://github.com/Dr-Noob/cpufetch) | 2074 | Simple yet fancy CPU architecture fetching tool | 2025-12-11T14:51:53Z |
+| [ColinIanKing](https://github.com/ColinIanKing) | [stress-ng](https://github.com/ColinIanKing/stress-ng) | 2420 | This is the stress-ng upstream project git repository.  stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces. | 2025-12-13T11:43:22Z |
+| [DNSCrypt](https://github.com/DNSCrypt) | [dnscrypt-proxy](https://github.com/DNSCrypt/dnscrypt-proxy) | 12739 | dnscrypt-proxy 2 - A flexible DNS proxy, with support for encrypted DNS protocols. | 2025-12-13T20:22:53Z |
+| [DNSCrypt](https://github.com/DNSCrypt) | [encrypted-dns-server](https://github.com/DNSCrypt/encrypted-dns-server) | 1202 | An easy to install, high-performance, zero maintenance proxy to run an encrypted DNS server. | 2025-12-13T16:33:56Z |
+| [DarthSim](https://github.com/DarthSim) | [overmind](https://github.com/DarthSim/overmind) | 3382 | Process manager for Procfile-based applications and tmux | 2025-12-13T10:30:41Z |
+| [Diniboy1123](https://github.com/Diniboy1123) | [usque](https://github.com/Diniboy1123/usque) | 531 | Open-source reimplementation of the Cloudflare WARP clients MASQUE protocol. | 2025-12-13T22:23:15Z |
+| [DominicBreuker](https://github.com/DominicBreuker) | [pspy](https://github.com/DominicBreuker/pspy) | 5803 | Monitor linux processes without root permissions | 2025-12-13T13:40:59Z |
+| [Dr-Noob](https://github.com/Dr-Noob) | [cpufetch](https://github.com/Dr-Noob/cpufetch) | 2075 | Simple yet fancy CPU architecture fetching tool | 2025-12-13T14:44:40Z |
 | [Duncaen](https://github.com/Duncaen) | [OpenDoas](https://github.com/Duncaen/OpenDoas) | 700 | A portable fork of the OpenBSD doas command | 2025-12-11T20:09:04Z |
 | [EFForg](https://github.com/EFForg) | [apkeep](https://github.com/EFForg/apkeep) | 1450 | A command-line tool for downloading APK files from various sources | 2025-12-12T20:45:58Z |
 | [EatonChips](https://github.com/EatonChips) | [yalis](https://github.com/EatonChips/yalis) | 33 | Yet Another LinkedIn Scraper | 2025-04-24T22:40:38Z |
-| [EdJoPaTo](https://github.com/EdJoPaTo) | [mqttui](https://github.com/EdJoPaTo/mqttui) | 600 | Subscribe to a MQTT Topic or publish something quickly from the terminal | 2025-12-10T18:53:25Z |
+| [EdJoPaTo](https://github.com/EdJoPaTo) | [mqttui](https://github.com/EdJoPaTo/mqttui) | 601 | Subscribe to a MQTT Topic or publish something quickly from the terminal | 2025-12-13T00:41:52Z |
 | [EgeBalci](https://github.com/EgeBalci) | [deoptimizer](https://github.com/EgeBalci/deoptimizer) | 409 | Evasion by machine code de-optimization. | 2025-12-09T16:24:30Z |
-| [EnableSecurity](https://github.com/EnableSecurity) | [wafw00f](https://github.com/EnableSecurity/wafw00f) | 6041 | WAFW00F allows one to identify and fingerprint Web Application Firewall (WAF) products protecting a website. | 2025-12-12T12:14:06Z |
+| [EnableSecurity](https://github.com/EnableSecurity) | [wafw00f](https://github.com/EnableSecurity/wafw00f) | 6047 | WAFW00F allows one to identify and fingerprint Web Application Firewall (WAF) products protecting a website. | 2025-12-13T21:08:09Z |
 | [Eun](https://github.com/Eun) | [logtimer](https://github.com/Eun/logtimer) | 11 | Enhance your output with a timer / date | 2025-02-17T09:00:32Z |
 | [Eun](https://github.com/Eun) | [sshkeys](https://github.com/Eun/sshkeys) | 21 | Get all ssh public keys of a ssh server | 2025-02-17T09:01:59Z |
-| [FWGS](https://github.com/FWGS) | [xash3d-fwgs](https://github.com/FWGS/xash3d-fwgs) | 2229 | Xash3D FWGS engine | 2025-12-12T19:36:52Z |
+| [FWGS](https://github.com/FWGS) | [xash3d-fwgs](https://github.com/FWGS/xash3d-fwgs) | 2232 | Xash3D FWGS engine | 2025-12-13T23:23:17Z |
 | [FalconForceTeam](https://github.com/FalconForceTeam) | [FalconHound](https://github.com/FalconForceTeam/FalconHound) | 819 | FalconHound is a blue team multi-tool. It allows you to utilize and enhance the power of BloodHound in a more automated fashion. It is designed to be used in conjunction with a SIEM or other log aggregation tool. | 2025-12-09T19:28:05Z |
-| [FalconOpsLLC](https://github.com/FalconOpsLLC) | [udpz](https://github.com/FalconOpsLLC/udpz) | 115 | Speedy probe-based UDP service scanner | 2025-12-10T11:46:25Z |
+| [FalconOpsLLC](https://github.com/FalconOpsLLC) | [udpz](https://github.com/FalconOpsLLC/udpz) | 116 | Speedy probe-based UDP service scanner | 2025-12-13T01:08:47Z |
 | [FedericoPonzi](https://github.com/FedericoPonzi) | [Horust](https://github.com/FedericoPonzi/Horust) | 240 | Horust is a supervisor / init system written in rust and designed to run inside containers. | 2025-12-04T03:21:57Z |
-| [FiloSottile](https://github.com/FiloSottile) | [age](https://github.com/FiloSottile/age) | 20326 | A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability. | 2025-12-12T22:24:30Z |
-| [Findomain](https://github.com/Findomain) | [Findomain](https://github.com/Findomain/Findomain) | 3641 | The fastest and complete solution for domain recognition. Supports screenshoting, port scan, HTTP check, data import from other tools, subdomain monitoring, alerts via Discord, Slack and Telegram, multiple API Keys for sources and much more. | 2025-12-12T19:58:08Z |
+| [FiloSottile](https://github.com/FiloSottile) | [age](https://github.com/FiloSottile/age) | 20330 | A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability. | 2025-12-13T15:00:39Z |
+| [Findomain](https://github.com/Findomain) | [Findomain](https://github.com/Findomain/Findomain) | 3642 | The fastest and complete solution for domain recognition. Supports screenshoting, port scan, HTTP check, data import from other tools, subdomain monitoring, alerts via Discord, Slack and Telegram, multiple API Keys for sources and much more. | 2025-12-13T01:10:56Z |
 | [Foxboron](https://github.com/Foxboron) | [sbctl](https://github.com/Foxboron/sbctl) | 1952 | :computer: :lock: :key: Secure Boot key manager | 2025-12-12T21:32:30Z |
 | [Francesco149](https://github.com/Francesco149) | [nolibc-httpd](https://github.com/Francesco149/nolibc-httpd) | 106 | 1kb single-page http server, static binary for linux x86_64 | 2025-11-26T08:32:17Z |
-| [FreeRDP](https://github.com/FreeRDP) | [FreeRDP](https://github.com/FreeRDP/FreeRDP) | 12594 | FreeRDP is a free remote desktop protocol library and clients | 2025-12-12T21:46:13Z |
-| [FunkinCrew](https://github.com/FunkinCrew) | [Funkin](https://github.com/FunkinCrew/Funkin) | 3402 | A rhythm game made with HaxeFlixel | 2025-12-12T15:57:46Z |
-| [GitoxideLabs](https://github.com/GitoxideLabs) | [gitoxide](https://github.com/GitoxideLabs/gitoxide) | 10620 | An idiomatic, lean, fast & safe pure Rust implementation of Git | 2025-12-12T22:17:08Z |
+| [FreeRDP](https://github.com/FreeRDP) | [FreeRDP](https://github.com/FreeRDP/FreeRDP) | 12594 | FreeRDP is a free remote desktop protocol library and clients | 2025-12-13T16:32:29Z |
+| [FunkinCrew](https://github.com/FunkinCrew) | [Funkin](https://github.com/FunkinCrew/Funkin) | 3404 | A rhythm game made with HaxeFlixel | 2025-12-13T21:19:23Z |
+| [GitoxideLabs](https://github.com/GitoxideLabs) | [gitoxide](https://github.com/GitoxideLabs/gitoxide) | 10623 | An idiomatic, lean, fast & safe pure Rust implementation of Git | 2025-12-13T19:14:00Z |
 | [GoToolSharing](https://github.com/GoToolSharing) | [htb-cli](https://github.com/GoToolSharing/htb-cli) | 137 | Interact with Hackthebox using your terminal - Be faster and more competitive ! | 2025-12-12T18:25:39Z |
-| [Goldziher](https://github.com/Goldziher) | [uncomment](https://github.com/Goldziher/uncomment) | 26 | Blazingly fast CLI to remove comments from code using tree-sitter grammers | 2025-12-12T20:49:52Z |
+| [Goldziher](https://github.com/Goldziher) | [uncomment](https://github.com/Goldziher/uncomment) | 26 | Blazingly fast CLI to remove comments from code using tree-sitter grammers | 2025-12-13T19:12:02Z |
 | [Hackmanit](https://github.com/Hackmanit) | [TInjA](https://github.com/Hackmanit/TInjA) | 397 | TInjA is a CLI tool for testing web pages for template injection vulnerabilities and supports 44 of the most relevant template engines for eight different programming languages. | 2025-12-11T14:03:41Z |
 | [Hackmanit](https://github.com/Hackmanit) | [Web-Cache-Vulnerability-Scanner](https://github.com/Hackmanit/Web-Cache-Vulnerability-Scanner) | 1061 | Web Cache Vulnerability Scanner is a Go-based CLI tool for testing for web cache poisoning. It is developed by Hackmanit GmbH (http://hackmanit.de/). | 2025-12-11T18:34:38Z |
 | [HarshVaragiya](https://github.com/HarshVaragiya) | [sslsearch](https://github.com/HarshVaragiya/sslsearch) | 40 | Hunt SSL Certificates for interesting keywords on major cloud service providers / internet | 2025-11-17T02:10:56Z |
@@ -80,7 +80,7 @@
 | [HuntDownProject](https://github.com/HuntDownProject) | [HEDnsExtractor](https://github.com/HuntDownProject/HEDnsExtractor) | 373 | A suite for hunting suspicious targets, expose domains and phishing discovery | 2025-11-30T08:29:48Z |
 | [ImAyrix](https://github.com/ImAyrix) | [cut-cdn](https://github.com/ImAyrix/cut-cdn) | 343 | ✂️ Removing CDN IPs from the list of IP addresses | 2025-12-10T12:03:44Z |
 | [ItsIgnacioPortal](https://github.com/ItsIgnacioPortal) | [Hacker-Scoper](https://github.com/ItsIgnacioPortal/Hacker-Scoper) | 34 | CLI tool for filtering URLs/IPs with automatically-updated Bug Bounty program scope rules. | 2025-12-09T13:48:54Z |
-| [JFryy](https://github.com/JFryy) | [qq](https://github.com/JFryy/qq) | 682 | jq, but with many interoperable configuration format transcodings and interactive querying. | 2025-12-12T10:02:21Z |
+| [JFryy](https://github.com/JFryy) | [qq](https://github.com/JFryy/qq) | 683 | jq, but with many interoperable configuration format transcodings and interactive querying. | 2025-12-13T00:51:44Z |
 | [JakWai01](https://github.com/JakWai01) | [lurk](https://github.com/JakWai01/lurk) | 1070 | A pretty (simple) alternative to strace | 2025-12-09T13:53:29Z |
 | [JakeWharton](https://github.com/JakeWharton) | [uniqtoo](https://github.com/JakeWharton/uniqtoo) | 64 | A version of sort  uniq -c with output that updates in real-time as each line is parsed | 2025-12-12T19:07:55Z |
 | [Josue87](https://github.com/Josue87) | [AnalyticsRelationships](https://github.com/Josue87/AnalyticsRelationships) | 248 | Get related domains / subdomains by looking at Google Analytics IDs | 2025-12-09T13:45:27Z |
@@ -88,43 +88,43 @@
 | [Josue87](https://github.com/Josue87) | [MetaFinder](https://github.com/Josue87/MetaFinder) | 219 | Search for documents in a domain through Search Engines (Google, Bing and Baidu). The objective is to extract metadata | 2025-12-09T13:42:15Z |
 | [Josue87](https://github.com/Josue87) | [gotator](https://github.com/Josue87/gotator) | 499 | Gotator is a tool to generate DNS wordlists through permutations. | 2025-12-12T22:06:33Z |
 | [Josue87](https://github.com/Josue87) | [roboxtractor](https://github.com/Josue87/roboxtractor) | 58 | Extract endpoints marked as disallow in robots files to generate wordlists. | 2025-11-24T08:19:58Z |
-| [KRTirtho](https://github.com/KRTirtho) | [spotube](https://github.com/KRTirtho/spotube) | 43005 | 🎧 Open source music streaming app! Available for both desktop & mobile! | 2025-12-12T22:55:32Z |
+| [KRTirtho](https://github.com/KRTirtho) | [spotube](https://github.com/KRTirtho/spotube) | 43025 | 🎧 Open source music streaming app! Available for both desktop & mobile! | 2025-12-13T22:19:00Z |
 | [KathanP19](https://github.com/KathanP19) | [Gxss](https://github.com/KathanP19/Gxss) | 599 | A tool to check a bunch of URLs that contain reflecting params. | 2025-12-09T13:40:16Z |
 | [KathanP19](https://github.com/KathanP19) | [waybackfetch](https://github.com/KathanP19/waybackfetch) | 24 | Tool for fetching all the available waybackmachine snapshot urls | 2025-08-23T08:16:00Z |
 | [KhronosGroup](https://github.com/KhronosGroup) | [SPIRV-Tools](https://github.com/KhronosGroup/SPIRV-Tools) | 1260 | No description provided. | 2025-12-12T16:21:19Z |
-| [KittyKatt](https://github.com/KittyKatt) | [screenFetch](https://github.com/KittyKatt/screenFetch) | 4022 | Fetches system/theme information in terminal for Linux desktop screenshots. | 2025-12-04T13:26:27Z |
-| [LibreSprite](https://github.com/LibreSprite) | [LibreSprite](https://github.com/LibreSprite/LibreSprite) | 6694 | Animated sprite editor & pixel art tool -- Fork of the last GPLv2 commit of Aseprite | 2025-12-12T14:47:07Z |
-| [Lifailon](https://github.com/Lifailon) | [lazyjournal](https://github.com/Lifailon/lazyjournal) | 978 | A TUI for reading logs from journald, auditd, file system, Docker containers, Compose stacks, Podman and Kubernetes pods with support for output coloring and multiple filtering modes. | 2025-12-12T23:36:02Z |
-| [Macchina-CLI](https://github.com/Macchina-CLI) | [macchina](https://github.com/Macchina-CLI/macchina) | 1812 | A system information frontend with an emphasis on performance. | 2025-12-12T14:35:30Z |
-| [MandConsultingGroup](https://github.com/MandConsultingGroup) | [porch-pirate](https://github.com/MandConsultingGroup/porch-pirate) | 441 | Porch Pirate is the most comprehensive Postman recon / OSINT client and framework that facilitates the automated discovery and exploitation of API endpoints and secrets committed to workspaces, collections, requests, users and teams. Porch Pirate can be used as a client or be incorporated into your own applications. | 2025-12-06T12:48:01Z |
-| [MediaArea](https://github.com/MediaArea) | [MediaInfo](https://github.com/MediaArea/MediaInfo) | 1761 | Convenient unified display of the most relevant technical and tag data for video and audio files. | 2025-12-11T20:58:53Z |
+| [KittyKatt](https://github.com/KittyKatt) | [screenFetch](https://github.com/KittyKatt/screenFetch) | 4025 | Fetches system/theme information in terminal for Linux desktop screenshots. | 2025-12-13T21:08:43Z |
+| [LibreSprite](https://github.com/LibreSprite) | [LibreSprite](https://github.com/LibreSprite/LibreSprite) | 6700 | Animated sprite editor & pixel art tool -- Fork of the last GPLv2 commit of Aseprite | 2025-12-13T22:47:35Z |
+| [Lifailon](https://github.com/Lifailon) | [lazyjournal](https://github.com/Lifailon/lazyjournal) | 987 | A TUI for reading logs from journald, auditd, file system, Docker containers, Compose stacks, Podman and Kubernetes pods with support for output coloring and multiple filtering modes. | 2025-12-13T23:27:56Z |
+| [Macchina-CLI](https://github.com/Macchina-CLI) | [macchina](https://github.com/Macchina-CLI/macchina) | 1815 | A system information frontend with an emphasis on performance. | 2025-12-13T12:25:05Z |
+| [MandConsultingGroup](https://github.com/MandConsultingGroup) | [porch-pirate](https://github.com/MandConsultingGroup/porch-pirate) | 443 | Porch Pirate is the most comprehensive Postman recon / OSINT client and framework that facilitates the automated discovery and exploitation of API endpoints and secrets committed to workspaces, collections, requests, users and teams. Porch Pirate can be used as a client or be incorporated into your own applications. | 2025-12-13T22:58:09Z |
+| [MediaArea](https://github.com/MediaArea) | [MediaInfo](https://github.com/MediaArea/MediaInfo) | 1762 | Convenient unified display of the most relevant technical and tag data for video and audio files. | 2025-12-13T21:05:40Z |
 | [Merklemap](https://github.com/Merklemap) | [merklemap-cli](https://github.com/Merklemap/merklemap-cli) | 149 | Discover and enumerate all subdomains associated with a website, including those not publicly advertised. Use this tool to conduct thorough security assessments, validate your organizations digital footprint, or enhance your reconnaissance capabilities for penetration testing and bug bounty hunting. | 2025-11-30T04:35:50Z |
-| [Mic92](https://github.com/Mic92) | [cntr](https://github.com/Mic92/cntr) | 874 | A container debugging tool based on FUSE | 2025-12-12T21:40:16Z |
+| [Mic92](https://github.com/Mic92) | [cntr](https://github.com/Mic92/cntr) | 875 | A container debugging tool based on FUSE | 2025-12-13T23:12:54Z |
 | [RuriOSS](https://github.com/RuriOSS) | [ruri](https://github.com/RuriOSS/ruri) | 166 | A zipped Linux container runtime that zips (Lightweight User-friendly Linux-container Implementation) | 2025-12-08T12:06:49Z |
-| [brosck](https://github.com/brosck) | [mantra](https://github.com/brosck/mantra) | 809 | 「🔑」A tool used to hunt down API key leaks in JS files and pages | 2025-12-12T00:57:35Z |
+| [brosck](https://github.com/brosck) | [mantra](https://github.com/brosck/mantra) | 810 | 「🔑」A tool used to hunt down API key leaks in JS files and pages | 2025-12-13T01:12:16Z |
 | [NHAS](https://github.com/NHAS) | [reverse_ssh](https://github.com/NHAS/reverse_ssh) | 1298 | SSH based reverse shell | 2025-12-11T15:56:12Z |
 | [NilsIrl](https://github.com/NilsIrl) | [dockerc](https://github.com/NilsIrl/dockerc) | 4846 | container image to single executable compiler | 2025-12-12T16:28:08Z |
-| [NixOS](https://github.com/NixOS) | [patchelf](https://github.com/NixOS/patchelf) | 4099 | A small utility to modify the dynamic linker and RPATH of ELF executables | 2025-12-11T14:17:27Z |
-| [OJ](https://github.com/OJ) | [gobuster](https://github.com/OJ/gobuster) | 13115 | Directory/File, DNS and VHost busting tool written in Go | 2025-12-12T22:52:01Z |
+| [NixOS](https://github.com/NixOS) | [patchelf](https://github.com/NixOS/patchelf) | 4099 | A small utility to modify the dynamic linker and RPATH of ELF executables | 2025-12-13T18:37:16Z |
+| [OJ](https://github.com/OJ) | [gobuster](https://github.com/OJ/gobuster) | 13121 | Directory/File, DNS and VHost busting tool written in Go | 2025-12-13T19:03:07Z |
 | [OkamiW](https://github.com/OkamiW) | [proxy-ns](https://github.com/OkamiW/proxy-ns) | 57 | Run programs in a network namespace where all traffic go through proxy | 2025-12-09T19:26:29Z |
 | [Old-Man-Programmer](https://github.com/Old-Man-Programmer) | [tree](https://github.com/Old-Man-Programmer/tree) | 269 | Tree for Unix/LInux | 2025-12-11T21:02:33Z |
-| [OpenVPN](https://github.com/OpenVPN) | [openvpn](https://github.com/OpenVPN/openvpn) | 12914 | OpenVPN  is  an open source VPN daemon | 2025-12-12T21:46:48Z |
-| [Orange-OpenSource](https://github.com/Orange-OpenSource) | [hurl](https://github.com/Orange-OpenSource/hurl) | 18246 | Hurl, run and test HTTP requests with plain text. | 2025-12-12T20:13:05Z |
-| [OrangeDrangon](https://github.com/OrangeDrangon) | [android-messages-desktop](https://github.com/OrangeDrangon/android-messages-desktop) | 402 | Android Messages as a Cross-platform Desktop App | 2025-12-03T13:12:54Z |
-| [PaddiM8](https://github.com/PaddiM8) | [kalker](https://github.com/PaddiM8/kalker) | 1826 | Scientific calculator with math syntax that supports user-defined variables and functions, complex numbers, and estimation of derivatives and integrals | 2025-12-12T19:21:02Z |
-| [PaulJuliusMartinez](https://github.com/PaulJuliusMartinez) | [jless](https://github.com/PaulJuliusMartinez/jless) | 5193 | jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data. | 2025-12-12T10:27:33Z |
-| [Pennyw0rth](https://github.com/Pennyw0rth) | [NetExec](https://github.com/Pennyw0rth/NetExec) | 5007 | The Network Execution Tool | 2025-12-12T20:47:26Z |
+| [OpenVPN](https://github.com/OpenVPN) | [openvpn](https://github.com/OpenVPN/openvpn) | 12923 | OpenVPN  is  an open source VPN daemon | 2025-12-13T19:25:08Z |
+| [Orange-OpenSource](https://github.com/Orange-OpenSource) | [hurl](https://github.com/Orange-OpenSource/hurl) | 18250 | Hurl, run and test HTTP requests with plain text. | 2025-12-13T09:55:51Z |
+| [OrangeDrangon](https://github.com/OrangeDrangon) | [android-messages-desktop](https://github.com/OrangeDrangon/android-messages-desktop) | 404 | Android Messages as a Cross-platform Desktop App | 2025-12-13T17:03:26Z |
+| [PaddiM8](https://github.com/PaddiM8) | [kalker](https://github.com/PaddiM8/kalker) | 1827 | Scientific calculator with math syntax that supports user-defined variables and functions, complex numbers, and estimation of derivatives and integrals | 2025-12-13T22:11:04Z |
+| [PaulJuliusMartinez](https://github.com/PaulJuliusMartinez) | [jless](https://github.com/PaulJuliusMartinez/jless) | 5195 | jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data. | 2025-12-13T21:21:04Z |
+| [Pennyw0rth](https://github.com/Pennyw0rth) | [NetExec](https://github.com/Pennyw0rth/NetExec) | 5008 | The Network Execution Tool | 2025-12-13T00:54:08Z |
 | [Picocrypt](https://github.com/Picocrypt) | [CLI](https://github.com/Picocrypt/CLI) | 74 | A command-line interface for Picocrypt. | 2025-11-25T19:48:55Z |
-| [PurpleI2P](https://github.com/PurpleI2P) | [i2pd](https://github.com/PurpleI2P/i2pd) | 3737 | 🛡 I2P: End-to-End encrypted and anonymous Internet | 2025-12-12T18:48:42Z |
+| [PurpleI2P](https://github.com/PurpleI2P) | [i2pd](https://github.com/PurpleI2P/i2pd) | 3738 | 🛡 I2P: End-to-End encrypted and anonymous Internet | 2025-12-13T20:15:02Z |
 | [R3DRUN3](https://github.com/R3DRUN3) | [vermilion](https://github.com/R3DRUN3/vermilion) | 90 | Linux post exploitation tool for info gathering and exfiltration 🐧📡💀 | 2025-12-08T14:01:22Z |
 | [Racum](https://github.com/Racum) | [uuinfo](https://github.com/Racum/uuinfo) | 57 | A tool to debug unique identifiers (UUID, ULID, Snowflake, etc). | 2025-12-10T22:30:48Z |
-| [RasmusLindroth](https://github.com/RasmusLindroth) | [tut](https://github.com/RasmusLindroth/tut) | 483 | TUI for Mastodon with vim inspired keys | 2025-12-03T02:47:41Z |
+| [RasmusLindroth](https://github.com/RasmusLindroth) | [tut](https://github.com/RasmusLindroth/tut) | 484 | TUI for Mastodon with vim inspired keys | 2025-12-13T04:26:00Z |
 | [RedTeamPentesting](https://github.com/RedTeamPentesting) | [pretender](https://github.com/RedTeamPentesting/pretender) | 1239 | Your MitM sidekick for relaying attacks featuring DHCPv6 DNS takeover as well as mDNS, LLMNR and NetBIOS-NS spoofing. | 2025-12-11T16:11:13Z |
-| [RubyMetric](https://github.com/RubyMetric) | [chsrc](https://github.com/RubyMetric/chsrc) | 6501 | chsrc 全平台通用换源工具与框架. Change Source everywhere for every software | 2025-12-12T16:30:55Z |
-| [bee-san](https://github.com/bee-san) | [RustScan](https://github.com/bee-san/RustScan) | 18681 | 🤖 The Modern Port Scanner 🤖 | 2025-12-12T20:25:53Z |
-| [SSLMate](https://github.com/SSLMate) | [certspotter](https://github.com/SSLMate/certspotter) | 1112 | Certificate Transparency Log Monitor | 2025-12-07T13:14:19Z |
-| [SagerNet](https://github.com/SagerNet) | [sing-box](https://github.com/SagerNet/sing-box) | 28841 | The universal proxy platform | 2025-12-12T23:28:11Z |
-| [Schniz](https://github.com/Schniz) | [fnm](https://github.com/Schniz/fnm) | 22964 | 🚀 Fast and simple Node.js version manager, built in Rust | 2025-12-12T23:29:17Z |
+| [RubyMetric](https://github.com/RubyMetric) | [chsrc](https://github.com/RubyMetric/chsrc) | 6510 | chsrc 全平台通用换源工具与框架. Change Source everywhere for every software | 2025-12-13T15:55:17Z |
+| [bee-san](https://github.com/bee-san) | [RustScan](https://github.com/bee-san/RustScan) | 18686 | 🤖 The Modern Port Scanner 🤖 | 2025-12-13T23:23:11Z |
+| [SSLMate](https://github.com/SSLMate) | [certspotter](https://github.com/SSLMate/certspotter) | 1113 | Certificate Transparency Log Monitor | 2025-12-13T21:04:20Z |
+| [SagerNet](https://github.com/SagerNet) | [sing-box](https://github.com/SagerNet/sing-box) | 28857 | The universal proxy platform | 2025-12-13T22:25:55Z |
+| [Schniz](https://github.com/Schniz) | [fnm](https://github.com/Schniz/fnm) | 22972 | 🚀 Fast and simple Node.js version manager, built in Rust | 2025-12-13T11:25:12Z |
 | [Seirdy](https://github.com/Seirdy) | [moac](https://github.com/Seirdy/moac) | 21 | Generate passwords and analyze their strength given physical limits to computation | 2025-12-06T15:33:56Z |
 | [Sh1Yo](https://github.com/Sh1Yo) | [x8](https://github.com/Sh1Yo/x8) | 1961 | Hidden parameters discovery suite | 2025-12-10T05:20:35Z |
 | [Skardyy](https://github.com/Skardyy) | [ttyimg](https://github.com/Skardyy/ttyimg) | 23 | cross platform terminal image viewer | 2025-11-06T11:07:43Z |
@@ -134,248 +134,248 @@
 | [TheYahya](https://github.com/TheYahya) | [enola](https://github.com/TheYahya/enola) | 809 | This is Sherlocks sister, Modern shiny CLI tool written with Golang to help you: 🔎 Hunt down social media accounts by username across social networks | 2025-12-10T06:44:13Z |
 | [ThomasDickey](https://github.com/ThomasDickey) | [byacc-snapshots](https://github.com/ThomasDickey/byacc-snapshots) | 6 | snapshots of releases and interim labels for byacc https://invisible-island.net/personal/git-exports.html | 2025-01-01T10:52:13Z |
 | [ThomasDickey](https://github.com/ThomasDickey) | [mawk-snapshots](https://github.com/ThomasDickey/mawk-snapshots) | 28 | snapshots of releases and interim labels for mawk https://invisible-island.net/personal/git-exports.html | 2025-10-25T05:27:13Z |
-| [TibixDev](https://github.com/TibixDev) | [winboat](https://github.com/TibixDev/winboat) | 16764 | Run Windows apps on 🐧 Linux with ✨ seamless integration | 2025-12-12T22:55:50Z |
+| [TibixDev](https://github.com/TibixDev) | [winboat](https://github.com/TibixDev/winboat) | 16806 | Run Windows apps on 🐧 Linux with ✨ seamless integration | 2025-12-13T22:54:37Z |
 | [Timmmm](https://github.com/Timmmm) | [anakin](https://github.com/Timmmm/anakin) | 122 | Kill orphan processes | 2025-11-28T20:13:22Z |
 | [TimothyYe](https://github.com/TimothyYe) | [godns](https://github.com/TimothyYe/godns) | 1719 | A dynamic DNS client tool that supports AliDNS, Cloudflare, Google Domains, DNSPod, HE.net & DuckDNS & DreamHost, etc, written in Go. | 2025-12-09T15:20:22Z |
-| [TinyCC](https://github.com/TinyCC) | [tinycc](https://github.com/TinyCC/tinycc) | 2614 | Unofficial mirror of mob development branch | 2025-12-12T19:48:34Z |
+| [TinyCC](https://github.com/TinyCC) | [tinycc](https://github.com/TinyCC/tinycc) | 2617 | Unofficial mirror of mob development branch | 2025-12-13T20:56:17Z |
 | [Titor8115](https://github.com/Titor8115) | [mandown](https://github.com/Titor8115/mandown) | 288 | man-page inspired Markdown viewer | 2025-12-05T10:58:18Z |
 | [Tom5521](https://github.com/Tom5521) | [fsize](https://github.com/Tom5521/fsize) | 3 | A more readable alternative to the stat command | 2025-10-25T22:40:33Z |
-| [TomWright](https://github.com/TomWright) | [dasel](https://github.com/TomWright/dasel) | 7707 | Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package. | 2025-12-12T06:28:14Z |
+| [TomWright](https://github.com/TomWright) | [dasel](https://github.com/TomWright/dasel) | 7708 | Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package. | 2025-12-13T20:58:59Z |
 | [Tomas-M](https://github.com/Tomas-M) | [iotop](https://github.com/Tomas-M/iotop) | 611 | A top utility for IO | 2025-12-11T11:06:20Z |
-| [UltimMC](https://github.com/UltimMC) | [Launcher](https://github.com/UltimMC/Launcher) | 1675 | Offline Minecraft launcher. | 2025-12-09T13:08:50Z |
-| [Umio-Yasuno](https://github.com/Umio-Yasuno) | [amdgpu_top](https://github.com/Umio-Yasuno/amdgpu_top) | 1311 | Tool to display AMDGPU usage | 2025-12-12T19:18:41Z |
+| [UltimMC](https://github.com/UltimMC) | [Launcher](https://github.com/UltimMC/Launcher) | 1676 | Offline Minecraft launcher. | 2025-12-13T23:20:52Z |
+| [Umio-Yasuno](https://github.com/Umio-Yasuno) | [amdgpu_top](https://github.com/Umio-Yasuno/amdgpu_top) | 1314 | Tool to display AMDGPU usage | 2025-12-13T20:59:25Z |
 | [VHSgunzo](https://github.com/VHSgunzo) | [importenv](https://github.com/VHSgunzo/importenv) | 7 | Launching an executable file with environment variables from a specific process id | 2024-10-21T20:41:17Z |
 | [VHSgunzo](https://github.com/VHSgunzo) | [ulexec](https://github.com/VHSgunzo/ulexec) | 12 | A tool for loading and executing PE on Windows and ELF on Linux from memory written in Rust | 2025-10-20T09:16:51Z |
-| [VSCodium](https://github.com/VSCodium) | [vscodium](https://github.com/VSCodium/vscodium) | 29373 | binary releases of VS Code without MS branding/telemetry/licensing | 2025-12-12T20:24:10Z |
+| [VSCodium](https://github.com/VSCodium) | [vscodium](https://github.com/VSCodium/vscodium) | 29382 | binary releases of VS Code without MS branding/telemetry/licensing | 2025-12-13T22:52:04Z |
 | [Vanilla-OS](https://github.com/Vanilla-OS) | [apx](https://github.com/Vanilla-OS/apx) | 550 | Apx (/à·peks/) is the default package manager in Vanilla OS. It is a wrapper around multiple package managers to install packages and run commands inside a managed container. | 2025-12-10T23:04:53Z |
-| [Vencord](https://github.com/Vencord) | [Vesktop](https://github.com/Vencord/Vesktop) | 7113 | Vesktop is a custom Discord App aiming to give you better performance and improve linux support | 2025-12-12T21:29:48Z |
-| [ViRb3](https://github.com/ViRb3) | [wgcf](https://github.com/ViRb3/wgcf) | 7417 | 🚤 Cross-platform, unofficial CLI for Cloudflare Warp | 2025-12-12T06:12:36Z |
-| [RsyncProject](https://github.com/RsyncProject) | [rsync](https://github.com/RsyncProject/rsync) | 4032 | An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases. | 2025-12-12T12:19:31Z |
-| [WebAssembly](https://github.com/WebAssembly) | [wabt](https://github.com/WebAssembly/wabt) | 7736 | The WebAssembly Binary Toolkit | 2025-12-12T11:28:44Z |
-| [XAMPPRocky](https://github.com/XAMPPRocky) | [tokei](https://github.com/XAMPPRocky/tokei) | 13584 | Count your code, quickly. | 2025-12-12T22:36:57Z |
-| [XTLS](https://github.com/XTLS) | [Xray-core](https://github.com/XTLS/Xray-core) | 33325 | Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses. | 2025-12-12T22:23:33Z |
-| [Y2Z](https://github.com/Y2Z) | [monolith](https://github.com/Y2Z/monolith) | 14554 | ⬛️ CLI tool and library for saving complete web pages as a single HTML file | 2025-12-12T19:29:35Z |
+| [Vencord](https://github.com/Vencord) | [Vesktop](https://github.com/Vencord/Vesktop) | 7118 | Vesktop is a custom Discord App aiming to give you better performance and improve linux support | 2025-12-13T15:47:36Z |
+| [ViRb3](https://github.com/ViRb3) | [wgcf](https://github.com/ViRb3/wgcf) | 7420 | 🚤 Cross-platform, unofficial CLI for Cloudflare Warp | 2025-12-13T21:05:42Z |
+| [RsyncProject](https://github.com/RsyncProject) | [rsync](https://github.com/RsyncProject/rsync) | 4037 | An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases. | 2025-12-13T19:14:48Z |
+| [WebAssembly](https://github.com/WebAssembly) | [wabt](https://github.com/WebAssembly/wabt) | 7737 | The WebAssembly Binary Toolkit | 2025-12-12T23:50:41Z |
+| [XAMPPRocky](https://github.com/XAMPPRocky) | [tokei](https://github.com/XAMPPRocky/tokei) | 13587 | Count your code, quickly. | 2025-12-13T19:04:55Z |
+| [XTLS](https://github.com/XTLS) | [Xray-core](https://github.com/XTLS/Xray-core) | 33359 | Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses. | 2025-12-13T21:50:51Z |
+| [Y2Z](https://github.com/Y2Z) | [monolith](https://github.com/Y2Z/monolith) | 14557 | ⬛️ CLI tool and library for saving complete web pages as a single HTML file | 2025-12-13T22:34:05Z |
 | [YiNNx](https://github.com/YiNNx) | [cmd-wrapped](https://github.com/YiNNx/cmd-wrapped) | 1191 | 👩‍💻 A CLI Tool for Command Line Insights | 2025-12-09T17:01:21Z |
 | [YouChenJun](https://github.com/YouChenJun) | [CheckCdn](https://github.com/YouChenJun/CheckCdn) | 290 | 精确检查IP是否为CDN节点的工具 | 2025-12-05T10:47:28Z |
 | [YouChenJun](https://github.com/YouChenJun) | [IpHandle](https://github.com/YouChenJun/IpHandle) | 2 | 处理ip资产开放端口过多的工具 | 2024-09-25T01:28:30Z |
 | [ZerBea](https://github.com/ZerBea) | [hcxdumptool](https://github.com/ZerBea/hcxdumptool) | 2048 | Small tool to capture packets from wlan devices. | 2025-12-12T23:38:59Z |
 | [Zouuup](https://github.com/Zouuup) | [landrun](https://github.com/Zouuup/landrun) | 1990 | Run any Linux process in a secure, unprivileged sandbox using Landlock. Think firejail, but lightweight, user-friendly, and baked into the kernel. | 2025-12-12T09:43:16Z |
 | [Zweih](https://github.com/Zweih) | [qp](https://github.com/Zweih/qp) | 20 | qp - Query Packages. Query installed packages across ecosystems on Linux and macOS. | 2025-11-24T08:22:33Z |
-| [aandrew-me](https://github.com/aandrew-me) | [tgpt](https://github.com/aandrew-me/tgpt) | 2989 | AI Chatbots in terminal without needing API keys | 2025-12-11T09:26:56Z |
+| [aandrew-me](https://github.com/aandrew-me) | [tgpt](https://github.com/aandrew-me/tgpt) | 2994 | AI Chatbots in terminal without needing API keys | 2025-12-13T18:52:13Z |
 | [aaronriekenberg](https://github.com/aaronriekenberg) | [rust-parallel](https://github.com/aaronriekenberg/rust-parallel) | 254 | Fast command line app in rust/tokio to run commands in parallel.  Similar interface to GNU parallel or xargs plus useful features.  Listed in Awesome Rust utilities. | 2025-12-06T13:32:02Z |
 | [abbat](https://github.com/abbat) | [elfexec](https://github.com/abbat/elfexec) | 68 | Utility to execute ELF binary directly from stdin pipe. | 2025-10-29T12:53:18Z |
 | [abcfy2](https://github.com/abcfy2) | [aria2-static-build](https://github.com/abcfy2/aria2-static-build) | 79 | aria2 static build, support cross compile | 2025-12-06T00:48:38Z |
 | [abdfnx](https://github.com/abdfnx) | [resto](https://github.com/abdfnx/resto) | 280 | 🔗 Send pretty HTTP & API requests with TUI. | 2025-12-04T09:58:42Z |
-| [abhimanyu003](https://github.com/abhimanyu003) | [sttr](https://github.com/abhimanyu003/sttr) | 1230 | cross-platform, cli app to perform various operations on string | 2025-12-09T08:59:14Z |
-| [acassen](https://github.com/acassen) | [keepalived](https://github.com/acassen/keepalived) | 4404 | Keepalived | 2025-12-10T05:20:06Z |
+| [abhimanyu003](https://github.com/abhimanyu003) | [sttr](https://github.com/abhimanyu003/sttr) | 1230 | cross-platform, cli app to perform various operations on string | 2025-12-13T17:58:36Z |
+| [acassen](https://github.com/acassen) | [keepalived](https://github.com/acassen/keepalived) | 4405 | Keepalived | 2025-12-13T09:10:14Z |
 | [accupara](https://github.com/accupara) | [crave](https://github.com/accupara/crave) | 9 | Release vehicle for the crave command line tool | 2025-11-19T15:26:13Z |
-| [actualbudget](https://github.com/actualbudget) | [actual](https://github.com/actualbudget/actual) | 23670 | A local-first personal finance app | 2025-12-12T23:20:18Z |
+| [actualbudget](https://github.com/actualbudget) | [actual](https://github.com/actualbudget/actual) | 23678 | A local-first personal finance app | 2025-12-13T23:21:39Z |
 | [adhocore](https://github.com/adhocore) | [gronx](https://github.com/adhocore/gronx) | 482 | Lightweight, fast and dependency-free Cron expression parser (due checker, next/prev due date finder), task runner, job scheduler and/or daemon for Golang (tested on v1.13+) and standalone usage. If you are bold, use it to replace crontab entirely. | 2025-12-10T04:41:45Z |
-| [adrianlopezroche](https://github.com/adrianlopezroche) | [fdupes](https://github.com/adrianlopezroche/fdupes) | 2845 | FDUPES is a program for identifying or deleting duplicate files residing within specified directories. | 2025-12-12T08:54:51Z |
+| [adrianlopezroche](https://github.com/adrianlopezroche) | [fdupes](https://github.com/adrianlopezroche/fdupes) | 2846 | FDUPES is a program for identifying or deleting duplicate files residing within specified directories. | 2025-12-13T00:47:47Z |
 | [advanced-rest-client](https://github.com/advanced-rest-client) | [arc-electron](https://github.com/advanced-rest-client/arc-electron) | 1460 | Advanced REST Client - Desktop application | 2025-12-08T11:41:19Z |
 | [aheart](https://github.com/aheart) | [hearth](https://github.com/aheart/hearth) | 99 | Linux server monitoring via SSH 🔥📊 | 2025-12-01T10:35:05Z |
 | [air-controller](https://github.com/air-controller) | [air-controller-desktop](https://github.com/air-controller/air-controller-desktop) | 579 | A new handy and powerful Android phone assistant， powered by Flutter. | 2025-11-26T09:48:29Z |
-| [ajeetdsouza](https://github.com/ajeetdsouza) | [zoxide](https://github.com/ajeetdsouza/zoxide) | 31741 | A smarter cd command. Supports all major shells. | 2025-12-12T21:53:24Z |
+| [ajeetdsouza](https://github.com/ajeetdsouza) | [zoxide](https://github.com/ajeetdsouza/zoxide) | 31757 | A smarter cd command. Supports all major shells. | 2025-12-13T23:01:36Z |
 | [akuse-app](https://github.com/akuse-app) | [akuse](https://github.com/akuse-app/akuse) | 856 | 🌸 Simple and easy to use anime streaming desktop app without ads. | 2025-12-12T13:51:40Z |
-| [alacritty](https://github.com/alacritty) | [alacritty](https://github.com/alacritty/alacritty) | 61387 | A cross-platform, OpenGL terminal emulator. | 2025-12-12T22:18:57Z |
+| [alacritty](https://github.com/alacritty) | [alacritty](https://github.com/alacritty/alacritty) | 61409 | A cross-platform, OpenGL terminal emulator. | 2025-12-13T21:01:20Z |
 | [alajmo](https://github.com/alajmo) | [mani](https://github.com/alajmo/mani) | 633 | :robot: CLI tool to help you manage repositories | 2025-12-12T15:06:54Z |
 | [alajmo](https://github.com/alajmo) | [sake](https://github.com/alajmo/sake) | 739 | :robot: task runner for local and remote hosts | 2025-12-11T09:44:57Z |
-| [alba4k](https://github.com/alba4k) | [albafetch](https://github.com/alba4k/albafetch) | 71 | Faster neofetch alternative, written in C. Still improving :) | 2025-12-12T04:30:15Z |
+| [alba4k](https://github.com/alba4k) | [albafetch](https://github.com/alba4k/albafetch) | 71 | Faster neofetch alternative, written in C. Still improving :) | 2025-12-13T21:18:30Z |
 | [alexandres](https://github.com/alexandres) | [terashuf](https://github.com/alexandres/terashuf) | 226 | terashuf shuffles multi-terabyte text files using limited memory | 2025-11-21T09:42:38Z |
 | [alexhallam](https://github.com/alexhallam) | [tv](https://github.com/alexhallam/tv) | 2124 | 📺(tv) Tidy Viewer is a cross-platform CLI csv pretty printer that uses column styling to maximize viewer enjoyment. | 2025-12-11T14:10:11Z |
-| [AlistGo](https://github.com/AlistGo) | [alist](https://github.com/AlistGo/alist) | 48650 | 🗂️A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs。 | 2025-12-12T20:11:03Z |
+| [AlistGo](https://github.com/AlistGo) | [alist](https://github.com/AlistGo/alist) | 48645 | 🗂️A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs。 | 2025-12-13T18:23:14Z |
 | [aliyun](https://github.com/aliyun) | [aliyun-cli](https://github.com/aliyun/aliyun-cli) | 902 | Alibaba Cloud CLI | 2025-12-12T10:42:56Z |
 | [allusion-app](https://github.com/allusion-app) | [Allusion](https://github.com/allusion-app/Allusion) | 827 | A free and open source desktop application for managing your visual library | 2025-12-09T17:31:12Z |
 | [alpinelinux](https://github.com/alpinelinux) | [docker-alpine](https://github.com/alpinelinux/docker-alpine) | 1225 | Official Alpine Linux Docker image. Win at minimalism! | 2025-12-10T13:43:13Z |
-| [altair-graphql](https://github.com/altair-graphql) | [altair](https://github.com/altair-graphql/altair) | 5372 | ✨⚡️ A feature-rich GraphQL Client for all platforms. | 2025-12-12T08:19:29Z |
-| [amanharwara](https://github.com/amanharwara) | [altus](https://github.com/amanharwara/altus) | 633 | Desktop client for WhatsApp Web with themes, notifications and multiple account support | 2025-12-09T17:01:52Z |
-| [ameshkov](https://github.com/ameshkov) | [dnslookup](https://github.com/ameshkov/dnslookup) | 1037 | Simple command line utility to make DNS lookups to the specified server | 2025-12-10T14:09:26Z |
+| [altair-graphql](https://github.com/altair-graphql) | [altair](https://github.com/altair-graphql/altair) | 5373 | ✨⚡️ A feature-rich GraphQL Client for all platforms. | 2025-12-13T12:57:05Z |
+| [amanharwara](https://github.com/amanharwara) | [altus](https://github.com/amanharwara/altus) | 634 | Desktop client for WhatsApp Web with themes, notifications and multiple account support | 2025-12-13T16:39:11Z |
+| [ameshkov](https://github.com/ameshkov) | [dnslookup](https://github.com/ameshkov/dnslookup) | 1038 | Simple command line utility to make DNS lookups to the specified server | 2025-12-13T20:28:26Z |
 | [ameshkov](https://github.com/ameshkov) | [gocurl](https://github.com/ameshkov/gocurl) | 68 | Simplified version of curl written in pure Go with additional features | 2025-12-05T02:40:43Z |
-| [ameshkov](https://github.com/ameshkov) | [godnsbench](https://github.com/ameshkov/godnsbench) | 72 | Simple DNS bench util that supports encrypted protocols. | 2025-09-04T22:17:06Z |
+| [ameshkov](https://github.com/ameshkov) | [godnsbench](https://github.com/ameshkov/godnsbench) | 73 | Simple DNS bench util that supports encrypted protocols. | 2025-12-13T20:28:17Z |
 | [anandvarma](https://github.com/anandvarma) | [namegen](https://github.com/anandvarma/namegen) | 23 | 🌈 A unique(ish) random name and id generator | 2024-12-14T15:36:55Z |
 | [andyk](https://github.com/andyk) | [ht](https://github.com/andyk/ht) | 871 | headless terminal - wrap any binary with a terminal interface for easy programmatic access. | 2025-12-05T09:36:36Z |
 | [ankitpokhrel](https://github.com/ankitpokhrel) | [jira-cli](https://github.com/ankitpokhrel/jira-cli) | 4888 | 🔥 Feature-rich interactive Jira command line. | 2025-12-12T14:40:49Z |
-| [anordal](https://github.com/anordal) | [shellharden](https://github.com/anordal/shellharden) | 4730 | The corrective bash syntax highlighter | 2025-12-12T21:42:10Z |
-| [antoniomika](https://github.com/antoniomika) | [sish](https://github.com/antoniomika/sish) | 4462 | HTTP(S)/WS(S)/TCP Tunnels to localhost using only SSH. | 2025-12-12T22:24:02Z |
-| [antonmedv](https://github.com/antonmedv) | [fx](https://github.com/antonmedv/fx) | 20072 | Terminal JSON viewer & processor | 2025-12-12T22:27:02Z |
-| [antonmedv](https://github.com/antonmedv) | [walk](https://github.com/antonmedv/walk) | 3528 | Terminal file manager | 2025-12-10T03:15:07Z |
-| [apache](https://github.com/apache) | [subversion](https://github.com/apache/subversion) | 617 | Mirror of Apache Subversion | 2025-12-12T18:27:41Z |
+| [anordal](https://github.com/anordal) | [shellharden](https://github.com/anordal/shellharden) | 4732 | The corrective bash syntax highlighter | 2025-12-13T20:15:06Z |
+| [antoniomika](https://github.com/antoniomika) | [sish](https://github.com/antoniomika/sish) | 4464 | HTTP(S)/WS(S)/TCP Tunnels to localhost using only SSH. | 2025-12-13T10:19:57Z |
+| [antonmedv](https://github.com/antonmedv) | [fx](https://github.com/antonmedv/fx) | 20075 | Terminal JSON viewer & processor | 2025-12-13T21:14:40Z |
+| [antonmedv](https://github.com/antonmedv) | [walk](https://github.com/antonmedv/walk) | 3529 | Terminal file manager | 2025-12-13T00:43:23Z |
+| [apache](https://github.com/apache) | [subversion](https://github.com/apache/subversion) | 617 | Mirror of Apache Subversion | 2025-12-13T23:30:34Z |
 | [aperezdc](https://github.com/aperezdc) | [dmon](https://github.com/aperezdc/dmon) | 9 | Small process daemonization and monitorization tool. | 2025-10-25T17:30:54Z |
-| [apernet](https://github.com/apernet) | [OpenGFW](https://github.com/apernet/OpenGFW) | 11111 | OpenGFW is a flexible, easy-to-use, open source implementation of GFW (Great Firewall of China) on Linux | 2025-12-12T16:23:34Z |
+| [apernet](https://github.com/apernet) | [OpenGFW](https://github.com/apernet/OpenGFW) | 11111 | OpenGFW is a flexible, easy-to-use, open source implementation of GFW (Great Firewall of China) on Linux | 2025-12-13T17:16:04Z |
 | [apptainer](https://github.com/apptainer) | [apptainer](https://github.com/apptainer/apptainer) | 1662 | Apptainer: Application containers for Linux | 2025-12-12T20:54:33Z |
-| [aptible](https://github.com/aptible) | [supercronic](https://github.com/aptible/supercronic) | 2303 | Cron for containers | 2025-12-12T15:03:01Z |
-| [aptly-dev](https://github.com/aptly-dev) | [aptly](https://github.com/aptly-dev/aptly) | 2734 | aptly - Debian repository management tool | 2025-12-12T09:17:56Z |
+| [aptible](https://github.com/aptible) | [supercronic](https://github.com/aptible/supercronic) | 2304 | Cron for containers | 2025-12-13T05:57:34Z |
+| [aptly-dev](https://github.com/aptly-dev) | [aptly](https://github.com/aptly-dev/aptly) | 2735 | aptly - Debian repository management tool | 2025-12-13T20:23:21Z |
 | [aquasecurity](https://github.com/aquasecurity) | [docker-bench](https://github.com/aquasecurity/docker-bench) | 221 | Checks whether Docker is deployed according to security best practices as defined in the CIS Docker Benchmark | 2025-11-21T10:51:28Z |
-| [aquasecurity](https://github.com/aquasecurity) | [tracee](https://github.com/aquasecurity/tracee) | 4282 | Linux Runtime Security and Forensics using eBPF | 2025-12-12T20:09:19Z |
-| [aramperes](https://github.com/aramperes) | [onetun](https://github.com/aramperes/onetun) | 1005 | User space WireGuard port-forward in Rust | 2025-12-08T02:32:18Z |
-| [arduino](https://github.com/arduino) | [arduino-cli](https://github.com/arduino/arduino-cli) | 4741 | Arduino command line tool | 2025-12-12T20:29:38Z |
+| [aquasecurity](https://github.com/aquasecurity) | [tracee](https://github.com/aquasecurity/tracee) | 4282 | Linux Runtime Security and Forensics using eBPF | 2025-12-13T17:34:25Z |
+| [aramperes](https://github.com/aramperes) | [onetun](https://github.com/aramperes/onetun) | 1006 | User space WireGuard port-forward in Rust | 2025-12-13T13:11:17Z |
+| [arduino](https://github.com/arduino) | [arduino-cli](https://github.com/arduino/arduino-cli) | 4744 | Arduino command line tool | 2025-12-13T14:54:09Z |
 | [aretext](https://github.com/aretext) | [aretext](https://github.com/aretext/aretext) | 272 | Minimalist text editor with vim-compatible key bindings. | 2025-12-10T03:58:05Z |
-| [aristocratos](https://github.com/aristocratos) | [btop](https://github.com/aristocratos/btop) | 28979 | A monitor of resources | 2025-12-12T21:39:03Z |
-| [asciinema](https://github.com/asciinema) | [agg](https://github.com/asciinema/agg) | 1504 | asciinema gif generator | 2025-12-09T16:35:23Z |
+| [aristocratos](https://github.com/aristocratos) | [btop](https://github.com/aristocratos/btop) | 28998 | A monitor of resources | 2025-12-13T23:06:58Z |
+| [asciinema](https://github.com/asciinema) | [agg](https://github.com/asciinema/agg) | 1506 | asciinema gif generator | 2025-12-13T14:27:44Z |
 | [ashirt-ops](https://github.com/ashirt-ops) | [aterm](https://github.com/ashirt-ops/aterm) | 28 | It records your terminal, then lets you upload to ASHIRT | 2025-09-26T18:44:06Z |
 | [assetnote](https://github.com/assetnote) | [surf](https://github.com/assetnote/surf) | 697 | Escalate your SSRF vulnerabilities on Modern Cloud Environments. surf allows you to filter a list of hosts, returning a list of viable SSRF candidates. | 2025-12-10T01:49:04Z |
-| [astral-sh](https://github.com/astral-sh) | [ruff](https://github.com/astral-sh/ruff) | 44353 | An extremely fast Python linter and code formatter, written in Rust. | 2025-12-12T21:53:33Z |
-| [astral-sh](https://github.com/astral-sh) | [rye](https://github.com/astral-sh/rye) | 14314 | a Hassle-Free Python Experience | 2025-12-12T15:07:54Z |
-| [astrand](https://github.com/astrand) | [xclip](https://github.com/astrand/xclip) | 1243 | Command line interface to the X11 clipboard | 2025-12-03T09:20:55Z |
-| [atuinsh](https://github.com/atuinsh) | [atuin](https://github.com/atuinsh/atuin) | 27420 | ✨ Magical shell history | 2025-12-12T22:47:29Z |
+| [astral-sh](https://github.com/astral-sh) | [ruff](https://github.com/astral-sh/ruff) | 44364 | An extremely fast Python linter and code formatter, written in Rust. | 2025-12-13T23:35:33Z |
+| [astral-sh](https://github.com/astral-sh) | [rye](https://github.com/astral-sh/rye) | 14315 | a Hassle-Free Python Experience | 2025-12-13T18:48:18Z |
+| [astrand](https://github.com/astrand) | [xclip](https://github.com/astrand/xclip) | 1244 | Command line interface to the X11 clipboard | 2025-12-13T19:41:31Z |
+| [atuinsh](https://github.com/atuinsh) | [atuin](https://github.com/atuinsh/atuin) | 27432 | ✨ Magical shell history | 2025-12-13T22:27:42Z |
 | [avs-origami](https://github.com/avs-origami) | [moss](https://github.com/avs-origami/moss) | 17 | Tiny package manager for Linux. | 2025-11-05T10:31:08Z |
 | [amazonlinux](https://github.com/amazonlinux) | [container-images](https://github.com/amazonlinux/container-images) | 232 | Artifact repository for Amazon Linux container images | 2025-11-13T20:11:37Z |
 | [aws](https://github.com/aws) | [aperf](https://github.com/aws/aperf) | 159 | A CLI tool to gather performance data and visualize using HTML graphs. Data from multiple collection runs can be viewed side-by-side, allowing for easy comparison of the same workload across different system configurations. | 2025-12-12T21:04:01Z |
-| [ax](https://github.com/ax) | [apk.sh](https://github.com/ax/apk.sh) | 3645 | Makes reverse engineering Android apps easier, automating repetitive tasks like pulling, decoding, rebuilding and patching an APK. | 2025-12-11T09:52:57Z |
-| [axel-download-accelerator](https://github.com/axel-download-accelerator) | [axel](https://github.com/axel-download-accelerator/axel) | 3289 | Lightweight CLI download accelerator | 2025-12-12T09:49:46Z |
-| [axllent](https://github.com/axllent) | [mailpit](https://github.com/axllent/mailpit) | 8267 | An email and SMTP testing tool with API for developers | 2025-12-12T19:49:09Z |
+| [ax](https://github.com/ax) | [apk.sh](https://github.com/ax/apk.sh) | 3646 | Makes reverse engineering Android apps easier, automating repetitive tasks like pulling, decoding, rebuilding and patching an APK. | 2025-12-13T00:58:15Z |
+| [axel-download-accelerator](https://github.com/axel-download-accelerator) | [axel](https://github.com/axel-download-accelerator/axel) | 3291 | Lightweight CLI download accelerator | 2025-12-13T12:20:51Z |
+| [axllent](https://github.com/axllent) | [mailpit](https://github.com/axllent/mailpit) | 8272 | An email and SMTP testing tool with API for developers | 2025-12-13T18:22:46Z |
 | [waydroid-helper](https://github.com/waydroid-helper) | [waydroid-helper](https://github.com/waydroid-helper/waydroid-helper) | 242 | No description provided. | 2025-12-11T14:36:25Z |
-| [aydinnyunus](https://github.com/aydinnyunus) | [PassDetective](https://github.com/aydinnyunus/PassDetective) | 140 | PassDetective is a command-line tool that scans shell command history to detect mistakenly written passwords, API keys, and secrets. Using regular expressions, it helps prevent accidental exposure of sensitive information in your command history. | 2025-11-21T09:15:07Z |
+| [aydinnyunus](https://github.com/aydinnyunus) | [PassDetective](https://github.com/aydinnyunus/PassDetective) | 141 | PassDetective is a command-line tool that scans shell command history to detect mistakenly written passwords, API keys, and secrets. Using regular expressions, it helps prevent accidental exposure of sensitive information in your command history. | 2025-12-13T14:35:41Z |
 | [aydinnyunus](https://github.com/aydinnyunus) | [exifLooter](https://github.com/aydinnyunus/exifLooter) | 476 | ExifLooter finds geolocation on all image urls and directories also integrates with OpenStreetMap | 2025-12-10T17:47:05Z |
 | [aymanbagabas](https://github.com/aymanbagabas) | [shcopy](https://github.com/aymanbagabas/shcopy) | 81 | 📋 Copy text to your system clipboard locally and remotely using ANSI OSC52 sequence | 2025-12-11T23:51:34Z |
 | [ayoisaiah](https://github.com/ayoisaiah) | [f2](https://github.com/ayoisaiah/f2) | 2342 | F2 is a cross-platform command-line tool for batch renaming files and directories quickly and safely. Written in Go! | 2025-12-11T09:08:40Z |
 | [aziis98](https://github.com/aziis98) | [mup](https://github.com/aziis98/mup) | 175 | A micro file uploader written in Go to easily share files over LAN | 2025-11-24T08:22:23Z |
-| [bahdotsh](https://github.com/bahdotsh) | [wrkflw](https://github.com/bahdotsh/wrkflw) | 2633 | Validate and Run GitHub Actions locally. | 2025-12-12T16:24:31Z |
-| [bahdotsh](https://github.com/bahdotsh) | [zp](https://github.com/bahdotsh/zp) | 50 | A cli tool to copy things! | 2025-11-22T12:52:24Z |
+| [bahdotsh](https://github.com/bahdotsh) | [wrkflw](https://github.com/bahdotsh/wrkflw) | 2636 | Validate and Run GitHub Actions locally. | 2025-12-13T10:24:31Z |
+| [bahdotsh](https://github.com/bahdotsh) | [zp](https://github.com/bahdotsh/zp) | 51 | A cli tool to copy things! | 2025-12-13T01:06:39Z |
 | [barnybug](https://github.com/barnybug) | [cli53](https://github.com/barnybug/cli53) | 2119 | Command line tool for Amazon Route 53 | 2025-12-09T10:11:42Z |
 | [baskerville](https://github.com/baskerville) | [xdo](https://github.com/baskerville/xdo) | 306 | Small X utility to perform elementary actions on windows | 2025-12-12T18:57:05Z |
-| [bee-san](https://github.com/bee-san) | [Ares](https://github.com/bee-san/Ares) | 816 | Automated decoding of encrypted text without knowing the key or ciphers used | 2025-12-12T09:08:22Z |
-| [bee-san](https://github.com/bee-san) | [Ciphey](https://github.com/bee-san/Ciphey) | 20249 | ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings, and crack hashes ⚡ | 2025-12-12T22:42:10Z |
-| [bee-san](https://github.com/bee-san) | [Name-That-Hash](https://github.com/bee-san/Name-That-Hash) | 1619 | 🔗  Dont know what type of hash it is? Name That Hash will name that hash type! 🤖 Identify MD5, SHA256 and 300+ other hashes ☄ Comes with a neat web app 🔥 | 2025-12-12T09:08:11Z |
-| [benbjohnson](https://github.com/benbjohnson) | [litestream](https://github.com/benbjohnson/litestream) | 12937 | Streaming replication for SQLite. | 2025-12-12T21:52:06Z |
+| [bee-san](https://github.com/bee-san) | [Ares](https://github.com/bee-san/Ares) | 816 | Automated decoding of encrypted text without knowing the key or ciphers used | 2025-12-13T00:14:41Z |
+| [bee-san](https://github.com/bee-san) | [Ciphey](https://github.com/bee-san/Ciphey) | 20249 | ⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings, and crack hashes ⚡ | 2025-12-13T23:23:12Z |
+| [bee-san](https://github.com/bee-san) | [Name-That-Hash](https://github.com/bee-san/Name-That-Hash) | 1618 | 🔗  Dont know what type of hash it is? Name That Hash will name that hash type! 🤖 Identify MD5, SHA256 and 300+ other hashes ☄ Comes with a neat web app 🔥 | 2025-12-13T23:23:14Z |
+| [benbjohnson](https://github.com/benbjohnson) | [litestream](https://github.com/benbjohnson/litestream) | 12941 | Streaming replication for SQLite. | 2025-12-13T18:07:57Z |
 | [benhoyt](https://github.com/benhoyt) | [goawk](https://github.com/benhoyt/goawk) | 1999 | A POSIX-compliant AWK interpreter written in Go, with CSV support | 2025-12-12T19:50:14Z |
-| [benjamimgois](https://github.com/benjamimgois) | [goverlay](https://github.com/benjamimgois/goverlay) | 968 | Goverlay is an easy graphical interface to configure MangoHud, vkBasalt, and OptiScaler | 2025-12-12T23:32:52Z |
+| [benjamimgois](https://github.com/benjamimgois) | [goverlay](https://github.com/benjamimgois/goverlay) | 969 | Goverlay is an easy graphical interface to configure MangoHud, vkBasalt, and OptiScaler | 2025-12-13T22:24:42Z |
 | [bensadeh](https://github.com/bensadeh) | [circumflex](https://github.com/bensadeh/circumflex) | 1779 | 🌿 Its Hacker News in your terminal | 2025-12-12T05:12:27Z |
-| [bensadeh](https://github.com/bensadeh) | [tailspin](https://github.com/bensadeh/tailspin) | 6915 | 🌀 A log file highlighter | 2025-12-12T22:57:16Z |
-| [bepass-org](https://github.com/bepass-org) | [warp-plus](https://github.com/bepass-org/warp-plus) | 1909 | Warp+Psiphon, an anti censorship utility for iran | 2025-12-11T17:17:18Z |
+| [bensadeh](https://github.com/bensadeh) | [tailspin](https://github.com/bensadeh/tailspin) | 6918 | 🌀 A log file highlighter | 2025-12-13T21:45:40Z |
+| [bepass-org](https://github.com/bepass-org) | [warp-plus](https://github.com/bepass-org/warp-plus) | 1911 | Warp+Psiphon, an anti censorship utility for iran | 2025-12-13T10:29:11Z |
 | [berghetti](https://github.com/berghetti) | [netproc](https://github.com/berghetti/netproc) | 76 | tool to monitor network traffic based on processes | 2025-10-01T19:41:13Z |
-| [berty](https://github.com/berty) | [berty](https://github.com/berty/berty) | 8923 | Berty is a secure peer-to-peer messaging app that works with or without internet access, cellular data or trust in the network | 2025-12-12T22:38:33Z |
-| [bgkillas](https://github.com/bgkillas) | [kalc](https://github.com/bgkillas/kalc) | 223 | a complex numbers, 2d/3d graphing, arbitrary precision, vector/matrix, cli calculator with real-time output and support for units | 2025-11-24T16:40:21Z |
+| [berty](https://github.com/berty) | [berty](https://github.com/berty/berty) | 8925 | Berty is a secure peer-to-peer messaging app that works with or without internet access, cellular data or trust in the network | 2025-12-13T07:29:55Z |
+| [bgkillas](https://github.com/bgkillas) | [kalc](https://github.com/bgkillas/kalc) | 224 | a complex numbers, 2d/3d graphing, arbitrary precision, vector/matrix, cli calculator with real-time output and support for units | 2025-12-13T22:11:09Z |
 | [billcoding](https://github.com/billcoding) | [sshpass](https://github.com/billcoding/sshpass) | 19 | A sshpass implementation for Linux and Mac in Go | 2025-11-12T06:32:04Z |
 | [binpash](https://github.com/binpash) | [try](https://github.com/binpash/try) | 5367 | Inspect a commands effects before modifying your live system | 2025-12-10T20:37:24Z |
-| [bitcoin](https://github.com/bitcoin) | [bitcoin](https://github.com/bitcoin/bitcoin) | 87200 | Bitcoin Core integration/staging tree | 2025-12-12T23:32:23Z |
+| [bitcoin](https://github.com/bitcoin) | [bitcoin](https://github.com/bitcoin/bitcoin) | 87210 | Bitcoin Core integration/staging tree | 2025-12-13T22:27:14Z |
 | [bitnami](https://github.com/bitnami) | [ini-file](https://github.com/bitnami/ini-file) | 33 | CLI tool for modifying .ini files | 2025-12-08T07:47:05Z |
 | [bitquark](https://github.com/bitquark) | [shortscan](https://github.com/bitquark/shortscan) | 1039 | An IIS short filename enumeration tool | 2025-12-11T19:19:37Z |
-| [blacknon](https://github.com/blacknon) | [hwatch](https://github.com/blacknon/hwatch) | 964 | A modern alternative to the watch command, records the differences in execution results and can check this differences at after. | 2025-12-08T07:59:37Z |
-| [blechschmidt](https://github.com/blechschmidt) | [massdns](https://github.com/blechschmidt/massdns) | 3492 | A high-performance DNS stub resolver for bulk lookups and reconnaissance (subdomain enumeration) | 2025-12-12T17:00:04Z |
-| [blender](https://github.com/blender) | [blender](https://github.com/blender/blender) | 17026 | Official mirror of Blender | 2025-12-12T23:34:19Z |
-| [blevesearch](https://github.com/blevesearch) | [bleve](https://github.com/blevesearch/bleve) | 10825 | A modern text/numeric/geo-spatial/vector indexing library for go | 2025-12-12T08:19:57Z |
+| [blacknon](https://github.com/blacknon) | [hwatch](https://github.com/blacknon/hwatch) | 965 | A modern alternative to the watch command, records the differences in execution results and can check this differences at after. | 2025-12-12T23:40:51Z |
+| [blechschmidt](https://github.com/blechschmidt) | [massdns](https://github.com/blechschmidt/massdns) | 3493 | A high-performance DNS stub resolver for bulk lookups and reconnaissance (subdomain enumeration) | 2025-12-13T12:34:07Z |
+| [blender](https://github.com/blender) | [blender](https://github.com/blender/blender) | 17034 | Official mirror of Blender | 2025-12-13T23:06:42Z |
+| [blevesearch](https://github.com/blevesearch) | [bleve](https://github.com/blevesearch/bleve) | 10826 | A modern text/numeric/geo-spatial/vector indexing library for go | 2025-12-13T17:18:04Z |
 | [blinksh](https://github.com/blinksh) | [mosh-static-multiarch](https://github.com/blinksh/mosh-static-multiarch) | 24 | Static builds of mosh-server | 2025-10-23T14:31:46Z |
 | [blst-security](https://github.com/blst-security) | [cherrybomb](https://github.com/blst-security/cherrybomb) | 1224 | Stop half-done APIs! Cherrybomb is a CLI tool that helps you avoid undefined user behaviour by auditing your API specifications, validating them and running API security tests. | 2025-12-12T14:27:57Z |
-| [bmc](https://github.com/bmc) | [daemonize](https://github.com/bmc/daemonize) | 568 | Command line utility to run a program as a Unix daemon | 2025-12-07T21:01:02Z |
+| [bmc](https://github.com/bmc) | [daemonize](https://github.com/bmc/daemonize) | 568 | Command line utility to run a program as a Unix daemon | 2025-12-13T22:02:03Z |
 | [boinkor-net](https://github.com/boinkor-net) | [chars](https://github.com/boinkor-net/chars) | 187 | cha(rs) is a commandline tool to display information about unicode characters | 2025-10-26T07:39:24Z |
 | [bombsimon](https://github.com/bombsimon) | [wsl](https://github.com/bombsimon/wsl) | 338 | ␊ whitespace linter - Forces you to use empty lines! | 2025-12-09T19:18:51Z |
-| [bootandy](https://github.com/bootandy) | [dust](https://github.com/bootandy/dust) | 10949 | A more intuitive version of du in rust | 2025-12-12T17:16:04Z |
-| [boy-hack](https://github.com/boy-hack) | [ksubdomain](https://github.com/boy-hack/ksubdomain) | 1136 | Subdomain enumeration tool, asynchronous dns packets, use pcap to scan 1600,000 subdomains in 1 second | 2025-12-12T17:38:58Z |
-| [brave](https://github.com/brave) | [brave-browser](https://github.com/brave/brave-browser) | 20852 | Brave browser for Android, iOS, Linux, macOS, Windows. | 2025-12-12T23:19:18Z |
-| [brocode](https://github.com/brocode) | [fblog](https://github.com/brocode/fblog) | 532 | Small command-line JSON Log viewer | 2025-12-10T10:52:23Z |
+| [bootandy](https://github.com/bootandy) | [dust](https://github.com/bootandy/dust) | 10952 | A more intuitive version of du in rust | 2025-12-13T19:38:51Z |
+| [boy-hack](https://github.com/boy-hack) | [ksubdomain](https://github.com/boy-hack/ksubdomain) | 1137 | Subdomain enumeration tool, asynchronous dns packets, use pcap to scan 1600,000 subdomains in 1 second | 2025-12-13T11:46:05Z |
+| [brave](https://github.com/brave) | [brave-browser](https://github.com/brave/brave-browser) | 20860 | Brave browser for Android, iOS, Linux, macOS, Windows. | 2025-12-13T23:34:01Z |
+| [brocode](https://github.com/brocode) | [fblog](https://github.com/brocode/fblog) | 533 | Small command-line JSON Log viewer | 2025-12-13T21:14:52Z |
 | [bschaatsbergen](https://github.com/bschaatsbergen) | [cidr](https://github.com/bschaatsbergen/cidr) | 228 | Simplifies IPv4/IPv6 CIDR network prefix management with counting, overlap checking, explanation, and subdivision. | 2025-12-12T22:51:20Z |
-| [btpf](https://github.com/btpf) | [Alexandria](https://github.com/btpf/Alexandria) | 2637 | A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript | 2025-12-12T21:12:45Z |
-| [burrowers](https://github.com/burrowers) | [garble](https://github.com/burrowers/garble) | 5203 | Obfuscate Go builds | 2025-12-12T10:39:22Z |
-| [bvaisvil](https://github.com/bvaisvil) | [zenith](https://github.com/bvaisvil/zenith) | 2909 | Zenith - sort of like top or htop but with zoom-able charts, CPU, GPU, network, and disk usage | 2025-12-10T03:00:08Z |
-| [bytecodealliance](https://github.com/bytecodealliance) | [wasm-micro-runtime](https://github.com/bytecodealliance/wasm-micro-runtime) | 5674 | WebAssembly Micro Runtime (WAMR) | 2025-12-12T13:06:15Z |
-| [bytecodealliance](https://github.com/bytecodealliance) | [wasm-tools](https://github.com/bytecodealliance/wasm-tools) | 1640 | CLI and Rust libraries for low-level manipulation of WebAssembly modules | 2025-12-12T04:47:17Z |
-| [bytecodealliance](https://github.com/bytecodealliance) | [wasmtime](https://github.com/bytecodealliance/wasmtime) | 17292 | A lightweight WebAssembly runtime that is fast, secure, and standards-compliant | 2025-12-12T22:28:06Z |
-| [c0re100](https://github.com/c0re100) | [qBittorrent-Enhanced-Edition](https://github.com/c0re100/qBittorrent-Enhanced-Edition) | 24489 | [Unofficial] qBittorrent Enhanced, based on qBittorrent | 2025-12-12T16:55:33Z |
+| [btpf](https://github.com/btpf) | [Alexandria](https://github.com/btpf/Alexandria) | 2636 | A minimalistic cross-platform eBook reader built with Tauri, Epub.js, and Typescript | 2025-12-13T05:05:39Z |
+| [burrowers](https://github.com/burrowers) | [garble](https://github.com/burrowers/garble) | 5205 | Obfuscate Go builds | 2025-12-13T23:19:49Z |
+| [bvaisvil](https://github.com/bvaisvil) | [zenith](https://github.com/bvaisvil/zenith) | 2910 | Zenith - sort of like top or htop but with zoom-able charts, CPU, GPU, network, and disk usage | 2025-12-13T00:39:36Z |
+| [bytecodealliance](https://github.com/bytecodealliance) | [wasm-micro-runtime](https://github.com/bytecodealliance/wasm-micro-runtime) | 5677 | WebAssembly Micro Runtime (WAMR) | 2025-12-13T21:58:12Z |
+| [bytecodealliance](https://github.com/bytecodealliance) | [wasm-tools](https://github.com/bytecodealliance/wasm-tools) | 1641 | CLI and Rust libraries for low-level manipulation of WebAssembly modules | 2025-12-13T18:24:06Z |
+| [bytecodealliance](https://github.com/bytecodealliance) | [wasmtime](https://github.com/bytecodealliance/wasmtime) | 17297 | A lightweight WebAssembly runtime that is fast, secure, and standards-compliant | 2025-12-13T20:14:53Z |
+| [c0re100](https://github.com/c0re100) | [qBittorrent-Enhanced-Edition](https://github.com/c0re100/qBittorrent-Enhanced-Edition) | 24498 | [Unofficial] qBittorrent Enhanced, based on qBittorrent | 2025-12-13T17:49:53Z |
 | [c3l3si4n](https://github.com/c3l3si4n) | [quickcert](https://github.com/c3l3si4n/quickcert) | 88 | A better way of querying certificate transparency logs | 2025-11-21T02:48:11Z |
 | [caarlos0](https://github.com/caarlos0) | [timer](https://github.com/caarlos0/timer) | 576 | A sleep with progress | 2025-12-02T04:55:21Z |
-| [caddyserver](https://github.com/caddyserver) | [caddy](https://github.com/caddyserver/caddy) | 68480 | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | 2025-12-12T21:34:32Z |
-| [caido](https://github.com/caido) | [caido](https://github.com/caido/caido) | 1977 | 🚀 Caido releases, wiki and roadmap | 2025-12-12T14:03:02Z |
-| [cargo-bins](https://github.com/cargo-bins) | [cargo-binstall](https://github.com/cargo-bins/cargo-binstall) | 2337 | Binary installation for rust projects | 2025-12-12T21:32:00Z |
-| [cargo-bins](https://github.com/cargo-bins) | [cargo-quickinstall](https://github.com/cargo-bins/cargo-quickinstall) | 285 | pre-compiled binary packages for cargo install | 2025-12-12T21:32:57Z |
-| [cashapp](https://github.com/cashapp) | [hermit](https://github.com/cashapp/hermit) | 728 | 🐚 Hermit manages isolated, self-bootstrapping sets of tools in software projects. | 2025-12-12T07:23:29Z |
-| [cbeuw](https://github.com/cbeuw) | [Cloak](https://github.com/cbeuw/Cloak) | 3767 | A censorship circumvention tool to evade detection by authoritarian state adversaries | 2025-12-10T14:59:46Z |
+| [caddyserver](https://github.com/caddyserver) | [caddy](https://github.com/caddyserver/caddy) | 68504 | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | 2025-12-13T19:11:03Z |
+| [caido](https://github.com/caido) | [caido](https://github.com/caido/caido) | 1979 | 🚀 Caido releases, wiki and roadmap | 2025-12-13T04:46:33Z |
+| [cargo-bins](https://github.com/cargo-bins) | [cargo-binstall](https://github.com/cargo-bins/cargo-binstall) | 2339 | Binary installation for rust projects | 2025-12-13T16:41:04Z |
+| [cargo-bins](https://github.com/cargo-bins) | [cargo-quickinstall](https://github.com/cargo-bins/cargo-quickinstall) | 285 | pre-compiled binary packages for cargo install | 2025-12-13T04:51:44Z |
+| [cashapp](https://github.com/cashapp) | [hermit](https://github.com/cashapp/hermit) | 729 | 🐚 Hermit manages isolated, self-bootstrapping sets of tools in software projects. | 2025-12-13T15:40:11Z |
+| [cbeuw](https://github.com/cbeuw) | [Cloak](https://github.com/cbeuw/Cloak) | 3766 | A censorship circumvention tool to evade detection by authoritarian state adversaries | 2025-12-13T06:58:35Z |
 | [cdalar](https://github.com/cdalar) | [onctl](https://github.com/cdalar/onctl) | 48 | 🤖 manage virtual machines 🖥️ in multi cloud ☁️ | 2025-12-12T07:06:23Z |
 | [cdown](https://github.com/cdown) | [tzupdate](https://github.com/cdown/tzupdate) | 234 | Set the system timezone based on IP geolocation. | 2025-12-01T07:55:16Z |
 | [cemulus](https://github.com/cemulus) | [crt](https://github.com/cemulus/crt) | 72 | A CLI tool to check Certificate Transparency logs of a domain name. | 2025-11-24T15:02:05Z |
 | [cfoust](https://github.com/cfoust) | [cy](https://github.com/cfoust/cy) | 191 | 🤖 time travel in the terminal | 2025-11-29T19:16:18Z |
 | [chainguard-dev](https://github.com/chainguard-dev) | [melange](https://github.com/chainguard-dev/melange) | 537 | build APKs from source code | 2025-12-11T18:05:04Z |
-| [chainreactors](https://github.com/chainreactors) | [gogo](https://github.com/chainreactors/gogo) | 1964 | 面向红队的, 高性能高度自由可拓展的自动化扫描引擎  A highly controllable and extensionable automated scanning engine for red teams | 2025-12-12T06:36:45Z |
+| [chainreactors](https://github.com/chainreactors) | [gogo](https://github.com/chainreactors/gogo) | 1964 | 面向红队的, 高性能高度自由可拓展的自动化扫描引擎  A highly controllable and extensionable automated scanning engine for red teams | 2025-12-13T23:13:23Z |
 | [chainreactors](https://github.com/chainreactors) | [spray](https://github.com/chainreactors/spray) | 944 | 最好用最智能最可控的目录Fuzz工具  The most powerful, user-friendly, intelligent, and precise HTTP Fuzzer. | 2025-12-12T23:27:47Z |
-| [chainreactors](https://github.com/chainreactors) | [zombie](https://github.com/chainreactors/zombie) | 337 | 最强大的密码爆破/喷洒工具  The most powerful bruteforcer / sprayer Artifact | 2025-12-12T06:29:40Z |
-| [charmbracelet](https://github.com/charmbracelet) | [freeze](https://github.com/charmbracelet/freeze) | 4226 | Generate images of code and terminal output 📸 | 2025-12-12T19:41:16Z |
-| [charmbracelet](https://github.com/charmbracelet) | [glow](https://github.com/charmbracelet/glow) | 21801 | Render markdown on the CLI, with pizzazz! 💅🏻 | 2025-12-12T22:17:07Z |
-| [charmbracelet](https://github.com/charmbracelet) | [gum](https://github.com/charmbracelet/gum) | 21989 | A tool for glamorous shell scripts 🎀 | 2025-12-12T21:34:57Z |
-| [charmbracelet](https://github.com/charmbracelet) | [sequin](https://github.com/charmbracelet/sequin) | 759 | Human-readable ANSI sequences 🪩 | 2025-12-12T06:49:35Z |
-| [charmbracelet](https://github.com/charmbracelet) | [soft-serve](https://github.com/charmbracelet/soft-serve) | 6425 | The mighty, self-hostable Git server for the command line🍦 | 2025-12-12T21:45:31Z |
-| [charmbracelet](https://github.com/charmbracelet) | [vhs](https://github.com/charmbracelet/vhs) | 17953 | Your CLI home video recorder 📼 | 2025-12-12T20:31:55Z |
-| [cheat](https://github.com/cheat) | [cheat](https://github.com/cheat/cheat) | 13096 | cheat allows you to create and view interactive cheatsheets on the command-line. It was designed to help remind *nix system administrators of options for commands that they use frequently, but not frequently enough to remember. | 2025-12-11T17:29:49Z |
+| [chainreactors](https://github.com/chainreactors) | [zombie](https://github.com/chainreactors/zombie) | 338 | 最强大的密码爆破/喷洒工具  The most powerful bruteforcer / sprayer Artifact | 2025-12-13T15:37:46Z |
+| [charmbracelet](https://github.com/charmbracelet) | [freeze](https://github.com/charmbracelet/freeze) | 4230 | Generate images of code and terminal output 📸 | 2025-12-13T21:31:16Z |
+| [charmbracelet](https://github.com/charmbracelet) | [glow](https://github.com/charmbracelet/glow) | 21814 | Render markdown on the CLI, with pizzazz! 💅🏻 | 2025-12-13T22:14:11Z |
+| [charmbracelet](https://github.com/charmbracelet) | [gum](https://github.com/charmbracelet/gum) | 21994 | A tool for glamorous shell scripts 🎀 | 2025-12-13T16:52:50Z |
+| [charmbracelet](https://github.com/charmbracelet) | [sequin](https://github.com/charmbracelet/sequin) | 762 | Human-readable ANSI sequences 🪩 | 2025-12-13T07:04:13Z |
+| [charmbracelet](https://github.com/charmbracelet) | [soft-serve](https://github.com/charmbracelet/soft-serve) | 6426 | The mighty, self-hostable Git server for the command line🍦 | 2025-12-13T15:15:45Z |
+| [charmbracelet](https://github.com/charmbracelet) | [vhs](https://github.com/charmbracelet/vhs) | 17962 | Your CLI home video recorder 📼 | 2025-12-13T23:02:05Z |
+| [cheat](https://github.com/cheat) | [cheat](https://github.com/cheat/cheat) | 13096 | cheat allows you to create and view interactive cheatsheets on the command-line. It was designed to help remind *nix system administrators of options for commands that they use frequently, but not frequently enough to remember. | 2025-12-13T11:07:26Z |
 | [chebuya](https://github.com/chebuya) | [sastsweep](https://github.com/chebuya/sastsweep) | 234 | tool designed for identifying vulnerabilities in open source codebases at scale. It can gather and filter on key repository metrics such as popularity and project size | 2025-12-05T10:47:28Z |
 | [chimera-linux](https://github.com/chimera-linux) | [chimerautils](https://github.com/chimera-linux/chimerautils) | 112 | Chimeras core userland, based on FreeBSD | 2025-12-12T19:09:46Z |
 | [chmouel](https://github.com/chmouel) | [gosmee](https://github.com/chmouel/gosmee) | 53 | Command line server and client for webhooks deliveries (and https://smee.io) | 2025-11-25T11:27:36Z |
-| [chromium](https://github.com/chromium) | [chromium](https://github.com/chromium/chromium) | 22472 | The official GitHub mirror of the Chromium source | 2025-12-12T23:39:20Z |
+| [chromium](https://github.com/chromium) | [chromium](https://github.com/chromium/chromium) | 22479 | The official GitHub mirror of the Chromium source | 2025-12-13T23:28:01Z |
 | [cirruslabs](https://github.com/cirruslabs) | [cirrus-cli](https://github.com/cirruslabs/cirrus-cli) | 250 | CLI for executing Cirrus tasks locally and in any CI | 2025-12-11T21:05:39Z |
 | [cirruslabs](https://github.com/cirruslabs) | [vetu](https://github.com/cirruslabs/vetu) | 124 | Create, publish and virtualize ephemeral Linux VMs with ease | 2025-12-10T20:12:04Z |
 | [clearlinux](https://github.com/clearlinux) | [docker-brew-clearlinux](https://github.com/clearlinux/docker-brew-clearlinux) | 34 | Dockerhub image snapshots for Clear Linux | 2025-08-13T22:29:58Z |
-| [cli](https://github.com/cli) | [cli](https://github.com/cli/cli) | 41640 | GitHub’s official command line tool | 2025-12-12T23:12:09Z |
+| [cli](https://github.com/cli) | [cli](https://github.com/cli/cli) | 41650 | GitHub’s official command line tool | 2025-12-13T21:42:38Z |
 | [clickswave](https://github.com/clickswave) | [voyage](https://github.com/clickswave/voyage) | 260 | Voyage is a stateful subdomain enumeration tool that combines passive and active techniques, user-specific databases, and fine-grained control built for efficient and reliable subdomain reconnaissance. | 2025-12-10T00:25:11Z |
-| [cloudflare](https://github.com/cloudflare) | [boringtun](https://github.com/cloudflare/boringtun) | 6684 | Userspace WireGuard® Implementation in Rust | 2025-12-12T16:19:40Z |
-| [cloudflare](https://github.com/cloudflare) | [cfssl](https://github.com/cloudflare/cfssl) | 9305 | CFSSL: Cloudflares PKI and TLS toolkit | 2025-12-12T16:24:34Z |
-| [cloudflare](https://github.com/cloudflare) | [cloudflared](https://github.com/cloudflare/cloudflared) | 12271 | Cloudflare Tunnel client | 2025-12-12T23:25:30Z |
+| [cloudflare](https://github.com/cloudflare) | [boringtun](https://github.com/cloudflare/boringtun) | 6685 | Userspace WireGuard® Implementation in Rust | 2025-12-13T16:07:09Z |
+| [cloudflare](https://github.com/cloudflare) | [cfssl](https://github.com/cloudflare/cfssl) | 9307 | CFSSL: Cloudflares PKI and TLS toolkit | 2025-12-13T19:50:46Z |
+| [cloudflare](https://github.com/cloudflare) | [cloudflared](https://github.com/cloudflare/cloudflared) | 12277 | Cloudflare Tunnel client | 2025-12-13T20:07:52Z |
 | [cloudflare](https://github.com/cloudflare) | [svg-hush](https://github.com/cloudflare/svg-hush) | 409 | Make it safe to serve untrusted SVG files | 2025-12-12T01:53:47Z |
-| [cloudreve](https://github.com/cloudreve) | [cloudreve](https://github.com/cloudreve/cloudreve) | 26178 | 🌩 Self-hosted file management and sharing system, supports multiple storage providers | 2025-12-12T21:51:04Z |
-| [cmars](https://github.com/cmars) | [onionpipe](https://github.com/cmars/onionpipe) | 595 | Onion addresses for anything. | 2025-12-06T21:11:01Z |
-| [cocogitto](https://github.com/cocogitto) | [cocogitto](https://github.com/cocogitto/cocogitto) | 985 | The Conventional Commits toolbox | 2025-12-11T05:59:10Z |
+| [cloudreve](https://github.com/cloudreve) | [cloudreve](https://github.com/cloudreve/cloudreve) | 26186 | 🌩 Self-hosted file management and sharing system, supports multiple storage providers | 2025-12-13T22:50:21Z |
+| [cmars](https://github.com/cmars) | [onionpipe](https://github.com/cmars/onionpipe) | 596 | Onion addresses for anything. | 2025-12-13T17:54:24Z |
+| [cocogitto](https://github.com/cocogitto) | [cocogitto](https://github.com/cocogitto/cocogitto) | 986 | The Conventional Commits toolbox | 2025-12-13T14:50:25Z |
 | [code-inflation](https://github.com/code-inflation) | [cfspeedtest](https://github.com/code-inflation/cfspeedtest) | 93 | Unofficial CLI for speed.cloudflare.com | 2025-12-09T07:23:11Z |
-| [coder](https://github.com/coder) | [code-server](https://github.com/coder/code-server) | 75329 | VS Code in the browser | 2025-12-12T21:42:35Z |
+| [coder](https://github.com/coder) | [code-server](https://github.com/coder/code-server) | 75341 | VS Code in the browser | 2025-12-13T21:42:17Z |
 | [coder](https://github.com/coder) | [wush](https://github.com/coder/wush) | 1400 | simplest & fastest way to transfer files between computers via WireGuard | 2025-12-12T18:49:05Z |
 | [codingo](https://github.com/codingo) | [Interlace](https://github.com/codingo/Interlace) | 1279 | Easily turn single threaded command line applications into a fast, multi-threaded application with CIDR and glob support. | 2025-12-12T16:45:18Z |
-| [commixproject](https://github.com/commixproject) | [commix](https://github.com/commixproject/commix) | 5545 | Automated All-in-One OS Command Injection Exploitation Tool. | 2025-12-12T23:38:58Z |
-| [composefs](https://github.com/composefs) | [composefs](https://github.com/composefs/composefs) | 603 | The reliability of disk images, the flexibility of files | 2025-12-11T10:36:00Z |
+| [commixproject](https://github.com/commixproject) | [commix](https://github.com/commixproject/commix) | 5547 | Automated All-in-One OS Command Injection Exploitation Tool. | 2025-12-13T23:23:27Z |
+| [composefs](https://github.com/composefs) | [composefs](https://github.com/composefs/composefs) | 604 | The reliability of disk images, the flexibility of files | 2025-12-13T13:43:40Z |
 | [contabo](https://github.com/contabo) | [cntb](https://github.com/contabo/cntb) | 221 | Contabo Command Line Interface | 2025-12-06T07:17:05Z |
-| [container2wasm](https://github.com/container2wasm) | [container2wasm](https://github.com/container2wasm/container2wasm) | 2474 | Container to WASM converter | 2025-12-12T10:25:29Z |
-| [containerd](https://github.com/containerd) | [containerd](https://github.com/containerd/containerd) | 19988 | An open and reliable container runtime | 2025-12-12T21:21:38Z |
-| [containerd](https://github.com/containerd) | [nerdctl](https://github.com/containerd/nerdctl) | 9631 | contaiNERD CTL - Docker-compatible CLI for containerd, with support for Compose, Rootless, eStargz, OCIcrypt, IPFS, ... | 2025-12-12T22:00:47Z |
-| [containers](https://github.com/containers) | [bubblewrap](https://github.com/containers/bubblewrap) | 5204 | Low-level unprivileged sandboxing tool used by Flatpak and similar projects | 2025-12-12T22:15:42Z |
+| [container2wasm](https://github.com/container2wasm) | [container2wasm](https://github.com/container2wasm/container2wasm) | 2475 | Container to WASM converter | 2025-12-13T22:46:13Z |
+| [containerd](https://github.com/containerd) | [containerd](https://github.com/containerd/containerd) | 19989 | An open and reliable container runtime | 2025-12-13T20:11:08Z |
+| [containerd](https://github.com/containerd) | [nerdctl](https://github.com/containerd/nerdctl) | 9633 | contaiNERD CTL - Docker-compatible CLI for containerd, with support for Compose, Rootless, eStargz, OCIcrypt, IPFS, ... | 2025-12-13T22:47:33Z |
+| [containers](https://github.com/containers) | [bubblewrap](https://github.com/containers/bubblewrap) | 5205 | Low-level unprivileged sandboxing tool used by Flatpak and similar projects | 2025-12-13T04:19:42Z |
 | [containers](https://github.com/containers) | [fuse-overlayfs](https://github.com/containers/fuse-overlayfs) | 627 | FUSE implementation for overlayfs | 2025-12-10T22:17:06Z |
-| [containers](https://github.com/containers) | [skopeo](https://github.com/containers/skopeo) | 10159 | Work with remote images registries - retrieving information, images, signing content | 2025-12-12T14:53:53Z |
-| [cooperspencer](https://github.com/cooperspencer) | [gickup](https://github.com/cooperspencer/gickup) | 1250 | No description provided. | 2025-12-11T06:34:23Z |
-| [coreutils](https://github.com/coreutils) | [coreutils](https://github.com/coreutils/coreutils) | 4897 | upstream mirror | 2025-12-12T17:26:37Z |
+| [containers](https://github.com/containers) | [skopeo](https://github.com/containers/skopeo) | 10165 | Work with remote images registries - retrieving information, images, signing content | 2025-12-13T18:19:20Z |
+| [cooperspencer](https://github.com/cooperspencer) | [gickup](https://github.com/cooperspencer/gickup) | 1251 | No description provided. | 2025-12-13T00:45:05Z |
+| [coreutils](https://github.com/coreutils) | [coreutils](https://github.com/coreutils/coreutils) | 4897 | upstream mirror | 2025-12-13T18:23:37Z |
 | [cosmic-zip](https://github.com/cosmic-zip) | [witchcraft](https://github.com/cosmic-zip/witchcraft) | 44 | WITCHCRAFT is a cyberdeck toolkit built for runners who dive deep into the mesh. It’s your all-in-one rig for data-ghosting, ICE-breaking, and corp-system infiltration. Whether you’re running forensic traces, scraping OSINT feeds, or slicing through firewalls, WITCHCRAFT’s got your back. | 2025-12-02T03:23:27Z |
 | [crazy-max](https://github.com/crazy-max) | [ftpgrab](https://github.com/crazy-max/ftpgrab) | 537 | Grab your files periodically from a remote FTP or SFTP server easily | 2025-11-27T02:50:48Z |
-| [crazy-max](https://github.com/crazy-max) | [undock](https://github.com/crazy-max/undock) | 219 | Extract contents of a container image in a local folder | 2025-12-03T06:23:41Z |
-| [crazywhalecc](https://github.com/crazywhalecc) | [static-php-cli](https://github.com/crazywhalecc/static-php-cli) | 1778 | Build standalone portable PHP binaries on Linux, macOS, FreeBSD, Windows, with PHP project together, with popular extensions included. | 2025-12-12T13:28:08Z |
-| [criyle](https://github.com/criyle) | [go-sandbox](https://github.com/criyle/go-sandbox) | 237 | Sandbox implemented in GO including containers (namespace, cgroup), ptrace, seccomp | 2025-12-12T04:30:54Z |
+| [crazy-max](https://github.com/crazy-max) | [undock](https://github.com/crazy-max/undock) | 220 | Extract contents of a container image in a local folder | 2025-12-13T19:55:48Z |
+| [crazywhalecc](https://github.com/crazywhalecc) | [static-php-cli](https://github.com/crazywhalecc/static-php-cli) | 1780 | Build standalone portable PHP binaries on Linux, macOS, FreeBSD, Windows, with PHP project together, with popular extensions included. | 2025-12-13T04:20:39Z |
+| [criyle](https://github.com/criyle) | [go-sandbox](https://github.com/criyle/go-sandbox) | 237 | Sandbox implemented in GO including containers (namespace, cgroup), ptrace, seccomp | 2025-12-13T16:20:27Z |
 | [crtsh](https://github.com/crtsh) | [ct_monitor](https://github.com/crtsh/ct_monitor) | 420 | Certificate Transparency log monitor | 2025-12-12T08:51:08Z |
-| [cruise-automation](https://github.com/cruise-automation) | [fwanalyzer](https://github.com/cruise-automation/fwanalyzer) | 507 | a tool to analyze filesystem images for security | 2025-11-13T09:25:39Z |
+| [cruise-automation](https://github.com/cruise-automation) | [fwanalyzer](https://github.com/cruise-automation/fwanalyzer) | 508 | a tool to analyze filesystem images for security | 2025-12-13T21:20:02Z |
 | [ctrsploit](https://github.com/ctrsploit) | [ctrsploit](https://github.com/ctrsploit/ctrsploit) | 118 | A penetration toolkit for container environment | 2025-12-09T21:27:26Z |
-| [curl](https://github.com/curl) | [wcurl](https://github.com/curl/wcurl) | 466 | a simple wrapper around curl to easily download files | 2025-12-08T11:48:28Z |
+| [curl](https://github.com/curl) | [wcurl](https://github.com/curl/wcurl) | 467 | a simple wrapper around curl to easily download files | 2025-12-13T01:05:10Z |
 | [curlpipe](https://github.com/curlpipe) | [ox](https://github.com/curlpipe/ox) | 3646 | The simple but flexible text editor | 2025-12-12T16:44:33Z |
 | [d-Rickyy-b](https://github.com/d-Rickyy-b) | [certstream-server-go](https://github.com/d-Rickyy-b/certstream-server-go) | 178 | This project aims to be a drop-in replacement for the certstream server by Calidog. This tool aggregates, parses, and streams certificate data from multiple certificate transparency logs via websocket connections to the clients. | 2025-12-11T11:25:35Z |
-| [d3mondev](https://github.com/d3mondev) | [puredns](https://github.com/d3mondev/puredns) | 2052 | Puredns is a fast domain resolver and subdomain bruteforcing tool that can accurately filter out wildcard subdomains and DNS poisoned entries. | 2025-12-12T16:35:47Z |
+| [d3mondev](https://github.com/d3mondev) | [puredns](https://github.com/d3mondev/puredns) | 2053 | Puredns is a fast domain resolver and subdomain bruteforcing tool that can accurately filter out wildcard subdomains and DNS poisoned entries. | 2025-12-13T14:26:00Z |
 | [andreiverse](https://github.com/andreiverse) | [gorilla](https://github.com/andreiverse/gorilla) | 389 | tool for generating wordlists or extending an existing one using mutations. | 2025-11-19T10:29:01Z |
-| [daeuniverse](https://github.com/daeuniverse) | [dae](https://github.com/daeuniverse/dae) | 4906 | eBPF-based Linux high-performance transparent proxy solution. | 2025-12-12T01:17:00Z |
-| [dagger](https://github.com/dagger) | [dagger](https://github.com/dagger/dagger) | 15074 | An open-source runtime for composable workflows. Great for AI agents and CI/CD. | 2025-12-12T21:39:43Z |
-| [dagu-org](https://github.com/dagu-org) | [dagu](https://github.com/dagu-org/dagu) | 2917 | A self-contained, lightweight workflow engine for enterprise and small teams. Single binary with Web UI. 100% open source. No vendor lock-in. It natively supports running containers and executing commands over SSH. Offline or air-gapped environment ready. | 2025-12-12T13:53:53Z |
+| [daeuniverse](https://github.com/daeuniverse) | [dae](https://github.com/daeuniverse/dae) | 4907 | eBPF-based Linux high-performance transparent proxy solution. | 2025-12-13T18:21:25Z |
+| [dagger](https://github.com/dagger) | [dagger](https://github.com/dagger/dagger) | 15080 | An open-source runtime for composable workflows. Great for AI agents and CI/CD. | 2025-12-13T22:22:51Z |
+| [dagu-org](https://github.com/dagu-org) | [dagu](https://github.com/dagu-org/dagu) | 2920 | A self-contained, lightweight workflow engine for enterprise and small teams. Single binary with Web UI. 100% open source. No vendor lock-in. It natively supports running containers and executing commands over SSH. Offline or air-gapped environment ready. | 2025-12-13T18:12:06Z |
 | [dalance](https://github.com/dalance) | [gip](https://github.com/dalance/gip) | 36 | a command-line tool to get global IP address | 2025-12-08T20:03:56Z |
-| [dalance](https://github.com/dalance) | [procs](https://github.com/dalance/procs) | 5826 | A modern replacement for ps written in Rust | 2025-12-12T17:53:13Z |
+| [dalance](https://github.com/dalance) | [procs](https://github.com/dalance/procs) | 5828 | A modern replacement for ps written in Rust | 2025-12-13T17:44:58Z |
 | [damit5](https://github.com/damit5) | [gitdorks_go](https://github.com/damit5/gitdorks_go) | 229 | 一款在github上发现敏感信息的自动化收集工具 | 2025-11-24T08:20:34Z |
-| [dandavison](https://github.com/dandavison) | [delta](https://github.com/dandavison/delta) | 28355 | A syntax-highlighting pager for git, diff, grep, and blame output | 2025-12-12T22:29:57Z |
+| [dandavison](https://github.com/dandavison) | [delta](https://github.com/dandavison/delta) | 28361 | A syntax-highlighting pager for git, diff, grep, and blame output | 2025-12-13T19:20:42Z |
 | [danielgatis](https://github.com/danielgatis) | [imgcat](https://github.com/danielgatis/imgcat) | 335 | Display images and gifs in your terminal. | 2025-12-07T10:59:05Z |
-| [danvergara](https://github.com/danvergara) | [dblab](https://github.com/danvergara/dblab) | 2928 | The database client every command line junkie deserves. | 2025-12-12T10:20:32Z |
-| [bluetuith-org](https://github.com/bluetuith-org) | [bluetuith](https://github.com/bluetuith-org/bluetuith) | 1246 | A cross-platform TUI bluetooth manager. | 2025-12-12T12:21:19Z |
+| [danvergara](https://github.com/danvergara) | [dblab](https://github.com/danvergara/dblab) | 2931 | The database client every command line junkie deserves. | 2025-12-13T15:08:58Z |
+| [bluetuith-org](https://github.com/bluetuith-org) | [bluetuith](https://github.com/bluetuith-org/bluetuith) | 1247 | A cross-platform TUI bluetooth manager. | 2025-12-13T01:12:36Z |
 | [darkhz](https://github.com/darkhz) | [invidtui](https://github.com/darkhz/invidtui) | 211 | A TUI based Invidious client | 2025-11-29T19:58:25Z |
 | [dasimmet](https://github.com/dasimmet) | [wabt](https://github.com/dasimmet/wabt) | 8 | WebAssembly Binary Toolkit (wabt) and Binaryen on the zig build system | 2025-08-19T20:35:18Z |
-| [dathere](https://github.com/dathere) | [qsv](https://github.com/dathere/qsv) | 3352 | Blazing-fast Data-Wrangling toolkit | 2025-12-12T21:15:12Z |
+| [dathere](https://github.com/dathere) | [qsv](https://github.com/dathere/qsv) | 3354 | Blazing-fast Data-Wrangling toolkit | 2025-12-13T19:34:56Z |
 | [dave-theunsub](https://github.com/dave-theunsub) | [clamtk](https://github.com/dave-theunsub/clamtk) | 415 | An easy to use, light-weight, on-demand virus scanner for Linux systems | 2025-12-09T13:14:13Z |
 | [davecheney](https://github.com/davecheney) | [httpstat](https://github.com/davecheney/httpstat) | 7188 | Its like curl -v, with colours. | 2025-12-09T07:04:50Z |
-| [daytonaio](https://github.com/daytonaio) | [daytona](https://github.com/daytonaio/daytona) | 36153 | Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code | 2025-12-12T23:24:45Z |
+| [daytonaio](https://github.com/daytonaio) | [daytona](https://github.com/daytonaio/daytona) | 36890 | Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code | 2025-12-13T22:53:53Z |
 | [dbry](https://github.com/dbry) | [WavPack](https://github.com/dbry/WavPack) | 439 | WavPack encode/decode library, command-line programs, and several plugins | 2025-12-10T17:19:04Z |
 | [dcantrell](https://github.com/dcantrell) | [bsdutils](https://github.com/dcantrell/bsdutils) | 176 | Alternative to GNU coreutils using software from FreeBSD | 2025-11-21T21:00:16Z |
-| [ddnet](https://github.com/ddnet) | [ddnet](https://github.com/ddnet/ddnet) | 724 | DDraceNetwork, a free cooperative platformer game | 2025-12-12T22:50:00Z |
-| [denandz](https://github.com/denandz) | [sourcemapper](https://github.com/denandz/sourcemapper) | 1244 | Extract JavaScript source trees from Sourcemap files | 2025-12-12T20:29:22Z |
+| [ddnet](https://github.com/ddnet) | [ddnet](https://github.com/ddnet/ddnet) | 724 | DDraceNetwork, a free cooperative platformer game | 2025-12-13T12:26:17Z |
+| [denandz](https://github.com/denandz) | [sourcemapper](https://github.com/denandz/sourcemapper) | 1245 | Extract JavaScript source trees from Sourcemap files | 2025-12-13T03:10:00Z |
 | [denilsonsa](https://github.com/denilsonsa) | [prettyping](https://github.com/denilsonsa/prettyping) | 1258 | prettyping is a wrapper around the standard ping tool, making the output prettier, more colorful, more compact, and easier to read. | 2025-12-11T23:51:39Z |
-| [denisidoro](https://github.com/denisidoro) | [navi](https://github.com/denisidoro/navi) | 16499 | An interactive cheatsheet tool for the command-line | 2025-12-12T22:54:45Z |
-| [derailed](https://github.com/derailed) | [k9s](https://github.com/derailed/k9s) | 32142 | 🐶 Kubernetes CLI To Manage Your Clusters In Style! | 2025-12-12T18:17:28Z |
-| [devploit](https://github.com/devploit) | [nomore403](https://github.com/devploit/nomore403) | 1392 | 🚫 Advanced tool for security researchers to bypass 403/40X restrictions through smart techniques and adaptive request manipulation. Fast. Precise. Effective. | 2025-12-12T17:00:06Z |
+| [denisidoro](https://github.com/denisidoro) | [navi](https://github.com/denisidoro/navi) | 16503 | An interactive cheatsheet tool for the command-line | 2025-12-13T21:22:18Z |
+| [derailed](https://github.com/derailed) | [k9s](https://github.com/derailed/k9s) | 32154 | 🐶 Kubernetes CLI To Manage Your Clusters In Style! | 2025-12-13T20:38:26Z |
+| [devploit](https://github.com/devploit) | [nomore403](https://github.com/devploit/nomore403) | 1393 | 🚫 Advanced tool for security researchers to bypass 403/40X restrictions through smart techniques and adaptive request manipulation. Fast. Precise. Effective. | 2025-12-13T04:40:47Z |
 | [dhn](https://github.com/dhn) | [spk](https://github.com/dhn/spk) | 84 | spk aka spritzgebaeck: A small OSINT/Recon tool to find CIDRs that belong to a specific organization. | 2025-11-24T08:21:03Z |
 | [dhn](https://github.com/dhn) | [udon](https://github.com/dhn/udon) | 178 | A simple tool that helps to find assets/domains based on the Google Analytics ID. | 2025-10-28T10:16:36Z |
 | [dhth](https://github.com/dhth) | [mult](https://github.com/dhth/mult) | 64 | Run a command multiple times and glance at the outputs via a TUI | 2025-12-03T22:08:40Z |
 | [diazona](https://github.com/diazona) | [pwait](https://github.com/diazona/pwait) | 17 | Small utility to wait for a process to finish | 2025-09-17T06:02:42Z |
 | [dimkr](https://github.com/dimkr) | [loksh](https://github.com/dimkr/loksh) | 123 | A Linux port of OpenBSDs ksh | 2025-10-30T16:34:29Z |
-| [directvt](https://github.com/directvt) | [vtm](https://github.com/directvt/vtm) | 3206 | Text-based desktop environment | 2025-12-12T19:11:12Z |
-| [direnv](https://github.com/direnv) | [direnv](https://github.com/direnv/direnv) | 14416 | unclutter your .profile | 2025-12-12T21:34:20Z |
+| [directvt](https://github.com/directvt) | [vtm](https://github.com/directvt/vtm) | 3207 | Text-based desktop environment | 2025-12-13T23:31:10Z |
+| [direnv](https://github.com/direnv) | [direnv](https://github.com/direnv/direnv) | 14419 | unclutter your .profile | 2025-12-13T08:23:30Z |
 | [divVerent](https://github.com/divVerent) | [aaaaxy](https://github.com/divVerent/aaaaxy) | 265 | A nonlinear 2D puzzle platformer taking place in impossible spaces. | 2025-12-06T05:48:10Z |
 | [dkorunic](https://github.com/dkorunic) | [axfr2hosts](https://github.com/dkorunic/axfr2hosts) | 13 | Fetches one or more DNS zones via AXFR and dumps in Unix hosts format for local use | 2025-12-09T06:20:29Z |
 | [dkorunic](https://github.com/dkorunic) | [pktstat](https://github.com/dkorunic/pktstat) | 89 | Simple ethernet interface traffic monitor and reporting tool | 2025-12-09T06:22:59Z |
-| [dlvhdr](https://github.com/dlvhdr) | [gh-dash](https://github.com/dlvhdr/gh-dash) | 9424 | A rich terminal UI for GitHub that doesnt break your flow. | 2025-12-12T18:38:29Z |
-| [dndx](https://github.com/dndx) | [phantun](https://github.com/dndx/phantun) | 2161 | Transforms UDP stream into (fake) TCP streams that can go through Layer 3 & Layer 4 (NAPT) firewalls/NATs. | 2025-12-12T11:08:29Z |
-| [dotenv-linter](https://github.com/dotenv-linter) | [dotenv-linter](https://github.com/dotenv-linter/dotenv-linter) | 2034 | ⚡️Lightning-fast linter for .env files. Written in Rust 🦀 | 2025-12-11T12:11:19Z |
+| [dlvhdr](https://github.com/dlvhdr) | [gh-dash](https://github.com/dlvhdr/gh-dash) | 9424 | A rich terminal UI for GitHub that doesnt break your flow. | 2025-12-13T18:10:04Z |
+| [dndx](https://github.com/dndx) | [phantun](https://github.com/dndx/phantun) | 2162 | Transforms UDP stream into (fake) TCP streams that can go through Layer 3 & Layer 4 (NAPT) firewalls/NATs. | 2025-12-13T21:40:43Z |
+| [dotenv-linter](https://github.com/dotenv-linter) | [dotenv-linter](https://github.com/dotenv-linter/dotenv-linter) | 2035 | ⚡️Lightning-fast linter for .env files. Written in Rust 🦀 | 2025-12-13T04:20:42Z |
 | [dsecuredcom](https://github.com/dsecuredcom) | [archive-finder](https://github.com/dsecuredcom/archive-finder) | 6 | Find archives for a given hostlist. | 2025-06-23T10:55:57Z |
 | [dsecuredcom](https://github.com/dsecuredcom) | [dynamic-file-searcher](https://github.com/dsecuredcom/dynamic-file-searcher) | 21 | Tool to scan servers and hosts using dynamic paths. | 2025-10-01T10:51:37Z |
 | [dsecuredcom](https://github.com/dsecuredcom) | [ffufPostprocessing](https://github.com/dsecuredcom/ffufPostprocessing) | 140 | Golang tool which helps dropping the irrelevant entries from your ffuf result file. | 2025-08-09T13:23:04Z |
@@ -384,109 +384,109 @@
 | [dtolnay](https://github.com/dtolnay) | [cargo-unlock](https://github.com/dtolnay/cargo-unlock) | 33 | Remove Cargo.lock lockfile | 2025-11-20T18:05:50Z |
 | [dtolnay](https://github.com/dtolnay) | [faketty](https://github.com/dtolnay/faketty) | 188 | Wrapper to exec a command in a pty, even if redirecting the output | 2025-12-12T18:59:50Z |
 | [dub-flow](https://github.com/dub-flow) | [sessionprobe](https://github.com/dub-flow/sessionprobe) | 462 | SessionProbe is a multi-threaded tool designed for penetration testing and bug bounty hunting. It evaluates user privileges in web applications by taking a session token and checking access across a list of URLs, highlighting potential authorization issues. | 2025-11-30T13:15:00Z |
-| [dundee](https://github.com/dundee) | [gdu](https://github.com/dundee/gdu) | 5080 | Fast disk usage analyzer with console interface written in Go | 2025-12-12T19:31:29Z |
-| [dutchcoders](https://github.com/dutchcoders) | [transfer.sh](https://github.com/dutchcoders/transfer.sh) | 15748 | Easy and fast file sharing from the command-line. | 2025-12-12T16:06:28Z |
-| [dwisiswant0](https://github.com/dwisiswant0) | [crlfuzz](https://github.com/dwisiswant0/crlfuzz) | 1497 | A fast tool to scan CRLF vulnerability written in Go | 2025-12-11T14:33:27Z |
+| [dundee](https://github.com/dundee) | [gdu](https://github.com/dundee/gdu) | 5083 | Fast disk usage analyzer with console interface written in Go | 2025-12-13T21:15:27Z |
+| [dutchcoders](https://github.com/dutchcoders) | [transfer.sh](https://github.com/dutchcoders/transfer.sh) | 15749 | Easy and fast file sharing from the command-line. | 2025-12-13T23:05:03Z |
+| [dwisiswant0](https://github.com/dwisiswant0) | [crlfuzz](https://github.com/dwisiswant0/crlfuzz) | 1498 | A fast tool to scan CRLF vulnerability written in Go | 2025-12-13T10:16:37Z |
 | [dwisiswant0](https://github.com/dwisiswant0) | [galer](https://github.com/dwisiswant0/galer) | 261 | A fast tool to fetch URLs from HTML attributes by crawl-in. | 2025-12-09T06:21:06Z |
 | [dwisiswant0](https://github.com/dwisiswant0) | [gfx](https://github.com/dwisiswant0/gfx) | 62 | A wrapper around grep, to help you grep for things! - Improved version of gf by @tomnomnom. | 2025-08-29T16:33:48Z |
 | [dwisiswant0](https://github.com/dwisiswant0) | [ngocok](https://github.com/dwisiswant0/ngocok) | 114 | ngrok Collaborator Link — yet another Burp Collaborator alternative for free with ngrok. | 2025-10-18T11:02:01Z |
 | [dwisiswant0](https://github.com/dwisiswant0) | [ppfuzz](https://github.com/dwisiswant0/ppfuzz) | 645 | A fast tool to scan client-side prototype pollution vulnerability written in Rust. 🦀 | 2025-12-08T12:10:22Z |
 | [dwisiswant0](https://github.com/dwisiswant0) | [tlder](https://github.com/dwisiswant0/tlder) | 107 | TLDs finder — check domain name availability across all valid top-level domains. | 2025-11-08T03:01:22Z |
 | [dwisiswant0](https://github.com/dwisiswant0) | [unch](https://github.com/dwisiswant0/unch) | 96 | Hides message with invisible Unicode characters | 2025-11-22T23:13:48Z |
-| [dwisiswant0](https://github.com/dwisiswant0) | [wadl-dumper](https://github.com/dwisiswant0/wadl-dumper) | 96 | Dump all available paths and/or endpoints on WADL file. | 2025-11-05T13:03:11Z |
+| [dwisiswant0](https://github.com/dwisiswant0) | [wadl-dumper](https://github.com/dwisiswant0/wadl-dumper) | 97 | Dump all available paths and/or endpoints on WADL file. | 2025-12-13T10:18:18Z |
 | [ebiggers](https://github.com/ebiggers) | [libdeflate](https://github.com/ebiggers/libdeflate) | 1187 | Heavily optimized library for DEFLATE/zlib/gzip compression and decompression | 2025-12-12T19:08:08Z |
 | [edera-dev](https://github.com/edera-dev) | [am-i-isolated](https://github.com/edera-dev/am-i-isolated) | 306 | Validate the isolation posture of your container environment. | 2025-12-07T02:22:41Z |
-| [edoardottt](https://github.com/edoardottt) | [cariddi](https://github.com/edoardottt/cariddi) | 2903 | Take a list of domains, crawl urls and scan for endpoints, secrets, api keys, file extensions, tokens and more | 2025-12-12T21:35:29Z |
+| [edoardottt](https://github.com/edoardottt) | [cariddi](https://github.com/edoardottt/cariddi) | 2904 | Take a list of domains, crawl urls and scan for endpoints, secrets, api keys, file extensions, tokens and more | 2025-12-13T01:14:56Z |
 | [edoardottt](https://github.com/edoardottt) | [csprecon](https://github.com/edoardottt/csprecon) | 495 | Discover new target domains using Content Security Policy | 2025-12-12T13:30:27Z |
 | [edoardottt](https://github.com/edoardottt) | [depsdev](https://github.com/edoardottt/depsdev) | 63 | CLI client (and Golang module) for deps.dev API. Free access to dependencies, licenses, advisories, and other critical health and security signals for open source package versions. | 2025-12-09T12:35:09Z |
 | [edoardottt](https://github.com/edoardottt) | [favirecon](https://github.com/edoardottt/favirecon) | 222 | Use favicons to improve your target recon phase. Quickly detect technologies, WAF, exposed panels, known services. | 2025-12-08T07:58:33Z |
 | [edoardottt](https://github.com/edoardottt) | [lit-bb-hack-tools](https://github.com/edoardottt/lit-bb-hack-tools) | 368 | Little Bug Bounty & Hacking Tools⚔️ | 2025-12-09T13:45:18Z |
 | [edoardottt](https://github.com/edoardottt) | [pphack](https://github.com/edoardottt/pphack) | 243 | The Most Advanced Client-Side Prototype Pollution Scanner | 2025-12-11T01:44:33Z |
 | [edoardottt](https://github.com/edoardottt) | [pwdsafety](https://github.com/edoardottt/pwdsafety) | 94 | 🔒command line tool checking password safety🔒 | 2025-11-21T08:07:21Z |
-| [edoardottt](https://github.com/edoardottt) | [scilla](https://github.com/edoardottt/scilla) | 1154 | Information Gathering tool - DNS / Subdomains / Ports / Directories enumeration | 2025-12-12T20:07:57Z |
-| [ekristen](https://github.com/ekristen) | [aws-nuke](https://github.com/ekristen/aws-nuke) | 1092 | Remove all the resources from an AWS account | 2025-12-12T22:52:22Z |
-| [ekzhang](https://github.com/ekzhang) | [bore](https://github.com/ekzhang/bore) | 10521 | 🕳 bore is a simple CLI tool for making tunnels to localhost | 2025-12-12T18:32:07Z |
-| [ekzhang](https://github.com/ekzhang) | [sshx](https://github.com/ekzhang/sshx) | 7175 | Fast, collaborative live terminal sharing over the web | 2025-12-12T15:47:27Z |
-| [eliukblau](https://github.com/eliukblau) | [pixterm](https://github.com/eliukblau/pixterm) | 997 | Draw images in your ANSI terminal with true color | 2025-12-11T07:58:12Z |
+| [edoardottt](https://github.com/edoardottt) | [scilla](https://github.com/edoardottt/scilla) | 1155 | Information Gathering tool - DNS / Subdomains / Ports / Directories enumeration | 2025-12-13T00:52:34Z |
+| [ekristen](https://github.com/ekristen) | [aws-nuke](https://github.com/ekristen/aws-nuke) | 1092 | Remove all the resources from an AWS account | 2025-12-13T20:27:54Z |
+| [ekzhang](https://github.com/ekzhang) | [bore](https://github.com/ekzhang/bore) | 10521 | 🕳 bore is a simple CLI tool for making tunnels to localhost | 2025-12-13T14:50:58Z |
+| [ekzhang](https://github.com/ekzhang) | [sshx](https://github.com/ekzhang/sshx) | 7177 | Fast, collaborative live terminal sharing over the web | 2025-12-13T12:07:28Z |
+| [eliukblau](https://github.com/eliukblau) | [pixterm](https://github.com/eliukblau/pixterm) | 998 | Draw images in your ANSI terminal with true color | 2025-12-13T02:10:26Z |
 | [elliotwutingfeng](https://github.com/elliotwutingfeng) | [go-fasttld](https://github.com/elliotwutingfeng/go-fasttld) | 38 | go-fasttld is a high performance effective top level domains (eTLD) extraction module. | 2025-12-10T10:54:23Z |
-| [elves](https://github.com/elves) | [elvish](https://github.com/elves/elvish) | 6184 | Powerful scripting language & versatile interactive shell | 2025-12-12T18:11:52Z |
+| [elves](https://github.com/elves) | [elvish](https://github.com/elves/elvish) | 6184 | Powerful scripting language & versatile interactive shell | 2025-12-13T09:49:01Z |
 | [emanuele6](https://github.com/emanuele6) | [emanutils](https://github.com/emanuele6/emanutils) | 7 | A collection of exec tools for amd64 GNU/Linux | 2025-07-23T20:10:19Z |
-| [enfein](https://github.com/enfein) | [mieru](https://github.com/enfein/mieru) | 1502 | mieru is a socks5 / HTTP / HTTPS proxy to bypass censorship. 見える是一款 socks5 / HTTP / HTTPS 网络代理翻墙工具。 | 2025-12-12T07:32:47Z |
-| [epi052](https://github.com/epi052) | [feroxbuster](https://github.com/epi052/feroxbuster) | 7308 | A fast, simple, recursive content discovery tool written in Rust. | 2025-12-12T18:55:49Z |
-| [eradman](https://github.com/eradman) | [entr](https://github.com/eradman/entr) | 5390 | Run arbitrary commands when files change | 2025-12-12T21:37:16Z |
-| [erebe](https://github.com/erebe) | [wstunnel](https://github.com/erebe/wstunnel) | 6163 | Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI - Static binary available | 2025-12-12T22:52:38Z |
-| [esnet](https://github.com/esnet) | [iperf](https://github.com/esnet/iperf) | 8105 | iperf3:  A TCP, UDP, and SCTP network bandwidth measurement tool | 2025-12-12T10:59:20Z |
-| [esrrhs](https://github.com/esrrhs) | [pingtunnel](https://github.com/esrrhs/pingtunnel) | 3495 | Pingtunnel is a tool that send TCP/UDP traffic over ICMP | 2025-12-11T20:50:47Z |
+| [enfein](https://github.com/enfein) | [mieru](https://github.com/enfein/mieru) | 1505 | mieru is a socks5 / HTTP / HTTPS proxy to bypass censorship. 見える是一款 socks5 / HTTP / HTTPS 网络代理翻墙工具。 | 2025-12-13T13:15:05Z |
+| [epi052](https://github.com/epi052) | [feroxbuster](https://github.com/epi052/feroxbuster) | 7313 | A fast, simple, recursive content discovery tool written in Rust. | 2025-12-13T14:18:48Z |
+| [eradman](https://github.com/eradman) | [entr](https://github.com/eradman/entr) | 5393 | Run arbitrary commands when files change | 2025-12-13T23:33:29Z |
+| [erebe](https://github.com/erebe) | [wstunnel](https://github.com/erebe/wstunnel) | 6168 | Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI - Static binary available | 2025-12-13T21:33:05Z |
+| [esnet](https://github.com/esnet) | [iperf](https://github.com/esnet/iperf) | 8104 | iperf3:  A TCP, UDP, and SCTP network bandwidth measurement tool | 2025-12-13T16:42:10Z |
+| [esrrhs](https://github.com/esrrhs) | [pingtunnel](https://github.com/esrrhs/pingtunnel) | 3495 | Pingtunnel is a tool that send TCP/UDP traffic over ICMP | 2025-12-13T01:26:02Z |
 | [estesp](https://github.com/estesp) | [manifest-tool](https://github.com/estesp/manifest-tool) | 830 | Command line tool to create and query container image manifest list/indexes | 2025-12-09T01:54:17Z |
-| [etcd-io](https://github.com/etcd-io) | [etcd](https://github.com/etcd-io/etcd) | 50970 | Distributed reliable key-value store for the most critical data of a distributed system | 2025-12-12T22:33:09Z |
+| [etcd-io](https://github.com/etcd-io) | [etcd](https://github.com/etcd-io/etcd) | 50975 | Distributed reliable key-value store for the most critical data of a distributed system | 2025-12-13T18:56:34Z |
 | [eth-cscs](https://github.com/eth-cscs) | [squashfs-mount](https://github.com/eth-cscs/squashfs-mount) | 13 | Setuid instead of FUSE for mounting squashfs files. | 2025-10-04T13:58:23Z |
 | [ethicalhackingplayground](https://github.com/ethicalhackingplayground) | [hrekt](https://github.com/ethicalhackingplayground/hrekt) | 41 | A really fast http prober. | 2025-09-07T13:51:52Z |
 | [etix](https://github.com/etix) | [mirrorbits](https://github.com/etix/mirrorbits) | 564 | Mirrorbits is a geographical download redirector written in Go for distributing files efficiently across a set of mirrors. | 2025-12-02T07:42:10Z |
-| [evanw](https://github.com/evanw) | [esbuild](https://github.com/evanw/esbuild) | 39546 | An extremely fast bundler for the web | 2025-12-12T17:53:00Z |
-| [everywall](https://github.com/everywall) | [ladder](https://github.com/everywall/ladder) | 6091 | Selfhosted alternative to 12ft.io. and 1ft.io bypass paywalls with a proxy ladder and remove CORS headers from any URL | 2025-12-12T18:28:21Z |
+| [evanw](https://github.com/evanw) | [esbuild](https://github.com/evanw/esbuild) | 39547 | An extremely fast bundler for the web | 2025-12-13T18:54:08Z |
+| [everywall](https://github.com/everywall) | [ladder](https://github.com/everywall/ladder) | 6092 | Selfhosted alternative to 12ft.io. and 1ft.io bypass paywalls with a proxy ladder and remove CORS headers from any URL | 2025-12-13T20:30:57Z |
 | [evilsocket](https://github.com/evilsocket) | [shellz](https://github.com/evilsocket/shellz) | 606 | shellz is a small utility to manage your ssh, telnet, kubernetes, winrm, web or any custom shell in a single place. | 2025-12-03T13:12:06Z |
-| [exfatprogs](https://github.com/exfatprogs) | [exfatprogs](https://github.com/exfatprogs/exfatprogs) | 252 | exFAT filesystem userspace utilities | 2025-12-09T15:06:04Z |
+| [exfatprogs](https://github.com/exfatprogs) | [exfatprogs](https://github.com/exfatprogs/exfatprogs) | 252 | exFAT filesystem userspace utilities | 2025-12-13T01:26:01Z |
 | [explodingcamera](https://github.com/explodingcamera) | [tinywasm](https://github.com/explodingcamera/tinywasm) | 546 | A tiny, interpreted WebAssembly Runtime written in Rust | 2025-12-08T21:47:32Z |
-| [gitui-org](https://github.com/gitui-org) | [gitui](https://github.com/gitui-org/gitui) | 21025 | Blazing 💥 fast terminal-ui for git written in rust 🦀 | 2025-12-12T22:08:09Z |
-| [eza-community](https://github.com/eza-community) | [eza](https://github.com/eza-community/eza) | 18807 | A modern alternative to ls | 2025-12-12T21:25:38Z |
-| [facebook](https://github.com/facebook) | [zstd](https://github.com/facebook/zstd) | 26205 | Zstandard - Fast real-time compression algorithm | 2025-12-12T20:43:29Z |
-| [fastfetch-cli](https://github.com/fastfetch-cli) | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | 18593 | A maintained, feature-rich and performance oriented, neofetch like system information tool. | 2025-12-12T23:09:51Z |
-| [fatedier](https://github.com/fatedier) | [frp](https://github.com/fatedier/frp) | 101938 | A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet. | 2025-12-12T23:36:57Z |
+| [gitui-org](https://github.com/gitui-org) | [gitui](https://github.com/gitui-org/gitui) | 21033 | Blazing 💥 fast terminal-ui for git written in rust 🦀 | 2025-12-13T20:15:21Z |
+| [eza-community](https://github.com/eza-community) | [eza](https://github.com/eza-community/eza) | 18824 | A modern alternative to ls | 2025-12-13T21:45:18Z |
+| [facebook](https://github.com/facebook) | [zstd](https://github.com/facebook/zstd) | 26209 | Zstandard - Fast real-time compression algorithm | 2025-12-13T15:09:55Z |
+| [fastfetch-cli](https://github.com/fastfetch-cli) | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | 18614 | A maintained, feature-rich and performance oriented, neofetch like system information tool. | 2025-12-13T22:56:35Z |
+| [fatedier](https://github.com/fatedier) | [frp](https://github.com/fatedier/frp) | 102067 | A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet. | 2025-12-13T23:38:02Z |
 | [fcying](https://github.com/fcying) | [compiledb-go](https://github.com/fcying/compiledb-go) | 62 | Tool for generating Clangs JSON Compilation Database files for make-based build systems. | 2025-11-24T06:15:56Z |
-| [fenrus75](https://github.com/fenrus75) | [powertop](https://github.com/fenrus75/powertop) | 1243 | The Linux PowerTOP tool  -- please post patches to the mailing list instead of using github pull requests | 2025-12-11T22:41:57Z |
+| [fenrus75](https://github.com/fenrus75) | [powertop](https://github.com/fenrus75/powertop) | 1244 | The Linux PowerTOP tool  -- please post patches to the mailing list instead of using github pull requests | 2025-12-13T00:45:12Z |
 | [ferama](https://github.com/ferama) | [rospo](https://github.com/ferama/rospo) | 349 | 🐸 Effortless persistent SSH tunnels with embedded server for seamless connectivity | 2025-12-12T09:05:16Z |
 | [ferion11](https://github.com/ferion11) | [PeaZip_Appimage](https://github.com/ferion11/PeaZip_Appimage) | 15 | PeaZip Appimage for linux 64bits | 2025-12-08T09:30:36Z |
 | [ferreiraklet](https://github.com/ferreiraklet) | [airixss](https://github.com/ferreiraklet/airixss) | 268 | Finding XSS during recon | 2025-11-24T08:20:35Z |
-| [ffuf](https://github.com/ffuf) | [ffuf](https://github.com/ffuf/ffuf) | 15245 | Fast web fuzzer written in Go | 2025-12-12T18:09:25Z |
+| [ffuf](https://github.com/ffuf) | [ffuf](https://github.com/ffuf/ffuf) | 15249 | Fast web fuzzer written in Go | 2025-12-13T21:03:04Z |
 | [ffuf](https://github.com/ffuf) | [pencode](https://github.com/ffuf/pencode) | 238 | Complex payload encoder | 2025-12-11T20:46:32Z |
 | [fgont](https://github.com/fgont) | [ipv6toolkit](https://github.com/fgont/ipv6toolkit) | 277 | SI6 Networks IPv6 Toolkit | 2025-12-03T13:10:46Z |
 | [file](https://github.com/file) | [file](https://github.com/file/file) | 1509 | Read-only mirror of file CVS repository, updated every half hour. NOTE: do not make pull requests here, nor comment any commits, submit them usual way to bug tracker or to the mailing list. Maintainer(s) are not tracking  this git mirror. | 2025-12-12T11:13:18Z |
-| [filebrowser](https://github.com/filebrowser) | [filebrowser](https://github.com/filebrowser/filebrowser) | 32418 | 📂 Web File Browser | 2025-12-12T19:37:58Z |
+| [filebrowser](https://github.com/filebrowser) | [filebrowser](https://github.com/filebrowser/filebrowser) | 32429 | 📂 Web File Browser | 2025-12-13T23:26:38Z |
 | [filhodanuvem](https://github.com/filhodanuvem) | [gitql](https://github.com/filhodanuvem/gitql) | 6304 | 💊 A git query language | 2025-11-06T23:01:47Z |
-| [fioncat](https://github.com/fioncat) | [otree](https://github.com/fioncat/otree) | 431 | A command line tool to view objects (JSON/YAML/TOML/XML) in TUI tree widget. | 2025-12-12T08:03:43Z |
+| [fioncat](https://github.com/fioncat) | [otree](https://github.com/fioncat/otree) | 433 | A command line tool to view objects (JSON/YAML/TOML/XML) in TUI tree widget. | 2025-12-13T11:08:01Z |
 | [firefart](https://github.com/firefart) | [stunner](https://github.com/firefart/stunner) | 833 | Stunner is a tool to test and exploit STUN, TURN and TURN over TCP servers. | 2025-12-10T13:02:04Z |
-| [fish-shell](https://github.com/fish-shell) | [fish-shell](https://github.com/fish-shell/fish-shell) | 31803 | The user-friendly command line shell. | 2025-12-12T19:21:09Z |
+| [fish-shell](https://github.com/fish-shell) | [fish-shell](https://github.com/fish-shell/fish-shell) | 31811 | The user-friendly command line shell. | 2025-12-13T23:18:38Z |
 | [fkie-cad](https://github.com/fkie-cad) | [cwe_checker](https://github.com/fkie-cad/cwe_checker) | 1297 | cwe_checker finds vulnerable patterns in binary executables | 2025-12-12T19:45:03Z |
-| [flameshot-org](https://github.com/flameshot-org) | [flameshot](https://github.com/flameshot-org/flameshot) | 28445 | Powerful yet simple to use screenshot software :desktop_computer: :camera_flash: | 2025-12-12T22:51:23Z |
+| [flameshot-org](https://github.com/flameshot-org) | [flameshot](https://github.com/flameshot-org/flameshot) | 28457 | Powerful yet simple to use screenshot software :desktop_computer: :camera_flash: | 2025-12-13T21:47:33Z |
 | [fmnx](https://github.com/fmnx) | [cftun](https://github.com/fmnx/cftun) | 132 | Third-party Cloudflare Tunnel client (formerly Argo Tunnel) | 2025-11-26T01:36:15Z |
 | [folbricht](https://github.com/folbricht) | [desync](https://github.com/folbricht/desync) | 368 | Alternative casync implementation | 2025-12-12T15:55:30Z |
-| [folbricht](https://github.com/folbricht) | [routedns](https://github.com/folbricht/routedns) | 590 | DNS stub resolver, proxy and router with support for DoT, DoH, DoQ, and DTLS | 2025-12-12T10:02:58Z |
+| [folbricht](https://github.com/folbricht) | [routedns](https://github.com/folbricht/routedns) | 591 | DNS stub resolver, proxy and router with support for DoT, DoH, DoQ, and DTLS | 2025-12-13T19:07:20Z |
 | [foresterre](https://github.com/foresterre) | [imagineer](https://github.com/foresterre/imagineer) | 214 | 🦜 Accessible image processing and conversion from the terminal. Front-end for image-rs/image. Formerly sic | 2025-11-21T02:30:09Z |
 | [fossable](https://github.com/fossable) | [goldboot](https://github.com/fossable/goldboot) | 631 | Build golden images with CI | 2025-12-03T02:03:45Z |
 | [foxcpp](https://github.com/foxcpp) | [maddy](https://github.com/foxcpp/maddy) | 5763 | ✉️ Composable all-in-one mail server. | 2025-12-12T14:50:01Z |
 | [foxfriends](https://github.com/foxfriends) | [syncat](https://github.com/foxfriends/syncat) | 61 | Syntax aware cat | 2025-10-24T04:31:57Z |
-| [fujiapple852](https://github.com/fujiapple852) | [trippy](https://github.com/fujiapple852/trippy) | 6366 | A network diagnostic tool | 2025-12-12T20:38:59Z |
-| [fullstorydev](https://github.com/fullstorydev) | [grpcurl](https://github.com/fullstorydev/grpcurl) | 12296 | Like cURL, but for gRPC: Command-line tool for interacting with gRPC servers | 2025-12-12T05:45:24Z |
-| [fyne-io](https://github.com/fyne-io) | [fyne](https://github.com/fyne-io/fyne) | 27607 | Cross platform GUI toolkit in Go inspired by Material Design | 2025-12-12T20:56:57Z |
-| [g0ldencybersec](https://github.com/g0ldencybersec) | [gungnir](https://github.com/g0ldencybersec/gungnir) | 430 | CT Log Scanner | 2025-12-12T06:57:34Z |
+| [fujiapple852](https://github.com/fujiapple852) | [trippy](https://github.com/fujiapple852/trippy) | 6367 | A network diagnostic tool | 2025-12-13T22:52:11Z |
+| [fullstorydev](https://github.com/fullstorydev) | [grpcurl](https://github.com/fullstorydev/grpcurl) | 12297 | Like cURL, but for gRPC: Command-line tool for interacting with gRPC servers | 2025-12-13T09:37:23Z |
+| [fyne-io](https://github.com/fyne-io) | [fyne](https://github.com/fyne-io/fyne) | 27611 | Cross platform GUI toolkit in Go inspired by Material Design | 2025-12-13T23:01:40Z |
+| [g0ldencybersec](https://github.com/g0ldencybersec) | [gungnir](https://github.com/g0ldencybersec/gungnir) | 431 | CT Log Scanner | 2025-12-13T01:21:09Z |
 | [gabrie30](https://github.com/gabrie30) | [ghorg](https://github.com/gabrie30/ghorg) | 1899 | Quickly clone or backup an entire org/users repositories into one directory - Supports GitHub, GitLab, Bitbucket, and more 🐇🥚 | 2025-12-10T23:31:46Z |
 | [gavinhoward](https://github.com/gavinhoward) | [bc](https://github.com/gavinhoward/bc) | 214 | An implementation of the POSIX bc calculator with GNU extensions and dc. Finished. | 2025-11-30T23:35:55Z |
-| [gcla](https://github.com/gcla) | [termshark](https://github.com/gcla/termshark) | 9701 | A terminal UI for tshark, inspired by Wireshark | 2025-12-12T22:38:52Z |
-| [getsops](https://github.com/getsops) | [sops](https://github.com/getsops/sops) | 20188 | Simple and flexible tool for managing secrets | 2025-12-12T20:59:03Z |
+| [gcla](https://github.com/gcla) | [termshark](https://github.com/gcla/termshark) | 9706 | A terminal UI for tshark, inspired by Wireshark | 2025-12-13T20:58:25Z |
+| [getsops](https://github.com/getsops) | [sops](https://github.com/getsops/sops) | 20198 | Simple and flexible tool for managing secrets | 2025-12-13T22:19:43Z |
 | [ghostunnel](https://github.com/ghostunnel) | [ghostunnel](https://github.com/ghostunnel/ghostunnel) | 2110 | A simple SSL/TLS proxy with mutual authentication for securing non-TLS services. | 2025-12-12T06:39:24Z |
-| [ginuerzh](https://github.com/ginuerzh) | [gost](https://github.com/ginuerzh/gost) | 17360 | GO Simple Tunnel - a simple tunnel written in golang | 2025-12-12T14:30:28Z |
-| [git-lfs](https://github.com/git-lfs) | [git-lfs](https://github.com/git-lfs/git-lfs) | 13942 | Git extension for versioning large files | 2025-12-12T15:25:43Z |
-| [git](https://github.com/git) | [git](https://github.com/git/git) | 58049 | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements. | 2025-12-12T23:41:08Z |
+| [ginuerzh](https://github.com/ginuerzh) | [gost](https://github.com/ginuerzh/gost) | 17362 | GO Simple Tunnel - a simple tunnel written in golang | 2025-12-13T13:09:37Z |
+| [git-lfs](https://github.com/git-lfs) | [git-lfs](https://github.com/git-lfs/git-lfs) | 13943 | Git extension for versioning large files | 2025-12-13T08:17:55Z |
+| [git](https://github.com/git) | [git](https://github.com/git/git) | 58066 | Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements. | 2025-12-13T22:33:18Z |
 | [github](https://github.com/github) | [git-sizer](https://github.com/github/git-sizer) | 3930 | Compute various size metrics for a Git repository, flagging those that might cause problems | 2025-12-11T14:25:48Z |
-| [gitleaks](https://github.com/gitleaks) | [gitleaks](https://github.com/gitleaks/gitleaks) | 24227 | Find secrets with Gitleaks 🔑 | 2025-12-12T21:11:54Z |
+| [gitleaks](https://github.com/gitleaks) | [gitleaks](https://github.com/gitleaks/gitleaks) | 24236 | Find secrets with Gitleaks 🔑 | 2025-12-13T15:52:14Z |
 | [gitpod-io](https://github.com/gitpod-io) | [openvscode-server](https://github.com/gitpod-io/openvscode-server) | 5678 | Run upstream VS Code on a remote machine with access through a modern web browser from any device, anywhere. | 2025-12-12T21:00:50Z |
-| [go-git](https://github.com/go-git) | [go-git](https://github.com/go-git/go-git) | 7059 | A highly extensible Git implementation in pure Go. | 2025-12-12T20:22:03Z |
-| [go-gitea](https://github.com/go-gitea) | [gitea](https://github.com/go-gitea/gitea) | 52484 | Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD | 2025-12-12T23:25:06Z |
-| [go-gost](https://github.com/go-gost) | [gost](https://github.com/go-gost/gost) | 5980 | GO Simple Tunnel - a simple tunnel written in golang | 2025-12-12T11:51:20Z |
-| [gohugoio](https://github.com/gohugoio) | [hugo](https://github.com/gohugoio/hugo) | 85332 | The world’s fastest framework for building websites. | 2025-12-12T22:25:57Z |
-| [gojue](https://github.com/gojue) | [ecapture](https://github.com/gojue/ecapture) | 14839 | Capturing SSL/TLS plaintext without a CA certificate using eBPF. Supported on Linux/Android kernels for amd64/arm64. | 2025-12-12T10:26:17Z |
-| [gokcehan](https://github.com/gokcehan) | [lf](https://github.com/gokcehan/lf) | 8819 | Terminal file manager | 2025-12-12T09:18:09Z |
-| [gokrazy](https://github.com/gokrazy) | [rsync](https://github.com/gokrazy/rsync) | 711 | rsync in Go! implements client and server, which can send or receive files (upload, download, all directions supported) | 2025-12-07T00:57:46Z |
-| [google](https://github.com/google) | [brotli](https://github.com/google/brotli) | 14477 | Brotli compression format | 2025-12-12T23:22:48Z |
-| [google](https://github.com/google) | [codesearch](https://github.com/google/codesearch) | 3902 | Fast, indexed regexp search over large file trees | 2025-12-12T08:37:10Z |
-| [google](https://github.com/google) | [go-containerregistry](https://github.com/google/go-containerregistry) | 3638 | Go library and CLIs for working with container registries | 2025-12-12T14:51:42Z |
-| [google](https://github.com/google) | [keep-sorted](https://github.com/google/keep-sorted) | 331 | keep-sorted is a language-agnostic formatter that sorts lines between two markers in a larger file. | 2025-12-12T09:30:10Z |
+| [go-git](https://github.com/go-git) | [go-git](https://github.com/go-git/go-git) | 7061 | A highly extensible Git implementation in pure Go. | 2025-12-13T19:06:40Z |
+| [go-gitea](https://github.com/go-gitea) | [gitea](https://github.com/go-gitea/gitea) | 52500 | Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD | 2025-12-13T20:23:34Z |
+| [go-gost](https://github.com/go-gost) | [gost](https://github.com/go-gost/gost) | 5984 | GO Simple Tunnel - a simple tunnel written in golang | 2025-12-13T17:54:53Z |
+| [gohugoio](https://github.com/gohugoio) | [hugo](https://github.com/gohugoio/hugo) | 85348 | The world’s fastest framework for building websites. | 2025-12-13T22:02:42Z |
+| [gojue](https://github.com/gojue) | [ecapture](https://github.com/gojue/ecapture) | 14840 | Capturing SSL/TLS plaintext without a CA certificate using eBPF. Supported on Linux/Android kernels for amd64/arm64. | 2025-12-13T18:29:49Z |
+| [gokcehan](https://github.com/gokcehan) | [lf](https://github.com/gokcehan/lf) | 8822 | Terminal file manager | 2025-12-13T22:45:38Z |
+| [gokrazy](https://github.com/gokrazy) | [rsync](https://github.com/gokrazy/rsync) | 712 | rsync in Go! implements client and server, which can send or receive files (upload, download, all directions supported) | 2025-12-13T06:28:27Z |
+| [google](https://github.com/google) | [brotli](https://github.com/google/brotli) | 14479 | Brotli compression format | 2025-12-13T23:07:32Z |
+| [google](https://github.com/google) | [codesearch](https://github.com/google/codesearch) | 3904 | Fast, indexed regexp search over large file trees | 2025-12-13T21:46:26Z |
+| [google](https://github.com/google) | [go-containerregistry](https://github.com/google/go-containerregistry) | 3638 | Go library and CLIs for working with container registries | 2025-12-13T14:46:43Z |
+| [google](https://github.com/google) | [keep-sorted](https://github.com/google/keep-sorted) | 334 | keep-sorted is a language-agnostic formatter that sorts lines between two markers in a larger file. | 2025-12-13T19:25:01Z |
 | [google](https://github.com/google) | [nsjail](https://github.com/google/nsjail) | 3611 | A lightweight process isolation tool that utilizes Linux namespaces, cgroups, rlimits and seccomp-bpf syscall filters, leveraging the Kafel BPF language for enhanced security. | 2025-12-11T13:19:26Z |
-| [gopasspw](https://github.com/gopasspw) | [gopass](https://github.com/gopasspw/gopass) | 6598 | The slightly more awesome standard unix password manager for teams | 2025-12-12T17:44:02Z |
+| [gopasspw](https://github.com/gopasspw) | [gopass](https://github.com/gopasspw/gopass) | 6601 | The slightly more awesome standard unix password manager for teams | 2025-12-13T14:40:31Z |
 | [goreleaser](https://github.com/goreleaser) | [nfpm](https://github.com/goreleaser/nfpm) | 2444 | nFPM is Not FPM - a simple deb, rpm, apk, ipk, and arch linux packager written in Go | 2025-12-11T08:23:35Z |
-| [gperftools](https://github.com/gperftools) | [gperftools](https://github.com/gperftools/gperftools) | 8878 | Main gperftools repository | 2025-12-12T09:56:19Z |
-| [grafana](https://github.com/grafana) | [loki](https://github.com/grafana/loki) | 27139 | Like Prometheus, but for logs. | 2025-12-12T21:41:30Z |
-| [gravitl](https://github.com/gravitl) | [netmaker](https://github.com/gravitl/netmaker) | 11088 | Netmaker makes networks with WireGuard. Netmaker automates fast, secure, and distributed virtual networks. | 2025-12-12T14:42:50Z |
+| [gperftools](https://github.com/gperftools) | [gperftools](https://github.com/gperftools/gperftools) | 8880 | Main gperftools repository | 2025-12-13T22:53:56Z |
+| [grafana](https://github.com/grafana) | [loki](https://github.com/grafana/loki) | 27148 | Like Prometheus, but for logs. | 2025-12-13T21:59:50Z |
+| [gravitl](https://github.com/gravitl) | [netmaker](https://github.com/gravitl/netmaker) | 11089 | Netmaker makes networks with WireGuard. Netmaker automates fast, secure, and distributed virtual networks. | 2025-12-13T19:18:52Z |
 | [gregkh](https://github.com/gregkh) | [usbutils](https://github.com/gregkh/usbutils) | 419 | USB utilities for Linux, including lsusb | 2025-11-30T11:33:46Z |
 | [greymd](https://github.com/greymd) | [teip](https://github.com/greymd/teip) | 590 | Masking tape to help commands do one thing well | 2025-11-27T14:50:24Z |
 | [guitmz](https://github.com/guitmz) | [ezuri](https://github.com/guitmz/ezuri) | 262 | A Simple Linux ELF Runtime Crypter | 2025-12-04T08:39:44Z |
@@ -502,59 +502,59 @@
 | [hackerschoice](https://github.com/hackerschoice) | [zapper](https://github.com/hackerschoice/zapper) | 238 | Zaps arguments and environment from the process list | 2025-12-01T16:31:44Z |
 | [hadolint](https://github.com/hadolint) | [hadolint](https://github.com/hadolint/hadolint) | 11773 | Dockerfile linter, validate inline bash, written in Haskell | 2025-12-12T21:28:41Z |
 | [hadriansecurity](https://github.com/hadriansecurity) | [sanicdns](https://github.com/hadriansecurity/sanicdns) | 151 | Gotta go fast | 2025-12-12T10:17:10Z |
-| [hahwul](https://github.com/hahwul) | [dalfox](https://github.com/hahwul/dalfox) | 4735 | 🌙🦊 Dalfox is a powerful open-source XSS scanner and utility focused on automation. | 2025-12-12T21:38:08Z |
+| [hahwul](https://github.com/hahwul) | [dalfox](https://github.com/hahwul/dalfox) | 4737 | 🌙🦊 Dalfox is a powerful open-source XSS scanner and utility focused on automation. | 2025-12-13T17:29:38Z |
 | [hahwul](https://github.com/hahwul) | [jwt-hack](https://github.com/hahwul/jwt-hack) | 953 | JSON Web Token Hack Toolkit | 2025-12-10T07:48:56Z |
 | [hahwul](https://github.com/hahwul) | [urx](https://github.com/hahwul/urx) | 171 | Extracts URLs from OSINT Archives for Security Insights | 2025-12-08T12:39:40Z |
 | [hakluke](https://github.com/hakluke) | [hakip2host](https://github.com/hakluke/hakip2host) | 452 | hakip2host takes a list of IP addresses via stdin, then does a series of checks to return associated domain names. | 2025-10-04T22:48:46Z |
 | [hakluke](https://github.com/hakluke) | [hakoriginfinder](https://github.com/hakluke/hakoriginfinder) | 970 | Tool for discovering the origin host behind a reverse proxy. Useful for bypassing cloud WAFs! | 2025-12-08T02:57:05Z |
-| [hakluke](https://github.com/hakluke) | [hakrawler](https://github.com/hakluke/hakrawler) | 4956 | Simple, fast web crawler designed for easy, quick discovery of endpoints and assets within a web application | 2025-12-10T16:54:14Z |
+| [hakluke](https://github.com/hakluke) | [hakrawler](https://github.com/hakluke/hakrawler) | 4957 | Simple, fast web crawler designed for easy, quick discovery of endpoints and assets within a web application | 2025-12-13T13:18:13Z |
 | [hakluke](https://github.com/hakluke) | [hakrevdns](https://github.com/hakluke/hakrevdns) | 1539 | Small, fast tool for performing reverse DNS lookups en masse. | 2025-12-08T16:17:33Z |
 | [hanshuaikang](https://github.com/hanshuaikang) | [Nping](https://github.com/hanshuaikang/Nping) | 2082 | 🏎  Nping mean NB Ping, A Ping Tool in Rust with Real-Time Data and Visualizations | 2025-12-11T17:36:22Z |
-| [hanslub42](https://github.com/hanslub42) | [rlwrap](https://github.com/hanslub42/rlwrap) | 2935 | A readline wrapper | 2025-12-11T23:00:28Z |
-| [hashcat](https://github.com/hashcat) | [hashcat-utils](https://github.com/hashcat/hashcat-utils) | 1515 | Small utilities that are useful in advanced password cracking | 2025-12-12T03:44:45Z |
-| [helix-editor](https://github.com/helix-editor) | [helix](https://github.com/helix-editor/helix) | 41807 | A post-modern modal text editor. | 2025-12-12T22:49:12Z |
+| [hanslub42](https://github.com/hanslub42) | [rlwrap](https://github.com/hanslub42/rlwrap) | 2937 | A readline wrapper | 2025-12-13T21:59:41Z |
+| [hashcat](https://github.com/hashcat) | [hashcat-utils](https://github.com/hashcat/hashcat-utils) | 1517 | Small utilities that are useful in advanced password cracking | 2025-12-13T21:41:58Z |
+| [helix-editor](https://github.com/helix-editor) | [helix](https://github.com/helix-editor/helix) | 41811 | A post-modern modal text editor. | 2025-12-13T18:05:23Z |
 | [helviojunior](https://github.com/helviojunior) | [sprayshark](https://github.com/helviojunior/sprayshark) | 56 | SprayShark is a modular G-Suite password sprayer with threading! | 2025-12-12T17:12:43Z |
-| [henrygd](https://github.com/henrygd) | [beszel](https://github.com/henrygd/beszel) | 17526 | Lightweight server monitoring hub with historical data, docker stats, and alerts. | 2025-12-12T22:43:41Z |
+| [henrygd](https://github.com/henrygd) | [beszel](https://github.com/henrygd/beszel) | 17547 | Lightweight server monitoring hub with historical data, docker stats, and alerts. | 2025-12-13T23:24:35Z |
 | [herrhotzenplotz](https://github.com/herrhotzenplotz) | [gcli](https://github.com/herrhotzenplotz/gcli) | 124 | Portable Git(hublabtea)/Forgejo/Bugzilla CLI tool | 2025-12-07T12:20:26Z |
-| [hetznercloud](https://github.com/hetznercloud) | [cli](https://github.com/hetznercloud/cli) | 1398 | A command-line interface for Hetzner Cloud | 2025-12-12T09:37:28Z |
+| [hetznercloud](https://github.com/hetznercloud) | [cli](https://github.com/hetznercloud/cli) | 1401 | A command-line interface for Hetzner Cloud | 2025-12-13T21:12:14Z |
 | [hmgle](https://github.com/hmgle) | [graftcp](https://github.com/hmgle/graftcp) | 2354 | A flexible tool for redirecting a given programs TCP traffic to SOCKS5 or HTTP proxy. | 2025-12-12T01:12:20Z |
 | [homeport](https://github.com/homeport) | [dyff](https://github.com/homeport/dyff) | 1631 | /ˈdʏf/ - diff tool for YAML files, and sometimes JSON | 2025-12-10T18:04:17Z |
-| [hpjansson](https://github.com/hpjansson) | [chafa](https://github.com/hpjansson/chafa) | 3921 | 📺🗿 Terminal graphics for the 21st century. | 2025-12-12T14:18:40Z |
+| [hpjansson](https://github.com/hpjansson) | [chafa](https://github.com/hpjansson/chafa) | 3923 | 📺🗿 Terminal graphics for the 21st century. | 2025-12-13T19:36:55Z |
 | [hroptatyr](https://github.com/hroptatyr) | [dateutils](https://github.com/hroptatyr/dateutils) | 648 | nifty command line date and time utilities; fast date calculations and conversion in the shell | 2025-12-11T10:17:52Z |
-| [htop-dev](https://github.com/htop-dev) | [htop](https://github.com/htop-dev/htop) | 7643 | htop - an interactive process viewer | 2025-12-12T16:45:13Z |
+| [htop-dev](https://github.com/htop-dev) | [htop](https://github.com/htop-dev/htop) | 7644 | htop - an interactive process viewer | 2025-12-13T17:40:45Z |
 | [hueristiq](https://github.com/hueristiq) | [xsubfind3r](https://github.com/hueristiq/xsubfind3r) | 115 | A command-line utility designed to discover subdomains for a given domain in a simple, efficient way. It works by gathering information from a variety of passive sources, meaning it doesnt interact directly with the target but instead gathers data that is already publicly available. | 2025-12-03T13:13:30Z |
 | [hueristiq](https://github.com/hueristiq) | [xtee](https://github.com/hueristiq/xtee) | 2 | A command-line utility for reading from standard input and writing to both standard output and file, providing powerful features for file manipulation and data processing. It combines the functionality of tee, the soaking behavior of sponge, and more. | 2025-11-17T07:39:12Z |
 | [hueristiq](https://github.com/hueristiq) | [xurlfind3r](https://github.com/hueristiq/xurlfind3r) | 662 | A command-line utility designed to discover URLs for a given domain in a simple, efficient way. It works by gathering information from a variety of passive sources, meaning it doesnt interact directly with the target but instead gathers data that is already publicly available. | 2025-12-11T23:13:55Z |
-| [hufrea](https://github.com/hufrea) | [byedpi](https://github.com/hufrea/byedpi) | 2764 | Bypass DPI | 2025-12-12T16:13:43Z |
-| [huggingface](https://github.com/huggingface) | [huggingface_hub](https://github.com/huggingface/huggingface_hub) | 3127 | The official Python client for the Hugging Face Hub. | 2025-12-12T23:24:49Z |
+| [hufrea](https://github.com/hufrea) | [byedpi](https://github.com/hufrea/byedpi) | 2767 | Bypass DPI | 2025-12-13T23:25:07Z |
+| [huggingface](https://github.com/huggingface) | [huggingface_hub](https://github.com/huggingface/huggingface_hub) | 3132 | The official Python client for the Hugging Face Hub. | 2025-12-13T20:09:19Z |
 | [husarnet](https://github.com/husarnet) | [husarnet](https://github.com/husarnet/husarnet) | 362 | Husarnet is a Peer-to-Peer VPN to connect your laptops, servers and microcontrollers over the Internet with zero configuration. | 2025-12-12T10:28:19Z |
-| [hykilpikonna](https://github.com/hykilpikonna) | [hyfetch](https://github.com/hykilpikonna/hyfetch) | 1830 | 🏳️‍🌈 🏳️‍⚧️ Neofetch with LGBTQ+ pride flags! | 2025-12-11T21:38:53Z |
+| [hykilpikonna](https://github.com/hykilpikonna) | [hyfetch](https://github.com/hykilpikonna/hyfetch) | 1831 | 🏳️‍🌈 🏳️‍⚧️ Neofetch with LGBTQ+ pride flags! | 2025-12-13T08:53:12Z |
 | [iambouali](https://github.com/iambouali) | [p1radup](https://github.com/iambouali/p1radup) | 28 | Process URLs and remove duplicate query parameters. | 2025-05-15T23:27:59Z |
 | [iangcarroll](https://github.com/iangcarroll) | [cookiemonster](https://github.com/iangcarroll/cookiemonster) | 954 | 🍪 CookieMonster helps you detect and abuse vulnerable implementations of stateless sessions. | 2025-12-08T12:17:37Z |
-| [iawia002](https://github.com/iawia002) | [lux](https://github.com/iawia002/lux) | 30704 | 👾 Fast and simple video download library and CLI tool written in Go | 2025-12-12T19:43:01Z |
+| [iawia002](https://github.com/iawia002) | [lux](https://github.com/iawia002/lux) | 30708 | 👾 Fast and simple video download library and CLI tool written in Go | 2025-12-13T16:22:21Z |
 | [ibara](https://github.com/ibara) | [oksh](https://github.com/ibara/oksh) | 416 | Portable OpenBSD ksh, based on the Public Domain Korn Shell (pdksh). | 2025-12-10T16:02:24Z |
-| [ibnaleem](https://github.com/ibnaleem) | [gosearch](https://github.com/ibnaleem/gosearch) | 3154 | 🔍 Search anyones digital footprint across 300+ websites | 2025-12-11T07:43:12Z |
+| [ibnaleem](https://github.com/ibnaleem) | [gosearch](https://github.com/ibnaleem/gosearch) | 3155 | 🔍 Search anyones digital footprint across 300+ websites | 2025-12-13T02:35:05Z |
 | [ic005k](https://github.com/ic005k) | [Knot](https://github.com/ic005k/Knot) | 4 | Record Everything. | 2025-12-12T10:35:38Z |
-| [icann](https://github.com/icann) | [icann-rdap](https://github.com/icann/icann-rdap) | 416 | ICANN implementation of the Registry Data Access Protocol (RDAP) | 2025-12-12T16:57:23Z |
+| [icann](https://github.com/icann) | [icann-rdap](https://github.com/icann/icann-rdap) | 417 | ICANN implementation of the Registry Data Access Protocol (RDAP) | 2025-12-13T11:04:25Z |
 | [idealeer](https://github.com/idealeer) | [xmap](https://github.com/idealeer/xmap) | 465 | XMap is a fast network scanner designed for performing Internet-wide IPv6 & IPv4 network research scanning. | 2025-12-12T09:29:48Z |
 | [iineva](https://github.com/iineva) | [ipa-server](https://github.com/iineva/ipa-server) | 773 | Upload and install iOS ipa and Android apk in web. | 2025-12-10T19:47:05Z |
-| [ikatson](https://github.com/ikatson) | [rqbit](https://github.com/ikatson/rqbit) | 1446 | A bittorrent client in Rust | 2025-12-12T20:31:59Z |
-| [imsnif](https://github.com/imsnif) | [bandwhich](https://github.com/imsnif/bandwhich) | 11376 | Terminal bandwidth utilization tool | 2025-12-12T17:03:12Z |
+| [ikatson](https://github.com/ikatson) | [rqbit](https://github.com/ikatson/rqbit) | 1446 | A bittorrent client in Rust | 2025-12-13T22:02:27Z |
+| [imsnif](https://github.com/imsnif) | [bandwhich](https://github.com/imsnif/bandwhich) | 11380 | Terminal bandwidth utilization tool | 2025-12-13T22:45:07Z |
 | [in-toto](https://github.com/in-toto) | [witness](https://github.com/in-toto/witness) | 507 | Witness is a pluggable framework for software supply chain risk management.  It automates, normalizes, and verifies software artifact provenance. | 2025-12-10T20:57:47Z |
 | [inotify-tools](https://github.com/inotify-tools) | [inotify-tools](https://github.com/inotify-tools/inotify-tools) | 3339 | inotify-tools is a library and a set of command-line programs providing a simple interface to inotify. | 2025-12-12T17:45:14Z |
 | [io12](https://github.com/io12) | [pwninit](https://github.com/io12/pwninit) | 1036 | pwninit - automate starting binary exploit challenges | 2025-12-11T14:14:17Z |
 | [io12](https://github.com/io12) | [unf](https://github.com/io12/unf) | 66 | UNixize Filename -- replace annoying anti-unix characters in filenames | 2025-12-05T14:57:51Z |
-| [ioi](https://github.com/ioi) | [isolate](https://github.com/ioi/isolate) | 1345 | Sandbox for securely executing untrusted programs | 2025-12-12T17:43:18Z |
-| [ip7z](https://github.com/ip7z) | [7zip](https://github.com/ip7z/7zip) | 2445 | 7-Zip | 2025-12-12T21:12:56Z |
-| [ipfs](https://github.com/ipfs) | [kubo](https://github.com/ipfs/kubo) | 16837 | An IPFS implementation in Go | 2025-12-12T10:23:22Z |
-| [ipinfo](https://github.com/ipinfo) | [cli](https://github.com/ipinfo/cli) | 1956 | Official Command Line Interface for the IPinfo API (IP geolocation and other types of IP data) | 2025-12-11T01:30:23Z |
+| [ioi](https://github.com/ioi) | [isolate](https://github.com/ioi/isolate) | 1346 | Sandbox for securely executing untrusted programs | 2025-12-13T12:40:27Z |
+| [ip7z](https://github.com/ip7z) | [7zip](https://github.com/ip7z/7zip) | 2448 | 7-Zip | 2025-12-13T17:31:58Z |
+| [ipfs](https://github.com/ipfs) | [kubo](https://github.com/ipfs/kubo) | 16837 | An IPFS implementation in Go | 2025-12-13T17:52:53Z |
+| [ipinfo](https://github.com/ipinfo) | [cli](https://github.com/ipinfo/cli) | 1959 | Official Command Line Interface for the IPinfo API (IP geolocation and other types of IP data) | 2025-12-13T22:15:17Z |
 | [iproute2](https://github.com/iproute2) | [iproute2](https://github.com/iproute2/iproute2) | 949 | Iproute2 Source Code Mirror - This is a publish-only repository. Please follow README.devel procedure for any changes. | 2025-12-11T23:46:05Z |
 | [iputils](https://github.com/iputils) | [iputils](https://github.com/iputils/iputils) | 703 | The iputils package is set of small old utilities for Linux networking. | 2025-12-10T16:33:22Z |
-| [ismaelgv](https://github.com/ismaelgv) | [rnr](https://github.com/ismaelgv/rnr) | 554 | A command-line tool to batch rename files and directories | 2025-12-04T21:18:16Z |
+| [ismaelgv](https://github.com/ismaelgv) | [rnr](https://github.com/ismaelgv/rnr) | 555 | A command-line tool to batch rename files and directories | 2025-12-13T11:27:43Z |
 | [itchyny](https://github.com/itchyny) | [bed](https://github.com/itchyny/bed) | 1339 | Binary editor written in Go | 2025-12-09T13:25:26Z |
-| [itchyny](https://github.com/itchyny) | [gojq](https://github.com/itchyny/gojq) | 3647 | Pure Go implementation of jq | 2025-12-11T17:35:34Z |
+| [itchyny](https://github.com/itchyny) | [gojq](https://github.com/itchyny/gojq) | 3648 | Pure Go implementation of jq | 2025-12-13T09:19:26Z |
 | [itchyny](https://github.com/itchyny) | [mmv](https://github.com/itchyny/mmv) | 799 | rename multiple files with editor | 2025-12-09T03:39:59Z |
-| [treeverse](https://github.com/treeverse) | [dvc](https://github.com/treeverse/dvc) | 15187 | 🦉 Data Versioning and ML Experiments | 2025-12-12T23:15:22Z |
+| [treeverse](https://github.com/treeverse) | [dvc](https://github.com/treeverse/dvc) | 15188 | 🦉 Data Versioning and ML Experiments | 2025-12-13T12:35:06Z |
 | [ivan-hc](https://github.com/ivan-hc) | [Abiword-appimage](https://github.com/ivan-hc/Abiword-appimage) | 1 | Unofficial, a free and open-source word processor. | 2025-12-11T00:54:39Z |
 | [ivan-hc](https://github.com/ivan-hc) | [Aisleriot-appimage](https://github.com/ivan-hc/Aisleriot-appimage) | 2 | Aisleriot, also known as sol or solitaire. A card game that features over 80 different solitaire-type card games. | 2025-12-11T01:41:58Z |
 | [ivan-hc](https://github.com/ivan-hc) | [Boxes-appimage](https://github.com/ivan-hc/Boxes-appimage) | 10 | Unofficial GNOME Boxes, an application that gives you access to virtual machines. | 2025-12-11T01:03:57Z |
@@ -562,47 +562,47 @@
 | [ivan-hc](https://github.com/ivan-hc) | [KDE-utils-appimage](https://github.com/ivan-hc/KDE-utils-appimage) | 6 | Arch Linux suite of KDE utilities: 27 apps in one JuNest-based AppImage (ArchImage). | 2025-12-11T01:01:52Z |
 | [ivan-hc](https://github.com/ivan-hc) | [Spotify-appimage](https://github.com/ivan-hc/Spotify-appimage) | 31 | Unofficial AppImage for Spotify built on top of the Snap package. | 2025-12-11T02:06:58Z |
 | [ivan-hc](https://github.com/ivan-hc) | [WPS-Office-appimage](https://github.com/ivan-hc/WPS-Office-appimage) | 18 | Unofficial, WPS Office suite built from the official DEB package. | 2025-12-11T01:48:57Z |
-| [iyear](https://github.com/iyear) | [tdl](https://github.com/iyear/tdl) | 6648 | 📥 A Telegram toolkit written in Golang | 2025-12-12T17:47:49Z |
+| [iyear](https://github.com/iyear) | [tdl](https://github.com/iyear/tdl) | 6657 | 📥 A Telegram toolkit written in Golang | 2025-12-13T19:09:12Z |
 | [j3ssie](https://github.com/j3ssie) | [durl](https://github.com/j3ssie/durl) | 39 | Remove duplicate URLs by retaining only the unique combinations of hostname, path, and parameter names | 2025-11-20T10:05:05Z |
 | [j3ssie](https://github.com/j3ssie) | [json-cleaner](https://github.com/j3ssie/json-cleaner) | 16 | The utility aims to clean up output generated by popular tools by calculating a hash based on specific JSON values to removing junk data. | 2025-11-20T10:06:15Z |
-| [j3ssie](https://github.com/j3ssie) | [metabigor](https://github.com/j3ssie/metabigor) | 1443 | OSINT tools and more but without API key | 2025-12-11T23:18:51Z |
-| [j3ssie](https://github.com/j3ssie) | [osmedeus](https://github.com/j3ssie/osmedeus) | 5989 | A Workflow Engine for Offensive Security | 2025-12-12T06:29:28Z |
+| [j3ssie](https://github.com/j3ssie) | [metabigor](https://github.com/j3ssie/metabigor) | 1444 | OSINT tools and more but without API key | 2025-12-13T00:46:59Z |
+| [j3ssie](https://github.com/j3ssie) | [osmedeus](https://github.com/j3ssie/osmedeus) | 5990 | A Workflow Engine for Offensive Security | 2025-12-13T03:12:19Z |
 | [jacek-kurlit](https://github.com/jacek-kurlit) | [pik](https://github.com/jacek-kurlit/pik) | 408 | Process Interactive Kill | 2025-12-08T09:17:56Z |
 | [jaeles-project](https://github.com/jaeles-project) | [gospider](https://github.com/jaeles-project/gospider) | 2838 | Gospider - Fast web spider written in Go | 2025-12-11T09:07:12Z |
-| [jaeles-project](https://github.com/jaeles-project) | [jaeles](https://github.com/jaeles-project/jaeles) | 2310 | The Swiss Army knife for automated Web Application Testing | 2025-12-11T03:36:35Z |
+| [jaeles-project](https://github.com/jaeles-project) | [jaeles](https://github.com/jaeles-project/jaeles) | 2311 | The Swiss Army knife for automated Web Application Testing | 2025-12-13T16:34:58Z |
 | [jaksi](https://github.com/jaksi) | [sshesame](https://github.com/jaksi/sshesame) | 1691 | An easy to set up and use SSH honeypot, a fake SSH server that lets anyone in and logs their activity | 2025-12-09T15:27:22Z |
 | [jamesmcm](https://github.com/jamesmcm) | [vopono](https://github.com/jamesmcm/vopono) | 1156 | Run applications through VPN tunnels with temporary network namespaces | 2025-12-12T05:29:38Z |
-| [janmojzis](https://github.com/janmojzis) | [tinyssh](https://github.com/janmojzis/tinyssh) | 1489 | TinySSH is small server (less than 100000 words of code) | 2025-12-11T06:20:42Z |
-| [jansc](https://github.com/jansc) | [ncgopher](https://github.com/jansc/ncgopher) | 200 | A gopher and gemini client for the modern internet | 2025-12-10T18:44:30Z |
+| [janmojzis](https://github.com/janmojzis) | [tinyssh](https://github.com/janmojzis/tinyssh) | 1490 | TinySSH is small server (less than 100000 words of code) | 2025-12-13T20:15:00Z |
+| [jansc](https://github.com/jansc) | [ncgopher](https://github.com/jansc/ncgopher) | 201 | A gopher and gemini client for the modern internet | 2025-12-13T06:42:37Z |
 | [jdrews](https://github.com/jdrews) | [logstation](https://github.com/jdrews/logstation) | 96 | Tail log files in web browser | 2025-10-26T15:40:51Z |
-| [jdx](https://github.com/jdx) | [mise](https://github.com/jdx/mise) | 22094 | dev tools, env vars, task runner | 2025-12-12T22:06:41Z |
+| [jdx](https://github.com/jdx) | [mise](https://github.com/jdx/mise) | 22114 | dev tools, env vars, task runner | 2025-12-13T22:24:53Z |
 | [jedisct1](https://github.com/jedisct1) | [minisign](https://github.com/jedisct1/minisign) | 2540 | A dead simple tool to sign files and verify digital signatures. | 2025-12-10T06:12:38Z |
-| [jeessy2](https://github.com/jeessy2) | [ddns-go](https://github.com/jeessy2/ddns-go) | 15838 | Simple and easy to use DDNS. Support Aliyun, Tencent Cloud, Dnspod, Cloudflare, Callback, Huawei Cloud, Baidu Cloud, Porkbun, GoDaddy, Namecheap, NameSilo... | 2025-12-12T13:39:12Z |
-| [jesseduffield](https://github.com/jesseduffield) | [lazydocker](https://github.com/jesseduffield/lazydocker) | 48353 | The lazier way to manage everything docker | 2025-12-12T23:25:37Z |
-| [jesseduffield](https://github.com/jesseduffield) | [lazygit](https://github.com/jesseduffield/lazygit) | 69257 | simple terminal UI for git commands | 2025-12-12T23:40:36Z |
-| [jetify-com](https://github.com/jetify-com) | [devbox](https://github.com/jetify-com/devbox) | 10969 | Instant, easy, and predictable development environments | 2025-12-12T21:07:20Z |
-| [jindrapetrik](https://github.com/jindrapetrik) | [jpexs-decompiler](https://github.com/jindrapetrik/jpexs-decompiler) | 5244 | JPEXS Free Flash Decompiler | 2025-12-12T15:47:56Z |
+| [jeessy2](https://github.com/jeessy2) | [ddns-go](https://github.com/jeessy2/ddns-go) | 15843 | Simple and easy to use DDNS. Support Aliyun, Tencent Cloud, Dnspod, Cloudflare, Callback, Huawei Cloud, Baidu Cloud, Porkbun, GoDaddy, Namecheap, NameSilo... | 2025-12-13T17:17:06Z |
+| [jesseduffield](https://github.com/jesseduffield) | [lazydocker](https://github.com/jesseduffield/lazydocker) | 48366 | The lazier way to manage everything docker | 2025-12-13T22:55:10Z |
+| [jesseduffield](https://github.com/jesseduffield) | [lazygit](https://github.com/jesseduffield/lazygit) | 69300 | simple terminal UI for git commands | 2025-12-13T23:37:19Z |
+| [jetify-com](https://github.com/jetify-com) | [devbox](https://github.com/jetify-com/devbox) | 10975 | Instant, easy, and predictable development environments | 2025-12-13T21:45:41Z |
+| [jindrapetrik](https://github.com/jindrapetrik) | [jpexs-decompiler](https://github.com/jindrapetrik/jpexs-decompiler) | 5247 | JPEXS Free Flash Decompiler | 2025-12-13T22:23:38Z |
 | [jirutka](https://github.com/jirutka) | [nginx-binaries](https://github.com/jirutka/nginx-binaries) | 67 | Nginx and njs binaries for Linux (x86_64, aarch64, ppc64le), macOS and Windows. Linux binaries are static so works on every Linux. | 2025-12-05T14:03:04Z |
-| [jj-vcs](https://github.com/jj-vcs) | [jj](https://github.com/jj-vcs/jj) | 22973 | A Git-compatible VCS that is both simple and powerful | 2025-12-12T22:07:11Z |
-| [jkfran](https://github.com/jkfran) | [killport](https://github.com/jkfran/killport) | 1786 | A command-line tool to easily kill processes running on a specified port. | 2025-12-12T16:26:27Z |
+| [jj-vcs](https://github.com/jj-vcs) | [jj](https://github.com/jj-vcs/jj) | 22986 | A Git-compatible VCS that is both simple and powerful | 2025-12-13T21:15:21Z |
+| [jkfran](https://github.com/jkfran) | [killport](https://github.com/jkfran/killport) | 1787 | A command-line tool to easily kill processes running on a specified port. | 2025-12-13T08:55:43Z |
 | [jm33-m0](https://github.com/jm33-m0) | [arc](https://github.com/jm33-m0/arc) | 22 | arc is a pure Go library for creating, extracting, and managing archives. Based on mholt/archives and inspired by now-deprecated arc in archiver/v3. | 2025-12-04T05:09:12Z |
 | [jmacdonald](https://github.com/jmacdonald) | [amp](https://github.com/jmacdonald/amp) | 3976 | A complete text editor for your terminal. | 2025-12-10T14:04:34Z |
-| [johnkerl](https://github.com/johnkerl) | [miller](https://github.com/johnkerl/miller) | 9557 | Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON | 2025-12-12T15:17:43Z |
-| [jordansissel](https://github.com/jordansissel) | [xdotool](https://github.com/jordansissel/xdotool) | 3624 | fake keyboard/mouse input, window management, and more | 2025-12-12T21:42:07Z |
+| [johnkerl](https://github.com/johnkerl) | [miller](https://github.com/johnkerl/miller) | 9562 | Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON | 2025-12-13T16:38:56Z |
+| [jordansissel](https://github.com/jordansissel) | [xdotool](https://github.com/jordansissel/xdotool) | 3625 | fake keyboard/mouse input, window management, and more | 2025-12-13T11:54:18Z |
 | [jordfras](https://github.com/jordfras) | [linetime](https://github.com/jordfras/linetime) | 8 | Command line tool prefixing lines with a timestamp | 2025-12-01T12:08:25Z |
 | [josephburnett](https://github.com/josephburnett) | [jd](https://github.com/josephburnett/jd) | 2142 | JSON diff and patch | 2025-12-12T14:48:25Z |
 | [jpeddicord](https://github.com/jpeddicord) | [askalono](https://github.com/jpeddicord/askalono) | 271 | A tool & library to detect open source licenses from texts | 2025-11-10T01:45:43Z |
-| [jpillora](https://github.com/jpillora) | [chisel](https://github.com/jpillora/chisel) | 15328 | A fast TCP/UDP tunnel over HTTP | 2025-12-12T09:59:37Z |
-| [jqlang](https://github.com/jqlang) | [jq](https://github.com/jqlang/jq) | 33174 | Command-line JSON processor | 2025-12-12T22:59:06Z |
-| [jsdelivr](https://github.com/jsdelivr) | [globalping-cli](https://github.com/jsdelivr/globalping-cli) | 220 | A simple CLI tool to run networking commands remotely from hundreds of globally distributed servers | 2025-12-10T07:30:01Z |
-| [jsummers](https://github.com/jsummers) | [deark](https://github.com/jsummers/deark) | 198 | A utility for file format and metadata analysis, data extraction, decompression, and image format decoding | 2025-12-11T17:54:45Z |
-| [junegunn](https://github.com/junegunn) | [fzf](https://github.com/junegunn/fzf) | 75695 | :cherry_blossom: A command-line fuzzy finder | 2025-12-12T21:39:59Z |
+| [jpillora](https://github.com/jpillora) | [chisel](https://github.com/jpillora/chisel) | 15330 | A fast TCP/UDP tunnel over HTTP | 2025-12-13T11:57:32Z |
+| [jqlang](https://github.com/jqlang) | [jq](https://github.com/jqlang/jq) | 33179 | Command-line JSON processor | 2025-12-13T14:45:12Z |
+| [jsdelivr](https://github.com/jsdelivr) | [globalping-cli](https://github.com/jsdelivr/globalping-cli) | 222 | A simple CLI tool to run networking commands remotely from hundreds of globally distributed servers | 2025-12-13T16:41:49Z |
+| [jsummers](https://github.com/jsummers) | [deark](https://github.com/jsummers/deark) | 198 | A utility for file format and metadata analysis, data extraction, decompression, and image format decoding | 2025-12-13T13:41:58Z |
+| [junegunn](https://github.com/junegunn) | [fzf](https://github.com/junegunn/fzf) | 75717 | :cherry_blossom: A command-line fuzzy finder | 2025-12-13T23:41:01Z |
 | [jvns](https://github.com/jvns) | [dns-doctor](https://github.com/jvns/dns-doctor) | 46 | No description provided. | 2025-10-28T17:57:12Z |
 | [kardeiz](https://github.com/kardeiz) | [sanitize-filename](https://github.com/kardeiz/sanitize-filename) | 33 | No description provided. | 2025-10-20T14:50:54Z |
 | [karo-solutions](https://github.com/karo-solutions) | [Signal-Desktop-AppImage](https://github.com/karo-solutions/Signal-Desktop-AppImage) | 14 | Latest Stable AppImage build of Signal Desktop: https://github.com/signalapp/Signal-Desktop | 2025-12-11T06:48:33Z |
 | [karolba](https://github.com/karolba) | [wgcfcat](https://github.com/karolba/wgcfcat) | 7 | Like netcat, but over Cloudflare WARP | 2025-04-06T10:52:55Z |
 | [kavishgr](https://github.com/kavishgr) | [getghrel](https://github.com/kavishgr/getghrel) | 23 | getghrel(get github release) is a CLI tool that fetches and installs the latest release assets from Github for MacOS and Linux (amd64 and arm64 architectures). It automatically detects your operating system and architecture, downloads the release, extracts it(if needed), and keep only the binary. | 2025-11-25T00:08:28Z |
-| [kdave](https://github.com/kdave) | [btrfs-progs](https://github.com/kdave/btrfs-progs) | 636 | Development of userspace BTRFS tools | 2025-12-08T20:30:44Z |
+| [kdave](https://github.com/kdave) | [btrfs-progs](https://github.com/kdave/btrfs-progs) | 637 | Development of userspace BTRFS tools | 2025-12-13T12:43:10Z |
 | [keith-turner](https://github.com/keith-turner) | [ecoji](https://github.com/keith-turner/ecoji) | 869 | Encodes (and decodes) data as emojis | 2025-12-09T22:08:43Z |
 | [keithknott26](https://github.com/keithknott26) | [datadash](https://github.com/keithknott26/datadash) | 304 | Visualize and graph data in the terminal | 2025-11-30T18:51:02Z |
 | [keminar](https://github.com/keminar) | [anyproxy](https://github.com/keminar/anyproxy) | 34 | A transparent proxy written in Golang. | 2025-08-03T00:29:28Z |
@@ -614,16 +614,16 @@
 | [kleiton0x00](https://github.com/kleiton0x00) | [ppmap](https://github.com/kleiton0x00/ppmap) | 515 | A scanner/exploitation tool written in GO, which leverages client-side Prototype Pollution to XSS by exploiting known gadgets. | 2025-12-09T13:46:33Z |
 | [kmod-project](https://github.com/kmod-project) | [kmod](https://github.com/kmod-project/kmod) | 92 | kmod - Linux kernel module handling | 2025-12-01T11:17:38Z |
 | [kmxz](https://github.com/kmxz) | [overlayfs-tools](https://github.com/kmxz/overlayfs-tools) | 150 | Maintenance tools for overlay-filesystem | 2025-12-09T21:14:57Z |
-| [knadh](https://github.com/knadh) | [listmonk](https://github.com/knadh/listmonk) | 18409 | High performance, self-hosted, newsletter and mailing list manager with a modern dashboard. Single binary app. | 2025-12-12T19:18:15Z |
+| [knadh](https://github.com/knadh) | [listmonk](https://github.com/knadh/listmonk) | 18415 | High performance, self-hosted, newsletter and mailing list manager with a modern dashboard. Single binary app. | 2025-12-13T22:17:00Z |
 | [knadh](https://github.com/knadh) | [stuffbin](https://github.com/knadh/stuffbin) | 193 | Compress and embed static files and assets into Go binaries and access them with a virtual file system in production | 2025-12-02T19:39:07Z |
 | [knik0](https://github.com/knik0) | [faac](https://github.com/knik0/faac) | 208 | Freeware Advanced Audio Coder faac mirror | 2025-12-09T11:36:17Z |
 | [knik0](https://github.com/knik0) | [faad2](https://github.com/knik0/faad2) | 202 | Freeware Advanced Audio (AAC) Decoder faad2 mirror | 2025-12-03T14:49:55Z |
-| [knqyf263](https://github.com/knqyf263) | [pet](https://github.com/knqyf263/pet) | 5014 | Simple command-line snippet manager | 2025-12-12T11:25:57Z |
-| [koalaman](https://github.com/koalaman) | [shellcheck](https://github.com/koalaman/shellcheck) | 38631 | ShellCheck, a static analysis tool for shell scripts | 2025-12-12T17:09:31Z |
+| [knqyf263](https://github.com/knqyf263) | [pet](https://github.com/knqyf263/pet) | 5015 | Simple command-line snippet manager | 2025-12-13T12:30:43Z |
+| [koalaman](https://github.com/koalaman) | [shellcheck](https://github.com/koalaman/shellcheck) | 38632 | ShellCheck, a static analysis tool for shell scripts | 2025-12-13T13:26:19Z |
 | [koct9i](https://github.com/koct9i) | [ioping](https://github.com/koct9i/ioping) | 981 | simple disk I/0 latency measuring tool | 2025-11-23T18:27:52Z |
 | [kohler](https://github.com/kohler) | [lcdf-typetools](https://github.com/kohler/lcdf-typetools) | 163 | Utilities for manipulating OpenType, PostScript Type 1, and Multiple Master fonts. | 2025-12-11T20:17:51Z |
 | [koki-develop](https://github.com/koki-develop) | [clive](https://github.com/koki-develop/clive) | 373 | ⚡ Automates terminal operations. | 2025-12-06T09:58:32Z |
-| [kopia](https://github.com/kopia) | [kopia](https://github.com/kopia/kopia) | 12010 | Cross-platform backup tool for Windows, macOS & Linux with fast, incremental backups, client-side end-to-end encryption, compression and data deduplication. CLI and GUI included. | 2025-12-12T23:24:12Z |
+| [kopia](https://github.com/kopia) | [kopia](https://github.com/kopia/kopia) | 12022 | Cross-platform backup tool for Windows, macOS & Linux with fast, incremental backups, client-side end-to-end encryption, compression and data deduplication. CLI and GUI included. | 2025-12-13T23:39:53Z |
 | [koraa](https://github.com/koraa) | [huniq](https://github.com/koraa/huniq) | 256 | Filter out duplicates on the command line. Replacement for sort  uniq optimized for speed (10x faster) when sorting is not needed. | 2025-12-10T14:16:08Z |
 | [kost](https://github.com/kost) | [tty2web](https://github.com/kost/tty2web) | 148 | Share your terminal as a web application in bind/reverse mode | 2025-12-03T20:26:29Z |
 | [kpcyrd](https://github.com/kpcyrd) | [rebuilderd](https://github.com/kpcyrd/rebuilderd) | 411 | Independent verification of binary packages - Reproducible Builds | 2025-12-10T14:48:15Z |
@@ -632,84 +632,84 @@
 | [krtab](https://github.com/krtab) | [agnos](https://github.com/krtab/agnos) | 341 | Obtain (wildcard) certificates from lets encrypt using dns-01 without the need for API access to your DNS provider. | 2025-12-05T10:23:30Z |
 | [iczelia](https://github.com/iczelia) | [bzip3](https://github.com/iczelia/bzip3) | 1093 | A better and stronger spiritual successor to BZip2. | 2025-12-04T00:58:14Z |
 | [kubernetes-sigs](https://github.com/kubernetes-sigs) | [cri-tools](https://github.com/kubernetes-sigs/cri-tools) | 1905 | CLI and validation tools for Kubelet Container Runtime Interface (CRI) . | 2025-12-12T08:30:03Z |
-| [kunai-project](https://github.com/kunai-project) | [kunai](https://github.com/kunai-project/kunai) | 1025 | Threat-hunting tool for Linux | 2025-12-11T19:28:22Z |
+| [kunai-project](https://github.com/kunai-project) | [kunai](https://github.com/kunai-project/kunai) | 1026 | Threat-hunting tool for Linux | 2025-12-13T21:06:59Z |
 | [kxxt](https://github.com/kxxt) | [tracexec](https://github.com/kxxt/tracexec) | 426 | Tracer for execve{,at} and pre-exec behavior, launcher for debuggers. | 2025-12-06T04:50:08Z |
 | [laktak](https://github.com/laktak) | [zfind](https://github.com/laktak/zfind) | 401 | search for files (even inside tar/zip/7z/rar) using a SQL-WHERE filter | 2025-12-02T18:49:20Z |
 | [lanrat](https://github.com/lanrat) | [allxfr](https://github.com/lanrat/allxfr) | 27 | AXFR all the things! | 2025-08-30T21:53:15Z |
 | [lanrat](https://github.com/lanrat) | [certgraph](https://github.com/lanrat/certgraph) | 360 | An open source intelligence tool to crawl the graph of certificate Alternate Names | 2025-11-22T23:22:41Z |
 | [larrabee](https://github.com/larrabee) | [s3sync](https://github.com/larrabee/s3sync) | 550 | Really fast sync tool for S3 | 2025-12-10T11:33:42Z |
-| [lavv17](https://github.com/lavv17) | [lftp](https://github.com/lavv17/lftp) | 1225 | sophisticated command line file transfer program (ftp, http, sftp, fish, torrent) | 2025-12-07T20:59:22Z |
-| [lc](https://github.com/lc) | [gau](https://github.com/lc/gau) | 4724 | Fetch known URLs from AlienVaults Open Threat Exchange, the Wayback Machine, and Common Crawl. | 2025-12-12T20:06:37Z |
-| [lc](https://github.com/lc) | [subjs](https://github.com/lc/subjs) | 820 | Fetches javascript file from a list of URLS or subdomains. | 2025-12-12T19:59:51Z |
+| [lavv17](https://github.com/lavv17) | [lftp](https://github.com/lavv17/lftp) | 1226 | sophisticated command line file transfer program (ftp, http, sftp, fish, torrent) | 2025-12-13T09:59:07Z |
+| [lc](https://github.com/lc) | [gau](https://github.com/lc/gau) | 4727 | Fetch known URLs from AlienVaults Open Threat Exchange, the Wayback Machine, and Common Crawl. | 2025-12-13T11:17:34Z |
+| [lc](https://github.com/lc) | [subjs](https://github.com/lc/subjs) | 821 | Fetches javascript file from a list of URLS or subdomains. | 2025-12-13T10:47:46Z |
 | [leahneukirchen](https://github.com/leahneukirchen) | [lr](https://github.com/leahneukirchen/lr) | 160 | list files, recursively | 2025-11-06T06:50:20Z |
 | [leahneukirchen](https://github.com/leahneukirchen) | [nitro](https://github.com/leahneukirchen/nitro) | 339 | tiny but flexible init system and process supervisor | 2025-12-12T15:18:47Z |
-| [leahneukirchen](https://github.com/leahneukirchen) | [nq](https://github.com/leahneukirchen/nq) | 3078 | Unix command line queue utility | 2025-12-11T06:42:11Z |
+| [leahneukirchen](https://github.com/leahneukirchen) | [nq](https://github.com/leahneukirchen/nq) | 3079 | Unix command line queue utility | 2025-12-13T12:08:54Z |
 | [leahneukirchen](https://github.com/leahneukirchen) | [outils](https://github.com/leahneukirchen/outils) | 84 | port of some non-standard OpenBSD tools to Linux | 2025-08-21T10:30:49Z |
-| [leahneukirchen](https://github.com/leahneukirchen) | [snooze](https://github.com/leahneukirchen/snooze) | 264 | run a command at a particular time | 2025-12-02T14:58:24Z |
+| [leahneukirchen](https://github.com/leahneukirchen) | [snooze](https://github.com/leahneukirchen/snooze) | 265 | run a command at a particular time | 2025-12-13T00:05:05Z |
 | [lemonlove7](https://github.com/lemonlove7) | [EHole_magic](https://github.com/lemonlove7/EHole_magic) | 934 | EHole(棱洞)魔改。可对路径进行指纹识别；支持识别出来的重点资产进行漏洞检测(支持从hunter和fofa中提取资产)支持对ftp服务识别及爆破 | 2025-12-12T06:29:51Z |
-| [libarchive](https://github.com/libarchive) | [libarchive](https://github.com/libarchive/libarchive) | 3368 | Multi-format archive and compression library | 2025-12-12T11:04:15Z |
+| [libarchive](https://github.com/libarchive) | [libarchive](https://github.com/libarchive/libarchive) | 3368 | Multi-format archive and compression library | 2025-12-13T01:19:42Z |
 | [libexif](https://github.com/libexif) | [exif](https://github.com/libexif/exif) | 62 | A small command-line utility to show EXIF information hidden in JPEG files | 2025-11-24T08:16:52Z |
-| [libfuse](https://github.com/libfuse) | [libfuse](https://github.com/libfuse/libfuse) | 5861 | The reference implementation of the Linux FUSE (Filesystem in Userspace) interface | 2025-12-12T16:50:29Z |
+| [libfuse](https://github.com/libfuse) | [libfuse](https://github.com/libfuse/libfuse) | 5863 | The reference implementation of the Linux FUSE (Filesystem in Userspace) interface | 2025-12-13T07:12:57Z |
 | [libressl](https://github.com/libressl) | [portable](https://github.com/libressl/portable) | 1443 | LibreSSL Portable itself. This includes the build scaffold and compatibility layer that builds portable LibreSSL from the OpenBSD source code. Pull requests or patches sent to tech@openbsd.org are welcome. | 2025-12-04T21:40:23Z |
 | [life4](https://github.com/life4) | [enc](https://github.com/life4/enc) | 517 | 🔑🔒 A modern and friendly CLI alternative to GnuPG: generate and download keys, encrypt, decrypt, and sign text and files, and more. | 2025-11-15T09:20:03Z |
 | [lilendian0x00](https://github.com/lilendian0x00) | [xray-knife](https://github.com/lilendian0x00/xray-knife) | 310 | The Ultimate Swiss Army Knife for Xray and Sing-box | 2025-12-10T10:24:59Z |
-| [linux-nvme](https://github.com/linux-nvme) | [nvme-cli](https://github.com/linux-nvme/nvme-cli) | 1697 | NVMe management command line interface. | 2025-12-10T15:28:31Z |
+| [linux-nvme](https://github.com/linux-nvme) | [nvme-cli](https://github.com/linux-nvme/nvme-cli) | 1699 | NVMe management command line interface. | 2025-12-13T12:18:20Z |
 | [linux-test-project](https://github.com/linux-test-project) | [lcov](https://github.com/linux-test-project/lcov) | 1049 | LCOV | 2025-12-11T19:53:42Z |
 | [liquidaty](https://github.com/liquidaty) | [zsv](https://github.com/liquidaty/zsv) | 364 | zsv+lib: tabular data swiss-army knife CLI + worlds fastest (simd) CSV parser | 2025-12-12T06:21:54Z |
 | [liurui-software](https://github.com/liurui-software) | [mmlog](https://github.com/liurui-software/mmlog) | 10 | Log rotation tool for shell scripts, or any apps which generate logs to standard output or standard error. (Note this is a different project from the joyent/mmlog which is a tool for dumping chat history from a Mattermost chat server.) | 2025-02-11T01:21:12Z |
-| [lkl](https://github.com/lkl) | [linux](https://github.com/lkl/linux) | 866 | Linux kernel source tree | 2025-12-08T13:56:18Z |
-| [lmc999](https://github.com/lmc999) | [RegionRestrictionCheck](https://github.com/lmc999/RegionRestrictionCheck) | 4760 | A bash script to check the status of your IP on various geo-restricted services. | 2025-12-12T18:06:48Z |
+| [lkl](https://github.com/lkl) | [linux](https://github.com/lkl/linux) | 867 | Linux kernel source tree | 2025-12-13T01:01:15Z |
+| [lmc999](https://github.com/lmc999) | [RegionRestrictionCheck](https://github.com/lmc999/RegionRestrictionCheck) | 4761 | A bash script to check the status of your IP on various geo-restricted services. | 2025-12-13T11:33:47Z |
 | [lobuhi](https://github.com/lobuhi) | [byp4xx](https://github.com/lobuhi/byp4xx) | 1778 | 40X/HTTP bypasser in Go. Features: Verb tampering, headers, #bugbountytips, User-Agents, extensions, default credentials... | 2025-12-09T16:12:46Z |
-| [loft-sh](https://github.com/loft-sh) | [devpod](https://github.com/loft-sh/devpod) | 14382 | Codespaces but open-source, client-only and unopinionated: Works with any IDE and lets you use any cloud, kubernetes or just localhost docker. | 2025-12-12T22:09:13Z |
-| [logdyhq](https://github.com/logdyhq) | [logdy-core](https://github.com/logdyhq/logdy-core) | 2007 | Realtime log viewer with web UI, tail -f for logs with a web interface browser. | 2025-12-12T10:34:12Z |
+| [loft-sh](https://github.com/loft-sh) | [devpod](https://github.com/loft-sh/devpod) | 14386 | Codespaces but open-source, client-only and unopinionated: Works with any IDE and lets you use any cloud, kubernetes or just localhost docker. | 2025-12-13T20:38:38Z |
+| [logdyhq](https://github.com/logdyhq) | [logdy-core](https://github.com/logdyhq/logdy-core) | 2008 | Realtime log viewer with web UI, tail -f for logs with a web interface browser. | 2025-12-13T02:26:23Z |
 | [lostdusty](https://github.com/lostdusty) | [cobalt](https://github.com/lostdusty/cobalt) | 2 | best way to save what you love | 2025-04-15T07:52:30Z |
-| [skim-rs](https://github.com/skim-rs) | [skim](https://github.com/skim-rs/skim) | 6149 | Fuzzy Finder in rust! | 2025-12-12T22:47:28Z |
+| [skim-rs](https://github.com/skim-rs) | [skim](https://github.com/skim-rs/skim) | 6157 | Fuzzy Finder in rust! | 2025-12-13T23:40:12Z |
 | [lsof-org](https://github.com/lsof-org) | [lsof](https://github.com/lsof-org/lsof) | 519 | LiSt Open Files | 2025-12-11T20:06:20Z |
-| [lua](https://github.com/lua) | [lua](https://github.com/lua/lua) | 9568 | A copy of the Lua development repository, as seen by the Lua team. Mirrored irregularly. Please DO NOT send pull requests or any other stuff. All communication should be through the Lua mailing list https://www.lua.org/lua-l.html | 2025-12-12T23:34:58Z |
+| [lua](https://github.com/lua) | [lua](https://github.com/lua/lua) | 9568 | A copy of the Lua development repository, as seen by the Lua team. Mirrored irregularly. Please DO NOT send pull requests or any other stuff. All communication should be through the Lua mailing list https://www.lua.org/lua-l.html | 2025-12-13T11:55:28Z |
 | [m4b](https://github.com/m4b) | [bingrep](https://github.com/m4b/bingrep) | 1753 | like ~~grep~~ UBER, but for binaries | 2025-12-03T13:11:33Z |
-| [madler](https://github.com/madler) | [pigz](https://github.com/madler/pigz) | 2856 | A parallel implementation of gzip for modern multi-processor, multi-core machines. | 2025-12-08T00:31:08Z |
-| [magic-wormhole](https://github.com/magic-wormhole) | [magic-wormhole.rs](https://github.com/magic-wormhole/magic-wormhole.rs) | 930 | Rust implementation of Magic Wormhole, with new features and enhancements | 2025-12-12T11:21:57Z |
+| [madler](https://github.com/madler) | [pigz](https://github.com/madler/pigz) | 2858 | A parallel implementation of gzip for modern multi-processor, multi-core machines. | 2025-12-13T21:16:31Z |
+| [magic-wormhole](https://github.com/magic-wormhole) | [magic-wormhole.rs](https://github.com/magic-wormhole/magic-wormhole.rs) | 931 | Rust implementation of Magic Wormhole, with new features and enhancements | 2025-12-13T18:58:28Z |
 | [makotom](https://github.com/makotom) | [cfspeed](https://github.com/makotom/cfspeed) | 21 | Unofficial CLI-based implementation of https://speed.cloudflare.com/ | 2025-09-27T03:00:50Z |
 | [mamba-org](https://github.com/mamba-org) | [micromamba-releases](https://github.com/mamba-org/micromamba-releases) | 123 | Micromamba executables mirrored from conda-forge as Github releases | 2025-12-05T10:57:53Z |
 | [marco-calautti](https://github.com/marco-calautti) | [DeltaPatcher](https://github.com/marco-calautti/DeltaPatcher) | 520 | Delta Patcher is a GUI software that is able to create and apply xdelta patches. | 2025-12-12T01:52:08Z |
-| [marcosnils](https://github.com/marcosnils) | [bin](https://github.com/marcosnils/bin) | 986 | Effortless binary manager | 2025-12-12T08:59:04Z |
+| [marcosnils](https://github.com/marcosnils) | [bin](https://github.com/marcosnils/bin) | 989 | Effortless binary manager | 2025-12-13T19:57:58Z |
 | [maroofi](https://github.com/maroofi) | [bulkDNS](https://github.com/maroofi/bulkDNS) | 21 | buldDNS: A DNS scanner for large-scale measurement | 2025-09-08T07:56:48Z |
 | [martinlindhe](https://github.com/martinlindhe) | [validtoml](https://github.com/martinlindhe/validtoml) | 9 | Command line tool to validate TOML syntax of input file. | 2024-03-07T16:57:32Z |
-| [martymac](https://github.com/martymac) | [fpart](https://github.com/martymac/fpart) | 280 | Sort files and pack them into partitions | 2025-12-11T09:21:05Z |
+| [martymac](https://github.com/martymac) | [fpart](https://github.com/martymac/fpart) | 281 | Sort files and pack them into partitions | 2025-12-13T09:57:49Z |
 | [marwanhawari](https://github.com/marwanhawari) | [ppath](https://github.com/marwanhawari/ppath) | 9 | 🌈 A command-line tool to pretty print your systems PATH environment variable. | 2025-08-22T19:52:44Z |
 | [marwanhawari](https://github.com/marwanhawari) | [stew](https://github.com/marwanhawari/stew) | 309 | 🥘 An independent package manager for compiled binaries. | 2025-12-03T08:39:41Z |
-| [masonr](https://github.com/masonr) | [yet-another-bench-script](https://github.com/masonr/yet-another-bench-script) | 5996 | YABS - a simple bash script to estimate Linux server performance using fio, iperf3, & Geekbench | 2025-12-12T22:46:19Z |
-| [medialab](https://github.com/medialab) | [xan](https://github.com/medialab/xan) | 3513 | The CSV magician | 2025-12-12T23:06:35Z |
+| [masonr](https://github.com/masonr) | [yet-another-bench-script](https://github.com/masonr/yet-another-bench-script) | 6002 | YABS - a simple bash script to estimate Linux server performance using fio, iperf3, & Geekbench | 2025-12-13T22:32:26Z |
+| [medialab](https://github.com/medialab) | [xan](https://github.com/medialab/xan) | 3516 | The CSV magician | 2025-12-13T22:44:56Z |
 | [meli](https://github.com/meli) | [meli](https://github.com/meli/meli) | 807 | terminal mail client, mirror of https://git.meli-email.org/meli/meli.git https://crates.io/crates/meli | 2025-12-12T14:56:42Z |
-| [melonDS-emu](https://github.com/melonDS-emu) | [melonDS](https://github.com/melonDS-emu/melonDS) | 4343 | DS emulator, sorta | 2025-12-12T22:16:24Z |
-| [mentebinaria](https://github.com/mentebinaria) | [readpe](https://github.com/mentebinaria/readpe) | 757 | The PE file analysis toolkit | 2025-12-11T02:45:48Z |
+| [melonDS-emu](https://github.com/melonDS-emu) | [melonDS](https://github.com/melonDS-emu/melonDS) | 4346 | DS emulator, sorta | 2025-12-13T21:01:18Z |
+| [mentebinaria](https://github.com/mentebinaria) | [readpe](https://github.com/mentebinaria/readpe) | 758 | The PE file analysis toolkit | 2025-12-13T08:46:52Z |
 | [messense](https://github.com/messense) | [lddtree-rs](https://github.com/messense/lddtree-rs) | 38 | Read the ELF dependency tree | 2025-12-03T20:23:07Z |
 | [metwork-framework](https://github.com/metwork-framework) | [log_proxy](https://github.com/metwork-framework/log_proxy) | 14 | log_proxy is a tiny C utility (about log rotation) for apps that write their logs to stdout/stderr | 2025-05-22T15:08:31Z |
-| [mgdm](https://github.com/mgdm) | [htmlq](https://github.com/mgdm/htmlq) | 7461 | Like jq, but for HTML. | 2025-12-10T08:07:33Z |
+| [mgdm](https://github.com/mgdm) | [htmlq](https://github.com/mgdm/htmlq) | 7462 | Like jq, but for HTML. | 2025-12-13T01:17:40Z |
 | [mgechev](https://github.com/mgechev) | [revive](https://github.com/mgechev/revive) | 5362 | 🔥 ~6x faster, stricter, configurable, extensible, and beautiful drop-in replacement for golint | 2025-12-09T09:07:59Z |
 | [mgunyho](https://github.com/mgunyho) | [tere](https://github.com/mgunyho/tere) | 1779 | Terminal file explorer | 2025-12-11T22:09:46Z |
 | [mhmdiaa](https://github.com/mhmdiaa) | [waybackrobots](https://github.com/mhmdiaa/waybackrobots) | 53 | Enumerate old versions of robots.txt paths using Wayback Machine for content discovery | 2025-11-07T20:49:38Z |
 | [mhx](https://github.com/mhx) | [dwarfs](https://github.com/mhx/dwarfs) | 2449 | A fast high-compression read-only file system for Linux, FreeBSD, macOS and Windows | 2025-12-12T22:18:25Z |
 | [michaelforney](https://github.com/michaelforney) | [samurai](https://github.com/michaelforney/samurai) | 956 | ninja-compatible build tool written in C | 2025-12-12T17:18:06Z |
 | [mihneamanolache](https://github.com/mihneamanolache) | [cert-cli](https://github.com/mihneamanolache/cert-cli) | 12 | An OSINT tool for discovering domains, organizations, and addresses from SSL/TLS certificates using crt.sh. Supports proxy configurations, JSON output, and robust error handling for large-scale certificate analysis. | 2025-06-18T19:43:19Z |
-| [mijorus](https://github.com/mijorus) | [gearlever](https://github.com/mijorus/gearlever) | 1343 | Manage AppImages with ease 📦 | 2025-12-12T17:41:54Z |
-| [mikefarah](https://github.com/mikefarah) | [yq](https://github.com/mikefarah/yq) | 14558 | yq is a portable command-line YAML, JSON, XML, CSV, TOML  and properties processor | 2025-12-12T15:05:05Z |
-| [miniflux](https://github.com/miniflux) | [v2](https://github.com/miniflux/v2) | 8476 | Minimalist and opinionated feed reader | 2025-12-12T19:57:03Z |
+| [mijorus](https://github.com/mijorus) | [gearlever](https://github.com/mijorus/gearlever) | 1348 | Manage AppImages with ease 📦 | 2025-12-13T21:24:14Z |
+| [mikefarah](https://github.com/mikefarah) | [yq](https://github.com/mikefarah/yq) | 14561 | yq is a portable command-line YAML, JSON, XML, CSV, TOML  and properties processor | 2025-12-13T21:45:29Z |
+| [miniflux](https://github.com/miniflux) | [v2](https://github.com/miniflux/v2) | 8485 | Minimalist and opinionated feed reader | 2025-12-13T23:24:34Z |
 | [minio](https://github.com/minio) | [dperf](https://github.com/minio/dperf) | 71 | Drive performance measurement tool | 2025-11-29T10:30:42Z |
 | [minio](https://github.com/minio) | [mc](https://github.com/minio/mc) | 3301 | Unix like utilities for object store | 2025-12-12T13:35:41Z |
-| [minio](https://github.com/minio) | [warp](https://github.com/minio/warp) | 715 | S3 benchmarking tool | 2025-12-11T08:25:32Z |
+| [minio](https://github.com/minio) | [warp](https://github.com/minio/warp) | 714 | S3 benchmarking tool | 2025-12-13T18:47:45Z |
 | [mirzaaghazadeh](https://github.com/mirzaaghazadeh) | [jsdif](https://github.com/mirzaaghazadeh/jsdif) | 87 | A powerful JavaScript monitoring tool for bug bounty hunters. Track changes in JavaScript files across websites, detect new attack surfaces, and stay ahead of security vulnerabilities. | 2025-12-09T00:54:43Z |
-| [mislav](https://github.com/mislav) | [hub](https://github.com/mislav/hub) | 22932 | A command-line tool that makes git easier to use with GitHub. | 2025-12-12T17:43:42Z |
+| [mislav](https://github.com/mislav) | [hub](https://github.com/mislav/hub) | 22931 | A command-line tool that makes git easier to use with GitHub. | 2025-12-13T13:04:16Z |
 | [mkj](https://github.com/mkj) | [dropbear](https://github.com/mkj/dropbear) | 2085 | Dropbear SSH | 2025-12-12T09:43:44Z |
 | [monasticacademy](https://github.com/monasticacademy) | [httptap](https://github.com/monasticacademy/httptap) | 4126 | View HTTP/HTTPS requests made by any Linux program | 2025-12-10T12:18:42Z |
-| [moonD4rk](https://github.com/moonD4rk) | [HackBrowserData](https://github.com/moonD4rk/HackBrowserData) | 13345 | Extract and decrypt browser data, supporting multiple data types, runnable on various operating systems (macOS, Windows, Linux). | 2025-12-12T11:44:44Z |
+| [moonD4rk](https://github.com/moonD4rk) | [HackBrowserData](https://github.com/moonD4rk/HackBrowserData) | 13349 | Extract and decrypt browser data, supporting multiple data types, runnable on various operating systems (macOS, Windows, Linux). | 2025-12-13T15:33:58Z |
 | [moul](https://github.com/moul) | [assh](https://github.com/moul/assh) | 3177 | :computer: make your ssh client smarter | 2025-12-11T08:58:03Z |
 | [moul](https://github.com/moul) | [sshportal](https://github.com/moul/sshportal) | 1905 | :tophat: simple, fun and transparent SSH (and telnet) bastion server | 2025-12-09T14:40:47Z |
 | [mozilla](https://github.com/mozilla) | [geckodriver](https://github.com/mozilla/geckodriver) | 7440 | WebDriver Classic proxy for automating Firefox through Marionette | 2025-12-12T08:45:39Z |
 | [mozilla](https://github.com/mozilla) | [sccache](https://github.com/mozilla/sccache) | 6795 | Sccache is a ccache-like tool. It is used as a compiler wrapper and avoids compilation when possible. Sccache has the capability to utilize caching in remote storage environments, including various cloud storage options, or alternatively, in local storage. | 2025-12-12T21:12:54Z |
 | [mozillazg](https://github.com/mozillazg) | [ptcpdump](https://github.com/mozillazg/ptcpdump) | 1155 | Process-aware, eBPF-based tcpdump | 2025-12-12T09:33:36Z |
 | [mpalmer](https://github.com/mpalmer) | [scrape-ct-log](https://github.com/mpalmer/scrape-ct-log) | 49 | CLI tool to quickly and efficiently bulk-download entries from a Certificate Transparency log | 2025-11-28T19:00:41Z |
-| [mr-karan](https://github.com/mr-karan) | [doggo](https://github.com/mr-karan/doggo) | 3987 | :dog: Command-line DNS Client for Humans. Written in Golang | 2025-12-11T13:47:43Z |
+| [mr-karan](https://github.com/mr-karan) | [doggo](https://github.com/mr-karan/doggo) | 3989 | :dog: Command-line DNS Client for Humans. Written in Golang | 2025-12-13T19:52:51Z |
 | [mr-pmillz](https://github.com/mr-pmillz) | [gofireprox](https://github.com/mr-pmillz/gofireprox) | 21 | FireProx written in Go | 2025-08-04T01:51:17Z |
 | [mrusme](https://github.com/mrusme) | [cexec](https://github.com/mrusme/cexec) | 18 | Execute any command, cache its output and get cached output on subsequent execution | 2025-11-27T19:20:53Z |
 | [mrusme](https://github.com/mrusme) | [cloudcash](https://github.com/mrusme/cloudcash) | 23 | Check your cloud spending from the CLI, from Waybar, and from the macOS menu bar! | 2025-11-20T08:51:35Z |
@@ -722,95 +722,95 @@
 | [msantos](https://github.com/msantos) | [trep](https://github.com/msantos/trep) | 6 | Selectively stream stdin to stdout/stderr based on regular expressions | 2025-11-03T18:28:48Z |
 | [msantos](https://github.com/msantos) | [tscat](https://github.com/msantos/tscat) | 2 | Timestamp stdin to stdout/stderr | 2025-11-03T18:28:48Z |
 | [msantos](https://github.com/msantos) | [unixexec](https://github.com/msantos/unixexec) | 2 | attach stdin/stdout of a command to a Unix socket | 2025-11-03T18:28:49Z |
-| [msoap](https://github.com/msoap) | [shell2http](https://github.com/msoap/shell2http) | 1460 | Executing shell commands via HTTP server | 2025-12-12T17:53:10Z |
-| [mtlynch](https://github.com/mtlynch) | [picoshare](https://github.com/mtlynch/picoshare) | 2774 | A minimalist, easy-to-host service for sharing images and other files | 2025-12-12T12:15:24Z |
+| [msoap](https://github.com/msoap) | [shell2http](https://github.com/msoap/shell2http) | 1461 | Executing shell commands via HTTP server | 2025-12-13T17:21:18Z |
+| [mtlynch](https://github.com/mtlynch) | [picoshare](https://github.com/mtlynch/picoshare) | 2775 | A minimalist, easy-to-host service for sharing images and other files | 2025-12-13T00:54:43Z |
 | [mubeng](https://github.com/mubeng) | [mubeng](https://github.com/mubeng/mubeng) | 1982 | An incredibly fast proxy checker & IP rotator with ease. | 2025-12-12T09:28:54Z |
-| [mudler](https://github.com/mudler) | [edgevpn](https://github.com/mudler/edgevpn) | 1813 | :sailboat: The immutable, decentralized, statically built p2p VPN without any central server and automatic discovery! Create decentralized introspectable tunnels over p2p with shared tokens | 2025-12-11T18:17:51Z |
+| [mudler](https://github.com/mudler) | [edgevpn](https://github.com/mudler/edgevpn) | 1815 | :sailboat: The immutable, decentralized, statically built p2p VPN without any central server and automatic discovery! Create decentralized introspectable tunnels over p2p with shared tokens | 2025-12-13T12:53:32Z |
 | [mudler](https://github.com/mudler) | [luet](https://github.com/mudler/luet) | 292 | :package: :whale: 0-dependency Container-based Package Manager using SAT solver and QLearning | 2025-11-22T20:09:38Z |
 | [mudler](https://github.com/mudler) | [yip](https://github.com/mudler/yip) | 97 | :pushpin: Yaml Instructions Processor - Simply applies a cloud-init style yaml file to the system | 2025-11-18T13:35:17Z |
-| [muesli](https://github.com/muesli) | [duf](https://github.com/muesli/duf) | 14532 | Disk Usage/Free Utility - a better df alternative | 2025-12-12T15:57:10Z |
-| [musana](https://github.com/musana) | [fuzzuli](https://github.com/musana/fuzzuli) | 937 | fuzzuli is a url fuzzing tool that aims to find critical backup files by creating a dynamic wordlist based on the domain. | 2025-12-09T08:02:51Z |
-| [mvdan](https://github.com/mvdan) | [sh](https://github.com/mvdan/sh) | 8300 | A shell parser, formatter, and interpreter with bash support; includes shfmt | 2025-12-12T17:28:58Z |
+| [muesli](https://github.com/muesli) | [duf](https://github.com/muesli/duf) | 14537 | Disk Usage/Free Utility - a better df alternative | 2025-12-13T20:17:16Z |
+| [musana](https://github.com/musana) | [fuzzuli](https://github.com/musana/fuzzuli) | 938 | fuzzuli is a url fuzzing tool that aims to find critical backup files by creating a dynamic wordlist based on the domain. | 2025-12-13T19:23:03Z |
+| [mvdan](https://github.com/mvdan) | [sh](https://github.com/mvdan/sh) | 8302 | A shell parser, formatter, and interpreter with bash support; includes shfmt | 2025-12-13T20:47:04Z |
 | [mvdan](https://github.com/mvdan) | [xurls](https://github.com/mvdan/xurls) | 1240 | Extract urls from text | 2025-12-05T05:15:43Z |
-| [mxpv](https://github.com/mxpv) | [podsync](https://github.com/mxpv/podsync) | 1798 | Turn YouTube or Vimeo channels, users, or playlists into podcast feeds | 2025-12-11T05:55:49Z |
+| [mxpv](https://github.com/mxpv) | [podsync](https://github.com/mxpv/podsync) | 1799 | Turn YouTube or Vimeo channels, users, or playlists into podcast feeds | 2025-12-13T00:54:52Z |
 | [mysteryx93](https://github.com/mysteryx93) | [HanumanInstituteApps](https://github.com/mysteryx93/HanumanInstituteApps) | 166 | 432Hz Player, 432Hz Batch Converter, Powerliminals Player, Yang YouTube Downloader | 2025-11-18T13:34:00Z |
 | [mytechnotalent](https://github.com/mytechnotalent) | [turbo-attack](https://github.com/mytechnotalent/turbo-attack) | 160 | A turbo traffic generator pentesting tool to generate random traffic with random MAC and IP addresses in addition to random sequence numbers to a particular IP and port. | 2025-12-12T09:01:44Z |
 | [mytechnotalent](https://github.com/mytechnotalent) | [turbo-scanner](https://github.com/mytechnotalent/turbo-scanner) | 165 | A port scanner and service detection tool that uses 1000 goroutines at once to scan any hosts IP or FQDN with the sole purpose of testing your own network to ensure there are no malicious services running. | 2025-12-12T09:01:01Z |
 | [n0-computer](https://github.com/n0-computer) | [dumbpipe](https://github.com/n0-computer/dumbpipe) | 518 | Unix pipes between devices | 2025-12-11T21:26:53Z |
-| [n0-computer](https://github.com/n0-computer) | [iroh](https://github.com/n0-computer/iroh) | 7544 | peer-2-peer that just works | 2025-12-12T21:05:00Z |
+| [n0-computer](https://github.com/n0-computer) | [iroh](https://github.com/n0-computer/iroh) | 7550 | peer-2-peer that just works | 2025-12-13T23:35:47Z |
 | [n0-computer](https://github.com/n0-computer) | [sendme](https://github.com/n0-computer/sendme) | 886 | A tool to send files and directories, based on iroh | 2025-12-12T18:25:15Z |
 | [nadoo](https://github.com/nadoo) | [glider](https://github.com/nadoo/glider) | 3565 | glider is a forward proxy with multiple protocols support, and also a dns/dhcp server with ipset management features(like dnsmasq). | 2025-12-12T08:15:46Z |
 | [nanovms](https://github.com/nanovms) | [ops](https://github.com/nanovms/ops) | 1441 | ops - build and run nanos unikernels | 2025-12-08T11:18:39Z |
-| [nao1215](https://github.com/nao1215) | [gup](https://github.com/nao1215/gup) | 485 | gup - Update binaries installed by go install with goroutines. | 2025-12-12T23:22:10Z |
+| [nao1215](https://github.com/nao1215) | [gup](https://github.com/nao1215/gup) | 485 | gup - Update binaries installed by go install with goroutines. | 2025-12-13T07:13:19Z |
 | [nao1215](https://github.com/nao1215) | [morrigan](https://github.com/nao1215/morrigan) | 15 | morrigan - Penetration Tool Set | 2025-07-31T13:21:13Z |
-| [natesales](https://github.com/natesales) | [q](https://github.com/natesales/q) | 2282 | A tiny command line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH. | 2025-12-12T21:17:54Z |
+| [natesales](https://github.com/natesales) | [q](https://github.com/natesales/q) | 2283 | A tiny command line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH. | 2025-12-13T16:39:24Z |
 | [nathants](https://github.com/nathants) | [libaws](https://github.com/nathants/libaws) | 451 | just ship on aws | 2025-11-28T12:05:32Z |
 | [neelkarma](https://github.com/neelkarma) | [redive](https://github.com/neelkarma/redive) | 48 | Trace URL redirections in the terminal. | 2025-05-29T06:38:05Z |
-| [neilotoole](https://github.com/neilotoole) | [sq](https://github.com/neilotoole/sq) | 2366 | sq data wrangler | 2025-12-11T10:15:19Z |
-| [nektos](https://github.com/nektos) | [act](https://github.com/nektos/act) | 67542 | Run your GitHub Actions locally 🚀 | 2025-12-12T23:26:28Z |
-| [nelhage](https://github.com/nelhage) | [reptyr](https://github.com/nelhage/reptyr) | 6131 | Reparent a running program to a new terminal | 2025-12-12T03:22:31Z |
-| [neovim](https://github.com/neovim) | [neovim](https://github.com/neovim/neovim) | 94883 | Vim-fork focused on extensibility and usability | 2025-12-12T22:32:05Z |
-| [netbirdio](https://github.com/netbirdio) | [netbird](https://github.com/netbirdio/netbird) | 20139 | Connect your devices into a secure WireGuard®-based overlay network with SSO, MFA and granular access controls. | 2025-12-12T21:25:18Z |
+| [neilotoole](https://github.com/neilotoole) | [sq](https://github.com/neilotoole/sq) | 2367 | sq data wrangler | 2025-12-13T01:16:04Z |
+| [nektos](https://github.com/nektos) | [act](https://github.com/nektos/act) | 67558 | Run your GitHub Actions locally 🚀 | 2025-12-13T22:53:40Z |
+| [nelhage](https://github.com/nelhage) | [reptyr](https://github.com/nelhage/reptyr) | 6131 | Reparent a running program to a new terminal | 2025-12-13T21:46:16Z |
+| [neovim](https://github.com/neovim) | [neovim](https://github.com/neovim/neovim) | 94906 | Vim-fork focused on extensibility and usability | 2025-12-13T23:02:07Z |
+| [netbirdio](https://github.com/netbirdio) | [netbird](https://github.com/netbirdio/netbird) | 20168 | Connect your devices into a secure WireGuard®-based overlay network with SSO, MFA and granular access controls. | 2025-12-13T22:16:40Z |
 | [neutrinolabs](https://github.com/neutrinolabs) | [xrdp](https://github.com/neutrinolabs/xrdp) | 6431 | xrdp: an open source RDP server | 2025-12-12T19:48:48Z |
 | [nickvourd](https://github.com/nickvourd) | [SugarFree](https://github.com/nickvourd/SugarFree) | 34 | Less sugar (entropy) for your binaries | 2025-11-28T23:53:33Z |
 | [nickvourd](https://github.com/nickvourd) | [Supernova](https://github.com/nickvourd/Supernova) | 978 | Real fucking shellcode encryptor & obfuscator tool | 2025-12-12T00:19:10Z |
-| [nicocha30](https://github.com/nicocha30) | [ligolo-ng](https://github.com/nicocha30/ligolo-ng) | 4130 | An advanced, yet simple, tunneling/pivoting tool that uses a TUN interface. | 2025-12-12T19:54:52Z |
+| [nicocha30](https://github.com/nicocha30) | [ligolo-ng](https://github.com/nicocha30/ligolo-ng) | 4131 | An advanced, yet simple, tunneling/pivoting tool that uses a TUN interface. | 2025-12-13T10:50:00Z |
 | [nik-rev](https://github.com/nik-rev) | [countryfetch](https://github.com/nik-rev/countryfetch) | 254 | A Command-line tool similar to Neofetch for obtaining information about your country | 2025-12-11T21:31:32Z |
-| [ninja-build](https://github.com/ninja-build) | [ninja](https://github.com/ninja-build/ninja) | 12529 | a small build system with a focus on speed | 2025-12-12T21:30:05Z |
-| [nitefood](https://github.com/nitefood) | [asn](https://github.com/nitefood/asn) | 1795 | ASN / RPKI validity / BGP stats / IPv4v6 / Prefix / URL / ASPath / Organization / IP reputation / IP geolocation / IP fingerprinting / Network recon / lookup API server / Web traceroute server | 2025-12-10T16:39:17Z |
+| [ninja-build](https://github.com/ninja-build) | [ninja](https://github.com/ninja-build/ninja) | 12533 | a small build system with a focus on speed | 2025-12-13T18:43:41Z |
+| [nitefood](https://github.com/nitefood) | [asn](https://github.com/nitefood/asn) | 1798 | ASN / RPKI validity / BGP stats / IPv4v6 / Prefix / URL / ASPath / Organization / IP reputation / IP geolocation / IP fingerprinting / Network recon / lookup API server / Web traceroute server | 2025-12-13T20:57:08Z |
 | [njh](https://github.com/njh) | [twolame](https://github.com/njh/twolame) | 61 | MPEG Audio Layer 2 (MP2) encoder | 2025-10-18T22:48:40Z |
-| [nmap](https://github.com/nmap) | [nmap](https://github.com/nmap/nmap) | 12037 | Nmap - the Network Mapper. Github mirror of official SVN repository. | 2025-12-12T20:40:47Z |
+| [nmap](https://github.com/nmap) | [nmap](https://github.com/nmap/nmap) | 12043 | Nmap - the Network Mapper. Github mirror of official SVN repository. | 2025-12-13T21:57:09Z |
 | [nmimusic](https://github.com/nmimusic) | [unifetch](https://github.com/nmimusic/unifetch) | 23 | An unofficial inheritor of Neofetch | 2025-12-10T11:06:06Z |
 | [noahgorstein](https://github.com/noahgorstein) | [jqp](https://github.com/noahgorstein/jqp) | 2723 | A TUI playground to experiment with jq | 2025-12-09T17:17:23Z |
-| [noborus](https://github.com/noborus) | [ov](https://github.com/noborus/ov) | 1819 | 🎑Feature-rich terminal-based text viewer.  It is a so-called terminal pager. | 2025-12-11T11:35:38Z |
+| [noborus](https://github.com/noborus) | [ov](https://github.com/noborus/ov) | 1820 | 🎑Feature-rich terminal-based text viewer.  It is a so-called terminal pager. | 2025-12-13T22:38:24Z |
 | [noperator](https://github.com/noperator) | [chromedb](https://github.com/noperator/chromedb) | 134 | Read Chromium data (namely, cookies and local storage) straight from disk, without spinning up the browser. | 2025-12-02T09:30:07Z |
 | [norskeld](https://github.com/norskeld) | [pingmole](https://github.com/norskeld/pingmole) | 4 | CLI that helps to filter Mullvad servers and pick the closest one. | 2024-03-20T19:32:54Z |
 | [nullenc0de](https://github.com/nullenc0de) | [FFUF-Workflow-Tool](https://github.com/nullenc0de/FFUF-Workflow-Tool) | 36 | This tool automates the process of running FFUF (Fuzz Faster U Fool) and post-processing its results to extract valid URLs. It supports both direct file input and piped input for wordlists. | 2025-11-06T08:18:52Z |
 | [nullt3r](https://github.com/nullt3r) | [udpx](https://github.com/nullt3r/udpx) | 213 | Fast and lightweight, UDPX is a single-packet UDP scanner written in Go that supports the discovery of over 45 services with the ability to add custom ones. It is easy to use and portable, and can be run on Linux, Mac OS, and Windows. Unlike internet-wide scanners like zgrab2 and zmap, UDPX is designed for portability and ease of use. | 2025-12-06T00:22:38Z |
 | [numactl](https://github.com/numactl) | [numactl](https://github.com/numactl/numactl) | 477 | NUMA support for Linux | 2025-12-10T09:02:45Z |
-| [nushell](https://github.com/nushell) | [nushell](https://github.com/nushell/nushell) | 37508 | A new type of shell | 2025-12-12T21:43:33Z |
+| [nushell](https://github.com/nushell) | [nushell](https://github.com/nushell/nushell) | 37519 | A new type of shell | 2025-12-13T22:39:57Z |
 | [nyancrimew](https://github.com/nyancrimew) | [goop](https://github.com/nyancrimew/goop) | 634 | Yet another tool to dump a git repository from a website, focused on as-complete-as-possible dumps and handling weird edge-cases. | 2025-12-10T00:30:08Z |
 | [oalders](https://github.com/oalders) | [is](https://github.com/oalders/is) | 46 | an inspector for your environment | 2025-11-24T18:34:27Z |
 | [ochinchina](https://github.com/ochinchina) | [supervisord](https://github.com/ochinchina/supervisord) | 4204 | a go-lang supervisor implementation | 2025-12-12T01:35:55Z |
 | [ohchase](https://github.com/ohchase) | [yaui](https://github.com/ohchase/yaui) | 59 | Yet Another Unix Injector with support for Android/Android Emulator i686/x64/arm/aarch64 | 2025-12-08T13:59:58Z |
-| [oils-for-unix](https://github.com/oils-for-unix) | [oils](https://github.com/oils-for-unix/oils) | 3247 | Oils is our upgrade path from bash to a better language and runtime.  Its also for Python and JavaScript users who avoid shell! | 2025-12-12T20:38:20Z |
+| [oils-for-unix](https://github.com/oils-for-unix) | [oils](https://github.com/oils-for-unix/oils) | 3248 | Oils is our upgrade path from bash to a better language and runtime.  Its also for Python and JavaScript users who avoid shell! | 2025-12-13T20:13:21Z |
 | [oll3](https://github.com/oll3) | [bita](https://github.com/oll3/bita) | 286 | Differential file synchronization over http | 2025-12-08T12:10:05Z |
 | [oneclickvirt](https://github.com/oneclickvirt) | [backtrace](https://github.com/oneclickvirt/backtrace) | 228 | 上游及回程路由线路检测模块 | 2025-12-09T11:31:03Z |
-| [onetrueawk](https://github.com/onetrueawk) | [awk](https://github.com/onetrueawk/awk) | 2147 | One true awk | 2025-12-11T18:05:11Z |
-| [ooni](https://github.com/ooni) | [probe-cli](https://github.com/ooni/probe-cli) | 268 | OONI Probe Engine and CLI | 2025-12-12T18:28:06Z |
+| [onetrueawk](https://github.com/onetrueawk) | [awk](https://github.com/onetrueawk/awk) | 2148 | One true awk | 2025-12-13T12:28:31Z |
+| [ooni](https://github.com/ooni) | [probe-cli](https://github.com/ooni/probe-cli) | 268 | OONI Probe Engine and CLI | 2025-12-13T13:29:31Z |
 | [openSUSE](https://github.com/openSUSE) | [catatonit](https://github.com/openSUSE/catatonit) | 250 | A container init that is so simple its effectively brain-dead. | 2025-12-09T04:39:16Z |
 | [openSUSE](https://github.com/openSUSE) | [hwinfo](https://github.com/openSUSE/hwinfo) | 298 | Hardware information tool | 2025-12-02T07:35:40Z |
-| [opencontainers](https://github.com/opencontainers) | [runc](https://github.com/opencontainers/runc) | 12918 | CLI tool for spawning and running containers according to the OCI specification | 2025-12-12T17:43:45Z |
-| [opencontainers](https://github.com/opencontainers) | [umoci](https://github.com/opencontainers/umoci) | 866 | umoci modifies Open Container images | 2025-12-12T00:36:54Z |
-| [openssh](https://github.com/openssh) | [openssh-portable](https://github.com/openssh/openssh-portable) | 3610 | Portable OpenSSH | 2025-12-12T22:34:09Z |
-| [openssl](https://github.com/openssl) | [openssl](https://github.com/openssl/openssl) | 29201 | TLS/SSL and crypto library | 2025-12-12T18:40:27Z |
-| [orangekame3](https://github.com/orangekame3) | [ghfetch](https://github.com/orangekame3/ghfetch) | 57 | :octocat: ghfetch is a CLI tool to fetch GitHub user information and show like neofetch. | 2025-12-12T18:04:01Z |
+| [opencontainers](https://github.com/opencontainers) | [runc](https://github.com/opencontainers/runc) | 12920 | CLI tool for spawning and running containers according to the OCI specification | 2025-12-13T11:23:51Z |
+| [opencontainers](https://github.com/opencontainers) | [umoci](https://github.com/opencontainers/umoci) | 867 | umoci modifies Open Container images | 2025-12-13T11:41:10Z |
+| [openssh](https://github.com/openssh) | [openssh-portable](https://github.com/openssh/openssh-portable) | 3613 | Portable OpenSSH | 2025-12-13T23:23:38Z |
+| [openssl](https://github.com/openssl) | [openssl](https://github.com/openssl/openssl) | 29200 | TLS/SSL and crypto library | 2025-12-13T19:44:20Z |
+| [orangekame3](https://github.com/orangekame3) | [ghfetch](https://github.com/orangekame3/ghfetch) | 57 | :octocat: ghfetch is a CLI tool to fetch GitHub user information and show like neofetch. | 2025-12-13T18:03:58Z |
 | [orangekame3](https://github.com/orangekame3) | [stree](https://github.com/orangekame3/stree) | 142 | 📁Directory trees of AWS S3 Bucket | 2025-11-19T00:50:43Z |
-| [oras-project](https://github.com/oras-project) | [oras](https://github.com/oras-project/oras) | 2036 | OCI registry client - managing content like artifacts, images, packages | 2025-12-12T22:52:56Z |
+| [oras-project](https://github.com/oras-project) | [oras](https://github.com/oras-project/oras) | 2037 | OCI registry client - managing content like artifacts, images, packages | 2025-12-13T00:29:01Z |
 | [orcastor](https://github.com/orcastor) | [fico](https://github.com/orcastor/fico) | 14 | 🔬【FileICOn】从文件提取图标（支持图片[bmp/gif/jpg/jpeg/jp2/jpeg2000/png/tiff]、图标[ico/icns]、Windows可执行文件[exe/dll]、资源文件[mui/mun]、Linux可执行文件[*.desktop{*.AppImage/*.run}]、手机应用安装包[apk/ipa]、Windows文件夹图标[autorun.inf/desktop.ini]、MacOSX程序[*.app]）Extract icon from file or directory. | 2025-11-15T03:41:29Z |
 | [orf](https://github.com/orf) | [docker-repack](https://github.com/orf/docker-repack) | 152 | Repack docker images to optimize for pulling speed. | 2025-11-29T22:38:43Z |
-| [orhun](https://github.com/orhun) | [binsider](https://github.com/orhun/binsider) | 3716 | Analyze ELF binaries like a boss 😼🕵️‍♂️ | 2025-12-12T01:31:55Z |
+| [orhun](https://github.com/orhun) | [binsider](https://github.com/orhun/binsider) | 3716 | Analyze ELF binaries like a boss 😼🕵️‍♂️ | 2025-12-13T07:32:36Z |
 | [orhun](https://github.com/orhun) | [flawz](https://github.com/orhun/flawz) | 552 | A Terminal UI for browsing security vulnerabilities (CVEs) | 2025-12-11T01:07:34Z |
-| [orhun](https://github.com/orhun) | [git-cliff](https://github.com/orhun/git-cliff) | 11048 | A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️ | 2025-12-12T19:58:09Z |
-| [orhun](https://github.com/orhun) | [gpg-tui](https://github.com/orhun/gpg-tui) | 1620 | Manage your GnuPG keys with ease! 🔐 | 2025-12-12T13:29:51Z |
+| [orhun](https://github.com/orhun) | [git-cliff](https://github.com/orhun/git-cliff) | 11053 | A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️ | 2025-12-13T23:19:20Z |
+| [orhun](https://github.com/orhun) | [gpg-tui](https://github.com/orhun/gpg-tui) | 1621 | Manage your GnuPG keys with ease! 🔐 | 2025-12-13T22:59:09Z |
 | [orhun](https://github.com/orhun) | [kmon](https://github.com/orhun/kmon) | 2816 | Linux Kernel Manager and Activity Monitor 🐧💻 | 2025-12-12T18:42:12Z |
 | [orhun](https://github.com/orhun) | [linuxwave](https://github.com/orhun/linuxwave) | 623 | Generate music from the entropy of Linux 🐧🎵 | 2025-12-12T18:41:15Z |
 | [orhun](https://github.com/orhun) | [pkgtop](https://github.com/orhun/pkgtop) | 334 | Interactive package manager and resource monitor designed for the GNU/Linux. | 2025-09-30T22:41:44Z |
-| [orhun](https://github.com/orhun) | [rustypaste](https://github.com/orhun/rustypaste) | 1045 | A minimal file upload/pastebin service. | 2025-12-12T15:00:50Z |
-| [ouch-org](https://github.com/ouch-org) | [ouch](https://github.com/ouch-org/ouch) | 3294 | Painless compression and decompression in the terminal | 2025-12-12T17:12:34Z |
-| [owasp-amass](https://github.com/owasp-amass) | [amass](https://github.com/owasp-amass/amass) | 13871 | In-depth attack surface mapping and asset discovery | 2025-12-12T20:10:20Z |
+| [orhun](https://github.com/orhun) | [rustypaste](https://github.com/orhun/rustypaste) | 1047 | A minimal file upload/pastebin service. | 2025-12-13T18:39:57Z |
+| [ouch-org](https://github.com/ouch-org) | [ouch](https://github.com/ouch-org/ouch) | 3295 | Painless compression and decompression in the terminal | 2025-12-13T08:10:30Z |
+| [owasp-amass](https://github.com/owasp-amass) | [amass](https://github.com/owasp-amass/amass) | 13878 | In-depth attack surface mapping and asset discovery | 2025-12-13T22:12:15Z |
 | [oxidecomputer](https://github.com/oxidecomputer) | [aws-wire-lengths](https://github.com/oxidecomputer/aws-wire-lengths) | 23 | simple command line for various AWS management tasks | 2025-12-04T02:58:43Z |
 | [oz](https://github.com/oz) | [tz](https://github.com/oz/tz) | 879 | 🌐 A time zone helper | 2025-12-10T13:06:51Z |
-| [pamburus](https://github.com/pamburus) | [hl](https://github.com/pamburus/hl) | 1842 | A fast and powerful log viewer and processor that converts JSON logs or logfmt logs into a clear human-readable format. | 2025-12-12T23:11:05Z |
-| [pdfcpu](https://github.com/pdfcpu) | [pdfcpu](https://github.com/pdfcpu/pdfcpu) | 8294 | A PDF processor written in Go. | 2025-12-12T21:32:52Z |
-| [peak](https://github.com/peak) | [s5cmd](https://github.com/peak/s5cmd) | 3787 | Parallel S3 and local filesystem execution tool. | 2025-12-12T16:57:21Z |
+| [pamburus](https://github.com/pamburus) | [hl](https://github.com/pamburus/hl) | 1872 | A fast and powerful log viewer and processor that converts JSON logs or logfmt logs into a clear human-readable format. | 2025-12-13T23:37:29Z |
+| [pdfcpu](https://github.com/pdfcpu) | [pdfcpu](https://github.com/pdfcpu/pdfcpu) | 8296 | A PDF processor written in Go. | 2025-12-13T06:17:57Z |
+| [peak](https://github.com/peak) | [s5cmd](https://github.com/peak/s5cmd) | 3789 | Parallel S3 and local filesystem execution tool. | 2025-12-13T11:44:57Z |
 | [peanut996](https://github.com/peanut996) | [CloudflareWarpSpeedTest](https://github.com/peanut996/CloudflareWarpSpeedTest) | 793 | ⭐WARP IP 优选工具 | 2025-12-11T07:06:56Z |
-| [pemistahl](https://github.com/pemistahl) | [grex](https://github.com/pemistahl/grex) | 7935 | A command-line tool and Rust library with Python bindings for generating regular expressions from user-provided test cases | 2025-12-12T16:48:14Z |
+| [pemistahl](https://github.com/pemistahl) | [grex](https://github.com/pemistahl/grex) | 7936 | A command-line tool and Rust library with Python bindings for generating regular expressions from user-provided test cases | 2025-12-13T00:41:11Z |
 | [pgrok](https://github.com/pgrok) | [pgrok](https://github.com/pgrok/pgrok) | 3425 | Poor mans ngrok - a multi-tenant HTTP/TCP reverse tunnel solution through SSH remote port forwarding | 2025-12-11T16:24:38Z |
-| [ph4ntonn](https://github.com/ph4ntonn) | [Stowaway](https://github.com/ph4ntonn/Stowaway) | 3259 | 👻Stowaway -- Multi-hop Proxy Tool for pentesters | 2025-12-12T08:40:24Z |
+| [ph4ntonn](https://github.com/ph4ntonn) | [Stowaway](https://github.com/ph4ntonn/Stowaway) | 3262 | 👻Stowaway -- Multi-hop Proxy Tool for pentesters | 2025-12-13T11:40:06Z |
 | [philippta](https://github.com/philippta) | [flyscrape](https://github.com/philippta/flyscrape) | 1315 | Flyscrape is a command-line web scraping tool designed for those without advanced programming skills. | 2025-11-25T23:25:13Z |
 | [phip1611](https://github.com/phip1611) | [ttfb](https://github.com/phip1611/ttfb) | 47 | Library + CLI-Tool to measure the TTFB (time to first byte) of HTTP requests. Additionally, this crate measures the times of DNS lookup, TCP connect and TLS handshake. | 2025-12-12T22:26:10Z |
-| [phiresky](https://github.com/phiresky) | [ripgrep-all](https://github.com/phiresky/ripgrep-all) | 9272 | rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. | 2025-12-11T17:44:44Z |
+| [phiresky](https://github.com/phiresky) | [ripgrep-all](https://github.com/phiresky/ripgrep-all) | 9274 | rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. | 2025-12-13T16:53:23Z |
 | [pier-cli](https://github.com/pier-cli) | [pier](https://github.com/pier-cli/pier) | 586 | A Linux script management CLI written in Rust | 2025-12-05T19:51:47Z |
 | [pixelomer](https://github.com/pixelomer) | [bin2video](https://github.com/pixelomer/bin2video) | 59 | Tool for encoding files as videos | 2025-12-03T08:37:40Z |
 | [pkgconf](https://github.com/pkgconf) | [pkgconf](https://github.com/pkgconf/pkgconf) | 596 | package compiler and linker metadata toolkit | 2025-12-12T12:50:00Z |
@@ -822,12 +822,12 @@
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [Pixelpulse2-AppImage](https://github.com/pkgforge-dev/Pixelpulse2-AppImage) | 2 | Pixelpulse2 is a user interface for analog systems exploration. [Maintainer=@sounddrill31] | 2025-07-21T18:51:13Z |
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [Torzu-AppImage](https://github.com/pkgforge-dev/Torzu-AppImage) | 21 | Unofficial AppImage of Torzu, with optimized builds for modern cpus. [Maintainer=@Samueru-sama] | 2025-10-22T16:52:55Z |
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [android-tools-AppImage](https://github.com/pkgforge-dev/android-tools-AppImage) | 21 | Unofficial AppImage of Android Platform Tools (adb, fastboot, etc). Can also install udev rules. [Maintainer=@Samueru-sama] | 2025-12-01T16:22:08Z |
-| [pkgforge-dev](https://github.com/pkgforge-dev) | [docker-archlinux](https://github.com/pkgforge-dev/docker-archlinux) | 3 | Forked : https://github.com/fwcd/docker-archlinux (+ DockerHub Builds) [Maintainer=@Azathothas] | 2025-12-12T18:24:02Z |
+| [pkgforge-dev](https://github.com/pkgforge-dev) | [docker-archlinux](https://github.com/pkgforge-dev/docker-archlinux) | 3 | Forked : https://github.com/fwcd/docker-archlinux (+ DockerHub Builds) [Maintainer=@Azathothas] | 2025-12-13T09:14:15Z |
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [elftools](https://github.com/pkgforge-dev/elftools) | 3 | Tools & Libraries for manipulating ELF Files [Maintainers=@QaidVoid@Azathothas] | 2025-07-06T02:21:36Z |
-| [pkgforge-dev](https://github.com/pkgforge-dev) | [ghostty-appimage](https://github.com/pkgforge-dev/ghostty-appimage) | 112 | 👻 ⚙️ AppImage for Ghostty Terminal Emulator [Maintainer=@psadi] | 2025-12-08T21:55:32Z |
+| [pkgforge-dev](https://github.com/pkgforge-dev) | [ghostty-appimage](https://github.com/pkgforge-dev/ghostty-appimage) | 113 | 👻 ⚙️ AppImage for Ghostty Terminal Emulator [Maintainer=@psadi] | 2025-12-13T10:42:44Z |
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [mpv-AppImage](https://github.com/pkgforge-dev/mpv-AppImage) | 11 | Unofficial AppImage of mpv [Maintainer=@Samueru-sama] | 2025-12-08T07:26:23Z |
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [puddletag-AppImage](https://github.com/pkgforge-dev/puddletag-AppImage) | 4 | Unofficial AppImage of puddletag. [Maintainer=@Samueru-sama] | 2025-12-01T07:54:37Z |
-| [pkgforge-dev](https://github.com/pkgforge-dev) | [strawberry-AppImage](https://github.com/pkgforge-dev/strawberry-AppImage) | 5 | Unofficial AppImage of the strawberry music player [Maintainer=@Samueru-sama] | 2025-12-12T04:47:24Z |
+| [pkgforge-dev](https://github.com/pkgforge-dev) | [strawberry-AppImage](https://github.com/pkgforge-dev/strawberry-AppImage) | 5 | Unofficial AppImage of the strawberry music player [Maintainer=@Samueru-sama] | 2025-12-13T12:03:48Z |
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [super-strip](https://github.com/pkgforge-dev/super-strip) | 2 | Small utility that removes as much as possible from an ELF file [Maintainer=@Azathothas] | 2025-10-29T21:53:24Z |
 | [pkgforge-security](https://github.com/pkgforge-security) | [comb](https://github.com/pkgforge-security/comb) | 0 | Combine the lines from two files in every combination [Maintainer=@Azathothas] | 2025-03-06T01:59:40Z |
 | [pkgforge-security](https://github.com/pkgforge-security) | [crt](https://github.com/pkgforge-security/crt) | 4 | CLI tool to check Certificate Transparency logs using crt.sh [Maintainer=@Azathothas] | 2025-05-19T15:44:35Z |
@@ -844,50 +844,50 @@
 | [pkgforge](https://github.com/pkgforge) | [sbuilder](https://github.com/pkgforge/sbuilder) | 22 | Utilities for linting and building SBUILD packages [maintainer=@QaidVoid] | 2025-08-17T20:16:58Z |
 | [pkgforge](https://github.com/pkgforge) | [soar](https://github.com/pkgforge/soar) | 515 | A fast, modern package manager for Static Binaries, Portable Formats (AppImageAppBundleFlatImageRunimage) & More [maintainer=@QaidVoid] | 2025-12-12T16:24:12Z |
 | [pkgforge](https://github.com/pkgforge) | [soar-dl](https://github.com/pkgforge/soar-dl) | 28 | ⚡Lightening-Fast, feature-rich, Universal Downloader 📥 for GitHub, GitLab, OCI & More [Maintainer=@QaidVoid] | 2025-10-24T22:09:18Z |
-| [pkolaczk](https://github.com/pkolaczk) | [fclones](https://github.com/pkolaczk/fclones) | 2550 | Efficient Duplicate File Finder | 2025-12-10T01:40:20Z |
+| [pkolaczk](https://github.com/pkolaczk) | [fclones](https://github.com/pkolaczk/fclones) | 2553 | Efficient Duplicate File Finder | 2025-12-13T21:15:53Z |
 | [plougher](https://github.com/plougher) | [squashfs-tools](https://github.com/plougher/squashfs-tools) | 870 | tools to create and extract Squashfs filesystems | 2025-12-11T00:50:08Z |
-| [plp13](https://github.com/plp13) | [qman](https://github.com/plp13/qman) | 340 | A more modern man page viewer for our terminals | 2025-12-11T22:06:34Z |
+| [plp13](https://github.com/plp13) | [qman](https://github.com/plp13/qman) | 341 | A more modern man page viewer for our terminals | 2025-12-13T00:45:55Z |
 | [pls-rs](https://github.com/pls-rs) | [pls](https://github.com/pls-rs/pls) | 912 | pls is a prettier and powerful ls(1) for the pros. | 2025-12-11T20:27:49Z |
-| [pomdtr](https://github.com/pomdtr) | [sunbeam](https://github.com/pomdtr/sunbeam) | 495 | Command-line launcher | 2025-11-29T04:28:34Z |
+| [pomdtr](https://github.com/pomdtr) | [sunbeam](https://github.com/pomdtr/sunbeam) | 496 | Command-line launcher | 2025-12-13T15:30:52Z |
 | [praetorian-inc](https://github.com/praetorian-inc) | [fingerprintx](https://github.com/praetorian-inc/fingerprintx) | 665 | Standalone utility for service discovery on open ports! | 2025-12-09T05:01:49Z |
-| [praetorian-inc](https://github.com/praetorian-inc) | [noseyparker](https://github.com/praetorian-inc/noseyparker) | 2191 | Nosey Parker is a command-line tool that finds secrets and sensitive information in textual data and Git history. | 2025-12-12T21:03:46Z |
-| [prefix-dev](https://github.com/prefix-dev) | [pixi](https://github.com/prefix-dev/pixi) | 5878 | Package management made easy | 2025-12-12T13:14:53Z |
-| [prefix-dev](https://github.com/prefix-dev) | [rattler-build](https://github.com/prefix-dev/rattler-build) | 336 | rattler-build is a universal Conda package builder for Windows, macOS and Linux (like conda-build but faster) | 2025-12-12T10:24:35Z |
+| [praetorian-inc](https://github.com/praetorian-inc) | [noseyparker](https://github.com/praetorian-inc/noseyparker) | 2192 | Nosey Parker is a command-line tool that finds secrets and sensitive information in textual data and Git history. | 2025-12-13T01:59:11Z |
+| [prefix-dev](https://github.com/prefix-dev) | [pixi](https://github.com/prefix-dev/pixi) | 5884 | Package management made easy | 2025-12-13T22:31:56Z |
+| [prefix-dev](https://github.com/prefix-dev) | [rattler-build](https://github.com/prefix-dev/rattler-build) | 336 | rattler-build is a universal Conda package builder for Windows, macOS and Linux (like conda-build but faster) | 2025-12-13T20:50:47Z |
 | [probonopd](https://github.com/probonopd) | [static-tools](https://github.com/probonopd/static-tools) | 36 | Building static binaries of some tools using an Alpine chroot with musl | 2025-11-25T00:15:35Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [aix](https://github.com/projectdiscovery/aix) | 308 | AIx is a cli tool to interact with Large Language Models (LLM) APIs. | 2025-11-15T18:47:27Z |
-| [projectdiscovery](https://github.com/projectdiscovery) | [alterx](https://github.com/projectdiscovery/alterx) | 893 | Fast and customizable subdomain wordlist generator using DSL | 2025-12-11T16:36:39Z |
-| [projectdiscovery](https://github.com/projectdiscovery) | [asnmap](https://github.com/projectdiscovery/asnmap) | 976 | Go CLI and Library for quickly mapping organization network ranges using ASN information. | 2025-12-11T14:31:43Z |
+| [projectdiscovery](https://github.com/projectdiscovery) | [alterx](https://github.com/projectdiscovery/alterx) | 894 | Fast and customizable subdomain wordlist generator using DSL | 2025-12-13T07:33:55Z |
+| [projectdiscovery](https://github.com/projectdiscovery) | [asnmap](https://github.com/projectdiscovery/asnmap) | 977 | Go CLI and Library for quickly mapping organization network ranges using ASN information. | 2025-12-13T10:56:03Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [cdncheck](https://github.com/projectdiscovery/cdncheck) | 910 | A utility to detect various technology for a given IP address. | 2025-12-12T10:40:48Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [chaos-client](https://github.com/projectdiscovery/chaos-client) | 801 | Go client to communicate with Chaos DB API. | 2025-12-07T13:47:13Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [cloudlist](https://github.com/projectdiscovery/cloudlist) | 990 | Cloudlist is a tool for listing Assets from multiple Cloud Providers. | 2025-12-08T15:51:24Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [cvemap](https://github.com/projectdiscovery/cvemap) | 2226 | Modern CLI for exploring vulnerability data with powerful search, filtering, and analysis capabilities. | 2025-12-11T22:26:04Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [dnsx](https://github.com/projectdiscovery/dnsx) | 2597 | dnsx is a fast and multi-purpose DNS toolkit allow to run multiple DNS queries of your choice with a list of user-supplied resolvers. | 2025-12-12T17:43:11Z |
-| [projectdiscovery](https://github.com/projectdiscovery) | [httpx](https://github.com/projectdiscovery/httpx) | 9279 | httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library. | 2025-12-12T23:10:44Z |
-| [projectdiscovery](https://github.com/projectdiscovery) | [interactsh](https://github.com/projectdiscovery/interactsh) | 4082 | An OOB interaction gathering server and client library | 2025-12-12T10:19:40Z |
-| [projectdiscovery](https://github.com/projectdiscovery) | [katana](https://github.com/projectdiscovery/katana) | 15059 | A next-generation crawling and spidering framework. | 2025-12-12T19:27:34Z |
+| [projectdiscovery](https://github.com/projectdiscovery) | [httpx](https://github.com/projectdiscovery/httpx) | 9283 | httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library. | 2025-12-13T23:01:57Z |
+| [projectdiscovery](https://github.com/projectdiscovery) | [interactsh](https://github.com/projectdiscovery/interactsh) | 4085 | An OOB interaction gathering server and client library | 2025-12-13T18:22:13Z |
+| [projectdiscovery](https://github.com/projectdiscovery) | [katana](https://github.com/projectdiscovery/katana) | 15064 | A next-generation crawling and spidering framework. | 2025-12-13T14:54:33Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [mapcidr](https://github.com/projectdiscovery/mapcidr) | 1170 | Utility program to perform multiple operations for a given subnet/CIDR ranges. | 2025-12-11T06:28:36Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [naabu](https://github.com/projectdiscovery/naabu) | 5576 | A fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests | 2025-12-12T22:54:17Z |
-| [projectdiscovery](https://github.com/projectdiscovery) | [notify](https://github.com/projectdiscovery/notify) | 1525 | Notify is a Go-based assistance package that enables you to stream the output of several tools (or read from a file) and publish it to a variety of supported platforms. | 2025-12-08T18:53:21Z |
-| [projectdiscovery](https://github.com/projectdiscovery) | [nuclei](https://github.com/projectdiscovery/nuclei) | 26025 | Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations. | 2025-12-12T23:07:44Z |
+| [projectdiscovery](https://github.com/projectdiscovery) | [notify](https://github.com/projectdiscovery/notify) | 1526 | Notify is a Go-based assistance package that enables you to stream the output of several tools (or read from a file) and publish it to a variety of supported platforms. | 2025-12-13T00:51:19Z |
+| [projectdiscovery](https://github.com/projectdiscovery) | [nuclei](https://github.com/projectdiscovery/nuclei) | 26049 | Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations. | 2025-12-13T22:16:58Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [openrisk](https://github.com/projectdiscovery/openrisk) | 180 | openrisk is a tool that generates a risk score based on the results of a Nuclei scan. | 2025-12-04T08:43:40Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [pdtm](https://github.com/projectdiscovery/pdtm) | 1005 | ProjectDiscoverys Open Source Tool Manager | 2025-12-12T22:04:33Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [proxify](https://github.com/projectdiscovery/proxify) | 2957 | A versatile and portable proxy for capturing, manipulating, and replaying HTTP/HTTPS traffic on the go. | 2025-12-11T14:48:04Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [shuffledns](https://github.com/projectdiscovery/shuffledns) | 1538 | MassDNS wrapper written in go to enumerate valid subdomains using active bruteforce as well as resolve subdomains with wildcard filtering and easy input-output support. | 2025-12-10T00:42:03Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [simplehttpserver](https://github.com/projectdiscovery/simplehttpserver) | 524 | Go alternative of python SimpleHTTPServer | 2025-12-07T19:18:42Z |
-| [projectdiscovery](https://github.com/projectdiscovery) | [subfinder](https://github.com/projectdiscovery/subfinder) | 12684 | Fast passive subdomain enumeration tool. | 2025-12-12T16:11:12Z |
+| [projectdiscovery](https://github.com/projectdiscovery) | [subfinder](https://github.com/projectdiscovery/subfinder) | 12688 | Fast passive subdomain enumeration tool. | 2025-12-13T13:32:38Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [tldfinder](https://github.com/projectdiscovery/tldfinder) | 229 | A streamlined tool for discovering private TLDs for security research. | 2025-12-08T14:22:50Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [tlsx](https://github.com/projectdiscovery/tlsx) | 1040 | Fast and configurable TLS grabber focused on TLS based data collection. | 2025-12-12T21:40:07Z |
 | [projectdiscovery](https://github.com/projectdiscovery) | [uncover](https://github.com/projectdiscovery/uncover) | 2766 | Quickly discover exposed hosts on the internet using multiple search engines. | 2025-12-11T22:51:38Z |
-| [projectdiscovery](https://github.com/projectdiscovery) | [urlfinder](https://github.com/projectdiscovery/urlfinder) | 813 | A high-speed tool for passively gathering URLs, optimized for efficient and comprehensive web asset discovery without active scanning. | 2025-12-12T06:31:07Z |
+| [projectdiscovery](https://github.com/projectdiscovery) | [urlfinder](https://github.com/projectdiscovery/urlfinder) | 815 | A high-speed tool for passively gathering URLs, optimized for efficient and comprehensive web asset discovery without active scanning. | 2025-12-13T19:30:07Z |
 | [gentoo](https://github.com/gentoo) | [cpuid2cpuflags](https://github.com/gentoo/cpuid2cpuflags) | 118 | Tool to generate CPU_FLAGS_* for your CPU | 2025-12-07T09:47:16Z |
 | [proot-me](https://github.com/proot-me) | [proot](https://github.com/proot-me/proot) | 2400 | chroot, mount --bind, and binfmt_misc without privilege/setup for Linux | 2025-12-12T09:33:51Z |
-| [whyvl](https://github.com/whyvl) | [wireproxy](https://github.com/whyvl/wireproxy) | 5283 | Wireguard client that exposes itself as a socks5 proxy | 2025-12-12T10:16:54Z |
+| [whyvl](https://github.com/whyvl) | [wireproxy](https://github.com/whyvl/wireproxy) | 5285 | Wireguard client that exposes itself as a socks5 proxy | 2025-12-13T21:43:44Z |
 | [puzzlepeaches](https://github.com/puzzlepeaches) | [ffufw](https://github.com/puzzlepeaches/ffufw) | 146 | No description provided. | 2025-12-12T09:58:30Z |
 | [pwnesia](https://github.com/pwnesia) | [dnstake](https://github.com/pwnesia/dnstake) | 852 | DNSTake — A fast tool to check missing hosted DNS zones that can lead to subdomain takeover | 2025-12-11T02:20:47Z |
-| [pystardust](https://github.com/pystardust) | [ani-cli](https://github.com/pystardust/ani-cli) | 10180 | A cli tool to browse and play anime | 2025-12-12T13:27:36Z |
-| [python](https://github.com/python) | [cpython](https://github.com/python/cpython) | 70274 | The Python programming language | 2025-12-12T23:18:40Z |
-| [pythops](https://github.com/pythops) | [oryx](https://github.com/pythops/oryx) | 2265 | 🕵️‍♂️ TUI for sniffing network traffic using eBPF on Linux | 2025-12-11T08:15:27Z |
-| [qarmin](https://github.com/qarmin) | [czkawka](https://github.com/qarmin/czkawka) | 27439 | Multi functional app to find duplicates, empty folders, similar images etc. | 2025-12-12T23:13:27Z |
+| [pystardust](https://github.com/pystardust) | [ani-cli](https://github.com/pystardust/ani-cli) | 10184 | A cli tool to browse and play anime | 2025-12-13T17:26:27Z |
+| [python](https://github.com/python) | [cpython](https://github.com/python/cpython) | 70290 | The Python programming language | 2025-12-13T23:03:31Z |
+| [pythops](https://github.com/pythops) | [oryx](https://github.com/pythops/oryx) | 2268 | 🕵️‍♂️ TUI for sniffing network traffic using eBPF on Linux | 2025-12-13T21:01:28Z |
+| [qarmin](https://github.com/qarmin) | [czkawka](https://github.com/qarmin/czkawka) | 27456 | Multi functional app to find duplicates, empty folders, similar images etc. | 2025-12-13T23:28:42Z |
 | [qarmin](https://github.com/qarmin) | [system-info-collector](https://github.com/qarmin/system-info-collector) | 26 | App to collect ram/cpu usage from OS and show it in pretty graphs | 2025-11-10T09:59:48Z |
 | [qaware](https://github.com/qaware) | [protocurl](https://github.com/qaware/protocurl) | 249 | protoCURL is cURL for Protobuf: The command-line tool for interacting with Protobuf over HTTP REST endpoints using human-readable text formats | 2025-11-03T17:02:08Z |
 | [quantumsheep](https://github.com/quantumsheep) | [sshs](https://github.com/quantumsheep/sshs) | 1401 | Terminal user interface for SSH | 2025-12-12T11:15:38Z |
@@ -902,28 +902,28 @@
 | [yujqiao](https://github.com/yujqiao) | [catproc](https://github.com/yujqiao/catproc) | 1198 | Print the output of a running process | 2025-11-27T23:38:30Z |
 | [raviqqe](https://github.com/raviqqe) | [muffet](https://github.com/raviqqe/muffet) | 2580 | Fast website link checker in Go | 2025-12-12T15:29:19Z |
 | [rbsec](https://github.com/rbsec) | [sslscan](https://github.com/rbsec/sslscan) | 2557 | sslscan tests SSL/TLS enabled services to discover supported cipher suites | 2025-12-12T16:22:58Z |
-| [rclone](https://github.com/rclone) | [rclone](https://github.com/rclone/rclone) | 54046 | rsync for cloud storage - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files | 2025-12-12T19:44:26Z |
-| [rcoh](https://github.com/rcoh) | [angle-grinder](https://github.com/rcoh/angle-grinder) | 3684 | Slice and dice logs on the command line | 2025-12-08T19:07:52Z |
+| [rclone](https://github.com/rclone) | [rclone](https://github.com/rclone/rclone) | 54064 | rsync for cloud storage - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files | 2025-12-13T19:53:24Z |
+| [rcoh](https://github.com/rcoh) | [angle-grinder](https://github.com/rcoh/angle-grinder) | 3686 | Slice and dice logs on the command line | 2025-12-13T22:12:42Z |
 | [redhuntlabs](https://github.com/redhuntlabs) | [BucketLoot](https://github.com/redhuntlabs/BucketLoot) | 434 | BucketLoot is an automated S3-compatible bucket inspector that can help users extract assets, flag secret exposures and even search for custom keywords as well as Regular Expressions from publicly-exposed storage buckets by scanning files that store data in plain-text. | 2025-12-12T20:37:36Z |
 | [refaktor](https://github.com/refaktor) | [rye](https://github.com/refaktor/rye) | 629 | A language trying to be very expressive in syntax yet very disciplined in its handling of state. | 2025-12-11T21:16:09Z |
-| [regclient](https://github.com/regclient) | [regclient](https://github.com/regclient/regclient) | 1738 | Docker and OCI Registry Client in Go and tooling using those libraries. | 2025-12-12T18:18:34Z |
+| [regclient](https://github.com/regclient) | [regclient](https://github.com/regclient/regclient) | 1737 | Docker and OCI Registry Client in Go and tooling using those libraries. | 2025-12-13T20:04:43Z |
 | [registrobr](https://github.com/registrobr) | [rdap-client](https://github.com/registrobr/rdap-client) | 55 | RDAP command line | 2025-12-09T13:24:51Z |
 | [relan](https://github.com/relan) | [exfat](https://github.com/relan/exfat) | 866 | Free exFAT file system implementation | 2025-12-09T20:11:42Z |
 | [replydev](https://github.com/replydev) | [cotp](https://github.com/replydev/cotp) | 350 | Trustworthy, encrypted, command-line TOTP/HOTP authenticator app with import functionality. | 2025-12-10T22:17:08Z |
 | [reproducible-containers](https://github.com/reproducible-containers) | [diffoci](https://github.com/reproducible-containers/diffoci) | 528 | diff for Docker and OCI container images | 2025-12-12T06:24:47Z |
-| [restic](https://github.com/restic) | [restic](https://github.com/restic/restic) | 31184 | Fast, secure, efficient backup program | 2025-12-12T19:51:14Z |
+| [restic](https://github.com/restic) | [restic](https://github.com/restic/restic) | 31199 | Fast, secure, efficient backup program | 2025-12-13T21:36:13Z |
 | [resyncgg](https://github.com/resyncgg) | [ripgen](https://github.com/resyncgg/ripgen) | 296 | Rust-based high performance domain permutation generator. | 2025-12-01T08:11:15Z |
-| [reviewdog](https://github.com/reviewdog) | [reviewdog](https://github.com/reviewdog/reviewdog) | 8887 | 🐶 Automated code review tool integrated with any code analysis tools regardless of programming language | 2025-12-12T23:01:24Z |
+| [reviewdog](https://github.com/reviewdog) | [reviewdog](https://github.com/reviewdog/reviewdog) | 8889 | 🐶 Automated code review tool integrated with any code analysis tools regardless of programming language | 2025-12-13T13:22:30Z |
 | [rfc1036](https://github.com/rfc1036) | [whois](https://github.com/rfc1036/whois) | 569 | Intelligent WHOIS client | 2025-12-09T13:11:31Z |
 | [rfjakob](https://github.com/rfjakob) | [gocryptfs](https://github.com/rfjakob/gocryptfs) | 4187 | Encrypted overlay filesystem written in Go | 2025-12-11T16:32:05Z |
-| [rgwood](https://github.com/rgwood) | [systemctl-tui](https://github.com/rgwood/systemctl-tui) | 1663 | A fast, simple TUI for interacting with systemd services and their logs | 2025-12-12T11:14:41Z |
+| [rgwood](https://github.com/rgwood) | [systemctl-tui](https://github.com/rgwood/systemctl-tui) | 1665 | A fast, simple TUI for interacting with systemd services and their logs | 2025-12-13T11:48:13Z |
 | [rhash](https://github.com/rhash) | [RHash](https://github.com/rhash/RHash) | 682 | Great utility for computing hash sums | 2025-12-10T17:43:05Z |
-| [rhysd](https://github.com/rhysd) | [actionlint](https://github.com/rhysd/actionlint) | 3455 | :octocat: Static checker for GitHub Actions workflow files | 2025-12-11T17:21:57Z |
+| [rhysd](https://github.com/rhysd) | [actionlint](https://github.com/rhysd/actionlint) | 3456 | :octocat: Static checker for GitHub Actions workflow files | 2025-12-13T09:28:31Z |
 | [richardlehane](https://github.com/richardlehane) | [siegfried](https://github.com/richardlehane/siegfried) | 253 | signature-based file format identification | 2025-12-05T16:18:47Z |
 | [rix4uni](https://github.com/rix4uni) | [certinfo](https://github.com/rix4uni/certinfo) | 11 | certinfo is a powerful SSL certificate scraping tool that extracts domain names from SSL certificates of arbitrary hosts. It supports both basic certificate data extraction and recursive subdomain enumeration through Certificate Subject Alternative Names (SANs). | 2025-11-23T04:23:49Z |
 | [rix4uni](https://github.com/rix4uni) | [dlevel](https://github.com/rix4uni/dlevel) | 4 | Filter list of subdomains by level. | 2025-09-11T16:52:24Z |
 | [rix4uni](https://github.com/rix4uni) | [gf](https://github.com/rix4uni/gf) | 3 | A wrapper around grep, to help you grep for things | 2025-09-11T16:49:38Z |
-| [rix4uni](https://github.com/rix4uni) | [haktrailsfree](https://github.com/rix4uni/haktrailsfree) | 33 | Get 10k subdomains in securitytrails using cookie without apikey. | 2025-11-18T11:10:58Z |
+| [rix4uni](https://github.com/rix4uni) | [haktrailsfree](https://github.com/rix4uni/haktrailsfree) | 34 | Get 10k subdomains in securitytrails using cookie without apikey. | 2025-12-13T01:20:58Z |
 | [rix4uni](https://github.com/rix4uni) | [oosexclude](https://github.com/rix4uni/oosexclude) | 4 | Remove outofscope subdomains from https://github.com/rix4uni/scope/blob/main/data/outofscope.txt or a local outofscope.txt file. | 2025-11-02T04:11:12Z |
 | [rix4uni](https://github.com/rix4uni) | [org2asn](https://github.com/rix4uni/org2asn) | 7 | Extract ASN and IPs in bgp.he.net | 2025-08-07T18:06:39Z |
 | [rix4uni](https://github.com/rix4uni) | [portmap](https://github.com/rix4uni/portmap) | 7 | portmap is a fast portscan tool, uses shodan public data for port scan used internetdb.shodan.io and api.shodan.io/shodan/host | 2025-12-11T18:30:21Z |
@@ -934,26 +934,26 @@
 | [rix4uni](https://github.com/rix4uni) | [unew](https://github.com/rix4uni/unew) | 15 | A high-performance command-line utility for processing and managing unique lines from input streams. Combining the functionality of sort, uniq, and tee, unew efficiently filters duplicates while offering advanced features like file splitting, shuffling, and case-insensitive processing. | 2025-11-12T14:35:59Z |
 | [rix4uni](https://github.com/rix4uni) | [whoxysubs](https://github.com/rix4uni/whoxysubs) | 6 | Scrape whoxy subdomains without api key. | 2025-09-11T16:36:01Z |
 | [riza](https://github.com/riza) | [indextree](https://github.com/riza/indextree) | 50 | Generates the tree of the directory listing page. | 2025-08-02T00:35:49Z |
-| [rizsotto](https://github.com/rizsotto) | [Bear](https://github.com/rizsotto/Bear) | 6066 | Bear is a tool that generates a compilation database for clang tooling. | 2025-12-12T18:12:13Z |
-| [rkd77](https://github.com/rkd77) | [elinks](https://github.com/rkd77/elinks) | 534 | Fork of elinks | 2025-12-12T22:47:16Z |
-| [robertdavidgraham](https://github.com/robertdavidgraham) | [masscan](https://github.com/robertdavidgraham/masscan) | 25143 | TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes. | 2025-12-12T09:29:07Z |
+| [rizsotto](https://github.com/rizsotto) | [Bear](https://github.com/rizsotto/Bear) | 6068 | Bear is a tool that generates a compilation database for clang tooling. | 2025-12-13T03:02:06Z |
+| [rkd77](https://github.com/rkd77) | [elinks](https://github.com/rkd77/elinks) | 534 | Fork of elinks | 2025-12-13T11:23:13Z |
+| [robertdavidgraham](https://github.com/robertdavidgraham) | [masscan](https://github.com/robertdavidgraham/masscan) | 25147 | TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes. | 2025-12-13T22:21:55Z |
 | [robertknight](https://github.com/robertknight) | [ocrs](https://github.com/robertknight/ocrs) | 1704 | Rust library and CLI tool for OCR (extracting text from images) | 2025-12-12T06:46:13Z |
 | [robiot](https://github.com/robiot) | [rustcat](https://github.com/robiot/rustcat) | 797 | Rustcat(rcat) - The modern Port listener and Reverse shell | 2025-12-10T11:45:50Z |
 | [rockdaboot](https://github.com/rockdaboot) | [wget2](https://github.com/rockdaboot/wget2) | 680 | The successor of GNU Wget. Contributions preferred at https://gitlab.com/gnuwget/wget2. But accepted here as well 😍 | 2025-12-11T20:28:53Z |
-| [rofl0r](https://github.com/rofl0r) | [proxychains-ng](https://github.com/rofl0r/proxychains-ng) | 10386 | proxychains ng (new generation) - a preloader which hooks calls to sockets in dynamically linked programs and redirects it through one or more socks/http proxies. continuation of the unmaintained proxychains project. the sf.net page is currently not updated, use releases from github release page instead. | 2025-12-12T02:14:18Z |
+| [rofl0r](https://github.com/rofl0r) | [proxychains-ng](https://github.com/rofl0r/proxychains-ng) | 10386 | proxychains ng (new generation) - a preloader which hooks calls to sockets in dynamically linked programs and redirects it through one or more socks/http proxies. continuation of the unmaintained proxychains project. the sf.net page is currently not updated, use releases from github release page instead. | 2025-12-13T16:57:23Z |
 | [rofl0r](https://github.com/rofl0r) | [svn-lite](https://github.com/rofl0r/svn-lite) | 14 | A minimalist svn client to checkout/update Subversion repositories. | 2025-04-10T01:29:42Z |
 | [root4loot](https://github.com/root4loot) | [crtsher](https://github.com/root4loot/crtsher) | 5 | Obtain domains from certificate transparency logs | 2025-10-14T17:40:30Z |
 | [root4loot](https://github.com/root4loot) | [rescope](https://github.com/root4loot/rescope) | 331 | Bugbounty scope tool | 2025-10-04T19:01:26Z |
 | [root4loot](https://github.com/root4loot) | [screener](https://github.com/root4loot/screener) | 11 | Take screenshots of webpages | 2025-10-14T17:40:19Z |
 | [rootless-containers](https://github.com/rootless-containers) | [rootlesskit](https://github.com/rootless-containers/rootlesskit) | 1179 | Linux-native fake root for implementing rootless containers | 2025-12-09T20:36:25Z |
-| [rootless-containers](https://github.com/rootless-containers) | [slirp4netns](https://github.com/rootless-containers/slirp4netns) | 872 | User-mode networking for unprivileged network namespaces | 2025-12-10T03:32:14Z |
+| [rootless-containers](https://github.com/rootless-containers) | [slirp4netns](https://github.com/rootless-containers/slirp4netns) | 873 | User-mode networking for unprivileged network namespaces | 2025-12-13T02:27:23Z |
 | [rpodgorny](https://github.com/rpodgorny) | [unionfs-fuse](https://github.com/rpodgorny/unionfs-fuse) | 357 | union filesystem using fuse | 2025-12-08T13:11:57Z |
 | [rs](https://github.com/rs) | [curlie](https://github.com/rs/curlie) | 3520 | The power of curl, the ease of use of httpie. | 2025-12-12T17:30:32Z |
 | [rsc](https://github.com/rsc) | [unix](https://github.com/rsc/unix) | 374 | Old Unix programs running on modern computers. | 2025-11-29T23:08:54Z |
-| [ruffle-rs](https://github.com/ruffle-rs) | [ruffle](https://github.com/ruffle-rs/ruffle) | 17481 | A Flash Player emulator written in Rust | 2025-12-12T20:07:27Z |
+| [ruffle-rs](https://github.com/ruffle-rs) | [ruffle](https://github.com/ruffle-rs/ruffle) | 17480 | A Flash Player emulator written in Rust | 2025-12-13T14:09:52Z |
 | [runZeroInc](https://github.com/runZeroInc) | [sshamble](https://github.com/runZeroInc/sshamble) | 1165 | SSHamble: Unexpected Exposures in SSH | 2025-12-11T08:24:23Z |
 | [rbakbashev](https://github.com/rbakbashev) | [elfcat](https://github.com/rbakbashev/elfcat) | 982 | ELF visualizer. Generates HTML files from ELF binaries. | 2025-12-01T11:17:14Z |
-| [rustdesk](https://github.com/rustdesk) | [rustdesk](https://github.com/rustdesk/rustdesk) | 104100 | An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer. | 2025-12-12T22:00:00Z |
+| [rustdesk](https://github.com/rustdesk) | [rustdesk](https://github.com/rustdesk/rustdesk) | 104135 | An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer. | 2025-12-13T23:31:49Z |
 | [ryancdotorg](https://github.com/ryancdotorg) | [freq](https://github.com/ryancdotorg/freq) | 101 | Like sort  uniq -c  sort -rn but better | 2025-12-01T18:04:06Z |
 | [s0md3v](https://github.com/s0md3v) | [Smap](https://github.com/s0md3v/Smap) | 3148 | a drop-in replacement for Nmap powered by shodan.io | 2025-12-12T06:06:43Z |
 | [s0rg](https://github.com/s0rg) | [crawley](https://github.com/s0rg/crawley) | 321 | The unix-way web crawler | 2025-12-09T13:48:42Z |
@@ -961,39 +961,39 @@
 | [saidsay-so](https://github.com/saidsay-so) | [gateau](https://github.com/saidsay-so/gateau) | 17 | :cookie: Use your cookies from browsers in your curl, wget and httpie requests! | 2025-11-21T17:51:57Z |
 | [sandialabs](https://github.com/sandialabs) | [wiretap](https://github.com/sandialabs/wiretap) | 1048 | Wiretap is a transparent, VPN-like proxy server that tunnels traffic via WireGuard and requires no special privileges to run. | 2025-12-10T20:09:47Z |
 | [sassoftware](https://github.com/sassoftware) | [relic](https://github.com/sassoftware/relic) | 180 | Relic is a service and a tool for adding digital signatures to operating system packages for Linux and Windows | 2025-11-30T18:29:44Z |
-| [sayanarijit](https://github.com/sayanarijit) | [xplr](https://github.com/sayanarijit/xplr) | 4633 | A hackable, minimal, fast TUI file explorer | 2025-12-12T20:03:26Z |
-| [schachmat](https://github.com/schachmat) | [wego](https://github.com/schachmat/wego) | 8349 | weather app for the terminal | 2025-12-12T12:23:25Z |
-| [schollz](https://github.com/schollz) | [croc](https://github.com/schollz/croc) | 32241 | Easily and securely send things from one computer to another :crocodile: :package: | 2025-12-12T21:43:14Z |
-| [schweikert](https://github.com/schweikert) | [fping](https://github.com/schweikert/fping) | 1166 | High performance ping tool | 2025-12-12T02:32:52Z |
-| [sclevine](https://github.com/sclevine) | [yj](https://github.com/sclevine/yj) | 1024 | CLI - Convert between YAML, TOML, JSON, and HCL. Preserves map order. | 2025-12-09T12:26:37Z |
+| [sayanarijit](https://github.com/sayanarijit) | [xplr](https://github.com/sayanarijit/xplr) | 4635 | A hackable, minimal, fast TUI file explorer | 2025-12-13T20:35:25Z |
+| [schachmat](https://github.com/schachmat) | [wego](https://github.com/schachmat/wego) | 8350 | weather app for the terminal | 2025-12-13T01:46:20Z |
+| [schollz](https://github.com/schollz) | [croc](https://github.com/schollz/croc) | 32249 | Easily and securely send things from one computer to another :crocodile: :package: | 2025-12-13T16:26:37Z |
+| [schweikert](https://github.com/schweikert) | [fping](https://github.com/schweikert/fping) | 1167 | High performance ping tool | 2025-12-13T15:19:53Z |
+| [sclevine](https://github.com/sclevine) | [yj](https://github.com/sclevine/yj) | 1025 | CLI - Convert between YAML, TOML, JSON, and HCL. Preserves map order. | 2025-12-12T23:46:15Z |
 | [cylentsec](https://github.com/cylentsec) | [nmapurls](https://github.com/cylentsec/nmapurls) | 42 | Nmapurls parses Nmap xml reports from either piped input or command line arg and outputs a list of http(s) URLs to be used in an automation pipeline. | 2025-11-19T14:15:23Z |
-| [securego](https://github.com/securego) | [gosec](https://github.com/securego/gosec) | 8564 | Go security checker | 2025-12-12T13:20:50Z |
-| [selinuxG](https://github.com/selinuxG) | [Golin](https://github.com/selinuxG/Golin) | 1695 | 弱口令检测、 漏洞扫描、端口扫描（协议识别，组件识别）、web目录扫描、等保工具（网络安全等级保护现场测评工具）内置3级等保核查命令、基线核查工具、键盘记录器 | 2025-12-12T12:22:42Z |
+| [securego](https://github.com/securego) | [gosec](https://github.com/securego/gosec) | 8568 | Go security checker | 2025-12-13T21:52:17Z |
+| [selinuxG](https://github.com/selinuxG) | [Golin](https://github.com/selinuxG/Golin) | 1696 | 弱口令检测、 漏洞扫描、端口扫描（协议识别，组件识别）、web目录扫描、等保工具（网络安全等级保护现场测评工具）内置3级等保核查命令、基线核查工具、键盘记录器 | 2025-12-13T06:15:52Z |
 | [semihalev](https://github.com/semihalev) | [sdns](https://github.com/semihalev/sdns) | 1019 | A high-performance, recursive DNS resolver server with DNSSEC support, focused on preserving privacy. | 2025-12-12T06:29:18Z |
-| [sensepost](https://github.com/sensepost) | [gowitness](https://github.com/sensepost/gowitness) | 4080 | 🔍 gowitness - a golang, web screenshot utility using Chrome Headless | 2025-12-11T08:04:21Z |
+| [sensepost](https://github.com/sensepost) | [gowitness](https://github.com/sensepost/gowitness) | 4081 | 🔍 gowitness - a golang, web screenshot utility using Chrome Headless | 2025-12-13T01:18:06Z |
 | [sergi0g](https://github.com/sergi0g) | [cup](https://github.com/sergi0g/cup) | 1162 | 🥤Docker container updates made easy | 2025-12-12T10:54:20Z |
 | [seveas](https://github.com/seveas) | [herd](https://github.com/seveas/herd) | 36 | Massively parallel ssh client | 2025-12-09T15:43:17Z |
-| [shadow-maint](https://github.com/shadow-maint) | [shadow](https://github.com/shadow-maint/shadow) | 356 | Upstream shadow tree | 2025-12-10T12:32:47Z |
-| [shadow1ng](https://github.com/shadow1ng) | [fscan](https://github.com/shadow1ng/fscan) | 13101 | 一款内网综合扫描工具，方便一键自动化、全方位漏扫扫描。 | 2025-12-12T13:30:53Z |
-| [shadowsocks](https://github.com/shadowsocks) | [shadowsocks-rust](https://github.com/shadowsocks/shadowsocks-rust) | 10097 | A Rust port of shadowsocks | 2025-12-12T09:01:21Z |
+| [shadow-maint](https://github.com/shadow-maint) | [shadow](https://github.com/shadow-maint/shadow) | 356 | Upstream shadow tree | 2025-12-13T20:46:37Z |
+| [shadow1ng](https://github.com/shadow1ng) | [fscan](https://github.com/shadow1ng/fscan) | 13107 | 一款内网综合扫描工具，方便一键自动化、全方位漏扫扫描。 | 2025-12-13T18:51:33Z |
+| [shadowsocks](https://github.com/shadowsocks) | [shadowsocks-rust](https://github.com/shadowsocks/shadowsocks-rust) | 10099 | A Rust port of shadowsocks | 2025-12-13T18:36:05Z |
 | [shaka-project](https://github.com/shaka-project) | [static-ffmpeg-binaries](https://github.com/shaka-project/static-ffmpeg-binaries) | 24 | Static binaries of FFmpeg, for multiple OS & CPU combinations, built from source in a GitHub Actions workflow. | 2025-11-11T20:39:53Z |
-| [sharkdp](https://github.com/sharkdp) | [bat](https://github.com/sharkdp/bat) | 56175 | A cat(1) clone with wings. | 2025-12-12T23:37:57Z |
-| [sharkdp](https://github.com/sharkdp) | [binocle](https://github.com/sharkdp/binocle) | 1266 | a graphical tool to visualize binary data | 2025-12-11T12:52:01Z |
-| [sharkdp](https://github.com/sharkdp) | [fd](https://github.com/sharkdp/fd) | 40792 | A simple, fast and user-friendly alternative to find | 2025-12-12T21:04:56Z |
-| [sharkdp](https://github.com/sharkdp) | [hexyl](https://github.com/sharkdp/hexyl) | 9902 | A command-line hex viewer | 2025-12-12T13:29:24Z |
-| [sharkdp](https://github.com/sharkdp) | [hyperfine](https://github.com/sharkdp/hyperfine) | 26983 | A command-line benchmarking tool | 2025-12-12T22:19:35Z |
-| [shell-pool](https://github.com/shell-pool) | [shpool](https://github.com/shell-pool/shpool) | 1648 | Think tmux, then aim... lower | 2025-12-12T20:18:20Z |
+| [sharkdp](https://github.com/sharkdp) | [bat](https://github.com/sharkdp/bat) | 56187 | A cat(1) clone with wings. | 2025-12-13T19:23:49Z |
+| [sharkdp](https://github.com/sharkdp) | [binocle](https://github.com/sharkdp/binocle) | 1267 | a graphical tool to visualize binary data | 2025-12-13T19:07:44Z |
+| [sharkdp](https://github.com/sharkdp) | [fd](https://github.com/sharkdp/fd) | 40800 | A simple, fast and user-friendly alternative to find | 2025-12-13T23:13:58Z |
+| [sharkdp](https://github.com/sharkdp) | [hexyl](https://github.com/sharkdp/hexyl) | 9903 | A command-line hex viewer | 2025-12-13T12:25:57Z |
+| [sharkdp](https://github.com/sharkdp) | [hyperfine](https://github.com/sharkdp/hyperfine) | 26988 | A command-line benchmarking tool | 2025-12-13T23:29:48Z |
+| [shell-pool](https://github.com/shell-pool) | [shpool](https://github.com/shell-pool/shpool) | 1647 | Think tmux, then aim... lower | 2025-12-13T07:53:23Z |
 | [shenwei356](https://github.com/shenwei356) | [brename](https://github.com/shenwei356/brename) | 297 | A practical cross-platform command-line tool for safely batch renaming files/directories via regular expression | 2025-11-11T02:18:03Z |
 | [shenwei356](https://github.com/shenwei356) | [csvtk](https://github.com/shenwei356/csvtk) | 1128 | A cross-platform, efficient and practical CSV/TSV toolkit in Golang | 2025-12-01T06:10:20Z |
 | [shenwei356](https://github.com/shenwei356) | [rush](https://github.com/shenwei356/rush) | 1061 | A cross-platform command-line tool for executing jobs in parallel | 2025-12-08T15:06:00Z |
 | [shoenig](https://github.com/shoenig) | [ssh-key-sync](https://github.com/shoenig/ssh-key-sync) | 58 | A tool for synchronizing your GitHub SSH keys onto servers authorized_keys files | 2025-12-11T15:11:06Z |
 | [showwin](https://github.com/showwin) | [speedtest-go](https://github.com/showwin/speedtest-go) | 741 | CLI and Go API to Test Internet Speed using speedtest.net | 2025-12-09T16:11:21Z |
-| [sibprogrammer](https://github.com/sibprogrammer) | [xq](https://github.com/sibprogrammer/xq) | 1063 | Command-line XML and HTML beautifier and content extractor | 2025-12-10T14:58:21Z |
-| [sigoden](https://github.com/sigoden) | [dufs](https://github.com/sigoden/dufs) | 9304 | A file server that supports static serving, uploading, searching, accessing control, webdav... | 2025-12-12T17:37:59Z |
+| [sibprogrammer](https://github.com/sibprogrammer) | [xq](https://github.com/sibprogrammer/xq) | 1064 | Command-line XML and HTML beautifier and content extractor | 2025-12-13T01:13:35Z |
+| [sigoden](https://github.com/sigoden) | [dufs](https://github.com/sigoden/dufs) | 9308 | A file server that supports static serving, uploading, searching, accessing control, webdav... | 2025-12-13T17:07:12Z |
 | [sigstore](https://github.com/sigstore) | [rekor](https://github.com/sigstore/rekor) | 1042 | Software Supply Chain Transparency Log | 2025-12-12T01:12:41Z |
 | [simnalamburt](https://github.com/simnalamburt) | [uniqs](https://github.com/simnalamburt/uniqs) | 14 | Rust uniq(1) alternative with streaming support | 2025-03-11T20:44:26Z |
-| [simplex-chat](https://github.com/simplex-chat) | [simplex-chat](https://github.com/simplex-chat/simplex-chat) | 10037 | SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱! | 2025-12-12T22:36:27Z |
-| [sinclairtarget](https://github.com/sinclairtarget) | [git-who](https://github.com/sinclairtarget/git-who) | 2619 | Git blame for file trees | 2025-12-12T22:59:22Z |
+| [simplex-chat](https://github.com/simplex-chat) | [simplex-chat](https://github.com/simplex-chat/simplex-chat) | 10046 | SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱! | 2025-12-13T19:10:16Z |
+| [sinclairtarget](https://github.com/sinclairtarget) | [git-who](https://github.com/sinclairtarget/git-who) | 2622 | Git blame for file trees | 2025-12-13T22:51:45Z |
 | [sisong](https://github.com/sisong) | [HDiffPatch](https://github.com/sisong/HDiffPatch) | 1905 | a C\C++ library and command-line tools for Diff & Patch between binary files or directories(folder); cross-platform; runs fast; create small delta/differential; support large files and limit memory requires when diff & patch. | 2025-12-11T11:26:50Z |
 | [sisong](https://github.com/sisong) | [hsynz](https://github.com/sisong/hsynz) | 59 | hsynz is a library for delta update using sync algorithm, like zsync. rsync over http(s); implement the sync algorithm on client side, and server side only need http(s) cdn. support compressor zstd & libdeflate & zlib, support large file & directory(folder), support muti-thread. | 2025-11-02T12:17:09Z |
 | [sitkevij](https://github.com/sitkevij) | [hex](https://github.com/sitkevij/hex) | 549 | 🔮 Futuristic take on hexdump, made in Rust. | 2025-12-09T13:24:57Z |
@@ -1009,23 +1009,23 @@
 | [skarnet](https://github.com/skarnet) | [s6-rc](https://github.com/skarnet/s6-rc) | 142 | A service manager for s6. | 2025-12-09T10:23:50Z |
 | [skupperproject](https://github.com/skupperproject) | [skupper](https://github.com/skupperproject/skupper) | 666 | Skupper is an implementation of a Virtual Application Network, enabling rich hybrid cloud communication. | 2025-12-10T14:15:11Z |
 | [skyf0l](https://github.com/skyf0l) | [RsaCracker](https://github.com/skyf0l/RsaCracker) | 135 | Powerful RSA cracker for CTFs. Supports RSA, X509, OPENSSH, PKCS#12, PKCS#7, and CSR in PEM and DER formats. | 2025-12-10T15:44:34Z |
-| [slackhq](https://github.com/slackhq) | [go-audit](https://github.com/slackhq/go-audit) | 1651 | go-audit is an alternative to the auditd daemon that ships with many distros | 2025-12-10T16:58:42Z |
+| [slackhq](https://github.com/slackhq) | [go-audit](https://github.com/slackhq/go-audit) | 1652 | go-audit is an alternative to the auditd daemon that ships with many distros | 2025-12-13T19:04:51Z |
 | [slavaGanzin](https://github.com/slavaGanzin) | [await](https://github.com/slavaGanzin/await) | 236 | 40K, small memory footprint, single binary that run list of commands in parallel and waits for their termination | 2025-12-03T13:12:28Z |
-| [slimtoolkit](https://github.com/slimtoolkit) | [slim](https://github.com/slimtoolkit/slim) | 22578 | Slim(toolkit): Dont change anything in your container image and minify it by up to 30x (and for compiled languages even more) making it secure too! (free and open source) | 2025-12-12T21:28:34Z |
+| [slimtoolkit](https://github.com/slimtoolkit) | [slim](https://github.com/slimtoolkit/slim) | 22584 | Slim(toolkit): Dont change anything in your container image and minify it by up to 30x (and for compiled languages even more) making it secure too! (free and open source) | 2025-12-13T20:11:00Z |
 | [slingdata-io](https://github.com/slingdata-io) | [sling-cli](https://github.com/slingdata-io/sling-cli) | 735 | Sling is a CLI tool that extracts data from a source storage/database and loads it in a target storage/database. | 2025-12-11T23:27:30Z |
-| [smallstep](https://github.com/smallstep) | [cli](https://github.com/smallstep/cli) | 4076 | 🧰  A zero trust swiss army knife for working with X509, OAuth, JWT, OATH OTP, etc. | 2025-12-12T19:03:40Z |
+| [smallstep](https://github.com/smallstep) | [cli](https://github.com/smallstep/cli) | 4077 | 🧰  A zero trust swiss army knife for working with X509, OAuth, JWT, OATH OTP, etc. | 2025-12-13T12:12:09Z |
 | [smmr-software](https://github.com/smmr-software) | [mabel](https://github.com/smmr-software/mabel) | 434 | A fancy BitTorrent client for the terminal | 2025-12-12T07:04:01Z |
-| [sorenisanerd](https://github.com/sorenisanerd) | [gotty](https://github.com/sorenisanerd/gotty) | 2373 | Share your terminal as a web application | 2025-12-11T21:42:25Z |
-| [sosedoff](https://github.com/sosedoff) | [pgweb](https://github.com/sosedoff/pgweb) | 9170 | Cross-platform client for PostgreSQL databases | 2025-12-12T21:49:11Z |
+| [sorenisanerd](https://github.com/sorenisanerd) | [gotty](https://github.com/sorenisanerd/gotty) | 2374 | Share your terminal as a web application | 2025-12-13T22:19:20Z |
+| [sosedoff](https://github.com/sosedoff) | [pgweb](https://github.com/sosedoff/pgweb) | 9171 | Cross-platform client for PostgreSQL databases | 2025-12-12T23:48:23Z |
 | [souk4711](https://github.com/souk4711) | [hakoniwa](https://github.com/souk4711/hakoniwa) | 50 | Process isolation for Linux using namespaces, resource limits, landlock and seccomp. | 2025-12-08T17:28:20Z |
-| [spellshift](https://github.com/spellshift) | [realm](https://github.com/spellshift/realm) | 559 | Realm is a cross platform Red Team engagement platform with a focus on automation and reliability. | 2025-12-12T06:29:39Z |
-| [sqlc-dev](https://github.com/sqlc-dev) | [sqlc](https://github.com/sqlc-dev/sqlc) | 16482 | Generate type-safe code from SQL | 2025-12-12T22:32:00Z |
-| [sqlite](https://github.com/sqlite) | [sqlite](https://github.com/sqlite/sqlite) | 8744 | Official Git mirror of the SQLite source tree | 2025-12-12T18:30:17Z |
+| [spellshift](https://github.com/spellshift) | [realm](https://github.com/spellshift/realm) | 559 | Realm is a cross platform Red Team engagement platform with a focus on automation and reliability. | 2025-12-13T04:17:26Z |
+| [sqlc-dev](https://github.com/sqlc-dev) | [sqlc](https://github.com/sqlc-dev/sqlc) | 16490 | Generate type-safe code from SQL | 2025-12-13T18:17:30Z |
+| [sqlite](https://github.com/sqlite) | [sqlite](https://github.com/sqlite/sqlite) | 8749 | Official Git mirror of the SQLite source tree | 2025-12-13T23:30:16Z |
 | [srevinsaju](https://github.com/srevinsaju) | [Brave-AppImage](https://github.com/srevinsaju/Brave-AppImage) | 58 | No description provided. | 2025-10-05T17:48:46Z |
 | [srevinsaju](https://github.com/srevinsaju) | [Firefox-Appimage](https://github.com/srevinsaju/Firefox-Appimage) | 155 | Mozilla Firefox Stable AppImages by Continuous Integration | 2025-11-21T23:36:51Z |
 | [srevinsaju](https://github.com/srevinsaju) | [discord-appimage](https://github.com/srevinsaju/discord-appimage) | 76 | Continuous Integration to create Discord AppImages directly from source | 2025-10-21T18:57:04Z |
 | [ssleert](https://github.com/ssleert) | [zfxtop](https://github.com/ssleert/zfxtop) | 393 | [WIP] fetch top for gen Z with X written by bubbletea enjoyer | 2025-12-09T21:50:00Z |
-| [starship](https://github.com/starship) | [starship](https://github.com/starship/starship) | 52739 | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! | 2025-12-12T22:41:31Z |
+| [starship](https://github.com/starship) | [starship](https://github.com/starship/starship) | 52758 | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! | 2025-12-13T21:32:49Z |
 | [runmedev](https://github.com/runmedev) | [runme](https://github.com/runmedev/runme) | 1756 | DevOps Notebooks Built with Markdown | 2025-12-12T22:40:21Z |
 | [stevegrubb](https://github.com/stevegrubb) | [libcap-ng](https://github.com/stevegrubb/libcap-ng) | 79 | Libcap-ng is a library for Linux that makes using posix capabilities easy. | 2025-10-04T13:55:50Z |
 | [stolenusername](https://github.com/stolenusername) | [cowitness](https://github.com/stolenusername/cowitness) | 125 | CoWitness is a powerful web application testing tool that enhances the accuracy and efficiency of your testing efforts. It allows you to mimic an HTTP server and a DNS server, providing complete responses and valuable insights during your testing process. | 2025-04-17T02:12:13Z |
@@ -1035,184 +1035,184 @@
 | [subtrace](https://github.com/subtrace) | [subtrace](https://github.com/subtrace/subtrace) | 2669 | Network inspector for your backend | 2025-12-11T08:47:58Z |
 | [suchnsuch](https://github.com/suchnsuch) | [Tangent](https://github.com/suchnsuch/Tangent) | 366 | The publicly-available modules of the Tangent project. | 2025-12-10T14:11:58Z |
 | [sudo-project](https://github.com/sudo-project) | [sudo](https://github.com/sudo-project/sudo) | 1395 | Utility to execute a command as another user | 2025-12-11T10:37:10Z |
-| [superfly](https://github.com/superfly) | [litefs](https://github.com/superfly/litefs) | 4617 | FUSE-based file system for replicating SQLite databases across a cluster of machines | 2025-12-11T10:44:49Z |
+| [superfly](https://github.com/superfly) | [litefs](https://github.com/superfly/litefs) | 4618 | FUSE-based file system for replicating SQLite databases across a cluster of machines | 2025-12-13T13:31:09Z |
 | [surban](https://github.com/surban) | [aggligator](https://github.com/surban/aggligator) | 203 | Aggregates multiple links (TCP, Bluetooth, USB, WebSocket or similar) into one connection having their combined bandwidth and provides resiliency against failure of individual links. | 2025-12-10T14:28:10Z |
-| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [ci-info](https://github.com/suzuki-shunsuke/ci-info) | 15 | CLI tool to get CI related information | 2025-12-12T22:44:37Z |
-| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [cmdx](https://github.com/suzuki-shunsuke/cmdx) | 50 | Task runner. It provides useful help messages and supports interactive prompts and validation of arguments | 2025-12-11T04:57:36Z |
-| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [ghalint](https://github.com/suzuki-shunsuke/ghalint) | 185 | GitHub Actions linter | 2025-12-12T23:00:42Z |
-| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [ghcp](https://github.com/suzuki-shunsuke/ghcp) | 5 | Tool to fork a repository, commit files, create a pull request and upload assets using GitHub API | 2025-12-12T22:42:06Z |
-| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [github-comment](https://github.com/suzuki-shunsuke/github-comment) | 123 | CLI to create and hide GitHub comments | 2025-12-11T18:48:20Z |
-| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [nllint](https://github.com/suzuki-shunsuke/nllint) | 9 | Linter and formatter of newlines and trailing spaces in files | 2025-12-12T22:13:27Z |
+| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [ci-info](https://github.com/suzuki-shunsuke/ci-info) | 15 | CLI tool to get CI related information | 2025-12-13T00:45:52Z |
+| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [cmdx](https://github.com/suzuki-shunsuke/cmdx) | 50 | Task runner. It provides useful help messages and supports interactive prompts and validation of arguments | 2025-12-13T03:07:11Z |
+| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [ghalint](https://github.com/suzuki-shunsuke/ghalint) | 188 | GitHub Actions linter | 2025-12-13T22:20:24Z |
+| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [ghcp](https://github.com/suzuki-shunsuke/ghcp) | 5 | Tool to fork a repository, commit files, create a pull request and upload assets using GitHub API | 2025-12-13T02:02:21Z |
+| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [github-comment](https://github.com/suzuki-shunsuke/github-comment) | 123 | CLI to create and hide GitHub comments | 2025-12-13T02:14:05Z |
+| [suzuki-shunsuke](https://github.com/suzuki-shunsuke) | [nllint](https://github.com/suzuki-shunsuke/nllint) | 9 | Linter and formatter of newlines and trailing spaces in files | 2025-12-13T03:06:03Z |
 | [svenstaro](https://github.com/svenstaro) | [dummyhttp](https://github.com/svenstaro/dummyhttp) | 132 | Super simple HTTP server that replies a fixed body with a fixed response code | 2025-12-08T17:44:20Z |
-| [svenstaro](https://github.com/svenstaro) | [miniserve](https://github.com/svenstaro/miniserve) | 7234 | 🌟 For when you really just want to serve some files over HTTP right now! | 2025-12-12T19:24:06Z |
+| [svenstaro](https://github.com/svenstaro) | [miniserve](https://github.com/svenstaro/miniserve) | 7238 | 🌟 For when you really just want to serve some files over HTTP right now! | 2025-12-13T13:18:16Z |
 | [svenstaro](https://github.com/svenstaro) | [vmexec](https://github.com/svenstaro/vmexec) | 27 | 🔧 Run a single command in a speedy virtual machine with zero-setup THE PROJECT MOVED TO https://gitlab.archlinux.org/archlinux/vmexec | 2025-10-06T09:32:02Z |
 | [sw33tLie](https://github.com/sw33tLie) | [sns](https://github.com/sw33tLie/sns) | 349 | IIS shortname scanner written in Go | 2025-12-11T22:45:44Z |
 | [sweetbbak](https://github.com/sweetbbak) | [find-suid](https://github.com/sweetbbak/find-suid) | 5 | Find setuid binaries on a file system with speed. A lot faster than using find and a lot more practical. | 2024-11-25T13:39:47Z |
 | [sweetbbak](https://github.com/sweetbbak) | [tget](https://github.com/sweetbbak/tget) | 51 | wget but for torrents | 2025-11-27T16:13:49Z |
-| [sweetbbak](https://github.com/sweetbbak) | [toru](https://github.com/sweetbbak/toru) | 366 | Bittorrent streaming CLI tool. Stream anime torrents, real-time with no waiting for downloads. | 2025-12-11T19:40:11Z |
-| [sxyazi](https://github.com/sxyazi) | [yazi](https://github.com/sxyazi/yazi) | 30568 | 💥 Blazing fast terminal file manager written in Rust, based on async I/O. | 2025-12-12T20:33:14Z |
+| [sweetbbak](https://github.com/sweetbbak) | [toru](https://github.com/sweetbbak/toru) | 367 | Bittorrent streaming CLI tool. Stream anime torrents, real-time with no waiting for downloads. | 2025-12-13T08:59:12Z |
+| [sxyazi](https://github.com/sxyazi) | [yazi](https://github.com/sxyazi/yazi) | 30588 | 💥 Blazing fast terminal file manager written in Rust, based on async I/O. | 2025-12-13T22:47:28Z |
 | [synacktiv](https://github.com/synacktiv) | [IPSpinner](https://github.com/synacktiv/IPSpinner) | 112 | IPSpinner works as a local proxy that redirects requests through external services. | 2025-12-11T04:20:11Z |
-| [syncthing](https://github.com/syncthing) | [syncthing](https://github.com/syncthing/syncthing) | 78230 | Open Source Continuous File Synchronization | 2025-12-12T22:44:00Z |
+| [syncthing](https://github.com/syncthing) | [syncthing](https://github.com/syncthing/syncthing) | 78254 | Open Source Continuous File Synchronization | 2025-12-13T23:28:43Z |
 | [synfig](https://github.com/synfig) | [synfig](https://github.com/synfig/synfig) | 2106 | This is the Official source code repository of Synfig Studio animation software | 2025-12-12T23:16:08Z |
 | [synoet](https://github.com/synoet) | [cdwe](https://github.com/synoet/cdwe) | 42 | ⚡️(cd with env) Is a configurable cd wrapper that lets you define your environment per directory. | 2025-09-26T23:17:13Z |
-| [tailscale](https://github.com/tailscale) | [tailscale](https://github.com/tailscale/tailscale) | 26503 | The easiest, most secure way to use WireGuard and 2FA. | 2025-12-12T20:57:06Z |
-| [tamasfe](https://github.com/tamasfe) | [taplo](https://github.com/tamasfe/taplo) | 2054 | A TOML toolkit written in Rust | 2025-12-12T13:25:13Z |
+| [tailscale](https://github.com/tailscale) | [tailscale](https://github.com/tailscale/tailscale) | 26527 | The easiest, most secure way to use WireGuard and 2FA. | 2025-12-13T22:56:33Z |
+| [tamasfe](https://github.com/tamasfe) | [taplo](https://github.com/tamasfe/taplo) | 2057 | A TOML toolkit written in Rust | 2025-12-13T12:43:15Z |
 | [tanaikech](https://github.com/tanaikech) | [goodls](https://github.com/tanaikech/goodls) | 501 | This is a CLI tool to download shared files and folders from Google Drive. | 2025-12-04T14:09:18Z |
-| [tarka](https://github.com/tarka) | [xcp](https://github.com/tarka/xcp) | 874 | An extended cp | 2025-12-11T15:38:48Z |
+| [tarka](https://github.com/tarka) | [xcp](https://github.com/tarka/xcp) | 875 | An extended cp | 2025-12-13T17:23:28Z |
 | [tbillington](https://github.com/tbillington) | [kondo](https://github.com/tbillington/kondo) | 2148 | Cleans dependencies and build artifacts from your projects. | 2025-12-12T10:32:38Z |
-| [tdewolff](https://github.com/tdewolff) | [minify](https://github.com/tdewolff/minify) | 4030 | Go minifiers for web formats | 2025-12-09T13:59:20Z |
-| [tealdeer-rs](https://github.com/tealdeer-rs) | [tealdeer](https://github.com/tealdeer-rs/tealdeer) | 5709 | A very fast implementation of tldr in Rust. | 2025-12-12T18:39:37Z |
-| [teddysun](https://github.com/teddysun) | [across](https://github.com/teddysun/across) | 5257 | Across the Great Wall we can reach every corner in the world | 2025-12-12T07:56:47Z |
-| [telegramdesktop](https://github.com/telegramdesktop) | [tdesktop](https://github.com/telegramdesktop/tdesktop) | 29289 | Telegram Desktop messaging app | 2025-12-12T18:23:10Z |
+| [tdewolff](https://github.com/tdewolff) | [minify](https://github.com/tdewolff/minify) | 4032 | Go minifiers for web formats | 2025-12-13T19:19:43Z |
+| [tealdeer-rs](https://github.com/tealdeer-rs) | [tealdeer](https://github.com/tealdeer-rs/tealdeer) | 5712 | A very fast implementation of tldr in Rust. | 2025-12-13T23:26:57Z |
+| [teddysun](https://github.com/teddysun) | [across](https://github.com/teddysun/across) | 5259 | Across the Great Wall we can reach every corner in the world | 2025-12-13T09:17:30Z |
+| [telegramdesktop](https://github.com/telegramdesktop) | [tdesktop](https://github.com/telegramdesktop/tdesktop) | 29295 | Telegram Desktop messaging app | 2025-12-13T21:38:49Z |
 | [tg123](https://github.com/tg123) | [sshpiper](https://github.com/tg123/sshpiper) | 1147 | The missing reverse proxy for ssh scp | 2025-12-11T00:41:02Z |
-| [tgdrive](https://github.com/tgdrive) | [teldrive](https://github.com/tgdrive/teldrive) | 2510 | Teldrive | 2025-12-12T16:44:13Z |
-| [the-tcpdump-group](https://github.com/the-tcpdump-group) | [tcpdump](https://github.com/the-tcpdump-group/tcpdump) | 3076 | the TCPdump network dissector | 2025-12-12T00:00:02Z |
+| [tgdrive](https://github.com/tgdrive) | [teldrive](https://github.com/tgdrive/teldrive) | 2512 | Teldrive | 2025-12-13T01:06:33Z |
+| [the-tcpdump-group](https://github.com/the-tcpdump-group) | [tcpdump](https://github.com/the-tcpdump-group/tcpdump) | 3080 | the TCPdump network dissector | 2025-12-13T21:55:09Z |
 | [thegeeklab](https://github.com/thegeeklab) | [url-parser](https://github.com/thegeeklab/url-parser) | 25 | Simple command-line URL parser | 2025-12-08T05:10:31Z |
 | [thevxn](https://github.com/thevxn) | [dish](https://github.com/thevxn/dish) | 261 | A lightweight, remotely configurable monitoring service. | 2025-12-06T13:29:22Z |
 | [thomiceli](https://github.com/thomiceli) | [opengist](https://github.com/thomiceli/opengist) | 2850 | Self-hosted pastebin powered by Git, open-source alternative to Github Gist. | 2025-12-12T21:44:46Z |
-| [tianon](https://github.com/tianon) | [gosu](https://github.com/tianon/gosu) | 4913 | Simple Go-based setuid+setgid+setgroups+exec | 2025-12-12T20:55:21Z |
-| [tio](https://github.com/tio) | [tio](https://github.com/tio/tio) | 2679 | A serial device I/O tool | 2025-12-12T19:03:26Z |
+| [tianon](https://github.com/tianon) | [gosu](https://github.com/tianon/gosu) | 4914 | Simple Go-based setuid+setgid+setgroups+exec | 2025-12-13T14:15:58Z |
+| [tio](https://github.com/tio) | [tio](https://github.com/tio/tio) | 2680 | A serial device I/O tool | 2025-12-13T07:52:51Z |
 | [tkellogg](https://github.com/tkellogg) | [dura](https://github.com/tkellogg/dura) | 4375 | You shouldnt ever lose your work if youre using Git | 2025-12-10T21:18:42Z |
-| [tldr-pages](https://github.com/tldr-pages) | [tlrc](https://github.com/tldr-pages/tlrc) | 736 | A tldr client written in Rust | 2025-12-11T13:15:11Z |
-| [tmux](https://github.com/tmux) | [tmux](https://github.com/tmux/tmux) | 40078 | tmux source code | 2025-12-12T22:46:08Z |
-| [todoesverso](https://github.com/todoesverso) | [logss](https://github.com/todoesverso/logss) | 279 | A simple cli for logs splitting | 2025-12-12T17:40:44Z |
-| [toeverything](https://github.com/toeverything) | [AFFiNE](https://github.com/toeverything/AFFiNE) | 60671 | There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. | 2025-12-12T21:03:43Z |
+| [tldr-pages](https://github.com/tldr-pages) | [tlrc](https://github.com/tldr-pages/tlrc) | 738 | A tldr client written in Rust | 2025-12-13T23:06:45Z |
+| [tmux](https://github.com/tmux) | [tmux](https://github.com/tmux/tmux) | 40104 | tmux source code | 2025-12-13T23:18:23Z |
+| [todoesverso](https://github.com/todoesverso) | [logss](https://github.com/todoesverso/logss) | 280 | A simple cli for logs splitting | 2025-12-13T01:06:13Z |
+| [toeverything](https://github.com/toeverything) | [AFFiNE](https://github.com/toeverything/AFFiNE) | 60694 | There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. | 2025-12-13T20:33:39Z |
 | [tomnomnom](https://github.com/tomnomnom) | [anew](https://github.com/tomnomnom/anew) | 1594 | A tool for adding new lines to files, skipping duplicates | 2025-12-11T11:32:23Z |
-| [tomnomnom](https://github.com/tomnomnom) | [assetfinder](https://github.com/tomnomnom/assetfinder) | 3466 | Find domains and subdomains related to a given domain | 2025-12-11T16:47:30Z |
+| [tomnomnom](https://github.com/tomnomnom) | [assetfinder](https://github.com/tomnomnom/assetfinder) | 3465 | Find domains and subdomains related to a given domain | 2025-12-13T17:29:54Z |
 | [tomnomnom](https://github.com/tomnomnom) | [gf](https://github.com/tomnomnom/gf) | 2050 | A wrapper around grep, to help you grep for things | 2025-12-12T15:57:36Z |
-| [tomnomnom](https://github.com/tomnomnom) | [gron](https://github.com/tomnomnom/gron) | 14304 | Make JSON greppable! | 2025-12-12T10:02:36Z |
-| [tomnomnom](https://github.com/tomnomnom) | [httprobe](https://github.com/tomnomnom/httprobe) | 3073 | Take a list of domains and probe for working HTTP and HTTPS servers | 2025-12-12T15:57:31Z |
+| [tomnomnom](https://github.com/tomnomnom) | [gron](https://github.com/tomnomnom/gron) | 14306 | Make JSON greppable! | 2025-12-13T08:31:05Z |
+| [tomnomnom](https://github.com/tomnomnom) | [httprobe](https://github.com/tomnomnom/httprobe) | 3074 | Take a list of domains and probe for working HTTP and HTTPS servers | 2025-12-13T01:43:13Z |
 | [tomnomnom](https://github.com/tomnomnom) | [qsreplace](https://github.com/tomnomnom/qsreplace) | 852 | Accept URLs on stdin, replace all query string values with a user-supplied value | 2025-12-12T01:42:36Z |
 | [tomnomnom](https://github.com/tomnomnom) | [unfurl](https://github.com/tomnomnom/unfurl) | 1263 | Pull out bits of URLs provided on stdin | 2025-12-11T23:28:55Z |
-| [tomnomnom](https://github.com/tomnomnom) | [waybackurls](https://github.com/tomnomnom/waybackurls) | 4235 | Fetch all the URLs that the Wayback Machine knows about for a domain | 2025-12-12T01:29:54Z |
+| [tomnomnom](https://github.com/tomnomnom) | [waybackurls](https://github.com/tomnomnom/waybackurls) | 4238 | Fetch all the URLs that the Wayback Machine knows about for a domain | 2025-12-13T20:38:55Z |
 | [tonistiigi](https://github.com/tonistiigi) | [binfmt](https://github.com/tonistiigi/binfmt) | 1343 | Cross-platform emulator collection distributed with Docker images. | 2025-12-12T21:38:36Z |
-| [traefik](https://github.com/traefik) | [traefik](https://github.com/traefik/traefik) | 60446 | The Cloud Native Application Proxy | 2025-12-12T23:13:29Z |
-| [trapexit](https://github.com/trapexit) | [mergerfs](https://github.com/trapexit/mergerfs) | 5265 | a featureful union filesystem | 2025-12-12T14:50:01Z |
-| [traviscross](https://github.com/traviscross) | [mtr](https://github.com/traviscross/mtr) | 3073 | Official repository for mtr, a network diagnostic tool | 2025-12-12T12:21:53Z |
+| [traefik](https://github.com/traefik) | [traefik](https://github.com/traefik/traefik) | 60464 | The Cloud Native Application Proxy | 2025-12-13T22:26:46Z |
+| [trapexit](https://github.com/trapexit) | [mergerfs](https://github.com/trapexit/mergerfs) | 5268 | a featureful union filesystem | 2025-12-13T23:26:04Z |
+| [traviscross](https://github.com/traviscross) | [mtr](https://github.com/traviscross/mtr) | 3074 | Official repository for mtr, a network diagnostic tool | 2025-12-13T15:10:34Z |
 | [trickest](https://github.com/trickest) | [dsieve](https://github.com/trickest/dsieve) | 210 | Filter and enrich a list of subdomains by level | 2025-11-24T08:20:18Z |
 | [trickest](https://github.com/trickest) | [enumerepo](https://github.com/trickest/enumerepo) | 76 | List all public repositories for (valid) GitHub usernames | 2025-08-21T14:51:44Z |
 | [trickest](https://github.com/trickest) | [mgwls](https://github.com/trickest/mgwls) | 39 | Combine words from two wordlist files and concatenate them with an optional delimiter | 2025-12-11T11:35:27Z |
 | [trickest](https://github.com/trickest) | [mksub](https://github.com/trickest/mksub) | 274 | Generate tens of thousands of subdomain combinations in a matter of seconds | 2025-12-01T07:41:55Z |
-| [trifectatechfoundation](https://github.com/trifectatechfoundation) | [sudo-rs](https://github.com/trifectatechfoundation/sudo-rs) | 4127 | A memory safe implementation of sudo and su. | 2025-12-12T01:23:14Z |
+| [trifectatechfoundation](https://github.com/trifectatechfoundation) | [sudo-rs](https://github.com/trifectatechfoundation/sudo-rs) | 4126 | A memory safe implementation of sudo and su. | 2025-12-13T02:51:13Z |
 | [trou](https://github.com/trou) | [rsbkb](https://github.com/trou/rsbkb) | 142 | CLI tools: encoders/decoders, CTF and reverse engineering helpers. | 2025-12-09T05:35:35Z |
-| [trufflesecurity](https://github.com/trufflesecurity) | [trufflehog](https://github.com/trufflesecurity/trufflehog) | 23758 | Find, verify, and analyze leaked credentials | 2025-12-12T13:42:23Z |
-| [trzsz](https://github.com/trzsz) | [trzsz-ssh](https://github.com/trzsz/trzsz-ssh) | 2351 | trzsz-ssh ( tssh ) is an ssh client designed as a drop-in replacement for the openssh client. It aims to provide complete compatibility with openssh, mirroring all its features, while also offering additional useful features. Such as login prompt, batch login, remember password, automated interaction, trzsz, zmodem(rz/sz), udp mode like mosh, etc. | 2025-12-12T13:28:34Z |
-| [tsenart](https://github.com/tsenart) | [vegeta](https://github.com/tsenart/vegeta) | 24769 | HTTP load testing tool and library. Its over 9000! | 2025-12-12T12:20:44Z |
-| [tsl0922](https://github.com/tsl0922) | [ttyd](https://github.com/tsl0922/ttyd) | 10550 | Share your terminal over the web | 2025-12-12T20:34:25Z |
-| [tstack](https://github.com/tstack) | [lnav](https://github.com/tstack/lnav) | 9427 | Log file navigator | 2025-12-12T17:55:53Z |
+| [trufflesecurity](https://github.com/trufflesecurity) | [trufflehog](https://github.com/trufflesecurity/trufflehog) | 23765 | Find, verify, and analyze leaked credentials | 2025-12-13T23:15:37Z |
+| [trzsz](https://github.com/trzsz) | [trzsz-ssh](https://github.com/trzsz/trzsz-ssh) | 2356 | trzsz-ssh ( tssh ) is an ssh client designed as a drop-in replacement for the openssh client. It aims to provide complete compatibility with openssh, mirroring all its features, while also offering additional useful features. Such as login prompt, batch login, remember password, automated interaction, trzsz, zmodem(rz/sz), udp mode like mosh, etc. | 2025-12-13T12:45:00Z |
+| [tsenart](https://github.com/tsenart) | [vegeta](https://github.com/tsenart/vegeta) | 24774 | HTTP load testing tool and library. Its over 9000! | 2025-12-13T22:16:33Z |
+| [tsl0922](https://github.com/tsl0922) | [ttyd](https://github.com/tsl0922/ttyd) | 10556 | Share your terminal over the web | 2025-12-13T21:28:49Z |
+| [tstack](https://github.com/tstack) | [lnav](https://github.com/tstack/lnav) | 9429 | Log file navigator | 2025-12-13T21:47:23Z |
 | [tukaani-project](https://github.com/tukaani-project) | [xz](https://github.com/tukaani-project/xz) | 870 | XZ Utils | 2025-12-11T13:05:14Z |
-| [gomuks](https://github.com/gomuks) | [gomuks](https://github.com/gomuks/gomuks) | 1522 | A Matrix client written in Go. | 2025-12-10T21:03:08Z |
+| [gomuks](https://github.com/gomuks) | [gomuks](https://github.com/gomuks/gomuks) | 1524 | A Matrix client written in Go. | 2025-12-13T16:23:08Z |
 | [turbolent](https://github.com/turbolent) | [w2c2](https://github.com/turbolent/w2c2) | 788 | Translates WebAssembly modules to portable C | 2025-12-08T09:48:57Z |
 | [turbot](https://github.com/turbot) | [steampipe](https://github.com/turbot/steampipe) | 7617 | Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required. | 2025-12-12T19:35:00Z |
 | [tus](https://github.com/tus) | [tusd](https://github.com/tus/tusd) | 3503 | Reference server implementation in Go of tus: the open protocol for resumable file uploads | 2025-12-12T21:16:27Z |
 | [txn2](https://github.com/txn2) | [txeh](https://github.com/txn2/txeh) | 338 | Go library and CLI utility for /etc/hosts management. | 2025-11-04T17:26:25Z |
-| [txthinking](https://github.com/txthinking) | [brook](https://github.com/txthinking/brook) | 15048 | A cross-platform programmable network tool | 2025-12-12T16:32:13Z |
+| [txthinking](https://github.com/txthinking) | [brook](https://github.com/txthinking/brook) | 15050 | A cross-platform programmable network tool | 2025-12-13T04:07:35Z |
 | [txthinking](https://github.com/txthinking) | [joker](https://github.com/txthinking/joker) | 210 | joker can turn process into daemon. Zero-Configuration | 2025-11-10T12:06:35Z |
 | [txthinking](https://github.com/txthinking) | [z](https://github.com/txthinking/z) | 63 | z - process manager | 2025-11-10T12:06:38Z |
 | [tyfkda](https://github.com/tyfkda) | [xcc](https://github.com/tyfkda/xcc) | 429 | Standalone C compiler/assembler/linker/libc for x86-64/aarch64/riscv64/wasm | 2025-12-09T13:39:39Z |
-| [typst](https://github.com/typst) | [typst](https://github.com/typst/typst) | 49425 | A markup-based typesetting system that is powerful and easy to learn. | 2025-12-12T23:04:10Z |
+| [typst](https://github.com/typst) | [typst](https://github.com/typst/typst) | 49480 | A markup-based typesetting system that is powerful and easy to learn. | 2025-12-13T23:29:13Z |
 | [tytso](https://github.com/tytso) | [e2fsprogs](https://github.com/tytso/e2fsprogs) | 434 | Ext2/3/4 file system utilities | 2025-12-12T08:05:05Z |
 | [u-root](https://github.com/u-root) | [cpu](https://github.com/u-root/cpu) | 269 | cpu command in Go, inspired by the Plan 9 cpu command | 2025-11-27T10:02:53Z |
 | [u-root](https://github.com/u-root) | [gobusybox](https://github.com/u-root/gobusybox) | 189 | Tools for compiling many Go commands into one binary to save space. Builds are supported for vendor-based Go and module-based Go | 2025-12-11T21:03:55Z |
-| [u-root](https://github.com/u-root) | [u-root](https://github.com/u-root/u-root) | 2920 | A fully Go userland with Linux bootloaders! u-root can create a one-binary root file system (initramfs) containing a busybox-like set of tools written in Go. | 2025-12-12T07:14:32Z |
-| [jrnd-io](https://github.com/jrnd-io) | [jr](https://github.com/jrnd-io/jr) | 139 | JR: streaming quality random data from the command line | 2025-12-05T13:47:40Z |
+| [u-root](https://github.com/u-root) | [u-root](https://github.com/u-root/u-root) | 2922 | A fully Go userland with Linux bootloaders! u-root can create a one-binary root file system (initramfs) containing a busybox-like set of tools written in Go. | 2025-12-13T14:18:36Z |
+| [jrnd-io](https://github.com/jrnd-io) | [jr](https://github.com/jrnd-io/jr) | 140 | JR: streaming quality random data from the command line | 2025-12-13T19:40:48Z |
 | [ulyssa](https://github.com/ulyssa) | [iamb](https://github.com/ulyssa/iamb) | 998 | A Matrix client for Vim addicts | 2025-12-11T15:07:04Z |
 | [umair9747](https://github.com/umair9747) | [4oFour](https://github.com/umair9747/4oFour) | 25 | A tech enumeration toolkit focused on 404 Not found pages. | 2025-04-17T02:10:30Z |
-| [ungoogled-software](https://github.com/ungoogled-software) | [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium) | 25056 | Google Chromium, sans integration with Google | 2025-12-12T22:00:45Z |
-| [upx](https://github.com/upx) | [upx](https://github.com/upx/upx) | 16867 | UPX - the Ultimate Packer for eXecutables | 2025-12-12T22:43:01Z |
-| [userdocs](https://github.com/userdocs) | [iperf3-static](https://github.com/userdocs/iperf3-static) | 145 | Static builds of iperf3 binaries for Windows, Linux and MacOSX to do network testing on remote servers. | 2025-12-11T12:04:40Z |
-| [userdocs](https://github.com/userdocs) | [qbittorrent-nox-static](https://github.com/userdocs/qbittorrent-nox-static) | 1500 | A bash script which builds a fully static qbittorrent-nox binary with current dependencies to use on any Linux OS | 2025-12-12T07:19:56Z |
+| [ungoogled-software](https://github.com/ungoogled-software) | [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium) | 25065 | Google Chromium, sans integration with Google | 2025-12-13T19:29:07Z |
+| [upx](https://github.com/upx) | [upx](https://github.com/upx/upx) | 16867 | UPX - the Ultimate Packer for eXecutables | 2025-12-13T12:18:22Z |
+| [userdocs](https://github.com/userdocs) | [iperf3-static](https://github.com/userdocs/iperf3-static) | 145 | Static builds of iperf3 binaries for Windows, Linux and MacOSX to do network testing on remote servers. | 2025-12-13T08:58:19Z |
+| [userdocs](https://github.com/userdocs) | [qbittorrent-nox-static](https://github.com/userdocs/qbittorrent-nox-static) | 1502 | A bash script which builds a fully static qbittorrent-nox binary with current dependencies to use on any Linux OS | 2025-12-13T19:13:57Z |
 | [util-linux](https://github.com/util-linux) | [util-linux](https://github.com/util-linux/util-linux) | 3035 | No description provided. | 2025-12-12T05:42:38Z |
 | [utkusen](https://github.com/utkusen) | [urlhunter](https://github.com/utkusen/urlhunter) | 1658 | a recon tool that allows searching on URLs that are exposed via shortener services | 2025-12-11T22:51:49Z |
-| [uutils](https://github.com/uutils) | [coreutils](https://github.com/uutils/coreutils) | 22290 | Cross-platform Rust rewrite of the GNU coreutils | 2025-12-12T22:42:46Z |
-| [uutils](https://github.com/uutils) | [diffutils](https://github.com/uutils/diffutils) | 217 | Drop-in replacement of diffutils in Rust | 2025-12-12T06:14:48Z |
-| [uutils](https://github.com/uutils) | [findutils](https://github.com/uutils/findutils) | 529 | Rust implementation of findutils | 2025-12-11T22:41:27Z |
-| [v2fly](https://github.com/v2fly) | [v2ray-core](https://github.com/v2fly/v2ray-core) | 32728 | A platform for building proxies to bypass network restrictions. | 2025-12-12T17:47:33Z |
-| [v2rayA](https://github.com/v2rayA) | [v2rayA](https://github.com/v2rayA/v2rayA) | 13984 | A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan, Tuic and Juicity protocols. 🚀 | 2025-12-12T22:04:35Z |
-| [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1980 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-12-10T08:55:20Z |
+| [uutils](https://github.com/uutils) | [coreutils](https://github.com/uutils/coreutils) | 22295 | Cross-platform Rust rewrite of the GNU coreutils | 2025-12-13T20:38:45Z |
+| [uutils](https://github.com/uutils) | [diffutils](https://github.com/uutils/diffutils) | 218 | Drop-in replacement of diffutils in Rust | 2025-12-13T08:06:32Z |
+| [uutils](https://github.com/uutils) | [findutils](https://github.com/uutils/findutils) | 530 | Rust implementation of findutils | 2025-12-13T08:05:39Z |
+| [v2fly](https://github.com/v2fly) | [v2ray-core](https://github.com/v2fly/v2ray-core) | 32740 | A platform for building proxies to bypass network restrictions. | 2025-12-13T23:44:29Z |
+| [v2rayA](https://github.com/v2rayA) | [v2rayA](https://github.com/v2rayA/v2rayA) | 13990 | A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan, Tuic and Juicity protocols. 🚀 | 2025-12-13T17:51:00Z |
+| [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1979 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-12-13T00:43:08Z |
 | [vasi](https://github.com/vasi) | [squashfuse](https://github.com/vasi/squashfuse) | 333 | FUSE filesystem to mount squashfs archives | 2025-12-10T23:16:32Z |
 | [vbatts](https://github.com/vbatts) | [tar-split](https://github.com/vbatts/tar-split) | 106 | checksum-reproducible tar archives (utility/library) | 2025-12-03T10:33:05Z |
 | [vdjagilev](https://github.com/vdjagilev) | [nmap-formatter](https://github.com/vdjagilev/nmap-formatter) | 709 | A tool that allows you to convert NMAP results to html, csv, json, markdown, graphviz (dot), sqlite, excel and d2-lang. Simply put its nmap converter. | 2025-12-12T07:28:20Z |
-| [vergoh](https://github.com/vergoh) | [vnstat](https://github.com/vergoh/vnstat) | 1622 | vnStat - a network traffic monitor for Linux and BSD | 2025-12-11T20:25:57Z |
-| [verilator](https://github.com/verilator) | [verilator](https://github.com/verilator/verilator) | 3229 | Verilator open-source SystemVerilog simulator and lint system | 2025-12-12T20:20:20Z |
-| [version-fox](https://github.com/version-fox) | [vfox](https://github.com/version-fox/vfox) | 3674 | A cross-platform and extendable version manager with support for Java, Node.js, Golang, Python, Flutter, .NET & more | 2025-12-12T17:38:11Z |
-| [viarotel-org](https://github.com/viarotel-org) | [escrcpy](https://github.com/viarotel-org/escrcpy) | 6713 | 📱 Display and control your Android device graphically with scrcpy. | 2025-12-12T18:10:28Z |
-| [vim](https://github.com/vim) | [vim](https://github.com/vim/vim) | 39398 | The official Vim repository | 2025-12-12T21:28:06Z |
+| [vergoh](https://github.com/vergoh) | [vnstat](https://github.com/vergoh/vnstat) | 1624 | vnStat - a network traffic monitor for Linux and BSD | 2025-12-13T20:47:39Z |
+| [verilator](https://github.com/verilator) | [verilator](https://github.com/verilator/verilator) | 3230 | Verilator open-source SystemVerilog simulator and lint system | 2025-12-13T11:53:57Z |
+| [version-fox](https://github.com/version-fox) | [vfox](https://github.com/version-fox/vfox) | 3675 | A cross-platform and extendable version manager with support for Java, Node.js, Golang, Python, Flutter, .NET & more | 2025-12-13T19:37:11Z |
+| [viarotel-org](https://github.com/viarotel-org) | [escrcpy](https://github.com/viarotel-org/escrcpy) | 6720 | 📱 Display and control your Android device graphically with scrcpy. | 2025-12-13T20:39:41Z |
+| [vim](https://github.com/vim) | [vim](https://github.com/vim/vim) | 39406 | The official Vim repository | 2025-12-13T23:22:43Z |
 | [vladimiry](https://github.com/vladimiry) | [ElectronMail](https://github.com/vladimiry/ElectronMail) | 1618 | Unofficial ProtonMail Desktop App | 2025-12-12T16:44:22Z |
 | [vlang](https://github.com/vlang) | [coreutils](https://github.com/vlang/coreutils) | 192 | This repository contains programs equivalent to GNU coreutils, written in the V language. | 2025-12-08T04:19:12Z |
-| [volta-cli](https://github.com/volta-cli) | [volta](https://github.com/volta-cli/volta) | 12666 | Volta: JS Toolchains as Code. ⚡ | 2025-12-12T14:04:49Z |
+| [volta-cli](https://github.com/volta-cli) | [volta](https://github.com/volta-cli/volta) | 12666 | Volta: JS Toolchains as Code. ⚡ | 2025-12-13T17:21:27Z |
 | [volution](https://github.com/volution) | [z-tokens](https://github.com/volution/z-tokens) | 80 | z-tokens -- random tokens generation and related tools | 2025-12-02T09:21:06Z |
 | [vortexau](https://github.com/vortexau) | [dnsvalidator](https://github.com/vortexau/dnsvalidator) | 716 | Maintains a list of IPv4 DNS servers by verifying them against baseline servers, and ensuring accurate responses. | 2025-12-08T00:15:56Z |
-| [vultr](https://github.com/vultr) | [vultr-cli](https://github.com/vultr/vultr-cli) | 519 | Official command line tool for Vultr services | 2025-12-12T02:12:37Z |
+| [vultr](https://github.com/vultr) | [vultr-cli](https://github.com/vultr/vultr-cli) | 521 | Official command line tool for Vultr services | 2025-12-13T12:48:34Z |
 | [wacker-dev](https://github.com/wacker-dev) | [wacker](https://github.com/wacker-dev/wacker) | 25 | Like Docker, but for WASM. | 2025-11-17T01:58:24Z |
 | [wader](https://github.com/wader) | [fq](https://github.com/wader/fq) | 10341 | jq for binary formats - tool, language and decoders for working with binary and text formats | 2025-12-12T22:26:18Z |
-| [wader](https://github.com/wader) | [static-ffmpeg](https://github.com/wader/static-ffmpeg) | 354 | Multi-arch docker image with ffmpeg/ffprobe binaries built as hardened static PIE binaries with no external dependencies | 2025-12-04T09:40:51Z |
-| [wagoodman](https://github.com/wagoodman) | [dive](https://github.com/wagoodman/dive) | 52846 | A tool for exploring each layer in a docker image | 2025-12-12T18:34:11Z |
-| [wait4x](https://github.com/wait4x) | [wait4x](https://github.com/wait4x/wait4x) | 1268 | Wait4X allows you to wait for a port or a service to enter the requested state. | 2025-12-11T22:43:23Z |
+| [wader](https://github.com/wader) | [static-ffmpeg](https://github.com/wader/static-ffmpeg) | 354 | Multi-arch docker image with ffmpeg/ffprobe binaries built as hardened static PIE binaries with no external dependencies | 2025-12-13T16:47:02Z |
+| [wagoodman](https://github.com/wagoodman) | [dive](https://github.com/wagoodman/dive) | 52859 | A tool for exploring each layer in a docker image | 2025-12-13T20:15:03Z |
+| [wait4x](https://github.com/wait4x) | [wait4x](https://github.com/wait4x/wait4x) | 1269 | Wait4X allows you to wait for a port or a service to enter the requested state. | 2025-12-13T00:36:40Z |
 | [walles](https://github.com/walles) | [riff](https://github.com/walles/riff) | 480 | A syntax highter for diffs, clarifying which parts of lines have changed | 2025-12-12T23:38:39Z |
-| [wasmi-labs](https://github.com/wasmi-labs) | [wasmi](https://github.com/wasmi-labs/wasmi) | 1982 | Efficient and versatile WebAssembly interpreter for embedded systems. | 2025-12-12T17:53:18Z |
-| [wearrrrr](https://github.com/wearrrrr) | [9Launcher](https://github.com/wearrrrr/9Launcher) | 135 | 9Launcher is an actively maintained and cross platform remake of Touhou Relauncher! | 2025-12-12T21:11:01Z |
-| [wezterm](https://github.com/wezterm) | [wezterm](https://github.com/wezterm/wezterm) | 22829 | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust | 2025-12-12T22:13:02Z |
+| [wasmi-labs](https://github.com/wasmi-labs) | [wasmi](https://github.com/wasmi-labs/wasmi) | 1980 | Efficient and versatile WebAssembly interpreter for embedded systems. | 2025-12-13T09:40:40Z |
+| [wearrrrr](https://github.com/wearrrrr) | [9Launcher](https://github.com/wearrrrr/9Launcher) | 134 | 9Launcher is an actively maintained and cross platform remake of Touhou Relauncher! | 2025-12-13T05:04:39Z |
+| [wezterm](https://github.com/wezterm) | [wezterm](https://github.com/wezterm/wezterm) | 22839 | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust | 2025-12-13T23:05:21Z |
 | [wfxr](https://github.com/wfxr) | [csview](https://github.com/wfxr/csview) | 680 | 📠 Pretty and fast csv viewer for cli with cjk/emoji support. | 2025-12-12T03:19:07Z |
 | [wgpsec](https://github.com/wgpsec) | [ENScan_GO](https://github.com/wgpsec/ENScan_GO) | 4114 | 一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。支持MCP接入 | 2025-12-12T16:59:28Z |
 | [wgpsec](https://github.com/wgpsec) | [cloudsword](https://github.com/wgpsec/cloudsword) | 572 | 一款帮助云租户发现和测试云上风险、增强云上防护能力的综合性开源工具 | 2025-12-12T16:30:57Z |
 | [wgpsec](https://github.com/wgpsec) | [lc](https://github.com/wgpsec/lc) | 628 | LC（List Cloud）是一个多云攻击面资产梳理工具 | 2025-12-12T06:30:01Z |
 | [whitfin](https://github.com/whitfin) | [jen](https://github.com/whitfin/jen) | 62 | A fast utility to generate fake/test documents based on a template | 2025-10-07T18:05:42Z |
-| [whitfin](https://github.com/whitfin) | [runiq](https://github.com/whitfin/runiq) | 221 | An efficient way to filter duplicate lines from input, à la uniq. | 2025-12-12T04:21:00Z |
+| [whitfin](https://github.com/whitfin) | [runiq](https://github.com/whitfin/runiq) | 221 | An efficient way to filter duplicate lines from input, à la uniq. | 2025-12-13T03:32:11Z |
 | [wikiZ](https://github.com/wikiZ) | [RedGuard](https://github.com/wikiZ/RedGuard) | 1548 | RedGuard is a C2 front flow control tool,Can avoid Blue Teams,AVs,EDRs check. | 2025-12-12T06:29:40Z |
 | [wlh320](https://github.com/wlh320) | [portguard](https://github.com/wlh320/portguard) | 24 | A port forwarding tool works like ssh tunneling, but Zero Config for client. | 2025-10-09T07:12:52Z |
 | [woodruffw](https://github.com/woodruffw) | [toml2json](https://github.com/woodruffw/toml2json) | 89 | A very small CLI for converting TOML to JSON | 2025-12-10T17:48:22Z |
 | [worlpaker](https://github.com/worlpaker) | [gitty](https://github.com/worlpaker/gitty) | 57 | Download GitHub File & Directory | 2025-11-07T00:04:26Z |
 | [wtarreau](https://github.com/wtarreau) | [mhz](https://github.com/wtarreau/mhz) | 45 | CPU frequency measurement utility | 2025-11-08T23:03:02Z |
-| [wtfutil](https://github.com/wtfutil) | [wtf](https://github.com/wtfutil/wtf) | 16475 | The personal information dashboard for your terminal | 2025-12-12T17:22:42Z |
+| [wtfutil](https://github.com/wtfutil) | [wtf](https://github.com/wtfutil/wtf) | 16477 | The personal information dashboard for your terminal | 2025-12-13T20:16:54Z |
 | [wudijun](https://github.com/wudijun) | [Catcher](https://github.com/wudijun/Catcher) | 311 | Catcher(捕手) 重点系统指纹漏洞验证工具，适用于外网打点，资产梳理漏洞检查。 | 2025-12-02T14:11:27Z |
 | [wzv5](https://github.com/wzv5) | [pping](https://github.com/wzv5/pping) | 65 | tcp ping, tls ping, http ping, icmp ping, dns ping, quic ping. | 2025-12-01T00:31:51Z |
 | [x-way](https://github.com/x-way) | [ip_compact](https://github.com/x-way/ip_compact) | 6 | Compact a list of IP prefixes | 2025-09-08T19:05:08Z |
 | [x-way](https://github.com/x-way) | [ip_diff](https://github.com/x-way/ip_diff) | 3 | Compare two lists of IP prefixes | 2025-09-08T19:05:12Z |
 | [x-way](https://github.com/x-way) | [ip_match](https://github.com/x-way/ip_match) | 3 | Match IP addresses against a list of prefixes | 2025-09-08T19:05:17Z |
-| [x90skysn3k](https://github.com/x90skysn3k) | [brutespray](https://github.com/x90skysn3k/brutespray) | 2342 | Bruteforcing from various scanner output - Automatically attempts default creds on found services. | 2025-12-12T09:56:28Z |
-| [xiph](https://github.com/xiph) | [flac](https://github.com/xiph/flac) | 2157 | Free Lossless Audio Codec | 2025-12-12T10:13:01Z |
-| [xiph](https://github.com/xiph) | [opus-tools](https://github.com/xiph/opus-tools) | 255 | A set of tools to encode, inspect, and decode audio in the Opus format. | 2025-12-02T20:31:49Z |
+| [x90skysn3k](https://github.com/x90skysn3k) | [brutespray](https://github.com/x90skysn3k/brutespray) | 2343 | Bruteforcing from various scanner output - Automatically attempts default creds on found services. | 2025-12-13T12:31:09Z |
+| [xiph](https://github.com/xiph) | [flac](https://github.com/xiph/flac) | 2158 | Free Lossless Audio Codec | 2025-12-13T18:15:08Z |
+| [xiph](https://github.com/xiph) | [opus-tools](https://github.com/xiph/opus-tools) | 255 | A set of tools to encode, inspect, and decode audio in the Opus format. | 2025-12-13T01:41:31Z |
 | [xiph](https://github.com/xiph) | [vorbis-tools](https://github.com/xiph/vorbis-tools) | 87 | Command-line tools for creating and playing Ogg Vorbis files. THIS IS A MIRROR, DEVELOPMENT HAPPENS AT https://gitlab.xiph.org/xiph/vorbis-tools | 2025-11-24T12:21:17Z |
-| [xjasonlyu](https://github.com/xjasonlyu) | [tun2socks](https://github.com/xjasonlyu/tun2socks) | 4707 | tun2socks - powered by gVisor TCP/IP stack | 2025-12-12T12:15:43Z |
+| [xjasonlyu](https://github.com/xjasonlyu) | [tun2socks](https://github.com/xjasonlyu/tun2socks) | 4709 | tun2socks - powered by gVisor TCP/IP stack | 2025-12-13T14:57:20Z |
 | [xm1k3](https://github.com/xm1k3) | [cent](https://github.com/xm1k3/cent) | 1029 | Community edition nuclei templates, a simple tool that allows you to organize all the Nuclei templates offered by the community in one place | 2025-12-10T08:31:30Z |
-| [xmrig](https://github.com/xmrig) | [xmrig](https://github.com/xmrig/xmrig) | 9661 | RandomX, KawPow, CryptoNight and GhostRider unified CPU/GPU miner and RandomX benchmark | 2025-12-12T23:36:24Z |
+| [xmrig](https://github.com/xmrig) | [xmrig](https://github.com/xmrig/xmrig) | 9662 | RandomX, KawPow, CryptoNight and GhostRider unified CPU/GPU miner and RandomX benchmark | 2025-12-13T00:40:32Z |
 | [xnl-h4ck3r](https://github.com/xnl-h4ck3r) | [urless](https://github.com/xnl-h4ck3r/urless) | 375 | De-clutter a list of URLs | 2025-12-05T06:01:07Z |
-| [xnl-h4ck3r](https://github.com/xnl-h4ck3r) | [xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder) | 1440 | A python tool used to discover endpoints, potential parameters, and a target specific wordlist for a given target | 2025-12-12T01:44:54Z |
-| [xo](https://github.com/xo) | [usql](https://github.com/xo/usql) | 9631 | Universal command-line interface for SQL databases | 2025-12-12T22:42:25Z |
+| [xnl-h4ck3r](https://github.com/xnl-h4ck3r) | [xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder) | 1441 | A python tool used to discover endpoints, potential parameters, and a target specific wordlist for a given target | 2025-12-13T21:09:19Z |
+| [xo](https://github.com/xo) | [usql](https://github.com/xo/usql) | 9681 | Universal command-line interface for SQL databases | 2025-12-13T23:00:42Z |
 | [xplshn](https://github.com/xplshn) | [a-utils](https://github.com/xplshn/a-utils) | 8 | Andes-utilities | 2025-06-30T01:30:28Z |
 | [xplshn](https://github.com/xplshn) | [dbin](https://github.com/xplshn/dbin) | 275 | 📦 Poor mans package manager. +4164 statically linked binaries in the default repos [automated build repos: Go[+34k], Rust[+7k]] (amd64/arm64/riscv)! The easy to use, easy to get, suckless software distribution system. | 2025-12-12T07:45:37Z |
 | [xrelkd](https://github.com/xrelkd) | [clipcat](https://github.com/xrelkd/clipcat) | 534 | A clipboard manager written in Rust Programming Language. | 2025-12-07T12:43:07Z |
-| [xtaci](https://github.com/xtaci) | [kcptun](https://github.com/xtaci/kcptun) | 14308 | A Quantum-Safe Secure Tunnel based on QPP, KCP, FEC, and N:M multiplexing. | 2025-12-12T09:13:13Z |
-| [xvzc](https://github.com/xvzc) | [SpoofDPI](https://github.com/xvzc/SpoofDPI) | 4309 | Simple and fast anti-censorship tool written in Go | 2025-12-12T18:57:50Z |
+| [xtaci](https://github.com/xtaci) | [kcptun](https://github.com/xtaci/kcptun) | 14310 | A Quantum-Safe Secure Tunnel based on QPP, KCP, FEC, and N:M multiplexing. | 2025-12-13T11:58:48Z |
+| [xvzc](https://github.com/xvzc) | [SpoofDPI](https://github.com/xvzc/SpoofDPI) | 4312 | Simple and fast anti-censorship tool written in Go | 2025-12-13T18:41:58Z |
 | [xyproto](https://github.com/xyproto) | [algernon](https://github.com/xyproto/algernon) | 2962 | Small self-contained pure-Go web server with Lua, Teal, Markdown, Ollama, HTTP/2, QUIC, Redis, SQLite and PostgreSQL support ++ | 2025-12-10T09:00:29Z |
 | [xyproto](https://github.com/xyproto) | [botsay](https://github.com/xyproto/botsay) | 28 | :robot: Output text together with randomly generated ASCII robots in colors inspired by synthwave/rainbows | 2025-03-02T22:01:42Z |
 | [xyproto](https://github.com/xyproto) | [orbiton](https://github.com/xyproto/orbiton) | 618 | Snappy and configuration-free little text editor/IDE for the terminal. Suitable for writing git commit messages, editing Markdown, config files, source code, man pages and for quick edit-format-compile cycles when programming. Has syntax highlighting, jump-to-error, rainbow parentheses, macros, cut/paste portals and a simple gdb front-end. | 2025-12-12T01:58:19Z |
 | [xyproto](https://github.com/xyproto) | [tinyxxd](https://github.com/xyproto/tinyxxd) | 43 | Drop-in replacement and standalone version of the hex dump utility that comes with ViM, licensed only under MIT/GPL2. | 2025-12-02T19:40:46Z |
-| [yggdrasil-network](https://github.com/yggdrasil-network) | [yggdrasil-go](https://github.com/yggdrasil-network/yggdrasil-go) | 4375 | An experiment in scalable routing as an encrypted IPv6 overlay network | 2025-12-12T19:20:43Z |
-| [yinheli](https://github.com/yinheli) | [kungfu](https://github.com/yinheli/kungfu) | 58 | Flexible DNS hijacking and proxy tool. | 2025-12-12T19:26:35Z |
-| [ynqa](https://github.com/ynqa) | [jnv](https://github.com/ynqa/jnv) | 5847 | Interactive JSON filter using jq | 2025-12-12T19:05:00Z |
-| [yosebyte](https://github.com/yosebyte) | [nodepass](https://github.com/yosebyte/nodepass) | 1536 | A secure, efficient TCP/UDP tunneling solution that delivers fast, reliable access across network restrictions using pre-established TCP/QUIC connections. | 2025-12-12T21:47:50Z |
+| [yggdrasil-network](https://github.com/yggdrasil-network) | [yggdrasil-go](https://github.com/yggdrasil-network/yggdrasil-go) | 4378 | An experiment in scalable routing as an encrypted IPv6 overlay network | 2025-12-13T20:53:59Z |
+| [yinheli](https://github.com/yinheli) | [kungfu](https://github.com/yinheli/kungfu) | 58 | Flexible DNS hijacking and proxy tool. | 2025-12-13T04:03:53Z |
+| [ynqa](https://github.com/ynqa) | [jnv](https://github.com/ynqa/jnv) | 5849 | Interactive JSON filter using jq | 2025-12-13T16:28:27Z |
+| [yosebyte](https://github.com/yosebyte) | [nodepass](https://github.com/yosebyte/nodepass) | 1539 | A secure, efficient TCP/UDP tunneling solution that delivers fast, reliable access across network restrictions using pre-established TCP/QUIC connections. | 2025-12-13T20:45:53Z |
 | [your-tools](https://github.com/your-tools) | [ruplacer](https://github.com/your-tools/ruplacer) | 484 | Find and replace text in source files | 2025-11-24T08:16:49Z |
 | [ysf](https://github.com/ysf) | [anewer](https://github.com/ysf/anewer) | 60 | anewer appends lines from stdin to a file if they dont already exist in the file. This is a rust version of https://github.com/tomnomnom/anew | 2025-12-03T13:13:11Z |
-| [yshavit](https://github.com/yshavit) | [mdq](https://github.com/yshavit/mdq) | 1659 | like jq but for Markdown: find specific elements in a md doc | 2025-12-07T14:33:04Z |
+| [yshavit](https://github.com/yshavit) | [mdq](https://github.com/yshavit/mdq) | 1660 | like jq but for Markdown: find specific elements in a md doc | 2025-12-13T19:57:43Z |
 | [yshui](https://github.com/yshui) | [job-security](https://github.com/yshui/job-security) | 64 | job control from anywhere! | 2025-07-21T01:04:29Z |
-| [yt-dlp](https://github.com/yt-dlp) | [yt-dlp](https://github.com/yt-dlp/yt-dlp) | 138060 | A feature-rich command-line audio/video downloader | 2025-12-12T23:38:00Z |
-| [z88dk](https://github.com/z88dk) | [z88dk](https://github.com/z88dk/z88dk) | 1046 | The development kit for over a hundred z80 family machines - c compiler, assembler, linker, libraries. | 2025-12-12T21:16:49Z |
+| [yt-dlp](https://github.com/yt-dlp) | [yt-dlp](https://github.com/yt-dlp/yt-dlp) | 138151 | A feature-rich command-line audio/video downloader | 2025-12-13T23:34:48Z |
+| [z88dk](https://github.com/z88dk) | [z88dk](https://github.com/z88dk/z88dk) | 1046 | The development kit for over a hundred z80 family machines - c compiler, assembler, linker, libraries. | 2025-12-13T22:57:49Z |
 | [zaghaghi](https://github.com/zaghaghi) | [openapi-tui](https://github.com/zaghaghi/openapi-tui) | 981 | Terminal UI to list, browse and run APIs defined with openapi spec. | 2025-12-10T15:17:49Z |
-| [zan8in](https://github.com/zan8in) | [afrog](https://github.com/zan8in/afrog) | 4120 | A Security Tool for Bug Bounty, Pentest and Red Teaming. | 2025-12-12T07:17:36Z |
+| [zan8in](https://github.com/zan8in) | [afrog](https://github.com/zan8in/afrog) | 4121 | A Security Tool for Bug Bounty, Pentest and Red Teaming. | 2025-12-13T14:38:27Z |
 | [zatrazz](https://github.com/zatrazz) | [rldd](https://github.com/zatrazz/rldd) | 22 | ldd print shared object dependencies rust clone | 2025-11-04T10:48:24Z |
-| [zed-industries](https://github.com/zed-industries) | [zed](https://github.com/zed-industries/zed) | 71327 | Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. | 2025-12-12T23:18:19Z |
-| [zellij-org](https://github.com/zellij-org) | [zellij](https://github.com/zellij-org/zellij) | 27583 | A terminal workspace with batteries included | 2025-12-12T20:58:27Z |
-| [zen-browser](https://github.com/zen-browser) | [desktop](https://github.com/zen-browser/desktop) | 38352 | Welcome to a calmer internet | 2025-12-12T20:49:50Z |
+| [zed-industries](https://github.com/zed-industries) | [zed](https://github.com/zed-industries/zed) | 71387 | Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. | 2025-12-13T23:41:09Z |
+| [zellij-org](https://github.com/zellij-org) | [zellij](https://github.com/zellij-org/zellij) | 27598 | A terminal workspace with batteries included | 2025-12-13T15:29:28Z |
+| [zen-browser](https://github.com/zen-browser) | [desktop](https://github.com/zen-browser/desktop) | 38373 | Welcome to a calmer internet | 2025-12-13T21:39:25Z |
 | [zer0yu](https://github.com/zer0yu) | [anew](https://github.com/zer0yu/anew) | 18 | A tool for adding new lines to files, skipping duplicates and written in Rust! | 2025-11-24T08:21:53Z |
-| [zerotier](https://github.com/zerotier) | [ZeroTierOne](https://github.com/zerotier/ZeroTierOne) | 16213 | A Smart Ethernet Switch for Earth | 2025-12-12T20:13:49Z |
+| [zerotier](https://github.com/zerotier) | [ZeroTierOne](https://github.com/zerotier/ZeroTierOne) | 16217 | A Smart Ethernet Switch for Earth | 2025-12-13T16:13:47Z |
 | [ziglang](https://github.com/ziglang) | [qemu-static](https://github.com/ziglang/qemu-static) | 48 | build qemu-static binaries using Alpine Linux docker | 2025-12-01T08:40:10Z |
 | [zimbatm](https://github.com/zimbatm) | [mdsh](https://github.com/zimbatm/mdsh) | 154 | $ mdsh # a markdown shell pre-processor | 2025-11-28T22:41:05Z |
 | [zmap](https://github.com/zmap) | [zdns](https://github.com/zmap/zdns) | 1065 | Fast DNS Lookup Library and CLI Tool | 2025-12-11T13:16:22Z |
-| [zmap](https://github.com/zmap) | [zgrab2](https://github.com/zmap/zgrab2) | 2014 | Fast Application Layer Scanner | 2025-12-11T20:29:56Z |
+| [zmap](https://github.com/zmap) | [zgrab2](https://github.com/zmap/zgrab2) | 2016 | Fast Application Layer Scanner | 2025-12-13T03:15:58Z |
 | [zmap](https://github.com/zmap) | [zmap](https://github.com/zmap/zmap) | 6032 | ZMap is a fast single packet network scanner designed for Internet-wide network surveys. | 2025-12-12T17:06:29Z |
-| [zsh-users](https://github.com/zsh-users) | [zsh](https://github.com/zsh-users/zsh) | 4037 | Mirror of the Z shell source code repository. | 2025-12-12T16:21:35Z |
+| [zsh-users](https://github.com/zsh-users) | [zsh](https://github.com/zsh-users/zsh) | 4038 | Mirror of the Z shell source code repository. | 2025-12-13T02:10:12Z |
 | [ztelliot](https://github.com/ztelliot) | [taierspeed-cli](https://github.com/ztelliot/taierspeed-cli) | 222 | TaierSpeed CLI | 2025-12-03T09:25:02Z |
-| [zyedidia](https://github.com/zyedidia) | [eget](https://github.com/zyedidia/eget) | 1767 | Easily install prebuilt binaries from GitHub. | 2025-12-12T19:38:59Z |
-| [zyedidia](https://github.com/zyedidia) | [micro](https://github.com/zyedidia/micro) | 27415 | A modern and intuitive terminal-based text editor | 2025-12-12T22:51:02Z |
+| [zyedidia](https://github.com/zyedidia) | [eget](https://github.com/zyedidia/eget) | 1771 | Easily install prebuilt binaries from GitHub. | 2025-12-13T15:06:16Z |
+| [zyedidia](https://github.com/zyedidia) | [micro](https://github.com/zyedidia/micro) | 27421 | A modern and intuitive terminal-based text editor | 2025-12-13T23:36:24Z |

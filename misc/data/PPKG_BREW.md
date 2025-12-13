@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.12 ⚠️ | null |
+| PPKG   | 2025.12.13 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1645,7 +1645,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.50.2 ⚠️ | https://github.com/dolthub/dolt/archive/refs/tags/v1.50.2.tar.gz |
-| BREW   | **1.79.0** | https://github.com/dolthub/dolt |
+| BREW   | **1.79.1** | https://github.com/dolthub/dolt |
 
 *Outdated*
 
@@ -3139,7 +3139,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.4 ⚠️ | https://github.com/helm/helm/archive/refs/tags/v3.15.4.tar.gz |
-| BREW   | **4.0.2** | https://helm.sh/ |
+| BREW   | **4.0.4** | https://helm.sh/ |
 
 *Outdated*
 
@@ -3510,7 +3510,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.63.0 ⚠️ | https://github.com/jfrog/jfrog-cli/archive/refs/tags/v2.63.0.tar.gz |
-| BREW   | **2.86.0** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
+| BREW   | **2.87.0** | https://www.jfrog.com/confluence/display/CLI/JFrog+CLI |
 
 *Outdated*
 
@@ -3582,8 +3582,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.51.0 ✅ | https://github.com/gsamokovarov/jump/archive/v0.51.0.tar.gz |
-| BREW   | 0.51.0 | https://github.com/gsamokovarov/jump |
+| PPKG   | 0.51.0 ⚠️ | https://github.com/gsamokovarov/jump/archive/v0.51.0.tar.gz |
+| BREW   | **0.67.0** | https://github.com/gsamokovarov/jump |
+
+*Outdated*
 
 ## k9s
 
@@ -4758,7 +4760,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.12 ⚠️ | null |
+| PPKG   | 2025.12.13 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5934,7 +5936,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.619 ⚠️ | https://github.com/Roblox/luau/archive/refs/tags/0.619.tar.gz |
-| BREW   | **0.702** | https://luau.org |
+| BREW   | **0.703** | https://luau.org |
 
 *Outdated*
 
@@ -6843,7 +6845,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.12 ⚠️ | null |
+| PPKG   | 2025.12.13 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7021,7 +7023,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.12 ⚠️ | null |
+| PPKG   | 2025.12.13 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7183,7 +7185,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.12 ⚠️ | null |
+| PPKG   | 2025.12.13 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7683,7 +7685,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.22.3 ⚠️ | https://download.samba.org/pub/samba/stable/samba-4.22.3.tar.gz |
-| BREW   | **4.23.3** | https://www.samba.org/ |
+| BREW   | **4.23.4** | https://www.samba.org/ |
 
 *Outdated*
 
@@ -7852,7 +7854,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.1 ⚠️ | https://github.com/LucasPickering/slumber/archive/refs/tags/v3.0.1.tar.gz |
-| BREW   | **4.2.1** | https://slumber.lucaspickering.me/ |
+| BREW   | **4.3.0** | https://slumber.lucaspickering.me/ |
 
 *Outdated*
 
@@ -8143,7 +8145,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 256.7 ⚠️ | https://github.com/systemd/systemd/archive/refs/tags/v256.7.tar.gz |
-| BREW   | **258.2** | https://systemd.io |
+| BREW   | **258.3** | https://systemd.io |
 
 *Outdated*
 
@@ -8278,7 +8280,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.94.0** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.95.1** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8491,7 +8493,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.13.1 ⚠️ | https://github.com/typst/typst/archive/refs/tags/v0.13.1.tar.gz |
-| BREW   | **0.14.1** | https://typst.app/ |
+| BREW   | **0.14.2** | https://typst.app/ |
 
 *Outdated*
 

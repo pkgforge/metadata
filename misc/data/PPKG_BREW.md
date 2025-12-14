@@ -4402,7 +4402,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.48 ⚠️ | https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.48.tar.bz2 |
-| BREW   | **1.57** | https://www.gnupg.org/related_software/libgpg-error/ |
+| BREW   | **1.58** | https://www.gnupg.org/related_software/libgpg-error/ |
 
 *Outdated*
 
@@ -9260,7 +9260,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.47.1 ⚠️ | https://github.com/mikefarah/yq/archive/refs/tags/v4.47.1.tar.gz |
-| BREW   | **4.49.2** | https://github.com/mikefarah/yq |
+| BREW   | **4.50.1** | https://github.com/mikefarah/yq |
 
 *Outdated*
 

@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.13 ⚠️ | null |
+| PPKG   | 2025.12.14 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2920,7 +2920,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.5 ⚠️ | https://github.com/gptscript-ai/gptscript/archive/refs/tags/v0.9.5.tar.gz |
-| BREW   | **0.9.7** | https://docs.gptscript.ai/ |
+| BREW   | **0.9.8** | https://docs.gptscript.ai/ |
 
 *Outdated*
 
@@ -3638,7 +3638,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.16.0 ⚠️ | https://github.com/ko-build/ko/archive/refs/tags/v0.16.0.tar.gz |
-| BREW   | **0.18.0** | https://ko.build |
+| BREW   | **0.18.1** | https://ko.build |
 
 *Outdated*
 
@@ -4760,7 +4760,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.13 ⚠️ | null |
+| PPKG   | 2025.12.14 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6845,7 +6845,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.13 ⚠️ | null |
+| PPKG   | 2025.12.14 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7023,7 +7023,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.13 ⚠️ | null |
+| PPKG   | 2025.12.14 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7146,7 +7146,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 26.1 ⚠️ | null |
-| BREW   | **33.1** | https://protobuf.dev/ |
+| BREW   | **33.2** | https://protobuf.dev/ |
 
 *Outdated*
 
@@ -7185,7 +7185,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.13 ⚠️ | null |
+| PPKG   | 2025.12.14 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8046,7 +8046,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.2.25 ⚠️ | https://github.com/abhimanyu003/sttr/archive/refs/tags/v0.2.25.tar.gz |
-| BREW   | **0.2.28** | https://github.com/abhimanyu003/sttr |
+| BREW   | **0.2.29** | https://github.com/abhimanyu003/sttr |
 
 *Outdated*
 
@@ -8446,7 +8446,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.8 ⚠️ | https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.8.tar.gz |
-| BREW   | **0.26.2** | https://tree-sitter.github.io/ |
+| BREW   | **0.26.3** | https://tree-sitter.github.io/ |
 
 *Outdated*
 
@@ -8601,7 +8601,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.0.30 ⚠️ | https://github.com/uutils/coreutils/archive/refs/tags/0.0.30.tar.gz |
-| BREW   | **0.4.0** | https://uutils.github.io/coreutils/ |
+| BREW   | **0.5.0** | https://uutils.github.io/coreutils/ |
 
 *Outdated*
 

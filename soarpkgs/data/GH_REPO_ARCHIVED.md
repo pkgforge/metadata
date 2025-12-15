@@ -17,4 +17,4 @@
 | [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1979 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-12-13T00:43:08Z |
 | [xplshn](https://github.com/xplshn) | [a-utils](https://github.com/xplshn/a-utils) | 8 | Andes-utilities | 2025-06-30T01:30:28Z |
 | [yshui](https://github.com/yshui) | [job-security](https://github.com/yshui/job-security) | 64 | job control from anywhere! | 2025-07-21T01:04:29Z |
-| [ziglang](https://github.com/ziglang) | [qemu-static](https://github.com/ziglang/qemu-static) | 48 | build qemu-static binaries using Alpine Linux docker | 2025-12-01T08:40:10Z |
+| [ziglang](https://github.com/ziglang) | [qemu-static](https://github.com/ziglang/qemu-static) | 49 | build qemu-static binaries using Alpine Linux docker | 2025-12-15T08:09:28Z |

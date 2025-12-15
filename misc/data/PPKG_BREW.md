@@ -3361,7 +3361,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 7.1.1.47 ⚠️ | https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz |
-| BREW   | **7.1.2-10** | https://imagemagick.org/index.php |
+| BREW   | **7.1.2-11** | https://imagemagick.org/index.php |
 
 *Outdated*
 
@@ -4072,7 +4072,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.7.3 ⚠️ | https://github.com/hyperrealm/libconfig/releases/download/v1.7.3/libconfig-1.7.3.tar.gz |
-| BREW   | **1.8.1** | https://hyperrealm.github.io/libconfig/ |
+| BREW   | **1.8.2** | https://hyperrealm.github.io/libconfig/ |
 
 *Outdated*
 
@@ -6826,7 +6826,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | **1.32.0** | https://oxc.rs/ |
+| BREW   | **1.33.0** | https://oxc.rs/ |
 
 *Outdated*
 
@@ -7654,7 +7654,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-12-08** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-12-15** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 
@@ -8771,7 +8771,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.5.0 ⚠️ | https://github.com/atanunq/viu/archive/refs/tags/v1.5.0.tar.gz |
-| BREW   | **1.6.0** | https://github.com/atanunq/viu |
+| BREW   | **1.6.1** | https://github.com/atanunq/viu |
 
 *Outdated*
 

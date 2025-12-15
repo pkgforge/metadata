@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.14 ⚠️ | null |
+| PPKG   | 2025.12.15 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -654,7 +654,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.84.0 ⚠️ | https://github.com/boostorg/boost/releases/download/boost-1.84.0/boost-1.84.0.tar.xz |
-| BREW   | **1.89.0** | https://www.boost.org/ |
+| BREW   | **1.90.0** | https://www.boost.org/ |
 
 *Outdated*
 
@@ -857,7 +857,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.16 ⚠️ | https://github.com/lu-zero/cargo-c/archive/refs/tags/v0.10.16.tar.gz |
-| BREW   | **0.10.18** | https://github.com/lu-zero/cargo-c |
+| BREW   | **0.10.19** | https://github.com/lu-zero/cargo-c |
 
 *Outdated*
 
@@ -921,7 +921,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.99 ⚠️ | https://github.com/nextest-rs/nextest/archive/refs/tags/cargo-nextest-0.9.99.tar.gz |
-| BREW   | **0.9.114** | https://nexte.st |
+| BREW   | **0.9.115** | https://nexte.st |
 
 *Outdated*
 
@@ -2561,7 +2561,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.9.1 ⚠️ | https://github.com/orhun/git-cliff/archive/refs/tags/v2.9.1.tar.gz |
-| BREW   | **2.10.1** | https://git-cliff.org/ |
+| BREW   | **2.11.0** | https://git-cliff.org/ |
 
 *Outdated*
 
@@ -2593,8 +2593,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.27.0 ✅ | https://github.com/extrawurst/gitui/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | 0.27.0 | https://github.com/gitui-org/gitui |
+| PPKG   | 0.27.0 ⚠️ | https://github.com/extrawurst/gitui/archive/refs/tags/v0.27.0.tar.gz |
+| BREW   | **0.28.0** | https://github.com/gitui-org/gitui |
+
+*Outdated*
 
 ## gitwatch
 
@@ -4760,7 +4762,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.14 ⚠️ | null |
+| PPKG   | 2025.12.15 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6845,7 +6847,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.14 ⚠️ | null |
+| PPKG   | 2025.12.15 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7023,7 +7025,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.14 ⚠️ | null |
+| PPKG   | 2025.12.15 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7185,7 +7187,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.14 ⚠️ | null |
+| PPKG   | 2025.12.15 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

@@ -151,7 +151,7 @@
  200K   │ │ │ ├── x86_64-Linux.json.cba
  196K   │ │ │ ├── x86_64-Linux.sdb.zstd
  188K   │ │ │ ├── x86_64-Linux.sdb.xz
- 156K   │ │ │ ├── x86_64-Linux.json.zstd
+ 152K   │ │ │ ├── x86_64-Linux.json.zstd
  148K   │ │ │ ├── x86_64-Linux.json.xz
   32K   │ │ │ ├── aarch64-Linux.sdb.zstd
   28K   │ │ │ ├── aarch64-Linux.sdb.xz
@@ -220,7 +220,7 @@
  1.2M   │ │ ├── PPKG_RAW.json
  544K   │ │ ├── STALIX.json
  484K   │ │ ├── FLATPAK_APPS_INFO.json
- 448K   │ │ ├── FLATPAK_APPS_INFO.txt
+ 452K   │ │ ├── FLATPAK_APPS_INFO.txt
  340K   │ │ ├── PPKG.json
  280K   │ │ ├── PPKG_BREW.md
  228K   │ │ ├── FLATPAK_POPULAR.json

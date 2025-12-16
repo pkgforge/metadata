@@ -1804,7 +1804,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookexperimental/edencommon/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.10.00** | https://github.com/facebookexperimental/edencommon |
+| BREW   | **2025.12.15.00** | https://github.com/facebookexperimental/edencommon |
 
 *Outdated*
 
@@ -1992,7 +1992,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fb303/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.10.00** | https://github.com/facebook/fb303 |
+| BREW   | **2025.12.15.00** | https://github.com/facebook/fb303 |
 
 *Outdated*
 
@@ -2003,7 +2003,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fbthrift/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.10.00** | https://github.com/facebook/fbthrift |
+| BREW   | **2025.12.15.00** | https://github.com/facebook/fbthrift |
 
 *Outdated*
 
@@ -2114,7 +2114,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/fizz/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.10.00** | https://github.com/facebookincubator/fizz |
+| BREW   | **2025.12.15.00** | https://github.com/facebookincubator/fizz |
 
 *Outdated*
 
@@ -4154,7 +4154,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.1.1 ⚠️ | https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2 |
-| BREW   | **0.2.4** | https://gitlab.freedesktop.org/libdecor/libdecor |
+| BREW   | **0.2.5** | https://gitlab.freedesktop.org/libdecor/libdecor |
 
 *Outdated*
 
@@ -6298,7 +6298,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/mvfst/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.10.00** | https://github.com/facebook/mvfst |
+| BREW   | **2025.12.15.00** | https://github.com/facebook/mvfst |
 
 *Outdated*
 
@@ -6570,7 +6570,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.2.8 ⚠️ | https://github.com/projectdiscovery/nuclei/archive/refs/tags/v3.2.8.tar.gz |
-| BREW   | **3.6.0** | https://docs.projectdiscovery.io/tools/nuclei/overview |
+| BREW   | **3.6.1** | https://docs.projectdiscovery.io/tools/nuclei/overview |
 
 *Outdated*
 
@@ -6643,7 +6643,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.5.0 ⚠️ | https://github.com/hatoo/oha/archive/refs/tags/v1.5.0.tar.gz |
-| BREW   | **1.12.0** | https://github.com/hatoo/oha/ |
+| BREW   | **1.12.1** | https://github.com/hatoo/oha/ |
 
 *Outdated*
 
@@ -6665,7 +6665,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.13.3** | https://ollama.com/ |
+| BREW   | **0.13.4** | https://ollama.com/ |
 
 *Outdated*
 
@@ -8862,7 +8862,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/wangle/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.10.00** | https://github.com/facebook/wangle |
+| BREW   | **2025.12.15.00** | https://github.com/facebook/wangle |
 
 *Outdated*
 
@@ -8926,7 +8926,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/watchman/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.11.10.00** | https://github.com/facebook/watchman |
+| BREW   | **2025.12.15.00** | https://github.com/facebook/watchman |
 
 *Outdated*
 

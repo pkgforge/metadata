@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.15 ⚠️ | null |
+| PPKG   | 2025.12.16 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1472,7 +1472,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.0 ⚠️ | https://github.com/TomWright/dasel/archive/refs/tags/v2.7.0.tar.gz |
-| BREW   | **2.8.1** | https://github.com/TomWright/dasel |
+| BREW   | **3.0.0** | https://github.com/TomWright/dasel |
 
 *Outdated*
 
@@ -1720,7 +1720,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.0 ⚠️ | https://github.com/robertpsoane/ducker/archive/refs/tags/v0.3.0.tar.gz |
-| BREW   | **0.5.5** | https://github.com/robertpsoane/ducker |
+| BREW   | **0.5.6** | https://github.com/robertpsoane/ducker |
 
 *Outdated*
 
@@ -3786,7 +3786,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.18 ⚠️ | https://github.com/wofr06/lesspipe/archive/refs/tags/v2.18.tar.gz |
-| BREW   | **2.21** | https://www-zeuthen.desy.de/~friebel/unix/lesspipe.html |
+| BREW   | **2.22** | https://www-zeuthen.desy.de/~friebel/unix/lesspipe.html |
 
 *Outdated*
 
@@ -4762,7 +4762,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.15 ⚠️ | null |
+| PPKG   | 2025.12.16 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6847,7 +6847,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.15 ⚠️ | null |
+| PPKG   | 2025.12.16 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7025,7 +7025,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.15 ⚠️ | null |
+| PPKG   | 2025.12.16 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7187,7 +7187,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.15 ⚠️ | null |
+| PPKG   | 2025.12.16 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7219,7 +7219,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.9.34 ⚠️ | https://www.ivarch.com/programs/sources/pv-1.9.34.tar.gz |
-| BREW   | **1.10.2** | https://www.ivarch.com/programs/pv.shtml |
+| BREW   | **1.10.3** | https://www.ivarch.com/programs/pv.shtml |
 
 *Outdated*
 
@@ -7581,7 +7581,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/apollographql/rover/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.37.0** | https://www.apollographql.com/docs/rover/ |
+| BREW   | **0.37.1** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
 
@@ -8282,7 +8282,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.95.1** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.96.0** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -8592,7 +8592,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.40.4 ⚠️ | https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.4.tar.xz |
-| BREW   | **2.41.2** | https://github.com/util-linux/util-linux |
+| BREW   | **2.41.3** | https://github.com/util-linux/util-linux |
 
 *Outdated*
 
@@ -8957,7 +8957,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.34 ⚠️ | https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.34/downloads/wayland-protocols-1.34.tar.xz |
-| BREW   | **1.46** | https://wayland.freedesktop.org |
+| BREW   | **1.47** | https://wayland.freedesktop.org |
 
 *Outdated*
 

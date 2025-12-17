@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.16 ⚠️ | null |
+| PPKG   | 2025.12.17 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1472,7 +1472,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.0 ⚠️ | https://github.com/TomWright/dasel/archive/refs/tags/v2.7.0.tar.gz |
-| BREW   | **3.0.0** | https://github.com/TomWright/dasel |
+| BREW   | **3.1.1** | https://github.com/TomWright/dasel |
 
 *Outdated*
 
@@ -1875,7 +1875,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.20.2 ⚠️ | https://github.com/evanw/esbuild/archive/refs/tags/v0.20.2.tar.gz |
-| BREW   | **0.27.1** | https://esbuild.github.io/ |
+| BREW   | **0.27.2** | https://esbuild.github.io/ |
 
 *Outdated*
 
@@ -2962,7 +2962,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 13.0.1 ⚠️ | https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.0.1/graphviz-13.0.1.tar.xz |
-| BREW   | **14.1.0** | https://graphviz.org/ |
+| BREW   | **14.1.1** | https://graphviz.org/ |
 
 *Outdated*
 
@@ -3246,7 +3246,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.19.1 ⚠️ | https://github.com/samtools/htslib/releases/download/1.19.1/htslib-1.19.1.tar.bz2 |
-| BREW   | **1.22.1** | https://www.htslib.org/ |
+| BREW   | **1.23** | https://www.htslib.org/ |
 
 *Outdated*
 
@@ -4061,7 +4061,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20.1.8 ⚠️ | https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/libclc-20.1.8.src.tar.xz |
-| BREW   | **21.1.7** | https://libclc.llvm.org/ |
+| BREW   | **21.1.8** | https://libclc.llvm.org/ |
 
 *Outdated*
 
@@ -4762,7 +4762,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.16 ⚠️ | null |
+| PPKG   | 2025.12.17 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6687,7 +6687,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.65.0 ⚠️ | https://github.com/open-policy-agent/opa/archive/refs/tags/v0.65.0.tar.gz |
-| BREW   | **1.11.0** | https://www.openpolicyagent.org |
+| BREW   | **1.11.1** | https://www.openpolicyagent.org |
 
 *Outdated*
 
@@ -6847,7 +6847,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.16 ⚠️ | null |
+| PPKG   | 2025.12.17 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7025,7 +7025,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.16 ⚠️ | null |
+| PPKG   | 2025.12.17 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7187,7 +7187,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.16 ⚠️ | null |
+| PPKG   | 2025.12.17 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8614,7 +8614,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.12 ⚠️ | https://github.com/astral-sh/uv/archive/refs/tags/0.7.12.tar.gz |
-| BREW   | **0.9.17** | https://docs.astral.sh/uv/ |
+| BREW   | **0.9.18** | https://docs.astral.sh/uv/ |
 
 *Outdated*
 

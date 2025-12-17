@@ -150,9 +150,9 @@
 | appstreamcli#github.com.probonopd.static-tools:bincache (aarch64-Linux) | v0.12.9 | v0.12.9 | ✅ Updated |
 | appstreamcli#github.com.probonopd.static-tools:bincache (x86_64-Linux) | v0.12.9 | v0.12.9 | ✅ Updated |
 | apptainer#wrappe.github.com.apptainer.apptainer.glibc:pkgcache (aarch64-Linux) | HEAD-ee95343-250815T143234 | HEAD-7068a81-251104T142214 | ⚠️ Outdated |
-| apptainer#wrappe.github.com.apptainer.apptainer.glibc:pkgcache (x86_64-Linux) | HEAD-81311fc-251212T145429 | HEAD-7068a81-251104T142214 | ⚠️ Outdated |
+| apptainer#wrappe.github.com.apptainer.apptainer.glibc:pkgcache (x86_64-Linux) | HEAD-e6e06bc-251216T101646 | HEAD-7068a81-251104T142214 | ⚠️ Outdated |
 | apptainer#wrappe.github.com.apptainer.apptainer.musl:pkgcache (aarch64-Linux) | HEAD-e6e06bc-251216T101646 | HEAD-7068a81-251104T142214 | ⚠️ Outdated |
-| apptainer#wrappe.github.com.apptainer.apptainer.musl:pkgcache (x86_64-Linux) | HEAD-81311fc-251212T145429 | HEAD-7068a81-251104T142214 | ⚠️ Outdated |
+| apptainer#wrappe.github.com.apptainer.apptainer.musl:pkgcache (x86_64-Linux) | HEAD-e6e06bc-251216T101646 | HEAD-7068a81-251104T142214 | ⚠️ Outdated |
 | aptly#github.com.aptly-dev.aptly:bincache (aarch64-Linux) | HEAD-b6d83a4-251019T203334 | HEAD-b6d83a4-251019T203334 | ✅ Updated |
 | aptly#github.com.aptly-dev.aptly:bincache (x86_64-Linux) | HEAD-b6d83a4-251019T203334 | HEAD-b6d83a4-251019T203334 | ✅ Updated |
 | apx#github.com.Vanilla-OS.apx.source:bincache (aarch64-Linux) | HEAD-a0fd891-250928T125417 | HEAD-a0fd891-250928T125417 | ✅ Updated |
@@ -251,7 +251,7 @@
 | awk#github.com.onetrueawk.awk:bincache (aarch64-Linux) | HEAD-d7f3764-250805T000004 | HEAD-d7f3764-250805T000004 | ✅ Updated |
 | awk#github.com.onetrueawk.awk:bincache (x86_64-Linux) | HEAD-d7f3764-250805T000004 | HEAD-d7f3764-250805T000004 | ✅ Updated |
 | aws#sharun.wrappe.pypi.awscli:pkgcache (aarch64-Linux) | 1.44.0 | 1.42.66 | ⚠️ Outdated |
-| aws#sharun.wrappe.pypi.awscli:pkgcache (x86_64-Linux) | 1.43.15 | 1.42.66 | ⚠️ Outdated |
+| aws#sharun.wrappe.pypi.awscli:pkgcache (x86_64-Linux) | 1.44.0 | 1.42.66 | ⚠️ Outdated |
 | aws-nuke#github.com.ekristen.aws-nuke:bincache (aarch64-Linux) | v3.61.0 | v3.61.0 | ✅ Updated |
 | aws-nuke#github.com.ekristen.aws-nuke:bincache (x86_64-Linux) | v3.61.0 | v3.61.0 | ✅ Updated |
 | aws-wire-lengths#github.com.oxidecomputer.aws-wire-lengths:bincache (aarch64-Linux) | HEAD-39b7c74-250228T143943 | HEAD-39b7c74-250228T143943 | ✅ Updated |
@@ -456,7 +456,7 @@
 | bottom#github.com.ClementTsang.bottom:bincache (x86_64-Linux) | 0.11.4 | 0.11.2 | ⚠️ Outdated |
 | boxxy#github.com.queer.boxxy:bincache (x86_64-Linux) | HEAD-46cc3c9-250629T073309 | HEAD-46cc3c9-250629T073309 | ✅ Updated |
 | brave#github.com.srevinsaju.Brave-AppImage.beta:pkgcache (x86_64-Linux) | v1.85.95 | v1.85.95 | ✅ Updated |
-| brave#github.com.srevinsaju.Brave-AppImage.nightly:pkgcache (x86_64-Linux) | v1.87.79 | v1.86.44 | ⚠️ Outdated |
+| brave#github.com.srevinsaju.Brave-AppImage.nightly:pkgcache (x86_64-Linux) | v1.87.86 | v1.86.44 | ⚠️ Outdated |
 | brave#github.com.srevinsaju.Brave-AppImage.stable:pkgcache (x86_64-Linux) | v1.84.130 | v1.84.131 | ⚠️ Outdated |
 | brave#nixpkgs.brave:pkgcache (aarch64-Linux) | 31.84.132 | 31.84.132 | ✅ Updated |
 | brave#nixpkgs.brave:pkgcache (x86_64-Linux) | 31.84.132 | 31.84.132 | ✅ Updated |
@@ -1228,7 +1228,7 @@
 | ddgr#sharun.wrappe.pypi.ddgr:pkgcache (x86_64-Linux) | 2.2 | 2.2 | ✅ Updated |
 | ddiff#nixpkgs.dateutils:bincache (aarch64-Linux) | 30.4.11 | 30.4.11 | ✅ Updated |
 | ddiff#nixpkgs.dateutils:bincache (x86_64-Linux) | 30.4.11 | 30.4.11 | ✅ Updated |
-| ddnet#runimage.cachyos.ddnet:pkgcache (x86_64-Linux) | curl:(22)TherequestedURLreturnederror:502 | 19.5 | ⚠️ Outdated |
+| ddnet#runimage.cachyos.ddnet:pkgcache (x86_64-Linux) | 19.6 | 19.5 | ⚠️ Outdated |
 | ddns-go#github.com.jeessy2.ddns-go:bincache (aarch64-Linux) | HEAD-b5e12bc-251030T200958 | HEAD-b5e12bc-251030T200958 | ✅ Updated |
 | ddns-go#github.com.jeessy2.ddns-go:bincache (x86_64-Linux) | HEAD-b5e12bc-251030T200958 | HEAD-b5e12bc-251030T200958 | ✅ Updated |
 | deallocvt#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -1357,7 +1357,7 @@
 | dirname#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | dirname#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | discord#github.com.srevinsaju.discord-AppImage.stable:pkgcache (x86_64-Linux) | 0.0.113 | 0.0.113 | ✅ Updated |
-| discord-canary#github.com.srevinsaju.discord-AppImage.canary:pkgcache (x86_64-Linux) | 0.0.826 | 0.0.799 | ⚠️ Outdated |
+| discord-canary#github.com.srevinsaju.discord-AppImage.canary:pkgcache (x86_64-Linux) | 0.0.828 | 0.0.799 | ⚠️ Outdated |
 | discord-ptb#github.com.srevinsaju.discord-AppImage.ptb:pkgcache (x86_64-Linux) | 0.0.164 | 0.0.164 | ✅ Updated |
 | dish#github.com.thevxn.dish.source:bincache (aarch64-Linux) | HEAD-8d7316a-251006T211508 | HEAD-8d7316a-251006T211508 | ✅ Updated |
 | dish#github.com.thevxn.dish.source:bincache (x86_64-Linux) | HEAD-8d7316a-251006T211508 | HEAD-8d7316a-251006T211508 | ✅ Updated |
@@ -2117,7 +2117,7 @@
 | firefox#github.com.srevinsaju.Firefox-Appimage.beta:pkgcache (x86_64-Linux) | 145.0.20251031090541 | 145.0.20251031090541 | ✅ Updated |
 | firefox#github.com.srevinsaju.Firefox-Appimage.dev:pkgcache (x86_64-Linux) | 145.0.20251031090541 | 145.0.20251031090541 | ✅ Updated |
 | firefox#github.com.srevinsaju.Firefox-Appimage.esr:pkgcache (x86_64-Linux) | 140.4.20251009121631 | 140.4.20251009121631 | ✅ Updated |
-| firefox#github.com.srevinsaju.Firefox-Appimage.nightly:pkgcache (x86_64-Linux) | 148.0.20251214093341 | 146.0.20251105082217 | ⚠️ Outdated |
+| firefox#github.com.srevinsaju.Firefox-Appimage.nightly:pkgcache (x86_64-Linux) | 148.0.20251215210721 | 146.0.20251105082217 | ⚠️ Outdated |
 | firefox#github.com.srevinsaju.Firefox-Appimage.stable:pkgcache (x86_64-Linux) | 144.0.20251027123126 | 144.0.20251027123126 | ✅ Updated |
 | fish#stalix.bin_fish.stable:bincache (x86_64-Linux) | 3.7.1 | 3.7.1 | ✅ Updated |
 | flac#nixpkgs.flac:bincache (aarch64-Linux) | 31.5.0 | 31.5.0 | ✅ Updated |
@@ -2446,7 +2446,7 @@
 | ghostty#github.com.pkgforge-dev.ghostty-appimage.stable:pkgcache (aarch64-Linux) | v1.2.3 | v1.2.3 | ✅ Updated |
 | ghostty#github.com.pkgforge-dev.ghostty-appimage.stable:pkgcache (x86_64-Linux) | v1.2.3 | v1.2.3 | ✅ Updated |
 | ghostty-nightly#github.com.pkgforge-dev.ghostty-appimage.nightly:pkgcache (aarch64-Linux) | 251216T005258 | 251105T005028 | ⚠️ Outdated |
-| ghostty-nightly#github.com.pkgforge-dev.ghostty-appimage.nightly:pkgcache (x86_64-Linux) | 251210T005304 | 251105T005028 | ⚠️ Outdated |
+| ghostty-nightly#github.com.pkgforge-dev.ghostty-appimage.nightly:pkgcache (x86_64-Linux) | 251216T005258 | 251105T005028 | ⚠️ Outdated |
 | ghostunnel#github.com.ghostunnel.ghostunnel.source:bincache (aarch64-Linux) | HEAD-6cf395c-250715T085653 | HEAD-6cf395c-250715T085653 | ✅ Updated |
 | ghostunnel#github.com.ghostunnel.ghostunnel.source:bincache (x86_64-Linux) | HEAD-6cf395c-250715T085653 | HEAD-6cf395c-250715T085653 | ✅ Updated |
 | gi-compile-repository#ppkg.glib-tools:bincache (aarch64-Linux) | 2.84.3 | 2.84.3 | ✅ Updated |
@@ -3266,7 +3266,7 @@
 | kcptun-client#github.com.xtaci.kcptun.source:bincache (x86_64-Linux) | HEAD-9f26581-251215T165741 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
 | kcptun-server#github.com.xtaci.kcptun.source:bincache (aarch64-Linux) | HEAD-9f26581-251215T165741 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
 | kcptun-server#github.com.xtaci.kcptun.source:bincache (x86_64-Linux) | HEAD-9f26581-251215T165741 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
-| kdenlive#gitlab.com.kdenlive.kdenlive.nightly:pkgcache (x86_64-Linux) | 2025-12-14 | 2025-11-05 | ⚠️ Outdated |
+| kdenlive#gitlab.com.kdenlive.kdenlive.nightly:pkgcache (x86_64-Linux) | 2025-12-16 | 2025-11-05 | ⚠️ Outdated |
 | kdenlive#runimage.alpine.kdenlive:pkgcache (aarch64-Linux) | 25.08.1 | 25.08.1 | ✅ Updated |
 | kdenlive#runimage.alpine.kdenlive:pkgcache (x86_64-Linux) | 25.08.1 | 25.08.1 | ✅ Updated |
 | kdeutils#github.com.ivan-hc.kdeutils-appimage:pkgcache (x86_64-Linux) | 25.08 | 25.08 | ✅ Updated |
@@ -3323,7 +3323,7 @@
 | kondo#github.com.tbillington.kondo:bincache (x86_64-Linux) | HEAD-45f3295-250722T122107 | HEAD-45f3295-250722T122107 | ✅ Updated |
 | kopia#github.com.kopia.kopia:bincache (aarch64-Linux) | v0.21.1 | v0.21.1 | ✅ Updated |
 | kopia#github.com.kopia.kopia:bincache (x86_64-Linux) | v0.21.1 | v0.21.1 | ✅ Updated |
-| krita#gitlab.com.krita.krita.next:pkgcache (x86_64-Linux) | 2025-12-13 | 2025-11-04 | ⚠️ Outdated |
+| krita#gitlab.com.krita.krita.next:pkgcache (x86_64-Linux) | 2025-12-15 | 2025-11-04 | ⚠️ Outdated |
 | krita#gitlab.com.krita.krita.stable:pkgcache (x86_64-Linux) | 5.2.13 | 5.2.13 | ✅ Updated |
 | krita#runimage.alpine.krita:pkgcache (aarch64-Linux) | 5.2.13 | 5.2.13 | ✅ Updated |
 | krita#runimage.alpine.krita:pkgcache (x86_64-Linux) | 5.2.13 | 5.2.13 | ✅ Updated |
@@ -6617,7 +6617,7 @@
 | su#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | su#git.busybox.net.busybox.standalone.glibc:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | su#sharun.wrappe.sudo-rs.source:pkgcache (aarch64-Linux) | HEAD-d846641-251216T165443 | HEAD-87e072d-251104T165204 | ⚠️ Outdated |
-| su#sharun.wrappe.sudo-rs.source:pkgcache (x86_64-Linux) | HEAD-11af1a3-251210T174403 | HEAD-87e072d-251104T165204 | ⚠️ Outdated |
+| su#sharun.wrappe.sudo-rs.source:pkgcache (x86_64-Linux) | HEAD-d846641-251216T165443 | HEAD-87e072d-251104T165204 | ⚠️ Outdated |
 | subdog#github.com.rix4uni.subdog.source:bincache (aarch64-Linux) | HEAD-4966776-251103T220704 | HEAD-4966776-251103T220704 | ✅ Updated |
 | subdog#github.com.rix4uni.subdog.source:bincache (x86_64-Linux) | HEAD-4966776-251103T220704 | HEAD-4966776-251103T220704 | ✅ Updated |
 | subfinder#github.com.projectdiscovery.subfinder:bincache (aarch64-Linux) | HEAD-a3674ed-250625T095216 | HEAD-6c1e538-251104T123953 | ⚠️ Outdated |
@@ -6636,7 +6636,7 @@
 | sudo#nixpkgs.sudo:bincache (aarch64-Linux) | 1.9.17p2 | 31.9.17p2 | ⚠️ Outdated |
 | sudo#nixpkgs.sudo:bincache (x86_64-Linux) | 1.9.17p2 | 31.9.17p2 | ⚠️ Outdated |
 | sudo#sharun.wrappe.sudo-rs.source:pkgcache (aarch64-Linux) | HEAD-d846641-251216T165443 | HEAD-87e072d-251104T165204 | ⚠️ Outdated |
-| sudo#sharun.wrappe.sudo-rs.source:pkgcache (x86_64-Linux) | HEAD-11af1a3-251210T174403 | HEAD-87e072d-251104T165204 | ⚠️ Outdated |
+| sudo#sharun.wrappe.sudo-rs.source:pkgcache (x86_64-Linux) | HEAD-d846641-251216T165443 | HEAD-87e072d-251104T165204 | ⚠️ Outdated |
 | sudo_logsrvd#nixpkgs.sudo:bincache (aarch64-Linux) | 1.9.17p2 | 31.9.17p2 | ⚠️ Outdated |
 | sudo_logsrvd#nixpkgs.sudo:bincache (x86_64-Linux) | 1.9.17p2 | 31.9.17p2 | ⚠️ Outdated |
 | sudo_sendlog#nixpkgs.sudo:bincache (aarch64-Linux) | 1.9.17p2 | 31.9.17p2 | ⚠️ Outdated |
@@ -7625,7 +7625,7 @@
 | visudo#nixpkgs.sudo:bincache (aarch64-Linux) | 1.9.17p2 | 31.9.17p2 | ⚠️ Outdated |
 | visudo#nixpkgs.sudo:bincache (x86_64-Linux) | 1.9.17p2 | 31.9.17p2 | ⚠️ Outdated |
 | visudo#sharun.wrappe.sudo-rs.source:pkgcache (aarch64-Linux) | HEAD-d846641-251216T165443 | HEAD-87e072d-251104T165204 | ⚠️ Outdated |
-| visudo#sharun.wrappe.sudo-rs.source:pkgcache (x86_64-Linux) | HEAD-11af1a3-251210T174403 | HEAD-87e072d-251104T165204 | ⚠️ Outdated |
+| visudo#sharun.wrappe.sudo-rs.source:pkgcache (x86_64-Linux) | HEAD-d846641-251216T165443 | HEAD-87e072d-251104T165204 | ⚠️ Outdated |
 | vlock#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | vlock#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | vlock#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -7929,7 +7929,7 @@
 | wpjson-parser#github.com.pkgforge-security.wpjson-parser:bincache (x86_64-Linux) | HEAD-4f582cd-250306T102215 | HEAD-4f582cd-250306T102215 | ✅ Updated |
 | wps-office#github.com.ivan-hc.WPS-Office-appimage.stable:pkgcache (x86_64-Linux) | 11.1.0.11723 | 11.1.0.11723 | ✅ Updated |
 | wrangler#sharun.wrappe.npm.wrangler:pkgcache (aarch64-Linux) | 4.55.0 | 4.45.4 | ⚠️ Outdated |
-| wrangler#sharun.wrappe.npm.wrangler:pkgcache (x86_64-Linux) | 4.54.0 | 4.45.4 | ⚠️ Outdated |
+| wrangler#sharun.wrappe.npm.wrangler:pkgcache (x86_64-Linux) | 4.55.0 | 4.45.4 | ⚠️ Outdated |
 | wrappe#github.com.Systemcluster.wrappe:bincache (aarch64-Linux) | HEAD-55c98a6-241117T143958 | HEAD-55c98a6-241117T143958 | ✅ Updated |
 | wrappe#github.com.Systemcluster.wrappe:bincache (x86_64-Linux) | HEAD-55c98a6-241117T143958 | HEAD-55c98a6-241117T143958 | ✅ Updated |
 | write#github.com.chimera-linux.chimerautils:bincache (aarch64-Linux) | HEAD-16cdbcf-250706T182402 | HEAD-16cdbcf-250706T182402 | ✅ Updated |
@@ -7970,7 +7970,7 @@
 | xargs#github.com.uutils.findutils:bincache (x86_64-Linux) | HEAD-0f7bf4d-251031T095353 | HEAD-0f7bf4d-251031T095353 | ✅ Updated |
 | xargs#nixpkgs.findutils:bincache (aarch64-Linux) | 34.10.0 | 34.10.0 | ✅ Updated |
 | xargs#nixpkgs.findutils:bincache (x86_64-Linux) | 34.10.0 | 34.10.0 | ✅ Updated |
-| xash3d-fwgs#github.com.FWGS.xash3d-fwgs:pkgcache (x86_64-Linux) | 251214T020956 | 251105T042436 | ⚠️ Outdated |
+| xash3d-fwgs#github.com.FWGS.xash3d-fwgs:pkgcache (x86_64-Linux) | 251215T065205 | 251105T042436 | ⚠️ Outdated |
 | xashds#wrappe.xashds:pkgcache (aarch64-Linux) | 251209T143259 | 251105T042436 | ⚠️ Outdated |
 | xashds#wrappe.xashds:pkgcache (x86_64-Linux) | 251209T143259 | 251105T042436 | ⚠️ Outdated |
 | xcc#github.com.tyfkda.xcc.source:bincache (aarch64-Linux) | HEAD-d45b316-251201T185350 | HEAD-2c203e9-251105T191026 | ⚠️ Outdated |

@@ -1688,8 +1688,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 1.22.21 ✅ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.21.tar.xz |
-| BREW   | 1.22.21 | https://wiki.debian.org/Teams/Dpkg |
+| PPKG   | 1.22.21 ⚠️ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.21.tar.xz |
+| BREW   | **1.23.0** | https://wiki.debian.org/Teams/Dpkg |
+
+*Outdated*
 
 ## dra
 
@@ -2216,7 +2218,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.12.0 ⚠️ | https://github.com/FreeRDP/FreeRDP/releases/download/3.12.0/freerdp-3.12.0.tar.gz |
-| BREW   | **3.19.1** | https://www.freerdp.com/ |
+| BREW   | **3.20.0** | https://www.freerdp.com/ |
 
 *Outdated*
 
@@ -7004,7 +7006,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.61.0** | https://pixi.sh |
+| BREW   | **0.62.0** | https://pixi.sh |
 
 *Outdated*
 
@@ -7632,7 +7634,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.4.4 ⚠️ | https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.4.tar.gz |
-| BREW   | **3.4.7** | https://www.ruby-lang.org/ |
+| BREW   | **3.4.8** | https://www.ruby-lang.org/ |
 
 *Outdated*
 
@@ -8189,7 +8191,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.85.5 ⚠️ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.85.5.tar.gz |
-| BREW   | **1.92.0** | https://github.com/k1LoW/tbls |
+| BREW   | **1.92.1** | https://github.com/k1LoW/tbls |
 
 *Outdated*
 
@@ -9133,7 +9135,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.21.0 ⚠️ | https://github.com/ducaale/xh/archive/refs/tags/v0.21.0.tar.gz |
-| BREW   | **0.25.0** | https://github.com/ducaale/xh |
+| BREW   | **0.25.3** | https://github.com/ducaale/xh |
 
 *Outdated*
 

@@ -1472,7 +1472,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.0 ⚠️ | https://github.com/TomWright/dasel/archive/refs/tags/v2.7.0.tar.gz |
-| BREW   | **3.1.2** | https://github.com/TomWright/dasel |
+| BREW   | **3.1.3** | https://github.com/TomWright/dasel |
 
 *Outdated*
 
@@ -1689,7 +1689,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.22.21 ⚠️ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.21.tar.xz |
-| BREW   | **1.23.1** | https://wiki.debian.org/Teams/Dpkg |
+| BREW   | **1.23.2** | https://wiki.debian.org/Teams/Dpkg |
 
 *Outdated*
 
@@ -1983,7 +1983,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.50.2 ⚠️ | https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.50.2.tar.gz |
-| BREW   | **2.56.0** | https://github.com/fastfetch-cli/fastfetch |
+| BREW   | **2.56.1** | https://github.com/fastfetch-cli/fastfetch |
 
 *Outdated*
 
@@ -4876,7 +4876,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 8.13.37 ⚠️ | https://github.com/google/libphonenumber/archive/refs/tags/v8.13.37.tar.gz |
-| BREW   | **9.0.20** | https://github.com/google/libphonenumber |
+| BREW   | **9.0.21** | https://github.com/google/libphonenumber |
 
 *Outdated*
 
@@ -6126,7 +6126,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 25.1.4 ⚠️ | https://mesa.freedesktop.org/archive/mesa-25.1.4.tar.xz |
-| BREW   | **25.3.1** | https://www.mesa3d.org/ |
+| BREW   | **25.3.2** | https://www.mesa3d.org/ |
 
 *Outdated*
 
@@ -6689,7 +6689,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.65.0 ⚠️ | https://github.com/open-policy-agent/opa/archive/refs/tags/v0.65.0.tar.gz |
-| BREW   | **1.11.1** | https://www.openpolicyagent.org |
+| BREW   | **1.12.0** | https://www.openpolicyagent.org |
 
 *Outdated*
 
@@ -7440,7 +7440,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.27.0 ⚠️ | https://github.com/rbspy/rbspy/archive/refs/tags/v0.27.0.tar.gz |
-| BREW   | **0.39.0** | https://rbspy.github.io/ |
+| BREW   | **0.40.0** | https://rbspy.github.io/ |
 
 *Outdated*
 

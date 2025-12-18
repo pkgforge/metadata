@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.17 ⚠️ | null |
+| PPKG   | 2025.12.18 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -539,7 +539,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.18.25 ⚠️ | https://downloads.isc.org/isc/bind9/9.18.25/bind-9.18.25.tar.xz |
-| BREW   | **9.20.16** | https://www.isc.org/bind/ |
+| BREW   | **9.20.17** | https://www.isc.org/bind/ |
 
 *Outdated*
 
@@ -1198,7 +1198,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.92.2 ⚠️ | https://github.com/microsoft/vscode/archive/refs/tags/1.92.2.tar.gz |
-| BREW   | **1.107.0** | https://github.com/microsoft/vscode |
+| BREW   | **1.107.1** | https://github.com/microsoft/vscode |
 
 *Outdated*
 
@@ -1472,7 +1472,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.0 ⚠️ | https://github.com/TomWright/dasel/archive/refs/tags/v2.7.0.tar.gz |
-| BREW   | **3.1.1** | https://github.com/TomWright/dasel |
+| BREW   | **3.1.2** | https://github.com/TomWright/dasel |
 
 *Outdated*
 
@@ -1689,7 +1689,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.22.21 ⚠️ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.21.tar.xz |
-| BREW   | **1.23.0** | https://wiki.debian.org/Teams/Dpkg |
+| BREW   | **1.23.1** | https://wiki.debian.org/Teams/Dpkg |
 
 *Outdated*
 
@@ -2833,7 +2833,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.16.1 ⚠️ | https://github.com/golang/tools/archive/refs/tags/gopls/v0.16.1.tar.gz |
-| BREW   | **0.20.0** | https://github.com/golang/tools/tree/master/gopls |
+| BREW   | **0.21.0** | https://github.com/golang/tools/tree/master/gopls |
 
 *Outdated*
 
@@ -4764,7 +4764,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.17 ⚠️ | null |
+| PPKG   | 2025.12.18 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6849,7 +6849,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.17 ⚠️ | null |
+| PPKG   | 2025.12.18 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7027,7 +7027,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.17 ⚠️ | null |
+| PPKG   | 2025.12.18 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7189,7 +7189,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.17 ⚠️ | null |
+| PPKG   | 2025.12.18 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8149,7 +8149,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 256.7 ⚠️ | https://github.com/systemd/systemd/archive/refs/tags/v256.7.tar.gz |
-| BREW   | **258.3** | https://systemd.io |
+| BREW   | **259** | https://systemd.io |
 
 *Outdated*
 
@@ -8284,7 +8284,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.55.18 ⚠️ | https://github.com/gruntwork-io/terragrunt/archive/refs/tags/v0.55.18.tar.gz |
-| BREW   | **0.96.0** | https://terragrunt.gruntwork.io/ |
+| BREW   | **0.96.1** | https://terragrunt.gruntwork.io/ |
 
 *Outdated*
 
@@ -9225,8 +9225,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 5.8.1 ✅ | https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.gz |
-| BREW   | 5.8.1 | https://tukaani.org/xz/ |
+| PPKG   | 5.8.1 ⚠️ | https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.gz |
+| BREW   | **5.8.2** | https://tukaani.org/xz/ |
+
+*Outdated*
 
 ## yasm
 

@@ -3279,7 +3279,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.152.2** | https://gohugo.io/ |
+| BREW   | **0.153.0** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -3609,7 +3609,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 20240107 ⚠️ | https://github.com/xtaci/kcptun/archive/refs/tags/v20240107.tar.gz |
-| BREW   | **20251212** | https://github.com/xtaci/kcptun |
+| BREW   | **20251219** | https://github.com/xtaci/kcptun |
 
 *Outdated*
 

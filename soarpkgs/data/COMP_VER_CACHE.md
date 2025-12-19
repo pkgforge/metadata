@@ -6333,11 +6333,11 @@
 | snooze#github.com.leahneukirchen.snooze.source:bincache (x86_64-Linux) | HEAD-e19e301-251003T203046 | HEAD-e19e301-251003T203046 | 2025-10-06T22:20:41Z |
 | sns#github.com.sw33tLie.sns:bincache (aarch64-Linux) | HEAD-345ff62-230325T181445 | HEAD-345ff62-230325T181445 | 2025-01-12T02:54:50Z |
 | sns#github.com.sw33tLie.sns:bincache (x86_64-Linux) | HEAD-345ff62-230325T181445 | HEAD-345ff62-230325T181445 | 2025-01-12T23:19:56Z |
-| soar#github.com.pkgforge.soar.glibc:bincache (aarch64-Linux) | HEAD-7915faf-251217T233254 | HEAD-8f84b79-251020T115046 | 2025-12-17T23:51:41Z |
+| soar#github.com.pkgforge.soar.glibc:bincache (aarch64-Linux) | HEAD-7915faf-251217T233254 | HEAD-8f84b79-251020T115046 | 2025-12-18T23:51:06Z |
 | soar#github.com.pkgforge.soar.glibc:bincache (x86_64-Linux) | HEAD-7915faf-251217T233254 | HEAD-8f84b79-251020T115046 | 2025-12-18T23:49:27Z |
 | soar#github.com.pkgforge.soar.glibc-v3:bincache (x86_64-Linux) | HEAD-7915faf-251217T233254 | HEAD-8f84b79-251020T115046 | 2025-12-18T23:49:47Z |
 | soar#github.com.pkgforge.soar.glibc-v4:bincache (x86_64-Linux) | HEAD-7915faf-251217T233254 | HEAD-8f84b79-251020T115046 | 2025-12-18T23:49:57Z |
-| soar#github.com.pkgforge.soar.musl:bincache (aarch64-Linux) | HEAD-7915faf-251217T233254 | HEAD-8f84b79-251020T115046 | 2025-12-17T23:53:29Z |
+| soar#github.com.pkgforge.soar.musl:bincache (aarch64-Linux) | HEAD-7915faf-251217T233254 | HEAD-8f84b79-251020T115046 | 2025-12-18T23:52:18Z |
 | soar#github.com.pkgforge.soar.musl:bincache (x86_64-Linux) | HEAD-7915faf-251217T233254 | HEAD-8f84b79-251020T115046 | 2025-12-18T23:50:43Z |
 | soar#github.com.pkgforge.soar.musl-v3:bincache (x86_64-Linux) | HEAD-7915faf-251217T233254 | HEAD-8f84b79-251020T115046 | 2025-12-18T23:52:41Z |
 | soar#github.com.pkgforge.soar.musl-v4:bincache (x86_64-Linux) | HEAD-7915faf-251217T233254 | HEAD-8f84b79-251020T115046 | 2025-12-18T23:52:38Z |

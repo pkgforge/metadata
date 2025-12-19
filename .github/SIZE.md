@@ -257,7 +257,7 @@
  1.5M   │ │ ├── aarch64-Linux.sdb.cba
  1.1M   │ │ ├── x86_64-Linux.sdb.zstd
  1.1M   │ │ ├── aarch64-Linux.sdb.zstd
-1012K   │ │ ├── x86_64-Linux.sdb.xz
+1008K   │ │ ├── x86_64-Linux.sdb.xz
 1004K   │ │ ├── aarch64-Linux.sdb.xz
  956K   │ │ ├── x86_64-Linux.json.zstd
  948K   │ │ ├── aarch64-Linux.json.zstd

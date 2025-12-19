@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.18 ⚠️ | null |
+| PPKG   | 2025.12.19 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1472,7 +1472,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.7.0 ⚠️ | https://github.com/TomWright/dasel/archive/refs/tags/v2.7.0.tar.gz |
-| BREW   | **3.1.3** | https://github.com/TomWright/dasel |
+| BREW   | **3.1.4** | https://github.com/TomWright/dasel |
 
 *Outdated*
 
@@ -4764,7 +4764,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.18 ⚠️ | null |
+| PPKG   | 2025.12.19 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6259,8 +6259,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.7.3 ✅ | https://github.com/pvolok/mprocs/archive/refs/tags/v0.7.3.tar.gz |
-| BREW   | 0.7.3 | https://github.com/pvolok/mprocs |
+| PPKG   | 0.7.3 ⚠️ | https://github.com/pvolok/mprocs/archive/refs/tags/v0.7.3.tar.gz |
+| BREW   | **0.8.0** | https://github.com/pvolok/mprocs |
+
+*Outdated*
 
 ## mpv
 
@@ -6667,7 +6669,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.0 ⚠️ | null |
-| BREW   | **0.13.4** | https://ollama.com/ |
+| BREW   | **0.13.5** | https://ollama.com/ |
 
 *Outdated*
 
@@ -6689,7 +6691,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.65.0 ⚠️ | https://github.com/open-policy-agent/opa/archive/refs/tags/v0.65.0.tar.gz |
-| BREW   | **1.12.0** | https://www.openpolicyagent.org |
+| BREW   | **1.12.1** | https://www.openpolicyagent.org |
 
 *Outdated*
 
@@ -6828,7 +6830,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | **1.33.0** | https://oxc.rs/ |
+| BREW   | **1.34.0** | https://oxc.rs/ |
 
 *Outdated*
 
@@ -6849,7 +6851,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.18 ⚠️ | null |
+| PPKG   | 2025.12.19 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7006,7 +7008,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.62.0** | https://pixi.sh |
+| BREW   | **0.62.1** | https://pixi.sh |
 
 *Outdated*
 
@@ -7027,7 +7029,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.18 ⚠️ | null |
+| PPKG   | 2025.12.19 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7189,7 +7191,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.18 ⚠️ | null |
+| PPKG   | 2025.12.19 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7645,7 +7647,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.9 ⚠️ | https://github.com/astral-sh/ruff/archive/refs/tags/0.9.9.tar.gz |
-| BREW   | **0.14.9** | https://docs.astral.sh/ruff/ |
+| BREW   | **0.14.10** | https://docs.astral.sh/ruff/ |
 
 *Outdated*
 

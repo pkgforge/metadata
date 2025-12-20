@@ -224,7 +224,7 @@
  340K   │ │ ├── PPKG.json
  280K   │ │ ├── PPKG_BREW.md
  228K   │ │ ├── FLATPAK_POPULAR.json
- 212K   │ │ ├── FLATPAK_TRENDING.json
+ 216K   │ │ ├── FLATPAK_TRENDING.json
   80K   │ │ ├── FLATPAK_APP_IDS.txt
   20K   │ │ ├── CATEGORY.json
  4.0K   │ │ └── CATEGORY.md

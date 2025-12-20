@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.19 ⚠️ | null |
+| PPKG   | 2025.12.20 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -2138,7 +2138,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 24.3.25 ⚠️ | https://github.com/google/flatbuffers/archive/refs/tags/v24.3.25.tar.gz |
-| BREW   | **25.9.23** | https://google.github.io/flatbuffers |
+| BREW   | **25.12.19** | https://google.github.io/flatbuffers |
 
 *Outdated*
 
@@ -3383,7 +3383,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 6.4 ⚠️ | https://linuxcontainers.org/downloads/incus/incus-6.4.tar.xz |
-| BREW   | **6.19.1** | https://linuxcontainers.org/incus |
+| BREW   | **6.20** | https://linuxcontainers.org/incus |
 
 *Outdated*
 
@@ -3702,7 +3702,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.24.1 ⚠️ | https://github.com/jesseduffield/lazydocker/archive/refs/tags/v0.24.1.tar.gz |
-| BREW   | **0.24.2** | https://github.com/jesseduffield/lazydocker |
+| BREW   | **0.24.3** | https://github.com/jesseduffield/lazydocker |
 
 *Outdated*
 
@@ -3735,7 +3735,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.7 ⚠️ | https://github.com/jorgerojas26/lazysql/archive/refs/tags/v0.3.7.tar.gz |
-| BREW   | **0.4.3** | https://github.com/jorgerojas26/lazysql |
+| BREW   | **0.4.4** | https://github.com/jorgerojas26/lazysql |
 
 *Outdated*
 
@@ -4764,7 +4764,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.19 ⚠️ | null |
+| PPKG   | 2025.12.20 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6851,7 +6851,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.19 ⚠️ | null |
+| PPKG   | 2025.12.20 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7029,7 +7029,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.19 ⚠️ | null |
+| PPKG   | 2025.12.20 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7191,7 +7191,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.19 ⚠️ | null |
+| PPKG   | 2025.12.20 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7585,7 +7585,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/apollographql/rover/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.37.1** | https://www.apollographql.com/docs/rover/ |
+| BREW   | **0.37.2** | https://www.apollographql.com/docs/rover/ |
 
 *Outdated*
 

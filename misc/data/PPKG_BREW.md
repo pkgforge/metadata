@@ -1176,7 +1176,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.1.7 ⚠️ | https://gitlab.com/cmocka/cmocka/-/archive/cmocka-1.1.7/cmocka-cmocka-1.1.7.tar.gz |
-| BREW   | **2.0.0** | https://cmocka.org/ |
+| BREW   | **2.0.1** | https://cmocka.org/ |
 
 *Outdated*
 
@@ -1689,7 +1689,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.22.21 ⚠️ | https://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.21.tar.xz |
-| BREW   | **1.23.2** | https://wiki.debian.org/Teams/Dpkg |
+| BREW   | **1.23.3** | https://wiki.debian.org/Teams/Dpkg |
 
 *Outdated*
 
@@ -2748,8 +2748,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 6.0.3 ✅ | https://downloads.sourceforge.net/project/gnuplot/gnuplot/6.0.3/gnuplot-6.0.3.tar.gz |
-| BREW   | 6.0.3 | http://www.gnuplot.info/ |
+| PPKG   | 6.0.3 ⚠️ | https://downloads.sourceforge.net/project/gnuplot/gnuplot/6.0.3/gnuplot-6.0.3.tar.gz |
+| BREW   | **6.0.4** | http://www.gnuplot.info/ |
+
+*Outdated*
 
 ## gnutls
 
@@ -3735,7 +3737,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.3.7 ⚠️ | https://github.com/jorgerojas26/lazysql/archive/refs/tags/v0.3.7.tar.gz |
-| BREW   | **0.4.4** | https://github.com/jorgerojas26/lazysql |
+| BREW   | **0.4.5** | https://github.com/jorgerojas26/lazysql |
 
 *Outdated*
 
@@ -6260,7 +6262,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.3 ⚠️ | https://github.com/pvolok/mprocs/archive/refs/tags/v0.7.3.tar.gz |
-| BREW   | **0.8.0** | https://github.com/pvolok/mprocs |
+| BREW   | **0.8.1** | https://github.com/pvolok/mprocs |
 
 *Outdated*
 
@@ -8074,7 +8076,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.6.6 ⚠️ | https://github.com/projectdiscovery/subfinder/archive/refs/tags/v2.6.6.tar.gz |
-| BREW   | **2.10.1** | https://github.com/projectdiscovery/subfinder |
+| BREW   | **2.11.0** | https://github.com/projectdiscovery/subfinder |
 
 *Outdated*
 

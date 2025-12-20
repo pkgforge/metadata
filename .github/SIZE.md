@@ -243,7 +243,7 @@
  4.0K   │   ├── fetch_debian_docker.sh
  4.0K   │   ├── fetch_archlinux_docker.sh
  4.0K   │   └── fetch_alpine_git.sh
- 119M   ├─┬ bincache
+ 118M   ├─┬ bincache
  118M   │ ├─┬ data
   29M   │ │ ├── x86_64-Linux.json
   29M   │ │ ├── aarch64-Linux.json

@@ -219,7 +219,7 @@
  1.6M   │ │ ├── BREW_CASK.json
  1.2M   │ │ ├── PPKG_RAW.json
  544K   │ │ ├── STALIX.json
- 480K   │ │ ├── FLATPAK_APPS_INFO.json
+ 484K   │ │ ├── FLATPAK_APPS_INFO.json
  448K   │ │ ├── FLATPAK_APPS_INFO.txt
  340K   │ │ ├── PPKG.json
  280K   │ │ ├── PPKG_BREW.md

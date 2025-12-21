@@ -151,7 +151,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.2.13 ⚠️ | https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.13.tar.bz2 |
-| BREW   | **1.2.15** | https://www.alsa-project.org/ |
+| BREW   | **1.2.15.1** | https://www.alsa-project.org/ |
 
 *Outdated*
 
@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.20 ⚠️ | null |
+| PPKG   | 2025.12.21 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1634,7 +1634,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.5.7 ⚠️ | https://github.com/mr-karan/doggo/archive/refs/tags/v0.5.7.tar.gz |
-| BREW   | **1.1.2** | https://doggo.mrkaran.dev/ |
+| BREW   | **1.1.3** | https://doggo.mrkaran.dev/ |
 
 *Outdated*
 
@@ -2326,7 +2326,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.17.0 ⚠️ | https://github.com/koki-develop/gat/archive/refs/tags/v0.17.0.tar.gz |
-| BREW   | **0.25.8** | https://github.com/koki-develop/gat |
+| BREW   | **0.26.0** | https://github.com/koki-develop/gat |
 
 *Outdated*
 
@@ -2402,7 +2402,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 14.2 ⚠️ | https://ftp.gnu.org/gnu/gdb/gdb-14.2.tar.xz |
-| BREW   | **16.3** | https://www.gnu.org/software/gdb/ |
+| BREW   | **17.1** | https://www.gnu.org/software/gdb/ |
 
 *Outdated*
 
@@ -3281,7 +3281,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.153.0** | https://gohugo.io/ |
+| BREW   | **0.153.1** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -4766,7 +4766,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.20 ⚠️ | null |
+| PPKG   | 2025.12.21 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6853,7 +6853,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.20 ⚠️ | null |
+| PPKG   | 2025.12.21 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7031,7 +7031,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.20 ⚠️ | null |
+| PPKG   | 2025.12.21 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7193,7 +7193,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.20 ⚠️ | null |
+| PPKG   | 2025.12.21 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7466,7 +7466,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 4.2 ⚠️ | https://github.com/skvadrik/re2c/releases/download/4.2/re2c-4.2.tar.xz |
-| BREW   | **4.3.1** | https://re2c.org/ |
+| BREW   | **4.4** | https://re2c.org/ |
 
 *Outdated*
 
@@ -8755,7 +8755,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.1.0450 ⚠️ | https://github.com/vim/vim/archive/refs/tags/v9.1.0450.tar.gz |
-| BREW   | **9.1.1950** | https://www.vim.org/ |
+| BREW   | **9.1.2000** | https://www.vim.org/ |
 
 *Outdated*
 

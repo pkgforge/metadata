@@ -2585,7 +2585,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.37.0 ⚠️ | https://github.com/Byron/gitoxide/archive/refs/tags/v0.37.0.tar.gz |
-| BREW   | **0.47.0** | https://github.com/GitoxideLabs/gitoxide |
+| BREW   | **0.48.0** | https://github.com/GitoxideLabs/gitoxide |
 
 *Outdated*
 
@@ -3757,7 +3757,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.0 ⚠️ | https://github.com/linux-test-project/lcov/releases/download/v2.0/lcov-2.0.tar.gz |
-| BREW   | **2.3.2** | https://github.com/linux-test-project/lcov |
+| BREW   | **2.4** | https://github.com/linux-test-project/lcov |
 
 *Outdated*
 
@@ -6408,7 +6408,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.0.1 ⚠️ | https://github.com/containerd/nerdctl/archive/refs/tags/v2.0.1.tar.gz |
-| BREW   | **2.2.0** | https://github.com/containerd/nerdctl |
+| BREW   | **2.2.1** | https://github.com/containerd/nerdctl |
 
 *Outdated*
 
@@ -6834,7 +6834,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.12.0 ⚠️ | https://github.com/oxc-project/oxc/archive/refs/tags/oxlint_v1.12.0.tar.gz |
-| BREW   | **1.34.0** | https://oxc.rs/ |
+| BREW   | **1.35.0** | https://oxc.rs/ |
 
 *Outdated*
 
@@ -7012,7 +7012,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.48.0 ⚠️ | https://github.com/prefix-dev/pixi/archive/refs/tags/v0.48.0.tar.gz |
-| BREW   | **0.62.1** | https://pixi.sh |
+| BREW   | **0.62.2** | https://pixi.sh |
 
 *Outdated*
 
@@ -7662,7 +7662,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2024.03.11 ⚠️ | https://github.com/rust-analyzer/rust-analyzer/archive/refs/tags/2024-03-11.tar.gz |
-| BREW   | **2025-12-15** | https://rust-analyzer.github.io/ |
+| BREW   | **2025-12-22** | https://rust-analyzer.github.io/ |
 
 *Outdated*
 

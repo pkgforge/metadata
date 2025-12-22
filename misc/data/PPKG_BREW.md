@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.21 ⚠️ | null |
+| PPKG   | 2025.12.22 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1262,7 +1262,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.17.1 ⚠️ | https://github.com/danmar/cppcheck/archive/refs/tags/2.17.1.tar.gz |
-| BREW   | **2.18.0** | https://sourceforge.net/projects/cppcheck/ |
+| BREW   | **2.19.0** | https://sourceforge.net/projects/cppcheck/ |
 
 *Outdated*
 
@@ -4766,7 +4766,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.21 ⚠️ | null |
+| PPKG   | 2025.12.22 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6251,7 +6251,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.33.0 ⚠️ | https://www.mpg123.de/download/mpg123-1.33.0.tar.bz2 |
-| BREW   | **1.33.3** | https://www.mpg123.de/ |
+| BREW   | **1.33.4** | https://www.mpg123.de/ |
 
 *Outdated*
 
@@ -6272,8 +6272,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 0.40.0 ✅ | https://github.com/mpv-player/mpv/archive/refs/tags/v0.40.0.tar.gz |
-| BREW   | 0.40.0 | https://mpv.io |
+| PPKG   | 0.40.0 ⚠️ | https://github.com/mpv-player/mpv/archive/refs/tags/v0.40.0.tar.gz |
+| BREW   | **0.41.0** | https://mpv.io |
+
+*Outdated*
 
 ## mujs
 
@@ -6682,7 +6684,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.20.0 ⚠️ | https://github.com/o2sh/onefetch/archive/refs/tags/2.20.0.tar.gz |
-| BREW   | **2.25.0** | https://onefetch.dev/ |
+| BREW   | **2.26.1** | https://onefetch.dev/ |
 
 *Outdated*
 
@@ -6853,7 +6855,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.21 ⚠️ | null |
+| PPKG   | 2025.12.22 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7031,7 +7033,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.21 ⚠️ | null |
+| PPKG   | 2025.12.22 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7193,7 +7195,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.21 ⚠️ | null |
+| PPKG   | 2025.12.22 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

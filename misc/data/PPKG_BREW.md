@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.22 ⚠️ | null |
+| PPKG   | 2025.12.23 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1344,7 +1344,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.14.4 ⚠️ | https://github.com/containers/crun/releases/download/1.14.4/crun-1.14.4.tar.xz |
-| BREW   | **1.25.1** | https://github.com/containers/crun |
+| BREW   | **1.26** | https://github.com/containers/crun |
 
 *Outdated*
 
@@ -3281,7 +3281,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.147.7 ⚠️ | https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz |
-| BREW   | **0.153.1** | https://gohugo.io/ |
+| BREW   | **0.153.2** | https://gohugo.io/ |
 
 *Outdated*
 
@@ -4766,7 +4766,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.22 ⚠️ | null |
+| PPKG   | 2025.12.23 ⚠️ | null |
 | BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -5525,8 +5525,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.22.0 ✅ | https://github.com/intel/libva/releases/download/2.22.0/libva-2.22.0.tar.bz2 |
-| BREW   | 2.22.0 | https://github.com/intel/libva |
+| PPKG   | 2.22.0 ⚠️ | https://github.com/intel/libva/releases/download/2.22.0/libva-2.22.0.tar.bz2 |
+| BREW   | **2.23.0** | https://github.com/intel/libva |
+
+*Outdated*
 
 ## libvdpau
 
@@ -6262,7 +6264,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.3 ⚠️ | https://github.com/pvolok/mprocs/archive/refs/tags/v0.7.3.tar.gz |
-| BREW   | **0.8.1** | https://github.com/pvolok/mprocs |
+| BREW   | **0.8.2** | https://github.com/pvolok/mprocs |
 
 *Outdated*
 
@@ -6855,7 +6857,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.22 ⚠️ | null |
+| PPKG   | 2025.12.23 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7033,7 +7035,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.22 ⚠️ | null |
+| PPKG   | 2025.12.23 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7195,7 +7197,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.22 ⚠️ | null |
+| PPKG   | 2025.12.23 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -8197,7 +8199,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.85.5 ⚠️ | https://github.com/k1LoW/tbls/archive/refs/tags/v1.85.5.tar.gz |
-| BREW   | **1.92.1** | https://github.com/k1LoW/tbls |
+| BREW   | **1.92.2** | https://github.com/k1LoW/tbls |
 
 *Outdated*
 

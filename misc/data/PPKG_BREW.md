@@ -1251,7 +1251,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.25.0 ⚠️ | https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.25.0.tar.gz |
-| BREW   | **0.28.0** | https://github.com/yhirose/cpp-httplib |
+| BREW   | **0.29.0** | https://github.com/yhirose/cpp-httplib |
 
 *Outdated*
 
@@ -1806,7 +1806,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookexperimental/edencommon/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.12.15.00** | https://github.com/facebookexperimental/edencommon |
+| BREW   | **2025.12.22.00** | https://github.com/facebookexperimental/edencommon |
 
 *Outdated*
 
@@ -1994,7 +1994,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fb303/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.12.15.00** | https://github.com/facebook/fb303 |
+| BREW   | **2025.12.22.00** | https://github.com/facebook/fb303 |
 
 *Outdated*
 
@@ -2005,7 +2005,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/fbthrift/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.12.15.00** | https://github.com/facebook/fbthrift |
+| BREW   | **2025.12.22.00** | https://github.com/facebook/fbthrift |
 
 *Outdated*
 
@@ -2116,7 +2116,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/fizz/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.12.15.00** | https://github.com/facebookincubator/fizz |
+| BREW   | **2025.12.22.00** | https://github.com/facebookincubator/fizz |
 
 *Outdated*
 
@@ -2628,8 +2628,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2.2.0 ✅ | https://downloads.sourceforge.net/project/glew/glew/2.2.0/glew-2.2.0.tgz |
-| BREW   | 2.2.0 | https://glew.sourceforge.net/ |
+| PPKG   | 2.2.0 ⚠️ | https://downloads.sourceforge.net/project/glew/glew/2.2.0/glew-2.2.0.tgz |
+| BREW   | **2.3.0** | https://glew.sourceforge.net/ |
+
+*Outdated*
 
 ## glib
 
@@ -5017,7 +5019,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.15.0 ⚠️ | https://github.com/baresip/re/archive/refs/tags/v3.15.0.tar.gz |
-| BREW   | **4.3.0** | https://github.com/baresip/re |
+| BREW   | **4.4.0** | https://github.com/baresip/re |
 
 *Outdated*
 
@@ -6308,7 +6310,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebookincubator/mvfst/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.12.15.00** | https://github.com/facebook/mvfst |
+| BREW   | **2025.12.22.00** | https://github.com/facebook/mvfst |
 
 *Outdated*
 
@@ -8872,7 +8874,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/wangle/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.12.15.00** | https://github.com/facebook/wangle |
+| BREW   | **2025.12.22.00** | https://github.com/facebook/wangle |
 
 *Outdated*
 
@@ -8936,7 +8938,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2025.02.17.00 ⚠️ | https://github.com/facebook/watchman/archive/refs/tags/v2025.02.17.00.tar.gz |
-| BREW   | **2025.12.15.00** | https://github.com/facebook/watchman |
+| BREW   | **2025.12.22.00** | https://github.com/facebook/watchman |
 
 *Outdated*
 

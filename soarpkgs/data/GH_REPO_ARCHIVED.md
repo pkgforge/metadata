@@ -7,7 +7,7 @@
 | [KathanP19](https://github.com/KathanP19) | [Gxss](https://github.com/KathanP19/Gxss) | 599 | A tool to check a bunch of URLs that contain reflecting params. | 2025-12-20T08:56:42Z |
 | [Picocrypt](https://github.com/Picocrypt) | [CLI](https://github.com/Picocrypt/CLI) | 75 | A command-line interface for Picocrypt. | 2025-12-19T03:58:44Z |
 | [clearlinux](https://github.com/clearlinux) | [docker-brew-clearlinux](https://github.com/clearlinux/docker-brew-clearlinux) | 34 | Dockerhub image snapshots for Clear Linux | 2025-08-13T22:29:58Z |
-| [dcantrell](https://github.com/dcantrell) | [bsdutils](https://github.com/dcantrell/bsdutils) | 176 | Alternative to GNU coreutils using software from FreeBSD | 2025-11-21T21:00:16Z |
+| [dcantrell](https://github.com/dcantrell) | [bsdutils](https://github.com/dcantrell/bsdutils) | 178 | Alternative to GNU coreutils using software from FreeBSD | 2025-12-23T22:50:54Z |
 | [explodingcamera](https://github.com/explodingcamera) | [tinywasm](https://github.com/explodingcamera/tinywasm) | 546 | A tiny, interpreted WebAssembly Runtime written in Rust | 2025-12-08T21:47:32Z |
 | [mrusme](https://github.com/mrusme) | [planor](https://github.com/mrusme/planor) | 85 | The Cloud Aviator: TUI client for cloud services (AWS, Vultr, Heroku, Render.com, Fleek, ...) | 2025-12-16T23:05:10Z |
 | [mrusme](https://github.com/mrusme) | [wth](https://github.com/mrusme/wth) | 58 | What The Heck: The better personal information dashboard for your terminal | 2025-11-27T14:41:44Z |

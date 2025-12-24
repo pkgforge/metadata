@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.23 ⚠️ | null |
+| PPKG   | 2025.12.24 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -4045,7 +4045,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.1.0 ⚠️ | https://ftp.gnu.org/gnu/libcdio/libcdio-2.1.0.tar.bz2 |
-| BREW   | **2.2.0** | https://savannah.gnu.org/projects/libcdio/ |
+| BREW   | **2.3.0** | https://savannah.gnu.org/projects/libcdio/ |
 
 *Outdated*
 
@@ -4747,7 +4747,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.11.0 ⚠️ | https://github.com/ngtcp2/nghttp3/releases/download/v1.11.0/nghttp3-1.11.0.tar.xz |
-| BREW   | **1.13.1** | https://nghttp2.org/nghttp3/ |
+| BREW   | **1.14.0** | https://nghttp2.org/nghttp3/ |
 
 *Outdated*
 
@@ -4768,8 +4768,8 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.23 ⚠️ | null |
-| BREW   | **1.18.0** | https://nghttp2.org/ngtcp2/ |
+| PPKG   | 2025.12.24 ⚠️ | null |
+| BREW   | **1.19.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
 
@@ -6859,7 +6859,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.23 ⚠️ | null |
+| PPKG   | 2025.12.24 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7037,7 +7037,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.23 ⚠️ | null |
+| PPKG   | 2025.12.24 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7199,7 +7199,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.23 ⚠️ | null |
+| PPKG   | 2025.12.24 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

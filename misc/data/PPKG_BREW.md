@@ -140,7 +140,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.2.2** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.2.3** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -5008,7 +5008,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.21.2 ⚠️ | https://www.libraw.org/data/LibRaw-0.21.2.tar.gz |
-| BREW   | **0.21.4** | https://www.libraw.org/ |
+| BREW   | **0.21.5** | https://www.libraw.org/ |
 
 *Outdated*
 
@@ -5750,7 +5750,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.30 ✅ | http://links.twibright.com/download/links-2.30.tar.bz2 |
-| BREW   | 2.30 | http://links.twibright.com/ |
+| BREW   | 2.30 | https://links.twibright.com/ |
 
 ## lla
 
@@ -7059,8 +7059,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 3.0.3 ✅ | http://www.libpng.org/pub/png/src/pngcheck-3.0.3.tar.gz |
-| BREW   | 3.0.3 | http://www.libpng.org/pub/png/apps/pngcheck.html |
+| PPKG   | 3.0.3 ⚠️ | http://www.libpng.org/pub/png/src/pngcheck-3.0.3.tar.gz |
+| BREW   | **4.0.1** | https://github.com/pnggroup/pngcheck |
+
+*Outdated*
 
 ## pngquant
 

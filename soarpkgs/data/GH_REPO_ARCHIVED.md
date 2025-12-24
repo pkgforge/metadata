@@ -12,9 +12,9 @@
 | [mrusme](https://github.com/mrusme) | [planor](https://github.com/mrusme/planor) | 85 | The Cloud Aviator: TUI client for cloud services (AWS, Vultr, Heroku, Render.com, Fleek, ...) | 2025-12-16T23:05:10Z |
 | [mrusme](https://github.com/mrusme) | [wth](https://github.com/mrusme/wth) | 58 | What The Heck: The better personal information dashboard for your terminal | 2025-11-27T14:41:44Z |
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [PPSSPP-AppImage](https://github.com/pkgforge-dev/PPSSPP-AppImage) | 18 | Unofficial AppImage of the PPSSPP emulator [Maintainer=@Samueru-sama] | 2025-10-10T06:17:59Z |
-| [pkgforge](https://github.com/pkgforge) | [soar-dl](https://github.com/pkgforge/soar-dl) | 29 | ⚡Lightening-Fast, feature-rich, Universal Downloader 📥 for GitHub, GitLab, OCI & More [Maintainer=@QaidVoid] | 2025-12-22T03:36:17Z |
+| [pkgforge](https://github.com/pkgforge) | [soar-dl](https://github.com/pkgforge/soar-dl) | 30 | ⚡Lightening-Fast, feature-rich, Universal Downloader 📥 for GitHub, GitLab, OCI & More [Maintainer=@QaidVoid] | 2025-12-24T19:56:47Z |
 | [svenstaro](https://github.com/svenstaro) | [vmexec](https://github.com/svenstaro/vmexec) | 27 | 🔧 Run a single command in a speedy virtual machine with zero-setup THE PROJECT MOVED TO https://gitlab.archlinux.org/archlinux/vmexec | 2025-10-06T09:32:02Z |
-| [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1979 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-12-13T00:43:08Z |
+| [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1980 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-12-24T04:45:16Z |
 | [xplshn](https://github.com/xplshn) | [a-utils](https://github.com/xplshn/a-utils) | 8 | Andes-utilities | 2025-06-30T01:30:28Z |
 | [yshui](https://github.com/yshui) | [job-security](https://github.com/yshui/job-security) | 64 | job control from anywhere! | 2025-07-21T01:04:29Z |
 | [ziglang](https://github.com/ziglang) | [qemu-static](https://github.com/ziglang/qemu-static) | 49 | build qemu-static binaries using Alpine Linux docker | 2025-12-15T08:09:28Z |

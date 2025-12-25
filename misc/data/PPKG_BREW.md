@@ -416,7 +416,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.24 ⚠️ | null |
+| PPKG   | 2025.12.25 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -1899,7 +1899,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.9.6.1 ⚠️ | https://github.com/skarnet/execline/archive/refs/tags/v2.9.6.1.tar.gz |
-| BREW   | **2.9.7.0** | https://skarnet.org/software/execline/ |
+| BREW   | **2.9.8.0** | https://skarnet.org/software/execline/ |
 
 *Outdated*
 
@@ -2848,7 +2848,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.25.1 ⚠️ | https://github.com/goreleaser/goreleaser/archive/refs/tags/v1.25.1.tar.gz |
-| BREW   | **2.13.1** | https://goreleaser.com/ |
+| BREW   | **2.13.2** | https://goreleaser.com/ |
 
 *Outdated*
 
@@ -4768,7 +4768,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.24 ⚠️ | null |
+| PPKG   | 2025.12.25 ⚠️ | null |
 | BREW   | **1.19.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6083,7 +6083,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.9.2 ⚠️ | https://github.com/cantino/mcfly/archive/refs/tags/v0.9.2.tar.gz |
-| BREW   | **0.9.3** | https://github.com/cantino/mcfly |
+| BREW   | **0.9.4** | https://github.com/cantino/mcfly |
 
 *Outdated*
 
@@ -6859,7 +6859,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.24 ⚠️ | null |
+| PPKG   | 2025.12.25 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7037,7 +7037,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.24 ⚠️ | null |
+| PPKG   | 2025.12.25 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7201,7 +7201,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.24 ⚠️ | null |
+| PPKG   | 2025.12.25 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*
@@ -7339,7 +7339,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 9.2.0 ⚠️ | https://download.qemu.org/qemu-9.2.0.tar.xz |
-| BREW   | **10.1.3** | https://www.qemu.org/ |
+| BREW   | **10.2.0** | https://www.qemu.org/ |
 
 *Outdated*
 
@@ -7839,7 +7839,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 2.14.3.0 ⚠️ | https://skarnet.org/software/skalibs/skalibs-2.14.3.0.tar.gz |
-| BREW   | **2.14.4.0** | https://skarnet.org/software/skalibs/ |
+| BREW   | **2.14.5.0** | https://skarnet.org/software/skalibs/ |
 
 *Outdated*
 

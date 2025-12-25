@@ -140,7 +140,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 3.0.207 ⚠️ | null |
-| BREW   | **3.2.3** | https://github.com/aliyun/aliyun-cli |
+| BREW   | **3.2.4** | https://github.com/aliyun/aliyun-cli |
 
 *Outdated*
 
@@ -676,7 +676,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.2 ⚠️ | https://github.com/ClementTsang/bottom/archive/refs/tags/0.10.2.tar.gz |
-| BREW   | **0.11.4** | https://clementtsang.github.io/bottom/ |
+| BREW   | **0.12.0** | https://clementtsang.github.io/bottom/ |
 
 *Outdated*
 
@@ -3770,7 +3770,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 1.84.1 ⚠️ | https://github.com/DanBloomberg/leptonica/releases/download/1.84.1/leptonica-1.84.1.tar.gz |
-| BREW   | **1.86.0** | http://www.leptonica.org/ |
+| BREW   | **1.87.0** | http://www.leptonica.org/ |
 
 *Outdated*
 
@@ -5739,7 +5739,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.21.0 ⚠️ | https://github.com/lima-vm/lima/archive/refs/tags/v0.21.0.tar.gz |
-| BREW   | **2.0.2** | https://lima-vm.io/ |
+| BREW   | **2.0.3** | https://lima-vm.io/ |
 
 *Outdated*
 
@@ -8062,7 +8062,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.2.25 ⚠️ | https://github.com/abhimanyu003/sttr/archive/refs/tags/v0.2.25.tar.gz |
-| BREW   | **0.2.29** | https://github.com/abhimanyu003/sttr |
+| BREW   | **0.2.30** | https://github.com/abhimanyu003/sttr |
 
 *Outdated*
 

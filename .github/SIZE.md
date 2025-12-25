@@ -1,5 +1,5 @@
 ```mathematica
- 962M └─┬ main
+ 972M └─┬ main
  518M   ├─┬ external
  364M   │ ├─┬ pkgforge-go
  364M   │ │ ├─┬ data
@@ -204,13 +204,13 @@
  4.0K   │   │ └── TOTAL.json
   28K   │   └─┬ scripts
   24K   │     └── gen_meta.sh
- 229M   ├─┬ misc
- 229M   │ ├─┬ data
+ 240M   ├─┬ misc
+ 239M   │ ├─┬ data
   75M   │ │ ├── ARCHLINUX.json
   41M   │ │ ├── FLATPAK_APPSTREAM.xml
-  26M   │ │ ├── CONDA.json
+  33M   │ │ ├── CONDA.json
   24M   │ │ ├── DEBIAN.json
-  14M   │ │ ├── CONDA_RAW.json
+  17M   │ │ ├── CONDA_RAW.json
   13M   │ │ ├── NIXPKGS.json
   11M   │ │ ├── ALPINE_PKG.json
  9.1M   │ │ ├── PKGSRC.json

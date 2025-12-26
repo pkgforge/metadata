@@ -354,8 +354,10 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 20250116 ✅ | https://github.com/onetrueawk/awk/archive/refs/tags/20250116.tar.gz |
-| BREW   | 20250116 | https://www.cs.princeton.edu/~bwk/btl.mirror/ |
+| PPKG   | 20250116 ⚠️ | https://github.com/onetrueawk/awk/archive/refs/tags/20250116.tar.gz |
+| BREW   | **20251225** | https://www.cs.princeton.edu/~bwk/btl.mirror/ |
+
+*Outdated*
 
 ## axel
 
@@ -416,7 +418,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.25 ⚠️ | null |
+| PPKG   | 2025.12.26 ⚠️ | null |
 | BREW   | **1.5** | https://www.fourmilab.ch/webtools/base64/ |
 
 *Outdated*
@@ -676,7 +678,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.10.2 ⚠️ | https://github.com/ClementTsang/bottom/archive/refs/tags/0.10.2.tar.gz |
-| BREW   | **0.12.0** | https://clementtsang.github.io/bottom/ |
+| BREW   | **0.12.1** | https://clementtsang.github.io/bottom/ |
 
 *Outdated*
 
@@ -3728,7 +3730,7 @@
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
 | PPKG   | 0.7.9 ⚠️ | https://github.com/Lifailon/lazyjournal/archive/refs/tags/0.7.9.tar.gz |
-| BREW   | **0.8.2** | https://github.com/Lifailon/lazyjournal |
+| BREW   | **0.8.3** | https://github.com/Lifailon/lazyjournal |
 
 *Outdated*
 
@@ -4768,7 +4770,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.25 ⚠️ | null |
+| PPKG   | 2025.12.26 ⚠️ | null |
 | BREW   | **1.19.0** | https://nghttp2.org/ngtcp2/ |
 
 *Outdated*
@@ -6859,7 +6861,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.25 ⚠️ | null |
+| PPKG   | 2025.12.26 ⚠️ | null |
 | BREW   | **2.2.0** | https://github.com/arithy/packcc |
 
 *Outdated*
@@ -7037,7 +7039,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.25 ⚠️ | null |
+| PPKG   | 2025.12.26 ⚠️ | null |
 | BREW   | **1.1.11** | https://github.com/SergiusTheBest/plog |
 
 *Outdated*
@@ -7201,7 +7203,7 @@
 
 | Source | Version | URL/Homepage |
 |--------|---------|-------------|
-| PPKG   | 2025.12.25 ⚠️ | null |
+| PPKG   | 2025.12.26 ⚠️ | null |
 | BREW   | **0.4.0** | https://github.com/EricChiang/pup |
 
 *Outdated*

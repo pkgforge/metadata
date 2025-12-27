@@ -8,11 +8,11 @@
 | [Picocrypt](https://github.com/Picocrypt) | [CLI](https://github.com/Picocrypt/CLI) | 75 | A command-line interface for Picocrypt. | 2025-12-19T03:58:44Z |
 | [clearlinux](https://github.com/clearlinux) | [docker-brew-clearlinux](https://github.com/clearlinux/docker-brew-clearlinux) | 34 | Dockerhub image snapshots for Clear Linux | 2025-08-13T22:29:58Z |
 | [dcantrell](https://github.com/dcantrell) | [bsdutils](https://github.com/dcantrell/bsdutils) | 178 | Alternative to GNU coreutils using software from FreeBSD | 2025-12-23T22:50:54Z |
-| [explodingcamera](https://github.com/explodingcamera) | [tinywasm](https://github.com/explodingcamera/tinywasm) | 546 | A tiny, interpreted WebAssembly Runtime written in Rust | 2025-12-08T21:47:32Z |
+| [explodingcamera](https://github.com/explodingcamera) | [tinywasm](https://github.com/explodingcamera/tinywasm) | 547 | A tiny, interpreted WebAssembly Runtime written in Rust | 2025-12-27T19:25:26Z |
 | [mrusme](https://github.com/mrusme) | [planor](https://github.com/mrusme/planor) | 85 | The Cloud Aviator: TUI client for cloud services (AWS, Vultr, Heroku, Render.com, Fleek, ...) | 2025-12-16T23:05:10Z |
 | [mrusme](https://github.com/mrusme) | [wth](https://github.com/mrusme/wth) | 58 | What The Heck: The better personal information dashboard for your terminal | 2025-11-27T14:41:44Z |
 | [pkgforge-dev](https://github.com/pkgforge-dev) | [PPSSPP-AppImage](https://github.com/pkgforge-dev/PPSSPP-AppImage) | 18 | Unofficial AppImage of the PPSSPP emulator [Maintainer=@Samueru-sama] | 2025-10-10T06:17:59Z |
-| [pkgforge](https://github.com/pkgforge) | [soar-dl](https://github.com/pkgforge/soar-dl) | 30 | ⚡Lightening-Fast, feature-rich, Universal Downloader 📥 for GitHub, GitLab, OCI & More [Maintainer=@QaidVoid] | 2025-12-24T19:56:47Z |
+| [pkgforge](https://github.com/pkgforge) | [soar-dl](https://github.com/pkgforge/soar-dl) | 31 | ⚡Lightening-Fast, feature-rich, Universal Downloader 📥 for GitHub, GitLab, OCI & More [Maintainer=@QaidVoid] | 2025-12-27T18:21:24Z |
 | [svenstaro](https://github.com/svenstaro) | [vmexec](https://github.com/svenstaro/vmexec) | 27 | 🔧 Run a single command in a speedy virtual machine with zero-setup THE PROJECT MOVED TO https://gitlab.archlinux.org/archlinux/vmexec | 2025-10-06T09:32:02Z |
 | [varbhat](https://github.com/varbhat) | [exatorrent](https://github.com/varbhat/exatorrent) | 1980 | 🧲 Easy to Use Torrent Client. Can be hosted in Cloud. Files can be streamed in Browser/Media Player. | 2025-12-26T13:52:14Z |
 | [xplshn](https://github.com/xplshn) | [a-utils](https://github.com/xplshn/a-utils) | 8 | Andes-utilities | 2025-06-30T01:30:28Z |

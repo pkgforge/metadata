@@ -250,8 +250,8 @@
 | awk#github.com.chimera-linux.chimerautils:bincache (x86_64-Linux) | HEAD-16cdbcf-250706T182402 | HEAD-16cdbcf-250706T182402 | ✅ Updated |
 | awk#github.com.onetrueawk.awk:bincache (aarch64-Linux) | HEAD-d7f3764-250805T000004 | HEAD-d7f3764-250805T000004 | ✅ Updated |
 | awk#github.com.onetrueawk.awk:bincache (x86_64-Linux) | HEAD-d7f3764-250805T000004 | HEAD-d7f3764-250805T000004 | ✅ Updated |
-| aws#sharun.wrappe.pypi.awscli:pkgcache (aarch64-Linux) | 1.44.7 | 1.42.66 | ⚠️ Outdated |
-| aws#sharun.wrappe.pypi.awscli:pkgcache (x86_64-Linux) | 1.44.7 | 1.42.66 | ⚠️ Outdated |
+| aws#sharun.wrappe.pypi.awscli:pkgcache (aarch64-Linux) | 1.44.8 | 1.42.66 | ⚠️ Outdated |
+| aws#sharun.wrappe.pypi.awscli:pkgcache (x86_64-Linux) | 1.44.8 | 1.42.66 | ⚠️ Outdated |
 | aws-nuke#github.com.ekristen.aws-nuke:bincache (aarch64-Linux) | v3.61.0 | v3.61.0 | ✅ Updated |
 | aws-nuke#github.com.ekristen.aws-nuke:bincache (x86_64-Linux) | v3.61.0 | v3.61.0 | ✅ Updated |
 | aws-wire-lengths#github.com.oxidecomputer.aws-wire-lengths:bincache (aarch64-Linux) | HEAD-39b7c74-250228T143943 | HEAD-39b7c74-250228T143943 | ✅ Updated |
@@ -456,7 +456,7 @@
 | bottom#github.com.ClementTsang.bottom:bincache (x86_64-Linux) | 0.11.4 | 0.11.2 | ⚠️ Outdated |
 | boxxy#github.com.queer.boxxy:bincache (x86_64-Linux) | HEAD-46cc3c9-250629T073309 | HEAD-46cc3c9-250629T073309 | ✅ Updated |
 | brave#github.com.srevinsaju.Brave-AppImage.beta:pkgcache (x86_64-Linux) | v1.85.95 | v1.85.95 | ✅ Updated |
-| brave#github.com.srevinsaju.Brave-AppImage.nightly:pkgcache (x86_64-Linux) | v1.87.121 | v1.86.44 | ⚠️ Outdated |
+| brave#github.com.srevinsaju.Brave-AppImage.nightly:pkgcache (x86_64-Linux) | v1.87.126 | v1.86.44 | ⚠️ Outdated |
 | brave#github.com.srevinsaju.Brave-AppImage.stable:pkgcache (x86_64-Linux) | v1.84.130 | v1.84.131 | ⚠️ Outdated |
 | brave#nixpkgs.brave:pkgcache (aarch64-Linux) | 31.84.132 | 31.84.132 | ✅ Updated |
 | brave#nixpkgs.brave:pkgcache (x86_64-Linux) | 31.84.132 | 31.84.132 | ✅ Updated |
@@ -1006,8 +1006,8 @@
 | crcsum#github.com.tytso.e2fsprogs.source:bincache (x86_64-Linux) | HEAD-13dfdf2-251020T171851 | HEAD-13dfdf2-251020T171851 | ✅ Updated |
 | creatememfd#github.com.emanuele6.emanutils.source:bincache (aarch64-Linux) | HEAD-f1816b7-250722T231238 | HEAD-77c2c5d-250723T221000 | ⚠️ Outdated |
 | creatememfd#github.com.emanuele6.emanutils.source:bincache (x86_64-Linux) | HEAD-f1816b7-250722T231238 | HEAD-77c2c5d-250723T221000 | ⚠️ Outdated |
-| credsweeper#sharun.wrappe.pypi.credsweeper:pkgcache (aarch64-Linux) | 1.14.1 | 1.13.2 | ⚠️ Outdated |
-| credsweeper#sharun.wrappe.pypi.credsweeper:pkgcache (x86_64-Linux) | 1.14.1 | 1.13.2 | ⚠️ Outdated |
+| credsweeper#sharun.wrappe.pypi.credsweeper:pkgcache (aarch64-Linux) | 1.14.2 | 1.13.2 | ⚠️ Outdated |
+| credsweeper#sharun.wrappe.pypi.credsweeper:pkgcache (x86_64-Linux) | 1.14.2 | 1.13.2 | ⚠️ Outdated |
 | crictl#github.com.kubernetes-sigs.cri-tools:bincache (aarch64-Linux) | v1.34.0 | v1.34.0 | ✅ Updated |
 | crictl#github.com.kubernetes-sigs.cri-tools:bincache (x86_64-Linux) | v1.34.0 | v1.34.0 | ✅ Updated |
 | crlfuzz#github.com.dwisiswant0.crlfuzz:bincache (aarch64-Linux) | HEAD-7a442bb-220922T223319 | HEAD-7a442bb-220922T223319 | ✅ Updated |
@@ -2117,7 +2117,7 @@
 | firefox#github.com.srevinsaju.Firefox-Appimage.beta:pkgcache (x86_64-Linux) | 145.0.20251031090541 | 145.0.20251031090541 | ✅ Updated |
 | firefox#github.com.srevinsaju.Firefox-Appimage.dev:pkgcache (x86_64-Linux) | 145.0.20251031090541 | 145.0.20251031090541 | ✅ Updated |
 | firefox#github.com.srevinsaju.Firefox-Appimage.esr:pkgcache (x86_64-Linux) | 140.4.20251009121631 | 140.4.20251009121631 | ✅ Updated |
-| firefox#github.com.srevinsaju.Firefox-Appimage.nightly:pkgcache (x86_64-Linux) | 148.0.20251227210510 | 146.0.20251105082217 | ⚠️ Outdated |
+| firefox#github.com.srevinsaju.Firefox-Appimage.nightly:pkgcache (x86_64-Linux) | 148.0.20251230085604 | 146.0.20251105082217 | ⚠️ Outdated |
 | firefox#github.com.srevinsaju.Firefox-Appimage.stable:pkgcache (x86_64-Linux) | 144.0.20251027123126 | 144.0.20251027123126 | ✅ Updated |
 | fish#stalix.bin_fish.stable:bincache (x86_64-Linux) | 3.7.1 | 3.7.1 | ✅ Updated |
 | flac#nixpkgs.flac:bincache (aarch64-Linux) | 31.5.0 | 31.5.0 | ✅ Updated |
@@ -2445,8 +2445,8 @@
 | ghorg#github.com.gabrie30.ghorg:bincache (x86_64-Linux) | HEAD-f9e0b52-251219T084058 | HEAD-5c1d87b-251103T215834 | ⚠️ Outdated |
 | ghostty#github.com.pkgforge-dev.ghostty-appimage.stable:pkgcache (aarch64-Linux) | v1.2.3 | v1.2.3 | ✅ Updated |
 | ghostty#github.com.pkgforge-dev.ghostty-appimage.stable:pkgcache (x86_64-Linux) | v1.2.3 | v1.2.3 | ✅ Updated |
-| ghostty-nightly#github.com.pkgforge-dev.ghostty-appimage.nightly:pkgcache (aarch64-Linux) | 251228T005952 | 251105T005028 | ⚠️ Outdated |
-| ghostty-nightly#github.com.pkgforge-dev.ghostty-appimage.nightly:pkgcache (x86_64-Linux) | 251228T005952 | 251105T005028 | ⚠️ Outdated |
+| ghostty-nightly#github.com.pkgforge-dev.ghostty-appimage.nightly:pkgcache (aarch64-Linux) | 251229T005818 | 251105T005028 | ⚠️ Outdated |
+| ghostty-nightly#github.com.pkgforge-dev.ghostty-appimage.nightly:pkgcache (x86_64-Linux) | 251229T005818 | 251105T005028 | ⚠️ Outdated |
 | ghostunnel#github.com.ghostunnel.ghostunnel.source:bincache (aarch64-Linux) | HEAD-6cf395c-250715T085653 | HEAD-6cf395c-250715T085653 | ✅ Updated |
 | ghostunnel#github.com.ghostunnel.ghostunnel.source:bincache (x86_64-Linux) | HEAD-6cf395c-250715T085653 | HEAD-6cf395c-250715T085653 | ✅ Updated |
 | gi-compile-repository#ppkg.glib-tools:bincache (aarch64-Linux) | 2.84.3 | 2.84.3 | ✅ Updated |
@@ -3266,7 +3266,7 @@
 | kcptun-client#github.com.xtaci.kcptun.source:bincache (x86_64-Linux) | HEAD-63556e5-251229T151546 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
 | kcptun-server#github.com.xtaci.kcptun.source:bincache (aarch64-Linux) | HEAD-63556e5-251229T151546 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
 | kcptun-server#github.com.xtaci.kcptun.source:bincache (x86_64-Linux) | HEAD-63556e5-251229T151546 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
-| kdenlive#gitlab.com.kdenlive.kdenlive.nightly:pkgcache (x86_64-Linux) | 2025-12-28 | 2025-11-05 | ⚠️ Outdated |
+| kdenlive#gitlab.com.kdenlive.kdenlive.nightly:pkgcache (x86_64-Linux) | 2025-12-30 | 2025-11-05 | ⚠️ Outdated |
 | kdenlive#runimage.alpine.kdenlive:pkgcache (aarch64-Linux) | 25.08.1 | 25.08.1 | ✅ Updated |
 | kdenlive#runimage.alpine.kdenlive:pkgcache (x86_64-Linux) | 25.08.1 | 25.08.1 | ✅ Updated |
 | kdeutils#github.com.ivan-hc.kdeutils-appimage:pkgcache (x86_64-Linux) | 25.08 | 25.08 | ✅ Updated |
@@ -3316,14 +3316,14 @@
 | kmod#nixpkgs.kmod:bincache (x86_64-Linux) | 331 | 331 | ✅ Updated |
 | kmon#github.com.orhun.kmon:bincache (aarch64-Linux) | HEAD-4342dde-250422T190048 | HEAD-4342dde-250422T190048 | ✅ Updated |
 | kmon#github.com.orhun.kmon:bincache (x86_64-Linux) | HEAD-4342dde-250422T190048 | HEAD-4342dde-250422T190048 | ✅ Updated |
-| knot#github.com.ic005k.Knot:pkgcache (x86_64-Linux) | 2.1.65 | 2.1.51 | ⚠️ Outdated |
+| knot#github.com.ic005k.Knot:pkgcache (x86_64-Linux) | 2.1.66 | 2.1.51 | ⚠️ Outdated |
 | knoxssme#github.com.edoardottt.lit-bb-hack-tools:bincache (aarch64-Linux) | HEAD-0597615-241110T105825 | HEAD-0597615-241110T105825 | ✅ Updated |
 | knoxssme#github.com.edoardottt.lit-bb-hack-tools:bincache (x86_64-Linux) | HEAD-0597615-241110T105825 | HEAD-0597615-241110T105825 | ✅ Updated |
 | kondo#github.com.tbillington.kondo:bincache (aarch64-Linux) | HEAD-45f3295-250722T122107 | HEAD-45f3295-250722T122107 | ✅ Updated |
 | kondo#github.com.tbillington.kondo:bincache (x86_64-Linux) | HEAD-45f3295-250722T122107 | HEAD-45f3295-250722T122107 | ✅ Updated |
 | kopia#github.com.kopia.kopia:bincache (aarch64-Linux) | v0.21.1 | v0.21.1 | ✅ Updated |
 | kopia#github.com.kopia.kopia:bincache (x86_64-Linux) | v0.21.1 | v0.21.1 | ✅ Updated |
-| krita#gitlab.com.krita.krita.next:pkgcache (x86_64-Linux) | 2025-12-27 | 2025-11-04 | ⚠️ Outdated |
+| krita#gitlab.com.krita.krita.next:pkgcache (x86_64-Linux) | 2025-12-30 | 2025-11-04 | ⚠️ Outdated |
 | krita#gitlab.com.krita.krita.stable:pkgcache (x86_64-Linux) | 5.2.13 | 5.2.13 | ✅ Updated |
 | krita#runimage.alpine.krita:pkgcache (aarch64-Linux) | 5.2.13 | 5.2.13 | ✅ Updated |
 | krita#runimage.alpine.krita:pkgcache (x86_64-Linux) | 5.2.13 | 5.2.13 | ✅ Updated |

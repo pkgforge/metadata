@@ -258,12 +258,12 @@
  1.1M   │ │ ├── x86_64-Linux.sdb.zstd
  1.1M   │ │ ├── aarch64-Linux.sdb.zstd
 1012K   │ │ ├── x86_64-Linux.sdb.xz
-1008K   │ │ ├── aarch64-Linux.sdb.xz
+1004K   │ │ ├── aarch64-Linux.sdb.xz
  956K   │ │ ├── x86_64-Linux.json.zstd
  952K   │ │ ├── aarch64-Linux.json.zstd
  916K   │ │ ├── x86_64-Linux.json.xz
  908K   │ │ ├── aarch64-Linux.json.xz
- 252K   │ │ ├── riscv64-Linux.sdb.cba
+ 256K   │ │ ├── riscv64-Linux.sdb.cba
  208K   │ │ ├── riscv64-Linux.sdb.zstd
  208K   │ │ ├── riscv64-Linux.json.cba
  192K   │ │ ├── riscv64-Linux.sdb.xz
@@ -387,6 +387,7 @@
  8.0K   │ │ ├── riscv64-Linux.sdb.zstd
  8.0K   │ │ ├── riscv64-Linux.sdb.xz
  8.0K   │ │ ├── riscv64-Linux.sdb.cba
+ 8.0K   │ │ ├── riscv64-Linux.json.cba
  4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.xz.bsum
  4.0K   │ │ ├── x86_64-Linux.sdb.bsum
@@ -400,7 +401,6 @@
  4.0K   │ │ ├── riscv64-Linux.json.zstd
  4.0K   │ │ ├── riscv64-Linux.json.xz.bsum
  4.0K   │ │ ├── riscv64-Linux.json.xz
- 4.0K   │ │ ├── riscv64-Linux.json.cba
  4.0K   │ │ ├── riscv64-Linux.json.bsum
  4.0K   │ │ ├── minisign.pub
  4.0K   │ │ ├── aarch64-Linux.sdb.zstd.bsum

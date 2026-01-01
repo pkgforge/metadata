@@ -170,7 +170,7 @@
 | arch#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | arch#git.busybox.net.busybox.standalone.glibc:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | arch#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| arch#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| arch#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | arch#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | arch#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | archey#github.com.HorlogeSkynet.archey4:bincache (aarch64-Linux) | HEAD-f9e98a2-250302T200506 | HEAD-f6d5c85-250930T193430 | ⚠️ Outdated |
@@ -200,7 +200,7 @@
 | arp#nixpkgs.net-tools:bincache (aarch64-Linux) | 32.10 | 32.10 | ✅ Updated |
 | arp#nixpkgs.net-tools:bincache (x86_64-Linux) | 32.10 | 32.10 | ✅ Updated |
 | arpd#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| arpd#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| arpd#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | arping#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | arping#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | arping#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -295,7 +295,7 @@
 | base32#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | base32#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | base32#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| base32#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| base32#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | base32#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | base32#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | base64#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -307,7 +307,7 @@
 | base64#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | base64#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | base64#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| base64#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| base64#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | base64#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | base64#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | basename#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -323,7 +323,7 @@
 | basename#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | basename#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | basename#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| basename#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| basename#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | basename#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | basename#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | basenc#github.com.coreutils.coreutils.standalone:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
@@ -331,7 +331,7 @@
 | basenc#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | basenc#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | basenc#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| basenc#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| basenc#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | basenc#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | basenc#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | bash#gnuguix.bash:bincache (aarch64-Linux) | 5.1.16 | 5.1.8 | ⚠️ Outdated |
@@ -467,7 +467,7 @@
 | brename#github.com.shenwei356.brename:bincache (aarch64-Linux) | v2.14.0 | v2.14.0 | ✅ Updated |
 | brename#github.com.shenwei356.brename:bincache (x86_64-Linux) | v2.14.0 | v2.14.0 | ✅ Updated |
 | bridge#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| bridge#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| bridge#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | brook#github.com.txthinking.brook:bincache (aarch64-Linux) | v20250808 | v20250808 | ✅ Updated |
 | brook#github.com.txthinking.brook:bincache (x86_64-Linux) | v20250808 | v20250808 | ✅ Updated |
 | broot#github.com.Canop.broot:bincache (aarch64-Linux) | HEAD-8420776-251103T170859 | HEAD-8420776-251103T170859 | ✅ Updated |
@@ -597,7 +597,7 @@
 | cat#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | cat#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | cat#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| cat#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| cat#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | cat#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | cat#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | catcher#github.com.wudijun.Catcher.source:bincache (aarch64-Linux) | HEAD-9b0d75b-250218T095545 | HEAD-9b0d75b-250218T095545 | ✅ Updated |
@@ -709,7 +709,7 @@
 | chgrp#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | chgrp#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | chgrp#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| chgrp#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| chgrp#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | chisel#github.com.jpillora.chisel:bincache (aarch64-Linux) | HEAD-d56938d-250914T100205 | HEAD-d56938d-250914T100205 | ✅ Updated |
 | chisel#github.com.jpillora.chisel:bincache (x86_64-Linux) | HEAD-d56938d-250914T100205 | HEAD-d56938d-250914T100205 | ✅ Updated |
 | chmem#nixpkgs.util-linux:bincache (aarch64-Linux) | 32.41.2 | 32.41.2 | ✅ Updated |
@@ -727,7 +727,7 @@
 | chmod#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | chmod#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | chmod#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| chmod#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| chmod#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | choom#nixpkgs.util-linux:bincache (aarch64-Linux) | 32.41.2 | 32.41.2 | ✅ Updated |
 | choom#nixpkgs.util-linux:bincache (x86_64-Linux) | 32.41.1 | 32.41.2 | ⚠️ Outdated |
 | chown#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -743,7 +743,7 @@
 | chown#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | chown#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | chown#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| chown#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| chown#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | chpasswd#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | chpasswd#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | chpasswd#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -775,7 +775,7 @@
 | chroot#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | chroot#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | chroot#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| chroot#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| chroot#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | chrt#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | chrt#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | chrt#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -931,7 +931,7 @@
 | comm#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | comm#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | comm#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| comm#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| comm#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | commix#sharun.wrappe.pypi.commix:pkgcache (aarch64-Linux) | HEAD-6f59b2a-251027T075752 | HEAD-6f59b2a-251027T075752 | ✅ Updated |
 | commix#sharun.wrappe.pypi.commix:pkgcache (x86_64-Linux) | HEAD-6f59b2a-251027T075752 | HEAD-6f59b2a-251027T075752 | ✅ Updated |
 | compile_et#nixpkgs.e2fsprogs:bincache (aarch64-Linux) | 1.47.3 | 31.47.3 | ⚠️ Outdated |
@@ -977,7 +977,7 @@
 | cp#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | cp#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | cp#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| cp#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| cp#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | cp#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | cp#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | cpio#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -1052,9 +1052,9 @@
 | csplit#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | csplit#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | csplit#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| csplit#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| csplit#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | csprecon#github.com.edoardottt.csprecon:bincache (aarch64-Linux) | HEAD-910b0e5-251230T084900 | HEAD-a7b43d9-251104T090452 | ⚠️ Outdated |
-| csprecon#github.com.edoardottt.csprecon:bincache (x86_64-Linux) | HEAD-6754584-251224T180622 | HEAD-a7b43d9-251104T090452 | ⚠️ Outdated |
+| csprecon#github.com.edoardottt.csprecon:bincache (x86_64-Linux) | HEAD-910b0e5-251230T084900 | HEAD-a7b43d9-251104T090452 | ⚠️ Outdated |
 | csview#github.com.wfxr.csview:bincache (aarch64-Linux) | HEAD-8ac4de0-250114T093355 | HEAD-8ac4de0-250114T093355 | ✅ Updated |
 | csview#github.com.wfxr.csview:bincache (x86_64-Linux) | HEAD-8ac4de0-250114T093355 | HEAD-8ac4de0-250114T093355 | ✅ Updated |
 | csvtk#github.com.shenwei356.csvtk:bincache (aarch64-Linux) | HEAD-667d979-251022T093322 | HEAD-667d979-251022T093322 | ✅ Updated |
@@ -1076,7 +1076,7 @@
 | ctrsploit-env#github.com.ctrsploit.ctrsploit:bincache (aarch64-Linux) | HEAD-0180efb-251224T172421 | HEAD-577cd8b-251105T030107 | ⚠️ Outdated |
 | ctrsploit-env#github.com.ctrsploit.ctrsploit:bincache (x86_64-Linux) | HEAD-0180efb-251224T172421 | HEAD-577cd8b-251105T030107 | ⚠️ Outdated |
 | ctstat#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| ctstat#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| ctstat#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | cttyhack#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | cttyhack#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | cttyhack#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -1100,7 +1100,7 @@
 | cut#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | cut#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | cut#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| cut#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| cut#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | cut#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | cut#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | cut-cdn#github.com.ImAyrix.cut-cdn:bincache (aarch64-Linux) | HEAD-534abbf-250722T091347 | HEAD-534abbf-250722T091347 | ✅ Updated |
@@ -1152,7 +1152,7 @@
 | date#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | date#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | date#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| date#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| date#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | dateadd#nixpkgs.dateutils:bincache (aarch64-Linux) | 30.4.11 | 30.4.11 | ✅ Updated |
 | dateadd#nixpkgs.dateutils:bincache (x86_64-Linux) | 30.4.11 | 30.4.11 | ✅ Updated |
 | dateconv#nixpkgs.dateutils:bincache (aarch64-Linux) | 30.4.11 | 30.4.11 | ✅ Updated |
@@ -1208,7 +1208,7 @@
 | dc#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | dc#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | dcb#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| dcb#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| dcb#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | dconv#nixpkgs.dateutils:bincache (aarch64-Linux) | 30.4.11 | 30.4.11 | ✅ Updated |
 | dconv#nixpkgs.dateutils:bincache (x86_64-Linux) | 30.4.11 | 30.4.11 | ✅ Updated |
 | dd#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -1223,7 +1223,7 @@
 | dd#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | dd#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | dd#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| dd#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| dd#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | ddgr#sharun.wrappe.pypi.ddgr:pkgcache (aarch64-Linux) | 2.2 | 2.2 | ✅ Updated |
 | ddgr#sharun.wrappe.pypi.ddgr:pkgcache (x86_64-Linux) | 2.2 | 2.2 | ✅ Updated |
 | ddiff#nixpkgs.dateutils:bincache (aarch64-Linux) | 30.4.11 | 30.4.11 | ✅ Updated |
@@ -1288,7 +1288,7 @@
 | devbox#github.com.jetify-com.devbox.stable:bincache (aarch64-Linux) | 0.0.0-edge.2025-08-28 | 0.0.0-edge.2025-08-28 | ✅ Updated |
 | devbox#github.com.jetify-com.devbox.stable:bincache (x86_64-Linux) | 0.0.0-edge.2025-08-28 | 0.0.0-edge.2025-08-28 | ✅ Updated |
 | devlink#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| devlink#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| devlink#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | devmem#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | devmem#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | devmem#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -1306,7 +1306,7 @@
 | df#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | df#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | df#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| df#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| df#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | dgrep#nixpkgs.dateutils:bincache (aarch64-Linux) | 30.4.11 | 30.4.11 | ✅ Updated |
 | dgrep#nixpkgs.dateutils:bincache (x86_64-Linux) | 30.4.11 | 30.4.11 | ✅ Updated |
 | dhcprelay#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -1332,13 +1332,13 @@
 | dir#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | dir#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | dir#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| dir#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| dir#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | dircolors#github.com.coreutils.coreutils.standalone:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | dircolors#github.com.coreutils.coreutils.standalone:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | dircolors#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | dircolors#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | dircolors#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| dircolors#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| dircolors#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | direnv#github.com.direnv.direnv:bincache (aarch64-Linux) | v2.37.1 | v2.37.1 | ✅ Updated |
 | direnv#github.com.direnv.direnv:bincache (x86_64-Linux) | v2.37.1 | v2.37.1 | ✅ Updated |
 | dirname#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -1353,7 +1353,7 @@
 | dirname#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | dirname#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | dirname#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| dirname#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| dirname#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | dirname#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | dirname#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | discord#github.com.srevinsaju.discord-AppImage.stable:pkgcache (x86_64-Linux) | 0.0.113 | 0.0.113 | ✅ Updated |
@@ -1409,7 +1409,7 @@
 | docker-repack#github.com.orf.docker-repack.source:bincache (x86_64-Linux) | HEAD-5b5fef6-250124T175731 | HEAD-5b5fef6-250124T175731 | ✅ Updated |
 | docker-slim#github.com.slimtoolkit.slim.source:bincache (x86_64-Linux) | HEAD-d8199cb-250905T165622 | HEAD-97c1de7-251029T114612 | ⚠️ Outdated |
 | docker-slim-sensor#github.com.slimtoolkit.slim.source:bincache (aarch64-Linux) | HEAD-5b86861-251229T135724 | HEAD-97c1de7-251029T114612 | ⚠️ Outdated |
-| docker-slim-sensor#github.com.slimtoolkit.slim.source:bincache (x86_64-Linux) | HEAD-439f7df-251214T163520 | HEAD-97c1de7-251029T114612 | ⚠️ Outdated |
+| docker-slim-sensor#github.com.slimtoolkit.slim.source:bincache (x86_64-Linux) | HEAD-5b86861-251229T135724 | HEAD-97c1de7-251029T114612 | ⚠️ Outdated |
 | dockerc#github.com.NilsIrl.dockerc:bincache (aarch64-Linux) | v0.3.2 | v0.3.2 | ✅ Updated |
 | doggo#github.com.mr-karan.doggo:bincache (aarch64-Linux) | HEAD-deea977-251101T185059 | HEAD-deea977-251101T185059 | ✅ Updated |
 | doggo#github.com.mr-karan.doggo:bincache (x86_64-Linux) | HEAD-deea977-251101T185059 | HEAD-deea977-251101T185059 | ✅ Updated |
@@ -1543,7 +1543,7 @@
 | du#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | du#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | du#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| du#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| du#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | duf#github.com.muesli.duf:bincache (aarch64-Linux) | HEAD-4636deb-250930T132937 | HEAD-4636deb-250930T132937 | ✅ Updated |
 | duf#github.com.muesli.duf:bincache (x86_64-Linux) | HEAD-4636deb-250930T132937 | HEAD-4636deb-250930T132937 | ✅ Updated |
 | dufs#github.com.sigoden.dufs:bincache (aarch64-Linux) | v0.45.0 | v0.45.0 | ✅ Updated |
@@ -1668,7 +1668,7 @@
 | echo#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | echo#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | echo#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| echo#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| echo#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | echo#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | echo#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | ecoji#github.com.keith-turner.ecoji:bincache (aarch64-Linux) | HEAD-65f0d91-230211T211000 | HEAD-4fa89ca-251023T113507 | ⚠️ Outdated |
@@ -1765,7 +1765,7 @@
 | env#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | env#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | env#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| env#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| env#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | env#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | env#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | envdir#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -1858,7 +1858,7 @@
 | expand#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | expand#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | expand#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| expand#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| expand#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | expand#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | expand#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | expander#nixpkgs.hashcat-utils:bincache (aarch64-Linux) | 31.10 | 31.10 | ✅ Updated |
@@ -1881,7 +1881,7 @@
 | expr#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | expr#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | expr#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| expr#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| expr#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | expr#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | expr#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | eza#github.com.eza-community.eza:bincache (aarch64-Linux) | HEAD-5b7bc61-251003T223655 | HEAD-12a0cb0-251028T073107 | ⚠️ Outdated |
@@ -1904,7 +1904,7 @@
 | factor#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | factor#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | factor#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| factor#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| factor#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | factor#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | factor#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | fadvise#nixpkgs.util-linux:bincache (aarch64-Linux) | 32.41.2 | 32.41.2 | ✅ Updated |
@@ -1945,13 +1945,13 @@
 | false#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | false#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | false#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| false#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| false#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | false#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | false#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | fanficfare#sharun.wrappe.pypi.fanficfare:pkgcache (aarch64-Linux) | 4.50.0 | 4.50.0 | ✅ Updated |
 | fanficfare#sharun.wrappe.pypi.fanficfare:pkgcache (x86_64-Linux) | 4.50.0 | 4.50.0 | ✅ Updated |
 | fastfetch#github.com.fastfetch-cli.fastfetch:bincache (aarch64-Linux) | HEAD-0b1e2fa-251231T080319 | HEAD-7638e0e-251105T102105 | ⚠️ Outdated |
-| fastfetch#github.com.fastfetch-cli.fastfetch:bincache (x86_64-Linux) | HEAD-7925469-251228T231658 | HEAD-7638e0e-251105T102105 | ⚠️ Outdated |
+| fastfetch#github.com.fastfetch-cli.fastfetch:bincache (x86_64-Linux) | HEAD-0b1e2fa-251231T080319 | HEAD-7638e0e-251105T102105 | ⚠️ Outdated |
 | fastfetch#sharun.wrappe.stable.fastfetch:pkgcache (aarch64-Linux) | 2.52.0 | 2.54.0 | ⚠️ Outdated |
 | fastfetch#sharun.wrappe.stable.fastfetch:pkgcache (x86_64-Linux) | 2.52.0 | 2.54.0 | ⚠️ Outdated |
 | fatattr#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -2126,7 +2126,7 @@
 | flameshot#nixpkgs.flameshot:pkgcache (aarch64-Linux) | 313.3.0 | 313.3.0 | ✅ Updated |
 | flameshot#nixpkgs.flameshot:pkgcache (x86_64-Linux) | 313.3.0 | 313.3.0 | ✅ Updated |
 | flashfetch#github.com.fastfetch-cli.fastfetch:bincache (aarch64-Linux) | HEAD-0b1e2fa-251231T080319 | HEAD-7638e0e-251105T102105 | ⚠️ Outdated |
-| flashfetch#github.com.fastfetch-cli.fastfetch:bincache (x86_64-Linux) | HEAD-7925469-251228T231658 | HEAD-7638e0e-251105T102105 | ⚠️ Outdated |
+| flashfetch#github.com.fastfetch-cli.fastfetch:bincache (x86_64-Linux) | HEAD-0b1e2fa-251231T080319 | HEAD-7638e0e-251105T102105 | ⚠️ Outdated |
 | flashfetch#sharun.wrappe.stable.fastfetch:pkgcache (aarch64-Linux) | 2.52.0 | 2.54.0 | ⚠️ Outdated |
 | flashfetch#sharun.wrappe.stable.fastfetch:pkgcache (x86_64-Linux) | 2.52.0 | 2.54.0 | ⚠️ Outdated |
 | flawz#github.com.orhun.flawz:bincache (aarch64-Linux) | HEAD-92bd253-250110T212358 | HEAD-92bd253-250110T212358 | ✅ Updated |
@@ -2151,7 +2151,7 @@
 | fmt#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | fmt#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | fmt#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| fmt#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| fmt#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | fmt#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | fmt#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | fold#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -2166,7 +2166,7 @@
 | fold#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | fold#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | fold#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| fold#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| fold#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | fold#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | fold#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | forbacktickx#nixpkgs.execline:bincache (aarch64-Linux) | 2.9.7.0 | 32.9.7.0 | ⚠️ Outdated |
@@ -2362,7 +2362,7 @@
 | genhtml#ppkg.lcov:bincache (x86_64-Linux) | 2.0 | 2.0 | ✅ Updated |
 | geninfo#ppkg.lcov:bincache (x86_64-Linux) | 2.0 | 2.0 | ✅ Updated |
 | genl#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| genl#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| genl#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | genpng#ppkg.lcov:bincache (aarch64-Linux) | 2.0 | 2.0 | ✅ Updated |
 | genscope#github.com.edoardottt.lit-bb-hack-tools:bincache (aarch64-Linux) | HEAD-0597615-241110T105825 | HEAD-0597615-241110T105825 | ✅ Updated |
 | genscope#github.com.edoardottt.lit-bb-hack-tools:bincache (x86_64-Linux) | HEAD-0597615-241110T105825 | HEAD-0597615-241110T105825 | ✅ Updated |
@@ -2439,7 +2439,7 @@
 | ghex#runimage.alpine.ghex:pkgcache (aarch64-Linux) | 46.3 | 46.3 | ✅ Updated |
 | ghex#runimage.alpine.ghex:pkgcache (x86_64-Linux) | 46.3 | 46.3 | ✅ Updated |
 | ghfetch#github.com.orangekame3.ghfetch:bincache (aarch64-Linux) | HEAD-26e2a9f-251231T180423 | HEAD-75b1896-251105T120414 | ⚠️ Outdated |
-| ghfetch#github.com.orangekame3.ghfetch:bincache (x86_64-Linux) | HEAD-0fac410-251229T180409 | HEAD-75b1896-251105T120414 | ⚠️ Outdated |
+| ghfetch#github.com.orangekame3.ghfetch:bincache (x86_64-Linux) | HEAD-26e2a9f-251231T180423 | HEAD-75b1896-251105T120414 | ⚠️ Outdated |
 | ghidra#runimage.cachyos.ghidra:pkgcache (x86_64-Linux) | 11.4 | 11.4 | ✅ Updated |
 | ghorg#github.com.gabrie30.ghorg:bincache (aarch64-Linux) | HEAD-f9e0b52-251219T084058 | HEAD-5c1d87b-251103T215834 | ⚠️ Outdated |
 | ghorg#github.com.gabrie30.ghorg:bincache (x86_64-Linux) | HEAD-f9e0b52-251219T084058 | HEAD-5c1d87b-251103T215834 | ⚠️ Outdated |
@@ -2573,7 +2573,7 @@
 | gosearch#github.com.ibnaleem.gosearch.source:bincache (aarch64-Linux) | HEAD-9df407c-251019T220523 | HEAD-9df407c-251019T220523 | ✅ Updated |
 | gosearch#github.com.ibnaleem.gosearch.source:bincache (x86_64-Linux) | HEAD-9df407c-251019T220523 | HEAD-9df407c-251019T220523 | ✅ Updated |
 | gosec#github.com.securego.gosec:bincache (aarch64-Linux) | HEAD-082deb6-251231T185736 | HEAD-10cf58a-251105T104627 | ⚠️ Outdated |
-| gosec#github.com.securego.gosec:bincache (x86_64-Linux) | HEAD-c073629-251228T193940 | HEAD-10cf58a-251105T104627 | ⚠️ Outdated |
+| gosec#github.com.securego.gosec:bincache (x86_64-Linux) | HEAD-082deb6-251231T185736 | HEAD-10cf58a-251105T104627 | ⚠️ Outdated |
 | gosmee#github.com.chmouel.gosmee:bincache (aarch64-Linux) | HEAD-61a03c7-251010T113056 | HEAD-61a03c7-251010T113056 | ✅ Updated |
 | gosmee#github.com.chmouel.gosmee:bincache (x86_64-Linux) | HEAD-61a03c7-251010T113056 | HEAD-61a03c7-251010T113056 | ✅ Updated |
 | gospider#github.com.jaeles-project.gospider.source:bincache (aarch64-Linux) | HEAD-f6cc9a7-240322T152418 | HEAD-f6cc9a7-240322T152418 | ✅ Updated |
@@ -2640,7 +2640,7 @@
 | groups#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | groups#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | groups#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| groups#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| groups#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | groups#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | groups#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | grpck#nixpkgs.shadow:bincache (aarch64-Linux) | 34.18.0 | 34.18.0 | ✅ Updated |
@@ -2778,7 +2778,7 @@
 | head#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | head#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | head#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| head#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| head#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | head#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | head#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | headless-terminal#github.com.andyk.ht:bincache (aarch64-Linux) | HEAD-ed569e9-250725T171222 | HEAD-ed569e9-250725T171222 | ✅ Updated |
@@ -2841,7 +2841,7 @@
 | hostid#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | hostid#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | hostid#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| hostid#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| hostid#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | hostid#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | hostid#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | hostname#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -2852,7 +2852,7 @@
 | hostname#github.com.chimera-linux.chimerautils:bincache (x86_64-Linux) | HEAD-16cdbcf-250706T182402 | HEAD-16cdbcf-250706T182402 | ✅ Updated |
 | hostname#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | hostname#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| hostname#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| hostname#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | hostname#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | hostname#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | hostname#nixpkgs.net-tools:bincache (aarch64-Linux) | 32.10 | 32.10 | ✅ Updated |
@@ -2967,7 +2967,7 @@
 | id#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | id#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | id#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| id#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| id#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | id#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | id#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | if#nixpkgs.execline:bincache (aarch64-Linux) | 2.9.7.0 | 32.9.7.0 | ⚠️ Outdated |
@@ -3001,7 +3001,7 @@
 | ifplugd#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | ifplugd#git.busybox.net.busybox.standalone.glibc:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | ifstat#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| ifstat#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| ifstat#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | ifte#nixpkgs.execline:bincache (aarch64-Linux) | 2.9.7.0 | 32.9.7.0 | ⚠️ Outdated |
 | ifte#nixpkgs.execline:bincache (x86_64-Linux) | 2.9.7.0 | 32.9.7.0 | ⚠️ Outdated |
 | ifte#ppkg.execline.stable:bincache (aarch64-Linux) | 2.9.6.1 | 2.9.6.1 | ✅ Updated |
@@ -3056,7 +3056,7 @@
 | install#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | install#git.busybox.net.busybox.standalone.glibc:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | install#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| install#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| install#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | integritysetup#nixpkgs.cryptsetup:bincache (aarch64-Linux) | 32.8.1 | 32.8.1 | ✅ Updated |
 | integritysetup#nixpkgs.cryptsetup:bincache (x86_64-Linux) | 32.8.1 | 32.8.1 | ✅ Updated |
 | interactsh-client#github.com.projectdiscovery.interactsh:bincache (aarch64-Linux) | v1.2.4 | v1.2.4 | ✅ Updated |
@@ -3100,7 +3100,7 @@
 | ip#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | ip#git.busybox.net.busybox.standalone.glibc:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | ip#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| ip#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| ip#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | ip2net#nixpkgs.zapret:bincache (aarch64-Linux) | 372.2 | 372.2 | ✅ Updated |
 | ip2net#nixpkgs.zapret:bincache (x86_64-Linux) | 372.2 | 372.2 | ✅ Updated |
 | ip_compact#github.com.x-way.ip_compact.source:bincache (aarch64-Linux) | HEAD-b81217b-250908T210504 | HEAD-b81217b-250908T210504 | ✅ Updated |
@@ -3203,7 +3203,7 @@
 | jira-cli#github.com.ankitpokhrel.jira-cli:bincache (aarch64-Linux) | HEAD-79067e2-250830T103025 | HEAD-79067e2-250830T103025 | ✅ Updated |
 | jira-cli#github.com.ankitpokhrel.jira-cli:bincache (x86_64-Linux) | HEAD-79067e2-250830T103025 | HEAD-79067e2-250830T103025 | ✅ Updated |
 | jj#github.com.martinvonz.jj:bincache (aarch64-Linux) | HEAD-0d91f18-251231T055919 | HEAD-f08e50a-251105T000058 | ⚠️ Outdated |
-| jj#github.com.martinvonz.jj:bincache (x86_64-Linux) | HEAD-62a7f63-251229T092849 | HEAD-f08e50a-251105T000058 | ⚠️ Outdated |
+| jj#github.com.martinvonz.jj:bincache (x86_64-Linux) | HEAD-0d91f18-251231T055919 | HEAD-f08e50a-251105T000058 | ⚠️ Outdated |
 | jless#ppkg.bundle.jless.stable:pkgcache (aarch64-Linux) | 0.9.0 | 0.9.0 | ✅ Updated |
 | jless#ppkg.bundle.jless.stable:pkgcache (x86_64-Linux) | 0.9.0 | 0.9.0 | ✅ Updated |
 | jless#ppkg.jless:bincache (aarch64-Linux) | 0.9.0 | 0.9.0 | ✅ Updated |
@@ -3220,7 +3220,7 @@
 | join#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | join#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | join#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| join#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| join#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | joker#github.com.txthinking.joker.source:bincache (aarch64-Linux) | HEAD-8edafbd-250220T112609 | HEAD-8edafbd-250220T112609 | ✅ Updated |
 | joker#github.com.txthinking.joker.source:bincache (x86_64-Linux) | HEAD-8edafbd-250220T112609 | HEAD-8edafbd-250220T112609 | ✅ Updated |
 | jot#github.com.chimera-linux.chimerautils:bincache (aarch64-Linux) | HEAD-16cdbcf-250706T182402 | HEAD-16cdbcf-250706T182402 | ✅ Updated |
@@ -3244,7 +3244,7 @@
 | json-cleaner#github.com.j3ssie.json-cleaner.source:bincache (aarch64-Linux) | HEAD-76fafe6-240406T002055 | HEAD-76fafe6-240406T002055 | ✅ Updated |
 | json-cleaner#github.com.j3ssie.json-cleaner.source:bincache (x86_64-Linux) | HEAD-76fafe6-240406T002055 | HEAD-76fafe6-240406T002055 | ✅ Updated |
 | jujutsu#github.com.martinvonz.jj:bincache (aarch64-Linux) | HEAD-0d91f18-251231T055919 | HEAD-f08e50a-251105T000058 | ⚠️ Outdated |
-| jujutsu#github.com.martinvonz.jj:bincache (x86_64-Linux) | HEAD-62a7f63-251229T092849 | HEAD-f08e50a-251105T000058 | ⚠️ Outdated |
+| jujutsu#github.com.martinvonz.jj:bincache (x86_64-Linux) | HEAD-0d91f18-251231T055919 | HEAD-f08e50a-251105T000058 | ⚠️ Outdated |
 | jumbo6#github.com.fgont.ipv6toolkit.source:bincache (aarch64-Linux) | HEAD-9ee80b6-241202T005144 | HEAD-9ee80b6-241202T005144 | ✅ Updated |
 | jumbo6#github.com.fgont.ipv6toolkit.source:bincache (x86_64-Linux) | HEAD-9ee80b6-241202T005144 | HEAD-9ee80b6-241202T005144 | ✅ Updated |
 | jwt-hack#github.com.hahwul.jwt-hack:bincache (aarch64-Linux) | HEAD-de22655-250322T080943 | HEAD-d5abeca-251026T221152 | ⚠️ Outdated |
@@ -3263,9 +3263,9 @@
 | kbd-mode#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | kbd-mode#git.busybox.net.busybox.standalone.glibc:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | kcptun-client#github.com.xtaci.kcptun.source:bincache (aarch64-Linux) | HEAD-f54f351-251230T160039 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
-| kcptun-client#github.com.xtaci.kcptun.source:bincache (x86_64-Linux) | HEAD-63556e5-251229T151546 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
+| kcptun-client#github.com.xtaci.kcptun.source:bincache (x86_64-Linux) | HEAD-f54f351-251230T160039 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
 | kcptun-server#github.com.xtaci.kcptun.source:bincache (aarch64-Linux) | HEAD-f54f351-251230T160039 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
-| kcptun-server#github.com.xtaci.kcptun.source:bincache (x86_64-Linux) | HEAD-63556e5-251229T151546 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
+| kcptun-server#github.com.xtaci.kcptun.source:bincache (x86_64-Linux) | HEAD-f54f351-251230T160039 | HEAD-8f2de97-251105T174217 | ⚠️ Outdated |
 | kdenlive#gitlab.com.kdenlive.kdenlive.nightly:pkgcache (x86_64-Linux) | 2025-12-30 | 2025-11-05 | ⚠️ Outdated |
 | kdenlive#runimage.alpine.kdenlive:pkgcache (aarch64-Linux) | 25.08.1 | 25.08.1 | ✅ Updated |
 | kdenlive#runimage.alpine.kdenlive:pkgcache (x86_64-Linux) | 25.08.1 | 25.08.1 | ✅ Updated |
@@ -3289,7 +3289,7 @@
 | kill#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | kill#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | kill#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| kill#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| kill#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | kill#nixpkgs.procps:bincache (aarch64-Linux) | 34.0.4 | 34.0.4 | ✅ Updated |
 | kill#nixpkgs.procps:bincache (x86_64-Linux) | 34.0.4 | 34.0.4 | ✅ Updated |
 | kill#nixpkgs.util-linux:bincache (aarch64-Linux) | 442.41.2 | 32.41.2 | ⚠️ Outdated |
@@ -3442,7 +3442,7 @@
 | link#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | link#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | link#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| link#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| link#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | link#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | link#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | linkook#sharun.wrappe.pypi.linkook:pkgcache (aarch64-Linux) | 1.1.2 | 1.1.2 | ✅ Updated |
@@ -3474,7 +3474,7 @@
 | litefs#github.com.superfly.litefs:bincache (aarch64-Linux) | HEAD-a51e72d-250422T131149 | HEAD-a51e72d-250422T131149 | ✅ Updated |
 | litefs#github.com.superfly.litefs:bincache (x86_64-Linux) | HEAD-a51e72d-250422T131149 | HEAD-a51e72d-250422T131149 | ✅ Updated |
 | litestream#github.com.benbjohnson.litestream.source:bincache (aarch64-Linux) | HEAD-92fc139-251230T082855 | HEAD-e87000c-251103T171302 | ⚠️ Outdated |
-| litestream#github.com.benbjohnson.litestream.source:bincache (x86_64-Linux) | HEAD-3480067-251224T074942 | HEAD-e87000c-251103T171302 | ⚠️ Outdated |
+| litestream#github.com.benbjohnson.litestream.source:bincache (x86_64-Linux) | HEAD-92fc139-251230T082855 | HEAD-e87000c-251103T171302 | ⚠️ Outdated |
 | ln#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | ln#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | ln#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -3487,7 +3487,7 @@
 | ln#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | ln#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | ln#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| ln#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| ln#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | ln#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | ln#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | lnav#github.com.tstack.lnav:bincache (aarch64-Linux) | v0.13.2 | v0.13.2 | ✅ Updated |
@@ -3495,7 +3495,7 @@
 | lndir#nixpkgs.outils:bincache (aarch64-Linux) | 30.13 | 30.13 | ✅ Updated |
 | lndir#nixpkgs.outils:bincache (x86_64-Linux) | 30.13 | 30.13 | ✅ Updated |
 | lnstat#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| lnstat#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| lnstat#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | loadfont#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | loadfont#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | loadfont#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -3542,7 +3542,7 @@
 | logname#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | logname#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | logname#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| logname#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| logname#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | logoutd#nixpkgs.shadow:bincache (aarch64-Linux) | 34.18.0 | 34.18.0 | ✅ Updated |
 | logoutd#nixpkgs.shadow:bincache (x86_64-Linux) | 34.18.0 | 34.18.0 | ✅ Updated |
 | logread#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -3599,7 +3599,7 @@
 | ls#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | ls#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | ls#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| ls#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| ls#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | ls#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | ls#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | lsattr#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -3750,7 +3750,7 @@
 | mantra#github.com.MrEmpy.mantra:bincache (aarch64-Linux) | HEAD-0634a79-250904T092556 | HEAD-0634a79-250904T092556 | ✅ Updated |
 | mantra#github.com.MrEmpy.mantra:bincache (x86_64-Linux) | HEAD-0634a79-250904T092556 | HEAD-0634a79-250904T092556 | ✅ Updated |
 | mapcidr#github.com.projectdiscovery.mapcidr:bincache (aarch64-Linux) | HEAD-fa13c6b-251229T210921 | HEAD-db5f755-251103T210414 | ⚠️ Outdated |
-| mapcidr#github.com.projectdiscovery.mapcidr:bincache (x86_64-Linux) | HEAD-a344322-251228T235600 | HEAD-db5f755-251103T210414 | ⚠️ Outdated |
+| mapcidr#github.com.projectdiscovery.mapcidr:bincache (x86_64-Linux) | HEAD-fa13c6b-251229T210921 | HEAD-db5f755-251103T210414 | ⚠️ Outdated |
 | masscan#nixpkgs.masscan:bincache (aarch64-Linux) | 31.3.2 | 31.3.2 | ✅ Updated |
 | masscan#nixpkgs.masscan:bincache (x86_64-Linux) | 31.3.2 | 31.3.2 | ✅ Updated |
 | massdns#github.com.blechschmidt.massdns.glibc:bincache (aarch64-Linux) | HEAD-70331f6-250721T224441 | HEAD-70331f6-250721T224441 | ✅ Updated |
@@ -3887,7 +3887,7 @@
 | mirrorbits#github.com.etix.mirrorbits:bincache (aarch64-Linux) | HEAD-4125599-251006T142335 | HEAD-4125599-251006T142335 | ✅ Updated |
 | mirrorbits#github.com.etix.mirrorbits:bincache (x86_64-Linux) | HEAD-4125599-251006T142335 | HEAD-4125599-251006T142335 | ✅ Updated |
 | mise#github.com.jdx.mise:bincache (aarch64-Linux) | v2025.12.13 | v2025.11.2 | ⚠️ Outdated |
-| mise#github.com.jdx.mise:bincache (x86_64-Linux) | v2025.12.12 | v2025.11.2 | ⚠️ Outdated |
+| mise#github.com.jdx.mise:bincache (x86_64-Linux) | v2025.12.13 | v2025.11.2 | ⚠️ Outdated |
 | mispipe#ppkg.moreutils:bincache (aarch64-Linux) | 0.70 | 0.70 | ✅ Updated |
 | mispipe#ppkg.moreutils:bincache (x86_64-Linux) | 0.70 | 0.70 | ✅ Updated |
 | mitmproxy#sharun.wrappe.pypi.mitmproxy:pkgcache (aarch64-Linux) | 12.2.0 | 12.2.0 | ✅ Updated |
@@ -3906,7 +3906,7 @@
 | mkdir#github.com.coreutils.coreutils.standalone:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | mkdir#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | mkdir#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| mkdir#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| mkdir#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | mkdir#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | mkdir#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | mkdosfs#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -3935,7 +3935,7 @@
 | mkfifo#github.com.coreutils.coreutils.standalone:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | mkfifo#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | mkfifo#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| mkfifo#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| mkfifo#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | mkfifo#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | mkfifo#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | mkfs#nixpkgs.util-linux:bincache (aarch64-Linux) | 32.41.2 | 32.41.2 | ✅ Updated |
@@ -3982,7 +3982,7 @@
 | mknod#github.com.coreutils.coreutils.standalone:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | mknod#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | mknod#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| mknod#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| mknod#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | mknodes#github.com.chimera-linux.chimerautils:bincache (aarch64-Linux) | HEAD-16cdbcf-250706T182402 | HEAD-16cdbcf-250706T182402 | ✅ Updated |
 | mknodes#github.com.chimera-linux.chimerautils:bincache (x86_64-Linux) | HEAD-16cdbcf-250706T182402 | HEAD-16cdbcf-250706T182402 | ✅ Updated |
 | mkpasswd#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -4015,7 +4015,7 @@
 | mktemp#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | mktemp#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | mktemp#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| mktemp#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| mktemp#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | mktemp#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | mktemp#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | mlabel#nixpkgs.mtools:bincache (aarch64-Linux) | 34.0.49 | 34.0.49 | ✅ Updated |
@@ -4060,7 +4060,7 @@
 | more#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | more#git.busybox.net.busybox.standalone.glibc:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | more#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| more#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| more#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | more#nixpkgs.util-linux:bincache (aarch64-Linux) | 32.41.2 | 32.41.2 | ✅ Updated |
 | more#nixpkgs.util-linux:bincache (x86_64-Linux) | 2.41.1 | 32.41.2 | ⚠️ Outdated |
 | morph#nixpkgs.hashcat-utils:bincache (aarch64-Linux) | 31.10 | 31.10 | ✅ Updated |
@@ -4192,7 +4192,7 @@
 | mv#github.com.coreutils.coreutils.standalone:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | mv#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | mv#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| mv#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| mv#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | mv#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | mv#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | mxtar#nixpkgs.mtools:bincache (aarch64-Linux) | 34.0.49 | 34.0.49 | ✅ Updated |
@@ -4202,7 +4202,7 @@
 | na6#github.com.fgont.ipv6toolkit.source:bincache (aarch64-Linux) | HEAD-9ee80b6-241202T005144 | HEAD-9ee80b6-241202T005144 | ✅ Updated |
 | na6#github.com.fgont.ipv6toolkit.source:bincache (x86_64-Linux) | HEAD-9ee80b6-241202T005144 | HEAD-9ee80b6-241202T005144 | ✅ Updated |
 | naabu#github.com.projectdiscovery.naabu:bincache (aarch64-Linux) | HEAD-9976c32-260101T004128 | HEAD-6d58b94-251103T132659 | ⚠️ Outdated |
-| naabu#github.com.projectdiscovery.naabu:bincache (x86_64-Linux) | HEAD-e3349aa-251222T132354 | HEAD-6d58b94-251103T132659 | ⚠️ Outdated |
+| naabu#github.com.projectdiscovery.naabu:bincache (x86_64-Linux) | HEAD-9976c32-260101T004128 | HEAD-6d58b94-251103T132659 | ⚠️ Outdated |
 | namegen#github.com.anandvarma.namegen:bincache (aarch64-Linux) | HEAD-1ae3645-240918T130942 | HEAD-1ae3645-240918T130942 | ✅ Updated |
 | namegen#github.com.anandvarma.namegen:bincache (x86_64-Linux) | HEAD-1ae3645-240918T130942 | HEAD-1ae3645-240918T130942 | ✅ Updated |
 | namei#nixpkgs.util-linux:bincache (aarch64-Linux) | 32.41.2 | 32.41.2 | ✅ Updated |
@@ -4252,13 +4252,13 @@
 | nerdctl#github.com.containerd.nerdctl:bincache (aarch64-Linux) | HEAD-53e7b27-251222T185041 | HEAD-5598a54-251105T192447 | ⚠️ Outdated |
 | nerdctl#github.com.containerd.nerdctl:bincache (x86_64-Linux) | HEAD-53e7b27-251222T185041 | HEAD-5598a54-251105T192447 | ⚠️ Outdated |
 | netbird#github.com.netbirdio.netbird.source:bincache (aarch64-Linux) | HEAD-7ac65bf-251231T115320 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
-| netbird#github.com.netbirdio.netbird.source:bincache (x86_64-Linux) | HEAD-38f9d5e-251229T180706 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
+| netbird#github.com.netbirdio.netbird.source:bincache (x86_64-Linux) | HEAD-7ac65bf-251231T115320 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
 | netbird-mgmt#github.com.netbirdio.netbird.source:bincache (aarch64-Linux) | HEAD-7ac65bf-251231T115320 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
-| netbird-mgmt#github.com.netbirdio.netbird.source:bincache (x86_64-Linux) | HEAD-38f9d5e-251229T180706 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
+| netbird-mgmt#github.com.netbirdio.netbird.source:bincache (x86_64-Linux) | HEAD-7ac65bf-251231T115320 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
 | netbird-relay#github.com.netbirdio.netbird.source:bincache (aarch64-Linux) | HEAD-7ac65bf-251231T115320 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
-| netbird-relay#github.com.netbirdio.netbird.source:bincache (x86_64-Linux) | HEAD-38f9d5e-251229T180706 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
+| netbird-relay#github.com.netbirdio.netbird.source:bincache (x86_64-Linux) | HEAD-7ac65bf-251231T115320 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
 | netbird-signal#github.com.netbirdio.netbird.source:bincache (aarch64-Linux) | HEAD-7ac65bf-251231T115320 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
-| netbird-signal#github.com.netbirdio.netbird.source:bincache (x86_64-Linux) | HEAD-38f9d5e-251229T180706 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
+| netbird-signal#github.com.netbirdio.netbird.source:bincache (x86_64-Linux) | HEAD-7ac65bf-251231T115320 | HEAD-c92e6c1-251105T121537 | ⚠️ Outdated |
 | netcap#nixpkgs.libcap_ng:bincache (aarch64-Linux) | 30.8.5 | 30.8.5 | ✅ Updated |
 | netcap#nixpkgs.libcap_ng:bincache (x86_64-Linux) | 30.8.5 | 30.8.5 | ✅ Updated |
 | netcat#nixpkgs.netcat-gnu:bincache (aarch64-Linux) | 30.7.1 | 30.7.1 | ✅ Updated |
@@ -4316,7 +4316,7 @@
 | nice#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | nice#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | nice#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| nice#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| nice#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | ninja#ppkg.ninja:bincache (aarch64-Linux) | 1.13.1 | 1.13.1 | ✅ Updated |
 | ninja#ppkg.ninja:bincache (x86_64-Linux) | 1.13.1 | 1.13.1 | ✅ Updated |
 | nisdomainname#nixpkgs.net-tools:bincache (aarch64-Linux) | 32.10 | 32.10 | ✅ Updated |
@@ -4337,7 +4337,7 @@
 | nl#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | nl#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | nl#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| nl#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| nl#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | nllint#github.com.suzuki-shunsuke.nllint.stable:bincache (aarch64-Linux) | v0.1.2 | v0.1.2 | ✅ Updated |
 | nllint#github.com.suzuki-shunsuke.nllint.stable:bincache (x86_64-Linux) | v0.1.2 | v0.1.2 | ✅ Updated |
 | nm#nixpkgs.bintools:bincache (aarch64-Linux) | 32.44 | 32.44 | ✅ Updated |
@@ -4372,7 +4372,7 @@
 | nohup#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | nohup#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | nohup#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| nohup#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| nohup#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | nohup#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | nohup#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | nologin#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -4406,7 +4406,7 @@
 | nproc#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | nproc#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | nproc#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| nproc#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| nproc#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | nproc#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | nproc#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | nq#github.com.leahneukirchen.nq.source:bincache (aarch64-Linux) | HEAD-8bad1d0-251026T211102 | HEAD-8bad1d0-251026T211102 | ✅ Updated |
@@ -4437,7 +4437,7 @@
 | nslookup#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | nslookup#git.busybox.net.busybox.standalone.glibc:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | nstat#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| nstat#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| nstat#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | ntask#github.com.r4ulcl.ntask.source:bincache (aarch64-Linux) | HEAD-d93108c-240303T090910 | HEAD-d93108c-240303T090910 | ✅ Updated |
 | ntask#github.com.r4ulcl.ntask.source:bincache (x86_64-Linux) | HEAD-d93108c-240303T090910 | HEAD-d93108c-240303T090910 | ✅ Updated |
 | nth#sharun.wrappe.source.name-that-hash:pkgcache (aarch64-Linux) | HEAD-ba595d3-250303T210850 | HEAD-ba595d3-250303T210850 | ✅ Updated |
@@ -4461,7 +4461,7 @@
 | numfmt#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | numfmt#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | numfmt#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| numfmt#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| numfmt#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | numfmt#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | numfmt#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | nushell#github.com.nushell.nushell:bincache (aarch64-Linux) | HEAD-e926919-250311T141836 | HEAD-5acb7e8-251105T200902 | ⚠️ Outdated |
@@ -4490,7 +4490,7 @@
 | od#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | od#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | od#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| od#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| od#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | ogg123#ppkg.vorbis-tools.stable:bincache (aarch64-Linux) | 1.4.3 | 1.4.3 | ✅ Updated |
 | ogg123#ppkg.vorbis-tools.stable:bincache (x86_64-Linux) | 1.4.3 | 1.4.3 | ✅ Updated |
 | oggdec#ppkg.vorbis-tools.stable:bincache (aarch64-Linux) | 1.4.3 | 1.4.3 | ✅ Updated |
@@ -4606,7 +4606,7 @@
 | paste#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | paste#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | paste#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| paste#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| paste#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | patch#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | patch#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | patch#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -4625,7 +4625,7 @@
 | pathchk#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | pathchk#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | pathchk#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| pathchk#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| pathchk#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | pdfcpu#github.com.pdfcpu.pdfcpu:bincache (aarch64-Linux) | HEAD-67f5eec-251030T231839 | HEAD-67f5eec-251030T231839 | ✅ Updated |
 | pdfcpu#github.com.pdfcpu.pdfcpu:bincache (x86_64-Linux) | HEAD-67f5eec-251030T231839 | HEAD-67f5eec-251030T231839 | ✅ Updated |
 | pdfly#sharun.wrappe.pypi.pdfly:pkgcache (aarch64-Linux) | 0.5.1 | 0.5.1 | ✅ Updated |
@@ -4715,7 +4715,7 @@
 | pinky#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | pinky#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | pinky#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| pinky#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| pinky#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | pipe-progress#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | pipe-progress#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | pipe-progress#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -4832,7 +4832,7 @@
 | pr#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | pr#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | pr#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| pr#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| pr#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | prepare#nixpkgs.hashcat-utils:bincache (aarch64-Linux) | 31.10 | 31.10 | ✅ Updated |
 | prepare#nixpkgs.hashcat-utils:bincache (x86_64-Linux) | 31.10 | 31.10 | ✅ Updated |
 | pretender#github.com.RedTeamPentesting.pretender:bincache (aarch64-Linux) | v1.3.2 | v1.3.2 | ✅ Updated |
@@ -4851,7 +4851,7 @@
 | printenv#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | printenv#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | printenv#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| printenv#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| printenv#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | printenv#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | printenv#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | printf#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -4866,7 +4866,7 @@
 | printf#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | printf#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | printf#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| printf#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| printf#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | printf#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | printf#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | printf#github.com.xplshn.a-utils:bincache (aarch64-Linux) | 0.0.5 | 0.0.5 | ✅ Updated |
@@ -4932,7 +4932,7 @@
 | ptx#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | ptx#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | ptx#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| ptx#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| ptx#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | ptytty#github.com.emanuele6.emanutils.source:bincache (aarch64-Linux) | HEAD-77c2c5d-250723T221000 | HEAD-77c2c5d-250723T221000 | ✅ Updated |
 | ptytty#github.com.emanuele6.emanutils.source:bincache (x86_64-Linux) | HEAD-77c2c5d-250723T221000 | HEAD-77c2c5d-250723T221000 | ✅ Updated |
 | puddletag#github.com.pkgforge-dev.puddletag-AppImage.stable:pkgcache (x86_64-Linux) | 2.5.0@2025-11-01_1761981272 | 2.5.0@2025-11-01_1761981272 | ✅ Updated |
@@ -4960,7 +4960,7 @@
 | pwd#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | pwd#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | pwd#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| pwd#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| pwd#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | pwd#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | pwd#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | pwdsafety#github.com.edoardottt.pwdsafety.source:bincache (aarch64-Linux) | HEAD-cd3339b-251013T100643 | HEAD-cd3339b-251013T100643 | ✅ Updated |
@@ -4982,11 +4982,11 @@
 | pyp#sharun.wrappe.pypi.pyp:pkgcache (aarch64-Linux) | 1.3.0 | 1.3.0 | ✅ Updated |
 | pyp#sharun.wrappe.pypi.pyp:pkgcache (x86_64-Linux) | 1.3.0 | 1.3.0 | ✅ Updated |
 | python#nixpkgs.python:bincache (aarch64-Linux) | 443.13.11 | 33.13.8 | ⚠️ Outdated |
-| python#nixpkgs.python:bincache (x86_64-Linux) | 443.13.9 | 33.13.8 | ⚠️ Outdated |
+| python#nixpkgs.python:bincache (x86_64-Linux) | 443.13.11 | 33.13.8 | ⚠️ Outdated |
 | python-config#nixpkgs.python:bincache (aarch64-Linux) | 443.13.11 | 33.13.8 | ⚠️ Outdated |
-| python-config#nixpkgs.python:bincache (x86_64-Linux) | 443.13.9 | 33.13.8 | ⚠️ Outdated |
+| python-config#nixpkgs.python:bincache (x86_64-Linux) | 443.13.11 | 33.13.8 | ⚠️ Outdated |
 | python3#nixpkgs.python:bincache (aarch64-Linux) | 443.13.11 | 33.13.8 | ⚠️ Outdated |
-| python3#nixpkgs.python:bincache (x86_64-Linux) | 443.13.9 | 33.13.8 | ⚠️ Outdated |
+| python3#nixpkgs.python:bincache (x86_64-Linux) | 443.13.11 | 33.13.8 | ⚠️ Outdated |
 | qbittorrent#gitlab.com.qbittorrent.qbittorrent.stable:pkgcache (x86_64-Linux) | 5.1.2 | 5.1.2 | ✅ Updated |
 | qbittorrent-enhanced#github.com.c0re100.qBittorrent-Enhanced-Edition.stable:pkgcache (x86_64-Linux) | release-5.1.2.10 | release-5.1.2.10 | ✅ Updated |
 | qbittorrent-nox#github.com.userdocs.qbittorrent-nox-static:bincache (aarch64-Linux) | release-5.1.2_v2.0.11 | release-5.1.2_v2.0.11 | ✅ Updated |
@@ -5245,7 +5245,7 @@
 | rdev#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | rdev#git.busybox.net.busybox.standalone.glibc:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | rdma#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| rdma#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| rdma#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | rdsquashfs#nixpkgs.squashfs-tools-ng:bincache (aarch64-Linux) | 31.3.2 | 31.3.2 | ✅ Updated |
 | rdsquashfs#nixpkgs.squashfs-tools-ng:bincache (x86_64-Linux) | 31.3.2 | 31.3.2 | ✅ Updated |
 | readahead#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -5267,7 +5267,7 @@
 | readlink#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | readlink#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | readlink#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| readlink#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| readlink#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | readlink#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | readlink#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | readprofile#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -5288,7 +5288,7 @@
 | realpath#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | realpath#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | realpath#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| realpath#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| realpath#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | reboot#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | reboot#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | reboot#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -5444,7 +5444,7 @@
 | rm#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | rm#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | rm#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| rm#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| rm#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | rm#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | rm#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | rmdir#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -5459,7 +5459,7 @@
 | rmdir#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | rmdir#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | rmdir#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| rmdir#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| rmdir#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | rmdir#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | rmdir#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | rmmod#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -5523,7 +5523,7 @@
 | rsync#nixpkgs.rsync:bincache (aarch64-Linux) | 3.4.1 | 33.4.1 | ⚠️ Outdated |
 | rsync#nixpkgs.rsync:bincache (x86_64-Linux) | 3.4.1 | 33.4.1 | ⚠️ Outdated |
 | rtacct#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| rtacct#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| rtacct#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | rtcwake#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | rtcwake#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | rtcwake#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -5531,9 +5531,9 @@
 | rtcwake#nixpkgs.util-linux:bincache (aarch64-Linux) | 32.41.2 | 32.41.2 | ✅ Updated |
 | rtcwake#nixpkgs.util-linux:bincache (x86_64-Linux) | 2.41.1 | 32.41.2 | ⚠️ Outdated |
 | rtmon#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| rtmon#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| rtmon#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | rtstat#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| rtstat#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| rtstat#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | ruff#github.com.astral-sh.ruff:bincache (aarch64-Linux) | 0.14.3 | 0.14.3 | ✅ Updated |
 | ruff#github.com.astral-sh.ruff:bincache (x86_64-Linux) | 0.14.3 | 0.14.3 | ✅ Updated |
 | ruffle#runimage.cachyos.ruffle.nightly:pkgcache (x86_64-Linux) | 0.1.0 | 0.1.0 | ✅ Updated |
@@ -6056,7 +6056,7 @@
 | seq#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | seq#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | seq#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| seq#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| seq#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | seq#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | seq#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | sequin#github.com.charmbracelet.sequin.source:bincache (aarch64-Linux) | HEAD-6d72dd7-251103T102809 | HEAD-6d72dd7-251103T102809 | ✅ Updated |
@@ -6235,7 +6235,7 @@
 | shred#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | shred#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | shred#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| shred#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| shred#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | shred#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | shred#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | shuf#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -6247,7 +6247,7 @@
 | shuf#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | shuf#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | shuf#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| shuf#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| shuf#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | shuf#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | shuf#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | shuffledns#github.com.projectdiscovery.shuffledns:bincache (aarch64-Linux) | HEAD-1e45a1b-240522T025420 | HEAD-1e45a1b-240522T025420 | ✅ Updated |
@@ -6310,7 +6310,7 @@
 | sleep#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | sleep#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | sleep#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| sleep#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| sleep#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | sleep#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | sleep#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | sling#github.com.slingdata-io.sling.source:bincache (aarch64-Linux) | HEAD-a27410e-251017T125727 | HEAD-a27410e-251017T125727 | ✅ Updated |
@@ -6364,7 +6364,7 @@
 | sort#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | sort#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | sort#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| sort#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| sort#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | sort#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | sort#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | sourcemapper#github.com.denandz.sourcemapper:bincache (aarch64-Linux) | HEAD-467916e-240322T170109 | HEAD-467916e-240322T170109 | ✅ Updated |
@@ -6408,7 +6408,7 @@
 | split#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | split#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | split#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| split#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| split#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | splitlen#nixpkgs.hashcat-utils:bincache (aarch64-Linux) | 31.10 | 31.10 | ✅ Updated |
 | splitlen#nixpkgs.hashcat-utils:bincache (x86_64-Linux) | 31.10 | 31.10 | ✅ Updated |
 | sponge#ppkg.moreutils:bincache (aarch64-Linux) | 0.70 | 0.70 | ✅ Updated |
@@ -6440,7 +6440,7 @@
 | squashfuse_ll#nixpkgs.squashfuse:bincache (aarch64-Linux) | 30.6.1 | 30.6.1 | ✅ Updated |
 | squashfuse_ll#nixpkgs.squashfuse:bincache (x86_64-Linux) | 30.6.1 | 30.6.1 | ✅ Updated |
 | ss#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| ss#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| ss#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | ssh#nixpkgs.openssh:bincache (aarch64-Linux) | 9.9p2 | 310.1p1 | ⚠️ Outdated |
 | ssh#nixpkgs.openssh:bincache (x86_64-Linux) | 310.1p1 | 310.1p1 | ✅ Updated |
 | ssh#ppkg.openssh:bincache (aarch64-Linux) | 9.9.1 | 9.9.1 | ✅ Updated |
@@ -6548,7 +6548,7 @@
 | stat#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | stat#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | stat#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| stat#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| stat#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | stdbuf#github.com.chimera-linux.chimerautils:bincache (aarch64-Linux) | HEAD-16cdbcf-250706T182402 | HEAD-16cdbcf-250706T182402 | ✅ Updated |
 | stdbuf#github.com.chimera-linux.chimerautils:bincache (x86_64-Linux) | HEAD-16cdbcf-250706T182402 | HEAD-16cdbcf-250706T182402 | ✅ Updated |
 | stdbuf#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-3a0b43b-250402T101919 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
@@ -6575,7 +6575,7 @@
 | stree#github.com.orangekame3.stree:bincache (aarch64-Linux) | HEAD-228e6f4-240717T185645 | HEAD-228e6f4-240717T185645 | ✅ Updated |
 | stree#github.com.orangekame3.stree:bincache (x86_64-Linux) | HEAD-228e6f4-240717T185645 | HEAD-228e6f4-240717T185645 | ✅ Updated |
 | stress-ng#github.com.ColinIanKing.stress-ng.source:bincache (aarch64-Linux) | HEAD-ef6220f-251231T183242 | HEAD-f3e0981-251105T130215 | ⚠️ Outdated |
-| stress-ng#github.com.ColinIanKing.stress-ng.source:bincache (x86_64-Linux) | HEAD-06e793f-251229T152806 | HEAD-f3e0981-251105T130215 | ⚠️ Outdated |
+| stress-ng#github.com.ColinIanKing.stress-ng.source:bincache (x86_64-Linux) | HEAD-ef6220f-251231T183242 | HEAD-f3e0981-251105T130215 | ⚠️ Outdated |
 | strings#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | strings#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | strings#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -6609,7 +6609,7 @@
 | stty#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | stty#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | stty#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| stty#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| stty#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | stunner#github.com.firefart.stunner:bincache (aarch64-Linux) | HEAD-df3b8b6-251027T233724 | HEAD-df3b8b6-251027T233724 | ✅ Updated |
 | stunner#github.com.firefart.stunner:bincache (x86_64-Linux) | HEAD-df3b8b6-251027T233724 | HEAD-df3b8b6-251027T233724 | ✅ Updated |
 | su#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -6662,7 +6662,7 @@
 | sum#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | sum#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | sum#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| sum#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| sum#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | sum#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | sum#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | sunbeam#github.com.pomdtr.sunbeam:bincache (aarch64-Linux) | HEAD-a19a11f-250530T115249 | HEAD-a19a11f-250530T115249 | ✅ Updated |
@@ -6758,7 +6758,7 @@
 | sync#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | sync#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | sync#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| sync#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| sync#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | sync#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | sync#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | sync-color-schemes#github.com.wez.wezterm.source:bincache (aarch64-Linux) | HEAD-b6e75fd-251025T070338 | HEAD-b6e75fd-251025T070338 | ✅ Updated |
@@ -6805,7 +6805,7 @@
 | tac#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tac#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tac#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| tac#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| tac#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | tac#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | tac#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | tahm#github.com.edoardottt.lit-bb-hack-tools:bincache (aarch64-Linux) | HEAD-0597615-241110T105825 | HEAD-0597615-241110T105825 | ✅ Updated |
@@ -6823,7 +6823,7 @@
 | tail#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tail#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tail#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| tail#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| tail#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | tail#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | tail#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | tailscale#github.com.tailscale.tailscale:bincache (aarch64-Linux) | HEAD-d451cd5-251225T015711 | HEAD-77123a5-251104T123604 | ⚠️ Outdated |
@@ -6861,11 +6861,11 @@
 | taskset#nixpkgs.util-linux:bincache (aarch64-Linux) | 32.41.2 | 32.41.2 | ✅ Updated |
 | taskset#nixpkgs.util-linux:bincache (x86_64-Linux) | 2.41.1 | 32.41.2 | ⚠️ Outdated |
 | tc#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| tc#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| tc#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | tcc#github.com.TinyCC.tinycc.glibc:bincache (aarch64-Linux) | HEAD-9a7edb2-251230T201535 | HEAD-ab2ce3b-251104T150319 | ⚠️ Outdated |
-| tcc#github.com.TinyCC.tinycc.glibc:bincache (x86_64-Linux) | HEAD-5ce2c4b-251229T005735 | HEAD-ab2ce3b-251104T150319 | ⚠️ Outdated |
+| tcc#github.com.TinyCC.tinycc.glibc:bincache (x86_64-Linux) | HEAD-9a7edb2-251230T201535 | HEAD-ab2ce3b-251104T150319 | ⚠️ Outdated |
 | tcc#github.com.TinyCC.tinycc.musl:bincache (aarch64-Linux) | HEAD-9a7edb2-251230T201535 | HEAD-ab2ce3b-251104T150319 | ⚠️ Outdated |
-| tcc#github.com.TinyCC.tinycc.musl:bincache (x86_64-Linux) | HEAD-5ce2c4b-251229T005735 | HEAD-ab2ce3b-251104T150319 | ⚠️ Outdated |
+| tcc#github.com.TinyCC.tinycc.musl:bincache (x86_64-Linux) | HEAD-9a7edb2-251230T201535 | HEAD-ab2ce3b-251104T150319 | ⚠️ Outdated |
 | tcp6#github.com.fgont.ipv6toolkit.source:bincache (aarch64-Linux) | HEAD-9ee80b6-241202T005144 | HEAD-9ee80b6-241202T005144 | ✅ Updated |
 | tcp6#github.com.fgont.ipv6toolkit.source:bincache (x86_64-Linux) | HEAD-9ee80b6-241202T005144 | HEAD-9ee80b6-241202T005144 | ✅ Updated |
 | tcpdump#nixpkgs.tcpdump:bincache (aarch64-Linux) | 34.99.5 | 34.99.5 | ✅ Updated |
@@ -6889,7 +6889,7 @@
 | tee#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tee#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tee#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| tee#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| tee#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | teip#github.com.greymd.teip.source:bincache (aarch64-Linux) | HEAD-8b3e987-240215T004416 | HEAD-8b3e987-240215T004416 | ✅ Updated |
 | teip#github.com.greymd.teip.source:bincache (x86_64-Linux) | HEAD-8b3e987-240215T004416 | HEAD-8b3e987-240215T004416 | ✅ Updated |
 | telegram-desktop#github.com.telegramdesktop.tdesktop:pkgcache (x86_64-Linux) | v5.10.6 | v6.2.4 | ⚠️ Outdated |
@@ -6920,7 +6920,7 @@
 | test#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | test#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | test#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| test#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| test#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | test#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | test#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | test#github.com.xplshn.a-utils:bincache (aarch64-Linux) | 0.0.5 | 0.0.5 | ✅ Updated |
@@ -6982,7 +6982,7 @@
 | timeout#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | timeout#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | timeout#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| timeout#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| timeout#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | tinja#github.com.Hackmanit.TInjA:bincache (aarch64-Linux) | HEAD-a434f52-250508T231544 | HEAD-a434f52-250508T231544 | ✅ Updated |
 | tinja#github.com.Hackmanit.TInjA:bincache (x86_64-Linux) | HEAD-a434f52-250508T231544 | HEAD-a434f52-250508T231544 | ✅ Updated |
 | tinywasm-cli#github.com.explodingcamera.tinywasm.source:bincache (aarch64-Linux) | HEAD-3e58e98-251003T205033 | HEAD-3e58e98-251003T205033 | ✅ Updated |
@@ -6994,7 +6994,7 @@
 | tip#github.com.chimera-linux.chimerautils:bincache (aarch64-Linux) | HEAD-16cdbcf-250706T182402 | HEAD-16cdbcf-250706T182402 | ✅ Updated |
 | tip#github.com.chimera-linux.chimerautils:bincache (x86_64-Linux) | HEAD-16cdbcf-250706T182402 | HEAD-16cdbcf-250706T182402 | ✅ Updated |
 | tipc#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| tipc#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| tipc#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | tlder#github.com.dwisiswant0.tlder.source:bincache (aarch64-Linux) | HEAD-ae621d4-241020T172005 | HEAD-ae621d4-241020T172005 | ✅ Updated |
 | tlder#github.com.dwisiswant0.tlder.source:bincache (x86_64-Linux) | HEAD-ae621d4-241020T172005 | HEAD-ae621d4-241020T172005 | ✅ Updated |
 | tldextract#sharun.wrappe.pypi.tldextract:pkgcache (aarch64-Linux) | 5.3.0 | 5.3.0 | ✅ Updated |
@@ -7050,7 +7050,7 @@
 | touch#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | touch#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | touch#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| touch#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| touch#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | touch#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | touch#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | tpws#nixpkgs.zapret:bincache (aarch64-Linux) | 372.2 | 372.2 | ✅ Updated |
@@ -7066,7 +7066,7 @@
 | tr#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tr#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tr#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| tr#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| tr#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | tracee#github.com.orhun.tracee.stable:bincache (aarch64-Linux) | v0.23.2 | v0.23.2 | ✅ Updated |
 | tracee#github.com.orhun.tracee.stable:bincache (x86_64-Linux) | v0.23.2 | v0.23.2 | ✅ Updated |
 | tracee-ebpf#github.com.orhun.tracee.stable:bincache (aarch64-Linux) | v0.23.2 | v0.23.2 | ✅ Updated |
@@ -7114,7 +7114,7 @@
 | true#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | true#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | true#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| true#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| true#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | true#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | true#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | trufflehog#github.com.trufflesecurity.trufflehog:bincache (aarch64-Linux) | v3.90.12 | v3.90.12 | ✅ Updated |
@@ -7130,7 +7130,7 @@
 | truncate#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | truncate#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | truncate#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| truncate#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| truncate#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | truncate#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | truncate#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | trurl#github.com.stunnel.static-curl:bincache (aarch64-Linux) | 8.16.0-ech | 8.16.0-ech | ✅ Updated |
@@ -7163,7 +7163,7 @@
 | tsort#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tsort#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | tsort#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| tsort#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| tsort#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | tspin#github.com.bensadeh.tailspin:bincache (aarch64-Linux) | HEAD-dc2e977-251103T061912 | HEAD-dc2e977-251103T061912 | ✅ Updated |
 | tspin#github.com.bensadeh.tailspin:bincache (x86_64-Linux) | HEAD-dc2e977-251103T061912 | HEAD-dc2e977-251103T061912 | ✅ Updated |
 | tssh#github.com.trzsz.trzsz-ssh:bincache (aarch64-Linux) | HEAD-26dfa39-251102T233917 | HEAD-26dfa39-251102T233917 | ✅ Updated |
@@ -7183,7 +7183,7 @@
 | tty#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tty#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | tty#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| tty#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| tty#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | tty#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | tty#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | tty2web#github.com.kost.tty2web:bincache (aarch64-Linux) | HEAD-bf206c6-251017T214759 | HEAD-bf206c6-251017T214759 | ✅ Updated |
@@ -7343,7 +7343,7 @@
 | uname#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | uname#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | uname#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| uname#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| uname#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | uname#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | uname#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | uname26#nixpkgs.util-linux:bincache (aarch64-Linux) | 442.41.2 | 32.41.2 | ⚠️ Outdated |
@@ -7371,7 +7371,7 @@
 | unexpand#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | unexpand#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | unexpand#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| unexpand#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| unexpand#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | unexpand#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | unexpand#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | unexport#nixpkgs.execline:bincache (aarch64-Linux) | 2.9.7.0 | 32.9.7.0 | ⚠️ Outdated |
@@ -7404,7 +7404,7 @@
 | uniq#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | uniq#github.com.dcantrell.bsdutils.source:bincache (aarch64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | uniq#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| uniq#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| uniq#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | uniq#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | uniq#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | uniqs#github.com.simnalamburt.uniqs.source:bincache (aarch64-Linux) | HEAD-3335ed9-250312T054423 | HEAD-3335ed9-250312T054423 | ✅ Updated |
@@ -7430,7 +7430,7 @@
 | unlink#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | unlink#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | unlink#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| unlink#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| unlink#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | unlink#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | unlink#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | unlzma#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -7483,7 +7483,7 @@
 | uptime#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | uptime#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | uptime#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| uptime#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| uptime#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | uptime#nixpkgs.procps:bincache (aarch64-Linux) | 34.0.4 | 34.0.4 | ✅ Updated |
 | uptime#nixpkgs.procps:bincache (x86_64-Linux) | 34.0.4 | 34.0.4 | ✅ Updated |
 | upx#github.com.upx.upx:bincache (aarch64-Linux) | v5.0.2 | v5.0.2 | ✅ Updated |
@@ -7519,7 +7519,7 @@
 | users#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | users#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | users#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| users#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| users#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | users#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | users#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | usleep#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -7575,9 +7575,9 @@
 | vdir#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | vdir#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | vdir#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| vdir#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| vdir#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | vdpa#nixpkgs.iproute2:bincache (aarch64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
-| vdpa#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.17.0 | 36.17.0 | ⚠️ Outdated |
+| vdpa#nixpkgs.iproute2:bincache (x86_64-Linux) | 446.18.0 | 36.17.0 | ⚠️ Outdated |
 | vegeta#github.com.tsenart.vegeta:bincache (aarch64-Linux) | HEAD-507c4f0-251031T122956 | HEAD-507c4f0-251031T122956 | ✅ Updated |
 | vegeta#github.com.tsenart.vegeta:bincache (x86_64-Linux) | HEAD-507c4f0-251031T122956 | HEAD-507c4f0-251031T122956 | ✅ Updated |
 | verilator#ppkg.bundle.verilator.stable:pkgcache (aarch64-Linux) | 5.036 | 5.036 | ✅ Updated |
@@ -7817,7 +7817,7 @@
 | wc#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | wc#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | wc#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| wc#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| wc#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | wc#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | wc#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | wcurl#github.com.curl.wcurl.source:bincache (aarch64-Linux) | HEAD-31ab581-251208T124824 | HEAD-376b405-251104T195655 | ⚠️ Outdated |
@@ -7880,7 +7880,7 @@
 | who#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | who#github.com.dcantrell.bsdutils.source:bincache (x86_64-Linux) | HEAD-48af14b-240223T222859 | HEAD-48af14b-240223T222859 | ✅ Updated |
 | who#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| who#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| who#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | whoami#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
 | whoami#git.busybox.net.busybox.standalone:bincache (x86_64-Linux) | HEAD-b99a529-251013T215647 | HEAD-b99a529-251013T215647 | ✅ Updated |
 | whoami#git.busybox.net.busybox.standalone.glibc:bincache (aarch64-Linux) | HEAD-3ff3cb4-251011T234804 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -7890,7 +7890,7 @@
 | whoami#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | whoami#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | whoami#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| whoami#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| whoami#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | whoami#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | whoami#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | whois#git.busybox.net.busybox.standalone:bincache (aarch64-Linux) | HEAD-3621595-251008T144926 | HEAD-b99a529-251013T215647 | ⚠️ Outdated |
@@ -8115,7 +8115,7 @@
 | yes#github.com.coreutils.coreutils.standalone.glibc:bincache (aarch64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | yes#github.com.coreutils.coreutils.standalone.glibc:bincache (x86_64-Linux) | 9.9 | 9.8 | ⚠️ Outdated |
 | yes#github.com.uutils.coreutils.standalone:bincache (aarch64-Linux) | HEAD-c8790e6-251231T200205 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
-| yes#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-b3d05b6-251229T164806 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
+| yes#github.com.uutils.coreutils.standalone:bincache (x86_64-Linux) | HEAD-a297d26-251231T200939 | HEAD-c5554ab-251104T234745 | ⚠️ Outdated |
 | yes#github.com.vlang.coreutils:bincache (aarch64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | yes#github.com.vlang.coreutils:bincache (x86_64-Linux) | HEAD-dc1bb11-250714T145959 | HEAD-dc1bb11-250714T145959 | ✅ Updated |
 | yggdrasil#github.com.yggdrasil-network.yggdrasil-go:bincache (aarch64-Linux) | HEAD-d0b5352-251004T105545 | HEAD-d0b5352-251004T105545 | ✅ Updated |

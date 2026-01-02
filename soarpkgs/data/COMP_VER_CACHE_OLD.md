@@ -2621,9 +2621,9 @@
 | wasmi-cli#github.com.wasmi-labs.wasmi.source:bincache (x86_64-Linux) | HEAD-d03aae1-251228T212210 | HEAD-465f427-251104T212956 | 2025-12-31T21:29:44Z |
 | soar#github.com.pkgforge.soar.glibc:bincache (x86_64-Linux) | HEAD-e44342f-251229T223530 | HEAD-8f84b79-251020T115046 | 2025-12-31T23:50:00Z |
 | soar#github.com.pkgforge.soar.glibc-v3:bincache (x86_64-Linux) | HEAD-e44342f-251229T223530 | HEAD-8f84b79-251020T115046 | 2025-12-31T23:50:50Z |
-| soar#github.com.pkgforge.soar.glibc:bincache (aarch64-Linux) | HEAD-e44342f-251229T223530 | HEAD-8f84b79-251020T115046 | 2025-12-31T23:51:38Z |
 | soar#github.com.pkgforge.soar.glibc-v4:bincache (x86_64-Linux) | HEAD-e44342f-251229T223530 | HEAD-8f84b79-251020T115046 | 2025-12-31T23:52:15Z |
-| soar#github.com.pkgforge.soar.musl:bincache (aarch64-Linux) | HEAD-e44342f-251229T223530 | HEAD-8f84b79-251020T115046 | 2025-12-31T23:53:23Z |
 | soar#github.com.pkgforge.soar.musl:bincache (x86_64-Linux) | HEAD-e44342f-251229T223530 | HEAD-8f84b79-251020T115046 | 2025-12-31T23:53:56Z |
 | soar#github.com.pkgforge.soar.musl-v3:bincache (x86_64-Linux) | HEAD-e44342f-251229T223530 | HEAD-8f84b79-251020T115046 | 2025-12-31T23:55:08Z |
 | soar#github.com.pkgforge.soar.musl-v4:bincache (x86_64-Linux) | HEAD-e44342f-251229T223530 | HEAD-8f84b79-251020T115046 | 2025-12-31T23:55:11Z |
+| soar#github.com.pkgforge.soar.glibc:bincache (aarch64-Linux) | HEAD-e44342f-251229T223530 | HEAD-8f84b79-251020T115046 | 2026-01-01T23:51:54Z |
+| soar#github.com.pkgforge.soar.musl:bincache (aarch64-Linux) | HEAD-e44342f-251229T223530 | HEAD-8f84b79-251020T115046 | 2026-01-01T23:55:17Z |

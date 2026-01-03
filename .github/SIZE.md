@@ -244,7 +244,7 @@
  4.0K   │   ├── fetch_archlinux_docker.sh
  4.0K   │   └── fetch_alpine_git.sh
  119M   ├─┬ bincache
- 119M   │ ├─┬ data
+ 118M   │ ├─┬ data
   29M   │ │ ├── x86_64-Linux.json
   29M   │ │ ├── aarch64-Linux.json
   16M   │ │ ├── x86_64-Linux.sdb
@@ -252,7 +252,7 @@
  4.7M   │ │ ├── x86_64-Linux.json.cba
  4.5M   │ │ ├── aarch64-Linux.json.cba
  3.4M   │ │ ├── riscv64-Linux.json
- 2.3M   │ │ ├── riscv64-Linux.sdb
+ 2.2M   │ │ ├── riscv64-Linux.sdb
  1.5M   │ │ ├── x86_64-Linux.sdb.cba
  1.5M   │ │ ├── aarch64-Linux.sdb.cba
  1.1M   │ │ ├── x86_64-Linux.sdb.zstd
@@ -263,10 +263,10 @@
  952K   │ │ ├── aarch64-Linux.json.zstd
  920K   │ │ ├── x86_64-Linux.json.xz
  912K   │ │ ├── aarch64-Linux.json.xz
- 256K   │ │ ├── riscv64-Linux.sdb.cba
- 208K   │ │ ├── riscv64-Linux.sdb.zstd
+ 244K   │ │ ├── riscv64-Linux.sdb.cba
  208K   │ │ ├── riscv64-Linux.json.cba
- 192K   │ │ ├── riscv64-Linux.sdb.xz
+ 204K   │ │ ├── riscv64-Linux.sdb.zstd
+ 184K   │ │ ├── riscv64-Linux.sdb.xz
  172K   │ │ ├── riscv64-Linux.json.zstd
  164K   │ │ ├── riscv64-Linux.json.xz
  4.0K   │ │ ├── x86_64-Linux.sdb.zstd.bsum
@@ -364,22 +364,22 @@
  8.0K   │   ├── repology_fetcher.sh
  4.0K   │   ├── gen_ghcr_backage.sh
  4.0K   │   └── gen_diff.sh
- 5.5M   ├─┬ pkgcache
- 5.3M   │ ├─┬ data
+ 5.3M   ├─┬ pkgcache
+ 5.2M   │ ├─┬ data
  1.3M   │ │ ├── x86_64-Linux.json
- 1.2M   │ │ ├── x86_64-Linux.sdb
+ 1.1M   │ │ ├── x86_64-Linux.sdb
  736K   │ │ ├── aarch64-Linux.json
- 696K   │ │ ├── aarch64-Linux.sdb
- 172K   │ │ ├── x86_64-Linux.sdb.cba
+ 632K   │ │ ├── aarch64-Linux.sdb
+ 164K   │ │ ├── x86_64-Linux.sdb.cba
  144K   │ │ ├── x86_64-Linux.json.cba
- 140K   │ │ ├── x86_64-Linux.sdb.zstd
- 128K   │ │ ├── x86_64-Linux.sdb.xz
+ 132K   │ │ ├── x86_64-Linux.sdb.zstd
+ 124K   │ │ ├── x86_64-Linux.sdb.xz
  120K   │ │ ├── x86_64-Linux.json.zstd
  112K   │ │ ├── x86_64-Linux.json.xz
- 100K   │ │ ├── aarch64-Linux.sdb.cba
+  96K   │ │ ├── aarch64-Linux.sdb.cba
   88K   │ │ ├── aarch64-Linux.json.cba
-  84K   │ │ ├── aarch64-Linux.sdb.zstd
-  76K   │ │ ├── aarch64-Linux.sdb.xz
+  80K   │ │ ├── aarch64-Linux.sdb.zstd
+  72K   │ │ ├── aarch64-Linux.sdb.xz
   72K   │ │ ├── aarch64-Linux.json.zstd
   68K   │ │ ├── aarch64-Linux.json.xz
   64K   │ │ ├── riscv64-Linux.sdb

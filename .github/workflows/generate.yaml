@@ -241,7 +241,7 @@ jobs:
 
       - name: Create Issue (Invalid Binary SBUILDS)
         if: env.HAS_INVALID_BINS == 'TRUE'
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         with:
           title: SBUILDS (Failed Binary Validation)
           content-filepath: "/tmp/INVALID_BINARIES.txt"
@@ -250,7 +250,7 @@ jobs:
 
       - name: Create Issue (Invalid Package SBUILDS)
         if: env.HAS_INVALID_PKGS == 'TRUE'
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         with:
           title: SBUILDS (Failed Package Validation)
           content-filepath: "/tmp/INVALID_PACKAGES.txt"
@@ -273,7 +273,7 @@ jobs:
 
       - name: Create Issue (Duplicate Webpages)
         if: env.HAS_DUPE_PKG_WEBPAGES == 'TRUE'
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         with:
           title: SBUILDS (Duplicate Webpages)
           content-filepath: "/tmp/DUPES_PKG_WEBPAGE.txt"
@@ -296,7 +296,7 @@ jobs:
 
       - name: Create Issue (Missing Package ID)
         if: env.HAS_MISSING_PKG_ID == 'TRUE'
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         with:
           title: SBUILDS (Missing Package ID)
           content-filepath: "/tmp/MISSING_PKG_ID.txt"
@@ -370,7 +370,7 @@ jobs:
 
       - name: Create Issue (Duplicate PKG_ID)
         if: env.HAS_DUPE_PKG_IDS == 'TRUE'
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         with:
           title: SBUILDS (Duplicate PKG_ID)
           content-filepath: "/tmp/DUPES_PKG_ID.txt"
